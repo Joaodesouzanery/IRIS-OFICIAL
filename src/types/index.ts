@@ -76,6 +76,7 @@ export interface Diretor {
   nome: string;
   agencia_id: string | null;
   cargo: string | null;
+  ativo?: boolean;
   situacao?: "titular" | "substituto" | "interino" | "inativo" | "designado";
   data_posse?: string | null;
   data_fim_mandato?: string | null;

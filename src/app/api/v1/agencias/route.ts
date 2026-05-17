@@ -43,7 +43,10 @@ export async function POST(req: NextRequest) {
 
   const sigla = body.sigla?.trim().toUpperCase();
   const nome = body.nome?.trim();
-  const nome_completo = body.nome_completo?.trim() || null;
+  const nome_completo = body.nome_completo?.trim() || nome || null;
+  const tipo = ["federal", "estadual"].includes(body.tipo) ? body.tipo : null;
+  const status = ["ativa", "inativa"].includes(body.status) ? body.status : "ativa";
+  const metadata = body.metadata && typeof body.metadata === "object" ? body.metadata : {};
 
   if (!sigla || sigla.length > 20) {
     return NextResponse.json({ error: "Sigla inválida (máx 20 caracteres)" }, { status: 400 });
@@ -56,7 +59,20 @@ export async function POST(req: NextRequest) {
   const db = createSupabaseServerClient();
   const { data, error } = await db
     .from("agencias")
-    .insert({ sigla, nome, nome_completo })
+    .insert({
+      sigla,
+      nome,
+      nome_completo,
+      tipo,
+      esfera: normalizeOptional(body.esfera, 120),
+      ministerio_vinculado: normalizeOptional(body.ministerio_vinculado, 200),
+      url_institucional: normalizeOptional(body.url_institucional, 500),
+      url_diretores: normalizeOptional(body.url_diretores, 500),
+      estado: tipo === "estadual" ? normalizeOptional(body.estado, 2)?.toUpperCase() : null,
+      status,
+      ativo: status === "ativa",
+      metadata,
+    })
     .select()
     .single();
 
@@ -68,4 +84,8 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json(data, { status: 201 });
+}
+
+function normalizeOptional(value: unknown, max: number) {
+  return typeof value === "string" && value.trim() ? value.trim().slice(0, max) : null;
 }

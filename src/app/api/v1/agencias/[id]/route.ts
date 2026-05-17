@@ -1,13 +1,7 @@
-/**
- * GET /api/v1/agencias/[id]    — detalhe
- * PATCH /api/v1/agencias/[id]  — editar
- */
-
 import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
-
 
 export async function GET(
   req: NextRequest,
@@ -48,19 +42,33 @@ export async function PATCH(
     );
   }
 
-  const body = await req.json();
-  const allowed = ["nome", "nome_completo", "ativo"];
+  const body = await req.json().catch(() => ({}));
   const updates: Record<string, unknown> = {};
 
-  for (const key of allowed) {
+  if ("sigla" in body) updates.sigla = String(body.sigla ?? "").trim().toUpperCase().slice(0, 20);
+  for (const key of [
+    "nome",
+    "nome_completo",
+    "tipo",
+    "esfera",
+    "ministerio_vinculado",
+    "url_institucional",
+    "url_diretores",
+    "estado",
+    "status",
+    "ativo",
+    "metadata",
+  ]) {
     if (key in body) updates[key] = body[key];
   }
 
-  if (Object.keys(updates).length === 0) {
+  if ("status" in updates) updates.ativo = updates.status === "ativa";
+  if ("ativo" in updates && !("status" in updates)) updates.status = updates.ativo ? "ativa" : "inativa";
+  updates.updated_at = new Date().toISOString();
+
+  if (Object.keys(updates).length <= 1) {
     return NextResponse.json({ error: "Nenhum campo válido" }, { status: 400 });
   }
-
-  updates.updated_at = new Date().toISOString();
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
@@ -76,4 +84,39 @@ export async function PATCH(
   }
 
   return NextResponse.json(data);
+}
+
+export async function PUT(
+  req: NextRequest,
+  context: { params: { id: string } }
+) {
+  return PATCH(req, context);
+}
+
+export async function DELETE(
+  req: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
+  if (isDemo()) {
+    return NextResponse.json(
+      { error: "Exclusão não disponível em modo demo" },
+      { status: 403 }
+    );
+  }
+
+  const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+  const db = createSupabaseServerClient();
+  const { error } = await db
+    .from("agencias")
+    .delete()
+    .eq("id", params.id);
+
+  if (error) {
+    return NextResponse.json({ error: "Falha ao excluir agência" }, { status: 500 });
+  }
+
+  return NextResponse.json({ ok: true });
 }
