@@ -234,6 +234,20 @@ function normalizeResultado(raw: string): string | null {
 }
 
 // ─── Tipo de retorno ───────────────────────────────────────────────────────
+function extractNumeroDeliberacao(text: string): string | null {
+  const patterns = [
+    /DELIBERAÇÃO\s*(?:ARTESP\s*)?N[º°o]?\s*([\d.]+)/iu,
+    /DELIBERACAO\s*(?:ARTESP\s*)?N[º°o]?\s*([\d.]+)/iu,
+    RE_DELIBERACAO,
+  ];
+  for (const pattern of patterns) {
+    pattern.lastIndex = 0;
+    const match = pattern.exec(text);
+    if (match?.[1]) return match[1].trim();
+  }
+  return null;
+}
+
 export interface ExtractedFields {
   numero_deliberacao: string | null;
   reuniao_ordinaria: string | null;
@@ -258,7 +272,7 @@ export interface ExtractedFields {
 
 // ─── Extração principal ───────────────────────────────────────────────────
 export function extractFields(text: string): ExtractedFields {
-  const numero_deliberacao = firstMatch(text, RE_DELIBERACAO);
+  const numero_deliberacao = extractNumeroDeliberacao(text);
   const reuniao_ordinaria  = firstMatch(text, RE_REUNIAO);
   const procedencia        = firstMatch(text, RE_PROCEDENCIA);
 

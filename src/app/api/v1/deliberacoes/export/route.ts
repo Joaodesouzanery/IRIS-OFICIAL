@@ -8,6 +8,7 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDelibList } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 
 const escape = (v: unknown) => {
@@ -27,7 +28,7 @@ const HEADERS = [
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       const all = computeDelibList(getSyncedDelibs(), { limit: 5000 }).data;
       const rows = all.map((r: any) =>

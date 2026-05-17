@@ -9,12 +9,13 @@ import type { VotoSector } from "@/types";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeVotacaoSectors } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 
 export async function GET(req: NextRequest) {
   const agenciaId = req.nextUrl.searchParams.get("agencia_id") || null;
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       return NextResponse.json(computeVotacaoSectors(getSyncedDelibs(), agenciaId));
     }

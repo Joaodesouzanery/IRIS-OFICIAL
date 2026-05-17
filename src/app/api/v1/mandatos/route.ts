@@ -8,10 +8,11 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMandatos } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 
 export async function GET(req: NextRequest) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const statusFilter = req.nextUrl.searchParams.get("status");
     const agenciaId = req.nextUrl.searchParams.get("agencia_id");
     if (isLocalMode()) {

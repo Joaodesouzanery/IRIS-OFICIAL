@@ -11,12 +11,14 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeAlertas } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
   const agenciaId = req.nextUrl.searchParams.get("agencia_id") || null;
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const delibs = isLocalMode() ? getSyncedDelibs() : demoData.deliberacoes({ limit: 9999 }).data;
     return NextResponse.json(computeAlertas(delibs, agenciaId));
   }
@@ -28,6 +30,7 @@ export async function GET(req: NextRequest) {
     .from("deliberacoes")
     .select(
       `id, interessado, resultado, microtema, data_reuniao, agencia_id,
+       tipo_documento, documento_pai_id, raw_extraction,
        votos (tipo_voto, is_divergente, diretor_id, diretores (nome))`
     );
 
@@ -38,7 +41,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao computar alertas" }, { status: 500 });
   }
 
-  const deliberacoes = (data ?? []).map((d: any) => ({
+  const deliberacoes = (data ?? []).filter(isFinalDecisionRecord).map((d: any) => ({
     ...d,
     votos: (d.votos ?? []).map((v: any) => ({
       id: `v-${Math.random()}`,

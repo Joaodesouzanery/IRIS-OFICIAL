@@ -8,12 +8,16 @@ import { NextRequest, NextResponse } from "next/server";
 import { waitUntil } from "@vercel/functions";
 import { demoData } from "@/lib/demo-data";
 import { isDemo } from "@/lib/server/is-demo";
+import { requireAdmin } from "@/lib/server/request-guards";
 
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50 MB por arquivo
 const MAX_FILES_PER_BATCH = 1000;
 
 
 export async function POST(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   try {
     const formData = await req.formData();
 

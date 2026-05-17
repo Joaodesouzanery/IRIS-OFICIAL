@@ -8,11 +8,13 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDelibList } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 
 const VALID_SORT_COLUMNS = new Set([
   "data_reuniao",
   "numero_deliberacao",
   "microtema",
+  "area_regulatoria",
   "resultado",
   "interessado",
   "tipo_documento",
@@ -24,7 +26,7 @@ const VALID_SORT_COLUMNS = new Set([
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const page = parseInt(searchParams.get("page") ?? "1", 10);
     const limit = parseInt(searchParams.get("limit") ?? "20", 10);
     const agencia_id = searchParams.get("agencia_id") ?? undefined;
@@ -67,9 +69,10 @@ export async function GET(req: NextRequest) {
     .from("deliberacoes")
     .select(
       `id, numero_deliberacao, reuniao_ordinaria, data_reuniao,
-       interessado, processo, microtema, resultado, pauta_interna,
+       interessado, processo, microtema, area_regulatoria, resultado, pauta_interna,
        extraction_confidence, agencia_id, created_at,
        tipo_documento, relator, item_numero, documento_pai_id, assunto,
+       upload_job_id, raw_extraction,
        agencias (sigla, nome),
        votos (id, tipo_voto, is_divergente, diretor_id,
          diretores (nome))`,
@@ -129,6 +132,13 @@ export async function GET(req: NextRequest) {
   const microtema = searchParams.get("microtema");
   if (microtema) query = query.eq("microtema", microtema);
 
+  const areaRegulatoria = searchParams.get("area_regulatoria");
+  if (areaRegulatoria) query = query.eq("area_regulatoria", areaRegulatoria);
+
+  const statusRevisao = searchParams.get("status_revisao");
+  if (statusRevisao === "sem_anexo") query = query.is("upload_job_id", null);
+  if (statusRevisao === "sem_resultado") query = query.is("resultado", null);
+
   const resultado = searchParams.get("resultado");
   if (resultado) query = query.eq("resultado", resultado);
 
@@ -176,6 +186,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   if (isDemo()) {
     // Demo mode: client handles localStorage deletion
     return NextResponse.json({ deleted: 0, demo: true });
@@ -189,7 +202,32 @@ export async function DELETE(req: NextRequest) {
     );
   }
 
-  // agencia_id obrigatório — nunca permitir delete sem escopo de agência
+  const deleteAll = req.nextUrl.searchParams.get("all") === "1";
+
+  if (deleteAll) {
+    if (req.headers.get("x-confirm-scope") !== "all-test-data") {
+      return NextResponse.json(
+        { error: "Envie o header x-confirm-scope: all-test-data para exclusão global" },
+        { status: 400 }
+      );
+    }
+
+    const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+    const db = createSupabaseServerClient();
+    const { error, count } = await db
+      .from("deliberacoes")
+      .delete({ count: "exact" })
+      .not("id", "is", null);
+
+    if (error) {
+      console.error("[deliberacoes DELETE all] Erro:", error);
+      return NextResponse.json({ error: "Erro ao deletar deliberações" }, { status: 500 });
+    }
+
+    return NextResponse.json({ deleted: count ?? 0, scope: "all-test-data" });
+  }
+
+  // agencia_id obrigatório por padrão — evita delete global acidental
   const agencia_id = req.nextUrl.searchParams.get("agencia_id");
   if (!agencia_id) {
     return NextResponse.json(

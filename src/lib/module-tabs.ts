@@ -25,9 +25,15 @@ export const REGULATORIO_TABS: ModuleTab[] = [
   { label: "Setores", href: "/dashboard/painel-regulatorio/setores" },
   { label: "Microtemas", href: "/dashboard/painel-regulatorio/microtemas" },
   { label: "Empresas", href: "/dashboard/empresas" },
+  { label: "Associados", href: "/dashboard/empresas/associados" },
+  { label: "Relatórios", href: "/dashboard/painel-regulatorio/relatorios" },
 ];
 
 export const CONFIG_TABS: ModuleTab[] = [
   { label: "Agências", href: "/dashboard/agencias" },
+];
+
+export const NOTICIAS_TABS: ModuleTab[] = [
+  { label: "Feed", href: "/dashboard/noticias" },
   { label: "Boletim", href: "/dashboard/boletim" },
 ];

@@ -8,12 +8,14 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeOverview } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
   const agenciaId = req.nextUrl.searchParams.get("agencia_id") || null;
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       return NextResponse.json(computeOverview(getSyncedDelibs(), agenciaId));
     }
@@ -25,7 +27,7 @@ export async function GET(req: NextRequest) {
 
   let baseFilter = db
     .from("deliberacoes")
-    .select("id, resultado, microtema, data_reuniao, extraction_confidence, auto_classified, pauta_interna");
+    .select("id, resultado, microtema, data_reuniao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, raw_extraction");
   if (agenciaId) baseFilter = baseFilter.eq("agencia_id", agenciaId);
 
   const { data: deliberacoes, error } = await baseFilter;
@@ -34,18 +36,16 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar overview" }, { status: 500 });
   }
 
-  const rows = deliberacoes ?? [];
+  const rows = (deliberacoes ?? []).filter(isFinalDecisionRecord);
   const total = rows.length;
   const deferidos = rows.filter((r) => r.resultado === "Deferido").length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
   const semResultado = rows.filter((r) => !r.resultado).length;
 
+  const confidenceRows = rows.filter((r) => r.extraction_confidence !== null);
   const avgConfidence =
-    total > 0
-      ? rows
-          .filter((r) => r.extraction_confidence !== null)
-          .reduce((sum, r) => sum + (r.extraction_confidence ?? 0), 0) /
-        rows.filter((r) => r.extraction_confidence !== null).length
+    confidenceRows.length > 0
+      ? confidenceRows.reduce((sum, r) => sum + (r.extraction_confidence ?? 0), 0) / confidenceRows.length
       : 0;
 
   const reunioesUnicas = new Set(rows.map((r) => r.data_reuniao).filter(Boolean)).size;

@@ -8,10 +8,12 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeReunioesCalendar } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const agenciaId = req.nextUrl.searchParams.get("agencia_id");
     if (isLocalMode()) {
       return NextResponse.json(computeReunioesCalendar(getSyncedDelibs(), agenciaId));
@@ -26,7 +28,7 @@ export async function GET(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("data_reuniao")
+    .select("data_reuniao, tipo_documento, documento_pai_id, resultado, raw_extraction")
     .not("data_reuniao", "is", null)
     .gte("data_reuniao", `${year}-01-01`)
     .lte("data_reuniao", `${year}-12-31`);
@@ -40,7 +42,7 @@ export async function GET(req: NextRequest) {
   }
 
   const counts = new Map<string, number>();
-  for (const row of data ?? []) {
+  for (const row of (data ?? []).filter(isFinalDecisionRecord)) {
     const date = row.data_reuniao!;
     counts.set(date, (counts.get(date) ?? 0) + 1);
   }

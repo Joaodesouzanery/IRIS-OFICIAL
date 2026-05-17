@@ -8,6 +8,7 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDelibById } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 
 const ALLOWED_PATCH_FIELDS = new Set([
   "numero_deliberacao",
@@ -17,6 +18,7 @@ const ALLOWED_PATCH_FIELDS = new Set([
   "assunto",
   "processo",
   "microtema",
+  "area_regulatoria",
   "resultado",
   "pauta_interna",
   "resumo_pleito",
@@ -28,7 +30,7 @@ export async function GET(
   req: NextRequest,
   { params }: { params: { id: string } }
 ) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       const found = computeDelibById(getSyncedDelibs(), params.id);
       if (!found) return NextResponse.json({ error: "Não encontrada" }, { status: 404 });
@@ -78,6 +80,9 @@ export async function PATCH(
   req: NextRequest,
   { params }: { params: { id: string } }
 ) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   if (isDemo()) {
     return NextResponse.json(
       { error: "Edição não disponível em modo demo" },

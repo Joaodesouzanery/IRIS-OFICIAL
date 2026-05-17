@@ -6,6 +6,7 @@
  */
 
 import type { Deliberacao, VotoEmbutido } from "@/types";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -43,11 +44,7 @@ function isoMonthAgo(months: number): string {
  * Items de ata TÊM documento_pai_id preenchido e devem ser contados.
  */
 function excludeAtaParents(delibs: Deliberacao[]): Deliberacao[] {
-  return delibs.filter((d) =>
-    // Mantém: deliberações normais, items de ata (têm documento_pai_id)
-    // Exclui: ata-parents (tipo_documento="ata" sem documento_pai_id)
-    d.tipo_documento !== "ata" || d.documento_pai_id != null
-  );
+  return delibs.filter(isFinalDecisionRecord);
 }
 
 function allVotos(delibs: Deliberacao[]): Array<VotoEmbutido & { delib: Deliberacao }> {
@@ -586,7 +583,7 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
 // ─── 18. computeEmpresas ─────────────────────────────────────────────────────
 
 export function computeEmpresas(delibs: Deliberacao[], agenciaId?: string | null) {
-  const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.interessado);
+  const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.interessado && isFinalDecisionRecord(d));
   const map = new Map<string, {
     delibs: Deliberacao[];
     microtemas: Set<string>;
@@ -650,7 +647,7 @@ export function computeEmpresas(delibs: Deliberacao[], agenciaId?: string | null
 // ─── 20. computeEmpresaDetalhe ───────────────────────────────────────────────
 
 export function computeEmpresaDetalhe(delibs: Deliberacao[], empresaNome: string) {
-  const rows = delibs.filter((d) => d.interessado === empresaNome);
+  const rows = delibs.filter((d) => d.interessado === empresaNome && isFinalDecisionRecord(d));
   if (rows.length === 0) return null;
 
   const total = rows.length;
@@ -750,7 +747,7 @@ export function computeEmpresaDetalhe(delibs: Deliberacao[], empresaNome: string
 // ─── 21. computeAlertas ──────────────────────────────────────────────────────
 
 export function computeAlertas(delibs: Deliberacao[], agenciaId?: string | null) {
-  const rows = filterByAgencia(delibs, agenciaId);
+  const rows = filterByAgencia(delibs, agenciaId).filter(isFinalDecisionRecord);
   const alertas: Array<{
     id: string;
     tipo: "empresa_risco" | "tema_emergente" | "diretor_divergente";

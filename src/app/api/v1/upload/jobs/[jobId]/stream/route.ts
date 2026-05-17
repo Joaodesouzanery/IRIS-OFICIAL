@@ -5,6 +5,7 @@
 
 import { NextRequest } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -16,7 +17,7 @@ export async function GET(
   const { jobId } = params;
 
   // Em modo demo, não há jobs reais
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
       start(controller) {

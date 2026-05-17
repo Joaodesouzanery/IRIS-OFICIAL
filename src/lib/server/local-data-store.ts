@@ -34,7 +34,7 @@ export function getLastSyncAt(): number {
   return lastSyncAt;
 }
 
-/** Shorthand: true when mode=local AND there is synced data available */
+/** Shorthand: true when the user explicitly chose local test data, even if it is empty. */
 export function isLocalMode(): boolean {
-  return dataMode === "local" && syncedDelibs.length > 0;
+  return dataMode === "local";
 }

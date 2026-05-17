@@ -4,16 +4,17 @@ import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { Deliberacao } from "@/types";
-import { formatDate, getMicrotemaLabel, cn } from "@/lib/utils";
+import { AREAS_REGULATORIAS, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel, cn } from "@/lib/utils";
 import {
   ArrowLeft, CheckCircle, XCircle, Pencil, Save, X,
-  ChevronDown, ChevronUp, Users, FileText, ShieldCheck, Award,
+  ChevronDown, ChevronUp, Users, FileText, ShieldCheck, Award, Download,
 } from "lucide-react";
 import Link from "next/link";
 import { getLocalDelibs, updateLocalDelib } from "@/lib/local-store";
 import { HelpTooltip } from "@/components/ui/HelpTooltip";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
+import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 const RESULTADOS = [
   "Deferido", "Indeferido", "Parcialmente Deferido", "Retirado de Pauta",
@@ -78,6 +79,7 @@ function resultadoColor(r: string | null) {
 
 export default function DeliberacaoDetailPage({ params }: { params: { id: string } }) {
   const queryClient = useQueryClient();
+  const { demoEnabled } = useDataSyncContext();
   const [editing, setEditing]         = useState(false);
   const [form, setForm]               = useState<Partial<Deliberacao>>({});
   const [saving, setSaving]           = useState(false);
@@ -98,7 +100,7 @@ export default function DeliberacaoDetailPage({ params }: { params: { id: string
   });
 
   const startEdit = () => {
-    if (!deliberacao) return;
+    if (!deliberacao || demoEnabled) return;
     setForm({ ...deliberacao });
     setSaveError(null);
     setEditing(true);
@@ -125,6 +127,7 @@ export default function DeliberacaoDetailPage({ params }: { params: { id: string
           interessado:        form.interessado,
           processo:           form.processo,
           microtema:          form.microtema,
+          area_regulatoria:   form.area_regulatoria,
           resultado:          form.resultado,
           pauta_interna:      form.pauta_interna,
           resumo_pleito:      form.resumo_pleito,
@@ -144,6 +147,12 @@ export default function DeliberacaoDetailPage({ params }: { params: { id: string
 
   const set = (field: keyof Deliberacao, value: unknown) =>
     setForm((prev) => ({ ...prev, [field]: value }));
+
+  async function downloadAttachment() {
+    if (!deliberacao?.upload_job_id || demoEnabled || isLocal) return;
+    const signed = await api.get<{ url: string }>(`/deliberacoes/${params.id}/download`);
+    window.open(signed.url, "_blank", "noopener,noreferrer");
+  }
 
   if (isLoading) {
     return (
@@ -169,6 +178,12 @@ export default function DeliberacaoDetailPage({ params }: { params: { id: string
   return (
     <div className="max-w-3xl space-y-5 animate-fade-in">
       <ModuleTabs tabs={DELIBERACOES_TABS} />
+
+      {demoEnabled && (
+        <div className="card border-warning/30 bg-warning/10 py-2 px-3 text-sm text-warning">
+          Modo DEMO ativo: edicao de deliberacoes fica bloqueada em somente leitura.
+        </div>
+      )}
 
       {/* ── Header ─────────────────────────────────────────────────────── */}
       <div className="flex items-start gap-3 flex-wrap">
@@ -251,9 +266,19 @@ export default function DeliberacaoDetailPage({ params }: { params: { id: string
               </button>
             </>
           ) : (
-            <button className="btn-secondary text-xs flex items-center gap-1.5" onClick={startEdit}>
-              <Pencil className="w-3.5 h-3.5" /> Editar
-            </button>
+            <>
+              <button
+                className="btn-secondary text-xs flex items-center gap-1.5"
+                onClick={downloadAttachment}
+                disabled={!deliberacao.upload_job_id || demoEnabled || isLocal}
+                title={deliberacao.upload_job_id ? "Baixar PDF original por URL assinada" : "Sem PDF anexado"}
+              >
+                <Download className="w-3.5 h-3.5" /> PDF
+              </button>
+              <button className="btn-secondary text-xs flex items-center gap-1.5" onClick={startEdit} disabled={demoEnabled}>
+                <Pencil className="w-3.5 h-3.5" /> Editar
+              </button>
+            </>
           )}
         </div>
       </div>
@@ -340,6 +365,21 @@ export default function DeliberacaoDetailPage({ params }: { params: { id: string
             ) : (
               <p className="text-sm text-text-primary">
                 {deliberacao.microtema ? getMicrotemaLabel(deliberacao.microtema) : "—"}
+              </p>
+            )}
+          </Field>
+
+          <Field label="Área regulatória">
+            {editing ? (
+              <select className="select w-full text-sm" value={form.area_regulatoria ?? "outros"}
+                onChange={(e) => set("area_regulatoria", e.target.value || null)}>
+                {AREAS_REGULATORIAS.map((area) => (
+                  <option key={area} value={area}>{getAreaRegulatoriaLabel(area)}</option>
+                ))}
+              </select>
+            ) : (
+              <p className="text-sm text-text-primary">
+                {getAreaRegulatoriaLabel(deliberacao.area_regulatoria)}
               </p>
             )}
           </Field>

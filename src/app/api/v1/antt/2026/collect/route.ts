@@ -1,0 +1,156 @@
+import { NextRequest, NextResponse } from "next/server";
+import { isDemo } from "@/lib/server/is-demo";
+import {
+  ANTT_2026_SOURCE_URL,
+  collectAntt2026Documents,
+  discoverAntt2026Meetings,
+  type AnttMeeting,
+} from "@/lib/server/antt-2026-collector";
+import type { AnttCollectResponse, AnttPreviewResponse } from "@/types";
+import { requireAdminOrCron } from "@/lib/server/request-guards";
+
+export const dynamic = "force-dynamic";
+
+const MAX_PAGES_RE = /^\d{1,2}$/;
+const MAX_MEETINGS_RE = /^\d{1,3}$/;
+
+export async function GET(req: NextRequest) {
+  const searchParams = req.nextUrl.searchParams;
+  const maxPages = parseBoundedInt(searchParams.get("max_pages"), MAX_PAGES_RE, 3, 1, 3);
+  const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 60, 1, 80);
+
+  try {
+    const meetings = await discoverAntt2026Meetings({ maxPages, maxMeetings });
+    return NextResponse.json(buildPreviewResponse(meetings, maxPages, maxMeetings));
+  } catch (error) {
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : "Erro inesperado na previa ANTT 2026" },
+      { status: 500 },
+    );
+  }
+}
+
+export async function POST(req: NextRequest) {
+  const dryRun = req.nextUrl.searchParams.get("dry_run") === "1";
+  if (!dryRun) {
+    const guard = await requireAdminOrCron(req);
+    if (guard) return guard;
+  }
+
+  const searchParams = req.nextUrl.searchParams;
+  const maxPages = parseBoundedInt(searchParams.get("max_pages"), MAX_PAGES_RE, 12, 1, 20);
+  const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 120, 1, 200);
+
+  try {
+    if (isDemo() || dryRun) {
+      const meetings = await discoverAntt2026Meetings({ maxPages, maxMeetings });
+      const response = buildPreviewResponse(meetings, maxPages, maxMeetings);
+      response.errors = isDemo() ? ["Modo demo: coleta validada sem persistir no Supabase."] : [];
+      return NextResponse.json(response);
+    }
+
+    const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+    const db = createSupabaseServerClient();
+
+    const { data: site } = await db
+      .from("monitoramento_sites")
+      .select("id")
+      .eq("estrategia", "antt-2026")
+      .eq("url", "https://portal.antt.gov.br/web/guest/reunioes-da-diretoria")
+      .maybeSingle();
+
+    const { data: run } = site?.id
+      ? await db.from("monitoramento_runs").insert({ site_id: site.id, status: "running" }).select("id").single()
+      : { data: null };
+
+    const result = await collectAntt2026Documents(db, { maxPages, maxMeetings });
+
+    if (run?.id) {
+      await db.from("monitoramento_runs").update({
+        finished_at: new Date().toISOString(),
+        status: result.errors.length > 0 ? "error" : "ok",
+        itens_encontrados: result.documentos_encontrados,
+        novos_itens: result.documentos_baixados,
+        error_message: result.errors.length > 0 ? result.errors.slice(0, 5).join(" | ").slice(0, 1000) : null,
+      }).eq("id", run.id);
+    }
+
+    return NextResponse.json(result);
+  } catch (error) {
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : "Erro inesperado na coleta ANTT 2026" },
+      { status: 500 },
+    );
+  }
+}
+
+function parseBoundedInt(
+  value: string | null,
+  pattern: RegExp,
+  fallback: number,
+  min: number,
+  max: number,
+) {
+  if (!value || !pattern.test(value)) return fallback;
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed)) return fallback;
+  return Math.max(min, Math.min(max, parsed));
+}
+
+function buildPreviewResponse(
+  meetings: AnttMeeting[],
+  maxPages: number,
+  maxMeetings: number,
+): AnttPreviewResponse {
+  return {
+    dry_run: true,
+    source_url: ANTT_2026_SOURCE_URL,
+    max_pages: maxPages,
+    max_meetings: maxMeetings,
+    collected_at: new Date().toISOString(),
+    reunioes_encontradas: meetings.length,
+    reunioes_salvas: 0,
+    processos_salvos: meetings.reduce((sum, meeting) => sum + meeting.processos.length, 0),
+    documentos_encontrados: meetings.reduce((sum, meeting) => sum + meeting.documentos.length, 0),
+    documentos_baixados: 0,
+    documentos_duplicados: 0,
+    documentos_rejeitados: 0,
+    errors: [],
+    reunioes: meetings.map((meeting) => ({
+      numero: meeting.numero,
+      titulo: meeting.titulo,
+      tipo: meeting.tipo,
+      data_inicio: meeting.data_inicio,
+      data_fim: meeting.data_fim,
+      hora_inicio: meeting.hora_inicio,
+      hora_fim: meeting.hora_fim,
+      url_reuniao: meeting.url_reuniao,
+      documentos: meeting.documentos.map((doc) => ({
+        tipo: doc.tipo,
+        titulo: doc.titulo,
+        url: doc.url,
+        processo: doc.processo?.processo ?? null,
+        interessado: doc.processo?.interessado ?? null,
+        relator: doc.processo?.relator ?? null,
+        assunto: doc.processo?.assunto ?? null,
+      })),
+      processos: meeting.processos.map((processo) => ({
+        item_numero: processo.item_numero,
+        processo: processo.processo,
+        interessado: processo.interessado,
+        relator: processo.relator,
+        assunto: processo.assunto,
+        decisao: processo.decisao,
+        documentos: processo.documentos.map((doc) => ({
+          tipo: doc.tipo,
+          titulo: doc.titulo,
+          url: doc.url,
+          processo: processo.processo,
+          interessado: processo.interessado,
+          relator: processo.relator,
+          assunto: processo.assunto,
+        })),
+      })),
+    })),
+  };
+}

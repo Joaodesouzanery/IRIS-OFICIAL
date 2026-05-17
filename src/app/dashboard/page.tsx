@@ -165,7 +165,7 @@ export default function DashboardPage() {
       {/* Métricas de Valor Regulatório */}
       <section>
         <p className="section-label mb-3">Métricas de Valor Regulatório</p>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Distribuição de resultados */}
           <ChartWrapper
             title="Distribuição de Resultados"
@@ -173,8 +173,8 @@ export default function DashboardPage() {
             defaultType="pie"
           >
             {(type) => type === "pie"
-              ? <IrisPieChart data={resultadosPieData} height={160} innerRadius={45} />
-              : <IrisBarChart data={resultadosPieData.map((d) => ({ name: d.name, value: d.value }))} height={160} />
+              ? <IrisPieChart data={resultadosPieData} height={140} innerRadius={38} />
+              : <IrisBarChart data={resultadosPieData.map((d) => ({ name: d.name, value: d.value }))} height={140} />
             }
           </ChartWrapper>
 
@@ -186,20 +186,20 @@ export default function DashboardPage() {
           >
             {(type) => pautaPieData.length > 0
               ? type === "pie"
-                ? <IrisPieChart data={pautaPieData} height={160} innerRadius={45} />
-                : <IrisBarChart data={pautaPieData.map((d) => ({ name: d.name, value: d.value }))} height={160} />
-              : <div className="h-[160px] flex items-center justify-center text-text-muted text-sm">Sem dados</div>
+                ? <IrisPieChart data={pautaPieData} height={140} innerRadius={38} />
+                : <IrisBarChart data={pautaPieData.map((d) => ({ name: d.name, value: d.value }))} height={140} />
+              : <div className="h-[140px] flex items-center justify-center text-text-muted text-sm">Sem dados</div>
             }
           </ChartWrapper>
 
           {/* Votos por diretor */}
-          <div className="card">
+          <div className="card p-3 overflow-hidden">
             <p className="section-label mb-2">Votos por Diretor</p>
             {diretores && diretores.length > 0 ? (
-              <div className="space-y-2 mt-2">
+              <div className="space-y-2 mt-2 max-h-[140px] overflow-hidden">
                 {diretores.slice(0, 5).map((d) => (
                   <div key={d.diretor_id} className="flex items-center justify-between">
-                    <span className="text-xs text-text-secondary truncate max-w-[140px]">
+                    <span className="text-xs text-text-secondary truncate max-w-[180px]">
                       {d.diretor_nome.split(" ").slice(0, 2).join(" ")}
                     </span>
                     <span className="font-mono text-sm text-brand font-medium">
@@ -218,10 +218,10 @@ export default function DashboardPage() {
             title="Deliberações por Microtema"
             availableTypes={["bar", "pie", "area"]}
             defaultType="bar"
-            className="col-span-2"
+            className="lg:col-span-2"
           >
             {(type) => {
-              if (type === "pie") return <IrisPieChart data={microtemasPieData} height={200} showLegend />;
+              if (type === "pie") return <IrisPieChart data={microtemasPieData} height={190} innerRadius={48} showLegend />;
               if (type === "area") return (
                 <IrisAreaChart
                   data={microtemasAreaData}
@@ -229,7 +229,7 @@ export default function DashboardPage() {
                     { key: "deferido",   color: "#22c55e", label: "Deferido" },
                     { key: "indeferido", color: "#ef4444", label: "Indeferido" },
                   ]}
-                  height={200}
+                  height={190}
                 />
               );
               return (
@@ -237,7 +237,7 @@ export default function DashboardPage() {
                   data={microtemasBarData}
                   useMicrotemaColors
                   horizontal
-                  height={200}
+                  height={190}
                   formatLabel={getMicrotemaLabel}
                 />
               );
@@ -245,7 +245,7 @@ export default function DashboardPage() {
           </ChartWrapper>
 
           {/* Confiança da IA */}
-          <div className="card">
+          <div className="card p-3">
             <p className="section-label mb-3">Confiança da IA</p>
             <div className="space-y-3">
               <div className="flex items-center justify-between">

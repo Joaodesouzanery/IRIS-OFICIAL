@@ -14,7 +14,8 @@ import {
   AlignLeft, Loader2, X,
 } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
-import { CONFIG_TABS } from "@/lib/module-tabs";
+import { NOTICIAS_TABS } from "@/lib/module-tabs";
+import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 const EMAIL_RE = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
 
@@ -159,6 +160,7 @@ function buildHtml(opts: {
 
 export default function BoletimPage() {
   const queryClient = useQueryClient();
+  const { demoEnabled } = useDataSyncContext();
 
   // Builder state
   const [selectedSections, setSelectedSections] = useState<string[]>(["kpis", "recentes", "setores"]);
@@ -311,7 +313,12 @@ export default function BoletimPage() {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <ModuleTabs tabs={CONFIG_TABS} />
+      <ModuleTabs tabs={NOTICIAS_TABS} />
+      {demoEnabled && (
+        <div className="card border-warning/30 bg-warning/10 py-2 px-3 text-sm text-warning">
+          Modo DEMO ativo: agendamentos de boletim ficam bloqueados em somente leitura.
+        </div>
+      )}
       {/* Header */}
       <div className="flex items-start justify-between flex-wrap gap-3">
         <div>
@@ -407,6 +414,7 @@ export default function BoletimPage() {
           </div>
           <button
             onClick={() => setShowScheduleForm((v) => !v)}
+            disabled={demoEnabled}
             className="btn-primary flex items-center gap-1.5 text-xs px-3 py-1.5"
           >
             <Plus className="w-3.5 h-3.5" />
@@ -476,7 +484,7 @@ export default function BoletimPage() {
               <button onClick={() => setShowScheduleForm(false)} className="btn-secondary text-sm">Cancelar</button>
               <button
                 onClick={submitSchedule}
-                disabled={createMutation.isPending}
+                disabled={demoEnabled || createMutation.isPending}
                 className="btn-primary text-sm flex items-center gap-1.5"
               >
                 {createMutation.isPending && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
@@ -510,7 +518,7 @@ export default function BoletimPage() {
                 </span>
                 <button
                   onClick={() => deleteMutation.mutate(s.id)}
-                  disabled={deleteMutation.isPending}
+                  disabled={demoEnabled || deleteMutation.isPending}
                   className="w-7 h-7 flex items-center justify-center rounded text-text-label hover:text-error hover:bg-error/10 transition-colors"
                 >
                   <Trash2 className="w-3.5 h-3.5" />

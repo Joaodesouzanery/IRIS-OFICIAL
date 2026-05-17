@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "check:text": "node scripts/check-text-quality.js"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.4",

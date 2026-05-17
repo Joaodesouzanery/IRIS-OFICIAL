@@ -8,10 +8,12 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMicrotemas } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const agenciaId = req.nextUrl.searchParams.get("agencia_id");
     if (isLocalMode()) {
       return NextResponse.json(computeMicrotemas(getSyncedDelibs(), agenciaId));
@@ -25,7 +27,7 @@ export async function GET(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("microtema, resultado")
+    .select("microtema, resultado, tipo_documento, documento_pai_id, raw_extraction")
     .not("microtema", "is", null);
 
   if (agenciaId) query = query.eq("agencia_id", agenciaId);
@@ -36,7 +38,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar microtemas" }, { status: 500 });
   }
 
-  const rows = data ?? [];
+  const rows = (data ?? []).filter(isFinalDecisionRecord);
   const stats = new Map<string, { total: number; deferido: number; indeferido: number }>();
 
   for (const row of rows) {

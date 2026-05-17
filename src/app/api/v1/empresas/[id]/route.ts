@@ -9,6 +9,7 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeEmpresaDetalhe } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 
 export async function GET(
@@ -17,7 +18,7 @@ export async function GET(
 ) {
   const nome = decodeURIComponent(params.id);
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const delibs = isLocalMode()
       ? getSyncedDelibs()
       : demoData.deliberacoes({ limit: 9999 }).data;
@@ -38,7 +39,7 @@ export async function GET(
       `id, numero_deliberacao, reuniao_ordinaria, data_reuniao,
        interessado, processo, microtema, resultado, pauta_interna,
        resumo_pleito, fundamento_decisao, agencia_id, extraction_confidence,
-       created_at, agencias (sigla, nome),
+       created_at, tipo_documento, documento_pai_id, raw_extraction, agencias (sigla, nome),
        votos (id, tipo_voto, is_divergente, is_nominal, diretor_id, diretores (nome))`
     )
     .eq("interessado", nome)

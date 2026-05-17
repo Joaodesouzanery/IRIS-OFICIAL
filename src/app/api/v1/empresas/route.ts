@@ -8,6 +8,8 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeEmpresas } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
@@ -15,7 +17,7 @@ export async function GET(req: NextRequest) {
   const search    = req.nextUrl.searchParams.get("search")?.toLowerCase() ?? "";
   const microtema = req.nextUrl.searchParams.get("microtema") ?? "";
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       return NextResponse.json(computeEmpresas(getSyncedDelibs(), agenciaId));
     }
@@ -29,10 +31,9 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let q: any = db
     .from("deliberacoes")
-    .select("interessado, resultado, microtema, data_reuniao, agencia_id")
+    .select("interessado, resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, raw_extraction")
     .not("interessado", "is", null);
   if (agenciaId) q = q.eq("agencia_id", agenciaId);
   if (microtema) q = q.eq("microtema", microtema);
@@ -44,7 +45,7 @@ export async function GET(req: NextRequest) {
     total: number; deferido: number; indeferido: number;
     ultima: string; microtemas: Set<string>; agencia: string | null;
   }>();
-  for (const d of data ?? []) {
+  for (const d of (data ?? []).filter(isFinalDecisionRecord)) {
     if (!d.interessado) continue;
     if (!map.has(d.interessado)) {
       map.set(d.interessado, { total: 0, deferido: 0, indeferido: 0, ultima: "", microtemas: new Set(), agencia: d.agencia_id });

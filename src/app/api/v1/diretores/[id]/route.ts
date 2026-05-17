@@ -10,6 +10,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretorProfile } from "@/lib/server/analytics-engine";
 import type { DiretorProfile } from "@/types";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 const SAFE_ID_RE = /^[a-zA-Z0-9_-]+$/;
 
@@ -25,7 +26,7 @@ export async function GET(
     return NextResponse.json({ error: "ID inválido" }, { status: 400 });
   }
 
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       const profile = computeDiretorProfile(getSyncedDelibs(), id);
       if (!profile) return NextResponse.json({ error: "Diretor não encontrado" }, { status: 404 });

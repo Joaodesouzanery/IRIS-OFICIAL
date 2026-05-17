@@ -197,8 +197,7 @@ export function splitAtaItems(text: string): AtaItem[] {
     if (parsed) items.push(parsed);
   }
 
-  // Filtrar items sem processo (headers, aprovação de ata, sorteio, etc.)
-  return items.filter((item) => item.processo || item.assunto);
+  return normalizeNumericAtaHierarchy(items);
 }
 
 // ─── Parser de item individual ──────────────────────────────────────────
@@ -209,12 +208,12 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   const processo = processoMatch?.[1]?.trim() ?? null;
 
   // Assunto
-  const reAssunto = /Assunto:\s*([^.]+(?:\.[^.]{0,50})?)/i;
-  const assunto = reAssunto.exec(rawText)?.[1]?.trim() ?? null;
+  const reAssunto = /Assunto:\s*([\s\S]+?)(?=\n\s*(?:Processo|Interessad[oa]|Relat(?:or|ora)|VOTO|Decis[aã]o)\b|$)/i;
+  const assunto = cleanAtaField(reAssunto.exec(rawText)?.[1]) ?? null;
 
   // Interessado(a)
-  const reInteressado = /Interessad[oa]\(?a?\)?\s*:\s*([^.]+)/i;
-  const interessado = reInteressado.exec(rawText)?.[1]?.trim() ?? null;
+  const reInteressado = /Interessad[oa]\(?a?\)?\s*:\s*([\s\S]+?)(?=\n\s*(?:Relat(?:or|ora)|VOTO|Decis[aã]o|Processo)\b|$)/i;
+  const interessado = cleanAtaField(reInteressado.exec(rawText)?.[1]) ?? null;
 
   // Relator(a)
   const reRelator = /Relat(?:or|ora)\s*:\s*(?:Diretor[a]?(?:[- ]Geral)?\s+)?([^.]+)/i;
@@ -238,10 +237,8 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
     else if (/retirad[oa]\s+de\s+pauta/i.test(rawText)) resultado = "Retirado de Pauta";
   }
 
-  if (!resultado && decisao) {
-    if (/retirad[oa]\s+de\s+pauta/i.test(decisao)) resultado = "Retirado de Pauta";
-    else if (/pediu\s+vistas|voto\s+vistas|sobrest/i.test(decisao)) resultado = "Retirado de Pauta";
-    else if (unanimidade) resultado = "Aprovado por Unanimidade";
+  if (!resultado) {
+    resultado = inferResultadoFromText(decisao ?? rawText, unanimidade);
   }
 
   // Pular items sem conteúdo útil (ex: "Aprovação das atas")
@@ -258,4 +255,78 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
     unanimidade,
     raw_text: rawText,
   };
+}
+
+function normalizeNumericAtaHierarchy(items: AtaItem[]): AtaItem[] {
+  const parentSubjects = new Map<string, string>();
+  const parentDecisions = new Map<string, string>();
+  const normalized: AtaItem[] = [];
+
+  for (const item of items) {
+    if (isNumericParentHeader(item)) {
+      if (item.assunto) parentSubjects.set(item.item_numero, item.assunto);
+      if (item.decisao) parentDecisions.set(item.item_numero, item.decisao);
+      continue;
+    }
+
+    const parentKey = findParentKey(item.item_numero);
+    const inheritedSubject = parentKey ? parentSubjects.get(parentKey) : undefined;
+    const inheritedDecision = parentKey ? parentDecisions.get(parentKey) : undefined;
+
+    const merged: AtaItem = {
+      ...item,
+      assunto: item.assunto ?? inheritedSubject ?? null,
+      decisao: item.decisao ?? inheritedDecision ?? null,
+      raw_text: inheritedSubject && !item.raw_text.includes(inheritedSubject)
+        ? `${inheritedSubject}\n${item.raw_text}`
+        : item.raw_text,
+    };
+
+    if (!merged.resultado && merged.decisao) {
+      merged.resultado = inferResultadoFromText(merged.decisao, merged.unanimidade);
+    }
+
+    if (merged.processo || merged.assunto || merged.interessado || merged.decisao) {
+      normalized.push(merged);
+    }
+  }
+
+  return normalized;
+}
+
+function isNumericParentHeader(item: AtaItem): boolean {
+  return /^\d+\.\d+$/.test(item.item_numero) && !item.processo && !!item.assunto;
+}
+
+function findParentKey(itemNumero: string): string | null {
+  const match = /^(\d+\.\d+)\.\d+$/.exec(itemNumero);
+  return match?.[1] ?? null;
+}
+
+function inferResultadoFromText(text: string, unanimidade: boolean): string | null {
+  if (/retirad[oa]\s+de\s+pauta|pediu\s+vistas|voto\s+vistas|sobrest/i.test(text)) {
+    return "Retirado de Pauta";
+  }
+  if (/indeferid[oa]|negad[oa]|improcedente|n[aã]o\s+dar\s+provimento|negar\s+provimento/i.test(text)) {
+    return "Indeferido";
+  }
+  if (/deferid[oa]|dar\s+provimento|provimento\s+ao/i.test(text)) {
+    return "Deferido";
+  }
+  if (/aprovad[oa]/i.test(text) || unanimidade) {
+    return unanimidade ? "Aprovado por Unanimidade" : "Aprovado";
+  }
+  return null;
+}
+
+function cleanAtaField(value: string | undefined): string | null {
+  if (!value) return null;
+  const cleaned = value
+    .replace(/\s+/g, " ")
+    .replace(/\bVOTO\s*:.*$/i, "")
+    .replace(/\bRelat(?:or|ora)\s*:.*$/i, "")
+    .replace(/\bDecis[aã]o\s*:.*$/i, "")
+    .trim()
+    .replace(/[;,.]\s*$/, "");
+  return cleaned.length >= 3 ? cleaned : null;
 }

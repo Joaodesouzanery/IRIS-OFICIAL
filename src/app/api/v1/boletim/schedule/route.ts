@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { BoletimSchedule } from "@/types";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 
 const EMAIL_RE = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
 const STORAGE_KEY = "iris_boletim_schedules";
@@ -15,8 +16,8 @@ function isDemoMode() {
 
 // ── GET /api/v1/boletim/schedule ──────────────────────────────────────────
 
-export async function GET() {
-  if (isDemoMode()) {
+export async function GET(req: NextRequest) {
+  if (isDemoMode() || isDemoRequest(req)) {
     return NextResponse.json({ schedules: [...memoryStore.values()] });
   }
 
@@ -41,6 +42,9 @@ export async function GET() {
 // ── POST /api/v1/boletim/schedule ─────────────────────────────────────────
 
 export async function POST(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   let body: Partial<BoletimSchedule>;
   try {
     body = await req.json();
@@ -100,6 +104,9 @@ export async function POST(req: NextRequest) {
 // ── DELETE /api/v1/boletim/schedule?id=… ─────────────────────────────────
 
 export async function DELETE(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   const id = req.nextUrl.searchParams.get("id");
   if (!id) return NextResponse.json({ error: "id obrigatório" }, { status: 400 });
 

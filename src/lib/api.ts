@@ -1,11 +1,5 @@
-// URL relativa — funciona identicamente em dev (localhost:3000) e produção (Vercel)
-// Sem CORS, sem NEXT_PUBLIC_API_URL necessário
+// URL relativa: funciona em dev e producao sem CORS.
 const BASE_URL = "/api";
-
-// Quando Supabase não está configurado, usa dados demo automaticamente
-const IS_DEMO =
-  typeof window !== "undefined" &&
-  !process.env.NEXT_PUBLIC_SUPABASE_URL;
 
 class ApiError extends Error {
   constructor(
@@ -18,9 +12,7 @@ class ApiError extends Error {
 }
 
 function buildUrl(path: string): string {
-  if (!IS_DEMO) return `${BASE_URL}/v1${path}`;
-  const sep = path.includes("?") ? "&" : "?";
-  return `${BASE_URL}/v1${path}${sep}demo=1`;
+  return `${BASE_URL}/v1${path}`;
 }
 
 async function request<T>(
@@ -28,13 +20,16 @@ async function request<T>(
   options: RequestInit = {},
 ): Promise<T> {
   const url = buildUrl(path);
+  const headers = new Headers({
+    "Content-Type": "application/json",
+    Accept: "application/json",
+    ...options.headers,
+  });
+  await attachRuntimeHeaders(headers);
+
   const res = await fetch(url, {
     ...options,
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      ...options.headers,
-    },
+    headers,
   });
 
   if (!res.ok) {
@@ -60,13 +55,15 @@ export const api = {
 
   delete: <T>(path: string) => request<T>(path, { method: "DELETE" }),
 
-  // Upload especial: multipart/form-data (sem Content-Type)
   upload: async <T>(path: string, formData: FormData): Promise<T> => {
     const url = buildUrl(path);
+    const headers = new Headers();
+    await attachRuntimeHeaders(headers);
+
     const res = await fetch(url, {
       method: "POST",
       body: formData,
-      // Sem Content-Type — o browser define o boundary do multipart automaticamente
+      headers,
     });
     if (!res.ok) {
       const body = await res.json().catch(() => ({}));
@@ -78,3 +75,26 @@ export const api = {
 };
 
 export { ApiError };
+
+async function attachRuntimeHeaders(headers: Headers): Promise<void> {
+  if (typeof window !== "undefined" && localStorage.getItem("iris_demo_enabled") === "1") {
+    headers.set("x-iris-demo", "1");
+  }
+
+  const token = await getSupabaseAccessToken();
+  if (token) headers.set("Authorization", `Bearer ${token}`);
+}
+
+async function getSupabaseAccessToken(): Promise<string | null> {
+  if (typeof window === "undefined") return null;
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) return null;
+
+  try {
+    const { createSupabaseBrowserClient } = await import("@/lib/supabase/client");
+    const supabase = createSupabaseBrowserClient();
+    const { data } = await supabase.auth.getSession();
+    return data.session?.access_token ?? null;
+  } catch {
+    return null;
+  }
+}

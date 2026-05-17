@@ -6,10 +6,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 
 
 export async function GET(req: NextRequest) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json(demoData.agencias());
   }
 
@@ -28,6 +29,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   if (isDemo()) {
     return NextResponse.json(
       { error: "Criação de agências não disponível em modo demo" },

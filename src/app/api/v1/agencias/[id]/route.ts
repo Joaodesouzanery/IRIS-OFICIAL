@@ -6,13 +6,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 
 
 export async function GET(
   req: NextRequest,
   { params }: { params: { id: string } }
 ) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     const found = demoData.agencias().find((a) => a.id === params.id);
     if (!found) return NextResponse.json({ error: "Agência não encontrada" }, { status: 404 });
     return NextResponse.json(found);
@@ -37,6 +38,9 @@ export async function PATCH(
   req: NextRequest,
   { params }: { params: { id: string } }
 ) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
   if (isDemo()) {
     return NextResponse.json(
       { error: "Edição não disponível em modo demo" },

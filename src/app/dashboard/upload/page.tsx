@@ -4,7 +4,8 @@ import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { cn } from "@/lib/utils";
+import { useDataSyncContext } from "@/components/DataSyncProvider";
+import { AREAS_REGULATORIAS, cn, getAreaRegulatoriaLabel } from "@/lib/utils";
 import type {
   Agencia,
   PreviewResult,
@@ -24,7 +25,8 @@ import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 
 // ─── Constantes ─────────────────────────────────────────────────────────────
 
-const BATCH_SIZE = 5; // PDFs por request — evita timeout e limite de payload Vercel
+const BATCH_SIZE = 1; // processa pela fila; evita perder lotes grandes quando um arquivo falha
+const PREVIEW_MAX_TOTAL_SIZE = 150 * 1024 * 1024;
 
 const RESULTADOS = [
   "Deferido", "Indeferido", "Parcialmente Deferido", "Retirado de Pauta",
@@ -80,6 +82,85 @@ function fmtSize(bytes: number) {
   if (bytes < 1024) return bytes + " B";
   if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + " KB";
   return (bytes / 1024 / 1024).toFixed(1) + " MB";
+}
+
+function errorPreviewResult(filename: string): PreviewResult {
+  return {
+    filename,
+    status: "error",
+    fields: {
+      numero_deliberacao: null,
+      numero_reuniao: null,
+      reuniao_ordinaria: null,
+      tipo_reuniao: null,
+      tipo_documento: "documento_apoio",
+      data_reuniao: null,
+      interessado: null,
+      assunto: null,
+      procedencia: null,
+      relator: null,
+      item_numero: null,
+      processo: null,
+      resultado: null,
+      decisoes_todas: [],
+      microtema: "outros",
+      area_regulatoria: "outros",
+      pauta_interna: false,
+      resumo_pleito: null,
+      fundamento_decisao: null,
+      nomes_votacao: [],
+      nomes_votacao_contra: [],
+    },
+    confidence: 0,
+    page_count: 0,
+    chars_per_page: 0,
+    file_hash: "",
+    is_duplicate: false,
+    duplicate_job_id: null,
+    agencia_id_detected: null,
+    agencia_sigla_detected: null,
+    import_counts_as_final: false,
+  };
+}
+
+function missingFields(fields: PreviewResultFields, anttType?: string) {
+  if (anttType && anttType !== "voto_individual") {
+    const requiredAntt: Array<[keyof PreviewResultFields, string]> = [
+      ["data_reuniao", "data"],
+      ["processo", "processo"],
+      ["interessado", "interessado"],
+      ["assunto", "assunto"],
+      ["relator", "relator"],
+    ];
+    return requiredAntt.filter(([key]) => !fields[key]).map(([, label]) => label);
+  }
+  const required: Array<[keyof PreviewResultFields, string]> = [
+    ["numero_deliberacao", "número"],
+    ["data_reuniao", "data"],
+    ["resultado", "resultado"],
+    ["processo", "processo"],
+    ["assunto", "assunto"],
+  ];
+  return required.filter(([key]) => !fields[key]).map(([, label]) => label);
+}
+
+function formatAnttTypeLabel(type?: string | null) {
+  switch (type) {
+    case "reuniao_deliberativa_eletronica":
+      return "Reunião Deliberativa Eletrônica";
+    case "reuniao_diretoria_publica":
+      return "Reunião de Diretoria Pública";
+    case "reuniao_extraordinaria":
+      return "Reunião Extraordinária";
+    case "voto_individual":
+      return "Voto Individual";
+    case "ata":
+      return "Ata";
+    case "pauta":
+      return "Pauta";
+    default:
+      return type ? type.replaceAll("_", " ") : "";
+  }
 }
 
 function mostCommon<T>(arr: T[]): T | null {
@@ -138,6 +219,10 @@ function ReviewCard({
 }) {
   const [open, setOpen] = useState(item.status !== "ok" && !item.rejected);
   const fields: PreviewResultFields = { ...item.fields, ...item.edited };
+  const anttType = item.documento_antt_tipo ?? (item.extraction_raw?.documento_antt_tipo as string | undefined);
+  const missing = missingFields(fields, anttType);
+  const anttRaw = item.extraction_raw?.antt as Record<string, unknown> | undefined;
+  const warnings = item.warnings ?? (item.extraction_raw?.warnings as string[] | undefined) ?? [];
 
   function set<K extends keyof PreviewResultFields>(k: K, v: PreviewResultFields[K]) {
     onUpdate(item.id, { [k]: v } as Partial<PreviewResultFields>);
@@ -169,7 +254,7 @@ function ReviewCard({
 
         <FileText className="w-4 h-4 shrink-0 text-text-label" />
         <span className="flex-1 text-sm text-text-primary font-medium truncate min-w-0">
-          {item.filename}
+          {item.source_archive ? `${item.source_archive} / ${item.filename}` : item.filename}
         </span>
 
         {/* Badge duplicado */}
@@ -185,6 +270,12 @@ function ReviewCard({
         {/* Agência detectada */}
         {item.agencia_sigla_detected && (
           <span className="badge badge-green text-xs">{item.agencia_sigla_detected}</span>
+        )}
+
+        {anttType && (
+          <span className="badge bg-warning/15 text-warning text-xs uppercase">
+            ANTT {formatAnttTypeLabel(anttType)}
+          </span>
         )}
 
         {/* Tipo de documento */}
@@ -241,10 +332,54 @@ function ReviewCard({
               <span>
                 <strong>Duplicata detectada:</strong>{" "}
                 {item.duplicate_reason ?? "Este PDF já foi processado anteriormente."}{" "}
-                Confirme mesmo assim ou clique em "Rejeitar".
+                Confirme mesmo assim ou clique em &quot;Rejeitar&quot;.
               </span>
             </div>
           )}
+
+          {warnings.length > 0 && (
+            <div className="flex items-start gap-2 p-3 rounded-md bg-warning/10 border border-warning/20 text-sm text-warning">
+              <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+              <div>
+                <strong>Revisão ANTT necessária:</strong>
+                <ul className="list-disc pl-4 mt-1 space-y-0.5">
+                  {warnings.map((warning) => (
+                    <li key={warning}>{warning}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
+
+          {item.import_counts_as_final === false && (
+            <div className="flex items-start gap-2 p-3 rounded-md bg-brand/10 border border-brand/20 text-sm text-brand">
+              <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+              <span>
+                Documento de apoio: sera salvo para contexto/dossie, mas nao deve alimentar dashboards como decisao final.
+              </span>
+            </div>
+          )}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="rounded-md bg-surface-secondary p-3">
+              <p className="text-xs text-text-label font-mono uppercase tracking-wider">QA extração</p>
+              <p className={cn("text-sm mt-1", missing.length ? "text-warning" : "text-success")}>
+                {missing.length ? `Revisar: ${missing.join(", ")}` : "Campos essenciais completos"}
+              </p>
+            </div>
+            <div className="rounded-md bg-surface-secondary p-3">
+              <p className="text-xs text-text-label font-mono uppercase tracking-wider">Agência</p>
+              <p className="text-sm text-text-secondary mt-1">
+                {item.agencia_sigla_detected ?? "Não detectada"}
+              </p>
+            </div>
+            <div className="rounded-md bg-surface-secondary p-3">
+              <p className="text-xs text-text-label font-mono uppercase tracking-wider">Documento</p>
+              <p className="text-sm text-text-secondary mt-1">
+                {fields.tipo_documento} · {item.chars_per_page > 0 ? `${item.chars_per_page.toLocaleString("pt-BR")} chars/pág` : "sem texto"}
+              </p>
+            </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <div className="space-y-1">
@@ -284,6 +419,26 @@ function ReviewCard({
                 value={fields.processo ?? ""}
                 onChange={(e) => set("processo", e.target.value || null)}
                 placeholder="ex: SEI! nº 001.0036/2024-51"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <label className="text-xs text-text-label font-mono uppercase tracking-wider">Relator / diretor</label>
+              <input
+                className="input"
+                value={fields.relator ?? ""}
+                onChange={(e) => set("relator", e.target.value || null)}
+                placeholder="ex: Felipe Queiroz"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <label className="text-xs text-text-label font-mono uppercase tracking-wider">Item</label>
+              <input
+                className="input"
+                value={fields.item_numero ?? ""}
+                onChange={(e) => set("item_numero", e.target.value || null)}
+                placeholder="ex: 1.1"
               />
             </div>
 
@@ -336,6 +491,19 @@ function ReviewCard({
               </select>
             </div>
 
+            <div className="space-y-1">
+              <label className="text-xs text-text-label font-mono uppercase tracking-wider">Área regulatória</label>
+              <select
+                className="input"
+                value={fields.area_regulatoria ?? "outros"}
+                onChange={(e) => set("area_regulatoria", e.target.value)}
+              >
+                {AREAS_REGULATORIAS.map((area) => (
+                  <option key={area} value={area}>{getAreaRegulatoriaLabel(area)}</option>
+                ))}
+              </select>
+            </div>
+
             <div className="space-y-1 md:col-span-2">
               <label className="flex items-center gap-2 cursor-pointer mt-1">
                 <input
@@ -369,6 +537,29 @@ function ReviewCard({
             </div>
           </div>
 
+          {anttType && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 border-t border-border">
+              <div>
+                <p className="text-xs text-text-label font-mono uppercase tracking-wider mb-1">Tipo ANTT</p>
+                <p className="text-sm text-text-secondary">{formatAnttTypeLabel(anttType)}</p>
+              </div>
+              <div>
+                <p className="text-xs text-text-label font-mono uppercase tracking-wider mb-1">
+                  {anttType === "voto_individual" ? "Autor do voto" : "Relator"}
+                </p>
+                <p className="text-sm text-text-secondary">
+                  {String(anttRaw?.diretor_autor_voto ?? fields.relator ?? "não identificado")}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs text-text-label font-mono uppercase tracking-wider mb-1">Chave revisável</p>
+                <p className="text-xs text-text-secondary font-mono truncate" title={item.semantic_duplicate_key ?? undefined}>
+                  {item.semantic_duplicate_key ?? "sem chave"}
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Diretores detectados */}
           {fields.nomes_votacao.length > 0 && (
             <div className="pt-2 border-t border-border">
@@ -387,14 +578,15 @@ function ReviewCard({
           {(item as any).ata_items?.length > 0 && (
             <div className="pt-2 border-t border-border">
               <p className="text-xs text-text-label font-mono uppercase tracking-wider mb-2">
-                Processos extraidos ({(item as any).ata_items.length})
+                Processos extraídos ({(item as any).ata_items.length})
               </p>
               <div className="space-y-1.5 max-h-60 overflow-y-auto">
                 {((item as any).ata_items as Array<{
                   item_numero: string; processo: string | null;
                   assunto: string | null; interessado: string | null;
                   relator: string | null; resultado: string | null;
-                  microtema: string;
+                  decisao?: string | null; microtema: string; area_regulatoria?: string;
+                  votos_detectados?: string[]; unanimidade_detectada?: boolean;
                 }>).map((ai, i) => (
                   <div key={i} className="flex items-start gap-2 text-xs p-1.5 rounded bg-surface-secondary">
                     <span className="font-mono text-brand shrink-0 w-8">{ai.item_numero}</span>
@@ -402,10 +594,19 @@ function ReviewCard({
                       {ai.processo && <span className="font-mono text-text-label">{ai.processo}</span>}
                       {ai.assunto && <span className="block text-text-primary truncate">{ai.assunto}</span>}
                       {ai.interessado && <span className="block text-text-label truncate">{ai.interessado}</span>}
+                      {ai.relator && <span className="block text-text-label truncate">Relator: {ai.relator}</span>}
+                      {ai.decisao && <span className="block text-text-label truncate">Decisão: {ai.decisao}</span>}
+                      {ai.votos_detectados && ai.votos_detectados.length > 0 && (
+                        <span className="block text-text-label truncate">
+                          Votos detectados: {ai.votos_detectados.join(", ")}
+                        </span>
+                      )}
                     </div>
                     <div className="flex gap-1 shrink-0">
+                      {ai.unanimidade_detectada && <span className="badge badge-green text-[10px]">unanimidade</span>}
                       {ai.resultado && <span className="badge badge-gray text-[10px]">{ai.resultado}</span>}
                       <span className="badge badge-gray text-[10px]">{ai.microtema}</span>
+                      <span className="badge badge-gray text-[10px]">{getAreaRegulatoriaLabel(ai.area_regulatoria)}</span>
                     </div>
                   </div>
                 ))}
@@ -421,6 +622,7 @@ function ReviewCard({
 // ─── Página principal ─────────────────────────────────────────────────────
 
 export default function UploadPage() {
+  const { demoEnabled } = useDataSyncContext();
   const queryClient = useQueryClient();
   const [stage, setStage] = useState<Stage>("queue");
   const [queue, setQueue] = useState<QueuedFile[]>([]);
@@ -451,9 +653,13 @@ export default function UploadPage() {
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { "application/pdf": [".pdf"] },
-    maxFiles: 1000,
-    maxSize: 52_428_800,
+    accept: {
+      "application/pdf": [".pdf"],
+      "application/zip": [".zip"],
+      "application/x-zip-compressed": [".zip"],
+    },
+    maxFiles: 500,
+    maxSize: 157_286_400,
     disabled: stage !== "queue",
   });
 
@@ -486,27 +692,41 @@ export default function UploadPage() {
     try {
       for (let i = 0; i < allFiles.length; i += BATCH_SIZE) {
         const batch = allFiles.slice(i, i + BATCH_SIZE);
+        const batchBytes = batch.reduce((sum, qf) => sum + qf.file.size, 0);
+        if (batchBytes > PREVIEW_MAX_TOTAL_SIZE) {
+          allResults.push(...batch.map((qf) => ({
+            ...errorPreviewResult(qf.file.name),
+            error: `Arquivo/lote excede ${fmtSize(PREVIEW_MAX_TOTAL_SIZE)} (${fmtSize(batchBytes)}).`,
+          })));
+          setQueue((prev) => prev.map((f) => batch.some((b) => b.id === f.id) ? { ...f, status: "error" } : f));
+          setAnalyzeProgress({ done: Math.min(i + batch.length, allFiles.length), total: allFiles.length });
+          continue;
+        }
         // Mostra o nome do primeiro arquivo do lote como indicador de progresso
         setCurrentBatchFile(batch[0]?.file.name ?? null);
 
         const formData = new FormData();
         batch.forEach((qf) => formData.append("files", qf.file));
 
-        const res = await api.upload<BatchPreviewResponse>("/upload/preview", formData);
-        allResults.push(...res.results);
+        try {
+          const res = await api.upload<BatchPreviewResponse>("/upload/preview", formData);
+          allResults.push(...res.results);
 
-        // Atualiza progresso DEPOIS do lote concluído
-        setAnalyzeProgress({ done: i + batch.length, total: allFiles.length });
-
-        // Atualiza status dos arquivos deste lote na fila
-        setQueue((prev) =>
-          prev.map((f) => {
-            const batchIdx = batch.findIndex((b) => b.id === f.id);
-            if (batchIdx === -1) return f;
-            const r = res.results[batchIdx];
-            return { ...f, status: !r || r.status === "error" ? "error" : "done" };
-          })
-        );
+          setAnalyzeProgress({ done: i + batch.length, total: allFiles.length });
+          setQueue((prev) =>
+            prev.map((f) => {
+              const batchIdx = batch.findIndex((b) => b.id === f.id);
+              if (batchIdx === -1) return f;
+              const hasError = res.results.length > 0 && res.results.every((r) => r.status === "error");
+              return { ...f, status: hasError ? "error" : "done" };
+            })
+          );
+        } catch (err) {
+          const message = err instanceof Error ? err.message : "Erro ao analisar arquivo";
+          allResults.push(...batch.map((qf) => ({ ...errorPreviewResult(qf.file.name), error: message })));
+          setQueue((prev) => prev.map((f) => batch.some((b) => b.id === f.id) ? { ...f, status: "error" } : f));
+          setAnalyzeProgress({ done: Math.min(i + batch.length, allFiles.length), total: allFiles.length });
+        }
       }
       setCurrentBatchFile(null);
     } catch (err) {
@@ -522,41 +742,30 @@ export default function UploadPage() {
     // ── Dedup client-side: hash de sessão + número já salvo em local ────────
     const dedupReasons: (string | undefined)[] = new Array(allResults.length);
     try {
-      const seenHashes = new Set<string>(
-        JSON.parse(localStorage.getItem("iris_seen_file_hashes") ?? "[]")
-      );
-      const localNumbers = new Set<string>(
+      const localNumbers = demoEnabled ? new Set<string>(
         getLocalDelibs()
           .map((d) => d.numero_deliberacao)
           .filter((n): n is string => !!n)
-      );
+      ) : new Set<string>();
       const batchHashes = new Set<string>();
       const batchNumbers = new Set<string>();
 
       for (let i = 0; i < allResults.length; i++) {
         const r = allResults[i];
-        if (r.is_duplicate) { dedupReasons[i] = "Já processado (servidor)"; continue; }
+        if (r.is_duplicate) { dedupReasons[i] = r.duplicate_reason ?? "Ja processado ou duplicado"; continue; }
         const hash = r.file_hash ?? "";
-        const num  = r.fields?.numero_deliberacao ?? "";
-        if      (hash && seenHashes.has(hash))   dedupReasons[i] = "Arquivo já processado (hash idêntico)";
-        else if (num  && localNumbers.has(num))  dedupReasons[i] = `Nº ${num} já existe na base`;
+        const agenciaKey = r.agencia_id_detected ?? "sem-agencia";
+        const semantic = typeof r.semantic_duplicate_key === "string" ? r.semantic_duplicate_key : "";
+        const num = semantic || (r.fields?.numero_deliberacao
+          ? `${agenciaKey}:${r.fields.numero_deliberacao}`
+          : "");
+        if      (num  && localNumbers.has(num))  dedupReasons[i] = `Nº ${num} já existe na base local`;
         else if (hash && batchHashes.has(hash))  dedupReasons[i] = "Arquivo duplicado neste lote";
         else if (num  && batchNumbers.has(num))  dedupReasons[i] = `Nº ${num} duplicado neste lote`;
         if (hash) batchHashes.add(hash);
         if (num)  batchNumbers.add(num);
       }
     } catch { /* não crítico */ }
-
-    // Persiste hashes no localStorage após dedup (persistente entre sessões)
-    try {
-      const seen: string[] = JSON.parse(
-        localStorage.getItem("iris_seen_file_hashes") ?? "[]"
-      );
-      for (const r of allResults) {
-        if (r.file_hash && !seen.includes(r.file_hash)) seen.push(r.file_hash);
-      }
-      localStorage.setItem("iris_seen_file_hashes", JSON.stringify(seen.slice(-1000)));
-    } catch { /* localStorage pode estar indisponível */ }
 
     // Auto-seleciona agência majoritária detectada (só se usuário não selecionou)
     const detectedSiglas = allResults
@@ -574,10 +783,10 @@ export default function UploadPage() {
         const isDup = r.is_duplicate || !!dedupReasons[i];
         return {
           ...r,
-          id: allFiles[i]?.id ?? crypto.randomUUID(),
+          id: `${r.file_hash || r.filename}-${i}`,
           is_duplicate: isDup,
           rejected: isDup,
-          duplicate_reason: dedupReasons[i],
+          duplicate_reason: dedupReasons[i] ?? r.duplicate_reason,
           edited: {},
         };
       })
@@ -602,6 +811,7 @@ export default function UploadPage() {
   }
 
   const activeItems = reviewItems.filter((r) => !r.rejected && r.status !== "error");
+  const activeItemsWithoutAgency = activeItems.filter((item) => !item.agencia_id_detected && !agenciaId);
 
   // ── Etapa 4: Confirmar ───────────────────────────────────────────────
   async function handleConfirm() {
@@ -612,6 +822,7 @@ export default function UploadPage() {
       const fields: PreviewResultFields = { ...item.fields, ...item.edited };
       return {
         filename: item.filename,
+        agencia_id: item.agencia_id_detected || agenciaId || null,
         numero_deliberacao: fields.numero_deliberacao,
         numero_reuniao: fields.numero_reuniao,
         reuniao_ordinaria: fields.reuniao_ordinaria,
@@ -627,23 +838,41 @@ export default function UploadPage() {
         resultado: fields.resultado,
         decisoes_todas: fields.decisoes_todas ?? [],
         microtema: fields.microtema,
+        area_regulatoria: fields.area_regulatoria ?? "outros",
         pauta_interna: fields.pauta_interna,
         resumo_pleito: fields.resumo_pleito,
         fundamento_decisao: fields.fundamento_decisao,
         nomes_votacao: fields.nomes_votacao,
         nomes_votacao_contra: fields.nomes_votacao_contra ?? [],
         extraction_confidence: item.confidence,
-        extraction_raw: item.extraction_raw,
+        documento_antt_tipo: item.documento_antt_tipo ?? null,
+        documento_subtipo: item.documento_subtipo ?? null,
+        import_counts_as_final: item.import_counts_as_final !== false,
+        semantic_duplicate_key: item.semantic_duplicate_key ?? null,
+        warnings: item.warnings ?? [],
+        extraction_raw: {
+          ...(item.extraction_raw ?? {}),
+          documento_antt_tipo: item.documento_antt_tipo ?? item.extraction_raw?.documento_antt_tipo,
+          documento_subtipo: item.documento_subtipo ?? item.extraction_raw?.documento_subtipo,
+          import_counts_as_final: item.import_counts_as_final !== false,
+          semantic_duplicate_key: item.semantic_duplicate_key ?? item.extraction_raw?.semantic_duplicate_key,
+          warnings: item.warnings ?? item.extraction_raw?.warnings,
+          area_regulatoria: fields.area_regulatoria ?? item.extraction_raw?.area_regulatoria,
+        },
         // Para atas: enviar items extraídos para split no backend
         ...((item as any).ata_items ? { ata_items: (item as any).ata_items } : {}),
       };
     });
 
     try {
-      const res = await api.post<BatchConfirmResponse>("/upload/confirm", {
-        agencia_id: agenciaId,
-        deliberacoes,
-      });
+      const formData = new FormData();
+      formData.append("payload", JSON.stringify({ agencia_id: agenciaId, deliberacoes }));
+      for (const queued of queue) {
+        if (queued.status === "done") {
+          formData.append("files", queued.file, queued.file.name);
+        }
+      }
+      const res = await api.upload<BatchConfirmResponse>("/upload/confirm", formData);
       // Demo mode: persist returned deliberações in localStorage
       if (res.deliberacoes && res.deliberacoes.length > 0) {
         appendLocalDelibs(res.deliberacoes);
@@ -681,11 +910,11 @@ export default function UploadPage() {
       <div className="flex items-start justify-between">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-xl font-semibold text-text-primary">Upload de PDFs</h1>
-            <HelpTooltip text="Envie PDFs de deliberações para extração automática de dados. O sistema identifica número, data, interessado, resultado e votos." />
+            <h1 className="text-xl font-semibold text-text-primary">Upload de PDFs e ZIPs</h1>
+            <HelpTooltip text="Envie PDFs ou ZIPs para extração assistida. O sistema separa deliberação, ata, pauta e voto antes da confirmação." />
           </div>
           <p className="text-sm text-text-muted mt-1">
-            Arraste os PDFs → analise com IA → revise os campos → confirme no sistema.
+            Arraste documentos → analise com IA → revise os campos → confirme no sistema.
           </p>
         </div>
 
@@ -711,6 +940,11 @@ export default function UploadPage() {
         </div>
       </div>
 
+      {demoEnabled && (
+        <div className="border border-violet-400/30 bg-violet-500/10 rounded-card p-3 text-sm text-violet-200">
+          Modo DEMO ativo: a analise de documentos funciona para teste, mas confirmacao e gravacao ficam bloqueadas.
+        </div>
+      )}
       {/* ── ETAPA 1 + 2: Fila e Análise ──────────────────────────────────── */}
       {(stage === "queue" || stage === "analyzing") && (
         <>
@@ -755,7 +989,7 @@ export default function UploadPage() {
               className={cn("w-10 h-10 mx-auto mb-4", isDragActive ? "text-brand" : "text-text-label")}
             />
             {isDragActive ? (
-              <p className="text-brand font-medium">Solte os PDFs aqui</p>
+              <p className="text-brand font-medium">Solte os PDFs ou ZIPs aqui</p>
             ) : stage === "analyzing" ? (
               <div className="space-y-3">
                 <div className="flex items-center justify-center gap-2 text-text-secondary">
@@ -763,7 +997,7 @@ export default function UploadPage() {
                   <span className="truncate max-w-xs">
                     {currentBatchFile
                       ? `Analisando: ${currentBatchFile}`
-                      : "Analisando PDFs..."}
+                      : "Analisando documentos..."}
                   </span>
                 </div>
                 <div className="w-full max-w-xs mx-auto bg-bg-hover rounded-full h-1.5">
@@ -779,11 +1013,11 @@ export default function UploadPage() {
             ) : (
               <>
                 <p className="text-text-primary font-medium">
-                  Arraste PDFs aqui ou{" "}
+                  Arraste PDFs/ZIPs aqui ou{" "}
                   <span className="text-brand underline">clique para selecionar</span>
                 </p>
                 <p className="text-xs text-text-muted mt-2">
-                  Apenas .pdf · Máx. 50 MB por arquivo · Até 1.000 arquivos por lote
+                  Até 500 PDFs/ZIPs na fila · max. 50 MB por PDF · análise arquivo a arquivo
                 </p>
               </>
             )}
@@ -831,7 +1065,7 @@ export default function UploadPage() {
             <div className="flex justify-end">
               <button onClick={handleAnalyze} className="btn-primary">
                 <Upload className="w-4 h-4" />
-                Analisar {queue.length} PDF{queue.length !== 1 ? "s" : ""}
+                Analisar {queue.length} arquivo{queue.length !== 1 ? "s" : ""}
               </button>
             </div>
           )}
@@ -867,13 +1101,13 @@ export default function UploadPage() {
                 </button>
                 <button
                   onClick={handleConfirm}
-                  disabled={activeItems.length === 0 || stage === "confirming"}
+                  disabled={activeItems.length === 0 || activeItemsWithoutAgency.length > 0 || stage === "confirming" || demoEnabled}
                   className="btn-primary"
                 >
                   {stage === "confirming" ? (
                     <><Loader2 className="w-4 h-4 animate-spin" /> Confirmando...</>
                   ) : (
-                    <><CheckCircle className="w-4 h-4" /> Confirmar {activeItems.length} deliberaç{activeItems.length !== 1 ? "ões" : "ão"}</>
+                    <><CheckCircle className="w-4 h-4" /> Confirmar {activeItems.length} documento{activeItems.length !== 1 ? "s" : ""}</>
                   )}
                 </button>
               </div>
@@ -884,6 +1118,15 @@ export default function UploadPage() {
             <div className="flex items-start gap-3 p-4 rounded-md bg-error/10 border border-error/20">
               <XCircle className="w-4 h-4 text-error shrink-0 mt-0.5" />
               <p className="text-sm text-error">{analyzeError}</p>
+            </div>
+          )}
+
+          {activeItemsWithoutAgency.length > 0 && (
+            <div className="flex items-start gap-3 p-4 rounded-md bg-warning/10 border border-warning/20">
+              <AlertTriangle className="w-4 h-4 text-warning shrink-0 mt-0.5" />
+              <p className="text-sm text-warning">
+                {activeItemsWithoutAgency.length} arquivo(s) sem agência detectada. Selecione uma agência reguladora para confirmar o lote.
+              </p>
             </div>
           )}
 
@@ -904,13 +1147,13 @@ export default function UploadPage() {
             <div className="sticky bottom-4 flex justify-end pt-2">
               <button
                 onClick={handleConfirm}
-                disabled={stage === "confirming"}
+                disabled={stage === "confirming" || activeItemsWithoutAgency.length > 0 || demoEnabled}
                 className="btn-primary shadow-lg"
               >
                 {stage === "confirming" ? (
                   <><Loader2 className="w-4 h-4 animate-spin" /> Confirmando...</>
                 ) : (
-                  <><CheckCircle className="w-4 h-4" /> Confirmar {activeItems.length} deliberaç{activeItems.length !== 1 ? "ões" : "ão"} →</>
+                  <><CheckCircle className="w-4 h-4" /> Confirmar {activeItems.length} documento{activeItems.length !== 1 ? "s" : ""} →</>
                 )}
               </button>
             </div>
@@ -925,7 +1168,7 @@ export default function UploadPage() {
             <CheckCircle className="w-6 h-6 text-success" />
             <div>
               <p className="text-text-primary font-semibold">
-                {confirmResults.created} deliberaç{confirmResults.created !== 1 ? "ões criadas" : "ão criada"}
+                {confirmResults.created} documento{confirmResults.created !== 1 ? "s criados" : " criado"}
               </p>
               {confirmResults.errors > 0 && (
                 <p className="text-xs text-error mt-0.5">

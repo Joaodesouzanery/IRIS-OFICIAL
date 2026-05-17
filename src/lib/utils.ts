@@ -88,3 +88,28 @@ export function getMicrotemaCategoriaLabel(microtema: string): string {
   return CATEGORIAS_REGULATORIAS.find((c) => c.microtemas.includes(microtema))?.label
     ?? "Usuários e Administrativo";
 }
+
+export function getAreaRegulatoriaLabel(area: string | null | undefined): string {
+  const labels: Record<string, string> = {
+    rodovia: "Rodovia",
+    ferrovia: "Ferrovia",
+    rodoviario_passageiros: "Rodoviário de passageiros",
+    cargas_logistica: "Cargas e logística",
+    infraestrutura_geral: "Infraestrutura geral",
+    governanca_regulatoria: "Governança regulatória",
+    administrativo: "Administrativo",
+    outros: "Outros",
+  };
+  return area ? labels[area] ?? area : "Outros";
+}
+
+export const AREAS_REGULATORIAS = [
+  "rodovia",
+  "ferrovia",
+  "rodoviario_passageiros",
+  "cargas_logistica",
+  "infraestrutura_geral",
+  "governanca_regulatoria",
+  "administrativo",
+  "outros",
+] as const;

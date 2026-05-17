@@ -1,6 +1,6 @@
 /**
  * POST /api/v1/upload/preview
- * Aceita múltiplos PDFs (máx 5 por lote, 25 MB total), extrai campos via NLP
+ * Aceita PDFs e ZIPs, extrai campos via NLP e retorna uma fila de revisão.
  * e retorna PreviewResult[]. NÃO persiste nada.
  * Funciona em modo demo e produção (mesma lógica).
  * Inclui: SHA-256 dedup, detecção de agência, validação de payload total.
@@ -9,14 +9,24 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { PreviewResult, BatchPreviewResponse } from "@/types";
 import { isDemo } from "@/lib/server/is-demo";
+import { requireAdmin } from "@/lib/server/request-guards";
 
-const MAX_FILE_SIZE   = 50 * 1024 * 1024; // 50 MB por arquivo
-const MAX_TOTAL_SIZE  = 25 * 1024 * 1024; // 25 MB por lote (segurança Vercel)
-const MAX_FILES_PER_BATCH = 1000;
+const MAX_FILE_SIZE   = 50 * 1024 * 1024; // 50 MB por PDF
+const MAX_TOTAL_SIZE  = 150 * 1024 * 1024; // PDFs + ZIPs por lote
+const MAX_UPLOADS_PER_BATCH = 500;
+const MAX_PDFS_PER_BATCH = 500;
+
+type PreviewUploadFile = {
+  name: string;
+  buffer: Buffer;
+  source_archive: string | null;
+  size: number;
+};
 
 // Agências conhecidas em modo demo — sem DB
 const DEMO_AGENCIES = [
   { id: "demo-agency-artesp", sigla: "ARTESP" },
+  { id: "demo-agency-antt",   sigla: "ANTT"   },
   { id: "demo-agency-anm",    sigla: "ANM"    },
   { id: "demo-agency-aneel",  sigla: "ANEEL"  },
   { id: "demo-agency-anvisa", sigla: "ANVISA" },
@@ -24,6 +34,16 @@ const DEMO_AGENCIES = [
 
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  const demoPreview =
+    isDemo() ||
+    req.headers.get("x-iris-demo") === "1" ||
+    req.nextUrl.searchParams.get("demo") === "1";
+
+  if (!demoPreview) {
+    const guard = await requireAdmin(req);
+    if (guard) return guard;
+  }
+
   try {
     const formData = await req.formData();
     const files = formData.getAll("files") as File[];
@@ -32,9 +52,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: "Nenhum arquivo enviado" }, { status: 400 });
     }
 
-    if (files.length > MAX_FILES_PER_BATCH) {
+    if (files.length > MAX_UPLOADS_PER_BATCH) {
       return NextResponse.json(
-        { error: `Máximo de ${MAX_FILES_PER_BATCH} arquivos por lote` },
+        { error: `Maximo de ${MAX_UPLOADS_PER_BATCH} arquivos/ZIPs por lote` },
         { status: 400 }
       );
     }
@@ -45,7 +65,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json(
         {
           error: `Tamanho total do lote excede ${MAX_TOTAL_SIZE / 1024 / 1024} MB. ` +
-                 `Reduza para no máximo 5 PDFs por vez ou use PDFs menores.`,
+                 `Reduza o lote ou use arquivos menores.`,
         },
         { status: 413 }
       );
@@ -53,15 +73,56 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     // Importações server-only
     const { isPdfBuffer, extractPdfText, sha256Hex } = await import("@/lib/server/pdf-extractor");
+    const { isZipBuffer, extractPdfEntriesFromZip } = await import("@/lib/server/zip-extractor");
     const { extractFields, calcConfidence } = await import("@/lib/server/nlp-extractor");
     const { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } = await import("@/lib/server/classifier");
     const { detectDocumentType, splitAtaItems, extractAtaMetadata } = await import("@/lib/server/ata-splitter");
+    const { parseAnttManualDocument } = await import("@/lib/server/antt-manual-parser");
+    const { classifyAreaRegulatoria } = await import("@/lib/server/area-regulatoria");
+    const { classifyRegulatoryDocument, extractAnmMeetingMetadata } = await import("@/lib/server/regulatory-documents");
+
+    const expandedFiles: PreviewUploadFile[] = [];
+    for (const file of files) {
+      const buffer = Buffer.from(await file.arrayBuffer());
+      if (isZipBuffer(buffer)) {
+        const entries = extractPdfEntriesFromZip(buffer, {
+          maxFiles: MAX_PDFS_PER_BATCH,
+          maxTotalUncompressedBytes: MAX_TOTAL_SIZE,
+        });
+        for (const entry of entries) {
+          expandedFiles.push({
+            name: entry.name,
+            buffer: entry.buffer,
+            source_archive: file.name,
+            size: entry.uncompressedSize,
+          });
+        }
+      } else {
+        expandedFiles.push({
+          name: file.name,
+          buffer,
+          source_archive: null,
+          size: file.size,
+        });
+      }
+    }
+
+    if (expandedFiles.length === 0) {
+      return NextResponse.json({ error: "Nenhum PDF encontrado no lote" }, { status: 400 });
+    }
+
+    if (expandedFiles.length > MAX_PDFS_PER_BATCH) {
+      return NextResponse.json(
+        { error: `Maximo de ${MAX_PDFS_PER_BATCH} PDFs por lote apos descompactar ZIPs` },
+        { status: 400 },
+      );
+    }
 
     // Carrega agências uma vez por request
     let allAgencias: { id: string; sigla: string }[];
     let db: Awaited<ReturnType<typeof import("@/lib/supabase/server").createSupabaseServerClient>> | null = null;
 
-    if (isDemo()) {
+    if (demoPreview) {
       allAgencias = DEMO_AGENCIES;
     } else {
       const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -74,7 +135,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     // Processa todos os arquivos em paralelo (antes era sequencial — 5× mais rápido)
     const results: PreviewResult[] = await Promise.all(
-      files.map(async (file): Promise<PreviewResult> => {
+      expandedFiles.map(async (file): Promise<PreviewResult> => {
         // Validação de tamanho individual
         if (file.size > MAX_FILE_SIZE) {
           return {
@@ -83,13 +144,15 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           };
         }
 
-        const buffer = Buffer.from(await file.arrayBuffer());
+        const buffer = file.buffer;
 
         // Validação via magic bytes
         if (!isPdfBuffer(buffer)) {
           return {
             ...errorResult(file.name),
-            error: "Arquivo inválido: não é um PDF (magic bytes incorretos)",
+            error: file.source_archive
+              ? `Entrada do ZIP ${file.source_archive} nao e um PDF valido`
+              : "Arquivo invalido: nao e um PDF (magic bytes incorretos)",
           };
         }
 
@@ -133,22 +196,60 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         }
 
         // Detectar tipo de documento
-        const tipo_documento = detectDocumentType(extraction.text);
+        let tipo_documento = detectDocumentType(extraction.text);
 
         // NLP
         const fields = extractFields(extraction.text);
-        const { microtema } = classifyMicrotema(extraction.text);
-        const confidence = calcConfidence(fields);
+        const antt = parseAnttManualDocument(extraction.text, file.name);
+        if (antt.isAntt) {
+          Object.assign(fields, withoutUndefined(antt.fields as Record<string, unknown>));
+          if (antt.fields.tipo_documento) {
+            tipo_documento = antt.fields.tipo_documento;
+          }
+        }
+        let { microtema } = classifyMicrotema(extraction.text);
+        let area_regulatoria = classifyAreaRegulatoria(extraction.text);
+        let confidence = calcConfidence(fields);
+        if (antt.isAntt) confidence = Math.max(confidence, antt.confidenceBoost);
 
         // Detecção de agência (antes de pauta_interna, pois precisa da sigla)
-        const agencia_sigla_detected = detectAgenciaSigla(extraction.text, siglas);
+        let agencia_sigla_detected = detectAgenciaSigla(extraction.text, siglas);
+        if (antt.isAntt) agencia_sigla_detected = "ANTT";
         const agencia_id_detected = agencia_sigla_detected
           ? (allAgencias.find((a) => a.sigla === agencia_sigla_detected)?.id ?? null)
           : null;
 
-        const pauta_interna = fields.pauta_interna || classifyPautaInterna(
-          extraction.text, fields.interessado, agencia_sigla_detected
-        );
+        const pauta_interna = antt.isAntt
+          ? Boolean(antt.fields.pauta_interna)
+          : fields.pauta_interna || classifyPautaInterna(
+            extraction.text, fields.interessado, agencia_sigla_detected
+          );
+
+        const regulatoryClass = classifyRegulatoryDocument({
+          text: extraction.text,
+          filename: file.name,
+          tipo_documento,
+          agencia_sigla: agencia_sigla_detected,
+          documento_antt_tipo: antt.documentType,
+          numero_deliberacao: fields.numero_deliberacao,
+          numero_reuniao: fields.numero_reuniao,
+          data_reuniao: fields.data_reuniao,
+          processo: fields.processo,
+        });
+        tipo_documento = regulatoryClass.tipo_documento;
+        const documentWarnings = [
+          ...(antt.isAntt ? antt.warnings : []),
+          ...regulatoryClass.warnings,
+        ];
+        if (!regulatoryClass.import_counts_as_final) {
+          confidence = Math.min(confidence, 0.72);
+        }
+        if (agencia_sigla_detected === "ANM" || regulatoryClass.documento_subtipo?.startsWith("anm_")) {
+          const anmMeta = extractAnmMeetingMetadata(extraction.text, file.name);
+          if (anmMeta.numero_reuniao && !fields.numero_reuniao) fields.numero_reuniao = anmMeta.numero_reuniao;
+          if (anmMeta.tipo_reuniao && !fields.tipo_reuniao) fields.tipo_reuniao = anmMeta.tipo_reuniao;
+          if (anmMeta.data_reuniao) fields.data_reuniao = anmMeta.data_reuniao;
+        }
 
         // Verificação de duplicata semântica (produção apenas)
         // 1. Por numero_deliberacao (principal)
@@ -181,7 +282,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         let ata_items: Array<{
           item_numero: string; processo: string | null; assunto: string | null;
           interessado: string | null; relator: string | null;
-          decisao: string | null; resultado: string | null; microtema: string;
+          decisao: string | null; resultado: string | null; microtema: string; area_regulatoria?: string;
         }> | undefined;
 
         if (tipo_documento === "ata") {
@@ -196,16 +297,47 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             decisao: item.decisao?.slice(0, 500) ?? null,
             resultado: item.resultado,
             microtema: classifyMicrotema(item.raw_text, agencia_sigla_detected).microtema,
+            area_regulatoria: classifyAreaRegulatoria(item.raw_text),
           }));
           // Sobrescrever data se o campo estava vazio (deliberação não detectou, mas ata sim)
           if (!fields.data_reuniao && ataMeta.data_reuniao) {
             fields.data_reuniao = ataMeta.data_reuniao;
           }
+          confidence = Math.max(confidence, calcAtaPreviewConfidence({
+            numero_reuniao: fields.numero_reuniao,
+            tipo_reuniao: fields.tipo_reuniao,
+            data_reuniao: fields.data_reuniao,
+            agencia_sigla_detected,
+            ata_items,
+          }));
         }
+
+        if (antt.ataItems?.length) {
+          ata_items = antt.ataItems.map((item) => ({
+            ...item,
+            microtema: item.microtema && item.microtema !== "outros"
+              ? item.microtema
+              : classifyMicrotema(
+                [item.assunto, item.interessado, item.decisao].filter(Boolean).join(" "),
+                agencia_sigla_detected
+              ).microtema,
+            area_regulatoria: item.area_regulatoria ?? classifyAreaRegulatoria(
+              [item.assunto, item.interessado, item.decisao].filter(Boolean).join(" "),
+            ),
+          }));
+          microtema = ata_items[0]?.microtema ?? microtema;
+          area_regulatoria = (ata_items[0]?.area_regulatoria ?? area_regulatoria) as typeof area_regulatoria;
+        }
+
+        const warnings = documentWarnings;
+        const semantic_duplicate_key = antt.raw.dedupe_semantic_key
+          ? String(antt.raw.dedupe_semantic_key)
+          : regulatoryClass.semantic_duplicate_key;
 
         return {
           filename: file.name,
-          status: confidence >= 0.5 ? "ok" : "low_confidence",
+          source_archive: file.source_archive,
+          status: confidence >= 0.5 && warnings.length === 0 ? "ok" : "low_confidence",
           fields: {
             numero_deliberacao: fields.numero_deliberacao,
             numero_reuniao: fields.numero_reuniao,
@@ -216,12 +348,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             interessado: fields.interessado,
             assunto: fields.assunto,
             procedencia: fields.procedencia,
-            relator: null, // deliberações individuais não têm relator global
-            item_numero: null,
+            relator: (fields as { relator?: string | null }).relator ?? null,
+            item_numero: (fields as { item_numero?: string | null }).item_numero ?? null,
             processo: fields.processo,
             resultado: fields.resultado,
             decisoes_todas: fields.decisoes_todas,
             microtema,
+            area_regulatoria: (fields as { area_regulatoria?: string }).area_regulatoria ?? area_regulatoria,
             pauta_interna,
             resumo_pleito: fields.resumo_pleito,
             fundamento_decisao: fields.fundamento_decisao,
@@ -236,6 +369,15 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           duplicate_job_id,
           agencia_id_detected,
           agencia_sigla_detected,
+          documento_subtipo: regulatoryClass.documento_subtipo,
+          import_counts_as_final: regulatoryClass.import_counts_as_final,
+          semantic_duplicate_key,
+          warnings,
+          ...(antt.isAntt ? {
+            documento_antt_tipo: antt.documentType,
+            semantic_duplicate_key,
+            warnings,
+          } : {}),
           ...(ata_items ? { ata_items } : {}),
           extraction_raw: {
             numero_deliberacao: fields.numero_deliberacao,
@@ -250,6 +392,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             resultado: fields.resultado,
             decisoes_todas: fields.decisoes_todas,
             microtema,
+            area_regulatoria: (fields as { area_regulatoria?: string }).area_regulatoria ?? area_regulatoria,
             pauta_interna,
             resumo_pleito: fields.resumo_pleito,
             fundamento_decisao: fields.fundamento_decisao,
@@ -262,11 +405,25 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             page_count: extraction.pageCount,
             chars_per_page: extraction.charsPerPage,
             agencia_sigla_detected,
+            source_archive: file.source_archive,
+            documento_subtipo: regulatoryClass.documento_subtipo,
+            import_counts_as_final: regulatoryClass.import_counts_as_final,
             semantic_duplicate,
+            semantic_duplicate_key,
+            warnings,
+            ...(antt.isAntt ? {
+              antt: antt.raw,
+              documento_antt_tipo: antt.documentType,
+              documento_anttl_tipo: antt.documentType,
+              warnings,
+              semantic_duplicate_key,
+            } : {}),
           },
         };
       })
     );
+
+    markBatchDuplicates(results);
 
     const response: BatchPreviewResponse = { results };
     return NextResponse.json(response);
@@ -299,6 +456,7 @@ function errorResult(
       resultado: null,
       decisoes_todas: [],
       microtema: "outros",
+      area_regulatoria: "outros",
       pauta_interna: false,
       resumo_pleito: null,
       fundamento_decisao: null,
@@ -314,4 +472,78 @@ function errorResult(
     agencia_id_detected: null,
     agencia_sigla_detected: null,
   };
+}
+
+function withoutUndefined<T extends Record<string, unknown>>(value: T): Partial<T> {
+  return Object.fromEntries(
+    Object.entries(value).filter(([, entry]) => entry !== undefined),
+  ) as Partial<T>;
+}
+
+function markBatchDuplicates(results: PreviewResult[]) {
+  const byHash = new Map<string, PreviewResult[]>();
+  const bySemantic = new Map<string, PreviewResult[]>();
+
+  for (const result of results) {
+    if (result.status === "error") continue;
+    if (result.file_hash) {
+      const items = byHash.get(result.file_hash) ?? [];
+      items.push(result);
+      byHash.set(result.file_hash, items);
+    }
+    const semanticKey = result.semantic_duplicate_key ?? result.extraction_raw?.semantic_duplicate_key;
+    if (typeof semanticKey === "string" && semanticKey.length > 8) {
+      const items = bySemantic.get(semanticKey) ?? [];
+      items.push(result);
+      bySemantic.set(semanticKey, items);
+    }
+  }
+
+  for (const items of byHash.values()) {
+    if (items.length <= 1) continue;
+    items.forEach((item, index) => {
+      if (index === 0) return;
+      item.is_duplicate = true;
+      item.duplicate_reason = `Duplicata binaria no lote: igual a ${items[0].filename}`;
+    });
+  }
+
+  for (const items of bySemantic.values()) {
+    if (items.length <= 1) continue;
+    items.forEach((item, index) => {
+      if (index === 0 || item.is_duplicate) return;
+      item.is_duplicate = true;
+      item.duplicate_reason = `Possivel duplicata semantica no lote: mesmo numero/processo de ${items[0].filename}`;
+    });
+  }
+}
+
+function calcAtaPreviewConfidence(input: {
+  numero_reuniao: string | null;
+  tipo_reuniao: string | null;
+  data_reuniao: string | null;
+  agencia_sigla_detected: string | null;
+  ata_items: Array<{
+    processo: string | null;
+    assunto: string | null;
+    interessado: string | null;
+    resultado: string | null;
+  }>;
+}): number {
+  const itemCount = input.ata_items.length;
+  const withProcess = input.ata_items.filter((item) => item.processo).length;
+  const withSubject = input.ata_items.filter((item) => item.assunto).length;
+  const withInterested = input.ata_items.filter((item) => item.interessado).length;
+  const itemQuality = itemCount > 0
+    ? Math.min(0.35, ((withProcess + withSubject + withInterested) / (itemCount * 3)) * 0.35)
+    : 0;
+
+  return [
+    input.numero_reuniao ? 0.18 : 0,
+    input.tipo_reuniao ? 0.08 : 0,
+    input.data_reuniao ? 0.14 : 0,
+    input.agencia_sigla_detected ? 0.10 : 0,
+    itemCount > 0 ? 0.15 : 0,
+    itemQuality,
+  ].reduce((sum, value) => sum + value, 0);
 }

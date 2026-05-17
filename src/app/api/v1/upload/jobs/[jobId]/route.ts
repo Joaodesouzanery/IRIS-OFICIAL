@@ -5,13 +5,14 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest } from "@/lib/server/request-guards";
 
 
 export async function GET(
   req: NextRequest,
   { params }: { params: { jobId: string } }
 ) {
-  if (isDemo()) {
+  if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Job não encontrado" }, { status: 404 });
   }
 

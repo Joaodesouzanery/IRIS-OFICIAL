@@ -8,9 +8,11 @@ import { formatDate, cn } from "@/lib/utils";
 import { Building2, Plus, Check } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { CONFIG_TABS } from "@/lib/module-tabs";
+import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 export default function AgenciasPage() {
   const qc = useQueryClient();
+  const { demoEnabled } = useDataSyncContext();
   const [nova, setNova] = useState({ sigla: "", nome: "", nome_completo: "" });
   const [showForm, setShowForm] = useState(false);
   const [error, setError] = useState("");
@@ -41,11 +43,17 @@ export default function AgenciasPage() {
             Gerencie as agências cadastradas na plataforma
           </p>
         </div>
-        <button className="btn-primary" onClick={() => setShowForm((v) => !v)}>
+        <button className="btn-primary" onClick={() => setShowForm((v) => !v)} disabled={demoEnabled}>
           <Plus className="w-3.5 h-3.5" />
           Nova Agência
         </button>
       </div>
+
+      {demoEnabled && (
+        <div className="card border-warning/30 bg-warning/10 py-2 px-3 text-sm text-warning">
+          Modo DEMO ativo: cadastro de agencias fica bloqueado em somente leitura.
+        </div>
+      )}
 
       {/* Formulário de nova agência */}
       {showForm && (
@@ -86,7 +94,7 @@ export default function AgenciasPage() {
             <button
               className="btn-primary"
               onClick={() => createMutation.mutate(nova)}
-              disabled={!nova.sigla || !nova.nome || createMutation.isPending}
+              disabled={demoEnabled || !nova.sigla || !nova.nome || createMutation.isPending}
             >
               {createMutation.isPending ? "Salvando..." : "Salvar"}
             </button>
@@ -105,7 +113,7 @@ export default function AgenciasPage() {
           <div className="card text-center py-12">
             <Building2 className="w-8 h-8 text-text-label mx-auto mb-3" />
             <p className="text-text-muted text-sm">Nenhuma agência cadastrada</p>
-            <p className="text-xs text-text-label mt-1">Clique em "Nova Agência" para começar</p>
+            <p className="text-xs text-text-label mt-1">Clique em &quot;Nova Agência&quot; para começar</p>
           </div>
         ) : (
           (agencias ?? []).map((a) => (

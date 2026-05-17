@@ -48,9 +48,9 @@ export function IrisPieChart({
         <Pie
           data={enriched}
           cx="50%"
-          cy="50%"
+          cy={showLegend ? "44%" : "50%"}
           innerRadius={innerRadius}
-          outerRadius={innerRadius + 44}
+          outerRadius={innerRadius + 34}
           paddingAngle={3}
           dataKey="value"
         >
@@ -67,11 +67,16 @@ export function IrisPieChart({
           <Legend
             iconType="circle"
             iconSize={8}
+            formatter={(value) => {
+              const label = String(value);
+              return label.length > 18 ? `${label.slice(0, 17)}…` : label;
+            }}
             wrapperStyle={{
               fontSize: "11px",
               fontFamily: "JetBrains Mono, monospace",
               color: "#a1a1aa",
-              paddingTop: "8px",
+              paddingTop: "4px",
+              lineHeight: "16px",
             }}
           />
         )}

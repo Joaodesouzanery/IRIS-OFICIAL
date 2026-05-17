@@ -9,8 +9,10 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { getLocalDelibs } from "@/lib/local-store";
+import type { RuntimeStatus } from "@/types";
 
 const MODE_KEY = "iris_data_mode";
+const DEMO_KEY = "iris_demo_enabled";
 type DataMode = "demo" | "local";
 
 function readMode(): DataMode {
@@ -18,12 +20,40 @@ function readMode(): DataMode {
   return (localStorage.getItem(MODE_KEY) as DataMode) ?? "local";
 }
 
+function readDemoEnabled(): boolean {
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem(DEMO_KEY) === "1";
+}
+
+const DEFAULT_RUNTIME_STATUS: RuntimeStatus = {
+  is_demo: true,
+  has_supabase_url: false,
+  has_service_role_key: false,
+  persistence: "demo",
+  mode_reason: "missing_supabase_url",
+  warnings: ["Verificando configuração do ambiente."],
+};
+
 export function useDataSync() {
   const queryClient = useQueryClient();
   const [mode, setModeState] = useState<DataMode>(readMode);
+  const [userDemoEnabled, setDemoEnabledState] = useState<boolean>(readDemoEnabled);
+  const [runtimeStatus, setRuntimeStatus] = useState<RuntimeStatus>(DEFAULT_RUNTIME_STATUS);
   const [synced, setSynced] = useState(false);
   const [localCount, setLocalCount] = useState(0);
   const lastHash = useRef("");
+
+  const refreshRuntimeStatus = useCallback(async (userDemo = readDemoEnabled()) => {
+    try {
+      const headers = new Headers({ Accept: "application/json" });
+      if (userDemo) headers.set("x-iris-demo", "1");
+      const res = await fetch("/api/v1/system/status", { headers });
+      if (!res.ok) throw new Error(res.statusText);
+      setRuntimeStatus(await res.json());
+    } catch {
+      setRuntimeStatus(DEFAULT_RUNTIME_STATUS);
+    }
+  }, []);
 
   const doSync = useCallback(async (newMode?: DataMode) => {
     const m = newMode ?? readMode();
@@ -61,23 +91,59 @@ export function useDataSync() {
     doSync(next);
   }, [doSync]);
 
+  const setDemoEnabled = useCallback((enabled: boolean) => {
+    localStorage.setItem(DEMO_KEY, enabled ? "1" : "0");
+    localStorage.setItem(MODE_KEY, enabled ? "demo" : "local");
+    setModeState(enabled ? "demo" : "local");
+    setDemoEnabledState(enabled);
+    lastHash.current = "";
+    doSync(enabled ? "demo" : "local");
+    refreshRuntimeStatus(enabled);
+    queryClient.invalidateQueries();
+  }, [doSync, queryClient, refreshRuntimeStatus]);
+
+  const toggleDemo = useCallback(() => {
+    setDemoEnabled(!readDemoEnabled());
+  }, [setDemoEnabled]);
+
   // Sync on mount
   useEffect(() => {
+    refreshRuntimeStatus();
     doSync();
-  }, [doSync]);
+  }, [doSync, refreshRuntimeStatus]);
 
   // Listen for cross-tab storage changes
   useEffect(() => {
     const handler = (e: StorageEvent) => {
       if (e.key === "iris_local_deliberacoes" || e.key === MODE_KEY) {
         if (e.key === MODE_KEY) setModeState(readMode());
+        setDemoEnabledState(readDemoEnabled());
         lastHash.current = ""; // Force re-sync
+        refreshRuntimeStatus(readDemoEnabled());
         doSync();
+      } else if (e.key === DEMO_KEY) {
+        setDemoEnabledState(readDemoEnabled());
+        refreshRuntimeStatus(readDemoEnabled());
+        queryClient.invalidateQueries();
       }
     };
     window.addEventListener("storage", handler);
     return () => window.removeEventListener("storage", handler);
-  }, [doSync]);
+  }, [doSync, queryClient, refreshRuntimeStatus]);
 
-  return { mode, toggleMode, synced, localCount, sync: doSync };
+  const demoEnabled = runtimeStatus.is_demo || userDemoEnabled;
+
+  return {
+    mode,
+    toggleMode,
+    demoEnabled,
+    userDemoEnabled,
+    serverDemo: runtimeStatus.persistence === "demo",
+    runtimeStatus,
+    toggleDemo,
+    setDemoEnabled,
+    synced,
+    localCount,
+    sync: doSync,
+  };
 }

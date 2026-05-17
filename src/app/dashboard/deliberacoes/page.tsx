@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { cn, formatDate, getMicrotemaLabel } from "@/lib/utils";
+import { AREAS_REGULATORIAS, cn, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel } from "@/lib/utils";
 import type { DeliberacaoPaginada, Agencia, Deliberacao } from "@/types";
 import { Search, Download, ChevronLeft, ChevronRight, ExternalLink, Trash2 } from "lucide-react";
 import Link from "next/link";
@@ -11,6 +11,7 @@ import { HelpTooltip } from "@/components/ui/HelpTooltip";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { getLocalDelibs, clearLocalDelibs } from "@/lib/local-store";
+import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 const MICROTEMAS = [
   // ARTESP
@@ -27,10 +28,13 @@ const MICROTEMAS = [
 const ANOS = Array.from({ length: 10 }, (_, i) => new Date().getFullYear() - i);
 
 export default function DeliberacoesPage() {
+  const queryClient = useQueryClient();
+  const { sync } = useDataSyncContext();
   const [search, setSearch] = useState("");
   const [agenciaId, setAgenciaId] = useState<string>("");
   const [year, setYear] = useState<string>("");
   const [microtema, setMicrotema] = useState<string>("");
+  const [areaRegulatoria, setAreaRegulatoria] = useState<string>("");
   const [resultado, setResultado] = useState<string>("");
   const [pautaExterna, setPautaExterna] = useState(false);
   const [dateFrom, setDateFrom] = useState<string>("");
@@ -42,6 +46,7 @@ export default function DeliberacoesPage() {
   if (agenciaId) params.set("agencia_id", agenciaId);
   if (year) params.set("year", year);
   if (microtema) params.set("microtema", microtema);
+  if (areaRegulatoria) params.set("area_regulatoria", areaRegulatoria);
   if (resultado) params.set("resultado", resultado);
   if (pautaExterna) params.set("pauta_interna", "false");
   if (dateFrom) params.set("date_from", dateFrom);
@@ -91,6 +96,14 @@ export default function DeliberacoesPage() {
     window.location.href = `/api/v1/deliberacoes/export?${exportParams.toString()}`;
   };
 
+  async function handleClearTestData() {
+    if (!window.confirm("Excluir todas as deliberações locais de teste?")) return;
+    clearLocalDelibs();
+    setLocalDelibs([]);
+    await sync("local");
+    queryClient.invalidateQueries();
+  }
+
   return (
     <div className="space-y-4 animate-fade-in">
       <ModuleTabs tabs={DELIBERACOES_TABS} />
@@ -110,20 +123,13 @@ export default function DeliberacoesPage() {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          {localDelibs.length > 0 && (
-            <button
-              className="btn-secondary text-xs text-danger border-danger/30 hover:bg-danger/10 flex items-center gap-1.5"
-              onClick={() => {
-                if (window.confirm(`Excluir ${localDelibs.length} deliberaç${localDelibs.length !== 1 ? "ões" : "ão"} salvas localmente?`)) {
-                  clearLocalDelibs();
-                  setLocalDelibs([]);
-                }
-              }}
-            >
-              <Trash2 className="w-3.5 h-3.5" />
-              Excluir {localDelibs.length} locais
-            </button>
-          )}
+          <button
+            className="btn-secondary text-xs text-error border-error/30 hover:bg-error/10 flex items-center gap-1.5"
+            onClick={handleClearTestData}
+          >
+            <Trash2 className="w-3.5 h-3.5" />
+            Excluir tudo do teste
+          </button>
           <button onClick={handleExport} className="btn-secondary gap-1.5">
             <Download className="w-3.5 h-3.5" />
             Exportar CSV
@@ -178,6 +184,17 @@ export default function DeliberacoesPage() {
             <option value="">Todos os microtemas</option>
             {MICROTEMAS.map((m) => (
               <option key={m} value={m}>{getMicrotemaLabel(m)}</option>
+            ))}
+          </select>
+
+          <select
+            className="select w-44"
+            value={areaRegulatoria}
+            onChange={(e) => { setAreaRegulatoria(e.target.value); setPage(1); }}
+          >
+            <option value="">Todas as áreas</option>
+            {AREAS_REGULATORIAS.map((area) => (
+              <option key={area} value={area}>{getAreaRegulatoriaLabel(area)}</option>
             ))}
           </select>
 
@@ -260,13 +277,13 @@ export default function DeliberacoesPage() {
             <tbody>
               {isLoading ? (
                 <tr>
-                  <td colSpan={7} className="px-4 py-12 text-center text-text-muted text-sm">
+                  <td colSpan={8} className="px-4 py-12 text-center text-text-muted text-sm">
                     Carregando deliberações...
                   </td>
                 </tr>
               ) : allDelibs.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="px-4 py-12 text-center text-text-muted text-sm">
+                  <td colSpan={8} className="px-4 py-12 text-center text-text-muted text-sm">
                     Nenhuma deliberação encontrada
                   </td>
                 </tr>
@@ -322,6 +339,11 @@ export default function DeliberacoesPage() {
                         ) : (
                           <span className="text-text-muted text-xs">—</span>
                         )}
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="badge badge-gray text-xs">
+                          {getAreaRegulatoriaLabel(d.area_regulatoria)}
+                        </span>
                       </td>
                       {/* Resumo */}
                       <td className="px-4 py-3 text-xs text-text-muted max-w-[280px]">

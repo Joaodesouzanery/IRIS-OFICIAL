@@ -506,3 +506,15 @@ CREATE TABLE alertas_monitoramento (
 ### Nota sobre ARTESP
 
 O site ARTESP usa **Liferay CMS** que renderiza parcialmente via JavaScript. O `cheerio` simples pode retornar 0 itens. Recomendado usar `puppeteer` com aguardo de carregamento dinâmico antes de extrair os links.
+
+## 11. Otimizações para envio a outros módulos
+
+As extrações de PDF devem alimentar a plataforma como um dossiê regulatório, não apenas como uma linha em `deliberacoes`.
+
+- **Classificação documental**: `pauta`, `ata`, `voto_individual` e `deliberacao` têm efeitos diferentes. Pautas e votos entram como sinais revisáveis; apenas decisões finais entram nas métricas principais.
+- **Agrupamento por contexto**: documentos com a mesma agência, reunião e processo devem ficar agrupados para conectar pauta, voto, ata e deliberação oficial.
+- **Dashboard**: contagens devem ignorar envelopes de ata e documentos sem decisão final para evitar duplicidade.
+- **Diretores**: votos nominais alimentam a matriz de votação; nomes não reconhecidos viram candidatos pendentes de revisão.
+- **Empresas**: interessado, processo, assunto e resultado alimentam histórico por concessionária/empresa regulada.
+- **Notícias e newsletter**: deliberações recentes podem ser sugeridas junto das notícias selecionadas para a Newsletter Regulatório.
+- **Revisão humana**: baixa confiança, PDF digitalizado, diretor não reconhecido, voto sem conclusão ou pauta sem decisão final devem bloquear importação automática para métricas definitivas.
