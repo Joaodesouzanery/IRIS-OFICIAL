@@ -20,7 +20,7 @@ export async function GET(
   const db = createSupabaseServerClient();
   const { data, error } = await db
     .from("upload_jobs")
-    .select("id, filename, status, error_message, created_at, updated_at")
+    .select("id, filename, status, error_message, documento_id, created_at, updated_at")
     .eq("id", params.jobId)
     .single();
 

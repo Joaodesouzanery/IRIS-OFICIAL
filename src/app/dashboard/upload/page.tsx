@@ -11,6 +11,9 @@ import type {
   PreviewResult,
   PreviewResultFields,
   BatchPreviewResponse,
+  BatchUploadResponse,
+  DocumentoRegulatorio,
+  DocumentoRegulatorioListResponse,
   BatchConfirmResponse,
   ConfirmDelib,
 } from "@/types";
@@ -52,6 +55,10 @@ interface QueuedFile {
 
 interface ReviewItem extends PreviewResult {
   id: string;
+  documento_id?: string | null;
+  upload_job_id?: string | null;
+  signed_url?: string | null;
+  texto_extraido?: string | null;
   rejected: boolean;
   edited: Partial<PreviewResultFields>;
   duplicate_reason?: string;
@@ -170,6 +177,10 @@ function mostCommon<T>(arr: T[]): T | null {
   return [...freq.entries()].sort((a, b) => b[1] - a[1])[0][0];
 }
 
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 // ─── Componente: linha de arquivo na fila ──────────────────────────────────
 
 function QueueRow({
@@ -207,6 +218,37 @@ function QueueRow({
 }
 
 // ─── Componente: card de revisão por arquivo ──────────────────────────────
+
+function documentToReviewItem(doc: DocumentoRegulatorio, index: number): ReviewItem {
+  const preview = doc.preview ?? errorPreviewResult(doc.filename);
+  const errorState = doc.status === "failed";
+  return {
+    ...preview,
+    filename: doc.filename,
+    source_archive: doc.source_archive ?? preview.source_archive,
+    status: errorState ? "error" : preview.status,
+    error: errorState ? doc.error_message ?? "Falha ao processar documento" : preview.error,
+    file_hash: doc.file_hash || preview.file_hash,
+    is_duplicate: Boolean(doc.is_duplicate || preview.is_duplicate),
+    duplicate_reason: preview.duplicate_reason ?? (doc.is_duplicate ? "Possivel duplicata ja registrada" : undefined),
+    agencia_id_detected: doc.agencia_id ?? preview.agencia_id_detected,
+    agencia_sigla_detected: doc.agencia_sigla_detected ?? preview.agencia_sigla_detected,
+    documento_subtipo: doc.documento_subtipo ?? preview.documento_subtipo,
+    semantic_duplicate_key: doc.semantic_duplicate_key ?? preview.semantic_duplicate_key,
+    confidence: doc.extraction_confidence ?? preview.confidence,
+    page_count: doc.page_count ?? preview.page_count,
+    chars_per_page: doc.chars_per_page ?? preview.chars_per_page,
+    ata_items: doc.ata_items ?? preview.ata_items,
+    warnings: doc.warnings ?? preview.warnings,
+    id: doc.id || `${doc.file_hash}-${index}`,
+    documento_id: doc.id,
+    upload_job_id: doc.upload_job_id,
+    signed_url: doc.signed_url,
+    texto_extraido: doc.texto_extraido,
+    rejected: Boolean(doc.is_duplicate),
+    edited: {},
+  };
+}
 
 function ReviewCard({
   item,
@@ -378,6 +420,62 @@ function ReviewCard({
               <p className="text-sm text-text-secondary mt-1">
                 {fields.tipo_documento} · {item.chars_per_page > 0 ? `${item.chars_per_page.toLocaleString("pt-BR")} chars/pág` : "sem texto"}
               </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 xl:grid-cols-[minmax(280px,1fr)_minmax(280px,1fr)_minmax(260px,0.8fr)] gap-3">
+            <div className="rounded-md border border-border bg-surface-secondary overflow-hidden min-h-[320px]">
+              <div className="px-3 py-2 border-b border-border text-xs text-text-label font-mono uppercase tracking-wider">
+                PDF original
+              </div>
+              {item.signed_url ? (
+                <iframe
+                  src={item.signed_url}
+                  title={`PDF ${item.filename}`}
+                  className="w-full h-[320px] bg-white"
+                />
+              ) : (
+                <div className="h-[320px] flex items-center justify-center text-sm text-text-muted px-4 text-center">
+                  PDF indisponivel para preview. O arquivo segue salvo no Storage.
+                </div>
+              )}
+            </div>
+
+            <div className="rounded-md border border-border bg-surface-secondary overflow-hidden min-h-[320px]">
+              <div className="px-3 py-2 border-b border-border text-xs text-text-label font-mono uppercase tracking-wider">
+                Texto extraido
+              </div>
+              <pre className="h-[320px] overflow-auto whitespace-pre-wrap p-3 text-xs leading-relaxed text-text-secondary">
+                {item.texto_extraido || String(item.extraction_raw?.raw_text ?? "") || "Texto ainda nao disponivel."}
+              </pre>
+            </div>
+
+            <div className="rounded-md border border-border bg-surface-secondary overflow-hidden min-h-[320px]">
+              <div className="px-3 py-2 border-b border-border text-xs text-text-label font-mono uppercase tracking-wider">
+                Campos detectados
+              </div>
+              <dl className="p-3 space-y-2 text-xs">
+                <div>
+                  <dt className="text-text-label">Agencia</dt>
+                  <dd className="text-text-primary">{item.agencia_sigla_detected ?? "Nao detectada"}</dd>
+                </div>
+                <div>
+                  <dt className="text-text-label">Tipo</dt>
+                  <dd className="text-text-primary">{fields.tipo_documento}</dd>
+                </div>
+                <div>
+                  <dt className="text-text-label">Processo</dt>
+                  <dd className="text-text-primary break-words">{fields.processo ?? "-"}</dd>
+                </div>
+                <div>
+                  <dt className="text-text-label">Resultado</dt>
+                  <dd className="text-text-primary">{fields.resultado ?? "-"}</dd>
+                </div>
+                <div>
+                  <dt className="text-text-label">Confianca</dt>
+                  <dd className="text-text-primary">{fmt(conf)} - {confidenceLabel(conf)}</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
@@ -796,6 +894,106 @@ export default function UploadPage() {
   }
 
   // ── Etapa 3: Revisão ─────────────────────────────────────────────────
+  async function handleAsyncAnalyze() {
+    if (!queue.length) return;
+    setStage("analyzing");
+    setAnalyzeError(null);
+
+    const allFiles = [...queue];
+    setAnalyzeProgress({ done: 0, total: allFiles.length });
+    setQueue((prev) => prev.map((f) => ({ ...f, status: "analyzing" })));
+
+    try {
+      const batchBytes = allFiles.reduce((sum, qf) => sum + qf.file.size, 0);
+      if (batchBytes > PREVIEW_MAX_TOTAL_SIZE) {
+        throw new Error(`Lote excede ${fmtSize(PREVIEW_MAX_TOTAL_SIZE)} (${fmtSize(batchBytes)}). Envie em lotes menores.`);
+      }
+
+      const formData = new FormData();
+      if (agenciaId) formData.append("agencia_id", agenciaId);
+      allFiles.forEach((qf) => formData.append("files", qf.file));
+      setCurrentBatchFile("Salvando PDFs no Storage...");
+
+      const enqueue = await api.upload<BatchUploadResponse>("/upload/batch", formData);
+      const documentIds = enqueue.results
+        .map((result) => result.document_id)
+        .filter((id): id is string => Boolean(id));
+      const duplicateDocumentIds = new Set(
+        enqueue.results
+          .filter((result) => result.status === "duplicate" && result.document_id)
+          .map((result) => result.document_id as string)
+      );
+      const rejectedItems: ReviewItem[] = enqueue.results
+        .filter((result) => !result.document_id && result.status !== "queued")
+        .map((result, index) => ({
+          ...errorPreviewResult(result.filename),
+          id: `rejected-${index}-${result.filename}`,
+          error: result.message ?? "Documento rejeitado",
+          rejected: true,
+          edited: {},
+        }));
+
+      if (documentIds.length === 0) {
+        setReviewItems(rejectedItems);
+        setAnalyzeProgress({ done: rejectedItems.length, total: rejectedItems.length });
+        setStage("review");
+        return;
+      }
+
+      let docs: DocumentoRegulatorio[] = [];
+      const maxAttempts = 90;
+      for (let attempt = 0; attempt < maxAttempts; attempt++) {
+        setCurrentBatchFile(`Processando fila (${attempt + 1}/${maxAttempts})...`);
+        await api.post<{ processed: number; job_ids: string[] }>("/upload/process?limit=5");
+        const docsRes = await api.get<DocumentoRegulatorioListResponse>(
+          `/upload/documentos?ids=${encodeURIComponent(documentIds.join(","))}&limit=500`
+        );
+        docs = docsRes.data;
+        const terminal = docs.filter((doc) =>
+          ["review_pending", "failed", "confirmed", "ignored"].includes(doc.status)
+        ).length;
+        setAnalyzeProgress({ done: terminal + rejectedItems.length, total: documentIds.length + rejectedItems.length });
+        setQueue((prev) => prev.map((qf) => {
+          const matched = docs.find((doc) => doc.filename === qf.file.name);
+          if (!matched) return qf;
+          if (matched.status === "failed") return { ...qf, status: "error" };
+          if (["review_pending", "confirmed", "ignored"].includes(matched.status)) return { ...qf, status: "done" };
+          return { ...qf, status: "analyzing" };
+        }));
+        if (terminal >= documentIds.length) break;
+        await sleep(1500);
+      }
+
+      const reviewFromDocs = docs.map((doc, index) => {
+        const item = documentToReviewItem(doc, index);
+        if (duplicateDocumentIds.has(doc.id)) {
+          item.is_duplicate = true;
+          item.rejected = true;
+          item.duplicate_reason = item.duplicate_reason ?? "PDF ja existe na fila/revisao";
+        }
+        return item;
+      });
+      const detectedSiglas = reviewFromDocs
+        .map((r) => r.agencia_sigla_detected)
+        .filter(Boolean) as string[];
+      const majority = mostCommon(detectedSiglas);
+      if (majority && !agenciaId) {
+        const matched = (agencias ?? []).find((a) => a.sigla === majority);
+        if (matched) setAgenciaId(matched.id);
+      }
+
+      setReviewItems([...reviewFromDocs, ...rejectedItems]);
+      setAnalyzeProgress({ done: documentIds.length + rejectedItems.length, total: documentIds.length + rejectedItems.length });
+      setCurrentBatchFile(null);
+      setStage("review");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Erro ao enfileirar/processar PDFs";
+      setAnalyzeError(msg);
+      setQueue((prev) => prev.map((f) => ({ ...f, status: f.status === "analyzing" ? "error" : f.status })));
+      setStage("queue");
+    }
+  }
+
   function updateReviewItem(id: string, patch: Partial<PreviewResultFields>) {
     setReviewItems((prev) =>
       prev.map((item) =>
@@ -822,6 +1020,8 @@ export default function UploadPage() {
       const fields: PreviewResultFields = { ...item.fields, ...item.edited };
       return {
         filename: item.filename,
+        documento_id: item.documento_id ?? null,
+        upload_job_id: item.upload_job_id ?? null,
         agencia_id: item.agencia_id_detected || agenciaId || null,
         numero_deliberacao: fields.numero_deliberacao,
         numero_reuniao: fields.numero_reuniao,
@@ -867,11 +1067,6 @@ export default function UploadPage() {
     try {
       const formData = new FormData();
       formData.append("payload", JSON.stringify({ agencia_id: agenciaId, deliberacoes }));
-      for (const queued of queue) {
-        if (queued.status === "done") {
-          formData.append("files", queued.file, queued.file.name);
-        }
-      }
       const res = await api.upload<BatchConfirmResponse>("/upload/confirm", formData);
       // Demo mode: persist returned deliberações in localStorage
       if (res.deliberacoes && res.deliberacoes.length > 0) {
@@ -1063,7 +1258,7 @@ export default function UploadPage() {
           {/* Botão Analisar */}
           {queue.length > 0 && stage === "queue" && (
             <div className="flex justify-end">
-              <button onClick={handleAnalyze} className="btn-primary">
+              <button onClick={handleAsyncAnalyze} className="btn-primary">
                 <Upload className="w-4 h-4" />
                 Analisar {queue.length} arquivo{queue.length !== 1 ? "s" : ""}
               </button>
@@ -1189,7 +1384,7 @@ export default function UploadPage() {
                 key={i}
                 className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-bg-hover transition-colors"
               >
-                {r.status === "created" ? (
+                {r.status === "created" || r.status === "document_saved" ? (
                   <CheckCircle className="w-4 h-4 shrink-0 text-success" />
                 ) : (
                   <XCircle className="w-4 h-4 shrink-0 text-error" />
@@ -1202,6 +1397,10 @@ export default function UploadPage() {
                   >
                     Ver deliberação →
                   </a>
+                ) : r.status === "document_saved" ? (
+                  <span className="text-xs text-text-muted truncate max-w-[240px]" title={r.message}>
+                    {r.message ?? "Documento de apoio salvo"}
+                  </span>
                 ) : r.error ? (
                   <span className="text-xs text-error truncate max-w-[200px]" title={r.error}>
                     {r.error}

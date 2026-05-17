@@ -11,6 +11,12 @@
     "src/app/api/v1/upload/confirm/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/upload/process/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/upload/documentos/route.ts": {
+      "maxDuration": 120
+    },
     "src/app/api/v1/monitoramento/check/route.ts": {
       "maxDuration": 120
     },

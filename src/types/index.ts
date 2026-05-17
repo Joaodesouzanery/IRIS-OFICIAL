@@ -149,6 +149,7 @@ export interface DeliberacaoPaginada {
 export interface UploadJobResult {
   filename: string;
   job_id: string | null;
+  document_id?: string | null;
   status: "queued" | "done" | "duplicate" | "rejected" | "error";
   message?: string;
 }
@@ -157,6 +158,7 @@ export interface BatchUploadResponse {
   total: number;
   queued: number;
   rejected: number;
+  duplicate?: number;
   results: UploadJobResult[];
 }
 
@@ -439,6 +441,8 @@ export interface BatchPreviewResponse {
 
 export interface ConfirmDelib {
   filename: string;
+  documento_id?: string | null;
+  upload_job_id?: string | null;
   agencia_id?: string | null;
   numero_deliberacao: string | null;
   numero_reuniao: string | null;
@@ -473,8 +477,10 @@ export interface ConfirmDelib {
 
 export interface ConfirmResult {
   filename: string;
-  status: "created" | "error";
+  status: "created" | "document_saved" | "error";
   deliberacao_id?: string;
+  documento_id?: string | null;
+  message?: string;
   error?: string;
 }
 
@@ -483,6 +489,53 @@ export interface BatchConfirmResponse {
   errors: number;
   results: ConfirmResult[];
   deliberacoes?: Deliberacao[];
+}
+
+export type DocumentoRegulatorioStatus =
+  | "queued"
+  | "processing"
+  | "review_pending"
+  | "confirmed"
+  | "ignored"
+  | "failed";
+
+export interface DocumentoRegulatorio {
+  id: string;
+  upload_job_id: string | null;
+  agencia_id: string | null;
+  agencia_sigla_detected: string | null;
+  filename: string;
+  source_archive: string | null;
+  storage_bucket: string;
+  storage_path: string;
+  file_hash: string;
+  size_bytes: number | null;
+  status: DocumentoRegulatorioStatus;
+  tipo_documento: TipoDocumento | string | null;
+  documento_subtipo: string | null;
+  semantic_duplicate_key: string | null;
+  is_duplicate: boolean;
+  duplicate_documento_id: string | null;
+  duplicate_deliberacao_id: string | null;
+  extraction_confidence: number | null;
+  page_count: number | null;
+  chars_per_page: number | null;
+  texto_extraido: string | null;
+  campos_detectados: Record<string, unknown>;
+  ata_items: AtaPreviewItem[] | null;
+  warnings: string[];
+  error_message: string | null;
+  metadata: Record<string, unknown>;
+  signed_url: string | null;
+  preview: PreviewResult | null;
+  agencia?: { sigla: string; nome: string } | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface DocumentoRegulatorioListResponse {
+  data: DocumentoRegulatorio[];
+  total: number;
 }
 
 // ─── Monitoramento ───────────────────────────────────────────────────────

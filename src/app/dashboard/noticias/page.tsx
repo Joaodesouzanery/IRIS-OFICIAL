@@ -371,8 +371,12 @@ export default function NoticiasPage() {
               <p className="section-label">Documento da Newsletter</p>
               <Mail className="w-4 h-4 text-text-muted" />
             </div>
-            <div className="bg-bg-hover rounded-card p-3 max-h-[520px] overflow-y-auto">
-              <div dangerouslySetInnerHTML={{ __html: html }} />
+            <div className="bg-bg-hover rounded-card p-2 h-[520px] overflow-hidden">
+              <iframe
+                title="Preview da Newsletter"
+                srcDoc={html}
+                className="w-full h-full rounded-md bg-white"
+              />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <button className="btn-primary justify-center" onClick={openPrintDocument} disabled={selected.length === 0}>

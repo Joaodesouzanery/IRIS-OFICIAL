@@ -54,6 +54,8 @@ type ParsedConfirmBody = {
 function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
   return {
     filename: String(d.filename ?? "").slice(0, 255),
+    documento_id: d.documento_id ? String(d.documento_id).slice(0, 80) : null,
+    upload_job_id: d.upload_job_id ? String(d.upload_job_id).slice(0, 80) : null,
     agencia_id: d.agencia_id ? String(d.agencia_id).slice(0, 80) : null,
     numero_deliberacao: d.numero_deliberacao ? String(d.numero_deliberacao).slice(0, 50) : null,
     numero_reuniao: d.numero_reuniao ? String(d.numero_reuniao).slice(0, 10) : null,
@@ -311,9 +313,22 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           continue;
         }
 
-        const attachment = await ensureUploadAttachment(db, filesByName.get(d.filename), effectiveAgenciaId);
+        const attachment = d.documento_id
+          ? await getDocumentAttachment(db, d.documento_id)
+          : await ensureUploadAttachment(db, filesByName.get(d.filename), effectiveAgenciaId);
         if (attachment.error) {
           results.push({ filename: d.filename, status: "error", error: attachment.error });
+          continue;
+        }
+
+        if (!d.import_counts_as_final || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento)) {
+          await markDocumentReviewed(db, d.documento_id, "ignored");
+          results.push({
+            filename: d.filename,
+            status: "document_saved",
+            documento_id: d.documento_id ?? null,
+            message: "Documento mantido como apoio; nao entrou nos dashboards.",
+          });
           continue;
         }
 
@@ -329,6 +344,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             ? (dir as { nome_variantes: string[] }).nome_variantes
             : [],
         }));
+        const activeDiretoresList = await getActiveDiretoresForVote(
+          db,
+          effectiveAgenciaId,
+          d.data_reuniao,
+          diretoresList,
+        );
 
         if (d.tipo_documento === "ata" && rawConfirm.ata_items && rawConfirm.ata_items.length > 0) {
           const documentPrefix = internalAnttDocumentPrefix(d);
@@ -402,6 +423,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   documento_subtipo: d.documento_subtipo,
                   import_counts_as_final: Boolean(item.resultado),
                   item_numero: item.item_numero,
+                  votos_inferidos_por_mandato: shouldInferVotesFromMandate(item.resultado, item.votos_detectados ?? []),
                   warnings: item.warnings ?? [],
                 }, attachment),
               })
@@ -409,27 +431,22 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               .single();
 
             const itemVotingNames = item.votos_detectados ?? [];
-            if (child && itemVotingNames.length > 0) {
-              const nomesContra = new Set(item.votos_contra_detectados ?? []);
-              const votoRows = itemVotingNames
-                .map((nome) => {
-                  const match = findBestMatch(nome, diretoresList);
-                  const isContra = nomesContra.has(nome);
-                  return {
-                    deliberacao_id: child.id as string,
-                    diretor_id: match.diretorId,
-                    tipo_voto: isContra ? ("Desfavoravel" as const) : ("Favoravel" as const),
-                    is_divergente: isContra,
-                    is_nominal: match.diretorId !== null,
-                  };
-                })
-                .filter((v) => v.diretor_id !== null);
+            if (child) {
+              const votoRows = buildVotoRows({
+                deliberacao_id: child.id as string,
+                nomes: itemVotingNames,
+                nomesContra: item.votos_contra_detectados ?? [],
+                diretoresList,
+                activeDiretoresList,
+                inferFromMandate: shouldInferVotesFromMandate(item.resultado, itemVotingNames),
+              });
 
-              if (votoRows.length > 0) await db.from("votos").insert(votoRows);
+              if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
             }
           }
 
-          results.push({ filename: d.filename, status: "created", deliberacao_id: ataPai.id as string });
+          await markDocumentReviewed(db, d.documento_id, "confirmed");
+          results.push({ filename: d.filename, status: "created", deliberacao_id: ataPai.id as string, documento_id: d.documento_id ?? null });
           continue;
         }
 
@@ -459,7 +476,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             resumo_pleito: d.resumo_pleito,
             fundamento_decisao: d.fundamento_decisao,
             upload_job_id: attachment.upload_job_id,
-            raw_extraction: withAttachmentRaw(d.extraction_raw, attachment),
+            raw_extraction: withAttachmentRaw({
+              ...(d.extraction_raw ?? {}),
+              votos_inferidos_por_mandato: shouldInferVotesFromMandate(d.resultado, d.nomes_votacao),
+            }, attachment),
           })
           .select("id")
           .single();
@@ -484,32 +504,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             tipo_documento: d.tipo_documento,
           });
 
-          const nomesContra = new Set(d.nomes_votacao_contra);
-          const votoRows = votingNames
-            .map((nome) => {
-              const match = findBestMatch(nome, diretoresList);
-              const isContra = nomesContra.has(nome);
-              return {
-                deliberacao_id: delib.id as string,
-                diretor_id: match.diretorId,
-                tipo_voto: isContra ? ("Desfavoravel" as const) : ("Favoravel" as const),
-                is_divergente: isContra,
-                is_nominal: match.diretorId !== null,
-              };
-            })
-            .filter((v) => v.diretor_id !== null);
-
-          if (votoRows.length > 0) await db.from("votos").insert(votoRows);
         }
 
-        results.push({ filename: d.filename, status: "created", deliberacao_id: delib.id as string });
+        const votoRows = buildVotoRows({
+          deliberacao_id: delib.id as string,
+          nomes: votingNames,
+          nomesContra: d.nomes_votacao_contra,
+          diretoresList,
+          activeDiretoresList,
+          inferFromMandate: shouldInferVotesFromMandate(d.resultado, votingNames),
+        });
+        if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
+
+        await markDocumentReviewed(db, d.documento_id, "confirmed");
+        results.push({ filename: d.filename, status: "created", deliberacao_id: delib.id as string, documento_id: d.documento_id ?? null });
       } catch (err) {
         console.error("[upload/confirm] Erro inesperado ao processar deliberação:", err);
         results.push({ filename: d.filename, status: "error", error: "Erro interno ao processar deliberação" });
       }
     }
 
-    const created = results.filter((r) => r.status === "created").length;
+    const created = results.filter((r) => r.status === "created" || r.status === "document_saved").length;
     const errors = results.filter((r) => r.status === "error").length;
 
     const response: BatchConfirmResponse = { created, errors, results };
@@ -578,6 +593,91 @@ async function recordDirectorCandidates(
   if (error) {
     console.warn("[upload/confirm] Não foi possível registrar candidatos de diretores:", error.message);
   }
+}
+
+type DiretorVoteRecord = { id: string; nome: string; nome_variantes: string[] };
+
+type VotoInsertRow = {
+  deliberacao_id: string;
+  diretor_id: string;
+  tipo_voto: "Favoravel" | "Desfavoravel";
+  is_divergente: boolean;
+  is_nominal: boolean;
+};
+
+async function getActiveDiretoresForVote(
+  db: any,
+  agenciaId: string,
+  dataReuniao: string | null,
+  fallback: DiretorVoteRecord[],
+): Promise<DiretorVoteRecord[]> {
+  if (!dataReuniao) return fallback;
+
+  const { data, error } = await db
+    .from("mandatos")
+    .select("diretor_id, data_inicio, data_fim, diretores!inner(id, nome, nome_variantes, agencia_id)")
+    .eq("diretores.agencia_id", agenciaId)
+    .lte("data_inicio", dataReuniao)
+    .or(`data_fim.is.null,data_fim.gte.${dataReuniao}`);
+
+  if (error || !data?.length) return fallback;
+
+  const unique = new Map<string, DiretorVoteRecord>();
+  for (const row of data as any[]) {
+    const diretor = row.diretores;
+    if (!diretor?.id) continue;
+    unique.set(diretor.id, {
+      id: diretor.id,
+      nome: diretor.nome,
+      nome_variantes: Array.isArray(diretor.nome_variantes) ? diretor.nome_variantes : [],
+    });
+  }
+
+  return unique.size > 0 ? [...unique.values()] : fallback;
+}
+
+function buildVotoRows(input: {
+  deliberacao_id: string;
+  nomes: string[];
+  nomesContra: string[];
+  diretoresList: DiretorVoteRecord[];
+  activeDiretoresList: DiretorVoteRecord[];
+  inferFromMandate: boolean;
+}): VotoInsertRow[] {
+  const nomesContra = new Set(input.nomesContra);
+  const rows = new Map<string, VotoInsertRow>();
+
+  for (const nome of input.nomes) {
+    const match = findBestMatch(nome, input.diretoresList);
+    if (!match.diretorId) continue;
+    const isContra = nomesContra.has(nome);
+    rows.set(match.diretorId, {
+      deliberacao_id: input.deliberacao_id,
+      diretor_id: match.diretorId,
+      tipo_voto: isContra ? "Desfavoravel" : "Favoravel",
+      is_divergente: isContra,
+      is_nominal: true,
+    });
+  }
+
+  if (rows.size === 0 && input.inferFromMandate) {
+    for (const diretor of input.activeDiretoresList) {
+      rows.set(diretor.id, {
+        deliberacao_id: input.deliberacao_id,
+        diretor_id: diretor.id,
+        tipo_voto: "Favoravel",
+        is_divergente: false,
+        is_nominal: false,
+      });
+    }
+  }
+
+  return [...rows.values()];
+}
+
+function shouldInferVotesFromMandate(resultado: string | null, nomes: string[]): boolean {
+  if (nomes.length > 0 || !resultado) return false;
+  return resultado !== "Retirado de Pauta";
 }
 
 function extractSourceUrl(raw: Record<string, unknown> | undefined): string | null {
@@ -691,6 +791,44 @@ async function ensureUploadAttachment(
   }
 
   return { upload_job_id: job.id as string, file_hash: fileHash, storage_path: storagePath };
+}
+
+async function getDocumentAttachment(
+  db: any,
+  documentoId: string,
+): Promise<{ upload_job_id: string | null; file_hash: string | null; storage_path: string | null; error?: string }> {
+  const { data: doc, error } = await db
+    .from("documentos_regulatorios")
+    .select("id, upload_job_id, file_hash, storage_path, storage_bucket")
+    .eq("id", documentoId)
+    .maybeSingle();
+
+  if (error || !doc) {
+    return { upload_job_id: null, file_hash: null, storage_path: null, error: "Documento bruto nao encontrado" };
+  }
+
+  return {
+    upload_job_id: (doc.upload_job_id as string | null) ?? null,
+    file_hash: (doc.file_hash as string | null) ?? null,
+    storage_path: (doc.storage_path as string | null) ?? null,
+  };
+}
+
+async function markDocumentReviewed(
+  db: any,
+  documentoId: string | null | undefined,
+  status: "confirmed" | "ignored",
+) {
+  if (!documentoId) return;
+  const { error } = await db
+    .from("documentos_regulatorios")
+    .update({
+      status,
+      reviewed_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", documentoId);
+  if (error) console.warn("[upload/confirm] Falha ao atualizar documento bruto:", error.message);
 }
 
 async function ensurePdfStorageBucket(db: any): Promise<string | null> {
