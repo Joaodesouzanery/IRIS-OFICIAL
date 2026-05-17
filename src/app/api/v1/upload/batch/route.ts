@@ -148,6 +148,110 @@ export async function POST(req: NextRequest) {
         continue;
       }
 
+      const { data: existingJob } = await db
+        .from("upload_jobs")
+        .select("id, filename, file_hash, status, agencia_id, storage_path, documento_id")
+        .eq("file_hash", fileHash)
+        .maybeSingle();
+
+      if (existingJob) {
+        const linkedDocumentoId = existingJob.documento_id as string | null;
+        if (linkedDocumentoId) {
+          const { data: linkedDoc } = await db
+            .from("documentos_regulatorios")
+            .select("id, status")
+            .eq("id", linkedDocumentoId)
+            .maybeSingle();
+
+          if (linkedDoc) {
+            results.push({
+              filename: file.name,
+              job_id: existingJob.id as string,
+              document_id: linkedDoc.id as string,
+              status: "duplicate",
+              message: `PDF ja existe na fila/revisao (status: ${linkedDoc.status})`,
+            });
+            continue;
+          }
+        }
+
+        const reusedStoragePath = (existingJob.storage_path as string | null) ?? `${fallbackAgenciaId ?? existingJob.agencia_id ?? "auto"}/${fileHash}.pdf`;
+        const { error: uploadExistingErr } = await db.storage
+          .from("pdfs")
+          .upload(reusedStoragePath, file.buffer, {
+            contentType: "application/pdf",
+            upsert: true,
+          });
+
+        if (uploadExistingErr) {
+          results.push({
+            filename: file.name,
+            job_id: existingJob.id as string,
+            document_id: null,
+            status: "error",
+            message: `Falha no upload do PDF existente: ${uploadExistingErr.message}`,
+          });
+          continue;
+        }
+
+        const { data: recoveredDoc, error: recoveredDocErr } = await db
+          .from("documentos_regulatorios")
+          .insert({
+            upload_job_id: existingJob.id,
+            agencia_id: fallbackAgenciaId ?? (existingJob.agencia_id as string | null) ?? null,
+            filename: file.name,
+            source_archive: file.source_archive,
+            storage_bucket: "pdfs",
+            storage_path: reusedStoragePath,
+            file_hash: fileHash,
+            size_bytes: file.size,
+            status: "queued",
+            metadata: {
+              uploaded_via: "manual_batch",
+              source_archive: file.source_archive,
+              recovered_from_upload_job: existingJob.id,
+            },
+          })
+          .select("id")
+          .single();
+
+        if (recoveredDocErr || !recoveredDoc) {
+          results.push({
+            filename: file.name,
+            job_id: existingJob.id as string,
+            document_id: null,
+            status: "duplicate",
+            message: `PDF ja existe em upload_jobs (status: ${existingJob.status}); nao foi possivel recriar documento bruto: ${recoveredDocErr?.message ?? "erro desconhecido"}`,
+          });
+          continue;
+        }
+
+        await db
+          .from("upload_jobs")
+          .update({
+            documento_id: recoveredDoc.id,
+            storage_path: reusedStoragePath,
+            agencia_id: fallbackAgenciaId ?? (existingJob.agencia_id as string | null) ?? null,
+            status: "pending",
+            error_message: null,
+            updated_at: new Date().toISOString(),
+          })
+          .eq("id", existingJob.id);
+
+        jobsToProcess.push({
+          jobId: existingJob.id as string,
+          agenciaId: fallbackAgenciaId ?? (existingJob.agencia_id as string | null) ?? null,
+        });
+        results.push({
+          filename: file.name,
+          job_id: existingJob.id as string,
+          document_id: recoveredDoc.id as string,
+          status: "queued",
+          message: "Job existente reaproveitado e reenfileirado para processamento.",
+        });
+        continue;
+      }
+
       const storagePath = `${fallbackAgenciaId ?? "auto"}/${fileHash}.pdf`;
       const { error: uploadErr } = await db.storage
         .from("pdfs")

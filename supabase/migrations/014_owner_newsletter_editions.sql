@@ -1,5 +1,32 @@
 -- Migration 014: owner global e edicoes persistentes de newsletter
 
+CREATE TABLE IF NOT EXISTS admin_users (
+  id         UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id    UUID NOT NULL UNIQUE,
+  email      TEXT NOT NULL UNIQUE,
+  role       TEXT NOT NULL DEFAULT 'admin',
+  active     BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE OR REPLACE TRIGGER trg_admin_users_updated_at
+  BEFORE UPDATE ON admin_users
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at();
+
+ALTER TABLE admin_users ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "allow_all_service_role" ON admin_users;
+DROP POLICY IF EXISTS "service_role_all_admin_users" ON admin_users;
+CREATE POLICY "service_role_all_admin_users"
+  ON admin_users
+  FOR ALL
+  TO service_role
+  USING (true)
+  WITH CHECK (true);
+
+REVOKE ALL ON admin_users FROM anon, authenticated;
+
 ALTER TABLE admin_users
   DROP CONSTRAINT IF EXISTS admin_users_role_check;
 

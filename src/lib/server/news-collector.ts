@@ -445,7 +445,6 @@ function pickSrcsetFirst(value: string) {
 function isDecorativeImage(value: string) {
   const normalized = normalizeText(value);
   return normalized.includes("logo") ||
-    normalized.includes("sp.gov") ||
     normalized.includes("vlibras") ||
     normalized.includes("avatar") ||
     normalized.includes("icone") ||

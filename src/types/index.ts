@@ -57,8 +57,18 @@ export interface Agencia {
   sigla: string;
   nome: string;
   nome_completo: string | null;
+  tipo?: "federal" | "estadual" | null;
+  esfera?: string | null;
+  ministerio_vinculado?: string | null;
+  url_institucional?: string | null;
+  url_diretores?: string | null;
+  estado?: string | null;
+  status?: "ativa" | "inativa";
+  dados_importados_em?: string | null;
+  metadata?: Record<string, unknown>;
   ativo: boolean;
   created_at: string;
+  updated_at?: string;
 }
 
 export interface Diretor {
@@ -66,6 +76,21 @@ export interface Diretor {
   nome: string;
   agencia_id: string | null;
   cargo: string | null;
+  situacao?: "titular" | "substituto" | "interino" | "inativo" | "designado";
+  data_posse?: string | null;
+  data_fim_mandato?: string | null;
+  data_saida?: string | null;
+  ato_nomeacao?: string | null;
+  publicacao_dou?: string | null;
+  foto_url?: string | null;
+  minibio?: string | null;
+  curriculo_url?: string | null;
+  email?: string | null;
+  telefone?: string | null;
+  percentual_mandato_concluido?: number | null;
+  fonte_dado?: "automatico" | "manual" | "verificado";
+  importado_em?: string | null;
+  metadata?: Record<string, unknown>;
   needs_review: boolean;
   review_status?: ReviewStatus;
   source_url?: string | null;
@@ -85,6 +110,11 @@ export interface Mandato {
   data_inicio: string;
   data_fim: string | null;
   cargo: string | null;
+  ato_nomeacao?: string | null;
+  publicacao_dou?: string | null;
+  fonte_dado?: "automatico" | "manual" | "verificado";
+  percentual_mandato_concluido?: number | null;
+  metadata?: Record<string, unknown>;
   status: "Ativo" | "Inativo";
   review_status?: ReviewStatus;
   source_url?: string | null;
@@ -918,6 +948,12 @@ export interface ListaTripliceItem {
   id: string;
   agencia_id: string | null;
   cargo: string;
+  cargo_vaga?: string | null;
+  candidatos?: string[] | Array<Record<string, unknown>>;
+  status?: "em_analise" | "nomeado" | "arquivado";
+  data_publicacao?: string | null;
+  fonte?: string | null;
+  observacoes?: string | null;
   etapa: "mapeamento" | "indicacao" | "sabatinado" | "aprovado" | "nomeado" | "arquivado";
   nome_candidato: string;
   fonte_url: string | null;

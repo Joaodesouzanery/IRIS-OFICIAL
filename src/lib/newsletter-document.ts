@@ -21,13 +21,14 @@ const BRAND = {
 export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
   const generatedAt = input.generatedAt ?? new Date();
   const date = generatedAt.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" }).toUpperCase();
-  const [highlight, ...others] = input.noticias;
+  const [highlight] = input.noticias;
   const description =
     input.descricao?.trim() ||
     "Seleção das principais notícias regulatórias com fontes oficiais para acompanhamento dos associados.";
   const title = highlight?.titulo ?? input.assunto ?? "Atualização regulatória";
   const logo = absolutePath("/brand/newsletter-logo.png", input.baseUrl);
-  const heroImage = proxiedImageUrl(highlight?.imagem_url ?? null, input.baseUrl);
+  const heroImage = officialImageUrl(highlight?.imagem_url);
+  const heroFallback = proxiedImageUrl(highlight?.imagem_url, input.baseUrl);
 
   return `<!doctype html>
 <html lang="pt-BR">
@@ -42,14 +43,15 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
     main { width: 794px; max-width: 100%; margin: 0 auto; background: ${BRAND.white}; min-height: 1123px; }
     .cover { position: relative; display: grid; grid-template-columns: 42% 58%; min-height: 520px; background: ${BRAND.black}; color: ${BRAND.white}; overflow: hidden; }
     .cover-copy { padding: 42px 34px 34px; display: flex; flex-direction: column; justify-content: space-between; z-index: 2; }
-    .logo { width: 74px; height: 74px; object-fit: contain; display: block; margin-bottom: 34px; }
+    .logo { width: 118px; height: auto; max-height: 92px; object-fit: contain; display: block; margin-bottom: 34px; }
     .label { margin: 0 0 16px; color: ${BRAND.gold}; font-size: 13px; line-height: 1; font-weight: 700; letter-spacing: .02em; }
     .brand { margin: 0; color: ${BRAND.white}; font-size: 37px; line-height: .9; font-weight: 900; letter-spacing: .02em; text-transform: uppercase; }
     .title { margin: 22px 0 0; color: ${BRAND.white}; font-size: 34px; line-height: 1.03; font-weight: 900; letter-spacing: 0; }
     .date { margin: 24px 0 0; color: ${BRAND.slate}; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
     .contact { margin: 0; color: ${BRAND.gold}; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    .hero { width: 100%; height: 100%; min-height: 520px; object-fit: cover; display: block; background: ${BRAND.navy}; }
-    .hero-empty { width: 100%; min-height: 520px; background: linear-gradient(135deg, ${BRAND.navy}, ${BRAND.black}); }
+    .hero-frame { width: 100%; min-height: 520px; background: linear-gradient(135deg, ${BRAND.navy}, ${BRAND.black}); }
+    .hero-frame img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; display: block; }
+    .hero-frame.image-missing::after { content: ""; display: block; min-height: 520px; }
     .intro { padding: 34px 42px 24px; border-bottom: 1px solid rgba(11,64,104,.18); }
     .summary { margin: 0; color: #25313b; font-size: 15px; line-height: 1.68; }
     .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
@@ -58,8 +60,9 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
     .section-title { margin: 0 0 18px; color: ${BRAND.navy}; font-size: 13px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
     article { break-inside: avoid; display: grid; grid-template-columns: 122px minmax(0,1fr); gap: 18px; padding: 20px 0; border-top: 1px solid rgba(11,64,104,.18); }
     article:first-of-type { border-top: 0; padding-top: 0; }
-    .thumb { width: 122px; height: 86px; object-fit: cover; display: block; background: ${BRAND.navy}; }
-    .thumb-empty { width: 122px; height: 86px; background: ${BRAND.navy}; }
+    .thumb-frame { width: 122px; height: 86px; background: ${BRAND.navy}; overflow: hidden; }
+    .thumb-frame img { width: 122px; height: 86px; object-fit: cover; display: block; }
+    .thumb-frame.image-missing::after { content: ""; display: block; width: 122px; height: 86px; }
     .meta { margin: 0 0 7px; color: ${BRAND.gold}; font-size: 10px; line-height: 1.2; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
     h2 { margin: 0; color: ${BRAND.black}; font-size: 18px; line-height: 1.2; font-weight: 900; letter-spacing: 0; }
     p { font-size: 13px; line-height: 1.55; }
@@ -73,11 +76,23 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
     }
     @media (max-width: 720px) {
       .cover { grid-template-columns: 1fr; }
-      .hero, .hero-empty { min-height: 260px; }
+      .hero-frame, .hero-frame img, .hero-frame.image-missing::after { min-height: 260px; }
       article { grid-template-columns: 1fr; }
-      .thumb, .thumb-empty { width: 100%; height: 170px; }
+      .thumb-frame, .thumb-frame img, .thumb-frame.image-missing::after { width: 100%; height: 170px; }
     }
   </style>
+  <script>
+    function irisImageFallback(img) {
+      var fallback = img.getAttribute("data-fallback-src");
+      if (fallback && img.src !== fallback) {
+        img.removeAttribute("data-fallback-src");
+        img.src = fallback;
+        return;
+      }
+      img.style.display = "none";
+      if (img.parentElement) img.parentElement.classList.add("image-missing");
+    }
+  </script>
 </head>
 <body>
   <main>
@@ -92,7 +107,7 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
         </div>
         <p class="contact">CONTATO@IRISREGULACAO.ORG</p>
       </div>
-      ${heroImage ? `<img class="hero" src="${escapeHtml(heroImage)}" alt="">` : `<div class="hero-empty"></div>`}
+      ${heroImage ? `<div class="hero-frame">${renderImage(heroImage, heroFallback, "")}</div>` : `<div class="hero-frame image-missing"></div>`}
     </header>
     <section class="intro">
       <p class="summary">${escapeHtml(description)}</p>
@@ -111,9 +126,10 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
 }
 
 function renderNews(item: RegulatoryNews, baseUrl?: string) {
-  const image = proxiedImageUrl(item.imagem_url, baseUrl);
+  const image = officialImageUrl(item.imagem_url);
+  const fallback = proxiedImageUrl(item.imagem_url, baseUrl);
   return `<article>
-    ${image ? `<img class="thumb" src="${escapeHtml(image)}" alt="">` : `<div class="thumb-empty"></div>`}
+    ${image ? `<div class="thumb-frame">${renderImage(image, fallback, "")}</div>` : `<div class="thumb-frame image-missing"></div>`}
     <div>
       <p class="meta">${escapeHtml(item.fonte)} · ${escapeHtml(formatDate(item.publicado_em ?? item.first_seen_at))}</p>
       <h2>${escapeHtml(item.titulo)}</h2>
@@ -121,6 +137,16 @@ function renderNews(item: RegulatoryNews, baseUrl?: string) {
       <a class="link" href="${escapeHtml(item.url)}">Ler fonte oficial</a>
     </div>
   </article>`;
+}
+
+function renderImage(src: string, fallback: string | null, alt: string) {
+  const fallbackAttr = fallback && fallback !== src ? ` data-fallback-src="${escapeHtml(fallback)}"` : "";
+  return `<img src="${escapeHtml(src)}"${fallbackAttr} alt="${escapeHtml(alt)}" onerror="irisImageFallback(this)">`;
+}
+
+function officialImageUrl(value: string | null | undefined) {
+  if (!value) return null;
+  return value;
 }
 
 function proxiedImageUrl(value: string | null | undefined, baseUrl?: string) {
