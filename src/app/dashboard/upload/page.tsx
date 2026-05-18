@@ -115,6 +115,7 @@ function errorPreviewResult(filename: string): PreviewResult {
       pauta_interna: false,
       resumo_pleito: null,
       fundamento_decisao: null,
+      diretores_detectados: [],
       nomes_votacao: [],
       nomes_votacao_contra: [],
     },
@@ -265,6 +266,13 @@ function ReviewCard({
   const missing = missingFields(fields, anttType);
   const anttRaw = item.extraction_raw?.antt as Record<string, unknown> | undefined;
   const warnings = item.warnings ?? (item.extraction_raw?.warnings as string[] | undefined) ?? [];
+  const detectedDirectors = [
+    ...new Set([
+      ...(fields.diretores_detectados ?? []),
+      ...fields.nomes_votacao,
+      ...(fields.relator ? fields.relator.split(",").map((name) => name.trim()).filter(Boolean) : []),
+    ]),
+  ];
 
   function set<K extends keyof PreviewResultFields>(k: K, v: PreviewResultFields[K]) {
     onUpdate(item.id, { [k]: v } as Partial<PreviewResultFields>);
@@ -468,6 +476,10 @@ function ReviewCard({
                   <dd className="text-text-primary break-words">{fields.processo ?? "-"}</dd>
                 </div>
                 <div>
+                  <dt className="text-text-label">Relator / diretor</dt>
+                  <dd className="text-text-primary break-words">{fields.relator ?? "-"}</dd>
+                </div>
+                <div>
                   <dt className="text-text-label">Resultado</dt>
                   <dd className="text-text-primary">{fields.resultado ?? "-"}</dd>
                 </div>
@@ -522,12 +534,17 @@ function ReviewCard({
 
             <div className="space-y-1">
               <label className="text-xs text-text-label font-mono uppercase tracking-wider">Relator / diretor</label>
-              <input
-                className="input"
+              <textarea
+                className="input min-h-[74px] resize-y"
                 value={fields.relator ?? ""}
                 onChange={(e) => set("relator", e.target.value || null)}
-                placeholder="ex: Felipe Queiroz"
+                placeholder="ex: Mauro Henrique Moreira Sousa, Caio Mario Trivellato Seabra Filho"
               />
+              {fields.tipo_documento === "pauta" && detectedDirectors.length > 0 && (
+                <p className="text-[11px] text-text-label">
+                  Pauta: nomes detectados como relatoria/autoria do item, ainda nao como voto nominal confirmado.
+                </p>
+              )}
             </div>
 
             <div className="space-y-1">
@@ -659,16 +676,21 @@ function ReviewCard({
           )}
 
           {/* Diretores detectados */}
-          {fields.nomes_votacao.length > 0 && (
+          {detectedDirectors.length > 0 && (
             <div className="pt-2 border-t border-border">
               <p className="text-xs text-text-label font-mono uppercase tracking-wider mb-2">
                 Diretores detectados
               </p>
               <div className="flex flex-wrap gap-1.5">
-                {fields.nomes_votacao.map((nome, i) => (
+                {detectedDirectors.map((nome, i) => (
                   <span key={i} className="badge badge-gray text-xs">{nome}</span>
                 ))}
               </div>
+              {fields.nomes_votacao.length > 0 && (
+                <p className="mt-2 text-[11px] text-text-label">
+                  Votos nominais usados para a base historica: {fields.nomes_votacao.join(", ")}.
+                </p>
+              )}
             </div>
           )}
 

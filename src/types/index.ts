@@ -416,6 +416,7 @@ export interface PreviewResultFields {
   pauta_interna: boolean;
   resumo_pleito: string | null;
   fundamento_decisao: string | null;
+  diretores_detectados: string[];
   nomes_votacao: string[];
   nomes_votacao_contra: string[];
 }

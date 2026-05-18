@@ -87,6 +87,10 @@ const RE_BLOCO_SEI_ASSINATURA = /Documento assinado eletronicamente[\s\S]*?(?=A 
 // Padrão F: assinatura ANM com dash — "Nome - Diretor(a)" ou "Nome - Diretor-Geral"
 const RE_ASSINATURA_DASH = /^\s*([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü\s]+)\s*[-–]\s*(?:Diretor[a]?(?:[- ]Geral)?(?:\s*Substitut[oa])?|Conselheiro[a]?(?:-Presidente)?|Presidente)/gm;
 
+// Pauta ANM: "1. DIRETOR-GERAL MAURO HENRIQUE MOREIRA SOUSA".
+// Isso identifica o diretor responsavel/relator do item, mas nao prova voto nominal.
+const RE_DIRETOR_HEADING_CAPS = /^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:DIRETOR(?:A)?(?:[- ]GERAL)?|DIRETOR(?:A)?\s+SUBSTITUT[OA]|RELATOR(?:A)?)\s+([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ\s.'-]{5,})\s*$/gm;
+
 // Número da reunião para atas ANM: "ATA 1ª REUNIÃO"
 const RE_NUMERO_ATA = /ATA\s+(\d+)[ªa°º]?\s*REUNI[AÃ]O/i;
 
@@ -95,6 +99,47 @@ function firstMatch(text: string, pattern: RegExp, group = 1): string | null {
   pattern.lastIndex = 0;
   const match = pattern.exec(text);
   return match ? match[group].trim() : null;
+}
+
+function uniquePush(list: string[], value: string | null | undefined) {
+  const clean = value?.replace(/\s+/g, " ").trim();
+  if (!clean || clean.length < 5) return;
+  if (!list.some((item) => item.toLocaleLowerCase("pt-BR") === clean.toLocaleLowerCase("pt-BR"))) {
+    list.push(clean);
+  }
+}
+
+function extractDiretorHeadings(text: string): string[] {
+  const names: string[] = [];
+  RE_DIRETOR_HEADING_CAPS.lastIndex = 0;
+  let match: RegExpExecArray | null;
+  while ((match = RE_DIRETOR_HEADING_CAPS.exec(text)) !== null) {
+    const nome = match[1]
+      .replace(/\b(?:PROCESSO|INTERESSAD[AO]|ASSUNTO|VOTO|VISTA|RECURSO)\b.*$/i, "")
+      .trim();
+    uniquePush(names, nome);
+  }
+
+  const lines = text.split("\n");
+  const roleLine = /^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:DIRETOR(?:A)?(?:[- ]GERAL)?|DIRETOR(?:A)?\s+SUBSTITUT[OA]|RELATOR(?:A)?)\s+(.+)$/;
+  for (let i = 0; i < lines.length; i++) {
+    const current = lines[i].trim();
+    const lineMatch = roleLine.exec(current);
+    if (!lineMatch) continue;
+
+    let nome = lineMatch[1].trim();
+    const next = lines[i + 1]?.trim() ?? "";
+    if (
+      next &&
+      /^[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ\s.'-]{5,}$/.test(next) &&
+      !/^(PROCESSO|INTERESSAD[AO]|ASSUNTO|VOTO|MAT[EÉ]RIAS|APROVA)/i.test(next)
+    ) {
+      nome = `${nome} ${next}`;
+    }
+    nome = nome.replace(/\b(?:PROCESSO|INTERESSAD[AO]|ASSUNTO|VOTO|VISTA|RECURSO)\b.*$/i, "").trim();
+    uniquePush(names, nome);
+  }
+  return names;
 }
 
 // ─── Extrator linha a linha (segunda estratégia) ──────────────────────────
@@ -258,6 +303,7 @@ export interface ExtractedFields {
   processo: string | null;
   assunto: string | null;           // campo "Assunto:" das deliberações ARTESP
   procedencia: string | null;       // campo "Procedência:" (departamento de origem)
+  relator: string | null;
   resultado: string | null;
   decisoes_todas: string[];         // todos os verbos decisórios únicos normalizados
   pauta_interna: boolean;
@@ -267,6 +313,7 @@ export interface ExtractedFields {
   nomes_votacao_favor: string[];    // nomes que votaram a favor
   nomes_votacao_contra: string[];   // nomes que votaram contra/abstenção
   signatarios: string[];            // diretores identificados no bloco de assinatura
+  diretores_detectados: string[];   // diretores identificados em cabecalhos/relatoria
   unanimidade_detectada: boolean;   // true se "por unanimidade" encontrado no texto
 }
 
@@ -285,6 +332,8 @@ export function extractFields(text: string): ExtractedFields {
     firstMatch(text, /Ementa[:\s]+([^\n]{3,300})/gi) ??
     firstMatch(text, /Tema[:\s]+([^\n]{3,300})/gi) ??
     firstMatch(text, /Objeto[:\s]+([^\n]{3,300})/gi);
+  const diretores_detectados = extractDiretorHeadings(text);
+  const relator = diretores_detectados.length > 0 ? diretores_detectados.join(", ") : null;
 
   // Estágio 2: varredura linha a linha para campos ainda null
   if (!interessado || !processo || !assunto) {
@@ -491,6 +540,7 @@ export function extractFields(text: string): ExtractedFields {
     processo,
     assunto,
     procedencia,
+    relator,
     resultado,
     decisoes_todas,
     pauta_interna,
@@ -500,6 +550,7 @@ export function extractFields(text: string): ExtractedFields {
     nomes_votacao_favor,
     nomes_votacao_contra,
     signatarios,
+    diretores_detectados,
     unanimidade_detectada,
   };
 }
