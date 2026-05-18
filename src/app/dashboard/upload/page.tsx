@@ -118,6 +118,8 @@ function errorPreviewResult(filename: string): PreviewResult {
       diretores_detectados: [],
       nomes_votacao: [],
       nomes_votacao_contra: [],
+      nomes_votacao_ausente: [],
+      votos_sugeridos: [],
     },
     confidence: 0,
     page_count: 0,
@@ -686,11 +688,37 @@ function ReviewCard({
                   <span key={i} className="badge badge-gray text-xs">{nome}</span>
                 ))}
               </div>
-              {fields.nomes_votacao.length > 0 && (
+      {fields.nomes_votacao.length > 0 && (
                 <p className="mt-2 text-[11px] text-text-label">
                   Votos nominais usados para a base historica: {fields.nomes_votacao.join(", ")}.
                 </p>
               )}
+            </div>
+          )}
+
+          {fields.votos_sugeridos && fields.votos_sugeridos.length > 0 && (
+            <div className="pt-2 border-t border-border">
+              <p className="text-xs text-text-label font-mono uppercase tracking-wider mb-2">
+                Votos sugeridos
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {fields.votos_sugeridos.map((voto, i) => (
+                  <div key={`${voto.diretor_id ?? voto.nome}-${i}`} className="flex items-center justify-between gap-2 rounded bg-surface-secondary px-2 py-1.5 text-xs">
+                    <span className="text-text-secondary truncate">{voto.nome}</span>
+                    <div className="flex gap-1 shrink-0">
+                      <span className={cn(
+                        "badge text-[10px]",
+                        voto.tipo_voto === "Favoravel" ? "badge-green" : voto.tipo_voto === "Ausente" ? "badge-gray" : "bg-error/15 text-error"
+                      )}>
+                        {voto.tipo_voto}
+                      </span>
+                      <span className="badge badge-gray text-[10px]">
+                        {voto.is_nominal ? "nominal" : "inferido"}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
@@ -707,6 +735,7 @@ function ReviewCard({
                   relator: string | null; resultado: string | null;
                   decisao?: string | null; microtema: string; area_regulatoria?: string;
                   votos_detectados?: string[]; unanimidade_detectada?: boolean;
+                  votos_sugeridos?: PreviewResultFields["votos_sugeridos"];
                 }>).map((ai, i) => (
                   <div key={i} className="flex items-start gap-2 text-xs p-1.5 rounded bg-surface-secondary">
                     <span className="font-mono text-brand shrink-0 w-8">{ai.item_numero}</span>
@@ -719,6 +748,11 @@ function ReviewCard({
                       {ai.votos_detectados && ai.votos_detectados.length > 0 && (
                         <span className="block text-text-label truncate">
                           Votos detectados: {ai.votos_detectados.join(", ")}
+                        </span>
+                      )}
+                      {ai.votos_sugeridos && ai.votos_sugeridos.length > 0 && (
+                        <span className="block text-text-label truncate">
+                          Votos sugeridos: {ai.votos_sugeridos.length}
                         </span>
                       )}
                     </div>
@@ -1066,6 +1100,8 @@ export default function UploadPage() {
         fundamento_decisao: fields.fundamento_decisao,
         nomes_votacao: fields.nomes_votacao,
         nomes_votacao_contra: fields.nomes_votacao_contra ?? [],
+        nomes_votacao_ausente: fields.nomes_votacao_ausente ?? [],
+        votos_sugeridos: fields.votos_sugeridos ?? [],
         extraction_confidence: item.confidence,
         documento_antt_tipo: item.documento_antt_tipo ?? null,
         documento_subtipo: item.documento_subtipo ?? null,

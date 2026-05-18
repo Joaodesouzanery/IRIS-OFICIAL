@@ -6,6 +6,12 @@ import { extractFields, calcConfidence } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex } from "@/lib/server/pdf-extractor";
 import { classifyRegulatoryDocument, extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
+import {
+  buildVoteSuggestions,
+  getActiveDiretoresForVote,
+  shouldInferVotesFromMandate,
+  type DiretorVoteRecord,
+} from "@/lib/server/vote-inference";
 
 export type UploadAnalysisAgency = { id: string; sigla: string };
 
@@ -101,6 +107,7 @@ export async function analyzeUploadPdf(input: {
   const agencia_id_detected = agencia_sigla_detected
     ? agencias.find((a) => a.sigla === agencia_sigla_detected)?.id ?? null
     : null;
+  const diretoresList = await getDiretoresList(db, agencia_id_detected);
 
   const pauta_interna = antt.isAntt
     ? Boolean(antt.fields.pauta_interna)
@@ -170,6 +177,10 @@ export async function analyzeUploadPdf(input: {
       resultado: item.resultado,
       microtema: classifyMicrotema(item.raw_text, agencia_sigla_detected).microtema,
       area_regulatoria: classifyAreaRegulatoria(item.raw_text),
+      votos_detectados: [],
+      votos_contra_detectados: [],
+      votos_ausentes_detectados: [],
+      unanimidade_detectada: item.unanimidade,
     }));
     if (!fields.data_reuniao && ataMeta.data_reuniao) fields.data_reuniao = ataMeta.data_reuniao;
     confidence = Math.max(confidence, calcAtaPreviewConfidence({
@@ -191,6 +202,50 @@ export async function analyzeUploadPdf(input: {
     }));
     microtema = ata_items[0]?.microtema ?? microtema;
     area_regulatoria = (ata_items[0]?.area_regulatoria ?? area_regulatoria) as typeof area_regulatoria;
+  }
+
+  const activeDiretoresList = db && agencia_id_detected
+    ? await getActiveDiretoresForVote(db, agencia_id_detected, fields.data_reuniao, diretoresList)
+    : [];
+  const mainInferFromMandate = shouldInferVotesFromMandate({
+    resultado: fields.resultado,
+    tipo_documento,
+    import_counts_as_final: regulatoryClass.import_counts_as_final,
+    unanimidadeDetectada: fields.unanimidade_detectada,
+    nomes: fields.nomes_votacao,
+    nomesContra: fields.nomes_votacao_contra,
+  });
+  const mainVotosSugeridos = buildVoteSuggestions({
+    nomes: fields.nomes_votacao,
+    nomesContra: fields.nomes_votacao_contra,
+    nomesAusente: fields.nomes_votacao_ausente,
+    diretoresList,
+    activeDiretoresList,
+    inferFromMandate: mainInferFromMandate,
+  });
+
+  if (ata_items?.length) {
+    ata_items = ata_items.map((item) => {
+      const inferFromMandate = shouldInferVotesFromMandate({
+        resultado: item.resultado,
+        tipo_documento: "ata",
+        import_counts_as_final: Boolean(item.resultado),
+        unanimidadeDetectada: item.unanimidade_detectada,
+        nomes: item.votos_detectados ?? [],
+        nomesContra: item.votos_contra_detectados ?? [],
+      });
+      return {
+        ...item,
+        votos_sugeridos: buildVoteSuggestions({
+          nomes: item.votos_detectados ?? [],
+          nomesContra: item.votos_contra_detectados ?? [],
+          nomesAusente: item.votos_ausentes_detectados ?? [],
+          diretoresList,
+          activeDiretoresList,
+          inferFromMandate,
+        }),
+      };
+    });
   }
 
   const warnings = documentWarnings;
@@ -225,6 +280,8 @@ export async function analyzeUploadPdf(input: {
       diretores_detectados: fields.diretores_detectados,
       nomes_votacao: fields.nomes_votacao,
       nomes_votacao_contra: fields.nomes_votacao_contra,
+      nomes_votacao_ausente: fields.nomes_votacao_ausente,
+      votos_sugeridos: mainVotosSugeridos,
     },
     confidence,
     page_count: extraction.pageCount,
@@ -261,6 +318,8 @@ export async function analyzeUploadPdf(input: {
       nomes_votacao: fields.nomes_votacao,
       nomes_votacao_favor: fields.nomes_votacao_favor,
       nomes_votacao_contra: fields.nomes_votacao_contra,
+      nomes_votacao_ausente: fields.nomes_votacao_ausente,
+      votos_sugeridos: mainVotosSugeridos,
       signatarios: fields.signatarios,
       unanimidade_detectada: fields.unanimidade_detectada,
       confidence,
@@ -347,6 +406,8 @@ export function errorResult(filename: string, file_hash = ""): PreviewResult {
       diretores_detectados: [],
       nomes_votacao: [],
       nomes_votacao_contra: [],
+      nomes_votacao_ausente: [],
+      votos_sugeridos: [],
     },
     confidence: 0,
     page_count: 0,
@@ -389,4 +450,18 @@ function calcAtaPreviewConfidence(input: {
     itemCount > 0 ? 0.15 : 0,
     itemQuality,
   ].reduce((sum, value) => sum + value, 0);
+}
+
+async function getDiretoresList(db: any | null | undefined, agenciaId: string | null): Promise<DiretorVoteRecord[]> {
+  if (!db || !agenciaId) return [];
+  const { data } = await db
+    .from("diretores")
+    .select("id, nome, nome_variantes")
+    .eq("agencia_id", agenciaId);
+
+  return (data ?? []).map((dir: any) => ({
+    id: dir.id,
+    nome: dir.nome,
+    nome_variantes: Array.isArray(dir.nome_variantes) ? dir.nome_variantes : [],
+  }));
 }

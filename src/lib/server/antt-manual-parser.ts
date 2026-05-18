@@ -63,7 +63,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
   const director = extractDirector(clean, filename, documentType);
   const attendance = extractAnttAttendance(clean);
   const processes = extractAnttProcessesV2(clean);
-  const enrichedProcesses = processes.map((item) => enrichAnttItem(item, documentType, attendance.present));
+  const enrichedProcesses = processes.map((item) => enrichAnttItem(item, documentType, attendance.present, attendance.absent));
   const firstProcess = enrichedProcesses[0] ?? extractSingleProcess(clean, filename, documentType);
   const area_regulatoria = classifyAreaRegulatoria([
     firstProcess.assunto,
@@ -355,6 +355,7 @@ function enrichAnttItem(
   item: AtaPreviewItem,
   documentType: AnttManualDocumentType,
   presentDirectors: string[],
+  absentDirectors: string[],
 ): AtaPreviewItem {
   const text = `${item.assunto ?? ""} ${item.decisao ?? ""}`;
   const isAta = documentType === "ata";
@@ -373,6 +374,7 @@ function enrichAnttItem(
     area_regulatoria: classifyAreaRegulatoria(`${item.interessado ?? ""} ${text}`),
     votos_detectados: votos,
     votos_contra_detectados: [],
+    votos_ausentes_detectados: unanimidade ? absentDirectors : [],
     unanimidade_detectada: unanimidade,
     needs_review: warnings.length > 0,
     warnings,

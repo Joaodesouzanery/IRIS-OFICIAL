@@ -41,6 +41,10 @@ const RE_VOTO_DISSIDENTE =
   /(?:pelo\s+voto\s+(?:dissidente|divergente|contrário)\s+d[oa]?\s+(?:Diretor[a]?\s+)?|Diretor[a]?\s+\S+\s+votou?\s+(?:de\s+forma\s+)?(?:contrári[ao]|dissidente|divergente)[,\s]+)((?:[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+\s+){1,5})/gi;
 
 // ─── Datas ─────────────────────────────────────────────────────────────────
+const RE_VOTO_AUSENTE =
+  /(?:ausente[:\s]+(?:o\s+)?(?:Diretor[a]?\s+)?|aus[Ãªe]ncia\s+d[oa]\s+(?:Diretor[a]?\s+)?|(?:Diretor[a]?\s+)?)((?:[A-ZÃÃ‰ÃÃ“ÃšÃ‚ÃŠÃ”ÃƒÃ•Ã‡Ã€Ãœ][a-zÃ¡Ã©Ã­Ã³ÃºÃ¢ÃªÃ´Ã£ÃµÃ§Ã Ã¼]+\s*){2,5})(?:\s+ausente)/gi;
+const RE_AUSENTE_LABEL = /Ausente[s]?:\s*([^\n.]{5,180})/gi;
+
 const MESES: Record<string, number> = {
   janeiro: 1, fevereiro: 2, março: 3, marco: 3, abril: 4,
   maio: 5, junho: 6, julho: 7, agosto: 8,
@@ -107,6 +111,14 @@ function uniquePush(list: string[], value: string | null | undefined) {
   if (!list.some((item) => item.toLocaleLowerCase("pt-BR") === clean.toLocaleLowerCase("pt-BR"))) {
     list.push(clean);
   }
+}
+
+function splitDirectorNames(value: string): string[] {
+  return value
+    .replace(/\b(?:Diretor(?:a)?|Diretor-Geral|Conselheiro(?:a)?|Presidente)\b/gi, "")
+    .split(/\s*(?:,|;|\se\s)\s*/i)
+    .map((name) => name.replace(/\s+/g, " ").trim())
+    .filter((name) => name.split(/\s+/).length >= 2 && name.length <= 100);
 }
 
 function extractDiretorHeadings(text: string): string[] {
@@ -312,6 +324,7 @@ export interface ExtractedFields {
   nomes_votacao: string[];          // todos os nomes (compatibilidade)
   nomes_votacao_favor: string[];    // nomes que votaram a favor
   nomes_votacao_contra: string[];   // nomes que votaram contra/abstenção
+  nomes_votacao_ausente: string[];  // nomes explicitamente ausentes
   signatarios: string[];            // diretores identificados no bloco de assinatura
   diretores_detectados: string[];   // diretores identificados em cabecalhos/relatoria
   unanimidade_detectada: boolean;   // true se "por unanimidade" encontrado no texto
@@ -471,6 +484,7 @@ export function extractFields(text: string): ExtractedFields {
   const nomes_votacao: string[] = [];
   const nomes_votacao_favor: string[] = [];
   const nomes_votacao_contra: string[] = [];
+  const nomes_votacao_ausente: string[] = [];
 
   if (unanimidade_detectada && signatarios.length > 0) {
     // Unanimidade confirmada: todos os signatários votaram a favor.
@@ -486,7 +500,9 @@ export function extractFields(text: string): ExtractedFields {
       const tipo = vd[2].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       if (nome.length > 4) {
         if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
-        if (tipo.startsWith("favor") && !nomes_votacao_favor.includes(nome)) {
+        if (tipo.includes("ausente") && !nomes_votacao_ausente.includes(nome)) {
+          nomes_votacao_ausente.push(nome);
+        } else if (tipo.startsWith("favor") && !nomes_votacao_favor.includes(nome)) {
           nomes_votacao_favor.push(nome);
         } else if (!tipo.startsWith("favor") && !nomes_votacao_contra.includes(nome)) {
           nomes_votacao_contra.push(nome);
@@ -530,6 +546,29 @@ export function extractFields(text: string): ExtractedFields {
     }
   }
 
+  RE_VOTO_AUSENTE.lastIndex = 0;
+  let aus: RegExpExecArray | null;
+  while ((aus = RE_VOTO_AUSENTE.exec(text)) !== null) {
+    const nome = aus[1].trim();
+    if (nome.length > 4) {
+      if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
+      const idxFavor = nomes_votacao_favor.indexOf(nome);
+      if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
+      if (!nomes_votacao_ausente.includes(nome)) nomes_votacao_ausente.push(nome);
+    }
+  }
+
+  RE_AUSENTE_LABEL.lastIndex = 0;
+  let ausLabel: RegExpExecArray | null;
+  while ((ausLabel = RE_AUSENTE_LABEL.exec(text)) !== null) {
+    for (const nome of splitDirectorNames(ausLabel[1])) {
+      if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
+      const idxFavor = nomes_votacao_favor.indexOf(nome);
+      if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
+      if (!nomes_votacao_ausente.includes(nome)) nomes_votacao_ausente.push(nome);
+    }
+  }
+
   return {
     numero_deliberacao,
     reuniao_ordinaria,
@@ -549,6 +588,7 @@ export function extractFields(text: string): ExtractedFields {
     nomes_votacao,
     nomes_votacao_favor,
     nomes_votacao_contra,
+    nomes_votacao_ausente,
     signatarios,
     diretores_detectados,
     unanimidade_detectada,

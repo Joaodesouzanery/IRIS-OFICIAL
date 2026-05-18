@@ -135,6 +135,14 @@ export interface VotoEmbutido {
   is_nominal: boolean;
 }
 
+export interface VotoSugerido {
+  nome: string;
+  diretor_id?: string | null;
+  tipo_voto: "Favoravel" | "Desfavoravel" | "Ausente";
+  origem: "nominal" | "inferido_mandato" | "contrario" | "ausente";
+  is_nominal: boolean;
+}
+
 export interface Deliberacao {
   id: string;
   numero_deliberacao: string | null;
@@ -419,6 +427,8 @@ export interface PreviewResultFields {
   diretores_detectados: string[];
   nomes_votacao: string[];
   nomes_votacao_contra: string[];
+  nomes_votacao_ausente: string[];
+  votos_sugeridos?: VotoSugerido[];
 }
 
 /** Para atas: uma PreviewResult pode conter múltiplos items */
@@ -434,6 +444,8 @@ export interface AtaPreviewItem {
   area_regulatoria?: AreaRegulatoria | string;
   votos_detectados?: string[];
   votos_contra_detectados?: string[];
+  votos_ausentes_detectados?: string[];
+  votos_sugeridos?: VotoSugerido[];
   unanimidade_detectada?: boolean;
   needs_review?: boolean;
   warnings?: string[];
@@ -497,6 +509,8 @@ export interface ConfirmDelib {
   fundamento_decisao: string | null;
   nomes_votacao: string[];
   nomes_votacao_contra: string[];
+  nomes_votacao_ausente?: string[];
+  votos_sugeridos?: VotoSugerido[];
   extraction_confidence: number;
   documento_antt_tipo?: AnttManualDocumentType | null;
   documento_subtipo?: string | null;

@@ -10,6 +10,12 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName } from "@/lib/server/name-matcher";
 import { requireAdmin } from "@/lib/server/request-guards";
+import {
+  buildVotoRows,
+  getActiveDiretoresForVote,
+  shouldInferVotesFromMandate,
+  type DiretorVoteRecord,
+} from "@/lib/server/vote-inference";
 import type {
   ConfirmDelib,
   BatchConfirmResponse,
@@ -87,6 +93,10 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
     nomes_votacao_contra: Array.isArray(d.nomes_votacao_contra)
       ? d.nomes_votacao_contra.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
+    nomes_votacao_ausente: Array.isArray(d.nomes_votacao_ausente)
+      ? d.nomes_votacao_ausente.slice(0, 20).map((n) => String(n).slice(0, 100))
+      : [],
+    votos_sugeridos: Array.isArray(d.votos_sugeridos) ? d.votos_sugeridos.slice(0, 30) : [],
     extraction_confidence:
       typeof d.extraction_confidence === "number" &&
       d.extraction_confidence >= 0 &&
@@ -157,19 +167,29 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         .filter((m) => m.agencia_id === effectiveAgenciaId)
         .map((m) => ({ id: m.diretor_id, nome: m.diretor_nome, nome_variantes: [] as string[] }));
 
-      function buildVotos(nomes: string[], contra: Set<string>): VotoEmbutido[] {
-        return nomes.map((nome) => {
-          const match = findBestMatch(nome, diretoresList);
-          const isContra = contra.has(nome);
+      function buildVotos(
+        nomes: string[],
+        contra: string[] = [],
+        ausente: string[] = [],
+        inferFromMandate = false,
+      ): VotoEmbutido[] {
+        return buildVotoRows({
+          deliberacao_id: "local",
+          nomes,
+          nomesContra: contra,
+          nomesAusente: ausente,
+          diretoresList,
+          activeDiretoresList: diretoresList,
+          inferFromMandate,
+        }).map((row) => {
+          const diretor = diretoresList.find((dir) => dir.id === row.diretor_id);
           return {
             id: `local-v-${Math.random().toString(36).slice(2, 9)}`,
-            diretor_id: match.diretorId ?? nome,
-            diretor_nome: match.diretorId
-              ? (diretoresList.find((dir) => dir.id === match.diretorId)?.nome ?? nome)
-              : nome,
-            tipo_voto: isContra ? "Desfavoravel" : "Favoravel",
-            is_divergente: isContra,
-            is_nominal: match.diretorId !== null,
+            diretor_id: row.diretor_id,
+            diretor_nome: diretor?.nome ?? row.diretor_id,
+            tipo_voto: row.tipo_voto,
+            is_divergente: row.is_divergente,
+            is_nominal: row.is_nominal,
           };
         });
       }
@@ -237,7 +257,19 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             auto_classified: true,
             extraction_confidence: item.processo ? 0.8 : 0.4,
             created_at: new Date().toISOString(),
-            votos: buildVotos(item.votos_detectados ?? [], new Set(item.votos_contra_detectados ?? [])),
+            votos: buildVotos(
+              item.votos_detectados ?? [],
+              item.votos_contra_detectados ?? [],
+              item.votos_ausentes_detectados ?? [],
+              shouldInferVotesFromMandate({
+                resultado: item.resultado,
+                tipo_documento: "ata",
+                import_counts_as_final: Boolean(item.resultado),
+                unanimidadeDetectada: item.unanimidade_detectada,
+                nomes: item.votos_detectados ?? [],
+                nomesContra: item.votos_contra_detectados ?? [],
+              }),
+            ),
             raw_extraction: null,
           });
         }
@@ -247,7 +279,19 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       }
 
       const id = `local-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
-      const votos = buildVotos(d.nomes_votacao, new Set(d.nomes_votacao_contra));
+      const votos = buildVotos(
+        d.nomes_votacao,
+        d.nomes_votacao_contra,
+        d.nomes_votacao_ausente ?? [],
+        shouldInferVotesFromMandate({
+          resultado: d.resultado,
+          tipo_documento: d.tipo_documento,
+          import_counts_as_final: d.import_counts_as_final,
+          unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
+          nomes: d.nomes_votacao,
+          nomesContra: d.nomes_votacao_contra,
+        }),
+      );
 
       createdDelibs.push({
         id,
@@ -423,7 +467,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   documento_subtipo: d.documento_subtipo,
                   import_counts_as_final: Boolean(item.resultado),
                   item_numero: item.item_numero,
-                  votos_inferidos_por_mandato: shouldInferVotesFromMandate(item.resultado, item.votos_detectados ?? []),
+                  votos_inferidos_por_mandato: shouldInferVotesFromMandate({
+                    resultado: item.resultado,
+                    tipo_documento: "ata",
+                    import_counts_as_final: Boolean(item.resultado),
+                    unanimidadeDetectada: item.unanimidade_detectada,
+                    nomes: item.votos_detectados ?? [],
+                    nomesContra: item.votos_contra_detectados ?? [],
+                  }),
                   warnings: item.warnings ?? [],
                 }, attachment),
               })
@@ -436,9 +487,17 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 deliberacao_id: child.id as string,
                 nomes: itemVotingNames,
                 nomesContra: item.votos_contra_detectados ?? [],
+                nomesAusente: item.votos_ausentes_detectados ?? [],
                 diretoresList,
                 activeDiretoresList,
-                inferFromMandate: shouldInferVotesFromMandate(item.resultado, itemVotingNames),
+                inferFromMandate: shouldInferVotesFromMandate({
+                  resultado: item.resultado,
+                  tipo_documento: "ata",
+                  import_counts_as_final: Boolean(item.resultado),
+                  unanimidadeDetectada: item.unanimidade_detectada,
+                  nomes: itemVotingNames,
+                  nomesContra: item.votos_contra_detectados ?? [],
+                }),
               });
 
               if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
@@ -478,7 +537,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             upload_job_id: attachment.upload_job_id,
             raw_extraction: withAttachmentRaw({
               ...(d.extraction_raw ?? {}),
-              votos_inferidos_por_mandato: shouldInferVotesFromMandate(d.resultado, d.nomes_votacao),
+              votos_inferidos_por_mandato: shouldInferVotesFromMandate({
+                resultado: d.resultado,
+                tipo_documento: d.tipo_documento,
+                import_counts_as_final: d.import_counts_as_final,
+                unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
+                nomes: d.nomes_votacao,
+                nomesContra: d.nomes_votacao_contra,
+              }),
             }, attachment),
           })
           .select("id")
@@ -510,9 +576,17 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           deliberacao_id: delib.id as string,
           nomes: votingNames,
           nomesContra: d.nomes_votacao_contra,
+          nomesAusente: d.nomes_votacao_ausente ?? [],
           diretoresList,
           activeDiretoresList,
-          inferFromMandate: shouldInferVotesFromMandate(d.resultado, votingNames),
+          inferFromMandate: shouldInferVotesFromMandate({
+            resultado: d.resultado,
+            tipo_documento: d.tipo_documento,
+            import_counts_as_final: d.import_counts_as_final,
+            unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
+            nomes: votingNames,
+            nomesContra: d.nomes_votacao_contra,
+          }),
         });
         if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
 
@@ -593,91 +667,6 @@ async function recordDirectorCandidates(
   if (error) {
     console.warn("[upload/confirm] Não foi possível registrar candidatos de diretores:", error.message);
   }
-}
-
-type DiretorVoteRecord = { id: string; nome: string; nome_variantes: string[] };
-
-type VotoInsertRow = {
-  deliberacao_id: string;
-  diretor_id: string;
-  tipo_voto: "Favoravel" | "Desfavoravel";
-  is_divergente: boolean;
-  is_nominal: boolean;
-};
-
-async function getActiveDiretoresForVote(
-  db: any,
-  agenciaId: string,
-  dataReuniao: string | null,
-  fallback: DiretorVoteRecord[],
-): Promise<DiretorVoteRecord[]> {
-  if (!dataReuniao) return fallback;
-
-  const { data, error } = await db
-    .from("mandatos")
-    .select("diretor_id, data_inicio, data_fim, diretores!inner(id, nome, nome_variantes, agencia_id)")
-    .eq("diretores.agencia_id", agenciaId)
-    .lte("data_inicio", dataReuniao)
-    .or(`data_fim.is.null,data_fim.gte.${dataReuniao}`);
-
-  if (error || !data?.length) return fallback;
-
-  const unique = new Map<string, DiretorVoteRecord>();
-  for (const row of data as any[]) {
-    const diretor = row.diretores;
-    if (!diretor?.id) continue;
-    unique.set(diretor.id, {
-      id: diretor.id,
-      nome: diretor.nome,
-      nome_variantes: Array.isArray(diretor.nome_variantes) ? diretor.nome_variantes : [],
-    });
-  }
-
-  return unique.size > 0 ? [...unique.values()] : fallback;
-}
-
-function buildVotoRows(input: {
-  deliberacao_id: string;
-  nomes: string[];
-  nomesContra: string[];
-  diretoresList: DiretorVoteRecord[];
-  activeDiretoresList: DiretorVoteRecord[];
-  inferFromMandate: boolean;
-}): VotoInsertRow[] {
-  const nomesContra = new Set(input.nomesContra);
-  const rows = new Map<string, VotoInsertRow>();
-
-  for (const nome of input.nomes) {
-    const match = findBestMatch(nome, input.diretoresList);
-    if (!match.diretorId) continue;
-    const isContra = nomesContra.has(nome);
-    rows.set(match.diretorId, {
-      deliberacao_id: input.deliberacao_id,
-      diretor_id: match.diretorId,
-      tipo_voto: isContra ? "Desfavoravel" : "Favoravel",
-      is_divergente: isContra,
-      is_nominal: true,
-    });
-  }
-
-  if (rows.size === 0 && input.inferFromMandate) {
-    for (const diretor of input.activeDiretoresList) {
-      rows.set(diretor.id, {
-        deliberacao_id: input.deliberacao_id,
-        diretor_id: diretor.id,
-        tipo_voto: "Favoravel",
-        is_divergente: false,
-        is_nominal: false,
-      });
-    }
-  }
-
-  return [...rows.values()];
-}
-
-function shouldInferVotesFromMandate(resultado: string | null, nomes: string[]): boolean {
-  if (nomes.length > 0 || !resultado) return false;
-  return resultado !== "Retirado de Pauta";
 }
 
 function extractSourceUrl(raw: Record<string, unknown> | undefined): string | null {
