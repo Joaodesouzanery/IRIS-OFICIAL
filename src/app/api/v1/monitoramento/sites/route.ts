@@ -10,36 +10,8 @@ const DEMO_SITES: MonitoramentoSite[] = [{
   nome: "ARTESP - Reuniões da Diretoria",
   url: "https://www.artesp.sp.gov.br/artesp/transparencia/reunioes-diretoria",
   estrategia: "html-static",
-  seletor_links: "a[href]",
-  ativo: true,
-  ultimo_check: null,
-  ultimo_hash: null,
-  ultimo_status: "never",
-  ultimo_erro: null,
-  created_at: new Date().toISOString(),
-  updated_at: new Date().toISOString(),
-}, {
-  id: "demo-monitor-transportes",
-  agencia_id: null,
-  agencia: null,
-  nome: "Ministerio dos Transportes - Noticias",
-  url: "https://www.gov.br/transportes/pt-br/assuntos/noticias",
-  estrategia: "govbr-news",
-  seletor_links: "a[href]",
-  ativo: true,
-  ultimo_check: null,
-  ultimo_hash: null,
-  ultimo_status: "never",
-  ultimo_erro: null,
-  created_at: new Date().toISOString(),
-  updated_at: new Date().toISOString(),
-}, {
-  id: "demo-monitor-mme",
-  agencia_id: null,
-  agencia: null,
-  nome: "Ministerio de Minas e Energia - Noticias",
-  url: "https://www.gov.br/mme/pt-br/assuntos/noticias",
-  estrategia: "govbr-news",
+  tipo_fonte: "documentos_regulatorios",
+  auto_enfileirar_pdf: true,
   seletor_links: "a[href]",
   ativo: true,
   ultimo_check: null,
@@ -58,6 +30,7 @@ export async function GET(req: NextRequest) {
   const { data, error } = await db
     .from("monitoramento_sites")
     .select("*, agencia:agencias(sigla, nome)")
+    .neq("tipo_fonte", "noticias")
     .order("created_at", { ascending: false });
 
   if (error) {
@@ -84,6 +57,8 @@ export async function POST(req: NextRequest) {
     : body.estrategia === "antt-2026"
       ? "antt-2026"
       : "html-static";
+  const tipo_fonte = body.tipo_fonte === "institucional" ? "institucional" : "documentos_regulatorios";
+  const auto_enfileirar_pdf = body.auto_enfileirar_pdf === false ? false : true;
   const seletor_links = typeof body.seletor_links === "string" && body.seletor_links.trim()
     ? body.seletor_links.trim()
     : "a[href]";
@@ -101,7 +76,7 @@ export async function POST(req: NextRequest) {
   const db = createSupabaseServerClient();
   const { data, error } = await db
     .from("monitoramento_sites")
-    .insert({ nome, url, agencia_id, seletor_links, estrategia })
+    .insert({ nome, url, agencia_id, seletor_links, estrategia, tipo_fonte, auto_enfileirar_pdf })
     .select("*, agencia:agencias(sigla, nome)")
     .single();
 

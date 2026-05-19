@@ -23,7 +23,7 @@ async function process(req: NextRequest) {
     return NextResponse.json({ error: "Processamento real indisponivel em modo DEMO." }, { status: 403 });
   }
 
-  const limit = Number(req.nextUrl.searchParams.get("limit") ?? "5");
+  const limit = Number(req.nextUrl.searchParams.get("limit") ?? "20");
   const { processPendingDocuments } = await import("@/lib/server/pipeline");
   const result = await processPendingDocuments(Number.isFinite(limit) ? limit : 5);
   return NextResponse.json(result);

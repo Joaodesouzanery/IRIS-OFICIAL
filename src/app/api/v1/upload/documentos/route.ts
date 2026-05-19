@@ -53,13 +53,15 @@ export async function GET(req: NextRequest) {
     const { data: signed } = await db.storage
       .from(doc.storage_bucket ?? "pdfs")
       .createSignedUrl(doc.storage_path, 60 * 60);
+    const duplicateConfirmed = doc.status === "confirmed" && Boolean(doc.is_duplicate || doc.duplicate_documento_id || doc.duplicate_deliberacao_id);
 
     return {
       ...doc,
+      is_duplicate: duplicateConfirmed,
       agencia: doc.agencias ?? null,
       agencias: undefined,
       signed_url: signed?.signedUrl ?? null,
-      preview: toPreview(doc),
+      preview: toPreview({ ...doc, is_duplicate: duplicateConfirmed }),
     };
   }));
 

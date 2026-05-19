@@ -29,7 +29,7 @@ export interface MonitoringFetchResult {
 
 const DOC_LABEL_RE =
   /\b(reuniao|reunioes|pauta|ata|deliberacao|deliberacoes|diretoria|diretores?|mandato|nomeacao|exoneracao|composicao)\b/i;
-const PDF_RE = /\.pdf(?:$|[/?#])/i;
+const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 const DATE_RE = /\b(\d{2})\/(\d{2})\/(\d{4})\b/;
 const REUNIAO_RE = /(\d{1,4})\s*(?:a|o|ª|º)?\s*reuniao[^<\n\r]*/i;
 
@@ -80,7 +80,7 @@ export function parseMonitoringHtml(
   const anchors = extractAnchors(html, baseUrl)
     .filter((a) => {
       const combined = normalizeText(`${a.text} ${decodeURIComponentSafe(a.href)}`);
-      return DOC_LABEL_RE.test(combined) || PDF_RE.test(a.href) || /sei|deliber|pauta|ata|reunio/.test(combined);
+      return DOC_LABEL_RE.test(combined) || PDF_RE.test(a.href) || /\/view(?:$|[/?#])|sei|deliber|pauta|ata|reunio/.test(combined);
     });
 
   const seen = new Set<string>();

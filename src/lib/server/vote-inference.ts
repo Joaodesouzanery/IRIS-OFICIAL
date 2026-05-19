@@ -113,6 +113,23 @@ export function buildVotoRows(input: {
   return [...rows.values()];
 }
 
+export function buildVotoRowsFromSuggestions(input: {
+  deliberacao_id: string;
+  votosSugeridos: VotoSugerido[];
+}): VotoInsertRow[] {
+  const rows = new Map<string, VotoInsertRow>();
+  for (const voto of input.votosSugeridos) {
+    if (!voto.diretor_id) continue;
+    rows.set(voto.diretor_id, rowFor(
+      input.deliberacao_id,
+      voto.diretor_id,
+      voto.tipo_voto,
+      voto.is_nominal,
+    ));
+  }
+  return [...rows.values()];
+}
+
 export function buildVoteSuggestions(input: {
   nomes: string[];
   nomesContra: string[];

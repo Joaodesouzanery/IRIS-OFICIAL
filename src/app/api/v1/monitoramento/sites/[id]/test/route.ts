@@ -11,6 +11,8 @@ const DEMO_SITE = {
   nome: "ARTESP - Reunioes da Diretoria",
   url: "https://www.artesp.sp.gov.br/artesp/transparencia/reunioes-diretoria",
   estrategia: "html-static",
+  tipo_fonte: "documentos_regulatorios",
+  auto_enfileirar_pdf: true,
   seletor_links: "a[href]",
 };
 
@@ -39,7 +41,7 @@ export async function POST(
     const db = createSupabaseServerClient();
     const { data: site, error } = await db
       .from("monitoramento_sites")
-      .select("id, agencia_id, nome, url, estrategia, seletor_links")
+      .select("id, agencia_id, nome, url, estrategia, seletor_links, tipo_fonte, auto_enfileirar_pdf")
       .eq("id", params.id)
       .single();
 

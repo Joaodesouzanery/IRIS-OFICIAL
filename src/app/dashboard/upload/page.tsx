@@ -30,6 +30,8 @@ import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 
 const BATCH_SIZE = 1; // processa pela fila; evita perder lotes grandes quando um arquivo falha
 const PREVIEW_MAX_TOTAL_SIZE = 150 * 1024 * 1024;
+const ASYNC_UPLOAD_MAX_BYTES = 120 * 1024 * 1024;
+const ASYNC_UPLOAD_MAX_FILES = 50;
 
 const RESULTADOS = [
   "Deferido", "Indeferido", "Parcialmente Deferido", "Retirado de Pauta",
@@ -57,6 +59,7 @@ interface ReviewItem extends PreviewResult {
   id: string;
   documento_id?: string | null;
   upload_job_id?: string | null;
+  documento_status?: DocumentoRegulatorio["status"] | null;
   signed_url?: string | null;
   texto_extraido?: string | null;
   rejected: boolean;
@@ -89,6 +92,27 @@ function fmtSize(bytes: number) {
   if (bytes < 1024) return bytes + " B";
   if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + " KB";
   return (bytes / 1024 / 1024).toFixed(1) + " MB";
+}
+
+function chunkQueuedFiles(files: QueuedFile[]) {
+  const chunks: QueuedFile[][] = [];
+  let current: QueuedFile[] = [];
+  let currentBytes = 0;
+
+  for (const file of files) {
+    const wouldExceedBytes = current.length > 0 && currentBytes + file.file.size > ASYNC_UPLOAD_MAX_BYTES;
+    const wouldExceedCount = current.length >= ASYNC_UPLOAD_MAX_FILES;
+    if (wouldExceedBytes || wouldExceedCount) {
+      chunks.push(current);
+      current = [];
+      currentBytes = 0;
+    }
+    current.push(file);
+    currentBytes += file.file.size;
+  }
+
+  if (current.length > 0) chunks.push(current);
+  return chunks;
 }
 
 function errorPreviewResult(filename: string): PreviewResult {
@@ -225,11 +249,12 @@ function QueueRow({
 function documentToReviewItem(doc: DocumentoRegulatorio, index: number): ReviewItem {
   const preview = doc.preview ?? errorPreviewResult(doc.filename);
   const errorState = doc.status === "failed";
+  const pendingState = ["queued", "processing"].includes(doc.status);
   return {
     ...preview,
     filename: doc.filename,
     source_archive: doc.source_archive ?? preview.source_archive,
-    status: errorState ? "error" : preview.status,
+    status: errorState ? "error" : pendingState ? "low_confidence" : preview.status,
     error: errorState ? doc.error_message ?? "Falha ao processar documento" : preview.error,
     file_hash: doc.file_hash || preview.file_hash,
     is_duplicate: Boolean(doc.is_duplicate || preview.is_duplicate),
@@ -246,9 +271,10 @@ function documentToReviewItem(doc: DocumentoRegulatorio, index: number): ReviewI
     id: doc.id || `${doc.file_hash}-${index}`,
     documento_id: doc.id,
     upload_job_id: doc.upload_job_id,
+    documento_status: doc.status,
     signed_url: doc.signed_url,
     texto_extraido: doc.texto_extraido,
-    rejected: Boolean(doc.is_duplicate),
+    rejected: false,
     edited: {},
   };
 }
@@ -257,10 +283,12 @@ function ReviewCard({
   item,
   onUpdate,
   onReject,
+  onReprocess,
 }: {
   item: ReviewItem;
   onUpdate: (id: string, patch: Partial<PreviewResultFields>) => void;
   onReject: (id: string) => void;
+  onReprocess: (item: ReviewItem) => void;
 }) {
   const [open, setOpen] = useState(item.status !== "ok" && !item.rejected);
   const fields: PreviewResultFields = { ...item.fields, ...item.edited };
@@ -278,6 +306,23 @@ function ReviewCard({
 
   function set<K extends keyof PreviewResultFields>(k: K, v: PreviewResultFields[K]) {
     onUpdate(item.id, { [k]: v } as Partial<PreviewResultFields>);
+  }
+
+  function updateVotoSugerido(index: number, tipoVoto: "Favoravel" | "Desfavoravel" | "Ausente") {
+    const votos = [...(fields.votos_sugeridos ?? [])];
+    if (!votos[index]) return;
+    votos[index] = {
+      ...votos[index],
+      tipo_voto: tipoVoto,
+      origem: tipoVoto === "Ausente"
+        ? "ausente"
+        : tipoVoto === "Desfavoravel"
+          ? "contrario"
+          : votos[index].is_nominal
+            ? "nominal"
+            : "inferido_mandato",
+    };
+    set("votos_sugeridos", votos);
   }
 
   const conf = item.confidence;
@@ -371,10 +416,28 @@ function ReviewCard({
       {/* Formulário expandido */}
       {open && !item.rejected && (
         <div className="px-4 pb-4 border-t border-border space-y-4 pt-4">
+          {["queued", "processing"].includes(item.documento_status ?? "") && (
+            <div className="flex items-start gap-2 p-3 rounded-md bg-brand/10 border border-brand/20 text-sm text-brand">
+              <Loader2 className="w-4 h-4 shrink-0 mt-0.5 animate-spin" />
+              Este PDF está na fila ou em processamento. Clique em &quot;Processar pendentes&quot; para atualizar a análise.
+            </div>
+          )}
+
           {item.status === "error" && item.error && (
-            <div className="flex items-start gap-2 p-3 rounded-md bg-error/10 border border-error/20 text-sm text-error">
-              <XCircle className="w-4 h-4 shrink-0 mt-0.5" />
-              {item.error}
+            <div className="flex items-start justify-between gap-3 p-3 rounded-md bg-error/10 border border-error/20 text-sm text-error">
+              <div className="flex items-start gap-2">
+                <XCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                <span>{item.error}</span>
+              </div>
+              {item.documento_id && (
+                <button
+                  onClick={() => onReprocess(item)}
+                  className="btn-secondary text-xs shrink-0"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" />
+                  Reprocessar
+                </button>
+              )}
             </div>
           )}
 
@@ -706,12 +769,15 @@ function ReviewCard({
                   <div key={`${voto.diretor_id ?? voto.nome}-${i}`} className="flex items-center justify-between gap-2 rounded bg-surface-secondary px-2 py-1.5 text-xs">
                     <span className="text-text-secondary truncate">{voto.nome}</span>
                     <div className="flex gap-1 shrink-0">
-                      <span className={cn(
-                        "badge text-[10px]",
-                        voto.tipo_voto === "Favoravel" ? "badge-green" : voto.tipo_voto === "Ausente" ? "badge-gray" : "bg-error/15 text-error"
-                      )}>
-                        {voto.tipo_voto}
-                      </span>
+                      <select
+                        className="input h-7 py-0 px-2 text-[11px]"
+                        value={voto.tipo_voto}
+                        onChange={(event) => updateVotoSugerido(i, event.target.value as "Favoravel" | "Desfavoravel" | "Ausente")}
+                      >
+                        <option value="Favoravel">Favoravel</option>
+                        <option value="Desfavoravel">Desfavoravel</option>
+                        <option value="Ausente">Ausente</option>
+                      </select>
                       <span className="badge badge-gray text-[10px]">
                         {voto.is_nominal ? "nominal" : "inferido"}
                       </span>
@@ -786,6 +852,7 @@ export default function UploadPage() {
   const [currentBatchFile, setCurrentBatchFile] = useState<string | null>(null);
   const [analyzeError, setAnalyzeError] = useState<string | null>(null);
   const [confirmResults, setConfirmResults] = useState<BatchConfirmResponse | null>(null);
+  const [clearQueueLoading, setClearQueueLoading] = useState(false);
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
@@ -830,6 +897,22 @@ export default function UploadPage() {
     setConfirmResults(null);
     setAnalyzeProgress({ done: 0, total: 0 });
     setCurrentBatchFile(null);
+  }
+
+  async function handleClearTestQueue() {
+    const ok = window.confirm("Limpar apenas a fila de testes? Deliberações já confirmadas serão preservadas.");
+    if (!ok) return;
+    setClearQueueLoading(true);
+    setAnalyzeError(null);
+    try {
+      await api.post("/upload/clear-test-queue", { confirm: "LIMPAR FILA DE TESTES" });
+      resetAll();
+      queryClient.invalidateQueries();
+    } catch (err) {
+      setAnalyzeError(err instanceof Error ? err.message : "Erro ao limpar fila de testes");
+    } finally {
+      setClearQueueLoading(false);
+    }
   }
 
   // ── Etapa 2: Análise em lotes de BATCH_SIZE ──────────────────────────
@@ -960,23 +1043,44 @@ export default function UploadPage() {
     setQueue((prev) => prev.map((f) => ({ ...f, status: "analyzing" })));
 
     try {
-      const batchBytes = allFiles.reduce((sum, qf) => sum + qf.file.size, 0);
-      if (batchBytes > PREVIEW_MAX_TOTAL_SIZE) {
-        throw new Error(`Lote excede ${fmtSize(PREVIEW_MAX_TOTAL_SIZE)} (${fmtSize(batchBytes)}). Envie em lotes menores.`);
+      const chunks = chunkQueuedFiles(allFiles);
+      const enqueueResults: BatchUploadResponse["results"] = [];
+      let uploadedCount = 0;
+
+      for (let index = 0; index < chunks.length; index++) {
+        const chunk = chunks[index];
+        const chunkBytes = chunk.reduce((sum, qf) => sum + qf.file.size, 0);
+        if (chunkBytes > PREVIEW_MAX_TOTAL_SIZE) {
+          enqueueResults.push(...chunk.map((qf) => ({
+            filename: qf.file.name,
+            job_id: null,
+            document_id: null,
+            status: "rejected" as const,
+            message: `Arquivo/lote excede ${fmtSize(PREVIEW_MAX_TOTAL_SIZE)} (${fmtSize(chunkBytes)}).`,
+          })));
+          uploadedCount += chunk.length;
+          setAnalyzeProgress({ done: uploadedCount, total: allFiles.length });
+          continue;
+        }
+
+        const formData = new FormData();
+        if (agenciaId) formData.append("agencia_id", agenciaId);
+        chunk.forEach((qf) => formData.append("files", qf.file));
+        setCurrentBatchFile(`Salvando sublote ${index + 1}/${chunks.length} no Storage...`);
+
+        const enqueue = await api.upload<BatchUploadResponse>("/upload/batch", formData);
+        enqueueResults.push(...enqueue.results);
+        uploadedCount += chunk.length;
+        setAnalyzeProgress({ done: uploadedCount, total: allFiles.length });
       }
 
-      const formData = new FormData();
-      if (agenciaId) formData.append("agencia_id", agenciaId);
-      allFiles.forEach((qf) => formData.append("files", qf.file));
-      setCurrentBatchFile("Salvando PDFs no Storage...");
-
-      const enqueue = await api.upload<BatchUploadResponse>("/upload/batch", formData);
+      const enqueue = { results: enqueueResults };
       const documentIds = enqueue.results
         .map((result) => result.document_id)
         .filter((id): id is string => Boolean(id));
       const duplicateDocumentIds = new Set(
         enqueue.results
-          .filter((result) => result.status === "duplicate" && result.document_id)
+          .filter((result) => result.status === "duplicate_confirmed" && result.document_id)
           .map((result) => result.document_id as string)
       );
       const rejectedItems: ReviewItem[] = enqueue.results
@@ -997,10 +1101,14 @@ export default function UploadPage() {
       }
 
       let docs: DocumentoRegulatorio[] = [];
-      const maxAttempts = 90;
+      const maxAttempts = 6;
       for (let attempt = 0; attempt < maxAttempts; attempt++) {
-        setCurrentBatchFile(`Processando fila (${attempt + 1}/${maxAttempts})...`);
-        await api.post<{ processed: number; job_ids: string[] }>("/upload/process?limit=5");
+        setCurrentBatchFile(attempt === 0
+          ? "Processando primeira fatia da fila..."
+          : `Atualizando status da fila (${attempt + 1}/${maxAttempts})...`);
+        if (attempt === 0) {
+          await api.post<{ processed: number; job_ids: string[] }>("/upload/process?limit=8");
+        }
         const docsRes = await api.get<DocumentoRegulatorioListResponse>(
           `/upload/documentos?ids=${encodeURIComponent(documentIds.join(","))}&limit=500`
         );
@@ -1025,7 +1133,7 @@ export default function UploadPage() {
         if (duplicateDocumentIds.has(doc.id)) {
           item.is_duplicate = true;
           item.rejected = true;
-          item.duplicate_reason = item.duplicate_reason ?? "PDF ja existe na fila/revisao";
+          item.duplicate_reason = item.duplicate_reason ?? "PDF ja consolidado no sistema";
         }
         return item;
       });
@@ -1064,7 +1172,61 @@ export default function UploadPage() {
     );
   }
 
-  const activeItems = reviewItems.filter((r) => !r.rejected && r.status !== "error");
+  async function handleReprocessItem(item: ReviewItem) {
+    if (!item.documento_id) return;
+    setAnalyzeError(null);
+    setReviewItems((prev) => prev.map((current) =>
+      current.id === item.id ? { ...current, status: "low_confidence", error: undefined, rejected: false } : current
+    ));
+    try {
+      await api.post("/upload/reprocess", { ids: [item.documento_id] });
+      for (let attempt = 0; attempt < 30; attempt++) {
+        await api.post<{ processed: number; job_ids: string[] }>("/upload/process?limit=20");
+        const docsRes = await api.get<DocumentoRegulatorioListResponse>(
+          `/upload/documentos?ids=${encodeURIComponent(item.documento_id)}&limit=1`
+        );
+        const doc = docsRes.data[0];
+        if (doc && ["review_pending", "failed", "confirmed", "ignored"].includes(doc.status)) {
+          const next = documentToReviewItem(doc, 0);
+          setReviewItems((prev) => prev.map((current) => current.id === item.id ? next : current));
+          return;
+        }
+        await sleep(1500);
+      }
+    } catch (err) {
+      setAnalyzeError(err instanceof Error ? err.message : "Erro ao reprocessar documento");
+    }
+  }
+
+  async function handleProcessPendingReviewItems() {
+    const documentIds = reviewItems
+      .map((item) => item.documento_id)
+      .filter((id): id is string => Boolean(id));
+    if (documentIds.length === 0) return;
+    setAnalyzeError(null);
+    try {
+      const failedIds = reviewItems
+        .filter((item) => item.documento_id && ["failed", "ignored"].includes(item.documento_status ?? ""))
+        .map((item) => item.documento_id as string);
+      if (failedIds.length > 0) {
+        await api.post("/upload/reprocess", { ids: failedIds });
+      }
+      await api.post<{ processed: number; job_ids: string[] }>("/upload/process?limit=8");
+      const docsRes = await api.get<DocumentoRegulatorioListResponse>(
+        `/upload/documentos?ids=${encodeURIComponent(documentIds.join(","))}&limit=500`
+      );
+      const docsById = new Map(docsRes.data.map((doc, index) => [doc.id, documentToReviewItem(doc, index)]));
+      setReviewItems((prev) => prev.map((item) =>
+        item.documento_id && docsById.has(item.documento_id) ? docsById.get(item.documento_id)! : item
+      ));
+    } catch (err) {
+      setAnalyzeError(err instanceof Error ? err.message : "Erro ao processar pendentes");
+    }
+  }
+
+  const isReadyForConfirmation = (item: ReviewItem) =>
+    !item.documento_status || ["review_pending", "confirmed"].includes(item.documento_status);
+  const activeItems = reviewItems.filter((r) => !r.rejected && r.status !== "error" && isReadyForConfirmation(r));
   const activeItemsWithoutAgency = activeItems.filter((item) => !item.agencia_id_detected && !agenciaId);
 
   // ── Etapa 4: Confirmar ───────────────────────────────────────────────
@@ -1139,6 +1301,12 @@ export default function UploadPage() {
           queryClient.invalidateQueries();
         } catch { /* sync non-critical */ }
       }
+      queryClient.invalidateQueries({ queryKey: ["deliberacoes"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard"] });
+      queryClient.invalidateQueries({ queryKey: ["diretores"] });
+      queryClient.invalidateQueries({ queryKey: ["votacao"] });
+      queryClient.invalidateQueries({ queryKey: ["monitoramento"] });
+      queryClient.invalidateQueries();
       setConfirmResults(res);
       setStage("done");
     } catch (err) {
@@ -1316,6 +1484,14 @@ export default function UploadPage() {
           {/* Botão Analisar */}
           {queue.length > 0 && stage === "queue" && (
             <div className="flex justify-end">
+              <button
+                onClick={handleClearTestQueue}
+                disabled={clearQueueLoading || demoEnabled}
+                className="btn-secondary mr-2"
+              >
+                {clearQueueLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
+                Limpar fila de testes
+              </button>
               <button onClick={handleAsyncAnalyze} className="btn-primary">
                 <Upload className="w-4 h-4" />
                 Analisar {queue.length} arquivo{queue.length !== 1 ? "s" : ""}
@@ -1342,8 +1518,21 @@ export default function UploadPage() {
                   {reviewItems.filter((r) => r.is_duplicate).length} duplicados ·{" "}
                   {reviewItems.filter((r) => r.status === "error").length} com erro
                 </p>
+                <p className="text-xs text-text-label mt-1">
+                  {reviewItems.filter((r) => ["queued", "processing"].includes(r.documento_status ?? "")).length} na fila/processando ·{" "}
+                  {reviewItems.filter((r) => r.documento_status === "review_pending").length} prontos para revisão ·{" "}
+                  {reviewItems.filter((r) => r.documento_status === "failed").length} falharam
+                </p>
               </div>
               <div className="flex items-center gap-3">
+                <button
+                  onClick={handleProcessPendingReviewItems}
+                  disabled={stage === "confirming" || demoEnabled}
+                  className="btn-secondary text-xs"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" />
+                  Processar pendentes
+                </button>
                 <button
                   onClick={resetAll}
                   disabled={stage === "confirming"}
@@ -1351,6 +1540,14 @@ export default function UploadPage() {
                 >
                   <RefreshCw className="w-3.5 h-3.5" />
                   Novo Upload
+                </button>
+                <button
+                  onClick={handleClearTestQueue}
+                  disabled={stage === "confirming" || clearQueueLoading || demoEnabled}
+                  className="btn-secondary text-xs"
+                >
+                  {clearQueueLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Trash2 className="w-3.5 h-3.5" />}
+                  Limpar fila
                 </button>
                 <button
                   onClick={handleConfirm}
@@ -1391,6 +1588,7 @@ export default function UploadPage() {
                 item={item}
                 onUpdate={updateReviewItem}
                 onReject={toggleReject}
+                onReprocess={handleReprocessItem}
               />
             ))}
           </div>

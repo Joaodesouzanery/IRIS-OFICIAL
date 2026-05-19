@@ -189,7 +189,16 @@ export interface UploadJobResult {
   filename: string;
   job_id: string | null;
   document_id?: string | null;
-  status: "queued" | "done" | "duplicate" | "rejected" | "error";
+  status:
+    | "queued"
+    | "done"
+    | "duplicate"
+    | "existing_pending"
+    | "existing_failed"
+    | "existing_review"
+    | "duplicate_confirmed"
+    | "rejected"
+    | "error";
   message?: string;
 }
 
@@ -621,6 +630,8 @@ export interface MonitoramentoSite {
   nome: string;
   url: string;
   estrategia: MonitoramentoEstrategia;
+  tipo_fonte?: "documentos_regulatorios" | "noticias" | "institucional";
+  auto_enfileirar_pdf?: boolean;
   seletor_links: string;
   ativo: boolean;
   ultimo_check: string | null;
@@ -642,6 +653,9 @@ export interface MonitoramentoItem {
   reuniao: string | null;
   data_reuniao: string | null;
   status: MonitoramentoItemStatus;
+  upload_job_id?: string | null;
+  documento_id?: string | null;
+  enfileirado_em?: string | null;
   first_seen_at: string;
   last_seen_at: string;
   metadata?: Record<string, unknown>;
@@ -672,6 +686,7 @@ export interface MonitoramentoRun {
   status: "running" | "ok" | "error" | "needs_headless";
   itens_encontrados: number;
   novos_itens: number;
+  documentos_enfileirados?: number;
   error_message: string | null;
   site?: { nome: string } | null;
 }
@@ -685,6 +700,7 @@ export interface MonitoramentoCheckResponse {
     status: "ok" | "error" | "needs_headless";
     itens_encontrados: number;
     novos_itens: number;
+    documentos_enfileirados?: number;
     error?: string;
   }>;
 }

@@ -32,8 +32,10 @@ export async function analyzeUploadPdf(input: {
   file: UploadAnalysisInput;
   agencias: UploadAnalysisAgency[];
   db?: any | null;
+  currentDocumentoId?: string | null;
+  currentUploadJobId?: string | null;
 }): Promise<PreviewResult> {
-  const { file, agencias, db } = input;
+  const { file, agencias, db, currentDocumentoId = null, currentUploadJobId = null } = input;
 
   if (!isPdfBuffer(file.buffer)) {
     return {
@@ -55,7 +57,7 @@ export async function analyzeUploadPdf(input: {
       .eq("file_hash", file_hash)
       .maybeSingle();
 
-    if (existingDoc) {
+    if (existingDoc && existingDoc.id !== currentDocumentoId && existingDoc.status === "confirmed") {
       is_duplicate = true;
       duplicate_job_id = (existingDoc.upload_job_id as string | null) ?? (existingDoc.id as string);
     } else {
@@ -64,7 +66,7 @@ export async function analyzeUploadPdf(input: {
         .select("id, status")
         .eq("file_hash", file_hash)
         .maybeSingle();
-      if (existingJob) {
+      if (existingJob && existingJob.id !== currentUploadJobId && existingJob.status === "done") {
         is_duplicate = true;
         duplicate_job_id = existingJob.id as string;
       }

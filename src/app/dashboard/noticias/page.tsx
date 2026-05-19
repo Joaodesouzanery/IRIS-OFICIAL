@@ -56,6 +56,16 @@ interface NewsletterDocumentConfig {
   envioAutomatico: boolean;
 }
 
+type NoticiasHealth = {
+  cron: string;
+  sources: Array<{
+    agencia_sigla: string;
+    total: number;
+    recent_7d: number;
+    last_seen_at: string | null;
+  }>;
+};
+
 const NEWSLETTER_CONFIG_KEY = "iris_newsletter_document_config";
 
 const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
@@ -102,6 +112,11 @@ export default function NoticiasPage() {
   const { data: scheduleData } = useQuery({
     queryKey: ["noticias", "newsletter-schedule"],
     queryFn: () => api.get<{ schedules: RegulatoryNewsletterSchedule[]; due_tomorrow: boolean }>("/noticias/newsletter/schedule"),
+  });
+
+  const { data: healthData } = useQuery({
+    queryKey: ["noticias", "health"],
+    queryFn: () => api.get<NoticiasHealth>("/noticias/health"),
   });
 
   const collectMutation = useMutation({
@@ -270,6 +285,26 @@ export default function NoticiasPage() {
           {collectMutation.error instanceof Error ? collectMutation.error.message : "Erro ao coletar notícias"}
         </div>
       ) : null}
+
+      <div className="card">
+        <div className="flex items-center justify-between gap-3">
+          <p className="section-label">Saúde da coleta diária</p>
+          <span className="text-xs text-text-label font-mono">cron {healthData?.cron ?? "0 11 * * *"}</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3">
+          {(healthData?.sources ?? AGENCIAS.map((sigla) => ({ agencia_sigla: sigla, total: 0, recent_7d: 0, last_seen_at: null }))).map((source) => (
+            <div key={source.agencia_sigla} className="rounded-md border border-border bg-surface-secondary p-3">
+              <p className="text-sm font-medium text-text-primary">{source.agencia_sigla}</p>
+              <p className="text-xs text-text-muted mt-1">
+                {source.recent_7d} nos últimos 7 dias · {source.total} no histórico consultado
+              </p>
+              <p className="text-xs text-text-label mt-1">
+                Última visão: {source.last_seen_at ? new Date(source.last_seen_at).toLocaleString("pt-BR") : "sem registro"}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_420px] gap-6">
         <section className="space-y-4">

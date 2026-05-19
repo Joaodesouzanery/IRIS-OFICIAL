@@ -55,6 +55,8 @@ export async function processPdf(jobId: string): Promise<void> {
       },
       agencias: agencias ?? [],
       db,
+      currentDocumentoId: documentoId,
+      currentUploadJobId: job.id,
     });
 
     if (analysis.status === "error") {
@@ -67,6 +69,7 @@ export async function processPdf(jobId: string): Promise<void> {
         .from("documentos_regulatorios")
         .select("id")
         .eq("semantic_duplicate_key", analysis.semantic_duplicate_key)
+        .eq("status", "confirmed")
         .neq("id", documentoId)
         .limit(1)
         .maybeSingle();

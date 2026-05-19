@@ -17,6 +17,12 @@
     "src/app/api/v1/upload/documentos/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/upload/reprocess/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/upload/clear-test-queue/route.ts": {
+      "maxDuration": 120
+    },
     "src/app/api/v1/monitoramento/check/route.ts": {
       "maxDuration": 120
     },
@@ -39,6 +45,10 @@
     {
       "path": "/api/v1/antt/2026/collect",
       "schedule": "30 10 * * *"
+    },
+    {
+      "path": "/api/v1/upload/process",
+      "schedule": "0 12 * * *"
     },
     {
       "path": "/api/v1/mandatos/recalcular",

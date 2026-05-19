@@ -170,7 +170,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             .eq("file_hash", file_hash)
             .maybeSingle();
 
-          if (existing) {
+          if (existing?.status === "done") {
             is_duplicate = true;
             duplicate_job_id = existing.id as string;
           }

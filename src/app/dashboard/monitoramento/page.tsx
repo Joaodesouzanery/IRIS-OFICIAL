@@ -88,6 +88,8 @@ export default function MonitoramentoPage() {
       nome,
       url,
       seletor_links: "a[href]",
+      tipo_fonte: "documentos_regulatorios",
+      auto_enfileirar_pdf: true,
     }),
     onSuccess: () => {
       setNome("");
@@ -104,9 +106,13 @@ export default function MonitoramentoPage() {
 
   const stats = useMemo(() => {
     const unread = (alertas ?? []).filter((a) => !a.lido && !a.resolvido).length;
-    const needsHeadless = (sites ?? []).filter((s) => s.ultimo_status === "needs_headless").length;
+    const enfileirados = (alertas ?? []).filter((a) =>
+      a.tipo === "documento_enfileirado" || Boolean(a.item?.documento_id || a.item?.upload_job_id)
+    ).length;
+    const emRevisao = (alertas ?? []).filter((a) => a.item?.status === "em_revisao").length;
+    const importados = (alertas ?? []).filter((a) => a.item?.status === "importado").length;
     const errors = (sites ?? []).filter((s) => s.ultimo_status === "error").length;
-    return { unread, needsHeadless, errors, candidatos: (candidatos ?? []).length };
+    return { unread, enfileirados, emRevisao, importados, errors, candidatos: (candidatos ?? []).length };
   }, [alertas, candidatos, sites]);
 
   function handleCreate() {
@@ -123,7 +129,7 @@ export default function MonitoramentoPage() {
             <h1 className="text-xl font-semibold text-text-primary">Monitoramento</h1>
           </div>
           <p className="text-sm text-text-muted mt-1">
-            Detecte novas reunioes, pautas, atas, deliberacoes, diretoria e mandatos. A importacao continua revisavel.
+            Detecte novas pautas, atas, votos, deliberações e reuniões. PDFs oficiais entram automaticamente na fila de revisão.
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -161,22 +167,22 @@ export default function MonitoramentoPage() {
       ) : null}
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-        <Metric label="Sites ativos" value={(sites ?? []).filter((s) => s.ativo).length} />
-        <Metric label="Alertas abertos" value={stats.unread} tone={stats.unread ? "warning" : "success"} />
-        <Metric label="Pedem headless" value={stats.needsHeadless} tone={stats.needsHeadless ? "warning" : "default"} />
-        <Metric label="Diretores pendentes" value={stats.candidatos} tone={stats.candidatos ? "warning" : "success"} />
+        <Metric label="Novos documentos" value={stats.unread} tone={stats.unread ? "warning" : "success"} />
+        <Metric label="Enfileirados" value={stats.enfileirados} tone={stats.enfileirados ? "warning" : "default"} />
+        <Metric label="Em revisão" value={stats.emRevisao} tone={stats.emRevisao ? "warning" : "default"} />
+        <Metric label="Importados" value={stats.importados} tone={stats.importados ? "success" : "default"} />
       </div>
 
       <div className="card space-y-3">
-        <p className="section-label">Novo site monitorado</p>
+        <p className="section-label">Nova fonte oficial de documentos</p>
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1.2fr_auto] gap-3">
           <select className="input" value={agenciaId} onChange={(e) => setAgenciaId(e.target.value)}>
-            <option value="">Agencia opcional</option>
+            <option value="">Agência opcional</option>
             {(agencias ?? []).map((a) => (
               <option key={a.id} value={a.id}>{a.sigla} - {a.nome}</option>
             ))}
           </select>
-          <input className="input" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome do monitor" />
+          <input className="input" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Ex: ANM - Atas da Diretoria" />
           <input className="input" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="https://..." />
           <button
             onClick={handleCreate}
@@ -203,10 +209,10 @@ export default function MonitoramentoPage() {
                     <div className="min-w-0">
                       <p className="text-sm font-medium text-text-primary truncate">{alerta.titulo}</p>
                       <p className="text-xs text-text-muted mt-0.5">
-                        {alerta.agencia?.sigla ?? "Agencia nao definida"} · {alerta.site?.nome ?? "Site"}
+                        {alerta.agencia?.sigla ?? "Agência não definida"} · {alerta.site?.nome ?? "Site"}
                       </p>
                     </div>
-                    <StatusBadge label={alerta.resolvido ? "resolvido" : alerta.lido ? "lido" : "novo"} />
+                    <StatusBadge label={alerta.tipo === "documento_enfileirado" ? "enfileirado" : alerta.resolvido ? "resolvido" : alerta.lido ? "lido" : "novo"} />
                   </div>
                   <div className="flex items-center gap-2">
                     <a href={alerta.url_item} target="_blank" rel="noreferrer" className="btn-secondary text-xs">
@@ -214,7 +220,7 @@ export default function MonitoramentoPage() {
                       Abrir documento
                     </a>
                     <a href="/dashboard/upload" className="btn-primary text-xs">
-                      Revisar/importar
+                      Revisar fila
                     </a>
                   </div>
                 </div>
@@ -250,7 +256,7 @@ export default function MonitoramentoPage() {
                     <StatusBadge label={site.ultimo_status} />
                   </div>
                   <p className="text-xs text-text-label mt-2">
-                    {site.agencia?.sigla ?? "Todas"} · {site.estrategia} · ultimo check: {site.ultimo_check ? new Date(site.ultimo_check).toLocaleString("pt-BR") : "nunca"}
+                    {site.agencia?.sigla ?? "Todas"} · {site.tipo_fonte ?? "documentos"} · {site.estrategia} · último check: {site.ultimo_check ? new Date(site.ultimo_check).toLocaleString("pt-BR") : "nunca"}
                   </p>
                   <button
                     onClick={() => testMutation.mutate(site.id)}
@@ -283,7 +289,7 @@ export default function MonitoramentoPage() {
                   <div key={candidato.id} className="border border-border rounded-card p-3">
                     <p className="text-sm font-medium text-text-primary">{candidato.nome_detectado}</p>
                     <p className="text-xs text-text-muted mt-1">
-                      {candidato.agencia?.sigla ?? "Agencia nao definida"} · fonte: {candidato.source_type} · {Math.round(candidato.confidence * 100)}%
+                      {candidato.agencia?.sigla ?? "Agência não definida"} · fonte: {candidato.source_type} · {Math.round(candidato.confidence * 100)}%
                     </p>
                     <p className="text-xs text-text-label mt-2">
                       LGPD: somente nome, cargo/funcao publica, mandato e fonte oficial; sem CPF ou contato.
@@ -295,7 +301,7 @@ export default function MonitoramentoPage() {
           </div>
 
           <div className="card space-y-3">
-            <p className="section-label">Historico de execucoes</p>
+            <p className="section-label">Histórico de execuções</p>
             <div className="space-y-2 max-h-72 overflow-y-auto">
               {(runs ?? []).length === 0 ? (
                 <Empty text="Nenhuma execucao registrada." />
@@ -339,7 +345,7 @@ function Metric({ label, value, tone = "default" }: { label: string; value: numb
 
 function StatusBadge({ label }: { label: string }) {
   const normalized = label.replace("-", "_");
-  const ok = ["ok", "importado", "resolvido", "aprovado"].includes(normalized);
+  const ok = ["ok", "importado", "resolvido", "aprovado", "enfileirado"].includes(normalized);
   const warning = ["novo", "never", "running", "needs_headless", "needs-headless", "pendente"].includes(label);
   return (
     <span className={cn(

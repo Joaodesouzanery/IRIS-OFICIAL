@@ -12,6 +12,7 @@ import { findBestMatch, normalizeName } from "@/lib/server/name-matcher";
 import { requireAdmin } from "@/lib/server/request-guards";
 import {
   buildVotoRows,
+  buildVotoRowsFromSuggestions,
   getActiveDiretoresForVote,
   shouldInferVotesFromMandate,
   type DiretorVoteRecord,
@@ -483,22 +484,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
             const itemVotingNames = item.votos_detectados ?? [];
             if (child) {
-              const votoRows = buildVotoRows({
-                deliberacao_id: child.id as string,
-                nomes: itemVotingNames,
-                nomesContra: item.votos_contra_detectados ?? [],
-                nomesAusente: item.votos_ausentes_detectados ?? [],
-                diretoresList,
-                activeDiretoresList,
-                inferFromMandate: shouldInferVotesFromMandate({
-                  resultado: item.resultado,
-                  tipo_documento: "ata",
-                  import_counts_as_final: Boolean(item.resultado),
-                  unanimidadeDetectada: item.unanimidade_detectada,
+              const votoRows = item.votos_sugeridos?.length
+                ? buildVotoRowsFromSuggestions({
+                  deliberacao_id: child.id as string,
+                  votosSugeridos: item.votos_sugeridos,
+                })
+                : buildVotoRows({
+                  deliberacao_id: child.id as string,
                   nomes: itemVotingNames,
                   nomesContra: item.votos_contra_detectados ?? [],
-                }),
-              });
+                  nomesAusente: item.votos_ausentes_detectados ?? [],
+                  diretoresList,
+                  activeDiretoresList,
+                  inferFromMandate: shouldInferVotesFromMandate({
+                    resultado: item.resultado,
+                    tipo_documento: "ata",
+                    import_counts_as_final: Boolean(item.resultado),
+                    unanimidadeDetectada: item.unanimidade_detectada,
+                    nomes: itemVotingNames,
+                    nomesContra: item.votos_contra_detectados ?? [],
+                  }),
+                });
 
               if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
             }
@@ -572,22 +578,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
         }
 
-        const votoRows = buildVotoRows({
-          deliberacao_id: delib.id as string,
-          nomes: votingNames,
-          nomesContra: d.nomes_votacao_contra,
-          nomesAusente: d.nomes_votacao_ausente ?? [],
-          diretoresList,
-          activeDiretoresList,
-          inferFromMandate: shouldInferVotesFromMandate({
-            resultado: d.resultado,
-            tipo_documento: d.tipo_documento,
-            import_counts_as_final: d.import_counts_as_final,
-            unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
+        const votoRows = (d.votos_sugeridos ?? []).length
+          ? buildVotoRowsFromSuggestions({
+            deliberacao_id: delib.id as string,
+            votosSugeridos: d.votos_sugeridos ?? [],
+          })
+          : buildVotoRows({
+            deliberacao_id: delib.id as string,
             nomes: votingNames,
             nomesContra: d.nomes_votacao_contra,
-          }),
-        });
+            nomesAusente: d.nomes_votacao_ausente ?? [],
+            diretoresList,
+            activeDiretoresList,
+            inferFromMandate: shouldInferVotesFromMandate({
+              resultado: d.resultado,
+              tipo_documento: d.tipo_documento,
+              import_counts_as_final: d.import_counts_as_final,
+              unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
+              nomes: votingNames,
+              nomesContra: d.nomes_votacao_contra,
+            }),
+          });
         if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
 
         await markDocumentReviewed(db, d.documento_id, "confirmed");
