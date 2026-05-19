@@ -18,7 +18,6 @@ const ALLOWED_PATCH_FIELDS = new Set([
   "assunto",
   "processo",
   "microtema",
-  "area_regulatoria",
   "resultado",
   "pauta_interna",
   "resumo_pleito",

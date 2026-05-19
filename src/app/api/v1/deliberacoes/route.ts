@@ -14,7 +14,6 @@ const VALID_SORT_COLUMNS = new Set([
   "data_reuniao",
   "numero_deliberacao",
   "microtema",
-  "area_regulatoria",
   "resultado",
   "interessado",
   "tipo_documento",
@@ -69,7 +68,7 @@ export async function GET(req: NextRequest) {
     .from("deliberacoes")
     .select(
       `id, numero_deliberacao, reuniao_ordinaria, data_reuniao,
-       interessado, processo, microtema, area_regulatoria, resultado, pauta_interna,
+       interessado, processo, microtema, resultado, pauta_interna,
        extraction_confidence, agencia_id, created_at,
        tipo_documento, relator, item_numero, documento_pai_id, assunto,
        upload_job_id, raw_extraction,
@@ -132,8 +131,9 @@ export async function GET(req: NextRequest) {
   const microtema = searchParams.get("microtema");
   if (microtema) query = query.eq("microtema", microtema);
 
-  const areaRegulatoria = searchParams.get("area_regulatoria");
-  if (areaRegulatoria) query = query.eq("area_regulatoria", areaRegulatoria);
+  // A coluna area_regulatoria é opcional em ambientes que ainda não receberam
+  // a migration 011. O filtro permanece na UI, mas a API não deve quebrar caso
+  // o banco de produção esteja defasado.
 
   const statusRevisao = searchParams.get("status_revisao");
   if (statusRevisao === "sem_anexo") query = query.is("upload_job_id", null);

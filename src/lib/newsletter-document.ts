@@ -43,7 +43,7 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
     main { width: 794px; max-width: 100%; margin: 0 auto; background: ${BRAND.white}; min-height: 1123px; }
     .cover { position: relative; display: grid; grid-template-columns: 42% 58%; min-height: 520px; background: ${BRAND.black}; color: ${BRAND.white}; overflow: hidden; }
     .cover-copy { padding: 42px 34px 34px; display: flex; flex-direction: column; justify-content: space-between; z-index: 2; }
-    .logo { width: 118px; height: auto; max-height: 92px; object-fit: contain; display: block; margin-bottom: 34px; }
+    .logo { width: 158px; height: auto; max-height: 116px; object-fit: contain; display: block; margin-bottom: 34px; }
     .label { margin: 0 0 16px; color: ${BRAND.gold}; font-size: 13px; line-height: 1; font-weight: 700; letter-spacing: .02em; }
     .brand { margin: 0; color: ${BRAND.white}; font-size: 37px; line-height: .9; font-weight: 900; letter-spacing: .02em; text-transform: uppercase; }
     .title { margin: 22px 0 0; color: ${BRAND.white}; font-size: 34px; line-height: 1.03; font-weight: 900; letter-spacing: 0; }

@@ -129,11 +129,11 @@ export default function DocumentosAssociadosPage() {
   function addScheduleEmail() {
     const email = scheduleEmailInput.trim();
     if (!/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(email)) {
-      setScheduleError("E-mail invalido");
+      setScheduleError("E-mail inválido");
       return;
     }
     if (scheduleEmails.includes(email)) {
-      setScheduleError("E-mail ja adicionado");
+      setScheduleError("E-mail já adicionado");
       return;
     }
     setScheduleEmails((prev) => [...prev, email]);
@@ -143,7 +143,7 @@ export default function DocumentosAssociadosPage() {
 
   function submitSchedule() {
     if (!scheduleEmails.length) {
-      setScheduleError("Adicione ao menos um destinatario");
+      setScheduleError("Adicione ao menos um destinatário");
       return;
     }
     createScheduleMutation.mutate();
@@ -157,7 +157,7 @@ export default function DocumentosAssociadosPage() {
         <div>
           <h1 className="text-xl font-semibold text-text-primary">Relatórios do Observatório</h1>
           <p className="text-sm text-text-muted mt-1">
-            Gere o Relatorio do Associado trimestral e o Relatorio Mensal regulatorio em HTML e PDF via impressao do navegador.
+            Gere o Relatório do Associado trimestral e o Relatório Mensal regulatório em HTML e PDF pela impressão do navegador.
           </p>
         </div>
         <button
@@ -172,14 +172,14 @@ export default function DocumentosAssociadosPage() {
 
       {demoEnabled && (
         <div className="card border-warning/30 bg-warning/10 py-2 px-3 text-sm text-warning">
-          Modo DEMO ativo: geracao e agendamento de relatorios ficam bloqueados em somente leitura.
+          Modo DEMO ativo: geração e agendamento de relatórios ficam bloqueados em somente leitura.
         </div>
       )}
 
       <section className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6">
         <div className="space-y-4">
           <div className="card space-y-3">
-            <p className="section-label">Filtros do relatorio</p>
+            <p className="section-label">Filtros do relatório</p>
             <label className="space-y-1 block">
               <span className="text-xs text-text-label font-mono uppercase">Associado</span>
               <select className="input" value={selectedAssociado?.id ?? ""} onChange={(e) => setAssociadoId(e.target.value)}>
@@ -204,7 +204,7 @@ export default function DocumentosAssociadosPage() {
             </div>
             <div className="grid grid-cols-2 gap-2">
               <label className="space-y-1 block">
-                <span className="text-xs text-text-label font-mono uppercase">Inicio</span>
+                <span className="text-xs text-text-label font-mono uppercase">Início</span>
                 <input className="input" type="date" value={periodoInicio} onChange={(e) => setPeriodoInicio(e.target.value)} />
               </label>
               <label className="space-y-1 block">
@@ -220,7 +220,7 @@ export default function DocumentosAssociadosPage() {
               <p className="text-sm font-medium text-text-primary">{selectedAssociado.setor}</p>
               <p className="text-xs text-text-muted">{selectedAssociado.descricao}</p>
               <TagList label="Agencias" values={selectedAssociado.agencia_siglas} />
-              <TagList label="Ministerios" values={selectedAssociado.ministerios} />
+              <TagList label="Ministérios" values={selectedAssociado.ministerios} />
               <TagList label="Palavras-chave" values={selectedAssociado.palavras_chave.slice(0, 8)} />
             </div>
           )}
@@ -254,9 +254,9 @@ export default function DocumentosAssociadosPage() {
           </div>
 
           <div className="card space-y-3">
-            <p className="section-label">Historico de relatorios</p>
+            <p className="section-label">Histórico de relatórios</p>
             {historico.length === 0 ? (
-              <p className="text-sm text-text-muted">Nenhum relatorio salvo ainda.</p>
+              <p className="text-sm text-text-muted">Nenhum relatório salvo ainda.</p>
             ) : (
               historico.map((doc) => (
                 <div key={doc.id} className="border border-border rounded-card p-3">
@@ -291,7 +291,7 @@ export default function DocumentosAssociadosPage() {
                   </select>
                 </label>
                 <div className="space-y-2">
-                  <span className="text-xs text-text-label font-mono uppercase">Destinatarios</span>
+                  <span className="text-xs text-text-label font-mono uppercase">Destinatários</span>
                   <div className="flex gap-2">
                     <input
                       className="input flex-1"
@@ -336,7 +336,7 @@ export default function DocumentosAssociadosPage() {
                     {schedule.tipo === "relatorio_trimestral" ? "Trimestral" : "Mensal"} dia {schedule.dia_mes}
                   </p>
                   <p className="text-xs text-text-muted truncate">
-                    Proximo: {new Date(schedule.proximo_envio).toLocaleDateString("pt-BR")} · {schedule.destinatarios.join(", ")}
+                    Próximo: {new Date(schedule.proximo_envio).toLocaleDateString("pt-BR")} · {schedule.destinatarios.join(", ")}
                   </p>
                 </div>
                 <button
@@ -371,8 +371,8 @@ export default function DocumentosAssociadosPage() {
           {preview ? (
             <>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-2 p-4 border-b border-border">
-                <Metric label="Decisoes" value={preview.metricas.deliberacoes} />
-                <Metric label="Noticias" value={preview.metricas.noticias} />
+                <Metric label="Decisões" value={preview.metricas.deliberacoes} />
+                <Metric label="Notícias" value={preview.metricas.noticias} />
                 <Metric label="Mandatos" value={preview.metricas.mandatos} />
                 <Metric label="Lista" value={preview.metricas.lista_triplice} />
                 <Metric label="IA" value={`${Math.round(preview.metricas.confianca_cenarios * 100)}%`} />
@@ -381,7 +381,7 @@ export default function DocumentosAssociadosPage() {
                 <div className="m-4 border border-warning/30 bg-warning/10 rounded-card p-3">
                   <div className="flex items-center gap-2 text-warning mb-2">
                     <AlertTriangle className="w-4 h-4" />
-                    <p className="text-sm font-medium">Pendencias antes de circular · {preview.qualidade.score}/100</p>
+                    <p className="text-sm font-medium">Pendências antes de circular · {preview.qualidade.score}/100</p>
                   </div>
                   <ul className="space-y-1">
                     {preview.qualidade.pendencias.map((pendencia) => (
@@ -402,8 +402,8 @@ export default function DocumentosAssociadosPage() {
             <div className="h-[72vh] flex items-center justify-center text-center p-8">
               <div>
                 <FileText className="w-10 h-10 mx-auto text-text-muted mb-3" />
-                <p className="text-sm text-text-primary font-medium">Gere um relatorio para visualizar o preview.</p>
-                <p className="text-xs text-text-muted mt-1">A primeira versao salva rascunho, permite HTML e PDF via impressao.</p>
+                <p className="text-sm text-text-primary font-medium">Gere um relatório para visualizar o preview.</p>
+                <p className="text-xs text-text-muted mt-1">A primeira versão salva rascunho, permite HTML e PDF via impressão.</p>
               </div>
             </div>
           )}

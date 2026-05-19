@@ -29,17 +29,17 @@ export const DEMO_ASSOCIADOS: Associado[] = [
   },
   {
     id: "assoc-metro-sp",
-    nome: "Metro de Sao Paulo",
-    setor: "Metroviario",
-    descricao: "Mapeamento regulatorio para temas metroviarios em ARTESP/ANTT.",
+    nome: "Metrô de São Paulo",
+    setor: "Metroviário",
+    descricao: "Mapeamento regulatório para temas metroviários em ARTESP/ANTT.",
     agencia_siglas: ["ARTESP", "ANTT"],
-    ministerios: ["Ministerio dos Transportes"],
+    ministerios: ["Ministério dos Transportes"],
     ministerio_urls: ["https://www.gov.br/transportes/pt-br/assuntos/noticias"],
     microtemas: ["tarifa", "contrato", "obras", "fiscalizacao", "usuario", "seguranca"],
-    palavras_chave: ["metro", "metroviario", "ferrovia", "trilhos", "transporte publico", "concessao", "mobilidade"],
+    palavras_chave: ["metrô", "metroviário", "ferrovia", "trilhos", "transporte público", "concessão", "mobilidade"],
     vp_nome: "VP a definir",
-    vp_cargo: "Vice-presidencia",
-    vp_minibio: "Mini bio pendente de curadoria. Preencher com fonte oficial antes de distribuir o relatorio.",
+    vp_cargo: "Vice-presidência",
+    vp_minibio: "Mini bio pendente de curadoria. Preencher com fonte oficial antes de distribuir o relatório.",
     vp_foto_url: null,
     ativo: true,
     created_at: new Date().toISOString(),
@@ -48,16 +48,16 @@ export const DEMO_ASSOCIADOS: Associado[] = [
   {
     id: "assoc-simineral",
     nome: "Simineral",
-    setor: "Mineracao",
-    descricao: "Mapeamento regulatorio para mineracao, ANM e politica publica mineral.",
+    setor: "Mineração",
+    descricao: "Mapeamento regulatório para mineração, ANM e política pública mineral.",
     agencia_siglas: ["ANM"],
-    ministerios: ["Ministerio de Minas e Energia"],
+    ministerios: ["Ministério de Minas e Energia"],
     ministerio_urls: ["https://www.gov.br/mme/pt-br/assuntos/noticias"],
     microtemas: ["lavra", "pesquisa", "licenciamento", "servidao", "cfem", "disponibilidade", "recursos"],
-    palavras_chave: ["mineracao", "mineral", "minerais criticos", "lavra", "pesquisa mineral", "para", "simineral"],
+    palavras_chave: ["mineração", "mineral", "minerais críticos", "lavra", "pesquisa mineral", "pará", "simineral"],
     vp_nome: "VP a definir",
-    vp_cargo: "Vice-presidencia",
-    vp_minibio: "Mini bio pendente de curadoria. Preencher com fonte oficial antes de distribuir o relatorio.",
+    vp_cargo: "Vice-presidência",
+    vp_minibio: "Mini bio pendente de curadoria. Preencher com fonte oficial antes de distribuir o relatório.",
     vp_foto_url: null,
     ativo: true,
     created_at: new Date().toISOString(),
@@ -100,8 +100,8 @@ export function buildAssociadoDocument(input: BuildAssociadoDocumentInput): Docu
     concordanciaCount: concordancia.length,
   });
   const titulo = input.tipo === "relatorio_trimestral"
-    ? `Relatorio do Associado trimestral - ${input.associado.nome}`
-    : `Relatorio Mensal regulatorio - ${input.associado.nome}`;
+    ? `Relatório do Associado trimestral - ${input.associado.nome}`
+    : `Relatório Mensal regulatório - ${input.associado.nome}`;
 
   const html = buildHtml({
     ...input,
@@ -200,13 +200,13 @@ function buildCenarios(delibs: Deliberacao[], noticias: MonitoramentoItem[], ass
   const deferidos = delibs.filter((d) => d.resultado === "Deferido" || d.resultado === "Aprovado").length;
   const restritivos = delibs.filter((d) => d.resultado === "Indeferido" || d.resultado === "Retirado de Pauta").length;
   const confidence = Math.min(0.9, Math.max(0.35, (delibs.length * 0.08) + (noticias.length * 0.04)));
-  const base = `${delibs.length} decisoes regulatorio-administrativas e ${noticias.length} noticias de politica publica monitoradas.`;
-  const tendency = deferidos >= restritivos ? "continuidade regulatoria com viés de aprovacao quando ha aderencia documental" : "maior cautela decisoria e risco de exigencias adicionais";
+  const base = `${delibs.length} decisões regulatório-administrativas e ${noticias.length} notícias de política pública monitoradas.`;
+  const tendency = deferidos >= restritivos ? "continuidade regulatória com viés de aprovação quando há aderência documental" : "maior cautela decisória e risco de exigências adicionais";
 
   return {
-    provavel: `Cenario provavel: ${tendency} para ${associado.setor.toLowerCase()}, considerando ${base}`,
-    alternativo: "Cenario alternativo: mudancas de prioridade ministerial ou agenda de fiscalizacao podem deslocar o foco para temas correlatos antes de novas decisoes finais.",
-    risco: "Cenario de risco: baixa cobertura documental, ausencia de ata recente ou conflito de fonte reduz a confiabilidade e exige revisao humana antes de circular.",
+    provavel: `Cenário provável: ${tendency} para ${associado.setor.toLowerCase()}, considerando ${base}`,
+    alternativo: "Cenário alternativo: mudanças de prioridade ministerial ou agenda de fiscalização podem deslocar o foco para temas correlatos antes de novas decisões finais.",
+    risco: "Cenário de risco: baixa cobertura documental, ausência de ata recente ou conflito de fonte reduz a confiabilidade e exige revisão humana antes de circular.",
     confianca: Math.round(confidence * 100) / 100,
   };
 }
@@ -221,12 +221,12 @@ function assessQuality(input: {
   const vpPlaceholder = normalize(`${input.associado.vp_nome ?? ""} ${input.associado.vp_minibio ?? ""}`).includes("a definir")
     || normalize(input.associado.vp_minibio ?? "").includes("pendente");
 
-  if (input.metricas.deliberacoes === 0) pendencias.push("Sem deliberacoes relevantes no periodo.");
-  if (input.metricas.noticias === 0) pendencias.push("Sem noticias ou atos monitorados correlatos no periodo.");
-  if (input.concordanciaCount === 0) pendencias.push("Sem votos suficientes para calcular concordancia dos diretores.");
-  if (input.tipo === "relatorio_trimestral" && input.metricas.mandatos === 0) pendencias.push("Sem mandatos cadastrados para as agencias do associado.");
-  if (input.tipo === "relatorio_trimestral" && input.metricas.lista_triplice === 0) pendencias.push("Sem lista triplice revisada/cadastrada.");
-  if (vpPlaceholder) pendencias.push("Visao VP, mini bio ou foto ainda precisam de curadoria.");
+  if (input.metricas.deliberacoes === 0) pendencias.push("Sem deliberações relevantes no período.");
+  if (input.metricas.noticias === 0) pendencias.push("Sem notícias ou atos monitorados correlatos no período.");
+  if (input.concordanciaCount === 0) pendencias.push("Sem votos suficientes para calcular concordância dos diretores.");
+  if (input.tipo === "relatorio_trimestral" && input.metricas.mandatos === 0) pendencias.push("Sem mandatos cadastrados para as agências do associado.");
+  if (input.tipo === "relatorio_trimestral" && input.metricas.lista_triplice === 0) pendencias.push("Sem lista tríplice revisada/cadastrada.");
+  if (vpPlaceholder) pendencias.push("Visão VP, mini bio ou foto ainda precisam de curadoria.");
 
   const penalty = Math.min(80, pendencias.length * 18);
   const dataBonus = Math.min(20, input.metricas.deliberacoes * 4 + input.metricas.noticias * 2);
@@ -304,10 +304,10 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
     <section>
       <h2>Resumo Executivo</h2>
       <div class="grid">
-        <div class="metric"><span>Decisoes</span><b>${input.deliberacoes.length}</b></div>
-        <div class="metric"><span>Noticias</span><b>${input.noticias.length}</b></div>
+        <div class="metric"><span>Decisões</span><b>${input.deliberacoes.length}</b></div>
+        <div class="metric"><span>Notícias</span><b>${input.noticias.length}</b></div>
         <div class="metric"><span>Mandatos</span><b>${input.mandatos.length}</b></div>
-        <div class="metric"><span>Confianca IA</span><b>${Math.round(input.cenarios.confianca * 100)}%</b></div>
+        <div class="metric"><span>Confiança IA</span><b>${Math.round(input.cenarios.confianca * 100)}%</b></div>
       </div>
       <p>${escapeHtml(input.associado.descricao ?? "Documento gerado a partir das fontes regulatorio-institucionais monitoradas.")}</p>
       <p class="muted">Temas acompanhados: ${escapeHtml(input.associado.microtemas.join(", ") || "nao informados")}.</p>
@@ -316,7 +316,7 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
     </section>
 
     <section>
-      <h2>${isQuarterly ? "Mandatos e Lista Triplice" : "Decisoes, Pautas e Votos do Mes"}</h2>
+      <h2>${isQuarterly ? "Mandatos e Lista Tríplice" : "Decisões, Pautas e Votos do Mês"}</h2>
       ${isQuarterly ? renderMandatos(input.mandatos, input.listaTriplice) : renderMonthly(input.deliberacoes, input.noticias)}
     </section>
 
@@ -326,13 +326,13 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
     </section>
 
     <section>
-      <h2>Politica Publica e Noticias Correlatas</h2>
+      <h2>Política Pública e Notícias Correlatas</h2>
       ${renderNoticias(input.noticias)}
       ${renderMinisterios(input.associado)}
     </section>
 
     <section>
-      <h2>Visao VP</h2>
+      <h2>Visão VP</h2>
       <div class="vp">
         ${input.associado.vp_foto_url ? `<img src="${escapeHtml(input.associado.vp_foto_url)}" alt="${escapeHtml(input.associado.vp_nome ?? "VP")}" />` : ""}
         <div>
@@ -343,16 +343,16 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
     </section>
 
     <section>
-      <h2>Cenarios Cautelosos</h2>
-      <div class="scenario"><b>Provavel.</b> ${escapeHtml(input.cenarios.provavel)}</div>
+      <h2>Cenários Cautelosos</h2>
+      <div class="scenario"><b>Provável.</b> ${escapeHtml(input.cenarios.provavel)}</div>
       <div class="scenario"><b>Alternativo.</b> ${escapeHtml(input.cenarios.alternativo)}</div>
       <div class="scenario"><b>Risco.</b> ${escapeHtml(input.cenarios.risco)}</div>
     </section>
 
     <section>
       <h2>Fontes</h2>
-      <ol class="sources">${input.fontes.length ? input.fontes.map((f) => `<li>${escapeHtml(f.tipo)} · ${f.url ? `<a href="${escapeHtml(f.url)}">${escapeHtml(f.titulo)}</a>` : escapeHtml(f.titulo)}</li>`).join("") : "<li>Nenhuma fonte especifica encontrada no periodo.</li>"}</ol>
-      <p class="muted">Projecoes sao cenarios analiticos, nao previsoes deterministicas. Revisar antes de circular.</p>
+      <ol class="sources">${input.fontes.length ? input.fontes.map((f) => `<li>${escapeHtml(f.tipo)} · ${f.url ? `<a href="${escapeHtml(f.url)}">${escapeHtml(f.titulo)}</a>` : escapeHtml(f.titulo)}</li>`).join("") : "<li>Nenhuma fonte específica encontrada no período.</li>"}</ol>
+      <p class="muted">Projeções são cenários analíticos, não previsões determinísticas. Revisar antes de circular.</p>
     </section>
   </div>
 </body>
@@ -361,11 +361,11 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
 
 function renderQuality(qualidade: DocumentoAssociadoPreview["qualidade"]) {
   if (!qualidade.pendencias.length) {
-    return `<p class="muted">Qualidade operacional: ${qualidade.score}/100. Sem pendencias criticas detectadas.</p>`;
+    return `<p class="muted">Qualidade operacional: ${qualidade.score}/100. Sem pendências críticas detectadas.</p>`;
   }
   return `
     <div class="warning">
-      <b>Pendencias antes de circular (${qualidade.score}/100 - ${escapeHtml(qualidade.status)}).</b>
+      <b>Pendências antes de circular (${qualidade.score}/100 - ${escapeHtml(qualidade.status)}).</b>
       <ul>${qualidade.pendencias.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
     </div>
   `;
@@ -380,9 +380,9 @@ function renderMandatos(mandatos: Mandato[], lista: ListaTripliceItem[]) {
   `).join("");
   return `
     <h3>Mandatos</h3>
-    <table><thead><tr><th>Diretor</th><th>Cargo</th><th>Inicio</th><th>Fim</th><th>Status</th></tr></thead><tbody>${mandatoRows || `<tr><td colspan="5" class="muted">Sem mandatos cadastrados para o recorte.</td></tr>`}</tbody></table>
-    <h3>Lista triplice</h3>
-    <table><thead><tr><th>Candidato</th><th>Cargo</th><th>Etapa</th><th>Confianca</th></tr></thead><tbody>${listaRows || `<tr><td colspan="4" class="muted">Sem lista triplice revisada/cadastrada.</td></tr>`}</tbody></table>
+    <table><thead><tr><th>Diretor</th><th>Cargo</th><th>Início</th><th>Fim</th><th>Status</th></tr></thead><tbody>${mandatoRows || `<tr><td colspan="5" class="muted">Sem mandatos cadastrados para o recorte.</td></tr>`}</tbody></table>
+    <h3>Lista tríplice</h3>
+    <table><thead><tr><th>Candidato</th><th>Cargo</th><th>Etapa</th><th>Confiança</th></tr></thead><tbody>${listaRows || `<tr><td colspan="4" class="muted">Sem lista tríplice revisada/cadastrada.</td></tr>`}</tbody></table>
   `;
 }
 
@@ -390,7 +390,7 @@ function renderDeliberacoes(delibs: Deliberacao[]) {
   const rows = delibs.slice(0, 10).map((d) => `
     <tr><td>${escapeHtml(d.data_reuniao ? formatDate(d.data_reuniao) : "-")}</td><td>${escapeHtml(d.numero_deliberacao ?? d.item_numero ?? "-")}</td><td>${escapeHtml(d.interessado ?? "-")}</td><td>${escapeHtml(d.assunto ?? d.microtema ?? "-")}</td><td>${escapeHtml(d.resultado ?? "-")}</td></tr>
   `).join("");
-  return `<table><thead><tr><th>Data</th><th>Doc</th><th>Interessado</th><th>Tema</th><th>Resultado</th></tr></thead><tbody>${rows || `<tr><td colspan="5" class="muted">Sem decisoes relevantes no periodo.</td></tr>`}</tbody></table>`;
+  return `<table><thead><tr><th>Data</th><th>Doc</th><th>Interessado</th><th>Tema</th><th>Resultado</th></tr></thead><tbody>${rows || `<tr><td colspan="5" class="muted">Sem decisões relevantes no período.</td></tr>`}</tbody></table>`;
 }
 
 function renderMonthly(delibs: Deliberacao[], items: MonitoramentoItem[]) {
@@ -399,10 +399,10 @@ function renderMonthly(delibs: Deliberacao[], items: MonitoramentoItem[]) {
     <tr><td>${escapeHtml(item.data_reuniao ? formatDate(item.data_reuniao) : "-")}</td><td><a href="${escapeHtml(item.url_item)}">${escapeHtml(item.titulo)}</a></td><td>${escapeHtml(item.tipo)}</td></tr>
   `).join("");
   return `
-    <h3>Decisoes do periodo</h3>
+    <h3>Decisões do período</h3>
     ${renderDeliberacoes(delibs)}
     <h3>Atas, pautas e atos monitorados</h3>
-    <table><thead><tr><th>Data</th><th>Documento</th><th>Tipo</th></tr></thead><tbody>${ataRows || `<tr><td colspan="3" class="muted">Sem atas ou pautas monitoradas no periodo.</td></tr>`}</tbody></table>
+    <table><thead><tr><th>Data</th><th>Documento</th><th>Tipo</th></tr></thead><tbody>${ataRows || `<tr><td colspan="3" class="muted">Sem atas ou pautas monitoradas no período.</td></tr>`}</tbody></table>
   `;
 }
 
@@ -416,7 +416,7 @@ function renderNoticias(items: MonitoramentoItem[]) {
     .filter((n) => n.tipo === "noticia" || n.tipo === "politica_publica" || n.tipo === "consulta_publica")
     .slice(0, 10)
     .map((n) => `<tr><td>${escapeHtml(n.data_reuniao ? formatDate(n.data_reuniao) : "-")}</td><td><a href="${escapeHtml(n.url_item)}">${escapeHtml(n.titulo)}</a><br/><span class="muted">${escapeHtml(String(n.metadata?.resumo ?? ""))}</span></td><td>${escapeHtml(n.tipo)}</td></tr>`).join("");
-  return `<table><thead><tr><th>Data</th><th>Noticia</th><th>Tipo</th></tr></thead><tbody>${rows || `<tr><td colspan="3" class="muted">Sem noticias correlatas no periodo.</td></tr>`}</tbody></table>`;
+  return `<table><thead><tr><th>Data</th><th>Notícia</th><th>Tipo</th></tr></thead><tbody>${rows || `<tr><td colspan="3" class="muted">Sem notícias correlatas no período.</td></tr>`}</tbody></table>`;
 }
 
 function renderMinisterios(associado: Associado) {
@@ -424,7 +424,7 @@ function renderMinisterios(associado: Associado) {
     const url = associado.ministerio_urls[index];
     return `<li>${escapeHtml(ministerio)}${url ? ` - <a href="${escapeHtml(url)}">${escapeHtml(url)}</a>` : ""}</li>`;
   }).join("");
-  return `<h3>Ministerios correlatos</h3><ul>${rows || "<li class=\"muted\">Nenhum ministerio correlato cadastrado.</li>"}</ul>`;
+  return `<h3>Ministérios correlatos</h3><ul>${rows || "<li class=\"muted\">Nenhum ministério correlato cadastrado.</li>"}</ul>`;
 }
 
 function buildVpParagraphs(input: BuildAssociadoDocumentInput & { deliberacoes: Deliberacao[]; noticias: MonitoramentoItem[] }) {
@@ -432,14 +432,14 @@ function buildVpParagraphs(input: BuildAssociadoDocumentInput & { deliberacoes: 
   if (manual.length) {
     return [
       ...manual,
-      ...Array.from({ length: Math.max(0, 3 - manual.length) }, () => "Paragrafo VP pendente de curadoria."),
+      ...Array.from({ length: Math.max(0, 3 - manual.length) }, () => "Parágrafo VP pendente de curadoria."),
     ].slice(0, 3);
   }
 
   return [
-    `No periodo, o recorte de ${input.associado.nome} reuniu ${input.deliberacoes.length} decisoes e ${input.noticias.length} sinais de politica publica, com foco em ${input.associado.microtemas.slice(0, 4).join(", ")}.`,
-    `A leitura executiva sugere acompanhar os temas com maior recorrencia e priorizar revisao das fontes oficiais antes de qualquer posicionamento institucional.`,
-    input.associado.vp_minibio ?? "Mini bio pendente de curadoria. Preencher com fonte oficial antes de distribuir o relatorio.",
+    `No período, o recorte de ${input.associado.nome} reuniu ${input.deliberacoes.length} decisões e ${input.noticias.length} sinais de política pública, com foco em ${input.associado.microtemas.slice(0, 4).join(", ")}.`,
+    `A leitura executiva sugere acompanhar os temas com maior recorrência e priorizar revisão das fontes oficiais antes de qualquer posicionamento institucional.`,
+    input.associado.vp_minibio ?? "Mini bio pendente de curadoria. Preencher com fonte oficial antes de distribuir o relatório.",
   ];
 }
 

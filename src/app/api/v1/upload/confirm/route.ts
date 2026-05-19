@@ -414,7 +414,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               agencia_id: effectiveAgenciaId,
               auto_classified: true,
               extraction_confidence: d.extraction_confidence,
-              area_regulatoria: d.area_regulatoria,
               upload_job_id: attachment.upload_job_id,
               raw_extraction: withAttachmentRaw(d.extraction_raw, attachment),
             })
@@ -454,7 +453,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 assunto: item.assunto,
                 relator: item.relator,
                 microtema: item.microtema,
-                area_regulatoria: item.area_regulatoria ?? d.area_regulatoria,
                 resultado: item.resultado,
                 pauta_interna: false,
                 data_reuniao: d.data_reuniao,
@@ -530,7 +528,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             relator: d.relator,
             item_numero: d.item_numero,
             microtema: d.microtema,
-            area_regulatoria: d.area_regulatoria,
             resultado: d.resultado,
             decisoes_todas: d.decisoes_todas.length > 0 ? d.decisoes_todas : null,
             pauta_interna: d.pauta_interna,
