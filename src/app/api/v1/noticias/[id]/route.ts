@@ -7,7 +7,7 @@ const STATUS = new Set<RegulatoryNewsStatus>(["novo", "selecionado", "ignorado",
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: any,
 ) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Curadoria indisponível em modo demo" }, { status: 403 });

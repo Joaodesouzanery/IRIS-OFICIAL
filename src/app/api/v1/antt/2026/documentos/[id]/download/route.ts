@@ -6,7 +6,7 @@ const SAFE_ID_RE = /^[0-9a-f-]{32,36}$/i;
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: any,
 ) {
   if (!SAFE_ID_RE.test(params.id)) {
     return NextResponse.json({ error: "ID invalido" }, { status: 400 });

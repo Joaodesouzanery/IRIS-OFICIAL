@@ -18,7 +18,7 @@ const DEMO_SITE = {
 
 export async function POST(
   _req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: any,
 ) {
   const guard = await requireAdmin(_req);
   if (guard) return guard;

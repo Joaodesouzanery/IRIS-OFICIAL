@@ -7,7 +7,7 @@ const STATUS_RE = /^(coletado|validado|em_revisao|importado|ignorado|erro)$/;
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: any,
 ) {
   const guard = await requireAdmin(req);
   if (guard) return guard;

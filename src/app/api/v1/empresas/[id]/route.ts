@@ -14,7 +14,7 @@ import { isDemoRequest } from "@/lib/server/request-guards";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const nome = decodeURIComponent(params.id);
 

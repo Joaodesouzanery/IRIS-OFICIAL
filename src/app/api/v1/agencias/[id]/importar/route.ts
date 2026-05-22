@@ -6,7 +6,7 @@ import { getCuratedAgenciaImport, mandatoPercentual } from "@/lib/server/agencia
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const guard = await requireAdmin(req);
   if (guard) return guard;

@@ -4,7 +4,7 @@ import { isDemoRequest } from "@/lib/server/request-guards";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: any,
 ) {
   if (isDemo() || isDemoRequest(req)) {
     return new NextResponse("<!doctype html><html><body><p>Documento demo nao persistido. Gere novamente pela tela de Documentos.</p></body></html>", {

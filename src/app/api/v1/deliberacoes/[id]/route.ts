@@ -27,7 +27,7 @@ const ALLOWED_PATCH_FIELDS = new Set([
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
@@ -77,7 +77,7 @@ export async function GET(
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const guard = await requireAdmin(req);
   if (guard) return guard;

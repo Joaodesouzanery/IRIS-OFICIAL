@@ -6,7 +6,7 @@ import { normalizeListaTriplicePayload } from "@/lib/server/agencias-crud";
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const db = createSupabaseServerClient();
   const { data, error } = await db
@@ -24,7 +24,7 @@ export async function GET(
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const guard = await requireAdmin(req);
   if (guard) return guard;

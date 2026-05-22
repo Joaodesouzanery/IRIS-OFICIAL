@@ -6,7 +6,7 @@ import { normalizeDiretorPayload, upsertCurrentMandato } from "@/lib/server/agen
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const guard = await requireAdmin(req);
   if (guard) return guard;
@@ -37,14 +37,14 @@ export async function PATCH(
 
 export async function PUT(
   req: NextRequest,
-  context: { params: { id: string } }
+  context: any
 ) {
   return PATCH(req, context);
 }
 
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const guard = await requireAdmin(req);
   if (guard) return guard;

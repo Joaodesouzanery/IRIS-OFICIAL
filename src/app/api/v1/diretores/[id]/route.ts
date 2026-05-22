@@ -17,7 +17,7 @@ const SAFE_ID_RE = /^[a-zA-Z0-9_-]+$/;
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   const { id } = params;
 
