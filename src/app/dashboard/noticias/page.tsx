@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { cn, formatDateLong } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { NOTICIAS_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
-import { buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
+import { buildMinutoRegulacaoDraftJson, buildMinutoRegulacaoPrompt, buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
 import type {
   RegulatoryNews,
   RegulatoryNewsCollectResponse,
@@ -15,6 +15,7 @@ import type {
   RegulatoryNewsletterEditionCreateResponse,
   RegulatoryNewsletterSchedule,
   RegulatoryNewsStatus,
+  NewsletterDocumentType,
 } from "@/types";
 import {
   CalendarClock,
@@ -54,6 +55,9 @@ interface NewsletterDocumentConfig {
   descricao: string;
   temas: string;
   envioAutomatico: boolean;
+  documentoTipo: NewsletterDocumentType;
+  diaSemana: string;
+  horaEnvio: string;
 }
 
 type NoticiasHealth = {
@@ -74,6 +78,9 @@ const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
   descricao: "Seleção das principais notícias regulatórias da semana, com fontes oficiais e contexto para acompanhamento dos associados.",
   temas: "",
   envioAutomatico: false,
+  documentoTipo: "newsletter_regulatoria",
+  diaSemana: "5",
+  horaEnvio: "09:00",
 };
 
 export default function NoticiasPage() {
@@ -85,12 +92,15 @@ export default function NoticiasPage() {
   const [customFrom, setCustomFrom] = useState("");
   const [customTo, setCustomTo] = useState("");
   const [search, setSearch] = useState("");
-  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [newsletterSelectedIds, setNewsletterSelectedIds] = useState<string[]>([]);
+  const [minutoSelectedIds, setMinutoSelectedIds] = useState<string[]>([]);
   const [documentConfig, setDocumentConfig] = useState<NewsletterDocumentConfig>(DEFAULT_NEWSLETTER_CONFIG);
   const [copied, setCopied] = useState(false);
   const [savedConfig, setSavedConfig] = useState(false);
   const [savedEditionId, setSavedEditionId] = useState<string | null>(null);
   const [baseUrl, setBaseUrl] = useState("");
+  const [minutoTextos, setMinutoTextos] = useState("");
+  const lastMinutoSelectionKey = useRef("");
 
   const params = new URLSearchParams();
   if (agencia) params.set("agencia", agencia);
@@ -111,7 +121,12 @@ export default function NoticiasPage() {
 
   const { data: scheduleData } = useQuery({
     queryKey: ["noticias", "newsletter-schedule"],
-    queryFn: () => api.get<{ schedules: RegulatoryNewsletterSchedule[]; due_tomorrow: boolean }>("/noticias/newsletter/schedule"),
+    queryFn: () => api.get<{
+      schedules: RegulatoryNewsletterSchedule[];
+      due_today: boolean;
+      due_tomorrow: boolean;
+      due_schedules: RegulatoryNewsletterSchedule[];
+    }>("/noticias/newsletter/schedule"),
   });
 
   const { data: healthData } = useQuery({
@@ -133,8 +148,8 @@ export default function NoticiasPage() {
   const scheduleMutation = useMutation({
     mutationFn: () => api.post<{ schedule: RegulatoryNewsletterSchedule }>("/noticias/newsletter/schedule", {
       nome: documentConfig.assunto || "Newsletter Regulatório",
-      dia_semana: 5,
-      hora_envio: "09:00",
+      dia_semana: Number(documentConfig.diaSemana),
+      hora_envio: documentConfig.horaEnvio,
       destinatarios: documentConfig.destinatarios
         .split(/[,\n;]/)
         .map((email) => email.trim())
@@ -152,16 +167,37 @@ export default function NoticiasPage() {
       destinatarios: splitList(documentConfig.destinatarios),
       temas: splitList(documentConfig.temas),
       noticia_ids: selectedIds,
+      documento_tipo: documentConfig.documentoTipo,
+      minuto_textos: splitMinutoTextos(minutoTextos),
+      minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
     }),
     onSuccess: (result) => setSavedEditionId(result.edition.id),
   });
 
   const noticias = useMemo(() => data?.data ?? [], [data?.data]);
+  const selectedIds = documentConfig.documentoTipo === "minuto_regulacao" ? minutoSelectedIds : newsletterSelectedIds;
+  const selectionSetter = documentConfig.documentoTipo === "minuto_regulacao" ? setMinutoSelectedIds : setNewsletterSelectedIds;
+  const newsletterSelected = useMemo(
+    () => newsletterSelectedIds
+      .map((id) => noticias.find((item) => item.id === id))
+      .filter((item): item is RegulatoryNews => Boolean(item)),
+    [noticias, newsletterSelectedIds],
+  );
+  const minutoSelected = useMemo(
+    () => minutoSelectedIds
+      .map((id) => noticias.find((item) => item.id === id))
+      .filter((item): item is RegulatoryNews => Boolean(item)),
+    [noticias, minutoSelectedIds],
+  );
   const selected = useMemo(
     () => selectedIds
       .map((id) => noticias.find((item) => item.id === id))
       .filter((item): item is RegulatoryNews => Boolean(item)),
     [noticias, selectedIds],
+  );
+  const minutoItems = useMemo(
+    () => parseMinutoItemsForSelection(minutoTextos, minutoSelected),
+    [minutoTextos, minutoSelected],
   );
   const html = useMemo(() => buildRegulatoryNewsletterHtml({
     assunto: documentConfig.assunto,
@@ -170,8 +206,18 @@ export default function NoticiasPage() {
     temas: splitList(documentConfig.temas),
     noticias: selected,
     baseUrl,
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.temas, selected]);
+    documento_tipo: documentConfig.documentoTipo,
+    minuto_textos: splitMinutoTextos(minutoTextos),
+    minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.temas, minutoItems, minutoTextos, selected]);
   const documentHtml = html;
+  const documentLabel = documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto da Regulacao" : "Newsletter Regulatorio";
+  const minutoPrompt = useMemo(() => buildMinutoRegulacaoPrompt(minutoSelected), [minutoSelected]);
+  const minutoDraft = useMemo(() => buildMinutoRegulacaoDraftJson(minutoSelected), [minutoSelected]);
+  const dueTodaySchedules = scheduleData?.due_schedules ?? [];
+  const previewPage = documentConfig.documentoTipo === "minuto_regulacao"
+    ? { width: 794, height: 1123, scale: 0.58 }
+    : { width: 960, height: 1357, scale: 0.49 };
 
   useEffect(() => {
     setBaseUrl(window.location.origin);
@@ -187,8 +233,18 @@ export default function NoticiasPage() {
     }
   }, []);
 
+  useEffect(() => {
+    if (documentConfig.documentoTipo !== "minuto_regulacao") return;
+    const key = minutoSelectedIds.join("|");
+    if (key === lastMinutoSelectionKey.current) return;
+    lastMinutoSelectionKey.current = key;
+    setMinutoTextos(minutoSelected.length > 0 ? minutoDraft : "");
+    setSavedEditionId(null);
+  }, [documentConfig.documentoTipo, minutoDraft, minutoSelected.length, minutoSelectedIds]);
+
   function toggleSelected(id: string) {
-    setSelectedIds((prev) => prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]);
+    selectionSetter((prev) => toggleId(prev, id));
+    setSavedEditionId(null);
   }
 
   async function copyHtml() {
@@ -221,7 +277,30 @@ export default function NoticiasPage() {
     win.document.write(documentHtml);
     win.document.close();
     win.focus();
-    setTimeout(() => win.print(), 400);
+    let printed = false;
+    const printWhenReady = async () => {
+      if (printed) return;
+      printed = true;
+      try {
+        await win.document.fonts?.ready;
+      } catch {
+        // Fonts are best effort in the print window.
+      }
+      const images = Array.from(win.document.images);
+      await Promise.all(images.map((img) => {
+        if (img.complete) return Promise.resolve();
+        return new Promise<void>((resolve) => {
+          img.onload = () => resolve();
+          img.onerror = () => resolve();
+        });
+      }));
+      win.focus();
+      win.print();
+    };
+    win.addEventListener("load", () => {
+      window.setTimeout(printWhenReady, 150);
+    }, { once: true });
+    window.setTimeout(printWhenReady, 1800);
   }
 
   return (
@@ -261,6 +340,18 @@ export default function NoticiasPage() {
           <div>
             <p className="text-sm font-medium text-text-primary">A Newsletter Regulatório está prevista para amanhã.</p>
             <p className="text-xs text-text-muted mt-1">Revise as notícias selecionadas e copie o HTML final antes do envio manual.</p>
+          </div>
+        </div>
+      ) : null}
+
+      {scheduleData?.due_today ? (
+        <div className="border border-brand/30 bg-brand/10 rounded-card p-3 flex items-start gap-3">
+          <CalendarClock className="w-4 h-4 text-brand mt-0.5" />
+          <div>
+            <p className="text-sm font-medium text-text-primary">
+              Hoje e dia de enviar a Newsletter para {dueTodaySchedules.reduce((sum, schedule) => sum + (schedule.recipient_count ?? schedule.destinatarios.length), 0)} associados/destinatarios.
+            </p>
+            <p className="text-xs text-text-muted mt-1">Revise as noticias selecionadas, gere o PDF e envie pelo canal configurado.</p>
           </div>
         </div>
       ) : null}
@@ -306,7 +397,7 @@ export default function NoticiasPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_420px] gap-6">
+      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_520px] gap-6">
         <section className="space-y-4">
           <div className="card flex items-center gap-2 flex-wrap">
             <select className="select w-40" value={agencia} onChange={(e) => setAgencia(e.target.value)}>
@@ -335,7 +426,7 @@ export default function NoticiasPage() {
               />
             </label>
             <p className="text-xs text-text-muted ml-auto">
-              {data?.total ?? 0} notícias · {selected.length} selecionadas
+              {data?.total ?? 0} notícias · Newsletter {newsletterSelected.length}/3 · Minuto {minutoSelected.length}
             </p>
           </div>
 
@@ -366,7 +457,7 @@ export default function NoticiasPage() {
                           selectedIds.includes(item.id) ? "border-brand bg-brand text-white" : "border-border text-text-muted hover:text-brand",
                         )}
                         onClick={() => toggleSelected(item.id)}
-                        aria-label="Selecionar notícia"
+                        aria-label={`Selecionar noticia para ${documentLabel}`}
                       >
                         {selectedIds.includes(item.id) ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                       </button>
@@ -400,18 +491,138 @@ export default function NoticiasPage() {
           </div>
         </section>
 
-        <aside className="space-y-4">
+        <aside className="space-y-4 xl:sticky xl:top-4 self-start">
           <section className="card space-y-3">
             <div className="flex items-center justify-between">
-              <p className="section-label">Documento da Newsletter</p>
+              <p className="section-label">Documento: {documentLabel}</p>
               <Mail className="w-4 h-4 text-text-muted" />
             </div>
-            <div className="bg-bg-hover rounded-card p-2 h-[520px] overflow-hidden">
-              <iframe
-                title="Preview da Newsletter"
-                srcDoc={html}
-                className="w-full h-full rounded-md bg-white"
-              />
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                className={cn("btn-secondary justify-center", documentConfig.documentoTipo === "newsletter_regulatoria" && "border-brand text-brand")}
+                onClick={() => updateDocumentConfig("documentoTipo", "newsletter_regulatoria")}
+              >
+                Newsletter
+              </button>
+              <button
+                className={cn("btn-secondary justify-center", documentConfig.documentoTipo === "minuto_regulacao" && "border-brand text-brand")}
+                onClick={() => updateDocumentConfig("documentoTipo", "minuto_regulacao")}
+              >
+                Minuto da Regulação
+              </button>
+            </div>
+            {documentConfig.documentoTipo === "minuto_regulacao" ? (
+              <div className="space-y-2">
+                <div className="rounded-card border border-border bg-surface-secondary p-3 space-y-2">
+                  <div className="flex items-center justify-between gap-2">
+                    <div>
+                      <p className="text-xs font-semibold text-text-primary">Noticias do Minuto</p>
+                      <p className="text-[11px] text-text-muted mt-0.5">Selecao independente da Newsletter.</p>
+                    </div>
+                    <span className="badge-gray text-xs">{minutoSelected.length} selecionadas</span>
+                  </div>
+                  <div className="max-h-56 overflow-auto space-y-1 pr-1">
+                    {noticias.length ? noticias.map((item) => (
+                      <label
+                        key={`minuto-${item.id}`}
+                        className={cn(
+                          "flex items-start gap-2 rounded-md border px-2 py-2 cursor-pointer",
+                          minutoSelectedIds.includes(item.id)
+                            ? "border-brand/50 bg-brand/10"
+                            : "border-border bg-surface hover:border-brand/40",
+                        )}
+                      >
+                        <input
+                          type="checkbox"
+                          className="mt-0.5 accent-brand"
+                          checked={minutoSelectedIds.includes(item.id)}
+                          onChange={() => {
+                            setMinutoSelectedIds((prev) => toggleId(prev, item.id));
+                            setSavedEditionId(null);
+                          }}
+                        />
+                        <span className="min-w-0">
+                          <span className="block text-[11px] font-semibold text-text-primary line-clamp-2">{item.titulo}</span>
+                          <span className="block text-[10px] text-text-muted mt-0.5">
+                            {item.agencia_sigla ?? item.fonte} · {formatDateLong(item.publicado_em ?? item.first_seen_at)}
+                          </span>
+                        </span>
+                      </label>
+                    )) : (
+                      <p className="text-xs text-text-muted">Nenhuma noticia carregada para selecionar.</p>
+                    )}
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      className="btn-secondary justify-center text-xs"
+                      onClick={() => {
+                        setMinutoSelectedIds(newsletterSelectedIds);
+                        setSavedEditionId(null);
+                      }}
+                      disabled={newsletterSelectedIds.length === 0}
+                    >
+                      Usar Newsletter
+                    </button>
+                    <button
+                      className="btn-secondary justify-center text-xs"
+                      onClick={() => {
+                        setMinutoSelectedIds([]);
+                        setMinutoTextos("");
+                        setSavedEditionId(null);
+                      }}
+                      disabled={minutoSelectedIds.length === 0 && !minutoTextos.trim()}
+                    >
+                      Limpar Minuto
+                    </button>
+                  </div>
+                </div>
+                <textarea
+                  className="input min-h-32 text-xs font-mono"
+                  value={minutoPrompt}
+                  readOnly
+                  aria-label="Prompt do Minuto da Regulação"
+                />
+                <textarea
+                  className="input min-h-28"
+                  value={minutoTextos}
+                  onChange={(event) => {
+                    setMinutoTextos(event.target.value);
+                    setSavedEditionId(null);
+                  }}
+                  placeholder="Cole aqui o JSON revisado do Minuto ou gere um rascunho a partir das noticias selecionadas"
+                />
+                <button
+                  className="btn-secondary w-full justify-center"
+                  onClick={() => {
+                    setMinutoTextos(minutoDraft);
+                    setSavedEditionId(null);
+                  }}
+                  disabled={minutoSelected.length === 0}
+                >
+                  Gerar rascunho do Minuto
+                </button>
+              </div>
+            ) : null}
+            <div className="bg-bg-hover rounded-card p-3 overflow-auto">
+              <div
+                className="mx-auto overflow-hidden rounded-md shadow-sm bg-white"
+                style={{
+                  width: previewPage.width * previewPage.scale,
+                  height: previewPage.height * previewPage.scale,
+                }}
+              >
+                <iframe
+                  title={`Preview do documento ${documentLabel}`}
+                  srcDoc={html}
+                  style={{
+                    width: previewPage.width,
+                    height: previewPage.height,
+                    transform: `scale(${previewPage.scale})`,
+                    transformOrigin: "top left",
+                    border: 0,
+                  }}
+                />
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <button className="btn-primary justify-center" onClick={openPrintDocument} disabled={selected.length === 0}>
@@ -488,16 +699,37 @@ export default function NoticiasPage() {
               <div key={schedule.id} className="border border-border rounded-card p-3 text-xs text-text-muted">
                 <p className="font-medium text-text-primary">{schedule.nome}</p>
                 <p className="mt-1">Próximo envio: {schedule.proximo_envio ? formatDateLong(schedule.proximo_envio) : "não definido"}</p>
-                <p>{schedule.destinatarios.length} destinatários cadastrados</p>
+                <p>{schedule.recipient_count ?? schedule.destinatarios.length} destinatários cadastrados</p>
               </div>
             ))}
+            <div className="grid grid-cols-2 gap-2">
+              <select
+                className="select"
+                value={documentConfig.diaSemana}
+                onChange={(e) => updateDocumentConfig("diaSemana", e.target.value)}
+              >
+                <option value="1">Segunda</option>
+                <option value="2">Terca</option>
+                <option value="3">Quarta</option>
+                <option value="4">Quinta</option>
+                <option value="5">Sexta</option>
+                <option value="6">Sabado</option>
+                <option value="0">Domingo</option>
+              </select>
+              <input
+                className="input"
+                type="time"
+                value={documentConfig.horaEnvio}
+                onChange={(e) => updateDocumentConfig("horaEnvio", e.target.value)}
+              />
+            </div>
             <button
               className="btn-secondary w-full justify-center"
               onClick={() => scheduleMutation.mutate()}
               disabled={scheduleMutation.isPending || !documentConfig.destinatarios.trim() || demoEnabled}
             >
               {scheduleMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <CalendarClock className="w-4 h-4" />}
-              Salvar aviso de sexta
+              Salvar aviso semanal
             </button>
           </section>
         </aside>
@@ -675,6 +907,83 @@ function splitList(value: string) {
     .split(/[,\n;]/)
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function splitMinutoTextos(value: string) {
+  return value
+    .split(/\n-{3,}\n|---/g)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function parseMinutoItemsForSelection(value: string, selected: RegulatoryNews[]) {
+  const allowedIds = new Set(selected.map((item) => item.id));
+  const allowedUrls = new Set(selected.map((item) => item.url));
+  const selectedByUrl = new Map(selected.map((item) => [item.url, item]));
+  const raw = value.trim();
+  if (!raw || selected.length === 0) return [];
+
+  if (raw.startsWith("{") || raw.startsWith("[")) {
+    try {
+      const parsed = JSON.parse(raw);
+      const items = Array.isArray(parsed) ? parsed : parsed.itens;
+      if (Array.isArray(items)) {
+        return items
+          .map((item) => normalizeMinutoItemForSelection(item, selectedByUrl))
+          .filter((item) => {
+            if (!item) return false;
+            if (item.noticia_id && allowedIds.has(item.noticia_id)) return true;
+            if (item.fonte_url && allowedUrls.has(item.fonte_url)) return true;
+            return false;
+          })
+          .filter((item): item is NonNullable<typeof item> => Boolean(item));
+      }
+    } catch {
+      // Abaixo tratamos texto livre/separado por blocos.
+    }
+  }
+
+  return splitMinutoTextos(value)
+    .slice(0, selected.length)
+    .map((text, index) => ({
+      noticia_id: selected[index]?.id ?? null,
+      data: selected[index]?.publicado_em ?? selected[index]?.first_seen_at ?? null,
+      agencia: selected[index]?.agencia?.nome || selected[index]?.agencia_sigla || selected[index]?.fonte || null,
+      titulo_minuto: null,
+      ato: selected[index]?.titulo ?? null,
+      texto_minuto: text,
+      fonte_url: selected[index]?.url ?? null,
+    }))
+    .filter((item) => Boolean(item.noticia_id));
+}
+
+function normalizeMinutoItemForSelection(value: unknown, selectedByUrl: Map<string, RegulatoryNews>) {
+  if (!value || typeof value !== "object") return null;
+  const row = value as Record<string, unknown>;
+  const fonteUrl = typeof row.fonte_url === "string" ? row.fonte_url : typeof row.url === "string" ? row.url : null;
+  const selected = fonteUrl ? selectedByUrl.get(fonteUrl) : null;
+  const noticiaId = typeof row.noticia_id === "string"
+    ? row.noticia_id
+    : typeof row.id === "string"
+      ? row.id
+      : selected?.id ?? null;
+  return {
+    noticia_id: noticiaId,
+    data: stringifyOptional(row.data) ?? selected?.publicado_em ?? selected?.first_seen_at ?? null,
+    agencia: stringifyOptional(row.agencia) ?? selected?.agencia?.nome ?? selected?.agencia_sigla ?? selected?.fonte ?? null,
+    titulo_minuto: stringifyOptional(row.titulo_minuto) ?? stringifyOptional(row.titulo),
+    ato: stringifyOptional(row.ato) ?? stringifyOptional(row.titulo),
+    texto_minuto: stringifyOptional(row.texto_minuto) ?? stringifyOptional(row.texto),
+    fonte_url: fonteUrl ?? selected?.url ?? null,
+  };
+}
+
+function stringifyOptional(value: unknown) {
+  return typeof value === "string" && value.trim() ? value.trim() : null;
+}
+
+function toggleId(items: string[], id: string) {
+  return items.includes(id) ? items.filter((item) => item !== id) : [...items, id];
 }
 
 function escapeHtml(value: string) {

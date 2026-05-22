@@ -30,6 +30,7 @@ export interface NewsSourceCollectReport {
   links_found: number;
   items_collected: number;
   latest_urls: string[];
+  detail_errors?: string[];
   error?: string;
 }
 
@@ -66,10 +67,16 @@ export async function collectRegulatoryNews(limitPerSource = 24): Promise<Regula
   for (const source of NEWS_SOURCES) {
     try {
       const links = await fetchSourceLinks(source, limitPerSource);
-      const details = await Promise.all(
-        links.slice(0, limitPerSource).map((link) => fetchNewsDetail(source, link)),
+      const detailResults = await Promise.all(
+        links.slice(0, limitPerSource).map(async (link) => {
+          const item = await fetchNewsDetail(source, link);
+          return {
+            item,
+            error: item ? null : `Detalhe ignorado: ${link.url}`,
+          };
+        }),
       );
-      const items = details.filter((item): item is CollectedRegulatoryNews => Boolean(item));
+      const items = detailResults.map((result) => result.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
       collected.push(...items);
       sourceReports.push({
         agencia_sigla: source.agencia_sigla,
@@ -78,7 +85,8 @@ export async function collectRegulatoryNews(limitPerSource = 24): Promise<Regula
         status: "ok",
         links_found: links.length,
         items_collected: items.length,
-        latest_urls: items.slice(0, 5).map((item) => item.url),
+        latest_urls: items.length ? items.slice(0, 5).map((item) => item.url) : links.slice(0, 5).map((link) => link.url),
+        detail_errors: detailResults.map((result) => result.error).filter((error): error is string => Boolean(error)).slice(0, 5),
       });
     } catch (error) {
       sourceReports.push({
@@ -106,7 +114,9 @@ async function fetchSourceLinks(source: NewsSourceConfig, limit: number) {
   const links: Array<{ url: string; title: string }> = [];
 
   for (const page of listingPages) {
-    const anchors = extractAnchors(page.html, page.url);
+    const anchors = source.strategy === "artesp"
+      ? extractArtespNewsAnchors(page.html, page.url)
+      : extractAnchors(page.html, page.url);
     for (const anchor of anchors) {
       const url = normalizeNewsUrl(anchor.href);
       if (!url || !isNewsDetailUrl(source, url)) continue;
@@ -151,18 +161,20 @@ async function fetchNewsDetail(
 ): Promise<CollectedRegulatoryNews | null> {
   try {
     const html = await fetchHtml(link.url);
-    const titulo =
+    const rawTitle =
       meta(html, "property", "og:title") ??
       meta(html, "name", "twitter:title") ??
       firstText(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i) ??
       link.title;
-    const resumo =
+    const conteudo = extractArticleText(html);
+    const rawResumo =
       meta(html, "property", "og:description") ??
       meta(html, "name", "description") ??
       firstParagraph(html);
-    const canonical = normalizeNewsUrl(
-      absolutize(meta(html, "property", "og:url"), link.url) ?? link.url,
-    )?.toString() ?? link.url;
+    const titulo = isGenericArtespTitle(source, rawTitle) ? link.title : rawTitle;
+    const resumo = isGenericArtespDescription(source, rawResumo) ? excerptFromText(conteudo) : rawResumo;
+    const canonicalUrl = normalizeNewsUrl(absolutize(meta(html, "property", "og:url"), link.url) ?? link.url);
+    const canonical = canonicalUrl && isNewsDetailUrl(source, canonicalUrl) ? canonicalUrl.toString() : link.url;
     const image = extractMainImage(html, link.url);
     const publicado_em =
       meta(html, "property", "article:published_time") ??
@@ -171,7 +183,6 @@ async function fetchNewsDetail(
       meta(html, "name", "date") ??
       firstAttr(html, /<time[^>]+datetime=["']([^"']+)["']/i) ??
       extractDateFromText(stripTags(html));
-    const conteudo = extractArticleText(html);
     const hash_item = sha256(`${source.agencia_sigla}|${canonical}`);
 
     return {
@@ -215,10 +226,13 @@ function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   const sourcePath = stripTrailingSlash(sourceUrl.pathname);
   if (path === sourcePath) return false;
   if (!path.startsWith(`${sourcePath}/`)) return false;
+  if (source.strategy === "artesp" && /\/(?:!ut|dz)\//i.test(path)) return false;
 
   const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
   if (!lastSegment || /^\d+$/.test(lastSegment)) return false;
   if (["noticias", "ultimas-noticias", "noticias-anteriores"].includes(normalizeText(lastSegment))) return false;
+  if (lastSegment.includes(".")) return false;
+  if (source.strategy === "artesp" && /^z[0-9a-z_]+$/i.test(lastSegment)) return false;
 
   return true;
 }
@@ -252,6 +266,35 @@ function extractAnchors(html: string, baseUrl: string) {
   }
 
   return anchors;
+}
+
+function extractArtespNewsAnchors(html: string, baseUrl: string) {
+  const sourcePath = stripTrailingSlash(new URL(baseUrl).pathname);
+  const source: NewsSourceConfig = { agencia_sigla: "ARTESP", fonte: "ARTESP", url: baseUrl, strategy: "artesp" };
+  const seen = new Set<string>();
+  const links: Array<{ href: string; text: string }> = [];
+  const hrefRe = /\bhref=["']([^"']+)["']/gi;
+  let match: RegExpExecArray | null;
+
+  while ((match = hrefRe.exec(html)) !== null) {
+    try {
+      const url = new URL(decodeHtml(match[1]), baseUrl);
+      const path = stripTrailingSlash(url.pathname);
+      const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
+      if (!path.startsWith(`${sourcePath}/`) || path === sourcePath) continue;
+      if (/\/(?:!ut|dz)\//i.test(path)) continue;
+      if (!lastSegment || lastSegment.includes(".") || /^z[0-9a-z_]+$/i.test(lastSegment)) continue;
+      if (!isNewsDetailUrl(source, url)) continue;
+      const href = url.toString();
+      if (seen.has(href)) continue;
+      seen.add(href);
+      links.push({ href, text: slugToTitle(lastSegment) });
+    } catch {
+      // Ignora hrefs malformados do CMS.
+    }
+  }
+
+  return links;
 }
 
 function extractMainImage(html: string, baseUrl: string): { url: string | null; source: string | null } {
@@ -304,19 +347,48 @@ function firstText(html: string, re: RegExp) {
 }
 
 function firstParagraph(html: string) {
-  const match = /<p[^>]*>([\s\S]{40,900}?)<\/p>/i.exec(html);
+  const match = /<p[^>]*>([\s\S]{40,900}?)<\/p>/i.exec(html)
+    ?? /<h1[^>]*>[\s\S]*?<\/h1>\s*([\s\S]{40,900}?)(?:<time|<img|<p|<h2|<h3|<div|<\/)/i.exec(html);
   return match?.[1] ? cleanText(stripTags(match[1])) : null;
+}
+
+function isGenericArtespTitle(source: NewsSourceConfig, value: string | null) {
+  if (source.strategy !== "artesp") return false;
+  const normalized = normalizeText(value ?? "");
+  return normalized === "noticias" || normalized === "noticia" || normalized.includes("sistema de gestao de conteudo");
+}
+
+function isGenericArtespDescription(source: NewsSourceConfig, value: string | null) {
+  if (source.strategy !== "artesp") return false;
+  const normalized = normalizeText(value ?? "");
+  return !normalized ||
+    normalized.includes("cms - sistema de gestao de conteudo") ||
+    normalized.includes("javascript esta desativado") ||
+    normalized.includes("javascript is disabled");
+}
+
+function excerptFromText(value: string | null) {
+  if (!value) return null;
+  const sentence = value.match(/[^.!?]+[.!?]+/)?.[0] ?? value;
+  return cleanText(sentence).slice(0, 900);
 }
 
 function extractArticleText(html: string) {
   const article =
     /<article[^>]*>([\s\S]*?)<\/article>/i.exec(html)?.[1] ??
     /<main[^>]*>([\s\S]*?)<\/main>/i.exec(html)?.[1] ??
+    /<h1[^>]*>[\s\S]*?<\/h1>([\s\S]*?)(?:<h[2-4][^>]*>\s*(?:ultimas|[uú]ltimas)\s*<\/h[2-4]>|<footer|Complementary Content)/i.exec(html)?.[1] ??
     html;
   const paragraphs = [...article.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
     .map((match) => cleanText(stripTags(match[1])))
     .filter((text) => text.length >= 30);
-  return paragraphs.join("\n\n").slice(0, 6000) || null;
+  if (paragraphs.length) return paragraphs.join("\n\n").slice(0, 6000);
+
+  const text = cleanText(stripTags(article))
+    .replace(/\bAumentar fonte\b[\s\S]*$/i, "")
+    .replace(/\bUltimas\s+Noticias\b[\s\S]*$/i, "")
+    .replace(/\bÚltimas\s+Notícias\b[\s\S]*$/i, "");
+  return text.length >= 80 ? text.slice(0, 6000) : null;
 }
 
 function extractDateFromText(text: string) {
@@ -424,6 +496,10 @@ function normalizeText(value: string) {
 
 function stripTrailingSlash(value: string) {
   return value.replace(/\/+$/, "");
+}
+
+function slugToTitle(value: string) {
+  return cleanText(value.replace(/[+_-]+/g, " "));
 }
 
 function isNavigationTitle(value: string) {

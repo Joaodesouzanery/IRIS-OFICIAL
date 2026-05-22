@@ -748,6 +748,7 @@ export interface RegulatoryNewsSourceReport {
   links_found: number;
   items_collected: number;
   latest_urls: string[];
+  detail_errors?: string[];
   error?: string;
 }
 
@@ -757,6 +758,7 @@ export interface RegulatoryNewsletterSchedule {
   dia_semana: 0 | 1 | 2 | 3 | 4 | 5 | 6;
   hora_envio: string;
   destinatarios: string[];
+  recipient_count?: number;
   ativo: boolean;
   proximo_envio: string | null;
   ultimo_aviso_em: string | null;
@@ -772,6 +774,8 @@ export interface RegulatoryNewsletterEdition {
   destinatarios: string[];
   temas: string[];
   noticia_ids: string[];
+  documento_tipo?: NewsletterDocumentType;
+  template_version?: string;
   status: "rascunho" | "revisado" | "aprovado" | "enviado" | "arquivado";
   html: string;
   metadata: Record<string, unknown>;
@@ -784,6 +788,8 @@ export interface RegulatoryNewsletterEdition {
 export interface RegulatoryNewsletterEditionCreateResponse {
   edition: RegulatoryNewsletterEdition;
 }
+
+export type NewsletterDocumentType = "newsletter_regulatoria" | "minuto_regulacao";
 
 // Diretor/mandato provenance. Store only public-office data, never CPF/contact fields.
 export type ReviewStatus = "pendente" | "aprovado" | "rejeitado" | "conflito";
