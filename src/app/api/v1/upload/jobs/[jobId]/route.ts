@@ -10,7 +10,7 @@ import { isDemoRequest } from "@/lib/server/request-guards";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { jobId: string } }
+  { params }: any
 ) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Job não encontrado" }, { status: 404 });
