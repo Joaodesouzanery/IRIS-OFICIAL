@@ -9,6 +9,7 @@ import {
   Minus, CheckCircle, XCircle, Users, ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { HelpTooltip } from "@/components/ui/HelpTooltip";
 import { IrisBarChart } from "@/components/charts/IrisBarChart";
 import { ChartWrapper } from "@/components/charts/ChartWrapper";
@@ -53,7 +54,8 @@ function ResultadoBadge({ resultado }: { resultado: string | null }) {
 
 // ─── Página ───────────────────────────────────────────────────────────────────
 
-export default function EmpresaDetailPage({ params }: { params: { id: string } }) {
+export default function EmpresaDetailPage() {
+  const params = useParams<{ id: string }>();
   const nome = decodeURIComponent(params.id);
 
   const { data: empresa, isLoading } = useQuery({

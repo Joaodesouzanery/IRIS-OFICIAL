@@ -10,6 +10,7 @@ import {
   ChevronDown, ChevronUp, Users, FileText, ShieldCheck, Award, Download,
 } from "lucide-react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { getLocalDelibs, updateLocalDelib } from "@/lib/local-store";
 import { HelpTooltip } from "@/components/ui/HelpTooltip";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
@@ -77,7 +78,8 @@ function resultadoColor(r: string | null) {
 
 // ─── Página ───────────────────────────────────────────────────────────────────
 
-export default function DeliberacaoDetailPage({ params }: { params: { id: string } }) {
+export default function DeliberacaoDetailPage() {
+  const params = useParams<{ id: string }>();
   const queryClient = useQueryClient();
   const { demoEnabled } = useDataSyncContext();
   const [editing, setEditing]         = useState(false);
