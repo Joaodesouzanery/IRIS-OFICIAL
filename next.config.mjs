@@ -1,9 +1,12 @@
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repoRoot = dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    // Necessário para pdf-parse funcionar em API Routes (Node.js only) — Next.js 14 syntax
-    serverComponentsExternalPackages: ["pdf-parse"],
-  },
+  serverExternalPackages: ["pdf-parse"],
+  outputFileTracingRoot: repoRoot,
 
   async headers() {
     return [
