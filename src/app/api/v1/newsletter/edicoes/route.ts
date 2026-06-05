@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
+import { repairRegulatoryNewsItems } from "@/lib/news-repairs";
 import { getAuthenticatedUser, requireAdmin } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import type { NewsletterDocumentType, RegulatoryNews, RegulatoryNewsletterEditionCreateResponse } from "@/types";
@@ -51,7 +52,7 @@ export async function POST(req: NextRequest) {
   const documentoTipo = normalizeDocumentType(body.documento_tipo);
   const minutoTextos = normalizeStringArray(body.minuto_textos, 80);
   const templateVersion = documentoTipo === "minuto_regulacao" ? "iris_minuto_retrospectiva_v1" : "iris_newsletter_layout_v1";
-  const documentNewsIds = documentoTipo === "newsletter_regulatoria" ? noticiaIds.slice(0, 3) : noticiaIds;
+  const documentNewsIds = noticiaIds;
 
   const db = createSupabaseServerClient();
   const { data: noticias, error: newsError } = await db
@@ -64,9 +65,9 @@ export async function POST(req: NextRequest) {
   }
 
   const newsRows = (noticias ?? []) as RegulatoryNews[];
-  const orderedNoticias = documentNewsIds
+  const orderedNoticias = repairRegulatoryNewsItems(documentNewsIds
     .map((id: string) => newsRows.find((item: RegulatoryNews) => item.id === id))
-    .filter((item: RegulatoryNews | undefined): item is RegulatoryNews => Boolean(item));
+    .filter((item: RegulatoryNews | undefined): item is RegulatoryNews => Boolean(item)));
   const minutoItems = normalizeMinutoItems(body.minuto_items, orderedNoticias);
 
   const html = buildRegulatoryNewsletterHtml({
@@ -101,6 +102,12 @@ export async function POST(req: NextRequest) {
         template_version: templateVersion,
         generated_at: new Date().toISOString(),
         selected_news_count: documentNewsIds.length,
+        page_count: documentoTipo === "newsletter_regulatoria"
+          ? Math.ceil(documentNewsIds.length / 3)
+          : documentNewsIds.length,
+        page_groups: documentoTipo === "newsletter_regulatoria"
+          ? chunkIds(documentNewsIds, 3)
+          : documentNewsIds.map((id: string) => [id]),
         minuto_textos: minutoTextos,
         minuto_items: minutoItems,
       },
@@ -148,8 +155,13 @@ function normalizeMinutoItems(value: unknown, selectedNews: RegulatoryNews[]) {
         data: normalizeOptionalString(row.data, 80),
         agencia: normalizeOptionalString(row.agencia, 240),
         titulo_minuto: normalizeOptionalString(row.titulo_minuto, 300),
+        subtitulo_minuto: normalizeOptionalString(row.subtitulo_minuto ?? row.subtitulo, 300),
         ato: normalizeOptionalString(row.ato, 500),
+        ato_titulo: normalizeOptionalString(row.ato_titulo ?? row.ato, 500),
         texto_minuto: normalizeOptionalString(row.texto_minuto, 2000),
+        texto_institucional: normalizeOptionalString(row.texto_institucional ?? row.texto_minuto, 2000),
+        editorial_model: normalizeOptionalString(row.editorial_model, 60),
+        review_status: normalizeReviewStatus(row.review_status),
         fonte_url: normalizeOptionalString(row.fonte_url, 1000),
       };
     })
@@ -165,9 +177,24 @@ function normalizeMinutoItems(value: unknown, selectedNews: RegulatoryNews[]) {
       data: string | null;
       agencia: string | null;
       titulo_minuto: string | null;
+      subtitulo_minuto: string | null;
       ato: string | null;
+      ato_titulo: string | null;
       texto_minuto: string | null;
+      texto_institucional: string | null;
+      editorial_model: string | null;
+      review_status: "pendente" | "revisado" | "aprovado";
       fonte_url: string | null;
     } => Boolean(item))
     .slice(0, 80);
+}
+
+function normalizeReviewStatus(value: unknown): "pendente" | "revisado" | "aprovado" {
+  return value === "aprovado" || value === "revisado" ? value : "pendente";
+}
+
+function chunkIds(ids: string[], size: number) {
+  const groups: string[][] = [];
+  for (let index = 0; index < ids.length; index += size) groups.push(ids.slice(index, index + size));
+  return groups;
 }

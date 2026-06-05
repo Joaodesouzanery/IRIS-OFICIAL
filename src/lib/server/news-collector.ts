@@ -3,10 +3,13 @@ import crypto from "crypto";
 export type RegulatoryNewsStatus = "novo" | "selecionado" | "ignorado" | "arquivado";
 
 export interface NewsSourceConfig {
-  agencia_sigla: "ARTESP" | "ANTT" | "ANM";
+  id?: string;
+  agencia_sigla: string;
   fonte: string;
   url: string;
   strategy: "artesp" | "govbr";
+  tier?: "core" | "expanded";
+  profile?: string;
 }
 
 export interface CollectedRegulatoryNews {
@@ -23,13 +26,24 @@ export interface CollectedRegulatoryNews {
 }
 
 export interface NewsSourceCollectReport {
+  source_id?: string;
   agencia_sigla: string;
   fonte: string;
+  tier?: "core" | "expanded";
   source_url: string;
   status: "ok" | "error";
+  collection_phase?: "fresh" | "backlog" | "manual";
   links_found: number;
   items_collected: number;
+  items_processed: number;
+  items_pending: number;
+  batch_offset: number;
+  images_found: number;
+  images_absent: number;
+  images_failed: number;
   latest_urls: string[];
+  latest_publicado_em?: string | null;
+  latest_title?: string | null;
   detail_errors?: string[];
   error?: string;
 }
@@ -39,79 +53,250 @@ export interface RegulatoryNewsCollectResult {
   source_reports: NewsSourceCollectReport[];
 }
 
-export const NEWS_SOURCES: NewsSourceConfig[] = [
-  {
-    agencia_sigla: "ARTESP",
-    fonte: "ARTESP",
-    url: "https://www.artesp.sp.gov.br/artesp/noticias",
-    strategy: "artesp",
-  },
-  {
-    agencia_sigla: "ANTT",
-    fonte: "ANTT",
-    url: "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias",
-    strategy: "govbr",
-  },
-  {
-    agencia_sigla: "ANM",
-    fonte: "ANM",
-    url: "https://www.gov.br/anm/pt-br/assuntos/noticias",
-    strategy: "govbr",
-  },
-];
+export type NewsCollectionMode = "discover" | "enrich";
 
-export async function collectRegulatoryNews(limitPerSource = 24): Promise<RegulatoryNewsCollectResult> {
-  const collected: CollectedRegulatoryNews[] = [];
-  const sourceReports: NewsSourceCollectReport[] = [];
+type NewsLink = {
+  url: string;
+  title: string;
+  imageUrl: string | null;
+  imageSource?: string | null;
+  publishedAt?: string | null;
+};
 
-  for (const source of NEWS_SOURCES) {
-    try {
-      const links = await fetchSourceLinks(source, limitPerSource);
-      const detailResults = await Promise.all(
-        links.slice(0, limitPerSource).map(async (link) => {
-          const item = await fetchNewsDetail(source, link);
-          return {
-            item,
-            error: item ? null : `Detalhe ignorado: ${link.url}`,
-          };
-        }),
-      );
-      const items = detailResults.map((result) => result.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
-      collected.push(...items);
-      sourceReports.push({
+const PRIORITY_IMAGE_REPAIR_AGENCIES = new Set(["ANTT", "ANM", "ARTESP"]);
+const SOURCE_CONCURRENCY = 2;
+const DETAIL_CONCURRENCY = 3;
+const FETCH_TIMEOUT_MS = 12_000;
+const IMAGE_TIMEOUT_MS = 8_000;
+
+export async function collectRegulatoryNews(
+  sources: NewsSourceConfig[],
+  limitPerSource = 24,
+  offsetPerSource = 0,
+  options: { mode?: NewsCollectionMode } = {},
+): Promise<RegulatoryNewsCollectResult> {
+  const mode = options.mode ?? "enrich";
+  const sourceResults = await mapWithConcurrency(
+    sources,
+    SOURCE_CONCURRENCY,
+    (source) => collectNewsSource(source, limitPerSource, offsetPerSource, mode),
+  );
+
+  return {
+    items: sortNewsItemsByDate(dedupeByUrl(sourceResults.flatMap((result) => result.items))),
+    source_reports: sourceResults.map((result) => result.report),
+  };
+}
+
+export async function extractOfficialImageFromNewsUrl(input: {
+  url: string;
+  agencia_sigla?: string | null;
+  fonte?: string | null;
+}) {
+  const strategy = input.url.includes("artesp.sp.gov.br") ? "artesp" : "govbr";
+  const html = await fetchHtml(input.url);
+  const candidate = strategy === "artesp"
+    ? extractArtespMainImage(html, input.url)
+    : extractMainImage(html, input.url);
+  const image = await validateOfficialImage(candidate);
+  return {
+    imagem_url: image.status === "official_image_found" ? upgradeImageScale(image.url ?? "") : null,
+    image_status: image.status,
+    image_source: image.source,
+    image_content_type: image.contentType ?? null,
+    image_content_length: image.contentLength ?? null,
+    image_quality: image.url ? classifyImageQuality(image.url, image.contentLength ?? null) : "absent",
+    image_proxy_path: image.url ? `/api/v1/noticias/imagem?url=${encodeURIComponent(image.url)}` : null,
+  };
+}
+
+async function collectNewsSource(
+  source: NewsSourceConfig,
+  limitPerSource: number,
+  offsetPerSource: number,
+  mode: NewsCollectionMode,
+): Promise<{ items: CollectedRegulatoryNews[]; report: NewsSourceCollectReport }> {
+  try {
+    const links = await fetchSourceLinks(source, limitPerSource + offsetPerSource);
+    if (links.length === 0) {
+      throw new Error("Nenhum link de noticia valido encontrado na fonte oficial");
+    }
+    const pageLinks = links.slice(offsetPerSource, offsetPerSource + limitPerSource);
+    const detailResults = await mapWithConcurrency(
+      pageLinks,
+      DETAIL_CONCURRENCY,
+      (link) => collectNewsLink(source, link, mode),
+    );
+    const rawItems = detailResults.map((result) => result.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
+    const items = await repairDuplicateListingImages(source, rawItems, mode);
+    const freshItems = filterStaleMixedItems(sortNewsItemsByDate(items));
+    const detailErrors = detailResults
+      .map((result) => result.error)
+      .filter((error): error is string => Boolean(error))
+      .slice(0, 5);
+    const report: NewsSourceCollectReport = {
+      source_id: source.id,
+      agencia_sigla: source.agencia_sigla,
+      fonte: source.fonte,
+      tier: source.tier ?? "core",
+      source_url: source.url,
+      status: freshItems.length > 0 ? "ok" : "error",
+      links_found: links.length,
+      items_collected: freshItems.length,
+      items_processed: detailResults.length,
+      items_pending: Math.max(0, links.length - offsetPerSource - detailResults.length),
+      batch_offset: offsetPerSource,
+      images_found: freshItems.filter((item) => item.metadata.image_status === "official_image_found").length,
+      images_absent: freshItems.filter((item) => item.metadata.image_status === "official_image_absent").length,
+      images_failed: freshItems.filter((item) => item.metadata.image_status === "image_fetch_failed").length,
+      latest_urls: freshItems.length ? freshItems.slice(0, 5).map((item) => item.url) : links.slice(0, 5).map((link) => link.url),
+      latest_publicado_em: latestPublishedAt(freshItems),
+      latest_title: latestItem(freshItems)?.titulo ?? null,
+      detail_errors: detailErrors,
+    };
+    if (freshItems.length === 0) {
+      report.error = detailErrors[0] ?? "Nenhuma noticia valida foi extraida dos links encontrados";
+    }
+    return { items: freshItems, report };
+  } catch (error) {
+    return {
+      items: [],
+      report: {
+        source_id: source.id,
         agencia_sigla: source.agencia_sigla,
         fonte: source.fonte,
-        source_url: source.url,
-        status: "ok",
-        links_found: links.length,
-        items_collected: items.length,
-        latest_urls: items.length ? items.slice(0, 5).map((item) => item.url) : links.slice(0, 5).map((link) => link.url),
-        detail_errors: detailResults.map((result) => result.error).filter((error): error is string => Boolean(error)).slice(0, 5),
-      });
-    } catch (error) {
-      sourceReports.push({
-        agencia_sigla: source.agencia_sigla,
-        fonte: source.fonte,
+        tier: source.tier ?? "core",
         source_url: source.url,
         status: "error",
         links_found: 0,
         items_collected: 0,
+        items_processed: 0,
+        items_pending: 0,
+        batch_offset: offsetPerSource,
+        images_found: 0,
+        images_absent: 0,
+        images_failed: 0,
         latest_urls: [],
+        latest_publicado_em: null,
+        latest_title: null,
+        detail_errors: [],
         error: error instanceof Error ? error.message : "Falha desconhecida",
-      });
-    }
+      },
+    };
+  }
+}
+
+async function collectNewsLink(source: NewsSourceConfig, link: NewsLink, mode: NewsCollectionMode) {
+  if (mode === "discover") {
+    const item = buildListingFallbackItem(source, link);
+    return {
+      item,
+      error: item ? null : `Listagem sem titulo ou data publicavel: ${link.url}`,
+    };
   }
 
+  const detail = await fetchNewsDetail(source, link);
+  if (detail) return { item: detail, error: null };
+
+  const fallback = buildListingFallbackItem(source, link);
   return {
-    items: dedupeByUrl(collected),
-    source_reports: sourceReports,
+    item: fallback,
+    error: fallback
+      ? `Detalhe indisponivel; usando dados da listagem: ${link.url}`
+      : `Detalhe indisponivel e listagem sem titulo ou data publicavel: ${link.url}`,
   };
 }
 
-async function fetchSourceLinks(source: NewsSourceConfig, limit: number) {
+async function repairDuplicateListingImages(
+  source: NewsSourceConfig,
+  items: CollectedRegulatoryNews[],
+  mode: NewsCollectionMode,
+) {
+  if (mode !== "discover" || !PRIORITY_IMAGE_REPAIR_AGENCIES.has(source.agencia_sigla)) return items;
+  const byImage = new Map<string, CollectedRegulatoryNews[]>();
+  for (const item of items) {
+    if (!item.imagem_url) continue;
+    byImage.set(item.imagem_url, [...(byImage.get(item.imagem_url) ?? []), item]);
+  }
+
+  const duplicateItems = [...byImage.values()]
+    .filter((group) => group.length > 1)
+    .flat()
+    .slice(0, 8);
+  if (!duplicateItems.length) return items;
+
+  const repaired = await mapWithConcurrency(duplicateItems, DETAIL_CONCURRENCY, async (item) => {
+    const detail = await fetchNewsDetail(source, {
+      url: item.url,
+      title: item.titulo,
+      imageUrl: item.imagem_url,
+      publishedAt: item.publicado_em,
+    });
+    if (!detail?.imagem_url) {
+      return {
+        ...item,
+        metadata: {
+          ...item.metadata,
+          image_duplicate_detected: true,
+          image_duplicate_repair: "detail_unavailable",
+        },
+      };
+    }
+    return {
+      ...detail,
+      metadata: {
+        ...detail.metadata,
+        image_duplicate_detected: true,
+        image_duplicate_listing_url: item.imagem_url,
+        image_duplicate_repair: detail.imagem_url === item.imagem_url ? "confirmed_same_official_image" : "replaced_from_detail",
+      },
+    };
+  });
+
+  const repairedByUrl = new Map(repaired.map((item) => [item.url, item]));
+  return items.map((item) => repairedByUrl.get(item.url) ?? item);
+}
+
+function sortNewsItemsByDate(items: CollectedRegulatoryNews[]) {
+  return [...items].sort((left, right) => {
+    const rightTime = publishedTime(right);
+    const leftTime = publishedTime(left);
+    if (rightTime !== leftTime) return rightTime - leftTime;
+    return left.titulo.localeCompare(right.titulo, "pt-BR");
+  });
+}
+
+function filterStaleMixedItems(items: CollectedRegulatoryNews[]) {
+  const dated = items.map(publishedTime).filter((time) => time > 0);
+  if (dated.length < 3) return items;
+  const latest = Math.max(...dated);
+  const cutoff = latest - 120 * 24 * 60 * 60 * 1000;
+  const filtered = items.filter((item) => {
+    const time = publishedTime(item);
+    return time === 0 || time >= cutoff;
+  });
+  return filtered.length >= Math.min(3, items.length) ? filtered : items;
+}
+
+async function fetchSourceLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
+  if (source.strategy === "govbr") {
+    const [htmlLinks, apiLinks] = await Promise.allSettled([
+      fetchHtmlSourceLinks(source, limit),
+      fetchGovbrApiLinks(source, limit),
+    ]);
+    return sortNewsLinksByDate(dedupeNewsLinks([
+      ...(htmlLinks.status === "fulfilled" ? htmlLinks.value : []),
+      ...(apiLinks.status === "fulfilled" ? apiLinks.value : []),
+    ])).slice(0, Math.max(limit, limit * 2));
+  }
+
+  return fetchHtmlSourceLinks(source, limit);
+}
+
+async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
   const listingPages = await fetchListingPages(source, limit);
   const seen = new Set<string>();
-  const links: Array<{ url: string; title: string }> = [];
+  const links: NewsLink[] = [];
 
   for (const page of listingPages) {
     const anchors = source.strategy === "artesp"
@@ -125,12 +310,107 @@ async function fetchSourceLinks(source: NewsSourceConfig, limit: number) {
       if (title.length < 12 || isNavigationTitle(title) || seen.has(url.toString())) continue;
 
       seen.add(url.toString());
-      links.push({ url: url.toString(), title });
-      if (links.length >= limit * 2) return links;
+      links.push({
+        url: url.toString(),
+        title,
+        imageUrl: anchor.imageUrl ?? null,
+        imageSource: anchor.imageSource ?? null,
+        publishedAt: anchor.publishedAt ?? null,
+      });
+      if (links.length >= Math.max(250, limit * 2)) return links;
     }
   }
 
-  return links;
+  if (links.length === 0 && source.strategy === "govbr") {
+    return fetchGovbrApiLinks(source, limit);
+  }
+
+  return sortNewsLinksByDate(links);
+}
+
+async function fetchGovbrApiLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
+  const apiUrl = buildGovbrSearchApiUrl(source.url, limit);
+  if (!apiUrl) return [];
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(apiUrl, {
+      headers: {
+        "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
+        Accept: "application/json",
+      },
+      next: { revalidate: 0 },
+      signal: controller.signal,
+    });
+    if (!res.ok) return [];
+    const payload = await res.json().catch(() => null);
+    const items = Array.isArray(payload?.items) ? payload.items : [];
+    const seen = new Set<string>();
+    return items
+      .map((item: Record<string, unknown>) => {
+        const rawUrl = typeof item["@id"] === "string" ? item["@id"] : null;
+        const rawTitle = typeof item.title === "string" ? item.title : null;
+        const url = rawUrl ? normalizeNewsUrl(rawUrl) : null;
+        const title = rawTitle ? cleanTitle(rawTitle) : "";
+        if (!url || !isNewsDetailUrl(source, url) || title.length < 12 || seen.has(url.toString())) return null;
+        seen.add(url.toString());
+        const publishedAt = typeof item.effective === "string"
+          ? item.effective
+          : typeof item.created === "string" ? item.created : null;
+        return { url: url.toString(), title, imageUrl: null, imageSource: null, publishedAt };
+      })
+      .filter((item: NewsLink | null): item is NewsLink => Boolean(item));
+  } catch {
+    return [];
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function dedupeNewsLinks(links: NewsLink[]) {
+  const seen = new Set<string>();
+  const deduped: NewsLink[] = [];
+  for (const link of links) {
+    const url = normalizeNewsUrl(link.url);
+    if (!url) continue;
+    const key = url.toString();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    deduped.push({ ...link, url: key });
+  }
+  return deduped;
+}
+
+function sortNewsLinksByDate(links: NewsLink[]) {
+  return [...links].sort((left, right) => {
+    const rightTime = publishedLinkTime(right);
+    const leftTime = publishedLinkTime(left);
+    if (rightTime !== leftTime) return rightTime - leftTime;
+    return left.title.localeCompare(right.title, "pt-BR");
+  });
+}
+
+function publishedLinkTime(link: NewsLink) {
+  const normalized = normalizeDate(link.publishedAt ?? null);
+  const value = normalized ? new Date(normalized).getTime() : 0;
+  return Number.isFinite(value) ? value : 0;
+}
+
+function buildGovbrSearchApiUrl(sourceUrl: string, limit: number) {
+  try {
+    const url = new URL(sourceUrl);
+    const parts = url.pathname.split("/").filter(Boolean);
+    const site = parts.shift();
+    if (!site) return null;
+    const api = new URL(`/${site}/++api++/${parts.join("/")}/@search`, url.origin);
+    api.searchParams.set("portal_type", "News Item");
+    api.searchParams.set("metadata_fields", "effective");
+    api.searchParams.append("metadata_fields", "created");
+    api.searchParams.set("b_size", String(Math.min(60, Math.max(10, limit * 2))));
+    return api.toString();
+  } catch {
+    return null;
+  }
 }
 
 async function fetchListingPages(source: NewsSourceConfig, limit: number) {
@@ -149,23 +429,23 @@ async function fetchListingPages(source: NewsSourceConfig, limit: number) {
     if (pageUrls.size >= Math.min(8, Math.max(3, Math.ceil(limit / 4)))) break;
   }
 
-  const pages = await Promise.all(
-    [...pageUrls].map(async (url) => ({ url, html: url === source.url ? firstHtml : await fetchHtml(url) })),
-  );
+  const pages = await mapWithConcurrency([...pageUrls], 2, async (url) => ({ url, html: url === source.url ? firstHtml : await fetchHtml(url) }));
   return pages;
 }
 
 async function fetchNewsDetail(
   source: NewsSourceConfig,
-  link: { url: string; title: string },
+  link: { url: string; title: string; imageUrl?: string | null; imageSource?: string | null; publishedAt?: string | null },
 ): Promise<CollectedRegulatoryNews | null> {
   try {
     const html = await fetchHtml(link.url);
-    const rawTitle =
-      meta(html, "property", "og:title") ??
-      meta(html, "name", "twitter:title") ??
-      firstText(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i) ??
-      link.title;
+    const h1Title = firstText(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i);
+    const rawTitle = source.strategy === "artesp"
+      ? h1Title ?? link.title
+      : meta(html, "property", "og:title") ??
+        meta(html, "name", "twitter:title") ??
+        h1Title ??
+        link.title;
     const conteudo = extractArticleText(html);
     const rawResumo =
       meta(html, "property", "og:description") ??
@@ -173,32 +453,60 @@ async function fetchNewsDetail(
       firstParagraph(html);
     const titulo = isGenericArtespTitle(source, rawTitle) ? link.title : rawTitle;
     const resumo = isGenericArtespDescription(source, rawResumo) ? excerptFromText(conteudo) : rawResumo;
-    const canonicalUrl = normalizeNewsUrl(absolutize(meta(html, "property", "og:url"), link.url) ?? link.url);
+    const rawCanonicalUrl = normalizeNewsUrl(absolutize(meta(html, "property", "og:url"), link.url) ?? link.url);
+    const canonicalUrl = rawCanonicalUrl && source.strategy === "artesp"
+      ? normalizeArtespNewsUrl(rawCanonicalUrl) ?? rawCanonicalUrl
+      : rawCanonicalUrl;
     const canonical = canonicalUrl && isNewsDetailUrl(source, canonicalUrl) ? canonicalUrl.toString() : link.url;
-    const image = extractMainImage(html, link.url);
+    const extractedImage = source.strategy === "artesp"
+      ? extractArtespMainImage(html, link.url)
+      : extractMainImage(html, link.url);
+    const imageCandidate = extractedImage.url
+      ? extractedImage
+      : link.imageUrl && isLikelyContentImage(link.imageUrl)
+        ? { url: link.imageUrl, source: link.imageSource ?? "listing thumbnail verified fallback" }
+        : { url: null, source: link.imageUrl ? "listing thumbnail skipped" : null };
+    const image = await validateOfficialImage(imageCandidate);
     const publicado_em =
       meta(html, "property", "article:published_time") ??
       meta(html, "name", "DC.date.created") ??
       meta(html, "name", "dcterms.created") ??
       meta(html, "name", "date") ??
       firstAttr(html, /<time[^>]+datetime=["']([^"']+)["']/i) ??
+      link.publishedAt ??
       extractDateFromText(stripTags(html));
+    const normalizedDate = normalizeDate(publicado_em);
+    const normalizedTitle = cleanText(titulo).slice(0, 500);
+    if (source.tier === "expanded" && (!canonical || !normalizedTitle || !normalizedDate)) return null;
     const hash_item = sha256(`${source.agencia_sigla}|${canonical}`);
 
     return {
       agencia_sigla: source.agencia_sigla,
-      titulo: cleanText(titulo).slice(0, 500),
+      titulo: normalizedTitle,
       url: canonical,
       fonte: source.fonte,
-      imagem_url: image.url,
+      imagem_url: image.status === "official_image_found" ? image.url : null,
       resumo: resumo ? cleanText(resumo).slice(0, 900) : null,
       conteudo,
-      publicado_em: normalizeDate(publicado_em),
+      publicado_em: normalizedDate,
       hash_item,
       metadata: {
         source_url: source.url,
+        source_id: source.id ?? null,
         collector: source.strategy,
+        collection_mode: "enrich",
+        news_tier: source.tier ?? "core",
+        news_profile: source.profile ?? source.strategy,
         image_source: image.source,
+        image_status: image.status,
+        image_content_type: image.contentType ?? null,
+        image_content_length: image.contentLength ?? null,
+        image_quality: image.url ? classifyImageQuality(image.url, image.contentLength ?? null) : "absent",
+        image_proxy_path: image.url ? `/api/v1/noticias/imagem?url=${encodeURIComponent(image.url)}` : null,
+        content_length: conteudo?.length ?? 0,
+        resumo_length: resumo?.length ?? 0,
+        content_status: classifyNewsContent(conteudo, resumo),
+        batch_offset: null,
       },
     };
   } catch {
@@ -206,27 +514,83 @@ async function fetchNewsDetail(
   }
 }
 
-async function fetchHtml(url: string) {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
-      Accept: "text/html,application/xhtml+xml",
+function buildListingFallbackItem(
+  source: NewsSourceConfig,
+  link: { url: string; title: string; imageUrl?: string | null; imageSource?: string | null; publishedAt?: string | null },
+): CollectedRegulatoryNews | null {
+  const canonicalUrl = normalizeNewsUrl(link.url);
+  const canonical = canonicalUrl?.toString() ?? link.url;
+  const titulo = cleanTitle(link.title).slice(0, 500);
+  const normalizedDate = normalizeDate(link.publishedAt ?? null);
+  if (!canonical || !titulo || !normalizedDate) return null;
+  const hash_item = sha256(`${source.agencia_sigla}|${canonical}`);
+  return {
+    agencia_sigla: source.agencia_sigla,
+    titulo,
+    url: canonical,
+    fonte: source.fonte,
+    imagem_url: null,
+    resumo: null,
+    conteudo: null,
+    publicado_em: normalizedDate,
+    hash_item,
+    metadata: {
+      source_url: source.url,
+      source_id: source.id ?? null,
+      collector: source.strategy,
+      collection_mode: "discover",
+      news_tier: source.tier ?? "core",
+      news_profile: source.profile ?? source.strategy,
+      image_source: link.imageUrl ? link.imageSource ?? "listing thumbnail" : null,
+      image_status: link.imageUrl ? "listing_image_unverified" : "official_image_absent",
+      image_quality: "unverified",
+      image_proxy_path: null,
+      content_length: 0,
+      resumo_length: 0,
+      content_status: "detail_unavailable",
+      detail_fallback: true,
+      batch_offset: null,
     },
-    next: { revalidate: 0 },
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status} ao coletar ${url}`);
-  return res.text();
+  };
+}
+
+async function fetchHtml(url: string) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
+        Accept: "text/html,application/xhtml+xml",
+      },
+      next: { revalidate: 0 },
+      signal: controller.signal,
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.text();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "falha desconhecida";
+    throw new Error(`Falha ao coletar HTML oficial (${message}): ${url}`);
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   const sourceUrl = new URL(source.url);
   if (url.host !== sourceUrl.host) return false;
 
-  const path = stripTrailingSlash(url.pathname);
+  const normalizedUrl = source.strategy === "artesp" ? normalizeArtespNewsUrl(url) ?? url : url;
+  const path = stripTrailingSlash(normalizedUrl.pathname);
   const sourcePath = stripTrailingSlash(sourceUrl.pathname);
   if (path === sourcePath) return false;
   if (!path.startsWith(`${sourcePath}/`)) return false;
-  if (source.strategy === "artesp" && /\/(?:!ut|dz)\//i.test(path)) return false;
+  if (source.strategy === "artesp" && normalizedUrl === url && /\/(?:!ut|dz|p0)\//i.test(path)) return false;
+
+  const relativeSegments = path.slice(sourcePath.length).split("/").filter(Boolean);
+  const agency = source.agencia_sigla.toUpperCase();
+  if (agency === "ANS" && relativeSegments.length < 2) return false;
+  if (agency === "ANAC" && !/^\d{4}$/.test(relativeSegments[0] ?? "")) return false;
 
   const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
   if (!lastSegment || /^\d+$/.test(lastSegment)) return false;
@@ -250,8 +614,31 @@ function normalizeNewsUrl(value: string) {
   }
 }
 
+function normalizeArtespNewsUrl(value: URL) {
+  const sourceUrl = new URL("https://www.artesp.sp.gov.br/artesp/noticias");
+  if (value.host !== sourceUrl.host) return null;
+
+  const urile = value.searchParams.get("urile");
+  const decodedUrile = urile ? decodeURIComponent(urile) : "";
+  const match = /\/wcm\/connect\/artesp_content\/artesp\/noticias\/([^/?#]+)/i.exec(decodedUrile);
+  const slug = match?.[1];
+  if (slug) {
+    return new URL(`/artesp/noticias/${slug}`, sourceUrl);
+  }
+
+  const path = stripTrailingSlash(value.pathname);
+  if (path.startsWith("/artesp/noticias/") && !/\/(?:!ut|dz)\//i.test(path)) {
+    const normalized = new URL(value.toString());
+    normalized.hash = "";
+    normalized.search = "";
+    return normalized;
+  }
+
+  return null;
+}
+
 function extractAnchors(html: string, baseUrl: string) {
-  const anchors: Array<{ href: string; text: string }> = [];
+  const anchors: Array<{ href: string; text: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null }> = [];
   const re = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
   let match: RegExpExecArray | null;
 
@@ -259,7 +646,15 @@ function extractAnchors(html: string, baseUrl: string) {
     const text = cleanText(stripTags(match[2]));
     if (!text) continue;
     try {
-      anchors.push({ href: new URL(decodeHtml(match[1]), baseUrl).toString(), text });
+      const href = new URL(decodeHtml(match[1]), baseUrl).toString();
+      const image = extractScopedThumbnail(html, match.index, match.index + match[0].length, baseUrl);
+      anchors.push({
+        href,
+        text,
+        imageUrl: image.url,
+        imageSource: image.source,
+        publishedAt: extractNearbyListingDate(html, match.index) ?? extractDateFromText(text),
+      });
     } catch {
       // Ignora links malformados do CMS.
     }
@@ -269,26 +664,34 @@ function extractAnchors(html: string, baseUrl: string) {
 }
 
 function extractArtespNewsAnchors(html: string, baseUrl: string) {
-  const sourcePath = stripTrailingSlash(new URL(baseUrl).pathname);
-  const source: NewsSourceConfig = { agencia_sigla: "ARTESP", fonte: "ARTESP", url: baseUrl, strategy: "artesp" };
+  const source: NewsSourceConfig = {
+    agencia_sigla: "ARTESP",
+    fonte: "ARTESP",
+    url: "https://www.artesp.sp.gov.br/artesp/noticias",
+    strategy: "artesp",
+  };
   const seen = new Set<string>();
-  const links: Array<{ href: string; text: string }> = [];
-  const hrefRe = /\bhref=["']([^"']+)["']/gi;
-  let match: RegExpExecArray | null;
+  const links: Array<{ href: string; text: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null }> = [];
 
-  while ((match = hrefRe.exec(html)) !== null) {
+  for (const anchor of extractAnchors(html, baseUrl)) {
     try {
-      const url = new URL(decodeHtml(match[1]), baseUrl);
+      const rawUrl = new URL(anchor.href);
+      const url = normalizeArtespNewsUrl(rawUrl) ?? rawUrl;
       const path = stripTrailingSlash(url.pathname);
       const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
-      if (!path.startsWith(`${sourcePath}/`) || path === sourcePath) continue;
-      if (/\/(?:!ut|dz)\//i.test(path)) continue;
+      if (/\/(?:!ut|dz|p0)\//i.test(path)) continue;
       if (!lastSegment || lastSegment.includes(".") || /^z[0-9a-z_]+$/i.test(lastSegment)) continue;
       if (!isNewsDetailUrl(source, url)) continue;
       const href = url.toString();
       if (seen.has(href)) continue;
       seen.add(href);
-      links.push({ href, text: slugToTitle(lastSegment) });
+      links.push({
+        href,
+        text: cleanTitle(anchor.text) || slugToTitle(lastSegment),
+        imageUrl: anchor.imageUrl,
+        imageSource: anchor.imageSource,
+        publishedAt: anchor.publishedAt ?? extractDateFromText(anchor.text),
+      });
     } catch {
       // Ignora hrefs malformados do CMS.
     }
@@ -303,6 +706,7 @@ function extractMainImage(html: string, baseUrl: string): { url: string | null; 
     { value: meta(html, "property", "og:image:url"), source: "og:image:url" },
     { value: meta(html, "name", "twitter:image"), source: "twitter:image" },
     { value: meta(html, "itemprop", "image"), source: "itemprop:image" },
+    { value: extractJsonLdImage(html), source: "json-ld image" },
     { value: firstImageFromBlock(html, /<article[^>]*>([\s\S]*?)<\/article>/i), source: "article img" },
     { value: firstImageFromBlock(html, /<main[^>]*>([\s\S]*?)<\/main>/i), source: "main img" },
     { value: firstImageFromBlock(html, /<body[^>]*>([\s\S]*?)<\/body>/i), source: "body img" },
@@ -317,14 +721,164 @@ function extractMainImage(html: string, baseUrl: string): { url: string | null; 
   return { url: null, source: null };
 }
 
+function extractJsonLdImage(html: string) {
+  for (const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try {
+      const json = JSON.parse(decodeHtml(match[1]));
+      const candidates = Array.isArray(json) ? json : [json];
+      for (const candidate of candidates) {
+        const raw = candidate?.image;
+        if (typeof raw === "string") return raw;
+        if (Array.isArray(raw) && typeof raw[0] === "string") return raw[0];
+        if (raw && typeof raw.url === "string") return raw.url;
+      }
+    } catch {
+      // JSON-LD malformado nao deve impedir a coleta da noticia.
+    }
+  }
+  return null;
+}
+
+function extractScopedThumbnail(html: string, anchorIndex: number, anchorEnd: number, baseUrl: string): { url: string | null; source: string | null } {
+  const snippets = [
+    containingElementSnippet(html, anchorIndex, anchorEnd, "article", 8000),
+    containingElementSnippet(html, anchorIndex, anchorEnd, "li", 6500),
+    containingElementSnippet(html, anchorIndex, anchorEnd, "section", 6500),
+    containingElementSnippet(html, anchorIndex, anchorEnd, "div", 4200),
+  ].filter((snippet): snippet is string => Boolean(snippet));
+
+  for (const snippet of snippets) {
+    const image = firstImageFromBlock(snippet, /([\s\S]*)/i);
+    const absolute = absolutize(image ? pickSrcsetFirst(image) : null, baseUrl);
+    if (absolute && isLikelyContentImage(absolute)) {
+      return { url: absolute, source: "listing card thumbnail" };
+    }
+  }
+
+  const fallbackSnippet = html.slice(Math.max(0, anchorIndex - 900), anchorEnd + 900);
+  const fallbackImage = firstImageFromBlock(fallbackSnippet, /([\s\S]*)/i);
+  const fallbackAbsolute = absolutize(fallbackImage ? pickSrcsetFirst(fallbackImage) : null, baseUrl);
+  if (fallbackAbsolute && isLikelyContentImage(fallbackAbsolute)) {
+    return { url: fallbackAbsolute, source: "nearby fallback thumbnail" };
+  }
+
+  return { url: null, source: null };
+}
+
+function containingElementSnippet(html: string, anchorIndex: number, anchorEnd: number, tag: string, maxLength: number) {
+  const openRe = new RegExp(`<${tag}\\b[^>]*>`, "gi");
+  let open: RegExpExecArray | null;
+  let start = -1;
+  while ((open = openRe.exec(html)) !== null && open.index <= anchorIndex) {
+    start = open.index;
+  }
+  if (start < 0) return null;
+
+  const closeRe = new RegExp(`</${tag}>`, "gi");
+  closeRe.lastIndex = anchorEnd;
+  const close = closeRe.exec(html);
+  if (!close) return null;
+  const end = close.index + close[0].length;
+  if (end <= anchorEnd || end - start > maxLength) return null;
+  return html.slice(start, end);
+}
+
+function extractNearbyListingDate(html: string, anchorIndex: number) {
+  const before = html.slice(Math.max(0, anchorIndex - 700), anchorIndex);
+  const after = html.slice(anchorIndex, anchorIndex + 2200);
+  const snippet = cleanText(stripTags(`${before} ${after}`));
+  return extractDateFromText(snippet);
+}
+
+async function validateOfficialImage(candidate: { url: string | null; source: string | null }) {
+  if (!candidate.url) {
+    return { ...candidate, status: "official_image_absent" as const };
+  }
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), IMAGE_TIMEOUT_MS);
+  try {
+    const response = await fetch(candidate.url, {
+      method: "GET",
+      headers: {
+        "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
+        Accept: "image/*",
+        Range: "bytes=0-1023",
+      },
+      next: { revalidate: 0 },
+      signal: controller.signal,
+    });
+    const contentType = response.headers.get("content-type") ?? "";
+    const contentRange = response.headers.get("content-range") ?? "";
+    const rangeTotal = Number(/\/(\d+)$/.exec(contentRange)?.[1] ?? 0);
+    const contentLength = rangeTotal || Number(response.headers.get("content-length") ?? 0) || null;
+    await response.body?.cancel();
+    if (response.ok && contentType.toLowerCase().startsWith("image/")) {
+      return { ...candidate, status: "official_image_found" as const, contentType, contentLength };
+    }
+    return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType, contentLength };
+  } catch {
+    return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType: null, contentLength: null };
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function mapWithConcurrency<T, R>(items: T[], concurrency: number, fn: (item: T, index: number) => Promise<R>): Promise<R[]> {
+  const results: R[] = [];
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, async () => {
+    while (cursor < items.length) {
+      const index = cursor;
+      cursor += 1;
+      results[index] = await fn(items[index], index);
+    }
+  });
+  await Promise.all(workers);
+  return results;
+}
+
+function extractArtespMainImage(html: string, baseUrl: string): { url: string | null; source: string | null } {
+  const articleAfterTitle = /<h1[^>]*>[\s\S]*?<\/h1>([\s\S]*?)(?:<h[2-4][^>]*>\s*(?:ultimas|[uú]ltimas)\s*<\/h[2-4]>|<footer|Complementary Content)/i.exec(html)?.[1] ?? html;
+  const contentImage = firstImageFromBlock(articleAfterTitle, /([\s\S]*)/i);
+  const absoluteContentImage = absolutize(contentImage ? pickSrcsetFirst(contentImage) : null, baseUrl);
+  if (absoluteContentImage && isLikelyContentImage(absoluteContentImage)) {
+    return { url: absoluteContentImage, source: "artesp body img" };
+  }
+
+  const generic = extractMainImage(html, baseUrl);
+  if (generic.url && !isGenericCmsImage(generic.url)) return generic;
+  return { url: null, source: generic.source };
+}
+
 function firstImageFromBlock(html: string, blockRe: RegExp) {
   const block = blockRe.exec(html)?.[1] ?? html;
-  const imgRe = /<img\b[^>]*(?:src|data-src|data-original|data-lazy-src|data-srcset|srcset)=["']([^"']+)["'][^>]*>/gi;
+  const sourceRe = /<source\b[^>]*>/gi;
+  let sourceMatch: RegExpExecArray | null;
+
+  while ((sourceMatch = sourceRe.exec(block)) !== null) {
+    const tag = sourceMatch[0];
+    const value = pickBestImageCandidate(
+      attr(tag, "srcset") ??
+      attr(tag, "data-srcset") ??
+      attr(tag, "data-src"),
+    );
+    if (value && !isDecorativeImage(value)) return value;
+  }
+
+  const imgRe = /<img\b[^>]*>/gi;
   let match: RegExpExecArray | null;
 
   while ((match = imgRe.exec(block)) !== null) {
-    const value = decodeHtml(match[1]);
-    if (!isDecorativeImage(value)) return value;
+    const tag = match[0];
+    const value = pickBestImageCandidate(
+      attr(tag, "srcset") ??
+      attr(tag, "data-srcset") ??
+      attr(tag, "data-original") ??
+      attr(tag, "data-lazy-src") ??
+      attr(tag, "data-src") ??
+      attr(tag, "src"),
+    );
+    if (value && !isDecorativeImage(value)) return value;
   }
 
   return null;
@@ -338,6 +892,11 @@ function meta(html: string, attr: "name" | "property" | "itemprop", key: string)
 
 function firstAttr(html: string, re: RegExp) {
   const match = re.exec(html);
+  return match?.[1] ? decodeHtml(match[1]) : null;
+}
+
+function attr(html: string, name: string) {
+  const match = new RegExp(`\\b${escapeRegExp(name)}=["']([^"']+)["']`, "i").exec(html);
   return match?.[1] ? decodeHtml(match[1]) : null;
 }
 
@@ -392,10 +951,10 @@ function extractArticleText(html: string) {
 }
 
 function extractDateFromText(text: string) {
-  const match = /(\d{2})\/(\d{2})\/(\d{4})(?:\s*(?:-|às|as)?\s*(\d{2}):(\d{2}))?/.exec(text);
+  const match = /(\d{2})\/(\d{2})\/(\d{4})(?:\s*(?:-|às|as)?\s*(\d{1,2})(?::|h)(\d{2}))?/i.exec(text);
   if (!match) return null;
   const [, day, month, year, hour = "12", minute = "00"] = match;
-  return `${year}-${month}-${day}T${hour}:${minute}:00-03:00`;
+  return `${year}-${month}-${day}T${hour.padStart(2, "0")}:${minute}:00-03:00`;
 }
 
 function normalizeDate(value: string | null) {
@@ -487,6 +1046,27 @@ function cleanTitle(value: string) {
     .trim();
 }
 
+function latestPublishedAt(items: CollectedRegulatoryNews[]) {
+  return items
+    .map((item) => item.publicado_em)
+    .filter((value): value is string => Boolean(value))
+    .sort()
+    .at(-1) ?? null;
+}
+
+function latestItem(items: CollectedRegulatoryNews[]) {
+  return [...items].sort((left, right) => {
+    const rightTime = publishedTime(right);
+    const leftTime = publishedTime(left);
+    return rightTime - leftTime;
+  })[0] ?? null;
+}
+
+function publishedTime(item: CollectedRegulatoryNews) {
+  const value = item.publicado_em ? new Date(item.publicado_em).getTime() : 0;
+  return Number.isFinite(value) ? value : 0;
+}
+
 function normalizeText(value: string) {
   return cleanText(value)
     .toLowerCase()
@@ -515,16 +1095,77 @@ function isNavigationTitle(value: string) {
 }
 
 function pickSrcsetFirst(value: string) {
-  return value.split(",")[0]?.trim().split(/\s+/)[0] ?? value;
+  return pickBestImageCandidate(value) ?? value;
+}
+
+function pickBestImageCandidate(value: string | null) {
+  if (!value) return null;
+  const candidates = value
+    .split(",")
+    .map((part) => {
+      const [url, descriptor = ""] = part.trim().split(/\s+/);
+      const width = Number(/(\d+)w/i.exec(descriptor)?.[1] ?? 0);
+      const density = Number(/([\d.]+)x/i.exec(descriptor)?.[1] ?? 0);
+      const score = width || Math.round(density * 1000) || imageScaleScore(url);
+      return { url, score };
+    })
+    .filter((candidate) => Boolean(candidate.url));
+  const best = candidates.sort((left, right) => right.score - left.score)[0]?.url ?? value.trim();
+  return upgradeImageScale(best);
+}
+
+function imageScaleScore(value: string) {
+  const normalized = normalizeText(value);
+  if (normalized.includes("large") || normalized.includes("grande")) return 1600;
+  if (normalized.includes("preview")) return 1000;
+  if (normalized.includes("mini") || normalized.includes("thumb")) return 200;
+  return 600;
+}
+
+function classifyImageQuality(value: string, contentLength: number | null) {
+  const scaleScore = imageScaleScore(value);
+  if (scaleScore >= 1600 || (contentLength ?? 0) >= 80_000) return "high";
+  if (scaleScore >= 1000 || (contentLength ?? 0) >= 25_000) return "medium";
+  if (scaleScore <= 200 || (contentLength !== null && contentLength < 12_000)) return "low";
+  return "unknown";
+}
+
+function classifyNewsContent(conteudo: string | null, resumo: string | null) {
+  const contentLength = conteudo?.length ?? 0;
+  const summaryLength = resumo?.length ?? 0;
+  if (contentLength >= 900 && summaryLength >= 80) return "complete";
+  if (contentLength >= 350 || summaryLength >= 120) return "partial";
+  if (contentLength > 0 || summaryLength > 0) return "short";
+  return "missing";
+}
+
+function upgradeImageScale(value: string) {
+  return value
+    .replace(/\/@@images\/image\/(?:mini|thumb|tile|preview)(?=\/|$|\?)/i, "/@@images/image/large")
+    .replace(/\/@@images\/[^/?#]+\/(?:mini|thumb|tile|preview)(?=\/|$|\?)/i, (match) => match.replace(/\/(?:mini|thumb|tile|preview)$/i, "/large"));
 }
 
 function isDecorativeImage(value: string) {
   const normalized = normalizeText(value);
   return normalized.includes("logo") ||
+    normalized.includes("logo-meta") ||
+    normalized.includes("logo-footer") ||
+    normalized.includes("logo-gov") ||
+    normalized.includes("warnings/") ||
+    normalized.includes("e-mail-novos-grupos") ||
+    normalized.includes("acessibilidade") ||
     normalized.includes("vlibras") ||
     normalized.includes("avatar") ||
     normalized.includes("icone") ||
     normalized.includes("icon");
+}
+
+function isGenericCmsImage(value: string) {
+  const normalized = normalizeText(value);
+  return normalized.includes("sggd.sp.gov.br/statics/img/logo-meta") ||
+    normalized.includes("/statics/img/logo") ||
+    normalized.includes("/statics/img/warnings/") ||
+    normalized.includes("/statics/img/acessibilidade");
 }
 
 function isLikelyContentImage(value: string) {

@@ -61,7 +61,11 @@ function isAllowedOfficialImageHost(url: URL) {
   return host === "gov.br" ||
     host.endsWith(".gov.br") ||
     host === "sp.gov.br" ||
-    host.endsWith(".sp.gov.br");
+    host.endsWith(".sp.gov.br") ||
+    host === "senado.leg.br" ||
+    host.endsWith(".senado.leg.br") ||
+    host === "senado.gov.br" ||
+    host.endsWith(".senado.gov.br");
 }
 
 function inferImageContentType(pathname: string) {

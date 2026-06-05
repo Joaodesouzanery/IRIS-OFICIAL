@@ -11,6 +11,7 @@ const demoSchedule: RegulatoryNewsletterSchedule = {
   dia_semana: 5,
   hora_envio: "09:00:00",
   destinatarios: [],
+  recipient_count: 0,
   ativo: true,
   proximo_envio: nextWeekdayIso(5, "09:00"),
   ultimo_aviso_em: null,
@@ -21,7 +22,7 @@ const demoSchedule: RegulatoryNewsletterSchedule = {
 
 export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
-    return NextResponse.json({ schedules: [demoSchedule], due_tomorrow: isDueTomorrow(demoSchedule.proximo_envio) });
+    return buildScheduleResponse([demoSchedule]);
   }
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -35,10 +36,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar agendamentos" }, { status: 500 });
   }
 
-  return NextResponse.json({
-    schedules: data ?? [],
-    due_tomorrow: (data ?? []).some((schedule) => schedule.ativo && isDueTomorrow(schedule.proximo_envio)),
-  });
+  return buildScheduleResponse((data ?? []) as RegulatoryNewsletterSchedule[]);
 }
 
 export async function POST(req: NextRequest) {
@@ -102,10 +100,37 @@ function nextWeekdayIso(day: number, time: string) {
   return next.toISOString();
 }
 
-function isDueTomorrow(value: string | null) {
-  if (!value) return false;
-  const target = new Date(value);
+function isDueTomorrow(value: string | null, day?: number) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
+  if (typeof day === "number" && tomorrow.getDay() === day) return true;
+  if (!value) return false;
+  const target = new Date(value);
   return target.toDateString() === tomorrow.toDateString();
+}
+
+function isDueToday(value: string | null, day?: number) {
+  const today = new Date();
+  if (typeof day === "number" && today.getDay() === day) return true;
+  if (!value) return false;
+  const target = new Date(value);
+  return target.toDateString() === today.toDateString();
+}
+
+function withRecipientCount(schedule: RegulatoryNewsletterSchedule): RegulatoryNewsletterSchedule {
+  return {
+    ...schedule,
+    recipient_count: Array.isArray(schedule.destinatarios) ? schedule.destinatarios.length : 0,
+  };
+}
+
+function buildScheduleResponse(schedules: RegulatoryNewsletterSchedule[]) {
+  const enriched = schedules.map(withRecipientCount);
+  const dueSchedules = enriched.filter((schedule) => schedule.ativo && isDueToday(schedule.proximo_envio, schedule.dia_semana));
+  return NextResponse.json({
+    schedules: enriched,
+    due_today: dueSchedules.length > 0,
+    due_tomorrow: enriched.some((schedule) => schedule.ativo && isDueTomorrow(schedule.proximo_envio, schedule.dia_semana)),
+    due_schedules: dueSchedules,
+  });
 }

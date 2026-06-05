@@ -4,9 +4,16 @@ export interface MinutoRegulacaoItemInput {
   noticia_id?: string | null;
   data?: string | null;
   agencia?: string | null;
+  imagem_url?: string | null;
+  imagem_alt?: string | null;
   titulo_minuto?: string | null;
+  subtitulo_minuto?: string | null;
   ato?: string | null;
+  ato_titulo?: string | null;
   texto_minuto?: string | null;
+  texto_institucional?: string | null;
+  editorial_model?: string | null;
+  review_status?: "pendente" | "revisado" | "aprovado" | null;
   fonte_url?: string | null;
 }
 
@@ -41,9 +48,8 @@ export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
 function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput) {
   const generatedAt = input.generatedAt ?? new Date();
   const date = formatNewsletterDate(generatedAt);
-  const selected = input.noticias.slice(0, 3);
-  const [main, second, third] = selected;
-  const heroSubtitle = buildNewsletterSubtitle(selected, input.assunto);
+  const selected = input.noticias;
+  const pages = chunkNewsletterItems(selected);
   const logo = absolutePath("/brand/iris-logo-transparent.png", input.baseUrl);
 
   return `<!DOCTYPE html>
@@ -54,89 +60,95 @@ function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput) {
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<title>${escapeHtml(input.assunto || "Newsletter Regulatorio")}</title>
+<title>${escapeHtml(input.assunto || "Newsletter Regulatória")}</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact;color-adjust:exact;}
-html{background:#111827;}
-body{width:960px;height:1357px;background:${NEWSLETTER_COLORS.page};color:#fff;font-family:'Inter',sans-serif;display:flex;flex-direction:column;overflow:hidden;padding-bottom:32px;margin:0 auto;position:relative;isolation:isolate;}
+html,body{background:#111827;}
+body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
+.newsletter-page{width:960px;height:1357px;background:${NEWSLETTER_COLORS.page};display:flex;flex-direction:column;overflow:hidden;padding-bottom:32px;margin:0 auto;position:relative;isolation:isolate;break-after:page;page-break-after:always;}
+.newsletter-page:last-child{break-after:auto;page-break-after:auto;}
 .print-bg{position:absolute;inset:0;width:960px;height:1357px;z-index:0;pointer-events:none;display:block;}
 .topbar,.hero,.body,.footer{position:relative;z-index:1;}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:0 44px;height:38px;flex-shrink:0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:9px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
 .topbar strong{color:rgba(255,255,255,0.75);font-weight:600;}
 .hero{background:${NEWSLETTER_COLORS.hero};padding:0 44px;height:190px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid rgba(255,255,255,0.08);}
-.hero-left{display:flex;flex-direction:column;gap:10px;}
+.hero-left{display:flex;flex-direction:column;gap:8px;min-width:0;max-width:510px;}
 .hero-eyebrow{font-size:8.5px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};}
 .hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:#fff;}
-.hero-subtitle{font-size:12px;font-weight:400;line-height:1.55;letter-spacing:0.04em;text-transform:uppercase;color:rgba(255,255,255,0.56);max-width:500px;}
+.hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:rgba(255,255,255,0.56);max-width:510px;}
 .hero-subtitle strong{color:rgba(255,255,255,0.78);font-weight:500;}
 .hero-logo{width:400px;height:auto;flex-shrink:0;object-fit:contain;display:block;}
-.body{display:grid;grid-template-columns:1fr 296px;flex:1;min-height:0;}
-.col-main{padding:28px 32px 16px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:18px;overflow:hidden;}
-.main-img{width:100%;height:256px;background:${NEWSLETTER_COLORS.image};flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.13);font-weight:500;overflow:hidden;}
-.main-img img,.side-img img{width:100%;height:100%;object-fit:cover;display:block;}
-.art-tag{font-size:8.5px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};display:block;margin-bottom:7px;}
-.main-title{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;line-height:1.1;letter-spacing:-0.015em;color:#fff;text-align:left;}
-.main-body{font-size:13px;line-height:1.78;color:rgba(255,255,255,0.58);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
-.main-body p+p{margin-top:10px;}
-.read-more{display:inline-flex;align-items:center;gap:6px;font-size:8.5px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
+.body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
+.col-main{padding:24px 32px 14px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:12px;overflow:hidden;}
+.main-img{width:100%;height:255px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:4px 0;}
+.main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};display:block;margin-bottom:8px;}
+.main-title{font-family:'Playfair Display',serif;font-size:29px;font-weight:900;line-height:1.04;letter-spacing:-0.01em;color:#fff;text-align:left;}
+.main-body{font-size:15px;line-height:1.48;color:rgba(255,255,255,0.76);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
+.main-body p+p{margin-top:9px;}
+.read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
 .col-side{display:flex;flex-direction:column;}
-.side-art{padding:24px 44px 14px 24px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:10px;flex:1;overflow:hidden;}
+.side-art{padding:24px 38px 16px 24px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:12px;flex:1;overflow:visible;}
+.side-art.no-image{gap:12px;justify-content:flex-start;}
 .side-art:last-child{border-bottom:none;}
-.side-img{width:100%;height:130px;flex-shrink:0;background:${NEWSLETTER_COLORS.image};display:flex;align-items:center;justify-content:center;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.11);font-weight:500;overflow:hidden;}
-.side-title{font-family:'Playfair Display',serif;font-size:17.5px;font-weight:800;line-height:1.2;letter-spacing:0;color:#fff;text-align:left;}
-.side-excerpt{font-size:13px;line-height:1.72;color:rgba(255,255,255,0.58);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
-.side-link{font-size:8.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
+.side-img{width:100%;height:170px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.16);font-weight:500;overflow:hidden;}
+.side-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.side-title{font-family:'Playfair Display',serif;font-size:20.5px;font-weight:800;line-height:1.14;letter-spacing:0;color:#fff;text-align:left;}
+.side-excerpt{font-size:13.5px;line-height:1.48;color:rgba(255,255,255,0.66);text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
+.side-link{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
 .footer{border-top:1px solid rgba(255,255,255,0.09);padding:0 44px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;}
 .footer-brand{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#fff;}
 .footer-sub{font-size:8.5px;letter-spacing:0.06em;margin-top:2px;color:rgba(255,255,255,0.25);text-transform:uppercase;display:block;}
 .footer-note{font-size:8.5px;letter-spacing:0.08em;text-align:right;color:rgba(255,255,255,0.2);text-transform:uppercase;line-height:1.6;}
 @page{size:960px 1357px;margin:0;}
-@media print{html,body{background:${NEWSLETTER_COLORS.page}!important;}body{margin:0!important;}*,*::before,*::after{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;}}
+@media print{html,body{background:${NEWSLETTER_COLORS.page}!important;}.newsletter-page{margin:0!important;}*,*::before,*::after{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;}}
 </style>
 <script>
-function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src");if(fallback&&img.src!==fallback){img.removeAttribute("data-fallback-src");img.src=fallback;return;}img.style.display="none";if(img.parentElement){img.parentElement.textContent=img.parentElement.getAttribute("data-placeholder")||"[ imagem ]";}}
+function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src");if(fallback&&img.src!==fallback){img.removeAttribute("data-fallback-src");img.src=fallback;return;}if(img.parentElement){img.parentElement.remove();}}
 </script>
 </head>
 <body>
-  <svg class="print-bg" viewBox="0 0 960 1357" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect width="960" height="1357" fill="${NEWSLETTER_COLORS.page}"/>
-    <rect y="38" width="960" height="190" fill="${NEWSLETTER_COLORS.hero}"/>
-    <line x1="0" y1="38" x2="960" y2="38" stroke="rgba(255,255,255,0.1)"/>
-    <line x1="0" y1="228" x2="960" y2="228" stroke="rgba(255,255,255,0.08)"/>
-    <line x1="664" y1="228" x2="664" y2="1323" stroke="rgba(255,255,255,0.08)"/>
-    <line x1="0" y1="1323" x2="960" y2="1323" stroke="rgba(255,255,255,0.09)"/>
-  </svg>
-  <header class="topbar">
-    <span>IRIS &mdash; <strong>Newsletter Regulat&oacute;rio</strong></span>
-    <span>${escapeHtml(date)}</span>
-    <strong>contato@irisregulacao.org</strong>
-  </header>
-  <section class="hero">
-    <div class="hero-left">
-      <span class="hero-eyebrow">Edi&ccedil;&atilde;o Semanal &middot; Atualiza&ccedil;&atilde;o Regulat&oacute;ria</span>
-      <h1 class="hero-title">NEWSLETTER<br>REGULAT&Oacute;RIO</h1>
-      <p class="hero-subtitle">${heroSubtitle}</p>
-    </div>
-    <img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/>
-  </section>
-  <div class="body">
-    <div class="col-main">
-      ${renderNewsletterMainArticle(main, input.baseUrl)}
-    </div>
-    <div class="col-side">
-      ${renderNewsletterSideArticle(second, input.baseUrl)}
-      ${renderNewsletterSideArticle(third, input.baseUrl)}
-    </div>
-  </div>
-  <footer class="footer">
-    <div>
-      <span class="footer-brand">IRIS Regula&ccedil;&atilde;o</span>
-      <span class="footer-sub">Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade</span>
-    </div>
-    <div class="footer-note">Documento gerado automaticamente &middot; Fontes oficiais<br>Uso interno &mdash; confidencial</div>
-  </footer>
+  ${(pages.length ? pages : [[]]).map((page) => renderNewsletterPage(page, date, logo, input)).join("")}
 </body>
 </html>`;
+}
+
+function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: string, input: NewsletterDocumentInput) {
+  const heroSubtitle = buildNewsletterSubtitle(items, input.assunto);
+  return `<section class="newsletter-page">
+    <svg class="print-bg" viewBox="0 0 960 1357" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="960" height="1357" fill="${NEWSLETTER_COLORS.page}"/>
+      <rect y="38" width="960" height="190" fill="${NEWSLETTER_COLORS.hero}"/>
+      <line x1="0" y1="38" x2="960" y2="38" stroke="rgba(255,255,255,0.1)"/>
+      <line x1="0" y1="228" x2="960" y2="228" stroke="rgba(255,255,255,0.08)"/>
+      <line x1="557" y1="228" x2="557" y2="1323" stroke="rgba(255,255,255,0.08)"/>
+      <line x1="0" y1="1323" x2="960" y2="1323" stroke="rgba(255,255,255,0.09)"/>
+    </svg>
+    <header class="topbar">
+      <span>IRIS &mdash; <strong>Newsletter Regulat&oacute;rio</strong></span>
+      <span>${escapeHtml(date)}</span>
+      <strong>contato@irisregulacao.org</strong>
+    </header>
+    <section class="hero">
+      <div class="hero-left">
+        <span class="hero-eyebrow">Edi&ccedil;&atilde;o Semanal &middot; Atualiza&ccedil;&atilde;o Regulat&oacute;ria</span>
+        <h1 class="hero-title">NEWSLETTER<br>REGULAT&Oacute;RIO</h1>
+        <p class="hero-subtitle">${heroSubtitle}</p>
+      </div>
+      <img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/>
+    </section>
+    <div class="body">
+      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl)}</article>
+      <aside class="col-side">
+        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0)}
+        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1)}
+      </aside>
+    </div>
+    <footer class="footer">
+      <div><span class="footer-brand">IRIS Regula&ccedil;&atilde;o</span><span class="footer-sub">Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade</span></div>
+      <div class="footer-note">Documento gerado automaticamente &middot; Fontes oficiais<br>Uso interno &mdash; confidencial</div>
+    </footer>
+  </section>`;
 }
 
 function buildMinutoRegulacaoHtml(input: NewsletterDocumentInput) {
@@ -148,77 +160,108 @@ function buildMinutoRegulacaoHtml(input: NewsletterDocumentInput) {
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=794, initial-scale=1">
-  <title>${escapeHtml(input.assunto || "Minuto da Regulacao")}</title>
+  <meta name="viewport" content="width=1123, initial-scale=1">
+  <title>${escapeHtml(input.assunto || "Minuto da Regulação")}</title>
   <style>
-    @page { size: A4; margin: 0; }
+    @page { size: A4 landscape; margin: 12mm; }
     * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact; }
-    body { margin: 0; background: #e6e7ea; color: #151515; font-family: Arial, Helvetica, sans-serif; }
-    main { width: 794px; min-height: 1123px; margin: 0 auto; background: #fff; padding: 54px 68px 48px; }
-    header { border-bottom: 2px solid #111; padding-bottom: 18px; margin-bottom: 28px; }
-    .eyebrow { margin: 0 0 8px; font-size: 10px; line-height: 1; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #4a4a4a; }
-    h1 { margin: 0; font-size: 36px; line-height: 1.02; font-weight: 800; letter-spacing: 0; text-transform: uppercase; }
-    .generated { margin: 10px 0 0; font-size: 12px; color: #555; }
-    .timeline { display: grid; grid-template-columns: 1fr; gap: 0; }
-    .minuto-item { break-inside: avoid; padding: 0 0 28px; margin: 0 0 28px; border-bottom: 1px solid #d6d6d6; }
-    .item-date { margin: 0 0 11px; font-size: 17px; line-height: 1.2; font-weight: 500; color: #252525; }
-    .agency { margin: 0 0 5px; font-size: 15px; line-height: 1.32; font-weight: 500; color: #242424; }
-    .minute-title { margin: 0 0 8px; font-size: 20px; line-height: 1.18; font-weight: 800; color: #171717; }
-    .act { margin: 0 0 17px; font-size: 15px; line-height: 1.28; font-weight: 700; color: #242424; }
-    .summary { margin: 0; max-width: 560px; white-space: pre-line; font-size: 16px; line-height: 1.42; font-weight: 400; color: #202020; }
-    .source { display: inline-block; margin-top: 12px; color: #1d4f7a; font-size: 10px; line-height: 1; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+    html, body { min-height: 100%; }
+    body { margin: 0; background: #f3f4f6; color: #111827; font-family: Arial, Helvetica, sans-serif; }
+    .minuto-page { width: 1123px; min-height: 794px; max-width: 100%; margin: 0 auto; background: #fff; padding: 28px 36px; display:flex; flex-direction:column; break-after: page; page-break-after: always; }
+    .minuto-page:last-child { break-after: auto; page-break-after: auto; }
+    header { border-bottom: 2px solid #111827; padding-bottom: 16px; margin-bottom: 24px; display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-shrink:0; }
+    .eyebrow { margin: 0 0 8px; font-size: 12px; line-height: 1; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #4b5563; }
+    h1 { margin: 0; font-size: 38px; line-height: 1.02; font-weight: 800; letter-spacing: 0; text-transform: uppercase; }
+    .generated { margin: 0; font-size: 13px; color: #6b7280; text-align:right; flex-shrink:0; }
+    .minuto-item { flex:1; min-height:0; break-inside: avoid; display:flex; flex-direction:column; justify-content:center; gap:22px; }
+    .minuto-copy { min-width:0; max-width: 980px; margin: 0 auto; display:flex; flex-direction:column; justify-content:center; }
+    .item-meta { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #4b5563; }
+    .script-title { margin: 0 0 16px; font-size: 42px; line-height: 1.08; font-weight: 800; color: #111827; }
+    .script-subtitle { margin: 0 0 20px; font-size: 30px; line-height: 1.22; font-weight: 650; color: #1f2937; }
+    .script { margin: 0; white-space: pre-line; font-size: 25px; line-height: 1.38; font-weight: 500; color: #111827; }
+    .source { color: #1d4f7a; text-decoration: none; }
     .empty { color: #666; font-size: 14px; }
-    footer { margin-top: 28px; padding-top: 14px; border-top: 2px solid #111; color: #555; font-size: 10px; line-height: 1.4; text-transform: uppercase; letter-spacing: .08em; }
-    @media print { body { background: #fff; } main { margin: 0; } * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; } }
+    @media print { body { background: #fff; } .minuto-page { width:auto; max-width: none; min-height: calc(100vh - 24mm); margin: 0; padding: 0; } * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; } }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">IRIS Regula&ccedil;&atilde;o</p>
-      <h1>Minuto da Regula&ccedil;&atilde;o</h1>
-      <p class="generated">Gerado em ${escapeHtml(date)}</p>
-    </header>
-    ${
-      items.length
-        ? `<section class="timeline">${items.map(renderMinutoItem).join("")}</section>`
-        : `<p class="empty">Selecione not&iacute;cias e cole os textos revisados para montar o Minuto da Regula&ccedil;&atilde;o.</p>`
-    }
-    <footer>Documento gerado automaticamente com base em fontes oficiais. Conte&uacute;do resumido para uso interno e acompanhamento regulat&oacute;rio.</footer>
-  </main>
+  ${items.length ? items.map((item, index) => renderMinutoPage(item, input.baseUrl, date, index)).join("") : renderMinutoEmptyPage(date)}
 </body>
 </html>`;
+}
+
+function renderMinutoPage(item: MinutoRegulacaoItemInput, _baseUrl: string | undefined, date: string, index: number) {
+  return `<section class="minuto-page">
+    ${renderMinutoHeader(date)}
+    ${renderMinutoItem(item, index)}
+  </section>`;
+}
+
+function renderMinutoEmptyPage(date: string) {
+  return `<section class="minuto-page">
+    ${renderMinutoHeader(date)}
+    <p class="empty">Selecione not&iacute;cias para montar o roteiro.</p>
+  </section>`;
+}
+
+function renderMinutoHeader(date: string) {
+  return `<header>
+    <div>
+      <p class="eyebrow">IRIS Regula&ccedil;&atilde;o</p>
+      <h1>Minuto da Regula&ccedil;&atilde;o</h1>
+    </div>
+    <p class="generated">Roteiro gerado em ${escapeHtml(date)}</p>
+  </header>`;
 }
 
 function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string) {
   const title = item?.titulo ?? "Selecione a noticia principal para montar a edicao";
   return `
-    <div class="main-img" data-placeholder="[ imagem da not&iacute;cia ]">${renderArticleImage(item, baseUrl, title)}</div>
     <div>
       <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
-      <h2 class="main-title">${escapeHtml(clipText(title, 145))}</h2>
+      <h2 class="main-title">${escapeHtml(title)}</h2>
     </div>
-    <div class="main-body">${renderParagraphs(item?.conteudo || item?.resumo || "A noticia selecionada aparecera neste espaco, mantendo o mesmo desenho, hierarquia e proporcao do layout original.", 3, 470)}</div>
+    ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
+    <div class="main-body">${renderParagraphs(newsletterArticleText(item, item?.imagem_url ? 2200 : 2800), item?.imagem_url ? 7 : 8, item?.imagem_url ? 420 : 440)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="read-more">Ler fonte oficial &#8599;</a>` : `<a class="read-more">Ler fonte oficial &#8599;</a>`}
   `;
 }
 
-function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string) {
+function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string, index = 0) {
+  if (!item) return "";
   const title = item?.titulo ?? "Selecione uma noticia secundaria";
-  return `<div class="side-art">
-    <div class="side-img" data-placeholder="[ imagem ]">${renderArticleImage(item, baseUrl, title)}</div>
+  const excerptLimit = item.imagem_url ? (index >= 1 ? 180 : 240) : 320;
+  return `<div class="side-art ${item.imagem_url ? "" : "no-image"}">
+    ${item.imagem_url ? `<div class="side-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
     <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
-    <h3 class="side-title">${escapeHtml(clipText(title, 105))}</h3>
-    <p class="side-excerpt">${escapeHtml(clipText(item?.conteudo || item?.resumo || "O resumo revisado da noticia secundaria aparecera neste bloco.", 310))}</p>
+    <h3 class="side-title">${escapeHtml(title)}</h3>
+    <p class="side-excerpt">${escapeHtml(newsletterArticleText(item, excerptLimit))}</p>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="side-link">Fonte oficial &#8599;</a>` : `<a class="side-link">Fonte oficial &#8599;</a>`}
   </div>`;
 }
 
 function renderArticleImage(item: RegulatoryNews | undefined, baseUrl: string | undefined, alt: string) {
   if (!item?.imagem_url) return "";
-  const src = officialImageUrl(item.imagem_url);
-  const fallback = proxiedImageUrl(item.imagem_url, baseUrl);
+  const src = primaryImageUrl(item.imagem_url, baseUrl);
+  const fallback = fallbackImageUrl(item.imagem_url, baseUrl, src);
   return renderImage(src, fallback, alt);
+}
+
+function chunkItems<T>(items: T[], size: number) {
+  const pages: T[][] = [];
+  for (let index = 0; index < items.length; index += size) {
+    pages.push(items.slice(index, index + size));
+  }
+  return pages;
+}
+
+function chunkNewsletterItems(items: RegulatoryNews[]): RegulatoryNews[][] {
+  return chunkItems(items, 3);
+}
+
+export function estimateNewsletterPageCount(items: RegulatoryNews[]) {
+  const pages = chunkNewsletterItems(items);
+  return Math.max(1, pages.length);
 }
 
 export function buildMinutoRegulacaoPrompt(items: RegulatoryNews[]) {
@@ -233,16 +276,17 @@ export function buildMinutoRegulacaoPrompt(items: RegulatoryNews[]) {
     conteudo_completo: clipText(item.conteudo || item.resumo || "", 4200),
   }));
 
-  return `Voce e redator regulatorio do IRIS. Transforme as noticias abaixo em itens para o documento "Minuto da Regulacao", no mesmo estilo do PDF Retrospectiva 2025: data, agencia, titulo proprio, ato regulatorio e um texto curto, objetivo e institucional.
+  return `Voce e roteirista regulatorio do IRIS. Transforme as noticias abaixo em roteiro de teleprompter para video curto no Instagram.
 
 Regras:
 - Responda somente em JSON valido.
-- Use o formato: {"itens":[{"ordem":1,"noticia_id":"id_original","data":"...","agencia":"...","titulo_minuto":"...","ato":"...","texto_minuto":"...","fonte_url":"..."}]}.
-- Crie titulo_minuto proprio a partir do titulo original, resumo e conteudo completo. Nao copie literalmente o titulo da noticia, salvo se for nome oficial indispensavel.
-- titulo_minuto deve ser curto, claro e editorial, com ate 90 caracteres.
-- ato deve indicar o ato/regra/decisao/fato regulatorio em linguagem objetiva, sem repetir exatamente o titulo_minuto.
-- texto_minuto deve ter 2 a 3 frases curtas, explicar o que mudou e o impacto regulatorio.
-- Nao copie a noticia integral; reescreva em linguagem propria.
+- Use o formato: {"titulo_geral":"...","subtitulo_geral":"...","itens":[{"ordem":1,"noticia_id":"id_original","data":"...","agencia":"...","titulo_minuto":"...","subtitulo_minuto":"...","texto_minuto":"...","fonte_url":"..."}]}.
+- titulo_minuto deve ser um novo titulo jornalistico, curto e claro, combinando titulo original, resumo e conteudo completo.
+- subtitulo_minuto deve ser uma frase breve com o principal impacto regulatorio da noticia.
+- texto_minuto deve ser uma fala pronta para camera, com 20 a 40 segundos.
+- Linguagem: natural, clara, sem jargao excessivo, como apresentador falando para frente da camera.
+- Comece pelo fato principal, explique por que importa e feche com transicao curta.
+- Nao inclua marcacoes de cena, hashtags, emojis, CTA generico ou texto institucional.
 - Nao invente fatos, datas, nomes, normas ou efeitos. Se faltar informacao, seja conservador.
 - Preserve o link da fonte oficial.
 
@@ -258,12 +302,21 @@ export function buildMinutoRegulacaoDraftJson(items: RegulatoryNews[]) {
       data: item.publicado_em ?? item.first_seen_at,
       agencia: item.agencia?.nome || item.agencia_sigla || item.fonte,
       titulo_minuto: createMinutoTitle(item),
-      ato: createMinutoAct(item),
-      texto_minuto: createMinutoText(item),
+      subtitulo_minuto: createMinutoSubtitle(item),
+      ato_titulo: null,
+      ato: null,
+      texto_institucional: null,
+      texto_minuto: createMinutoScript(item),
+      editorial_model: identifyEditorialModel(item),
+      review_status: "revisado",
       fonte_url: item.url,
     })),
   };
   return JSON.stringify(payload, null, 2);
+}
+
+export function buildMinutoRegulacaoDraftText(items: RegulatoryNews[]) {
+  return items.map((item) => createMinutoScript(item)).join("\n\n---\n\n");
 }
 
 function buildMinutoItems(input: NewsletterDocumentInput): MinutoRegulacaoItemInput[] {
@@ -275,21 +328,28 @@ function buildMinutoItems(input: NewsletterDocumentInput): MinutoRegulacaoItemIn
     if (item.fonte_url && allowedUrls.has(item.fonte_url)) return true;
     return false;
   });
-  const structured = filterSelected(input.minuto_items?.filter((item) => item.texto_minuto || item.ato) ?? []);
-  if (structured.length > 0) return structured;
+  const structured = filterSelected(input.minuto_items?.filter((item) => item.texto_minuto || item.texto_institucional || item.titulo_minuto) ?? []);
+  if (structured.length > 0) return attachMinutoNewsImages(structured, input.noticias);
 
   const parsed = filterSelected(parseMinutoTextos(input.minuto_textos));
-  if (parsed.length > 0) return parsed;
+  if (parsed.length > 0) return attachMinutoNewsImages(parsed, input.noticias);
 
-  return input.noticias.map((item) => ({
+  return attachMinutoNewsImages(input.noticias.map((item) => ({
     noticia_id: item.id,
     data: item.publicado_em ?? item.first_seen_at,
     agencia: item.agencia?.nome || item.agencia_sigla || item.fonte,
-    titulo_minuto: null,
-    ato: item.titulo,
-    texto_minuto: "",
+    imagem_url: item.imagem_url,
+    imagem_alt: item.titulo,
+    titulo_minuto: createMinutoTitle(item),
+    subtitulo_minuto: null,
+    ato: null,
+    ato_titulo: null,
+    texto_minuto: createMinutoScript(item),
+    texto_institucional: createMinutoScript(item),
+    editorial_model: null,
+    review_status: "pendente",
     fonte_url: item.url,
-  }));
+  })), input.noticias);
 }
 
 function parseMinutoTextos(value: string[] | undefined): MinutoRegulacaoItemInput[] {
@@ -305,28 +365,63 @@ function parseMinutoTextos(value: string[] | undefined): MinutoRegulacaoItemInpu
           noticia_id: item.noticia_id ?? item.id ?? null,
           data: item.data ?? null,
           agencia: item.agencia ?? null,
+          imagem_url: item.imagem_url ?? null,
+          imagem_alt: item.imagem_alt ?? item.titulo_minuto ?? item.titulo ?? null,
           titulo_minuto: item.titulo_minuto ?? item.titulo ?? null,
-          ato: item.ato ?? item.titulo ?? null,
-          texto_minuto: item.texto_minuto ?? item.texto ?? null,
+          subtitulo_minuto: null,
+          ato: null,
+          ato_titulo: null,
+          texto_minuto: item.texto_minuto ?? item.roteiro ?? item.texto ?? null,
+          texto_institucional: item.texto_institucional ?? item.texto_minuto ?? item.roteiro ?? item.texto ?? null,
+          editorial_model: item.editorial_model ?? null,
+          review_status: item.review_status === "aprovado" || item.review_status === "revisado" ? item.review_status : "pendente",
           fonte_url: item.fonte_url ?? item.url ?? null,
         }));
       }
     } catch {
-      return value.map((text) => ({ texto_minuto: text }));
+      return value.map((text) => ({ texto_minuto: text, texto_institucional: text }));
     }
   }
-  return value.map((text) => ({ texto_minuto: text }));
+  return value.map((text) => ({ texto_minuto: text, texto_institucional: text }));
 }
 
-function renderMinutoItem(item: MinutoRegulacaoItemInput) {
+function attachMinutoNewsImages(items: MinutoRegulacaoItemInput[], noticias: RegulatoryNews[]) {
+  const byId = new Map(noticias.map((item) => [item.id, item]));
+  const byUrl = new Map(noticias.map((item) => [item.url, item]));
+  return items.map((item, index) => {
+    const noticia = (item.noticia_id ? byId.get(item.noticia_id) : undefined)
+      ?? (item.fonte_url ? byUrl.get(item.fonte_url) : undefined)
+      ?? noticias[index];
+    return {
+      ...item,
+      data: item.data ?? noticia?.publicado_em ?? noticia?.first_seen_at ?? null,
+      agencia: item.agencia ?? noticia?.agencia?.nome ?? noticia?.agencia_sigla ?? noticia?.fonte ?? null,
+      titulo_minuto: item.titulo_minuto ?? noticia?.titulo ?? null,
+      fonte_url: item.fonte_url ?? noticia?.url ?? null,
+      imagem_url: item.imagem_url ?? noticia?.imagem_url ?? null,
+      imagem_alt: item.imagem_alt ?? noticia?.titulo ?? item.titulo_minuto ?? null,
+    };
+  });
+}
+
+function renderMinutoItem(item: MinutoRegulacaoItemInput, _index: number) {
   const date = item.data ? formatLongDate(item.data) : "";
+  const title = item.titulo_minuto || item.ato_titulo || item.ato || "Titulo pendente";
+  const subtitle = item.subtitulo_minuto || "";
+  const script = item.texto_minuto || item.texto_institucional || "";
   return `<article class="minuto-item">
-    <p class="item-date">${escapeHtml(date)}</p>
-    <p class="agency">${escapeHtml(item.agencia || "Fonte oficial")}</p>
-    ${item.titulo_minuto ? `<p class="minute-title">${escapeHtml(item.titulo_minuto)}</p>` : ""}
-    <p class="act">${escapeHtml(item.ato || "Ato regulatorio selecionado")}</p>
-    <p class="summary">${escapeHtml(item.texto_minuto || "Texto do Minuto pendente de revisao.")}</p>
-    ${item.fonte_url ? `<a class="source" href="${escapeHtml(item.fonte_url)}">Fonte oficial</a>` : ""}
+    <div class="minuto-copy">
+      <div class="item-meta">
+        <span>${escapeHtml(date)}</span>
+        <span>${escapeHtml(item.agencia || "Fonte oficial")}</span>
+        ${item.fonte_url ? `<a class="source" href="${escapeHtml(item.fonte_url)}">Fonte oficial</a>` : ""}
+      </div>
+      <div>
+        <p class="script-title">${escapeHtml(title)}</p>
+        ${subtitle ? `<p class="script-subtitle">${escapeHtml(subtitle)}</p>` : ""}
+        <p class="script">${escapeHtml(script || subtitle || "Roteiro pendente de revisao.")}</p>
+      </div>
+    </div>
   </article>`;
 }
 
@@ -336,28 +431,95 @@ function createMinutoTitle(item: RegulatoryNews) {
   const subject = extractRegulatorySubject(source);
   const lower = normalizeText(source);
 
-  if (lower.includes("consulta publica")) return clipText(`Consulta publica abre debate sobre ${subject}`, 90);
-  if (lower.includes("audiencia publica")) return clipText(`Audiencia publica pauta ${subject}`, 90);
-  if (lower.includes("tomada de subsidios")) return clipText(`Tomada de subsidios coleta contribuicoes sobre ${subject}`, 90);
+  if (lower.includes("consulta publica")) return clipText(`${agency} abre consulta publica sobre ${subject}`, 105);
+  if (lower.includes("audiencia publica")) return clipText(`${agency} debate ${subject} em audiencia publica`, 105);
+  if (lower.includes("tomada de subsidios")) return clipText(`${agency} recebe subsidios sobre ${subject}`, 105);
+  if (lower.includes("resolucao") || lower.includes("deliberacao") || lower.includes("norma")) return clipText(`${agency} atualiza regra sobre ${subject}`, 105);
+  if (lower.includes("autoriza") || lower.includes("aprov")) return clipText(`${agency} aprova medida sobre ${subject}`, 105);
+  if (lower.includes("fiscalizacao") || lower.includes("penalidade") || lower.includes("multa")) return clipText(`${agency} reforca fiscalizacao de ${subject}`, 105);
+  return clipText(cleanEditorialTitle(item.titulo), 105);
+}
+
+function createMinutoLegacySubtitleUnused(item: RegulatoryNews) {
+  const source = `${item.titulo}. ${item.resumo ?? ""} ${item.conteudo ?? ""}`;
+  const agency = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte;
+  const subject = extractRegulatorySubject(source);
+  const lower = normalizeText(source);
+
+  if (lower.includes("consulta publica")) return clipText(`Consulta pública abre debate sobre ${subject}`, 90);
+  if (lower.includes("audiencia publica")) return clipText(`Audiência pública pauta ${subject}`, 90);
+  if (lower.includes("tomada de subsidios")) return clipText(`Tomada de subsídios coleta contribuições sobre ${subject}`, 90);
   if (lower.includes("resolucao") || lower.includes("deliberacao")) return clipText(`${agency} atualiza regra sobre ${subject}`, 90);
   if (lower.includes("autoriza") || lower.includes("aprov")) return clipText(`${agency} aprova medida sobre ${subject}`, 90);
   if (lower.includes("fiscalizacao") || lower.includes("penalidade") || lower.includes("multa")) return clipText(`${agency} reforca acompanhamento de ${subject}`, 90);
   return clipText(`${agency} movimenta agenda sobre ${subject}`, 90);
 }
 
+function createMinutoScript(item: RegulatoryNews) {
+  const agency = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte ?? "A agencia";
+  const title = cleanEditorialTitle(item.titulo);
+  const context = newsletterExcerpt(item, 260);
+  const impact = context && normalizeText(context) !== normalizeText(title)
+    ? context
+    : `${agency} divulgou uma nova atualizacao regulatoria sobre o tema.`;
+  return [
+    `${agency}: ${title}.`,
+    impact,
+    "Esse e o ponto principal para acompanhar agora na agenda regulatoria.",
+  ].join(" ");
+}
+
 function createMinutoAct(item: RegulatoryNews) {
   const text = `${item.titulo}. ${item.resumo ?? ""}`;
-  const subject = extractRegulatorySubject(text);
-  const agency = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte;
-  return clipText(`${agency} - ${subject}`, 160);
+  const formalAct = identifyFormalAct(item);
+  if (formalAct) return formalAct;
+  return clipText(item.titulo || extractRegulatorySubject(text), 160);
+}
+
+function createMinutoSubtitle(item: RegulatoryNews) {
+  const sourceText = newsletterArticleText(item, 420) || item.titulo;
+  const subtitle = clipSentence(sourceText, 190);
+  if (subtitle && normalizeText(subtitle) !== normalizeText(item.titulo)) return subtitle;
+  const fallbackAgency = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte ?? "Fonte oficial";
+  return clipSentence(`${fallbackAgency}: ${item.titulo}`, 190);
 }
 
 function createMinutoText(item: RegulatoryNews) {
-  const base = item.conteudo || item.resumo || item.titulo;
-  const sentences = base.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((part) => part.trim()).filter(Boolean) ?? [];
-  const first = sentences[0] ?? item.titulo;
-  const second = sentences.find((sentence) => sentence !== first && sentence.length > 40) ?? "";
-  return clipText([first, second].filter(Boolean).join(" "), 420);
+  const agency = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte;
+  const subject = extractRegulatorySubject(`${item.titulo}. ${item.resumo ?? ""} ${item.conteudo ?? ""}`);
+  const sentences: Record<string, string> = {
+    consulta_publica: `A ${agency} submeteu a consulta pública tema relacionado a ${subject}.`,
+    audiencia_publica: `A ${agency} promoveu audiência pública para discutir ${subject}.`,
+    reajuste_tarifario: `A ${agency} informou decisão tarifária relacionada a ${subject}.`,
+    resolucao: `A ${agency} publicou ato normativo relacionado a ${subject}.`,
+    deliberacao: `A ${agency} comunicou deliberação relacionada a ${subject}.`,
+    fiscalizacao: `A ${agency} informou medida de fiscalização relacionada a ${subject}.`,
+    institucional: `A ${agency} divulgou atualização institucional relacionada a ${subject}.`,
+  };
+  const closing = "";
+  return clipText(`${sentences[identifyEditorialModel(item)]} ${closing}`, 420);
+}
+
+function identifyEditorialModel(item: RegulatoryNews) {
+  const lower = normalizeText(`${item.titulo}. ${item.resumo ?? ""} ${item.conteudo ?? ""}`);
+  if (lower.includes("consulta publica")) return "consulta_publica";
+  if (lower.includes("audiencia publica")) return "audiencia_publica";
+  if (lower.includes("reajuste tarifario") || lower.includes("revisao tarifaria")) return "reajuste_tarifario";
+  if (lower.includes("resolucao") || lower.includes("rdc") || lower.includes("norma de referencia")) return "resolucao";
+  if (lower.includes("deliberacao")) return "deliberacao";
+  if (lower.includes("fiscalizacao") || lower.includes("penalidade") || lower.includes("multa")) return "fiscalizacao";
+  return "institucional";
+}
+
+function identifyFormalAct(item: RegulatoryNews) {
+  const text = `${item.titulo}. ${item.resumo ?? ""} ${item.conteudo ?? ""}`.replace(/\s+/g, " ");
+  const match = text.match(/\b(?:Resolu[cç][aã]o(?:\s+(?:Normativa|Homologat[oó]ria|ANM))?|RDC|Norma de Refer[eê]ncia|Delibera[cç][aã]o|Consulta P[uú]blica|Audi[eê]ncia P[uú]blica|Reajuste Tarif[aá]rio)\s*(?:n[ºo.]?\s*)?[\d./-]*(?:\/\d{4})?/i);
+  return match?.[0]?.trim() || null;
+}
+
+function ensureSentence(value: string) {
+  if (!value) return "";
+  return /[.!?]$/.test(value.trim()) ? value.trim() : `${value.trim()}.`;
 }
 
 function extractRegulatorySubject(value: string) {
@@ -376,7 +538,14 @@ function extractRegulatorySubject(value: string) {
 }
 
 function cleanSubject(value: string) {
-  return clipText(value.replace(/\b(ANTT|ANM|ARTESP|Agencia|Agencia Nacional)\b/gi, "").replace(/\s+/g, " ").trim(), 78) || "tema regulatorio";
+  return clipText(value.replace(/\b(ANTT|ANM|ARTESP|Agencia|Agência|Agencia Nacional|Agência Nacional)\b/gi, "").replace(/\s+/g, " ").trim(), 78) || "tema regulatório";
+}
+
+function cleanEditorialTitle(value: string | null | undefined) {
+  return (value || "Noticia regulatoria")
+    .replace(/\s+/g, " ")
+    .replace(/\s+-\s+gov\.br$/i, "")
+    .trim();
 }
 
 function normalizeText(value: string) {
@@ -405,11 +574,11 @@ function buildNewsletterSubtitle(items: RegulatoryNews[], assunto: string) {
   const focus = agencies.length === 1 ? `${agencies[0]} em destaque` : "Regula&ccedil;&atilde;o em destaque";
   const titles = items.slice(0, 3).map((item) => item.titulo.split(":")[0]).filter(Boolean);
   const text = titles.length ? titles.join(", ") : assunto;
-  return `<strong>${escapeHtml(focus)}:</strong> ${escapeHtml(clipText(text, 140))}`;
+  return `<strong>${escapeHtml(focus)}:</strong> ${escapeHtml(clipText(text, 92))}`;
 }
 
 function renderParagraphs(value: string | null | undefined, maxParagraphs: number, maxLength: number) {
-  const text = clipText(value || "Sem resumo disponivel.", maxParagraphs * maxLength);
+  const text = clipText(value || "Sem resumo disponível.", maxParagraphs * maxLength);
   const sentences = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((part) => part.trim()).filter(Boolean) ?? [text];
   const paragraphs: string[] = [];
   let current = "";
@@ -428,6 +597,41 @@ function renderParagraphs(value: string | null | undefined, maxParagraphs: numbe
   return paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
 }
 
+function newsletterExcerpt(item: RegulatoryNews | undefined, maxLength: number) {
+  const resumo = item?.resumo?.replace(/\s+/g, " ").trim();
+  const conteudo = item?.conteudo?.replace(/\s+/g, " ").trim();
+  const text = resumo && resumo.length >= 80 ? resumo : conteudo || resumo || item?.titulo || "Sem resumo disponível.";
+  return clipSentence(text, maxLength);
+}
+
+function newsletterArticleText(item: RegulatoryNews | undefined, maxLength: number) {
+  if (!item) return "Sem resumo disponível.";
+  const resumo = cleanNewsletterSourceText(item.resumo);
+  const conteudo = cleanNewsletterSourceText(item.conteudo);
+  const title = cleanNewsletterSourceText(item.titulo);
+  const normalizedResumo = normalizeText(resumo);
+  const normalizedConteudo = normalizeText(conteudo);
+  const parts: string[] = [];
+
+  if (resumo && resumo.length >= 70) parts.push(resumo);
+  if (conteudo && (!normalizedResumo || !normalizedConteudo.includes(normalizedResumo.slice(0, 120)))) {
+    parts.push(conteudo);
+  } else if (!parts.length && conteudo) {
+    parts.push(conteudo);
+  }
+  if (!parts.length && title) parts.push(title);
+
+  return clipSentence(parts.join(" "), maxLength) || "Sem resumo disponível.";
+}
+
+function cleanNewsletterSourceText(value: string | null | undefined) {
+  return (value || "")
+    .replace(/\s+/g, " ")
+    .replace(/\bCompartilhe:?.*$/i, "")
+    .replace(/\bPublicado em\s*:?.*?(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ][a-záéíóúâêôãõç])/i, "")
+    .trim();
+}
+
 function clipText(value: string | null | undefined, maxLength: number) {
   const text = (value || "").replace(/\s+/g, " ").trim();
   if (text.length <= maxLength) return text;
@@ -442,18 +646,53 @@ function clipText(value: string | null | undefined, maxLength: number) {
   return cut.replace(/[,:;/-]+$/, "").trim();
 }
 
+function clipSentence(value: string | null | undefined, maxLength: number) {
+  const text = (value || "").replace(/\s+/g, " ").trim();
+  if (!text) return "";
+  const firstSentence = text.match(/[^.!?]+[.!?]+/)?.[0]?.trim();
+  if (firstSentence && firstSentence.length <= maxLength) return firstSentence;
+  const clipped = clipText(text, maxLength).replace(/[.!?,:;/-]+$/, "").trim();
+  return clipped ? `${clipped}.` : "";
+}
+
 function renderImage(src: string, fallback: string | null, alt: string) {
   const fallbackAttr = fallback && fallback !== src ? ` data-fallback-src="${escapeHtml(fallback)}"` : "";
-  return `<img src="${escapeHtml(src)}"${fallbackAttr} alt="${escapeHtml(alt)}" onerror="irisImageFallback(this)">`;
+  return `<img src="${escapeHtml(src)}"${fallbackAttr} alt="${escapeHtml(alt)}" loading="eager" decoding="async" referrerpolicy="no-referrer" onerror="irisImageFallback(this)">`;
+}
+
+function renderDocumentImage(value: string, baseUrl: string | undefined, alt: string) {
+  const src = primaryImageUrl(value, baseUrl);
+  const fallback = fallbackImageUrl(value, baseUrl, src);
+  return renderImage(src, fallback, alt);
+}
+
+function primaryImageUrl(value: string | null | undefined, baseUrl?: string) {
+  const proxied = proxiedImageUrl(value, baseUrl);
+  if (baseUrl && proxied) return proxied;
+  return officialImageUrl(value);
+}
+
+function fallbackImageUrl(value: string | null | undefined, baseUrl: string | undefined, src: string) {
+  const official = officialImageUrl(value);
+  const proxied = proxiedImageUrl(value, baseUrl);
+  if (official && official !== src) return official;
+  if (proxied && proxied !== src) return proxied;
+  return null;
 }
 
 function officialImageUrl(value: string | null | undefined) {
-  return value ?? "";
+  return upgradeImageScale(value ?? "");
 }
 
 function proxiedImageUrl(value: string | null | undefined, baseUrl?: string) {
   if (!value) return null;
-  return absolutePath(`/api/v1/noticias/imagem?url=${encodeURIComponent(value)}`, baseUrl);
+  return absolutePath(`/api/v1/noticias/imagem?url=${encodeURIComponent(upgradeImageScale(value))}`, baseUrl);
+}
+
+function upgradeImageScale(value: string) {
+  return value
+    .replace(/\/@@images\/image\/(?:mini|thumb|tile|preview)(?=\/|$|\?)/i, "/@@images/image/large")
+    .replace(/\/@@images\/[^/?#]+\/(?:mini|thumb|tile|preview)(?=\/|$|\?)/i, (match) => match.replace(/\/(?:mini|thumb|tile|preview)$/i, "/large"));
 }
 
 function absolutePath(path: string, baseUrl?: string) {

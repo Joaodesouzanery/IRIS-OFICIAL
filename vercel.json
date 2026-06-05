@@ -29,6 +29,9 @@
     "src/app/api/v1/noticias/coletar/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/noticias/cron/route.ts": {
+      "maxDuration": 120
+    },
     "src/app/api/v1/antt/2026/collect/route.ts": {
       "maxDuration": 120
     }
@@ -39,7 +42,7 @@
       "schedule": "0 10 * * *"
     },
     {
-      "path": "/api/v1/noticias/coletar",
+      "path": "/api/v1/noticias/cron",
       "schedule": "0 11 * * *"
     },
     {

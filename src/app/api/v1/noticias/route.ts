@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { repairRegulatoryNewsItems } from "@/lib/news-repairs";
 import type { RegulatoryNews, RegulatoryNewsListResponse } from "@/types";
 
 const DEMO_NEWS: RegulatoryNews[] = [
@@ -51,7 +52,7 @@ export async function GET(req: NextRequest) {
         [item.titulo, item.resumo, item.fonte].filter(Boolean).join(" ").toLowerCase().includes(term),
       );
     }
-    return NextResponse.json({ data: data.slice(0, limit), total: data.length } satisfies RegulatoryNewsListResponse);
+    return NextResponse.json({ data: repairRegulatoryNewsItems(data.slice(0, limit)), total: data.length } satisfies RegulatoryNewsListResponse);
   }
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -78,7 +79,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar notícias" }, { status: 500 });
   }
 
-  return NextResponse.json({ data: data ?? [], total: count ?? 0 } satisfies RegulatoryNewsListResponse);
+  return NextResponse.json({ data: repairRegulatoryNewsItems((data ?? []) as RegulatoryNews[]), total: count ?? 0 } satisfies RegulatoryNewsListResponse);
 }
 
 function daysAgoIso(days: number) {

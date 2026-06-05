@@ -598,6 +598,7 @@ export interface DocumentoRegulatorioListResponse {
 export type MonitoramentoEstrategia =
   | "html-static"
   | "govbr-news"
+  | "artesp-news"
   | "antt-2026"
   | "needs-headless"
   | "headless"
@@ -737,17 +738,59 @@ export interface RegulatoryNewsCollectResponse {
   found: number;
   upserted: number;
   items: RegulatoryNews[];
+  partial_success?: boolean;
+  failed_sources?: Array<{
+    agencia_sigla: string;
+    fonte: string;
+    source_url: string;
+    error: string;
+  }>;
+  next_batch?: {
+    recommended: boolean;
+    tier: "core" | "expanded" | "all";
+    scope: "priority" | "all";
+    offset: number;
+    limit: number;
+  } | null;
+  error?: string;
   source_reports?: RegulatoryNewsSourceReport[];
+  batch?: {
+    links_detectados: number;
+    itens_processados: number;
+    itens_pendentes: number;
+    imagens_encontradas: number;
+    imagens_ausentes: number;
+    imagens_com_falha: number;
+  };
+  audit?: {
+    imagens_alta_qualidade: number;
+    imagens_baixa_qualidade: number;
+    conteudo_completo: number;
+    conteudo_curto: number;
+    sem_conteudo: number;
+    proxy_pronto: number;
+  };
 }
 
 export interface RegulatoryNewsSourceReport {
+  source_id?: string;
   agencia_sigla: string;
   fonte: string;
+  tier?: "core" | "expanded";
   source_url: string;
   status: "ok" | "error";
+  collection_phase?: "fresh" | "backlog" | "manual";
   links_found: number;
   items_collected: number;
+  items_processed?: number;
+  items_pending?: number;
+  batch_offset?: number;
+  images_found?: number;
+  images_absent?: number;
+  images_failed?: number;
   latest_urls: string[];
+  latest_publicado_em?: string | null;
+  latest_title?: string | null;
   detail_errors?: string[];
   error?: string;
 }

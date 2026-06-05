@@ -7,7 +7,7 @@ import { cn, formatDateLong } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { NOTICIAS_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
-import { buildMinutoRegulacaoDraftJson, buildMinutoRegulacaoPrompt, buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
+import { buildMinutoRegulacaoDraftText, buildRegulatoryNewsletterHtml, estimateNewsletterPageCount } from "@/lib/newsletter-document";
 import type {
   RegulatoryNews,
   RegulatoryNewsCollectResponse,
@@ -22,7 +22,6 @@ import {
   Check,
   Copy,
   ExternalLink,
-  ImageIcon,
   Loader2,
   Mail,
   Newspaper,
@@ -32,8 +31,14 @@ import {
   X,
 } from "lucide-react";
 
-const AGENCIAS = ["ARTESP", "ANTT", "ANM"];
 type PeriodFilter = "today" | "7d" | "month" | "all" | "custom";
+type MinutoEditorialDraft = {
+  titulo_geral: string;
+  subtitulo_geral: string;
+  itens: Array<Record<string, unknown>>;
+  llm_used: boolean;
+  review_required: boolean;
+};
 const PERIODS: Array<{ value: PeriodFilter; label: string }> = [
   { value: "7d", label: "Últimos 7 dias" },
   { value: "today", label: "Hoje" },
@@ -62,15 +67,57 @@ interface NewsletterDocumentConfig {
 
 type NoticiasHealth = {
   cron: string;
+  vercel_cron?: string;
+  schedule_label?: string;
+  next_run_at?: string;
+  vercel_cron_configured?: boolean;
+  cron_secret_configured?: boolean;
   sources: Array<{
+    site_id?: string;
     agencia_sigla: string;
+    news_tier?: "core" | "expanded";
+    news_profile?: string | null;
+    source_url?: string;
     total: number;
     recent_7d: number;
     last_seen_at: string | null;
+    latest_publicado_em?: string | null;
+    latest_title?: string | null;
+    latest_url?: string | null;
+    latest_official_publicado_em?: string | null;
+    latest_official_title?: string | null;
+    latest_official_url?: string | null;
+    is_stale?: boolean;
+    active_error?: boolean;
+    latest_error?: string | null;
+    latest_success_at?: string | null;
+    latest_error_at?: string | null;
+    fresh_items_processed?: number;
+    backlog_items_processed?: number;
+    collection_status?: "never" | "ok" | "error" | "needs_headless";
+    collection_error?: string | null;
+    last_check_at?: string | null;
+    latest_run?: {
+      trigger_type: "scheduled" | "manual";
+      itens_processados: number;
+      itens_pendentes: number;
+      created_at: string;
+    } | null;
   }>;
 };
 
+type NewsCollectRequest = {
+  offset?: number;
+  sourceId?: string | null;
+  agenciaSigla?: string | null;
+  tier?: "core" | "expanded" | "all";
+  scope?: "priority" | "all";
+  mode?: "discover" | "enrich";
+  limit?: number;
+};
+
 const NEWSLETTER_CONFIG_KEY = "iris_newsletter_document_config";
+const EXPANDED_NEWS_AGENCIES = ["ANA", "ANAC", "ANATEL", "ANCINE", "ANEEL", "ANP", "ANPD", "ANS", "ANTAQ", "ANVISA"] as const;
 
 const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
   destinatarios: "",
@@ -83,6 +130,117 @@ const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
   horaEnvio: "09:00",
 };
 
+async function collectNewsBatch({ offset = 0, sourceId, agenciaSigla, tier = "all", scope, mode, limit = 8 }: NewsCollectRequest = {}) {
+  const query = new URLSearchParams({
+    limit: String(limit),
+    offset: String(offset),
+    tier,
+  });
+  if (scope) query.set("scope", scope);
+  if (mode) query.set("mode", mode);
+  if (sourceId) query.set("source_id", sourceId);
+  if (agenciaSigla) query.set("agencia_sigla", agenciaSigla);
+  return api.post<RegulatoryNewsCollectResponse>(`/noticias/coletar?${query.toString()}`);
+}
+
+async function collectExpandedNewsBatch(onProgress: (message: string) => void) {
+  const results: RegulatoryNewsCollectResponse[] = [];
+  for (let index = 0; index < EXPANDED_NEWS_AGENCIES.length; index += 1) {
+    const agenciaSigla = EXPANDED_NEWS_AGENCIES[index];
+    onProgress(`Coletando ${agenciaSigla} ${index + 1}/${EXPANDED_NEWS_AGENCIES.length}`);
+    try {
+      results.push(await collectNewsBatch({
+        agenciaSigla,
+        tier: "expanded",
+        scope: "all",
+        mode: "enrich",
+        limit: 3,
+      }));
+    } catch (error) {
+      results.push({
+        found: 0,
+        upserted: 0,
+        items: [],
+        partial_success: false,
+        failed_sources: [{
+          agencia_sigla: agenciaSigla,
+          fonte: agenciaSigla,
+          source_url: "",
+          error: error instanceof Error ? error.message : "Falha ao coletar fonte expandida",
+        }],
+        source_reports: [{
+          agencia_sigla: agenciaSigla,
+          fonte: agenciaSigla,
+          tier: "expanded",
+          source_url: "",
+          status: "error",
+          links_found: 0,
+          items_collected: 0,
+          items_processed: 0,
+          items_pending: 0,
+          batch_offset: 0,
+          images_found: 0,
+          images_absent: 0,
+          images_failed: 0,
+          latest_urls: [],
+          error: error instanceof Error ? error.message : "Falha ao coletar fonte expandida",
+        }],
+      });
+    }
+  }
+  return mergeCollectResponses(results);
+}
+
+function mergeCollectResponses(results: RegulatoryNewsCollectResponse[]): RegulatoryNewsCollectResponse {
+  const sumBatch = results.reduce((sum, item) => ({
+    links_detectados: sum.links_detectados + (item.batch?.links_detectados ?? 0),
+    itens_processados: sum.itens_processados + (item.batch?.itens_processados ?? 0),
+    itens_pendentes: sum.itens_pendentes + (item.batch?.itens_pendentes ?? 0),
+    imagens_encontradas: sum.imagens_encontradas + (item.batch?.imagens_encontradas ?? 0),
+    imagens_ausentes: sum.imagens_ausentes + (item.batch?.imagens_ausentes ?? 0),
+    imagens_com_falha: sum.imagens_com_falha + (item.batch?.imagens_com_falha ?? 0),
+  }), {
+    links_detectados: 0,
+    itens_processados: 0,
+    itens_pendentes: 0,
+    imagens_encontradas: 0,
+    imagens_ausentes: 0,
+    imagens_com_falha: 0,
+  });
+  const sumAudit = results.reduce((sum, item) => ({
+    imagens_alta_qualidade: sum.imagens_alta_qualidade + (item.audit?.imagens_alta_qualidade ?? 0),
+    imagens_baixa_qualidade: sum.imagens_baixa_qualidade + (item.audit?.imagens_baixa_qualidade ?? 0),
+    conteudo_completo: sum.conteudo_completo + (item.audit?.conteudo_completo ?? 0),
+    conteudo_curto: sum.conteudo_curto + (item.audit?.conteudo_curto ?? 0),
+    sem_conteudo: sum.sem_conteudo + (item.audit?.sem_conteudo ?? 0),
+    proxy_pronto: sum.proxy_pronto + (item.audit?.proxy_pronto ?? 0),
+  }), {
+    imagens_alta_qualidade: 0,
+    imagens_baixa_qualidade: 0,
+    conteudo_completo: 0,
+    conteudo_curto: 0,
+    sem_conteudo: 0,
+    proxy_pronto: 0,
+  });
+  const failed_sources = results.flatMap((item) => item.failed_sources ?? []);
+  const source_reports = results.flatMap((item) => item.source_reports ?? []);
+  const next_batch = results.find((item) => item.next_batch?.recommended)?.next_batch ?? null;
+  const found = results.reduce((sum, item) => sum + (item.found ?? 0), 0);
+  const upserted = results.reduce((sum, item) => sum + (item.upserted ?? 0), 0);
+  return {
+    found,
+    upserted,
+    items: results.flatMap((item) => item.items ?? []),
+    partial_success: failed_sources.length > 0 && (found > 0 || upserted > 0),
+    failed_sources,
+    source_reports,
+    batch: sumBatch,
+    audit: sumAudit,
+    next_batch,
+    error: found === 0 && failed_sources.length ? "Nenhuma noticia foi salva no lote expandido completo." : undefined,
+  };
+}
+
 export default function NoticiasPage() {
   const queryClient = useQueryClient();
   const { demoEnabled, runtimeStatus } = useDataSyncContext();
@@ -94,12 +252,16 @@ export default function NoticiasPage() {
   const [search, setSearch] = useState("");
   const [newsletterSelectedIds, setNewsletterSelectedIds] = useState<string[]>([]);
   const [minutoSelectedIds, setMinutoSelectedIds] = useState<string[]>([]);
+  const [selectedNewsCache, setSelectedNewsCache] = useState<Record<string, RegulatoryNews>>({});
   const [documentConfig, setDocumentConfig] = useState<NewsletterDocumentConfig>(DEFAULT_NEWSLETTER_CONFIG);
+  const [minutoDraftStatus, setMinutoDraftStatus] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const [savedConfig, setSavedConfig] = useState(false);
   const [savedEditionId, setSavedEditionId] = useState<string | null>(null);
   const [baseUrl, setBaseUrl] = useState("");
   const [minutoTextos, setMinutoTextos] = useState("");
+  const [showAdvancedHealth, setShowAdvancedHealth] = useState(false);
+  const [collectProgress, setCollectProgress] = useState<string | null>(null);
   const lastMinutoSelectionKey = useRef("");
 
   const params = new URLSearchParams();
@@ -135,8 +297,33 @@ export default function NoticiasPage() {
   });
 
   const collectMutation = useMutation({
-    mutationFn: () => api.post<RegulatoryNewsCollectResponse>("/noticias/coletar?limit=24"),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["noticias"] }),
+    mutationFn: async (request: NewsCollectRequest = {}) => {
+      const isSingleSource = Boolean(request.sourceId || request.agenciaSigla || request.offset);
+      if (isSingleSource) {
+        return collectNewsBatch({ ...request, tier: request.tier ?? "all", limit: request.limit ?? 8 });
+      }
+      if (request.scope === "all" && request.tier === "expanded") {
+        const result = await collectExpandedNewsBatch(setCollectProgress);
+        setCollectProgress(null);
+        return result;
+      }
+
+      setCollectProgress(request.scope === "all" || request.tier === "expanded" ? "Coletando lote expandido..." : "Coletando ANTT, ANM e ARTESP...");
+      const result = await collectNewsBatch({
+        offset: 0,
+        tier: request.tier ?? "all",
+        scope: request.scope ?? "priority",
+        mode: request.mode ?? "enrich",
+        limit: request.limit ?? 8,
+      });
+      setCollectProgress(null);
+      return result;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["noticias"] });
+      queryClient.invalidateQueries({ queryKey: ["noticias", "health"] });
+    },
+    onSettled: () => setCollectProgress(null),
   });
 
   const statusMutation = useMutation({
@@ -174,26 +361,50 @@ export default function NoticiasPage() {
     onSuccess: (result) => setSavedEditionId(result.edition.id),
   });
 
+  const minutoDraftMutation = useMutation({
+    mutationFn: () => api.post<MinutoEditorialDraft>("/newsletter/minuto/draft", {
+      noticia_ids: minutoSelectedIds,
+    }),
+    onSuccess: (result) => {
+      setDocumentConfig((prev) => ({
+        ...prev,
+        assunto: result.titulo_geral || prev.assunto,
+        descricao: result.subtitulo_geral || prev.descricao,
+      }));
+      setMinutoTextos(formatMinutoDraftForTeleprompter(result.itens));
+      setMinutoDraftStatus(result.llm_used
+        ? "Roteiro gerado pelo provedor editorial configurado."
+        : "Roteiro gerado pelo fallback local; revise a fala antes de gravar.");
+      setSavedEditionId(null);
+    },
+  });
+
   const noticias = useMemo(() => data?.data ?? [], [data?.data]);
+  const agencias = useMemo(
+    () => Array.from(new Set([
+      ...(healthData?.sources ?? []).map((source) => source.agencia_sigla),
+      ...noticias.map((item) => item.agencia_sigla).filter((sigla): sigla is string => Boolean(sigla)),
+    ])),
+    [healthData?.sources, noticias],
+  );
   const selectedIds = documentConfig.documentoTipo === "minuto_regulacao" ? minutoSelectedIds : newsletterSelectedIds;
-  const selectionSetter = documentConfig.documentoTipo === "minuto_regulacao" ? setMinutoSelectedIds : setNewsletterSelectedIds;
   const newsletterSelected = useMemo(
     () => newsletterSelectedIds
-      .map((id) => noticias.find((item) => item.id === id))
+      .map((id) => selectedNewsCache[id] ?? noticias.find((item) => item.id === id))
       .filter((item): item is RegulatoryNews => Boolean(item)),
-    [noticias, newsletterSelectedIds],
+    [noticias, newsletterSelectedIds, selectedNewsCache],
   );
   const minutoSelected = useMemo(
     () => minutoSelectedIds
-      .map((id) => noticias.find((item) => item.id === id))
+      .map((id) => selectedNewsCache[id] ?? noticias.find((item) => item.id === id))
       .filter((item): item is RegulatoryNews => Boolean(item)),
-    [noticias, minutoSelectedIds],
+    [noticias, minutoSelectedIds, selectedNewsCache],
   );
   const selected = useMemo(
     () => selectedIds
-      .map((id) => noticias.find((item) => item.id === id))
+      .map((id) => selectedNewsCache[id] ?? noticias.find((item) => item.id === id))
       .filter((item): item is RegulatoryNews => Boolean(item)),
-    [noticias, selectedIds],
+    [noticias, selectedIds, selectedNewsCache],
   );
   const minutoItems = useMemo(
     () => parseMinutoItemsForSelection(minutoTextos, minutoSelected),
@@ -211,17 +422,28 @@ export default function NoticiasPage() {
     minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
   }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.temas, minutoItems, minutoTextos, selected]);
   const documentHtml = html;
-  const documentLabel = documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto da Regulacao" : "Newsletter Regulatorio";
-  const minutoPrompt = useMemo(() => buildMinutoRegulacaoPrompt(minutoSelected), [minutoSelected]);
-  const minutoDraft = useMemo(() => buildMinutoRegulacaoDraftJson(minutoSelected), [minutoSelected]);
+  const documentLabel = documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto da Regulação" : "Newsletter Regulatória";
+  const minutoDraft = useMemo(() => buildMinutoRegulacaoDraftText(minutoSelected), [minutoSelected]);
   const dueTodaySchedules = scheduleData?.due_schedules ?? [];
   const previewPage = documentConfig.documentoTipo === "minuto_regulacao"
-    ? { width: 794, height: 1123, scale: 0.58 }
+    ? { width: 1123, height: 794, scale: 0.43 }
     : { width: 960, height: 1357, scale: 0.49 };
+  const previewPageCount = documentConfig.documentoTipo === "minuto_regulacao"
+    ? Math.max(1, selected.length)
+    : estimateNewsletterPageCount(selected);
 
   useEffect(() => {
     setBaseUrl(window.location.origin);
   }, []);
+
+  useEffect(() => {
+    if (!noticias.length) return;
+    setSelectedNewsCache((previous) => {
+      const next = { ...previous };
+      for (const item of noticias) next[item.id] = item;
+      return next;
+    });
+  }, [noticias]);
 
   useEffect(() => {
     const saved = localStorage.getItem(NEWSLETTER_CONFIG_KEY);
@@ -242,8 +464,10 @@ export default function NoticiasPage() {
     setSavedEditionId(null);
   }, [documentConfig.documentoTipo, minutoDraft, minutoSelected.length, minutoSelectedIds]);
 
-  function toggleSelected(id: string) {
-    selectionSetter((prev) => toggleId(prev, id));
+  function toggleSelected(item: RegulatoryNews, target: NewsletterDocumentType) {
+    setSelectedNewsCache((previous) => ({ ...previous, [item.id]: item }));
+    const setter = target === "minuto_regulacao" ? setMinutoSelectedIds : setNewsletterSelectedIds;
+    setter((prev) => toggleId(prev, item.id));
     setSavedEditionId(null);
   }
 
@@ -316,14 +540,24 @@ export default function NoticiasPage() {
             Feed regulatório com curadoria para a Newsletter Regulatório semanal.
           </p>
         </div>
-        <button
-          onClick={() => collectMutation.mutate()}
-          disabled={collectMutation.isPending || demoEnabled}
-          className="btn-primary"
-        >
-          {collectMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-          Coletar notícias
-        </button>
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={() => collectMutation.mutate({})}
+            disabled={collectMutation.isPending || demoEnabled}
+            className="btn-primary"
+          >
+            {collectMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+            {collectProgress ?? "Coletar prioritárias"}
+          </button>
+          <button
+            onClick={() => collectMutation.mutate({ scope: "all", tier: "expanded", limit: 3 })}
+            disabled={collectMutation.isPending || demoEnabled}
+            className="btn-secondary"
+          >
+            <RefreshCw className="w-4 h-4" />
+            Coletar lote expandido
+          </button>
+        </div>
       </div>
 
       {demoEnabled ? (
@@ -358,13 +592,54 @@ export default function NoticiasPage() {
 
       {collectMutation.data ? (
         <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success space-y-2">
-          <p>{collectMutation.data.upserted} notícias atualizadas de {collectMutation.data.found} encontradas.</p>
+          <p>
+            {collectMutation.data.batch?.itens_processados ?? collectMutation.data.found} itens processados nesta rodada;
+            {" "}{collectMutation.data.upserted} notícias salvas ou atualizadas.
+            {collectMutation.data.batch?.itens_pendentes ? ` Restam ${collectMutation.data.batch.itens_pendentes} links para os próximos lotes.` : " Não há links pendentes neste lote."}
+          </p>
+          {collectMutation.data.batch ? (
+            <p className="text-xs">
+              Links detectados: {collectMutation.data.batch.links_detectados} · Imagens oficiais encontradas: {collectMutation.data.batch.imagens_encontradas} · Sem imagem oficial: {collectMutation.data.batch.imagens_ausentes} · Falhas de imagem: {collectMutation.data.batch.imagens_com_falha}
+            </p>
+          ) : null}
+          {collectMutation.data.audit ? (
+            <p className="text-xs">
+              Auditoria: {collectMutation.data.audit.proxy_pronto} imagens prontas no proxy · {collectMutation.data.audit.imagens_alta_qualidade} em alta qualidade · {collectMutation.data.audit.imagens_baixa_qualidade} imagens fracas · {collectMutation.data.audit.conteudo_completo} textos completos · {collectMutation.data.audit.sem_conteudo} sem texto.
+            </p>
+          ) : null}
+          {collectMutation.data.partial_success ? (
+            <p className="text-xs text-warning">Coleta parcial: algumas fontes falharam, mas as notícias encontradas foram salvas.</p>
+          ) : null}
+          {collectMutation.data.failed_sources?.length ? (
+            <div className="text-xs text-warning space-y-1">
+              {collectMutation.data.failed_sources.slice(0, 4).map((source) => (
+                <p key={`${source.agencia_sigla}-${source.source_url}`}>{source.agencia_sigla}: {source.error}</p>
+              ))}
+            </div>
+          ) : null}
+          {collectMutation.data.next_batch?.recommended ? (
+            <button
+              type="button"
+              className="btn-secondary text-xs"
+              disabled={collectMutation.isPending || demoEnabled}
+              onClick={() => {
+                const nextBatch = collectMutation.data?.next_batch;
+                if (nextBatch) collectMutation.mutate(nextBatch);
+              }}
+            >
+              Continuar próximo lote
+            </button>
+          ) : null}
           {collectMutation.data.source_reports?.length ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
+            <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-2 text-xs">
               {collectMutation.data.source_reports.map((report) => (
-                <div key={report.agencia_sigla} className="rounded-md border border-success/20 p-2">
-                  <p className="font-semibold">{report.agencia_sigla}: {report.items_collected}/{report.links_found}</p>
-                  <p>{report.status === "ok" ? "Coleta concluída" : report.error}</p>
+                <div key={`${report.source_id ?? report.agencia_sigla}-${report.collection_phase ?? "manual"}-${report.batch_offset ?? 0}`} className="rounded-md border border-success/20 p-2 space-y-1">
+                  <p className="font-semibold">{report.agencia_sigla}: {report.items_processed ?? report.items_collected} processados / {report.links_found} links</p>
+                  <p>{report.tier === "expanded" ? "Federal expandida" : "Fonte principal"}{report.latest_title ? ` - ${report.latest_title}` : ""}</p>
+                  <p>{report.status === "ok" ? `${report.items_pending ?? 0} pendentes` : report.error}</p>
+                  {report.latest_publicado_em ? (
+                    <p>Última data: {new Date(report.latest_publicado_em).toLocaleDateString("pt-BR")}</p>
+                  ) : null}
                 </div>
               ))}
             </div>
@@ -379,21 +654,112 @@ export default function NoticiasPage() {
 
       <div className="card">
         <div className="flex items-center justify-between gap-3">
-          <p className="section-label">Saúde da coleta diária</p>
-          <span className="text-xs text-text-label font-mono">cron {healthData?.cron ?? "0 11 * * *"}</span>
+          <div>
+            <p className="section-label">Agências monitoradas</p>
+            <p className="text-xs text-text-muted mt-1">A coleta prioriza as fontes oficiais e isola falhas por agencia.</p>
+          </div>
+          <button
+            type="button"
+            className="btn-secondary text-xs whitespace-nowrap"
+            onClick={() => setShowAdvancedHealth((prev) => !prev)}
+          >
+            {showAdvancedHealth ? "Ocultar detalhes" : "Diagnostico"}
+          </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3">
-          {(healthData?.sources ?? AGENCIAS.map((sigla) => ({ agencia_sigla: sigla, total: 0, recent_7d: 0, last_seen_at: null }))).map((source) => (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {(healthData?.sources ?? []).map((source) => (
+            <button
+              key={`chip-${source.agencia_sigla}`}
+              type="button"
+              className={cn(
+                "inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors",
+                source.active_error
+                  ? "border-error/40 bg-error/10 text-error"
+                  : source.is_stale
+                    ? "border-warning/40 bg-warning/10 text-warning"
+                  : "border-border bg-surface-secondary text-text-primary hover:border-brand/40",
+              )}
+              onClick={() => setAgencia(source.agencia_sigla)}
+              title={source.active_error ? source.latest_error ?? source.collection_error ?? source.agencia_sigla : source.is_stale ? `Defasada: ${source.latest_official_title ?? source.latest_official_url ?? source.agencia_sigla}` : source.latest_title ?? source.agencia_sigla}
+            >
+              <span>{source.agencia_sigla}</span>
+              {source.active_error ? <span className="h-1.5 w-1.5 rounded-full bg-error" /> : null}
+              {!source.active_error && source.is_stale ? <span className="h-1.5 w-1.5 rounded-full bg-warning" /> : null}
+            </button>
+          ))}
+          {healthData && healthData.sources.length === 0 ? (
+            <p className="text-sm text-text-muted">Nenhuma fonte de notícias ativa cadastrada.</p>
+          ) : null}
+        </div>
+      </div>
+
+
+      <div className={cn("card", !showAdvancedHealth && "hidden")}>
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <p className="section-label">Saúde da coleta automática</p>
+            <p className="text-xs text-text-muted mt-1">
+              {healthData?.schedule_label ?? "08:00, 13:00 e 18:00 (America/Sao_Paulo)"}
+              {healthData?.next_run_at ? ` · Próxima rodada: ${new Date(healthData.next_run_at).toLocaleString("pt-BR")}` : ""}
+            </p>
+            <p className="text-xs text-text-label mt-1">
+              Vercel Cron: {healthData?.vercel_cron_configured ? "configurado" : "pendente"} · CRON_SECRET: {healthData?.cron_secret_configured ? "configurado" : "pendente"}
+            </p>
+          </div>
+          <span className="text-xs text-text-label font-mono">pg_cron {healthData?.cron ?? "0 11,16,21 * * *"} · vercel {healthData?.vercel_cron ?? "0 11 * * *"}</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-3">
+          {(healthData?.sources ?? []).map((source) => (
             <div key={source.agencia_sigla} className="rounded-md border border-border bg-surface-secondary p-3">
-              <p className="text-sm font-medium text-text-primary">{source.agencia_sigla}</p>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-sm font-medium text-text-primary">{source.agencia_sigla}</p>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-text-label">{source.news_tier === "expanded" ? "federal" : "core"}</span>
+                  {source.is_stale ? <span className="text-xs text-warning">defasada</span> : null}
+                  {source.active_error ? <span className="text-xs text-error">falha ativa</span> : null}
+                </div>
+              </div>
               <p className="text-xs text-text-muted mt-1">
                 {source.recent_7d} nos últimos 7 dias · {source.total} no histórico consultado
               </p>
               <p className="text-xs text-text-label mt-1">
                 Última visão: {source.last_seen_at ? new Date(source.last_seen_at).toLocaleString("pt-BR") : "sem registro"}
               </p>
+              {source.latest_publicado_em || source.latest_title ? (
+                <p className="text-xs text-text-label mt-1 line-clamp-2">
+                  Mais recente: {source.latest_publicado_em ? new Date(source.latest_publicado_em).toLocaleDateString("pt-BR") : "sem data"}{source.latest_title ? ` · ${source.latest_title}` : ""}
+                </p>
+              ) : null}
+              {source.latest_official_publicado_em || source.latest_official_title ? (
+                <p className={cn("text-xs mt-1 line-clamp-2", source.is_stale ? "text-error" : "text-text-label")}>
+                  Oficial detectada: {source.latest_official_publicado_em ? new Date(source.latest_official_publicado_em).toLocaleDateString("pt-BR") : "sem data"}{source.latest_official_title ? ` · ${source.latest_official_title}` : ""}
+                </p>
+              ) : null}
+              {source.latest_run ? (
+                <p className="text-xs text-text-label mt-1">
+                  Última rodada {source.latest_run.trigger_type === "scheduled" ? "automática" : "manual"}: {source.latest_run.itens_processados} processados · {source.latest_run.itens_pendentes} pendentes
+                </p>
+              ) : null}
+              {typeof source.fresh_items_processed === "number" || typeof source.backlog_items_processed === "number" ? (
+                <p className="text-xs text-text-label mt-1">
+                  Fresh {source.fresh_items_processed ?? 0} · Backlog {source.backlog_items_processed ?? 0}
+                </p>
+              ) : null}
+              {source.latest_success_at || source.latest_error_at ? (
+                <p className="text-xs text-text-label mt-1">
+                  Sucesso: {source.latest_success_at ? new Date(source.latest_success_at).toLocaleString("pt-BR") : "sem registro"} · Erro: {source.latest_error_at ? new Date(source.latest_error_at).toLocaleString("pt-BR") : "sem registro"}
+                </p>
+              ) : null}
+              {source.latest_error ? (
+                <p className={cn("text-xs mt-1 line-clamp-2", source.active_error ? "text-error" : "text-text-label")}>
+                  {source.active_error ? "Erro ativo: " : "Ultimo erro registrado: "}{source.latest_error}
+                </p>
+              ) : null}
             </div>
           ))}
+          {healthData && healthData.sources.length === 0 ? (
+            <p className="text-sm text-text-muted">Nenhuma fonte de notícias ativa cadastrada.</p>
+          ) : null}
         </div>
       </div>
 
@@ -402,7 +768,7 @@ export default function NoticiasPage() {
           <div className="card flex items-center gap-2 flex-wrap">
             <select className="select w-40" value={agencia} onChange={(e) => setAgencia(e.target.value)}>
               <option value="">Todas as agências</option>
-              {AGENCIAS.map((item) => <option key={item} value={item}>{item}</option>)}
+              {agencias.map((item) => <option key={item} value={item}>{item}</option>)}
             </select>
             <select className="select w-40" value={status} onChange={(e) => setStatus(e.target.value as RegulatoryNewsStatus | "")}>
               {STATUS.map((item) => <option key={item.label} value={item.value}>{item.label}</option>)}
@@ -426,7 +792,7 @@ export default function NoticiasPage() {
               />
             </label>
             <p className="text-xs text-text-muted ml-auto">
-              {data?.total ?? 0} notícias · Newsletter {newsletterSelected.length}/3 · Minuto {minutoSelected.length}
+              {data?.total ?? 0} notícias · Newsletter {newsletterSelected.length} ({estimateNewsletterPageCount(newsletterSelected)} pág.) · Minuto {minutoSelected.length}
             </p>
           </div>
 
@@ -439,8 +805,8 @@ export default function NoticiasPage() {
               </div>
             ) : noticias.map((item) => (
               <article key={item.id} className="card p-0 overflow-hidden">
-                <div className="grid grid-cols-[112px_minmax(0,1fr)]">
-                  <NewsImage item={item} />
+                <div className={cn(item.imagem_url && "grid grid-cols-[112px_minmax(0,1fr)]")}>
+                  {item.imagem_url ? <NewsImage item={item} /> : null}
                   <div className="p-4 min-w-0">
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
@@ -449,23 +815,13 @@ export default function NoticiasPage() {
                           <span className="text-xs text-text-muted">{formatDateLong(item.publicado_em ?? item.first_seen_at)}</span>
                           <StatusBadge status={item.status_curadoria} />
                         </div>
-                        <h2 className="text-sm font-semibold text-text-primary line-clamp-2">{item.titulo}</h2>
+                        <h2 className="text-sm font-semibold text-text-primary leading-snug">{item.titulo}</h2>
                       </div>
-                      <button
-                        className={cn(
-                          "w-8 h-8 rounded-md border flex items-center justify-center shrink-0",
-                          selectedIds.includes(item.id) ? "border-brand bg-brand text-white" : "border-border text-text-muted hover:text-brand",
-                        )}
-                        onClick={() => toggleSelected(item.id)}
-                        aria-label={`Selecionar noticia para ${documentLabel}`}
-                      >
-                        {selectedIds.includes(item.id) ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                      </button>
                     </div>
                     <p className="text-xs text-text-muted mt-2 line-clamp-2">{item.resumo ?? "Sem resumo disponível."}</p>
-                    <div className="flex items-center gap-2 mt-3">
+                    <div className="flex items-center gap-2 mt-3 flex-wrap">
                       <button
-                        className="btn-secondary text-xs"
+                        className="btn-secondary text-xs whitespace-nowrap"
                         onClick={() => statusMutation.mutate({ id: item.id, next: "selecionado" })}
                         disabled={statusMutation.isPending || demoEnabled}
                       >
@@ -473,14 +829,28 @@ export default function NoticiasPage() {
                         Marcar
                       </button>
                       <button
-                        className="btn-secondary text-xs"
+                        className="btn-secondary text-xs whitespace-nowrap"
                         onClick={() => statusMutation.mutate({ id: item.id, next: "ignorado" })}
                         disabled={statusMutation.isPending || demoEnabled}
                       >
                         <X className="w-3.5 h-3.5" />
                         Ignorar
                       </button>
-                      <a href={item.url} target="_blank" rel="noreferrer" className="text-xs text-brand hover:underline inline-flex items-center gap-1 ml-auto">
+                      <button
+                        className={cn("btn-secondary text-xs whitespace-nowrap", newsletterSelectedIds.includes(item.id) && "border-brand text-brand")}
+                        onClick={() => toggleSelected(item, "newsletter_regulatoria")}
+                      >
+                        {newsletterSelectedIds.includes(item.id) ? <Check className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
+                        Newsletter
+                      </button>
+                      <button
+                        className={cn("btn-secondary text-xs whitespace-nowrap", minutoSelectedIds.includes(item.id) && "border-brand text-brand")}
+                        onClick={() => toggleSelected(item, "minuto_regulacao")}
+                      >
+                        {minutoSelectedIds.includes(item.id) ? <Check className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
+                        Minuto
+                      </button>
+                      <a href={item.url} target="_blank" rel="noreferrer" className="text-xs text-brand hover:underline inline-flex items-center gap-1 sm:ml-auto whitespace-nowrap">
                         Fonte <ExternalLink className="w-3 h-3" />
                       </a>
                     </div>
@@ -492,6 +862,22 @@ export default function NoticiasPage() {
         </section>
 
         <aside className="space-y-4 xl:sticky xl:top-4 self-start">
+            {savedEditionId ? (
+              <div className="grid grid-cols-1 sm:grid-cols-4 gap-2">
+                <a className="btn-secondary justify-center text-xs" href={`/api/v1/newsletter/edicoes/${savedEditionId}/html`} target="_blank" rel="noreferrer">
+                  HTML
+                </a>
+                <a className="btn-secondary justify-center text-xs" href={`/api/v1/newsletter/edicoes/${savedEditionId}/pdf`} target="_blank" rel="noreferrer">
+                  PDF / imprimir
+                </a>
+                <a className="btn-secondary justify-center text-xs" href={`/api/v1/newsletter/edicoes/${savedEditionId}/word`}>
+                  Word .doc
+                </a>
+                <a className="btn-secondary justify-center text-xs" href={`/api/v1/newsletter/edicoes/${savedEditionId}/docx`}>
+                  DOCX
+                </a>
+              </div>
+            ) : null}
           <section className="card space-y-3">
             <div className="flex items-center justify-between">
               <p className="section-label">Documento: {documentLabel}</p>
@@ -516,7 +902,7 @@ export default function NoticiasPage() {
                 <div className="rounded-card border border-border bg-surface-secondary p-3 space-y-2">
                   <div className="flex items-center justify-between gap-2">
                     <div>
-                      <p className="text-xs font-semibold text-text-primary">Noticias do Minuto</p>
+                      <p className="text-xs font-semibold text-text-primary">Notícias do Minuto</p>
                       <p className="text-[11px] text-text-muted mt-0.5">Selecao independente da Newsletter.</p>
                     </div>
                     <span className="badge-gray text-xs">{minutoSelected.length} selecionadas</span>
@@ -576,31 +962,37 @@ export default function NoticiasPage() {
                     </button>
                   </div>
                 </div>
+                <p className="text-xs text-text-muted">
+                  Roteiro de teleprompter para video curto. Edite livremente antes de gravar.
+                </p>
                 <textarea
-                  className="input min-h-32 text-xs font-mono"
-                  value={minutoPrompt}
-                  readOnly
-                  aria-label="Prompt do Minuto da Regulação"
-                />
-                <textarea
-                  className="input min-h-28"
+                  className="input min-h-56"
                   value={minutoTextos}
                   onChange={(event) => {
                     setMinutoTextos(event.target.value);
+                    setMinutoDraftStatus(null);
                     setSavedEditionId(null);
                   }}
-                  placeholder="Cole aqui o JSON revisado do Minuto ou gere um rascunho a partir das noticias selecionadas"
+                  placeholder="Edite aqui o roteiro falado. Separe noticias com --- quando quiser manter blocos independentes."
                 />
                 <button
                   className="btn-secondary w-full justify-center"
                   onClick={() => {
-                    setMinutoTextos(minutoDraft);
-                    setSavedEditionId(null);
+                    minutoDraftMutation.mutate();
                   }}
-                  disabled={minutoSelected.length === 0}
+                  disabled={minutoSelected.length === 0 || minutoDraftMutation.isPending}
                 >
-                  Gerar rascunho do Minuto
+                  {minutoDraftMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
+                  Gerar roteiro para video
                 </button>
+                {minutoDraftMutation.error ? (
+                  <p className="text-xs text-error">
+                    {minutoDraftMutation.error instanceof Error ? minutoDraftMutation.error.message : "Erro ao gerar rascunho"}
+                  </p>
+                ) : null}
+                {minutoDraftStatus ? (
+                  <p className="text-xs text-text-label">{minutoDraftStatus}</p>
+                ) : null}
               </div>
             ) : null}
             <div className="bg-bg-hover rounded-card p-3 overflow-auto">
@@ -608,7 +1000,7 @@ export default function NoticiasPage() {
                 className="mx-auto overflow-hidden rounded-md shadow-sm bg-white"
                 style={{
                   width: previewPage.width * previewPage.scale,
-                  height: previewPage.height * previewPage.scale,
+                  height: previewPage.height * previewPage.scale * previewPageCount,
                 }}
               >
                 <iframe
@@ -616,7 +1008,7 @@ export default function NoticiasPage() {
                   srcDoc={html}
                   style={{
                     width: previewPage.width,
-                    height: previewPage.height,
+                    height: previewPage.height * previewPageCount,
                     transform: `scale(${previewPage.scale})`,
                     transformOrigin: "top left",
                     border: 0,
@@ -627,7 +1019,7 @@ export default function NoticiasPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <button className="btn-primary justify-center" onClick={openPrintDocument} disabled={selected.length === 0}>
                 <Copy className="w-4 h-4" />
-                Gerar PDF
+                Imprimir PDF
               </button>
               <button className="btn-secondary justify-center" onClick={copyDocumentHtml} disabled={selected.length === 0}>
                 <Copy className="w-4 h-4" />
@@ -747,20 +1139,16 @@ function NewsImage({ item }: { item: RegulatoryNews }) {
   }, [original]);
 
   if (!src) {
-    return (
-      <div className="bg-bg-hover min-h-28 flex items-center justify-center">
-        <ImageIcon className="w-6 h-6 text-text-label" />
-      </div>
-    );
+    return null;
   }
 
   return (
-    <div className="bg-bg-hover min-h-28 flex items-center justify-center">
+    <div className="min-h-28 flex items-center justify-center">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
         alt=""
-        className="w-full h-full object-cover"
+        className="w-full h-auto max-h-40 object-contain"
         onError={() => setSrc(src === original ? proxiedImageUrl(original) : null)}
       />
     </div>
@@ -794,7 +1182,7 @@ function buildNewsletterHtml(items: RegulatoryNews[]) {
   }
 
   return `<div style="font-family:Inter,Arial,sans-serif;color:#f4f4f5;background:#111;border:1px solid #2a2a2a;border-radius:8px;overflow:hidden">
-    ${heroImage ? `<img src="${escapeHtml(heroImage)}" alt="" style="display:block;width:100%;height:190px;object-fit:cover">` : ""}
+    ${heroImage ? `<img src="${escapeHtml(heroImage)}" alt="" style="display:block;width:100%;height:190px;object-fit:contain;object-position:center;background:#18181b">` : ""}
     <div style="padding:22px">
       <p style="margin:0 0 8px;color:#f97316;font:700 11px monospace;letter-spacing:1.2px;text-transform:uppercase">Newsletter Regulatório · ${escapeHtml(today)}</p>
       <h1 style="margin:0;font-size:26px;line-height:1.15">${escapeHtml(highlight.titulo)}</h1>
@@ -848,7 +1236,7 @@ function buildAssociatesDocumentHtml(items: RegulatoryNews[], config: Newsletter
     article:first-child { border-top: 0; padding-top: 0; }
     .meta { margin: 0 0 8px; color: #f97316; font: 700 11px monospace; text-transform: uppercase; }
     article h3 { margin: 0; font-size: 20px; line-height: 1.25; }
-    .news-img { width: 100%; max-height: 260px; object-fit: cover; border-radius: 8px; margin: 14px 0; border: 1px solid #e4e4e7; }
+    .news-img { width: 100%; max-height: 260px; object-fit: contain; object-position: center; border-radius: 8px; margin: 14px 0; border: 1px solid #e4e4e7; background: #f4f4f5; }
     a { color: #ea580c; text-decoration: none; font-weight: 700; }
     .recipients { font-size: 12px; color: #71717a; }
     footer { padding: 22px 34px; color: #71717a; font-size: 12px; }
@@ -909,6 +1297,20 @@ function splitList(value: string) {
     .filter(Boolean);
 }
 
+function formatMinutoDraftForTeleprompter(items: Array<Record<string, unknown>>) {
+  return items
+    .map((item) => {
+      const script = stringifyOptional(item.texto_minuto) ?? stringifyOptional(item.roteiro) ?? stringifyOptional(item.texto);
+      if (script) return script;
+      const agency = stringifyOptional(item.agencia);
+      const title = stringifyOptional(item.titulo_minuto) ?? stringifyOptional(item.titulo);
+      const subtitle = stringifyOptional(item.subtitulo_minuto) ?? stringifyOptional(item.subtitulo);
+      return [agency, title, subtitle].filter(Boolean).join(": ");
+    })
+    .filter(Boolean)
+    .join("\n\n---\n\n");
+}
+
 function splitMinutoTextos(value: string) {
   return value
     .split(/\n-{3,}\n|---/g)
@@ -949,9 +1351,14 @@ function parseMinutoItemsForSelection(value: string, selected: RegulatoryNews[])
       noticia_id: selected[index]?.id ?? null,
       data: selected[index]?.publicado_em ?? selected[index]?.first_seen_at ?? null,
       agencia: selected[index]?.agencia?.nome || selected[index]?.agencia_sigla || selected[index]?.fonte || null,
-      titulo_minuto: null,
+      titulo_minuto: selected[index]?.titulo ?? null,
+      subtitulo_minuto: null,
       ato: selected[index]?.titulo ?? null,
+      ato_titulo: selected[index]?.titulo ?? null,
       texto_minuto: text,
+      texto_institucional: text,
+      editorial_model: null,
+      review_status: "revisado" as const,
       fonte_url: selected[index]?.url ?? null,
     }))
     .filter((item) => Boolean(item.noticia_id));
@@ -972,8 +1379,13 @@ function normalizeMinutoItemForSelection(value: unknown, selectedByUrl: Map<stri
     data: stringifyOptional(row.data) ?? selected?.publicado_em ?? selected?.first_seen_at ?? null,
     agencia: stringifyOptional(row.agencia) ?? selected?.agencia?.nome ?? selected?.agencia_sigla ?? selected?.fonte ?? null,
     titulo_minuto: stringifyOptional(row.titulo_minuto) ?? stringifyOptional(row.titulo),
+    subtitulo_minuto: stringifyOptional(row.subtitulo_minuto) ?? stringifyOptional(row.subtitulo),
     ato: stringifyOptional(row.ato) ?? stringifyOptional(row.titulo),
+    ato_titulo: stringifyOptional(row.ato_titulo) ?? stringifyOptional(row.ato) ?? stringifyOptional(row.titulo),
     texto_minuto: stringifyOptional(row.texto_minuto) ?? stringifyOptional(row.texto),
+    texto_institucional: stringifyOptional(row.texto_institucional) ?? stringifyOptional(row.texto_minuto) ?? stringifyOptional(row.texto),
+    editorial_model: stringifyOptional(row.editorial_model),
+    review_status: (row.review_status === "aprovado" || row.review_status === "revisado" ? row.review_status : "pendente") as "pendente" | "revisado" | "aprovado",
     fonte_url: fonteUrl ?? selected?.url ?? null,
   };
 }
