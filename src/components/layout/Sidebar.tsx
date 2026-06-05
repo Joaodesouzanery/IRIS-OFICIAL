@@ -12,6 +12,7 @@ import {
   Building2,
   ChevronDown,
   Activity,
+  Award,
   Radar,
   FlaskConical,
   Database,
@@ -31,6 +32,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Diretores",    href: "/dashboard/analytics/diretores", icon: Users },
   { label: "Análise",      href: "/dashboard/analytics", icon: BarChart3 },
   { label: "Observatório da Regulação",  href: "/dashboard/painel-regulatorio", icon: TrendingUp },
+  { label: "Qualidade Regulatória", href: "/dashboard/qualidade-regulatoria", icon: Award },
   { label: "Configurações",href: "/dashboard/agencias", icon: Building2 },
 ];
 
@@ -65,6 +67,9 @@ const MODULE_PATHS: Record<string, string[]> = {
     "/dashboard/painel-regulatorio",
     "/dashboard/empresas",
     "/dashboard/documentos-associados",
+  ],
+  "/dashboard/qualidade-regulatoria": [
+    "/dashboard/qualidade-regulatoria",
   ],
   "/dashboard/agencias": [
     "/dashboard/agencias",
