@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
+import { NEWSLETTER_ARTICLE_TEXT_LIMITS, buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
 import { repairRegulatoryNewsItems } from "@/lib/news-repairs";
 import { getAuthenticatedUser, requireAdmin } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
@@ -69,6 +69,7 @@ export async function POST(req: NextRequest) {
     .map((id: string) => newsRows.find((item: RegulatoryNews) => item.id === id))
     .filter((item: RegulatoryNews | undefined): item is RegulatoryNews => Boolean(item)));
   const minutoItems = normalizeMinutoItems(body.minuto_items, orderedNoticias);
+  const newsletterTextos = normalizeNewsletterArticleTexts(body.newsletter_textos, orderedNoticias);
 
   const html = buildRegulatoryNewsletterHtml({
     assunto,
@@ -76,6 +77,7 @@ export async function POST(req: NextRequest) {
     destinatarios,
     temas,
     noticias: orderedNoticias,
+    newsletter_textos: newsletterTextos,
     baseUrl: req.nextUrl.origin,
     documento_tipo: documentoTipo,
     minuto_textos: minutoTextos,
@@ -108,6 +110,7 @@ export async function POST(req: NextRequest) {
         page_groups: documentoTipo === "newsletter_regulatoria"
           ? chunkIds(documentNewsIds, 3)
           : documentNewsIds.map((id: string) => [id]),
+        newsletter_textos: newsletterTextos,
         minuto_textos: minutoTextos,
         minuto_items: minutoItems,
       },
@@ -140,6 +143,22 @@ function normalizeStringArray(value: unknown, maxItems: number) {
 
 function normalizeDocumentType(value: unknown): NewsletterDocumentType {
   return value === "minuto_regulacao" ? "minuto_regulacao" : "newsletter_regulatoria";
+}
+
+function normalizeNewsletterArticleTexts(value: unknown, selectedNews: RegulatoryNews[]) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  const raw = value as Record<string, unknown>;
+  const allowedIds = selectedNews.map((item) => item.id).filter(Boolean);
+  const result: Record<string, string> = {};
+  allowedIds.forEach((id, index) => {
+    const text = normalizeOptionalString(raw[id], index === 0
+      ? NEWSLETTER_ARTICLE_TEXT_LIMITS.main
+      : index % 3 === 1
+        ? NEWSLETTER_ARTICLE_TEXT_LIMITS.side_1
+        : NEWSLETTER_ARTICLE_TEXT_LIMITS.side_2);
+    if (text) result[id] = text;
+  });
+  return result;
 }
 
 function normalizeMinutoItems(value: unknown, selectedNews: RegulatoryNews[]) {

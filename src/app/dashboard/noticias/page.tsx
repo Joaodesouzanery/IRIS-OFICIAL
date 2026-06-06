@@ -7,7 +7,14 @@ import { cn, formatDateLong } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { NOTICIAS_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
-import { buildMinutoRegulacaoDraftText, buildRegulatoryNewsletterHtml, estimateNewsletterPageCount } from "@/lib/newsletter-document";
+import {
+  NEWSLETTER_ARTICLE_TEXT_LIMITS,
+  buildMinutoRegulacaoDraftText,
+  buildNewsletterArticleTextDraft,
+  buildRegulatoryNewsletterHtml,
+  estimateNewsletterPageCount,
+  type NewsletterArticleSlot,
+} from "@/lib/newsletter-document";
 import type {
   RegulatoryNews,
   RegulatoryNewsCollectResponse,
@@ -253,6 +260,7 @@ export default function NoticiasPage() {
   const [newsletterSelectedIds, setNewsletterSelectedIds] = useState<string[]>([]);
   const [minutoSelectedIds, setMinutoSelectedIds] = useState<string[]>([]);
   const [selectedNewsCache, setSelectedNewsCache] = useState<Record<string, RegulatoryNews>>({});
+  const [newsletterArticleTexts, setNewsletterArticleTexts] = useState<Record<string, string>>({});
   const [documentConfig, setDocumentConfig] = useState<NewsletterDocumentConfig>(DEFAULT_NEWSLETTER_CONFIG);
   const [minutoDraftStatus, setMinutoDraftStatus] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -355,6 +363,7 @@ export default function NoticiasPage() {
       temas: splitList(documentConfig.temas),
       noticia_ids: selectedIds,
       documento_tipo: documentConfig.documentoTipo,
+      newsletter_textos: newsletterTextOverrides,
       minuto_textos: splitMinutoTextos(minutoTextos),
       minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
     }),
@@ -410,17 +419,27 @@ export default function NoticiasPage() {
     () => parseMinutoItemsForSelection(minutoTextos, minutoSelected),
     [minutoTextos, minutoSelected],
   );
+  const newsletterTextOverrides = useMemo(() => {
+    if (documentConfig.documentoTipo !== "newsletter_regulatoria") return {};
+    return newsletterSelected.reduce<Record<string, string>>((acc, item, index) => {
+      const value = newsletterArticleTexts[item.id]?.trim();
+      if (!value) return acc;
+      acc[item.id] = value.slice(0, newsletterTextLimitForIndex(index));
+      return acc;
+    }, {});
+  }, [documentConfig.documentoTipo, newsletterArticleTexts, newsletterSelected]);
   const html = useMemo(() => buildRegulatoryNewsletterHtml({
     assunto: documentConfig.assunto,
     descricao: documentConfig.descricao,
     destinatarios: splitList(documentConfig.destinatarios),
     temas: splitList(documentConfig.temas),
     noticias: selected,
+    newsletter_textos: newsletterTextOverrides,
     baseUrl,
     documento_tipo: documentConfig.documentoTipo,
     minuto_textos: splitMinutoTextos(minutoTextos),
     minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.temas, minutoItems, minutoTextos, selected]);
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected]);
   const documentHtml = html;
   const documentLabel = documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto da Regulação" : "Newsletter Regulatória";
   const minutoDraft = useMemo(() => buildMinutoRegulacaoDraftText(minutoSelected), [minutoSelected]);
@@ -480,6 +499,21 @@ export default function NoticiasPage() {
   function updateDocumentConfig<K extends keyof NewsletterDocumentConfig>(key: K, value: NewsletterDocumentConfig[K]) {
     setDocumentConfig((prev) => ({ ...prev, [key]: value }));
     setSavedConfig(false);
+  }
+
+  function updateNewsletterArticleText(id: string, value: string, limit: number) {
+    setNewsletterArticleTexts((prev) => ({ ...prev, [id]: value.slice(0, limit) }));
+    setSavedEditionId(null);
+  }
+
+  function resetNewsletterArticleText(id: string) {
+    setNewsletterArticleTexts((prev) => {
+      if (!(id in prev)) return prev;
+      const next = { ...prev };
+      delete next[id];
+      return next;
+    });
+    setSavedEditionId(null);
   }
 
   function saveDocumentConfig() {
@@ -995,6 +1029,61 @@ export default function NoticiasPage() {
                 ) : null}
               </div>
             ) : null}
+            {documentConfig.documentoTipo === "newsletter_regulatoria" ? (
+              <div className="rounded-card border border-border bg-surface-secondary p-3 space-y-3">
+                <div className="flex items-center justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-text-primary">Textos da Newsletter</p>
+                    <p className="text-[11px] text-text-muted mt-0.5">Limites calibrados para uma pagina sem corte visual.</p>
+                  </div>
+                  <span className="badge-gray text-xs">{newsletterSelected.slice(0, 3).length}/3</span>
+                </div>
+                {newsletterSelected.length ? (
+                  <div className="space-y-3">
+                    {newsletterSelected.slice(0, 3).map((item, index) => {
+                      const slot = newsletterArticleSlotForIndex(index);
+                      const limit = NEWSLETTER_ARTICLE_TEXT_LIMITS[slot];
+                      const fallback = buildNewsletterArticleTextDraft(item, slot);
+                      const value = newsletterArticleTexts[item.id] ?? fallback;
+                      const remaining = limit - value.length;
+                      return (
+                        <div key={`newsletter-editor-${item.id}`} className="space-y-1.5">
+                          <div className="flex items-start justify-between gap-2">
+                            <div className="min-w-0">
+                              <p className="text-[11px] font-semibold text-text-primary">
+                                {index === 0 ? "Principal esquerda" : `Lateral ${index}`}
+                              </p>
+                              <p className="text-[10px] text-text-muted truncate">
+                                {item.agencia_sigla ?? item.fonte} · {item.titulo}
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              className="btn-secondary px-2 py-1 text-[10px]"
+                              onClick={() => resetNewsletterArticleText(item.id)}
+                            >
+                              Restaurar
+                            </button>
+                          </div>
+                          <textarea
+                            className="input min-h-28 text-xs leading-relaxed"
+                            value={value}
+                            maxLength={limit}
+                            onChange={(event) => updateNewsletterArticleText(item.id, event.target.value, limit)}
+                          />
+                          <div className="flex items-center justify-between text-[10px] text-text-muted">
+                            <span>Limite da pagina: {limit} caracteres</span>
+                            <span className={cn(remaining < 80 && "text-warning")}>{remaining} restantes</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <p className="text-xs text-text-muted">Selecione 3 noticias para editar os textos da pagina.</p>
+                )}
+              </div>
+            ) : null}
             <div className="bg-bg-hover rounded-card p-3 overflow-auto">
               <div
                 className="mx-auto overflow-hidden rounded-md shadow-sm bg-white"
@@ -1316,6 +1405,17 @@ function splitMinutoTextos(value: string) {
     .split(/\n-{3,}\n|---/g)
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function newsletterArticleSlotForIndex(index: number): NewsletterArticleSlot {
+  const position = index % 3;
+  if (position === 0) return "main";
+  if (position === 1) return "side_1";
+  return "side_2";
+}
+
+function newsletterTextLimitForIndex(index: number) {
+  return NEWSLETTER_ARTICLE_TEXT_LIMITS[newsletterArticleSlotForIndex(index)];
 }
 
 function parseMinutoItemsForSelection(value: string, selected: RegulatoryNews[]) {

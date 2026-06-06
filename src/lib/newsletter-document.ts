@@ -23,12 +23,21 @@ export interface NewsletterDocumentInput {
   destinatarios?: string[];
   temas?: string[];
   noticias: RegulatoryNews[];
+  newsletter_textos?: Record<string, string>;
   generatedAt?: Date;
   baseUrl?: string;
   documento_tipo?: NewsletterDocumentType;
   minuto_textos?: string[];
   minuto_items?: MinutoRegulacaoItemInput[];
 }
+
+export type NewsletterArticleSlot = "main" | "side_1" | "side_2";
+
+export const NEWSLETTER_ARTICLE_TEXT_LIMITS: Record<NewsletterArticleSlot, number> = {
+  main: 3000,
+  side_1: 980,
+  side_2: 900,
+};
 
 const NEWSLETTER_COLORS = {
   page: "#0d1220",
@@ -139,10 +148,10 @@ function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: strin
       <img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/>
     </section>
     <div class="body">
-      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl)}</article>
+      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl, input.newsletter_textos)}</article>
       <aside class="col-side">
-        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0)}
-        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1)}
+        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0, input.newsletter_textos)}
+        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1, input.newsletter_textos)}
       </aside>
     </div>
     <footer class="footer">
@@ -215,12 +224,12 @@ function renderMinutoHeader(date: string) {
   </header>`;
 }
 
-function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string) {
+function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string, articleTexts?: Record<string, string>) {
   const title = item?.titulo ?? "Selecione a noticia principal para montar a edicao";
   const body = newsletterArticleBody(item, {
-    maxLength: item?.imagem_url ? 3100 : 3800,
+    maxLength: NEWSLETTER_ARTICLE_TEXT_LIMITS.main,
     minLength: item?.imagem_url ? 1500 : 1900,
-  });
+  }, newsletterArticleOverride(item, articleTexts, NEWSLETTER_ARTICLE_TEXT_LIMITS.main));
   return `
     <div>
       <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
@@ -232,14 +241,15 @@ function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?:
   `;
 }
 
-function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string, index = 0) {
+function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string, index = 0, articleTexts?: Record<string, string>) {
   if (!item) return "";
   const title = item?.titulo ?? "Selecione uma noticia secundaria";
-  const excerptLimit = item.imagem_url ? (index >= 1 ? 900 : 980) : 1200;
+  const slot: NewsletterArticleSlot = index >= 1 ? "side_2" : "side_1";
+  const excerptLimit = NEWSLETTER_ARTICLE_TEXT_LIMITS[slot];
   const body = newsletterArticleBody(item, {
     maxLength: excerptLimit,
     minLength: item.imagem_url ? 520 : 680,
-  });
+  }, newsletterArticleOverride(item, articleTexts, excerptLimit));
   return `<div class="side-art ${item.imagem_url ? "" : "no-image"}">
     ${item.imagem_url ? `<div class="side-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
     <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
@@ -617,10 +627,23 @@ function newsletterArticleText(item: RegulatoryNews | undefined, maxLength: numb
   return clipSentence(newsletterArticleBody(item, maxLength), maxLength) || "Sem resumo disponÃ­vel.";
 }
 
-function newsletterArticleBody(item: RegulatoryNews | undefined, options: number | { maxLength: number; minLength?: number }) {
+export function buildNewsletterArticleTextDraft(item: RegulatoryNews | undefined, slot: NewsletterArticleSlot) {
+  return newsletterArticleBody(item, {
+    maxLength: NEWSLETTER_ARTICLE_TEXT_LIMITS[slot],
+    minLength: slot === "main" ? 1500 : 520,
+  });
+}
+
+function newsletterArticleBody(
+  item: RegulatoryNews | undefined,
+  options: number | { maxLength: number; minLength?: number },
+  overrideText?: string | null,
+) {
   if (!item) return "Sem resumo disponível.";
   const maxLength = typeof options === "number" ? options : options.maxLength;
   const minLength = typeof options === "number" ? 0 : options.minLength ?? 0;
+  const override = cleanNewsletterSourceText(overrideText);
+  if (override) return clipText(override, maxLength) || "Sem resumo disponível.";
   const resumo = cleanNewsletterSourceText(item.resumo);
   const conteudo = cleanNewsletterSourceText(item.conteudo);
   const title = cleanNewsletterSourceText(item.titulo);
@@ -686,6 +709,12 @@ function newsletterMetadataTextCandidates(metadata: Record<string, unknown> | nu
     .filter((value): value is string => typeof value === "string")
     .map(cleanNewsletterSourceText)
     .filter((value) => value.length >= 80);
+}
+
+function newsletterArticleOverride(item: RegulatoryNews | undefined, articleTexts: Record<string, string> | undefined, maxLength: number) {
+  if (!item?.id || !articleTexts) return null;
+  const value = articleTexts[item.id];
+  return typeof value === "string" && value.trim() ? clipText(value, maxLength) : null;
 }
 
 function cleanNewsletterSourceText(value: string | null | undefined) {
