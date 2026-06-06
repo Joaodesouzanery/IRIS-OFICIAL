@@ -79,22 +79,23 @@ body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
 .hero-subtitle strong{color:rgba(255,255,255,0.78);font-weight:500;}
 .hero-logo{width:400px;height:auto;flex-shrink:0;object-fit:contain;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
-.col-main{padding:24px 32px 14px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:12px;overflow:hidden;}
-.main-img{width:100%;height:255px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:4px 0;}
+.col-main{padding:22px 30px 12px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:10px;overflow:hidden;}
+.main-img{width:100%;height:218px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:2px 0;}
 .main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
 .art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};display:block;margin-bottom:8px;}
-.main-title{font-family:'Playfair Display',serif;font-size:29px;font-weight:900;line-height:1.04;letter-spacing:-0.01em;color:#fff;text-align:left;}
-.main-body{font-size:15px;line-height:1.48;color:rgba(255,255,255,0.76);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
-.main-body p+p{margin-top:9px;}
+.main-title{font-family:'Playfair Display',serif;font-size:27px;font-weight:900;line-height:1.02;letter-spacing:-0.01em;color:#fff;text-align:left;}
+.main-body{font-size:14.2px;line-height:1.42;color:rgba(255,255,255,0.76);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
+.main-body p+p{margin-top:7px;}
 .read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
 .col-side{display:flex;flex-direction:column;}
-.side-art{padding:24px 38px 16px 24px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:12px;flex:1;overflow:visible;}
-.side-art.no-image{gap:12px;justify-content:flex-start;}
+.side-art{padding:20px 34px 14px 22px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:9px;flex:1;overflow:hidden;}
+.side-art.no-image{gap:9px;justify-content:flex-start;}
 .side-art:last-child{border-bottom:none;}
-.side-img{width:100%;height:170px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.16);font-weight:500;overflow:hidden;}
+.side-img{width:100%;height:118px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.16);font-weight:500;overflow:hidden;}
 .side-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
-.side-title{font-family:'Playfair Display',serif;font-size:20.5px;font-weight:800;line-height:1.14;letter-spacing:0;color:#fff;text-align:left;}
-.side-excerpt{font-size:13.5px;line-height:1.48;color:rgba(255,255,255,0.66);text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
+.side-title{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:800;line-height:1.1;letter-spacing:0;color:#fff;text-align:left;}
+.side-excerpt{font-size:12.2px;line-height:1.38;color:rgba(255,255,255,0.66);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
+.side-excerpt p+p{margin-top:6px;}
 .side-link{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
 .footer{border-top:1px solid rgba(255,255,255,0.09);padding:0 44px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;}
 .footer-brand{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#fff;}
@@ -222,7 +223,7 @@ function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?:
       <h2 class="main-title">${escapeHtml(title)}</h2>
     </div>
     ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
-    <div class="main-body">${renderParagraphs(newsletterArticleText(item, item?.imagem_url ? 2200 : 2800), item?.imagem_url ? 7 : 8, item?.imagem_url ? 420 : 440)}</div>
+    <div class="main-body">${renderParagraphs(newsletterArticleBody(item, item?.imagem_url ? 3200 : 3800), item?.imagem_url ? 9 : 10, item?.imagem_url ? 430 : 450)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="read-more">Ler fonte oficial &#8599;</a>` : `<a class="read-more">Ler fonte oficial &#8599;</a>`}
   `;
 }
@@ -230,12 +231,12 @@ function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?:
 function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string, index = 0) {
   if (!item) return "";
   const title = item?.titulo ?? "Selecione uma noticia secundaria";
-  const excerptLimit = item.imagem_url ? (index >= 1 ? 180 : 240) : 320;
+  const excerptLimit = item.imagem_url ? (index >= 1 ? 1050 : 1150) : 1300;
   return `<div class="side-art ${item.imagem_url ? "" : "no-image"}">
     ${item.imagem_url ? `<div class="side-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
     <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
     <h3 class="side-title">${escapeHtml(title)}</h3>
-    <p class="side-excerpt">${escapeHtml(newsletterArticleText(item, excerptLimit))}</p>
+    <div class="side-excerpt">${renderParagraphs(newsletterArticleBody(item, excerptLimit), item.imagem_url ? 4 : 5, item.imagem_url ? 300 : 320)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="side-link">Fonte oficial &#8599;</a>` : `<a class="side-link">Fonte oficial &#8599;</a>`}
   </div>`;
 }
@@ -605,6 +606,10 @@ function newsletterExcerpt(item: RegulatoryNews | undefined, maxLength: number) 
 }
 
 function newsletterArticleText(item: RegulatoryNews | undefined, maxLength: number) {
+  return clipSentence(newsletterArticleBody(item, maxLength), maxLength) || "Sem resumo disponÃ­vel.";
+}
+
+function newsletterArticleBody(item: RegulatoryNews | undefined, maxLength: number) {
   if (!item) return "Sem resumo disponível.";
   const resumo = cleanNewsletterSourceText(item.resumo);
   const conteudo = cleanNewsletterSourceText(item.conteudo);
@@ -621,7 +626,7 @@ function newsletterArticleText(item: RegulatoryNews | undefined, maxLength: numb
   }
   if (!parts.length && title) parts.push(title);
 
-  return clipSentence(parts.join(" "), maxLength) || "Sem resumo disponível.";
+  return clipText(parts.join(" "), maxLength) || "Sem resumo disponível.";
 }
 
 function cleanNewsletterSourceText(value: string | null | undefined) {
