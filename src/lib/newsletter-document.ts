@@ -80,21 +80,21 @@ body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
 .hero-logo{width:400px;height:auto;flex-shrink:0;object-fit:contain;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:10px;overflow:hidden;}
-.main-img{width:100%;height:218px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:2px 0;}
+.main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:1px 0;}
 .main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
 .art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};display:block;margin-bottom:8px;}
-.main-title{font-family:'Playfair Display',serif;font-size:27px;font-weight:900;line-height:1.02;letter-spacing:-0.01em;color:#fff;text-align:left;}
-.main-body{font-size:14.2px;line-height:1.42;color:rgba(255,255,255,0.76);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
+.main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:#fff;text-align:left;}
+.main-body{font-size:13.8px;line-height:1.39;color:rgba(255,255,255,0.76);text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
 .main-body p+p{margin-top:7px;}
 .read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
 .col-side{display:flex;flex-direction:column;}
-.side-art{padding:20px 34px 14px 22px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:9px;flex:1;overflow:hidden;}
+.side-art{padding:18px 34px 12px 22px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:8px;flex:1;overflow:visible;}
 .side-art.no-image{gap:9px;justify-content:flex-start;}
 .side-art:last-child{border-bottom:none;}
-.side-img{width:100%;height:118px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.16);font-weight:500;overflow:hidden;}
+.side-img{width:100%;height:94px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.16);font-weight:500;overflow:hidden;}
 .side-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
-.side-title{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:800;line-height:1.1;letter-spacing:0;color:#fff;text-align:left;}
-.side-excerpt{font-size:12.2px;line-height:1.38;color:rgba(255,255,255,0.66);text-align:justify;hyphens:auto;flex:1;overflow:hidden;}
+.side-title{font-family:'Playfair Display',serif;font-size:17.8px;font-weight:800;line-height:1.08;letter-spacing:0;color:#fff;text-align:left;}
+.side-excerpt{font-size:11.8px;line-height:1.34;color:rgba(255,255,255,0.66);text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
 .side-excerpt p+p{margin-top:6px;}
 .side-link{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
 .footer{border-top:1px solid rgba(255,255,255,0.09);padding:0 44px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;}
@@ -217,13 +217,17 @@ function renderMinutoHeader(date: string) {
 
 function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string) {
   const title = item?.titulo ?? "Selecione a noticia principal para montar a edicao";
+  const body = newsletterArticleBody(item, {
+    maxLength: item?.imagem_url ? 3100 : 3800,
+    minLength: item?.imagem_url ? 1500 : 1900,
+  });
   return `
     <div>
       <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
       <h2 class="main-title">${escapeHtml(title)}</h2>
     </div>
     ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
-    <div class="main-body">${renderParagraphs(newsletterArticleBody(item, item?.imagem_url ? 3200 : 3800), item?.imagem_url ? 9 : 10, item?.imagem_url ? 430 : 450)}</div>
+    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 11 : 13, item?.imagem_url ? 360 : 390)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="read-more">Ler fonte oficial &#8599;</a>` : `<a class="read-more">Ler fonte oficial &#8599;</a>`}
   `;
 }
@@ -231,12 +235,16 @@ function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?:
 function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string, index = 0) {
   if (!item) return "";
   const title = item?.titulo ?? "Selecione uma noticia secundaria";
-  const excerptLimit = item.imagem_url ? (index >= 1 ? 1050 : 1150) : 1300;
+  const excerptLimit = item.imagem_url ? (index >= 1 ? 900 : 980) : 1200;
+  const body = newsletterArticleBody(item, {
+    maxLength: excerptLimit,
+    minLength: item.imagem_url ? 520 : 680,
+  });
   return `<div class="side-art ${item.imagem_url ? "" : "no-image"}">
     ${item.imagem_url ? `<div class="side-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
     <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
     <h3 class="side-title">${escapeHtml(title)}</h3>
-    <div class="side-excerpt">${renderParagraphs(newsletterArticleBody(item, excerptLimit), item.imagem_url ? 4 : 5, item.imagem_url ? 300 : 320)}</div>
+    <div class="side-excerpt">${renderParagraphs(body, item.imagem_url ? 5 : 6, item.imagem_url ? 240 : 280)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="side-link">Fonte oficial &#8599;</a>` : `<a class="side-link">Fonte oficial &#8599;</a>`}
   </div>`;
 }
@@ -609,8 +617,10 @@ function newsletterArticleText(item: RegulatoryNews | undefined, maxLength: numb
   return clipSentence(newsletterArticleBody(item, maxLength), maxLength) || "Sem resumo disponÃ­vel.";
 }
 
-function newsletterArticleBody(item: RegulatoryNews | undefined, maxLength: number) {
+function newsletterArticleBody(item: RegulatoryNews | undefined, options: number | { maxLength: number; minLength?: number }) {
   if (!item) return "Sem resumo disponível.";
+  const maxLength = typeof options === "number" ? options : options.maxLength;
+  const minLength = typeof options === "number" ? 0 : options.minLength ?? 0;
   const resumo = cleanNewsletterSourceText(item.resumo);
   const conteudo = cleanNewsletterSourceText(item.conteudo);
   const title = cleanNewsletterSourceText(item.titulo);
@@ -618,15 +628,64 @@ function newsletterArticleBody(item: RegulatoryNews | undefined, maxLength: numb
   const normalizedConteudo = normalizeText(conteudo);
   const parts: string[] = [];
 
-  if (resumo && resumo.length >= 70) parts.push(resumo);
-  if (conteudo && (!normalizedResumo || !normalizedConteudo.includes(normalizedResumo.slice(0, 120)))) {
-    parts.push(conteudo);
-  } else if (!parts.length && conteudo) {
-    parts.push(conteudo);
+  const resumoNeedle = normalizedResumo.slice(0, Math.min(120, normalizedResumo.length));
+  const conteudoAlreadyContainsResumo = Boolean(
+    resumoNeedle && normalizedConteudo.includes(resumoNeedle) && conteudo.length > resumo.length,
+  );
+
+  if (conteudoAlreadyContainsResumo) {
+    appendNewsletterTextPart(parts, conteudo);
+  } else {
+    appendNewsletterTextPart(parts, resumo && resumo.length >= 70 ? resumo : "");
+    appendNewsletterTextPart(parts, conteudo);
+    if (!parts.length) appendNewsletterTextPart(parts, resumo);
   }
-  if (!parts.length && title) parts.push(title);
+
+  if (parts.join(" ").length < minLength) {
+    for (const candidate of newsletterMetadataTextCandidates(item.metadata)) {
+      appendNewsletterTextPart(parts, candidate);
+      if (parts.join(" ").length >= minLength) break;
+    }
+  }
+  if (!parts.length && title) appendNewsletterTextPart(parts, title);
 
   return clipText(parts.join(" "), maxLength) || "Sem resumo disponível.";
+}
+
+function appendNewsletterTextPart(parts: string[], value: string | null | undefined) {
+  const text = cleanNewsletterSourceText(value);
+  if (!text || text.length < 24) return;
+  const normalized = normalizeText(text);
+  const duplicate = parts.some((part) => {
+    const current = normalizeText(part);
+    const probe = normalized.slice(0, Math.min(160, normalized.length));
+    const currentProbe = current.slice(0, Math.min(160, current.length));
+    return Boolean((probe && current.includes(probe)) || (currentProbe && normalized.includes(currentProbe)));
+  });
+  if (!duplicate) parts.push(text);
+}
+
+function newsletterMetadataTextCandidates(metadata: Record<string, unknown> | null | undefined) {
+  if (!metadata || typeof metadata !== "object" || Array.isArray(metadata)) return [];
+  const keys = [
+    "full_text",
+    "raw_text",
+    "article_text",
+    "articleBody",
+    "body",
+    "content",
+    "conteudo",
+    "description",
+    "og_description",
+    "summary",
+    "resumo",
+    "excerpt",
+  ];
+  return keys
+    .map((key) => metadata[key])
+    .filter((value): value is string => typeof value === "string")
+    .map(cleanNewsletterSourceText)
+    .filter((value) => value.length >= 80);
 }
 
 function cleanNewsletterSourceText(value: string | null | undefined) {
