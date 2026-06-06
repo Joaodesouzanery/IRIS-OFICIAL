@@ -86,7 +86,8 @@ body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
 .hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:#fff;}
 .hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:rgba(255,255,255,0.56);max-width:510px;}
 .hero-subtitle strong{color:rgba(255,255,255,0.78);font-weight:500;}
-.hero-logo{width:150px;height:auto;flex-shrink:0;object-fit:contain;display:block;}
+.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-logo{width:360px;height:360px;object-fit:cover;object-position:center;display:block;transform:scale(2.05);}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:10px;overflow:hidden;}
 .main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:1px 0;}
@@ -145,7 +146,7 @@ function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: strin
         <h1 class="hero-title">NEWSLETTER<br>REGULAT&Oacute;RIO</h1>
         <p class="hero-subtitle">${heroSubtitle}</p>
       </div>
-      <img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/>
+      <span class="hero-logo-frame"><img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/></span>
     </section>
     <div class="body">
       <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl, input.newsletter_textos)}</article>

@@ -178,7 +178,7 @@ async function collect(req: NextRequest) {
       },
       last_seen_at: new Date().toISOString(),
     };
-    if (item.imagem_url) row.imagem_url = item.imagem_url;
+    if (item.imagem_url || item.metadata.collection_mode === "enrich") row.imagem_url = item.imagem_url ?? null;
     if (item.resumo) row.resumo = item.resumo;
     if (item.conteudo) row.conteudo = item.conteudo;
     return row;

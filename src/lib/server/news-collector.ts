@@ -406,6 +406,8 @@ function buildGovbrSearchApiUrl(sourceUrl: string, limit: number) {
     api.searchParams.set("portal_type", "News Item");
     api.searchParams.set("metadata_fields", "effective");
     api.searchParams.append("metadata_fields", "created");
+    api.searchParams.set("sort_on", "effective");
+    api.searchParams.set("sort_order", "reverse");
     api.searchParams.set("b_size", String(Math.min(60, Math.max(10, limit * 2))));
     return api.toString();
   } catch {
@@ -590,8 +592,6 @@ function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   const relativeSegments = path.slice(sourcePath.length).split("/").filter(Boolean);
   const agency = source.agencia_sigla.toUpperCase();
   if (agency === "ANS" && relativeSegments.length < 2) return false;
-  if (agency === "ANAC" && !/^\d{4}$/.test(relativeSegments[0] ?? "")) return false;
-
   const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
   if (!lastSegment || /^\d+$/.test(lastSegment)) return false;
   if (["noticias", "ultimas-noticias", "noticias-anteriores"].includes(normalizeText(lastSegment))) return false;
@@ -705,36 +705,73 @@ function extractMainImage(html: string, baseUrl: string): { url: string | null; 
     { value: meta(html, "property", "og:image"), source: "og:image" },
     { value: meta(html, "property", "og:image:url"), source: "og:image:url" },
     { value: meta(html, "name", "twitter:image"), source: "twitter:image" },
+    { value: meta(html, "name", "twitter:image:src"), source: "twitter:image:src" },
+    { value: meta(html, "name", "thumbnail"), source: "meta thumbnail" },
+    { value: meta(html, "property", "thumbnailUrl"), source: "meta thumbnailUrl" },
     { value: meta(html, "itemprop", "image"), source: "itemprop:image" },
+    { value: meta(html, "itemprop", "thumbnailUrl"), source: "itemprop:thumbnailUrl" },
     { value: extractJsonLdImage(html), source: "json-ld image" },
+    { value: extractLinkImage(html), source: "link image" },
     { value: firstImageFromBlock(html, /<article[^>]*>([\s\S]*?)<\/article>/i), source: "article img" },
     { value: firstImageFromBlock(html, /<main[^>]*>([\s\S]*?)<\/main>/i), source: "main img" },
     { value: firstImageFromBlock(html, /<body[^>]*>([\s\S]*?)<\/body>/i), source: "body img" },
   ];
+  const valid: Array<{ url: string; source: string; score: number }> = [];
 
   for (const candidate of candidates) {
     const value = candidate.value ? pickSrcsetFirst(candidate.value) : null;
     const absolute = absolutize(value, baseUrl);
-    if (absolute && isLikelyContentImage(absolute)) return { url: absolute, source: candidate.source };
+    if (absolute && isLikelyContentImage(absolute)) {
+      valid.push({ url: absolute, source: candidate.source, score: imageScaleScore(absolute) });
+    }
   }
 
-  return { url: null, source: null };
+  const best = valid.sort((left, right) => right.score - left.score)[0];
+  return best ? { url: best.url, source: best.source } : { url: null, source: null };
 }
 
 function extractJsonLdImage(html: string) {
   for (const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
       const json = JSON.parse(decodeHtml(match[1]));
-      const candidates = Array.isArray(json) ? json : [json];
-      for (const candidate of candidates) {
-        const raw = candidate?.image;
-        if (typeof raw === "string") return raw;
-        if (Array.isArray(raw) && typeof raw[0] === "string") return raw[0];
-        if (raw && typeof raw.url === "string") return raw.url;
-      }
+      const image = findJsonLdImage(json);
+      if (image) return image;
     } catch {
       // JSON-LD malformado nao deve impedir a coleta da noticia.
     }
+  }
+  return null;
+}
+
+function findJsonLdImage(value: unknown): string | null {
+  if (!value || typeof value !== "object") return null;
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      const found = findJsonLdImage(item);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  const record = value as Record<string, unknown>;
+  for (const key of ["image", "thumbnailUrl", "contentUrl", "url"]) {
+    const raw = record[key];
+    if (typeof raw === "string" && isLikelyContentImage(raw)) return raw;
+    const nested = findJsonLdImage(raw);
+    if (nested) return nested;
+  }
+  const graph = findJsonLdImage(record["@graph"]);
+  if (graph) return graph;
+  return null;
+}
+
+function extractLinkImage(html: string) {
+  for (const match of html.matchAll(/<link\b[^>]*>/gi)) {
+    const tag = match[0];
+    const rel = normalizeText(attr(tag, "rel") ?? "");
+    if (!rel.includes("image") && !rel.includes("preload")) continue;
+    const href = attr(tag, "href");
+    if (href) return href;
   }
   return null;
 }
@@ -860,6 +897,7 @@ function firstImageFromBlock(html: string, blockRe: RegExp) {
     const value = pickBestImageCandidate(
       attr(tag, "srcset") ??
       attr(tag, "data-srcset") ??
+      attr(tag, "data-lazy-srcset") ??
       attr(tag, "data-src"),
     );
     if (value && !isDecorativeImage(value)) return value;
@@ -873,14 +911,29 @@ function firstImageFromBlock(html: string, blockRe: RegExp) {
     const value = pickBestImageCandidate(
       attr(tag, "srcset") ??
       attr(tag, "data-srcset") ??
+      attr(tag, "data-lazy-srcset") ??
+      attr(tag, "data-large-src") ??
+      attr(tag, "data-original-src") ??
       attr(tag, "data-original") ??
       attr(tag, "data-lazy-src") ??
+      attr(tag, "data-image") ??
       attr(tag, "data-src") ??
       attr(tag, "src"),
     );
     if (value && !isDecorativeImage(value)) return value;
   }
 
+  const background = firstBackgroundImageFromBlock(block);
+  if (background && !isDecorativeImage(background)) return background;
+
+  return null;
+}
+
+function firstBackgroundImageFromBlock(html: string) {
+  for (const match of html.matchAll(/style=["'][^"']*url\((['"]?)([^'")]+)\1\)[^"']*["']/gi)) {
+    const value = decodeHtml(match[2]).trim();
+    if (value) return value;
+  }
   return null;
 }
 
@@ -1116,6 +1169,8 @@ function pickBestImageCandidate(value: string | null) {
 
 function imageScaleScore(value: string) {
   const normalized = normalizeText(value);
+  const explicitWidth = Number(/(?:image-|[?&](?:w|width)=|[_-])(\d{3,5})(?=[._?&#/-]|$)/i.exec(value)?.[1] ?? 0);
+  if (Number.isFinite(explicitWidth) && explicitWidth > 0) return Math.min(explicitWidth, 5000);
   if (normalized.includes("large") || normalized.includes("grande")) return 1600;
   if (normalized.includes("preview")) return 1000;
   if (normalized.includes("mini") || normalized.includes("thumb")) return 200;
@@ -1174,10 +1229,14 @@ function isLikelyContentImage(value: string) {
     const path = new URL(value).pathname.toLowerCase();
     return /\.(png|jpe?g|webp|gif)$/i.test(path) ||
       path.includes("@@images") ||
+      path.includes("@@download") ||
+      path.includes("@@display-file") ||
       path.includes("/image") ||
-      path.includes("/imagem");
+      path.includes("/imagem") ||
+      path.includes("/media");
   } catch {
-    return /\.(png|jpe?g|webp|gif)(?:\?|$)/i.test(value);
+    return /\.(png|jpe?g|webp|gif)(?:\?|$)/i.test(value) ||
+      /@@(?:images|download|display-file)|\/(?:image|imagem|media)\b/i.test(value);
   }
 }
 
