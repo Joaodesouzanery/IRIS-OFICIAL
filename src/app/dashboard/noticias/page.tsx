@@ -1036,11 +1036,13 @@ export default function NoticiasPage() {
                     <p className="text-xs font-semibold text-text-primary">Textos da Newsletter</p>
                     <p className="text-[11px] text-text-muted mt-0.5">Limites calibrados para uma pagina sem corte visual.</p>
                   </div>
-                  <span className="badge-gray text-xs">{newsletterSelected.slice(0, 3).length}/3</span>
+                  <span className="badge-gray text-xs">
+                    {newsletterSelected.length} notícia{newsletterSelected.length === 1 ? "" : "s"} · {estimateNewsletterPageCount(newsletterSelected)} pág.
+                  </span>
                 </div>
                 {newsletterSelected.length ? (
-                  <div className="space-y-3">
-                    {newsletterSelected.slice(0, 3).map((item, index) => {
+                  <div className="max-h-[520px] overflow-auto pr-1 space-y-3">
+                    {newsletterSelected.map((item, index) => {
                       const slot = newsletterArticleSlotForIndex(index);
                       const limit = NEWSLETTER_ARTICLE_TEXT_LIMITS[slot];
                       const fallback = buildNewsletterArticleTextDraft(item, slot);
@@ -1051,7 +1053,7 @@ export default function NoticiasPage() {
                           <div className="flex items-start justify-between gap-2">
                             <div className="min-w-0">
                               <p className="text-[11px] font-semibold text-text-primary">
-                                {index === 0 ? "Principal esquerda" : `Lateral ${index}`}
+                                {newsletterArticlePositionLabel(index)}
                               </p>
                               <p className="text-[10px] text-text-muted truncate">
                                 {item.agencia_sigla ?? item.fonte} · {item.titulo}
@@ -1080,7 +1082,7 @@ export default function NoticiasPage() {
                     })}
                   </div>
                 ) : (
-                  <p className="text-xs text-text-muted">Selecione 3 noticias para editar os textos da pagina.</p>
+                  <p className="text-xs text-text-muted">Selecione noticias para editar os textos de cada pagina.</p>
                 )}
               </div>
             ) : null}
@@ -1416,6 +1418,13 @@ function newsletterArticleSlotForIndex(index: number): NewsletterArticleSlot {
 
 function newsletterTextLimitForIndex(index: number) {
   return NEWSLETTER_ARTICLE_TEXT_LIMITS[newsletterArticleSlotForIndex(index)];
+}
+
+function newsletterArticlePositionLabel(index: number) {
+  const page = Math.floor(index / 3) + 1;
+  const position = index % 3;
+  const label = position === 0 ? "Principal esquerda" : position === 1 ? "Lateral 1" : "Lateral 2";
+  return `Pagina ${page} · ${label}`;
 }
 
 function parseMinutoItemsForSelection(value: string, selected: RegulatoryNews[]) {

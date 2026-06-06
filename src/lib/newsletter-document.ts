@@ -59,7 +59,7 @@ function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput) {
   const date = formatNewsletterDate(generatedAt);
   const selected = input.noticias;
   const pages = chunkNewsletterItems(selected);
-  const logo = absolutePath("/brand/iris-logo-transparent.png", input.baseUrl);
+  const logo = absolutePath("/brand/newsletter-logo.png", input.baseUrl);
 
   return `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -86,7 +86,7 @@ body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
 .hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:#fff;}
 .hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:rgba(255,255,255,0.56);max-width:510px;}
 .hero-subtitle strong{color:rgba(255,255,255,0.78);font-weight:500;}
-.hero-logo{width:400px;height:auto;flex-shrink:0;object-fit:contain;display:block;}
+.hero-logo{width:150px;height:auto;flex-shrink:0;object-fit:contain;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:10px;overflow:hidden;}
 .main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:1px 0;}
