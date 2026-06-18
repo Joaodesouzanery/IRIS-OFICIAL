@@ -1,4 +1,4 @@
-import { fetchMonitoringSite } from "@/lib/server/monitoring";
+import { fetchMonitoringSite, tipoPrioridade } from "@/lib/server/monitoring";
 
 // Tipos minimos compartilhados entre o check incremental e o backfill.
 export type MonitoringSiteRow = {
@@ -94,7 +94,7 @@ export async function processMonitoringSite(
           reuniao: item.reuniao,
           data_reuniao: item.data_reuniao,
           hash_item: item.hash_item,
-          metadata: item.metadata,
+          metadata: { ...item.metadata, prioridade: tipoPrioridade(item.tipo) },
         })
         .select("id, titulo, url_item")
         .single();

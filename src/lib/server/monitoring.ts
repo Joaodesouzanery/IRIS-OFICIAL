@@ -28,7 +28,7 @@ export interface MonitoringFetchResult {
 }
 
 const DOC_LABEL_RE =
-  /\b(reuniao|reunioes|pauta|ata|deliberacao|deliberacoes|diretoria|diretores?|mandato|nomeacao|exoneracao|composicao)\b/i;
+  /\b(reuniao|reunioes|pauta|ata|atas|voto|votos|votacao|sessao|colegiad[ao]|deliberacao|deliberacoes|diretoria|diretores?|mandato|nomeacao|exoneracao|composicao)\b/i;
 const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 const DATE_RE = /\b(\d{2})\/(\d{2})\/(\d{4})\b/;
 const REUNIAO_RE = /(\d{1,4})\s*(?:a|o|ª|º)?\s*reuniao[^<\n\r]*/i;
@@ -60,9 +60,15 @@ export async function fetchMonitoringSite(
 
   const html = await res.text();
   const contentHash = sha256(html);
-  const items = site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
-    ? parseGovBrNewsHtml(html, site.url)
-    : parseMonitoringHtml(html, site.url);
+  // Respeita a estrategia explicita: fontes "html-static" (ex.: ANM/ARTESP de
+  // reunioes colegiadas) usam o parser de documentos mesmo estando em gov.br.
+  // Sem isso, a pagina de reunioes da ANM caía no parser de NOTICIAS (filtra
+  // apenas links /noticias/) e nao encontrava pautas/atas/votos.
+  const items = site.estrategia === "html-static"
+    ? parseMonitoringHtml(html, site.url)
+    : site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
+      ? parseGovBrNewsHtml(html, site.url)
+      : parseMonitoringHtml(html, site.url);
   const hasAnchors = /<a\b/i.test(html);
 
   return {
@@ -81,7 +87,7 @@ export function parseMonitoringHtml(
   const anchors = extractAnchors(html, baseUrl)
     .filter((a) => {
       const combined = normalizeText(`${a.text} ${decodeURIComponentSafe(a.href)}`);
-      return DOC_LABEL_RE.test(combined) || PDF_RE.test(a.href) || /\/view(?:$|[/?#])|sei|deliber|pauta|ata|reunio/.test(combined);
+      return DOC_LABEL_RE.test(combined) || PDF_RE.test(a.href) || /\/view(?:$|[/?#])|sei|deliber|pauta|ata|voto|reunio|colegiad|sessao/.test(combined);
     });
 
   const seen = new Set<string>();
@@ -202,12 +208,26 @@ function classifyLinkType(text: string, href: string): MonitoramentoTipoItem {
   if (/\b(nomea|exonera)/.test(value)) return "ato_nomeacao";
   if (/\bmandato/.test(value)) return "mandato";
   if (/\b(diretoria|diretores?|composi)/.test(value)) return "diretoria";
-  if (value.includes("pauta")) return "pauta";
-  if (/\bvoto\b/.test(value)) return "voto";
-  if (/\bata\b/.test(value)) return "ata";
+  // Decisoes tem prioridade sobre pautas: voto > ata > deliberacao > pauta.
+  // Uma pauta e a agenda do que sera discutido; voto/ata sao a decisao em si.
+  if (/\bvoto\b|\bvotos\b/.test(value)) return "voto";
+  if (/\bata\b|\batas\b/.test(value)) return "ata";
   if (value.includes("delibera")) return "deliberacao";
+  if (value.includes("pauta")) return "pauta";
   if (value.includes("reuniao")) return "reuniao";
   return "documento";
+}
+
+// Prioridade de processamento/exibicao: decisoes antes de agendas.
+export function tipoPrioridade(tipo: string): number {
+  switch (tipo) {
+    case "voto": return 5;
+    case "ata": return 4;
+    case "deliberacao": return 3;
+    case "pauta": return 2;
+    case "documento": return 1;
+    default: return 0;
+  }
 }
 
 function classifyGovBrType(value: string): MonitoramentoTipoItem {

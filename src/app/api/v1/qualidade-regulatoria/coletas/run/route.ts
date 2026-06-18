@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import {
   QUALIDADE_AGENCIAS,
-  QUALIDADE_CRITERIOS,
   QUALIDADE_FONTES,
   sanitizeEvidenceText,
+  scoreEvidenceRelevance,
 } from "@/lib/server/qualidade-regulatoria";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
@@ -18,6 +18,8 @@ type CollectionResult = {
   warnings: string[];
   url: string;
   title?: string | null;
+  snippet?: string | null;
+  confidence?: number;
 };
 
 export async function POST(req: NextRequest) {
@@ -78,18 +80,30 @@ async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number], fonte: 
       headers: { "User-Agent": "IRIS-Qualidade-Regulatoria/1.0 coleta institucional" },
     });
     const contentType = response.headers.get("content-type") ?? "";
-    const text = contentType.includes("text") || contentType.includes("html")
-      ? sanitizeEvidenceText(await response.text())
+    const rawHtml = contentType.includes("text") || contentType.includes("html")
+      ? await response.text()
       : "";
-    const title = text.match(/<title[^>]*>(.*?)<\/title>/i)?.[1]?.replace(/\s+/g, " ").trim() ?? null;
+    const text = sanitizeEvidenceText(rawHtml);
+    // Snippet melhor: prioriza <h1> e meta description sobre o <title>.
+    const h1 = rawHtml.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]?.replace(/<[^>]+>/g, "");
+    const metaDesc = rawHtml.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1]
+      ?? rawHtml.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)?.[1];
+    const titleTag = rawHtml.match(/<title[^>]*>(.*?)<\/title>/i)?.[1];
+    const snippetRaw = [h1, metaDesc, titleTag].map((v) => v?.replace(/\s+/g, " ").trim()).find(Boolean) ?? null;
+    const title = titleTag?.replace(/\s+/g, " ").trim() ?? null;
+    const criterioId = fonte.criterios_relacionados[0] ?? null;
+    // Relevancia semantica: % de palavras-chave do criterio presentes no conteudo.
+    const confidence = scoreEvidenceRelevance(criterioId, text);
     return {
       agencia_sigla: agencia.sigla,
       fonte_id: fonte.id,
-      criterio_id: fonte.criterios_relacionados[0] ?? null,
+      criterio_id: criterioId,
       status: response.ok ? "sucesso" : "parcial",
       warnings: response.ok ? [] : [`HTTP ${response.status}`],
       url,
       title: title ? sanitizeEvidenceText(title) : fonte.nome,
+      snippet: snippetRaw ? sanitizeEvidenceText(snippetRaw) : (title ? sanitizeEvidenceText(title) : fonte.nome),
+      confidence,
     };
   } catch (error) {
     return {
@@ -116,26 +130,36 @@ async function persistResults(results: CollectionResult[]) {
     dados_brutos: {
       url: item.url,
       title: item.title,
+      snippet: item.snippet ?? item.title,
+      confidence: item.confidence ?? 0,
       html_raw_stored: false,
       lgpd_lai_guardrails: true,
     },
-    evidencias_detectadas: item.title ? [{ titulo: item.title, url: item.url, status_revisao: "pendente" }] : [],
+    evidencias_detectadas: item.title ? [{ titulo: item.title, url: item.url, status_revisao: "pendente", confidence: item.confidence ?? 0 }] : [],
     warnings: item.warnings,
     compliance_status: "pendente_revisao",
   }));
   if (rows.length) await db.from("qualidade_regulatoria_coletas").insert(rows);
 
+  // Deduplica por (agencia, criterio, url) para nao inflar evidencias repetidas.
+  const seenEvidence = new Set<string>();
   const evidenceRows = results
     .filter((item) => item.title && item.criterio_id)
+    .filter((item) => {
+      const key = `${item.agencia_sigla}|${item.criterio_id}|${item.url}`;
+      if (seenEvidence.has(key)) return false;
+      seenEvidence.add(key);
+      return true;
+    })
     .map((item) => ({
       agencia_sigla: item.agencia_sigla,
       criterio_id: item.criterio_id!,
       titulo: item.title!,
       url: item.url,
       fonte: item.fonte_id,
-      trecho_publico: item.title!,
+      trecho_publico: item.snippet ?? item.title!,
       status_revisao: "pendente",
-      compliance_flags: { auto_collected: true, reviewed: false },
+      compliance_flags: { auto_collected: true, reviewed: false, confidence: item.confidence ?? 0 },
     }));
   if (evidenceRows.length) await db.from("qualidade_regulatoria_evidencias").insert(evidenceRows);
 }

@@ -492,6 +492,42 @@ export function sanitizeEvidenceText(value: string | null | undefined) {
     .slice(0, 1200);
 }
 
+// Palavras-chave por criterio para validacao semantica da evidencia coletada.
+// "sucesso" HTTP nao garante relevancia; aqui medimos se o conteudo realmente
+// fala do criterio antes da revisao humana.
+const CRITERIO_KEYWORDS: Record<number, string[]> = {
+  1: ["transparencia", "transparencia ativa", "dados abertos", "acesso a informacao", "lai", "informacoes institucionais", "agenda"],
+  2: ["consulta publica", "audiencia publica", "participacao social", "tomada de subsidios", "contribuicoes"],
+  3: ["analise de impacto", "air", "impacto regulatorio", "custo-beneficio", "alternativas regulatorias"],
+  4: ["governanca", "gestao de riscos", "integridade", "codigo de conduta", "controles internos", "planejamento estrategico"],
+  5: ["mandato", "quarentena", "autonomia", "independencia", "nomeacao", "estabilidade decisoria"],
+  6: ["prestacao de contas", "relatorio anual", "auditoria", "controle externo", "metas", "tcu"],
+  7: ["qualidade normativa", "revisao periodica", "estoque regulatorio", "arr", "consolidacao", "proporcionalidade"],
+  8: ["ouvidoria", "atendimento", "fala.br", "falabr", "tempo de resposta", "satisfacao", "usuarios"],
+  9: ["dados abertos", "dataset", "api", "csv", "json", "catalogo", "dados.gov"],
+  10: ["orcamento", "execucao orcamentaria", "siafi", "arrecadacao", "financeiro", "gastos"],
+};
+
+function normalizeForMatch(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase();
+}
+
+/**
+ * Calcula a relevancia (0-100) de um texto de evidencia para um criterio,
+ * pela proporcao de palavras-chave do criterio presentes no conteudo.
+ */
+export function scoreEvidenceRelevance(criterioId: number | null, text: string | null | undefined): number {
+  if (!criterioId || !text) return 0;
+  const keywords = CRITERIO_KEYWORDS[criterioId];
+  if (!keywords?.length) return 0;
+  const haystack = normalizeForMatch(text);
+  const hits = keywords.filter((keyword) => haystack.includes(normalizeForMatch(keyword))).length;
+  return Math.round(Math.min(1, hits / Math.min(keywords.length, 3)) * 100);
+}
+
 export function detectComplianceFlags(value: string | null | undefined) {
   const text = value ?? "";
   return {

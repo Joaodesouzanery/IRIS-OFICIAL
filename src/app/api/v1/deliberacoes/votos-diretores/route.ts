@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
 import { COLEGIADO_SOURCE_URLS, ensureColegiadoSources } from "@/lib/server/colegiado-sources";
+import { tipoPrioridade } from "@/lib/server/monitoring";
 
 export const dynamic = "force-dynamic";
 
@@ -43,8 +44,22 @@ export async function GET(req: NextRequest) {
       .in("tipo", ["deliberacao", "voto", "ata", "pauta", "documento"])
       .or("data_reuniao.gte.2026-01-01,data_reuniao.is.null")
       .order("first_seen_at", { ascending: false })
-      .limit(60);
-    itens = itensData ?? [];
+      .limit(120);
+
+    // Decisoes (voto/ata) primeiro; depois deliberacoes/pautas. Itens sem
+    // data_reuniao sao marcados como "a revisar" e vao para o fim da lista.
+    itens = (itensData ?? [])
+      .map((item) => ({
+        ...item,
+        prioridade: (item.metadata as { prioridade?: number } | null)?.prioridade ?? tipoPrioridade(item.tipo),
+        a_revisar: !item.data_reuniao,
+      }))
+      .sort((a, b) => {
+        if (a.a_revisar !== b.a_revisar) return a.a_revisar ? 1 : -1;
+        if (b.prioridade !== a.prioridade) return b.prioridade - a.prioridade;
+        return String(b.data_reuniao ?? "").localeCompare(String(a.data_reuniao ?? ""));
+      })
+      .slice(0, 60);
   }
 
   return NextResponse.json({ sources: sources ?? [], itens });

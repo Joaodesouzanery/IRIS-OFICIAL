@@ -100,7 +100,7 @@ export async function extractOfficialImageFromNewsUrl(input: {
     : extractMainImage(html, input.url);
   const image = await validateOfficialImage(candidate);
   return {
-    imagem_url: image.status === "official_image_found" ? upgradeImageScale(image.url ?? "") : null,
+    imagem_url: image.status === "official_image_found" || image.status === "official_image_unverified" ? upgradeImageScale(image.url ?? "") : null,
     image_status: image.status,
     image_source: image.source,
     image_content_type: image.contentType ?? null,
@@ -146,7 +146,7 @@ async function collectNewsSource(
       items_processed: detailResults.length,
       items_pending: Math.max(0, links.length - offsetPerSource - detailResults.length),
       batch_offset: offsetPerSource,
-      images_found: freshItems.filter((item) => item.metadata.image_status === "official_image_found").length,
+      images_found: freshItems.filter((item) => item.metadata.image_status === "official_image_found" || item.metadata.image_status === "official_image_unverified").length,
       images_absent: freshItems.filter((item) => item.metadata.image_status === "official_image_absent").length,
       images_failed: freshItems.filter((item) => item.metadata.image_status === "image_fetch_failed").length,
       latest_urls: freshItems.length ? freshItems.slice(0, 5).map((item) => item.url) : links.slice(0, 5).map((link) => link.url),
@@ -448,13 +448,18 @@ async function fetchNewsDetail(
         meta(html, "name", "twitter:title") ??
         h1Title ??
         link.title;
-    const conteudo = extractArticleText(html);
-    const rawResumo =
-      meta(html, "property", "og:description") ??
-      meta(html, "name", "description") ??
-      firstParagraph(html);
+    const ogDescription = meta(html, "property", "og:description") ?? meta(html, "name", "description");
+    let conteudo = extractArticleText(html);
+    // Quando nao ha corpo extraivel, usa a og:description como conteudo minimo.
+    if (!conteudo && ogDescription) {
+      const cleanedOg = cleanText(ogDescription);
+      if (cleanedOg.length >= 80) conteudo = cleanedOg.slice(0, 6000);
+    }
+    const rawResumo = ogDescription ?? firstParagraph(html);
     const titulo = isGenericArtespTitle(source, rawTitle) ? link.title : rawTitle;
-    const resumo = isGenericArtespDescription(source, rawResumo) ? excerptFromText(conteudo) : rawResumo;
+    // Resumo sempre cai para o corpo do texto quando a metatag faltar ou for generica.
+    const hasUsableResumo = Boolean(cleanText(rawResumo ?? "").trim()) && !isGenericArtespDescription(source, rawResumo);
+    const resumo = hasUsableResumo ? rawResumo : (excerptFromText(conteudo) ?? rawResumo);
     const rawCanonicalUrl = normalizeNewsUrl(absolutize(meta(html, "property", "og:url"), link.url) ?? link.url);
     const canonicalUrl = rawCanonicalUrl && source.strategy === "artesp"
       ? normalizeArtespNewsUrl(rawCanonicalUrl) ?? rawCanonicalUrl
@@ -487,7 +492,7 @@ async function fetchNewsDetail(
       titulo: normalizedTitle,
       url: canonical,
       fonte: source.fonte,
-      imagem_url: image.status === "official_image_found" ? image.url : null,
+      imagem_url: image.status === "official_image_found" || image.status === "official_image_unverified" ? image.url : null,
       resumo: resumo ? cleanText(resumo).slice(0, 900) : null,
       conteudo,
       publicado_em: normalizedDate,
@@ -827,10 +832,25 @@ function extractNearbyListingDate(html: string, anchorIndex: number) {
   return extractDateFromText(snippet);
 }
 
+// Fontes de imagem de alta confianca: metatags declaradas pelo proprio site.
+// Quando a validacao HTTP falha (HEAD bloqueado / timeout), preservamos a URL
+// em vez de descartar, marcando como "unverified" (o proxy serve a imagem).
+const HIGH_CONFIDENCE_IMAGE_SOURCES = new Set([
+  "og:image",
+  "og:image:url",
+  "twitter:image",
+  "twitter:image:src",
+  "itemprop:image",
+  "itemprop:thumbnailUrl",
+  "json-ld image",
+  "link image",
+]);
+
 async function validateOfficialImage(candidate: { url: string | null; source: string | null }) {
   if (!candidate.url) {
     return { ...candidate, status: "official_image_absent" as const };
   }
+  const highConfidence = candidate.source ? HIGH_CONFIDENCE_IMAGE_SOURCES.has(candidate.source) : false;
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), IMAGE_TIMEOUT_MS);
   try {
@@ -852,8 +872,15 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
     if (response.ok && contentType.toLowerCase().startsWith("image/")) {
       return { ...candidate, status: "official_image_found" as const, contentType, contentLength };
     }
+    // Metatag declarada pelo site: confia na URL mesmo sem confirmar o content-type.
+    if (highConfidence) {
+      return { ...candidate, status: "official_image_unverified" as const, contentType, contentLength };
+    }
     return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType, contentLength };
   } catch {
+    if (highConfidence) {
+      return { ...candidate, status: "official_image_unverified" as const, contentType: null, contentLength: null };
+    }
     return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType: null, contentLength: null };
   } finally {
     clearTimeout(timeout);
@@ -988,6 +1015,7 @@ function excerptFromText(value: string | null) {
 function extractArticleText(html: string) {
   const article =
     /<article[^>]*>([\s\S]*?)<\/article>/i.exec(html)?.[1] ??
+    /<[a-z]+[^>]*itemprop=["']articleBody["'][^>]*>([\s\S]*?)<\/[a-z]+>/i.exec(html)?.[1] ??
     /<main[^>]*>([\s\S]*?)<\/main>/i.exec(html)?.[1] ??
     /<h1[^>]*>[\s\S]*?<\/h1>([\s\S]*?)(?:<h[2-4][^>]*>\s*(?:ultimas|[uú]ltimas)\s*<\/h[2-4]>|<footer|Complementary Content)/i.exec(html)?.[1] ??
     html;

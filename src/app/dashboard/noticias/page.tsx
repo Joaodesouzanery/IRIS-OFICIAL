@@ -4,8 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { cn, formatDateLong } from "@/lib/utils";
-import { ModuleTabs } from "@/components/ui/ModuleTabs";
-import { NOTICIAS_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import {
   NEWSLETTER_ARTICLE_TEXT_LIMITS,
@@ -608,7 +606,6 @@ export default function NoticiasPage() {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <ModuleTabs tabs={NOTICIAS_TABS} />
       <div className="flex items-end justify-between gap-4 flex-wrap pt-2">
         <div>
           <div className="flex items-center gap-2 mb-2">
@@ -841,7 +838,7 @@ export default function NoticiasPage() {
         </div>
       </div>
 
-      <div className={cn(pageView === "feed" ? "w-full" : "max-w-3xl mx-auto w-full")}>
+      <div className="w-full">
         <section className={cn("space-y-4", pageView === "documento" && "hidden")}>
           <div className="card flex items-center gap-2 flex-wrap">
             <select className="select w-40" value={agencia} onChange={(e) => setAgencia(e.target.value)}>

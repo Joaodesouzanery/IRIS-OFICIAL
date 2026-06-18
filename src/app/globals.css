@@ -78,7 +78,7 @@
   }
 
   .card {
-    @apply bg-bg-card border border-border rounded-card p-4;
+    @apply bg-bg-card border border-border rounded-card p-5;
   }
 
   .card-hover {
@@ -87,6 +87,7 @@
 
   .metric-value {
     @apply font-mono text-3xl font-semibold text-text-primary;
+    letter-spacing: -0.02em;
   }
 
   .metric-label {
@@ -136,7 +137,7 @@
   .btn-secondary {
     @apply inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium
            bg-bg-card border border-border text-text-secondary
-           transition-colors duration-150 hover:text-text-primary hover:border-border
+           transition-colors duration-150 hover:text-text-primary hover:border-brand/40
            focus:outline-none focus:ring-2 focus:ring-brand/30;
   }
 
