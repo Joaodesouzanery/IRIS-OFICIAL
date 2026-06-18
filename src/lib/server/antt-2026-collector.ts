@@ -65,8 +65,13 @@ interface DownloadedPdf {
   hash: string;
 }
 
-export async function fetchAntt2026MonitoringItems(): Promise<DiscoveredMonitoringItem[]> {
-  const meetings = await discoverAntt2026Meetings({ maxPages: 3, maxMeetings: 40 });
+export async function fetchAntt2026MonitoringItems(
+  options: { maxPages?: number; maxMeetings?: number } = {},
+): Promise<DiscoveredMonitoringItem[]> {
+  const meetings = await discoverAntt2026Meetings({
+    maxPages: options.maxPages ?? 3,
+    maxMeetings: options.maxMeetings ?? 40,
+  });
   const items: DiscoveredMonitoringItem[] = [];
 
   for (const meeting of meetings) {

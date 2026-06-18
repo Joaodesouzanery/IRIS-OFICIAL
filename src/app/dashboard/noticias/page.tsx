@@ -591,14 +591,15 @@ export default function NoticiasPage() {
   return (
     <div className="space-y-6 animate-fade-in">
       <ModuleTabs tabs={NOTICIAS_TABS} />
-      <div className="flex items-start justify-between gap-4 flex-wrap">
+      <div className="flex items-end justify-between gap-4 flex-wrap pt-2">
         <div>
-          <div className="flex items-center gap-2">
-            <Newspaper className="w-5 h-5 text-brand" />
-            <h1 className="text-xl font-semibold text-text-primary">Notícias</h1>
+          <div className="flex items-center gap-2 mb-2">
+            <Newspaper className="w-4 h-4 text-brand" />
+            <span className="news-eyebrow">Feed Regulatório</span>
           </div>
-          <p className="text-sm text-text-muted mt-1">
-            Feed regulatório com curadoria para a Newsletter Regulatório semanal.
+          <h1 className="news-hero-title">As últimas notícias</h1>
+          <p className="text-sm text-text-muted mt-2">
+            Marque as notícias para montar a Newsletter Regulatório semanal.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -875,25 +876,29 @@ export default function NoticiasPage() {
               Nenhuma notícia encontrada no período selecionado. Use “Todas recentes” para ver publicações mais antigas da fonte.
             </div>
           ) : (
-            <div className={cn(viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-start" : "space-y-5")}>
+            <div className={cn(viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12 items-start" : "space-y-10")}>
               {noticias.map((item) => (
-                <article key={item.id} className="news-card card p-0 overflow-hidden flex flex-col">
-                  {item.imagem_url ? <NewsImage item={item} cover /> : null}
-                  <div className="p-4 min-w-0 flex flex-col flex-1">
+                <article key={item.id} className={cn("news-card", viewMode === "list" && "sm:flex-row sm:gap-6")}>
+                  {item.imagem_url ? (
+                    <div className={cn(viewMode === "list" && "sm:w-72 sm:shrink-0")}>
+                      <NewsImage item={item} cover />
+                    </div>
+                  ) : null}
+                  <div className="min-w-0 flex flex-col flex-1 pt-3">
                     <p className="news-eyebrow">
                       {(item.agencia_sigla ?? item.fonte)}, {formatDateLong(item.publicado_em ?? item.first_seen_at)}
                     </p>
                     <div className="flex items-center gap-2 mt-1.5 mb-2">
                       <StatusBadge status={item.status_curadoria} />
                     </div>
-                    <h2 className="news-title">{item.titulo}</h2>
-                    <p className={cn("text-sm text-text-secondary mt-2", viewMode === "grid" ? "line-clamp-3" : "line-clamp-2")}>
+                    <h2 className={cn("news-title", viewMode === "grid" && "news-title-grid")}>{item.titulo}</h2>
+                    <p className={cn("text-sm text-text-secondary mt-2.5 leading-relaxed", viewMode === "grid" ? "line-clamp-3" : "line-clamp-2")}>
                       {item.resumo ?? "Sem resumo disponível."}
                     </p>
-                    <a href={item.url} target="_blank" rel="noreferrer" className="news-readhere mt-3">
-                      ↳ Ler aqui <ExternalLink className="w-3 h-3" />
+                    <a href={item.url} target="_blank" rel="noreferrer" className="news-readhere mt-4">
+                      ↳ Saiba Mais <ExternalLink className="w-3 h-3" />
                     </a>
-                    <div className="flex items-center gap-2 mt-3 pt-3 border-t border-border flex-wrap">
+                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-border flex-wrap">
                       <button
                         className="btn-secondary text-xs whitespace-nowrap"
                         onClick={() => statusMutation.mutate({ id: item.id, next: "selecionado" })}
@@ -1291,12 +1296,11 @@ function NewsImage({ item, cover = false }: { item: RegulatoryNews; cover?: bool
 
   if (cover) {
     return (
-      <div className="w-full aspect-[16/9] overflow-hidden bg-bg-hover">
+      <div className="news-figure">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={src}
           alt=""
-          className="w-full h-full object-cover"
           onError={() => setSrc(src === original ? proxiedImageUrl(original) : null)}
         />
       </div>

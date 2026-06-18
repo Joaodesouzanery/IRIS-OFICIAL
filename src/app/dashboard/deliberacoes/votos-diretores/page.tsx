@@ -19,6 +19,7 @@ import {
   CheckCircle2,
   ChevronDown,
   ChevronUp,
+  Download,
   ExternalLink,
   FileText,
   Gavel,
@@ -30,6 +31,14 @@ import {
 } from "lucide-react";
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
+
+type BackfillResponse = {
+  ano: number;
+  fontes_processadas: number;
+  novos_itens: number;
+  documentos_enfileirados: number;
+  demo?: boolean;
+};
 
 type VotosDiretoresResponse = {
   sources: MonitoramentoSite[];
@@ -74,6 +83,14 @@ export default function VotosDiretoresPage() {
     },
   });
 
+  const backfillMutation = useMutation({
+    mutationFn: () => api.post<BackfillResponse>("/deliberacoes/votos-diretores/backfill"),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+    },
+  });
+
   const colegiadoAgencias = useMemo(
     () => (agencias ?? []).filter((a) => COLEGIADO_SIGLAS.includes(a.sigla)),
     [agencias],
@@ -100,14 +117,25 @@ export default function VotosDiretoresPage() {
             Captura automática das decisões das reuniões colegiadas (ANTT, ANM e ARTESP) e métricas por diretor.
           </p>
         </div>
-        <button
-          onClick={() => checkMutation.mutate()}
-          disabled={checkMutation.isPending || demoEnabled}
-          className="btn-primary"
-        >
-          {checkMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-          Verificar novos documentos
-        </button>
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={() => backfillMutation.mutate()}
+            disabled={backfillMutation.isPending || checkMutation.isPending || demoEnabled}
+            className="btn-primary"
+            title="Busca e processa todas as deliberações de 2026 das 3 agências"
+          >
+            {backfillMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
+            Buscar todas de 2026
+          </button>
+          <button
+            onClick={() => checkMutation.mutate()}
+            disabled={checkMutation.isPending || backfillMutation.isPending || demoEnabled}
+            className="btn-secondary"
+          >
+            {checkMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+            Verificar novos
+          </button>
+        </div>
       </div>
 
       {demoEnabled ? (
@@ -116,6 +144,19 @@ export default function VotosDiretoresPage() {
         </div>
       ) : null}
 
+      {backfillMutation.data ? (
+        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
+          Backfill {backfillMutation.data.ano}: {backfillMutation.data.fontes_processadas} fonte(s) ·{" "}
+          {backfillMutation.data.novos_itens} novo(s) item(ns) · {backfillMutation.data.documentos_enfileirados} documento(s)
+          enfileirado(s) para extração. Confirme os votos em{" "}
+          <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
+        </div>
+      ) : null}
+      {backfillMutation.error ? (
+        <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">
+          {backfillMutation.error instanceof Error ? backfillMutation.error.message : "Erro no backfill de 2026"}
+        </div>
+      ) : null}
       {checkMutation.data ? (
         <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
           {checkMutation.data.checked} fonte(s) verificada(s) · {checkMutation.data.novos_detectados} novo(s) documento(s) detectado(s) e enfileirado(s) para extração.

@@ -68,3 +68,30 @@ export async function POST(req: NextRequest) {
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
   return NextResponse.json({ evidencia: data });
 }
+
+// Revisao humana: muda o status de revisao (pendente -> validado/rejeitado).
+// Apenas evidencias "validado" devem alimentar a pontuacao do premio.
+export async function PATCH(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
+  const body = await req.json().catch(() => ({})) as {
+    id?: string;
+    status_revisao?: string;
+  };
+  const allowed = ["pendente", "em_revisao", "validado", "rejeitado"];
+  if (!body.id || !body.status_revisao || !allowed.includes(body.status_revisao)) {
+    return NextResponse.json({ error: "Informe id e status_revisao válido (validado/rejeitado/pendente)." }, { status: 400 });
+  }
+
+  const db = createSupabaseServerClient();
+  const { data, error } = await db
+    .from("qualidade_regulatoria_evidencias")
+    .update({ status_revisao: body.status_revisao })
+    .eq("id", body.id)
+    .select("*")
+    .single();
+
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json({ evidencia: data });
+}

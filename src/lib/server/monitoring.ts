@@ -35,9 +35,10 @@ const REUNIAO_RE = /(\d{1,4})\s*(?:a|o|ª|º)?\s*reuniao[^<\n\r]*/i;
 
 export async function fetchMonitoringSite(
   site: MonitoringSiteInput,
+  options: { maxPages?: number; maxMeetings?: number } = {},
 ): Promise<MonitoringFetchResult> {
   if (site.estrategia === "antt-2026") {
-    const items = await fetchAntt2026MonitoringItems();
+    const items = await fetchAntt2026MonitoringItems(options);
     return {
       contentHash: sha256(JSON.stringify(items.map((item) => item.hash_item).sort())),
       needsHeadless: false,

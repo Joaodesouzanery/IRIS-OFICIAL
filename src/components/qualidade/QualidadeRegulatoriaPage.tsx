@@ -6,6 +6,7 @@ import {
   AlertTriangle,
   Award,
   BarChart3,
+  Check,
   CheckCircle,
   Database,
   Download,
@@ -13,8 +14,10 @@ import {
   FileSearch,
   Gavel,
   Loader2,
+  Plus,
   Scale,
   Table2,
+  X,
 } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { api } from "@/lib/api";
@@ -82,6 +85,26 @@ type DashboardEvidence = {
   trecho_publico: string;
   data_referencia: string;
   status_revisao: string;
+};
+
+type EvidenceRow = {
+  id: string;
+  agencia_sigla: string;
+  criterio_id: number;
+  titulo: string;
+  url: string | null;
+  fonte: string | null;
+  trecho_publico: string | null;
+  status_revisao: string;
+};
+
+type ManualEvidenceInput = {
+  agencia_sigla: string;
+  criterio_id: number;
+  titulo: string;
+  url?: string | null;
+  fonte?: string | null;
+  trecho_publico?: string | null;
 };
 
 type QualityDashboard = {
@@ -162,6 +185,50 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
     },
   });
 
+  // Coleta completa: encadeia lotes ate cobrir todas as agencias x fontes.
+  const runFullCollection = useMutation({
+    mutationFn: async () => {
+      let offset = 0;
+      let lotes = 0;
+      let total = 0;
+      // Limite de seguranca para evitar loop infinito (cobre QUALIDADE_AGENCIAS x QUALIDADE_FONTES).
+      for (let i = 0; i < 60; i++) {
+        const result = await api.post<{ processed: number; total: number; next_offset: number | null }>(
+          "/qualidade-regulatoria/coletas/run",
+          { offset, limit: 24 },
+        );
+        lotes++;
+        total = result.total;
+        if (result.next_offset === null) break;
+        offset = result.next_offset;
+      }
+      return { lotes, total };
+    },
+    onSuccess: () => {
+      setCollectionOffset(0);
+      queryClient.invalidateQueries({ queryKey: ["qualidade-regulatoria"] });
+    },
+  });
+
+  // Evidencias reais do banco (com id) para revisao humana e entrada manual.
+  const { data: evidenceRows } = useQuery({
+    queryKey: ["qualidade-regulatoria", "evidencias", selectedAgencySigla, selectedCriterionId],
+    queryFn: () => api.get<{ data: EvidenceRow[] }>(
+      `/qualidade-regulatoria/evidencias?agencia_sigla=${selectedAgencySigla}&criterio_id=${selectedCriterionId}`,
+    ),
+    enabled: tab === "evidencias",
+  });
+
+  const addEvidence = useMutation({
+    mutationFn: (payload: ManualEvidenceInput) => api.post("/qualidade-regulatoria/evidencias", payload),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["qualidade-regulatoria", "evidencias"] }),
+  });
+
+  const reviewEvidence = useMutation({
+    mutationFn: (payload: { id: string; status_revisao: string }) => api.patch("/qualidade-regulatoria/evidencias", payload),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["qualidade-regulatoria", "evidencias"] }),
+  });
+
   const ranking = useMemo(() => data?.ranking ?? [], [data?.ranking]);
   const criteria = useMemo(() => data?.criterios ?? [], [data?.criterios]);
   const agencies = useMemo(() => data?.agencias ?? [], [data?.agencias]);
@@ -234,11 +301,23 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
               onSelectCriterion={setSelectedCriterionId}
               evidences={selectedEvidence}
               allEvidence={data.evidencias_resumo}
+              evidenceRows={evidenceRows?.data ?? []}
+              onAddEvidence={(payload) => addEvidence.mutate(payload)}
+              onReviewEvidence={(payload) => reviewEvidence.mutate(payload)}
+              isSavingEvidence={addEvidence.isPending}
+              isReviewing={reviewEvidence.isPending}
             />
           ) : null}
 
           {tab === "coletas" ? (
-            <CollectionsView collectionStatus={collectionStatus} runCollection={() => runCollection.mutate()} isPending={runCollection.isPending} />
+            <CollectionsView
+              collectionStatus={collectionStatus}
+              runCollection={() => runCollection.mutate()}
+              isPending={runCollection.isPending}
+              runFullCollection={() => runFullCollection.mutate()}
+              isRunningFull={runFullCollection.isPending}
+              fullResult={runFullCollection.data}
+            />
           ) : null}
 
           {tab === "premio" ? (
@@ -361,6 +440,11 @@ function EvidenceView(props: {
   onSelectCriterion: (id: number) => void;
   evidences: DashboardEvidence[];
   allEvidence: DashboardEvidence[];
+  evidenceRows: EvidenceRow[];
+  onAddEvidence: (payload: ManualEvidenceInput) => void;
+  onReviewEvidence: (payload: { id: string; status_revisao: string }) => void;
+  isSavingEvidence: boolean;
+  isReviewing: boolean;
 }) {
   return (
     <section className="space-y-4">
@@ -371,6 +455,59 @@ function EvidenceView(props: {
         <Metric label="Pendentes" value={props.allEvidence.filter((item) => item.status_revisao === "pendente").length} />
         <Metric label="Fontes" value={new Set(props.allEvidence.map((item) => item.fonte)).size} />
       </div>
+
+      <ManualEvidenceForm
+        agencySigla={props.selectedAgencySigla}
+        criterionId={props.selectedCriterionId}
+        onAdd={props.onAddEvidence}
+        isSaving={props.isSavingEvidence}
+      />
+
+      {props.evidenceRows.length > 0 ? (
+        <div className="card space-y-3">
+          <h2 className="text-sm font-semibold text-text-primary">Revisao de evidencias ({props.selectedAgencySigla})</h2>
+          <p className="text-xs text-text-muted">Apenas evidencias validadas alimentam a pontuacao do premio.</p>
+          <div className="space-y-2">
+            {props.evidenceRows.map((row) => (
+              <div key={row.id} className="flex items-start gap-3 p-3 border border-border rounded-md">
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm text-text-primary font-medium line-clamp-2">{row.titulo}</p>
+                  <p className="text-xs text-text-muted mt-0.5">
+                    {row.fonte ?? "manual"}
+                    {row.url ? <> · <a href={row.url} target="_blank" rel="noreferrer" className="text-brand hover:underline inline-flex items-center gap-1">link <ExternalLink className="w-3 h-3" /></a></> : null}
+                  </p>
+                  {row.trecho_publico ? <p className="text-xs text-text-secondary mt-1 line-clamp-2">{row.trecho_publico}</p> : null}
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <span className={cn(
+                    "badge text-xs",
+                    row.status_revisao === "validado" && "badge-green",
+                    row.status_revisao === "rejeitado" && "badge-red",
+                    (row.status_revisao === "pendente" || row.status_revisao === "em_revisao") && "badge-gray",
+                  )}>{row.status_revisao}</span>
+                  <button
+                    className="btn-secondary text-xs"
+                    disabled={props.isReviewing || row.status_revisao === "validado"}
+                    onClick={() => props.onReviewEvidence({ id: row.id, status_revisao: "validado" })}
+                    title="Validar"
+                  >
+                    <Check className="w-3.5 h-3.5" /> Validar
+                  </button>
+                  <button
+                    className="btn-secondary text-xs"
+                    disabled={props.isReviewing || row.status_revisao === "rejeitado"}
+                    onClick={() => props.onReviewEvidence({ id: row.id, status_revisao: "rejeitado" })}
+                    title="Rejeitar"
+                  >
+                    <X className="w-3.5 h-3.5" /> Rejeitar
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
+
       <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {props.evidences.map((evidence) => <EvidenceCard key={`${evidence.agencia_sigla}-${evidence.criterio_id}-${evidence.fonte}`} evidence={evidence} />)}
       </section>
@@ -378,7 +515,61 @@ function EvidenceView(props: {
   );
 }
 
-function CollectionsView({ collectionStatus, runCollection, isPending }: { collectionStatus?: CollectionStatus; runCollection: () => void; isPending: boolean }) {
+function ManualEvidenceForm({ agencySigla, criterionId, onAdd, isSaving }: {
+  agencySigla: string;
+  criterionId: number;
+  onAdd: (payload: ManualEvidenceInput) => void;
+  isSaving: boolean;
+}) {
+  const [titulo, setTitulo] = useState("");
+  const [url, setUrl] = useState("");
+  const [trecho, setTrecho] = useState("");
+
+  function submit() {
+    if (!titulo.trim()) return;
+    onAdd({
+      agencia_sigla: agencySigla,
+      criterio_id: criterionId,
+      titulo: titulo.trim(),
+      url: url.trim() || null,
+      fonte: "manual",
+      trecho_publico: trecho.trim() || null,
+    });
+    setTitulo("");
+    setUrl("");
+    setTrecho("");
+  }
+
+  return (
+    <div className="card space-y-3">
+      <div className="flex items-center gap-2">
+        <Plus className="w-4 h-4 text-brand" />
+        <h2 className="text-sm font-semibold text-text-primary">Adicionar evidencia manual</h2>
+      </div>
+      <p className="text-xs text-text-muted">
+        Vinculada a {agencySigla} · criterio {criterionId}. Entra como &quot;pendente&quot; ate revisao humana.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <input className="input" placeholder="Titulo da evidencia" value={titulo} onChange={(e) => setTitulo(e.target.value)} />
+        <input className="input" placeholder="URL (opcional)" value={url} onChange={(e) => setUrl(e.target.value)} />
+      </div>
+      <textarea className="input min-h-20" placeholder="Trecho publico / observacao (opcional)" value={trecho} onChange={(e) => setTrecho(e.target.value)} />
+      <button className="btn-primary w-fit" onClick={submit} disabled={isSaving || !titulo.trim()}>
+        {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+        Adicionar evidencia
+      </button>
+    </div>
+  );
+}
+
+function CollectionsView({ collectionStatus, runCollection, isPending, runFullCollection, isRunningFull, fullResult }: {
+  collectionStatus?: CollectionStatus;
+  runCollection: () => void;
+  isPending: boolean;
+  runFullCollection: () => void;
+  isRunningFull: boolean;
+  fullResult?: { lotes: number; total: number };
+}) {
   return (
     <section className="space-y-4">
       <div className="card flex items-center justify-between gap-4 flex-wrap">
@@ -386,11 +577,22 @@ function CollectionsView({ collectionStatus, runCollection, isPending }: { colle
           <h2 className="text-sm font-semibold text-text-primary">Rodada de coleta segura</h2>
           <p className="text-sm text-text-muted mt-1">Processa fontes em lotes, registra status e mantem revisao humana de evidencias.</p>
         </div>
-        <button className="btn-primary" onClick={runCollection} disabled={isPending}>
-          {isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Database className="w-4 h-4" />}
-          Rodar lote seguro
-        </button>
+        <div className="flex flex-wrap gap-2">
+          <button className="btn-primary" onClick={runFullCollection} disabled={isRunningFull || isPending}>
+            {isRunningFull ? <Loader2 className="w-4 h-4 animate-spin" /> : <Database className="w-4 h-4" />}
+            Coletar todas as agencias
+          </button>
+          <button className="btn-secondary" onClick={runCollection} disabled={isPending || isRunningFull}>
+            {isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Database className="w-4 h-4" />}
+            Rodar lote
+          </button>
+        </div>
       </div>
+      {fullResult ? (
+        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
+          Coleta completa: {fullResult.lotes} lote(s) processado(s) cobrindo {fullResult.total} tarefa(s). Evidencias registradas como pendentes para revisao.
+        </div>
+      ) : null}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <Metric label="Total" value={collectionStatus?.metricas.total ?? 0} />
         <Metric label="Sucesso" value={collectionStatus?.metricas.sucesso ?? 0} />

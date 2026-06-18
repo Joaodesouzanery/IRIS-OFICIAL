@@ -8,7 +8,7 @@ export const COLEGIADO_SOURCES = [
     nome_completo: "Agencia Nacional de Transportes Terrestres",
     nome: "ANTT - Reunioes da Diretoria",
     url: "https://portal.antt.gov.br/web/guest/reunioes-da-diretoria",
-    estrategia: "html-static",
+    estrategia: "antt-2026",
   },
   {
     sigla: "ANM",

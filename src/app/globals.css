@@ -151,24 +151,58 @@
     @apply input appearance-none cursor-pointer;
   }
 
-  /* ── Notícias: estética editorial (newsroom) ─────────────────────────── */
+  /* ── Notícias: estética editorial (newsroom, estilo Palantir) ────────── */
+  /* Cards sem moldura — separados por respiro, seguindo o tema (claro/escuro). */
   .news-card {
-    @apply transition-colors duration-150 hover:border-brand/30;
+    @apply flex flex-col bg-transparent transition-all duration-300 ease-out;
+  }
+
+  /* Moldura da imagem 16:9 com zoom suave no hover do card. */
+  .news-figure {
+    @apply relative w-full overflow-hidden bg-bg-hover rounded-md;
+    aspect-ratio: 16 / 9;
+  }
+
+  .news-figure img {
+    @apply w-full h-full object-cover transition-transform duration-500 ease-out;
+  }
+
+  .news-card:hover .news-figure img {
+    transform: scale(1.045);
   }
 
   .news-eyebrow {
-    @apply font-mono text-[11px] uppercase tracking-[0.14em] text-text-muted;
+    @apply font-mono text-[11px] uppercase tracking-[0.16em] text-text-muted;
   }
 
   .news-title {
     font-family: 'Playfair Display', Georgia, serif;
-    @apply text-text-primary font-semibold leading-tight;
-    font-size: 1.35rem;
-    letter-spacing: -0.01em;
+    @apply text-text-primary font-medium leading-[1.12] transition-colors duration-200;
+    font-size: 1.6rem;
+    letter-spacing: -0.015em;
+  }
+
+  .news-card:hover .news-title {
+    @apply text-brand;
+  }
+
+  /* Título menor quando em grade de 4 colunas (mais cards por linha). */
+  .news-title-grid {
+    font-size: 1.3rem;
   }
 
   .news-readhere {
-    @apply inline-flex items-center gap-1 text-sm text-brand font-medium hover:underline w-fit;
+    @apply inline-flex items-center gap-1 text-sm text-text-secondary font-medium w-fit
+           border-b border-transparent transition-colors duration-200
+           hover:text-brand hover:border-brand/60;
+  }
+
+  /* Cabeçalho editorial "As últimas notícias". */
+  .news-hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-text-primary font-medium leading-none;
+    font-size: clamp(2.2rem, 4vw, 3.25rem);
+    letter-spacing: -0.02em;
   }
 
   /* ── Gráficos Recharts customizados ──────────────────────────────────── */
