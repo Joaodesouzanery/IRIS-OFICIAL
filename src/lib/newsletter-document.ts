@@ -136,7 +136,7 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 .main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
 .art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${t.accent};display:block;margin-bottom:8px;}
 .main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:${t.text};text-align:left;}
-.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
+.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:1 1 auto;min-height:0;overflow:hidden;}
 .main-body p+p{margin-top:7px;}
 .read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${t.accent};text-decoration:none;flex-shrink:0;}
 .col-side{display:flex;flex-direction:column;}
@@ -334,7 +334,7 @@ function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?:
       <h2 class="main-title">${escapeHtml(title)}</h2>
     </div>
     ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
-    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 11 : 13, item?.imagem_url ? 360 : 390)}</div>
+    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 9 : 11, item?.imagem_url ? 360 : 390)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="read-more">Ler fonte oficial &#8599;</a>` : `<a class="read-more">Ler fonte oficial &#8599;</a>`}
   `;
 }

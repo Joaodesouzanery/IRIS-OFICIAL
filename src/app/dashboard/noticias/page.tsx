@@ -698,32 +698,17 @@ export default function NoticiasPage() {
       ) : null}
 
       {collectMutation.data ? (
-        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success space-y-2">
-          <p>
-            {collectMutation.data.batch?.itens_processados ?? collectMutation.data.found} itens processados nesta rodada;
-            {" "}{collectMutation.data.upserted} notícias salvas ou atualizadas.
-            {collectMutation.data.batch?.itens_pendentes ? ` Restam ${collectMutation.data.batch.itens_pendentes} links para os próximos lotes.` : " Não há links pendentes neste lote."}
+        <div className="border border-success/30 bg-success/10 rounded-card p-3 flex items-center justify-between gap-3 flex-wrap">
+          <p className="text-sm text-success inline-flex items-center gap-2">
+            <Check className="w-4 h-4 shrink-0" />
+            <span>
+              {collectMutation.data.upserted} notícias coletadas
+              {typeof collectMutation.data.batch?.imagens_encontradas === "number"
+                ? ` · ${collectMutation.data.batch.imagens_encontradas} com foto`
+                : ""}
+              {collectMutation.data.partial_success ? " · algumas fontes falharam" : ""}
+            </span>
           </p>
-          {collectMutation.data.batch ? (
-            <p className="text-xs">
-              Links detectados: {collectMutation.data.batch.links_detectados} · Imagens oficiais encontradas: {collectMutation.data.batch.imagens_encontradas} · Sem imagem oficial: {collectMutation.data.batch.imagens_ausentes} · Falhas de imagem: {collectMutation.data.batch.imagens_com_falha}
-            </p>
-          ) : null}
-          {collectMutation.data.audit ? (
-            <p className="text-xs">
-              Auditoria: {collectMutation.data.audit.proxy_pronto} imagens prontas no proxy · {collectMutation.data.audit.imagens_alta_qualidade} em alta qualidade · {collectMutation.data.audit.imagens_baixa_qualidade} imagens fracas · {collectMutation.data.audit.conteudo_completo} textos completos · {collectMutation.data.audit.sem_conteudo} sem texto.
-            </p>
-          ) : null}
-          {collectMutation.data.partial_success ? (
-            <p className="text-xs text-warning">Coleta parcial: algumas fontes falharam, mas as notícias encontradas foram salvas.</p>
-          ) : null}
-          {collectMutation.data.failed_sources?.length ? (
-            <div className="text-xs text-warning space-y-1">
-              {collectMutation.data.failed_sources.slice(0, 4).map((source) => (
-                <p key={`${source.agencia_sigla}-${source.source_url}`}>{source.agencia_sigla}: {source.error}</p>
-              ))}
-            </div>
-          ) : null}
           {collectMutation.data.next_batch?.recommended ? (
             <button
               type="button"
@@ -734,22 +719,8 @@ export default function NoticiasPage() {
                 if (nextBatch) collectMutation.mutate(nextBatch);
               }}
             >
-              Continuar próximo lote
+              Buscar mais notícias
             </button>
-          ) : null}
-          {collectMutation.data.source_reports?.length ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-2 text-xs">
-              {collectMutation.data.source_reports.map((report) => (
-                <div key={`${report.source_id ?? report.agencia_sigla}-${report.collection_phase ?? "manual"}-${report.batch_offset ?? 0}`} className="rounded-md border border-success/20 p-2 space-y-1">
-                  <p className="font-semibold">{report.agencia_sigla}: {report.items_processed ?? report.items_collected} processados / {report.links_found} links</p>
-                  <p>{report.tier === "expanded" ? "Federal expandida" : "Fonte principal"}{report.latest_title ? ` - ${report.latest_title}` : ""}</p>
-                  <p>{report.status === "ok" ? `${report.items_pending ?? 0} pendentes` : report.error}</p>
-                  {report.latest_publicado_em ? (
-                    <p>Última data: {new Date(report.latest_publicado_em).toLocaleDateString("pt-BR")}</p>
-                  ) : null}
-                </div>
-              ))}
-            </div>
           ) : null}
         </div>
       ) : null}
@@ -940,11 +911,9 @@ export default function NoticiasPage() {
                       title="Selecionar para a Newsletter"
                     />
                   ) : null}
-                  {item.imagem_url ? (
-                    <div className={cn(viewMode === "list" ? "sm:w-28 sm:shrink-0 sm:mt-0.5" : "")}>
-                      <NewsImage item={item} cover />
-                    </div>
-                  ) : null}
+                  <div className={cn(viewMode === "list" ? "sm:w-52 sm:shrink-0 sm:mt-0.5" : "")}>
+                    <NewsImage item={item} cover />
+                  </div>
                   <div className={cn("min-w-0 flex flex-col flex-1", viewMode === "list" ? "" : "pt-3")}>
                     <p className="news-eyebrow">
                       {(item.agencia_sigla ?? item.fonte)}, {formatDateLong(item.publicado_em ?? item.first_seen_at)}
@@ -956,10 +925,10 @@ export default function NoticiasPage() {
                     <p className={cn("text-sm text-text-secondary mt-2.5 leading-relaxed", viewMode === "grid" ? "line-clamp-3" : "line-clamp-2")}>
                       {item.resumo ?? "Sem resumo disponível."}
                     </p>
-                    <a href={item.url} target="_blank" rel="noreferrer" className="news-readhere mt-4">
-                      ↳ Saiba Mais <ExternalLink className="w-3 h-3" />
-                    </a>
-                    <div className="flex items-center gap-2 mt-4 flex-wrap transition-opacity duration-200 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:focus-within:opacity-100">
+                    <div className="flex items-center gap-2 mt-4 flex-wrap">
+                      <a href={item.url} target="_blank" rel="noreferrer" className="news-readhere mr-2">
+                        ↳ Saiba Mais <ExternalLink className="w-3 h-3" />
+                      </a>
                       <button
                         className="btn-secondary text-xs whitespace-nowrap"
                         onClick={() => statusMutation.mutate({ id: item.id, next: "selecionado" })}
@@ -998,7 +967,10 @@ export default function NoticiasPage() {
           )}
         </section>
 
-        <aside className={cn("space-y-4 self-start", pageView === "feed" && "hidden")}>
+        <aside className={cn("self-start", pageView === "feed" && "hidden")}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+          {/* Coluna esquerda: pré-visualização + exportação. */}
+          <div className="space-y-4 lg:sticky lg:top-4">
             {savedEditionId ? (
               <div className="grid grid-cols-1 sm:grid-cols-4 gap-2">
                 <a className="btn-secondary justify-center text-xs" href={`/api/v1/newsletter/edicoes/${savedEditionId}/html`} target="_blank" rel="noreferrer">
@@ -1015,6 +987,63 @@ export default function NoticiasPage() {
                 </a>
               </div>
             ) : null}
+          <section className="card space-y-3">
+            <div className="flex items-center justify-between">
+              <p className="section-label">Pré-visualização: {documentLabel}</p>
+              <Mail className="w-4 h-4 text-text-muted" />
+            </div>
+            <div className="bg-bg-hover rounded-card p-3 overflow-auto">
+              <div
+                className="mx-auto overflow-hidden rounded-md shadow-sm bg-white"
+                style={{
+                  width: previewPage.width * previewPage.scale,
+                  height: previewPage.height * previewPage.scale * previewPageCount,
+                }}
+              >
+                <iframe
+                  title={`Preview do documento ${documentLabel}`}
+                  srcDoc={html}
+                  style={{
+                    width: previewPage.width,
+                    height: previewPage.height * previewPageCount,
+                    transform: `scale(${previewPage.scale})`,
+                    transformOrigin: "top left",
+                    border: 0,
+                  }}
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <button className="btn-primary justify-center" onClick={openPrintDocument} disabled={selected.length === 0}>
+                <Copy className="w-4 h-4" />
+                Imprimir PDF
+              </button>
+              <button className="btn-secondary justify-center" onClick={copyDocumentHtml} disabled={selected.length === 0}>
+                <Copy className="w-4 h-4" />
+                {copied ? "Copiado" : "Copiar doc."}
+              </button>
+            </div>
+            <button className="btn-secondary w-full justify-center" onClick={copyHtml} disabled={selected.length === 0}>
+              <Copy className="w-4 h-4" />
+              Copiar HTML do e-mail
+            </button>
+            <button
+              className="btn-secondary w-full justify-center"
+              onClick={() => saveEditionMutation.mutate()}
+              disabled={selected.length === 0 || saveEditionMutation.isPending || demoEnabled}
+            >
+              {saveEditionMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
+              {savedEditionId ? "Edição salva" : "Salvar edição"}
+            </button>
+            {saveEditionMutation.error ? (
+              <p className="text-xs text-error">
+                {saveEditionMutation.error instanceof Error ? saveEditionMutation.error.message : "Erro ao salvar edição"}
+              </p>
+            ) : null}
+          </section>
+          </div>
+          {/* Coluna direita: configuração do documento e dos associados. */}
+          <div className="space-y-4">
           <section className="card space-y-3">
             <div className="flex items-center justify-between">
               <p className="section-label">Documento: {documentLabel}</p>
@@ -1208,54 +1237,6 @@ export default function NoticiasPage() {
                 )}
               </div>
             ) : null}
-            <div className="bg-bg-hover rounded-card p-3 overflow-auto">
-              <div
-                className="mx-auto overflow-hidden rounded-md shadow-sm bg-white"
-                style={{
-                  width: previewPage.width * previewPage.scale,
-                  height: previewPage.height * previewPage.scale * previewPageCount,
-                }}
-              >
-                <iframe
-                  title={`Preview do documento ${documentLabel}`}
-                  srcDoc={html}
-                  style={{
-                    width: previewPage.width,
-                    height: previewPage.height * previewPageCount,
-                    transform: `scale(${previewPage.scale})`,
-                    transformOrigin: "top left",
-                    border: 0,
-                  }}
-                />
-              </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button className="btn-primary justify-center" onClick={openPrintDocument} disabled={selected.length === 0}>
-                <Copy className="w-4 h-4" />
-                Imprimir PDF
-              </button>
-              <button className="btn-secondary justify-center" onClick={copyDocumentHtml} disabled={selected.length === 0}>
-                <Copy className="w-4 h-4" />
-                {copied ? "Copiado" : "Copiar doc."}
-              </button>
-            </div>
-            <button className="btn-secondary w-full justify-center" onClick={copyHtml} disabled={selected.length === 0}>
-              <Copy className="w-4 h-4" />
-              Copiar HTML do e-mail
-            </button>
-            <button
-              className="btn-secondary w-full justify-center"
-              onClick={() => saveEditionMutation.mutate()}
-              disabled={selected.length === 0 || saveEditionMutation.isPending || demoEnabled}
-            >
-              {saveEditionMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
-              {savedEditionId ? "Edição salva" : "Salvar edição"}
-            </button>
-            {saveEditionMutation.error ? (
-              <p className="text-xs text-error">
-                {saveEditionMutation.error instanceof Error ? saveEditionMutation.error.message : "Erro ao salvar edição"}
-              </p>
-            ) : null}
           </section>
 
           <section className="card space-y-3">
@@ -1337,8 +1318,19 @@ export default function NoticiasPage() {
               Salvar aviso semanal
             </button>
           </section>
+          </div>
+          </div>
         </aside>
       </div>
+    </div>
+  );
+}
+
+function NewsImagePlaceholder({ item }: { item: RegulatoryNews }) {
+  const label = (item.agencia_sigla ?? item.fonte ?? "IRIS").slice(0, 6);
+  return (
+    <div className="news-figure flex items-center justify-center bg-gradient-to-br from-brand/15 to-bg-hover">
+      <span className="font-mono text-xs uppercase tracking-[0.18em] text-text-muted">{label}</span>
     </div>
   );
 }
@@ -1352,7 +1344,8 @@ function NewsImage({ item, cover = false }: { item: RegulatoryNews; cover?: bool
   }, [original]);
 
   if (!src) {
-    return null;
+    // Nunca deixar a notícia sem imagem: usa um placeholder com a sigla da agência.
+    return <NewsImagePlaceholder item={item} />;
   }
 
   if (cover) {
