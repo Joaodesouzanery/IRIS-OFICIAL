@@ -10,12 +10,15 @@ import { useDataSyncContext } from "@/components/DataSyncProvider";
 import type {
   Agencia,
   DiretorOverviewItem,
+  DiretorVotoItem,
   MonitoramentoCheckResponse,
   MonitoramentoItem,
   MonitoramentoSite,
 } from "@/types";
 import {
   CheckCircle2,
+  ChevronDown,
+  ChevronUp,
   ExternalLink,
   FileText,
   Gavel,
@@ -23,6 +26,7 @@ import {
   RefreshCw,
   Upload,
   Users,
+  X,
 } from "lucide-react";
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
@@ -37,6 +41,7 @@ export default function VotosDiretoresPage() {
   const queryClient = useQueryClient();
   const { demoEnabled } = useDataSyncContext();
   const [agenciaId, setAgenciaId] = useState("");
+  const [selectedDirector, setSelectedDirector] = useState<DiretorOverviewItem | null>(null);
 
   const { data, isLoading } = useQuery({
     queryKey: ["votos-diretores", "fontes"],
@@ -53,6 +58,15 @@ export default function VotosDiretoresPage() {
     queryFn: () => api.get<DiretorOverviewItem[]>(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
   });
 
+  const { data: drilldownVotos, isLoading: drilldownLoading } = useQuery({
+    queryKey: ["diretor-votos", selectedDirector?.diretor_id, agenciaId],
+    queryFn: () =>
+      api.get<DiretorVotoItem[]>(
+        `/dashboard/diretores/${selectedDirector!.diretor_id}/votos${agenciaId ? `?agencia_id=${agenciaId}` : ""}`
+      ),
+    enabled: !!selectedDirector,
+  });
+
   const checkMutation = useMutation({
     mutationFn: () => api.get<MonitoramentoCheckResponse>("/monitoramento/check"),
     onSuccess: () => {
@@ -67,6 +81,10 @@ export default function VotosDiretoresPage() {
 
   const sources = data?.sources ?? [];
   const itens = data?.itens ?? [];
+
+  function toggleDirector(d: DiretorOverviewItem) {
+    setSelectedDirector((prev) => (prev?.diretor_id === d.diretor_id ? null : d));
+  }
 
   return (
     <div className="space-y-6 animate-fade-in">
@@ -116,7 +134,7 @@ export default function VotosDiretoresPage() {
           {isLoading ? (
             <p className="text-sm text-text-muted">Carregando fontes...</p>
           ) : sources.length === 0 ? (
-            <p className="text-sm text-text-muted">Nenhuma fonte cadastrada ainda. Clique em “Verificar novos documentos”.</p>
+            <p className="text-sm text-text-muted">Nenhuma fonte cadastrada ainda. Clique em "Verificar novos documentos".</p>
           ) : sources.map((site) => (
             <div key={site.id} className="rounded-md border border-border bg-bg-hover p-3">
               <div className="flex items-center justify-between gap-2">
@@ -197,7 +215,7 @@ export default function VotosDiretoresPage() {
             <Users className="w-4 h-4 text-brand" />
             <p className="section-label">Métricas por diretor</p>
           </div>
-          <select className="select w-44" value={agenciaId} onChange={(e) => setAgenciaId(e.target.value)}>
+          <select className="select w-44" value={agenciaId} onChange={(e) => { setAgenciaId(e.target.value); setSelectedDirector(null); }}>
             <option value="">Todas as agências</option>
             {colegiadoAgencias.map((a) => <option key={a.id} value={a.id}>{a.sigla}</option>)}
           </select>
@@ -217,18 +235,45 @@ export default function VotosDiretoresPage() {
                   <th className="py-2 px-3 font-medium text-right">Desfavoráveis</th>
                   <th className="py-2 px-3 font-medium text-right">Divergentes</th>
                   <th className="py-2 pl-3 font-medium text-right">% Favorável</th>
+                  <th className="py-2 pl-3 font-medium w-8" />
                 </tr>
               </thead>
               <tbody>
                 {diretores.map((d) => (
-                  <tr key={d.diretor_id} className="border-b border-border/60">
-                    <td className="py-2 pr-3 text-text-primary">{d.diretor_nome}</td>
-                    <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.total)}</td>
-                    <td className="py-2 px-3 text-right text-success">{formatNumber(d.favoravel)}</td>
-                    <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.desfavoravel)}</td>
-                    <td className="py-2 px-3 text-right text-warning">{formatNumber(d.divergente)}</td>
-                    <td className="py-2 pl-3 text-right text-text-primary">{d.pct_favor.toFixed(1)}%</td>
-                  </tr>
+                  <>
+                    <tr
+                      key={d.diretor_id}
+                      className={cn(
+                        "border-b border-border/60 cursor-pointer hover:bg-bg-hover transition-colors",
+                        selectedDirector?.diretor_id === d.diretor_id && "bg-bg-hover",
+                      )}
+                      onClick={() => toggleDirector(d)}
+                    >
+                      <td className="py-2 pr-3 text-text-primary font-medium">{d.diretor_nome}</td>
+                      <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.total)}</td>
+                      <td className="py-2 px-3 text-right text-success">{formatNumber(d.favoravel)}</td>
+                      <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.desfavoravel)}</td>
+                      <td className="py-2 px-3 text-right text-warning">{formatNumber(d.divergente)}</td>
+                      <td className="py-2 pl-3 text-right text-text-primary">{d.pct_favor.toFixed(1)}%</td>
+                      <td className="py-2 pl-3 text-right text-text-muted">
+                        {selectedDirector?.diretor_id === d.diretor_id
+                          ? <ChevronUp className="w-3.5 h-3.5 inline" />
+                          : <ChevronDown className="w-3.5 h-3.5 inline" />}
+                      </td>
+                    </tr>
+                    {selectedDirector?.diretor_id === d.diretor_id ? (
+                      <tr key={`${d.diretor_id}-drilldown`}>
+                        <td colSpan={7} className="pb-3 pt-1 px-0">
+                          <DrilldownPanel
+                            diretor={d}
+                            votos={drilldownVotos ?? []}
+                            isLoading={drilldownLoading}
+                            onClose={() => setSelectedDirector(null)}
+                          />
+                        </td>
+                      </tr>
+                    ) : null}
+                  </>
                 ))}
               </tbody>
             </table>
@@ -237,8 +282,90 @@ export default function VotosDiretoresPage() {
         <p className="text-xs text-text-label">
           As métricas (tipo de voto, tema/microtema, contagem e divergência) são calculadas pelo mesmo
           pipeline das deliberações, agora alimentado também pelos votos individuais de cada diretor.
+          Clique em um diretor para ver o histórico de deliberações.
         </p>
       </section>
+    </div>
+  );
+}
+
+function DrilldownPanel({
+  diretor,
+  votos,
+  isLoading,
+  onClose,
+}: {
+  diretor: DiretorOverviewItem;
+  votos: DiretorVotoItem[];
+  isLoading: boolean;
+  onClose: () => void;
+}) {
+  return (
+    <div className="mx-0 border border-brand/20 bg-bg-hover rounded-md p-3 space-y-2">
+      <div className="flex items-center justify-between gap-2">
+        <p className="text-xs font-medium text-text-primary">
+          Deliberações de <span className="text-brand">{diretor.diretor_nome}</span>
+        </p>
+        <button onClick={onClose} className="text-text-muted hover:text-text-primary">
+          <X className="w-3.5 h-3.5" />
+        </button>
+      </div>
+
+      {isLoading ? (
+        <div className="flex items-center gap-2 py-3 text-text-muted text-sm">
+          <Loader2 className="w-4 h-4 animate-spin" /> Carregando deliberações...
+        </div>
+      ) : votos.length === 0 ? (
+        <p className="text-sm text-text-muted py-2">Nenhuma deliberação registrada para este diretor.</p>
+      ) : (
+        <div className="overflow-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-left text-text-label border-b border-border">
+                <th className="py-1.5 pr-3 font-medium">Deliberação</th>
+                <th className="py-1.5 px-2 font-medium">Agência</th>
+                <th className="py-1.5 px-2 font-medium">Tema / Microtema</th>
+                <th className="py-1.5 px-2 font-medium">Resultado</th>
+                <th className="py-1.5 px-2 font-medium">Voto</th>
+                <th className="py-1.5 pl-2 font-medium">Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              {votos.map((v) => (
+                <tr key={v.id} className="border-b border-border/40 hover:bg-bg-card transition-colors">
+                  <td className="py-1.5 pr-3 text-text-secondary max-w-[200px] truncate">
+                    {v.deliberacao?.numero_deliberacao ?? v.deliberacao?.titulo ?? "—"}
+                  </td>
+                  <td className="py-1.5 px-2 text-text-muted">{v.deliberacao?.agencia?.sigla ?? "—"}</td>
+                  <td className="py-1.5 px-2 text-text-muted">
+                    {[v.deliberacao?.tema, v.deliberacao?.microtema].filter(Boolean).join(" / ") || "—"}
+                  </td>
+                  <td className="py-1.5 px-2 text-text-secondary">{v.deliberacao?.resultado ?? "—"}</td>
+                  <td className="py-1.5 px-2">
+                    <span className={cn(
+                      "badge text-[10px]",
+                      v.tipo_voto === "Favoravel" && "badge-green",
+                      v.tipo_voto === "Desfavoravel" && "badge-red",
+                      v.is_divergente && "badge-orange",
+                      !["Favoravel", "Desfavoravel"].includes(v.tipo_voto) && "badge-gray",
+                    )}>
+                      {v.tipo_voto}
+                      {v.is_divergente ? " · div." : ""}
+                    </span>
+                  </td>
+                  <td className="py-1.5 pl-2 text-text-muted whitespace-nowrap">
+                    {v.deliberacao?.data_deliberacao
+                      ? new Date(v.deliberacao.data_deliberacao).toLocaleDateString("pt-BR")
+                      : v.created_at
+                        ? new Date(v.created_at).toLocaleDateString("pt-BR")
+                        : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 }

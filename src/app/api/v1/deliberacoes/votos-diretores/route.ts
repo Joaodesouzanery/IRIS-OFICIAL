@@ -41,6 +41,7 @@ export async function GET(req: NextRequest) {
       .select("*, agencia:agencias(sigla, nome), site:monitoramento_sites(nome, url)")
       .in("site_id", siteIds)
       .in("tipo", ["deliberacao", "voto", "ata", "pauta", "documento"])
+      .or("data_reuniao.gte.2026-01-01,data_reuniao.is.null")
       .order("first_seen_at", { ascending: false })
       .limit(60);
     itens = itensData ?? [];

@@ -355,6 +355,23 @@ export interface DiretorOverviewItem {
   pct_favor: number;
 }
 
+export interface DiretorVotoItem {
+  id: string;
+  tipo_voto: string;
+  is_divergente: boolean;
+  created_at: string;
+  deliberacao: {
+    id: string;
+    numero_deliberacao: string | null;
+    titulo: string | null;
+    resultado: string | null;
+    data_deliberacao: string | null;
+    tema: string | null;
+    microtema: string | null;
+    agencia: { sigla: string } | null;
+  } | null;
+}
+
 export interface EmpresaStats {
   nome: string;
   total_deliberacoes: number;
