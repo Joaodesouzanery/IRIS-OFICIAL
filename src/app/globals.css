@@ -176,19 +176,24 @@
   }
 
   .news-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    @apply text-text-primary font-medium leading-[1.12] transition-colors duration-200;
-    font-size: 1.6rem;
-    letter-spacing: -0.015em;
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply text-text-primary font-semibold leading-snug transition-colors duration-200;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
   }
 
   .news-card:hover .news-title {
     @apply text-brand;
   }
 
+  /* Título maior no modo lista (item único por linha). */
+  .news-title-list {
+    font-size: 1.2rem;
+  }
+
   /* Título menor quando em grade de 4 colunas (mais cards por linha). */
   .news-title-grid {
-    font-size: 1.3rem;
+    font-size: 0.95rem;
   }
 
   .news-readhere {

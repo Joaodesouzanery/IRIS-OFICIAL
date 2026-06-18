@@ -876,22 +876,22 @@ export default function NoticiasPage() {
               Nenhuma notícia encontrada no período selecionado. Use “Todas recentes” para ver publicações mais antigas da fonte.
             </div>
           ) : (
-            <div className={cn(viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12 items-start" : "space-y-10")}>
+            <div className={cn(viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12 items-start" : "divide-y divide-border")}>
               {noticias.map((item) => (
-                <article key={item.id} className={cn("news-card", viewMode === "list" && "sm:flex-row sm:gap-6")}>
+                <article key={item.id} className={cn("news-card", viewMode === "list" ? "sm:flex-row sm:gap-5 sm:items-start py-7 first:pt-0" : "")}>
                   {item.imagem_url ? (
-                    <div className={cn(viewMode === "list" && "sm:w-72 sm:shrink-0")}>
+                    <div className={cn(viewMode === "list" ? "sm:w-28 sm:shrink-0 sm:mt-0.5" : "")}>
                       <NewsImage item={item} cover />
                     </div>
                   ) : null}
-                  <div className="min-w-0 flex flex-col flex-1 pt-3">
+                  <div className={cn("min-w-0 flex flex-col flex-1", viewMode === "list" ? "" : "pt-3")}>
                     <p className="news-eyebrow">
                       {(item.agencia_sigla ?? item.fonte)}, {formatDateLong(item.publicado_em ?? item.first_seen_at)}
                     </p>
                     <div className="flex items-center gap-2 mt-1.5 mb-2">
                       <StatusBadge status={item.status_curadoria} />
                     </div>
-                    <h2 className={cn("news-title", viewMode === "grid" && "news-title-grid")}>{item.titulo}</h2>
+                    <h2 className={cn("news-title", viewMode === "grid" ? "news-title-grid" : "news-title-list")}>{item.titulo}</h2>
                     <p className={cn("text-sm text-text-secondary mt-2.5 leading-relaxed", viewMode === "grid" ? "line-clamp-3" : "line-clamp-2")}>
                       {item.resumo ?? "Sem resumo disponível."}
                     </p>
