@@ -276,6 +276,7 @@ export default function NoticiasPage() {
   const [showAdvancedHealth, setShowAdvancedHealth] = useState(false);
   const [collectProgress, setCollectProgress] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
+  const [pageView, setPageView] = useState<"feed" | "documento">("feed");
   const lastMinutoSelectionKey = useRef("");
 
   const params = new URLSearchParams();
@@ -517,6 +518,23 @@ export default function NoticiasPage() {
     setSavedEditionId(null);
   }
 
+  function toggleSelectAllVisible() {
+    const visibleIds = noticias.map((item) => item.id);
+    const allSelected = visibleIds.length > 0 && visibleIds.every((id) => newsletterSelectedIds.includes(id));
+    setSelectedNewsCache((previous) => {
+      const next = { ...previous };
+      for (const item of noticias) next[item.id] = item;
+      return next;
+    });
+    setNewsletterSelectedIds((prev) => {
+      if (allSelected) return prev.filter((id) => !visibleIds.includes(id));
+      const merged = new Set(prev);
+      for (const id of visibleIds) merged.add(id);
+      return Array.from(merged);
+    });
+    setSavedEditionId(null);
+  }
+
   async function copyHtml() {
     await navigator.clipboard.writeText(html);
     setCopied(true);
@@ -599,10 +617,19 @@ export default function NoticiasPage() {
           </div>
           <h1 className="news-hero-title">As últimas notícias</h1>
           <p className="text-sm text-text-muted mt-2">
-            Marque as notícias para montar a Newsletter Regulatório semanal.
+            Marque as notícias para selecioná-las e gerar a Newsletter Regulatório.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
+          <button
+            onClick={toggleSelectAllVisible}
+            disabled={noticias.length === 0}
+            className="btn-secondary"
+            title="Seleciona todas as notícias listadas para a Newsletter"
+          >
+            <Check className="w-4 h-4" />
+            Selecionar todas ({noticias.length})
+          </button>
           <button
             onClick={() => collectMutation.mutate({ scope: "all", tier: "all" })}
             disabled={collectMutation.isPending || demoEnabled}
@@ -613,6 +640,31 @@ export default function NoticiasPage() {
             {collectProgress ?? "Coletar Notícias"}
           </button>
         </div>
+      </div>
+
+      {/* Sub-abas internas: Feed (lista de notícias) x Documento (preview Newsletter/Minuto). */}
+      <div className="flex items-center gap-6 border-b border-border">
+        {([
+          { value: "feed", label: "Feed" },
+          { value: "documento", label: "Documento" },
+        ] as const).map((tab) => (
+          <button
+            key={tab.value}
+            type="button"
+            onClick={() => setPageView(tab.value)}
+            className={cn(
+              "relative -mb-px px-1 py-2.5 text-sm transition-colors duration-200",
+              pageView === tab.value
+                ? "text-text-primary font-medium border-b-2 border-brand"
+                : "text-text-muted border-b-2 border-transparent hover:text-text-primary",
+            )}
+          >
+            {tab.label}
+            {tab.value === "documento" && selected.length > 0 ? (
+              <span className="ml-1.5 badge-gray text-[10px]">{selected.length}</span>
+            ) : null}
+          </button>
+        ))}
       </div>
 
       {demoEnabled ? (
@@ -818,8 +870,8 @@ export default function NoticiasPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_520px] gap-6">
-        <section className="space-y-4">
+      <div className={cn(pageView === "feed" ? "w-full" : "max-w-3xl mx-auto w-full")}>
+        <section className={cn("space-y-4", pageView === "documento" && "hidden")}>
           <div className="card flex items-center gap-2 flex-wrap">
             <select className="select w-40" value={agencia} onChange={(e) => setAgencia(e.target.value)}>
               <option value="">Todas as agências</option>
@@ -878,7 +930,16 @@ export default function NoticiasPage() {
           ) : (
             <div className={cn(viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12 items-start" : "divide-y divide-border")}>
               {noticias.map((item) => (
-                <article key={item.id} className={cn("news-card", viewMode === "list" ? "sm:flex-row sm:gap-5 sm:items-start py-7 first:pt-0" : "")}>
+                <article key={item.id} className={cn("news-card group", viewMode === "list" ? "sm:flex-row sm:gap-5 sm:items-start py-7 first:pt-0" : "")}>
+                  {viewMode === "list" ? (
+                    <input
+                      type="checkbox"
+                      className="mt-1 h-4 w-4 shrink-0 accent-brand cursor-pointer"
+                      checked={newsletterSelectedIds.includes(item.id)}
+                      onChange={() => toggleSelected(item, "newsletter_regulatoria")}
+                      title="Selecionar para a Newsletter"
+                    />
+                  ) : null}
                   {item.imagem_url ? (
                     <div className={cn(viewMode === "list" ? "sm:w-28 sm:shrink-0 sm:mt-0.5" : "")}>
                       <NewsImage item={item} cover />
@@ -898,7 +959,7 @@ export default function NoticiasPage() {
                     <a href={item.url} target="_blank" rel="noreferrer" className="news-readhere mt-4">
                       ↳ Saiba Mais <ExternalLink className="w-3 h-3" />
                     </a>
-                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-border flex-wrap">
+                    <div className="flex items-center gap-2 mt-4 flex-wrap transition-opacity duration-200 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:focus-within:opacity-100">
                       <button
                         className="btn-secondary text-xs whitespace-nowrap"
                         onClick={() => statusMutation.mutate({ id: item.id, next: "selecionado" })}
@@ -937,7 +998,7 @@ export default function NoticiasPage() {
           )}
         </section>
 
-        <aside className="space-y-4 xl:sticky xl:top-4 self-start">
+        <aside className={cn("space-y-4 self-start", pageView === "feed" && "hidden")}>
             {savedEditionId ? (
               <div className="grid grid-cols-1 sm:grid-cols-4 gap-2">
                 <a className="btn-secondary justify-center text-xs" href={`/api/v1/newsletter/edicoes/${savedEditionId}/html`} target="_blank" rel="noreferrer">

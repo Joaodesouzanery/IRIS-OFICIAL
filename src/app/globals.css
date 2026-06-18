@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -202,11 +202,11 @@
            hover:text-brand hover:border-brand/60;
   }
 
-  /* Cabeçalho editorial "As últimas notícias". */
+  /* Cabeçalho "As últimas notícias" — sans-serif limpo (estilo Cortex/Palantir). */
   .news-hero-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    @apply text-text-primary font-medium leading-none;
-    font-size: clamp(2.2rem, 4vw, 3.25rem);
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply text-text-primary font-normal leading-[1.05];
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
     letter-spacing: -0.02em;
   }
 
