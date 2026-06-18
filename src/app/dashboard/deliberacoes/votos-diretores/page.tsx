@@ -134,7 +134,7 @@ export default function VotosDiretoresPage() {
           {isLoading ? (
             <p className="text-sm text-text-muted">Carregando fontes...</p>
           ) : sources.length === 0 ? (
-            <p className="text-sm text-text-muted">Nenhuma fonte cadastrada ainda. Clique em "Verificar novos documentos".</p>
+            <p className="text-sm text-text-muted">Nenhuma fonte cadastrada ainda. Clique em &ldquo;Verificar novos documentos&rdquo;.</p>
           ) : sources.map((site) => (
             <div key={site.id} className="rounded-md border border-border bg-bg-hover p-3">
               <div className="flex items-center justify-between gap-2">
