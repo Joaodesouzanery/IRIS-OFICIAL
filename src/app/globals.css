@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -149,6 +149,26 @@
 
   .select {
     @apply input appearance-none cursor-pointer;
+  }
+
+  /* ── Notícias: estética editorial (newsroom) ─────────────────────────── */
+  .news-card {
+    @apply transition-colors duration-150 hover:border-brand/30;
+  }
+
+  .news-eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.14em] text-text-muted;
+  }
+
+  .news-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-text-primary font-semibold leading-tight;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+  }
+
+  .news-readhere {
+    @apply inline-flex items-center gap-1 text-sm text-brand font-medium hover:underline w-fit;
   }
 
   /* ── Gráficos Recharts customizados ──────────────────────────────────── */

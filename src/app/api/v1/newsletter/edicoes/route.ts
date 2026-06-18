@@ -51,7 +51,10 @@ export async function POST(req: NextRequest) {
   const temas = normalizeStringArray(body.temas, 40);
   const documentoTipo = normalizeDocumentType(body.documento_tipo);
   const minutoTextos = normalizeStringArray(body.minuto_textos, 80);
-  const templateVersion = documentoTipo === "minuto_regulacao" ? "iris_minuto_retrospectiva_v1" : "iris_newsletter_layout_v1";
+  const variant = body.template_variant === "v2" ? "v2" : "v1";
+  const templateVersion = documentoTipo === "minuto_regulacao"
+    ? (variant === "v2" ? "iris_minuto_retrospectiva_v2" : "iris_minuto_retrospectiva_v1")
+    : (variant === "v2" ? "iris_newsletter_layout_v2" : "iris_newsletter_layout_v1");
   const documentNewsIds = noticiaIds;
 
   const db = createSupabaseServerClient();
@@ -80,6 +83,7 @@ export async function POST(req: NextRequest) {
     newsletter_textos: newsletterTextos,
     baseUrl: req.nextUrl.origin,
     documento_tipo: documentoTipo,
+    template_version: templateVersion,
     minuto_textos: minutoTextos,
     minuto_items: minutoItems,
   });

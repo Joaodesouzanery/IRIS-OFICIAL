@@ -29,11 +29,13 @@ import {
   Check,
   Copy,
   ExternalLink,
+  LayoutGrid,
   Loader2,
   Mail,
   Newspaper,
   Plus,
   RefreshCw,
+  Rows,
   Search,
   X,
 } from "lucide-react";
@@ -68,6 +70,7 @@ interface NewsletterDocumentConfig {
   temas: string;
   envioAutomatico: boolean;
   documentoTipo: NewsletterDocumentType;
+  templateVariant: "v1" | "v2";
   diaSemana: string;
   horaEnvio: string;
 }
@@ -124,6 +127,7 @@ type NewsCollectRequest = {
 };
 
 const NEWSLETTER_CONFIG_KEY = "iris_newsletter_document_config";
+const NEWS_VIEW_MODE_KEY = "iris_news_view_mode";
 const EXPANDED_NEWS_AGENCIES = ["ANA", "ANAC", "ANATEL", "ANCINE", "ANEEL", "ANP", "ANPD", "ANS", "ANTAQ", "ANVISA"] as const;
 
 const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
@@ -133,6 +137,7 @@ const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
   temas: "",
   envioAutomatico: false,
   documentoTipo: "newsletter_regulatoria",
+  templateVariant: "v1",
   diaSemana: "5",
   horaEnvio: "09:00",
 };
@@ -270,6 +275,7 @@ export default function NoticiasPage() {
   const [minutoTextos, setMinutoTextos] = useState("");
   const [showAdvancedHealth, setShowAdvancedHealth] = useState(false);
   const [collectProgress, setCollectProgress] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<"list" | "grid">("list");
   const lastMinutoSelectionKey = useRef("");
 
   const params = new URLSearchParams();
@@ -309,6 +315,19 @@ export default function NoticiasPage() {
       const isSingleSource = Boolean(request.sourceId || request.agenciaSigla || request.offset);
       if (isSingleSource) {
         return collectNewsBatch({ ...request, tier: request.tier ?? "all", limit: request.limit ?? 8 });
+      }
+      if (request.scope === "all" && request.tier === "all") {
+        setCollectProgress("Coletando ANTT, ANM e ARTESP...");
+        const priority = await collectNewsBatch({
+          offset: 0,
+          tier: "core",
+          scope: "priority",
+          mode: "enrich",
+          limit: request.limit ?? 8,
+        });
+        const expanded = await collectExpandedNewsBatch(setCollectProgress);
+        setCollectProgress(null);
+        return mergeCollectResponses([priority, expanded]);
       }
       if (request.scope === "all" && request.tier === "expanded") {
         const result = await collectExpandedNewsBatch(setCollectProgress);
@@ -363,6 +382,7 @@ export default function NoticiasPage() {
       temas: splitList(documentConfig.temas),
       noticia_ids: selectedIds,
       documento_tipo: documentConfig.documentoTipo,
+      template_variant: documentConfig.templateVariant,
       newsletter_textos: newsletterTextOverrides,
       minuto_textos: splitMinutoTextos(minutoTextos),
       minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
@@ -437,9 +457,10 @@ export default function NoticiasPage() {
     newsletter_textos: newsletterTextOverrides,
     baseUrl,
     documento_tipo: documentConfig.documentoTipo,
+    template_version: templateVersionFor(documentConfig.documentoTipo, documentConfig.templateVariant),
     minuto_textos: splitMinutoTextos(minutoTextos),
     minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected]);
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected]);
   const documentHtml = html;
   const documentLabel = documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto da Regulação" : "Newsletter Regulatória";
   const minutoDraft = useMemo(() => buildMinutoRegulacaoDraftText(minutoSelected), [minutoSelected]);
@@ -453,7 +474,13 @@ export default function NoticiasPage() {
 
   useEffect(() => {
     setBaseUrl(window.location.origin);
+    const savedView = localStorage.getItem(NEWS_VIEW_MODE_KEY);
+    if (savedView === "grid" || savedView === "list") setViewMode(savedView);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem(NEWS_VIEW_MODE_KEY, viewMode);
+  }, [viewMode]);
 
   useEffect(() => {
     if (!noticias.length) return;
@@ -576,20 +603,13 @@ export default function NoticiasPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <button
-            onClick={() => collectMutation.mutate({})}
+            onClick={() => collectMutation.mutate({ scope: "all", tier: "all" })}
             disabled={collectMutation.isPending || demoEnabled}
             className="btn-primary"
+            title="Coleta notícias de todas as agências reguladoras (com fotos)"
           >
             {collectMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-            {collectProgress ?? "Coletar prioritárias"}
-          </button>
-          <button
-            onClick={() => collectMutation.mutate({ scope: "all", tier: "expanded", limit: 3 })}
-            disabled={collectMutation.isPending || demoEnabled}
-            className="btn-secondary"
-          >
-            <RefreshCw className="w-4 h-4" />
-            Coletar lote expandido
+            {collectProgress ?? "Coletar Notícias"}
           </button>
         </div>
       </div>
@@ -828,32 +848,52 @@ export default function NoticiasPage() {
             <p className="text-xs text-text-muted ml-auto">
               {data?.total ?? 0} notícias · Newsletter {newsletterSelected.length} ({estimateNewsletterPageCount(newsletterSelected)} pág.) · Minuto {minutoSelected.length}
             </p>
+            <div className="inline-flex rounded-md border border-border overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setViewMode("list")}
+                className={cn("px-2.5 py-1.5 text-xs inline-flex items-center gap-1", viewMode === "list" ? "bg-brand/10 text-brand" : "text-text-muted hover:bg-bg-hover")}
+                title="Lista (uma embaixo da outra)"
+              >
+                <Rows className="w-3.5 h-3.5" /> Lista
+              </button>
+              <button
+                type="button"
+                onClick={() => setViewMode("grid")}
+                className={cn("px-2.5 py-1.5 text-xs inline-flex items-center gap-1 border-l border-border", viewMode === "grid" ? "bg-brand/10 text-brand" : "text-text-muted hover:bg-bg-hover")}
+                title="Grade (estilo newsroom)"
+              >
+                <LayoutGrid className="w-3.5 h-3.5" /> Grade
+              </button>
+            </div>
           </div>
 
-          <div className="space-y-3">
-            {isLoading ? (
-              <div className="card text-sm text-text-muted">Carregando notícias...</div>
-            ) : noticias.length === 0 ? (
-              <div className="card text-sm text-text-muted">
-                Nenhuma notícia encontrada no período selecionado. Use “Todas recentes” para ver publicações mais antigas da fonte.
-              </div>
-            ) : noticias.map((item) => (
-              <article key={item.id} className="card p-0 overflow-hidden">
-                <div className={cn(item.imagem_url && "grid grid-cols-[112px_minmax(0,1fr)]")}>
-                  {item.imagem_url ? <NewsImage item={item} /> : null}
-                  <div className="p-4 min-w-0">
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="badge-orange">{item.agencia_sigla ?? item.fonte}</span>
-                          <span className="text-xs text-text-muted">{formatDateLong(item.publicado_em ?? item.first_seen_at)}</span>
-                          <StatusBadge status={item.status_curadoria} />
-                        </div>
-                        <h2 className="text-sm font-semibold text-text-primary leading-snug">{item.titulo}</h2>
-                      </div>
+          {isLoading ? (
+            <div className="card text-sm text-text-muted">Carregando notícias...</div>
+          ) : noticias.length === 0 ? (
+            <div className="card text-sm text-text-muted">
+              Nenhuma notícia encontrada no período selecionado. Use “Todas recentes” para ver publicações mais antigas da fonte.
+            </div>
+          ) : (
+            <div className={cn(viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-start" : "space-y-5")}>
+              {noticias.map((item) => (
+                <article key={item.id} className="news-card card p-0 overflow-hidden flex flex-col">
+                  {item.imagem_url ? <NewsImage item={item} cover /> : null}
+                  <div className="p-4 min-w-0 flex flex-col flex-1">
+                    <p className="news-eyebrow">
+                      {(item.agencia_sigla ?? item.fonte)}, {formatDateLong(item.publicado_em ?? item.first_seen_at)}
+                    </p>
+                    <div className="flex items-center gap-2 mt-1.5 mb-2">
+                      <StatusBadge status={item.status_curadoria} />
                     </div>
-                    <p className="text-xs text-text-muted mt-2 line-clamp-2">{item.resumo ?? "Sem resumo disponível."}</p>
-                    <div className="flex items-center gap-2 mt-3 flex-wrap">
+                    <h2 className="news-title">{item.titulo}</h2>
+                    <p className={cn("text-sm text-text-secondary mt-2", viewMode === "grid" ? "line-clamp-3" : "line-clamp-2")}>
+                      {item.resumo ?? "Sem resumo disponível."}
+                    </p>
+                    <a href={item.url} target="_blank" rel="noreferrer" className="news-readhere mt-3">
+                      ↳ Ler aqui <ExternalLink className="w-3 h-3" />
+                    </a>
+                    <div className="flex items-center gap-2 mt-3 pt-3 border-t border-border flex-wrap">
                       <button
                         className="btn-secondary text-xs whitespace-nowrap"
                         onClick={() => statusMutation.mutate({ id: item.id, next: "selecionado" })}
@@ -884,15 +924,12 @@ export default function NoticiasPage() {
                         {minutoSelectedIds.includes(item.id) ? <Check className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                         Minuto
                       </button>
-                      <a href={item.url} target="_blank" rel="noreferrer" className="text-xs text-brand hover:underline inline-flex items-center gap-1 sm:ml-auto whitespace-nowrap">
-                        Fonte <ExternalLink className="w-3 h-3" />
-                      </a>
                     </div>
                   </div>
-                </div>
-              </article>
-            ))}
-          </div>
+                </article>
+              ))}
+            </div>
+          )}
         </section>
 
         <aside className="space-y-4 xl:sticky xl:top-4 self-start">
@@ -930,6 +967,25 @@ export default function NoticiasPage() {
               >
                 Minuto da Regulação
               </button>
+            </div>
+            <div className="space-y-1.5">
+              <p className="text-[11px] text-text-muted">
+                Modelo de design — mesma logo, nome e contatos; muda só o layout.
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  className={cn("btn-secondary justify-center text-xs", documentConfig.templateVariant === "v1" && "border-brand text-brand")}
+                  onClick={() => updateDocumentConfig("templateVariant", "v1")}
+                >
+                  {documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto 1 (escuro)" : "Newsletter 1 (escuro)"}
+                </button>
+                <button
+                  className={cn("btn-secondary justify-center text-xs", documentConfig.templateVariant === "v2" && "border-brand text-brand")}
+                  onClick={() => updateDocumentConfig("templateVariant", "v2")}
+                >
+                  {documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto 2 (claro)" : "Newsletter 2 (claro)"}
+                </button>
+              </div>
             </div>
             {documentConfig.documentoTipo === "minuto_regulacao" ? (
               <div className="space-y-2">
@@ -1221,7 +1277,7 @@ export default function NoticiasPage() {
   );
 }
 
-function NewsImage({ item }: { item: RegulatoryNews }) {
+function NewsImage({ item, cover = false }: { item: RegulatoryNews; cover?: boolean }) {
   const original = item.imagem_url;
   const [src, setSrc] = useState(original);
 
@@ -1231,6 +1287,20 @@ function NewsImage({ item }: { item: RegulatoryNews }) {
 
   if (!src) {
     return null;
+  }
+
+  if (cover) {
+    return (
+      <div className="w-full aspect-[16/9] overflow-hidden bg-bg-hover">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt=""
+          className="w-full h-full object-cover"
+          onError={() => setSrc(src === original ? proxiedImageUrl(original) : null)}
+        />
+      </div>
+    );
   }
 
   return (
@@ -1379,6 +1449,13 @@ function proxiedImageUrl(value: string | null, absolute = false) {
   const path = `/api/v1/noticias/imagem?url=${encodeURIComponent(value)}`;
   if (!absolute || typeof window === "undefined") return path;
   return `${window.location.origin}${path}`;
+}
+
+function templateVersionFor(tipo: NewsletterDocumentType, variant: "v1" | "v2") {
+  if (tipo === "minuto_regulacao") {
+    return variant === "v2" ? "iris_minuto_retrospectiva_v2" : "iris_minuto_retrospectiva_v1";
+  }
+  return variant === "v2" ? "iris_newsletter_layout_v2" : "iris_newsletter_layout_v1";
 }
 
 function splitList(value: string) {

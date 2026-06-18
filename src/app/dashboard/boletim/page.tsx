@@ -14,7 +14,7 @@ import {
   AlignLeft, Loader2, X,
 } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
-import { NOTICIAS_TABS } from "@/lib/module-tabs";
+import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 const EMAIL_RE = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
@@ -313,7 +313,7 @@ export default function BoletimPage() {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <ModuleTabs tabs={NOTICIAS_TABS} />
+      <ModuleTabs tabs={DELIBERACOES_TABS} />
       {demoEnabled && (
         <div className="card border-warning/30 bg-warning/10 py-2 px-3 text-sm text-warning">
           Modo DEMO ativo: agendamentos de boletim ficam bloqueados em somente leitura.

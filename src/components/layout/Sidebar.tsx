@@ -42,6 +42,7 @@ const MODULE_PATHS: Record<string, string[]> = {
     "/dashboard",
     "/dashboard/upload",
     "/dashboard/deliberacoes",
+    "/dashboard/boletim",
   ],
   "/dashboard/monitoramento": [
     "/dashboard/monitoramento",
@@ -49,7 +50,6 @@ const MODULE_PATHS: Record<string, string[]> = {
   ],
   "/dashboard/noticias": [
     "/dashboard/noticias",
-    "/dashboard/boletim",
   ],
   "/dashboard/analytics/diretores": [
     "/dashboard/analytics/diretores",

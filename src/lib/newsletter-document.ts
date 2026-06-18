@@ -27,9 +27,17 @@ export interface NewsletterDocumentInput {
   generatedAt?: Date;
   baseUrl?: string;
   documento_tipo?: NewsletterDocumentType;
+  template_version?: string | null;
   minuto_textos?: string[];
   minuto_items?: MinutoRegulacaoItemInput[];
 }
+
+export const NEWSLETTER_TEMPLATE_VERSIONS = {
+  newsletter_v1: "iris_newsletter_layout_v1",
+  newsletter_v2: "iris_newsletter_layout_v2",
+  minuto_v1: "iris_minuto_retrospectiva_v1",
+  minuto_v2: "iris_minuto_retrospectiva_v2",
+} as const;
 
 export type NewsletterArticleSlot = "main" | "side_1" | "side_2";
 
@@ -39,22 +47,126 @@ export const NEWSLETTER_ARTICLE_TEXT_LIMITS: Record<NewsletterArticleSlot, numbe
   side_2: 900,
 };
 
-const NEWSLETTER_COLORS = {
+interface NewsletterTheme {
+  outer: string;
+  page: string;
+  hero: string;
+  image: string;
+  accent: string;
+  text: string;
+  body: string;
+  bodySoft: string;
+  muted: string;
+  strongMuted: string;
+  faint: string;
+  faint2: string;
+  placeholder: string;
+  line: string;
+  lineSoft: string;
+  topline: string;
+  footline: string;
+  svgLine: string;
+}
+
+const NEWSLETTER_THEME_DARK: NewsletterTheme = {
+  outer: "#111827",
   page: "#0d1220",
   hero: "#0f1a2c",
   image: "#1a2236",
-  gold: "#c9a84c",
-  white: "#fff",
+  accent: "#c9a84c",
+  text: "#ffffff",
+  body: "rgba(255,255,255,0.76)",
+  bodySoft: "rgba(255,255,255,0.66)",
+  muted: "rgba(255,255,255,0.56)",
+  strongMuted: "rgba(255,255,255,0.78)",
+  faint: "rgba(255,255,255,0.4)",
+  faint2: "rgba(255,255,255,0.22)",
+  placeholder: "rgba(255,255,255,0.18)",
+  line: "rgba(255,255,255,0.08)",
+  lineSoft: "rgba(255,255,255,0.07)",
+  topline: "rgba(255,255,255,0.1)",
+  footline: "rgba(255,255,255,0.09)",
+  svgLine: "rgba(255,255,255,0.1)",
 };
 
-export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
-  if (input.documento_tipo === "minuto_regulacao") {
-    return buildMinutoRegulacaoHtml(input);
-  }
-  return buildNewsletterRegulatorioHtml(input);
+// "Newsletter 2" — estetica clara/clean inspirada no whitepaper. Mesma estrutura,
+// logo, nome e contatos; muda apenas o design (fundo branco, tipografia editorial).
+const NEWSLETTER_THEME_LIGHT: NewsletterTheme = {
+  outer: "#e7e3da",
+  page: "#ffffff",
+  hero: "#f6f3ec",
+  image: "#ece8df",
+  accent: "#9a7b1f",
+  text: "#16202e",
+  body: "rgba(22,32,46,0.82)",
+  bodySoft: "rgba(22,32,46,0.74)",
+  muted: "rgba(22,32,46,0.58)",
+  strongMuted: "rgba(22,32,46,0.8)",
+  faint: "rgba(22,32,46,0.45)",
+  faint2: "rgba(22,32,46,0.32)",
+  placeholder: "rgba(22,32,46,0.2)",
+  line: "rgba(22,32,46,0.1)",
+  lineSoft: "rgba(22,32,46,0.08)",
+  topline: "rgba(22,32,46,0.14)",
+  footline: "rgba(22,32,46,0.12)",
+  svgLine: "rgba(22,32,46,0.14)",
+};
+
+function newsletterPageStyles(t: NewsletterTheme) {
+  return `*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact;color-adjust:exact;}
+html,body{background:${t.outer};}
+body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
+.newsletter-page{width:960px;height:1357px;background:${t.page};display:flex;flex-direction:column;overflow:hidden;padding-bottom:32px;margin:0 auto;position:relative;isolation:isolate;break-after:page;page-break-after:always;}
+.newsletter-page:last-child{break-after:auto;page-break-after:auto;}
+.print-bg{position:absolute;inset:0;width:960px;height:1357px;z-index:0;pointer-events:none;display:block;}
+.topbar,.hero,.body,.footer{position:relative;z-index:1;}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:0 44px;height:38px;flex-shrink:0;border-bottom:1px solid ${t.topline};font-size:9px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:${t.faint};}
+.topbar strong{color:${t.strongMuted};font-weight:600;}
+.hero{background:${t.hero};padding:0 44px;height:190px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid ${t.line};}
+.hero-left{display:flex;flex-direction:column;gap:8px;min-width:0;max-width:510px;}
+.hero-eyebrow{font-size:8.5px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:${t.accent};}
+.hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:${t.text};}
+.hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:${t.muted};max-width:510px;}
+.hero-subtitle strong{color:${t.strongMuted};font-weight:500;}
+.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-logo{width:360px;height:360px;object-fit:cover;object-position:center;display:block;transform:scale(2.05);}
+.body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
+.col-main{padding:22px 30px 12px 44px;border-right:1px solid ${t.line};display:flex;flex-direction:column;gap:10px;overflow:hidden;}
+.main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;margin:1px 0;}
+.main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${t.accent};display:block;margin-bottom:8px;}
+.main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:${t.text};text-align:left;}
+.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
+.main-body p+p{margin-top:7px;}
+.read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${t.accent};text-decoration:none;flex-shrink:0;}
+.col-side{display:flex;flex-direction:column;}
+.side-art{padding:18px 34px 12px 22px;border-bottom:1px solid ${t.lineSoft};display:flex;flex-direction:column;gap:8px;flex:1;overflow:visible;}
+.side-art.no-image{gap:9px;justify-content:flex-start;}
+.side-art:last-child{border-bottom:none;}
+.side-img{width:100%;height:94px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;}
+.side-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.side-title{font-family:'Playfair Display',serif;font-size:17.8px;font-weight:800;line-height:1.08;letter-spacing:0;color:${t.text};text-align:left;}
+.side-excerpt{font-size:11.8px;line-height:1.34;color:${t.bodySoft};text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
+.side-excerpt p+p{margin-top:6px;}
+.side-link{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:${t.accent};text-decoration:none;flex-shrink:0;}
+.footer{border-top:1px solid ${t.footline};padding:0 44px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;}
+.footer-brand{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:${t.text};}
+.footer-sub{font-size:8.5px;letter-spacing:0.06em;margin-top:2px;color:${t.faint2};text-transform:uppercase;display:block;}
+.footer-note{font-size:8.5px;letter-spacing:0.08em;text-align:right;color:${t.faint2};text-transform:uppercase;line-height:1.6;}
+@page{size:960px 1357px;margin:0;}
+@media print{html,body{background:${t.page}!important;}.newsletter-page{margin:0!important;}*,*::before,*::after{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;}}`;
 }
 
-function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput) {
+export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
+  const version = input.template_version ?? "";
+  const isV2 = version.endsWith("_v2");
+  if (input.documento_tipo === "minuto_regulacao") {
+    return buildMinutoRegulacaoHtml(input, isV2);
+  }
+  return buildNewsletterRegulatorioHtml(input, isV2 ? NEWSLETTER_THEME_LIGHT : NEWSLETTER_THEME_DARK);
+}
+
+function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput, theme: NewsletterTheme = NEWSLETTER_THEME_DARK) {
   const generatedAt = input.generatedAt ?? new Date();
   const date = formatNewsletterDate(generatedAt);
   const selected = input.noticias;
@@ -71,69 +183,28 @@ function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput) {
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <title>${escapeHtml(input.assunto || "Newsletter Regulatória")}</title>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact;color-adjust:exact;}
-html,body{background:#111827;}
-body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
-.newsletter-page{width:960px;height:1357px;background:${NEWSLETTER_COLORS.page};display:flex;flex-direction:column;overflow:hidden;padding-bottom:32px;margin:0 auto;position:relative;isolation:isolate;break-after:page;page-break-after:always;}
-.newsletter-page:last-child{break-after:auto;page-break-after:auto;}
-.print-bg{position:absolute;inset:0;width:960px;height:1357px;z-index:0;pointer-events:none;display:block;}
-.topbar,.hero,.body,.footer{position:relative;z-index:1;}
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:0 44px;height:38px;flex-shrink:0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:9px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
-.topbar strong{color:rgba(255,255,255,0.75);font-weight:600;}
-.hero{background:${NEWSLETTER_COLORS.hero};padding:0 44px;height:190px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid rgba(255,255,255,0.08);}
-.hero-left{display:flex;flex-direction:column;gap:8px;min-width:0;max-width:510px;}
-.hero-eyebrow{font-size:8.5px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};}
-.hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:#fff;}
-.hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:rgba(255,255,255,0.56);max-width:510px;}
-.hero-subtitle strong{color:rgba(255,255,255,0.78);font-weight:500;}
-.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.hero-logo{width:360px;height:360px;object-fit:cover;object-position:center;display:block;transform:scale(2.05);}
-.body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
-.col-main{padding:22px 30px 12px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:10px;overflow:hidden;}
-.main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:1px 0;}
-.main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
-.art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};display:block;margin-bottom:8px;}
-.main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:#fff;text-align:left;}
-.main-body{font-size:13.8px;line-height:1.39;color:rgba(255,255,255,0.76);text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
-.main-body p+p{margin-top:7px;}
-.read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
-.col-side{display:flex;flex-direction:column;}
-.side-art{padding:18px 34px 12px 22px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;gap:8px;flex:1;overflow:visible;}
-.side-art.no-image{gap:9px;justify-content:flex-start;}
-.side-art:last-child{border-bottom:none;}
-.side-img{width:100%;height:94px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.16);font-weight:500;overflow:hidden;}
-.side-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
-.side-title{font-family:'Playfair Display',serif;font-size:17.8px;font-weight:800;line-height:1.08;letter-spacing:0;color:#fff;text-align:left;}
-.side-excerpt{font-size:11.8px;line-height:1.34;color:rgba(255,255,255,0.66);text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
-.side-excerpt p+p{margin-top:6px;}
-.side-link{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:${NEWSLETTER_COLORS.gold};text-decoration:none;flex-shrink:0;}
-.footer{border-top:1px solid rgba(255,255,255,0.09);padding:0 44px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;}
-.footer-brand{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#fff;}
-.footer-sub{font-size:8.5px;letter-spacing:0.06em;margin-top:2px;color:rgba(255,255,255,0.25);text-transform:uppercase;display:block;}
-.footer-note{font-size:8.5px;letter-spacing:0.08em;text-align:right;color:rgba(255,255,255,0.2);text-transform:uppercase;line-height:1.6;}
-@page{size:960px 1357px;margin:0;}
-@media print{html,body{background:${NEWSLETTER_COLORS.page}!important;}.newsletter-page{margin:0!important;}*,*::before,*::after{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;}}
+${newsletterPageStyles(theme)}
 </style>
 <script>
 function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src");if(fallback&&img.src!==fallback){img.removeAttribute("data-fallback-src");img.src=fallback;return;}if(img.parentElement){img.parentElement.remove();}}
 </script>
 </head>
 <body>
-  ${(pages.length ? pages : [[]]).map((page) => renderNewsletterPage(page, date, logo, input)).join("")}
+  ${(pages.length ? pages : [[]]).map((page) => renderNewsletterPage(page, date, logo, input, theme)).join("")}
 </body>
 </html>`;
 }
 
-function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: string, input: NewsletterDocumentInput) {
+function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: string, input: NewsletterDocumentInput, theme: NewsletterTheme = NEWSLETTER_THEME_DARK) {
   const heroSubtitle = buildNewsletterSubtitle(items, input.assunto);
   return `<section class="newsletter-page">
     <svg class="print-bg" viewBox="0 0 960 1357" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect width="960" height="1357" fill="${NEWSLETTER_COLORS.page}"/>
-      <rect y="38" width="960" height="190" fill="${NEWSLETTER_COLORS.hero}"/>
-      <line x1="0" y1="38" x2="960" y2="38" stroke="rgba(255,255,255,0.1)"/>
-      <line x1="0" y1="228" x2="960" y2="228" stroke="rgba(255,255,255,0.08)"/>
-      <line x1="557" y1="228" x2="557" y2="1323" stroke="rgba(255,255,255,0.08)"/>
-      <line x1="0" y1="1323" x2="960" y2="1323" stroke="rgba(255,255,255,0.09)"/>
+      <rect width="960" height="1357" fill="${theme.page}"/>
+      <rect y="38" width="960" height="190" fill="${theme.hero}"/>
+      <line x1="0" y1="38" x2="960" y2="38" stroke="${theme.svgLine}"/>
+      <line x1="0" y1="228" x2="960" y2="228" stroke="${theme.line}"/>
+      <line x1="557" y1="228" x2="557" y2="1323" stroke="${theme.line}"/>
+      <line x1="0" y1="1323" x2="960" y2="1323" stroke="${theme.footline}"/>
     </svg>
     <header class="topbar">
       <span>IRIS &mdash; <strong>Newsletter Regulat&oacute;rio</strong></span>
@@ -162,19 +233,35 @@ function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: strin
   </section>`;
 }
 
-function buildMinutoRegulacaoHtml(input: NewsletterDocumentInput) {
+function buildMinutoRegulacaoHtml(input: NewsletterDocumentInput, isV2 = false) {
   const generatedAt = input.generatedAt ?? new Date();
   const date = formatLongDate(generatedAt.toISOString());
   const items = buildMinutoItems(input);
-
-  return `<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=1123, initial-scale=1">
-  <title>${escapeHtml(input.assunto || "Minuto da Regulação")}</title>
-  <style>
-    @page { size: A4 landscape; margin: 12mm; }
+  const fontLink = isV2
+    ? `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">`
+    : "";
+  // "Minuto 2" — variante clara/editorial com tipografia serifada (mesma logo, nome e contatos).
+  const styles = isV2
+    ? `@page { size: A4 landscape; margin: 12mm; }
+    * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact; }
+    html, body { min-height: 100%; }
+    body { margin: 0; background: #e7e3da; color: #16202e; font-family: 'Inter', Arial, Helvetica, sans-serif; }
+    .minuto-page { width: 1123px; min-height: 794px; max-width: 100%; margin: 0 auto; background: #fff; padding: 30px 40px; display:flex; flex-direction:column; break-after: page; page-break-after: always; }
+    .minuto-page:last-child { break-after: auto; page-break-after: auto; }
+    header { border-bottom: 1px solid rgba(22,32,46,0.14); padding-bottom: 16px; margin-bottom: 24px; display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-shrink:0; }
+    .eyebrow { margin: 0 0 8px; font-size: 11px; line-height: 1; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #9a7b1f; }
+    h1 { margin: 0; font-family: 'Playfair Display', serif; font-size: 40px; line-height: 1.02; font-weight: 800; letter-spacing: 0; }
+    .generated { margin: 0; font-size: 13px; color: rgba(22,32,46,0.55); text-align:right; flex-shrink:0; }
+    .minuto-item { flex:1; min-height:0; break-inside: avoid; display:flex; flex-direction:column; justify-content:center; gap:22px; }
+    .minuto-copy { min-width:0; max-width: 980px; margin: 0 auto; display:flex; flex-direction:column; justify-content:center; }
+    .item-meta { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #9a7b1f; }
+    .script-title { margin: 0 0 16px; font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.06; font-weight: 800; color: #16202e; }
+    .script-subtitle { margin: 0 0 20px; font-size: 28px; line-height: 1.24; font-weight: 600; color: rgba(22,32,46,0.78); }
+    .script { margin: 0; white-space: pre-line; font-size: 24px; line-height: 1.42; font-weight: 400; color: rgba(22,32,46,0.86); }
+    .source { color: #9a7b1f; text-decoration: none; }
+    .empty { color: #666; font-size: 14px; }
+    @media print { body { background: #fff; } .minuto-page { width:auto; max-width: none; min-height: calc(100vh - 24mm); margin: 0; padding: 0; } * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; } }`
+    : `@page { size: A4 landscape; margin: 12mm; }
     * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact; }
     html, body { min-height: 100%; }
     body { margin: 0; background: #f3f4f6; color: #111827; font-family: Arial, Helvetica, sans-serif; }
@@ -192,7 +279,17 @@ function buildMinutoRegulacaoHtml(input: NewsletterDocumentInput) {
     .script { margin: 0; white-space: pre-line; font-size: 25px; line-height: 1.38; font-weight: 500; color: #111827; }
     .source { color: #1d4f7a; text-decoration: none; }
     .empty { color: #666; font-size: 14px; }
-    @media print { body { background: #fff; } .minuto-page { width:auto; max-width: none; min-height: calc(100vh - 24mm); margin: 0; padding: 0; } * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; } }
+    @media print { body { background: #fff; } .minuto-page { width:auto; max-width: none; min-height: calc(100vh - 24mm); margin: 0; padding: 0; } * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; } }`;
+
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1123, initial-scale=1">
+  ${fontLink}
+  <title>${escapeHtml(input.assunto || "Minuto da Regulação")}</title>
+  <style>
+    ${styles}
   </style>
 </head>
 <body>
