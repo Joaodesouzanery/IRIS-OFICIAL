@@ -132,11 +132,11 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 .hero-logo{width:360px;height:360px;object-fit:cover;object-position:center;display:block;transform:scale(2.05);}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid ${t.line};display:flex;flex-direction:column;gap:10px;overflow:hidden;}
-.main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;margin:1px 0;}
+.main-img{width:100%;height:224px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;margin:1px 0;}
 .main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
 .art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${t.accent};display:block;margin-bottom:8px;}
 .main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:${t.text};text-align:left;}
-.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:1 1 auto;min-height:0;overflow:hidden;}
+.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:1 1 auto;min-height:0;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,black 75%,transparent 100%);mask-image:linear-gradient(to bottom,black 75%,transparent 100%);}
 .main-body p+p{margin-top:7px;}
 .read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${t.accent};text-decoration:none;flex-shrink:0;}
 .col-side{display:flex;flex-direction:column;}
@@ -711,6 +711,14 @@ function renderParagraphs(value: string | null | undefined, maxParagraphs: numbe
   }
 
   if (current && paragraphs.length < maxParagraphs) paragraphs.push(current);
+  // Ensure last visible paragraph ends at a sentence boundary (never mid-sentence).
+  if (paragraphs.length > 0) {
+    const last = paragraphs[paragraphs.length - 1];
+    const lastSentenceEnd = Math.max(last.lastIndexOf("."), last.lastIndexOf("!"), last.lastIndexOf("?"));
+    if (lastSentenceEnd > last.length * 0.4) {
+      paragraphs[paragraphs.length - 1] = last.slice(0, lastSentenceEnd + 1).trim();
+    }
+  }
   return paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
 }
 
