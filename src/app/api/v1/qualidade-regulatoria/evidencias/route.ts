@@ -93,5 +93,32 @@ export async function PATCH(req: NextRequest) {
     .single();
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ evidencia: data });
+
+  // Fecha o ciclo: recalcula a contagem de evidências validadas da avaliação
+  // correspondente (agência + critério). Apenas evidências "validado" contam
+  // para o painel/prêmio. Falhas aqui não invalidam a mudança de status.
+  let validated_count: number | null = null;
+  try {
+    if (data?.agencia_sigla && data?.criterio_id) {
+      const { count } = await db
+        .from("qualidade_regulatoria_evidencias")
+        .select("id", { count: "exact", head: true })
+        .eq("agencia_sigla", data.agencia_sigla)
+        .eq("criterio_id", data.criterio_id)
+        .eq("status_revisao", "validado");
+      validated_count = count ?? 0;
+
+      let upd = db
+        .from("qualidade_regulatoria_avaliacoes")
+        .update({ evidencias_count: validated_count, updated_at: new Date().toISOString() })
+        .eq("agencia_sigla", data.agencia_sigla)
+        .eq("criterio_id", data.criterio_id);
+      if (data.avaliacao_id) upd = upd.eq("id", data.avaliacao_id);
+      await upd;
+    }
+  } catch (recalcError) {
+    console.warn("[qualidade/evidencias] Falha ao recalcular evidencias_count:", recalcError instanceof Error ? recalcError.message : recalcError);
+  }
+
+  return NextResponse.json({ evidencia: data, evidencias_validadas: validated_count });
 }

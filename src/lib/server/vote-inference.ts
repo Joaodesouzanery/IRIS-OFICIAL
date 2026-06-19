@@ -85,7 +85,10 @@ export function buildVotoRows(input: {
 
   for (const nome of input.nomes) {
     const match = findBestMatch(nome, input.diretoresList);
-    if (!match.diretorId) continue;
+    // Só atribui voto nominal com alta confiança. Matches "needsReview"
+    // (0.6–0.85) ficam de fora para não atribuir voto ao diretor errado —
+    // o revisor humano resolve esses casos manualmente.
+    if (!match.diretorId || match.needsReview) continue;
     if (ausenteIds.has(match.diretorId)) {
       rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true));
     } else if (contraIds.has(match.diretorId)) {
@@ -166,7 +169,8 @@ function matchIds(names: string[], diretoresList: DiretorVoteRecord[]) {
   const ids = new Set<string>();
   for (const nome of names) {
     const match = findBestMatch(nome, diretoresList);
-    if (match.diretorId) ids.add(match.diretorId);
+    // Apenas matches de alta confiança contam como voto contra/ausente.
+    if (match.diretorId && !match.needsReview) ids.add(match.diretorId);
   }
   return ids;
 }

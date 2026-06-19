@@ -567,8 +567,13 @@ async function fetchHtml(url: string) {
   try {
     const res = await fetch(url, {
       headers: {
-        "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
-        Accept: "text/html,application/xhtml+xml",
+        // Portais governamentais (ex.: ARTESP/Liferay) bloqueiam User-Agents de bot
+        // com 403, fazendo a coleta retornar zero links. Usamos um UA de navegador
+        // real e Accept-Language pt-BR para evitar o bloqueio.
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
       },
       next: { revalidate: 0 },
       signal: controller.signal,
@@ -907,6 +912,20 @@ function extractArtespMainImage(html: string, baseUrl: string): { url: string | 
   const absoluteContentImage = absolutize(contentImage ? pickSrcsetFirst(contentImage) : null, baseUrl);
   if (absoluteContentImage && isLikelyContentImage(absoluteContentImage)) {
     return { url: absoluteContentImage, source: "artesp body img" };
+  }
+
+  // Fallback de alta confianca: a og:image/twitter:image da pagina de detalhe da
+  // ARTESP costuma ser a foto real da materia. Aceitamos desde que nao seja a
+  // imagem generica do CMS (logo/placeholder).
+  const ogImage = absolutize(
+    meta(html, "property", "og:image") ??
+      meta(html, "property", "og:image:url") ??
+      meta(html, "name", "twitter:image") ??
+      meta(html, "name", "twitter:image:src"),
+    baseUrl,
+  );
+  if (ogImage && !isGenericCmsImage(ogImage)) {
+    return { url: ogImage, source: "artesp og:image" };
   }
 
   const generic = extractMainImage(html, baseUrl);

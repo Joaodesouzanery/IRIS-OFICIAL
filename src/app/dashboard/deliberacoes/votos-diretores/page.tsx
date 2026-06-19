@@ -46,6 +46,12 @@ type VotosDiretoresResponse = {
   demo?: boolean;
 };
 
+type EnqueueResponse = {
+  candidates: number;
+  queued: number;
+  enqueued_jobs: number;
+};
+
 export default function VotosDiretoresPage() {
   const queryClient = useQueryClient();
   const { demoEnabled } = useDataSyncContext();
@@ -88,6 +94,13 @@ export default function VotosDiretoresPage() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
       queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+    },
+  });
+
+  const enqueueMutation = useMutation({
+    mutationFn: () => api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", {}),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
     },
   });
 
@@ -135,6 +148,15 @@ export default function VotosDiretoresPage() {
             {checkMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
             Verificar novos
           </button>
+          <button
+            onClick={() => enqueueMutation.mutate()}
+            disabled={enqueueMutation.isPending || demoEnabled}
+            className="btn-secondary"
+            title="Baixa e enfileira os PDFs de atas/votos detectados para extração dos votos individuais"
+          >
+            {enqueueMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Upload className="w-4 h-4" />}
+            Processar atas/votos
+          </button>
         </div>
       </div>
 
@@ -165,6 +187,18 @@ export default function VotosDiretoresPage() {
       {checkMutation.error ? (
         <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">
           {checkMutation.error instanceof Error ? checkMutation.error.message : "Erro ao verificar documentos"}
+        </div>
+      ) : null}
+      {enqueueMutation.data ? (
+        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
+          {enqueueMutation.data.candidates} PDF(s) de decisão encontrado(s) · {enqueueMutation.data.queued} enfileirado(s) para
+          extração. Revise e confirme os votos individuais em{" "}
+          <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
+        </div>
+      ) : null}
+      {enqueueMutation.error ? (
+        <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">
+          {enqueueMutation.error instanceof Error ? enqueueMutation.error.message : "Erro ao processar atas/votos"}
         </div>
       ) : null}
 
