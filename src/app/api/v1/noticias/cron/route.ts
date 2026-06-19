@@ -7,9 +7,16 @@ export async function GET(req: NextRequest) {
   const guard = requireCron(req);
   if (guard) return guard;
 
+  // Permite que o agendamento defina o recorte (tier/scope/limit) via querystring do cron.
+  const params = req.nextUrl.searchParams;
+  const tier = params.get("tier") ?? "all";        // core | expanded | all
+  const scope = params.get("scope") ?? "all";
+  const limit = params.get("limit") ?? "8";
+  const mode = params.get("mode") ?? "enrich";
+
   const url = req.nextUrl.clone();
   url.pathname = "/api/v1/noticias/coletar";
-  url.search = "?automatic=1&scope=all&tier=all&limit=8&mode=enrich";
+  url.search = `?automatic=1&scope=${encodeURIComponent(scope)}&tier=${encodeURIComponent(tier)}&limit=${encodeURIComponent(limit)}&mode=${encodeURIComponent(mode)}`;
 
   const response = await fetch(url, {
     method: "POST",

@@ -1,6 +1,7 @@
 import type {
   Associado,
   Deliberacao,
+  Diretor,
   DocumentoAssociadoPreview,
   DocumentoAssociadoTipo,
   ListaTripliceItem,
@@ -13,10 +14,10 @@ export const DEMO_ASSOCIADOS: Associado[] = [
     id: "assoc-metroviario-artesp",
     nome: "Metroviário ARTESP",
     setor: "Metroviário",
-    descricao: "Relatório trimestral para acompanhamento de temas metroviários e mobilidade regulados pela ARTESP.",
-    agencia_siglas: ["ARTESP"],
-    ministerios: ["Secretaria de Parcerias em Investimentos do Estado de São Paulo"],
-    ministerio_urls: ["https://www.artesp.sp.gov.br/artesp/noticias"],
+    descricao: "Relatório trimestral e boletim mensal de temas metroviários e de mobilidade regulados pela ARTESP, com áreas correlatas na ANTT.",
+    agencia_siglas: ["ARTESP", "ANTT"],
+    ministerios: ["Ministério dos Transportes", "Secretaria de Parcerias em Investimentos do Estado de São Paulo"],
+    ministerio_urls: ["https://www.gov.br/transportes/pt-br/assuntos/noticias", "https://www.artesp.sp.gov.br/artesp/noticias"],
     microtemas: ["metroviário", "mobilidade", "concessão", "tarifa", "contrato", "segurança", "obras"],
     palavras_chave: ["metro", "metroviario", "metroviário", "trem", "trilhos", "mobilidade", "transporte metropolitano", "concessao", "concessão"],
     vp_nome: "VP a definir",
@@ -76,14 +77,56 @@ export interface BuildAssociadoDocumentInput {
   listaTriplice: ListaTripliceItem[];
   listaTripliceManual?: ListaTripliceItem[];
   vp_paragrafos?: string[];
+  /** Curadoria da edição: sobrescreve a foto/minibio do associado só neste documento. */
+  vp_foto_url?: string | null;
+  vp_minibio?: string | null;
   observacoes_curadoria?: string | null;
+  /** Diretoria das agências do associado (para composição + bios). */
+  diretores?: Diretor[];
+  /** Textos curados das seções analíticas (rascunho editável). */
+  sumario_executivo?: string | null;
+  perfis_influencias?: string | null;
+  correlacao_forcas?: string | null;
+  agendas?: string[];
+  conclusao?: string | null;
+  monitoramento?: string | null;
+}
+
+export interface ProspeccaoItem {
+  tema: string;
+  probabilidade: "alta" | "média" | "baixa";
+  racional: string;
+  horizonte: string;
+}
+
+export interface Prospeccao {
+  itens: ProspeccaoItem[];
+  confianca: number;
+  /** "deterministico" hoje; "ia" quando o Claude for plugado em generateProspeccao(). */
+  fonte: "deterministico" | "ia";
+  resumo: string;
 }
 
 export function buildAssociadoDocument(input: BuildAssociadoDocumentInput): DocumentoAssociadoPreview {
-  const relevantDelibs = filterRelevantDelibs(input.deliberacoes, input.associado);
-  const relevantNews = filterRelevantNews(input.noticias, input.associado);
+  // Curadoria pode sobrescrever foto/minibio do VP só neste documento.
+  const associado: Associado = {
+    ...input.associado,
+    vp_foto_url: input.vp_foto_url ?? input.associado.vp_foto_url,
+    vp_minibio: input.vp_minibio ?? input.associado.vp_minibio,
+  };
+
+  const relevantDelibs = filterRelevantDelibs(input.deliberacoes, associado);
+  const relevantNews = filterRelevantNews(input.noticias, associado);
   const concordancia = computeConcordancia(relevantDelibs);
-  const cenarios = buildCenarios(relevantDelibs, relevantNews, input.associado);
+  const cenarios = buildCenarios(relevantDelibs, relevantNews, associado);
+  const prospeccao = generateProspeccao({
+    associado,
+    deliberacoes: relevantDelibs,
+    mandatos: input.mandatos,
+    listaTriplice: input.listaTriplice,
+    noticias: relevantNews,
+    periodo_fim: input.periodo_fim,
+  });
   const listaTriplice = [...input.listaTriplice, ...(input.listaTripliceManual ?? [])];
   const fontes = buildFontes(relevantDelibs, relevantNews, listaTriplice);
   const metricas = {
@@ -91,32 +134,35 @@ export function buildAssociadoDocument(input: BuildAssociadoDocumentInput): Docu
     noticias: relevantNews.length,
     mandatos: input.mandatos.length,
     lista_triplice: listaTriplice.length,
-    confianca_cenarios: cenarios.confianca,
+    confianca_cenarios: prospeccao.confianca,
   };
   const qualidade = assessQuality({
     tipo: input.tipo,
-    associado: input.associado,
+    associado,
     metricas,
     concordanciaCount: concordancia.length,
+    vpParagrafos: input.vp_paragrafos,
   });
   const titulo = input.tipo === "relatorio_trimestral"
-    ? `Relatório do Associado trimestral - ${input.associado.nome}`
-    : `Relatório Mensal regulatório - ${input.associado.nome}`;
+    ? `Relatório do Associado (Trimestral) - ${associado.nome}`
+    : `Boletim Mensal (Deliberações) - ${associado.nome}`;
 
   const html = buildHtml({
     ...input,
+    associado,
     listaTriplice,
     titulo,
     deliberacoes: relevantDelibs,
     noticias: relevantNews,
     concordancia,
     cenarios,
+    prospeccao,
     fontes,
     qualidade,
   });
 
   return {
-    associado: input.associado,
+    associado,
     tipo: input.tipo,
     periodo_inicio: input.periodo_inicio,
     periodo_fim: input.periodo_fim,
@@ -216,17 +262,22 @@ function assessQuality(input: {
   associado: Associado;
   metricas: DocumentoAssociadoPreview["metricas"];
   concordanciaCount: number;
+  vpParagrafos?: string[];
 }) {
   const pendencias: string[] = [];
-  const vpPlaceholder = normalize(`${input.associado.vp_nome ?? ""} ${input.associado.vp_minibio ?? ""}`).includes("a definir")
-    || normalize(input.associado.vp_minibio ?? "").includes("pendente");
+  const minibio = input.associado.vp_minibio ?? "";
+  const placeholderText = normalize(`${input.associado.vp_nome ?? ""} ${minibio}`).includes("a definir")
+    || normalize(minibio).includes("pendente");
+  const curatedParas = (input.vpParagrafos ?? []).map((p) => p.trim()).filter(Boolean);
+  const vpOk = Boolean(input.associado.vp_foto_url)
+    && (curatedParas.length >= 3 || (Boolean(minibio) && !placeholderText));
 
   if (input.metricas.deliberacoes === 0) pendencias.push("Sem deliberações relevantes no período.");
   if (input.metricas.noticias === 0) pendencias.push("Sem notícias ou atos monitorados correlatos no período.");
   if (input.concordanciaCount === 0) pendencias.push("Sem votos suficientes para calcular concordância dos diretores.");
   if (input.tipo === "relatorio_trimestral" && input.metricas.mandatos === 0) pendencias.push("Sem mandatos cadastrados para as agências do associado.");
   if (input.tipo === "relatorio_trimestral" && input.metricas.lista_triplice === 0) pendencias.push("Sem lista tríplice revisada/cadastrada.");
-  if (vpPlaceholder) pendencias.push("Visão VP, mini bio ou foto ainda precisam de curadoria.");
+  if (!vpOk) pendencias.push("Visão VP: foto, mini bio e os 3 parágrafos ainda precisam de curadoria.");
 
   const penalty = Math.min(80, pendencias.length * 18);
   const dataBonus = Math.min(20, input.metricas.deliberacoes * 4 + input.metricas.noticias * 2);
@@ -264,12 +315,57 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
   noticias: MonitoramentoItem[];
   concordancia: Array<{ nomes: string; concordam: number; total: number; pct: number }>;
   cenarios: { provavel: string; alternativo: string; risco: string; confianca: number };
+  prospeccao: Prospeccao;
   fontes: Array<{ tipo: string; titulo: string; url?: string | null }>;
   qualidade: DocumentoAssociadoPreview["qualidade"];
 }) {
   const periodo = `${formatDate(input.periodo_inicio)} a ${formatDate(input.periodo_fim)}`;
   const isQuarterly = input.tipo === "relatorio_trimestral";
   const vpParagraphs = buildVpParagraphs(input);
+  const associado = input.associado;
+  const diretores = input.diretores ?? [];
+  const siglas = associado.agencia_siglas.join(" · ") || "—";
+  const expirando = countExpiringMandatos(input.mandatos, input.periodo_fim);
+  const concAvg = input.concordancia.length
+    ? Math.round(input.concordancia.reduce((s, c) => s + c.pct, 0) / input.concordancia.length)
+    : 0;
+  const agendas = (input.agendas ?? []).map((a) => a.trim()).filter(Boolean);
+
+  const coverTitle = isQuarterly
+    ? "Análise Político-Regulatória"
+    : "Boletim Mensal Regulatório";
+  const docKind = isQuarterly ? "Relatório do Associado · Trimestral" : "Boletim de Deliberações · Mensal";
+
+  const body = isQuarterly
+    ? `
+    ${section("Sumário Executivo", `${renderCurated(input.sumario_executivo) || `<p class="lead">${escapeHtml(associado.descricao ?? "Documento de inteligência institucional e regulatória gerado a partir de fontes oficiais monitoradas.")}</p>`}
+      ${input.observacoes_curadoria ? `<p class="muted"><b>Observações de curadoria:</b> ${escapeHtml(input.observacoes_curadoria)}</p>` : ""}
+      ${renderQuality(input.qualidade)}`)}
+    ${section("Dashboard de Exposição Regulatória", renderDashboardExposicao(expirando, input.deliberacoes.length, concAvg))}
+    ${section("Composição da Diretoria", renderComposicaoDiretoria(input.mandatos))}
+    ${diretores.length ? section("Conheça os Diretores", renderBios(diretores)) : ""}
+    ${section("Visão do Vice-Presidente", renderVpSection(associado, vpParagraphs))}
+    ${input.perfis_influencias ? section("Mapeamento de Perfis e Influências", renderCurated(input.perfis_influencias)) : ""}
+    ${input.correlacao_forcas ? section("Correlação de Forças Interna", renderCurated(input.correlacao_forcas)) : ""}
+    ${section("Concordância dos Diretores", renderConcordancia(input.concordancia))}
+    ${section("Mandatos e Lista Tríplice", renderMandatos(input.mandatos, input.listaTriplice))}
+    ${agendas.length ? section("Principais Agendas Regulatórias", renderAgendas(agendas)) : ""}
+    ${section("Prospecção das Principais Decisões", renderProspeccaoSection(input.prospeccao, input.cenarios))}
+    ${section("Ministério Correlato e Política Pública", `${renderMinisterioCorrelato(associado, input.noticias)}${renderNoticias(input.noticias)}`)}
+    ${input.conclusao ? section("Conclusão", renderCurated(input.conclusao)) : ""}
+    ${input.monitoramento ? section("Monitoramento Regulatório e Jurídico", renderCurated(input.monitoramento)) : ""}
+    ${section("Fontes", renderFontes(input.fontes))}`
+    : `
+    ${section("Sumário Executivo", `${renderCurated(input.sumario_executivo) || `<p class="lead">${escapeHtml(associado.descricao ?? "Boletim mensal das deliberações e atos que impactam o associado.")}</p>`}
+      ${input.observacoes_curadoria ? `<p class="muted"><b>Observações de curadoria:</b> ${escapeHtml(input.observacoes_curadoria)}</p>` : ""}
+      ${renderQuality(input.qualidade)}`)}
+    ${section("Dashboard de Exposição Regulatória", renderDashboardExposicao(expirando, input.deliberacoes.length, concAvg))}
+    ${section("Decisões, Pautas e Votos do Mês", renderMonthly(input.deliberacoes, input.noticias))}
+    ${section("Concordância dos Diretores no Mês", renderConcordancia(input.concordancia))}
+    ${section("Prospecção das Principais Decisões", renderProspeccaoSection(input.prospeccao, input.cenarios))}
+    ${section("Ministério Correlato e Política Pública", `${renderMinisterioCorrelato(associado, input.noticias)}${renderNoticias(input.noticias)}`)}
+    ${input.conclusao ? section("Conclusão", renderCurated(input.conclusao)) : ""}
+    ${section("Fontes", renderFontes(input.fontes))}`;
 
   return `<!doctype html>
 <html lang="pt-BR">
@@ -277,86 +373,240 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>${escapeHtml(input.titulo)}</title>
-  <style>
-    body{margin:0;background:#f5f5f4;color:#1c1917;font-family:Arial,Helvetica,sans-serif}
-    .page{max-width:920px;margin:0 auto;background:#fff;min-height:100vh}
-    header{background:#1f2937;color:#fff;padding:28px 36px}
-    h1{margin:0;font-size:26px}.meta{margin-top:8px;color:#d1d5db;font-size:13px}
-    section{padding:24px 36px;border-bottom:1px solid #e7e5e4}
-    h2{margin:0 0 12px;font-size:15px;color:#ea580c;text-transform:uppercase;letter-spacing:.04em}
-    h3{margin:14px 0 6px;font-size:14px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-    .metric{border:1px solid #e7e5e4;border-radius:8px;padding:12px;background:#fafaf9}
-    .metric b{display:block;font-size:22px}.metric span{font-size:11px;color:#78716c;text-transform:uppercase}
-    table{width:100%;border-collapse:collapse;font-size:13px}td,th{border-bottom:1px solid #e7e5e4;padding:8px;text-align:left;vertical-align:top}
-    th{font-size:11px;color:#78716c;text-transform:uppercase;background:#fafaf9}.muted{color:#78716c}.pill{display:inline-block;border:1px solid #fed7aa;color:#c2410c;border-radius:999px;padding:2px 8px;font-size:11px}
-    .scenario{border-left:3px solid #ea580c;padding-left:12px;margin:10px 0}.sources li{margin-bottom:6px}
-    .warning{border:1px solid #fde68a;background:#fffbeb;border-radius:8px;padding:12px}.warning li{margin-bottom:4px}.vp{display:flex;gap:16px;align-items:flex-start}.vp img{width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid #e7e5e4}
-    @media print{body{background:#fff}.page{max-width:none}.no-print{display:none}}
-  </style>
+  <style>${REPORT_CSS}</style>
 </head>
 <body>
   <div class="page">
-    <header>
-      <h1>${escapeHtml(input.titulo)}</h1>
-      <div class="meta">${escapeHtml(input.associado.nome)} · ${escapeHtml(input.associado.setor)} · ${periodo}</div>
-    </header>
-
-    <section>
-      <h2>Resumo Executivo</h2>
-      <div class="grid">
-        <div class="metric"><span>Decisões</span><b>${input.deliberacoes.length}</b></div>
-        <div class="metric"><span>Notícias</span><b>${input.noticias.length}</b></div>
-        <div class="metric"><span>Mandatos</span><b>${input.mandatos.length}</b></div>
-        <div class="metric"><span>Confiança IA</span><b>${Math.round(input.cenarios.confianca * 100)}%</b></div>
+    <section class="cover">
+      <div class="cover-logo">${LOGO_WORDMARK}</div>
+      <div>
+        <div class="cover-kicker">${escapeHtml(associado.nome.toUpperCase())} · Inteligência Institucional e Regulatória</div>
+        <h1 class="cover-title">${escapeHtml(coverTitle)}</h1>
+        <p class="cover-sub">${escapeHtml(siglas)} · ${escapeHtml(associado.setor)} · Período ${periodo}</p>
       </div>
-      <p>${escapeHtml(input.associado.descricao ?? "Documento gerado a partir das fontes regulatorio-institucionais monitoradas.")}</p>
-      <p class="muted">Temas acompanhados: ${escapeHtml(input.associado.microtemas.join(", ") || "nao informados")}.</p>
-      ${input.observacoes_curadoria ? `<p class="muted"><b>Observacoes de curadoria:</b> ${escapeHtml(input.observacoes_curadoria)}</p>` : ""}
-      ${renderQuality(input.qualidade)}
+      <div class="cover-meta">${escapeHtml(docKind)} · Documento gerado automaticamente a partir de fontes oficiais · Uso interno — confidencial</div>
     </section>
 
-    <section>
-      <h2>${isQuarterly ? "Mandatos e Lista Tríplice" : "Decisões, Pautas e Votos do Mês"}</h2>
-      ${isQuarterly ? renderMandatos(input.mandatos, input.listaTriplice) : renderMonthly(input.deliberacoes, input.noticias)}
-    </section>
+    ${section("Indicadores-chave", renderKpiStrip(input, expirando, agendas.length), true)}
+    ${body}
 
-    <section>
-      <h2>Concordancia dos Diretores</h2>
-      ${renderConcordancia(input.concordancia)}
-    </section>
-
-    <section>
-      <h2>Política Pública e Notícias Correlatas</h2>
-      ${renderNoticias(input.noticias)}
-      ${renderMinisterios(input.associado)}
-    </section>
-
-    <section>
-      <h2>Visão VP</h2>
-      <div class="vp">
-        ${input.associado.vp_foto_url ? `<img src="${escapeHtml(input.associado.vp_foto_url)}" alt="${escapeHtml(input.associado.vp_nome ?? "VP")}" />` : ""}
-        <div>
-          <p><span class="pill">${escapeHtml(input.associado.vp_nome ?? "VP a definir")}</span> ${escapeHtml(input.associado.vp_cargo ?? "")}</p>
-          ${vpParagraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Cenários Cautelosos</h2>
-      <div class="scenario"><b>Provável.</b> ${escapeHtml(input.cenarios.provavel)}</div>
-      <div class="scenario"><b>Alternativo.</b> ${escapeHtml(input.cenarios.alternativo)}</div>
-      <div class="scenario"><b>Risco.</b> ${escapeHtml(input.cenarios.risco)}</div>
-    </section>
-
-    <section>
-      <h2>Fontes</h2>
-      <ol class="sources">${input.fontes.length ? input.fontes.map((f) => `<li>${escapeHtml(f.tipo)} · ${f.url ? `<a href="${escapeHtml(f.url)}">${escapeHtml(f.titulo)}</a>` : escapeHtml(f.titulo)}</li>`).join("") : "<li>Nenhuma fonte específica encontrada no período.</li>"}</ol>
-      <p class="muted">Projeções são cenários analíticos, não previsões determinísticas. Revisar antes de circular.</p>
-    </section>
+    <div class="footer"><span>IRIS Regulação · Instituto de Regulação, Inovação e Sustentabilidade</span><span>Uso interno — confidencial</span></div>
   </div>
 </body>
 </html>`;
+}
+
+const LOGO_WORDMARK = `<span class="wm">IRIS</span><span class="wm-sub">INSTITUTO DE REGULAÇÃO</span>`;
+
+const REPORT_CSS = `
+*{box-sizing:border-box}
+body{margin:0;background:#e9edf2;color:#1c2733;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5}
+.page{max-width:794px;margin:0 auto;background:#fff}
+.cover{background:linear-gradient(160deg,#0f2741,#1b3a5c);color:#fff;min-height:1040px;padding:64px 56px;display:flex;flex-direction:column;justify-content:space-between;border:none}
+.cover-logo{display:flex;flex-direction:column;gap:2px}
+.wm{font-size:42px;font-weight:800;letter-spacing:.2em;color:#c9a84c;line-height:1}
+.wm-sub{font-size:9px;letter-spacing:.34em;color:#9fb2c6}
+.cover-kicker{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#c9a84c;font-weight:700}
+.cover-title{font-size:40px;font-weight:800;line-height:1.08;margin:14px 0 0;color:#fff}
+.cover-sub{font-size:14px;color:#c7d3e0;margin-top:14px}
+.cover-meta{font-size:11px;color:#8ba0b6;letter-spacing:.03em}
+section{padding:30px 56px;border-bottom:1px solid #eef1f5}
+.sec-head{display:flex;align-items:center;gap:12px;margin:0 0 4px}
+.sec-bar{width:6px;height:24px;background:#c9a84c;border-radius:2px;display:inline-block}
+.sec-title{font-size:17px;font-weight:800;color:#0f2741;margin:0}
+.sec-rule{height:3px;background:linear-gradient(90deg,#0f2741 0%,#c9a84c 38%,transparent 100%);margin:8px 0 16px;border-radius:2px}
+.lead{font-size:13.5px;color:#374151;margin:0 0 8px}
+.curated p{margin:0 0 9px;white-space:pre-wrap}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:#0f2741;color:#fff;border-radius:10px;padding:16px}
+.kpi b{display:block;font-size:26px;font-weight:800;color:#fff}
+.kpi span{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:#9fb2c6}
+.kpi.gold{background:#c9a84c}.kpi.gold b,.kpi.gold span{color:#0f2741}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{border:1px solid #e5e7eb;border-radius:10px;padding:14px;background:#fafbfc}
+.card h4{margin:0 0 6px;font-size:12.5px;color:#0f2741}
+.dots{letter-spacing:3px;color:#c9a84c;font-size:15px}
+.dots .off{color:#cdd6e0}
+.tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:999px}
+.tag-alta{background:#fde2e1;color:#b42318}.tag-media{background:#fef0c7;color:#92610a}.tag-baixa{background:#e7f0e9;color:#256b3e}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px}
+th{background:#0f2741;color:#fff;text-align:left;padding:8px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.04em}
+td{border-bottom:1px solid #e5e7eb;padding:8px 10px;vertical-align:top}
+tbody tr:nth-child(even){background:#f7f9fb}
+a{color:#1b4f8a;text-decoration:none}
+.muted{color:#6b7280}.pill{display:inline-block;background:#0f2741;color:#fff;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:600}
+h3{margin:16px 0 6px;font-size:13px;color:#0f2741}
+.tl-row{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:11px}
+.tl-name{width:190px;font-weight:600;color:#0f2741}
+.tl-track{flex:1;height:12px;background:#eef1f5;border-radius:6px;position:relative}
+.tl-bar{position:absolute;top:0;height:12px;background:#1b3a5c;border-radius:6px}
+.tl-bar.crit{background:#b42318}
+.tl-range{width:96px;text-align:right;color:#6b7280}
+.bios{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bio{border:1px solid #e5e7eb;border-radius:10px;padding:14px;display:flex;gap:12px;background:#fafbfc}
+.bio img,.bio .avatar{width:64px;height:64px;border-radius:8px;object-fit:cover;flex-shrink:0}
+.bio .avatar{background:#0f2741;color:#c9a84c;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+.bio b{font-size:13px;color:#0f2741;display:block}.bio .role{font-size:11px;color:#6b7280}.bio p{margin:6px 0 0;font-size:11px;color:#374151}
+.vp{display:flex;gap:18px;align-items:flex-start;background:#f7f9fb;border:1px solid #e5e7eb;border-radius:10px;padding:16px}
+.vp img,.vp .avatar{width:108px;height:108px;border-radius:10px;object-fit:cover;flex-shrink:0}
+.vp .avatar{background:#0f2741;color:#c9a84c;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px}
+.scenario{border-left:3px solid #c9a84c;padding:2px 0 2px 12px;margin:8px 0;font-size:12px}
+.sources{font-size:11px;color:#374151;padding-left:18px}.sources li{margin-bottom:4px}
+.warning{border:1px solid #fde68a;background:#fffbeb;border-radius:8px;padding:12px;font-size:12px;margin-top:10px}.warning ul{margin:6px 0 0;padding-left:18px}
+.footer{padding:16px 56px;background:#0f2741;color:#9fb2c6;font-size:10px;letter-spacing:.05em;text-transform:uppercase;display:flex;justify-content:space-between;border:none}
+@media print{
+  @page{size:A4;margin:0}
+  body{background:#fff}
+  .page{max-width:none;width:auto}
+  .cover{min-height:100vh;break-after:page;page-break-after:always}
+  section{break-inside:avoid}
+}
+`;
+
+function section(title: string, content: string, kpis = false) {
+  return `
+    <section>
+      <div class="sec-head"><span class="sec-bar"></span><h2 class="sec-title">${escapeHtml(title)}</h2></div>
+      <div class="sec-rule"></div>
+      ${kpis ? `<div class="kpis">${content}</div>` : content}
+    </section>`;
+}
+
+function renderKpiStrip(
+  input: { deliberacoes: Deliberacao[]; noticias: MonitoramentoItem[]; mandatos: Mandato[]; prospeccao: Prospeccao },
+  expirando: number,
+  agendasCount: number,
+) {
+  const cards = [
+    { label: "Decisões no período", value: String(input.deliberacoes.length) },
+    { label: "Mandatos críticos", value: String(expirando), gold: expirando > 0 },
+    { label: "Agendas prioritárias", value: String(agendasCount || input.noticias.length) },
+    { label: "Confiança da projeção", value: `${Math.round(input.prospeccao.confianca * 100)}%` },
+  ];
+  return cards.map((c) => `<div class="kpi${c.gold ? " gold" : ""}"><b>${escapeHtml(c.value)}</b><span>${escapeHtml(c.label)}</span></div>`).join("");
+}
+
+function renderCurated(text: string | null | undefined) {
+  const value = (text ?? "").trim();
+  if (!value) return "";
+  const paras = value.split(/\n{2,}|\r\n\r\n/).map((p) => p.trim()).filter(Boolean);
+  return `<div class="curated">${(paras.length ? paras : [value]).map((p) => `<p>${escapeHtml(p)}</p>`).join("")}</div>`;
+}
+
+function dots(filled: number, total = 5) {
+  const f = Math.max(0, Math.min(total, filled));
+  return `<span class="dots">${"●".repeat(f)}<span class="off">${"○".repeat(total - f)}</span></span>`;
+}
+
+function renderDashboardExposicao(expirando: number, decisoes: number, concAvg: number) {
+  const sucessao = expirando >= 2 ? 5 : expirando === 1 ? 3 : 1;
+  const volume = decisoes >= 12 ? 5 : decisoes >= 6 ? 4 : decisoes >= 1 ? 2 : 1;
+  const consenso = concAvg >= 85 ? 5 : concAvg >= 65 ? 4 : concAvg >= 40 ? 3 : concAvg > 0 ? 2 : 1;
+  const cards = [
+    { t: "Sucessão / Mandatos", d: sucessao, note: `${expirando} mandato(s) próximo(s) do fim` },
+    { t: "Volume de decisões", d: volume, note: `${decisoes} decisão(ões) no período` },
+    { t: "Consenso do colegiado", d: consenso, note: concAvg ? `${concAvg}% de concordância média` : "Sem dados de votação" },
+  ];
+  return `<div class="cards">${cards.map((c) => `<div class="card"><h4>${escapeHtml(c.t)}</h4>${dots(c.d)}<p class="muted" style="margin:6px 0 0;font-size:11px">${escapeHtml(c.note)}</p></div>`).join("")}</div>`;
+}
+
+function countExpiringMandatos(mandatos: Mandato[], periodoFim: string) {
+  const fim = new Date(periodoFim).getTime();
+  const janela = 180 * 86_400_000;
+  return mandatos.filter((m) => {
+    if (!m.data_fim) return false;
+    const t = new Date(m.data_fim).getTime();
+    return t >= fim && t - fim <= janela;
+  }).length;
+}
+
+function renderComposicaoDiretoria(mandatos: Mandato[]) {
+  if (!mandatos.length) {
+    return `<p class="muted">Sem mandatos cadastrados para as agências do associado.</p>`;
+  }
+  const rows = mandatos.slice(0, 10).map((m) => {
+    const status = m.status === "Ativo" ? "Ativo" : "Inativo";
+    return `<tr><td>${escapeHtml(m.diretor_nome)}</td><td>${escapeHtml(m.cargo ?? "—")}</td><td>${formatDate(m.data_inicio)}</td><td>${m.data_fim ? formatDate(m.data_fim) : "em aberto"}</td><td>${escapeHtml(status)}</td></tr>`;
+  }).join("");
+  return `
+    <table><thead><tr><th>Diretor</th><th>Cargo</th><th>Início</th><th>Fim</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table>
+    <h3>Linha do tempo dos mandatos</h3>
+    ${renderTimeline(mandatos)}
+  `;
+}
+
+function renderTimeline(mandatos: Mandato[]) {
+  const withDates = mandatos.filter((m) => m.data_inicio);
+  if (!withDates.length) return `<p class="muted">Sem datas de mandato para montar a linha do tempo.</p>`;
+  const years = withDates.flatMap((m) => [yearOf(m.data_inicio), m.data_fim ? yearOf(m.data_fim) : new Date().getFullYear()]);
+  const min = Math.min(...years);
+  const max = Math.max(...years) + 1;
+  const span = Math.max(1, max - min);
+  return withDates.slice(0, 10).map((m) => {
+    const start = yearOf(m.data_inicio);
+    const end = m.data_fim ? yearOf(m.data_fim) : new Date().getFullYear();
+    const left = ((start - min) / span) * 100;
+    const width = Math.max(4, ((end - start) / span) * 100);
+    const crit = m.data_fim && new Date(m.data_fim).getTime() - Date.now() <= 180 * 86_400_000 && new Date(m.data_fim).getTime() >= Date.now();
+    return `<div class="tl-row"><span class="tl-name">${escapeHtml(m.diretor_nome)}</span><span class="tl-track"><span class="tl-bar${crit ? " crit" : ""}" style="left:${left.toFixed(1)}%;width:${width.toFixed(1)}%"></span></span><span class="tl-range">${start}–${m.data_fim ? end : "•"}</span></div>`;
+  }).join("");
+}
+
+function yearOf(value: string) {
+  return Number(value.slice(0, 4)) || new Date().getFullYear();
+}
+
+function renderBios(diretores: Diretor[]) {
+  const cards = diretores.slice(0, 8).map((d) => {
+    const initials = (d.nome || "?").split(" ").filter((w) => w.length > 2).slice(0, 2).map((w) => w[0]).join("").toUpperCase() || "?";
+    const avatar = d.foto_url
+      ? `<img src="${escapeHtml(d.foto_url)}" alt="${escapeHtml(d.nome)}" />`
+      : `<span class="avatar">${escapeHtml(initials)}</span>`;
+    const mandato = d.data_posse || d.data_fim_mandato
+      ? `${d.data_posse ? formatDate(d.data_posse) : "—"} a ${d.data_fim_mandato ? formatDate(d.data_fim_mandato) : "em aberto"}`
+      : "";
+    const contato = [d.email, d.telefone].filter(Boolean).join(" · ");
+    const bio = (d.minibio ?? "").trim();
+    return `<div class="bio">${avatar}<div><b>${escapeHtml(d.nome)}</b><span class="role">${escapeHtml(d.cargo ?? d.situacao ?? "Diretor(a)")}${mandato ? ` · ${escapeHtml(mandato)}` : ""}</span>${contato ? `<p class="muted">${escapeHtml(contato)}</p>` : ""}${bio ? `<p>${escapeHtml(bio.slice(0, 460))}</p>` : ""}</div></div>`;
+  }).join("");
+  return `<div class="bios">${cards}</div>`;
+}
+
+function renderVpSection(associado: Associado, vpParagraphs: string[]) {
+  const initials = (associado.vp_nome || "VP").split(" ").filter((w) => w.length > 2).slice(0, 2).map((w) => w[0]).join("").toUpperCase() || "VP";
+  const avatar = associado.vp_foto_url
+    ? `<img src="${escapeHtml(associado.vp_foto_url)}" alt="${escapeHtml(associado.vp_nome ?? "VP")}" />`
+    : `<span class="avatar">${escapeHtml(initials)}</span>`;
+  return `
+    <div class="vp">${avatar}<div>
+      <p><span class="pill">${escapeHtml(associado.vp_nome ?? "VP a definir")}</span> ${escapeHtml(associado.vp_cargo ?? "")}</p>
+      ${vpParagraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+    </div></div>`;
+}
+
+function renderAgendas(agendas: string[]) {
+  const cards = agendas.slice(0, 6).map((a) => {
+    const [tema, prioridadeRaw] = a.split(/[;|]/).map((s) => s.trim());
+    const prio = normalize(prioridadeRaw ?? "").includes("alta") ? "alta" : normalize(prioridadeRaw ?? "").includes("baix") ? "baixa" : "media";
+    const tagClass = prio === "alta" ? "tag-alta" : prio === "baixa" ? "tag-baixa" : "tag-media";
+    return `<div class="card"><h4>${escapeHtml(tema || a)}</h4><span class="tag ${tagClass}">${escapeHtml(prioridadeRaw || "Prioridade média")}</span></div>`;
+  }).join("");
+  return `<div class="cards">${cards}</div>`;
+}
+
+function renderProspeccaoSection(prospeccao: Prospeccao, cenarios: { provavel: string; alternativo: string; risco: string }) {
+  return `
+    ${renderProspeccao(prospeccao)}
+    <h3>Leituras complementares</h3>
+    <div class="scenario"><b>Provável.</b> ${escapeHtml(cenarios.provavel)}</div>
+    <div class="scenario"><b>Alternativo.</b> ${escapeHtml(cenarios.alternativo)}</div>
+    <div class="scenario"><b>Risco.</b> ${escapeHtml(cenarios.risco)}</div>`;
+}
+
+function renderFontes(fontes: Array<{ tipo: string; titulo: string; url?: string | null }>) {
+  return `
+    <ol class="sources">${fontes.length ? fontes.map((f) => `<li>${escapeHtml(f.tipo)} · ${f.url ? `<a href="${escapeHtml(f.url)}">${escapeHtml(f.titulo)}</a>` : escapeHtml(f.titulo)}</li>`).join("") : "<li>Nenhuma fonte específica encontrada no período.</li>"}</ol>
+    <p class="muted">Projeções são cenários analíticos, não previsões determinísticas. Revisar antes de circular.</p>`;
 }
 
 function renderQuality(qualidade: DocumentoAssociadoPreview["qualidade"]) {
@@ -394,15 +644,26 @@ function renderDeliberacoes(delibs: Deliberacao[]) {
 }
 
 function renderMonthly(delibs: Deliberacao[], items: MonitoramentoItem[]) {
-  const atas = items.filter((item) => item.tipo === "ata" || item.tipo === "pauta" || item.tipo === "deliberacao");
-  const ataRows = atas.slice(0, 8).map((item) => `
-    <tr><td>${escapeHtml(item.data_reuniao ? formatDate(item.data_reuniao) : "-")}</td><td><a href="${escapeHtml(item.url_item)}">${escapeHtml(item.titulo)}</a></td><td>${escapeHtml(item.tipo)}</td></tr>
-  `).join("");
   return `
-    <h3>Decisões do período</h3>
+    <h3>Decisões do mês</h3>
     ${renderDeliberacoes(delibs)}
-    <h3>Atas, pautas e atos monitorados</h3>
-    <table><thead><tr><th>Data</th><th>Documento</th><th>Tipo</th></tr></thead><tbody>${ataRows || `<tr><td colspan="3" class="muted">Sem atas ou pautas monitoradas no período.</td></tr>`}</tbody></table>
+    ${renderAtasPassadas(delibs, items)}
+  `;
+}
+
+function renderAtasPassadas(delibs: Deliberacao[], items: MonitoramentoItem[]) {
+  const ataDelibs = delibs.filter((d) => d.tipo_documento === "ata");
+  const ataItems = items.filter((item) => item.tipo === "ata" || item.tipo === "pauta" || item.tipo === "deliberacao");
+  const delibRows = ataDelibs.slice(0, 8).map((d) => `
+    <tr><td>${escapeHtml(d.data_reuniao ? formatDate(d.data_reuniao) : "-")}</td><td>${escapeHtml(d.numero_deliberacao ?? d.assunto ?? d.processo ?? "Ata")}</td><td>deliberação</td></tr>
+  `).join("");
+  const itemRows = ataItems.slice(0, 8).map((item) => `
+    <tr><td>${escapeHtml(item.data_reuniao ? formatDate(item.data_reuniao) : "-")}</td><td><a href="${escapeHtml(item.url_item)}">${escapeHtml(item.titulo)}</a></td><td>${escapeHtml(item.tipo)} (monitorado)</td></tr>
+  `).join("");
+  const body = `${delibRows}${itemRows}`;
+  return `
+    <h3>Atas passadas</h3>
+    <table><thead><tr><th>Data</th><th>Documento</th><th>Origem</th></tr></thead><tbody>${body || `<tr><td colspan="3" class="muted">Sem atas no período.</td></tr>`}</tbody></table>
   `;
 }
 
@@ -419,12 +680,146 @@ function renderNoticias(items: MonitoramentoItem[]) {
   return `<table><thead><tr><th>Data</th><th>Notícia</th><th>Tipo</th></tr></thead><tbody>${rows || `<tr><td colspan="3" class="muted">Sem notícias correlatas no período.</td></tr>`}</tbody></table>`;
 }
 
-function renderMinisterios(associado: Associado) {
-  const rows = associado.ministerios.map((ministerio, index) => {
-    const url = associado.ministerio_urls[index];
-    return `<li>${escapeHtml(ministerio)}${url ? ` - <a href="${escapeHtml(url)}">${escapeHtml(url)}</a>` : ""}</li>`;
-  }).join("");
-  return `<h3>Ministérios correlatos</h3><ul>${rows || "<li class=\"muted\">Nenhum ministério correlato cadastrado.</li>"}</ul>`;
+// Ministério federal correlato por agência reguladora (para o mapeamento do boletim).
+const AGENCIA_PARA_MINISTERIO: Record<string, string> = {
+  ANTT: "Ministério dos Transportes",
+  ANTAQ: "Ministério dos Transportes",
+  ARTESP: "Ministério dos Transportes",
+  DNIT: "Ministério dos Transportes",
+  ANM: "Ministério de Minas e Energia",
+  ANEEL: "Ministério de Minas e Energia",
+  ANP: "Ministério de Minas e Energia",
+};
+
+const SETOR_PARA_MINISTERIO: Record<string, string> = {
+  "Metroviário": "Ministério dos Transportes",
+  "Transportes": "Ministério dos Transportes",
+  "Mineração": "Ministério de Minas e Energia",
+  "Energia": "Ministério de Minas e Energia",
+};
+
+function resolveMinisteriosCorrelatos(associado: Associado): Array<{ ministerio: string; agencias: string[] }> {
+  const map = new Map<string, Set<string>>();
+  for (const sigla of associado.agencia_siglas) {
+    const ministerio = AGENCIA_PARA_MINISTERIO[sigla.toUpperCase()]
+      ?? SETOR_PARA_MINISTERIO[associado.setor]
+      ?? associado.ministerios[0];
+    if (!ministerio) continue;
+    if (!map.has(ministerio)) map.set(ministerio, new Set());
+    map.get(ministerio)!.add(sigla.toUpperCase());
+  }
+  for (const ministerio of associado.ministerios) {
+    if (!map.has(ministerio)) map.set(ministerio, new Set());
+  }
+  return [...map.entries()].map(([ministerio, agencias]) => ({ ministerio, agencias: [...agencias] }));
+}
+
+function renderMinisterioCorrelato(associado: Associado, noticias: MonitoramentoItem[]) {
+  const correlatos = resolveMinisteriosCorrelatos(associado);
+  const linhas = correlatos.map((c) =>
+    `<tr><td>${escapeHtml(c.ministerio)}</td><td>${escapeHtml(c.agencias.join(", ") || "—")}</td></tr>`,
+  ).join("");
+  const atos = noticias
+    .filter((n) => n.tipo === "politica_publica" || n.tipo === "consulta_publica")
+    .slice(0, 6)
+    .map((n) => `<li><a href="${escapeHtml(n.url_item)}">${escapeHtml(n.titulo)}</a> <span class="muted">(${escapeHtml(n.tipo)})</span></li>`)
+    .join("");
+  return `
+    <h3>Mapeamento do Ministério correlato</h3>
+    <table><thead><tr><th>Ministério</th><th>Agência(s) correlata(s)</th></tr></thead><tbody>${linhas || `<tr><td colspan="2" class="muted">Nenhum ministério correlato resolvido.</td></tr>`}</tbody></table>
+    <p class="muted" style="margin-top:8px">Atos e políticas públicas do período no ministério correlato:</p>
+    <ul>${atos || "<li class=\"muted\">Nenhum ato ministerial correlato no período.</li>"}</ul>
+  `;
+}
+
+// ─── Prospecção das principais decisões (determinística; seam para IA) ────────
+
+/**
+ * Ponto único de plug da IA. Hoje retorna a projeção determinística.
+ * TODO IA Claude: quando ANTHROPIC_API_KEY/cliente estiver disponível, gerar a projeção
+ * via Claude a partir do mesmo input e retornar { ...resultado, fonte: "ia" }.
+ */
+function generateProspeccao(input: {
+  associado: Associado;
+  deliberacoes: Deliberacao[];
+  mandatos: Mandato[];
+  listaTriplice: ListaTripliceItem[];
+  noticias: MonitoramentoItem[];
+  periodo_fim: string;
+}): Prospeccao {
+  return projectFutureDecisions(input);
+}
+
+function projectFutureDecisions(input: {
+  associado: Associado;
+  deliberacoes: Deliberacao[];
+  mandatos: Mandato[];
+  listaTriplice: ListaTripliceItem[];
+  noticias: MonitoramentoItem[];
+  periodo_fim: string;
+}): Prospeccao {
+  const delibs = input.deliberacoes;
+  const total = delibs.length;
+  const deferidos = delibs.filter((d) => d.resultado === "Deferido" || d.resultado === "Aprovado").length;
+  const restritivos = delibs.filter((d) => d.resultado === "Indeferido" || d.resultado === "Retirado de Pauta").length;
+  const tendencia = deferidos >= restritivos
+    ? "tende ao deferimento quando há aderência documental"
+    : "tende a maior cautela e a exigências adicionais";
+
+  const freq = new Map<string, number>();
+  for (const d of delibs) {
+    if (d.microtema) freq.set(d.microtema, (freq.get(d.microtema) ?? 0) + 1);
+  }
+  const topMicrotemas = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3);
+
+  const itens: ProspeccaoItem[] = topMicrotemas.map(([microtema, count]) => ({
+    tema: microtema,
+    probabilidade: count >= 3 ? "alta" : count === 2 ? "média" : "baixa",
+    racional: `${count} decisão(ões) sobre "${microtema}" no período; pauta recorrente que ${tendencia}.`,
+    horizonte: "próximas reuniões deliberativas",
+  }));
+
+  // Sinal de mudança no colegiado: mandatos expirando + lista tríplice em andamento.
+  const fim = new Date(input.periodo_fim).getTime();
+  const janela = 120 * 86_400_000;
+  const expirando = input.mandatos.filter((m) => {
+    if (!m.data_fim) return false;
+    const t = new Date(m.data_fim).getTime();
+    return t >= fim && t - fim <= janela;
+  });
+  const listaAtiva = input.listaTriplice.filter((l) => !["nomeado", "arquivado"].includes(String(l.etapa)));
+  if (expirando.length || listaAtiva.length) {
+    itens.push({
+      tema: "Composição do colegiado",
+      probabilidade: expirando.length ? "alta" : "média",
+      racional: `${expirando.length} mandato(s) próximos do fim e ${listaAtiva.length} indicação(ões) de lista tríplice em andamento podem alterar o colegiado e o padrão de votos.`,
+      horizonte: "próximos meses",
+    });
+  }
+
+  const confianca = Math.min(0.9, Math.max(0.3, total * 0.07 + input.noticias.length * 0.03));
+  const resumo = total
+    ? `Com base em ${total} decisões e ${input.noticias.length} sinais de política pública, o cenário ${tendencia}.`
+    : "Dados insuficientes no período para uma projeção robusta — priorizar a coleta antes de circular.";
+
+  return {
+    itens: itens.slice(0, 5),
+    confianca: Math.round(confianca * 100) / 100,
+    fonte: "deterministico",
+    resumo,
+  };
+}
+
+function renderProspeccao(prospeccao: Prospeccao) {
+  const rows = prospeccao.itens.map((item) => `
+    <tr><td>${escapeHtml(item.tema)}</td><td><span class="pill">${escapeHtml(item.probabilidade)}</span></td><td>${escapeHtml(item.racional)}</td><td class="muted">${escapeHtml(item.horizonte)}</td></tr>
+  `).join("");
+  const metodo = prospeccao.fonte === "ia" ? "projeção assistida por IA" : "projeção determinística (heurística sobre o histórico)";
+  return `
+    <p>${escapeHtml(prospeccao.resumo)}</p>
+    <table><thead><tr><th>Tema</th><th>Probabilidade</th><th>Racional</th><th>Horizonte</th></tr></thead><tbody>${rows || `<tr><td colspan="4" class="muted">Sem base suficiente para projetar decisões no período.</td></tr>`}</tbody></table>
+    <p class="muted" style="margin-top:8px">Método: ${metodo}. Não é previsão determinística; revisar antes de circular.</p>
+  `;
 }
 
 function buildVpParagraphs(input: BuildAssociadoDocumentInput & { deliberacoes: Deliberacao[]; noticias: MonitoramentoItem[] }) {

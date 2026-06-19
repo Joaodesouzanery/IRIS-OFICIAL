@@ -5,7 +5,7 @@ const repoRoot = dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ["pdf-parse"],
+  serverExternalPackages: ["pdf-parse", "@sparticuz/chromium", "puppeteer-core"],
   outputFileTracingRoot: repoRoot,
 
   async headers() {

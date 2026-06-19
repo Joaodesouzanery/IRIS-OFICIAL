@@ -322,8 +322,8 @@ export default function BoletimPage() {
       {/* Header */}
       <div className="flex items-start justify-between flex-wrap gap-3">
         <div>
-          <h1 className="text-xl font-semibold text-text-primary">Boletim Regulatório</h1>
-          <p className="text-sm text-text-muted mt-1">Crie e agende boletins com os dados que desejar</p>
+          <h1 className="text-xl font-semibold text-text-primary">Newsletter Regulatória</h1>
+          <p className="text-sm text-text-muted mt-1">Crie e agende a newsletter com os dados que desejar</p>
         </div>
         <div className="flex items-center gap-2 flex-wrap">
           <select className="input text-sm h-9 py-0" value={agenciaId} onChange={(e) => setAgenciaId(e.target.value)}>

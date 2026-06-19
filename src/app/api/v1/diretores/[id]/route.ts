@@ -10,7 +10,8 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretorProfile } from "@/lib/server/analytics-engine";
 import type { DiretorProfile } from "@/types";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { sanitizeNomeVariantes, VALID_SITUACAO } from "@/lib/server/diretores-admin";
 
 const SAFE_ID_RE = /^[a-zA-Z0-9_-]+$/;
 
@@ -159,4 +160,66 @@ export async function GET(
   };
 
   return NextResponse.json(profile);
+}
+
+/**
+ * PATCH /api/v1/diretores/[id] — atualiza dados editáveis do diretor (admin).
+ * Campos suportados: nome, cargo, nome_variantes, situacao, ativo, needs_review.
+ */
+export async function PATCH(req: NextRequest, { params }: any) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
+  const { id } = params;
+  if (!id || !SAFE_ID_RE.test(id)) {
+    return NextResponse.json({ error: "ID inválido" }, { status: 400 });
+  }
+
+  const body = await req.json().catch(() => ({})) as Record<string, unknown>;
+  const patch: Record<string, unknown> = { updated_at: new Date().toISOString() };
+  if (typeof body.nome === "string" && body.nome.trim()) patch.nome = body.nome.trim().slice(0, 200);
+  if ("cargo" in body) patch.cargo = body.cargo ? String(body.cargo).slice(0, 100) : null;
+  if ("nome_variantes" in body) patch.nome_variantes = sanitizeNomeVariantes(body.nome_variantes);
+  if (typeof body.situacao === "string" && VALID_SITUACAO.has(body.situacao)) patch.situacao = body.situacao;
+  if ("ativo" in body) patch.ativo = Boolean(body.ativo);
+  if ("needs_review" in body) patch.needs_review = Boolean(body.needs_review);
+
+  const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+  const db = createSupabaseServerClient();
+  const { data, error } = await db
+    .from("diretores")
+    .update(patch)
+    .eq("id", id)
+    .select("*")
+    .single();
+
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+  return NextResponse.json(data);
+}
+
+/**
+ * DELETE /api/v1/diretores/[id] — remove o diretor (admin).
+ * Falha se houver votos vinculados (FK); nesse caso prefira desativar (ativo=false).
+ */
+export async function DELETE(req: NextRequest, { params }: any) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
+  const { id } = params;
+  if (!id || !SAFE_ID_RE.test(id)) {
+    return NextResponse.json({ error: "ID inválido" }, { status: 400 });
+  }
+
+  const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+  const db = createSupabaseServerClient();
+  const { error } = await db.from("diretores").delete().eq("id", id);
+  if (error) {
+    return NextResponse.json(
+      { error: `Não foi possível excluir (há votos vinculados?). Considere desativar. Detalhe: ${error.message}` },
+      { status: 409 },
+    );
+  }
+  return NextResponse.json({ deleted: true, id });
 }

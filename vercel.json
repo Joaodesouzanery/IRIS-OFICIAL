@@ -14,6 +14,9 @@
     "src/app/api/v1/upload/process/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/upload/auto-confirm/route.ts": {
+      "maxDuration": 120
+    },
     "src/app/api/v1/upload/documentos/route.ts": {
       "maxDuration": 120
     },
@@ -26,10 +29,28 @@
     "src/app/api/v1/monitoramento/check/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/deliberacoes/cron/route.ts": {
+      "maxDuration": 300
+    },
     "src/app/api/v1/noticias/coletar/route.ts": {
       "maxDuration": 120
     },
     "src/app/api/v1/noticias/cron/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/qualidade-regulatoria/coletas/run/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/qualidade-regulatoria/cron/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/v1/associados/documentos/[id]/pdf/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/associados/documentos/[id]/docx/route.ts": {
+      "maxDuration": 60
+    },
+    "src/app/api/v1/associados/documentos/pdf/route.ts": {
       "maxDuration": 120
     },
     "src/app/api/v1/antt/2026/collect/route.ts": {
@@ -38,24 +59,28 @@
   },
   "crons": [
     {
-      "path": "/api/v1/monitoramento/check",
+      "path": "/api/v1/deliberacoes/cron",
       "schedule": "0 10 * * *"
-    },
-    {
-      "path": "/api/v1/noticias/cron",
-      "schedule": "0 11 * * *"
     },
     {
       "path": "/api/v1/antt/2026/collect",
       "schedule": "30 10 * * *"
     },
     {
-      "path": "/api/v1/upload/process",
-      "schedule": "0 12 * * *"
+      "path": "/api/v1/noticias/cron?tier=expanded&scope=all&limit=8",
+      "schedule": "0 11 * * *"
+    },
+    {
+      "path": "/api/v1/noticias/cron?tier=core&scope=all&limit=8",
+      "schedule": "0 * * * *"
     },
     {
       "path": "/api/v1/mandatos/recalcular",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/v1/qualidade-regulatoria/cron",
+      "schedule": "0 9 * * 1"
     }
   ]
 }

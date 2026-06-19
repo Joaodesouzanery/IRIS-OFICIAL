@@ -128,6 +128,58 @@ export async function loadQualidadeDashboardData(year: number): Promise<Qualidad
   }
 }
 
+/**
+ * Recalcula os scores ponderados a partir das avaliações do ano e PERSISTE em
+ * qualidade_regulatoria_diagnosticos (UPSERT). Reusa os mesmos builders do dashboard
+ * (buildDiagnosticsFromRows/calculateWeightedScore/rankDiagnostics) para garantir que o
+ * dado persistido bata com o que o painel exibe on-the-fly.
+ *
+ * Deve ser chamado após qualquer lote de validações (POST /avaliacoes) e no cron semanal.
+ */
+export async function recomputeAndPersistDiagnostics(year: number): Promise<{ updated: number } | { error: string }> {
+  try {
+    const db = createSupabaseServerClient();
+    const [avaliacoesResult, evidenciasResult] = await Promise.all([
+      db.from("qualidade_regulatoria_avaliacoes").select("id, agencia_sigla, ano, criterio_id, nota, nivel, observacao, fonte_avaliacao, status_revisao, evidencias_count, updated_at").eq("ano", year),
+      db.from("qualidade_regulatoria_evidencias").select("id, avaliacao_id, agencia_sigla, criterio_id, titulo, url, fonte, trecho_publico, data_referencia, status_revisao, created_at").limit(500),
+    ]);
+
+    if (avaliacoesResult.error || !avaliacoesResult.data?.length) {
+      return { error: avaliacoesResult.error?.message ?? "Sem avaliações registradas para o ano." };
+    }
+
+    const fallbackDiagnostics = buildInitialDiagnostics(year);
+    const evidencias = evidenciasResult.error ? [] : (evidenciasResult.data as EvidenceRow[]);
+    const diagnostics = buildDiagnosticsFromRows(
+      year,
+      avaliacoesResult.data as AvaliacaoRow[],
+      [], // recalcula do zero, ignorando diagnósticos persistidos anteriores
+      evidencias,
+      fallbackDiagnostics,
+    );
+
+    const rows = diagnostics.map((diag) => ({
+      agencia_sigla: diag.agencia_sigla,
+      ano: year,
+      score_geral: diag.score_geral,
+      posicao_ranking: diag.posicao_ranking,
+      status_revisao: diag.status_revisao,
+      destaques_positivos: diag.destaques_positivos,
+      areas_melhoria: diag.areas_melhoria,
+      updated_at: new Date().toISOString(),
+    }));
+
+    const { error } = await db
+      .from("qualidade_regulatoria_diagnosticos")
+      .upsert(rows, { onConflict: "agencia_sigla,ano" });
+
+    if (error) return { error: error.message };
+    return { updated: rows.length };
+  } catch (error) {
+    return { error: error instanceof Error ? error.message : "Erro ao recalcular diagnósticos" };
+  }
+}
+
 function buildDiagnosticsFromRows(
   year: number,
   rows: AvaliacaoRow[],

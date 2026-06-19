@@ -13,7 +13,7 @@ import type {
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { REGULATORIO_TABS } from "@/lib/module-tabs";
 import { cn } from "@/lib/utils";
-import { AlertTriangle, Calendar, Download, FileText, Loader2, Plus, Printer, Sparkles, Trash2, X } from "lucide-react";
+import { AlertTriangle, Calendar, Download, FileText, FileType, Loader2, Pencil, Plus, Printer, Save, Sparkles, Trash2, X } from "lucide-react";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 export default function DocumentosAssociadosPage() {
@@ -35,8 +35,19 @@ export default function DocumentosAssociadosPage() {
   const [scheduleDay, setScheduleDay] = useState(5);
   const [scheduleError, setScheduleError] = useState("");
   const [vpParagraphs, setVpParagraphs] = useState(["", "", ""]);
+  const [vpFotoUrl, setVpFotoUrl] = useState("");
+  const [vpMinibio, setVpMinibio] = useState("");
   const [listaTripliceManual, setListaTripliceManual] = useState("");
   const [observacoesCuradoria, setObservacoesCuradoria] = useState("");
+  const [sumarioExecutivo, setSumarioExecutivo] = useState("");
+  const [perfisInfluencias, setPerfisInfluencias] = useState("");
+  const [correlacaoForcas, setCorrelacaoForcas] = useState("");
+  const [agendasText, setAgendasText] = useState("");
+  const [conclusao, setConclusao] = useState("");
+  const [monitoramento, setMonitoramento] = useState("");
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [statusRevisao, setStatusRevisao] = useState("rascunho");
+  const [savedDocId, setSavedDocId] = useState<string | null>(null);
 
   const { data: associados = [] } = useQuery({
     queryKey: ["associados"],
@@ -61,6 +72,22 @@ export default function DocumentosAssociadosPage() {
   });
   const schedules = schedulesData?.schedules ?? [];
 
+  function curadoriaPayload() {
+    return {
+      vp_paragrafos: vpParagraphs,
+      vp_foto_url: vpFotoUrl || null,
+      vp_minibio: vpMinibio || null,
+      lista_triplice_manual: parseListaTripliceManual(listaTripliceManual),
+      observacoes_curadoria: observacoesCuradoria,
+      sumario_executivo: sumarioExecutivo || null,
+      perfis_influencias: perfisInfluencias || null,
+      correlacao_forcas: correlacaoForcas || null,
+      agendas: agendasText.split(/\n+/).map((a) => a.trim()).filter(Boolean),
+      conclusao: conclusao || null,
+      monitoramento: monitoramento || null,
+    };
+  }
+
   const generateMutation = useMutation({
     mutationFn: () => api.post<DocumentoAssociadoPreview>("/associados/documentos", {
       associado_id: selectedAssociado?.id,
@@ -68,14 +95,74 @@ export default function DocumentosAssociadosPage() {
       periodo_inicio: periodoInicio,
       periodo_fim: periodoFim,
       save: !demoEnabled,
-      vp_paragrafos: vpParagraphs,
-      lista_triplice_manual: parseListaTripliceManual(listaTripliceManual),
-      observacoes_curadoria: observacoesCuradoria,
+      ...curadoriaPayload(),
     }),
     onSuccess: (data) => {
       setPreview(data);
+      setSavedDocId((data as { documento_id?: string }).documento_id ?? null);
       refetchHistorico();
     },
+  });
+
+  const updateMutation = useMutation({
+    mutationFn: () => api.patch<DocumentoAssociadoPreview>(`/associados/documentos/${editingId}`, {
+      status_revisao: statusRevisao,
+      ...curadoriaPayload(),
+    }),
+    onSuccess: (data) => {
+      setPreview(data);
+      setSavedDocId(editingId);
+      refetchHistorico();
+    },
+  });
+
+  function resetCuradoria() {
+    setEditingId(null);
+    setStatusRevisao("rascunho");
+    setVpParagraphs(["", "", ""]);
+    setVpFotoUrl("");
+    setVpMinibio("");
+    setListaTripliceManual("");
+    setObservacoesCuradoria("");
+    setSumarioExecutivo("");
+    setPerfisInfluencias("");
+    setCorrelacaoForcas("");
+    setAgendasText("");
+    setConclusao("");
+    setMonitoramento("");
+  }
+
+  function startEditing(doc: DocumentoAssociado) {
+    const inputs = (doc.qualidade as { inputs_manuais?: Record<string, any> } | undefined)?.inputs_manuais ?? {};
+    setEditingId(doc.id);
+    setStatusRevisao(doc.status_revisao ?? "rascunho");
+    setTipo(doc.tipo);
+    setPeriodoInicio(doc.periodo_inicio.slice(0, 10));
+    setPeriodoFim(doc.periodo_fim.slice(0, 10));
+    const paras = Array.isArray(inputs.vp_paragrafos) ? inputs.vp_paragrafos : [];
+    setVpParagraphs([paras[0] ?? "", paras[1] ?? "", paras[2] ?? ""]);
+    setVpFotoUrl(inputs.vp_foto_url ?? "");
+    setVpMinibio(inputs.vp_minibio ?? "");
+    setListaTripliceManual(
+      Array.isArray(inputs.lista_triplice_manual)
+        ? inputs.lista_triplice_manual.map((l: any) => [l.nome_candidato, l.cargo, l.fonte_url].filter(Boolean).join("; ")).join("\n")
+        : "",
+    );
+    setObservacoesCuradoria(inputs.observacoes_curadoria ?? "");
+    setSumarioExecutivo(inputs.sumario_executivo ?? "");
+    setPerfisInfluencias(inputs.perfis_influencias ?? "");
+    setCorrelacaoForcas(inputs.correlacao_forcas ?? "");
+    setAgendasText(Array.isArray(inputs.agendas) ? inputs.agendas.join("\n") : "");
+    setConclusao(inputs.conclusao ?? "");
+    setMonitoramento(inputs.monitoramento ?? "");
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  const saveVpMutation = useMutation({
+    mutationFn: () => api.patch(`/associados/${selectedAssociado?.id}`, {
+      vp_foto_url: vpFotoUrl || null,
+      vp_minibio: vpMinibio || null,
+    }),
   });
 
   const createScheduleMutation = useMutation({
@@ -126,6 +213,32 @@ export default function DocumentosAssociadosPage() {
     setTimeout(() => w.print(), 400);
   }
 
+  const [pdfLoading, setPdfLoading] = useState(false);
+  async function downloadPdf() {
+    if (!preview) return;
+    // Em DEMO o endpoint de PDF nativo é bloqueado: cai para a impressão do navegador.
+    if (demoEnabled) {
+      printPdf();
+      return;
+    }
+    setPdfLoading(true);
+    try {
+      const slug = preview.titulo.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      const blob = await api.postBlob("/associados/documentos/pdf", { html: preview.html, filename: slug });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${slug}.pdf`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      // Falha no headless (cold start/egress): impressão do navegador como alternativa.
+      printPdf();
+    } finally {
+      setPdfLoading(false);
+    }
+  }
+
   function addScheduleEmail() {
     const email = scheduleEmailInput.trim();
     if (!/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(email)) {
@@ -157,17 +270,43 @@ export default function DocumentosAssociadosPage() {
         <div>
           <h1 className="text-xl font-semibold text-text-primary">Relatórios do Observatório</h1>
           <p className="text-sm text-text-muted mt-1">
-            Gere o Relatório do Associado trimestral e o Relatório Mensal regulatório em HTML e PDF pela impressão do navegador.
+            Gere o Relatório do Associado (Trimestral) e o Boletim Mensal (Deliberações) em HTML e PDF nativo.
           </p>
         </div>
-        <button
-          onClick={() => generateMutation.mutate()}
-          disabled={!selectedAssociado || generateMutation.isPending}
-          className="btn-primary"
-        >
-          {generateMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
-          {demoEnabled ? "Gerar preview" : "Gerar relatório"}
-        </button>
+        <div className="flex items-center gap-2 flex-wrap">
+          {editingId && (
+            <>
+              <select className="input w-36 text-xs h-9 py-0" value={statusRevisao} onChange={(e) => setStatusRevisao(e.target.value)}>
+                <option value="rascunho">Rascunho</option>
+                <option value="revisado">Revisado</option>
+                <option value="aprovado">Aprovado</option>
+                <option value="arquivado">Arquivado</option>
+              </select>
+              <button onClick={resetCuradoria} className="btn-secondary text-xs" title="Cancelar edição e voltar a gerar novo">
+                <X className="w-3.5 h-3.5" /> Cancelar edição
+              </button>
+            </>
+          )}
+          {editingId ? (
+            <button
+              onClick={() => updateMutation.mutate()}
+              disabled={demoEnabled || updateMutation.isPending}
+              className="btn-primary"
+            >
+              {updateMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
+              Salvar rascunho (nova versão)
+            </button>
+          ) : (
+            <button
+              onClick={() => generateMutation.mutate()}
+              disabled={!selectedAssociado || generateMutation.isPending}
+              className="btn-primary"
+            >
+              {generateMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
+              {demoEnabled ? "Gerar preview" : "Gerar relatório"}
+            </button>
+          )}
+        </div>
       </div>
 
       {demoEnabled && (
@@ -191,15 +330,15 @@ export default function DocumentosAssociadosPage() {
             <div className="grid grid-cols-2 gap-2">
               <button
                 onClick={() => changeTipo("boletim_mensal")}
-                className={cn("btn-secondary justify-center", tipo === "boletim_mensal" && "border-brand text-brand")}
+                className={cn("btn-secondary justify-center text-xs", tipo === "boletim_mensal" && "border-brand text-brand")}
               >
-                Mensal regulatorio
+                Boletim Mensal (Deliberações)
               </button>
               <button
                 onClick={() => changeTipo("relatorio_trimestral")}
-                className={cn("btn-secondary justify-center", tipo === "relatorio_trimestral" && "border-brand text-brand")}
+                className={cn("btn-secondary justify-center text-xs", tipo === "relatorio_trimestral" && "border-brand text-brand")}
               >
-                Associado trimestral
+                Relatório Trimestral
               </button>
             </div>
             <div className="grid grid-cols-2 gap-2">
@@ -239,6 +378,26 @@ export default function DocumentosAssociadosPage() {
                 placeholder={`Visão VP - parágrafo ${index + 1}`}
               />
             ))}
+            <input
+              className="input"
+              value={vpFotoUrl}
+              onChange={(event) => setVpFotoUrl(event.target.value)}
+              placeholder="Foto do VP (URL https://...)"
+            />
+            <textarea
+              className="input min-h-20"
+              value={vpMinibio}
+              onChange={(event) => setVpMinibio(event.target.value)}
+              placeholder="Mini bio do VP (usada quando não houver os 3 parágrafos)"
+            />
+            <button
+              type="button"
+              onClick={() => saveVpMutation.mutate()}
+              disabled={demoEnabled || !selectedAssociado || saveVpMutation.isPending}
+              className="btn-secondary text-xs w-full justify-center"
+            >
+              {saveVpMutation.isPending ? "Salvando..." : saveVpMutation.isSuccess ? "Foto/mini bio salvas no cadastro ✓" : "Salvar foto/mini bio no cadastro do associado"}
+            </button>
             <textarea
               className="input min-h-24"
               value={listaTripliceManual}
@@ -251,6 +410,12 @@ export default function DocumentosAssociadosPage() {
               onChange={(event) => setObservacoesCuradoria(event.target.value)}
               placeholder="Observações de curadoria para o relatório"
             />
+            <textarea className="input min-h-24" value={sumarioExecutivo} onChange={(e) => setSumarioExecutivo(e.target.value)} placeholder="Sumário executivo (parágrafos separados por linha em branco)" />
+            <textarea className="input min-h-24" value={perfisInfluencias} onChange={(e) => setPerfisInfluencias(e.target.value)} placeholder="Mapeamento de perfis e influências (trimestral)" />
+            <textarea className="input min-h-20" value={correlacaoForcas} onChange={(e) => setCorrelacaoForcas(e.target.value)} placeholder="Correlação de forças interna (trimestral)" />
+            <textarea className="input min-h-20" value={agendasText} onChange={(e) => setAgendasText(e.target.value)} placeholder="Agendas regulatórias: uma por linha — Tema; Prioridade (Alta/Média/Baixa)" />
+            <textarea className="input min-h-20" value={conclusao} onChange={(e) => setConclusao(e.target.value)} placeholder="Conclusão" />
+            <textarea className="input min-h-20" value={monitoramento} onChange={(e) => setMonitoramento(e.target.value)} placeholder="Monitoramento regulatório e jurídico (opcional)" />
           </div>
 
           <div className="card space-y-3">
@@ -259,15 +424,29 @@ export default function DocumentosAssociadosPage() {
               <p className="text-sm text-text-muted">Nenhum relatório salvo ainda.</p>
             ) : (
               historico.map((doc) => (
-                <div key={doc.id} className="border border-border rounded-card p-3">
+                <div key={doc.id} className={cn("border rounded-card p-3", editingId === doc.id ? "border-brand" : "border-border")}>
                   <p className="text-sm text-text-primary font-medium">{doc.titulo}</p>
                   <p className="text-xs text-text-muted mt-1">
-                    {doc.tipo} · {new Date(doc.created_at).toLocaleDateString("pt-BR")} · {doc.status_revisao}
+                    {doc.tipo} · {new Date(doc.created_at).toLocaleDateString("pt-BR")} · {doc.status_revisao}{doc.versao ? ` · v${doc.versao}` : ""}
                   </p>
-                  <a className="btn-secondary text-xs mt-2" href={`/api/v1/associados/documentos/${doc.id}/html`}>
-                    <Download className="w-3.5 h-3.5" />
-                    HTML salvo
-                  </a>
+                  <div className="flex items-center flex-wrap gap-2 mt-2">
+                    <button className="btn-secondary text-xs" disabled={demoEnabled} onClick={() => startEditing(doc)}>
+                      <Pencil className="w-3.5 h-3.5" />
+                      Editar rascunho
+                    </button>
+                    <a className="btn-secondary text-xs" href={`/api/v1/associados/documentos/${doc.id}/html`}>
+                      <Download className="w-3.5 h-3.5" /> HTML
+                    </a>
+                    <a className="btn-secondary text-xs" href={`/api/v1/associados/documentos/${doc.id}/pdf`}>
+                      <Download className="w-3.5 h-3.5" /> PDF
+                    </a>
+                    <a className="btn-secondary text-xs" href={`/api/v1/associados/documentos/${doc.id}/word`}>
+                      <FileText className="w-3.5 h-3.5" /> Word
+                    </a>
+                    <a className="btn-secondary text-xs" href={`/api/v1/associados/documentos/${doc.id}/docx`}>
+                      <FileType className="w-3.5 h-3.5" /> DOCX
+                    </a>
+                  </div>
                 </div>
               ))
             )}
@@ -362,10 +541,28 @@ export default function DocumentosAssociadosPage() {
                 <Download className="w-3.5 h-3.5" />
                 HTML
               </button>
-              <button onClick={printPdf} disabled={!preview} className="btn-primary text-xs">
+              <button onClick={printPdf} disabled={!preview} className="btn-secondary text-xs" title="Imprimir pelo navegador">
                 <Printer className="w-3.5 h-3.5" />
+                Imprimir
+              </button>
+              <button onClick={downloadPdf} disabled={!preview || pdfLoading} className="btn-secondary text-xs">
+                {pdfLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Download className="w-3.5 h-3.5" />}
                 PDF
               </button>
+              {savedDocId ? (
+                <a className="btn-secondary text-xs" href={`/api/v1/associados/documentos/${savedDocId}/word`}>
+                  <FileText className="w-3.5 h-3.5" /> Word
+                </a>
+              ) : (
+                <button className="btn-secondary text-xs" disabled title="Salve o relatório para exportar Word"><FileText className="w-3.5 h-3.5" /> Word</button>
+              )}
+              {savedDocId ? (
+                <a className="btn-primary text-xs" href={`/api/v1/associados/documentos/${savedDocId}/docx`}>
+                  <FileType className="w-3.5 h-3.5" /> DOCX
+                </a>
+              ) : (
+                <button className="btn-primary text-xs" disabled title="Salve o relatório para exportar DOCX"><FileType className="w-3.5 h-3.5" /> DOCX</button>
+              )}
             </div>
           </div>
           {preview ? (

@@ -1,6 +1,8 @@
 import crypto from "crypto";
 import type { MonitoramentoTipoItem } from "@/types";
 import { fetchAntt2026MonitoringItems } from "@/lib/server/antt-2026-collector";
+import { FetchFailureError, resilientFetchText } from "@/lib/server/resilient-fetch";
+import { tryRenderHtmlFallback } from "@/lib/server/headless";
 
 export interface MonitoringSiteInput {
   id: string;
@@ -45,30 +47,54 @@ export async function fetchMonitoringSite(
     };
   }
 
-  const res = await fetch(site.url, {
-    headers: {
-      "User-Agent": "IRIS-Regulacao-Monitor/1.0",
-      Accept: "text/html,application/xhtml+xml",
-    },
-    next: { revalidate: 0 },
-  });
-
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status} ao consultar site monitorado`);
+  let html: string;
+  try {
+    html = (await resilientFetchText(site.url, {
+      retries: 2,
+      label: "monitoring",
+      headers: {
+        "User-Agent": "IRIS-Regulacao-Monitor/1.0",
+        Accept: "text/html,application/xhtml+xml",
+      },
+    })).text;
+  } catch (error) {
+    // Falha de rede (403/timeout): tenta renderização headless antes de desistir.
+    if (error instanceof FetchFailureError && error.kind === "falha_rede") {
+      const rendered = await tryRenderHtmlFallback(site.url, "monitoring");
+      if (!rendered) throw error;
+      html = rendered;
+    } else {
+      throw error;
+    }
   }
 
-  const html = await res.text();
-  const contentHash = sha256(html);
-  const items = site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
-    ? parseGovBrNewsHtml(html, site.url)
-    : parseMonitoringHtml(html, site.url);
-  const hasAnchors = /<a\b/i.test(html);
+  const parse = (source: string) =>
+    site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
+      ? parseGovBrNewsHtml(source, site.url)
+      : parseMonitoringHtml(source, site.url);
+
+  let items = parse(html);
+  let contentHash = sha256(html);
+  const looksHeadless = (source: string) =>
+    !/<a\b/i.test(source) || /javascript is disabled|requires javascript|__next|webpackJsonp/i.test(source);
+
+  // Página parece exigir JS (sem itens e sem âncoras úteis): tenta headless e reprocessa.
+  if (items.length === 0 && looksHeadless(html)) {
+    const rendered = await tryRenderHtmlFallback(site.url, "monitoring");
+    if (rendered) {
+      const renderedItems = parse(rendered);
+      if (renderedItems.length > 0) {
+        return { contentHash: sha256(rendered), needsHeadless: false, items: renderedItems };
+      }
+      html = rendered;
+      items = renderedItems;
+      contentHash = sha256(rendered);
+    }
+  }
 
   return {
     contentHash,
-    needsHeadless:
-      items.length === 0 &&
-      (!hasAnchors || /javascript is disabled|requires javascript|__next|webpackJsonp/i.test(html)),
+    needsHeadless: items.length === 0 && looksHeadless(html),
     items,
   };
 }

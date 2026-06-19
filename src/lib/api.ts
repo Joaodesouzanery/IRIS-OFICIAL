@@ -55,6 +55,24 @@ export const api = {
 
   delete: <T>(path: string) => request<T>(path, { method: "DELETE" }),
 
+  postBlob: async (path: string, body: unknown): Promise<Blob> => {
+    const url = buildUrl(path);
+    const headers = new Headers({ "Content-Type": "application/json" });
+    await attachRuntimeHeaders(headers);
+
+    const res = await fetch(url, {
+      method: "POST",
+      headers,
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) {
+      const errorBody = await res.json().catch(() => ({}));
+      const msg = errorBody.error ?? errorBody.detail ?? errorBody.message ?? res.statusText;
+      throw new ApiError(res.status, msg);
+    }
+    return res.blob();
+  },
+
   upload: async <T>(path: string, formData: FormData): Promise<T> => {
     const url = buildUrl(path);
     const headers = new Headers();

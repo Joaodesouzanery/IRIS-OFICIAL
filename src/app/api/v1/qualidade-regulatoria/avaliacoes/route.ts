@@ -9,6 +9,7 @@ import {
   scoreToLevel,
 } from "@/lib/server/qualidade-regulatoria";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { recomputeAndPersistDiagnostics } from "@/lib/server/qualidade-regulatoria-service";
 
 export const dynamic = "force-dynamic";
 
@@ -102,5 +103,8 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  return NextResponse.json({ avaliacao: data });
+  // Persiste o recálculo de scores no diagnóstico (antes só acontecia on-the-fly no dashboard).
+  const recompute = await recomputeAndPersistDiagnostics(Number(body.ano ?? new Date().getFullYear()));
+
+  return NextResponse.json({ avaliacao: data, diagnosticos: recompute });
 }

@@ -86,8 +86,8 @@ body{margin:0;color:#fff;font-family:'Inter',sans-serif;}
 .hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:#fff;}
 .hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:rgba(255,255,255,0.56);max-width:510px;}
 .hero-subtitle strong{color:rgba(255,255,255,0.78);font-weight:500;}
-.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.hero-logo{width:360px;height:360px;object-fit:cover;object-position:center;display:block;transform:scale(2.05);}
+.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:visible;}
+.hero-logo{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;object-position:center;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:10px;overflow:hidden;}
 .main-img{width:100%;height:188px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${NEWSLETTER_COLORS.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.18);font-weight:500;overflow:hidden;margin:1px 0;}
@@ -125,7 +125,8 @@ function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src
 }
 
 function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: string, input: NewsletterDocumentInput) {
-  const heroSubtitle = buildNewsletterSubtitle(items, input.assunto);
+  // Subtítulo fixo do cabeçalho (decisão do usuário).
+  const heroSubtitle = "<strong>Regulação em Destaque</strong>";
   return `<section class="newsletter-page">
     <svg class="print-bg" viewBox="0 0 960 1357" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <rect width="960" height="1357" fill="${NEWSLETTER_COLORS.page}"/>
@@ -227,17 +228,20 @@ function renderMinutoHeader(date: string) {
 
 function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string, articleTexts?: Record<string, string>) {
   const title = item?.titulo ?? "Selecione a noticia principal para montar a edicao";
+  // A coluna principal tem altura fixa: limitamos o texto ao que cabe (terminando em frase
+  // completa) para não estourar a coluna e cortar no meio. Com imagem cabe menos texto.
+  const mainMax = item?.imagem_url ? 1700 : 2500;
   const body = newsletterArticleBody(item, {
-    maxLength: NEWSLETTER_ARTICLE_TEXT_LIMITS.main,
-    minLength: item?.imagem_url ? 1500 : 1900,
-  }, newsletterArticleOverride(item, articleTexts, NEWSLETTER_ARTICLE_TEXT_LIMITS.main));
+    maxLength: mainMax,
+    minLength: item?.imagem_url ? 1300 : 1700,
+  }, newsletterArticleOverride(item, articleTexts, mainMax));
   return `
     <div>
       <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
       <h2 class="main-title">${escapeHtml(title)}</h2>
     </div>
     ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
-    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 11 : 13, item?.imagem_url ? 360 : 390)}</div>
+    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 6 : 9, item?.imagem_url ? 340 : 360)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="read-more">Ler fonte oficial &#8599;</a>` : `<a class="read-more">Ler fonte oficial &#8599;</a>`}
   `;
 }
@@ -588,14 +592,6 @@ function formatArticleTag(item: RegulatoryNews | undefined) {
   return `${agency} · ${formatNewsletterDate(parseDate(item.publicado_em ?? item.first_seen_at))}`;
 }
 
-function buildNewsletterSubtitle(items: RegulatoryNews[], assunto: string) {
-  if (items.length === 0) return "<strong>IRIS em destaque:</strong> selecione 3 not&iacute;cias para montar a edi&ccedil;&atilde;o";
-  const agencies = [...new Set(items.map((item) => item.agencia_sigla ?? item.agencia?.sigla).filter(Boolean))];
-  const focus = agencies.length === 1 ? `${agencies[0]} em destaque` : "Regula&ccedil;&atilde;o em destaque";
-  const titles = items.slice(0, 3).map((item) => item.titulo.split(":")[0]).filter(Boolean);
-  const text = titles.length ? titles.join(", ") : assunto;
-  return `<strong>${escapeHtml(focus)}:</strong> ${escapeHtml(clipText(text, 92))}`;
-}
 
 function renderParagraphs(value: string | null | undefined, maxParagraphs: number, maxLength: number) {
   const text = clipText(value || "Sem resumo disponível.", maxParagraphs * maxLength);
@@ -614,6 +610,18 @@ function renderParagraphs(value: string | null | undefined, maxParagraphs: numbe
   }
 
   if (current && paragraphs.length < maxParagraphs) paragraphs.push(current);
+
+  // Garante que o último parágrafo visível termine em fim de frase (nunca corta no meio).
+  if (paragraphs.length > 0) {
+    const last = paragraphs[paragraphs.length - 1];
+    const lastEnd = Math.max(last.lastIndexOf("."), last.lastIndexOf("!"), last.lastIndexOf("?"));
+    if (lastEnd >= Math.floor(last.length * 0.4)) {
+      paragraphs[paragraphs.length - 1] = last.slice(0, lastEnd + 1).trim();
+    } else if (paragraphs.length > 1) {
+      paragraphs.pop();
+    }
+  }
+
   return paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
 }
 

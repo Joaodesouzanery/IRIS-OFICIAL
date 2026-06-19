@@ -1,4 +1,6 @@
 import crypto from "crypto";
+import { FetchFailureError, resilientFetchText } from "@/lib/server/resilient-fetch";
+import { tryRenderHtmlFallback } from "@/lib/server/headless";
 
 export type RegulatoryNewsStatus = "novo" | "selecionado" | "ignorado" | "arquivado";
 
@@ -557,24 +559,24 @@ function buildListingFallbackItem(
 }
 
 async function fetchHtml(url: string) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    const res = await fetch(url, {
+    const { text } = await resilientFetchText(url, {
+      timeoutMs: FETCH_TIMEOUT_MS,
+      retries: 2,
+      label: "news-collector",
       headers: {
         "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
         Accept: "text/html,application/xhtml+xml",
       },
-      next: { revalidate: 0 },
-      signal: controller.signal,
     });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return res.text();
+    return text;
   } catch (error) {
+    if (error instanceof FetchFailureError && error.kind === "falha_rede") {
+      const rendered = await tryRenderHtmlFallback(url, "news-collector");
+      if (rendered) return rendered;
+    }
     const message = error instanceof Error ? error.message : "falha desconhecida";
     throw new Error(`Falha ao coletar HTML oficial (${message}): ${url}`);
-  } finally {
-    clearTimeout(timeout);
   }
 }
 

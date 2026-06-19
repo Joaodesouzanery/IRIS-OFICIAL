@@ -8,7 +8,8 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMandatos } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { isoDateOrNull } from "@/lib/server/diretores-admin";
 
 
 export async function GET(req: NextRequest) {
@@ -71,4 +72,35 @@ export async function GET(req: NextRequest) {
   });
 
   return NextResponse.json(formatted);
+}
+
+/**
+ * POST /api/v1/mandatos — cria um mandato para um diretor (admin).
+ */
+export async function POST(req: NextRequest) {
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
+  const body = await req.json().catch(() => ({})) as Record<string, unknown>;
+  const diretorId = String(body.diretor_id ?? "").trim();
+  const dataInicio = isoDateOrNull(body.data_inicio);
+  if (!diretorId || !dataInicio) {
+    return NextResponse.json({ error: "diretor_id e data_inicio (YYYY-MM-DD) são obrigatórios" }, { status: 400 });
+  }
+
+  const row = {
+    diretor_id: diretorId,
+    data_inicio: dataInicio,
+    data_fim: isoDateOrNull(body.data_fim),
+    cargo: body.cargo ? String(body.cargo).slice(0, 100) : null,
+    fonte_dado: "manual",
+  };
+
+  const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+  const db = createSupabaseServerClient();
+  const { data, error } = await db.from("mandatos").insert(row).select("*").single();
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+  return NextResponse.json(data, { status: 201 });
 }

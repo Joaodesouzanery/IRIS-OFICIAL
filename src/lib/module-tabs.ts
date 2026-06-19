@@ -10,6 +10,7 @@ export const DIRETORES_TABS: ModuleTab[] = [
   { label: "Diretores", href: "/dashboard/analytics/diretores" },
   { label: "Mandatos", href: "/dashboard/mandatos" },
   { label: "Votação", href: "/dashboard/votacao" },
+  { label: "Cadastro", href: "/dashboard/diretores" },
 ];
 
 export const ANALISE_TABS: ModuleTab[] = [
@@ -35,5 +36,5 @@ export const CONFIG_TABS: ModuleTab[] = [
 
 export const NOTICIAS_TABS: ModuleTab[] = [
   { label: "Feed", href: "/dashboard/noticias" },
-  { label: "Boletim", href: "/dashboard/boletim" },
+  { label: "Newsletter", href: "/dashboard/boletim" },
 ];

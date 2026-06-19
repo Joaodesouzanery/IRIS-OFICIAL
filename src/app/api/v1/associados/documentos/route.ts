@@ -6,12 +6,11 @@ import {
   buildAssociadoDocument,
   DEMO_ASSOCIADOS,
 } from "@/lib/server/associado-documents";
+import { buildAssociadoPreviewFromDb, sanitizeCuradoria, curadoriaToInputsManuais } from "@/lib/server/associado-report";
 import type {
   Associado,
-  Deliberacao,
+  Diretor,
   DocumentoAssociadoTipo,
-  ListaTripliceItem,
-  Mandato,
   MonitoramentoItem,
 } from "@/types";
 
@@ -48,10 +47,7 @@ export async function POST(req: NextRequest) {
     : defaultPeriod(tipo).fim;
   const save = body.save !== false;
   const demoPreview = isDemo() || isDemoRequest(req);
-  const vp_paragrafos = normalizeStringArray(body.vp_paragrafos, 3, 1600);
-  const observacoes_curadoria = typeof body.observacoes_curadoria === "string" && body.observacoes_curadoria.trim()
-    ? body.observacoes_curadoria.trim().slice(0, 3000)
-    : null;
+  const curadoria = sanitizeCuradoria(body as Record<string, unknown>);
 
   if (!(demoPreview && !save)) {
     const guard = await requireAdminOrCron(req);
@@ -78,9 +74,8 @@ export async function POST(req: NextRequest) {
       mandatos,
       noticias,
       listaTriplice: [],
-      listaTripliceManual: normalizeManualListaTriplice(body.lista_triplice_manual),
-      vp_paragrafos,
-      observacoes_curadoria,
+      diretores: demoData.diretores().filter((d) => agenciaIds.has(d.agencia_id ?? "")) as Diretor[],
+      ...curadoria,
     });
     return NextResponse.json(preview);
   }
@@ -97,86 +92,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Associado nao encontrado" }, { status: 404 });
   }
 
-  const agSiglas = (associado.agencia_siglas ?? []) as string[];
-  const { data: agencias } = await db
-    .from("agencias")
-    .select("id, sigla")
-    .in("sigla", agSiglas.length ? agSiglas : ["__none__"]);
-  const agenciaIds = (agencias ?? []).map((a) => a.id);
-
-  let delibsQuery = db
-    .from("deliberacoes")
-    .select(`*, agencia:agencias(sigla, nome), votos(id, tipo_voto, is_divergente, diretor_id, diretores(nome))`)
-    .gte("data_reuniao", periodo_inicio)
-    .lte("data_reuniao", periodo_fim)
-    .order("data_reuniao", { ascending: false })
-    .limit(200);
-  if (agenciaIds.length) delibsQuery = delibsQuery.in("agencia_id", agenciaIds);
-  const { data: delibsRaw } = await delibsQuery;
-
-  const deliberacoes = (delibsRaw ?? []).map((d: any) => ({
-    ...d,
-    votos: (d.votos ?? []).map((v: any) => ({
-      id: v.id,
-      tipo_voto: v.tipo_voto,
-      is_divergente: v.is_divergente,
-      is_nominal: true,
-      diretor_id: v.diretor_id,
-      diretor_nome: v.diretores?.nome ?? null,
-    })),
-  })) as Deliberacao[];
-
-  let mandatosQuery = db
-    .from("mandatos")
-    .select("*, diretores!inner(id, nome, agencia_id, agencias(sigla))")
-    .order("data_inicio", { ascending: false })
-    .limit(100);
-  if (agenciaIds.length) mandatosQuery = mandatosQuery.in("diretores.agencia_id", agenciaIds);
-  const { data: mandatosRaw } = await mandatosQuery;
-  const mandatos = (mandatosRaw ?? []).map((m: any) => ({
-    id: m.id,
-    diretor_id: m.diretor_id,
-    diretor_nome: m.diretores?.nome ?? "Diretor",
-    agencia_id: m.diretores?.agencia_id,
-    data_inicio: m.data_inicio,
-    data_fim: m.data_fim,
-    cargo: m.cargo,
-    status: !m.data_fim || m.data_fim >= new Date().toISOString().slice(0, 10) ? "Ativo" : "Inativo",
-    review_status: m.review_status,
-    source_url: m.source_url,
-    source_type: m.source_type,
-    source_confidence: m.source_confidence,
-  })) as Mandato[];
-
-  const { data: noticiasRaw } = await db
-    .from("monitoramento_itens")
-    .select("*, site:monitoramento_sites(nome, url), agencia:agencias(sigla, nome)")
-    .in("tipo", ["noticia", "politica_publica", "consulta_publica", "ata", "pauta", "deliberacao", "reuniao", "documento"])
-    .gte("data_reuniao", periodo_inicio)
-    .lte("data_reuniao", periodo_fim)
-    .order("data_reuniao", { ascending: false })
-    .limit(200);
-
-  let listaQuery = db
-    .from("lista_triplice")
-    .select("*, agencia:agencias(sigla, nome)")
-    .order("created_at", { ascending: false })
-    .limit(50);
-  if (agenciaIds.length) listaQuery = listaQuery.in("agencia_id", agenciaIds);
-  const { data: listaRaw } = await listaQuery;
-
-  const preview = buildAssociadoDocument({
+  const preview = await buildAssociadoPreviewFromDb(db, {
     associado: associado as Associado,
     tipo,
     periodo_inicio,
     periodo_fim,
-    deliberacoes,
-    mandatos,
-    noticias: (noticiasRaw ?? []) as MonitoramentoItem[],
-    listaTriplice: (listaRaw ?? []) as ListaTripliceItem[],
-    listaTripliceManual: normalizeManualListaTriplice(body.lista_triplice_manual),
-    vp_paragrafos,
-    observacoes_curadoria,
+    curadoria,
   });
 
   if (!save) return NextResponse.json(preview);
@@ -194,11 +115,7 @@ export async function POST(req: NextRequest) {
       metricas: preview.metricas,
       qualidade: {
         ...preview.qualidade,
-        inputs_manuais: {
-          vp_paragrafos,
-          lista_triplice_manual: normalizeManualListaTriplice(body.lista_triplice_manual),
-          observacoes_curadoria,
-        },
+        inputs_manuais: curadoriaToInputsManuais(curadoria),
       },
       gerado_por: typeof body.gerado_por === "string" ? body.gerado_por : "manual",
       agendamento_id: typeof body.agendamento_id === "string" ? body.agendamento_id : null,
@@ -219,44 +136,6 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({ ...preview, documento_id: saved.id });
-}
-
-function normalizeStringArray(value: unknown, maxItems: number, maxLength: number) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => String(item).trim())
-    .filter(Boolean)
-    .slice(0, maxItems)
-    .map((item) => item.slice(0, maxLength));
-}
-
-function normalizeManualListaTriplice(value: unknown): ListaTripliceItem[] {
-  if (!Array.isArray(value)) return [];
-  const items: ListaTripliceItem[] = [];
-  for (const [index, item] of value.entries()) {
-      const raw = item && typeof item === "object" ? item as Record<string, unknown> : {};
-      const nome = typeof raw.nome_candidato === "string"
-        ? raw.nome_candidato.trim()
-        : typeof raw.nome === "string"
-          ? raw.nome.trim()
-          : "";
-      if (!nome) continue;
-      items.push({
-        id: `manual-lista-${index}-${nome.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-        agencia_id: typeof raw.agencia_id === "string" ? raw.agencia_id : null,
-        cargo: typeof raw.cargo === "string" && raw.cargo.trim() ? raw.cargo.trim() : "Diretoria",
-        etapa: "mapeamento",
-        nome_candidato: nome.slice(0, 180),
-        fonte_url: typeof raw.fonte_url === "string" && raw.fonte_url.trim() ? raw.fonte_url.trim() : null,
-        fonte_tipo: "manual",
-        confidence: 1,
-        review_status: "aprovado",
-        data_evento: typeof raw.data_evento === "string" ? raw.data_evento : null,
-        agencia: null,
-      });
-      if (items.length >= 20) break;
-  }
-  return items;
 }
 
 function defaultPeriod(tipo: DocumentoAssociadoTipo) {
