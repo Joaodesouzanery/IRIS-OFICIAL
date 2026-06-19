@@ -196,7 +196,8 @@ function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src
 }
 
 function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: string, input: NewsletterDocumentInput, theme: NewsletterTheme = NEWSLETTER_THEME_DARK) {
-  const heroSubtitle = buildNewsletterSubtitle(items, input.assunto);
+  // Subtitulo fixo do cabecalho (decisao do usuario).
+  const heroSubtitle = "<strong>Regulação em Destaque</strong>";
   return `<section class="newsletter-page">
     <svg class="print-bg" viewBox="0 0 960 1357" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <rect width="960" height="1357" fill="${theme.page}"/>
@@ -683,15 +684,6 @@ function formatArticleTag(item: RegulatoryNews | undefined) {
   if (!item) return "IRIS";
   const agency = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte ?? "Fonte oficial";
   return `${agency} · ${formatNewsletterDate(parseDate(item.publicado_em ?? item.first_seen_at))}`;
-}
-
-function buildNewsletterSubtitle(items: RegulatoryNews[], assunto: string) {
-  if (items.length === 0) return "<strong>IRIS em destaque:</strong> selecione 3 not&iacute;cias para montar a edi&ccedil;&atilde;o";
-  const agencies = [...new Set(items.map((item) => item.agencia_sigla ?? item.agencia?.sigla).filter(Boolean))];
-  const focus = agencies.length === 1 ? `${agencies[0]} em destaque` : "Regula&ccedil;&atilde;o em destaque";
-  const titles = items.slice(0, 3).map((item) => item.titulo.split(":")[0]).filter(Boolean);
-  const text = titles.length ? titles.join(", ") : assunto;
-  return `<strong>${escapeHtml(focus)}:</strong> ${escapeHtml(clipText(text, 92))}`;
 }
 
 function renderParagraphs(value: string | null | undefined, maxParagraphs: number, maxLength: number) {
