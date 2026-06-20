@@ -1,4 +1,6 @@
 import crypto from "crypto";
+import { FetchFailureError, resilientFetchText } from "@/lib/server/resilient-fetch";
+import { tryRenderHtmlFallback } from "@/lib/server/headless";
 
 export type RegulatoryNewsStatus = "novo" | "selecionado" | "ignorado" | "arquivado";
 
@@ -562,29 +564,26 @@ function buildListingFallbackItem(
 }
 
 async function fetchHtml(url: string) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  // Portais governamentais (ex.: ARTESP/Liferay) bloqueiam User-Agents de bot com 403,
+  // fazendo a coleta retornar zero links. Usamos um UA de navegador real + Accept-Language
+  // pt-BR para evitar o bloqueio, com retry/backoff para instabilidades transitórias.
+  const headers = {
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+  };
   try {
-    const res = await fetch(url, {
-      headers: {
-        // Portais governamentais (ex.: ARTESP/Liferay) bloqueiam User-Agents de bot
-        // com 403, fazendo a coleta retornar zero links. Usamos um UA de navegador
-        // real e Accept-Language pt-BR para evitar o bloqueio.
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
-      },
-      next: { revalidate: 0 },
-      signal: controller.signal,
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return res.text();
+    return await resilientFetchText(url, { headers, timeoutMs: FETCH_TIMEOUT_MS });
   } catch (error) {
+    // Em bloqueio/instabilidade de rede (403/429/5xx/timeout) tentamos o fallback headless
+    // antes de desistir. Falhas de conteúdo (404 etc.) sobem direto.
+    if (error instanceof FetchFailureError && error.kind === "falha_rede") {
+      const rendered = await tryRenderHtmlFallback(url, "HTML oficial");
+      if (rendered) return rendered;
+    }
     const message = error instanceof Error ? error.message : "falha desconhecida";
     throw new Error(`Falha ao coletar HTML oficial (${message}): ${url}`);
-  } finally {
-    clearTimeout(timeout);
   }
 }
 

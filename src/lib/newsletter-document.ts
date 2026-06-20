@@ -128,15 +128,15 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 .hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:${t.text};}
 .hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:${t.muted};max-width:510px;}
 .hero-subtitle strong{color:${t.strongMuted};font-weight:500;}
-.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.hero-logo{width:360px;height:360px;object-fit:cover;object-position:center;display:block;transform:scale(2.05);}
+.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:visible;}
+.hero-logo{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;object-position:center;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid ${t.line};display:flex;flex-direction:column;gap:10px;overflow:hidden;}
 .main-img{width:100%;height:224px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;margin:1px 0;}
 .main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
 .art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${t.accent};display:block;margin-bottom:8px;}
 .main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:${t.text};text-align:left;}
-.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:1 1 auto;min-height:0;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,black 75%,transparent 100%);mask-image:linear-gradient(to bottom,black 75%,transparent 100%);}
+.main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:1 1 auto;min-height:0;overflow:hidden;}
 .main-body p+p{margin-top:7px;}
 .read-more{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${t.accent};text-decoration:none;flex-shrink:0;}
 .col-side{display:flex;flex-direction:column;}
@@ -325,17 +325,21 @@ function renderMinutoHeader(date: string) {
 
 function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string, articleTexts?: Record<string, string>) {
   const title = item?.titulo ?? "Selecione a noticia principal para montar a edicao";
+  // Capamos a geração do texto principal para caber na coluna de altura fixa sem estourar
+  // (o que antes provocava corte/desbotamento). Os valores são folgados para encostar no
+  // rodapé sem ultrapassar; a guarda de fim de frase garante término em frase completa.
+  const mainMaxLength = item?.imagem_url ? 1900 : 2700;
   const body = newsletterArticleBody(item, {
-    maxLength: NEWSLETTER_ARTICLE_TEXT_LIMITS.main,
-    minLength: item?.imagem_url ? 1500 : 1900,
-  }, newsletterArticleOverride(item, articleTexts, NEWSLETTER_ARTICLE_TEXT_LIMITS.main));
+    maxLength: mainMaxLength,
+    minLength: item?.imagem_url ? 1300 : 1700,
+  }, newsletterArticleOverride(item, articleTexts, mainMaxLength));
   return `
     <div>
       <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
       <h2 class="main-title">${escapeHtml(title)}</h2>
     </div>
     ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
-    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 9 : 11, item?.imagem_url ? 360 : 390)}</div>
+    <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 7 : 9, item?.imagem_url ? 320 : 350)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="read-more">Ler fonte oficial &#8599;</a>` : `<a class="read-more">Ler fonte oficial &#8599;</a>`}
   `;
 }
@@ -709,6 +713,9 @@ function renderParagraphs(value: string | null | undefined, maxParagraphs: numbe
     const lastSentenceEnd = Math.max(last.lastIndexOf("."), last.lastIndexOf("!"), last.lastIndexOf("?"));
     if (lastSentenceEnd > last.length * 0.4) {
       paragraphs[paragraphs.length - 1] = last.slice(0, lastSentenceEnd + 1).trim();
+    } else if (paragraphs.length > 1) {
+      // Fragmento sem pontuação final relevante: descarta para não terminar truncado.
+      paragraphs.pop();
     }
   }
   return paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
