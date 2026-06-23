@@ -2,6 +2,7 @@ export interface RuntimeStatus {
   is_demo: boolean;
   has_supabase_url: boolean;
   has_service_role_key: boolean;
+  has_cron_secret: boolean;
   persistence: "supabase" | "demo";
   mode_reason: "missing_supabase_url" | "missing_service_role" | "user_demo" | "real";
   warnings: string[];
@@ -10,6 +11,7 @@ export interface RuntimeStatus {
 export function getRuntimeStatus(userDemo = false): RuntimeStatus {
   const hasSupabaseUrl = Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL);
   const hasServiceRoleKey = Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY);
+  const hasCronSecret = Boolean(process.env.CRON_SECRET);
   const warnings: string[] = [];
 
   if (!hasSupabaseUrl) {
@@ -17,6 +19,9 @@ export function getRuntimeStatus(userDemo = false): RuntimeStatus {
   }
   if (hasSupabaseUrl && !hasServiceRoleKey) {
     warnings.push("SUPABASE_SERVICE_ROLE_KEY ausente; APIs servidoras com persistência Supabase falharão.");
+  }
+  if (hasSupabaseUrl && hasServiceRoleKey && !hasCronSecret) {
+    warnings.push("CRON_SECRET ausente; os crons de coleta não conseguem autenticar.");
   }
   if (userDemo && hasSupabaseUrl && hasServiceRoleKey) {
     warnings.push("Modo DEMO ativado manualmente pelo usuário.");
@@ -36,6 +41,7 @@ export function getRuntimeStatus(userDemo = false): RuntimeStatus {
     is_demo: isDemo,
     has_supabase_url: hasSupabaseUrl,
     has_service_role_key: hasServiceRoleKey,
+    has_cron_secret: hasCronSecret,
     persistence: serverDemo ? "demo" : "supabase",
     mode_reason: modeReason,
     warnings,

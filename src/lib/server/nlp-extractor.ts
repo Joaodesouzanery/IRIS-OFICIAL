@@ -44,6 +44,9 @@ const RE_VOTO_DISSIDENTE =
 const RE_VOTO_AUSENTE =
   /(?:ausente[:\s]+(?:o\s+)?(?:Diretor[a]?\s+)?|aus[Ãªe]ncia\s+d[oa]\s+(?:Diretor[a]?\s+)?|(?:Diretor[a]?\s+)?)((?:[A-ZÃÃ‰ÃÃ“ÃšÃ‚ÃŠÃ”ÃƒÃ•Ã‡Ã€Ãœ][a-zÃ¡Ã©Ã­Ã³ÃºÃ¢ÃªÃ´Ã£ÃµÃ§Ã Ã¼]+\s*){2,5})(?:\s+ausente)/gi;
 const RE_AUSENTE_LABEL = /Ausente[s]?:\s*([^\n.]{5,180})/gi;
+// Abstenção narrativa: "Fulano absteve-se" / "Fulano se absteve" / "Fulano votou pela abstenção".
+const RE_VOTO_ABSTENCAO =
+  /(?:Diretor[a]?\s+)?((?:[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+\s+){1,4})(?:absteve-se|se\s+absteve|(?:votou\s+(?:pela\s+|em\s+)?)?absten[çc][aã]o)/gi;
 
 const MESES: Record<string, number> = {
   janeiro: 1, fevereiro: 2, março: 3, marco: 3, abril: 4,
@@ -348,7 +351,8 @@ export interface ExtractedFields {
   fundamento_decisao: string | null;
   nomes_votacao: string[];          // todos os nomes (compatibilidade)
   nomes_votacao_favor: string[];    // nomes que votaram a favor
-  nomes_votacao_contra: string[];   // nomes que votaram contra/abstenção
+  nomes_votacao_contra: string[];   // nomes que votaram contra/dissidentes
+  nomes_votacao_abstencao: string[];// nomes que se abstiveram
   nomes_votacao_ausente: string[];  // nomes explicitamente ausentes
   signatarios: string[];            // diretores identificados no bloco de assinatura
   diretores_detectados: string[];   // diretores identificados em cabecalhos/relatoria
@@ -512,6 +516,7 @@ export function extractFields(text: string): ExtractedFields {
   const nomes_votacao: string[] = [];
   const nomes_votacao_favor: string[] = [];
   const nomes_votacao_contra: string[] = [];
+  const nomes_votacao_abstencao: string[] = [];
   const nomes_votacao_ausente: string[] = [];
 
   if (unanimidade_detectada && signatarios.length > 0) {
@@ -530,6 +535,8 @@ export function extractFields(text: string): ExtractedFields {
         if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
         if (tipo.includes("ausente") && !nomes_votacao_ausente.includes(nome)) {
           nomes_votacao_ausente.push(nome);
+        } else if (tipo.startsWith("absten") && !nomes_votacao_abstencao.includes(nome)) {
+          nomes_votacao_abstencao.push(nome);
         } else if (tipo.startsWith("favor") && !nomes_votacao_favor.includes(nome)) {
           nomes_votacao_favor.push(nome);
         } else if (!tipo.startsWith("favor") && !nomes_votacao_contra.includes(nome)) {
@@ -597,6 +604,21 @@ export function extractFields(text: string): ExtractedFields {
     }
   }
 
+  // Abstenção narrativa: "Fulano absteve-se" / "votou pela abstenção".
+  RE_VOTO_ABSTENCAO.lastIndex = 0;
+  let abs: RegExpExecArray | null;
+  while ((abs = RE_VOTO_ABSTENCAO.exec(text)) !== null) {
+    const nome = abs[1].trim();
+    if (nome.length > 4) {
+      if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
+      const idxFavor = nomes_votacao_favor.indexOf(nome);
+      if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
+      const idxContra = nomes_votacao_contra.indexOf(nome);
+      if (idxContra !== -1) nomes_votacao_contra.splice(idxContra, 1);
+      if (!nomes_votacao_abstencao.includes(nome)) nomes_votacao_abstencao.push(nome);
+    }
+  }
+
   return {
     numero_deliberacao,
     reuniao_ordinaria,
@@ -617,6 +639,7 @@ export function extractFields(text: string): ExtractedFields {
     nomes_votacao,
     nomes_votacao_favor,
     nomes_votacao_contra,
+    nomes_votacao_abstencao,
     nomes_votacao_ausente,
     signatarios,
     diretores_detectados,

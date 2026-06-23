@@ -28,8 +28,7 @@ export async function GET(req: NextRequest) {
     .from("votos")
     .select(
       `tipo_voto, is_divergente,
-       diretores!inner (id, nome, agencia_id),
-       deliberacoes!inner (resultado)`
+       diretores!inner (id, nome, agencia_id)`
     );
 
   if (agenciaId) {

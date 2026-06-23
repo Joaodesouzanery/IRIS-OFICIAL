@@ -10,6 +10,7 @@ import { computeEmpresas } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
 
 
 export async function GET(req: NextRequest) {
@@ -33,7 +34,7 @@ export async function GET(req: NextRequest) {
 
   let q: any = db
     .from("deliberacoes")
-    .select("interessado, resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, raw_extraction")
+    .select("interessado, empresa_id, empresas(nome_exibicao), resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, raw_extraction")
     .not("interessado", "is", null);
   if (agenciaId) q = q.eq("agencia_id", agenciaId);
   if (microtema) q = q.eq("microtema", microtema);
@@ -41,16 +42,22 @@ export async function GET(req: NextRequest) {
   const { data, error } = await q;
   if (error) return NextResponse.json({ error: "Erro ao buscar empresas" }, { status: 500 });
 
+  // Agrupa por empresa_id (FK normalizada); para registros ainda sem FK, usa a chave
+  // canônica do interessado como fallback (colapsa variantes mesmo antes do backfill).
   const map = new Map<string, {
-    total: number; deferido: number; indeferido: number;
+    nome: string; total: number; deferido: number; indeferido: number;
     ultima: string; microtemas: Set<string>; agencia: string | null;
   }>();
   for (const d of (data ?? []).filter(isFinalDecisionRecord)) {
     if (!d.interessado) continue;
-    if (!map.has(d.interessado)) {
-      map.set(d.interessado, { total: 0, deferido: 0, indeferido: 0, ultima: "", microtemas: new Set(), agencia: d.agencia_id });
+    const empresa = Array.isArray(d.empresas) ? d.empresas[0] : d.empresas;
+    const key = d.empresa_id ?? `canon:${canonicalizeEmpresa(d.interessado)}`;
+    const displayNome = empresa?.nome_exibicao ?? d.interessado;
+    if (!map.has(key)) {
+      map.set(key, { nome: displayNome, total: 0, deferido: 0, indeferido: 0, ultima: "", microtemas: new Set(), agencia: d.agencia_id });
     }
-    const s = map.get(d.interessado)!;
+    const s = map.get(key)!;
+    if (displayNome.length > s.nome.length) s.nome = displayNome;
     s.total++;
     if (d.resultado === "Deferido") s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
@@ -58,10 +65,10 @@ export async function GET(req: NextRequest) {
     if (d.microtema) s.microtemas.add(d.microtema);
   }
 
-  let rows = [...map.entries()].map(([nome, s]) => {
+  let rows = [...map.values()].map((s) => {
     const microtemas = [...s.microtemas];
     return {
-      nome,
+      nome: s.nome,
       total_deliberacoes: s.total,
       deferidos: s.deferido,
       indeferidos: s.indeferido,

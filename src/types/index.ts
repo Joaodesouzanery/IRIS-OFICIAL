@@ -138,8 +138,8 @@ export interface VotoEmbutido {
 export interface VotoSugerido {
   nome: string;
   diretor_id?: string | null;
-  tipo_voto: "Favoravel" | "Desfavoravel" | "Ausente";
-  origem: "nominal" | "inferido_mandato" | "contrario" | "ausente";
+  tipo_voto: "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente";
+  origem: "nominal" | "inferido_mandato" | "contrario" | "abstencao" | "ausente";
   is_nominal: boolean;
 }
 
@@ -454,6 +454,7 @@ export interface PreviewResultFields {
   diretores_detectados: string[];
   nomes_votacao: string[];
   nomes_votacao_contra: string[];
+  nomes_votacao_abstencao: string[];
   nomes_votacao_ausente: string[];
   votos_sugeridos?: VotoSugerido[];
 }
@@ -471,6 +472,7 @@ export interface AtaPreviewItem {
   area_regulatoria?: AreaRegulatoria | string;
   votos_detectados?: string[];
   votos_contra_detectados?: string[];
+  votos_abstencao_detectados?: string[];
   votos_ausentes_detectados?: string[];
   votos_sugeridos?: VotoSugerido[];
   unanimidade_detectada?: boolean;
@@ -537,6 +539,7 @@ export interface ConfirmDelib {
   fundamento_decisao: string | null;
   nomes_votacao: string[];
   nomes_votacao_contra: string[];
+  nomes_votacao_abstencao?: string[];
   nomes_votacao_ausente?: string[];
   votos_sugeridos?: VotoSugerido[];
   extraction_confidence: number;
@@ -899,6 +902,7 @@ export interface RuntimeStatus {
   is_demo: boolean;
   has_supabase_url: boolean;
   has_service_role_key: boolean;
+  has_cron_secret?: boolean;
   persistence: "supabase" | "demo";
   mode_reason: "missing_supabase_url" | "missing_service_role" | "user_demo" | "real";
   warnings: string[];

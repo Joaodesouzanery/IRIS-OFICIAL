@@ -257,7 +257,9 @@ export default function DeliberacoesPage() {
     clearLocalDelibs();
     setLocalDelibs([]);
     await sync("local");
-    queryClient.invalidateQueries();
+    for (const key of [["deliberacoes"], ["dashboard"], ["empresas"]]) {
+      queryClient.invalidateQueries({ queryKey: key });
+    }
   }
 
   return (

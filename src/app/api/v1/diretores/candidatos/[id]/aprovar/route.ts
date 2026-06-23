@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { requireAdmin } from "@/lib/server/request-guards";
+import { requireAdmin, getAuthenticatedUser } from "@/lib/server/request-guards";
+import { applyRetroactiveVotes } from "@/lib/server/retroactive-votes";
 
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -14,6 +15,9 @@ export async function POST(
   if (isDemo()) {
     return NextResponse.json({ id: params.id, review_status: "aprovado", persisted: false });
   }
+
+  const userResult = await getAuthenticatedUser(req);
+  const reviewedBy = userResult instanceof NextResponse ? null : userResult.email;
 
   const body = await req.json().catch(() => ({}));
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -111,13 +115,27 @@ export async function POST(
       diretor_id: diretorId,
       review_status: "aprovado",
       reviewed_at: new Date().toISOString(),
+      reviewed_by: reviewedBy,
     })
     .eq("id", params.id);
+
+  // Cria votos retroativos para as deliberações onde este nome aparece.
+  let votosRetroativos = null;
+  try {
+    votosRetroativos = await applyRetroactiveVotes(db, {
+      candidato: { id: candidato.id, agencia_id: candidato.agencia_id, nome_detectado: candidato.nome_detectado },
+      diretorId,
+      reviewedBy,
+    });
+  } catch (e) {
+    console.error("[candidatos/aprovar] Falha ao criar votos retroativos:", e);
+  }
 
   return NextResponse.json({
     id: params.id,
     diretor_id: diretorId,
     mandato_id: mandatoId,
     review_status: "aprovado",
+    votos_retroativos: votosRetroativos,
   });
 }

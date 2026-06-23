@@ -35,6 +35,29 @@ type MonitorTestResponse = {
   error?: string;
 };
 
+type ColetaExecucao = {
+  dominio: string;
+  id: string;
+  trigger_type: string;
+  status: string;
+  started_at: string;
+  duration_ms: number | null;
+  itens: number | null;
+  novos: number | null;
+  fetch_retries: number;
+  http_429_count: number;
+  headless_dependency_missing: number;
+  headless_launch_failed: number;
+  error_message: string | null;
+};
+
+type ColetaResumo = {
+  total: number; ok: number; error: number; taxa_falha_pct: number;
+  duracao_media_ms: number; total_retries: number; total_429: number; total_headless_falhas: number;
+};
+
+type ColetaTelemetria = { execucoes: ColetaExecucao[]; resumo_24h: ColetaResumo };
+
 export default function MonitoramentoPage() {
   const queryClient = useQueryClient();
   const { demoEnabled } = useDataSyncContext();
@@ -51,16 +74,25 @@ export default function MonitoramentoPage() {
   const { data: sites } = useQuery({
     queryKey: ["monitoramento-sites"],
     queryFn: () => api.get<MonitoramentoSite[]>("/monitoramento/sites"),
+    staleTime: 30_000,
   });
 
   const { data: alertas } = useQuery({
     queryKey: ["monitoramento-alertas"],
     queryFn: () => api.get<MonitoramentoAlerta[]>("/monitoramento/alertas"),
+    staleTime: 30_000,
   });
 
   const { data: runs } = useQuery({
     queryKey: ["monitoramento-runs"],
     queryFn: () => api.get<MonitoramentoRun[]>("/monitoramento/runs"),
+    staleTime: 30_000,
+  });
+
+  const { data: telemetria } = useQuery({
+    queryKey: ["monitoramento", "coleta-execucoes"],
+    queryFn: () => api.get<ColetaTelemetria>("/admin/coleta/execucoes?limit=30"),
+    staleTime: 30_000,
   });
 
   const { data: runtimeStatus } = useQuery({
@@ -172,6 +204,47 @@ export default function MonitoramentoPage() {
         <Metric label="Em revisão" value={stats.emRevisao} tone={stats.emRevisao ? "warning" : "default"} />
         <Metric label="Importados" value={stats.importados} tone={stats.importados ? "success" : "default"} />
       </div>
+
+      {/* Saúde da Coleta (telemetria das últimas 24h) */}
+      {telemetria && (
+        <div className="card space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <p className="section-label">Saúde da Coleta · últimas 24h</p>
+            {!runtimeStatus?.has_cron_secret && (
+              <span className="badge text-xs bg-error/10 text-error">CRON_SECRET ausente</span>
+            )}
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <Metric label="Execuções" value={telemetria.resumo_24h.total} tone="default" />
+            <Metric label="Falhas" value={telemetria.resumo_24h.error} tone={telemetria.resumo_24h.error ? "error" : "success"} />
+            <Metric label="HTTP 429" value={telemetria.resumo_24h.total_429} tone={telemetria.resumo_24h.total_429 ? "warning" : "default"} />
+            <Metric label="Falhas headless" value={telemetria.resumo_24h.total_headless_falhas} tone={telemetria.resumo_24h.total_headless_falhas ? "error" : "default"} />
+          </div>
+          <p className="text-xs text-text-label">
+            Taxa de falha: {telemetria.resumo_24h.taxa_falha_pct}% · duração média: {Math.round(telemetria.resumo_24h.duracao_media_ms / 100) / 10}s · retries: {telemetria.resumo_24h.total_retries}
+          </p>
+          {telemetria.execucoes.length > 0 && (
+            <div className="space-y-2 max-h-72 overflow-y-auto">
+              {telemetria.execucoes.map((ex) => (
+                <div key={`${ex.dominio}-${ex.id}`} className="flex items-center justify-between gap-3 border border-border rounded-card p-2.5">
+                  <div className="min-w-0">
+                    <p className="text-sm text-text-primary">
+                      <span className="font-mono text-xs text-text-muted">{ex.dominio}</span> · {ex.trigger_type}
+                    </p>
+                    <p className="text-xs text-text-muted">
+                      {new Date(ex.started_at).toLocaleString("pt-BR")} · {ex.itens ?? 0} itens · {ex.novos ?? 0} novos
+                      {ex.duration_ms != null ? ` · ${Math.round(ex.duration_ms / 100) / 10}s` : ""}
+                      {ex.http_429_count ? ` · ${ex.http_429_count}×429` : ""}
+                    </p>
+                    {ex.error_message && <p className="text-xs text-error truncate mt-0.5">{ex.error_message}</p>}
+                  </div>
+                  <StatusBadge label={ex.status} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
 
       <div className="card space-y-3">
         <p className="section-label">Nova fonte oficial de documentos</p>

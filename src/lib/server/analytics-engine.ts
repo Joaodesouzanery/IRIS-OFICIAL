@@ -7,20 +7,13 @@
 
 import type { Deliberacao, VotoEmbutido } from "@/types";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isResultadoPositivo } from "@/lib/utils";
+import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 function filterByAgencia(delibs: Deliberacao[], agenciaId?: string | null): Deliberacao[] {
   return agenciaId ? delibs.filter((d) => d.agencia_id === agenciaId) : delibs;
-}
-
-/** Resultados considerados positivos para fins de risco regulatório. */
-function isResultadoPositivo(resultado: string | null): boolean {
-  if (!resultado) return false;
-  return [
-    "Deferido", "Aprovado", "Aprovado com Ressalvas", "Aprovado por Unanimidade",
-    "Ratificado", "Autorizado", "Recomendado", "Determinado",
-  ].includes(resultado);
 }
 
 /** YYYY-MM-DD para N dias atrás. */
@@ -585,6 +578,7 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
 export function computeEmpresas(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.interessado && isFinalDecisionRecord(d));
   const map = new Map<string, {
+    nome: string;
     delibs: Deliberacao[];
     microtemas: Set<string>;
     agencia: string;
@@ -592,16 +586,20 @@ export function computeEmpresas(delibs: Deliberacao[], agenciaId?: string | null
 
   for (const d of rows) {
     if (!d.interessado) continue;
-    if (!map.has(d.interessado)) {
-      map.set(d.interessado, { delibs: [], microtemas: new Set(), agencia: d.agencia_id ?? "" });
+    const key = canonicalizeEmpresa(d.interessado) || d.interessado;
+    let entry = map.get(key);
+    if (!entry) {
+      entry = { nome: d.interessado, delibs: [], microtemas: new Set(), agencia: d.agencia_id ?? "" };
+      map.set(key, entry);
     }
-    const s = map.get(d.interessado)!;
-    s.delibs.push(d);
-    if (d.microtema) s.microtemas.add(d.microtema);
+    if (d.interessado.length > entry.nome.length) entry.nome = d.interessado;
+    entry.delibs.push(d);
+    if (d.microtema) entry.microtemas.add(d.microtema);
   }
 
-  return [...map.entries()]
-    .map(([nome, s]) => {
+  return [...map.values()]
+    .map((s) => {
+      const nome = s.nome;
       const microtemas = [...s.microtemas];
       const total = s.delibs.length;
       const deferido = s.delibs.filter((d) => isResultadoPositivo(d.resultado)).length;
@@ -647,7 +645,10 @@ export function computeEmpresas(delibs: Deliberacao[], agenciaId?: string | null
 // ─── 20. computeEmpresaDetalhe ───────────────────────────────────────────────
 
 export function computeEmpresaDetalhe(delibs: Deliberacao[], empresaNome: string) {
-  const rows = delibs.filter((d) => d.interessado === empresaNome && isFinalDecisionRecord(d));
+  const alvo = canonicalizeEmpresa(empresaNome) || empresaNome;
+  const rows = delibs.filter(
+    (d) => d.interessado != null && (canonicalizeEmpresa(d.interessado) || d.interessado) === alvo && isFinalDecisionRecord(d),
+  );
   if (rows.length === 0) return null;
 
   const total = rows.length;

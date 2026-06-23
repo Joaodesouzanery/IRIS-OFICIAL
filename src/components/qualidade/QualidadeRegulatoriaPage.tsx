@@ -96,6 +96,7 @@ type EvidenceRow = {
   fonte: string | null;
   trecho_publico: string | null;
   status_revisao: string;
+  origem?: string | null;
 };
 
 type ManualEvidenceInput = {
@@ -471,7 +472,15 @@ function EvidenceView(props: {
             {props.evidenceRows.map((row) => (
               <div key={row.id} className="flex items-start gap-3 p-3 border border-border rounded-md">
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm text-text-primary font-medium line-clamp-2">{row.titulo}</p>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <p className="text-sm text-text-primary font-medium line-clamp-2">{row.titulo}</p>
+                    {row.origem === "derivada_dados" && (
+                      <span className="badge text-[10px] bg-brand/15 text-brand border border-brand/25">Automática (derivada)</span>
+                    )}
+                    {row.origem === "coleta_web" && (
+                      <span className="badge text-[10px] bg-zinc-500/15 text-zinc-400">Coleta web</span>
+                    )}
+                  </div>
                   <p className="text-xs text-text-muted mt-0.5">
                     {row.fonte ?? "manual"}
                     {row.url ? <> · <a href={row.url} target="_blank" rel="noreferrer" className="text-brand hover:underline inline-flex items-center gap-1">link <ExternalLink className="w-3 h-3" /></a></> : null}

@@ -143,6 +143,7 @@ function errorPreviewResult(filename: string): PreviewResult {
       diretores_detectados: [],
       nomes_votacao: [],
       nomes_votacao_contra: [],
+      nomes_votacao_abstencao: [],
       nomes_votacao_ausente: [],
       votos_sugeridos: [],
     },
@@ -309,7 +310,7 @@ function ReviewCard({
     onUpdate(item.id, { [k]: v } as Partial<PreviewResultFields>);
   }
 
-  function updateVotoSugerido(index: number, tipoVoto: "Favoravel" | "Desfavoravel" | "Ausente") {
+  function updateVotoSugerido(index: number, tipoVoto: "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente") {
     const votos = [...(fields.votos_sugeridos ?? [])];
     if (!votos[index]) return;
     votos[index] = {
@@ -317,11 +318,13 @@ function ReviewCard({
       tipo_voto: tipoVoto,
       origem: tipoVoto === "Ausente"
         ? "ausente"
-        : tipoVoto === "Desfavoravel"
-          ? "contrario"
-          : votos[index].is_nominal
-            ? "nominal"
-            : "inferido_mandato",
+        : tipoVoto === "Abstencao"
+          ? "abstencao"
+          : tipoVoto === "Desfavoravel"
+            ? "contrario"
+            : votos[index].is_nominal
+              ? "nominal"
+              : "inferido_mandato",
     };
     set("votos_sugeridos", votos);
   }
@@ -783,10 +786,11 @@ function ReviewCard({
                       <select
                         className="input h-7 py-0 px-2 text-[11px]"
                         value={voto.tipo_voto}
-                        onChange={(event) => updateVotoSugerido(i, event.target.value as "Favoravel" | "Desfavoravel" | "Ausente")}
+                        onChange={(event) => updateVotoSugerido(i, event.target.value as "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente")}
                       >
                         <option value="Favoravel">Favoravel</option>
                         <option value="Desfavoravel">Desfavoravel</option>
+                        <option value="Abstencao">Abstenção</option>
                         <option value="Ausente">Ausente</option>
                       </select>
                       <span className="badge badge-gray text-[10px]">
@@ -918,7 +922,9 @@ export default function UploadPage() {
     try {
       await api.post("/upload/clear-test-queue", { confirm: "LIMPAR FILA DE TESTES" });
       resetAll();
-      queryClient.invalidateQueries();
+      for (const key of [["deliberacoes"], ["dashboard"], ["diretores"], ["votacao"], ["monitoramento"], ["empresas"]]) {
+        queryClient.invalidateQueries({ queryKey: key });
+      }
     } catch (err) {
       setAnalyzeError(err instanceof Error ? err.message : "Erro ao limpar fila de testes");
     } finally {
@@ -1274,6 +1280,7 @@ export default function UploadPage() {
         fundamento_decisao: fields.fundamento_decisao,
         nomes_votacao: fields.nomes_votacao,
         nomes_votacao_contra: fields.nomes_votacao_contra ?? [],
+        nomes_votacao_abstencao: fields.nomes_votacao_abstencao ?? [],
         nomes_votacao_ausente: fields.nomes_votacao_ausente ?? [],
         votos_sugeridos: fields.votos_sugeridos ?? [],
         extraction_confidence: item.confidence,
@@ -1310,15 +1317,12 @@ export default function UploadPage() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ deliberacoes: getLocalDelibs(), mode: "local" }),
           });
-          queryClient.invalidateQueries();
         } catch { /* sync non-critical */ }
       }
-      queryClient.invalidateQueries({ queryKey: ["deliberacoes"] });
-      queryClient.invalidateQueries({ queryKey: ["dashboard"] });
-      queryClient.invalidateQueries({ queryKey: ["diretores"] });
-      queryClient.invalidateQueries({ queryKey: ["votacao"] });
-      queryClient.invalidateQueries({ queryKey: ["monitoramento"] });
-      queryClient.invalidateQueries();
+      // Invalida apenas os domínios afetados por um upload de deliberações.
+      for (const key of [["deliberacoes"], ["dashboard"], ["diretores"], ["votacao"], ["monitoramento"], ["empresas"]]) {
+        queryClient.invalidateQueries({ queryKey: key });
+      }
       setConfirmResults(res);
       setStage("done");
     } catch (err) {

@@ -9,6 +9,7 @@ import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import type {
   Agencia,
+  DiretorCandidato,
   DiretorOverviewItem,
   DiretorVotoItem,
   MonitoramentoCheckResponse,
@@ -16,6 +17,7 @@ import type {
   MonitoramentoSite,
 } from "@/types";
 import {
+  Check,
   CheckCircle2,
   ChevronDown,
   ChevronUp,
@@ -26,6 +28,7 @@ import {
   Loader2,
   RefreshCw,
   Upload,
+  UserCheck,
   Users,
   X,
 } from "lucide-react";
@@ -101,6 +104,37 @@ export default function VotosDiretoresPage() {
     mutationFn: () => api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", {}),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
+    },
+  });
+
+  const { data: candidatos } = useQuery({
+    queryKey: ["diretores-candidatos", "pendentes", agenciaId],
+    queryFn: () => api.get<DiretorCandidato[]>(`/diretores/candidatos?status=pendente${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
+  });
+
+  const [matchFeedback, setMatchFeedback] = useState<string | null>(null);
+
+  const aprovarMutation = useMutation({
+    mutationFn: (id: string) =>
+      api.post<{ votos_retroativos?: { criados: number; deliberacoes: number } | null }>(
+        `/diretores/candidatos/${id}/aprovar`, {},
+      ),
+    onSuccess: (res) => {
+      const r = res.votos_retroativos;
+      setMatchFeedback(
+        r ? `Aprovado: ${r.criados} voto(s) retroativo(s) em ${r.deliberacoes} deliberação(ões).` : "Candidato aprovado.",
+      );
+      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
+    },
+  });
+
+  const rejeitarMutation = useMutation({
+    mutationFn: (id: string) => api.post(`/diretores/candidatos/${id}/rejeitar`, {}),
+    onSuccess: () => {
+      setMatchFeedback("Candidato rejeitado.");
+      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
     },
   });
 
@@ -201,6 +235,61 @@ export default function VotosDiretoresPage() {
           {enqueueMutation.error instanceof Error ? enqueueMutation.error.message : "Erro ao processar atas/votos"}
         </div>
       ) : null}
+
+      {/* ── Matches de diretor pendentes de revisão ──────────────────────── */}
+      {(candidatos ?? []).length > 0 && (
+        <section className="card space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <UserCheck className="w-4 h-4 text-brand" />
+              <p className="section-label">Matches pendentes ({(candidatos ?? []).length})</p>
+            </div>
+          </div>
+          <p className="text-xs text-text-muted">
+            Nomes detectados em atas/votos cujo match com um diretor ficou ambíguo (confiança média) e não geraram voto.
+            Ao aprovar, os votos faltantes são criados retroativamente para as deliberações daquele nome.
+          </p>
+          {matchFeedback && (
+            <div className="border border-success/30 bg-success/10 rounded-card p-2.5 text-sm text-success">
+              {matchFeedback}
+            </div>
+          )}
+          <div className="space-y-2 max-h-96 overflow-y-auto">
+            {(candidatos ?? []).map((c) => {
+              const pending = (aprovarMutation.isPending && aprovarMutation.variables === c.id) ||
+                (rejeitarMutation.isPending && rejeitarMutation.variables === c.id);
+              return (
+                <div key={c.id} className="flex items-center justify-between gap-3 border border-border rounded-card p-3">
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium text-text-primary truncate">{c.nome_detectado}</p>
+                    <p className="text-xs text-text-muted mt-0.5">
+                      {c.agencia?.sigla ?? "Agência não definida"} · fonte: {c.source_type} · {Math.round(c.confidence * 100)}% de confiança
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      onClick={() => aprovarMutation.mutate(c.id)}
+                      disabled={pending || demoEnabled}
+                      className="btn-primary text-xs"
+                    >
+                      {pending && aprovarMutation.variables === c.id ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                      Aprovar
+                    </button>
+                    <button
+                      onClick={() => rejeitarMutation.mutate(c.id)}
+                      disabled={pending || demoEnabled}
+                      className="btn-secondary text-xs text-error border-error/30 hover:bg-error/10"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                      Rejeitar
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* ── Fontes monitoradas ───────────────────────────────────────────── */}
       <section className="card space-y-3">

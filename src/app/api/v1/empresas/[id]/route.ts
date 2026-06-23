@@ -33,7 +33,16 @@ export async function GET(
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  const { data, error } = await db
+  // Resolve a empresa normalizada pelo nome de exibição; se houver, busca por
+  // empresa_id (captura todas as variantes). Senão, fallback por interessado exato.
+  const { data: empresaRows } = await db
+    .from("empresas")
+    .select("id")
+    .ilike("nome_exibicao", nome)
+    .limit(1);
+  const empresaId = empresaRows?.[0]?.id ?? null;
+
+  let query = db
     .from("deliberacoes")
     .select(
       `id, numero_deliberacao, reuniao_ordinaria, data_reuniao,
@@ -42,8 +51,10 @@ export async function GET(
        created_at, tipo_documento, documento_pai_id, raw_extraction, agencias (sigla, nome),
        votos (id, tipo_voto, is_divergente, is_nominal, diretor_id, diretores (nome))`
     )
-    .eq("interessado", nome)
     .order("data_reuniao", { ascending: false });
+  query = empresaId ? query.eq("empresa_id", empresaId) : query.eq("interessado", nome);
+
+  const { data, error } = await query;
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar deliberações" }, { status: 500 });

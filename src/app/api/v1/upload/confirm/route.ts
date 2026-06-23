@@ -10,6 +10,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName } from "@/lib/server/name-matcher";
+import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
 import { requireAdmin } from "@/lib/server/request-guards";
 import {
   buildVotoRows,
@@ -92,6 +93,9 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
     nomes_votacao_contra: Array.isArray(d.nomes_votacao_contra)
       ? d.nomes_votacao_contra.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
+    nomes_votacao_abstencao: Array.isArray(d.nomes_votacao_abstencao)
+      ? d.nomes_votacao_abstencao.slice(0, 20).map((n) => String(n).slice(0, 100))
+      : [],
     nomes_votacao_ausente: Array.isArray(d.nomes_votacao_ausente)
       ? d.nomes_votacao_ausente.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
@@ -170,6 +174,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         nomes: string[],
         contra: string[] = [],
         ausente: string[] = [],
+        abstencao: string[] = [],
         inferFromMandate = false,
       ): VotoEmbutido[] {
         return buildVotoRows({
@@ -177,6 +182,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           nomes,
           nomesContra: contra,
           nomesAusente: ausente,
+          nomesAbstencao: abstencao,
           diretoresList,
           activeDiretoresList: diretoresList,
           inferFromMandate,
@@ -262,6 +268,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               item.votos_detectados ?? [],
               item.votos_contra_detectados ?? [],
               item.votos_ausentes_detectados ?? [],
+              item.votos_abstencao_detectados ?? [],
               shouldInferVotesFromMandate({
                 resultado: item.resultado,
                 tipo_documento: "ata",
@@ -284,6 +291,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         d.nomes_votacao,
         d.nomes_votacao_contra,
         d.nomes_votacao_ausente ?? [],
+        d.nomes_votacao_abstencao ?? [],
         shouldInferVotesFromMandate({
           resultado: d.resultado,
           tipo_documento: d.tipo_documento,
@@ -341,6 +349,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const { createSupabaseServerClient } = await import("@/lib/supabase/server");
     const db = createSupabaseServerClient();
     const results: ConfirmResult[] = [];
+    const empresaCache: EmpresaCache = new Map();
 
     for (const raw of deliberacoes) {
       const d = sanitizeDelib(raw as ConfirmDelib);
@@ -440,6 +449,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           });
 
           for (const item of rawConfirm.ata_items) {
+            const itemEmpresaId = await resolveEmpresaId(db, item.interessado, effectiveAgenciaId, {
+              cache: empresaCache,
+              setor: item.microtema,
+            });
             const { data: child } = await db
               .from("deliberacoes")
               .insert({
@@ -452,6 +465,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 documento_pai_id: ataPai.id,
                 processo: item.processo,
                 interessado: item.interessado,
+                empresa_id: itemEmpresaId,
                 assunto: item.assunto,
                 relator: item.relator,
                 microtema: item.microtema,
@@ -494,6 +508,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   deliberacao_id: child.id as string,
                   nomes: itemVotingNames,
                   nomesContra: item.votos_contra_detectados ?? [],
+                  nomesAbstencao: item.votos_abstencao_detectados ?? [],
                   nomesAusente: item.votos_ausentes_detectados ?? [],
                   diretoresList,
                   activeDiretoresList,
@@ -516,6 +531,11 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           continue;
         }
 
+        const empresaId = await resolveEmpresaId(db, d.interessado, effectiveAgenciaId, {
+          cache: empresaCache,
+          setor: d.microtema,
+        });
+
         const { data: delib, error: deliberacaoErr } = await db
           .from("deliberacoes")
           .insert({
@@ -526,6 +546,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             tipo_documento: d.tipo_documento ?? "deliberacao",
             processo: d.processo,
             interessado: d.interessado,
+            empresa_id: empresaId,
             assunto: d.assunto,
             procedencia: d.procedencia,
             relator: d.relator,
@@ -588,6 +609,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             deliberacao_id: delib.id as string,
             nomes: votingNames,
             nomesContra: d.nomes_votacao_contra,
+            nomesAbstencao: d.nomes_votacao_abstencao ?? [],
             nomesAusente: d.nomes_votacao_ausente ?? [],
             diretoresList,
             activeDiretoresList,

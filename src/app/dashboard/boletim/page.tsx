@@ -7,11 +7,11 @@ import type {
   DashboardOverview, MicrotemaStats, DiretorOverviewItem,
   Deliberacao, DeliberacaoPaginada, Agencia, BoletimSchedule,
 } from "@/types";
-import { getMicrotemaLabel, formatNumber, cn } from "@/lib/utils";
+import { getMicrotemaLabel, getAreaRegulatoriaLabel, formatNumber, formatDate, cn } from "@/lib/utils";
 import {
   Mail, Copy, Printer, Plus, Trash2, CheckCircle,
   Calendar, Bell, FileText, Users, Tag, Building2, ShieldCheck,
-  AlignLeft, Loader2, X,
+  AlignLeft, Loader2, X, Scale, BookOpen, Layers,
 } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
@@ -34,6 +34,9 @@ interface Section {
 const SECTIONS: Section[] = [
   { id: "kpis",         label: "KPIs Principais",           icon: ShieldCheck },
   { id: "recentes",     label: "Deliberações Recentes",      icon: FileText },
+  { id: "divergentes",  label: "Decisões Divergentes",       icon: Scale },
+  { id: "publicacao",   label: "Publicadas no DOU/DOE",      icon: BookOpen },
+  { id: "areas",        label: "Por Área Regulatória",       icon: Layers },
   { id: "setores",      label: "Setores Mais Afetados",      icon: Tag },
   { id: "diretores",    label: "Diretores em Destaque",      icon: Users },
   { id: "empresas",     label: "Empresas Reguladas (Top 5)", icon: Building2 },
@@ -96,6 +99,53 @@ function buildHtml(opts: {
       </table>
     </td></tr>` : "";
 
+  // Decisões com voto divergente registrado (transparência de dissenso).
+  const divergentes = deliberacoes.filter((d) => Array.isArray(d.votos) && d.votos.some((v) => v.is_divergente));
+  const divergentesHtml = sec("divergentes") && divergentes.length ? `
+    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Decisões Divergentes</h2>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        ${divergentes.slice(0, 5).map((d) => {
+          const nomes = (d.votos ?? []).filter((v) => v.is_divergente).map((v) => v.diretor_nome).filter(Boolean).join(", ");
+          return `
+        <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
+          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${d.numero_deliberacao ?? "—"} — ${d.interessado ?? "Sem interessado"}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:#a1a1aa">${d.resultado ?? "Sem resultado"}${nomes ? ` · <span style="color:#f59e0b">Voto divergente: ${nomes}</span>` : ""}</p>
+        </td></tr>`;
+        }).join("")}
+      </table>
+    </td></tr>` : "";
+
+  // Deliberações publicadas no Diário Oficial (data_publicacao distinta da reunião).
+  const publicadas = deliberacoes.filter((d) => d.data_publicacao).sort((a, b) => (b.data_publicacao ?? "").localeCompare(a.data_publicacao ?? ""));
+  const publicacaoHtml = sec("publicacao") && publicadas.length ? `
+    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Publicadas no DOU/DOE</h2>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        ${publicadas.slice(0, 5).map((d) => `
+        <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
+          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${d.numero_deliberacao ?? "—"} — ${d.interessado ?? "Sem interessado"}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:#71717a">Publicado em ${formatDate(d.data_publicacao)} · Reunião ${formatDate(d.data_reuniao)}</p>
+        </td></tr>`).join("")}
+      </table>
+    </td></tr>` : "";
+
+  // Distribuição por área regulatória.
+  const areaCounts = new Map<string, number>();
+  for (const d of deliberacoes) {
+    const label = getAreaRegulatoriaLabel(d.area_regulatoria);
+    areaCounts.set(label, (areaCounts.get(label) ?? 0) + 1);
+  }
+  const areasOrdenadas = [...areaCounts.entries()].sort((a, b) => b[1] - a[1]);
+  const areasHtml = sec("areas") && areasOrdenadas.length ? `
+    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Por Área Regulatória</h2>
+      ${areasOrdenadas.slice(0, 6).map(([label, total], i) => `
+      <div style="margin-bottom:8px">
+        <p style="margin:0 0 3px;font-size:12px;color:#a1a1aa">${i + 1}. ${label} — <span style="color:#f4f4f5">${formatNumber(total)}</span></p>
+      </div>`).join("")}
+    </td></tr>` : "";
+
   const setoresHtml = sec("setores") && microtemas?.length ? `
     <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
       <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Setores Mais Afetados</h2>
@@ -138,6 +188,9 @@ function buildHtml(opts: {
     <table width="100%" cellpadding="0" cellspacing="0">
       ${kpisHtml}
       ${recentesHtml}
+      ${divergentesHtml}
+      ${publicacaoHtml}
+      ${areasHtml}
       ${setoresHtml}
       ${diretoresHtml}
     </table>
@@ -197,7 +250,7 @@ export default function BoletimPage() {
   });
   const { data: deliberacoesPag } = useQuery({
     queryKey: ["deliberacoes-boletim", agenciaId],
-    queryFn: () => api.get<DeliberacaoPaginada>(`/deliberacoes?limit=10${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
+    queryFn: () => api.get<DeliberacaoPaginada>(`/deliberacoes?limit=30${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
   });
   const deliberacoes: Deliberacao[] = deliberacoesPag?.data ?? [];
 

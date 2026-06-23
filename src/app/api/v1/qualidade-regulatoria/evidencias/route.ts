@@ -9,11 +9,13 @@ export const dynamic = "force-dynamic";
 export async function GET(req: NextRequest) {
   const agencia = req.nextUrl.searchParams.get("agencia_sigla")?.toUpperCase();
   const criterio = Number(req.nextUrl.searchParams.get("criterio_id") ?? 0);
+  const origem = req.nextUrl.searchParams.get("origem");
   try {
     const db = createSupabaseServerClient();
     let query = db.from("qualidade_regulatoria_evidencias").select("*").order("created_at", { ascending: false }).limit(500);
     if (agencia) query = query.eq("agencia_sigla", agencia);
     if (criterio) query = query.eq("criterio_id", criterio);
+    if (origem) query = query.eq("origem", origem);
     const { data, error } = await query;
     if (!error && data?.length) return NextResponse.json({ data, source: "database" });
   } catch {

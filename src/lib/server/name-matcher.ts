@@ -116,3 +116,45 @@ export function normalizeName(name: string): string {
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
     .join(" ");
 }
+
+// ─── Matching de empresas (interessado) ────────────────────────────────────
+export interface EmpresaRecord {
+  id: string;
+  nome_normalizado: string;
+  nome_variantes: string[];
+}
+
+/**
+ * Chave canônica de uma razão social: remove acentos, caixa, pontuação e sufixos
+ * societários (S.A., LTDA, EIRELI...) para colapsar variantes da mesma empresa.
+ */
+export function canonicalizeEmpresa(nome: string): string {
+  return nome
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[.,/\\()'"]+/g, " ")
+    .replace(/\b(s\s*\/?\s*a|sa|ltda|eireli|epp|mei|me|cia|companhia|concessionaria|holding|participacoes|empreendimentos)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Igual a findBestMatch, mas comparando chaves canônicas de razão social. */
+export function findBestEmpresaMatch(rawName: string, empresas: EmpresaRecord[]): MatchResult {
+  const target = canonicalizeEmpresa(rawName);
+  if (!target || target.length < 3) {
+    return { diretorId: null, score: 0, needsReview: true, isNew: true };
+  }
+  let bestScore = 0;
+  let bestId: string | null = null;
+  for (const emp of empresas) {
+    const candidates = [emp.nome_normalizado, ...emp.nome_variantes.map(canonicalizeEmpresa)];
+    for (const c of candidates) {
+      const score = tokenSortRatio(target, c);
+      if (score > bestScore) { bestScore = score; bestId = emp.id; }
+    }
+  }
+  if (bestScore >= MATCH_THRESHOLD) return { diretorId: bestId, score: bestScore, needsReview: false, isNew: false };
+  if (bestScore >= 0.6) return { diretorId: bestId, score: bestScore, needsReview: true, isNew: false };
+  return { diretorId: null, score: bestScore, needsReview: true, isNew: true };
+}

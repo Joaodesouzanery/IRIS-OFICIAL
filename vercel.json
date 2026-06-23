@@ -34,6 +34,15 @@
     },
     "src/app/api/v1/antt/2026/collect/route.ts": {
       "maxDuration": 120
+    },
+    "src/app/api/v1/empresas/backfill/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/votos/reprocessar-abstencoes/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/v1/qualidade-regulatoria/coletas/derivadas/run/route.ts": {
+      "maxDuration": 120
     }
   },
   "crons": [
@@ -56,6 +65,10 @@
     {
       "path": "/api/v1/mandatos/recalcular",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/v1/qualidade-regulatoria/coletas/derivadas/cron",
+      "schedule": "0 9 * * 1"
     }
   ]
 }
