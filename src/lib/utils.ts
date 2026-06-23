@@ -113,3 +113,44 @@ export const AREAS_REGULATORIAS = [
   "administrativo",
   "outros",
 ] as const;
+
+// Valores válidos de resultado (espelha a constraint da migration 004 e o type Resultado).
+export const RESULTADOS = [
+  "Deferido",
+  "Indeferido",
+  "Parcialmente Deferido",
+  "Retirado de Pauta",
+  "Ratificado",
+  "Aprovado",
+  "Aprovado com Ressalvas",
+  "Aprovado por Unanimidade",
+  "Recomendado",
+  "Determinado",
+  "Autorizado",
+] as const;
+
+// Resultados considerados "positivos" (deferimento/aprovação) para badges e métricas.
+const RESULTADOS_POSITIVOS = new Set<string>([
+  "Deferido",
+  "Aprovado",
+  "Aprovado com Ressalvas",
+  "Aprovado por Unanimidade",
+  "Ratificado",
+  "Autorizado",
+  "Recomendado",
+  "Determinado",
+]);
+
+export function isResultadoPositivo(resultado: string | null | undefined): boolean {
+  return resultado ? RESULTADOS_POSITIVOS.has(resultado) : false;
+}
+
+// Classe de badge para um resultado: verde (positivo), vermelho (Indeferido) ou cinza (neutro).
+const RESULTADO_BADGE_NEUTRO =
+  "text-xs px-2 py-0.5 rounded font-mono bg-zinc-500/15 text-zinc-400 border border-zinc-500/25";
+
+export function getResultadoBadgeClass(resultado: string | null | undefined): string {
+  if (isResultadoPositivo(resultado)) return "badge-green";
+  if (resultado === "Indeferido") return "badge-red";
+  return RESULTADO_BADGE_NEUTRO;
+}

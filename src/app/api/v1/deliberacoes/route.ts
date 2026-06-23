@@ -8,10 +8,12 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDelibList } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
+import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 
 const VALID_SORT_COLUMNS = new Set([
   "data_reuniao",
+  "data_publicacao",
   "numero_deliberacao",
   "microtema",
   "resultado",
@@ -67,8 +69,8 @@ export async function GET(req: NextRequest) {
   let query = db
     .from("deliberacoes")
     .select(
-      `id, numero_deliberacao, reuniao_ordinaria, data_reuniao,
-       interessado, processo, microtema, resultado, pauta_interna,
+      `id, numero_deliberacao, reuniao_ordinaria, data_reuniao, data_publicacao,
+       interessado, processo, microtema, area_regulatoria, resultado, pauta_interna,
        extraction_confidence, agencia_id, created_at,
        tipo_documento, relator, item_numero, documento_pai_id, assunto,
        upload_job_id, raw_extraction,
@@ -131,9 +133,13 @@ export async function GET(req: NextRequest) {
   const microtema = searchParams.get("microtema");
   if (microtema) query = query.eq("microtema", microtema);
 
-  // A coluna area_regulatoria é opcional em ambientes que ainda não receberam
-  // a migration 011. O filtro permanece na UI, mas a API não deve quebrar caso
-  // o banco de produção esteja defasado.
+  const areaRegulatoria = searchParams.get("area_regulatoria");
+  if (areaRegulatoria) {
+    if (!isAreaRegulatoria(areaRegulatoria)) {
+      return NextResponse.json({ error: "area_regulatoria inválida" }, { status: 400 });
+    }
+    query = query.eq("area_regulatoria", areaRegulatoria);
+  }
 
   const statusRevisao = searchParams.get("status_revisao");
   if (statusRevisao === "sem_anexo") query = query.is("upload_job_id", null);

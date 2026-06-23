@@ -69,7 +69,7 @@ export async function ensureColegiadoSources(db: SupabaseServerClient) {
     const agenciaId = agencyIds.get(source.sigla) ?? null;
     const { data: existing, error: readError } = await db
       .from("monitoramento_sites")
-      .select("id")
+      .select("id, seletor_links")
       .eq("url", source.url)
       .maybeSingle();
     if (readError) throw readError;
@@ -81,11 +81,14 @@ export async function ensureColegiadoSources(db: SupabaseServerClient) {
       auto_enfileirar_pdf: true,
       ativo: true,
       estrategia: source.estrategia,
-      seletor_links: "a[href]",
     };
 
     if (existing) {
-      const { error } = await db.from("monitoramento_sites").update(shared).eq("id", existing.id);
+      // Preserva um seletor_links customizado pelo admin; só (re)define o default
+      // quando ainda não há valor não-padrão.
+      const hasCustom = existing.seletor_links && existing.seletor_links !== "a[href]";
+      const updateValues = hasCustom ? shared : { ...shared, seletor_links: "a[href]" };
+      const { error } = await db.from("monitoramento_sites").update(updateValues).eq("id", existing.id);
       if (error) throw error;
       continue;
     }
@@ -93,6 +96,7 @@ export async function ensureColegiadoSources(db: SupabaseServerClient) {
     const { error } = await db.from("monitoramento_sites").insert({
       ...shared,
       url: source.url,
+      seletor_links: "a[href]",
       metadata: {
         fonte_oficial: true,
         collector: "colegiado",

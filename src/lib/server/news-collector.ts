@@ -12,6 +12,38 @@ export interface NewsSourceConfig {
   strategy: "artesp" | "govbr";
   tier?: "core" | "expanded";
   profile?: string;
+  /** Seletor de links configurável via banco (monitoramento_sites.seletor_links). */
+  linkSelector?: string | null;
+}
+
+// Seletor de links restrito (".classe", "[atributo]", "tag.classe") aplicado como
+// pré-filtro sobre os anchors. Vazio/"a[href]"/não-parseável mantém todos.
+function matchesLinkSelector(attrs: string, selector: string): boolean {
+  const classMatch = selector.match(/\.([\w-]+)/);
+  if (classMatch) {
+    const classAttr = attrs.match(/class=["']([^"']*)["']/i)?.[1] ?? "";
+    if (!new RegExp(`(^|\\s)${classMatch[1]}(\\s|$)`).test(classAttr)) return false;
+  }
+  const attrMatch = selector.match(/\[([\w-]+)/);
+  if (attrMatch) {
+    if (!new RegExp(`(^|\\s)${attrMatch[1]}(=|\\s|$)`, "i").test(attrs)) return false;
+  }
+  return true;
+}
+
+function filterAnchorsBySelector<T extends { attrs: string }>(
+  anchors: T[],
+  selector: string | null | undefined,
+  baseUrl: string,
+): T[] {
+  const sel = selector?.trim();
+  if (!sel || sel === "a[href]" || sel === "a") return anchors;
+  const filtered = anchors.filter((a) => matchesLinkSelector(a.attrs, sel));
+  if (filtered.length === 0 && anchors.length > 0) {
+    console.warn(`[news-collector] seletor "${sel}" não casou nenhum link em ${baseUrl}; usando todos`);
+    return anchors;
+  }
+  return filtered;
 }
 
 export interface CollectedRegulatoryNews {
@@ -301,9 +333,11 @@ async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number): Pr
   const links: NewsLink[] = [];
 
   for (const page of listingPages) {
+    // O seletor configurável (linkSelector) é aplicado no caminho govbr, cujos
+    // anchors carregam os atributos da tag; ARTESP usa parser especializado próprio.
     const anchors = source.strategy === "artesp"
       ? extractArtespNewsAnchors(page.html, page.url)
-      : extractAnchors(page.html, page.url);
+      : filterAnchorsBySelector(extractAnchors(page.html, page.url), source.linkSelector, page.url);
     for (const anchor of anchors) {
       const url = normalizeNewsUrl(anchor.href);
       if (!url || !isNewsDetailUrl(source, url)) continue;
@@ -647,19 +681,20 @@ function normalizeArtespNewsUrl(value: URL) {
 }
 
 function extractAnchors(html: string, baseUrl: string) {
-  const anchors: Array<{ href: string; text: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null }> = [];
-  const re = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  const anchors: Array<{ href: string; text: string; attrs: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null }> = [];
+  const re = /<a\b([^>]*?)href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi;
   let match: RegExpExecArray | null;
 
   while ((match = re.exec(html)) !== null) {
-    const text = cleanText(stripTags(match[2]));
+    const text = cleanText(stripTags(match[4]));
     if (!text) continue;
     try {
-      const href = new URL(decodeHtml(match[1]), baseUrl).toString();
+      const href = new URL(decodeHtml(match[2]), baseUrl).toString();
       const image = extractScopedThumbnail(html, match.index, match.index + match[0].length, baseUrl);
       anchors.push({
         href,
         text,
+        attrs: `${match[1]} ${match[3]}`,
         imageUrl: image.url,
         imageSource: image.source,
         publishedAt: extractNearbyListingDate(html, match.index) ?? extractDateFromText(text),

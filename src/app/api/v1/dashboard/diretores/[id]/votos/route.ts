@@ -18,8 +18,8 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     .from("votos")
     .select(
       `id, tipo_voto, is_divergente, created_at,
-       deliberacao:deliberacoes(
-         id, numero_deliberacao, titulo, resultado, data_deliberacao, tema, microtema,
+       deliberacao:deliberacoes!inner(
+         id, numero_deliberacao, assunto, resultado, data_reuniao, microtema,
          agencia:agencias(sigla)
        )`
     )
@@ -28,7 +28,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     .limit(limit);
 
   if (agenciaId) {
-    query = query.eq("deliberacoes.agencia_id", agenciaId);
+    query = query.eq("deliberacao.agencia_id", agenciaId);
   }
 
   const { data, error } = await query;

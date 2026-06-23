@@ -8,6 +8,8 @@ import {
 } from "@/lib/server/antt-2026-collector";
 import type { AnttCollectResponse, AnttPreviewResponse } from "@/types";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
+import { drainFetchStats } from "@/lib/server/resilient-fetch";
+import { drainHeadlessOutcomes } from "@/lib/server/headless";
 
 export const dynamic = "force-dynamic";
 
@@ -60,18 +62,30 @@ export async function POST(req: NextRequest) {
       .maybeSingle();
 
     const { data: run } = site?.id
-      ? await db.from("monitoramento_runs").insert({ site_id: site.id, status: "running" }).select("id").single()
+      ? await db.from("monitoramento_runs").insert({ site_id: site.id, status: "running", trigger_type: "scheduled" }).select("id").single()
       : { data: null };
+
+    const startedAt = Date.now();
+    drainFetchStats();
+    drainHeadlessOutcomes();
 
     const result = await collectAntt2026Documents(db, { maxPages, maxMeetings });
 
     if (run?.id) {
+      const fetchStats = drainFetchStats();
+      const headlessStats = drainHeadlessOutcomes();
       await db.from("monitoramento_runs").update({
         finished_at: new Date().toISOString(),
         status: result.errors.length > 0 ? "error" : "ok",
         itens_encontrados: result.documentos_encontrados,
         novos_itens: result.documentos_baixados,
         error_message: result.errors.length > 0 ? result.errors.slice(0, 5).join(" | ").slice(0, 1000) : null,
+        duration_ms: Date.now() - startedAt,
+        fetch_retries: fetchStats.retries,
+        http_429_count: fetchStats.http429,
+        throttle_wait_ms: fetchStats.throttleWaitsMs,
+        headless_dependency_missing: headlessStats.dependency_missing,
+        headless_launch_failed: headlessStats.launch_failed,
       }).eq("id", run.id);
     }
 

@@ -2,6 +2,11 @@ import crypto from "crypto";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { AnttCollectResponse } from "@/types";
 import type { DiscoveredMonitoringItem } from "@/lib/server/monitoring";
+import { awaitHostSlot } from "@/lib/server/resilient-fetch";
+
+// Espaçamento mínimo entre requests ao portal da ANTT (evita 429/403). fetchSecure
+// é preservado (whitelist de host, redirect manual, limites de bytes) — só ganha throttle.
+const ANTT_THROTTLE_MS = Number(process.env.COLLECTOR_HOST_THROTTLE_MS ?? "0") || 800;
 
 export const ANTT_2026_SOURCE_URL = "https://portal.antt.gov.br/web/guest/reunioes-da-diretoria";
 
@@ -490,6 +495,7 @@ async function fetchSecure(
   redirects = 0,
 ): Promise<{ buffer: Buffer; contentType: string | null; finalUrl: string }> {
   const url = assertAllowedUrl(rawUrl, options.allowedHosts);
+  await awaitHostSlot(url.host, ANTT_THROTTLE_MS);
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
 

@@ -1,11 +1,19 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { Fragment, useState, useEffect, useMemo } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { AREAS_REGULATORIAS, cn, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel } from "@/lib/utils";
+import { format, parseISO } from "date-fns";
+import { ptBR } from "date-fns/locale";
+import {
+  AREAS_REGULATORIAS, RESULTADOS, cn, formatDate, getAreaRegulatoriaLabel,
+  getMicrotemaLabel, getResultadoBadgeClass,
+} from "@/lib/utils";
 import type { DeliberacaoPaginada, Agencia, Deliberacao } from "@/types";
-import { Search, Download, ChevronLeft, ChevronRight, ExternalLink, Trash2 } from "lucide-react";
+import {
+  Search, Download, ChevronLeft, ChevronRight, ExternalLink, Trash2,
+  ChevronUp, ChevronDown, ChevronsUpDown,
+} from "lucide-react";
 import Link from "next/link";
 import { HelpTooltip } from "@/components/ui/HelpTooltip";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
@@ -39,6 +47,9 @@ export default function DeliberacoesPage() {
   const [pautaExterna, setPautaExterna] = useState(false);
   const [dateFrom, setDateFrom] = useState<string>("");
   const [dateTo, setDateTo] = useState<string>("");
+  const [sortBy, setSortBy] = useState<string>("data_reuniao");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
+  const [groupBy, setGroupBy] = useState<"none" | "agencia" | "mes">("none");
   const [page, setPage] = useState(1);
 
   const params = new URLSearchParams();
@@ -51,8 +62,20 @@ export default function DeliberacoesPage() {
   if (pautaExterna) params.set("pauta_interna", "false");
   if (dateFrom) params.set("date_from", dateFrom);
   if (dateTo) params.set("date_to", dateTo);
+  params.set("sort_by", sortBy);
+  params.set("sort_order", sortOrder);
   params.set("page", String(page));
   params.set("limit", "50");
+
+  function toggleSort(key: string) {
+    if (sortBy === key) {
+      setSortOrder((o) => (o === "asc" ? "desc" : "asc"));
+    } else {
+      setSortBy(key);
+      setSortOrder("desc");
+    }
+    setPage(1);
+  }
 
   const { data, isLoading } = useQuery({
     queryKey: ["deliberacoes", params.toString()],
@@ -83,6 +106,139 @@ export default function DeliberacoesPage() {
   }, [data, localDelibs]);
 
   const totalCount = (data?.total ?? 0) + localOnlyCount;
+
+  // Agrupamento visual (client-side, sobre a página atual já ordenada pela API).
+  const grupos = useMemo(() => {
+    if (groupBy === "none") {
+      return [{ key: "all", label: "", items: allDelibs }];
+    }
+    const map = new Map<string, { key: string; label: string; items: Deliberacao[] }>();
+    for (const d of allDelibs) {
+      let key: string;
+      let label: string;
+      if (groupBy === "agencia") {
+        key = d.agencia?.sigla ?? "Sem agência";
+        label = key;
+      } else {
+        if (d.data_reuniao) {
+          key = d.data_reuniao.slice(0, 7); // yyyy-MM
+          try {
+            label = format(parseISO(`${key}-01`), "MMMM 'de' yyyy", { locale: ptBR });
+            label = label.charAt(0).toUpperCase() + label.slice(1);
+          } catch {
+            label = key;
+          }
+        } else {
+          key = "sem-data";
+          label = "Sem data";
+        }
+      }
+      if (!map.has(key)) map.set(key, { key, label, items: [] });
+      map.get(key)!.items.push(d);
+    }
+    return Array.from(map.values());
+  }, [allDelibs, groupBy]);
+
+  const COLSPAN = 9;
+
+  function SortHeader({ label, sortKey }: { label: string; sortKey: string }) {
+    const active = sortBy === sortKey;
+    return (
+      <th className="px-4 py-3 text-left text-label text-text-muted font-mono whitespace-nowrap">
+        <button
+          onClick={() => toggleSort(sortKey)}
+          className={cn(
+            "inline-flex items-center gap-1 hover:text-text-secondary transition-colors uppercase",
+            active && "text-brand"
+          )}
+        >
+          {label}
+          {active ? (
+            sortOrder === "asc" ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />
+          ) : (
+            <ChevronsUpDown className="w-3 h-3 opacity-40" />
+          )}
+        </button>
+      </th>
+    );
+  }
+
+  function renderRow(d: Deliberacao) {
+    const isUnanimous =
+      Array.isArray(d.votos) &&
+      d.votos.length > 0 &&
+      d.votos.every((v) => v.tipo_voto === "Favoravel");
+    return (
+      <tr key={d.id} className="border-b border-border/50 hover:bg-bg-hover transition-colors">
+        {/* Agência */}
+        <td className="px-4 py-3 whitespace-nowrap">
+          {d.agencia ? (
+            <span className="text-xs px-2 py-0.5 rounded font-mono font-semibold bg-brand/15 text-brand border border-brand/25">
+              {d.agencia.sigla}
+            </span>
+          ) : (
+            <span className="text-text-muted text-xs font-mono">—</span>
+          )}
+        </td>
+        {/* Reunião / Nº deliberação */}
+        <td className="px-4 py-3 font-mono text-xs text-text-secondary whitespace-nowrap">
+          {d.numero_deliberacao ?? "—"}
+        </td>
+        {/* Data da reunião */}
+        <td className="px-4 py-3 font-mono text-xs text-text-secondary whitespace-nowrap">
+          {formatDate(d.data_reuniao)}
+        </td>
+        {/* Data de publicação */}
+        <td className="px-4 py-3 font-mono text-xs text-text-muted whitespace-nowrap">
+          {formatDate(d.data_publicacao)}
+        </td>
+        {/* Interessado */}
+        <td className="px-4 py-3 text-sm text-text-primary max-w-[200px] truncate">
+          {d.interessado ?? "—"}
+        </td>
+        {/* Microtema */}
+        <td className="px-4 py-3">
+          {d.microtema ? (
+            <span className="badge-orange">{getMicrotemaLabel(d.microtema)}</span>
+          ) : (
+            <span className="text-text-muted text-xs">—</span>
+          )}
+        </td>
+        {/* Área regulatória */}
+        <td className="px-4 py-3">
+          <span className="badge badge-gray text-xs">
+            {getAreaRegulatoriaLabel(d.area_regulatoria)}
+          </span>
+        </td>
+        {/* Resumo */}
+        <td className="px-4 py-3 text-xs text-text-muted max-w-[280px]">
+          <span className="line-clamp-2">{d.resumo_pleito ?? "—"}</span>
+        </td>
+        {/* Resultado + ações */}
+        <td className="px-4 py-3">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {isUnanimous && (
+              <span className="text-xs px-1.5 py-0.5 rounded font-mono bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 whitespace-nowrap">
+                Unanimidade
+              </span>
+            )}
+            {d.resultado && (
+              <span className={cn("badge whitespace-nowrap", getResultadoBadgeClass(d.resultado))}>
+                {d.resultado}
+              </span>
+            )}
+            <Link
+              href={`/dashboard/deliberacoes/${d.id}`}
+              className="text-text-muted hover:text-brand transition-colors"
+              aria-label="Ver detalhes"
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </td>
+      </tr>
+    );
+  }
 
   const handleSearch = (value: string) => {
     setSearch(value);
@@ -200,13 +356,25 @@ export default function DeliberacoesPage() {
 
           {/* Resultado */}
           <select
-            className="select w-36"
+            className="select w-44"
             value={resultado}
             onChange={(e) => { setResultado(e.target.value); setPage(1); }}
           >
             <option value="">Todas as decisões</option>
-            <option value="Deferido">Deferido</option>
-            <option value="Indeferido">Indeferido</option>
+            {RESULTADOS.map((r) => (
+              <option key={r} value={r}>{r}</option>
+            ))}
+          </select>
+
+          {/* Agrupamento */}
+          <select
+            className="select w-40"
+            value={groupBy}
+            onChange={(e) => setGroupBy(e.target.value as "none" | "agencia" | "mes")}
+          >
+            <option value="none">Sem agrupamento</option>
+            <option value="agencia">Agrupar por agência</option>
+            <option value="mes">Agrupar por mês</option>
           </select>
         </div>
 
@@ -264,123 +432,47 @@ export default function DeliberacoesPage() {
           <table className="w-full">
             <thead>
               <tr className="border-b border-border">
-                {["Agência", "Reunião", "Data", "Interessado", "Microtema", "Resumo", ""].map((h) => (
-                  <th
-                    key={h}
-                    className="px-4 py-3 text-left text-label text-text-muted font-mono whitespace-nowrap"
-                  >
-                    {h.toUpperCase()}
-                  </th>
-                ))}
+                <th className="px-4 py-3 text-left text-label text-text-muted font-mono whitespace-nowrap">AGÊNCIA</th>
+                <SortHeader label="Reunião" sortKey="numero_deliberacao" />
+                <SortHeader label="Data" sortKey="data_reuniao" />
+                <SortHeader label="Publicação" sortKey="data_publicacao" />
+                <SortHeader label="Interessado" sortKey="interessado" />
+                <SortHeader label="Microtema" sortKey="microtema" />
+                <th className="px-4 py-3 text-left text-label text-text-muted font-mono whitespace-nowrap">ÁREA</th>
+                <th className="px-4 py-3 text-left text-label text-text-muted font-mono whitespace-nowrap">RESUMO</th>
+                <th className="px-4 py-3 text-left text-label text-text-muted font-mono whitespace-nowrap"></th>
               </tr>
             </thead>
             <tbody>
               {isLoading ? (
                 <tr>
-                  <td colSpan={8} className="px-4 py-12 text-center text-text-muted text-sm">
+                  <td colSpan={COLSPAN} className="px-4 py-12 text-center text-text-muted text-sm">
                     Carregando deliberações...
                   </td>
                 </tr>
               ) : allDelibs.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="px-4 py-12 text-center text-text-muted text-sm">
+                  <td colSpan={COLSPAN} className="px-4 py-12 text-center text-text-muted text-sm">
                     Nenhuma deliberação encontrada
                   </td>
                 </tr>
               ) : (
-                allDelibs.map((d) => {
-                  const isUnanimous =
-                    Array.isArray(d.votos) &&
-                    d.votos.length > 0 &&
-                    d.votos.every((v) => v.tipo_voto === "Favoravel");
-                  const resultadoPositivo =
-                    d.resultado === "Deferido" ||
-                    d.resultado === "Aprovado" ||
-                    d.resultado === "Aprovado por Unanimidade" ||
-                    d.resultado === "Ratificado" ||
-                    d.resultado === "Autorizado" ||
-                    d.resultado === "Recomendado" ||
-                    d.resultado === "Determinado" ||
-                    d.resultado === "Aprovado com Ressalvas";
-
-                  return (
-                    <tr
-                      key={d.id}
-                      className="border-b border-border/50 hover:bg-bg-hover transition-colors"
-                    >
-                      {/* Agência */}
-                      <td className="px-4 py-3 whitespace-nowrap">
-                        {d.agencia ? (
-                          <span className="text-xs px-2 py-0.5 rounded font-mono font-semibold bg-brand/15 text-brand border border-brand/25">
-                            {d.agencia.sigla}
-                          </span>
-                        ) : (
-                          <span className="text-text-muted text-xs font-mono">—</span>
-                        )}
-                      </td>
-                      {/* Reunião / Nº deliberação */}
-                      <td className="px-4 py-3 font-mono text-xs text-text-secondary whitespace-nowrap">
-                        {d.numero_deliberacao ?? "—"}
-                      </td>
-                      {/* Data */}
-                      <td className="px-4 py-3 font-mono text-xs text-text-secondary whitespace-nowrap">
-                        {formatDate(d.data_reuniao)}
-                      </td>
-                      {/* Interessado */}
-                      <td className="px-4 py-3 text-sm text-text-primary max-w-[200px] truncate">
-                        {d.interessado ?? "—"}
-                      </td>
-                      {/* Microtema */}
-                      <td className="px-4 py-3">
-                        {d.microtema ? (
-                          <span className="badge-orange">
-                            {getMicrotemaLabel(d.microtema)}
-                          </span>
-                        ) : (
-                          <span className="text-text-muted text-xs">—</span>
-                        )}
-                      </td>
-                      <td className="px-4 py-3">
-                        <span className="badge badge-gray text-xs">
-                          {getAreaRegulatoriaLabel(d.area_regulatoria)}
-                        </span>
-                      </td>
-                      {/* Resumo */}
-                      <td className="px-4 py-3 text-xs text-text-muted max-w-[280px]">
-                        <span className="line-clamp-2">
-                          {d.resumo_pleito ?? "—"}
-                        </span>
-                      </td>
-                      {/* Resultado + ações */}
-                      <td className="px-4 py-3">
-                        <div className="flex items-center gap-1.5 flex-wrap">
-                          {isUnanimous && (
-                            <span className="text-xs px-1.5 py-0.5 rounded font-mono bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 whitespace-nowrap">
-                              Unanimidade
-                            </span>
-                          )}
-                          {d.resultado && (
-                            <span className={cn(
-                              "badge whitespace-nowrap",
-                              resultadoPositivo ? "badge-green" :
-                              d.resultado === "Indeferido" ? "badge-red" :
-                              "text-xs px-2 py-0.5 rounded font-mono bg-zinc-500/15 text-zinc-400 border border-zinc-500/25"
-                            )}>
-                              {d.resultado}
-                            </span>
-                          )}
-                          <Link
-                            href={`/dashboard/deliberacoes/${d.id}`}
-                            className="text-text-muted hover:text-brand transition-colors"
-                            aria-label="Ver detalhes"
-                          >
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </Link>
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })
+                grupos.map((g) => (
+                  <Fragment key={g.key}>
+                    {groupBy !== "none" && (
+                      <tr className="bg-bg-hover/40 border-b border-border">
+                        <td
+                          colSpan={COLSPAN}
+                          className="px-4 py-2 text-xs font-mono font-semibold text-text-secondary uppercase tracking-wider"
+                        >
+                          {g.label}
+                          <span className="ml-1.5 text-text-muted">({g.items.length})</span>
+                        </td>
+                      </tr>
+                    )}
+                    {g.items.map((d) => renderRow(d))}
+                  </Fragment>
+                ))
               )}
             </tbody>
           </table>

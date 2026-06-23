@@ -126,6 +126,7 @@ function errorPreviewResult(filename: string): PreviewResult {
       tipo_reuniao: null,
       tipo_documento: "documento_apoio",
       data_reuniao: null,
+      data_publicacao: null,
       interessado: null,
       assunto: null,
       procedencia: null,
@@ -584,6 +585,16 @@ function ReviewCard({
                 className="input"
                 value={fields.data_reuniao ?? ""}
                 onChange={(e) => set("data_reuniao", e.target.value || null)}
+              />
+            </div>
+
+            <div className="space-y-1">
+              <label className="text-xs text-text-label font-mono uppercase tracking-wider">Data de Publicação</label>
+              <input
+                type="date"
+                className="input"
+                value={fields.data_publicacao ?? ""}
+                onChange={(e) => set("data_publicacao", e.target.value || null)}
               />
             </div>
 
@@ -1247,6 +1258,7 @@ export default function UploadPage() {
         tipo_reuniao: fields.tipo_reuniao,
         tipo_documento: fields.tipo_documento ?? "deliberacao",
         data_reuniao: fields.data_reuniao,
+        data_publicacao: fields.data_publicacao,
         interessado: fields.interessado,
         assunto: fields.assunto,
         procedencia: fields.procedencia,

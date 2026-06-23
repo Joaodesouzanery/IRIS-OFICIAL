@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { Deliberacao } from "@/types";
-import { AREAS_REGULATORIAS, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel, cn } from "@/lib/utils";
+import { AREAS_REGULATORIAS, RESULTADOS, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel, cn } from "@/lib/utils";
 import {
   ArrowLeft, CheckCircle, XCircle, Pencil, Save, X,
   ChevronDown, ChevronUp, Users, FileText, ShieldCheck, Award, Download,
@@ -17,11 +17,6 @@ import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 
-const RESULTADOS = [
-  "Deferido", "Indeferido", "Parcialmente Deferido", "Retirado de Pauta",
-  "Ratificado", "Aprovado", "Aprovado com Ressalvas", "Aprovado por Unanimidade",
-  "Recomendado", "Determinado", "Autorizado",
-];
 const MICROTEMAS = [
   // ARTESP
   "tarifa", "obras", "multa", "contrato", "reequilibrio",
@@ -126,6 +121,7 @@ export default function DeliberacaoDetailPage() {
           numero_deliberacao: form.numero_deliberacao,
           reuniao_ordinaria:  form.reuniao_ordinaria,
           data_reuniao:       form.data_reuniao,
+          data_publicacao:    form.data_publicacao,
           interessado:        form.interessado,
           processo:           form.processo,
           microtema:          form.microtema,
@@ -304,6 +300,17 @@ export default function DeliberacaoDetailPage() {
               />
             ) : (
               <p className="text-sm text-text-primary">{formatDate(deliberacao.data_reuniao)}</p>
+            )}
+          </Field>
+
+          <Field label="Data de Publicação">
+            {editing ? (
+              <input type="date" className="input text-sm w-full font-mono"
+                value={form.data_publicacao ?? ""}
+                onChange={(e) => set("data_publicacao", e.target.value || null)}
+              />
+            ) : (
+              <p className="text-sm text-text-primary">{formatDate(deliberacao.data_publicacao)}</p>
             )}
           </Field>
 

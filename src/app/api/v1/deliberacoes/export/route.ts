@@ -20,8 +20,8 @@ const escape = (v: unknown) => {
 };
 
 const HEADERS = [
-  "Numero", "Reuniao", "Data", "Interessado", "Processo",
-  "Microtema", "Resultado", "Pauta Interna", "Confiança IA", "Criado Em",
+  "Numero", "Reuniao", "Data", "Publicacao", "Interessado", "Processo",
+  "Microtema", "Area", "Resultado", "Pauta Interna", "Confiança IA", "Criado Em",
   "Tipo Documento", "Relator", "Item", "Assunto",
 ];
 
@@ -36,9 +36,11 @@ export async function GET(req: NextRequest) {
           escape(r.numero_deliberacao),
           escape(r.reuniao_ordinaria),
           escape(r.data_reuniao),
+          escape(r.data_publicacao),
           escape(r.interessado),
           escape(r.processo),
           escape(r.microtema),
+          escape(r.area_regulatoria),
           escape(r.resultado),
           escape(r.pauta_interna ? "Sim" : "Não"),
           escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),
@@ -55,14 +57,16 @@ export async function GET(req: NextRequest) {
     }
 
     const all = demoData.deliberacoes({ limit: 5000 }).data;
-    const rows = all.map((r) =>
+    const rows = all.map((r: any) =>
       [
         escape(r.numero_deliberacao),
         escape(r.reuniao_ordinaria),
         escape(r.data_reuniao),
+        escape(r.data_publicacao),
         escape(r.interessado),
         escape(r.processo),
         escape(r.microtema),
+        escape(r.area_regulatoria),
         escape(r.resultado),
         escape(r.pauta_interna ? "Sim" : "Não"),
         escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),
@@ -82,8 +86,8 @@ export async function GET(req: NextRequest) {
   const db = createSupabaseServerClient();
 
   let query = db.from("deliberacoes").select(
-    `numero_deliberacao, reuniao_ordinaria, data_reuniao,
-     interessado, processo, microtema, resultado,
+    `numero_deliberacao, reuniao_ordinaria, data_reuniao, data_publicacao,
+     interessado, processo, microtema, area_regulatoria, resultado,
      pauta_interna, extraction_confidence, created_at,
      tipo_documento, relator, item_numero, assunto, documento_pai_id,
      agencias (sigla)`
@@ -119,9 +123,11 @@ export async function GET(req: NextRequest) {
       escape(r.numero_deliberacao),
       escape(r.reuniao_ordinaria),
       escape(r.data_reuniao),
+      escape(r.data_publicacao),
       escape(r.interessado),
       escape(r.processo),
       escape(r.microtema),
+      escape(r.area_regulatoria),
       escape(r.resultado),
       escape(r.pauta_interna ? "Sim" : "Não"),
       escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),

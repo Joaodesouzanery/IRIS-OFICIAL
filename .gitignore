@@ -34,3 +34,6 @@ supabase/.temp/
 *.swo
 .DS_Store
 Thumbs.db
+
+# MCP local server config (contém URL de conexão, não versionar)
+.mcp.json

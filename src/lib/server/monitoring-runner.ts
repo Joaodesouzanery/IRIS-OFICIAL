@@ -1,4 +1,9 @@
 import { fetchMonitoringSite, tipoPrioridade } from "@/lib/server/monitoring";
+import { resilientFetch, drainFetchStats } from "@/lib/server/resilient-fetch";
+import { drainHeadlessOutcomes } from "@/lib/server/headless";
+
+const BROWSER_UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
 // Tipos minimos compartilhados entre o check incremental e o backfill.
 export type MonitoringSiteRow = {
@@ -19,6 +24,8 @@ export type ProcessSiteOptions = {
   /** Limites de descoberta repassados ao coletor (usado pela estrategia antt-2026). */
   maxPages?: number;
   maxMeetings?: number;
+  /** Origem da execucao para telemetria. Padrao: 'scheduled'. */
+  triggerType?: "manual" | "scheduled" | "test" | "backfill";
 };
 
 export type ProcessSiteResult = {
@@ -58,11 +65,18 @@ export async function processMonitoringSite(
   site: MonitoringSiteRow,
   options: ProcessSiteOptions = {},
 ): Promise<ProcessSiteResult> {
+  const triggerType = options.triggerType ?? "scheduled";
+  const startedAt = Date.now();
   const { data: run } = await db
     .from("monitoramento_runs")
-    .insert({ site_id: site.id, status: "running" })
+    .insert({ site_id: site.id, status: "running", trigger_type: triggerType })
     .select("id")
     .single();
+
+  // Zera os contadores globais para capturar apenas a atividade deste site
+  // (os sites são processados em série pela rota de check).
+  drainFetchStats();
+  drainHeadlessOutcomes();
 
   try {
     const result = await fetchMonitoringSite(site, {
@@ -136,12 +150,20 @@ export async function processMonitoringSite(
     await db.from("monitoramento_sites").update(sitePatch).eq("id", site.id);
 
     if (run) {
+      const fetchStats = drainFetchStats();
+      const headlessStats = drainHeadlessOutcomes();
       await db.from("monitoramento_runs").update({
         finished_at: new Date().toISOString(),
         status,
         itens_encontrados: result.items.length,
         novos_itens: novosItens,
         documentos_enfileirados: documentosEnfileirados,
+        duration_ms: Date.now() - startedAt,
+        fetch_retries: fetchStats.retries,
+        http_429_count: fetchStats.http429,
+        throttle_wait_ms: fetchStats.throttleWaitsMs,
+        headless_dependency_missing: headlessStats.dependency_missing,
+        headless_launch_failed: headlessStats.launch_failed,
       }).eq("id", run.id);
     }
 
@@ -163,10 +185,18 @@ export async function processMonitoringSite(
     }).eq("id", site.id);
 
     if (run) {
+      const fetchStats = drainFetchStats();
+      const headlessStats = drainHeadlessOutcomes();
       await db.from("monitoramento_runs").update({
         finished_at: new Date().toISOString(),
         status: "error",
         error_message: message.slice(0, 1000),
+        duration_ms: Date.now() - startedAt,
+        fetch_retries: fetchStats.retries,
+        http_429_count: fetchStats.http429,
+        throttle_wait_ms: fetchStats.throttleWaitsMs,
+        headless_dependency_missing: headlessStats.dependency_missing,
+        headless_launch_failed: headlessStats.launch_failed,
       }).eq("id", run.id);
     }
 
@@ -250,14 +280,18 @@ export async function tryAutoEnqueueMonitoredDocument(
 }
 
 async function downloadPdfIfAvailable(url: string): Promise<{ filename: string; buffer: Buffer } | null> {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": "IRIS-Regulacao-Monitor/1.0",
-      Accept: "application/pdf,application/octet-stream,*/*",
-    },
-    next: { revalidate: 0 },
-  });
-  if (!res.ok) return null;
+  let res: Response;
+  try {
+    res = await resilientFetch(url, {
+      headers: {
+        "User-Agent": BROWSER_UA,
+        Accept: "application/pdf,application/octet-stream,*/*",
+      },
+      timeoutMs: 20_000,
+    });
+  } catch {
+    return null;
+  }
   const contentType = res.headers.get("content-type") ?? "";
   const buffer = Buffer.from(await res.arrayBuffer());
   const isPdf = contentType.includes("pdf") || buffer.subarray(0, 5).toString("utf8") === "%PDF-";

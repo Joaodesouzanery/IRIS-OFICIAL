@@ -163,6 +163,7 @@ export interface Deliberacao {
   decisoes_todas: string[] | null;
   pauta_interna: boolean;
   data_reuniao: string | null;
+  data_publicacao?: string | null;
   agencia_id: string | null;
   agencia?: { sigla: string; nome: string } | null;
   auto_classified: boolean;
@@ -363,10 +364,9 @@ export interface DiretorVotoItem {
   deliberacao: {
     id: string;
     numero_deliberacao: string | null;
-    titulo: string | null;
+    assunto: string | null;
     resultado: string | null;
-    data_deliberacao: string | null;
-    tema: string | null;
+    data_reuniao: string | null;
     microtema: string | null;
     agencia: { sigla: string } | null;
   } | null;
@@ -437,6 +437,7 @@ export interface PreviewResultFields {
   tipo_reuniao: string | null;
   tipo_documento: TipoDocumento;
   data_reuniao: string | null;
+  data_publicacao: string | null;
   interessado: string | null;
   assunto: string | null;
   procedencia: string | null;
@@ -520,6 +521,7 @@ export interface ConfirmDelib {
   tipo_reuniao: string | null;
   tipo_documento: TipoDocumento;
   data_reuniao: string | null;
+  data_publicacao: string | null;
   interessado: string | null;
   assunto: string | null;
   procedencia: string | null;

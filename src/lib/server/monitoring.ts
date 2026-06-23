@@ -1,6 +1,10 @@
 import crypto from "crypto";
 import type { MonitoramentoTipoItem } from "@/types";
 import { fetchAntt2026MonitoringItems } from "@/lib/server/antt-2026-collector";
+import { resilientFetchText } from "@/lib/server/resilient-fetch";
+
+const BROWSER_UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
 export interface MonitoringSiteInput {
   id: string;
@@ -46,29 +50,24 @@ export async function fetchMonitoringSite(
     };
   }
 
-  const res = await fetch(site.url, {
+  // UA de navegador + retry/backoff/throttle (reduz 403/429 de portais como ARTESP).
+  const html = await resilientFetchText(site.url, {
     headers: {
-      "User-Agent": "IRIS-Regulacao-Monitor/1.0",
+      "User-Agent": BROWSER_UA,
       Accept: "text/html,application/xhtml+xml",
+      "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
     },
-    next: { revalidate: 0 },
   });
-
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status} ao consultar site monitorado`);
-  }
-
-  const html = await res.text();
   const contentHash = sha256(html);
   // Respeita a estrategia explicita: fontes "html-static" (ex.: ANM/ARTESP de
   // reunioes colegiadas) usam o parser de documentos mesmo estando em gov.br.
   // Sem isso, a pagina de reunioes da ANM caía no parser de NOTICIAS (filtra
   // apenas links /noticias/) e nao encontrava pautas/atas/votos.
   const items = site.estrategia === "html-static"
-    ? parseMonitoringHtml(html, site.url)
+    ? parseMonitoringHtml(html, site.url, site.seletor_links)
     : site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
-      ? parseGovBrNewsHtml(html, site.url)
-      : parseMonitoringHtml(html, site.url);
+      ? parseGovBrNewsHtml(html, site.url, site.seletor_links)
+      : parseMonitoringHtml(html, site.url, site.seletor_links);
   const hasAnchors = /<a\b/i.test(html);
 
   return {
@@ -83,8 +82,9 @@ export async function fetchMonitoringSite(
 export function parseMonitoringHtml(
   html: string,
   baseUrl: string,
+  linkSelector?: string | null,
 ): DiscoveredMonitoringItem[] {
-  const anchors = extractAnchors(html, baseUrl)
+  const anchors = applyLinkSelector(extractAnchors(html, baseUrl), linkSelector, baseUrl)
     .filter((a) => {
       const combined = normalizeText(`${a.text} ${decodeURIComponentSafe(a.href)}`);
       return DOC_LABEL_RE.test(combined) || PDF_RE.test(a.href) || /\/view(?:$|[/?#])|sei|deliber|pauta|ata|voto|reunio|colegiad|sessao/.test(combined);
@@ -127,8 +127,9 @@ export function parseMonitoringHtml(
 export function parseGovBrNewsHtml(
   html: string,
   baseUrl: string,
+  linkSelector?: string | null,
 ): DiscoveredMonitoringItem[] {
-  const anchors = extractAnchors(html, baseUrl)
+  const anchors = applyLinkSelector(extractAnchors(html, baseUrl), linkSelector, baseUrl)
     .filter((a) => /\/noticias\//i.test(a.href) || /\/assuntos\/noticias\//i.test(a.href))
     .filter((a) => normalizeText(a.text).length >= 18);
 
@@ -165,20 +166,28 @@ export function parseGovBrNewsHtml(
   return items;
 }
 
-function extractAnchors(html: string, baseUrl: string) {
-  const anchors: Array<{ href: string; text: string; index: number }> = [];
-  const re = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+interface ExtractedAnchor {
+  href: string;
+  text: string;
+  index: number;
+  attrs: string;
+}
+
+function extractAnchors(html: string, baseUrl: string): ExtractedAnchor[] {
+  const anchors: ExtractedAnchor[] = [];
+  const re = /<a\b([^>]*?)href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi;
   let match: RegExpExecArray | null;
 
   while ((match = re.exec(html)) !== null) {
-    const hrefRaw = decodeHtml(match[1]);
-    const text = cleanText(stripTags(match[2])) || inferLinkText(hrefRaw);
+    const hrefRaw = decodeHtml(match[2]);
+    const text = cleanText(stripTags(match[4])) || inferLinkText(hrefRaw);
     if (!text) continue;
     try {
       anchors.push({
         href: new URL(hrefRaw, baseUrl).toString(),
         text,
         index: match.index,
+        attrs: `${match[1]} ${match[3]}`,
       });
     } catch {
       // Ignore malformed links from government CMS fragments.
@@ -186,6 +195,41 @@ function extractAnchors(html: string, baseUrl: string) {
   }
 
   return anchors;
+}
+
+// Seletor de links configurável via banco (monitoramento_sites.seletor_links).
+// Suporta formas restritas: ".classe", "[atributo]", "tag.classe". Quando vazio,
+// "a[href]" ou não-parseável, mantém todos os anchors. Se o seletor zerar a lista
+// (provável regressão de config), faz fallback para a lista completa e loga.
+function applyLinkSelector(
+  anchors: ExtractedAnchor[],
+  selector: string | null | undefined,
+  baseUrl: string,
+): ExtractedAnchor[] {
+  const sel = selector?.trim();
+  if (!sel || sel === "a[href]" || sel === "a") return anchors;
+
+  const filtered = anchors.filter((a) => matchesLinkSelector(a.attrs, sel));
+  if (filtered.length === 0 && anchors.length > 0) {
+    console.warn(`[monitoring] seletor "${sel}" não casou nenhum link em ${baseUrl}; usando todos os links`);
+    return anchors;
+  }
+  return filtered;
+}
+
+function matchesLinkSelector(attrs: string, selector: string): boolean {
+  const classMatch = selector.match(/\.([\w-]+)/);
+  if (classMatch) {
+    const cls = classMatch[1];
+    const classAttr = attrs.match(/class=["']([^"']*)["']/i)?.[1] ?? "";
+    if (!new RegExp(`(^|\\s)${cls}(\\s|$)`).test(classAttr)) return false;
+  }
+  const attrMatch = selector.match(/\[([\w-]+)/);
+  if (attrMatch) {
+    const attr = attrMatch[1];
+    if (!new RegExp(`(^|\\s)${attr}(=|\\s|$)`, "i").test(attrs)) return false;
+  }
+  return true;
 }
 
 function inferLinkText(href: string) {

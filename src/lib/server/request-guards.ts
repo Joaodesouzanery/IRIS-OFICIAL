@@ -1,3 +1,4 @@
+import crypto from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { isConfiguredAdminEmail } from "@/lib/server/admin-emails";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
@@ -21,13 +22,38 @@ export function isDemoWriteBlocked(req: NextRequest): NextResponse | null {
   );
 }
 
-export function requireCron(req: NextRequest): NextResponse | null {
+function extractBearer(req: NextRequest): string {
+  const authHeader = req.headers.get("authorization");
+  return authHeader?.startsWith("Bearer ") ? authHeader.slice("Bearer ".length).trim() : "";
+}
+
+// Comparação de tempo constante para evitar timing attacks no token de cron.
+function timingSafeEqualStr(a: string, b: string): boolean {
+  const bufA = Buffer.from(a);
+  const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) return false;
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
+type CronAuthResult = "ok" | "missing_secret" | "bad_token";
+
+function evaluateCronAuth(req: NextRequest): CronAuthResult {
   const secret = process.env.CRON_SECRET;
-  if (!secret) {
+  if (!secret) return "missing_secret";
+  const token = extractBearer(req);
+  return token && timingSafeEqualStr(token, secret) ? "ok" : "bad_token";
+}
+
+// Distingue "config ausente" (503, erro do servidor) de "token inválido" (401),
+// e loga cada caso para que falhas de cron não passem silenciosas nos Runtime Logs.
+export function requireCron(req: NextRequest, label = "cron"): NextResponse | null {
+  const result = evaluateCronAuth(req);
+  if (result === "missing_secret") {
+    console.error(`[cron-auth] CRON_SECRET não configurado — ${label} não pode autenticar`);
     return NextResponse.json({ error: "CRON_SECRET não configurado" }, { status: 503 });
   }
-  const authHeader = req.headers.get("authorization");
-  if (authHeader !== `Bearer ${secret}`) {
+  if (result === "bad_token") {
+    console.warn(`[cron-auth] token inválido em ${label}`);
     return NextResponse.json({ error: "Não autorizado" }, { status: 401 });
   }
   return null;
@@ -121,13 +147,23 @@ export async function adminUsersCount(): Promise<number> {
   return count ?? 0;
 }
 
-export async function requireAdminOrCron(req: NextRequest): Promise<NextResponse | null> {
+export async function requireAdminOrCron(req: NextRequest, label = "cron"): Promise<NextResponse | null> {
   const demoBlocked = isDemoWriteBlocked(req);
   if (demoBlocked) return demoBlocked;
 
-  const cronSecret = process.env.CRON_SECRET;
-  const authHeader = req.headers.get("authorization");
-  if (cronSecret && authHeader === `Bearer ${cronSecret}`) return null;
+  const result = evaluateCronAuth(req);
+  if (result === "ok") return null;
+
+  // Bearer presente mas CRON_SECRET ausente: torna a falha silenciosa observável
+  // (antes caía direto no fluxo admin e retornava 401 sem pista da causa).
+  if (result === "missing_secret" && extractBearer(req)) {
+    console.error(`[cron-auth] CRON_SECRET ausente; requisição com Bearer em ${label} caiu para fluxo admin`);
+  }
 
   return requireAdmin(req);
+}
+
+// Indica se o segredo de cron está configurado — usado por endpoints de saúde.
+export function hasCronSecret(): boolean {
+  return Boolean(process.env.CRON_SECRET);
 }

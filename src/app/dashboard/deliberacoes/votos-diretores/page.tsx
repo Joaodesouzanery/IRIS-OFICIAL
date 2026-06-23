@@ -399,7 +399,7 @@ function DrilldownPanel({
               <tr className="text-left text-text-label border-b border-border">
                 <th className="py-1.5 pr-3 font-medium">Deliberação</th>
                 <th className="py-1.5 px-2 font-medium">Agência</th>
-                <th className="py-1.5 px-2 font-medium">Tema / Microtema</th>
+                <th className="py-1.5 px-2 font-medium">Microtema</th>
                 <th className="py-1.5 px-2 font-medium">Resultado</th>
                 <th className="py-1.5 px-2 font-medium">Voto</th>
                 <th className="py-1.5 pl-2 font-medium">Data</th>
@@ -409,11 +409,11 @@ function DrilldownPanel({
               {votos.map((v) => (
                 <tr key={v.id} className="border-b border-border/40 hover:bg-bg-card transition-colors">
                   <td className="py-1.5 pr-3 text-text-secondary max-w-[200px] truncate">
-                    {v.deliberacao?.numero_deliberacao ?? v.deliberacao?.titulo ?? "—"}
+                    {v.deliberacao?.numero_deliberacao ?? v.deliberacao?.assunto ?? "—"}
                   </td>
                   <td className="py-1.5 px-2 text-text-muted">{v.deliberacao?.agencia?.sigla ?? "—"}</td>
                   <td className="py-1.5 px-2 text-text-muted">
-                    {[v.deliberacao?.tema, v.deliberacao?.microtema].filter(Boolean).join(" / ") || "—"}
+                    {v.deliberacao?.microtema ?? "—"}
                   </td>
                   <td className="py-1.5 px-2 text-text-secondary">{v.deliberacao?.resultado ?? "—"}</td>
                   <td className="py-1.5 px-2">
@@ -429,8 +429,8 @@ function DrilldownPanel({
                     </span>
                   </td>
                   <td className="py-1.5 pl-2 text-text-muted whitespace-nowrap">
-                    {v.deliberacao?.data_deliberacao
-                      ? new Date(v.deliberacao.data_deliberacao).toLocaleDateString("pt-BR")
+                    {v.deliberacao?.data_reuniao
+                      ? new Date(v.deliberacao.data_reuniao).toLocaleDateString("pt-BR")
                       : v.created_at
                         ? new Date(v.created_at).toLocaleDateString("pt-BR")
                         : "—"}

@@ -3,7 +3,11 @@ import { isDemo } from "@/lib/server/is-demo";
 import { collectRegulatoryNews, type NewsCollectionMode, type NewsSourceConfig } from "@/lib/server/news-collector";
 import { ensureFederalNewsSources, getNewsProfile, getNewsTier } from "@/lib/server/news-sources";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { drainFetchStats, type FetchStats } from "@/lib/server/resilient-fetch";
+import { drainHeadlessOutcomes, type HeadlessStats } from "@/lib/server/headless";
 import type { RegulatoryNewsCollectResponse } from "@/types";
+
+type CollectionTelemetry = { durationMs: number; fetch: FetchStats; headless: HeadlessStats };
 
 export const dynamic = "force-dynamic";
 
@@ -106,9 +110,17 @@ async function collect(req: NextRequest) {
 
   const sourceRows = new Map(selectedSources.map((source) => [source.id, source]));
   const batchOffsets = new Map<string, number>();
+  const collectStartedAt = Date.now();
+  drainFetchStats();
+  drainHeadlessOutcomes();
   const result = automatic
     ? await collectAutomaticBatches(sources, sourceRows, limit, mode)
     : await collectRegulatoryNews(sources, limit, offset, { mode });
+  const telemetry: CollectionTelemetry = {
+    durationMs: Date.now() - collectStartedAt,
+    fetch: drainFetchStats(),
+    headless: drainHeadlessOutcomes(),
+  };
   for (const report of result.source_reports) {
     batchOffsets.set(report.source_id ?? report.agencia_sigla, report.batch_offset ?? offset);
   }
@@ -185,7 +197,7 @@ async function collect(req: NextRequest) {
   });
 
   if (rows.length === 0) {
-    await recordCollectionRuns(db, result.source_reports, automatic);
+    await recordCollectionRuns(db, result.source_reports, automatic, telemetry);
     return NextResponse.json({
       found: 0,
       upserted: 0,
@@ -215,7 +227,7 @@ async function collect(req: NextRequest) {
       status: "error" as const,
       error: `Erro ao salvar noticias coletadas: ${error.message}`,
     }));
-    await recordCollectionRuns(db, failedReports, automatic);
+    await recordCollectionRuns(db, failedReports, automatic, telemetry);
     return NextResponse.json({
       error: "Erro ao salvar noticias coletadas",
       source_reports: failedReports,
@@ -231,7 +243,7 @@ async function collect(req: NextRequest) {
       next_batch: buildNextBatch(result.source_reports, { tier: tierFilter, scope, offset, limit }),
     }, { status: 500 });
   }
-  await recordCollectionRuns(db, result.source_reports, automatic);
+  await recordCollectionRuns(db, result.source_reports, automatic, telemetry);
 
   return NextResponse.json({
     found: items.length,
@@ -334,6 +346,7 @@ function toNewsSourceConfig(source: {
   nome: string;
   url: string;
   estrategia: string;
+  seletor_links?: string | null;
   metadata?: Record<string, unknown> | null;
   agencia: { sigla: string } | Array<{ sigla: string }> | null;
 }): NewsSourceConfig | null {
@@ -350,13 +363,14 @@ function toNewsSourceConfig(source: {
       : "govbr",
     tier,
     profile: sourceNewsProfile(source),
+    linkSelector: source.seletor_links ?? null,
   };
 }
 
 function listConfiguredSources(db: ReturnType<typeof import("@/lib/supabase/server").createSupabaseServerClient>, activeOnly: boolean) {
   let query = db
     .from("monitoramento_sites")
-    .select("id, nome, url, estrategia, metadata, agencia:agencias(sigla)")
+    .select("id, nome, url, estrategia, seletor_links, metadata, agencia:agencias(sigla)")
     .eq("tipo_fonte", "noticias");
   if (activeOnly) query = query.eq("ativo", true);
   return query.order("nome", { ascending: true });
@@ -470,8 +484,20 @@ async function recordCollectionRuns(
   db: ReturnType<typeof import("@/lib/supabase/server").createSupabaseServerClient>,
   reports: RegulatoryNewsCollectResponse["source_reports"],
   automatic: boolean,
+  telemetry?: CollectionTelemetry,
 ) {
   if (!reports?.length) return;
+  // Agregados da execução (duração/retries/429/headless) repetidos em cada row.
+  const tele = telemetry
+    ? {
+        duration_ms: telemetry.durationMs,
+        fetch_retries: telemetry.fetch.retries,
+        http_429_count: telemetry.fetch.http429,
+        throttle_wait_ms: telemetry.fetch.throttleWaitsMs,
+        headless_dependency_missing: telemetry.headless.dependency_missing,
+        headless_launch_failed: telemetry.headless.launch_failed,
+      }
+    : {};
   const rows = reports.map((report) => ({
     site_id: report.source_id ?? null,
     trigger_type: automatic ? "scheduled" : "manual",
@@ -485,6 +511,7 @@ async function recordCollectionRuns(
     imagens_com_falha: report.images_failed ?? 0,
     status: report.status,
     error_message: report.error ?? null,
+    ...tele,
   }));
   const { error } = await db.from("regulatory_news_collection_runs").insert(rows);
   if (error) console.warn("[noticias/coletar] Nao foi possivel registrar historico:", error.message);

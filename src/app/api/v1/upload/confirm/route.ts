@@ -7,6 +7,7 @@
 import crypto from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
+import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName } from "@/lib/server/name-matcher";
 import { requireAdmin } from "@/lib/server/request-guards";
@@ -26,11 +27,7 @@ import type {
   VotoEmbutido,
 } from "@/types";
 
-const RESULTADOS_VALIDOS = new Set<string>([
-  "Deferido", "Indeferido", "Parcialmente Deferido", "Retirado de Pauta",
-  "Ratificado", "Aprovado", "Aprovado com Ressalvas", "Aprovado por Unanimidade",
-  "Recomendado", "Determinado", "Autorizado",
-]);
+const RESULTADOS_VALIDOS = new Set<string>(RESULTADOS);
 
 const MICROTEMAS_VALIDOS = new Set<string>([
   "tarifa", "obras", "multa", "contrato", "reequilibrio",
@@ -71,6 +68,7 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
     tipo_documento: d.tipo_documento && TIPOS_DOCUMENTO_VALIDOS.has(d.tipo_documento)
       ? d.tipo_documento : "deliberacao",
     data_reuniao: d.data_reuniao && RE_ISO_DATE.test(d.data_reuniao) ? d.data_reuniao : null,
+    data_publicacao: d.data_publicacao && RE_ISO_DATE.test(d.data_publicacao) ? d.data_publicacao : null,
     interessado: d.interessado ? String(d.interessado).slice(0, 255) : null,
     assunto: d.assunto ? String(d.assunto).slice(0, 500) : null,
     procedencia: d.procedencia ? String(d.procedencia).slice(0, 200) : null,
@@ -209,6 +207,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           tipo_reuniao: d.tipo_reuniao as "Ordinaria" | "Extraordinaria" | null,
           tipo_documento: "ata",
           data_reuniao: d.data_reuniao,
+          data_publicacao: d.data_publicacao,
           interessado: null,
           assunto: `${documentLabel} da ${d.numero_reuniao ?? ""}ª Reunião - ${rawConfirm.ata_items.length} processos`,
           procedencia: d.procedencia,
@@ -241,6 +240,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             tipo_reuniao: d.tipo_reuniao as "Ordinaria" | "Extraordinaria" | null,
             tipo_documento: "ata",
             data_reuniao: d.data_reuniao,
+            data_publicacao: d.data_publicacao,
             interessado: item.interessado,
             assunto: item.assunto,
             procedencia: null,
@@ -303,6 +303,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         tipo_reuniao: d.tipo_reuniao as "Ordinaria" | "Extraordinaria" | null,
         tipo_documento: d.tipo_documento ?? "deliberacao",
         data_reuniao: d.data_reuniao,
+        data_publicacao: d.data_publicacao,
         interessado: d.interessado,
         assunto: d.assunto,
         procedencia: d.procedencia,
@@ -411,6 +412,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               procedencia: d.procedencia,
               pauta_interna: false,
               data_reuniao: d.data_reuniao,
+              data_publicacao: d.data_publicacao,
               agencia_id: effectiveAgenciaId,
               auto_classified: true,
               extraction_confidence: d.extraction_confidence,
@@ -456,6 +458,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 resultado: item.resultado,
                 pauta_interna: false,
                 data_reuniao: d.data_reuniao,
+                data_publicacao: d.data_publicacao,
                 agencia_id: effectiveAgenciaId,
                 auto_classified: true,
                 extraction_confidence: item.processo ? 0.8 : 0.4,
@@ -532,6 +535,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             decisoes_todas: d.decisoes_todas.length > 0 ? d.decisoes_todas : null,
             pauta_interna: d.pauta_interna,
             data_reuniao: d.data_reuniao,
+            data_publicacao: d.data_publicacao,
             agencia_id: effectiveAgenciaId,
             auto_classified: true,
             extraction_confidence: d.extraction_confidence,

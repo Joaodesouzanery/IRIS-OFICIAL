@@ -252,6 +252,30 @@ function parseDataNumerica(text: string): string | null {
   return parseOneDateNumerica(match[1], match[2], match[3]);
 }
 
+// Data de publicação no Diário Oficial (DOU/DOE), distinta da data da reunião.
+// Ex: "Publicado no DOU em 25/01/2026", "publicada no D.O.E. de 25 de janeiro de 2026".
+const RE_DATA_PUBLICACAO_NUM =
+  /(?:publicad[oa]|publica[çc][ãa]o|D\.?O\.?[UE]\.?|di[áa]rio\s+oficial)[^\d]{0,40}(\d{2})\/(\d{2})\/(\d{4})/gi;
+const RE_DATA_PUBLICACAO_EXT =
+  /(?:publicad[oa]|publica[çc][ãa]o|D\.?O\.?[UE]\.?|di[áa]rio\s+oficial)[^\d]{0,40}(\d{1,2})\s+de\s+([a-záéíóúâêôãõçàü]+)\s+de\s+(\d{4})/gi;
+
+function parseDataPublicacao(text: string): string | null {
+  // Primeiro por extenso (mais específico), depois numérico.
+  RE_DATA_PUBLICACAO_EXT.lastIndex = 0;
+  const ext = RE_DATA_PUBLICACAO_EXT.exec(text);
+  if (ext) {
+    const result = parseOneDateExtenso([ext[0], ext[1], ext[2], ext[3]] as unknown as RegExpExecArray);
+    if (result) return result;
+  }
+  RE_DATA_PUBLICACAO_NUM.lastIndex = 0;
+  const num = RE_DATA_PUBLICACAO_NUM.exec(text);
+  if (num) {
+    const result = parseOneDateNumerica(num[1], num[2], num[3]);
+    if (result) return result;
+  }
+  return null;
+}
+
 // Prioridade para resultado principal quando há múltiplos verbos decisórios
 const RESULTADO_PRIORIDADE: Record<string, number> = {
   "Aprovado com Ressalvas": 1,
@@ -311,6 +335,7 @@ export interface ExtractedFields {
   numero_reuniao: string | null;    // apenas o número ordinal "1176"
   tipo_reuniao: string | null;      // "Ordinaria" | "Extraordinaria"
   data_reuniao: string | null;      // ISO: "YYYY-MM-DD"
+  data_publicacao: string | null;   // ISO: data de publicação no DOU/DOE (distinta da reunião)
   interessado: string | null;
   processo: string | null;
   assunto: string | null;           // campo "Assunto:" das deliberações ARTESP
@@ -371,6 +396,9 @@ export function extractFields(text: string): ExtractedFields {
     parseDataExtensoANM(text) ??
     parseDataExtenso(text) ??
     parseDataNumerica(text);
+
+  // Data de publicação no DOU/DOE (opcional, distinta da reunião)
+  const data_publicacao = parseDataPublicacao(text);
 
   // Tipo de reunião
   const tipoMatch = RE_TIPO_REUNIAO.exec(text);
@@ -575,6 +603,7 @@ export function extractFields(text: string): ExtractedFields {
     numero_reuniao,
     tipo_reuniao,
     data_reuniao,
+    data_publicacao,
     interessado,
     processo,
     assunto,
