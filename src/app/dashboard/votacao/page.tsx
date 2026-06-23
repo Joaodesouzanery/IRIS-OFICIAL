@@ -1,10 +1,13 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { formatNumber } from "@/lib/utils";
-import type { VotoMatrixRow, VotoDistribution } from "@/types";
+import { formatNumber, getMicrotemaLabel } from "@/lib/utils";
+import type { VotoMatrixRow, VotoDistribution, Agencia } from "@/types";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
+import { IrisLineChart } from "@/components/charts/IrisLineChart";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DIRETORES_TABS } from "@/lib/module-tabs";
 
@@ -22,15 +25,45 @@ const TIPO_VOTO_LABELS: Record<string, string> = {
   Ausente: "Ausente",
 };
 
+const MICROTEMAS = [
+  "tarifa", "obras", "multa", "contrato", "reequilibrio", "fiscalizacao", "seguranca",
+  "ambiental", "desapropriacao", "adimplencia", "pessoal", "usuario",
+  "lavra", "pesquisa", "licenciamento", "servidao", "cfem", "disponibilidade", "recursos", "outros",
+];
+
+type ConsensoPoint = { period: string; total_itens: number; consensuais: number; divergentes: number; pct_consenso: number };
+
 export default function VotacaoPage() {
+  const [agenciaId, setAgenciaId] = useState("");
+  const [microtema, setMicrotema] = useState("");
+  const [dateFrom, setDateFrom] = useState("");
+  const [dateTo, setDateTo] = useState("");
+
+  const qs = new URLSearchParams();
+  if (agenciaId) qs.set("agencia_id", agenciaId);
+  if (microtema) qs.set("microtema", microtema);
+  if (dateFrom) qs.set("date_from", dateFrom);
+  if (dateTo) qs.set("date_to", dateTo);
+  const qsStr = qs.toString() ? `?${qs.toString()}` : "";
+
+  const { data: agencias } = useQuery({
+    queryKey: ["agencias"],
+    queryFn: () => api.get<Agencia[]>("/agencias"),
+  });
+
   const { data: matrix } = useQuery({
-    queryKey: ["votacao", "matrix"],
-    queryFn: () => api.get<VotoMatrixRow[]>("/votacao/matrix"),
+    queryKey: ["votacao", "matrix", qsStr],
+    queryFn: () => api.get<VotoMatrixRow[]>(`/votacao/matrix${qsStr}`),
   });
 
   const { data: distribution } = useQuery({
-    queryKey: ["votacao", "distribution"],
-    queryFn: () => api.get<VotoDistribution[]>("/votacao/distribution"),
+    queryKey: ["votacao", "distribution", qsStr],
+    queryFn: () => api.get<VotoDistribution[]>(`/votacao/distribution${qsStr}`),
+  });
+
+  const { data: timeline } = useQuery({
+    queryKey: ["votacao", "consenso-timeline", qsStr],
+    queryFn: () => api.get<ConsensoPoint[]>(`/votacao/consenso-timeline${qsStr}`),
   });
 
   const pieData = (distribution ?? []).map((d) => ({
@@ -39,14 +72,40 @@ export default function VotacaoPage() {
     color: TIPO_VOTO_COLORS[d.tipo_voto] ?? "#71717a",
   }));
 
+  const timelineData = (timeline ?? []).map((p) => ({ name: p.period, "Consenso (%)": p.pct_consenso }));
+
   return (
     <div className="space-y-6 animate-fade-in">
       <ModuleTabs tabs={DIRETORES_TABS} />
-      <div>
-        <h1 className="text-xl font-semibold text-text-primary">Votação</h1>
-        <p className="text-sm text-text-muted mt-1">
-          Análise de votos e posicionamentos dos diretores
-        </p>
+      <div className="flex items-start justify-between gap-3 flex-wrap">
+        <div>
+          <h1 className="text-xl font-semibold text-text-primary">Votação</h1>
+          <p className="text-sm text-text-muted mt-1">
+            Análise de votos e posicionamentos dos diretores
+          </p>
+        </div>
+        <div className="flex items-center gap-2 flex-wrap">
+          <select className="select w-36" value={agenciaId} onChange={(e) => setAgenciaId(e.target.value)}>
+            <option value="">Todas as agências</option>
+            {(agencias ?? []).map((a) => <option key={a.id} value={a.id}>{a.sigla}</option>)}
+          </select>
+          <select className="select w-40" value={microtema} onChange={(e) => setMicrotema(e.target.value)}>
+            <option value="">Todos os microtemas</option>
+            {MICROTEMAS.map((m) => <option key={m} value={m}>{getMicrotemaLabel(m)}</option>)}
+          </select>
+          <input type="date" className="input w-36 text-xs font-mono" value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} title="De" />
+          <input type="date" className="input w-36 text-xs font-mono" value={dateTo} onChange={(e) => setDateTo(e.target.value)} title="Até" />
+        </div>
+      </div>
+
+      {/* Tendência de consenso */}
+      <div className="card">
+        <p className="section-label mb-3">Tendência de consenso do colegiado (% sem divergência)</p>
+        {timelineData.length > 0 ? (
+          <IrisLineChart data={timelineData} lines={[{ key: "Consenso (%)", color: "#22c55e", label: "Consenso (%)" }]} />
+        ) : (
+          <p className="text-sm text-text-muted">Sem dados de consenso no período.</p>
+        )}
       </div>
 
       {/* Gráficos superiores */}
@@ -122,7 +181,9 @@ export default function VotacaoPage() {
                 (matrix ?? []).map((row) => (
                   <tr key={row.diretor_id} className="border-b border-border/50 hover:bg-bg-hover transition-colors">
                     <td className="px-4 py-3 text-sm text-text-primary font-medium max-w-[200px] truncate">
-                      {row.diretor_nome}
+                      <Link href={`/dashboard/diretores/${row.diretor_id}`} className="hover:text-brand transition-colors">
+                        {row.diretor_nome}
+                      </Link>
                     </td>
                     <td className="px-4 py-3 font-mono text-sm text-success">{row.favoravel}</td>
                     <td className="px-4 py-3 font-mono text-sm text-error">{row.desfavoravel}</td>

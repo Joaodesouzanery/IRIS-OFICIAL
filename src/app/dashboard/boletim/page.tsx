@@ -7,7 +7,7 @@ import type {
   DashboardOverview, MicrotemaStats, DiretorOverviewItem,
   Deliberacao, DeliberacaoPaginada, Agencia, BoletimSchedule,
 } from "@/types";
-import { getMicrotemaLabel, getAreaRegulatoriaLabel, formatNumber, formatDate, cn } from "@/lib/utils";
+import { getMicrotemaLabel, getAreaRegulatoriaLabel, formatNumber, formatDate, escapeHtml, cn } from "@/lib/utils";
 import {
   Mail, Copy, Printer, Plus, Trash2, CheckCircle,
   Calendar, Bell, FileText, Users, Tag, Building2, ShieldCheck,
@@ -93,8 +93,8 @@ function buildHtml(opts: {
       <table width="100%" cellpadding="0" cellspacing="0">
         ${deliberacoes.slice(0, 5).map((d) => `
         <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
-          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${d.numero_deliberacao ?? "—"} — ${d.interessado ?? "Sem interessado"}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:#71717a">${d.assunto ?? d.microtema ?? ""} · ${d.resultado ?? "Sem resultado"}</p>
+          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:#71717a">${escapeHtml(d.assunto ?? d.microtema ?? "")} · ${escapeHtml(d.resultado ?? "Sem resultado")}</p>
         </td></tr>`).join("")}
       </table>
     </td></tr>` : "";
@@ -106,11 +106,11 @@ function buildHtml(opts: {
       <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Decisões Divergentes</h2>
       <table width="100%" cellpadding="0" cellspacing="0">
         ${divergentes.slice(0, 5).map((d) => {
-          const nomes = (d.votos ?? []).filter((v) => v.is_divergente).map((v) => v.diretor_nome).filter(Boolean).join(", ");
+          const nomes = (d.votos ?? []).filter((v) => v.is_divergente).map((v) => v.diretor_nome).filter(Boolean).map((n) => escapeHtml(n)).join(", ");
           return `
         <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
-          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${d.numero_deliberacao ?? "—"} — ${d.interessado ?? "Sem interessado"}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:#a1a1aa">${d.resultado ?? "Sem resultado"}${nomes ? ` · <span style="color:#f59e0b">Voto divergente: ${nomes}</span>` : ""}</p>
+          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:#a1a1aa">${escapeHtml(d.resultado ?? "Sem resultado")}${nomes ? ` · <span style="color:#f59e0b">Voto divergente: ${nomes}</span>` : ""}</p>
         </td></tr>`;
         }).join("")}
       </table>
@@ -124,7 +124,7 @@ function buildHtml(opts: {
       <table width="100%" cellpadding="0" cellspacing="0">
         ${publicadas.slice(0, 5).map((d) => `
         <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
-          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${d.numero_deliberacao ?? "—"} — ${d.interessado ?? "Sem interessado"}</p>
+          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
           <p style="margin:2px 0 0;font-size:12px;color:#71717a">Publicado em ${formatDate(d.data_publicacao)} · Reunião ${formatDate(d.data_reuniao)}</p>
         </td></tr>`).join("")}
       </table>
@@ -160,7 +160,7 @@ function buildHtml(opts: {
       <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Diretores em Destaque</h2>
       ${diretores.slice(0,5).map((d) => `
       <div style="margin-bottom:6px">
-        <p style="margin:0;font-size:12px;color:#a1a1aa">${d.diretor_nome} — <span style="color:#f4f4f5">${formatNumber(d.total)}</span> votos · <span style="color:#22c55e">${d.pct_favor.toFixed(0)}%</span> favoráveis</p>
+        <p style="margin:0;font-size:12px;color:#a1a1aa">${escapeHtml(d.diretor_nome)} — <span style="color:#f4f4f5">${formatNumber(d.total)}</span> votos · <span style="color:#22c55e">${d.pct_favor.toFixed(0)}%</span> favoráveis</p>
       </div>`).join("")}
     </td></tr>` : "";
 

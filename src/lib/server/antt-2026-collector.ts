@@ -274,6 +274,28 @@ export async function collectAntt2026Documents(
         }
 
         response.documentos_baixados++;
+
+        // Conecta os PDFs portadores de voto à fila de extração (entram no fluxo
+        // de revisão de votos). Dedupe por hash dentro do enqueuePdfBuffer.
+        if (["voto", "ata", "deliberacao"].includes(doc.tipo)) {
+          try {
+            const { enqueuePdfBuffer } = await import("@/lib/server/upload-queue");
+            await enqueuePdfBuffer({
+              db,
+              filename: /\.pdf$/i.test(doc.titulo) ? doc.titulo : `${doc.titulo}.pdf`,
+              buffer: downloaded.buffer,
+              agenciaId,
+              metadata: {
+                uploaded_via: "antt-2026-collector",
+                documento_tipo: doc.tipo,
+                meeting_url: meeting.url_reuniao,
+                antt_file_hash: downloaded.hash,
+              },
+            });
+          } catch (enqueueError) {
+            response.errors.push(`enfileirar ${doc.titulo}: ${messageOf(enqueueError)}`);
+          }
+        }
       } catch (error) {
         response.documentos_rejeitados++;
         response.errors.push(`${doc.titulo}: ${messageOf(error)}`);

@@ -65,6 +65,22 @@ export interface MatchResult {
 // ─── Matching ─────────────────────────────────────────────────────────────
 const MATCH_THRESHOLD = 0.85; // equivalente ao 85 do rapidfuzz
 
+/**
+ * Gera formas parciais de um nome completo (prefixo de tokens + primeiro+último),
+ * para casar citações abreviadas ("André Isper") com o nome completo do diretor.
+ * Evita formas de 1 token (ambíguas demais).
+ */
+export function deriveNomeVariantes(nome: string): string[] {
+  const tokens = nome.trim().split(/\s+/).filter(Boolean);
+  if (tokens.length < 3) return [];
+  const variantes = new Set<string>();
+  variantes.add(`${tokens[0]} ${tokens[1]}`);                 // primeiros dois
+  variantes.add(`${tokens[0]} ${tokens[tokens.length - 1]}`); // primeiro + último
+  variantes.add(tokens.slice(0, 3).join(" "));                // primeiros três
+  variantes.delete(nome);
+  return [...variantes];
+}
+
 export function findBestMatch(
   rawName: string,
   diretores: DiretorRecord[]
@@ -77,18 +93,12 @@ export function findBestMatch(
   let bestId: string | null = null;
 
   for (const dir of diretores) {
-    // Compara com nome principal
-    const score = tokenSortRatio(rawName, dir.nome);
-    if (score > bestScore) {
-      bestScore = score;
-      bestId = dir.id;
-    }
-
-    // Compara com variantes
-    for (const variante of dir.nome_variantes) {
-      const varScore = tokenSortRatio(rawName, variante);
-      if (varScore > bestScore) {
-        bestScore = varScore;
+    // Compara com nome principal, variantes cadastradas e formas derivadas.
+    const candidates = [dir.nome, ...dir.nome_variantes, ...deriveNomeVariantes(dir.nome)];
+    for (const cand of candidates) {
+      const score = tokenSortRatio(rawName, cand);
+      if (score > bestScore) {
+        bestScore = score;
         bestId = dir.id;
       }
     }

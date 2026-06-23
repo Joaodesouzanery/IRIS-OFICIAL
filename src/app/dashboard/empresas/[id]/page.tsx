@@ -254,7 +254,9 @@ export default function EmpresaDetailPage() {
                       {dir.nome.split(" ").filter(p => p.length > 2).slice(0, 2).map(p => p[0]).join("")}
                     </span>
                   </div>
-                  <span className="text-xs text-text-secondary flex-1 truncate">{dir.nome}</span>
+                  <Link href={`/dashboard/diretores/${dir.id}`} className="text-xs text-text-secondary flex-1 truncate hover:text-brand transition-colors">
+                    {dir.nome}
+                  </Link>
                   <div className="flex items-center gap-1 shrink-0">
                     <CheckCircle className="w-3 h-3 text-emerald-400" />
                     <span className="text-xs text-emerald-400 font-mono">{dir.favoravel}</span>
@@ -263,6 +265,9 @@ export default function EmpresaDetailPage() {
                         <XCircle className="w-3 h-3 text-red-400 ml-1" />
                         <span className="text-xs text-red-400 font-mono">{dir.total - dir.favoravel}</span>
                       </>
+                    )}
+                    {(dir.divergente ?? 0) > 0 && (
+                      <span className="text-[10px] text-amber-400 font-mono ml-1" title="Votos divergentes">⚡{dir.divergente}</span>
                     )}
                   </div>
                 </div>

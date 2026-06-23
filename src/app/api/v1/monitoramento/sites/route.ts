@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import type { MonitoramentoSite } from "@/types";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { isPublicUrl } from "@/lib/server/url-guard";
 
 const DEMO_SITES: MonitoramentoSite[] = [{
   id: "demo-monitor-artesp",
@@ -66,10 +67,8 @@ export async function POST(req: NextRequest) {
   if (!nome || nome.length > 200) {
     return NextResponse.json({ error: "Nome inválido" }, { status: 400 });
   }
-  try {
-    new URL(url);
-  } catch {
-    return NextResponse.json({ error: "URL inválida" }, { status: 400 });
+  if (!isPublicUrl(url)) {
+    return NextResponse.json({ error: "URL inválida ou endereço interno não permitido" }, { status: 400 });
   }
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");

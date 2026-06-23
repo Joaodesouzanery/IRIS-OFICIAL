@@ -316,6 +316,119 @@ export function computeVotacaoDistribution(delibs: Deliberacao[], agenciaId?: st
 
 // ─── 11. computeVotacaoFidelidade ────────────────────────────────────────────
 
+// ─── Reuniões (agrupamento de deliberações) ──────────────────────────────────
+function reuniaoKey(d: Deliberacao): string {
+  return `${d.agencia_id ?? "-"}__${d.data_reuniao ?? "-"}__${d.numero_reuniao ?? "-"}`;
+}
+
+export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | null) {
+  const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.data_reuniao && isFinalDecisionRecord(d));
+  const map = new Map<string, {
+    agencia_id: string | null; agencia_sigla: string | null; data_reuniao: string | null;
+    numero_reuniao: string | null; tipo_reuniao: string | null;
+    total_itens: number; total_votos: number; divergencias: number;
+  }>();
+  for (const d of rows) {
+    const key = reuniaoKey(d);
+    let e = map.get(key);
+    if (!e) {
+      e = {
+        agencia_id: d.agencia_id ?? null, agencia_sigla: d.agencia?.sigla ?? null,
+        data_reuniao: d.data_reuniao, numero_reuniao: d.numero_reuniao ?? null, tipo_reuniao: d.tipo_reuniao ?? null,
+        total_itens: 0, total_votos: 0, divergencias: 0,
+      };
+      map.set(key, e);
+    }
+    e.total_itens++;
+    e.total_votos += (d.votos ?? []).length;
+    if ((d.votos ?? []).some((v) => v.is_divergente)) e.divergencias++;
+  }
+  return [...map.entries()]
+    .map(([slug, e]) => ({
+      slug, ...e,
+      pct_consenso: e.total_itens > 0 ? Math.round(((e.total_itens - e.divergencias) / e.total_itens) * 1000) / 10 : 0,
+    }))
+    .sort((a, b) => (b.data_reuniao ?? "").localeCompare(a.data_reuniao ?? ""));
+}
+
+export function computeReuniaoDetalhe(
+  delibs: Deliberacao[],
+  key: { agenciaId: string | null; dataReuniao: string | null; numeroReuniao: string | null },
+) {
+  const rows = delibs.filter((d) =>
+    isFinalDecisionRecord(d) &&
+    (d.agencia_id ?? null) === key.agenciaId &&
+    (d.data_reuniao ?? null) === key.dataReuniao &&
+    (d.numero_reuniao ?? null) === (key.numeroReuniao ?? null),
+  );
+  if (rows.length === 0) return null;
+
+  let deferidos = 0, indeferidos = 0, divergencias = 0;
+  const dirMap = new Map<string, { id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number }>();
+  const itens = rows.map((d) => {
+    if (isResultadoPositivo(d.resultado)) deferidos++;
+    else if (d.resultado === "Indeferido") indeferidos++;
+    if ((d.votos ?? []).some((v) => v.is_divergente)) divergencias++;
+    for (const v of d.votos ?? []) {
+      if (!v.diretor_id) continue;
+      let e = dirMap.get(v.diretor_id);
+      if (!e) { e = { id: v.diretor_id, nome: v.diretor_nome ?? v.diretor_id, favoravel: 0, desfavoravel: 0, divergente: 0 }; dirMap.set(v.diretor_id, e); }
+      if (v.tipo_voto === "Favoravel") e.favoravel++;
+      else if (v.tipo_voto === "Desfavoravel") e.desfavoravel++;
+      if (v.is_divergente) e.divergente++;
+    }
+    return {
+      deliberacao_id: d.id,
+      numero_deliberacao: d.numero_deliberacao,
+      interessado: d.interessado,
+      microtema: d.microtema,
+      resultado: d.resultado,
+      votos: (d.votos ?? []).map((v) => ({
+        diretor_id: v.diretor_id, diretor_nome: v.diretor_nome, tipo_voto: v.tipo_voto, is_divergente: v.is_divergente,
+      })),
+    };
+  });
+
+  const first = rows[0];
+  return {
+    cabecalho: {
+      agencia_id: first.agencia_id ?? null,
+      agencia_sigla: first.agencia?.sigla ?? null,
+      data_reuniao: first.data_reuniao,
+      numero_reuniao: first.numero_reuniao ?? null,
+      tipo_reuniao: first.tipo_reuniao ?? null,
+    },
+    resumo: {
+      total_itens: rows.length, deferidos, indeferidos, divergencias,
+      pct_consenso: rows.length > 0 ? Math.round(((rows.length - divergencias) / rows.length) * 1000) / 10 : 0,
+    },
+    itens,
+    diretores: [...dirMap.values()].sort((a, b) => (b.favoravel + b.desfavoravel) - (a.favoravel + a.desfavoravel)),
+  };
+}
+
+export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: string | null) {
+  const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.data_reuniao && isFinalDecisionRecord(d));
+  const byMonth = new Map<string, { total: number; divergentes: number }>();
+  for (const d of rows) {
+    const period = (d.data_reuniao ?? "").slice(0, 7);
+    if (!period) continue;
+    const m = byMonth.get(period) ?? { total: 0, divergentes: 0 };
+    m.total++;
+    if ((d.votos ?? []).some((v) => v.is_divergente)) m.divergentes++;
+    byMonth.set(period, m);
+  }
+  return [...byMonth.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([period, m]) => ({
+      period,
+      total_itens: m.total,
+      consensuais: m.total - m.divergentes,
+      divergentes: m.divergentes,
+      pct_consenso: m.total > 0 ? Math.round(((m.total - m.divergentes) / m.total) * 1000) / 10 : 0,
+    }));
+}
+
 export function computeVotacaoFidelidade(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = filterByAgencia(delibs, agenciaId);
   const map = new Map<string, {
@@ -703,20 +816,27 @@ export function computeEmpresaDetalhe(delibs: Deliberacao[], empresaNome: string
     .sort((a, b) => b.count - a.count);
 
   // Diretores que votaram em deliberações desta empresa
-  const dirMap = new Map<string, { id: string; nome: string; total: number; favoravel: number }>();
+  const dirMap = new Map<string, { id: string; nome: string; total: number; favoravel: number; desfavoravel: number; abstencao: number; divergente: number }>();
   for (const d of rows) {
     for (const v of d.votos ?? []) {
       if (!v.diretor_id) continue;
       if (!dirMap.has(v.diretor_id)) {
-        dirMap.set(v.diretor_id, { id: v.diretor_id, nome: v.diretor_nome ?? v.diretor_id, total: 0, favoravel: 0 });
+        dirMap.set(v.diretor_id, { id: v.diretor_id, nome: v.diretor_nome ?? v.diretor_id, total: 0, favoravel: 0, desfavoravel: 0, abstencao: 0, divergente: 0 });
       }
       const dir = dirMap.get(v.diretor_id)!;
       dir.total++;
       if (v.tipo_voto === "Favoravel") dir.favoravel++;
+      else if (v.tipo_voto === "Desfavoravel") dir.desfavoravel++;
+      else if (v.tipo_voto === "Abstencao") dir.abstencao++;
+      if (v.is_divergente) dir.divergente++;
     }
   }
   const diretores = [...dirMap.values()]
-    .map((d) => ({ ...d, pct_favoravel: d.total > 0 ? (d.favoravel / d.total) * 100 : 0 }))
+    .map((d) => ({
+      ...d,
+      pct_favoravel: d.total > 0 ? (d.favoravel / d.total) * 100 : 0,
+      pct_divergente: d.total > 0 ? (d.divergente / d.total) * 100 : 0,
+    }))
     .sort((a, b) => b.total - a.total);
 
   // Alertas ativos

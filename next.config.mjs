@@ -9,6 +9,22 @@ const nextConfig = {
   outputFileTracingRoot: repoRoot,
 
   async headers() {
+    // CSP pragmática: bloqueia scripts/objetos externos e framing, mantendo o
+    // necessário p/ Next (inline) e Supabase (connect). 'unsafe-inline'/'unsafe-eval'
+    // são exigidos pelo runtime do Next; o ganho real é restringir origens externas.
+    const csp = [
+      "default-src 'self'",
+      "base-uri 'self'",
+      "object-src 'none'",
+      "frame-ancestors 'none'",
+      "img-src 'self' data: https:",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      "font-src 'self' data: https://fonts.gstatic.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
+      "form-action 'self'",
+    ].join("; ");
+
     return [
       {
         source: "/(.*)",
@@ -21,6 +37,11 @@ const nextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+          { key: "Content-Security-Policy", value: csp },
         ],
       },
     ];

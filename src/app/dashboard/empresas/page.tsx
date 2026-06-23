@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import type { EmpresaStats, Agencia, Deliberacao } from "@/types";
+import type { EmpresaStats, Agencia, Deliberacao, EmpresaDetalhe } from "@/types";
 import { getMicrotemaLabel, getMicrotemaColor, formatDate, formatNumber, cn } from "@/lib/utils";
 import { ChevronDown, ChevronUp, Search, Building2, TrendingUp, TrendingDown, Minus, AlertTriangle, ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -42,6 +42,13 @@ export default function EmpresasPage() {
   const { data: deliberacoesData } = useQuery({
     queryKey: ["deliberacoes", agenciaId, "all"],
     queryFn: () => api.get<{ data: Deliberacao[]; total: number; pages: number }>(`/deliberacoes?limit=100${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
+    enabled: expanded !== null,
+  });
+
+  // Detalhe da empresa expandida (resolve via empresa_id; traz votos por diretor)
+  const { data: empresaDetalhe } = useQuery({
+    queryKey: ["empresa-detalhe", expanded],
+    queryFn: () => api.get<EmpresaDetalhe>(`/empresas/${encodeURIComponent(expanded!)}`),
     enabled: expanded !== null,
   });
 
@@ -253,6 +260,29 @@ export default function EmpresasPage() {
                 {/* Expanded content */}
                 {isOpen && (
                   <div className="mt-4 pt-4 border-t border-border space-y-4">
+                    {/* Diretores que decidiram os casos desta empresa */}
+                    {(empresaDetalhe?.diretores?.length ?? 0) > 0 && (
+                      <div>
+                        <p className="text-xs text-text-muted mb-2 font-mono uppercase tracking-wider">Diretores que decidiram</p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                          {empresaDetalhe!.diretores.slice(0, 8).map((dir) => (
+                            <Link
+                              key={dir.id}
+                              href={`/dashboard/diretores/${dir.id}`}
+                              className="flex items-center justify-between gap-2 px-2 py-1 rounded border border-border/60 hover:bg-bg-hover transition-colors"
+                            >
+                              <span className="text-xs text-text-secondary truncate">{dir.nome}</span>
+                              <span className="text-[10px] font-mono shrink-0 flex items-center gap-1.5">
+                                <span className="text-emerald-400">{dir.favoravel}✓</span>
+                                {(dir.desfavoravel ?? 0) > 0 && <span className="text-red-400">{dir.desfavoravel}✗</span>}
+                                {(dir.divergente ?? 0) > 0 && <span className="text-amber-400">⚡{dir.divergente}</span>}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
                     {/* All microtemas */}
                     <div>
                       <p className="text-xs text-text-muted mb-2 font-mono uppercase tracking-wider">Setores</p>

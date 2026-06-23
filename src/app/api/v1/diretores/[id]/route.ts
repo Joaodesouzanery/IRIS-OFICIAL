@@ -87,6 +87,8 @@ export async function GET(
 
   let favoravel = 0, desfavoravel = 0, abstencao = 0, divergente = 0;
   const microtemaCount = new Map<string, number>();
+  const microtemaDiv = new Map<string, number>();
+  const mesMap = new Map<string, { total: number; favoravel: number; desfavoravel: number; divergente: number }>();
   const historico: DiretorProfile["historico"] = [];
 
   for (const v of votos ?? []) {
@@ -101,6 +103,16 @@ export async function GET(
     if (d.is_divergente) divergente++;
     if (d.deliberacoes.microtema) {
       microtemaCount.set(d.deliberacoes.microtema, (microtemaCount.get(d.deliberacoes.microtema) ?? 0) + 1);
+      if (d.is_divergente) microtemaDiv.set(d.deliberacoes.microtema, (microtemaDiv.get(d.deliberacoes.microtema) ?? 0) + 1);
+    }
+    const periodo = d.deliberacoes.data_reuniao?.slice(0, 7);
+    if (periodo) {
+      const m = mesMap.get(periodo) ?? { total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 };
+      m.total++;
+      if (d.tipo_voto === "Favoravel") m.favoravel++;
+      else if (d.tipo_voto === "Desfavoravel") m.desfavoravel++;
+      if (d.is_divergente) m.divergente++;
+      mesMap.set(periodo, m);
     }
     historico.push({
       deliberacao_id: d.deliberacoes.id,
@@ -145,6 +157,15 @@ export async function GET(
     por_microtema: [...microtemaCount.entries()]
       .map(([microtema, t]) => ({ microtema, total: t }))
       .sort((a, b) => b.total - a.total),
+    serie_temporal: [...mesMap.entries()]
+      .map(([period, m]) => ({ period, ...m }))
+      .sort((a, b) => a.period.localeCompare(b.period)),
+    divergencia_por_tema: [...microtemaCount.entries()]
+      .map(([microtema, t]) => ({
+        microtema, total: t, divergente: microtemaDiv.get(microtema) ?? 0,
+        pct_divergente: t > 0 ? Math.round(((microtemaDiv.get(microtema) ?? 0) / t) * 1000) / 10 : 0,
+      }))
+      .sort((a, b) => b.pct_divergente - a.pct_divergente),
     historico,
     tendencias: {
       perfil,

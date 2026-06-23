@@ -620,6 +620,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
               nomes: votingNames,
               nomesContra: d.nomes_votacao_contra,
+              signatariosCount: Array.isArray(d.extraction_raw?.signatarios) ? d.extraction_raw.signatarios.length : 0,
             }),
           });
         if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });

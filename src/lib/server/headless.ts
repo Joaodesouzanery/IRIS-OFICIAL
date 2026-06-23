@@ -10,6 +10,8 @@
  * `console.warn`).
  */
 
+import { isPublicUrl } from "@/lib/server/url-guard";
+
 const BROWSER_USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 const NAV_TIMEOUT_MS = 25_000;
@@ -66,6 +68,13 @@ export async function renderHtmlFallback(url: string, label = "página"): Promis
   if (!isHeadlessEnabled()) {
     recordHeadlessOutcome("disabled");
     return { ok: false, reason: "disabled", message: "HEADLESS_FALLBACK desligado" };
+  }
+
+  // Guard anti-SSRF: nunca navegar para host interno/metadata.
+  if (!isPublicUrl(url)) {
+    recordHeadlessOutcome("navigation_failed");
+    console.error(`[headless] URL bloqueada (SSRF) para ${label}: ${url}`);
+    return { ok: false, reason: "navigation_failed", message: "URL interna bloqueada" };
   }
 
   let browser: import("puppeteer-core").Browser | null = null;

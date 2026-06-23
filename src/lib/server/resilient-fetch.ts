@@ -11,6 +11,8 @@
  * respeito ao header `Retry-After` em 429, e contadores drenáveis para telemetria.
  */
 
+import { assertPublicUrl } from "@/lib/server/url-guard";
+
 export type FetchFailureKind = "falha_rede" | "falha_conteudo";
 
 export class FetchFailureError extends Error {
@@ -127,6 +129,9 @@ export async function awaitHostSlot(host: string, minIntervalMs: number): Promis
  * Em 429, respeita `Retry-After` (limitado a MAX_RETRY_AFTER_MS). Lança `FetchFailureError`.
  */
 export async function resilientFetch(url: string, options: ResilientFetchOptions = {}): Promise<Response> {
+  // Guard anti-SSRF: bloqueia hosts internos/metadata em toda coleta.
+  assertPublicUrl(url);
+
   const retries = options.retries ?? DEFAULT_RETRIES;
   const timeoutMs = options.timeoutMs ?? DEFAULT_TIMEOUT_MS;
   const backoffMs = options.backoffMs ?? DEFAULT_BACKOFF_MS;

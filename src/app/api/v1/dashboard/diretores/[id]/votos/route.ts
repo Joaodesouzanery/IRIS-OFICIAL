@@ -24,7 +24,8 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
        )`
     )
     .eq("diretor_id", id)
-    .order("created_at", { ascending: false })
+    // Ordena pela data da reunião (cronológico real), não pela data de inserção.
+    .order("data_reuniao", { referencedTable: "deliberacao", ascending: false })
     .limit(limit);
 
   if (agenciaId) {

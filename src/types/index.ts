@@ -307,6 +307,8 @@ export interface DiretorProfile {
     pct_divergente: number;
   };
   por_microtema: Array<{ microtema: string; total: number }>;
+  serie_temporal?: Array<{ period: string; total: number; favoravel: number; desfavoravel: number; divergente: number }>;
+  divergencia_por_tema?: Array<{ microtema: string; total: number; divergente: number; pct_divergente: number }>;
   historico: Array<{
     deliberacao_id: string;
     numero_deliberacao: string | null;
@@ -412,7 +414,11 @@ export interface EmpresaDetalhe {
     nome: string;
     total: number;
     favoravel: number;
+    desfavoravel?: number;
+    abstencao?: number;
+    divergente?: number;
     pct_favoravel: number;
+    pct_divergente?: number;
   }>;
   historico: Deliberacao[];
   alertas: string[];

@@ -33,6 +33,8 @@ export function shouldInferVotesFromMandate(input: {
   nomes?: string[];
   nomesContra?: string[];
   nomesAbstencao?: string[];
+  /** Nº de signatários detectados na ata (quórum) — habilita inferência ANM. */
+  signatariosCount?: number;
 }) {
   if (!isFinalVoteDocument(input)) return false;
   if (!input.resultado || input.resultado === "Retirado de Pauta") return false;
@@ -40,7 +42,10 @@ export function shouldInferVotesFromMandate(input: {
   // Divergência ou abstenção quebram a unanimidade e justificam inferir o restante por mandato.
   const hasDivergence = Boolean(input.nomesContra?.length) || Boolean(input.nomesAbstencao?.length);
   const hasNominalNames = Boolean(input.nomes?.length);
-  return hasDivergence || (isUnanimous && !hasNominalNames);
+  // Quórum colegiado (≥2 signatários) com resultado, mas sem voto nominal nem
+  // divergência (caso típico das atas ANM): infere a decisão por mandato.
+  const hasQuorum = (input.signatariosCount ?? 0) >= 2;
+  return hasDivergence || (isUnanimous && !hasNominalNames) || (hasQuorum && !hasNominalNames);
 }
 
 export async function getActiveDiretoresForVote(
@@ -71,7 +76,21 @@ export async function getActiveDiretoresForVote(
     });
   }
 
-  return unique.size > 0 ? [...unique.values()] : fallback;
+  if (unique.size === 0) return fallback;
+
+  // Diretores do fallback que NÃO têm nenhum mandato cadastrado não podem ser
+  // excluídos por data — inclui-os de forma conservadora (evita perder votos de
+  // diretores com datas de mandato ausentes).
+  const { data: comMandato } = await db
+    .from("mandatos")
+    .select("diretor_id, diretores!inner(agencia_id)")
+    .eq("diretores.agencia_id", agenciaId);
+  const temMandato = new Set<string>((comMandato ?? []).map((r: any) => r.diretor_id));
+  for (const d of fallback) {
+    if (!temMandato.has(d.id) && !unique.has(d.id)) unique.set(d.id, d);
+  }
+
+  return [...unique.values()];
 }
 
 export function buildVotoRows(input: {

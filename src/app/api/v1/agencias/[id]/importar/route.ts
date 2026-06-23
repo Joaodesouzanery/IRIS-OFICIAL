@@ -25,8 +25,22 @@ export async function POST(
 
   const curated = getCuratedAgenciaImport(agencia.sigla);
   if (!curated) {
+    // Sem pacote curado: tenta importar diretores genericamente da página oficial
+    // (url_diretores) para a fila de revisão (diretor_candidatos).
+    if (agencia.url_diretores) {
+      const { importDiretoresFromUrl } = await import("@/lib/server/diretores-importer");
+      const result = await importDiretoresFromUrl(db, agencia);
+      const ok = result.status === "ok";
+      return NextResponse.json({
+        modo: "importacao_generica",
+        ...result,
+        message: ok
+          ? `${result.candidatos} candidato(s) de diretor enviados para revisão. Aprove em Votos dos Diretores → Matches pendentes.`
+          : (result.message ?? "Não foi possível importar diretores automaticamente."),
+      }, { status: ok ? 200 : 422 });
+    }
     return NextResponse.json({
-      error: "Ainda não há pacote curado para esta agência. Cadastre/edite manualmente por enquanto.",
+      error: "Sem pacote curado e sem url_diretores cadastrada. Cadastre a URL de diretores ou edite manualmente.",
       supported: ["ANTT", "ANM", "ARTESP"],
     }, { status: 422 });
   }

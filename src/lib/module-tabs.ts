@@ -4,6 +4,7 @@ export const DELIBERACOES_TABS: ModuleTab[] = [
   { label: "Dashboard", href: "/dashboard" },
   { label: "Upload de PDFs", href: "/dashboard/upload" },
   { label: "Deliberações", href: "/dashboard/deliberacoes" },
+  { label: "Reuniões", href: "/dashboard/reunioes" },
   { label: "Votos dos Diretores", href: "/dashboard/deliberacoes/votos-diretores" },
   { label: "Boletim", href: "/dashboard/boletim" },
 ];

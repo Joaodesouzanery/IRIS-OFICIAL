@@ -9,28 +9,30 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeVotacaoFidelidade } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { parseVotacaoFilters, applyDeliberacaoFilters, filterDelibsForVotacao } from "@/lib/server/votacao-filters";
 
 
 export async function GET(req: NextRequest) {
+  const filters = parseVotacaoFilters(req.nextUrl.searchParams);
+
   if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
-      const agenciaId = req.nextUrl.searchParams.get("agencia_id");
-      return NextResponse.json(computeVotacaoFidelidade(getSyncedDelibs(), agenciaId));
+      return NextResponse.json(computeVotacaoFidelidade(filterDelibsForVotacao(getSyncedDelibs(), filters), filters.agenciaId));
     }
     return NextResponse.json(demoData.votacaoFidelidade());
   }
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
-  const agenciaId = req.nextUrl.searchParams.get("agencia_id");
 
   let query = db
     .from("votos")
-    .select(`is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)`);
+    .select(`is_divergente, is_nominal, diretores!inner (id, nome, agencia_id), deliberacoes!inner (data_reuniao, microtema, area_regulatoria, numero_reuniao)`);
 
-  if (agenciaId) {
-    query = query.eq("diretores.agencia_id", agenciaId);
+  if (filters.agenciaId) {
+    query = query.eq("diretores.agencia_id", filters.agenciaId);
   }
+  query = applyDeliberacaoFilters(query, filters);
 
   const { data, error } = await query;
 

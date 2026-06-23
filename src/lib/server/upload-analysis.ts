@@ -216,6 +216,7 @@ export async function analyzeUploadPdf(input: {
     unanimidadeDetectada: fields.unanimidade_detectada,
     nomes: fields.nomes_votacao,
     nomesContra: fields.nomes_votacao_contra,
+    signatariosCount: fields.signatarios?.length ?? 0,
   });
   const mainVotosSugeridos = buildVoteSuggestions({
     nomes: fields.nomes_votacao,

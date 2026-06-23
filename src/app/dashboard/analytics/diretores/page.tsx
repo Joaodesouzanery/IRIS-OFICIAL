@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { DiretorOverviewItem, Deliberacao, DeliberacaoPaginada, Agencia, VotoMatrixRow } from "@/types";
@@ -375,7 +376,11 @@ export default function AnalyticsDiretoresPage() {
               <tbody>
                 {(diretores ?? []).map((d) => (
                   <tr key={d.diretor_id} className="border-b border-border/50 hover:bg-bg-hover transition-colors">
-                    <td className="py-2.5 pr-4 text-text-primary font-medium">{d.diretor_nome}</td>
+                    <td className="py-2.5 pr-4 text-text-primary font-medium">
+                      <Link href={`/dashboard/diretores/${d.diretor_id}`} className="hover:text-brand transition-colors">
+                        {d.diretor_nome}
+                      </Link>
+                    </td>
                     <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{formatNumber(d.total)}</td>
                     <td className="py-2.5 px-3 text-right font-mono text-success">{formatNumber(d.favoravel)}</td>
                     <td className="py-2.5 px-3 text-right font-mono text-error">{formatNumber(d.divergente)}</td>
