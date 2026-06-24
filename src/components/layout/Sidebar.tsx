@@ -17,6 +17,7 @@ import {
   FlaskConical,
   Database,
   Newspaper,
+  Gauge,
 } from "lucide-react";
 
 interface NavItem {
@@ -29,6 +30,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Deliberações", href: "/dashboard/deliberacoes", icon: FileText },
   { label: "Notícias", href: "/dashboard/noticias", icon: Newspaper },
   { label: "Monitoramento", href: "/dashboard/monitoramento", icon: Radar },
+  { label: "Saúde dos Dados", href: "/dashboard/saude-dados", icon: Gauge },
   { label: "Diretores",    href: "/dashboard/analytics/diretores", icon: Users },
   { label: "Análise",      href: "/dashboard/analytics", icon: BarChart3 },
   { label: "Observatório da Regulação",  href: "/dashboard/painel-regulatorio", icon: TrendingUp },
@@ -47,6 +49,9 @@ const MODULE_PATHS: Record<string, string[]> = {
   "/dashboard/monitoramento": [
     "/dashboard/monitoramento",
     "/dashboard/documentos-antt-2026",
+  ],
+  "/dashboard/saude-dados": [
+    "/dashboard/saude-dados",
   ],
   "/dashboard/noticias": [
     "/dashboard/noticias",
