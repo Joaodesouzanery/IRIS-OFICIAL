@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireCron } from "@/lib/server/request-guards";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+export const maxDuration = 60;
 
 export async function GET(req: NextRequest) {
   const guard = requireCron(req);

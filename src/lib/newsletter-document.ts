@@ -132,8 +132,9 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 .hero-logo{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;object-position:center;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid ${t.line};display:flex;flex-direction:column;gap:10px;overflow:hidden;}
-.main-img{width:100%;height:224px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;margin:1px 0;}
-.main-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.main-img{position:relative;width:100%;height:224px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:${t.placeholder};font-weight:700;overflow:hidden;margin:1px 0;}
+.main-img img{position:absolute;inset:0;z-index:1;width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.img-ph{position:relative;z-index:0;text-align:center;padding:0 10px;}
 .art-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:${t.accent};display:block;margin-bottom:8px;}
 .main-title{font-family:'Playfair Display',serif;font-size:25.5px;font-weight:900;line-height:1.01;letter-spacing:0;color:${t.text};text-align:left;}
 .main-body{font-size:13.8px;line-height:1.39;color:${t.body};text-align:justify;hyphens:auto;flex:1 1 auto;min-height:0;overflow:hidden;}
@@ -143,8 +144,8 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 .side-art{padding:18px 34px 12px 22px;border-bottom:1px solid ${t.lineSoft};display:flex;flex-direction:column;gap:8px;flex:1;overflow:visible;}
 .side-art.no-image{gap:9px;justify-content:flex-start;}
 .side-art:last-child{border-bottom:none;}
-.side-img{width:100%;height:94px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:${t.placeholder};font-weight:500;overflow:hidden;}
-.side-img img{width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
+.side-img{position:relative;width:100%;height:94px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:${t.placeholder};font-weight:700;overflow:hidden;}
+.side-img img{position:absolute;inset:0;z-index:1;width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center;display:block;margin:0 auto;}
 .side-title{font-family:'Playfair Display',serif;font-size:17.8px;font-weight:800;line-height:1.08;letter-spacing:0;color:${t.text};text-align:left;}
 .side-excerpt{font-size:11.8px;line-height:1.34;color:${t.bodySoft};text-align:justify;hyphens:auto;flex:0 0 auto;overflow:visible;}
 .side-excerpt p+p{margin-top:6px;}
@@ -186,7 +187,7 @@ function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput, theme: N
 ${newsletterPageStyles(theme)}
 </style>
 <script>
-function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src");if(fallback&&img.src!==fallback){img.removeAttribute("data-fallback-src");img.src=fallback;return;}if(img.parentElement){img.parentElement.remove();}}
+function irisImageFallback(img){var fallback=img.getAttribute("data-fallback-src");if(fallback&&img.src!==fallback){img.removeAttribute("data-fallback-src");img.src=fallback;return;}img.remove();}
 </script>
 </head>
 <body>
@@ -366,7 +367,10 @@ function renderArticleImage(item: RegulatoryNews | undefined, baseUrl: string | 
   if (!item?.imagem_url) return "";
   const src = primaryImageUrl(item.imagem_url, baseUrl);
   const fallback = fallbackImageUrl(item.imagem_url, baseUrl, src);
-  return renderImage(src, fallback, alt);
+  // Placeholder por agência ATRÁS da imagem: a foto cobre quando carrega; se falhar
+  // (hotlink/host fora do ar), mesmo sem JS o cliente de e-mail mostra a sigla — nunca buraco.
+  const label = item.agencia_sigla ?? item.agencia?.sigla ?? item.fonte ?? "IRIS";
+  return `<span class="img-ph">${escapeHtml(label)}</span>${renderImage(src, fallback, alt)}`;
 }
 
 function chunkItems<T>(items: T[], size: number) {

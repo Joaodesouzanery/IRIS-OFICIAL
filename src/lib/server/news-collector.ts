@@ -1,6 +1,8 @@
 import crypto from "crypto";
+import type { HTMLElement } from "node-html-parser";
 import { FetchFailureError, resilientFetchText } from "@/lib/server/resilient-fetch";
 import { tryRenderHtmlFallback } from "@/lib/server/headless";
+import { parseHtml, metaContent, jsonLdBlocks, safeQuery, safeQueryAll, firstAttrValue } from "@/lib/server/html-dom";
 
 export type RegulatoryNewsStatus = "novo" | "selecionado" | "ignorado" | "arquivado";
 
@@ -129,9 +131,10 @@ export async function extractOfficialImageFromNewsUrl(input: {
 }) {
   const strategy = input.url.includes("artesp.sp.gov.br") ? "artesp" : "govbr";
   const html = await fetchHtml(input.url);
+  const root = parseHtml(html);
   const candidate = strategy === "artesp"
-    ? extractArtespMainImage(html, input.url)
-    : extractMainImage(html, input.url);
+    ? extractArtespMainImage(root, input.url)
+    : extractMainImage(root, input.url);
   const image = await validateOfficialImage(candidate);
   return {
     imagem_url: image.status === "official_image_found" || image.status === "official_image_unverified" ? upgradeImageScale(image.url ?? "") : null,
@@ -475,86 +478,162 @@ async function fetchNewsDetail(
   source: NewsSourceConfig,
   link: { url: string; title: string; imageUrl?: string | null; imageSource?: string | null; publishedAt?: string | null },
 ): Promise<CollectedRegulatoryNews | null> {
+  let html: string;
   try {
-    const html = await fetchHtml(link.url);
-    const h1Title = firstText(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i);
-    const rawTitle = source.strategy === "artesp"
-      ? h1Title ?? link.title
-      : meta(html, "property", "og:title") ??
-        meta(html, "name", "twitter:title") ??
-        h1Title ??
-        link.title;
-    const ogDescription = meta(html, "property", "og:description") ?? meta(html, "name", "description");
-    let conteudo = extractArticleText(html);
-    // Quando nao ha corpo extraivel, usa a og:description como conteudo minimo.
-    if (!conteudo && ogDescription) {
-      const cleanedOg = cleanText(ogDescription);
-      if (cleanedOg.length >= 80) conteudo = cleanedOg.slice(0, 6000);
-    }
-    const rawResumo = ogDescription ?? firstParagraph(html);
-    const titulo = isGenericArtespTitle(source, rawTitle) ? link.title : rawTitle;
-    // Resumo sempre cai para o corpo do texto quando a metatag faltar ou for generica.
-    const hasUsableResumo = Boolean(cleanText(rawResumo ?? "").trim()) && !isGenericArtespDescription(source, rawResumo);
-    const resumo = hasUsableResumo ? rawResumo : (excerptFromText(conteudo) ?? rawResumo);
-    const rawCanonicalUrl = normalizeNewsUrl(absolutize(meta(html, "property", "og:url"), link.url) ?? link.url);
-    const canonicalUrl = rawCanonicalUrl && source.strategy === "artesp"
-      ? normalizeArtespNewsUrl(rawCanonicalUrl) ?? rawCanonicalUrl
-      : rawCanonicalUrl;
-    const canonical = canonicalUrl && isNewsDetailUrl(source, canonicalUrl) ? canonicalUrl.toString() : link.url;
-    const extractedImage = source.strategy === "artesp"
-      ? extractArtespMainImage(html, link.url)
-      : extractMainImage(html, link.url);
-    const imageCandidate = extractedImage.url
-      ? extractedImage
-      : link.imageUrl && isLikelyContentImage(link.imageUrl)
-        ? { url: link.imageUrl, source: link.imageSource ?? "listing thumbnail verified fallback" }
-        : { url: null, source: link.imageUrl ? "listing thumbnail skipped" : null };
-    const image = await validateOfficialImage(imageCandidate);
-    const publicado_em =
-      meta(html, "property", "article:published_time") ??
-      meta(html, "name", "DC.date.created") ??
-      meta(html, "name", "dcterms.created") ??
-      meta(html, "name", "date") ??
-      firstAttr(html, /<time[^>]+datetime=["']([^"']+)["']/i) ??
-      link.publishedAt ??
-      extractDateFromText(stripTags(html));
-    const normalizedDate = normalizeDate(publicado_em);
-    const normalizedTitle = cleanText(titulo).slice(0, 500);
-    if (source.tier === "expanded" && (!canonical || !normalizedTitle || !normalizedDate)) return null;
-    const hash_item = sha256(`${source.agencia_sigla}|${canonical}`);
-
-    return {
-      agencia_sigla: source.agencia_sigla,
-      titulo: normalizedTitle,
-      url: canonical,
-      fonte: source.fonte,
-      imagem_url: image.status === "official_image_found" || image.status === "official_image_unverified" ? image.url : null,
-      resumo: resumo ? cleanText(resumo).slice(0, 900) : null,
-      conteudo,
-      publicado_em: normalizedDate,
-      hash_item,
-      metadata: {
-        source_url: source.url,
-        source_id: source.id ?? null,
-        collector: source.strategy,
-        collection_mode: "enrich",
-        news_tier: source.tier ?? "core",
-        news_profile: source.profile ?? source.strategy,
-        image_source: image.source,
-        image_status: image.status,
-        image_content_type: image.contentType ?? null,
-        image_content_length: image.contentLength ?? null,
-        image_quality: image.url ? classifyImageQuality(image.url, image.contentLength ?? null) : "absent",
-        image_proxy_path: image.url ? `/api/v1/noticias/imagem?url=${encodeURIComponent(image.url)}` : null,
-        content_length: conteudo?.length ?? 0,
-        resumo_length: resumo?.length ?? 0,
-        content_status: classifyNewsContent(conteudo, resumo),
-        batch_offset: null,
-      },
-    };
+    html = await fetchHtml(link.url);
   } catch {
     return null;
   }
+  const parsed = parseNewsDetail(html, link, source);
+  if (!parsed) return null;
+
+  // Validação de imagem é a única etapa de rede do detalhe — feita aqui (fora de
+  // parseNewsDetail, que é puro/testável). O candidato vem em imagem_url.
+  const image = await validateOfficialImage({ url: parsed.imagem_url, source: (parsed.metadata.image_source as string | null) ?? null });
+  const imagem_url = image.status === "official_image_found" || image.status === "official_image_unverified" ? image.url : null;
+  return {
+    ...parsed,
+    imagem_url,
+    metadata: {
+      ...parsed.metadata,
+      image_source: image.source,
+      image_status: image.status,
+      image_content_type: image.contentType ?? null,
+      image_content_length: image.contentLength ?? null,
+      image_quality: image.url ? classifyImageQuality(image.url, image.contentLength ?? null) : "absent",
+      image_proxy_path: image.url ? `/api/v1/noticias/imagem?url=${encodeURIComponent(image.url)}` : null,
+    },
+  };
+}
+
+/**
+ * Parsing PURO (sem rede) de uma página de detalhe → CollectedRegulatoryNews.
+ * `imagem_url` carrega o candidato de imagem ainda NÃO validado (a validação HTTP
+ * é feita por fetchNewsDetail). Exportado para os testes do golden-set.
+ */
+export function parseNewsDetail(
+  html: string,
+  link: { url: string; title: string; imageUrl?: string | null; imageSource?: string | null; publishedAt?: string | null },
+  source: NewsSourceConfig,
+): CollectedRegulatoryNews | null {
+  const root = parseHtml(html);
+  // Página de manutenção/erro (às vezes servida com HTTP 200) → não parsear lixo.
+  if (isMaintenanceOrErrorPage(root)) return null;
+  const jsonld = extractJsonLd(root);
+
+  const h1Title = textOf(safeQuery(root, "h1"));
+  const rawTitle = source.strategy === "artesp"
+    ? h1Title ?? link.title
+    : metaContent(root, "property", "og:title") ??
+      metaContent(root, "name", "twitter:title") ??
+      jsonld.headline ??
+      h1Title ??
+      link.title;
+  const ogDescription = metaContent(root, "property", "og:description") ?? metaContent(root, "name", "description") ?? jsonld.description;
+  let conteudo = extractArticleText(root);
+  // Quando nao ha corpo extraivel, usa a og:description/JSON-LD como conteudo minimo.
+  if (!conteudo && ogDescription) {
+    const cleanedOg = cleanText(ogDescription);
+    if (cleanedOg.length >= 80) conteudo = cleanedOg.slice(0, 6000);
+  }
+  const rawResumo = ogDescription ?? firstParagraphFromRoot(root);
+  const titulo = isGenericArtespTitle(source, rawTitle) ? link.title : rawTitle;
+  // Resumo sempre cai para o corpo do texto quando a metatag faltar ou for generica.
+  const hasUsableResumo = Boolean(cleanText(rawResumo ?? "").trim()) && !isGenericArtespDescription(source, rawResumo);
+  const resumo = hasUsableResumo ? rawResumo : (excerptFromText(conteudo) ?? rawResumo);
+  const rawCanonicalUrl = normalizeNewsUrl(absolutize(metaContent(root, "property", "og:url"), link.url) ?? link.url);
+  const canonicalUrl = rawCanonicalUrl && source.strategy === "artesp"
+    ? normalizeArtespNewsUrl(rawCanonicalUrl) ?? rawCanonicalUrl
+    : rawCanonicalUrl;
+  const canonical = canonicalUrl && isNewsDetailUrl(source, canonicalUrl) ? canonicalUrl.toString() : link.url;
+  const extractedImage = source.strategy === "artesp"
+    ? extractArtespMainImage(root, link.url)
+    : extractMainImage(root, link.url, jsonld.image);
+  const imageCandidate = extractedImage.url
+    ? extractedImage
+    : link.imageUrl && isLikelyContentImage(link.imageUrl)
+      ? { url: link.imageUrl, source: link.imageSource ?? "listing thumbnail verified fallback" }
+      : { url: null, source: link.imageUrl ? "listing thumbnail skipped" : null };
+  // Data: JSON-LD (fonte mais confiável no gov.br) → meta → <time> → listagem → texto.
+  const publicado_em =
+    jsonld.datePublished ??
+    jsonld.dateModified ??
+    metaContent(root, "property", "article:published_time") ??
+    metaContent(root, "name", "DC.date.created") ??
+    metaContent(root, "name", "dcterms.created") ??
+    metaContent(root, "name", "date") ??
+    safeQuery(root, "time[datetime]")?.getAttribute("datetime") ??
+    link.publishedAt ??
+    extractDateFromText(root.text);
+  const normalizedDate = normalizeDate(publicado_em);
+  const normalizedTitle = cleanText(titulo).slice(0, 500);
+  if (source.tier === "expanded" && (!canonical || !normalizedTitle || !normalizedDate)) return null;
+  const hash_item = sha256(`${source.agencia_sigla}|${canonical}`);
+
+  return {
+    agencia_sigla: source.agencia_sigla,
+    titulo: normalizedTitle,
+    url: canonical,
+    fonte: source.fonte,
+    // Candidato ainda NÃO validado por rede; fetchNewsDetail revalida e ajusta.
+    imagem_url: imageCandidate.url,
+    resumo: resumo ? cleanText(resumo).slice(0, 900) : null,
+    conteudo,
+    publicado_em: normalizedDate,
+    hash_item,
+    metadata: {
+      source_url: source.url,
+      source_id: source.id ?? null,
+      collector: source.strategy,
+      collection_mode: "enrich",
+      news_tier: source.tier ?? "core",
+      news_profile: source.profile ?? source.strategy,
+      image_source: imageCandidate.source,
+      image_status: imageCandidate.url ? "candidate" : "official_image_absent",
+      image_content_type: null,
+      image_content_length: null,
+      image_quality: imageCandidate.url ? classifyImageQuality(imageCandidate.url, null) : "absent",
+      image_proxy_path: imageCandidate.url ? `/api/v1/noticias/imagem?url=${encodeURIComponent(imageCandidate.url)}` : null,
+      content_length: conteudo?.length ?? 0,
+      resumo_length: resumo?.length ?? 0,
+      content_status: classifyNewsContent(conteudo, resumo),
+      batch_offset: null,
+    },
+  };
+}
+
+/** Extração pública de âncoras de notícia de uma listagem (para testes). */
+export function extractNewsAnchors(html: string, baseUrl: string, strategy: "artesp" | "govbr") {
+  return strategy === "artesp"
+    ? extractArtespNewsAnchors(html, baseUrl)
+    : extractAnchors(html, baseUrl);
+}
+
+function textOf(el: HTMLElement | null): string | null {
+  if (!el) return null;
+  const text = cleanText(el.text);
+  return text || null;
+}
+
+function firstParagraphFromRoot(root: HTMLElement): string | null {
+  for (const p of safeQueryAll(root, "p")) {
+    const text = cleanText(p.text);
+    if (text.length >= 40 && text.length <= 900) return text;
+  }
+  return null;
+}
+
+// Detecta páginas de manutenção/erro servidas com HTTP 200 (ex.: "Estamos em
+// manutenção" do gov.br): exige múltiplos sinais para não descartar notícia real.
+function isMaintenanceOrErrorPage(root: HTMLElement): boolean {
+  const title = normalizeText(textOf(safeQuery(root, "title")) ?? "");
+  const titleLooksBad = /manutencao|indisponivel|temporariamente|erro 5\d\d|service unavailable|not found|nao encontrad/.test(title);
+  if (!titleLooksBad) return false;
+  const hasH1 = Boolean(safeQuery(root, "h1"));
+  const hasJsonLdArticle = Boolean(extractJsonLd(root).headline || extractJsonLd(root).datePublished);
+  const bodyLen = cleanText(safeQuery(root, "body")?.text ?? root.text).length;
+  // Título ruim + (sem H1 e sem JSON-LD de artigo) OU corpo muito curto.
+  return (!hasH1 && !hasJsonLdArticle) || bodyLen < 600;
 }
 
 function buildListingFallbackItem(
@@ -680,31 +759,91 @@ function normalizeArtespNewsUrl(value: URL) {
   return null;
 }
 
-function extractAnchors(html: string, baseUrl: string) {
-  const anchors: Array<{ href: string; text: string; attrs: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null }> = [];
-  const re = /<a\b([^>]*?)href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi;
-  let match: RegExpExecArray | null;
+// Atributos onde imagens (incl. lazy-load) costumam aparecer, do mais para o
+// menos preferível. A varredura genérica de data-* (scanElementForImageUrl)
+// cobre variantes custom não listadas aqui.
+const IMAGE_ATTR_NAMES = [
+  "srcset", "data-srcset", "data-lazy-srcset", "data-large-src", "data-original-src",
+  "data-original", "data-lazy-src", "data-image", "data-bg", "data-src", "src",
+];
 
-  while ((match = re.exec(html)) !== null) {
-    const text = cleanText(stripTags(match[4]));
+type AnchorInfo = { href: string; text: string; attrs: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null };
+
+// Extração de âncoras via DOM (robusta a HTML malformado, aspas simples e
+// atributos multilinha que quebravam o regex anterior). Mantém a forma de saída.
+function extractAnchors(html: string, baseUrl: string): AnchorInfo[] {
+  return extractAnchorsFromRoot(parseHtml(html), baseUrl);
+}
+
+function extractAnchorsFromRoot(root: HTMLElement, baseUrl: string): AnchorInfo[] {
+  const anchors: AnchorInfo[] = [];
+  for (const a of safeQueryAll(root, "a[href]")) {
+    const text = cleanText(a.text);
     if (!text) continue;
+    const rawHref = a.getAttribute("href");
+    if (!rawHref) continue;
+    let href: string;
     try {
-      const href = new URL(decodeHtml(match[2]), baseUrl).toString();
-      const image = extractScopedThumbnail(html, match.index, match.index + match[0].length, baseUrl);
-      anchors.push({
-        href,
-        text,
-        attrs: `${match[1]} ${match[3]}`,
-        imageUrl: image.url,
-        imageSource: image.source,
-        publishedAt: extractNearbyListingDate(html, match.index) ?? extractDateFromText(text),
-      });
+      href = new URL(decodeHtml(rawHref), baseUrl).toString();
     } catch {
-      // Ignora links malformados do CMS.
+      continue;
     }
+    const card = cardElementOf(a);
+    const image = card ? firstImageUrlFromElement(card, baseUrl) : null;
+    anchors.push({
+      href,
+      text,
+      attrs: serializeAttributes(a),
+      imageUrl: image,
+      imageSource: image ? "listing card thumbnail" : null,
+      publishedAt: (card ? extractDateFromText(card.text) : null) ?? extractDateFromText(text),
+    });
   }
-
   return anchors;
+}
+
+// Sobe até o "card" da notícia para escopar a thumbnail/data corretas.
+function cardElementOf(a: HTMLElement): HTMLElement | null {
+  return (
+    a.closest("article") ??
+    a.closest("li") ??
+    a.closest(".tile") ??
+    a.closest(".card") ??
+    a.closest(".tileItem") ??
+    a.parentNode ??
+    null
+  );
+}
+
+function serializeAttributes(el: HTMLElement): string {
+  const attrs = el.attributes ?? {};
+  return Object.entries(attrs).map(([key, value]) => `${key}="${value}"`).join(" ");
+}
+
+// Procura a melhor URL de imagem dentro de um elemento (img/source/background),
+// cobrindo lazy-load por atributos data-* e srcset.
+function firstImageUrlFromElement(el: HTMLElement, baseUrl: string): string | null {
+  for (const node of [...safeQueryAll(el, "source"), ...safeQueryAll(el, "img")]) {
+    const raw = firstAttrValue(node, IMAGE_ATTR_NAMES) ?? scanElementForImageUrl(node);
+    const value = raw ? pickSrcsetFirst(decodeHtml(raw)) : null;
+    const absolute = absolutize(value, baseUrl);
+    if (absolute && isLikelyContentImage(absolute)) return absolute;
+  }
+  const style = el.getAttribute("style") ?? "";
+  const bg = /url\((['"]?)([^'")]+)\1\)/i.exec(style)?.[2];
+  const bgAbsolute = absolutize(bg ? decodeHtml(bg) : null, baseUrl);
+  if (bgAbsolute && isLikelyContentImage(bgAbsolute)) return bgAbsolute;
+  return null;
+}
+
+// Varre todos os atributos do elemento por um valor que pareça URL de imagem
+// (cobre lazy-load custom como data-flickity-lazyload, data-hi-res, etc.).
+function scanElementForImageUrl(el: HTMLElement): string | null {
+  for (const [key, value] of Object.entries(el.attributes ?? {})) {
+    if (!value || key === "class" || key === "id") continue;
+    if (/\.(png|jpe?g|webp|gif|avif)(?:[?#]|$)|@@images|@@download|\/media\//i.test(value)) return value;
+  }
+  return null;
 }
 
 function extractArtespNewsAnchors(html: string, baseUrl: string) {
@@ -744,21 +883,19 @@ function extractArtespNewsAnchors(html: string, baseUrl: string) {
   return links;
 }
 
-function extractMainImage(html: string, baseUrl: string): { url: string | null; source: string | null } {
+function extractMainImage(root: HTMLElement, baseUrl: string, jsonLdImage?: string | null): { url: string | null; source: string | null } {
   const candidates: Array<{ value: string | null; source: string }> = [
-    { value: meta(html, "property", "og:image"), source: "og:image" },
-    { value: meta(html, "property", "og:image:url"), source: "og:image:url" },
-    { value: meta(html, "name", "twitter:image"), source: "twitter:image" },
-    { value: meta(html, "name", "twitter:image:src"), source: "twitter:image:src" },
-    { value: meta(html, "name", "thumbnail"), source: "meta thumbnail" },
-    { value: meta(html, "property", "thumbnailUrl"), source: "meta thumbnailUrl" },
-    { value: meta(html, "itemprop", "image"), source: "itemprop:image" },
-    { value: meta(html, "itemprop", "thumbnailUrl"), source: "itemprop:thumbnailUrl" },
-    { value: extractJsonLdImage(html), source: "json-ld image" },
-    { value: extractLinkImage(html), source: "link image" },
-    { value: firstImageFromBlock(html, /<article[^>]*>([\s\S]*?)<\/article>/i), source: "article img" },
-    { value: firstImageFromBlock(html, /<main[^>]*>([\s\S]*?)<\/main>/i), source: "main img" },
-    { value: firstImageFromBlock(html, /<body[^>]*>([\s\S]*?)<\/body>/i), source: "body img" },
+    { value: jsonLdImage ?? extractJsonLdImage(root), source: "json-ld image" },
+    { value: metaContent(root, "property", "og:image"), source: "og:image" },
+    { value: metaContent(root, "property", "og:image:url"), source: "og:image:url" },
+    { value: metaContent(root, "name", "twitter:image"), source: "twitter:image" },
+    { value: metaContent(root, "name", "twitter:image:src"), source: "twitter:image:src" },
+    { value: metaContent(root, "name", "thumbnail"), source: "meta thumbnail" },
+    { value: metaContent(root, "itemprop", "image"), source: "itemprop:image" },
+    { value: extractLinkImage(root), source: "link image" },
+    { value: firstImageUrlFromElement(safeQuery(root, "article") ?? root, baseUrl), source: "article img" },
+    { value: firstImageUrlFromElement(safeQuery(root, "main") ?? root, baseUrl), source: "main img" },
+    { value: firstImageUrlFromElement(root, baseUrl), source: "body img" },
   ];
   const valid: Array<{ url: string; source: string; score: number }> = [];
 
@@ -774,15 +911,73 @@ function extractMainImage(html: string, baseUrl: string): { url: string | null; 
   return best ? { url: best.url, source: best.source } : { url: null, source: null };
 }
 
-function extractJsonLdImage(html: string) {
-  for (const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+interface JsonLdInfo {
+  datePublished: string | null;
+  dateModified: string | null;
+  headline: string | null;
+  image: string | null;
+  description: string | null;
+}
+
+// JSON-LD (NewsArticle/Article) é a fonte estruturada mais estável das páginas
+// gov.br/Plone — sobretudo para a DATA, ausente nas metatags (verificado ao vivo).
+// Lê todos os blocos, resolve @graph/arrays e extrai os campos do nó de artigo.
+function extractJsonLd(root: HTMLElement): JsonLdInfo {
+  const empty: JsonLdInfo = { datePublished: null, dateModified: null, headline: null, image: null, description: null };
+  for (const block of jsonLdBlocks(root)) {
+    let json: unknown;
     try {
-      const json = JSON.parse(decodeHtml(match[1]));
-      const image = findJsonLdImage(json);
+      json = JSON.parse(decodeHtml(block));
+    } catch {
+      continue; // JSON-LD malformado não deve impedir a coleta.
+    }
+    const node = findJsonLdArticleNode(json) ?? json;
+    const info: JsonLdInfo = {
+      datePublished: jsonLdString(node, ["datePublished", "dateCreated"]),
+      dateModified: jsonLdString(node, ["dateModified"]),
+      headline: jsonLdString(node, ["headline", "name"]),
+      image: findJsonLdImage(node) ?? findJsonLdImage(json),
+      description: jsonLdString(node, ["description"]),
+    };
+    if (info.datePublished || info.headline || info.image) return info;
+  }
+  return empty;
+}
+
+function extractJsonLdImage(root: HTMLElement) {
+  for (const block of jsonLdBlocks(root)) {
+    try {
+      const image = findJsonLdImage(JSON.parse(decodeHtml(block)));
       if (image) return image;
     } catch {
-      // JSON-LD malformado nao deve impedir a coleta da noticia.
+      // ignora bloco malformado
     }
+  }
+  return null;
+}
+
+function findJsonLdArticleNode(value: unknown): Record<string, unknown> | null {
+  if (!value || typeof value !== "object") return null;
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      const found = findJsonLdArticleNode(item);
+      if (found) return found;
+    }
+    return null;
+  }
+  const record = value as Record<string, unknown>;
+  const type = record["@type"];
+  const types = Array.isArray(type) ? type.map(String) : [String(type ?? "")];
+  if (types.some((t) => /article|newsarticle|blogposting/i.test(t))) return record;
+  return findJsonLdArticleNode(record["@graph"]);
+}
+
+function jsonLdString(node: unknown, keys: string[]): string | null {
+  if (!node || typeof node !== "object") return null;
+  const record = node as Record<string, unknown>;
+  for (const key of keys) {
+    const raw = record[key];
+    if (typeof raw === "string" && raw.trim()) return raw.trim();
   }
   return null;
 }
@@ -809,13 +1004,12 @@ function findJsonLdImage(value: unknown): string | null {
   return null;
 }
 
-function extractLinkImage(html: string) {
-  for (const match of html.matchAll(/<link\b[^>]*>/gi)) {
-    const tag = match[0];
-    const rel = normalizeText(attr(tag, "rel") ?? "");
+function extractLinkImage(root: HTMLElement) {
+  for (const link of safeQueryAll(root, "link")) {
+    const rel = normalizeText(link.getAttribute("rel") ?? "");
     if (!rel.includes("image") && !rel.includes("preload")) continue;
-    const href = attr(tag, "href");
-    if (href) return href;
+    const href = link.getAttribute("href");
+    if (href) return decodeHtml(href);
   }
   return null;
 }
@@ -940,29 +1134,30 @@ async function mapWithConcurrency<T, R>(items: T[], concurrency: number, fn: (it
   return results;
 }
 
-function extractArtespMainImage(html: string, baseUrl: string): { url: string | null; source: string | null } {
-  const articleAfterTitle = /<h1[^>]*>[\s\S]*?<\/h1>([\s\S]*?)(?:<h[2-4][^>]*>\s*(?:ultimas|[uú]ltimas)\s*<\/h[2-4]>|<footer|Complementary Content)/i.exec(html)?.[1] ?? html;
-  const contentImage = firstImageFromBlock(articleAfterTitle, /([\s\S]*)/i);
-  const absoluteContentImage = absolutize(contentImage ? pickSrcsetFirst(contentImage) : null, baseUrl);
-  if (absoluteContentImage && isLikelyContentImage(absoluteContentImage)) {
-    return { url: absoluteContentImage, source: "artesp body img" };
+function extractArtespMainImage(root: HTMLElement, baseUrl: string): { url: string | null; source: string | null } {
+  // A foto real costuma estar no corpo (article/main); firstImageUrlFromElement já
+  // pula logos/decorativos. Mantemos os fallbacks de og:image / genérico.
+  const region = safeQuery(root, "article") ?? safeQuery(root, "main") ?? root;
+  const contentImage = firstImageUrlFromElement(region, baseUrl);
+  if (contentImage && !isGenericCmsImage(contentImage)) {
+    return { url: contentImage, source: "artesp body img" };
   }
 
   // Fallback de alta confianca: a og:image/twitter:image da pagina de detalhe da
   // ARTESP costuma ser a foto real da materia. Aceitamos desde que nao seja a
   // imagem generica do CMS (logo/placeholder).
   const ogImage = absolutize(
-    meta(html, "property", "og:image") ??
-      meta(html, "property", "og:image:url") ??
-      meta(html, "name", "twitter:image") ??
-      meta(html, "name", "twitter:image:src"),
+    metaContent(root, "property", "og:image") ??
+      metaContent(root, "property", "og:image:url") ??
+      metaContent(root, "name", "twitter:image") ??
+      metaContent(root, "name", "twitter:image:src"),
     baseUrl,
   );
   if (ogImage && !isGenericCmsImage(ogImage)) {
     return { url: ogImage, source: "artesp og:image" };
   }
 
-  const generic = extractMainImage(html, baseUrl);
+  const generic = extractMainImage(root, baseUrl);
   if (generic.url && !isGenericCmsImage(generic.url)) return generic;
   return { url: null, source: generic.source };
 }
@@ -1065,30 +1260,50 @@ function excerptFromText(value: string | null) {
   return cleanText(sentence).slice(0, 900);
 }
 
-function extractArticleText(html: string) {
-  const article =
-    /<article[^>]*>([\s\S]*?)<\/article>/i.exec(html)?.[1] ??
-    /<[a-z]+[^>]*itemprop=["']articleBody["'][^>]*>([\s\S]*?)<\/[a-z]+>/i.exec(html)?.[1] ??
-    /<main[^>]*>([\s\S]*?)<\/main>/i.exec(html)?.[1] ??
-    /<h1[^>]*>[\s\S]*?<\/h1>([\s\S]*?)(?:<h[2-4][^>]*>\s*(?:ultimas|[uú]ltimas)\s*<\/h[2-4]>|<footer|Complementary Content)/i.exec(html)?.[1] ??
-    html;
-  const paragraphs = [...article.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
-    .map((match) => cleanText(stripTags(match[1])))
+function extractArticleText(root: HTMLElement) {
+  const region =
+    safeQuery(root, "article") ??
+    safeQuery(root, "[itemprop=articleBody]") ??
+    safeQuery(root, "main") ??
+    root;
+  const paragraphs = safeQueryAll(region, "p")
+    .map((p) => cleanText(p.text))
     .filter((text) => text.length >= 30);
   if (paragraphs.length) return paragraphs.join("\n\n").slice(0, 6000);
 
-  const text = cleanText(stripTags(article))
+  const text = cleanText(region.text)
     .replace(/\bAumentar fonte\b[\s\S]*$/i, "")
     .replace(/\bUltimas\s+Noticias\b[\s\S]*$/i, "")
     .replace(/\bÚltimas\s+Notícias\b[\s\S]*$/i, "");
   return text.length >= 80 ? text.slice(0, 6000) : null;
 }
 
-function extractDateFromText(text: string) {
-  const match = /(\d{2})\/(\d{2})\/(\d{4})(?:\s*(?:-|às|as)?\s*(\d{1,2})(?::|h)(\d{2}))?/i.exec(text);
-  if (!match) return null;
-  const [, day, month, year, hour = "12", minute = "00"] = match;
-  return `${year}-${month}-${day}T${hour.padStart(2, "0")}:${minute}:00-03:00`;
+// Meses por extenso (PT) para datas no formato "23 de junho de 2026".
+const PT_MONTHS: Record<string, string> = {
+  janeiro: "01", fevereiro: "02", marco: "03", abril: "04", maio: "05", junho: "06",
+  julho: "07", agosto: "08", setembro: "09", outubro: "10", novembro: "11", dezembro: "12",
+};
+
+export function extractDateFromText(text: string) {
+  // 1) ISO (ex.: do JSON-LD que tenha vazado para texto): 2026-06-23
+  const iso = /(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2}))?/.exec(text);
+  if (iso) {
+    const [, year, month, day, hour = "12", minute = "00"] = iso;
+    return `${year}-${month}-${day}T${hour}:${minute}:00-03:00`;
+  }
+  // 2) Por extenso em português: "23 de junho de 2026"
+  const ext = /(\d{1,2})\s+de\s+([a-zç]+)\s+de\s+(\d{4})/i.exec(normalizeText(text));
+  if (ext) {
+    const month = PT_MONTHS[ext[2]];
+    if (month) return `${ext[3]}-${month}-${ext[1].padStart(2, "0")}T12:00:00-03:00`;
+  }
+  // 3) DD/MM/YYYY (com hora opcional)
+  const br = /(\d{2})\/(\d{2})\/(\d{4})(?:\s*(?:-|às|as)?\s*(\d{1,2})(?::|h)(\d{2}))?/i.exec(text);
+  if (br) {
+    const [, day, month, year, hour = "12", minute = "00"] = br;
+    return `${year}-${month}-${day}T${hour.padStart(2, "0")}:${minute}:00-03:00`;
+  }
+  return null;
 }
 
 function normalizeDate(value: string | null) {

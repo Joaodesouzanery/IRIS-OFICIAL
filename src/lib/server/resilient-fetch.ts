@@ -208,8 +208,43 @@ export async function resilientFetch(url: string, options: ResilientFetchOptions
   throw lastError ?? new FetchFailureError(`Falha ao coletar ${url}`, { kind: "falha_rede", url });
 }
 
-/** Igual a `resilientFetch`, retornando diretamente o corpo como texto. */
+/**
+ * Igual a `resilientFetch`, retornando o corpo como texto com DETECÇÃO DE CHARSET.
+ * Portais como ARTESP/Liferay podem servir latin1/iso-8859-1; `res.text()` assume
+ * UTF-8 e gera mojibake. Aqui detectamos o charset (header → <meta charset> → utf-8)
+ * e decodificamos os bytes com o TextDecoder correto.
+ */
 export async function resilientFetchText(url: string, options: ResilientFetchOptions = {}): Promise<string> {
   const res = await resilientFetch(url, options);
-  return res.text();
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  const headerCharset = /charset=["']?([\w-]+)/i.exec(res.headers.get("content-type") ?? "")?.[1];
+  const charset = normalizeCharset(headerCharset) ?? sniffCharsetFromMeta(bytes) ?? "utf-8";
+  return decodeBytes(bytes, charset);
+}
+
+function normalizeCharset(value?: string | null): string | null {
+  if (!value) return null;
+  const c = value.trim().toLowerCase();
+  if (c === "utf8" || c === "utf-8") return "utf-8";
+  // "latin1" não é label válido de TextDecoder; mapeia para windows-1252 (superset).
+  if (c === "latin1" || c === "iso8859-1") return "windows-1252";
+  return c; // "iso-8859-1", "windows-1252", "cp1252", etc. são aceitos pelo TextDecoder.
+}
+
+// Espia <meta charset>/<meta http-equiv> nos primeiros 2KB (decodificados como
+// latin1, seguro para a parte ASCII do cabeçalho) quando o header não declara.
+function sniffCharsetFromMeta(bytes: Uint8Array): string | null {
+  const head = new TextDecoder("windows-1252").decode(bytes.subarray(0, 2048));
+  const match =
+    /<meta[^>]+charset=["']?([\w-]+)/i.exec(head) ??
+    /charset=["']?([\w-]+)/i.exec(head);
+  return normalizeCharset(match?.[1]);
+}
+
+function decodeBytes(bytes: Uint8Array, charset: string): string {
+  try {
+    return new TextDecoder(charset).decode(bytes);
+  } catch {
+    return new TextDecoder("utf-8").decode(bytes);
+  }
 }

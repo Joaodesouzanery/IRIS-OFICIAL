@@ -21,16 +21,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Domínio de imagem não autorizado" }, { status: 403 });
   }
 
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
-      Accept: "image/avif,image/webp,image/png,image/jpeg,image/*,*/*;q=0.8",
-      Referer: `${url.origin}/`,
-    },
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok || !res.body) {
+  const res = await fetchOfficialImage(url);
+  if (!res || !res.ok || !res.body) {
     return NextResponse.json({ error: "Imagem oficial indisponível" }, { status: 502 });
   }
 
@@ -53,6 +45,32 @@ export async function GET(req: NextRequest) {
       "Cache-Control": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800",
     },
   });
+}
+
+// UA de navegador real reduz bloqueio de hotlink/WAF que rejeita user-agents de bot.
+const BROWSER_UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+const IMAGE_ACCEPT = "image/avif,image/webp,image/png,image/jpeg,image/*,*/*;q=0.8";
+
+// Busca a imagem oficial; em 401/403 (proteção de hotlink) tenta de novo SEM Referer.
+async function fetchOfficialImage(url: URL): Promise<Response | null> {
+  const attempts: Array<Record<string, string>> = [
+    { "User-Agent": BROWSER_UA, Accept: IMAGE_ACCEPT, Referer: `${url.origin}/` },
+    { "User-Agent": BROWSER_UA, Accept: IMAGE_ACCEPT },
+  ];
+  let last: Response | null = null;
+  for (const headers of attempts) {
+    try {
+      const res = await fetch(url, { headers, next: { revalidate: 3600 } });
+      if (res.ok) return res;
+      last = res;
+      if (res.status !== 401 && res.status !== 403) return res; // só re-tenta bloqueio de hotlink
+      await res.body?.cancel();
+    } catch {
+      last = null;
+    }
+  }
+  return last;
 }
 
 function isAllowedOfficialImageHost(url: URL) {

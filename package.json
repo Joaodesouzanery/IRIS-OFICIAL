@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "check:text": "node scripts/check-text-quality.js"
   },
   "dependencies": {
@@ -30,6 +32,7 @@
     "lucide-react": "^0.468.0",
     "next": "^15.5.18",
     "next-themes": "^0.4.4",
+    "node-html-parser": "^7.1.0",
     "pdf-parse": "^1.1.1",
     "puppeteer-core": "^23.11.1",
     "react": "^18.3.1",
@@ -50,6 +53,7 @@
     "eslint-config-next": "^15.5.18",
     "postcss": "^8.5.15",
     "tailwindcss": "^3.4.16",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.9"
   }
 }

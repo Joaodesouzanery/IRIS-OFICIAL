@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta property="og:title" content="Matéria com imagem lazy-load"/>
+<!-- sem og:image: a imagem só existe em data-src (lazy-load) no corpo -->
+</head><body>
+<article>
+<h1>Matéria com imagem lazy-load</h1>
+<figure>
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAAC=" data-src="https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/teste/foto-real.png" alt="Foto"/>
+</figure>
+<p>Conteúdo da matéria com imagem carregada de forma preguiçosa via atributo data-src, comum em portais que adiam o carregamento de imagens.</p>
+</article>
+</body></html>

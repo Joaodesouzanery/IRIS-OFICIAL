@@ -10,6 +10,9 @@ import type { RegulatoryNewsCollectResponse } from "@/types";
 type CollectionTelemetry = { durationMs: number; fetch: FetchStats; headless: HeadlessStats };
 
 export const dynamic = "force-dynamic";
+// Garante runtime Node (puppeteer/Buffer/TextDecoder) e tempo p/ coleta + validação de imagens.
+export const runtime = "nodejs";
+export const maxDuration = 60;
 
 type NewsTierFilter = "core" | "expanded" | "all";
 type NewsCollectionScope = "all" | "priority";
