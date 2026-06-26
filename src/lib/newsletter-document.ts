@@ -128,8 +128,10 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 .hero-title{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;line-height:0.92;letter-spacing:-0.025em;color:${t.text};}
 .hero-subtitle{font-size:11px;font-weight:400;line-height:1.35;letter-spacing:0.035em;text-transform:uppercase;color:${t.muted};max-width:510px;}
 .hero-subtitle strong{color:${t.strongMuted};font-weight:500;}
-.hero-logo-frame{width:360px;height:168px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:visible;}
-.hero-logo{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;object-position:center;display:block;}
+.hero-logo-frame{width:372px;height:182px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+/* Logo "wide" recortado (sem o respiro do asset quadrado): com contain, o "IRIS"
+   preenche a largura e fica ~do tamanho do bloco do titulo (~4x maior que antes). */
+.hero-logo{width:100%;height:100%;object-fit:contain;object-position:center;display:block;}
 .body{display:grid;grid-template-columns:58% 42%;gap:0;flex:1;min-height:0;}
 .col-main{padding:22px 30px 12px 44px;border-right:1px solid ${t.line};display:flex;flex-direction:column;gap:10px;overflow:hidden;}
 .main-img{position:relative;width:100%;height:224px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${t.image};font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:${t.placeholder};font-weight:700;overflow:hidden;margin:1px 0;}
@@ -172,7 +174,7 @@ function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput, theme: N
   const date = formatNewsletterDate(generatedAt);
   const selected = input.noticias;
   const pages = chunkNewsletterItems(selected);
-  const logo = absolutePath("/brand/newsletter-logo.png", input.baseUrl);
+  const logo = absolutePath("/brand/newsletter-logo-wide.png", input.baseUrl);
 
   return `<!DOCTYPE html>
 <html lang="pt-BR">
