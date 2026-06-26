@@ -321,10 +321,10 @@ async function fetchSourceLinks(source: NewsSourceConfig, limit: number): Promis
       fetchHtmlSourceLinks(source, limit),
       fetchGovbrApiLinks(source, limit),
     ]);
-    return sortNewsLinksByDate(dedupeNewsLinks([
+    return sortNewsLinksByDate(pruneNewsLinks(dedupeNewsLinks([
       ...(htmlLinks.status === "fulfilled" ? htmlLinks.value : []),
       ...(apiLinks.status === "fulfilled" ? apiLinks.value : []),
-    ])).slice(0, Math.max(limit, limit * 2));
+    ]))).slice(0, Math.max(limit, limit * 2));
   }
 
   return fetchHtmlSourceLinks(source, limit);
@@ -341,30 +341,21 @@ async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number): Pr
     const anchors = source.strategy === "artesp"
       ? extractArtespNewsAnchors(page.html, page.url)
       : filterAnchorsBySelector(extractAnchors(page.html, page.url), source.linkSelector, page.url);
-    for (const anchor of anchors) {
-      const url = normalizeNewsUrl(anchor.href);
-      if (!url || !isNewsDetailUrl(source, url)) continue;
+    if (pushAnchorsAsLinks(anchors, source, seen, links, limit)) return sortNewsLinksByDate(pruneNewsLinks(links));
+  }
 
-      const title = cleanTitle(anchor.text);
-      if (title.length < 12 || isNavigationTitle(title) || seen.has(url.toString())) continue;
-
-      seen.add(url.toString());
-      links.push({
-        url: url.toString(),
-        title,
-        imageUrl: anchor.imageUrl ?? null,
-        imageSource: anchor.imageSource ?? null,
-        publishedAt: anchor.publishedAt ?? null,
-      });
-      if (links.length >= Math.max(250, limit * 2)) return links;
-    }
+  // Listagem renderizada por JS (ex.: ARTESP/Liferay, cujo HTML estático só traz
+  // lixo de portlet): tenta o render headless antes de desistir. govbr usa a API.
+  if (links.length === 0 && source.strategy === "artesp") {
+    const rendered = await tryRenderHtmlFallback(source.url, "listagem de notícias (render JS)");
+    if (rendered) pushAnchorsAsLinks(extractArtespNewsAnchors(rendered, source.url), source, seen, links, limit);
   }
 
   if (links.length === 0 && source.strategy === "govbr") {
     return fetchGovbrApiLinks(source, limit);
   }
 
-  return sortNewsLinksByDate(links);
+  return sortNewsLinksByDate(pruneNewsLinks(links));
 }
 
 async function fetchGovbrApiLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
@@ -396,7 +387,8 @@ async function fetchGovbrApiLinks(source: NewsSourceConfig, limit: number): Prom
         const publishedAt = typeof item.effective === "string"
           ? item.effective
           : typeof item.created === "string" ? item.created : null;
-        return { url: url.toString(), title, imageUrl: null, imageSource: null, publishedAt };
+        // Fontes Volto não têm og:image no detalhe → a imagem vem da lead image do item.
+        return { url: url.toString(), title, imageUrl: leadImageFromArticleUrl(url.toString()), imageSource: "govbr api lead image", publishedAt };
       })
       .filter((item: NewsLink | null): item is NewsLink => Boolean(item));
   } catch {
@@ -433,6 +425,75 @@ function publishedLinkTime(link: NewsLink) {
   const normalized = normalizeDate(link.publishedAt ?? null);
   const value = normalized ? new Date(normalized).getTime() : 0;
   return Number.isFinite(value) ? value : 0;
+}
+
+// Lead image de um News Item Plone/Volto: a foto principal fica em
+// <url>/@@images/image/large. Usado para fontes Volto (ANATEL/ANCINE/ANPD), cujas
+// páginas de detalhe NÃO expõem og:image (corpo é React) — a imagem vem da API.
+function leadImageFromArticleUrl(articleUrl: string): string | null {
+  try {
+    const u = new URL(articleUrl);
+    u.hash = "";
+    u.search = "";
+    return `${u.toString().replace(/\/+$/, "")}/@@images/image/large`;
+  } catch {
+    return null;
+  }
+}
+
+// Último segmento que parece asset/mídia social (não é notícia). Cobre o ruído do
+// ANAC: imagens e cards aninhados sob o artigo (whatsapp-image, linkedin-1200x600…).
+function isAssetLikeSlug(slug: string): boolean {
+  const s = slug.toLowerCase();
+  if (/^(image|imagem|fotos?|midia|media|galeria|anexos?)$/.test(s)) return true;
+  if (/\d{2,4}x\d{2,4}/.test(s)) return true; // dimensões: 1200x600
+  if (/-at-\d/.test(s)) return true; // "...-at-19-02-22" (WhatsApp)
+  return /(?:^|[-_])(?:whatsapp|telegram|linkedin|facebook|twitter|instagram|youtube|banner|thumb|logo|card)(?:[-_]|$)/.test(s);
+}
+
+// Remove ruído de links de notícia: (1) slugs de asset/mídia; (2) sub-recursos
+// aninhados sob outro artigo (Plone serve imagens/sub-páginas em <artigo>/<algo>).
+function pruneNewsLinks(links: NewsLink[]): NewsLink[] {
+  const pathOf = (u: string) => {
+    try { return new URL(u).pathname.replace(/\/+$/, ""); } catch { return u; }
+  };
+  const noAssets = links.filter((l) => {
+    const seg = decodeURIComponent(pathOf(l.url).split("/").filter(Boolean).at(-1) ?? "");
+    return seg ? !isAssetLikeSlug(seg) : true;
+  });
+  const paths = noAssets.map((l) => pathOf(l.url));
+  return noAssets.filter((_, i) => {
+    const p = paths[i];
+    // descarta se for descendente estrito de outro candidato (sub-recurso do artigo)
+    return !paths.some((other, j) => j !== i && other.length < p.length && p.startsWith(`${other}/`));
+  });
+}
+
+// Converte âncoras extraídas em NewsLinks válidos (filtros de detalhe/título/dedup).
+// Retorna true se atingiu o teto de links (sinal para encerrar cedo).
+function pushAnchorsAsLinks(
+  anchors: Array<{ href: string; text: string; imageUrl: string | null; imageSource: string | null; publishedAt: string | null }>,
+  source: NewsSourceConfig,
+  seen: Set<string>,
+  links: NewsLink[],
+  limit: number,
+): boolean {
+  for (const anchor of anchors) {
+    const url = normalizeNewsUrl(anchor.href);
+    if (!url || !isNewsDetailUrl(source, url)) continue;
+    const title = cleanTitle(anchor.text);
+    if (title.length < 12 || isNavigationTitle(title) || seen.has(url.toString())) continue;
+    seen.add(url.toString());
+    links.push({
+      url: url.toString(),
+      title,
+      imageUrl: anchor.imageUrl ?? null,
+      imageSource: anchor.imageSource ?? null,
+      publishedAt: anchor.publishedAt ?? null,
+    });
+    if (links.length >= Math.max(250, limit * 2)) return true;
+  }
+  return false;
 }
 
 function buildGovbrSearchApiUrl(sourceUrl: string, limit: number) {
