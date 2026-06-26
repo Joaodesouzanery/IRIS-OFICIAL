@@ -104,6 +104,12 @@ const SOURCE_CONCURRENCY = 2;
 const DETAIL_CONCURRENCY = 3;
 const FETCH_TIMEOUT_MS = 12_000;
 const IMAGE_TIMEOUT_MS = 8_000;
+// Espaçamento mínimo entre requests ao MESMO host (ex.: www.gov.br). Coletar as
+// ~11 fontes gov.br em rajada de um IP de datacenter (Vercel) leva a rate-limit
+// (403/429) → "algumas fontes falharam"/ANAC vermelha. O throttle serializa por
+// host e elimina a rajada. Ajustável por COLLECTOR_HOST_THROTTLE_MS; default 500ms
+// (margem para o IP de datacenter do Vercel, mais sujeito a rate-limit que um IP residencial).
+const NEWS_HOST_THROTTLE_MS = Number(process.env.COLLECTOR_HOST_THROTTLE_MS ?? "500") || 500;
 
 export async function collectRegulatoryNews(
   sources: NewsSourceConfig[],
@@ -748,7 +754,7 @@ async function fetchHtml(url: string) {
     "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
   };
   try {
-    return await resilientFetchText(url, { headers, timeoutMs: FETCH_TIMEOUT_MS });
+    return await resilientFetchText(url, { headers, timeoutMs: FETCH_TIMEOUT_MS, hostThrottleMs: NEWS_HOST_THROTTLE_MS });
   } catch (error) {
     // Em bloqueio/instabilidade de rede (403/429/5xx/timeout) tentamos o fallback headless
     // antes de desistir. Falhas de conteúdo (404 etc.) sobem direto.
