@@ -132,7 +132,11 @@ export async function processMonitoringSite(
           item_id: inserted.id,
           site_id: site.id,
           agencia_id: site.agencia_id,
-          tipo: enqueued.enqueued ? "documento_enfileirado" : "novo_item",
+          tipo: enqueued.enqueued
+            ? "documento_enfileirado"
+            : enqueued.error
+              ? "falha_captura"
+              : "novo_item",
           titulo: inserted.titulo,
           url_item: inserted.url_item,
         });
@@ -146,7 +150,12 @@ export async function processMonitoringSite(
       ultimo_status: status,
       ultimo_erro: null,
     };
-    if (result.needsHeadless) sitePatch.estrategia = "needs-headless";
+    // Não troca a estratégia de fontes "html-static" (ANM/ARTESP): marcá-las como
+    // "needs-headless" faria a ANM (gov.br) cair no parser de NOTÍCIAS no próximo
+    // run. O fallback headless já é tentado dentro de fetchMonitoringSite.
+    if (result.needsHeadless && site.estrategia !== "html-static") {
+      sitePatch.estrategia = "needs-headless";
+    }
     await db.from("monitoramento_sites").update(sitePatch).eq("id", site.id);
 
     if (run) {
@@ -223,12 +232,21 @@ export async function tryAutoEnqueueMonitoredDocument(
   },
   item: { tipo: string; titulo: string; url_item: string; hash_item: string; metadata: Record<string, unknown> },
   itemId: string,
-): Promise<{ enqueued: boolean }> {
+): Promise<{ enqueued: boolean; error?: string }> {
   if (site.tipo_fonte === "noticias" || site.auto_enfileirar_pdf === false) return { enqueued: false };
   if (!["pauta", "ata", "voto", "deliberacao", "documento"].includes(item.tipo)) return { enqueued: false };
 
   const pdf = await downloadPdfIfAvailable(item.url_item);
   if (!pdf) return { enqueued: false };
+  if ("error" in pdf) {
+    // Falha real de download (não some em silêncio): registra no item para o
+    // painel de Cobertura e sinaliza ao chamador para emitir alerta de falha.
+    await db
+      .from("monitoramento_itens")
+      .update({ metadata: { ...item.metadata, captura_erro: pdf.error } })
+      .eq("id", itemId);
+    return { enqueued: false, error: pdf.error };
+  }
 
   const { ensurePdfStorageBucket, enqueuePdfBuffer } = await import("@/lib/server/upload-queue");
   const bucketErr = await ensurePdfStorageBucket(db);
@@ -279,7 +297,12 @@ export async function tryAutoEnqueueMonitoredDocument(
   return { enqueued: ok };
 }
 
-async function downloadPdfIfAvailable(url: string): Promise<{ filename: string; buffer: Buffer } | null> {
+type PdfDownload =
+  | { filename: string; buffer: Buffer }
+  | { error: string } // falha real de download (timeout/HTTP) — distinta de "não é PDF"
+  | null;             // não é PDF (provável aviso só-HTML) — não conta como falha
+
+async function downloadPdfIfAvailable(url: string): Promise<PdfDownload> {
   let res: Response;
   try {
     res = await resilientFetch(url, {
@@ -289,8 +312,8 @@ async function downloadPdfIfAvailable(url: string): Promise<{ filename: string; 
       },
       timeoutMs: 20_000,
     });
-  } catch {
-    return null;
+  } catch (err) {
+    return { error: (err instanceof Error ? err.message : "download falhou").slice(0, 300) };
   }
   const contentType = res.headers.get("content-type") ?? "";
   const buffer = Buffer.from(await res.arrayBuffer());

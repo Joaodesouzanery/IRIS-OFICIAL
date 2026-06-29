@@ -2,6 +2,12 @@ import crypto from "crypto";
 import type { MonitoramentoTipoItem } from "@/types";
 import { fetchAntt2026MonitoringItems } from "@/lib/server/antt-2026-collector";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
+import { tryRenderHtmlFallback } from "@/lib/server/headless";
+
+// Teto de páginas seguidas por site na paginação ANM/ARTESP. O fim real é
+// detectado quando uma página não traz nenhum item novo; este teto só limita o
+// custo caso o portal tenha "próxima" cíclica.
+const MAX_MONITORING_PAGES = 12;
 
 const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
@@ -50,33 +56,122 @@ export async function fetchMonitoringSite(
     };
   }
 
-  // UA de navegador + retry/backoff/throttle (reduz 403/429 de portais como ARTESP).
-  const html = await resilientFetchText(site.url, {
-    headers: {
-      "User-Agent": BROWSER_UA,
-      Accept: "text/html,application/xhtml+xml",
-      "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
-    },
-  });
-  const contentHash = sha256(html);
   // Respeita a estrategia explicita: fontes "html-static" (ex.: ANM/ARTESP de
   // reunioes colegiadas) usam o parser de documentos mesmo estando em gov.br.
   // Sem isso, a pagina de reunioes da ANM caía no parser de NOTICIAS (filtra
   // apenas links /noticias/) e nao encontrava pautas/atas/votos.
-  const items = site.estrategia === "html-static"
-    ? parseMonitoringHtml(html, site.url, site.seletor_links)
-    : site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
-      ? parseGovBrNewsHtml(html, site.url, site.seletor_links)
-      : parseMonitoringHtml(html, site.url, site.seletor_links);
-  const hasAnchors = /<a\b/i.test(html);
+  const isDocStatic = site.estrategia === "html-static";
+  const parseFor = (pageHtml: string, pageUrl: string): DiscoveredMonitoringItem[] =>
+    isDocStatic
+      ? parseMonitoringHtml(pageHtml, pageUrl, site.seletor_links)
+      : site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
+        ? parseGovBrNewsHtml(pageHtml, pageUrl, site.seletor_links)
+        : parseMonitoringHtml(pageHtml, pageUrl, site.seletor_links);
+
+  // Paginação: segue "próxima"/rel=next até o teto, parando quando uma página
+  // não traz item novo. Antes só a 1ª página era lida (perdia 2+ de ANM/ARTESP).
+  const maxPages = Math.max(1, Math.min(options.maxPages ?? MAX_MONITORING_PAGES, 30));
+  const visited = new Set<string>();
+  const collected = new Map<string, DiscoveredMonitoringItem>();
+  let pageUrl: string | null = site.url;
+  let firstHtml = "";
+  let usedHeadless = false;
+  let pageCount = 0;
+
+  while (pageUrl && pageCount < maxPages && !visited.has(pageUrl)) {
+    visited.add(pageUrl);
+    pageCount += 1;
+
+    let html: string;
+    try {
+      // UA de navegador + retry/backoff/throttle (reduz 403/429 de portais como ARTESP).
+      html = await resilientFetchText(pageUrl, {
+        headers: {
+          "User-Agent": BROWSER_UA,
+          Accept: "text/html,application/xhtml+xml",
+          "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+        },
+      });
+    } catch (err) {
+      if (pageCount === 1) throw err; // 1ª página falhou → erro real do site (sobe para o runner)
+      break; // páginas seguintes: encerra a paginação sem descartar o já coletado
+    }
+
+    let items = parseFor(html, pageUrl);
+
+    // Fallback headless quando o estático não rende NENHUM doc (ARTESP/ANM atrás
+    // de iframe/JS). Só para html-static (evita acionar render nas fontes de
+    // notícia) e só adota o resultado se ele realmente trouxer itens.
+    if (items.length === 0 && pageCount === 1 && isDocStatic) {
+      const rendered = await tryRenderHtmlFallback(pageUrl, site.nome);
+      if (rendered) {
+        const headlessItems = parseFor(rendered, pageUrl);
+        if (headlessItems.length > 0) {
+          usedHeadless = true;
+          html = rendered;
+          items = headlessItems;
+        }
+      }
+    }
+
+    if (pageCount === 1) firstHtml = html;
+
+    let added = 0;
+    for (const item of items) {
+      if (!collected.has(item.hash_item)) {
+        collected.set(item.hash_item, item);
+        added += 1;
+      }
+    }
+    // Fim da lista: página seguinte sem novidade encerra a paginação.
+    if (pageCount > 1 && added === 0) break;
+
+    const next = findNextMonitoringPageUrl(html, pageUrl);
+    pageUrl = next && !visited.has(next) ? next : null;
+  }
+
+  const items = [...collected.values()];
+  const hasAnchors = /<a\b/i.test(firstHtml);
 
   return {
-    contentHash,
+    contentHash: sha256(firstHtml),
     needsHeadless:
-      items.length === 0 &&
-      (!hasAnchors || /javascript is disabled|requires javascript|__next|webpackJsonp/i.test(html)),
+      items.length === 0 && !usedHeadless &&
+      (!hasAnchors || /javascript is disabled|requires javascript|__next|webpackJsonp/i.test(firstHtml)),
     items,
   };
+}
+
+/**
+ * Acha o link da PRÓXIMA página de listagem (paginação ANM Plone / ARTESP Liferay).
+ * Prioriza rel="next"; senão, âncora cujo texto seja "próxima/seguinte/next/»/›".
+ * Só segue links no MESMO host (evita sair do portal) e diferentes da URL atual.
+ */
+export function findNextMonitoringPageUrl(html: string, baseUrl: string): string | null {
+  let baseHost: string;
+  try {
+    baseHost = new URL(baseUrl).host;
+  } catch {
+    return null;
+  }
+  const anchors = extractAnchors(html, baseUrl);
+  const relNext = anchors.find((a) => /\brel\s*=\s*["'][^"']*\bnext\b/i.test(a.attrs));
+  const NEXT_TEXT = /^(proxim[oa]|seguinte|next|»|›|>>?)$/;
+  const textNext = anchors.find((a) => {
+    const t = normalizeText(a.text);
+    return NEXT_TEXT.test(t) || /\b(proxim[oa]|seguinte)\b/.test(t);
+  });
+
+  for (const candidate of [relNext, textNext]) {
+    if (!candidate) continue;
+    try {
+      const u = new URL(candidate.href, baseUrl);
+      if (u.host === baseHost && u.toString() !== baseUrl) return u.toString();
+    } catch {
+      // ignora href inválido
+    }
+  }
+  return null;
 }
 
 export function parseMonitoringHtml(

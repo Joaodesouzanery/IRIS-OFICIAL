@@ -73,9 +73,12 @@ interface DownloadedPdf {
 export async function fetchAntt2026MonitoringItems(
   options: { maxPages?: number; maxMeetings?: number } = {},
 ): Promise<DiscoveredMonitoringItem[]> {
+  // Sem teto baixo: o limitador real é o filtro de 2026 (a descoberta para de
+  // paginar quando a listagem deixa de citar 2026). Os 3 págs/40 reuniões antigos
+  // cortavam reuniões de 2026 em silêncio. Mantém-se YEAR=2026.
   const meetings = await discoverAntt2026Meetings({
-    maxPages: options.maxPages ?? 3,
-    maxMeetings: options.maxMeetings ?? 40,
+    maxPages: options.maxPages,
+    maxMeetings: options.maxMeetings,
   });
   const items: DiscoveredMonitoringItem[] = [];
 
@@ -484,7 +487,7 @@ async function findExistingProcess(db: SupabaseClient, reuniaoId: string, proces
 }
 
 async function fetchHtmlSecure(url: string): Promise<string> {
-  const res = await fetchSecure(url, {
+  const res = await fetchSecureWithRetry(url, {
     accept: "text/html,application/xhtml+xml",
     allowedHosts: ALLOWED_HOSTS,
     maxBytes: MAX_HTML_BYTES,
@@ -493,7 +496,7 @@ async function fetchHtmlSecure(url: string): Promise<string> {
 }
 
 async function downloadPdfSecure(url: string): Promise<DownloadedPdf> {
-  const res = await fetchSecure(url, {
+  const res = await fetchSecureWithRetry(url, {
     accept: "application/pdf",
     allowedHosts: PDF_HOSTS,
     maxBytes: MAX_PDF_BYTES,
@@ -509,6 +512,33 @@ async function downloadPdfSecure(url: string): Promise<DownloadedPdf> {
     finalUrl: res.finalUrl,
     hash: sha256Buffer(res.buffer),
   };
+}
+
+// Retry para falhas TRANSITÓRIAS (429/5xx/timeout/reset): o portal da ANTT cai
+// intermitentemente e, sem retry, o doc virava `status='erro'` em silêncio (sem
+// nova tentativa). 2 tentativas com backoff; o throttle por host já espaça.
+async function fetchSecureWithRetry(
+  rawUrl: string,
+  options: { accept: string; allowedHosts: Set<string>; maxBytes: number },
+  attempts = 2,
+): Promise<{ buffer: Buffer; contentType: string | null; finalUrl: string }> {
+  let lastError: unknown;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fetchSecure(rawUrl, options);
+    } catch (error) {
+      lastError = error;
+      const msg = messageOf(error);
+      const transient = /HTTP (429|5\d\d)|abort|timeout|ECONNRESET|ETIMEDOUT|EAI_AGAIN|fetch failed|network/i.test(msg);
+      if (!transient || i === attempts - 1) throw error;
+      await sleep(700 * (i + 1));
+    }
+  }
+  throw lastError;
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function fetchSecure(
