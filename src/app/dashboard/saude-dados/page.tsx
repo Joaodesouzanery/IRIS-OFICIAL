@@ -50,10 +50,31 @@ function fmtDateTime(iso: string | null): string {
   return Number.isNaN(d.getTime()) ? "—" : d.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" });
 }
 
+type CoberturaDocs = {
+  modo: "real" | "demo";
+  por_agencia: Array<{
+    agencia_id: string | null; sigla: string; nome: string;
+    reunioes_descobertas: number; itens_monitorados: number;
+    docs_coletados: number; docs_coletados_erro: number;
+    docs_por_tipo: Record<string, number>;
+    regulatorios: Record<string, number>;
+    deliberacoes_finais: number;
+  }>;
+  perdas: {
+    coletados_com_erro: number; regulatorios_failed: number; review_pending: number;
+    monitorados_nao_enfileirados: number; coletados_nao_importados: number;
+  };
+  alertas: string[];
+};
+
 export default function SaudeDadosPage() {
   const { data, isLoading, error } = useQuery({
     queryKey: ["saude-dados"],
     queryFn: () => api.get<SaudeDados>("/admin/saude-dados"),
+  });
+  const { data: cobertura } = useQuery({
+    queryKey: ["cobertura-documentos"],
+    queryFn: () => api.get<CoberturaDocs>("/admin/cobertura-documentos"),
   });
 
   return (
@@ -223,6 +244,53 @@ export default function SaudeDadosPage() {
             )}
           </div>
         </>
+      )}
+
+      {/* Cobertura de Documentos (scraper) — funil descoberto → coletado → confirmado */}
+      {cobertura && (
+        <div className="card space-y-3">
+          <p className="text-xs text-text-muted font-mono uppercase tracking-wider flex items-center gap-1.5">
+            <FileText className="w-3.5 h-3.5" /> Cobertura de Documentos (scraper) — o que foi trazido vs perdido
+          </p>
+          {cobertura.alertas.length > 0 && (
+            <ul className="space-y-1">
+              {cobertura.alertas.map((a, i) => (
+                <li key={i} className="text-sm text-amber-400/90 flex items-start gap-2"><span className="mt-0.5">•</span> {a}</li>
+              ))}
+            </ul>
+          )}
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-text-muted text-left border-b border-border">
+                  <th className="py-1.5 pr-3 font-medium">Agência</th>
+                  <th className="py-1.5 px-3 font-medium text-right">Descobertos</th>
+                  <th className="py-1.5 px-3 font-medium text-right">Coletados</th>
+                  <th className="py-1.5 px-3 font-medium text-right">Confirmados</th>
+                  <th className="py-1.5 px-3 font-medium text-right">Revisão</th>
+                  <th className="py-1.5 px-3 font-medium text-right">Falhas</th>
+                  <th className="py-1.5 pl-3 font-medium text-right">Deliberações</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cobertura.por_agencia.map((a) => (
+                  <tr key={a.agencia_id ?? a.sigla} className="border-b border-border/50 last:border-0">
+                    <td className="py-2 pr-3"><span className="text-xs px-2 py-0.5 rounded font-mono font-semibold bg-brand/15 text-brand border border-brand/25">{a.sigla}</span></td>
+                    <td className="py-2 px-3 text-right font-mono text-text-secondary">{a.reunioes_descobertas + a.itens_monitorados}</td>
+                    <td className="py-2 px-3 text-right font-mono text-text-secondary">{a.docs_coletados}{a.docs_coletados_erro > 0 && <span className="text-red-400"> (-{a.docs_coletados_erro})</span>}</td>
+                    <td className="py-2 px-3 text-right font-mono text-text-primary">{a.regulatorios.confirmed ?? 0}</td>
+                    <td className="py-2 px-3 text-right font-mono">{(a.regulatorios.review_pending ?? 0) > 0 ? <span className="text-amber-400">{a.regulatorios.review_pending}</span> : <span className="text-text-label">0</span>}</td>
+                    <td className="py-2 px-3 text-right font-mono">{(a.regulatorios.failed ?? 0) > 0 ? <span className="text-red-400">{a.regulatorios.failed}</span> : <span className="text-text-label">0</span>}</td>
+                    <td className="py-2 pl-3 text-right font-mono text-text-primary">{a.deliberacoes_finais}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[11px] text-text-label">
+            Perdas: {cobertura.perdas.monitorados_nao_enfileirados} descobertos não enfileirados · {cobertura.perdas.regulatorios_failed} falhas · {cobertura.perdas.review_pending} em revisão · {cobertura.perdas.coletados_com_erro} coletados c/ erro.
+          </p>
+        </div>
       )}
     </div>
   );
