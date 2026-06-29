@@ -46,6 +46,7 @@ export interface SaudeDadosResponse {
     deliberacoes: number;
     deliberacoes_com_voto: number;
     deliberacoes_sem_voto: number;
+    deliberacoes_so_inferidas: number;
     votos: number;
     votos_nominais: number;
     votos_inferidos: number;
@@ -76,6 +77,7 @@ const SAUDE_DADOS_DEMO: SaudeDadosResponse = {
     deliberacoes: 128,
     deliberacoes_com_voto: 96,
     deliberacoes_sem_voto: 32,
+    deliberacoes_so_inferidas: 18,
     votos: 384,
     votos_nominais: 240,
     votos_inferidos: 144,
@@ -166,14 +168,18 @@ export async function GET(req: NextRequest) {
 
   // Deliberações com ≥1 voto (set de deliberacao_id distintos) + nominais.
   const delibsComVoto = new Set<string>();
+  const delibsComNominal = new Set<string>();
   let votosNominais = 0;
   const votosPorAgencia = new Map<string | null, number>();
   for (const v of votos) {
     delibsComVoto.add(v.deliberacao_id);
-    if (v.is_nominal) votosNominais += 1;
+    if (v.is_nominal) { votosNominais += 1; delibsComNominal.add(v.deliberacao_id); }
     const ag = delibAgencia.get(v.deliberacao_id) ?? null;
     votosPorAgencia.set(ag, (votosPorAgencia.get(ag) ?? 0) + 1);
   }
+  // Deliberações com voto MAS sem nenhum voto nominal → 100% inferidas (suspeita de falsa unanimidade legada).
+  let delibsSoInferidas = 0;
+  for (const id of delibsComVoto) if (!delibsComNominal.has(id)) delibsSoInferidas += 1;
 
   // Contagens de documentos por status (global) e por agência.
   const statusCount: Record<string, number> = {};
@@ -224,6 +230,7 @@ export async function GET(req: NextRequest) {
   if (reviewPending > 0) alertas.push(`${reviewPending} documento(s) aguardando confirmação manual em Upload → Revisão.`);
   if (failed > 0) alertas.push(`${failed} documento(s) falharam no processamento (PDF escaneado/erro — sem OCR ainda).`);
   if (semVoto > 0) alertas.push(`${semVoto} deliberação(ões) sem nenhum voto registrado.`);
+  if (delibsSoInferidas > 0) alertas.push(`${delibsSoInferidas} deliberação(ões) com votos 100% inferidos (sem nome no documento) — possível unanimidade legada a revisar.`);
   if (candidatosPendentes > 0) alertas.push(`${candidatosPendentes} candidato(s) de diretor aguardando revisão.`);
   for (const ex of (execucoesRes.data ?? [])) {
     if (ex.status === "error") { alertas.push(`Última coleta de ${ex.dominio} falhou: ${ex.error_message ?? "erro"}.`); break; }
@@ -236,6 +243,7 @@ export async function GET(req: NextRequest) {
       deliberacoes: totalDelibs,
       deliberacoes_com_voto: comVoto,
       deliberacoes_sem_voto: semVoto,
+      deliberacoes_so_inferidas: delibsSoInferidas,
       votos: totalVotos,
       votos_nominais: votosNominais,
       votos_inferidos: Math.max(0, totalVotos - votosNominais),

@@ -18,6 +18,7 @@ import {
   getActiveDiretoresForVote,
   shouldInferVotesFromMandate,
   type DiretorVoteRecord,
+  type VotoInsertRow,
 } from "@/lib/server/vote-inference";
 import type {
   ConfirmDelib,
@@ -29,6 +30,31 @@ import type {
 } from "@/types";
 
 const RESULTADOS_VALIDOS = new Set<string>(RESULTADOS);
+
+/**
+ * Upsert de votos que NÃO rebaixa um voto nominal (extraído do documento) para
+ * um voto inferido por mandato ao reprocessar a mesma deliberação. Preserva a
+ * fidelidade: o que foi lido do documento prevalece sobre a inferência.
+ */
+async function upsertVotosProtegido(db: any, votoRows: VotoInsertRow[]) {
+  if (!votoRows.length) return;
+  const delibIds = [...new Set(votoRows.map((r) => r.deliberacao_id))];
+  const { data: existentes } = await db
+    .from("votos")
+    .select("deliberacao_id, diretor_id, is_nominal")
+    .in("deliberacao_id", delibIds);
+  const nominalExistente = new Set<string>(
+    (existentes ?? [])
+      .filter((v: any) => v.is_nominal)
+      .map((v: any) => `${v.deliberacao_id}|${v.diretor_id}`),
+  );
+  const toUpsert = votoRows.filter(
+    (r) => r.is_nominal || !nominalExistente.has(`${r.deliberacao_id}|${r.diretor_id}`),
+  );
+  if (toUpsert.length > 0) {
+    await db.from("votos").upsert(toUpsert, { onConflict: "deliberacao_id,diretor_id" });
+  }
+}
 
 const MICROTEMAS_VALIDOS = new Set<string>([
   "tarifa", "obras", "multa", "contrato", "reequilibrio",
@@ -490,6 +516,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     unanimidadeDetectada: item.unanimidade_detectada,
                     nomes: item.votos_detectados ?? [],
                     nomesContra: item.votos_contra_detectados ?? [],
+                    nomesAbstencao: item.votos_abstencao_detectados ?? [],
+                    dataReuniao: d.data_reuniao,
                   }),
                   warnings: item.warnings ?? [],
                 }, attachment),
@@ -503,6 +531,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 ? buildVotoRowsFromSuggestions({
                   deliberacao_id: child.id as string,
                   votosSugeridos: item.votos_sugeridos,
+                  resultado: item.resultado,
                 })
                 : buildVotoRows({
                   deliberacao_id: child.id as string,
@@ -512,6 +541,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   nomesAusente: item.votos_ausentes_detectados ?? [],
                   diretoresList,
                   activeDiretoresList,
+                  resultado: item.resultado,
                   inferFromMandate: shouldInferVotesFromMandate({
                     resultado: item.resultado,
                     tipo_documento: "ata",
@@ -519,10 +549,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     unanimidadeDetectada: item.unanimidade_detectada,
                     nomes: itemVotingNames,
                     nomesContra: item.votos_contra_detectados ?? [],
+                    nomesAbstencao: item.votos_abstencao_detectados ?? [],
+                    dataReuniao: d.data_reuniao,
                   }),
                 });
 
-              if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
+              if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
             }
           }
 
@@ -572,6 +604,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
                 nomes: d.nomes_votacao,
                 nomesContra: d.nomes_votacao_contra,
+                nomesAbstencao: d.nomes_votacao_abstencao ?? [],
+                dataReuniao: d.data_reuniao,
               }),
             }, attachment),
           })
@@ -604,6 +638,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           ? buildVotoRowsFromSuggestions({
             deliberacao_id: delib.id as string,
             votosSugeridos: d.votos_sugeridos ?? [],
+            resultado: d.resultado,
           })
           : buildVotoRows({
             deliberacao_id: delib.id as string,
@@ -613,6 +648,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             nomesAusente: d.nomes_votacao_ausente ?? [],
             diretoresList,
             activeDiretoresList,
+            resultado: d.resultado,
             inferFromMandate: shouldInferVotesFromMandate({
               resultado: d.resultado,
               tipo_documento: d.tipo_documento,
@@ -620,10 +656,11 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               unanimidadeDetectada: Boolean(d.extraction_raw?.unanimidade_detectada),
               nomes: votingNames,
               nomesContra: d.nomes_votacao_contra,
-              signatariosCount: Array.isArray(d.extraction_raw?.signatarios) ? d.extraction_raw.signatarios.length : 0,
+              nomesAbstencao: d.nomes_votacao_abstencao ?? [],
+              dataReuniao: d.data_reuniao,
             }),
           });
-        if (votoRows.length > 0) await db.from("votos").upsert(votoRows, { onConflict: "deliberacao_id,diretor_id" });
+        if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
 
         await markDocumentReviewed(db, d.documento_id, "confirmed");
         results.push({ filename: d.filename, status: "created", deliberacao_id: delib.id as string, documento_id: d.documento_id ?? null });

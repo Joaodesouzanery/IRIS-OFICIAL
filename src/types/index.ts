@@ -305,6 +305,7 @@ export interface DiretorProfile {
     divergente: number;
     pct_favoravel: number;
     pct_divergente: number;
+    votos_inferidos?: number;
   };
   por_microtema: Array<{ microtema: string; total: number }>;
   serie_temporal?: Array<{ period: string; total: number; favoravel: number; desfavoravel: number; divergente: number }>;
@@ -319,6 +320,7 @@ export interface DiretorProfile {
     resultado: string | null;
     tipo_voto: string;
     is_divergente: boolean;
+    is_nominal?: boolean;
   }>;
   tendencias: {
     perfil: "Consensual" | "Moderadamente divergente" | "Divergente";

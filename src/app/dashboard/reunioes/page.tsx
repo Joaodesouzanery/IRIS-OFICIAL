@@ -18,13 +18,13 @@ type ReuniaoListItem = {
 
 type ReuniaoDetalhe = {
   cabecalho: { agencia_sigla: string | null; data_reuniao: string | null; numero_reuniao: string | null; tipo_reuniao: string | null };
-  resumo: { total_itens: number; deferidos: number; indeferidos: number; divergencias: number; pct_consenso: number };
+  resumo: { total_itens: number; deferidos: number; indeferidos: number; divergencias: number; pct_consenso: number; votos_nominais?: number; votos_inferidos?: number };
   itens: Array<{
     deliberacao_id: string; numero_deliberacao: string | null; interessado: string | null;
     microtema: string | null; resultado: string | null;
-    votos: Array<{ diretor_id: string; diretor_nome: string | null; tipo_voto: string; is_divergente: boolean }>;
+    votos: Array<{ diretor_id: string; diretor_nome: string | null; tipo_voto: string; is_divergente: boolean; is_nominal: boolean }>;
   }>;
-  diretores: Array<{ id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number }>;
+  diretores: Array<{ id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number; nominais?: number; inferidos?: number }>;
 };
 
 const ANOS = Array.from({ length: 6 }, (_, i) => new Date().getFullYear() - i);
@@ -143,7 +143,12 @@ function ReuniaoCard({ r, open, onToggle }: { r: ReuniaoListItem; open: boolean;
 
               {/* Itens da reunião */}
               <div>
-                <p className="text-xs text-text-muted mb-2 font-mono uppercase tracking-wider">Itens deliberados</p>
+                <p className="text-xs text-text-muted mb-2 font-mono uppercase tracking-wider">
+                  Itens deliberados
+                  {(detalhe.resumo.votos_inferidos ?? 0) > 0 && (
+                    <span className="ml-2 text-text-label normal-case tracking-normal">· <span className="font-mono">~inf</span> = inferido por mandato (não nominal no documento)</span>
+                  )}
+                </p>
                 <div className="space-y-2">
                   {detalhe.itens.map((it) => (
                     <div key={it.deliberacao_id} className="border border-border/60 rounded-card p-3">
@@ -159,14 +164,17 @@ function ReuniaoCard({ r, open, onToggle }: { r: ReuniaoListItem; open: boolean;
                       {it.votos.length > 0 && (
                         <div className="flex flex-wrap gap-1.5 mt-2">
                           {it.votos.map((v, i) => (
-                            <span key={`${v.diretor_id}-${i}`} className={cn(
-                              "text-[10px] px-1.5 py-0.5 rounded font-mono inline-flex items-center gap-1",
-                              v.tipo_voto === "Favoravel" && "bg-emerald-500/10 text-emerald-400",
-                              v.tipo_voto === "Desfavoravel" && "bg-red-500/10 text-red-400",
-                              v.is_divergente && "bg-amber-500/10 text-amber-400",
-                              !["Favoravel", "Desfavoravel"].includes(v.tipo_voto) && "bg-zinc-500/10 text-zinc-400",
-                            )}>
-                              <Gavel className="w-2.5 h-2.5" /> {v.diretor_nome ?? "—"}: {v.tipo_voto}
+                            <span key={`${v.diretor_id}-${i}`}
+                              title={v.is_nominal ? undefined : "Voto inferido por mandato — não consta nominalmente no documento"}
+                              className={cn(
+                                "text-[10px] px-1.5 py-0.5 rounded font-mono inline-flex items-center gap-1",
+                                v.tipo_voto === "Favoravel" && "bg-emerald-500/10 text-emerald-400",
+                                v.tipo_voto === "Desfavoravel" && "bg-red-500/10 text-red-400",
+                                v.is_divergente && "bg-amber-500/10 text-amber-400",
+                                !["Favoravel", "Desfavoravel"].includes(v.tipo_voto) && "bg-zinc-500/10 text-zinc-400",
+                                !v.is_nominal && "border border-dashed border-current/40 opacity-70",
+                              )}>
+                              <Gavel className="w-2.5 h-2.5" /> {v.diretor_nome ?? "—"}: {v.tipo_voto}{!v.is_nominal && <span className="ml-0.5">~inf</span>}
                             </span>
                           ))}
                         </div>

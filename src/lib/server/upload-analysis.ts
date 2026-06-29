@@ -216,7 +216,8 @@ export async function analyzeUploadPdf(input: {
     unanimidadeDetectada: fields.unanimidade_detectada,
     nomes: fields.nomes_votacao,
     nomesContra: fields.nomes_votacao_contra,
-    signatariosCount: fields.signatarios?.length ?? 0,
+    nomesAbstencao: fields.nomes_votacao_abstencao,
+    dataReuniao: fields.data_reuniao,
   });
   const mainVotosSugeridos = buildVoteSuggestions({
     nomes: fields.nomes_votacao,
@@ -226,6 +227,7 @@ export async function analyzeUploadPdf(input: {
     diretoresList,
     activeDiretoresList,
     inferFromMandate: mainInferFromMandate,
+    resultado: fields.resultado,
   });
 
   if (ata_items?.length) {
@@ -237,16 +239,20 @@ export async function analyzeUploadPdf(input: {
         unanimidadeDetectada: item.unanimidade_detectada,
         nomes: item.votos_detectados ?? [],
         nomesContra: item.votos_contra_detectados ?? [],
+        nomesAbstencao: item.votos_abstencao_detectados ?? [],
+        dataReuniao: fields.data_reuniao,
       });
       return {
         ...item,
         votos_sugeridos: buildVoteSuggestions({
           nomes: item.votos_detectados ?? [],
           nomesContra: item.votos_contra_detectados ?? [],
+          nomesAbstencao: item.votos_abstencao_detectados ?? [],
           nomesAusente: item.votos_ausentes_detectados ?? [],
           diretoresList,
           activeDiretoresList,
           inferFromMandate,
+          resultado: item.resultado,
         }),
       };
     });

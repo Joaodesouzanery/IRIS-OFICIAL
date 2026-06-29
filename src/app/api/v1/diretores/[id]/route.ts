@@ -76,7 +76,7 @@ export async function GET(
   const { data: votos } = await db
     .from("votos")
     .select(`
-      tipo_voto, is_divergente,
+      tipo_voto, is_divergente, is_nominal,
       deliberacoes!inner(
         id, numero_deliberacao, data_reuniao, interessado,
         microtema, resultado
@@ -85,7 +85,7 @@ export async function GET(
     .eq("diretor_id", id)
     .order("deliberacoes(data_reuniao)", { ascending: false });
 
-  let favoravel = 0, desfavoravel = 0, abstencao = 0, divergente = 0;
+  let favoravel = 0, desfavoravel = 0, abstencao = 0, divergente = 0, votos_inferidos = 0;
   const microtemaCount = new Map<string, number>();
   const microtemaDiv = new Map<string, number>();
   const mesMap = new Map<string, { total: number; favoravel: number; desfavoravel: number; divergente: number }>();
@@ -93,7 +93,7 @@ export async function GET(
 
   for (const v of votos ?? []) {
     const d = v as unknown as {
-      tipo_voto: string; is_divergente: boolean;
+      tipo_voto: string; is_divergente: boolean; is_nominal: boolean;
       deliberacoes: { id: string; numero_deliberacao: string | null; data_reuniao: string | null;
         interessado: string | null; microtema: string | null; resultado: string | null };
     };
@@ -101,6 +101,7 @@ export async function GET(
     else if (d.tipo_voto === "Desfavoravel") desfavoravel++;
     else abstencao++;
     if (d.is_divergente) divergente++;
+    if (!d.is_nominal) votos_inferidos++;
     if (d.deliberacoes.microtema) {
       microtemaCount.set(d.deliberacoes.microtema, (microtemaCount.get(d.deliberacoes.microtema) ?? 0) + 1);
       if (d.is_divergente) microtemaDiv.set(d.deliberacoes.microtema, (microtemaDiv.get(d.deliberacoes.microtema) ?? 0) + 1);
@@ -123,6 +124,7 @@ export async function GET(
       resultado: d.deliberacoes.resultado,
       tipo_voto: d.tipo_voto,
       is_divergente: d.is_divergente,
+      is_nominal: d.is_nominal,
     });
   }
 
@@ -153,7 +155,7 @@ export async function GET(
       status: status as "Ativo" | "Inativo",
       dias_restantes,
     },
-    stats: { total_votos: total, favoravel, desfavoravel, abstencao, divergente, pct_favoravel, pct_divergente },
+    stats: { total_votos: total, favoravel, desfavoravel, abstencao, divergente, pct_favoravel, pct_divergente, votos_inferidos },
     por_microtema: [...microtemaCount.entries()]
       .map(([microtema, t]) => ({ microtema, total: t }))
       .sort((a, b) => b.total - a.total),

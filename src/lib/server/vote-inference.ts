@@ -25,6 +25,14 @@ export function isFinalVoteDocument(input: {
   return !["pauta", "voto_individual", "documento_apoio"].includes(String(input.tipo_documento ?? ""));
 }
 
+/**
+ * Decide se devemos COMPLETAR os votos por mandato (diretores ativos sem voto
+ * nominal recebem o voto da decisão). Conservador e baseado em evidência:
+ *  - precisa de data_reuniao (sem ela não há como saber quem estava na diretoria);
+ *  - infere apenas quando há divergência NOMEADA (completa o restante como a decisão)
+ *    OU unanimidade TEXTUAL sem nomes extraídos.
+ *  - quórum por assinatura NÃO é evidência de "todos a favor" → não infere.
+ */
 export function shouldInferVotesFromMandate(input: {
   resultado: string | null;
   tipo_documento: TipoDocumento | string | null;
@@ -33,28 +41,33 @@ export function shouldInferVotesFromMandate(input: {
   nomes?: string[];
   nomesContra?: string[];
   nomesAbstencao?: string[];
-  /** Nº de signatários detectados na ata (quórum) — habilita inferência ANM. */
+  /** Data da reunião (ISO). Sem ela não inferimos — não dá para saber a composição. */
+  dataReuniao?: string | null;
+  /** @deprecated quórum por assinatura não é mais usado como gatilho de inferência. */
   signatariosCount?: number;
 }) {
   if (!isFinalVoteDocument(input)) return false;
   if (!input.resultado || input.resultado === "Retirado de Pauta") return false;
+  if (!input.dataReuniao) return false;
   const isUnanimous = Boolean(input.unanimidadeDetectada) || input.resultado === "Aprovado por Unanimidade";
-  // Divergência ou abstenção quebram a unanimidade e justificam inferir o restante por mandato.
+  // Divergência/abstenção nomeada: a decisão prevaleceu → completa o restante por mandato.
   const hasDivergence = Boolean(input.nomesContra?.length) || Boolean(input.nomesAbstencao?.length);
   const hasNominalNames = Boolean(input.nomes?.length);
-  // Quórum colegiado (≥2 signatários) com resultado, mas sem voto nominal nem
-  // divergência (caso típico das atas ANM): infere a decisão por mandato.
-  const hasQuorum = (input.signatariosCount ?? 0) >= 2;
-  return hasDivergence || (isUnanimous && !hasNominalNames) || (hasQuorum && !hasNominalNames);
+  return hasDivergence || (isUnanimous && !hasNominalNames);
 }
 
+/**
+ * Diretores que estavam na diretoria NA DATA da reunião (base para inferência).
+ * Conservador: sem data ou sem mandato cadastrado na data → retorna [] (não infere),
+ * evitando atribuir voto a quem não estava no colegiado (diretores fantasma).
+ */
 export async function getActiveDiretoresForVote(
   db: any,
   agenciaId: string,
   dataReuniao: string | null,
-  fallback: DiretorVoteRecord[],
+  _fallback: DiretorVoteRecord[],
 ): Promise<DiretorVoteRecord[]> {
-  if (!dataReuniao) return fallback;
+  if (!dataReuniao) return [];
 
   const { data, error } = await db
     .from("mandatos")
@@ -63,7 +76,7 @@ export async function getActiveDiretoresForVote(
     .lte("data_inicio", dataReuniao)
     .or(`data_fim.is.null,data_fim.gte.${dataReuniao}`);
 
-  if (error || !data?.length) return fallback;
+  if (error || !data?.length) return [];
 
   const unique = new Map<string, DiretorVoteRecord>();
   for (const row of data as any[]) {
@@ -74,20 +87,6 @@ export async function getActiveDiretoresForVote(
       nome: diretor.nome,
       nome_variantes: Array.isArray(diretor.nome_variantes) ? diretor.nome_variantes : [],
     });
-  }
-
-  if (unique.size === 0) return fallback;
-
-  // Diretores do fallback que NÃO têm nenhum mandato cadastrado não podem ser
-  // excluídos por data — inclui-os de forma conservadora (evita perder votos de
-  // diretores com datas de mandato ausentes).
-  const { data: comMandato } = await db
-    .from("mandatos")
-    .select("diretor_id, diretores!inner(agencia_id)")
-    .eq("diretores.agencia_id", agenciaId);
-  const temMandato = new Set<string>((comMandato ?? []).map((r: any) => r.diretor_id));
-  for (const d of fallback) {
-    if (!temMandato.has(d.id) && !unique.has(d.id)) unique.set(d.id, d);
   }
 
   return [...unique.values()];
@@ -102,7 +101,10 @@ export function buildVotoRows(input: {
   diretoresList: DiretorVoteRecord[];
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
+  /** Resultado da deliberação — define a direção da divergência. */
+  resultado?: string | null;
 }): VotoInsertRow[] {
+  const resultado = input.resultado ?? null;
   const contraIds = matchIds(input.nomesContra, input.diretoresList);
   const ausenteIds = matchIds(input.nomesAusente ?? [], input.diretoresList);
   const abstencaoIds = matchIds(input.nomesAbstencao ?? [], input.diretoresList);
@@ -116,34 +118,43 @@ export function buildVotoRows(input: {
     if (!match.diretorId || match.needsReview) continue;
     // Precedência: Ausente > Abstencao > Desfavoravel > Favoravel.
     if (ausenteIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado));
     } else if (abstencaoIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Abstencao", true));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Abstencao", true, resultado));
     } else if (contraIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Desfavoravel", true));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Desfavoravel", true, resultado));
     } else {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Favoravel", true));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Favoravel", true, resultado));
     }
   }
 
   for (const diretorId of contraIds) {
     if (ausenteIds.has(diretorId) || abstencaoIds.has(diretorId)) continue;
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Desfavoravel", true));
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Desfavoravel", true, resultado));
   }
 
   for (const diretorId of abstencaoIds) {
     if (ausenteIds.has(diretorId)) continue;
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Abstencao", true));
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Abstencao", true, resultado));
   }
 
   for (const diretorId of ausenteIds) {
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true));
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado));
   }
 
   if (input.inferFromMandate) {
+    // Não fabricar "Favoravel" para diretores que o documento indica como
+    // divergentes/ausentes, MESMO que o match tenha ficado na faixa de revisão
+    // (0.6–0.85) e por isso não tenha virado voto nominal acima. Evita o pior
+    // caso: perder um "Desfavoravel" real e ainda inventar um "Favoravel".
+    const divergentIntent = collectDivergentIntentIds(
+      [...input.nomesContra, ...(input.nomesAbstencao ?? []), ...(input.nomesAusente ?? [])],
+      input.diretoresList,
+    );
     for (const diretor of input.activeDiretoresList) {
       if (rows.has(diretor.id)) continue;
-      rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, "Favoravel", false));
+      if (divergentIntent.has(diretor.id)) continue;
+      rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, "Favoravel", false, resultado));
     }
   }
 
@@ -153,7 +164,9 @@ export function buildVotoRows(input: {
 export function buildVotoRowsFromSuggestions(input: {
   deliberacao_id: string;
   votosSugeridos: VotoSugerido[];
+  resultado?: string | null;
 }): VotoInsertRow[] {
+  const resultado = input.resultado ?? null;
   const rows = new Map<string, VotoInsertRow>();
   for (const voto of input.votosSugeridos) {
     if (!voto.diretor_id) continue;
@@ -162,6 +175,7 @@ export function buildVotoRowsFromSuggestions(input: {
       voto.diretor_id,
       voto.tipo_voto,
       voto.is_nominal,
+      resultado,
     ));
   }
   return [...rows.values()];
@@ -175,6 +189,7 @@ export function buildVoteSuggestions(input: {
   diretoresList: DiretorVoteRecord[];
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
+  resultado?: string | null;
 }): VotoSugerido[] {
   const rows = buildVotoRows({
     deliberacao_id: "preview",
@@ -206,10 +221,46 @@ function matchIds(names: string[], diretoresList: DiretorVoteRecord[]) {
   const ids = new Set<string>();
   for (const nome of names) {
     const match = findBestMatch(nome, diretoresList);
-    // Apenas matches de alta confiança contam como voto contra/ausente.
+    // Apenas matches de alta confiança contam como voto contra/ausente/abstenção.
     if (match.diretorId && !match.needsReview) ids.add(match.diretorId);
   }
   return ids;
+}
+
+/**
+ * IDs de diretores com INTENÇÃO divergente no documento, incluindo matches de
+ * confiança média (faixa 0.6–0.85). Usado só para BLOQUEAR a inferência de
+ * "Favoravel" sobre eles — nunca para gravar voto (isso exige revisão humana).
+ */
+function collectDivergentIntentIds(names: string[], diretoresList: DiretorVoteRecord[]) {
+  const ids = new Set<string>();
+  for (const nome of names) {
+    const match = findBestMatch(nome, diretoresList);
+    if (match.diretorId && match.score >= 0.6) ids.add(match.diretorId);
+  }
+  return ids;
+}
+
+/** Resultado "positivo" (decisão prevaleceu), negativo (Indeferido) ou neutro/desconhecido. */
+function isPositiveResult(resultado: string | null): boolean | null {
+  if (!resultado || resultado === "Retirado de Pauta") return null;
+  if (resultado === "Indeferido") return false;
+  return true;
+}
+
+/**
+ * Divergência relativa ao RESULTADO da maioria:
+ *  - Abstenção sempre conta como não-consenso (divergente).
+ *  - Resultado positivo → divergente quem votou Desfavorável.
+ *  - Resultado negativo (Indeferido) → divergente quem votou Favorável.
+ *  - Sem resultado conhecido → cai no comportamento anterior (Desfavorável).
+ */
+export function isDivergentVote(tipoVoto: TipoVoto, resultado: string | null): boolean {
+  if (tipoVoto === "Ausente") return false;
+  if (tipoVoto === "Abstencao") return true;
+  const positive = isPositiveResult(resultado);
+  if (positive === null) return tipoVoto === "Desfavoravel";
+  return positive ? tipoVoto === "Desfavoravel" : tipoVoto === "Favoravel";
 }
 
 function rowFor(
@@ -217,13 +268,13 @@ function rowFor(
   diretorId: string,
   tipoVoto: TipoVoto,
   isNominal: boolean,
+  resultado: string | null = null,
 ): VotoInsertRow {
   return {
     deliberacao_id: deliberacaoId,
     diretor_id: diretorId,
     tipo_voto: tipoVoto,
-    // Abstenção não é divergência (a matriz de votação a contabiliza em coluna própria).
-    is_divergente: tipoVoto === "Desfavoravel",
+    is_divergente: isDivergentVote(tipoVoto, resultado),
     is_nominal: isNominal,
   };
 }

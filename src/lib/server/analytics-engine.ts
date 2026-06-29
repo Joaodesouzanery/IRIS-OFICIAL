@@ -326,7 +326,7 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
   const map = new Map<string, {
     agencia_id: string | null; agencia_sigla: string | null; data_reuniao: string | null;
     numero_reuniao: string | null; tipo_reuniao: string | null;
-    total_itens: number; total_votos: number; divergencias: number;
+    total_itens: number; total_votos: number; votos_nominais: number; votos_inferidos: number; divergencias: number;
   }>();
   for (const d of rows) {
     const key = reuniaoKey(d);
@@ -335,13 +335,16 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
       e = {
         agencia_id: d.agencia_id ?? null, agencia_sigla: d.agencia?.sigla ?? null,
         data_reuniao: d.data_reuniao, numero_reuniao: d.numero_reuniao ?? null, tipo_reuniao: d.tipo_reuniao ?? null,
-        total_itens: 0, total_votos: 0, divergencias: 0,
+        total_itens: 0, total_votos: 0, votos_nominais: 0, votos_inferidos: 0, divergencias: 0,
       };
       map.set(key, e);
     }
     e.total_itens++;
-    e.total_votos += (d.votos ?? []).length;
-    if ((d.votos ?? []).some((v) => v.is_divergente)) e.divergencias++;
+    const votos = d.votos ?? [];
+    e.total_votos += votos.length;
+    e.votos_nominais += votos.filter((v) => v.is_nominal).length;
+    e.votos_inferidos += votos.filter((v) => !v.is_nominal).length;
+    if (votos.some((v) => v.is_divergente)) e.divergencias++;
   }
   return [...map.entries()]
     .map(([slug, e]) => ({
@@ -363,19 +366,21 @@ export function computeReuniaoDetalhe(
   );
   if (rows.length === 0) return null;
 
-  let deferidos = 0, indeferidos = 0, divergencias = 0;
-  const dirMap = new Map<string, { id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number }>();
+  let deferidos = 0, indeferidos = 0, divergencias = 0, votos_nominais = 0, votos_inferidos = 0;
+  const dirMap = new Map<string, { id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number; nominais: number; inferidos: number }>();
   const itens = rows.map((d) => {
     if (isResultadoPositivo(d.resultado)) deferidos++;
     else if (d.resultado === "Indeferido") indeferidos++;
     if ((d.votos ?? []).some((v) => v.is_divergente)) divergencias++;
     for (const v of d.votos ?? []) {
+      if (v.is_nominal) votos_nominais++; else votos_inferidos++;
       if (!v.diretor_id) continue;
       let e = dirMap.get(v.diretor_id);
-      if (!e) { e = { id: v.diretor_id, nome: v.diretor_nome ?? v.diretor_id, favoravel: 0, desfavoravel: 0, divergente: 0 }; dirMap.set(v.diretor_id, e); }
+      if (!e) { e = { id: v.diretor_id, nome: v.diretor_nome ?? v.diretor_id, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 }; dirMap.set(v.diretor_id, e); }
       if (v.tipo_voto === "Favoravel") e.favoravel++;
       else if (v.tipo_voto === "Desfavoravel") e.desfavoravel++;
       if (v.is_divergente) e.divergente++;
+      if (v.is_nominal) e.nominais++; else e.inferidos++;
     }
     return {
       deliberacao_id: d.id,
@@ -384,7 +389,7 @@ export function computeReuniaoDetalhe(
       microtema: d.microtema,
       resultado: d.resultado,
       votos: (d.votos ?? []).map((v) => ({
-        diretor_id: v.diretor_id, diretor_nome: v.diretor_nome, tipo_voto: v.tipo_voto, is_divergente: v.is_divergente,
+        diretor_id: v.diretor_id, diretor_nome: v.diretor_nome, tipo_voto: v.tipo_voto, is_divergente: v.is_divergente, is_nominal: v.is_nominal,
       })),
     };
   });
@@ -400,6 +405,7 @@ export function computeReuniaoDetalhe(
     },
     resumo: {
       total_itens: rows.length, deferidos, indeferidos, divergencias,
+      votos_nominais, votos_inferidos,
       pct_consenso: rows.length > 0 ? Math.round(((rows.length - divergencias) / rows.length) * 1000) / 10 : 0,
     },
     itens,
@@ -409,13 +415,14 @@ export function computeReuniaoDetalhe(
 
 export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.data_reuniao && isFinalDecisionRecord(d));
-  const byMonth = new Map<string, { total: number; divergentes: number }>();
+  const byMonth = new Map<string, { total: number; divergentes: number; com_voto_nominal: number }>();
   for (const d of rows) {
     const period = (d.data_reuniao ?? "").slice(0, 7);
     if (!period) continue;
-    const m = byMonth.get(period) ?? { total: 0, divergentes: 0 };
+    const m = byMonth.get(period) ?? { total: 0, divergentes: 0, com_voto_nominal: 0 };
     m.total++;
     if ((d.votos ?? []).some((v) => v.is_divergente)) m.divergentes++;
+    if ((d.votos ?? []).some((v) => v.is_nominal)) m.com_voto_nominal++;
     byMonth.set(period, m);
   }
   return [...byMonth.entries()]
@@ -426,6 +433,8 @@ export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: strin
       consensuais: m.total - m.divergentes,
       divergentes: m.divergentes,
       pct_consenso: m.total > 0 ? Math.round(((m.total - m.divergentes) / m.total) * 1000) / 10 : 0,
+      // % de itens com ao menos um voto nominal — o consenso só é confiável onde há base nominal.
+      cobertura_nominal: m.total > 0 ? Math.round((m.com_voto_nominal / m.total) * 1000) / 10 : 0,
     }));
 }
 

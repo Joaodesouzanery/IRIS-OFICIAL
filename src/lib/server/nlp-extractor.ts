@@ -63,16 +63,20 @@ const RE_DATA_NUMERICA_CTX = /(?:Reuni[aã]o|realizada?\s+em|São\s+Paulo)\s*[,:
 const RE_DATA_CABECALHO = /DELIBERA[ÇC][AÃ]O\s*(?:ARTESP\s*)?N[ºo°]?\s*[\d\.]+[,\s]+DE\s+(\d{1,2})\s+DE\s+(\w+)\s+DE\s+(\d{4})/i;
 
 // ─── Extração de nomes de diretores ───────────────────────────────────────
+// Nome completo aceitando PREPOSIÇÕES internas (de/da/do/dos/das/e) entre tokens
+// capitalizados — captura "André Luiz de Almeida", "João da Silva e Souza" que o
+// padrão antigo (só tokens capitalizados) perdia. Exige ≥2 tokens (1º + 1..5).
+const NOME = "[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+(?:\\s+(?:d[aeo]s?|e|[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+)){1,5}";
+
 // Padrões A/B/C: contexto de voto em frases narrativas
 const RE_VOTO_CONTEXTO = [
-  /(?:Diretor[a]?\s+|Conselheiro[a]?\s+)((?:[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+\s*){2,5})(?:votou|vot[ao]|manifestou)/gi,
-  /(?:voto\s+d[oa]\s+(?:Diretor[a]?\s+|Conselheiro[a]?\s+))((?:[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+\s*){2,5})/gi,
-  /\b((?:[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+\s+){1,4})(?:–|-)\s*(?:Favorável|Contrári[ao]|Favoravel|Abstenção|Ausente)/gi,
+  new RegExp(`(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)(${NOME})\\s*(?:votou|vot[ao]|manifestou)`, "gi"),
+  new RegExp(`(?:voto\\s+d[oa]\\s+(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+))(${NOME})`, "gi"),
+  new RegExp(`\\b(${NOME})\\s*(?:–|-)\\s*(?:Favorável|Contrári[ao]|Favoravel|Abstenção|Ausente)`, "gi"),
 ];
 
 // Pattern D extendido: captura nome E direção do voto para split favor/contra
-const RE_VOTO_DIRECAO =
-  /\b((?:[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+\s+){1,4})(?:–|-)\s*(Favor[aá]vel|Contr[aá]ri[ao]|Absten[çc][aã]o|Ausente)/gi;
+const RE_VOTO_DIRECAO = new RegExp(`\\b(${NOME})\\s*(?:–|-)\\s*(Favor[aá]vel|Contr[aá]ri[ao]|Absten[çc][aã]o|Ausente)`, "gi");
 
 // Número ordinal da reunião — apenas o dígito "1176"
 const RE_NUMERO_REUNIAO = /(\d{3,4})[ªa°º]?\s*Reuni[aã]o/gi;
