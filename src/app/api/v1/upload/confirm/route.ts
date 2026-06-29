@@ -558,7 +558,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             }
           }
 
-          await markDocumentReviewed(db, d.documento_id, "confirmed");
+          await markDocumentReviewed(db, d.documento_id, "confirmed", ataPai.id as string);
           results.push({ filename: d.filename, status: "created", deliberacao_id: ataPai.id as string, documento_id: d.documento_id ?? null });
           continue;
         }
@@ -662,7 +662,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           });
         if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
 
-        await markDocumentReviewed(db, d.documento_id, "confirmed");
+        await markDocumentReviewed(db, d.documento_id, "confirmed", delib.id as string);
         results.push({ filename: d.filename, status: "created", deliberacao_id: delib.id as string, documento_id: d.documento_id ?? null });
       } catch (err) {
         console.error("[upload/confirm] Erro inesperado ao processar deliberação:", err);
@@ -879,6 +879,7 @@ async function markDocumentReviewed(
   db: any,
   documentoId: string | null | undefined,
   status: "confirmed" | "ignored",
+  deliberacaoId?: string | null,
 ) {
   if (!documentoId) return;
   const { error } = await db
@@ -890,6 +891,18 @@ async function markDocumentReviewed(
     })
     .eq("id", documentoId);
   if (error) console.warn("[upload/confirm] Falha ao atualizar documento bruto:", error.message);
+
+  // Back-link regulatório→deliberação como UPDATE separado e tolerante: se a
+  // coluna ainda não existir (migration não aplicada), não derruba a confirmação.
+  if (status === "confirmed" && deliberacaoId) {
+    const { error: linkErr } = await db
+      .from("documentos_regulatorios")
+      .update({ deliberacao_id: deliberacaoId })
+      .eq("id", documentoId);
+    if (linkErr && !/column .*deliberacao_id/i.test(linkErr.message ?? "")) {
+      console.warn("[upload/confirm] Falha ao gravar deliberacao_id:", linkErr.message);
+    }
+  }
 }
 
 async function ensurePdfStorageBucket(db: any): Promise<string | null> {

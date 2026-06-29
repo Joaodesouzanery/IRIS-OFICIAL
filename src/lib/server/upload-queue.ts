@@ -39,8 +39,10 @@ export async function enqueuePdfBuffer(input: {
   agenciaId?: string | null;
   sourceArchive?: string | null;
   metadata?: Record<string, unknown>;
+  /** Origem na tabela documentos_coletados (rastreabilidade coleta→regulatório). */
+  documentoColetadoId?: string | null;
 }): Promise<EnqueuePdfResult> {
-  const { db, filename, buffer, agenciaId = null, sourceArchive = null, metadata = {} } = input;
+  const { db, filename, buffer, agenciaId = null, sourceArchive = null, metadata = {}, documentoColetadoId = null } = input;
   const size = buffer.length;
 
   if (size > MAX_FILE_SIZE) {
@@ -258,6 +260,17 @@ export async function enqueuePdfBuffer(input: {
   }
 
   await db.from("upload_jobs").update({ documento_id: doc.id }).eq("id", job.id);
+  // Link de rastreabilidade (coleta→regulatório) como UPDATE separado e tolerante:
+  // se a coluna ainda não existir (migration não aplicada), não derruba o enqueue.
+  if (documentoColetadoId) {
+    const { error: linkErr } = await db
+      .from("documentos_regulatorios")
+      .update({ documento_coletado_id: documentoColetadoId })
+      .eq("id", doc.id);
+    if (linkErr && !/column .*documento_coletado_id/i.test(linkErr.message ?? "")) {
+      console.warn("[upload-queue] Falha ao gravar documento_coletado_id:", linkErr.message);
+    }
+  }
   return {
     filename,
     job_id: job.id as string,

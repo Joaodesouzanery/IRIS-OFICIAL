@@ -237,7 +237,7 @@ export async function collectAntt2026Documents(
         }
 
         const processoId = doc.processo ? processIdByKey.get(processKey(doc.processo)) ?? null : null;
-        const { error } = await db.from("documentos_coletados").insert({
+        const { data: coletadoRow, error } = await db.from("documentos_coletados").insert({
           agencia_id: agenciaId,
           reuniao_id: reuniaoId,
           processo_id: processoId,
@@ -266,7 +266,9 @@ export async function collectAntt2026Documents(
               sha256: downloaded.hash,
             },
           },
-        });
+        })
+          .select("id")
+          .single();
 
         if (error) {
           if (error.code === "23505") {
@@ -277,17 +279,19 @@ export async function collectAntt2026Documents(
         }
 
         response.documentos_baixados++;
+        const coletadoId = (coletadoRow?.id as string | undefined) ?? null;
 
         // Conecta os PDFs portadores de voto à fila de extração (entram no fluxo
         // de revisão de votos). Dedupe por hash dentro do enqueuePdfBuffer.
         if (["voto", "ata", "deliberacao"].includes(doc.tipo)) {
           try {
             const { enqueuePdfBuffer } = await import("@/lib/server/upload-queue");
-            await enqueuePdfBuffer({
+            const enq = await enqueuePdfBuffer({
               db,
               filename: /\.pdf$/i.test(doc.titulo) ? doc.titulo : `${doc.titulo}.pdf`,
               buffer: downloaded.buffer,
               agenciaId,
+              documentoColetadoId: coletadoId,
               metadata: {
                 uploaded_via: "antt-2026-collector",
                 documento_tipo: doc.tipo,
@@ -295,6 +299,13 @@ export async function collectAntt2026Documents(
                 antt_file_hash: downloaded.hash,
               },
             });
+            // Link reverso coletado→regulatório (rastreabilidade completa).
+            if (coletadoId && enq.document_id) {
+              await db
+                .from("documentos_coletados")
+                .update({ documento_regulatorio_id: enq.document_id })
+                .eq("id", coletadoId);
+            }
           } catch (enqueueError) {
             response.errors.push(`enfileirar ${doc.titulo}: ${messageOf(enqueueError)}`);
           }

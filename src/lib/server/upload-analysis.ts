@@ -163,6 +163,24 @@ export async function analyzeUploadPdf(input: {
         .maybeSingle();
       if (existingByDate) semantic_duplicate = true;
     }
+
+    // Também deduplica contra a FILA: outro PDF (hash diferente) da MESMA matéria
+    // já em revisão/processamento. Sem isso, dois documentos da mesma deliberação
+    // entram em paralelo e viram deliberações duplicadas ao confirmar.
+    const semanticKeyForDedup = antt.raw.dedupe_semantic_key
+      ? String(antt.raw.dedupe_semantic_key)
+      : regulatoryClass.semantic_duplicate_key;
+    if (!semantic_duplicate && semanticKeyForDedup) {
+      let pendingQuery = db
+        .from("documentos_regulatorios")
+        .select("id")
+        .eq("semantic_duplicate_key", semanticKeyForDedup)
+        .in("status", ["queued", "processing", "review_pending"]);
+      // Exclui a própria linha (no pipeline ela já está em 'processing').
+      if (currentDocumentoId) pendingQuery = pendingQuery.neq("id", currentDocumentoId);
+      const { data: pendingDup } = await pendingQuery.limit(1).maybeSingle();
+      if (pendingDup) semantic_duplicate = true;
+    }
   }
 
   let ata_items: PreviewResult["ata_items"] | undefined;
