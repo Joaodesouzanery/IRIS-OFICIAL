@@ -632,8 +632,10 @@ function parseProcessos(html: string, pageUrl: string): AnttProcesso[] {
     const text = cleanText(stripTags(`Processo Deliberado: ${block}`));
     const item_numero = String(index + 1);
     const processo = firstMatch(text, /Processo Deliberado:\s*([0-9.\-/]+)/i);
-    const interessado = between(text, /Interessado\s+/i, /\s+Diretor\s+relator\s+/i);
-    const relator = between(text, /Diretor\s+relator\s+/i, /\s+Assunto\s+/i);
+    // Âncora de relator tolerante a hífen/":"/variantes ("Diretor-Relator:", "Diretor Relatora").
+    const relatorAnchor = /\s+(?:Diretor[\s-]*)?Relator(?:ia|a)?\s*:?\s+/i;
+    const interessado = between(text, /Interessado\s*:?\s+/i, relatorAnchor);
+    const relator = between(text, relatorAnchor, /\s+Assunto\s+/i);
     const assunto = between(text, /Assunto\s+/i, /\s+Documentos\s+Relacionados|\s+Decis[aã]o\s+/i);
     const decisao = between(text, /Decis[aã]o\s+/i, /Formul[aá]rio|Empresa:|Processo Deliberado:/i);
     const documentos = extractAnchors(block, pageUrl)

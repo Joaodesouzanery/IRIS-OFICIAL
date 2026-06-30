@@ -2,9 +2,14 @@ import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItems } from "@/lib/server/ata-splitter";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
-import { extractFields, calcConfidence } from "@/lib/server/nlp-extractor";
+import { extractFields, calcConfidence, extractItemVotes } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument } from "@/lib/server/antt-manual-parser";
-import { extractPdfText, isPdfBuffer, sha256Hex } from "@/lib/server/pdf-extractor";
+import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
+
+// Avisos INFORMATIVOS (não são problema de qualidade): não devem manter o preview
+// eternamente em "low_confidence". Casam pelos trechos LIMPos das mensagens (que
+// têm mojibake no restante). Usado para computar o status do preview.
+const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
 import { classifyRegulatoryDocument, extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import {
   buildVoteSuggestions,
@@ -187,29 +192,38 @@ export async function analyzeUploadPdf(input: {
   if (tipo_documento === "ata") {
     const rawItems = splitAtaItems(extraction.text);
     const ataMeta = extractAtaMetadata(extraction.text);
-    ata_items = rawItems.map((item) => ({
-      item_numero: item.item_numero,
-      processo: item.processo,
-      assunto: item.assunto,
-      interessado: item.interessado,
-      relator: item.relator,
-      decisao: item.decisao?.slice(0, 500) ?? null,
-      resultado: item.resultado,
-      microtema: classifyMicrotema(item.raw_text, agencia_sigla_detected).microtema,
-      area_regulatoria: classifyAreaRegulatoria(item.raw_text),
-      votos_detectados: [],
-      votos_contra_detectados: [],
-      votos_ausentes_detectados: [],
-      unanimidade_detectada: item.unanimidade,
-    }));
+    ata_items = rawItems.map((item) => {
+      // Votos EXPLÍCITOS por item (antes eram sempre [], o que fazia a inferência
+      // por mandato inverter votos contrários reais).
+      const itemVotes = extractItemVotes(item.raw_text);
+      return {
+        item_numero: item.item_numero,
+        processo: item.processo,
+        assunto: item.assunto,
+        interessado: item.interessado,
+        relator: item.relator,
+        decisao: item.decisao?.slice(0, 500) ?? null,
+        resultado: item.resultado,
+        microtema: classifyMicrotema(item.raw_text, agencia_sigla_detected).microtema,
+        area_regulatoria: classifyAreaRegulatoria(item.raw_text),
+        votos_detectados: itemVotes.favor,
+        votos_contra_detectados: itemVotes.contra,
+        votos_abstencao_detectados: itemVotes.abstencao,
+        votos_ausentes_detectados: itemVotes.ausente,
+        unanimidade_detectada: item.unanimidade,
+      };
+    });
     if (!fields.data_reuniao && ataMeta.data_reuniao) fields.data_reuniao = ataMeta.data_reuniao;
-    confidence = Math.max(confidence, calcAtaPreviewConfidence({
+    const ataConf = calcAtaPreviewConfidence({
       numero_reuniao: fields.numero_reuniao,
       tipo_reuniao: fields.tipo_reuniao,
       data_reuniao: fields.data_reuniao,
       agencia_sigla_detected,
       ata_items,
-    }));
+    });
+    // Mantém o teto de 0.72 quando não é decisão final (atas precisam de revisão dos itens):
+    // o Math.max não pode desfazer o Math.min aplicado acima.
+    confidence = Math.max(confidence, regulatoryClass.import_counts_as_final ? ataConf : Math.min(ataConf, 0.72));
   }
 
   if (antt.ataItems?.length) {
@@ -276,7 +290,18 @@ export async function analyzeUploadPdf(input: {
     });
   }
 
+  // C5: PDF provavelmente escaneado (baixa densidade de texto) → sinaliza e rebaixa
+  // a confiança SEM descartar o registro (sem OCR ainda). O descarte total (text<50)
+  // já foi tratado acima; aqui é o caso intermediário.
+  if (extraction.charsPerPage > 0 && extraction.charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && extraction.pageCount > 1) {
+    documentWarnings.push("PDF com baixa densidade de texto (provável documento escaneado/sem OCR) — revisar manualmente.");
+    confidence = Math.min(confidence, 0.1);
+  }
+
   const warnings = documentWarnings;
+  // C3: status ignora avisos informativos (ex.: "documento tratado como pauta/ata
+  // revisável") — só avisos de QUALIDADE rebaixam para low_confidence.
+  const qualityWarnings = warnings.filter((w) => !INFO_WARNING_RE.test(w));
   const semantic_duplicate_key = antt.raw.dedupe_semantic_key
     ? String(antt.raw.dedupe_semantic_key)
     : regulatoryClass.semantic_duplicate_key;
@@ -284,7 +309,7 @@ export async function analyzeUploadPdf(input: {
   return {
     filename: file.name,
     source_archive: file.source_archive ?? null,
-    status: confidence >= 0.5 && warnings.length === 0 ? "ok" : "low_confidence",
+    status: confidence >= 0.5 && qualityWarnings.length === 0 ? "ok" : "low_confidence",
     fields: {
       numero_deliberacao: fields.numero_deliberacao,
       numero_reuniao: fields.numero_reuniao,

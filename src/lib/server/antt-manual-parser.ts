@@ -90,7 +90,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     processo: firstProcess.processo,
     resultado: documentType === "voto_individual"
       ? inferResultado(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""} ${extractVoteConclusion(clean) ?? ""}`) ?? RESULTADO_APROVADO
-      : documentType === "ata" ? firstProcess.resultado : null,
+      : (documentType === "ata" || documentType.startsWith("reuniao_")) ? firstProcess.resultado : null,
     microtema: firstProcess.microtema ?? classifyAnttMicrotema(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""}`),
     pauta_interna: false,
     area_regulatoria,
@@ -272,6 +272,8 @@ function extractDirector(text: string, filename: string, type: AnttManualDocumen
 }
 function extractAnttProcesses(text: string): AtaPreviewItem[] {
   const normalizedBreaks = text
+    // Repara nº SEI quebrado por espaços: "50500.123456 /2026-11" → "50500.123456/2026-11".
+    .replace(/([0-9]{5})\s*\.\s*([0-9]{6})\s*\/\s*([0-9]{4})\s*-\s*([0-9]{2})/g, "$1.$2/$3-$4")
     .replace(/\s+(?=\d+\.\d+(?:\.\d+)?\s+Processo)/g, "\n")
     .replace(/\s+(?=Processo\s+n?[Âºo]?\s*\d{5}\.)/gi, "\n");
   const re = /(?:(\d+\.\d+(?:\.\d+)?)\s+)?Processo\s*(?:n[Âºo]\s*)?([0-9]{5}\.[0-9]{6}\/[0-9]{4}-[0-9]{2}|[0-9][0-9.\-/]{10,})/gi;
@@ -358,9 +360,11 @@ function enrichAnttItem(
   absentDirectors: string[],
 ): AtaPreviewItem {
   const text = `${item.assunto ?? ""} ${item.decisao ?? ""}`;
-  const isAta = documentType === "ata";
+  // Inclui RDE / reunião deliberativa eletrônica: também têm decisão e voto unânime
+  // (antes só "ata" contava → RDE perdia votos unânimes e zerava o resultado).
+  const isDeliberativa = documentType === "ata" || documentType.startsWith("reuniao_");
   const retirada = isRetiradaDePauta(item.decisao);
-  const unanimidade = isAta && Boolean(item.decisao) && !retirada && /unanimidade/i.test(normalize(item.decisao ?? ""));
+  const unanimidade = isDeliberativa && Boolean(item.decisao) && !retirada && /unanimidade/i.test(normalize(item.decisao ?? ""));
   const votos = unanimidade ? presentDirectors : [];
   const warnings = [
     ...(item.warnings ?? []),
@@ -369,7 +373,7 @@ function enrichAnttItem(
 
   return {
     ...item,
-    resultado: isAta ? item.resultado : null,
+    resultado: isDeliberativa ? item.resultado : null,
     microtema: classifyAnttMicrotema(text),
     area_regulatoria: classifyAreaRegulatoria(`${item.interessado ?? ""} ${text}`),
     votos_detectados: votos,
@@ -436,6 +440,8 @@ function scoreKeywords(value: string, keywords: string[]) {
 
 function extractAnttProcessesV2(text: string): AtaPreviewItem[] {
   const normalizedBreaks = text
+    // Repara nº SEI quebrado por espaços: "50500.123456 /2026-11" → "50500.123456/2026-11".
+    .replace(/([0-9]{5})\s*\.\s*([0-9]{6})\s*\/\s*([0-9]{4})\s*-\s*([0-9]{2})/g, "$1.$2/$3-$4")
     .replace(/\s+(?=\d+\.\d+(?:\.\d+)?\s+Processo)/g, "\n")
     .replace(/\s+(?=Processo\s*(?:n[Âºo]\s*)?[:Âºo\s\u200b-\u200f\ufeff]*\d{5}\.)/gi, "\n");
   const processPattern = /(?:(\d+\.\d+(?:\.\d+)?)\s+)?Processo\s*(?:n[Âºo]\s*)?[:Âºo\s\u200b-\u200f\ufeff]*([0-9]{5}\.[0-9]{6}\/[0-9]{4}-[0-9]{2}|[0-9][0-9.\-/]{10,})/gi;
@@ -714,7 +720,9 @@ function titleCase(value: string) {
 }
 
 function cleanText(value: string) {
-  return value.replace(/\s+/g, " ").trim();
+  // Normaliza o sinal de GRAU (°, U+00B0) para ORDINAL (º, U+00BA): PDFs usam "°" em
+  // "Processo n°"/"Reunião n°", que de outro modo zerava a extração de processos ANTT.
+  return value.replace(/°/g, "º").replace(/\s+/g, " ").trim();
 }
 
 function normalize(value: string) {

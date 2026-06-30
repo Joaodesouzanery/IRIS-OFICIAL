@@ -13,10 +13,17 @@ import type { TipoDocumento } from "@/types";
 
 // ─── Detecção de tipo de documento ──────────────────────────────────────
 export function detectDocumentType(text: string): TipoDocumento {
-  if (/ATA\s+\d+[ªa°º]?\s*REUNI[AÃ]O/i.test(text)) return "ata";
-  if (/DELIBERA[ÇC][AÃ]O\s*(?:ARTESP\s*)?N[ºo°]/i.test(text)) return "deliberacao";
-  if (/RESOLU[ÇC][AÃ]O\s*N[ºo°]/i.test(text)) return "resolucao";
-  if (/PORTARIA\s*N[ºo°]/i.test(text)) return "portaria";
+  // Olha o CABEÇALHO e checa os atos numerados ANTES da ata: um documento
+  // "DELIBERAÇÃO Nº X ... ata da 5ª reunião" é uma deliberação, não uma ata.
+  const head = text.slice(0, 400);
+  if (/DELIBERA[ÇC][AÃ]O\s*(?:ARTESP\s*)?N[ºo°]/i.test(head)) return "deliberacao";
+  if (/RESOLU[ÇC][AÃ]O\s*N[ºo°]/i.test(head)) return "resolucao";
+  if (/PORTARIA\s*N[ºo°]/i.test(head)) return "portaria";
+  // Ata tolera conectores: "ATA DA 5ª REUNIÃO", "ATA Nº 3 REUNIÃO", "ATA DA REUNIÃO".
+  if (/\bATA\b(?:\s+(?:DA|DE|DO|N[ºo°]?))?\s*\d+\s*[ªa°º]?\s*REUNI[AÃ]O/i.test(head) ||
+      /\bATA\s+DA\s+REUNI[AÃ]O/i.test(head)) {
+    return "ata";
+  }
   return "deliberacao";
 }
 
@@ -135,8 +142,9 @@ export function extractAtaMetadata(text: string): AtaMetadata {
 // ─── Split da ata em items ──────────────────────────────────────────────
 
 // Padrões de separação de items
-// Formato romano: "I- Processo:", "II- Processo:", "XIII- Processo:"
-const RE_ITEM_ROMANO = /^(?:([IVXLC]+)\s*[-–.])\s*/;
+// Formato romano: "I- Processo:", "II- Interessado:", "XIII- Assunto:".
+// Exige o RÓTULO de campo colado ao marcador → não casa prosa "I. Considerando que...".
+const RE_ITEM_ROMANO = /^([IVXLC]+)\s*[-–.]\s*(?:Processo|Interessad[oa]|Assunto|Relat(?:or|ora))\b/i;
 // Formato numerado: "1.1.1.", "1.2.3.", "2.4.1."
 const RE_ITEM_NUMERADO = /^(\d+\.\d+(?:\.\d+)?)\s*[.)]?\s*/;
 // Processo isolado com número romano prefixo: "I- Processo: 27214-848248/2014"
@@ -163,17 +171,17 @@ export function splitAtaItems(text: string): AtaItem[] {
     let itemStart = false;
     let itemNumero = "";
 
-    // Formato romano: "I- Processo:" ou "VII- Processo:"
+    // Formato romano: "I- Processo:" / "VII- Interessado:" (rótulo já exigido na regex).
     const romanoMatch = RE_ITEM_ROMANO.exec(trimmed);
-    if (romanoMatch && /processo|assunto|aprova[çc]/i.test(trimmed)) {
+    if (romanoMatch) {
       itemStart = true;
       itemNumero = romanoMatch[1];
     }
 
-    // Formato numerado: "1.1.1. Processo nº" ou "2.3.1. Processo nº"
+    // Formato numerado: "1.1.1. Processo nº" / "2.3.1. Interessado:" / "...Relator:"
     if (!itemStart) {
       const numMatch = RE_ITEM_NUMERADO.exec(trimmed);
-      if (numMatch && /processo|interessado|assunto/i.test(trimmed)) {
+      if (numMatch && /processo|interessado|assunto|relat(?:or|ora)/i.test(trimmed)) {
         itemStart = true;
         itemNumero = numMatch[1];
       }
@@ -215,9 +223,9 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   const reInteressado = /Interessad[oa]\(?a?\)?\s*:\s*([\s\S]+?)(?=\n\s*(?:Relat(?:or|ora)|VOTO|Decis[aã]o|Processo)\b|$)/i;
   const interessado = cleanAtaField(reInteressado.exec(rawText)?.[1]) ?? null;
 
-  // Relator(a)
-  const reRelator = /Relat(?:or|ora)\s*:\s*(?:Diretor[a]?(?:[- ]Geral)?\s+)?([^.]+)/i;
-  const relator = reRelator.exec(rawText)?.[1]?.trim() ?? null;
+  // Relator(a) — vai até a próxima seção, sem truncar no "." de abreviações ("Dr.", "A.").
+  const reRelator = /Relat(?:or|ora)\s*:\s*(?:Diretor[a]?(?:[- ]Geral)?\s+)?([\s\S]+?)(?=\n\s*(?:Processo|Interessad[oa]|Assunto|VOTO|Voto|Decis[aã]o)\b|$)/i;
+  const relator = cleanAtaField(reRelator.exec(rawText)?.[1]);
 
   // Decisão (texto completo)
   const reDecisao = /Decis[aã]o:\s*([\s\S]+?)(?=\bVoto:|$)/i;
@@ -231,10 +239,11 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   const unanimidade = /unanimidade/i.test(rawText);
 
   if (votoText) {
-    if (/aprovad[oa]/i.test(votoText)) resultado = "Aprovado";
-    else if (/indeferid[oa]|negad[oa]|improcedente|não\s+dar\s+provimento|negar\s+provimento/i.test(votoText)) resultado = "Indeferido";
-    else if (/deferido|provimento/i.test(votoText)) resultado = "Deferido";
-    else if (/retirad[oa]\s+de\s+pauta/i.test(rawText)) resultado = "Retirado de Pauta";
+    // Delega à fonte única (precedência: retirado → indeferido/negar provimento →
+    // deferido → aprovado). Antes "aprovado" era testado ANTES de "indeferido",
+    // invertendo "aprovado o voto que NEGA provimento" para Aprovado.
+    resultado = inferResultadoFromText(votoText, unanimidade);
+    if (!resultado && /retirad[oa]\s+de\s+pauta/i.test(rawText)) resultado = "Retirado de Pauta";
   }
 
   if (!resultado) {

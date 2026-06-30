@@ -78,7 +78,9 @@ function removeSeiHeadersFooters(text: string): string {
     .replace(/em https?:\/\/www\.doe\.sp\.gov\.br\/autenticidade[^\n]*/g, "")
     // Assinatura digital MP
     .replace(/Documento assinado digitalmente conforme MP[^\n]*/g, "")
-    .replace(/que institui a Infraestrutura de Chaves P[úu]blicas[^\n]*/g, "");
+    .replace(/que institui a Infraestrutura de Chaves P[úu]blicas[^\n]*/g, "")
+    // Rodapé de paginação "Página N de M" (paginação variável escapa do dedup por frequência).
+    .replace(/^.*\bP[áa]gina\s+\d+\s+de\s+\d+\b.*$/gim, "");
 }
 
 // ─── Normalização de espaços ──────────────────────────────────────────────
@@ -86,6 +88,13 @@ function normalizeWhitespace(text: string): string {
   return text
     .replace(/\r\n/g, "\n")
     .replace(/\r/g, "\n")
+    // De-hifenização de quebra de linha: "Conces-\nsionária" → "Concessionária".
+    // Só continuação MINÚSCULA → não cola "Diretor-\nGeral" nem hífens de lista.
+    .replace(/([A-Za-zÀ-ÿ])-\n([a-zà-ÿ])/g, "$1$2")
+    // Zero-width/BOM → remover (quebram o casamento de rótulos como "Assunto:").
+    .replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g, "")
+    // Espaços unicode visíveis (nbsp, en/em space, narrow nbsp, ideográfico) → espaço comum.
+    .replace(/[\u00A0\u2000-\u200A\u202F\u205F\u3000]/g, " ")
     .replace(/[ \t]+/g, " ")          // múltiplos espaços/tabs → um espaço
     .replace(/\n{3,}/g, "\n\n")       // mais de 2 quebras → 2
     .trim();
@@ -106,6 +115,8 @@ export function isPdfBuffer(buffer: Buffer): boolean {
 
 const PDF_PARSE_TIMEOUT_MS = 25_000; // 25s — deixa margem para o timeout de 60s do Vercel
 const MAX_PDF_STREAMS = 500;         // PDFs legítimos raramente têm mais de 500 streams
+// Abaixo deste nº de chars/página o PDF é provavelmente escaneado (imagem sem OCR).
+export const SCANNED_CHARS_PER_PAGE_THRESHOLD = 80;
 
 // ─── Extração principal ───────────────────────────────────────────────────
 export interface PdfExtractionResult {

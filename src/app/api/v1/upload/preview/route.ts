@@ -72,9 +72,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     }
 
     // Importações server-only
-    const { isPdfBuffer, extractPdfText, sha256Hex } = await import("@/lib/server/pdf-extractor");
+    const { isPdfBuffer, extractPdfText, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } = await import("@/lib/server/pdf-extractor");
     const { isZipBuffer, extractPdfEntriesFromZip } = await import("@/lib/server/zip-extractor");
-    const { extractFields, calcConfidence } = await import("@/lib/server/nlp-extractor");
+    const { extractFields, calcConfidence, extractItemVotes } = await import("@/lib/server/nlp-extractor");
     const { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } = await import("@/lib/server/classifier");
     const { detectDocumentType, splitAtaItems, extractAtaMetadata } = await import("@/lib/server/ata-splitter");
     const { parseAnttManualDocument } = await import("@/lib/server/antt-manual-parser");
@@ -288,28 +288,38 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         if (tipo_documento === "ata") {
           const rawItems = splitAtaItems(extraction.text);
           const ataMeta = extractAtaMetadata(extraction.text);
-          ata_items = rawItems.map((item) => ({
-            item_numero: item.item_numero,
-            processo: item.processo,
-            assunto: item.assunto,
-            interessado: item.interessado,
-            relator: item.relator,
-            decisao: item.decisao?.slice(0, 500) ?? null,
-            resultado: item.resultado,
-            microtema: classifyMicrotema(item.raw_text, agencia_sigla_detected).microtema,
-            area_regulatoria: classifyAreaRegulatoria(item.raw_text),
-          }));
+          ata_items = rawItems.map((item) => {
+            const itemVotes = extractItemVotes(item.raw_text);
+            return {
+              item_numero: item.item_numero,
+              processo: item.processo,
+              assunto: item.assunto,
+              interessado: item.interessado,
+              relator: item.relator,
+              decisao: item.decisao?.slice(0, 500) ?? null,
+              resultado: item.resultado,
+              microtema: classifyMicrotema(item.raw_text, agencia_sigla_detected).microtema,
+              area_regulatoria: classifyAreaRegulatoria(item.raw_text),
+              votos_detectados: itemVotes.favor,
+              votos_contra_detectados: itemVotes.contra,
+              votos_abstencao_detectados: itemVotes.abstencao,
+              votos_ausentes_detectados: itemVotes.ausente,
+              unanimidade_detectada: item.unanimidade,
+            };
+          });
           // Sobrescrever data se o campo estava vazio (deliberação não detectou, mas ata sim)
           if (!fields.data_reuniao && ataMeta.data_reuniao) {
             fields.data_reuniao = ataMeta.data_reuniao;
           }
-          confidence = Math.max(confidence, calcAtaPreviewConfidence({
+          const ataConf = calcAtaPreviewConfidence({
             numero_reuniao: fields.numero_reuniao,
             tipo_reuniao: fields.tipo_reuniao,
             data_reuniao: fields.data_reuniao,
             agencia_sigla_detected,
             ata_items,
-          }));
+          });
+          // Mantém o teto de 0.72 quando não é decisão final (o Math.max não pode desfazer o Math.min).
+          confidence = Math.max(confidence, regulatoryClass.import_counts_as_final ? ataConf : Math.min(ataConf, 0.72));
         }
 
         if (antt.ataItems?.length) {
@@ -329,7 +339,17 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           area_regulatoria = (ata_items[0]?.area_regulatoria ?? area_regulatoria) as typeof area_regulatoria;
         }
 
+        // C5: PDF provável escaneado (baixa densidade) → sinaliza e rebaixa sem descartar.
+        if (extraction.charsPerPage > 0 && extraction.charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && extraction.pageCount > 1) {
+          documentWarnings.push("PDF com baixa densidade de texto (provável documento escaneado/sem OCR) — revisar manualmente.");
+          confidence = Math.min(confidence, 0.1);
+        }
+
         const warnings = documentWarnings;
+        // C3: avisos INFORMATIVOS (ex.: "documento tratado como pauta/ata revisável") não
+        // rebaixam o status — só avisos de qualidade. (Espelha upload-analysis.ts.)
+        const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
+        const qualityWarnings = warnings.filter((w) => !INFO_WARNING_RE.test(w));
         const semantic_duplicate_key = antt.raw.dedupe_semantic_key
           ? String(antt.raw.dedupe_semantic_key)
           : regulatoryClass.semantic_duplicate_key;
@@ -337,7 +357,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         return {
           filename: file.name,
           source_archive: file.source_archive,
-          status: confidence >= 0.5 && warnings.length === 0 ? "ok" : "low_confidence",
+          status: confidence >= 0.5 && qualityWarnings.length === 0 ? "ok" : "low_confidence",
           fields: {
             numero_deliberacao: fields.numero_deliberacao,
             numero_reuniao: fields.numero_reuniao,
