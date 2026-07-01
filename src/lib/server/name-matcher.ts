@@ -117,6 +117,47 @@ export function findBestMatch(
   return { diretorId: null, score: bestScore, needsReview: true, isNew: true };
 }
 
+// ─── Validação de nome de pessoa ──────────────────────────────────────────
+// Palavras-função que NÃO são nome de pessoa (evita candidatos-lixo tipo "Diretor").
+const ROLE_WORDS = new Set([
+  "diretor", "diretora", "diretorgeral", "diretorpresidente", "diretorsubstituto",
+  "diretorasubstituta", "presidente", "vicepresidente", "conselheiro", "conselheira",
+  "relator", "relatora", "secretario", "secretaria", "procurador", "procuradora",
+  "superintendente", "substituto", "substituta", "geral", "interino", "interina",
+  "suplente", "membro", "representante", "coordenador", "coordenadora", "assessor",
+]);
+const NAME_CONNECTORS = new Set(["de", "da", "do", "das", "dos", "e"]);
+
+function nameTokens(raw: string): string[] {
+  return (raw ?? "")
+    .replace(/[.\-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(" ")
+    .map((t) => t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z]/g, ""))
+    .filter(Boolean);
+}
+
+/** true se o texto é APENAS palavra(s)-função/conector (ex.: "Diretor", "Diretor-Geral"). */
+export function isRoleWordOnly(raw: string): boolean {
+  const tokens = nameTokens(raw);
+  const nonConnector = tokens.filter((t) => !NAME_CONNECTORS.has(t));
+  if (nonConnector.length === 0) return true;
+  return nonConnector.every((t) => ROLE_WORDS.has(t));
+}
+
+/**
+ * Heurística: o texto parece um NOME DE PESSOA — ≥2 tokens de conteúdo (nome +
+ * sobrenome), ≥5 chars, e não é só palavra-função. Gate para criar candidato de diretor.
+ */
+export function isLikelyPersonName(raw: string): boolean {
+  const cleaned = (raw ?? "").replace(/[.\-]/g, " ").replace(/\s+/g, " ").trim();
+  if (cleaned.length < 5) return false;
+  const tokens = nameTokens(raw);
+  const content = tokens.filter((t) => !NAME_CONNECTORS.has(t) && !ROLE_WORDS.has(t) && t.length >= 2);
+  return content.length >= 2;
+}
+
 // ─── Normalização de nome ─────────────────────────────────────────────────
 export function normalizeName(name: string): string {
   return name

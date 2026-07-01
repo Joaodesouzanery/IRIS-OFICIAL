@@ -9,7 +9,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
-import { findBestMatch, normalizeName } from "@/lib/server/name-matcher";
+import { findBestMatch, normalizeName, isLikelyPersonName } from "@/lib/server/name-matcher";
 import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
 import { requireAdmin } from "@/lib/server/request-guards";
 import {
@@ -698,7 +698,11 @@ async function recordDirectorCandidates(
     tipo_documento?: string | null;
   },
 ) {
-  const uniqueNames = [...new Set(nomes.map((n) => normalizeName(String(n))).filter((n) => n.length >= 3))];
+  // Só cria candidato para o que PARECE nome de pessoa — bloqueia palavra-função
+  // ("Diretor", "Presidente", "Diretor-Geral") que gerava match-lixo de 35%.
+  const uniqueNames = [...new Set(
+    nomes.map((n) => normalizeName(String(n))).filter((n) => n.length >= 3 && isLikelyPersonName(n)),
+  )];
   if (uniqueNames.length === 0) return;
 
   const rows = uniqueNames

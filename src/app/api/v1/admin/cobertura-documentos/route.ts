@@ -42,6 +42,10 @@ export interface CoberturaDocumentosResponse {
     monitorados_nao_enfileirados: number;
     coletados_nao_importados: number;
   };
+  duplicatas: {
+    exatas: number;              // documentos_regulatorios marcados is_duplicate
+    grupos_relacionados: number; // matérias (mesma reunião) com >1 tipo (ata+deliberação/voto)
+  };
   alertas: string[];
 }
 
@@ -54,6 +58,7 @@ const DEMO: CoberturaDocumentosResponse = {
     { agencia_id: "demo-artesp", sigla: "ARTESP", nome: "Agência de Transporte do Estado de SP", reunioes_descobertas: 0, itens_monitorados: 6, docs_coletados: 0, docs_coletados_erro: 0, docs_por_tipo: {}, regulatorios: { queued: 0, processing: 0, review_pending: 2, confirmed: 12, ignored: 0, failed: 1 }, deliberacoes_finais: 11 },
   ],
   perdas: { coletados_com_erro: 4, regulatorios_failed: 8, review_pending: 14, monitorados_nao_enfileirados: 38, coletados_nao_importados: 76 },
+  duplicatas: { exatas: 6, grupos_relacionados: 41 },
   alertas: [
     "38 itens monitorados descobertos mas NÃO enfileirados (ARTESP/ANM página 2+ provavelmente perdida).",
     "8 documento(s) com status 'failed' (PDF escaneado/erro — sem OCR).",
@@ -74,8 +79,8 @@ export async function GET(req: NextRequest) {
     db.from("antt_reunioes_coletadas").select("agencia_id").limit(20000),
     db.from("monitoramento_itens").select("agencia_id, status, documento_id").limit(40000),
     db.from("documentos_coletados").select("agencia_id, tipo, status").limit(40000),
-    db.from("documentos_regulatorios").select("agencia_id, status").limit(40000),
-    db.from("deliberacoes").select("agencia_id, tipo_documento, documento_pai_id").limit(40000),
+    db.from("documentos_regulatorios").select("agencia_id, status, is_duplicate").limit(40000),
+    db.from("deliberacoes").select("agencia_id, tipo_documento, documento_pai_id, numero_reuniao, data_reuniao").limit(40000),
   ]);
 
   const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
@@ -106,20 +111,34 @@ export async function GET(req: NextRequest) {
     else if (c.status !== "importado" && c.status !== "ignorado") coletadosNaoImportados += 1;
   }
 
-  let regsFailed = 0, reviewPending = 0;
+  let regsFailed = 0, reviewPending = 0, duplicatasExatas = 0;
   for (const d of regsRes.data ?? []) {
     const e = ag(d.agencia_id); if (e) e.regulatorios[d.status] = (e.regulatorios[d.status] ?? 0) + 1;
     if (d.status === "failed") regsFailed += 1;
     if (d.status === "review_pending") reviewPending += 1;
+    if (d.is_duplicate) duplicatasExatas += 1;
   }
 
+  // Grupos "relacionados": ata + deliberação (+ voto) da MESMA reunião. Sinaliza
+  // sem mesclar — chave de matéria = agência|numero_reuniao (fallback data).
+  const tiposPorMateria = new Map<string, Set<string>>();
   for (const d of delibsRes.data ?? []) {
     const e = ag(d.agencia_id); if (!e) continue;
     // Decisão final: exclui pauta/voto_individual/documento_apoio e ata-pai (sem item).
     if (NAO_FINAL.has(String(d.tipo_documento))) continue;
     if (d.tipo_documento === "ata" && d.documento_pai_id == null) continue;
     e.deliberacoes_finais += 1;
+
+    const chaveMateria = d.numero_reuniao
+      ? `${d.agencia_id}|r|${d.numero_reuniao}`
+      : d.data_reuniao ? `${d.agencia_id}|d|${d.data_reuniao}` : null;
+    if (chaveMateria) {
+      const set = tiposPorMateria.get(chaveMateria) ?? new Set<string>();
+      set.add(String(d.tipo_documento));
+      tiposPorMateria.set(chaveMateria, set);
+    }
   }
+  const gruposRelacionados = [...tiposPorMateria.values()].filter((s) => s.size > 1).length;
 
   const por_agencia = [...bySigla.values()].sort((a, b) => b.deliberacoes_finais - a.deliberacoes_finais);
 
@@ -139,6 +158,10 @@ export async function GET(req: NextRequest) {
       review_pending: reviewPending,
       monitorados_nao_enfileirados: monitoradosNaoEnfileirados,
       coletados_nao_importados: coletadosNaoImportados,
+    },
+    duplicatas: {
+      exatas: duplicatasExatas,
+      grupos_relacionados: gruposRelacionados,
     },
     alertas,
   };

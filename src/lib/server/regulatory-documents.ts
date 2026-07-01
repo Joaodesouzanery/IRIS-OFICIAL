@@ -126,6 +126,28 @@ export function buildSemanticDuplicateKey(input: {
   return [agency, tipo, filenameKey].filter(Boolean).join("|") || null;
 }
 
+/**
+ * Chave de MATÉRIA (sem tipo_documento) — agrupa ata/voto/deliberação da MESMA
+ * reunião/processo como "relacionados". Diferente de buildSemanticDuplicateKey
+ * (que inclui o tipo e serve para dedup exata). NÃO mescla — só sinaliza.
+ */
+export function buildMateriaKey(input: {
+  agencia_sigla?: string | null;
+  numero_reuniao?: string | null;
+  data_reuniao?: string | null;
+  processo?: string | null;
+}): string | null {
+  const agency = normalize(input.agencia_sigla ?? "");
+  const numero = normalize(input.numero_reuniao ?? "");
+  const processo = normalize(input.processo ?? "");
+  const data = normalize(input.data_reuniao ?? "");
+  if (!agency) return null;
+  if (numero) return [agency, "reuniao", numero].join("|");
+  if (processo) return [agency, "processo", processo].join("|");
+  if (data) return [agency, "data", data].join("|");
+  return null;
+}
+
 export function extractAnmMeetingMetadata(text: string, filename: string) {
   const head = `${filename}\n${text.slice(0, 8_000)}`;
   const norm = normalize(head);

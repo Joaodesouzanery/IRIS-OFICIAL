@@ -64,6 +64,7 @@ type CoberturaDocs = {
     coletados_com_erro: number; regulatorios_failed: number; review_pending: number;
     monitorados_nao_enfileirados: number; coletados_nao_importados: number;
   };
+  duplicatas: { exatas: number; grupos_relacionados: number };
   alertas: string[];
 };
 
@@ -289,6 +290,9 @@ export default function SaudeDadosPage() {
           </div>
           <p className="text-[11px] text-text-label">
             Perdas: {cobertura.perdas.monitorados_nao_enfileirados} descobertos não enfileirados · {cobertura.perdas.regulatorios_failed} falhas · {cobertura.perdas.review_pending} em revisão · {cobertura.perdas.coletados_com_erro} coletados c/ erro.
+          </p>
+          <p className="text-[11px] text-text-label">
+            Duplicatas: {cobertura.duplicatas.exatas} exata(s) · {cobertura.duplicatas.grupos_relacionados} reunião(ões) com ata + deliberação/voto relacionados (agrupados, não mesclados).
           </p>
         </div>
       )}

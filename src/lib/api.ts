@@ -15,6 +15,34 @@ function buildUrl(path: string): string {
   return `${BASE_URL}/v1${path}`;
 }
 
+// Extrai uma mensagem LEGÍVEL do corpo de erro. Alguns endpoints devolvem
+// `{ error: <objeto> }` (ex.: erro cru do Supabase) — sem isto, `new Error(obj)`
+// coage para a string "[object Object]" e é o que o usuário vê na tela.
+function extractErrorMessage(body: unknown, status: number, statusText: string): string {
+  const pick = (v: unknown): string | null => {
+    if (typeof v === "string" && v.trim()) return v;
+    if (v && typeof v === "object") {
+      const o = v as Record<string, unknown>;
+      const nested = o.message ?? o.error ?? o.detail ?? o.msg;
+      if (typeof nested === "string" && nested.trim()) return nested;
+      try {
+        const json = JSON.stringify(v);
+        if (json && json !== "{}") return json;
+      } catch {
+        /* objeto não serializável */
+      }
+    }
+    return null;
+  };
+  const b = (body ?? {}) as Record<string, unknown>;
+  return (
+    pick(b.error) ??
+    pick(b.detail) ??
+    pick(b.message) ??
+    (statusText && statusText.trim() ? statusText : `Erro ${status}`)
+  );
+}
+
 async function request<T>(
   path: string,
   options: RequestInit = {},
@@ -34,8 +62,7 @@ async function request<T>(
 
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
-    const msg = body.error ?? body.detail ?? body.message ?? res.statusText;
-    throw new ApiError(res.status, msg);
+    throw new ApiError(res.status, extractErrorMessage(body, res.status, res.statusText));
   }
 
   return res.json() as Promise<T>;

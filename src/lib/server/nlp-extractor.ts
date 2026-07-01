@@ -13,6 +13,7 @@
  */
 
 import { parseDataExtensoANM } from "./ata-splitter";
+import { isRoleWordOnly } from "./name-matcher";
 
 // ─── Regex patterns ────────────────────────────────────────────────────────
 // Nome completo aceitando PREPOSIÇÕES internas (de/da/do/dos/das/e) entre tokens
@@ -707,6 +708,10 @@ export function extractFields(text: string): ExtractedFields {
     }
   }
 
+  // Remove palavra-função ("Diretor", "Presidente"…) que vaza como nome em alguns
+  // blocos de assinatura → não vira voto nem candidato-lixo.
+  const semRole = (arr: string[]) => arr.filter((n) => !isRoleWordOnly(n));
+
   return {
     numero_deliberacao,
     reuniao_ordinaria,
@@ -724,13 +729,13 @@ export function extractFields(text: string): ExtractedFields {
     pauta_interna,
     resumo_pleito,
     fundamento_decisao,
-    nomes_votacao,
-    nomes_votacao_favor,
-    nomes_votacao_contra,
-    nomes_votacao_abstencao,
-    nomes_votacao_ausente,
-    signatarios,
-    diretores_detectados,
+    nomes_votacao: semRole(nomes_votacao),
+    nomes_votacao_favor: semRole(nomes_votacao_favor),
+    nomes_votacao_contra: semRole(nomes_votacao_contra),
+    nomes_votacao_abstencao: semRole(nomes_votacao_abstencao),
+    nomes_votacao_ausente: semRole(nomes_votacao_ausente),
+    signatarios: semRole(signatarios),
+    diretores_detectados: semRole(diretores_detectados),
     unanimidade_detectada,
   };
 }
@@ -833,7 +838,8 @@ export function extractItemVotes(text: string): ItemVotes {
     if (!abstencao.includes(nome)) abstencao.push(nome);
   }
 
-  return { favor, contra, abstencao, ausente };
+  const semRole = (arr: string[]) => arr.filter((n) => !isRoleWordOnly(n));
+  return { favor: semRole(favor), contra: semRole(contra), abstencao: semRole(abstencao), ausente: semRole(ausente) };
 }
 
 // ─── Confiança de extração (ponderada) ───────────────────────────────────

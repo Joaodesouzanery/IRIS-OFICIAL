@@ -60,13 +60,16 @@ export async function fetchMonitoringSite(
   // reunioes colegiadas) usam o parser de documentos mesmo estando em gov.br.
   // Sem isso, a pagina de reunioes da ANM caía no parser de NOTICIAS (filtra
   // apenas links /noticias/) e nao encontrava pautas/atas/votos.
+  const isArtesp = isArtespReunioesUrl(site.url);
   const isDocStatic = site.estrategia === "html-static";
   const parseFor = (pageHtml: string, pageUrl: string): DiscoveredMonitoringItem[] =>
-    isDocStatic
-      ? parseMonitoringHtml(pageHtml, pageUrl, site.seletor_links)
-      : site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
-        ? parseGovBrNewsHtml(pageHtml, pageUrl, site.seletor_links)
-        : parseMonitoringHtml(pageHtml, pageUrl, site.seletor_links);
+    isArtesp
+      ? parseArtespReunioes(pageHtml, pageUrl) // parser dedicado: DAM URLs + estrutura por reunião
+      : isDocStatic
+        ? parseMonitoringHtml(pageHtml, pageUrl, site.seletor_links)
+        : site.estrategia === "govbr-news" || /gov\.br\//i.test(site.url)
+          ? parseGovBrNewsHtml(pageHtml, pageUrl, site.seletor_links)
+          : parseMonitoringHtml(pageHtml, pageUrl, site.seletor_links);
 
   // Paginação: segue "próxima"/rel=next até o teto, parando quando uma página
   // não traz item novo. Antes só a 1ª página era lida (perdia 2+ de ANM/ARTESP).
@@ -126,7 +129,9 @@ export async function fetchMonitoringSite(
     // Fim da lista: página seguinte sem novidade encerra a paginação.
     if (pageCount > 1 && added === 0) break;
 
-    const next = findNextMonitoringPageUrl(html, pageUrl);
+    // ARTESP: a base já lista 2026 inteiro; os "próximos" são anos anteriores
+    // (2025/2024) — fora do escopo. Não pagina.
+    const next: string | null = isArtesp ? null : findNextMonitoringPageUrl(html, pageUrl);
     pageUrl = next && !visited.has(next) ? next : null;
   }
 
@@ -211,6 +216,100 @@ export function parseMonitoringHtml(
       hash_item,
       metadata: {
         link_text: anchor.text,
+        source: baseUrl,
+      },
+    });
+  }
+
+  return items;
+}
+
+// URLs de documento da ARTESP (WebSphere Portal): o PDF é servido pelo DAM do
+// CMS-SP, sem extensão .pdf. Ex.: .../dx/api/dam/v1/collections/.../renditions/...?binary=true
+export function isArtespReunioesUrl(url: string): boolean {
+  return /(^|\.)artesp\.sp\.gov\.br/i.test(url) && /reuni(?:o|õ|õe|oe)es-diretoria/i.test(url);
+}
+
+function classifyArtespDocLabel(label: string): MonitoramentoTipoItem | null {
+  const v = normalizeText(label);
+  if (/\bdeliberac/.test(v)) return "deliberacao";
+  if (/\bata\b/.test(v)) return "ata";
+  if (/\bvoto/.test(v)) return "voto";
+  if (/\bpauta/.test(v)) return "pauta";
+  return null;
+}
+
+/**
+ * Parser DEDICADO da página de reuniões da ARTESP. A estrutura é regular:
+ *   <p><b>Reunião Ordinária</b></p>
+ *   <p><strong>1201ª Reunião do Conselho Diretor</strong></p>
+ *   <p>01/07/2026</p>
+ *   <ul><li><a href="DAM...binary=true">Ata</a></li>...</ul>
+ * Cada documento (link DAM) é associado à reunião imediatamente ANTERIOR. Isso
+ * elimina o vazamento de contexto (títulos embaralhados) do parser genérico e
+ * captura os PDFs que não têm extensão .pdf.
+ */
+export function parseArtespReunioes(html: string, baseUrl: string): DiscoveredMonitoringItem[] {
+  // 1) Reuniões: heading "Nª Reunião do Conselho Diretor" (posição + número), com
+  //    tipo (janela antes) e data (janela depois).
+  const HEAD_RE = /(\d{1,4})\s*[ªaº°]?\s*Reuni[ãa]o\s+do\s+Conselho\s+Diretor/gi;
+  type Meeting = { index: number; numero: string; tipo: string | null; dataIso: string | null };
+  const meetings: Meeting[] = [];
+  let hm: RegExpExecArray | null;
+  while ((hm = HEAD_RE.exec(html)) !== null) {
+    const before = stripTags(html.slice(Math.max(0, hm.index - 260), hm.index));
+    const tipo = /extraordin/i.test(before) ? "Extraordinaria" : /ordin[aá]ria/i.test(before) ? "Ordinaria" : null;
+    const after = stripTags(html.slice(hm.index, hm.index + 400));
+    const dm = DATE_RE.exec(after);
+    meetings.push({
+      index: hm.index,
+      numero: hm[1],
+      tipo,
+      dataIso: dm ? extractIsoDate(after) : null,
+    });
+  }
+
+  // 2) Documentos: cada <a href=DAM> associado à reunião mais próxima antes dele.
+  const A_RE = /<a\b[^>]*href=["']([^"']*admin\.cms\.sp\.gov\.br\/dx\/api\/dam\/[^"']*binary=true)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  const items: DiscoveredMonitoringItem[] = [];
+  const seen = new Set<string>();
+  let am: RegExpExecArray | null;
+  while ((am = A_RE.exec(html)) !== null) {
+    const label = cleanText(stripTags(am[2]));
+    const tipoDoc = classifyArtespDocLabel(label);
+    if (!tipoDoc) continue;
+
+    let meeting: Meeting | null = null;
+    for (const m of meetings) {
+      if (m.index <= am.index) meeting = m;
+      else break;
+    }
+    if (!meeting) continue;
+
+    let url: string;
+    try {
+      url = new URL(decodeHtml(am[1]), baseUrl).toString();
+    } catch {
+      continue;
+    }
+
+    const hash_item = sha256(`artesp|${tipoDoc}|${url}`);
+    if (seen.has(hash_item)) continue;
+    seen.add(hash_item);
+
+    const dataPt = meeting.dataIso ? formatPtDate(meeting.dataIso) : "";
+    const reuniao = `${meeting.numero}ª Reunião do Conselho Diretor`;
+    items.push({
+      tipo: tipoDoc,
+      titulo: cleanText(`${reuniao} — ${label}${dataPt ? ` (${dataPt})` : ""}`).slice(0, 300),
+      url_item: url,
+      reuniao,
+      data_reuniao: meeting.dataIso,
+      hash_item,
+      metadata: {
+        connector: "artesp-reunioes",
+        meeting_type: meeting.tipo,
+        doc_label: label,
         source: baseUrl,
       },
     });

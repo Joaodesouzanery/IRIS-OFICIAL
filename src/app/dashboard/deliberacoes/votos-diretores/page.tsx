@@ -113,6 +113,7 @@ export default function VotosDiretoresPage() {
   });
 
   const [matchFeedback, setMatchFeedback] = useState<string | null>(null);
+  const [matchError, setMatchError] = useState<string | null>(null);
 
   const aprovarMutation = useMutation({
     mutationFn: (id: string) =>
@@ -120,6 +121,7 @@ export default function VotosDiretoresPage() {
         `/diretores/candidatos/${id}/aprovar`, {},
       ),
     onSuccess: (res) => {
+      setMatchError(null);
       const r = res.votos_retroativos;
       setMatchFeedback(
         r ? `Aprovado: ${r.criados} voto(s) retroativo(s) em ${r.deliberacoes} deliberação(ões).` : "Candidato aprovado.",
@@ -128,13 +130,22 @@ export default function VotosDiretoresPage() {
       queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
       queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
     },
+    onError: (err) => {
+      setMatchFeedback(null);
+      setMatchError(err instanceof Error ? err.message : "Erro ao aprovar candidato.");
+    },
   });
 
   const rejeitarMutation = useMutation({
     mutationFn: (id: string) => api.post(`/diretores/candidatos/${id}/rejeitar`, {}),
     onSuccess: () => {
+      setMatchError(null);
       setMatchFeedback("Candidato rejeitado.");
       queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
+    },
+    onError: (err) => {
+      setMatchFeedback(null);
+      setMatchError(err instanceof Error ? err.message : "Erro ao rejeitar candidato.");
     },
   });
 
@@ -252,6 +263,11 @@ export default function VotosDiretoresPage() {
           {matchFeedback && (
             <div className="border border-success/30 bg-success/10 rounded-card p-2.5 text-sm text-success">
               {matchFeedback}
+            </div>
+          )}
+          {matchError && (
+            <div className="border border-error/30 bg-error/10 rounded-card p-2.5 text-sm text-error">
+              {matchError}
             </div>
           )}
           <div className="space-y-2 max-h-96 overflow-y-auto">
