@@ -111,6 +111,11 @@ const IMAGE_TIMEOUT_MS = 8_000;
 // (margem para o IP de datacenter do Vercel, mais sujeito a rate-limit que um IP residencial).
 const NEWS_HOST_THROTTLE_MS = Number(process.env.COLLECTOR_HOST_THROTTLE_MS ?? "500") || 500;
 
+// Nº máximo de páginas da LISTAGEM de notícias a seguir (paginação Plone ?b_start:int=).
+// Antes o gov.br lia só a pág.1 (30 notícias) → notícias além disso se perdiam
+// (ex.: artigo da ANA de 20/05/2026 estava na pág.2). Ajustável por NEWS_LISTING_MAX_PAGES.
+const NEWS_LISTING_MAX_PAGES = Math.max(1, Math.min(Number(process.env.NEWS_LISTING_MAX_PAGES ?? "5") || 5, 12));
+
 export async function collectRegulatoryNews(
   sources: NewsSourceConfig[],
   limitPerSource = 24,
@@ -327,10 +332,12 @@ async function fetchSourceLinks(source: NewsSourceConfig, limit: number): Promis
       fetchHtmlSourceLinks(source, limit),
       fetchGovbrApiLinks(source, limit),
     ]);
+    // Mantém links suficientes para o offset caminhar pelas páginas seguintes
+    // (a paginação em fetchListingPages agora descobre além da pág.1).
     return sortNewsLinksByDate(pruneNewsLinks(dedupeNewsLinks([
       ...(htmlLinks.status === "fulfilled" ? htmlLinks.value : []),
       ...(apiLinks.status === "fulfilled" ? apiLinks.value : []),
-    ]))).slice(0, Math.max(limit, limit * 2));
+    ]))).slice(0, Math.max(limit * 2, NEWS_LISTING_MAX_PAGES * 30));
   }
 
   return fetchHtmlSourceLinks(source, limit);
@@ -378,7 +385,12 @@ async function fetchGovbrApiLinks(source: NewsSourceConfig, limit: number): Prom
       next: { revalidate: 0 },
       signal: controller.signal,
     });
-    if (!res.ok) return [];
+    if (!res.ok) {
+      // Muitas fontes gov.br NÃO expõem a REST API do Plone (ex.: ANA → 404).
+      // Nesses casos a cobertura depende 100% do HTML paginado — deixa visível no log.
+      console.warn(`[news] Volto API indisponível (${res.status}) em ${source.agencia_sigla}: ${apiUrl} — usando só HTML paginado`);
+      return [];
+    }
     const payload = await res.json().catch(() => null);
     const items = Array.isArray(payload?.items) ? payload.items : [];
     const seen = new Set<string>();
@@ -523,18 +535,37 @@ function buildGovbrSearchApiUrl(sourceUrl: string, limit: number) {
 
 async function fetchListingPages(source: NewsSourceConfig, limit: number) {
   const firstHtml = await fetchHtml(source.url);
-  if (source.strategy !== "artesp") return [{ url: source.url, html: firstHtml }];
-
-  const pageUrls = new Set<string>([source.url]);
   const sourceUrl = new URL(source.url);
-  for (const anchor of extractAnchors(firstHtml, source.url)) {
-    const pageUrl = normalizeNewsUrl(anchor.href);
-    if (!pageUrl) continue;
-    if (pageUrl.host !== sourceUrl.host) continue;
-    if (stripTrailingSlash(pageUrl.pathname) !== stripTrailingSlash(sourceUrl.pathname)) continue;
-    if (!pageUrl.search && !/^\d+$|^>|pr[oó]ximo/i.test(anchor.text.trim())) continue;
-    pageUrls.add(pageUrl.toString());
-    if (pageUrls.size >= Math.min(8, Math.max(3, Math.ceil(limit / 4)))) break;
+  const sourcePath = stripTrailingSlash(sourceUrl.pathname);
+  const pageUrls = new Set<string>([source.url]);
+
+  if (source.strategy === "artesp") {
+    for (const anchor of extractAnchors(firstHtml, source.url)) {
+      const pageUrl = normalizeNewsUrl(anchor.href);
+      if (!pageUrl) continue;
+      if (pageUrl.host !== sourceUrl.host) continue;
+      if (stripTrailingSlash(pageUrl.pathname) !== sourcePath) continue;
+      if (!pageUrl.search && !/^\d+$|^>|pr[oó]ximo/i.test(anchor.text.trim())) continue;
+      pageUrls.add(pageUrl.toString());
+      if (pageUrls.size >= Math.min(8, Math.max(3, Math.ceil(limit / 4)))) break;
+    }
+  } else {
+    // Paginação Plone (gov.br): segue ?b_start:int=N das PRIMEIRAS páginas. O
+    // b_start é lido do href CRU (normalizeNewsUrl remove esse parâmetro).
+    const byBstart = new Map<number, string>();
+    for (const anchor of extractAnchors(firstHtml, source.url)) {
+      let u: URL;
+      try { u = new URL(anchor.href, source.url); } catch { continue; }
+      if (u.host !== sourceUrl.host) continue;
+      if (stripTrailingSlash(u.pathname) !== sourcePath) continue;
+      const m = /b_start:int=(\d+)/.exec(u.search);
+      if (!m) continue;
+      const n = Number(m[1]);
+      if (n > 0 && !byBstart.has(n)) byBstart.set(n, u.toString());
+    }
+    for (const [, url] of [...byBstart.entries()].sort((a, b) => a[0] - b[0]).slice(0, NEWS_LISTING_MAX_PAGES - 1)) {
+      pageUrls.add(url);
+    }
   }
 
   const pages = await mapWithConcurrency([...pageUrls], 2, async (url) => ({ url, html: url === source.url ? firstHtml : await fetchHtml(url) }));
@@ -571,6 +602,37 @@ async function fetchNewsDetail(
       image_proxy_path: image.url ? `/api/v1/noticias/imagem?url=${encodeURIComponent(image.url)}` : null,
     },
   };
+}
+
+/** Detecta agência/estratégia a partir de UMA URL de notícia (para "colar link"). */
+export function detectNewsSourceFromUrl(rawUrl: string): { agencia_sigla: string; fonte: string; url: string; strategy: "govbr" | "artesp" } | null {
+  let u: URL;
+  try { u = new URL(rawUrl); } catch { return null; }
+  if (u.protocol !== "https:" && u.protocol !== "http:") return null;
+  const host = u.host.toLowerCase();
+  const isArtesp = host.includes("artesp.sp.gov.br");
+  // sigla: gov.br/<sigla>/... ; ARTESP por host ; senão o rótulo principal do host.
+  const govbrSigla = (host === "www.gov.br" || host === "gov.br")
+    ? (u.pathname.split("/").filter(Boolean)[0] ?? "").toUpperCase()
+    : "";
+  const agencia_sigla = isArtesp ? "ARTESP" : (govbrSigla || host.replace(/^www\./, "").split(".")[0].toUpperCase());
+  // source.url = caminho-pai do artigo → isNewsDetailUrl aceita a URL colada.
+  const parentPath = u.pathname.replace(/\/[^/]+\/?$/, "") || "/";
+  return { agencia_sigla, fonte: agencia_sigla, url: `${u.origin}${parentPath}`, strategy: isArtesp ? "artesp" : "govbr" };
+}
+
+/**
+ * Ingestão por LINK: extrai uma única notícia de uma URL (gov.br/ARTESP/qualquer),
+ * reusando o mesmo parser + validação de imagem da coleta automática. Permissivo
+ * (tier não-"expanded" → não rejeita por falta de data). Rede: fetch + imagem.
+ */
+export async function extractNewsFromUrl(rawUrl: string): Promise<{ item: CollectedRegulatoryNews; detected: { agencia_sigla: string; strategy: string } } | null> {
+  const detected = detectNewsSourceFromUrl(rawUrl);
+  if (!detected) return null;
+  const source: NewsSourceConfig = { ...detected }; // sem tier → parseNewsDetail não exige data
+  const item = await fetchNewsDetail(source, { url: rawUrl, title: "" });
+  if (!item) return null;
+  return { item, detected: { agencia_sigla: detected.agencia_sigla, strategy: detected.strategy } };
 }
 
 /**

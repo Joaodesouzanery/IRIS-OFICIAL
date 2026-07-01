@@ -28,6 +28,7 @@ import {
   Copy,
   ExternalLink,
   LayoutGrid,
+  Link2,
   Loader2,
   Mail,
   Newspaper,
@@ -273,6 +274,8 @@ export default function NoticiasPage() {
   const [minutoTextos, setMinutoTextos] = useState("");
   const [showAdvancedHealth, setShowAdvancedHealth] = useState(false);
   const [collectProgress, setCollectProgress] = useState<string | null>(null);
+  const [addUrl, setAddUrl] = useState("");
+  const [addUrlFeedback, setAddUrlFeedback] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
   const [pageView, setPageView] = useState<"feed" | "documento">("feed");
   const lastMinutoSelectionKey = useRef("");
@@ -350,6 +353,21 @@ export default function NoticiasPage() {
       queryClient.invalidateQueries({ queryKey: ["noticias", "health"] });
     },
     onSettled: () => setCollectProgress(null),
+  });
+
+  const addByUrlMutation = useMutation({
+    mutationFn: (url: string) =>
+      api.post<{ ok: boolean; agencia_detectada: string; agencia_cadastrada: boolean }>("/noticias/adicionar", { url }),
+    onSuccess: (res) => {
+      setAddUrlFeedback(
+        `Notícia adicionada (${res.agencia_detectada}${res.agencia_cadastrada ? "" : " — agência não cadastrada"}). Já aparece no feed.`,
+      );
+      setAddUrl("");
+      queryClient.invalidateQueries({ queryKey: ["noticias"] });
+    },
+    onError: (err) => {
+      setAddUrlFeedback(err instanceof Error ? err.message : "Falha ao adicionar a notícia.");
+    },
   });
 
   const statusMutation = useMutation({
@@ -637,6 +655,35 @@ export default function NoticiasPage() {
             {collectProgress ?? "Coletar Notícias"}
           </button>
         </div>
+      </div>
+
+      {/* Adicionar notícia por LINK: o crawler não pega tudo (páginas antigas, fontes sem API).
+          Cole a URL e o sistema ingere a notícia direto no feed (selecionável no Minuto/Newsletter). */}
+      <div className="card p-3 space-y-2">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Link2 className="w-4 h-4 text-brand shrink-0" />
+          <input
+            type="url"
+            value={addUrl}
+            onChange={(e) => { setAddUrl(e.target.value); setAddUrlFeedback(null); }}
+            onKeyDown={(e) => { if (e.key === "Enter" && addUrl.trim() && !demoEnabled) addByUrlMutation.mutate(addUrl.trim()); }}
+            placeholder="Colar link de uma notícia (gov.br, ARTESP...) para adicionar ao feed"
+            className="input flex-1 min-w-[240px]"
+            disabled={addByUrlMutation.isPending || demoEnabled}
+          />
+          <button
+            onClick={() => addUrl.trim() && addByUrlMutation.mutate(addUrl.trim())}
+            disabled={!addUrl.trim() || addByUrlMutation.isPending || demoEnabled}
+            className="btn-secondary"
+            title="Ingere uma única notícia a partir do link colado"
+          >
+            {addByUrlMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+            Adicionar por link
+          </button>
+        </div>
+        {addUrlFeedback && (
+          <p className={cn("text-xs", addByUrlMutation.isError ? "text-error" : "text-success")}>{addUrlFeedback}</p>
+        )}
       </div>
 
       {/* Sub-abas internas: Feed (lista de notícias) x Documento (preview Newsletter/Minuto). */}
