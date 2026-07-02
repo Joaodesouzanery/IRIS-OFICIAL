@@ -345,6 +345,150 @@ function filterStaleMixedItems(items: CollectedRegulatoryNews[]) {
   return filtered.length >= Math.min(3, items.length) ? filtered : items;
 }
 
+// ─── BACKFILL cronológico (Etapa 8) ─────────────────────────────────────────
+// Varre o arquivo paginado da fonte até uma data-início (ex.: 2026-01-01), SEM a
+// janela de 45d e SEM o filtro de 120d (que descartariam 2026). Foca no que importa
+// ao prêmio: só busca detalhe de itens cujo TÍTULO casa com termos regulatórios.
+// Resumável por cursor (b_start). Só faz sentido para fontes gov.br (paginação Plone).
+
+// Termos por dimensão IMQN (para marcar prize_dims) + termos regulatórios gerais.
+const PRIZE_DIM_TERMS: Record<number, RegExp> = {
+  1: /an[aá]lise de impacto regulat|impacto regulat[oó]rio|\bair\b/i,
+  2: /consulta p[uú]blica|audi[eê]ncia p[uú]blica|participa[cç][aã]o social|tomada de subs[ií]dios/i,
+  3: /estoque regulat[oó]rio|consolida[cç][aã]o normativa|revis[aã]o de normas|acervo normativo/i,
+  4: /agenda regulat[oó]ria/i,
+  5: /processo normativo|regimento interno/i,
+  6: /an[aá]lise de resultado regulat|\barr\b|resultado regulat[oó]rio/i,
+};
+const PRIZE_GENERAL_TERMS = /resolu[cç][aã]o|portaria|delibera[cç][aã]o|\bnorma(?:s|tiva)?\b|regulament/i;
+
+export function prizeDimsForTitle(title: string): number[] {
+  return Object.entries(PRIZE_DIM_TERMS).filter(([, re]) => re.test(title)).map(([id]) => Number(id));
+}
+export function isPrizeRelevantTitle(title: string): boolean {
+  return prizeDimsForTitle(title).length > 0 || PRIZE_GENERAL_TERMS.test(title);
+}
+
+// Passo da paginação Plone (menor b_start visível na página) — default 30.
+function detectListingStep(html: string, sourceUrl: string): number {
+  try {
+    const src = new URL(sourceUrl);
+    const path = stripTrailingSlash(src.pathname);
+    const steps: number[] = [];
+    for (const anchor of extractAnchors(html, sourceUrl)) {
+      let u: URL;
+      try { u = new URL(anchor.href, sourceUrl); } catch { continue; }
+      if (u.host !== src.host || stripTrailingSlash(u.pathname) !== path) continue;
+      const m = /b_start:int=(\d+)/.exec(u.search);
+      if (m) { const n = Number(m[1]); if (n > 0) steps.push(n); }
+    }
+    return steps.length ? Math.min(...steps) : 30;
+  } catch {
+    return 30;
+  }
+}
+
+export interface BackfillOptions {
+  since: string; // ISO date (ex.: "2026-01-01")
+  cursor?: number; // b_start onde retomar
+  maxPagesPerRun?: number;
+  knownUrls?: Set<string>;
+}
+
+export interface BackfillSourceResult {
+  agencia_sigla: string;
+  items: CollectedRegulatoryNews[];
+  collected: number;
+  nextCursor: number | null; // null = varredura completa (chegou a `since`)
+  reachedSince: boolean;
+  oldestDate: string | null;
+  undated: number;
+  pagesFetched: number;
+  relevantesEncontrados: number;
+}
+
+export async function backfillNewsSource(source: NewsSourceConfig, opts: BackfillOptions): Promise<BackfillSourceResult> {
+  const base: BackfillSourceResult = {
+    agencia_sigla: source.agencia_sigla, items: [], collected: 0, nextCursor: null,
+    reachedSince: true, oldestDate: null, undated: 0, pagesFetched: 0, relevantesEncontrados: 0,
+  };
+  // ARTESP e afins (portais JS) não têm arquivo paginado estático — não backfillável aqui.
+  if (source.strategy !== "govbr") return base;
+
+  const sinceMs = Date.parse(opts.since);
+  const maxPages = Math.max(1, Math.min(opts.maxPagesPerRun ?? 8, 20));
+  const known = opts.knownUrls ?? new Set<string>();
+  let cursor = Math.max(0, opts.cursor ?? 0);
+  let step = 0;
+  let reachedSince = false;
+  let pagesFetched = 0;
+  let oldestMs = Infinity;
+  const inRange: NewsLink[] = [];
+  const seen = new Set<string>();
+
+  for (let p = 0; p < maxPages; p += 1) {
+    const bstart = cursor;
+    const pageUrl = bstart === 0 ? source.url : `${source.url}${source.url.includes("?") ? "&" : "?"}b_start:int=${bstart}`;
+    let html: string;
+    try {
+      html = await fetchHtml(pageUrl);
+    } catch {
+      break; // falha de rede → interrompe; retoma no cursor atual na próxima chamada
+    }
+    pagesFetched += 1;
+    if (step === 0) step = detectListingStep(html, source.url);
+
+    const anchors = filterAnchorsBySelector(extractAnchors(html, pageUrl), source.linkSelector, pageUrl);
+    const pageLinks: NewsLink[] = [];
+    pushAnchorsAsLinks(anchors, source, new Set<string>(), pageLinks, 1000);
+    if (pageLinks.length === 0) { reachedSince = true; break; } // fim do arquivo
+
+    let datedCount = 0;
+    let olderThanSince = 0;
+    for (const link of pageLinks) {
+      const t = publishedLinkTime(link);
+      if (t > 0) { datedCount += 1; oldestMs = Math.min(oldestMs, t); }
+      if (t > 0 && t < sinceMs) { olderThanSince += 1; continue; }
+      // dentro da janela (ou sem data) → considera; dedup por url
+      if (!seen.has(link.url) && !known.has(link.url)) { seen.add(link.url); inRange.push(link); }
+    }
+    cursor = bstart + step;
+    // A página inteira já é anterior a `since` (todos datados e < since) → completou.
+    if (datedCount > 0 && olderThanSince === datedCount) { reachedSince = true; break; }
+  }
+
+  // Filtro de relevância (prêmio) + busca de detalhe só dos relevantes desta janela de páginas.
+  const relevant = dedupeNewsLinks(inRange).filter((l) => isPrizeRelevantTitle(l.title));
+  const detailResults = await mapWithConcurrency(relevant, DETAIL_CONCURRENCY, (link) => collectNewsLink(source, link, "enrich"));
+  const rawItems = detailResults.map((r) => r.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
+  let undated = 0;
+  const items = dedupeListingImages(rawItems).map((item) => {
+    const isUndated = publishedTime(item) === 0;
+    if (isUndated) undated += 1;
+    return {
+      ...item,
+      metadata: {
+        ...item.metadata,
+        backfill_2026: true,
+        prize_dims: prizeDimsForTitle(item.titulo),
+        undated: isUndated,
+      },
+    };
+  });
+
+  return {
+    agencia_sigla: source.agencia_sigla,
+    items: sortNewsItemsByDate(items),
+    collected: items.length,
+    nextCursor: reachedSince ? null : cursor,
+    reachedSince,
+    oldestDate: oldestMs === Infinity ? null : new Date(oldestMs).toISOString(),
+    undated,
+    pagesFetched,
+    relevantesEncontrados: relevant.length,
+  };
+}
+
 async function fetchSourceLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
   if (source.strategy === "govbr") {
     const [htmlLinks, apiLinks] = await Promise.allSettled([

@@ -40,6 +40,22 @@ import {
 } from "lucide-react";
 
 type PeriodFilter = "today" | "7d" | "month" | "all" | "custom";
+type CoberturaLinha = {
+  agencia_sigla: string;
+  backfillavel: boolean;
+  reached_since: boolean;
+  noticias_2026: number;
+  oldest_date: string | null;
+  undated: number;
+  deliberacoes_2026: number;
+  gap: boolean;
+};
+type CoberturaResponse = {
+  since: string;
+  linhas: CoberturaLinha[];
+  resumo: { agencias: number; backfillaveis: number; completos: number; pendentes: number; noticias_2026: number; undated_total: number };
+};
+type BackfillResponse = { since: string; agencias: number; upserted: number; next: boolean };
 type MinutoEditorialDraft = {
   titulo_geral: string;
   subtitulo_geral: string;
@@ -273,6 +289,8 @@ export default function NoticiasPage() {
   const [baseUrl, setBaseUrl] = useState("");
   const [minutoTextos, setMinutoTextos] = useState("");
   const [showAdvancedHealth, setShowAdvancedHealth] = useState(false);
+  const [coberturaOpen, setCoberturaOpen] = useState(false);
+  const [backfillMsg, setBackfillMsg] = useState<string | null>(null);
   const [collectProgress, setCollectProgress] = useState<string | null>(null);
   const [addUrl, setAddUrl] = useState("");
   const [addUrlFeedback, setAddUrlFeedback] = useState<string | null>(null);
@@ -375,6 +393,41 @@ export default function NoticiasPage() {
       setAddUrlFeedback(err instanceof Error ? err.message : "Falha ao adicionar a notícia.");
     },
   });
+
+  // ── Prêmio: backfill cronológico 2026 + cobertura + export ──
+  const coberturaQuery = useQuery({
+    queryKey: ["cobertura-2026"],
+    queryFn: () => api.get<CoberturaResponse>("/noticias/cobertura-2026"),
+    enabled: coberturaOpen,
+  });
+  const backfillMutation = useMutation({
+    mutationFn: () => api.post<BackfillResponse>("/noticias/backfill", { maxPagesPerRun: 8 }),
+    onSuccess: (res) => {
+      setBackfillMsg(
+        `Lote concluído: ${res.upserted} item(ns) de 2026 gravados em ${res.agencias} fonte(s).` +
+          (res.next ? " Ainda há histórico a varrer — clique novamente para continuar." : " Varredura de 2026 completa. 🎉"),
+      );
+      queryClient.invalidateQueries({ queryKey: ["cobertura-2026"] });
+      queryClient.invalidateQueries({ queryKey: ["noticias"] });
+    },
+    onError: (err) => setBackfillMsg(err instanceof Error ? err.message : "Falha no backfill."),
+  });
+  async function exportar2026() {
+    try {
+      const res = await api.get<{ itens: Array<Record<string, string>> }>("/noticias/export-2026?format=json&order=asc");
+      const header = ["data", "agencia", "titulo", "dimensoes", "url", "resumo"];
+      const esc = (v: string) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+      const csv = [header.join(","), ...res.itens.map((r) => header.map((h) => esc(r[h])).join(","))].join("\r\n");
+      const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "iris-noticias-2026.csv";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    } catch (err) {
+      setBackfillMsg(err instanceof Error ? err.message : "Falha ao exportar.");
+    }
+  }
 
   const statusMutation = useMutation({
     mutationFn: ({ id, next }: { id: string; next: RegulatoryNewsStatus }) =>
@@ -821,6 +874,69 @@ export default function NoticiasPage() {
         </div>
       </div>
 
+      <div className="card">
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <div>
+            <p className="section-label">Prêmio — Cobertura cronológica de 2026</p>
+            <p className="text-xs text-text-muted mt-1">
+              Backfill do arquivo das fontes gov.br até 01/01/2026 (itens regulatórios), resumável. Prova de completude + export.
+            </p>
+          </div>
+          <div className="flex items-center gap-2 flex-wrap">
+            <button type="button" className="btn-secondary text-xs" onClick={() => setCoberturaOpen((v) => !v)}>
+              {coberturaOpen ? "Ocultar cobertura" : "Ver cobertura"}
+            </button>
+            <button type="button" className="btn-secondary text-xs" onClick={() => exportar2026()}>
+              Exportar 2026 (CSV)
+            </button>
+            <button type="button" className="btn-primary text-xs" onClick={() => backfillMutation.mutate()} disabled={backfillMutation.isPending}>
+              {backfillMutation.isPending ? "Varrendo…" : "Rodar backfill 2026"}
+            </button>
+          </div>
+        </div>
+        {backfillMsg ? <p className="text-xs text-text-secondary mt-2">{backfillMsg}</p> : null}
+        {coberturaOpen ? (
+          <div className="mt-3">
+            {coberturaQuery.data ? (
+              <>
+                <p className="text-xs text-text-muted mb-2">
+                  {coberturaQuery.data.resumo.completos}/{coberturaQuery.data.resumo.backfillaveis} fontes varridas até janeiro ·{" "}
+                  {coberturaQuery.data.resumo.noticias_2026} notícias de 2026 · {coberturaQuery.data.resumo.undated_total} sem data
+                </p>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr className="text-text-muted text-left">
+                        <th className="py-1 pr-3">Agência</th>
+                        <th className="py-1 pr-3">Chegou a jan</th>
+                        <th className="py-1 pr-3">Notícias 2026</th>
+                        <th className="py-1 pr-3">Mais antiga</th>
+                        <th className="py-1 pr-3">Delib. 2026</th>
+                        <th className="py-1 pr-3">Sem data</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {coberturaQuery.data.linhas.map((l) => (
+                        <tr key={l.agencia_sigla} className="border-t border-border">
+                          <td className="py-1 pr-3 font-semibold text-text-primary">{l.agencia_sigla}</td>
+                          <td className="py-1 pr-3">{!l.backfillavel ? "—" : l.reached_since ? "✓" : (l.gap ? "⚠️" : "…")}</td>
+                          <td className="py-1 pr-3">{l.noticias_2026}</td>
+                          <td className="py-1 pr-3">{l.oldest_date ? l.oldest_date.slice(0, 10) : "—"}</td>
+                          <td className="py-1 pr-3">{l.deliberacoes_2026}</td>
+                          <td className="py-1 pr-3">{l.undated > 0 ? l.undated : "—"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-[11px] text-text-muted mt-2">ARTESP/portais JS não têm arquivo paginado (—); use “Adicionar por link” para itens específicos.</p>
+              </>
+            ) : (
+              <p className="text-xs text-text-muted">{coberturaQuery.isLoading ? "Carregando cobertura…" : "Sem dados de cobertura ainda."}</p>
+            )}
+          </div>
+        ) : null}
+      </div>
 
       <div className={cn("card", !showAdvancedHealth && "hidden")}>
         <div className="flex items-center justify-between gap-3">
