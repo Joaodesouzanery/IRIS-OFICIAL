@@ -823,6 +823,8 @@ export interface RegulatoryNewsSourceReport {
   latest_title?: string | null;
   detail_errors?: string[];
   error?: string;
+  /** Falha transitória (rate-limit/render); não pinta a fonte de vermelho se há dados recentes. */
+  transient?: boolean;
 }
 
 export interface RegulatoryNewsletterSchedule {

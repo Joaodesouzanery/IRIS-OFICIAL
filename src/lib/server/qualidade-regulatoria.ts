@@ -1,5 +1,22 @@
-export type QualidadeNivel = "avancado" | "em_desenvolvimento" | "inicial";
+// Níveis da Matriz de Maturidade da Qualidade Normativa (IMQN), do menos ao mais
+// maduro. Valores IMQN 0 / 0.35 / 0.7 / 1 → nota 0 / 35 / 70 / 100 (ver LEVEL_TO_NOTA).
+export type QualidadeNivel = "inexistente" | "inicial" | "gerenciado" | "melhoria_continua";
 export type QualidadeStatusRevisao = "preliminar" | "pendente" | "em_revisao" | "validado" | "rejeitado";
+
+// Nota (0–100) que representa cada nível da matriz (classificação IMQN × 100).
+export const LEVEL_TO_NOTA: Record<QualidadeNivel, number> = {
+  inexistente: 0,
+  inicial: 35,
+  gerenciado: 70,
+  melhoria_continua: 100,
+};
+
+export const NIVEL_LABEL: Record<QualidadeNivel, string> = {
+  inexistente: "Inexistente",
+  inicial: "Inicial",
+  gerenciado: "Gerenciado",
+  melhoria_continua: "Melhoria Contínua",
+};
 
 export interface QualidadeAgencia {
   sigla: string;
@@ -27,6 +44,10 @@ export interface QualidadeCriterio {
   url_documentacao: string | null;
   obrigatorio_por_lei: boolean;
   base_legal: string | null;
+  // Descrição de cada nível de maturidade desta dimensão (Matriz IMQN).
+  niveis?: Record<QualidadeNivel, string>;
+  // Subcritérios da dimensão (ex.: AIR e ARR → Capacitação / Metodologia / Processo).
+  subcriterios?: string[];
 }
 
 export interface QualidadeNota {
@@ -104,7 +125,46 @@ export const QUALIDADE_LEGAL_REFERENCES = [
     label: "Guia ANPD para tratamento de dados pessoais pelo Poder Público",
     url: "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-poder-publico-anpd-versao-final.pdf/view",
   },
+  {
+    label: "Lei da Liberdade Econômica - Lei 13.874/2019 (AIR obrigatória)",
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13874.htm",
+  },
+  {
+    label: "Decreto 10.411/2020 - regulamenta AIR e ARR",
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/D10411.htm",
+  },
+  {
+    label: "Decreto 10.139/2019 - revisão e consolidação de atos normativos",
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D10139.htm",
+  },
 ];
+
+// Programa INFRA Competitividade (Ministério da Infraestrutura) — contexto/metodologia
+// da Matriz de Maturidade da Qualidade Normativa. Exibido como referência (NÃO entra no
+// cálculo do IMQN). Eixos, projetos por agência e indicadores OCDE PMR (Product Market
+// Regulation 2018/2022, escala 0 = menos restritivo a 6 = mais restritivo).
+export const INFRA_COMPETITIVIDADE = {
+  visao: "Tornar-se líder da América Latina em Infraestrutura de transportes.",
+  eixos: [
+    { nome: "Segurança Jurídica", descricao: "Previsibilidade para o mercado, participação social e análise de impacto regulatório (AIR/ARR)." },
+    { nome: "Produtividade", descricao: "Desburocratização, redução do custo Brasil, celeridade e redução do fardo regulatório." },
+    { nome: "Livre Mercado", descricao: "Liberdade econômica, investimento, inovação e limitação da atuação do Estado como regulador." },
+  ] as Array<{ nome: string; descricao: string }>,
+  indicadores_ocde: [
+    { nome: "PMR Geral (Brasil)", valor: 2.62, referencia: "Penúltima posição entre 39 países (PMR 2018)" },
+    { nome: "PMR Transportes (Brasil)", valor: 2.29, meta: 0.76, meta_posicao: "1º lugar" },
+    { nome: "PMR Aquaviário", valor: 2.42, meta: 0.67, meta_posicao: "3º lugar (evolução de 36 posições)" },
+    { nome: "PMR Rodoviário", valor: 2.0, meta: 1.36, meta_posicao: "11º lugar (evolução de 23 posições)" },
+    { nome: "PMR Ferroviário", valor: 4.07, meta: 1.36, meta_posicao: "1º lugar (evolução de 26 posições)" },
+    { nome: "PMR Aeroviário", valor: 0.67, meta: 0.25, meta_posicao: "3º lugar (evolução de 7 posições)" },
+  ] as Array<{ nome: string; valor: number; meta?: number; meta_posicao?: string; referencia?: string }>,
+  indicador_qualidade_normativa_2022: [
+    { agencia: "ANAC", imqn: 82.75 },
+    { agencia: "ANTT", imqn: 89.5 },
+    { agencia: "ANTAQ", imqn: 92.88 },
+    { agencia: "MINFRA", imqn: 72.25 },
+  ] as Array<{ agencia: string; imqn: number }>,
+} as const;
 
 export const QUALIDADE_GUARDRAILS = [
   "Coletar somente dados necessários, oficiais, públicos e relacionados ao desempenho institucional.",
@@ -147,140 +207,134 @@ export const QUALIDADE_AGENCIAS: QualidadeAgencia[] = [
   };
 });
 
+// As 6 dimensões da Matriz de Avaliação da Maturidade da Qualidade Normativa (IMQN),
+// programa INFRA Competitividade. Pesos (soma 1,0): AIR 0.25, Participação Social 0.15,
+// Estoque 0.20, Agenda 0.15, Processo Normativo 0.10, ARR 0.15. Cada dimensão traz a
+// descrição dos 4 níveis (Inexistente → Melhoria Contínua) conforme a matriz oficial.
 export const QUALIDADE_CRITERIOS: QualidadeCriterio[] = [
   {
     id: 1,
-    nome: "Transparência Ativa",
-    descricao: "Publicação proativa de informações institucionais, normativas, atas, AIRs, contratos, orçamento, agenda e dados abertos.",
-    peso: 0.15,
+    nome: "Análise de Impacto Regulatório (AIR)",
+    descricao: "Capacitação, metodologia e processo de AIR: existência, qualidade e publicidade das análises de impacto (problema, alternativas, impactos e participação social).",
+    peso: 0.25,
     nivel_prioridade: "alta",
-    fontes_coleta: ["portal_transparencia_federal", "site_agencia", "dados_gov_br"],
+    fontes_coleta: ["site_agencia", "qualireg_cgu", "diario_oficial"],
     metodo_coleta: "misto",
     url_documentacao: null,
     obrigatorio_por_lei: true,
-    base_legal: "Lei 12.527/2011; Lei 13.848/2019, art. 18",
+    base_legal: "Decreto 10.411/2020; Lei 13.874/2019, art. 5; Lei 13.848/2019, art. 6",
+    subcriterios: ["Capacitação", "Metodologia", "Processo"],
+    niveis: {
+      inexistente: "Não há servidores capacitados em AIR; não há metodologia de AIR estabelecida; AIR realizada apenas eventualmente.",
+      inicial: "Pequena quantidade de servidores com capacitação introdutória; AIR institucionalizada conforme o Decreto 10.411/2020; AIR sempre realizada e a dispensa justificada por critérios objetivos.",
+      gerenciado: "Servidores capacitados em nível introdutório/intermediário/avançado; há manual instituindo a aplicabilidade institucional da AIR; AIR realizada sistematicamente, com participação social posterior e processo mapeado.",
+      melhoria_continua: "Plano de capacitação em AIR estabelecido e em prática; critérios objetivos de classificação por impacto/complexidade; AIRs de alto impacto submetidas à participação social prévia e posterior; avaliação contínua da qualidade das AIRs.",
+    },
   },
   {
     id: 2,
     nome: "Participação Social",
-    descricao: "Volume, qualidade e devolutiva de consultas públicas, audiências públicas e instrumentos de participação.",
+    descricao: "Instrumentos, metodologia e efetividade de consultas públicas, audiências e tomadas de subsídios, incluindo devolutiva às contribuições.",
     peso: 0.15,
     nivel_prioridade: "alta",
     fontes_coleta: ["participa_br", "site_agencia", "relatorios_anuais"],
     metodo_coleta: "scraping",
     url_documentacao: null,
     obrigatorio_por_lei: true,
-    base_legal: "Lei 13.848/2019, arts. 19 a 25",
+    base_legal: "Lei 13.848/2019, arts. 19 a 25; Decreto 10.411/2020",
+    niveis: {
+      inexistente: "A instituição não atende ao disposto na legislação sobre participação social.",
+      inicial: "Existe dispositivo interno orientando a participação social conforme a legislação (Leis 13.848/2019, 13.874/2019 e Decreto 10.411/2020).",
+      gerenciado: "Manual/ato normativo instituindo metodologia e procedimento de PS; relatórios de ouvidoria e consumidor.gov subsidiam decisões; informações divulgadas no portal e/ou Participa+Brasil; efetividade avaliada de forma intuitiva.",
+      melhoria_continua: "Eventos de PS para construção de conhecimento e propostas; ouvidoria, consumidor.gov, pesquisas de satisfação e atendimento subsidiam decisões; instrumentos e contribuições divulgados; efetividade da PS mensurada conforme metodologia instituída.",
+    },
   },
   {
     id: 3,
-    nome: "Análise de Impacto Regulatório",
-    descricao: "Existência, qualidade e publicidade das AIRs, incluindo problema, alternativas, impactos e análise custo-benefício.",
-    peso: 0.15,
+    nome: "Gestão de Estoque Regulatório",
+    descricao: "Levantamento, análise, indexação e consolidação do acervo normativo, integrados ao planejamento e à transparência.",
+    peso: 0.20,
     nivel_prioridade: "alta",
-    fontes_coleta: ["site_agencia", "qualireg_cgu", "diario_oficial"],
+    fontes_coleta: ["site_agencia", "diario_oficial", "acervo_normativo"],
     metodo_coleta: "misto",
     url_documentacao: null,
     obrigatorio_por_lei: true,
-    base_legal: "Decreto 10.411/2020; Lei 13.874/2019",
+    base_legal: "Decreto 10.139/2019, art. 19; Lei 13.874/2019",
+    niveis: {
+      inexistente: "Não há levantamento de atos normativos publicados pelo órgão.",
+      inicial: "Levantamento quantitativo dos atos normativos; normas publicadas e disponíveis para consulta pública na internet.",
+      gerenciado: "Análise qualitativa dos atos normativos, indexação e classificação por tema; normas no portal gov.br; fardo regulatório estimado para normas de alto impacto; manutenção da consolidação normativa (art. 19 do Decreto 10.139/2019).",
+      melhoria_continua: "Processos de gestão de estoque integrados ao planejamento normativo e à transparência; alterações do estoque priorizadas por agenda regulatória; novas normas passam por consolidação e compatibilização.",
+    },
   },
   {
     id: 4,
-    nome: "Governança Regulatória",
-    descricao: "Planejamento estratégico, gestão de riscos, integridade, código de conduta e controles internos.",
-    peso: 0.12,
+    nome: "Agenda Regulatória",
+    descricao: "Elaboração, priorização, participação social e cumprimento da agenda regulatória, integrada ao planejamento estratégico.",
+    peso: 0.15,
     nivel_prioridade: "alta",
-    fontes_coleta: ["tcu", "cgu", "site_agencia"],
+    fontes_coleta: ["site_agencia", "participa_br", "relatorios_anuais"],
     metodo_coleta: "misto",
     url_documentacao: null,
     obrigatorio_por_lei: true,
-    base_legal: "Lei 13.848/2019; IN CGU 01/2016",
+    base_legal: "Lei 13.848/2019, art. 21",
+    niveis: {
+      inexistente: "Não há agenda regulatória.",
+      inicial: "Existe Agenda Regulatória no órgão; temas elencados e priorizados pelos gestores; avaliada a aderência da proposta às políticas públicas.",
+      gerenciado: "Elaboração, atualização e acompanhamento institucionalizados; ampla participação social (analisada, porém não respondida); Ministério setorial oficiado na abertura; cumprimento de 50% a 79%; execução monitorada.",
+      melhoria_continua: "Processos da Agenda integrados ao planejamento e à gestão do órgão; participação social analisada, respondida e divulgada; projetos aderentes ao planejamento estratégico; cumprimento ≥ 80%; execução monitorada e divulgada.",
+    },
   },
   {
     id: 5,
-    nome: "Independência Decisória",
-    descricao: "Autonomia técnica, mandatos fixos, quarentena regulatória e registros institucionais de estabilidade decisória.",
-    peso: 0.08,
+    nome: "Gestão do Processo Normativo",
+    descricao: "Formalização, padronização e monitoramento por indicadores do fluxo de elaboração de atos normativos.",
+    peso: 0.10,
     nivel_prioridade: "media",
-    fontes_coleta: ["atos_nomeacao", "acordaos_tcu", "site_agencia"],
-    metodo_coleta: "manual",
+    fontes_coleta: ["site_agencia", "diario_oficial"],
+    metodo_coleta: "misto",
     url_documentacao: null,
     obrigatorio_por_lei: true,
-    base_legal: "Lei 13.848/2019, arts. 5 a 12",
+    base_legal: "Lei 13.848/2019; Decreto 10.411/2020",
+    niveis: {
+      inexistente: "O processo normativo não é padronizado.",
+      inicial: "Há documento que institucionaliza o processo normativo; fluxo formalizado de forma clara; instâncias de aprovação claras e formalizadas.",
+      gerenciado: "Processo padronizado no órgão; as intervenções de participação social estão claramente inseridas no processo.",
+      melhoria_continua: "Indicadores de processo normativo monitorados e usados para melhoria contínua, integrando o processo normativo à gestão estratégica da instituição.",
+    },
   },
   {
     id: 6,
-    nome: "Prestação de Contas",
-    descricao: "Relatório anual de atividades, controle externo, metas, auditorias e resposta institucional a recomendações.",
-    peso: 0.12,
+    nome: "Análise de Resultado Regulatório (ARR)",
+    descricao: "Capacitação, metodologia e processo de ARR: avaliação dos resultados das normas em vigor, com agenda de ARR e participação social.",
+    peso: 0.15,
     nivel_prioridade: "alta",
-    fontes_coleta: ["tcu", "cgu", "portal_transparencia_federal"],
+    fontes_coleta: ["site_agencia", "qualireg_cgu", "relatorios_arr"],
     metodo_coleta: "misto",
     url_documentacao: null,
     obrigatorio_por_lei: true,
-    base_legal: "Lei 13.848/2019, art. 15",
-  },
-  {
-    id: 7,
-    nome: "Qualidade Normativa",
-    descricao: "Clareza, consistência, proporcionalidade, revisão periódica, ARR e gestão do estoque regulatório.",
-    peso: 0.08,
-    nivel_prioridade: "media",
-    fontes_coleta: ["site_agencia", "acervo_normativo", "relatorios_arr"],
-    metodo_coleta: "misto",
-    url_documentacao: null,
-    obrigatorio_por_lei: true,
-    base_legal: "Decreto 10.411/2020",
-  },
-  {
-    id: 8,
-    nome: "Ouvidoria e Atendimento",
-    descricao: "Estrutura de ouvidoria, tempo médio de resposta, taxa de resolução e satisfação dos usuários.",
-    peso: 0.06,
-    nivel_prioridade: "media",
-    fontes_coleta: ["falabr", "relatorios_ouvidoria", "cgu"],
-    metodo_coleta: "misto",
-    url_documentacao: null,
-    obrigatorio_por_lei: true,
-    base_legal: "Lei 13.460/2017; Lei 13.848/2019, art. 24",
-  },
-  {
-    id: 9,
-    nome: "Dados Abertos",
-    descricao: "Datasets em formatos abertos, atualização regular, API pública e catálogo em dados.gov.br.",
-    peso: 0.05,
-    nivel_prioridade: "media",
-    fontes_coleta: ["dados_gov_br", "api_agencia", "inda"],
-    metodo_coleta: "api",
-    url_documentacao: null,
-    obrigatorio_por_lei: true,
-    base_legal: "Decreto 8.777/2016",
-  },
-  {
-    id: 10,
-    nome: "Gestão Financeira e Orçamentária",
-    descricao: "Execução orçamentária, eficiência de gastos, arrecadação regulatória e relatórios financeiros públicos.",
-    peso: 0.04,
-    nivel_prioridade: "baixa",
-    fontes_coleta: ["siafi", "portal_transparencia_federal", "relatorios_anuais"],
-    metodo_coleta: "api",
-    url_documentacao: null,
-    obrigatorio_por_lei: true,
-    base_legal: "Lei 4.320/1964; Lei Complementar 101/2000",
+    base_legal: "Decreto 10.411/2020, art. 12",
+    subcriterios: ["Capacitação", "Metodologia", "Processo"],
+    niveis: {
+      inexistente: "Não há servidores capacitados em ARR; não há metodologia de ARR estabelecida; ARR realizada esporadicamente.",
+      inicial: "25% a 49% dos servidores capacitados em ARR; existe Agenda de ARR (Decreto 10.411/2020); ARRs publicadas e acessíveis ao público; agenda de ARR publicada no site do órgão.",
+      gerenciado: "50% a 74% dos servidores capacitados; ARR institucionalizada; manual/ato normativo instituindo a aplicabilidade da ARR; ARRs de alto impacto submetidas à participação social.",
+      melhoria_continua: "Plano de capacitação em ARR com ≥ 75% dos servidores; metodologia contempla participação social; agenda de ARR construída com participação social e integrada à Agenda Regulatória; execução monitorada e com melhoria contínua.",
+    },
   },
 ];
 
 export const QUALIDADE_FONTES: QualidadeFonte[] = [
-  ["portal_transparencia_federal", "Portal da Transparência Federal", "https://portaldatransparencia.gov.br", "https://api.portaldatransparencia.gov.br/api-de-dados", true, "api", [1, 6, 10], "JSON", "diária"],
-  ["dados_gov_br", "Portal Dados Abertos Brasil", "https://dados.gov.br", "https://dados.gov.br/api/3/action", false, "api", [1, 9], "JSON", "variável"],
-  ["participa_br", "Participa.br", "https://www.participa.br", null, false, "scraping", [2], "HTML", "contínua"],
-  ["falabr", "Fala.BR", "https://falabr.cgu.gov.br", null, false, "misto", [1, 8], "CSV/HTML", "mensal"],
-  ["qualireg_cgu", "QualiREG - CGU", "https://www.gov.br/cgu/pt-br/assuntos/auditoria-e-fiscalizacao/qualireg", null, false, "scraping", [3, 4], "PDF/HTML", "anual"],
-  ["diario_oficial", "Diário Oficial da União", "https://www.in.gov.br", "https://www.in.gov.br/consulta/-/buscar/dou", false, "misto", [3, 7], "HTML/RSS", "diária"],
-  ["tcu", "Tribunal de Contas da União", "https://portal.tcu.gov.br", "https://contas.tcu.gov.br/pesquisaJurisprudencia/", false, "scraping", [4, 5, 6], "HTML/PDF", "contínua"],
-  ["cgu", "Controladoria-Geral da União", "https://www.gov.br/cgu", null, false, "scraping", [1, 4, 6, 8], "HTML/PDF", "contínua"],
-  ["siafi", "Tesouro/SIAFI público", "https://www.tesourotransparente.gov.br/ckan/dataset", null, false, "api", [10], "CSV/JSON", "diária"],
-  ["site_agencia", "Portal oficial da agência", "https://www.gov.br", null, false, "misto", [1, 2, 3, 4, 6, 7, 8], "HTML/PDF", "contínua"],
+  ["portal_transparencia_federal", "Portal da Transparência Federal", "https://portaldatransparencia.gov.br", "https://api.portaldatransparencia.gov.br/api-de-dados", true, "api", [3, 4], "JSON", "diária"],
+  ["dados_gov_br", "Portal Dados Abertos Brasil", "https://dados.gov.br", "https://dados.gov.br/api/3/action", false, "api", [3], "JSON", "variável"],
+  ["participa_br", "Participa.br", "https://www.participa.br", null, false, "scraping", [2, 4], "HTML", "contínua"],
+  ["falabr", "Fala.BR", "https://falabr.cgu.gov.br", null, false, "misto", [2], "CSV/HTML", "mensal"],
+  ["qualireg_cgu", "QualiREG - CGU", "https://www.gov.br/cgu/pt-br/assuntos/auditoria-e-fiscalizacao/qualireg", null, false, "scraping", [1, 6], "PDF/HTML", "anual"],
+  ["diario_oficial", "Diário Oficial da União", "https://www.in.gov.br", "https://www.in.gov.br/consulta/-/buscar/dou", false, "misto", [1, 3, 5], "HTML/RSS", "diária"],
+  ["tcu", "Tribunal de Contas da União", "https://portal.tcu.gov.br", "https://contas.tcu.gov.br/pesquisaJurisprudencia/", false, "scraping", [5], "HTML/PDF", "contínua"],
+  ["cgu", "Controladoria-Geral da União", "https://www.gov.br/cgu", null, false, "scraping", [1, 6], "HTML/PDF", "contínua"],
+  ["siafi", "Tesouro/SIAFI público", "https://www.tesourotransparente.gov.br/ckan/dataset", null, false, "api", [], "CSV/JSON", "diária"],
+  ["site_agencia", "Portal oficial da agência", "https://www.gov.br", null, false, "misto", [1, 2, 3, 4, 5, 6], "HTML/PDF", "contínua"],
 ].map(([id, nome, url, api_url, requer_chave, metodo_coleta, criterios_relacionados, formato, atualizacao]) => ({
   id: String(id),
   nome: String(nome),
@@ -294,27 +348,30 @@ export const QUALIDADE_FONTES: QualidadeFonte[] = [
 }));
 
 export const QUALIDADE_CATEGORIAS_PREMIO: QualidadeCategoriaPremio[] = [
-  { id: "geral", nome: "Melhor Agência Global", descricao: "Maior score geral ponderado.", criterios_avaliados: QUALIDADE_CRITERIOS.map((item) => item.id), tipo: "geral" },
-  { id: "transparencia", nome: "Destaque em Transparência e Dados Abertos", descricao: "Transparência Ativa e Dados Abertos.", criterios_avaliados: [1, 9], tipo: "tematico" },
-  { id: "participacao", nome: "Destaque em Participação Social", descricao: "Qualidade, volume e devolutiva de participação social.", criterios_avaliados: [2], tipo: "tematico" },
-  { id: "inovacao", nome: "Destaque em Inovação Regulatória", descricao: "AIR, ARR e qualidade normativa.", criterios_avaliados: [3, 7], tipo: "tematico" },
-  { id: "governanca", nome: "Destaque em Governança e Integridade", descricao: "Governança, independência decisória e prestação de contas.", criterios_avaliados: [4, 5, 6], tipo: "tematico" },
+  { id: "geral", nome: "Melhor Índice de Maturidade (IMQN)", descricao: "Maior score geral ponderado nas 6 dimensões da Matriz de Qualidade Normativa.", criterios_avaliados: QUALIDADE_CRITERIOS.map((item) => item.id), tipo: "geral" },
+  { id: "air", nome: "Destaque em Análise de Impacto Regulatório", descricao: "Maturidade em AIR (capacitação, metodologia e processo).", criterios_avaliados: [1], tipo: "tematico" },
+  { id: "participacao", nome: "Destaque em Participação Social", descricao: "Instrumentos, metodologia e efetividade da participação social.", criterios_avaliados: [2], tipo: "tematico" },
+  { id: "estoque", nome: "Destaque em Gestão do Estoque Regulatório", descricao: "Levantamento, consolidação e gestão do acervo normativo.", criterios_avaliados: [3], tipo: "tematico" },
+  { id: "agenda_arr", nome: "Destaque em Agenda Regulatória e ARR", descricao: "Agenda regulatória e análise de resultado regulatório.", criterios_avaliados: [4, 6], tipo: "tematico" },
   { id: "evolucao", nome: "Prêmio Evolução Regulatória", descricao: "Maior evolução percentual frente à edição anterior.", criterios_avaliados: QUALIDADE_CRITERIOS.map((item) => item.id), tipo: "evolucao" },
 ];
 
+// Fallback preliminar (demo/offline) — 6 dimensões IMQN por agência, na ordem
+// [AIR, Participação Social, Estoque Regulatório, Agenda Regulatória, Processo Normativo, ARR].
+// Notas ancoradas nos níveis (0/35/70/100). Substituídas pela auto-classificação + curadoria.
 const CURATED_NOTES: Record<string, number[]> = {
-  ANATEL: [90, 88, 84, 83, 80, 84, 82, 81, 93, 82],
-  ANVISA: [84, 88, 89, 86, 78, 82, 83, 82, 78, 79],
-  ANEEL: [86, 82, 87, 80, 75, 80, 82, 78, 88, 76],
-  ANP: [80, 72, 73, 74, 70, 78, 72, 70, 74, 76],
-  ANA: [76, 83, 70, 72, 68, 72, 70, 73, 76, 69],
-  ANS: [70, 69, 66, 69, 67, 68, 66, 70, 68, 67],
-  ANAC: [68, 64, 66, 65, 67, 66, 65, 66, 64, 64],
-  ANTT: [65, 63, 64, 63, 62, 64, 62, 63, 61, 64],
-  ANTAQ: [60, 57, 56, 58, 56, 58, 57, 58, 55, 56],
-  ANM: [54, 51, 50, 52, 50, 53, 51, 52, 50, 52],
-  ANCINE: [52, 51, 49, 50, 49, 51, 50, 50, 48, 50],
-  ANPD: [48, 44, 43, 45, 46, 44, 43, 47, 42, 43],
+  ANATEL: [100, 85, 85, 85, 70, 70],
+  ANVISA: [85, 85, 70, 70, 70, 70],
+  ANEEL: [85, 70, 85, 70, 70, 35],
+  ANTT: [85, 70, 70, 85, 70, 70],
+  ANAC: [70, 70, 70, 70, 70, 35],
+  ANTAQ: [70, 35, 70, 70, 35, 35],
+  ANP: [70, 35, 35, 70, 35, 35],
+  ANA: [35, 70, 35, 35, 35, 35],
+  ANS: [35, 35, 35, 35, 35, 0],
+  ANM: [35, 35, 35, 35, 0, 0],
+  ANCINE: [35, 0, 35, 0, 0, 0],
+  ANPD: [0, 0, 35, 0, 0, 0],
 };
 
 const AGENCY_CONTEXT: Record<string, { foco: string; maturidade: string; highlights: string[]; improvements: string[] }> = {
@@ -393,22 +450,18 @@ const AGENCY_CONTEXT: Record<string, { foco: string; maturidade: string; highlig
 };
 
 const CRITERION_EVIDENCE: Record<number, { fonte: string; titulo: string; detalhe: string }> = {
-  1: { fonte: "site_agencia", titulo: "Portal institucional e acesso a informacao", detalhe: "Verifica secoes de transparencia ativa, agenda, atos, contratos e informacoes institucionais." },
-  2: { fonte: "participa_br", titulo: "Participacao social e consultas publicas", detalhe: "Observa instrumentos de consulta, audiencia, tomada de subsidios e devolutivas publicas." },
-  3: { fonte: "qualireg_cgu", titulo: "AIR e boas praticas regulatorias", detalhe: "Considera publicidade de AIR, abrangencia metodologica e referencias do Decreto 10.411/2020." },
-  4: { fonte: "cgu", titulo: "Governanca, riscos e integridade", detalhe: "Considera planejamento estrategico, gestao de riscos, integridade e controles internos." },
-  5: { fonte: "site_agencia", titulo: "Independencia decisoria e estrutura colegiada", detalhe: "Observa mandatos, atos oficiais, colegiado e regras de autonomia decisoria institucional." },
-  6: { fonte: "portal_transparencia_federal", titulo: "Prestacao de contas e relatorios de gestao", detalhe: "Verifica relatorios anuais, auditorias, metas e respostas a controle externo." },
-  7: { fonte: "diario_oficial", titulo: "Qualidade normativa e estoque regulatorio", detalhe: "Observa clareza normativa, revisoes, ARR e publicacoes oficiais de atos reguladores." },
-  8: { fonte: "falabr", titulo: "Ouvidoria e atendimento ao usuario", detalhe: "Considera canais de ouvidoria, atendimento, prazos e informacoes publicas de satisfacao." },
-  9: { fonte: "dados_gov_br", titulo: "Catalogo de dados abertos", detalhe: "Verifica datasets, formatos abertos, atualizacao e disponibilidade de APIs ou catalogos publicos." },
-  10: { fonte: "siafi", titulo: "Execucao financeira e orcamentaria", detalhe: "Observa informacoes publicas de orcamento, execucao e eficiencia de gastos institucionais." },
+  1: { fonte: "qualireg_cgu", titulo: "AIR - Analise de Impacto Regulatorio", detalhe: "Verifica publicidade de AIR, capacitacao, metodologia e processo conforme o Decreto 10.411/2020." },
+  2: { fonte: "participa_br", titulo: "Participacao social e consultas publicas", detalhe: "Observa consultas, audiencias, tomadas de subsidios e devolutiva das contribuicoes." },
+  3: { fonte: "diario_oficial", titulo: "Gestao do estoque regulatorio", detalhe: "Considera levantamento, indexacao e consolidacao do acervo normativo (Decreto 10.139/2019)." },
+  4: { fonte: "site_agencia", titulo: "Agenda regulatoria", detalhe: "Observa elaboracao, priorizacao, participacao social e cumprimento da agenda regulatoria." },
+  5: { fonte: "site_agencia", titulo: "Gestao do processo normativo", detalhe: "Verifica formalizacao, padronizacao e monitoramento por indicadores do processo normativo." },
+  6: { fonte: "qualireg_cgu", titulo: "ARR - Analise de Resultado Regulatorio", detalhe: "Considera capacitacao, metodologia, agenda de ARR e participacao social na avaliacao de resultados." },
 };
 
 export function buildInitialDiagnostics(year = new Date().getFullYear()): QualidadeDiagnostico[] {
   const now = new Date().toISOString();
   const diagnostics = QUALIDADE_AGENCIAS.map((agencia) => {
-    const scores = CURATED_NOTES[agencia.sigla] ?? Array(10).fill(50);
+    const scores = CURATED_NOTES[agencia.sigla] ?? Array(QUALIDADE_CRITERIOS.length).fill(35);
     const notes = QUALIDADE_CRITERIOS.map((criterion, index) => {
       const nota = clampScore(scores[index] ?? 50);
       return {
@@ -471,10 +524,13 @@ export function calculateWeightedScore(notes: Array<{ criterio_id: number; nota:
   return Number(score.toFixed(1));
 }
 
+// Mapeia a nota (0–100) para um dos 4 níveis IMQN. Cortes nos pontos médios entre
+// as notas-âncora dos níveis (0/35/70/100): 17.5, 52.5 e 85.
 export function scoreToLevel(score: number): QualidadeNivel {
-  if (score >= 76) return "avancado";
-  if (score >= 45) return "em_desenvolvimento";
-  return "inicial";
+  if (score >= 85) return "melhoria_continua";
+  if (score >= 52.5) return "gerenciado";
+  if (score >= 17.5) return "inicial";
+  return "inexistente";
 }
 
 export function clampScore(score: number) {
@@ -495,17 +551,15 @@ export function sanitizeEvidenceText(value: string | null | undefined) {
 // Palavras-chave por criterio para validacao semantica da evidencia coletada.
 // "sucesso" HTTP nao garante relevancia; aqui medimos se o conteudo realmente
 // fala do criterio antes da revisao humana.
+// Palavras-chave por DIMENSÃO IMQN (usadas pela auto-classificação e pela validação
+// semântica das evidências coletadas). Sem acento/caixa (normalizeForMatch cuida disso).
 const CRITERIO_KEYWORDS: Record<number, string[]> = {
-  1: ["transparencia", "transparencia ativa", "dados abertos", "acesso a informacao", "lai", "informacoes institucionais", "agenda"],
-  2: ["consulta publica", "audiencia publica", "participacao social", "tomada de subsidios", "contribuicoes"],
-  3: ["analise de impacto", "air", "impacto regulatorio", "custo-beneficio", "alternativas regulatorias"],
-  4: ["governanca", "gestao de riscos", "integridade", "codigo de conduta", "controles internos", "planejamento estrategico"],
-  5: ["mandato", "quarentena", "autonomia", "independencia", "nomeacao", "estabilidade decisoria"],
-  6: ["prestacao de contas", "relatorio anual", "auditoria", "controle externo", "metas", "tcu"],
-  7: ["qualidade normativa", "revisao periodica", "estoque regulatorio", "arr", "consolidacao", "proporcionalidade"],
-  8: ["ouvidoria", "atendimento", "fala.br", "falabr", "tempo de resposta", "satisfacao", "usuarios"],
-  9: ["dados abertos", "dataset", "api", "csv", "json", "catalogo", "dados.gov"],
-  10: ["orcamento", "execucao orcamentaria", "siafi", "arrecadacao", "financeiro", "gastos"],
+  1: ["analise de impacto regulatorio", "air", "impacto regulatorio", "relatorio de air", "custo-beneficio", "alternativas regulatorias", "decreto 10.411"],
+  2: ["consulta publica", "audiencia publica", "participacao social", "tomada de subsidios", "contribuicoes", "participa mais brasil"],
+  3: ["estoque regulatorio", "consolidacao normativa", "revisao de normas", "acervo normativo", "levantamento de atos", "guilhotina regulatoria", "decreto 10.139"],
+  4: ["agenda regulatoria", "agenda de regulacao", "temas prioritarios", "planejamento regulatorio"],
+  5: ["processo normativo", "fluxo normativo", "regimento interno", "instancias de aprovacao", "padronizacao do processo"],
+  6: ["analise de resultado regulatorio", "arr", "avaliacao de resultado regulatorio", "resultado regulatorio", "avaliacao ex-post"],
 };
 
 function normalizeForMatch(value: string) {
@@ -563,7 +617,7 @@ export function buildPremioWinners(diagnostics: QualidadeDiagnostico[], previous
 
 function buildCriterionObservation(sigla: string, criterioNome: string, nota: number) {
   const context = AGENCY_CONTEXT[sigla];
-  const level = nota >= 76 ? "avancado" : nota >= 45 ? "em desenvolvimento" : "inicial";
+  const level = NIVEL_LABEL[scoreToLevel(nota)];
   return `${criterioNome} em nivel ${level} para ${sigla}: ${context?.maturidade ?? "maturidade em avaliacao"}, com foco em ${context?.foco ?? "fontes institucionais publicas"}. Nota preliminar baseada em evidencias publicas e sujeita a revisao humana.`;
 }
 
@@ -577,10 +631,8 @@ function buildEvidenceUrls(sigla: string, criterioId: number) {
 function getAgencyEvidenceUrl(sigla: string, criterioId: number) {
   const agency = QUALIDADE_AGENCIAS.find((item) => item.sigla === sigla);
   if (!agency) return "";
-  if (criterioId === 1) return agency.portal_transparencia || agency.site_oficial;
+  // Dimensão 2 = Participação Social → portal de consultas/participação.
   if (criterioId === 2) return agency.portal_consultas_publicas || agency.site_oficial;
-  if (criterioId === 8) return agency.portal_ouvidoria || agency.site_oficial;
-  if (criterioId === 9) return agency.portal_dados_abertos || agency.site_oficial;
   return agency.site_oficial;
 }
 

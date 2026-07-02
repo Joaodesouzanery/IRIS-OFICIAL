@@ -70,6 +70,8 @@ type DashboardCriterion = {
   metodo_coleta: string;
   base_legal: string | null;
   fontes_coleta: string[];
+  niveis?: Record<string, string> | null;
+  subcriterios?: string[] | null;
   score_medio: number;
   ranking: Array<{ agencia_sigla: string; nota: number; nivel: string; posicao: number }>;
   distribuicao_niveis: Record<string, number>;
@@ -118,6 +120,12 @@ type QualityDashboard = {
   premio: Array<{ categoria: { id: string; nome: string }; vencedora: string | null; score: number | null; status: string }>;
   evidencias_resumo: DashboardEvidence[];
   legal: { guardrails: string[]; references: Array<{ label: string; url: string }>; disclaimer: string };
+  programa?: {
+    visao: string;
+    eixos: Array<{ nome: string; descricao: string }>;
+    indicadores_ocde: Array<{ nome: string; valor: number; meta?: number; meta_posicao?: string; referencia?: string }>;
+    indicador_qualidade_normativa_2022: Array<{ agencia: string; imqn: number }>;
+  } | null;
   metricas: {
     agencias: number;
     criterios: number;
@@ -277,7 +285,10 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
           ) : null}
 
           {tab === "criterios" ? (
-            <CriteriaView criteria={criteria} selectedCriterionId={selectedCriterionId} onSelect={setSelectedCriterionId} />
+            <div className="space-y-4">
+              <ProgramaPanel programa={data?.programa ?? null} />
+              <CriteriaView criteria={criteria} selectedCriterionId={selectedCriterionId} onSelect={setSelectedCriterionId} />
+            </div>
           ) : null}
 
           {tab === "diagnostico" ? (
@@ -713,19 +724,75 @@ function SourceCoverage({ data }: { data: QualityDashboard }) {
   );
 }
 
+const NIVEL_LABELS: Record<string, string> = {
+  melhoria_continua: "Melhoria Contínua",
+  gerenciado: "Gerenciado",
+  inicial: "Inicial",
+  inexistente: "Inexistente",
+};
+
+function ProgramaPanel({ programa }: { programa: QualityDashboard["programa"] }) {
+  if (!programa) return null;
+  return (
+    <div className="card">
+      <p className="section-label">Metodologia & Programa — INFRA Competitividade</p>
+      <p className="text-sm text-text-secondary mt-1">{programa.visao}</p>
+      <p className="text-xs text-text-muted mt-1">
+        Matriz de Maturidade da Qualidade Normativa (IMQN): 6 dimensões × 4 níveis, pesos AIR 25 · Part. Social 15 · Estoque 20 · Agenda 15 · Processo 10 · ARR 15.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
+        {programa.eixos.map((eixo) => (
+          <div key={eixo.nome} className="rounded-lg border border-border p-3">
+            <p className="text-sm font-semibold text-text-primary">{eixo.nome}</p>
+            <p className="text-xs text-text-secondary mt-1">{eixo.descricao}</p>
+          </div>
+        ))}
+      </div>
+      <h3 className="text-sm font-semibold text-text-primary mt-4 mb-2">Indicadores OCDE — Product Market Regulation (0 = menos restritivo → 6 = mais restritivo)</h3>
+      <div className="flex flex-wrap gap-2">
+        {programa.indicadores_ocde.map((ind) => (
+          <span key={ind.nome} className="inline-flex items-center gap-1 rounded-full border border-border bg-surface-secondary px-3 py-1 text-xs text-text-primary">
+            <span className="font-semibold">{ind.nome}:</span> {ind.valor}
+            {ind.meta != null ? <span className="text-text-muted">→ meta {ind.meta}{ind.meta_posicao ? ` (${ind.meta_posicao})` : ""}</span> : null}
+            {ind.referencia ? <span className="text-text-muted">· {ind.referencia}</span> : null}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function CriterionDetail({ criterion }: { criterion: DashboardCriterion }) {
   return (
     <div className="space-y-4">
       <div className="card">
         <h2 className="text-sm font-semibold text-text-primary">{criterion.nome}</h2>
         <p className="text-sm text-text-secondary mt-2">{criterion.descricao}</p>
+        {criterion.subcriterios && criterion.subcriterios.length > 0 ? (
+          <p className="text-xs text-text-muted mt-2">Subcritérios: {criterion.subcriterios.join(" · ")}</p>
+        ) : null}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
           <Metric label="Peso" value={`${Math.round(Number(criterion.peso) * 100)}%`} />
-          <Metric label="Media" value={criterion.score_medio.toFixed(1)} />
-          <Metric label="Avancado" value={criterion.distribuicao_niveis.avancado ?? 0} />
+          <Metric label="Media (IMQN)" value={criterion.score_medio.toFixed(1)} />
+          <Metric label="Melhoria Contínua" value={criterion.distribuicao_niveis.melhoria_continua ?? 0} />
+          <Metric label="Gerenciado" value={criterion.distribuicao_niveis.gerenciado ?? 0} />
           <Metric label="Inicial" value={criterion.distribuicao_niveis.inicial ?? 0} />
+          <Metric label="Inexistente" value={criterion.distribuicao_niveis.inexistente ?? 0} />
         </div>
       </div>
+      {criterion.niveis ? (
+        <div className="card">
+          <h3 className="text-sm font-semibold text-text-primary mb-3">Níveis de maturidade (Matriz IMQN)</h3>
+          <div className="space-y-2">
+            {(["melhoria_continua", "gerenciado", "inicial", "inexistente"] as const).map((nivel) => (
+              <div key={nivel} className="grid grid-cols-[130px_1fr] gap-3 items-start">
+                <span className="text-xs font-semibold text-text-primary">{NIVEL_LABELS[nivel]}</span>
+                <span className="text-xs text-text-secondary">{criterion.niveis?.[nivel] ?? "—"}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
       <div className="card">
         <h3 className="text-sm font-semibold text-text-primary mb-3">Ranking do criterio</h3>
         <div className="space-y-2">
@@ -734,7 +801,7 @@ function CriterionDetail({ criterion }: { criterion: DashboardCriterion }) {
               <span className="text-xs font-mono text-text-muted">{item.posicao}</span>
               <span className="text-sm font-semibold text-text-primary">{item.agencia_sigla}</span>
               <div className="h-2 rounded-full bg-bg-hover overflow-hidden">
-                <div className={cn("h-full", item.nivel === "avancado" ? "bg-success" : "bg-brand")} style={{ width: `${Math.min(100, item.nota)}%` }} />
+                <div className={cn("h-full", item.nivel === "melhoria_continua" ? "bg-success" : item.nivel === "inexistente" ? "bg-bg-hover" : "bg-brand")} style={{ width: `${Math.min(100, item.nota)}%` }} />
               </div>
               <span className="text-sm font-mono text-text-primary text-right">{item.nota.toFixed(1)}</span>
             </div>

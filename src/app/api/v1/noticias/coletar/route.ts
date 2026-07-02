@@ -396,7 +396,7 @@ function toNewsSourceConfig(source: {
     agencia_sigla: agencia.sigla,
     fonte: agencia.sigla,
     url: source.url,
-    strategy: source.estrategia === "artesp-news" || source.url.includes("artesp.sp.gov.br/artesp/noticias")
+    strategy: source.estrategia === "artesp-news" || source.url.includes("artesp.sp.gov.br")
       ? "artesp"
       : "govbr",
     tier,
@@ -550,7 +550,9 @@ async function recordCollectionRuns(
     imagens_ausentes: report.images_absent ?? 0,
     imagens_com_falha: report.images_failed ?? 0,
     status: report.status,
-    error_message: report.error ?? null,
+    // Prefixa erros transitórios (rate-limit/render) para o health route não pintar
+    // a fonte de vermelho quando ela já tem notícias recentes (será re-tentada).
+    error_message: report.error ? (report.transient ? `[transitorio] ${report.error}` : report.error) : null,
     ...tele,
   }));
   const { error } = await db.from("regulatory_news_collection_runs").insert(rows);

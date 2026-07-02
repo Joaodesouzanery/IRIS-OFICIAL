@@ -91,11 +91,11 @@ export async function collectDerivedEvidence(
       .select("id", { count: "exact", head: true })
       .eq("agencia_id", agenciaId);
 
-    // ── Crit. 1 — Transparência Ativa: % de votação nominal ──
+    // ── Dim. 5 (Gestão do Processo Normativo) — % de votação nominal ──
     if (totalVotos >= AMOSTRA_MINIMA) {
       const pct = Math.round((nominais / totalVotos) * 1000) / 10;
       evidencias.push({
-        agencia_sigla: ag.sigla, criterio_id: 1,
+        agencia_sigla: ag.sigla, criterio_id: 5,
         titulo: `Votação nominal registrada em ${pct}% dos votos (${ano})`,
         trecho_publico: `${nominais} de ${totalVotos} votos de diretores foram registrados nominalmente, indicador de publicidade do voto colegiado.`,
         metric_key: `transparencia_nominal_${ano}`,
@@ -105,7 +105,7 @@ export async function collectDerivedEvidence(
       warnings.push("amostra de votos insuficiente para % nominal");
     }
 
-    // ── Crit. 5 — Independência: existência de votos divergentes ──
+    // ── Dim. 5 (Gestão do Processo Normativo) — votos divergentes ──
     const delibsComDivergencia = new Set<string>();
     // Reconsulta leve: marca deliberações com voto divergente.
     const { data: divergentes } = await db
@@ -125,10 +125,10 @@ export async function collectDerivedEvidence(
       });
     }
 
-    // ── Crit. 6 — Prestação de Contas / atividade ──
+    // ── Dim. 5 (Gestão do Processo Normativo) — atividade decisória ──
     if (finais.length >= AMOSTRA_MINIMA) {
       evidencias.push({
-        agencia_sigla: ag.sigla, criterio_id: 6,
+        agencia_sigla: ag.sigla, criterio_id: 5,
         titulo: `${finais.length} deliberações finais e ${noticias ?? 0} itens regulatórios monitorados (${ano})`,
         trecho_publico: `Densidade de atividade decisória: ${finais.length} deliberações finais publicadas e ${noticias ?? 0} itens regulatórios monitorados no período.`,
         metric_key: `atividade_volume_${ano}`,
@@ -138,7 +138,7 @@ export async function collectDerivedEvidence(
       warnings.push("amostra de deliberações insuficiente para atividade");
     }
 
-    // ── Crit. 7 — Qualidade Normativa: pontualidade de publicação ──
+    // ── Dim. 5 (Gestão do Processo Normativo) — pontualidade de publicação ──
     const lags = finais
       .filter((d: any) => d.data_reuniao && d.data_publicacao)
       .map((d: any) => Math.round((new Date(d.data_publicacao).getTime() - new Date(d.data_reuniao).getTime()) / 86400000))
@@ -146,7 +146,7 @@ export async function collectDerivedEvidence(
     if (lags.length >= AMOSTRA_MINIMA) {
       const lagMediano = median(lags);
       evidencias.push({
-        agencia_sigla: ag.sigla, criterio_id: 7,
+        agencia_sigla: ag.sigla, criterio_id: 5,
         titulo: `Prazo mediano de publicação: ${lagMediano} dia(s) (${ano})`,
         trecho_publico: `Intervalo mediano entre a reunião e a publicação no Diário Oficial: ${lagMediano} dia(s), em ${lags.length} deliberações com ambas as datas.`,
         metric_key: `pontualidade_publicacao_${ano}`,
@@ -156,12 +156,12 @@ export async function collectDerivedEvidence(
       warnings.push("amostra insuficiente de datas de publicação para pontualidade");
     }
 
-    // ── Crit. 9 — Dados Abertos / cobertura de área regulatória ──
+    // ── Dim. 3 (Gestão de Estoque Regulatório) — cobertura de área ──
     if (finais.length >= AMOSTRA_MINIMA) {
       const classificadas = finais.filter((d: any) => d.area_regulatoria && d.area_regulatoria !== "outros").length;
       const pctArea = Math.round((classificadas / finais.length) * 1000) / 10;
       evidencias.push({
-        agencia_sigla: ag.sigla, criterio_id: 9,
+        agencia_sigla: ag.sigla, criterio_id: 3,
         titulo: `${pctArea}% das deliberações classificadas por área regulatória (${ano})`,
         trecho_publico: `${classificadas} de ${finais.length} deliberações têm área regulatória estruturada (cobertura de metadados).`,
         metric_key: `cobertura_area_${ano}`,

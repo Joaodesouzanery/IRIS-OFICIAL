@@ -100,11 +100,19 @@ export async function GET(req: NextRequest) {
     const lastErrorAt = latestErrorRun?.created_at ?? readString(source.metadata, "news_last_error_at");
     const lastSuccessTime = new Date(lastSuccessAt ?? 0).getTime();
     const lastErrorTime = new Date(lastErrorAt ?? 0).getTime();
+    // Falha transitória (rate-limit/render, prefixo "[transitorio]"): não é alarme
+    // se a fonte tem notícias recentes — será re-tentada na próxima rodada.
+    const errorIsTransient = /^\[transitorio\]/i.test(latestErrorRun?.error_message ?? "");
+    const recent7dCount = rows.filter((item) => {
+      const date = new Date(item.publicado_em ?? item.last_seen_at ?? 0).getTime();
+      return date >= sevenDaysAgo;
+    }).length;
     const hasActiveError = Boolean(
       latestErrorRun?.error_message &&
       Number.isFinite(lastErrorTime) &&
       lastErrorTime > 0 &&
-      (!Number.isFinite(lastSuccessTime) || lastSuccessTime < lastErrorTime),
+      (!Number.isFinite(lastSuccessTime) || lastSuccessTime < lastErrorTime) &&
+      !(errorIsTransient && recent7dCount > 0),
     );
     const officialPublished = readString(source.metadata, "news_latest_official_publicado_em");
     const officialUrl = readString(source.metadata, "news_latest_official_url");

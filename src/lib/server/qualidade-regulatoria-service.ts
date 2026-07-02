@@ -11,10 +11,12 @@ import {
   QUALIDADE_FONTES,
   QUALIDADE_GUARDRAILS,
   QUALIDADE_LEGAL_REFERENCES,
+  INFRA_COMPETITIVIDADE,
   type QualidadeCategoriaPremio,
   type QualidadeDiagnostico,
   type QualidadeEvidencia,
   type QualidadeFonte,
+  type QualidadeNivel,
   type QualidadeNota,
   type QualidadeStatusRevisao,
 } from "@/lib/server/qualidade-regulatoria";
@@ -25,7 +27,7 @@ type AvaliacaoRow = {
   ano: number;
   criterio_id: number;
   nota: number | string;
-  nivel: "avancado" | "em_desenvolvimento" | "inicial";
+  nivel: QualidadeNivel;
   observacao: string | null;
   fonte_avaliacao: string | null;
   status_revisao: QualidadeStatusRevisao;
@@ -77,6 +79,7 @@ export type QualidadeDashboardData = {
     criterios: Record<number, { nota: number; nivel: string; status_revisao: QualidadeStatusRevisao; evidencias: string[] }>;
   }>;
   legal: { guardrails: string[]; references: typeof QUALIDADE_LEGAL_REFERENCES; disclaimer: string };
+  programa: typeof INFRA_COMPETITIVIDADE;
   metricas: {
     agencias: number;
     criterios: number;
@@ -110,7 +113,14 @@ export async function loadQualidadeDashboardData(year: number): Promise<Qualidad
     if (avaliacoesResult.error || !avaliacoesResult.data?.length) return fallback;
 
     const agencias = agenciasResult.error || !agenciasResult.data?.length ? QUALIDADE_AGENCIAS : agenciasResult.data as typeof QUALIDADE_AGENCIAS;
-    const criterios = criteriosResult.error || !criteriosResult.data?.length ? QUALIDADE_CRITERIOS : criteriosResult.data as typeof QUALIDADE_CRITERIOS;
+    // Usa os critérios do DB quando existem, mas mescla a descrição dos NÍVEIS e os
+    // SUBCRITÉRIOS a partir do código (fonte da verdade da Matriz IMQN) — assim a UI
+    // mostra os 4 níveis mesmo que o DB só guarde nome/peso/base_legal.
+    const criteriosDb = criteriosResult.error || !criteriosResult.data?.length ? null : (criteriosResult.data as typeof QUALIDADE_CRITERIOS);
+    const criterios = (criteriosDb ?? QUALIDADE_CRITERIOS).map((criterio) => {
+      const codeMatch = QUALIDADE_CRITERIOS.find((item) => item.id === criterio.id);
+      return { ...criterio, niveis: criterio.niveis ?? codeMatch?.niveis, subcriterios: criterio.subcriterios ?? codeMatch?.subcriterios };
+    }) as typeof QUALIDADE_CRITERIOS;
     const fontes = fontesResult.error || !fontesResult.data?.length ? QUALIDADE_FONTES : fontesResult.data as QualidadeFonte[];
     const categorias = categoriasResult.error || !categoriasResult.data?.length ? QUALIDADE_CATEGORIAS_PREMIO : categoriasResult.data as QualidadeCategoriaPremio[];
     const evidencias = evidenciasResult.error ? fallbackEvidence : evidenciasResult.data as EvidenceRow[];
@@ -221,9 +231,10 @@ function buildDataset(
       score_medio: criterionNotes.length ? Number((criterionNotes.reduce((sum, note) => sum + note.nota, 0) / criterionNotes.length).toFixed(1)) : 0,
       ranking: criterionRanking,
       distribuicao_niveis: {
-        avancado: criterionNotes.filter((note) => note.nivel === "avancado").length,
-        em_desenvolvimento: criterionNotes.filter((note) => note.nivel === "em_desenvolvimento").length,
+        melhoria_continua: criterionNotes.filter((note) => note.nivel === "melhoria_continua").length,
+        gerenciado: criterionNotes.filter((note) => note.nivel === "gerenciado").length,
         inicial: criterionNotes.filter((note) => note.nivel === "inicial").length,
+        inexistente: criterionNotes.filter((note) => note.nivel === "inexistente").length,
       },
       fontes: sources.filter((sourceItem) => criterion.fontes_coleta.includes(sourceItem.id) || sourceItem.criterios_relacionados.includes(criterion.id)),
     };
@@ -253,6 +264,7 @@ function buildDataset(
       references: QUALIDADE_LEGAL_REFERENCES,
       disclaimer: "Ranking institucional baseado em fontes publicas, evidencias oficiais e revisao metodologica. Nao representa avaliacao individual de diretores ou agentes publicos.",
     },
+    programa: INFRA_COMPETITIVIDADE,
     metricas: {
       agencias: ranking.length,
       criterios: criteria.length,

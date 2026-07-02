@@ -82,6 +82,21 @@ export interface NewsSourceCollectReport {
   latest_title?: string | null;
   detail_errors?: string[];
   error?: string;
+  /** Falha transitória (rate-limit 403/429, timeout, render JS). Não deve pintar a
+   *  fonte de vermelho quando ela já tem notícias recentes — será re-tentada. */
+  transient?: boolean;
+}
+
+// Uma falha é "transitória" quando é de rede/limite/instabilidade (não um problema
+// definitivo da fonte). Também tratamos o "sem links" da ARTESP como transitório,
+// pois a listagem é renderizada por JS e o HTML estático varia por IP/rodada.
+export function isTransientCollectionError(error: unknown, source: NewsSourceConfig): boolean {
+  const message = error instanceof Error ? error.message : String(error ?? "");
+  if (/HTTP\s*4(?:03|08|25|29)\b|HTTP\s*5\d\d\b|Timeout|falha_rede|render|Falha ao coletar HTML oficial/i.test(message)) {
+    return true;
+  }
+  if (source.strategy === "artesp" && /Nenhum link de noticia valido/i.test(message)) return true;
+  return false;
 }
 
 export interface RegulatoryNewsCollectResult {
@@ -106,9 +121,10 @@ const IMAGE_TIMEOUT_MS = 8_000;
 // Espaçamento mínimo entre requests ao MESMO host (ex.: www.gov.br). Coletar as
 // ~11 fontes gov.br em rajada de um IP de datacenter (Vercel) leva a rate-limit
 // (403/429) → "algumas fontes falharam"/ANAC vermelha. O throttle serializa por
-// host e elimina a rajada. Ajustável por COLLECTOR_HOST_THROTTLE_MS; default 500ms
-// (margem para o IP de datacenter do Vercel, mais sujeito a rate-limit que um IP residencial).
-const NEWS_HOST_THROTTLE_MS = Number(process.env.COLLECTOR_HOST_THROTTLE_MS ?? "500") || 500;
+// host e elimina a rajada. Ajustável por COLLECTOR_HOST_THROTTLE_MS; default 900ms
+// (subido de 500→900 porque a coleta profunda da Etapa 5 faz mais requisições por
+// fonte; um IP de datacenter do Vercel é mais sujeito a 403/429 que um residencial).
+const NEWS_HOST_THROTTLE_MS = Number(process.env.COLLECTOR_HOST_THROTTLE_MS ?? "900") || 900;
 
 // Nº máximo de páginas da LISTAGEM de notícias a seguir (paginação Plone ?b_start:int=).
 // Antes o gov.br lia só a pág.1 (30 notícias) → notícias além disso se perdiam
@@ -254,6 +270,7 @@ async function collectNewsSource(
         latest_title: null,
         detail_errors: [],
         error: error instanceof Error ? error.message : "Falha desconhecida",
+        transient: isTransientCollectionError(error, source),
       },
     };
   }
