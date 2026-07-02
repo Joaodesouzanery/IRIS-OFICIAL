@@ -9,6 +9,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { classifyMaturidade } from "@/lib/server/qualidade-maturidade-classifier";
+import { collectSiteSignals } from "@/lib/server/qualidade-site-coletor";
+import { QUALIDADE_AGENCIAS } from "@/lib/server/qualidade-regulatoria";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -20,14 +22,21 @@ export async function POST(req: NextRequest) {
   const guard = await requireAdminOrCron(req, "qualidade/classificar");
   if (guard) return guard;
 
-  const body = (await req.json().catch(() => ({}))) as { ano?: number | string };
+  const body = (await req.json().catch(() => ({}))) as { ano?: number | string; agencia_sigla?: string };
   const anoParam = String(body.ano ?? "");
   const ano = ANO_RE.test(anoParam) ? Number(anoParam) : new Date().getFullYear();
+  const agencyFilter = typeof body.agencia_sigla === "string" ? body.agencia_sigla.trim().toUpperCase() : null;
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  const { propostas, resultados } = await classifyMaturidade(db, { ano });
+  // Enriquece com sinais dos SITES: busca o portal de cada agência e detecta as seções
+  // por dimensão (Agenda/AIR/ARR/Consultas/Estoque). Throttled; falha degrada p/ vazio.
+  const agenciasSite = (agencyFilter ? QUALIDADE_AGENCIAS.filter((a) => a.sigla === agencyFilter) : QUALIDADE_AGENCIAS)
+    .map((a) => ({ sigla: a.sigla, site_oficial: a.site_oficial }));
+  const siteSignals = await collectSiteSignals(agenciasSite);
+
+  const { propostas, resultados } = await classifyMaturidade(db, { ano, siteSignals });
 
   // Não clobbra o que já foi revisado por humano: pula (agência|dimensão) já validado/em revisão/manual.
   const { data: existentes } = await db

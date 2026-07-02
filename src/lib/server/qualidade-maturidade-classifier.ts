@@ -17,6 +17,7 @@ import {
   scoreEvidenceRelevance,
   type QualidadeNivel,
 } from "@/lib/server/qualidade-regulatoria";
+import { levelFromSignals, emptySiteSignals, type SiteSignals } from "@/lib/server/qualidade-site-coletor";
 
 // Relevância mínima (0-100) para uma notícia contar como sinal de uma dimensão.
 const RELEVANCE_MIN = 50;
@@ -40,13 +41,6 @@ export interface MaturidadeResultadoAgencia {
   warnings: string[];
 }
 
-function nivelFromKeywordHits(recentHits: number, totalHits: number): QualidadeNivel {
-  if (totalHits <= 0) return "inexistente";
-  if (recentHits >= 8) return "melhoria_continua";
-  if (recentHits >= 3) return "gerenciado";
-  return "inicial";
-}
-
 type NewsRow = { titulo: string | null; resumo: string | null; conteudo: string | null; url: string | null; publicado_em: string | null };
 type DelibRow = { data_reuniao: string | null; data_publicacao: string | null; area_regulatoria: string | null; tipo_documento: string | null; documento_pai_id: string | null };
 
@@ -56,7 +50,7 @@ type DelibRow = { data_reuniao: string | null; data_publicacao: string | null; a
  */
 export async function classifyMaturidade(
   db: any,
-  { ano }: { ano: number },
+  { ano, siteSignals }: { ano: number; siteSignals?: Map<string, SiteSignals> },
 ): Promise<{ propostas: MaturidadeProposta[]; resultados: MaturidadeResultadoAgencia[] }> {
   const propostas: MaturidadeProposta[] = [];
   const resultados: MaturidadeResultadoAgencia[] = [];
@@ -99,6 +93,8 @@ export async function classifyMaturidade(
     const comArea = finais.filter((d) => d.area_regulatoria && d.area_regulatoria !== "outros").length;
     const pctArea = finais.length ? Math.round((comArea / finais.length) * 1000) / 10 : 0;
     const comDatas = finais.filter((d) => d.data_reuniao && d.data_publicacao).length;
+    // Sinais dos sites (seções do portal por dimensão). Vazio quando não coletado/ARTESP.
+    const siteSig = siteSignals?.get(ag.sigla) ?? emptySiteSignals();
 
     let classificadas = 0;
     for (const criterio of QUALIDADE_CRITERIOS) {
@@ -106,26 +102,35 @@ export async function classifyMaturidade(
       let observacao = "";
       let amostra = 0;
       const evidencias: MaturidadeProposta["evidencias"] = [];
+      const dimSig = siteSig[criterio.id] ?? { hasSection: false, sectionUrls: [], termFreq: 0 };
+      const secoesTxt = dimSig.hasSection ? ` Portal publica seção(ões) da dimensão (${dimSig.sectionUrls.length}).` : "";
+      for (const secUrl of dimSig.sectionUrls.slice(0, 2)) {
+        evidencias.push({ titulo: `Seção no portal: ${criterio.nome}`, url: secUrl, publicado_em: null });
+      }
 
       if (criterio.id === 5) {
-        // Gestão do Processo Normativo: sinal a partir das deliberações estruturadas.
+        // Gestão do Processo Normativo: ancorado nas deliberações estruturadas; seção do
+        // portal (processo normativo/regimento) dá bônus quando não há sinal nos dados.
         amostra = finais.length;
-        if (finais.length === 0) {
-          nivel = "inexistente";
-          observacao = "Sem deliberações estruturadas no IRIS — processo normativo não observável nos dados.";
-        } else if (finais.length >= 20 && comDatas >= 10) {
+        if (finais.length >= 20 && comDatas >= 10) {
           nivel = "gerenciado";
           observacao = `Processo normativo observável e estruturado: ${finais.length} deliberações finais, ${comDatas} com datas de reunião e publicação.`;
-        } else {
+        } else if (finais.length > 0) {
           nivel = "inicial";
           observacao = `Há deliberações registradas (${finais.length}), indicando processo normativo em funcionamento; estruturação parcial nos dados.`;
+        } else if (dimSig.hasSection) {
+          nivel = "inicial";
+          observacao = "Processo normativo referenciado no portal, mas sem deliberações estruturadas no IRIS.";
+        } else {
+          nivel = "inexistente";
+          observacao = "Sem deliberações estruturadas no IRIS nem seção de processo normativo no portal.";
         }
       } else {
-        // Dimensões por palavra-chave em notícias (1 AIR, 2 PS, 3 Estoque, 4 Agenda, 6 ARR).
+        // Dimensões 1 AIR, 2 PS, 3 Estoque, 4 Agenda, 6 ARR: combina notícias (IRIS) + seções do site.
         const matches = news.filter((n) => scoreEvidenceRelevance(criterio.id, `${n.titulo ?? ""} ${n.resumo ?? ""} ${n.conteudo ?? ""}`) >= RELEVANCE_MIN);
         const recent = matches.filter((n) => isRecent(n.publicado_em));
         amostra = matches.length;
-        nivel = nivelFromKeywordHits(recent.length, matches.length);
+        nivel = levelFromSignals({ hasSection: dimSig.hasSection, termFreq: dimSig.termFreq, newsHits: matches.length, recentNews: recent.length });
 
         // Dimensão 3 (Estoque) também considera a % de área regulatória classificada.
         if (criterio.id === 3) {
@@ -137,8 +142,10 @@ export async function classifyMaturidade(
           evidencias.push({ titulo: n.titulo ?? "(sem título)", url: n.url, publicado_em: n.publicado_em });
         }
         observacao = matches.length
-          ? `${matches.length} item(ns) de notícia relacionados a "${criterio.nome}" (${recent.length} nos últimos ${RECENCY_MONTHS} meses).`
-          : `Nenhum sinal público relacionado a "${criterio.nome}" nos dados do IRIS.`;
+          ? `${matches.length} item(ns) de notícia relacionados a "${criterio.nome}" (${recent.length} nos últimos ${RECENCY_MONTHS} meses).${secoesTxt}`
+          : (dimSig.hasSection
+            ? `Sem notícias no IRIS, mas o portal publica seção(ões) da dimensão "${criterio.nome}".`
+            : `Nenhum sinal público relacionado a "${criterio.nome}" nos dados do IRIS nem no portal.`);
       }
 
       propostas.push({
