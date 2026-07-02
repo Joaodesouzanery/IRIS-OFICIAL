@@ -99,7 +99,6 @@ type NewsLink = {
   publishedAt?: string | null;
 };
 
-const PRIORITY_IMAGE_REPAIR_AGENCIES = new Set(["ANTT", "ANM", "ARTESP"]);
 const SOURCE_CONCURRENCY = 2;
 const DETAIL_CONCURRENCY = 3;
 const FETCH_TIMEOUT_MS = 12_000;
@@ -115,18 +114,27 @@ const NEWS_HOST_THROTTLE_MS = Number(process.env.COLLECTOR_HOST_THROTTLE_MS ?? "
 // Antes o gov.br lia só a pág.1 (30 notícias) → notícias além disso se perdiam
 // (ex.: artigo da ANA de 20/05/2026 estava na pág.2). Ajustável por NEWS_LISTING_MAX_PAGES.
 const NEWS_LISTING_MAX_PAGES = Math.max(1, Math.min(Number(process.env.NEWS_LISTING_MAX_PAGES ?? "5") || 5, 12));
+// Teto absoluto de páginas da listagem no modo PROFUNDO (cobrir a janela de recência).
+const NEWS_LISTING_MAX_PAGES_HARD = 10;
+// Janela de recência coberta na coleta profunda (dias). O que for mais velho não é
+// buscado (casa com o filtro de exibição e o stale de 120d). Ajustável por env.
+export const NEWS_WINDOW_DAYS = Math.max(7, Math.min(Number(process.env.NEWS_WINDOW_DAYS ?? "45") || 45, 180));
+// Teto de detalhes buscados por fonte por run (limita carga; só artigos NOVOS contam).
+const DEEP_MAX_DETAIL_PER_SOURCE = Math.max(10, Math.min(Number(process.env.NEWS_DEEP_MAX_DETAIL ?? "60") || 60, 150));
+
+export type DeepCollectOptions = { windowDays?: number; knownUrls?: Set<string> };
 
 export async function collectRegulatoryNews(
   sources: NewsSourceConfig[],
   limitPerSource = 24,
   offsetPerSource = 0,
-  options: { mode?: NewsCollectionMode } = {},
+  options: { mode?: NewsCollectionMode; deep?: DeepCollectOptions } = {},
 ): Promise<RegulatoryNewsCollectResult> {
   const mode = options.mode ?? "enrich";
   const sourceResults = await mapWithConcurrency(
     sources,
     SOURCE_CONCURRENCY,
-    (source) => collectNewsSource(source, limitPerSource, offsetPerSource, mode),
+    (source) => collectNewsSource(source, limitPerSource, offsetPerSource, mode, options.deep),
   );
 
   return {
@@ -163,20 +171,37 @@ async function collectNewsSource(
   limitPerSource: number,
   offsetPerSource: number,
   mode: NewsCollectionMode,
+  deep?: DeepCollectOptions,
 ): Promise<{ items: CollectedRegulatoryNews[]; report: NewsSourceCollectReport }> {
   try {
-    const links = await fetchSourceLinks(source, limitPerSource + offsetPerSource);
+    const windowDays = deep?.windowDays;
+    // No modo PROFUNDO descobrimos bem mais links (várias páginas) para cobrir a janela.
+    const discoveryLimit = windowDays ? Math.max(limitPerSource, DEEP_MAX_DETAIL_PER_SOURCE * 3) : (limitPerSource + offsetPerSource);
+    const links = await fetchSourceLinks(source, discoveryLimit);
     if (links.length === 0) {
       throw new Error("Nenhum link de noticia valido encontrado na fonte oficial");
     }
-    const pageLinks = links.slice(offsetPerSource, offsetPerSource + limitPerSource);
+    let pageLinks: NewsLink[];
+    if (windowDays) {
+      // Profundo: pega os links DENTRO da janela (ou sem data) que ainda NÃO estão
+      // no banco (novos), do mais novo ao mais velho, com teto por run. Assim itens
+      // do meio da lista (ex.: ANA de 20/05) entram sem re-baixar a lista inteira.
+      const cutoff = Date.now() - windowDays * 24 * 60 * 60 * 1000;
+      const known = deep?.knownUrls;
+      pageLinks = links
+        .filter((link) => { const t = publishedLinkTime(link); return t === 0 || t >= cutoff; })
+        .filter((link) => !known?.has(link.url))
+        .slice(0, DEEP_MAX_DETAIL_PER_SOURCE);
+    } else {
+      pageLinks = links.slice(offsetPerSource, offsetPerSource + limitPerSource);
+    }
     const detailResults = await mapWithConcurrency(
       pageLinks,
       DETAIL_CONCURRENCY,
       (link) => collectNewsLink(source, link, mode),
     );
     const rawItems = detailResults.map((result) => result.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
-    const items = await repairDuplicateListingImages(source, rawItems, mode);
+    const items = dedupeListingImages(rawItems);
     const freshItems = filterStaleMixedItems(sortNewsItemsByDate(items));
     const detailErrors = detailResults
       .map((result) => result.error)
@@ -255,54 +280,31 @@ async function collectNewsLink(source: NewsSourceConfig, link: NewsLink, mode: N
   };
 }
 
-async function repairDuplicateListingImages(
-  source: NewsSourceConfig,
-  items: CollectedRegulatoryNews[],
-  mode: NewsCollectionMode,
-) {
-  if (mode !== "discover" || !PRIORITY_IMAGE_REPAIR_AGENCIES.has(source.agencia_sigla)) return items;
-  const byImage = new Map<string, CollectedRegulatoryNews[]>();
-  for (const item of items) {
-    if (!item.imagem_url) continue;
-    byImage.set(item.imagem_url, [...(byImage.get(item.imagem_url) ?? []), item]);
-  }
-
-  const duplicateItems = [...byImage.values()]
-    .filter((group) => group.length > 1)
-    .flat()
-    .slice(0, 8);
-  if (!duplicateItems.length) return items;
-
-  const repaired = await mapWithConcurrency(duplicateItems, DETAIL_CONCURRENCY, async (item) => {
-    const detail = await fetchNewsDetail(source, {
-      url: item.url,
-      title: item.titulo,
-      imageUrl: item.imagem_url,
-      publishedAt: item.publicado_em,
-    });
-    if (!detail?.imagem_url) {
-      return {
-        ...item,
-        metadata: {
-          ...item.metadata,
-          image_duplicate_detected: true,
-          image_duplicate_repair: "detail_unavailable",
-        },
-      };
+// Dedup de imagem SEM rede, para TODAS as agências: a mesma imagem repetida em
+// vários artigos (ex.: logo/banner da agência servido como og:image genérica)
+// polui o feed/Newsletter. Mantém a 1ª ocorrência e zera as repetidas (o artigo
+// aparece SEM foto em vez de repetir a mesma imagem). Não faz requisições.
+export function dedupeListingImages(items: CollectedRegulatoryNews[]): CollectedRegulatoryNews[] {
+  const firstArticleByImage = new Map<string, string>();
+  return items.map((item) => {
+    if (!item.imagem_url) return item;
+    const firstUrl = firstArticleByImage.get(item.imagem_url);
+    if (!firstUrl) {
+      firstArticleByImage.set(item.imagem_url, item.url);
+      return item;
     }
+    if (firstUrl === item.url) return item;
     return {
-      ...detail,
+      ...item,
+      imagem_url: null,
       metadata: {
-        ...detail.metadata,
+        ...item.metadata,
         image_duplicate_detected: true,
-        image_duplicate_listing_url: item.imagem_url,
-        image_duplicate_repair: detail.imagem_url === item.imagem_url ? "confirmed_same_official_image" : "replaced_from_detail",
+        image_duplicate_of: firstUrl,
+        image_deduped: true,
       },
     };
   });
-
-  const repairedByUrl = new Map(repaired.map((item) => [item.url, item]));
-  return items.map((item) => repairedByUrl.get(item.url) ?? item);
 }
 
 function sortNewsItemsByDate(items: CollectedRegulatoryNews[]) {
@@ -550,8 +552,10 @@ async function fetchListingPages(source: NewsSourceConfig, limit: number) {
       if (pageUrls.size >= Math.min(8, Math.max(3, Math.ceil(limit / 4)))) break;
     }
   } else {
-    // Paginação Plone (gov.br): segue ?b_start:int=N das PRIMEIRAS páginas. O
-    // b_start é lido do href CRU (normalizeNewsUrl remove esse parâmetro).
+    // Paginação Plone (gov.br): descobre o PASSO (menor b_start = tamanho do lote)
+    // e monta as páginas 2..N (b_start = passo, 2*passo, ...). O nº de páginas
+    // escala com o `limit` pedido (modo profundo cobre a janela de recência).
+    // O b_start é lido do href CRU (normalizeNewsUrl remove esse parâmetro).
     const byBstart = new Map<number, string>();
     for (const anchor of extractAnchors(firstHtml, source.url)) {
       let u: URL;
@@ -563,8 +567,12 @@ async function fetchListingPages(source: NewsSourceConfig, limit: number) {
       const n = Number(m[1]);
       if (n > 0 && !byBstart.has(n)) byBstart.set(n, u.toString());
     }
-    for (const [, url] of [...byBstart.entries()].sort((a, b) => a[0] - b[0]).slice(0, NEWS_LISTING_MAX_PAGES - 1)) {
-      pageUrls.add(url);
+    const discovered = [...byBstart.keys()].sort((a, b) => a - b);
+    const step = discovered[0] && discovered[0] > 0 ? discovered[0] : 30;
+    const pagesWanted = Math.max(NEWS_LISTING_MAX_PAGES, Math.min(NEWS_LISTING_MAX_PAGES_HARD, Math.ceil(limit / Math.max(20, step))));
+    for (let i = 1; i < pagesWanted; i++) {
+      const b = step * i;
+      pageUrls.add(byBstart.get(b) ?? `${source.url}${source.url.includes("?") ? "&" : "?"}b_start:int=${b}`);
     }
   }
 

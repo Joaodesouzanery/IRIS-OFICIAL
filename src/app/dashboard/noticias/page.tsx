@@ -257,7 +257,7 @@ export default function NoticiasPage() {
   const { demoEnabled, runtimeStatus } = useDataSyncContext();
   const [agencia, setAgencia] = useState("");
   const [status, setStatus] = useState<RegulatoryNewsStatus | "">("");
-  const [periodo, setPeriodo] = useState<PeriodFilter>("7d");
+  const [periodo, setPeriodo] = useState<PeriodFilter>("month");
   const [customFrom, setCustomFrom] = useState("");
   const [customTo, setCustomTo] = useState("");
   const [search, setSearch] = useState("");
@@ -359,8 +359,14 @@ export default function NoticiasPage() {
     mutationFn: (url: string) =>
       api.post<{ ok: boolean; agencia_detectada: string; agencia_cadastrada: boolean }>("/noticias/adicionar", { url }),
     onSuccess: (res) => {
+      // Mostra "Todas recentes" para a notícia adicionada aparecer na hora, mesmo
+      // que seja antiga (fora do filtro de data atual). Antes a mensagem prometia
+      // "já aparece" mas o filtro Mensal/7d podia escondê-la.
+      setPeriodo("all");
+      setAgencia("");
+      setStatus("");
       setAddUrlFeedback(
-        `Notícia adicionada (${res.agencia_detectada}${res.agencia_cadastrada ? "" : " — agência não cadastrada"}). Já aparece no feed.`,
+        `Notícia adicionada (${res.agencia_detectada}${res.agencia_cadastrada ? "" : " — agência não cadastrada"}). Mostrando em "Todas recentes".`,
       );
       setAddUrl("");
       queryClient.invalidateQueries({ queryKey: ["noticias"] });

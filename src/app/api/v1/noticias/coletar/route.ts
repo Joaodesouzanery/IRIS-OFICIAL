@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { collectRegulatoryNews, type NewsCollectionMode, type NewsSourceConfig } from "@/lib/server/news-collector";
+import { collectRegulatoryNews, NEWS_WINDOW_DAYS, type DeepCollectOptions, type NewsCollectionMode, type NewsSourceConfig } from "@/lib/server/news-collector";
 import { ensureFederalNewsSources, getNewsProfile, getNewsTier } from "@/lib/server/news-sources";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { drainFetchStats, type FetchStats } from "@/lib/server/resilient-fetch";
@@ -116,9 +116,24 @@ async function collect(req: NextRequest) {
   const collectStartedAt = Date.now();
   drainFetchStats();
   drainHeadlessOutcomes();
+
+  // Coleta PROFUNDA (cobre a janela de recência de cada fonte): monta o conjunto de
+  // URLs já conhecidas dentro da janela para NÃO re-baixar o que já temos — só os
+  // artigos NOVOS ganham detail-fetch. Assim "trazer tudo" fica eficiente.
+  const windowCutoffIso = new Date(Date.now() - NEWS_WINDOW_DAYS * 24 * 60 * 60 * 1000).toISOString();
+  const { data: knownRows } = await db
+    .from("regulatory_news")
+    .select("url")
+    .gte("publicado_em", windowCutoffIso)
+    .limit(8000);
+  const deep: DeepCollectOptions = {
+    windowDays: NEWS_WINDOW_DAYS,
+    knownUrls: new Set((knownRows ?? []).map((r) => r.url as string)),
+  };
+
   const result = automatic
-    ? await collectAutomaticBatches(sources, sourceRows, limit, mode)
-    : await collectRegulatoryNews(sources, limit, offset, { mode });
+    ? await collectAutomaticBatches(sources, sourceRows, limit, mode, deep)
+    : await collectRegulatoryNews(sources, limit, offset, { mode, deep });
   const telemetry: CollectionTelemetry = {
     durationMs: Date.now() - collectStartedAt,
     fetch: drainFetchStats(),
@@ -198,6 +213,26 @@ async function collect(req: NextRequest) {
     if (item.conteudo) row.conteudo = item.conteudo;
     return row;
   });
+
+  // Suprime imagem GENÉRICA (logo/banner da agência usado como og:image em muitos
+  // artigos): se a mesma imagem aparece em ≥3 artigos (banco + lote), não é foto
+  // real → grava sem foto, evitando a mesma imagem repetida no feed/Newsletter.
+  const batchImageUrls = [...new Set(rows.map((r) => r.imagem_url).filter((u): u is string => typeof u === "string" && u.length > 0))];
+  if (batchImageUrls.length > 0) {
+    const { data: existingImgs } = await db.from("regulatory_news").select("imagem_url").in("imagem_url", batchImageUrls);
+    const count = new Map<string, number>();
+    for (const e of existingImgs ?? []) if (e.imagem_url) count.set(e.imagem_url, (count.get(e.imagem_url) ?? 0) + 1);
+    for (const r of rows) if (typeof r.imagem_url === "string") count.set(r.imagem_url, (count.get(r.imagem_url) ?? 0) + 1);
+    const generic = new Set([...count.entries()].filter(([, n]) => n >= 3).map(([u]) => u));
+    if (generic.size > 0) {
+      for (const r of rows) {
+        if (typeof r.imagem_url === "string" && generic.has(r.imagem_url)) {
+          r.imagem_url = null;
+          r.metadata = { ...(r.metadata as Record<string, unknown>), image_generic_suppressed: true };
+        }
+      }
+    }
+  }
 
   if (rows.length === 0) {
     await recordCollectionRuns(db, result.source_reports, automatic, telemetry);
@@ -384,6 +419,7 @@ async function collectAutomaticBatches(
   configured: Map<string, { metadata?: Record<string, unknown> | null }>,
   limit: number,
   mode: NewsCollectionMode,
+  deep?: DeepCollectOptions,
 ) {
   const coreSources = sources.filter((source) => (source.tier ?? "core") === "core");
   const expandedSources = selectExpandedSources(
@@ -401,8 +437,9 @@ async function collectAutomaticBatches(
     const rawOffset = metadata && typeof metadata.news_next_offset === "number" ? metadata.news_next_offset : 0;
     const sourceOffset = Number.isFinite(rawOffset) && rawOffset >= 0 ? rawOffset : 0;
     const sourceLimit = source.tier === "expanded" ? Math.min(5, limit) : limit;
-    const freshBatch = await collectRegulatoryNews([source], sourceLimit, 0, { mode });
-    const backlogBatch = mode === "enrich" && sourceOffset > 0
+    const freshBatch = await collectRegulatoryNews([source], sourceLimit, 0, { mode, deep });
+    // No modo profundo a janela já cobre o backlog → não precisa varredura por offset.
+    const backlogBatch = !deep && mode === "enrich" && sourceOffset > 0
       ? await collectRegulatoryNews([source], sourceLimit, sourceOffset, { mode })
       : { items: [], source_reports: [] };
     batches.push({

@@ -160,13 +160,26 @@ body{margin:0;color:${t.text};font-family:'Inter',sans-serif;}
 @media print{html,body{background:${t.page}!important;}.newsletter-page{margin:0!important;}*,*::before,*::after{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;}}`;
 }
 
+// Não repetir a MESMA imagem no mesmo documento: a 2ª+ ocorrência vira sem-foto.
+// (Ex.: várias notícias da mesma agência que usam o mesmo banner/logo como og:image.)
+function dedupeDocumentImages(noticias: RegulatoryNews[]): RegulatoryNews[] {
+  const seen = new Set<string>();
+  return noticias.map((n) => {
+    if (!n.imagem_url) return n;
+    if (seen.has(n.imagem_url)) return { ...n, imagem_url: null };
+    seen.add(n.imagem_url);
+    return n;
+  });
+}
+
 export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
-  const version = input.template_version ?? "";
+  const deduped: NewsletterDocumentInput = { ...input, noticias: dedupeDocumentImages(input.noticias) };
+  const version = deduped.template_version ?? "";
   const isV2 = version.endsWith("_v2");
-  if (input.documento_tipo === "minuto_regulacao") {
-    return buildMinutoRegulacaoHtml(input, isV2);
+  if (deduped.documento_tipo === "minuto_regulacao") {
+    return buildMinutoRegulacaoHtml(deduped, isV2);
   }
-  return buildNewsletterRegulatorioHtml(input, isV2 ? NEWSLETTER_THEME_LIGHT : NEWSLETTER_THEME_DARK);
+  return buildNewsletterRegulatorioHtml(deduped, isV2 ? NEWSLETTER_THEME_LIGHT : NEWSLETTER_THEME_DARK);
 }
 
 function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput, theme: NewsletterTheme = NEWSLETTER_THEME_DARK) {
