@@ -88,14 +88,19 @@ export interface NewsSourceCollectReport {
 }
 
 // Uma falha é "transitória" quando é de rede/limite/instabilidade (não um problema
-// definitivo da fonte). Também tratamos o "sem links" da ARTESP como transitório,
-// pois a listagem é renderizada por JS e o HTML estático varia por IP/rodada.
-export function isTransientCollectionError(error: unknown, source: NewsSourceConfig): boolean {
+// definitivo da fonte). Cobre rate-limit/timeout/render E os sintomas de página
+// DEGRADADA do gov.br: 200 mas "magra" (0 links / detalhe sem título/data), servida
+// de forma intermitente ao IP de datacenter. O health route só rebaixa (não pinta de
+// vermelho) quando a fonte também tem notícias recentes — logo não esconde fonte morta.
+export function isTransientCollectionError(error: unknown, _source?: NewsSourceConfig): boolean {
   const message = error instanceof Error ? error.message : String(error ?? "");
   if (/HTTP\s*4(?:03|08|25|29)\b|HTTP\s*5\d\d\b|Timeout|falha_rede|render|Falha ao coletar HTML oficial/i.test(message)) {
     return true;
   }
-  if (source.strategy === "artesp" && /Nenhum link de noticia valido/i.test(message)) return true;
+  // Página degradada / listagem-detalhe vazia (intermitente) — vale para gov.br e ARTESP.
+  if (/Nenhum link de noticia valido|Nenhuma noticia valida foi extraida|Detalhe indispon[ií]vel e listagem sem/i.test(message)) {
+    return true;
+  }
   return false;
 }
 
@@ -193,7 +198,14 @@ async function collectNewsSource(
     const windowDays = deep?.windowDays;
     // No modo PROFUNDO descobrimos bem mais links (várias páginas) para cobrir a janela.
     const discoveryLimit = windowDays ? Math.max(limitPerSource, DEEP_MAX_DETAIL_PER_SOURCE * 3) : (limitPerSource + offsetPerSource);
-    const links = await fetchSourceLinks(source, discoveryLimit);
+    let links = await fetchSourceLinks(source, discoveryLimit);
+    // O gov.br às vezes serve uma página DEGRADADA (HTTP 200 mas "magra", ~53KB, 0 links)
+    // ao IP de datacenter (soft rate-limit). É intermitente → uma 2ª tentativa após uma
+    // pausa costuma trazer a listagem completa. Só desiste (throw transitório) se persistir.
+    if (links.length === 0 && source.strategy === "govbr") {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      links = await fetchSourceLinks(source, discoveryLimit);
+    }
     if (links.length === 0) {
       throw new Error("Nenhum link de noticia valido encontrado na fonte oficial");
     }
@@ -245,6 +257,8 @@ async function collectNewsSource(
     };
     if (freshItems.length === 0) {
       report.error = detailErrors[0] ?? "Nenhuma noticia valida foi extraida dos links encontrados";
+      // Detalhe/listagem vazios costumam ser página degradada (200 magro) → transitório.
+      report.transient = isTransientCollectionError(new Error(report.error), source);
     }
     return { items: freshItems, report };
   } catch (error) {

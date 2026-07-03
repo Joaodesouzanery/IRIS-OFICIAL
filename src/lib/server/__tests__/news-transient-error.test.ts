@@ -13,12 +13,17 @@ describe("isTransientCollectionError — não pintar vermelho por falha transit�
     expect(isTransientCollectionError(new Error("Timeout (12000ms) ao coletar ..."), govbr)).toBe(true);
     expect(isTransientCollectionError(new Error("HTTP 503 ao coletar ..."), govbr)).toBe(true);
   });
-  it("ARTESP sem links (render JS) é transitório; gov.br sem links não é", () => {
+  it("página degradada (200 magro): 'sem links' é transitório para gov.br E ARTESP", () => {
     const msg = new Error("Nenhum link de noticia valido encontrado na fonte oficial");
     expect(isTransientCollectionError(msg, artesp)).toBe(true);
-    expect(isTransientCollectionError(msg, govbr)).toBe(false);
+    expect(isTransientCollectionError(msg, govbr)).toBe(true); // Etapa 9: gov.br também
+  });
+  it("detalhe/listagem vazios (página magra) são transitórios", () => {
+    expect(isTransientCollectionError(new Error("Nenhuma noticia valida foi extraida dos links encontrados"), govbr)).toBe(true);
+    expect(isTransientCollectionError(new Error("Detalhe indisponivel e listagem sem titulo ou data publicavel: https://x"), govbr)).toBe(true);
   });
   it("erro definitivo (404) não é transitório", () => {
     expect(isTransientCollectionError(new Error("HTTP 404 ao coletar ..."), govbr)).toBe(false);
+    expect(isTransientCollectionError(new Error("Não é uma agência cadastrada"), govbr)).toBe(false);
   });
 });
