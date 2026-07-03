@@ -1,0 +1,90 @@
+/**
+ * Auto-confirmação de deliberações de ALTA CONFIANÇA (Etapa 10-A).
+ *
+ * Hoje `votos` só é gravado no confirm manual → matches fracos/escaneados ficam pendentes
+ * ("deliberações sem voto"). Este gate seleciona apenas os documentos INEQUÍVOCOS para
+ * confirmar automaticamente (reusando 100% a lógica do /upload/confirm); qualquer dúvida
+ * permanece na fila manual. É conservador de propósito (erra para a revisão).
+ */
+
+export const AUTO_CONFIRM_MIN_CONFIDENCE = 0.9;
+export const AUTO_CONFIRM_MIN_CHARS_PER_PAGE = 50; // abaixo disso = provável escaneado
+const FINAL_TIPOS = new Set(["deliberacao", "ata", "resolucao", "portaria"]);
+
+type Suggestion = { diretor_id?: string | null; needs_review?: boolean } & Record<string, unknown>;
+type AtaItem = { votos_sugeridos?: Suggestion[] } & Record<string, unknown>;
+
+export interface AutoConfirmDoc {
+  id?: string;
+  status?: string | null;
+  tipo_documento?: string | null;
+  extraction_confidence?: number | null;
+  chars_per_page?: number | null;
+  is_duplicate?: boolean | null;
+  agencia_id?: string | null;
+  ata_items?: AtaItem[] | null;
+  campos_detectados?: { preview?: Record<string, any> } | null;
+}
+
+function suggestionsConfident(list: Suggestion[] | undefined | null): boolean {
+  const arr = list ?? [];
+  // Toda sugestão presente precisa ter match a um diretor cadastrado e sem needs_review.
+  return arr.every((v) => Boolean(v?.diretor_id) && v?.needs_review !== true);
+}
+
+/**
+ * Decide se o documento pode ser confirmado automaticamente. Retorna o motivo quando não.
+ */
+export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: string } {
+  const preview = doc?.campos_detectados?.preview ?? {};
+  const fields: Record<string, any> = preview.fields ?? {};
+  const tipo = String(fields.tipo_documento ?? doc.tipo_documento ?? "");
+
+  if (doc.status && doc.status !== "review_pending") return { ok: false, reason: `status=${doc.status}` };
+  if (!FINAL_TIPOS.has(tipo)) return { ok: false, reason: `tipo não-final (${tipo || "?"})` };
+  if (fields.import_counts_as_final === false || preview.import_counts_as_final === false) {
+    return { ok: false, reason: "não conta como final" };
+  }
+  if (Number(doc.extraction_confidence ?? 0) < AUTO_CONFIRM_MIN_CONFIDENCE) {
+    return { ok: false, reason: `confiança ${Number(doc.extraction_confidence ?? 0).toFixed(2)} < ${AUTO_CONFIRM_MIN_CONFIDENCE}` };
+  }
+  if (Number(doc.chars_per_page ?? 0) < AUTO_CONFIRM_MIN_CHARS_PER_PAGE) {
+    return { ok: false, reason: "provável escaneado (baixa densidade de texto)" };
+  }
+  if (doc.is_duplicate) return { ok: false, reason: "possível duplicata" };
+  if (!doc.agencia_id) return { ok: false, reason: "sem agência detectada" };
+
+  const ataItems = (doc.ata_items ?? preview.ata_items ?? []) as AtaItem[];
+  if (tipo === "ata") {
+    if (!ataItems.length) return { ok: false, reason: "ata sem itens" };
+    const anyVote = ataItems.some((it) => (it.votos_sugeridos ?? []).length > 0);
+    if (!anyVote) return { ok: false, reason: "ata sem nenhum voto sugerido" };
+    const allConfident = ataItems.every((it) => suggestionsConfident(it.votos_sugeridos));
+    if (!allConfident) return { ok: false, reason: "há item com voto não-confiável/sem match" };
+  } else {
+    const votos = (fields.votos_sugeridos ?? []) as Suggestion[];
+    if (!votos.length) return { ok: false, reason: "sem votos sugeridos" };
+    if (!suggestionsConfident(votos)) return { ok: false, reason: "voto sem match confiável (≥0.85)" };
+  }
+
+  return { ok: true, reason: "alta confiança" };
+}
+
+/**
+ * Monta o payload ConfirmDelib (o mesmo que a UI envia) a partir do documento armazenado.
+ */
+export function buildConfirmDelibFromDoc(doc: AutoConfirmDoc): Record<string, unknown> {
+  const preview = doc?.campos_detectados?.preview ?? {};
+  const fields: Record<string, any> = preview.fields ?? {};
+  return {
+    ...fields,
+    documento_id: doc.id ?? null,
+    agencia_id: doc.agencia_id ?? preview.agencia_id_detected ?? null,
+    filename: preview.filename ?? `${doc.id ?? "documento"}.pdf`,
+    tipo_documento: fields.tipo_documento ?? doc.tipo_documento ?? "deliberacao",
+    ata_items: doc.ata_items ?? preview.ata_items ?? undefined,
+    extraction_confidence: doc.extraction_confidence ?? preview.confidence ?? null,
+    import_counts_as_final: fields.import_counts_as_final ?? preview.import_counts_as_final ?? true,
+    extraction_raw: preview.extraction_raw ?? null,
+  };
+}

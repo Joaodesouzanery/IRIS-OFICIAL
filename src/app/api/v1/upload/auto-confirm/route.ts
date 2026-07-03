@@ -1,0 +1,91 @@
+/**
+ * POST /api/v1/upload/auto-confirm
+ * Confirma automaticamente as deliberações de ALTA CONFIANÇA que hoje ficariam na fila
+ * manual (reduz o gargalo "deliberações sem voto"). REUSA 100% o handler do /upload/confirm
+ * (nenhuma lógica de gravação duplicada): seleciona os docs `review_pending` que passam no
+ * gate conservador (canAutoConfirm) e envia o mesmo payload da UI ao confirm. Casos ambíguos
+ * permanecem na fila. Admin. Idempotente (o confirm faz upsert protegido dos votos).
+ */
+
+import { NextRequest, NextResponse } from "next/server";
+import { isDemo } from "@/lib/server/is-demo";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { canAutoConfirm, buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
+import { POST as confirmPOST } from "../confirm/route";
+
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+export const maxDuration = 60;
+
+export async function POST(req: NextRequest) {
+  if (isDemo() || isDemoRequest(req)) {
+    return NextResponse.json({ error: "Auto-confirmação indisponível em modo DEMO." }, { status: 403 });
+  }
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
+
+  const body = (await req.json().catch(() => ({}))) as { limit?: number; agencia_id?: string };
+  const limit = Math.min(100, Math.max(1, Number(body.limit ?? 50)));
+
+  const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+  const db = createSupabaseServerClient();
+
+  let query = db
+    .from("documentos_regulatorios")
+    .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, campos_detectados")
+    .eq("status", "review_pending")
+    .order("extraction_confidence", { ascending: false, nullsFirst: false })
+    .limit(limit);
+  if (body.agencia_id) query = query.eq("agencia_id", body.agencia_id);
+
+  const { data: docs, error } = await query;
+  if (error) return NextResponse.json({ error: "Falha ao listar documentos para auto-confirmação." }, { status: 500 });
+
+  const elegiveis: any[] = [];
+  const pulados: Array<{ id: string; reason: string }> = [];
+  for (const doc of docs ?? []) {
+    const verdict = canAutoConfirm(doc as any);
+    if (verdict.ok) elegiveis.push(doc);
+    else pulados.push({ id: (doc as any).id, reason: verdict.reason });
+  }
+
+  if (elegiveis.length === 0) {
+    return NextResponse.json({
+      analisados: (docs ?? []).length,
+      elegiveis: 0,
+      pulados: pulados.length,
+      exemplos_pulados: pulados.slice(0, 20),
+      legal_notice: "Nenhum documento passou no gate conservador de auto-confirmação nesta rodada.",
+    });
+  }
+
+  // REUSA o handler do confirm: mesmo payload da UI + Authorization encaminhado.
+  const deliberacoes = elegiveis.map((doc) => buildConfirmDelibFromDoc(doc));
+  const syntheticReq = new NextRequest(new URL("/api/v1/upload/confirm", req.url), {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      authorization: req.headers.get("authorization") ?? "",
+    },
+    body: JSON.stringify({ agencia_id: body.agencia_id ?? null, deliberacoes }),
+  });
+
+  let confirm: unknown = null;
+  try {
+    const confirmRes = await confirmPOST(syntheticReq);
+    confirm = await confirmRes.json().catch(() => ({}));
+  } catch (err) {
+    console.error("[upload/auto-confirm] Falha ao confirmar em lote:", err);
+    return NextResponse.json({ error: "Falha ao confirmar em lote.", elegiveis: elegiveis.length }, { status: 502 });
+  }
+
+  return NextResponse.json({
+    analisados: (docs ?? []).length,
+    elegiveis: elegiveis.length,
+    pulados: pulados.length,
+    auto_confirmados_ids: elegiveis.map((d) => d.id),
+    confirm,
+    exemplos_pulados: pulados.slice(0, 20),
+    legal_notice: "Auto-confirmação CONSERVADORA (doc final + confiança ≥0.9 + não-escaneado + votos com match ≥0.85). Ambíguos ficam na fila manual.",
+  });
+}
