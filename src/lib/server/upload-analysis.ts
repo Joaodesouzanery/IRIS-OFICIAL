@@ -5,6 +5,7 @@ import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/l
 import { extractFields, calcConfidence, extractItemVotes } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
+import { isOcrConfigured } from "@/lib/server/ocr";
 
 // Avisos INFORMATIVOS (não são problema de qualidade): não devem manter o preview
 // eternamente em "low_confidence". Casam pelos trechos LIMPos das mensagens (que
@@ -294,8 +295,13 @@ export async function analyzeUploadPdf(input: {
   // a confiança SEM descartar o registro (sem OCR ainda). O descarte total (text<50)
   // já foi tratado acima; aqui é o caso intermediário.
   if (extraction.charsPerPage > 0 && extraction.charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && extraction.pageCount > 1) {
-    documentWarnings.push("PDF com baixa densidade de texto (provável documento escaneado/sem OCR) — revisar manualmente.");
+    const semOcr = isOcrConfigured()
+      ? "escaneado e o OCR não recuperou texto suficiente"
+      : "provável documento escaneado (OCR não configurado — defina OCR_SPACE_API_KEY)";
+    documentWarnings.push(`PDF com baixa densidade de texto (${semOcr}) — revisar manualmente.`);
     confidence = Math.min(confidence, 0.1);
+  } else if (extraction.ocrApplied) {
+    documentWarnings.push("Texto recuperado via OCR externo — confira os campos extraídos.");
   }
 
   const warnings = documentWarnings;

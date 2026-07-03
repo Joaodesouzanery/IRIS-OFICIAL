@@ -5,6 +5,7 @@
  */
 
 import pdfParse from "pdf-parse";
+import { extractTextViaOcr, isOcrConfigured } from "@/lib/server/ocr";
 
 // ─── Limpeza de encoding ──────────────────────────────────────────────────
 const ENCODING_FIXES: [RegExp, string][] = [
@@ -123,6 +124,7 @@ export interface PdfExtractionResult {
   text: string;
   pageCount: number;
   charsPerPage: number;
+  ocrApplied?: boolean;
 }
 
 export async function extractPdfText(
@@ -165,11 +167,22 @@ export async function extractPdfText(
   text = normalizeWhitespace(text);
   text = removeRepeatedLines(text); // remove cabeçalhos/rodapés repetidos por página
 
-  const charsPerPage = pageCount > 0 ? Math.floor(text.length / pageCount) : 0;
+  let charsPerPage = pageCount > 0 ? Math.floor(text.length / pageCount) : 0;
 
-  // Se menos de 80 chars/página, o PDF provavelmente é scaneado (imagem)
-  // Neste caso retornamos o texto que temos (sem OCR — futura melhoria)
-  return { text, pageCount, charsPerPage };
+  // Se menos de 80 chars/página, o PDF provavelmente é escaneado (imagem). Tentamos
+  // OCR externo (OCR.space) SE configurado (OCR_SPACE_API_KEY); senão, retornamos o
+  // que temos (documento segue sinalizado como escaneado na análise, com aviso).
+  let ocrApplied = false;
+  if (charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && isOcrConfigured()) {
+    const ocrText = await extractTextViaOcr(buffer);
+    if (ocrText && ocrText.length > Math.max(200, text.length * 1.5)) {
+      text = removeRepeatedLines(normalizeWhitespace(removeSeiHeadersFooters(fixEncoding(ocrText))));
+      charsPerPage = pageCount > 0 ? Math.floor(text.length / pageCount) : text.length;
+      ocrApplied = true;
+    }
+  }
+
+  return { text, pageCount, charsPerPage, ocrApplied };
 }
 
 // ─── Hash SHA-256 para deduplicação ──────────────────────────────────────
