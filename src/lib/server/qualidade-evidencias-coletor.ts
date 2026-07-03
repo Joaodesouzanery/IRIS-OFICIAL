@@ -76,11 +76,14 @@ export async function collectDerivedEvidence(
       .limit(5000);
     const finais = (delibs ?? []).filter((d: any) => isFinal(d.tipo_documento, d.documento_pai_id));
 
-    // Votos da agência (via join) para % nominal e divergência.
+    // Votos da agência (via join) para % nominal e divergência. Filtro DEFENSIVO por
+    // tipo final: hoje o write-path já só grava voto em doc final, mas isto blinda a
+    // métrica contra qualquer voto que venha a existir em pauta/voto_individual/apoio.
     const { data: votos } = await db
       .from("votos")
-      .select("is_nominal, is_divergente, deliberacoes!inner(agencia_id)")
+      .select("is_nominal, is_divergente, deliberacoes!inner(agencia_id, tipo_documento)")
       .eq("deliberacoes.agencia_id", agenciaId)
+      .not("deliberacoes.tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
       .limit(20000);
     const totalVotos = (votos ?? []).length;
     const nominais = (votos ?? []).filter((v: any) => v.is_nominal).length;
@@ -110,8 +113,9 @@ export async function collectDerivedEvidence(
     // Reconsulta leve: marca deliberações com voto divergente.
     const { data: divergentes } = await db
       .from("votos")
-      .select("deliberacao_id, is_divergente, deliberacoes!inner(agencia_id)")
+      .select("deliberacao_id, is_divergente, deliberacoes!inner(agencia_id, tipo_documento)")
       .eq("deliberacoes.agencia_id", agenciaId)
+      .not("deliberacoes.tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
       .eq("is_divergente", true)
       .limit(20000);
     for (const v of divergentes ?? []) delibsComDivergencia.add((v as any).deliberacao_id);

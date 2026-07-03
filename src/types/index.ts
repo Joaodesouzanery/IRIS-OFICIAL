@@ -920,7 +920,7 @@ export interface RuntimeStatus {
 
 // Coleta segura ANTT 2026
 export type AnttReuniaoTipo = "ordinaria" | "extraordinaria" | "eletronica";
-export type DocumentoColetadoTipo = "pauta" | "voto" | "deliberacao" | "outro";
+export type DocumentoColetadoTipo = "pauta" | "voto" | "ata" | "deliberacao" | "outro";
 export type DocumentoColetadoStatus =
   | "coletado"
   | "validado"

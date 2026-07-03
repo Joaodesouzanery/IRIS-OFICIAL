@@ -18,7 +18,7 @@ const MAX_PDF_BYTES = 50 * 1024 * 1024;
 const FETCH_TIMEOUT_MS = 20_000;
 
 export type AnttMeetingType = "ordinaria" | "extraordinaria" | "eletronica";
-export type AnttDocumentType = "pauta" | "voto" | "deliberacao" | "outro";
+export type AnttDocumentType = "pauta" | "voto" | "ata" | "deliberacao" | "outro";
 
 export interface AnttDocumentLink {
   tipo: AnttDocumentType;
@@ -99,7 +99,11 @@ export async function fetchAntt2026MonitoringItems(
 
     for (const doc of meeting.documentos) {
       items.push({
-        tipo: doc.tipo === "pauta" ? "pauta" : doc.tipo === "voto" ? "voto" : "documento",
+        tipo: doc.tipo === "pauta" ? "pauta"
+          : doc.tipo === "voto" ? "voto"
+          : doc.tipo === "ata" ? "ata"
+          : doc.tipo === "deliberacao" ? "deliberacao"
+          : "documento",
         titulo: `${doc.titulo} - ${meeting.titulo}`.slice(0, 500),
         url_item: doc.url,
         reuniao: meeting.titulo,
@@ -399,9 +403,12 @@ export function parseAnttMeetingPage(
 
   for (const anchor of pageAnchors) {
     const docType = classifyDocumentLink(anchor.text, anchor.href);
-    if (docType !== "pauta") continue;
+    // Mantém os documentos DECISÓRIOS da página da reunião: pauta, ata e deliberação.
+    // (voto costuma vir dos processos, abaixo.) Antes só "pauta" passava → as ~28 atas
+    // da ANTT, onde ficam as decisões colegiadas, eram descartadas.
+    if (docType !== "pauta" && docType !== "ata" && docType !== "deliberacao") continue;
     documentos.push({
-      tipo: "pauta",
+      tipo: docType,
       titulo: cleanText(anchor.text).slice(0, 500),
       url: anchor.href,
     });
@@ -415,7 +422,7 @@ export function parseAnttMeetingPage(
   }
 
   const uniqueDocs = dedupeBy(
-    documentos.filter((doc) => doc.tipo === "pauta" || doc.tipo === "voto"),
+    documentos.filter((doc) => ["pauta", "voto", "ata", "deliberacao"].includes(doc.tipo)),
     (doc) => `${doc.tipo}|${doc.url}|${doc.processo?.processo ?? ""}`,
   );
 
@@ -712,6 +719,7 @@ function classifyDocumentLink(text: string, href: string): AnttDocumentType {
   if (/\bpauta\b/.test(value)) return "pauta";
   if (/\bvoto\b/.test(value) || value.includes("declaracao de voto")) return "voto";
   if (value.includes("deliberacao")) return "deliberacao";
+  if (/\bata(?:s)?\b/.test(value)) return "ata"; // as atas trazem as decisões colegiadas
   return "outro";
 }
 
