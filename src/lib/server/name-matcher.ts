@@ -6,7 +6,7 @@
 
 // ─── Similaridade de strings (Jaro-Winkler simplificado) ─────────────────
 // Implementação sem biblioteca — substitui rapidfuzz/token_sort_ratio
-function tokenSortRatio(a: string, b: string): number {
+export function tokenSortRatio(a: string, b: string): number {
   const tokensA = a
     .toLowerCase()
     .normalize("NFD")

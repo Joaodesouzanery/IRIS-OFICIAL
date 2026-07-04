@@ -49,6 +49,9 @@
     },
     "src/app/api/v1/deliberacoes/votos-diretores/backfill/route.ts": {
       "maxDuration": 120
+    },
+    "src/app/api/v1/deliberacoes/enqueue-pdfs/route.ts": {
+      "maxDuration": 120
     }
   },
   "crons": [

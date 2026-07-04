@@ -3,6 +3,7 @@ import type { MonitoramentoTipoItem } from "@/types";
 import { fetchAntt2026MonitoringItems } from "@/lib/server/antt-2026-collector";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
 import { tryRenderHtmlFallback } from "@/lib/server/headless";
+import { budgetRetries, hasBudget } from "@/lib/server/time-budget";
 
 // Teto de páginas seguidas por site na paginação ANM/ARTESP. O fim real é
 // detectado quando uma página não traz nenhum item novo; este teto só limita o
@@ -35,6 +36,10 @@ export interface MonitoringFetchResult {
   contentHash: string;
   needsHeadless: boolean;
   items: DiscoveredMonitoringItem[];
+  // Orçamento de tempo esgotou no meio: itens coletados até ali são válidos,
+  // o restante fica para a próxima rodada (retomada barata via dedup/skip-set).
+  truncated?: boolean;
+  skippedKnown?: number;
 }
 
 const DOC_LABEL_RE =
@@ -45,14 +50,17 @@ const REUNIAO_RE = /(\d{1,4})\s*(?:a|o|ª|º)?\s*reuniao[^<\n\r]*/i;
 
 export async function fetchMonitoringSite(
   site: MonitoringSiteInput,
-  options: { maxPages?: number; maxMeetings?: number } = {},
+  options: { maxPages?: number; maxMeetings?: number; deadlineAt?: number; skipMeetingUrls?: Set<string> } = {},
 ): Promise<MonitoringFetchResult> {
+  const { deadlineAt } = options;
   if (site.estrategia === "antt-2026") {
-    const items = await fetchAntt2026MonitoringItems(options);
+    const { items, truncated, skippedKnown } = await fetchAntt2026MonitoringItems(options);
     return {
       contentHash: sha256(JSON.stringify(items.map((item) => item.hash_item).sort())),
       needsHeadless: false,
       items,
+      truncated,
+      skippedKnown,
     };
   }
 
@@ -80,8 +88,15 @@ export async function fetchMonitoringSite(
   let firstHtml = "";
   let usedHeadless = false;
   let pageCount = 0;
+  let truncated = false;
 
   while (pageUrl && pageCount < maxPages && !visited.has(pageUrl)) {
+    // Página nova só com saldo (fetch 12s + retries): parada graciosa preserva
+    // o coletado; sem isso o SIGKILL do Vercel descarta a rodada inteira.
+    if (pageCount > 0 && !hasBudget(deadlineAt, 15_000)) {
+      truncated = true;
+      break;
+    }
     visited.add(pageUrl);
     pageCount += 1;
 
@@ -94,6 +109,7 @@ export async function fetchMonitoringSite(
           Accept: "text/html,application/xhtml+xml",
           "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
         },
+        retries: budgetRetries(deadlineAt, 12_000),
       });
     } catch (err) {
       if (pageCount === 1) throw err; // 1ª página falhou → erro real do site (sobe para o runner)
@@ -106,7 +122,7 @@ export async function fetchMonitoringSite(
     // 0 itens) ao IP de datacenter — mesmo sintoma tratado nas notícias (Etapa 9).
     // Uma 2ª tentativa após pausa costuma trazer a página completa; só então o
     // fallback headless (que renderizaria a mesma página magra) faz sentido.
-    if (items.length === 0 && pageCount === 1) {
+    if (items.length === 0 && pageCount === 1 && hasBudget(deadlineAt, 20_000)) {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       try {
         const retried = await resilientFetchText(pageUrl, {
@@ -115,6 +131,7 @@ export async function fetchMonitoringSite(
             Accept: "text/html,application/xhtml+xml",
             "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
           },
+          retries: budgetRetries(deadlineAt, 12_000),
         });
         const retriedItems = parseFor(retried, pageUrl);
         if (retriedItems.length > 0) {
@@ -129,7 +146,9 @@ export async function fetchMonitoringSite(
     // Fallback headless quando o estático não rende NENHUM doc (ARTESP/ANM atrás
     // de iframe/JS). Só para html-static (evita acionar render nas fontes de
     // notícia) e só adota o resultado se ele realmente trouxer itens.
-    if (items.length === 0 && pageCount === 1 && isDocStatic) {
+    // Reserva 35s (launch do chromium + navegação 25s): sem saldo, pula — o
+    // rodízio por ultimo_check garante que a fonte abre a próxima rodada.
+    if (items.length === 0 && pageCount === 1 && isDocStatic && hasBudget(deadlineAt, 35_000)) {
       const rendered = await tryRenderHtmlFallback(pageUrl, site.nome);
       if (rendered) {
         const headlessItems = parseFor(rendered, pageUrl);
@@ -168,6 +187,7 @@ export async function fetchMonitoringSite(
       items.length === 0 && !usedHeadless &&
       (!hasAnchors || /javascript is disabled|requires javascript|__next|webpackJsonp/i.test(firstHtml)),
     items,
+    truncated,
   };
 }
 

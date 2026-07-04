@@ -993,7 +993,34 @@ export interface AnttCollectResponse {
   documentos_baixados: number;
   documentos_duplicados: number;
   documentos_rejeitados: number;
+  /** Orçamento de tempo esgotou: coleta parou graciosamente; re-rodar continua de onde parou. */
+  parcial?: boolean;
   errors: string[];
+}
+
+// Backfill das deliberações colegiadas 2026 (botão "Buscar todas de 2026" + cron semanal).
+// parcial=true ⇒ orçamento de tempo esgotou; re-chamar continua de onde parou (skip-set).
+export interface DeliberacoesBackfillResponse {
+  ano: number;
+  parcial: boolean;
+  fontes_processadas: number;
+  fontes_puladas: number;
+  novos_itens: number;
+  documentos_enfileirados: number;
+  reunioes_puladas_conhecidas: number;
+  duracao_ms: number;
+  resultados: Array<{
+    site_id: string;
+    site_nome: string;
+    status: string;
+    itens_encontrados: number;
+    novos_itens: number;
+    documentos_enfileirados: number;
+    parcial?: boolean;
+    error?: string;
+  }>;
+  demo?: boolean;
+  message?: string;
 }
 
 export interface AnttPreviewDocumento {

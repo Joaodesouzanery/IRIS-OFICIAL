@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import {
   ANTT_2026_SOURCE_URL,
+  buildAnttMeetingSkipSet,
   collectAntt2026Documents,
   discoverAntt2026Meetings,
   type AnttMeeting,
@@ -22,7 +23,7 @@ export async function GET(req: NextRequest) {
   const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 60, 1, 80);
 
   try {
-    const meetings = await discoverAntt2026Meetings({ maxPages, maxMeetings });
+    const { meetings } = await discoverAntt2026Meetings({ maxPages, maxMeetings, deadlineAt: Date.now() + 88_000 });
     return NextResponse.json(buildPreviewResponse(meetings, maxPages, maxMeetings));
   } catch (error) {
     return NextResponse.json(
@@ -42,10 +43,14 @@ export async function POST(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
   const maxPages = parseBoundedInt(searchParams.get("max_pages"), MAX_PAGES_RE, 12, 1, 20);
   const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 120, 1, 200);
+  // Orçamento: 120 reuniões × throttle 800ms ≈ 96s+ já estourava o maxDuration
+  // (SIGKILL) em dias de portal lento. Para graciosamente e retoma via skip-set.
+  const deadlineAt = Date.now() + 88_000;
+  const refresh = searchParams.get("refresh") === "1";
 
   try {
     if (isDemo() || dryRun) {
-      const meetings = await discoverAntt2026Meetings({ maxPages, maxMeetings });
+      const { meetings } = await discoverAntt2026Meetings({ maxPages, maxMeetings, deadlineAt });
       const response = buildPreviewResponse(meetings, maxPages, maxMeetings);
       response.errors = isDemo() ? ["Modo demo: coleta validada sem persistir no Supabase."] : [];
       return NextResponse.json(response);
@@ -61,6 +66,16 @@ export async function POST(req: NextRequest) {
       .eq("url", "https://portal.antt.gov.br/web/guest/reunioes-da-diretoria")
       .maybeSingle();
 
+    if (site?.id) {
+      // Run "running" >10min = SIGKILL de rodada anterior; sem isso vira órfão eterno.
+      await db.from("monitoramento_runs").update({
+        status: "error",
+        finished_at: new Date().toISOString(),
+        error_message: "interrompido (timeout da plataforma) — marcado por limpeza oportunista",
+      }).eq("site_id", site.id).eq("status", "running")
+        .lt("started_at", new Date(Date.now() - 10 * 60_000).toISOString());
+    }
+
     const { data: run } = site?.id
       ? await db.from("monitoramento_runs").insert({ site_id: site.id, status: "running", trigger_type: "scheduled" }).select("id").single()
       : { data: null };
@@ -69,7 +84,8 @@ export async function POST(req: NextRequest) {
     drainFetchStats();
     drainHeadlessOutcomes();
 
-    const result = await collectAntt2026Documents(db, { maxPages, maxMeetings });
+    const skipMeetingUrls = refresh ? undefined : await buildAnttMeetingSkipSet(db, { siteId: site?.id ?? null });
+    const result = await collectAntt2026Documents(db, { maxPages, maxMeetings, deadlineAt, skipMeetingUrls });
 
     if (run?.id) {
       const fetchStats = drainFetchStats();

@@ -12,6 +12,8 @@ import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName, isLikelyPersonName } from "@/lib/server/name-matcher";
 import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
+import { ensureReuniao } from "@/lib/server/reunioes";
+import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -456,32 +458,65 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             diretoresList,
           );
 
+        // Reunião materializada: garante a linha canônica e liga as deliberações
+        // (degrada para null enquanto a migration não for aplicada).
+        const reuniaoId = await ensureReuniao(db, {
+          agenciaId: effectiveAgenciaId,
+          dataReuniao: d.data_reuniao,
+          numeroReuniao: d.numero_reuniao,
+          tipoReuniao: d.tipo_reuniao,
+          source: "upload-confirm",
+        });
+
         if (d.tipo_documento === "ata" && rawConfirm.ata_items && rawConfirm.ata_items.length > 0) {
           const documentPrefix = internalAnttDocumentPrefix(d);
           const documentLabel = documentPrefix === "ATA" ? "Ata" : "Pauta";
-          const { data: ataPai, error: ataErr } = await db
-            .from("deliberacoes")
-            .insert({
-              numero_deliberacao: d.numero_reuniao ? `${documentPrefix}-${d.numero_reuniao}` : d.numero_deliberacao,
-              numero_reuniao: d.numero_reuniao,
-              reuniao_ordinaria: d.reuniao_ordinaria,
-              tipo_reuniao: d.tipo_reuniao,
-              tipo_documento: "ata",
-              assunto: `${documentLabel} da ${d.numero_reuniao ?? ""}ª Reunião - ${rawConfirm.ata_items.length} processos`,
-              procedencia: d.procedencia,
-              pauta_interna: false,
-              data_reuniao: d.data_reuniao,
-              data_publicacao: d.data_publicacao,
-              agencia_id: effectiveAgenciaId,
-              auto_classified: true,
-              extraction_confidence: d.extraction_confidence,
-              upload_job_id: attachment.upload_job_id,
-              raw_extraction: withAttachmentRaw(d.extraction_raw, attachment),
-            })
-            .select("id")
-            .single();
+          const ataNumero = d.numero_reuniao ? `${documentPrefix}-${d.numero_reuniao}` : d.numero_deliberacao;
 
-          if (ataErr || !ataPai) {
+          // Dedup: a MESMA ata confirmada 2× reusa a ata-mãe (e os itens abaixo),
+          // em vez de duplicar tudo e contar em dobro nas métricas.
+          const ataExistente = await findDeliberacaoExistente(db, {
+            agenciaId: effectiveAgenciaId,
+            numeroDeliberacao: ataNumero,
+            dataReuniao: d.data_reuniao,
+          });
+          let ataPai: { id: string } | null = ataExistente ? { id: ataExistente.id } : null;
+          if (ataExistente) {
+            await enrichDeliberacaoExistente(db, ataExistente, {
+              dataReuniao: d.data_reuniao,
+              reuniaoId,
+            });
+          } else {
+            const { data: inserted, error: ataErr } = await db
+              .from("deliberacoes")
+              .insert({
+                numero_deliberacao: ataNumero,
+                numero_reuniao: d.numero_reuniao,
+                reuniao_ordinaria: d.reuniao_ordinaria,
+                tipo_reuniao: d.tipo_reuniao,
+                tipo_documento: "ata",
+                assunto: `${documentLabel} da ${d.numero_reuniao ?? ""}ª Reunião - ${rawConfirm.ata_items.length} processos`,
+                procedencia: d.procedencia,
+                pauta_interna: false,
+                data_reuniao: d.data_reuniao,
+                data_publicacao: d.data_publicacao,
+                agencia_id: effectiveAgenciaId,
+                ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
+                auto_classified: true,
+                extraction_confidence: d.extraction_confidence,
+                upload_job_id: attachment.upload_job_id,
+                raw_extraction: withAttachmentRaw(d.extraction_raw, attachment),
+              })
+              .select("id")
+              .single();
+            if (ataErr || !inserted) {
+              results.push({ filename: d.filename, status: "error", error: "Erro ao inserir ata/pauta" });
+              continue;
+            }
+            ataPai = inserted as { id: string };
+          }
+
+          if (!ataPai) {
             results.push({ filename: d.filename, status: "error", error: "Erro ao inserir ata/pauta" });
             continue;
           }
@@ -503,10 +538,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               cache: empresaCache,
               setor: item.microtema,
             });
-            const { data: child } = await db
+            // Dedup por item: reimportação reusa a deliberação (votos upsertam idempotente).
+            const itemNumero = d.numero_reuniao ? `${documentPrefix}-${d.numero_reuniao}-${item.item_numero}` : null;
+            const itemExistente = await findDeliberacaoExistente(db, {
+              agenciaId: effectiveAgenciaId,
+              numeroDeliberacao: itemNumero,
+              processo: item.processo,
+              dataReuniao: d.data_reuniao,
+            });
+            if (itemExistente) {
+              await enrichDeliberacaoExistente(db, itemExistente, {
+                resultado: item.resultado,
+                dataReuniao: d.data_reuniao,
+                reuniaoId,
+              });
+            }
+            const { data: child } = itemExistente
+              ? { data: { id: itemExistente.id } }
+              : await db
               .from("deliberacoes")
               .insert({
-                numero_deliberacao: d.numero_reuniao ? `${documentPrefix}-${d.numero_reuniao}-${item.item_numero}` : null,
+                numero_deliberacao: itemNumero,
                 numero_reuniao: d.numero_reuniao,
                 reuniao_ordinaria: d.reuniao_ordinaria,
                 tipo_reuniao: d.tipo_reuniao,
@@ -524,6 +576,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 data_reuniao: d.data_reuniao,
                 data_publicacao: d.data_publicacao,
                 agencia_id: effectiveAgenciaId,
+                ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
                 auto_classified: true,
                 extraction_confidence: item.processo ? 0.8 : 0.4,
                 resumo_pleito: item.decisao?.slice(0, 2000) ?? null,
@@ -592,7 +645,24 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           setor: d.microtema,
         });
 
-        const { data: delib, error: deliberacaoErr } = await db
+        // Dedup: a MESMA deliberação (mesmo número no mesmo ano, ou mesmo
+        // processo na mesma data) vinda de outro documento REUSA a existente.
+        const delibExistente = await findDeliberacaoExistente(db, {
+          agenciaId: effectiveAgenciaId,
+          numeroDeliberacao: d.numero_deliberacao,
+          processo: d.processo,
+          dataReuniao: d.data_reuniao,
+        });
+        if (delibExistente) {
+          await enrichDeliberacaoExistente(db, delibExistente, {
+            resultado: d.resultado,
+            dataReuniao: d.data_reuniao,
+            reuniaoId,
+          });
+        }
+        const { data: delib, error: deliberacaoErr } = delibExistente
+          ? { data: { id: delibExistente.id }, error: null }
+          : await db
           .from("deliberacoes")
           .insert({
             numero_deliberacao: d.numero_deliberacao,
@@ -614,6 +684,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             data_reuniao: d.data_reuniao,
             data_publicacao: d.data_publicacao,
             agencia_id: effectiveAgenciaId,
+            ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
             auto_classified: true,
             extraction_confidence: d.extraction_confidence,
             resumo_pleito: d.resumo_pleito,
@@ -687,7 +758,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
 
         await markDocumentReviewed(db, d.documento_id, "confirmed", delib.id as string);
-        results.push({ filename: d.filename, status: "created", deliberacao_id: delib.id as string, documento_id: d.documento_id ?? null });
+        results.push({
+          filename: d.filename,
+          status: "created",
+          deliberacao_id: delib.id as string,
+          documento_id: d.documento_id ?? null,
+          ...(delibExistente ? { message: "Deliberação já existia — reaproveitada (dedup); votos atualizados sem dupla contagem." } : {}),
+        });
       } catch (err) {
         console.error("[upload/confirm] Erro inesperado ao processar deliberação:", err);
         results.push({ filename: d.filename, status: "error", error: "Erro interno ao processar deliberação" });

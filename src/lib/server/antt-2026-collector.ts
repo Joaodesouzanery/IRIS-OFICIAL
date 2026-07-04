@@ -3,6 +3,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import type { AnttCollectResponse } from "@/types";
 import type { DiscoveredMonitoringItem } from "@/lib/server/monitoring";
 import { awaitHostSlot } from "@/lib/server/resilient-fetch";
+import { hasBudget, msLeft } from "@/lib/server/time-budget";
 
 // Espaçamento mínimo entre requests ao portal da ANTT (evita 429/403). fetchSecure
 // é preservado (whitelist de host, redirect manual, limites de bytes) — só ganha throttle.
@@ -56,12 +57,31 @@ export interface AnttMeeting {
 interface DiscoverOptions {
   maxPages?: number;
   maxMeetings?: number;
+  // Orçamento de tempo (epoch ms): nenhuma página nova é buscada sem saldo —
+  // sem isso o crawl (até 200 reuniões × throttle 800ms) estoura o maxDuration
+  // do Vercel e morre em SIGKILL sem gravar nada.
+  deadlineAt?: number;
+  // Reuniões cuja página NÃO precisa ser re-buscada (já têm ata/deliberação
+  // capturada). É o que torna o re-run do backfill barato/retomável.
+  skipMeetingUrls?: Set<string>;
 }
 
 interface CollectOptions extends DiscoverOptions {
   agenciaId?: string | null;
   storageBucket?: string;
 }
+
+export interface AnttDiscoveryResult {
+  meetings: AnttMeeting[];
+  truncated: boolean;
+  skippedKnown: number;
+  pagesFetched: number;
+  meetingPagesFetched: number;
+}
+
+// Reserva por unidade de trabalho: 1 fetch ANTT no pior caso ≈ throttle 0,8s +
+// timeout 20s + persistência — abaixo disso não se inicia unidade nova.
+const ANTT_UNIT_RESERVE_MS = 25_000;
 
 interface DownloadedPdf {
   buffer: Buffer;
@@ -71,15 +91,13 @@ interface DownloadedPdf {
 }
 
 export async function fetchAntt2026MonitoringItems(
-  options: { maxPages?: number; maxMeetings?: number } = {},
-): Promise<DiscoveredMonitoringItem[]> {
+  options: DiscoverOptions = {},
+): Promise<{ items: DiscoveredMonitoringItem[]; truncated: boolean; skippedKnown: number }> {
   // Sem teto baixo: o limitador real é o filtro de 2026 (a descoberta para de
   // paginar quando a listagem deixa de citar 2026). Os 3 págs/40 reuniões antigos
   // cortavam reuniões de 2026 em silêncio. Mantém-se YEAR=2026.
-  const meetings = await discoverAntt2026Meetings({
-    maxPages: options.maxPages,
-    maxMeetings: options.maxMeetings,
-  });
+  const discovery = await discoverAntt2026Meetings(options);
+  const meetings = discovery.meetings;
   const items: DiscoveredMonitoringItem[] = [];
 
   for (const meeting of meetings) {
@@ -120,7 +138,11 @@ export async function fetchAntt2026MonitoringItems(
     }
   }
 
-  return dedupeBy(items, (item) => item.hash_item);
+  return {
+    items: dedupeBy(items, (item) => item.hash_item),
+    truncated: discovery.truncated,
+    skippedKnown: discovery.skippedKnown,
+  };
 }
 
 export async function collectAntt2026Documents(
@@ -129,6 +151,7 @@ export async function collectAntt2026Documents(
 ): Promise<AnttCollectResponse> {
   const bucket = options.storageBucket ?? "pdfs";
   const agenciaId = options.agenciaId ?? await ensureAnttAgency(db);
+  const { deadlineAt } = options;
   const response: AnttCollectResponse = {
     reunioes_encontradas: 0,
     reunioes_salvas: 0,
@@ -137,13 +160,20 @@ export async function collectAntt2026Documents(
     documentos_baixados: 0,
     documentos_duplicados: 0,
     documentos_rejeitados: 0,
+    parcial: false,
     errors: [],
   };
 
-  const meetings = await discoverAntt2026Meetings(options);
+  const discovery = await discoverAntt2026Meetings(options);
+  const meetings = discovery.meetings;
   response.reunioes_encontradas = meetings.length;
+  response.parcial = discovery.truncated;
 
   for (const meeting of meetings) {
+    if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
+      response.parcial = true;
+      break;
+    }
     let reuniaoId: string | null = null;
     try {
       const { data, error } = await db
@@ -213,6 +243,10 @@ export async function collectAntt2026Documents(
 
     for (const doc of meeting.documentos) {
       response.documentos_encontrados++;
+      if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
+        response.parcial = true;
+        break;
+      }
       const existing = await findExistingDocument(db, doc.url);
       if (existing) {
         response.documentos_duplicados++;
@@ -220,7 +254,7 @@ export async function collectAntt2026Documents(
       }
 
       try {
-        const downloaded = await downloadPdfSecure(doc.url);
+        const downloaded = await downloadPdfSecure(doc.url, deadlineAt);
         const existingHash = await findExistingDocumentByHash(db, downloaded.hash);
         if (existingHash) {
           response.documentos_duplicados++;
@@ -342,19 +376,27 @@ export async function collectAntt2026Documents(
 
 export async function discoverAntt2026Meetings(
   options: DiscoverOptions = {},
-): Promise<AnttMeeting[]> {
+): Promise<AnttDiscoveryResult> {
   const maxPages = Math.max(1, Math.min(options.maxPages ?? 12, 20));
   const maxMeetings = Math.max(1, Math.min(options.maxMeetings ?? 120, 200));
+  const { deadlineAt, skipMeetingUrls } = options;
   const visited = new Set<string>();
   const listingQueue = [ANTT_2026_SOURCE_URL];
   const meetingLinks = new Map<string, { title: string; sourceUrl: string; sourceHtml: string }>();
+  let truncated = false;
+  let skippedKnown = 0;
+  let meetingPagesFetched = 0;
 
   while (listingQueue.length > 0 && visited.size < maxPages && meetingLinks.size < maxMeetings) {
+    if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
+      truncated = true;
+      break;
+    }
     const listingUrl = listingQueue.shift()!;
     if (visited.has(listingUrl)) continue;
     visited.add(listingUrl);
 
-    const html = await fetchHtmlSecure(listingUrl);
+    const html = await fetchHtmlSecure(listingUrl, deadlineAt);
     const normalized = normalizeText(stripTags(html));
     if (!normalized.includes("2026") && visited.size > 1) break;
 
@@ -374,14 +416,67 @@ export async function discoverAntt2026Meetings(
 
   const meetings: AnttMeeting[] = [];
   for (const [url, listing] of meetingLinks) {
-    const html = await fetchHtmlSecure(url);
+    if (skipMeetingUrls?.has(url)) {
+      skippedKnown++;
+      continue;
+    }
+    if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
+      truncated = true;
+      break;
+    }
+    const html = await fetchHtmlSecure(url, deadlineAt);
+    meetingPagesFetched++;
     const meeting = parseAnttMeetingPage(html, url, listing.title, listing.sourceUrl, listing.sourceHtml);
     if (meeting && meeting.data_inicio?.startsWith(`${YEAR}-`)) {
       meetings.push(meeting);
     }
   }
 
-  return meetings.sort((a, b) => (b.data_inicio ?? "").localeCompare(a.data_inicio ?? ""));
+  return {
+    meetings: meetings.sort((a, b) => (b.data_inicio ?? "").localeCompare(a.data_inicio ?? "")),
+    truncated,
+    skippedKnown,
+    pagesFetched: visited.size,
+    meetingPagesFetched,
+  };
+}
+
+// Reuniões com ata/deliberação JÁ capturada não precisam de re-fetch da página.
+// União de duas fontes baratas: monitoramento_itens (caminho do backfill/check,
+// via metadata.meeting_url) e o staging do cron dedicado (documentos_coletados ⋈
+// antt_reunioes_coletadas). Falha ⇒ Set vazio (degrada p/ crawl completo).
+export async function buildAnttMeetingSkipSet(
+  db: SupabaseClient,
+  opts: { siteId?: string | null } = {},
+): Promise<Set<string>> {
+  const skip = new Set<string>();
+  try {
+    let itensQuery = db
+      .from("monitoramento_itens")
+      .select("metadata")
+      .in("tipo", ["ata", "deliberacao"])
+      .limit(5000);
+    if (opts.siteId) itensQuery = itensQuery.eq("site_id", opts.siteId);
+    const { data: itens } = await itensQuery;
+    for (const item of itens ?? []) {
+      const meetingUrl = (item as { metadata?: { meeting_url?: unknown } }).metadata?.meeting_url;
+      if (typeof meetingUrl === "string" && meetingUrl) skip.add(meetingUrl);
+    }
+
+    const { data: coletados } = await db
+      .from("documentos_coletados")
+      .select("tipo, reuniao:antt_reunioes_coletadas!inner(url_reuniao)")
+      .in("tipo", ["ata", "deliberacao"])
+      .limit(5000);
+    for (const doc of coletados ?? []) {
+      const reuniao = (doc as { reuniao?: { url_reuniao?: unknown } | { url_reuniao?: unknown }[] }).reuniao;
+      const urlReuniao = Array.isArray(reuniao) ? reuniao[0]?.url_reuniao : reuniao?.url_reuniao;
+      if (typeof urlReuniao === "string" && urlReuniao) skip.add(urlReuniao);
+    }
+  } catch (error) {
+    console.warn(`[antt-2026] skip-set indisponível (${messageOf(error)}) — crawl completo.`);
+  }
+  return skip;
 }
 
 export function parseAnttMeetingPage(
@@ -504,21 +599,21 @@ async function findExistingProcess(db: SupabaseClient, reuniaoId: string, proces
   return data;
 }
 
-async function fetchHtmlSecure(url: string): Promise<string> {
+async function fetchHtmlSecure(url: string, deadlineAt?: number): Promise<string> {
   const res = await fetchSecureWithRetry(url, {
     accept: "text/html,application/xhtml+xml",
     allowedHosts: ALLOWED_HOSTS,
     maxBytes: MAX_HTML_BYTES,
-  });
+  }, 2, deadlineAt);
   return res.buffer.toString("utf8");
 }
 
-async function downloadPdfSecure(url: string): Promise<DownloadedPdf> {
+async function downloadPdfSecure(url: string, deadlineAt?: number): Promise<DownloadedPdf> {
   const res = await fetchSecureWithRetry(url, {
     accept: "application/pdf",
     allowedHosts: PDF_HOSTS,
     maxBytes: MAX_PDF_BYTES,
-  });
+  }, 2, deadlineAt);
 
   if (!isPdfBuffer(res.buffer)) {
     throw new Error("arquivo rejeitado: magic bytes de PDF ausentes");
@@ -539,9 +634,13 @@ async function fetchSecureWithRetry(
   rawUrl: string,
   options: { accept: string; allowedHosts: Set<string>; maxBytes: number },
   attempts = 2,
+  deadlineAt?: number,
 ): Promise<{ buffer: Buffer; contentType: string | null; finalUrl: string }> {
   let lastError: unknown;
   for (let i = 0; i < attempts; i++) {
+    // Sem saldo para uma tentativa inteira (timeout 20s + margem), não a inicia:
+    // a cadeia completa de retries (3×20s + backoff) sozinha estouraria o maxDuration.
+    if (i > 0 && msLeft(deadlineAt) < FETCH_TIMEOUT_MS + 5_000) throw lastError;
     try {
       return await fetchSecure(rawUrl, options);
     } catch (error) {

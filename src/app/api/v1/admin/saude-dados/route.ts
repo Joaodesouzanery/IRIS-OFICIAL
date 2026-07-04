@@ -1,17 +1,18 @@
 /**
  * GET /api/v1/admin/saude-dados
- * Painel de observabilidade (P0) da esteira coleta → extração → votos.
- * Responde, com fatos da base real, duas perguntas que antes ficavam no escuro:
+ * Observabilidade da esteira coleta → extração → votos, SEM painel no front-end
+ * (removido a pedido do usuário — Etapa 14): consulta manual por admin (sessão)
+ * ou automação via CRON_SECRET. Responde:
  *   1) a base já tem deliberações/votos coletados? (ou está ligada-porém-vazia)
- *   2) onde a esteira está vazando? (fila de revisão, falhas, deliberações sem voto)
+ *   2) onde a esteira está vazando? (fila de revisão, falhas, alertas)
  *
- * Somente leitura: agrega contagens via Supabase. Protegido pelo middleware
- * (todo GET /api/v1/* exige admin); em modo DEMO devolve um retrato fictício.
+ * Somente leitura: agrega contagens via Supabase; em modo DEMO devolve um retrato fictício.
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { findDiretorDuplicatas } from "@/lib/server/diretor-duplicatas";
 
 export const dynamic = "force-dynamic";
 
@@ -131,6 +132,11 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(SAUDE_DADOS_DEMO);
   }
 
+  // Defesa em profundidade: o middleware já gate-a GET /api/v1/*, mas sem o
+  // painel no front esta rota vive só para admin/cron — o guard torna isso explícito.
+  const guard = await requireAdminOrCron(req);
+  if (guard) return guard;
+
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
@@ -148,7 +154,7 @@ export async function GET(req: NextRequest) {
     fontesDocsRes,
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
-    db.from("deliberacoes").select("id, agencia_id, extraction_confidence").limit(20000),
+    db.from("deliberacoes").select("id, agencia_id, extraction_confidence, numero_deliberacao, processo, data_reuniao, tipo_documento").limit(20000),
     db.from("votos").select("deliberacao_id, is_nominal").limit(50000),
     db.from("documentos_regulatorios").select("agencia_id, status").limit(20000),
     db.from("diretor_candidatos").select("id", { count: "exact", head: true }).eq("review_status", "pendente"),
@@ -176,7 +182,15 @@ export async function GET(req: NextRequest) {
   }
 
   const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
-  const delibs: Array<{ id: string; agencia_id: string | null; extraction_confidence: number | null }> = delibsRes.data ?? [];
+  const delibs: Array<{
+    id: string;
+    agencia_id: string | null;
+    extraction_confidence: number | null;
+    numero_deliberacao?: string | null;
+    processo?: string | null;
+    data_reuniao?: string | null;
+    tipo_documento?: string | null;
+  }> = delibsRes.data ?? [];
   const votos: Array<{ deliberacao_id: string; is_nominal: boolean }> = votosRes.data ?? [];
   const docs: Array<{ agencia_id: string | null; status: string }> = docsRes.data ?? [];
 
@@ -286,6 +300,37 @@ export async function GET(req: NextRequest) {
   }
   for (const ex of (execucoesRes.data ?? [])) {
     if (ex.status === "error") { alertas.push(`Última coleta de ${ex.dominio} falhou: ${ex.error_message ?? "erro"}.`); break; }
+  }
+
+  // Deliberações em dobro (mesma agência+número no mesmo ano, entre finais; ou
+  // mesmo processo na mesma data) — legado anterior ao dedup da importação.
+  const tiposApoio = new Set(["pauta", "voto_individual", "documento_apoio"]);
+  const gruposDelib = new Map<string, number>();
+  for (const d of delibs) {
+    if (tiposApoio.has(d.tipo_documento ?? "")) continue;
+    const ano = d.data_reuniao ? d.data_reuniao.slice(0, 4) : "?";
+    const key = d.numero_deliberacao
+      ? `n|${d.agencia_id}|${d.numero_deliberacao}|${ano}`
+      : d.processo && d.data_reuniao
+        ? `p|${d.agencia_id}|${d.processo}|${d.data_reuniao}`
+        : null;
+    if (!key) continue;
+    gruposDelib.set(key, (gruposDelib.get(key) ?? 0) + 1);
+  }
+  const delibsEmDobro = [...gruposDelib.values()].filter((n) => n > 1).reduce((sum, n) => sum + n - 1, 0);
+  if (delibsEmDobro > 0) {
+    alertas.push(`${delibsEmDobro} deliberação(ões) em DOBRO na base (mesmo número/processo) — rode POST /api/v1/admin/deliberacoes/dedup (dry-run) e depois com dry_run=0 para fundir.`);
+  }
+
+  // Diretores possivelmente duplicados no cadastro (pares fuzzy ≥0.85).
+  try {
+    const duplicatas = await findDiretorDuplicatas(db);
+    if (duplicatas.length > 0) {
+      const exemplos = duplicatas.slice(0, 3).map((p) => `"${p.dup.nome}"≈"${p.keep.nome}" (${p.agencia_sigla ?? "?"})`).join("; ");
+      alertas.push(`${duplicatas.length} par(es) de diretores possivelmente DUPLICADOS: ${exemplos} — mescle no card da tela Votos dos Diretores.`);
+    }
+  } catch {
+    // Auditoria de duplicatas é melhor-esforço.
   }
 
   const response: SaudeDadosResponse = {

@@ -9,6 +9,7 @@ import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import type {
   Agencia,
+  DeliberacoesBackfillResponse,
   DiretorCandidato,
   DiretorOverviewItem,
   DiretorVotoItem,
@@ -35,12 +36,27 @@ import {
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
 
-type BackfillResponse = {
-  ano: number;
-  fontes_processadas: number;
+// O backfill roda em RODADAS: cada chamada cabe no orçamento do servidor (~90s)
+// e responde parcial=true enquanto houver fontes/reuniões por cobrir; o skip-set
+// no servidor faz cada rodada continuar de onde a anterior parou.
+const BACKFILL_MAX_ROUNDS = 8;
+const BACKFILL_ROUND_PAUSE_MS = 2_000;
+
+type BackfillAggregate = {
+  rodadas: number;
   novos_itens: number;
   documentos_enfileirados: number;
-  demo?: boolean;
+  fontes_processadas: number;
+  parcial: boolean;
+  erro_apos_progresso?: string;
+};
+
+type DuplicataPar = {
+  agencia_id: string;
+  agencia_sigla: string | null;
+  score: number;
+  keep: { id: string; nome: string; votos?: number };
+  dup: { id: string; nome: string; votos?: number };
 };
 
 type VotosDiretoresResponse = {
@@ -92,8 +108,46 @@ export default function VotosDiretoresPage() {
     },
   });
 
+  const [backfillProgress, setBackfillProgress] = useState<BackfillAggregate | null>(null);
+
   const backfillMutation = useMutation({
-    mutationFn: () => api.post<BackfillResponse>("/deliberacoes/votos-diretores/backfill"),
+    // Orquestra as rodadas no cliente: chama o endpoint até parcial=false (ou o
+    // teto de rodadas), agregando os contadores. Uma rodada sem NENHUM progresso
+    // duas vezes seguidas também encerra (anti-loop).
+    mutationFn: async (): Promise<BackfillAggregate> => {
+      const agg: BackfillAggregate = {
+        rodadas: 0,
+        novos_itens: 0,
+        documentos_enfileirados: 0,
+        fontes_processadas: 0,
+        parcial: false,
+      };
+      let semProgresso = 0;
+      for (let rodada = 1; rodada <= BACKFILL_MAX_ROUNDS; rodada++) {
+        let res: DeliberacoesBackfillResponse;
+        try {
+          res = await api.post<DeliberacoesBackfillResponse>("/deliberacoes/votos-diretores/backfill");
+        } catch (err) {
+          if (agg.rodadas === 0) throw err; // 1ª rodada falhou → erro real
+          agg.parcial = true;
+          agg.erro_apos_progresso = err instanceof Error ? err.message : "erro na rodada";
+          break;
+        }
+        agg.rodadas = rodada;
+        agg.novos_itens += res.novos_itens ?? 0;
+        agg.documentos_enfileirados += res.documentos_enfileirados ?? 0;
+        agg.fontes_processadas = Math.max(agg.fontes_processadas, res.fontes_processadas ?? 0);
+        agg.parcial = res.parcial === true;
+        setBackfillProgress({ ...agg });
+        if (!agg.parcial) break;
+        const progrediu = (res.novos_itens ?? 0) + (res.documentos_enfileirados ?? 0) + (res.fontes_puladas ?? 0) > 0;
+        semProgresso = progrediu ? 0 : semProgresso + 1;
+        if (semProgresso >= 2) break;
+        await new Promise((resolve) => setTimeout(resolve, BACKFILL_ROUND_PAUSE_MS));
+      }
+      return agg;
+    },
+    onMutate: () => setBackfillProgress(null),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
       queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
@@ -110,6 +164,25 @@ export default function VotosDiretoresPage() {
   const { data: candidatos } = useQuery({
     queryKey: ["diretores-candidatos", "pendentes", agenciaId],
     queryFn: () => api.get<DiretorCandidato[]>(`/diretores/candidatos?status=pendente${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
+  });
+
+  const { data: duplicatas } = useQuery({
+    queryKey: ["diretores-duplicatas", agenciaId],
+    queryFn: () => api.get<{ pares: DuplicataPar[] }>(`/admin/diretores/duplicatas${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+  });
+
+  const mergeMutation = useMutation({
+    mutationFn: (par: DuplicataPar) =>
+      api.post<{ votos_reapontados: number; votos_descartados: number }>("/diretores/merge", {
+        keep_id: par.keep.id,
+        merge_id: par.dup.id,
+      }),
+    onSuccess: (res) => {
+      setMatchFeedback(`Diretores mesclados: ${res.votos_reapontados} voto(s) reapontado(s), ${res.votos_descartados} duplicado(s) descartado(s).`);
+      queryClient.invalidateQueries({ queryKey: ["diretores-duplicatas"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+    },
+    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro ao mesclar diretores"),
   });
 
   const [matchFeedback, setMatchFeedback] = useState<string | null>(null);
@@ -265,12 +338,26 @@ export default function VotosDiretoresPage() {
         </div>
       ) : null}
 
-      {backfillMutation.data ? (
-        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
-          Backfill {backfillMutation.data.ano}: {backfillMutation.data.fontes_processadas} fonte(s) ·{" "}
-          {backfillMutation.data.novos_itens} novo(s) item(ns) · {backfillMutation.data.documentos_enfileirados} documento(s)
-          enfileirado(s) para extração. Confirme os votos em{" "}
-          <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
+      {backfillMutation.isPending && backfillProgress ? (
+        <div className="border border-brand/30 bg-brand/10 rounded-card p-3 text-sm text-text-primary">
+          Rodada {backfillProgress.rodadas} de até {BACKFILL_MAX_ROUNDS} — {backfillProgress.novos_itens} item(ns) novo(s) ·{" "}
+          {backfillProgress.documentos_enfileirados} PDF(s) enfileirado(s) até agora. As rodadas continuam de onde a anterior parou…
+        </div>
+      ) : null}
+      {!backfillMutation.isPending && backfillMutation.data ? (
+        <div className={cn(
+          "rounded-card p-3 text-sm",
+          backfillMutation.data.parcial
+            ? "border border-warning/30 bg-warning/10 text-text-primary"
+            : "border border-success/30 bg-success/10 text-success",
+        )}>
+          Backfill 2026 ({backfillMutation.data.rodadas} rodada(s)): {backfillMutation.data.novos_itens} novo(s) item(ns) ·{" "}
+          {backfillMutation.data.documentos_enfileirados} documento(s) enfileirado(s) para extração.{" "}
+          {backfillMutation.data.parcial ? (
+            <>Cobertura ainda parcial{backfillMutation.data.erro_apos_progresso ? ` (${backfillMutation.data.erro_apos_progresso})` : ""} —
+            clique de novo para continuar (o cron semanal também completa sozinho). </>
+          ) : null}
+          Confirme os votos em <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
         </div>
       ) : null}
       {backfillMutation.error ? (
@@ -379,6 +466,47 @@ export default function VotosDiretoresPage() {
                 </div>
               );
             })}
+          </div>
+        </section>
+      )}
+
+      {/* ── Diretores possivelmente duplicados (auditoria fuzzy) ─────────── */}
+      {(duplicatas?.pares ?? []).length > 0 && (
+        <section className="card space-y-3">
+          <div className="flex items-center gap-2">
+            <Users className="w-4 h-4 text-warning" />
+            <p className="section-label">Diretores possivelmente duplicados ({(duplicatas?.pares ?? []).length})</p>
+          </div>
+          <p className="text-xs text-text-muted">
+            O mesmo diretor pode ter entrado duas vezes no cadastro com grafias diferentes (antes da checagem automática).
+            Mesclar move os votos e mandatos para o cadastro principal e remove o duplicado — ação irreversível.
+          </p>
+          <div className="space-y-2 max-h-72 overflow-y-auto">
+            {(duplicatas?.pares ?? []).map((par) => (
+              <div key={`${par.keep.id}-${par.dup.id}`} className="flex items-center justify-between gap-3 border border-warning/30 rounded-card p-3">
+                <div className="min-w-0">
+                  <p className="text-sm font-medium text-text-primary truncate">
+                    &ldquo;{par.dup.nome}&rdquo; <span className="text-text-muted font-normal">parece ser</span> &ldquo;{par.keep.nome}&rdquo;
+                  </p>
+                  <p className="text-xs text-text-muted mt-0.5">
+                    {par.agencia_sigla ?? "?"} · similaridade {Math.round(par.score * 100)}% ·
+                    mantém &ldquo;{par.keep.nome}&rdquo; ({par.keep.votos ?? 0} voto(s)) · remove duplicado ({par.dup.votos ?? 0} voto(s), migrados)
+                  </p>
+                </div>
+                <button
+                  onClick={() => {
+                    if (window.confirm(`Mesclar "${par.dup.nome}" em "${par.keep.nome}"? Votos e mandatos serão movidos e o duplicado removido.`)) {
+                      mergeMutation.mutate(par);
+                    }
+                  }}
+                  disabled={mergeMutation.isPending || demoEnabled}
+                  className="btn-secondary text-xs shrink-0"
+                >
+                  {mergeMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                  Mesclar
+                </button>
+              </div>
+            ))}
           </div>
         </section>
       )}

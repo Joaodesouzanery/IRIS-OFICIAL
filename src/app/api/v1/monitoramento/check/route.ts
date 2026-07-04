@@ -116,7 +116,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     }
     // O crawl COMPLETO da ANTT (até ~120 reuniões) é do cron dedicado /antt/2026/collect;
     // aqui só um passe leve (novidades do topo) para caber no orçamento da rodada.
-    const options = site.estrategia === "antt-2026" ? { maxPages: 3, maxMeetings: 15 } : undefined;
+    // deadlineAt desce até os loops dos collectors (parada graciosa dentro da fonte).
+    const options = site.estrategia === "antt-2026"
+      ? { maxPages: 3, maxMeetings: 15, deadlineAt: deadline }
+      : { deadlineAt: deadline };
     const result = await processMonitoringSite(db, site, options);
     novosDetectados += result.novos_itens;
     runs.push({

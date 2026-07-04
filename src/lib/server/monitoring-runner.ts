@@ -1,6 +1,7 @@
 import { fetchMonitoringSite, tipoPrioridade } from "@/lib/server/monitoring";
 import { resilientFetch, drainFetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes } from "@/lib/server/headless";
+import { budgetRetries, hasBudget } from "@/lib/server/time-budget";
 
 const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
@@ -26,6 +27,10 @@ export type ProcessSiteOptions = {
   maxMeetings?: number;
   /** Origem da execucao para telemetria. Padrao: 'scheduled'. */
   triggerType?: "manual" | "scheduled" | "test" | "backfill";
+  /** Orçamento de tempo (epoch ms): loops param graciosamente antes do SIGKILL do Vercel. */
+  deadlineAt?: number;
+  /** URLs de reunião ANTT que não precisam de re-fetch (já têm ata/deliberação capturada). */
+  skipMeetingUrls?: Set<string>;
 };
 
 export type ProcessSiteResult = {
@@ -36,6 +41,9 @@ export type ProcessSiteResult = {
   novos_itens: number;
   documentos_enfileirados: number;
   ignorados_ano?: number;
+  /** Orçamento esgotou no meio: o processado foi salvo; o resto fica p/ próxima rodada. */
+  parcial?: boolean;
+  reunioes_puladas_conhecidas?: number;
   error?: string;
 };
 
@@ -67,6 +75,20 @@ export async function processMonitoringSite(
 ): Promise<ProcessSiteResult> {
   const triggerType = options.triggerType ?? "scheduled";
   const startedAt = Date.now();
+
+  // Limpeza oportunista: run "running" há >10min = SIGKILL de rodada anterior
+  // (o kill é incatchável; sem isso o run fica órfão para sempre e a telemetria mente).
+  await db
+    .from("monitoramento_runs")
+    .update({
+      status: "error",
+      finished_at: new Date().toISOString(),
+      error_message: "interrompido (timeout da plataforma) — marcado por limpeza oportunista",
+    })
+    .eq("site_id", site.id)
+    .eq("status", "running")
+    .lt("started_at", new Date(Date.now() - 10 * 60_000).toISOString());
+
   const { data: run } = await db
     .from("monitoramento_runs")
     .insert({ site_id: site.id, status: "running", trigger_type: triggerType })
@@ -82,13 +104,26 @@ export async function processMonitoringSite(
     const result = await fetchMonitoringSite(site, {
       maxPages: options.maxPages,
       maxMeetings: options.maxMeetings,
+      deadlineAt: options.deadlineAt,
+      skipMeetingUrls: options.skipMeetingUrls,
     });
 
     let novosItens = 0;
     let documentosEnfileirados = 0;
     let ignoradosAno = 0;
+    let truncatedItems = false;
 
-    for (const item of result.items) {
+    // Decisões primeiro: se o orçamento apertar no meio do loop, atas/deliberações
+    // já foram enfileiradas e o que sobra para a próxima rodada são pautas.
+    const itensOrdenados = [...result.items].sort(
+      (a, b) => tipoPrioridade(b.tipo) - tipoPrioridade(a.tipo),
+    );
+
+    for (const item of itensOrdenados) {
+      if (!hasBudget(options.deadlineAt, 25_000)) {
+        truncatedItems = true;
+        break;
+      }
       if (options.yearFilter) {
         const year = detectYear(item);
         if (year !== null && year < options.yearFilter) {
@@ -126,7 +161,7 @@ export async function processMonitoringSite(
 
       if (inserted) {
         novosItens++;
-        const enqueued = await tryAutoEnqueueMonitoredDocument(db, site, item, inserted.id as string);
+        const enqueued = await tryAutoEnqueueMonitoredDocument(db, site, item, inserted.id as string, options.deadlineAt);
         if (enqueued.enqueued) documentosEnfileirados++;
         await db.from("monitoramento_alertas").insert({
           item_id: inserted.id,
@@ -184,6 +219,8 @@ export async function processMonitoringSite(
       novos_itens: novosItens,
       documentos_enfileirados: documentosEnfileirados,
       ignorados_ano: ignoradosAno,
+      parcial: Boolean(result.truncated) || truncatedItems,
+      reunioes_puladas_conhecidas: result.skippedKnown ?? 0,
     };
   } catch (err) {
     const message = err instanceof Error ? err.message : "Erro inesperado";
@@ -232,11 +269,12 @@ export async function tryAutoEnqueueMonitoredDocument(
   },
   item: { tipo: string; titulo: string; url_item: string; hash_item: string; metadata: Record<string, unknown> },
   itemId: string,
+  deadlineAt?: number,
 ): Promise<{ enqueued: boolean; error?: string }> {
   if (site.tipo_fonte === "noticias" || site.auto_enfileirar_pdf === false) return { enqueued: false };
   if (!["pauta", "ata", "voto", "deliberacao", "documento"].includes(item.tipo)) return { enqueued: false };
 
-  const pdf = await downloadPdfIfAvailable(item.url_item);
+  const pdf = await downloadPdfIfAvailable(item.url_item, deadlineAt);
   if (!pdf) return { enqueued: false };
   if ("error" in pdf) {
     // Falha real de download (não some em silêncio): registra no item para o
@@ -302,7 +340,7 @@ type PdfDownload =
   | { error: string } // falha real de download (timeout/HTTP) — distinta de "não é PDF"
   | null;             // não é PDF (provável aviso só-HTML) — não conta como falha
 
-async function downloadPdfIfAvailable(url: string): Promise<PdfDownload> {
+async function downloadPdfIfAvailable(url: string, deadlineAt?: number): Promise<PdfDownload> {
   let res: Response;
   try {
     res = await resilientFetch(url, {
@@ -311,6 +349,7 @@ async function downloadPdfIfAvailable(url: string): Promise<PdfDownload> {
         Accept: "application/pdf,application/octet-stream,*/*",
       },
       timeoutMs: 20_000,
+      retries: budgetRetries(deadlineAt, 20_000),
     });
   } catch (err) {
     return { error: (err instanceof Error ? err.message : "download falhou").slice(0, 300) };

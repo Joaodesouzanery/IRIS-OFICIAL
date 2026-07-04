@@ -7,6 +7,7 @@
  */
 
 import { applyRetroactiveVotes } from "@/lib/server/retroactive-votes";
+import { findBestMatch } from "@/lib/server/name-matcher";
 
 export interface CandidatoRow {
   id: string;
@@ -44,6 +45,28 @@ export async function aprovarCandidato(
     : candidato.cargo_detectado ?? null;
 
   let diretorId = opts.diretorId ?? candidato.diretor_id ?? null;
+  let criouComSuspeita = false;
+  if (!diretorId) {
+    // PREVENÇÃO DE DUPLICATA: antes de criar, confere se o nome já casa com um
+    // diretor da agência ("Alex Azevedo" ≥0.85 "Alex Antonio de Azevedo Cruz"
+    // ⇒ REUSA o cadastro em vez de criar um segundo diretor). Faixa 0.6–0.85:
+    // cria, mas marcado needs_review — a auditoria de duplicatas pega.
+    const { data: existentes } = await db
+      .from("diretores")
+      .select("id, nome, nome_variantes")
+      .eq("agencia_id", candidato.agencia_id);
+    const lista = (existentes ?? []).map((dir: { id: string; nome: string; nome_variantes?: unknown }) => ({
+      id: dir.id,
+      nome: dir.nome,
+      nome_variantes: Array.isArray(dir.nome_variantes) ? (dir.nome_variantes as string[]) : [],
+    }));
+    const match = findBestMatch(candidato.nome_detectado, lista);
+    if (match.diretorId && !match.needsReview) {
+      diretorId = match.diretorId;
+    } else {
+      criouComSuspeita = Boolean(match.diretorId); // houve match fraco (0.6–0.85)
+    }
+  }
   if (!diretorId) {
     const { data: diretor, error: diretorErr } = await db
       .from("diretores")
@@ -51,7 +74,7 @@ export async function aprovarCandidato(
         agencia_id: candidato.agencia_id,
         nome: candidato.nome_detectado,
         cargo,
-        needs_review: false,
+        needs_review: criouComSuspeita,
         review_status: "aprovado",
         source_url: candidato.source_url,
         source_type: candidato.source_type,

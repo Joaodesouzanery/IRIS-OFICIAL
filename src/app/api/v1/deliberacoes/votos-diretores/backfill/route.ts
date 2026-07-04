@@ -3,6 +3,8 @@ import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { COLEGIADO_SOURCE_URLS, ensureColegiadoSources } from "@/lib/server/colegiado-sources";
 import { processMonitoringSite } from "@/lib/server/monitoring-runner";
+import { buildAnttMeetingSkipSet } from "@/lib/server/antt-2026-collector";
+import { hasBudget } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +28,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       demo: true,
       ano: TARGET_YEAR,
+      parcial: false,
       resultados: [],
       message: "Modo DEMO: backfill validado sem persistir.",
     });
@@ -40,9 +43,15 @@ export async function POST(req: NextRequest) {
     // Segue com o que houver cadastrado.
   }
 
-  // Mais antigo primeiro + orçamento de tempo: o crawl amplo (ANTT ~200 reuniões) não cabe
-  // inteiro nos 120s do Vercel; sem isso o SIGKILL mataria a rodada em silêncio. Quem ficar
-  // de fora lidera a semana seguinte.
+  // Mais antigo primeiro (rotação justa) + orçamento REAL: deadlineAt desce até os
+  // loops dos collectors — antes era checado só entre fontes e a ANTT sozinha
+  // (200 reuniões × throttle 800ms ≈ 160s) estourava o maxDuration em SIGKILL
+  // ("An error occurred with your deployment" no botão). O skip-set torna o
+  // re-run barato: reuniões com ata já capturada não são re-buscadas.
+  const startedAt = Date.now();
+  const deadlineAt = startedAt + 88_000;
+  const refresh = req.nextUrl.searchParams.get("refresh") === "1";
+
   const { data: sites, error } = await db
     .from("monitoramento_sites")
     .select("id, agencia_id, nome, url, estrategia, seletor_links, ativo, tipo_fonte, auto_enfileirar_pdf, ultimo_check")
@@ -53,14 +62,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar fontes colegiadas" }, { status: 500 });
   }
 
+  const anttSite = (sites ?? []).find((s) => s.estrategia === "antt-2026");
+  const skipSet = !refresh && anttSite
+    ? await buildAnttMeetingSkipSet(db, { siteId: anttSite.id })
+    : undefined;
+
   const resultados = [];
   let totalEnfileirados = 0;
   let totalNovos = 0;
-  const deadline = Date.now() + 100_000;
+  let reunioesPuladas = 0;
   let pulados = 0;
 
   for (const site of sites ?? []) {
-    if (Date.now() > deadline) {
+    if (!hasBudget(deadlineAt, 15_000)) {
       pulados += 1;
       continue;
     }
@@ -69,20 +83,27 @@ export async function POST(req: NextRequest) {
       yearFilter: TARGET_YEAR,
       maxPages: 20,
       maxMeetings: 200,
+      deadlineAt,
+      skipMeetingUrls: site.estrategia === "antt-2026" ? skipSet : undefined,
+      triggerType: "backfill",
     });
     totalEnfileirados += result.documentos_enfileirados;
     totalNovos += result.novos_itens;
+    reunioesPuladas += result.reunioes_puladas_conhecidas ?? 0;
     resultados.push(result);
   }
 
-  if (pulados > 0) console.warn(`[votos-diretores/backfill] orçamento de tempo esgotado — ${pulados} fonte(s) ficaram para a próxima rodada semanal.`);
+  if (pulados > 0) console.warn(`[votos-diretores/backfill] orçamento de tempo esgotado — ${pulados} fonte(s) ficaram para a próxima rodada.`);
 
   return NextResponse.json({
     ano: TARGET_YEAR,
+    parcial: pulados > 0 || resultados.some((r) => r.parcial),
     fontes_processadas: resultados.length,
     fontes_puladas: pulados,
     novos_itens: totalNovos,
     documentos_enfileirados: totalEnfileirados,
+    reunioes_puladas_conhecidas: reunioesPuladas,
+    duracao_ms: Date.now() - startedAt,
     resultados,
   });
 }

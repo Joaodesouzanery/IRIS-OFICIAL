@@ -13,6 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { waitUntil } from "@vercel/functions";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
+import { hasBudget } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -83,7 +84,16 @@ export async function POST(req: NextRequest) {
   }> = [];
   const jobsToProcess: Array<{ jobId: string; agenciaId: string | null }> = [];
 
+  // Orçamento: 10 PDFs × 20s de timeout = 200s > maxDuration 120s. Para
+  // graciosamente; itens não processados continuam "novo" e entram no próximo clique.
+  const deadlineAt = Date.now() + 90_000;
+  let restantes = 0;
+
   for (const item of candidates) {
+    if (!hasBudget(deadlineAt, 25_000)) {
+      restantes++;
+      continue;
+    }
     const url = String(item.url_item);
     try {
       const buffer = await fetchPdfBuffer(url);
@@ -153,6 +163,8 @@ export async function POST(req: NextRequest) {
     queued,
     processed,
     enqueued_jobs: jobsToProcess.length,
+    parcial: restantes > 0,
+    restantes,
     results,
     notice:
       "Votos individuais são sugeridos automaticamente (mandato + texto da ata) e só são gravados após confirmação humana em Revisão.",
