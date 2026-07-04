@@ -89,6 +89,17 @@ export async function POST(req: NextRequest) {
       }).eq("id", run.id);
     }
 
+    // Carimba a fonte: este cron É a verificação diária completa da ANTT, mas antes só
+    // gravava monitoramento_runs — a UI ("Última verificação") lia um ultimo_check
+    // congelado do site e parecia parada.
+    if (site?.id) {
+      await db.from("monitoramento_sites").update({
+        ultimo_check: new Date().toISOString(),
+        ultimo_status: result.errors.length > 0 ? "error" : "ok",
+        ultimo_erro: result.errors.length > 0 ? result.errors[0].slice(0, 500) : null,
+      }).eq("id", site.id);
+    }
+
     return NextResponse.json(result);
   } catch (error) {
     return NextResponse.json(

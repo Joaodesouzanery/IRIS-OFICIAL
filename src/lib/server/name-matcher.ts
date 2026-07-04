@@ -66,17 +66,24 @@ export interface MatchResult {
 const MATCH_THRESHOLD = 0.85; // equivalente ao 85 do rapidfuzz
 
 /**
- * Gera formas parciais de um nome completo (prefixo de tokens + primeiro+último),
- * para casar citações abreviadas ("André Isper") com o nome completo do diretor.
+ * Gera formas parciais de um nome completo (prefixo de tokens + primeiro+último +
+ * primeiro+CADA sobrenome), para casar citações abreviadas com o nome completo do
+ * diretor. "Alex Antonio de Azevedo Cruz" precisa casar "Alex Azevedo" (forma real
+ * usada nas atas da ANTT — sem essa variante o match caía a ~0,60 e virava candidato).
  * Evita formas de 1 token (ambíguas demais).
  */
 export function deriveNomeVariantes(nome: string): string[] {
   const tokens = nome.trim().split(/\s+/).filter(Boolean);
   if (tokens.length < 3) return [];
+  const conectores = new Set(["de", "da", "do", "das", "dos", "e"]);
   const variantes = new Set<string>();
   variantes.add(`${tokens[0]} ${tokens[1]}`);                 // primeiros dois
   variantes.add(`${tokens[0]} ${tokens[tokens.length - 1]}`); // primeiro + último
   variantes.add(tokens.slice(0, 3).join(" "));                // primeiros três
+  // primeiro + cada sobrenome intermediário ("Alex Azevedo", "Alex Antonio"…)
+  for (const sobrenome of tokens.slice(1)) {
+    if (!conectores.has(sobrenome.toLowerCase())) variantes.add(`${tokens[0]} ${sobrenome}`);
+  }
   variantes.delete(nome);
   return [...variantes];
 }

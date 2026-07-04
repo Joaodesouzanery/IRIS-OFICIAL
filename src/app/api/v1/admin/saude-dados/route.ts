@@ -145,6 +145,7 @@ export async function GET(req: NextRequest) {
     diretoresRes,
     mandatosRes,
     autoConfirmadasRes,
+    fontesDocsRes,
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes").select("id, agencia_id, extraction_confidence").limit(20000),
@@ -163,6 +164,11 @@ export async function GET(req: NextRequest) {
       .gte("created_at", new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString())
       .order("created_at", { ascending: false })
       .limit(200),
+    // Fontes de DOCUMENTOS sem verificação há >48h (congelamento silencioso — visto em prod).
+    db.from("monitoramento_sites")
+      .select("nome, ultimo_check, ultimo_status")
+      .eq("ativo", true)
+      .neq("tipo_fonte", "noticias"),
   ]);
 
   if (delibsRes.error || votosRes.error) {
@@ -268,6 +274,15 @@ export async function GET(req: NextRequest) {
   if (diretoresSemMandato.length > 0) {
     const porSigla = [...new Set(diretoresSemMandato.map((d) => d.agencia_sigla).filter(Boolean))].join("/");
     alertas.push(`${diretoresSemMandato.length} diretor(es) aprovado(s) SEM mandato cadastrado (${porSigla || "agências diversas"}) — a inferência de voto por mandato fica desligada para eles; informe data_inicio/data_fim.`);
+  }
+  // Fonte de documentos congelada: >48h sem verificação = risco de reuniões novas não coletadas.
+  const limite48h = Date.now() - 48 * 60 * 60 * 1000;
+  for (const fonte of (fontesDocsRes.data ?? []) as Array<{ nome: string; ultimo_check: string | null; ultimo_status: string | null }>) {
+    const checkMs = fonte.ultimo_check ? new Date(fonte.ultimo_check).getTime() : 0;
+    if (!checkMs || checkMs < limite48h) {
+      const quando = fonte.ultimo_check ? new Date(fonte.ultimo_check).toLocaleDateString("pt-BR") : "nunca";
+      alertas.push(`Fonte "${fonte.nome}" sem verificação há mais de 48h (última: ${quando}, status ${fonte.ultimo_status ?? "?"}) — conferir cron de monitoramento.`);
+    }
   }
   for (const ex of (execucoesRes.data ?? [])) {
     if (ex.status === "error") { alertas.push(`Última coleta de ${ex.dominio} falhou: ${ex.error_message ?? "erro"}.`); break; }

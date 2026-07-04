@@ -46,6 +46,9 @@
     },
     "src/app/api/v1/qualidade-regulatoria/coletas/derivadas/run/route.ts": {
       "maxDuration": 120
+    },
+    "src/app/api/v1/deliberacoes/votos-diretores/backfill/route.ts": {
+      "maxDuration": 120
     }
   },
   "crons": [
@@ -76,6 +79,10 @@
     {
       "path": "/api/v1/qualidade-regulatoria/coletas/derivadas/cron",
       "schedule": "0 9 * * 1"
+    },
+    {
+      "path": "/api/v1/deliberacoes/votos-diretores/backfill",
+      "schedule": "0 9 * * 0"
     }
   ]
 }

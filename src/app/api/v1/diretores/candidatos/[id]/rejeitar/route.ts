@@ -16,13 +16,32 @@ export async function POST(req: NextRequest, { params }: any) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
+  const { data: candidato } = await db
+    .from("diretor_candidatos")
+    .select("id, agencia_id, nome_detectado")
+    .eq("id", params.id)
+    .single();
+
+  const patch = {
+    review_status: "rejeitado",
+    reviewed_at: new Date().toISOString(),
+    reviewed_by: reviewedBy,
+  };
+
+  // CASCATA por nome: rejeita também os demais cartões pendentes do mesmo nome
+  // (o mesmo nome gera 1 cartão por documento — rejeitar um resolve todos).
+  if (candidato?.agencia_id && candidato?.nome_detectado) {
+    await db
+      .from("diretor_candidatos")
+      .update(patch)
+      .eq("agencia_id", candidato.agencia_id)
+      .eq("nome_detectado", candidato.nome_detectado)
+      .eq("review_status", "pendente");
+  }
+
   const { error } = await db
     .from("diretor_candidatos")
-    .update({
-      review_status: "rejeitado",
-      reviewed_at: new Date().toISOString(),
-      reviewed_by: reviewedBy,
-    })
+    .update(patch)
     .eq("id", params.id);
 
   if (error) {

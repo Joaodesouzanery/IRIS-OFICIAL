@@ -65,12 +65,27 @@ export async function aprovarCandidato(
     if (diretorErr || !diretor) throw new Error("Erro ao criar diretor");
     diretorId = diretor.id as string;
   } else {
+    // APRENDE a variante: o nome como o documento cita ("Alex Azevedo") entra em
+    // nome_variantes do diretor ("Alex Antonio de Azevedo Cruz") → próximas citações
+    // casam 1.0 direto (voto nominal automático, sem candidato).
+    const { data: diretorAtual } = await db
+      .from("diretores")
+      .select("nome, nome_variantes")
+      .eq("id", diretorId)
+      .single();
+    const variantes: string[] = Array.isArray(diretorAtual?.nome_variantes) ? diretorAtual.nome_variantes : [];
+    const detectado = candidato.nome_detectado.trim();
+    const novaVariante = detectado && detectado !== diretorAtual?.nome && !variantes.includes(detectado)
+      ? [...variantes, detectado].slice(0, 12)
+      : variantes;
+
     await db
       .from("diretores")
       .update({
         needs_review: false,
         review_status: "aprovado",
         cargo,
+        nome_variantes: novaVariante,
         source_url: candidato.source_url,
         source_type: candidato.source_type,
         source_hash: candidato.source_hash,
@@ -102,6 +117,20 @@ export async function aprovarCandidato(
     mandatoId = mandato?.id ?? null;
   }
 
+  // CASCATA por nome: o mesmo nome detectado gera 1 cartão por documento (source_hash
+  // por doc) — aprovar um resolve todos (os votos retroativos são por nome, idempotentes).
+  // Também evita que aprovar uma duplicata "new_director" crie um segundo diretor.
+  await db
+    .from("diretor_candidatos")
+    .update({
+      diretor_id: diretorId,
+      review_status: "aprovado",
+      reviewed_at: new Date().toISOString(),
+      reviewed_by: opts.reviewedBy ?? null,
+    })
+    .eq("agencia_id", candidato.agencia_id)
+    .eq("nome_detectado", candidato.nome_detectado)
+    .eq("review_status", "pendente");
   await db
     .from("diretor_candidatos")
     .update({

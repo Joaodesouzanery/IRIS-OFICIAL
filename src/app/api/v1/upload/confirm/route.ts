@@ -760,9 +760,41 @@ async function recordDirectorCandidates(
 
   if (rows.length === 0) return;
 
+  // DEDUP por (agência, nome): a chave única inclui source_hash (por documento), então
+  // o MESMO nome em 6 documentos virava 6 cartões pendentes idênticos. Se já existe
+  // candidato pendente do nome, só atualiza (confidence máxima + evidência mais recente).
+  const { data: pendentes } = await db
+    .from("diretor_candidatos")
+    .select("id, nome_detectado, confidence")
+    .eq("agencia_id", evidence.agencia_id)
+    .eq("review_status", "pendente")
+    .in("nome_detectado", rows.map((r: any) => r.nome_detectado));
+  const pendenteByNome = new Map<string, { id: string; confidence: number }>(
+    (pendentes ?? []).map((p: any) => [p.nome_detectado, { id: p.id, confidence: Number(p.confidence) || 0 }]),
+  );
+
+  const toInsert: typeof rows = [];
+  for (const row of rows as any[]) {
+    const existente = pendenteByNome.get(row.nome_detectado);
+    if (existente) {
+      await db
+        .from("diretor_candidatos")
+        .update({
+          confidence: Math.max(existente.confidence, row.confidence),
+          diretor_id: row.diretor_id ?? undefined,
+          evidence: row.evidence,
+          source_url: row.source_url,
+        })
+        .eq("id", existente.id);
+    } else {
+      toInsert.push(row);
+    }
+  }
+
+  if (toInsert.length === 0) return;
   const { error } = await db
     .from("diretor_candidatos")
-    .upsert(rows, { onConflict: "agencia_id,nome_detectado,source_hash", ignoreDuplicates: true });
+    .upsert(toInsert, { onConflict: "agencia_id,nome_detectado,source_hash", ignoreDuplicates: true });
 
   if (error) {
     console.warn("[upload/confirm] Não foi possível registrar candidatos de diretores:", error.message);

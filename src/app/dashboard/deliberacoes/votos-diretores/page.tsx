@@ -340,9 +340,22 @@ export default function VotosDiretoresPage() {
               return (
                 <div key={c.id} className="flex items-center justify-between gap-3 border border-border rounded-card p-3">
                   <div className="min-w-0">
-                    <p className="text-sm font-medium text-text-primary truncate">{c.nome_detectado}</p>
+                    <p className="text-sm font-medium text-text-primary truncate">
+                      {c.nome_detectado}
+                      {c.diretor?.nome ? <span className="text-text-muted font-normal"> → possível match: {c.diretor.nome}</span> : null}
+                    </p>
                     <p className="text-xs text-text-muted mt-0.5">
                       {c.agencia?.sigla ?? "Agência não definida"} · fonte: {c.source_type} · {Math.round(c.confidence * 100)}% de confiança
+                      {(() => {
+                        const ev = (c.evidence ?? {}) as Record<string, unknown>;
+                        const partes = [
+                          ev.numero_reuniao ? `reunião ${ev.numero_reuniao}ª` : null,
+                          ev.numero_deliberacao ? `delib. ${ev.numero_deliberacao}` : null,
+                          typeof ev.processo === "string" && ev.processo ? `proc. ${String(ev.processo).slice(0, 24)}` : null,
+                          c.created_at ? new Date(c.created_at).toLocaleDateString("pt-BR") : null,
+                        ].filter(Boolean);
+                        return partes.length ? ` · ${partes.join(" · ")}` : "";
+                      })()}
                     </p>
                   </div>
                   <div className="flex items-center gap-2 shrink-0">

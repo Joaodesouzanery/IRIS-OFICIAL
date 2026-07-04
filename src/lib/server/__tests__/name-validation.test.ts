@@ -29,3 +29,17 @@ describe("isLikelyPersonName — gate de candidato de diretor", () => {
     expect(isLikelyPersonName("Diretor João Silva")).toBe(true);
   });
 });
+
+describe("deriveNomeVariantes + findBestMatch — apelido real das atas (Etapa 13)", () => {
+  it("'Alex Azevedo' casa >=0.85 com 'Alex Antonio de Azevedo Cruz' (voto nominal, sem candidato)", async () => {
+    const { findBestMatch, deriveNomeVariantes } = await import("@/lib/server/name-matcher");
+    expect(deriveNomeVariantes("Alex Antonio de Azevedo Cruz")).toContain("Alex Azevedo");
+    const match = findBestMatch("Alex Azevedo", [
+      { id: "d1", nome: "Alex Antonio de Azevedo Cruz", nome_variantes: [] },
+      { id: "d2", nome: "Guilherme Theo Rodrigues da Rocha Sampaio", nome_variantes: [] },
+    ]);
+    expect(match.diretorId).toBe("d1");
+    expect(match.needsReview).toBe(false);
+    expect(match.score).toBeGreaterThanOrEqual(0.85);
+  });
+});

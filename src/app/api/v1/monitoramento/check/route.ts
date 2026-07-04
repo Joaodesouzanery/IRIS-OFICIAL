@@ -87,11 +87,16 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
+  // MAIS ANTIGO PRIMEIRO: sem ordem, o crawl pesado da ANTT + headless da ANM estouravam
+  // os 120s (SIGKILL do Vercel, incatchável) e os sites do fim da fila NUNCA recebiam
+  // ultimo_check — ANTT/ANM ficaram congelados em "ok" por 8 dias enquanto a ARTESP
+  // (rápida) atualizava. Quem ficou para trás agora lidera a próxima rodada.
   const { data: sites, error } = await db
     .from("monitoramento_sites")
-    .select("id, agencia_id, nome, url, estrategia, seletor_links, ativo, tipo_fonte, auto_enfileirar_pdf")
+    .select("id, agencia_id, nome, url, estrategia, seletor_links, ativo, tipo_fonte, auto_enfileirar_pdf, ultimo_check")
     .eq("ativo", true)
-    .neq("tipo_fonte", "noticias");
+    .neq("tipo_fonte", "noticias")
+    .order("ultimo_check", { ascending: true, nullsFirst: true });
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar sites monitorados" }, { status: 500 });
@@ -99,9 +104,20 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   const runs: MonitoramentoCheckResponse["runs"] = [];
   let novosDetectados = 0;
+  // Orçamento de tempo: para graciosamente antes do maxDuration (120s), gravando o
+  // progresso — os sites restantes ficam para a próxima rodada (e vão à frente pela ordem).
+  const deadline = Date.now() + 100_000;
+  let pulados = 0;
 
   for (const site of sites ?? []) {
-    const result = await processMonitoringSite(db, site);
+    if (Date.now() > deadline) {
+      pulados += 1;
+      continue;
+    }
+    // O crawl COMPLETO da ANTT (até ~120 reuniões) é do cron dedicado /antt/2026/collect;
+    // aqui só um passe leve (novidades do topo) para caber no orçamento da rodada.
+    const options = site.estrategia === "antt-2026" ? { maxPages: 3, maxMeetings: 15 } : undefined;
+    const result = await processMonitoringSite(db, site, options);
     novosDetectados += result.novos_itens;
     runs.push({
       site_id: result.site_id,
@@ -114,8 +130,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     });
   }
 
+  if (pulados > 0) console.warn(`[monitoramento/check] orçamento de tempo esgotado — ${pulados} site(s) ficaram para a próxima rodada (irão à frente pela ordem).`);
+
   return NextResponse.json({
-    checked: sites?.length ?? 0,
+    checked: runs.length,
     novos_detectados: novosDetectados,
     runs,
   } satisfies MonitoramentoCheckResponse);
