@@ -62,6 +62,13 @@ describe("canAutoConfirm — gate conservador de auto-confirmação", () => {
     expect(canAutoConfirm(semResultado).ok).toBe(false);
   });
 
+  it("REPROVA com warning de QUALIDADE (consistência); warning informativo não bloqueia", () => {
+    const comQuality = docBase({ warnings: ["Contradição: Fulano apareceu como favorável E contrário — votos removidos; revisar direção."] });
+    expect(canAutoConfirm(comQuality).ok).toBe(false);
+    const soInfo = docBase({ warnings: ["ANTT: documento tratado como pauta/ata revisável; votos não são criados automaticamente."] });
+    expect(canAutoConfirm(soInfo).ok).toBe(true);
+  });
+
   it("ata com itens passa mesmo com import_counts_as_final=false e confiança 0.72 (cap estrutural)", () => {
     const ata = docBase(
       {

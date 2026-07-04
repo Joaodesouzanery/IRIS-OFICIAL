@@ -45,7 +45,9 @@ const RE_RESULTADO = /\b(INDEFERIDO|INDEFERIMENTO|INDEFERIU|DEFERIDO|DEFERIMENTO
 
 // Unanimidade — qualquer das frases comuns em deliberações brasileiras
 // Alternativas simples sem quantificadores aninhados (evita ReDoS)
-const RE_UNANIMIDADE = /(?:por\s+unanimidade\s+dos?\s+votos?|por\s+unanimidade\s+dos?\s+presentes?|por\s+unanimidade|unanimidade\s+dos?\s+votos?|unanimidade\s+dos?\s+presentes?|aprovad[oa]\s+por\s+unanimidade)/gi;
+// SEM flag /g: é usada com .test() — com /g o lastIndex persiste entre chamadas e
+// documentos processados em sequência davam falso negativo (bug pego pelo corpus real).
+const RE_UNANIMIDADE = /(?:por\s+unanimidade\s+dos?\s+votos?|por\s+unanimidade\s+dos?\s+presentes?|por\s+unanimidade|unanimidade\s+dos?\s+votos?|unanimidade\s+dos?\s+presentes?|aprovad[oa]\s+por\s+unanimidade)/i;
 
 // Voto dissidente / divergente — extrai o nome do diretor que votou contra.
 // Cobre "voto divergente/dissidente/contrário/vencido do Diretor X" e "(restando) vencido o Diretor X".
@@ -403,6 +405,10 @@ export interface ExtractedFields {
   signatarios: string[];            // diretores identificados no bloco de assinatura
   diretores_detectados: string[];   // diretores identificados em cabecalhos/relatoria
   unanimidade_detectada: boolean;   // true se "por unanimidade" encontrado no texto
+  // Diretores PRESENTES declarados no próprio documento ("Constituição:"/"Presentes:",
+  // padrão real das atas ARTESP). Fonte primária para atribuir votos em unanimidade —
+  // mais fiel que o roster de mandatos.
+  nomes_presentes: string[];
 }
 
 // ─── Extração principal ───────────────────────────────────────────────────
@@ -712,6 +718,8 @@ export function extractFields(text: string): ExtractedFields {
   // blocos de assinatura → não vira voto nem candidato-lixo.
   const semRole = (arr: string[]) => arr.filter((n) => !isRoleWordOnly(n));
 
+  const nomes_presentes = extractPresentes(text);
+
   return {
     numero_deliberacao,
     reuniao_ordinaria,
@@ -737,7 +745,29 @@ export function extractFields(text: string): ExtractedFields {
     signatarios: semRole(signatarios),
     diretores_detectados: semRole(diretores_detectados),
     unanimidade_detectada,
+    nomes_presentes: semRole(nomes_presentes),
   };
+}
+
+// ─── Presentes declarados no documento ("Constituição:"/"Presentes:") ──────
+// Padrão real das atas ARTESP: "Constituição: Presidência-PRE - Diretor-Presidente
+// André Isper Rodrigues Barnabé, Diretoria 2 - DIR-DZ - Diretor Diego Albert Zanatto, …".
+// Quem estava presente é o registro mais fiel de quem votou em unanimidade — melhor
+// que o roster de mandatos (que pode estar vazio/errado).
+const RE_PRESENTES_BLOCO = /(?:Constitui[cç][aã]o|Presentes?)\s*:\s*([\s\S]{0,700}?)(?:\n\s*\n|\.\s*\n|$)/i;
+
+export function extractPresentes(text: string): string[] {
+  const bloco = RE_PRESENTES_BLOCO.exec(text)?.[1];
+  if (!bloco) return [];
+  const nomes: string[] = [];
+  const re = new RegExp(`Diretor(?:a)?(?:[- ](?:Presidente|Geral))?\\s+(${NOME})`, "g");
+  for (const match of bloco.matchAll(re)) {
+    // O macro NOME aceita o conector "e" + palavra capitalizada — corta o rabo
+    // institucional ("… Rudnik e Diretoria 4" → "… Rudnik").
+    const nome = match[1].replace(/\s+e\s+(?:Diretoria|Presid[êe]ncia|Superintend[êe]ncia).*$/i, "").trim();
+    if (nome && !nomes.includes(nome)) nomes.push(nome);
+  }
+  return nomes;
 }
 
 // ─── Votos explícitos por item de ata ─────────────────────────────────────

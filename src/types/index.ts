@@ -464,6 +464,8 @@ export interface PreviewResultFields {
   nomes_votacao_contra: string[];
   nomes_votacao_abstencao: string[];
   nomes_votacao_ausente: string[];
+  /** Diretores presentes declarados no documento ("Constituição:"/"Presentes:"). */
+  nomes_presentes?: string[];
   votos_sugeridos?: VotoSugerido[];
 }
 
@@ -549,6 +551,8 @@ export interface ConfirmDelib {
   nomes_votacao_contra: string[];
   nomes_votacao_abstencao?: string[];
   nomes_votacao_ausente?: string[];
+  /** Presentes declarados no documento — base preferencial da inferência de unanimidade. */
+  nomes_presentes?: string[];
   votos_sugeridos?: VotoSugerido[];
   extraction_confidence: number;
   documento_antt_tipo?: AnttManualDocumentType | null;

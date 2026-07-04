@@ -69,6 +69,11 @@ export interface SaudeDadosResponse {
   execucoes_recentes: ExecucaoRecente[];
   // Diretores aprovados sem mandato: bloqueiam a inferência de voto por mandato.
   diretores_sem_mandato?: Array<{ diretor_id: string; nome: string; agencia_sigla: string | null }>;
+  // Auditoria por amostragem: deliberações auto-confirmadas nos últimos 7 dias.
+  auto_confirmadas_7d?: {
+    total: number;
+    amostra: Array<{ deliberacao_id: string; numero_deliberacao: string | null; agencia_sigla: string | null; created_at: string | null }>;
+  };
   alertas: string[];
 }
 
@@ -139,6 +144,7 @@ export async function GET(req: NextRequest) {
     execucoesRes,
     diretoresRes,
     mandatosRes,
+    autoConfirmadasRes,
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes").select("id, agencia_id, extraction_confidence").limit(20000),
@@ -149,6 +155,14 @@ export async function GET(req: NextRequest) {
     db.from("coleta_execucoes").select("dominio, status, started_at, itens, novos, error_message").order("started_at", { ascending: false }).limit(12),
     db.from("diretores").select("id, agencia_id, nome").eq("review_status", "aprovado").limit(2000),
     db.from("mandatos").select("diretor_id").limit(10000),
+    // Auditoria por AMOSTRAGEM do auto-confirm: quantas deliberações entraram sozinhas
+    // nos últimos 7 dias (raw_extraction.auto_confirmado=true) + amostra p/ conferência.
+    db.from("deliberacoes")
+      .select("id, numero_deliberacao, agencia_id, created_at")
+      .eq("raw_extraction->>auto_confirmado", "true")
+      .gte("created_at", new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString())
+      .order("created_at", { ascending: false })
+      .limit(200),
   ]);
 
   if (delibsRes.error || votosRes.error) {
@@ -288,6 +302,15 @@ export async function GET(req: NextRequest) {
     por_agencia: porAgencia,
     execucoes_recentes: (execucoesRes.data ?? []) as ExecucaoRecente[],
     diretores_sem_mandato: diretoresSemMandato,
+    auto_confirmadas_7d: {
+      total: (autoConfirmadasRes.data ?? []).length,
+      amostra: (autoConfirmadasRes.data ?? []).slice(0, 10).map((d: any) => ({
+        deliberacao_id: d.id,
+        numero_deliberacao: d.numero_deliberacao,
+        agencia_sigla: d.agencia_id ? siglaPorAgencia.get(d.agencia_id) ?? null : null,
+        created_at: d.created_at,
+      })),
+    },
     alertas,
   };
 

@@ -10,7 +10,7 @@ import { isOcrConfigured } from "@/lib/server/ocr";
 // Avisos INFORMATIVOS (não são problema de qualidade): não devem manter o preview
 // eternamente em "low_confidence". Casam pelos trechos LIMPos das mensagens (que
 // têm mojibake no restante). Usado para computar o status do preview.
-const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
+export const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
 import { classifyRegulatoryDocument, extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import {
   buildVoteSuggestions,
@@ -214,7 +214,9 @@ export async function analyzeUploadPdf(input: {
         unanimidade_detectada: item.unanimidade,
       };
     });
-    if (!fields.data_reuniao && ataMeta.data_reuniao) fields.data_reuniao = ataMeta.data_reuniao;
+    // A data da ABERTURA da ata (extenso oficial) tem prioridade sobre a genérica —
+    // a genérica pescava datas de resoluções citadas no corpo (bug pego pelo corpus).
+    if (ataMeta.data_reuniao) fields.data_reuniao = ataMeta.data_reuniao;
     const ataConf = calcAtaPreviewConfidence({
       numero_reuniao: fields.numero_reuniao,
       tipo_reuniao: fields.tipo_reuniao,
@@ -304,6 +306,43 @@ export async function analyzeUploadPdf(input: {
     documentWarnings.push("Texto recuperado via OCR externo — confira os campos extraídos.");
   }
 
+  // ── Checagens de CONSISTÊNCIA (Etapa 12): a confiança soma campos PRESENTES; estas
+  // flags detectam "extraiu, mas contraditório" — cada uma é warning de QUALIDADE
+  // (rebaixa status e bloqueia auto-confirmação; o humano decide).
+  {
+    const favorSet = new Set(fields.nomes_votacao_favor ?? []);
+    const contraditorios = (fields.nomes_votacao_contra ?? []).filter((n) => favorSet.has(n));
+    if (contraditorios.length > 0) {
+      // Remove dos dois lados: sem certeza da direção, nenhum voto automático.
+      fields.nomes_votacao_favor = (fields.nomes_votacao_favor ?? []).filter((n) => !contraditorios.includes(n));
+      fields.nomes_votacao_contra = (fields.nomes_votacao_contra ?? []).filter((n) => !contraditorios.includes(n));
+      fields.nomes_votacao = (fields.nomes_votacao ?? []).filter((n) => !contraditorios.includes(n));
+      documentWarnings.push(`Contradição: ${contraditorios.join(", ")} apareceu como favorável E contrário — votos removidos; revisar direção.`);
+    }
+    if (fields.unanimidade_detectada && ((fields.nomes_votacao_contra?.length ?? 0) > 0 || (fields.nomes_votacao_abstencao?.length ?? 0) > 0)) {
+      documentWarnings.push("Inconsistência: texto indica unanimidade, mas há votos contrários/abstenções extraídos — revisar.");
+    }
+    if (fields.data_reuniao) {
+      const dataMs = Date.parse(fields.data_reuniao);
+      const max = Date.now() + 60 * 24 * 60 * 60 * 1000;
+      if (Number.isFinite(dataMs) && (dataMs < Date.parse("2020-01-01") || dataMs > max)) {
+        documentWarnings.push(`Data da reunião implausível (${fields.data_reuniao}) — revisar (a data escolhe a composição da diretoria na inferência).`);
+      }
+    }
+    const presentes = fields.nomes_presentes ?? [];
+    if (presentes.length > 0 && (fields.nomes_votacao?.length ?? 0) > presentes.length) {
+      documentWarnings.push(`Mais votantes (${fields.nomes_votacao?.length}) que presentes declarados (${presentes.length}) — revisar presença/votos.`);
+    }
+    for (const item of ata_items ?? []) {
+      const itemVotes = (item.votos_detectados?.length ?? 0) + (item.votos_contra_detectados?.length ?? 0);
+      if (itemVotes > 0 && !item.resultado) {
+        documentWarnings.push(`Item ${item.item_numero}: votos extraídos sem resultado — revisar antes de confirmar.`);
+      }
+      // Propaga avisos do splitter (ex.: possível sangria de itens).
+      for (const w of (item as { warnings?: string[] }).warnings ?? []) documentWarnings.push(w);
+    }
+  }
+
   const warnings = documentWarnings;
   // C3: status ignora avisos informativos (ex.: "documento tratado como pauta/ata
   // revisável") — só avisos de QUALIDADE rebaixam para low_confidence.
@@ -342,6 +381,7 @@ export async function analyzeUploadPdf(input: {
       nomes_votacao_contra: fields.nomes_votacao_contra,
       nomes_votacao_abstencao: fields.nomes_votacao_abstencao,
       nomes_votacao_ausente: fields.nomes_votacao_ausente,
+      nomes_presentes: fields.nomes_presentes,
       votos_sugeridos: mainVotosSugeridos,
     },
     confidence,
@@ -381,6 +421,7 @@ export async function analyzeUploadPdf(input: {
       nomes_votacao_contra: fields.nomes_votacao_contra,
       nomes_votacao_abstencao: fields.nomes_votacao_abstencao,
       nomes_votacao_ausente: fields.nomes_votacao_ausente,
+      nomes_presentes: fields.nomes_presentes,
       votos_sugeridos: mainVotosSugeridos,
       signatarios: fields.signatarios,
       unanimidade_detectada: fields.unanimidade_detectada,

@@ -125,6 +125,9 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
     nomes_votacao_ausente: Array.isArray(d.nomes_votacao_ausente)
       ? d.nomes_votacao_ausente.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
+    nomes_presentes: Array.isArray(d.nomes_presentes)
+      ? d.nomes_presentes.slice(0, 20).map((n) => String(n).slice(0, 100))
+      : [],
     votos_sugeridos: Array.isArray(d.votos_sugeridos) ? d.votos_sugeridos.slice(0, 30) : [],
     extraction_confidence:
       typeof d.extraction_confidence === "number" &&
@@ -432,12 +435,26 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             ? (dir as { nome_variantes: string[] }).nome_variantes
             : [],
         }));
-        const activeDiretoresList = await getActiveDiretoresForVote(
-          db,
-          effectiveAgenciaId,
-          d.data_reuniao,
-          diretoresList,
-        );
+        // Roster de inferência: PREFERE os presentes declarados no próprio documento
+        // ("Constituição:"/"Presentes:" — quem de fato estava na reunião), casados com
+        // match ≥0.85 a diretores cadastrados; mandatos são o fallback. Presente sem
+        // match confiável NÃO entra (segue o contrato: sem certeza → sem voto).
+        const presentesRoster = (d.nomes_presentes ?? [])
+          .map((nome) => {
+            const match = findBestMatch(nome, diretoresList);
+            return match.diretorId && !match.needsReview
+              ? diretoresList.find((dir) => dir.id === match.diretorId) ?? null
+              : null;
+          })
+          .filter((dir): dir is DiretorVoteRecord => Boolean(dir));
+        const activeDiretoresList = presentesRoster.length > 0
+          ? presentesRoster
+          : await getActiveDiretoresForVote(
+            db,
+            effectiveAgenciaId,
+            d.data_reuniao,
+            diretoresList,
+          );
 
         if (d.tipo_documento === "ata" && rawConfirm.ata_items && rawConfirm.ata_items.length > 0) {
           const documentPrefix = internalAnttDocumentPrefix(d);

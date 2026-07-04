@@ -1,4 +1,5 @@
 import type { AnttManualDocumentType, Deliberacao, TipoDocumento } from "@/types";
+import { parseDataExtensoANM } from "@/lib/server/ata-splitter";
 
 export type ExtendedTipoDocumento = TipoDocumento | "pauta" | "voto_individual" | "documento_apoio";
 
@@ -137,9 +138,15 @@ export function extractAnmMeetingMetadata(text: string, filename: string) {
     /(?:pauta|ata)\s+(?:da\s+)?(\d{1,3})\s*(?:a|ª|o|º)?\s*(?:rop|reuniao)/i.exec(head) ??
     /(\d{1,3})\s*(?:a|ª|o|º)?\s*reuniao\s+(?:ordinaria|extraordinaria)/i.exec(head);
   const tipoMatch = /(reuniao|reunião)\s+(ordinaria|ordinária|extraordinaria|extraordinária)|\b(rop)\b/i.exec(head);
-  const dataMatch =
-    /(?:data|realizada?\s+em|dia)\s*:?\s*(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head) ??
-    /(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head);
+  // A data OFICIAL da reunião vem por EXTENSO na abertura da ata ("Aos dezesseis dias
+  // do mês de julho do ano de dois mil e vinte e cinco…"). O fallback numérico varre
+  // 8.000 chars e pescava datas de resoluções CITADAS no corpo (data errada → escolhe
+  // a composição errada da diretoria) — por isso o extenso tem prioridade.
+  const dataExtenso = parseDataExtensoANM(head);
+  const dataMatch = dataExtenso
+    ? null
+    : /(?:data|realizada?\s+em|dia)\s*:?\s*(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head) ??
+      /(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head);
 
   return {
     numero_reuniao: numeroMatch?.[1] ?? null,
@@ -148,7 +155,7 @@ export function extractAnmMeetingMetadata(text: string, filename: string) {
         ? "Extraordinaria"
         : "Ordinaria"
       : null,
-    data_reuniao: dataMatch ? parseDateExtenso(dataMatch[1], dataMatch[2], dataMatch[3]) : null,
+    data_reuniao: dataExtenso ?? (dataMatch ? parseDateExtenso(dataMatch[1], dataMatch[2], dataMatch[3]) : null),
   };
 }
 
@@ -161,10 +168,14 @@ export function normalize(value: string): string {
     .trim();
 }
 
+// Só considera o CABEÇALHO (primeiros ~600 chars normalizados): uma ATA da ARTESP
+// CITA várias "Deliberação ARTESP nº" no corpo e era reclassificada como deliberação
+// (bug pego pelo corpus de certificação — ata 1201ª virou "deliberacao").
 function isArtespDeliberacao(normName: string, normText: string) {
+  const normHead = normText.slice(0, 600);
   return normName.includes("deliberacao artesp") ||
-    /deliberacao\s+artesp\s+n/.test(normText) ||
-    /deliberacao\s+n/.test(normText) && normText.includes("artesp");
+    /deliberacao\s+artesp\s+n/.test(normHead) ||
+    /deliberacao\s+n/.test(normHead) && normHead.includes("artesp");
 }
 
 function isAnmPauta(normName: string, normText: string) {

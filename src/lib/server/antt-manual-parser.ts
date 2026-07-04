@@ -60,10 +60,11 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
   const documentType = classifyAnttDocument(clean, filename);
   const meeting = extractMeeting(clean, filename, documentType);
   const date = extractAnttDate(clean, filename);
-  const director = extractDirector(clean, filename, documentType);
+  const directorInfo = extractDirector(clean, filename, documentType);
+  const director = directorInfo.nome;
   const attendance = extractAnttAttendance(clean);
   const processes = extractAnttProcessesV2(clean);
-  const enrichedProcesses = processes.map((item) => enrichAnttItem(item, documentType, attendance.present, attendance.absent));
+  const enrichedProcesses = processes.map((item) => enrichAnttItem(item, documentType, attendance.present, attendance.absent, attendance.ambiguous));
   const firstProcess = enrichedProcesses[0] ?? extractSingleProcess(clean, filename, documentType);
   const area_regulatoria = classifyAreaRegulatoria([
     firstProcess.assunto,
@@ -72,7 +73,16 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     clean.slice(0, 8000),
   ].filter(Boolean).join(" "));
   const seiUrl = extractSeiUrl(clean);
-  const warnings = buildWarnings(documentType, meeting, firstProcess, director, processes);
+  // Resultado do voto individual: NUNCA defaulta para "Aprovado" — a direção do voto
+  // (favorável/contrário) é exatamente o dado que não pode ser chutado. Sem conclusão
+  // parseada → null + warning de qualidade (vai para revisão humana).
+  const votoResultado = documentType === "voto_individual"
+    ? inferResultado(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""} ${extractVoteConclusion(clean) ?? ""}`)
+    : null;
+  const warnings = buildWarnings(documentType, meeting, firstProcess, director, processes, {
+    votoResultado,
+    directorAmbiguo: directorInfo.ambiguo,
+  });
   const tipoDocumento = mapToPlatformDocumentType(documentType);
 
   const fields: Partial<PreviewResultFields> = {
@@ -89,7 +99,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     item_numero: firstProcess.item_numero,
     processo: firstProcess.processo,
     resultado: documentType === "voto_individual"
-      ? inferResultado(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""} ${extractVoteConclusion(clean) ?? ""}`) ?? RESULTADO_APROVADO
+      ? votoResultado
       : (documentType === "ata" || documentType.startsWith("reuniao_")) ? firstProcess.resultado : null,
     microtema: firstProcess.microtema ?? classifyAnttMicrotema(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""}`),
     pauta_interna: false,
@@ -215,60 +225,100 @@ function extractAnttDocumentNumber(text: string, filename: string, type: AnttMan
   return null;
 }
 
+// Aceita qualquer ano 20xx (antes hardcodava 2026 → documentos de outros anos ficavam
+// sem data e a extenso "dois mil e vinte e seis" era o único caso coberto).
 function extractAnttDate(text: string, filename: string) {
   const source = `${filename} ${text.slice(0, 2500)}`;
   const sourcePlain = plain(source);
-  const periodo = /periodo:\s*(\d{1,2})[./](\d{1,2})\s+a\s+\d{1,2}[./]\d{1,2}[./](2026)/i.exec(sourcePlain);
+  const periodo = /periodo:\s*(\d{1,2})[./](\d{1,2})\s+a\s+\d{1,2}[./]\d{1,2}[./](20\d{2})/i.exec(sourcePlain);
   if (periodo) return iso(periodo[1], periodo[2], periodo[3]);
 
-  const wordRange = /do\s+([a-z\s]+?)\s+ao\s+[a-z\s]+?\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+vinte\s+e\s+seis/i.exec(sourcePlain);
+  const wordRange = /do\s+([a-z\s]+?)\s+ao\s+[a-z\s]+?\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+([a-z\s]+)/i.exec(sourcePlain);
   if (wordRange) {
     const day = portugueseDayNumber(wordRange[1]) ?? portugueseDayNumber(lastWordDateCandidate(wordRange[1], "do"));
     const month = monthNumber(wordRange[2]);
-    if (day && month) return iso(day, month, "2026");
+    const year = portugueseYearNumber(wordRange[3]);
+    if (day && month && year) return iso(day, month, year);
   }
 
-  const wordSingle = /ao\s+([a-z\s]+?)\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+vinte\s+e\s+seis/i.exec(sourcePlain);
+  const wordSingle = /ao\s+([a-z\s]+?)\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+([a-z\s]+)/i.exec(sourcePlain);
   if (wordSingle) {
     const day = portugueseDayNumber(wordSingle[1]) ?? portugueseDayNumber(lastWordDateCandidate(wordSingle[1], "ao"));
     const month = monthNumber(wordSingle[2]);
-    if (day && month) return iso(day, month, "2026");
+    const year = portugueseYearNumber(wordSingle[3]);
+    if (day && month && year) return iso(day, month, year);
   }
-  const rangeWithImplicitStart = /de\s+(\d{1,2})\s+a\s+\d{1,2}[./](\d{1,2})[./](2026)/i.exec(source);
+  const rangeWithImplicitStart = /de\s+(\d{1,2})\s+a\s+\d{1,2}[./](\d{1,2})[./](20\d{2})/i.exec(source);
   if (rangeWithImplicitStart) return iso(rangeWithImplicitStart[1], rangeWithImplicitStart[2], rangeWithImplicitStart[3]);
 
-  const rangeWithExplicitStart = /de\s+(\d{1,2})[./](\d{1,2})\s+a\s+\d{1,2}[./]\d{1,2}[./](2026)/i.exec(source);
+  const rangeWithExplicitStart = /de\s+(\d{1,2})[./](\d{1,2})\s+a\s+\d{1,2}[./]\d{1,2}[./](20\d{2})/i.exec(source);
   if (rangeWithExplicitStart) return iso(rangeWithExplicitStart[1], rangeWithExplicitStart[2], rangeWithExplicitStart[3]);
 
-  const numeric = /(\d{1,2})[./](\d{1,2})[./](2026)/.exec(source);
+  const numeric = /(\d{1,2})[./](\d{1,2})[./](20\d{2})/.exec(source);
   if (numeric) return iso(numeric[1], numeric[2], numeric[3]);
 
-  const long = /(\d{1,2})\s+DE\s+([A-ZÃ‡ÃƒÃ‰]+)\s+DE\s+(2026)/i.exec(source);
+  const long = /(\d{1,2})\s+DE\s+([A-ZÇÃÉ]+)\s+DE\s+(20\d{2})/i.exec(source);
   if (long) return iso(long[1], monthNumber(long[2]) ?? "01", long[3]);
 
   return null;
 }
 
-function extractDirector(text: string, filename: string, type: AnttManualDocumentType) {
-  if (type === "voto_individual") {
-    const source = `${filename} ${text.slice(0, 1500)}`;
-    const vistaInitials = firstMatch(source, /VISTA:\s*([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /VOTO\s+VISTA\s+([A-Z]{2,3})\b/i);
-    if (vistaInitials && ANTT_DIRECTOR_INITIALS[vistaInitials]) return ANTT_DIRECTOR_INITIALS[vistaInitials];
+// "vinte e seis" → "2026"; "vinte e cinco" → "2025"; "trinta" → "2030".
+function portugueseYearNumber(value: string): string | null {
+  const tail = plain(value).trim().replace(/\.$/, "");
+  const n = NUMEROS_ANO_EXTENSO[tail];
+  return n ? String(2000 + n) : null;
+}
 
-    const initials = firstMatch(source, /VOTO\s+([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /RELATORIA:\s*(?:Diretoria\s+)?(?:[^\n:]+?\s+-\s*)?([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /RELATORIA:\s*([A-Z]{2,3})\b/i);
-    if (initials && ANTT_DIRECTOR_INITIALS[initials]) return ANTT_DIRECTOR_INITIALS[initials];
+const NUMEROS_ANO_EXTENSO: Record<string, number> = {
+  "vinte": 20, "vinte e um": 21, "vinte e dois": 22, "vinte e tres": 23, "vinte e quatro": 24,
+  "vinte e cinco": 25, "vinte e seis": 26, "vinte e sete": 27, "vinte e oito": 28,
+  "vinte e nove": 29, "trinta": 30,
+};
 
-    const relatoriaNome = firstMatch(source, /RELATORIA:\s*Diretoria\s+([^\n:]+?)(?:\s+-\s*[A-Z]{2,3}|\s+TERMO:|\s+N[ÚU]MERO:|$)/i)
-      ?? firstMatch(source, /RELATORIA:\s*([^\n:]{5,90})(?:\s+TERMO:|\s+N[ÚU]MERO:|$)/i);
-    if (relatoriaNome) return titleCase(relatoriaNome);
-  }
-
+// O diretor-autor de um voto_individual vira o ÚNICO votante do documento — errar aqui
+// é registrar o voto no nome errado. Por isso as INICIAIS (2-3 letras, corrompíveis e de
+// tabela fixa) são só uma DICA: quando também há um nome textual (RELATORIA/assinatura)
+// e ele DIVERGE do canônico das iniciais, retornamos ambíguo (sem voto automático).
+function extractDirector(text: string, filename: string, type: AnttManualDocumentType): { nome: string | null; ambiguo: boolean } {
   const signature = firstMatch(text.slice(-3000), /Documento assinado eletronicamente por\s+([^,]+),\s+Diretor/i)
     ?? firstMatch(text.slice(-2000), /([A-ZÁÉÍÓÚÂÊÔÃÕÇ ]{8,})\s+Diretor(?:a)?\b/i);
-  return signature ? titleCase(signature) : null;
+  const signatureName = signature ? titleCase(signature) : null;
+
+  if (type === "voto_individual") {
+    const source = `${filename} ${text.slice(0, 1500)}`;
+    const initials = firstMatch(source, /VISTA:\s*([A-Z]{2,3})\b/i)
+      ?? firstMatch(source, /VOTO\s+VISTA\s+([A-Z]{2,3})\b/i)
+      ?? firstMatch(source, /VOTO\s+([A-Z]{2,3})\b/i)
+      ?? firstMatch(source, /RELATORIA:\s*(?:Diretoria\s+)?(?:[^\n:]+?\s+-\s*)?([A-Z]{2,3})\b/i)
+      ?? firstMatch(source, /RELATORIA:\s*([A-Z]{2,3})\b/i);
+    const relatoriaNome = firstMatch(source, /RELATORIA:\s*Diretoria\s+([^\n:]+?)(?:\s+-\s*[A-Z]{2,3}|\s+TERMO:|\s+N[ÚU]MERO:|$)/i)
+      ?? firstMatch(source, /RELATORIA:\s*([^\n:]{5,90})(?:\s+TERMO:|\s+N[ÚU]MERO:|$)/i);
+    const textualName = relatoriaNome ? titleCase(relatoriaNome) : signatureName;
+    const fromInitials = initials ? ANTT_DIRECTOR_INITIALS[initials] ?? null : null;
+
+    if (fromInitials && textualName) {
+      // Cruzamento: o nome textual precisa pertencer ao mesmo diretor das iniciais.
+      return sameAnttDirector(fromInitials, textualName)
+        ? { nome: fromInitials, ambiguo: false }
+        : { nome: null, ambiguo: true };
+    }
+    if (fromInitials) return { nome: fromInitials, ambiguo: false };
+    if (textualName) return { nome: textualName, ambiguo: false };
+    return { nome: null, ambiguo: false };
+  }
+
+  return { nome: signatureName, ambiguo: false };
+}
+
+function sameAnttDirector(canonical: string, textualName: string): boolean {
+  const entry = ANTT_DIRECTOR_ALIASES.find((item) => item.canonical === canonical);
+  const aliases = entry ? entry.aliases : [canonical];
+  const textual = normalize(textualName);
+  return aliases.some((alias) => {
+    const a = normalize(alias);
+    return textual.includes(a) || a.includes(textual);
+  });
 }
 function extractAnttProcesses(text: string): AtaPreviewItem[] {
   const normalizedBreaks = text
@@ -358,6 +408,7 @@ function enrichAnttItem(
   documentType: AnttManualDocumentType,
   presentDirectors: string[],
   absentDirectors: string[],
+  attendanceAmbiguous = false,
 ): AtaPreviewItem {
   const text = `${item.assunto ?? ""} ${item.decisao ?? ""}`;
   // Inclui RDE / reunião deliberativa eletrônica: também têm decisão e voto unânime
@@ -365,10 +416,13 @@ function enrichAnttItem(
   const isDeliberativa = documentType === "ata" || documentType.startsWith("reuniao_");
   const retirada = isRetiradaDePauta(item.decisao);
   const unanimidade = isDeliberativa && Boolean(item.decisao) && !retirada && /unanimidade/i.test(normalize(item.decisao ?? ""));
-  const votos = unanimidade ? presentDirectors : [];
+  // Presença ambígua (marcador "Ausente" sem ausentes identificados): NÃO atribui votos
+  // — um ausente registrado como favorável é pior que mandar o item para revisão.
+  const votos = unanimidade && !attendanceAmbiguous ? presentDirectors : [];
   const warnings = [
     ...(item.warnings ?? []),
-    ...(unanimidade && votos.length === 0 ? ["ANTT: decisÃ£o unÃ¢nime, mas diretores presentes nÃ£o foram identificados com seguranÃ§a."] : []),
+    ...(unanimidade && attendanceAmbiguous ? ["ANTT: presença/ausência ambígua no cabeçalho — votos unânimes não atribuídos; revisar presença."] : []),
+    ...(unanimidade && !attendanceAmbiguous && votos.length === 0 ? ["ANTT: decisão unânime, mas diretores presentes não foram identificados com segurança."] : []),
   ];
 
   return {
@@ -398,9 +452,13 @@ function extractAnttAttendance(text: string) {
   const absentSlice = absentRaw.slice(0, absentLimit);
   const present = detectDirectorAliases(presentSlice);
   const absent = detectDirectorAliases(absentSlice);
+  // Ambíguo: o cabeçalho fala em "Ausente" mas nenhum ausente foi identificado — o
+  // delimitador pode ter cortado errado (risco de ausente virar voto favorável).
+  const ambiguous = Boolean(absentMatch) && absent.length === 0;
   return {
     present: present.filter((name) => !absent.includes(name)),
     absent,
+    ambiguous,
   };
 }
 
@@ -577,13 +635,20 @@ function buildWarnings(
   firstProcess: AtaPreviewItem,
   director: string | null,
   items: AtaPreviewItem[],
+  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean },
 ) {
   const warnings: string[] = [];
-  if (!meeting.numero && type !== "voto_individual") warnings.push("ANTT: nÃºmero da reuniÃ£o nÃ£o identificado com alta confianÃ§a.");
-  if (!firstProcess.processo && items.length === 0) warnings.push("ANTT: processo nÃ£o identificado.");
-  if (type === "voto_individual" && !director) warnings.push("ANTT: diretor autor do voto nÃ£o identificado.");
+  if (!meeting.numero && type !== "voto_individual") warnings.push("ANTT: número da reunião não identificado com alta confiança.");
+  if (!firstProcess.processo && items.length === 0) warnings.push("ANTT: processo não identificado.");
+  if (type === "voto_individual" && !director) warnings.push("ANTT: diretor autor do voto não identificado.");
+  if (type === "voto_individual" && extra?.directorAmbiguo) {
+    warnings.push("ANTT: iniciais e nome do relator DIVERGEM — autor do voto ambíguo; revisar antes de atribuir.");
+  }
+  if (type === "voto_individual" && !extra?.votoResultado) {
+    warnings.push("ANTT: conclusão do voto não identificada — resultado NÃO inferido; revisar a direção do voto (favorável/contrário).");
+  }
   if (shouldExposeItems(type) && items.length === 0) warnings.push("ANTT: pauta/ata sem processos separados; revisar layout do PDF.");
-  if (type !== "voto_individual") warnings.push("ANTT: documento tratado como pauta/ata revisÃ¡vel; votos nÃ£o sÃ£o criados automaticamente.");
+  if (type !== "voto_individual") warnings.push("ANTT: documento tratado como pauta/ata revisável; votos não são criados automaticamente.");
   return warnings;
 }
 

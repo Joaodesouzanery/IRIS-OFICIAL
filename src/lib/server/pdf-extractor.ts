@@ -28,6 +28,9 @@ const ENCODING_FIXES: [RegExp, string][] = [
   [/â€"/g, "–"],
   [/â€"/g, "—"],
   [/\u00a0/g, " "], // non-breaking space
+  // Ligadura "ti" corrompida em "7" (fonte com cmap quebrado \u2014 visto em PDF real da
+  // ANTT: "Ins7tui\u00e7\u00e3o", "Pol\u00ed7ca"). Entre letras min\u00fasculas, "7" nunca \u00e9 d\u00edgito leg\u00edtimo.
+  [/(?<=[a-z\u00e0-\u00fa])7(?=[a-z\u00e0-\u00fa])/g, "ti"],
 ];
 
 function fixEncoding(text: string): string {
@@ -41,6 +44,12 @@ function fixEncoding(text: string): string {
 // ─── Remoção de linhas muito repetidas (cabeçalhos/rodapés) ─────────────
 // pdf-parse não separa por página, então trabalhamos sobre o texto completo.
 // Linhas que aparecem 3+ vezes no documento são provavelmente cabeçalho/rodapé.
+// EXCEÇÃO (bug pego pelo corpus real): linhas DECISÓRIAS padronizadas repetem-se de
+// verdade — a ata 82ª da ANM tem "DELIBERAÇÃO: Voto aprovado por unanimidade pelos
+// diretores presentes." 28×, uma por item. Apagá-las destruía o voto de quase todos
+// os itens. Conteúdo decisório nunca é tratado como cabeçalho/rodapé.
+const DECISION_LINE_RE = /DELIBERA[ÇC][AÃ]O|DECIS[AÃ]O|\bVOTO\b|APROVAD|INDEFERID|DEFERID|unanimidade|RETIRAD[OA]\s+DE\s+PAUTA/i;
+
 function removeRepeatedLines(text: string, minRepeat = 3): string {
   const lines = text.split("\n");
   if (lines.length < minRepeat * 2) return text; // documento curto demais
@@ -56,6 +65,7 @@ function removeRepeatedLines(text: string, minRepeat = 3): string {
   const repeated = new Set(
     [...freq.entries()]
       .filter(([, count]) => count >= minRepeat)
+      .filter(([line]) => !DECISION_LINE_RE.test(line))
       .map(([line]) => line)
   );
 

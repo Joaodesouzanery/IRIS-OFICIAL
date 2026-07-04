@@ -7,6 +7,8 @@
  * permanece na fila manual. É conservador de propósito (erra para a revisão).
  */
 
+import { INFO_WARNING_RE } from "@/lib/server/upload-analysis";
+
 export const AUTO_CONFIRM_MIN_CONFIDENCE = 0.9;
 // Atas têm a confiança estruturalmente CAPADA em 0.72 na análise (import_counts_as_final=false
 // até revisão dos itens) — um limiar próprio, compensado por exigências fortes por ITEM
@@ -27,6 +29,7 @@ export interface AutoConfirmDoc {
   is_duplicate?: boolean | null;
   agencia_id?: string | null;
   ata_items?: AtaItem[] | null;
+  warnings?: string[] | null;
   campos_detectados?: { preview?: Record<string, any> } | null;
 }
 
@@ -62,6 +65,17 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
   }
   if (doc.is_duplicate) return { ok: false, reason: "possível duplicata" };
   if (!doc.agencia_id) return { ok: false, reason: "sem agência detectada" };
+  // ZERO warnings de QUALIDADE: as checagens de consistência (contradição favor×contra,
+  // unanimidade com contras, data implausível, sangria de itens, presença ambígua…)
+  // marcam exatamente os casos onde "extraiu, mas pode estar errado" → revisão humana.
+  const allWarnings = [
+    ...(doc.warnings ?? []),
+    ...((preview.warnings as string[] | undefined) ?? []),
+  ];
+  const qualityWarnings = allWarnings.filter((w) => typeof w === "string" && !INFO_WARNING_RE.test(w));
+  if (qualityWarnings.length > 0) {
+    return { ok: false, reason: `warning de qualidade: ${qualityWarnings[0].slice(0, 90)}` };
+  }
 
   if (tipo === "ata") {
     if (!ataItems.length) return { ok: false, reason: "ata sem itens" };

@@ -43,7 +43,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
 
   let query = db
     .from("documentos_regulatorios")
-    .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, campos_detectados")
+    .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
     .eq("status", "review_pending")
     .order("extraction_confidence", { ascending: false, nullsFirst: false })
     .limit(limit);

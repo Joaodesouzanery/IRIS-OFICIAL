@@ -1,0 +1,68 @@
+{
+  "_comment": "Gabarito humano do corpus de certificação (PDFs OFICIAIS reais, baixados das fontes em 04/07/2026). Cada expectativa foi conferida lendo o documento. O teste vote-certification compara a extração campo a campo — divergência = vermelho.",
+  "docs": [
+    {
+      "file": "antt-pauta-1036.pdf",
+      "fonte": "https://portal.antt.gov.br/reuniao/-/asset_publisher/9NmL6MbUt7f1/content/id/7163264/1036-reuniao-de-diretoria",
+      "agencia_sigla": "ANTT",
+      "tipo_documento": "pauta",
+      "data_reuniao": "2026-07-02",
+      "import_counts_as_final": false,
+      "texto_contem": ["Instituição", "GUILHERME SAMPAIO", "FELIPE QUEIROZ"],
+      "texto_nao_contem": ["Ins7tuição", "Polí7ca"],
+      "sem_votos": true
+    },
+    {
+      "file": "artesp-ata-1201.pdf",
+      "fonte": "ARTESP reunioes-diretoria (DAM), Ata da 1201ª Reunião Ordinária do Conselho Diretor",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-07-01",
+      "unanimidade_detectada": true,
+      "nomes_presentes_incluem": [
+        "André Isper Rodrigues Barnabé",
+        "Diego Albert Zanatto",
+        "Fernanda Esbízaro Rodrigues Rudnik",
+        "Raquel França Carneiro"
+      ],
+      "nomes_contra": []
+    },
+    {
+      "file": "artesp-pauta-1201.pdf",
+      "fonte": "ARTESP reunioes-diretoria (DAM), Pauta da 1201ª Reunião Ordinária",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "pauta",
+      "import_counts_as_final": false,
+      "sem_votos": true
+    },
+    {
+      "file": "artesp-delib-487.pdf",
+      "fonte": "ARTESP reunioes-diretoria (DAM), Deliberações da 1201ª Reunião (zip), Deliberação ARTESP nº 487/2026",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "deliberacao",
+      "numero_deliberacao_contem": "487",
+      "data_reuniao": "2026-07-01",
+      "resultado": "Aprovado",
+      "unanimidade_detectada": true,
+      "nomes_contra": []
+    },
+    {
+      "file": "anm-ata-32-extraordinaria.pdf",
+      "fonte": "gov.br/anm atas-da-rop, Ata da 32ª Reunião Extraordinária Pública da DIRC/ANM",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2025-07-16",
+      "ata_items_min": 1
+    },
+    {
+      "file": "anm-ata-82-ordinaria.pdf",
+      "fonte": "gov.br/anm atas-da-rop, Ata da 82ª Reunião Ordinária Pública da DIRC",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-02-23",
+      "ata_items_min": 10,
+      "itens_unanimidade_min": 8,
+      "nomes_contra": []
+    }
+  ]
+}

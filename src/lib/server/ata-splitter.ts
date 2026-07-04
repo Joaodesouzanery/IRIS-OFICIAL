@@ -19,6 +19,9 @@ export function detectDocumentType(text: string): TipoDocumento {
   if (/DELIBERA[ÇC][AÃ]O\s*(?:ARTESP\s*)?N[ºo°]/i.test(head)) return "deliberacao";
   if (/RESOLU[ÇC][AÃ]O\s*N[ºo°]/i.test(head)) return "resolucao";
   if (/PORTARIA\s*N[ºo°]/i.test(head)) return "portaria";
+  // PAUTA antes de ATA: "Pauta da Xª Reunião" que mencione "ata" no cabeçalho não pode
+  // virar ata — pauta é agenda (nada foi decidido) e viraria votos fabricados.
+  if (/\bPAUTA\b(?:\s+(?:DA|DE|DO))?\s*(?:\d+\s*[ªa°º]?\s*)?REUNI[AÃ]O/i.test(head)) return "pauta";
   // Ata tolera conectores: "ATA DA 5ª REUNIÃO", "ATA Nº 3 REUNIÃO", "ATA DA REUNIÃO".
   if (/\bATA\b(?:\s+(?:DA|DE|DO|N[ºo°]?))?\s*\d+\s*[ªa°º]?\s*REUNI[AÃ]O/i.test(head) ||
       /\bATA\s+DA\s+REUNI[AÃ]O/i.test(head)) {
@@ -38,6 +41,9 @@ export interface AtaItem {
   resultado: string | null;     // normalizado: "Aprovado", "Indeferido", etc.
   unanimidade: boolean;
   raw_text: string;             // texto bruto do item
+  // Avisos de QUALIDADE do split (ex.: possível sangria de itens) — rebaixam
+  // a confiança e mandam o documento para revisão manual.
+  warnings?: string[];
 }
 
 // ─── Metadados globais da ata ───────────────────────────────────────────
@@ -85,7 +91,9 @@ const ANOS_EXTENSO: Record<string, number> = {
  * "Aos dezenove dias do mês de fevereiro do ano de dois mil e dezenove"
  */
 export function parseDataExtensoANM(text: string): string | null {
-  const re = /[Aa]os?\s+(.+?)\s+dias?\s+do\s+m[eê]s\s+de\s+(\w+)\s+do\s+ano\s+de\s+(.+?)(?:[,.]|\s+[,.]|\s+às)/i;
+  // "dias" é opcional: atas reais da ANM também escrevem "Aos vinte e três do mês de
+  // fevereiro do ano de dois mil e vinte e seis" (82ª ROP) — sem a palavra "dias".
+  const re = /[Aa]os?\s+(.+?)(?:\s+dias?)?\s+do\s+m[eê]s\s+de\s+(\w+)\s+do\s+ano\s+de\s+(.+?)(?:[,.]|\s+[,.]|\s+às)/i;
   const match = re.exec(text);
   if (!match) return null;
 
@@ -160,8 +168,8 @@ export function splitAtaItems(text: string): AtaItem[] {
   let currentItem: { numero: string; lines: string[] } | null = null;
 
   // Fase 1: Segmentar por marcadores de item
-  for (const line of lines) {
-    const trimmed = line.trim();
+  for (let i = 0; i < lines.length; i++) {
+    const trimmed = lines[i].trim();
     if (!trimmed) {
       if (currentItem) currentItem.lines.push("");
       continue;
@@ -181,9 +189,18 @@ export function splitAtaItems(text: string): AtaItem[] {
     // Formato numerado: "1.1.1. Processo nº" / "2.3.1. Interessado:" / "...Relator:"
     if (!itemStart) {
       const numMatch = RE_ITEM_NUMERADO.exec(trimmed);
-      if (numMatch && /processo|interessado|assunto|relat(?:or|ora)/i.test(trimmed)) {
-        itemStart = true;
-        itemNumero = numMatch[1];
+      if (numMatch) {
+        const hasLabelInline = /processo|interessado|assunto|relat(?:or|ora)/i.test(trimmed);
+        // Tolerância a WRAP do PDF: "1.2.3" sozinho na linha e o rótulo na linha
+        // seguinte ("Processo nº ..."). Sem isso o item não abre e os votos dele
+        // grudam no item anterior (sangria).
+        const nextLine = (lines[i + 1] ?? "").trim();
+        const hasLabelNextLine = trimmed.replace(numMatch[0], "").trim() === ""
+          && /^(?:Processo|Interessad[oa]|Assunto|Relat(?:or|ora))\b/i.test(nextLine);
+        if (hasLabelInline || hasLabelNextLine) {
+          itemStart = true;
+          itemNumero = numMatch[1];
+        }
       }
     }
 
@@ -253,6 +270,14 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   // Pular items sem conteúdo útil (ex: "Aprovação das atas")
   if (!processo && !assunto && !interessado && !decisao) return null;
 
+  // SANGRIA: mais de um rótulo "Processo:" dentro do mesmo item indica que um
+  // cabeçalho de item falhou e o item vizinho foi engolido — os votos poderiam ser
+  // atribuídos ao processo errado. Sinaliza para revisão manual (não auto-confirma).
+  const processoLabels = rawText.match(/Processo(?:\s*n[ºo°]?)?\s*:/gi) ?? [];
+  const warnings = processoLabels.length > 1
+    ? [`Item ${numero}: ${processoLabels.length} rótulos "Processo" no mesmo item — possível sangria de itens; revisar divisão da ata.`]
+    : undefined;
+
   return {
     item_numero: numero,
     processo,
@@ -263,6 +288,7 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
     resultado,
     unanimidade,
     raw_text: rawText,
+    ...(warnings ? { warnings } : {}),
   };
 }
 
@@ -291,8 +317,11 @@ function normalizeNumericAtaHierarchy(items: AtaItem[]): AtaItem[] {
         : item.raw_text,
     };
 
-    if (!merged.resultado && merged.decisao) {
-      merged.resultado = inferResultadoFromText(merged.decisao, merged.unanimidade);
+    // Só deriva resultado da decisão PRÓPRIA do item. Decisão HERDADA do cabeçalho-pai
+    // não vira resultado do filho (o filho pode ter sido decidido diferente) — fica
+    // null e o item vai para revisão em vez de receber o desfecho do vizinho.
+    if (!merged.resultado && item.decisao) {
+      merged.resultado = inferResultadoFromText(item.decisao, merged.unanimidade);
     }
 
     if (merged.processo || merged.assunto || merged.interessado || merged.decisao) {
