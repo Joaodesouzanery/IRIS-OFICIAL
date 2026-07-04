@@ -40,22 +40,9 @@ import {
 } from "lucide-react";
 
 type PeriodFilter = "today" | "7d" | "month" | "all" | "custom";
-type CoberturaLinha = {
-  agencia_sigla: string;
-  backfillavel: boolean;
-  reached_since: boolean;
-  noticias_2026: number;
-  oldest_date: string | null;
-  undated: number;
-  deliberacoes_2026: number;
-  gap: boolean;
-};
-type CoberturaResponse = {
-  since: string;
-  linhas: CoberturaLinha[];
-  resumo: { agencias: number; backfillaveis: number; completos: number; pendentes: number; noticias_2026: number; undated_total: number };
-};
-type BackfillResponse = { since: string; agencias: number; upserted: number; next: boolean };
+
+// Agências com fonte de notícias monitorada (popula o filtro mesmo sem itens carregados).
+const AGENCIAS_MONITORADAS = ["ANA", "ANAC", "ANATEL", "ANCINE", "ANEEL", "ANM", "ANP", "ANPD", "ANS", "ANTAQ", "ANTT", "ANVISA", "ARTESP"] as const;
 type MinutoEditorialDraft = {
   titulo_geral: string;
   subtitulo_geral: string;
@@ -89,47 +76,6 @@ interface NewsletterDocumentConfig {
   diaSemana: string;
   horaEnvio: string;
 }
-
-type NoticiasHealth = {
-  cron: string;
-  vercel_cron?: string;
-  schedule_label?: string;
-  next_run_at?: string;
-  vercel_cron_configured?: boolean;
-  cron_secret_configured?: boolean;
-  sources: Array<{
-    site_id?: string;
-    agencia_sigla: string;
-    news_tier?: "core" | "expanded";
-    news_profile?: string | null;
-    source_url?: string;
-    total: number;
-    recent_7d: number;
-    last_seen_at: string | null;
-    latest_publicado_em?: string | null;
-    latest_title?: string | null;
-    latest_url?: string | null;
-    latest_official_publicado_em?: string | null;
-    latest_official_title?: string | null;
-    latest_official_url?: string | null;
-    is_stale?: boolean;
-    active_error?: boolean;
-    latest_error?: string | null;
-    latest_success_at?: string | null;
-    latest_error_at?: string | null;
-    fresh_items_processed?: number;
-    backlog_items_processed?: number;
-    collection_status?: "never" | "ok" | "error" | "needs_headless";
-    collection_error?: string | null;
-    last_check_at?: string | null;
-    latest_run?: {
-      trigger_type: "scheduled" | "manual";
-      itens_processados: number;
-      itens_pendentes: number;
-      created_at: string;
-    } | null;
-  }>;
-};
 
 type NewsCollectRequest = {
   offset?: number;
@@ -288,9 +234,6 @@ export default function NoticiasPage() {
   const [savedEditionId, setSavedEditionId] = useState<string | null>(null);
   const [baseUrl, setBaseUrl] = useState("");
   const [minutoTextos, setMinutoTextos] = useState("");
-  const [showAdvancedHealth, setShowAdvancedHealth] = useState(false);
-  const [coberturaOpen, setCoberturaOpen] = useState(false);
-  const [backfillMsg, setBackfillMsg] = useState<string | null>(null);
   const [collectProgress, setCollectProgress] = useState<string | null>(null);
   const [addUrl, setAddUrl] = useState("");
   const [addUrlFeedback, setAddUrlFeedback] = useState<string | null>(null);
@@ -323,11 +266,6 @@ export default function NoticiasPage() {
       due_tomorrow: boolean;
       due_schedules: RegulatoryNewsletterSchedule[];
     }>("/noticias/newsletter/schedule"),
-  });
-
-  const { data: healthData } = useQuery({
-    queryKey: ["noticias", "health"],
-    queryFn: () => api.get<NoticiasHealth>("/noticias/health"),
   });
 
   const collectMutation = useMutation({
@@ -394,41 +332,6 @@ export default function NoticiasPage() {
     },
   });
 
-  // ── Prêmio: backfill cronológico 2026 + cobertura + export ──
-  const coberturaQuery = useQuery({
-    queryKey: ["cobertura-2026"],
-    queryFn: () => api.get<CoberturaResponse>("/noticias/cobertura-2026"),
-    enabled: coberturaOpen,
-  });
-  const backfillMutation = useMutation({
-    mutationFn: () => api.post<BackfillResponse>("/noticias/backfill", { maxPagesPerRun: 8 }),
-    onSuccess: (res) => {
-      setBackfillMsg(
-        `Lote concluído: ${res.upserted} item(ns) de 2026 gravados em ${res.agencias} fonte(s).` +
-          (res.next ? " Ainda há histórico a varrer — clique novamente para continuar." : " Varredura de 2026 completa. 🎉"),
-      );
-      queryClient.invalidateQueries({ queryKey: ["cobertura-2026"] });
-      queryClient.invalidateQueries({ queryKey: ["noticias"] });
-    },
-    onError: (err) => setBackfillMsg(err instanceof Error ? err.message : "Falha no backfill."),
-  });
-  async function exportar2026() {
-    try {
-      const res = await api.get<{ itens: Array<Record<string, string>> }>("/noticias/export-2026?format=json&order=asc");
-      const header = ["data", "agencia", "titulo", "dimensoes", "url", "resumo"];
-      const esc = (v: string) => `"${String(v ?? "").replace(/"/g, '""')}"`;
-      const csv = [header.join(","), ...res.itens.map((r) => header.map((h) => esc(r[h])).join(","))].join("\r\n");
-      const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "iris-noticias-2026.csv";
-      a.click();
-      URL.revokeObjectURL(a.href);
-    } catch (err) {
-      setBackfillMsg(err instanceof Error ? err.message : "Falha ao exportar.");
-    }
-  }
-
   const statusMutation = useMutation({
     mutationFn: ({ id, next }: { id: string; next: RegulatoryNewsStatus }) =>
       api.patch<RegulatoryNews>(`/noticias/${id}`, { status_curadoria: next }),
@@ -487,10 +390,10 @@ export default function NoticiasPage() {
   const noticias = useMemo(() => data?.data ?? [], [data?.data]);
   const agencias = useMemo(
     () => Array.from(new Set([
-      ...(healthData?.sources ?? []).map((source) => source.agencia_sigla),
+      ...AGENCIAS_MONITORADAS,
       ...noticias.map((item) => item.agencia_sigla).filter((sigla): sigla is string => Boolean(sigla)),
     ])),
-    [healthData?.sources, noticias],
+    [noticias],
   );
   const selectedIds = documentConfig.documentoTipo === "minuto_regulacao" ? minutoSelectedIds : newsletterSelectedIds;
   const newsletterSelected = useMemo(
@@ -832,180 +735,6 @@ export default function NoticiasPage() {
           {collectMutation.error instanceof Error ? collectMutation.error.message : "Erro ao coletar notícias"}
         </div>
       ) : null}
-
-      <div className="card">
-        <div className="flex items-center justify-between gap-3">
-          <div>
-            <p className="section-label">Agências monitoradas</p>
-            <p className="text-xs text-text-muted mt-1">A coleta prioriza as fontes oficiais e isola falhas por agencia.</p>
-          </div>
-          <button
-            type="button"
-            className="btn-secondary text-xs whitespace-nowrap"
-            onClick={() => setShowAdvancedHealth((prev) => !prev)}
-          >
-            {showAdvancedHealth ? "Ocultar detalhes" : "Diagnostico"}
-          </button>
-        </div>
-        <div className="flex flex-wrap gap-2 mt-3">
-          {(healthData?.sources ?? []).map((source) => (
-            <button
-              key={`chip-${source.agencia_sigla}`}
-              type="button"
-              className={cn(
-                "inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors",
-                source.active_error
-                  ? "border-error/40 bg-error/10 text-error"
-                  : source.is_stale
-                    ? "border-warning/40 bg-warning/10 text-warning"
-                  : "border-border bg-surface-secondary text-text-primary hover:border-brand/40",
-              )}
-              onClick={() => setAgencia(source.agencia_sigla)}
-              title={source.active_error ? source.latest_error ?? source.collection_error ?? source.agencia_sigla : source.is_stale ? `Defasada: ${source.latest_official_title ?? source.latest_official_url ?? source.agencia_sigla}` : source.latest_title ?? source.agencia_sigla}
-            >
-              <span>{source.agencia_sigla}</span>
-              {source.active_error ? <span className="h-1.5 w-1.5 rounded-full bg-error" /> : null}
-              {!source.active_error && source.is_stale ? <span className="h-1.5 w-1.5 rounded-full bg-warning" /> : null}
-            </button>
-          ))}
-          {healthData && healthData.sources.length === 0 ? (
-            <p className="text-sm text-text-muted">Nenhuma fonte de notícias ativa cadastrada.</p>
-          ) : null}
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="flex items-center justify-between gap-3 flex-wrap">
-          <div>
-            <p className="section-label">Prêmio — Cobertura cronológica de 2026</p>
-            <p className="text-xs text-text-muted mt-1">
-              Backfill do arquivo das fontes gov.br até 01/01/2026 (itens regulatórios), resumável. Prova de completude + export.
-            </p>
-          </div>
-          <div className="flex items-center gap-2 flex-wrap">
-            <button type="button" className="btn-secondary text-xs" onClick={() => setCoberturaOpen((v) => !v)}>
-              {coberturaOpen ? "Ocultar cobertura" : "Ver cobertura"}
-            </button>
-            <button type="button" className="btn-secondary text-xs" onClick={() => exportar2026()}>
-              Exportar 2026 (CSV)
-            </button>
-            <button type="button" className="btn-primary text-xs" onClick={() => backfillMutation.mutate()} disabled={backfillMutation.isPending}>
-              {backfillMutation.isPending ? "Varrendo…" : "Rodar backfill 2026"}
-            </button>
-          </div>
-        </div>
-        {backfillMsg ? <p className="text-xs text-text-secondary mt-2">{backfillMsg}</p> : null}
-        {coberturaOpen ? (
-          <div className="mt-3">
-            {coberturaQuery.data ? (
-              <>
-                <p className="text-xs text-text-muted mb-2">
-                  {coberturaQuery.data.resumo.completos}/{coberturaQuery.data.resumo.backfillaveis} fontes varridas até janeiro ·{" "}
-                  {coberturaQuery.data.resumo.noticias_2026} notícias de 2026 · {coberturaQuery.data.resumo.undated_total} sem data
-                </p>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-xs">
-                    <thead>
-                      <tr className="text-text-muted text-left">
-                        <th className="py-1 pr-3">Agência</th>
-                        <th className="py-1 pr-3">Chegou a jan</th>
-                        <th className="py-1 pr-3">Notícias 2026</th>
-                        <th className="py-1 pr-3">Mais antiga</th>
-                        <th className="py-1 pr-3">Delib. 2026</th>
-                        <th className="py-1 pr-3">Sem data</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {coberturaQuery.data.linhas.map((l) => (
-                        <tr key={l.agencia_sigla} className="border-t border-border">
-                          <td className="py-1 pr-3 font-semibold text-text-primary">{l.agencia_sigla}</td>
-                          <td className="py-1 pr-3">{!l.backfillavel ? "—" : l.reached_since ? "✓" : (l.gap ? "⚠️" : "…")}</td>
-                          <td className="py-1 pr-3">{l.noticias_2026}</td>
-                          <td className="py-1 pr-3">{l.oldest_date ? l.oldest_date.slice(0, 10) : "—"}</td>
-                          <td className="py-1 pr-3">{l.deliberacoes_2026}</td>
-                          <td className="py-1 pr-3">{l.undated > 0 ? l.undated : "—"}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-[11px] text-text-muted mt-2">ARTESP/portais JS não têm arquivo paginado (—); use “Adicionar por link” para itens específicos.</p>
-              </>
-            ) : (
-              <p className="text-xs text-text-muted">{coberturaQuery.isLoading ? "Carregando cobertura…" : "Sem dados de cobertura ainda."}</p>
-            )}
-          </div>
-        ) : null}
-      </div>
-
-      <div className={cn("card", !showAdvancedHealth && "hidden")}>
-        <div className="flex items-center justify-between gap-3">
-          <div>
-            <p className="section-label">Saúde da coleta automática</p>
-            <p className="text-xs text-text-muted mt-1">
-              {healthData?.schedule_label ?? "08:00, 13:00 e 18:00 (America/Sao_Paulo)"}
-              {healthData?.next_run_at ? ` · Próxima rodada: ${new Date(healthData.next_run_at).toLocaleString("pt-BR")}` : ""}
-            </p>
-            <p className="text-xs text-text-label mt-1">
-              Vercel Cron: {healthData?.vercel_cron_configured ? "configurado" : "pendente"} · CRON_SECRET: {healthData?.cron_secret_configured ? "configurado" : "pendente"}
-            </p>
-          </div>
-          <span className="text-xs text-text-label font-mono">pg_cron {healthData?.cron ?? "0 11,16,21 * * *"} · vercel {healthData?.vercel_cron ?? "0 11 * * *"}</span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-3">
-          {(healthData?.sources ?? []).map((source) => (
-            <div key={source.agencia_sigla} className="rounded-md border border-border bg-surface-secondary p-3">
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-sm font-medium text-text-primary">{source.agencia_sigla}</p>
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-text-label">{source.news_tier === "expanded" ? "federal" : "core"}</span>
-                  {source.is_stale ? <span className="text-xs text-warning">defasada</span> : null}
-                  {source.active_error ? <span className="text-xs text-error">falha ativa</span> : null}
-                </div>
-              </div>
-              <p className="text-xs text-text-muted mt-1">
-                {source.recent_7d} nos últimos 7 dias · {source.total} no histórico consultado
-              </p>
-              <p className="text-xs text-text-label mt-1">
-                Última visão: {source.last_seen_at ? new Date(source.last_seen_at).toLocaleString("pt-BR") : "sem registro"}
-              </p>
-              {source.latest_publicado_em || source.latest_title ? (
-                <p className="text-xs text-text-label mt-1 line-clamp-2">
-                  Mais recente: {source.latest_publicado_em ? new Date(source.latest_publicado_em).toLocaleDateString("pt-BR") : "sem data"}{source.latest_title ? ` · ${source.latest_title}` : ""}
-                </p>
-              ) : null}
-              {source.latest_official_publicado_em || source.latest_official_title ? (
-                <p className={cn("text-xs mt-1 line-clamp-2", source.is_stale ? "text-error" : "text-text-label")}>
-                  Oficial detectada: {source.latest_official_publicado_em ? new Date(source.latest_official_publicado_em).toLocaleDateString("pt-BR") : "sem data"}{source.latest_official_title ? ` · ${source.latest_official_title}` : ""}
-                </p>
-              ) : null}
-              {source.latest_run ? (
-                <p className="text-xs text-text-label mt-1">
-                  Última rodada {source.latest_run.trigger_type === "scheduled" ? "automática" : "manual"}: {source.latest_run.itens_processados} processados · {source.latest_run.itens_pendentes} pendentes
-                </p>
-              ) : null}
-              {typeof source.fresh_items_processed === "number" || typeof source.backlog_items_processed === "number" ? (
-                <p className="text-xs text-text-label mt-1">
-                  Fresh {source.fresh_items_processed ?? 0} · Backlog {source.backlog_items_processed ?? 0}
-                </p>
-              ) : null}
-              {source.latest_success_at || source.latest_error_at ? (
-                <p className="text-xs text-text-label mt-1">
-                  Sucesso: {source.latest_success_at ? new Date(source.latest_success_at).toLocaleString("pt-BR") : "sem registro"} · Erro: {source.latest_error_at ? new Date(source.latest_error_at).toLocaleString("pt-BR") : "sem registro"}
-                </p>
-              ) : null}
-              {source.latest_error ? (
-                <p className={cn("text-xs mt-1 line-clamp-2", source.active_error ? "text-error" : "text-text-label")}>
-                  {source.active_error ? "Erro ativo: " : "Ultimo erro registrado: "}{source.latest_error}
-                </p>
-              ) : null}
-            </div>
-          ))}
-          {healthData && healthData.sources.length === 0 ? (
-            <p className="text-sm text-text-muted">Nenhuma fonte de notícias ativa cadastrada.</p>
-          ) : null}
-        </div>
-      </div>
 
       <div className="w-full">
         <section className={cn("space-y-4", pageView === "documento" && "hidden")}>
