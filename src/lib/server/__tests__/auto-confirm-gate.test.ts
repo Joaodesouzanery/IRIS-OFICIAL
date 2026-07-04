@@ -50,10 +50,31 @@ describe("canAutoConfirm — gate conservador de auto-confirmação", () => {
   it("REPROVA sem votos sugeridos", () => {
     expect(canAutoConfirm(docBase({}, { votos_sugeridos: [] })).ok).toBe(false);
   });
-  it("ata: aprova só se todo item com voto tem match confiável", () => {
-    const ok = docBase({ tipo_documento: "ata", ata_items: [{ votos_sugeridos: [{ diretor_id: "d1", needs_review: false }] }] }, { tipo_documento: "ata" });
+  it("ata: aprova só se todo item com voto tem match confiável E resultado", () => {
+    const ok = docBase(
+      { tipo_documento: "ata", ata_items: [{ votos_sugeridos: [{ diretor_id: "d1", needs_review: false }], resultado: "Aprovado" }] },
+      { tipo_documento: "ata" },
+    );
     expect(canAutoConfirm(ok).ok).toBe(true);
-    const bad = docBase({ tipo_documento: "ata", ata_items: [{ votos_sugeridos: [{ diretor_id: null }] }] }, { tipo_documento: "ata" });
-    expect(canAutoConfirm(bad).ok).toBe(false);
+    const semMatch = docBase({ tipo_documento: "ata", ata_items: [{ votos_sugeridos: [{ diretor_id: null }], resultado: "Aprovado" }] }, { tipo_documento: "ata" });
+    expect(canAutoConfirm(semMatch).ok).toBe(false);
+    const semResultado = docBase({ tipo_documento: "ata", ata_items: [{ votos_sugeridos: [{ diretor_id: "d1", needs_review: false }] }] }, { tipo_documento: "ata" });
+    expect(canAutoConfirm(semResultado).ok).toBe(false);
+  });
+
+  it("ata com itens passa mesmo com import_counts_as_final=false e confiança 0.72 (cap estrutural)", () => {
+    const ata = docBase(
+      {
+        tipo_documento: "ata",
+        extraction_confidence: 0.72,
+        ata_items: [{ votos_sugeridos: [{ diretor_id: "d1", needs_review: false }], resultado: "Aprovado" }],
+      },
+      { tipo_documento: "ata", import_counts_as_final: false },
+    );
+    expect(canAutoConfirm(ata).ok).toBe(true);
+    // Mas abaixo do limiar de ata (0.7) reprova.
+    expect(canAutoConfirm({ ...ata, extraction_confidence: 0.6 }).ok).toBe(false);
+    // E deliberação comum com flag false continua reprovada (regra só se abre p/ ata com itens).
+    expect(canAutoConfirm(docBase({}, { import_counts_as_final: false })).ok).toBe(false);
   });
 });

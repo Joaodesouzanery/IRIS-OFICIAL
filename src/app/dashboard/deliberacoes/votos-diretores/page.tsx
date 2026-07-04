@@ -149,6 +149,44 @@ export default function VotosDiretoresPage() {
     },
   });
 
+  // Aprova EM LOTE os matches de alta confiança (≥0.8 a diretor já cadastrado);
+  // novos nomes continuam 1-a-1. Destrava os votos retroativos de uma vez.
+  const aprovarLoteMutation = useMutation({
+    mutationFn: () =>
+      api.post<{ aprovados: number; pulados: number }>("/diretores/candidatos/aprovar-lote", {
+        min_confidence: 0.8,
+        ...(agenciaId ? { agencia_id: agenciaId } : {}),
+      }),
+    onSuccess: (res) => {
+      setMatchError(null);
+      setMatchFeedback(`Lote: ${res.aprovados} candidato(s) aprovado(s), ${res.pulados} deixado(s) para revisão 1-a-1.`);
+      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
+    },
+    onError: (err) => {
+      setMatchFeedback(null);
+      setMatchError(err instanceof Error ? err.message : "Erro na aprovação em lote.");
+    },
+  });
+
+  // Auto-confirma documentos de ALTA confiança pendentes de revisão (gate conservador
+  // no servidor; ambíguos permanecem na fila manual).
+  const autoConfirmMutation = useMutation({
+    mutationFn: () => api.post<{ elegiveis: number; analisados: number }>("/upload/auto-confirm", { limit: 50 }),
+    onSuccess: (res) => {
+      setMatchError(null);
+      setMatchFeedback(`Auto-confirmação: ${res.elegiveis} documento(s) confirmados de ${res.analisados} analisados.`);
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
+      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
+    },
+    onError: (err) => {
+      setMatchFeedback(null);
+      setMatchError(err instanceof Error ? err.message : "Erro na auto-confirmação.");
+    },
+  });
+
   const colegiadoAgencias = useMemo(
     () => (agencias ?? []).filter((a) => COLEGIADO_SIGLAS.includes(a.sigla)),
     [agencias],
@@ -202,8 +240,24 @@ export default function VotosDiretoresPage() {
             {enqueueMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Upload className="w-4 h-4" />}
             Processar atas/votos
           </button>
+          <button
+            onClick={() => autoConfirmMutation.mutate()}
+            disabled={autoConfirmMutation.isPending || demoEnabled}
+            className="btn-secondary"
+            title="Confirma automaticamente documentos de ALTA confiança pendentes de revisão (gate conservador; ambíguos ficam na fila manual)"
+          >
+            {autoConfirmMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
+            Auto-confirmar alta confiança
+          </button>
         </div>
       </div>
+
+      {matchFeedback && (candidatos ?? []).length === 0 ? (
+        <div className="border border-success/30 bg-success/10 rounded-card p-2.5 text-sm text-success">{matchFeedback}</div>
+      ) : null}
+      {matchError && (candidatos ?? []).length === 0 ? (
+        <div className="border border-error/30 bg-error/10 rounded-card p-2.5 text-sm text-error">{matchError}</div>
+      ) : null}
 
       {demoEnabled ? (
         <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">
@@ -250,11 +304,20 @@ export default function VotosDiretoresPage() {
       {/* ── Matches de diretor pendentes de revisão ──────────────────────── */}
       {(candidatos ?? []).length > 0 && (
         <section className="card space-y-3">
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center justify-between gap-3 flex-wrap">
             <div className="flex items-center gap-2">
               <UserCheck className="w-4 h-4 text-brand" />
               <p className="section-label">Matches pendentes ({(candidatos ?? []).length})</p>
             </div>
+            <button
+              type="button"
+              className="btn-primary text-xs"
+              onClick={() => aprovarLoteMutation.mutate()}
+              disabled={aprovarLoteMutation.isPending}
+              title="Aprova em lote os matches ≥ 0,8 a diretores já cadastrados; novos nomes continuam 1-a-1."
+            >
+              {aprovarLoteMutation.isPending ? "Aprovando…" : "Aprovar lote (match ≥ 0,8)"}
+            </button>
           </div>
           <p className="text-xs text-text-muted">
             Nomes detectados em atas/votos cujo match com um diretor ficou ambíguo (confiança média) e não geraram voto.

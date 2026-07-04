@@ -20,6 +20,9 @@
     "src/app/api/v1/upload/reprocess/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/upload/auto-confirm/route.ts": {
+      "maxDuration": 120
+    },
     "src/app/api/v1/upload/clear-test-queue/route.ts": {
       "maxDuration": 120
     },
@@ -61,6 +64,10 @@
     {
       "path": "/api/v1/upload/process",
       "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/v1/upload/auto-confirm",
+      "schedule": "30 12 * * *"
     },
     {
       "path": "/api/v1/mandatos/recalcular",

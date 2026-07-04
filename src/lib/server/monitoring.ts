@@ -102,6 +102,30 @@ export async function fetchMonitoringSite(
 
     let items = parseFor(html, pageUrl);
 
+    // O gov.br serve intermitentemente uma página DEGRADADA (HTTP 200 mas "magra",
+    // 0 itens) ao IP de datacenter — mesmo sintoma tratado nas notícias (Etapa 9).
+    // Uma 2ª tentativa após pausa costuma trazer a página completa; só então o
+    // fallback headless (que renderizaria a mesma página magra) faz sentido.
+    if (items.length === 0 && pageCount === 1) {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      try {
+        const retried = await resilientFetchText(pageUrl, {
+          headers: {
+            "User-Agent": BROWSER_UA,
+            Accept: "text/html,application/xhtml+xml",
+            "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+          },
+        });
+        const retriedItems = parseFor(retried, pageUrl);
+        if (retriedItems.length > 0) {
+          html = retried;
+          items = retriedItems;
+        }
+      } catch {
+        // mantém o fluxo original (headless/erro) se o retry falhar
+      }
+    }
+
     // Fallback headless quando o estático não rende NENHUM doc (ARTESP/ANM atrás
     // de iframe/JS). Só para html-static (evita acionar render nas fontes de
     // notícia) e só adota o resultado se ele realmente trouxer itens.

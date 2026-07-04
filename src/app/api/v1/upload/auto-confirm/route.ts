@@ -1,15 +1,17 @@
 /**
- * POST /api/v1/upload/auto-confirm
+ * POST|GET /api/v1/upload/auto-confirm
  * Confirma automaticamente as deliberações de ALTA CONFIANÇA que hoje ficariam na fila
  * manual (reduz o gargalo "deliberações sem voto"). REUSA 100% o handler do /upload/confirm
  * (nenhuma lógica de gravação duplicada): seleciona os docs `review_pending` que passam no
  * gate conservador (canAutoConfirm) e envia o mesmo payload da UI ao confirm. Casos ambíguos
- * permanecem na fila. Admin. Idempotente (o confirm faz upsert protegido dos votos).
+ * permanecem na fila. Admin ou cron (GET p/ Vercel Cron, que só faz GET com o CRON_SECRET).
+ * Idempotente (o confirm faz upsert protegido dos votos). Cada deliberação criada leva
+ * `raw_extraction.auto_confirmado=true` (trilha de auditoria: auto vs manual).
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { canAutoConfirm, buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { POST as confirmPOST } from "../confirm/route";
 
@@ -17,14 +19,23 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
+export async function GET(req: NextRequest) {
+  // Vercel Cron só emite GET (com Authorization: Bearer CRON_SECRET automático).
+  return run(req, { limit: 50 });
+}
+
 export async function POST(req: NextRequest) {
+  const body = (await req.json().catch(() => ({}))) as { limit?: number; agencia_id?: string };
+  return run(req, body);
+}
+
+async function run(req: NextRequest, body: { limit?: number; agencia_id?: string }) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Auto-confirmação indisponível em modo DEMO." }, { status: 403 });
   }
-  const guard = await requireAdmin(req);
+  const guard = await requireAdminOrCron(req, "upload/auto-confirm");
   if (guard) return guard;
 
-  const body = (await req.json().catch(() => ({}))) as { limit?: number; agencia_id?: string };
   const limit = Math.min(100, Math.max(1, Number(body.limit ?? 50)));
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -60,7 +71,12 @@ export async function POST(req: NextRequest) {
   }
 
   // REUSA o handler do confirm: mesmo payload da UI + Authorization encaminhado.
-  const deliberacoes = elegiveis.map((doc) => buildConfirmDelibFromDoc(doc));
+  // `auto_confirmado=true` fica em raw_extraction (trilha de auditoria auto vs manual).
+  const deliberacoes = elegiveis.map((doc) => {
+    const delib = buildConfirmDelibFromDoc(doc);
+    const raw = (delib.extraction_raw && typeof delib.extraction_raw === "object") ? delib.extraction_raw as Record<string, unknown> : {};
+    return { ...delib, extraction_raw: { ...raw, auto_confirmado: true, auto_confirmado_em: new Date().toISOString() } };
+  });
   const syntheticReq = new NextRequest(new URL("/api/v1/upload/confirm", req.url), {
     method: "POST",
     headers: {

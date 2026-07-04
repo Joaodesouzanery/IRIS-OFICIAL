@@ -8,11 +8,15 @@
  */
 
 export const AUTO_CONFIRM_MIN_CONFIDENCE = 0.9;
+// Atas têm a confiança estruturalmente CAPADA em 0.72 na análise (import_counts_as_final=false
+// até revisão dos itens) — um limiar próprio, compensado por exigências fortes por ITEM
+// (todo item com voto precisa de resultado + matches confiáveis).
+export const AUTO_CONFIRM_MIN_CONFIDENCE_ATA = 0.7;
 export const AUTO_CONFIRM_MIN_CHARS_PER_PAGE = 50; // abaixo disso = provável escaneado
 const FINAL_TIPOS = new Set(["deliberacao", "ata", "resolucao", "portaria"]);
 
 type Suggestion = { diretor_id?: string | null; needs_review?: boolean } & Record<string, unknown>;
-type AtaItem = { votos_sugeridos?: Suggestion[] } & Record<string, unknown>;
+type AtaItem = { votos_sugeridos?: Suggestion[]; resultado?: string | null } & Record<string, unknown>;
 
 export interface AutoConfirmDoc {
   id?: string;
@@ -39,14 +43,19 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
   const preview = doc?.campos_detectados?.preview ?? {};
   const fields: Record<string, any> = preview.fields ?? {};
   const tipo = String(fields.tipo_documento ?? doc.tipo_documento ?? "");
+  const ataItems = (doc.ata_items ?? preview.ata_items ?? []) as AtaItem[];
+  const isImportableAta = tipo === "ata" && ataItems.length > 0;
 
   if (doc.status && doc.status !== "review_pending") return { ok: false, reason: `status=${doc.status}` };
   if (!FINAL_TIPOS.has(tipo)) return { ok: false, reason: `tipo não-final (${tipo || "?"})` };
-  if (fields.import_counts_as_final === false || preview.import_counts_as_final === false) {
+  // Ata com itens é importável mesmo com a flag false (o confirm materializa itens;
+  // só itens com resultado contam como final nas métricas).
+  if (!isImportableAta && (fields.import_counts_as_final === false || preview.import_counts_as_final === false)) {
     return { ok: false, reason: "não conta como final" };
   }
-  if (Number(doc.extraction_confidence ?? 0) < AUTO_CONFIRM_MIN_CONFIDENCE) {
-    return { ok: false, reason: `confiança ${Number(doc.extraction_confidence ?? 0).toFixed(2)} < ${AUTO_CONFIRM_MIN_CONFIDENCE}` };
+  const minConfidence = isImportableAta ? AUTO_CONFIRM_MIN_CONFIDENCE_ATA : AUTO_CONFIRM_MIN_CONFIDENCE;
+  if (Number(doc.extraction_confidence ?? 0) < minConfidence) {
+    return { ok: false, reason: `confiança ${Number(doc.extraction_confidence ?? 0).toFixed(2)} < ${minConfidence}` };
   }
   if (Number(doc.chars_per_page ?? 0) < AUTO_CONFIRM_MIN_CHARS_PER_PAGE) {
     return { ok: false, reason: "provável escaneado (baixa densidade de texto)" };
@@ -54,13 +63,16 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
   if (doc.is_duplicate) return { ok: false, reason: "possível duplicata" };
   if (!doc.agencia_id) return { ok: false, reason: "sem agência detectada" };
 
-  const ataItems = (doc.ata_items ?? preview.ata_items ?? []) as AtaItem[];
   if (tipo === "ata") {
     if (!ataItems.length) return { ok: false, reason: "ata sem itens" };
     const anyVote = ataItems.some((it) => (it.votos_sugeridos ?? []).length > 0);
     if (!anyVote) return { ok: false, reason: "ata sem nenhum voto sugerido" };
     const allConfident = ataItems.every((it) => suggestionsConfident(it.votos_sugeridos));
     if (!allConfident) return { ok: false, reason: "há item com voto não-confiável/sem match" };
+    // Todo item COM voto precisa ter resultado — é o resultado que torna o item
+    // "decisão final" nas métricas; voto sem resultado ficaria invisível/ambíguo.
+    const votedWithoutResult = ataItems.some((it) => (it.votos_sugeridos ?? []).length > 0 && !it.resultado);
+    if (votedWithoutResult) return { ok: false, reason: "há item com voto mas sem resultado" };
   } else {
     const votos = (fields.votos_sugeridos ?? []) as Suggestion[];
     if (!votos.length) return { ok: false, reason: "sem votos sugeridos" };

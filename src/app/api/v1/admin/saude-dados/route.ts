@@ -67,6 +67,8 @@ export interface SaudeDadosResponse {
   confianca: { alta: number; media: number; baixa: number; sem: number };
   por_agencia: AgenciaSaude[];
   execucoes_recentes: ExecucaoRecente[];
+  // Diretores aprovados sem mandato: bloqueiam a inferência de voto por mandato.
+  diretores_sem_mandato?: Array<{ diretor_id: string; nome: string; agencia_sigla: string | null }>;
   alertas: string[];
 }
 
@@ -135,6 +137,8 @@ export async function GET(req: NextRequest) {
     candidatosRes,
     itensNovosRes,
     execucoesRes,
+    diretoresRes,
+    mandatosRes,
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes").select("id, agencia_id, extraction_confidence").limit(20000),
@@ -143,6 +147,8 @@ export async function GET(req: NextRequest) {
     db.from("diretor_candidatos").select("id", { count: "exact", head: true }).eq("review_status", "pendente"),
     db.from("monitoramento_itens").select("id", { count: "exact", head: true }).eq("status", "novo"),
     db.from("coleta_execucoes").select("dominio, status, started_at, itens, novos, error_message").order("started_at", { ascending: false }).limit(12),
+    db.from("diretores").select("id, agencia_id, nome").eq("review_status", "aprovado").limit(2000),
+    db.from("mandatos").select("diretor_id").limit(10000),
   ]);
 
   if (delibsRes.error || votosRes.error) {
@@ -222,6 +228,19 @@ export async function GET(req: NextRequest) {
   const reviewPending = statusCount["review_pending"] ?? 0;
   const failed = statusCount["failed"] ?? 0;
 
+  // ── Diretores SEM mandato (bloqueia a inferência de voto por mandato) ─────
+  // getActiveDiretoresForVote retorna [] quando não há mandato na data → docs de
+  // unanimidade sem nomes explícitos geram 0 voto. Aqui o gap fica visível.
+  const diretoresAprovados: Array<{ id: string; agencia_id: string | null; nome: string }> = diretoresRes.data ?? [];
+  const diretoresComMandato = new Set((mandatosRes.data ?? []).map((m: { diretor_id: string }) => m.diretor_id));
+  const semMandato = diretoresAprovados.filter((d) => !diretoresComMandato.has(d.id));
+  const siglaPorAgencia = new Map(agencias.map((a) => [a.id, a.sigla]));
+  const diretoresSemMandato = semMandato.map((d) => ({
+    diretor_id: d.id,
+    nome: d.nome,
+    agencia_sigla: d.agencia_id ? siglaPorAgencia.get(d.agencia_id) ?? null : null,
+  }));
+
   // ── Alertas derivados (o que dói, em ordem de impacto) ────────────
   const alertas: string[] = [];
   if (totalDelibs === 0) {
@@ -232,6 +251,10 @@ export async function GET(req: NextRequest) {
   if (semVoto > 0) alertas.push(`${semVoto} deliberação(ões) sem nenhum voto registrado.`);
   if (delibsSoInferidas > 0) alertas.push(`${delibsSoInferidas} deliberação(ões) com votos 100% inferidos (sem nome no documento) — possível unanimidade legada a revisar.`);
   if (candidatosPendentes > 0) alertas.push(`${candidatosPendentes} candidato(s) de diretor aguardando revisão.`);
+  if (diretoresSemMandato.length > 0) {
+    const porSigla = [...new Set(diretoresSemMandato.map((d) => d.agencia_sigla).filter(Boolean))].join("/");
+    alertas.push(`${diretoresSemMandato.length} diretor(es) aprovado(s) SEM mandato cadastrado (${porSigla || "agências diversas"}) — a inferência de voto por mandato fica desligada para eles; informe data_inicio/data_fim.`);
+  }
   for (const ex of (execucoesRes.data ?? [])) {
     if (ex.status === "error") { alertas.push(`Última coleta de ${ex.dominio} falhou: ${ex.error_message ?? "erro"}.`); break; }
   }
@@ -264,6 +287,7 @@ export async function GET(req: NextRequest) {
     confianca,
     por_agencia: porAgencia,
     execucoes_recentes: (execucoesRes.data ?? []) as ExecucaoRecente[],
+    diretores_sem_mandato: diretoresSemMandato,
     alertas,
   };
 

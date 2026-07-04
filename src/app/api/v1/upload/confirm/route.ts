@@ -11,7 +11,7 @@ import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName, isLikelyPersonName } from "@/lib/server/name-matcher";
 import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
-import { requireAdmin } from "@/lib/server/request-guards";
+import { requireAdminOrCron } from "@/lib/server/request-guards";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -143,7 +143,9 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  const guard = await requireAdmin(req);
+  // Admin OU cron: o auto-confirm agendado (Vercel Cron, Bearer CRON_SECRET) reusa
+  // este handler — mesmo modelo de confiança dos demais crons que escrevem dados.
+  const guard = await requireAdminOrCron(req, "upload/confirm");
   if (guard) return guard;
 
   let parsed: ParsedConfirmBody;
@@ -402,7 +404,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           continue;
         }
 
-        if (!d.import_counts_as_final || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento)) {
+        // Ata com ITENS extraídos é importável: o ramo de ata abaixo materializa a
+        // ata-mãe + itens + votos (cada item só conta como final se tiver resultado).
+        // Sem isso, TODA ata (ANM/ANTT, classificadas import_counts_as_final=false)
+        // era "mantida como apoio" e os votos das atas nunca entravam.
+        const isImportableAta = d.tipo_documento === "ata" && Boolean(rawConfirm.ata_items?.length);
+        if ((!d.import_counts_as_final && !isImportableAta) || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento)) {
           await markDocumentReviewed(db, d.documento_id, "ignored");
           results.push({
             filename: d.filename,
