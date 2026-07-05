@@ -31,8 +31,47 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_reunioes_chave_natural
 CREATE INDEX IF NOT EXISTS idx_reunioes_agencia_data
   ON public.reunioes (agencia_id, data_reuniao DESC);
 
+-- Em produção a coluna reuniao_id JÁ EXISTE com uma FK antiga apontando para
+-- "reunioes_regulatorias" (tabela criada por script manual, fora do repo — nada
+-- no código a lê). Por isso a FK é gerida EXPLICITAMENTE: derruba a antiga,
+-- limpa vínculos que não existem na tabela nova (o Backfill 2 abaixo os recria
+-- pela chave natural agência+data+número) e aponta para public.reunioes.
 ALTER TABLE public.deliberacoes
-  ADD COLUMN IF NOT EXISTS reuniao_id UUID REFERENCES public.reunioes(id) ON DELETE SET NULL;
+  ADD COLUMN IF NOT EXISTS reuniao_id UUID;
+
+-- Derruba TODA FK sobre deliberacoes.reuniao_id, qualquer que seja o nome
+-- (o schema de produção já divergiu do repo uma vez; não confiar no nome).
+DO $$
+DECLARE
+  v_con TEXT;
+BEGIN
+  FOR v_con IN
+    SELECT con.conname
+    FROM pg_constraint con
+    JOIN pg_class rel ON rel.oid = con.conrelid
+    JOIN pg_namespace nsp ON nsp.oid = rel.relnamespace
+    WHERE nsp.nspname = 'public'
+      AND rel.relname = 'deliberacoes'
+      AND con.contype = 'f'
+      AND EXISTS (
+        SELECT 1
+        FROM unnest(con.conkey) AS k
+        JOIN pg_attribute att ON att.attrelid = rel.oid AND att.attnum = k
+        WHERE att.attname = 'reuniao_id'
+      )
+  LOOP
+    EXECUTE format('ALTER TABLE public.deliberacoes DROP CONSTRAINT %I', v_con);
+  END LOOP;
+END $$;
+
+UPDATE public.deliberacoes d
+SET reuniao_id = NULL
+WHERE d.reuniao_id IS NOT NULL
+  AND NOT EXISTS (SELECT 1 FROM public.reunioes r WHERE r.id = d.reuniao_id);
+
+ALTER TABLE public.deliberacoes
+  ADD CONSTRAINT deliberacoes_reuniao_id_fkey
+  FOREIGN KEY (reuniao_id) REFERENCES public.reunioes(id) ON DELETE SET NULL;
 
 CREATE INDEX IF NOT EXISTS idx_deliberacoes_reuniao_id
   ON public.deliberacoes (reuniao_id);
@@ -60,7 +99,8 @@ WHERE d.reuniao_id IS NULL
 -- Inclui reuniões AINDA SEM deliberação processada (cobertura honesta) e
 -- enriquece com tipo/URL as que já existiam via deliberações.
 INSERT INTO public.reunioes (agencia_id, numero_reuniao, tipo_reuniao, data_reuniao, url_fonte, source, metadata)
-SELECT arc.agencia_id,
+SELECT DISTINCT ON (arc.agencia_id, arc.data_inicio, COALESCE(arc.numero, ''))
+       arc.agencia_id,
        arc.numero,
        CASE arc.tipo
          WHEN 'ordinaria' THEN 'Ordinaria'
@@ -74,10 +114,11 @@ SELECT arc.agencia_id,
 FROM public.antt_reunioes_coletadas arc
 WHERE arc.agencia_id IS NOT NULL
   AND arc.data_inicio IS NOT NULL
+ORDER BY arc.agencia_id, arc.data_inicio, COALESCE(arc.numero, ''), arc.coletado_em DESC
 ON CONFLICT (agencia_id, data_reuniao, COALESCE(numero_reuniao, '')) DO UPDATE
-SET url_fonte    = COALESCE(public.reunioes.url_fonte, EXCLUDED.url_fonte),
-    tipo_reuniao = COALESCE(public.reunioes.tipo_reuniao, EXCLUDED.tipo_reuniao),
-    metadata     = public.reunioes.metadata || EXCLUDED.metadata,
+SET url_fonte    = COALESCE(reunioes.url_fonte, EXCLUDED.url_fonte),
+    tipo_reuniao = COALESCE(reunioes.tipo_reuniao, EXCLUDED.tipo_reuniao),
+    metadata     = reunioes.metadata || EXCLUDED.metadata,
     updated_at   = NOW();
 
 -- updated_at automático (update_updated_at é a função padrão criada na 001).
