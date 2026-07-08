@@ -154,7 +154,7 @@ export async function GET(req: NextRequest) {
     fontesDocsRes,
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
-    db.from("deliberacoes").select("id, agencia_id, extraction_confidence, numero_deliberacao, processo, data_reuniao, tipo_documento").limit(20000),
+    db.from("deliberacoes").select("id, agencia_id, extraction_confidence, numero_deliberacao, processo, data_reuniao, tipo_documento, interessado, empresa_id").limit(20000),
     db.from("votos").select("deliberacao_id, is_nominal").limit(50000),
     db.from("documentos_regulatorios").select("agencia_id, status").limit(20000),
     db.from("diretor_candidatos").select("id", { count: "exact", head: true }).eq("review_status", "pendente"),
@@ -190,6 +190,8 @@ export async function GET(req: NextRequest) {
     processo?: string | null;
     data_reuniao?: string | null;
     tipo_documento?: string | null;
+    interessado?: string | null;
+    empresa_id?: string | null;
   }> = delibsRes.data ?? [];
   const votos: Array<{ deliberacao_id: string; is_nominal: boolean }> = votosRes.data ?? [];
   const docs: Array<{ agencia_id: string | null; status: string }> = docsRes.data ?? [];
@@ -320,6 +322,12 @@ export async function GET(req: NextRequest) {
   const delibsEmDobro = [...gruposDelib.values()].filter((n) => n > 1).reduce((sum, n) => sum + n - 1, 0);
   if (delibsEmDobro > 0) {
     alertas.push(`${delibsEmDobro} deliberação(ões) em DOBRO na base (mesmo número/processo) — rode POST /api/v1/admin/deliberacoes/dedup (dry-run) e depois com dry_run=0 para fundir.`);
+  }
+
+  // Interessado sem empresa_id: some das visões por empresa (dado que existe mas não vira nó).
+  const semEmpresa = delibs.filter((d) => d.interessado && d.interessado.trim() && !d.empresa_id).length;
+  if (semEmpresa > 0) {
+    alertas.push(`${semEmpresa} deliberação(ões) com interessado mas SEM empresa_id — não entram nas visões por empresa.`);
   }
 
   // Diretores possivelmente duplicados no cadastro (pares fuzzy ≥0.85).

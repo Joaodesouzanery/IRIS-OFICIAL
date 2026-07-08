@@ -59,6 +59,22 @@ type DuplicataPar = {
   dup: { id: string; nome: string; votos?: number };
 };
 
+type CompletudeAgencia = {
+  sigla: string;
+  reunioes: { com_deliberacao: number };
+  documentos_2026: { detectados: number };
+  deliberacoes: { finais: number; sem_voto: number };
+  votos: { total: number; nominais: number; inferidos: number };
+  diretores: { aprovados: number; com_voto: number; candidatos_pendentes: number };
+};
+
+type CompletudeResponse = {
+  ano: number;
+  por_agencia: CompletudeAgencia[];
+  totais: { documentos_2026_detectados: number; deliberacoes_finais: number; votos_total: number };
+  alertas: string[];
+};
+
 type VotosDiretoresResponse = {
   sources: MonitoramentoSite[];
   itens: MonitoramentoItem[];
@@ -187,6 +203,31 @@ export default function VotosDiretoresPage() {
 
   const [matchFeedback, setMatchFeedback] = useState<string | null>(null);
   const [matchError, setMatchError] = useState<string | null>(null);
+
+  const { data: completude } = useQuery({
+    queryKey: ["completude-2026"],
+    queryFn: () => api.get<CompletudeResponse>("/admin/completude-2026?year=2026"),
+  });
+
+  // Limpeza retroativa: recalcula a confiança dos candidatos legados com o matcher
+  // atual, colapsa cartões duplicados e AUTO-APROVA os que agora casam ≥0,85 →
+  // um clique resolve os cartões antigos presos a 60% e destrava os votos.
+  const recomputeMutation = useMutation({
+    mutationFn: () =>
+      api.post<{ grupos_auto_aprovados: number; cartoes_colapsados: number; votos_retroativos_criados: number }>(
+        "/admin/diretores/candidatos/recompute?dry_run=0", {},
+      ),
+    onSuccess: (res) => {
+      setMatchError(null);
+      setMatchFeedback(
+        `Recalculado: ${res.grupos_auto_aprovados} nome(s) auto-aprovado(s), ${res.cartoes_colapsados} cartão(ões) duplicado(s) removido(s), ${res.votos_retroativos_criados} voto(s) retroativo(s) criado(s).`,
+      );
+      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
+    },
+    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro ao recalcular candidatos"),
+  });
 
   const aprovarMutation = useMutation({
     mutationFn: (id: string) =>
@@ -356,7 +397,9 @@ export default function VotosDiretoresPage() {
           {backfillMutation.data.parcial ? (
             <>Cobertura ainda parcial{backfillMutation.data.erro_apos_progresso ? ` (${backfillMutation.data.erro_apos_progresso})` : ""} —
             clique de novo para continuar (o cron semanal também completa sozinho). </>
-          ) : null}
+          ) : (
+            <><strong>Cobertura 2026 completa</strong> — todas as reuniões já coletadas foram varridas. </>
+          )}
           Confirme os votos em <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
         </div>
       ) : null}
@@ -396,15 +439,26 @@ export default function VotosDiretoresPage() {
               <UserCheck className="w-4 h-4 text-brand" />
               <p className="section-label">Matches pendentes ({(candidatos ?? []).length})</p>
             </div>
-            <button
-              type="button"
-              className="btn-primary text-xs"
-              onClick={() => aprovarLoteMutation.mutate()}
-              disabled={aprovarLoteMutation.isPending}
-              title="Aprova em lote os matches ≥ 0,8 a diretores já cadastrados; novos nomes continuam 1-a-1."
-            >
-              {aprovarLoteMutation.isPending ? "Aprovando…" : "Aprovar lote (match ≥ 0,8)"}
-            </button>
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                type="button"
+                className="btn-secondary text-xs"
+                onClick={() => recomputeMutation.mutate()}
+                disabled={recomputeMutation.isPending || demoEnabled}
+                title="Recalcula a confiança dos cartões antigos com o matcher atual, junta os duplicados do mesmo nome e auto-aprova os que passam a casar ≥ 0,85 (destrava os votos presos)."
+              >
+                {recomputeMutation.isPending ? "Recalculando…" : "Recalcular matches"}
+              </button>
+              <button
+                type="button"
+                className="btn-primary text-xs"
+                onClick={() => aprovarLoteMutation.mutate()}
+                disabled={aprovarLoteMutation.isPending}
+                title="Aprova em lote os matches ≥ 0,8 a diretores já cadastrados; novos nomes continuam 1-a-1."
+              >
+                {aprovarLoteMutation.isPending ? "Aprovando…" : "Aprovar lote (match ≥ 0,8)"}
+              </button>
+            </div>
           </div>
           <p className="text-xs text-text-muted">
             Nomes detectados em atas/votos cujo match com um diretor ficou ambíguo (confiança média) e não geraram voto.
@@ -508,6 +562,58 @@ export default function VotosDiretoresPage() {
               </div>
             ))}
           </div>
+        </section>
+      )}
+
+      {/* ── Completude 2026 (conferência de que temos tudo, por agência) ──── */}
+      {completude && (completude.por_agencia ?? []).length > 0 && (
+        <section className="card space-y-3">
+          <div className="flex items-center justify-between gap-2 flex-wrap">
+            <p className="section-label">Completude {completude.ano}</p>
+            <p className="text-xs text-text-muted">
+              {completude.totais.documentos_2026_detectados} docs · {completude.totais.deliberacoes_finais} deliberações · {completude.totais.votos_total} votos
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-xs text-text-muted border-b border-border">
+                  <th className="py-1 pr-3 font-medium">Agência</th>
+                  <th className="py-1 px-2 font-medium text-right">Reuniões</th>
+                  <th className="py-1 px-2 font-medium text-right">Docs 2026</th>
+                  <th className="py-1 px-2 font-medium text-right">Deliberações</th>
+                  <th className="py-1 px-2 font-medium text-right">Votos (nom/inf)</th>
+                  <th className="py-1 px-2 font-medium text-right">Diretores c/ voto</th>
+                  <th className="py-1 pl-2 font-medium text-right">Pendentes</th>
+                </tr>
+              </thead>
+              <tbody>
+                {completude.por_agencia.map((a) => (
+                  <tr key={a.sigla} className="border-b border-border/50">
+                    <td className="py-1.5 pr-3 font-medium text-text-primary">{a.sigla}</td>
+                    <td className="py-1.5 px-2 text-right">{a.reunioes.com_deliberacao}</td>
+                    <td className="py-1.5 px-2 text-right">{a.documentos_2026.detectados}</td>
+                    <td className="py-1.5 px-2 text-right">
+                      {a.deliberacoes.finais}
+                      {a.deliberacoes.sem_voto > 0 ? <span className="text-warning"> ({a.deliberacoes.sem_voto} s/ voto)</span> : null}
+                    </td>
+                    <td className="py-1.5 px-2 text-right">{a.votos.nominais}/{a.votos.inferidos}</td>
+                    <td className="py-1.5 px-2 text-right">{a.diretores.com_voto}/{a.diretores.aprovados}</td>
+                    <td className="py-1.5 pl-2 text-right">
+                      {a.diretores.candidatos_pendentes > 0
+                        ? <span className="text-warning">{a.diretores.candidatos_pendentes}</span>
+                        : <span className="text-success">0</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {(completude.alertas ?? []).length > 0 && (
+            <ul className="text-xs text-text-muted space-y-1 list-disc pl-4">
+              {completude.alertas.map((a, i) => <li key={i}>{a}</li>)}
+            </ul>
+          )}
         </section>
       )}
 

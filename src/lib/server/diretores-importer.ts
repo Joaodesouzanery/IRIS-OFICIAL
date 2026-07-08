@@ -70,9 +70,21 @@ export async function importDiretoresFromUrl(
     id: d.id, nome: d.nome, nome_variantes: Array.isArray(d.nome_variantes) ? d.nome_variantes : [],
   }));
 
+  // Dedup por (agencia_id, nome_detectado): já existe um candidato PENDENTE com
+  // esse nome? Não cria um cartão paralelo (a unique real inclui source_hash, que
+  // muda se a URL da página mudar — sem este filtro, reimportar duplicaria cartão).
+  const { data: pendentes } = await db
+    .from("diretor_candidatos")
+    .select("nome_detectado")
+    .eq("agencia_id", agencia.id)
+    .eq("review_status", "pendente")
+    .in("nome_detectado", nomesDetectados);
+  const jaPendentes = new Set((pendentes ?? []).map((p: { nome_detectado: string }) => p.nome_detectado));
+
   const sourceHash = crypto.createHash("sha256").update(`${agencia.id}|${url}`).digest("hex");
   const rows = nomesDetectados
     .map((nome) => {
+      if (jaPendentes.has(nome)) return null; // já há cartão pendente para este nome
       const match = findBestMatch(nome, diretoresList);
       // Já existe com alta confiança → não recria candidato.
       if (!match.needsReview && !match.isNew) return null;

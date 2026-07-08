@@ -441,26 +441,43 @@ export async function discoverAntt2026Meetings(
   };
 }
 
-// Reuniões com ata/deliberação JÁ capturada não precisam de re-fetch da página.
-// União de duas fontes baratas: monitoramento_itens (caminho do backfill/check,
-// via metadata.meeting_url) e o staging do cron dedicado (documentos_coletados ⋈
-// antt_reunioes_coletadas). Falha ⇒ Set vazio (degrada p/ crawl completo).
+// Janela de frescor: reuniões dos últimos ~45 dias ainda podem ganhar uma ata
+// publicada com atraso, então continuam sendo revisitadas mesmo que já tenham
+// itens. Passado esse prazo, a página da reunião é estável e não precisa re-fetch.
+const ANTT_SKIP_FRESHNESS_MS = 45 * 24 * 60 * 60 * 1000;
+
+// Reuniões cuja página NÃO precisa de re-fetch (o que torna o backfill DEFINITIVO,
+// não "parcial eterno"). Uma reunião entra no skip quando:
+//   (a) já tem ata/deliberação capturada (decisão final — qualquer idade), OU
+//   (b) já tem QUALQUER item capturado E é antiga (data_reuniao além da janela de
+//       frescor) — a página do passado não muda, então re-buscá-la é desperdício.
+// Reuniões recentes só-com-voto/pauta continuam sendo revisitadas até a ata sair.
+// Fontes baratas: monitoramento_itens (via metadata.meeting_url + data_reuniao) e
+// o staging do cron (documentos_coletados ⋈ antt_reunioes_coletadas). Falha ⇒ Set
+// vazio (degrada p/ crawl completo, nunca bloqueia).
 export async function buildAnttMeetingSkipSet(
   db: SupabaseClient,
-  opts: { siteId?: string | null } = {},
+  opts: { siteId?: string | null; nowMs?: number } = {},
 ): Promise<Set<string>> {
   const skip = new Set<string>();
+  const cutoff = new Date((opts.nowMs ?? Date.now()) - ANTT_SKIP_FRESHNESS_MS)
+    .toISOString()
+    .slice(0, 10); // YYYY-MM-DD
   try {
     let itensQuery = db
       .from("monitoramento_itens")
-      .select("metadata")
-      .in("tipo", ["ata", "deliberacao"])
-      .limit(5000);
+      .select("tipo, data_reuniao, metadata")
+      .in("tipo", ["ata", "deliberacao", "voto", "pauta", "documento"])
+      .limit(8000);
     if (opts.siteId) itensQuery = itensQuery.eq("site_id", opts.siteId);
     const { data: itens } = await itensQuery;
     for (const item of itens ?? []) {
-      const meetingUrl = (item as { metadata?: { meeting_url?: unknown } }).metadata?.meeting_url;
-      if (typeof meetingUrl === "string" && meetingUrl) skip.add(meetingUrl);
+      const row = item as { tipo?: string; data_reuniao?: string | null; metadata?: { meeting_url?: unknown } };
+      const meetingUrl = row.metadata?.meeting_url;
+      if (typeof meetingUrl !== "string" || !meetingUrl) continue;
+      const isDecisaoFinal = row.tipo === "ata" || row.tipo === "deliberacao";
+      const isAntiga = typeof row.data_reuniao === "string" && row.data_reuniao !== "" && row.data_reuniao < cutoff;
+      if (isDecisaoFinal || isAntiga) skip.add(meetingUrl);
     }
 
     const { data: coletados } = await db

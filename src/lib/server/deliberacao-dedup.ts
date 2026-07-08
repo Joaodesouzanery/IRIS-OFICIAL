@@ -28,6 +28,16 @@ function anosCompativeis(a: string | null | undefined, b: string | null | undefi
   return a.slice(0, 4) === b.slice(0, 4);
 }
 
+// Normaliza número para comparação tolerante: minúsculas, remove não-alfanumérico
+// e zeros à esquerda de cada grupo de dígitos. "0487"≡"487", "DFQ-043"≡"DFQ 43".
+function normNumero(v: string | null | undefined): string {
+  if (!v) return "";
+  return v
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "")
+    .replace(/0+(\d)/g, "$1");
+}
+
 export async function findDeliberacaoExistente(
   db: Db,
   key: DeliberacaoDedupKey,
@@ -39,7 +49,7 @@ export async function findDeliberacaoExistente(
     if (numero) {
       const { data } = await db
         .from("deliberacoes")
-        .select("id, resultado, data_reuniao, reuniao_id")
+        .select("id, resultado, data_reuniao, reuniao_id, numero_deliberacao")
         .eq("agencia_id", key.agenciaId)
         .eq("numero_deliberacao", numero)
         .order("created_at", { ascending: true })
@@ -48,6 +58,24 @@ export async function findDeliberacaoExistente(
         anosCompativeis(row.data_reuniao, key.dataReuniao),
       );
       if (match) return match as DeliberacaoExistente;
+
+      // Tolerante: mesma data + número equivalente ("487"≡"0487"), pega variações
+      // de zeros/espaços que o .eq exato não casaria.
+      if (key.dataReuniao) {
+        const alvo = normNumero(numero);
+        const { data: mesmaData } = await db
+          .from("deliberacoes")
+          .select("id, resultado, data_reuniao, reuniao_id, numero_deliberacao")
+          .eq("agencia_id", key.agenciaId)
+          .eq("data_reuniao", key.dataReuniao)
+          .not("numero_deliberacao", "is", null)
+          .limit(200);
+        const eq = (mesmaData ?? []).find(
+          (row: DeliberacaoExistente & { numero_deliberacao?: string | null }) =>
+            normNumero(row.numero_deliberacao) === alvo,
+        );
+        if (eq) return eq as DeliberacaoExistente;
+      }
     }
 
     // Fallback: mesmo processo decidido na mesma reunião (data exata).

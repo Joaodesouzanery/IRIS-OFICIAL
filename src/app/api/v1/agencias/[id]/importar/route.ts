@@ -3,6 +3,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { getCuratedAgenciaImport, mandatoPercentual } from "@/lib/server/agencias-curated-import";
+import { findBestMatch } from "@/lib/server/name-matcher";
 
 export async function POST(
   req: NextRequest,
@@ -93,12 +94,23 @@ export async function POST(
       updated_at: new Date().toISOString(),
     };
 
-    const { data: existing } = await db
+    // Dedup FUZZY (não só ILIKE exato): "José Fernando Gomes Júnior" e "José
+    // Fernando de Mendonça Gomes Júnior", ou variações de acento, são o MESMO
+    // diretor. Sem isto, a importação curada criava duplicata (bug real visto em
+    // prod). Casa >=0.85 contra o cadastro da agência antes de decidir criar.
+    const { data: existentesAgencia } = await db
       .from("diretores")
-      .select("id")
-      .eq("agencia_id", params.id)
-      .ilike("nome", diretor.nome)
-      .maybeSingle();
+      .select("id, nome, nome_variantes")
+      .eq("agencia_id", params.id);
+    const listaExistentes = (existentesAgencia ?? []).map((d: { id: string; nome: string; nome_variantes?: unknown }) => ({
+      id: d.id,
+      nome: d.nome,
+      nome_variantes: Array.isArray(d.nome_variantes) ? (d.nome_variantes as string[]) : [],
+    }));
+    const matchExistente = findBestMatch(diretor.nome, listaExistentes);
+    const existing = matchExistente.diretorId && !matchExistente.needsReview
+      ? { id: matchExistente.diretorId }
+      : null;
 
     const write = existing?.id
       ? db.from("diretores").update(payload).eq("id", existing.id).select().single()

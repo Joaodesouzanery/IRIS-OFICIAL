@@ -24,20 +24,25 @@ export async function GET(req: NextRequest) {
   const db = createSupabaseServerClient();
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
 
-  let query = db
-    .from("votos")
-    .select(
-      `tipo_voto, is_divergente,
-       diretores!inner (id, nome, agencia_id)`
-    );
+  // Parte dos DIRETORES aprovados (não dos votos) para que TODO diretor apareça —
+  // inclusive com 0 voto. Antes o overview partia de `votos` com !inner, então
+  // diretor sem voto (ex.: ANTT com votos presos em candidatos) sumia da tabela.
+  let diretoresQuery = db
+    .from("diretores")
+    .select("id, nome, agencia_id")
+    .eq("review_status", "aprovado")
+    .limit(5000);
+  if (agenciaId) diretoresQuery = diretoresQuery.eq("agencia_id", agenciaId);
 
+  let votosQuery = db
+    .from("votos")
+    .select("tipo_voto, is_divergente, diretores!inner (id, nome, agencia_id)");
   if (agenciaId) {
-    query = query.eq("diretores.agencia_id", agenciaId);
+    votosQuery = votosQuery.eq("diretores.agencia_id", agenciaId);
   }
 
-  const { data, error } = await query;
-
-  if (error) {
+  const [diretoresRes, votosRes] = await Promise.all([diretoresQuery, votosQuery]);
+  if (diretoresRes.error || votosRes.error) {
     return NextResponse.json({ error: "Erro ao buscar overview de diretores" }, { status: 500 });
   }
 
@@ -45,12 +50,18 @@ export async function GET(req: NextRequest) {
     string,
     { nome: string; total: number; favoravel: number; desfavoravel: number; divergente: number }
   >();
+  // Semeia com todos os diretores aprovados (zeros).
+  for (const d of (diretoresRes.data ?? []) as Array<{ id: string; nome: string }>) {
+    stats.set(d.id, { nome: d.nome, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 });
+  }
 
-  for (const row of data ?? []) {
+  for (const row of votosRes.data ?? []) {
     const dir = (row as any).diretores;
-    const id = dir.id;
+    const id = dir?.id;
+    if (!id) continue;
+    // Diretor pode ter voto mas não estar na lista de aprovados (raro) — inclui mesmo assim.
     if (!stats.has(id)) {
-      stats.set(id, { nome: dir.nome, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 });
+      stats.set(id, { nome: dir.nome ?? "—", total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 });
     }
     const s = stats.get(id)!;
     s.total++;
