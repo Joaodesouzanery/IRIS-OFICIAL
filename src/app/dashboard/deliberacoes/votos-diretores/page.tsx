@@ -75,6 +75,13 @@ type CompletudeResponse = {
   alertas: string[];
 };
 
+type DedupResult = {
+  dry_run: boolean;
+  grupos_duplicados: number;
+  deliberacoes_em_dobro: number;
+  removidas: number;
+};
+
 type VotosDiretoresResponse = {
   sources: MonitoramentoSite[];
   itens: MonitoramentoItem[];
@@ -227,6 +234,26 @@ export default function VotosDiretoresPage() {
       queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
     },
     onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro ao recalcular candidatos"),
+  });
+
+  // Limpeza de deliberações duplicadas (legado, antes do dedup estrutural). Dois
+  // passos: primeiro verifica (dry-run) e mostra a contagem; só o 2º clique funde.
+  const [dedupPreview, setDedupPreview] = useState<DedupResult | null>(null);
+  const dedupMutation = useMutation({
+    mutationFn: (dryRun: boolean) =>
+      api.post<DedupResult>(`/admin/deliberacoes/dedup?dry_run=${dryRun ? "1" : "0"}`, {}),
+    onSuccess: (res) => {
+      setMatchError(null);
+      if (res.dry_run) {
+        setDedupPreview(res);
+      } else {
+        setDedupPreview(null);
+        setMatchFeedback(`Limpeza concluída: ${res.removidas} deliberação(ões) duplicada(s) removida(s), votos migrados.`);
+        queryClient.invalidateQueries({ queryKey: ["completude-2026"] });
+        queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      }
+    },
+    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro na limpeza de duplicatas"),
   });
 
   const aprovarMutation = useMutation({
@@ -614,6 +641,39 @@ export default function VotosDiretoresPage() {
               {completude.alertas.map((a, i) => <li key={i}>{a}</li>)}
             </ul>
           )}
+          {/* Manutenção: limpar deliberações duplicadas (legado). Verifica antes de fundir. */}
+          <div className="flex items-center gap-2 flex-wrap border-t border-border pt-2.5">
+            <button
+              type="button"
+              className="btn-secondary text-xs"
+              onClick={() => dedupMutation.mutate(true)}
+              disabled={dedupMutation.isPending || demoEnabled}
+              title="Verifica quantas deliberações estão em dobro (mesmo número/processo). Não altera nada."
+            >
+              {dedupMutation.isPending && dedupMutation.variables === true ? "Verificando…" : "Verificar duplicatas de deliberação"}
+            </button>
+            {dedupPreview && (
+              <>
+                <span className="text-xs text-text-muted">
+                  {dedupPreview.grupos_duplicados} grupo(s) · {dedupPreview.deliberacoes_em_dobro} em dobro.
+                </span>
+                {dedupPreview.deliberacoes_em_dobro > 0 && (
+                  <button
+                    type="button"
+                    className="btn-secondary text-xs text-error border-error/30 hover:bg-error/10"
+                    onClick={() => {
+                      if (window.confirm(`Fundir ${dedupPreview.deliberacoes_em_dobro} deliberação(ões) em dobro? Mantém a mais antiga e migra os votos. Ação irreversível.`)) {
+                        dedupMutation.mutate(false);
+                      }
+                    }}
+                    disabled={dedupMutation.isPending}
+                  >
+                    {dedupMutation.isPending && dedupMutation.variables === false ? "Fundindo…" : `Fundir ${dedupPreview.deliberacoes_em_dobro} duplicata(s)`}
+                  </button>
+                )}
+              </>
+            )}
+          </div>
         </section>
       )}
 
