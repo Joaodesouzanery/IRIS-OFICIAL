@@ -88,6 +88,12 @@ export default function GovernancaPage() {
   });
   const deliberacoes: Deliberacao[] = deliberacoesPag?.data ?? [];
 
+  // Indicadores REAIS por agência (não repete o global). Só agências com dados.
+  const { data: govAgencias } = useQuery({
+    queryKey: ["governanca-agencias"],
+    queryFn: () => api.get<{ por_agencia: Array<{ agencia_id: string; sigla: string; nome: string; total: number; consenso: number; deferimento: number; qualidade: number; sancao: number }> }>("/dashboard/governanca-agencias"),
+  });
+
   // ── Derived KPIs ─────────────────────────────────────────────────────────
 
   const taxaConsenso   = parseFloat(analytics?.taxa_consenso ?? "0");
@@ -122,17 +128,20 @@ export default function GovernancaPage() {
       }];
     }
 
-    // Global: build one row per agency using available data
-    return agencias.map((ag) => {
-      // Use global values as best estimate (we don't have per-agency detail here)
-      const sc = calcScore(taxaConsenso, pctDeferimento, avgConf, taxaSancao);
-      return {
-        id: ag.id, sigla: ag.sigla, nome: ag.nome,
-        score: sc, consenso: taxaConsenso, deferimento: pctDeferimento,
-        qualidade: avgConf, sancao: taxaSancao, total: overview?.total_deliberacoes ?? 0,
-      };
-    });
-  }, [agencias, agenciaId, taxaConsenso, pctDeferimento, avgConf, taxaSancao, overview]);
+    // Global: uma linha por agência com números REAIS (endpoint por-agência).
+    // Só mostra agências que têm deliberações — evita o antigo "68 idêntico" para
+    // ANA/ANAC/... sem dados.
+    const porAgencia = govAgencias?.por_agencia ?? [];
+    return porAgencia
+      .filter((a) => a.total > 0)
+      .map((a) => ({
+        id: a.agencia_id, sigla: a.sigla, nome: a.nome,
+        score: calcScore(a.consenso, a.deferimento, a.qualidade, a.sancao),
+        consenso: a.consenso, deferimento: a.deferimento,
+        qualidade: a.qualidade, sancao: a.sancao, total: a.total,
+      }))
+      .sort((x, y) => y.total - x.total);
+  }, [agencias, agenciaId, taxaConsenso, pctDeferimento, avgConf, taxaSancao, overview, govAgencias]);
 
   // ── Alerts ───────────────────────────────────────────────────────────────
 

@@ -7,6 +7,7 @@ import type {
   Mandato,
   MonitoramentoItem,
 } from "@/types";
+import { isResultadoPositivo } from "@/lib/utils";
 
 export const DEMO_ASSOCIADOS: Associado[] = [
   {
@@ -197,7 +198,7 @@ function computeConcordancia(delibs: Deliberacao[]) {
 }
 
 function buildCenarios(delibs: Deliberacao[], noticias: MonitoramentoItem[], associado: Associado) {
-  const deferidos = delibs.filter((d) => d.resultado === "Deferido" || d.resultado === "Aprovado").length;
+  const deferidos = delibs.filter((d) => isResultadoPositivo(d.resultado)).length;
   const restritivos = delibs.filter((d) => d.resultado === "Indeferido" || d.resultado === "Retirado de Pauta").length;
   const confidence = Math.min(0.9, Math.max(0.35, (delibs.length * 0.08) + (noticias.length * 0.04)));
   const base = `${delibs.length} decisões regulatório-administrativas e ${noticias.length} notícias de política pública monitoradas.`;

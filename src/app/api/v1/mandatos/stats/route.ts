@@ -37,10 +37,14 @@ export async function GET(req: NextRequest) {
   }
   const { count: diretores_ativos } = await diretoresQuery;
 
-  // Total deliberações + participações
+  // Total deliberações FINAIS (aproximação SQL do isFinalDecisionRecord: exclui
+  // ata-mãe e docs de apoio) — alinha o card ao Dashboard (28), sem contar
+  // ata-mãe/pauta/voto_individual que inflavam para 36.
   let deliberQuery = db
     .from("deliberacoes")
-    .select("id", { count: "exact", head: true });
+    .select("id", { count: "exact", head: true })
+    .not("tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
+    .or("tipo_documento.neq.ata,documento_pai_id.not.is.null");
   if (agenciaId) deliberQuery = deliberQuery.eq("agencia_id", agenciaId);
   const { count: total_deliberacoes } = await deliberQuery;
 

@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeOverview } from "@/lib/server/analytics-engine";
+import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
@@ -38,7 +39,7 @@ export async function GET(req: NextRequest) {
 
   const rows = (deliberacoes ?? []).filter(isFinalDecisionRecord);
   const total = rows.length;
-  const deferidos = rows.filter((r) => r.resultado === "Deferido").length;
+  const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
   const semResultado = rows.filter((r) => !r.resultado).length;
 

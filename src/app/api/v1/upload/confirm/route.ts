@@ -414,7 +414,16 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         // Sem isso, TODA ata (ANM/ANTT, classificadas import_counts_as_final=false)
         // era "mantida como apoio" e os votos das atas nunca entravam.
         const isImportableAta = d.tipo_documento === "ata" && Boolean(rawConfirm.ata_items?.length);
-        if ((!d.import_counts_as_final && !isImportableAta) || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento)) {
+        // ANTT: o "Voto DXX" é o voto NOMINAL real do relator. Só descartar como apoio
+        // ANTES perdia o dado mais valioso. Se tem relator + direção do voto, captura
+        // (ramo dedicado abaixo) em vez de ignorar.
+        const isAnttVotoCapturavel = d.tipo_documento === "voto_individual"
+          && Boolean(d.resultado)
+          && (Boolean(d.relator) || d.nomes_votacao.length > 0);
+        if (
+          ((!d.import_counts_as_final && !isImportableAta) || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento))
+          && !isAnttVotoCapturavel
+        ) {
           await markDocumentReviewed(db, d.documento_id, "ignored");
           results.push({
             filename: d.filename,
@@ -467,6 +476,87 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           tipoReuniao: d.tipo_reuniao,
           source: "upload-confirm",
         });
+
+        // ── ANTT: voto individual do relator (captura REAL + colegiado inferido) ──
+        // O "Voto DXX" carrega o voto NOMINAL do relator. Materializa a deliberação
+        // (dedup por número/processo+data — reusa/anexa se a ata já existir), grava o
+        // voto NOMINAL do relator e infere "Favorável" para os demais diretores
+        // PRESENTES (unanimidade). Assim TODOS os diretores ANTT aparecem (relator
+        // marcado "lido", resto "inferido"), não só quem já casava via ata.
+        if (isAnttVotoCapturavel) {
+          const relatorNome = (d.relator || d.nomes_votacao[0])!;
+          const empresaIdV = await resolveEmpresaId(db, d.interessado, effectiveAgenciaId, { cache: empresaCache, setor: d.microtema });
+          const existenteV = await findDeliberacaoExistente(db, {
+            agenciaId: effectiveAgenciaId, numeroDeliberacao: d.numero_deliberacao, processo: d.processo, dataReuniao: d.data_reuniao,
+          });
+          if (existenteV) {
+            await enrichDeliberacaoExistente(db, existenteV, { resultado: d.resultado, dataReuniao: d.data_reuniao, reuniaoId });
+          }
+          const presentesRaw = Array.isArray((d.extraction_raw as any)?.diretores_presentes)
+            ? ((d.extraction_raw as any).diretores_presentes as unknown[]).map((n) => String(n)).filter(Boolean)
+            : [];
+          const { data: delibV, error: errV } = existenteV
+            ? { data: { id: existenteV.id }, error: null }
+            : await db.from("deliberacoes").insert({
+                numero_deliberacao: d.numero_deliberacao, numero_reuniao: d.numero_reuniao,
+                reuniao_ordinaria: d.reuniao_ordinaria, tipo_reuniao: d.tipo_reuniao,
+                tipo_documento: "deliberacao", processo: d.processo, interessado: d.interessado,
+                empresa_id: empresaIdV, assunto: d.assunto, procedencia: d.procedencia, relator: relatorNome,
+                item_numero: d.item_numero, microtema: d.microtema, resultado: d.resultado,
+                pauta_interna: false, data_reuniao: d.data_reuniao, data_publicacao: d.data_publicacao,
+                agencia_id: effectiveAgenciaId, ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
+                auto_classified: true, extraction_confidence: d.extraction_confidence,
+                resumo_pleito: d.resumo_pleito, fundamento_decisao: d.fundamento_decisao,
+                upload_job_id: attachment.upload_job_id,
+                raw_extraction: withAttachmentRaw({
+                  ...(d.extraction_raw ?? {}),
+                  documento_antt_tipo: "voto_individual",
+                  diretor_autor_voto: relatorNome,
+                  // Persistir nomes p/ backfill retroativo (relator + presentes).
+                  nomes_votacao: [relatorNome],
+                  diretores_presentes: presentesRaw,
+                }, attachment),
+              }).select("id").single();
+
+          if (errV || !delibV) {
+            results.push({ filename: d.filename, status: "error", error: "Erro ao materializar voto ANTT" });
+            continue;
+          }
+
+          // Candidato do relator (para backfill se ainda não casar no cadastro).
+          await recordDirectorCandidates(db, [relatorNome], diretoresList, {
+            agencia_id: effectiveAgenciaId, filename: d.filename, source_type: "deliberacao",
+            source_url: extractSourceUrl(d.extraction_raw),
+            source_hash: hashEvidence(`${d.filename}|${d.numero_deliberacao ?? ""}|${d.processo ?? ""}`),
+            deliberacao_id: delibV.id as string, numero_deliberacao: d.numero_deliberacao, processo: d.processo, tipo_documento: "deliberacao",
+          });
+
+          const relatorMatch = findBestMatch(relatorNome, diretoresList);
+          const relatorId = relatorMatch.diretorId && !relatorMatch.needsReview ? relatorMatch.diretorId : null;
+          // Colegiado presente (exceto relator) → inferência favorável; relator → nominal.
+          const rosterPresentes = presentesRaw
+            .map((nome) => {
+              const m = findBestMatch(nome, diretoresList);
+              return m.diretorId && !m.needsReview ? diretoresList.find((x) => x.id === m.diretorId) ?? null : null;
+            })
+            .filter((x): x is DiretorVoteRecord => Boolean(x) && x!.id !== relatorId);
+          const inferidos = buildVotoRows({
+            deliberacao_id: delibV.id as string, nomes: [], nomesContra: [], diretoresList,
+            activeDiretoresList: rosterPresentes, resultado: d.resultado, inferFromMandate: rosterPresentes.length > 0,
+          });
+          const nominalRelator = relatorId
+            ? buildVotoRows({
+                deliberacao_id: delibV.id as string, nomes: [relatorNome], nomesContra: [], diretoresList,
+                activeDiretoresList: [], resultado: d.resultado, inferFromMandate: false,
+              })
+            : [];
+          const votoRowsV = [...inferidos, ...nominalRelator];
+          if (votoRowsV.length > 0) await upsertVotosProtegido(db, votoRowsV);
+
+          await markDocumentReviewed(db, d.documento_id, "confirmed", delibV.id as string);
+          results.push({ filename: d.filename, status: "created", deliberacao_id: delibV.id as string, documento_id: d.documento_id ?? null, message: "Voto ANTT capturado: relator (lido) + colegiado (inferido)." });
+          continue;
+        }
 
         if (d.tipo_documento === "ata" && rawConfirm.ata_items && rawConfirm.ata_items.length > 0) {
           const documentPrefix = internalAnttDocumentPrefix(d);

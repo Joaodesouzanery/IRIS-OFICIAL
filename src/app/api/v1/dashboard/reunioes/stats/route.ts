@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeReunioesStats } from "@/lib/server/analytics-engine";
+import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
@@ -47,7 +48,7 @@ export async function GET(req: NextRequest) {
     if (!monthStats.has(key)) monthStats.set(key, { total: 0, deferido: 0, indeferido: 0 });
     const s = monthStats.get(key)!;
     s.total++;
-    if (row.resultado === "Deferido") s.deferido++;
+    if (isResultadoPositivo(row.resultado)) s.deferido++;
     else if (row.resultado === "Indeferido") s.indeferido++;
   }
 

@@ -34,25 +34,31 @@ export async function GET(req: NextRequest) {
     .limit(5000);
   if (agenciaId) diretoresQuery = diretoresQuery.eq("agencia_id", agenciaId);
 
+  // is_nominal p/ separar voto LIDO (nominal) de INFERIDO por unanimidade/mandato.
   let votosQuery = db
     .from("votos")
-    .select("tipo_voto, is_divergente, diretores!inner (id, nome, agencia_id)");
+    .select("tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)");
   if (agenciaId) {
     votosQuery = votosQuery.eq("diretores.agencia_id", agenciaId);
   }
 
-  const [diretoresRes, votosRes] = await Promise.all([diretoresQuery, votosQuery]);
+  const [diretoresRes, votosRes, mandatosRes] = await Promise.all([
+    diretoresQuery,
+    votosQuery,
+    db.from("mandatos").select("diretor_id").limit(20000),
+  ]);
   if (diretoresRes.error || votosRes.error) {
     return NextResponse.json({ error: "Erro ao buscar overview de diretores" }, { status: 500 });
   }
+  const comMandato = new Set((mandatosRes.data ?? []).map((m: { diretor_id: string }) => m.diretor_id));
 
   const stats = new Map<
     string,
-    { nome: string; total: number; favoravel: number; desfavoravel: number; divergente: number }
+    { nome: string; total: number; favoravel: number; desfavoravel: number; divergente: number; nominais: number; inferidos: number }
   >();
   // Semeia com todos os diretores aprovados (zeros).
   for (const d of (diretoresRes.data ?? []) as Array<{ id: string; nome: string }>) {
-    stats.set(d.id, { nome: d.nome, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 });
+    stats.set(d.id, { nome: d.nome, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 });
   }
 
   for (const row of votosRes.data ?? []) {
@@ -61,16 +67,21 @@ export async function GET(req: NextRequest) {
     if (!id) continue;
     // Diretor pode ter voto mas não estar na lista de aprovados (raro) — inclui mesmo assim.
     if (!stats.has(id)) {
-      stats.set(id, { nome: dir.nome ?? "—", total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 });
+      stats.set(id, { nome: dir.nome ?? "—", total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 });
     }
     const s = stats.get(id)!;
     s.total++;
     if ((row as any).tipo_voto === "Favoravel") s.favoravel++;
     else if ((row as any).tipo_voto === "Desfavoravel") s.desfavoravel++;
     if ((row as any).is_divergente) s.divergente++;
+    if ((row as any).is_nominal) s.nominais++; else s.inferidos++;
   }
 
   const result = [...stats.entries()]
+    // Exclui fantasmas/ex-diretores: sem mandato E sem nenhum voto (relatores citados
+    // em ata que viraram "diretor", ex-mandatos encerrados). Diretor com mandato OU
+    // com voto permanece.
+    .filter(([id, s]) => comMandato.has(id) || s.total > 0)
     .map(([id, s]) => ({
       diretor_id: id,
       diretor_nome: s.nome,
@@ -78,6 +89,8 @@ export async function GET(req: NextRequest) {
       favoravel: s.favoravel,
       desfavoravel: s.desfavoravel,
       divergente: s.divergente,
+      nominais: s.nominais,
+      inferidos: s.inferidos,
       pct_favor: s.total > 0 ? parseFloat(((s.favoravel / s.total) * 100).toFixed(1)) : 0,
     }))
     .sort((a, b) => b.total - a.total);

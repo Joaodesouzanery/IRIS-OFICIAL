@@ -763,7 +763,12 @@ export default function VotosDiretoresPage() {
         <div className="flex items-center justify-between gap-2 flex-wrap">
           <div className="flex items-center gap-2">
             <Users className="w-4 h-4 text-brand" />
-            <p className="section-label">Métricas por diretor</p>
+            <div>
+              <p className="section-label">Métricas por diretor</p>
+              <p className="text-[11px] text-text-muted">
+                <strong>lido</strong> = voto extraído do documento · <strong>inferido</strong> = por unanimidade/mandato (proxy)
+              </p>
+            </div>
           </div>
           <select className="select w-44" value={agenciaId} onChange={(e) => { setAgenciaId(e.target.value); setSelectedDirector(null); }}>
             <option value="">Todas as agências</option>
@@ -799,7 +804,14 @@ export default function VotosDiretoresPage() {
                       )}
                       onClick={() => toggleDirector(d)}
                     >
-                      <td className="py-2 pr-3 text-text-primary font-medium">{d.diretor_nome}</td>
+                      <td className="py-2 pr-3 text-text-primary font-medium">
+                        {d.diretor_nome}
+                        {(d.nominais ?? 0) + (d.inferidos ?? 0) > 0 && (
+                          <span className="block text-[10px] font-normal text-text-muted">
+                            {d.nominais ?? 0} lido{(d.nominais ?? 0) === 1 ? "" : "s"} · {d.inferidos ?? 0} inferido{(d.inferidos ?? 0) === 1 ? "" : "s"}
+                          </span>
+                        )}
+                      </td>
                       <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.total)}</td>
                       <td className="py-2 px-3 text-right text-success">{formatNumber(d.favoravel)}</td>
                       <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.desfavoravel)}</td>

@@ -8,6 +8,7 @@
 import type { Deliberacao, VotoEmbutido } from "@/types";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
+import { isOrgaoInterno } from "@/lib/server/empresa-resolver";
 import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -73,7 +74,7 @@ export function extractDirectors(delibs: Deliberacao[]) {
 export function computeOverview(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = excludeAtaParents(filterByAgencia(delibs, agenciaId));
   const total = rows.length;
-  const deferidos = rows.filter((r) => r.resultado === "Deferido").length;
+  const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
   const sem_resultado = rows.filter((r) => !r.resultado).length;
 
@@ -120,7 +121,7 @@ export function computeMicrotemas(delibs: Deliberacao[], agenciaId?: string | nu
     if (!stats.has(m)) stats.set(m, { total: 0, deferido: 0, indeferido: 0 });
     const s = stats.get(m)!;
     s.total++;
-    if (d.resultado === "Deferido") s.deferido++;
+    if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
   }
   return [...stats.entries()]
@@ -212,7 +213,7 @@ export function computeReunioesStats(delibs: Deliberacao[], agenciaId?: string |
     if (!byMonth.has(period)) byMonth.set(period, { total: 0, deferido: 0, indeferido: 0 });
     const s = byMonth.get(period)!;
     s.total++;
-    if (d.resultado === "Deferido") s.deferido++;
+    if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
   }
   return [...byMonth.entries()]
@@ -590,7 +591,7 @@ export function computeMandatosAnalytics(delibs: Deliberacao[], agenciaId?: stri
     if (!byMonth.has(period)) byMonth.set(period, { total: 0, deferido: 0, indeferido: 0 });
     const s = byMonth.get(period)!;
     s.total++;
-    if (d.resultado === "Deferido") s.deferido++;
+    if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
   }
   const evolucao_mensal = [...byMonth.entries()]
@@ -708,6 +709,7 @@ export function computeEmpresas(delibs: Deliberacao[], agenciaId?: string | null
 
   for (const d of rows) {
     if (!d.interessado) continue;
+    if (isOrgaoInterno(d.interessado)) continue; // órgão interno não é empresa regulada
     const key = canonicalizeEmpresa(d.interessado) || d.interessado;
     let entry = map.get(key);
     if (!entry) {

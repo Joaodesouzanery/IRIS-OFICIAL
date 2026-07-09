@@ -7,10 +7,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeEmpresas } from "@/lib/server/analytics-engine";
+import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
+import { isOrgaoInterno } from "@/lib/server/empresa-resolver";
 
 
 export async function GET(req: NextRequest) {
@@ -50,6 +52,8 @@ export async function GET(req: NextRequest) {
   }>();
   for (const d of (data ?? []).filter(isFinalDecisionRecord)) {
     if (!d.interessado) continue;
+    // Órgão interno (Superintendência/Diretoria/Agência...) não é empresa regulada.
+    if (!d.empresa_id && isOrgaoInterno(d.interessado)) continue;
     const empresa = Array.isArray(d.empresas) ? d.empresas[0] : d.empresas;
     const key = d.empresa_id ?? `canon:${canonicalizeEmpresa(d.interessado)}`;
     const displayNome = empresa?.nome_exibicao ?? d.interessado;
@@ -59,7 +63,7 @@ export async function GET(req: NextRequest) {
     const s = map.get(key)!;
     if (displayNome.length > s.nome.length) s.nome = displayNome;
     s.total++;
-    if (d.resultado === "Deferido") s.deferido++;
+    if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
     if (!s.ultima || (d.data_reuniao ?? "") > s.ultima) s.ultima = d.data_reuniao ?? "";
     if (d.microtema) s.microtemas.add(d.microtema);

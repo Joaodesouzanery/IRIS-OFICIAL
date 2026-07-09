@@ -78,7 +78,8 @@ export default function PainelRegulatorioPage() {
       const rows = microtemas.filter((m) => cat.microtemas.includes(m.microtema));
       const total    = rows.reduce((s, m) => s + m.total, 0);
       const deferido = rows.reduce((s, m) => s + m.deferido, 0);
-      return { ...cat, rows, total, deferido, pct_deferido: total > 0 ? (deferido / total) * 100 : 0 };
+      const indeferido = rows.reduce((s, m) => s + (m.indeferido ?? 0), 0);
+      return { ...cat, rows, total, deferido, indeferido, pct_deferido: total > 0 ? (deferido / total) * 100 : 0 };
     }),
     [microtemas]
   );
@@ -328,7 +329,7 @@ export default function PainelRegulatorioPage() {
                   </td>
                   <td className="px-3 py-2.5 font-mono text-text-primary">{cat.total}</td>
                   <td className="px-3 py-2.5 font-mono text-success">{cat.deferido}</td>
-                  <td className="px-3 py-2.5 font-mono text-error">{cat.total - cat.deferido}</td>
+                  <td className="px-3 py-2.5 font-mono text-error">{cat.indeferido}</td>
                   <td className="px-3 py-2.5">
                     <div className="flex items-center gap-2">
                       <div className="flex-1 bg-bg-hover rounded-full h-1.5 w-20">

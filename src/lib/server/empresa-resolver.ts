@@ -8,6 +8,15 @@ import { canonicalizeEmpresa, findBestEmpresaMatch, type EmpresaRecord } from "@
 
 export type EmpresaCache = Map<string, EmpresaRecord[]>;
 
+// Órgãos INTERNOS (da própria agência/administração) NÃO são empresas reguladas.
+// O parser costuma pegar o "Interessado:"/"Proponente:" que, em pautas/atas, é a
+// Superintendência proponente — poluindo o ranking de "Empresas Reguladas".
+const ORGAO_INTERNO_RE = /\b(superintend[êe]ncia|diretoria|coordena[çc][ãa]o|ger[êe]ncia|secretaria|assessoria|procuradoria|ag[êe]ncia\s+(nacional|reguladora|de\s+transporte)|minist[ée]rio|autarquia|departamento|n[úu]cleo|comiss[ãa]o\s+(interna|de\s+[ée]tica))\b/i;
+
+export function isOrgaoInterno(nome: string | null | undefined): boolean {
+  return Boolean(nome && ORGAO_INTERNO_RE.test(nome));
+}
+
 async function loadEmpresas(db: any, agenciaId: string, cache?: EmpresaCache): Promise<EmpresaRecord[]> {
   const cached = cache?.get(agenciaId);
   if (cached) return cached;
@@ -31,6 +40,9 @@ export async function resolveEmpresaId(
   options: { cache?: EmpresaCache; setor?: string | null } = {},
 ): Promise<string | null> {
   if (!interessado || !interessado.trim() || !agenciaId) return null;
+  // Não transforma órgão interno (Superintendência/Diretoria/Agência...) em empresa.
+  // O interessado-texto permanece na deliberação; só não vira nó de "empresa regulada".
+  if (isOrgaoInterno(interessado)) return null;
   const nomeNorm = canonicalizeEmpresa(interessado);
   if (!nomeNorm || nomeNorm.length < 3) return null;
 

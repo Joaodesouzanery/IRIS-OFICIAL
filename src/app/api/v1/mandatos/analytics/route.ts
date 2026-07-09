@@ -9,6 +9,8 @@ import { demoData } from "@/lib/demo-data";
 import type { MandatosAnalytics } from "@/types";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMandatosAnalytics } from "@/lib/server/analytics-engine";
+import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 
@@ -27,10 +29,13 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  // Busca deliberações com votos para calcular litígio/consenso
+  // Busca deliberações com votos para calcular litígio/consenso.
+  // Inclui os campos de classificação para filtrar só DECISÕES FINAIS (exclui
+  // ata-mãe/pauta/voto_individual/itens sem resultado) — senão a fatia "Sem
+  // resultado" incha e o total (36) diverge do Dashboard (28).
   let baseQ = db
     .from("deliberacoes")
-    .select("id, resultado, microtema, data_reuniao, votos(tipo_voto, is_divergente)");
+    .select("id, resultado, microtema, data_reuniao, tipo_documento, documento_pai_id, raw_extraction, votos(tipo_voto, is_divergente)");
   if (agenciaId) baseQ = baseQ.eq("agencia_id", agenciaId);
   const { data: delibs, error } = await baseQ;
 
@@ -38,10 +43,11 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar analytics" }, { status: 500 });
   }
 
-  const rows = (delibs ?? []) as Array<{
+  const rows = ((delibs ?? []) as Array<{
     id: string; resultado: string | null; microtema: string | null; data_reuniao: string | null;
+    tipo_documento: string | null; documento_pai_id: string | null; raw_extraction: any;
     votos: Array<{ tipo_voto: string; is_divergente: boolean }>;
-  }>;
+  }>).filter((d) => isFinalDecisionRecord(d as any));
 
   const total = rows.length;
   let comLitigio = 0, sancao = 0;
@@ -61,7 +67,7 @@ export async function GET(req: NextRequest) {
       if (!byMonth.has(period)) byMonth.set(period, { total: 0, deferido: 0, indeferido: 0 });
       const s = byMonth.get(period)!;
       s.total++;
-      if (d.resultado === "Deferido") s.deferido++;
+      if (isResultadoPositivo(d.resultado)) s.deferido++;
       else if (d.resultado === "Indeferido") s.indeferido++;
     }
   }

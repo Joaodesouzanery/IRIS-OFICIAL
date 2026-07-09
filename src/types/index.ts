@@ -358,6 +358,9 @@ export interface DiretorOverviewItem {
   desfavoravel: number;
   divergente: number;
   pct_favor: number;
+  /** Votos LIDOS do documento (nominais) vs INFERIDOS por unanimidade/mandato. */
+  nominais?: number;
+  inferidos?: number;
 }
 
 export interface DiretorVotoItem {

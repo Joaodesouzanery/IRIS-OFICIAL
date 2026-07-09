@@ -73,6 +73,7 @@ export async function GET(req: NextRequest) {
        interessado, processo, microtema, area_regulatoria, resultado, pauta_interna,
        extraction_confidence, agencia_id, created_at,
        tipo_documento, relator, item_numero, documento_pai_id, assunto,
+       resumo_pleito, fundamento_decisao,
        upload_job_id, raw_extraction,
        agencias (sigla, nome),
        votos (id, tipo_voto, is_divergente, diretor_id,
