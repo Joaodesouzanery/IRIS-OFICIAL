@@ -59,6 +59,10 @@ ver a skill `iris-migrations`. RLS/indexação/pooling: `.agents/skills/supabase
   nem error gravam). Rotas de crawl/coleta usam orçamento de tempo (`src/lib/server/time-budget.ts`)
   para parar graciosamente. Sem segredos versionados; segredos só em env do Vercel/Supabase.
 
+## Pendências e operação
+Ações manuais recorrentes, datas sensíveis (ex.: mandatos interinos ANM vencem 30/11/2026) e itens
+adiados por decisão: **`docs/PENDENCIAS.md`** — atualizar ao resolver/adiar pendências.
+
 ## Dados / LGPD
 Diretores são agentes públicos — base legal `public_official_function`. A esteira de votos é a
 FONTE ÚNICA dos módulos; ver o roadmap e migrations pendentes na memória do projeto

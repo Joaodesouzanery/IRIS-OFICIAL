@@ -236,6 +236,37 @@ export default function VotosDiretoresPage() {
     onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro ao recalcular candidatos"),
   });
 
+  // Reprocesso em lote dos "Voto DXX" ANTT ignorados pelo confirm antigo: dry-run
+  // conta; 2º clique re-enfileira (o cron processa e o auto-confirm materializa).
+  const [reprocessPreview, setReprocessPreview] = useState<{ encontrados: number } | null>(null);
+  const reprocessMutation = useMutation({
+    mutationFn: (dryRun: boolean) =>
+      api.post<{ dry_run: boolean; encontrados: number; reenfileirados: number; falhas: number }>(
+        `/admin/upload/reprocess-ignorados?dry_run=${dryRun ? "1" : "0"}`, {},
+      ),
+    onSuccess: (res) => {
+      setMatchError(null);
+      if (res.dry_run) {
+        setReprocessPreview({ encontrados: res.encontrados });
+      } else {
+        setReprocessPreview(null);
+        setMatchFeedback(`${res.reenfileirados} documento(s) re-enfileirado(s) para reprocessamento${res.falhas ? ` (${res.falhas} falha(s))` : ""}. Rode "Processar atas/votos" e depois "Auto-confirmar".`);
+        queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
+      }
+    },
+    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro no reprocessamento"),
+  });
+
+  // Fila de revisão — o fluxo é zero-toque; isto lista só o que genuinamente
+  // precisa de olho humano (exceção, não regra), sem sair da tela.
+  const { data: pendentesRevisao } = useQuery({
+    queryKey: ["docs-review-pending-colegiado"],
+    queryFn: () =>
+      api.get<{ total: number; data: Array<{ id: string; filename: string | null; tipo_documento: string | null; agencia?: { sigla?: string } | null }> }>(
+        "/upload/documentos?status=review_pending&limit=8",
+      ).catch(() => ({ total: 0, data: [] })),
+  });
+
   // Limpeza de deliberações duplicadas (legado, antes do dedup estrutural). Dois
   // passos: primeiro verifica (dry-run) e mostra a contagem; só o 2º clique funde.
   const [dedupPreview, setDedupPreview] = useState<DedupResult | null>(null);
@@ -427,7 +458,7 @@ export default function VotosDiretoresPage() {
           ) : (
             <><strong>Cobertura 2026 completa</strong> — todas as reuniões já coletadas foram varridas. </>
           )}
-          Confirme os votos em <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
+          Os documentos são processados e confirmados automaticamente; o que precisar de revisão aparece no card &ldquo;Revisão humana&rdquo;.
         </div>
       ) : null}
       {backfillMutation.error ? (
@@ -457,6 +488,56 @@ export default function VotosDiretoresPage() {
           {enqueueMutation.error instanceof Error ? enqueueMutation.error.message : "Erro ao processar atas/votos"}
         </div>
       ) : null}
+
+      {/* ── Revisão humana (exceção do fluxo automático) + reentrada do legado ── */}
+      {((pendentesRevisao?.total ?? 0) > 0 || reprocessPreview || !demoEnabled) && (
+        <section className="card space-y-3">
+          <div className="flex items-center justify-between gap-3 flex-wrap">
+            <div className="flex items-center gap-2">
+              <FileText className="w-4 h-4 text-brand" />
+              <div>
+                <p className="section-label">Revisão humana {`(${pendentesRevisao?.total ?? 0})`}</p>
+                <p className="text-[11px] text-text-muted">
+                  A esteira roda sozinha (coleta → extração → auto-confirmação). Aqui fica só o que o gate conservador não confirmou.
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              className="btn-secondary text-xs"
+              onClick={() => (reprocessPreview ? reprocessMutation.mutate(false) : reprocessMutation.mutate(true))}
+              disabled={reprocessMutation.isPending || demoEnabled}
+              title="Reprocessa em lote os votos/atas da ANTT descartados pela versão antiga (1º clique conta; 2º confirma). Depois o cron processa e auto-confirma os inequívocos."
+            >
+              {reprocessMutation.isPending
+                ? "Reprocessando…"
+                : reprocessPreview
+                  ? `Re-enfileirar ${reprocessPreview.encontrados} ignorado(s)`
+                  : "Reprocessar votos ignorados"}
+            </button>
+          </div>
+          {(pendentesRevisao?.data ?? []).length > 0 ? (
+            <div className="space-y-1.5">
+              {(pendentesRevisao?.data ?? []).map((doc) => (
+                <div key={doc.id} className="flex items-center justify-between gap-3 text-sm border border-border rounded-card px-3 py-2">
+                  <span className="truncate text-text-primary">
+                    {doc.filename ?? doc.id}
+                    <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
+                  </span>
+                  <a href="/dashboard/upload" className="text-brand text-xs hover:underline shrink-0">Revisar →</a>
+                </div>
+              ))}
+              {(pendentesRevisao?.total ?? 0) > (pendentesRevisao?.data ?? []).length && (
+                <p className="text-xs text-text-muted">
+                  + {(pendentesRevisao!.total) - (pendentesRevisao!.data.length)} outro(s) em <a href="/dashboard/upload" className="text-brand hover:underline">Upload de PDFs</a>.
+                </p>
+              )}
+            </div>
+          ) : (
+            <p className="text-sm text-text-muted">Nada aguardando revisão — a esteira automática está em dia.</p>
+          )}
+        </section>
+      )}
 
       {/* ── Matches de diretor pendentes de revisão ──────────────────────── */}
       {(candidatos ?? []).length > 0 && (
@@ -752,7 +833,7 @@ export default function VotosDiretoresPage() {
         <div className="flex items-center gap-2 pt-2 border-t border-border">
           <Upload className="w-4 h-4 text-text-muted" />
           <p className="text-xs text-text-muted">
-            Inserção de PDFs e ZIPs: para enviar documentos já baixados e revisar os votos antes de gerar métricas, use o{" "}
+            Opção secundária: para enviar manualmente um PDF/ZIP que a coleta automática não alcançou, use o{" "}
             <a href="/dashboard/upload" className="text-brand hover:underline">Upload de PDFs</a>.
           </p>
         </div>

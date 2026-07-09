@@ -13,6 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { canAutoConfirm, buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
+import { findBestMatch } from "@/lib/server/name-matcher";
 import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
@@ -51,6 +52,29 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
 
   const { data: docs, error } = await query;
   if (error) return NextResponse.json({ error: "Falha ao listar documentos para auto-confirmação." }, { status: 500 });
+
+  // Voto individual: verifica se o RELATOR casa ≥0.85 com diretor cadastrado
+  // (exigência do gate — a rota tem o db; canAutoConfirm lê relator_match_ok).
+  const diretoresCache = new Map<string, Array<{ id: string; nome: string; nome_variantes: string[] }>>();
+  async function diretoresDe(agenciaId: string) {
+    const cached = diretoresCache.get(agenciaId);
+    if (cached) return cached;
+    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("agencia_id", agenciaId);
+    const lista = (data ?? []).map((x: any) => ({
+      id: x.id, nome: x.nome,
+      nome_variantes: Array.isArray(x.nome_variantes) ? x.nome_variantes : [],
+    }));
+    diretoresCache.set(agenciaId, lista);
+    return lista;
+  }
+  for (const doc of (docs ?? []) as any[]) {
+    const fields = doc?.campos_detectados?.preview?.fields ?? {};
+    const tipo = String(fields.tipo_documento ?? doc.tipo_documento ?? "");
+    if (tipo === "voto_individual" && fields.relator && doc.agencia_id) {
+      const match = findBestMatch(String(fields.relator), await diretoresDe(doc.agencia_id));
+      doc.relator_match_ok = Boolean(match.diretorId) && !match.needsReview;
+    }
+  }
 
   const elegiveis: any[] = [];
   const pulados: Array<{ id: string; reason: string }> = [];

@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { EmpresaStats, Agencia, Deliberacao, EmpresaDetalhe } from "@/types";
-import { getMicrotemaLabel, getMicrotemaColor, formatDate, formatNumber, cn } from "@/lib/utils";
+import { getMicrotemaLabel, getMicrotemaColor, formatDate, formatNumber, cn, isResultadoPositivo } from "@/lib/utils";
 import { ChevronDown, ChevronUp, Search, Building2, TrendingUp, TrendingDown, Minus, AlertTriangle, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { HelpTooltip } from "@/components/ui/HelpTooltip";
@@ -364,7 +364,7 @@ export default function EmpresasPage() {
                                 </td>
                                 <td className={cn(
                                   "px-2 py-2 font-medium",
-                                  d.resultado === "Deferido" ? "text-success" : "text-error"
+                                  isResultadoPositivo(d.resultado) ? "text-success" : d.resultado === "Indeferido" ? "text-error" : "text-text-muted"
                                 )}>
                                   {d.resultado ?? "—"}
                                 </td>

@@ -477,24 +477,30 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           source: "upload-confirm",
         });
 
-        // ── ANTT: voto individual do relator (captura REAL + colegiado inferido) ──
-        // O "Voto DXX" carrega o voto NOMINAL do relator. Materializa a deliberação
-        // (dedup por número/processo+data — reusa/anexa se a ata já existir), grava o
-        // voto NOMINAL do relator e infere "Favorável" para os demais diretores
-        // PRESENTES (unanimidade). Assim TODOS os diretores ANTT aparecem (relator
-        // marcado "lido", resto "inferido"), não só quem já casava via ata.
+        // ── ANTT: voto individual do relator — grava SÓ o voto NOMINAL do relator ──
+        // O "Voto DXX" é a fonte do voto LIDO do relator. O colegiado completo vem da
+        // ATA (via de ata com roster + backfill); inferir presentes a partir do texto
+        // do voto inventava presença (QA D3). Anti-duplicação (QA D4): sem chave de
+        // dedup (nem processo, nem data) NÃO materializa — fica em revisão.
         if (isAnttVotoCapturavel) {
           const relatorNome = (d.relator || d.nomes_votacao[0])!;
+          if (!d.processo && !d.data_reuniao) {
+            results.push({
+              filename: d.filename,
+              status: "document_saved",
+              documento_id: d.documento_id ?? null,
+              message: "Voto ANTT sem processo e sem data — mantido em revisão para evitar duplicata.",
+            });
+            continue;
+          }
           const empresaIdV = await resolveEmpresaId(db, d.interessado, effectiveAgenciaId, { cache: empresaCache, setor: d.microtema });
           const existenteV = await findDeliberacaoExistente(db, {
-            agenciaId: effectiveAgenciaId, numeroDeliberacao: d.numero_deliberacao, processo: d.processo, dataReuniao: d.data_reuniao,
+            agenciaId: effectiveAgenciaId, numeroDeliberacao: d.numero_deliberacao,
+            processo: d.processo, dataReuniao: d.data_reuniao, numeroReuniao: d.numero_reuniao,
           });
           if (existenteV) {
             await enrichDeliberacaoExistente(db, existenteV, { resultado: d.resultado, dataReuniao: d.data_reuniao, reuniaoId });
           }
-          const presentesRaw = Array.isArray((d.extraction_raw as any)?.diretores_presentes)
-            ? ((d.extraction_raw as any).diretores_presentes as unknown[]).map((n) => String(n)).filter(Boolean)
-            : [];
           const { data: delibV, error: errV } = existenteV
             ? { data: { id: existenteV.id }, error: null }
             : await db.from("deliberacoes").insert({
@@ -512,9 +518,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   ...(d.extraction_raw ?? {}),
                   documento_antt_tipo: "voto_individual",
                   diretor_autor_voto: relatorNome,
-                  // Persistir nomes p/ backfill retroativo (relator + presentes).
+                  // Persistir o nome p/ backfill retroativo (applyRetroactiveVotes).
                   nomes_votacao: [relatorNome],
-                  diretores_presentes: presentesRaw,
                 }, attachment),
               }).select("id").single();
 
@@ -533,28 +538,21 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
           const relatorMatch = findBestMatch(relatorNome, diretoresList);
           const relatorId = relatorMatch.diretorId && !relatorMatch.needsReview ? relatorMatch.diretorId : null;
-          // Colegiado presente (exceto relator) → inferência favorável; relator → nominal.
-          const rosterPresentes = presentesRaw
-            .map((nome) => {
-              const m = findBestMatch(nome, diretoresList);
-              return m.diretorId && !m.needsReview ? diretoresList.find((x) => x.id === m.diretorId) ?? null : null;
-            })
-            .filter((x): x is DiretorVoteRecord => Boolean(x) && x!.id !== relatorId);
-          const inferidos = buildVotoRows({
-            deliberacao_id: delibV.id as string, nomes: [], nomesContra: [], diretoresList,
-            activeDiretoresList: rosterPresentes, resultado: d.resultado, inferFromMandate: rosterPresentes.length > 0,
-          });
           const nominalRelator = relatorId
             ? buildVotoRows({
                 deliberacao_id: delibV.id as string, nomes: [relatorNome], nomesContra: [], diretoresList,
                 activeDiretoresList: [], resultado: d.resultado, inferFromMandate: false,
               })
             : [];
-          const votoRowsV = [...inferidos, ...nominalRelator];
-          if (votoRowsV.length > 0) await upsertVotosProtegido(db, votoRowsV);
+          if (nominalRelator.length > 0) await upsertVotosProtegido(db, nominalRelator);
 
           await markDocumentReviewed(db, d.documento_id, "confirmed", delibV.id as string);
-          results.push({ filename: d.filename, status: "created", deliberacao_id: delibV.id as string, documento_id: d.documento_id ?? null, message: "Voto ANTT capturado: relator (lido) + colegiado (inferido)." });
+          results.push({
+            filename: d.filename, status: "created", deliberacao_id: delibV.id as string, documento_id: d.documento_id ?? null,
+            message: relatorId
+              ? "Voto ANTT capturado: relator (lido)."
+              : "Voto ANTT materializado; relator pendente de aprovação (voto entra por backfill ao aprovar).",
+          });
           continue;
         }
 
@@ -676,6 +674,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   documento_subtipo: d.documento_subtipo,
                   import_counts_as_final: Boolean(item.resultado),
                   item_numero: item.item_numero,
+                  // Persistir os NOMES no filho (QA L1): sem isto, aprovar um
+                  // candidato depois não backfillava (applyRetroactiveVotes lê
+                  // exatamente raw.nomes_votacao/_contra/_ausente/_abstencao).
+                  nomes_votacao: item.votos_detectados ?? [],
+                  nomes_votacao_contra: item.votos_contra_detectados ?? [],
+                  nomes_votacao_abstencao: item.votos_abstencao_detectados ?? [],
+                  nomes_votacao_ausente: item.votos_ausentes_detectados ?? [],
+                  unanimidade_detectada: Boolean(item.unanimidade_detectada),
                   votos_inferidos_por_mandato: shouldInferVotesFromMandate({
                     resultado: item.resultado,
                     tipo_documento: "ata",
@@ -694,6 +700,23 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
             const itemVotingNames = item.votos_detectados ?? [];
             if (child) {
+              // ANTT (QA B3): em ata, votos_detectados são os PRESENTES (presença,
+              // não voto lido por diretor). Antes iam como pseudo-nominais e
+              // BLOQUEAVAM a inferência → só quem casava (Alessandro) virava voto.
+              // Agora: presentes casados formam o ROSTER de inferência do item
+              // (todos ganham "Favorável" is_nominal=false em unanimidade);
+              // divergentes/abstenções/ausentes continuam nominais com precedência.
+              const isAnttAtaItem = Boolean(d.documento_antt_tipo);
+              const rosterItem = isAnttAtaItem
+                ? itemVotingNames
+                    .map((nome) => {
+                      const m = findBestMatch(nome, diretoresList);
+                      return m.diretorId && !m.needsReview
+                        ? diretoresList.find((x) => x.id === m.diretorId) ?? null
+                        : null;
+                    })
+                    .filter((x): x is DiretorVoteRecord => Boolean(x))
+                : [];
               const votoRows = item.votos_sugeridos?.length
                 ? buildVotoRowsFromSuggestions({
                   deliberacao_id: child.id as string,
@@ -702,23 +725,25 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 })
                 : buildVotoRows({
                   deliberacao_id: child.id as string,
-                  nomes: itemVotingNames,
+                  nomes: isAnttAtaItem ? [] : itemVotingNames,
                   nomesContra: item.votos_contra_detectados ?? [],
                   nomesAbstencao: item.votos_abstencao_detectados ?? [],
                   nomesAusente: item.votos_ausentes_detectados ?? [],
                   diretoresList,
-                  activeDiretoresList,
+                  activeDiretoresList: isAnttAtaItem && rosterItem.length > 0 ? rosterItem : activeDiretoresList,
                   resultado: item.resultado,
-                  inferFromMandate: shouldInferVotesFromMandate({
-                    resultado: item.resultado,
-                    tipo_documento: "ata",
-                    import_counts_as_final: Boolean(item.resultado),
-                    unanimidadeDetectada: item.unanimidade_detectada,
-                    nomes: itemVotingNames,
-                    nomesContra: item.votos_contra_detectados ?? [],
-                    nomesAbstencao: item.votos_abstencao_detectados ?? [],
-                    dataReuniao: d.data_reuniao,
-                  }),
+                  inferFromMandate: isAnttAtaItem
+                    ? Boolean(item.unanimidade_detectada && item.resultado && rosterItem.length > 0)
+                    : shouldInferVotesFromMandate({
+                      resultado: item.resultado,
+                      tipo_documento: "ata",
+                      import_counts_as_final: Boolean(item.resultado),
+                      unanimidadeDetectada: item.unanimidade_detectada,
+                      nomes: itemVotingNames,
+                      nomesContra: item.votos_contra_detectados ?? [],
+                      nomesAbstencao: item.votos_abstencao_detectados ?? [],
+                      dataReuniao: d.data_reuniao,
+                    }),
                 });
 
               if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);

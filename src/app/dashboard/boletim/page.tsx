@@ -71,7 +71,7 @@ function buildHtml(opts: {
         </td>
         <td width="8"></td>
         <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Deferidos</p>
+          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Favoráveis</p>
           <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#22c55e;font-family:monospace">${formatNumber(overview.deferidos)}</p>
         </td>
         <td width="8"></td>

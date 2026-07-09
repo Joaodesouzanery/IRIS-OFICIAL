@@ -85,7 +85,7 @@ export default function AnalyticsTemasPage() {
     total: e.total,
   }));
   const trendAreas = [
-    { key: "deferido",    color: "#22c55e", label: "Deferidos" },
+    { key: "deferido",    color: "#22c55e", label: "Favoráveis" },
     { key: "indeferido",  color: "#ef4444", label: "Indeferidos" },
     { key: "total",       color: "#f97316", label: "Total" },
   ];

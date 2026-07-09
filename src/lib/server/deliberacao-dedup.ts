@@ -11,6 +11,8 @@ export interface DeliberacaoDedupKey {
   numeroDeliberacao?: string | null;
   processo?: string | null;
   dataReuniao?: string | null; // YYYY-MM-DD
+  /** Reunião (ex.: "1036") — fallback voto×ata quando a data diverge/está ausente. */
+  numeroReuniao?: string | null;
 }
 
 export interface DeliberacaoExistente {
@@ -36,6 +38,11 @@ function normNumero(v: string | null | undefined): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "")
     .replace(/0+(\d)/g, "$1");
+}
+
+// Processo tolerante a formatação/OCR: "50500.123/2026-11" ≡ "50500 123 2026 11".
+function normProcesso(v: string | null | undefined): string {
+  return normNumero(v);
 }
 
 export async function findDeliberacaoExistente(
@@ -89,6 +96,25 @@ export async function findDeliberacaoExistente(
         .order("created_at", { ascending: true })
         .limit(1);
       if (data?.[0]) return data[0] as DeliberacaoExistente;
+    }
+
+    // Fallback voto×ata: mesmo processo (normalizado, tolera OCR/formatação) na
+    // MESMA reunião (numero_reuniao) — a data do voto (assinatura) frequentemente
+    // difere da data da reunião da ata; sem isto a mesma decisão duplicava.
+    if (processo && key.numeroReuniao) {
+      const alvoProc = normProcesso(processo);
+      const { data: mesmaReuniao } = await db
+        .from("deliberacoes")
+        .select("id, resultado, data_reuniao, reuniao_id, processo")
+        .eq("agencia_id", key.agenciaId)
+        .eq("numero_reuniao", key.numeroReuniao)
+        .not("processo", "is", null)
+        .limit(200);
+      const eq = (mesmaReuniao ?? []).find(
+        (row: DeliberacaoExistente & { processo?: string | null }) =>
+          normProcesso(row.processo) === alvoProc,
+      );
+      if (eq) return eq as DeliberacaoExistente;
     }
   } catch {
     // Falha de leitura nunca bloqueia a importação — segue como insert normal.

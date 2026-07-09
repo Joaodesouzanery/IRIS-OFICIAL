@@ -8,10 +8,13 @@ import { canonicalizeEmpresa, findBestEmpresaMatch, type EmpresaRecord } from "@
 
 export type EmpresaCache = Map<string, EmpresaRecord[]>;
 
-// Órgãos INTERNOS (da própria agência/administração) NÃO são empresas reguladas.
-// O parser costuma pegar o "Interessado:"/"Proponente:" que, em pautas/atas, é a
+// Órgãos INTERNOS (da própria agência) NÃO são empresas reguladas. O parser
+// costuma pegar o "Interessado:"/"Proponente:" que, em pautas/atas, é a
 // Superintendência proponente — poluindo o ranking de "Empresas Reguladas".
-const ORGAO_INTERNO_RE = /\b(superintend[êe]ncia|diretoria|coordena[çc][ãa]o|ger[êe]ncia|secretaria|assessoria|procuradoria|ag[êe]ncia\s+(nacional|reguladora|de\s+transporte)|minist[ée]rio|autarquia|departamento|n[úu]cleo|comiss[ãa]o\s+(interna|de\s+[ée]tica))\b/i;
+// NÃO incluir termos de órgãos EXTERNOS (Ministério/Secretaria/Departamento/
+// Autarquia): DNIT, DER e Ministérios são contrapartes reais das deliberações
+// e devem aparecer (decisão de produto, QA Etapa 18).
+const ORGAO_INTERNO_RE = /\b(superintend[êe]ncia|diretoria|coordena[çc][ãa]o|ger[êe]ncia|assessoria|procuradoria|n[úu]cleo|comiss[ãa]o\s+(interna|de\s+[ée]tica)|ag[êe]ncia\s+(nacional|reguladora|de\s+transporte))\b/i;
 
 export function isOrgaoInterno(nome: string | null | undefined): boolean {
   return Boolean(nome && ORGAO_INTERNO_RE.test(nome));

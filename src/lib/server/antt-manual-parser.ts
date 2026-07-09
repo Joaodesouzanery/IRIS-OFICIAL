@@ -217,10 +217,13 @@ function extractMeeting(text: string, filename: string, type: AnttManualDocument
 }
 
 function extractAnttDocumentNumber(text: string, filename: string, type: AnttManualDocumentType) {
-  if (type === "voto_individual") return null;
-  if (false) {
-    return firstMatch(`${filename} ${text.slice(0, 500)}`, /DECLARA[Ã‡C][AÃƒ]O\s+DE\s+VOTO\s+([A-Z]{3}\s+N[ÂºO]?\s*\d+)[,\s]/i)
-      ?? firstMatch(filename, /Declara[Ã§c][aÃ£]o\s+de\s+Voto\s+([^.-]+?\d{3,4})/i);
+  if (type === "voto_individual") {
+    // "Voto DFQ 043-2026" / "Voto DAB 030/2026" → "VOTO-DFQ-043-2026": chave
+    // ESTÁVEL de dedup (o mesmo voto reprocessado 2× casa a unique parcial;
+    // não colide com os "ATA-*" dos itens de ata).
+    const m = /voto\s+(?:vista\s+)?(d[a-z]{1,3}|dg)\s*n?[ºo]?\s*(\d{1,4})\s*[-/.]\s*(20\d{2})/i.exec(`${filename} ${text.slice(0, 800)}`);
+    if (m) return `VOTO-${m[1].toUpperCase()}-${m[2].padStart(3, "0")}-${m[3]}`;
+    return null;
   }
   return null;
 }
@@ -605,11 +608,35 @@ function extractSeiUrl(text: string) {
   return match?.[0]?.slice(0, 1000) ?? null;
 }
 
+// Dispositivos de voto ANTT → RESULTADOS válidos (utils.ts RESULTADOS). NEGATIVOS
+// primeiro ("negar provimento" contém "provimento"). O QA achou que a versão
+// anterior só cobria aprov/indefer/autoriz/ratifico — "pelo deferimento", "dar
+// provimento", "homologar", "conhecer e prover" etc. voltavam null e o voto era
+// descartado. Princípio inalterado: sem padrão claro → null + warning (nunca chutar).
 function inferResultado(text: string): string | null {
   const value = normalize(text);
-  if (value.includes("indefer") || value.includes("negar provimento") || value.includes("cassacao")) return "Indeferido";
+  // Negativos
+  if (
+    value.includes("indefer") ||          // indeferir/indefiro/pelo indeferimento
+    /\bnego\s+provimento\b|\bnegar(?:-se)?\s+provimento\b|\bnegado\s+provimento\b/.test(value) ||
+    /\bnao\s+conhecer\b|\bnao\s+conhecimento\b|\bpelo\s+nao\s+provimento\b/.test(value) ||
+    value.includes("improcedente") || value.includes("improcedencia") ||
+    value.includes("cassacao")
+  ) return "Indeferido";
   if (value.includes("retirad") && value.includes("pauta")) return "Retirado de Pauta";
-  if (value.includes("aprov") || value.includes("ratifico") || value.includes("autoriz")) return RESULTADO_APROVADO;
+  // Positivos
+  if (
+    value.includes("defer") ||            // deferir/defiro/pelo deferimento (indefer já saiu acima)
+    /\bd(?:ar|ou|a)\s+provimento\b|\bprovimento\s+ao\s+recurso\b|\bpelo\s+provimento\b/.test(value) ||
+    /\bconhecer\b.{0,40}\bprov/.test(value) ||  // "conhecer e dar provimento"
+    value.includes("procedente") || value.includes("procedencia do pedido")
+  ) return "Deferido";
+  if (value.includes("homolog")) return "Ratificado";
+  if (value.includes("ratific")) return "Ratificado";
+  if (value.includes("aprov")) return RESULTADO_APROVADO;
+  if (value.includes("autoriz")) return "Autorizado";
+  if (value.includes("recomend")) return "Recomendado";
+  if (/\bdetermin(?:ar|o|ada?|ado)\b/.test(value)) return "Determinado";
   return null;
 }
 

@@ -208,10 +208,11 @@ export const demoData = {
   // DA3=Fernanda:9F/1D/1div=90%; DA4=Raquel: 8F/2D/0div=80%
   diretoresOverview(agencia_id?: string | null) {
     const all = [
-      { diretor_id: DA1, diretor_nome: "André Isper Rodrigues Barnabé",      agencia: A_ARTESP, total: 10, favoravel: 8, desfavoravel: 2, divergente: 0, pct_favor: 80.0 },
-      { diretor_id: DA2, diretor_nome: "Diego Albert Zanatto",               agencia: A_ARTESP, total: 10, favoravel: 9, desfavoravel: 1, divergente: 1, pct_favor: 90.0 },
-      { diretor_id: DA3, diretor_nome: "Fernanda Esbízaro Rodrigues Rudnik", agencia: A_ARTESP, total: 10, favoravel: 9, desfavoravel: 1, divergente: 1, pct_favor: 90.0 },
-      { diretor_id: DA4, diretor_nome: "Raquel França Carneiro",             agencia: A_ARTESP, total: 10, favoravel: 8, desfavoravel: 2, divergente: 0, pct_favor: 80.0 },
+      // nominais/inferidos espelham os votos demo: só os das 2 deliberações indeferidas são is_nominal.
+      { diretor_id: DA1, diretor_nome: "André Isper Rodrigues Barnabé",      agencia: A_ARTESP, total: 10, favoravel: 8, desfavoravel: 2, divergente: 0, nominais: 2, inferidos: 8, pct_favor: 80.0 },
+      { diretor_id: DA2, diretor_nome: "Diego Albert Zanatto",               agencia: A_ARTESP, total: 10, favoravel: 9, desfavoravel: 1, divergente: 1, nominais: 2, inferidos: 8, pct_favor: 90.0 },
+      { diretor_id: DA3, diretor_nome: "Fernanda Esbízaro Rodrigues Rudnik", agencia: A_ARTESP, total: 10, favoravel: 9, desfavoravel: 1, divergente: 1, nominais: 2, inferidos: 8, pct_favor: 90.0 },
+      { diretor_id: DA4, diretor_nome: "Raquel França Carneiro",             agencia: A_ARTESP, total: 10, favoravel: 8, desfavoravel: 2, divergente: 0, nominais: 2, inferidos: 8, pct_favor: 80.0 },
     ];
     const filtered = agencia_id ? all.filter((d) => d.agencia === agencia_id) : all;
     return filtered.map(({ agencia: _, ...rest }) => rest).sort((a, b) => b.total - a.total);

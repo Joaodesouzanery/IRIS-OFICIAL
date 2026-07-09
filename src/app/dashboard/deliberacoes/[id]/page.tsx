@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { Deliberacao } from "@/types";
-import { AREAS_REGULATORIAS, RESULTADOS, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel, cn } from "@/lib/utils";
+import { AREAS_REGULATORIAS, RESULTADOS, formatDate, getAreaRegulatoriaLabel, getMicrotemaLabel, cn, isResultadoPositivo } from "@/lib/utils";
 import {
   ArrowLeft, CheckCircle, XCircle, Pencil, Save, X,
   ChevronDown, ChevronUp, Users, FileText, ShieldCheck, Award, Download,
@@ -65,9 +65,9 @@ function initials(nome: string) {
 
 function resultadoColor(r: string | null) {
   if (!r) return "text-text-muted";
-  if (r === "Deferido" || r.startsWith("Aprovado") || r === "Ratificado" || r === "Autorizado" || r === "Recomendado" || r === "Determinado") return "text-success";
-  if (r === "Indeferido") return "text-error";
   if (r === "Parcialmente Deferido") return "text-amber-400";
+  if (isResultadoPositivo(r)) return "text-success"; // fonte única (utils)
+  if (r === "Indeferido") return "text-error";
   return "text-text-secondary";
 }
 
@@ -246,7 +246,7 @@ export default function DeliberacaoDetailPage() {
 
         <div className="flex items-center gap-2 shrink-0">
           {!editing && deliberacao.resultado && (
-            deliberacao.resultado === "Deferido" || deliberacao.resultado?.startsWith("Aprovado") ? (
+            isResultadoPositivo(deliberacao.resultado) ? (
               <CheckCircle className="w-5 h-5 text-success" />
             ) : deliberacao.resultado === "Indeferido" ? (
               <XCircle className="w-5 h-5 text-error" />

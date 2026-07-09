@@ -80,7 +80,7 @@ export default function DashboardPage() {
 
   const resultadosPieData = overview
     ? [
-        { name: "Deferidos",     value: overview.deferidos,     color: "#22c55e" },
+        { name: "Favoráveis",     value: overview.deferidos,     color: "#22c55e" },
         { name: "Indeferidos",   value: overview.indeferidos,   color: "#ef4444" },
         { name: "Sem resultado", value: overview.sem_resultado, color: "#71717a" },
       ].filter((d) => d.value > 0)
@@ -226,7 +226,7 @@ export default function DashboardPage() {
                 <IrisAreaChart
                   data={microtemasAreaData}
                   areas={[
-                    { key: "deferido",   color: "#22c55e", label: "Deferido" },
+                    { key: "deferido",   color: "#22c55e", label: "Favoráveis" },
                     { key: "indeferido", color: "#ef4444", label: "Indeferido" },
                   ]}
                   height={190}
@@ -472,7 +472,7 @@ export default function DashboardPage() {
                 <IrisBarChart
                   data={microtemasAreaData.map((r) => ({ name: r.name, value: r.deferido, indeferido: r.indeferido }))}
                   multibar={[
-                    { key: "deferido",   color: "#22c55e", label: "Deferido" },
+                    { key: "deferido",   color: "#22c55e", label: "Favoráveis" },
                     { key: "indeferido", color: "#ef4444", label: "Indeferido" },
                   ]}
                   xKey="name"
@@ -483,7 +483,7 @@ export default function DashboardPage() {
                 <IrisAreaChart
                   data={microtemasAreaData}
                   areas={[
-                    { key: "deferido",   color: "#22c55e", label: "Deferido" },
+                    { key: "deferido",   color: "#22c55e", label: "Favoráveis" },
                     { key: "indeferido", color: "#ef4444", label: "Indeferido" },
                   ]}
                   height={220}

@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { EmpresaDetalhe } from "@/types";
-import { cn, formatDate, getMicrotemaLabel, getMicrotemaColor } from "@/lib/utils";
+import { cn, formatDate, getMicrotemaLabel, getMicrotemaColor, isResultadoPositivo } from "@/lib/utils";
 import {
   ArrowLeft, Building, AlertTriangle, TrendingUp, TrendingDown,
   Minus, CheckCircle, XCircle, Users, ExternalLink,
@@ -37,8 +37,7 @@ function TendenciaIcon({ direcao }: { direcao: "melhorando" | "estavel" | "piora
 
 function ResultadoBadge({ resultado }: { resultado: string | null }) {
   if (!resultado) return <span className="text-text-muted text-xs">—</span>;
-  const positivos = ["Deferido", "Aprovado", "Aprovado com Ressalvas", "Aprovado por Unanimidade", "Ratificado", "Autorizado", "Recomendado", "Determinado"];
-  const isPos = positivos.includes(resultado);
+  const isPos = isResultadoPositivo(resultado); // fonte única (utils)
   const isNeg = resultado === "Indeferido";
   return (
     <span className={cn(

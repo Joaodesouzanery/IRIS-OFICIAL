@@ -52,8 +52,10 @@ export async function GET(req: NextRequest) {
   }>();
   for (const d of (data ?? []).filter(isFinalDecisionRecord)) {
     if (!d.interessado) continue;
-    // Órgão interno (Superintendência/Diretoria/Agência...) não é empresa regulada.
-    if (!d.empresa_id && isOrgaoInterno(d.interessado)) continue;
+    // Órgão interno (Superintendência/Diretoria/Agência...) não é empresa regulada —
+    // exclusão INCONDICIONAL (mesmo com empresa_id legado, criado antes do filtro),
+    // espelhando o analytics-engine.
+    if (isOrgaoInterno(d.interessado)) continue;
     const empresa = Array.isArray(d.empresas) ? d.empresas[0] : d.empresas;
     const key = d.empresa_id ?? `canon:${canonicalizeEmpresa(d.interessado)}`;
     const displayNome = empresa?.nome_exibicao ?? d.interessado;

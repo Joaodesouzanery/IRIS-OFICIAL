@@ -161,6 +161,7 @@ export function computeDiretoresOverview(delibs: Deliberacao[], agenciaId?: stri
   const map = new Map<string, {
     diretor_id: string; diretor_nome: string;
     total: number; favoravel: number; desfavoravel: number; divergente: number;
+    nominais: number; inferidos: number;
   }>();
 
   for (const d of rows) {
@@ -171,6 +172,7 @@ export function computeDiretoresOverview(delibs: Deliberacao[], agenciaId?: stri
           diretor_id: v.diretor_id,
           diretor_nome: v.diretor_nome ?? v.diretor_id,
           total: 0, favoravel: 0, desfavoravel: 0, divergente: 0,
+          nominais: 0, inferidos: 0,
         });
       }
       const s = map.get(v.diretor_id)!;
@@ -178,6 +180,7 @@ export function computeDiretoresOverview(delibs: Deliberacao[], agenciaId?: stri
       if (v.tipo_voto === "Favoravel") s.favoravel++;
       else s.desfavoravel++;
       if (v.is_divergente) s.divergente++;
+      if (v.is_nominal) s.nominais++; else s.inferidos++;
     }
   }
 

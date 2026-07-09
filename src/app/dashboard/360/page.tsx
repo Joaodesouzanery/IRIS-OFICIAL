@@ -10,7 +10,7 @@ import type {
 import { IrisBarChart } from "@/components/charts/IrisBarChart";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
 import { IrisAreaChart } from "@/components/charts/IrisAreaChart";
-import { getMicrotemaLabel, formatNumber, formatDate, cn } from "@/lib/utils";
+import { getMicrotemaLabel, formatNumber, formatDate, cn, isResultadoPositivo } from "@/lib/utils";
 import { SlidersHorizontal, Settings, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
@@ -147,7 +147,7 @@ export default function Dashboard360Page() {
   }));
 
   const areaAreas = [
-    { key: "deferido",   color: "#22c55e", label: "Deferido" },
+    { key: "deferido",   color: "#22c55e", label: "Favoráveis" },
     { key: "indeferido", color: "#ef4444", label: "Indeferido" },
   ];
 
@@ -163,7 +163,7 @@ export default function Dashboard360Page() {
 
   // Pie: resultados (deferido / indeferido)
   const pieResultados = [
-    ...(overview?.deferidos ? [{ name: "Deferido", value: overview.deferidos, color: "#22c55e" }] : []),
+    ...(overview?.deferidos ? [{ name: "Favoráveis", value: overview.deferidos, color: "#22c55e" }] : []),
     ...(overview?.indeferidos ? [{ name: "Indeferido", value: overview.indeferidos, color: "#ef4444" }] : []),
     ...(() => {
       const outros = totalDelibs - (overview?.deferidos ?? 0) - (overview?.indeferidos ?? 0);
@@ -509,7 +509,7 @@ export default function Dashboard360Page() {
                   </td>
                   <td className={cn(
                     "px-3 py-2.5 text-xs font-medium",
-                    d.resultado === "Deferido" ? "text-success" : d.resultado === "Indeferido" ? "text-error" : "text-text-muted"
+                    isResultadoPositivo(d.resultado) ? "text-success" : d.resultado === "Indeferido" ? "text-error" : "text-text-muted"
                   )}>
                     {d.resultado ?? "—"}
                   </td>
