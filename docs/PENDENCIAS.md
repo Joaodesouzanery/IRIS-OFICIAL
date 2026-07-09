@@ -27,6 +27,12 @@ humana semanal é:
 | Mesclar deliberações duplicadas | Quando o painel de duplicatas apontar pares | Votos dos Diretores / rota admin dedup |
 | Aplicar migrations | A cada nova migration em `supabase/migrations/` | Supabase SQL Editor (manual, pelo usuário) |
 | Revisar documentos `review_pending` | Quando o card "Revisão humana" > 0 | Dashboard → Upload |
+| Re-coletar notícias (imagens) | Após deploy que melhora o scraper de imagem | POST `/api/v1/noticias/coletar` (ou aguardar cron) — re-resolve imagem/limpa resumo lixo |
+
+## Migrations pendentes de aplicação manual (SQL Editor)
+
+- **`20260709120000_mandatos_rede_votos.sql`** (Etapa 19) — cria mandato para diretores que
+  têm voto mas não têm mandato (religa a inferência). Idempotente e forward-only.
 
 ## Datas sensíveis
 

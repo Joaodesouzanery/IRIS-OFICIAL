@@ -176,5 +176,46 @@ export async function aprovarCandidato(
     console.error("[candidato-approval] Falha ao criar votos retroativos:", e);
   }
 
+  // MANDATO AUTOMÁTICO: se a aprovação não informou datas (caso do recompute) e o diretor
+  // ficou SEM mandato, a inferência de voto por mandato fica DESLIGADA para ele
+  // (getActiveDiretoresForVote → []). Cria um mandato a partir da data da 1ª deliberação
+  // que ele votou (aberto, fonte automática) — o admin refina depois. QA Etapa 19.
+  if (!mandatoId) {
+    try {
+      const { data: jaTem } = await db.from("mandatos").select("id").eq("diretor_id", diretorId).limit(1);
+      if (!jaTem?.length) {
+        const { data: votoRows } = await db
+          .from("votos")
+          .select("deliberacoes(data_reuniao)")
+          .eq("diretor_id", diretorId)
+          .limit(500);
+        const datas = (votoRows ?? [])
+          .map((r: any) => (Array.isArray(r.deliberacoes) ? r.deliberacoes[0]?.data_reuniao : r.deliberacoes?.data_reuniao))
+          .filter((d: unknown): d is string => typeof d === "string" && d.length >= 10)
+          .sort();
+        if (datas.length) {
+          const { data: mandatoAuto } = await db
+            .from("mandatos")
+            .insert({
+              diretor_id: diretorId,
+              data_inicio: datas[0],
+              data_fim: null,
+              cargo,
+              review_status: "aprovado",
+              source_type: candidato.source_type,
+              source_confidence: candidato.confidence,
+              lgpd_basis: "public_official_function",
+              last_verified_at: new Date().toISOString(),
+            })
+            .select("id")
+            .single();
+          mandatoId = mandatoAuto?.id ?? null;
+        }
+      }
+    } catch (e) {
+      console.error("[candidato-approval] Falha ao criar mandato automático:", e);
+    }
+  }
+
   return { diretorId, mandatoId, votosRetroativos };
 }

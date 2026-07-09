@@ -846,13 +846,17 @@ export function parseNewsDetail(
   // Quando nao ha corpo extraivel, usa a og:description/JSON-LD como conteudo minimo.
   if (!conteudo && ogDescription) {
     const cleanedOg = cleanText(ogDescription);
-    if (cleanedOg.length >= 80) conteudo = cleanedOg.slice(0, 6000);
+    if (cleanedOg.length >= 80 && !isJunkText(cleanedOg)) conteudo = cleanedOg.slice(0, 6000);
   }
-  const rawResumo = ogDescription ?? firstParagraphFromRoot(root);
   const titulo = isGenericArtespTitle(source, rawTitle) ? link.title : rawTitle;
-  // Resumo sempre cai para o corpo do texto quando a metatag faltar ou for generica.
-  const hasUsableResumo = Boolean(cleanText(rawResumo ?? "").trim()) && !isGenericArtespDescription(source, rawResumo);
-  const resumo = hasUsableResumo ? rawResumo : (excerptFromText(conteudo) ?? rawResumo);
+  // Resumo: 1º candidato que passe em sanitizeResumo (não-lixo + piso de comprimento).
+  // Ordem: og/description (se não-genérica) → 1º parágrafo → excerto do corpo (já sem <script>).
+  const ogResumo = isGenericArtespDescription(source, ogDescription) ? null : ogDescription;
+  let resumo: string | null = null;
+  for (const candidate of [ogResumo, firstParagraphFromRoot(root), excerptFromText(conteudo)]) {
+    const clean = sanitizeResumo(candidate);
+    if (clean) { resumo = clean; break; }
+  }
   const rawCanonicalUrl = normalizeNewsUrl(absolutize(metaContent(root, "property", "og:url"), link.url) ?? link.url);
   const canonicalUrl = rawCanonicalUrl && source.strategy === "artesp"
     ? normalizeArtespNewsUrl(rawCanonicalUrl) ?? rawCanonicalUrl
@@ -889,7 +893,7 @@ export function parseNewsDetail(
     fonte: source.fonte,
     // Candidato ainda NÃO validado por rede; fetchNewsDetail revalida e ajusta.
     imagem_url: imageCandidate.url,
-    resumo: resumo ? cleanText(resumo).slice(0, 900) : null,
+    resumo, // já sanitizado (sanitizeResumo): não-lixo + piso de comprimento, ou null
     conteudo,
     publicado_em: normalizedDate,
     hash_item,
@@ -1391,15 +1395,32 @@ const HIGH_CONFIDENCE_IMAGE_SOURCES = new Set([
   "link image",
 ]);
 
-async function validateOfficialImage(candidate: { url: string | null; source: string | null }) {
-  if (!candidate.url) {
-    return { ...candidate, status: "official_image_absent" as const };
-  }
-  const highConfidence = candidate.source ? HIGH_CONFIDENCE_IMAGE_SOURCES.has(candidate.source) : false;
+// Média confiança: a URL é construída por nós (lead image da API Plone/Volto do
+// gov.br), não declarada numa metatag. Se a validação por rede falhar (a API às
+// vezes recusa Range/HEAD), MANTEMOS a URL como "unverified" — o proxy do front
+// (/api/v1/noticias/imagem) revalida sob demanda. Antes era descartada → card sem
+// imagem para ANATEL/ANCINE/ANPD (páginas React sem og:image).
+const MEDIUM_CONFIDENCE_IMAGE_SOURCES = new Set([
+  "govbr api lead image",
+]);
+
+// Variantes de escala do lead-image Volto, da maior para a menor. Quando a maior
+// (/large) não valida, tenta as demais antes de desistir — maximiza imagem real.
+function leadImageScaleVariants(url: string): string[] {
+  const m = /^(.*)\/@@images\/image(?:\/[a-z]+)?$/i.exec(url);
+  if (!m) return [url];
+  const base = m[1];
+  const scales = ["large", "great", "huge", "preview", "image"];
+  const variants = scales.map((s) => (s === "image" ? `${base}/@@images/image` : `${base}/@@images/image/${s}`));
+  // Garante que a URL original seja a primeira tentativa.
+  return [url, ...variants.filter((v) => v !== url)];
+}
+
+async function probeImageUrl(url: string) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), IMAGE_TIMEOUT_MS);
   try {
-    const response = await fetch(candidate.url, {
+    const response = await fetch(url, {
       method: "GET",
       headers: {
         "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
@@ -1414,22 +1435,36 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
     const rangeTotal = Number(/\/(\d+)$/.exec(contentRange)?.[1] ?? 0);
     const contentLength = rangeTotal || Number(response.headers.get("content-length") ?? 0) || null;
     await response.body?.cancel();
-    if (response.ok && contentType.toLowerCase().startsWith("image/")) {
-      return { ...candidate, status: "official_image_found" as const, contentType, contentLength };
-    }
-    // Metatag declarada pelo site: confia na URL mesmo sem confirmar o content-type.
-    if (highConfidence) {
-      return { ...candidate, status: "official_image_unverified" as const, contentType, contentLength };
-    }
-    return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType, contentLength };
+    const ok = response.ok && contentType.toLowerCase().startsWith("image/");
+    return { ok, contentType, contentLength };
   } catch {
-    if (highConfidence) {
-      return { ...candidate, status: "official_image_unverified" as const, contentType: null, contentLength: null };
-    }
-    return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType: null, contentLength: null };
+    return { ok: false, contentType: null as string | null, contentLength: null as number | null };
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function validateOfficialImage(candidate: { url: string | null; source: string | null }) {
+  if (!candidate.url) {
+    return { ...candidate, status: "official_image_absent" as const };
+  }
+  const highConfidence = candidate.source ? HIGH_CONFIDENCE_IMAGE_SOURCES.has(candidate.source) : false;
+  const mediumConfidence = candidate.source ? MEDIUM_CONFIDENCE_IMAGE_SOURCES.has(candidate.source) : false;
+  // Lead-image gov.br: tenta múltiplas escalas; a 1ª que retornar image/* vence.
+  const variants = mediumConfidence ? leadImageScaleVariants(candidate.url) : [candidate.url];
+  let lastProbe: { ok: boolean; contentType: string | null; contentLength: number | null } | null = null;
+  for (const url of variants) {
+    const probe = await probeImageUrl(url);
+    lastProbe = probe;
+    if (probe.ok) {
+      return { url, source: candidate.source, status: "official_image_found" as const, contentType: probe.contentType, contentLength: probe.contentLength };
+    }
+  }
+  // Metatag declarada OU lead-image de média confiança: mantém a URL (o proxy revalida).
+  if (highConfidence || mediumConfidence) {
+    return { ...candidate, status: "official_image_unverified" as const, contentType: lastProbe?.contentType ?? null, contentLength: lastProbe?.contentLength ?? null };
+  }
+  return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType: lastProbe?.contentType ?? null, contentLength: lastProbe?.contentLength ?? null };
 }
 
 async function mapWithConcurrency<T, R>(items: T[], concurrency: number, fn: (item: T, index: number) => Promise<R>): Promise<R[]> {
@@ -1572,6 +1607,17 @@ function excerptFromText(value: string | null) {
   return cleanText(sentence).slice(0, 900);
 }
 
+// Lê o texto de uma região DOM SEM o conteúdo de <script>/<style>/<noscript>.
+// `parseHtml` preserva o texto de <script> de propósito (JSON-LD já foi extraído
+// antes); sem remover esses nós, páginas Volto/React (gov.br) sem <p> deixavam o
+// JSON-LD cru (`{"@context":...}`) vazar para o corpo/resumo da notícia.
+function regionTextWithoutScripts(region: HTMLElement): string {
+  for (const node of safeQueryAll(region, "script, style, noscript")) {
+    try { node.remove(); } catch { /* nó já removido/solto */ }
+  }
+  return cleanText(region.text);
+}
+
 function extractArticleText(root: HTMLElement) {
   const region =
     safeQuery(root, "article") ??
@@ -1583,11 +1629,31 @@ function extractArticleText(root: HTMLElement) {
     .filter((text) => text.length >= 30);
   if (paragraphs.length) return paragraphs.join("\n\n").slice(0, 6000);
 
-  const text = cleanText(region.text)
+  const text = regionTextWithoutScripts(region)
     .replace(/\bAumentar fonte\b[\s\S]*$/i, "")
     .replace(/\bUltimas\s+Noticias\b[\s\S]*$/i, "")
     .replace(/\bÚltimas\s+Notícias\b[\s\S]*$/i, "");
-  return text.length >= 80 ? text.slice(0, 6000) : null;
+  return text.length >= 80 && !isJunkText(text) ? text.slice(0, 6000) : null;
+}
+
+// Texto que claramente NÃO é resumo de notícia: JSON-LD/JSON cru, HTML/CSS/JS, ou
+// marcação sem frase. Guarda de qualidade — impede lixo de chegar ao card/newsletter.
+export function isJunkText(value: string | null | undefined): boolean {
+  const s = (value ?? "").trim();
+  if (!s) return true;
+  if (/^[{[<]/.test(s)) return true;                               // começa como JSON/HTML
+  if (/@context|schema\.org|"@type"|function\s*\(|\bvar\s|\{\s*"/i.test(s)) return true;
+  if (/[{}<>]/.test(s) && !/[.!?]/.test(s)) return true;           // marcação sem pontuação de frase
+  const letters = (s.match(/[a-zA-ZÀ-ÿ]/g) ?? []).length;
+  if (letters / s.length < 0.6) return true;                       // maioria não-letra (código/lixo)
+  return false;
+}
+
+// Resumo válido: texto limpo, não-lixo, com piso de comprimento (mata "i" e fragmentos).
+export function sanitizeResumo(value: string | null | undefined, minLen = 30): string | null {
+  const s = cleanText(value ?? "");
+  if (!s || s.length < minLen || isJunkText(s)) return null;
+  return s.slice(0, 900);
 }
 
 // Meses por extenso (PT) para datas no formato "23 de junho de 2026".

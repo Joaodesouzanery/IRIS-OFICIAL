@@ -91,8 +91,19 @@ export default function GovernancaPage() {
   // Indicadores REAIS por agência (não repete o global). Só agências com dados.
   const { data: govAgencias } = useQuery({
     queryKey: ["governanca-agencias"],
-    queryFn: () => api.get<{ por_agencia: Array<{ agencia_id: string; sigla: string; nome: string; total: number; consenso: number; deferimento: number; qualidade: number; sancao: number }> }>("/dashboard/governanca-agencias"),
+    queryFn: () => api.get<{ por_agencia: Array<{ agencia_id: string; sigla: string; nome: string; total: number; consenso: number; cobertura_nominal: number; deferimento: number; qualidade: number; sancao: number }> }>("/dashboard/governanca-agencias"),
   });
+
+  // Confiabilidade do consenso: % de deliberações com voto NOMINAL (ponderado por
+  // volume). Consenso 100% sobre base nominal ~0 NÃO é "excelente" — é "sem base".
+  const coberturaNominal = useMemo(() => {
+    const rows = (govAgencias?.por_agencia ?? []).filter((a) => (agenciaId ? a.agencia_id === agenciaId : a.total > 0));
+    const totalDelib = rows.reduce((s, a) => s + a.total, 0);
+    if (!totalDelib) return null; // sem dados → não afirma nada
+    const nominalPond = rows.reduce((s, a) => s + (a.cobertura_nominal / 100) * a.total, 0);
+    return Math.round((nominalPond / totalDelib) * 1000) / 10;
+  }, [govAgencias, agenciaId]);
+  const consensoConfiavel = coberturaNominal == null || coberturaNominal >= 30;
 
   // ── Derived KPIs ─────────────────────────────────────────────────────────
 
@@ -150,6 +161,7 @@ export default function GovernancaPage() {
   if (taxaSancao > 30)        alerts.push({ label: "Alta taxa de sanções", detail: `${taxaSancao.toFixed(1)}% de multas/indeferimentos`, level: "error" });
   if (avgConf < 70)           alerts.push({ label: "Qualidade IA baixa", detail: `Confiança média: ${avgConf.toFixed(0)}%`, level: "warn" });
   if (taxaConsenso < 80)      alerts.push({ label: "Baixo consenso no colegiado", detail: `Taxa de consenso: ${taxaConsenso.toFixed(1)}%`, level: "warn" });
+  if (!consensoConfiavel)     alerts.push({ label: "Consenso com base nominal fraca", detail: `Só ${coberturaNominal?.toFixed(0)}% das deliberações têm voto nominal — o consenso é majoritariamente inferido; leia com cautela.`, level: "warn" });
   if (coberturaDoc < 60)      alerts.push({ label: "Cobertura documental insuficiente", detail: `${coberturaDoc}% com resumo/fundamento preenchidos`, level: "warn" });
 
   // ── Tendência (evolução mensal) ───────────────────────────────────────────
@@ -163,7 +175,7 @@ export default function GovernancaPage() {
 
   const kpis = [
     { label: "Score de Qualidade",    value: `${globalScore}`,               suffix: "/100", icon: ShieldCheck, color: scoreColor(globalScore) },
-    { label: "Taxa de Consenso",      value: `${taxaConsenso.toFixed(1)}`,   suffix: "%",    icon: Users,       color: taxaConsenso >= 80 ? "text-success" : "text-warning" },
+    { label: consensoConfiavel ? "Taxa de Consenso" : `Taxa de Consenso · base nominal ${coberturaNominal?.toFixed(0)}%`, value: `${taxaConsenso.toFixed(1)}`, suffix: "%", icon: Users, color: !consensoConfiavel ? "text-text-muted" : taxaConsenso >= 80 ? "text-success" : "text-warning" },
     { label: "Taxa de Deferimento",   value: `${pctDeferimento.toFixed(1)}`, suffix: "%",    icon: TrendingUp,  color: pctDeferimento >= 60 ? "text-success" : "text-warning" },
     { label: "Qualidade IA",          value: `${avgConf.toFixed(0)}`,        suffix: "%",    icon: Zap,         color: avgConf >= 70 ? "text-success" : "text-warning" },
     { label: "Taxa de Sanções",       value: `${taxaSancao.toFixed(1)}`,     suffix: "%",    icon: AlertTriangle, color: taxaSancao <= 20 ? "text-success" : taxaSancao <= 30 ? "text-warning" : "text-error" },

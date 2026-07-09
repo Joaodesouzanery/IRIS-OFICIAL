@@ -16,19 +16,23 @@ const MINERALS_CONTENT = [
 ].join("\n\n");
 
 export function repairRegulatoryNewsItem<T extends RegulatoryNews>(item: T): T {
-  if (!isMineralsCriticalNews(item)) return item;
-  const imageUrl = chooseMineralsImageUrl(item);
-  const sourceUrl = item.url || MINERALS_SOURCE_URL;
+  // Backstop genérico: mesmo em linhas JÁ persistidas antes da correção do coletor,
+  // um resumo-lixo (JSON-LD cru, HTML, fragmento de 1 caractere) nunca chega ao card.
+  const sanitized = looksLikeJunkResumo(item.resumo) ? { ...item, resumo: null } : item;
+
+  if (!isMineralsCriticalNews(sanitized)) return sanitized;
+  const imageUrl = chooseMineralsImageUrl(sanitized);
+  const sourceUrl = sanitized.url || MINERALS_SOURCE_URL;
 
   return {
-    ...item,
-    titulo: item.titulo || MINERALS_TITLE,
-    url: item.url,
+    ...sanitized,
+    titulo: sanitized.titulo || MINERALS_TITLE,
+    url: sanitized.url,
     imagem_url: imageUrl,
     resumo: MINERALS_SUMMARY,
     conteudo: MINERALS_CONTENT,
     metadata: {
-      ...(isRecord(item.metadata) ? item.metadata : {}),
+      ...(isRecord(sanitized.metadata) ? sanitized.metadata : {}),
       manual_repair: true,
       manual_repair_reason: "newsletter_specific_quality_fix",
       source_repair_url: sourceUrl,
@@ -41,6 +45,20 @@ export function repairRegulatoryNewsItem<T extends RegulatoryNews>(item: T): T {
 
 export function repairRegulatoryNewsItems<T extends RegulatoryNews>(items: T[]): T[] {
   return items.map(repairRegulatoryNewsItem);
+}
+
+// Espelha o isJunkText/sanitizeResumo do coletor (news-collector.ts) num guard leve,
+// sem acoplar este módulo de UI ao coletor server-only.
+export function looksLikeJunkResumo(value: unknown): boolean {
+  if (typeof value !== "string") return false;
+  const s = value.trim();
+  if (!s) return false; // vazio já é tratado como "sem resumo" pelo front
+  if (s.length < 30) return true;
+  if (/^[{[<]/.test(s)) return true;
+  if (/@context|schema\.org|"@type"|function\s*\(|\{\s*"/i.test(s)) return true;
+  if (/[{}<>]/.test(s) && !/[.!?]/.test(s)) return true;
+  const letters = (s.match(/[a-zA-ZÀ-ÿ]/g) ?? []).length;
+  return letters / s.length < 0.6;
 }
 
 function isMineralsCriticalNews(item: RegulatoryNews) {

@@ -18,6 +18,7 @@ import {
   shouldInferVotesFromMandate,
   type DiretorVoteRecord,
 } from "@/lib/server/vote-inference";
+import { findBestMatch } from "@/lib/server/name-matcher";
 
 export type UploadAnalysisAgency = { id: string; sigla: string };
 
@@ -241,9 +242,25 @@ export async function analyzeUploadPdf(input: {
     area_regulatoria = (ata_items[0]?.area_regulatoria ?? area_regulatoria) as typeof area_regulatoria;
   }
 
-  const activeDiretoresList = db && agencia_id_detected
+  const mandateRoster = db && agencia_id_detected
     ? await getActiveDiretoresForVote(db, agencia_id_detected, fields.data_reuniao, diretoresList)
     : [];
+  // Roster de PRESENTES lido do documento precede o mandato (espelha o confirm,
+  // confirm/route.ts:453-466). Para a ANM — que não tem bloco "Constituição:" e às
+  // vezes não tem mandato na data — é a ÚNICA fonte de roster para os votos_sugeridos;
+  // sem isto o auto-confirm de ata reprovava "ata sem nenhum voto sugerido". QA Etapa 19.
+  const presentesRoster: DiretorVoteRecord[] = [];
+  if (diretoresList.length && Array.isArray(fields.nomes_presentes) && fields.nomes_presentes.length) {
+    const vistos = new Set<string>();
+    for (const nome of fields.nomes_presentes) {
+      const m = findBestMatch(String(nome), diretoresList);
+      if (m.diretorId && !m.needsReview && !vistos.has(m.diretorId)) {
+        const dir = diretoresList.find((d) => d.id === m.diretorId);
+        if (dir) { presentesRoster.push(dir); vistos.add(dir.id); }
+      }
+    }
+  }
+  const activeDiretoresList = presentesRoster.length > 0 ? presentesRoster : mandateRoster;
   const mainInferFromMandate = shouldInferVotesFromMandate({
     resultado: fields.resultado,
     tipo_documento,

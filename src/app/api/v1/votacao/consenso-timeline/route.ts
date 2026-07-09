@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("data_reuniao, tipo_documento, documento_pai_id, microtema, area_regulatoria, numero_reuniao, agencia_id, votos (is_divergente)")
+    .select("data_reuniao, tipo_documento, documento_pai_id, microtema, area_regulatoria, numero_reuniao, agencia_id, votos (is_divergente, is_nominal)")
     .not("data_reuniao", "is", null)
     .limit(10000);
 
@@ -42,14 +42,15 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar timeline de consenso" }, { status: 500 });
   }
 
-  const byMonth = new Map<string, { total: number; divergentes: number }>();
+  const byMonth = new Map<string, { total: number; divergentes: number; com_voto_nominal: number }>();
   for (const d of (data ?? []) as any[]) {
     if (!isFinalDecisionRecord(d)) continue;
     const period = String(d.data_reuniao).slice(0, 7);
     if (!period) continue;
-    const m = byMonth.get(period) ?? { total: 0, divergentes: 0 };
+    const m = byMonth.get(period) ?? { total: 0, divergentes: 0, com_voto_nominal: 0 };
     m.total++;
     if ((d.votos ?? []).some((v: any) => v.is_divergente)) m.divergentes++;
+    if ((d.votos ?? []).some((v: any) => v.is_nominal)) m.com_voto_nominal++;
     byMonth.set(period, m);
   }
 
@@ -61,6 +62,9 @@ export async function GET(req: NextRequest) {
       consensuais: m.total - m.divergentes,
       divergentes: m.divergentes,
       pct_consenso: m.total > 0 ? Math.round(((m.total - m.divergentes) / m.total) * 1000) / 10 : 0,
+      // % de itens com ao menos 1 voto NOMINAL: o consenso só é confiável onde há base
+      // nominal. Sem isto, "consenso 100%" sobre base quase nula parecia real (QA Etapa 19).
+      cobertura_nominal: m.total > 0 ? Math.round((m.com_voto_nominal / m.total) * 1000) / 10 : 0,
     }));
 
   return NextResponse.json(result);

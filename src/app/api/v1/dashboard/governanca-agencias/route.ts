@@ -20,6 +20,7 @@ interface AgenciaGovernanca {
   nome: string;
   total: number;
   consenso: number;     // % de deliberações sem voto divergente
+  cobertura_nominal: number; // % de deliberações com ao menos 1 voto NOMINAL (confiabilidade do consenso)
   deferimento: number;  // % de resultados positivos
   qualidade: number;    // média de extraction_confidence * 100
   sancao: number;       // % multa/indeferido
@@ -36,24 +37,25 @@ export async function GET(req: NextRequest) {
   const [agenciasRes, delibsRes] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes")
-      .select("agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, raw_extraction, votos(is_divergente)")
+      .select("agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, raw_extraction, votos(is_divergente, is_nominal)")
       .limit(40000),
   ]);
 
   const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
-  type Acc = { total: number; consensoOk: number; deferido: number; confSum: number; confN: number; sancao: number };
+  type Acc = { total: number; consensoOk: number; comNominal: number; deferido: number; confSum: number; confN: number; sancao: number };
   const acc = new Map<string, Acc>();
 
   for (const d of (delibsRes.data ?? []) as Array<{
     agencia_id: string | null; resultado: string | null; microtema: string | null;
     extraction_confidence: number | null; tipo_documento: string | null;
     documento_pai_id: string | null; raw_extraction: any;
-    votos: Array<{ is_divergente: boolean }>;
+    votos: Array<{ is_divergente: boolean; is_nominal: boolean }>;
   }>) {
     if (!isFinalDecisionRecord(d as any) || !d.agencia_id) continue;
-    const a = acc.get(d.agencia_id) ?? { total: 0, consensoOk: 0, deferido: 0, confSum: 0, confN: 0, sancao: 0 };
+    const a = acc.get(d.agencia_id) ?? { total: 0, consensoOk: 0, comNominal: 0, deferido: 0, confSum: 0, confN: 0, sancao: 0 };
     a.total += 1;
     if (!(d.votos ?? []).some((v) => v.is_divergente)) a.consensoOk += 1;
+    if ((d.votos ?? []).some((v) => v.is_nominal)) a.comNominal += 1;
     if (isResultadoPositivo(d.resultado)) a.deferido += 1;
     if (d.microtema === "multa" || d.resultado === "Indeferido") a.sancao += 1;
     if (d.extraction_confidence != null) { a.confSum += d.extraction_confidence; a.confN += 1; }
@@ -67,6 +69,7 @@ export async function GET(req: NextRequest) {
       agencia_id: ag.id, sigla: ag.sigla, nome: ag.nome,
       total: a?.total ?? 0,
       consenso: a ? pct(a.consensoOk, a.total) : 0,
+      cobertura_nominal: a ? pct(a.comNominal, a.total) : 0,
       deferimento: a ? pct(a.deferido, a.total) : 0,
       qualidade: a && a.confN > 0 ? Math.round((a.confSum / a.confN) * 1000) / 10 : 0,
       sancao: a ? pct(a.sancao, a.total) : 0,

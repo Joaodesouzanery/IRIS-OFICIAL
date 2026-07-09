@@ -31,7 +31,7 @@ const MICROTEMAS = [
   "lavra", "pesquisa", "licenciamento", "servidao", "cfem", "disponibilidade", "recursos", "outros",
 ];
 
-type ConsensoPoint = { period: string; total_itens: number; consensuais: number; divergentes: number; pct_consenso: number };
+type ConsensoPoint = { period: string; total_itens: number; consensuais: number; divergentes: number; pct_consenso: number; cobertura_nominal?: number };
 
 export default function VotacaoPage() {
   const [agenciaId, setAgenciaId] = useState("");
@@ -106,6 +106,19 @@ export default function VotacaoPage() {
         ) : (
           <p className="text-sm text-text-muted">Sem dados de consenso no período.</p>
         )}
+        {(() => {
+          // Confiabilidade: média ponderada da cobertura nominal. Sem base nominal, o
+          // consenso é majoritariamente inferido (favorável por unanimidade) → avisa.
+          const pts = timeline ?? [];
+          const tot = pts.reduce((s, p) => s + p.total_itens, 0);
+          const cob = tot ? Math.round((pts.reduce((s, p) => s + ((p.cobertura_nominal ?? 0) / 100) * p.total_itens, 0) / tot) * 1000) / 10 : null;
+          if (cob == null || cob >= 30) return null;
+          return (
+            <p className="text-[11px] text-warning mt-2">
+              Base nominal de apenas {cob.toFixed(0)}% — o consenso é majoritariamente <strong>inferido</strong> (voto favorável por unanimidade, não lido individualmente). Interprete com cautela.
+            </p>
+          );
+        })()}
       </div>
 
       {/* Gráficos superiores */}

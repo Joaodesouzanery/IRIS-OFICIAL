@@ -223,7 +223,12 @@ async function collect(req: NextRequest) {
     const count = new Map<string, number>();
     for (const e of existingImgs ?? []) if (e.imagem_url) count.set(e.imagem_url, (count.get(e.imagem_url) ?? 0) + 1);
     for (const r of rows) if (typeof r.imagem_url === "string") count.set(r.imagem_url, (count.get(r.imagem_url) ?? 0) + 1);
-    const generic = new Set([...count.entries()].filter(([, n]) => n >= 3).map(([u]) => u));
+    // Lead-image por-artigo do Volto (…/@@images/image[/scale]) é ÚNICA por notícia —
+    // nunca é logo genérico; jamais suprimir (senão zeraria a única foto real do card).
+    const isPerArticleLeadImage = (u: string) => /\/@@images\/image(?:\/[a-z]+)?$/i.test(u);
+    const generic = new Set(
+      [...count.entries()].filter(([u, n]) => n >= 3 && !isPerArticleLeadImage(u)).map(([u]) => u),
+    );
     if (generic.size > 0) {
       for (const r of rows) {
         if (typeof r.imagem_url === "string" && generic.has(r.imagem_url)) {

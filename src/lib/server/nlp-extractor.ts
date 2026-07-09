@@ -758,14 +758,39 @@ const RE_PRESENTES_BLOCO = /(?:Constitui[cç][aã]o|Presentes?)\s*:\s*([\s\S]{0,
 
 export function extractPresentes(text: string): string[] {
   const bloco = RE_PRESENTES_BLOCO.exec(text)?.[1];
-  if (!bloco) return [];
+  if (bloco) {
+    const nomes: string[] = [];
+    const re = new RegExp(`Diretor(?:a)?(?:[- ](?:Presidente|Geral))?\\s+(${NOME})`, "g");
+    for (const match of bloco.matchAll(re)) {
+      // O macro NOME aceita o conector "e" + palavra capitalizada — corta o rabo
+      // institucional ("… Rudnik e Diretoria 4" → "… Rudnik").
+      const nome = match[1].replace(/\s+e\s+(?:Diretoria|Presid[êe]ncia|Superintend[êe]ncia).*$/i, "").trim();
+      if (nome && !nomes.includes(nome)) nomes.push(nome);
+    }
+    if (nomes.length) return nomes;
+  }
+  // Fallback ANM: as atas da ANM não têm bloco "Constituição:" — o roster está em
+  // prosa no preâmbulo ("…presidida pelo Diretor-Geral, NOME, e contou com a presença
+  // do Diretor Substituto NOME e do Diretor NOME…"). Sem ler isto, a ATA ANM ficava
+  // sem roster e produzia 0 voto (dependia 100% do mandato). QA Etapa 19.
+  return extractPresentesNarrativo(text);
+}
+
+// Zona do preâmbulo onde a ANM lista quem presidiu/compareceu (limita o escopo para
+// não pescar "o Diretor relator X" dos itens lá embaixo).
+const RE_ROSTER_ZONA = /(?:presidid[ao][\s\S]{0,40}?Diretor|contou\s+com\s+a\s+presen[cç]a|estiveram\s+presentes|compareceram|com\s+a\s+participa[cç][aã]o)[\s\S]{0,600}/i;
+// Nome SEM o conector "e" isolado (o macro NOME global o inclui e mesclaria dois
+// diretores adjacentes: "…Neves e do Diretor Caio…"). Aceita só "de/da/do/dos/das".
+const NOME_SEM_E = "[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+(?:\\s+(?:d[aeo]s?|[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+)){1,4}";
+const RE_ROSTER_DIRETOR = new RegExp(`Diretor(?:a)?(?:[- ](?:Geral|Presidente|Substitut[oa]))?\\s*,?\\s+(${NOME_SEM_E})`, "g");
+
+export function extractPresentesNarrativo(text: string): string[] {
+  const zona = RE_ROSTER_ZONA.exec(text)?.[0];
+  if (!zona) return [];
   const nomes: string[] = [];
-  const re = new RegExp(`Diretor(?:a)?(?:[- ](?:Presidente|Geral))?\\s+(${NOME})`, "g");
-  for (const match of bloco.matchAll(re)) {
-    // O macro NOME aceita o conector "e" + palavra capitalizada — corta o rabo
-    // institucional ("… Rudnik e Diretoria 4" → "… Rudnik").
-    const nome = match[1].replace(/\s+e\s+(?:Diretoria|Presid[êe]ncia|Superintend[êe]ncia).*$/i, "").trim();
-    if (nome && !nomes.includes(nome)) nomes.push(nome);
+  for (const match of zona.matchAll(RE_ROSTER_DIRETOR)) {
+    const nome = match[1].replace(/\s+(?:na|no|em|ao)\s.*$/i, "").trim();
+    if (nome && nome.split(/\s+/).length >= 2 && !isRoleWordOnly(nome) && !nomes.includes(nome)) nomes.push(nome);
   }
   return nomes;
 }

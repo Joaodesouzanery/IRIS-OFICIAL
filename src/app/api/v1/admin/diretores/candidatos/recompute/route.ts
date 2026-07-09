@@ -17,8 +17,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
-import { findBestMatch } from "@/lib/server/name-matcher";
+import { findBestMatch, tokenSortRatio } from "@/lib/server/name-matcher";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
+import { mergeDiretores } from "@/lib/server/diretor-merge";
 
 export const dynamic = "force-dynamic";
 
@@ -137,6 +138,45 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  // ── Auto-mesclagem de diretores DUPLICADOS 100% seguros (acento-only) ──────
+  // Só funde pares acento-insensível-idênticos (tokenSortRatio ≥0.98), ex.:
+  // "Alex Antônio de Azevedo Cruz" × "Alex Antonio de Azevedo Cruz". Mantém o de
+  // MAIS votos (desempate: nome mais longo = forma oficial). Pares que exigem
+  // julgamento (nome com token extra) ficam para o painel manual "Mesclar".
+  let diretoresMesclados = 0;
+  const agenciasTocadas = new Set<string>([...grupos.values()].map((g) => g[0].agencia_id));
+  for (const ag of agenciasTocadas) {
+    const lista = await diretoresDe(ag); // já em cache
+    const contagemVotos = new Map<string, number>();
+    if (!dryRun && lista.length > 1) {
+      const { data: votosAg } = await db
+        .from("votos")
+        .select("diretor_id, diretores!inner(agencia_id)")
+        .eq("diretores.agencia_id", ag)
+        .limit(50000);
+      for (const v of votosAg ?? []) contagemVotos.set(v.diretor_id, (contagemVotos.get(v.diretor_id) ?? 0) + 1);
+    }
+    const jaFundidos = new Set<string>();
+    for (let i = 0; i < lista.length; i++) {
+      for (let j = i + 1; j < lista.length; j++) {
+        const a = lista[i], b = lista[j];
+        if (jaFundidos.has(a.id) || jaFundidos.has(b.id)) continue;
+        if (tokenSortRatio(a.nome, b.nome) < 0.98) continue; // só acento-only/idêntico
+        // keep = mais votos; empate → nome mais longo (forma oficial completa).
+        const va = contagemVotos.get(a.id) ?? 0, vb = contagemVotos.get(b.id) ?? 0;
+        const [keep, merge] = va !== vb
+          ? (va > vb ? [a, b] : [b, a])
+          : (a.nome.length >= b.nome.length ? [a, b] : [b, a]);
+        if (amostra.length < 20) amostra.push({ nome: `${keep.nome} ⇐ ${merge.nome}`, agencia_id: ag, score: 1, acao: "auto-mesclar", cartoes: 0 });
+        diretoresMesclados += 1;
+        if (!dryRun) {
+          try { await mergeDiretores(db, keep.id, merge.id); jaFundidos.add(merge.id); }
+          catch (e) { console.error("[recompute] auto-merge falhou:", e); }
+        }
+      }
+    }
+  }
+
   return NextResponse.json({
     dry_run: dryRun,
     candidatos_pendentes: (candidatos ?? []).length,
@@ -144,8 +184,9 @@ export async function POST(req: NextRequest) {
     grupos_auto_aprovados: autoAprovados,
     grupos_recomputados: recomputados,
     cartoes_colapsados: cartoesColapsados,
+    diretores_mesclados: diretoresMesclados,
     votos_retroativos_criados: votosCriados,
     amostra,
-    ...(dryRun ? { notice: "Somente relatório. Repita com ?dry_run=0 para aplicar (auto-aprova >=0.85, recomputa e colapsa o resto)." } : {}),
+    ...(dryRun ? { notice: "Somente relatório. Repita com ?dry_run=0 para aplicar (auto-aprova >=0.85, colapsa e auto-mescla acento-only)." } : {}),
   });
 }

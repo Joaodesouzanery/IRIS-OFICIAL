@@ -84,6 +84,18 @@ export function deriveNomeVariantes(nome: string): string[] {
   for (const sobrenome of tokens.slice(1)) {
     if (!conectores.has(sobrenome.toLowerCase())) variantes.add(`${tokens[0]} ${sobrenome}`);
   }
+  // Variante "sem patronímico do meio": remove cada par (conector + palavra seguinte),
+  // ex.: "José Fernando de Mendonça Gomes Júnior" → "José Fernando Gomes Júnior".
+  // Casa o nome OFICIAL COMPLETO (seed) com a citação abreviada usada nos documentos —
+  // sem isso o par ficava em 0.68 (faixa candidato) e criava um diretor DUPLICADO.
+  const semPatronimico: string[] = [];
+  for (let i = 0; i < tokens.length; i++) {
+    if (conectores.has(tokens[i].toLowerCase()) && i + 1 < tokens.length) { i++; continue; }
+    semPatronimico.push(tokens[i]);
+  }
+  if (semPatronimico.length >= 2 && semPatronimico.length < tokens.length) {
+    variantes.add(semPatronimico.join(" "));
+  }
   variantes.delete(nome);
   return [...variantes];
 }

@@ -84,9 +84,12 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     directorAmbiguo: directorInfo.ambiguo,
   });
   const tipoDocumento = mapToPlatformDocumentType(documentType);
+  const numeroDeliberacao = extractAnttDocumentNumber(clean, filename, documentType);
+  // Chave de dedup do voto: data da reunião OU número VOTO-* estável.
+  const hasDedupKey = Boolean(date || numeroDeliberacao || firstProcess.processo);
 
   const fields: Partial<PreviewResultFields> = {
-    numero_deliberacao: extractAnttDocumentNumber(clean, filename, documentType),
+    numero_deliberacao: numeroDeliberacao,
     numero_reuniao: meeting.numero,
     reuniao_ordinaria: meeting.titulo,
     tipo_reuniao: meeting.tipo_reuniao,
@@ -115,7 +118,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     documentType,
     fields,
     ataItems: shouldExposeItems(documentType) ? enrichedProcesses : undefined,
-    confidenceBoost: confidenceFor(documentType, meeting.numero, firstProcess.processo, director, enrichedProcesses),
+    confidenceBoost: confidenceFor(documentType, meeting.numero, firstProcess.processo, director, enrichedProcesses, hasDedupKey),
     warnings,
     raw: {
       agencia_sigla: "ANTT",
@@ -565,14 +568,31 @@ function extractNearestRelator(prefix: string) {
 }
 
 function extractVoteConclusion(text: string) {
-  const conclusion = between(text, /Diante do exposto,?\s*/i, /\s+Documento assinado eletronicamente|$/i)
-    ?? between(text, /Assim, concluo que\s*/i, /\s+Documento assinado eletronicamente|$/i)
-    ?? between(text, /Ante o exposto,?\s*/i, /\s+Documento assinado eletronicamente|$/i)
-    ?? between(text, /VOTO\s+por\s+/i, /\s+Documento assinado eletronicamente|$/i)
-    ?? between(text, /Voto\s+pela\s+/i, /\s+Documento assinado eletronicamente|$/i)
+  const END = /\s+Documento assinado eletronicamente|$/i;
+  // Lead-ins do dispositivo/voto (QA Etapa 19: a maioria dos votos ANTT ficava sem
+  // `resultado` porque o dispositivo usa fórmulas variadas). Ordem não importa (1º que casa).
+  const conclusion = between(text, /Diante do exposto,?\s*/i, END)
+    ?? between(text, /Assim, concluo que\s*/i, END)
+    ?? between(text, /Ante o exposto,?\s*/i, END)
+    ?? between(text, /(?:Isto|Isso)\s+posto,?\s*/i, END)
+    ?? between(text, /Pelo\s+exposto,?\s*/i, END)
+    ?? between(text, /Por\s+todo\s+o\s+exposto,?\s*/i, END)
+    ?? between(text, /(?:Em\s+face|Face)\s+(?:d?ao?)\s+exposto,?\s*/i, END)
+    ?? between(text, /N[ea]stes?\s+termos,?\s*/i, END)
+    ?? between(text, /Nesses\s+termos,?\s*/i, END)
+    ?? between(text, /VOTO\s+por\s+/i, END)
+    ?? between(text, /Voto\s+pel[ao]\s+/i, END)
+    ?? between(text, /Voto\s+no\s+sentido\s+/i, END)
+    ?? between(text, /Conclui-se\s+/i, END)
+    ?? between(text, /(?:DISPOSITIVO|CONCLUS[AÃ]O)\s*:?\s*/i, END)
     ?? between(text, /ENCAMINHAMENTO:\s*/i, /\s+(?:Bras[ÃƒÃ­i]lia|Documento assinado eletronicamente|$)/i)
     ?? between(text, /EMENTA\s*:\s*/i, /\s+(?:RELAT[ÃƒÃ“O]RIO|I\s+-\s+RELAT|$)/i);
-  return conclusion ? conclusion.slice(0, 2000) : null;
+  if (conclusion) return conclusion.slice(0, 2000);
+  // Rede final: o dispositivo assinado fica no FIM do documento. Varre a cauda
+  // (últimos ~3000 chars) para o inferResultado pescar o verbo (defiro/dou provimento…).
+  // Só entra aqui quando nenhum lead-in casou — nunca sobrepõe uma conclusão explícita.
+  const tail = text.slice(-3000).trim();
+  return tail.length >= 40 ? tail.slice(0, 2000) : null;
 }
 
 function extractVoteNumber(text: string, filename: string) {
@@ -615,18 +635,20 @@ function extractSeiUrl(text: string) {
 // descartado. Princípio inalterado: sem padrão claro → null + warning (nunca chutar).
 function inferResultado(text: string): string | null {
   const value = normalize(text);
-  // Negativos
+  // Negativos — "indefer" (indeferimento/indeferido) E "indefir" (indeferir/indefiro,
+  // 1ª pessoa do dispositivo, que "indefer" NÃO casava). Ambos antes dos positivos.
   if (
-    value.includes("indefer") ||          // indeferir/indefiro/pelo indeferimento
+    value.includes("indefer") || value.includes("indefir") ||
     /\bnego\s+provimento\b|\bnegar(?:-se)?\s+provimento\b|\bnegado\s+provimento\b/.test(value) ||
     /\bnao\s+conhecer\b|\bnao\s+conhecimento\b|\bpelo\s+nao\s+provimento\b/.test(value) ||
     value.includes("improcedente") || value.includes("improcedencia") ||
     value.includes("cassacao")
   ) return "Indeferido";
   if (value.includes("retirad") && value.includes("pauta")) return "Retirado de Pauta";
-  // Positivos
+  // Positivos — "defer" (deferimento/deferido) E "defir" (deferir/defiro). O indefer/
+  // indefir já saiu no bloco negativo acima, então aqui só sobra o positivo.
   if (
-    value.includes("defer") ||            // deferir/defiro/pelo deferimento (indefer já saiu acima)
+    value.includes("defer") || value.includes("defir") ||
     /\bd(?:ar|ou|a)\s+provimento\b|\bprovimento\s+ao\s+recurso\b|\bpelo\s+provimento\b/.test(value) ||
     /\bconhecer\b.{0,40}\bprov/.test(value) ||  // "conhecer e dar provimento"
     value.includes("procedente") || value.includes("procedencia do pedido")
@@ -646,6 +668,7 @@ function confidenceFor(
   processo: string | null,
   director: string | null,
   items: AtaPreviewItem[],
+  hasDedupKey = false,
 ) {
   let score = 0.45;
   if (type !== "outro") score += 0.12;
@@ -653,6 +676,10 @@ function confidenceFor(
   if (processo) score += 0.14;
   if (director) score += 0.12;
   if (items.length > 0) score += 0.16;
+  // Chave de dedup (data OU número VOTO-*): um voto bem-identificado SEM processo nem
+  // reunião parava em 0.69 < 0.70 (cap 0.72 do doc não-final) e nunca auto-confirmava —
+  // mesmo com relator casado e resultado lido. Este termo o leva ao corte. QA Etapa 19.
+  if (hasDedupKey) score += 0.06;
   return Math.min(0.95, score);
 }
 

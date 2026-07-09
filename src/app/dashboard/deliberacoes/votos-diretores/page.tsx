@@ -267,6 +267,16 @@ export default function VotosDiretoresPage() {
       ).catch(() => ({ total: 0, data: [] })),
   });
 
+  // Diagnóstico: POR QUE os voto_individual estão parados no gate (agregado por motivo).
+  // É o que orienta o operador — sem direção do voto / confiança baixa / relator ambíguo.
+  const { data: pendenciasVoto } = useQuery({
+    queryKey: ["pendencias-voto-diagnostico"],
+    queryFn: () =>
+      api.get<{ total_pendentes: number; confirmaveis: number; motivos: Array<{ key: string; label: string; total: number }> }>(
+        "/admin/upload/pendencias-voto",
+      ).catch(() => ({ total_pendentes: 0, confirmaveis: 0, motivos: [] })),
+  });
+
   // Limpeza de deliberações duplicadas (legado, antes do dedup estrutural). Dois
   // passos: primeiro verifica (dry-run) e mostra a contagem; só o 2º clique funde.
   const [dedupPreview, setDedupPreview] = useState<DedupResult | null>(null);
@@ -516,6 +526,23 @@ export default function VotosDiretoresPage() {
                   : "Reprocessar votos ignorados"}
             </button>
           </div>
+          {(pendenciasVoto?.total_pendentes ?? 0) > 0 && (
+            <div className="rounded-card border border-border bg-surface-2/40 px-3 py-2.5 space-y-1.5">
+              <p className="text-[11px] text-text-muted">
+                {pendenciasVoto!.total_pendentes} voto(s) individual(is) em revisão — por que o gate não confirmou:
+                {(pendenciasVoto?.confirmaveis ?? 0) > 0 && (
+                  <span className="text-success"> {pendenciasVoto!.confirmaveis} já passariam agora (rode &ldquo;Auto-confirmar alta confiança&rdquo;).</span>
+                )}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {(pendenciasVoto?.motivos ?? []).map((m) => (
+                  <span key={m.key} className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-[11px] text-text-secondary" title={m.label}>
+                    <span className="font-medium text-text-primary">{m.total}</span> {m.label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
           {(pendentesRevisao?.data ?? []).length > 0 ? (
             <div className="space-y-1.5">
               {(pendentesRevisao?.data ?? []).map((doc) => (
