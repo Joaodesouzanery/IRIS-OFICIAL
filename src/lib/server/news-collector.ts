@@ -1,6 +1,7 @@
 import crypto from "crypto";
 import type { HTMLElement } from "node-html-parser";
 import { FetchFailureError, resilientFetchText } from "@/lib/server/resilient-fetch";
+import { hasBudget } from "@/lib/server/time-budget";
 import { tryRenderHtmlFallback } from "@/lib/server/headless";
 import { parseHtml, metaContent, jsonLdBlocks, safeQuery, safeQueryAll, firstAttrValue } from "@/lib/server/html-dom";
 
@@ -146,7 +147,15 @@ export const NEWS_WINDOW_DAYS = Math.max(7, Math.min(Number(process.env.NEWS_WIN
 // Teto de detalhes buscados por fonte por run (limita carga; só artigos NOVOS contam).
 const DEEP_MAX_DETAIL_PER_SOURCE = Math.max(10, Math.min(Number(process.env.NEWS_DEEP_MAX_DETAIL ?? "60") || 60, 150));
 
-export type DeepCollectOptions = { windowDays?: number; knownUrls?: Set<string> };
+export type DeepCollectOptions = {
+  windowDays?: number;
+  knownUrls?: Set<string>;
+  /** Orçamento de tempo (Date.now()+ms). No plano Hobby a função morre aos 60s
+   *  (SIGKILL) — sem deadline, uma fonte com muitos itens novos derrubava a coleta
+   *  inteira ("An error occurred with your deployment"). Itens não processados
+   *  ficam como pending → o front re-chama ("Buscar mais notícias"). */
+  deadlineAt?: number;
+};
 
 export async function collectRegulatoryNews(
   sources: NewsSourceConfig[],
@@ -245,15 +254,17 @@ async function collectNewsSource(
     if (links.length === 0) {
       // FALLBACK: a listagem configurada falhou/zerou (caso ANTT: restrita no defeso).
       for (const variant of variants) {
+        if (!hasBudget(deep?.deadlineAt, 15_000)) break;
         const variantLinks = await fetchSourceLinks(variant, discoveryLimit).catch(() => [] as NewsLink[]);
         if (variantLinks.length > 0) { effectiveSource = variant; links = variantLinks; break; }
       }
-    } else {
+    } else if (hasBudget(deep?.deadlineAt, 25_000)) {
       // ADITIVO: a principal funciona, mas a irmã DEFESO pode ter notícias exclusivas
-      // (caso ANEEL). Tolera 404 em silêncio — a irmã pode não existir.
+      // (caso ANEEL). Sondagem BARATA (1-2 páginas, limite pequeno) — a completa só no
+      // fallback. Tolera 404 em silêncio — a irmã pode não existir.
       const defeso = variants.find((v) => v.url.includes("noticias-defeso-eleitoral"));
       if (defeso) {
-        const defesoLinks = await fetchSourceLinks(defeso, discoveryLimit).catch(() => [] as NewsLink[]);
+        const defesoLinks = await fetchSourceLinks(defeso, Math.min(discoveryLimit, 24)).catch(() => [] as NewsLink[]);
         if (defesoLinks.length > 0) extraGroups.push({ src: defeso, links: defesoLinks });
       }
     }
@@ -288,11 +299,22 @@ async function collectNewsSource(
     } else {
       pageLinks = allLinks.slice(offsetPerSource, offsetPerSource + limitPerSource);
     }
-    const detailResults = await mapWithConcurrency(
-      pageLinks,
-      DETAIL_CONCURRENCY,
-      ({ src, link }) => collectNewsLink(src, link, mode),
-    );
+    // Detalhes em LOTES com orçamento de tempo: cada detalhe custa ~1-2s (throttle
+    // 900ms/host + parse + probe de imagem). Sem o corte, uma fonte com muitos itens
+    // novos (ex.: ANTT pós-defeso) estourava os 60s do Hobby e a função morria com
+    // "An error occurred with your deployment". O que não coube fica pending →
+    // "Buscar mais notícias" continua de onde parou. QA Etapa 22-b.
+    const detailResults: Array<{ item: CollectedRegulatoryNews | null; error: string | null }> = [];
+    for (let i = 0; i < pageLinks.length; i += DETAIL_CONCURRENCY) {
+      if (!hasBudget(deep?.deadlineAt, 8_000)) break; // o resto fica pending (re-chamar)
+      const chunk = pageLinks.slice(i, i + DETAIL_CONCURRENCY);
+      const chunkResults = await mapWithConcurrency(
+        chunk,
+        DETAIL_CONCURRENCY,
+        ({ src, link }) => collectNewsLink(src, link, mode),
+      );
+      detailResults.push(...chunkResults);
+    }
     const rawItems = detailResults.map((result) => result.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
     const items = dedupeListingImages(rawItems);
     const freshItems = filterStaleMixedItems(sortNewsItemsByDate(items));

@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
 
   const dryRun = req.nextUrl.searchParams.get("dry_run") !== "0";
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
-  const deadlineAt = Date.now() + 80_000;
+  const deadlineAt = Date.now() + 50_000; // Hobby mata a função aos 60s — corta antes, o resto fica p/ a próxima chamada
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();

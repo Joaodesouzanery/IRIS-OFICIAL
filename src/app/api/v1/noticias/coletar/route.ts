@@ -129,6 +129,9 @@ async function collect(req: NextRequest) {
   const deep: DeepCollectOptions = {
     windowDays: NEWS_WINDOW_DAYS,
     knownUrls: new Set((knownRows ?? []).map((r) => r.url as string)),
+    // Hobby mata a função aos 60s (SIGKILL sem resposta) — o orçamento corta os
+    // detalhes graciosamente; o que sobrar fica pending → "Buscar mais notícias".
+    deadlineAt: Date.now() + 45_000,
   };
 
   const result = automatic
