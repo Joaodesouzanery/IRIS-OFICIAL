@@ -85,6 +85,9 @@ export interface NewsSourceCollectReport {
   /** Falha transitória (rate-limit 403/429, timeout, render JS). Não deve pintar a
    *  fonte de vermelho quando ela já tem notícias recentes — será re-tentada. */
   transient?: boolean;
+  /** Listagem efetivamente usada quando a configurada falhou/zerou e uma IRMÃ
+   *  (ex.: noticias-defeso-eleitoral) respondeu. Sinal de que a seção mudou. */
+  effective_url?: string;
 }
 
 // Uma falha é "transitória" quando é de rede/limite/instabilidade (não um problema
@@ -187,6 +190,29 @@ export async function extractOfficialImageFromNewsUrl(input: {
   };
 }
 
+// Listagens IRMÃS de uma fonte gov.br. Durante o DEFESO ELEITORAL (04/07–25/10/2026)
+// os órgãos reorganizaram as seções: a ANTT congelou `ultimas-noticias` (virou
+// "Conteúdo Restrito") e publica em `noticias-defeso-eleitoral`; a ANEEL mantém a
+// canônica E publica também na subseção defeso. Sem tentar as irmãs, a coleta "para
+// no dia X" silenciosamente quando a seção muda. Verificado ao vivo em 10/07/2026.
+export function siblingListingVariants(source: NewsSourceConfig): NewsSourceConfig[] {
+  if (source.strategy !== "govbr") return [];
+  try {
+    const url = new URL(source.url);
+    const segs = url.pathname.replace(/\/+$/, "").split("/");
+    const last = segs[segs.length - 1];
+    return ["noticias-defeso-eleitoral", "noticias"]
+      .filter((candidate) => candidate !== last)
+      .map((candidate) => {
+        const variant = new URL(url.toString());
+        variant.pathname = [...segs.slice(0, -1), candidate].join("/");
+        return { ...source, url: variant.toString() };
+      });
+  } catch {
+    return [];
+  }
+}
+
 async function collectNewsSource(
   source: NewsSourceConfig,
   limitPerSource: number,
@@ -198,35 +224,74 @@ async function collectNewsSource(
     const windowDays = deep?.windowDays;
     // No modo PROFUNDO descobrimos bem mais links (várias páginas) para cobrir a janela.
     const discoveryLimit = windowDays ? Math.max(limitPerSource, DEEP_MAX_DETAIL_PER_SOURCE * 3) : (limitPerSource + offsetPerSource);
-    let links = await fetchSourceLinks(source, discoveryLimit);
-    // O gov.br às vezes serve uma página DEGRADADA (HTTP 200 mas "magra", ~53KB, 0 links)
-    // ao IP de datacenter (soft rate-limit). É intermitente → uma 2ª tentativa após uma
-    // pausa costuma trazer a listagem completa. Só desiste (throw transitório) se persistir.
-    if (links.length === 0 && source.strategy === "govbr") {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Grupos de links, cada um atrelado à LISTAGEM de origem (o parse de detalhe usa a
+    // URL da listagem para escopar isNewsDetailUrl): primária + irmãs (defeso).
+    let effectiveSource = source;
+    let links: NewsLink[] = [];
+    let primaryError: unknown = null;
+    try {
       links = await fetchSourceLinks(source, discoveryLimit);
+      // O gov.br às vezes serve uma página DEGRADADA (HTTP 200 mas "magra", 0 links)
+      // ao IP de datacenter (soft rate-limit) — re-tenta uma vez após pausa.
+      if (links.length === 0 && source.strategy === "govbr") {
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        links = await fetchSourceLinks(source, discoveryLimit);
+      }
+    } catch (err) {
+      primaryError = err;
+    }
+    const extraGroups: Array<{ src: NewsSourceConfig; links: NewsLink[] }> = [];
+    const variants = siblingListingVariants(source);
+    if (links.length === 0) {
+      // FALLBACK: a listagem configurada falhou/zerou (caso ANTT: restrita no defeso).
+      for (const variant of variants) {
+        const variantLinks = await fetchSourceLinks(variant, discoveryLimit).catch(() => [] as NewsLink[]);
+        if (variantLinks.length > 0) { effectiveSource = variant; links = variantLinks; break; }
+      }
+    } else {
+      // ADITIVO: a principal funciona, mas a irmã DEFESO pode ter notícias exclusivas
+      // (caso ANEEL). Tolera 404 em silêncio — a irmã pode não existir.
+      const defeso = variants.find((v) => v.url.includes("noticias-defeso-eleitoral"));
+      if (defeso) {
+        const defesoLinks = await fetchSourceLinks(defeso, discoveryLimit).catch(() => [] as NewsLink[]);
+        if (defesoLinks.length > 0) extraGroups.push({ src: defeso, links: defesoLinks });
+      }
     }
     if (links.length === 0) {
+      if (primaryError) throw primaryError;
       throw new Error("Nenhum link de noticia valido encontrado na fonte oficial");
     }
-    let pageLinks: NewsLink[];
+    const linkGroups: Array<{ src: NewsSourceConfig; links: NewsLink[] }> = [
+      { src: effectiveSource, links },
+      ...extraGroups,
+    ];
+    // Achata mantendo a origem de cada link; dedupe entre grupos por URL.
+    const seenUrls = new Set<string>();
+    const allLinks: Array<{ src: NewsSourceConfig; link: NewsLink }> = [];
+    for (const group of linkGroups) {
+      for (const link of group.links) {
+        if (seenUrls.has(link.url)) continue;
+        seenUrls.add(link.url);
+        allLinks.push({ src: group.src, link });
+      }
+    }
+    let pageLinks: Array<{ src: NewsSourceConfig; link: NewsLink }>;
     if (windowDays) {
       // Profundo: pega os links DENTRO da janela (ou sem data) que ainda NÃO estão
-      // no banco (novos), do mais novo ao mais velho, com teto por run. Assim itens
-      // do meio da lista (ex.: ANA de 20/05) entram sem re-baixar a lista inteira.
+      // no banco (novos), do mais novo ao mais velho, com teto por run.
       const cutoff = Date.now() - windowDays * 24 * 60 * 60 * 1000;
       const known = deep?.knownUrls;
-      pageLinks = links
-        .filter((link) => { const t = publishedLinkTime(link); return t === 0 || t >= cutoff; })
-        .filter((link) => !known?.has(link.url))
+      pageLinks = allLinks
+        .filter(({ link }) => { const t = publishedLinkTime(link); return t === 0 || t >= cutoff; })
+        .filter(({ link }) => !known?.has(link.url))
         .slice(0, DEEP_MAX_DETAIL_PER_SOURCE);
     } else {
-      pageLinks = links.slice(offsetPerSource, offsetPerSource + limitPerSource);
+      pageLinks = allLinks.slice(offsetPerSource, offsetPerSource + limitPerSource);
     }
     const detailResults = await mapWithConcurrency(
       pageLinks,
       DETAIL_CONCURRENCY,
-      (link) => collectNewsLink(source, link, mode),
+      ({ src, link }) => collectNewsLink(src, link, mode),
     );
     const rawItems = detailResults.map((result) => result.item).filter((item): item is CollectedRegulatoryNews => Boolean(item));
     const items = dedupeListingImages(rawItems);
@@ -242,18 +307,19 @@ async function collectNewsSource(
       tier: source.tier ?? "core",
       source_url: source.url,
       status: freshItems.length > 0 ? "ok" : "error",
-      links_found: links.length,
+      links_found: allLinks.length,
       items_collected: freshItems.length,
       items_processed: detailResults.length,
-      items_pending: Math.max(0, links.length - offsetPerSource - detailResults.length),
+      items_pending: Math.max(0, allLinks.length - offsetPerSource - detailResults.length),
       batch_offset: offsetPerSource,
       images_found: freshItems.filter((item) => item.metadata.image_status === "official_image_found" || item.metadata.image_status === "official_image_unverified").length,
       images_absent: freshItems.filter((item) => item.metadata.image_status === "official_image_absent").length,
       images_failed: freshItems.filter((item) => item.metadata.image_status === "image_fetch_failed").length,
-      latest_urls: freshItems.length ? freshItems.slice(0, 5).map((item) => item.url) : links.slice(0, 5).map((link) => link.url),
+      latest_urls: freshItems.length ? freshItems.slice(0, 5).map((item) => item.url) : allLinks.slice(0, 5).map(({ link }) => link.url),
       latest_publicado_em: latestPublishedAt(freshItems),
       latest_title: latestItem(freshItems)?.titulo ?? null,
       detail_errors: detailErrors,
+      ...(effectiveSource.url !== source.url ? { effective_url: effectiveSource.url } : {}),
     };
     if (freshItems.length === 0) {
       report.error = detailErrors[0] ?? "Nenhuma noticia valida foi extraida dos links encontrados";

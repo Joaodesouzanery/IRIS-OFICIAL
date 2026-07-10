@@ -68,6 +68,7 @@ type CompletudeAgencia = {
   deliberacoes: { finais: number; sem_voto: number };
   votos: { total: number; nominais: number; inferidos: number };
   diretores: { aprovados: number; com_voto: number; candidatos_pendentes: number };
+  ultima_captura?: { documento_em: string | null; deliberacao_em: string | null };
 };
 
 type CompletudeResponse = {
@@ -794,11 +795,18 @@ export default function VotosDiretoresPage() {
                   <th className="py-1 px-2 font-medium text-right">Deliberações</th>
                   <th className="py-1 px-2 font-medium text-right">Votos (nom/inf)</th>
                   <th className="py-1 px-2 font-medium text-right">Diretores c/ voto</th>
+                  <th className="py-1 px-2 font-medium text-right">Última captura</th>
                   <th className="py-1 pl-2 font-medium text-right">Pendentes</th>
                 </tr>
               </thead>
               <tbody>
-                {completude.por_agencia.map((a) => (
+                {completude.por_agencia.map((a) => {
+                  // Staleness: fonte com docs mas parada há >7 dias (mesmo sintoma da
+                  // ANTT-notícias no defeso) fica visível de imediato.
+                  const ultima = a.ultima_captura?.documento_em ?? a.ultima_captura?.deliberacao_em ?? null;
+                  const diasParada = ultima ? Math.floor((Date.now() - new Date(ultima).getTime()) / 86_400_000) : null;
+                  const parada = a.documentos_2026.detectados > 0 && diasParada != null && diasParada > 7;
+                  return (
                   <tr key={a.sigla} className="border-b border-border/50">
                     <td className="py-1.5 pr-3 font-medium text-text-primary">{a.sigla}</td>
                     <td className="py-1.5 px-2 text-right">{a.reunioes.com_deliberacao}</td>
@@ -809,13 +817,18 @@ export default function VotosDiretoresPage() {
                     </td>
                     <td className="py-1.5 px-2 text-right">{a.votos.nominais}/{a.votos.inferidos}</td>
                     <td className="py-1.5 px-2 text-right">{a.diretores.com_voto}/{a.diretores.aprovados}</td>
+                    <td className={cn("py-1.5 px-2 text-right", parada ? "text-warning" : "text-text-muted")}>
+                      {ultima ? `${ultima.slice(8, 10)}/${ultima.slice(5, 7)}` : "—"}
+                      {parada ? ` (${diasParada}d)` : ""}
+                    </td>
                     <td className="py-1.5 pl-2 text-right">
                       {a.diretores.candidatos_pendentes > 0
                         ? <span className="text-warning">{a.diretores.candidatos_pendentes}</span>
                         : <span className="text-success">0</span>}
                     </td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>

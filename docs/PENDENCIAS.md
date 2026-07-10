@@ -52,6 +52,12 @@ No plano grátis, a conferência humana semanal é:
 - **30/11/2026 — mandatos interinos ANM vencem**: atualizar o seed de diretores
   (`diretores` / mandatos) quando houver nomeação definitiva; sem isso, votos novos dos
   substitutos viram candidatos em revisão.
+- **04/07–25/10/2026 — DEFESO ELEITORAL (notícias)**: os órgãos gov.br reorganizaram as
+  seções de notícias (ANTT congelou `ultimas-noticias` — virou login-walled — e publica em
+  `noticias-defeso-eleitoral`; ANEEL publica em AMBAS). O coletor tenta as listagens irmãs
+  automaticamente (Etapa 22). **Após 25/10/2026**: conferir se as seções voltaram ao normal
+  e se as URLs configuradas seguem válidas (o aviso "fontes sem notícia nova" na tela
+  Notícias acusa qualquer nova mudança).
 
 ## Adiados por decisão (reavaliar quando fizer sentido)
 

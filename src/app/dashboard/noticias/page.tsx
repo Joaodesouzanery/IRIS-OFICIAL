@@ -341,6 +341,24 @@ export default function NoticiasPage() {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ["noticias"] }),
   });
 
+  // Saúde das fontes: destaca agência PARADA (>7 dias sem notícia nova enquanto as
+  // outras avançam) — sinal de listagem movida (ex.: defeso eleitoral). O coletor já
+  // auto-tenta as listagens irmãs; se o aviso persistir após "Coletar", é algo novo.
+  const { data: healthData } = useQuery({
+    queryKey: ["noticias", "health"],
+    queryFn: () =>
+      api.get<{ sources: Array<{ agencia_sigla: string; total: number; dias_sem_publicar: number | null }> }>(
+        "/noticias/health",
+      ).catch(() => ({ sources: [] })),
+  });
+  const fontesParadas = useMemo(
+    () =>
+      (healthData?.sources ?? [])
+        .filter((s) => s.total > 0 && typeof s.dias_sem_publicar === "number" && s.dias_sem_publicar > 7)
+        .sort((a, b) => (b.dias_sem_publicar ?? 0) - (a.dias_sem_publicar ?? 0)),
+    [healthData],
+  );
+
   // Re-resolve imagens de notícias já coletadas sem foto (a coleta normal pula URLs
   // conhecidas). Re-chama enquanto sobrar (orçamento de tempo). Filtra pela agência
   // selecionada quando houver, senão todas.
@@ -652,6 +670,12 @@ export default function NoticiasPage() {
       </div>
       {imagensFeedback && (
         <p className={cn("text-xs", reprocessarImagensMutation.isError ? "text-error" : "text-success")}>{imagensFeedback}</p>
+      )}
+      {fontesParadas.length > 0 && (
+        <div className="border border-warning/30 bg-warning/10 rounded-card px-3 py-2 text-xs text-warning">
+          Fontes sem notícia nova: {fontesParadas.map((s) => `${s.agencia_sigla} (${s.dias_sem_publicar}d)`).join(" · ")} — rode
+          &ldquo;Coletar Notícias&rdquo; (o coletor tenta automaticamente as seções alternativas, ex.: defeso eleitoral).
+        </div>
       )}
 
       {/* Adicionar notícia por LINK: o crawler não pega tudo (páginas antigas, fontes sem API).

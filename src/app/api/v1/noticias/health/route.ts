@@ -125,9 +125,15 @@ export async function GET(req: NextRequest) {
       latestOfficialTime > 0 &&
       (!latestByPublication || latestSavedTime + 60_000 < latestOfficialTime || (officialUrl && latestByPublication.url !== officialUrl && latestSavedTime <= latestOfficialTime)),
     );
+    // Dias desde a última notícia PUBLICADA salva — fonte parada há >7d enquanto as
+    // outras avançam = sinal de listagem movida (ex.: defeso eleitoral). QA Etapa 22.
+    const diasSemPublicar = latestByPublication?.publicado_em
+      ? Math.max(0, Math.floor((Date.now() - new Date(latestByPublication.publicado_em).getTime()) / 86_400_000))
+      : null;
     return {
       ...source,
       total: rows.length,
+      dias_sem_publicar: diasSemPublicar,
       last_seen_at: latestBySeen,
       latest_last_seen_at: latestBySeen,
       latest_publicado_em: latestByPublication?.publicado_em ?? null,

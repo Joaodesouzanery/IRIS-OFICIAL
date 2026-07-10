@@ -42,6 +42,8 @@ interface AgenciaCompletude {
   deliberacoes: { finais: number; sem_voto: number; so_inferidas: number; sem_empresa_id: number };
   votos: { total: number; nominais: number; inferidos: number };
   diretores: { aprovados: number; com_voto: number; sem_mandato: number; candidatos_pendentes: number };
+  /** Staleness: fonte "parada no dia X" fica visível (QA Etapa 22 — sintoma ANTT-notícias). */
+  ultima_captura: { documento_em: string | null; deliberacao_em: string | null };
 }
 
 export async function GET(req: NextRequest) {
@@ -67,7 +69,7 @@ export async function GET(req: NextRequest) {
       db.from("deliberacoes")
         .select("id, agencia_id, tipo_documento, documento_pai_id, numero_reuniao, data_reuniao, interessado, empresa_id, reuniao_id")
         .limit(40000),
-      db.from("monitoramento_itens").select("agencia_id, status").gte("data_reuniao", de).lte("data_reuniao", ate).limit(40000),
+      db.from("monitoramento_itens").select("agencia_id, status, data_reuniao").gte("data_reuniao", de).lte("data_reuniao", ate).limit(40000),
       db.from("votos").select("deliberacao_id, diretor_id, is_nominal").limit(80000),
       db.from("diretores").select("id, agencia_id").eq("review_status", "aprovado").limit(5000),
       db.from("mandatos").select("diretor_id").limit(20000),
@@ -84,6 +86,7 @@ export async function GET(req: NextRequest) {
       deliberacoes: { finais: 0, sem_voto: 0, so_inferidas: 0, sem_empresa_id: 0 },
       votos: { total: 0, nominais: 0, inferidos: 0 },
       diretores: { aprovados: 0, com_voto: 0, sem_mandato: 0, candidatos_pendentes: 0 },
+      ultima_captura: { documento_em: null, deliberacao_em: null },
     });
   }
   const ag = (id: string | null) => (id ? byId.get(id) ?? null : null);
@@ -103,6 +106,9 @@ export async function GET(req: NextRequest) {
     if (NAO_FINAL.has(String(d.tipo_documento))) continue;
     if (d.tipo_documento === "ata" && d.documento_pai_id == null) continue;
     e.deliberacoes.finais += 1;
+    if (d.data_reuniao && (!e.ultima_captura.deliberacao_em || d.data_reuniao > e.ultima_captura.deliberacao_em)) {
+      e.ultima_captura.deliberacao_em = d.data_reuniao;
+    }
     if (d.interessado && d.interessado.trim() && !d.empresa_id) e.deliberacoes.sem_empresa_id += 1;
     const chave = d.numero_reuniao
       ? `${d.agencia_id}|r|${d.numero_reuniao}`
@@ -123,6 +129,10 @@ export async function GET(req: NextRequest) {
     e.documentos_2026.detectados += 1;
     const st = String(it.status ?? "?");
     e.documentos_2026.por_status[st] = (e.documentos_2026.por_status[st] ?? 0) + 1;
+    const dt = typeof (it as { data_reuniao?: unknown }).data_reuniao === "string" ? (it as { data_reuniao: string }).data_reuniao : null;
+    if (dt && (!e.ultima_captura.documento_em || dt > e.ultima_captura.documento_em)) {
+      e.ultima_captura.documento_em = dt;
+    }
   }
 
   // Votos: total/nominais/inferidos por agência (só das deliberações de 2026),

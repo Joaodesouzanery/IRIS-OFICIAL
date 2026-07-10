@@ -193,7 +193,7 @@ async function collect(req: NextRequest) {
       .eq("id", sourceId);
   }));
 
-  const rows = items.map((item) => {
+  let rows = items.map((item) => {
     const row: Record<string, unknown> = {
       agencia_id: agencyBySigla.get(item.agencia_sigla) ?? null,
       agencia_sigla: item.agencia_sigla,
@@ -244,6 +244,57 @@ async function collect(req: NextRequest) {
         }
       }
     }
+  }
+
+  // ── Republicação sob NOVA URL (defeso eleitoral) ─────────────────────────────
+  // A mesma notícia (mesma agência + mesmo título ± mesma data) já existe no banco
+  // com a URL antiga — que pode ter virado login-walled (caso ANTT). Em vez de
+  // inserir DUPLICATA, MIGRA a linha existente para a URL nova/pública (o "Saiba
+  // Mais" volta a funcionar) e preenche a imagem se faltava. QA Etapa 22.
+  if (rows.length > 0) {
+    const normTitulo = (s: unknown) =>
+      String(s ?? "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, " ").trim();
+    const siglas = [...new Set(rows.map((r) => r.agencia_sigla as string).filter(Boolean))];
+    const { data: existentes } = await db
+      .from("regulatory_news")
+      .select("id, url, titulo, agencia_sigla, publicado_em, imagem_url")
+      .in("agencia_sigla", siglas)
+      .limit(4000);
+    const porChave = new Map<string, { id: string; url: string; publicado_em: string | null; imagem_url: string | null }>();
+    const urlsExistentes = new Set<string>();
+    for (const e of (existentes ?? []) as Array<{ id: string; url: string; titulo: string; agencia_sigla: string; publicado_em: string | null; imagem_url: string | null }>) {
+      urlsExistentes.add(e.url);
+      porChave.set(`${e.agencia_sigla}|${normTitulo(e.titulo)}`, e);
+    }
+    const restantes: typeof rows = [];
+    let migradas = 0;
+    for (const r of rows) {
+      const ex = porChave.get(`${r.agencia_sigla}|${normTitulo(r.titulo)}`);
+      const urlNova = String(r.url ?? "");
+      if (ex && ex.url !== urlNova) {
+        // Datas incompatíveis (ambas presentes e dias diferentes) → provavelmente
+        // notícias distintas com título igual; segue como insert normal.
+        const d1 = String(ex.publicado_em ?? "").slice(0, 10);
+        const d2 = String(r.publicado_em ?? "").slice(0, 10);
+        if (d1 && d2 && d1 !== d2) { restantes.push(r); continue; }
+        if (urlsExistentes.has(urlNova)) continue; // ambas versões já no banco → não insere de novo
+        const patch: Record<string, unknown> = {
+          url: urlNova,
+          hash_item: r.hash_item,
+          last_seen_at: r.last_seen_at,
+          metadata: { ...(r.metadata as Record<string, unknown>), url_migrada_de: ex.url },
+        };
+        if (!ex.imagem_url && r.imagem_url) patch.imagem_url = r.imagem_url;
+        if (!ex.publicado_em && r.publicado_em) patch.publicado_em = r.publicado_em;
+        const { error: migErr } = await db.from("regulatory_news").update(patch).eq("id", ex.id);
+        if (migErr) restantes.push(r); // migração falhou → deixa o upsert seguir
+        else migradas++;
+        continue;
+      }
+      restantes.push(r);
+    }
+    if (migradas > 0) console.log(`[noticias/coletar] ${migradas} notícia(s) migrada(s) para a URL republicada (defeso).`);
+    rows = restantes;
   }
 
   if (rows.length === 0) {
