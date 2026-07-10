@@ -445,7 +445,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           nome_variantes: Array.isArray((dir as { nome_variantes?: unknown }).nome_variantes)
             ? (dir as { nome_variantes: string[] }).nome_variantes
             : [],
-        }));
+        }))
+          // DETERMINISMO: nome mais LONGO primeiro. findBestMatch usa `>` estrito, então
+          // em empate (relator "Felipe Queiroz" casa 1.0 tanto o duplicado curto quanto o
+          // seed "Felipe Fernandes Queiroz") vence o iterado primeiro → sempre o oficial
+          // completo. Sem isto o voto caía num cadastro arbitrário (ordem do Postgres).
+          .sort((x, y) => y.nome.length - x.nome.length);
         // Roster de inferência: PREFERE os presentes declarados no próprio documento
         // ("Constituição:"/"Presentes:" — quem de fato estava na reunião), casados com
         // match ≥0.85 a diretores cadastrados; mandatos são o fallback. Presente sem
@@ -633,6 +638,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               numeroDeliberacao: itemNumero,
               processo: item.processo,
               dataReuniao: d.data_reuniao,
+              // Fecha o furo voto×ata: casa o item da ata com a deliberação do voto
+              // individual (mesmo processo, MESMA reunião) quando a data diverge —
+              // a data do voto é a de assinatura. Antes só o ramo do voto passava isto.
+              numeroReuniao: d.numero_reuniao,
             });
             if (itemExistente) {
               await enrichDeliberacaoExistente(db, itemExistente, {

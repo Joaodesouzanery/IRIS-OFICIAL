@@ -17,7 +17,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
-import { findBestMatch, tokenSortRatio } from "@/lib/server/name-matcher";
+import { findBestMatch, tokenSortRatio, isStrictAbbreviation } from "@/lib/server/name-matcher";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { mergeDiretores } from "@/lib/server/diretor-merge";
 
@@ -161,12 +161,17 @@ export async function POST(req: NextRequest) {
       for (let j = i + 1; j < lista.length; j++) {
         const a = lista[i], b = lista[j];
         if (jaFundidos.has(a.id) || jaFundidos.has(b.id)) continue;
-        if (tokenSortRatio(a.nome, b.nome) < 0.98) continue; // só acento-only/idêntico
-        // keep = mais votos; empate → nome mais longo (forma oficial completa).
+        // Funde quando: (1) acento-only/idêntico (≥0.98) OU (2) um nome é abreviação
+        // ESTRITA do outro ("Felipe Queiroz" ⊂ "Felipe Fernandes Queiroz") — a causa
+        // do voto que rachava entre cadastros. Conservador (mesmo 1º+último sobrenome).
+        const acentoOnly = tokenSortRatio(a.nome, b.nome) >= 0.98;
+        const abrev = isStrictAbbreviation(a.nome, b.nome) || isStrictAbbreviation(b.nome, a.nome);
+        if (!acentoOnly && !abrev) continue;
+        // keep = nome mais LONGO (forma oficial completa); desempate por mais votos.
         const va = contagemVotos.get(a.id) ?? 0, vb = contagemVotos.get(b.id) ?? 0;
-        const [keep, merge] = va !== vb
-          ? (va > vb ? [a, b] : [b, a])
-          : (a.nome.length >= b.nome.length ? [a, b] : [b, a]);
+        const [keep, merge] = a.nome.length !== b.nome.length
+          ? (a.nome.length > b.nome.length ? [a, b] : [b, a])
+          : (va >= vb ? [a, b] : [b, a]);
         if (amostra.length < 20) amostra.push({ nome: `${keep.nome} ⇐ ${merge.nome}`, agencia_id: ag, score: 1, acao: "auto-mesclar", cartoes: 0 });
         diretoresMesclados += 1;
         if (!dryRun) {

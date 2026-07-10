@@ -14,6 +14,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { canAutoConfirm, buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { findBestMatch } from "@/lib/server/name-matcher";
+import { hasBudget } from "@/lib/server/time-budget";
 import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
@@ -21,16 +22,17 @@ export const runtime = "nodejs";
 export const maxDuration = 60;
 
 export async function GET(req: NextRequest) {
-  // Vercel Cron só emite GET (com Authorization: Bearer CRON_SECRET automático).
-  return run(req, { limit: 50 });
+  // Vercel Cron só emite GET. Loop ligado para materializar tudo que passa no gate
+  // numa única execução diária (o cron não roda frequente no plano grátis).
+  return run(req, { limit: 50, loop: true });
 }
 
 export async function POST(req: NextRequest) {
-  const body = (await req.json().catch(() => ({}))) as { limit?: number; agencia_id?: string };
+  const body = (await req.json().catch(() => ({}))) as { limit?: number; agencia_id?: string; loop?: boolean };
   return run(req, body);
 }
 
-async function run(req: NextRequest, body: { limit?: number; agencia_id?: string }) {
+async function run(req: NextRequest, body: { limit?: number; agencia_id?: string; loop?: boolean }) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Auto-confirmação indisponível em modo DEMO." }, { status: 403 });
   }
@@ -38,23 +40,15 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
   if (guard) return guard;
 
   const limit = Math.min(100, Math.max(1, Number(body.limit ?? 50)));
+  // LOOP até esvaziar (não só 1 rodada de ≤50) — destrava os "N que já passariam"
+  // num clique, sem depender do cron (que não roda no plano grátis). Orçamento de
+  // tempo Hobby-safe (~50s); o cliente re-chama enquanto `restantes` > 0.
+  const loop = body.loop === true;
+  const deadlineAt = Date.now() + 50_000;
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  let query = db
-    .from("documentos_regulatorios")
-    .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
-    .eq("status", "review_pending")
-    .order("extraction_confidence", { ascending: false, nullsFirst: false })
-    .limit(limit);
-  if (body.agencia_id) query = query.eq("agencia_id", body.agencia_id);
-
-  const { data: docs, error } = await query;
-  if (error) return NextResponse.json({ error: "Falha ao listar documentos para auto-confirmação." }, { status: 500 });
-
-  // Voto individual: verifica se o RELATOR casa ≥0.85 com diretor cadastrado
-  // (exigência do gate — a rota tem o db; canAutoConfirm lê relator_match_ok).
   const diretoresCache = new Map<string, Array<{ id: string; nome: string; nome_variantes: string[] }>>();
   async function diretoresDe(agenciaId: string) {
     const cached = diretoresCache.get(agenciaId);
@@ -67,65 +61,87 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     diretoresCache.set(agenciaId, lista);
     return lista;
   }
-  for (const doc of (docs ?? []) as any[]) {
-    const fields = doc?.campos_detectados?.preview?.fields ?? {};
-    const tipo = String(fields.tipo_documento ?? doc.tipo_documento ?? "");
-    if (tipo === "voto_individual" && fields.relator && doc.agencia_id) {
-      const match = findBestMatch(String(fields.relator), await diretoresDe(doc.agencia_id));
-      doc.relator_match_ok = Boolean(match.diretorId) && !match.needsReview;
+
+  // IDs já avaliados como INELEGÍVEIS: excluídos das próximas rodadas para não
+  // mascararem os elegíveis (que, ao confirmar, saem de review_pending sozinhos).
+  const ineligibleIds = new Set<string>();
+  let analisados = 0;
+  let confirmadosTotal = 0;
+  let rodadas = 0;
+  let restantes = false;
+  const confirmDetalhes: unknown[] = [];
+  const ultimosPulados: Array<{ id: string; reason: string }> = [];
+
+  const maxRodadas = loop ? 30 : 1;
+  while (rodadas < maxRodadas) {
+    if (loop && !hasBudget(deadlineAt, 15_000)) { restantes = true; break; }
+
+    let query = db
+      .from("documentos_regulatorios")
+      .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
+      .eq("status", "review_pending")
+      .order("extraction_confidence", { ascending: false, nullsFirst: false })
+      .limit(limit);
+    if (body.agencia_id) query = query.eq("agencia_id", body.agencia_id);
+    if (ineligibleIds.size > 0) query = query.not("id", "in", `(${[...ineligibleIds].join(",")})`);
+
+    const { data: docs, error } = await query;
+    if (error) return NextResponse.json({ error: "Falha ao listar documentos para auto-confirmação." }, { status: 500 });
+    if (!docs || docs.length === 0) break; // nada mais a avaliar
+    rodadas++;
+    analisados += docs.length;
+
+    for (const doc of docs as any[]) {
+      const fields = doc?.campos_detectados?.preview?.fields ?? {};
+      const tipo = String(fields.tipo_documento ?? doc.tipo_documento ?? "");
+      if (tipo === "voto_individual" && fields.relator && doc.agencia_id) {
+        const match = findBestMatch(String(fields.relator), await diretoresDe(doc.agencia_id));
+        doc.relator_match_ok = Boolean(match.diretorId) && !match.needsReview;
+      }
     }
-  }
 
-  const elegiveis: any[] = [];
-  const pulados: Array<{ id: string; reason: string }> = [];
-  for (const doc of docs ?? []) {
-    const verdict = canAutoConfirm(doc as any);
-    if (verdict.ok) elegiveis.push(doc);
-    else pulados.push({ id: (doc as any).id, reason: verdict.reason });
-  }
+    const elegiveis: any[] = [];
+    for (const doc of docs) {
+      const verdict = canAutoConfirm(doc as any);
+      if (verdict.ok) elegiveis.push(doc);
+      else {
+        ineligibleIds.add((doc as any).id);
+        if (ultimosPulados.length < 20) ultimosPulados.push({ id: (doc as any).id, reason: verdict.reason });
+      }
+    }
 
-  if (elegiveis.length === 0) {
-    return NextResponse.json({
-      analisados: (docs ?? []).length,
-      elegiveis: 0,
-      pulados: pulados.length,
-      exemplos_pulados: pulados.slice(0, 20),
-      legal_notice: "Nenhum documento passou no gate conservador de auto-confirmação nesta rodada.",
+    if (elegiveis.length === 0) break; // rodada sem elegível → o resto é inelegível
+
+    const deliberacoes = elegiveis.map((doc) => {
+      const delib = buildConfirmDelibFromDoc(doc);
+      const raw = (delib.extraction_raw && typeof delib.extraction_raw === "object") ? delib.extraction_raw as Record<string, unknown> : {};
+      return { ...delib, extraction_raw: { ...raw, auto_confirmado: true, auto_confirmado_em: new Date().toISOString() } };
     });
-  }
+    const syntheticReq = new NextRequest(new URL("/api/v1/upload/confirm", req.url), {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: req.headers.get("authorization") ?? "" },
+      body: JSON.stringify({ agencia_id: body.agencia_id ?? null, deliberacoes }),
+    });
+    try {
+      const confirmRes = await confirmPOST(syntheticReq);
+      confirmDetalhes.push(await confirmRes.json().catch(() => ({})));
+    } catch (err) {
+      console.error("[upload/auto-confirm] Falha ao confirmar em lote:", err);
+      return NextResponse.json({ error: "Falha ao confirmar em lote.", confirmados_total: confirmadosTotal }, { status: 502 });
+    }
+    confirmadosTotal += elegiveis.length;
 
-  // REUSA o handler do confirm: mesmo payload da UI + Authorization encaminhado.
-  // `auto_confirmado=true` fica em raw_extraction (trilha de auditoria auto vs manual).
-  const deliberacoes = elegiveis.map((doc) => {
-    const delib = buildConfirmDelibFromDoc(doc);
-    const raw = (delib.extraction_raw && typeof delib.extraction_raw === "object") ? delib.extraction_raw as Record<string, unknown> : {};
-    return { ...delib, extraction_raw: { ...raw, auto_confirmado: true, auto_confirmado_em: new Date().toISOString() } };
-  });
-  const syntheticReq = new NextRequest(new URL("/api/v1/upload/confirm", req.url), {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      authorization: req.headers.get("authorization") ?? "",
-    },
-    body: JSON.stringify({ agencia_id: body.agencia_id ?? null, deliberacoes }),
-  });
-
-  let confirm: unknown = null;
-  try {
-    const confirmRes = await confirmPOST(syntheticReq);
-    confirm = await confirmRes.json().catch(() => ({}));
-  } catch (err) {
-    console.error("[upload/auto-confirm] Falha ao confirmar em lote:", err);
-    return NextResponse.json({ error: "Falha ao confirmar em lote.", elegiveis: elegiveis.length }, { status: 502 });
+    if (!loop) break;
   }
 
   return NextResponse.json({
-    analisados: (docs ?? []).length,
-    elegiveis: elegiveis.length,
-    pulados: pulados.length,
-    auto_confirmados_ids: elegiveis.map((d) => d.id),
-    confirm,
-    exemplos_pulados: pulados.slice(0, 20),
-    legal_notice: "Auto-confirmação CONSERVADORA (doc final + confiança ≥0.9 + não-escaneado + votos com match ≥0.85). Ambíguos ficam na fila manual.",
+    rodadas,
+    analisados,
+    confirmados_total: confirmadosTotal,
+    restantes, // true = parou por orçamento de tempo; re-chamar para continuar
+    pulados: ineligibleIds.size,
+    exemplos_pulados: ultimosPulados,
+    confirm: confirmDetalhes.length === 1 ? confirmDetalhes[0] : confirmDetalhes,
+    legal_notice: "Auto-confirmação CONSERVADORA em loop (doc final + confiança ok + votos com match ≥0.85). Ambíguos ficam na fila manual.",
   });
 }

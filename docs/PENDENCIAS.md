@@ -1,22 +1,35 @@
 # PENDÊNCIAS E OPERAÇÃO — IRIS-Regulação
 
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
-Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 18, jul/2026).
+Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 21, jul/2026).
 
-## Fluxo de operação semanal sugerido (zero-toque com conferência)
+## ⚠️ Plano Vercel GRÁTIS (Hobby): crons NÃO rodam de forma autônoma
+No plano grátis a Vercel agenda no máximo ~2 crons/dia e limita funções a 60s. A Etapa 21
+ENXUGOU o `vercel.json` para **2 crons** (`noticias/cron` 11:00 e `upload/auto-confirm` 12:30)
+e a esteira é operada **manualmente** por botões:
+- **Notícias** (tela Notícias): "Coletar Notícias" (cobre as 12) + "Recuperar imagens"
+  (re-resolve a foto de itens já coletados — a coleta normal pula URLs conhecidas).
+- **Votos** (tela Votos dos Diretores): **"Rodar tudo"** encadeia Verificar novos → Processar
+  atas/votos → Auto-confirmar (loop) → Recalcular matches (auto-aprova + mescla duplicatas).
+  E **"Gerar relatório"** abre o relatório imprimível por diretor.
 
-A esteira automática roda sozinha (crons: monitoramento 10:00 → coleta ANTT 10:30 →
-processamento 12:00 → auto-confirmação 12:30 → backfill semanal dom 09:00). A conferência
-humana semanal é:
+**Ao migrar para o PRO, restaurar no `vercel.json` os 8 crons** (e o fan-out do `noticias/cron`
+da Etapa 20): monitoramento/check 10:00 · noticias/cron 11:00 · antt/2026/collect 10:30 ·
+upload/process 12:00 · upload/auto-confirm 12:30 · mandatos/recalcular 08:00 ·
+qualidade derivadas seg 09:00 · votos-diretores/backfill dom 09:00. Aí a esteira volta a
+ser zero-toque.
 
-1. Abrir **Dashboard → Deliberações → Votos dos Diretores**.
-2. Card **"Revisão humana"**: se houver documentos pendentes, clicar "Revisar →" e
-   confirmar/ajustar no Upload (é a exceção, não a regra).
-3. Se houver votos ignorados legados: **"Reprocessar votos ignorados"** (dry-run mostra a
-   contagem → confirmar). Depois os crons de processamento/auto-confirmação absorvem.
-4. Após ingestões grandes: **"Recalcular matches"** (converte candidatos em votos quando o
-   diretor foi cadastrado depois) e **mesclar duplicatas** apontadas no painel.
-5. Conferir "Métricas por diretor" (lidos vs inferidos) e "Completude 2026".
+## Fluxo de operação semanal sugerido (manual no plano grátis)
+
+No plano grátis, a conferência humana semanal é:
+
+1. Abrir **Dashboard → Deliberações → Votos dos Diretores** e clicar **"Rodar tudo"** (faz
+   coleta→processa→auto-confirma em loop→recalcula/mescla numa tacada).
+2. Card **"Revisão humana"**: o que sobrar aparece aqui com o motivo (sem direção do voto /
+   confiança baixa / relator ambíguo) — clicar "Revisar →" e ajustar no Upload (exceção).
+3. Conferir "Métricas por diretor" (lidos vs inferidos) e "Completude 2026"; **"Gerar
+   relatório"** para o PDF imprimível por diretor.
+4. Na tela **Notícias**: "Coletar Notícias" + "Recuperar imagens" se houver cards sem foto.
 
 ## Ações manuais recorrentes
 

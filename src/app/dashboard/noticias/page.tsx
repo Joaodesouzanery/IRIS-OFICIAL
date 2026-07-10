@@ -341,6 +341,26 @@ export default function NoticiasPage() {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ["noticias"] }),
   });
 
+  // Re-resolve imagens de notícias já coletadas sem foto (a coleta normal pula URLs
+  // conhecidas). Re-chama enquanto sobrar (orçamento de tempo). Filtra pela agência
+  // selecionada quando houver, senão todas.
+  const [imagensFeedback, setImagensFeedback] = useState<string | null>(null);
+  const reprocessarImagensMutation = useMutation({
+    mutationFn: () => {
+      const qs = agencia ? `?agencia_sigla=${encodeURIComponent(agencia)}` : "";
+      return api.post<{ encontrados: number; recuperadas: number; sem_imagem: number; falhas: number; restantes: number }>(
+        `/noticias/reprocessar-imagens${qs}`, {},
+      );
+    },
+    onSuccess: (res) => {
+      setImagensFeedback(
+        `${res.recuperadas} imagem(ns) recuperada(s)${res.restantes ? ` · ${res.restantes} restante(s), clique de novo` : ""}${res.sem_imagem ? ` · ${res.sem_imagem} sem foto na origem` : ""}.`,
+      );
+      queryClient.invalidateQueries({ queryKey: ["noticias"] });
+    },
+    onError: (err) => setImagensFeedback(err instanceof Error ? err.message : "Falha ao recuperar imagens."),
+  });
+
   const scheduleMutation = useMutation({
     mutationFn: () => api.post<{ schedule: RegulatoryNewsletterSchedule }>("/noticias/newsletter/schedule", {
       nome: documentConfig.assunto || "Newsletter Regulatório",
@@ -611,6 +631,15 @@ export default function NoticiasPage() {
             Selecionar todas ({noticias.length})
           </button>
           <button
+            onClick={() => reprocessarImagensMutation.mutate()}
+            disabled={reprocessarImagensMutation.isPending || demoEnabled}
+            className="btn-secondary"
+            title="Recupera a foto das notícias já coletadas que ficaram sem imagem (a coleta normal não reprocessa URLs já conhecidas)"
+          >
+            {reprocessarImagensMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+            Recuperar imagens
+          </button>
+          <button
             onClick={() => collectMutation.mutate({ scope: "all", tier: "all" })}
             disabled={collectMutation.isPending || demoEnabled}
             className="btn-primary"
@@ -621,6 +650,9 @@ export default function NoticiasPage() {
           </button>
         </div>
       </div>
+      {imagensFeedback && (
+        <p className={cn("text-xs", reprocessarImagensMutation.isError ? "text-error" : "text-success")}>{imagensFeedback}</p>
+      )}
 
       {/* Adicionar notícia por LINK: o crawler não pega tudo (páginas antigas, fontes sem API).
           Cole a URL e o sistema ingere a notícia direto no feed (selecionável no Minuto/Newsletter). */}

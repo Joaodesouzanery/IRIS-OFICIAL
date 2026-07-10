@@ -25,6 +25,28 @@ export function tokenSortRatio(a: string, b: string): number {
   return levenshteinSimilarity(tokensA, tokensB);
 }
 
+// Nome A é uma abreviação ESTRITA de B (mesmo diretor grafado com menos sobrenomes):
+// todos os tokens de A (sem acento, sem conectores) aparecem em B, A é MENOR que B, e
+// primeiro+último token coincidem. Ex.: "Felipe Queiroz" ⊂ "Felipe Fernandes Queiroz".
+// Conservador de propósito — só funde duplicata óbvia, não pessoas distintas.
+export function isStrictAbbreviation(shortName: string, longName: string): boolean {
+  const norm = (s: string) =>
+    s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/\s+/).filter(Boolean);
+  const conectores = new Set(["de", "da", "do", "das", "dos", "e"]);
+  const strip = (t: string[]) => t.filter((x) => !conectores.has(x));
+  const a = strip(norm(shortName));
+  const b = strip(norm(longName));
+  if (a.length < 2 || b.length < 2 || a.length >= b.length) return false;
+  if (a[0] !== b[0]) return false; // primeiro nome tem de bater
+  const setB = new Set(b);
+  if (!a.every((t) => setB.has(t))) return false; // A ⊆ B
+  // Prefixo ("Severino Medeiros" ⊂ "Severino Medeiros Ramos Neto") OU mesmo último
+  // sobrenome ("Felipe Queiroz" ⊂ "Felipe Fernandes Queiroz").
+  const ehPrefixo = a.every((t, i) => t === b[i]);
+  const mesmoUltimo = a[a.length - 1] === b[b.length - 1];
+  return ehPrefixo || mesmoUltimo;
+}
+
 function levenshteinSimilarity(a: string, b: string): number {
   if (a === b) return 1;
   if (a.length === 0 || b.length === 0) return 0;

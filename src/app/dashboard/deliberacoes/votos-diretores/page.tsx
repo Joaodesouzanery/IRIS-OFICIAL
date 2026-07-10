@@ -24,11 +24,13 @@ import {
   ChevronUp,
   Download,
   ExternalLink,
+  FileDown,
   FileText,
   Gavel,
   Loader2,
   RefreshCw,
   Upload,
+  Zap,
   UserCheck,
   Users,
   X,
@@ -355,10 +357,20 @@ export default function VotosDiretoresPage() {
   // Auto-confirma documentos de ALTA confiança pendentes de revisão (gate conservador
   // no servidor; ambíguos permanecem na fila manual).
   const autoConfirmMutation = useMutation({
-    mutationFn: () => api.post<{ elegiveis: number; analisados: number }>("/upload/auto-confirm", { limit: 50 }),
+    // loop=true: materializa TUDO que passa no gate numa chamada (o cron não roda no
+    // plano grátis); re-chama enquanto `restantes` (orçamento de tempo) for true.
+    mutationFn: async () => {
+      let confirmados = 0;
+      for (let i = 0; i < 10; i++) {
+        const res = await api.post<{ confirmados_total: number; restantes: boolean }>("/upload/auto-confirm", { limit: 50, loop: true });
+        confirmados += res.confirmados_total ?? 0;
+        if (!res.restantes) break;
+      }
+      return { confirmados };
+    },
     onSuccess: (res) => {
       setMatchError(null);
-      setMatchFeedback(`Auto-confirmação: ${res.elegiveis} documento(s) confirmados de ${res.analisados} analisados.`);
+      setMatchFeedback(`Auto-confirmação: ${res.confirmados} documento(s) materializados.`);
       queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
       queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
       queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
@@ -366,6 +378,50 @@ export default function VotosDiretoresPage() {
     onError: (err) => {
       setMatchFeedback(null);
       setMatchError(err instanceof Error ? err.message : "Erro na auto-confirmação.");
+    },
+  });
+
+  // "Rodar tudo": encadeia a esteira inteira num clique (o plano grátis não roda os
+  // crons). Verificar novos → Processar atas/votos → Auto-confirmar (loop) → Recalcular
+  // matches (auto-aprova + mescla duplicatas). Progresso textual na UI.
+  const [rodarTudoProgresso, setRodarTudoProgresso] = useState<string | null>(null);
+  const rodarTudoMutation = useMutation({
+    mutationFn: async () => {
+      setRodarTudoProgresso("1/4 · Verificando novos documentos…");
+      await api.get<MonitoramentoCheckResponse>("/monitoramento/check").catch(() => null);
+      setRodarTudoProgresso("2/4 · Processando atas/votos…");
+      await api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", {}).catch(() => null);
+      setRodarTudoProgresso("3/4 · Auto-confirmando (loop)…");
+      let confirmados = 0;
+      for (let i = 0; i < 10; i++) {
+        const res = await api.post<{ confirmados_total: number; restantes: boolean }>("/upload/auto-confirm", { limit: 50, loop: true }).catch(() => null);
+        if (!res) break;
+        confirmados += res.confirmados_total ?? 0;
+        if (!res.restantes) break;
+      }
+      setRodarTudoProgresso("4/4 · Recalculando matches e mesclando duplicatas…");
+      const rec = await api.post<{ grupos_auto_aprovados: number; diretores_mesclados: number; votos_retroativos_criados: number }>(
+        "/admin/diretores/candidatos/recompute?dry_run=0", {},
+      ).catch(() => null);
+      return { confirmados, recompute: rec };
+    },
+    onSuccess: (res) => {
+      setMatchError(null);
+      setRodarTudoProgresso(null);
+      const rec = res.recompute;
+      setMatchFeedback(
+        `Esteira concluída: ${res.confirmados} voto(s)/doc(s) materializados` +
+        (rec ? ` · ${rec.grupos_auto_aprovados} nome(s) auto-aprovado(s) · ${rec.diretores_mesclados} duplicata(s) mesclada(s) · ${rec.votos_retroativos_criados} voto(s) retroativo(s)` : "") + ".",
+      );
+      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
+      queryClient.invalidateQueries({ queryKey: ["completude-2026"] });
+      queryClient.invalidateQueries({ queryKey: ["pendencias-voto-diagnostico"] });
+    },
+    onError: (err) => {
+      setRodarTudoProgresso(null);
+      setMatchFeedback(null);
+      setMatchError(err instanceof Error ? err.message : "Erro ao rodar a esteira.");
     },
   });
 
@@ -397,9 +453,18 @@ export default function VotosDiretoresPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <button
+            onClick={() => rodarTudoMutation.mutate()}
+            disabled={rodarTudoMutation.isPending || demoEnabled}
+            className="btn-primary"
+            title="Roda a esteira inteira num clique: verifica novos → processa atas/votos → auto-confirma (loop) → recalcula matches e mescla duplicatas. Útil no plano grátis, onde os crons não rodam."
+          >
+            {rodarTudoMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Zap className="w-4 h-4" />}
+            {rodarTudoProgresso ?? "Rodar tudo"}
+          </button>
+          <button
             onClick={() => backfillMutation.mutate()}
             disabled={backfillMutation.isPending || checkMutation.isPending || demoEnabled}
-            className="btn-primary"
+            className="btn-secondary"
             title="Busca e processa todas as deliberações de 2026 das 3 agências"
           >
             {backfillMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
@@ -431,6 +496,16 @@ export default function VotosDiretoresPage() {
             {autoConfirmMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
             Auto-confirmar alta confiança
           </button>
+          <a
+            href={agenciaId ? `/api/v1/relatorios/votos-diretores?agencia_id=${agenciaId}` : "/api/v1/relatorios/votos-diretores"}
+            target="_blank"
+            rel="noreferrer"
+            className={cn("btn-secondary", demoEnabled && "pointer-events-none opacity-50")}
+            title="Abre o relatório imprimível dos votos de cada diretor das 3 agências (imprimir → PDF pelo navegador)"
+          >
+            <FileDown className="w-4 h-4" />
+            Gerar relatório
+          </a>
         </div>
       </div>
 
