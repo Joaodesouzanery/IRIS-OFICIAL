@@ -208,7 +208,10 @@ async function collect(req: NextRequest) {
       },
       last_seen_at: new Date().toISOString(),
     };
-    if (item.imagem_url || item.metadata.collection_mode === "enrich") row.imagem_url = item.imagem_url ?? null;
+    // Enrich reescreve imagem_url a cada coleta; NUNCA sobrescrever uma imagem já boa
+    // por null (o Plone às vezes recusa o probe e o candidato vem null) — só atualiza
+    // quando há imagem nova. Preserva a última foto boa. QA Etapa 20.
+    if (item.imagem_url) row.imagem_url = item.imagem_url;
     if (item.resumo) row.resumo = item.resumo;
     if (item.conteudo) row.conteudo = item.conteudo;
     return row;
@@ -223,9 +226,13 @@ async function collect(req: NextRequest) {
     const count = new Map<string, number>();
     for (const e of existingImgs ?? []) if (e.imagem_url) count.set(e.imagem_url, (count.get(e.imagem_url) ?? 0) + 1);
     for (const r of rows) if (typeof r.imagem_url === "string") count.set(r.imagem_url, (count.get(r.imagem_url) ?? 0) + 1);
-    // Lead-image por-artigo do Volto (…/@@images/image[/scale]) é ÚNICA por notícia —
-    // nunca é logo genérico; jamais suprimir (senão zeraria a única foto real do card).
-    const isPerArticleLeadImage = (u: string) => /\/@@images\/image(?:\/[a-z]+)?$/i.test(u);
+    // Imagem por-artigo do Plone é ÚNICA por notícia — nunca é logo genérico; jamais
+    // suprimir (senão zeraria a única foto real do card). Cobre o lead-image Volto
+    // (…/@@images/image[/scale]) E o formato UUID da ANM/gov.br clássico
+    // (…/@@images/<uuid>.<ext>), que o guard da Etapa 19 não protegia. QA Etapa 20.
+    const isPerArticleLeadImage = (u: string) =>
+      /\/@@images\/image(?:\/[a-z]+)?$/i.test(u) ||
+      /\/@@images\/[0-9a-f-]{8,}\.(?:jpe?g|png|webp|gif)$/i.test(u);
     const generic = new Set(
       [...count.entries()].filter(([u, n]) => n >= 3 && !isPerArticleLeadImage(u)).map(([u]) => u),
     );

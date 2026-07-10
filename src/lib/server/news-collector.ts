@@ -883,7 +883,11 @@ export function parseNewsDetail(
     extractDateFromText(root.text);
   const normalizedDate = normalizeDate(publicado_em);
   const normalizedTitle = cleanText(titulo).slice(0, 500);
-  if (source.tier === "expanded" && (!canonical || !normalizedTitle || !normalizedDate)) return null;
+  // Expanded exige só o ESTRUTURAL (canonical + título). Antes descartava também por
+  // FALTA DE DATA — o que sumia com notícias legítimas das 10 fontes expanded cujo
+  // detalhe (React) não expõe data. Item sem data é mantido (publicado_em null) e a
+  // persistência/exibição usa first_seen como fallback de ordenação. QA Etapa 20.
+  if (source.tier === "expanded" && (!canonical || !normalizedTitle)) return null;
   const hash_item = sha256(`${source.agencia_sigla}|${canonical}`);
 
   return {
@@ -1027,9 +1031,10 @@ function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   if (!path.startsWith(`${sourcePath}/`)) return false;
   if (source.strategy === "artesp" && normalizedUrl === url && /\/(?:!ut|dz|p0)\//i.test(path)) return false;
 
-  const relativeSegments = path.slice(sourcePath.length).split("/").filter(Boolean);
-  const agency = source.agencia_sigla.toUpperCase();
-  if (agency === "ANS" && relativeSegments.length < 2) return false;
+  // (Removida a regra ANS "≥2 segmentos": descartava notícias legítimas da ANS
+  // diretamente sob /noticias/<slug>. Os filtros genéricos abaixo — último segmento
+  // não-numérico, sem ".", não-"noticias", + título ≥12/não-navegação em
+  // pushAnchorsAsLinks — já barram os links que não são artigo. QA Etapa 20.)
   const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
   if (!lastSegment || /^\d+$/.test(lastSegment)) return false;
   if (["noticias", "ultimas-noticias", "noticias-anteriores"].includes(normalizeText(lastSegment))) return false;
@@ -1404,7 +1409,20 @@ const MEDIUM_CONFIDENCE_IMAGE_SOURCES = new Set([
   "govbr api lead image",
 ]);
 
-// Variantes de escala do lead-image Volto, da maior para a menor. Quando a maior
+// Imagem em HOST OFICIAL (gov.br/sp.gov.br) é confiável mesmo sem vir de metatag: a
+// ANM (e gov.br clássico sem og:image) traz a foto no 1º <img> do artigo, cujo source
+// é "article img"/"main img"/"body img" (fora do conjunto HIGH). Sem esta regra, o
+// probe Range que o Plone recusa nulificava a imagem → card sem foto. QA Etapa 20.
+export function isOfficialImageHost(url: string): boolean {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return host === "gov.br" || host.endsWith(".gov.br") || host === "sp.gov.br" || host.endsWith(".sp.gov.br");
+  } catch {
+    return false;
+  }
+}
+
+// Variantes de escala do lead-image Plone/Volto, da maior para a menor. Quando a maior
 // (/large) não valida, tenta as demais antes de desistir — maximiza imagem real.
 function leadImageScaleVariants(url: string): string[] {
   const m = /^(.*)\/@@images\/image(?:\/[a-z]+)?$/i.exec(url);
@@ -1450,8 +1468,11 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
   }
   const highConfidence = candidate.source ? HIGH_CONFIDENCE_IMAGE_SOURCES.has(candidate.source) : false;
   const mediumConfidence = candidate.source ? MEDIUM_CONFIDENCE_IMAGE_SOURCES.has(candidate.source) : false;
-  // Lead-image gov.br: tenta múltiplas escalas; a 1ª que retornar image/* vence.
-  const variants = mediumConfidence ? leadImageScaleVariants(candidate.url) : [candidate.url];
+  // Host oficial OU padrão Plone @@images também são de confiança (a foto do artigo
+  // gov.br sem og:image). Mantém a URL como unverified se o probe falhar.
+  const officialImage = isOfficialImageHost(candidate.url) || /\/@@images\//i.test(candidate.url);
+  // Lead-image/Plone: tenta múltiplas escalas; a 1ª que retornar image/* vence.
+  const variants = (mediumConfidence || officialImage) ? leadImageScaleVariants(candidate.url) : [candidate.url];
   let lastProbe: { ok: boolean; contentType: string | null; contentLength: number | null } | null = null;
   for (const url of variants) {
     const probe = await probeImageUrl(url);
@@ -1460,8 +1481,9 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
       return { url, source: candidate.source, status: "official_image_found" as const, contentType: probe.contentType, contentLength: probe.contentLength };
     }
   }
-  // Metatag declarada OU lead-image de média confiança: mantém a URL (o proxy revalida).
-  if (highConfidence || mediumConfidence) {
+  // Metatag declarada, lead-image de média confiança OU imagem de host oficial: mantém
+  // a URL (o proxy do front revalida sob demanda; melhor que placeholder).
+  if (highConfidence || mediumConfidence || officialImage) {
     return { ...candidate, status: "official_image_unverified" as const, contentType: lastProbe?.contentType ?? null, contentLength: lastProbe?.contentLength ?? null };
   }
   return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType: lastProbe?.contentType ?? null, contentLength: lastProbe?.contentLength ?? null };

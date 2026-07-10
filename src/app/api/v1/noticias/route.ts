@@ -38,6 +38,7 @@ export async function GET(req: NextRequest) {
   const from = range.from;
   const to = range.to;
   const limit = Math.min(100, Math.max(1, Number(searchParams.get("limit") ?? 50)));
+  const offset = Math.max(0, Number(searchParams.get("offset") ?? 0));
 
   if (isDemo() || isDemoRequest(req)) {
     let data = DEMO_NEWS;
@@ -52,7 +53,7 @@ export async function GET(req: NextRequest) {
         [item.titulo, item.resumo, item.fonte].filter(Boolean).join(" ").toLowerCase().includes(term),
       );
     }
-    return NextResponse.json({ data: repairRegulatoryNewsItems(data.slice(0, limit)), total: data.length } satisfies RegulatoryNewsListResponse);
+    return NextResponse.json({ data: repairRegulatoryNewsItems(data.slice(offset, offset + limit)), total: data.length } satisfies RegulatoryNewsListResponse);
   }
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -62,12 +63,15 @@ export async function GET(req: NextRequest) {
     .select("*, agencia:agencias(sigla, nome)", { count: "exact" })
     .order("publicado_em", { ascending: false, nullsFirst: false })
     .order("first_seen_at", { ascending: false })
-    .limit(limit);
+    .range(offset, offset + limit - 1);
 
   if (agencia) query = query.eq("agencia_sigla", agencia);
   if (status) query = query.eq("status_curadoria", status);
-  if (from) query = query.gte("publicado_em", from);
-  if (to) query = query.lte("publicado_em", to);
+  // Inclui itens SEM data (publicado_em null) recém-coletados, usando first_seen como
+  // fallback — senão o `gte publicado_em` os escondia (Postgres: NULL >= x é falso) e
+  // notícias coletadas sumiam da tela. Espelha o coalesce do caminho demo. QA Etapa 20.
+  if (from) query = query.or(`publicado_em.gte.${from},and(publicado_em.is.null,first_seen_at.gte.${from})`);
+  if (to) query = query.or(`publicado_em.lte.${to},and(publicado_em.is.null,first_seen_at.lte.${to})`);
   const searchTerm = search || tema;
   if (searchTerm && searchTerm.length >= 2) {
     const escaped = searchTerm.replace(/[\\%_]/g, "\\$&");

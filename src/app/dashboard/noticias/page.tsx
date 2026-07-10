@@ -251,7 +251,10 @@ export default function NoticiasPage() {
     if (customFrom) params.set("from", customFrom);
     if (customTo) params.set("to", customTo);
   }
-  params.set("limit", "80");
+  const [visibleCount, setVisibleCount] = useState(80);
+  // Reseta a paginação ao trocar de filtro (senão pediria uma página maior de outro recorte).
+  useEffect(() => { setVisibleCount(80); }, [agencia, status, search, periodo, customFrom, customTo]);
+  params.set("limit", String(Math.min(visibleCount, 100)));
 
   const { data, isLoading } = useQuery({
     queryKey: ["noticias", params.toString()],
@@ -858,6 +861,19 @@ export default function NoticiasPage() {
                   </div>
                 </article>
               ))}
+            </div>
+          )}
+          {!isLoading && (data?.total ?? 0) > noticias.length && (
+            <div className="pt-4 text-center">
+              {visibleCount < 100 ? (
+                <button type="button" className="btn-secondary text-sm" onClick={() => setVisibleCount(100)}>
+                  Carregar mais ({(data?.total ?? 0) - noticias.length} restante{(data?.total ?? 0) - noticias.length > 1 ? "s" : ""})
+                </button>
+              ) : (
+                <p className="text-xs text-text-muted">
+                  Mostrando {noticias.length} de {data?.total ?? 0}. Refine por agência, período ou busca para ver as demais.
+                </p>
+              )}
             </div>
           )}
         </section>
