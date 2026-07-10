@@ -54,16 +54,16 @@ END $$;
 -- (deriveNomeVariantes do abreviado não gera "de Mendonça"). Renomeia para a forma
 -- COMPLETA (que gera a abreviada como variante) e guarda a abreviada em variantes.
 -- Idempotente: só age enquanto o nome ainda estiver abreviado.
+-- nome_variantes é text[] (array Postgres), NÃO jsonb — usar operadores de array.
 DO $$
 DECLARE
   v_agencia_id UUID;
   v_diretor_id UUID;
-  v_variantes JSONB;
 BEGIN
   SELECT id INTO v_agencia_id FROM public.agencias WHERE sigla = 'ANM' LIMIT 1;
   IF v_agencia_id IS NULL THEN RETURN; END IF;
 
-  SELECT id, COALESCE(nome_variantes, '[]'::jsonb) INTO v_diretor_id, v_variantes
+  SELECT id INTO v_diretor_id
   FROM public.diretores
   WHERE agencia_id = v_agencia_id
     AND nome ILIKE 'Jos_ Fernando Gomes J_nior'
@@ -74,8 +74,9 @@ BEGIN
     UPDATE public.diretores
     SET nome = 'José Fernando de Mendonça Gomes Júnior',
         nome_variantes = CASE
-          WHEN v_variantes @> '["José Fernando Gomes Júnior"]'::jsonb THEN v_variantes
-          ELSE v_variantes || '["José Fernando Gomes Júnior"]'::jsonb
+          WHEN 'José Fernando Gomes Júnior' = ANY(COALESCE(nome_variantes, '{}'::text[]))
+            THEN nome_variantes
+          ELSE array_append(COALESCE(nome_variantes, '{}'::text[]), 'José Fernando Gomes Júnior')
         END,
         updated_at = NOW()
     WHERE id = v_diretor_id;
