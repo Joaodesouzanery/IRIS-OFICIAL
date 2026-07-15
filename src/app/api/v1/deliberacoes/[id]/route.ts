@@ -11,6 +11,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
+import { isDivergentVote, type TipoVoto } from "@/lib/server/vote-inference";
 
 const ALLOWED_PATCH_FIELDS = new Set([
   "numero_deliberacao",
@@ -147,6 +148,27 @@ export async function PATCH(
 
   if (error || !data) {
     return NextResponse.json({ error: "Falha ao atualizar deliberação" }, { status: 500 });
+  }
+
+  // SEC-5: is_divergente é RELATIVO ao resultado (isDivergentVote). Se o resultado mudou na
+  // correção manual, re-deriva os votos desta deliberação em lote — senão ficam stale até
+  // alguém rodar recalcular-divergencia. Não toca tipo_voto/is_nominal.
+  if ("resultado" in updates) {
+    const novoResultado = (updates.resultado as string | null) ?? null;
+    const { data: votos } = await db.from("votos").select("id, tipo_voto").eq("deliberacao_id", params.id);
+    const idsDiv: string[] = [];
+    const idsNaoDiv: string[] = [];
+    for (const v of (votos ?? []) as Array<{ id: string; tipo_voto: string }>) {
+      (isDivergentVote(v.tipo_voto as TipoVoto, novoResultado) ? idsDiv : idsNaoDiv).push(v.id);
+    }
+    const aplicar = async (ids: string[], valor: boolean) => {
+      for (let i = 0; i < ids.length; i += 100) {
+        const chunk = ids.slice(i, i + 100);
+        if (chunk.length) await db.from("votos").update({ is_divergente: valor }).in("id", chunk);
+      }
+    };
+    if (idsDiv.length) await aplicar(idsDiv, true);
+    if (idsNaoDiv.length) await aplicar(idsNaoDiv, false);
   }
 
   return NextResponse.json(data);
