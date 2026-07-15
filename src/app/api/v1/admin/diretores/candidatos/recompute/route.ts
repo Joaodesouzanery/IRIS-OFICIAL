@@ -20,8 +20,12 @@ import { requireAdmin } from "@/lib/server/request-guards";
 import { findBestMatch, tokenSortRatio, isStrictAbbreviation } from "@/lib/server/name-matcher";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { mergeDiretores } from "@/lib/server/diretor-merge";
+import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
+// Passo 4 do "Rodar tudo": trabalho pesado (aprovação em cascata + votos retroativos +
+// auto-merge). Sem orçamento, o SIGKILL do Hobby (60s) deixava escrita PARCIAL.
+export const maxDuration = 60;
 
 type Candidato = {
   id: string;
@@ -98,7 +102,13 @@ export async function POST(req: NextRequest) {
   let votosCriados = 0;
   const amostra: Array<{ nome: string; agencia_id: string; score: number; acao: string; cartoes: number }> = [];
 
+  // Orçamento: para BETWEEN grupos, nunca no meio de uma aprovação (que é atômica por
+  // grupo). O que não couber fica pendente → o próximo recompute continua (idempotente).
+  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
+  let parcial = false;
+
   for (const [, grupo] of grupos) {
+    if (!hasBudget(deadlineAt, 8_000)) { parcial = true; break; }
     // Canônico = maior confidence, desempate pelo mais antigo.
     const canonico = [...grupo].sort(
       (a, b) => (b.confidence ?? 0) - (a.confidence ?? 0) || a.created_at.localeCompare(b.created_at),
@@ -146,6 +156,7 @@ export async function POST(req: NextRequest) {
   let diretoresMesclados = 0;
   const agenciasTocadas = new Set<string>([...grupos.values()].map((g) => g[0].agencia_id));
   for (const ag of agenciasTocadas) {
+    if (!hasBudget(deadlineAt, 5_000)) { parcial = true; break; }
     const lista = await diretoresDe(ag); // já em cache
     const contagemVotos = new Map<string, number>();
     if (!dryRun && lista.length > 1) {
@@ -191,7 +202,9 @@ export async function POST(req: NextRequest) {
     cartoes_colapsados: cartoesColapsados,
     diretores_mesclados: diretoresMesclados,
     votos_retroativos_criados: votosCriados,
+    parcial,
     amostra,
+    ...(parcial ? { notice_parcial: "Orçamento de tempo esgotado — rode novamente para concluir o restante (idempotente)." } : {}),
     ...(dryRun ? { notice: "Somente relatório. Repita com ?dry_run=0 para aplicar (auto-aprova >=0.85, colapsa e auto-mescla acento-only)." } : {}),
   });
 }
