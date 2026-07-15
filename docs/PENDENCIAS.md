@@ -46,6 +46,10 @@ No plano grátis, a conferência humana semanal é:
 
 - **`20260709120000_mandatos_rede_votos.sql`** (Etapa 19) — cria mandato para diretores que
   têm voto mas não têm mandato (religa a inferência). Idempotente e forward-only.
+- **`20260715120000_auditoria2_rls_arquivo_e_indices.sql`** (Auditoria 2ª rodada) — ⚠️ **SEC-1
+  ALTO**: habilita RLS em `qualidade_regulatoria_avaliacoes_arquivo` (nasceu de `LIKE` sem RLS →
+  legível pela chave anon) + índices de performance (trgm da busca de notícias, sort, dedup).
+  **Após aplicar, rodar `get_advisors`** para confirmar que não sobrou tabela sem RLS.
 
 ## Datas sensíveis
 
@@ -88,6 +92,35 @@ fonte única** (que precisa verificação com dados reais antes de subir). Reava
   endurecido (`redirect:"manual"`); falta um **wrapper de fetch com redirect validado por hop** para
   `resilient-fetch.ts` e `fetchGovbrApiLinks`. Baixo risco no Vercel (sem IMDS clássico + hosts
   admin-configurados), mas fechar o vetor por completo exige esse wrapper. SSRF é cega (só status/timing).
+
+### Auditoria 2ª rodada (jul/2026) — status e itens deferidos
+**Já corrigido nesta rodada** (commits): proxy de imagem SSRF+bytes, bypass `?dry_run=1`, zip-bomb,
+`fetchGovbrApiLinks` (guard+redirect), cap dos probes de lead-image (regressão), lista de notícias sem
+`conteudo`, `mandatos/stats` paralelo, e a migration acima (RLS + índices, inclui o índice trgm que
+substitui o item "count/ILIKE" acima).
+**Deferido — esteira/robustez** (risco na fonte única, verificar com dados reais):
+- **PERF-5** `recompute` (passo 4 do "Rodar tudo") sem time-budget e fora do `vercel.json` → SIGKILL no
+  meio = auto-aprovações/merges pela metade. Adicionar `HOBBY_BUDGET_MS` entre grupos + `maxDuration`.
+- **PERF-10** `auto-confirm`: `ineligibleIds` cresce sem limite em `.not("id","in",(...))` (~1500 UUIDs →
+  URL gigante) + budget só entre rodadas → paginar por `created_at`.
+- **PERF-11** `upload/preview`: NLP de até 500 PDFs em `Promise.all` sem budget → fatiar.
+- **SEC-5** `deliberacoes/[id]` PATCH muda `resultado` sem recalcular `is_divergente` dos votos.
+- **SEC-6** corrida duplica deliberação quando `numero_deliberacao` é null → índice único **parcial**
+  (migration) — ⚠️ exige **dedup das linhas já duplicadas** antes de criar o índice, senão falha.
+- **PERF-8** `reprocessar-abstencoes`: UPDATE por voto + audit por deliberação → batch `.in()`.
+**Deferido — refactor maior:**
+- **PERF-1** sub-select JSON de `raw_extraction` (7 rotas de analytics) via `raw_extraction->chave` —
+  maior ROI sem migration, mas mexe no predicado `isFinalDecisionRecord` compartilhado (risco em
+  contas de analytics não-testadas). Fazer com predicado dual-shape + verificação.
+- **PERF-4** `completude-2026`/`saude-dados` agregam 40k-80k linhas em JS **e sofrem undercount
+  silencioso** quando a base passa do LIMIT → mover contagens p/ RPC/`count`/`GROUP BY`.
+- **PERF-6** rotas de Votação (`matrix/distribution/fidelidade/sectors`) agregam `votos` inteiro em JS
+  3×/load → agregação em SQL (RPC/view).
+- **PERF-12** charts sem `next/dynamic` (13 páginas) — ganho de bundle, verificação visual.
+**Deferido — defense-in-depth leve:** SEC-8 (wrapper redirect validado no `resilient-fetch`),
+SEC-9 (paridade demo nos GET de qualidade), SEC-10 (rate-limit em `/auth/*`), SEC-11 (`system/status`
+expõe flags `has_*`), SEC-13 (`applyRetroactiveVotes` via `upsertVotosProtegido`), SEC-14 (validar ISO
+em `vote-inference.ts:77`), SEC-15 (teste/CI que exija `require*` em rotas de escrita).
 
 ## Invariantes de operação (não quebrar)
 
