@@ -67,6 +67,22 @@ No plano grátis, a conferência humana semanal é:
   a chave; PDFs sem camada de texto caem em revisão com aviso. Configurar a env na Vercel
   quando quiser habilitar.
 
+### Otimizações adiadas — auditoria de segurança/performance (jul/2026)
+Estas ficaram fora do lote de correção por exigirem **migration** ou **refactor arriscado na
+fonte única** (que precisa verificação com dados reais antes de subir). Reavaliar num PR dedicado:
+- **`dashboard/overview` agrega a tabela inteira em JS** ([route.ts](../src/app/api/v1/dashboard/overview/route.ts)):
+  o `select` traz `raw_extraction` (JSON grande) de TODAS as deliberações porque o predicado
+  `isFinalDecisionRecord` lê 3 sub-chaves dele. Ganho real = promover essas chaves a colunas
+  (migration) ou selecionar sub-chaves JSON via PostgREST e adaptar o predicado. Mesmo padrão em
+  `admin/completude-2026`, `admin/saude-dados`, `admin/cobertura-documentos` (40k-80k linhas).
+- **Lista de `noticias`: `count:"exact"` + `ILIKE` em `conteudo`** força seq-scan por request →
+  índice `pg_trgm`/`tsvector` (migration) + `count:"planned"`.
+- **Dedup 1-a-1 no coletor ANTT** (`antt-2026-collector.ts` `findExistingDocument*`): custo é
+  dominado pela rede (SELECT indexado é barato); pré-carregar Set exige refactor do loop de
+  ingestão — só com verificação contra dados reais (risco de duplicar na fonte única).
+- **Charts sem `next/dynamic`** (recharts/d3 em `src/components/charts/*`): ganho só de bundle;
+  code-splitting muda o render dos gráficos no dashboard — fazer com verificação visual do front.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
