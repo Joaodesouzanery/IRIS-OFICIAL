@@ -40,6 +40,10 @@ export async function POST(req: NextRequest) {
   let divergenciaCorrigida = 0;
   let deliberacoesAfetadas = 0;
   let deliberacoesSoInferidas = 0;
+  // Coleta os IDs por valor-alvo para atualizar em LOTE (2 queries) em vez de 1 UPDATE
+  // por voto — o duplo loop podia disparar centenas de PATCHes sequenciais e estourar o tempo.
+  const idsParaDivergente: string[] = [];
+  const idsParaNaoDivergente: string[] = [];
 
   for (const d of (delibs ?? []) as any[]) {
     const votos = (d.votos ?? []) as Array<{ id: string; tipo_voto: string; is_divergente: boolean; is_nominal: boolean }>;
@@ -52,10 +56,22 @@ export async function POST(req: NextRequest) {
       if (novo !== v.is_divergente) {
         divergenciaCorrigida++;
         afetou = true;
-        if (apply) await db.from("votos").update({ is_divergente: novo }).eq("id", v.id);
+        if (apply) (novo ? idsParaDivergente : idsParaNaoDivergente).push(v.id);
       }
     }
     if (afetou) deliberacoesAfetadas++;
+  }
+
+  if (apply) {
+    // Chunk de 100 p/ não estourar o tamanho da URL do PATCH do PostgREST.
+    const aplicarEmLote = async (ids: string[], valor: boolean) => {
+      for (let i = 0; i < ids.length; i += 100) {
+        const chunk = ids.slice(i, i + 100);
+        if (chunk.length) await db.from("votos").update({ is_divergente: valor }).in("id", chunk);
+      }
+    };
+    await aplicarEmLote(idsParaDivergente, true);
+    await aplicarEmLote(idsParaNaoDivergente, false);
   }
 
   if (apply && deliberacoesAfetadas > 0) {
