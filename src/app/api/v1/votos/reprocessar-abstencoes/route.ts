@@ -54,6 +54,10 @@ export async function POST(req: NextRequest) {
 
   let reclassificados = 0;
   let deliberacoesAfetadas = 0;
+  // Coleta os ids (mesmo payload p/ TODOS) + auditoria, para aplicar em LOTE (UPDATE .in()
+  // chunked + 1 insert) em vez de 1 UPDATE por voto + 1 INSERT por deliberação.
+  const idsParaAbstencao: string[] = [];
+  const auditRows: Array<Record<string, unknown>> = [];
 
   for (const d of (delibs ?? []) as any[]) {
     if (!d.agencia_id || !d.raw_text) continue;
@@ -73,28 +77,27 @@ export async function POST(req: NextRequest) {
     }
     if (abstencaoIds.size === 0) continue;
 
-    let afetou = false;
-    for (const voto of desfavoraveis) {
-      if (!abstencaoIds.has(voto.diretor_id)) continue;
-      const { error: upErr } = await db
-        .from("votos")
-        .update({ tipo_voto: "Abstencao", is_divergente: false })
-        .eq("id", voto.id);
-      if (!upErr) { reclassificados++; afetou = true; }
-    }
-    if (afetou) {
-      deliberacoesAfetadas++;
-      await db.from("votos_retroativos_audit").insert({
-        diretor_id: null,
-        agencia_id: d.agencia_id,
-        nome_detectado: "(reclassificação de abstenção)",
-        deliberacoes_afetadas: 1,
-        votos_criados: 0,
-        votos_ignorados_fora_mandato: 0,
-        detalhe: { tipo: "reclassificacao_abstencao", deliberacao_id: d.id },
-      });
-    }
+    const idsDaDelib = desfavoraveis.filter((v) => abstencaoIds.has(v.diretor_id)).map((v) => v.id);
+    if (idsDaDelib.length === 0) continue;
+    idsParaAbstencao.push(...idsDaDelib);
+    deliberacoesAfetadas++;
+    auditRows.push({
+      diretor_id: null,
+      agencia_id: d.agencia_id,
+      nome_detectado: "(reclassificação de abstenção)",
+      deliberacoes_afetadas: 1,
+      votos_criados: 0,
+      votos_ignorados_fora_mandato: 0,
+      detalhe: { tipo: "reclassificacao_abstencao", deliberacao_id: d.id },
+    });
   }
+
+  for (let i = 0; i < idsParaAbstencao.length; i += 100) {
+    const chunk = idsParaAbstencao.slice(i, i + 100);
+    const { error: upErr } = await db.from("votos").update({ tipo_voto: "Abstencao", is_divergente: false }).in("id", chunk);
+    if (!upErr) reclassificados += chunk.length;
+  }
+  if (auditRows.length > 0) await db.from("votos_retroativos_audit").insert(auditRows);
 
   const processados = (delibs ?? []).length;
   return NextResponse.json({
