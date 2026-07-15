@@ -61,12 +61,15 @@ export function extractPdfEntriesFromZip(
     if (!name.toLowerCase().endsWith(".pdf") || name.endsWith("/")) continue;
     if (entries.length >= maxFiles) throw new Error(`ZIP excede o limite de ${maxFiles} PDFs`);
 
-    totalUncompressed += uncompressedSize;
+    // Zip-bomb: NÃO confiar no uncompressedSize DECLARADO no diretório central (o atacante
+    // sub-declara p/ passar no cap). Descompacta com teto REAL (maxOutputLength) e acumula
+    // pelo tamanho de fato inflado.
+    const content = readLocalFile(buffer, localHeaderOffset, compressedSize, compressionMethod, maxTotal - totalUncompressed);
+    totalUncompressed += content.length;
     if (totalUncompressed > maxTotal) {
       throw new Error(`ZIP excede o limite de ${(maxTotal / 1024 / 1024).toFixed(0)} MB descompactados`);
     }
 
-    const content = readLocalFile(buffer, localHeaderOffset, compressedSize, compressionMethod);
     entries.push({
       name: basenameFromZipPath(name),
       buffer: content,
@@ -91,6 +94,7 @@ function readLocalFile(
   localHeaderOffset: number,
   compressedSize: number,
   compressionMethod: number,
+  maxOutputBytes: number,
 ): Buffer {
   if (localHeaderOffset + 30 > zip.length || zip.readUInt32LE(localHeaderOffset) !== LOCAL_FILE_SIGNATURE) {
     throw new Error("Header local ZIP corrompido");
@@ -103,8 +107,20 @@ function readLocalFile(
   if (dataEnd > zip.length) throw new Error("Entrada ZIP truncada");
 
   const compressed = zip.subarray(dataStart, dataEnd);
-  if (compressionMethod === 0) return Buffer.from(compressed);
-  if (compressionMethod === 8) return inflateRawSync(compressed);
+  const cap = Math.max(1, maxOutputBytes);
+  if (compressionMethod === 0) {
+    if (compressed.length > cap) throw new Error("ZIP excede o limite descompactado");
+    return Buffer.from(compressed);
+  }
+  if (compressionMethod === 8) {
+    try {
+      // maxOutputLength faz o inflate abortar (ERR_BUFFER_TOO_LARGE) antes de estourar a
+      // memória com um stream que infla muito além do declarado (zip-bomb).
+      return inflateRawSync(compressed, { maxOutputLength: cap });
+    } catch {
+      throw new Error("ZIP excede o limite descompactado ou está corrompido");
+    }
+  }
   throw new Error(`Metodo de compressao ZIP nao suportado: ${compressionMethod}`);
 }
 

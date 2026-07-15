@@ -639,7 +639,9 @@ async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number): Pr
 
 async function fetchGovbrApiLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
   const apiUrl = buildGovbrSearchApiUrl(source.url, limit);
-  if (!apiUrl) return [];
+  // SSRF: era o único fetch de coleta fora do guard. Valida host público e não segue
+  // redirect (o resto do stack usa resilientFetch→assertPublicUrl).
+  if (!apiUrl || !isPublicUrl(apiUrl)) return [];
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
@@ -648,6 +650,7 @@ async function fetchGovbrApiLinks(source: NewsSourceConfig, limit: number): Prom
         "User-Agent": "IRIS-Regulacao-Noticias/1.0 (+https://iris-oficial.vercel.app)",
         Accept: "application/json",
       },
+      redirect: "manual",
       next: { revalidate: 0 },
       signal: controller.signal,
     });

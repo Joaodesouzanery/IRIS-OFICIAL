@@ -35,11 +35,11 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  // Auth SEMPRE (inclusive dry_run): o preview roda scraping headless pesado (até 200
+  // reuniões) — antes o ?dry_run=1 pulava o guard e virava DoS de compute anônimo.
+  const guard = await requireAdminOrCron(req);
+  if (guard) return guard;
   const dryRun = req.nextUrl.searchParams.get("dry_run") === "1";
-  if (!dryRun) {
-    const guard = await requireAdminOrCron(req);
-    if (guard) return guard;
-  }
 
   const searchParams = req.nextUrl.searchParams;
   const maxPages = parseBoundedInt(searchParams.get("max_pages"), MAX_PAGES_RE, 12, 1, 20);

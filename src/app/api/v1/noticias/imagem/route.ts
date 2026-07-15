@@ -1,8 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
+import { isPublicUrl } from "@/lib/server/url-guard";
 
 export const dynamic = "force-dynamic";
 
 const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
+
+// Corta o stream no teto de bytes (SSRF/egress): resposta chunked não tem
+// content-length, então o cap só por header era contornável.
+function limitStreamBytes(body: ReadableStream<Uint8Array>, maxBytes: number): ReadableStream<Uint8Array> {
+  const reader = body.getReader();
+  let total = 0;
+  return new ReadableStream<Uint8Array>({
+    async pull(controller) {
+      const { done, value } = await reader.read();
+      if (done) return controller.close();
+      total += value.byteLength;
+      if (total > maxBytes) {
+        await reader.cancel();
+        return controller.error(new Error("Imagem excede o tamanho permitido"));
+      }
+      controller.enqueue(value);
+    },
+    cancel() {
+      void reader.cancel();
+    },
+  });
+}
 
 export async function GET(req: NextRequest) {
   const rawUrl = req.nextUrl.searchParams.get("url");
@@ -17,7 +40,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "URL da imagem inválida" }, { status: 400 });
   }
 
-  if (!isAllowedOfficialImageHost(url)) {
+  if (!isAllowedOfficialImageHost(url) || !isPublicUrl(rawUrl)) {
     return NextResponse.json({ error: "Domínio de imagem não autorizado" }, { status: 403 });
   }
 
@@ -38,7 +61,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Imagem excede o tamanho permitido" }, { status: 413 });
   }
 
-  return new NextResponse(res.body, {
+  return new NextResponse(limitStreamBytes(res.body, MAX_IMAGE_BYTES), {
     status: 200,
     headers: {
       "Content-Type": normalizedContentType.startsWith("image/") ? contentType : inferImageContentType(url.pathname),
@@ -53,6 +76,9 @@ const BROWSER_UA =
 const IMAGE_ACCEPT = "image/avif,image/webp,image/png,image/jpeg,image/*,*/*;q=0.8";
 
 // Busca a imagem oficial; em 401/403 (proteção de hotlink) tenta de novo SEM Referer.
+// SSRF: `redirect:"manual"` — a allowlist valida só a URL LITERAL; um open-redirect num
+// host gov.br levaria o fetch (e o corpo devolvido ao cliente) para 169.254/127.0.0.1. Um
+// redirect vira resposta opaca (res.ok=false) → 502/placeholder, nunca seguido.
 async function fetchOfficialImage(url: URL): Promise<Response | null> {
   const attempts: Array<Record<string, string>> = [
     { "User-Agent": BROWSER_UA, Accept: IMAGE_ACCEPT, Referer: `${url.origin}/` },
@@ -61,7 +87,7 @@ async function fetchOfficialImage(url: URL): Promise<Response | null> {
   let last: Response | null = null;
   for (const headers of attempts) {
     try {
-      const res = await fetch(url, { headers, next: { revalidate: 3600 } });
+      const res = await fetch(url, { headers, redirect: "manual", next: { revalidate: 3600 } });
       if (res.ok) return res;
       last = res;
       if (res.status !== 401 && res.status !== 403) return res; // só re-tenta bloqueio de hotlink
