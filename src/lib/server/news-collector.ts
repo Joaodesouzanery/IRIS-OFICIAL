@@ -1593,8 +1593,14 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
   // Host oficial OU padrão Plone @@images também são de confiança (a foto do artigo
   // gov.br sem og:image). Mantém a URL como unverified se o probe falhar.
   const officialImage = isOfficialImageHost(candidate.url) || /\/@@images\//i.test(candidate.url);
-  // Lead-image/Plone: tenta múltiplas escalas; a 1ª que retornar image/* vence.
-  const variants = (mediumConfidence || officialImage) ? leadImageScaleVariants(candidate.url) : [candidate.url];
+  const reconstructed = candidate.source === "govbr lead image reconstructed";
+  // Lead-image/Plone: tenta múltiplas escalas; a 1ª que retornar image/* vence. MAS a
+  // reconstruída (fallback gov.br sem og) proba só /large (1 probe): artigo sem foto
+  // raramente tem outra escala, e 6 probes (8s cada, fora do throttle) × N artigos sem
+  // foto estouravam o orçamento de 60s e disparavam 403/429 no host.
+  const variants = reconstructed
+    ? [candidate.url]
+    : (mediumConfidence || officialImage) ? leadImageScaleVariants(candidate.url) : [candidate.url];
   let lastProbe: { ok: boolean; contentType: string | null; contentLength: number | null } | null = null;
   for (const url of variants) {
     const probe = await probeImageUrl(url);
@@ -1604,9 +1610,7 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
     }
   }
   // A lead-image RECONSTRUÍDA (fallback gov.br) só vale se o probe confirmar (200 acima):
-  // artigo sem foto retorna 404 em todas as escalas e deve virar placeholder limpo, não uma
-  // URL quebrada mantida como unverified.
-  const reconstructed = candidate.source === "govbr lead image reconstructed";
+  // artigo sem foto retorna 404 e deve virar placeholder limpo, não uma URL quebrada.
   // Metatag declarada, lead-image de média confiança OU imagem de host oficial: mantém
   // a URL (o proxy do front revalida sob demanda; melhor que placeholder).
   if (!reconstructed && (highConfidence || mediumConfidence || officialImage)) {

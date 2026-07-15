@@ -61,7 +61,13 @@ export async function GET(req: NextRequest) {
   const db = createSupabaseServerClient();
   let query = db
     .from("regulatory_news")
-    .select("*, agencia:agencias(sigla, nome)", { count: "exact" })
+    // Colunas explícitas SEM `conteudo` (o corpo inteiro): o card só usa
+    // titulo/resumo/imagem/fonte/data/metadata; projetar `conteudo` × 100 linhas era
+    // payload desnecessário. A busca ILIKE em `conteudo` continua server-side (não precisa projetá-lo).
+    .select(
+      "id, agencia_id, agencia_sigla, titulo, url, fonte, imagem_url, resumo, publicado_em, status_curadoria, hash_item, metadata, first_seen_at, last_seen_at, updated_at, agencia:agencias(sigla, nome)",
+      { count: "exact" },
+    )
     .order("publicado_em", { ascending: false, nullsFirst: false })
     .order("first_seen_at", { ascending: false })
     .range(offset, offset + limit - 1);
@@ -92,7 +98,9 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar notícias" }, { status: 500 });
   }
 
-  return NextResponse.json({ data: repairRegulatoryNewsItems((data ?? []) as RegulatoryNews[]), total: count ?? 0 } satisfies RegulatoryNewsListResponse);
+  // Cast via unknown: o select da lista omite `conteudo` de propósito (o card não usa);
+  // o shape em runtime é o de RegulatoryNews sem esse campo.
+  return NextResponse.json({ data: repairRegulatoryNewsItems((data ?? []) as unknown as RegulatoryNews[]), total: count ?? 0 } satisfies RegulatoryNewsListResponse);
 }
 
 function daysAgoIso(days: number) {

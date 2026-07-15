@@ -31,11 +31,7 @@ export async function GET(req: NextRequest) {
     .from("mandatos")
     .select("diretor_id, diretores!inner(agencia_id)", { count: "exact", head: true })
     .gte("data_fim", new Date().toISOString().slice(0, 10));
-
-  if (agenciaId) {
-    diretoresQuery = diretoresQuery.eq("diretores.agencia_id", agenciaId);
-  }
-  const { count: diretores_ativos } = await diretoresQuery;
+  if (agenciaId) diretoresQuery = diretoresQuery.eq("diretores.agencia_id", agenciaId);
 
   // Total deliberações FINAIS (aproximação SQL do isFinalDecisionRecord: exclui
   // ata-mãe e docs de apoio) — alinha o card ao Dashboard (28), sem contar
@@ -46,14 +42,12 @@ export async function GET(req: NextRequest) {
     .not("tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
     .or("tipo_documento.neq.ata,documento_pai_id.not.is.null");
   if (agenciaId) deliberQuery = deliberQuery.eq("agencia_id", agenciaId);
-  const { count: total_deliberacoes } = await deliberQuery;
 
   // Participações colegiadas = total votos
   let votosQuery = db
     .from("votos")
     .select("deliberacoes!inner(agencia_id)", { count: "exact", head: true });
   if (agenciaId) votosQuery = votosQuery.eq("deliberacoes.agencia_id", agenciaId);
-  const { count: participacoes_colegiadas } = await votosQuery;
 
   // Taxa de consenso: deliberações sem voto divergente / total
   let divergQuery = db
@@ -61,7 +55,10 @@ export async function GET(req: NextRequest) {
     .select("deliberacao_id, deliberacoes!inner(agencia_id)")
     .eq("is_divergente", true);
   if (agenciaId) divergQuery = divergQuery.eq("deliberacoes.agencia_id", agenciaId);
-  const { data: divergData } = await divergQuery;
+
+  // As 4 queries são independentes → paralelas (antes eram 4 awaits sequenciais).
+  const [{ count: diretores_ativos }, { count: total_deliberacoes }, { count: participacoes_colegiadas }, { data: divergData }] =
+    await Promise.all([diretoresQuery, deliberQuery, votosQuery, divergQuery]);
   const comDivergencia = new Set((divergData ?? []).map((v: { deliberacao_id: string }) => v.deliberacao_id)).size;
   const total = total_deliberacoes ?? 0;
   const taxa_consenso =
