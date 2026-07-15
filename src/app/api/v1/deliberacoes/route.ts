@@ -10,6 +10,7 @@ import { computeDelibList } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { parseIntParam } from "@/lib/server/http-params";
 
 const VALID_SORT_COLUMNS = new Set([
   "data_reuniao",
@@ -53,8 +54,8 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  const page = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10));
-  const limit = Math.min(100, Math.max(1, parseInt(searchParams.get("limit") ?? "20", 10)));
+  const page = parseIntParam(searchParams.get("page"), 1, 1);
+  const limit = parseIntParam(searchParams.get("limit"), 20, 1, 100);
   const offset = (page - 1) * limit;
 
   const sortBy = searchParams.get("sort_by") ?? "data_reuniao";

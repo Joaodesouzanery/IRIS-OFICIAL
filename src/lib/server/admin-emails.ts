@@ -24,5 +24,9 @@ export function hasConfiguredAdminEmail(): boolean {
 const EMAIL_FORMAT_RE = /^[^\s@,()]+@[^\s@,()]+\.[^\s@,()]+$/;
 
 export function isValidEmailFormat(email: string): boolean {
+  // Cap RFC 5321 (254) ANTES da regex: sem isto o backtracking O(n²) da regex vira
+  // ReDoS alcançável SEM auth — setup-owner é público (bypass do middleware) e valida
+  // o e-mail antes do gate de token, então um e-mail gigante travaria a CPU da função.
+  if (email.length > 254) return false;
   return EMAIL_FORMAT_RE.test(email);
 }

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { hasConfiguredAdminEmail, isConfiguredAdminEmail } from "@/lib/server/admin-emails";
-import { adminUsersCount, getAuthenticatedUser, isAdminUser } from "@/lib/server/request-guards";
+import { getAuthenticatedUser, isAdminUser } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
@@ -22,15 +22,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Este e-mail não é o administrador global autorizado." }, { status: 403 });
   }
 
+  // A allowlist obrigatória acima é o gate real: só e-mail em IRIS_OWNER_EMAIL/ADMIN_EMAILS
+  // chega aqui, e para esse e-mail `isAdminUser` já é true (via isConfiguredAdminEmail),
+  // então o caminho de concessão abaixo é idempotente (retorna "já é owner").
   const alreadyAdmin = await isAdminUser(userResult);
   if (alreadyAdmin) {
     return NextResponse.json({ user: userResult, role: "owner", created: false });
-  }
-
-  // Defesa em profundidade: bootstrap é de primeira execução. Se já existe admin
-  // ativo e o chamador não é um deles, não cria um segundo owner inesperado.
-  if ((await adminUsersCount()) > 0) {
-    return NextResponse.json({ error: "Já existe um administrador ativo." }, { status: 409 });
   }
 
   const db = createSupabaseServerClient();

@@ -1539,6 +1539,10 @@ async function probeImageUrl(url: string) {
         Accept: "image/*",
         Range: "bytes=0-1023",
       },
+      // SSRF: isPublicUrl só valida a URL LITERAL; `redirect:"follow"` (default) seguiria
+      // um 302 de host público → 169.254.169.254/127.0.0.1. "manual" não segue: um
+      // redirect vira response opaca (ok=false) e a imagem só é nulificada (degrade seguro).
+      redirect: "manual",
       next: { revalidate: 0 },
       signal: controller.signal,
     });

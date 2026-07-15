@@ -11,6 +11,7 @@ import { requireAdmin } from "@/lib/server/request-guards";
 import { extractFields } from "@/lib/server/nlp-extractor";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import type { DiretorVoteRecord } from "@/lib/server/vote-inference";
+import { parseIntParam } from "@/lib/server/http-params";
 
 export const dynamic = "force-dynamic";
 
@@ -19,8 +20,8 @@ export async function POST(req: NextRequest) {
   if (guard) return guard;
   if (isDemo()) return NextResponse.json({ reclassificados: 0, demo: true });
 
-  const offset = Math.max(0, parseInt(req.nextUrl.searchParams.get("offset") ?? "0", 10));
-  const limit = Math.min(200, Math.max(1, parseInt(req.nextUrl.searchParams.get("limit") ?? "100", 10)));
+  const offset = parseIntParam(req.nextUrl.searchParams.get("offset"), 0, 0);
+  const limit = parseIntParam(req.nextUrl.searchParams.get("limit"), 100, 1, 200);
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();

@@ -82,6 +82,12 @@ fonte única** (que precisa verificação com dados reais antes de subir). Reava
   ingestão — só com verificação contra dados reais (risco de duplicar na fonte única).
 - **Charts sem `next/dynamic`** (recharts/d3 em `src/components/charts/*`): ganho só de bundle;
   code-splitting muda o render dos gráficos no dashboard — fazer com verificação visual do front.
+- **SSRF por redirect no stack de coleta** (sistêmico, pré-existente): `assertPublicUrl`/`isPublicUrl`
+  validam só a **primeira** URL, e os `fetch` de coleta usam `redirect:"follow"` (default) — um host
+  público que responde 302→`169.254.169.254`/RFC1918 seria seguido. O `probeImageUrl` já foi
+  endurecido (`redirect:"manual"`); falta um **wrapper de fetch com redirect validado por hop** para
+  `resilient-fetch.ts` e `fetchGovbrApiLinks`. Baixo risco no Vercel (sem IMDS clássico + hosts
+  admin-configurados), mas fechar o vetor por completo exige esse wrapper. SSRF é cega (só status/timing).
 
 ## Invariantes de operação (não quebrar)
 

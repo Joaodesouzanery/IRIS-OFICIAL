@@ -34,10 +34,11 @@ const DEMO_AGENCIES = [
 
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  const demoPreview =
-    isDemo() ||
-    req.headers.get("x-iris-demo") === "1" ||
-    req.nextUrl.searchParams.get("demo") === "1";
+  // Só o modo demo REAL (servidor sem Supabase) pula a auth — NUNCA a flag
+  // ?demo=1/x-iris-demo controlada pelo cliente: senão qualquer anônimo processaria
+  // uploads (pdf-parse/NLP em até 150MB) em produção. Alinha com o princípio de is-demo.ts
+  // ("nunca usar query params p/ determinar modo demo — permitiria bypass em produção").
+  const demoPreview = isDemo();
 
   if (!demoPreview) {
     const guard = await requireAdmin(req);

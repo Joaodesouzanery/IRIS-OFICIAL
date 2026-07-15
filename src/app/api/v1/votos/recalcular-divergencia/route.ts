@@ -12,6 +12,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
 import { isDivergentVote, type TipoVoto } from "@/lib/server/vote-inference";
+import { parseIntParam } from "@/lib/server/http-params";
 
 export const dynamic = "force-dynamic";
 
@@ -21,8 +22,8 @@ export async function POST(req: NextRequest) {
   if (isDemo()) return NextResponse.json({ demo: true });
 
   const apply = req.nextUrl.searchParams.get("apply") === "1";
-  const offset = Math.max(0, parseInt(req.nextUrl.searchParams.get("offset") ?? "0", 10));
-  const limit = Math.min(500, Math.max(1, parseInt(req.nextUrl.searchParams.get("limit") ?? "300", 10)));
+  const offset = parseIntParam(req.nextUrl.searchParams.get("offset"), 0, 0);
+  const limit = parseIntParam(req.nextUrl.searchParams.get("limit"), 300, 1, 500);
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
