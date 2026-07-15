@@ -9,7 +9,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
   const [agenciasRes, delibsRes] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes")
-      .select("agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, raw_extraction, votos(is_divergente, is_nominal)")
+      .select(`agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}, votos(is_divergente, is_nominal)`)
       .limit(40000),
   ]);
 
@@ -48,7 +48,8 @@ export async function GET(req: NextRequest) {
   for (const d of (delibsRes.data ?? []) as Array<{
     agencia_id: string | null; resultado: string | null; microtema: string | null;
     extraction_confidence: number | null; tipo_documento: string | null;
-    documento_pai_id: string | null; raw_extraction: any;
+    documento_pai_id: string | null;
+    import_counts_as_final?: unknown; documento_subtipo?: unknown; documento_antt_tipo?: unknown;
     votos: Array<{ is_divergente: boolean; is_nominal: boolean }>;
   }>) {
     if (!isFinalDecisionRecord(d as any) || !d.agencia_id) continue;

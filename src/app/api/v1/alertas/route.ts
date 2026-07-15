@@ -12,7 +12,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeAlertas } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
     .from("deliberacoes")
     .select(
       `id, interessado, resultado, microtema, data_reuniao, agencia_id,
-       tipo_documento, documento_pai_id, raw_extraction,
+       tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT},
        votos (tipo_voto, is_divergente, diretor_id, diretores (nome))`
     );
 

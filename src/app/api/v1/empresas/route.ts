@@ -10,7 +10,7 @@ import { computeEmpresas } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
 import { isOrgaoInterno } from "@/lib/server/empresa-resolver";
 
@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
 
   let q: any = db
     .from("deliberacoes")
-    .select("interessado, empresa_id, empresas(nome_exibicao), resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, raw_extraction")
+    .select(`interessado, empresa_id, empresas(nome_exibicao), resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
     .not("interessado", "is", null);
   if (agenciaId) q = q.eq("agencia_id", agenciaId);
   if (microtema) q = q.eq("microtema", microtema);

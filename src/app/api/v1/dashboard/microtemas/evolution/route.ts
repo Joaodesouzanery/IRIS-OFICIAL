@@ -9,7 +9,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMicrotemasEvolution } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
@@ -27,7 +27,7 @@ export async function GET(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("microtema, data_reuniao, tipo_documento, documento_pai_id, resultado, raw_extraction")
+    .select(`microtema, data_reuniao, tipo_documento, documento_pai_id, resultado, ${FINAL_DECISION_RAW_SELECT}`)
     .not("microtema", "is", null)
     .not("data_reuniao", "is", null)
     .order("data_reuniao", { ascending: true });

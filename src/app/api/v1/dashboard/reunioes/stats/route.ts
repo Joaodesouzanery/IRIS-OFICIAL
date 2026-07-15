@@ -10,7 +10,7 @@ import { computeReunioesStats } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("data_reuniao, resultado, tipo_documento, documento_pai_id, raw_extraction")
+    .select(`data_reuniao, resultado, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
     .not("data_reuniao", "is", null)
     .order("data_reuniao", { ascending: true });
 

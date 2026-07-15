@@ -9,7 +9,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeReunioesCalendar } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("data_reuniao, tipo_documento, documento_pai_id, resultado, raw_extraction")
+    .select(`data_reuniao, tipo_documento, documento_pai_id, resultado, ${FINAL_DECISION_RAW_SELECT}`)
     .not("data_reuniao", "is", null)
     .gte("data_reuniao", `${year}-01-01`)
     .lte("data_reuniao", `${year}-12-31`);

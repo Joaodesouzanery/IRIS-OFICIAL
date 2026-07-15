@@ -87,11 +87,35 @@ export function classifyRegulatoryDocument(input: {
   };
 }
 
-export function isFinalDecisionRecord(row: Pick<Deliberacao, "tipo_documento" | "documento_pai_id" | "resultado" | "raw_extraction">): boolean {
-  const raw = row.raw_extraction ?? {};
-  if (raw.import_counts_as_final === false) return false;
+// Sub-select PostgREST das 3 sub-chaves do raw_extraction que este predicado usa — para as
+// rotas de analytics selecionarem SÓ isso em vez do JSON inteiro de todas as linhas.
+// Uso: `.select(\`...outras colunas..., ${FINAL_DECISION_RAW_SELECT}\`)`.
+export const FINAL_DECISION_RAW_SELECT =
+  "import_counts_as_final:raw_extraction->import_counts_as_final,documento_subtipo:raw_extraction->>documento_subtipo,documento_antt_tipo:raw_extraction->>documento_antt_tipo";
+
+type FinalDecisionRow = {
+  tipo_documento?: string | null;
+  documento_pai_id?: string | null;
+  resultado?: string | null;
+  // Formato completo (raw_extraction inteiro) OU achatado (sub-select acima). O predicado
+  // aceita os dois: se raw_extraction vier projetado, lê dele; senão, dos campos achatados.
+  raw_extraction?: Record<string, unknown> | null;
+  import_counts_as_final?: unknown;
+  documento_subtipo?: unknown;
+  documento_antt_tipo?: unknown;
+};
+
+export function isFinalDecisionRecord(row: FinalDecisionRow): boolean {
+  const hasRaw = row.raw_extraction != null;
+  const raw = (row.raw_extraction ?? {}) as Record<string, unknown>;
+  const importCountsAsFinal = hasRaw ? raw.import_counts_as_final : row.import_counts_as_final;
+  if (importCountsAsFinal === false) return false;
   const tipo = String(row.tipo_documento ?? "");
-  const subtipo = String(raw.documento_subtipo ?? raw.documento_antt_tipo ?? "");
+  const subtipo = String(
+    (hasRaw
+      ? (raw.documento_subtipo ?? raw.documento_antt_tipo)
+      : (row.documento_subtipo ?? row.documento_antt_tipo)) ?? "",
+  );
 
   if (["pauta", "voto_individual", "documento_apoio"].includes(tipo)) return false;
   if (["pauta", "voto_individual", "reuniao_deliberativa_eletronica", "reuniao_diretoria_publica", "reuniao_extraordinaria"].includes(subtipo)) {
