@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { parseIntParam } from "@/lib/server/http-params";
 import { repairRegulatoryNewsItems } from "@/lib/news-repairs";
 import type { RegulatoryNews, RegulatoryNewsListResponse } from "@/types";
 
@@ -37,8 +38,8 @@ export async function GET(req: NextRequest) {
   const range = resolvePeriodRange(periodo, includeAllRecent, searchParams.get("from"), searchParams.get("to"));
   const from = range.from;
   const to = range.to;
-  const limit = Math.min(100, Math.max(1, Number(searchParams.get("limit") ?? 50)));
-  const offset = Math.max(0, Number(searchParams.get("offset") ?? 0));
+  const limit = parseIntParam(searchParams.get("limit"), 50, 1, 100);
+  const offset = parseIntParam(searchParams.get("offset"), 0, 0);
 
   if (isDemo() || isDemoRequest(req)) {
     let data = DEMO_NEWS;

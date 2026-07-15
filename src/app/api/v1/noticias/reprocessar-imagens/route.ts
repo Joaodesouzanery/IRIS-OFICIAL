@@ -14,6 +14,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
 import { extractNewsFromUrl } from "@/lib/server/news-collector";
 import { hasBudget } from "@/lib/server/time-budget";
+import { parseIntParam } from "@/lib/server/http-params";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -26,7 +27,7 @@ export async function POST(req: NextRequest) {
   }
 
   const agenciaSigla = req.nextUrl.searchParams.get("agencia_sigla")?.trim().toUpperCase() || null;
-  const limit = Math.min(200, Math.max(1, Number(req.nextUrl.searchParams.get("limit") ?? 40)));
+  const limit = parseIntParam(req.nextUrl.searchParams.get("limit"), 40, 1, 200);
   const deadlineAt = Date.now() + 50_000; // Hobby mata a função aos 60s — corta antes, o resto fica p/ a próxima chamada
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");

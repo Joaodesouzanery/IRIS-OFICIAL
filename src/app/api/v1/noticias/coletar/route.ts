@@ -3,6 +3,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { collectRegulatoryNews, NEWS_WINDOW_DAYS, type DeepCollectOptions, type NewsCollectionMode, type NewsSourceConfig } from "@/lib/server/news-collector";
 import { ensureFederalNewsSources, getNewsProfile, getNewsTier } from "@/lib/server/news-sources";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { parseIntParam } from "@/lib/server/http-params";
 import { drainFetchStats, type FetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes, type HeadlessStats } from "@/lib/server/headless";
 import type { RegulatoryNewsCollectResponse } from "@/types";
@@ -74,7 +75,7 @@ async function collect(req: NextRequest) {
   const requestedLimit = Number(req.nextUrl.searchParams.get("limit") ?? defaultLimit);
   const maxLimit = hasSourceFilter ? 24 : scope === "priority" ? 12 : tierFilter === "core" ? 8 : 5;
   const limit = Math.min(maxLimit, Math.max(3, Number.isFinite(requestedLimit) ? requestedLimit : defaultLimit));
-  const offset = Math.max(0, Number(req.nextUrl.searchParams.get("offset") ?? 0));
+  const offset = parseIntParam(req.nextUrl.searchParams.get("offset"), 0, 0);
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
   try {
