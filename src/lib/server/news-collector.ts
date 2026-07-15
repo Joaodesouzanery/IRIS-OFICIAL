@@ -954,11 +954,18 @@ export function parseNewsDetail(
   const extractedImage = source.strategy === "artesp"
     ? extractArtespMainImage(root, link.url)
     : extractMainImage(root, link.url, jsonld.image);
+  // gov.br (Volto/Plone) sem og:image útil (ausente ou = logo institucional filtrado):
+  // reconstrói a lead-image por-artigo <url>/@@images/image/large. validateOfficialImage
+  // valida por probe (nulifica em 404), então artigo sem foto vira placeholder limpo.
+  // Cobre ANATEL/ANCINE/ANP/ANVISA/ANTT (o caminho HTML-listing que não reconstruía).
+  const reconstructedLead = source.strategy === "govbr" ? leadImageFromArticleUrl(canonical) : null;
   const imageCandidate = extractedImage.url
     ? extractedImage
     : link.imageUrl && isLikelyContentImage(link.imageUrl)
       ? { url: link.imageUrl, source: link.imageSource ?? "listing thumbnail verified fallback" }
-      : { url: null, source: link.imageUrl ? "listing thumbnail skipped" : null };
+      : reconstructedLead
+        ? { url: reconstructedLead, source: "govbr lead image reconstructed" }
+        : { url: null, source: link.imageUrl ? "listing thumbnail skipped" : null };
   // Data: JSON-LD (fonte mais confiável no gov.br) → meta → <time> → listagem → texto.
   const publicado_em =
     jsonld.datePublished ??
@@ -1127,6 +1134,10 @@ function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
   if (!lastSegment || /^\d+$/.test(lastSegment)) return false;
   if (["noticias", "ultimas-noticias", "noticias-anteriores"].includes(normalizeText(lastSegment))) return false;
+  // Listagem/landing de "defeso eleitoral" não é artigo — vinha capturada como item sem
+  // resumo e com data FUTURA do calendário eleitoral (ex.: "2026 - Defeso Eleitoral"). Cobre
+  // tanto `noticias-defeso-eleitoral` quanto slugs `<ano>-defeso-eleitoral`. QA jul/2026.
+  if (/defeso-eleitoral$/.test(normalizeText(lastSegment))) return false;
   if (lastSegment.includes(".")) return false;
   if (source.strategy === "artesp" && /^z[0-9a-z_]+$/i.test(lastSegment)) return false;
 
@@ -1293,6 +1304,16 @@ function extractArtespNewsAnchors(html: string, baseUrl: string) {
   return links;
 }
 
+// gov.br (Volto SSR) às vezes emite og:image com o host INTERNO do render grudado na
+// frente da URL real: "http://10.164.57.1:3000https://www.gov.br/.../@@images/...". Sem
+// reparo, o host vira 10.164.57.1 (RFC1918) e isPublicUrl bloqueia → imagem some (ANATEL).
+// Recupera a URL real (2º esquema colado logo após host[:porta], sem "/" no meio); URLs
+// normais e URLs com http embutido em query (após "/") passam inalteradas.
+function repairGovbrImageUrl(value: string): string {
+  const m = /^https?:\/\/[^/]*?(https?:\/\/.+)$/.exec(value);
+  return m ? m[1] : value;
+}
+
 function extractMainImage(root: HTMLElement, baseUrl: string, jsonLdImage?: string | null): { url: string | null; source: string | null } {
   const candidates: Array<{ value: string | null; source: string }> = [
     { value: jsonLdImage ?? extractJsonLdImage(root), source: "json-ld image" },
@@ -1310,7 +1331,7 @@ function extractMainImage(root: HTMLElement, baseUrl: string, jsonLdImage?: stri
   const valid: Array<{ url: string; source: string; score: number }> = [];
 
   for (const candidate of candidates) {
-    const value = candidate.value ? pickSrcsetFirst(candidate.value) : null;
+    const value = candidate.value ? repairGovbrImageUrl(pickSrcsetFirst(candidate.value)) : null;
     const absolute = absolutize(value, baseUrl);
     if (absolute && isLikelyContentImage(absolute)) {
       valid.push({ url: absolute, source: candidate.source, score: imageScaleScore(absolute) });
@@ -1579,9 +1600,13 @@ async function validateOfficialImage(candidate: { url: string | null; source: st
       return { url, source: candidate.source, status: "official_image_found" as const, contentType: probe.contentType, contentLength: probe.contentLength };
     }
   }
+  // A lead-image RECONSTRUÍDA (fallback gov.br) só vale se o probe confirmar (200 acima):
+  // artigo sem foto retorna 404 em todas as escalas e deve virar placeholder limpo, não uma
+  // URL quebrada mantida como unverified.
+  const reconstructed = candidate.source === "govbr lead image reconstructed";
   // Metatag declarada, lead-image de média confiança OU imagem de host oficial: mantém
   // a URL (o proxy do front revalida sob demanda; melhor que placeholder).
-  if (highConfidence || mediumConfidence || officialImage) {
+  if (!reconstructed && (highConfidence || mediumConfidence || officialImage)) {
     return { ...candidate, status: "official_image_unverified" as const, contentType: lastProbe?.contentType ?? null, contentLength: lastProbe?.contentLength ?? null };
   }
   return { url: null, source: candidate.source, status: "image_fetch_failed" as const, contentType: lastProbe?.contentType ?? null, contentLength: lastProbe?.contentLength ?? null };
@@ -1807,8 +1832,20 @@ export function extractDateFromText(text: string) {
 function normalizeDate(value: string | null) {
   if (!value) return null;
   const parsed = new Date(value);
-  if (!Number.isNaN(parsed.getTime())) return parsed.toISOString();
-  return extractDateFromText(value);
+  if (!Number.isNaN(parsed.getTime())) return clampFutureDate(parsed.toISOString());
+  return clampFutureDate(extractDateFromText(value));
+}
+
+// Data > agora + 48h (folga de fuso) é quase sempre parse errado — o último recurso
+// extractDateFromText pega a 1ª data do texto e páginas de listagem/calendário (ex.:
+// defeso eleitoral) trazem datas de eventos FUTUROS. Trata como sem data confiável
+// (null) — senão o item lidera a lista, ordenada por publicado_em DESC.
+function clampFutureDate(iso: string | null): string | null {
+  if (!iso) return null;
+  const t = new Date(iso).getTime();
+  if (!Number.isFinite(t)) return null;
+  if (t > Date.now() + 48 * 60 * 60 * 1000) return null;
+  return iso;
 }
 
 function absolutize(value: string | null, baseUrl: string) {

@@ -104,3 +104,52 @@ describe("parseNewsDetail — robustez (sintéticos)", () => {
     expect(item).toBeNull();
   });
 });
+
+// ─── Imagem gov.br: reparo de og malformada + reconstrução de lead-image ─────
+describe("parseNewsDetail — imagem gov.br (Volto/Plone)", () => {
+  const ANATEL: NewsSourceConfig = { agencia_sigla: "ANATEL", fonte: "ANATEL", url: "https://www.gov.br/anatel/pt-br/assuntos/noticias", strategy: "govbr", tier: "expanded" };
+  const ANP: NewsSourceConfig = { agencia_sigla: "ANP", fonte: "ANP", url: "https://www.gov.br/anp/pt-br/canais_atendimento/imprensa/noticias-comunicados", strategy: "govbr", tier: "expanded" };
+  const pastIso = new Date(Date.now() - 30 * 864e5).toISOString();
+
+  it("repara og:image com host interno grudado (10.164.57.1:3000 → URL real)", () => {
+    const url = "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-divulga-relatorio-de-monitoramento";
+    const html = `<html><head>
+      <meta property="og:title" content="ANATEL divulga relatório de monitoramento da competição"/>
+      <meta property="og:image" content="http://10.164.57.1:3000${url}/@@images/image-800-abc123.png"/>
+      <meta property="article:published_time" content="${pastIso}"/>
+    </head><body><article><p>Conteúdo da notícia com tamanho suficiente para passar nos filtros de comprimento e não ser tratado como lixo.</p></article></body></html>`;
+    const item = parseNewsDetail(html, { url, title: "fallback" }, ANATEL);
+    expect(item).not.toBeNull();
+    expect(item!.imagem_url).toBe(`${url}/@@images/image-800-abc123.png`);
+  });
+
+  it("sem og:image: reconstrói lead-image por-artigo <url>/@@images/image/large", () => {
+    const url = "https://www.gov.br/anp/pt-br/canais_atendimento/imprensa/noticias-comunicados/confira-o-repasse-da-cfem";
+    const html = `<html><head>
+      <meta property="og:title" content="Confira o repasse da CFEM referente à arrecadação"/>
+      <meta property="article:published_time" content="${pastIso}"/>
+    </head><body><article><p>Relatório apresenta os valores distribuídos aos entes. Conteúdo com comprimento suficiente para o parser aceitar.</p></article></body></html>`;
+    const item = parseNewsDetail(html, { url, title: "t" }, ANP);
+    expect(item).not.toBeNull();
+    expect(item!.imagem_url).toContain("/confira-o-repasse-da-cfem/@@images/image/large");
+    expect(item!.metadata.image_source).toBe("govbr lead image reconstructed");
+  });
+});
+
+// ─── Data futura (calendário/evento no corpo) não deve virar publicado_em ────
+describe("parseNewsDetail — clamp de data futura", () => {
+  const detailUrl = "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/nota-informativa-sobre-calendario-eleitoral";
+  it("descarta data FUTURA do texto → publicado_em null (não lidera a lista)", () => {
+    const fy = new Date().getFullYear() + 5;
+    const html = `<html><head><meta property="og:title" content="Nota informativa com título de tamanho adequado ao parser"/></head><body><article><p>O evento ocorrerá em ${fy}-08-24 conforme o calendário eleitoral. Texto de corpo com comprimento suficiente para o parser de conteúdo aceitar.</p></article></body></html>`;
+    const item = parseNewsDetail(html, { url: detailUrl, title: "t" }, ANTT);
+    expect(item).not.toBeNull();
+    expect(item!.publicado_em).toBeNull();
+  });
+  it("mantém data PASSADA normal", () => {
+    const py = new Date().getFullYear() - 1;
+    const html = `<html><head><meta property="og:title" content="Nota informativa com título de tamanho adequado ao parser"/></head><body><article><p>Publicado em ${py}-03-15 pela agência. Texto de corpo com comprimento suficiente para o parser de conteúdo aceitar sem problemas.</p></article></body></html>`;
+    const item = parseNewsDetail(html, { url: detailUrl, title: "t" }, ANTT);
+    expect(item!.publicado_em ?? "").toContain(`${py}-03-15`);
+  });
+});

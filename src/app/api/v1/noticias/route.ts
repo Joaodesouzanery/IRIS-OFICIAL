@@ -73,6 +73,11 @@ export async function GET(req: NextRequest) {
   // notícias coletadas sumiam da tela. Espelha o coalesce do caminho demo. QA Etapa 20.
   if (from) query = query.or(`publicado_em.gte.${from},and(publicado_em.is.null,first_seen_at.gte.${from})`);
   if (to) query = query.or(`publicado_em.lte.${to},and(publicado_em.is.null,first_seen_at.lte.${to})`);
+  // Teto anti-futuro: item com publicado_em no FUTURO (parse errado de data de evento/
+  // calendário no corpo — ex.: listagem de defeso eleitoral) não deve aparecer nem liderar.
+  // Mantém itens sem data (null → ordenados por first_seen), espelhando o fallback acima.
+  const nowCeiling = endOfDayIso(new Date().toISOString()) ?? new Date().toISOString();
+  query = query.or(`publicado_em.lte.${nowCeiling},publicado_em.is.null`);
   const searchTerm = search || tema;
   if (searchTerm && searchTerm.length >= 2) {
     // 1) remove os separadores de sintaxe do PostgREST (vírgula/parênteses) — sem isso
