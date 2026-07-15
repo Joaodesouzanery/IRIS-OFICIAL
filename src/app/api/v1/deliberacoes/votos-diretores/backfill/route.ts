@@ -4,7 +4,7 @@ import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { COLEGIADO_SOURCE_URLS, ensureColegiadoSources } from "@/lib/server/colegiado-sources";
 import { processMonitoringSite } from "@/lib/server/monitoring-runner";
 import { buildAnttMeetingSkipSet } from "@/lib/server/antt-2026-collector";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -45,11 +45,11 @@ export async function POST(req: NextRequest) {
 
   // Mais antigo primeiro (rotação justa) + orçamento REAL: deadlineAt desce até os
   // loops dos collectors — antes era checado só entre fontes e a ANTT sozinha
-  // (200 reuniões × throttle 800ms ≈ 160s) estourava o maxDuration em SIGKILL
+  // (200 reuniões × throttle 800ms ≈ 160s) estourava o limite Hobby (60s SIGKILL)
   // ("An error occurred with your deployment" no botão). O skip-set torna o
   // re-run barato: reuniões com ata já capturada não são re-buscadas.
   const startedAt = Date.now();
-  const deadlineAt = startedAt + 88_000;
+  const deadlineAt = startedAt + HOBBY_BUDGET_MS;
   const refresh = req.nextUrl.searchParams.get("refresh") === "1";
 
   const { data: sites, error } = await db

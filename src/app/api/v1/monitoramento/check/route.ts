@@ -4,6 +4,7 @@ import { fetchMonitoringSite } from "@/lib/server/monitoring";
 import { processMonitoringSite } from "@/lib/server/monitoring-runner";
 import type { MonitoramentoCheckResponse } from "@/types";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
+import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -104,9 +105,9 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   const runs: MonitoramentoCheckResponse["runs"] = [];
   let novosDetectados = 0;
-  // Orçamento de tempo: para graciosamente antes do maxDuration (120s), gravando o
-  // progresso — os sites restantes ficam para a próxima rodada (e vão à frente pela ordem).
-  const deadline = Date.now() + 100_000;
+  // Orçamento de tempo: para graciosamente antes do limite Hobby (60s SIGKILL), gravando
+  // o progresso — os sites restantes ficam para a próxima rodada (e vão à frente pela ordem).
+  const deadline = Date.now() + HOBBY_BUDGET_MS;
   let pulados = 0;
 
   for (const site of sites ?? []) {

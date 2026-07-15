@@ -11,6 +11,7 @@ import type { AnttCollectResponse, AnttPreviewResponse } from "@/types";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { drainFetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes } from "@/lib/server/headless";
+import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +24,7 @@ export async function GET(req: NextRequest) {
   const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 60, 1, 80);
 
   try {
-    const { meetings } = await discoverAntt2026Meetings({ maxPages, maxMeetings, deadlineAt: Date.now() + 88_000 });
+    const { meetings } = await discoverAntt2026Meetings({ maxPages, maxMeetings, deadlineAt: Date.now() + HOBBY_BUDGET_MS });
     return NextResponse.json(buildPreviewResponse(meetings, maxPages, maxMeetings));
   } catch (error) {
     return NextResponse.json(
@@ -43,9 +44,10 @@ export async function POST(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
   const maxPages = parseBoundedInt(searchParams.get("max_pages"), MAX_PAGES_RE, 12, 1, 20);
   const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 120, 1, 200);
-  // Orçamento: 120 reuniões × throttle 800ms ≈ 96s+ já estourava o maxDuration
-  // (SIGKILL) em dias de portal lento. Para graciosamente e retoma via skip-set.
-  const deadlineAt = Date.now() + 88_000;
+  // Orçamento Hobby (60s SIGKILL, independente do maxDuration:120 do vercel.json):
+  // 120 reuniões × throttle 800ms estouraria o limite. Para graciosamente e retoma
+  // via skip-set (reuniões com ata já capturada não são re-buscadas).
+  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
   const refresh = searchParams.get("refresh") === "1";
 
   try {

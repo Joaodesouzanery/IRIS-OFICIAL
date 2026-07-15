@@ -3,6 +3,12 @@
 // A regra é nunca INICIAR uma unidade de trabalho sem saldo — unidade em voo termina
 // (cada fetch já tem timeout próprio), preservando progresso e checkpoints.
 
+// Orçamento padrão de crawl. No plano Hobby a função é morta (SIGKILL) aos 60s,
+// INDEPENDENTE do `maxDuration: 120` do vercel.json (o 120 vale só no Pro). 50s deixa
+// folga para o corte gracioso + flush da resposta antes do limite; o trabalho que não
+// couber fica pendente e é retomado na próxima chamada. Usar via `Date.now() + HOBBY_BUDGET_MS`.
+export const HOBBY_BUDGET_MS = 50_000;
+
 export function msLeft(deadlineAt?: number): number {
   if (deadlineAt === undefined) return Number.POSITIVE_INFINITY;
   return deadlineAt - Date.now();

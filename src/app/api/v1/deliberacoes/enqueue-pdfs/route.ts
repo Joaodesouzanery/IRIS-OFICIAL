@@ -13,7 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { waitUntil } from "@vercel/functions";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -84,9 +84,9 @@ export async function POST(req: NextRequest) {
   }> = [];
   const jobsToProcess: Array<{ jobId: string; agenciaId: string | null }> = [];
 
-  // Orçamento: 10 PDFs × 20s de timeout = 200s > maxDuration 120s. Para
+  // Orçamento Hobby (60s SIGKILL): 10 PDFs × 20s de timeout estouraria o limite. Para
   // graciosamente; itens não processados continuam "novo" e entram no próximo clique.
-  const deadlineAt = Date.now() + 90_000;
+  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
   let restantes = 0;
 
   for (const item of candidates) {
