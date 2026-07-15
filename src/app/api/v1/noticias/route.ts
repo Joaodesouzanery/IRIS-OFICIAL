@@ -74,7 +74,10 @@ export async function GET(req: NextRequest) {
   if (to) query = query.or(`publicado_em.lte.${to},and(publicado_em.is.null,first_seen_at.lte.${to})`);
   const searchTerm = search || tema;
   if (searchTerm && searchTerm.length >= 2) {
-    const escaped = searchTerm.replace(/[\\%_]/g, "\\$&");
+    // 1) remove os separadores de sintaxe do PostgREST (vírgula/parênteses) — sem isso
+    //    um `search=x,titulo.eq.y` escaparia do ilike e injetaria filtros no `.or()`;
+    // 2) escapa os curingas do LIKE (\ % _). O supabase-js não sanitiza `.or()`.
+    const escaped = searchTerm.replace(/[(),]/g, " ").replace(/[\\%_]/g, "\\$&");
     query = query.or(`titulo.ilike.%${escaped}%,resumo.ilike.%${escaped}%,conteudo.ilike.%${escaped}%`);
   }
 

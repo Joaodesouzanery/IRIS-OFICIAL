@@ -5,6 +5,15 @@ import { isConfiguredAdminEmail, parseConfiguredAdminEmails } from "@/lib/server
 const WRITE_METHODS = new Set(["POST", "PATCH", "PUT", "DELETE"]);
 const PUBLIC_APP_PREFIXES = ["/login", "/setup-owner", "/auth/callback", "/_next", "/favicon", "/robots.txt", "/sitemap.xml"];
 
+// Comparação de tempo constante para o Bearer de cron. Edge-safe (sem node:crypto):
+// só o tamanho vaza (aceitável), o conteúdo é comparado sem short-circuit.
+function timingSafeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i += 1) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
 export async function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
 
@@ -44,7 +53,13 @@ async function handleApiRequest(req: NextRequest) {
     );
   }
 
-  if (isDemoRequest || req.method !== "GET") return NextResponse.next();
+  // Só métodos não-GET (escrita) passam direto — o guard da rota autentica.
+  // `?demo=1`/`x-iris-demo` NÃO pula mais a auth de GET: a flag é controlada pelo
+  // cliente e deixava rotas que não checam demo vazarem dados reais sem token. O
+  // usuário demo logado envia o Bearer normalmente e a rota devolve dados sintéticos
+  // pelo próprio check `isDemoRequest`; o modo demo real (sem Supabase) cai no
+  // bypass de `!supabaseUrl` abaixo.
+  if (req.method !== "GET") return NextResponse.next();
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -52,9 +67,9 @@ async function handleApiRequest(req: NextRequest) {
 
   const cronSecret = process.env.CRON_SECRET;
   const authHeader = req.headers.get("authorization");
-  if (cronSecret && authHeader === `Bearer ${cronSecret}`) return NextResponse.next();
-
   const token = authHeader?.startsWith("Bearer ") ? authHeader.slice("Bearer ".length).trim() : "";
+  if (cronSecret && token && timingSafeEqual(token, cronSecret)) return NextResponse.next();
+
   if (!token) {
     return NextResponse.json({ error: "Login obrigatório para consultar dados reais" }, { status: 401 });
   }

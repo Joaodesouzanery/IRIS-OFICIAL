@@ -2,6 +2,7 @@ import crypto from "crypto";
 import type { HTMLElement } from "node-html-parser";
 import { FetchFailureError, resilientFetchText } from "@/lib/server/resilient-fetch";
 import { hasBudget } from "@/lib/server/time-budget";
+import { isPublicUrl } from "@/lib/server/url-guard";
 import { tryRenderHtmlFallback } from "@/lib/server/headless";
 import { parseHtml, metaContent, jsonLdBlocks, safeQuery, safeQueryAll, firstAttrValue } from "@/lib/server/html-dom";
 
@@ -1523,6 +1524,11 @@ function leadImageScaleVariants(url: string): string[] {
 }
 
 async function probeImageUrl(url: string) {
+  // SSRF: a URL da imagem pode vir de HTML de terceiros (og:image/<img> da página
+  // coletada) — barra loopback/RFC1918/169.254 (metadata) antes de qualquer fetch.
+  if (!isPublicUrl(url)) {
+    return { ok: false, contentType: null as string | null, contentLength: null as number | null };
+  }
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), IMAGE_TIMEOUT_MS);
   try {
