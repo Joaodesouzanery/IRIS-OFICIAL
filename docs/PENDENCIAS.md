@@ -96,22 +96,18 @@ fonte única** (que precisa verificação com dados reais antes de subir). Reava
 ### Auditoria 2ª rodada (jul/2026) — status e itens deferidos
 **Já corrigido nesta rodada** (commits): proxy de imagem SSRF+bytes, bypass `?dry_run=1`, zip-bomb,
 `fetchGovbrApiLinks` (guard+redirect), cap dos probes de lead-image (regressão), lista de notícias sem
-`conteudo`, `mandatos/stats` paralelo, e a migration acima (RLS + índices, inclui o índice trgm que
-substitui o item "count/ILIKE" acima).
-**Deferido — esteira/robustez** (risco na fonte única, verificar com dados reais):
-- **PERF-5** `recompute` (passo 4 do "Rodar tudo") sem time-budget e fora do `vercel.json` → SIGKILL no
-  meio = auto-aprovações/merges pela metade. Adicionar `HOBBY_BUDGET_MS` entre grupos + `maxDuration`.
-- **PERF-10** `auto-confirm`: `ineligibleIds` cresce sem limite em `.not("id","in",(...))` (~1500 UUIDs →
-  URL gigante) + budget só entre rodadas → paginar por `created_at`.
-- **PERF-11** `upload/preview`: NLP de até 500 PDFs em `Promise.all` sem budget → fatiar.
-- **SEC-5** `deliberacoes/[id]` PATCH muda `resultado` sem recalcular `is_divergente` dos votos.
+`conteudo`, `mandatos/stats` paralelo, migration RLS+índices (inclui o trgm que substitui o item
+"count/ILIKE"), **sub-select de `raw_extraction` (PERF-1, 8 rotas, predicado dual-shape)**, **time-budget
+no `recompute` (PERF-5)**, **PATCH re-deriva `is_divergente` (SEC-5)**, **batch das abstenções (PERF-8)**.
+**Deferido — esteira/robustez** (risco/complexidade; verificar com dados reais):
+- **PERF-10** `auto-confirm`: `ineligibleIds` cresce em `.not("id","in",(...))` (~1500 UUIDs → URL grande).
+  Se estourar, retorna 500 e o loop para SEM corromper (cada rodada já commitou) → é reliability, não
+  integridade. Fix robusto = keyset pagination `(extraction_confidence, id)` — arriscado c/ nulls; adiar.
+- **PERF-11** `upload/preview`: NLP de até 500 PDFs em `Promise.all` sem budget → fatiar (reestrutura o
+  fluxo de preview, user-controlado — adiar).
 - **SEC-6** corrida duplica deliberação quando `numero_deliberacao` é null → índice único **parcial**
   (migration) — ⚠️ exige **dedup das linhas já duplicadas** antes de criar o índice, senão falha.
-- **PERF-8** `reprocessar-abstencoes`: UPDATE por voto + audit por deliberação → batch `.in()`.
-**Deferido — refactor maior:**
-- **PERF-1** sub-select JSON de `raw_extraction` (7 rotas de analytics) via `raw_extraction->chave` —
-  maior ROI sem migration, mas mexe no predicado `isFinalDecisionRecord` compartilhado (risco em
-  contas de analytics não-testadas). Fazer com predicado dual-shape + verificação.
+**Deferido — refactor maior (precisa RPC/migration ou verificação de front):**
 - **PERF-4** `completude-2026`/`saude-dados` agregam 40k-80k linhas em JS **e sofrem undercount
   silencioso** quando a base passa do LIMIT → mover contagens p/ RPC/`count`/`GROUP BY`.
 - **PERF-6** rotas de Votação (`matrix/distribution/fidelidade/sectors`) agregam `votos` inteiro em JS
