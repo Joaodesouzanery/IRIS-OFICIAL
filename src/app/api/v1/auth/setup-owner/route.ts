@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { User } from "@supabase/supabase-js";
-import { hasConfiguredAdminEmail, isConfiguredAdminEmail } from "@/lib/server/admin-emails";
+import { hasConfiguredAdminEmail, isConfiguredAdminEmail, isValidEmailFormat } from "@/lib/server/admin-emails";
+import { timingSafeEqualStr } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
@@ -23,11 +24,23 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Informe e-mail e senha." }, { status: 400 });
   }
 
+  // Barra metacaracteres do PostgREST (vírgula/parênteses) antes que o e-mail
+  // alcance o `.or(...)` de upsertAdminUser.
+  if (!isValidEmailFormat(email)) {
+    return NextResponse.json({ error: "E-mail inválido." }, { status: 400 });
+  }
+
   if (password.length < 8) {
     return NextResponse.json({ error: "A senha precisa ter pelo menos 8 caracteres." }, { status: 400 });
   }
 
-  if (requiredToken && setupToken !== requiredToken) {
+  // Fail-closed: /api/v1/auth/* faz bypass do middleware, então esta rota é pública.
+  // Sem IRIS_SETUP_TOKEN ela criaria/reescreveria owner (inclusive reset de senha do
+  // owner real) anonimamente — exige o token configurado e compara em tempo constante.
+  if (!requiredToken) {
+    return NextResponse.json({ error: "Setup indisponível: IRIS_SETUP_TOKEN não configurado." }, { status: 503 });
+  }
+  if (!timingSafeEqualStr(setupToken, requiredToken)) {
     return NextResponse.json({ error: "Código de setup inválido." }, { status: 403 });
   }
 

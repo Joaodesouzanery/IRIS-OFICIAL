@@ -27,8 +27,9 @@ function extractBearer(req: NextRequest): string {
   return authHeader?.startsWith("Bearer ") ? authHeader.slice("Bearer ".length).trim() : "";
 }
 
-// Comparação de tempo constante para evitar timing attacks no token de cron.
-function timingSafeEqualStr(a: string, b: string): boolean {
+// Comparação de tempo constante para evitar timing attacks em segredos (cron,
+// token de setup). Reusada por rotas de bootstrap — não trocar por `===`.
+export function timingSafeEqualStr(a: string, b: string): boolean {
   const bufA = Buffer.from(a);
   const bufB = Buffer.from(b);
   if (bufA.length !== bufB.length) return false;
