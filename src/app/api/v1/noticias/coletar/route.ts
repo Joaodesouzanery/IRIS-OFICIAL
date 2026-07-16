@@ -122,11 +122,14 @@ async function collect(req: NextRequest) {
   // URLs já conhecidas dentro da janela para NÃO re-baixar o que já temos — só os
   // artigos NOVOS ganham detail-fetch. Assim "trazer tudo" fica eficiente.
   const windowCutoffIso = new Date(Date.now() - NEWS_WINDOW_DAYS * 24 * 60 * 60 * 1000).toISOString();
+  // Inclui também os itens SEM data (publicado_em NULL) vistos recentemente (last_seen_at):
+  // antes o `.gte("publicado_em")` os excluía → eram re-baixados TODO run, queimando o
+  // orçamento de 45s em vez de descobrir os novos (crítico nas fontes React/Volto).
   const { data: knownRows } = await db
     .from("regulatory_news")
     .select("url")
-    .gte("publicado_em", windowCutoffIso)
-    .limit(8000);
+    .or(`publicado_em.gte.${windowCutoffIso},last_seen_at.gte.${windowCutoffIso}`)
+    .limit(12000);
   const deep: DeepCollectOptions = {
     windowDays: NEWS_WINDOW_DAYS,
     knownUrls: new Set((knownRows ?? []).map((r) => r.url as string)),
@@ -163,7 +166,10 @@ async function collect(req: NextRequest) {
     const nextOffset = automatic && offsetReport.status === "ok" && (offsetReport.items_pending ?? 0) > 0
       ? sourceOffset + (offsetReport.items_processed ?? 0)
       : 0;
-    const status = reports.some((report) => report.status === "ok") ? "ok" : "error";
+    // "empty" (fonte OK, sem item novo) conta como sucesso do check — só é "error" se houver erro real.
+    const status = reports.some((report) => report.status === "ok")
+      ? "ok"
+      : reports.some((report) => report.status === "error") ? "error" : "ok";
     const error = reports.find((report) => report.status === "error")?.error ?? null;
     return db
       .from("monitoramento_sites")
@@ -431,7 +437,7 @@ function emptyNewsAudit() {
 }
 
 function buildNextBatch(
-  reports: Array<{ status: "ok" | "error"; items_pending?: number; items_processed?: number; batch_offset?: number }>,
+  reports: Array<{ status: "ok" | "empty" | "error"; items_pending?: number; items_processed?: number; batch_offset?: number }>,
   current: { tier: NewsTierFilter; scope: NewsCollectionScope; offset: number; limit: number },
 ): CollectionNextBatch {
   const pending = reports.some((report) => (report.items_pending ?? 0) > 0);

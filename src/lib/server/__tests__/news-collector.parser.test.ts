@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it, expect } from "vitest";
-import { parseNewsDetail, extractNewsAnchors, extractDateFromText, type NewsSourceConfig } from "@/lib/server/news-collector";
+import { parseNewsDetail, extractNewsAnchors, extractDateFromText, siblingListingVariants, type NewsSourceConfig } from "@/lib/server/news-collector";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const fx = (p: string) => readFileSync(join(here, "fixtures/news", p), "utf-8");
@@ -133,6 +133,32 @@ describe("parseNewsDetail — imagem gov.br (Volto/Plone)", () => {
     expect(item).not.toBeNull();
     expect(item!.imagem_url).toContain("/confira-o-repasse-da-cfem/@@images/image/large");
     expect(item!.metadata.image_source).toBe("govbr lead image reconstructed");
+  });
+});
+
+// ─── Fallback de subseção eleitoral (blackout 2026) ─────────────────────────
+describe("siblingListingVariants — subseções eleitorais (blackout)", () => {
+  const mk = (url: string): NewsSourceConfig => ({ agencia_sigla: "X", fonte: "X", url, strategy: "govbr", tier: "expanded" });
+  const paths = (u: string) => siblingListingVariants(mk(u)).map((s) => new URL(s.url).pathname);
+
+  it("ANA: inclui o PAI (.../noticias-e-eventos) quando /noticias exige login", () => {
+    const p = paths("https://www.gov.br/ana/pt-br/assuntos/noticias-e-eventos/noticias");
+    expect(p).toContain("/ana/pt-br/assuntos/noticias-e-eventos");
+  });
+  it("ANS: inclui noticias-1 e noticias-1/periodo-eleitoral; NÃO dropa para /assuntos", () => {
+    const p = paths("https://www.gov.br/ans/pt-br/assuntos/noticias");
+    expect(p).toContain("/ans/pt-br/assuntos/noticias-1");
+    expect(p).toContain("/ans/pt-br/assuntos/noticias-1/periodo-eleitoral");
+    expect(p).not.toContain("/ans/pt-br/assuntos");
+  });
+  it("ANTT: inclui a irmã defeso", () => {
+    const p = paths("https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias");
+    expect(p).toContain("/antt/pt-br/assuntos/noticias-defeso-eleitoral");
+  });
+  it("não repete a URL canônica e retorna [] para fonte não-govbr", () => {
+    const p = paths("https://www.gov.br/ans/pt-br/assuntos/noticias");
+    expect(p).not.toContain("/ans/pt-br/assuntos/noticias");
+    expect(siblingListingVariants({ agencia_sigla: "ARTESP", fonte: "ARTESP", url: "https://www.artesp.sp.gov.br/artesp/noticias", strategy: "artesp", tier: "core" })).toHaveLength(0);
   });
 });
 

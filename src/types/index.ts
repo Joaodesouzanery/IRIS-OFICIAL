@@ -815,7 +815,7 @@ export interface RegulatoryNewsSourceReport {
   fonte: string;
   tier?: "core" | "expanded";
   source_url: string;
-  status: "ok" | "error";
+  status: "ok" | "empty" | "error";
   collection_phase?: "fresh" | "backlog" | "manual";
   links_found: number;
   items_collected: number;

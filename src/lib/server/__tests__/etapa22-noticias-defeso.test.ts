@@ -23,16 +23,19 @@ const ARTESP: NewsSourceConfig = {
 };
 
 describe("siblingListingVariants — listagens irmãs (defeso eleitoral)", () => {
-  it("ANTT (ultimas-noticias) deriva defeso + noticias", () => {
+  it("ANTT (ultimas-noticias) deriva defeso, noticias-1 e noticias (subseções do blackout)", () => {
     const urls = siblingListingVariants(ANTT).map((v) => v.url);
     expect(urls).toContain("https://www.gov.br/antt/pt-br/assuntos/noticias-defeso-eleitoral");
+    expect(urls).toContain("https://www.gov.br/antt/pt-br/assuntos/noticias-1");
     expect(urls).toContain("https://www.gov.br/antt/pt-br/assuntos/noticias");
-    expect(urls).toHaveLength(2);
+    // Não repete a canônica configurada.
+    expect(urls).not.toContain("https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias");
   });
 
-  it("ANEEL (noticias) deriva só a defeso (não repete a própria)", () => {
+  it("ANEEL (noticias) deriva a defeso (e outras subseções) sem repetir a própria", () => {
     const urls = siblingListingVariants(ANEEL).map((v) => v.url);
-    expect(urls).toEqual(["https://www.gov.br/aneel/pt-br/assuntos/noticias-defeso-eleitoral"]);
+    expect(urls).toContain("https://www.gov.br/aneel/pt-br/assuntos/noticias-defeso-eleitoral");
+    expect(urls).not.toContain("https://www.gov.br/aneel/pt-br/assuntos/noticias");
   });
 
   it("variante preserva agência/tier/strategy (só muda a URL)", () => {

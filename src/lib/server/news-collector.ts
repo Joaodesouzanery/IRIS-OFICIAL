@@ -69,7 +69,9 @@ export interface NewsSourceCollectReport {
   fonte: string;
   tier?: "core" | "expanded";
   source_url: string;
-  status: "ok" | "error";
+  // "empty" = a listagem respondeu (links_found>0) mas nenhum item NOVO na janela — fonte
+  // SAUDÁVEL, não falha. "error" reservado para links_found===0 / exceção.
+  status: "ok" | "empty" | "error";
   collection_phase?: "fresh" | "backlog" | "manual";
   links_found: number;
   items_collected: number;
@@ -209,19 +211,42 @@ export function siblingListingVariants(source: NewsSourceConfig): NewsSourceConf
   if (source.strategy !== "govbr") return [];
   try {
     const url = new URL(source.url);
-    const segs = url.pathname.replace(/\/+$/, "").split("/");
-    const last = segs[segs.length - 1];
-    return ["noticias-defeso-eleitoral", "noticias"]
-      .filter((candidate) => candidate !== last)
-      .map((candidate) => {
-        const variant = new URL(url.toString());
-        variant.pathname = [...segs.slice(0, -1), candidate].join("/");
-        return { ...source, url: variant.toString() };
-      });
+    const canonical = url.pathname.replace(/\/+$/, "");
+    const segs = canonical.split("/");
+    const parent = segs.slice(0, -1);
+    const parentLast = parent[parent.length - 1] ?? "";
+    // Blackout eleitoral 2026: a pasta canônica virou login-walled e as matérias foram
+    // para subseções que variam por órgão. Cobrimos as formas vistas AO VIVO (16/07):
+    // ANTT→noticias-defeso-eleitoral; ANS→noticias-1 (e /periodo-eleitoral); ANA→o PAI
+    // (.../noticias-e-eventos, cuja canônica /noticias exige login). Verificado ao vivo.
+    const variantPaths: string[][] = [];
+    for (const candidate of ["noticias-defeso-eleitoral", "noticias-1", "noticias"]) {
+      variantPaths.push([...parent, candidate]);
+    }
+    variantPaths.push([...parent, "noticias-1", "periodo-eleitoral"]);
+    // PAI só quando ele mesmo é um container de notícias (ex.: "noticias-e-eventos") —
+    // nunca dropar para algo genérico como ".../assuntos".
+    if (/noticia|imprensa|comunica/i.test(parentLast)) variantPaths.push(parent);
+
+    const seen = new Set<string>([canonical]);
+    const out: NewsSourceConfig[] = [];
+    for (const path of variantPaths) {
+      const joined = path.join("/");
+      if (seen.has(joined)) continue;
+      seen.add(joined);
+      const variant = new URL(url.toString());
+      variant.pathname = joined;
+      out.push({ ...source, url: variant.toString() });
+    }
+    return out;
   } catch {
     return [];
   }
 }
+
+// Sentinela: a listagem RESPONDEU mas não expôs nenhum link de artigo (blackout eleitoral
+// / login-wall / seção movida) — é "vazio", não uma exceção de rede. Distinguido no catch.
+const EMPTY_LISTING_MSG = "Nenhum link de noticia valido encontrado na fonte oficial";
 
 async function collectNewsSource(
   source: NewsSourceConfig,
@@ -271,7 +296,7 @@ async function collectNewsSource(
     }
     if (links.length === 0) {
       if (primaryError) throw primaryError;
-      throw new Error("Nenhum link de noticia valido encontrado na fonte oficial");
+      throw new Error(EMPTY_LISTING_MSG);
     }
     const linkGroups: Array<{ src: NewsSourceConfig; links: NewsLink[] }> = [
       { src: effectiveSource, links },
@@ -329,7 +354,9 @@ async function collectNewsSource(
       fonte: source.fonte,
       tier: source.tier ?? "core",
       source_url: source.url,
-      status: freshItems.length > 0 ? "ok" : "error",
+      // Chegamos aqui só com links_found>0 (0 links lança e cai no catch → "error"). Logo
+      // 0 itens = "empty" (nada novo/válido nesta janela), NÃO falha da fonte.
+      status: freshItems.length > 0 ? "ok" : "empty",
       links_found: allLinks.length,
       items_collected: freshItems.length,
       items_processed: detailResults.length,
@@ -351,6 +378,10 @@ async function collectNewsSource(
     }
     return { items: freshItems, report };
   } catch (error) {
+    // Listagem respondeu sem nenhum link de artigo (blackout eleitoral / login-wall) →
+    // "empty" transitório, NÃO falha (não dispara "algumas fontes falharam"). A staleness
+    // ("sem notícia nova há Nd") já sinaliza isso honestamente. Só exceção real = "error".
+    const emptyListing = error instanceof Error && error.message === EMPTY_LISTING_MSG;
     return {
       items: [],
       report: {
@@ -359,7 +390,7 @@ async function collectNewsSource(
         fonte: source.fonte,
         tier: source.tier ?? "core",
         source_url: source.url,
-        status: "error",
+        status: emptyListing ? "empty" : "error",
         links_found: 0,
         items_collected: 0,
         items_processed: 0,
@@ -373,7 +404,7 @@ async function collectNewsSource(
         latest_title: null,
         detail_errors: [],
         error: error instanceof Error ? error.message : "Falha desconhecida",
-        transient: isTransientCollectionError(error, source),
+        transient: emptyListing || isTransientCollectionError(error, source),
       },
     };
   }
