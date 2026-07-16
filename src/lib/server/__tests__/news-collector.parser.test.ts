@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it, expect } from "vitest";
-import { parseNewsDetail, extractNewsAnchors, extractDateFromText, siblingListingVariants, type NewsSourceConfig } from "@/lib/server/news-collector";
+import { parseNewsDetail, extractNewsAnchors, extractDateFromText, siblingListingVariants, artespCcmFallback, detectNewsSourceFromUrl, type NewsSourceConfig } from "@/lib/server/news-collector";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const fx = (p: string) => readFileSync(join(here, "fixtures/news", p), "utf-8");
@@ -159,6 +159,38 @@ describe("siblingListingVariants — subseções eleitorais (blackout)", () => {
     const p = paths("https://www.gov.br/ans/pt-br/assuntos/noticias");
     expect(p).not.toContain("/ans/pt-br/assuntos/noticias");
     expect(siblingListingVariants({ agencia_sigla: "ARTESP", fonte: "ARTESP", url: "https://www.artesp.sp.gov.br/artesp/noticias", strategy: "artesp", tier: "core" })).toHaveLength(0);
+  });
+});
+
+// ─── ARTESP: fallback para o portal CCM (SSR) ───────────────────────────────
+describe("ARTESP → portal CCM", () => {
+  it("artespCcmFallback: legado www.artesp → CCM (govbr); CCM/gov.br → null", () => {
+    const legacy: NewsSourceConfig = { agencia_sigla: "ARTESP", fonte: "ARTESP", url: "https://www.artesp.sp.gov.br/artesp/noticias", strategy: "artesp", tier: "core" };
+    const ccm = artespCcmFallback(legacy);
+    expect(ccm).not.toBeNull();
+    expect(ccm!.url).toBe("https://ccm.artesp.sp.gov.br/noticias/todas");
+    expect(ccm!.strategy).toBe("govbr");
+    expect(ccm!.agencia_sigla).toBe("ARTESP");
+    expect(artespCcmFallback(ccm!)).toBeNull(); // não recursa no próprio CCM
+    expect(artespCcmFallback({ agencia_sigla: "ANM", fonte: "ANM", url: "https://www.gov.br/anm/pt-br/assuntos/noticias", strategy: "govbr", tier: "core" })).toBeNull();
+  });
+
+  it("detectNewsSourceFromUrl: artigo CCM → agência ARTESP, estratégia govbr (não o parser Liferay)", () => {
+    const d = detectNewsSourceFromUrl("https://ccm.artesp.sp.gov.br/noticias/der-sp-ativa-04-radares-em-rodovias-estaduais");
+    expect(d).not.toBeNull();
+    expect(d!.agencia_sigla).toBe("ARTESP");
+    expect(d!.strategy).toBe("govbr");
+    expect(d!.url).toBe("https://ccm.artesp.sp.gov.br/noticias");
+  });
+
+  it("parseNewsDetail aceita artigo CCM /noticias/<slug> como canonical", () => {
+    const source: NewsSourceConfig = { agencia_sigla: "ARTESP", fonte: "ARTESP", url: "https://ccm.artesp.sp.gov.br/noticias/todas", strategy: "govbr", tier: "core" };
+    const url = "https://ccm.artesp.sp.gov.br/noticias/der-sp-ativa-04-radares-em-rodovias-estaduais-a-partir-desta-terca";
+    const html = `<html><head><meta property="og:title" content="DER-SP ativa 04 radares em rodovias estaduais a partir desta terça"/><meta property="og:url" content="${url}"/><meta property="article:published_time" content="2026-02-09T10:00:00-03:00"/></head><body><article><p>O DER-SP informa a ativação de novos radares em rodovias estaduais para reforçar a segurança viária.</p></article></body></html>`;
+    const item = parseNewsDetail(html, { url, title: "t" }, source);
+    expect(item).not.toBeNull();
+    expect(item!.url).toBe(url); // canonical CCM aceito (isNewsDetailUrl branch CCM)
+    expect(item!.agencia_sigla).toBe("ARTESP");
   });
 });
 

@@ -244,6 +244,21 @@ export function siblingListingVariants(source: NewsSourceConfig): NewsSourceConf
   }
 }
 
+// ARTESP: o portal legado (WebSphere/Liferay em www.artesp.sp.gov.br) exige headless e é
+// suspenso por lei no blackout eleitoral. O portal CCM (ccm.artesp.sp.gov.br/noticias/todas)
+// é SSR limpo → usa a extração genérica (strategy "govbr"; o isNewsDetailUrl tem branch CCM).
+// Fallback quando a listagem legada zera; NUNCA aditivo (evita duplicar quando ambos voltam).
+// Estrutura verificada no snapshot Wayback (fev/2026): âncoras /noticias/<slug>.
+export function artespCcmFallback(source: NewsSourceConfig): NewsSourceConfig | null {
+  try {
+    const host = new URL(source.url).host;
+    if (!host.endsWith("artesp.sp.gov.br") || host.startsWith("ccm.")) return null;
+    return { ...source, url: "https://ccm.artesp.sp.gov.br/noticias/todas", strategy: "govbr" };
+  } catch {
+    return null;
+  }
+}
+
 // Sentinela: a listagem RESPONDEU mas não expôs nenhum link de artigo (blackout eleitoral
 // / login-wall / seção movida) — é "vazio", não uma exceção de rede. Distinguido no catch.
 const EMPTY_LISTING_MSG = "Nenhum link de noticia valido encontrado na fonte oficial";
@@ -277,6 +292,9 @@ async function collectNewsSource(
     }
     const extraGroups: Array<{ src: NewsSourceConfig; links: NewsLink[] }> = [];
     const variants = siblingListingVariants(source);
+    // ARTESP legado → portal CCM (SSR) como último recurso quando a listagem legada zera.
+    const ccm = artespCcmFallback(source);
+    if (ccm) variants.push(ccm);
     if (links.length === 0) {
       // FALLBACK: a listagem configurada falhou/zerou (caso ANTT: restrita no defeso).
       for (const variant of variants) {
@@ -916,12 +934,14 @@ export function detectNewsSourceFromUrl(rawUrl: string): { agencia_sigla: string
   try { u = new URL(rawUrl); } catch { return null; }
   if (u.protocol !== "https:" && u.protocol !== "http:") return null;
   const host = u.host.toLowerCase();
-  const isArtesp = host.includes("artesp.sp.gov.br");
+  // Portal CCM da ARTESP: agência ARTESP, mas estratégia GENÉRICA (não o parser Liferay legado).
+  const isCcmArtesp = host === "ccm.artesp.sp.gov.br";
+  const isArtesp = host.includes("artesp.sp.gov.br") && !isCcmArtesp;
   // sigla: gov.br/<sigla>/... ; ARTESP por host ; senão o rótulo principal do host.
   const govbrSigla = (host === "www.gov.br" || host === "gov.br")
     ? (u.pathname.split("/").filter(Boolean)[0] ?? "").toUpperCase()
     : "";
-  const agencia_sigla = isArtesp ? "ARTESP" : (govbrSigla || host.replace(/^www\./, "").split(".")[0].toUpperCase());
+  const agencia_sigla = (isArtesp || isCcmArtesp) ? "ARTESP" : (govbrSigla || host.replace(/^www\./, "").split(".")[0].toUpperCase());
   // source.url = caminho-pai do artigo → isNewsDetailUrl aceita a URL colada.
   const parentPath = u.pathname.replace(/\/[^/]+\/?$/, "") || "/";
   return { agencia_sigla, fonte: agencia_sigla, url: `${u.origin}${parentPath}`, strategy: isArtesp ? "artesp" : "govbr" };
@@ -1153,6 +1173,16 @@ async function fetchHtml(url: string) {
 function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   const sourceUrl = new URL(source.url);
   if (url.host !== sourceUrl.host) return false;
+
+  // Portal CCM da ARTESP: os artigos ficam em /noticias/<slug> — IRMÃOS de /noticias/todas
+  // (a listagem), não filhos. A regra genérica startsWith(sourcePath+"/") não se aplica.
+  // Aceita /noticias/<slug-descritivo>; rejeita a listagem (/todas) e as seções
+  // (/rodovias/noticias etc. têm "noticias" como último segmento).
+  if (url.host === "ccm.artesp.sp.gov.br") {
+    const segs = stripTrailingSlash(url.pathname).split("/").filter(Boolean);
+    return segs.length === 2 && segs[0] === "noticias" && segs[1] !== "todas"
+      && !/^\d+$/.test(segs[1]) && segs[1].length >= 12;
+  }
 
   const normalizedUrl = source.strategy === "artesp" ? normalizeArtespNewsUrl(url) ?? url : url;
   const path = stripTrailingSlash(normalizedUrl.pathname);
