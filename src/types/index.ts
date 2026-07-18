@@ -918,7 +918,8 @@ export interface DiretorCandidato {
 export interface RuntimeStatus {
   is_demo: boolean;
   has_supabase_url: boolean;
-  has_service_role_key: boolean;
+  // Opcionais: só presentes em respostas AUTENTICADas de /system/status (postura de segredo).
+  has_service_role_key?: boolean;
   has_cron_secret?: boolean;
   persistence: "supabase" | "demo";
   mode_reason: "missing_supabase_url" | "missing_service_role" | "user_demo" | "real";

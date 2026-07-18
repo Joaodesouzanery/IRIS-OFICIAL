@@ -50,6 +50,15 @@ No plano grátis, a conferência humana semanal é:
   ALTO**: habilita RLS em `qualidade_regulatoria_avaliacoes_arquivo` (nasceu de `LIKE` sem RLS →
   legível pela chave anon) + índices de performance (trgm da busca de notícias, sort, dedup).
   **Após aplicar, rodar `get_advisors`** para confirmar que não sobrou tabela sem RLS.
+- **`20260718120000_auditoria4_rls_reassert_all.sql`** (Auditoria 4ª rodada) — 🔴 **P0/LGPD**:
+  RE-ASSERT de RLS `TO service_role` + `REVOKE anon` na **lista completa da 010**. A 010 endureceu
+  24 tabelas num único bloco `DO $$` sem guarda `IF EXISTS`/`ENABLE RLS`/`REVOKE` → se qualquer
+  tabela não existia ao rodar, o bloco INTEIRO abortou e NENHUMA foi endurecida (o `get_advisors`
+  de jul re-sinalizou `antt_*`, que estão na lista da 010 → indício de que a 010 não aplicou).
+  Idempotente/guardada por tabela: no-op onde já correto, fecha onde a 010 não pegou. Cobre a
+  esteira (`votos`/`diretores`/`mandatos`/`deliberacoes`) e os dados de associados (LGPD).
+  **Após aplicar, rodar `get_advisors`** (deve zerar `rls_policy_always_true`) + smoke com a anon
+  key em `/rest/v1/votos` (deve vir `[]`). **Habilitar Leaked Password Protection no painel.**
 
 ## Datas sensíveis
 
@@ -117,6 +126,31 @@ no `recompute` (PERF-5)**, **PATCH re-deriva `is_divergente` (SEC-5)**, **batch 
 SEC-9 (paridade demo nos GET de qualidade), SEC-10 (rate-limit em `/auth/*`), SEC-11 (`system/status`
 expõe flags `has_*`), SEC-13 (`applyRetroactiveVotes` via `upsertVotosProtegido`), SEC-14 (validar ISO
 em `vote-inference.ts:77`), SEC-15 (teste/CI que exija `require*` em rotas de escrita).
+
+### Auditoria 3ª/4ª rodada (jul/2026) — revisão de segurança GERAL + itens deferidos
+**Corrigido nesta rodada** (commits): **P0/LGPD** — migration `20260718120000` re-assertando RLS em
+TODA a lista da 010 (fecha exposição anônima de `votos`/`diretores`/`associados` se a 010 não aplicou);
+**`ws` ALTO de produção** subido via `npm audit fix`; **SEC-10** — `setup-owner` agora **fail-closed
+pós-bootstrap** (recusa 409 quando já existe admin ativo, matando o takeover por brute-force do token);
+**SEC-8** — `resilient-fetch` segue redirects manualmente revalidando cada hop com `assertPublicUrl`
+(+teste); **SEC-11** — `/system/status` só devolve `has_service_role_key`/`has_cron_secret` a chamadas
+autenticadas. Verificado limpo: segredos (nada no history/bundle/log), headers/CSP, CSRF (Bearer, não
+cookie), storage `pdfs` (privado, RLS `TO service_role`, signed URLs 60s), guards de escrita (122 rotas),
+injeção/IDOR/ReDoS/upload.
+- **⚠️ `IRIS_SETUP_TOKEN` deve ser longo/aleatório** enquanto o endpoint existir. Escape hatch: para
+  re-bootstrap legítimo (ex.: perda de acesso), desativar temporariamente a linha em `admin_users`
+  (`active=false`) no SQL Editor libera o `setup-owner` de novo; rotação normal de senha é pelo reset
+  do Supabase Auth (e-mail).
+**Ainda deferido — defense-in-depth leve (LOW/INFO, não urgente):** SEC-9 (paridade demo nos GET de
+qualidade — já não vaza a anônimo pelo middleware), SEC-13 (`applyRetroactiveVotes` via
+`upsertVotosProtegido`), SEC-14 (revalidar ISO no sink `.or()` de `vote-inference.ts:77` — os 3 call-sites
+atuais já chegam validados), SEC-15 (teste/CI de guards), guard in-handler nas rotas de download (hoje
+confiam no middleware), validar `agencia_id` como UUID no `upload/confirm`, e trocar `error.message` cru
+por msg genérica + log server nas rotas `qualidade-regulatoria/*` e `noticias/*`. Cookies de sessão
+não-HttpOnly (inerente ao `@supabase/ssr`): aceito; mitigação é a CSP + rigor anti-XSS.
+- **`npm audit` residual** (não-bloqueante): `postcss` aninhado no `next` (build-time) → resolver num bump
+  de patch do `next` 15.x; `vitest`/`vite` (crítica/alta) são **dev-only** (não vão ao runtime Vercel) →
+  `npm audit fix --force` sobe `vitest` p/ 4.x (semver-major, revisar testes) — fazer em janela dedicada.
 
 ## Invariantes de operação (não quebrar)
 

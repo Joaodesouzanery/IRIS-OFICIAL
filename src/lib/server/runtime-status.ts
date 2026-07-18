@@ -1,14 +1,16 @@
 export interface RuntimeStatus {
   is_demo: boolean;
   has_supabase_url: boolean;
-  has_service_role_key: boolean;
-  has_cron_secret: boolean;
+  // Postura de segredos: só incluída para chamadas AUTENTICADAS. A rota /system/status
+  // é pública (bypass do middleware), então não revela a config do deploy a anônimos.
+  has_service_role_key?: boolean;
+  has_cron_secret?: boolean;
   persistence: "supabase" | "demo";
   mode_reason: "missing_supabase_url" | "missing_service_role" | "user_demo" | "real";
   warnings: string[];
 }
 
-export function getRuntimeStatus(userDemo = false): RuntimeStatus {
+export function getRuntimeStatus(userDemo = false, includeSecretsPosture = true): RuntimeStatus {
   const hasSupabaseUrl = Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL);
   const hasServiceRoleKey = Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY);
   const hasCronSecret = Boolean(process.env.CRON_SECRET);
@@ -37,13 +39,16 @@ export function getRuntimeStatus(userDemo = false): RuntimeStatus {
         ? "user_demo"
         : "real";
 
-  return {
+  const status: RuntimeStatus = {
     is_demo: isDemo,
     has_supabase_url: hasSupabaseUrl,
-    has_service_role_key: hasServiceRoleKey,
-    has_cron_secret: hasCronSecret,
     persistence: serverDemo ? "demo" : "supabase",
     mode_reason: modeReason,
     warnings,
   };
+  if (includeSecretsPosture) {
+    status.has_service_role_key = hasServiceRoleKey;
+    status.has_cron_secret = hasCronSecret;
+  }
+  return status;
 }

@@ -80,6 +80,43 @@ function hostOf(url: string): string {
   }
 }
 
+// ─── Redirects revalidados (anti-SSRF por redirect) ──────────────────────────
+const MAX_REDIRECT_HOPS = 5;
+const REDIRECT_STATUSES = new Set([301, 302, 303, 307, 308]);
+
+/**
+ * `fetch` que segue redirects MANUALMENTE, revalidando cada destino com
+ * `assertPublicUrl`. Fecha o SSRF-por-redirect: com o `redirect: "follow"` default,
+ * um host público que responda 302 → `169.254.169.254`/RFC1918 seria seguido e
+ * vazaria metadata/serviços internos. Aqui cada `Location` (resolvido contra a URL
+ * atual) passa pelo guard ANTES de ser seguido; destino bloqueado ou excesso de
+ * hops vira `falha_conteudo` (definitivo, sem retry).
+ */
+async function fetchFollowingSafeRedirects(initialUrl: string, init: RequestInit): Promise<Response> {
+  let currentUrl = initialUrl;
+  for (let hop = 0; hop <= MAX_REDIRECT_HOPS; hop += 1) {
+    const res = await fetch(currentUrl, { ...init, redirect: "manual" });
+    if (!REDIRECT_STATUSES.has(res.status)) return res;
+    const location = res.headers.get("location");
+    if (!location) return res; // 3xx sem Location: devolve como veio
+    const nextUrl = new URL(location, currentUrl).toString();
+    try {
+      assertPublicUrl(nextUrl);
+    } catch (cause) {
+      throw new FetchFailureError(`Redirect para host bloqueado ao coletar ${initialUrl}: ${nextUrl}`, {
+        kind: "falha_conteudo",
+        url: initialUrl,
+        cause,
+      });
+    }
+    currentUrl = nextUrl;
+  }
+  throw new FetchFailureError(`Redirects em excesso (> ${MAX_REDIRECT_HOPS}) ao coletar ${initialUrl}`, {
+    kind: "falha_conteudo",
+    url: initialUrl,
+  });
+}
+
 function parseRetryAfter(value: string | null): number | null {
   if (!value) return null;
   const secs = Number(value);
@@ -156,7 +193,7 @@ export async function resilientFetch(url: string, options: ResilientFetchOptions
     }
 
     try {
-      const res = await fetch(url, {
+      const res = await fetchFollowingSafeRedirects(url, {
         headers: options.headers,
         next: { revalidate: 0 },
         signal: controller.signal,
