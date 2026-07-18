@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { User } from "@supabase/supabase-js";
 import { hasConfiguredAdminEmail, isConfiguredAdminEmail, isValidEmailFormat } from "@/lib/server/admin-emails";
-import { timingSafeEqualStr } from "@/lib/server/request-guards";
+import { adminUsersCount, timingSafeEqualStr } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
@@ -46,6 +46,20 @@ export async function POST(req: NextRequest) {
 
   if (hasConfiguredAdminEmail() && !isConfiguredAdminEmail(email)) {
     return NextResponse.json({ error: "Este e-mail não é o administrador global autorizado." }, { status: 403 });
+  }
+
+  // Fail-closed pós-bootstrap: este endpoint existe SÓ para o bootstrap inicial. Depois
+  // que há um admin ativo, ele recusa — senão, gated apenas pelo IRIS_SETUP_TOKEN e SEM
+  // rate-limit no projeto, vira vetor de takeover: brute-force do token → reset da senha
+  // do owner existente (updateUserById abaixo). Rotação de senha passa a ser pelo fluxo
+  // normal de redefinição do Supabase. `adminUsersCount` retorna 1 em erro (fail-closed);
+  // se o admin_users ficou dessincronizado (owner no Auth mas sem linha ativa), o count=0
+  // permite o retry de auto-cura.
+  if ((await adminUsersCount()) > 0) {
+    return NextResponse.json(
+      { error: "Setup já concluído: já existe um administrador. Use a redefinição de senha do Supabase." },
+      { status: 409 },
+    );
   }
 
   const db = createSupabaseServerClient();
