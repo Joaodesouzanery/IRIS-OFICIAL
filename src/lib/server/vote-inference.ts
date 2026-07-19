@@ -103,11 +103,17 @@ export function buildVotoRows(input: {
   inferFromMandate: boolean;
   /** Resultado da deliberação — define a direção da divergência. */
   resultado?: string | null;
+  /** Texto indica votação unânime. Suprime divergência (ver `isDivergentVote`). */
+  unanime?: boolean;
 }): VotoInsertRow[] {
   const resultado = input.resultado ?? null;
   const contraIds = matchIds(input.nomesContra, input.diretoresList);
   const ausenteIds = matchIds(input.nomesAusente ?? [], input.diretoresList);
   const abstencaoIds = matchIds(input.nomesAbstencao ?? [], input.diretoresList);
+  // Só suprime divergência quando é unânime E não há dissidência EXTRAÍDA (contra/
+  // abstenção). Se o texto diz "unanimidade" mas há contrários nomeados (inconsistência
+  // já sinalizada no upload-analysis), mantém a lógica de polaridade por segurança.
+  const unanime = Boolean(input.unanime) && contraIds.size === 0 && abstencaoIds.size === 0;
   const rows = new Map<string, VotoInsertRow>();
 
   for (const nome of input.nomes) {
@@ -118,28 +124,28 @@ export function buildVotoRows(input: {
     if (!match.diretorId || match.needsReview) continue;
     // Precedência: Ausente > Abstencao > Desfavoravel > Favoravel.
     if (ausenteIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado, unanime));
     } else if (abstencaoIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Abstencao", true, resultado));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Abstencao", true, resultado, unanime));
     } else if (contraIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Desfavoravel", true, resultado));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Desfavoravel", true, resultado, unanime));
     } else {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Favoravel", true, resultado));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Favoravel", true, resultado, unanime));
     }
   }
 
   for (const diretorId of contraIds) {
     if (ausenteIds.has(diretorId) || abstencaoIds.has(diretorId)) continue;
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Desfavoravel", true, resultado));
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Desfavoravel", true, resultado, unanime));
   }
 
   for (const diretorId of abstencaoIds) {
     if (ausenteIds.has(diretorId)) continue;
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Abstencao", true, resultado));
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Abstencao", true, resultado, unanime));
   }
 
   for (const diretorId of ausenteIds) {
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado));
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime));
   }
 
   if (input.inferFromMandate) {
@@ -154,7 +160,7 @@ export function buildVotoRows(input: {
     for (const diretor of input.activeDiretoresList) {
       if (rows.has(diretor.id)) continue;
       if (divergentIntent.has(diretor.id)) continue;
-      rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, "Favoravel", false, resultado));
+      rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, "Favoravel", false, resultado, unanime));
     }
   }
 
@@ -165,8 +171,14 @@ export function buildVotoRowsFromSuggestions(input: {
   deliberacao_id: string;
   votosSugeridos: VotoSugerido[];
   resultado?: string | null;
+  unanime?: boolean;
 }): VotoInsertRow[] {
   const resultado = input.resultado ?? null;
+  // Espelha buildVotoRows: só suprime divergência se unânime E sem dissidência sugerida.
+  const hasDissent = input.votosSugeridos.some(
+    (v) => v.tipo_voto === "Desfavoravel" || v.tipo_voto === "Abstencao",
+  );
+  const unanime = Boolean(input.unanime) && !hasDissent;
   const rows = new Map<string, VotoInsertRow>();
   for (const voto of input.votosSugeridos) {
     if (!voto.diretor_id) continue;
@@ -176,6 +188,7 @@ export function buildVotoRowsFromSuggestions(input: {
       voto.tipo_voto,
       voto.is_nominal,
       resultado,
+      unanime,
     ));
   }
   return [...rows.values()];
@@ -190,6 +203,7 @@ export function buildVoteSuggestions(input: {
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
   resultado?: string | null;
+  unanime?: boolean;
 }): VotoSugerido[] {
   const rows = buildVotoRows({
     deliberacao_id: "preview",
@@ -250,12 +264,19 @@ function isPositiveResult(resultado: string | null): boolean | null {
 
 /**
  * Divergência relativa ao RESULTADO da maioria:
+ *  - `unanime` (votação unânime, sem dissidência extraída) → NINGUÉM é divergente,
+ *    independentemente do `resultado`. Fecha a colisão semântica em que, para a ARTESP,
+ *    `resultado="Indeferido"` é o desfecho do PLEITO da concessionária (indeferido por
+ *    unanimidade), NÃO uma divisão do colegiado — sem isso, os 4 diretores que aprovaram
+ *    o indeferimento por unanimidade eram marcados como "Favoravel divergente" (falso).
  *  - Abstenção sempre conta como não-consenso (divergente).
  *  - Resultado positivo → divergente quem votou Desfavorável.
- *  - Resultado negativo (Indeferido) → divergente quem votou Favorável.
+ *  - Resultado negativo (Indeferido) → divergente quem votou Favorável (relator vencido,
+ *    caso NÃO-unânime: ANTT/ANM).
  *  - Sem resultado conhecido → cai no comportamento anterior (Desfavorável).
  */
-export function isDivergentVote(tipoVoto: TipoVoto, resultado: string | null): boolean {
+export function isDivergentVote(tipoVoto: TipoVoto, resultado: string | null, unanime = false): boolean {
+  if (unanime) return false;
   if (tipoVoto === "Ausente") return false;
   if (tipoVoto === "Abstencao") return true;
   const positive = isPositiveResult(resultado);
@@ -269,12 +290,13 @@ function rowFor(
   tipoVoto: TipoVoto,
   isNominal: boolean,
   resultado: string | null = null,
+  unanime = false,
 ): VotoInsertRow {
   return {
     deliberacao_id: deliberacaoId,
     diretor_id: diretorId,
     tipo_voto: tipoVoto,
-    is_divergente: isDivergentVote(tipoVoto, resultado),
+    is_divergente: isDivergentVote(tipoVoto, resultado, unanime),
     is_nominal: isNominal,
   };
 }

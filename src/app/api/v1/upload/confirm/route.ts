@@ -209,6 +209,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         ausente: string[] = [],
         abstencao: string[] = [],
         inferFromMandate = false,
+        unanime = false,
       ): VotoEmbutido[] {
         return buildVotoRows({
           deliberacao_id: "local",
@@ -219,6 +220,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           diretoresList,
           activeDiretoresList: diretoresList,
           inferFromMandate,
+          unanime,
         }).map((row) => {
           const diretor = diretoresList.find((dir) => dir.id === row.diretor_id);
           return {
@@ -310,6 +312,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 nomes: item.votos_detectados ?? [],
                 nomesContra: item.votos_contra_detectados ?? [],
               }),
+              Boolean(item.unanimidade_detectada),
             ),
             raw_extraction: null,
           });
@@ -333,6 +336,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           nomes: d.nomes_votacao,
           nomesContra: d.nomes_votacao_contra,
         }),
+        Boolean(d.extraction_raw?.unanimidade_detectada),
       );
 
       createdDelibs.push({
@@ -731,6 +735,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   deliberacao_id: child.id as string,
                   votosSugeridos: item.votos_sugeridos,
                   resultado: item.resultado,
+                  unanime: Boolean(item.unanimidade_detectada),
                 })
                 : buildVotoRows({
                   deliberacao_id: child.id as string,
@@ -741,6 +746,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   diretoresList,
                   activeDiretoresList: isAnttAtaItem && rosterItem.length > 0 ? rosterItem : activeDiretoresList,
                   resultado: item.resultado,
+                  unanime: Boolean(item.unanimidade_detectada),
                   inferFromMandate: isAnttAtaItem
                     ? Boolean(item.unanimidade_detectada && item.resultado && rosterItem.length > 0)
                     : shouldInferVotesFromMandate({
@@ -858,6 +864,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             deliberacao_id: delib.id as string,
             votosSugeridos: d.votos_sugeridos ?? [],
             resultado: d.resultado,
+            unanime: Boolean(d.extraction_raw?.unanimidade_detectada),
           })
           : buildVotoRows({
             deliberacao_id: delib.id as string,
@@ -868,6 +875,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             diretoresList,
             activeDiretoresList,
             resultado: d.resultado,
+            unanime: Boolean(d.extraction_raw?.unanimidade_detectada),
             inferFromMandate: shouldInferVotesFromMandate({
               resultado: d.resultado,
               tipo_documento: d.tipo_documento,
