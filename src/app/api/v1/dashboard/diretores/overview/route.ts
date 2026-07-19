@@ -43,9 +43,10 @@ export async function GET(req: NextRequest) {
     selectAllPaged(() => {
       let q = db
         .from("votos")
-        .select("tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)");
+        .select("id, tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)");
       if (agenciaId) q = q.eq("diretores.agencia_id", agenciaId);
-      return q;
+      // Ordem total única (PK dos votos) → paginação por offset determinística.
+      return q.order("id", { ascending: true });
     }, { label: "dashboard/diretores/overview" }),
     db.from("mandatos").select("diretor_id").limit(20000),
   ]);

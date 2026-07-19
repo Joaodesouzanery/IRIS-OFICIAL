@@ -34,7 +34,9 @@ export async function GET(req: NextRequest) {
       .from("deliberacoes")
       .select(`id, resultado, microtema, data_reuniao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`);
     if (agenciaId) q = q.eq("agencia_id", agenciaId);
-    return q;
+    // Ordem TOTAL única (PK) → paginação por offset determinística (sem pular/duplicar
+    // linhas nas fronteiras de página; PostgREST não garante ordem sem ORDER BY).
+    return q.order("id", { ascending: true });
   }, { label: "dashboard/overview" });
 
   if (error) {

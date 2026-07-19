@@ -31,9 +31,10 @@ export async function GET(req: NextRequest) {
   const { rows: data, error } = await selectAllPaged(() => {
     let q = db
       .from("deliberacoes")
-      .select(`data_reuniao, resultado, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
+      .select(`id, data_reuniao, resultado, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
       .not("data_reuniao", "is", null)
-      .order("data_reuniao", { ascending: true });
+      .order("data_reuniao", { ascending: true })
+      .order("id", { ascending: true }); // desempate único: data_reuniao não é única (paginação estável)
     if (agenciaId) q = q.eq("agencia_id", agenciaId);
     return q;
   }, { label: "dashboard/reunioes/stats" });
