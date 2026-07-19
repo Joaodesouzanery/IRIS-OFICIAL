@@ -388,30 +388,54 @@ export default function VotosDiretoresPage() {
   const [rodarTudoProgresso, setRodarTudoProgresso] = useState<string | null>(null);
   const rodarTudoMutation = useMutation({
     mutationFn: async () => {
-      setRodarTudoProgresso("1/4 · Verificando novos documentos…");
+      // 1. Descobre novos documentos nas fontes.
+      setRodarTudoProgresso("1/5 · Verificando novos documentos…");
       await api.get<MonitoramentoCheckResponse>("/monitoramento/check").catch(() => null);
-      setRodarTudoProgresso("2/4 · Processando atas/votos…");
-      await api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", {}).catch(() => null);
-      setRodarTudoProgresso("3/4 · Auto-confirmando (loop)…");
+
+      // 2. Enfileira TODOS os PDFs pendentes. O enqueue processa ≤10/chamada e marca
+      // novo→importado; loopa até `candidates===0` (nada mais "novo") em vez de 1 clique só.
+      let enfileirados = 0;
+      for (let i = 0; i < 30; i++) {
+        setRodarTudoProgresso(`2/5 · Enfileirando PDFs… (${enfileirados})`);
+        const res = await api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", { limit: 10 }).catch(() => null);
+        if (!res) break;
+        enfileirados += res.queued ?? 0;
+        if ((res.candidates ?? 0) === 0) break; // esgotou a fila de "novo"
+      }
+
+      // 3. Drena a fila de extração (upload_jobs pending → review_pending). Fecha o lag do
+      // processamento em background (waitUntil) e recupera jobs que ele não terminou.
+      let processados = 0;
+      for (let i = 0; i < 30; i++) {
+        const res = await api.post<{ processed: number }>("/upload/process?limit=20", {}).catch(() => null);
+        if (!res || (res.processed ?? 0) === 0) break;
+        processados += res.processed;
+        setRodarTudoProgresso(`3/5 · Processando fila… (${processados})`);
+      }
+
+      // 4. Auto-confirma em loop (corta por orçamento de tempo; re-chama enquanto restam).
       let confirmados = 0;
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 15; i++) {
+        setRodarTudoProgresso(`4/5 · Auto-confirmando… (${confirmados})`);
         const res = await api.post<{ confirmados_total: number; restantes: boolean }>("/upload/auto-confirm", { limit: 50, loop: true }).catch(() => null);
         if (!res) break;
         confirmados += res.confirmados_total ?? 0;
         if (!res.restantes) break;
       }
-      setRodarTudoProgresso("4/4 · Recalculando matches e mesclando duplicatas…");
+
+      // 5. Recalcula matches (auto-aprova ≥0.85 + mescla duplicatas + votos retroativos).
+      setRodarTudoProgresso("5/5 · Recalculando matches e mesclando duplicatas…");
       const rec = await api.post<{ grupos_auto_aprovados: number; diretores_mesclados: number; votos_retroativos_criados: number }>(
         "/admin/diretores/candidatos/recompute?dry_run=0", {},
       ).catch(() => null);
-      return { confirmados, recompute: rec };
+      return { enfileirados, processados, confirmados, recompute: rec };
     },
     onSuccess: (res) => {
       setMatchError(null);
       setRodarTudoProgresso(null);
       const rec = res.recompute;
       setMatchFeedback(
-        `Esteira concluída: ${res.confirmados} voto(s)/doc(s) materializados` +
+        `Esteira concluída: ${res.enfileirados} PDF(s) enfileirados · ${res.processados} processado(s) · ${res.confirmados} voto(s)/doc(s) materializados` +
         (rec ? ` · ${rec.grupos_auto_aprovados} nome(s) auto-aprovado(s) · ${rec.diretores_mesclados} duplicata(s) mesclada(s) · ${rec.votos_retroativos_criados} voto(s) retroativo(s)` : "") + ".",
       );
       queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
