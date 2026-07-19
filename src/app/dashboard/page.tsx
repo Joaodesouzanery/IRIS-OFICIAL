@@ -173,8 +173,8 @@ export default function DashboardPage() {
             defaultType="pie"
           >
             {(type) => type === "pie"
-              ? <IrisPieChart data={resultadosPieData} height={140} innerRadius={38} />
-              : <IrisBarChart data={resultadosPieData.map((d) => ({ name: d.name, value: d.value }))} height={140} />
+              ? <IrisPieChart data={resultadosPieData} height={200} innerRadius={38} />
+              : <IrisBarChart data={resultadosPieData.map((d) => ({ name: d.name, value: d.value }))} height={200} />
             }
           </ChartWrapper>
 
@@ -186,9 +186,9 @@ export default function DashboardPage() {
           >
             {(type) => pautaPieData.length > 0
               ? type === "pie"
-                ? <IrisPieChart data={pautaPieData} height={140} innerRadius={38} />
-                : <IrisBarChart data={pautaPieData.map((d) => ({ name: d.name, value: d.value }))} height={140} />
-              : <div className="h-[140px] flex items-center justify-center text-text-muted text-sm">Sem dados</div>
+                ? <IrisPieChart data={pautaPieData} height={200} innerRadius={38} />
+                : <IrisBarChart data={pautaPieData.map((d) => ({ name: d.name, value: d.value }))} height={200} />
+              : <div className="h-[200px] flex items-center justify-center text-text-muted text-sm">Sem dados</div>
             }
           </ChartWrapper>
 
@@ -196,7 +196,7 @@ export default function DashboardPage() {
           <div className="card p-3 overflow-hidden">
             <p className="section-label mb-2">Votos por Diretor</p>
             {diretores && diretores.length > 0 ? (
-              <div className="space-y-2 mt-2 max-h-[140px] overflow-hidden">
+              <div className="space-y-2 mt-2 max-h-[200px] overflow-hidden">
                 {diretores.slice(0, 5).map((d) => (
                   <div key={d.diretor_id} className="flex items-center justify-between">
                     <span className="text-xs text-text-secondary truncate max-w-[180px]">
@@ -221,7 +221,7 @@ export default function DashboardPage() {
             className="lg:col-span-2"
           >
             {(type) => {
-              if (type === "pie") return <IrisPieChart data={microtemasPieData} height={190} innerRadius={48} showLegend />;
+              if (type === "pie") return <IrisPieChart data={microtemasPieData} height={210} innerRadius={48} showLegend />;
               if (type === "area") return (
                 <IrisAreaChart
                   data={microtemasAreaData}
@@ -229,7 +229,7 @@ export default function DashboardPage() {
                     { key: "deferido",   color: "#22c55e", label: "Favoráveis" },
                     { key: "indeferido", color: "#ef4444", label: "Indeferido" },
                   ]}
-                  height={190}
+                  height={210}
                 />
               );
               return (
@@ -237,7 +237,8 @@ export default function DashboardPage() {
                   data={microtemasBarData}
                   useMicrotemaColors
                   horizontal
-                  height={190}
+                  // Altura proporcional ao nº de microtemas para as barras não colarem.
+                  height={Math.max(210, microtemasBarData.length * 34)}
                   formatLabel={getMicrotemaLabel}
                 />
               );

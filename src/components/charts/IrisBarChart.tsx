@@ -64,7 +64,7 @@ export function IrisBarChart({
           <YAxis
             type="category"
             dataKey={xKey}
-            width={110}
+            width={130}
             tick={{ fill: "#a1a1aa", fontSize: 11, fontFamily: "JetBrains Mono" }}
             tickFormatter={fmt}
           />

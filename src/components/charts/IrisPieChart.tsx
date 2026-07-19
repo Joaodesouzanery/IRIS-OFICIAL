@@ -49,8 +49,12 @@ export function IrisPieChart({
           data={enriched}
           cx="50%"
           cy={showLegend ? "44%" : "50%"}
-          innerRadius={innerRadius}
-          outerRadius={innerRadius + 34}
+          // Raio RELATIVO (%) em vez de px fixo: o anel escala para caber no
+          // ResponsiveContainer e nunca é fatiado pelo card (o `outerRadius` fixo de
+          // 72px estourava um container de 140px). Preserva a proporção do donut que
+          // cada card pediu (innerRadius/(innerRadius+34)), agora responsiva.
+          innerRadius={`${Math.round((innerRadius / (innerRadius + 34)) * 80)}%`}
+          outerRadius="80%"
           paddingAngle={3}
           dataKey="value"
         >
