@@ -9,6 +9,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretoresOverview } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
 
 
 export async function GET(req: NextRequest) {
@@ -35,16 +36,17 @@ export async function GET(req: NextRequest) {
   if (agenciaId) diretoresQuery = diretoresQuery.eq("agencia_id", agenciaId);
 
   // is_nominal p/ separar voto LIDO (nominal) de INFERIDO por unanimidade/mandato.
-  let votosQuery = db
-    .from("votos")
-    .select("tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)");
-  if (agenciaId) {
-    votosQuery = votosQuery.eq("diretores.agencia_id", agenciaId);
-  }
-
+  // `votos` cresce sem limite → paginado (PERF-4) p/ a contagem por diretor não parar
+  // no ~1000 do PostgREST e subcontar em silêncio quando a base crescer.
   const [diretoresRes, votosRes, mandatosRes] = await Promise.all([
     diretoresQuery,
-    votosQuery,
+    selectAllPaged(() => {
+      let q = db
+        .from("votos")
+        .select("tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)");
+      if (agenciaId) q = q.eq("diretores.agencia_id", agenciaId);
+      return q;
+    }, { label: "dashboard/diretores/overview" }),
     db.from("mandatos").select("diretor_id").limit(20000),
   ]);
   if (diretoresRes.error || votosRes.error) {
@@ -61,7 +63,7 @@ export async function GET(req: NextRequest) {
     stats.set(d.id, { nome: d.nome, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 });
   }
 
-  for (const row of votosRes.data ?? []) {
+  for (const row of votosRes.rows) {
     const dir = (row as any).diretores;
     const id = dir?.id;
     if (!id) continue;

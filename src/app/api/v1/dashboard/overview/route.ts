@@ -11,6 +11,7 @@ import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
 
 
 export async function GET(req: NextRequest) {
@@ -26,18 +27,21 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  let baseFilter = db
-    .from("deliberacoes")
-    .select(`id, resultado, microtema, data_reuniao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`);
-  if (agenciaId) baseFilter = baseFilter.eq("agencia_id", agenciaId);
-
-  const { data: deliberacoes, error } = await baseFilter;
+  // Paginado (PERF-4): sem isto, a agregação em JS pararia no ~1000 do PostgREST e
+  // subcontaria em silêncio quando a base crescer.
+  const { rows: deliberacoes, error } = await selectAllPaged(() => {
+    let q = db
+      .from("deliberacoes")
+      .select(`id, resultado, microtema, data_reuniao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`);
+    if (agenciaId) q = q.eq("agencia_id", agenciaId);
+    return q;
+  }, { label: "dashboard/overview" });
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar overview" }, { status: 500 });
   }
 
-  const rows = (deliberacoes ?? []).filter(isFinalDecisionRecord);
+  const rows = deliberacoes.filter(isFinalDecisionRecord);
   const total = rows.length;
   const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
