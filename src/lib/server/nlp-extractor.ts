@@ -13,7 +13,7 @@
  */
 
 import { parseDataExtensoANM } from "./ata-splitter";
-import { isRoleWordOnly } from "./name-matcher";
+import { isRoleWordOnly, isLikelyPersonName } from "./name-matcher";
 
 // ─── Regex patterns ────────────────────────────────────────────────────────
 // Nome completo aceitando PREPOSIÇÕES internas (de/da/do/dos/das/e) entre tokens
@@ -133,6 +133,49 @@ const RE_BLOCO_SEI_ASSINATURA = /Documento assinado eletronicamente[\s\S]*?(?=A 
 
 // Padrão F: assinatura ANM com dash — "Nome - Diretor(a)" ou "Nome - Diretor-Geral"
 const RE_ASSINATURA_DASH = new RegExp(`^\\s*([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü\\s]+)\\s*${DASHES}\\s*(?:Diretor[a]?(?:[- ]Geral)?(?:\\s*Substitut[oa])?|Conselheiro[a]?(?:-Presidente)?|Presidente)`, "gm");
+
+// Padrão G: assinatura ARTESP INLINE — o rodapé das DELIBERAÇÕES vem numa linha corrida,
+// "Nome Completo Diretor-Presidente Outro Nome Diretor Terceiro Nome Diretor", então os
+// padrões Nome\nCargo (A/B/E) e Nome-Cargo (F) NÃO casam e `signatarios` ficava vazio — os
+// 4 votos dependiam 100% do seed de mandato (frágil). Captura pares Nome+Cargo na MESMA
+// linha. O lookahead nega que uma palavra do NOME seja o próprio cargo (senão o "Diretor"
+// do par anterior viraria início do próximo nome). Cada captura ainda passa por
+// isLikelyPersonName + findBestMatch a jusante, então um falso-positivo não vira voto.
+const RE_CARGO_ASSINATURA = "(?:Diretor(?:a)?(?:[- ]Presidente)?|Conselheir[oa](?:[- ]Presidente)?|Presidente)";
+const RE_ASSINATURA_INLINE = new RegExp(
+  `((?!${RE_CARGO_ASSINATURA}\\b)[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü.'-]+` +
+    `(?:\\s+(?:d[aeo]s?\\s+)?(?!${RE_CARGO_ASSINATURA}\\b)[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü.'-]+){1,5})` +
+    `\\s+${RE_CARGO_ASSINATURA}\\b`,
+  "g",
+);
+
+// Palavras INSTITUCIONAIS que nenhum nome de pessoa contém — bloqueiam o falso-positivo
+// clássico "Conselho Diretor" (a INSTITUIÇÃO, onde "Diretor" é adjetivo e não cargo de
+// assinatura): sem isto, "Reunião Ordinária do Conselho Diretor" virava "nome" e gerava
+// voto numa pauta. isLikelyPersonName não pega (são 2+ tokens de conteúdo).
+const RE_NOME_INSTITUCIONAL = /\b(?:Reuni[aã]o|Conselho|Ordin[aá]ria|Extraordin[aá]ria|Diretoria|Superintend[eê]ncia|Ag[eê]ncia|C[aâ]mara|Comiss[aã]o|Presid[eê]ncia|Sistema|Processo|Assunto|Interessad[oa]|Pauta|Sess[aã]o|Colegiad[oa]|Secretaria|Ger[eê]ncia|Coordena[cç][aã]o|N[uú]cleo|Ata|Estado)\b/i;
+
+/**
+ * Extrai o roster do rodapé de assinaturas ARTESP inline ("Nome Cargo Nome Cargo…").
+ * Cada nome é validado (isLikelyPersonName, não é palavra-função, não é institucional) e a
+ * lista é capada — a validação forte contra diretores reais acontece a jusante (findBestMatch).
+ */
+export function extractSignatariosInline(text: string): string[] {
+  const nomes: string[] = [];
+  RE_ASSINATURA_INLINE.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = RE_ASSINATURA_INLINE.exec(text)) !== null && nomes.length < 12) {
+    const nome = m[1].replace(/\s+/g, " ").trim();
+    const tokens = nome.split(/\s+/).length;
+    if (tokens < 2 || tokens > 6) continue;
+    if (!isLikelyPersonName(nome) || isRoleWordOnly(nome)) continue;
+    if (RE_NOME_INSTITUCIONAL.test(nome)) continue;
+    if (!nomes.some((n) => n.toLocaleLowerCase("pt-BR") === nome.toLocaleLowerCase("pt-BR"))) {
+      nomes.push(nome);
+    }
+  }
+  return nomes;
+}
 
 // Pauta ANM: "1. DIRETOR-GERAL MAURO HENRIQUE MOREIRA SOUSA".
 // Isso identifica o diretor responsavel/relator do item, mas nao prova voto nominal.
@@ -577,6 +620,15 @@ export function extractFields(text: string): ExtractedFields {
     if (nome.length > 4 && !signatarios.includes(nome)) signatarios.push(nome);
   }
 
+  // Padrão G: rodapé ARTESP inline ("Nome Cargo Nome Cargo") — só quando os padrões
+  // Nome\nCargo/Nome-Cargo não acharam nada, para não duplicar nem sobrepor o formato
+  // já reconhecido. Sem isto, as deliberações ARTESP ficavam com signatarios=[].
+  if (signatarios.length === 0) {
+    for (const nome of extractSignatariosInline(textSemSEI)) {
+      if (!signatarios.includes(nome)) signatarios.push(nome);
+    }
+  }
+
   // ─── Unanimidade ──────────────────────────────────────────────────────────
   RE_UNANIMIDADE.lastIndex = 0;
   const unanimidade_detectada = RE_UNANIMIDADE.test(text);
@@ -776,7 +828,12 @@ export function extractPresentes(text: string): string[] {
   // prosa no preâmbulo ("…presidida pelo Diretor-Geral, NOME, e contou com a presença
   // do Diretor Substituto NOME e do Diretor NOME…"). Sem ler isto, a ATA ANM ficava
   // sem roster e produzia 0 voto (dependia 100% do mandato). QA Etapa 19.
-  return extractPresentesNarrativo(text);
+  const narrativo = extractPresentesNarrativo(text);
+  if (narrativo.length) return narrativo;
+  // Último recurso (deliberações ARTESP): sem bloco Constituição e sem preâmbulo
+  // narrativo, o único roster no documento é o rodapé de assinaturas inline. Alimenta
+  // presentesRoster e tira os votos da dependência exclusiva do seed de mandato. QA jul/2026.
+  return extractSignatariosInline(text);
 }
 
 // Zona do preâmbulo onde a ANM lista quem presidiu/compareceu (limita o escopo para
