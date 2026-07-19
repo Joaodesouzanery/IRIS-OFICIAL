@@ -30,8 +30,12 @@ export async function POST(req: NextRequest) {
 
   const { data: delibs, error } = await db
     .from("deliberacoes")
-    .select("id, resultado, votos(id, tipo_voto, is_divergente, is_nominal)")
+    // unanimidade_detectada: MESMO sinal que o buildVotoRows usa. Sem ele, este recálculo
+    // rederivava is_divergente só de (tipo_voto, resultado) e reintroduzia a divergência
+    // FALSA no INDEFERE-por-unanimidade (o desfecho do pleito não é divisão do colegiado).
+    .select("id, resultado, unanimidade_detectada:raw_extraction->>unanimidade_detectada, votos(id, tipo_voto, is_divergente, is_nominal)")
     .order("created_at", { ascending: false })
+    .order("id", { ascending: false }) // desempate estável p/ paginação por offset
     .range(offset, offset + limit - 1);
 
   if (error) {
@@ -51,9 +55,15 @@ export async function POST(req: NextRequest) {
     if (votos.length === 0) continue;
     if (votos.every((v) => !v.is_nominal)) deliberacoesSoInferidas++;
 
+    // Espelha a guarda do buildVotoRows: unânime (e sem dissidência gravada) → ninguém
+    // divergente. `->>` devolve texto ("true"/null).
+    const unanimidadeFlag = d.unanimidade_detectada === "true";
+    const hasDissent = votos.some((v) => v.tipo_voto === "Desfavoravel" || v.tipo_voto === "Abstencao");
+    const unanime = unanimidadeFlag && !hasDissent;
+
     let afetou = false;
     for (const v of votos) {
-      const novo = isDivergentVote(v.tipo_voto as TipoVoto, d.resultado ?? null);
+      const novo = isDivergentVote(v.tipo_voto as TipoVoto, d.resultado ?? null, unanime);
       if (novo !== v.is_divergente) {
         divergenciaCorrigida++;
         afetou = true;
