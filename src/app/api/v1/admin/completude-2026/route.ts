@@ -26,12 +26,22 @@ type Delib = {
   agencia_id: string | null;
   tipo_documento: string | null;
   documento_pai_id: string | null;
+  numero_deliberacao: string | null;
   numero_reuniao: string | null;
   data_reuniao: string | null;
   interessado: string | null;
   empresa_id: string | null;
   reuniao_id: string | null;
 };
+
+/** Extrai o inteiro inicial de "08", "160", "15-A" → 8, 160, 15. null se não numérico. */
+function numeroInteiro(numero: string | null): number | null {
+  if (!numero) return null;
+  const m = numero.trim().match(/^(\d+)/);
+  if (!m) return null;
+  const n = Number.parseInt(m[1], 10);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
 
 interface AgenciaCompletude {
   agencia_id: string | null;
@@ -42,6 +52,13 @@ interface AgenciaCompletude {
   deliberacoes: { finais: number; sem_voto: number; so_inferidas: number; sem_empresa_id: number };
   votos: { total: number; nominais: number; inferidos: number };
   diretores: { aprovados: number; com_voto: number; sem_mandato: number; candidatos_pendentes: number };
+  /**
+   * Buraco de numeração: as deliberações de um ano/agência costumam ser sequenciais
+   * (ARTESP 2026 = 08..62 contíguo). Um número pulado = documento provavelmente NÃO
+   * capturado — invisível no funil de contagem. `faltantes` lista os números ausentes
+   * dentro de [min,max] observados (capado); `range_suspeito` marca salto anômalo.
+   */
+  sequencia: { min: number | null; max: number | null; faltantes: number[]; range_suspeito: boolean };
   /** Staleness: fonte "parada no dia X" fica visível (QA Etapa 22 — sintoma ANTT-notícias). */
   ultima_captura: { documento_em: string | null; deliberacao_em: string | null };
 }
@@ -67,7 +84,7 @@ export async function GET(req: NextRequest) {
       // Acervo de deliberações (bounded); o subconjunto 2026 é filtrado em código
       // (também serve para detectar votos órfãos contra o universo real de ids).
       db.from("deliberacoes")
-        .select("id, agencia_id, tipo_documento, documento_pai_id, numero_reuniao, data_reuniao, interessado, empresa_id, reuniao_id")
+        .select("id, agencia_id, tipo_documento, documento_pai_id, numero_deliberacao, numero_reuniao, data_reuniao, interessado, empresa_id, reuniao_id")
         .limit(40000),
       db.from("monitoramento_itens").select("agencia_id, status, data_reuniao").gte("data_reuniao", de).lte("data_reuniao", ate).limit(40000),
       db.from("votos").select("deliberacao_id, diretor_id, is_nominal").limit(80000),
@@ -86,6 +103,7 @@ export async function GET(req: NextRequest) {
       deliberacoes: { finais: 0, sem_voto: 0, so_inferidas: 0, sem_empresa_id: 0 },
       votos: { total: 0, nominais: 0, inferidos: 0 },
       diretores: { aprovados: 0, com_voto: 0, sem_mandato: 0, candidatos_pendentes: 0 },
+      sequencia: { min: null, max: null, faltantes: [], range_suspeito: false },
       ultima_captura: { documento_em: null, deliberacao_em: null },
     });
   }
@@ -95,6 +113,9 @@ export async function GET(req: NextRequest) {
   const allDelibIds = new Set<string>();
   const delibs2026 = new Map<string, Delib>();
   const reunioesComDelib = new Set<string>();
+  // Números de deliberação vistos por agência (só tipo "deliberacao" — atas usam
+  // item_numero, que poluiria a sequência). Alimenta a detecção de buraco de numeração.
+  const numerosPorAgencia = new Map<string, Set<number>>();
   for (const d of (delibsAllRes.data ?? []) as Delib[]) {
     allDelibIds.add(d.id);
     const dentro = typeof d.data_reuniao === "string" && d.data_reuniao >= de && d.data_reuniao <= ate;
@@ -106,6 +127,14 @@ export async function GET(req: NextRequest) {
     if (NAO_FINAL.has(String(d.tipo_documento))) continue;
     if (d.tipo_documento === "ata" && d.documento_pai_id == null) continue;
     e.deliberacoes.finais += 1;
+    if (d.agencia_id && d.tipo_documento === "deliberacao") {
+      const n = numeroInteiro(d.numero_deliberacao);
+      if (n != null) {
+        const set = numerosPorAgencia.get(d.agencia_id) ?? new Set<number>();
+        set.add(n);
+        numerosPorAgencia.set(d.agencia_id, set);
+      }
+    }
     if (d.data_reuniao && (!e.ultima_captura.deliberacao_em || d.data_reuniao > e.ultima_captura.deliberacao_em)) {
       e.ultima_captura.deliberacao_em = d.data_reuniao;
     }
@@ -120,6 +149,28 @@ export async function GET(req: NextRequest) {
     const agenciaId = chave.split("|")[0];
     const e = ag(agenciaId);
     if (e) e.reunioes.com_deliberacao += 1;
+  }
+
+  // Buraco de numeração por agência: para cada [min,max] observado, quais inteiros faltam.
+  // Range muito largo (> RANGE_MAX) é sinal de outlier (numeração antiga/atípica) e não de
+  // "faltou 400 docs" → marca range_suspeito e NÃO explode a lista de faltantes.
+  const RANGE_MAX = 400;
+  const FALTANTES_CAP = 60;
+  for (const [agenciaId, numeros] of numerosPorAgencia) {
+    const e = ag(agenciaId);
+    if (!e || numeros.size === 0) continue;
+    // min/max por iteração (não `Math.min(...set)`) — sem risco de estourar argumentos.
+    let min = Infinity;
+    let max = -Infinity;
+    for (const n of numeros) { if (n < min) min = n; if (n > max) max = n; }
+    e.sequencia.min = min;
+    e.sequencia.max = max;
+    if (max - min > RANGE_MAX) { e.sequencia.range_suspeito = true; continue; }
+    const faltantes: number[] = [];
+    for (let n = min; n <= max && faltantes.length < FALTANTES_CAP; n++) {
+      if (!numeros.has(n)) faltantes.push(n);
+    }
+    e.sequencia.faltantes = faltantes;
   }
 
   // Documentos 2026 detectados (monitoramento_itens com data_reuniao no ano).
@@ -196,6 +247,7 @@ export async function GET(req: NextRequest) {
     diretores_com_voto: soma((a) => a.diretores.com_voto),
     diretores_sem_mandato: soma((a) => a.diretores.sem_mandato),
     candidatos_pendentes: soma((a) => a.diretores.candidatos_pendentes),
+    deliberacoes_faltantes_sequencia: soma((a) => a.sequencia.faltantes.length),
   };
 
   const alertas: string[] = [];
@@ -204,6 +256,13 @@ export async function GET(req: NextRequest) {
   if (totais.deliberacoes_sem_empresa_id > 0) alertas.push(`${totais.deliberacoes_sem_empresa_id} deliberação(ões) com interessado mas SEM empresa_id (não entram nas visões por empresa).`);
   if (totais.deliberacoes_sem_voto > 0) alertas.push(`${totais.deliberacoes_sem_voto} deliberação(ões) final(is) sem nenhum voto.`);
   if (votosOrfaos > 0) alertas.push(`${votosOrfaos} voto(s) órfão(s) (deliberação inexistente).`);
+  for (const a of por_agencia) {
+    if (a.sequencia.faltantes.length > 0) {
+      const amostra = a.sequencia.faltantes.slice(0, 15).join(", ");
+      const resto = a.sequencia.faltantes.length > 15 ? "…" : "";
+      alertas.push(`${a.sigla}: ${a.sequencia.faltantes.length} nº de deliberação faltando na sequência ${a.sequencia.min}–${a.sequencia.max} (${amostra}${resto}) — possíveis documentos não capturados.`);
+    }
+  }
 
   return NextResponse.json({ modo: "real", ano: Number(year), gerado_em: new Date().toISOString(), por_agencia, totais, alertas });
 }

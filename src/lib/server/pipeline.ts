@@ -141,8 +141,24 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2): Promise<v
   }
 }
 
-export async function processPendingDocuments(limit = 5): Promise<{ processed: number; job_ids: string[] }> {
+export async function processPendingDocuments(limit = 5): Promise<{ processed: number; job_ids: string[]; reaped: number }> {
   const db = createSupabaseServerClient();
+
+  // Reaper oportunista de órfãos: um job/doc preso em "processing" só é possível se o
+  // SIGKILL (60s do Hobby) matou o background (waitUntil) ENTRE marcar "processing" e
+  // gravar "done"/"failed". Como nenhum processamento legítimo dura minutos, todo job
+  // "processing" com updated_at > 5min é órfão → volta para "pending" e é reprocessado
+  // aqui mesmo (o processPdf sobrescreve o doc preso). Sem isto ficavam presos p/ sempre
+  // (o select abaixo só lê "pending"). Espelha o reaper de monitoramento_runs.
+  const staleCutoff = new Date(Date.now() - 5 * 60_000).toISOString();
+  const { data: reapedRows } = await db
+    .from("upload_jobs")
+    .update({ status: "pending", updated_at: new Date().toISOString() })
+    .eq("status", "processing")
+    .lt("updated_at", staleCutoff)
+    .select("id");
+  const reaped = reapedRows?.length ?? 0;
+
   const normalizedLimit = Math.min(20, Math.max(1, limit));
   const { data: jobs } = await db
     .from("upload_jobs")
@@ -160,7 +176,7 @@ export async function processPendingDocuments(limit = 5): Promise<{ processed: n
     await processQueue(selected, 2);
   }
 
-  return { processed: selected.length, job_ids: selected.map((job) => job.jobId) };
+  return { processed: selected.length, job_ids: selected.map((job) => job.jobId), reaped };
 }
 
 function previewToJson(analysis: Awaited<ReturnType<typeof analyzeUploadPdf>>) {
