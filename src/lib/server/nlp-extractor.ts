@@ -38,10 +38,13 @@ const RE_PROCEDENCIA = /Proced[eê]ncia[:\s]+([^\n]{3,150})/gi;
 // Captura verbos de decisão reais das deliberações brasileiras.
 // Inclui verbos extras: HOMOLOGA, ARQUIVA, ANULA, REVOGA, CANCELA, PREJUDICA.
 // Prioridade de normalização definida em normalizeResultado().
-// Inclui as formas no PRETÉRITO (DEFERIU/INDEFERIU/APROVOU/...), que são exatamente
-// como o dispositivo das decisões colegiadas é escrito ("a Diretoria INDEFERIU o pleito")
-// e que o padrão antigo ignorava por completo.
-const RE_RESULTADO = /\b(INDEFERIDO|INDEFERIMENTO|INDEFERIU|DEFERIDO|DEFERIMENTO|DEFERIU|PARCIALMENTE\s*DEFERIDO|RETIRADO\s*DE\s*PAUTA|RATIFICA(?:DO)?|RATIFICOU|APROVA(?:DO)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:DO)?|RECOMENDOU|DETERMINA(?:DO)?|DETERMINOU|AUTORIZA(?:DO)?|AUTORIZOU|HOMOLOGA(?:DO)?|HOMOLOGOU|ARQUIVA(?:DO)?|ARQUIVOU|ANULA(?:DO)?|ANULOU|REVOGA(?:DO)?|REVOGOU|CANCELA(?:DO)?|CANCELOU|PREJUDICA(?:DO)?)\b/gi;
+// Cobre PRESENTE (INDEFERE/DEFERE/APROVA — dispositivo ARTESP "INDEFERE o pleito"),
+// PARTICÍPIO (INDEFERIDO/APROVADO), PRETÉRITO (INDEFERIU/APROVOU) e INFINITIVO
+// (APROVAR/AUTORIZAR — dispositivo ANTT "VOTO por Aprovar"). As formas -AR usam
+// `(?:DO|R)?` para casar presente/particípio/infinitivo de uma vez. O presente dos
+// verbos -IR (INDEFERE/DEFERE) precisa ser explícito — sua ausência fazia todo
+// INDEFERE-por-unanimidade cair no fallback e virar "Aprovado por Unanimidade" (bug).
+const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|RETIRAD[OA]\s*DE\s*PAUTA|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)\b/gi;
 
 // Unanimidade — qualquer das frases comuns em deliberações brasileiras
 // Alternativas simples sem quantificadores aninhados (evita ReDoS)
