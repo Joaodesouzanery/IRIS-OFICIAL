@@ -48,7 +48,20 @@ export function classifyRegulatoryDocument(input: {
     warnings.push("Reuniao ANTT tratada como envelope de apoio; itens so contam se houver decisao final revisada.");
   }
 
-  if (isArtespDeliberacao(normName, normText)) {
+  // Nota de RETIFICAÇÃO do DOE ("Onde se lê / Leia-se") — corrige dados de uma
+  // deliberação já publicada, NÃO é uma decisão. O cabeçalho contém "DELIBERAÇÃO ARTESP
+  // Nº X", então sem esta guarda o isArtespDeliberacao a contaria como decisão final (e o
+  // roster de 1 signatário não-diretor não geraria voto, mas o count inflaria). Precede e
+  // desliga a classificação de deliberação.
+  const retificacao = isRetificacaoPublicacao(normName, normText);
+  if (retificacao) {
+    tipo = "documento_apoio";
+    subtipo = "retificacao";
+    countsAsFinal = false;
+    warnings.push("Retificação de publicação do DOE: corrige uma deliberação; não conta como decisão final nem gera voto.");
+  }
+
+  if (!retificacao && isArtespDeliberacao(normName, normText)) {
     tipo = "deliberacao";
     subtipo = "artesp_deliberacao";
     countsAsFinal = true;
@@ -200,6 +213,15 @@ function isArtespDeliberacao(normName: string, normText: string) {
   return normName.includes("deliberacao artesp") ||
     /deliberacao\s+artesp\s+n/.test(normHead) ||
     /deliberacao\s+n/.test(normHead) && normHead.includes("artesp");
+}
+
+// Nota de retificação do DOE. Específica ("retificacao da publicacao"): NÃO casa com
+// "Rerratificação"/"retifica" que aparecem no ASSUNTO de deliberações reais (ex.: Nº 32,
+// "1º Termo de Rerratificação ao 10º TAM"). O "onde se le/leia se" é corroboração.
+function isRetificacaoPublicacao(normName: string, normText: string) {
+  const normHead = normText.slice(0, 600);
+  return normHead.includes("retificacao da publicacao") ||
+    (normName.includes("retificacao") && normHead.includes("onde se le") && normHead.includes("leia se"));
 }
 
 function isAnmPauta(normName: string, normText: string) {
