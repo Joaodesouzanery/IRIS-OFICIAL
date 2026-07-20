@@ -6,6 +6,7 @@ import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { parseIntParam } from "@/lib/server/http-params";
 import { drainFetchStats, type FetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes, type HeadlessStats } from "@/lib/server/headless";
+import { scoreSourceReports } from "@/lib/news-health";
 import type { RegulatoryNewsCollectResponse } from "@/types";
 
 type CollectionTelemetry = { durationMs: number; fetch: FetchStats; headless: HeadlessStats };
@@ -166,10 +167,11 @@ async function collect(req: NextRequest) {
     const nextOffset = automatic && offsetReport.status === "ok" && (offsetReport.items_pending ?? 0) > 0
       ? sourceOffset + (offsetReport.items_processed ?? 0)
       : 0;
-    // "empty" (fonte OK, sem item novo) conta como sucesso do check — só é "error" se houver erro real.
-    const status = reports.some((report) => report.status === "ok")
-      ? "ok"
-      : reports.some((report) => report.status === "error") ? "error" : "ok";
+    // 3 estados por fonte: trouxe ITENS / teve ERRO / rodou VAZIO. O ultimo_status respeita o
+    // CHECK ('never','ok','error','needs_headless'), então 'empty' continua 'ok' (a fonte
+    // respondeu sem erro) — mas a VERDADE (vazio vs com itens vs 0-links) vai para o metadata,
+    // que é o que o health usa para separar "fonte quieta" de "coletor não traz nada". QA jul/2026.
+    const { hadItems, allEmpty, status, linksFound } = scoreSourceReports(reports);
     const error = reports.find((report) => report.status === "error")?.error ?? null;
     return db
       .from("monitoramento_sites")
@@ -186,8 +188,14 @@ async function collect(req: NextRequest) {
           news_last_scope: scope,
           news_last_mode: mode,
           news_last_collection_at: new Date().toISOString(),
-          news_last_success_at: status === "ok" ? new Date().toISOString() : currentMetadata.news_last_success_at,
+          // Sucesso = trouxe ITENS (não apenas "respondeu"). Antes bombava mesmo vazio → fonte
+          // sempre-vazia parecia recém-sucedida e o health não via que o coletor não traz nada.
+          news_last_success_at: hadItems ? new Date().toISOString() : currentMetadata.news_last_success_at,
           news_last_error_at: status === "error" ? new Date().toISOString() : currentMetadata.news_last_error_at,
+          // Rodou mas veio vazio (fonte quieta OU listagem indisponível/movida): registrado à
+          // parte para o health não confundir com sucesso. Com links=0 → listagem provável quebrada.
+          news_last_empty_at: allEmpty ? new Date().toISOString() : currentMetadata.news_last_empty_at,
+          news_last_links_found: linksFound,
           news_last_fresh_collection_at: freshReport ? new Date().toISOString() : currentMetadata.news_last_fresh_collection_at,
           news_last_collection_mode: automatic
             ? backlogReport ? "combined" : "fresh"

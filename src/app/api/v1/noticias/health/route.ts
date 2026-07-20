@@ -5,8 +5,11 @@ import { isDemoRequest } from "@/lib/server/request-guards";
 export const dynamic = "force-dynamic";
 
 const DEMO_SOURCES = ["ARTESP", "ANTT", "ANM", "ANA", "ANAC", "ANATEL", "ANCINE", "ANEEL", "ANP", "ANPD", "ANS", "ANTAQ", "ANVISA"] as const;
-const NEWS_SCHEDULE = "A cada 30 minutos entre 08:00 e 20:30 (America/Sao_Paulo): ANTT/ANM/ARTESP em toda rodada e agencias expandidas em rodizio; Vercel Cron diario como fallback no plano Hobby";
-const NEWS_CRON_UTC = "*/30 11-23 * * *";
+// Honestidade da agenda (QA jul/2026): no plano Hobby só existe UM Vercel Cron diário
+// (0 11 * * * = 08:00 America/Sao_Paulo). Não há rodízio de 30 min; o resto é sob demanda
+// pelo botão "Coletar Notícias". O label antigo ("a cada 30 minutos") não era verdade.
+const NEWS_SCHEDULE = "Vercel Cron diario as 11:00 UTC (08:00 America/Sao_Paulo): ANTT/ANM/ARTESP em toda rodada e agencias expandidas em rodizio; demais coletas sob demanda pelo botao 'Coletar Noticias'";
+const NEWS_CRON_UTC = "0 11 * * *";
 const VERCEL_NEWS_CRON_UTC = "0 11 * * *";
 
 export async function GET(req: NextRequest) {
@@ -70,7 +73,9 @@ export async function GET(req: NextRequest) {
       .in("agencia_sigla", siglas)
       .order("publicado_em", { ascending: false, nullsFirst: false })
       .order("last_seen_at", { ascending: false })
-      .limit(500),
+      // 2000 (não 500): com ~13 agências, 500 podia empurrar as linhas de uma fonte antiga p/
+      // fora do topo global → total=0 → falso "nunca coletada". 2000 cobre folgado e é bounded.
+      .limit(2000),
     db
       .from("regulatory_news_collection_runs")
       .select("site_id, trigger_type, batch_offset, links_detectados, itens_processados, itens_pendentes, imagens_encontradas, imagens_ausentes, imagens_com_falha, status, error_message, created_at")
@@ -147,6 +152,14 @@ export async function GET(req: NextRequest) {
       latest_error: latestErrorRun?.error_message ?? source.collection_error ?? null,
       latest_success_at: lastSuccessAt,
       latest_error_at: lastErrorAt,
+      // Sinais p/ o banner distinguir "fonte quieta" de "coletor não traz nada": última vez que
+      // rodou VAZIO, última tentativa (qualquer), e nº de links do último run. links_found é
+      // null quando DESCONHECIDO (sem run/metadata) — o banner só acusa "0 links" se comprovado.
+      latest_empty_at: readString(source.metadata, "news_last_empty_at"),
+      latest_collection_at: readString(source.metadata, "news_last_collection_at"),
+      latest_links_found: typeof latestRun?.links_detectados === "number"
+        ? latestRun.links_detectados
+        : readNumberOrNull(source.metadata, "news_last_links_found"),
       fresh_items_processed: readNumber(source.metadata, "news_fresh_items_processed"),
       backlog_items_processed: readNumber(source.metadata, "news_backlog_items_processed"),
       recent_7d: rows.filter((item) => {
@@ -183,6 +196,14 @@ function readNumber(metadata: unknown, key: string) {
   return typeof value === "number" && Number.isFinite(value) ? value : 0;
 }
 
+// Como readNumber, mas null quando a chave não existe/não é número — para distinguir
+// "0 comprovado" de "desconhecido" (o banner só acusa 0 links se for comprovado).
+function readNumberOrNull(metadata: unknown, key: string): number | null {
+  if (!metadata || typeof metadata !== "object" || Array.isArray(metadata)) return null;
+  const value = (metadata as Record<string, unknown>)[key];
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
 function readString(metadata: unknown, key: string) {
   if (!metadata || typeof metadata !== "object" || Array.isArray(metadata)) return null;
   const value = (metadata as Record<string, unknown>)[key];
@@ -190,12 +211,9 @@ function readString(metadata: unknown, key: string) {
 }
 
 function nextNewsRun(now = new Date()) {
+  // Reflete o cron REAL do Hobby: uma vez por dia às 11:00 UTC (não há rodízio de 30 min).
   const utc = new Date(now);
-  for (let hour = 11; hour <= 23; hour += 1) {
-    for (const minute of [0, 30]) {
-      const next = new Date(Date.UTC(utc.getUTCFullYear(), utc.getUTCMonth(), utc.getUTCDate(), hour, minute));
-      if (next.getTime() > now.getTime()) return next;
-    }
-  }
+  const today = new Date(Date.UTC(utc.getUTCFullYear(), utc.getUTCMonth(), utc.getUTCDate(), 11, 0));
+  if (today.getTime() > now.getTime()) return today;
   return new Date(Date.UTC(utc.getUTCFullYear(), utc.getUTCMonth(), utc.getUTCDate() + 1, 11, 0));
 }
