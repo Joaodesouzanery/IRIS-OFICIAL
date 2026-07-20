@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { cn, formatDateLong } from "@/lib/utils";
+import { classificarFonte, erroCurto, type HealthSource } from "@/lib/news-health";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import {
   NEWSLETTER_ARTICLE_TEXT_LIMITS,
@@ -341,23 +342,29 @@ export default function NoticiasPage() {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ["noticias"] }),
   });
 
-  // Saúde das fontes: destaca agência PARADA (>7 dias sem notícia nova enquanto as
-  // outras avançam) — sinal de listagem movida (ex.: defeso eleitoral). O coletor já
-  // auto-tenta as listagens irmãs; se o aviso persistir após "Coletar", é algo novo.
+  // Saúde das fontes — HONESTA (QA jul/2026): o aviso antigo dizia "sem notícia nova" e
+  // mandava "rode Coletar" para QUALQUER fonte parada há >7d, sem distinguir fonte quieta de
+  // coletor quebrado (o dia contava desde a última notícia SALVA, não desde a última coleta
+  // bem-sucedida). Agora classificamos por sinais reais do health e só dizemos o que é verdade.
   const { data: healthData } = useQuery({
     queryKey: ["noticias", "health"],
     queryFn: () =>
-      api.get<{ sources: Array<{ agencia_sigla: string; total: number; dias_sem_publicar: number | null }> }>(
-        "/noticias/health",
-      ).catch(() => ({ sources: [] })),
+      api.get<{ sources: HealthSource[] }>("/noticias/health").catch(() => ({ sources: [] as HealthSource[] })),
   });
-  const fontesParadas = useMemo(
-    () =>
-      (healthData?.sources ?? [])
-        .filter((s) => s.total > 0 && typeof s.dias_sem_publicar === "number" && s.dias_sem_publicar > 7)
-        .sort((a, b) => (b.dias_sem_publicar ?? 0) - (a.dias_sem_publicar ?? 0)),
-    [healthData],
-  );
+  const fontesSaude = useMemo(() => {
+    const src = healthData?.sources ?? [];
+    const sortDias = (a: HealthSource, b: HealthSource) => (b.dias_sem_publicar ?? 0) - (a.dias_sem_publicar ?? 0);
+    return {
+      // Coletor FALHANDO (erro técnico recente) — NÃO é "sem notícia".
+      erro: src.filter((s) => classificarFonte(s) === "erro").sort(sortDias),
+      // Coletor responde mas não acha artigos (0 links) — listagem provável mudou/indisponível.
+      semItens: src.filter((s) => classificarFonte(s) === "sem_itens").sort(sortDias),
+      // Fonte genuinamente quieta (listagem OK, só sem publicação nova) — recesso/defeso.
+      quieta: src.filter((s) => classificarFonte(s) === "quieta").sort(sortDias),
+      // Configurada mas sem NENHUMA notícia ingerida — pode nunca ter coletado.
+      nunca: src.filter((s) => classificarFonte(s) === "nunca").sort(sortDias),
+    };
+  }, [healthData]);
 
   // Re-resolve imagens de notícias já coletadas sem foto (a coleta normal pula URLs
   // conhecidas). Re-chama enquanto sobrar (orçamento de tempo). Filtra pela agência
@@ -671,10 +678,30 @@ export default function NoticiasPage() {
       {imagensFeedback && (
         <p className={cn("text-xs", reprocessarImagensMutation.isError ? "text-error" : "text-success")}>{imagensFeedback}</p>
       )}
-      {fontesParadas.length > 0 && (
+      {fontesSaude.erro.length > 0 && (
+        <div className="border border-error/30 bg-error/10 rounded-card px-3 py-2 text-xs text-error">
+          <strong>Coletor com erro</strong> (falha técnica, não é &ldquo;sem notícia&rdquo;):{" "}
+          {fontesSaude.erro.map((s) => `${s.agencia_sigla} (${erroCurto(s.latest_error)})`).join(" · ")} — verifique a fonte.
+        </div>
+      )}
+      {fontesSaude.semItens.length > 0 && (
         <div className="border border-warning/30 bg-warning/10 rounded-card px-3 py-2 text-xs text-warning">
-          Fontes sem notícia nova: {fontesParadas.map((s) => `${s.agencia_sigla} (${s.dias_sem_publicar}d)`).join(" · ")} — rode
-          &ldquo;Coletar Notícias&rdquo; (o coletor tenta automaticamente as seções alternativas, ex.: defeso eleitoral).
+          <strong>Coletor não está trazendo notícias</strong> (respondeu, mas 0 links):{" "}
+          {fontesSaude.semItens.map((s) => `${s.agencia_sigla} (${s.dias_sem_publicar}d)`).join(" · ")} — a listagem
+          provavelmente mudou ou está indisponível (defeso eleitoral). Rodar &ldquo;Coletar&rdquo; tenta as seções alternativas.
+        </div>
+      )}
+      {fontesSaude.quieta.length > 0 && (
+        <div className="border border-warning/20 bg-warning/5 rounded-card px-3 py-2 text-xs text-muted-foreground">
+          Sem publicação nova (coletor OK):{" "}
+          {fontesSaude.quieta.map((s) => `${s.agencia_sigla} (${s.dias_sem_publicar}d)`).join(" · ")} — provável
+          recesso/defeso eleitoral; a fonte simplesmente não publicou.
+        </div>
+      )}
+      {fontesSaude.nunca.length > 0 && (
+        <div className="border border-warning/20 bg-warning/5 rounded-card px-3 py-2 text-xs text-muted-foreground">
+          Fonte configurada sem nenhuma notícia: {fontesSaude.nunca.map((s) => s.agencia_sigla).join(" · ")} — rode
+          &ldquo;Coletar Notícias&rdquo;; se persistir, a listagem precisa de ajuste.
         </div>
       )}
 
