@@ -6,6 +6,7 @@ import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { parseIntParam } from "@/lib/server/http-params";
 import { drainFetchStats, type FetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes, type HeadlessStats } from "@/lib/server/headless";
+import { hasBudget } from "@/lib/server/time-budget";
 import { scoreSourceReports } from "@/lib/news-health";
 import type { RegulatoryNewsCollectResponse } from "@/types";
 
@@ -503,10 +504,16 @@ async function collectAutomaticBatches(
   deep?: DeepCollectOptions,
 ) {
   const coreSources = sources.filter((source) => (source.tier ?? "core") === "core");
+  // Cobertura das expandidas por rodada do cron diário. QA jul/2026: com só 2/rodada e ~10
+  // expandidas, cada uma era coletada a cada ~5 dias — a ANAC (que PUBLICA e tem listagem OK,
+  // 14 links) aparecia "parada 31d" só por falta de coleta. 5/4 encurta o ciclo p/ ~2 dias.
+  // Seguro: o core é processado ANTES (orçamento garantido) e só o detail-fetch é orçado; a
+  // listagem de toda selecionada é sempre buscada. Com o PR-H, run vazio não bomba o success
+  // → a faminta sobe na prioridade do rodízio (sourceRotationTime).
   const expandedSources = selectExpandedSources(
     sources.filter((source) => source.tier === "expanded"),
     configured,
-    mode === "discover" ? 3 : 2,
+    mode === "discover" ? 5 : 4,
   );
   const selectedSources = [...coreSources, ...expandedSources];
   const batches: Array<{
@@ -514,6 +521,11 @@ async function collectAutomaticBatches(
     source_reports: Awaited<ReturnType<typeof collectRegulatoryNews>>["source_reports"];
   }> = [];
   for (const source of selectedSources) {
+    // Guard de orçamento: com mais expandidas por rodada, uma fonte lenta (headless) no começo
+    // não pode empurrar o total além dos 45s → pula as expandidas restantes se faltar pouco
+    // (o core NUNCA é pulado; ele já foi priorizado no início da lista). Fica pending p/ o cron
+    // seguinte, e a faminta continua no topo do rodízio. Blinda o SIGKILL de 60s do Hobby.
+    if (source.tier === "expanded" && !hasBudget(deep?.deadlineAt, 8_000)) continue;
     const metadata = source.id ? configured.get(source.id)?.metadata : null;
     const rawOffset = metadata && typeof metadata.news_next_offset === "number" ? metadata.news_next_offset : 0;
     const sourceOffset = Number.isFinite(rawOffset) && rawOffset >= 0 ? rawOffset : 0;
