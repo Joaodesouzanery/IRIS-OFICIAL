@@ -59,6 +59,13 @@ No plano grátis, a conferência humana semanal é:
   esteira (`votos`/`diretores`/`mandatos`/`deliberacoes`) e os dados de associados (LGPD).
   **Após aplicar, rodar `get_advisors`** (deve zerar `rls_policy_always_true`) + smoke com a anon
   key em `/rest/v1/votos` (deve vir `[]`). **Habilitar Leaked Password Protection no painel.**
+- **`20260720120000_news_runs_status_empty.sql`** (QA notícias jul/2026, PR-G) — 🔴 **keystone da
+  honestidade do coletor**: alarga o CHECK de `regulatory_news_collection_runs.status` para aceitar
+  `'empty'`. A tabela nasceu com `CHECK (status IN ('ok','error'))`, mas o coletor grava `'empty'`
+  (fonte respondeu sem item novo) num insert EM LOTE → qualquer rodada com ≥1 fonte vazia viola o
+  CHECK e o insert INTEIRO falha (só `console.warn`), deixando o histórico ~vazio → o health nunca
+  vê erro real. Idempotente, varre `pg_constraint` (não confia no nome). **Sem ela, o aviso honesto
+  de notícias fica cego a falhas** (não distingue "coletor quebrado" de "fonte quieta").
 
 ## Datas sensíveis
 
@@ -71,6 +78,16 @@ No plano grátis, a conferência humana semanal é:
   automaticamente (Etapa 22). **Após 25/10/2026**: conferir se as seções voltaram ao normal
   e se as URLs configuradas seguem válidas (o aviso "fontes sem notícia nova" na tela
   Notícias acusa qualquer nova mudança).
+  - **Probe ao vivo 20/07/2026 (QA notícias):** **ANAC** publica normalmente e tem listagem
+    server-side OK (`/anac/pt-br/noticias`) — staleness era só rodízio/orçamento (corrigido no
+    PR-J). **ANA/ANCINE/ANS** têm as seções em **Volto/React** (0 âncoras estáticas) ou
+    login-walled no defeso e a **API Plone dá 404** → coleta estática zera; dependem de
+    **headless** (instável no Vercel). **ARTESP** legado exige headless; o fallback CCM
+    (`ccm.artesp.sp.gov.br/noticias/todas`) apareceu degradado. O aviso honesto (PR-G/H/I)
+    agora rotula esses casos corretamente ("coletor não traz nada / listagem indisponível") em
+    vez de fingir "sem notícia". **Follow-up possível:** headless confiável no Vercel OU loop
+    do botão "Coletar Notícias" (padrão "Rodar tudo") para drenar todas as fontes numa sessão;
+    reavaliar após o defeso (25/10), quando as seções canônicas devem voltar.
 
 ## Adiados por decisão (reavaliar quando fizer sentido)
 
