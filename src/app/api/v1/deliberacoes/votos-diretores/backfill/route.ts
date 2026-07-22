@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { COLEGIADO_SOURCE_URLS, ensureColegiadoSources } from "@/lib/server/colegiado-sources";
+import { ensureColegiadoSources } from "@/lib/server/colegiado-sources";
 import { processMonitoringSite } from "@/lib/server/monitoring-runner";
 import { buildAnttMeetingSkipSet } from "@/lib/server/antt-2026-collector";
 import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
@@ -52,10 +52,15 @@ export async function POST(req: NextRequest) {
   const deadlineAt = startedAt + HOBBY_BUDGET_MS;
   const refresh = req.nextUrl.searchParams.get("refresh") === "1";
 
+  // TODAS as fontes de documentos (não-notícias), não só as 3 URLs base: a ANM tem 4 SUB-PÁGINAS
+  // (pautas / atas / pautas-da-rop / atas-da-rop) que carregam os PDFs — a URL-índice de
+  // COLEGIADO_SOURCES não as inclui, então o backfill "todas de 2026" subcoletava a ANM. Espelha a
+  // seleção do monitoramento/check (ativo + tipo_fonte != noticias). QA jul/2026, PR-L.
   const { data: sites, error } = await db
     .from("monitoramento_sites")
     .select("id, agencia_id, nome, url, estrategia, seletor_links, ativo, tipo_fonte, auto_enfileirar_pdf, ultimo_check")
-    .in("url", COLEGIADO_SOURCE_URLS)
+    .eq("ativo", true)
+    .neq("tipo_fonte", "noticias")
     .order("ultimo_check", { ascending: true, nullsFirst: true });
 
   if (error) {

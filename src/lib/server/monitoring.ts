@@ -172,8 +172,10 @@ export async function fetchMonitoringSite(
     // Fim da lista: página seguinte sem novidade encerra a paginação.
     if (pageCount > 1 && added === 0) break;
 
-    // ARTESP: a base já lista 2026 inteiro; os "próximos" são anos anteriores
-    // (2025/2024) — fora do escopo. Não pagina.
+    // ARTESP: página ÚNICA — VERIFICADO ao vivo 22/07/2026 (QA robusto): HTML estático de ~188KB
+    // lista TODAS as reuniões recentes numa página só (1146→1204, 258 links DAM, 43 menções a 2026,
+    // sem paginador). Não há "próxima" dentro de 2026 → não pagina (o alerta de buraco de numeração
+    // do completude-2026 é a rede de segurança se algo escapar).
     const next: string | null = isArtesp ? null : findNextMonitoringPageUrl(html, pageUrl);
     pageUrl = next && !visited.has(next) ? next : null;
   }
