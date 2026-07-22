@@ -91,10 +91,21 @@ export async function analyzeUploadPdf(input: {
   }
 
   if (!extraction.text || extraction.text.length < 50) {
+    // Provável documento ESCANEADO (sem camada de texto). Antes virava status "error" → o pipeline
+    // marcava o doc/job como FAILED e ele sumia no balde "Falhou". Agora vai para REVISÃO
+    // (low_confidence + confiança 0) — auditável e recuperável (o humano habilita OCR ou reenvia
+    // um PDF pesquisável), em vez de parecer um erro de processamento. QA jul/2026, PR-M.
     return {
       ...errorResult(file.name, file_hash),
-      error: "PDF sem texto extraivel. Possivel documento digitalizado.",
+      status: "low_confidence",
       page_count: extraction.pageCount,
+      warnings: [
+        `Provável documento digitalizado/escaneado (sem camada de texto). ${
+          isOcrConfigured()
+            ? "O OCR não recuperou texto suficiente."
+            : "Habilite OCR_SPACE_API_KEY ou reenvie um PDF pesquisável."
+        } Fica em revisão para conferência manual — não foi descartado.`,
+      ],
     };
   }
 
@@ -315,8 +326,9 @@ export async function analyzeUploadPdf(input: {
 
   // C5: PDF provavelmente escaneado (baixa densidade de texto) → sinaliza e rebaixa
   // a confiança SEM descartar o registro (sem OCR ainda). O descarte total (text<50)
-  // já foi tratado acima; aqui é o caso intermediário.
-  if (extraction.charsPerPage > 0 && extraction.charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && extraction.pageCount > 1) {
+  // já foi tratado acima; aqui é o caso intermediário. Sem o guard pageCount>1, pega também o
+  // escaneado de 1 página (que antes passava batido como baixa confiança comum). QA jul/2026, PR-M.
+  if (extraction.charsPerPage > 0 && extraction.charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD) {
     const semOcr = isOcrConfigured()
       ? "escaneado e o OCR não recuperou texto suficiente"
       : "provável documento escaneado (OCR não configurado — defina OCR_SPACE_API_KEY)";
