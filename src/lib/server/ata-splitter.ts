@@ -255,12 +255,19 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   let resultado: string | null = null;
   const unanimidade = /unanimidade/i.test(rawText);
 
-  if (votoText) {
+  // Sobrestamento/retirada/pedido de vista valem sobre o item INTEIRO e têm PRECEDÊNCIA: mesmo que
+  // o "Voto:" traga uma proposta positiva ("VOTO pela aprovação…"), a deliberação NÃO se concluiu
+  // (foi sobrestada por pedido de vista) → não gera decisão nem voto final. Antes o "Voto:" era
+  // avaliado primeiro e o item de maioria/sobrestado virava "Aprovado" (QA jul/2026). NÃO casa
+  // "Voto Vista" (rótulo de ASSUNTO, item que ESTÁ sendo decidido) — só sobrest/retirada/pedido.
+  const suspenso = /retirad[oa]\s+de\s+pauta|sobrest|ped(?:iu|ido)\s+(?:de\s+)?vistas?/i.test(rawText);
+  if (suspenso) {
+    resultado = "Retirado de Pauta";
+  } else if (votoText) {
     // Delega à fonte única (precedência: retirado → indeferido/negar provimento →
     // deferido → aprovado). Antes "aprovado" era testado ANTES de "indeferido",
     // invertendo "aprovado o voto que NEGA provimento" para Aprovado.
     resultado = inferResultadoFromText(votoText, unanimidade);
-    if (!resultado && /retirad[oa]\s+de\s+pauta/i.test(rawText)) resultado = "Retirado de Pauta";
   }
 
   if (!resultado) {
@@ -342,7 +349,9 @@ function findParentKey(itemNumero: string): string | null {
 }
 
 function inferResultadoFromText(text: string, unanimidade: boolean): string | null {
-  if (/retirad[oa]\s+de\s+pauta|pediu\s+vistas|voto\s+vistas|sobrest/i.test(text)) {
+  // "ped(iu|ido) (de) vista(s)" cobre singular+plural; "voto vistas" mantido no PLURAL de
+  // propósito (não casar o rótulo de assunto "Voto Vista", que é item EM decisão, não suspenso).
+  if (/retirad[oa]\s+de\s+pauta|ped(?:iu|ido)\s+(?:de\s+)?vistas?|voto\s+vistas|sobrest/i.test(text)) {
     return "Retirado de Pauta";
   }
   if (/indeferid[oa]|negad[oa]|improcedente|n[aã]o\s+dar\s+provimento|negar\s+provimento/i.test(text)) {

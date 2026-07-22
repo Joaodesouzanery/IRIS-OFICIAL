@@ -64,6 +64,71 @@ const RE_VOTO_DISSIDENTE_VERBAL = new RegExp(
   `(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)?(${NOME})\\s+(?:votou\\s+(?:de\\s+forma\\s+)?(?:contr[aá]ri[ao]|contrariamente|dissidente|divergente)|divergiu|discordou)`,
   "gi",
 );
+// Divergência NOMEADA — padrão dominante das atas ANM: "aprovado por maioria ... COM DIVERGÊNCIA
+// APRESENTADA PELO Diretor X" (substantivo "divergência" + "pelo", que RE_VOTO_DISSIDENTE não casa).
+// Captura o rótulo a partir de "Diretor…" de forma LIMITADA (lazy) até uma fronteira de prosa
+// (em/quanto/que/…) ou pontuação — evita agarrar "…pelo Diretor-Geral EM RELAÇÃO ao não…" como nome
+// (backtracking traiçoeiro do macro NOME). O pós-processamento separa cargo puro de nome inline.
+const RE_VOTO_DIVERGENCIA_NOMEADA = new RegExp(
+  `diverg[êe]ncia\\s+(?:parcial\\s+)?(?:apresentada|manifestada|suscitada)\\s+pel[oa]\\s+` +
+    `((?:Diretor|Diretora|Conselheir[oa]|Relator[a]?|Revisor[a]?)[A-Za-zÀ-ÿ.'\\s-]{0,70}?)` +
+    `(?=\\s+(?:em|quanto|que|no|na|ao|aos|à|às|acerca|sobre|com|por|apenas|somente|referente|relativ)\\b|[,.;:)]|$)`,
+  "gi",
+);
+// Tokens de cargo a remover do início do rótulo capturado (o resto é o nome, se houver).
+const RE_CARGO_PREFIXO = /^(?:(?:Diretor(?:[-\s](?:Geral|Presidente))?|Diretora|Conselheir[oa]|Relator[a]?|Revisor[a]?|Substitut[oa])[\s-]*)+/i;
+// Diretor-Geral nomeado no preâmbulo: "presidida pelo Diretor-Geral, NOME". Resolve o cargo→nome
+// para atribuir a divergência quando a ata só cita "pelo Diretor-Geral" (sem nome).
+const RE_DG_PREAMBULO = new RegExp(
+  `presidid[ao][\\s\\S]{0,40}?pel[oa]\\s+Diretor[-\\s]Geral,?\\s+(${NOME})`,
+  "i",
+);
+
+/** Nome do Diretor-Geral pelo preâmbulo da ata (null se não achar). */
+export function extractDiretorGeralName(text: string): string | null {
+  const m = RE_DG_PREAMBULO.exec(text);
+  if (!m) return null;
+  const nome = m[1].replace(/\s+e\s+.*$/i, "").replace(/\s+/g, " ").trim();
+  return nome && !isRoleWordOnly(nome) && nome.split(/\s+/).length >= 2 ? nome : null;
+}
+
+/** Mapa cargo→nome (hoje: Diretor-Geral) para resolver divergências citadas só por cargo. */
+export function buildRoleMap(text: string): Record<string, string> {
+  const map: Record<string, string> = {};
+  const dg = extractDiretorGeralName(text);
+  if (dg) map["diretor-geral"] = dg;
+  return map;
+}
+
+function normalizeRoleKey(role: string): string {
+  return role.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").trim().replace(/\s+/g, "-");
+}
+
+/** Nomes dos diretores que APRESENTARAM divergência (nome inline OU cargo resolvido pelo roleMap). */
+export function extractDivergentesNomeados(text: string, roleMap: Record<string, string> = {}): string[] {
+  const out: string[] = [];
+  RE_VOTO_DIVERGENCIA_NOMEADA.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = RE_VOTO_DIVERGENCIA_NOMEADA.exec(text)) !== null) {
+    const rotulo = m[1].trim(); // ex.: "Diretor-Geral" ou "Diretor Revisor José Fernando de Mendonça…"
+    // Remove os tokens de cargo do início; o que sobrar é o nome inline (se houver).
+    const nome = rotulo.replace(RE_CARGO_PREFIXO, "").replace(/\s+/g, " ").trim();
+    if (nome && !isRoleWordOnly(nome) && nome.split(/\s+/).length >= 2) {
+      if (!out.includes(nome)) out.push(nome);
+      continue;
+    }
+    // Só o cargo → resolve pelo preâmbulo ("Diretor-Geral" é o único mapeado hoje).
+    const key = normalizeRoleKey(rotulo);
+    const resolved = roleMap[key] ?? (key.startsWith("diretor-geral") ? roleMap["diretor-geral"] : undefined);
+    if (resolved && !out.includes(resolved)) out.push(resolved);
+  }
+  return out;
+}
+
+// Marcadores de item CONTESTADO (maioria/empate/qualidade/divergência) — quando presentes e o
+// dissidente NÃO pôde ser atribuído, é desonesto gravar todos como favoráveis (fabricaria
+// unanimidade). O item vai para revisão em vez de inventar voto.
+const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|diverg[êe]nci/i;
 
 // ─── Datas ─────────────────────────────────────────────────────────────────
 // Ausência: "ausente o Diretor X", "ausência do Diretor X", "X (esteve) ausente". Usa NOME (acentos OK).
@@ -696,6 +761,7 @@ export function extractFields(text: string): ExtractedFields {
     nomes_votacao_abstencao.length === 0 &&
     nomes_votacao_ausente.length === 0;
 
+  let favorPorDefault = false;
   if (unanimidade_detectada && signatarios.length > 0) {
     // Unanimidade: signatários ainda não classificados → favor (idempotente; não
     // duplica nem sobrescreve divergências tabulares detectadas acima).
@@ -709,6 +775,7 @@ export function extractFields(text: string): ExtractedFields {
   } else if (semDirecaoExplicita && nomes_votacao_favor.length === 0 && nomes_votacao.length > 0) {
     // Sem QUALQUER direção explícita → todos considerados a favor (comportamento anterior).
     nomes_votacao_favor.push(...nomes_votacao);
+    favorPorDefault = true;
   }
 
   // ─── Voto dissidente / divergente / divergente ─────────────────────────────────────────
@@ -730,6 +797,10 @@ export function extractFields(text: string): ExtractedFields {
   RE_VOTO_DISSIDENTE_VERBAL.lastIndex = 0;
   let dissV: RegExpExecArray | null;
   while ((dissV = RE_VOTO_DISSIDENTE_VERBAL.exec(text)) !== null) markContra(dissV[1]);
+
+  // Divergência NOMEADA — "aprovado por maioria ... com divergência apresentada pelo Diretor X"
+  // (padrão dominante das atas ANM). Resolve cargo→nome pelo preâmbulo ("pelo Diretor-Geral").
+  for (const nome of extractDivergentesNomeados(text, buildRoleMap(text))) markContra(nome);
 
   RE_VOTO_AUSENTE.lastIndex = 0;
   let aus: RegExpExecArray | null;
@@ -767,6 +838,14 @@ export function extractFields(text: string): ExtractedFields {
       if (idxContra !== -1) nomes_votacao_contra.splice(idxContra, 1);
       if (!nomes_votacao_abstencao.includes(nome)) nomes_votacao_abstencao.push(nome);
     }
+  }
+
+  // Contestado sem atribuição de dissidente → NÃO fabricar unanimidade. Item de maioria/empate/
+  // voto de qualidade em que o favor veio SÓ do default e nenhum contra foi resolvido: esvazia o
+  // pool para o item ir à REVISÃO em vez de gravar todos como favoráveis (que seria falso). QA jul/2026.
+  if (favorPorDefault && nomes_votacao_contra.length === 0 && RE_CONTESTADO.test(text)) {
+    nomes_votacao.length = 0;
+    nomes_votacao_favor.length = 0;
   }
 
   // Remove palavra-função ("Diretor", "Presidente"…) que vaza como nome em alguns
@@ -888,7 +967,7 @@ const RE_VOTARAM_CONTRA = new RegExp(
  * downstream (vote-inference). Antes os votos por item eram sempre [], fazendo a
  * inferência inverter votos contrários reais.
  */
-export function extractItemVotes(text: string): ItemVotes {
+export function extractItemVotes(text: string, roleMap: Record<string, string> = {}): ItemVotes {
   const favor: string[] = [];
   const contra: string[] = [];
   const abstencao: string[] = [];
@@ -935,6 +1014,11 @@ export function extractItemVotes(text: string): ItemVotes {
     let m: RegExpExecArray | null;
     while ((m = re.exec(text)) !== null) moveToContra(m[1]);
   }
+
+  // Divergência NOMEADA ("com divergência apresentada pelo Diretor X"). O cargo ("Diretor-Geral")
+  // é resolvido pelo roleMap montado do PREÂMBULO da ata (o texto do item não o tem). Sem isto, os
+  // itens ANM de maioria com divergência ficavam SEM voto nenhum (esteira de votos QA jul/2026).
+  for (const nome of extractDivergentesNomeados(text, roleMap)) moveToContra(nome);
 
   // Adesão/divergência ao relator
   RE_VOTO_CONCORDANCIA.lastIndex = 0;

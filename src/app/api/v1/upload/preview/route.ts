@@ -75,7 +75,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     // Importações server-only
     const { isPdfBuffer, extractPdfText, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } = await import("@/lib/server/pdf-extractor");
     const { isZipBuffer, extractPdfEntriesFromZip } = await import("@/lib/server/zip-extractor");
-    const { extractFields, calcConfidence, extractItemVotes } = await import("@/lib/server/nlp-extractor");
+    const { extractFields, calcConfidence, extractItemVotes, buildRoleMap } = await import("@/lib/server/nlp-extractor");
     const { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } = await import("@/lib/server/classifier");
     const { detectDocumentType, splitAtaItems, extractAtaMetadata } = await import("@/lib/server/ata-splitter");
     const { parseAnttManualDocument } = await import("@/lib/server/antt-manual-parser");
@@ -289,8 +289,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         if (tipo_documento === "ata") {
           const rawItems = splitAtaItems(extraction.text);
           const ataMeta = extractAtaMetadata(extraction.text);
+          const roleMap = buildRoleMap(extraction.text);
           ata_items = rawItems.map((item) => {
-            const itemVotes = extractItemVotes(item.raw_text);
+            const itemVotes = extractItemVotes(item.raw_text, roleMap);
             return {
               item_numero: item.item_numero,
               processo: item.processo,

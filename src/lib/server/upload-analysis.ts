@@ -2,7 +2,7 @@ import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItems } from "@/lib/server/ata-splitter";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
-import { extractFields, calcConfidence, extractItemVotes } from "@/lib/server/nlp-extractor";
+import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured } from "@/lib/server/ocr";
@@ -194,10 +194,13 @@ export async function analyzeUploadPdf(input: {
   if (tipo_documento === "ata") {
     const rawItems = splitAtaItems(extraction.text);
     const ataMeta = extractAtaMetadata(extraction.text);
+    // Cargo→nome do PREÂMBULO da ata inteira (o texto por item não tem "presidida pelo
+    // Diretor-Geral, NOME") — resolve "divergência apresentada pelo Diretor-Geral" por item.
+    const roleMap = buildRoleMap(extraction.text);
     ata_items = rawItems.map((item) => {
       // Votos EXPLÍCITOS por item (antes eram sempre [], o que fazia a inferência
       // por mandato inverter votos contrários reais).
-      const itemVotes = extractItemVotes(item.raw_text);
+      const itemVotes = extractItemVotes(item.raw_text, roleMap);
       return {
         item_numero: item.item_numero,
         processo: item.processo,
