@@ -45,6 +45,12 @@ export interface MonitoringFetchResult {
 const DOC_LABEL_RE =
   /\b(reuniao|reunioes|pauta|ata|atas|voto|votos|votacao|sessao|colegiad[ao]|deliberacao|deliberacoes|diretoria|diretores?|mandato|nomeacao|exoneracao|composicao)\b/i;
 const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
+// PDFs de SEÇÕES GENÉRICAS do gov.br (manuais/guias/sistemas do rodapé/sidebar) que NÃO são
+// documento de reunião. Sem isto a ANM (Volto) "coletava" só manuais (manual-de-vistas-anm.pdf,
+// sistema-de-dados-minerarios…pdf) como documento_apoio → 0 deliberação, e o headless nunca
+// disparava (só dispara com items.length===0). As atas reais ficam (têm "ata"/"reuniao"). QA jul/2026.
+const GENERIC_DOC_PATH_RE =
+  /\/(?:manuais?|guias?|cartilhas?|tutoriais?|modelos?|formul[aá]rios?|instruc\w*|sistemas?[^"'/]*|sdm)[^"'/]*\.pdf|\/(?:assuntos|acesso-a-\w+|canais[_-]atendimento|requerimentos?|servicos)\/[^"']*\.pdf/i;
 const DATE_RE = /\b(\d{2})\/(\d{2})\/(\d{4})\b/;
 const REUNIAO_RE = /(\d{1,4})\s*(?:a|o|ª|º)?\s*reuniao[^<\n\r]*/i;
 
@@ -233,6 +239,9 @@ export function parseMonitoringHtml(
   const anchors = applyLinkSelector(extractAnchors(html, baseUrl), linkSelector, baseUrl)
     .filter((a) => {
       const combined = normalizeText(`${a.text} ${decodeURIComponentSafe(a.href)}`);
+      // Descarta PDF de seção genérica (manual/guia/sistema/assuntos…) SEM rótulo de reunião —
+      // senão o rodapé do gov.br entra como documento e mascara a ausência das atas reais.
+      if (PDF_RE.test(a.href) && GENERIC_DOC_PATH_RE.test(a.href) && !DOC_LABEL_RE.test(combined)) return false;
       return DOC_LABEL_RE.test(combined) || PDF_RE.test(a.href) || /\/view(?:$|[/?#])|sei|deliber|pauta|ata|voto|reunio|colegiad|sessao/.test(combined);
     });
 

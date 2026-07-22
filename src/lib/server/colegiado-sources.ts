@@ -11,10 +11,13 @@ export const COLEGIADO_SOURCES = [
     estrategia: "antt-2026",
   },
   {
+    // A página-ÍNDICE (reunioes-da-diretoria-colegiada) só tem manuais no HTML estático; as ATAS
+    // reais (sei_*_ata_85_*.pdf) ficam na sub-página atas-da-rop (VERIFICADO ao vivo 22/07/2026).
+    // As pautas-da-rop/pautas/atas ficam no seed 20260518160356 e são coletadas junto (PR-L).
     sigla: "ANM",
     nome_completo: "Agencia Nacional de Mineracao",
-    nome: "ANM - Reunioes da Diretoria Colegiada",
-    url: "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada",
+    nome: "ANM - Atas da Diretoria Colegiada (ROP)",
+    url: "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/atas-da-rop",
     estrategia: "html-static",
   },
   {
