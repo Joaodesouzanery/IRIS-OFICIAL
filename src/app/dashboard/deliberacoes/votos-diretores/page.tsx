@@ -78,6 +78,21 @@ type CompletudeResponse = {
   alertas: string[];
 };
 
+type CoberturaAoVivoAgencia = {
+  sigla: string;
+  erro: string | null;
+  site_total: number;
+  banco_total: number;
+  faltando: number[];
+  extra: number[];
+};
+type CoberturaAoVivoResponse = {
+  ano: number;
+  gerado_em?: string;
+  por_agencia: CoberturaAoVivoAgencia[];
+  alertas: string[];
+};
+
 type DedupResult = {
   dry_run: boolean;
   grupos_duplicados: number;
@@ -217,6 +232,11 @@ export default function VotosDiretoresPage() {
   const { data: completude } = useQuery({
     queryKey: ["completude-2026"],
     queryFn: () => api.get<CompletudeResponse>("/admin/completude-2026?year=2026"),
+  });
+
+  // Cobertura AO VIVO: conferência CONTRA o site (sob demanda — busca 3 sites, é pesado).
+  const coberturaMutation = useMutation({
+    mutationFn: () => api.get<CoberturaAoVivoResponse>("/admin/cobertura-ao-vivo?year=2026"),
   });
 
   // Limpeza retroativa: recalcula a confiança dos candidatos legados com o matcher
@@ -896,6 +916,74 @@ export default function VotosDiretoresPage() {
           </div>
         </section>
       )}
+
+      {/* ── Cobertura AO VIVO: conferência CONTRA o site (a prova de completude) ── */}
+      <section className="card space-y-3">
+        <div className="flex items-center justify-between gap-2 flex-wrap">
+          <div>
+            <p className="section-label">Cobertura ao vivo (conferência contra o site)</p>
+            <p className="text-xs text-text-muted">
+              Enumera AO VIVO as reuniões que cada site publica e compara com o que temos — a prova de que não falta documento.
+            </p>
+          </div>
+          <button
+            type="button"
+            className="btn-secondary text-xs"
+            onClick={() => coberturaMutation.mutate()}
+            disabled={coberturaMutation.isPending || demoEnabled}
+            title="Busca AO VIVO as reuniões de ANTT/ARTESP/ANM e compara com o banco por número de reunião."
+          >
+            {coberturaMutation.isPending ? "Conferindo os sites…" : "Conferir contra os sites"}
+          </button>
+        </div>
+        {coberturaMutation.isError && (
+          <p className="text-xs text-error">Falha ao conferir os sites agora. Tente de novo.</p>
+        )}
+        {coberturaMutation.data && (
+          <>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left text-xs text-text-muted border-b border-border">
+                    <th className="py-1 pr-3 font-medium">Agência</th>
+                    <th className="py-1 px-2 font-medium text-right">Reuniões no site</th>
+                    <th className="py-1 px-2 font-medium text-right">Temos (c/ deliberação)</th>
+                    <th className="py-1 pl-2 font-medium">Faltando (nº de reunião)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {coberturaMutation.data.por_agencia.map((a) => (
+                    <tr key={a.sigla} className="border-b border-border/50 align-top">
+                      <td className="py-1.5 pr-3 font-medium text-text-primary">{a.sigla}</td>
+                      <td className="py-1.5 px-2 text-right">{a.erro ? "—" : a.site_total}</td>
+                      <td className="py-1.5 px-2 text-right">{a.erro ? "—" : a.banco_total}</td>
+                      <td className="py-1.5 pl-2">
+                        {a.erro ? (
+                          <span className="text-warning">{a.erro}</span>
+                        ) : a.faltando.length === 0 ? (
+                          <span className="text-success">nada — completo ✓</span>
+                        ) : (
+                          <span className="text-warning">{a.faltando.map((n) => `${n}ª`).join(", ")}</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {(coberturaMutation.data.alertas ?? []).length > 0 && (
+              <ul className="text-xs text-text-muted space-y-1 list-disc pl-4">
+                {coberturaMutation.data.alertas.map((a, i) => <li key={i}>{a}</li>)}
+              </ul>
+            )}
+            {coberturaMutation.data.gerado_em && (
+              <p className="text-[11px] text-text-muted">
+                Conferido ao vivo em {new Date(coberturaMutation.data.gerado_em).toLocaleString("pt-BR")}.
+              </p>
+            )}
+          </>
+        )}
+      </section>
 
       {/* ── Fontes monitoradas ───────────────────────────────────────────── */}
       <section className="card space-y-3">
