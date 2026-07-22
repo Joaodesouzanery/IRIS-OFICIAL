@@ -629,32 +629,47 @@ function extractSeiUrl(text: string) {
 }
 
 // Dispositivos de voto ANTT → RESULTADOS válidos (utils.ts RESULTADOS). NEGATIVOS
-// primeiro ("negar provimento" contém "provimento"). O QA achou que a versão
-// anterior só cobria aprov/indefer/autoriz/ratifico — "pelo deferimento", "dar
-// provimento", "homologar", "conhecer e prover" etc. voltavam null e o voto era
-// descartado. Princípio inalterado: sem padrão claro → null + warning (nunca chutar).
-function inferResultado(text: string): string | null {
+// primeiro ("negar provimento" contém "provimento"; "recurso improvido" contém "provido").
+// O QA achou que a versão anterior só cobria aprov/indefer/autoriz/ratifico — "pelo
+// deferimento", "dar provimento", "homologar", "conhecer e prover", "rejeitar", "acolher",
+// "desprover", "referendar" voltavam null e o voto era descartado. Princípio inalterado:
+// sem padrão claro (ex.: "manter/reformar a decisão", ambíguos) → null + warning (nunca chutar).
+export function inferResultado(text: string): string | null {
   const value = normalize(text);
   // Negativos — "indefer" (indeferimento/indeferido) E "indefir" (indeferir/indefiro,
   // 1ª pessoa do dispositivo, que "indefer" NÃO casava). Ambos antes dos positivos.
+  // "nao prover/provido/provimento", "desprovido", "improvido" precisam SAIR aqui antes
+  // do positivo "provido"/"prover"; "rejeitar" e "nao acolher" são recusas claras.
   if (
     value.includes("indefer") || value.includes("indefir") ||
-    /\bnego\s+provimento\b|\bnegar(?:-se)?\s+provimento\b|\bnegado\s+provimento\b/.test(value) ||
-    /\bnao\s+conhecer\b|\bnao\s+conhecimento\b|\bpelo\s+nao\s+provimento\b/.test(value) ||
+    /\bneg(?:o|ar(?:-se)?|ado)\s+provimento\b/.test(value) ||
+    /\bnao\s+prov(?:er|ido|imento|ejo)\b|\bpelo\s+nao\s+provimento\b|\bdesprov\w*|\bimprovid\w*/.test(value) ||
+    /\bnao\s+conhecer\b|\bnao\s+conhecimento\b/.test(value) ||
+    /\brejeit\w*|\breprov\w*/.test(value) ||
+    /\bnao\s+acolh\w*|\bdeix\w+\s+de\s+acolher\b/.test(value) ||
     value.includes("improcedente") || value.includes("improcedencia") ||
     value.includes("cassacao")
   ) return "Indeferido";
   if (value.includes("retirad") && value.includes("pauta")) return "Retirado de Pauta";
+  // Parcial ANTES do deferimento cheio: "dar parcial provimento", "deferimento parcial",
+  // "procedente em parte", "acolher parcialmente" → Parcialmente Deferido (não "Deferido").
+  if (
+    /\bparcial(?:mente)?\s+(?:defer\w+|provid\w+|provimento|procedent\w+|acolh\w+)\b/.test(value) ||
+    /\b(?:defer\w+|provimento|acolh\w+|procedent\w+)\s+(?:em\s+parte|parcial\w*)\b/.test(value)
+  ) return "Parcialmente Deferido";
   // Positivos — "defer" (deferimento/deferido) E "defir" (deferir/defiro). O indefer/
-  // indefir já saiu no bloco negativo acima, então aqui só sobra o positivo.
+  // indefir já saiu no bloco negativo acima, então aqui só sobra o positivo. "prover"/
+  // "provido"/"provejo" e "acolher" são seguros porque suas formas negativas já saíram.
   if (
     value.includes("defer") || value.includes("defir") ||
     /\bd(?:ar|ou|a)\s+provimento\b|\bprovimento\s+ao\s+recurso\b|\bpelo\s+provimento\b/.test(value) ||
+    /\bprover\b|\bprovido\b|\bprovejo\b/.test(value) ||
     /\bconhecer\b.{0,40}\bprov/.test(value) ||  // "conhecer e dar provimento"
+    /\bacolh\w*/.test(value) ||  // acolher/acolhimento/acolhido do pedido/recurso
     value.includes("procedente") || value.includes("procedencia do pedido")
   ) return "Deferido";
   if (value.includes("homolog")) return "Ratificado";
-  if (value.includes("ratific")) return "Ratificado";
+  if (value.includes("ratific") || /\breferend\w*/.test(value)) return "Ratificado";
   if (value.includes("aprov")) return RESULTADO_APROVADO;
   if (value.includes("autoriz")) return "Autorizado";
   if (value.includes("recomend")) return "Recomendado";
