@@ -1,7 +1,7 @@
 # PENDÊNCIAS E OPERAÇÃO — IRIS-Regulação
 
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
-Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 21, jul/2026).
+Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
 ## ⚠️ Plano Vercel GRÁTIS (Hobby): crons NÃO rodam de forma autônoma
 No plano grátis a Vercel agenda no máximo ~2 crons/dia e limita funções a 60s. A Etapa 21
@@ -27,9 +27,13 @@ No plano grátis, a conferência humana semanal é:
    coleta→processa→auto-confirma em loop→recalcula/mescla numa tacada).
 2. Card **"Revisão humana"**: o que sobrar aparece aqui com o motivo (sem direção do voto /
    confiança baixa / relator ambíguo) — clicar "Revisar →" e ajustar no Upload (exceção).
-3. Conferir "Métricas por diretor" (lidos vs inferidos) e "Completude 2026"; **"Gerar
+3. Card **"Cobertura ao vivo"** (Etapa 22): clicar **"Conferir contra os sites"** — é a
+   auditoria que enumera AO VIVO as reuniões que ANTT/ARTESP/ANM publicam e mostra o que
+   FALTA no banco (por nº de reunião). É a prova de "temos TUDO?" e o diagnóstico de coleta:
+   se aparecer "faltam X", rodar "Rodar tudo" de novo ou investigar a fonte da agência.
+4. Conferir "Métricas por diretor" (lidos vs inferidos) e "Completude 2026"; **"Gerar
    relatório"** para o PDF imprimível por diretor.
-4. Na tela **Notícias**: "Coletar Notícias" + "Recuperar imagens" se houver cards sem foto.
+5. Na tela **Notícias**: "Coletar Notícias" + "Recuperar imagens" se houver cards sem foto.
 
 ## Ações manuais recorrentes
 
