@@ -45,6 +45,7 @@ No plano grátis, a conferência humana semanal é:
 | Aplicar migrations | A cada nova migration em `supabase/migrations/` | Supabase SQL Editor (manual, pelo usuário) |
 | Revisar documentos `review_pending` | Quando o card "Revisão humana" > 0 | Dashboard → Upload |
 | Re-coletar notícias (imagens) | Após deploy que melhora o scraper de imagem | POST `/api/v1/noticias/coletar` (ou aguardar cron) — re-resolve imagem/limpa resumo lixo |
+| **Conferir que prod NÃO está em modo demo** | Após qualquer mudança de env na Vercel; se "o sistema não pedir login" | Abrir `/api/v1/system/status` → tem de vir `is_demo:false` / `persistence:"supabase"`. `is_demo:true` = falta `NEXT_PUBLIC_SUPABASE_URL` ou `SUPABASE_SERVICE_ROLE_KEY` na Vercel → app roda SEM login. Setar env + redeploy. |
 
 ## Migrations pendentes de aplicação manual (SQL Editor)
 
@@ -70,6 +71,14 @@ No plano grátis, a conferência humana semanal é:
   CHECK e o insert INTEIRO falha (só `console.warn`), deixando o histórico ~vazio → o health nunca
   vê erro real. Idempotente, varre `pg_constraint` (não confia no nome). **Sem ela, o aviso honesto
   de notícias fica cego a falhas** (não distingue "coletor quebrado" de "fonte quieta").
+- **`20260724120000_harden_security_definer_views.sql`** (Auditoria 5ª rodada, segurança) — 🟡
+  **fecha leitura anon de 2 views**: `reunioes_consolidadas` e `coleta_execucoes` foram criadas sem
+  `security_invoker` → rodam com privilégio do dono e ignoram a RLS das tabelas-base, podendo ser
+  lidas por `anon` via `/rest/v1` (só contagens/status, sem dado pessoal). Aplica `security_invoker=
+  true` + `REVOKE ... FROM anon, authenticated`, guardado por existência. Impacto no app = ZERO (o
+  servidor usa service_role). **Aplicar SÓ se `get_advisors` (security) listar `security_definer_view`
+  para elas**; depois rodar `get_advisors` de novo (deve zerar) + smoke anon em
+  `/rest/v1/reunioes_consolidadas` (deve vir `[]`). **Habilitar Leaked Password Protection no painel.**
 
 ## Datas sensíveis
 
@@ -172,6 +181,20 @@ não-HttpOnly (inerente ao `@supabase/ssr`): aceito; mitigação é a CSP + rigo
 - **`npm audit` residual** (não-bloqueante): `postcss` aninhado no `next` (build-time) → resolver num bump
   de patch do `next` 15.x; `vitest`/`vite` (crítica/alta) são **dev-only** (não vão ao runtime Vercel) →
   `npm audit fix --force` sobe `vitest` p/ 4.x (semver-major, revisar testes) — fazer em janela dedicada.
+
+### Auditoria 5ª rodada (jul/2026) — login minimalista + hardening essencial
+**Corrigido nesta rodada** (commit): **B2/SSRF** — `noticias/adicionar` valida a URL com `assertPublicUrl`
+na fronteira (host interno/loopback/metadata bloqueado antes do fetch, não só o protocolo); **B4** —
+`/system/status` **não devolve `warnings` a chamadas anônimas** (eles nomeavam a env var ausente —
+SERVICE_ROLE/CRON — inclusive em modo real; o DemoBanner usa só `mode_reason`, preservado); **UX** — tela
+de login enxugada para card único (removido o painel de branding). Migration `20260724120000` (views
+`security_definer`) preparada — aplicar só se o advisor flagar. Confirmado: auth ATIVA e endurecida (nada
+removido); a entrada já é auth→sistema (`/`→`/dashboard`→`/login`), sem landing page.
+**Adiados por decisão do usuário ("essencial, sem infra nova"):**
+- **Rate limiting** (login/setup-owner/coleta/upload) — precisa de store compartilhado (Upstash Redis;
+  memória por processo não serve no serverless). Nova dependência + env + conta. Prioridade em `setup-owner`.
+- **CSP por nonce** (remover `'unsafe-inline'`/`'unsafe-eval'` de `script-src` em `next.config.mjs`) —
+  invasivo no runtime do Next (middleware injeta nonce por request); risco de regressão visual.
 
 ## Invariantes de operação (não quebrar)
 

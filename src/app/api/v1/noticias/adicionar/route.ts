@@ -10,6 +10,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { extractNewsFromUrl } from "@/lib/server/news-collector";
+import { assertPublicUrl } from "@/lib/server/url-guard";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs"; // fetch do artigo + validação de imagem
@@ -30,12 +31,13 @@ export async function POST(req: NextRequest) {
   if (!rawUrl) {
     return NextResponse.json({ error: "Informe a URL da notícia (campo 'url')." }, { status: 400 });
   }
-  let parsedUrl: URL;
+  // Guard anti-SSRF na FRONTEIRA (mesmo helper de monitoramento/sites e resilient-fetch):
+  // rejeita protocolo não-http(s) E host interno/loopback/metadata (169.254…) antes de
+  // qualquer fetch. resilient-fetch ainda revalida cada redirect a jusante.
   try {
-    parsedUrl = new URL(rawUrl);
-    if (parsedUrl.protocol !== "https:" && parsedUrl.protocol !== "http:") throw new Error("protocolo");
+    assertPublicUrl(rawUrl);
   } catch {
-    return NextResponse.json({ error: "URL inválida. Cole o link completo da notícia (https://...)." }, { status: 400 });
+    return NextResponse.json({ error: "URL inválida ou não permitida. Cole o link público completo da notícia (https://...)." }, { status: 400 });
   }
 
   let extracted: Awaited<ReturnType<typeof extractNewsFromUrl>>;

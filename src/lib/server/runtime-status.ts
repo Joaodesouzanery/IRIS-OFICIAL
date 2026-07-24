@@ -44,7 +44,12 @@ export function getRuntimeStatus(userDemo = false, includeSecretsPosture = true)
     has_supabase_url: hasSupabaseUrl,
     persistence: serverDemo ? "demo" : "supabase",
     mode_reason: modeReason,
-    warnings,
+    // Os `warnings` NOMEIAM qual env var falta (SERVICE_ROLE_KEY/CRON_SECRET) — revelam a
+    // postura do deploy. /system/status é pública (bypass do middleware), então só devolvemos
+    // os warnings a chamadas AUTENTICADAS (mesmo gate dos has_*). O DemoBanner (poll anônimo do
+    // useDataSync, sem Bearer) usa só `mode_reason`; a página de monitoramento chama com Bearer
+    // (api.get) e recebe os warnings completos.
+    warnings: includeSecretsPosture ? warnings : [],
   };
   if (includeSecretsPosture) {
     status.has_service_role_key = hasServiceRoleKey;
