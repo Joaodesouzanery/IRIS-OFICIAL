@@ -115,11 +115,12 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       pulados += 1;
       continue;
     }
-    // O crawl COMPLETO da ANTT (até ~120 reuniões) é do cron dedicado /antt/2026/collect;
-    // aqui só um passe leve (novidades do topo) para caber no orçamento da rodada.
-    // deadlineAt desce até os loops dos collectors (parada graciosa dentro da fonte).
+    // O crawl COMPLETO da ANTT (até ~120 reuniões) é do backfill dedicado; aqui um passe leve
+    // (novidades do topo) que cabe no orçamento da rodada. O skip-set torna o custo marginal das
+    // reuniões já capturadas ~zero, então 30/5 varre mais reuniões 2026 por clique sem estourar o
+    // orçamento Hobby (deadlineAt desce aos loops → parada graciosa dentro da fonte).
     const options = site.estrategia === "antt-2026"
-      ? { maxPages: 3, maxMeetings: 15, deadlineAt: deadline }
+      ? { maxPages: 5, maxMeetings: 30, deadlineAt: deadline }
       : { deadlineAt: deadline };
     const result = await processMonitoringSite(db, site, options);
     novosDetectados += result.novos_itens;

@@ -941,6 +941,30 @@ export default function VotosDiretoresPage() {
         )}
         {coberturaMutation.data && (
           <>
+            {(() => {
+              const ags = coberturaMutation.data?.por_agencia ?? [];
+              const totalFaltando = ags.reduce((s, a) => s + (a.erro ? 0 : a.faltando.length), 0);
+              const comErro = ags.filter((a) => a.erro).length;
+              if (totalFaltando > 0) {
+                return (
+                  <div className="rounded-md border border-error/30 bg-error/10 px-3 py-2 text-sm font-medium text-error">
+                    ⚠ Faltam {totalFaltando} reunião(ões) publicada(s) nos sites e ausente(s) no banco — rode &ldquo;Rodar tudo&rdquo; e confira as agências abaixo.
+                  </div>
+                );
+              }
+              if (comErro === 0) {
+                return (
+                  <div className="rounded-md border border-success/30 bg-success/10 px-3 py-2 text-sm font-medium text-success">
+                    ✓ Cobertura completa — todas as reuniões publicadas nos sites estão no banco.
+                  </div>
+                );
+              }
+              return (
+                <div className="rounded-md border border-warning/30 bg-warning/10 px-3 py-2 text-xs text-warning">
+                  {comErro} agência(s) não puderam ser conferidas agora (o site não respondeu) — tente de novo.
+                </div>
+              );
+            })()}
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
