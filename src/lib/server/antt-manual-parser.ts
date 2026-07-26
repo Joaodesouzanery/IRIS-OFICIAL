@@ -76,12 +76,17 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
   // Resultado do voto individual: NUNCA defaulta para "Aprovado" — a direção do voto
   // (favorável/contrário) é exatamente o dado que não pode ser chutado. Sem conclusão
   // parseada → null + warning de qualidade (vai para revisão humana).
+  const voteConclusion = documentType === "voto_individual"
+    ? extractVoteConclusion(clean)
+    : { text: null as string | null, fromTail: false };
   const votoResultado = documentType === "voto_individual"
-    ? inferResultado(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""} ${extractVoteConclusion(clean) ?? ""}`)
+    ? inferResultado(`${firstProcess.assunto ?? ""} ${firstProcess.decisao ?? ""} ${voteConclusion.text ?? ""}`)
     : null;
   const warnings = buildWarnings(documentType, meeting, firstProcess, director, processes, {
     votoResultado,
     directorAmbiguo: directorInfo.ambiguo,
+    directorSoIniciais: directorInfo.soIniciais,
+    resultadoSoCauda: documentType === "voto_individual" && votoResultado !== null && voteConclusion.fromTail,
   });
   const tipoDocumento = mapToPlatformDocumentType(documentType);
   const numeroDeliberacao = extractAnttDocumentNumber(clean, filename, documentType);
@@ -108,7 +113,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     pauta_interna: false,
     area_regulatoria,
     resumo_pleito: firstProcess.decisao,
-    fundamento_decisao: documentType === "voto_individual" ? extractVoteConclusion(clean) : firstProcess.decisao,
+    fundamento_decisao: documentType === "voto_individual" ? voteConclusion.text : firstProcess.decisao,
     nomes_votacao: documentType === "voto_individual" && director ? [director] : [],
     nomes_votacao_contra: [],
   };
@@ -286,7 +291,7 @@ const NUMEROS_ANO_EXTENSO: Record<string, number> = {
 // é registrar o voto no nome errado. Por isso as INICIAIS (2-3 letras, corrompíveis e de
 // tabela fixa) são só uma DICA: quando também há um nome textual (RELATORIA/assinatura)
 // e ele DIVERGE do canônico das iniciais, retornamos ambíguo (sem voto automático).
-function extractDirector(text: string, filename: string, type: AnttManualDocumentType): { nome: string | null; ambiguo: boolean } {
+function extractDirector(text: string, filename: string, type: AnttManualDocumentType): { nome: string | null; ambiguo: boolean; soIniciais: boolean } {
   const signature = firstMatch(text.slice(-3000), /Documento assinado eletronicamente por\s+([^,]+),\s+Diretor/i)
     ?? firstMatch(text.slice(-2000), /([A-ZÁÉÍÓÚÂÊÔÃÕÇ ]{8,})\s+Diretor(?:a)?\b/i);
   const signatureName = signature ? titleCase(signature) : null;
@@ -306,15 +311,17 @@ function extractDirector(text: string, filename: string, type: AnttManualDocumen
     if (fromInitials && textualName) {
       // Cruzamento: o nome textual precisa pertencer ao mesmo diretor das iniciais.
       return sameAnttDirector(fromInitials, textualName)
-        ? { nome: fromInitials, ambiguo: false }
-        : { nome: null, ambiguo: true };
+        ? { nome: fromInitials, ambiguo: false, soIniciais: false }
+        : { nome: null, ambiguo: true, soIniciais: false };
     }
-    if (fromInitials) return { nome: fromInitials, ambiguo: false };
-    if (textualName) return { nome: textualName, ambiguo: false };
-    return { nome: null, ambiguo: false };
+    // Só iniciais, SEM nome textual p/ conferir → DAA↔DAB (1 letra) grava no diretor errado sem
+    // aviso. Marca soIniciais p/ o buildWarnings mandar à revisão (não bloqueia). F3.
+    if (fromInitials) return { nome: fromInitials, ambiguo: false, soIniciais: true };
+    if (textualName) return { nome: textualName, ambiguo: false, soIniciais: false };
+    return { nome: null, ambiguo: false, soIniciais: false };
   }
 
-  return { nome: signatureName, ambiguo: false };
+  return { nome: signatureName, ambiguo: false, soIniciais: false };
 }
 
 function sameAnttDirector(canonical: string, textualName: string): boolean {
@@ -376,7 +383,7 @@ function extractSingleProcess(text: string, filename = "", type: AnttManualDocum
     const assunto = extractVoteObject(text)
       ?? between(text, /Tratam os autos do\s+/i, /\.\s*2\.|$/i)
       ?? between(text, /Assunto:\s*/i, /\s+Documento assinado|$/i);
-    const decisao = extractVoteConclusion(text);
+    const decisao = extractVoteConclusion(text).text;
     const relator = firstMatch(`${filename} ${text.slice(0, 1200)}`, /Voto\s+([A-Z]{2,3})\b/i);
     return {
       item_numero: "1",
@@ -395,7 +402,7 @@ function extractSingleProcess(text: string, filename = "", type: AnttManualDocum
     ?? between(text, /Interessado:\s*/i, /\s+Assunto:\s*/i);
   const assunto = between(text, /Tratam os autos do\s+/i, /\.\s*2\.|$/i)
     ?? between(text, /Assunto:\s*/i, /\s+Documento assinado|$/i);
-  const decisao = extractVoteConclusion(text);
+  const decisao = extractVoteConclusion(text).text;
   const relator = firstMatch(text, /Voto\s+([A-Z]{3})\s+\d+/i);
   return {
     item_numero: "1",
@@ -567,7 +574,7 @@ function extractNearestRelator(prefix: string) {
   return last ? titleCase(last) : null;
 }
 
-function extractVoteConclusion(text: string) {
+function extractVoteConclusion(text: string): { text: string | null; fromTail: boolean } {
   const END = /\s+Documento assinado eletronicamente|$/i;
   // Lead-ins do dispositivo/voto (QA Etapa 19: a maioria dos votos ANTT ficava sem
   // `resultado` porque o dispositivo usa fórmulas variadas). Ordem não importa (1º que casa).
@@ -587,12 +594,20 @@ function extractVoteConclusion(text: string) {
     ?? between(text, /(?:DISPOSITIVO|CONCLUS[AÃ]O)\s*:?\s*/i, END)
     ?? between(text, /ENCAMINHAMENTO:\s*/i, /\s+(?:Bras[ÃƒÃ­i]lia|Documento assinado eletronicamente|$)/i)
     ?? between(text, /EMENTA\s*:\s*/i, /\s+(?:RELAT[ÃƒÃ“O]RIO|I\s+-\s+RELAT|$)/i);
-  if (conclusion) return conclusion.slice(0, 2000);
-  // Rede final: o dispositivo assinado fica no FIM do documento. Varre a cauda
-  // (últimos ~3000 chars) para o inferResultado pescar o verbo (defiro/dou provimento…).
-  // Só entra aqui quando nenhum lead-in casou — nunca sobrepõe uma conclusão explícita.
-  const tail = text.slice(-3000).trim();
-  return tail.length >= 40 ? tail.slice(0, 2000) : null;
+  if (conclusion) return { text: conclusion.slice(0, 2000), fromTail: false };
+  // Rede final: o dispositivo assinado fica no FIM do documento. Antes varríamos os últimos 3000
+  // chars CRUS, o que podia pescar um verbo de trecho NÃO relacionado ("...que aprovou...") e
+  // INVENTAR direção (P6). Agora escopa à janela final (~2500) e, se houver CABEÇALHO de dispositivo
+  // nela, começa APÓS a última âncora. Marca fromTail p/ o caller avisar (revisar direção). F4.
+  // NÃO ancoramos em "VOTO"/"É O VOTO": "É o voto." é o FECHO da peça (vem DEPOIS do dispositivo) e
+  // ancorar nele perderia o verbo decisório anterior (regressão de recall).
+  const anchor = /\b(?:DISPOSITIVO|CONCLUS[AÃ]O|DECIDO|DECIS[AÃ]O)\b/gi;
+  const window = text.slice(-2500);
+  let lastIdx = -1;
+  let m: RegExpExecArray | null;
+  while ((m = anchor.exec(window)) !== null) lastIdx = m.index;
+  const region = (lastIdx >= 0 ? window.slice(lastIdx) : window).trim();
+  return region.length >= 40 ? { text: region.slice(0, 2000), fromTail: true } : { text: null, fromTail: false };
 }
 
 function extractVoteNumber(text: string, filename: string) {
@@ -704,7 +719,7 @@ function buildWarnings(
   firstProcess: AtaPreviewItem,
   director: string | null,
   items: AtaPreviewItem[],
-  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean },
+  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean; directorSoIniciais?: boolean; resultadoSoCauda?: boolean },
 ) {
   const warnings: string[] = [];
   if (!meeting.numero && type !== "voto_individual") warnings.push("ANTT: número da reunião não identificado com alta confiança.");
@@ -712,6 +727,12 @@ function buildWarnings(
   if (type === "voto_individual" && !director) warnings.push("ANTT: diretor autor do voto não identificado.");
   if (type === "voto_individual" && extra?.directorAmbiguo) {
     warnings.push("ANTT: iniciais e nome do relator DIVERGEM — autor do voto ambíguo; revisar antes de atribuir.");
+  }
+  if (type === "voto_individual" && extra?.directorSoIniciais) {
+    warnings.push("ANTT: autor do voto inferido SÓ pelas iniciais (sem nome textual para conferir) — colisão de iniciais (ex.: DAA↔DAB) possível; revisar.");
+  }
+  if (type === "voto_individual" && extra?.resultadoSoCauda) {
+    warnings.push("ANTT: direção do voto inferida da CAUDA do documento (sem fórmula de dispositivo explícita) — revisar favorável/contrário.");
   }
   if (type === "voto_individual" && !extra?.votoResultado) {
     warnings.push("ANTT: conclusão do voto não identificada — resultado NÃO inferido; revisar a direção do voto (favorável/contrário).");

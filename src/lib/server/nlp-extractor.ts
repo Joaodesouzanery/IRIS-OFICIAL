@@ -52,6 +52,15 @@ const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERI
 // documentos processados em sequência davam falso negativo (bug pego pelo corpus real).
 const RE_UNANIMIDADE = /(?:por\s+unanimidade\s+dos?\s+votos?|por\s+unanimidade\s+dos?\s+presentes?|por\s+unanimidade|unanimidade\s+dos?\s+votos?|unanimidade\s+dos?\s+presentes?|aprovad[oa]\s+por\s+unanimidade)/i;
 
+// Nega unanimidade: "não foi aprovado por unanimidade", "não houve unanimidade", "sem unanimidade".
+// Janela curta ({0,3} palavras entre "não" e "unanimidade") p/ não capturar um "não" distante. Sem a
+// guarda, "não ... por unanimidade" disparava default-favor/inferência de aprovação (falso). F5.
+// Lookahead `(?!obstante)` exclui o concessivo "não obstante a unanimidade" (que AFIRMA a unanimidade).
+const RE_UNANIMIDADE_NEGADA = /\bn[aã]o\s+(?!obstante\b)(?:\S+\s+){0,3}unanimidade|\bsem\s+unanimidade/i;
+export function hasUnanimidade(text: string): boolean {
+  return RE_UNANIMIDADE.test(text) && !RE_UNANIMIDADE_NEGADA.test(text);
+}
+
 // Voto dissidente / divergente — extrai o nome do diretor que votou contra.
 // Cobre "voto divergente/dissidente/contrário/vencido do Diretor X" e "(restando) vencido o Diretor X".
 const RE_VOTO_DISSIDENTE = new RegExp(
@@ -125,10 +134,11 @@ export function extractDivergentesNomeados(text: string, roleMap: Record<string,
   return out;
 }
 
-// Marcadores de item CONTESTADO (maioria/empate/qualidade/divergência) — quando presentes e o
-// dissidente NÃO pôde ser atribuído, é desonesto gravar todos como favoráveis (fabricaria
-// unanimidade). O item vai para revisão em vez de inventar voto.
-const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|diverg[êe]nci/i;
+// Marcadores de item CONTESTADO (maioria/empate/qualidade/divergência/vencido) — quando presentes e
+// o dissidente NÃO pôde ser atribuído, é desonesto gravar todos como favoráveis (fabricaria
+// unanimidade). O item vai para revisão em vez de inventar voto. Usado no ramo default-favor.
+// (não inclui "vencid[oa]" isolado p/ evitar "prazo vencido"; só as formas ligadas a voto).
+const RE_CONTESTADO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
 
 // ─── Datas ─────────────────────────────────────────────────────────────────
 // Ausência: "ausente o Diretor X", "ausência do Diretor X", "X (esteve) ausente". Usa NOME (acentos OK).
@@ -606,13 +616,10 @@ export function extractFields(text: string): ExtractedFields {
     )[0];
   }
 
-  // Fallback: "unanimidade de votos" → aprovação implícita
-  if (!resultado) {
-    RE_UNANIMIDADE.lastIndex = 0;
-    if (RE_UNANIMIDADE.exec(text)) {
-      resultado = "Aprovado por Unanimidade";
-      decisoes_todas.push("Aprovado por Unanimidade");
-    }
+  // Fallback: "unanimidade de votos" → aprovação implícita (exceto "não/sem unanimidade" — F5)
+  if (!resultado && hasUnanimidade(text)) {
+    resultado = "Aprovado por Unanimidade";
+    decisoes_todas.push("Aprovado por Unanimidade");
   }
 
   // Pauta interna: keywords administrativas ou ausência de interessado externo
@@ -695,8 +702,8 @@ export function extractFields(text: string): ExtractedFields {
   }
 
   // ─── Unanimidade ──────────────────────────────────────────────────────────
-  RE_UNANIMIDADE.lastIndex = 0;
-  const unanimidade_detectada = RE_UNANIMIDADE.test(text);
+  // Negação-aware (F5): "não/sem unanimidade" NÃO conta como unânime.
+  const unanimidade_detectada = hasUnanimidade(text);
 
   // ─── Nomes de diretores: contexto + bloco de assinatura ─────────────────
   const nomes_votacao: string[] = [];
@@ -841,8 +848,10 @@ export function extractFields(text: string): ExtractedFields {
   }
 
   // Contestado sem atribuição de dissidente → NÃO fabricar unanimidade. Item de maioria/empate/
-  // voto de qualidade em que o favor veio SÓ do default e nenhum contra foi resolvido: esvazia o
-  // pool para o item ir à REVISÃO em vez de gravar todos como favoráveis (que seria falso). QA jul/2026.
+  // voto de qualidade/vencido/prevaleceu em que o favor veio SÓ do default e nenhum contra foi
+  // resolvido: esvazia o pool para o item ir à REVISÃO em vez de gravar todos como favoráveis (que
+  // seria falso). SÓ o ramo default-favor (não o de unanimidade DECLARADA, que preserva votos
+  // explícitos e cujo esvaziamento seria desfeito pela inferência de mandato). QA jul/2026 (F2).
   if (favorPorDefault && nomes_votacao_contra.length === 0 && RE_CONTESTADO.test(text)) {
     nomes_votacao.length = 0;
     nomes_votacao_favor.length = 0;

@@ -253,7 +253,11 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   const votoText = reVoto.exec(rawText)?.[1]?.trim() ?? null;
 
   let resultado: string | null = null;
-  const unanimidade = /unanimidade/i.test(rawText);
+  // Negação-aware (F5): "não/sem unanimidade" NÃO conta — senão o item indeferido-por-maioria
+  // cairia no ramo de unanimidade e viraria "Aprovado por Unanimidade".
+  const unanimidade =
+    /unanimidade/i.test(rawText) &&
+    !/\bn[aã]o\s+(?!obstante\b)(?:\S+\s+){0,3}unanimidade|\bsem\s+unanimidade/i.test(rawText);
 
   // Sobrestamento/retirada/pedido de vista valem sobre o item INTEIRO e têm PRECEDÊNCIA: mesmo que
   // o "Voto:" traga uma proposta positiva ("VOTO pela aprovação…"), a deliberação NÃO se concluiu
@@ -348,16 +352,22 @@ function findParentKey(itemNumero: string): string | null {
   return match?.[1] ?? null;
 }
 
-function inferResultadoFromText(text: string, unanimidade: boolean): string | null {
+export function inferResultadoFromText(text: string, unanimidade: boolean): string | null {
   // "ped(iu|ido) (de) vista(s)" cobre singular+plural; "voto vistas" mantido no PLURAL de
   // propósito (não casar o rótulo de assunto "Voto Vista", que é item EM decisão, não suspenso).
   if (/retirad[oa]\s+de\s+pauta|ped(?:iu|ido)\s+(?:de\s+)?vistas?|voto\s+vistas|sobrest/i.test(text)) {
     return "Retirado de Pauta";
   }
-  if (/indeferid[oa]|negad[oa]|improcedente|n[aã]o\s+dar\s+provimento|negar\s+provimento/i.test(text)) {
+  // NEGATIVO antes do positivo. `\bindefer\w*` cobre indeferido/indeferida E as formas que o
+  // particípio isolado deixava escapar — indeferi(mento|u|r) e o presente INDEFERE — que caíam no
+  // ramo aprovado/unanimidade e INVERTIAM o resultado (item indeferido virava "Aprovado por
+  // Unanimidade"). Alinha com o RE_RESULTADO do nlp-extractor (que já cobre essas formas).
+  if (/\bindefer\w*|negad[oa]|improcedente|n[aã]o\s+dar\s+provimento|negar\s+provimento/i.test(text)) {
     return "Indeferido";
   }
-  if (/deferid[oa]|dar\s+provimento|provimento\s+ao/i.test(text)) {
+  // `\bdefer\w*` (defere/deferir/deferimento/deferid[oa]); o indefer- já saiu no bloco negativo acima
+  // e não casa aqui (sem \b antes de "defer" em "indeferido").
+  if (/\bdefer\w*|dar\s+provimento|provimento\s+ao/i.test(text)) {
     return "Deferido";
   }
   if (/aprovad[oa]/i.test(text) || unanimidade) {
