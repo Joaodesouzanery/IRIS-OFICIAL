@@ -5,7 +5,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type {
   DashboardOverview, MicrotemaStats, DiretorOverviewItem,
-  Deliberacao, DeliberacaoPaginada, Agencia, BoletimSchedule,
+  Deliberacao, DeliberacaoPaginada, Agencia, BoletimSchedule, MandatosAnalytics,
 } from "@/types";
 import { getMicrotemaLabel, getAreaRegulatoriaLabel, formatNumber, formatDate, escapeHtml, cn } from "@/lib/utils";
 import {
@@ -46,6 +46,11 @@ const SECTIONS: Section[] = [
 
 // ── Newsletter HTML builder ────────────────────────────────────────────────
 
+// Mesma fórmula composta da Governança/Analytics Institucional (não deixar divergir).
+function calcScore(consenso: number, deferimento: number, qualidade: number, sancao: number) {
+  return Math.round(consenso * 0.3 + deferimento * 0.25 + qualidade * 0.25 + (100 - sancao) * 0.2);
+}
+
 function buildHtml(opts: {
   selectedSections: string[];
   periodo: string;
@@ -53,9 +58,10 @@ function buildHtml(opts: {
   microtemas: MicrotemaStats[] | undefined;
   diretores: DiretorOverviewItem[] | undefined;
   deliberacoes: Deliberacao[];
+  mandatos: MandatosAnalytics | undefined;
   agencia: string;
 }) {
-  const { selectedSections: sel, periodo, overview, microtemas, diretores, deliberacoes, agencia } = opts;
+  const { selectedSections: sel, periodo, overview, microtemas, diretores, deliberacoes, mandatos, agencia } = opts;
   const today = new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
   const ag = agencia || "Todas as Agências";
 
@@ -164,6 +170,49 @@ function buildHtml(opts: {
       </div>`).join("")}
     </td></tr>` : "";
 
+  // Empresas reguladas (Top 5) — derivadas do `interessado` das deliberações do período.
+  const empresaCounts = new Map<string, number>();
+  for (const d of deliberacoes) {
+    const nome = (d.interessado ?? "").trim();
+    if (nome) empresaCounts.set(nome, (empresaCounts.get(nome) ?? 0) + 1);
+  }
+  const empresasOrdenadas = [...empresaCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const empresasHtml = sec("empresas") && empresasOrdenadas.length ? `
+    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Empresas Reguladas (Top 5)</h2>
+      ${empresasOrdenadas.map(([nome, total], i) => `
+      <div style="margin-bottom:8px">
+        <p style="margin:0;font-size:12px;color:#a1a1aa">${i + 1}. ${escapeHtml(nome)} — <span style="color:#f4f4f5">${formatNumber(total)}</span> deliberação(ões)</p>
+      </div>`).join("")}
+    </td></tr>` : "";
+
+  // Análise de consenso — taxa de consenso vs litígio (mandatos/analytics).
+  const consensoHtml = sec("consenso") && mandatos ? `
+    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Análise de Consenso</h2>
+      <table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:50%">
+          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Consenso</p>
+          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#22c55e;font-family:monospace">${mandatos.taxa_consenso}</p>
+        </td>
+        <td width="8"></td>
+        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:50%">
+          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Litígio</p>
+          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f97316;font-family:monospace">${mandatos.taxa_litigio}</p>
+        </td>
+      </tr></table>
+    </td></tr>` : "";
+
+  // Taxa de governança — score composto (mesma fórmula da tela de Governança).
+  const govScore = overview && mandatos
+    ? calcScore(parseFloat(mandatos.taxa_consenso), parseFloat(overview.taxa_deferimento), (overview.avg_confidence ?? 0) * 100, parseFloat(mandatos.taxa_sancao))
+    : null;
+  const governancaHtml = sec("governanca") && govScore != null ? `
+    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Taxa de Governança</h2>
+      <p style="margin:0;font-size:13px;color:#a1a1aa">Score institucional agregado: <span style="color:#22c55e;font-size:22px;font-weight:700;font-family:monospace">${govScore}</span><span style="color:#71717a">/100</span></p>
+    </td></tr>` : "";
+
   return `<!DOCTYPE html>
 <html lang="pt-BR">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -193,6 +242,9 @@ function buildHtml(opts: {
       ${areasHtml}
       ${setoresHtml}
       ${diretoresHtml}
+      ${empresasHtml}
+      ${consensoHtml}
+      ${governancaHtml}
     </table>
   </td></tr>
 
@@ -253,6 +305,10 @@ export default function BoletimPage() {
     queryFn: () => api.get<DeliberacaoPaginada>(`/deliberacoes?limit=30${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
   });
   const deliberacoes: Deliberacao[] = deliberacoesPag?.data ?? [];
+  const { data: mandatos } = useQuery({
+    queryKey: ["mandatos-analytics", agenciaId],
+    queryFn: () => api.get<MandatosAnalytics>(`/mandatos/analytics${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+  });
 
   const { data: schedulesData, isLoading: loadSchedules } = useQuery({
     queryKey: ["boletim", "schedules"],
@@ -279,7 +335,7 @@ export default function BoletimPage() {
   // ── Derived HTML ──────────────────────────────────────────────────────────
 
   const html = buildHtml({
-    selectedSections, periodo, overview, microtemas, diretores, deliberacoes,
+    selectedSections, periodo, overview, microtemas, diretores, deliberacoes, mandatos,
     agencia: (agencias ?? []).find((a) => a.id === agenciaId)?.sigla ?? "",
   });
 

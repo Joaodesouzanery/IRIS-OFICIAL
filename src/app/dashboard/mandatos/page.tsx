@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { cn, formatDate, getMicrotemaLabel } from "@/lib/utils";
+import { cn, formatDate, getMicrotemaLabel, isResultadoPositivo } from "@/lib/utils";
 import type {
   Mandato, Agencia, MandatosStats, MandatosAnalytics,
   VotoMatrixRow, VotoDistribution, VotoSector,
@@ -153,7 +153,7 @@ export default function MandatosPage() {
   const decisaoPieData = (analytics?.distribuicao_decisao ?? []).map((d, i) => ({
     name: d.resultado,
     value: d.count,
-    color: d.resultado === "Deferido" ? "#22c55e"
+    color: isResultadoPositivo(d.resultado) ? "#22c55e"
          : d.resultado === "Indeferido" ? "#ef4444"
          : ["#f97316", "#8b5cf6", "#06b6d4", "#f59e0b"][i % 4],
   }));

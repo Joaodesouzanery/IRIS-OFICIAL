@@ -1,9 +1,40 @@
 "use client";
 
 import Link from "next/link";
+import { useQuery } from "@tanstack/react-query";
 import { ShieldCheck, TrendingUp, ArrowRight } from "lucide-react";
+import { api } from "@/lib/api";
+import type { DashboardOverview, MandatosAnalytics } from "@/types";
+
+// Mesma fórmula composta da tela de Governança (não deixar divergir): consenso 0.30 +
+// deferimento 0.25 + qualidade(IA) 0.25 + (100 - sanção) 0.20.
+function calcScore(consenso: number, deferimento: number, qualidade: number, sancao: number) {
+  return Math.round(consenso * 0.3 + deferimento * 0.25 + qualidade * 0.25 + (100 - sancao) * 0.2);
+}
 
 export default function AnalyticsInstitucionalPage() {
+  const { data: overview } = useQuery({
+    queryKey: ["overview"],
+    queryFn: () => api.get<DashboardOverview>("/dashboard/overview"),
+  });
+  const { data: mandatos } = useQuery({
+    queryKey: ["mandatos-analytics"],
+    queryFn: () => api.get<MandatosAnalytics>("/mandatos/analytics"),
+  });
+
+  const avgConf = (overview?.avg_confidence ?? 0) * 100;
+  const taxaConsenso = parseFloat(mandatos?.taxa_consenso ?? "0");
+  const pctDeferimento = parseFloat(overview?.taxa_deferimento ?? "0");
+  const taxaSancao = parseFloat(mandatos?.taxa_sancao ?? "0");
+  const hasData = Boolean(overview && mandatos);
+  const scoreMedio = hasData ? calcScore(taxaConsenso, pctDeferimento, avgConf, taxaSancao) : null;
+
+  const kpis = [
+    { label: "Score Médio", value: scoreMedio != null ? String(scoreMedio) : "—", hint: "Qualidade agregada" },
+    { label: "Taxa de Consenso", value: hasData ? `${taxaConsenso.toFixed(0)}%` : "—", hint: "Unanimidade" },
+    { label: "Qualidade IA", value: hasData ? `${avgConf.toFixed(0)}%` : "—", hint: "Confiança extração" },
+  ];
+
   const modules = [
     {
       href: "/dashboard/governanca",
@@ -58,17 +89,13 @@ export default function AnalyticsInstitucionalPage() {
         })}
       </div>
 
-      {/* KPI summary — placeholder pulling from overview */}
+      {/* KPI summary — dados reais da fonte única (/dashboard/overview + /mandatos/analytics) */}
       <div className="card border-border/50">
         <p className="text-xs text-text-muted font-mono uppercase tracking-wider mb-3">
           Indicadores Institucionais Rápidos
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {[
-            { label: "Score Médio",         value: "—", hint: "Qualidade agregada" },
-            { label: "Taxa de Consenso",    value: "—", hint: "Unanimidade" },
-            { label: "Qualidade IA",        value: "—", hint: "Confiança extração" },
-          ].map((kpi) => (
+          {kpis.map((kpi) => (
             <div key={kpi.label} className="space-y-1">
               <p className="text-xs text-text-label font-mono uppercase tracking-wider">{kpi.label}</p>
               <p className="text-2xl font-mono font-semibold text-text-primary">{kpi.value}</p>

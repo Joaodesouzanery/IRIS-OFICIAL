@@ -46,6 +46,7 @@ No plano grátis, a conferência humana semanal é:
 | Revisar documentos `review_pending` | Quando o card "Revisão humana" > 0 | Dashboard → Upload |
 | Re-coletar notícias (imagens) | Após deploy que melhora o scraper de imagem | POST `/api/v1/noticias/coletar` (ou aguardar cron) — re-resolve imagem/limpa resumo lixo |
 | **Conferir que prod NÃO está em modo demo** | Após qualquer mudança de env na Vercel; se "o sistema não pedir login" | Abrir `/api/v1/system/status` → tem de vir `is_demo:false` / `persistence:"supabase"`. `is_demo:true` = falta `NEXT_PUBLIC_SUPABASE_URL` ou `SUPABASE_SERVICE_ROLE_KEY` na Vercel → app roda SEM login. Setar env + redeploy. |
+| **Recomputar derivadas da fonte única** (Hobby não tem cron p/ isso) | Após ingestão grande de votos; semanalmente | `empresas/backfill` (preenche `empresa_id` → visões por empresa), `qualidade-regulatoria/coletas/derivadas/run` (evidências de qualidade a partir de votos), `votos/recalcular-divergencia` e `votos/reprocessar-abstencoes`. Sem isso, Qualidade/Empresas ficam estagnadas em modo real. |
 
 ## Migrations pendentes de aplicação manual (SQL Editor)
 

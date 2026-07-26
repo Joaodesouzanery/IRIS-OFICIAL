@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 import { api } from "@/lib/api";
-import { cn, formatDate, getMicrotemaLabel, getMicrotemaColor } from "@/lib/utils";
+import { cn, formatDate, getMicrotemaLabel, getMicrotemaColor, isResultadoPositivo } from "@/lib/utils";
 import type { DiretorProfile, DiretorOverviewItem } from "@/types";
 import { GaugeChart } from "@/components/charts/GaugeChart";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
@@ -489,7 +489,7 @@ export default function DiretorProfilePage() {
                         {v.resultado ? (
                           <span className={cn(
                             "badge",
-                            v.resultado === "Deferido" ? "badge-green" :
+                            isResultadoPositivo(v.resultado) ? "badge-green" :
                             v.resultado === "Indeferido" ? "badge-red" : "badge-gray"
                           )}>
                             {v.resultado}
