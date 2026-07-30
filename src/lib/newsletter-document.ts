@@ -17,6 +17,14 @@ export interface MinutoRegulacaoItemInput {
   fonte_url?: string | null;
 }
 
+export interface SocialPostInput {
+  rede: "instagram" | "linkedin";
+  url: string;
+  titulo: string;
+  resumo?: string | null;
+  imagem_url?: string | null;
+}
+
 export interface NewsletterDocumentInput {
   assunto: string;
   descricao?: string | null;
@@ -30,7 +38,12 @@ export interface NewsletterDocumentInput {
   template_version?: string | null;
   minuto_textos?: string[];
   minuto_items?: MinutoRegulacaoItemInput[];
+  social_posts?: SocialPostInput[];
 }
+
+// Redes oficiais do IRIS (botões de seguir no e-mail).
+const IRIS_INSTAGRAM_URL = "https://www.instagram.com/iris.regulacao/";
+const IRIS_LINKEDIN_URL = "https://www.linkedin.com/company/irisregulacao/";
 
 export const NEWSLETTER_TEMPLATE_VERSIONS = {
   newsletter_v1: "iris_newsletter_layout_v1",
@@ -172,14 +185,181 @@ function dedupeDocumentImages(noticias: RegulatoryNews[]): RegulatoryNews[] {
   });
 }
 
-export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput) {
+export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput, variant: "email" | "print" = "email") {
   const deduped: NewsletterDocumentInput = { ...input, noticias: dedupeDocumentImages(input.noticias) };
   const version = deduped.template_version ?? "";
   const isV2 = version.endsWith("_v2");
   if (deduped.documento_tipo === "minuto_regulacao") {
     return buildMinutoRegulacaoHtml(deduped, isV2);
   }
-  return buildNewsletterRegulatorioHtml(deduped, isV2 ? NEWSLETTER_THEME_LIGHT : NEWSLETTER_THEME_DARK);
+  // "print" mantém o canvas fixo (PDF bonito); "email" (default) gera HTML table-based
+  // para colar no cliente de e-mail — é o que o usuário copia e envia.
+  if (variant === "print") {
+    return buildNewsletterRegulatorioHtml(deduped, isV2 ? NEWSLETTER_THEME_LIGHT : NEWSLETTER_THEME_DARK);
+  }
+  return buildIrisEmailNewsletterHtml(deduped, isV2);
+}
+
+// ─── Template de E-MAIL (table-based, CSS inline) — identidade IRIS ──────────
+// Para COLAR no cliente de e-mail (Gmail/Outlook): sem <script>/@page/grid, largura 600px,
+// bgcolor p/ Outlook. Navy #0a0e2a + dourado #c2a24a + títulos serifados (Playfair/Georgia).
+
+interface IrisEmailTheme {
+  outer: string; page: string; card: string; cardLine: string;
+  gold: string; goldText: string; text: string; muted: string; footerBg: string;
+}
+const IRIS_EMAIL_DARK: IrisEmailTheme = {
+  outer: "#eceae4", page: "#0a0e2a", card: "#121734", cardLine: "rgba(255,255,255,0.10)",
+  gold: "#c2a24a", goldText: "#0a0e2a", text: "#ffffff", muted: "rgba(255,255,255,0.70)", footerBg: "#07091d",
+};
+const IRIS_EMAIL_LIGHT: IrisEmailTheme = {
+  outer: "#e7e3da", page: "#ffffff", card: "#f7f5ef", cardLine: "rgba(10,14,42,0.12)",
+  gold: "#9a7b1f", goldText: "#ffffff", text: "#16202e", muted: "rgba(22,32,46,0.72)", footerBg: "#f1eee6",
+};
+
+const SERIF_STACK = "'Playfair Display', Georgia, 'Times New Roman', serif";
+const SANS_STACK = "Arial, Helvetica, sans-serif";
+
+function truncateText(value: string, max: number): string {
+  const clean = value.replace(/\s+/g, " ").trim();
+  return clean.length > max ? `${clean.slice(0, max - 1).trimEnd()}…` : clean;
+}
+
+// Imagem de notícia via proxy (gov.br funciona no e-mail a partir do domínio do app).
+function emailNewsImageSrc(item: RegulatoryNews, baseUrl?: string): string | null {
+  if (!item.imagem_url) return null;
+  if (!baseUrl) return item.imagem_url;
+  return `${baseUrl.replace(/\/$/, "")}/api/v1/noticias/imagem?url=${encodeURIComponent(item.imagem_url)}`;
+}
+
+function emailButton(href: string, label: string, t: IrisEmailTheme, filled = true): string {
+  const style = filled
+    ? `background:${t.gold};color:${t.goldText};`
+    : `background:transparent;color:${t.gold};border:1px solid ${t.gold};`;
+  return `<a href="${escapeHtml(href)}" target="_blank" style="display:inline-block;padding:10px 20px;${style}font-family:${SANS_STACK};font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border-radius:6px;">${label}</a>`;
+}
+
+function renderEmailNewsCard(item: RegulatoryNews, input: NewsletterDocumentInput, t: IrisEmailTheme, featured: boolean): string {
+  const img = emailNewsImageSrc(item, input.baseUrl);
+  const tagParts = [
+    item.agencia?.sigla ?? item.agencia_sigla,
+    item.publicado_em ? formatNewsletterDate(new Date(item.publicado_em)) : null,
+  ].filter(Boolean);
+  const tag = tagParts.join(" · ");
+  const override = input.newsletter_textos?.[item.id];
+  const body = truncateText(override ?? item.resumo ?? item.conteudo ?? "", featured ? 320 : 200);
+  const titleSize = featured ? 23 : 18;
+  return `
+    <tr><td style="padding:0 28px 16px;background:${t.page};">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.card};border:1px solid ${t.cardLine};border-radius:10px;">
+        ${img ? `<tr><td style="padding:0;"><img src="${escapeHtml(img)}" alt="" width="544" style="display:block;width:100%;max-width:544px;height:auto;border-radius:10px 10px 0 0;"/></td></tr>` : ""}
+        <tr><td style="padding:18px 20px;">
+          ${tag ? `<p style="margin:0 0 6px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.6px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
+          <h2 style="margin:0 0 8px;font-family:${SERIF_STACK};font-size:${titleSize}px;font-weight:800;line-height:1.15;color:${t.text};">${escapeHtml(item.titulo)}</h2>
+          ${body ? `<p style="margin:0 0 14px;font-family:${SANS_STACK};font-size:14px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
+          ${item.url ? emailButton(item.url, "Ler a matéria &rarr;", t) : ""}
+        </td></tr>
+      </table>
+    </td></tr>`;
+}
+
+function renderEmailSocialCard(post: SocialPostInput, t: IrisEmailTheme): string {
+  const redeLabel = post.rede === "instagram" ? "Instagram" : "LinkedIn";
+  const body = post.resumo ? truncateText(post.resumo, 220) : "";
+  return `
+    <tr><td style="padding:0 28px 16px;background:${t.page};">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.card};border:1px solid ${t.cardLine};border-radius:10px;">
+        ${post.imagem_url ? `<tr><td style="padding:0;"><img src="${escapeHtml(post.imagem_url)}" alt="" width="544" style="display:block;width:100%;max-width:544px;height:auto;border-radius:10px 10px 0 0;"/></td></tr>` : ""}
+        <tr><td style="padding:18px 20px;">
+          <p style="margin:0 0 6px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.6px;text-transform:uppercase;color:${t.gold};">${redeLabel}</p>
+          <h2 style="margin:0 0 8px;font-family:${SERIF_STACK};font-size:18px;font-weight:800;line-height:1.15;color:${t.text};">${escapeHtml(post.titulo)}</h2>
+          ${body ? `<p style="margin:0 0 14px;font-family:${SANS_STACK};font-size:14px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
+          ${post.url ? emailButton(post.url, "Ver post &rarr;", t) : ""}
+        </td></tr>
+      </table>
+    </td></tr>`;
+}
+
+function renderEmailSectionRibbon(title: string, t: IrisEmailTheme): string {
+  return `
+    <tr><td style="padding:14px 28px 10px;background:${t.page};">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr>
+        <td style="padding:7px 14px;background:${t.gold};border-radius:5px;">
+          <span style="font-family:${SANS_STACK};font-size:12px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:${t.goldText};">${escapeHtml(title)}</span>
+        </td>
+      </tr></table>
+    </td></tr>`;
+}
+
+function buildIrisEmailNewsletterHtml(input: NewsletterDocumentInput, isV2 = false): string {
+  const t = isV2 ? IRIS_EMAIL_LIGHT : IRIS_EMAIL_DARK;
+  const generatedAt = input.generatedAt ?? new Date();
+  const date = formatNewsletterDate(generatedAt);
+  const logo = absolutePath("/brand/newsletter-logo-wide.png", input.baseUrl);
+  const noticias = input.noticias;
+  const socialPosts = input.social_posts ?? [];
+  const titulo = input.assunto?.trim() || "Newsletter Regulatório";
+  const intro = input.descricao?.trim();
+
+  const newsCards = noticias.length
+    ? noticias.map((item, i) => renderEmailNewsCard(item, input, t, i === 0)).join("")
+    : `<tr><td style="padding:20px 28px;background:${t.page};font-family:${SANS_STACK};font-size:14px;color:${t.muted};">Selecione notícias para compor a newsletter.</td></tr>`;
+
+  const socialSection = socialPosts.length
+    ? renderEmailSectionRibbon("Nas nossas redes", t) + socialPosts.map((p) => renderEmailSocialCard(p, t)).join("")
+    : "";
+
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="x-apple-disable-message-reformatting"/>
+<title>${escapeHtml(titulo)}</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body style="margin:0;padding:0;background:${t.outer};">
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.outer};padding:24px 0;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;max-width:600px;background:${t.page};border-radius:12px;overflow:hidden;">
+
+        <!-- Header -->
+        <tr><td style="padding:22px 28px;background:${t.page};border-bottom:2px solid ${t.gold};">
+          <table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr>
+            <td style="vertical-align:middle;"><img src="${escapeHtml(logo)}" alt="IRIS" width="140" style="display:block;width:140px;max-width:140px;height:auto;"/></td>
+            <td align="right" style="vertical-align:middle;font-family:${SANS_STACK};font-size:10px;letter-spacing:2px;text-transform:uppercase;color:${t.gold};">Newsletter Regulat&oacute;rio<br/><span style="color:${t.muted};">${escapeHtml(date)}</span></td>
+          </tr></table>
+        </td></tr>
+
+        <!-- Hero / intro -->
+        <tr><td style="padding:34px 28px 8px;background:${t.page};">
+          <p style="margin:0 0 12px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:2.4px;text-transform:uppercase;color:${t.gold};">Edi&ccedil;&atilde;o Semanal &middot; Atualiza&ccedil;&atilde;o Regulat&oacute;ria</p>
+          <h1 style="margin:0;font-family:${SERIF_STACK};font-size:32px;font-weight:900;line-height:1.1;color:${t.text};">${escapeHtml(titulo)}</h1>
+          ${intro ? `<p style="margin:14px 0 0;font-family:${SANS_STACK};font-size:15px;line-height:1.6;color:${t.muted};">${escapeHtml(intro)}</p>` : ""}
+        </td></tr>
+
+        ${renderEmailSectionRibbon("Destaques Regulatórios", t)}
+        ${newsCards}
+        ${socialSection}
+
+        <!-- Siga o IRIS -->
+        <tr><td style="padding:30px 28px;background:${t.page};text-align:center;border-top:1px solid ${t.cardLine};">
+          <p style="margin:0 0 16px;font-family:${SANS_STACK};font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:${t.gold};">Siga o IRIS</p>
+          ${emailButton(IRIS_INSTAGRAM_URL, "Instagram", t)}&nbsp;&nbsp;${emailButton(IRIS_LINKEDIN_URL, "LinkedIn", t)}
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td style="padding:22px 28px;background:${t.footerBg};border-top:1px solid ${t.cardLine};text-align:center;">
+          <p style="margin:0 0 4px;font-family:${SANS_STACK};font-size:12px;font-weight:bold;letter-spacing:1px;color:${t.text};">IRIS Regula&ccedil;&atilde;o</p>
+          <p style="margin:0 0 10px;font-family:${SANS_STACK};font-size:10px;letter-spacing:0.4px;color:${t.muted};">Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade</p>
+          <p style="margin:0;font-family:${SANS_STACK};font-size:10px;color:${t.muted};"><a href="${IRIS_INSTAGRAM_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">Instagram</a> &nbsp;&middot;&nbsp; <a href="${IRIS_LINKEDIN_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">LinkedIn</a> &nbsp;&middot;&nbsp; contato@irisregulacao.org</p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
 }
 
 function buildNewsletterRegulatorioHtml(input: NewsletterDocumentInput, theme: NewsletterTheme = NEWSLETTER_THEME_DARK) {

@@ -13,6 +13,7 @@ import {
   buildRegulatoryNewsletterHtml,
   estimateNewsletterPageCount,
   type NewsletterArticleSlot,
+  type SocialPostInput,
 } from "@/lib/newsletter-document";
 import type {
   RegulatoryNews,
@@ -228,6 +229,10 @@ export default function NoticiasPage() {
   const [minutoSelectedIds, setMinutoSelectedIds] = useState<string[]>([]);
   const [selectedNewsCache, setSelectedNewsCache] = useState<Record<string, RegulatoryNews>>({});
   const [newsletterArticleTexts, setNewsletterArticleTexts] = useState<Record<string, string>>({});
+  const [socialPosts, setSocialPosts] = useState<SocialPostInput[]>([]);
+  const [socialUrl, setSocialUrl] = useState("");
+  const [socialBusy, setSocialBusy] = useState(false);
+  const [socialFeedback, setSocialFeedback] = useState<string | null>(null);
   const [documentConfig, setDocumentConfig] = useState<NewsletterDocumentConfig>(DEFAULT_NEWSLETTER_CONFIG);
   const [minutoDraftStatus, setMinutoDraftStatus] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -413,6 +418,7 @@ export default function NoticiasPage() {
       newsletter_textos: newsletterTextOverrides,
       minuto_textos: splitMinutoTextos(minutoTextos),
       minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
+      social_posts: documentConfig.documentoTipo === "newsletter_regulatoria" ? socialPosts : [],
     }),
     onSuccess: (result) => setSavedEditionId(result.edition.id),
   });
@@ -475,7 +481,7 @@ export default function NoticiasPage() {
       return acc;
     }, {});
   }, [documentConfig.documentoTipo, newsletterArticleTexts, newsletterSelected]);
-  const html = useMemo(() => buildRegulatoryNewsletterHtml({
+  const documentInput = useMemo(() => ({
     assunto: documentConfig.assunto,
     descricao: documentConfig.descricao,
     destinatarios: splitList(documentConfig.destinatarios),
@@ -487,8 +493,12 @@ export default function NoticiasPage() {
     template_version: templateVersionFor(documentConfig.documentoTipo, documentConfig.templateVariant),
     minuto_textos: splitMinutoTextos(minutoTextos),
     minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected]);
-  const documentHtml = html;
+    social_posts: socialPosts,
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected, socialPosts]);
+  // Preview + "Copiar HTML do e-mail" = e-mail (table-based, p/ colar no cliente). "Copiar doc."
+  // + "Imprimir PDF" = canvas (PDF bonito). O Minuto ignora a variante (é o mesmo teleprompter).
+  const html = useMemo(() => buildRegulatoryNewsletterHtml(documentInput, "email"), [documentInput]);
+  const documentHtml = useMemo(() => buildRegulatoryNewsletterHtml(documentInput, "print"), [documentInput]);
   const documentLabel = documentConfig.documentoTipo === "minuto_regulacao" ? "Minuto da Regulação" : "Newsletter Regulatória";
   const minutoDraft = useMemo(() => buildMinutoRegulacaoDraftText(minutoSelected), [minutoSelected]);
   const dueTodaySchedules = scheduleData?.due_schedules ?? [];
@@ -585,6 +595,73 @@ export default function NoticiasPage() {
       return next;
     });
     setSavedEditionId(null);
+  }
+
+  // ── Posts sociais (Instagram/LinkedIn) na newsletter ──────────────────────
+  function inferRede(url: string): "instagram" | "linkedin" {
+    return /linkedin\./i.test(url) ? "linkedin" : "instagram";
+  }
+
+  async function pullSocialPost() {
+    const url = socialUrl.trim();
+    if (!url) return;
+    setSocialBusy(true);
+    setSocialFeedback(null);
+    const rede = inferRede(url);
+    try {
+      const res = await api.post<{ ok: boolean; reason?: string; titulo?: string; resumo?: string; imagem_url?: string | null }>(
+        "/newsletter/social-post",
+        { url },
+      );
+      setSocialPosts((prev) => [...prev, {
+        rede,
+        url,
+        titulo: res.ok ? res.titulo ?? "" : "",
+        resumo: res.ok ? res.resumo ?? "" : "",
+        imagem_url: res.ok ? res.imagem_url ?? null : null,
+      }]);
+      setSocialUrl("");
+      setSocialFeedback(res.ok ? "Post adicionado — confira/ajuste os textos abaixo." : (res.reason ?? "Não deu para ler automaticamente — preencha à mão abaixo."));
+      setSavedEditionId(null);
+    } catch (e) {
+      setSocialFeedback(e instanceof Error ? e.message : "Falha ao ler o post.");
+    } finally {
+      setSocialBusy(false);
+    }
+  }
+
+  function addManualSocialPost() {
+    const url = socialUrl.trim();
+    setSocialPosts((prev) => [...prev, { rede: url ? inferRede(url) : "instagram", url, titulo: "", resumo: "", imagem_url: null }]);
+    setSocialUrl("");
+    setSocialFeedback(null);
+    setSavedEditionId(null);
+  }
+
+  function updateSocialPost(index: number, patch: Partial<SocialPostInput>) {
+    setSocialPosts((prev) => prev.map((p, i) => (i === index ? { ...p, ...patch } : p)));
+    setSavedEditionId(null);
+  }
+
+  function removeSocialPost(index: number) {
+    setSocialPosts((prev) => prev.filter((_, i) => i !== index));
+    setSavedEditionId(null);
+  }
+
+  async function uploadSocialImage(index: number, file: File) {
+    setSocialBusy(true);
+    setSocialFeedback(null);
+    try {
+      const form = new FormData();
+      form.append("file", file);
+      const res = await api.upload<{ imagem_url: string }>("/newsletter/imagem", form);
+      updateSocialPost(index, { imagem_url: res.imagem_url });
+      setSocialFeedback("Imagem hospedada com sucesso.");
+    } catch (e) {
+      setSocialFeedback(e instanceof Error ? e.message : "Falha ao hospedar a imagem.");
+    } finally {
+      setSocialBusy(false);
+    }
   }
 
   function saveDocumentConfig() {
@@ -1175,6 +1252,7 @@ export default function NoticiasPage() {
               </div>
             ) : null}
             {documentConfig.documentoTipo === "newsletter_regulatoria" ? (
+              <>
               <div className="rounded-card border border-border bg-surface-secondary p-3 space-y-3">
                 <div className="flex items-center justify-between gap-2">
                   <div>
@@ -1230,6 +1308,108 @@ export default function NoticiasPage() {
                   <p className="text-xs text-text-muted">Selecione noticias para editar os textos de cada pagina.</p>
                 )}
               </div>
+
+              {/* Posts sociais (Instagram/LinkedIn) — auto-fetch + fallback manual, foto re-hospedada */}
+              <div className="rounded-card border border-border bg-surface-secondary p-3 space-y-3">
+                <div className="flex items-center justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-text-primary">Posts sociais (Instagram/LinkedIn)</p>
+                    <p className="text-[11px] text-text-muted mt-0.5">Cola o link &rarr; &ldquo;Puxar do link&rdquo;. IG/LinkedIn costumam bloquear a leitura &mdash; aí preencha à mão.</p>
+                  </div>
+                  <span className="badge-gray text-xs">{socialPosts.length} post{socialPosts.length === 1 ? "" : "s"}</span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <input
+                    className="input flex-1 text-xs"
+                    value={socialUrl}
+                    onChange={(e) => setSocialUrl(e.target.value)}
+                    placeholder="https://www.instagram.com/p/… ou linkedin.com/posts/…"
+                  />
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      className="btn-primary text-xs whitespace-nowrap"
+                      onClick={pullSocialPost}
+                      disabled={socialBusy || !socialUrl.trim() || demoEnabled}
+                    >
+                      {socialBusy ? "Puxando…" : "Puxar do link"}
+                    </button>
+                    <button type="button" className="btn-secondary text-xs whitespace-nowrap" onClick={addManualSocialPost} disabled={socialBusy}>
+                      Manual
+                    </button>
+                  </div>
+                </div>
+                {socialFeedback && <p className="text-[11px] text-text-muted">{socialFeedback}</p>}
+
+                {socialPosts.length > 0 && (
+                  <div className="max-h-[520px] overflow-auto pr-1 space-y-3">
+                    {socialPosts.map((post, index) => (
+                      <div key={`social-${index}`} className="rounded-md border border-border bg-bg-hover p-2.5 space-y-2">
+                        <div className="flex items-center justify-between gap-2">
+                          <select
+                            className="input h-8 text-[11px] w-32"
+                            value={post.rede}
+                            onChange={(e) => updateSocialPost(index, { rede: e.target.value as "instagram" | "linkedin" })}
+                          >
+                            <option value="instagram">Instagram</option>
+                            <option value="linkedin">LinkedIn</option>
+                          </select>
+                          <button
+                            type="button"
+                            className="btn-secondary px-2 py-1 text-[10px] text-error border-error/30 hover:bg-error/10"
+                            onClick={() => removeSocialPost(index)}
+                          >
+                            Remover
+                          </button>
+                        </div>
+                        <input
+                          className="input text-[11px]"
+                          value={post.url}
+                          onChange={(e) => updateSocialPost(index, { url: e.target.value })}
+                          placeholder="Link do post"
+                        />
+                        <input
+                          className="input text-xs"
+                          value={post.titulo}
+                          onChange={(e) => updateSocialPost(index, { titulo: e.target.value })}
+                          placeholder="Título do card"
+                        />
+                        <textarea
+                          className="input min-h-16 text-xs leading-relaxed"
+                          value={post.resumo ?? ""}
+                          onChange={(e) => updateSocialPost(index, { resumo: e.target.value })}
+                          placeholder="Resumo curto (aparece no card do e-mail)"
+                        />
+                        <div className="flex items-center gap-2">
+                          {post.imagem_url ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={post.imagem_url} alt="" className="h-10 w-16 object-cover rounded border border-border" />
+                          ) : (
+                            <span className="text-[10px] text-text-muted">Sem foto</span>
+                          )}
+                          <label className={cn("btn-secondary text-[10px]", socialBusy ? "opacity-60" : "cursor-pointer")}>
+                            {post.imagem_url ? "Trocar foto" : "Subir foto"}
+                            <input
+                              type="file"
+                              accept="image/*"
+                              className="hidden"
+                              disabled={socialBusy || demoEnabled}
+                              onChange={(e) => { const f = e.target.files?.[0]; if (f) void uploadSocialImage(index, f); e.target.value = ""; }}
+                            />
+                          </label>
+                          {post.imagem_url && (
+                            <button type="button" className="text-[10px] text-text-muted underline" onClick={() => updateSocialPost(index, { imagem_url: null })}>
+                              remover foto
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              </>
             ) : null}
           </section>
 

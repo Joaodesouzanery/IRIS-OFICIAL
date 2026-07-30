@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { NEWSLETTER_ARTICLE_TEXT_LIMITS, buildRegulatoryNewsletterHtml } from "@/lib/newsletter-document";
+import { NEWSLETTER_ARTICLE_TEXT_LIMITS, buildRegulatoryNewsletterHtml, type SocialPostInput } from "@/lib/newsletter-document";
 import { repairRegulatoryNewsItems } from "@/lib/news-repairs";
 import { getAuthenticatedUser, requireAdmin } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
@@ -73,6 +73,7 @@ export async function POST(req: NextRequest) {
     .filter((item: RegulatoryNews | undefined): item is RegulatoryNews => Boolean(item)));
   const minutoItems = normalizeMinutoItems(body.minuto_items, orderedNoticias);
   const newsletterTextos = normalizeNewsletterArticleTexts(body.newsletter_textos, orderedNoticias);
+  const socialPosts = documentoTipo === "newsletter_regulatoria" ? normalizeSocialPosts(body.social_posts) : [];
 
   const html = buildRegulatoryNewsletterHtml({
     assunto,
@@ -86,6 +87,7 @@ export async function POST(req: NextRequest) {
     template_version: templateVersion,
     minuto_textos: minutoTextos,
     minuto_items: minutoItems,
+    social_posts: socialPosts,
   });
 
   const { data, error } = await db
@@ -117,6 +119,7 @@ export async function POST(req: NextRequest) {
         newsletter_textos: newsletterTextos,
         minuto_textos: minutoTextos,
         minuto_items: minutoItems,
+        social_posts: socialPosts,
       },
     })
     .select("*")
@@ -220,4 +223,26 @@ function chunkIds(ids: string[], size: number) {
   const groups: string[][] = [];
   for (let index = 0; index < ids.length; index += size) groups.push(ids.slice(index, index + size));
   return groups;
+}
+
+// Posts sociais (IG/LinkedIn) colados na newsletter — validação manual (sem zod, padrão do projeto).
+function normalizeSocialPosts(value: unknown): SocialPostInput[] {
+  if (!Array.isArray(value)) return [];
+  const out: SocialPostInput[] = [];
+  for (const raw of value.slice(0, 12)) {
+    if (!raw || typeof raw !== "object") continue;
+    const r = raw as Record<string, unknown>;
+    const url = typeof r.url === "string" ? r.url.trim().slice(0, 600) : "";
+    const titulo = typeof r.titulo === "string" ? r.titulo.trim().slice(0, 240) : "";
+    if (!url && !titulo) continue; // descarta card vazio
+    const imagem = typeof r.imagem_url === "string" ? r.imagem_url.trim().slice(0, 1000) : "";
+    out.push({
+      rede: r.rede === "linkedin" ? "linkedin" : "instagram",
+      url,
+      titulo,
+      resumo: typeof r.resumo === "string" ? r.resumo.trim().slice(0, 600) : null,
+      imagem_url: imagem || null,
+    });
+  }
+  return out;
 }
