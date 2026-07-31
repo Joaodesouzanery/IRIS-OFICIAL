@@ -75,6 +75,7 @@ interface NewsletterDocumentConfig {
   envioAutomatico: boolean;
   documentoTipo: NewsletterDocumentType;
   templateVariant: "v1" | "v2";
+  formato: "email" | "pdf";
   diaSemana: string;
   horaEnvio: string;
 }
@@ -101,6 +102,7 @@ const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
   envioAutomatico: false,
   documentoTipo: "newsletter_regulatoria",
   templateVariant: "v1",
+  formato: "email",
   diaSemana: "5",
   horaEnvio: "09:00",
 };
@@ -1073,7 +1075,7 @@ export default function NoticiasPage() {
               >
                 <iframe
                   title={`Preview do documento ${documentLabel}`}
-                  srcDoc={html}
+                  srcDoc={documentConfig.formato === "pdf" ? documentHtml : html}
                   style={{
                     width: previewPage.width,
                     height: previewPage.height * previewPageCount,
@@ -1153,6 +1155,30 @@ export default function NoticiasPage() {
                 </button>
               </div>
             </div>
+            {documentConfig.documentoTipo === "newsletter_regulatoria" && (
+              <div className="space-y-1.5">
+                <p className="text-[11px] text-text-muted">Formato do documento — o mesmo conteúdo, dois formatos.</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    className={cn("btn-secondary justify-center text-xs", documentConfig.formato === "email" && "border-brand text-brand")}
+                    onClick={() => updateDocumentConfig("formato", "email")}
+                  >
+                    E-mail (colar)
+                  </button>
+                  <button
+                    className={cn("btn-secondary justify-center text-xs", documentConfig.formato === "pdf" && "border-brand text-brand")}
+                    onClick={() => updateDocumentConfig("formato", "pdf")}
+                  >
+                    PDF (impressão)
+                  </button>
+                </div>
+                <p className="text-[10px] text-text-muted">
+                  {documentConfig.formato === "email"
+                    ? "Preview e “Copiar HTML do e-mail” usam o layout de e-mail (colar no Gmail/Outlook). O PDF continua em “Imprimir PDF”."
+                    : "Preview mostra o PDF; use “Imprimir PDF” ou “Copiar doc.”. O e-mail continua em “Copiar HTML do e-mail”."}
+                </p>
+              </div>
+            )}
             {documentConfig.documentoTipo === "minuto_regulacao" ? (
               <div className="space-y-2">
                 <div className="rounded-card border border-border bg-surface-secondary p-3 space-y-2">
