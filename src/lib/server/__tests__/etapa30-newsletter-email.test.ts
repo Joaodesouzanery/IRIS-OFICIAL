@@ -36,6 +36,7 @@ const input = {
   documento_tipo: "newsletter_regulatoria" as const,
   template_version: "iris_newsletter_layout_v1",
   social_posts: [social],
+  eventos: [{ titulo: "Fórum IRIS de Teste", data: "2026-09-24", local: "São Paulo – SP", url: "https://irisregulacao.org/evento/forum-teste/" }],
 };
 
 describe("Newsletter e-mail IRIS [Stage 2]", () => {
@@ -53,15 +54,17 @@ describe("Newsletter e-mail IRIS [Stage 2]", () => {
     expect(html).toContain("#c2a24a"); // dourado
     expect(html).toContain("/brand/newsletter-logo-wide.png");
     expect(html).toContain("Playfair Display");
-    expect(html.toLowerCase()).toContain("newsletter regulat");
+    expect(html).toContain("Edição #12"); // título da edição (H1)
+    expect(html.toLowerCase()).toContain("regulat"); // eyebrow "Atualização Regulatória"
   });
 
-  it("renderiza os cards de notícia com imagem (proxy gov.br), título, link e CTA", () => {
-    expect(html).toContain("Título de teste");
-    expect(html).toContain("Segunda notícia");
+  it("hero = 1ª notícia + cards alternados p/ as demais; imagem gov.br via proxy, link e CTA", () => {
+    expect(html).toContain("Título de teste"); // hero (1ª)
+    expect(html).toContain("Segunda notícia"); // card seguinte
+    expect(html.toLowerCase()).toContain("mais destaques"); // ribbon das notícias seguintes
     expect(html).toContain("https://app.irisregulacao.org/api/v1/noticias/imagem?url="); // imagem gov.br via proxy
     expect(html).toContain("https://gov.br/antt/noticia-1"); // link da fonte
-    expect(html.toLowerCase()).toContain("ler a mat"); // botão "Ler a matéria"
+    expect(html.toLowerCase()).toContain("ler a mat"); // "Ler a matéria"
   });
 
   it("renderiza o card de post social com imagem DIRETA (bucket) e botão 'ver post'", () => {
@@ -72,9 +75,18 @@ describe("Newsletter e-mail IRIS [Stage 2]", () => {
     expect(html.toLowerCase()).toContain("ver post");
   });
 
-  it("traz os botões de seguir o IRIS (Instagram + LinkedIn)", () => {
+  it("traz a seção de eventos do IRIS (título + data + link) e o CTA da agenda", () => {
+    expect(html).toContain("Fórum IRIS de Teste");
+    expect(html).toContain("24 set 2026"); // data formatada
+    expect(html).toContain("https://irisregulacao.org/evento/forum-teste/");
+    expect(html.toLowerCase()).toContain("próximos eventos iris");
+    expect(html).toContain("https://irisregulacao.org/eventos/"); // CTA "Ver a agenda completa"
+  });
+
+  it("traz os botões de seguir o IRIS + link para o site", () => {
     expect(html).toContain("https://www.instagram.com/iris.regulacao/");
     expect(html).toContain("https://www.linkedin.com/company/irisregulacao/");
+    expect(html).toContain("https://irisregulacao.org/"); // link do site (header/footer)
     expect(html.toLowerCase()).toContain("siga o iris");
   });
 

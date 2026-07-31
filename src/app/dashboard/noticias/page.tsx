@@ -14,6 +14,7 @@ import {
   estimateNewsletterPageCount,
   type NewsletterArticleSlot,
   type SocialPostInput,
+  type EventoInput,
 } from "@/lib/newsletter-document";
 import type {
   RegulatoryNews,
@@ -358,6 +359,12 @@ export default function NoticiasPage() {
     queryFn: () =>
       api.get<{ sources: HealthSource[] }>("/noticias/health").catch(() => ({ sources: [] as HealthSource[] })),
   });
+  // Próximos eventos do IRIS (auto-fetch do site) para a seção de eventos da newsletter.
+  const { data: eventosData } = useQuery({
+    queryKey: ["newsletter-eventos"],
+    queryFn: () => api.get<{ eventos: EventoInput[] }>("/newsletter/eventos").catch(() => ({ eventos: [] as EventoInput[] })),
+    staleTime: 60 * 60 * 1000,
+  });
   const fontesSaude = useMemo(() => {
     const src = healthData?.sources ?? [];
     const sortDias = (a: HealthSource, b: HealthSource) => (b.dias_sem_publicar ?? 0) - (a.dias_sem_publicar ?? 0);
@@ -421,6 +428,7 @@ export default function NoticiasPage() {
       minuto_textos: splitMinutoTextos(minutoTextos),
       minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
       social_posts: documentConfig.documentoTipo === "newsletter_regulatoria" ? socialPosts : [],
+      eventos: documentConfig.documentoTipo === "newsletter_regulatoria" ? (eventosData?.eventos ?? []) : [],
     }),
     onSuccess: (result) => setSavedEditionId(result.edition.id),
   });
@@ -496,7 +504,8 @@ export default function NoticiasPage() {
     minuto_textos: splitMinutoTextos(minutoTextos),
     minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
     social_posts: socialPosts,
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected, socialPosts]);
+    eventos: eventosData?.eventos ?? [],
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected, socialPosts, eventosData]);
   // Preview + "Copiar HTML do e-mail" = e-mail (table-based, p/ colar no cliente). "Copiar doc."
   // + "Imprimir PDF" = canvas (PDF bonito). O Minuto ignora a variante (é o mesmo teleprompter).
   const html = useMemo(() => buildRegulatoryNewsletterHtml(documentInput, "email"), [documentInput]);
@@ -573,8 +582,24 @@ export default function NoticiasPage() {
     setSavedEditionId(null);
   }
 
+  // Copia como HTML RICO (text/html) para colar RENDERIZADO no editor do e-mail (Titan/Gmail/
+  // Outlook) — o writeText antigo colava o código-fonte. Fallback para writeText onde o navegador
+  // não suporta ClipboardItem (aí o usuário usa "Copiar código" / abrir o preview e copiar).
   async function copyHtml() {
-    await navigator.clipboard.writeText(html);
+    try {
+      if (typeof ClipboardItem !== "undefined" && navigator.clipboard?.write) {
+        await navigator.clipboard.write([
+          new ClipboardItem({
+            "text/html": new Blob([html], { type: "text/html" }),
+            "text/plain": new Blob([html], { type: "text/plain" }),
+          }),
+        ]);
+      } else {
+        await navigator.clipboard.writeText(html);
+      }
+    } catch {
+      await navigator.clipboard.writeText(html);
+    }
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }

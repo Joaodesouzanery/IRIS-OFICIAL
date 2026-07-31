@@ -37,6 +37,11 @@ async function handleApiRequest(req: NextRequest) {
   if (req.method === "OPTIONS") return NextResponse.next();
   if (pathname === "/api/v1/system/status") return NextResponse.next();
   if (pathname.startsWith("/api/v1/auth/")) return NextResponse.next();
+  // Proxy de imagem PÚBLICO (GET): um <img> num e-mail enviado NÃO manda Bearer — sem esta
+  // isenção a imagem de notícia dá 401 e quebra para o destinatário. A rota já restringe a
+  // hosts gov.br/sp.gov.br/senado (allowlist) + cap 8MB + SSRF-guard, então serve só imagens
+  // JÁ públicas de órgãos oficiais (sem dado sensível). Ver iris-security-lgpd.
+  if (pathname === "/api/v1/noticias/imagem" && req.method === "GET") return NextResponse.next();
 
   const isDemoRequest =
     req.headers.get("x-iris-demo") === "1" ||

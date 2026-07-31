@@ -25,6 +25,13 @@ export interface SocialPostInput {
   imagem_url?: string | null;
 }
 
+export interface EventoInput {
+  titulo: string;
+  data: string; // ISO YYYY-MM-DD
+  local?: string | null;
+  url: string;
+}
+
 export interface NewsletterDocumentInput {
   assunto: string;
   descricao?: string | null;
@@ -39,11 +46,14 @@ export interface NewsletterDocumentInput {
   minuto_textos?: string[];
   minuto_items?: MinutoRegulacaoItemInput[];
   social_posts?: SocialPostInput[];
+  eventos?: EventoInput[];
 }
 
-// Redes oficiais do IRIS (botões de seguir no e-mail).
+// Redes e site oficiais do IRIS (botões/links no e-mail).
 const IRIS_INSTAGRAM_URL = "https://www.instagram.com/iris.regulacao/";
 const IRIS_LINKEDIN_URL = "https://www.linkedin.com/company/irisregulacao/";
+const IRIS_SITE_URL = "https://irisregulacao.org/";
+const IRIS_EVENTOS_URL = "https://irisregulacao.org/eventos/";
 
 export const NEWSLETTER_TEMPLATE_VERSIONS = {
   newsletter_v1: "iris_newsletter_layout_v1",
@@ -239,27 +249,82 @@ function emailButton(href: string, label: string, t: IrisEmailTheme, filled = tr
   return `<a href="${escapeHtml(href)}" target="_blank" style="display:inline-block;padding:10px 20px;${style}font-family:${SANS_STACK};font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border-radius:6px;">${label}</a>`;
 }
 
-function renderEmailNewsCard(item: RegulatoryNews, input: NewsletterDocumentInput, t: IrisEmailTheme, featured: boolean): string {
-  const img = emailNewsImageSrc(item, input.baseUrl);
-  const tagParts = [
+function newsTag(item: RegulatoryNews): string {
+  return [
     item.agencia?.sigla ?? item.agencia_sigla,
     item.publicado_em ? formatNewsletterDate(new Date(item.publicado_em)) : null,
-  ].filter(Boolean);
-  const tag = tagParts.join(" · ");
-  const override = input.newsletter_textos?.[item.id];
-  const body = truncateText(override ?? item.resumo ?? item.conteudo ?? "", featured ? 320 : 200);
-  const titleSize = featured ? 23 : 18;
+  ].filter(Boolean).join(" · ");
+}
+
+// 1ª notícia = destaque (hero): imagem grande + tag + título + botão.
+function renderEmailHero(item: RegulatoryNews, input: NewsletterDocumentInput, t: IrisEmailTheme): string {
+  const img = emailNewsImageSrc(item, input.baseUrl);
+  const tag = newsTag(item);
+  const body = truncateText(input.newsletter_textos?.[item.id] ?? item.resumo ?? item.conteudo ?? "", 300);
   return `
-    <tr><td style="padding:0 28px 16px;background:${t.page};">
-      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.card};border:1px solid ${t.cardLine};border-radius:10px;">
-        ${img ? `<tr><td style="padding:0;"><img src="${escapeHtml(img)}" alt="" width="544" style="display:block;width:100%;max-width:544px;height:auto;border-radius:10px 10px 0 0;"/></td></tr>` : ""}
-        <tr><td style="padding:18px 20px;">
-          ${tag ? `<p style="margin:0 0 6px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.6px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
-          <h2 style="margin:0 0 8px;font-family:${SERIF_STACK};font-size:${titleSize}px;font-weight:800;line-height:1.15;color:${t.text};">${escapeHtml(item.titulo)}</h2>
-          ${body ? `<p style="margin:0 0 14px;font-family:${SANS_STACK};font-size:14px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
+    <tr><td style="padding:0 28px 20px;background:${t.page};">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.card};border:1px solid ${t.cardLine};border-radius:12px;">
+        ${img ? `<tr><td style="padding:0;"><img src="${escapeHtml(img)}" alt="" width="544" style="display:block;width:100%;max-width:544px;height:auto;border-radius:12px 12px 0 0;"/></td></tr>` : ""}
+        <tr><td style="padding:22px;">
+          ${tag ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.8px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
+          <h2 style="margin:0 0 10px;font-family:${SERIF_STACK};font-size:26px;font-weight:800;line-height:1.12;color:${t.text};">${escapeHtml(item.titulo)}</h2>
+          ${body ? `<p style="margin:0 0 16px;font-family:${SANS_STACK};font-size:15px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
           ${item.url ? emailButton(item.url, "Ler a matéria &rarr;", t) : ""}
         </td></tr>
       </table>
+    </td></tr>`;
+}
+
+// Notícias seguintes = cards horizontais ALTERNADOS (imagem-esquerda/direita), estilo referência.
+function renderEmailNewsRow(item: RegulatoryNews, input: NewsletterDocumentInput, t: IrisEmailTheme, index: number): string {
+  const img = emailNewsImageSrc(item, input.baseUrl);
+  const tag = newsTag(item);
+  const body = truncateText(input.newsletter_textos?.[item.id] ?? item.resumo ?? item.conteudo ?? "", 170);
+  const imageLeft = index % 2 === 0;
+  const imgCell = img
+    ? `<td width="176" style="padding:0;vertical-align:top;"><img src="${escapeHtml(img)}" alt="" width="176" style="display:block;width:176px;max-width:176px;height:auto;border-radius:8px;"/></td>`
+    : "";
+  const spacer = img ? `<td width="14" style="font-size:0;line-height:0;">&nbsp;</td>` : "";
+  const textCell = `<td style="padding:0;vertical-align:top;">
+          ${tag ? `<p style="margin:0 0 5px;font-family:${SANS_STACK};font-size:9px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
+          <h3 style="margin:0 0 6px;font-family:${SERIF_STACK};font-size:17px;font-weight:800;line-height:1.18;color:${t.text};">${escapeHtml(item.titulo)}</h3>
+          ${body ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:13px;line-height:1.5;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
+          ${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" style="font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:${t.gold};text-decoration:none;">Ler a matéria &rarr;</a>` : ""}
+        </td>`;
+  const cells = img ? (imageLeft ? imgCell + spacer + textCell : textCell + spacer + imgCell) : textCell;
+  return `
+    <tr><td style="padding:0 28px 14px;background:${t.page};">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.card};border:1px solid ${t.cardLine};border-radius:10px;">
+        <tr><td style="padding:14px;"><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr>${cells}</tr></table></td></tr>
+      </table>
+    </td></tr>`;
+}
+
+const MESES_ABREV = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+function formatEventoData(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return iso;
+  const [, y, mo, d] = m;
+  return `${d} ${MESES_ABREV[Number(mo) - 1] ?? mo} ${y}`;
+}
+
+// Seção final: próximos eventos do IRIS (auto-fetch) + CTA para a agenda. Sempre mostra o CTA.
+function renderEmailEventosSection(eventos: EventoInput[], t: IrisEmailTheme): string {
+  const rows = eventos.map((ev) => `
+    <tr><td style="padding:0 28px 8px;background:${t.page};">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="border-bottom:1px solid ${t.cardLine};"><tr>
+        <td style="padding:8px 0;vertical-align:middle;">
+          <p style="margin:0 0 2px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:0.5px;text-transform:uppercase;color:${t.gold};">${escapeHtml(formatEventoData(ev.data))}${ev.local ? ` &middot; ${escapeHtml(ev.local)}` : ""}</p>
+          <p style="margin:0;font-family:${SERIF_STACK};font-size:15px;font-weight:700;line-height:1.2;color:${t.text};">${escapeHtml(ev.titulo)}</p>
+        </td>
+        <td align="right" style="vertical-align:middle;padding-left:10px;white-space:nowrap;">
+          <a href="${escapeHtml(ev.url)}" target="_blank" style="font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:${t.gold};text-decoration:none;">Saiba mais &rarr;</a>
+        </td>
+      </tr></table>
+    </td></tr>`).join("");
+  return renderEmailSectionRibbon("Próximos eventos IRIS", t) + rows + `
+    <tr><td style="padding:14px 28px 4px;background:${t.page};text-align:center;">
+      ${emailButton(IRIS_EVENTOS_URL, "Ver a agenda completa", t)}
     </td></tr>`;
 }
 
@@ -298,16 +363,22 @@ function buildIrisEmailNewsletterHtml(input: NewsletterDocumentInput, isV2 = fal
   const logo = absolutePath("/brand/newsletter-logo-wide.png", input.baseUrl);
   const noticias = input.noticias;
   const socialPosts = input.social_posts ?? [];
+  const eventos = input.eventos ?? [];
   const titulo = input.assunto?.trim() || "Newsletter Regulatório";
   const intro = input.descricao?.trim();
 
-  const newsCards = noticias.length
-    ? noticias.map((item, i) => renderEmailNewsCard(item, input, t, i === 0)).join("")
-    : `<tr><td style="padding:20px 28px;background:${t.page};font-family:${SANS_STACK};font-size:14px;color:${t.muted};">Selecione notícias para compor a newsletter.</td></tr>`;
+  // 1ª notícia vira o destaque (hero); as demais viram cards horizontais alternados.
+  const heroHtml = noticias.length ? renderEmailHero(noticias[0], input, t) : "";
+  const restNews = noticias.slice(1);
+  const newsRows = restNews.length
+    ? renderEmailSectionRibbon("Mais destaques regulatórios", t) + restNews.map((item, i) => renderEmailNewsRow(item, input, t, i)).join("")
+    : (noticias.length ? "" : `<tr><td style="padding:20px 28px;background:${t.page};font-family:${SANS_STACK};font-size:14px;color:${t.muted};">Selecione notícias para compor a newsletter.</td></tr>`);
 
   const socialSection = socialPosts.length
     ? renderEmailSectionRibbon("Nas nossas redes", t) + socialPosts.map((p) => renderEmailSocialCard(p, t)).join("")
     : "";
+
+  const eventosSection = renderEmailEventosSection(eventos, t);
 
   return `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -327,7 +398,7 @@ function buildIrisEmailNewsletterHtml(input: NewsletterDocumentInput, isV2 = fal
         <tr><td style="padding:22px 28px;background:${t.page};border-bottom:2px solid ${t.gold};">
           <table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr>
             <td style="vertical-align:middle;"><img src="${escapeHtml(logo)}" alt="IRIS" width="140" style="display:block;width:140px;max-width:140px;height:auto;"/></td>
-            <td align="right" style="vertical-align:middle;font-family:${SANS_STACK};font-size:10px;letter-spacing:2px;text-transform:uppercase;color:${t.gold};">Newsletter Regulat&oacute;rio<br/><span style="color:${t.muted};">${escapeHtml(date)}</span></td>
+            <td align="right" style="vertical-align:middle;font-family:${SANS_STACK};font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:${t.gold};"><a href="${IRIS_SITE_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">irisregulacao.org</a><br/><span style="color:${t.muted};letter-spacing:1px;">${escapeHtml(date)}</span></td>
           </tr></table>
         </td></tr>
 
@@ -338,9 +409,10 @@ function buildIrisEmailNewsletterHtml(input: NewsletterDocumentInput, isV2 = fal
           ${intro ? `<p style="margin:14px 0 0;font-family:${SANS_STACK};font-size:15px;line-height:1.6;color:${t.muted};">${escapeHtml(intro)}</p>` : ""}
         </td></tr>
 
-        ${renderEmailSectionRibbon("Destaques Regulatórios", t)}
-        ${newsCards}
+        ${heroHtml}
+        ${newsRows}
         ${socialSection}
+        ${eventosSection}
 
         <!-- Siga o IRIS -->
         <tr><td style="padding:30px 28px;background:${t.page};text-align:center;border-top:1px solid ${t.cardLine};">
@@ -352,7 +424,7 @@ function buildIrisEmailNewsletterHtml(input: NewsletterDocumentInput, isV2 = fal
         <tr><td style="padding:22px 28px;background:${t.footerBg};border-top:1px solid ${t.cardLine};text-align:center;">
           <p style="margin:0 0 4px;font-family:${SANS_STACK};font-size:12px;font-weight:bold;letter-spacing:1px;color:${t.text};">IRIS Regula&ccedil;&atilde;o</p>
           <p style="margin:0 0 10px;font-family:${SANS_STACK};font-size:10px;letter-spacing:0.4px;color:${t.muted};">Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade</p>
-          <p style="margin:0;font-family:${SANS_STACK};font-size:10px;color:${t.muted};"><a href="${IRIS_INSTAGRAM_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">Instagram</a> &nbsp;&middot;&nbsp; <a href="${IRIS_LINKEDIN_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">LinkedIn</a> &nbsp;&middot;&nbsp; contato@irisregulacao.org</p>
+          <p style="margin:0;font-family:${SANS_STACK};font-size:10px;color:${t.muted};"><a href="${IRIS_SITE_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">irisregulacao.org</a> &nbsp;&middot;&nbsp; <a href="${IRIS_INSTAGRAM_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">Instagram</a> &nbsp;&middot;&nbsp; <a href="${IRIS_LINKEDIN_URL}" target="_blank" style="color:${t.gold};text-decoration:none;">LinkedIn</a> &nbsp;&middot;&nbsp; contato@irisregulacao.org</p>
         </td></tr>
 
       </table>

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { NEWSLETTER_ARTICLE_TEXT_LIMITS, buildRegulatoryNewsletterHtml, type SocialPostInput } from "@/lib/newsletter-document";
+import { NEWSLETTER_ARTICLE_TEXT_LIMITS, buildRegulatoryNewsletterHtml, type SocialPostInput, type EventoInput } from "@/lib/newsletter-document";
 import { repairRegulatoryNewsItems } from "@/lib/news-repairs";
 import { getAuthenticatedUser, requireAdmin } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
@@ -74,6 +74,7 @@ export async function POST(req: NextRequest) {
   const minutoItems = normalizeMinutoItems(body.minuto_items, orderedNoticias);
   const newsletterTextos = normalizeNewsletterArticleTexts(body.newsletter_textos, orderedNoticias);
   const socialPosts = documentoTipo === "newsletter_regulatoria" ? normalizeSocialPosts(body.social_posts) : [];
+  const eventos = documentoTipo === "newsletter_regulatoria" ? normalizeEventos(body.eventos) : [];
 
   const html = buildRegulatoryNewsletterHtml({
     assunto,
@@ -88,6 +89,7 @@ export async function POST(req: NextRequest) {
     minuto_textos: minutoTextos,
     minuto_items: minutoItems,
     social_posts: socialPosts,
+    eventos,
   });
 
   const { data, error } = await db
@@ -120,6 +122,7 @@ export async function POST(req: NextRequest) {
         minuto_textos: minutoTextos,
         minuto_items: minutoItems,
         social_posts: socialPosts,
+        eventos,
       },
     })
     .select("*")
@@ -223,6 +226,26 @@ function chunkIds(ids: string[], size: number) {
   const groups: string[][] = [];
   for (let index = 0; index < ids.length; index += size) groups.push(ids.slice(index, index + size));
   return groups;
+}
+
+// Eventos do IRIS (auto-fetch) embutidos no HTML salvo da edição (snapshot).
+function normalizeEventos(value: unknown): EventoInput[] {
+  if (!Array.isArray(value)) return [];
+  const out: EventoInput[] = [];
+  for (const raw of value.slice(0, 12)) {
+    if (!raw || typeof raw !== "object") continue;
+    const r = raw as Record<string, unknown>;
+    const titulo = typeof r.titulo === "string" ? r.titulo.trim().slice(0, 240) : "";
+    const data = typeof r.data === "string" ? r.data.trim().slice(0, 40) : "";
+    if (!titulo || !data) continue;
+    out.push({
+      titulo,
+      data,
+      local: typeof r.local === "string" ? r.local.trim().slice(0, 200) : null,
+      url: typeof r.url === "string" ? r.url.trim().slice(0, 600) : "https://irisregulacao.org/eventos/",
+    });
+  }
+  return out;
 }
 
 // Posts sociais (IG/LinkedIn) colados na newsletter — validação manual (sem zod, padrão do projeto).
