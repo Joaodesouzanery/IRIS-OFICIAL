@@ -1,6 +1,7 @@
 import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItems } from "@/lib/server/ata-splitter";
+import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument } from "@/lib/server/antt-manual-parser";
@@ -204,6 +205,9 @@ export async function analyzeUploadPdf(input: {
   let ata_items: PreviewResult["ata_items"] | undefined;
   if (tipo_documento === "ata") {
     const rawItems = splitAtaItems(extraction.text);
+    // F (ago/2026): item de ata que não parseou deixa de sumir em SILÊNCIO → aviso (revisão).
+    const avisoItens = avisoAtaItensFaltando(extraction.text, rawItems.length);
+    if (avisoItens) documentWarnings.push(avisoItens);
     const ataMeta = extractAtaMetadata(extraction.text);
     // Cargo→nome do PREÂMBULO da ata inteira (o texto por item não tem "presidida pelo
     // Diretor-Geral, NOME") — resolve "divergência apresentada pelo Diretor-Geral" por item.
@@ -354,6 +358,14 @@ export async function analyzeUploadPdf(input: {
     if (fields.unanimidade_detectada && ((fields.nomes_votacao_contra?.length ?? 0) > 0 || (fields.nomes_votacao_abstencao?.length ?? 0) > 0)) {
       documentWarnings.push("Inconsistência: texto indica unanimidade, mas há votos contrários/abstenções extraídos — revisar.");
     }
+    // F (ago/2026): "unanimidade" DECLARADA + sinais de contestação SEM dissidente nomeado →
+    // aviso (revisão), em vez de fabricar "unânime favorável". Não purga (mandato desfaria).
+    const avisoContestado = avisoUnanimidadeContestada(
+      extraction.text,
+      !!fields.unanimidade_detectada,
+      fields.nomes_votacao_contra?.length ?? 0,
+    );
+    if (avisoContestado) documentWarnings.push(avisoContestado);
     if (fields.data_reuniao) {
       const dataMs = Date.parse(fields.data_reuniao);
       const max = Date.now() + 60 * 24 * 60 * 60 * 1000;

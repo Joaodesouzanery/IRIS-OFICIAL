@@ -117,6 +117,46 @@ export default function VotosDiretoresPage() {
   const { demoEnabled } = useDataSyncContext();
   const [agenciaId, setAgenciaId] = useState("");
   const [selectedDirector, setSelectedDirector] = useState<DiretorOverviewItem | null>(null);
+  const [relatorioBusy, setRelatorioBusy] = useState<"" | "html" | "docx" | "csv">("");
+
+  // Relatório precisa de Bearer (rota admin); um <a href> não manda o token → 401. Fazemos
+  // fetch autenticado → abre (PDF via impressão) ou baixa (Word/CSV) por blob.
+  async function gerarRelatorio(format: "html" | "docx" | "csv") {
+    if (demoEnabled || relatorioBusy) return;
+    const qs = new URLSearchParams();
+    if (agenciaId) qs.set("agencia_id", agenciaId);
+    if (format !== "html") qs.set("format", format);
+    const url = `/api/v1/relatorios/votos-diretores${qs.toString() ? `?${qs.toString()}` : ""}`;
+    const win = format === "html" ? window.open("", "_blank") : null;
+    setRelatorioBusy(format);
+    try {
+      let token: string | null = null;
+      try {
+        const { createSupabaseBrowserClient } = await import("@/lib/supabase/client");
+        const { data } = await createSupabaseBrowserClient().auth.getSession();
+        token = data.session?.access_token ?? null;
+      } catch { token = null; }
+      const res = await fetch(url, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+      if (!res.ok) throw new Error(`Falha ao gerar o relatório (${res.status}).`);
+      if (format === "html") {
+        const htmlText = await res.text();
+        if (win) { win.document.open(); win.document.write(htmlText); win.document.close(); win.focus(); }
+      } else {
+        const blob = await res.blob();
+        const objUrl = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = objUrl;
+        a.download = format === "docx" ? "iris-votos-por-diretor.docx" : "iris-votos-por-diretor.csv";
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(objUrl), 5000);
+      }
+    } catch {
+      win?.close();
+      window.alert("Não foi possível gerar o relatório agora. Tente de novo.");
+    } finally {
+      setRelatorioBusy("");
+    }
+  }
 
   const { data, isLoading } = useQuery({
     queryKey: ["votos-diretores", "fontes"],
@@ -541,16 +581,36 @@ export default function VotosDiretoresPage() {
             {autoConfirmMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
             Auto-confirmar alta confiança
           </button>
-          <a
-            href={agenciaId ? `/api/v1/relatorios/votos-diretores?agencia_id=${agenciaId}` : "/api/v1/relatorios/votos-diretores"}
-            target="_blank"
-            rel="noreferrer"
-            className={cn("btn-secondary", demoEnabled && "pointer-events-none opacity-50")}
-            title="Abre o relatório imprimível dos votos de cada diretor das 3 agências (imprimir → PDF pelo navegador)"
+          <button
+            type="button"
+            onClick={() => gerarRelatorio("html")}
+            disabled={demoEnabled || relatorioBusy !== ""}
+            className="btn-secondary"
+            title="Abre o relatório dos votos por diretor (identidade IRIS, com gráficos) — imprimir → salvar PDF"
           >
-            <FileDown className="w-4 h-4" />
-            Gerar relatório
-          </a>
+            {relatorioBusy === "html" ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileDown className="w-4 h-4" />}
+            Gerar relatório (PDF)
+          </button>
+          <button
+            type="button"
+            onClick={() => gerarRelatorio("docx")}
+            disabled={demoEnabled || relatorioBusy !== ""}
+            className="btn-secondary"
+            title="Baixar o relatório em Word (.docx)"
+          >
+            {relatorioBusy === "docx" ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileDown className="w-4 h-4" />}
+            Word
+          </button>
+          <button
+            type="button"
+            onClick={() => gerarRelatorio("csv")}
+            disabled={demoEnabled || relatorioBusy !== ""}
+            className="btn-secondary"
+            title="Baixar os dados por diretor em CSV (Excel)"
+          >
+            {relatorioBusy === "csv" ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileDown className="w-4 h-4" />}
+            CSV
+          </button>
         </div>
       </div>
 
