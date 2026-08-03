@@ -635,26 +635,40 @@ export default function NoticiasPage() {
     setSocialBusy(true);
     setSocialFeedback(null);
     const rede = inferRede(url);
+    // Tenta a leitura automática, mas o card é adicionado SEMPRE (sucesso, bloqueio OU erro):
+    // IG/LinkedIn têm login-wall, então o caminho confiável é preencher à mão + subir um print.
+    let pulled: { titulo: string; resumo: string; imagem_url: string | null } | null = null;
+    let motivo = "";
     try {
       const res = await api.post<{ ok: boolean; reason?: string; titulo?: string; resumo?: string; imagem_url?: string | null }>(
         "/newsletter/social-post",
         { url },
       );
-      setSocialPosts((prev) => [...prev, {
-        rede,
-        url,
-        titulo: res.ok ? res.titulo ?? "" : "",
-        resumo: res.ok ? res.resumo ?? "" : "",
-        imagem_url: res.ok ? res.imagem_url ?? null : null,
-      }]);
-      setSocialUrl("");
-      setSocialFeedback(res.ok ? "Post adicionado — confira/ajuste os textos abaixo." : (res.reason ?? "Não deu para ler automaticamente — preencha à mão abaixo."));
-      setSavedEditionId(null);
+      if (res.ok) {
+        pulled = { titulo: res.titulo ?? "", resumo: res.resumo ?? "", imagem_url: res.imagem_url ?? null };
+      } else {
+        motivo = res.reason ?? "Não consegui ler automaticamente.";
+      }
     } catch (e) {
-      setSocialFeedback(e instanceof Error ? e.message : "Falha ao ler o post.");
-    } finally {
-      setSocialBusy(false);
+      motivo = e instanceof Error ? e.message : "Não consegui ler automaticamente.";
     }
+    setSocialPosts((prev) => [...prev, {
+      rede,
+      url,
+      titulo: pulled?.titulo ?? "",
+      resumo: pulled?.resumo ?? "",
+      imagem_url: pulled?.imagem_url ?? null,
+    }]);
+    setSocialUrl("");
+    setSavedEditionId(null);
+    setSocialFeedback(
+      pulled
+        ? (pulled.imagem_url
+            ? "Post lido automaticamente — confira os textos abaixo."
+            : "Li os textos — suba um print do post no botão “Subir foto” abaixo.")
+        : `${motivo} Adicionei o card abaixo: preencha o título e o resumo e clique em “Subir foto” (um print do post).`,
+    );
+    setSocialBusy(false);
   }
 
   function addManualSocialPost() {
@@ -1365,7 +1379,7 @@ export default function NoticiasPage() {
                 <div className="flex items-center justify-between gap-2">
                   <div>
                     <p className="text-xs font-semibold text-text-primary">Posts sociais (Instagram/LinkedIn)</p>
-                    <p className="text-[11px] text-text-muted mt-0.5">Cola o link &rarr; &ldquo;Puxar do link&rdquo;. IG/LinkedIn costumam bloquear a leitura &mdash; aí preencha à mão.</p>
+                    <p className="text-[11px] text-text-muted mt-0.5">Cola o link &rarr; &ldquo;Puxar do link&rdquo; (o card é sempre criado). <strong>IG/LinkedIn bloqueiam a leitura automática</strong> &mdash; então preencha título/resumo e clique em <strong>&ldquo;Subir foto&rdquo;</strong> com um print do post. Foto fica hospedada e aparece no e-mail.</p>
                   </div>
                   <span className="badge-gray text-xs">{socialPosts.length} post{socialPosts.length === 1 ? "" : "s"}</span>
                 </div>
