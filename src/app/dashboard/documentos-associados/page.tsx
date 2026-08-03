@@ -29,6 +29,7 @@ export default function DocumentosAssociadosPage() {
   const [periodoInicio, setPeriodoInicio] = useState(monthAgo.toISOString().slice(0, 10));
   const [periodoFim, setPeriodoFim] = useState(today);
   const [preview, setPreview] = useState<DocumentoAssociadoPreview | null>(null);
+  const [wordBusy, setWordBusy] = useState(false);
   const [showScheduleForm, setShowScheduleForm] = useState(false);
   const [scheduleEmailInput, setScheduleEmailInput] = useState("");
   const [scheduleEmails, setScheduleEmails] = useState<string[]>([]);
@@ -124,6 +125,38 @@ export default function DocumentosAssociadosPage() {
     w.document.close();
     w.focus();
     setTimeout(() => w.print(), 400);
+  }
+
+  // Word: POST autenticado do HTML → .docx (rota admin precisa de Bearer; api.post devolve JSON,
+  // então usamos fetch cru → blob).
+  async function downloadWord() {
+    if (!preview || wordBusy) return;
+    setWordBusy(true);
+    try {
+      let token: string | null = null;
+      try {
+        const { createSupabaseBrowserClient } = await import("@/lib/supabase/client");
+        const { data } = await createSupabaseBrowserClient().auth.getSession();
+        token = data.session?.access_token ?? null;
+      } catch { token = null; }
+      const res = await fetch("/api/v1/associados/documentos/docx", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+        body: JSON.stringify({ html: preview.html, titulo: preview.titulo }),
+      });
+      if (!res.ok) throw new Error();
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${preview.titulo.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.docx`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    } catch {
+      window.alert("Não foi possível gerar o Word agora. Tente de novo.");
+    } finally {
+      setWordBusy(false);
+    }
   }
 
   function addScheduleEmail() {
@@ -361,6 +394,10 @@ export default function DocumentosAssociadosPage() {
               <button onClick={downloadHtml} disabled={!preview} className="btn-secondary text-xs">
                 <Download className="w-3.5 h-3.5" />
                 HTML
+              </button>
+              <button onClick={downloadWord} disabled={!preview || wordBusy} className="btn-secondary text-xs" title="Baixar em Word (.docx)">
+                <Download className="w-3.5 h-3.5" />
+                {wordBusy ? "..." : "Word"}
               </button>
               <button onClick={printPdf} disabled={!preview} className="btn-primary text-xs">
                 <Printer className="w-3.5 h-3.5" />

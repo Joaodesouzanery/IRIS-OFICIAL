@@ -81,6 +81,7 @@ export async function POST(req: NextRequest) {
       listaTripliceManual: normalizeManualListaTriplice(body.lista_triplice_manual),
       vp_paragrafos,
       observacoes_curadoria,
+      baseUrl: req.nextUrl.origin,
     });
     return NextResponse.json(preview);
   }
@@ -177,6 +178,7 @@ export async function POST(req: NextRequest) {
     listaTripliceManual: normalizeManualListaTriplice(body.lista_triplice_manual),
     vp_paragrafos,
     observacoes_curadoria,
+    baseUrl: req.nextUrl.origin,
   });
 
   if (!save) return NextResponse.json(preview);

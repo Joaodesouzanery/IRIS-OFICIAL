@@ -85,6 +85,8 @@ export interface ReportDocumentInput {
   /** Botões extra na barra .noprint (ex.: baixar Word/CSV) — HTML de <a>/<button>. */
   actionsHtml?: string;
   footerHtml?: string;
+  /** CSS extra específico do relatório (classes próprias além do tema base). */
+  extraCss?: string;
 }
 
 /** Documento HTML completo do relatório (cabeçalho IRIS + botão imprimir + conteúdo + rodapé). */
@@ -95,7 +97,7 @@ export function reportDocument(input: ReportDocumentInput): string {
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>${esc(input.title)} — IRIS</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
-<style>${reportPrintCss()}</style></head>
+<style>${reportPrintCss()}${input.extraCss ?? ""}</style></head>
 <body>
   <div class="report">
     <div class="rp-topbar">

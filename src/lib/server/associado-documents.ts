@@ -8,6 +8,8 @@ import type {
   MonitoramentoItem,
 } from "@/types";
 import { isResultadoPositivo } from "@/lib/utils";
+import { reportDocument, REPORT_VOTE_COLORS } from "@/lib/report-theme";
+import { svgGauge, svgDonut } from "@/lib/report-charts";
 
 export const DEMO_ASSOCIADOS: Associado[] = [
   {
@@ -78,6 +80,7 @@ export interface BuildAssociadoDocumentInput {
   listaTripliceManual?: ListaTripliceItem[];
   vp_paragrafos?: string[];
   observacoes_curadoria?: string | null;
+  baseUrl?: string;
 }
 
 export function buildAssociadoDocument(input: BuildAssociadoDocumentInput): DocumentoAssociadoPreview {
@@ -272,66 +275,49 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
   const isQuarterly = input.tipo === "relatorio_trimestral";
   const vpParagraphs = buildVpParagraphs(input);
 
-  return `<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>${escapeHtml(input.titulo)}</title>
-  <style>
-    body{margin:0;background:#f5f5f4;color:#1c1917;font-family:Arial,Helvetica,sans-serif}
-    .page{max-width:920px;margin:0 auto;background:#fff;min-height:100vh}
-    header{background:#1f2937;color:#fff;padding:28px 36px}
-    h1{margin:0;font-size:26px}.meta{margin-top:8px;color:#d1d5db;font-size:13px}
-    section{padding:24px 36px;border-bottom:1px solid #e7e5e4}
-    h2{margin:0 0 12px;font-size:15px;color:#ea580c;text-transform:uppercase;letter-spacing:.04em}
-    h3{margin:14px 0 6px;font-size:14px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-    .metric{border:1px solid #e7e5e4;border-radius:8px;padding:12px;background:#fafaf9}
-    .metric b{display:block;font-size:22px}.metric span{font-size:11px;color:#78716c;text-transform:uppercase}
-    table{width:100%;border-collapse:collapse;font-size:13px}td,th{border-bottom:1px solid #e7e5e4;padding:8px;text-align:left;vertical-align:top}
-    th{font-size:11px;color:#78716c;text-transform:uppercase;background:#fafaf9}.muted{color:#78716c}.pill{display:inline-block;border:1px solid #fed7aa;color:#c2410c;border-radius:999px;padding:2px 8px;font-size:11px}
-    .scenario{border-left:3px solid #ea580c;padding-left:12px;margin:10px 0}.sources li{margin-bottom:6px}
-    .warning{border:1px solid #fde68a;background:#fffbeb;border-radius:8px;padding:12px}.warning li{margin-bottom:4px}.vp{display:flex;gap:16px;align-items:flex-start}.vp img{width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid #e7e5e4}
-    @media print{body{background:#fff}.page{max-width:none}.no-print{display:none}}
-  </style>
-</head>
-<body>
-  <div class="page">
-    <header>
-      <h1>${escapeHtml(input.titulo)}</h1>
-      <div class="meta">${escapeHtml(input.associado.nome)} · ${escapeHtml(input.associado.setor)} · ${periodo}</div>
-    </header>
+  // Gráficos: deferimento (gauge) + distribuição de decisões (donut) das deliberações relevantes.
+  const totalDec = input.deliberacoes.length;
+  const deferidas = input.deliberacoes.filter((d) => isResultadoPositivo(d.resultado)).length;
+  const indeferidas = input.deliberacoes.filter((d) => d.resultado === "Indeferido").length;
+  const outrasDec = Math.max(0, totalDec - deferidas - indeferidas);
+  const pctDef = totalDec > 0 ? Math.round((deferidas / totalDec) * 100) : 0;
+  const chartRow = totalDec > 0 ? `<div class="chartrow">
+      ${svgGauge(pctDef, { label: "Deferimento", color: REPORT_VOTE_COLORS.favoravel })}
+      ${svgDonut([
+        { label: "Deferidas", value: deferidas, color: REPORT_VOTE_COLORS.favoravel },
+        { label: "Indeferidas", value: indeferidas, color: REPORT_VOTE_COLORS.desfavoravel },
+        { label: "Outras", value: outrasDec, color: REPORT_VOTE_COLORS.abstencao },
+      ], { title: "Distribuição de decisões" })}
+    </div>` : "";
 
+  const content = `
     <section>
       <h2>Resumo Executivo</h2>
-      <div class="grid">
-        <div class="metric"><span>Decisões</span><b>${input.deliberacoes.length}</b></div>
-        <div class="metric"><span>Notícias</span><b>${input.noticias.length}</b></div>
-        <div class="metric"><span>Mandatos</span><b>${input.mandatos.length}</b></div>
-        <div class="metric"><span>Confiança IA</span><b>${Math.round(input.cenarios.confianca * 100)}%</b></div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">${input.deliberacoes.length}</div><div class="l">Decisões</div></div>
+        <div class="kpi"><div class="v">${input.noticias.length}</div><div class="l">Notícias</div></div>
+        <div class="kpi"><div class="v">${input.mandatos.length}</div><div class="l">Mandatos</div></div>
+        <div class="kpi"><div class="v">${Math.round(input.cenarios.confianca * 100)}%</div><div class="l">Confiança IA</div></div>
       </div>
-      <p>${escapeHtml(input.associado.descricao ?? "Documento gerado a partir das fontes regulatorio-institucionais monitoradas.")}</p>
-      <p class="muted">Temas acompanhados: ${escapeHtml(input.associado.microtemas.join(", ") || "nao informados")}.</p>
-      ${input.observacoes_curadoria ? `<p class="muted"><b>Observacoes de curadoria:</b> ${escapeHtml(input.observacoes_curadoria)}</p>` : ""}
+      ${chartRow}
+      <p>${escapeHtml(input.associado.descricao ?? "Documento gerado a partir das fontes regulatório-institucionais monitoradas.")}</p>
+      <p class="muted">Temas acompanhados: ${escapeHtml(input.associado.microtemas.join(", ") || "não informados")}.</p>
+      ${input.observacoes_curadoria ? `<p class="muted"><b>Observações de curadoria:</b> ${escapeHtml(input.observacoes_curadoria)}</p>` : ""}
       ${renderQuality(input.qualidade)}
     </section>
-
     <section>
       <h2>${isQuarterly ? "Mandatos e Lista Tríplice" : "Decisões, Pautas e Votos do Mês"}</h2>
       ${isQuarterly ? renderMandatos(input.mandatos, input.listaTriplice) : renderMonthly(input.deliberacoes, input.noticias)}
     </section>
-
     <section>
-      <h2>Concordancia dos Diretores</h2>
+      <h2>Concordância dos Diretores</h2>
       ${renderConcordancia(input.concordancia)}
     </section>
-
     <section>
       <h2>Política Pública e Notícias Correlatas</h2>
       ${renderNoticias(input.noticias)}
       ${renderMinisterios(input.associado)}
     </section>
-
     <section>
       <h2>Visão VP</h2>
       <div class="vp">
@@ -342,23 +328,38 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
         </div>
       </div>
     </section>
-
     <section>
       <h2>Cenários Cautelosos</h2>
       <div class="scenario"><b>Provável.</b> ${escapeHtml(input.cenarios.provavel)}</div>
       <div class="scenario"><b>Alternativo.</b> ${escapeHtml(input.cenarios.alternativo)}</div>
       <div class="scenario"><b>Risco.</b> ${escapeHtml(input.cenarios.risco)}</div>
     </section>
-
     <section>
       <h2>Fontes</h2>
       <ol class="sources">${input.fontes.length ? input.fontes.map((f) => `<li>${escapeHtml(f.tipo)} · ${f.url ? `<a href="${escapeHtml(f.url)}">${escapeHtml(f.titulo)}</a>` : escapeHtml(f.titulo)}</li>`).join("") : "<li>Nenhuma fonte específica encontrada no período.</li>"}</ol>
-      <p class="muted">Projeções são cenários analíticos, não previsões determinísticas. Revisar antes de circular.</p>
-    </section>
-  </div>
-</body>
-</html>`;
+    </section>`;
+
+  return reportDocument({
+    title: input.titulo,
+    eyebrow: isQuarterly ? "Relatório do Associado" : "Relatório Mensal Regulatório",
+    subtitle: `${escapeHtml(input.associado.nome)} · ${escapeHtml(input.associado.setor)} · ${periodo}`,
+    generatedAt: `Período: ${periodo}`,
+    baseUrl: input.baseUrl,
+    contentHtml: content,
+    extraCss: ASSOCIADO_EXTRA_CSS,
+    footerHtml: `Projeções são cenários analíticos, não previsões determinísticas. Revisar antes de circular. &middot; IRIS-Regulação`,
+  });
 }
+
+// Classes próprias dos renderizadores das seções (mantidos), no tema de impressão IRIS.
+const ASSOCIADO_EXTRA_CSS = `
+  .muted{color:#71717a;}
+  .pill{display:inline-block;border:1px solid #e4e4e7;color:#c2a24a;border-radius:999px;padding:2px 8px;font-size:11px;font-weight:600;}
+  .scenario{border-left:3px solid #c2a24a;padding-left:12px;margin:10px 0;}
+  .sources{padding-left:18px;} .sources li{margin-bottom:6px;}
+  .warning{border:1px solid #fde68a;background:#fffbeb;border-radius:8px;padding:12px;} .warning li{margin-bottom:4px;}
+  .vp{display:flex;gap:16px;align-items:flex-start;} .vp img{width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid #e4e4e7;}
+`;
 
 function renderQuality(qualidade: DocumentoAssociadoPreview["qualidade"]) {
   if (!qualidade.pendencias.length) {
