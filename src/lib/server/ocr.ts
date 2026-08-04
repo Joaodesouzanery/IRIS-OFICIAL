@@ -9,7 +9,7 @@
  */
 
 const OCR_ENDPOINT = "https://api.ocr.space/parse/image";
-const MAX_OCR_BYTES = 5 * 1024 * 1024; // teto do provedor para PDF
+export const MAX_OCR_BYTES = 5 * 1024 * 1024; // teto do provedor para PDF
 const OCR_TIMEOUT_MS = 40_000; // dentro do orçamento de 60s da Vercel
 
 export function isOcrConfigured(): boolean {

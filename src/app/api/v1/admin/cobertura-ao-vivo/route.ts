@@ -16,6 +16,7 @@ import { discoverAntt2026Meetings } from "@/lib/server/antt-2026-collector";
 import { parseArtespReunioes } from "@/lib/server/monitoring";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
 import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
+import { anmNumerosDoAno } from "@/lib/server/anm-cobertura";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -85,15 +86,12 @@ export async function GET(req: NextRequest) {
   const artespErro = artespHtml ? null : "falha ao buscar a página ARTESP";
 
   // ANM: PDFs estáticos das sub-páginas — nº vem do nome ("ata_85__reuniao", "ata-32-rep") ou
-  // do heading ("85ª Reunião"). Sem data no nome → não dá para filtrar por ano (lista recente).
-  const anmHtml = (await Promise.all(ANM_URLS.map(fetchTextSafe))).join("\n");
-  const anmSite = toNums(
-    [...anmHtml.matchAll(/(?:ata|pauta)[_-](\d{1,3})(?=\D|$)|(\d{1,3})[ªa]\s*reuni/gi)].flatMap((m) => [
-      m[1],
-      m[2],
-    ]),
-  );
-  const anmErro = anmHtml ? null : "falha ao buscar as páginas ANM";
+  // do heading ("85ª Reunião"), e o ANO vem da DATA adjacente ao link ("31/07/2026 09h37" —
+  // verificado ao vivo). QA ago/2026: antes o parse global sem contexto inflava faltando/extra
+  // com reuniões de anos antigos; agora filtra pelo ano (sem data próxima → mantém).
+  const anmHtmls = await Promise.all(ANM_URLS.map(fetchTextSafe));
+  const anmSite = anmNumerosDoAno(anmHtmls, Number(year));
+  const anmErro = anmHtmls.some((h) => h) ? null : "falha ao buscar as páginas ANM";
 
   // ─── Reuniões NO BANCO (deliberações do ano) por agência ──────────────────
   const { data: agencias } = await db.from("agencias").select("id, sigla").in("sigla", ["ANTT", "ARTESP", "ANM"]);

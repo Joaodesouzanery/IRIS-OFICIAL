@@ -102,6 +102,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
     votoResultado,
     directorAmbiguo: directorInfo.ambiguo,
     directorSoIniciais: directorInfo.soIniciais,
+    iniciaisDesconhecidas: directorInfo.iniciaisDesconhecidas ?? null,
     resultadoSoCauda: documentType === "voto_individual" && votoResultado !== null && voteConclusion.fromTail,
   });
   const tipoDocumento = mapToPlatformDocumentType(documentType);
@@ -307,7 +308,7 @@ const NUMEROS_ANO_EXTENSO: Record<string, number> = {
 // é registrar o voto no nome errado. Por isso as INICIAIS (2-3 letras, corrompíveis e de
 // tabela fixa) são só uma DICA: quando também há um nome textual (RELATORIA/assinatura)
 // e ele DIVERGE do canônico das iniciais, retornamos ambíguo (sem voto automático).
-function extractDirector(text: string, filename: string, type: AnttManualDocumentType): { nome: string | null; ambiguo: boolean; soIniciais: boolean } {
+function extractDirector(text: string, filename: string, type: AnttManualDocumentType): { nome: string | null; ambiguo: boolean; soIniciais: boolean; iniciaisDesconhecidas?: string | null } {
   const signature = firstMatch(text.slice(-3000), /Documento assinado eletronicamente por\s+([^,]+),\s+Diretor/i)
     ?? firstMatch(text.slice(-2000), /([A-ZÁÉÍÓÚÂÊÔÃÕÇ ]{8,})\s+Diretor(?:a)?\b/i);
   const signatureName = signature ? titleCase(signature) : null;
@@ -333,6 +334,11 @@ function extractDirector(text: string, filename: string, type: AnttManualDocumen
     // Só iniciais, SEM nome textual p/ conferir → DAA↔DAB (1 letra) grava no diretor errado sem
     // aviso. Marca soIniciais p/ o buildWarnings mandar à revisão (não bloqueia). F3.
     if (fromInitials) return { nome: fromInitials, ambiguo: false, soIniciais: true };
+    // Iniciais no padrão de diretor, mas AUSENTES da tabela (ex.: diretoria mudou e entrou "DXY"):
+    // sinaliza para o buildWarnings — sem isto o voto de um diretor NOVO perde o autor em silêncio.
+    if (initials && /^D[A-Z]{1,2}$/.test(initials)) {
+      return { nome: textualName ?? null, ambiguo: false, soIniciais: false, iniciaisDesconhecidas: initials };
+    }
     if (textualName) return { nome: textualName, ambiguo: false, soIniciais: false };
     return { nome: null, ambiguo: false, soIniciais: false };
   }
@@ -667,6 +673,14 @@ function extractSeiUrl(text: string) {
 // sem padrão claro (ex.: "manter/reformar a decisão", ambíguos) → null + warning (nunca chutar).
 export function inferResultado(text: string): string | null {
   const value = normalize(text);
+  // RETIRADA/SOBRESTAMENTO PRIMEIRO (QA ago/2026): um voto retirado de pauta cujo assunto cita
+  // "recurso contra decisão que indeferiu…" caía no bloco negativo e gravava "Indeferido" —
+  // errado e silencioso. Mesma precedência do ata-splitter. Regex com ADJACÊNCIA ("retirad*
+  // [de] pauta"): o `includes("retirad") && includes("pauta")` antigo, promovido ao topo,
+  // marcaria falso Retirado quando as palavras aparecem longe uma da outra.
+  if (/\bretirad\w*\s+(?:de\s+)?pauta\b|\bsobrest\w*|\bped(?:iu|ido)\s+(?:de\s+)?vistas?\b/.test(value)) {
+    return "Retirado de Pauta";
+  }
   // Negativos — "indefer" (indeferimento/indeferido) E "indefir" (indeferir/indefiro,
   // 1ª pessoa do dispositivo, que "indefer" NÃO casava). Ambos antes dos positivos.
   // "nao prover/provido/provimento", "desprovido", "improvido" precisam SAIR aqui antes
@@ -681,7 +695,6 @@ export function inferResultado(text: string): string | null {
     value.includes("improcedente") || value.includes("improcedencia") ||
     value.includes("cassacao")
   ) return "Indeferido";
-  if (value.includes("retirad") && value.includes("pauta")) return "Retirado de Pauta";
   // Parcial ANTES do deferimento cheio: "dar parcial provimento", "deferimento parcial",
   // "procedente em parte", "acolher parcialmente" → Parcialmente Deferido (não "Deferido").
   if (
@@ -735,7 +748,7 @@ function buildWarnings(
   firstProcess: AtaPreviewItem,
   director: string | null,
   items: AtaPreviewItem[],
-  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean; directorSoIniciais?: boolean; resultadoSoCauda?: boolean },
+  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean; directorSoIniciais?: boolean; iniciaisDesconhecidas?: string | null; resultadoSoCauda?: boolean },
 ) {
   const warnings: string[] = [];
   if (!meeting.numero && type !== "voto_individual") warnings.push("ANTT: número da reunião não identificado com alta confiança.");
@@ -746,6 +759,9 @@ function buildWarnings(
   }
   if (type === "voto_individual" && extra?.directorSoIniciais) {
     warnings.push("ANTT: autor do voto inferido SÓ pelas iniciais (sem nome textual para conferir) — colisão de iniciais (ex.: DAA↔DAB) possível; revisar.");
+  }
+  if (type === "voto_individual" && extra?.iniciaisDesconhecidas) {
+    warnings.push(`ANTT: iniciais "${extra.iniciaisDesconhecidas}" não mapeadas na tabela de diretores — a diretoria mudou? Atualizar ANTT_DIRECTOR_INITIALS e revisar o autor do voto.`);
   }
   if (type === "voto_individual" && extra?.resultadoSoCauda) {
     warnings.push("ANTT: direção do voto inferida da CAUDA do documento (sem fórmula de dispositivo explícita) — revisar favorável/contrário.");

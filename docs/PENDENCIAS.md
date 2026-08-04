@@ -48,6 +48,23 @@ No plano grátis, a conferência humana semanal é:
 | **Conferir que prod NÃO está em modo demo** | Após qualquer mudança de env na Vercel; se "o sistema não pedir login" | Abrir `/api/v1/system/status` → tem de vir `is_demo:false` / `persistence:"supabase"`. `is_demo:true` = falta `NEXT_PUBLIC_SUPABASE_URL` ou `SUPABASE_SERVICE_ROLE_KEY` na Vercel → app roda SEM login. Setar env + redeploy. |
 | **Regerar Relatórios do Observatório após lote grande** | Após aprovar muitos docs em lote (os relatórios salvos são SNAPSHOTS; janela de ~200 delibs por período) | Documentos de Associados → gerar de novo o relatório do período |
 | **Backfill de `area_regulatoria` histórica** | Uma vez (deliberações confirmadas ANTES de ago/2026 ficaram com a coluna NULL — o confirm só grava daqui em diante) | Adiado: migration de backfill (classificar pelo texto) quando fizer falta nos filtros |
+
+## Backlog que depende do usuário (auditoria de otimizações, ago/2026)
+O código da esteira está sem TODO/FIXME pendente; estes itens precisam de ação/informação do usuário:
+1. **OCR dos escaneados** — código PRONTO (auto-OCR no reprocesso + botão na tela Upload). Falta criar
+   **`OCR_SPACE_API_KEY`** na Vercel (ocr.space; plano grátis = 3 págs/PDF, 5 MB). Depois: selecionar os
+   escaneados na fila → Reprocessar. PDFs >5 MB agora avisam explicitamente.
+2. **Backfill de `area_regulatoria`** — rodar `SELECT count(*) FROM deliberacoes WHERE area_regulatoria
+   IS NULL` no SQL Editor; se for relevante, pedir a rota de backfill (molde do empresas/backfill).
+3. **View `reunioes_consolidadas` órfã** — nada no código a lê; se nada externo consome, gerar migration
+   `DROP VIEW IF EXISTS` (1 linha).
+4. **Vercel Pro** — restaura os 8 crons (coleta/derivadas zero-toque); hoje é clique manual por decisão.
+5. **Certificação ampliada** — enviar PDFs reais de: (a) voto ANTT com direção conhecida, (b) ata com
+   divergência nomeada, (c) deliberação Indeferida → entram no gabarito do golden-set. (Opcional:
+   verificador Haiku para o resíduo da revisão — custo por uso, precisa ANTHROPIC_API_KEY.)
+6. **Troca de diretoria da ANTT** — quando acontecer, adicionar as novas iniciais em
+   `ANTT_DIRECTOR_INITIALS` (antt-manual-parser.ts); a extração agora AVISA quando encontra iniciais
+   fora da tabela.
 | **Recomputar derivadas da fonte única** (Hobby não tem cron p/ isso) | Após ingestão grande de votos; semanalmente | `empresas/backfill` (preenche `empresa_id` → visões por empresa), `qualidade-regulatoria/coletas/derivadas/run` (evidências de qualidade a partir de votos), `votos/recalcular-divergencia` e `votos/reprocessar-abstencoes`. Sem isso, Qualidade/Empresas ficam estagnadas em modo real. |
 
 ## Migrations pendentes de aplicação manual (SQL Editor)

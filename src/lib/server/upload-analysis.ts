@@ -6,7 +6,7 @@ import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/l
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument, isAnttVotoFilename } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
-import { isOcrConfigured } from "@/lib/server/ocr";
+import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 
 // Avisos INFORMATIVOS (não são problema de qualidade): não devem manter o preview
 // eternamente em "low_confidence". Casam pelos trechos LIMPos das mensagens (que
@@ -116,7 +116,11 @@ export async function analyzeUploadPdf(input: {
       warnings: [
         `Provável documento digitalizado/escaneado (sem camada de texto). ${
           isOcrConfigured()
-            ? "O OCR não recuperou texto suficiente."
+            ? (file.size > MAX_OCR_BYTES
+                // QA ago/2026: >5MB o OCR nem tenta (teto do provedor) — sem este aviso, o
+                // genérico "não recuperou texto" enganava o operador.
+                ? `O PDF tem ${(file.size / (1024 * 1024)).toFixed(1)} MB e EXCEDE o limite do OCR (5 MB) — comprimir o PDF ou reenviar versão pesquisável.`
+                : "O OCR não recuperou texto suficiente.")
             : "Habilite OCR_SPACE_API_KEY ou reenvie um PDF pesquisável."
         } Fica em revisão para conferência manual — não foi descartado.`,
         ...(anttByName ? ["Identificado pelo nome do arquivo como VOTO ANTT — confirme o conteúdo ao revisar."] : []),

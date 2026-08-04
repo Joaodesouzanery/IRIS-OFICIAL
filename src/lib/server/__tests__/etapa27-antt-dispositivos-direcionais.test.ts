@@ -56,6 +56,16 @@ describe("inferResultado ANTT — dispositivos direcionais [PR-P]", () => {
     expect(inferResultado("Homologo o resultado da licitação.")).toBe("Ratificado");
   });
 
+  it("RETIRADO tem precedência sobre indeferimento CITADO (QA ago/2026 — invertia p/ Indeferido)", () => {
+    expect(inferResultado("Recurso contra a decisão que indeferiu o pedido. Item retirado de pauta a pedido do relator.")).toBe("Retirado de Pauta");
+    expect(inferResultado("Sobrestado o processo que trata do indeferimento anterior.")).toBe("Retirado de Pauta");
+    expect(inferResultado("Pediu vistas o Diretor, sobre a matéria indeferida em 1ª instância.")).toBe("Retirado de Pauta");
+  });
+
+  it("adjacência: 'pauta' e 'retirada' LONGE um do outro NÃO viram Retirado", () => {
+    expect(inferResultado("Item da pauta ordinária. A concessionária pleiteou a retirada das obrigações acessórias. Voto pelo indeferimento.")).toBe("Indeferido");
+  });
+
   it("null-não-chuta preservado: dispositivo ambíguo/sem verbo → null (vai para revisão)", () => {
     expect(inferResultado("Voto por manter a decisão recorrida.")).toBeNull();
     expect(inferResultado("Proponho a reforma da decisão de primeira instância.")).toBeNull();
