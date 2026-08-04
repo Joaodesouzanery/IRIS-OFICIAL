@@ -49,17 +49,31 @@ export async function GET(req: NextRequest) {
     .from("documentos_regulatorios")
     .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
     .eq("status", "review_pending")
-    .limit(1000);
+    .order("id", { ascending: true }) // determinístico (antes: sem order + limit → subcontagem aleatória)
+    .limit(2000);
   if (agenciaId) query = query.eq("agencia_id", agenciaId);
 
   const { data: docsRaw, error } = await query;
   if (error) return NextResponse.json({ error: "Falha ao listar pendências de voto." }, { status: 500 });
 
+  // QA ago/2026: separa o RESÍDUO ESPERADO do ATRASO REAL em toda a fila (não só votos).
+  // pauta/documento_apoio NUNCA viram deliberação (NAO_FINAL, por desenho) — ficam na fila mas não
+  // são atraso; ata/deliberacao/resolucao/portaria pendentes SÃO trabalho aguardando confirmação.
+  const RESIDUO = new Set(["pauta", "documento_apoio"]);
+  const AGUARDANDO = new Set(["ata", "deliberacao", "resolucao", "portaria"]);
+  const tipoDe = (d: any) => String(d?.campos_detectados?.preview?.fields?.tipo_documento ?? d.tipo_documento ?? "outro");
+  const porTipoMap = new Map<string, number>();
+  for (const d of docsRaw ?? []) porTipoMap.set(tipoDe(d), (porTipoMap.get(tipoDe(d)) ?? 0) + 1);
+  const por_tipo = [...porTipoMap.entries()]
+    .map(([tipo, total]) => ({
+      tipo,
+      total,
+      categoria: tipo === "voto_individual" ? "voto" : RESIDUO.has(tipo) ? "residuo_esperado" : AGUARDANDO.has(tipo) ? "aguardando_confirmacao" : "outro",
+    }))
+    .sort((a, b) => b.total - a.total);
+
   // Só voto_individual (o preview carrega o tipo real em campos_detectados).
-  const docs = (docsRaw ?? []).filter((d: any) => {
-    const tipo = String(d?.campos_detectados?.preview?.fields?.tipo_documento ?? d.tipo_documento ?? "");
-    return tipo === "voto_individual";
-  });
+  const docs = (docsRaw ?? []).filter((d: any) => tipoDe(d) === "voto_individual");
 
   // Cache de diretores por agência p/ o relator_match_ok (idêntico à rota auto-confirm).
   const diretoresCache = new Map<string, Array<{ id: string; nome: string; nome_variantes: string[] }>>();
@@ -99,6 +113,8 @@ export async function GET(req: NextRequest) {
     confirmaveis, // passariam no gate AGORA (rodar Auto-confirmar materializa)
     motivos,
     amostras,
+    total_review_pending: (docsRaw ?? []).length,
+    por_tipo, // toda a fila por tipo: voto | residuo_esperado (pauta/apoio) | aguardando_confirmacao (ata/delib)
     legal_notice: "Diagnóstico read-only: por que cada voto_individual está em revisão. 'confirmaveis' = passariam no gate conservador nesta rodada.",
   });
 }

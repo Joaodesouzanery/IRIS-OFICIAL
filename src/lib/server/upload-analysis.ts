@@ -4,7 +4,7 @@ import { detectDocumentType, extractAtaMetadata, splitAtaItems } from "@/lib/ser
 import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
-import { parseAnttManualDocument } from "@/lib/server/antt-manual-parser";
+import { parseAnttManualDocument, isAnttVotoFilename } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured } from "@/lib/server/ocr";
 
@@ -96,8 +96,21 @@ export async function analyzeUploadPdf(input: {
     // marcava o doc/job como FAILED e ele sumia no balde "Falhou". Agora vai para REVISÃO
     // (low_confidence + confiança 0) — auditável e recuperável (o humano habilita OCR ou reenvia
     // um PDF pesquisável), em vez de parecer um erro de processamento. QA jul/2026, PR-M.
+    // QA ago/2026: mesmo sem texto, o FILENAME pode identificar o doc ("Voto DFQ 035-2026.pdf" =
+    // voto ANTT). Antes ficava "? · documento_apoio" (voto real invisível na fila); agora aparece
+    // como "ANTT · voto_individual" para o revisor. Segue low_confidence/confiança 0 — o
+    // auto-confirm continua barrando (nunca chuta); só melhora a triagem humana.
+    const anttByName = isAnttVotoFilename(file.name);
+    const scannedBase = errorResult(file.name, file_hash);
+    if (anttByName) {
+      const anttAgencia = agencias.find((a) => a.sigla === "ANTT");
+      scannedBase.fields.tipo_documento = "voto_individual";
+      scannedBase.fields.procedencia = "ANTT";
+      scannedBase.agencia_sigla_detected = "ANTT";
+      scannedBase.agencia_id_detected = anttAgencia?.id ?? null;
+    }
     return {
-      ...errorResult(file.name, file_hash),
+      ...scannedBase,
       status: "low_confidence",
       page_count: extraction.pageCount,
       warnings: [
@@ -106,6 +119,7 @@ export async function analyzeUploadPdf(input: {
             ? "O OCR não recuperou texto suficiente."
             : "Habilite OCR_SPACE_API_KEY ou reenvie um PDF pesquisável."
         } Fica em revisão para conferência manual — não foi descartado.`,
+        ...(anttByName ? ["Identificado pelo nome do arquivo como VOTO ANTT — confirme o conteúdo ao revisar."] : []),
       ],
     };
   }
@@ -123,7 +137,8 @@ export async function analyzeUploadPdf(input: {
   let confidence = calcConfidence(fields);
   if (antt.isAntt) confidence = Math.max(confidence, antt.confidenceBoost);
 
-  let agencia_sigla_detected = detectAgenciaSigla(extraction.text, agencias.map((a) => a.sigla));
+  // Filename conta na detecção de agência (uploads manuais "Voto DFQ..." não têm a sigla no texto).
+  let agencia_sigla_detected = detectAgenciaSigla(`${file.name}\n${extraction.text}`, agencias.map((a) => a.sigla));
   if (antt.isAntt) agencia_sigla_detected = "ANTT";
   const agencia_id_detected = agencia_sigla_detected
     ? agencias.find((a) => a.sigla === agencia_sigla_detected)?.id ?? null

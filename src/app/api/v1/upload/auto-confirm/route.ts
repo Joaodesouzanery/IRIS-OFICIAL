@@ -62,9 +62,15 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     return lista;
   }
 
-  // IDs já avaliados como INELEGÍVEIS: excluídos das próximas rodadas para não
-  // mascararem os elegíveis (que, ao confirmar, saem de review_pending sozinhos).
-  const ineligibleIds = new Set<string>();
+  // Paginação por OFFSET com ordenação ESTÁVEL (confiança desc + id asc). Por que não o
+  // `.not(id,in,(...))` acumulado de antes: (a) com 30×50 ids a query string estourava o limite
+  // de URL do PostgREST; (b) pior, a rodada pegava os 50 de MAIOR confiança — justamente os
+  // inelegíveis crônicos (pauta/apoio/duplicata/warning) — e `elegiveis.length===0` dava BREAK
+  // sem nunca alcançar os votos confirmáveis (confiança ~0.70, no fim da fila) → "0 confirmados"
+  // com 100+ elegíveis atrás (bug real de produção, ago/2026). Agora: confirmados SAEM do result
+  // set sozinhos (status muda); inelegíveis FICAM e o offset avança exatamente sobre eles.
+  let offset = 0;
+  let puladosTotal = 0;
   let analisados = 0;
   let confirmadosTotal = 0;
   let rodadas = 0;
@@ -81,13 +87,13 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
       .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
       .eq("status", "review_pending")
       .order("extraction_confidence", { ascending: false, nullsFirst: false })
-      .limit(limit);
+      .order("id", { ascending: true })
+      .range(offset, offset + limit - 1);
     if (body.agencia_id) query = query.eq("agencia_id", body.agencia_id);
-    if (ineligibleIds.size > 0) query = query.not("id", "in", `(${[...ineligibleIds].join(",")})`);
 
     const { data: docs, error } = await query;
     if (error) return NextResponse.json({ error: "Falha ao listar documentos para auto-confirmação." }, { status: 500 });
-    if (!docs || docs.length === 0) break; // nada mais a avaliar
+    if (!docs || docs.length === 0) break; // passamos do fim → varremos tudo
     rodadas++;
     analisados += docs.length;
 
@@ -105,12 +111,24 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
       const verdict = canAutoConfirm(doc as any);
       if (verdict.ok) elegiveis.push(doc);
       else {
-        ineligibleIds.add((doc as any).id);
+        puladosTotal++;
         if (ultimosPulados.length < 20) ultimosPulados.push({ id: (doc as any).id, reason: verdict.reason });
       }
     }
 
-    if (elegiveis.length === 0) break; // rodada sem elegível → o resto é inelegível
+    // Inelegíveis permanecem em review_pending → o offset avança SÓ sobre eles; os elegíveis
+    // confirmados saem do result set (status muda) e não deslocam a próxima página.
+    offset += docs.length - elegiveis.length;
+    const paginaCheia = docs.length === limit;
+
+    if (elegiveis.length === 0) {
+      // Rodada sem elegível NÃO significa fim (o bug antigo): só avança a página.
+      if (!loop || !paginaCheia) {
+        if (!loop && paginaCheia) restantes = true;
+        break;
+      }
+      continue;
+    }
 
     const deliberacoes = elegiveis.map((doc) => {
       const delib = buildConfirmDelibFromDoc(doc);
@@ -131,15 +149,21 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     }
     confirmadosTotal += elegiveis.length;
 
-    if (!loop) break;
+    if (!loop) {
+      if (paginaCheia) restantes = true; // 1 rodada só, mas ainda há fila
+      break;
+    }
   }
+
+  // Esgotou as rodadas com página cheia = provavelmente ainda há fila → re-chamar.
+  if (loop && rodadas >= maxRodadas) restantes = true;
 
   return NextResponse.json({
     rodadas,
     analisados,
     confirmados_total: confirmadosTotal,
-    restantes, // true = parou por orçamento de tempo; re-chamar para continuar
-    pulados: ineligibleIds.size,
+    restantes, // true = parou por orçamento/rodadas; re-chamar para continuar
+    pulados: puladosTotal,
     exemplos_pulados: ultimosPulados,
     confirm: confirmDetalhes.length === 1 ? confirmDetalhes[0] : confirmDetalhes,
     legal_notice: "Auto-confirmação CONSERVADORA em loop (doc final + confiança ok + votos com match ≥0.85). Ambíguos ficam na fila manual.",

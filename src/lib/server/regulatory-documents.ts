@@ -31,7 +31,9 @@ export function classifyRegulatoryDocument(input: {
   let subtipo: string | null = input.documento_antt_tipo ?? null;
   let countsAsFinal = true;
 
-  if (input.documento_antt_tipo === "voto_individual" || /\bvoto\s+daa\b/i.test(filename)) {
+  // Rede de segurança por FILENAME p/ QUALQUER iniciais de diretor ANTT (antes só DAA hardcoded;
+  // "Voto DFQ 035-2026" escapava e virava documento_apoio genérico). QA ago/2026.
+  if (input.documento_antt_tipo === "voto_individual" || /\bvoto[\s_-]+(?:vista[\s_-]+)?d[a-z]{1,2}\b/i.test(filename)) {
     tipo = "voto_individual";
     subtipo = input.documento_antt_tipo ?? "voto_individual";
     countsAsFinal = false;

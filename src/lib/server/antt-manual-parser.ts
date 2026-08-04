@@ -41,10 +41,26 @@ const ANTT_DIRECTOR_ALIASES: Array<{ canonical: string; aliases: string[] }> = [
 
 const RESULTADO_APROVADO = "Aprovado";
 
+// Filename no padrão dos votos ANTT ("Voto DFQ 035-2026.pdf", "Voto-DLA-37-2026...", "Declaracao
+// de Voto DAB 12-2026"): iniciais de diretor + número/ano. Upload manual do SEI muitas vezes NÃO
+// tem a string "ANTT" nem no nome nem nos primeiros 5000 chars — sem este sinal o parser nem
+// rodava e o voto real virava "? · documento_apoio" (perdido). Aditivo: só LIGA o parser; a
+// direção do voto continua nunca sendo chutada.
+const RE_ANTT_VOTO_FILENAME = /\bvoto[\s_-]+(?:vista[\s_-]+)?(D[A-Z]{1,2}|DG)[\s_-]*\d{1,4}[\s_-]*[-_/]?[\s_-]*20\d{2}/i;
+
+export function isAnttVotoFilename(filename: string): boolean {
+  const m = RE_ANTT_VOTO_FILENAME.exec(filename);
+  if (!m) return false;
+  return Object.prototype.hasOwnProperty.call(ANTT_DIRECTOR_INITIALS, m[1].toUpperCase());
+}
+
 export function parseAnttManualDocument(text: string, filename: string): AnttManualParseResult {
   const clean = cleanText(text);
   const normalized = normalize(`${filename} ${clean.slice(0, 5000)}`);
-  const isAntt = /\bantt\b/.test(normalized) || normalized.includes("agencia nacional de transportes terrestres");
+  const isAntt =
+    /\bantt\b/.test(normalized) ||
+    normalized.includes("agencia nacional de transportes terrestres") ||
+    isAnttVotoFilename(filename);
 
   if (!isAntt) {
     return {

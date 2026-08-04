@@ -335,9 +335,18 @@ export default function VotosDiretoresPage() {
   const { data: pendenciasVoto } = useQuery({
     queryKey: ["pendencias-voto-diagnostico"],
     queryFn: () =>
-      api.get<{ total_pendentes: number; confirmaveis: number; motivos: Array<{ key: string; label: string; total: number }> }>(
+      api.get<{
+        total_pendentes: number; confirmaveis: number; motivos: Array<{ key: string; label: string; total: number }>;
+        total_review_pending?: number; por_tipo?: Array<{ tipo: string; total: number; categoria: string }>;
+      }>(
         "/admin/upload/pendencias-voto",
-      ).catch(() => ({ total_pendentes: 0, confirmaveis: 0, motivos: [] })),
+      ).catch(() => ({
+        total_pendentes: 0,
+        confirmaveis: 0,
+        motivos: [] as Array<{ key: string; label: string; total: number }>,
+        total_review_pending: 0,
+        por_tipo: [] as Array<{ tipo: string; total: number; categoria: string }>,
+      })),
   });
 
   // Limpeza de deliberações duplicadas (legado, antes do dedup estrutural). Dois
@@ -721,6 +730,21 @@ export default function VotosDiretoresPage() {
                   </span>
                 ))}
               </div>
+              {(pendenciasVoto?.por_tipo ?? []).length > 0 && (() => {
+                const pt = pendenciasVoto!.por_tipo!;
+                const soma = (cat: string) => pt.filter((x) => x.categoria === cat).reduce((s, x) => s + x.total, 0);
+                const residuo = soma("residuo_esperado");
+                const aguardando = soma("aguardando_confirmacao");
+                return (
+                  <p className="text-[11px] text-text-muted">
+                    Fila completa: {pendenciasVoto!.total_review_pending ?? 0} documento(s) —{" "}
+                    {residuo > 0 && <span>{residuo} são pautas/apoio (não viram deliberação por desenho)</span>}
+                    {residuo > 0 && aguardando > 0 && " · "}
+                    {aguardando > 0 && <span className="text-warning">{aguardando} atas/deliberações aguardam confirmação (Auto-confirmar processa as de alta confiança)</span>}
+                    .
+                  </p>
+                );
+              })()}
             </div>
           )}
           {(pendentesRevisao?.data ?? []).length > 0 ? (
