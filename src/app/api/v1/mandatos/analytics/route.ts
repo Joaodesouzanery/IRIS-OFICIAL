@@ -13,6 +13,7 @@ import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
 
 
 export async function GET(req: NextRequest) {
@@ -33,11 +34,15 @@ export async function GET(req: NextRequest) {
   // Inclui os campos de classificação para filtrar só DECISÕES FINAIS (exclui
   // ata-mãe/pauta/voto_individual/itens sem resultado) — senão a fatia "Sem
   // resultado" incha e o total (36) diverge do Dashboard (28).
-  let baseQ = db
-    .from("deliberacoes")
-    .select("id, resultado, microtema, data_reuniao, tipo_documento, documento_pai_id, raw_extraction, votos(tipo_voto, is_divergente)");
-  if (agenciaId) baseQ = baseQ.eq("agencia_id", agenciaId);
-  const { data: delibs, error } = await baseQ;
+  // Paginado (anti-truncamento ~1000 do PostgREST) — QA ago/2026.
+  const { rows: delibs, error } = await selectAllPaged(() => {
+    let baseQ = db
+      .from("deliberacoes")
+      .select("id, resultado, microtema, data_reuniao, tipo_documento, documento_pai_id, raw_extraction, votos(tipo_voto, is_divergente)")
+      .order("id", { ascending: true });
+    if (agenciaId) baseQ = baseQ.eq("agencia_id", agenciaId);
+    return baseQ;
+  }, { label: "mandatos/analytics" });
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar analytics" }, { status: 500 });

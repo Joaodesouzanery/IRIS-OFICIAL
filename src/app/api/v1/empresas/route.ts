@@ -10,6 +10,7 @@ import { computeEmpresas } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
 import { isOrgaoInterno } from "@/lib/server/empresa-resolver";
@@ -34,14 +35,18 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  let q: any = db
-    .from("deliberacoes")
-    .select(`interessado, empresa_id, empresas(nome_exibicao), resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
-    .not("interessado", "is", null);
-  if (agenciaId) q = q.eq("agencia_id", agenciaId);
-  if (microtema) q = q.eq("microtema", microtema);
-
-  const { data, error } = await q;
+  // Paginado (anti-truncamento ~1000 do PostgREST): sem isto o ranking de empresas subconta
+  // em silêncio quando a base cresce (QA ago/2026).
+  const { rows: data, error } = await selectAllPaged(() => {
+    let q: any = db
+      .from("deliberacoes")
+      .select(`interessado, empresa_id, empresas(nome_exibicao), resultado, microtema, data_reuniao, agencia_id, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
+      .not("interessado", "is", null)
+      .order("id", { ascending: true });
+    if (agenciaId) q = q.eq("agencia_id", agenciaId);
+    if (microtema) q = q.eq("microtema", microtema);
+    return q;
+  }, { label: "empresas" });
   if (error) return NextResponse.json({ error: "Erro ao buscar empresas" }, { status: 500 });
 
   // Agrupa por empresa_id (FK normalizada); para registros ainda sem FK, usa a chave

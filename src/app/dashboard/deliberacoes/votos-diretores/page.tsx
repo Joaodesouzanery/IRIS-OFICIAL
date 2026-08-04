@@ -326,8 +326,37 @@ export default function VotosDiretoresPage() {
     queryKey: ["docs-review-pending-colegiado"],
     queryFn: () =>
       api.get<{ total: number; data: Array<{ id: string; filename: string | null; tipo_documento: string | null; agencia?: { sigla?: string } | null }> }>(
-        "/upload/documentos?status=review_pending&limit=8",
+        "/upload/documentos?status=review_pending&limit=50",
       ).catch(() => ({ total: 0, data: [] })),
+  });
+
+  // Aprovação em LOTE (decisão humana, sem o gate conservador): selecionados ou todos.
+  const [revisaoSel, setRevisaoSel] = useState<string[]>([]);
+  const [loteFeedback, setLoteFeedback] = useState<string | null>(null);
+  const confirmLoteMutation = useMutation({
+    mutationFn: (input: { ids?: string[]; todos?: boolean }) =>
+      api.post<{
+        materializados: number; ignorados: number; erros: number;
+        pulados_duplicata: number; pulados_sem_agencia: number; restantes: boolean;
+      }>("/upload/confirm-lote", input),
+    onSuccess: (r) => {
+      const partes = [
+        `${r.materializados} materializado(s)`,
+        r.ignorados > 0 ? `${r.ignorados} pauta(s)/apoio marcados como revisados` : null,
+        r.pulados_duplicata > 0 ? `${r.pulados_duplicata} duplicata(s) pulada(s) — seguem na fila` : null,
+        r.pulados_sem_agencia > 0 ? `${r.pulados_sem_agencia} sem agência pulado(s)` : null,
+        r.erros > 0 ? `${r.erros} erro(s)` : null,
+        r.restantes ? "ainda há fila — clique de novo" : null,
+      ].filter(Boolean);
+      setLoteFeedback(`Lote concluído: ${partes.join(" · ")}.`);
+      setRevisaoSel([]);
+      for (const key of [
+        ["docs-review-pending-colegiado"], ["pendencias-voto-diagnostico"], ["deliberacoes"], ["dashboard"],
+        ["diretores"], ["votacao"], ["empresas"], ["mandatos"], ["governanca-agencias"],
+        ["deliberacoes-360"], ["deliberacoes-gov"], ["completude-2026"], ["votos-diretores"],
+      ]) queryClient.invalidateQueries({ queryKey: key });
+    },
+    onError: (e) => setLoteFeedback(e instanceof Error ? e.message : "Falha na aprovação em lote."),
   });
 
   // Diagnóstico: POR QUE os voto_individual estão parados no gate (agregado por motivo).
@@ -749,18 +778,65 @@ export default function VotosDiretoresPage() {
           )}
           {(pendentesRevisao?.data ?? []).length > 0 ? (
             <div className="space-y-1.5">
+              {/* Barra de LOTE: aprovar selecionados/todos sem revisar 1 a 1. */}
+              <div className="flex items-center gap-2 flex-wrap pb-1">
+                <label className="flex items-center gap-1.5 text-xs text-text-muted cursor-pointer">
+                  <input
+                    type="checkbox"
+                    className="accent-brand"
+                    checked={revisaoSel.length > 0 && revisaoSel.length === (pendentesRevisao?.data ?? []).length}
+                    onChange={(e) => setRevisaoSel(e.target.checked ? (pendentesRevisao?.data ?? []).map((d) => d.id) : [])}
+                  />
+                  selecionar todos
+                </label>
+                <button
+                  type="button"
+                  className="btn-primary text-xs"
+                  disabled={revisaoSel.length === 0 || confirmLoteMutation.isPending || demoEnabled}
+                  onClick={() => {
+                    if (window.confirm(`Aprovar ${revisaoSel.length} documento(s) selecionado(s)?\n\n• Documentos finais viram deliberações + votos (entram nas métricas).\n• Pautas/apoio serão marcados como revisados (não viram deliberação).\n• Duplicatas e docs sem agência são pulados e seguem na fila.`)) {
+                      confirmLoteMutation.mutate({ ids: revisaoSel });
+                    }
+                  }}
+                >
+                  {confirmLoteMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                  Aprovar selecionados ({revisaoSel.length})
+                </button>
+                <button
+                  type="button"
+                  className="btn-secondary text-xs"
+                  disabled={confirmLoteMutation.isPending || demoEnabled}
+                  onClick={() => {
+                    if (window.confirm(`Aprovar TODOS os ${pendentesRevisao?.total ?? 0} documento(s) da fila de revisão?\n\n• Documentos finais viram deliberações + votos (entram nas métricas).\n• Pautas/apoio serão marcados como revisados (não viram deliberação).\n• Duplicatas e docs sem agência são pulados e seguem na fila para decisão manual.\n\nEssa é uma decisão humana — o gate conservador não é aplicado.`)) {
+                      confirmLoteMutation.mutate({ todos: true });
+                    }
+                  }}
+                >
+                  {confirmLoteMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                  Aprovar todos
+                </button>
+              </div>
+              {loteFeedback && <p className="text-xs text-text-muted">{loteFeedback}</p>}
               {(pendentesRevisao?.data ?? []).map((doc) => (
                 <div key={doc.id} className="flex items-center justify-between gap-3 text-sm border border-border rounded-card px-3 py-2">
-                  <span className="truncate text-text-primary">
-                    {doc.filename ?? doc.id}
-                    <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
-                  </span>
+                  <label className="flex items-center gap-2 min-w-0 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      className="accent-brand shrink-0"
+                      checked={revisaoSel.includes(doc.id)}
+                      onChange={() => setRevisaoSel((prev) => prev.includes(doc.id) ? prev.filter((x) => x !== doc.id) : [...prev, doc.id])}
+                    />
+                    <span className="truncate text-text-primary">
+                      {doc.filename ?? doc.id}
+                      <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
+                    </span>
+                  </label>
                   <a href="/dashboard/upload" className="text-brand text-xs hover:underline shrink-0">Revisar →</a>
                 </div>
               ))}
               {(pendentesRevisao?.total ?? 0) > (pendentesRevisao?.data ?? []).length && (
                 <p className="text-xs text-text-muted">
-                  + {(pendentesRevisao!.total) - (pendentesRevisao!.data.length)} outro(s) em <a href="/dashboard/upload" className="text-brand hover:underline">Upload de PDFs</a>.
+                  + {(pendentesRevisao!.total) - (pendentesRevisao!.data.length)} outro(s) — &ldquo;Aprovar todos&rdquo; cobre a fila inteira, ou revise em <a href="/dashboard/upload" className="text-brand hover:underline">Upload de PDFs</a>.
                 </p>
               )}
             </div>

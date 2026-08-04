@@ -12,10 +12,12 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 import { selectAllPaged } from "@/lib/server/select-all-paged";
+import { matchesYear } from "@/lib/server/year-filter";
 
 
 export async function GET(req: NextRequest) {
   const agenciaId = req.nextUrl.searchParams.get("agencia_id") || null;
+  const year = req.nextUrl.searchParams.get("year");
 
   if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
@@ -32,7 +34,7 @@ export async function GET(req: NextRequest) {
   const { rows: deliberacoes, error } = await selectAllPaged(() => {
     let q = db
       .from("deliberacoes")
-      .select(`id, resultado, microtema, data_reuniao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`);
+      .select(`id, resultado, microtema, data_reuniao, data_publicacao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`);
     if (agenciaId) q = q.eq("agencia_id", agenciaId);
     // Ordem TOTAL única (PK) → paginação por offset determinística (sem pular/duplicar
     // linhas nas fronteiras de página; PostgREST não garante ordem sem ORDER BY).
@@ -43,7 +45,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar overview" }, { status: 500 });
   }
 
-  const rows = deliberacoes.filter(isFinalDecisionRecord);
+  // `year` honrado (QA ago/2026: as abas mandavam o parâmetro e a rota ignorava).
+  const rows = deliberacoes.filter(isFinalDecisionRecord).filter((r: any) => matchesYear(r, year));
   const total = rows.length;
   const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;

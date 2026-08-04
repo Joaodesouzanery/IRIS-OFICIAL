@@ -23,6 +23,9 @@
     "src/app/api/v1/upload/auto-confirm/route.ts": {
       "maxDuration": 120
     },
+    "src/app/api/v1/upload/confirm-lote/route.ts": {
+      "maxDuration": 120
+    },
     "src/app/api/v1/upload/clear-test-queue/route.ts": {
       "maxDuration": 120
     },

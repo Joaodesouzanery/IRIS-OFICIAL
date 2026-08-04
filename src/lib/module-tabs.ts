@@ -18,6 +18,7 @@ export const DIRETORES_TABS: ModuleTab[] = [
 export const ANALISE_TABS: ModuleTab[] = [
   { label: "Analytics", href: "/dashboard/analytics" },
   { label: "Temas", href: "/dashboard/analytics/temas" },
+  { label: "Institucional", href: "/dashboard/analytics/institucional" },
   { label: "Dashboard 360°", href: "/dashboard/360" },
   { label: "Insights", href: "/dashboard/insights" },
   { label: "Governança", href: "/dashboard/governanca" },

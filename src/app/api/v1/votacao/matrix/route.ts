@@ -9,6 +9,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeVotacaoMatrix } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { parseVotacaoFilters, applyDeliberacaoFilters, filterDelibsForVotacao } from "@/lib/server/votacao-filters";
 
 
@@ -25,16 +26,18 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  let query = db
-    .from("votos")
-    .select(`tipo_voto, is_divergente, diretores!inner (id, nome, agencia_id), deliberacoes!inner (data_reuniao, microtema, area_regulatoria, numero_reuniao)`);
-
-  if (filters.agenciaId) {
-    query = query.eq("diretores.agencia_id", filters.agenciaId);
-  }
-  query = applyDeliberacaoFilters(query, filters);
-
-  const { data, error } = await query;
+  // Paginado (anti-truncamento ~1000 do PostgREST): a matriz de votação subcontava votos
+  // em silêncio quando a base cresce (QA ago/2026).
+  const { rows: data, error } = await selectAllPaged(() => {
+    let query = db
+      .from("votos")
+      .select(`id, tipo_voto, is_divergente, diretores!inner (id, nome, agencia_id), deliberacoes!inner (data_reuniao, microtema, area_regulatoria, numero_reuniao)`)
+      .order("id", { ascending: true });
+    if (filters.agenciaId) {
+      query = query.eq("diretores.agencia_id", filters.agenciaId);
+    }
+    return applyDeliberacaoFilters(query, filters);
+  }, { label: "votacao/matrix" });
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar matriz" }, { status: 500 });

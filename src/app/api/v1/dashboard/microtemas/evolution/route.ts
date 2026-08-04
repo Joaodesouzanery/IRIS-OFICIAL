@@ -9,6 +9,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMicrotemasEvolution } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 
 
@@ -25,16 +26,19 @@ export async function GET(req: NextRequest) {
   const db = createSupabaseServerClient();
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
 
-  let query = db
-    .from("deliberacoes")
-    .select(`microtema, data_reuniao, tipo_documento, documento_pai_id, resultado, ${FINAL_DECISION_RAW_SELECT}`)
-    .not("microtema", "is", null)
-    .not("data_reuniao", "is", null)
-    .order("data_reuniao", { ascending: true });
-
-  if (agenciaId) query = query.eq("agencia_id", agenciaId);
-
-  const { data, error } = await query;
+  // Paginado (anti-truncamento ~1000 do PostgREST) — QA ago/2026. Tiebreak por id para
+  // paginação determinística (várias linhas na mesma data).
+  const { rows: data, error } = await selectAllPaged(() => {
+    let query = db
+      .from("deliberacoes")
+      .select(`id, microtema, data_reuniao, tipo_documento, documento_pai_id, resultado, ${FINAL_DECISION_RAW_SELECT}`)
+      .not("microtema", "is", null)
+      .not("data_reuniao", "is", null)
+      .order("data_reuniao", { ascending: true })
+      .order("id", { ascending: true });
+    if (agenciaId) query = query.eq("agencia_id", agenciaId);
+    return query;
+  }, { label: "dashboard/microtemas/evolution" });
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar evolução" }, { status: 500 });

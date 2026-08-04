@@ -5,6 +5,8 @@ import { useQuery } from "@tanstack/react-query";
 import { ShieldCheck, TrendingUp, ArrowRight } from "lucide-react";
 import { api } from "@/lib/api";
 import type { DashboardOverview, MandatosAnalytics } from "@/types";
+import { ModuleTabs } from "@/components/ui/ModuleTabs";
+import { ANALISE_TABS } from "@/lib/module-tabs";
 
 // Mesma fórmula composta da tela de Governança (não deixar divergir): consenso 0.30 +
 // deferimento 0.25 + qualidade(IA) 0.25 + (100 - sanção) 0.20.
@@ -58,6 +60,7 @@ export default function AnalyticsInstitucionalPage() {
 
   return (
     <div className="space-y-8 animate-fade-in max-w-2xl">
+      <ModuleTabs tabs={ANALISE_TABS} />
       <div>
         <h1 className="text-xl font-semibold text-text-primary">Analytics Institucional</h1>
         <p className="text-sm text-text-muted mt-1">

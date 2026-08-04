@@ -922,7 +922,7 @@ export default function UploadPage() {
     try {
       await api.post("/upload/clear-test-queue", { confirm: "LIMPAR FILA DE TESTES" });
       resetAll();
-      for (const key of [["deliberacoes"], ["dashboard"], ["diretores"], ["votacao"], ["monitoramento"], ["empresas"]]) {
+      for (const key of [["deliberacoes"], ["dashboard"], ["diretores"], ["votacao"], ["monitoramento"], ["empresas"], ["mandatos"], ["governanca-agencias"], ["deliberacoes-360"], ["deliberacoes-gov"], ["completude-2026"]]) {
         queryClient.invalidateQueries({ queryKey: key });
       }
     } catch (err) {
@@ -1320,7 +1320,7 @@ export default function UploadPage() {
         } catch { /* sync non-critical */ }
       }
       // Invalida apenas os domínios afetados por um upload de deliberações.
-      for (const key of [["deliberacoes"], ["dashboard"], ["diretores"], ["votacao"], ["monitoramento"], ["empresas"]]) {
+      for (const key of [["deliberacoes"], ["dashboard"], ["diretores"], ["votacao"], ["monitoramento"], ["empresas"], ["mandatos"], ["governanca-agencias"], ["deliberacoes-360"], ["deliberacoes-gov"], ["completude-2026"]]) {
         queryClient.invalidateQueries({ queryKey: key });
       }
       setConfirmResults(res);

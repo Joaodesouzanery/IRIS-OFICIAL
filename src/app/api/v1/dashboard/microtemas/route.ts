@@ -11,6 +11,8 @@ import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
+import { selectAllPaged } from "@/lib/server/select-all-paged";
+import { matchesYear } from "@/lib/server/year-filter";
 
 
 export async function GET(req: NextRequest) {
@@ -25,21 +27,25 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
+  const year = req.nextUrl.searchParams.get("year");
 
-  let query = db
-    .from("deliberacoes")
-    .select(`microtema, resultado, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
-    .not("microtema", "is", null);
-
-  if (agenciaId) query = query.eq("agencia_id", agenciaId);
-
-  const { data, error } = await query;
+  // selectAllPaged: sem ele o PostgREST corta em ~1000 linhas e a agregação SUBconta em
+  // silêncio (divergindo do overview, que pagina). `year` honrado (antes era ignorado).
+  const { rows: data, error } = await selectAllPaged(() => {
+    let query = db
+      .from("deliberacoes")
+      .select(`microtema, resultado, tipo_documento, documento_pai_id, data_reuniao, data_publicacao, ${FINAL_DECISION_RAW_SELECT}`)
+      .not("microtema", "is", null)
+      .order("id", { ascending: true });
+    if (agenciaId) query = query.eq("agencia_id", agenciaId);
+    return query;
+  }, { label: "dashboard/microtemas" });
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar microtemas" }, { status: 500 });
   }
 
-  const rows = (data ?? []).filter(isFinalDecisionRecord);
+  const rows = (data ?? []).filter(isFinalDecisionRecord).filter((r: any) => matchesYear(r, year));
   const stats = new Map<string, { total: number; deferido: number; indeferido: number }>();
 
   for (const row of rows) {
