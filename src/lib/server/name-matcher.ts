@@ -199,6 +199,39 @@ export function isLikelyPersonName(raw: string): boolean {
   return content.length >= 2;
 }
 
+// Palavras que denunciam PROSA/instituição capturada como "nome" (QA ago/2026: a ata 32 da ANM
+// gravava "Diretoria Colegiada da ANM pode" e "voto por" como dissidentes junto dos reais).
+const NOT_A_NAME_WORDS = new Set([
+  "diretoria", "colegiada", "colegiado", "agencia", "agência", "anm", "antt", "artesp",
+  "voto", "votos", "votou", "pode", "sera", "será", "sendo", "processo", "reuniao", "reunião",
+  "item", "pauta", "ata", "materia", "matéria", "decisao", "decisão", "pelo", "pela",
+]);
+const NAME_PARTICLES = new Set(["de", "da", "do", "das", "dos", "e", "d"]);
+const NAME_SUFFIXES = new Set(["jr", "jr.", "junior", "júnior", "neto", "filho", "sobrinho", "segundo"]);
+
+/**
+ * Validação ESTRITA de nome de pessoa — usada onde o nome vira VOTO (dissidente/contra):
+ * todo token precisa ser Capitalizado (ou partícula de/da/do/e, ou sufixo Jr/Neto/Filho),
+ * e nenhum token pode ser palavra de prosa/instituição. Mais rígida que isLikelyPersonName
+ * (que é só o gate de candidato). "Tasso Mendonça Jr" ✓ · "voto por" ✗ · "Diretoria
+ * Colegiada da ANM pode" ✗.
+ */
+export function isStrictPersonName(raw: string): boolean {
+  if (!isLikelyPersonName(raw)) return false;
+  const tokens = (raw ?? "").replace(/\s+/g, " ").trim().split(" ").filter(Boolean);
+  if (tokens.length < 2 || tokens.length > 7) return false;
+  let capitalized = 0;
+  for (const t of tokens) {
+    const lower = t.toLocaleLowerCase("pt-BR").replace(/[.,;]$/, "");
+    if (NOT_A_NAME_WORDS.has(lower)) return false;
+    if (NAME_PARTICLES.has(lower) || NAME_SUFFIXES.has(lower)) continue;
+    // Token de conteúdo: precisa começar com maiúscula (aceita acento) e seguir minúsculas/acentos.
+    if (!/^[A-ZÀ-Ý]/.test(t)) return false;
+    capitalized++;
+  }
+  return capitalized >= 2;
+}
+
 // ─── Normalização de nome ─────────────────────────────────────────────────
 export function normalizeName(name: string): string {
   return name

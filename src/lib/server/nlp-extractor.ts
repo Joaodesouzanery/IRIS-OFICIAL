@@ -13,7 +13,7 @@
  */
 
 import { parseDataExtensoANM } from "./ata-splitter";
-import { isRoleWordOnly, isLikelyPersonName } from "./name-matcher";
+import { isRoleWordOnly, isLikelyPersonName, isStrictPersonName } from "./name-matcher";
 
 // ─── Regex patterns ────────────────────────────────────────────────────────
 // Nome completo aceitando PREPOSIÇÕES internas (de/da/do/dos/das/e) entre tokens
@@ -727,7 +727,8 @@ export function extractFields(text: string): ExtractedFields {
         if (!nomes_votacao_abstencao.includes(nome)) nomes_votacao_abstencao.push(nome);
       } else if (tipo.startsWith("favor")) {
         if (!nomes_votacao_favor.includes(nome)) nomes_votacao_favor.push(nome);
-      } else if (!nomes_votacao_contra.includes(nome)) {
+      } else if (isStrictPersonName(nome) && !nomes_votacao_contra.includes(nome)) {
+        // Contra grava VOTO → validação estrita do nome (QA ago/2026: prosa pescada como dissidente).
         nomes_votacao_contra.push(nome);
       }
     }
@@ -742,7 +743,8 @@ export function extractFields(text: string): ExtractedFields {
     if (nome.length <= 4) continue;
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
     if (/^(?:divergi|discord)/.test(verbo)) {
-      if (!nomes_votacao_contra.includes(nome)) nomes_votacao_contra.push(nome);
+      // Contra grava VOTO → validação estrita (QA ago/2026).
+      if (isStrictPersonName(nome) && !nomes_votacao_contra.includes(nome)) nomes_votacao_contra.push(nome);
     } else if (!nomes_votacao_favor.includes(nome) && !nomes_votacao_contra.includes(nome)) {
       nomes_votacao_favor.push(nome);
     }
@@ -786,10 +788,14 @@ export function extractFields(text: string): ExtractedFields {
   }
 
   // ─── Voto dissidente / divergente / divergente ─────────────────────────────────────────
-  // Move o diretor dissidente de _favor para _contra (se estava em favor)
+  // Move o diretor dissidente de _favor para _contra (se estava em favor).
+  // QA ago/2026: validação ESTRITA do nome — os regex de divergência pescavam fragmentos de
+  // prosa ("voto por", "Diretoria Colegiada da ANM pode") como "dissidente" junto dos reais.
+  // Contra grava VOTO → só entra o que tem forma de nome de pessoa (Capitalizado + partículas).
   const markContra = (rawNome: string) => {
     const nome = rawNome.trim();
     if (nome.length <= 4) return;
+    if (!isStrictPersonName(nome)) return;
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
     const idxFavor = nomes_votacao_favor.indexOf(nome);
     if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
@@ -988,6 +994,8 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   const moveToContra = (raw: string) => {
     const nome = raw.trim();
     if (nome.length <= 4) return;
+    // Mesma validação estrita do markContra do documento: contra grava VOTO (QA ago/2026).
+    if (!isStrictPersonName(nome)) return;
     const i = favor.indexOf(nome);
     if (i !== -1) favor.splice(i, 1);
     if (!contra.includes(nome)) contra.push(nome);
