@@ -69,38 +69,38 @@ function buildHtml(opts: {
 
   const kpisHtml = sec("kpis") && overview ? `
     <tr><td style="padding:16px 0">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">KPIs Principais</h2>
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">KPIs Principais</h2>
       <table width="100%" cellpadding="0" cellspacing="0"><tr>
-        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Total</p>
+        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
+          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Total</p>
           <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f4f4f5;font-family:monospace">${formatNumber(overview.total_deliberacoes)}</p>
         </td>
         <td width="8"></td>
-        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Favoráveis</p>
+        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
+          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Favoráveis</p>
           <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#22c55e;font-family:monospace">${formatNumber(overview.deferidos)}</p>
         </td>
         <td width="8"></td>
-        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Taxa Def.</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f97316;font-family:monospace">${overview.taxa_deferimento}%</p>
+        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
+          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Taxa Def.</p>
+          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#c2a24a;font-family:monospace">${overview.taxa_deferimento}%</p>
         </td>
         <td width="8"></td>
-        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Reuniões</p>
+        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
+          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Reuniões</p>
           <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f4f4f5;font-family:monospace">${formatNumber(overview.reunioes_unicas)}</p>
         </td>
       </tr></table>
     </td></tr>` : "";
 
   const recentesHtml = sec("recentes") && deliberacoes.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Deliberações Recentes</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Deliberações Recentes</h2>
       <table width="100%" cellpadding="0" cellspacing="0">
         ${deliberacoes.slice(0, 5).map((d) => `
-        <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
+        <tr><td style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
           <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:#71717a">${escapeHtml(d.assunto ?? d.microtema ?? "")} · ${escapeHtml(d.resultado ?? "Sem resultado")}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:rgba(255,255,255,0.62)">${escapeHtml(d.assunto ?? d.microtema ?? "")} · ${escapeHtml(d.resultado ?? "Sem resultado")}</p>
         </td></tr>`).join("")}
       </table>
     </td></tr>` : "";
@@ -108,15 +108,15 @@ function buildHtml(opts: {
   // Decisões com voto divergente registrado (transparência de dissenso).
   const divergentes = deliberacoes.filter((d) => Array.isArray(d.votos) && d.votos.some((v) => v.is_divergente));
   const divergentesHtml = sec("divergentes") && divergentes.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Decisões Divergentes</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Decisões Divergentes</h2>
       <table width="100%" cellpadding="0" cellspacing="0">
         ${divergentes.slice(0, 5).map((d) => {
           const nomes = (d.votos ?? []).filter((v) => v.is_divergente).map((v) => v.diretor_nome).filter(Boolean).map((n) => escapeHtml(n)).join(", ");
           return `
-        <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
+        <tr><td style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
           <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:#a1a1aa">${escapeHtml(d.resultado ?? "Sem resultado")}${nomes ? ` · <span style="color:#f59e0b">Voto divergente: ${nomes}</span>` : ""}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:rgba(255,255,255,0.72)">${escapeHtml(d.resultado ?? "Sem resultado")}${nomes ? ` · <span style="color:#f59e0b">Voto divergente: ${nomes}</span>` : ""}</p>
         </td></tr>`;
         }).join("")}
       </table>
@@ -125,13 +125,13 @@ function buildHtml(opts: {
   // Deliberações publicadas no Diário Oficial (data_publicacao distinta da reunião).
   const publicadas = deliberacoes.filter((d) => d.data_publicacao).sort((a, b) => (b.data_publicacao ?? "").localeCompare(a.data_publicacao ?? ""));
   const publicacaoHtml = sec("publicacao") && publicadas.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Publicadas no DOU/DOE</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Publicadas no DOU/DOE</h2>
       <table width="100%" cellpadding="0" cellspacing="0">
         ${publicadas.slice(0, 5).map((d) => `
-        <tr><td style="padding:8px 0;border-bottom:1px solid #2a2a2a">
+        <tr><td style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
           <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:#71717a">Publicado em ${formatDate(d.data_publicacao)} · Reunião ${formatDate(d.data_reuniao)}</p>
+          <p style="margin:2px 0 0;font-size:12px;color:rgba(255,255,255,0.62)">Publicado em ${formatDate(d.data_publicacao)} · Reunião ${formatDate(d.data_reuniao)}</p>
         </td></tr>`).join("")}
       </table>
     </td></tr>` : "";
@@ -144,29 +144,29 @@ function buildHtml(opts: {
   }
   const areasOrdenadas = [...areaCounts.entries()].sort((a, b) => b[1] - a[1]);
   const areasHtml = sec("areas") && areasOrdenadas.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Por Área Regulatória</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Por Área Regulatória</h2>
       ${areasOrdenadas.slice(0, 6).map(([label, total], i) => `
       <div style="margin-bottom:8px">
-        <p style="margin:0 0 3px;font-size:12px;color:#a1a1aa">${i + 1}. ${label} — <span style="color:#f4f4f5">${formatNumber(total)}</span></p>
+        <p style="margin:0 0 3px;font-size:12px;color:rgba(255,255,255,0.72)">${i + 1}. ${label} — <span style="color:#f4f4f5">${formatNumber(total)}</span></p>
       </div>`).join("")}
     </td></tr>` : "";
 
   const setoresHtml = sec("setores") && microtemas?.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Setores Mais Afetados</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Setores Mais Afetados</h2>
       ${[...(microtemas ?? [])].sort((a,b) => b.total - a.total).slice(0,5).map((m, i) => `
       <div style="margin-bottom:8px">
-        <p style="margin:0 0 3px;font-size:12px;color:#a1a1aa">${i+1}. ${getMicrotemaLabel(m.microtema)} — <span style="color:#f4f4f5">${formatNumber(m.total)}</span></p>
+        <p style="margin:0 0 3px;font-size:12px;color:rgba(255,255,255,0.72)">${i+1}. ${getMicrotemaLabel(m.microtema)} — <span style="color:#f4f4f5">${formatNumber(m.total)}</span></p>
       </div>`).join("")}
     </td></tr>` : "";
 
   const diretoresHtml = sec("diretores") && diretores?.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Diretores em Destaque</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Diretores em Destaque</h2>
       ${diretores.slice(0,5).map((d) => `
       <div style="margin-bottom:6px">
-        <p style="margin:0;font-size:12px;color:#a1a1aa">${escapeHtml(d.diretor_nome)} — <span style="color:#f4f4f5">${formatNumber(d.total)}</span> votos · <span style="color:#22c55e">${d.pct_favor.toFixed(0)}%</span> favoráveis</p>
+        <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.72)">${escapeHtml(d.diretor_nome)} — <span style="color:#f4f4f5">${formatNumber(d.total)}</span> votos · <span style="color:#22c55e">${d.pct_favor.toFixed(0)}%</span> favoráveis</p>
       </div>`).join("")}
     </td></tr>` : "";
 
@@ -178,27 +178,27 @@ function buildHtml(opts: {
   }
   const empresasOrdenadas = [...empresaCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
   const empresasHtml = sec("empresas") && empresasOrdenadas.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Empresas Reguladas (Top 5)</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Empresas Reguladas (Top 5)</h2>
       ${empresasOrdenadas.map(([nome, total], i) => `
       <div style="margin-bottom:8px">
-        <p style="margin:0;font-size:12px;color:#a1a1aa">${i + 1}. ${escapeHtml(nome)} — <span style="color:#f4f4f5">${formatNumber(total)}</span> deliberação(ões)</p>
+        <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.72)">${i + 1}. ${escapeHtml(nome)} — <span style="color:#f4f4f5">${formatNumber(total)}</span> deliberação(ões)</p>
       </div>`).join("")}
     </td></tr>` : "";
 
   // Análise de consenso — taxa de consenso vs litígio (mandatos/analytics).
   const consensoHtml = sec("consenso") && mandatos ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Análise de Consenso</h2>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Análise de Consenso</h2>
       <table width="100%" cellpadding="0" cellspacing="0"><tr>
-        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:50%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Consenso</p>
+        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:50%">
+          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Consenso</p>
           <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#22c55e;font-family:monospace">${mandatos.taxa_consenso}</p>
         </td>
         <td width="8"></td>
-        <td style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:12px;text-align:center;width:50%">
-          <p style="margin:0;font-size:11px;color:#71717a;font-family:monospace;text-transform:uppercase">Litígio</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f97316;font-family:monospace">${mandatos.taxa_litigio}</p>
+        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:50%">
+          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Litígio</p>
+          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#c2a24a;font-family:monospace">${mandatos.taxa_litigio}</p>
         </td>
       </tr></table>
     </td></tr>` : "";
@@ -208,28 +208,37 @@ function buildHtml(opts: {
     ? calcScore(parseFloat(mandatos.taxa_consenso), parseFloat(overview.taxa_deferimento), (overview.avg_confidence ?? 0) * 100, parseFloat(mandatos.taxa_sancao))
     : null;
   const governancaHtml = sec("governanca") && govScore != null ? `
-    <tr><td style="padding:16px 0;border-top:1px solid #2a2a2a">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#f97316;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Taxa de Governança</h2>
-      <p style="margin:0;font-size:13px;color:#a1a1aa">Score institucional agregado: <span style="color:#22c55e;font-size:22px;font-weight:700;font-family:monospace">${govScore}</span><span style="color:#71717a">/100</span></p>
+    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
+      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Taxa de Governança</h2>
+      <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.72)">Score institucional agregado: <span style="color:#22c55e;font-size:22px;font-weight:700;font-family:monospace">${govScore}</span><span style="color:rgba(255,255,255,0.62)">/100</span></p>
     </td></tr>` : "";
+
+  // Logo absoluto (o HTML é copiado p/ e-mail — precisa resolver fora do app).
+  const logoUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/brand/newsletter-logo-wide.png`;
 
   return `<!DOCTYPE html>
 <html lang="pt-BR">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 <title>Boletim IRIS Regulação</title></head>
-<body style="margin:0;padding:0;background:#0d0d0d;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
-<table width="100%" cellpadding="0" cellspacing="0" style="background:#0d0d0d;padding:24px 0">
+<body style="margin:0;padding:0;background:#eceae4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#eceae4;padding:24px 0">
 <tr><td align="center">
-<table width="600" cellpadding="0" cellspacing="0" style="background:#141414;border:1px solid #2a2a2a;border-radius:12px;overflow:hidden">
+<table width="600" cellpadding="0" cellspacing="0" style="background:#0a0e2a;border:1px solid rgba(255,255,255,0.12);border-radius:12px;overflow:hidden">
 
-  <!-- Header -->
-  <tr><td style="background:#f97316;padding:20px 28px">
+  <!-- Header — identidade IRIS (navy + dourado + logo, como a newsletter) -->
+  <tr><td style="background:#0a0e2a;border-bottom:2px solid #c2a24a;padding:22px 28px">
     <table width="100%" cellpadding="0" cellspacing="0"><tr>
-      <td><p style="margin:0;font-size:20px;font-weight:700;color:#fff">IRIS Regulação</p>
-          <p style="margin:4px 0 0;font-size:12px;color:rgba(255,255,255,0.8)">Boletim Regulatório · ${ag}</p></td>
-      <td align="right"><p style="margin:0;font-size:11px;color:rgba(255,255,255,0.7);font-family:monospace">${today}</p>
-          <p style="margin:2px 0 0;font-size:11px;color:rgba(255,255,255,0.7);font-family:monospace">${PERIODOS.find(p => p.value === periodo)?.label ?? periodo}</p></td>
+      <td style="vertical-align:middle"><img src="${logoUrl}" alt="IRIS" width="140" style="display:block;width:140px;max-width:140px;height:auto"/></td>
+      <td align="right" style="vertical-align:middle">
+        <p style="margin:0;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c2a24a;font-weight:700">Boletim Regulat&oacute;rio</p>
+        <p style="margin:3px 0 0;font-size:11px;color:rgba(255,255,255,0.66)">${escapeHtml(ag)} · ${today}</p>
+        <p style="margin:2px 0 0;font-size:11px;color:rgba(255,255,255,0.66)">${PERIODOS.find(p => p.value === periodo)?.label ?? periodo}</p>
+      </td>
     </tr></table>
+  </td></tr>
+  <tr><td style="padding:24px 28px 4px">
+    <h1 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:800;line-height:1.1;color:#ffffff">Boletim Regulat&oacute;rio</h1>
   </td></tr>
 
   <!-- Content -->
@@ -249,9 +258,10 @@ function buildHtml(opts: {
   </td></tr>
 
   <!-- Footer -->
-  <tr><td style="padding:16px 28px;border-top:1px solid #2a2a2a;background:#0d0d0d">
-    <p style="margin:0;font-size:11px;color:#52525b;font-family:monospace;text-align:center">
-      Gerado automaticamente pelo IRIS Regulação · ${today}
+  <tr><td style="padding:16px 28px;border-top:1px solid rgba(255,255,255,0.12);background:#07091d">
+    <p style="margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:1px;color:#ffffff;text-align:center">IRIS Regula&ccedil;&atilde;o</p>
+    <p style="margin:0;font-size:10px;color:rgba(255,255,255,0.55);text-align:center">
+      Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade · Gerado automaticamente · ${today}
     </p>
   </td></tr>
 
