@@ -21,6 +21,25 @@ export function avisoUnanimidadeContestada(text: string, unanimidade: boolean, c
 }
 
 /**
+ * Camada 4 do zero-toque (QA ago/2026): documento ILEGÍVEL (quase sem texto) e SEM NENHUM
+ * campo útil extraído não pode virar deliberação — seria um registro vazio poluindo métrica.
+ * A pipeline auto-ARQUIVA (ignored, recuperável via reprocesso) em vez de confirmar.
+ */
+export function isHardFailSemSinal(input: {
+  charsPerPage: number | null | undefined;
+  resultado?: unknown;
+  numeroReuniao?: unknown;
+  processo?: unknown;
+  dataReuniao?: unknown;
+  ataItemsCount?: number;
+}): boolean {
+  const ilegivel = (input.charsPerPage ?? 0) < 50;
+  const semSinal = !input.resultado && !input.numeroReuniao && !input.processo && !input.dataReuniao
+    && !(typeof input.ataItemsCount === "number" && input.ataItemsCount > 0);
+  return ilegivel && semSinal;
+}
+
+/**
  * Item de ata que não parseou deixa de sumir em SILÊNCIO: se o texto tem bem mais rótulos
  * "Processo:" do que itens reconhecidos, algum item foi descartado. Retorna o aviso ou null.
  * Tolerância de 2 (rótulos em prosa / cabeçalho) para não gerar falso positivo.

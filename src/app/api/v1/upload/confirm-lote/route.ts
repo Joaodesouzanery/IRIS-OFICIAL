@@ -16,6 +16,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
+import { isHardFailSemSinal } from "@/lib/server/consistency-checks";
 import { hasBudget } from "@/lib/server/time-budget";
 import { POST as confirmPOST } from "../confirm/route";
 
@@ -24,7 +25,7 @@ export const runtime = "nodejs";
 export const maxDuration = 60;
 
 const SELECT_COLS =
-  "id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados";
+  "id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, file_hash, agencia_id, ata_items, warnings, campos_detectados";
 
 export async function POST(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
@@ -54,13 +55,70 @@ export async function POST(req: NextRequest) {
   const { data: docs, error } = await query;
   if (error) return NextResponse.json({ error: "Falha ao listar documentos do lote." }, { status: 500 });
 
-  let puladosDuplicata = 0;
-  let puladosSemAgencia = 0;
+  // Arquiva um doc (Camada 4 / duplicata exata): sai da fila SEM virar deliberação; rastreável.
+  async function arquivar(docId: string, extras: Record<string, unknown> = {}) {
+    await db.from("documentos_regulatorios")
+      .update({ status: "ignored", reviewed_at: new Date().toISOString(), updated_at: new Date().toISOString(), ...extras })
+      .eq("id", docId);
+  }
+
+  // Política zero-toque (QA ago/2026) — dedup em camadas, nada fica em beco sem saída:
+  //  • Duplicata EXATA (mesmo file_hash de um doc já CONFIRMADO) → auto-ARQUIVA com link p/ o
+  //    original (duplicate_documento_id/duplicate_deliberacao_id). O dado já existe; nada re-entra.
+  //  • Duplicata SEMÂNTICA (mesmo nº/processo/chave — ex.: voto e ata da mesma matéria) → vai ao
+  //    confirm MESMO ASSIM: findDeliberacaoExistente FUNDE na deliberação existente (idempotente;
+  //    votos upsert por deliberação+diretor) → métrica nunca duplica.
+  //  • Camada 4 (hard-fail): ilegível (chars/página <50) SEM nenhum campo útil, ou sem agência →
+  //    auto-ARQUIVA (deliberação vazia não polui métrica). Recuperável via reprocesso no Avançado.
+  let arquivadosDuplicataExata = 0;
+  let fundidosSemanticos = 0;
+  let arquivadosIlegiveis = 0;
+  let arquivadosSemAgencia = 0;
   const aprovaveis: any[] = [];
   for (const doc of (docs ?? []) as any[]) {
-    if (doc.is_duplicate) { puladosDuplicata++; continue; }
+    const fields = doc?.campos_detectados?.preview?.fields ?? {};
     const agenciaId = doc.agencia_id ?? doc?.campos_detectados?.preview?.agencia_id_detected ?? null;
-    if (!agenciaId) { puladosSemAgencia++; continue; }
+
+    if (doc.is_duplicate && doc.file_hash) {
+      // Distingue EXATA (hash bate com doc confirmado) de SEMÂNTICA.
+      const { data: original } = await db
+        .from("documentos_regulatorios")
+        .select("id, deliberacao_id")
+        .eq("file_hash", doc.file_hash)
+        .eq("status", "confirmed")
+        .neq("id", doc.id)
+        .maybeSingle();
+      if (original) {
+        await arquivar(doc.id, {
+          duplicate_documento_id: original.id,
+          ...(original.deliberacao_id ? { duplicate_deliberacao_id: original.deliberacao_id } : {}),
+        });
+        arquivadosDuplicataExata++;
+        continue;
+      }
+      // Semântica → segue para o confirm (merge idempotente) — contada à parte.
+      fundidosSemanticos++;
+    }
+
+    if (!agenciaId) {
+      await arquivar(doc.id);
+      arquivadosSemAgencia++;
+      continue;
+    }
+
+    if (isHardFailSemSinal({
+      charsPerPage: doc.chars_per_page,
+      resultado: fields.resultado,
+      numeroReuniao: fields.numero_reuniao,
+      processo: fields.processo,
+      dataReuniao: fields.data_reuniao,
+      ataItemsCount: Array.isArray(doc.ata_items) ? doc.ata_items.length : 0,
+    })) {
+      await arquivar(doc.id);
+      arquivadosIlegiveis++;
+      continue;
+    }
+
     aprovaveis.push(doc);
   }
 
@@ -97,7 +155,10 @@ export async function POST(req: NextRequest) {
       console.error("[upload/confirm-lote] Falha no sublote:", err);
       return NextResponse.json({
         error: "Falha ao confirmar um sublote — parte do lote pode ter sido aplicada.",
-        materializados, ignorados, erros, pulados_duplicata: puladosDuplicata, pulados_sem_agencia: puladosSemAgencia,
+        materializados, ignorados, erros,
+        arquivados_duplicata_exata: arquivadosDuplicataExata,
+        arquivados_ilegiveis: arquivadosIlegiveis,
+        arquivados_sem_agencia: arquivadosSemAgencia,
       }, { status: 502 });
     }
   }
@@ -109,10 +170,12 @@ export async function POST(req: NextRequest) {
     materializados,
     ignorados,
     erros,
-    pulados_duplicata: puladosDuplicata,
-    pulados_sem_agencia: puladosSemAgencia,
+    arquivados_duplicata_exata: arquivadosDuplicataExata,
+    fundidos_semanticos: fundidosSemanticos,
+    arquivados_ilegiveis: arquivadosIlegiveis,
+    arquivados_sem_agencia: arquivadosSemAgencia,
     restantes,
     legal_notice:
-      "Aprovação em lote por decisão humana (sem o gate conservador). Duplicatas e docs sem agência foram PULADOS e seguem na fila; pautas/apoio são marcados como revisados (não viram deliberação).",
+      "Zero-toque: duplicata EXATA auto-arquivada com link ao original; duplicata SEMÂNTICA fundida na deliberação existente (idempotente); ilegível/sem agência auto-arquivado; pautas/apoio marcados como revisados (não viram deliberação).",
   });
 }

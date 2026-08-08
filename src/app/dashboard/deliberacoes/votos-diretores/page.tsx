@@ -330,34 +330,7 @@ export default function VotosDiretoresPage() {
       ).catch(() => ({ total: 0, data: [] })),
   });
 
-  // Aprovação em LOTE (decisão humana, sem o gate conservador): selecionados ou todos.
-  const [revisaoSel, setRevisaoSel] = useState<string[]>([]);
-  const [loteFeedback, setLoteFeedback] = useState<string | null>(null);
-  const confirmLoteMutation = useMutation({
-    mutationFn: (input: { ids?: string[]; todos?: boolean }) =>
-      api.post<{
-        materializados: number; ignorados: number; erros: number;
-        pulados_duplicata: number; pulados_sem_agencia: number; restantes: boolean;
-      }>("/upload/confirm-lote", input),
-    onSuccess: (r) => {
-      const partes = [
-        `${r.materializados} materializado(s)`,
-        r.ignorados > 0 ? `${r.ignorados} pauta(s)/apoio marcados como revisados` : null,
-        r.pulados_duplicata > 0 ? `${r.pulados_duplicata} duplicata(s) pulada(s) — seguem na fila` : null,
-        r.pulados_sem_agencia > 0 ? `${r.pulados_sem_agencia} sem agência pulado(s)` : null,
-        r.erros > 0 ? `${r.erros} erro(s)` : null,
-        r.restantes ? "ainda há fila — clique de novo" : null,
-      ].filter(Boolean);
-      setLoteFeedback(`Lote concluído: ${partes.join(" · ")}.`);
-      setRevisaoSel([]);
-      for (const key of [
-        ["docs-review-pending-colegiado"], ["pendencias-voto-diagnostico"], ["deliberacoes"], ["dashboard"],
-        ["diretores"], ["votacao"], ["empresas"], ["mandatos"], ["governanca-agencias"],
-        ["deliberacoes-360"], ["deliberacoes-gov"], ["completude-2026"], ["votos-diretores"],
-      ]) queryClient.invalidateQueries({ queryKey: key });
-    },
-    onError: (e) => setLoteFeedback(e instanceof Error ? e.message : "Falha na aprovação em lote."),
-  });
+  // (A aprovação em lote virou passo interno da pipeline zero-toque — /pipeline/run.)
 
   // Diagnóstico: POR QUE os voto_individual estão parados no gate (agregado por motivo).
   // É o que orienta o operador — sem direção do voto / confiança baixa / relator ambíguo.
@@ -484,62 +457,46 @@ export default function VotosDiretoresPage() {
   // crons). Verificar novos → Processar atas/votos → Auto-confirmar (loop) → Recalcular
   // matches (auto-aprova + mescla duplicatas). Progresso textual na UI.
   const [rodarTudoProgresso, setRodarTudoProgresso] = useState<string | null>(null);
+  // ZERO-TOQUE: a esteira INTEIRA roda server-side em /pipeline/run (coleta → reclassificação →
+  // extração → aprovação em camadas com dedup em 4 barreiras → diretores → dedup final). O cliente
+  // só re-chama enquanto `restantes` (orçamento de tempo do Hobby). Nada exige aprovação manual.
+  type PipelineEtapas = Record<string, Record<string, number | string | boolean>>;
   const rodarTudoMutation = useMutation({
     mutationFn: async () => {
-      // 1. Descobre novos documentos nas fontes.
-      setRodarTudoProgresso("1/5 · Verificando novos documentos…");
-      await api.get<MonitoramentoCheckResponse>("/monitoramento/check").catch(() => null);
-
-      // 2. Enfileira TODOS os PDFs pendentes. O enqueue processa ≤10/chamada e marca
-      // novo→importado; loopa até `candidates===0` (nada mais "novo") em vez de 1 clique só.
-      let enfileirados = 0;
-      for (let i = 0; i < 30; i++) {
-        setRodarTudoProgresso(`2/5 · Enfileirando PDFs… (${enfileirados})`);
-        const res = await api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", { limit: 10 }).catch(() => null);
-        if (!res) break;
-        enfileirados += res.queued ?? 0;
-        if ((res.candidates ?? 0) === 0) break; // esgotou a fila de "novo"
-      }
-
-      // 3. Drena a fila de extração (upload_jobs pending → review_pending). Fecha o lag do
-      // processamento em background (waitUntil) e recupera jobs que ele não terminou.
-      let processados = 0;
-      for (let i = 0; i < 30; i++) {
-        const res = await api.post<{ processed: number }>("/upload/process?limit=20", {}).catch(() => null);
-        if (!res || (res.processed ?? 0) === 0) break;
-        processados += res.processed;
-        setRodarTudoProgresso(`3/5 · Processando fila… (${processados})`);
-      }
-
-      // 4. Auto-confirma em loop (corta por orçamento de tempo; re-chama enquanto restam).
-      let confirmados = 0;
-      for (let i = 0; i < 15; i++) {
-        setRodarTudoProgresso(`4/5 · Auto-confirmando… (${confirmados})`);
-        const res = await api.post<{ confirmados_total: number; restantes: boolean }>("/upload/auto-confirm", { limit: 50, loop: true }).catch(() => null);
-        if (!res) break;
-        confirmados += res.confirmados_total ?? 0;
+      const totais: Record<string, number> = {};
+      let ultimas: PipelineEtapas = {};
+      for (let rodada = 1; rodada <= 12; rodada++) {
+        setRodarTudoProgresso(`Rodada ${rodada} · coleta → extração → aprovação → métricas…`);
+        const res = await api.post<{ etapas: PipelineEtapas; restantes: boolean }>("/pipeline/run", {});
+        ultimas = res.etapas ?? {};
+        for (const etapa of Object.values(ultimas)) {
+          for (const [k, v] of Object.entries(etapa)) {
+            if (typeof v === "number") totais[k] = (totais[k] ?? 0) + v;
+          }
+        }
         if (!res.restantes) break;
       }
-
-      // 5. Recalcula matches (auto-aprova ≥0.85 + mescla duplicatas + votos retroativos).
-      setRodarTudoProgresso("5/5 · Recalculando matches e mesclando duplicatas…");
-      const rec = await api.post<{ grupos_auto_aprovados: number; diretores_mesclados: number; votos_retroativos_criados: number }>(
-        "/admin/diretores/candidatos/recompute?dry_run=0", {},
-      ).catch(() => null);
-      return { enfileirados, processados, confirmados, recompute: rec };
+      return { totais, ultimas };
     },
-    onSuccess: (res) => {
+    onSuccess: ({ totais }) => {
       setMatchError(null);
       setRodarTudoProgresso(null);
-      const rec = res.recompute;
-      setMatchFeedback(
-        `Esteira concluída: ${res.enfileirados} PDF(s) enfileirados · ${res.processados} processado(s) · ${res.confirmados} voto(s)/doc(s) materializados` +
-        (rec ? ` · ${rec.grupos_auto_aprovados} nome(s) auto-aprovado(s) · ${rec.diretores_mesclados} duplicata(s) mesclada(s) · ${rec.votos_retroativos_criados} voto(s) retroativo(s)` : "") + ".",
-      );
-      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
-      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
-      queryClient.invalidateQueries({ queryKey: ["completude-2026"] });
-      queryClient.invalidateQueries({ queryKey: ["pendencias-voto-diagnostico"] });
+      const partes = [
+        `${totais.processados ?? 0} PDF(s) extraído(s)`,
+        `${(totais.confirmados ?? 0) + (totais.materializados ?? 0)} materializado(s)`,
+        (totais.duplicatas_arquivadas ?? 0) + (totais.fundidos_semanticos ?? 0) > 0
+          ? `${(totais.duplicatas_arquivadas ?? 0) + (totais.fundidos_semanticos ?? 0)} duplicata(s) resolvida(s)`
+          : null,
+        (totais.ignorados_pauta_apoio ?? 0) > 0 ? `${totais.ignorados_pauta_apoio} pauta(s)/apoio arquivado(s)` : null,
+        (totais.aprovados ?? 0) > 0 ? `${totais.aprovados} diretor(es)/nome(s) resolvido(s)` : null,
+        (totais.reenfileirados ?? 0) > 0 ? `${totais.reenfileirados} reclassificado(s)` : null,
+      ].filter(Boolean);
+      setMatchFeedback(`Esteira zero-toque concluída: ${partes.join(" · ")}.`);
+      for (const key of [
+        ["dashboard"], ["votos-diretores"], ["completude-2026"], ["pendencias-voto-diagnostico"],
+        ["docs-review-pending-colegiado"], ["deliberacoes"], ["diretores"], ["votacao"], ["empresas"],
+        ["mandatos"], ["governanca-agencias"], ["deliberacoes-360"], ["deliberacoes-gov"],
+      ]) queryClient.invalidateQueries({ queryKey: key });
     },
     onError: (err) => {
       setRodarTudoProgresso(null);
@@ -579,45 +536,19 @@ export default function VotosDiretoresPage() {
             onClick={() => rodarTudoMutation.mutate()}
             disabled={rodarTudoMutation.isPending || demoEnabled}
             className="btn-primary"
-            title="Roda a esteira inteira num clique: verifica novos → processa atas/votos → auto-confirma (loop) → recalcula matches e mescla duplicatas. Útil no plano grátis, onde os crons não rodam."
+            title="Zero-toque: coleta → extração → aprovação automática (dedup em 4 barreiras) → métricas em todos os módulos. Um clique faz tudo."
           >
             {rodarTudoMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Zap className="w-4 h-4" />}
             {rodarTudoProgresso ?? "Rodar tudo"}
           </button>
           <button
             onClick={() => backfillMutation.mutate()}
-            disabled={backfillMutation.isPending || checkMutation.isPending || demoEnabled}
+            disabled={backfillMutation.isPending || rodarTudoMutation.isPending || demoEnabled}
             className="btn-secondary"
-            title="Busca e processa todas as deliberações de 2026 das 3 agências"
+            title="Varredura AMPLA: busca todas as reuniões/documentos de 2026 das 3 agências (depois rode 'Rodar tudo' para processar e aprovar)"
           >
             {backfillMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
             Buscar todas de 2026
-          </button>
-          <button
-            onClick={() => checkMutation.mutate()}
-            disabled={checkMutation.isPending || backfillMutation.isPending || demoEnabled}
-            className="btn-secondary"
-          >
-            {checkMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-            Verificar novos
-          </button>
-          <button
-            onClick={() => enqueueMutation.mutate()}
-            disabled={enqueueMutation.isPending || demoEnabled}
-            className="btn-secondary"
-            title="Baixa e enfileira os PDFs de atas/votos detectados para extração dos votos individuais"
-          >
-            {enqueueMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Upload className="w-4 h-4" />}
-            Processar atas/votos
-          </button>
-          <button
-            onClick={() => autoConfirmMutation.mutate()}
-            disabled={autoConfirmMutation.isPending || demoEnabled}
-            className="btn-secondary"
-            title="Confirma automaticamente documentos de ALTA confiança pendentes de revisão (gate conservador; ambíguos ficam na fila manual)"
-          >
-            {autoConfirmMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
-            Auto-confirmar alta confiança
           </button>
           <button
             type="button"
@@ -664,6 +595,39 @@ export default function VotosDiretoresPage() {
           Modo DEMO ativo: a captura automática e a geração de métricas ficam bloqueadas em somente leitura.
         </div>
       ) : null}
+
+      {/* Passos individuais da esteira — só para depuração; o "Rodar tudo" faz tudo isso sozinho. */}
+      <details className="card">
+        <summary className="cursor-pointer text-xs text-text-muted select-none">Avançado — passos individuais da esteira (depuração)</summary>
+        <div className="flex flex-wrap gap-2 pt-3">
+          <button
+            onClick={() => checkMutation.mutate()}
+            disabled={checkMutation.isPending || backfillMutation.isPending || demoEnabled}
+            className="btn-secondary text-xs"
+          >
+            {checkMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <RefreshCw className="w-3.5 h-3.5" />}
+            Verificar novos
+          </button>
+          <button
+            onClick={() => enqueueMutation.mutate()}
+            disabled={enqueueMutation.isPending || demoEnabled}
+            className="btn-secondary text-xs"
+            title="Baixa e enfileira os PDFs de atas/votos detectados"
+          >
+            {enqueueMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Upload className="w-3.5 h-3.5" />}
+            Processar atas/votos
+          </button>
+          <button
+            onClick={() => autoConfirmMutation.mutate()}
+            disabled={autoConfirmMutation.isPending || demoEnabled}
+            className="btn-secondary text-xs"
+            title="Só o passo de auto-confirmação de alta confiança (gate conservador)"
+          >
+            {autoConfirmMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+            Auto-confirmar alta confiança
+          </button>
+        </div>
+      </details>
 
       {backfillMutation.isPending && backfillProgress ? (
         <div className="border border-brand/30 bg-brand/10 rounded-card p-3 text-sm text-text-primary">
@@ -717,16 +681,16 @@ export default function VotosDiretoresPage() {
         </div>
       ) : null}
 
-      {/* ── Revisão humana (exceção do fluxo automático) + reentrada do legado ── */}
+      {/* ── Exceções (informativo): o pouco que o zero-toque não resolveu sozinho ── */}
       {((pendentesRevisao?.total ?? 0) > 0 || reprocessPreview || !demoEnabled) && (
         <section className="card space-y-3">
           <div className="flex items-center justify-between gap-3 flex-wrap">
             <div className="flex items-center gap-2">
               <FileText className="w-4 h-4 text-brand" />
               <div>
-                <p className="section-label">Revisão humana {`(${pendentesRevisao?.total ?? 0})`}</p>
+                <p className="section-label">Exceções {`(${pendentesRevisao?.total ?? 0})`}</p>
                 <p className="text-[11px] text-text-muted">
-                  A esteira roda sozinha (coleta → extração → auto-confirmação). Aqui fica só o que o gate conservador não confirmou.
+                  A esteira é zero-toque (&ldquo;Rodar tudo&rdquo; coleta, extrai, aprova e gera as métricas). Aqui fica só o que o automático ainda não drenou — rode a esteira, ou revise 1-a-1 se quiser.
                 </p>
               </div>
             </div>
@@ -747,9 +711,9 @@ export default function VotosDiretoresPage() {
           {(pendenciasVoto?.total_pendentes ?? 0) > 0 && (
             <div className="rounded-card border border-border bg-surface-2/40 px-3 py-2.5 space-y-1.5">
               <p className="text-[11px] text-text-muted">
-                {pendenciasVoto!.total_pendentes} voto(s) individual(is) em revisão — por que o gate não confirmou:
+                {pendenciasVoto!.total_pendentes} voto(s) individual(is) na fila — por que o gate conservador não pegou primeiro:
                 {(pendenciasVoto?.confirmaveis ?? 0) > 0 && (
-                  <span className="text-success"> {pendenciasVoto!.confirmaveis} já passariam agora (rode &ldquo;Auto-confirmar alta confiança&rdquo;).</span>
+                  <span className="text-success"> {pendenciasVoto!.confirmaveis} serão materializados no próximo &ldquo;Rodar tudo&rdquo;.</span>
                 )}
               </p>
               <div className="flex flex-wrap gap-1.5">
@@ -767,9 +731,9 @@ export default function VotosDiretoresPage() {
                 return (
                   <p className="text-[11px] text-text-muted">
                     Fila completa: {pendenciasVoto!.total_review_pending ?? 0} documento(s) —{" "}
-                    {residuo > 0 && <span>{residuo} são pautas/apoio (não viram deliberação por desenho)</span>}
+                    {residuo > 0 && <span>{residuo} são pautas/apoio (serão arquivados pelo &ldquo;Rodar tudo&rdquo;; não viram deliberação por desenho)</span>}
                     {residuo > 0 && aguardando > 0 && " · "}
-                    {aguardando > 0 && <span className="text-warning">{aguardando} atas/deliberações aguardam confirmação (Auto-confirmar processa as de alta confiança)</span>}
+                    {aguardando > 0 && <span className="text-warning">{aguardando} atas/deliberações serão aprovadas no próximo &ldquo;Rodar tudo&rdquo;</span>}
                     .
                   </p>
                 );
@@ -778,70 +742,23 @@ export default function VotosDiretoresPage() {
           )}
           {(pendentesRevisao?.data ?? []).length > 0 ? (
             <div className="space-y-1.5">
-              {/* Barra de LOTE: aprovar selecionados/todos sem revisar 1 a 1. */}
-              <div className="flex items-center gap-2 flex-wrap pb-1">
-                <label className="flex items-center gap-1.5 text-xs text-text-muted cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="accent-brand"
-                    checked={revisaoSel.length > 0 && revisaoSel.length === (pendentesRevisao?.data ?? []).length}
-                    onChange={(e) => setRevisaoSel(e.target.checked ? (pendentesRevisao?.data ?? []).map((d) => d.id) : [])}
-                  />
-                  selecionar todos
-                </label>
-                <button
-                  type="button"
-                  className="btn-primary text-xs"
-                  disabled={revisaoSel.length === 0 || confirmLoteMutation.isPending || demoEnabled}
-                  onClick={() => {
-                    if (window.confirm(`Aprovar ${revisaoSel.length} documento(s) selecionado(s)?\n\n• Documentos finais viram deliberações + votos (entram nas métricas).\n• Pautas/apoio serão marcados como revisados (não viram deliberação).\n• Duplicatas e docs sem agência são pulados e seguem na fila.`)) {
-                      confirmLoteMutation.mutate({ ids: revisaoSel });
-                    }
-                  }}
-                >
-                  {confirmLoteMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
-                  Aprovar selecionados ({revisaoSel.length})
-                </button>
-                <button
-                  type="button"
-                  className="btn-secondary text-xs"
-                  disabled={confirmLoteMutation.isPending || demoEnabled}
-                  onClick={() => {
-                    if (window.confirm(`Aprovar TODOS os ${pendentesRevisao?.total ?? 0} documento(s) da fila de revisão?\n\n• Documentos finais viram deliberações + votos (entram nas métricas).\n• Pautas/apoio serão marcados como revisados (não viram deliberação).\n• Duplicatas e docs sem agência são pulados e seguem na fila para decisão manual.\n\nEssa é uma decisão humana — o gate conservador não é aplicado.`)) {
-                      confirmLoteMutation.mutate({ todos: true });
-                    }
-                  }}
-                >
-                  {confirmLoteMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
-                  Aprovar todos
-                </button>
-              </div>
-              {loteFeedback && <p className="text-xs text-text-muted">{loteFeedback}</p>}
-              {(pendentesRevisao?.data ?? []).map((doc) => (
+              {(pendentesRevisao?.data ?? []).slice(0, 10).map((doc) => (
                 <div key={doc.id} className="flex items-center justify-between gap-3 text-sm border border-border rounded-card px-3 py-2">
-                  <label className="flex items-center gap-2 min-w-0 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      className="accent-brand shrink-0"
-                      checked={revisaoSel.includes(doc.id)}
-                      onChange={() => setRevisaoSel((prev) => prev.includes(doc.id) ? prev.filter((x) => x !== doc.id) : [...prev, doc.id])}
-                    />
-                    <span className="truncate text-text-primary">
-                      {doc.filename ?? doc.id}
-                      <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
-                    </span>
-                  </label>
+                  <span className="truncate text-text-primary">
+                    {doc.filename ?? doc.id}
+                    <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
+                  </span>
                   <a href="/dashboard/upload" className="text-brand text-xs hover:underline shrink-0">Revisar →</a>
                 </div>
               ))}
-              {(pendentesRevisao?.total ?? 0) > (pendentesRevisao?.data ?? []).length && (
+              {(pendentesRevisao?.total ?? 0) > 10 && (
                 <p className="text-xs text-text-muted">
-                  + {(pendentesRevisao!.total) - (pendentesRevisao!.data.length)} outro(s) — &ldquo;Aprovar todos&rdquo; cobre a fila inteira, ou revise em <a href="/dashboard/upload" className="text-brand hover:underline">Upload de PDFs</a>.
+                  + {(pendentesRevisao!.total) - 10} outro(s) — o próximo &ldquo;Rodar tudo&rdquo; drena a fila inteira automaticamente.
                 </p>
               )}
             </div>
           ) : (
-            <p className="text-sm text-text-muted">Nada aguardando revisão — a esteira automática está em dia.</p>
+            <p className="text-sm text-text-muted">Nenhuma exceção — a esteira zero-toque está em dia.</p>
           )}
         </section>
       )}

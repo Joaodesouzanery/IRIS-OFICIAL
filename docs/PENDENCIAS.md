@@ -21,7 +21,11 @@ ser zero-toque.
 
 ## Fluxo de operação semanal sugerido (manual no plano grátis)
 
-No plano grátis, a conferência humana semanal é:
+**Desde ago/2026 a esteira é ZERO-TOQUE**: "Rodar tudo" chama a pipeline server-side
+(`/api/v1/pipeline/run`) que faz TUDO — coleta → reclassificação → extração → aprovação
+automática em camadas (dedup em 4 barreiras; ilegível não vira métrica; duplicata exata
+arquivada com link; semântica fundida idempotente; diretor novo <0.6+nome estrito auto-criado)
+→ dedup final. Não há mais fila de aprovação manual; o painel "Exceções" é informativo.
 
 1. Abrir **Dashboard → Deliberações → Votos dos Diretores** e clicar **"Rodar tudo"** (faz
    coleta→processa→auto-confirma em loop→recalcula/mescla numa tacada).

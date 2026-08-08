@@ -11,8 +11,9 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest, requireAdmin, getAuthenticatedUser } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdmin, requireAdminOrCron, getAuthenticatedUser } from "@/lib/server/request-guards";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
+import { findBestMatch, isStrictPersonName } from "@/lib/server/name-matcher";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -24,7 +25,8 @@ export async function POST(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Aprovação em lote indisponível em modo DEMO." }, { status: 403 });
   }
-  const guard = await requireAdmin(req);
+  // AdminOrCron: a pipeline zero-toque (/pipeline/run) também chama esta rota.
+  const guard = await requireAdminOrCron(req, "candidatos/aprovar-lote");
   if (guard) return guard;
 
   const userResult = await getAuthenticatedUser(req);
@@ -57,6 +59,36 @@ export async function POST(req: NextRequest) {
   const { data: candidatos, error } = await query;
   if (error) return NextResponse.json({ error: "Falha ao listar candidatos." }, { status: 500 });
 
+  // Zero-toque (incluir_novos): também considera os candidatos SEM match forte (novos), que a
+  // query acima (gte confidence) não traz. Política de 3 FAIXAS (anti grafia-errada):
+  //   ≥0.8 → aprova como o diretor casado · 0.6–0.8 → provável VARIANTE de grafia, NÃO cria
+  //   pessoa (fica pendente/exceção) · <0.6 + nome estrito → cria diretor novo.
+  let candidatosNovos: any[] = [];
+  if (incluirNovos) {
+    let qNovos = db
+      .from("diretor_candidatos")
+      .select("*")
+      .eq("review_status", "pendente")
+      .is("diretor_id", null)
+      .order("created_at", { ascending: true })
+      .limit(limit);
+    if (body.agencia_id) qNovos = qNovos.eq("agencia_id", body.agencia_id);
+    const { data } = await qNovos;
+    candidatosNovos = (data ?? []).filter((c: any) => !(candidatos ?? []).some((x: any) => x.id === c.id));
+  }
+
+  const diretoresCache = new Map<string, Array<{ id: string; nome: string; nome_variantes: string[] }>>();
+  async function diretoresDe(agenciaId: string) {
+    const cached = diretoresCache.get(agenciaId);
+    if (cached) return cached;
+    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("agencia_id", agenciaId);
+    const lista = (data ?? []).map((x: any) => ({
+      id: x.id, nome: x.nome, nome_variantes: Array.isArray(x.nome_variantes) ? x.nome_variantes : [],
+    }));
+    diretoresCache.set(agenciaId, lista);
+    return lista;
+  }
+
   const aprovados: Array<{ id: string; nome: string; diretor_id: string }> = [];
   const pulados: Array<{ id: string; nome: string; reason: string }> = [];
 
@@ -74,9 +106,31 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  for (const candidato of candidatosNovos) {
+    const nome = String(candidato.nome_detectado ?? "");
+    if (!isStrictPersonName(nome)) {
+      pulados.push({ id: candidato.id, nome, reason: "nome não passa na validação estrita (prosa não vira pessoa)" });
+      continue;
+    }
+    const match = candidato.agencia_id ? findBestMatch(nome, await diretoresDe(candidato.agencia_id)) : { diretorId: null, needsReview: false };
+    if (match.diretorId && match.needsReview) {
+      // Faixa 0.6–0.8: provável variante de grafia de alguém já cadastrado — criar duplicaria a pessoa.
+      pulados.push({ id: candidato.id, nome, reason: "similaridade 0.6–0.8 com diretor existente (provável variante de grafia) — decidir manualmente" });
+      continue;
+    }
+    try {
+      // <0.6 (ninguém parecido) ou ≥0.85 (o aprovarCandidato reusa o cadastro): aprova.
+      const result = await aprovarCandidato(db, candidato, { reviewedBy });
+      aprovados.push({ id: candidato.id, nome, diretor_id: result.diretorId });
+    } catch (e) {
+      console.error("[candidatos/aprovar-lote] Falha (novo):", e);
+      pulados.push({ id: candidato.id, nome, reason: "erro ao aprovar (novo)" });
+    }
+  }
+
   return NextResponse.json({
     min_confidence: minConfidence,
-    analisados: (candidatos ?? []).length,
+    analisados: (candidatos ?? []).length + candidatosNovos.length,
     aprovados: aprovados.length,
     pulados: pulados.length,
     aprovados_detalhe: aprovados,
