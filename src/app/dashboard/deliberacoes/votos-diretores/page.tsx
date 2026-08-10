@@ -232,6 +232,10 @@ export default function VotosDiretoresPage() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
       queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
+      // Encadeia a PIPELINE ao fim da varredura: "Buscar todas" descobre; a pipeline processa,
+      // aprova e gera as métricas — 1 fluxo, sem descompasso "serão aprovadas no próximo".
+      // (rodarTudoMutation é declarada abaixo; o closure só roda pós-render, sem TDZ.)
+      if (!rodarTudoMutation.isPending) rodarTudoMutation.mutate();
     },
   });
 
@@ -465,7 +469,7 @@ export default function VotosDiretoresPage() {
     mutationFn: async () => {
       const totais: Record<string, number> = {};
       let ultimas: PipelineEtapas = {};
-      for (let rodada = 1; rodada <= 12; rodada++) {
+      for (let rodada = 1; rodada <= 20; rodada++) {
         setRodarTudoProgresso(`Rodada ${rodada} · coleta → extração → aprovação → métricas…`);
         const res = await api.post<{ etapas: PipelineEtapas; restantes: boolean }>("/pipeline/run", {});
         ultimas = res.etapas ?? {};
@@ -545,7 +549,7 @@ export default function VotosDiretoresPage() {
             onClick={() => backfillMutation.mutate()}
             disabled={backfillMutation.isPending || rodarTudoMutation.isPending || demoEnabled}
             className="btn-secondary"
-            title="Varredura AMPLA: busca todas as reuniões/documentos de 2026 das 3 agências (depois rode 'Rodar tudo' para processar e aprovar)"
+            title="Varredura AMPLA: busca todas as reuniões/documentos de 2026 das 3 agências e, ao terminar, roda a esteira completa sozinho (processa, aprova e gera as métricas)"
           >
             {backfillMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
             Buscar todas de 2026

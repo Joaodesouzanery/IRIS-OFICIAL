@@ -158,6 +158,34 @@ export function findBestMatch(
   return { diretorId: null, score: bestScore, needsReview: true, isNew: true };
 }
 
+/**
+ * Zero-toque (ago/2026): melhor match COM MARGEM sobre o 2º melhor DIRETOR. Usado para
+ * auto-aprovar a faixa 0.6–0.8: se o melhor é INEQUÍVOCO (margem ≥0.15 sobre o segundo
+ * diretor), é seguro aprovar como ele — variante de grafia da mesma pessoa; se dois
+ * diretores pontuam próximos ("Silva" × "Souza"), fica para decisão humana.
+ * Mesma pontuação do findBestMatch (nome + variantes + derivados), agregada POR diretor.
+ */
+export function findBestMatchComMargem(
+  rawName: string,
+  diretores: DiretorRecord[],
+): { diretorId: string | null; score: number; segundoScore: number; margem: number } {
+  if (!rawName || rawName.trim().length < 3 || diretores.length === 0) {
+    return { diretorId: null, score: 0, segundoScore: 0, margem: 0 };
+  }
+  const porDiretor: Array<{ id: string; score: number }> = diretores.map((dir) => {
+    let melhor = 0;
+    for (const cand of [dir.nome, ...dir.nome_variantes, ...deriveNomeVariantes(dir.nome)]) {
+      const s = tokenSortRatio(rawName, cand);
+      if (s > melhor) melhor = s;
+    }
+    return { id: dir.id, score: melhor };
+  });
+  porDiretor.sort((a, b) => b.score - a.score);
+  const best = porDiretor[0];
+  const segundo = porDiretor[1]?.score ?? 0;
+  return { diretorId: best.score > 0 ? best.id : null, score: best.score, segundoScore: segundo, margem: best.score - segundo };
+}
+
 // ─── Validação de nome de pessoa ──────────────────────────────────────────
 // Palavras-função que NÃO são nome de pessoa (evita candidatos-lixo tipo "Diretor").
 const ROLE_WORDS = new Set([

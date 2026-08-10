@@ -13,7 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin, requireAdminOrCron, getAuthenticatedUser } from "@/lib/server/request-guards";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
-import { findBestMatch, isStrictPersonName } from "@/lib/server/name-matcher";
+import { findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -106,6 +106,40 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  // Faixa 0.6–0.8 com trava de MARGEM (zero-toque ago/2026): quando o melhor diretor é
+  // INEQUÍVOCO (margem ≥0.15 sobre o 2º), é variante de grafia da mesma pessoa → aprova
+  // como ele (não cria ninguém). Dois diretores próximos → segue exceção humana.
+  let aprovadosPorMargem = 0;
+  if (incluirNovos) {
+    let qFaixa = db
+      .from("diretor_candidatos")
+      .select("*")
+      .eq("review_status", "pendente")
+      .gte("confidence", 0.6)
+      .lt("confidence", minConfidence)
+      .not("diretor_id", "is", null)
+      .order("confidence", { ascending: false })
+      .limit(limit);
+    if (body.agencia_id) qFaixa = qFaixa.eq("agencia_id", body.agencia_id);
+    const { data: faixa } = await qFaixa;
+    for (const candidato of (faixa ?? []) as any[]) {
+      if (!candidato.agencia_id) continue;
+      const m = findBestMatchComMargem(String(candidato.nome_detectado ?? ""), await diretoresDe(candidato.agencia_id));
+      if (m.diretorId && m.score >= 0.6 && m.margem >= 0.15) {
+        try {
+          const result = await aprovarCandidato(db, candidato, { reviewedBy, diretorId: m.diretorId });
+          aprovados.push({ id: candidato.id, nome: candidato.nome_detectado, diretor_id: result.diretorId });
+          aprovadosPorMargem++;
+        } catch (e) {
+          console.error("[candidatos/aprovar-lote] Falha (margem):", e);
+          pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "erro ao aprovar (margem)" });
+        }
+      } else {
+        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "dois diretores com score próximo — decidir manualmente" });
+      }
+    }
+  }
+
   for (const candidato of candidatosNovos) {
     const nome = String(candidato.nome_detectado ?? "");
     if (!isStrictPersonName(nome)) {
@@ -132,6 +166,7 @@ export async function POST(req: NextRequest) {
     min_confidence: minConfidence,
     analisados: (candidatos ?? []).length + candidatosNovos.length,
     aprovados: aprovados.length,
+    aprovados_por_margem: aprovadosPorMargem,
     pulados: pulados.length,
     aprovados_detalhe: aprovados,
     pulados_detalhe: pulados.slice(0, 30),
