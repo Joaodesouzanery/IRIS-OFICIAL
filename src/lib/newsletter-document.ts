@@ -47,6 +47,12 @@ export interface NewsletterDocumentInput {
   minuto_items?: MinutoRegulacaoItemInput[];
   social_posts?: SocialPostInput[];
   eventos?: EventoInput[];
+  /**
+   * Override de IMAGEM por notícia no PDF (impressão): `null` = SEM imagem; string = URL de
+   * substituição (hospedada via /newsletter/imagem → estável); ausente = imagem original.
+   * Aplicado só na variante "print" (o e-mail segue com a imagem original via proxy).
+   */
+  newsletter_imagens?: Record<string, string | null>;
 }
 
 // Redes e site oficiais do IRIS (botões/links no e-mail).
@@ -195,8 +201,23 @@ function dedupeDocumentImages(noticias: RegulatoryNews[]): RegulatoryNews[] {
   });
 }
 
+// Override de imagem por notícia no PDF (impressão): null = sem imagem; string = substituição.
+function applyImagemOverrides(noticias: RegulatoryNews[], overrides?: Record<string, string | null>): RegulatoryNews[] {
+  if (!overrides || Object.keys(overrides).length === 0) return noticias;
+  return noticias.map((n) => {
+    if (!(n.id in overrides)) return n;
+    const o = overrides[n.id];
+    return { ...n, imagem_url: o === null ? null : o };
+  });
+}
+
 export function buildRegulatoryNewsletterHtml(input: NewsletterDocumentInput, variant: "email" | "print" = "email") {
-  const deduped: NewsletterDocumentInput = { ...input, noticias: dedupeDocumentImages(input.noticias) };
+  // No PRINT, aplica o override do usuário ANTES do dedup (uma imagem removida/trocada não
+  // deve "roubar" o slot de dedup de outra). O e-mail segue com as imagens originais.
+  const baseNoticias = variant === "print"
+    ? applyImagemOverrides(input.noticias, input.newsletter_imagens)
+    : input.noticias;
+  const deduped: NewsletterDocumentInput = { ...input, noticias: dedupeDocumentImages(baseNoticias) };
   const version = deduped.template_version ?? "";
   const isV2 = version.endsWith("_v2");
   if (deduped.documento_tipo === "minuto_regulacao") {
@@ -1155,6 +1176,9 @@ function officialImageUrl(value: string | null | undefined) {
 
 function proxiedImageUrl(value: string | null | undefined, baseUrl?: string) {
   if (!value) return null;
+  // Imagem já hospedada no bucket público do app (override do usuário via /newsletter/imagem):
+  // vai DIRETO — o proxy tem allowlist gov.br e daria 403 numa URL de bucket.
+  if (value.includes("/storage/v1/object/public/")) return value;
   return absolutePath(`/api/v1/noticias/imagem?url=${encodeURIComponent(upgradeImageScale(value))}`, baseUrl);
 }
 

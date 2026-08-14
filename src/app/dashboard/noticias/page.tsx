@@ -232,6 +232,9 @@ export default function NoticiasPage() {
   const [minutoSelectedIds, setMinutoSelectedIds] = useState<string[]>([]);
   const [selectedNewsCache, setSelectedNewsCache] = useState<Record<string, RegulatoryNews>>({});
   const [newsletterArticleTexts, setNewsletterArticleTexts] = useState<Record<string, string>>({});
+  // Override de imagem por notícia no PDF (impressão): null = SEM imagem; string = URL trocada.
+  const [newsletterImagens, setNewsletterImagens] = useState<Record<string, string | null>>({});
+  const [imagemBusy, setImagemBusy] = useState<string | null>(null);
   const [socialPosts, setSocialPosts] = useState<SocialPostInput[]>([]);
   const [socialUrl, setSocialUrl] = useState("");
   const [socialBusy, setSocialBusy] = useState(false);
@@ -429,6 +432,7 @@ export default function NoticiasPage() {
       minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
       social_posts: documentConfig.documentoTipo === "newsletter_regulatoria" ? socialPosts : [],
       eventos: documentConfig.documentoTipo === "newsletter_regulatoria" ? (eventosData?.eventos ?? []) : [],
+      newsletter_imagens: documentConfig.documentoTipo === "newsletter_regulatoria" ? newsletterImagens : {},
     }),
     onSuccess: (result) => setSavedEditionId(result.edition.id),
   });
@@ -505,7 +509,8 @@ export default function NoticiasPage() {
     minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
     social_posts: socialPosts,
     eventos: eventosData?.eventos ?? [],
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected, socialPosts, eventosData]);
+    newsletter_imagens: newsletterImagens,
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected, socialPosts, eventosData, newsletterImagens]);
   // Preview + "Copiar HTML do e-mail" = e-mail (table-based, p/ colar no cliente). "Copiar doc."
   // + "Imprimir PDF" = canvas (PDF bonito). O Minuto ignora a variante (é o mesmo teleprompter).
   const html = useMemo(() => buildRegulatoryNewsletterHtml(documentInput, "email"), [documentInput]);
@@ -622,6 +627,31 @@ export default function NoticiasPage() {
       return next;
     });
     setSavedEditionId(null);
+  }
+
+  // ── Imagem por notícia no PDF (impressão): original / sem imagem / trocar ──
+  function setImagemOverride(id: string, value: string | null | undefined) {
+    setNewsletterImagens((prev) => {
+      const next = { ...prev };
+      if (value === undefined) delete next[id]; // volta à original
+      else next[id] = value; // null = sem imagem; string = substituta
+      return next;
+    });
+    setSavedEditionId(null);
+  }
+
+  async function trocarImagemNoticia(id: string, file: File) {
+    setImagemBusy(id);
+    try {
+      const form = new FormData();
+      form.append("file", file);
+      const res = await api.upload<{ imagem_url: string }>("/newsletter/imagem", form);
+      setImagemOverride(id, res.imagem_url);
+    } catch {
+      window.alert("Não foi possível hospedar a imagem. Tente de novo.");
+    } finally {
+      setImagemBusy(null);
+    }
   }
 
   // ── Posts sociais (Instagram/LinkedIn) na newsletter ──────────────────────
@@ -1364,6 +1394,47 @@ export default function NoticiasPage() {
                           <div className="flex items-center justify-between text-[10px] text-text-muted">
                             <span>Limite da pagina: {limit} caracteres</span>
                             <span className={cn(remaining < 80 && "text-warning")}>{remaining} restantes</span>
+                          </div>
+                          {/* Imagem desta notícia no PDF (impressão): original / sem imagem / trocar */}
+                          <div className="flex items-center gap-1.5 flex-wrap text-[10px]">
+                            <span className="text-text-muted">Imagem no PDF:</span>
+                            <button
+                              type="button"
+                              className={cn("btn-secondary px-2 py-0.5 text-[10px]", !(item.id in newsletterImagens) && "border-brand text-brand")}
+                              onClick={() => setImagemOverride(item.id, undefined)}
+                              title="Usar a imagem original da notícia"
+                            >
+                              Original
+                            </button>
+                            <button
+                              type="button"
+                              className={cn("btn-secondary px-2 py-0.5 text-[10px]", newsletterImagens[item.id] === null && "border-brand text-brand")}
+                              onClick={() => setImagemOverride(item.id, null)}
+                              title="Imprimir esta notícia SEM imagem"
+                            >
+                              Sem imagem
+                            </button>
+                            <label
+                              className={cn(
+                                "btn-secondary px-2 py-0.5 text-[10px]",
+                                typeof newsletterImagens[item.id] === "string" && "border-brand text-brand",
+                                imagemBusy === item.id ? "opacity-60" : "cursor-pointer",
+                              )}
+                              title="Trocar por outra imagem (será hospedada e usada no PDF)"
+                            >
+                              {imagemBusy === item.id ? "Enviando…" : typeof newsletterImagens[item.id] === "string" ? "Trocada ✓" : "Trocar…"}
+                              <input
+                                type="file"
+                                accept="image/*"
+                                className="hidden"
+                                disabled={imagemBusy !== null || demoEnabled}
+                                onChange={(e) => { const f = e.target.files?.[0]; if (f) void trocarImagemNoticia(item.id, f); e.target.value = ""; }}
+                              />
+                            </label>
+                            {typeof newsletterImagens[item.id] === "string" && (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img src={newsletterImagens[item.id] as string} alt="" className="h-7 w-11 object-cover rounded border border-border" />
+                            )}
                           </div>
                         </div>
                       );

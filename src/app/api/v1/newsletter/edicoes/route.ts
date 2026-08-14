@@ -75,6 +75,7 @@ export async function POST(req: NextRequest) {
   const newsletterTextos = normalizeNewsletterArticleTexts(body.newsletter_textos, orderedNoticias);
   const socialPosts = documentoTipo === "newsletter_regulatoria" ? normalizeSocialPosts(body.social_posts) : [];
   const eventos = documentoTipo === "newsletter_regulatoria" ? normalizeEventos(body.eventos) : [];
+  const newsletterImagens = documentoTipo === "newsletter_regulatoria" ? normalizeNewsletterImagens(body.newsletter_imagens, orderedNoticias) : {};
 
   const html = buildRegulatoryNewsletterHtml({
     assunto,
@@ -123,6 +124,7 @@ export async function POST(req: NextRequest) {
         minuto_items: minutoItems,
         social_posts: socialPosts,
         eventos,
+        newsletter_imagens: newsletterImagens,
       },
     })
     .select("*")
@@ -226,6 +228,20 @@ function chunkIds(ids: string[], size: number) {
   const groups: string[][] = [];
   for (let index = 0; index < ids.length; index += size) groups.push(ids.slice(index, index + size));
   return groups;
+}
+
+// Override de imagem por notícia no PDF (null = sem imagem; string = URL hospedada). Só aceita
+// ids das notícias da edição e URLs http(s) — validação manual, padrão do projeto.
+function normalizeNewsletterImagens(value: unknown, noticias: RegulatoryNews[]): Record<string, string | null> {
+  if (!value || typeof value !== "object") return {};
+  const validIds = new Set(noticias.map((n) => n.id));
+  const out: Record<string, string | null> = {};
+  for (const [id, v] of Object.entries(value as Record<string, unknown>).slice(0, 60)) {
+    if (!validIds.has(id)) continue;
+    if (v === null) { out[id] = null; continue; }
+    if (typeof v === "string" && /^https?:\/\//.test(v)) out[id] = v.slice(0, 1000);
+  }
+  return out;
 }
 
 // Eventos do IRIS (auto-fetch) embutidos no HTML salvo da edição (snapshot).
