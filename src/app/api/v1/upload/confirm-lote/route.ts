@@ -56,10 +56,18 @@ export async function POST(req: NextRequest) {
   if (error) return NextResponse.json({ error: "Falha ao listar documentos do lote." }, { status: 500 });
 
   // Arquiva um doc (Camada 4 / duplicata exata): sai da fila SEM virar deliberação; rastreável.
-  async function arquivar(docId: string, extras: Record<string, unknown> = {}) {
+  // O MOTIVO fica em campos_detectados.arquivado_motivo (jsonb já existente — sem migration),
+  // para a dedup/arquivamento ser auditável linha a linha (QA ago/2026).
+  async function arquivar(doc: any, motivo: string, extras: Record<string, unknown> = {}) {
     await db.from("documentos_regulatorios")
-      .update({ status: "ignored", reviewed_at: new Date().toISOString(), updated_at: new Date().toISOString(), ...extras })
-      .eq("id", docId);
+      .update({
+        status: "ignored",
+        reviewed_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+        campos_detectados: { ...(doc.campos_detectados ?? {}), arquivado_motivo: motivo },
+        ...extras,
+      })
+      .eq("id", doc.id);
   }
 
   // Política zero-toque (QA ago/2026) — dedup em camadas, nada fica em beco sem saída:
@@ -89,7 +97,7 @@ export async function POST(req: NextRequest) {
         .neq("id", doc.id)
         .maybeSingle();
       if (original) {
-        await arquivar(doc.id, {
+        await arquivar(doc, "duplicata_exata", {
           duplicate_documento_id: original.id,
           ...(original.deliberacao_id ? { duplicate_deliberacao_id: original.deliberacao_id } : {}),
         });
@@ -101,7 +109,7 @@ export async function POST(req: NextRequest) {
     }
 
     if (!agenciaId) {
-      await arquivar(doc.id);
+      await arquivar(doc, "sem_agencia");
       arquivadosSemAgencia++;
       continue;
     }
@@ -114,7 +122,7 @@ export async function POST(req: NextRequest) {
       dataReuniao: fields.data_reuniao,
       ataItemsCount: Array.isArray(doc.ata_items) ? doc.ata_items.length : 0,
     })) {
-      await arquivar(doc.id);
+      await arquivar(doc, "ilegivel_sem_sinal");
       arquivadosIlegiveis++;
       continue;
     }

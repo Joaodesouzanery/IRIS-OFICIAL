@@ -165,7 +165,7 @@ export async function aprovarCandidato(
     .eq("id", candidato.id);
 
   // Votos retroativos das deliberações onde este nome aparece (idempotente).
-  let votosRetroativos: unknown = null;
+  let votosRetroativos: Awaited<ReturnType<typeof applyRetroactiveVotes>> | null = null;
   try {
     votosRetroativos = await applyRetroactiveVotes(db, {
       candidato: { id: candidato.id, agencia_id: candidato.agencia_id, nome_detectado: candidato.nome_detectado },
@@ -179,7 +179,8 @@ export async function aprovarCandidato(
   // MANDATO AUTOMÁTICO: se a aprovação não informou datas (caso do recompute) e o diretor
   // ficou SEM mandato, a inferência de voto por mandato fica DESLIGADA para ele
   // (getActiveDiretoresForVote → []). Cria um mandato a partir da data da 1ª deliberação
-  // que ele votou (aberto, fonte automática) — o admin refina depois. QA Etapa 19.
+  // que ele votou — ou, sem voto ainda, da 1ª em que o NOME aparece (primeira_data dos
+  // retroativos), quebrando o círculo "sem mandato → sem voto → sem mandato". QA Etapa 19/ago-2026.
   if (!mandatoId) {
     try {
       const { data: jaTem } = await db.from("mandatos").select("id").eq("diretor_id", diretorId).limit(1);
@@ -193,6 +194,7 @@ export async function aprovarCandidato(
           .map((r: any) => (Array.isArray(r.deliberacoes) ? r.deliberacoes[0]?.data_reuniao : r.deliberacoes?.data_reuniao))
           .filter((d: unknown): d is string => typeof d === "string" && d.length >= 10)
           .sort();
+        if (!datas.length && votosRetroativos?.primeira_data) datas.push(votosRetroativos.primeira_data);
         if (datas.length) {
           const { data: mandatoAuto } = await db
             .from("mandatos")

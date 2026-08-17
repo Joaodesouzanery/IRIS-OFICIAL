@@ -27,6 +27,7 @@ import { POST as confirmLotePOST } from "../../upload/confirm-lote/route";
 import { POST as recomputePOST } from "../../admin/diretores/candidatos/recompute/route";
 import { POST as aprovarLotePOST } from "../../diretores/candidatos/aprovar-lote/route";
 import { POST as dedupPOST } from "../../admin/deliberacoes/dedup/route";
+import { POST as materializarPOST } from "../../admin/votos/materializar-faltantes/route";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -157,6 +158,18 @@ async function run(req: NextRequest) {
       etapas.diretores = { aprovados: r?.aprovados ?? 0, excecoes: r?.pulados ?? 0 };
     } catch {
       etapas.diretores = { erro: "candidatos falharam nesta rodada" };
+    }
+  } else restantes = true;
+
+  // 6b · Backfill de votos (QA ago/2026): deliberações finais já gravadas sem voto ganham
+  // os votos que a evidência persistida sustenta (regras novas de inferência). Idempotente.
+  if (hasBudget(deadlineAt, 15_000)) {
+    try {
+      const r = await call(materializarPOST, "/api/v1/admin/votos/materializar-faltantes", { dry_run: false });
+      etapas.backfill_votos = { deliberacoes: r?.materializaveis ?? 0, votos: r?.votos ?? 0 };
+      if (r?.restantes) restantes = true;
+    } catch {
+      etapas.backfill_votos = { erro: "backfill falhou nesta rodada" };
     }
   } else restantes = true;
 

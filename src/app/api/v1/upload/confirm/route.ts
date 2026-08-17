@@ -428,6 +428,19 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           ((!d.import_counts_as_final && !isImportableAta) || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento))
           && !isAnttVotoCapturavel
         ) {
+          // QA ago/2026: ata REAL cujo splitter não achou itens NÃO pode ser arquivada em
+          // silêncio (era o buraco da ANM: ata é sempre counts_as_final=false, sem itens
+          // caía aqui como "apoio" e sumia sem passar pelas Exceções). Fica em revisão.
+          if (d.tipo_documento === "ata") {
+            await markDocumentReviewed(db, d.documento_id, "review_pending");
+            results.push({
+              filename: d.filename,
+              status: "document_saved",
+              documento_id: d.documento_id ?? null,
+              message: "Ata sem itens parseados — mantida em revisao (Excecoes) para nao perder deliberacoes.",
+            });
+            continue;
+          }
           await markDocumentReviewed(db, d.documento_id, "ignored");
           results.push({
             filename: d.filename,
@@ -706,6 +719,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     nomesContra: item.votos_contra_detectados ?? [],
                     nomesAbstencao: item.votos_abstencao_detectados ?? [],
                     dataReuniao: d.data_reuniao,
+                    diretoresList,
                   }),
                   warnings: item.warnings ?? [],
                 }, attachment),
@@ -749,8 +763,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   activeDiretoresList: isAnttAtaItem && rosterItem.length > 0 ? rosterItem : activeDiretoresList,
                   resultado: item.resultado,
                   unanime: Boolean(item.unanimidade_detectada),
+                  // QA ago/2026: item ANTT UNÂNIME sem presentes casáveis no próprio item
+                  // caía com 0 votos (rosterItem vazio desligava tudo). Fallback: o roster
+                  // do PAI (presentes do preâmbulo / mandatos na data) — mesma evidência
+                  // usada nas demais agências. Item NÃO-unânime segue sem voto (estrutural).
                   inferFromMandate: isAnttAtaItem
-                    ? Boolean(item.unanimidade_detectada && item.resultado && rosterItem.length > 0)
+                    ? Boolean(item.unanimidade_detectada && item.resultado
+                        && (rosterItem.length > 0 || activeDiretoresList.length > 0))
                     : shouldInferVotesFromMandate({
                       resultado: item.resultado,
                       tipo_documento: "ata",
@@ -760,6 +779,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                       nomesContra: item.votos_contra_detectados ?? [],
                       nomesAbstencao: item.votos_abstencao_detectados ?? [],
                       dataReuniao: d.data_reuniao,
+                      diretoresList,
                     }),
                 });
 
@@ -834,7 +854,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 nomesContra: d.nomes_votacao_contra,
                 nomesAbstencao: d.nomes_votacao_abstencao ?? [],
                 dataReuniao: d.data_reuniao,
+                diretoresList,
               }),
+              // QA ago/2026: inferência elegível mas SEM roster (nenhum presente casado e
+              // nenhum mandato na data) degradava em silêncio para 0 votos. O flag torna o
+              // caso auditável e recuperável (materializar-faltantes acha após cadastrar mandato).
+              ...(activeDiretoresList.length === 0 ? { inferencia_sem_roster: true } : {}),
             }, attachment),
           })
           .select("id")
@@ -888,6 +913,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               nomesContra: d.nomes_votacao_contra,
               nomesAbstencao: d.nomes_votacao_abstencao ?? [],
               dataReuniao: d.data_reuniao,
+              // QA ago/2026 (ARTESP): signatários extraídos que NÃO casam com o cadastro
+              // não podem desligar a inferência — passavam a deliberação unânime a 0 votos.
+              diretoresList,
             }),
           });
         if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
@@ -1150,7 +1178,7 @@ async function getDocumentAttachment(
 async function markDocumentReviewed(
   db: any,
   documentoId: string | null | undefined,
-  status: "confirmed" | "ignored",
+  status: "confirmed" | "ignored" | "review_pending",
   deliberacaoId?: string | null,
 ) {
   if (!documentoId) return;

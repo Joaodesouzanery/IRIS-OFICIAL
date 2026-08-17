@@ -74,6 +74,8 @@ export interface RetroactiveVotesResult {
   deliberacoes: number;
   criados: number;
   ignorados_fora_mandato: number;
+  /** 1ª data_reuniao em que o nome aparece — base do mandato automático. */
+  primeira_data: string | null;
 }
 
 /**
@@ -100,12 +102,13 @@ export async function applyRetroactiveVotes(
 
   for (const del of delibs) {
     // Checagem de mandato: se há mandatos reais na data e o diretor não está entre
-    // eles, pula. Quando getActiveDiretoresForVote cai no fallback (sem mandatos na
-    // data), não dá para excluir → grava.
+    // eles, pula. Sem NENHUM mandato na data (active vazio — caso típico do diretor
+    // recém-aprovado, que ainda não tem mandato), não dá para excluir → grava.
+    // (QA ago/2026: o guard antigo exigia "estar no active", que sem mandato era [],
+    // e pulava TUDO — aprovar candidato nunca criava voto retroativo.)
     const active = await getActiveDiretoresForVote(db, candidato.agencia_id, del.data_reuniao, [thisDir]);
-    const isFallback = active.length === 1 && active[0].id === diretorId;
     const inActive = active.some((d) => d.id === diretorId);
-    if (!isFallback && !inActive) { ignorados++; continue; }
+    if (active.length > 0 && !inActive) { ignorados++; continue; }
 
     const rows = buildVotoRows({
       deliberacao_id: del.id,
@@ -142,5 +145,10 @@ export async function applyRetroactiveVotes(
     reviewed_by: reviewedBy,
   });
 
-  return { deliberacoes: delibs.length, criados, ignorados_fora_mandato: ignorados };
+  const primeiraData = delibs
+    .map((d) => d.data_reuniao)
+    .filter((d): d is string => typeof d === "string" && d.length >= 10)
+    .sort()[0] ?? null;
+
+  return { deliberacoes: delibs.length, criados, ignorados_fora_mandato: ignorados, primeira_data: primeiraData };
 }

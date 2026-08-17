@@ -43,6 +43,14 @@ export function shouldInferVotesFromMandate(input: {
   nomesAbstencao?: string[];
   /** Data da reunião (ISO). Sem ela não inferimos — não dá para saber a composição. */
   dataReuniao?: string | null;
+  /**
+   * Cadastro de diretores da agência. Quando presente, "nomes extraídos" só bloqueia a
+   * inferência se algum nome CASA com alta confiança (vira voto nominal de fato). Nomes
+   * que não casam (ex.: signatários do rodapé ARTESP) não produzem voto nominal — sem
+   * isso, eles desligavam a inferência E não geravam voto: deliberação unânime ficava
+   * com 0 votos (QA ago/2026: 35 finais ARTESP sem voto).
+   */
+  diretoresList?: DiretorVoteRecord[];
   /** @deprecated quórum por assinatura não é mais usado como gatilho de inferência. */
   signatariosCount?: number;
 }) {
@@ -52,7 +60,9 @@ export function shouldInferVotesFromMandate(input: {
   const isUnanimous = Boolean(input.unanimidadeDetectada) || input.resultado === "Aprovado por Unanimidade";
   // Divergência/abstenção nomeada: a decisão prevaleceu → completa o restante por mandato.
   const hasDivergence = Boolean(input.nomesContra?.length) || Boolean(input.nomesAbstencao?.length);
-  const hasNominalNames = Boolean(input.nomes?.length);
+  const hasNominalNames = input.diretoresList
+    ? matchIds(input.nomes ?? [], input.diretoresList).size > 0
+    : Boolean(input.nomes?.length);
   return hasDivergence || (isUnanimous && !hasNominalNames);
 }
 

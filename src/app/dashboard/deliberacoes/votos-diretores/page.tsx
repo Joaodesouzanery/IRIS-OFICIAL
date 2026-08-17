@@ -494,6 +494,7 @@ export default function VotosDiretoresPage() {
         (totais.ignorados_pauta_apoio ?? 0) > 0 ? `${totais.ignorados_pauta_apoio} pauta(s)/apoio arquivado(s)` : null,
         (totais.aprovados ?? 0) > 0 ? `${totais.aprovados} diretor(es)/nome(s) resolvido(s)` : null,
         (totais.reenfileirados ?? 0) > 0 ? `${totais.reenfileirados} reclassificado(s)` : null,
+        (totais.votos ?? 0) > 0 ? `${totais.votos} voto(s) recuperado(s) em deliberações antigas` : null,
       ].filter(Boolean);
       setMatchFeedback(`Esteira zero-toque concluída: ${partes.join(" · ")}.`);
       for (const key of [
