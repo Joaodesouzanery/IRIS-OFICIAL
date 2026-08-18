@@ -18,6 +18,14 @@ export function hasBudget(deadlineAt: number | undefined, reserveMs: number): bo
   return msLeft(deadlineAt) > reserveMs;
 }
 
+// Orçamento vindo do chamador via query `?budget_ms=` (capado no Hobby). A pipeline
+// zero-toque encadeia várias rotas na MESMA função — cada uma precisa trabalhar só a
+// fatia que o orquestrador tem de saldo, senão a soma estoura o SIGKILL de 60s.
+export function budgetFromRequest(req: { nextUrl: { searchParams: URLSearchParams } }): number {
+  const raw = Number(req.nextUrl.searchParams.get("budget_ms"));
+  return Number.isFinite(raw) && raw > 0 ? Math.min(raw, HOBBY_BUDGET_MS) : HOBBY_BUDGET_MS;
+}
+
 // Quantos retries cabem no saldo, dado o custo estimado de UMA tentativa.
 export function budgetRetries(deadlineAt: number | undefined, attemptMs: number, max = 2): number {
   const left = msLeft(deadlineAt);

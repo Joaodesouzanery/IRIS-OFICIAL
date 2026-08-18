@@ -336,6 +336,19 @@ export default function VotosDiretoresPage() {
 
   // (A aprovação em lote virou passo interno da pipeline zero-toque — /pipeline/run.)
 
+  // Elo coleta→fila (QA ago/2026): itens DETECTADOS que ainda não viraram documento
+  // ("novo"), arquivados com motivo ("ignorado"/sem_pdf) e extrações que falharam —
+  // era o buraco invisível dos "208 detectados / 0 processados".
+  const { data: presosColeta } = useQuery({
+    queryKey: ["nao-enfileirados"],
+    queryFn: () =>
+      api.get<{
+        total_nao_enfileirados: number;
+        grupos: Array<{ agencia: string; tipo: string; status: string; total: number; amostra: Array<{ url: string; motivo: string | null }> }>;
+        falhas_extracao: Array<{ documento_id: string; agencia: string; filename: string | null; status: string; erro: string | null }>;
+      }>("/admin/monitoramento/nao-enfileirados").catch(() => ({ total_nao_enfileirados: 0, grupos: [], falhas_extracao: [] })),
+  });
+
   // Diagnóstico: POR QUE os voto_individual estão parados no gate (agregado por motivo).
   // É o que orienta o operador — sem direção do voto / confiança baixa / relator ambíguo.
   const { data: pendenciasVoto } = useQuery({
@@ -469,16 +482,26 @@ export default function VotosDiretoresPage() {
     mutationFn: async () => {
       const totais: Record<string, number> = {};
       let ultimas: PipelineEtapas = {};
-      for (let rodada = 1; rodada <= 20; rodada++) {
+      // QA ago/2026: try/catch POR RODADA — um timeout (SIGKILL do Hobby) não aborta o
+      // run inteiro nem perde o progresso já gravado no servidor; 2 falhas seguidas
+      // encerram com o que temos. Teto 40 rodadas (fila grande de backfill).
+      let falhasSeguidas = 0;
+      for (let rodada = 1; rodada <= 40; rodada++) {
         setRodarTudoProgresso(`Rodada ${rodada} · coleta → extração → aprovação → métricas…`);
-        const res = await api.post<{ etapas: PipelineEtapas; restantes: boolean }>("/pipeline/run", {});
-        ultimas = res.etapas ?? {};
-        for (const etapa of Object.values(ultimas)) {
-          for (const [k, v] of Object.entries(etapa)) {
-            if (typeof v === "number") totais[k] = (totais[k] ?? 0) + v;
+        try {
+          const res = await api.post<{ etapas: PipelineEtapas; restantes: boolean }>("/pipeline/run", {});
+          falhasSeguidas = 0;
+          ultimas = res.etapas ?? {};
+          for (const etapa of Object.values(ultimas)) {
+            for (const [k, v] of Object.entries(etapa)) {
+              if (typeof v === "number") totais[k] = (totais[k] ?? 0) + v;
+            }
           }
+          if (!res.restantes) break;
+        } catch {
+          falhasSeguidas++;
+          if (falhasSeguidas >= 2) break; // 2 timeouts seguidos: para com o progresso feito
         }
-        if (!res.restantes) break;
       }
       return { totais, ultimas };
     },
@@ -501,6 +524,7 @@ export default function VotosDiretoresPage() {
         ["dashboard"], ["votos-diretores"], ["completude-2026"], ["pendencias-voto-diagnostico"],
         ["docs-review-pending-colegiado"], ["deliberacoes"], ["diretores"], ["votacao"], ["empresas"],
         ["mandatos"], ["governanca-agencias"], ["deliberacoes-360"], ["deliberacoes-gov"],
+        ["nao-enfileirados"],
       ]) queryClient.invalidateQueries({ queryKey: key });
     },
     onError: (err) => {
@@ -745,6 +769,31 @@ export default function VotosDiretoresPage() {
               })()}
             </div>
           )}
+          {(presosColeta?.total_nao_enfileirados ?? 0) > 0 || (presosColeta?.falhas_extracao ?? []).length > 0 ? (
+            <div className="rounded-card border border-border bg-surface-2/40 px-3 py-2.5 space-y-1.5">
+              {(presosColeta?.total_nao_enfileirados ?? 0) > 0 && (
+                <>
+                  <p className="text-[11px] text-text-muted">
+                    <span className="text-warning font-medium">{presosColeta!.total_nao_enfileirados} detectado(s) ainda não processado(s)</span> — o próximo &ldquo;Rodar tudo&rdquo; baixa/enfileira em rodadas (os sem PDF são arquivados com motivo):
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {(presosColeta?.grupos ?? []).filter((g) => g.status === "novo").slice(0, 8).map((g) => (
+                      <span key={`${g.agencia}-${g.tipo}`} className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-[11px] text-text-secondary" title={g.amostra.map((a) => a.url).join("\n")}>
+                        <span className="font-medium text-text-primary">{g.total}</span> {g.agencia} · {g.tipo}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              )}
+              {(presosColeta?.falhas_extracao ?? []).length > 0 && (
+                <p className="text-[11px] text-text-muted">
+                  {presosColeta!.falhas_extracao.length} documento(s) com falha/fila de extração —{" "}
+                  <span className="text-text-secondary">{presosColeta!.falhas_extracao.slice(0, 3).map((f) => `${f.agencia}: ${f.erro ?? f.status}`).join(" · ")}</span>
+                  {presosColeta!.falhas_extracao.length > 3 ? " · …" : ""} (reprocessáveis; o &ldquo;Rodar tudo&rdquo; re-tenta os presos).
+                </p>
+              )}
+            </div>
+          ) : null}
           {(pendentesRevisao?.data ?? []).length > 0 ? (
             <div className="space-y-1.5">
               {(pendentesRevisao?.data ?? []).slice(0, 10).map((doc) => (

@@ -7,6 +7,7 @@
 
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { analyzeUploadPdf, markBatchDuplicates } from "@/lib/server/upload-analysis";
+import { hasBudget } from "@/lib/server/time-budget";
 
 type QueueJob = { jobId: string; agenciaId?: string | null };
 
@@ -122,13 +123,23 @@ export async function processPdf(jobId: string): Promise<void> {
   }
 }
 
-export async function processQueue(jobs: QueueJob[], concurrency = 2): Promise<void> {
+export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt?: number): Promise<number> {
   const queue = [...jobs];
   const active: Promise<void>[] = [];
+  let started = 0;
 
   while (queue.length > 0 || active.length > 0) {
     while (active.length < concurrency && queue.length > 0) {
+      // Orçamento (QA ago/2026): um PDF escaneado custa até ~65s (pdf-parse 25s + OCR
+      // 40s) — sem esta parada o lote de 20 estourava sozinho o SIGKILL de 60s do
+      // Hobby. Nunca INICIA um job sem saldo; os não iniciados seguem 'pending' e a
+      // próxima rodada os pega (progresso preservado, nada órfão).
+      if (deadlineAt !== undefined && !hasBudget(deadlineAt, 12_000)) {
+        queue.length = 0;
+        break;
+      }
       const job = queue.shift()!;
+      started++;
       const p = processPdf(job.jobId)
         .catch((err) => console.error(`[queue] Job ${job.jobId} falhou:`, err))
         .then(() => {
@@ -139,9 +150,10 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2): Promise<v
     }
     if (active.length > 0) await Promise.race(active);
   }
+  return started;
 }
 
-export async function processPendingDocuments(limit = 5): Promise<{ processed: number; job_ids: string[]; reaped: number }> {
+export async function processPendingDocuments(limit = 5, deadlineAt?: number): Promise<{ processed: number; job_ids: string[]; reaped: number }> {
   const db = createSupabaseServerClient();
 
   // Reaper oportunista de órfãos: um job/doc preso em "processing" só é possível se o
@@ -159,6 +171,21 @@ export async function processPendingDocuments(limit = 5): Promise<{ processed: n
     .select("id");
   const reaped = reapedRows?.length ?? 0;
 
+  // Reaper do DOCUMENTO preso em "processing" (QA ago/2026): quando o job morreu de vez
+  // (foi a 'failed' sem conseguir atualizar o doc, ou nunca conheceu o documento_id), o
+  // doc ficava 'processing' PARA SEMPRE — invisível e fora de qualquer fila. Vira 'failed'
+  // com motivo (aparece no diagnóstico e é reprocessável); se o job correspondente ainda
+  // for reprocessado, o processPdf sobrescreve o status normalmente.
+  await db
+    .from("documentos_regulatorios")
+    .update({
+      status: "failed",
+      error_message: "Processamento interrompido (timeout/SIGKILL) — reprocessável.",
+      updated_at: new Date().toISOString(),
+    })
+    .eq("status", "processing")
+    .lt("updated_at", staleCutoff);
+
   const normalizedLimit = Math.min(20, Math.max(1, limit));
   const { data: jobs } = await db
     .from("upload_jobs")
@@ -172,11 +199,12 @@ export async function processPendingDocuments(limit = 5): Promise<{ processed: n
     agenciaId: job.agencia_id as string | null,
   }));
 
+  let processed = 0;
   if (selected.length > 0) {
-    await processQueue(selected, 2);
+    processed = await processQueue(selected, 2, deadlineAt);
   }
 
-  return { processed: selected.length, job_ids: selected.map((job) => job.jobId), reaped };
+  return { processed, job_ids: selected.map((job) => job.jobId), reaped };
 }
 
 function previewToJson(analysis: Awaited<ReturnType<typeof analyzeUploadPdf>>) {

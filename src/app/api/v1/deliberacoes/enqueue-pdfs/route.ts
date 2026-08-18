@@ -13,14 +13,19 @@ import { NextRequest, NextResponse } from "next/server";
 import { waitUntil } from "@vercel/functions";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
+import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
+import { resolvePdfLinksFromHtml, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
 
 export const dynamic = "force-dynamic";
 
-// Tipos de item que representam decisões (priorizamos voto/ata sobre pauta).
-const DECISION_TIPOS = ["voto", "ata", "deliberacao", "pauta"] as const;
+// Tipos de item que representam (ou CONTÊM) decisões. QA ago/2026: "documento" é o
+// fallback do classificador e "reuniao" é a página-mãe do coletor ANTT-2026 — ambos
+// ficavam de fora e apodreciam em status 'novo' para sempre.
+const DECISION_TIPOS = ["voto", "ata", "deliberacao", "pauta", "documento", "reuniao"] as const;
+// Heurística de PRIORIZAÇÃO apenas (não é mais gate): URL com cara de PDF vai primeiro.
 const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 const MAX_PER_RUN = 10;
+const MAX_TENTATIVAS = 3;
 const FETCH_TIMEOUT_MS = 20_000;
 
 export async function POST(req: NextRequest) {
@@ -70,8 +75,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: `Falha ao listar itens monitorados: ${error.message}` }, { status: 500 });
   }
 
+  // QA ago/2026: o gate por regex de URL matava ARTESP (DAM sem .pdf) e ANM (/view) e,
+  // como o rejeitado nunca mudava de status, os mesmos 60 bloqueavam a janela para
+  // sempre (208 detectados / 0 na fila). Agora TODO item da janela é tentado — o
+  // critério é o CONTEÚDO (sniff) — e quem não tem PDF ganha status terminal (drena).
   const candidates = (itens ?? [])
-    .filter((item) => PDF_RE.test(String(item.url_item ?? "")))
+    .sort((a, b) => Number(PDF_RE.test(String(b.url_item ?? ""))) - Number(PDF_RE.test(String(a.url_item ?? ""))))
     .slice(0, limit);
 
   const results: Array<{
@@ -86,62 +95,129 @@ export async function POST(req: NextRequest) {
 
   // Orçamento Hobby (60s SIGKILL): 10 PDFs × 20s de timeout estouraria o limite. Para
   // graciosamente; itens não processados continuam "novo" e entram no próximo clique.
-  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
+  const deadlineAt = Date.now() + budgetFromRequest(req);
   let restantes = 0;
+  let semPdf = 0;
 
   for (const item of candidates) {
-    if (!hasBudget(deadlineAt, 25_000)) {
+    if (!hasBudget(deadlineAt, 22_000)) {
       restantes++;
       continue;
     }
     const url = String(item.url_item);
+    const itemMeta = (item.metadata && typeof item.metadata === "object" ? item.metadata : {}) as Record<string, unknown>;
     try {
-      const buffer = await fetchPdfBuffer(url);
-      const filename = deriveFilename(item.titulo as string, url);
-      const enqueued = await enqueuePdfBuffer({
-        db,
-        filename,
-        buffer,
-        agenciaId: (item.agencia_id as string | null) ?? null,
-        metadata: {
-          uploaded_via: "monitoramento_deliberacoes",
-          monitoramento_item_id: item.id,
-          source_url: url,
-          item_tipo: item.tipo,
-        },
-      });
-
-      if (
-        (enqueued.status === "queued" || enqueued.status === "existing_failed") &&
-        enqueued.job_id
-      ) {
-        jobsToProcess.push({ jobId: enqueued.job_id, agenciaId: (item.agencia_id as string | null) ?? null });
+      const fetched = await fetchUrl(url);
+      // Gate por CONTEÚDO: PDF direto (mesmo sem .pdf na URL — ARTESP/DAM), ou página
+      // HTML de onde extraímos os PDFs de dentro (reunião ANTT, documento Plone ANM).
+      const pdfs: Array<{ url: string; buffer: Buffer }> = [];
+      if (sniffIsPdf(fetched.contentType, fetched.buffer)) {
+        pdfs.push({ url, buffer: fetched.buffer });
+      } else if (sniffIsHtml(fetched.contentType, fetched.buffer)) {
+        const links = resolvePdfLinksFromHtml(fetched.buffer.toString("utf8"), url);
+        const maxFilhos = item.tipo === "reuniao" ? 6 : 1; // página de reunião tem N docs
+        for (const link of links) {
+          if (pdfs.length >= maxFilhos) break;
+          if (!hasBudget(deadlineAt, 22_000)) { restantes++; break; }
+          try {
+            const filho = await fetchUrl(link);
+            if (sniffIsPdf(filho.contentType, filho.buffer)) pdfs.push({ url: link, buffer: filho.buffer });
+          } catch { /* tenta o próximo link da página */ }
+        }
       }
 
-      // Marca o item como importado para não reprocessar (exceto erro real).
-      if (enqueued.status !== "error" && enqueued.status !== "rejected") {
+      if (pdfs.length === 0) {
+        // TERMINAL: nem PDF nem página com PDF de decisão → sai da janela com motivo
+        // (antes ficava 'novo' para sempre bloqueando os itens atrás — head-of-line).
+        await db
+          .from("monitoramento_itens")
+          .update({
+            status: "ignorado",
+            metadata: { ...itemMeta, enqueue_motivo: "sem_pdf" },
+            last_seen_at: new Date().toISOString(),
+          })
+          .eq("id", item.id);
+        semPdf++;
+        results.push({
+          monitoramento_item_id: item.id as string,
+          titulo: String(item.titulo ?? url),
+          url,
+          status: "sem_pdf",
+          job_id: null,
+          message: "Nenhum PDF encontrado na URL/página — item arquivado com motivo.",
+        });
+        continue;
+      }
+
+      let algumOk = false;
+      let algumErro = false;
+      for (const pdf of pdfs) {
+        const filename = deriveFilename(item.titulo as string, pdf.url);
+        const enqueued = await enqueuePdfBuffer({
+          db,
+          filename,
+          buffer: pdf.buffer,
+          agenciaId: (item.agencia_id as string | null) ?? null,
+          metadata: {
+            uploaded_via: "monitoramento_deliberacoes",
+            monitoramento_item_id: item.id,
+            source_url: pdf.url,
+            item_tipo: item.tipo,
+          },
+        });
+
+        if (
+          (enqueued.status === "queued" || enqueued.status === "existing_failed") &&
+          enqueued.job_id
+        ) {
+          jobsToProcess.push({ jobId: enqueued.job_id, agenciaId: (item.agencia_id as string | null) ?? null });
+        }
+        if (enqueued.status === "error" || enqueued.status === "rejected") algumErro = true;
+        else algumOk = true;
+
+        results.push({
+          monitoramento_item_id: item.id as string,
+          titulo: String(item.titulo ?? filename),
+          url: pdf.url,
+          status: enqueued.status,
+          job_id: enqueued.job_id,
+          message: enqueued.message,
+        });
+      }
+
+      // Marca o item como importado para não reprocessar (exceto erro real em tudo).
+      if (algumOk || !algumErro) {
         await db
           .from("monitoramento_itens")
           .update({ status: "importado", last_seen_at: new Date().toISOString() })
           .eq("id", item.id);
       }
-
-      results.push({
-        monitoramento_item_id: item.id as string,
-        titulo: String(item.titulo ?? filename),
-        url,
-        status: enqueued.status,
-        job_id: enqueued.job_id,
-        message: enqueued.message,
-      });
     } catch (err) {
+      // Erro transitório (403/timeout): registra tentativa + motivo (antes sumia — o
+      // item era retentado para sempre sem rastro). Após MAX_TENTATIVAS vira terminal.
+      const tentativas = (Number(itemMeta.tentativas) || 0) + 1;
+      const msg = err instanceof Error ? err.message : "Falha ao baixar PDF";
+      const terminal = tentativas >= MAX_TENTATIVAS;
+      await db
+        .from("monitoramento_itens")
+        .update({
+          ...(terminal ? { status: "ignorado" } : {}),
+          metadata: {
+            ...itemMeta,
+            tentativas,
+            captura_erro: msg.slice(0, 300),
+            ...(terminal ? { enqueue_motivo: "download_falhou" } : {}),
+          },
+          last_seen_at: new Date().toISOString(),
+        })
+        .eq("id", item.id);
       results.push({
         monitoramento_item_id: item.id as string,
         titulo: String(item.titulo ?? url),
         url,
         status: "error",
         job_id: null,
-        message: err instanceof Error ? err.message : "Falha ao baixar PDF",
+        message: `${msg}${terminal ? " (arquivado após 3 tentativas)" : ` (tentativa ${tentativas}/${MAX_TENTATIVAS})`}`,
       });
     }
   }
@@ -163,6 +239,7 @@ export async function POST(req: NextRequest) {
     queued,
     processed,
     enqueued_jobs: jobsToProcess.length,
+    sem_pdf: semPdf,
     parcial: restantes > 0,
     restantes,
     results,
@@ -171,7 +248,7 @@ export async function POST(req: NextRequest) {
   });
 }
 
-async function fetchPdfBuffer(url: string): Promise<Buffer> {
+async function fetchUrl(url: string): Promise<{ buffer: Buffer; contentType: string | null }> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
@@ -180,11 +257,11 @@ async function fetchPdfBuffer(url: string): Promise<Buffer> {
       headers: {
         "User-Agent":
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        Accept: "application/pdf,*/*",
+        Accept: "application/pdf,text/html,*/*",
       },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status} ao baixar PDF`);
-    return Buffer.from(await res.arrayBuffer());
+    return { buffer: Buffer.from(await res.arrayBuffer()), contentType: res.headers.get("content-type") };
   } finally {
     clearTimeout(timer);
   }

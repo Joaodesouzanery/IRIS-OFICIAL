@@ -16,7 +16,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import {
   buildVotoRows,
@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
   const agenciaFiltro = typeof body.agencia_id === "string" && body.agencia_id ? body.agencia_id : null;
   const year = typeof body.year === "string" && YEAR_RE.test(body.year) ? body.year : null;
 
-  const deadlineAt = Date.now() + 50_000;
+  const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 

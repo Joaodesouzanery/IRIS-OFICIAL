@@ -17,7 +17,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget, msLeft, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 import { requeueDocument } from "@/lib/server/upload-queue";
 import { GET as checkGET } from "../../monitoramento/check/route";
 import { POST as enqueuePOST } from "../../deliberacoes/enqueue-pdfs/route";
@@ -51,18 +51,29 @@ async function run(req: NextRequest) {
   const guard = await requireAdminOrCron(req, "pipeline/run");
   if (guard) return guard;
 
-  const deadlineAt = Date.now() + 100_000; // maxDuration 120s; margem p/ responder
+  // QA ago/2026: era 100s, mas no Hobby o SIGKILL vem aos 60s (o maxDuration 120 só vale
+  // no Pro) — a função morria sem responder, o loop do cliente abortava na 1ª rodada e a
+  // extração NUNCA rodava ("208 detectados / 0 processados"). Orçamento honesto: 50s.
+  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
   const auth = req.headers.get("authorization") ?? "";
   const etapas: Record<string, StepResult> = {};
   let restantes = false;
 
   // Handler sintético: chama a rota real com o MESMO Bearer (padrão auto-confirm→confirm).
+  // QA ago/2026: cada sub-rota tinha orçamento PRÓPRIO de 50s — somados, estouravam o
+  // SIGKILL de 60s do Hobby. Agora toda chamada leva `budget_ms` = fatia do saldo REAL
+  // desta função (menos 4s de flush), e as sub-rotas respeitam (budgetFromRequest).
   async function call(
     handler: (r: NextRequest) => Promise<NextResponse | Response>,
     path: string,
     body?: unknown,
+    maxSliceMs?: number,
   ): Promise<any> {
-    const synthetic = new NextRequest(new URL(path, req.url), {
+    const saldo = Math.max(3_000, msLeft(deadlineAt) - 4_000);
+    const slice = Math.round(maxSliceMs !== undefined ? Math.min(saldo, maxSliceMs) : saldo);
+    const url = new URL(path, req.url);
+    url.searchParams.set("budget_ms", String(slice));
+    const synthetic = new NextRequest(url, {
       method: body === undefined ? "GET" : "POST",
       headers: { "content-type": "application/json", authorization: auth },
       ...(body === undefined ? {} : { body: JSON.stringify(body) }),
@@ -74,10 +85,16 @@ async function run(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
+  // Reservas calibradas para o orçamento REAL de 50s (QA ago/2026): coleta ganha uma
+  // fatia CURTA (a descoberta pesada é do "Buscar todas"); a prioridade da rodada é
+  // extração→aprovação. Rodadas se auto-balanceiam: com fila cheia, enqueue/process
+  // consomem o saldo e os passos finais reportam restantes; com fila vazia, os passos
+  // finais ganham o orçamento. O cliente re-chama enquanto restantes=true.
+
   // 1 · Coleta leve (novidades do topo dos sites). Falha não derruba a pipeline.
-  if (hasBudget(deadlineAt, 60_000)) {
+  if (hasBudget(deadlineAt, 42_000)) {
     try {
-      const r = await call(checkGET, "/api/v1/monitoramento/check");
+      const r = await call(checkGET, "/api/v1/monitoramento/check", undefined, 8_000);
       etapas.coleta = { novos_detectados: r?.novos_detectados ?? 0 };
     } catch {
       etapas.coleta = { erro: "coleta falhou nesta rodada" };
@@ -86,7 +103,7 @@ async function run(req: NextRequest) {
 
   // 2 · Requeue dos mal classificados: "Voto DXX NNN-2026" preso como documento_apoio/agência "?"
   // (analisado antes do classificador por filename) → volta à fila e re-analisa com o código novo.
-  if (hasBudget(deadlineAt, 45_000)) {
+  if (hasBudget(deadlineAt, 36_000)) {
     try {
       const { data: presos } = await db
         .from("documentos_regulatorios")
@@ -109,31 +126,41 @@ async function run(req: NextRequest) {
   } else restantes = true;
 
   // 3 · Enfileirar PDFs + processar a fila (loops server-side).
+  // QA ago/2026: o break antigo era `candidates===0`, que também dispara quando os 208
+  // estão FORA da janela ou quando a rota morreu (json→{}). Agora: progresso = queued+
+  // sem_pdf (a janela drena por status terminal); fila remanescente ⇒ restantes=true.
   let enfileirados = 0;
-  for (let i = 0; i < 30 && hasBudget(deadlineAt, 40_000); i++) {
-    const r = await call(enqueuePOST, "/api/v1/deliberacoes/enqueue-pdfs", { limit: 10 });
-    enfileirados += Number(r?.enfileirados ?? r?.queued ?? 0);
-    if (!r || Number(r?.candidates ?? r?.candidatos ?? 0) === 0) break;
+  let itensArquivados = 0;
+  for (let i = 0; i < 10 && hasBudget(deadlineAt, 28_000); i++) {
+    const r = await call(enqueuePOST, "/api/v1/deliberacoes/enqueue-pdfs", { limit: 10 }, 25_000);
+    const q = Number(r?.queued ?? 0);
+    const s = Number(r?.sem_pdf ?? 0);
+    enfileirados += q;
+    itensArquivados += s;
+    if (r?.parcial || Number(r?.restantes ?? 0) > 0) restantes = true;
+    if (!r || Number(r?.candidates ?? 0) === 0) break; // janela vazia de verdade (drena por status)
+    if (q + s === 0) { restantes = true; break; }      // só erros transitórios — próxima rodada
   }
   let processados = 0;
-  for (let i = 0; i < 30 && hasBudget(deadlineAt, 35_000); i++) {
+  for (let i = 0; i < 10 && hasBudget(deadlineAt, 20_000); i++) {
     const r = await call(processPOST, "/api/v1/upload/process?limit=20", {});
     const p = Number(r?.processed ?? 0);
     processados += p;
     if (p === 0) break;
+    if (p >= 20) restantes = true; // lote cheio → provavelmente há mais fila
   }
-  if (!hasBudget(deadlineAt, 35_000)) restantes = true;
-  etapas.extracao = { enfileirados, processados };
+  if (!hasBudget(deadlineAt, 20_000)) restantes = true;
+  etapas.extracao = { enfileirados, processados, itens_sem_pdf_arquivados: itensArquivados };
 
   // 4 · Auto-confirm (gate conservador — o caminho de alta confiança primeiro).
-  if (hasBudget(deadlineAt, 30_000)) {
+  if (hasBudget(deadlineAt, 14_000)) {
     const r = await call(autoConfirmPOST, "/api/v1/upload/auto-confirm", { limit: 50, loop: true });
     etapas.auto_confirm = { confirmados: r?.confirmados_total ?? 0, restantes: r?.restantes ?? false };
     if (r?.restantes) restantes = true;
   } else restantes = true;
 
   // 5 · Confirm-lote zero-toque (camadas + dedup auto-resolvida).
-  if (hasBudget(deadlineAt, 25_000)) {
+  if (hasBudget(deadlineAt, 11_000)) {
     const r = await call(confirmLotePOST, "/api/v1/upload/confirm-lote", { todos: true });
     etapas.aprovacao = {
       materializados: r?.materializados ?? 0,
@@ -148,7 +175,7 @@ async function run(req: NextRequest) {
   } else restantes = true;
 
   // 6 · Candidatos: recompute (auto-aprova ≥0.85 + mescla estritas) e aprovar-lote (0.8 + novos).
-  if (hasBudget(deadlineAt, 18_000)) {
+  if (hasBudget(deadlineAt, 8_000)) {
     try {
       await call(recomputePOST, "/api/v1/admin/diretores/candidatos/recompute?dry_run=0", {});
       const r = await call(aprovarLotePOST, "/api/v1/diretores/candidatos/aprovar-lote", {
@@ -163,7 +190,7 @@ async function run(req: NextRequest) {
 
   // 6b · Backfill de votos (QA ago/2026): deliberações finais já gravadas sem voto ganham
   // os votos que a evidência persistida sustenta (regras novas de inferência). Idempotente.
-  if (hasBudget(deadlineAt, 15_000)) {
+  if (hasBudget(deadlineAt, 6_000)) {
     try {
       const r = await call(materializarPOST, "/api/v1/admin/votos/materializar-faltantes", { dry_run: false });
       etapas.backfill_votos = { deliberacoes: r?.materializaveis ?? 0, votos: r?.votos ?? 0 };
@@ -174,7 +201,7 @@ async function run(req: NextRequest) {
   } else restantes = true;
 
   // 7 · Dedup retroativo de deliberações (rede final; funde qualquer par que escapou).
-  if (hasBudget(deadlineAt, 12_000)) {
+  if (hasBudget(deadlineAt, 5_000)) {
     try {
       const r = await call(dedupPOST, "/api/v1/admin/deliberacoes/dedup?dry_run=0", {});
       etapas.dedup_final = { fundidas: r?.deliberacoes_em_dobro ?? r?.fundidas ?? 0 };

@@ -17,7 +17,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { isHardFailSemSinal } from "@/lib/server/consistency-checks";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Informe 'ids' (até 200) ou 'todos: true'." }, { status: 400 });
   }
 
-  const deadlineAt = Date.now() + 50_000;
+  const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 

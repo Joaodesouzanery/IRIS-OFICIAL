@@ -107,7 +107,13 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   let novosDetectados = 0;
   // Orçamento de tempo: para graciosamente antes do limite Hobby (60s SIGKILL), gravando
   // o progresso — os sites restantes ficam para a próxima rodada (e vão à frente pela ordem).
-  const deadline = Date.now() + HOBBY_BUDGET_MS;
+  // `budget_ms` opcional (capado no Hobby): a pipeline zero-toque passa uma FATIA menor
+  // para a coleta não consumir o orçamento da extração (QA ago/2026).
+  const budgetParam = Number(req.nextUrl.searchParams.get("budget_ms"));
+  const budgetMs = Number.isFinite(budgetParam) && budgetParam > 0
+    ? Math.min(budgetParam, HOBBY_BUDGET_MS)
+    : HOBBY_BUDGET_MS;
+  const deadline = Date.now() + budgetMs;
   let pulados = 0;
 
   for (const site of sites ?? []) {

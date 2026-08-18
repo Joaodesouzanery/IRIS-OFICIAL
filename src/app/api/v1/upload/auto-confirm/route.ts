@@ -14,7 +14,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { canAutoConfirm, buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { findBestMatch } from "@/lib/server/name-matcher";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
@@ -44,7 +44,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
   // num clique, sem depender do cron (que não roda no plano grátis). Orçamento de
   // tempo Hobby-safe (~50s); o cliente re-chama enquanto `restantes` > 0.
   const loop = body.loop === true;
-  const deadlineAt = Date.now() + 50_000;
+  const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();

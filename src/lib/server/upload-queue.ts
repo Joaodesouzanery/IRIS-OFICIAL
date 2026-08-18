@@ -282,7 +282,7 @@ export async function enqueuePdfBuffer(input: {
 export async function requeueDocument(db: any, documentId: string) {
   const { data: doc, error } = await db
     .from("documentos_regulatorios")
-    .select("id, upload_job_id, filename, agencia_id, storage_path")
+    .select("id, upload_job_id, filename, agencia_id, storage_path, error_message")
     .eq("id", documentId)
     .single();
 
@@ -296,7 +296,9 @@ export async function requeueDocument(db: any, documentId: string) {
       error_message: null,
       extraction_confidence: null,
       texto_extraido: null,
-      campos_detectados: {},
+      // Preserva o motivo da falha anterior (QA ago/2026: era apagado sem arquivo —
+      // impossível diagnosticar "falha sempre" vs "nunca tentado").
+      campos_detectados: doc.error_message ? { ultimo_erro: String(doc.error_message).slice(0, 300) } : {},
       ata_items: null,
       warnings: [],
       processed_at: null,
