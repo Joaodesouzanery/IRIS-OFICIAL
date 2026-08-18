@@ -37,8 +37,20 @@ function paragraphXml(text: string, bold: boolean) {
 function htmlToParagraphs(html: string) {
   const withoutNoise = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
-    .replace(/<style[\s\S]*?<\/style>/gi, "");
-  const text = withoutNoise
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
+    // Gráficos SVG não têm representação textual útil no Word — remover inteiros
+    // (antes o conteúdo interno vazava como texto solto).
+    .replace(/<svg[\s\S]*?<\/svg>/gi, "");
+  // Linhas de TABELA viram "célula — célula — célula" (antes cada <td> virava uma linha
+  // solta e a tabela ficava ilegível no Word).
+  const withTables = withoutNoise
+    .replace(/<tr[^>]*>([\s\S]*?)<\/tr>/gi, (_m, row: string) => {
+      const cells = [...row.matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/gi)]
+        .map((c) => c[1].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim())
+        .filter(Boolean);
+      return `${cells.join(" — ")}\n`;
+    });
+  const text = withTables
     .replace(/<\/(h[1-6]|p|div|article|section|header|footer|li|br)>/gi, "\n")
     .replace(/<[^>]+>/g, "")
     .replace(/&nbsp;/g, " ")
@@ -50,7 +62,10 @@ function htmlToParagraphs(html: string) {
     .split("\n")
     .map((line) => line.replace(/\s+/g, " ").trim())
     .filter(Boolean);
-  return [...new Set(text)].slice(0, 180);
+  // QA ago/2026: o dedup por Set comia linhas legítimas repetidas (dois diretores com o
+  // mesmo placar) e o corte em 180 truncava o fim do relatório em silêncio. Cap generoso
+  // só como proteção contra HTML patológico.
+  return text.slice(0, 2000);
 }
 
 function contentTypesXml() {

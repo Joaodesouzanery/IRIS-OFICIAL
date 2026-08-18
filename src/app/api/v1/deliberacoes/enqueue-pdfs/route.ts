@@ -24,7 +24,9 @@ export const dynamic = "force-dynamic";
 const DECISION_TIPOS = ["voto", "ata", "deliberacao", "pauta", "documento", "reuniao"] as const;
 // Heurística de PRIORIZAÇÃO apenas (não é mais gate): URL com cara de PDF vai primeiro.
 const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
-const MAX_PER_RUN = 10;
+// Teto por chamada é a JANELA (60): o freio real é o orçamento (reserva 22s/item).
+// Antes era 10 fixo — com saldo sobrando, a rodada parava cedo à toa (QA ago/2026).
+const MAX_PER_RUN = 60;
 const MAX_TENTATIVAS = 3;
 const FETCH_TIMEOUT_MS = 20_000;
 

@@ -373,6 +373,11 @@ function renderQuality(qualidade: DocumentoAssociadoPreview["qualidade"]) {
   `;
 }
 
+function maisN(total: number, mostrados: number, rotulo: string): string {
+  const resto = total - mostrados;
+  return resto > 0 ? `<p class="muted">…e mais ${resto} ${rotulo} no período (recorte completo no CSV/plataforma).</p>` : "";
+}
+
 function renderMandatos(mandatos: Mandato[], lista: ListaTripliceItem[]) {
   const mandatoRows = mandatos.slice(0, 8).map((m) => `
     <tr><td>${escapeHtml(m.diretor_nome)}</td><td>${escapeHtml(m.cargo ?? "-")}</td><td>${formatDate(m.data_inicio)}</td><td>${m.data_fim ? formatDate(m.data_fim) : "em aberto"}</td><td>${escapeHtml(m.review_status ?? "aprovado")}</td></tr>
@@ -383,8 +388,10 @@ function renderMandatos(mandatos: Mandato[], lista: ListaTripliceItem[]) {
   return `
     <h3>Mandatos</h3>
     <table><thead><tr><th>Diretor</th><th>Cargo</th><th>Início</th><th>Fim</th><th>Status</th></tr></thead><tbody>${mandatoRows || `<tr><td colspan="5" class="muted">Sem mandatos cadastrados para o recorte.</td></tr>`}</tbody></table>
+    ${maisN(mandatos.length, 8, "mandato(s)")}
     <h3>Lista tríplice</h3>
     <table><thead><tr><th>Candidato</th><th>Cargo</th><th>Etapa</th><th>Confiança</th></tr></thead><tbody>${listaRows || `<tr><td colspan="4" class="muted">Sem lista tríplice revisada/cadastrada.</td></tr>`}</tbody></table>
+    ${maisN(lista.length, 8, "candidato(s)")}
   `;
 }
 
@@ -392,7 +399,7 @@ function renderDeliberacoes(delibs: Deliberacao[]) {
   const rows = delibs.slice(0, 10).map((d) => `
     <tr><td>${escapeHtml(d.data_reuniao ? formatDate(d.data_reuniao) : "-")}</td><td>${escapeHtml(d.numero_deliberacao ?? d.item_numero ?? "-")}</td><td>${escapeHtml(d.interessado ?? "-")}</td><td>${escapeHtml(d.assunto ?? d.microtema ?? "-")}</td><td>${escapeHtml(d.resultado ?? "-")}</td></tr>
   `).join("");
-  return `<table><thead><tr><th>Data</th><th>Doc</th><th>Interessado</th><th>Tema</th><th>Resultado</th></tr></thead><tbody>${rows || `<tr><td colspan="5" class="muted">Sem decisões relevantes no período.</td></tr>`}</tbody></table>`;
+  return `<table><thead><tr><th>Data</th><th>Doc</th><th>Interessado</th><th>Tema</th><th>Resultado</th></tr></thead><tbody>${rows || `<tr><td colspan="5" class="muted">Sem decisões relevantes no período.</td></tr>`}</tbody></table>${maisN(delibs.length, 10, "decisão(ões)")}`;
 }
 
 function renderMonthly(delibs: Deliberacao[], items: MonitoramentoItem[]) {
@@ -405,6 +412,7 @@ function renderMonthly(delibs: Deliberacao[], items: MonitoramentoItem[]) {
     ${renderDeliberacoes(delibs)}
     <h3>Atas, pautas e atos monitorados</h3>
     <table><thead><tr><th>Data</th><th>Documento</th><th>Tipo</th></tr></thead><tbody>${ataRows || `<tr><td colspan="3" class="muted">Sem atas ou pautas monitoradas no período.</td></tr>`}</tbody></table>
+    ${maisN(atas.length, 8, "documento(s)")}
   `;
 }
 

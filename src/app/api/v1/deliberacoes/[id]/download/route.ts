@@ -32,11 +32,11 @@ export async function GET(
 
   const { data, error: signedError } = await db.storage
     .from("pdfs")
-    .createSignedUrl(storagePath, 60);
+    .createSignedUrl(storagePath, 600); // 10min — da tempo de LER no iframe (60s expirava no meio)
 
   if (signedError || !data?.signedUrl) {
     return NextResponse.json({ error: "Falha ao gerar URL assinada" }, { status: 500 });
   }
 
-  return NextResponse.json({ url: data.signedUrl, expires_in: 60 });
+  return NextResponse.json({ url: data.signedUrl, expires_in: 600 });
 }

@@ -12,7 +12,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 import { selectAllPaged } from "@/lib/server/select-all-paged";
-import { matchesYear } from "@/lib/server/year-filter";
+import { matchesYear, applyYearFilterSql } from "@/lib/server/year-filter";
 
 
 export async function GET(req: NextRequest) {
@@ -38,7 +38,7 @@ export async function GET(req: NextRequest) {
       .not("microtema", "is", null)
       .order("id", { ascending: true });
     if (agenciaId) query = query.eq("agencia_id", agenciaId);
-    return query;
+    return applyYearFilterSql(query, year); // recorte no SQL (perf) — matchesYear segue como cinto
   }, { label: "dashboard/microtemas" });
 
   if (error) {

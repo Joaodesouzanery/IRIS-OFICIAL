@@ -53,6 +53,18 @@ arquivada com link; semântica fundida idempotente; diretor novo <0.6+nome estri
 | **Regerar Relatórios do Observatório após lote grande** | Após aprovar muitos docs em lote (os relatórios salvos são SNAPSHOTS; janela de ~200 delibs por período) | Documentos de Associados → gerar de novo o relatório do período |
 | **Backfill de `area_regulatoria` histórica** | Uma vez (deliberações confirmadas ANTES de ago/2026 ficaram com a coluna NULL — o confirm só grava daqui em diante) | Adiado: migration de backfill (classificar pelo texto) quando fizer falta nos filtros |
 
+## ⚠️ Migration PENDENTE (ago/2026, otimizações)
+`supabase/migrations/20260818120000_idx_deliberacoes_agencia_data.sql` — índice composto
+`deliberacoes(agencia_id, data_reuniao DESC)` + índice de `documentos_regulatorios(status)`.
+Aplicar no SQL Editor (idempotente; o código funciona sem ela, só fica mais lento).
+
+## Adiados na rodada de otimização (ago/2026)
+- **Iniciais ANTT dinâmicas** — carregar de `diretores.nome_variantes` em vez do hardcode
+  `ANTT_DIRECTOR_INITIALS` (resistência a troca de diretoria sem deploy).
+- **Refactor completude-2026** — votos órfãos por count dedicado (hoje baixa o acervo inteiro).
+- **Unificação de marca newsletter×report** — cores/fontes IRIS duplicadas em
+  `newsletter-document.ts` e `report-theme.ts`; extrair módulo único quando mexer de novo nos dois.
+
 ## Backlog que depende do usuário (auditoria de otimizações, ago/2026)
 O código da esteira está sem TODO/FIXME pendente; estes itens precisam de ação/informação do usuário:
 1. **OCR dos escaneados** — código PRONTO (auto-OCR no reprocesso + botão na tela Upload). Falta criar

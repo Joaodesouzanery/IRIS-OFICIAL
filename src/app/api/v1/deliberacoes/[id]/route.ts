@@ -91,8 +91,21 @@ export async function GET(
     return NextResponse.json({ error: "Deliberação não encontrada" }, { status: 404 });
   }
 
+  // Payload enxuto + inspeção (QA ago/2026): tira o raw_text (até 50k chars que a UI
+  // nunca renderizava) e expõe source_url/warnings/confiança no topo — é o que o card
+  // "Como foi classificado" e o link para a fonte original usam no detalhe.
+  const raw = (data.raw_extraction && typeof data.raw_extraction === "object"
+    ? { ...(data.raw_extraction as Record<string, unknown>) }
+    : null) as Record<string, unknown> | null;
+  const rawText = raw && typeof raw.raw_text === "string" ? (raw.raw_text as string) : null;
+  if (raw) delete raw.raw_text;
+
   const formatted = {
     ...data,
+    raw_extraction: raw,
+    source_url: typeof raw?.source_url === "string" ? raw.source_url : null,
+    extraction_warnings: Array.isArray(raw?.warnings) ? raw!.warnings : [],
+    texto_extraido_trecho: rawText ? rawText.slice(0, 4000) : null,
     agencia: data.agencias ?? null,
     agencias: undefined,
     votos: (data.votos ?? []).map((v: any) => ({

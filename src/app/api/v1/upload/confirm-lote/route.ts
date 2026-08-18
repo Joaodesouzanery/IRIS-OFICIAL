@@ -82,6 +82,27 @@ export async function POST(req: NextRequest) {
   let fundidosSemanticos = 0;
   let arquivadosIlegiveis = 0;
   let arquivadosSemAgencia = 0;
+
+  // Perf (QA ago/2026): a checagem de duplicata exata era 1 maybeSingle POR doc — com
+  // todos:true (até 500) eram centenas de queries seriais antes de qualquer escrita.
+  // Agora 1 query em lote → mapa hash→original.
+  const hashesDuplicados = [...new Set(
+    ((docs ?? []) as any[]).filter((d) => d.is_duplicate && d.file_hash).map((d) => String(d.file_hash)),
+  )];
+  const originaisPorHash = new Map<string, { id: string; deliberacao_id: string | null }>();
+  if (hashesDuplicados.length > 0) {
+    const { data: originais } = await db
+      .from("documentos_regulatorios")
+      .select("id, file_hash, deliberacao_id")
+      .in("file_hash", hashesDuplicados)
+      .eq("status", "confirmed");
+    for (const o of (originais ?? []) as any[]) {
+      if (!originaisPorHash.has(String(o.file_hash))) {
+        originaisPorHash.set(String(o.file_hash), { id: o.id, deliberacao_id: o.deliberacao_id ?? null });
+      }
+    }
+  }
+
   const aprovaveis: any[] = [];
   for (const doc of (docs ?? []) as any[]) {
     const fields = doc?.campos_detectados?.preview?.fields ?? {};
@@ -89,13 +110,8 @@ export async function POST(req: NextRequest) {
 
     if (doc.is_duplicate && doc.file_hash) {
       // Distingue EXATA (hash bate com doc confirmado) de SEMÂNTICA.
-      const { data: original } = await db
-        .from("documentos_regulatorios")
-        .select("id, deliberacao_id")
-        .eq("file_hash", doc.file_hash)
-        .eq("status", "confirmed")
-        .neq("id", doc.id)
-        .maybeSingle();
+      const candidato = originaisPorHash.get(String(doc.file_hash));
+      const original = candidato && candidato.id !== doc.id ? candidato : null;
       if (original) {
         await arquivar(doc, "duplicata_exata", {
           duplicate_documento_id: original.id,
@@ -145,14 +161,19 @@ export async function POST(req: NextRequest) {
       const raw = delib.extraction_raw && typeof delib.extraction_raw === "object" ? (delib.extraction_raw as Record<string, unknown>) : {};
       return { ...delib, extraction_raw: { ...raw, aprovado_em_lote: true, aprovado_em_lote_em: agora } };
     });
-    const syntheticReq = new NextRequest(new URL("/api/v1/upload/confirm", req.url), {
+    // Propaga a fatia de saldo restante ao confirm (budgetFromRequest) — sublote pesado
+    // corta lá dentro em vez de estourar o SIGKILL.
+    const confirmUrl = new URL("/api/v1/upload/confirm", req.url);
+    confirmUrl.searchParams.set("budget_ms", String(Math.max(3_000, deadlineAt - Date.now() - 3_000)));
+    const syntheticReq = new NextRequest(confirmUrl, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: req.headers.get("authorization") ?? "" },
       body: JSON.stringify({ agencia_id: body.agencia_id ?? null, deliberacoes }),
     });
     try {
       const confirmRes = await confirmPOST(syntheticReq);
-      const payload = (await confirmRes.json().catch(() => ({}))) as { results?: Array<{ status?: string }> };
+      const payload = (await confirmRes.json().catch(() => ({}))) as { results?: Array<{ status?: string }>; restantes?: boolean };
+      if (payload.restantes) restantes = true; // confirm cortou por orçamento — re-rodar
       for (const r of payload.results ?? []) {
         if (r.status === "created") materializados++;
         else if (r.status === "error") erros++;

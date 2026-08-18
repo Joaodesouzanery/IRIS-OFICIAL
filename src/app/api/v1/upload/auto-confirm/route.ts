@@ -62,14 +62,10 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     return lista;
   }
 
-  // Paginação por OFFSET com ordenação ESTÁVEL (confiança desc + id asc). Por que não o
-  // `.not(id,in,(...))` acumulado de antes: (a) com 30×50 ids a query string estourava o limite
-  // de URL do PostgREST; (b) pior, a rodada pegava os 50 de MAIOR confiança — justamente os
-  // inelegíveis crônicos (pauta/apoio/duplicata/warning) — e `elegiveis.length===0` dava BREAK
-  // sem nunca alcançar os votos confirmáveis (confiança ~0.70, no fim da fila) → "0 confirmados"
-  // com 100+ elegíveis atrás (bug real de produção, ago/2026). Agora: confirmados SAEM do result
-  // set sozinhos (status muda); inelegíveis FICAM e o offset avança exatamente sobre eles.
-  let offset = 0;
+  // Ordenação ESTÁVEL (confiança desc + id asc), sempre a partir do início: confirmados
+  // saem do result set (status muda) e inelegíveis também (auto_skip persistido) — a
+  // história do bug antigo (offset por inelegíveis, `.not(id,in)` estourando URL) está
+  // no git; o skip persistente tornou tudo isso desnecessário.
   let puladosTotal = 0;
   let analisados = 0;
   let confirmadosTotal = 0;
@@ -86,9 +82,15 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
       .from("documentos_regulatorios")
       .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
       .eq("status", "review_pending")
+      // Perf (QA ago/2026): inelegível crônico ganha campos_detectados.auto_skip na 1ª
+      // avaliação e SAI das rodadas seguintes — antes o mesmo backlog de pauta/apoio era
+      // re-baixado e re-avaliado toda rodada antes de alcançar os confirmáveis. O requeue
+      // limpa campos_detectados → doc re-analisado volta a ser candidato. O confirm-lote
+      // (zero-toque) NÃO filtra auto_skip — nada deixa de ser drenado.
+      .is("campos_detectados->auto_skip", null)
       .order("extraction_confidence", { ascending: false, nullsFirst: false })
       .order("id", { ascending: true })
-      .range(offset, offset + limit - 1);
+      .range(0, limit - 1);
     if (body.agencia_id) query = query.eq("agencia_id", body.agencia_id);
 
     const { data: docs, error } = await query;
@@ -113,12 +115,17 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
       else {
         puladosTotal++;
         if (ultimosPulados.length < 20) ultimosPulados.push({ id: (doc as any).id, reason: verdict.reason });
+        // Marca o motivo — este doc não volta ao auto-confirm (só ao confirm-lote/requeue).
+        await db
+          .from("documentos_regulatorios")
+          .update({ campos_detectados: { ...((doc as any).campos_detectados ?? {}), auto_skip: verdict.reason } })
+          .eq("id", (doc as any).id);
       }
     }
 
-    // Inelegíveis permanecem em review_pending → o offset avança SÓ sobre eles; os elegíveis
-    // confirmados saem do result set (status muda) e não deslocam a próxima página.
-    offset += docs.length - elegiveis.length;
+    // Com o auto_skip persistido, TANTO confirmados (status muda) QUANTO inelegíveis
+    // (auto_skip marcado) saem do result set — a próxima página é sempre range(0, limit).
+    // (O offset por inelegíveis do fix de ago/2026 ficou obsoleto com o skip persistente.)
     const paginaCheia = docs.length === limit;
 
     if (elegiveis.length === 0) {

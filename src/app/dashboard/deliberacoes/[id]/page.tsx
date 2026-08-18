@@ -82,6 +82,7 @@ export default function DeliberacaoDetailPage() {
   const [saving, setSaving]           = useState(false);
   const [saveError, setSaveError]     = useState<string | null>(null);
   const [showRaw, setShowRaw]         = useState(false);
+  const [pdfPreviewUrl, setPdfPreviewUrl] = useState<string | null>(null);
 
   const isLocal = params.id.startsWith("local-");
 
@@ -552,6 +553,91 @@ export default function DeliberacaoDetailPage() {
           <p className="text-sm text-text-muted italic">Não informado.</p>
         )}
       </div>
+
+      {/* ── Documento e classificação (QA ago/2026: inspeção real, não só download) ── */}
+      {(() => {
+        const extra = deliberacao as unknown as {
+          source_url?: string | null;
+          extraction_warnings?: string[];
+          texto_extraido_trecho?: string | null;
+          tipo_documento?: string | null;
+        };
+        const warnings = extra.extraction_warnings ?? [];
+        const temAnexo = Boolean(deliberacao.upload_job_id) && !demoEnabled && !isLocal;
+        if (!temAnexo && !extra.source_url && warnings.length === 0 && !extra.texto_extraido_trecho) return null;
+        return (
+          <div className="card space-y-3">
+            <div className="flex items-center justify-between gap-3 flex-wrap">
+              <div className="flex items-center gap-2">
+                <FileText className="w-4 h-4 text-brand" />
+                <p className="section-label">Documento e classificação</p>
+              </div>
+              <div className="flex items-center gap-2 flex-wrap">
+                {temAnexo && (
+                  <button
+                    type="button"
+                    className="btn-secondary text-xs"
+                    onClick={async () => {
+                      if (pdfPreviewUrl) { setPdfPreviewUrl(null); return; }
+                      const signed = await api.get<{ url: string }>(`/deliberacoes/${params.id}/download`);
+                      setPdfPreviewUrl(signed.url);
+                    }}
+                  >
+                    {pdfPreviewUrl ? "Fechar PDF" : "Ver PDF aqui"}
+                  </button>
+                )}
+                {temAnexo && (
+                  <button type="button" className="btn-secondary text-xs" onClick={downloadAttachment}>Baixar PDF</button>
+                )}
+                {extra.source_url && (
+                  <a
+                    href={extra.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary text-xs"
+                    title="Página oficial de onde o documento foi coletado"
+                  >
+                    Fonte original ↗
+                  </a>
+                )}
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-1.5 text-[11px]">
+              <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-secondary">
+                Confiança da extração: <span className="font-medium text-text-primary">{Math.round(confidence * 100)}%</span>
+              </span>
+              {extra.tipo_documento && (
+                <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-secondary">
+                  Tipo: <span className="font-medium text-text-primary">{extra.tipo_documento}</span>
+                </span>
+              )}
+              {deliberacao.auto_classified && (
+                <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-secondary">Classificada por IA</span>
+              )}
+            </div>
+            {warnings.length > 0 && (
+              <ul className="text-[11px] text-warning space-y-0.5">
+                {warnings.slice(0, 6).map((w, i) => <li key={i}>⚠ {w}</li>)}
+              </ul>
+            )}
+            {pdfPreviewUrl && (
+              <iframe
+                src={pdfPreviewUrl}
+                title="Documento PDF"
+                className="w-full h-[560px] rounded-card border border-border bg-white"
+              />
+            )}
+            {extra.texto_extraido_trecho && (
+              <details className="text-xs">
+                <summary className="cursor-pointer text-text-muted hover:text-text-primary">Texto extraído (trecho)</summary>
+                <pre className="mt-2 p-3 rounded-lg bg-bg-base border border-border text-[11px] font-mono text-text-muted overflow-x-auto whitespace-pre-wrap leading-relaxed max-h-72 overflow-y-auto">
+                  {extra.texto_extraido_trecho}
+                </pre>
+              </details>
+            )}
+          </div>
+        );
+      })()}
 
       {/* ── Dados Brutos de Extração (IA) ─────────────────────────────────── */}
       {deliberacao.raw_extraction && (

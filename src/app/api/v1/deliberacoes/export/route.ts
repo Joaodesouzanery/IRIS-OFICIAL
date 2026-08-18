@@ -11,13 +11,36 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 
 
+// CSV padronizado (QA ago/2026): `;` + BOM + \r\n em TODOS os exports do IRIS —
+// o Excel pt-BR abre direto (o formato antigo com `,` sem BOM quebrava acentos).
 const escape = (v: unknown) => {
   if (v === null || v === undefined) return "";
   const s = String(v);
-  return s.includes(",") || s.includes('"') || s.includes("\n")
-    ? `"${s.replace(/"/g, '""')}"`
-    : s;
+  return /[";,\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
+
+// UMA função de linha para os 3 ramos (demo/local/real) — o ramo demo emitia 12 valores
+// para 16 headers (colunas desalinhadas no Excel).
+const toRow = (r: any) => [
+  escape(r.numero_deliberacao),
+  escape(r.reuniao_ordinaria),
+  escape(r.data_reuniao),
+  escape(r.data_publicacao),
+  escape(r.interessado),
+  escape(r.processo),
+  escape(r.microtema),
+  escape(r.area_regulatoria),
+  escape(r.resultado),
+  escape(r.pauta_interna ? "Sim" : "Não"),
+  escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),
+  escape(r.created_at),
+  escape(r.tipo_documento),
+  escape(r.relator),
+  escape(r.item_numero),
+  escape(r.assunto),
+].join(";");
+
+const toCsv = (rows: string[]) => `\ufeff${[HEADERS.join(";"), ...rows].join("\r\n")}`;
 
 const HEADERS = [
   "Numero", "Reuniao", "Data", "Publicacao", "Interessado", "Processo",
@@ -31,23 +54,7 @@ export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
     if (isLocalMode()) {
       const all = computeDelibList(getSyncedDelibs(), { limit: 5000 }).data;
-      const rows = all.map((r: any) =>
-        [
-          escape(r.numero_deliberacao),
-          escape(r.reuniao_ordinaria),
-          escape(r.data_reuniao),
-          escape(r.data_publicacao),
-          escape(r.interessado),
-          escape(r.processo),
-          escape(r.microtema),
-          escape(r.area_regulatoria),
-          escape(r.resultado),
-          escape(r.pauta_interna ? "Sim" : "Não"),
-          escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),
-          escape(r.created_at),
-        ].join(",")
-      );
-      const csv = [HEADERS.join(","), ...rows].join("\n");
+      const csv = toCsv(all.map(toRow));
       return new Response(csv, {
         headers: {
           "Content-Type": "text/csv; charset=utf-8",
@@ -57,23 +64,7 @@ export async function GET(req: NextRequest) {
     }
 
     const all = demoData.deliberacoes({ limit: 5000 }).data;
-    const rows = all.map((r: any) =>
-      [
-        escape(r.numero_deliberacao),
-        escape(r.reuniao_ordinaria),
-        escape(r.data_reuniao),
-        escape(r.data_publicacao),
-        escape(r.interessado),
-        escape(r.processo),
-        escape(r.microtema),
-        escape(r.area_regulatoria),
-        escape(r.resultado),
-        escape(r.pauta_interna ? "Sim" : "Não"),
-        escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),
-        escape(r.created_at),
-      ].join(",")
-    );
-    const csv = [HEADERS.join(","), ...rows].join("\n");
+    const csv = toCsv(all.map(toRow));
     return new Response(csv, {
       headers: {
         "Content-Type": "text/csv; charset=utf-8",
@@ -118,28 +109,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao exportar" }, { status: 500 });
   }
 
-  const csvRows = (data ?? []).map((r: any) =>
-    [
-      escape(r.numero_deliberacao),
-      escape(r.reuniao_ordinaria),
-      escape(r.data_reuniao),
-      escape(r.data_publicacao),
-      escape(r.interessado),
-      escape(r.processo),
-      escape(r.microtema),
-      escape(r.area_regulatoria),
-      escape(r.resultado),
-      escape(r.pauta_interna ? "Sim" : "Não"),
-      escape(r.extraction_confidence != null ? `${(r.extraction_confidence * 100).toFixed(0)}%` : ""),
-      escape(r.created_at),
-      escape(r.tipo_documento),
-      escape(r.relator),
-      escape(r.item_numero),
-      escape(r.assunto),
-    ].join(",")
-  );
-
-  const csv = [HEADERS.join(","), ...csvRows].join("\n");
+  const csv = toCsv((data ?? []).map(toRow));
 
   return new Response(csv, {
     headers: {

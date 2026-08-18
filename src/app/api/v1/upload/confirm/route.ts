@@ -14,6 +14,7 @@ import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolv
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { ensureReuniao } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
+import { hasBudget } from "@/lib/server/time-budget";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -384,23 +385,34 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
   try {
     const { createSupabaseServerClient } = await import("@/lib/supabase/server");
+    const { budgetFromRequest } = await import("@/lib/server/time-budget");
     const db = createSupabaseServerClient();
     const results: ConfirmResult[] = [];
     const empresaCache: EmpresaCache = new Map();
+
+    // Perf (QA ago/2026): eram 2 queries POR deliberação para dados imutáveis no lote —
+    // existência da agência e o cadastro de diretores. Com sublotes de 100, ~200 idas ao
+    // banco viravam metade do tempo da rodada. Agora: Set de agências 1× + cache por agência.
+    const { data: agenciasRows } = await db.from("agencias").select("id");
+    const agenciasSet = new Set(((agenciasRows ?? []) as Array<{ id: string }>).map((a) => a.id));
+    const diretoresPorAgencia = new Map<string, DiretorVoteRecord[]>();
+    // Orçamento: o confirm-lote fatia em 100, mas um sublote pesado (atas com muitos itens)
+    // podia estourar o SIGKILL AQUI dentro. Corta entre deliberações e devolve o feito.
+    const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
+    let cortadasPorOrcamento = 0;
 
     for (const raw of deliberacoes) {
       const d = sanitizeDelib(raw as ConfirmDelib);
       const rawConfirm = raw as ConfirmDelib;
       const effectiveAgenciaId = d.agencia_id || globalAgenciaId!;
 
-      try {
-        const { data: agencia } = await db
-          .from("agencias")
-          .select("id")
-          .eq("id", effectiveAgenciaId)
-          .single();
+      if (!hasBudget(deadlineAt, 6_000)) {
+        cortadasPorOrcamento++;
+        continue; // fica review_pending; a próxima rodada confirma
+      }
 
-        if (!agencia) {
+      try {
+        if (!agenciasSet.has(effectiveAgenciaId)) {
           results.push({ filename: d.filename, status: "error", error: "Agência não encontrada" });
           continue;
         }
@@ -451,23 +463,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           continue;
         }
 
-        const { data: diretores } = await db
-          .from("diretores")
-          .select("id, nome, nome_variantes")
-          .eq("agencia_id", effectiveAgenciaId);
+        let diretoresList = diretoresPorAgencia.get(effectiveAgenciaId);
+        if (!diretoresList) {
+          const { data: diretores } = await db
+            .from("diretores")
+            .select("id, nome, nome_variantes")
+            .eq("agencia_id", effectiveAgenciaId);
 
-        const diretoresList = (diretores ?? []).map((dir) => ({
-          id: dir.id,
-          nome: dir.nome,
-          nome_variantes: Array.isArray((dir as { nome_variantes?: unknown }).nome_variantes)
-            ? (dir as { nome_variantes: string[] }).nome_variantes
-            : [],
-        }))
-          // DETERMINISMO: nome mais LONGO primeiro. findBestMatch usa `>` estrito, então
-          // em empate (relator "Felipe Queiroz" casa 1.0 tanto o duplicado curto quanto o
-          // seed "Felipe Fernandes Queiroz") vence o iterado primeiro → sempre o oficial
-          // completo. Sem isto o voto caía num cadastro arbitrário (ordem do Postgres).
-          .sort((x, y) => y.nome.length - x.nome.length);
+          diretoresList = (diretores ?? []).map((dir) => ({
+            id: dir.id,
+            nome: dir.nome,
+            nome_variantes: Array.isArray((dir as { nome_variantes?: unknown }).nome_variantes)
+              ? (dir as { nome_variantes: string[] }).nome_variantes
+              : [],
+          }))
+            // DETERMINISMO: nome mais LONGO primeiro. findBestMatch usa `>` estrito, então
+            // em empate (relator "Felipe Queiroz" casa 1.0 tanto o duplicado curto quanto o
+            // seed "Felipe Fernandes Queiroz") vence o iterado primeiro → sempre o oficial
+            // completo. Sem isto o voto caía num cadastro arbitrário (ordem do Postgres).
+            .sort((x, y) => y.nome.length - x.nome.length);
+          diretoresPorAgencia.set(effectiveAgenciaId, diretoresList);
+        }
         // Roster de inferência: PREFERE os presentes declarados no próprio documento
         // ("Constituição:"/"Presentes:" — quem de fato estava na reunião), casados com
         // match ≥0.85 a diretores cadastrados; mandatos são o fallback. Presente sem
@@ -938,7 +954,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const errors = results.filter((r) => r.status === "error").length;
 
     const response: BatchConfirmResponse = { created, errors, results };
-    return NextResponse.json(response, { status: 201 });
+    return NextResponse.json(
+      { ...response, ...(cortadasPorOrcamento > 0 ? { restantes: true, cortadas_por_orcamento: cortadasPorOrcamento } : {}) },
+      { status: 201 },
+    );
   } catch (error) {
     console.error("[upload/confirm] Erro inesperado:", error);
     return NextResponse.json({ error: "Erro interno do servidor" }, { status: 500 });

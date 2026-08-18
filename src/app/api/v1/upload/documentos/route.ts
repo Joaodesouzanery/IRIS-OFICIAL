@@ -26,17 +26,21 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  let query = db
-    .from("documentos_regulatorios")
-    .select(`
+  // Perf (QA ago/2026): `texto_extraido` (até 50k chars/doc) só sai quando a chamada é
+  // pontual por `ids` (painel expandido) — na LISTA de 500 ele inflava o payload em MB.
+  const incluirTexto = Boolean(ids && ids.length > 0);
+  const selectCols: string = `
       id, upload_job_id, agencia_id, agencia_sigla_detected, filename, source_archive,
       storage_bucket, storage_path, file_hash, size_bytes, status, tipo_documento,
       documento_subtipo, semantic_duplicate_key, is_duplicate, duplicate_documento_id,
       duplicate_deliberacao_id, extraction_confidence, page_count, chars_per_page,
-      texto_extraido, campos_detectados, ata_items, warnings, error_message, metadata,
+      ${incluirTexto ? "texto_extraido," : ""} campos_detectados, ata_items, warnings, error_message, metadata,
       processed_at, reviewed_at, created_at, updated_at,
       agencias (sigla, nome)
-    `, { count: "exact" })
+    `;
+  let query = db
+    .from("documentos_regulatorios")
+    .select(selectCols, { count: "exact" })
     .order("created_at", { ascending: false })
     .limit(limit);
 
@@ -49,21 +53,35 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar documentos" }, { status: 500 });
   }
 
-  const formatted = await Promise.all((data ?? []).map(async (doc: any) => {
-    const { data: signed } = await db.storage
-      .from(doc.storage_bucket ?? "pdfs")
-      .createSignedUrl(doc.storage_path, 60 * 60);
-    const duplicateConfirmed = doc.status === "confirmed" && Boolean(doc.is_duplicate || doc.duplicate_documento_id || doc.duplicate_deliberacao_id);
+  // Perf (QA ago/2026): eram até 500 chamadas de Storage (1 createSignedUrl por doc) por
+  // carregamento da tela — a maior latência percebida da revisão. Agora 1 chamada em lote
+  // por bucket (createSignedUrls preserva a ordem dos paths).
+  const docsList = (data ?? []) as any[];
+  const signedByPath = new Map<string, string>();
+  const porBucket = new Map<string, string[]>();
+  for (const doc of docsList) {
+    if (!doc.storage_path) continue;
+    const bucket = doc.storage_bucket ?? "pdfs";
+    porBucket.set(bucket, [...(porBucket.get(bucket) ?? []), doc.storage_path]);
+  }
+  for (const [bucket, paths] of porBucket) {
+    const { data: signedList } = await db.storage.from(bucket).createSignedUrls(paths, 60 * 60);
+    for (const s of signedList ?? []) {
+      if (s?.path && s.signedUrl) signedByPath.set(`${bucket}|${s.path}`, s.signedUrl);
+    }
+  }
 
+  const formatted = docsList.map((doc: any) => {
+    const duplicateConfirmed = doc.status === "confirmed" && Boolean(doc.is_duplicate || doc.duplicate_documento_id || doc.duplicate_deliberacao_id);
     return {
       ...doc,
       is_duplicate: duplicateConfirmed,
       agencia: doc.agencias ?? null,
       agencias: undefined,
-      signed_url: signed?.signedUrl ?? null,
+      signed_url: signedByPath.get(`${doc.storage_bucket ?? "pdfs"}|${doc.storage_path}`) ?? null,
       preview: toPreview({ ...doc, is_duplicate: duplicateConfirmed }),
     };
-  }));
+  });
 
   return NextResponse.json({ data: formatted, total: count ?? formatted.length });
 }
