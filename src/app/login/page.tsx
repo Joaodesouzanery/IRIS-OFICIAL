@@ -3,7 +3,7 @@
 import { Suspense, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowRight, Database, Loader2, LockKeyhole, Mail } from "lucide-react";
+import { ArrowRight, Database, Loader2, Mail } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 const HAS_SUPABASE = Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
@@ -19,7 +19,7 @@ export default function LoginPage() {
 function LoginContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const next = searchParams.get("next") ?? "/dashboard";
+  const next = searchParams.get("next") ?? "/dashboard/painel-regulatorio";
   const reason = searchParams.get("reason");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -105,10 +105,10 @@ function LoginContent() {
     <main className="flex min-h-screen items-center justify-center bg-[#0f1117] p-6 text-white">
       <div className="w-full max-w-md space-y-6 rounded-lg border border-white/10 bg-[#191b22] p-8 shadow-2xl shadow-black/30">
         <div className="space-y-2">
-          <div className="flex h-11 w-11 items-center justify-center rounded-md bg-brand/15 text-brand">
-            <LockKeyhole className="h-6 w-6" />
+          <div className="rounded-md bg-[#0a0e2a] border border-[#c2a24a]/40 px-4 py-3 flex items-center justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/newsletter-logo-wide.png" alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade" className="h-10 w-auto" />
           </div>
-          <p className="text-xs font-semibold uppercase tracking-[0.26em] text-white/48">IRIS Regulação</p>
           <h1 className="text-2xl font-semibold">Entrar no sistema</h1>
           <p className="text-sm leading-6 text-white/58">
             Acesso restrito ao administrador global. Informe o e-mail e a senha cadastrados.

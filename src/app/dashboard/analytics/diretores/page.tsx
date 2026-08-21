@@ -9,7 +9,7 @@ import { IrisBarChart } from "@/components/charts/IrisBarChart";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
 import { IrisHeatmap } from "@/components/charts/IrisHeatmap";
 import { ChartWrapper } from "@/components/charts/ChartWrapper";
-import { getMicrotemaLabel, formatNumber, cn } from "@/lib/utils";
+import { getMicrotemaLabel, formatNumber, formatDate, cn } from "@/lib/utils";
 import { RadarChart, Radar, PolarGrid, PolarAngleAxis, ResponsiveContainer, Tooltip, Legend } from "recharts";
 import { Users, Grid3x3, Handshake, BarChart3 } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
@@ -367,6 +367,7 @@ export default function AnalyticsDiretoresPage() {
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left text-xs text-text-muted font-mono uppercase tracking-wider py-2 pr-4">Diretor</th>
+                  <th className="text-left text-xs text-text-muted font-mono uppercase tracking-wider py-2 px-3">Mandato</th>
                   <th className="text-right text-xs text-text-muted font-mono uppercase tracking-wider py-2 px-3">Votos</th>
                   <th className="text-right text-xs text-text-muted font-mono uppercase tracking-wider py-2 px-3">Favoráveis</th>
                   <th className="text-right text-xs text-text-muted font-mono uppercase tracking-wider py-2 px-3">Divergentes</th>
@@ -380,6 +381,20 @@ export default function AnalyticsDiretoresPage() {
                       <Link href={`/dashboard/diretores/${d.diretor_id}`} className="hover:text-brand transition-colors">
                         {d.diretor_nome}
                       </Link>
+                      {d.agencia_sigla ? <span className="text-text-muted font-normal text-xs"> · {d.agencia_sigla}</span> : null}
+                    </td>
+                    <td className="py-2.5 px-3 text-xs text-text-secondary whitespace-nowrap">
+                      {d.mandato_inicio ? (
+                        <>
+                          {d.cargo ? <span className="text-text-muted">{d.cargo} · </span> : null}
+                          {formatDate(d.mandato_inicio)} – {d.mandato_fim ? formatDate(d.mandato_fim) : "atual"}
+                          {d.mandato_fonte === "estimado" ? (
+                            <span className="text-warning" title="Início estimado pela 1ª deliberação em que o nome aparece — confirme a data de posse em Configurações → Agência."> (estimado)</span>
+                          ) : null}
+                        </>
+                      ) : (
+                        <span className="text-text-muted italic" title="Sem mandato cadastrado — inferência de voto desligada para este diretor.">sem mandato</span>
+                      )}
                     </td>
                     <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{formatNumber(d.total)}</td>
                     <td className="py-2.5 px-3 text-right font-mono text-success">{formatNumber(d.favoravel)}</td>

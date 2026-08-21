@@ -10,14 +10,14 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { requireAdmin } from "@/lib/server/request-guards";
+import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { isDivergentVote, type TipoVoto } from "@/lib/server/vote-inference";
 import { parseIntParam } from "@/lib/server/http-params";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
-  const guard = await requireAdmin(req);
+  const guard = await requireAdminOrCron(req, "votos/recalcular-divergencia"); // pipeline (passo 11) roda como cron
   if (guard) return guard;
   if (isDemo()) return NextResponse.json({ demo: true });
 

@@ -18,6 +18,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/dashboard/votacao": "Votação",
   "/dashboard/insights": "Insights",
   "/dashboard/agencias": "Agências",
+  "/dashboard/painel-regulatorio": "Observatório da Regulação",
 };
 
 export function Topbar() {

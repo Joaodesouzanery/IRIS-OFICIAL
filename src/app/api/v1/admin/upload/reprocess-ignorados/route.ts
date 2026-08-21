@@ -12,14 +12,14 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { requireAdmin } from "@/lib/server/request-guards";
+import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { requeueDocument } from "@/lib/server/upload-queue";
 import { hasBudget } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
-  const guard = await requireAdmin(req);
+  const guard = await requireAdminOrCron(req, "reprocess-ignorados"); // pipeline (passo 2b) roda como cron
   if (guard) return guard;
   if (isDemo()) {
     return NextResponse.json({ error: "Indisponível em modo DEMO." }, { status: 403 });

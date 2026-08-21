@@ -182,13 +182,6 @@ export default function VotosDiretoresPage() {
     enabled: !!selectedDirector,
   });
 
-  const checkMutation = useMutation({
-    mutationFn: () => api.get<MonitoramentoCheckResponse>("/monitoramento/check"),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
-    },
-  });
-
   const [backfillProgress, setBackfillProgress] = useState<BackfillAggregate | null>(null);
 
   const backfillMutation = useMutation({
@@ -239,13 +232,6 @@ export default function VotosDiretoresPage() {
     },
   });
 
-  const enqueueMutation = useMutation({
-    mutationFn: () => api.post<EnqueueResponse>("/deliberacoes/enqueue-pdfs", {}),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
-    },
-  });
-
   const { data: candidatos } = useQuery({
     queryKey: ["diretores-candidatos", "pendentes", agenciaId],
     queryFn: () => api.get<DiretorCandidato[]>(`/diretores/candidatos?status=pendente${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
@@ -281,47 +267,6 @@ export default function VotosDiretoresPage() {
   // Cobertura AO VIVO: conferência CONTRA o site (sob demanda — busca 3 sites, é pesado).
   const coberturaMutation = useMutation({
     mutationFn: () => api.get<CoberturaAoVivoResponse>("/admin/cobertura-ao-vivo?year=2026"),
-  });
-
-  // Limpeza retroativa: recalcula a confiança dos candidatos legados com o matcher
-  // atual, colapsa cartões duplicados e AUTO-APROVA os que agora casam ≥0,85 →
-  // um clique resolve os cartões antigos presos a 60% e destrava os votos.
-  const recomputeMutation = useMutation({
-    mutationFn: () =>
-      api.post<{ grupos_auto_aprovados: number; cartoes_colapsados: number; votos_retroativos_criados: number }>(
-        "/admin/diretores/candidatos/recompute?dry_run=0", {},
-      ),
-    onSuccess: (res) => {
-      setMatchError(null);
-      setMatchFeedback(
-        `Recalculado: ${res.grupos_auto_aprovados} nome(s) auto-aprovado(s), ${res.cartoes_colapsados} cartão(ões) duplicado(s) removido(s), ${res.votos_retroativos_criados} voto(s) retroativo(s) criado(s).`,
-      );
-      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
-      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
-      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
-    },
-    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro ao recalcular candidatos"),
-  });
-
-  // Reprocesso em lote dos "Voto DXX" ANTT ignorados pelo confirm antigo: dry-run
-  // conta; 2º clique re-enfileira (o cron processa e o auto-confirm materializa).
-  const [reprocessPreview, setReprocessPreview] = useState<{ encontrados: number } | null>(null);
-  const reprocessMutation = useMutation({
-    mutationFn: (dryRun: boolean) =>
-      api.post<{ dry_run: boolean; encontrados: number; reenfileirados: number; falhas: number }>(
-        `/admin/upload/reprocess-ignorados?dry_run=${dryRun ? "1" : "0"}`, {},
-      ),
-    onSuccess: (res) => {
-      setMatchError(null);
-      if (res.dry_run) {
-        setReprocessPreview({ encontrados: res.encontrados });
-      } else {
-        setReprocessPreview(null);
-        setMatchFeedback(`${res.reenfileirados} documento(s) re-enfileirado(s) para reprocessamento${res.falhas ? ` (${res.falhas} falha(s))` : ""}. Rode "Processar atas/votos" e depois "Auto-confirmar".`);
-        queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
-      }
-    },
-    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro no reprocessamento"),
   });
 
   // Fila de revisão — o fluxo é zero-toque; isto lista só o que genuinamente
@@ -368,26 +313,6 @@ export default function VotosDiretoresPage() {
       })),
   });
 
-  // Limpeza de deliberações duplicadas (legado, antes do dedup estrutural). Dois
-  // passos: primeiro verifica (dry-run) e mostra a contagem; só o 2º clique funde.
-  const [dedupPreview, setDedupPreview] = useState<DedupResult | null>(null);
-  const dedupMutation = useMutation({
-    mutationFn: (dryRun: boolean) =>
-      api.post<DedupResult>(`/admin/deliberacoes/dedup?dry_run=${dryRun ? "1" : "0"}`, {}),
-    onSuccess: (res) => {
-      setMatchError(null);
-      if (res.dry_run) {
-        setDedupPreview(res);
-      } else {
-        setDedupPreview(null);
-        setMatchFeedback(`Limpeza concluída: ${res.removidas} deliberação(ões) duplicada(s) removida(s), votos migrados.`);
-        queryClient.invalidateQueries({ queryKey: ["completude-2026"] });
-        queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
-      }
-    },
-    onError: (err) => setMatchError(err instanceof Error ? err.message : "Erro na limpeza de duplicatas"),
-  });
-
   const aprovarMutation = useMutation({
     mutationFn: (id: string) =>
       api.post<{ votos_retroativos?: { criados: number; deliberacoes: number } | null }>(
@@ -419,54 +344,6 @@ export default function VotosDiretoresPage() {
     onError: (err) => {
       setMatchFeedback(null);
       setMatchError(err instanceof Error ? err.message : "Erro ao rejeitar candidato.");
-    },
-  });
-
-  // Aprova EM LOTE os matches de alta confiança (≥0.8 a diretor já cadastrado);
-  // novos nomes continuam 1-a-1. Destrava os votos retroativos de uma vez.
-  const aprovarLoteMutation = useMutation({
-    mutationFn: () =>
-      api.post<{ aprovados: number; pulados: number }>("/diretores/candidatos/aprovar-lote", {
-        min_confidence: 0.8,
-        ...(agenciaId ? { agencia_id: agenciaId } : {}),
-      }),
-    onSuccess: (res) => {
-      setMatchError(null);
-      setMatchFeedback(`Lote: ${res.aprovados} candidato(s) aprovado(s), ${res.pulados} deixado(s) para revisão 1-a-1.`);
-      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
-      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
-      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
-    },
-    onError: (err) => {
-      setMatchFeedback(null);
-      setMatchError(err instanceof Error ? err.message : "Erro na aprovação em lote.");
-    },
-  });
-
-  // Auto-confirma documentos de ALTA confiança pendentes de revisão (gate conservador
-  // no servidor; ambíguos permanecem na fila manual).
-  const autoConfirmMutation = useMutation({
-    // loop=true: materializa TUDO que passa no gate numa chamada (o cron não roda no
-    // plano grátis); re-chama enquanto `restantes` (orçamento de tempo) for true.
-    mutationFn: async () => {
-      let confirmados = 0;
-      for (let i = 0; i < 10; i++) {
-        const res = await api.post<{ confirmados_total: number; restantes: boolean }>("/upload/auto-confirm", { limit: 50, loop: true });
-        confirmados += res.confirmados_total ?? 0;
-        if (!res.restantes) break;
-      }
-      return { confirmados };
-    },
-    onSuccess: (res) => {
-      setMatchError(null);
-      setMatchFeedback(`Auto-confirmação: ${res.confirmados} documento(s) materializados.`);
-      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
-      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
-      queryClient.invalidateQueries({ queryKey: ["votos-diretores"] });
-    },
-    onError: (err) => {
-      setMatchFeedback(null);
-      setMatchError(err instanceof Error ? err.message : "Erro na auto-confirmação.");
     },
   });
 
@@ -625,39 +502,6 @@ export default function VotosDiretoresPage() {
         </div>
       ) : null}
 
-      {/* Passos individuais da esteira — só para depuração; o "Rodar tudo" faz tudo isso sozinho. */}
-      <details className="card">
-        <summary className="cursor-pointer text-xs text-text-muted select-none">Avançado — passos individuais da esteira (depuração)</summary>
-        <div className="flex flex-wrap gap-2 pt-3">
-          <button
-            onClick={() => checkMutation.mutate()}
-            disabled={checkMutation.isPending || backfillMutation.isPending || demoEnabled}
-            className="btn-secondary text-xs"
-          >
-            {checkMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <RefreshCw className="w-3.5 h-3.5" />}
-            Verificar novos
-          </button>
-          <button
-            onClick={() => enqueueMutation.mutate()}
-            disabled={enqueueMutation.isPending || demoEnabled}
-            className="btn-secondary text-xs"
-            title="Baixa e enfileira os PDFs de atas/votos detectados"
-          >
-            {enqueueMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Upload className="w-3.5 h-3.5" />}
-            Processar atas/votos
-          </button>
-          <button
-            onClick={() => autoConfirmMutation.mutate()}
-            disabled={autoConfirmMutation.isPending || demoEnabled}
-            className="btn-secondary text-xs"
-            title="Só o passo de auto-confirmação de alta confiança (gate conservador)"
-          >
-            {autoConfirmMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
-            Auto-confirmar alta confiança
-          </button>
-        </div>
-      </details>
-
       {backfillMutation.isPending && backfillProgress ? (
         <div className="border border-brand/30 bg-brand/10 rounded-card p-3 text-sm text-text-primary">
           Rodada {backfillProgress.rodadas} de até {BACKFILL_MAX_ROUNDS} — {backfillProgress.novos_itens} item(ns) novo(s) ·{" "}
@@ -687,31 +531,8 @@ export default function VotosDiretoresPage() {
           {backfillMutation.error instanceof Error ? backfillMutation.error.message : "Erro no backfill de 2026"}
         </div>
       ) : null}
-      {checkMutation.data ? (
-        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
-          {checkMutation.data.checked} fonte(s) verificada(s) · {checkMutation.data.novos_detectados} novo(s) documento(s) detectado(s) e enfileirado(s) para extração.
-        </div>
-      ) : null}
-      {checkMutation.error ? (
-        <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">
-          {checkMutation.error instanceof Error ? checkMutation.error.message : "Erro ao verificar documentos"}
-        </div>
-      ) : null}
-      {enqueueMutation.data ? (
-        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
-          {enqueueMutation.data.candidates} PDF(s) de decisão encontrado(s) · {enqueueMutation.data.queued} enfileirado(s) para
-          extração. Revise e confirme os votos individuais em{" "}
-          <a href="/dashboard/upload" className="underline">Upload de PDFs</a>.
-        </div>
-      ) : null}
-      {enqueueMutation.error ? (
-        <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">
-          {enqueueMutation.error instanceof Error ? enqueueMutation.error.message : "Erro ao processar atas/votos"}
-        </div>
-      ) : null}
-
       {/* ── Exceções (informativo): o pouco que o zero-toque não resolveu sozinho ── */}
-      {((pendentesRevisao?.total ?? 0) > 0 || reprocessPreview || !demoEnabled) && (
+      {((pendentesRevisao?.total ?? 0) > 0 || !demoEnabled) && (
         <section className="card space-y-3">
           <div className="flex items-center justify-between gap-3 flex-wrap">
             <div className="flex items-center gap-2">
@@ -723,19 +544,6 @@ export default function VotosDiretoresPage() {
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              className="btn-secondary text-xs"
-              onClick={() => (reprocessPreview ? reprocessMutation.mutate(false) : reprocessMutation.mutate(true))}
-              disabled={reprocessMutation.isPending || demoEnabled}
-              title="Reprocessa em lote os votos/atas da ANTT descartados pela versão antiga (1º clique conta; 2º confirma). Depois o cron processa e auto-confirma os inequívocos."
-            >
-              {reprocessMutation.isPending
-                ? "Reprocessando…"
-                : reprocessPreview
-                  ? `Re-enfileirar ${reprocessPreview.encontrados} ignorado(s)`
-                  : "Reprocessar votos ignorados"}
-            </button>
           </div>
           {(pendenciasVoto?.total_pendentes ?? 0) > 0 && (
             <div className="rounded-card border border-border bg-surface-2/40 px-3 py-2.5 space-y-1.5">
@@ -824,26 +632,6 @@ export default function VotosDiretoresPage() {
             <div className="flex items-center gap-2">
               <UserCheck className="w-4 h-4 text-brand" />
               <p className="section-label">Matches pendentes ({(candidatos ?? []).length})</p>
-            </div>
-            <div className="flex items-center gap-2 flex-wrap">
-              <button
-                type="button"
-                className="btn-secondary text-xs"
-                onClick={() => recomputeMutation.mutate()}
-                disabled={recomputeMutation.isPending || demoEnabled}
-                title="Recalcula a confiança dos cartões antigos com o matcher atual, junta os duplicados do mesmo nome e auto-aprova os que passam a casar ≥ 0,85 (destrava os votos presos)."
-              >
-                {recomputeMutation.isPending ? "Recalculando…" : "Recalcular matches"}
-              </button>
-              <button
-                type="button"
-                className="btn-primary text-xs"
-                onClick={() => aprovarLoteMutation.mutate()}
-                disabled={aprovarLoteMutation.isPending}
-                title="Aprova em lote os matches ≥ 0,8 a diretores já cadastrados; novos nomes continuam 1-a-1."
-              >
-                {aprovarLoteMutation.isPending ? "Aprovando…" : "Aprovar lote (match ≥ 0,8)"}
-              </button>
             </div>
           </div>
           <p className="text-xs text-text-muted">
@@ -1012,39 +800,6 @@ export default function VotosDiretoresPage() {
               {completude.alertas.map((a, i) => <li key={i}>{a}</li>)}
             </ul>
           )}
-          {/* Manutenção: limpar deliberações duplicadas (legado). Verifica antes de fundir. */}
-          <div className="flex items-center gap-2 flex-wrap border-t border-border pt-2.5">
-            <button
-              type="button"
-              className="btn-secondary text-xs"
-              onClick={() => dedupMutation.mutate(true)}
-              disabled={dedupMutation.isPending || demoEnabled}
-              title="Verifica quantas deliberações estão em dobro (mesmo número/processo). Não altera nada."
-            >
-              {dedupMutation.isPending && dedupMutation.variables === true ? "Verificando…" : "Verificar duplicatas de deliberação"}
-            </button>
-            {dedupPreview && (
-              <>
-                <span className="text-xs text-text-muted">
-                  {dedupPreview.grupos_duplicados} grupo(s) · {dedupPreview.deliberacoes_em_dobro} em dobro.
-                </span>
-                {dedupPreview.deliberacoes_em_dobro > 0 && (
-                  <button
-                    type="button"
-                    className="btn-secondary text-xs text-error border-error/30 hover:bg-error/10"
-                    onClick={() => {
-                      if (window.confirm(`Fundir ${dedupPreview.deliberacoes_em_dobro} deliberação(ões) em dobro? Mantém a mais antiga e migra os votos. Ação irreversível.`)) {
-                        dedupMutation.mutate(false);
-                      }
-                    }}
-                    disabled={dedupMutation.isPending}
-                  >
-                    {dedupMutation.isPending && dedupMutation.variables === false ? "Fundindo…" : `Fundir ${dedupPreview.deliberacoes_em_dobro} duplicata(s)`}
-                  </button>
-                )}
-              </>
-            )}
-          </div>
         </section>
       )}
 

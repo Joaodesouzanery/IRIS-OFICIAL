@@ -31,6 +31,11 @@ export const COLEGIADO_SOURCES = [
 
 export const COLEGIADO_SOURCE_URLS = COLEGIADO_SOURCES.map((source) => source.url);
 
+// Siglas das agências cuja esteira de VOTOS está configurada. Fora desta lista a agência é
+// escopo notícias/qualidade: não cria diretor, não infere voto, não entra na Completude de
+// votos (QA ago/2026 — ANS/ANA apareciam com "diretores votando" por artefato de classificação).
+export const COLEGIADO_SIGLAS = new Set<string>(COLEGIADO_SOURCES.map((s) => s.sigla));
+
 /**
  * Garante que as agencias ANTT/ANM/ARTESP e suas fontes de reunioes colegiadas
  * estejam cadastradas em monitoramento_sites com auto-enfileiramento de PDFs ligado.

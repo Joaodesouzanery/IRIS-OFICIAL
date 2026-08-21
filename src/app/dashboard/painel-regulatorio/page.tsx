@@ -146,7 +146,7 @@ export default function PainelRegulatorioPage() {
       {/* Header */}
       <div className="flex items-start justify-between flex-wrap gap-3">
         <div>
-          <h1 className="text-xl font-semibold text-text-primary">Painel Regulatório</h1>
+          <h1 className="text-xl font-semibold text-text-primary">Observatório da Regulação</h1>
           <p className="text-sm text-text-muted mt-0.5">Visão estatística e filtrável das normas regulatórias</p>
         </div>
       </div>

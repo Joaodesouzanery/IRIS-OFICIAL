@@ -11,6 +11,8 @@
  *     idempotente; ilegível/sem agência→arquiva; resto→confirma)
  *  6. candidatos: recompute + aprovar-lote (≥0.8 + novos <0.6 com nome estrito)
  *  7. dedup retroativo de deliberações (rede de segurança final)
+ *  8. materialização final, só com a fila drenada: recuperação de ignorados + métricas
+ *     derivadas (empresas/backfill, qualidade derivadas, mandatos percentual, divergência)
  * Admin ou cron. Idempotente: rodar 2× não cria nada novo (dedup em 4 barreiras).
  */
 
@@ -28,6 +30,11 @@ import { POST as recomputePOST } from "../../admin/diretores/candidatos/recomput
 import { POST as aprovarLotePOST } from "../../diretores/candidatos/aprovar-lote/route";
 import { POST as dedupPOST } from "../../admin/deliberacoes/dedup/route";
 import { POST as materializarPOST } from "../../admin/votos/materializar-faltantes/route";
+import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ignorados/route";
+import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
+import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
+import { POST as mandatosRecalcularPOST } from "../../mandatos/recalcular/route";
+import { POST as divergenciaPOST } from "../../votos/recalcular-divergencia/route";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -210,10 +217,47 @@ async function run(req: NextRequest) {
     }
   } else restantes = true;
 
+  // 8 · MATERIALIZAÇÃO FINAL ("Rodar tudo = tudo", ago/2026): roda quando a fila DRENOU
+  // (restantes ainda false) — recuperação de ignorados + métricas derivadas que antes
+  // dependiam de botões/rotas órfãs (Qualidade e Empresas estagnavam). Se faltar saldo,
+  // restantes=true e a PRÓXIMA rodada (fila vazia = passos 1-7 baratos) chega aqui com folga.
+  if (!restantes) {
+    if (hasBudget(deadlineAt, 10_000)) {
+      try {
+        // 8a · Ignorados recuperáveis voltam à fila (se voltou algo, há trabalho → re-rodar).
+        const r = await call(reprocessIgnoradosPOST, "/api/v1/admin/upload/reprocess-ignorados?dry_run=0", {}, 8_000);
+        const reenfileirados = Number(r?.reenfileirados ?? r?.requeued ?? 0);
+        etapas.recuperacao_ignorados = { reenfileirados };
+        if (reenfileirados > 0) restantes = true;
+      } catch {
+        etapas.recuperacao_ignorados = { erro: "reprocesso falhou nesta rodada" };
+      }
+    } else restantes = true;
+
+    // 8b-8e · Métricas derivadas (todas idempotentes; fatias curtas).
+    const derivadas: Array<[string, (r: NextRequest) => Promise<NextResponse | Response>, string, unknown]> = [
+      ["empresas_backfill", empresasBackfillPOST, "/api/v1/empresas/backfill", {}],
+      ["qualidade_derivadas", qualidadeDerivadasPOST, "/api/v1/qualidade-regulatoria/coletas/derivadas/run", {}],
+      ["mandatos_percentual", mandatosRecalcularPOST, "/api/v1/mandatos/recalcular", {}],
+      ["divergencia_votos", divergenciaPOST, "/api/v1/votos/recalcular-divergencia?apply=1", {}],
+    ];
+    for (const [nome, handler, path, corpo] of derivadas) {
+      if (!hasBudget(deadlineAt, 6_000)) { restantes = true; break; }
+      try {
+        const r = await call(handler, path, corpo, 8_000);
+        const n = [r?.atualizados, r?.alterados, r?.updated, r?.deliberacoes_atualizadas, r?.votos_alterados]
+          .find((v: unknown) => typeof v === "number");
+        etapas[nome] = { ok: true, ...(typeof n === "number" ? { atualizados: n } : {}) };
+      } catch {
+        etapas[nome] = { erro: `${nome} falhou nesta rodada` };
+      }
+    }
+  }
+
   return NextResponse.json({
     etapas,
     restantes, // true = re-chamar para continuar (orçamento de tempo)
     legal_notice:
-      "Pipeline zero-toque: coleta → reclassificação → extração → aprovação em camadas (dedup em 4 barreiras; direção de voto nunca chutada; ilegível não vira métrica) → diretores → dedup final. Idempotente.",
+      "Pipeline zero-toque: coleta → reclassificação → extração → aprovação em camadas (dedup em 4 barreiras; direção de voto nunca chutada; ilegível não vira métrica) → diretores → dedup final → materialização (empresas, qualidade, mandatos, divergência). Idempotente.",
   });
 }

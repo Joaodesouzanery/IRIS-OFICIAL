@@ -14,6 +14,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin, requireAdminOrCron, getAuthenticatedUser } from "@/lib/server/request-guards";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
+import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -140,10 +141,41 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  // Gate anti-poluição (QA ago/2026 — "25 diretores na ANM"): criar uma PESSOA NOVA exige
+  // (a) agência COLEGIADA (fora de ANTT/ANM/ARTESP a esteira de votos não cria diretor) e
+  // (b) o mesmo nome aparecer em ≥2 DOCUMENTOS distintos — signatário/servidor citado numa
+  // única ata não vira diretor (diretor de verdade reaparece a cada reunião).
+  const { data: agRows } = await db.from("agencias").select("id, sigla");
+  const colegiadaIds = new Set(
+    ((agRows ?? []) as Array<{ id: string; sigla: string }>)
+      .filter((a) => COLEGIADO_SIGLAS.has(String(a.sigla)))
+      .map((a) => a.id),
+  );
+  const ocorrenciasPorNome = new Map<string, number>();
+  if (candidatosNovos.length > 0) {
+    const nomes = [...new Set(candidatosNovos.map((c: any) => String(c.nome_detectado ?? "")))];
+    const { data: todosDoNome } = await db
+      .from("diretor_candidatos")
+      .select("nome_detectado, agencia_id, source_hash")
+      .in("nome_detectado", nomes);
+    for (const c of (todosDoNome ?? []) as any[]) {
+      const k = `${c.agencia_id}|${c.nome_detectado}`;
+      ocorrenciasPorNome.set(k, (ocorrenciasPorNome.get(k) ?? 0) + 1);
+    }
+  }
+
   for (const candidato of candidatosNovos) {
     const nome = String(candidato.nome_detectado ?? "");
     if (!isStrictPersonName(nome)) {
       pulados.push({ id: candidato.id, nome, reason: "nome não passa na validação estrita (prosa não vira pessoa)" });
+      continue;
+    }
+    if (!candidato.agencia_id || !colegiadaIds.has(candidato.agencia_id)) {
+      pulados.push({ id: candidato.id, nome, reason: "agência fora da esteira de votos (não-colegiada) — não cria diretor" });
+      continue;
+    }
+    if ((ocorrenciasPorNome.get(`${candidato.agencia_id}|${nome}`) ?? 1) < 2) {
+      pulados.push({ id: candidato.id, nome, reason: "nome visto em 1 documento só — aguarda reaparecer para virar diretor" });
       continue;
     }
     const match = candidato.agencia_id ? findBestMatch(nome, await diretoresDe(candidato.agencia_id)) : { diretorId: null, needsReview: false };

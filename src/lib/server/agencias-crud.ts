@@ -66,12 +66,20 @@ export async function upsertCurrentMandato(db: any, diretorId: string, diretor: 
     updated_at: new Date().toISOString(),
   };
 
-  const { data: existing } = await db
+  // QA ago/2026: casar por (diretor, data_inicio EXATA) fazia a EDIÇÃO da data de posse
+  // inserir um SEGUNDO mandato — e o antigo (fabricado, aberto) continuava "ativo"
+  // alimentando a inferência. Agora: corrige o mandato ABERTO existente do diretor
+  // (data_fim null = o vigente), qualquer que seja a data_inicio antiga.
+  const { data: existingRows } = await db
     .from("mandatos")
-    .select("id")
+    .select("id, data_inicio, data_fim")
     .eq("diretor_id", diretorId)
-    .eq("data_inicio", diretor.data_posse)
-    .maybeSingle();
+    .order("data_inicio", { ascending: false })
+    .limit(10);
+  const existing = ((existingRows ?? []) as Array<{ id: string; data_inicio: string | null; data_fim: string | null }>)
+    .find((m) => m.data_inicio === diretor.data_posse)
+    ?? ((existingRows ?? []) as Array<{ id: string; data_inicio: string | null; data_fim: string | null }>)
+      .find((m) => m.data_fim === null);
 
   if (existing?.id) {
     const { data } = await db

@@ -15,6 +15,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 
 export const dynamic = "force-dynamic";
 
@@ -114,7 +115,11 @@ export async function GET(req: NextRequest) {
       db.from("diretor_candidatos").select("agencia_id").eq("review_status", "pendente").limit(5000),
     ]);
 
-  const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
+  // Só agências COLEGIADAS (esteira de votos configurada). As demais 10 foram semeadas para o
+  // módulo de NOTÍCIAS e apareciam aqui zeradas — ou pior, com artefatos de misclassificação
+  // de sigla (QA ago/2026: ANS/ANA "com deliberações e diretores votando").
+  const agencias: Array<{ id: string; sigla: string; nome: string }> =
+    (agenciasRes.data ?? []).filter((a: { sigla: string }) => COLEGIADO_SIGLAS.has(String(a.sigla)));
   const byId = new Map<string, AgenciaCompletude>();
   for (const a of agencias) {
     byId.set(a.id, {

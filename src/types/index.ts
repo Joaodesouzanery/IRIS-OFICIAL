@@ -361,6 +361,12 @@ export interface DiretorOverviewItem {
   /** Votos LIDOS do documento (nominais) vs INFERIDOS por unanimidade/mandato. */
   nominais?: number;
   inferidos?: number;
+  /** Mandato representativo (ago/2026): visível e conferível na tela Diretores. */
+  agencia_sigla?: string | null;
+  cargo?: string | null;
+  mandato_inicio?: string | null;
+  mandato_fim?: string | null;
+  mandato_fonte?: "verificado" | "estimado" | null;
 }
 
 export interface DiretorVotoItem {

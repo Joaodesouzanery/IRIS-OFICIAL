@@ -18,6 +18,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { findBestMatch } from "@/lib/server/name-matcher";
+import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import {
   buildVotoRows,
   getActiveDiretoresForVote,
@@ -54,6 +55,14 @@ export async function POST(req: NextRequest) {
   const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
+
+  // Só agências COLEGIADAS têm esteira de votos — fora delas não se materializa nada.
+  const { data: agRows } = await db.from("agencias").select("id, sigla");
+  const colegiadaIds = new Set(
+    ((agRows ?? []) as Array<{ id: string; sigla: string }>)
+      .filter((a) => COLEGIADO_SIGLAS.has(String(a.sigla)))
+      .map((a) => a.id),
+  );
 
   let query = db
     .from("deliberacoes")
@@ -106,7 +115,7 @@ export async function POST(req: NextRequest) {
 
   for (const d of semVoto as any[]) {
     if (!hasBudget(deadlineAt, 8_000)) { restantes = true; break; }
-    if (!d.agencia_id) { semEvidencia++; continue; }
+    if (!d.agencia_id || !colegiadaIds.has(d.agencia_id)) { semEvidencia++; continue; }
     const raw = (d.raw_extraction ?? {}) as Record<string, unknown>;
     const nomes = arr(raw.nomes_votacao);
     const nomesContra = arr(raw.nomes_votacao_contra);

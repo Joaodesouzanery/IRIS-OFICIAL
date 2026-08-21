@@ -53,6 +53,13 @@ arquivada com link; semântica fundida idempotente; diretor novo <0.6+nome estri
 | **Regerar Relatórios do Observatório após lote grande** | Após aprovar muitos docs em lote (os relatórios salvos são SNAPSHOTS; janela de ~200 delibs por período) | Documentos de Associados → gerar de novo o relatório do período |
 | **Backfill de `area_regulatoria` histórica** | Uma vez (deliberações confirmadas ANTES de ago/2026 ficaram com a coluna NULL — o confirm só grava daqui em diante) | Adiado: migration de backfill (classificar pelo texto) quando fizer falta nos filtros |
 
+## ⚠️ Migration PENDENTE (ago/2026, limpeza de agências)
+`supabase/migrations/20260821120000_limpeza_agencias_nao_colegiadas.sql` — remove os artefatos
+de ANS/ANA (deliberações/votos/mandatos/diretores criados por misclassificação de sigla) e
+rejeita os ~18 "diretores" fabricados da ANM (signatários de ata sem voto e sem mandato
+verificado). Aplicar no SQL Editor DEPOIS do deploy do código (o código fecha as portas; a
+migration limpa o legado). Os SELECTs de conferência estão no fim do arquivo.
+
 ## ⚠️ Migration PENDENTE (ago/2026, otimizações)
 `supabase/migrations/20260818120000_idx_deliberacoes_agencia_data.sql` — índice composto
 `deliberacoes(agencia_id, data_reuniao DESC)` + índice de `documentos_regulatorios(status)`.

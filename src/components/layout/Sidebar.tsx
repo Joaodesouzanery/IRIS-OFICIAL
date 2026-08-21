@@ -25,13 +25,14 @@ interface NavItem {
   icon: React.ElementType;
 }
 
+// Observatório em 1º (ago/2026): é a porta de entrada da plataforma — landing pós-login.
 const NAV_ITEMS: NavItem[] = [
+  { label: "Observatório da Regulação",  href: "/dashboard/painel-regulatorio", icon: TrendingUp },
   { label: "Deliberações", href: "/dashboard/deliberacoes", icon: FileText },
   { label: "Notícias", href: "/dashboard/noticias", icon: Newspaper },
   { label: "Monitoramento", href: "/dashboard/monitoramento", icon: Radar },
   { label: "Diretores",    href: "/dashboard/analytics/diretores", icon: Users },
   { label: "Análise",      href: "/dashboard/analytics", icon: BarChart3 },
-  { label: "Observatório da Regulação",  href: "/dashboard/painel-regulatorio", icon: TrendingUp },
   { label: "Qualidade Regulatória", href: "/dashboard/qualidade-regulatoria", icon: Award },
   { label: "Configurações",href: "/dashboard/agencias", icon: Building2 },
 ];
@@ -91,7 +92,15 @@ export function Sidebar() {
 
   return (
     <aside className="flex flex-col w-60 h-screen sticky top-0 bg-bg-sidebar border-r border-border shrink-0">
-      {/* Logo / Agency Selector */}
+      {/* Logo IRIS (chip navy — a arte clara funciona em tema claro e escuro) */}
+      <div className="px-4 pt-4">
+        <div className="rounded-md bg-[#0a0e2a] border border-[#c2a24a]/40 px-3 py-2.5 flex items-center justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/newsletter-logo-wide.png" alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade" className="h-8 w-auto" />
+        </div>
+      </div>
+
+      {/* Agency Selector */}
       <div className="p-4 border-b border-border">
         <button className="flex items-center justify-between w-full px-3 py-2.5 rounded-md bg-bg-card border border-border hover:border-brand/30 transition-colors group">
           <div className="flex items-center gap-2.5">

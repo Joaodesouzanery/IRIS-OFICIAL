@@ -225,11 +225,17 @@ export function detectAgenciaSigla(text: string, siglas: string[]): string | nul
   return scores[0]?.sigla ?? null;
 }
 
+// QA ago/2026: fronteira de PALAVRA obrigatória — o indexOf puro fazia "ANS" casar dentro
+// de "TRANSPORTES" e "ANA" dentro de "ANAC/SEMANA", e documentos ANTT/ARTESP eram gravados
+// como ANS/ANA (agências fora do escopo de votos apareciam na Completude com deliberações).
 function countOccurrences(text: string, needle: string): number {
   let count = 0;
   let idx = 0;
+  const isWordChar = (ch: string | undefined) => ch !== undefined && /[A-Z0-9À-Ü]/i.test(ch);
   while ((idx = text.indexOf(needle, idx)) !== -1) {
-    count++;
+    const antes = text[idx - 1];
+    const depois = text[idx + needle.length];
+    if (!isWordChar(antes) && !isWordChar(depois)) count++;
     idx++; // avança para evitar loop infinito
   }
   return count;

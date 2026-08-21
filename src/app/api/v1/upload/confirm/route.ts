@@ -15,6 +15,7 @@ import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { ensureReuniao } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import { hasBudget } from "@/lib/server/time-budget";
+import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -393,8 +394,16 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     // Perf (QA ago/2026): eram 2 queries POR deliberação para dados imutáveis no lote —
     // existência da agência e o cadastro de diretores. Com sublotes de 100, ~200 idas ao
     // banco viravam metade do tempo da rodada. Agora: Set de agências 1× + cache por agência.
-    const { data: agenciasRows } = await db.from("agencias").select("id");
+    const { data: agenciasRows } = await db.from("agencias").select("id, sigla");
     const agenciasSet = new Set(((agenciasRows ?? []) as Array<{ id: string }>).map((a) => a.id));
+    // Gate de COLEGIADA (QA ago/2026): fora de ANTT/ANM/ARTESP a esteira de votos não cria
+    // candidato a diretor nem infere voto por mandato — ANS/ANA ganhavam "diretores votando"
+    // por artefato (misclassificação de sigla + mandato fabricado).
+    const colegiadaIds = new Set(
+      ((agenciasRows ?? []) as Array<{ id: string; sigla: string }>)
+        .filter((a) => COLEGIADO_SIGLAS.has(String(a.sigla)))
+        .map((a) => a.id),
+    );
     const diretoresPorAgencia = new Map<string, DiretorVoteRecord[]>();
     // Orçamento: o confirm-lote fatia em 100, mas um sublote pesado (atas com muitos itens)
     // podia estourar o SIGKILL AQUI dentro. Corta entre deliberações e devolve o feito.
@@ -496,14 +505,17 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               : null;
           })
           .filter((dir): dir is DiretorVoteRecord => Boolean(dir));
-        const activeDiretoresList = presentesRoster.length > 0
-          ? presentesRoster
-          : await getActiveDiretoresForVote(
-            db,
-            effectiveAgenciaId,
-            d.data_reuniao,
-            diretoresList,
-          );
+        // Agência não-colegiada: roster SEMPRE vazio → nenhum voto inferido/fabricado.
+        const activeDiretoresList = !colegiadaIds.has(effectiveAgenciaId)
+          ? []
+          : presentesRoster.length > 0
+            ? presentesRoster
+            : await getActiveDiretoresForVote(
+              db,
+              effectiveAgenciaId,
+              d.data_reuniao,
+              diretoresList,
+            );
 
         // Reunião materializada: garante a linha canônica e liga as deliberações
         // (degrada para null enquanto a migration não for aplicada).
@@ -567,7 +579,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           }
 
           // Candidato do relator (para backfill se ainda não casar no cadastro).
-          await recordDirectorCandidates(db, [relatorNome], diretoresList, {
+          if (colegiadaIds.has(effectiveAgenciaId)) await recordDirectorCandidates(db, [relatorNome], diretoresList, {
             agencia_id: effectiveAgenciaId, filename: d.filename, source_type: "deliberacao",
             source_url: extractSourceUrl(d.extraction_raw),
             source_hash: hashEvidence(`${d.filename}|${d.numero_deliberacao ?? ""}|${d.processo ?? ""}`),
@@ -649,7 +661,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           }
 
           const ataVotingNames = uniqueNamesFromItems(rawConfirm.ata_items);
-          await recordDirectorCandidates(db, ataVotingNames, diretoresList, {
+          if (colegiadaIds.has(effectiveAgenciaId)) await recordDirectorCandidates(db, ataVotingNames, diretoresList, {
             agencia_id: effectiveAgenciaId,
             filename: d.filename,
             source_type: "ata",
@@ -889,7 +901,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
         const votingNames = d.nomes_votacao;
         if (votingNames.length > 0) {
-          await recordDirectorCandidates(db, votingNames, diretoresList, {
+          if (colegiadaIds.has(effectiveAgenciaId)) await recordDirectorCandidates(db, votingNames, diretoresList, {
             agencia_id: effectiveAgenciaId,
             filename: d.filename,
             source_type: d.tipo_documento === "ata" ? "ata" : "deliberacao",
