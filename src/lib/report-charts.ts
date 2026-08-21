@@ -10,9 +10,11 @@ function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-const INK = "#18181b";
-const MUTED = "#71717a";
-const SANS = "-apple-system, Segoe UI, Roboto, Arial, sans-serif";
+const INK = "#1c1c21";
+const MUTED = "#6b6b74";
+const NAVY = "#0a0e2a";
+const GOLD = "#c2a24a";
+const SANS = "'Inter', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif";
 
 export interface DonutSegment {
   label: string;
@@ -71,7 +73,8 @@ export function svgDonut(segments: DonutSegment[], opts: { title?: string; size?
 /** Medidor semicircular (0–100) — reusa a matemática do GaugeChart. */
 export function svgGauge(value: number, opts: { label?: string; color?: string; size?: number } = {}): string {
   const size = opts.size ?? 150;
-  const color = opts.color ?? "#c2a24a";
+  // Default NAVY (redesign ago/2026): o dourado é marca, não cor de dado.
+  const color = opts.color ?? NAVY;
   const label = opts.label ?? "";
   const v = Math.max(0, Math.min(100, value));
   const radius = 56;
@@ -109,11 +112,12 @@ export function svgBarsH(items: BarItem[], opts: { width?: number; barColor?: st
   const rows = items.map((it, i) => {
     const y = i * rowH + 2;
     const w = Math.max(2, Math.round((Math.max(0, it.value) / max) * trackW));
-    const color = it.color ?? opts.barColor ?? "#c2a24a";
+    // Default NAVY (redesign ago/2026): dourado é marca, não série; barra fina, canto discreto.
+    const color = it.color ?? opts.barColor ?? NAVY;
     return `<g transform="translate(0 ${y})">
       <text x="0" y="${rowH / 2 + 4}" font-family="${SANS}" font-size="11.5" fill="${INK}">${esc(it.label)}</text>
-      <rect x="${labelW}" y="${rowH / 2 - 6}" width="${trackW}" height="12" rx="6" fill="#f1f1f3"/>
-      <rect x="${labelW}" y="${rowH / 2 - 6}" width="${w}" height="12" rx="6" fill="${color}"/>
+      <rect x="${labelW}" y="${rowH / 2 - 5}" width="${trackW}" height="10" rx="2" fill="#f0f0ee"/>
+      <rect x="${labelW}" y="${rowH / 2 - 5}" width="${w}" height="10" rx="2" fill="${color}"/>
       <text x="${width}" y="${rowH / 2 + 4}" text-anchor="end" font-family="${SANS}" font-size="11.5" font-weight="700" fill="${INK}">${it.value}${esc(it.suffix ?? "")}</text>
     </g>`;
   }).join("");
@@ -142,7 +146,11 @@ export function svgLine(points: LinePoint[], opts: { width?: number; height?: nu
   const x = (i: number) => padX + (points.length === 1 ? plotW / 2 : (i / (points.length - 1)) * plotW);
   const yv = (v: number) => padTop + plotH - ((v - min) / span) * plotH;
   const line = points.map((p, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${yv(p.value).toFixed(1)}`).join(" ");
-  const dots = points.map((p, i) => `<circle cx="${x(i).toFixed(1)}" cy="${yv(p.value).toFixed(1)}" r="3" fill="${color}"/>`).join("");
+  // Ponto FINAL em dourado (marca sinaliza "onde estamos"); os demais discretos na cor da série.
+  const dots = points.map((p, i) => {
+    const last = i === points.length - 1;
+    return `<circle cx="${x(i).toFixed(1)}" cy="${yv(p.value).toFixed(1)}" r="${last ? 4 : 2.5}" fill="${last ? GOLD : color}"${last ? ` stroke="${color}" stroke-width="1.5"` : ""}/>`;
+  }).join("");
   const labels = points.map((p, i) => `<text x="${x(i).toFixed(1)}" y="${height - 8}" text-anchor="middle" font-family="${SANS}" font-size="8.5" fill="${MUTED}">${esc(p.label)}</text>`).join("");
   const valTop = `<text x="${x(points.map((p) => p.value).indexOf(max)).toFixed(1)}" y="${(yv(max) - 6).toFixed(1)}" text-anchor="middle" font-family="${SANS}" font-size="9" font-weight="700" fill="${INK}">${max}${esc(opts.suffix ?? "")}</text>`;
   return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">

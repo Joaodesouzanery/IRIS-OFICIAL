@@ -352,13 +352,15 @@ function buildHtml(input: BuildAssociadoDocumentInput & {
 }
 
 // Classes próprias dos renderizadores das seções (mantidos), no tema de impressão IRIS.
+// Redesign ago/2026: sem pill (rótulo tipográfico), dourado de TEXTO no tom escuro (goldInk),
+// aviso na paleta do documento (não amarelo-Tailwind cru).
 const ASSOCIADO_EXTRA_CSS = `
-  .muted{color:#71717a;}
-  .pill{display:inline-block;border:1px solid #e4e4e7;color:#c2a24a;border-radius:999px;padding:2px 8px;font-size:11px;font-weight:600;}
-  .scenario{border-left:3px solid #c2a24a;padding-left:12px;margin:10px 0;}
+  .muted{color:#6b6b74;}
+  .pill{display:inline-block;color:#8a6d1f;font-size:9.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;}
+  .scenario{border-left:2px solid #c2a24a;padding-left:14px;margin:12px 0;}
   .sources{padding-left:18px;} .sources li{margin-bottom:6px;}
-  .warning{border:1px solid #fde68a;background:#fffbeb;border-radius:8px;padding:12px;} .warning li{margin-bottom:4px;}
-  .vp{display:flex;gap:16px;align-items:flex-start;} .vp img{width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid #e4e4e7;}
+  .warning{border-left:2px solid #8a6d1f;background:#faf6ea;padding:12px 14px;} .warning li{margin-bottom:4px;}
+  .vp{display:flex;gap:16px;align-items:flex-start;} .vp img{width:96px;height:96px;object-fit:cover;border:1px solid #dcdce1;}
 `;
 
 function renderQuality(qualidade: DocumentoAssociadoPreview["qualidade"]) {

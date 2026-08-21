@@ -13,7 +13,7 @@ import type {
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { REGULATORIO_TABS } from "@/lib/module-tabs";
 import { cn } from "@/lib/utils";
-import { AlertTriangle, Calendar, Download, FileText, Loader2, Plus, Printer, Sparkles, Trash2, X } from "lucide-react";
+import { AlertTriangle, Calendar, Download, FileText, Loader2, Plus, Printer, Trash2, X } from "lucide-react";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 
 export default function DocumentosAssociadosPage() {
@@ -198,7 +198,7 @@ export default function DocumentosAssociadosPage() {
           disabled={!selectedAssociado || generateMutation.isPending}
           className="btn-primary"
         >
-          {generateMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
+          {generateMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileText className="w-4 h-4" />}
           {demoEnabled ? "Gerar preview" : "Gerar relatório"}
         </button>
       </div>

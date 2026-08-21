@@ -102,7 +102,7 @@ const NEWSLETTER_THEME_DARK: NewsletterTheme = {
   page: "#0d1220",
   hero: "#0f1a2c",
   image: "#1a2236",
-  accent: "#c9a84c",
+  accent: "#c2a24a", // dourado ÚNICO da marca (era #c9a84c divergente — redesign ago/2026)
   text: "#ffffff",
   body: "rgba(255,255,255,0.76)",
   bodySoft: "rgba(255,255,255,0.66)",

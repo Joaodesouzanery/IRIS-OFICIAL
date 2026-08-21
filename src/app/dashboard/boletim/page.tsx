@@ -14,6 +14,7 @@ import {
   AlignLeft, Loader2, X, Scale, BookOpen, Layers,
 } from "lucide-react";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
+import { buildBoletimHtml } from "@/lib/boletim-document";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 
@@ -44,12 +45,9 @@ const SECTIONS: Section[] = [
   { id: "governanca",   label: "Taxa de Governança",         icon: ShieldCheck },
 ];
 
-// ── Newsletter HTML builder ────────────────────────────────────────────────
-
-// Mesma fórmula composta da Governança/Analytics Institucional (não deixar divergir).
-function calcScore(consenso: number, deferimento: number, qualidade: number, sancao: number) {
-  return Math.round(consenso * 0.3 + deferimento * 0.25 + qualidade * 0.25 + (100 - sancao) * 0.2);
-}
+// ── Boletim HTML: adapter fino → módulo compartilhado (redesign ago/2026) ─────────────
+// O template vive em src/lib/boletim-document.ts (tokens de marca únicos, seções editoriais,
+// barras email-safe). Aqui só mapeamos os dados das queries para a entrada do módulo.
 
 function buildHtml(opts: {
   selectedSections: string[];
@@ -61,214 +59,49 @@ function buildHtml(opts: {
   mandatos: MandatosAnalytics | undefined;
   agencia: string;
 }) {
-  const { selectedSections: sel, periodo, overview, microtemas, diretores, deliberacoes, mandatos, agencia } = opts;
-  const today = new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
-  const ag = agencia || "Todas as Agências";
+  const { deliberacoes } = opts;
 
-  const sec = (id: string) => sel.includes(id);
-
-  const kpisHtml = sec("kpis") && overview ? `
-    <tr><td style="padding:16px 0">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">KPIs Principais</h2>
-      <table width="100%" cellpadding="0" cellspacing="0"><tr>
-        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Total</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f4f4f5;font-family:monospace">${formatNumber(overview.total_deliberacoes)}</p>
-        </td>
-        <td width="8"></td>
-        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Favoráveis</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#22c55e;font-family:monospace">${formatNumber(overview.deferidos)}</p>
-        </td>
-        <td width="8"></td>
-        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Taxa Def.</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#c2a24a;font-family:monospace">${overview.taxa_deferimento}%</p>
-        </td>
-        <td width="8"></td>
-        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:25%">
-          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Reuniões</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#f4f4f5;font-family:monospace">${formatNumber(overview.reunioes_unicas)}</p>
-        </td>
-      </tr></table>
-    </td></tr>` : "";
-
-  const recentesHtml = sec("recentes") && deliberacoes.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Deliberações Recentes</h2>
-      <table width="100%" cellpadding="0" cellspacing="0">
-        ${deliberacoes.slice(0, 5).map((d) => `
-        <tr><td style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
-          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:rgba(255,255,255,0.62)">${escapeHtml(d.assunto ?? d.microtema ?? "")} · ${escapeHtml(d.resultado ?? "Sem resultado")}</p>
-        </td></tr>`).join("")}
-      </table>
-    </td></tr>` : "";
-
-  // Decisões com voto divergente registrado (transparência de dissenso).
-  const divergentes = deliberacoes.filter((d) => Array.isArray(d.votos) && d.votos.some((v) => v.is_divergente));
-  const divergentesHtml = sec("divergentes") && divergentes.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Decisões Divergentes</h2>
-      <table width="100%" cellpadding="0" cellspacing="0">
-        ${divergentes.slice(0, 5).map((d) => {
-          const nomes = (d.votos ?? []).filter((v) => v.is_divergente).map((v) => v.diretor_nome).filter(Boolean).map((n) => escapeHtml(n)).join(", ");
-          return `
-        <tr><td style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
-          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:rgba(255,255,255,0.72)">${escapeHtml(d.resultado ?? "Sem resultado")}${nomes ? ` · <span style="color:#f59e0b">Voto divergente: ${nomes}</span>` : ""}</p>
-        </td></tr>`;
-        }).join("")}
-      </table>
-    </td></tr>` : "";
-
-  // Deliberações publicadas no Diário Oficial (data_publicacao distinta da reunião).
-  const publicadas = deliberacoes.filter((d) => d.data_publicacao).sort((a, b) => (b.data_publicacao ?? "").localeCompare(a.data_publicacao ?? ""));
-  const publicacaoHtml = sec("publicacao") && publicadas.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Publicadas no DOU/DOE</h2>
-      <table width="100%" cellpadding="0" cellspacing="0">
-        ${publicadas.slice(0, 5).map((d) => `
-        <tr><td style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)">
-          <p style="margin:0;font-size:13px;color:#f4f4f5;font-weight:600">${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}</p>
-          <p style="margin:2px 0 0;font-size:12px;color:rgba(255,255,255,0.62)">Publicado em ${formatDate(d.data_publicacao)} · Reunião ${formatDate(d.data_reuniao)}</p>
-        </td></tr>`).join("")}
-      </table>
-    </td></tr>` : "";
-
-  // Distribuição por área regulatória.
   const areaCounts = new Map<string, number>();
   for (const d of deliberacoes) {
     const label = getAreaRegulatoriaLabel(d.area_regulatoria);
     areaCounts.set(label, (areaCounts.get(label) ?? 0) + 1);
   }
-  const areasOrdenadas = [...areaCounts.entries()].sort((a, b) => b[1] - a[1]);
-  const areasHtml = sec("areas") && areasOrdenadas.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Por Área Regulatória</h2>
-      ${areasOrdenadas.slice(0, 6).map(([label, total], i) => `
-      <div style="margin-bottom:8px">
-        <p style="margin:0 0 3px;font-size:12px;color:rgba(255,255,255,0.72)">${i + 1}. ${label} — <span style="color:#f4f4f5">${formatNumber(total)}</span></p>
-      </div>`).join("")}
-    </td></tr>` : "";
-
-  const setoresHtml = sec("setores") && microtemas?.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Setores Mais Afetados</h2>
-      ${[...(microtemas ?? [])].sort((a,b) => b.total - a.total).slice(0,5).map((m, i) => `
-      <div style="margin-bottom:8px">
-        <p style="margin:0 0 3px;font-size:12px;color:rgba(255,255,255,0.72)">${i+1}. ${getMicrotemaLabel(m.microtema)} — <span style="color:#f4f4f5">${formatNumber(m.total)}</span></p>
-      </div>`).join("")}
-    </td></tr>` : "";
-
-  const diretoresHtml = sec("diretores") && diretores?.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Diretores em Destaque</h2>
-      ${diretores.slice(0,5).map((d) => `
-      <div style="margin-bottom:6px">
-        <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.72)">${escapeHtml(d.diretor_nome)} — <span style="color:#f4f4f5">${formatNumber(d.total)}</span> votos · <span style="color:#22c55e">${d.pct_favor.toFixed(0)}%</span> favoráveis</p>
-      </div>`).join("")}
-    </td></tr>` : "";
-
-  // Empresas reguladas (Top 5) — derivadas do `interessado` das deliberações do período.
   const empresaCounts = new Map<string, number>();
   for (const d of deliberacoes) {
     const nome = (d.interessado ?? "").trim();
     if (nome) empresaCounts.set(nome, (empresaCounts.get(nome) ?? 0) + 1);
   }
-  const empresasOrdenadas = [...empresaCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
-  const empresasHtml = sec("empresas") && empresasOrdenadas.length ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Empresas Reguladas (Top 5)</h2>
-      ${empresasOrdenadas.map(([nome, total], i) => `
-      <div style="margin-bottom:8px">
-        <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.72)">${i + 1}. ${escapeHtml(nome)} — <span style="color:#f4f4f5">${formatNumber(total)}</span> deliberação(ões)</p>
-      </div>`).join("")}
-    </td></tr>` : "";
+  const divergentes = deliberacoes.filter((d) => Array.isArray(d.votos) && d.votos.some((v) => v.is_divergente));
+  const publicadas = deliberacoes
+    .filter((d) => d.data_publicacao)
+    .sort((a, b) => (b.data_publicacao ?? "").localeCompare(a.data_publicacao ?? ""));
 
-  // Análise de consenso — taxa de consenso vs litígio (mandatos/analytics).
-  const consensoHtml = sec("consenso") && mandatos ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Análise de Consenso</h2>
-      <table width="100%" cellpadding="0" cellspacing="0"><tr>
-        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:50%">
-          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Consenso</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#22c55e;font-family:monospace">${mandatos.taxa_consenso}</p>
-        </td>
-        <td width="8"></td>
-        <td style="background:#121734;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px;text-align:center;width:50%">
-          <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.62);font-family:monospace;text-transform:uppercase">Litígio</p>
-          <p style="margin:4px 0 0;font-size:22px;font-weight:700;color:#c2a24a;font-family:monospace">${mandatos.taxa_litigio}</p>
-        </td>
-      </tr></table>
-    </td></tr>` : "";
-
-  // Taxa de governança — score composto (mesma fórmula da tela de Governança).
-  const govScore = overview && mandatos
-    ? calcScore(parseFloat(mandatos.taxa_consenso), parseFloat(overview.taxa_deferimento), (overview.avg_confidence ?? 0) * 100, parseFloat(mandatos.taxa_sancao))
-    : null;
-  const governancaHtml = sec("governanca") && govScore != null ? `
-    <tr><td style="padding:16px 0;border-top:1px solid rgba(255,255,255,0.12)">
-      <h2 style="margin:0 0 12px;font-size:14px;color:#c2a24a;font-family:monospace;text-transform:uppercase;letter-spacing:1px">Taxa de Governança</h2>
-      <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.72)">Score institucional agregado: <span style="color:#22c55e;font-size:22px;font-weight:700;font-family:monospace">${govScore}</span><span style="color:rgba(255,255,255,0.62)">/100</span></p>
-    </td></tr>` : "";
-
-  // Logo absoluto (o HTML é copiado p/ e-mail — precisa resolver fora do app).
-  const logoUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/brand/newsletter-logo-wide.png`;
-
-  return `<!DOCTYPE html>
-<html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-<title>Boletim IRIS Regulação</title></head>
-<body style="margin:0;padding:0;background:#eceae4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
-<table width="100%" cellpadding="0" cellspacing="0" style="background:#eceae4;padding:24px 0">
-<tr><td align="center">
-<table width="600" cellpadding="0" cellspacing="0" style="background:#0a0e2a;border:1px solid rgba(255,255,255,0.12);border-radius:12px;overflow:hidden">
-
-  <!-- Header — identidade IRIS (navy + dourado + logo, como a newsletter) -->
-  <tr><td style="background:#0a0e2a;border-bottom:2px solid #c2a24a;padding:22px 28px">
-    <table width="100%" cellpadding="0" cellspacing="0"><tr>
-      <td style="vertical-align:middle"><img src="${logoUrl}" alt="IRIS" width="140" style="display:block;width:140px;max-width:140px;height:auto"/></td>
-      <td align="right" style="vertical-align:middle">
-        <p style="margin:0;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c2a24a;font-weight:700">Boletim Regulat&oacute;rio</p>
-        <p style="margin:3px 0 0;font-size:11px;color:rgba(255,255,255,0.66)">${escapeHtml(ag)} · ${today}</p>
-        <p style="margin:2px 0 0;font-size:11px;color:rgba(255,255,255,0.66)">${PERIODOS.find(p => p.value === periodo)?.label ?? periodo}</p>
-      </td>
-    </tr></table>
-  </td></tr>
-  <tr><td style="padding:24px 28px 4px">
-    <h1 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:800;line-height:1.1;color:#ffffff">Boletim Regulat&oacute;rio</h1>
-  </td></tr>
-
-  <!-- Content -->
-  <tr><td style="padding:0 28px">
-    <table width="100%" cellpadding="0" cellspacing="0">
-      ${kpisHtml}
-      ${recentesHtml}
-      ${divergentesHtml}
-      ${publicacaoHtml}
-      ${areasHtml}
-      ${setoresHtml}
-      ${diretoresHtml}
-      ${empresasHtml}
-      ${consensoHtml}
-      ${governancaHtml}
-    </table>
-  </td></tr>
-
-  <!-- Footer -->
-  <tr><td style="padding:16px 28px;border-top:1px solid rgba(255,255,255,0.12);background:#07091d">
-    <p style="margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:1px;color:#ffffff;text-align:center">IRIS Regula&ccedil;&atilde;o</p>
-    <p style="margin:0;font-size:10px;color:rgba(255,255,255,0.55);text-align:center">
-      Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade · Gerado automaticamente · ${today}
-    </p>
-  </td></tr>
-
-</table>
-</td></tr>
-</table>
-</body></html>`;
+  return buildBoletimHtml({
+    selectedSections: opts.selectedSections,
+    periodoLabel: PERIODOS.find((p) => p.value === opts.periodo)?.label ?? opts.periodo,
+    agenciaLabel: opts.agencia || "Todas as Agências",
+    baseUrl: typeof window !== "undefined" ? window.location.origin : "",
+    formatNumber,
+    overview: opts.overview,
+    mandatos: opts.mandatos,
+    microtemas: (opts.microtemas ?? []).map((m) => ({ label: getMicrotemaLabel(m.microtema), total: m.total })).sort((a, b) => b.total - a.total),
+    areas: [...areaCounts.entries()].map(([label, total]) => ({ label, total })).sort((a, b) => b.total - a.total),
+    empresas: [...empresaCounts.entries()].map(([label, total]) => ({ label, total })).sort((a, b) => b.total - a.total),
+    diretores: (opts.diretores ?? []).map((d) => ({ nome: d.diretor_nome, total: d.total, pctFavor: d.pct_favor })),
+    recentes: deliberacoes.slice(0, 5).map((d) => ({
+      titulo: `${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}`,
+      meta: `${escapeHtml(d.assunto ?? d.microtema ?? "")} · ${escapeHtml(d.resultado ?? "Sem resultado")}`,
+    })),
+    divergentes: divergentes.slice(0, 5).map((d) => ({
+      titulo: `${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}`,
+      meta: escapeHtml(d.resultado ?? "Sem resultado"),
+      nomes: (d.votos ?? []).filter((v) => v.is_divergente).map((v) => v.diretor_nome).filter(Boolean).map((n) => escapeHtml(n)).join(", "),
+    })),
+    publicadas: publicadas.slice(0, 5).map((d) => ({
+      titulo: `${escapeHtml(d.numero_deliberacao ?? "—")} — ${escapeHtml(d.interessado ?? "Sem interessado")}`,
+      meta: `Publicado em ${formatDate(d.data_publicacao)} · Reunião ${formatDate(d.data_reuniao)}`,
+    })),
+  });
 }
 
 // ── Component ─────────────────────────────────────────────────────────────
