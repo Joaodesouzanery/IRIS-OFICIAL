@@ -53,9 +53,24 @@ export async function aprovarCandidato(
     // cria, mas marcado needs_review — a auditoria de duplicatas pega.
     const { data: existentes } = await db
       .from("diretores")
-      .select("id, nome, nome_variantes")
+      .select("id, nome, nome_variantes, review_status")
       .eq("agencia_id", candidato.agencia_id);
-    const lista = (existentes ?? []).map((dir: { id: string; nome: string; nome_variantes?: unknown }) => ({
+    // Antirrecontaminação (ago/2026): nome que casa com diretor REJEITADO não é recriado
+    // nem ressuscitado — a limpeza é definitiva até um humano reverter no banco.
+    const rejeitados = (existentes ?? []).filter((dir: { review_status?: string }) => dir.review_status === "rejeitado");
+    const matchRejeitado = findBestMatch(candidato.nome_detectado, rejeitados.map((dir: any) => ({
+      id: dir.id, nome: dir.nome,
+      nome_variantes: Array.isArray(dir.nome_variantes) ? dir.nome_variantes : [],
+    })));
+    if (matchRejeitado.diretorId && !matchRejeitado.needsReview) {
+      await db.from("diretor_candidatos").update({
+        review_status: "rejeitado", reviewed_at: new Date().toISOString(), reviewed_by: opts.reviewedBy ?? null,
+      }).eq("id", candidato.id);
+      throw new Error("Nome corresponde a diretor rejeitado — candidato descartado.");
+    }
+    // Tolerante a status ausente (linhas antigas sem review_status contam como aprovadas);
+    // só o REJEITADO explícito fica fora.
+    const lista = (existentes ?? []).filter((dir: { review_status?: string }) => dir.review_status !== "rejeitado").map((dir: { id: string; nome: string; nome_variantes?: unknown }) => ({
       id: dir.id,
       nome: dir.nome,
       nome_variantes: Array.isArray(dir.nome_variantes) ? (dir.nome_variantes as string[]) : [],
@@ -204,6 +219,9 @@ export async function aprovarCandidato(
               data_fim: null,
               cargo,
               review_status: "aprovado",
+              // Fonte EXPLÍCITA (ago/2026): mandato inventado a partir de dados nunca vira
+              // base de inferência (getActiveDiretoresForVote exclui 'automatico').
+              fonte_dado: "automatico",
               source_type: candidato.source_type,
               source_confidence: candidato.confidence,
               lgpd_basis: "public_official_function",

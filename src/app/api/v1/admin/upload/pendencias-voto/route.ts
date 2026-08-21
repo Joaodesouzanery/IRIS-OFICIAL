@@ -80,7 +80,7 @@ export async function GET(req: NextRequest) {
   async function diretoresDe(ag: string) {
     const cached = diretoresCache.get(ag);
     if (cached) return cached;
-    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("agencia_id", ag);
+    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("review_status", "aprovado").eq("agencia_id", ag);
     const lista = (data ?? []).map((x: any) => ({
       id: x.id, nome: x.nome, nome_variantes: Array.isArray(x.nome_variantes) ? x.nome_variantes : [],
     }));

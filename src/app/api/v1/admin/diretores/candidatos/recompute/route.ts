@@ -79,6 +79,7 @@ export async function POST(req: NextRequest) {
     const { data } = await db
       .from("diretores")
       .select("id, nome, nome_variantes")
+      .eq("review_status", "aprovado") // rejeitado não casa (antirrecontaminação ago/2026)
       .eq("agencia_id", agenciaId);
     const lista = (data ?? []).map((d: { id: string; nome: string; nome_variantes?: unknown }) => ({
       id: d.id,

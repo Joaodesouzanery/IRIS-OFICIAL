@@ -69,6 +69,7 @@ describe("retroativos destravados (guard active=[]) [etapa41]", () => {
         return {
           select() { return this; },
           eq() { return this; },
+          neq() { return this; },
           lte() { return this; },
           or() { return this; },
           limit() {

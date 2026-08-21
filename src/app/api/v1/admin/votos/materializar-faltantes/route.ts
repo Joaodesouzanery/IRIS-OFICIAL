@@ -97,7 +97,7 @@ export async function POST(req: NextRequest) {
   async function diretoresDa(agenciaId: string): Promise<DiretorVoteRecord[]> {
     const hit = diretoresCache.get(agenciaId);
     if (hit) return hit;
-    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("agencia_id", agenciaId);
+    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("review_status", "aprovado").eq("agencia_id", agenciaId);
     const lista = (data ?? []).map((dir: any) => ({
       id: dir.id,
       nome: dir.nome,

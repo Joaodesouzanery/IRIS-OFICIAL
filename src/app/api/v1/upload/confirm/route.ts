@@ -477,6 +477,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           const { data: diretores } = await db
             .from("diretores")
             .select("id, nome, nome_variantes")
+            .eq("review_status", "aprovado") // rejeitado não casa nem ganha voto (antirrecontaminação)
             .eq("agencia_id", effectiveAgenciaId);
 
           diretoresList = (diretores ?? []).map((dir) => ({

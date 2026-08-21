@@ -53,7 +53,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
   async function diretoresDe(agenciaId: string) {
     const cached = diretoresCache.get(agenciaId);
     if (cached) return cached;
-    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("agencia_id", agenciaId);
+    const { data } = await db.from("diretores").select("id, nome, nome_variantes").eq("review_status", "aprovado").eq("agencia_id", agenciaId);
     const lista = (data ?? []).map((x: any) => ({
       id: x.id, nome: x.nome,
       nome_variantes: Array.isArray(x.nome_variantes) ? x.nome_variantes : [],

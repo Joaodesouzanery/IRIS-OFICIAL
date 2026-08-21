@@ -81,8 +81,13 @@ export async function getActiveDiretoresForVote(
 
   const { data, error } = await db
     .from("mandatos")
-    .select("diretor_id, data_inicio, data_fim, diretores!inner(id, nome, nome_variantes, agencia_id)")
+    .select("diretor_id, data_inicio, data_fim, diretores!inner(id, nome, nome_variantes, agencia_id, review_status)")
     .eq("diretores.agencia_id", agenciaId)
+    // Antirrecontaminação (ago/2026): mandato FABRICADO ('automatico', derivado de voto/1ª
+    // aparição) nunca vira base para inferir MAIS voto — só mandato verificado/manual conta.
+    // E diretor rejeitado não entra no roster mesmo que um mandato antigo tenha sobrado.
+    .neq("fonte_dado", "automatico")
+    .eq("diretores.review_status", "aprovado")
     .lte("data_inicio", dataReuniao)
     .or(`data_fim.is.null,data_fim.gte.${dataReuniao}`);
 

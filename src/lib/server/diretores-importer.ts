@@ -65,6 +65,7 @@ export async function importDiretoresFromUrl(
   const { data: diretores } = await db
     .from("diretores")
     .select("id, nome, nome_variantes")
+    .eq("review_status", "aprovado")
     .eq("agencia_id", agencia.id);
   const diretoresList = (diretores ?? []).map((d: any) => ({
     id: d.id, nome: d.nome, nome_variantes: Array.isArray(d.nome_variantes) ? d.nome_variantes : [],

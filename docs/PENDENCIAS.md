@@ -65,9 +65,17 @@ migration limpa o legado). Os SELECTs de conferência estão no fim do arquivo.
 `deliberacoes(agencia_id, data_reuniao DESC)` + índice de `documentos_regulatorios(status)`.
 Aplicar no SQL Editor (idempotente; o código funciona sem ela, só fica mais lento).
 
+## ⚠️ Migration PENDENTE (ago/2026, limpeza RESIDUAL da ANM)
+`supabase/migrations/20260821130000_limpeza_residual_anm.sql` — allow-list explícita do
+colegiado ANM; rejeita os ~12 "diretores" fabricados que sobreviveram (tinham votos que a
+própria esteira inventou) e APAGA esses votos/mandatos. ⚠️ Rodar antes o SQL de diagnóstico
+(chat de 21/08) e conferir se algum nome fora da lista é diretor real; aplicar DEPOIS do
+deploy (o código fecha as portas: filtro review_status em toda carga de cadastro, mandato
+'automatico' fora do roster, nome rejeitado não renasce).
+
 ## Adiados na rodada de otimização (ago/2026)
-- **Iniciais ANTT dinâmicas** — carregar de `diretores.nome_variantes` em vez do hardcode
-  `ANTT_DIRECTOR_INITIALS` (resistência a troca de diretoria sem deploy).
+- ~~Iniciais ANTT dinâmicas~~ FEITO (21/08): derivadas do cadastro (buildAnttDirectorInitials),
+  hardcode curado vence em conflito — troca de diretoria não exige mais deploy.
 - **Refactor completude-2026** — votos órfãos por count dedicado (hoje baixa o acervo inteiro).
 - **Unificação de marca newsletter×report** — cores/fontes IRIS duplicadas em
   `newsletter-document.ts` e `report-theme.ts`; extrair módulo único quando mexer de novo nos dois.

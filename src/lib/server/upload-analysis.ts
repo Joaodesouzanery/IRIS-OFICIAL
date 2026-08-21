@@ -4,7 +4,7 @@ import { detectDocumentType, extractAtaMetadata, splitAtaItems } from "@/lib/ser
 import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
-import { parseAnttManualDocument, isAnttVotoFilename } from "@/lib/server/antt-manual-parser";
+import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 
@@ -44,6 +44,11 @@ export async function analyzeUploadPdf(input: {
   currentUploadJobId?: string | null;
 }): Promise<PreviewResult> {
   const { file, agencias, db, currentDocumentoId = null, currentUploadJobId = null } = input;
+
+  // Iniciais ANTT DINÂMICAS (ago/2026): deriva do cadastro (com cache de 10min por instância)
+  // — na troca de diretoria, o "Voto DXY" novo resolve sem deploy. Sem db (preview demo),
+  // segue só o mapa curado.
+  await refreshAnttDynamicInitials(db, agencias);
 
   if (!isPdfBuffer(file.buffer)) {
     return {
@@ -620,11 +625,26 @@ function calcAtaPreviewConfidence(input: {
   ].reduce((sum, value) => sum + value, 0);
 }
 
+let anttInitialsCacheAt = 0;
+async function refreshAnttDynamicInitials(db: any | null | undefined, agencias: UploadAnalysisAgency[]) {
+  if (!db) return;
+  const agora = Date.now();
+  if (agora - anttInitialsCacheAt < 10 * 60 * 1000) return;
+  const antt = agencias.find((a) => a.sigla === "ANTT");
+  if (!antt?.id) return;
+  try {
+    const lista = await getDiretoresList(db, antt.id);
+    setAnttDynamicInitials(buildAnttDirectorInitials(lista));
+    anttInitialsCacheAt = agora;
+  } catch { /* fica no mapa curado */ }
+}
+
 async function getDiretoresList(db: any | null | undefined, agenciaId: string | null): Promise<DiretorVoteRecord[]> {
   if (!db || !agenciaId) return [];
   const { data } = await db
     .from("diretores")
     .select("id, nome, nome_variantes")
+    .eq("review_status", "aprovado") // antirrecontaminação (ago/2026): rejeitado não casa
     .eq("agencia_id", agenciaId);
 
   return (data ?? []).map((dir: any) => ({

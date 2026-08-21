@@ -30,6 +30,52 @@ const ANTT_DIRECTOR_INITIALS: Record<string, string> = {
   DGS: "Guilherme Sampaio",
 };
 
+// Iniciais DINÂMICAS derivadas do CADASTRO (ago/2026): na troca de diretoria, o novo
+// "Voto DXY" passa a resolver sem deploy — deriva-se "D"+iniciais (1º nome + cada sobrenome)
+// dos diretores ANTT aprovados. O hardcode curado acima sempre VENCE em conflito; código
+// ambíguo (2 diretores gerariam a mesma sigla) é descartado.
+let DYNAMIC_INITIALS: Record<string, string> = {};
+
+export function setAnttDynamicInitials(map: Record<string, string>) {
+  DYNAMIC_INITIALS = map ?? {};
+}
+
+export function buildAnttDirectorInitials(
+  diretores: Array<{ nome: string; nome_variantes?: string[] }>,
+): Record<string, string> {
+  const porCodigo = new Map<string, Set<string>>();
+  for (const d of diretores) {
+    const nomes = [d.nome, ...(d.nome_variantes ?? [])].filter(Boolean);
+    for (const nome of nomes) {
+      const tokens = nome.trim().split(/\s+/).filter((t) => t.length > 2 || /^[A-ZÁ-Ü]/.test(t));
+      const conteudo = tokens.filter((t) => !/^(de|da|do|dos|das|e)$/i.test(t));
+      if (conteudo.length < 2) continue;
+      const primeiro = conteudo[0][0]?.toUpperCase();
+      if (!primeiro) continue;
+      // Nome de exibição: 1º nome + último sobrenome do nome PRINCIPAL (não da variante).
+      const principalTokens = d.nome.trim().split(/\s+/).filter((t) => !/^(de|da|do|dos|das|e)$/i.test(t));
+      const display = principalTokens.length >= 2 ? `${principalTokens[0]} ${principalTokens[principalTokens.length - 1]}` : d.nome;
+      for (let i = 1; i < conteudo.length; i++) {
+        const codigo = `D${primeiro}${conteudo[i][0]?.toUpperCase() ?? ""}`;
+        if (!/^D[A-Z]{2}$/.test(codigo)) continue;
+        const set = porCodigo.get(codigo) ?? new Set<string>();
+        set.add(display);
+        porCodigo.set(codigo, set);
+      }
+    }
+  }
+  const out: Record<string, string> = {};
+  for (const [codigo, nomes] of porCodigo) {
+    if (nomes.size === 1) out[codigo] = [...nomes][0]; // ambíguo (2 diretores) → fora
+  }
+  return out;
+}
+
+/** Mapa efetivo: dinâmico (cadastro) + curado (hardcode VENCE em conflito). */
+function anttInitials(): Record<string, string> {
+  return { ...DYNAMIC_INITIALS, ...ANTT_DIRECTOR_INITIALS };
+}
+
 const ANTT_DIRECTOR_ALIASES: Array<{ canonical: string; aliases: string[] }> = [
   { canonical: "Guilherme Sampaio", aliases: ["Guilherme Sampaio", "Guilherme Theo Rodrigues da Rocha Sampaio", "Diretor-Geral Guilherme"] },
   { canonical: "Lucas Asfor", aliases: ["Lucas Asfor", "Lucas Asfor Rocha Lima"] },
@@ -51,7 +97,7 @@ const RE_ANTT_VOTO_FILENAME = /\bvoto[\s_-]+(?:vista[\s_-]+)?(D[A-Z]{1,2}|DG)[\s
 export function isAnttVotoFilename(filename: string): boolean {
   const m = RE_ANTT_VOTO_FILENAME.exec(filename);
   if (!m) return false;
-  return Object.prototype.hasOwnProperty.call(ANTT_DIRECTOR_INITIALS, m[1].toUpperCase());
+  return Object.prototype.hasOwnProperty.call(anttInitials(), m[1].toUpperCase());
 }
 
 export function parseAnttManualDocument(text: string, filename: string): AnttManualParseResult {
@@ -323,7 +369,7 @@ function extractDirector(text: string, filename: string, type: AnttManualDocumen
     const relatoriaNome = firstMatch(source, /RELATORIA:\s*Diretoria\s+([^\n:]+?)(?:\s+-\s*[A-Z]{2,3}|\s+TERMO:|\s+N[ÚU]MERO:|$)/i)
       ?? firstMatch(source, /RELATORIA:\s*([^\n:]{5,90})(?:\s+TERMO:|\s+N[ÚU]MERO:|$)/i);
     const textualName = relatoriaNome ? titleCase(relatoriaNome) : signatureName;
-    const fromInitials = initials ? ANTT_DIRECTOR_INITIALS[initials] ?? null : null;
+    const fromInitials = initials ? anttInitials()[initials] ?? null : null;
 
     if (fromInitials && textualName) {
       // Cruzamento: o nome textual precisa pertencer ao mesmo diretor das iniciais.
@@ -411,7 +457,7 @@ function extractSingleProcess(text: string, filename = "", type: AnttManualDocum
       item_numero: "1",
       processo,
       interessado,
-      relator: relator && ANTT_DIRECTOR_INITIALS[relator] ? ANTT_DIRECTOR_INITIALS[relator] : null,
+      relator: relator && anttInitials()[relator] ? anttInitials()[relator] : null,
       assunto,
       decisao,
       resultado: inferResultado(`${assunto ?? ""} ${decisao ?? ""}`),
@@ -430,7 +476,7 @@ function extractSingleProcess(text: string, filename = "", type: AnttManualDocum
     item_numero: "1",
     processo,
     interessado,
-    relator: relator && ANTT_DIRECTOR_INITIALS[relator] ? ANTT_DIRECTOR_INITIALS[relator] : null,
+    relator: relator && anttInitials()[relator] ? anttInitials()[relator] : null,
     assunto,
     decisao,
     resultado: inferResultado(`${assunto ?? ""} ${decisao ?? ""}`),
@@ -761,7 +807,7 @@ function buildWarnings(
     warnings.push("ANTT: autor do voto inferido SÓ pelas iniciais (sem nome textual para conferir) — colisão de iniciais (ex.: DAA↔DAB) possível; revisar.");
   }
   if (type === "voto_individual" && extra?.iniciaisDesconhecidas) {
-    warnings.push(`ANTT: iniciais "${extra.iniciaisDesconhecidas}" não mapeadas na tabela de diretores — a diretoria mudou? Atualizar ANTT_DIRECTOR_INITIALS e revisar o autor do voto.`);
+    warnings.push(`ANTT: iniciais "${extra.iniciaisDesconhecidas}" não mapeadas na tabela de diretores — a diretoria mudou? O cadastro de diretores atualizado resolve sozinho (iniciais dinâmicas); revisar o autor do voto.`);
   }
   if (type === "voto_individual" && extra?.resultadoSoCauda) {
     warnings.push("ANTT: direção do voto inferida da CAUDA do documento (sem fórmula de dispositivo explícita) — revisar favorável/contrário.");
