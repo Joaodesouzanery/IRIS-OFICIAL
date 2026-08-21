@@ -7,6 +7,7 @@ import { cn, formatDateLong, formatNumber } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
+import { useViewer } from "@/lib/use-viewer";
 import type {
   Agencia,
   DeliberacoesBackfillResponse,
@@ -115,6 +116,9 @@ type EnqueueResponse = {
 export default function VotosDiretoresPage() {
   const queryClient = useQueryClient();
   const { demoEnabled } = useDataSyncContext();
+  // Viewer (ago/2026): somente visualização — esconde as ações de escrita (o servidor
+  // também barra com 403; isto é só a UI honesta). Exports (GET) continuam visíveis.
+  const { isViewer } = useViewer();
   const [agenciaId, setAgenciaId] = useState("");
   const [selectedDirector, setSelectedDirector] = useState<DiretorOverviewItem | null>(null);
   const [relatorioBusy, setRelatorioBusy] = useState<"" | "html" | "docx" | "csv">("");
@@ -438,7 +442,7 @@ export default function VotosDiretoresPage() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <button
+          {!isViewer && <button
             onClick={() => rodarTudoMutation.mutate()}
             disabled={rodarTudoMutation.isPending || demoEnabled}
             className="btn-primary"
@@ -446,8 +450,8 @@ export default function VotosDiretoresPage() {
           >
             {rodarTudoMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Zap className="w-4 h-4" />}
             {rodarTudoProgresso ?? "Rodar tudo"}
-          </button>
-          <button
+          </button>}
+          {!isViewer && <button
             onClick={() => backfillMutation.mutate()}
             disabled={backfillMutation.isPending || rodarTudoMutation.isPending || demoEnabled}
             className="btn-secondary"
@@ -455,7 +459,7 @@ export default function VotosDiretoresPage() {
           >
             {backfillMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
             Buscar todas de 2026
-          </button>
+          </button>}
           <button
             type="button"
             onClick={() => gerarRelatorio("html")}
@@ -676,7 +680,7 @@ export default function VotosDiretoresPage() {
                   <div className="flex items-center gap-2 shrink-0">
                     <button
                       onClick={() => aprovarMutation.mutate(c.id)}
-                      disabled={pending || demoEnabled}
+                      disabled={pending || demoEnabled || isViewer}
                       className="btn-primary text-xs"
                     >
                       {pending && aprovarMutation.variables === c.id ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
@@ -684,7 +688,7 @@ export default function VotosDiretoresPage() {
                     </button>
                     <button
                       onClick={() => rejeitarMutation.mutate(c.id)}
-                      disabled={pending || demoEnabled}
+                      disabled={pending || demoEnabled || isViewer}
                       className="btn-secondary text-xs text-error border-error/30 hover:bg-error/10"
                     >
                       <X className="w-3.5 h-3.5" />
@@ -727,7 +731,7 @@ export default function VotosDiretoresPage() {
                       mergeMutation.mutate(par);
                     }
                   }}
-                  disabled={mergeMutation.isPending || demoEnabled}
+                  disabled={mergeMutation.isPending || demoEnabled || isViewer}
                   className="btn-secondary text-xs shrink-0"
                 >
                   {mergeMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}

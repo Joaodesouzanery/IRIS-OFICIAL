@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
+import { useViewer } from "@/lib/use-viewer";
 import {
   FileText,
   BarChart3,
@@ -80,6 +81,8 @@ const MODULE_PATHS: Record<string, string[]> = {
 export function Sidebar() {
   const pathname = usePathname();
   const { demoEnabled, userDemoEnabled, serverDemo, toggleDemo } = useDataSyncContext();
+  // Viewer (ago/2026): esconde Configurações e o toggle DEMO — somente visualização.
+  const { isViewer } = useViewer();
 
   const isActive = (href: string) => {
     const paths = MODULE_PATHS[href] ?? [href];
@@ -123,7 +126,7 @@ export function Sidebar() {
       {/* Navigation */}
       <nav className="flex-1 px-3 py-4 overflow-y-auto">
         <ul className="space-y-0.5">
-          {NAV_ITEMS.map((item) => {
+          {NAV_ITEMS.filter((item) => !(isViewer && item.href === "/dashboard/agencias")).map((item) => {
             const Icon = item.icon;
             const active = isActive(item.href);
             return (
@@ -143,7 +146,7 @@ export function Sidebar() {
 
       {/* Footer */}
       <div className="p-4 border-t border-border space-y-3">
-        <button
+        {!isViewer && <button
           type="button"
           onClick={toggleDemo}
           aria-pressed={userDemoEnabled || serverDemo}
@@ -168,7 +171,10 @@ export function Sidebar() {
               demoEnabled ? "translate-x-4 bg-violet-200" : "bg-text-label",
             )} />
           </span>
-        </button>
+        </button>}
+        {isViewer && (
+          <p className="text-[10px] text-text-muted text-center uppercase tracking-wider">Somente visualização</p>
+        )}
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full bg-brand/20 flex items-center justify-center">
             <Activity className="w-3 h-3 text-brand" />

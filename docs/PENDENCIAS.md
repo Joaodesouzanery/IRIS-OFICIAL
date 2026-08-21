@@ -72,6 +72,15 @@ Aplicar no SQL Editor (idempotente; o código funciona sem ela, só fica mais le
 - **Unificação de marca newsletter×report** — cores/fontes IRIS duplicadas em
   `newsletter-document.ts` e `report-theme.ts`; extrair módulo único quando mexer de novo nos dois.
 
+## Usuário VIEWER (somente visualização) — como adicionar (ago/2026)
+1. Supabase → Authentication → Users → **Add user** (e-mail + senha; "Auto confirm").
+2. Pronto: qualquer usuário que NÃO esteja em `IRIS_OWNER_EMAIL`/`ADMIN_EMAILS` (nem em
+   `admin_users`) entra como **viewer** — vê todos os dashboards, não altera nada (escritas
+   barradas nos guards; UI esconde as ações e mostra o selo "Visualização").
+3. ⚠️ PRÉ-REQUISITO: **signup público DESLIGADO** no Supabase (Authentication → Sign In /
+   Providers → desmarcar "Allow new users to sign up") — senão qualquer pessoa cria conta e
+   vira viewer. Conferir 1x.
+
 ## Backlog que depende do usuário (auditoria de otimizações, ago/2026)
 O código da esteira está sem TODO/FIXME pendente; estes itens precisam de ação/informação do usuário:
 1. **OCR dos escaneados** — código PRONTO (auto-OCR no reprocesso + botão na tela Upload). Falta criar

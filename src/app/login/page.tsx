@@ -111,7 +111,7 @@ function LoginContent() {
           </div>
           <h1 className="text-2xl font-semibold">Entrar no sistema</h1>
           <p className="text-sm leading-6 text-white/58">
-            Acesso restrito ao administrador global. Informe o e-mail e a senha cadastrados.
+            Acesso restrito a usuários cadastrados. Administradores gerenciam os dados; demais usuários entram em modo somente visualização.
           </p>
         </div>
 

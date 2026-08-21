@@ -1,6 +1,5 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextRequest, NextResponse } from "next/server";
-import { isConfiguredAdminEmail, parseConfiguredAdminEmails } from "@/lib/server/admin-emails";
 
 const WRITE_METHODS = new Set(["POST", "PATCH", "PUT", "DELETE"]);
 const PUBLIC_APP_PREFIXES = ["/login", "/setup-owner", "/auth/callback", "/_next", "/favicon", "/robots.txt", "/sitemap.xml"];
@@ -84,18 +83,10 @@ async function handleApiRequest(req: NextRequest) {
     return NextResponse.json({ error: "Sessão inválida" }, { status: 401 });
   }
 
-  if (isConfiguredAdminEmail(user.email) || isAppMetadataAdmin(user)) return NextResponse.next();
-
-  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!serviceRoleKey) {
-    return NextResponse.json({ error: "SUPABASE_SERVICE_ROLE_KEY não configurada" }, { status: 503 });
-  }
-
-  const isAdmin = await checkAdminUser(supabaseUrl, serviceRoleKey, user.id);
-  if (!isAdmin) {
-    return NextResponse.json({ error: "Usuário sem permissão administrativa" }, { status: 403 });
-  }
-
+  // VIEWER (ago/2026): GET é leitura — qualquer usuário AUTENTICADO no Supabase Auth
+  // consulta (viewer = não-admin: só visualiza). As ESCRITAS continuam admin-only nos
+  // guards das rotas (requireAdmin → 403 para viewer). Pré-requisito operacional:
+  // signup público DESLIGADO no Supabase (só o admin cria usuários) — docs/PENDENCIAS.md.
   return NextResponse.next();
 }
 
@@ -130,21 +121,10 @@ async function requireAuthenticatedApp(req: NextRequest) {
     return redirectToLogin(req);
   }
 
-  const configuredEmails = parseConfiguredAdminEmails();
-  if (configuredEmails.size > 0 && !configuredEmails.has(user.email.toLowerCase())) {
-    return redirectToLogin(req, "forbidden");
-  }
-
-  if (configuredEmails.size === 0) {
-    const adminCount = await countActiveAdmins(supabaseUrl, serviceRoleKey);
-    if (adminCount === 0) return response;
-  }
-
-  const isAdmin = await checkAdminUser(supabaseUrl, serviceRoleKey, user.id);
-  if (!isAdmin && !isConfiguredAdminEmail(user.email) && !isAppMetadataAdmin(user)) {
-    return redirectToLogin(req, "forbidden");
-  }
-
+  // VIEWER (ago/2026): sessão válida basta para VER o dashboard — usuário criado no
+  // Supabase Auth que não é admin navega em somente-leitura (toda escrita é barrada
+  // nos guards das rotas; a UI esconde as ações). Antes, e-mail fora de ADMIN_EMAILS
+  // era expulso com "forbidden" — não existia nível de visualização.
   return response;
 }
 
@@ -181,56 +161,5 @@ async function getSupabaseUser(
   }
 }
 
-function isAppMetadataAdmin(user: { app_metadata?: Record<string, unknown> }): boolean {
-  const role = user.app_metadata?.iris_role;
-  const owner = user.app_metadata?.iris_owner;
-  return role === "owner" || role === "admin" || owner === true;
-}
 
-async function checkAdminUser(
-  supabaseUrl: string,
-  serviceRoleKey: string,
-  userId: string,
-): Promise<boolean> {
-  try {
-    const params = new URLSearchParams({
-      select: "id,role",
-      user_id: `eq.${userId}`,
-      active: "eq.true",
-      limit: "1",
-    });
-    const response = await fetch(`${supabaseUrl}/rest/v1/admin_users?${params}`, {
-      headers: {
-        apikey: serviceRoleKey,
-        authorization: `Bearer ${serviceRoleKey}`,
-      },
-    });
-    if (!response.ok) return false;
-    const rows = (await response.json()) as Array<{ role?: string }>;
-    return rows.some((row) => row.role === "owner" || row.role === "admin");
-  } catch {
-    return false;
-  }
-}
 
-async function countActiveAdmins(supabaseUrl: string, serviceRoleKey: string): Promise<number> {
-  try {
-    const params = new URLSearchParams({
-      select: "id",
-      active: "eq.true",
-    });
-    const response = await fetch(`${supabaseUrl}/rest/v1/admin_users?${params}`, {
-      method: "HEAD",
-      headers: {
-        apikey: serviceRoleKey,
-        authorization: `Bearer ${serviceRoleKey}`,
-        prefer: "count=exact",
-      },
-    });
-    const range = response.headers.get("content-range");
-    const count = range?.split("/").at(1);
-    return count ? Number(count) : 1;
-  } catch {
-    return 1;
-  }
-}
