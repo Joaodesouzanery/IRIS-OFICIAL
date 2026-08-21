@@ -17,7 +17,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
-import { findBestMatch, tokenSortRatio, isStrictAbbreviation } from "@/lib/server/name-matcher";
+import { findBestMatch, tokenSortRatio, isStrictAbbreviation, isStrictPersonName } from "@/lib/server/name-matcher";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { mergeDiretores } from "@/lib/server/diretor-merge";
 import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
@@ -116,7 +116,9 @@ export async function POST(req: NextRequest) {
     )[0];
     const lista = await diretoresDe(canonico.agencia_id);
     const match = findBestMatch(canonico.nome_detectado, lista);
-    const aprovavel = Boolean(match.diretorId) && !match.needsReview; // >=0.85
+    // Validação estrita (QA ago/2026): prosa capturada como "nome" não é auto-aprovada nem
+    // vira nome_variante do diretor real — fica para revisão/limpeza.
+    const aprovavel = Boolean(match.diretorId) && !match.needsReview && isStrictPersonName(canonico.nome_detectado); // >=0.85
 
     if (aprovavel) {
       if (amostra.length < 20) amostra.push({ nome: canonico.nome_detectado, agencia_id: canonico.agencia_id, score: Math.round(match.score * 100) / 100, acao: "auto-aprovar", cartoes: grupo.length });

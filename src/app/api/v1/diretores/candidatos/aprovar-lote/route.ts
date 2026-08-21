@@ -94,8 +94,23 @@ export async function POST(req: NextRequest) {
   const pulados: Array<{ id: string; nome: string; reason: string }> = [];
 
   for (const candidato of candidatos ?? []) {
-    if (!candidato.diretor_id && !incluirNovos) {
-      pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "sem diretor cadastrado (novo) — aprovar 1-a-1 ou incluir_novos=true" });
+    if (!candidato.diretor_id) {
+      // QA ago/2026: candidato NOVO com confidence alta caía aqui e o aprovarCandidato criava
+      // diretor SEM os gates (nome estrito, agência colegiada, ≥2 docs) — origem do lixo
+      // "José Fernando … Restituiu-lhe A Presidência" aprovado. Novo é SEMPRE tratado no
+      // fluxo de novos abaixo (que tem os gates); sem incluir_novos, fica pendente.
+      if (incluirNovos) {
+        if (!candidatosNovos.some((c: any) => c.id === candidato.id)) candidatosNovos.push(candidato);
+      } else {
+        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "sem diretor cadastrado (novo) — aprovar 1-a-1 ou incluir_novos=true" });
+      }
+      continue;
+    }
+    // Mesmo casado a diretor real: prosa capturada como "nome" não pode ser aprovada — viraria
+    // nome_variante-lixo do diretor e realimentaria matches futuros. Rejeita o cartão.
+    if (!isStrictPersonName(String(candidato.nome_detectado ?? ""))) {
+      await db.from("diretor_candidatos").update({ review_status: "rejeitado", reviewed_at: new Date().toISOString(), reviewed_by: reviewedBy ?? "aprovar-lote" }).eq("id", candidato.id);
+      pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "nome não passa na validação estrita (prosa) — cartão rejeitado" });
       continue;
     }
     try {
@@ -125,6 +140,11 @@ export async function POST(req: NextRequest) {
     const { data: faixa } = await qFaixa;
     for (const candidato of (faixa ?? []) as any[]) {
       if (!candidato.agencia_id) continue;
+      // Prosa não vira variante de grafia do diretor real (QA ago/2026).
+      if (!isStrictPersonName(String(candidato.nome_detectado ?? ""))) {
+        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "nome não passa na validação estrita (prosa) — não vira variante" });
+        continue;
+      }
       const m = findBestMatchComMargem(String(candidato.nome_detectado ?? ""), await diretoresDe(candidato.agencia_id));
       if (m.diretorId && m.score >= 0.6 && m.margem >= 0.15) {
         try {

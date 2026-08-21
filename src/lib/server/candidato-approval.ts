@@ -7,7 +7,7 @@
  */
 
 import { applyRetroactiveVotes } from "@/lib/server/retroactive-votes";
-import { findBestMatch } from "@/lib/server/name-matcher";
+import { findBestMatch, isStrictPersonName } from "@/lib/server/name-matcher";
 
 export interface CandidatoRow {
   id: string;
@@ -83,6 +83,11 @@ export async function aprovarCandidato(
     }
   }
   if (!diretorId) {
+    // Última linha de defesa (QA ago/2026): criar PESSOA nova exige nome estrito — prosa
+    // capitalizada ("Acesso Externo Com") nunca vira diretor, por nenhum caminho de aprovação.
+    if (!isStrictPersonName(candidato.nome_detectado)) {
+      throw new Error("Nome não passa na validação estrita — não cria diretor a partir de prosa.");
+    }
     const { data: diretor, error: diretorErr } = await db
       .from("diretores")
       .insert({
@@ -113,7 +118,10 @@ export async function aprovarCandidato(
       .single();
     const variantes: string[] = Array.isArray(diretorAtual?.nome_variantes) ? diretorAtual.nome_variantes : [];
     const detectado = candidato.nome_detectado.trim();
+    // Só APRENDE a variante se ela tem forma de nome de pessoa (QA ago/2026): prosa aprovada
+    // contra o diretor real não pode virar variante — realimentaria matches 1.0 com lixo.
     const novaVariante = detectado && detectado !== diretorAtual?.nome && !variantes.includes(detectado)
+      && isStrictPersonName(detectado)
       ? [...variantes, detectado].slice(0, 12)
       : variantes;
 

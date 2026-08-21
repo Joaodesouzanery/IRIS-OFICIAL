@@ -233,6 +233,15 @@ const NOT_A_NAME_WORDS = new Set([
   "diretoria", "colegiada", "colegiado", "agencia", "agência", "anm", "antt", "artesp",
   "voto", "votos", "votou", "pode", "sera", "será", "sendo", "processo", "reuniao", "reunião",
   "item", "pauta", "ata", "materia", "matéria", "decisao", "decisão", "pelo", "pela",
+  // QA ago/2026 — lixo real aprovado na ANM ("Acesso Externo Com", "Ou Acesse Os",
+  // "Elaborar Relatório Bimestral De", "…Restituiu-lhe A Presidência", "…Para A Relatoria"):
+  "acesso", "externo", "externa", "acesse", "nota", "tecnica", "técnica", "relatorio",
+  "relatório", "bimestral", "titulares", "representantes", "sessao", "sessão", "publica",
+  "pública", "avaliacao", "avaliação", "elaborar", "participar", "convidando",
+  "obrigatoriamente", "menos", "dois", "deve", "devem", "poderao", "poderão", "seguinte",
+  "seguintes", "acompanhamento", "presidencia", "presidência", "relatoria", "para", "por",
+  "ele", "ela", "com", "aos", "nas", "nos", "que", "restituiu", "passou", "pautada",
+  "pautadas", "pautado", "pautados", "palavra", "apreciacao", "apreciação",
 ]);
 const NAME_PARTICLES = new Set(["de", "da", "do", "das", "dos", "e", "d"]);
 const NAME_SUFFIXES = new Set(["jr", "jr.", "junior", "júnior", "neto", "filho", "sobrinho", "segundo"]);
@@ -250,8 +259,10 @@ export function isStrictPersonName(raw: string): boolean {
   if (tokens.length < 2 || tokens.length > 7) return false;
   let capitalized = 0;
   for (const t of tokens) {
-    const lower = t.toLocaleLowerCase("pt-BR").replace(/[.,;]$/, "");
+    const lower = t.toLocaleLowerCase("pt-BR").replace(/[.,;:]$/, "");
     if (NOT_A_NAME_WORDS.has(lower)) return false;
+    // Verbo com clítico ("Restituiu-lhe", "Absteve-se") ou ":" no meio → prosa, não nome.
+    if (/-(?:lhe|lhes|se|me|nos|los?|las?|o|a)$/.test(lower) || t.includes(":")) return false;
     if (NAME_PARTICLES.has(lower) || NAME_SUFFIXES.has(lower)) continue;
     // Token de conteúdo: precisa começar com maiúscula (aceita acento) e seguir minúsculas/acentos.
     if (!/^[A-ZÀ-Ý]/.test(t)) return false;

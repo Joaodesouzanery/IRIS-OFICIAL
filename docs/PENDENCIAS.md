@@ -91,9 +91,11 @@ deploy (o código fecha as portas: filtro review_status em toda carga de cadastr
 
 ## Backlog que depende do usuário (auditoria de otimizações, ago/2026)
 O código da esteira está sem TODO/FIXME pendente; estes itens precisam de ação/informação do usuário:
-1. **OCR dos escaneados** — código PRONTO (auto-OCR no reprocesso + botão na tela Upload). Falta criar
-   **`OCR_SPACE_API_KEY`** na Vercel (ocr.space; plano grátis = 3 págs/PDF, 5 MB). Depois: selecionar os
-   escaneados na fila → Reprocessar. PDFs >5 MB agora avisam explicitamente.
+1. **OCR dos escaneados** — código PRONTO (auto-OCR no reprocesso + botão na tela Upload + **chunking
+   de 3 páginas com pdf-lib, ago/2026**: o limite de 3 págs/PDF do tier free deixou de importar — PDFs
+   maiores são divididos e enviados em blocos). Falta só criar **`OCR_SPACE_API_KEY`** na Vercel
+   (ocr.space; grátis, sem cartão). Depois: selecionar os escaneados na fila → Reprocessar. PDFs >5 MB
+   avisam explicitamente. Nota: PDFs SEI (ANM/ANTT/ARTESP) têm camada de texto — OCR é exceção.
 2. **Backfill de `area_regulatoria`** — rodar `SELECT count(*) FROM deliberacoes WHERE area_regulatoria
    IS NULL` no SQL Editor; se for relevante, pedir a rota de backfill (molde do empresas/backfill).
 3. **View `reunioes_consolidadas` órfã** — nada no código a lê; se nada externo consome, gerar migration

@@ -7,7 +7,7 @@
 import crypto from "crypto";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
 import { isPublicUrl } from "@/lib/server/url-guard";
-import { findBestMatch, normalizeName } from "@/lib/server/name-matcher";
+import { findBestMatch, normalizeName, isStrictPersonName } from "@/lib/server/name-matcher";
 
 // Padrões conservadores de nome de diretor em páginas institucionais.
 const RE_CARGO_NOME =
@@ -52,7 +52,10 @@ export async function importDiretoresFromUrl(
     re.lastIndex = 0;
     let m: RegExpExecArray | null;
     while ((m = re.exec(text)) !== null) {
-      const nome = normalizeName(re === RE_CARGO_NOME ? m[2] : m[1]);
+      const bruto = String(re === RE_CARGO_NOME ? m[2] : m[1]).replace(/\s+/g, " ").trim();
+      // Validação estrita ANTES do Title-Case (QA ago/2026: prosa capitalizada não vira candidato).
+      if (!isStrictPersonName(bruto)) continue;
+      const nome = normalizeName(bruto);
       if (nome.split(" ").length >= 2 && nome.length <= 80) nomes.add(nome);
     }
   }

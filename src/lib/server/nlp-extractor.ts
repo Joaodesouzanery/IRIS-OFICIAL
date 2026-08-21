@@ -44,7 +44,7 @@ const RE_PROCEDENCIA = /Proced[eê]ncia[:\s]+([^\n]{3,150})/gi;
 // `(?:DO|R)?` para casar presente/particípio/infinitivo de uma vez. O presente dos
 // verbos -IR (INDEFERE/DEFERE) precisa ser explícito — sua ausência fazia todo
 // INDEFERE-por-unanimidade cair no fallback e virar "Aprovado por Unanimidade" (bug).
-const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|RETIRAD[OA]\s*DE\s*PAUTA|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)\b/gi;
+const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|RETIRAD[OA]\s*DE\s*PAUTA|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)(?![çÇ])\b/gi;
 
 // Unanimidade — qualquer das frases comuns em deliberações brasileiras
 // Alternativas simples sem quantificadores aninhados (evita ReDoS)
@@ -63,15 +63,18 @@ export function hasUnanimidade(text: string): boolean {
 
 // Voto dissidente / divergente — extrai o nome do diretor que votou contra.
 // Cobre "voto divergente/dissidente/contrário/vencido do Diretor X" e "(restando) vencido o Diretor X".
+// SEM flag 'i' (QA ago/2026): o 'i' anulava a Capitalização do macro NOME.
 const RE_VOTO_DISSIDENTE = new RegExp(
-  `(?:venci[dn][oa](?:\\(a\\))?\\s+(?:o\\s+|a\\s+)?(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)?` +
-  `|(?:com\\s+o\\s+|pelo\\s+)?voto\\s+(?:dissidente|divergente|contr[aá]ri[ao]|vencido)\\s+d[oa]\\s+(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)?)(${NOME})`,
-  "gi",
+  `(?:[Vv]enci[dn][oa](?:\\(a\\))?\\s+(?:[oa]\\s+)?(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?` +
+  `|(?:[Cc]om\\s+o\\s+|[Pp]elo\\s+)?[Vv]oto\\s+(?:dissidente|divergente|contr[aá]ri[ao]|vencido)\\s+d[oa]\\s+(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?)(${NOME})`,
+  "g",
 );
 // Forma verbal: "o Diretor X votou contrariamente/de forma divergente", "X divergiu/discordou".
+// SEM flag 'i' (QA ago/2026): com 'i' o macro NOME vira case-insensitive e casa prosa
+// minúscula ("os seguintes pontos") — literais com [Dd] explícito, padrão do RE_VOTO_AUSENTE.
 const RE_VOTO_DISSIDENTE_VERBAL = new RegExp(
-  `(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)?(${NOME})\\s+(?:votou\\s+(?:de\\s+forma\\s+)?(?:contr[aá]ri[ao]|contrariamente|dissidente|divergente)|divergiu|discordou)`,
-  "gi",
+  `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\s+(?:votou\\s+(?:de\\s+forma\\s+)?(?:contr[aá]ri[ao]|contrariamente|dissidente|divergente)|divergiu|discordou)`,
+  "g",
 );
 // Divergência NOMEADA — padrão dominante das atas ANM: "aprovado por maioria ... COM DIVERGÊNCIA
 // APRESENTADA PELO Diretor X" (substantivo "divergência" + "pelo", que RE_VOTO_DISSIDENTE não casa).
@@ -153,9 +156,10 @@ const RE_VOTO_AUSENTE = new RegExp(
 );
 const RE_AUSENTE_LABEL = /Ausente[s]?:\s*([^\n.]{5,180})/gi;
 // Abstenção narrativa: "Fulano absteve-se" / "Fulano se absteve" / "Fulano votou pela abstenção".
+// SEM flag 'i' — vide RE_VOTO_AUSENTE (o 'i' anula a exigência de Capitalização do NOME).
 const RE_VOTO_ABSTENCAO = new RegExp(
-  `(?:Diretor[a]?\\s+)?(${NOME})\\s*(?:absteve-se|se\\s+absteve|(?:votou\\s+(?:pela\\s+|em\\s+)?)?absten[çc][aã]o)`,
-  "gi",
+  `(?:[Dd]iretor[a]?\\s+)?(${NOME})\\s*(?:absteve-se|se\\s+absteve|(?:votou\\s+(?:pela\\s+|em\\s+)?)?[Aa]bsten[çc][aã]o)`,
+  "g",
 );
 
 const MESES: Record<string, number> = {
@@ -175,19 +179,26 @@ const RE_DATA_CABECALHO = /DELIBERA[ÇC][AÃ]O\s*(?:ARTESP\s*)?N[ºo°]?\s*[\d\.
 // ─── Extração de nomes de diretores ───────────────────────────────────────
 // (macro NOME definida no topo do arquivo)
 
-// Padrões A/B/C: contexto de voto em frases narrativas
+// Padrões A/B/C: contexto de voto em frases narrativas.
+// SEM flag 'i' (QA ago/2026): o 'i' anulava a Capitalização do macro NOME e casava prosa
+// minúscula. Literais com [Dd]/[Cc]/[Ff] explícitos, padrão do RE_VOTO_AUSENTE.
 const RE_VOTO_CONTEXTO = [
-  new RegExp(`(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)(${NOME})\\s*(?:votou|vot[ao]|manifestou)`, "gi"),
-  new RegExp(`(?:voto\\s+d[oa]\\s+(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+))(${NOME})`, "gi"),
-  new RegExp(`\\b(${NOME})\\s*${DASHES}\\s*(?:Favorável|Contrári[ao]|Favoravel|Abstenção|Ausente)`, "gi"),
+  new RegExp(`(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)(${NOME})\\s*(?:votou|vot[ao]|manifestou)`, "g"),
+  new RegExp(`(?:[Vv]oto\\s+d[oa]\\s+(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+))(${NOME})`, "g"),
+  new RegExp(`\\b(${NOME})\\s*${DASHES}\\s*(?:[Ff]avor[aá]vel|[Cc]ontr[aá]ri[ao]|[Aa]bsten[çc][aã]o|[Aa]usente)`, "g"),
 ];
 
 // Pattern D extendido: captura nome E direção do voto para split favor/contra
-const RE_VOTO_DIRECAO = new RegExp(`\\b(${NOME})\\s*${DASHES}\\s*(Favor[aá]vel|Contr[aá]ri[ao]|Absten[çc][aã]o|Ausente)`, "gi");
+const RE_VOTO_DIRECAO = new RegExp(`\\b(${NOME})\\s*${DASHES}\\s*([Ff]avor[aá]vel|[Cc]ontr[aá]ri[ao]|[Aa]bsten[çc][aã]o|[Aa]usente)`, "g");
 
 // Adesão ao relator: "X acompanhou/seguiu/aderiu" → favor; "X divergiu/discordou" → contra.
 // Padrão DIRECIONAL dedicado (não entra em RE_VOTO_CONTEXTO para não perder a direção).
-const RE_VOTO_CONCORDANCIA = new RegExp(`(?:Diretor[a]?\\s+|Conselheiro[a]?\\s+)?(${NOME})\\s+(acompanh|segui|aderi|divergi|discord)\\w*`, "gi");
+// Verbos CONJUGADOS com fronteira (\b): os radicais soltos (`segui\w*`, `acompanh\w*`)
+// casavam "seguintes"/"acompanhamento" e criavam candidatos-lixo ("Ou Acesse Os").
+const RE_VOTO_CONCORDANCIA = new RegExp(
+  `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\s+(acompanh(?:ou|a|am|aram|ando)|segui(?:u|ram|ndo)|aderi(?:u|ram|ndo)|divergi(?:u|ram)|discord(?:ou|a|am|aram|ando))\\b`,
+  "g",
+);
 
 // Número ordinal da reunião — apenas o dígito "1176"
 const RE_NUMERO_REUNIAO = /(\d{3,4})[ªa°º]?\s*Reuni[aã]o/gi;
@@ -254,7 +265,9 @@ export function extractSignatariosInline(text: string): string[] {
 
 // Pauta ANM: "1. DIRETOR-GERAL MAURO HENRIQUE MOREIRA SOUSA".
 // Isso identifica o diretor responsavel/relator do item, mas nao prova voto nominal.
-const RE_DIRETOR_HEADING_CAPS = /^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:DIRETOR(?:A)?(?:[- ]GERAL)?|DIRETOR(?:A)?\s+SUBSTITUT[OA]|RELATOR(?:A)?)\s+([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ\s.'-]{5,})\s*$/gm;
+// Alternativa SUBSTITUT[OA] primeiro: senão "DIRETOR SUBSTITUTO X" casa só "DIRETOR" e
+// "SUBSTITUTO" gruda no nome capturado.
+const RE_DIRETOR_HEADING_CAPS = /^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:DIRETOR(?:A)?\s+SUBSTITUT[OA]|DIRETOR(?:A)?(?:[- ]GERAL)?|RELATOR(?:A)?)\s+([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ\s.'-]{5,})\s*$/gm;
 
 // Número da reunião para atas ANM: "ATA 1ª REUNIÃO"
 const RE_NUMERO_ATA = /ATA\s+(\d+)[ªa°º]?\s*REUNI[AÃ]O/i;
@@ -286,19 +299,36 @@ function splitDirectorNames(value: string): string[] {
     .filter((name) => name.split(/\s+/).length >= 2 && name.length <= 100);
 }
 
+// Corte de PROSA no fim do heading (QA ago/2026): as capturas `(.+)$`/caps engoliam a frase
+// seguinte ("…GOMES JÚNIOR restituiu-lhe a presidência…", "…NEVES para a relatoria da matéria
+// por ele pautada:") e o lixo virava "diretor" Title-Case no cadastro. Tudo a partir da
+// primeira palavra de prosa (qualquer caixa) — ou de ":" — é descartado.
+const RE_HEADING_PROSA_CORTE = new RegExp(
+  "\\s+(?:PARA|PELA|PELO|QUE|COM|AO|AOS|NA|NO|NAS|NOS|POR|RESTITUIU\\S*|PASSOU|CONCEDEU?|CONCEDENDO|RELATORIA|PRESID[EÊ]NCIA|MAT[EÉ]RIA\\S*|SESS[AÃ]O|PAUTAD[AO]S?|APRESENTOU|INFORMOU|AGRADECEU|INICIOU|ENCERROU|PROP[ÔO]S)\\b[\\s\\S]*$",
+  "i",
+);
+function trimHeadingNome(raw: string): string {
+  return raw
+    .split(":")[0]
+    .replace(RE_HEADING_PROSA_CORTE, "")
+    .replace(/\b(?:PROCESSO|INTERESSAD[AO]|ASSUNTO|VOTO|VISTA|RECURSO)\b.*$/i, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(" ")
+    .slice(0, 8) // nome de pessoa nunca passa de 8 tokens — o resto é prosa
+    .join(" ");
+}
+
 function extractDiretorHeadings(text: string): string[] {
   const names: string[] = [];
   RE_DIRETOR_HEADING_CAPS.lastIndex = 0;
   let match: RegExpExecArray | null;
   while ((match = RE_DIRETOR_HEADING_CAPS.exec(text)) !== null) {
-    const nome = match[1]
-      .replace(/\b(?:PROCESSO|INTERESSAD[AO]|ASSUNTO|VOTO|VISTA|RECURSO)\b.*$/i, "")
-      .trim();
-    uniquePush(names, nome);
+    uniquePush(names, trimHeadingNome(match[1]));
   }
 
   const lines = text.split("\n");
-  const roleLine = /^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:DIRETOR(?:A)?(?:[- ]GERAL)?|DIRETOR(?:A)?\s+SUBSTITUT[OA]|RELATOR(?:A)?)\s+(.+)$/;
+  const roleLine = /^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:DIRETOR(?:A)?\s+SUBSTITUT[OA]|DIRETOR(?:A)?(?:[- ]GERAL)?|RELATOR(?:A)?)\s+(.+)$/;
   for (let i = 0; i < lines.length; i++) {
     const current = lines[i].trim();
     const lineMatch = roleLine.exec(current);
@@ -313,8 +343,7 @@ function extractDiretorHeadings(text: string): string[] {
     ) {
       nome = `${nome} ${next}`;
     }
-    nome = nome.replace(/\b(?:PROCESSO|INTERESSAD[AO]|ASSUNTO|VOTO|VISTA|RECURSO)\b.*$/i, "").trim();
-    uniquePush(names, nome);
+    uniquePush(names, trimHeadingNome(nome));
   }
   return names;
 }
@@ -595,7 +624,7 @@ export function extractFields(text: string): ExtractedFields {
   // Resultado: escopa a detecção ao DISPOSITIVO (após marcadores decisórios),
   // evitando que verbos incidentais da prosa ("a empresa aprova", "o relator
   // recomenda") sobreponham a decisão real (que invertia o resultado).
-  const dispMatch = text.match(/(?:Em\s+face\s+do\s+exposto|Diante\s+do\s+exposto|Pelo\s+exposto|DECIDE\s+A\s+DIRETORIA|A\s+DIRETORIA(?:\s+DA\s+[\wÀ-ÿ]+)?\s+(?:DECIDE|DELIBEROU|RESOLVE)|Decide-se|RESOLVE)[\s\S]{0,800}/i);
+  const dispMatch = text.match(/(?:Em\s+face\s+do\s+exposto|Diante\s+do\s+exposto|Pelo\s+exposto|Ante\s+(?:a?o\s+)?exposto|Por\s+todo\s+o?\s*exposto|DECIDE\s+A\s+DIRETORIA|A\s+DIRETORIA(?:\s+DA\s+[\wÀ-ÿ]+)?\s+(?:DECIDE|DELIBEROU|RESOLVE)|Decide-se|RESOLVE)[\s\S]{0,800}/i);
   const resultadoScope = dispMatch ? dispMatch[0] : text;
   const resultadoRaw = allMatches(resultadoScope, RE_RESULTADO);
   const decisoesSet = new Set<string>();
@@ -717,7 +746,7 @@ export function extractFields(text: string): ExtractedFields {
   RE_VOTO_DIRECAO.lastIndex = 0;
   let vd: RegExpExecArray | null;
   while ((vd = RE_VOTO_DIRECAO.exec(text)) !== null) {
-    const nome = vd[1].trim();
+    const nome = vd[1].replace(/\s+/g, " ").trim();
     const tipo = vd[2].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     if (nome.length > 4) {
       if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
@@ -738,7 +767,7 @@ export function extractFields(text: string): ExtractedFields {
   RE_VOTO_CONCORDANCIA.lastIndex = 0;
   let vc: RegExpExecArray | null;
   while ((vc = RE_VOTO_CONCORDANCIA.exec(text)) !== null) {
-    const nome = vc[1].trim();
+    const nome = vc[1].replace(/\s+/g, " ").trim();
     const verbo = vc[2].toLowerCase();
     if (nome.length <= 4) continue;
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
@@ -755,7 +784,7 @@ export function extractFields(text: string): ExtractedFields {
     pattern.lastIndex = 0;
     let m: RegExpExecArray | null;
     while ((m = pattern.exec(text)) !== null) {
-      const nome = m[1].trim();
+      const nome = m[1].replace(/\s+/g, " ").trim();
       if (nome.length > 4 && !nomes_votacao.includes(nome)) nomes_votacao.push(nome);
     }
   }
@@ -793,7 +822,7 @@ export function extractFields(text: string): ExtractedFields {
   // prosa ("voto por", "Diretoria Colegiada da ANM pode") como "dissidente" junto dos reais.
   // Contra grava VOTO → só entra o que tem forma de nome de pessoa (Capitalizado + partículas).
   const markContra = (rawNome: string) => {
-    const nome = rawNome.trim();
+    const nome = rawNome.replace(/\s+/g, " ").trim();
     if (nome.length <= 4) return;
     if (!isStrictPersonName(nome)) return;
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
@@ -818,7 +847,7 @@ export function extractFields(text: string): ExtractedFields {
   RE_VOTO_AUSENTE.lastIndex = 0;
   let aus: RegExpExecArray | null;
   while ((aus = RE_VOTO_AUSENTE.exec(text)) !== null) {
-    const nome = (aus[1] ?? aus[2] ?? "").trim();
+    const nome = (aus[1] ?? aus[2] ?? "").replace(/\s+/g, " ").trim();
     if (nome.length > 4) {
       if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
       const idxFavor = nomes_votacao_favor.indexOf(nome);
@@ -842,7 +871,7 @@ export function extractFields(text: string): ExtractedFields {
   RE_VOTO_ABSTENCAO.lastIndex = 0;
   let abs: RegExpExecArray | null;
   while ((abs = RE_VOTO_ABSTENCAO.exec(text)) !== null) {
-    const nome = abs[1].trim();
+    const nome = abs[1].replace(/\s+/g, " ").trim();
     if (nome.length > 4) {
       if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
       const idxFavor = nomes_votacao_favor.indexOf(nome);
@@ -988,11 +1017,11 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   const abstencao: string[] = [];
   const ausente: string[] = [];
   const push = (arr: string[], raw: string) => {
-    const nome = raw.trim();
+    const nome = raw.replace(/\s+/g, " ").trim();
     if (nome.length > 4 && !arr.includes(nome)) arr.push(nome);
   };
   const moveToContra = (raw: string) => {
-    const nome = raw.trim();
+    const nome = raw.replace(/\s+/g, " ").trim();
     if (nome.length <= 4) return;
     // Mesma validação estrita do markContra do documento: contra grava VOTO (QA ago/2026).
     if (!isStrictPersonName(nome)) return;
@@ -1005,7 +1034,7 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   RE_VOTO_DIRECAO.lastIndex = 0;
   let vd: RegExpExecArray | null;
   while ((vd = RE_VOTO_DIRECAO.exec(text)) !== null) {
-    const nome = vd[1].trim();
+    const nome = vd[1].replace(/\s+/g, " ").trim();
     const tipo = vd[2].toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
     if (tipo.includes("ausente")) push(ausente, nome);
     else if (tipo.startsWith("absten")) push(abstencao, nome);

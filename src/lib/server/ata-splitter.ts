@@ -242,7 +242,20 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
 
   // Relator(a) — vai até a próxima seção, sem truncar no "." de abreviações ("Dr.", "A.").
   const reRelator = /Relat(?:or|ora)\s*:\s*(?:Diretor[a]?(?:[- ]Geral)?\s+)?([\s\S]+?)(?=\n\s*(?:Processo|Interessad[oa]|Assunto|VOTO|Voto|Decis[aã]o)\b|$)/i;
-  const relator = cleanAtaField(reRelator.exec(rawText)?.[1]);
+  // Corte de PROSA (QA ago/2026): a captura preguiçosa ainda engolia frase inteira quando a
+  // seção seguinte não vinha ("…Neves para a relatoria da matéria por ele pautada:") — o nome
+  // termina na primeira palavra de prosa/":" e nunca passa de 8 tokens.
+  const relatorBruto = cleanAtaField(reRelator.exec(rawText)?.[1]);
+  const relator = relatorBruto
+    ? relatorBruto
+        .split(":")[0]
+        .replace(/\s+(?:para|pela|pelo|que|com|por|restituiu\S*|passou|concedeu?|relatoria|presid[êe]ncia|mat[ée]ria\S*|pautad[ao]s?)\b[\s\S]*$/i, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .split(" ")
+        .slice(0, 8)
+        .join(" ") || null
+    : relatorBruto;
 
   // Decisão (texto completo)
   const reDecisao = /Decis[aã]o:\s*([\s\S]+?)(?=\bVoto:|$)/i;

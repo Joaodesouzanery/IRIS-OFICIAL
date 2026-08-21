@@ -9,7 +9,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
-import { findBestMatch, normalizeName, isLikelyPersonName } from "@/lib/server/name-matcher";
+import { findBestMatch, normalizeName, isStrictPersonName } from "@/lib/server/name-matcher";
 import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { ensureReuniao } from "@/lib/server/reunioes";
@@ -994,10 +994,17 @@ async function recordDirectorCandidates(
     tipo_documento?: string | null;
   },
 ) {
-  // Só cria candidato para o que PARECE nome de pessoa — bloqueia palavra-função
-  // ("Diretor", "Presidente", "Diretor-Geral") que gerava match-lixo de 35%.
+  // Só cria candidato para o que PASSA na validação ESTRITA de nome de pessoa (QA ago/2026:
+  // isLikelyPersonName deixava prosa capitalizada virar candidato — "Acesso Externo Com",
+  // "Ou Acesse Os" — e o aprovar-lote a promovia a diretor). isStrictPersonName roda ANTES do
+  // normalizeName (o Title-Case neutralizaria o teste de Capitalização) e RE_NOME_INSTITUCIONAL
+  // barra instituição ("Conselho Diretor").
+  const RE_INSTITUCIONAL = /\b(?:Reuni[aã]o|Conselho|Ordin[aá]ria|Extraordin[aá]ria|Diretoria|Superintend[eê]ncia|Ag[eê]ncia|C[aâ]mara|Comiss[aã]o|Presid[eê]ncia|Sistema|Processo|Assunto|Interessad[oa]|Pauta|Sess[aã]o|Colegiad[oa]|Secretaria|Ger[eê]ncia|Coordena[cç][aã]o|N[uú]cleo|Ata|Estado)\b/i;
   const uniqueNames = [...new Set(
-    nomes.map((n) => normalizeName(String(n))).filter((n) => n.length >= 3 && isLikelyPersonName(n)),
+    nomes
+      .map((n) => String(n).replace(/\s+/g, " ").trim())
+      .filter((n) => n.length >= 3 && isStrictPersonName(n) && !RE_INSTITUCIONAL.test(n))
+      .map((n) => normalizeName(n)),
   )];
   if (uniqueNames.length === 0) return;
 
