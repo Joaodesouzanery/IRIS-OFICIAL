@@ -1,6 +1,6 @@
 import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
-import { detectDocumentType, extractAtaMetadata, splitAtaItems } from "@/lib/server/ata-splitter";
+import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
 import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
@@ -227,8 +227,20 @@ export async function analyzeUploadPdf(input: {
   }
 
   let ata_items: PreviewResult["ata_items"] | undefined;
+  let ataItemStats: { itens_pre_dedup: number; duplicatas_removidas: number } | null = null;
   if (tipo_documento === "ata") {
-    const rawItems = splitAtaItems(extraction.text);
+    const ataSplit = splitAtaItemsWithStats(extraction.text);
+    const rawItems = ataSplit.items;
+    ataItemStats = {
+      itens_pre_dedup: ataSplit.itens_pre_dedup,
+      duplicatas_removidas: ataSplit.duplicatas_removidas,
+    };
+    if (ataSplit.duplicatas_removidas > 0) {
+      documentWarnings.push(
+        `Ata com ${ataSplit.duplicatas_removidas} item(ns) repetido(s) no próprio documento — ` +
+        `mantida a ocorrência com dispositivo. Conferir a divisão da ata.`,
+      );
+    }
     // F (ago/2026): item de ata que não parseou deixa de sumir em SILÊNCIO → aviso (revisão).
     const avisoItens = avisoAtaItensFaltando(extraction.text, rawItems.length);
     if (avisoItens) documentWarnings.push(avisoItens);
@@ -503,6 +515,10 @@ export async function analyzeUploadPdf(input: {
       // `impedimentos` é a chave DURÁVEL do motivo: a linha do voto vira "Ausente" (o CHECK não
       // comporta valor novo), e é daqui que a etapa59 promoverá `motivo_nao_voto='impedimento'`.
       impedimentos: fields.nomes_votacao_impedido,
+      // Dedup intra-ata (etapa53). `itens_pre_dedup` é o número que a reconciliação de âncoras
+      // (etapa63) compara: comparar contra o pós-dedup transformaria uma dedup CORRETA em alarme
+      // permanente. `duplicatas_removidas` é informativo e fica registrado, nunca silencioso.
+      ...(ataItemStats ? ataItemStats : {}),
       nomes_presentes: fields.nomes_presentes,
       votos_sugeridos: mainVotosSugeridos,
       signatarios: fields.signatarios,

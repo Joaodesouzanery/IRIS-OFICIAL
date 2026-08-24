@@ -77,7 +77,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const { isZipBuffer, extractPdfEntriesFromZip } = await import("@/lib/server/zip-extractor");
     const { extractFields, calcConfidence, extractItemVotes, buildRoleMap } = await import("@/lib/server/nlp-extractor");
     const { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } = await import("@/lib/server/classifier");
-    const { detectDocumentType, splitAtaItems, extractAtaMetadata } = await import("@/lib/server/ata-splitter");
+    const { detectDocumentType, splitAtaItemsWithStats, extractAtaMetadata } = await import("@/lib/server/ata-splitter");
     const { parseAnttManualDocument } = await import("@/lib/server/antt-manual-parser");
     const { classifyAreaRegulatoria } = await import("@/lib/server/area-regulatoria");
     const { classifyRegulatoryDocument, extractAnmMeetingMetadata } = await import("@/lib/server/regulatory-documents");
@@ -287,7 +287,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         }> | undefined;
 
         if (tipo_documento === "ata") {
-          const rawItems = splitAtaItems(extraction.text);
+          const ataSplit = splitAtaItemsWithStats(extraction.text);
+          const rawItems = ataSplit.items;
+          if (ataSplit.duplicatas_removidas > 0) {
+            documentWarnings.push(
+              `Ata com ${ataSplit.duplicatas_removidas} item(ns) repetido(s) no próprio documento — ` +
+              `mantida a ocorrência com dispositivo. Conferir a divisão da ata.`,
+            );
+          }
           const ataMeta = extractAtaMetadata(extraction.text);
           const roleMap = buildRoleMap(extraction.text);
           ata_items = rawItems.map((item) => {

@@ -157,12 +157,19 @@ const RE_ITEM_ROMANO = /^([IVXLC]+)\s*[-–.]\s*(?:Processo|Interessad[oa]|Assun
 const RE_ITEM_NUMERADO = /^(\d+\.\d+(?:\.\d+)?)\s*[.)]?\s*/;
 // Processo isolado com número romano prefixo: "I- Processo: 27214-848248/2014"
 const RE_PROCESSO_LINE = /Processo(?:\s*n[ºo°]?)?\s*:?\s*([\d][\d\.\-\/]+)/i;
+// Fronteira de SEÇÃO da ata (etapa53). O item só fechava quando o PRÓXIMO item abria, então o
+// último item de cada seção absorvia a prosa de transição — medido: 12 itens nas duas atas ANM,
+// de 2 a 4 linhas cada. O pior caso não é o ruído: os cabeçalhos "N. DIRETOR NOME" são o RELATOR
+// da seção SEGUINTE, e esse nome entrando no item anterior atribui voto ao diretor errado.
+// `\d+\.\s*DIRETOR` não colide com a numeração de item, que exige dois níveis (`\d+\.\d+`).
+const RE_FIM_SECAO =
+  /^(?:MAT[ÉE]RIAS?\b|APROVA[ÇC][ÃA]O\s+D[AE]\s+ATAS?\b|ENCERRAMENTO\b|\d+\.\s*DIRETOR(?:A|[-\s]GERAL)?\b)/i;
 
 /**
  * Divide o texto de uma ata em items individuais.
  * Cada item corresponde a um processo/deliberação.
  */
-export function splitAtaItems(text: string): AtaItem[] {
+function segmentAtaItems(text: string): AtaItem[] {
   const lines = text.split("\n");
   const items: AtaItem[] = [];
   let currentItem: { numero: string; lines: string[] } | null = null;
@@ -172,6 +179,17 @@ export function splitAtaItems(text: string): AtaItem[] {
     const trimmed = lines[i].trim();
     if (!trimmed) {
       if (currentItem) currentItem.lines.push("");
+      continue;
+    }
+
+    // Fronteira de seção FECHA o item corrente (etapa53). As linhas seguintes, até o próximo
+    // marcador de item, são prosa de transição da ata — não pertencem a item nenhum.
+    if (RE_FIM_SECAO.test(trimmed)) {
+      if (currentItem && currentItem.lines.length > 0) {
+        const parsed = parseAtaItem(currentItem.numero, currentItem.lines.join("\n"));
+        if (parsed) items.push(parsed);
+      }
+      currentItem = null;
       continue;
     }
 
@@ -225,6 +243,23 @@ export function splitAtaItems(text: string): AtaItem[] {
   return normalizeNumericAtaHierarchy(items);
 }
 
+/**
+ * Divide o texto de uma ata em itens individuais, já deduplicados.
+ * Cada item corresponde a um processo/deliberação.
+ */
+export function splitAtaItems(text: string): AtaItem[] {
+  return splitAtaItemsWithStats(text).items;
+}
+
+/**
+ * Igual a `splitAtaItems`, mas devolve também os números da dedup para gravar em `raw_extraction`.
+ * `itens_pre_dedup` é o que a reconciliação de âncoras (etapa63) compara — comparar contra o
+ * pós-dedup transformaria uma dedup CORRETA em alarme permanente.
+ */
+export function splitAtaItemsWithStats(text: string): AtaSplitStats {
+  return dedupeIntraAta(normalizeNumericAtaHierarchy(segmentAtaItems(text)));
+}
+
 // ─── Parser de item individual ──────────────────────────────────────────
 
 function parseAtaItem(numero: string, rawText: string): AtaItem | null {
@@ -261,8 +296,12 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   // na 82ª e 43 na 32ª, contra ZERO de `Decisão:`. Sem ela, `item.decisao` saía null em 100% dos 89
   // itens das duas atas e o resultado era inferido do rawText INTEIRO, que carrega relatório,
   // sustentação oral e prosa histórica do item vizinho. A janela fecha no próximo rótulo forte.
+  // A janela fecha no PARÁGRAFO (linha em branco) ou no próximo rótulo forte. O corte por parágrafo
+  // é o que separa o DISPOSITIVO da narrativa que vem depois dele — e essa separação é material:
+  // na 82ª/2.3.1 o parágrafo seguinte relata o pedido de vista da SESSÃO ANTERIOR, e enquanto ele
+  // ficava dentro da "decisão" o item decidido por unanimidade era classificado como retirado.
   const reDecisao =
-    /(?:Decis[aã]o|DELIBERA[ÇC][AÃ]O)\s*:\s*([\s\S]+?)(?=\n\s*(?:VOTO[^:\n]{0,40}:|Voto:|PROCESSO\s*N|ASSUNTO\s*:|INTERESSAD[OA])|$)/i;
+    /(?:Decis[aã]o|DELIBERA[ÇC][AÃ]O)\s*:\s*([\s\S]+?)(?=\n\s*\n|\n\s*(?:VOTO[^:\n]{0,40}:|Voto:|PROCESSO\s*N|ASSUNTO\s*:|INTERESSAD[OA])|$)/i;
   const decisao = reDecisao.exec(rawText)?.[1]?.trim() ?? null;
 
   // Resultado / Voto
@@ -281,12 +320,22 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   // (foi sobrestada por pedido de vista) → não gera decisão nem voto final. Antes o "Voto:" era
   // avaliado primeiro e o item de maioria/sobrestado virava "Aprovado" (QA jul/2026). NÃO casa
   // "Voto Vista" (rótulo de ASSUNTO, item que ESTÁ sendo decidido) — só sobrest/retirada/pedido.
-  const suspenso = /retirad[oa]\s+de\s+pauta|sobrest|ped(?:iu|ido)\s+(?:de\s+)?vistas?/i.test(rawText);
+  const suspenso = RE_SUSPENSAO.test(rawText);
   // Voto VENCEDOR (ANM): tem precedência sobre o `Voto:` genérico e sobre o rawText, porque é o
   // único texto que corresponde ao que o colegiado efetivamente decidiu.
   const votoPrevalecente = pickVotoPrevalecente(rawText, decisao);
 
-  if (suspenso) {
+  // …MAS a menção a vista/sobrestamento é HISTÓRICA quando o próprio dispositivo conclui a matéria.
+  // Medido na 82ª/2.3.1: "DELIBERAÇÃO: Voto do Relator … aprovado por unanimidade pelos membros da
+  // Diretoria Colegiada" e, logo depois, o RELATO de que houve pedido de vista NA SESSÃO ANTERIOR
+  // ("tendo o Diretor Tasso Mendonça Júnior pedido vista na ocasião"). O gate global lia esse
+  // passado como presente e enterrava um item efetivamente DECIDIDO — com todos os seus votos.
+  // Exige as DUAS condições: dispositivo conclusivo E nenhuma suspensão DENTRO do dispositivo —
+  // senão "deliberação sobrestada … aprovado o pedido de vista" escaparia pelo verbo "aprovado".
+  const decididoNoDispositivo =
+    !!decisao && RE_DISPOSITIVO_CONCLUSIVO.test(decisao) && !RE_SUSPENSAO.test(decisao);
+
+  if (suspenso && !decididoNoDispositivo) {
     resultado = "Retirado de Pauta";
   } else if (votoPrevalecente) {
     resultado = inferResultadoFromText(votoPrevalecente, unanimidade);
@@ -324,6 +373,52 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
     raw_text: rawText,
     ...(warnings ? { warnings } : {}),
   };
+}
+
+export interface AtaSplitStats {
+  items: AtaItem[];
+  /** Itens ANTES da dedup — é este número que o C03 compara com a contagem de âncoras (etapa63). */
+  itens_pre_dedup: number;
+  duplicatas_removidas: number;
+}
+
+/**
+ * Dedup INTRA-ATA: a MESMA matéria aparecendo duas vezes dentro do MESMO documento.
+ *
+ * Não é hipótese: a 82ª ROP traz o item 4.1.6, processo 48405.950567/2016-78, duas vezes — uma
+ * ocorrência curta (979 caracteres, sem dispositivo completo) e uma longa (2.148). Sem dedup, o
+ * processo entra duas vezes na base, o colegiado aparece votando duas vezes a mesma coisa e todo
+ * denominador de "itens decididos" fica inflado.
+ *
+ * A chave exige PROCESSO: dois itens de mesmo número sem processo podem ser matérias distintas
+ * (numeração reiniciada por seção), e fundi-las apagaria uma decisão real. Vence a ocorrência com
+ * dispositivo; havendo dispositivo nas duas, a mais completa.
+ */
+export function dedupeIntraAta(items: AtaItem[]): AtaSplitStats {
+  const resultado: AtaItem[] = [];
+  const indicePorChave = new Map<string, number>();
+  let duplicatas_removidas = 0;
+
+  for (const item of items) {
+    if (!item.processo) {
+      resultado.push(item);
+      continue;
+    }
+    const chave = `${item.item_numero}|${item.processo}`;
+    const existente = indicePorChave.get(chave);
+    if (existente === undefined) {
+      indicePorChave.set(chave, resultado.length);
+      resultado.push(item);
+      continue;
+    }
+    duplicatas_removidas++;
+    const atual = resultado[existente];
+    const venceNovo = (!atual.decisao && !!item.decisao)
+      || (!!atual.decisao === !!item.decisao && item.raw_text.length > atual.raw_text.length);
+    if (venceNovo) resultado[existente] = item;
+  }
+
+  return { items: resultado, itens_pre_dedup: items.length, duplicatas_removidas };
 }
 
 function normalizeNumericAtaHierarchy(items: AtaItem[]): AtaItem[] {
@@ -365,6 +460,15 @@ function normalizeNumericAtaHierarchy(items: AtaItem[]): AtaItem[] {
 
   return normalized;
 }
+
+// Suspensão da deliberação (retirada/sobrestamento/pedido de vista). NÃO casa "Voto Vista", que é
+// rótulo de ASSUNTO — item que ESTÁ sendo decidido, não suspenso.
+const RE_SUSPENSAO = /retirad[oa]\s+de\s+pauta|sobrest|ped(?:iu|ido)\s+(?:de\s+)?vistas?/i;
+// Dispositivo CONCLUSIVO: a matéria foi decidida NESTA sessão. Usado só para tirar a precedência
+// GLOBAL do gate de suspensão (etapa53) — nunca para inferir resultado, que continua saindo do
+// voto vencedor.
+const RE_DISPOSITIVO_CONCLUSIVO =
+  /\b(?:aprovad[oa]|indeferid[oa]|deferid[oa]|providos?|improvidos?|ratificad[oa]|homologad[oa])\b|(?:dar|negar|deu|negou)\s+provimento/i;
 
 // Bloco de voto por PAPEL. A ata ANM traz o voto do relator e, havendo dissenso, os votos dos
 // revisores (primeiro/segundo/terceiro) — e é a linha `DELIBERAÇÃO:` que diz qual PREVALECEU.
