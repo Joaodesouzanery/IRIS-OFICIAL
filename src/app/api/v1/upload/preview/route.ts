@@ -307,9 +307,17 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               votos_abstencao_detectados: itemVotes.abstencao,
               votos_ausentes_detectados: itemVotes.ausente,
               votos_impedidos_detectados: itemVotes.impedido,
+              // Espelha upload-analysis: os avisos do splitter e o da etapa51 (divergência sem
+              // dissidente imputável) seguem para o revisor em vez de sumirem no map.
+              ...(((item as { warnings?: string[] }).warnings?.length ?? 0) + itemVotes.avisos.length > 0
+                ? { warnings: [...((item as { warnings?: string[] }).warnings ?? []), ...itemVotes.avisos] }
+                : {}),
               unanimidade_detectada: item.unanimidade,
             };
           });
+          for (const item of ata_items) {
+            for (const w of (item as { warnings?: string[] }).warnings ?? []) documentWarnings.push(w);
+          }
           // Sobrescrever data se o campo estava vazio (deliberação não detectou, mas ata sim)
           if (!fields.data_reuniao && ataMeta.data_reuniao) {
             fields.data_reuniao = ataMeta.data_reuniao;

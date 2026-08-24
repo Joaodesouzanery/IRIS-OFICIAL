@@ -167,6 +167,16 @@ function normalizeWhitespace(text: string): string {
     // "Diretor-\nGeral" — e colar sem hífen destruiria todos. Também conserta o dispositivo
     // "NEGAR-\nLHE PROVIMENTO", que sem isto some da classificação de resultado.
     .replace(/([A-Za-zÀ-ÿ])-\n([A-ZÀ-ÖØ-Þ])/g, "$1-$2")
+    // Espaço PERDIDO antes de substantivo de cargo: o pdf-parse cola a última palavra da linha na
+    // primeira da seguinte ("presidida peloDiretor-Geral, Mauro…", "presençadoDiretor Substituto").
+    // Medido: 4 colagens em TODO o corpus — 2 reais (ambas no preâmbulo da 82ª, ambas impedindo a
+    // resolução cargo→nome) e 2 do "YouTube" de uma URL. Por isso a regra é ENUMERADA e não
+    // `[a-z][A-Z]` genérico: separar por classe partiria "YouTube" e, pior, nomes de empresa
+    // (EcoRodovias, ViaOeste, AutoBAn), quebrando o casamento por empresa.
+    .replace(
+      /([a-zà-ÿ])(?=(?:Diretor(?:a|ia|es)?|Conselheir[oa]s?|Relator[a]?|Revisor[a]?|Procurador[a]?|Secret[áa]ri[oa]|Ouvidor[a]?|Superintendente|Presidente)\b)/g,
+      "$1 ",
+    )
     // Zero-width/BOM → remover (quebram o casamento de rótulos como "Assunto:").
     .replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g, "")
     // Espaços unicode visíveis (nbsp, en/em space, narrow nbsp, ideográfico) → espaço comum.

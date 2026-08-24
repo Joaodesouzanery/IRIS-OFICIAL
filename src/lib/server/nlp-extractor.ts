@@ -70,11 +70,37 @@ const RE_VOTO_DISSIDENTE = new RegExp(
   `|(?:[Cc]om\\s+o\\s+|[Pp]elo\\s+)?[Vv]oto\\s+(?:dissidente|divergente|contr[aá]ri[ao]|vencido)\\s+d[oa]\\s+(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?)(${NOME})`,
   "g",
 );
+// ALVO da divergência que vira VOTO (etapa51): tem de ser um membro do COLEGIADO.
+// Medido nas duas atas ANM: as 4 ocorrências verbais de "divergir/divergindo" divergem de
+// manifestação técnica, do posicionamento da Procuradoria ou de um Voto CS — nenhuma de um colega.
+// Sem objeto obrigatório, cada uma viraria um "Desfavoravel" fabricado: o diretor que discordou da
+// ÁREA TÉCNICA e teve o voto APROVADO POR UNANIMIDADE apareceria como dissidente do colegiado.
+const ALVO_DIVERGENCIA_COLEGIADO =
+  "(?:[Rr]elator[a]?|[Rr]evisor[a]?|[Dd]iretor[a]?(?:[-\\s]Geral)?|[Cc]onselheir[oa]|[Vv]oto\\s+d[oa]\\s+[Rr]e(?:lator|visor))";
+
 // Forma verbal: "o Diretor X votou contrariamente/de forma divergente", "X divergiu/discordou".
 // SEM flag 'i' (QA ago/2026): com 'i' o macro NOME vira case-insensitive e casa prosa
 // minúscula ("os seguintes pontos") — literais com [Dd] explícito, padrão do RE_VOTO_AUSENTE.
+// "votou contrariamente/de forma divergente" é inequívoco e dispensa objeto; "divergiu/discordou"
+// EXIGE o objeto do colegiado (vide ALVO_DIVERGENCIA_COLEGIADO).
 const RE_VOTO_DISSIDENTE_VERBAL = new RegExp(
-  `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\s+(?:votou\\s+(?:de\\s+forma\\s+)?(?:contr[aá]ri[ao]|contrariamente|dissidente|divergente)|divergiu|discordou)`,
+  // `\.?` tolera a abreviação de sufixo ("Tasso Mendonça Jr. divergiu do Relator"), onipresente
+  // nas atas ANM — sem ela o ponto separava o nome do verbo e o dissenso se perdia.
+  `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\.?\\s+(?:` +
+    `votou\\s+(?:de\\s+forma\\s+)?(?:contr[aá]ri[ao]|contrariamente|dissidente|divergente)` +
+    `|(?:divergiu|discordou)\\s+d[oa]\\s+${ALVO_DIVERGENCIA_COLEGIADO}` +
+  `)`,
+  "g",
+);
+// Voto contrário citado só pelo CARGO: "DELIBERAÇÃO: Voto do revisor aprovado por maioria pelos
+// diretores presentes, com voto contrário do Diretor-Geral, relator original da matéria" (32ª REP).
+// O nome não aparece na linha. Sem resolver o cargo pelo preâmbulo, essa divergência REAL some — e
+// como "por maioria" casa RE_CONTESTADO, o item ainda esvazia o pool: perde-se o item inteiro.
+// Medido: 1 ocorrência na 32ª, 0 nas demais fixtures.
+const RE_VOTO_CONTRARIO_CARGO = new RegExp(
+  `(?:[Vv]enci[dn][oa](?:\\(a\\))?\\s+(?:[oa]\\s+)?` +
+  `|(?:[Cc]om\\s+o\\s+|[Pp]elo\\s+)?[Vv]oto\\s+(?:dissidente|divergente|contr[aá]ri[ao]|vencido)\\s+d[oa]\\s+)` +
+  `(Diretor[-\\s]Geral(?:\\s+Substitut[oa])?)(?![A-Za-zÀ-ÿ])`,
   "g",
 );
 // Divergência NOMEADA — padrão dominante das atas ANM: "aprovado por maioria ... COM DIVERGÊNCIA
@@ -136,6 +162,34 @@ export function extractDivergentesNomeados(text: string, roleMap: Record<string,
     if (resolved && !out.includes(resolved)) out.push(resolved);
   }
   return out;
+}
+
+/**
+ * Nomes de diretores com VOTO CONTRÁRIO citado apenas pelo CARGO, resolvidos pelo preâmbulo.
+ * Só resolve o que o roleMap conhece: cargo sem nome no documento não vira voto (seria adivinhar
+ * quem exercia a função). Mesma disciplina de `extractDivergentesNomeados`.
+ */
+export function extractContrariosPorCargo(text: string, roleMap: Record<string, string> = {}): string[] {
+  const out: string[] = [];
+  RE_VOTO_CONTRARIO_CARGO.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = RE_VOTO_CONTRARIO_CARGO.exec(text)) !== null) {
+    const key = normalizeRoleKey(m[1]);
+    const resolved = roleMap[key] ?? (key.startsWith("diretor-geral") ? roleMap["diretor-geral"] : undefined);
+    if (resolved && !out.includes(resolved)) out.push(resolved);
+  }
+  return out;
+}
+
+/**
+ * O item declara dissenso (maioria/vencido/divergência) mas NENHUM dissidente foi atribuído.
+ * Não vira voto — vira AVISO, para o revisor humano decidir. É o caso do "voto por divergir"
+ * sem sujeito e da "terceira via": há divergência no texto, mas não há a quem imputá-la.
+ */
+export function detectDivergenciaNaoAtribuida(text: string, contraCount: number): string | null {
+  if (contraCount > 0) return null;
+  if (!RE_CONTESTADO.test(text) && !/\bdivergi(?:r|ndo|u|ram)\b/i.test(text)) return null;
+  return "Divergência declarada no texto sem dissidente identificável — atribuir manualmente.";
 }
 
 // Marcadores de item CONTESTADO (maioria/empate/qualidade/divergência/vencido) — quando presentes e
@@ -258,7 +312,12 @@ const RE_VOTO_DIRECAO = new RegExp(`\\b(${NOME})\\s*${DASHES}\\s*([Ff]avor[aá]v
 // Verbos CONJUGADOS com fronteira (\b): os radicais soltos (`segui\w*`, `acompanh\w*`)
 // casavam "seguintes"/"acompanhamento" e criavam candidatos-lixo ("Ou Acesse Os").
 const RE_VOTO_CONCORDANCIA = new RegExp(
-  `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\s+(acompanh(?:ou|a|am|aram|ando)|segui(?:u|ram|ndo)|aderi(?:u|ram|ndo)|divergi(?:u|ram)|discord(?:ou|a|am|aram|ando))\\b`,
+  `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\s+(?:` +
+    `(acompanh(?:ou|a|am|aram|ando)|segui(?:u|ram|ndo)|aderi(?:u|ram|ndo))\\b` +
+    // Mesma exigência de objeto do RE_VOTO_DISSIDENTE_VERBAL: este ramo grava CONTRA, e
+    // "divergiu das manifestações técnicas" não é dissenso do colegiado.
+    `|(divergi(?:u|ram)|discord(?:ou|a|am|aram|ando))\\s+d[oa]\\s+${ALVO_DIVERGENCIA_COLEGIADO}\\b` +
+  `)`,
   "g",
 );
 
@@ -831,7 +890,8 @@ export function extractFields(text: string): ExtractedFields {
   let vc: RegExpExecArray | null;
   while ((vc = RE_VOTO_CONCORDANCIA.exec(text)) !== null) {
     const nome = vc[1].replace(/\s+/g, " ").trim();
-    const verbo = vc[2].toLowerCase();
+    // vc[2] = adesão (acompanhou/seguiu/aderiu) · vc[3] = divergência COM objeto do colegiado.
+    const verbo = (vc[2] ?? vc[3] ?? "").toLowerCase();
     if (nome.length <= 4) continue;
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
     if (/^(?:divergi|discord)/.test(verbo)) {
@@ -926,7 +986,10 @@ export function extractFields(text: string): ExtractedFields {
 
   // Divergência NOMEADA — "aprovado por maioria ... com divergência apresentada pelo Diretor X"
   // (padrão dominante das atas ANM). Resolve cargo→nome pelo preâmbulo ("pelo Diretor-Geral").
-  for (const nome of extractDivergentesNomeados(text, buildRoleMap(text))) markContra(nome);
+  const roleMapDoc = buildRoleMap(text);
+  for (const nome of extractDivergentesNomeados(text, roleMapDoc)) markContra(nome);
+  // Contrário citado só pelo cargo ("voto contrário do Diretor-Geral") — etapa51.
+  for (const nome of extractContrariosPorCargo(text, roleMapDoc)) markContra(nome);
 
   RE_VOTO_AUSENTE.lastIndex = 0;
   let aus: RegExpExecArray | null;
@@ -1080,6 +1143,8 @@ export interface ItemVotes {
   ausente: string[];
   /** Diretores presentes que NÃO votaram este item (impedimento/suspeição). */
   impedido: string[];
+  /** Avisos ao revisor — divergência declarada sem dissidente imputável (etapa51). */
+  avisos: string[];
 }
 
 const RE_VOTARAM_FAVOR = new RegExp(
@@ -1153,11 +1218,15 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   // itens ANM de maioria com divergência ficavam SEM voto nenhum (esteira de votos QA jul/2026).
   for (const nome of extractDivergentesNomeados(text, roleMap)) moveToContra(nome);
 
+  // Voto contrário citado só pelo CARGO ("com voto contrário do Diretor-Geral, relator original").
+  // Mesma resolução pelo preâmbulo — sem ela a divergência real do DG na 32ª REP é perdida.
+  for (const nome of extractContrariosPorCargo(text, roleMap)) moveToContra(nome);
+
   // Adesão/divergência ao relator
   RE_VOTO_CONCORDANCIA.lastIndex = 0;
   let vc: RegExpExecArray | null;
   while ((vc = RE_VOTO_CONCORDANCIA.exec(text)) !== null) {
-    if (/^(?:divergi|discord)/.test(vc[2].toLowerCase())) moveToContra(vc[1]);
+    if (/^(?:divergi|discord)/.test((vc[2] ?? vc[3] ?? "").toLowerCase())) moveToContra(vc[1]);
     else push(favor, vc[1]);
   }
 
@@ -1192,12 +1261,15 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   for (const arr of [favor, contra, abstencao, ausente]) removeImpedido(arr);
 
   const semRole = (arr: string[]) => arr.filter((n) => !isRoleWordOnly(n));
+  const contraFinal = semRole(contra);
+  const aviso = detectDivergenciaNaoAtribuida(text, contraFinal.length);
   return {
     favor: semRole(favor),
-    contra: semRole(contra),
+    contra: contraFinal,
     abstencao: semRole(abstencao),
     ausente: semRole(ausente),
     impedido: semRole(impedido),
+    avisos: aviso ? [aviso] : [],
   };
 }
 

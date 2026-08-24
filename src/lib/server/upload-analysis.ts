@@ -255,6 +255,13 @@ export async function analyzeUploadPdf(input: {
         votos_abstencao_detectados: itemVotes.abstencao,
         votos_ausentes_detectados: itemVotes.ausente,
         votos_impedidos_detectados: itemVotes.impedido,
+        // Avisos do item: os do splitter (que este map DESCARTAVA — o leitor em `documentWarnings`
+        // nunca os via) mais o da etapa51, divergência declarada sem dissidente imputável.
+        // Não casa INFO_WARNING_RE de propósito: é problema de QUALIDADE — há dissenso no texto e
+        // ninguém a quem imputá-lo, exatamente o caso que exige olho humano.
+        ...(((item as { warnings?: string[] }).warnings?.length ?? 0) + itemVotes.avisos.length > 0
+          ? { warnings: [...((item as { warnings?: string[] }).warnings ?? []), ...itemVotes.avisos] }
+          : {}),
         unanimidade_detectada: item.unanimidade,
       };
     });
