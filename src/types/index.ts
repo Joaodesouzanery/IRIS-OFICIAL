@@ -139,7 +139,9 @@ export interface VotoSugerido {
   nome: string;
   diretor_id?: string | null;
   tipo_voto: "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente";
-  origem: "nominal" | "inferido_mandato" | "contrario" | "abstencao" | "ausente";
+  // "impedido": declarado impedido/suspeito pela própria ata — presente na sessão, sem voto.
+  // Gravado como tipo_voto "Ausente" (o CHECK não comporta valor novo), distinto só aqui.
+  origem: "nominal" | "inferido_mandato" | "contrario" | "abstencao" | "ausente" | "impedido";
   is_nominal: boolean;
 }
 
@@ -473,6 +475,8 @@ export interface PreviewResultFields {
   nomes_votacao_contra: string[];
   nomes_votacao_abstencao: string[];
   nomes_votacao_ausente: string[];
+  /** Impedidos/suspeitos: presentes, mas sem voto (etapa50). */
+  nomes_votacao_impedido?: string[];
   /** Diretores presentes declarados no documento ("Constituição:"/"Presentes:"). */
   nomes_presentes?: string[];
   votos_sugeridos?: VotoSugerido[];
@@ -493,6 +497,8 @@ export interface AtaPreviewItem {
   votos_contra_detectados?: string[];
   votos_abstencao_detectados?: string[];
   votos_ausentes_detectados?: string[];
+  /** Impedidos/suspeitos declarados no item — presentes, sem voto (etapa50). */
+  votos_impedidos_detectados?: string[];
   votos_sugeridos?: VotoSugerido[];
   unanimidade_detectada?: boolean;
   needs_review?: boolean;
@@ -560,6 +566,8 @@ export interface ConfirmDelib {
   nomes_votacao_contra: string[];
   nomes_votacao_abstencao?: string[];
   nomes_votacao_ausente?: string[];
+  /** Impedidos/suspeitos: presentes, mas sem voto (etapa50). */
+  nomes_votacao_impedido?: string[];
   /** Presentes declarados no documento — base preferencial da inferência de unanimidade. */
   nomes_presentes?: string[];
   votos_sugeridos?: VotoSugerido[];

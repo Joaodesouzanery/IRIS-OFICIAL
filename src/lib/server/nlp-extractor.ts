@@ -14,6 +14,7 @@
 
 import { parseDataExtensoANM } from "./ata-splitter";
 import { isRoleWordOnly, isLikelyPersonName, isStrictPersonName } from "./name-matcher";
+import { flattenForMatch } from "./pdf-extractor";
 
 // ─── Regex patterns ────────────────────────────────────────────────────────
 // Nome completo aceitando PREPOSIÇÕES internas (de/da/do/dos/das/e) entre tokens
@@ -161,6 +162,67 @@ const RE_VOTO_ABSTENCAO = new RegExp(
   `(?:[Dd]iretor[a]?\\s+)?(${NOME})\\s*(?:absteve-se|se\\s+absteve|(?:votou\\s+(?:pela\\s+|em\\s+)?)?[Aa]bsten[çc][aã]o)`,
   "g",
 );
+
+// ─── Impedimento / não-participação ───────────────────────────────────────
+// O diretor ESTAVA na sessão mas NÃO votou este item. Sem isto ele permanecia no roster e a
+// inferência por mandato FABRICAVA um "Favoravel" (vote-inference: activeDiretoresList sem voto
+// nominal → Favoravel). Casos reais: 7 na 83ª ROP, 1 na 81ª, 1 na 82ª (dentro do golden-set).
+//
+// O CONECTOR entre o nome e a fórmula é ENUMERADO, nunca curinga. Com `.{0,80}` a regex saltaria
+// do nome de um diretor para a fórmula de OUTRO — e a 81ª tem exatamente essa armadilha:
+// "…voto originalmente proferido pelo então Diretor Carlos Cordeiro, cujo gabinete é atualmente
+// ocupado pelo Diretor José Fernando de Mendonça Gomes Júnior, este não participaria da votação".
+// O impedido é o SEGUNDO nome; um curinga atribuiria o impedimento ao primeiro.
+//
+// SEM flag 'i' — vide RE_VOTO_AUSENTE (o 'i' anula a Capitalização exigida pelo macro NOME).
+const CONECTOR_IMPEDIMENTO = "(?:\\s*,?\\s*(?:este|esta|o\\s+qual|a\\s+qual))?";
+const FORMULA_IMPEDIMENTO =
+  "(?:encontrava-se\\s+impedid[oa]" +
+  "|(?:se\\s+)?declarou[-\\s]se\\s+(?:impedid[oa]|suspeit[oa])" +
+  "|est(?:á|a|ava)\\s+impedid[oa]" +
+  "|impedid[oa]\\s+de\\s+votar" +
+  "|n[ãa]o\\s+(?:votaria|votou)" +
+  // "participar" exige OBJETO de votação: "não participa da Diretoria Colegiada" é biografia,
+  // não impedimento. Sem o objeto, a fórmula marcaria quem apenas deixou o colegiado.
+  "|n[ãa]o\\s+(?:participaria|participou|participa)\\s+(?:d[aeo]|n[ao])\\s+" +
+  "(?:vota[çc][ãa]o|delibera[çc][ãa]o|aprecia[çc][ãa]o|discuss[ãa]o|julgamento)" +
+  ")";
+const RE_VOTO_IMPEDIDO = new RegExp(
+  `(?:[Dd]iretor[a]?(?:[-\\s](?:Geral|Substitut[oa]))?\\s+|[Cc]onselheir[oa]\\s+)(${NOME})` +
+  `${CONECTOR_IMPEDIMENTO}\\s+${FORMULA_IMPEDIMENTO}`,
+  "g",
+);
+// Forma invertida, com o rótulo antes do nome: "Impedido de votar o Diretor X".
+const RE_IMPEDIMENTO_LABEL = new RegExp(
+  `[Ii]mpedid[oa]s?\\s+de\\s+votar\\s+(?:[oa]\\s+)?(?:[Dd]iretor[a]?(?:[-\\s](?:Geral|Substitut[oa]))?\\s+|[Cc]onselheir[oa]\\s+)(${NOME})`,
+  "g",
+);
+// GUARD OBRIGATÓRIO — impedimento EXPRESSAMENTE AFASTADO. A 83ª/2.5.1 diz "por se tratar de
+// matéria anteriormente relatada pelo Diretor Caio Mário Trivellato Seabra Filho, NÃO HAVIA
+// IMPEDIMENTO à participação dos demais Diretores na votação". A janela é removida antes de
+// procurar impedimento: marcar alguém ali seria inverter o sentido do documento.
+const RE_IMPEDIMENTO_NEGADO = /n[ãa]o\s+h(?:avia|á|ouve)\s+impedimento[^.]{0,200}\.?/gi;
+
+/**
+ * Nomes de diretores IMPEDIDOS de votar no trecho.
+ * Roda sobre o texto ACHATADO: medido na 83ª, "encontrava-se impedido de votar" aparece 3× com as
+ * quebras de linha do PDF e 7× com os espaços colapsados — mais da metade dos impedimentos se
+ * perderia, e cada um perdido vira um "Favoravel" fabricado.
+ */
+export function extractImpedidos(text: string): string[] {
+  const flat = flattenForMatch(text).replace(RE_IMPEDIMENTO_NEGADO, " ");
+  const nomes: string[] = [];
+  for (const re of [RE_VOTO_IMPEDIDO, RE_IMPEDIMENTO_LABEL]) {
+    re.lastIndex = 0;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(flat)) !== null) {
+      const nome = (m[1] ?? "").replace(/\s+/g, " ").trim();
+      // Mesma validação estrita de quem grava voto: impedimento remove o diretor do pool.
+      if (nome.length > 4 && isStrictPersonName(nome) && !nomes.includes(nome)) nomes.push(nome);
+    }
+  }
+  return nomes;
+}
 
 const MESES: Record<string, number> = {
   janeiro: 1, fevereiro: 2, março: 3, marco: 3, abril: 4,
@@ -552,6 +614,7 @@ export interface ExtractedFields {
   nomes_votacao_contra: string[];   // nomes que votaram contra/dissidentes
   nomes_votacao_abstencao: string[];// nomes que se abstiveram
   nomes_votacao_ausente: string[];  // nomes explicitamente ausentes
+  nomes_votacao_impedido: string[]; // impedidos/suspeitos — presentes, mas SEM voto (etapa50)
   signatarios: string[];            // diretores identificados no bloco de assinatura
   diretores_detectados: string[];   // diretores identificados em cabecalhos/relatoria
   unanimidade_detectada: boolean;   // true se "por unanimidade" encontrado no texto
@@ -794,6 +857,24 @@ export function extractFields(text: string): ExtractedFields {
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
   }
 
+  // ─── Impedimento (etapa50) ─────────────────────────────────────────────
+  // Vem ANTES de `favorPorDefault`: o impedido tem de sair do pool `nomes_votacao` também, senão
+  // o ramo de unanimidade/default o transforma em "Favorável" — exatamente a fabricação que esta
+  // etapa existe para eliminar. Quem a ata declara impedido não votou; não há default para ele.
+  const nomes_votacao_impedido = extractImpedidos(text);
+  if (nomes_votacao_impedido.length > 0) {
+    const baldes = [
+      nomes_votacao, nomes_votacao_favor, nomes_votacao_contra,
+      nomes_votacao_abstencao, nomes_votacao_ausente,
+    ];
+    for (const nome of nomes_votacao_impedido) {
+      for (const balde of baldes) {
+        const i = balde.indexOf(nome);
+        if (i !== -1) balde.splice(i, 1);
+      }
+    }
+  }
+
   const semDirecaoExplicita =
     nomes_votacao_contra.length === 0 &&
     nomes_votacao_abstencao.length === 0 &&
@@ -806,6 +887,9 @@ export function extractFields(text: string): ExtractedFields {
     const jaClassificado = new Set([
       ...nomes_votacao_favor, ...nomes_votacao_contra,
       ...nomes_votacao_abstencao, ...nomes_votacao_ausente,
+      // O impedido ASSINA a ata (esteve na sessão) — sem esta linha a unanimidade o traria de
+      // volta como favorável pelo bloco de assinatura, desfazendo a remoção acima.
+      ...nomes_votacao_impedido,
     ]);
     for (const nome of signatarios) {
       if (!jaClassificado.has(nome)) nomes_votacao_favor.push(nome);
@@ -920,6 +1004,7 @@ export function extractFields(text: string): ExtractedFields {
     nomes_votacao_contra: semRole(nomes_votacao_contra),
     nomes_votacao_abstencao: semRole(nomes_votacao_abstencao),
     nomes_votacao_ausente: semRole(nomes_votacao_ausente),
+    nomes_votacao_impedido: semRole(nomes_votacao_impedido),
     signatarios: semRole(signatarios),
     diretores_detectados: semRole(diretores_detectados),
     unanimidade_detectada,
@@ -993,6 +1078,8 @@ export interface ItemVotes {
   contra: string[];
   abstencao: string[];
   ausente: string[];
+  /** Diretores presentes que NÃO votaram este item (impedimento/suspeição). */
+  impedido: string[];
 }
 
 const RE_VOTARAM_FAVOR = new RegExp(
@@ -1092,8 +1179,26 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
     if (!abstencao.includes(nome)) abstencao.push(nome);
   }
 
+  // Impedimento tem PRECEDÊNCIA sobre todos os baldes: quem não votou não pode figurar como
+  // favorável, contrário, abstenção nem ausente. É essa remoção que impede a fabricação — o
+  // diretor sai do pool inteiro e a inferência por mandato não o alcança.
+  const impedido = extractImpedidos(text);
+  const removeImpedido = (arr: string[]) => {
+    for (const nome of impedido) {
+      const i = arr.indexOf(nome);
+      if (i !== -1) arr.splice(i, 1);
+    }
+  };
+  for (const arr of [favor, contra, abstencao, ausente]) removeImpedido(arr);
+
   const semRole = (arr: string[]) => arr.filter((n) => !isRoleWordOnly(n));
-  return { favor: semRole(favor), contra: semRole(contra), abstencao: semRole(abstencao), ausente: semRole(ausente) };
+  return {
+    favor: semRole(favor),
+    contra: semRole(contra),
+    abstencao: semRole(abstencao),
+    ausente: semRole(ausente),
+    impedido: semRole(impedido),
+  };
 }
 
 // ─── Confiança de extração (ponderada) ───────────────────────────────────

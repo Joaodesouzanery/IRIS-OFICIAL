@@ -26,6 +26,7 @@ export interface CandidateDeliberacao {
   nomesContra: string[];
   nomesAusente: string[];
   nomesAbstencao: string[];
+  nomesImpedido: string[];
 }
 
 /**
@@ -52,7 +53,13 @@ export async function findDeliberacoesForCandidate(
     const nomesContra = arr(raw.nomes_votacao_contra);
     const nomesAusente = arr(raw.nomes_votacao_ausente);
     const nomesAbstencao = arr(raw.nomes_votacao_abstencao);
-    const todos = [...nomes, ...nomesContra, ...nomesAusente, ...nomesAbstencao];
+    // O impedido foi removido de TODOS os outros baldes na extração; sem lê-lo aqui ele
+    // simplesmente não teria linha. Ele entra para ser gravado como "Ausente" nominal — o
+    // não-voto declarado pela ata é dado real, não lacuna.
+    const nomesImpedido = arr(raw.impedimentos).length
+      ? arr(raw.impedimentos)
+      : arr(raw.nomes_votacao_impedido);
+    const todos = [...nomes, ...nomesContra, ...nomesAusente, ...nomesAbstencao, ...nomesImpedido];
     if (todos.length === 0) continue;
     const hit = todos.some((n) => {
       const m = findBestMatch(n, [probe]);
@@ -64,7 +71,7 @@ export async function findDeliberacoesForCandidate(
       data_reuniao: d.data_reuniao,
       numero_deliberacao: d.numero_deliberacao,
       resultado: d.resultado,
-      nomes, nomesContra, nomesAusente, nomesAbstencao,
+      nomes, nomesContra, nomesAusente, nomesAbstencao, nomesImpedido,
     });
   }
   return matched;
@@ -116,6 +123,7 @@ export async function applyRetroactiveVotes(
       nomesContra: del.nomesContra,
       nomesAusente: del.nomesAusente,
       nomesAbstencao: del.nomesAbstencao,
+      nomesImpedido: del.nomesImpedido,
       diretoresList: [thisDir],
       activeDiretoresList: [],
       inferFromMandate: false,

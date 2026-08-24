@@ -254,6 +254,7 @@ export async function analyzeUploadPdf(input: {
         votos_contra_detectados: itemVotes.contra,
         votos_abstencao_detectados: itemVotes.abstencao,
         votos_ausentes_detectados: itemVotes.ausente,
+        votos_impedidos_detectados: itemVotes.impedido,
         unanimidade_detectada: item.unanimidade,
       };
     });
@@ -318,6 +319,7 @@ export async function analyzeUploadPdf(input: {
     nomesContra: fields.nomes_votacao_contra,
     nomesAbstencao: fields.nomes_votacao_abstencao,
     nomesAusente: fields.nomes_votacao_ausente,
+    nomesImpedido: fields.nomes_votacao_impedido,
     diretoresList,
     activeDiretoresList,
     inferFromMandate: mainInferFromMandate,
@@ -343,6 +345,7 @@ export async function analyzeUploadPdf(input: {
           nomesContra: item.votos_contra_detectados ?? [],
           nomesAbstencao: item.votos_abstencao_detectados ?? [],
           nomesAusente: item.votos_ausentes_detectados ?? [],
+          nomesImpedido: item.votos_impedidos_detectados ?? [],
           diretoresList,
           activeDiretoresList,
           inferFromMandate,
@@ -449,6 +452,7 @@ export async function analyzeUploadPdf(input: {
       nomes_votacao_contra: fields.nomes_votacao_contra,
       nomes_votacao_abstencao: fields.nomes_votacao_abstencao,
       nomes_votacao_ausente: fields.nomes_votacao_ausente,
+      nomes_votacao_impedido: fields.nomes_votacao_impedido,
       nomes_presentes: fields.nomes_presentes,
       votos_sugeridos: mainVotosSugeridos,
     },
@@ -489,6 +493,9 @@ export async function analyzeUploadPdf(input: {
       nomes_votacao_contra: fields.nomes_votacao_contra,
       nomes_votacao_abstencao: fields.nomes_votacao_abstencao,
       nomes_votacao_ausente: fields.nomes_votacao_ausente,
+      // `impedimentos` é a chave DURÁVEL do motivo: a linha do voto vira "Ausente" (o CHECK não
+      // comporta valor novo), e é daqui que a etapa59 promoverá `motivo_nao_voto='impedimento'`.
+      impedimentos: fields.nomes_votacao_impedido,
       nomes_presentes: fields.nomes_presentes,
       votos_sugeridos: mainVotosSugeridos,
       signatarios: fields.signatarios,
@@ -580,6 +587,7 @@ export function errorResult(filename: string, file_hash = ""): PreviewResult {
       nomes_votacao_contra: [],
       nomes_votacao_abstencao: [],
       nomes_votacao_ausente: [],
+      nomes_votacao_impedido: [],
       votos_sugeridos: [],
     },
     confidence: 0,

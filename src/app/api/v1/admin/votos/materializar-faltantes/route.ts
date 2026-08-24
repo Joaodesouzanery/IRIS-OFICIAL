@@ -121,6 +121,11 @@ export async function POST(req: NextRequest) {
     const nomesContra = arr(raw.nomes_votacao_contra);
     const nomesAusente = arr(raw.nomes_votacao_ausente);
     const nomesAbstencao = arr(raw.nomes_votacao_abstencao);
+    // Impedimento persistido (etapa50). Materializar SEM ele reintroduziria o "Favoravel"
+    // fabricado justamente nas deliberações que ainda não têm voto — o pior lugar para errar.
+    const nomesImpedido = arr(raw.impedimentos).length
+      ? arr(raw.impedimentos)
+      : arr(raw.nomes_votacao_impedido);
     const unanime = Boolean(raw.unanimidade_detectada);
     const isAnttAtaItem = d.tipo_documento === "ata" && Boolean(raw.documento_antt_tipo);
 
@@ -162,6 +167,7 @@ export async function POST(req: NextRequest) {
       nomesContra,
       nomesAusente,
       nomesAbstencao,
+      nomesImpedido,
       diretoresList,
       activeDiretoresList,
       inferFromMandate,

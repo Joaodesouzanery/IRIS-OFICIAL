@@ -113,6 +113,12 @@ export function buildVotoRows(input: {
   nomesContra: string[];
   nomesAusente?: string[];
   nomesAbstencao?: string[];
+  /**
+   * Impedidos/suspeitos (etapa50): estiveram na sessão mas NÃO votaram. Precedência máxima —
+   * e, o mais importante, entram em `collectDivergentIntentIds` para que a inferência por
+   * mandato jamais lhes fabrique um "Favoravel".
+   */
+  nomesImpedido?: string[];
   diretoresList: DiretorVoteRecord[];
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
@@ -125,6 +131,7 @@ export function buildVotoRows(input: {
   const contraIds = matchIds(input.nomesContra, input.diretoresList);
   const ausenteIds = matchIds(input.nomesAusente ?? [], input.diretoresList);
   const abstencaoIds = matchIds(input.nomesAbstencao ?? [], input.diretoresList);
+  const impedidoIds = matchIds(input.nomesImpedido ?? [], input.diretoresList);
   // Só suprime divergência quando é unânime E não há dissidência EXTRAÍDA (contra/
   // abstenção). Se o texto diz "unanimidade" mas há contrários nomeados (inconsistência
   // já sinalizada no upload-analysis), mantém a lógica de polaridade por segurança.
@@ -137,8 +144,13 @@ export function buildVotoRows(input: {
     // (0.6–0.85) ficam de fora para não atribuir voto ao diretor errado —
     // o revisor humano resolve esses casos manualmente.
     if (!match.diretorId || match.needsReview) continue;
-    // Precedência: Ausente > Abstencao > Desfavoravel > Favoravel.
-    if (ausenteIds.has(match.diretorId)) {
+    // Precedência: Impedido > Ausente > Abstencao > Desfavoravel > Favoravel.
+    // Impedimento vem primeiro porque é o único estado declarado pelo próprio colegiado como
+    // AUSÊNCIA DE VOTO: o nome pode aparecer em qualquer outro balde por ruído de prosa, mas a
+    // ata dizendo "não votou" prevalece sobre toda inferência de direção.
+    if (impedidoIds.has(match.diretorId)) {
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado, unanime));
+    } else if (ausenteIds.has(match.diretorId)) {
       rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado, unanime));
     } else if (abstencaoIds.has(match.diretorId)) {
       rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Abstencao", true, resultado, unanime));
@@ -150,16 +162,23 @@ export function buildVotoRows(input: {
   }
 
   for (const diretorId of contraIds) {
-    if (ausenteIds.has(diretorId) || abstencaoIds.has(diretorId)) continue;
+    if (impedidoIds.has(diretorId) || ausenteIds.has(diretorId) || abstencaoIds.has(diretorId)) continue;
     rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Desfavoravel", true, resultado, unanime));
   }
 
   for (const diretorId of abstencaoIds) {
-    if (ausenteIds.has(diretorId)) continue;
+    if (impedidoIds.has(diretorId) || ausenteIds.has(diretorId)) continue;
     rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Abstencao", true, resultado, unanime));
   }
 
   for (const diretorId of ausenteIds) {
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime));
+  }
+
+  // Impedido é gravado como "Ausente" NOMINAL: o CHECK de `votos.tipo_voto` não comporta um valor
+  // novo, e a distinção (impedimento × ausência física) vive em `raw_extraction.impedimentos` até a
+  // coluna `motivo_nao_voto` existir (etapa59). O que importa aqui é não ser "Favoravel".
+  for (const diretorId of impedidoIds) {
     rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime));
   }
 
@@ -168,8 +187,16 @@ export function buildVotoRows(input: {
     // divergentes/ausentes, MESMO que o match tenha ficado na faixa de revisão
     // (0.6–0.85) e por isso não tenha virado voto nominal acima. Evita o pior
     // caso: perder um "Desfavoravel" real e ainda inventar um "Favoravel".
+    // `nomesImpedido` entra AQUI, e é isso que fecha a fabricação: sem esta linha, um impedido
+    // cujo nome casou apenas na faixa de revisão (0.6–0.85) escaparia do `rows` acima e o laço
+    // de mandato logo abaixo lhe daria "Favoravel" — voto que a ata diz explicitamente não existir.
     const divergentIntent = collectDivergentIntentIds(
-      [...input.nomesContra, ...(input.nomesAbstencao ?? []), ...(input.nomesAusente ?? [])],
+      [
+        ...input.nomesContra,
+        ...(input.nomesAbstencao ?? []),
+        ...(input.nomesAusente ?? []),
+        ...(input.nomesImpedido ?? []),
+      ],
       input.diretoresList,
     );
     for (const diretor of input.activeDiretoresList) {
@@ -214,6 +241,7 @@ export function buildVoteSuggestions(input: {
   nomesContra: string[];
   nomesAusente?: string[];
   nomesAbstencao?: string[];
+  nomesImpedido?: string[];
   diretoresList: DiretorVoteRecord[];
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
@@ -225,6 +253,10 @@ export function buildVoteSuggestions(input: {
     ...input,
   });
 
+  // A linha gravada é "Ausente" para os dois casos; só a ORIGEM distingue impedimento de
+  // ausência física — é ela que o revisor lê na tela e que a etapa59 promoverá a coluna.
+  const impedidoIds = matchIds(input.nomesImpedido ?? [], input.diretoresList);
+
   return rows.map((row) => {
     const diretor = input.diretoresList.find((dir) => dir.id === row.diretor_id)
       ?? input.activeDiretoresList.find((dir) => dir.id === row.diretor_id);
@@ -233,7 +265,7 @@ export function buildVoteSuggestions(input: {
       diretor_id: row.diretor_id,
       tipo_voto: row.tipo_voto,
       origem: row.tipo_voto === "Ausente"
-        ? "ausente"
+        ? (impedidoIds.has(row.diretor_id) ? "impedido" : "ausente")
         : row.tipo_voto === "Abstencao"
           ? "abstencao"
           : row.tipo_voto === "Desfavoravel"

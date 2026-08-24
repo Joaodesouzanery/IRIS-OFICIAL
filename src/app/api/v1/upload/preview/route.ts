@@ -306,6 +306,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               votos_contra_detectados: itemVotes.contra,
               votos_abstencao_detectados: itemVotes.abstencao,
               votos_ausentes_detectados: itemVotes.ausente,
+              votos_impedidos_detectados: itemVotes.impedido,
               unanimidade_detectada: item.unanimidade,
             };
           });

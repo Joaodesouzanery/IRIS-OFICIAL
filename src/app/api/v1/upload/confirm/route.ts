@@ -129,6 +129,9 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
     nomes_votacao_ausente: Array.isArray(d.nomes_votacao_ausente)
       ? d.nomes_votacao_ausente.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
+    nomes_votacao_impedido: Array.isArray(d.nomes_votacao_impedido)
+      ? d.nomes_votacao_impedido.slice(0, 20).map((n) => String(n).slice(0, 100))
+      : [],
     nomes_presentes: Array.isArray(d.nomes_presentes)
       ? d.nomes_presentes.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
@@ -212,6 +215,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         abstencao: string[] = [],
         inferFromMandate = false,
         unanime = false,
+        impedido: string[] = [],
       ): VotoEmbutido[] {
         return buildVotoRows({
           deliberacao_id: "local",
@@ -219,6 +223,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           nomesContra: contra,
           nomesAusente: ausente,
           nomesAbstencao: abstencao,
+          nomesImpedido: impedido,
           diretoresList,
           activeDiretoresList: diretoresList,
           inferFromMandate,
@@ -315,6 +320,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 nomesContra: item.votos_contra_detectados ?? [],
               }),
               Boolean(item.unanimidade_detectada),
+              item.votos_impedidos_detectados ?? [],
             ),
             raw_extraction: null,
           });
@@ -339,6 +345,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           nomesContra: d.nomes_votacao_contra,
         }),
         Boolean(d.extraction_raw?.unanimidade_detectada),
+        d.nomes_votacao_impedido ?? [],
       );
 
       createdDelibs.push({
@@ -738,6 +745,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   nomes_votacao_contra: item.votos_contra_detectados ?? [],
                   nomes_votacao_abstencao: item.votos_abstencao_detectados ?? [],
                   nomes_votacao_ausente: item.votos_ausentes_detectados ?? [],
+                  // Persistido junto dos demais baldes pelo mesmo motivo (QA L1): sem isto, o
+                  // backfill retroativo reprocessa o item SEM o impedimento e refabrica o voto.
+                  nomes_votacao_impedido: item.votos_impedidos_detectados ?? [],
+                  impedimentos: item.votos_impedidos_detectados ?? [],
                   unanimidade_detectada: Boolean(item.unanimidade_detectada),
                   votos_inferidos_por_mandato: shouldInferVotesFromMandate({
                     resultado: item.resultado,
@@ -788,6 +799,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   nomesContra: item.votos_contra_detectados ?? [],
                   nomesAbstencao: item.votos_abstencao_detectados ?? [],
                   nomesAusente: item.votos_ausentes_detectados ?? [],
+                  nomesImpedido: item.votos_impedidos_detectados ?? [],
                   diretoresList,
                   activeDiretoresList: isAnttAtaItem && rosterItem.length > 0 ? rosterItem : activeDiretoresList,
                   resultado: item.resultado,
@@ -929,6 +941,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             nomesContra: d.nomes_votacao_contra,
             nomesAbstencao: d.nomes_votacao_abstencao ?? [],
             nomesAusente: d.nomes_votacao_ausente ?? [],
+            nomesImpedido: d.nomes_votacao_impedido ?? [],
             diretoresList,
             activeDiretoresList,
             resultado: d.resultado,
