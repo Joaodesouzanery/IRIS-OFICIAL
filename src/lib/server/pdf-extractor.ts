@@ -41,6 +41,58 @@ function fixEncoding(text: string): string {
   return result;
 }
 
+// ─── Probe de ligadura (rede de segurança, não conserto) ─────────────────
+// A ligadura "ti" some nos PDFs da ANTT e o caractere que sobra DEPENDE DA FONTE embutida.
+// Hoje, medido com pdf-parse sobre o corpus, é sempre "7" — e ENCODING_FIXES já o conserta
+// (8/8 na pauta 1.036; zero ocorrências em ANM e ARTESP). Se a ANTT trocar de fonte, o
+// substituto muda e o conserto para de valer EM SILÊNCIO: some o roster ("par?cipação"), a
+// retirada de pauta ("re?rado") e o cargo exercido ("subs?tuto") — três caminhos que o parser
+// da ANTT depende. Este probe não conserta nada; ele transforma "a fonte mudou" em aviso.
+// Roda nos TRÊS órgãos justamente porque hoje dá zero em ANM/ARTESP: é o zero que torna uma
+// futura regressão detectável.
+const LIGATURE_LEMMAS: [RegExp, string][] = [
+  [/\bsubs[^a-zà-ÿ]tu/gi, "substitu…"],
+  [/\bpar[^a-zà-ÿ]cipa/gi, "participa…"],
+  [/\bins[^a-zà-ÿ]tu/gi, "institu…"],
+  [/\bre[^a-zà-ÿ]rad[oa]/gi, "retirad…"],
+  [/\bdelibera[^a-zà-ÿ]v/gi, "deliberativ…"],
+  [/\bobje[^a-zà-ÿ]v/gi, "objetiv…"],
+  [/\bcompe[^a-zà-ÿ]{1,2}v/gi, "competitiv…"],
+  [/\bnorma[^a-zà-ÿ]v/gi, "normativ…"],
+];
+
+export interface LigatureProbe {
+  /** Lemas que continuam quebrados DEPOIS da limpeza (vazio = tudo certo). */
+  lemasQuebrados: string[];
+  /** Total de ocorrências residuais. */
+  ocorrencias: number;
+}
+
+export function probeLigatureDefects(cleanText: string): LigatureProbe {
+  const lemasQuebrados: string[] = [];
+  let ocorrencias = 0;
+  for (const [pattern, label] of LIGATURE_LEMMAS) {
+    const hits = cleanText.match(pattern);
+    if (hits && hits.length > 0) {
+      lemasQuebrados.push(label);
+      ocorrencias += hits.length;
+    }
+  }
+  return { lemasQuebrados, ocorrencias };
+}
+
+// ─── Achatamento para casamento narrativo ────────────────────────────────
+// Gatilhos narrativos quebram entre linhas no PDF. Medido na 83ª ROP da ANM:
+// "encontrava-se impedido de votar" aparece 3× no texto com quebras e 7× com os espaços
+// colapsados — mais da metade dos impedimentos se perderia, e cada um perdido vira um
+// "Favorável" FABRICADO pela inferência por mandato.
+// ⚠️ NUNCA aplicar ao texto que o ata-splitter segmenta: a segmentação depende de âncoras
+// `^`/`$` multiline (item numerado, "DELIBERAÇÃO:", cabeçalho de seção) e achatar o documento
+// inteiro as destruiria. O uso correto é sobre a JANELA de um item já recortado.
+export function flattenForMatch(text: string): string {
+  return text.replace(/\s+/g, " ");
+}
+
 // ─── Remoção de linhas muito repetidas (cabeçalhos/rodapés) ─────────────
 // pdf-parse não separa por página, então trabalhamos sobre o texto completo.
 // Linhas que aparecem 3+ vezes no documento são provavelmente cabeçalho/rodapé.
@@ -91,7 +143,15 @@ function removeSeiHeadersFooters(text: string): string {
     .replace(/Documento assinado digitalmente conforme MP[^\n]*/g, "")
     .replace(/que institui a Infraestrutura de Chaves P[úu]blicas[^\n]*/g, "")
     // Rodapé de paginação "Página N de M" (paginação variável escapa do dedup por frequência).
-    .replace(/^.*\bP[áa]gina\s+\d+\s+de\s+\d+\b.*$/gim, "");
+    .replace(/^.*\bP[áa]gina\s+\d+\s+de\s+\d+\b.*$/gim, "")
+    // Rodapé do SEI federal (ANM/ANTT), no MEIO do fluxo de texto:
+    //   "Ata 82ª Reunião Ordinária Pública da DIRC (19151138)   SEI 48051.002035/2026-51 / pg. 1"
+    //   "Pauta da Reunião de Diretoria 43562478   SEI 50500.040179/2026-12 / pg. 1"
+    // Medido no corpus: 12 linhas na 82ª, 19 na 32ª, 2 na pauta ANTT, 0 na ARTESP. A paginação
+    // muda a cada linha, então o rodapé ESCAPA do dedup por frequência (removeRepeatedLines exige
+    // igualdade exata 3×) e era injetado entre as frases do item — partindo palavras e truncando
+    // a janela do "VOTO:", que fecha na primeira linha iniciada por maiúscula.
+    .replace(/^[^\n]*\bSEI\s+[\d.]+\/\d{4}-\d{2}\s*\/\s*pg\.\s*\d+[^\n]*$/gim, "");
 }
 
 // ─── Normalização de espaços ──────────────────────────────────────────────
@@ -102,6 +162,11 @@ function normalizeWhitespace(text: string): string {
     // De-hifenização de quebra de linha: "Conces-\nsionária" → "Concessionária".
     // Só continuação MINÚSCULA → não cola "Diretor-\nGeral" nem hífens de lista.
     .replace(/([A-Za-zÀ-ÿ])-\n([a-zà-ÿ])/g, "$1$2")
+    // Continuação MAIÚSCULA: remove só a QUEBRA e PRESERVA o hífen. Medido no corpus real, 100%
+    // dos casos são siglas ou compostos — "SDM-\nJA", "PFE-\nANM" (32ª), "IP-\nBIM" (ARTESP),
+    // "Diretor-\nGeral" — e colar sem hífen destruiria todos. Também conserta o dispositivo
+    // "NEGAR-\nLHE PROVIMENTO", que sem isto some da classificação de resultado.
+    .replace(/([A-Za-zÀ-ÿ])-\n([A-ZÀ-ÖØ-Þ])/g, "$1-$2")
     // Zero-width/BOM → remover (quebram o casamento de rótulos como "Assunto:").
     .replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g, "")
     // Espaços unicode visíveis (nbsp, en/em space, narrow nbsp, ideográfico) → espaço comum.
@@ -135,6 +200,12 @@ export interface PdfExtractionResult {
   pageCount: number;
   charsPerPage: number;
   ocrApplied?: boolean;
+  /**
+   * Preenchido só quando a limpeza de ligadura falhou (fonte nova na origem). Quem chama
+   * transforma em warning de qualidade — o documento continua sendo processado, mas com o
+   * defeito visível em vez de silencioso.
+   */
+  ligatureWarning?: string;
 }
 
 export async function extractPdfText(
@@ -192,7 +263,16 @@ export async function extractPdfText(
     }
   }
 
-  return { text, pageCount, charsPerPage, ocrApplied };
+  // Probe roda por último, sobre o texto FINAL (inclusive o do OCR): é o estado que o parser
+  // vai ver. Vazio na esmagadora maioria dos casos — quando não estiver, a fonte mudou.
+  const probe = probeLigatureDefects(text);
+  const ligatureWarning = probe.lemasQuebrados.length > 0
+    ? `Ligadura não reparada na extração (${probe.ocorrencias} ocorrência(s): ` +
+      `${probe.lemasQuebrados.join(", ")}). A fonte embutida do PDF provavelmente mudou — ` +
+      "o roster, a retirada de pauta e o cargo exercido podem não ser lidos; revisar."
+    : undefined;
+
+  return { text, pageCount, charsPerPage, ocrApplied, ligatureWarning };
 }
 
 // ─── Hash SHA-256 para deduplicação ──────────────────────────────────────
