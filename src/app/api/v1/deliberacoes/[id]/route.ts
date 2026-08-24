@@ -173,15 +173,13 @@ export async function PATCH(
     // `isDivergentVote(tipo, resultado)` com DOIS argumentos, omitindo `unanime`: uma edição manual
     // de resultado reintroduzia divergência falsa em item indeferido-por-unanimidade, e ela ficava
     // lá até o cron rodar. O mesmo recálculo dava respostas diferentes conforme a porta.
-    const { data: delibUnan } = await db
-      .from("deliberacoes")
-      .select("unanimidade_detectada:raw_extraction->>unanimidade_detectada")
-      .eq("id", params.id)
-      .maybeSingle();
+    // O `update(...).select().single()` acima já devolveu a linha INTEIRA — ler `raw_extraction`
+    // dela evita um round-trip a mais dentro do PATCH.
+    const rawExtraction = (data as { raw_extraction?: Record<string, unknown> | null }).raw_extraction;
     const { idsDivergentes: idsDiv, idsNaoDivergentes: idsNaoDiv } = repartirPorDivergencia(
       (votos ?? []) as Array<{ id: string; tipo_voto: string }>,
       novoResultado,
-      (delibUnan as { unanimidade_detectada?: unknown } | null)?.unanimidade_detectada,
+      rawExtraction?.unanimidade_detectada,
     );
     const aplicar = async (ids: string[], valor: boolean) => {
       for (let i = 0; i < ids.length; i += 100) {
