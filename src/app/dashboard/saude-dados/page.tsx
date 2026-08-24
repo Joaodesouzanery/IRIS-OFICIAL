@@ -27,7 +27,7 @@ type AgenciaGov = {
   total_retirado: number;
   total_sem_resultado: number;
   total_com_voto: number;
-  consenso: number;
+  consenso: number | null;
   cobertura_nominal: number;
   deferimento: number;
 };
@@ -151,7 +151,7 @@ export default function SaudeDadosPage() {
                       <td className="text-right text-brand font-semibold">{formatNumber(a.total_decidido ?? 0)}</td>
                       <td className="text-right">{formatNumber(a.total_com_voto ?? 0)}</td>
                       <td className={cn("text-right font-mono", (a.total_com_voto ?? 0) === 0 ? "text-text-muted" : "")}>
-                        {(a.total_com_voto ?? 0) === 0 ? "—" : `${a.consenso}%`}
+                        {a.consenso === null ? "—" : `${a.consenso}%`}
                       </td>
                       <td className={cn("text-right font-mono", pctClass(a.cobertura_nominal, 60, 20))}>
                         {a.cobertura_nominal}%

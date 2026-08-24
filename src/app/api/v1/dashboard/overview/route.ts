@@ -49,15 +49,20 @@ export async function GET(req: NextRequest) {
   // `year` honrado (QA ago/2026: as abas mandavam o parâmetro e a rota ignorava).
   const rows = deliberacoes.filter(isFinalDecisionRecord).filter((r: any) => matchesYear(r, year));
   const total = rows.length;
-  const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
-  const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
+  // NUMERADOR no MESMO universo do denominador (etapa60). Contar positivos sobre TODAS as linhas
+  // enquanto o divisor conta só as DECIDIDAS deixa a taxa passar de 100% quando um item de
+  // admissibilidade carrega resultado positivo — assimetria que eu mesmo introduzi ao mudar só
+  // o divisor.
+  const decididosRows = rows.filter((r) => isDecidedOnMerits(r as any));
+  const deferidos = decididosRows.filter((r) => isResultadoPositivo(r.resultado)).length;
+  const indeferidos = decididosRows.filter((r) => r.resultado === "Indeferido").length;
   const semResultado = rows.filter((r) => !r.resultado).length;
   // Etapa60 — DENOMINADOR DE MÉRITO. `total` (pautado) fica intacto; a taxa passa a dividir pelos
   // itens efetivamente JULGADOS. Antes, retirado de pauta, item sem resultado extraído e
   // não-conhecimento ficavam no divisor sem entrar em numerador nenhum: a taxa de deferimento
   // caía por causa de itens que ninguém julgou, e "não conhecer por intempestividade" era contado
   // como jurisprudência.
-  const decididos = rows.filter((r) => isDecidedOnMerits(r as any)).length;
+  const decididos = decididosRows.length;
   const admissibilidade = rows.filter((r) => decisionStatus(r as any) === "admissibilidade").length;
   const retirados = rows.filter((r) => decisionStatus(r as any) === "retirado").length;
 

@@ -106,7 +106,12 @@ export function classifyRegulatoryDocument(input: {
 // rotas de analytics selecionarem SÓ isso em vez do JSON inteiro de todas as linhas.
 // Uso: `.select(\`...outras colunas..., ${FINAL_DECISION_RAW_SELECT}\`)`.
 export const FINAL_DECISION_RAW_SELECT =
-  "import_counts_as_final:raw_extraction->import_counts_as_final,documento_subtipo:raw_extraction->>documento_subtipo,documento_antt_tipo:raw_extraction->>documento_antt_tipo";
+  "import_counts_as_final:raw_extraction->import_counts_as_final,documento_subtipo:raw_extraction->>documento_subtipo,documento_antt_tipo:raw_extraction->>documento_antt_tipo,"
+  // `juizo_raw` vem do JSON, NÃO da coluna: as rotas de analytics usam este sub-select para não
+  // puxar `raw_extraction` inteiro, e sem esta projeção `decisionStatus` nunca enxergaria
+  // admissibilidade em produção — todo o tratamento do não-conhecimento ficaria inerte, mesmo
+  // com a extração marcando certo. Ler do JSON também mantém o código funcionando sem a migration.
+  + "juizo_raw:raw_extraction->>juizo";
 
 type FinalDecisionRow = {
   tipo_documento?: string | null;
@@ -164,6 +169,8 @@ type DecisionStatusRow = {
   resultado?: string | null;
   /** Coluna nova (migration 20260824120000). Pode não existir em linhas antigas. */
   juizo?: string | null;
+  /** Projeção achatada do JSON (`FINAL_DECISION_RAW_SELECT`) — usada pelas rotas de analytics. */
+  juizo_raw?: string | null;
   raw_extraction?: Record<string, unknown> | null;
 };
 
@@ -171,7 +178,10 @@ export function decisionStatus(row: DecisionStatusRow): DecisionStatus {
   // Lê a COLUNA e cai para o JSON: entre o deploy da Fase 1 e a migration, `juizo` só existe
   // dentro de `raw_extraction`. Sem este fallback, todo documento ingerido nesse intervalo seria
   // classificado como mérito — silenciosamente.
-  const juizo = row.juizo ?? (row.raw_extraction as Record<string, unknown> | null)?.juizo;
+  // Três formas de o valor chegar: a COLUNA, a projeção achatada do sub-select, ou o JSON inteiro.
+  // As rotas de analytics usam a segunda — foi ela que faltava, e sem ela o tratamento da
+  // admissibilidade não valia nada em produção.
+  const juizo = row.juizo ?? row.juizo_raw ?? (row.raw_extraction as Record<string, unknown> | null)?.juizo;
   if (juizo === "admissibilidade") return "admissibilidade";
   if (!row.resultado) return "sem_resultado";
   if (row.resultado === "Retirado de Pauta") return "retirado";
@@ -200,9 +210,16 @@ export function hasVoteEvidence(votos: Array<unknown> | null | undefined): boole
  * Devolve `null` quando não há base, para o chamador poder tirá-lo do denominador em vez de
  * contá-lo como concordância.
  */
-export function isConsensual(votos: Array<{ is_divergente?: boolean | null }> | null | undefined): boolean | null {
+export function isConsensual(
+  votos: Array<{ is_divergente?: boolean | null; tipo_voto?: string | null }> | null | undefined,
+): boolean | null {
   if (!hasVoteEvidence(votos)) return null;
-  return !votos!.some((v) => v.is_divergente);
+  // O MESMO bug com outra roupa: `isDivergentVote` devolve false para "Ausente", então uma
+  // deliberação em que TODOS estavam ausentes ou impedidos tem votos.length > 0, nenhuma
+  // divergência — e era contada como consenso perfeito. Ninguém votou; não houve concordância.
+  const efetivos = votos!.filter((v) => v.tipo_voto == null || v.tipo_voto !== "Ausente");
+  if (efetivos.length === 0) return null;
+  return !efetivos.some((v) => v.is_divergente);
 }
 
 export function buildSemanticDuplicateKey(input: {

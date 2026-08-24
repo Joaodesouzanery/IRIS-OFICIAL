@@ -22,7 +22,10 @@ import {
   temBloqueio,
   formatarAchados,
 } from "@/lib/server/consistency-checks";
-import { INFO_WARNING_RE } from "@/lib/server/upload-analysis";
+import { INFO_WARNING_RE, analyzeUploadPdf } from "@/lib/server/upload-analysis";
+import { readFileSync, readdirSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
 describe("etapa63 · C03 — reconciliação de âncoras", () => {
   it("a 81ª, com duplicata legítima, NÃO bloqueia", () => {
@@ -35,10 +38,19 @@ describe("etapa63 · C03 — reconciliação de âncoras", () => {
     expect(achados[0].nivel).toBe("info");
   });
 
-  it("itens EXCEDENDO âncoras bloqueia — segmentação quebrada", () => {
-    const achados = checarAncorasItens({ ancoras: 30, itens_pre_dedup: 44, duplicatas_removidas: 0 });
-    expect(temBloqueio(achados)).toBe(true);
-    expect(achados[0].codigo).toBe("C03_ITENS_EXCEDEM_ANCORAS");
+  it("itens excedendo âncoras é NORMAL numa ata — avisa só quando é gritante", () => {
+    // CORRIGIDO por medição, contra a hipótese original. Item retirado de pauta não tem linha de
+    // dispositivo, então numa ata da ANM os itens SEMPRE excedem as âncoras. Bloquear nessa
+    // direção recusava 8 de 8 atas reais e congelaria a esteira.
+    const normal = checarAncorasItens({ ancoras: 49, itens_pre_dedup: 56, duplicatas_removidas: 0 });
+    expect(temBloqueio(normal)).toBe(false);
+    expect(normal).toEqual([]); // nem aviso: 56 < 49×1.5
+
+    // Excesso GRITANTE continua sinalizado — mas como aviso, não como recusa.
+    const gritante = checarAncorasItens({ ancoras: 10, itens_pre_dedup: 44, duplicatas_removidas: 0 });
+    expect(temBloqueio(gritante)).toBe(false);
+    expect(gritante[0].codigo).toBe("C03_ITENS_MUITO_ACIMA_DAS_ANCORAS");
+    expect(gritante[0].nivel).toBe("aviso");
   });
 
   it("itens PERDIDOS (o caso «44 âncoras, 30 itens») bloqueia", () => {
@@ -54,6 +66,23 @@ describe("etapa63 · C03 — reconciliação de âncoras", () => {
   it("duplicata removida é SEMPRE registrada, nunca silenciosa", () => {
     const achados = checarAncorasItens({ ancoras: 35, itens_pre_dedup: 35, duplicatas_removidas: 1 });
     expect(achados.some((a) => a.codigo === "C04_DUPLICATA_INTRA_ATA")).toBe(true);
+  });
+
+  it("REGRESSÃO TRAVADA: comparar com o PÓS-dedup faria a dedup correta virar bloqueio", () => {
+    // Este é o caso que os testes acima NÃO pegavam — uma revisão adversarial mutou a função para
+    // `itens_pre_dedup - duplicatas_removidas` e todos continuaram verdes, porque com 2 duplicatas
+    // a diferença cabia na tolerância. Com 3, a mutação bloqueia uma ata perfeitamente sadia.
+    //
+    // Cenário: 70 âncoras, 70 itens reconhecidos, 3 deles duplicatas legítimas. Nada está errado.
+    const achados = checarAncorasItens({ ancoras: 70, itens_pre_dedup: 70, duplicatas_removidas: 3 });
+    expect(temBloqueio(achados)).toBe(false);
+    expect(achados.map((a) => a.codigo)).toEqual(["C04_DUPLICATA_INTRA_ATA"]);
+  });
+
+  it("REGRESSÃO TRAVADA: a dedup não pode MASCARAR itens realmente perdidos", () => {
+    // O espelho do anterior: se alguém somasse as duplicatas ao lado errado, um caso de itens
+    // perdidos deixaria de bloquear. 44 âncoras, 30 itens, 3 duplicatas → continua bloqueando.
+    expect(temBloqueio(checarAncorasItens({ ancoras: 44, itens_pre_dedup: 30, duplicatas_removidas: 3 }))).toBe(true);
   });
 });
 
@@ -193,4 +222,37 @@ describe("etapa63 · o guard que faz o bloqueio bloquear de verdade", () => {
   it("sem achados não há bloqueio", () => {
     expect(temBloqueio([])).toBe(false);
   });
+});
+
+describe("etapa63 · o bloqueante NÃO pode travar documento sadio", () => {
+  // O teste mais importante deste arquivo, e o que quase faltou.
+  //
+  // Na primeira versão o gate recusava 8 de 8 atas REAIS — a esteira inteira congelaria em
+  // produção. Duas premissas erradas, ambas derrubadas por medição:
+  //   · "DELIBERAÇÃO:" não é a contagem de âncoras — item RETIRADO de pauta não tem linha de
+  //     dispositivo, e a ANTT usa "Decisão:". Contar só a primeira dava "itens excedem âncoras"
+  //     em toda ata da ANM;
+  //   · C07 (unanimidade × dissenso) só faz sentido por ITEM: numa ata multi-item a unanimidade
+  //     vem de um item e o voto contrário de OUTRO. Não há contradição alguma.
+  //
+  // Um bloqueio que dispara no corpus-ouro não é rigor: é indisponibilidade.
+  const fixturesDir = join(dirname(fileURLToPath(import.meta.url)), "fixtures/votos");
+  const AGENCIAS = [
+    { id: "cert-antt", sigla: "ANTT" },
+    { id: "cert-anm", sigla: "ANM" },
+    { id: "cert-artesp", sigla: "ARTESP" },
+  ];
+  const pdfs = readdirSync(fixturesDir).filter((f) => f.endsWith(".pdf")).sort();
+
+  it.each(pdfs)("%s não é bloqueado", async (file) => {
+    const buffer = readFileSync(join(fixturesDir, file));
+    const preview = await analyzeUploadPdf({
+      file: { name: file, buffer, size: buffer.length },
+      agencias: AGENCIAS,
+      db: null,
+    });
+    const bloq = (preview as { bloqueado?: boolean; achados_bloqueantes?: string[] });
+    expect(bloq.achados_bloqueantes ?? [], `${file} bloqueado por ${JSON.stringify(bloq.achados_bloqueantes)}`).toEqual([]);
+    expect(bloq.bloqueado ?? false).toBe(false);
+  }, 60_000);
 });

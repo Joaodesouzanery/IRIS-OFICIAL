@@ -124,9 +124,13 @@ export function computeMicrotemas(delibs: Deliberacao[], agenciaId?: string | nu
     if (!stats.has(m)) stats.set(m, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = stats.get(m)!;
     s.total++;
-    if (isDecidedOnMerits(d as any)) s.decidido++;
-    if (isResultadoPositivo(d.resultado)) s.deferido++;
-    else if (d.resultado === "Indeferido") s.indeferido++;
+    // Numerador e denominador no MESMO universo (etapa60): contar positivos sobre TODAS as
+    // linhas com o divisor só sobre as decididas deixa a taxa passar de 100%.
+    if (isDecidedOnMerits(d as any)) {
+      s.decidido++;
+      if (isResultadoPositivo(d.resultado)) s.deferido++;
+      else if (d.resultado === "Indeferido") s.indeferido++;
+    }
   }
   return [...stats.entries()]
     .map(([microtema, s]) => ({
@@ -223,9 +227,13 @@ export function computeReunioesStats(delibs: Deliberacao[], agenciaId?: string |
     if (!byMonth.has(period)) byMonth.set(period, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = byMonth.get(period)!;
     s.total++;
-    if (isDecidedOnMerits(d as any)) s.decidido++;
-    if (isResultadoPositivo(d.resultado)) s.deferido++;
-    else if (d.resultado === "Indeferido") s.indeferido++;
+    // Numerador e denominador no MESMO universo (etapa60): contar positivos sobre TODAS as
+    // linhas com o divisor só sobre as decididas deixa a taxa passar de 100%.
+    if (isDecidedOnMerits(d as any)) {
+      s.decidido++;
+      if (isResultadoPositivo(d.resultado)) s.deferido++;
+      else if (d.resultado === "Indeferido") s.indeferido++;
+    }
   }
   return [...byMonth.entries()]
     .sort(([a], [b]) => a.localeCompare(b))
@@ -598,7 +606,12 @@ export function computeMandatosAnalytics(delibs: Deliberacao[], agenciaId?: stri
   const sancao = rows.filter((d) =>
     d.microtema === "multa" || d.resultado === "Indeferido"
   ).length;
-  const taxa_sancao = total > 0 ? `${((sancao / total) * 100).toFixed(1)}%` : "0%";
+  // Espelho EXATO da rota /mandatos/analytics (etapa60): sanção sobre os DECIDIDOS. O engine
+  // servia o caminho demo/local com `total` (pautado) enquanto a rota já usava `decidido` — o
+  // mesmo painel mostrava números diferentes conforme o modo, que é o pior tipo de divergência
+  // porque some quando alguém vai conferir.
+  const decididoMandatos = rows.filter((d) => isDecidedOnMerits(d as any)).length;
+  const taxa_sancao = decididoMandatos > 0 ? `${((sancao / decididoMandatos) * 100).toFixed(1)}%` : "0%";
 
   const resultadoCount = new Map<string, number>();
   for (const d of rows) {
@@ -620,15 +633,24 @@ export function computeMandatosAnalytics(delibs: Deliberacao[], agenciaId?: stri
     if (!byMonth.has(period)) byMonth.set(period, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = byMonth.get(period)!;
     s.total++;
-    if (isDecidedOnMerits(d as any)) s.decidido++;
-    if (isResultadoPositivo(d.resultado)) s.deferido++;
-    else if (d.resultado === "Indeferido") s.indeferido++;
+    // Numerador e denominador no MESMO universo (etapa60): contar positivos sobre TODAS as
+    // linhas com o divisor só sobre as decididas deixa a taxa passar de 100%.
+    if (isDecidedOnMerits(d as any)) {
+      s.decidido++;
+      if (isResultadoPositivo(d.resultado)) s.deferido++;
+      else if (d.resultado === "Indeferido") s.indeferido++;
+    }
   }
   const evolucao_mensal = [...byMonth.entries()]
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([period, s]) => ({ period, ...s }));
 
-  return { total_deliberacoes: total, taxa_litigio, taxa_consenso, taxa_sancao, distribuicao_decisao, evolucao_mensal };
+  return {
+    total_deliberacoes: total,
+    total_decidido: decididoMandatos,
+    total_com_voto: comVoto,
+    taxa_litigio, taxa_consenso, taxa_sancao, distribuicao_decisao, evolucao_mensal,
+  };
 }
 
 // ─── 16. computeDiretores ────────────────────────────────────────────────────

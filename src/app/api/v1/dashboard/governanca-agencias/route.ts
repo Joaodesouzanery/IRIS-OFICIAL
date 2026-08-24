@@ -29,8 +29,13 @@ interface AgenciaGovernanca {
   total_sem_resultado: number;
   /** Com ao menos 1 voto registrado. É o denominador de `consenso`. */
   total_com_voto: number;
-  /** % de deliberações COM VOTO e sem divergência (antes: sobre tudo, contando item sem voto). */
-  consenso: number;
+  /**
+   * % de deliberações COM VOTO e sem divergência. `null` quando não há base — publicar 0 faria
+   * "nenhum voto lido" parecer "colegiado em conflito total".
+   */
+  consenso: number | null;
+  /** false quando não há item decidido: `deferimento` não deve ser lido como taxa real. */
+  deferimento_disponivel: boolean;
   cobertura_nominal: number; // % de deliberações com ao menos 1 voto NOMINAL (confiabilidade do consenso)
   /** % de resultados positivos sobre os DECIDIDOS (antes: sobre o pautado). */
   deferimento: number;
@@ -92,8 +97,12 @@ export async function GET(req: NextRequest) {
       if (consensual) a.consensoOk += 1;
     }
     if ((d.votos ?? []).some((v) => v.is_nominal)) a.comNominal += 1;
-    if (isResultadoPositivo(d.resultado)) a.deferido += 1;
-    if (d.microtema === "multa" || d.resultado === "Indeferido") a.sancao += 1;
+    // NUMERADOR no MESMO universo do denominador: só conta deferimento entre os DECIDIDOS, senão
+    // a taxa pode passar de 100% (item de admissibilidade com resultado positivo).
+    if (decisionStatus(d as any) === "decidido") {
+      if (isResultadoPositivo(d.resultado)) a.deferido += 1;
+      if (d.microtema === "multa" || d.resultado === "Indeferido") a.sancao += 1;
+    }
     if (d.extraction_confidence != null) { a.confSum += d.extraction_confidence; a.confN += 1; }
     acc.set(d.agencia_id, a);
   }
@@ -111,12 +120,18 @@ export async function GET(req: NextRequest) {
       total_sem_resultado: a?.semResultado ?? 0,
       total_com_voto: a?.comVoto ?? 0,
       // Consenso sobre os itens COM VOTO — o único universo em que a pergunta faz sentido.
-      consenso: a ? pct(a.consensoOk, a.comVoto) : 0,
+      // `null` quando NÃO HÁ base: publicar 0 tornaria "nenhum voto lido" indistinguível de
+      // "consenso medido em zero", que é o mesmo defeito de sempre com outra roupa — e o Score de
+      // Governança, que pondera consenso em 30%, leria essa ausência como colegiado em conflito
+      // total, invertendo o sentido do número.
+      consenso: a && a.comVoto > 0 ? pct(a.consensoOk, a.comVoto) : null,
+      // Idem para o deferimento: sem item decidido não há taxa a publicar.
+      deferimento_disponivel: Boolean(a && a.decidido > 0),
       cobertura_nominal: a ? pct(a.comNominal, a.total) : 0,
       // Deferimento sobre os DECIDIDOS (mérito), não sobre tudo que foi pautado.
       deferimento: a ? pct(a.deferido, a.decidido) : 0,
       qualidade: a && a.confN > 0 ? Math.round((a.confSum / a.confN) * 1000) / 10 : 0,
-      sancao: a ? pct(a.sancao, a.total) : 0,
+      sancao: a ? pct(a.sancao, a.decidido) : 0,
     };
   });
 

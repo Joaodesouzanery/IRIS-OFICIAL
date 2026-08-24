@@ -4,6 +4,7 @@ import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "
 import {
   avisoUnanimidadeContestada, avisoAtaItensFaltando,
   checarAncorasItens, checarCoerenciaUnanimidade, checarImpedidoComVoto,
+  checarCardinalidadeVotos, checarInteressadoNoDispositivo, checarVotoQualidadeDuplo,
   checarAdmissibilidadeMalClassificada, checarLigaduraResidual,
   formatarAchados, temBloqueio, type Achado,
 } from "@/lib/server/consistency-checks";
@@ -268,7 +269,11 @@ export async function analyzeUploadPdf(input: {
     // pós-dedup faria de uma dedup CORRETA um alarme permanente — e alarme que sempre dispara é
     // alarme que ninguém lê.
     achados.push(...checarAncorasItens({
-      ancoras: (extraction.text.match(/DELIBERA[ÇC][ÃA]O\s*:/gi) ?? []).length,
+      // MEDIDO nas 8 atas do corpus: a âncora de dispositivo tem TRÊS formas. `DELIBERAÇÃO:` é a
+      // da ANM, `Decisão:` é a da ANTT (que não usa a primeira em nenhuma das duas atas), e o item
+      // RETIRADO de pauta não tem linha de dispositivo nenhuma — mas é um item legítimo. Contar só
+      // a primeira dava "itens excedem âncoras" em 8 de 8 atas.
+      ancoras: (extraction.text.match(/DELIBERA[ÇC][ÃA]O\s*:|Decis[ãa]o\s*:|[Ii]tem retirado de pauta/g) ?? []).length,
       itens_pre_dedup: ataSplit.itens_pre_dedup,
       duplicatas_removidas: ataSplit.duplicatas_removidas,
     }));
@@ -445,11 +450,14 @@ export async function analyzeUploadPdf(input: {
     if (avisoContestado) documentWarnings.push(avisoContestado);
     // Suíte da etapa63 no caminho do documento.
     achados.push(
-      ...checarCoerenciaUnanimidade({
+      // C07 só vale para documento de ITEM ÚNICO. Numa ata multi-item, "unanimidade" vem de um
+      // item e o voto contrário de OUTRO — não há contradição alguma, e checar no documento
+      // inteiro bloqueava 4 das 6 atas da ANM. A contradição real é dentro do mesmo item.
+      ...((ata_items?.length ?? 0) > 1 ? [] : checarCoerenciaUnanimidade({
         unanimidade: !!fields.unanimidade_detectada,
         votosContra: fields.nomes_votacao_contra?.length ?? 0,
         votosAbstencao: fields.nomes_votacao_abstencao?.length ?? 0,
-      }),
+      })),
       ...checarImpedidoComVoto({
         impedidos: fields.nomes_votacao_impedido ?? [],
         diretoresQueVotaram: [
@@ -462,6 +470,25 @@ export async function analyzeUploadPdf(input: {
         juizo: fields.juizo, resultado: fields.resultado, texto: extraction.text,
       }),
       ...checarLigaduraResidual(probeLigatureDefects(extraction.text).lemasQuebrados),
+      // C05/C06 e C08/C09 estavam DEFINIDOS e TESTADOS mas nunca chamados — código morto com
+      // teste, que é pior que código morto sem: sugere cobertura que não existe.
+      // Cardinalidade também é por ITEM: numa ata os nomes são a união de todos os itens e
+      // excedem o colegiado por construção.
+      ...((ata_items?.length ?? 0) > 1 ? [] : checarCardinalidadeVotos({
+        votos: (fields.nomes_votacao_favor?.length ?? 0)
+          + (fields.nomes_votacao_contra?.length ?? 0)
+          + (fields.nomes_votacao_abstencao?.length ?? 0),
+        cadeiras: (fields.nomes_presentes?.length ?? 0) || null,
+        decidido: Boolean(fields.resultado) && fields.resultado !== "Retirado de Pauta",
+      })),
+      ...checarVotoQualidadeDuplo({
+        votoQualidadePor: fields.voto_qualidade_por,
+        diretoresComVoto: [...(fields.nomes_votacao_favor ?? []), ...(fields.nomes_votacao_contra ?? [])],
+      }),
+      ...checarInteressadoNoDispositivo({
+        interessado: fields.interessado,
+        dispositivo: fields.fundamento_decisao ?? fields.resumo_pleito,
+      }),
     );
     if (fields.data_reuniao) {
       const dataMs = Date.parse(fields.data_reuniao);

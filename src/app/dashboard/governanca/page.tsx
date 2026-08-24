@@ -50,8 +50,9 @@ interface AgenciaScore {
   id: string;
   sigla: string;
   nome: string;
-  score: number;
-  consenso: number;
+  /** `null` quando a agência não tem base de voto: sem consenso medido não há Score. */
+  score: number | null;
+  consenso: number | null;
   deferimento: number;
   qualidade: number;
   sancao: number;
@@ -147,7 +148,9 @@ export default function GovernancaPage() {
       .filter((a) => a.total > 0)
       .map((a) => ({
         id: a.agencia_id, sigla: a.sigla, nome: a.nome,
-        score: calcScore(a.consenso, a.deferimento, a.qualidade, a.sancao),
+        // Sem base de voto, `consenso` vem null: o Score NÃO é calculado. Substituir por 0 faria
+        // a ausência de dado virar "colegiado em conflito total" — o consenso pesa 30% da fórmula.
+        score: a.consenso === null ? null : calcScore(a.consenso, a.deferimento, a.qualidade, a.sancao),
         consenso: a.consenso, deferimento: a.deferimento,
         qualidade: a.qualidade, sancao: a.sancao, total: a.total,
       }))
@@ -331,16 +334,24 @@ export default function GovernancaPage() {
                     </div>
                   </td>
                   <td className="py-2.5 px-3 text-right">
-                    <span className={cn("font-mono font-bold text-base", scoreColor(ag.score))}>{ag.score}</span>
+                    {ag.score === null ? (
+                      <span className="font-mono text-xs text-text-muted" title="Sem voto registrado nesta agência: o consenso pesa 30% do Score e não pôde ser medido.">
+                        sem base
+                      </span>
+                    ) : (
+                      <span className={cn("font-mono font-bold text-base", scoreColor(ag.score))}>{ag.score}</span>
+                    )}
                   </td>
-                  <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{ag.consenso.toFixed(0)}%</td>
+                  <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{ag.consenso === null ? "—" : `${ag.consenso.toFixed(0)}%`}</td>
                   <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{ag.deferimento.toFixed(0)}%</td>
                   <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{ag.qualidade.toFixed(0)}%</td>
                   <td className="py-2.5 px-3 text-right font-mono text-text-secondary">{ag.sancao.toFixed(0)}%</td>
                   <td className="py-2.5 px-3">
-                    <span className={cn("badge text-xs", scoreColor(ag.score), ag.score >= 80 ? "bg-success/10" : ag.score >= 60 ? "bg-warning/10" : "bg-error/10")}>
-                      {scoreLabel(ag.score)}
-                    </span>
+                    {ag.score !== null && (
+                      <span className={cn("badge text-xs", scoreColor(ag.score), ag.score >= 80 ? "bg-success/10" : ag.score >= 60 ? "bg-warning/10" : "bg-error/10")}>
+                        {scoreLabel(ag.score)}
+                      </span>
+                    )}
                   </td>
                 </tr>
               ))}

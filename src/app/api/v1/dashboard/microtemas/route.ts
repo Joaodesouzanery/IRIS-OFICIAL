@@ -53,9 +53,12 @@ export async function GET(req: NextRequest) {
     if (!stats.has(tema)) stats.set(tema, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = stats.get(tema)!;
     s.total++;
-    if (isDecidedOnMerits(row as any)) s.decidido++;
-    if (isResultadoPositivo(row.resultado)) s.deferido++;
-    else if (row.resultado === "Indeferido") s.indeferido++;
+    // Numerador e denominador no MESMO universo (etapa60).
+    if (isDecidedOnMerits(row as any)) {
+      s.decidido++;
+      if (isResultadoPositivo(row.resultado)) s.deferido++;
+      else if (row.resultado === "Indeferido") s.indeferido++;
+    }
   }
 
   const result = [...stats.entries()]

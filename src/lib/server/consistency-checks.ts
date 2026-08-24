@@ -94,14 +94,21 @@ export function checarAncorasItens(input: {
   const out: Achado[] = [];
   const { ancoras, itens_pre_dedup, duplicatas_removidas } = input;
 
-  if (itens_pre_dedup > ancoras) {
+  // ⚠️ MEDIDO, e contra a hipótese original: "itens excedendo âncoras" é o estado NORMAL de uma
+  // ata. Item retirado de pauta não tem linha de dispositivo, e a ANTT usa "Decisão:" no lugar de
+  // "DELIBERAÇÃO:". Nas 8 atas reais do corpus a diferença vai de 0 a 4 — bloquear nessa direção
+  // recusaria 8 de 8 atas e CONGELARIA a esteira inteira. Vira aviso, e só quando é gritante.
+  if (itens_pre_dedup > ancoras * 1.5 && itens_pre_dedup - ancoras > 5) {
     out.push({
-      codigo: "C03_ITENS_EXCEDEM_ANCORAS",
-      nivel: "bloqueante",
-      mensagem: `Segmentação inconsistente: ${itens_pre_dedup} itens para ${ancoras} âncoras de dispositivo. `
-        + "Item não pode exceder âncora — a divisão da ata quebrou.",
+      codigo: "C03_ITENS_MUITO_ACIMA_DAS_ANCORAS",
+      nivel: "aviso",
+      mensagem: `${itens_pre_dedup} itens para ${ancoras} âncoras de dispositivo — diferença grande `
+        + "demais para ser só item retirado de pauta; conferir a divisão da ata.",
     });
-  } else if (ancoras - itens_pre_dedup > 2) {
+  }
+  // A direção INVERSA continua bloqueando: toda âncora deveria ter produzido um item, então âncora
+  // sobrando é item PERDIDO na segmentação. É o caso que motivou o check ("44 âncoras, 30 itens").
+  if (ancoras - itens_pre_dedup > 2) {
     out.push({
       codigo: "C03_ITENS_PERDIDOS",
       nivel: "bloqueante",
