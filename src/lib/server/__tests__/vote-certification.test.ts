@@ -28,6 +28,16 @@ type GabaritoDoc = {
   import_counts_as_final?: boolean;
   nomes_presentes_incluem?: string[];
   nomes_contra?: string[];
+  /**
+   * Etapa65 — expectativa NEGATIVA de direção de voto. Existe porque `nomes_contra` só sabe travar
+   * o que soubemos prever: a 79ª TEM dissidentes reais (Roger Cabral e Tasso Júnior, item 1.4.1),
+   * mas a ata os declara em forma que só um humano imputa sem fabricar. Asserir `[]` ali seria
+   * gravar no gabarito a afirmação FALSA de que ninguém divergiu. O que o PDF prova com certeza é
+   * quem NÃO pode estar na lista — o autor do voto que o dispositivo diz ter sido APROVADO.
+   */
+  nomes_contra_nao_incluem?: string[];
+  /** Etapa65 — valor que a extração não pode produzir (o `texto_nao_contem` só cobre TEXTO). */
+  resultado_nao_pode_ser?: string[];
   texto_contem?: string[];
   texto_nao_contem?: string[];
   sem_votos?: boolean;
@@ -110,6 +120,19 @@ describe("Certificação — corpus real de documentos oficiais", () => {
       if (doc.nomes_contra) {
         expect(fields.nomes_votacao_contra ?? [], "nomes contra").toEqual(doc.nomes_contra);
         checks++;
+      }
+      if (doc.nomes_contra_nao_incluem) {
+        const contra: string[] = fields.nomes_votacao_contra ?? [];
+        for (const nome of doc.nomes_contra_nao_incluem) {
+          expect(contra, `${nome} venceu — não pode figurar como voto CONTRÁRIO`).not.toContain(nome);
+          checks++;
+        }
+      }
+      if (doc.resultado_nao_pode_ser) {
+        for (const valor of doc.resultado_nao_pode_ser) {
+          expect(fields.resultado, `resultado não pode ser "${valor}"`).not.toBe(valor);
+          checks++;
+        }
       }
       if (doc.texto_contem) {
         for (const trecho of doc.texto_contem) {

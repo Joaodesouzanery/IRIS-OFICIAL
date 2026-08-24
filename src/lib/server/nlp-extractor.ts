@@ -296,6 +296,47 @@ export function extractContrariosPorCargo(text: string, roleMap: Record<string, 
   return out;
 }
 
+// ─── Autor do voto APROVADO (etapa65) ─────────────────────────────────────────────────────
+// Na ANM, "divergente" qualifica divergência DO RELATOR — e essa posição frequentemente é a que
+// VENCE. As regexes de dissenso tratam `divergente|dissidente|contrário|vencido` como sinônimos, e
+// por isso gravavam voto CONTRÁRIO para quem ganhou. É o pior erro possível nesta base: inverte o
+// sinal do diretor no painel inteiro. Dois casos medidos, com o dispositivo literal:
+//   79ª/2.2.1 — "teve divergência apresentada pelo Diretor-Geral […] este foi APROVADO por maioria"
+//   83ª       — "o voto divergente do Diretor-Geral […] Voto do Revisor, Diretor-Geral, APROVADO"
+// Medido nas 16 fixtures: o dispositivo credita o voto aprovado por um padrão único — "Voto do
+// <RÓTULO> … aprovado" — presente nas 6 atas da ANM (22 ocorrências) e em nenhuma ARTESP/ANTT. O
+// rótulo é um cargo ("Relator", "Revisor", "Diretor-Geral"), um nome, ou os dois.
+const RE_AUTOR_VOTO_APROVADO = /[Vv]oto\s+d[oa]\s+([^.;]{0,90}?)\baprovad[oa]\b/g;
+
+/**
+ * Nomes que o DISPOSITIVO credita como autores do voto APROVADO. Quem venceu não é dissidente.
+ * Mesma disciplina dos outros resolvedores: cargo só vira nome quando o preâmbulo o nomeia —
+ * cargo sem nome no documento não vira voto nem exclusão.
+ */
+export function extractAutoresDoVotoAprovado(text: string, roleMap: Record<string, string> = {}): string[] {
+  const out: string[] = [];
+  RE_AUTOR_VOTO_APROVADO.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = RE_AUTOR_VOTO_APROVADO.exec(text)) !== null) {
+    const span = m[1].replace(/\s+/g, " ").trim();
+    // "voto do relator NÃO foi aprovado" não credita ninguém.
+    if (/\bn[ãa]o\b/i.test(span)) continue;
+    // (a) nome inline: "Voto do Relator, Diretor Caio Mário Trivellato Seabra Filho, aprovado".
+    RE_ROSTER_DIRETOR.lastIndex = 0;
+    let nm: RegExpExecArray | null;
+    while ((nm = RE_ROSTER_DIRETOR.exec(span)) !== null) {
+      const nome = nm[1].replace(/\s+/g, " ").trim();
+      if (isStrictPersonName(nome) && !out.includes(nome)) out.push(nome);
+    }
+    // (b) cargo resolvido pelo preâmbulo: "Voto do Revisor, Diretor-Geral, aprovado".
+    if (/Diretor[-\s]Geral/i.test(span)) {
+      const dg = roleMap["diretor-geral"];
+      if (dg && !out.includes(dg)) out.push(dg);
+    }
+  }
+  return out;
+}
+
 /**
  * O item declara dissenso (maioria/vencido/divergência) mas NENHUM dissidente foi atribuído.
  * Não vira voto — vira AVISO, para o revisor humano decidir. É o caso do "voto por divergir"
@@ -1179,10 +1220,17 @@ export function extractFields(text: string): ExtractedFields {
   // QA ago/2026: validação ESTRITA do nome — os regex de divergência pescavam fragmentos de
   // prosa ("voto por", "Diretoria Colegiada da ANM pode") como "dissidente" junto dos reais.
   // Contra grava VOTO → só entra o que tem forma de nome de pessoa (Capitalizado + partículas).
+  // Etapa65 — quem o DISPOSITIVO credita com o voto APROVADO não é dissidente: venceu. Se a ata
+  // diz as duas coisas, o dispositivo é a que decide. Sem esta trava, "divergente DO RELATOR"
+  // (padrão da ANM, e frequentemente a posição vencedora) virava voto CONTRÁRIO do vencedor.
+  const roleMapDoc = buildRoleMap(text);
+  const autoresAprovado = new Set(extractAutoresDoVotoAprovado(text, roleMapDoc));
+
   const markContra = (rawNome: string) => {
     const nome = rawNome.replace(/\s+/g, " ").trim();
     if (nome.length <= 4) return;
     if (!isStrictPersonName(nome)) return;
+    if (autoresAprovado.has(nome)) return;
     if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
     const idxFavor = nomes_votacao_favor.indexOf(nome);
     if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
@@ -1200,7 +1248,6 @@ export function extractFields(text: string): ExtractedFields {
 
   // Divergência NOMEADA — "aprovado por maioria ... com divergência apresentada pelo Diretor X"
   // (padrão dominante das atas ANM). Resolve cargo→nome pelo preâmbulo ("pelo Diretor-Geral").
-  const roleMapDoc = buildRoleMap(text);
   for (const nome of extractDivergentesNomeados(text, roleMapDoc)) markContra(nome);
   // Contrário citado só pelo cargo ("voto contrário do Diretor-Geral") — etapa51.
   for (const nome of extractContrariosPorCargo(text, roleMapDoc)) markContra(nome);
@@ -1428,11 +1475,15 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
     const nome = raw.replace(/\s+/g, " ").trim();
     if (nome.length > 4 && !arr.includes(nome)) arr.push(nome);
   };
+  // Etapa65 — mesma trava do documento, e AQUI ela é precisa: o texto do item traz a frase de
+  // divergência e o dispositivo juntos, então "venceu" e "foi vencido" se referem ao MESMO item.
+  const autoresAprovado = new Set(extractAutoresDoVotoAprovado(text, roleMap));
   const moveToContra = (raw: string) => {
     const nome = raw.replace(/\s+/g, " ").trim();
     if (nome.length <= 4) return;
     // Mesma validação estrita do markContra do documento: contra grava VOTO (QA ago/2026).
     if (!isStrictPersonName(nome)) return;
+    if (autoresAprovado.has(nome)) return;
     const i = favor.indexOf(nome);
     if (i !== -1) favor.splice(i, 1);
     if (!contra.includes(nome)) contra.push(nome);

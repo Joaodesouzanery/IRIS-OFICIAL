@@ -243,7 +243,15 @@ function segmentAtaItems(text: string): AtaItem[] {
     if (!itemStart) {
       const numMatch = RE_ITEM_NUMERADO.exec(trimmed);
       if (numMatch) {
-        const hasLabelInline = /processo|interessado|assunto|relat(?:or|ora)/i.test(trimmed);
+        // O rótulo tem de vir COLADO ao número, não em qualquer ponto da linha (etapa65). Testar a
+        // linha inteira abria item FALSO toda vez que ela começava com um nº de processo quebrado
+        // pelo wrap do PDF e citava "Relator"/"processo" adiante:
+        //   "48065.800164/2019-20. Acatada a posição do Relator, depois de publicado o ato, …"
+        // `RE_ITEM_NUMERADO` casa "48065.800164" como se fosse "1.6.6". Medido nas 16 fixtures:
+        // 465 aberturas reais preservadas e 10 falsas eliminadas — 4 na 81ª, 2 na 83ª, 1 na 34ª e
+        // 3 parágrafos numerados do voto individual da ANTT (que não é ata e não tem itens).
+        const resto = trimmed.slice(numMatch[0].length);
+        const hasLabelInline = /^[-–—:.\s]*(?:Processos?|Interessad[oa]s?|Assunto|Relat(?:or|ora))\b/i.test(resto);
         // Tolerância a WRAP do PDF: "1.2.3" sozinho na linha e o rótulo na linha
         // seguinte ("Processo nº ..."). Sem isso o item não abre e os votos dele
         // grudam no item anterior (sangria).

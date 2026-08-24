@@ -1,241 +1,250 @@
 {
- "_comment": "Gabarito humano do corpus de certificação (PDFs OFICIAIS reais, baixados das fontes em 04/07/2026). Cada expectativa foi conferida lendo o documento. O teste vote-certification compara a extração campo a campo — divergência = vermelho.",
- "docs": [
-  {
-   "file": "anm-ata-32-extraordinaria.pdf",
-   "fonte": "gov.br/anm atas-da-rop, Ata da 32ª Reunião Extraordinária Pública da DIRC/ANM",
-   "agencia_sigla": "ANM",
-   "tipo_documento": "ata",
-   "data_reuniao": "2025-07-16",
-   "ata_items_min": 1
-  },
-  {
-   "file": "anm-ata-34-rep.pdf",
-   "fonte": "gov.br/anm — Ata da 34a Reuniao Extraordinaria Publica da DIRC/ANM",
-   "agencia_sigla": "ANM",
-   "tipo_documento": "ata",
-   "data_reuniao": "2025-11-19",
-   "ata_items_min": 28,
-   "itens_unanimidade_min": 12,
-   "nomes_presentes_incluem": [
-    "Mauro Henrique Moreira Sousa",
-    "Tasso Mendonça Júnior",
-    "Roger Romão Cabral",
-    "José Fernando de Mendonça Gomes Júnior"
-   ],
-   "texto_contem": [
-    "ATA 34ª REUNIÃO EXTRAORDINÁRIA PÚBLICA DA DIRC/ANM"
-   ]
-  },
-  {
-   "file": "anm-ata-79-rop.pdf",
-   "fonte": "gov.br/anm atas-da-rop — Ata da 79a Reuniao Ordinaria Publica da DIRC (SEI 48051.010492/2025-39)",
-   "agencia_sigla": "ANM",
-   "tipo_documento": "ata",
-   "data_reuniao": "2025-11-26",
-   "ata_items_min": 55,
-   "itens_unanimidade_min": 40,
-   "nomes_presentes_incluem": [
-    "Mauro Henrique Moreira Sousa",
-    "Tasso Mendonça Júnior",
-    "Roger Romão Cabral",
-    "José Fernando de Mendonça Gomes Júnior"
-   ],
-   "texto_contem": [
-    "ATA 79ª REUNIÃO ORDINÁRIA PÚBLICA DA DIRC"
-   ]
-  },
-  {
-   "file": "anm-ata-81-rop.pdf",
-   "fonte": "gov.br/anm atas-da-rop — Ata da 81a Reuniao Ordinaria Publica da DIRC (SEI 48051.000833/2026-49)",
-   "agencia_sigla": "ANM",
-   "tipo_documento": "ata",
-   "data_reuniao": "2026-01-28",
-   "ata_items_min": 60,
-   "itens_unanimidade_min": 55,
-   "nomes_presentes_incluem": [
-    "Mauro Henrique Moreira Sousa",
-    "Luiz Paniago Neves",
-    "Fábio Fernando Borges",
-    "José Fernando de Mendonça Gomes Júnior"
-   ],
-   "texto_contem": [
-    "ATA 81ª REUNIÃO ORDINÁRIA PÚBLICA DA DIRC"
-   ]
-  },
-  {
-   "file": "anm-ata-82-ordinaria.pdf",
-   "fonte": "gov.br/anm atas-da-rop, Ata da 82ª Reunião Ordinária Pública da DIRC",
-   "agencia_sigla": "ANM",
-   "tipo_documento": "ata",
-   "data_reuniao": "2026-02-23",
-   "ata_items_min": 10,
-   "itens_unanimidade_min": 8,
-   "nomes_contra": []
-  },
-  {
-   "file": "anm-ata-83-rop.pdf",
-   "fonte": "gov.br/anm atas-da-rop — Ata da 83a Reuniao Ordinaria Publica da DIRC (SEI 48051.003447/2026-17)",
-   "agencia_sigla": "ANM",
-   "tipo_documento": "ata",
-   "data_reuniao": "2026-03-25",
-   "ata_items_min": 50,
-   "itens_unanimidade_min": 40,
-   "nomes_presentes_incluem": [
-    "Mauro Henrique Moreira Sousa",
-    "Luiz Paniago Neves",
-    "Fábio Fernando Borges",
-    "José Fernando de Mendonça Gomes Júnior"
-   ],
-   "texto_contem": [
-    "ATA 83ª REUNIÃO ORDINÁRIA PÚBLICA DA DIRC"
-   ]
-  },
-  {
-   "file": "antt-ata-1024.pdf",
-   "fonte": "portal.antt.gov.br reunioes-da-diretoria — Ata da 1.024a Reuniao Publica de Diretoria",
-   "agencia_sigla": "ANTT",
-   "tipo_documento": "ata",
-   "data_reuniao": "2026-01-19",
-   "ata_items_min": 6,
-   "itens_unanimidade_min": 5,
-   "nomes_presentes_incluem": [
-    "Guilherme Theo Rodrigues da Rocha Sampaio",
-    "Felipe Fernandes Queiroz",
-    "Lucas Asfor Rocha Lima",
-    "Alex Antônio de Azevedo Cruz",
-    "Severino Medeiros Ramos Neto"
-   ],
-   "texto_contem": [
-    "ATA DA 1.024ª REUNIÃO PÚBLICA DE DIRETORIA"
-   ]
-  },
-  {
-   "file": "antt-ata-264-rde.pdf",
-   "fonte": "portal.antt.gov.br — Ata da 264a Reuniao de Diretoria Eletronica (sessao de 19 a 23/01/2026; data_reuniao = dia INICIAL, convencao do projeto)",
-   "agencia_sigla": "ANTT",
-   "tipo_documento": "ata",
-   "data_reuniao": "2026-01-19",
-   "ata_items_min": 3,
-   "itens_unanimidade_min": 2,
-   "nomes_presentes_incluem": [
-    "Guilherme Theo Rodrigues da Rocha Sampaio",
-    "Felipe Fernandes Queiroz",
-    "Lucas Asfor Rocha Lima",
-    "Alex Antônio de Azevedo Cruz",
-    "Severino Medeiros Ramos Neto"
-   ],
-   "texto_contem": [
-    "ATA DA 264ª REUNIÃO DE DIRETORIA ELETRÔNICA"
-   ]
-  },
-  {
-   "file": "antt-pauta-1036.pdf",
-   "fonte": "https://portal.antt.gov.br/reuniao/-/asset_publisher/9NmL6MbUt7f1/content/id/7163264/1036-reuniao-de-diretoria",
-   "agencia_sigla": "ANTT",
-   "tipo_documento": "pauta",
-   "data_reuniao": "2026-07-02",
-   "import_counts_as_final": false,
-   "texto_contem": [
-    "Instituição",
-    "GUILHERME SAMPAIO",
-    "FELIPE QUEIROZ"
-   ],
-   "texto_nao_contem": [
-    "Ins7tuição",
-    "Polí7ca"
-   ],
-   "sem_votos": true
-  },
-  {
-   "file": "antt-voto-dab-002.pdf",
-   "fonte": "SEI/ANTT 40351373 — Voto DAB no 002/2026, Diretor Alessandro Baumgartner",
-   "agencia_sigla": "ANTT",
-   "tipo_documento": "voto_individual",
-   "data_reuniao": "2026-03-09",
-   "resultado": "Indeferido",
-   "texto_contem": [
-    "RELATORIA: Diretoria Alessandro Baumgartner"
-   ]
-  },
-  {
-   "file": "artesp-ata-1201.pdf",
-   "fonte": "ARTESP reunioes-diretoria (DAM), Ata da 1201ª Reunião Ordinária do Conselho Diretor",
-   "agencia_sigla": "ARTESP",
-   "tipo_documento": "ata",
-   "data_reuniao": "2026-07-01",
-   "unanimidade_detectada": true,
-   "nomes_presentes_incluem": [
-    "André Isper Rodrigues Barnabé",
-    "Diego Albert Zanatto",
-    "Fernanda Esbízaro Rodrigues Rudnik",
-    "Raquel França Carneiro"
-   ],
-   "nomes_contra": []
-  },
-  {
-   "file": "artesp-delib-22.pdf",
-   "fonte": "ARTESP — Deliberacao ARTESP no 22, de 13/01/2026 (1177a Reuniao Ordinaria do Conselho Diretor)",
-   "agencia_sigla": "ARTESP",
-   "tipo_documento": "deliberacao",
-   "numero_deliberacao_contem": "22",
-   "data_reuniao": "2026-01-13",
-   "resultado": "Indeferido",
-   "unanimidade_detectada": true,
-   "nomes_contra": [],
-   "nomes_presentes_incluem": [
-    "André Isper Rodrigues Barnabé",
-    "Diego Albert Zanatto"
-   ]
-  },
-  {
-   "file": "artesp-delib-23.pdf",
-   "fonte": "ARTESP — Deliberacao ARTESP no 23, de 13/01/2026 (1177a Reuniao Ordinaria do Conselho Diretor)",
-   "agencia_sigla": "ARTESP",
-   "tipo_documento": "deliberacao",
-   "numero_deliberacao_contem": "23",
-   "data_reuniao": "2026-01-13",
-   "resultado": "Recomendado",
-   "unanimidade_detectada": true,
-   "nomes_contra": [],
-   "nomes_presentes_incluem": [
-    "André Isper Rodrigues Barnabé",
-    "Diego Albert Zanatto"
-   ]
-  },
-  {
-   "file": "artesp-delib-303.pdf",
-   "fonte": "ARTESP — Deliberacao ARTESP no 303, de 15/04/2026 (236a Reuniao Extraordinaria do Conselho Diretor)",
-   "agencia_sigla": "ARTESP",
-   "tipo_documento": "deliberacao",
-   "numero_deliberacao_contem": "303",
-   "data_reuniao": "2026-04-15",
-   "resultado": "Aprovado",
-   "unanimidade_detectada": true,
-   "nomes_contra": [],
-   "nomes_presentes_incluem": [
-    "André Isper Rodrigues Barnabé",
-    "Diego Albert Zanatto"
-   ]
-  },
-  {
-   "file": "artesp-delib-487.pdf",
-   "fonte": "ARTESP reunioes-diretoria (DAM), Deliberações da 1201ª Reunião (zip), Deliberação ARTESP nº 487/2026",
-   "agencia_sigla": "ARTESP",
-   "tipo_documento": "deliberacao",
-   "numero_deliberacao_contem": "487",
-   "data_reuniao": "2026-07-01",
-   "resultado": "Aprovado",
-   "unanimidade_detectada": true,
-   "nomes_contra": []
-  },
-  {
-   "file": "artesp-pauta-1201.pdf",
-   "fonte": "ARTESP reunioes-diretoria (DAM), Pauta da 1201ª Reunião Ordinária",
-   "agencia_sigla": "ARTESP",
-   "tipo_documento": "pauta",
-   "import_counts_as_final": false,
-   "sem_votos": true
-  }
- ]
+  "_comment": "Gabarito humano do corpus de certificação (PDFs OFICIAIS reais, baixados das fontes em 04/07/2026). Cada expectativa foi conferida lendo o documento. O teste vote-certification compara a extração campo a campo — divergência = vermelho.",
+  "docs": [
+    {
+      "file": "anm-ata-32-extraordinaria.pdf",
+      "fonte": "gov.br/anm atas-da-rop, Ata da 32ª Reunião Extraordinária Pública da DIRC/ANM",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2025-07-16",
+      "ata_items_min": 1
+    },
+    {
+      "file": "anm-ata-34-rep.pdf",
+      "fonte": "gov.br/anm — Ata da 34a Reuniao Extraordinaria Publica da DIRC/ANM",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2025-11-19",
+      "ata_items_min": 28,
+      "itens_unanimidade_min": 12,
+      "nomes_presentes_incluem": [
+        "Mauro Henrique Moreira Sousa",
+        "Tasso Mendonça Júnior",
+        "Roger Romão Cabral",
+        "José Fernando de Mendonça Gomes Júnior"
+      ],
+      "texto_contem": [
+        "ATA 34ª REUNIÃO EXTRAORDINÁRIA PÚBLICA DA DIRC/ANM"
+      ]
+    },
+    {
+      "file": "anm-ata-79-rop.pdf",
+      "fonte": "gov.br/anm atas-da-rop — Ata da 79a Reuniao Ordinaria Publica da DIRC (SEI 48051.010492/2025-39)",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2025-11-26",
+      "ata_items_min": 55,
+      "itens_unanimidade_min": 40,
+      "nomes_presentes_incluem": [
+        "Mauro Henrique Moreira Sousa",
+        "Tasso Mendonça Júnior",
+        "Roger Romão Cabral",
+        "José Fernando de Mendonça Gomes Júnior"
+      ],
+      "texto_contem": [
+        "ATA 79ª REUNIÃO ORDINÁRIA PÚBLICA DA DIRC"
+      ],
+      "nomes_contra_nao_incluem": [
+        "Mauro Henrique Moreira Sousa"
+      ]
+    },
+    {
+      "file": "anm-ata-81-rop.pdf",
+      "fonte": "gov.br/anm atas-da-rop — Ata da 81a Reuniao Ordinaria Publica da DIRC (SEI 48051.000833/2026-49)",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-01-28",
+      "ata_items_min": 68,
+      "itens_unanimidade_min": 55,
+      "nomes_presentes_incluem": [
+        "Mauro Henrique Moreira Sousa",
+        "Luiz Paniago Neves",
+        "Fábio Fernando Borges",
+        "José Fernando de Mendonça Gomes Júnior"
+      ],
+      "texto_contem": [
+        "ATA 81ª REUNIÃO ORDINÁRIA PÚBLICA DA DIRC"
+      ]
+    },
+    {
+      "file": "anm-ata-82-ordinaria.pdf",
+      "fonte": "gov.br/anm atas-da-rop, Ata da 82ª Reunião Ordinária Pública da DIRC",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-02-23",
+      "ata_items_min": 10,
+      "itens_unanimidade_min": 8,
+      "nomes_contra": []
+    },
+    {
+      "file": "anm-ata-83-rop.pdf",
+      "fonte": "gov.br/anm atas-da-rop — Ata da 83a Reuniao Ordinaria Publica da DIRC (SEI 48051.003447/2026-17)",
+      "agencia_sigla": "ANM",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-03-25",
+      "ata_items_min": 50,
+      "itens_unanimidade_min": 40,
+      "nomes_presentes_incluem": [
+        "Mauro Henrique Moreira Sousa",
+        "Luiz Paniago Neves",
+        "Fábio Fernando Borges",
+        "José Fernando de Mendonça Gomes Júnior"
+      ],
+      "texto_contem": [
+        "ATA 83ª REUNIÃO ORDINÁRIA PÚBLICA DA DIRC"
+      ],
+      "nomes_contra_nao_incluem": [
+        "Mauro Henrique Moreira Sousa"
+      ]
+    },
+    {
+      "file": "antt-ata-1024.pdf",
+      "fonte": "portal.antt.gov.br reunioes-da-diretoria — Ata da 1.024a Reuniao Publica de Diretoria",
+      "agencia_sigla": "ANTT",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-01-19",
+      "ata_items_min": 6,
+      "itens_unanimidade_min": 5,
+      "nomes_presentes_incluem": [
+        "Guilherme Theo Rodrigues da Rocha Sampaio",
+        "Felipe Fernandes Queiroz",
+        "Lucas Asfor Rocha Lima",
+        "Alex Antônio de Azevedo Cruz",
+        "Severino Medeiros Ramos Neto"
+      ],
+      "texto_contem": [
+        "ATA DA 1.024ª REUNIÃO PÚBLICA DE DIRETORIA"
+      ]
+    },
+    {
+      "file": "antt-ata-264-rde.pdf",
+      "fonte": "portal.antt.gov.br — Ata da 264a Reuniao de Diretoria Eletronica (sessao de 19 a 23/01/2026; data_reuniao = dia INICIAL, convencao do projeto)",
+      "agencia_sigla": "ANTT",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-01-19",
+      "ata_items_min": 3,
+      "itens_unanimidade_min": 2,
+      "nomes_presentes_incluem": [
+        "Guilherme Theo Rodrigues da Rocha Sampaio",
+        "Felipe Fernandes Queiroz",
+        "Lucas Asfor Rocha Lima",
+        "Alex Antônio de Azevedo Cruz",
+        "Severino Medeiros Ramos Neto"
+      ],
+      "texto_contem": [
+        "ATA DA 264ª REUNIÃO DE DIRETORIA ELETRÔNICA"
+      ]
+    },
+    {
+      "file": "antt-pauta-1036.pdf",
+      "fonte": "https://portal.antt.gov.br/reuniao/-/asset_publisher/9NmL6MbUt7f1/content/id/7163264/1036-reuniao-de-diretoria",
+      "agencia_sigla": "ANTT",
+      "tipo_documento": "pauta",
+      "data_reuniao": "2026-07-02",
+      "import_counts_as_final": false,
+      "texto_contem": [
+        "Instituição",
+        "GUILHERME SAMPAIO",
+        "FELIPE QUEIROZ"
+      ],
+      "texto_nao_contem": [
+        "Ins7tuição",
+        "Polí7ca"
+      ],
+      "sem_votos": true
+    },
+    {
+      "file": "antt-voto-dab-002.pdf",
+      "fonte": "SEI/ANTT 40351373 — Voto DAB no 002/2026, Diretor Alessandro Baumgartner",
+      "agencia_sigla": "ANTT",
+      "tipo_documento": "voto_individual",
+      "data_reuniao": "2026-03-09",
+      "resultado": "Indeferido",
+      "texto_contem": [
+        "RELATORIA: Diretoria Alessandro Baumgartner"
+      ]
+    },
+    {
+      "file": "artesp-ata-1201.pdf",
+      "fonte": "ARTESP reunioes-diretoria (DAM), Ata da 1201ª Reunião Ordinária do Conselho Diretor",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "ata",
+      "data_reuniao": "2026-07-01",
+      "unanimidade_detectada": true,
+      "nomes_presentes_incluem": [
+        "André Isper Rodrigues Barnabé",
+        "Diego Albert Zanatto",
+        "Fernanda Esbízaro Rodrigues Rudnik",
+        "Raquel França Carneiro"
+      ],
+      "nomes_contra": []
+    },
+    {
+      "file": "artesp-delib-22.pdf",
+      "fonte": "ARTESP — Deliberacao ARTESP no 22, de 13/01/2026 (1177a Reuniao Ordinaria do Conselho Diretor)",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "deliberacao",
+      "numero_deliberacao_contem": "22",
+      "data_reuniao": "2026-01-13",
+      "resultado": "Indeferido",
+      "unanimidade_detectada": true,
+      "nomes_contra": [],
+      "nomes_presentes_incluem": [
+        "André Isper Rodrigues Barnabé",
+        "Diego Albert Zanatto"
+      ],
+      "resultado_nao_pode_ser": [
+        "Ratificado"
+      ]
+    },
+    {
+      "file": "artesp-delib-23.pdf",
+      "fonte": "ARTESP — Deliberacao ARTESP no 23, de 13/01/2026 (1177a Reuniao Ordinaria do Conselho Diretor)",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "deliberacao",
+      "numero_deliberacao_contem": "23",
+      "data_reuniao": "2026-01-13",
+      "resultado": "Recomendado",
+      "unanimidade_detectada": true,
+      "nomes_contra": [],
+      "nomes_presentes_incluem": [
+        "André Isper Rodrigues Barnabé",
+        "Diego Albert Zanatto"
+      ]
+    },
+    {
+      "file": "artesp-delib-303.pdf",
+      "fonte": "ARTESP — Deliberacao ARTESP no 303, de 15/04/2026 (236a Reuniao Extraordinaria do Conselho Diretor)",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "deliberacao",
+      "numero_deliberacao_contem": "303",
+      "data_reuniao": "2026-04-15",
+      "resultado": "Aprovado",
+      "unanimidade_detectada": true,
+      "nomes_contra": [],
+      "nomes_presentes_incluem": [
+        "André Isper Rodrigues Barnabé",
+        "Diego Albert Zanatto"
+      ]
+    },
+    {
+      "file": "artesp-delib-487.pdf",
+      "fonte": "ARTESP reunioes-diretoria (DAM), Deliberações da 1201ª Reunião (zip), Deliberação ARTESP nº 487/2026",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "deliberacao",
+      "numero_deliberacao_contem": "487",
+      "data_reuniao": "2026-07-01",
+      "resultado": "Aprovado",
+      "unanimidade_detectada": true,
+      "nomes_contra": []
+    },
+    {
+      "file": "artesp-pauta-1201.pdf",
+      "fonte": "ARTESP reunioes-diretoria (DAM), Pauta da 1201ª Reunião Ordinária",
+      "agencia_sigla": "ARTESP",
+      "tipo_documento": "pauta",
+      "import_counts_as_final": false,
+      "sem_votos": true
+    }
+  ]
 }

@@ -326,6 +326,53 @@ Unificá-los é o próximo passo natural do endurecimento.
 argumento (`unanime`), enquanto `recalcular-divergencia` passa. Uma edição manual de resultado
 reintroduz divergência falsa em item indeferido-por-unanimidade até o cron rodar.
 
+## Fase 4 · bloco 1 — direção do voto (24/08/2026)
+
+**Corrigido:** o extrator invertia a direção do voto do VENCEDOR. Nas atas da ANM, "divergente"
+qualifica divergência **do relator**, e essa posição frequentemente é a que PREVALECE; as regexes
+tratavam `divergente|dissidente|contrário|vencido` como sinônimos. Dois falsos positivos medidos,
+com dispositivo literal em sentido oposto:
+
+- **79ª ROP, item 2.2.1** — *"teve divergência apresentada pelo Diretor-Geral […] este foi APROVADO
+  por maioria"* → gravava voto CONTRÁRIO de Mauro Henrique Moreira Sousa.
+- **83ª ROP, item 2.3.1** — *"o voto divergente do Diretor-Geral […] Voto do Revisor, Diretor-Geral,
+  APROVADO por maioria"* (venceu 3×2) → idem.
+
+A trava é `extractAutoresDoVotoAprovado` (nlp-extractor.ts): quem o DISPOSITIVO credita com o voto
+aprovado não entra em `contra`. Se a ata diz as duas coisas, o dispositivo decide. Impacto medido
+nas 16 fixtures: remove exatamente os dois falsos positivos e **não toca em mais nada** — a
+divergência REAL da 32ª REP (o Diretor-Geral divergiu e perdeu) permanece.
+
+**Também corrigido:** o rótulo de item passou a ser exigido COLADO ao número no splitter. Testar a
+linha inteira abria item falso sempre que ela começava com nº de processo quebrado pelo wrap do PDF
+e citava "Relator" adiante. Medido: **465 aberturas reais preservadas, 10 falsas eliminadas** — 4 na
+81ª, 2 na 83ª, 1 na 34ª e 3 parágrafos numerados do voto individual da ANTT (que não é ata). A 81ª
+passou a dar **68 itens**, igual à contagem dura do PDF (70 cabeçalhos `N.N.N` − 2 repetidos).
+
+### Hipótese DERRUBADA pela medição (não implementar)
+Estava planejado aceitar infinitivo/gerúndio em `RE_VOTO_DISSIDENTE_VERBAL`, porque a 79ª/1.4.1 diz
+*"optando, assim, por divergir do relator"* e os dissidentes reais (Roger Romão Cabral e Tasso
+Mendonça Júnior) escapam. **Medido: 18 ocorrências de `divergir|divergindo|discordar|discordando`
+nas 6 atas da ANM, e 13 delas são o diretor divergindo de PARECER TÉCNICO, Voto CS ou Procuradoria
+— não de colega** (*"divergindo das manifestações técnicas"*, *"divergir do posicionamento da
+Procuradoria"*, *"Divergindo do Voto CS/ANM nº 532/2025"*). Relaxar a regex fabricaria voto
+contrário em massa. As duas ocorrências verdadeiras estão a 176 e 267 caracteres do nome, distância
+maior que a dos casos falsos — não há como separá-las por proximidade.
+**Comportamento correto e mantido:** o item emite o aviso *"Divergência declarada no texto sem
+dissidente identificável — atribuir manualmente"*. Não fabricar é a resposta certa; a atribuição é
+humana.
+
+### Aberto: normalização de nome (não é bug de extração)
+A 83ª escreve **"Fábio Fernando Borges"** no preâmbulo e nas relatorias, e **"Fábio Borges"**
+exatamente nas duas sentenças de impedimento. A captura não trunca nada — é o documento. Resolver
+por alias/`nome_variantes` no cadastro, não por regex. Mesmo caso na 32ª, onde convivem
+`"Caio Mário Trivellato Seabra Filho"` e `"Caio Mario Seabra Filho"`.
+
+### Regra de processo (causa-raiz de incidente real)
+**`git add` SELETIVO enquanto houver agente escrevendo no repo.** Um `git add -A` varreu dois
+arquivos de sonda de agente (`zzz-adv-probe*.test.ts`) para dentro do commit `e6007c4`. Nenhum teste
+permanente foi perdido (verificado: 74 arquivos em `d10cb93`, 77 hoje), mas a regra fica.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
