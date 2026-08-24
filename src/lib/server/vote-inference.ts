@@ -28,11 +28,15 @@ export type VotoInsertRow = {
   is_divergente: boolean;
   is_nominal: boolean;
   /**
-   * Coluna OPCIONAL — só existe depois da migration `20260824120000`. O write-path
-   * (`votos-write.ts`) a remove do payload enquanto o banco não a tiver, então gravá-la aqui é
+   * Colunas OPCIONAIS — só existem depois da migration `20260824120000`. O write-path
+   * (`votos-write.ts`) as remove do payload enquanto o banco não as tiver, então gravá-las aqui é
    * seguro antes da migration.
    */
   proveniencia?: ProvenienciaVoto;
+  /** Por que não votou. Separa ausência FÍSICA de impedimento — denominadores diferentes. */
+  motivo_nao_voto?: "ausencia" | "impedimento" | "suspeicao" | "vista" | "sobrestamento" | "vacancia";
+  /** Voto proferido em sessão ANTERIOR e só registrado nesta ata (etapa57). */
+  voto_em_autos?: boolean;
 };
 
 export function isFinalVoteDocument(input: {
@@ -137,6 +141,11 @@ export function buildVotoRows(input: {
    * mandato jamais lhes fabrique um "Favoravel".
    */
   nomesImpedido?: string[];
+  /**
+   * Voto proferido em sessão ANTERIOR e só registrado neste documento (etapa57). Continua ligado
+   * à deliberação — é ele que forma a maioria — mas não é presença nesta sessão.
+   */
+  nomesEmAutos?: string[];
   diretoresList: DiretorVoteRecord[];
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
@@ -150,6 +159,7 @@ export function buildVotoRows(input: {
   const ausenteIds = matchIds(input.nomesAusente ?? [], input.diretoresList);
   const abstencaoIds = matchIds(input.nomesAbstencao ?? [], input.diretoresList);
   const impedidoIds = matchIds(input.nomesImpedido ?? [], input.diretoresList);
+  const emAutosIds = matchIds(input.nomesEmAutos ?? [], input.diretoresList);
   // Só suprime divergência quando é unânime E não há dissidência EXTRAÍDA (contra/
   // abstenção). Se o texto diz "unanimidade" mas há contrários nomeados (inconsistência
   // já sinalizada no upload-analysis), mantém a lógica de polaridade por segurança.
@@ -167,7 +177,7 @@ export function buildVotoRows(input: {
     // AUSÊNCIA DE VOTO: o nome pode aparecer em qualquer outro balde por ruído de prosa, mas a
     // ata dizendo "não votou" prevalece sobre toda inferência de direção.
     if (impedidoIds.has(match.diretorId)) {
-      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado, unanime));
+      rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado, unanime, undefined, { motivo_nao_voto: "impedimento" }));
     } else if (ausenteIds.has(match.diretorId)) {
       rows.set(match.diretorId, rowFor(input.deliberacao_id, match.diretorId, "Ausente", true, resultado, unanime));
     } else if (abstencaoIds.has(match.diretorId)) {
@@ -190,14 +200,17 @@ export function buildVotoRows(input: {
   }
 
   for (const diretorId of ausenteIds) {
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime));
+    if (impedidoIds.has(diretorId)) continue; // o impedimento já classificou, com motivo próprio
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime, undefined, { motivo_nao_voto: "ausencia" }));
   }
 
   // Impedido é gravado como "Ausente" NOMINAL: o CHECK de `votos.tipo_voto` não comporta um valor
   // novo, e a distinção (impedimento × ausência física) vive em `raw_extraction.impedimentos` até a
   // coluna `motivo_nao_voto` existir (etapa59). O que importa aqui é não ser "Favoravel".
   for (const diretorId of impedidoIds) {
-    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime));
+    // `motivo_nao_voto` é o que separa, no banco, o impedido do ausente FÍSICO: os dois são
+    // tipo_voto "Ausente", mas só o impedido sai do denominador DELE na etapa61.
+    rows.set(diretorId, rowFor(input.deliberacao_id, diretorId, "Ausente", true, resultado, unanime, undefined, { motivo_nao_voto: "impedimento" }));
   }
 
   if (input.inferFromMandate) {
@@ -221,6 +234,15 @@ export function buildVotoRows(input: {
       if (rows.has(diretor.id)) continue;
       if (divergentIntent.has(diretor.id)) continue;
       rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, "Favoravel", false, resultado, unanime));
+    }
+  }
+
+  // VOTO EM AUTOS (etapa57) marca a linha seja qual for o ramo que a criou: o voto continua
+  // ligado à deliberação — é ele que forma a maioria — mas a etapa61 precisa saber que ele NÃO é
+  // presença nesta sessão, senão o diretor aparece numa reunião em que não esteve.
+  if (emAutosIds.size > 0) {
+    for (const [diretorId, row] of rows) {
+      if (emAutosIds.has(diretorId)) rows.set(diretorId, { ...row, voto_em_autos: true });
     }
   }
 
@@ -265,6 +287,7 @@ export function buildVoteSuggestions(input: {
   nomesAusente?: string[];
   nomesAbstencao?: string[];
   nomesImpedido?: string[];
+  nomesEmAutos?: string[];
   diretoresList: DiretorVoteRecord[];
   activeDiretoresList: DiretorVoteRecord[];
   inferFromMandate: boolean;
@@ -279,6 +302,7 @@ export function buildVoteSuggestions(input: {
   // A linha gravada é "Ausente" para os dois casos; só a ORIGEM distingue impedimento de
   // ausência física — é ela que o revisor lê na tela e que a etapa59 promoverá a coluna.
   const impedidoIds = matchIds(input.nomesImpedido ?? [], input.diretoresList);
+  const emAutosIds = matchIds(input.nomesEmAutos ?? [], input.diretoresList);
 
   return rows.map((row) => {
     const diretor = input.diretoresList.find((dir) => dir.id === row.diretor_id)
@@ -362,6 +386,7 @@ function rowFor(
   resultado: string | null = null,
   unanime = false,
   proveniencia?: ProvenienciaVoto,
+  extra?: Pick<VotoInsertRow, "motivo_nao_voto" | "voto_em_autos">,
 ): VotoInsertRow {
   return {
     deliberacao_id: deliberacaoId,
@@ -369,6 +394,8 @@ function rowFor(
     tipo_voto: tipoVoto,
     is_divergente: isDivergentVote(tipoVoto, resultado, unanime),
     is_nominal: isNominal,
+    ...(extra?.motivo_nao_voto ? { motivo_nao_voto: extra.motivo_nao_voto } : {}),
+    ...(extra?.voto_em_autos ? { voto_em_autos: true } : {}),
     // Voto LIDO do documento é "nominal". Voto INFERIDO se distingue pela evidência que o
     // sustenta: texto de unanimidade × direção da decisão. Sem essa distinção, "convergência
     // ≈ 100%" é tautologia — voto inferido é, por construção, não-divergente.

@@ -1,0 +1,355 @@
+{
+ "anm-ata-79-rop.pdf": {
+  "status": "low_confidence",
+  "agencia": "ANM",
+  "tipo": "ata",
+  "numero": null,
+  "data": "2025-11-26",
+  "resultado": "Aprovado",
+  "juizo": null,
+  "presentes": [
+   "Mauro Henrique Moreira Sousa",
+   "Tasso Mendonça Júnior",
+   "Roger Romão Cabral",
+   "José Fernando de Mendonça Gomes Júnior"
+  ],
+  "contra": [
+   "Mauro Henrique Moreira Sousa"
+  ],
+  "impedido": [],
+  "itens": 62,
+  "itens_unanimes": 47,
+  "itens_contra": [
+   {
+    "n": "2.2.1",
+    "c": [
+     "Mauro Henrique Moreira Sousa"
+    ]
+   }
+  ],
+  "itens_impedido": [],
+  "resultados": [
+   "Aprovado por Unanimidade",
+   "Aprovado",
+   "Retirado de Pauta",
+   "Indeferido",
+   "Deferido"
+  ],
+  "warnings": [
+   "Ata ANM precisa de revisao dos itens antes de alimentar metricas finais.",
+   "Inconsistência: texto indica unanimidade, mas há votos contrários/abstenções extraídos — revisar.",
+   "Divergência declarada no texto sem dissidente identificável — atribuir manualmente.",
+   "Divergência declarada no texto sem dissidente identificável — atribuir manualmente."
+  ]
+ },
+ "anm-ata-81-rop.pdf": {
+  "status": "low_confidence",
+  "agencia": "ANM",
+  "tipo": "ata",
+  "numero": null,
+  "data": "2026-01-28",
+  "resultado": "Aprovado",
+  "juizo": null,
+  "presentes": [
+   "Mauro Henrique Moreira Sousa",
+   "Luiz Paniago Neves",
+   "Fábio Fernando Borges",
+   "José Fernando de Mendonça Gomes Júnior"
+  ],
+  "contra": [],
+  "impedido": [
+   "José Fernando de Mendonça Gomes Júnior"
+  ],
+  "itens": 72,
+  "itens_unanimes": 64,
+  "itens_contra": [],
+  "itens_impedido": [
+   {
+    "n": "2.1.1",
+    "i": [
+     "José Fernando de Mendonça Gomes Júnior"
+    ]
+   }
+  ],
+  "resultados": [
+   "Aprovado por Unanimidade",
+   "Indeferido",
+   "Retirado de Pauta",
+   null,
+   "Deferido"
+  ],
+  "warnings": [
+   "Ata ANM precisa de revisao dos itens antes de alimentar metricas finais.",
+   "Voto proferido em sessão anterior por \"Carlos Cordeiro\" — diretor não localizado no cadastro; o voto NÃO foi criado. Cadastrar/aprovar o diretor e reprocessar.",
+   "Ata com 2 item(ns) repetido(s) no próprio documento — mantida a ocorrência com dispositivo. Conferir a divisão da ata.",
+   "Sinais contraditórios: texto indica unanimidade E maioria/voto de qualidade/voto vencido sem dissidente nomeado — revisar direção antes de confirmar."
+  ]
+ },
+ "anm-ata-83-rop.pdf": {
+  "status": "low_confidence",
+  "agencia": "ANM",
+  "tipo": "ata",
+  "numero": null,
+  "data": "2022-05-02",
+  "resultado": "Indeferido",
+  "juizo": null,
+  "presentes": [
+   "Mauro Henrique Moreira Sousa",
+   "Luiz Paniago Neves",
+   "Fábio Fernando Borges",
+   "José Fernando de Mendonça Gomes Júnior"
+  ],
+  "contra": [
+   "Mauro Henrique Moreira Sousa"
+  ],
+  "impedido": [
+   "José Fernando de Mendonça Gomes Júnior",
+   "Fábio Borges"
+  ],
+  "itens": 56,
+  "itens_unanimes": 45,
+  "itens_contra": [
+   {
+    "n": "2.3.1",
+    "c": [
+     "Mauro Henrique Moreira Sousa"
+    ]
+   }
+  ],
+  "itens_impedido": [
+   {
+    "n": "2.3.1",
+    "i": [
+     "José Fernando de Mendonça Gomes Júnior"
+    ]
+   },
+   {
+    "n": "2.4.1",
+    "i": [
+     "José Fernando de Mendonça Gomes Júnior"
+    ]
+   },
+   {
+    "n": "2.6.1",
+    "i": [
+     "Fábio Borges"
+    ]
+   },
+   {
+    "n": "2.7.1",
+    "i": [
+     "José Fernando de Mendonça Gomes Júnior"
+    ]
+   },
+   {
+    "n": "2.7.2",
+    "i": [
+     "José Fernando de Mendonça Gomes Júnior"
+    ]
+   },
+   {
+    "n": "2.8.1",
+    "i": [
+     "Fábio Borges"
+    ]
+   },
+   {
+    "n": "2.8.2",
+    "i": [
+     "José Fernando de Mendonça Gomes Júnior"
+    ]
+   }
+  ],
+  "resultados": [
+   "Aprovado por Unanimidade",
+   "Retirado de Pauta",
+   "Indeferido",
+   "Deferido"
+  ],
+  "warnings": [
+   "Ata ANM precisa de revisao dos itens antes de alimentar metricas finais.",
+   "Inconsistência: texto indica unanimidade, mas há votos contrários/abstenções extraídos — revisar.",
+   "Divergência declarada no texto sem dissidente identificável — atribuir manualmente.",
+   "Divergência declarada no texto sem dissidente identificável — atribuir manualmente."
+  ]
+ },
+ "anm-ata-34-rep.pdf": {
+  "status": "low_confidence",
+  "agencia": "ANM",
+  "tipo": "ata",
+  "numero": null,
+  "data": "2025-11-19",
+  "resultado": "Aprovado por Unanimidade",
+  "juizo": null,
+  "presentes": [
+   "Mauro Henrique Moreira Sousa",
+   "Tasso Mendonça Júnior",
+   "Roger Romão Cabral",
+   "José Fernando de Mendonça Gomes Júnior"
+  ],
+  "contra": [
+   "Mauro Henrique Moreira Sousa"
+  ],
+  "impedido": [],
+  "itens": 33,
+  "itens_unanimes": 15,
+  "itens_contra": [
+   {
+    "n": "3.5.1",
+    "c": [
+     "Mauro Henrique Moreira Sousa"
+    ]
+   }
+  ],
+  "itens_impedido": [],
+  "resultados": [
+   "Retirado de Pauta",
+   "Aprovado por Unanimidade",
+   "Indeferido",
+   "Aprovado"
+  ],
+  "warnings": [
+   "Ata ANM precisa de revisao dos itens antes de alimentar metricas finais.",
+   "Inconsistência: texto indica unanimidade, mas há votos contrários/abstenções extraídos — revisar.",
+   "Divergência declarada no texto sem dissidente identificável — atribuir manualmente."
+  ]
+ },
+ "antt-ata-1024.pdf": {
+  "status": "ok",
+  "agencia": "ANTT",
+  "tipo": "ata",
+  "numero": null,
+  "data": "2025-12-26",
+  "resultado": "Deferido",
+  "juizo": null,
+  "presentes": [],
+  "contra": [],
+  "impedido": [],
+  "itens": 7,
+  "itens_unanimes": 6,
+  "itens_contra": [],
+  "itens_impedido": [],
+  "resultados": [
+   "Deferido",
+   "Retirado de Pauta"
+  ],
+  "warnings": [
+   "ANTT: documento tratado como pauta/ata revisável; votos não são criados automaticamente."
+  ]
+ },
+ "antt-ata-264-rde.pdf": {
+  "status": "ok",
+  "agencia": "ANTT",
+  "tipo": "ata",
+  "numero": null,
+  "data": "2022-04-12",
+  "resultado": "Autorizado",
+  "juizo": null,
+  "presentes": [
+   "Guilherme Theo Rodrigues da Rocha Sampaio"
+  ],
+  "contra": [],
+  "impedido": [],
+  "itens": 3,
+  "itens_unanimes": 2,
+  "itens_contra": [],
+  "itens_impedido": [],
+  "resultados": [
+   "Autorizado",
+   "Retirado de Pauta",
+   "Indeferido"
+  ],
+  "warnings": [
+   "ANTT: documento tratado como pauta/ata revisável; votos não são criados automaticamente."
+  ]
+ },
+ "antt-voto-dab-002.pdf": {
+  "status": "ok",
+  "agencia": "ANTT",
+  "tipo": "voto_individual",
+  "numero": null,
+  "data": "2025-11-05",
+  "resultado": "Deferido",
+  "juizo": null,
+  "presentes": [],
+  "contra": [],
+  "impedido": [],
+  "itens": 0,
+  "itens_unanimes": 0,
+  "itens_contra": [],
+  "itens_impedido": [],
+  "resultados": [],
+  "warnings": [
+   "Voto individual tratado como documento de apoio; nao entra nos dashboards como decisao final."
+  ]
+ },
+ "artesp-delib-22.pdf": {
+  "status": "ok",
+  "agencia": "ARTESP",
+  "tipo": "deliberacao",
+  "numero": "22",
+  "data": "2026-01-13",
+  "resultado": "Indeferido",
+  "juizo": null,
+  "presentes": [
+   "André Isper Rodrigues Barnabé",
+   "Diego Albert Zanatto",
+   "Fernanda Esbízaro Rodrigues Rudnik",
+   "Raquel França Carneiro"
+  ],
+  "contra": [],
+  "impedido": [],
+  "itens": 0,
+  "itens_unanimes": 0,
+  "itens_contra": [],
+  "itens_impedido": [],
+  "resultados": [],
+  "warnings": []
+ },
+ "artesp-delib-23.pdf": {
+  "status": "ok",
+  "agencia": "ARTESP",
+  "tipo": "deliberacao",
+  "numero": "23",
+  "data": "2026-01-13",
+  "resultado": "Recomendado",
+  "juizo": null,
+  "presentes": [
+   "André Isper Rodrigues Barnabé",
+   "Diego Albert Zanatto",
+   "Fernanda Esbízaro Rodrigues Rudnik",
+   "Raquel França Carneiro"
+  ],
+  "contra": [],
+  "impedido": [],
+  "itens": 0,
+  "itens_unanimes": 0,
+  "itens_contra": [],
+  "itens_impedido": [],
+  "resultados": [],
+  "warnings": []
+ },
+ "artesp-delib-303.pdf": {
+  "status": "ok",
+  "agencia": "ARTESP",
+  "tipo": "deliberacao",
+  "numero": "303",
+  "data": "2026-04-15",
+  "resultado": "Aprovado",
+  "juizo": null,
+  "presentes": [
+   "André Isper Rodrigues Barnabé",
+   "Diego Albert Zanatto",
+   "Fernanda Esbízaro Rodrigues Rudnik",
+   "Raquel França Carneiro"
+  ],
+  "contra": [],
+  "impedido": [],
+  "itens": 0,
+  "itens_unanimes": 0,
+  "itens_contra": [],
+  "itens_impedido": [],
+  "resultados": [],
+  "warnings": []
+ }
+}

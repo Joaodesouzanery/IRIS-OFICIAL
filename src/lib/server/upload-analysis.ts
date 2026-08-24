@@ -280,6 +280,7 @@ export async function analyzeUploadPdf(input: {
         votos_abstencao_detectados: itemVotes.abstencao,
         votos_ausentes_detectados: itemVotes.ausente,
         votos_impedidos_detectados: itemVotes.impedido,
+        votos_em_autos_detectados: extractVotosEmAutos(item.raw_text).map((v) => v.nome),
         // Avisos do item: os do splitter (que este map DESCARTAVA — o leitor em `documentWarnings`
         // nunca os via) mais o da etapa51, divergência declarada sem dissidente imputável.
         // Não casa INFO_WARNING_RE de propósito: é problema de QUALIDADE — há dissenso no texto e
@@ -352,6 +353,7 @@ export async function analyzeUploadPdf(input: {
     nomesAbstencao: fields.nomes_votacao_abstencao,
     nomesAusente: fields.nomes_votacao_ausente,
     nomesImpedido: fields.nomes_votacao_impedido,
+    nomesEmAutos: votosEmAutos.map((v) => v.nome),
     diretoresList,
     activeDiretoresList,
     inferFromMandate: mainInferFromMandate,
@@ -378,6 +380,7 @@ export async function analyzeUploadPdf(input: {
           nomesAbstencao: item.votos_abstencao_detectados ?? [],
           nomesAusente: item.votos_ausentes_detectados ?? [],
           nomesImpedido: item.votos_impedidos_detectados ?? [],
+          nomesEmAutos: item.votos_em_autos_detectados ?? [],
           diretoresList,
           activeDiretoresList,
           inferFromMandate,

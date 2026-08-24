@@ -41,25 +41,57 @@ function fixEncoding(text: string): string {
   return result;
 }
 
-// ─── Probe de ligadura (rede de segurança, não conserto) ─────────────────
-// A ligadura "ti" some nos PDFs da ANTT e o caractere que sobra DEPENDE DA FONTE embutida.
-// Hoje, medido com pdf-parse sobre o corpus, é sempre "7" — e ENCODING_FIXES já o conserta
-// (8/8 na pauta 1.036; zero ocorrências em ANM e ARTESP). Se a ANTT trocar de fonte, o
-// substituto muda e o conserto para de valer EM SILÊNCIO: some o roster ("par?cipação"), a
-// retirada de pauta ("re?rado") e o cargo exercido ("subs?tuto") — três caminhos que o parser
-// da ANTT depende. Este probe não conserta nada; ele transforma "a fonte mudou" em aviso.
-// Roda nos TRÊS órgãos justamente porque hoje dá zero em ANM/ARTESP: é o zero que torna uma
-// futura regressão detectável.
-const LIGATURE_LEMMAS: [RegExp, string][] = [
-  [/\bsubs[^a-zà-ÿ]tu/gi, "substitu…"],
-  [/\bpar[^a-zà-ÿ]cipa/gi, "participa…"],
-  [/\bins[^a-zà-ÿ]tu/gi, "institu…"],
-  [/\bre[^a-zà-ÿ]rad[oa]/gi, "retirad…"],
-  [/\bdelibera[^a-zà-ÿ]v/gi, "deliberativ…"],
-  [/\bobje[^a-zà-ÿ]v/gi, "objetiv…"],
-  [/\bcompe[^a-zà-ÿ]{1,2}v/gi, "competitiv…"],
-  [/\bnorma[^a-zà-ÿ]v/gi, "normativ…"],
+// ─── Reparo da ligadura "ti", ANCORADO EM VOCABULÁRIO ─────────────────────
+// MEDIDO em 16 PDFs oficiais: o caractere que sobra no lugar de "ti" depende da FONTE EMBUTIDA —
+// `7` na pauta 1.036, `%` na ata 1.024 e `,` na 264ª RDE. Três documentos da MESMA agência, três
+// substitutos diferentes. Uma regra por caractere nunca vai acompanhar isso.
+//
+// E "qualquer caractere entre minúsculas → ti" também não serve. Medido, destruiria:
+//   · a ênclise da ANM   — "devendo-se", "restituiu-lhe", "Trata-se" (33 casos só na 79ª);
+//   · as URLs do SEI     — "acao_origem", "id_documento" (29 no voto DAB);
+//   · e o caso decisivo  — "exposto,voto" na 32ª (espaço perdido depois da vírgula), que viraria
+//     "expostotivoto", corrompendo o dispositivo de um item real.
+//
+// A saída é INVERTER a âncora: o substituto é curinga, mas o CONTEXTO é um vocabulário FECHADO de
+// lemas que contêm "ti". "exposto,voto" não casa lema nenhum e sai intacto; "Delibera,va" casa
+// `delibera[X]v` e vira "Deliberativa". Isso também sobrevive a um QUARTO substituto aparecer —
+// que é justamente o que aconteceu entre a etapa49 (só `7` conhecido) e a chegada destes PDFs.
+//
+// A MESMA tabela serve de reparo e de probe: o que não for reparado aparece como aviso, e os dois
+// não podem sair de sincronia.
+const LIGATURE_TI: Array<{ re: RegExp; fix: string; label: string }> = [
+  { re: /\b(subs)[^a-zà-ÿ](tu)/gi,            fix: "$1ti$2", label: "substitu…" },
+  { re: /\b(par)[^a-zà-ÿ](cipa)/gi,           fix: "$1ti$2", label: "participa…" },
+  { re: /\b(ins)[^a-zà-ÿ](tu)/gi,             fix: "$1ti$2", label: "institu…" },
+  { re: /\b(re)[^a-zà-ÿ](rad[oa])/gi,         fix: "$1ti$2", label: "retirad…" },
+  { re: /\b(delibera)[^a-zà-ÿ](v)/gi,         fix: "$1ti$2", label: "deliberativ…" },
+  { re: /\b(obje)[^a-zà-ÿ](v)/gi,             fix: "$1ti$2", label: "objetiv…" },
+  { re: /\b(norma)[^a-zà-ÿ](v)/gi,            fix: "$1ti$2", label: "normativ…" },
+  { re: /\b(administra)[^a-zà-ÿ](v)/gi,       fix: "$1ti$2", label: "administrativ…" },
+  { re: /\b(transmi)[^a-zà-ÿ](d[oa])/gi,      fix: "$1ti$2", label: "transmitid…" },
+  { re: /\b(pol[íi])[^a-zà-ÿ](c)/gi,          fix: "$1ti$2", label: "polític…" },
+  { re: /\b(adi)[^a-zà-ÿ](v)/gi,              fix: "$1ti$2", label: "aditiv…" },
+  { re: /\b(compar)[^a-zà-ÿ](lhamento)/gi,    fix: "$1ti$2", label: "compartilhamento" },
+  { re: /\b(rela)[^a-zà-ÿ](v)/gi,             fix: "$1ti$2", label: "relativ…" },
+  { re: /\b(des)[^a-zà-ÿ](na[dr])/gi,         fix: "$1ti$2", label: "destina…" },
+  { re: /\b(inves)[^a-zà-ÿ](mento)/gi,        fix: "$1ti$2", label: "investimento" },
+  { re: /\b(mo)[^a-zà-ÿ](va)\b/gi,            fix: "$1ti$2", label: "motiva…" },
+  { re: /\b(cole)[^a-zà-ÿ](v)/gi,             fix: "$1ti$2", label: "coletiv…" },
+  { re: /\b(respec)[^a-zà-ÿ](v)/gi,           fix: "$1ti$2", label: "respectiv…" },
+  { re: /\b(compe)[^a-zà-ÿ]{1,2}(v)/gi,       fix: "$1ti$2", label: "competitiv…" },
 ];
+
+/** Aplica o reparo de ligadura ancorado em vocabulário. Exportado para teste. */
+export function repairLigatures(text: string): string {
+  let out = text;
+  for (const { re, fix } of LIGATURE_TI) {
+    re.lastIndex = 0;
+    out = out.replace(re, fix);
+  }
+  return out;
+}
+
+const LIGATURE_LEMMAS: [RegExp, string][] = LIGATURE_TI.map(({ re, label }) => [re, label]);
 
 export interface LigatureProbe {
   /** Lemas que continuam quebrados DEPOIS da limpeza (vazio = tudo certo). */
@@ -256,6 +288,9 @@ export async function extractPdfText(
   let text = fixEncoding(rawText);
   text = removeSeiHeadersFooters(text);
   text = normalizeWhitespace(text);
+  // DEPOIS da normalização de espaços: a de-hifenização já juntou o que o PDF quebrou, então o
+  // lema chega inteiro para o reparo de ligadura casar.
+  text = repairLigatures(text);
   text = removeRepeatedLines(text); // remove cabeçalhos/rodapés repetidos por página
 
   let charsPerPage = pageCount > 0 ? Math.floor(text.length / pageCount) : 0;
@@ -267,7 +302,7 @@ export async function extractPdfText(
   if (charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && isOcrConfigured()) {
     const ocrText = await extractTextViaOcr(buffer);
     if (ocrText && ocrText.length > Math.max(200, text.length * 1.5)) {
-      text = removeRepeatedLines(normalizeWhitespace(removeSeiHeadersFooters(fixEncoding(ocrText))));
+      text = repairLigatures(removeRepeatedLines(normalizeWhitespace(removeSeiHeadersFooters(fixEncoding(ocrText)))));
       charsPerPage = pageCount > 0 ? Math.floor(text.length / pageCount) : text.length;
       ocrApplied = true;
     }

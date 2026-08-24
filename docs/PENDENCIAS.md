@@ -258,10 +258,50 @@ removido); a entrada já é auth→sistema (`/`→`/dashboard`→`/login`), sem 
 - **CSP por nonce** (remover `'unsafe-inline'`/`'unsafe-eval'` de `script-src` em `next.config.mjs`) —
   invasivo no runtime do Next (middleware injeta nonce por request); risco de regressão visual.
 
+## Fase 0 — corpus de certificação ampliado (24/08/2026)
+
+10 PDFs oficiais novos entraram em `src/lib/server/__tests__/fixtures/votos/` (ANM 79ª/81ª/83ª ROP e
+34ª REP; ANTT 1.024ª, 264ª RDE e Voto DAB 002; ARTESP 22, 23 e 303). O gabarito foi levantado por
+LEITURA INDEPENDENTE de cada documento — não copiando a saída do extrator, senão o padrão-ouro
+certificaria os próprios defeitos. Certificação passou de **46 expectativas em 6 documentos** para
+**150 em 16**.
+
+**Divergências ABERTAS entre a leitura do documento e o extrator** (não asseridas no gabarito de
+propósito — asserir um valor contestado congelaria o erro):
+
+- **79ª ROP · voto contrário.** A leitura do documento aponta *Roger Romão Cabral* e *Tasso Mendonça
+  Júnior* como vencidos (item 1.4.1, empate resolvido por voto de qualidade do DG; item 2.2.1). O
+  extrator marca *Mauro Henrique Moreira Sousa*. Investigar antes de asserir.
+- **83ª ROP · voto contrário.** O extrator marca *Mauro Henrique Moreira Sousa*; a leitura do
+  documento não encontra dissidente. Possível falso positivo do contrário-por-cargo (etapa51).
+- **83ª ROP · nome truncado.** O impedimento sai como *"Fábio Borges"*; o nome completo é *Fábio
+  Fernando Borges*. Impede o casamento com o cadastro.
+- **81ª ROP · contagem de itens.** Extrator = 72, leitura = 69. `ata_items_min` foi fixado abaixo dos
+  dois para não travar a suíte numa contagem em disputa.
+
+**Defeitos CORRIGIDOS que estes documentos revelaram** (só existiam fora do corpus antigo):
+
+- Ligadura "ti": o substituto depende da FONTE — `7` (pauta 1.036), `%` (ata 1.024) e `,` (264ª RDE),
+  três documentos da MESMA agência. A regra passou a ser ancorada em VOCABULÁRIO.
+- `parseDataExtensoANM` não lia o mês **março** (`\w` em JS é ASCII e quebra no "ç") nem ordinais
+  compostos ("décimo nono"). Data ausente caía num fallback que pescava data CITADA no corpo: a 83ª
+  de 25/03/2026 era gravada como 02/05/2022. **Data errada escolhe o roster de mandatos errado.**
+- `extractAnttDate`: captura do ano GULOSA engolia a frase inteira → a 1.024ª (19/01/2026) saía
+  26/12/2025.
+- **Voto DAB 002: direção INVERTIDA.** O voto transcreve a liminar do juiz ("Ante o exposto, DEFIRO,
+  em parte…") na seção de fatos; o extrator ancorava na PRIMEIRA ocorrência e gravava "Deferido"
+  quando o diretor votou "pelo indeferimento". Numa peça de voto o dispositivo é o ÚLTIMO.
+- Data do voto individual: vinha de um fato do processo (05/11/2025) em vez do fecho assinado
+  (09/03/2026).
+- Roster da ANTT saía vazio ("sob a presidência do Diretor-Geral, X; presentes os Diretores A, B…"
+  não era reconhecido) — e **sem roster não há inferência de voto naquela agência**.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
   (e-mail gmail bloqueia o deploy na Vercel). Nunca force-push em `main`.
 - Migrations são aplicadas manualmente pelo usuário no SQL Editor (idempotentes).
-- `upload/confirm` é o ÚNICO writer de votos; voto nominal nunca é rebaixado a inferido.
+- Voto nominal nunca é rebaixado a inferido. Desde a etapa58 há TRÊS writers (confirm, backfill
+  retroativo e materializar-faltantes) e todos passam por `src/lib/server/votos-write.ts`, que
+  centraliza a proteção, a sonda de capacidade de coluna e a propagação do erro.
 - `isResultadoPositivo` (src/lib/utils.ts) é a fonte única de "resultado favorável".

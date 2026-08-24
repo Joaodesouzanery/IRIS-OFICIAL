@@ -508,6 +508,8 @@ export interface AtaPreviewItem {
   votos_ausentes_detectados?: string[];
   /** Impedidos/suspeitos declarados no item — presentes, sem voto (etapa50). */
   votos_impedidos_detectados?: string[];
+  /** Voto proferido em sessão ANTERIOR e só registrado aqui (etapa57). */
+  votos_em_autos_detectados?: string[];
   votos_sugeridos?: VotoSugerido[];
   unanimidade_detectada?: boolean;
   needs_review?: boolean;

@@ -1292,7 +1292,22 @@ export function extractPresentes(text: string): string[] {
 
 // Zona do preâmbulo onde a ANM lista quem presidiu/compareceu (limita o escopo para
 // não pescar "o Diretor relator X" dos itens lá embaixo).
-const RE_ROSTER_ZONA = /(?:presidid[ao][\s\S]{0,40}?Diretor|contou\s+com\s+a\s+presen[cç]a|estiveram\s+presentes|compareceram|com\s+a\s+participa[cç][aã]o)[\s\S]{0,600}/i;
+// `sob a presidência` e `presentes os Diretores` são as fórmulas da ANTT — sem elas o roster das
+// atas da ANTT saía VAZIO, e sem roster não há inferência de voto nenhuma naquela agência.
+const RE_ROSTER_ZONA = /(?:presidid[ao][\s\S]{0,40}?Diretor|sob\s+a\s+presid[êe]ncia|contou\s+com\s+a\s+presen[cç]a|estiveram\s+presentes|presentes\s+os\s+[Dd]iretores|compareceram|com\s+a\s+participa[cç][aã]o)[\s\S]{0,600}/i;
+// Forma de LISTA da ANTT: um único rótulo "Diretores" seguido de vários nomes separados por
+// vírgula e "e". O RE_ROSTER_DIRETOR exige o rótulo colado a CADA nome, então via só o primeiro.
+// A janela fecha no ";" porque logo depois vêm Procurador, Ouvidor e Secretaria — que não votam.
+// Duas formas reais: "presentes os Diretores A, B, C e D" (1.024ª) e "…do Diretor-Geral X, dos
+// Diretores A, B, C e D" (264ª RDE).
+const RE_ROSTER_LISTA_ANTT = /(?:presentes\s+os|d[oa]s)\s+[Dd]iretores\s+([^;.]{10,400})/i;
+// "sob a presidência do Diretor-Geral, NOME" — quem preside também é diretor presente.
+// "sob a presidência do Diretor-Geral, NOME" (1.024ª) e "com a participação do Diretor-Geral
+// NOME" (264ª) — quem preside/participa também é diretor presente.
+const RE_ROSTER_PRESIDENTE = new RegExp(
+  `(?:sob\\s+a\\s+presid[êe]ncia|com\\s+a\\s+participa[çc][ãa]o)\\s+d[oa]\\s+[Dd]iretor[a]?(?:[-\\s]Geral)?,?\\s+(${NOME})`,
+  "i",
+);
 // Nome SEM o conector "e" isolado (o macro NOME global o inclui e mesclaria dois
 // diretores adjacentes: "…Neves e do Diretor Caio…"). Aceita só "de/da/do/dos/das".
 // {1,6} p/ não truncar nomes longos ("José Fernando de Mendonça Gomes Júnior" = 6 tokens).
@@ -1306,6 +1321,20 @@ export function extractPresentesNarrativo(text: string): string[] {
   const zona = RE_ROSTER_ZONA.exec(text)?.[0];
   if (!zona) return [];
   const nomes: string[] = [];
+
+  // ANTT: presidente + lista de diretores. Vem ANTES do laço genérico para que a ordem do
+  // documento seja preservada (o Diretor-Geral primeiro).
+  const presidente = RE_ROSTER_PRESIDENTE.exec(zona)?.[1];
+  if (presidente) {
+    const limpo = presidente.replace(/\s+/g, " ").trim();
+    if (isLikelyPersonName(limpo) && !nomes.includes(limpo)) nomes.push(limpo);
+  }
+  const lista = RE_ROSTER_LISTA_ANTT.exec(zona)?.[1];
+  if (lista) {
+    for (const nome of splitDirectorNames(lista)) {
+      if (!nomes.includes(nome)) nomes.push(nome);
+    }
+  }
   for (const match of zona.matchAll(RE_ROSTER_DIRETOR)) {
     const nome = match[1]
       // Rede: remove palavra-função à esquerda que possa ter vazado (Substituto/Geral…).

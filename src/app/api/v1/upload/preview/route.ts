@@ -75,7 +75,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     // Importações server-only
     const { isPdfBuffer, extractPdfText, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } = await import("@/lib/server/pdf-extractor");
     const { isZipBuffer, extractPdfEntriesFromZip } = await import("@/lib/server/zip-extractor");
-    const { extractFields, calcConfidence, extractItemVotes, buildRoleMap } = await import("@/lib/server/nlp-extractor");
+    const { extractFields, calcConfidence, extractItemVotes, buildRoleMap, extractVotosEmAutos } = await import("@/lib/server/nlp-extractor");
     const { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } = await import("@/lib/server/classifier");
     const { detectDocumentType, splitAtaItemsWithStats, extractAtaMetadata } = await import("@/lib/server/ata-splitter");
     const { parseAnttManualDocument } = await import("@/lib/server/antt-manual-parser");
@@ -314,6 +314,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               votos_abstencao_detectados: itemVotes.abstencao,
               votos_ausentes_detectados: itemVotes.ausente,
               votos_impedidos_detectados: itemVotes.impedido,
+              votos_em_autos_detectados: extractVotosEmAutos(item.raw_text).map((v) => v.nome),
               // Espelha upload-analysis: os avisos do splitter e o da etapa51 (divergência sem
               // dissidente imputável) seguem para o revisor em vez de sumirem no map.
               ...(((item as { warnings?: string[] }).warnings?.length ?? 0) + itemVotes.avisos.length > 0

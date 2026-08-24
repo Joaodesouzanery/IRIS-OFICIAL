@@ -747,6 +747,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   // backfill retroativo reprocessa o item SEM o impedimento e refabrica o voto.
                   nomes_votacao_impedido: item.votos_impedidos_detectados ?? [],
                   impedimentos: item.votos_impedidos_detectados ?? [],
+                  // etapa57: sem persistir, o backfill retroativo reprocessa o item SEM saber que
+                  // o voto veio de sessao anterior e volta a descartar o ex-diretor.
+                  votos_em_autos: (item.votos_em_autos_detectados ?? []).map((nome) => ({ nome, sessao: null })),
                   unanimidade_detectada: Boolean(item.unanimidade_detectada),
                   votos_inferidos_por_mandato: shouldInferVotesFromMandate({
                     resultado: item.resultado,
@@ -798,6 +801,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   nomesAbstencao: item.votos_abstencao_detectados ?? [],
                   nomesAusente: item.votos_ausentes_detectados ?? [],
                   nomesImpedido: item.votos_impedidos_detectados ?? [],
+                  nomesEmAutos: item.votos_em_autos_detectados ?? [],
                   diretoresList,
                   activeDiretoresList: isAnttAtaItem && rosterItem.length > 0 ? rosterItem : activeDiretoresList,
                   resultado: item.resultado,

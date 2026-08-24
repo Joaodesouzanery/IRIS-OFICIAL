@@ -68,6 +68,32 @@ const NUMEROS_EXTENSO: Record<string, number> = {
   "vinte e nove": 29, trinta: 30, "trinta e um": 31,
   primeiro: 1, segundo: 2, terceiro: 3, quarto: 4, quinto: 5,
   sexto: 6, sétimo: 7, setimo: 7, oitavo: 8, nono: 9, décimo: 10, decimo: 10,
+  // ORDINAIS COMPOSTOS (etapa Fase 0). A ANM também abre a ata com "Ao décimo nono dia do mês
+  // de…" — e sem estas entradas o dia saía NaN, a data ficava null e um FALLBACK pegava uma data
+  // CITADA no corpo do documento. Data errada é pior que data ausente: `data_reuniao` é o que
+  // escolhe o roster de mandatos em `getActiveDiretoresForVote`, então uma ata de 2026 datada de
+  // 2022 infere voto para os diretores ERRADOS, com aparência de normalidade.
+  "décimo primeiro": 11, "decimo primeiro": 11,
+  "décimo segundo": 12, "decimo segundo": 12,
+  "décimo terceiro": 13, "decimo terceiro": 13,
+  "décimo quarto": 14, "decimo quarto": 14,
+  "décimo quinto": 15, "decimo quinto": 15,
+  "décimo sexto": 16, "decimo sexto": 16,
+  "décimo sétimo": 17, "decimo setimo": 17,
+  "décimo oitavo": 18, "decimo oitavo": 18,
+  "décimo nono": 19, "decimo nono": 19,
+  "vigésimo": 20, vigesimo: 20,
+  "vigésimo primeiro": 21, "vigesimo primeiro": 21,
+  "vigésimo segundo": 22, "vigesimo segundo": 22,
+  "vigésimo terceiro": 23, "vigesimo terceiro": 23,
+  "vigésimo quarto": 24, "vigesimo quarto": 24,
+  "vigésimo quinto": 25, "vigesimo quinto": 25,
+  "vigésimo sexto": 26, "vigesimo sexto": 26,
+  "vigésimo sétimo": 27, "vigesimo setimo": 27,
+  "vigésimo oitavo": 28, "vigesimo oitavo": 28,
+  "vigésimo nono": 29, "vigesimo nono": 29,
+  "trigésimo": 30, trigesimo: 30,
+  "trigésimo primeiro": 31, "trigesimo primeiro": 31,
 };
 
 const MESES_EXTENSO: Record<string, number> = {
@@ -93,8 +119,17 @@ const ANOS_EXTENSO: Record<string, number> = {
 export function parseDataExtensoANM(text: string): string | null {
   // "dias" é opcional: atas reais da ANM também escrevem "Aos vinte e três do mês de
   // fevereiro do ano de dois mil e vinte e seis" (82ª ROP) — sem a palavra "dias".
-  const re = /[Aa]os?\s+(.+?)(?:\s+dias?)?\s+do\s+m[eê]s\s+de\s+(\w+)\s+do\s+ano\s+de\s+(.+?)(?:[,.]|\s+[,.]|\s+às)/i;
-  const match = re.exec(text);
+  // `(\w+)` para o MÊS era um bug silencioso: em JS `\w` é ASCII puro, então "março" quebrava no
+  // "ç", o casamento falhava e TODA ata de março ficava sem data — caindo no fallback que pesca
+  // data citada no corpo. Medido na 83ª ROP (25/03/2026), que saía como 02/05/2022.
+  //
+  // A forma de INTERVALO vem PRIMEIRO ("Do décimo nono AO vigésimo terceiro dia do mês de…",
+  // sessão eletrônica de vários dias). Sem ela, o `[Aa]os?` casava o "ao" do MEIO da frase e a data
+  // virava o dia FINAL — divergindo da convenção do próprio projeto, que registra o dia INICIAL
+  // (vide o ramo `periodo` do parser da ANTT). Medido na 264ª RDE: saía 23/01 em vez de 19/01.
+  const reIntervalo = /\bd[oe]\s+(.+?)\s+ao\s+.+?\s+dias?\s+do\s+m[eê]s\s+de\s+([A-Za-zÀ-ÿ]+)\s+do\s+ano\s+de\s+(.+?)(?:[,.]|\s+às)/i;
+  const re = /[Aa]os?\s+(.+?)(?:\s+dias?)?\s+do\s+m[eê]s\s+de\s+([A-Za-zÀ-ÿ]+)\s+do\s+ano\s+de\s+(.+?)(?:[,.]|\s+[,.]|\s+às)/i;
+  const match = reIntervalo.exec(text) ?? re.exec(text);
   if (!match) return null;
 
   const diaRaw = match[1].toLowerCase().trim();

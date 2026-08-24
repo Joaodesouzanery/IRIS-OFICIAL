@@ -175,7 +175,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
 
   const documentType = classifyAnttDocument(clean, filename);
   const meeting = extractMeeting(clean, filename, documentType);
-  const date = extractAnttDate(clean, filename);
+  const date = extractAnttDate(clean, filename, documentType);
   const directorInfo = extractDirector(clean, filename, documentType, date);
   const director = directorInfo.nome;
   const attendance = extractAnttAttendance(clean);
@@ -356,13 +356,34 @@ function extractAnttDocumentNumber(text: string, filename: string, type: AnttMan
 
 // Aceita qualquer ano 20xx (antes hardcodava 2026 → documentos de outros anos ficavam
 // sem data e a extenso "dois mil e vinte e seis" era o único caso coberto).
-function extractAnttDate(text: string, filename: string) {
+function extractAnttDate(text: string, filename: string, type?: AnttManualDocumentType) {
+  // VOTO INDIVIDUAL: a data do voto é a do FECHO assinado pelo diretor ("Brasília, 09 de março de
+  // 2026." / "Documento assinado eletronicamente por X, Diretor, em 09/03/2026"), que fica no FIM
+  // da peça. O cabeçalho de um voto é relatório e está cheio de datas do PROCESSO — a varredura
+  // dos primeiros 2.500 caracteres pescava a primeira delas. Medido no Voto DAB 002/2026: saía
+  // 05/11/2025 (data em que a empresa protocolou o pedido) em vez de 09/03/2026.
+  if (type === "voto_individual") {
+    const cauda = text.slice(-2500);
+    const fecho = /Bras[ií]lia,?\s*(\d{1,2})\s+de\s+([A-Za-zÀ-ÿ]+)\s+de\s+(20\d{2})/i.exec(cauda);
+    if (fecho) {
+      const mes = monthNumber(plain(fecho[2]));
+      if (mes) return iso(fecho[1], mes, fecho[3]);
+    }
+    const assinatura = /assinado eletronicamente por[^,]{0,80},\s*Diretor[^,]{0,40},\s*em\s*(\d{1,2})\/(\d{1,2})\/(20\d{2})/i.exec(cauda);
+    if (assinatura) return iso(assinatura[1], assinatura[2], assinatura[3]);
+  }
+
   const source = `${filename} ${text.slice(0, 2500)}`;
   const sourcePlain = plain(source);
   const periodo = /periodo:\s*(\d{1,2})[./](\d{1,2})\s+a\s+\d{1,2}[./]\d{1,2}[./](20\d{2})/i.exec(sourcePlain);
   if (periodo) return iso(periodo[1], periodo[2], periodo[3]);
 
-  const wordRange = /do\s+([a-z\s]+?)\s+ao\s+[a-z\s]+?\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+([a-z\s]+)/i.exec(sourcePlain);
+  // A captura do ANO era GULOSA e sem limite: `([a-z\s]+)` engolia "vinte e seis as dezesseis
+  // horas e cinquenta minutos realizou se por videoconferencia..." e portugueseYearNumber devolvia
+  // null. A data caía no fallback NUMÉRICO, que pega o primeiro dd/mm/aaaa dos 2.500 primeiros
+  // caracteres — normalmente uma data CITADA. Medido: a ata da 1.024ª (19/01/2026) saía 26/12/2025.
+  // Bounded a 4 palavras, que cobre "vinte e seis" com folga e para antes da vírgula.
+  const wordRange = /do\s+([a-z\s]+?)\s+ao\s+[a-z\s]+?\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+((?:[a-z]+\s+){0,3}[a-z]+?)(?=[,.]|\s+as\s|\s+realizou|$)/i.exec(sourcePlain);
   if (wordRange) {
     const day = portugueseDayNumber(wordRange[1]) ?? portugueseDayNumber(lastWordDateCandidate(wordRange[1], "do"));
     const month = monthNumber(wordRange[2]);
@@ -370,7 +391,7 @@ function extractAnttDate(text: string, filename: string) {
     if (day && month && year) return iso(day, month, year);
   }
 
-  const wordSingle = /ao\s+([a-z\s]+?)\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+([a-z\s]+)/i.exec(sourcePlain);
+  const wordSingle = /ao\s+([a-z\s]+?)\s+dia\s+do\s+mes\s+de\s+([a-z]+)\s+do\s+ano\s+de\s+dois\s+mil\s+e\s+((?:[a-z]+\s+){0,3}[a-z]+?)(?=[,.]|\s+as\s|\s+realizou|$)/i.exec(sourcePlain);
   if (wordSingle) {
     const day = portugueseDayNumber(wordSingle[1]) ?? portugueseDayNumber(lastWordDateCandidate(wordSingle[1], "ao"));
     const month = monthNumber(wordSingle[2]);
@@ -733,20 +754,25 @@ function extractVoteConclusion(text: string): { text: string | null; fromTail: b
   const END = /\s+Documento assinado eletronicamente|$/i;
   // Lead-ins do dispositivo/voto (QA Etapa 19: a maioria dos votos ANTT ficava sem
   // `resultado` porque o dispositivo usa fórmulas variadas). Ordem não importa (1º que casa).
-  const conclusion = between(text, /Diante do exposto,?\s*/i, END)
-    ?? between(text, /Assim, concluo que\s*/i, END)
-    ?? between(text, /Ante o exposto,?\s*/i, END)
-    ?? between(text, /(?:Isto|Isso)\s+posto,?\s*/i, END)
-    ?? between(text, /Pelo\s+exposto,?\s*/i, END)
-    ?? between(text, /Por\s+todo\s+o\s+exposto,?\s*/i, END)
-    ?? between(text, /(?:Em\s+face|Face)\s+(?:d?ao?)\s+exposto,?\s*/i, END)
-    ?? between(text, /N[ea]stes?\s+termos,?\s*/i, END)
-    ?? between(text, /Nesses\s+termos,?\s*/i, END)
-    ?? between(text, /VOTO\s+por\s+/i, END)
-    ?? between(text, /Voto\s+pel[ao]\s+/i, END)
-    ?? between(text, /Voto\s+no\s+sentido\s+/i, END)
-    ?? between(text, /Conclui-se\s+/i, END)
-    ?? between(text, /(?:DISPOSITIVO|CONCLUS[AÃ]O)\s*:?\s*/i, END)
+  // "PROPOSIÇÃO FINAL" primeiro: é o rótulo que a ANTT usa para a conclusão do diretor, e ele
+  // separa sem ambiguidade o dispositivo PRÓPRIO do que foi apenas transcrito no relatório.
+  // Todos os demais usam betweenLast — o dispositivo do voto é o ÚLTIMO, nunca o primeiro.
+  const conclusion = between(text, /(?:D[AO]\s+)?PROPOSI[ÇC][ÃA]O\s+FINAL\s*[:.]?\s*/i, END)
+    ?? betweenLast(text, /Diante do exposto,?\s*/i, END)
+    ?? betweenLast(text, /Assim, concluo que\s*/i, END)
+    // "Ante AO exposto" é variante real (Voto DAB 002) que a forma com "o" não cobria.
+    ?? betweenLast(text, /Ante\s+a?o\s+exposto,?\s*/i, END)
+    ?? betweenLast(text, /(?:Isto|Isso)\s+posto,?\s*/i, END)
+    ?? betweenLast(text, /Pelo\s+exposto,?\s*/i, END)
+    ?? betweenLast(text, /Por\s+todo\s+o\s+exposto,?\s*/i, END)
+    ?? betweenLast(text, /(?:Em\s+face|Face)\s+(?:d?ao?)\s+exposto,?\s*/i, END)
+    ?? betweenLast(text, /N[ea]stes?\s+termos,?\s*/i, END)
+    ?? betweenLast(text, /Nesses\s+termos,?\s*/i, END)
+    ?? betweenLast(text, /VOTO\s+por\s+/i, END)
+    ?? betweenLast(text, /Voto\s+pel[ao]\s+/i, END)
+    ?? betweenLast(text, /Voto\s+no\s+sentido\s+/i, END)
+    ?? betweenLast(text, /Conclui-se\s+/i, END)
+    ?? betweenLast(text, /(?:DISPOSITIVO|CONCLUS[AÃ]O)\s*:?\s*/i, END)
     ?? between(text, /ENCAMINHAMENTO:\s*/i, /\s+(?:Bras[ÃƒÃ­i]lia|Documento assinado eletronicamente|$)/i)
     ?? between(text, /EMENTA\s*:\s*/i, /\s+(?:RELAT[ÃƒÃ“O]RIO|I\s+-\s+RELAT|$)/i);
   if (conclusion) return { text: conclusion.slice(0, 2000), fromTail: false };
@@ -959,6 +985,30 @@ function between(value: string, start: RegExp, end: RegExp) {
   const startMatch = start.exec(value);
   if (!startMatch) return null;
   const rest = value.slice(startMatch.index + startMatch[0].length);
+  const endMatch = end.exec(rest);
+  return cleanText((endMatch ? rest.slice(0, endMatch.index) : rest)).slice(0, 2000) || null;
+}
+
+/**
+ * Como `between`, mas ancorando na ÚLTIMA ocorrência do lead-in.
+ *
+ * Numa peça de VOTO o dispositivo é, por construção, o ÚLTIMO — tudo que vem antes é relatório, e
+ * relatório CITA dispositivos de outras autoridades. Caso real (Voto DAB 002/2026): a seção "DOS
+ * FATOS" transcreve a liminar do juiz — "Ante o exposto, DEFIRO, em parte, a liminar requerida" —
+ * enquanto a "PROPOSIÇÃO FINAL" do diretor diz "VOTO pelo indeferimento do pedido". Ancorando na
+ * PRIMEIRA ocorrência, o voto do diretor era gravado com o dispositivo do JUIZ: um indeferimento
+ * virava deferimento, invertido e sem nenhum aviso.
+ */
+function betweenLast(value: string, start: RegExp, end: RegExp) {
+  const re = new RegExp(start.source, start.flags.includes("g") ? start.flags : `${start.flags}g`);
+  let last: RegExpExecArray | null = null;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(value)) !== null) {
+    last = m;
+    if (m.index === re.lastIndex) re.lastIndex++; // guard contra match vazio
+  }
+  if (!last) return null;
+  const rest = value.slice(last.index + last[0].length);
   const endMatch = end.exec(rest);
   return cleanText((endMatch ? rest.slice(0, endMatch.index) : rest)).slice(0, 2000) || null;
 }
