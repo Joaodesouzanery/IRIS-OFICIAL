@@ -114,3 +114,62 @@ export async function ensureColegiadoSources(db: SupabaseServerClient) {
     if (error) throw error;
   }
 }
+
+// ─── Etapa 61: capacidade NOMINAL por (órgão, tipo de documento) ─────────────
+/**
+ * O instrumento publica o voto de cada diretor NOMINALMENTE?
+ *
+ * Isto não é uma propriedade da agência, é do INSTRUMENTO — foi o erro que a revisão cruzada
+ * pegou. A ata da ANTT nunca nomina voto ("a Diretoria Colegiada, por unanimidade, anuiu"), mas o
+ * DOCUMENTO DE VOTO da ANTT é, por construção, o voto de um diretor. Um booleano por agência
+ * rotularia esses votos na tela como "a ANTT não publica voto individual" — enquanto a esteira os
+ * processa.
+ *
+ * Serve para a UI dizer a coisa CERTA quando um diretor aparece sem base nominal:
+ *   · `nenhum`  → "a ata deste órgão não nomina voto" (limite da FONTE, não do nosso dado);
+ *   · `parcial` → "nomina só em dissenso/vista/impedimento" (ANM);
+ *   · `sempre`  → "cada documento é o voto de um diretor" (voto individual da ANTT).
+ * Sem essa distinção, a tela de comportamento nasce vazia em 2 das 3 agências e o usuário lê isso
+ * como falha do sistema.
+ */
+export type CapacidadeNominal = "sempre" | "parcial" | "nenhum";
+
+const CAPACIDADE_NOMINAL: Record<string, CapacidadeNominal> = {
+  // ANM: a ata nomina quando há dissenso, vista, impedimento ou empate — medido em ~7% dos itens.
+  "ANM|ata": "parcial",
+  "ANM|deliberacao": "parcial",
+  // ANTT: a ata registra a decisão do colegiado, nunca o voto de cada um.
+  "ANTT|ata": "nenhum",
+  "ANTT|deliberacao": "nenhum",
+  // …mas o documento de VOTO é o voto de UM diretor. É a linha que o booleano por agência perdia.
+  "ANTT|voto_individual": "sempre",
+  // ARTESP: "Houve aprovação dos presentes por unanimidade de votos" — sem nomes.
+  "ARTESP|ata": "nenhum",
+  "ARTESP|deliberacao": "nenhum",
+};
+
+export function capacidadeNominal(
+  agenciaSigla: string | null | undefined,
+  tipoDocumento: string | null | undefined,
+): CapacidadeNominal {
+  if (!agenciaSigla) return "parcial"; // desconhecido: não afirma limite que não medimos
+  const chave = `${agenciaSigla}|${tipoDocumento ?? "ata"}`;
+  return CAPACIDADE_NOMINAL[chave] ?? "parcial";
+}
+
+/** Frase pronta para a UI — o texto é parte da correção, não enfeite. */
+export function explicacaoCapacidadeNominal(
+  agenciaSigla: string | null | undefined,
+  tipoDocumento: string | null | undefined,
+): string | null {
+  switch (capacidadeNominal(agenciaSigla, tipoDocumento)) {
+    case "nenhum":
+      return agenciaSigla === "ANTT"
+        ? "A ata da ANTT não nomina voto por diretor; os votos nominais vêm dos documentos de Voto, ingeridos à parte."
+        : `A ata da ${agenciaSigla} registra a decisão do colegiado sem nominar o voto de cada diretor.`;
+    case "parcial":
+      return `A ata da ${agenciaSigla} nomina voto apenas em dissenso, vista, impedimento ou empate.`;
+    default:
+      return null;
+  }
+}

@@ -76,7 +76,7 @@ export async function GET(
   const { data: votos } = await db
     .from("votos")
     .select(`
-      tipo_voto, is_divergente, is_nominal,
+      tipo_voto, is_divergente, is_nominal, proveniencia, motivo_nao_voto, voto_em_autos,
       deliberacoes!inner(
         id, numero_deliberacao, data_reuniao, interessado,
         microtema, resultado
@@ -86,6 +86,7 @@ export async function GET(
     .order("deliberacoes(data_reuniao)", { ascending: false });
 
   let favoravel = 0, desfavoravel = 0, abstencao = 0, divergente = 0, votos_inferidos = 0;
+  let ausente = 0, impedido = 0, base_nominal = 0, divergente_nominal = 0, votos_em_autos = 0;
   const microtemaCount = new Map<string, number>();
   const microtemaDiv = new Map<string, number>();
   const mesMap = new Map<string, { total: number; favoravel: number; desfavoravel: number; divergente: number }>();
@@ -94,14 +95,35 @@ export async function GET(
   for (const v of votos ?? []) {
     const d = v as unknown as {
       tipo_voto: string; is_divergente: boolean; is_nominal: boolean;
+      proveniencia?: string | null; motivo_nao_voto?: string | null; voto_em_autos?: boolean | null;
       deliberacoes: { id: string; numero_deliberacao: string | null; data_reuniao: string | null;
         interessado: string | null; microtema: string | null; resultado: string | null };
     };
+    // Etapa61 — DENOMINADOR DO DIRETOR. O `else` catch-all jogava "Ausente" no balde de
+    // ABSTENÇÃO e o contava no denominador: ausência física e IMPEDIMENTO viravam "absteve-se".
+    // O efeito é perverso — impedimento é conduta de INTEGRIDADE (o diretor se declara impedido),
+    // e ele derrubava o percentual do próprio diretor. Agora o não-voto sai do denominador DELE;
+    // o item continua contando para o colegiado.
+    const naoVotou = d.tipo_voto === "Ausente";
     if (d.tipo_voto === "Favoravel") favoravel++;
     else if (d.tipo_voto === "Desfavoravel") desfavoravel++;
+    else if (naoVotou) {
+      ausente++;
+      if (d.motivo_nao_voto === "impedimento" || d.motivo_nao_voto === "suspeicao") impedido++;
+    }
     else abstencao++;
     if (d.is_divergente) divergente++;
     if (!d.is_nominal) votos_inferidos++;
+    // COMPORTAMENTO só se apoia em voto LIDO ou CORRIGIDO POR HUMANO. Voto inferido é, por
+    // construção, não-divergente: medir divergência sobre ele é tautologia, não medida.
+    const nominalOuHumano = d.proveniencia === "nominal" || d.proveniencia === "revisao_humana"
+      || (d.proveniencia == null && d.is_nominal);
+    if (nominalOuHumano && !naoVotou) {
+      base_nominal++;
+      if (d.is_divergente) divergente_nominal++;
+    }
+    // Voto proferido em sessão ANTERIOR não é presença nesta — sai da série temporal (etapa57).
+    if (d.voto_em_autos) votos_em_autos++;
     if (d.deliberacoes.microtema) {
       microtemaCount.set(d.deliberacoes.microtema, (microtemaCount.get(d.deliberacoes.microtema) ?? 0) + 1);
       if (d.is_divergente) microtemaDiv.set(d.deliberacoes.microtema, (microtemaDiv.get(d.deliberacoes.microtema) ?? 0) + 1);
@@ -128,13 +150,22 @@ export async function GET(
     });
   }
 
+  // `total` = votos EFETIVAMENTE PROFERIDOS por este diretor. "Ausente" (ausência, impedimento,
+  // suspeição, vista) sai daqui: não votar não é votar de um jeito.
   const total = favoravel + desfavoravel + abstencao;
+  const total_participacoes = total + ausente; // participação ≠ comportamento
   const pct_favoravel = total > 0 ? (favoravel / total) * 100 : 0;
   const pct_divergente = total > 0 ? (divergente / total) * 100 : 0;
+  // Divergência sobre a base NOMINAL — a única que mede comportamento de verdade.
+  const pct_divergente_nominal = base_nominal > 0 ? (divergente_nominal / base_nominal) * 100 : null;
 
-  const perfil: DiretorProfile["tendencias"]["perfil"] =
-    pct_divergente < 5 ? "Consensual"
-    : pct_divergente < 15 ? "Moderadamente divergente"
+  // O PERFIL passa a sair da base nominal quando ela existe. Com base inferida, "Consensual" era
+  // tautologia: voto inferido nunca diverge. Sem base nominal nenhuma, não há perfil a declarar —
+  // rotular alguém de "Consensual" sem ter lido um voto dele é inventar reputação.
+  const perfil: DiretorProfile["tendencias"]["perfil"] | null =
+    pct_divergente_nominal === null ? null
+    : pct_divergente_nominal < 5 ? "Consensual"
+    : pct_divergente_nominal < 15 ? "Moderadamente divergente"
     : "Divergente";
 
   const microtema_dominante = microtemaCount.size > 0
@@ -169,15 +200,30 @@ export async function GET(
       }))
       .sort((a, b) => b.pct_divergente - a.pct_divergente),
     historico,
+    // Etapa61 — a BASE fica visível ao lado de todo número de comportamento. O plano decidiu
+    // EXIBIR com `n` em vez de suprimir: o corte por base mínima puniria justamente quem mais se
+    // declara impedido (impedimento tira voto do denominador dele), invertendo o incentivo.
+    base: {
+      votos_proferidos: total,
+      participacoes: total_participacoes,
+      nao_votou: ausente,
+      impedido,
+      votos_em_autos,
+      /** Votos LIDOS do documento ou corrigidos por humano — a base de comportamento. */
+      base_nominal,
+      pct_divergente_nominal,
+    },
     tendencias: {
       perfil,
       microtema_dominante,
       taxa_aprovacao: total > 0 ? `${pct_favoravel.toFixed(1)}%` : "—",
-      descricao: total > 0
-        ? (pct_divergente < 5
-            ? `Vota com a maioria em ${(100 - pct_divergente).toFixed(0)}% dos casos`
-            : `Apresentou voto divergente em ${pct_divergente.toFixed(1)}% das deliberações`)
-        : "Sem histórico de votos registrado",
+      descricao: base_nominal === 0
+        ? (total > 0
+            ? `Sem voto nominal lido: ${total} voto(s) inferido(s) da decisão do colegiado, que por construção não divergem — não há base para descrever comportamento.`
+            : "Sem histórico de votos registrado")
+        : (pct_divergente_nominal! < 5
+            ? `Vota com a maioria em ${(100 - pct_divergente_nominal!).toFixed(0)}% dos ${base_nominal} voto(s) lidos`
+            : `Apresentou voto divergente em ${pct_divergente_nominal!.toFixed(1)}% dos ${base_nominal} voto(s) lidos`),
     },
   };
 

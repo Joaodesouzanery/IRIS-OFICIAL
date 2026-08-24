@@ -10,7 +10,7 @@ import { computeMicrotemas } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT , isDecidedOnMerits } from "@/lib/server/regulatory-documents";
 import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { matchesYear, applyYearFilterSql } from "@/lib/server/year-filter";
 
@@ -46,13 +46,14 @@ export async function GET(req: NextRequest) {
   }
 
   const rows = (data ?? []).filter(isFinalDecisionRecord).filter((r: any) => matchesYear(r, year));
-  const stats = new Map<string, { total: number; deferido: number; indeferido: number }>();
+  const stats = new Map<string, { total: number; decidido: number; deferido: number; indeferido: number }>();
 
   for (const row of rows) {
     const tema = row.microtema!;
-    if (!stats.has(tema)) stats.set(tema, { total: 0, deferido: 0, indeferido: 0 });
+    if (!stats.has(tema)) stats.set(tema, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = stats.get(tema)!;
     s.total++;
+    if (isDecidedOnMerits(row as any)) s.decidido++;
     if (isResultadoPositivo(row.resultado)) s.deferido++;
     else if (row.resultado === "Indeferido") s.indeferido++;
   }
@@ -61,10 +62,13 @@ export async function GET(req: NextRequest) {
     .map(([microtema, s]) => ({
       microtema,
       total: s.total,
+      // Etapa60: `total` segue sendo o PAUTADO; os percentuais passam a dividir pelos DECIDIDOS.
+      // Um microtema com muitos itens retirados de pauta tinha deferimento artificialmente baixo.
+      total_decidido: s.decidido,
       deferido: s.deferido,
       indeferido: s.indeferido,
-      pct_deferido: s.total > 0 ? (s.deferido / s.total) * 100 : 0,
-      pct_indeferido: s.total > 0 ? (s.indeferido / s.total) * 100 : 0,
+      pct_deferido: s.decidido > 0 ? (s.deferido / s.decidido) * 100 : 0,
+      pct_indeferido: s.decidido > 0 ? (s.indeferido / s.decidido) * 100 : 0,
     }))
     .sort((a, b) => b.total - a.total);
 

@@ -142,6 +142,69 @@ export function isFinalDecisionRecord(row: FinalDecisionRow): boolean {
   return ["deliberacao", "resolucao", "portaria"].includes(tipo);
 }
 
+// ─── Etapa 60: os QUATRO estados de uma deliberação ──────────────────────────
+/**
+ * Estado de uma deliberação para fins de DENOMINADOR.
+ *
+ * O problema que isto resolve: hoje `resultado` carrega DUAS coisas no mesmo campo — o desfecho
+ * ("Deferido"/"Indeferido") e o ANDAMENTO ("Retirado de Pauta"). Nenhuma rota de produção exclui
+ * retirado nem `resultado` NULL do denominador, então itens que NINGUÉM julgou puxam a
+ * `taxa_deferimento` para baixo como se fossem indeferimentos. E o não-conhecimento
+ * (`juizo='admissibilidade'`), que a Fase 1 passou a detectar, entrava no balde de mérito: a taxa
+ * media prazo processual junto com jurisprudência.
+ *
+ *  · `decidido`         — houve juízo de MÉRITO. Só este entra na taxa de deferimento.
+ *  · `admissibilidade`  — o colegiado não conheceu; não julgou o pedido. Sai dos DOIS lados.
+ *  · `retirado`         — saiu de pauta/sobrestado. Não foi decidido.
+ *  · `sem_resultado`    — nada foi extraído. Lacuna de dado, não decisão.
+ */
+export type DecisionStatus = "decidido" | "admissibilidade" | "retirado" | "sem_resultado";
+
+type DecisionStatusRow = {
+  resultado?: string | null;
+  /** Coluna nova (migration 20260824120000). Pode não existir em linhas antigas. */
+  juizo?: string | null;
+  raw_extraction?: Record<string, unknown> | null;
+};
+
+export function decisionStatus(row: DecisionStatusRow): DecisionStatus {
+  // Lê a COLUNA e cai para o JSON: entre o deploy da Fase 1 e a migration, `juizo` só existe
+  // dentro de `raw_extraction`. Sem este fallback, todo documento ingerido nesse intervalo seria
+  // classificado como mérito — silenciosamente.
+  const juizo = row.juizo ?? (row.raw_extraction as Record<string, unknown> | null)?.juizo;
+  if (juizo === "admissibilidade") return "admissibilidade";
+  if (!row.resultado) return "sem_resultado";
+  if (row.resultado === "Retirado de Pauta") return "retirado";
+  return "decidido";
+}
+
+/** Houve juízo de mérito — o único estado que entra na taxa de deferimento. */
+export function isDecidedOnMerits(row: DecisionStatusRow): boolean {
+  return decisionStatus(row) === "decidido";
+}
+
+/**
+ * A deliberação tem EVIDÊNCIA de votação (ao menos um voto registrado).
+ *
+ * Existe por causa de um defeito específico e muito caro: `!votos.some(v => v.is_divergente)` é
+ * `true` para array VAZIO, então item com ZERO voto era contado como CONSENSUAL em todos os
+ * agregados. "Consenso de 100%" podia significar "ninguém votou" — e significava, para toda
+ * deliberação recém-coletada sem voto extraído.
+ */
+export function hasVoteEvidence(votos: Array<unknown> | null | undefined): boolean {
+  return Array.isArray(votos) && votos.length > 0;
+}
+
+/**
+ * Consenso com base: NÃO diverge E tem voto. Um item sem voto não é consensual — é desconhecido.
+ * Devolve `null` quando não há base, para o chamador poder tirá-lo do denominador em vez de
+ * contá-lo como concordância.
+ */
+export function isConsensual(votos: Array<{ is_divergente?: boolean | null }> | null | undefined): boolean | null {
+  if (!hasVoteEvidence(votos)) return null;
+  return !votos!.some((v) => v.is_divergente);
+}
+
 export function buildSemanticDuplicateKey(input: {
   agencia_sigla?: string | null;
   tipo_documento?: string | null;

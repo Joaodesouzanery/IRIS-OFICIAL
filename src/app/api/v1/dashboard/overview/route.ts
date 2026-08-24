@@ -10,7 +10,7 @@ import { computeOverview } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT , decisionStatus, isDecidedOnMerits } from "@/lib/server/regulatory-documents";
 import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { matchesYear, applyYearFilterSql } from "@/lib/server/year-filter";
 
@@ -52,6 +52,14 @@ export async function GET(req: NextRequest) {
   const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
   const semResultado = rows.filter((r) => !r.resultado).length;
+  // Etapa60 — DENOMINADOR DE MÉRITO. `total` (pautado) fica intacto; a taxa passa a dividir pelos
+  // itens efetivamente JULGADOS. Antes, retirado de pauta, item sem resultado extraído e
+  // não-conhecimento ficavam no divisor sem entrar em numerador nenhum: a taxa de deferimento
+  // caía por causa de itens que ninguém julgou, e "não conhecer por intempestividade" era contado
+  // como jurisprudência.
+  const decididos = rows.filter((r) => isDecidedOnMerits(r as any)).length;
+  const admissibilidade = rows.filter((r) => decisionStatus(r as any) === "admissibilidade").length;
+  const retirados = rows.filter((r) => decisionStatus(r as any) === "retirado").length;
 
   const confidenceRows = rows.filter((r) => r.extraction_confidence !== null);
   const avgConfidence =
@@ -82,7 +90,12 @@ export async function GET(req: NextRequest) {
     deferidos,
     indeferidos,
     sem_resultado: semResultado,
-    taxa_deferimento: total > 0 ? ((deferidos / total) * 100).toFixed(1) : "0",
+    // Modo duplo (etapa60): o pautado segue em `total_deliberacoes`; o denominador real da taxa
+    // vem publicado ao lado, para o leitor saber SOBRE O QUÊ ela foi calculada.
+    total_decidido: decididos,
+    total_admissibilidade: admissibilidade,
+    total_retirado: retirados,
+    taxa_deferimento: decididos > 0 ? ((deferidos / decididos) * 100).toFixed(1) : "0",
     reunioes_unicas: reunioesUnicas,
     avg_confidence: avgConfidence,
     top_microtema: topMicrotema,

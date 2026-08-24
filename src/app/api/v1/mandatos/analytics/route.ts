@@ -9,7 +9,7 @@ import { demoData } from "@/lib/demo-data";
 import type { MandatosAnalytics } from "@/types";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMandatosAnalytics } from "@/lib/server/analytics-engine";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord , decisionStatus, isConsensual, isDecidedOnMerits } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
@@ -55,13 +55,20 @@ export async function GET(req: NextRequest) {
   }>).filter((d) => isFinalDecisionRecord(d as any));
 
   const total = rows.length;
-  let comLitigio = 0, sancao = 0;
+  let comLitigio = 0, sancao = 0, comVoto = 0, decidido = 0;
   const resultadoCount = new Map<string, number>();
   const byMonth = new Map<string, { total: number; deferido: number; indeferido: number }>();
 
   for (const d of rows) {
-    const temDivergente = d.votos.some((v) => v.is_divergente);
-    if (temDivergente) comLitigio++;
+    // Etapa60: consenso/litígio só onde HÁ VOTO. `some()` sobre array vazio é `false`, então item
+    // sem voto entrava como consensual — e o consenso subia justamente onde não havia dado nenhum.
+    const consensual = isConsensual(d.votos);
+    if (consensual !== null) {
+      comVoto++;
+      if (!consensual) comLitigio++;
+    }
+    // E o denominador de MÉRITO exclui retirado/sem-resultado/admissibilidade.
+    if (isDecidedOnMerits(d as any)) decidido++;
     if (d.microtema === "multa" || d.resultado === "Indeferido") sancao++;
 
     const r = d.resultado ?? "Sem resultado";
@@ -77,12 +84,16 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  const consenso = total - comLitigio;
+  const consenso = comVoto - comLitigio;
   const result: MandatosAnalytics = {
     total_deliberacoes: total,
-    taxa_litigio: total > 0 ? `${((comLitigio / total) * 100).toFixed(1)}%` : "0%",
-    taxa_consenso: total > 0 ? `${((consenso / total) * 100).toFixed(1)}%` : "0%",
-    taxa_sancao: total > 0 ? `${((sancao / total) * 100).toFixed(1)}%` : "0%",
+    // Etapa60 — modo duplo: o pautado continua publicado; os denominadores reais vêm ao lado, para
+    // que quem lê a taxa saiba SOBRE O QUÊ ela foi calculada.
+    total_decidido: decidido,
+    total_com_voto: comVoto,
+    taxa_litigio: comVoto > 0 ? `${((comLitigio / comVoto) * 100).toFixed(1)}%` : "0%",
+    taxa_consenso: comVoto > 0 ? `${((consenso / comVoto) * 100).toFixed(1)}%` : "0%",
+    taxa_sancao: decidido > 0 ? `${((sancao / decidido) * 100).toFixed(1)}%` : "0%",
     distribuicao_decisao: [...resultadoCount.entries()]
       .map(([resultado, count]) => ({ resultado, count, pct: total > 0 ? Math.round((count / total) * 100) : 0 }))
       .sort((a, b) => b.count - a.count),

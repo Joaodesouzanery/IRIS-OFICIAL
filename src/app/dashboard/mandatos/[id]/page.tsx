@@ -77,19 +77,27 @@ export default function DiretorProfilePage() {
     );
   }
 
-  const { stats, tendencias, historico, por_microtema, mandato } = profile;
+  const { stats, tendencias, historico, por_microtema, mandato, base } = profile;
 
   // ── Alert banners ──────────────────────────────────────────────────────
   const diasRestantes = mandato.dias_restantes;
   const expirando180 = mandato.status === "Ativo" && diasRestantes !== null && diasRestantes <= 180;
   const expirando30  = expirando180 && diasRestantes !== null && diasRestantes <= 30;
-  const altaDiv      = stats.pct_divergente >= 15;
+  // Só alerta divergência com base nominal — vide Risk Score.
+  const altaDiv      = (base?.base_nominal ?? 0) > 0 && (base?.pct_divergente_nominal ?? 0) >= 15;
 
   // ── Risk Score ─────────────────────────────────────────────────────────
+  // Etapa61: NÃO RENDERIZA sem base nominal. Metade do score vem de `pct_divergente`, e sobre voto
+  // INFERIDO essa divergência é sempre zero — por construção, não por conduta. O resultado era um
+  // veredito público ("Risco Baixo — 0/100") sobre um agente público, calculado a partir de dados
+  // que o sistema nunca leu. Ausência de dado não é atestado de bom comportamento.
+  const baseNominal = base?.base_nominal ?? 0;
+  const temBaseComportamento = baseNominal > 0;
+  const pctDivergenteNominal = base?.pct_divergente_nominal ?? 0;
   const riskScore = Math.round(
-    (stats.pct_divergente * 0.5) +
+    (pctDivergenteNominal * 0.5) +
     (expirando180 ? 30 : 0) +
-    (stats.pct_divergente > 20 ? 20 : 0)
+    (pctDivergenteNominal > 20 ? 20 : 0)
   );
   const riskLabel = riskScore < 20 ? "Baixo" : riskScore < 50 ? "Moderado" : "Elevado";
   const riskColor = riskScore < 20 ? "text-success" : riskScore < 50 ? "text-warning" : "text-error";
@@ -188,8 +196,10 @@ export default function DiretorProfilePage() {
           {/* Tendência badge */}
           <div className="shrink-0 text-right">
             <p className="text-[10px] text-text-label font-mono uppercase tracking-wider mb-1">Perfil</p>
-            <span className={cn("font-mono text-xs font-semibold", tendenciaBadgeColor(tendencias.perfil))}>
-              {tendencias.perfil}
+            <span className={cn("font-mono text-xs font-semibold", tendenciaBadgeColor(tendencias.perfil ?? ""))}>
+              {/* Etapa61: sem base nominal não há perfil. Dizer "Consensual" ali seria afirmar
+                  conduta a partir de voto INFERIDO — que, por construção, nunca diverge. */}
+              {tendencias.perfil ?? "Sem base nominal"}
             </span>
           </div>
         </div>
@@ -274,16 +284,28 @@ export default function DiretorProfilePage() {
           <div className="flex-1 min-w-0 space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-sm text-text-secondary">Nível de risco</span>
-              <span className={cn("font-mono text-lg font-bold", riskColor)}>
-                {riskLabel} — {riskScore}/100
-              </span>
+              {temBaseComportamento ? (
+                <span className={cn("font-mono text-lg font-bold", riskColor)}>
+                  {riskLabel} — {riskScore}/100
+                </span>
+              ) : (
+                <span className="font-mono text-sm text-text-muted">Sem base nominal</span>
+              )}
             </div>
-            <div className="w-full bg-bg-hover rounded-full h-3">
-              <div
-                className={cn("h-3 rounded-full transition-all", riskBarColor)}
-                style={{ width: `${Math.min(100, riskScore)}%` }}
-              />
-            </div>
+            {temBaseComportamento ? (
+              <div className="w-full bg-bg-hover rounded-full h-3">
+                <div
+                  className={cn("h-3 rounded-full transition-all", riskBarColor)}
+                  style={{ width: `${Math.min(100, riskScore)}%` }}
+                />
+              </div>
+            ) : (
+              <p className="text-xs text-text-muted">
+                Nenhum voto deste diretor foi lido nominalmente nos documentos. Os votos existentes
+                foram inferidos da decisão do colegiado e, por construção, nunca divergem — não há
+                base para um score de comportamento.
+              </p>
+            )}
             <div className="grid grid-cols-3 gap-2 text-xs text-text-muted mt-2">
               <div className="text-center">
                 <p className="text-success font-mono font-semibold">0–19</p>
@@ -382,8 +404,8 @@ export default function DiretorProfilePage() {
         </h2>
         <div className="flex items-start gap-4 flex-wrap">
           <div>
-            <span className={cn("text-sm font-semibold font-mono", tendenciaBadgeColor(tendencias.perfil))}>
-              {tendencias.perfil}
+            <span className={cn("text-sm font-semibold font-mono", tendenciaBadgeColor(tendencias.perfil ?? ""))}>
+              {tendencias.perfil ?? "Sem base nominal"}
             </span>
             <p className="text-sm text-text-secondary mt-2">{tendencias.descricao}</p>
             <p className="text-xs text-text-muted mt-1">

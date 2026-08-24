@@ -8,6 +8,7 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeReunioesStats } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
+import { isDecidedOnMerits } from "@/lib/server/regulatory-documents";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
@@ -43,14 +44,15 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao buscar stats de reuniões" }, { status: 500 });
   }
 
-  const monthStats = new Map<string, { total: number; deferido: number; indeferido: number }>();
+  const monthStats = new Map<string, { total: number; decidido: number; deferido: number; indeferido: number }>();
 
   for (const row of data.filter(isFinalDecisionRecord)) {
     const d = new Date(row.data_reuniao!);
     const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
-    if (!monthStats.has(key)) monthStats.set(key, { total: 0, deferido: 0, indeferido: 0 });
+    if (!monthStats.has(key)) monthStats.set(key, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = monthStats.get(key)!;
     s.total++;
+    if (isDecidedOnMerits(row as any)) s.decidido++;
     if (isResultadoPositivo(row.resultado)) s.deferido++;
     else if (row.resultado === "Indeferido") s.indeferido++;
   }

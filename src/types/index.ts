@@ -237,7 +237,13 @@ export interface JobStatus {
 // ─── Dashboard ───────────────────────────────────────────────────────────
 
 export interface DashboardOverview {
+  /** PAUTADO — tudo que entrou em pauta. Não muda. */
   total_deliberacoes: number;
+  /** Etapa60 — denominador de MÉRITO da `taxa_deferimento`. */
+  total_decidido?: number;
+  /** NÃO CONHECIDO: fora dos dois lados da taxa. */
+  total_admissibilidade?: number;
+  total_retirado?: number;
   deferidos: number;
   indeferidos: number;
   sem_resultado: number;
@@ -265,7 +271,10 @@ export interface MandatosStats {
   diretores_ativos: number;
   participacoes_colegiadas: number;
   taxa_consenso: string;
+  /** PAUTADO — não muda. */
   total_deliberacoes: number;
+  /** Etapa60: itens COM VOTO — o denominador real de `taxa_consenso`. */
+  total_com_voto?: number;
 }
 
 export interface VotoSector {
@@ -292,6 +301,25 @@ export interface VotoDistribution {
 // ─── Perfil de Diretor ────────────────────────────────────────────────────
 
 export interface DiretorProfile {
+  /**
+   * Etapa61 — a BASE por trás de todo número de comportamento, visível ao lado dele.
+   * O plano decidiu EXIBIR com `n` em vez de SUPRIMIR quem tem base pequena: como o impedimento
+   * tira voto do denominador do próprio diretor, um corte por base mínima suprimiria primeiro
+   * quem MAIS se declara impedido — punindo exatamente a conduta de integridade.
+   */
+  base?: {
+    /** Votos efetivamente proferidos (favorável + desfavorável + abstenção). */
+    votos_proferidos: number;
+    /** Proferidos + não-votou. É a PARTICIPAÇÃO, separada do COMPORTAMENTO. */
+    participacoes: number;
+    nao_votou: number;
+    impedido: number;
+    votos_em_autos: number;
+    /** Votos LIDOS do documento ou corrigidos por humano. */
+    base_nominal: number;
+    /** Divergência sobre a base nominal; `null` quando não há base. */
+    pct_divergente_nominal: number | null;
+  };
   id: string;
   nome: string;
   cargo: string | null;
@@ -329,7 +357,12 @@ export interface DiretorProfile {
     is_nominal?: boolean;
   }>;
   tendencias: {
-    perfil: "Consensual" | "Moderadamente divergente" | "Divergente";
+    /**
+     * Etapa61: `null` quando NÃO HÁ base nominal. Rotular um diretor de "Consensual" sem ter
+     * lido um voto dele é inventar reputação — voto inferido nunca diverge, então o rótulo
+     * saía "Consensual" por construção, não por conduta.
+     */
+    perfil: "Consensual" | "Moderadamente divergente" | "Divergente" | null;
     microtema_dominante: string | null;
     taxa_aprovacao: string;
     descricao: string;
@@ -343,6 +376,11 @@ export interface DecisaoTipo {
 }
 
 export interface MandatosAnalytics {
+  /** Etapa60 — denominadores explícitos. `total_deliberacoes` segue sendo o PAUTADO. */
+  /** Julgado no MÉRITO: denominador de `taxa_sancao`. */
+  total_decidido?: number;
+  /** Com ao menos 1 voto: denominador de `taxa_consenso` e `taxa_litigio`. */
+  total_com_voto?: number;
   total_deliberacoes: number;
   taxa_litigio: string;
   taxa_consenso: string;

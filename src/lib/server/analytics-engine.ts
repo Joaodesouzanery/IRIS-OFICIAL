@@ -6,7 +6,7 @@
  */
 
 import type { Deliberacao, VotoEmbutido } from "@/types";
-import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord , isConsensual, isDecidedOnMerits, decisionStatus } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isOrgaoInterno } from "@/lib/server/empresa-resolver";
 import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
@@ -77,6 +77,7 @@ export function computeOverview(delibs: Deliberacao[], agenciaId?: string | null
   const deferidos = rows.filter((r) => isResultadoPositivo(r.resultado)).length;
   const indeferidos = rows.filter((r) => r.resultado === "Indeferido").length;
   const sem_resultado = rows.filter((r) => !r.resultado).length;
+  const decididos = rows.filter((r) => isDecidedOnMerits(r as any)).length;
 
   const withConf = rows.filter((r) => r.extraction_confidence != null);
   const avg_confidence = withConf.length > 0
@@ -101,7 +102,9 @@ export function computeOverview(delibs: Deliberacao[], agenciaId?: string | null
     deferidos,
     indeferidos,
     sem_resultado,
-    taxa_deferimento: total > 0 ? ((deferidos / total) * 100).toFixed(1) : "0",
+    // Etapa60: espelho EXATO da rota /dashboard/overview — denominador de mérito.
+    total_decidido: decididos,
+    taxa_deferimento: decididos > 0 ? ((deferidos / decididos) * 100).toFixed(1) : "0",
     reunioes_unicas,
     avg_confidence,
     top_microtema,
@@ -115,12 +118,13 @@ export function computeOverview(delibs: Deliberacao[], agenciaId?: string | null
 
 export function computeMicrotemas(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = excludeAtaParents(filterByAgencia(delibs, agenciaId));
-  const stats = new Map<string, { total: number; deferido: number; indeferido: number }>();
+  const stats = new Map<string, { total: number; decidido: number; deferido: number; indeferido: number }>();
   for (const d of rows) {
     const m = d.microtema ?? "outros";
-    if (!stats.has(m)) stats.set(m, { total: 0, deferido: 0, indeferido: 0 });
+    if (!stats.has(m)) stats.set(m, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = stats.get(m)!;
     s.total++;
+    if (isDecidedOnMerits(d as any)) s.decidido++;
     if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
   }
@@ -128,10 +132,13 @@ export function computeMicrotemas(delibs: Deliberacao[], agenciaId?: string | nu
     .map(([microtema, s]) => ({
       microtema,
       total: s.total,
+      // Etapa60: `total` segue sendo o PAUTADO; os percentuais passam a dividir pelos DECIDIDOS.
+      // Um microtema com muitos itens retirados de pauta tinha deferimento artificialmente baixo.
+      total_decidido: s.decidido,
       deferido: s.deferido,
       indeferido: s.indeferido,
-      pct_deferido: s.total > 0 ? (s.deferido / s.total) * 100 : 0,
-      pct_indeferido: s.total > 0 ? (s.indeferido / s.total) * 100 : 0,
+      pct_deferido: s.decidido > 0 ? (s.deferido / s.decidido) * 100 : 0,
+      pct_indeferido: s.decidido > 0 ? (s.indeferido / s.decidido) * 100 : 0,
     }))
     .sort((a, b) => b.total - a.total);
 }
@@ -209,13 +216,14 @@ export function computeReunioesCalendar(delibs: Deliberacao[], agenciaId?: strin
 
 export function computeReunioesStats(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = excludeAtaParents(filterByAgencia(delibs, agenciaId));
-  const byMonth = new Map<string, { total: number; deferido: number; indeferido: number }>();
+  const byMonth = new Map<string, { total: number; decidido: number; deferido: number; indeferido: number }>();
   for (const d of rows) {
     const period = (d.data_reuniao ?? "").slice(0, 7);
     if (!period) continue;
-    if (!byMonth.has(period)) byMonth.set(period, { total: 0, deferido: 0, indeferido: 0 });
+    if (!byMonth.has(period)) byMonth.set(period, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = byMonth.get(period)!;
     s.total++;
+    if (isDecidedOnMerits(d as any)) s.decidido++;
     if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
   }
@@ -330,7 +338,7 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
   const map = new Map<string, {
     agencia_id: string | null; agencia_sigla: string | null; data_reuniao: string | null;
     numero_reuniao: string | null; tipo_reuniao: string | null;
-    total_itens: number; total_votos: number; votos_nominais: number; votos_inferidos: number; divergencias: number;
+    total_itens: number; itens_com_voto: number; total_votos: number; votos_nominais: number; votos_inferidos: number; divergencias: number;
   }>();
   for (const d of rows) {
     const key = reuniaoKey(d);
@@ -339,7 +347,7 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
       e = {
         agencia_id: d.agencia_id ?? null, agencia_sigla: d.agencia?.sigla ?? null,
         data_reuniao: d.data_reuniao, numero_reuniao: d.numero_reuniao ?? null, tipo_reuniao: d.tipo_reuniao ?? null,
-        total_itens: 0, total_votos: 0, votos_nominais: 0, votos_inferidos: 0, divergencias: 0,
+        total_itens: 0, itens_com_voto: 0, total_votos: 0, votos_nominais: 0, votos_inferidos: 0, divergencias: 0,
       };
       map.set(key, e);
     }
@@ -348,12 +356,19 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
     e.total_votos += votos.length;
     e.votos_nominais += votos.filter((v) => v.is_nominal).length;
     e.votos_inferidos += votos.filter((v) => !v.is_nominal).length;
-    if (votos.some((v) => v.is_divergente)) e.divergencias++;
+    // Etapa60: só entra na conta de consenso o item que TEM voto — array vazio não é concordância.
+    const consensual = isConsensual(votos);
+    if (consensual !== null) {
+      e.itens_com_voto++;
+      if (!consensual) e.divergencias++;
+    }
   }
   return [...map.entries()]
     .map(([slug, e]) => ({
       slug, ...e,
-      pct_consenso: e.total_itens > 0 ? Math.round(((e.total_itens - e.divergencias) / e.total_itens) * 1000) / 10 : 0,
+      pct_consenso: e.itens_com_voto > 0
+        ? Math.round(((e.itens_com_voto - e.divergencias) / e.itens_com_voto) * 1000) / 10
+        : 0,
     }))
     .sort((a, b) => (b.data_reuniao ?? "").localeCompare(a.data_reuniao ?? ""));
 }
@@ -371,11 +386,16 @@ export function computeReuniaoDetalhe(
   if (rows.length === 0) return null;
 
   let deferidos = 0, indeferidos = 0, divergencias = 0, votos_nominais = 0, votos_inferidos = 0;
+  let itensComVoto = 0;
   const dirMap = new Map<string, { id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number; nominais: number; inferidos: number }>();
   const itens = rows.map((d) => {
     if (isResultadoPositivo(d.resultado)) deferidos++;
     else if (d.resultado === "Indeferido") indeferidos++;
-    if ((d.votos ?? []).some((v) => v.is_divergente)) divergencias++;
+    const consensualItem = isConsensual(d.votos);
+    if (consensualItem !== null) {
+      itensComVoto++;
+      if (!consensualItem) divergencias++;
+    }
     for (const v of d.votos ?? []) {
       if (v.is_nominal) votos_nominais++; else votos_inferidos++;
       if (!v.diretor_id) continue;
@@ -409,8 +429,10 @@ export function computeReuniaoDetalhe(
     },
     resumo: {
       total_itens: rows.length, deferidos, indeferidos, divergencias,
+      // Denominador do consenso: itens COM VOTO (etapa60), publicado para o leitor saber a base.
+      itens_com_voto: itensComVoto,
       votos_nominais, votos_inferidos,
-      pct_consenso: rows.length > 0 ? Math.round(((rows.length - divergencias) / rows.length) * 1000) / 10 : 0,
+      pct_consenso: itensComVoto > 0 ? Math.round(((itensComVoto - divergencias) / itensComVoto) * 1000) / 10 : 0,
     },
     itens,
     diretores: [...dirMap.values()].sort((a, b) => (b.favoravel + b.desfavoravel) - (a.favoravel + a.desfavoravel)),
@@ -419,13 +441,17 @@ export function computeReuniaoDetalhe(
 
 export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: string | null) {
   const rows = filterByAgencia(delibs, agenciaId).filter((d) => d.data_reuniao && isFinalDecisionRecord(d));
-  const byMonth = new Map<string, { total: number; divergentes: number; com_voto_nominal: number }>();
+  const byMonth = new Map<string, { total: number; com_voto: number; divergentes: number; com_voto_nominal: number }>();
   for (const d of rows) {
     const period = (d.data_reuniao ?? "").slice(0, 7);
     if (!period) continue;
-    const m = byMonth.get(period) ?? { total: 0, divergentes: 0, com_voto_nominal: 0 };
+    const m = byMonth.get(period) ?? { total: 0, com_voto: 0, divergentes: 0, com_voto_nominal: 0 };
     m.total++;
-    if ((d.votos ?? []).some((v) => v.is_divergente)) m.divergentes++;
+    const consensualMes = isConsensual(d.votos);
+    if (consensualMes !== null) {
+      m.com_voto++;
+      if (!consensualMes) m.divergentes++;
+    }
     if ((d.votos ?? []).some((v) => v.is_nominal)) m.com_voto_nominal++;
     byMonth.set(period, m);
   }
@@ -542,12 +568,13 @@ export function computeMandatosStats(delibs: Deliberacao[], agenciaId?: string |
   const dirs = extractDirectors(rows);
   const total = rows.length;
 
-  const comDivergencia = rows.filter((d) =>
-    (d.votos ?? []).some((v) => v.is_divergente)
-  ).length;
-  const taxa_consenso = total > 0
-    ? (((total - comDivergencia) / total) * 100).toFixed(1) + "%"
-    : "100%";
+  // Etapa60: denominador = itens COM VOTO. O fallback "100%" para base vazia também sai: base
+  // vazia não é consenso perfeito, é ausência de dado — dizer 100% ali era o pior dos dois erros.
+  const comVoto = rows.filter((d) => isConsensual(d.votos) !== null).length;
+  const comDivergencia = rows.filter((d) => isConsensual(d.votos) === false).length;
+  const taxa_consenso = comVoto > 0
+    ? (((comVoto - comDivergencia) / comVoto) * 100).toFixed(1) + "%"
+    : "—";
 
   return {
     diretores_ativos: dirs.length,
@@ -563,11 +590,10 @@ export function computeMandatosAnalytics(delibs: Deliberacao[], agenciaId?: stri
   const rows = filterByAgencia(delibs, agenciaId);
   const total = rows.length;
 
-  const comLitigio = rows.filter((d) =>
-    (d.votos ?? []).some((v) => v.is_divergente)
-  ).length;
-  const taxa_litigio = total > 0 ? `${((comLitigio / total) * 100).toFixed(1)}%` : "0%";
-  const taxa_consenso = total > 0 ? `${(((total - comLitigio) / total) * 100).toFixed(1)}%` : "0%";
+  const comVoto = rows.filter((d) => isConsensual(d.votos) !== null).length;
+  const comLitigio = rows.filter((d) => isConsensual(d.votos) === false).length;
+  const taxa_litigio = comVoto > 0 ? `${((comLitigio / comVoto) * 100).toFixed(1)}%` : "0%";
+  const taxa_consenso = comVoto > 0 ? `${(((comVoto - comLitigio) / comVoto) * 100).toFixed(1)}%` : "0%";
 
   const sancao = rows.filter((d) =>
     d.microtema === "multa" || d.resultado === "Indeferido"
@@ -587,13 +613,14 @@ export function computeMandatosAnalytics(delibs: Deliberacao[], agenciaId?: stri
     }))
     .sort((a, b) => b.count - a.count);
 
-  const byMonth = new Map<string, { total: number; deferido: number; indeferido: number }>();
+  const byMonth = new Map<string, { total: number; decidido: number; deferido: number; indeferido: number }>();
   for (const d of rows) {
     const period = (d.data_reuniao ?? "").slice(0, 7);
     if (!period) continue;
-    if (!byMonth.has(period)) byMonth.set(period, { total: 0, deferido: 0, indeferido: 0 });
+    if (!byMonth.has(period)) byMonth.set(period, { total: 0, decidido: 0, deferido: 0, indeferido: 0 });
     const s = byMonth.get(period)!;
     s.total++;
+    if (isDecidedOnMerits(d as any)) s.decidido++;
     if (isResultadoPositivo(d.resultado)) s.deferido++;
     else if (d.resultado === "Indeferido") s.indeferido++;
   }
