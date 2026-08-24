@@ -26,6 +26,7 @@ import {
   type DiretorVoteRecord,
   type VotoInsertRow,
 } from "@/lib/server/vote-inference";
+import { upsertVotosProtegido } from "@/lib/server/votos-write";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -181,7 +182,10 @@ export async function POST(req: NextRequest) {
       detalhe.push({ deliberacao_id: d.id, votos: rows.length, origem: inferFromMandate ? "inferencia" : "nominal" });
     }
     if (!dryRun) {
-      const { error: upErr } = await db.from("votos").upsert(rows, { onConflict: "deliberacao_id,diretor_id" });
+      // Etapa58: write-path COMPARTILHADO. Antes era upsert cru — sem a proteção do voto nominal,
+      // materializar podia REBAIXAR para inferido um voto lido do documento; e sem a sonda de
+      // capacidade, gravar `proveniencia` quebraria enquanto a migration não fosse aplicada.
+      const { error: upErr } = await upsertVotosProtegido(db, rows);
       if (upErr) console.error("[materializar-faltantes] upsert falhou:", upErr.message);
       else votosCriados += rows.length;
     } else {

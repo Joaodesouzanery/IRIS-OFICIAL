@@ -141,7 +141,11 @@ export interface VotoSugerido {
   tipo_voto: "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente";
   // "impedido": declarado impedido/suspeito pela própria ata — presente na sessão, sem voto.
   // Gravado como tipo_voto "Ausente" (o CHECK não comporta valor novo), distinto só aqui.
-  origem: "nominal" | "inferido_mandato" | "contrario" | "abstencao" | "ausente" | "impedido";
+  // "revisao_humana": o revisor trocou o voto na tela. É o dado de MAIOR qualidade do sistema —
+  // antes virava "inferido", indistinguível de um chute do algoritmo (etapa58).
+  origem:
+    | "nominal" | "inferido_mandato" | "contrario" | "abstencao" | "ausente" | "impedido"
+    | "revisao_humana";
   is_nominal: boolean;
 }
 

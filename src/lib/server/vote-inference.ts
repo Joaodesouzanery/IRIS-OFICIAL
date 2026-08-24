@@ -9,12 +9,30 @@ export type DiretorVoteRecord = {
 
 export type TipoVoto = "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente";
 
+/**
+ * De ONDE veio o voto (etapa58/59). `is_nominal` continua existindo, mas um booleano não distingue
+ * inferido-por-unanimidade de inferido-por-decisão, nem — o pior caso — a CORREÇÃO HUMANA do
+ * revisor, que era gravada como "inferida" e sumia. Métricas de comportamento usam
+ * `nominal`/`revisao_humana`; matriz e consenso agregado seguem usando tudo.
+ */
+export type ProvenienciaVoto =
+  | "revisao_humana"
+  | "nominal"
+  | "inferido_unanimidade"
+  | "inferido_decisao";
+
 export type VotoInsertRow = {
   deliberacao_id: string;
   diretor_id: string;
   tipo_voto: TipoVoto;
   is_divergente: boolean;
   is_nominal: boolean;
+  /**
+   * Coluna OPCIONAL — só existe depois da migration `20260824120000`. O write-path
+   * (`votos-write.ts`) a remove do payload enquanto o banco não a tiver, então gravá-la aqui é
+   * seguro antes da migration.
+   */
+  proveniencia?: ProvenienciaVoto;
 };
 
 export function isFinalVoteDocument(input: {
@@ -224,13 +242,18 @@ export function buildVotoRowsFromSuggestions(input: {
   const rows = new Map<string, VotoInsertRow>();
   for (const voto of input.votosSugeridos) {
     if (!voto.diretor_id) continue;
+    // CORREÇÃO HUMANA (etapa58): quando o revisor troca o voto na tela, isso é o dado de MAIOR
+    // qualidade que existe — uma pessoa leu o documento. Era gravado como "inferido", indistinguível
+    // de um chute do algoritmo, e o trabalho do revisor desaparecia na primeira métrica.
+    const humano = voto.origem === "revisao_humana";
     rows.set(voto.diretor_id, rowFor(
       input.deliberacao_id,
       voto.diretor_id,
       voto.tipo_voto,
-      voto.is_nominal,
+      humano ? true : voto.is_nominal,
       resultado,
       unanime,
+      humano ? "revisao_humana" : undefined,
     ));
   }
   return [...rows.values()];
@@ -338,6 +361,7 @@ function rowFor(
   isNominal: boolean,
   resultado: string | null = null,
   unanime = false,
+  proveniencia?: ProvenienciaVoto,
 ): VotoInsertRow {
   return {
     deliberacao_id: deliberacaoId,
@@ -345,5 +369,9 @@ function rowFor(
     tipo_voto: tipoVoto,
     is_divergente: isDivergentVote(tipoVoto, resultado, unanime),
     is_nominal: isNominal,
+    // Voto LIDO do documento é "nominal". Voto INFERIDO se distingue pela evidência que o
+    // sustenta: texto de unanimidade × direção da decisão. Sem essa distinção, "convergência
+    // ≈ 100%" é tautologia — voto inferido é, por construção, não-divergente.
+    proveniencia: proveniencia ?? (isNominal ? "nominal" : unanime ? "inferido_unanimidade" : "inferido_decisao"),
   };
 }

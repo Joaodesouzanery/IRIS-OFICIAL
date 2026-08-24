@@ -313,18 +313,15 @@ function ReviewCard({
   function updateVotoSugerido(index: number, tipoVoto: "Favoravel" | "Desfavoravel" | "Abstencao" | "Ausente") {
     const votos = [...(fields.votos_sugeridos ?? [])];
     if (!votos[index]) return;
+    // Etapa58: quem trocou o voto foi uma PESSOA que leu o documento — o dado de maior qualidade
+    // do sistema. Antes esta linha recalculava a origem a partir do tipo e o voto voltava a ser
+    // "inferido_mandato", indistinguível de um chute do algoritmo; o trabalho do revisor sumia na
+    // primeira métrica de comportamento. Agora fica carimbado como revisão humana e nominal.
     votos[index] = {
       ...votos[index],
       tipo_voto: tipoVoto,
-      origem: tipoVoto === "Ausente"
-        ? "ausente"
-        : tipoVoto === "Abstencao"
-          ? "abstencao"
-          : tipoVoto === "Desfavoravel"
-            ? "contrario"
-            : votos[index].is_nominal
-              ? "nominal"
-              : "inferido_mandato",
+      origem: "revisao_humana",
+      is_nominal: true,
     };
     set("votos_sugeridos", votos);
   }

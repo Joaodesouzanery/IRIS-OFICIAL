@@ -5,6 +5,7 @@
  */
 
 import { findBestMatch } from "@/lib/server/name-matcher";
+import { upsertVotosProtegido } from "@/lib/server/votos-write";
 import {
   buildVotoRows,
   getActiveDiretoresForVote,
@@ -94,6 +95,8 @@ export interface RetroactiveVotesResult {
   ignorados_fora_mandato: number;
   /** 1ª data_reuniao em que o nome aparece — base do mandato automático. */
   primeira_data: string | null;
+  /** Mensagens de falha do upsert, quando houve (etapa58). */
+  falhas?: string[];
 }
 
 /**
@@ -153,13 +156,21 @@ export async function applyRetroactiveVotes(
   }
 
   let criados = 0;
+  const falhas: string[] = [];
   if (allRows.length > 0) {
     // Lotes de 200 para caber no orçamento da função.
     for (let i = 0; i < allRows.length; i += 200) {
       const batch = allRows.slice(i, i + 200);
-      const { error } = await db.from("votos").upsert(batch, { onConflict: "deliberacao_id,diretor_id" });
-      if (!error) criados += batch.length;
-      else console.error("[retroactive-votes] upsert falhou:", error.message);
+      // Etapa58: passa pelo write-path COMPARTILHADO. Antes era upsert cru — sem a proteção do
+      // voto nominal, o backfill podia REBAIXAR para inferido um voto lido do documento, e sem a
+      // sonda de capacidade quebraria ao gravar `proveniencia` antes da migration.
+      const r = await upsertVotosProtegido(db, batch);
+      if (r.error) {
+        falhas.push(r.error.message);
+        console.error("[retroactive-votes] upsert falhou:", r.error.code, r.error.message);
+      } else {
+        criados += r.gravados;
+      }
     }
   }
 
@@ -179,5 +190,13 @@ export async function applyRetroactiveVotes(
     .filter((d): d is string => typeof d === "string" && d.length >= 10)
     .sort()[0] ?? null;
 
-  return { deliberacoes: delibs.length, criados, ignorados_fora_mandato: ignorados, primeira_data: primeiraData };
+  return {
+    deliberacoes: delibs.length,
+    criados,
+    ignorados_fora_mandato: ignorados,
+    primeira_data: primeiraData,
+    // O erro deixa de morrer no console: quem chamou precisa poder dizer ao usuário que o
+    // backfill NÃO gravou (etapa58).
+    ...(falhas.length ? { falhas } : {}),
+  };
 }

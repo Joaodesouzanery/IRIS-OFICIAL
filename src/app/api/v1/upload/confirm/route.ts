@@ -33,32 +33,24 @@ import type {
   VotoEmbutido,
 } from "@/types";
 
-const RESULTADOS_VALIDOS = new Set<string>(RESULTADOS);
+import { upsertVotosProtegido, sanitizeVotosSugeridos } from "@/lib/server/votos-write";
 
 /**
- * Upsert de votos que NÃO rebaixa um voto nominal (extraído do documento) para
- * um voto inferido por mandato ao reprocessar a mesma deliberação. Preserva a
- * fidelidade: o que foi lido do documento prevalece sobre a inferência.
+ * Etapa58: o resultado do upsert de votos DEIXA de ser descartado. Uma violação de constraint
+ * apagava os votos do documento em silêncio — o confirm reportava "created" e a deliberação ficava
+ * sem voto nenhum, indistinguível de um documento que realmente não tem voto.
  */
-async function upsertVotosProtegido(db: any, votoRows: VotoInsertRow[]) {
-  if (!votoRows.length) return;
-  const delibIds = [...new Set(votoRows.map((r) => r.deliberacao_id))];
-  const { data: existentes } = await db
-    .from("votos")
-    .select("deliberacao_id, diretor_id, is_nominal")
-    .in("deliberacao_id", delibIds);
-  const nominalExistente = new Set<string>(
-    (existentes ?? [])
-      .filter((v: any) => v.is_nominal)
-      .map((v: any) => `${v.deliberacao_id}|${v.diretor_id}`),
-  );
-  const toUpsert = votoRows.filter(
-    (r) => r.is_nominal || !nominalExistente.has(`${r.deliberacao_id}|${r.diretor_id}`),
-  );
-  if (toUpsert.length > 0) {
-    await db.from("votos").upsert(toUpsert, { onConflict: "deliberacao_id,diretor_id" });
+async function gravarVotos(db: any, rows: VotoInsertRow[], contexto: string): Promise<string | null> {
+  if (!rows.length) return null;
+  const r = await upsertVotosProtegido(db, rows);
+  if (r.error) {
+    console.error(`[upload/confirm] falha ao gravar votos (${contexto}):`, r.error.code, r.error.message);
+    return `Votos NÃO foram gravados (${contexto}): ${r.error.message}`;
   }
+  return null;
 }
+
+const RESULTADOS_VALIDOS = new Set<string>(RESULTADOS);
 
 const MICROTEMAS_VALIDOS = new Set<string>([
   "tarifa", "obras", "multa", "contrato", "reequilibrio",
@@ -135,7 +127,9 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
     nomes_presentes: Array.isArray(d.nomes_presentes)
       ? d.nomes_presentes.slice(0, 20).map((n) => String(n).slice(0, 100))
       : [],
-    votos_sugeridos: Array.isArray(d.votos_sugeridos) ? d.votos_sugeridos.slice(0, 30) : [],
+    // Etapa58: o CHECK do Postgres era o ÚNICO validador deste input de usuário — o payload
+    // chegava do browser e ia direto para o banco. Allowlist por campo, sem zod (escolha do projeto).
+    votos_sugeridos: sanitizeVotosSugeridos(d.votos_sugeridos),
     extraction_confidence:
       typeof d.extraction_confidence === "number" &&
       d.extraction_confidence >= 0 &&
@@ -602,11 +596,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 activeDiretoresList: [], resultado: d.resultado, inferFromMandate: false,
               })
             : [];
-          if (nominalRelator.length > 0) await upsertVotosProtegido(db, nominalRelator);
+          const erroVotoAntt = await gravarVotos(db, nominalRelator, `voto ANTT ${d.filename}`);
 
           await markDocumentReviewed(db, d.documento_id, "confirmed", delibV.id as string);
           results.push({
-            filename: d.filename, status: "created", deliberacao_id: delibV.id as string, documento_id: d.documento_id ?? null,
+            filename: d.filename, status: erroVotoAntt ? "error" : "created", deliberacao_id: delibV.id as string, documento_id: d.documento_id ?? null,
+            ...(erroVotoAntt ? { error: erroVotoAntt } : {}),
             message: relatorId
               ? "Voto ANTT capturado: relator (lido)."
               : "Voto ANTT materializado; relator pendente de aprovação (voto entra por backfill ao aprovar).",
@@ -614,6 +609,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           continue;
         }
 
+        // Falhas de gravação de voto por ITEM: a ata inteira não pode ser reportada como "created"
+        // se os votos de alguns itens não entraram (etapa58).
+        const errosVotosAta: string[] = [];
         if (d.tipo_documento === "ata" && rawConfirm.ata_items && rawConfirm.ata_items.length > 0) {
           const documentPrefix = internalAnttDocumentPrefix(d);
           const documentLabel = documentPrefix === "ATA" ? "Ata" : "Pauta";
@@ -824,12 +822,19 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     }),
                 });
 
-              if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
+              const erroItem = await gravarVotos(db, votoRows, `item ${item.item_numero ?? "?"} de ${d.filename}`);
+              if (erroItem) errosVotosAta.push(erroItem);
             }
           }
 
           await markDocumentReviewed(db, d.documento_id, "confirmed", ataPai.id as string);
-          results.push({ filename: d.filename, status: "created", deliberacao_id: ataPai.id as string, documento_id: d.documento_id ?? null });
+          results.push({
+            filename: d.filename,
+            status: errosVotosAta.length ? "error" : "created",
+            deliberacao_id: ataPai.id as string,
+            documento_id: d.documento_id ?? null,
+            ...(errosVotosAta.length ? { error: errosVotosAta.slice(0, 3).join(" · ") } : {}),
+          });
           continue;
         }
 
@@ -960,12 +965,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               diretoresList,
             }),
           });
-        if (votoRows.length > 0) await upsertVotosProtegido(db, votoRows);
+        const erroVotos = await gravarVotos(db, votoRows, d.filename);
 
         await markDocumentReviewed(db, d.documento_id, "confirmed", delib.id as string);
         results.push({
           filename: d.filename,
-          status: "created",
+          status: erroVotos ? "error" : "created",
+          ...(erroVotos ? { error: erroVotos } : {}),
           deliberacao_id: delib.id as string,
           documento_id: d.documento_id ?? null,
           ...(delibExistente ? { message: "Deliberação já existia — reaproveitada (dedup); votos atualizados sem dupla contagem." } : {}),
