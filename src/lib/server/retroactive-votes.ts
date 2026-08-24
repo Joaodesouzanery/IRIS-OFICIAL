@@ -27,6 +27,8 @@ export interface CandidateDeliberacao {
   nomesAusente: string[];
   nomesAbstencao: string[];
   nomesImpedido: string[];
+  /** Nomes com voto proferido em sessão ANTERIOR (etapa57). */
+  nomesEmAutos: string[];
 }
 
 /**
@@ -59,7 +61,16 @@ export async function findDeliberacoesForCandidate(
     const nomesImpedido = arr(raw.impedimentos).length
       ? arr(raw.impedimentos)
       : arr(raw.nomes_votacao_impedido);
-    const todos = [...nomes, ...nomesContra, ...nomesAusente, ...nomesAbstencao, ...nomesImpedido];
+    // `votos_em_autos` é [{nome, sessao}] — só os nomes interessam aqui.
+    const nomesEmAutos = Array.isArray(raw.votos_em_autos)
+      ? (raw.votos_em_autos as Array<{ nome?: unknown }>)
+          .map((v) => (typeof v?.nome === "string" ? v.nome : ""))
+          .filter(Boolean)
+      : [];
+    // `nomesEmAutos` entra na busca: o ex-diretor cujo voto foi proferido em sessão anterior pode
+    // aparecer SÓ como "então Diretor X" — sem ele aqui, a deliberação nem seria encontrada e a
+    // exceção de mandato logo abaixo nunca teria chance de valer.
+    const todos = [...nomes, ...nomesContra, ...nomesAusente, ...nomesAbstencao, ...nomesImpedido, ...nomesEmAutos];
     if (todos.length === 0) continue;
     const hit = todos.some((n) => {
       const m = findBestMatch(n, [probe]);
@@ -71,7 +82,7 @@ export async function findDeliberacoesForCandidate(
       data_reuniao: d.data_reuniao,
       numero_deliberacao: d.numero_deliberacao,
       resultado: d.resultado,
-      nomes, nomesContra, nomesAusente, nomesAbstencao, nomesImpedido,
+      nomes, nomesContra, nomesAusente, nomesAbstencao, nomesImpedido, nomesEmAutos,
     });
   }
   return matched;
@@ -113,9 +124,19 @@ export async function applyRetroactiveVotes(
     // recém-aprovado, que ainda não tem mandato), não dá para excluir → grava.
     // (QA ago/2026: o guard antigo exigia "estar no active", que sem mandato era [],
     // e pulava TUDO — aprovar candidato nunca criava voto retroativo.)
-    const active = await getActiveDiretoresForVote(db, candidato.agencia_id, del.data_reuniao, [thisDir]);
-    const inActive = active.some((d) => d.id === diretorId);
-    if (active.length > 0 && !inActive) { ignorados++; continue; }
+    // VOTO EM AUTOS (etapa57) neutraliza essa checagem: o voto foi proferido em sessão ANTERIOR e
+    // esta ata apenas o registra. A data da deliberação é a da sessão de REGISTRO, fora do mandato
+    // do diretor — mas o voto é real e foi dado dentro dele. Sem esta exceção, todo ex-diretor com
+    // voto vista era descartado aqui, silenciosamente, como se nunca tivesse votado.
+    const emAutos = del.nomesEmAutos.some((n) => {
+      const m = findBestMatch(n, [thisDir]);
+      return m.diretorId && !m.needsReview;
+    });
+    if (!emAutos) {
+      const active = await getActiveDiretoresForVote(db, candidato.agencia_id, del.data_reuniao, [thisDir]);
+      const inActive = active.some((d) => d.id === diretorId);
+      if (active.length > 0 && !inActive) { ignorados++; continue; }
+    }
 
     const rows = buildVotoRows({
       deliberacao_id: del.id,

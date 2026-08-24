@@ -180,6 +180,76 @@ export function extractDivergentesNomeados(text: string, roleMap: Record<string,
   return out;
 }
 
+// ─── Voto em AUTOS (etapa57) ──────────────────────────────────────────────
+// Voto proferido em sessão ANTERIOR e apenas REGISTRADO nesta ata. Não é presença: o diretor não
+// estava lá. Medido nas duas atas ANM:
+//   82ª — "já havia sido proferido o voto do relator original, Diretor Caio Mário Trivellato
+//         Seabra Filho, acompanhado pelo ENTÃO Diretor Guilherme Santana Lopes Gomes"
+//   32ª — "antecipação de voto realizada pelo Diretor Luiz Paniago Neves na 73ª Reunião Ordinária"
+// Sem distinguir isso, o voto entra na série temporal do diretor na data ERRADA, conta como
+// presença numa sessão em que ele não esteve, e dispara o alarme de "voto fora do mandato" em
+// toda ata com voto vista — ruído que treina o revisor a ignorar o alarme.
+// SEM a flag `i` — vide RE_VOTO_AUSENTE: com ela o macro NOME vira case-insensitive, casa prosa
+// minúscula e o nome capturado é rejeitado depois por isStrictPersonName, perdendo o caso real.
+const RE_AUTOS_JA_PROFERIDO = new RegExp(
+  `[Jj][áa]\\s+havia\\s+sido\\s+proferido\\s+o\\s+voto\\s+d[oa]\\s+relator[^,]{0,30},\\s*(?:[Dd]iretor[a]?(?:[-\\s]Geral)?\\s+)?(${NOME})`,
+  "g",
+);
+// "então Diretor X" — ex-diretor cujo voto está sendo apenas registrado.
+const RE_AUTOS_ENTAO_DIRETOR = new RegExp(
+  `ent[ãa]o\\s+[Dd]iretor[a]?(?:[-\\s](?:Geral|Substitut[oa]))?\\s+(${NOME})`,
+  "g",
+);
+const RE_AUTOS_ANTECIPACAO = new RegExp(
+  `[Aa]ntecip(?:a[çc][ãa]o|ou|ado)[^.]{0,80}?pel[oa]\\s+[Dd]iretor[a]?(?:[-\\s]Geral)?\\s+(${NOME})`,
+  "g",
+);
+const RE_AUTOS_ADESAO_ANTERIOR = new RegExp(
+  `ader(?:iu|iram)\\s+ao\\s+voto[^.]{0,80}?por\\s+ocasi[ãa]o\\s+d[ao]\\s+\\d+`,
+  "i",
+);
+// A sessão em que o voto foi proferido, quando o texto a nomeia.
+const RE_SESSAO_DO_VOTO = /(?:n[ao]|por\s+ocasi[ãa]o\s+d[ao])\s+(\d+[ªa°º]\s*Reuni[ãa]o[^,.;]{0,45})/i;
+// GUARD: "aderiram ao voto vista apresentado pelo Diretor-Geral NA PRESENTE SESSÃO" (32ª) é voto
+// da própria sessão — o oposto de voto em autos.
+const RE_PRESENTE_SESSAO = /n[ao]\s+presente\s+sess[ãa]o|nesta\s+sess[ãa]o|na\s+presente\s+reuni[ãa]o/i;
+
+export interface VotoEmAutos {
+  nome: string;
+  /** Sessão em que o voto foi efetivamente proferido, quando o documento a nomeia. */
+  sessao: string | null;
+}
+
+/** Diretores cujo voto foi proferido em sessão ANTERIOR e só registrado neste documento. */
+export function extractVotosEmAutos(text: string): VotoEmAutos[] {
+  const flat = flattenForMatch(text);
+  const out: VotoEmAutos[] = [];
+  const push = (nomeRaw: string, janela: string) => {
+    const nome = nomeRaw.replace(/\s+/g, " ").trim();
+    if (nome.length <= 4 || !isStrictPersonName(nome)) return;
+    if (out.some((v) => v.nome === nome)) return;
+    const sessao = RE_PRESENTE_SESSAO.test(janela) ? null : RE_SESSAO_DO_VOTO.exec(janela)?.[1]?.trim() ?? null;
+    out.push({ nome, sessao });
+  };
+
+  for (const re of [RE_AUTOS_JA_PROFERIDO, RE_AUTOS_ENTAO_DIRETOR, RE_AUTOS_ANTECIPACAO]) {
+    re.lastIndex = 0;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(flat)) !== null) {
+      // Janela ao redor do casamento para achar a sessão citada e o guard de "presente sessão".
+      const janela = flat.slice(Math.max(0, m.index - 120), m.index + m[0].length + 160);
+      if (RE_PRESENTE_SESSAO.test(flat.slice(m.index, m.index + m[0].length + 60))) continue;
+      push(m[1] ?? "", janela);
+    }
+  }
+  return out;
+}
+
+/** O documento registra adesão a voto proferido em sessão anterior (sem nomear o aderente). */
+export function hasAdesaoVotoAnterior(text: string): boolean {
+  return RE_AUTOS_ADESAO_ANTERIOR.test(flattenForMatch(text));
+}
+
 // AUTOR e FUNDAMENTO da retirada (etapa56). "Processo retirado de pauta pelo Diretor X, nos termos
 // do art. 55 do Regimento Interno": saber QUEM retirou e COM QUE BASE é o que separa uma retirada
 // regimental de uma retirada sem justificativa — e hoje nada disso era guardado.

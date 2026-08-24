@@ -3,7 +3,7 @@ import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
 import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
-import { extractFields, calcConfidence, extractItemVotes, buildRoleMap, extractRetirada } from "@/lib/server/nlp-extractor";
+import { extractFields, calcConfidence, extractItemVotes, buildRoleMap, extractRetirada, extractVotosEmAutos } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials, setAnttCargoMandatos, type AnttCargoMandato } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
@@ -229,6 +229,18 @@ export async function analyzeUploadPdf(input: {
   let ata_items: PreviewResult["ata_items"] | undefined;
   let ataItemStats: { itens_pre_dedup: number; duplicatas_removidas: number } | null = null;
   const retirada = extractRetirada(extraction.text);
+  const votosEmAutos = extractVotosEmAutos(extraction.text);
+  // (c) Nome com voto em autos SEM diretor cadastrado → AVISO, nunca voto. Criar o diretor a
+  // partir daqui seria fabricar cadastro a partir de uma citação histórica.
+  for (const v of votosEmAutos) {
+    const m = findBestMatch(v.nome, diretoresList);
+    if (!m.diretorId || m.needsReview) {
+      documentWarnings.push(
+        `Voto proferido em sessão anterior por "${v.nome}"${v.sessao ? ` (${v.sessao})` : ""} — ` +
+        "diretor não localizado no cadastro; o voto NÃO foi criado. Cadastrar/aprovar o diretor e reprocessar.",
+      );
+    }
+  }
   if (tipo_documento === "ata") {
     const ataSplit = splitAtaItemsWithStats(extraction.text);
     const rawItems = ataSplit.items;
@@ -527,6 +539,11 @@ export async function analyzeUploadPdf(input: {
       // Retirada de pauta/reunião (etapa56): QUEM retirou e COM QUE BASE. É o que separa uma
       // retirada regimental de uma sem justificativa — e nada disso era guardado.
       ...(retirada ? { retirada } : {}),
+      // Voto em AUTOS (etapa57): proferido em sessão ANTERIOR e só REGISTRADO aqui. Continua
+      // ligado à deliberação — é ele que forma a maioria — mas não é presença nesta sessão, e é
+      // esta lista que impede o alarme de "voto fora do mandato" de disparar em toda ata com
+      // voto vista. A coluna `voto_em_autos` chega na etapa59; até lá, vive no JSON.
+      ...(votosEmAutos.length ? { votos_em_autos: votosEmAutos } : {}),
       // Dedup intra-ata (etapa53). `itens_pre_dedup` é o número que a reconciliação de âncoras
       // (etapa63) compara: comparar contra o pós-dedup transformaria uma dedup CORRETA em alarme
       // permanente. `duplicatas_removidas` é informativo e fica registrado, nunca silencioso.
