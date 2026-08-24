@@ -19,6 +19,8 @@ import {
   checarAdmissibilidadeMalClassificada,
   checarLigaduraResidual,
   checarImpedidoComVoto,
+  checarDataAnteriorAoProcesso,
+  checarAnoProtocoloDaAta,
   temBloqueio,
   formatarAchados,
 } from "@/lib/server/consistency-checks";
@@ -207,8 +209,13 @@ describe("etapa63 · o guard que faz o bloqueio bloquear de verdade", () => {
       ...checarAdmissibilidadeMalClassificada({ juizo: null, resultado: "Indeferido", texto: "não conhecer" }),
       ...checarLigaduraResidual(["substitu…"]),
       ...checarImpedidoComVoto({ impedidos: ["X Y"], diretoresQueVotaram: ["X Y"] }),
+      // Etapa65 — os validadores de data entram no MESMO guard: um bloqueio de data que fosse
+      // classificado como informativo deixaria passar exatamente o defeito que ele existe para
+      // pegar (voto atribuído ao roster errado).
+      ...checarDataAnteriorAoProcesso({ dataReuniao: "2022-05-02", texto: "48051.003447/2026-17" }),
+      ...checarAnoProtocoloDaAta({ dataReuniao: "2022-05-02", protocoloSei: "48051.003447/2026-17" }),
     ];
-    expect(todos.length).toBeGreaterThan(8);
+    expect(todos.length).toBeGreaterThan(10);
     for (const a of todos) {
       expect(INFO_WARNING_RE.test(a.mensagem), `"${a.mensagem}" casa INFO_WARNING_RE`).toBe(false);
     }

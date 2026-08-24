@@ -293,6 +293,95 @@ export function checarImpedidoComVoto(input: {
   }];
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+// Etapa 65 — VALIDAÇÃO CRUZADA DE DATA
+//
+// `data_reuniao` é o que escolhe o roster em `getActiveDiretoresForVote`. Data errada não perde
+// voto: ela infere voto para os DIRETORES ERRADOS, com aparência total de normalidade. Foi o pior
+// defeito da rodada anterior (ata de 25/03/2026 lida como 02/05/2022), e a única validação que
+// existia era uma janela `2020-01-01 .. hoje+60d` — larga demais para pegá-lo.
+//
+// Duas checagens independentes, ambas PURAS (rodam com `db: null`, logo são exercitáveis contra as
+// 16 fixtures antes de ligar o nível bloqueante — a lição do C03 aplicada de saída).
+// ═══════════════════════════════════════════════════════════════════════════
+
+/**
+ * Anos de protocolo citados no TEXTO. Dois formatos medidos no corpus:
+ *   ANM/ANTT `48051.003447/2026-17`   (bloco central de 6 dígitos)
+ *   ARTESP   `134.00000123/2023-45`   (bloco central de 8 dígitos)
+ * O ano fica sempre logo após a barra nas três agências.
+ *
+ * ⚠️ Tem de varrer o TEXTO, não o campo `processo` já extraído: aquele é o PRIMEIRO match e
+ * diverge do ano da reunião em até 6 anos (a 79ª tem campo 2019 e reunião em 2025).
+ */
+export function anosDeProcessoNoTexto(text: string): number[] {
+  const anos = new Set<number>();
+  const re = /\b\d{3,5}\.\d{6,8}\/((?:19|20)\d{2})\b/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) anos.add(Number(m[1]));
+  return [...anos].sort((a, b) => a - b);
+}
+
+/**
+ * C17 — a reunião não pode ser ANTERIOR ao processo mais novo que ela julga.
+ *
+ * ⚠️ A regra é ASSIMÉTRICA, e isso foi MEDIDO. A versão simétrica ("divergiu mais de ~1 ano do
+ * protocolo, é erro") daria falso positivo: o número do processo codifica quando ele foi ABERTO, e
+ * processo minerário leva décadas — as atas da ANM misturam protocolos de 1935 a 2026, e a
+ * `artesp-delib-22` sozinha tem delta +3. Seria o mesmo "8 de 8 atas recusadas" do C03.
+ *
+ * A direção POSTERIOR é livre; a ANTERIOR é impossível: não se decide um processo antes de ele
+ * existir. Medido: `ano(data_reuniao) ≥ MAX(anos no texto)` vale em 16/16 fixtures, sem exceção.
+ * O bug de 2022 cai nessa regra sozinho, sem depender do parser de data.
+ */
+export function checarDataAnteriorAoProcesso(input: {
+  dataReuniao: string | null | undefined;
+  texto: string;
+}): Achado[] {
+  const ano = Number(String(input.dataReuniao ?? "").slice(0, 4));
+  if (!Number.isFinite(ano) || ano < 1900) return [];
+  const anos = anosDeProcessoNoTexto(input.texto);
+  if (anos.length === 0) return [];
+  const maisNovo = anos[anos.length - 1];
+  if (ano >= maisNovo) return [];
+  return [{
+    codigo: "C17_DATA_ANTERIOR_AO_PROCESSO",
+    nivel: "bloqueante",
+    mensagem: `Reunião datada de ${input.dataReuniao} julga processo protocolado em ${maisNovo} — `
+      + "não se decide um processo antes de ele existir. A data provavelmente foi lida do CORPO do "
+      + "documento em vez do cabeçalho, e com ela o roster de diretores sai errado.",
+  }];
+}
+
+/**
+ * C18 — o ano do protocolo da PRÓPRIA ata tem de bater com o ano da reunião.
+ *
+ * Sinal mais forte que o C17: não é um limite, é uma IGUALDADE. ANM e ANTT carimbam o protocolo do
+ * próprio documento no rodapé SEI ("… SEI 48051.003447/2026-17 / pg. 1"), e medido pelo caminho
+ * real de análise o ano bate em 9/9 das fixtures que têm o rodapé. A ARTESP não o tem — ali o
+ * check fica silencioso em vez de inventar base.
+ */
+export function checarAnoProtocoloDaAta(input: {
+  dataReuniao: string | null | undefined;
+  protocoloSei: string | null | undefined;
+}): Achado[] {
+  const proto = input.protocoloSei;
+  if (!proto) return [];
+  const mAno = /\/((?:19|20)\d{2})-\d{2}$/.exec(proto);
+  if (!mAno) return [];
+  const anoProto = Number(mAno[1]);
+  const anoReuniao = Number(String(input.dataReuniao ?? "").slice(0, 4));
+  if (!Number.isFinite(anoReuniao) || anoReuniao < 1900) return [];
+  if (anoProto === anoReuniao) return [];
+  return [{
+    codigo: "C18_ANO_PROTOCOLO_DIVERGE",
+    nivel: "bloqueante",
+    mensagem: `O documento é o processo SEI ${proto} (${anoProto}), mas a reunião foi lida como `
+      + `${input.dataReuniao} (${anoReuniao}). O protocolo é do PRÓPRIO documento — a data extraída `
+      + "está errada, e com ela o roster de diretores.",
+  }];
+}
+
 /** Há algum achado que RECUSA o confirm? */
 export function temBloqueio(achados: Achado[]): boolean {
   return achados.some((a) => a.nivel === "bloqueante");

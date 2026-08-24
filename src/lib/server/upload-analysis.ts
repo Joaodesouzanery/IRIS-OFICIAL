@@ -6,6 +6,7 @@ import {
   checarAncorasItens, checarCoerenciaUnanimidade, checarImpedidoComVoto,
   checarCardinalidadeVotos, checarInteressadoNoDispositivo, checarVotoQualidadeDuplo,
   checarAdmissibilidadeMalClassificada, checarLigaduraResidual,
+  checarDataAnteriorAoProcesso, checarAnoProtocoloDaAta,
   formatarAchados, temBloqueio, type Achado,
 } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
@@ -477,6 +478,12 @@ export async function analyzeUploadPdf(input: {
         juizo: fields.juizo, resultado: fields.resultado, texto: extraction.text,
       }),
       ...checarLigaduraResidual(probeLigatureDefects(extraction.text).lemasQuebrados),
+      // C17/C18 (etapa65) — VALIDAÇÃO CRUZADA DE DATA. `data_reuniao` escolhe o roster em
+      // `getActiveDiretoresForVote`: data errada não perde voto, infere voto para os diretores
+      // ERRADOS. Ambos puros, e medidos contra as 16 fixtures com ZERO bloqueio antes de virarem
+      // bloqueantes — os dois pegam sozinhos o bug real (ata de 25/03/2026 lida como 02/05/2022).
+      ...checarDataAnteriorAoProcesso({ dataReuniao: fields.data_reuniao, texto: extraction.text }),
+      ...checarAnoProtocoloDaAta({ dataReuniao: fields.data_reuniao, protocoloSei: extraction.protocoloSei }),
       // C05/C06 e C08/C09 estavam DEFINIDOS e TESTADOS mas nunca chamados — código morto com
       // teste, que é pior que código morto sem: sugere cobertura que não existe.
       // Cardinalidade também é por ITEM: numa ata os nomes são a união de todos os itens e

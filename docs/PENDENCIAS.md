@@ -418,6 +418,49 @@ código:
   precisa vir acompanhada de um estado de UI mais explícito que `—` (ex.: faixa "sem base nominal
   neste período"), **não** de voltar a publicar 0.
 
+## Fase 4 · bloco 3 — validação cruzada de data (24/08/2026)
+
+Dois validadores INDEPENDENTES, ambos de graça no próprio documento, ambos **bloqueantes** e ambos
+PUROS (rodam com `db: null`, logo exercitáveis contra as 16 fixtures antes de ligar o bloqueio):
+
+- **C17 · `checarDataAnteriorAoProcesso`** — a reunião nunca é ANTERIOR ao processo mais novo que
+  ela julga. Regra **assimétrica por MEDIÇÃO**: a versão simétrica (±1 ano) daria falso positivo em
+  série, porque as atas da ANM misturam protocolos de **1935 a 2026** (36 anos distintos só na 79ª)
+  e a `artesp-delib-22` tem delta +3. Varre o TEXTO, não o campo `processo` — este é o primeiro
+  match e diverge do ano da reunião em até 6 anos. Cobre os dois formatos (`NNNNN.NNNNNN/AAAA` da
+  ANM/ANTT e `NNN.NNNNNNNN/AAAA` da ARTESP).
+- **C18 · `checarAnoProtocoloDaAta`** — o ano do protocolo SEI do PRÓPRIO documento é IGUAL ao ano
+  da reunião. Não é limite, é igualdade: medido pelo caminho real de análise, bate em **9/9** das
+  fixtures que têm o rodapé. ARTESP não tem — ali o check fica silencioso em vez de inventar base.
+  ⚠️ O protocolo é capturado em `extractPdfText` **antes** de `removeSeiHeadersFooters`, que apaga
+  exatamente a linha que o carrega.
+
+Medido: **0 bloqueios nas 16 fixtures sadias**, e os DOIS pegam sozinhos o bug real (83ª de
+25/03/2026 lida como 02/05/2022). Ambos entram no guard `INFO_WARNING_RE` da etapa63 — um bloqueio
+de data classificado como informativo deixaria passar exatamente o defeito que ele existe para pegar.
+
+**Bug latente corrigido:** `RE_NUMERO_REUNIAO` casava só `(\d{3,4})`, então "ATA DA 1.024ª REUNIÃO"
+virava **"024"** — a reunião 1.024 lida como a 24. Ficava escondido porque o parser dedicado da ANTT
+já devolvia "1.024"; aparece assim que o dedicado não assume. O FORMATO com ponto foi preservado de
+propósito: `numero_reuniao` é chave de dedup (`.eq()` em `deliberacao-dedup.ts` e `reunioes.ts`), e
+normalizá-lo na gravação faria a mesma reunião deixar de casar com a linha persistida. A comparação
+ordinal vive em `numeroReuniaoOrdinal`.
+
+**Achado de brinde (não corrigido, mascarado hoje):** o extrator GENÉRICO devolve datas erradas para
+documentos da ANTT — `2025-12-26` para a 1.024ª (correto 2026-01-19) e **`2022-04-07` para a pauta
+1.036** (correto 2026-07-02). Mesma classe do bug da 83ª. Em produção o parser dedicado sobrescreve,
+então não aparece; se um documento da ANTT não disparar `isAntt`, aparece. O C17/C18 agora o pegaria.
+
+### ADIADO com diagnóstico: monotonicidade da série (a 83ª não pode preceder a 81ª)
+A ideia está certa, mas exige uma coisa que **não existe no modelo de dados hoje**: `tipo_reuniao`
+NÃO separa as séries da ANTT — RD e RDE recebem ambos `"Ordinaria"` (`antt-manual-parser.ts:331`).
+Prova no corpus: `antt-ata-1024` (RD) e `antt-ata-264-rde` (RDE) têm a **mesma data** (2026-01-19)
+com números 1024 e 264. Comparar sem separar série produz alarme falso imediato — e a 34ª
+extraordinária da ANM contra a 79ª ordinária, idem. Além disso o validador precisa de `db`, então
+fica **inerte e silencioso** nas 16 fixtures e exigiria teste próprio com banco falso (foi assim que
+o C16 entrou incapaz de disparar). Pré-requisito: derivar uma chave de série confiável para a ANTT.
+O `numeroReuniaoOrdinal` já está pronto para quando isso for feito.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

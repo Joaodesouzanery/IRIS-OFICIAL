@@ -504,7 +504,25 @@ const RE_VOTO_CONCORDANCIA = new RegExp(
 );
 
 // Número ordinal da reunião — apenas o dígito "1176"
-const RE_NUMERO_REUNIAO = /(\d{3,4})[ªa°º]?\s*Reuni[aã]o/gi;
+// A alternativa COM separador de milhar vem primeiro (etapa65). Sem ela, "ATA DA 1.024ª REUNIÃO"
+// casava só os três últimos dígitos e o número saía "024" — a reunião 1.024 virava a 24. O parser
+// dedicado da ANTT já devolvia "1.024", então o defeito ficava latente: só aparece quando o parser
+// dedicado não assume (documento da ANTT que não dispare `isAntt`, ou agência nova com milhar).
+// ⚠️ O FORMATO com ponto é preservado de propósito: `numero_reuniao` é chave de dedup
+// (`deliberacao-dedup.ts`, `reunioes.ts` comparam com `.eq()`), então normalizá-lo aqui faria a
+// mesma reunião deixar de casar com a linha já persistida. Ordenação usa `numeroReuniaoOrdinal`.
+const RE_NUMERO_REUNIAO = /(\d{1,3}(?:\.\d{3})+|\d{3,4})[ªa°º]?\s*Reuni[aã]o/gi;
+
+/**
+ * Número da reunião como INTEIRO, para comparação ordinal. Não substitui o campo armazenado —
+ * "1.024" e "1024" convivem em produção e ambos valem 1024 aqui.
+ */
+export function numeroReuniaoOrdinal(numero: string | null | undefined): number | null {
+  if (!numero) return null;
+  const limpo = String(numero).replace(/[.\s]/g, "");
+  if (!/^\d+$/.test(limpo)) return null;
+  return Number(limpo);
+}
 
 // Tipo de reunião: Ordinária ou Extraordinária
 const RE_TIPO_REUNIAO = /\b(Ordin[aá]ria|Extraordin[aá]ria)\b/i;

@@ -160,6 +160,22 @@ function removeRepeatedLines(text: string, minRepeat = 3): string {
 // ─── Remoção de cabeçalhos/rodapés SEI ───────────────────────────────────
 // Deliberações ARTESP no formato SEI repetem timestamps, números SEI e URLs
 // em cada página. Esses textos poluem a extração de campos.
+/**
+ * Protocolo SEI do PRÓPRIO documento, do rodapé federal (etapa65):
+ *   "Ata 83ª Reunião Ordinária Pública da DIRC (19543269)  SEI 48051.003447/2026-17 / pg. 1"
+ *
+ * Medido nas 16 fixtures: ANM e ANTT carimbam esse rodapé, e o ano dele é IGUAL ao ano da reunião
+ * em 9/9 dos documentos que o têm — não é um limite, é uma igualdade, sinal muito mais forte que
+ * qualquer heurística sobre o número do processo. A ARTESP não tem o rodapé (devolve `null`, e o
+ * validador fica silencioso lá em vez de inventar).
+ *
+ * ⚠️ Só pode ser chamado ANTES de `removeSeiHeadersFooters`, que apaga esta linha.
+ */
+export function extractProtocoloSei(text: string): string | null {
+  const m = /\bSEI\s+(\d{5}\.\d{6}\/(?:19|20)\d{2}-\d{2})\s*\/\s*pg\./i.exec(text);
+  return m?.[1] ?? null;
+}
+
 function removeSeiHeadersFooters(text: string): string {
   return text
     // Linha de timestamp + número SEI: "23/01/2026, 09:14 SEI/GESP - 0095528423 - DOE: ..."
@@ -248,6 +264,12 @@ export interface PdfExtractionResult {
    * defeito visível em vez de silencioso.
    */
   ligatureWarning?: string;
+  /**
+   * Protocolo SEI do PRÓPRIO documento, capturado do rodapé ANTES da limpeza (etapa65). `null`
+   * quando a agência não usa esse rodapé (ARTESP). O ano dele bate com o ano da reunião em 9/9
+   * das fixtures que o têm — é o validador de data mais forte disponível de graça.
+   */
+  protocoloSei?: string | null;
 }
 
 export async function extractPdfText(
@@ -286,6 +308,9 @@ export async function extractPdfText(
 
   // Aplicar pipeline de limpeza
   let text = fixEncoding(rawText);
+  // ⚠️ ORDEM: o protocolo do PRÓPRIO documento é lido ANTES da limpeza — `removeSeiHeadersFooters`
+  // apaga exatamente a linha que o carrega (etapa65).
+  const protocoloSei = extractProtocoloSei(text);
   text = removeSeiHeadersFooters(text);
   text = normalizeWhitespace(text);
   // DEPOIS da normalização de espaços: a de-hifenização já juntou o que o PDF quebrou, então o
@@ -317,7 +342,7 @@ export async function extractPdfText(
       "o roster, a retirada de pauta e o cargo exercido podem não ser lidos; revisar."
     : undefined;
 
-  return { text, pageCount, charsPerPage, ocrApplied, ligatureWarning };
+  return { text, pageCount, charsPerPage, ocrApplied, ligatureWarning, protocoloSei };
 }
 
 // ─── Hash SHA-256 para deduplicação ──────────────────────────────────────
