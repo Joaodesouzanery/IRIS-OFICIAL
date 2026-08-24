@@ -17,7 +17,11 @@ export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
-    return NextResponse.json({ modo: "demo", grupos: [], falhas_extracao: [] });
+    // Etapa65 — o ramo demo tem de ter TODOS os campos do real. Faltava `total_nao_enfileirados`,
+    // e como o cast de `api.get<T>` não verifica nada, o consumidor lia `undefined` e o painel
+    // sumia em silêncio. Os ramos demo são alcançáveis em produção: `attachRuntimeHeaders` injeta
+    // `x-iris-demo: 1` a partir do localStorage.
+    return NextResponse.json({ modo: "demo", total_nao_enfileirados: 0, grupos: [], falhas_extracao: [] });
   }
   const guard = await requireAdminOrCron(req);
   if (guard) return guard;

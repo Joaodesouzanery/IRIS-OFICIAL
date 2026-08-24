@@ -35,7 +35,11 @@ function bucketFor(reason: string): { key: string; label: string } {
 
 export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
-    return NextResponse.json({ total_pendentes: 0, motivos: [], amostras: [], demo: true });
+    // Etapa65 — paridade de forma com o ramo real (ver nao-enfileirados).
+    return NextResponse.json({
+      total_pendentes: 0, confirmaveis: 0, motivos: [], amostras: [],
+      total_review_pending: 0, por_tipo: [], demo: true,
+    });
   }
   const guard = await requireAdmin(req);
   if (guard) return guard;

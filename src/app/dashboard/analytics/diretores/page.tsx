@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { DiretorOverviewItem, Deliberacao, DeliberacaoPaginada, Agencia, VotoMatrixRow } from "@/types";
 import { IrisBarChart } from "@/components/charts/IrisBarChart";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
@@ -32,7 +32,7 @@ export default function AnalyticsDiretoresPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: diretores, isLoading: loadDir } = useQuery({

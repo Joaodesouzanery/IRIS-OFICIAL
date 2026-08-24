@@ -86,7 +86,17 @@ interface AgenciaCompletude {
 
 export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
-    return NextResponse.json({ modo: "demo", ano: 2026, por_agencia: [], totais: {}, alertas: [] });
+    // Etapa65 — `totais: {}` fazia `completude.totais.documentos_2026_detectados` devolver
+    // `undefined` no consumidor (votos-diretores/page.tsx), que o lê ENCADEADO e sem guard.
+    return NextResponse.json({
+      modo: "demo", ano: 2026, por_agencia: [], alertas: [],
+      totais: {
+        documentos_2026_detectados: 0, deliberacoes_finais: 0, deliberacoes_sem_voto: 0,
+        deliberacoes_sem_empresa_id: 0, votos_total: 0, votos_nominais: 0, votos_inferidos: 0,
+        votos_orfaos: 0, diretores_aprovados: 0, diretores_com_voto: 0, diretores_sem_mandato: 0,
+        candidatos_pendentes: 0, deliberacoes_faltantes_sequencia: 0,
+      },
+    });
   }
   const guard = await requireAdminOrCron(req);
   if (guard) return guard;

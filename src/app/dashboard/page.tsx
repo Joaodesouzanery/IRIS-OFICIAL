@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { DashboardOverview, MicrotemaStats, DiretorOverviewItem, Agencia, Alerta } from "@/types";
 import { MetricCard } from "@/components/dashboard/MetricCard";
 import { IrisBarChart } from "@/components/charts/IrisBarChart";
@@ -30,7 +30,7 @@ export default function DashboardPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: overview, isLoading: loadingOverview } = useQuery({
@@ -40,22 +40,22 @@ export default function DashboardPage() {
 
   const { data: microtemas } = useQuery({
     queryKey: ["dashboard", "microtemas", agenciaId],
-    queryFn: () => api.get<MicrotemaStats[]>(`/dashboard/microtemas${agenciaParam}`),
+    queryFn: async () => listaDe<MicrotemaStats>(await api.get(`/dashboard/microtemas${agenciaParam}`)),
   });
 
   const { data: diretores } = useQuery({
     queryKey: ["dashboard", "diretores-overview", agenciaId],
-    queryFn: () => api.get<DiretorOverviewItem[]>(`/dashboard/diretores/overview${agenciaParam}`),
+    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${agenciaParam}`)),
   });
 
   const { data: reunioes = [] } = useQuery({
     queryKey: ["dashboard", "reunioes-stats", agenciaId],
-    queryFn: () => api.get<ReunioesStats[]>(`/dashboard/reunioes/stats${agenciaParam}`),
+    queryFn: async () => listaDe<ReunioesStats>(await api.get(`/dashboard/reunioes/stats${agenciaParam}`)),
   });
 
   const { data: alertas = [] } = useQuery({
     queryKey: ["alertas", agenciaId],
-    queryFn: () => api.get<Alerta[]>(`/alertas${agenciaParam}`),
+    queryFn: async () => listaDe<Alerta>(await api.get(`/alertas${agenciaParam}`)),
   });
 
   // ── Chart data ────────────────────────────────────────────────────────

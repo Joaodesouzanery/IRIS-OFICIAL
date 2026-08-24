@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { VotoMatrixRow, MicrotemaStats } from "@/types";
 import { getMicrotemaLabel, cn } from "@/lib/utils";
 import { Lightbulb, TrendingUp, AlertTriangle } from "lucide-react";
@@ -11,12 +11,12 @@ import { ANALISE_TABS } from "@/lib/module-tabs";
 export default function InsightsPage() {
   const { data: matrix } = useQuery({
     queryKey: ["votacao", "matrix"],
-    queryFn: () => api.get<VotoMatrixRow[]>("/votacao/matrix"),
+    queryFn: async () => listaDe<VotoMatrixRow>(await api.get("/votacao/matrix")),
   });
 
   const { data: microtemas } = useQuery({
     queryKey: ["dashboard", "microtemas"],
-    queryFn: () => api.get<MicrotemaStats[]>("/dashboard/microtemas"),
+    queryFn: async () => listaDe<MicrotemaStats>(await api.get("/dashboard/microtemas")),
   });
 
   const totalVotos = (matrix ?? []).reduce((s, r) => s + r.total, 0);

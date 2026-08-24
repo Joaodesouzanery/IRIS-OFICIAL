@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import { cn } from "@/lib/utils";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import type { AnttCollectResponse, AnttPreviewResponse, DocumentoColetado, DocumentoColetadoStatus } from "@/types";
@@ -46,7 +46,7 @@ export default function DocumentosAntt2026Page() {
 
   const { data: documentos, isLoading } = useQuery({
     queryKey: ["antt-2026-documentos", status],
-    queryFn: () => api.get<DocumentoColetado[]>(`/antt/2026/documentos${status ? `?status=${status}` : ""}`),
+    queryFn: async () => listaDe<DocumentoColetado>(await api.get(`/antt/2026/documentos${status ? `?status=${status}` : ""}`)),
   });
 
   const collectMutation = useMutation({

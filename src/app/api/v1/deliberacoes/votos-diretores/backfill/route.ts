@@ -29,6 +29,14 @@ export async function POST(req: NextRequest) {
       demo: true,
       ano: TARGET_YEAR,
       parcial: false,
+      // Etapa65 — sem estes campos o loop de progresso do front lê `undefined`, entende "nada a
+      // fazer" e sai na PRIMEIRA rodada, dando a impressão de backfill concluído.
+      fontes_processadas: 0,
+      fontes_puladas: 0,
+      novos_itens: 0,
+      documentos_enfileirados: 0,
+      reunioes_puladas_conhecidas: 0,
+      duracao_ms: 0,
       resultados: [],
       message: "Modo DEMO: backfill validado sem persistir.",
     });

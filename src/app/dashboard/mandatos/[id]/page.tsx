@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import { cn, formatDate, getMicrotemaLabel, getMicrotemaColor, isResultadoPositivo } from "@/lib/utils";
 import type { DiretorProfile, DiretorOverviewItem } from "@/types";
 import { GaugeChart } from "@/components/charts/GaugeChart";
@@ -34,7 +34,7 @@ export default function DiretorProfilePage() {
   // Fetch all directors of same agency for comparison
   const { data: todosDiretores } = useQuery({
     queryKey: ["dashboard", "diretores-overview", profile?.agencia_id ?? ""],
-    queryFn: () => api.get<DiretorOverviewItem[]>(`/dashboard/diretores/overview${profile?.agencia_id ? `?agencia_id=${profile.agencia_id}` : ""}`),
+    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${profile?.agencia_id ? `?agencia_id=${profile.agencia_id}` : ""}`)),
     enabled: !!profile?.agencia_id,
   });
 

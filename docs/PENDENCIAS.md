@@ -461,6 +461,41 @@ fica **inerte e silencioso** nas 16 fixtures e exigiria teste próprio com banco
 o C16 entrou incapaz de disparar). Pré-requisito: derivar uma chave de série confiável para a ANTT.
 O `numeroReuniaoOrdinal` já está pronto para quando isso for feito.
 
+## Fase 4 · bloco 4 — o cast não checado (24/08/2026)
+
+`api.get<T>` termina em `res.json() as Promise<T>`: o `T` do call-site é **asserção, não
+verificação**. Se a rota muda de forma, o `tsc` fica VERDE e a tela quebra em runtime. Medido: **179
+call-sites de `api.*`, 69 declarando ARRAY; 128 rotas, 6 com amarração de compilação, 1 com teste de
+contrato, 0 error boundaries**. E `?? []` **não protege** — testa `undefined`, não forma; um objeto
+é truthy, passa pelo `??` e chega vivo no primeiro `.reduce`.
+
+Quatro camadas, da mais barata para a mais específica:
+
+1. **`src/app/dashboard/error.tsx`** — não conserta nenhum bug, **limita o custo de todos**. Sem ele
+   o `TypeError` sobe até a raiz e a rota vira tela branca (foi o que aconteceu com a Saúde dos
+   Dados). Agora vira tela recuperável com o erro visível e botão de retry.
+2. **`etapa65-contratos-rota.test.ts`** — teste de contrato de VERDADE: importa os **handlers reais**
+   e assere forma (array × envelope) + conjunto de chaves de topo, num snapshot EXPLÍCITO. Cobre 14
+   rotas (antes: 1). Barato porque o ramo demo roda antes do guard de auth e não toca o banco.
+   ⚠️ O teste da etapa64 **não** era contrato — testava uma réplica local do consumidor, então
+   continuaria verde se a rota trocasse envelope por array cru. Foi substituído.
+3. **`listaDe<T>()` em `src/lib/api.ts`** — guard de FORMA, aplicado em **27 call-sites** de
+   agregação imediata (`.reduce`/`.map` direto) em 10 telas.
+4. **Quatro divergências demo×real fechadas** — cada uma sumia um painel em silêncio:
+   `nao-enfileirados` (faltava `total_nao_enfileirados`), `pendencias-voto` (`confirmaveis`),
+   `votos-diretores/backfill` (`novos_itens` e cia — o loop de progresso saía na 1ª rodada) e
+   `completude-2026` (`totais: {}`, com o consumidor lendo `totais.documentos_2026_detectados`
+   encadeado e sem guard). **Os ramos demo são alcançáveis em produção**: `attachRuntimeHeaders`
+   injeta `x-iris-demo: 1` a partir do `localStorage`.
+
+Bug ativo corrigido de brinde: `api.upload` **reimplementava** a extração de erro em vez de chamar
+`extractErrorMessage`, perdendo justamente o caso `{ error: <objeto> }` (erro cru do Supabase) que
+vira `"[object Object]"` na tela — e é nos uploads que ele é mais provável.
+
+**Ainda descoberto (dívida honesta):** 114 das 128 rotas seguem sem teste de contrato, e 42 dos 69
+call-sites de array seguem sem `listaDe`. O error boundary cobre o dano de todos; a cobertura
+seletiva foi para onde o consumidor agrega direto, que é onde errar derruba a tela.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

@@ -94,12 +94,35 @@ export const api = {
     });
     if (!res.ok) {
       const body = await res.json().catch(() => ({}));
-      const msg = body.error ?? body.detail ?? body.message ?? res.statusText;
-      throw new ApiError(res.status, msg);
+      // Usa o helper compartilhado (etapa65). Esta cópia reimplementava a extração e perdia
+      // justamente o caso que o helper existe para tratar — `{ error: <objeto> }`, o erro cru do
+      // Supabase, que virava "[object Object]" na tela. E é aqui que ele é mais provável: upload
+      // de PDF e de imagem de notícia falham com erro de storage, não com string.
+      throw new ApiError(res.status, extractErrorMessage(body, res.status, res.statusText));
     }
     return res.json() as Promise<T>;
   },
 };
+
+/**
+ * Guard de FORMA para payload que o consumidor agrega direto (etapa65).
+ *
+ * `request<T>` termina em `res.json() as Promise<T>` — um cast NÃO CHECADO. O `T` do call-site é
+ * asserção, não verificação: se a rota mudar de forma, o `tsc` fica VERDE e a tela quebra em
+ * runtime. Foi o que aconteceu com a Saúde dos Dados, tipada como array contra uma rota que devolve
+ * `{ por_agencia: [...] }` — e `?? []` não protege, porque testa `undefined`, não forma: um objeto
+ * é truthy, passa pelo `??` e chega vivo no primeiro `.reduce`.
+ *
+ * Uso: `listaDe<Linha>(resp)` em todo ponto que faz `.map`/`.reduce`/`.filter` imediato.
+ */
+export function listaDe<T>(payload: unknown, chave?: string): T[] {
+  if (Array.isArray(payload)) return payload as T[];
+  if (chave && payload && typeof payload === "object") {
+    const v = (payload as Record<string, unknown>)[chave];
+    if (Array.isArray(v)) return v as T[];
+  }
+  return [];
+}
 
 export { ApiError };
 

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import { cn, formatDateLong, formatNumber } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
@@ -169,12 +169,12 @@ export default function VotosDiretoresPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: diretores } = useQuery({
     queryKey: ["dashboard", "diretores-overview", "votos", agenciaId],
-    queryFn: () => api.get<DiretorOverviewItem[]>(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: drilldownVotos, isLoading: drilldownLoading } = useQuery({
@@ -238,7 +238,7 @@ export default function VotosDiretoresPage() {
 
   const { data: candidatos } = useQuery({
     queryKey: ["diretores-candidatos", "pendentes", agenciaId],
-    queryFn: () => api.get<DiretorCandidato[]>(`/diretores/candidatos?status=pendente${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<DiretorCandidato>(await api.get(`/diretores/candidatos?status=pendente${agenciaId ? `&agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: duplicatas } = useQuery({

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { DashboardOverview, MandatosAnalytics, Agencia, Deliberacao, DeliberacaoPaginada } from "@/types";
 import { IrisAreaChart } from "@/components/charts/IrisAreaChart";
 import { ChartWrapper } from "@/components/charts/ChartWrapper";
@@ -70,7 +70,7 @@ export default function GovernancaPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: overview } = useQuery({

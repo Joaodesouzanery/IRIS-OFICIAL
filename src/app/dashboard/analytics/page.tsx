@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { MicrotemaStats, DiretorOverviewItem, Agencia } from "@/types";
 import { IrisBarChart } from "@/components/charts/IrisBarChart";
 import { GaugeChart } from "@/components/charts/GaugeChart";
@@ -25,17 +25,17 @@ export default function AnalyticsPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: microtemas } = useQuery({
     queryKey: ["dashboard", "microtemas", agenciaId, year],
-    queryFn: () => api.get<MicrotemaStats[]>(`/dashboard/microtemas${qs}`),
+    queryFn: async () => listaDe<MicrotemaStats>(await api.get(`/dashboard/microtemas${qs}`)),
   });
 
   const { data: diretores } = useQuery({
     queryKey: ["dashboard", "diretores-overview", agenciaId],
-    queryFn: () => api.get<DiretorOverviewItem[]>(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const maisIndeferido = (microtemas ?? []).reduce(

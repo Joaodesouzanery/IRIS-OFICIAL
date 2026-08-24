@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type {
   MicrotemaStats, DiretorOverviewItem, Agencia, Mandato,
   EmpresaStats,
@@ -74,7 +74,7 @@ export default function Dashboard360Page() {
   // ── Data queries ───────────────────────────────────────────────────────
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: overview } = useQuery({
@@ -84,27 +84,27 @@ export default function Dashboard360Page() {
 
   const { data: microtemas = [] } = useQuery({
     queryKey: ["dashboard", "microtemas", agenciaId, year],
-    queryFn: () => api.get<MicrotemaStats[]>(`/dashboard/microtemas${qs}`),
+    queryFn: async () => listaDe<MicrotemaStats>(await api.get(`/dashboard/microtemas${qs}`)),
   });
 
   const { data: reunioes = [] } = useQuery({
     queryKey: ["dashboard", "reunioes-stats", agenciaId],
-    queryFn: () => api.get<ReunioesStats[]>(`/dashboard/reunioes/stats${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<ReunioesStats>(await api.get(`/dashboard/reunioes/stats${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: empresas = [] } = useQuery({
     queryKey: ["empresas", agenciaId],
-    queryFn: () => api.get<EmpresaStats[]>(`/empresas${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<EmpresaStats>(await api.get(`/empresas${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: diretores = [] } = useQuery({
     queryKey: ["dashboard", "diretores-overview", agenciaId],
-    queryFn: () => api.get<DiretorOverviewItem[]>(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: mandatos = [] } = useQuery({
     queryKey: ["mandatos", agenciaId],
-    queryFn: () => api.get<Mandato[]>(`/mandatos${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<Mandato>(await api.get(`/mandatos${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: deliberacoesPage } = useQuery({

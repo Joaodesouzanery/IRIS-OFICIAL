@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import { formatNumber, getMicrotemaLabel } from "@/lib/utils";
 import type { VotoMatrixRow, VotoDistribution, Agencia } from "@/types";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
@@ -48,22 +48,22 @@ export default function VotacaoPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: matrix } = useQuery({
     queryKey: ["votacao", "matrix", qsStr],
-    queryFn: () => api.get<VotoMatrixRow[]>(`/votacao/matrix${qsStr}`),
+    queryFn: async () => listaDe<VotoMatrixRow>(await api.get(`/votacao/matrix${qsStr}`)),
   });
 
   const { data: distribution } = useQuery({
     queryKey: ["votacao", "distribution", qsStr],
-    queryFn: () => api.get<VotoDistribution[]>(`/votacao/distribution${qsStr}`),
+    queryFn: async () => listaDe<VotoDistribution>(await api.get(`/votacao/distribution${qsStr}`)),
   });
 
   const { data: timeline } = useQuery({
     queryKey: ["votacao", "consenso-timeline", qsStr],
-    queryFn: () => api.get<ConsensoPoint[]>(`/votacao/consenso-timeline${qsStr}`),
+    queryFn: async () => listaDe<ConsensoPoint>(await api.get(`/votacao/consenso-timeline${qsStr}`)),
   });
 
   const pieData = (distribution ?? []).map((d) => ({
