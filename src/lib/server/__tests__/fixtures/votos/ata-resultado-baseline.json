@@ -1,0 +1,541 @@
+{
+ "_comment": "Caracterizacao MEDIDA do ata-splitter sobre as duas atas ANM (etapa52). Array ORDENADO — preserva a duplicata intra-ata 4.1.6 da 82a, alvo da etapa53. Mudar um valor aqui exige justificar item a item contra o PDF, nunca aceitar em bloco.",
+ "anm-ata-82-ordinaria.pdf": [
+  {
+   "item_numero": "1.1.3",
+   "processo": "48403.831223/2005-28",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.2.1",
+   "processo": "48420.896920/2006-05",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.5.1",
+   "processo": "48405.950788/2017-27",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.6",
+   "processo": "48405.950567/2016-78",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.1",
+   "processo": "48051.005899/2024-63",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.1.1",
+   "processo": "27203.831877/1999-39",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.1.2",
+   "processo": "48403.831095/2006-01",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.1.4",
+   "processo": "48407.873238/2007-95",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.3.1",
+   "processo": "48412.867129/2011-46",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.4.1",
+   "processo": "48400.100524/2001-11",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "1.4.2",
+   "processo": "27212.001971/1951-15",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "1.4.3",
+   "processo": "27212.001972/1951-51",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "1.4.4",
+   "processo": "27212.001973/1951-04",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "1.4.5",
+   "processo": "27212.001974/1951-41",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "1.4.6",
+   "processo": "27212.001975/1951-95",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "1.5.1",
+   "processo": "48403.933537/2015-36",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.5.2",
+   "processo": "48403.933560/2015-21",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.5.3",
+   "processo": "48403.933562/2015-10",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.2.1",
+   "processo": "48054.930707/2019-61",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "2.3.1",
+   "processo": "48066.815567/2021-88",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.3.2",
+   "processo": "27220.896443/2000-61",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.4.1",
+   "processo": "48413.826207/2013-12",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.5.1",
+   "processo": "48425.944086/2018-57",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.1.1",
+   "processo": "48054.930736/2022-29",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.1.2",
+   "processo": "48054.930737/2022-73",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.2.1",
+   "processo": "48071.846149/2022-44",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.3.1",
+   "processo": "48403.833257/2015-29",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.4.1",
+   "processo": "48404.840313/2014-91",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.6.1",
+   "processo": "48421.803475/2013-59",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.1",
+   "processo": "48420.996533/2009-11",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.2",
+   "processo": "48418.978134/2013-95",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.3",
+   "processo": "48414.948634/2010-90",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.4",
+   "processo": "48403.932488/2009-76",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.5",
+   "processo": "48403.934779/2011-13",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.6",
+   "processo": "48405.950567/2016-78",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  }
+ ],
+ "anm-ata-32-extraordinaria.pdf": [
+  {
+   "item_numero": "1.3.1",
+   "processo": "27213.826299/1997-38",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.3.1",
+   "processo": "27207.872093/1996-88",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "3.1.1",
+   "processo": "48051.005900/2024-50",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.1.1",
+   "processo": "48051.005921/2024-75",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "1.2.1",
+   "processo": "48401.810363/2018-05",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.1",
+   "processo": "27203.833610/2004-02",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.2",
+   "processo": "48403.830927/2009-15",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.3",
+   "processo": "48409.890199/2012-38",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.4",
+   "processo": "48409.890139/2012-15",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.5",
+   "processo": "48403.830696/2014-07",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.6",
+   "processo": "48403.832230/2015-19",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.7",
+   "processo": "48409.890461/2011-63",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.8",
+   "processo": "27223.823955/1971-92",
+   "resultado": "Indeferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.9",
+   "processo": "48403.830592/2007-65",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "2.1.10",
+   "processo": "48411.815711/2006-70",
+   "resultado": "Deferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.1.11",
+   "processo": "48411.815252/2006-24",
+   "resultado": "Deferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.2.1",
+   "processo": "48403.830075/2006-13",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.2.2",
+   "processo": "27203.833738/2004-68",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.3.1",
+   "processo": "48078.806055/2023-53",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "2.3.2",
+   "processo": "48061.860801/2022-52",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "3.2.1",
+   "processo": "48403.932685/2009-95",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.1",
+   "processo": "48403.830660/2018-49",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.2",
+   "processo": "48403.830659/2018-14",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.3",
+   "processo": "48403.830658/2018-70",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.4",
+   "processo": "48403.830657/2018-25",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.5",
+   "processo": "48403.830649/2018-89",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.6",
+   "processo": "48403.830190/2018-13",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.7",
+   "processo": "48403.830189/2018-99",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.8",
+   "processo": "48403.830188/2018-44",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.9",
+   "processo": "48403.830187/2018-08",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.10",
+   "processo": "48403.830174/2018-21",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.1.11",
+   "processo": "48403.830172/2018-31",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.2.1",
+   "processo": "48409.890582/2014-58",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "4.3.1",
+   "processo": "48407.871248/2016-87",
+   "resultado": "Deferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.4.1",
+   "processo": "48064.000356/2023-20",
+   "resultado": "Deferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "4.5.1",
+   "processo": "27203.831339/1984-68",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.1.1",
+   "processo": "27209.890204/1998-80",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.1.2",
+   "processo": "27209.890205/1998-24",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.2.1",
+   "processo": "48420.996118/2017-69",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.3.1",
+   "processo": "48406.860296/2014-98",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.4.1",
+   "processo": "48416.858095/2013-21",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.4.2",
+   "processo": "48403.831009/2014-62",
+   "resultado": "Deferido",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.5.1",
+   "processo": "48422.806052/2008-13",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.5.2",
+   "processo": "48418.878053/2006-67",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.5.3",
+   "processo": "48413.826431/2013-04",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.6.1",
+   "processo": "48063.980034/2024-49",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.7.1",
+   "processo": "48403.933830/2011-70",
+   "resultado": "Aprovado por Unanimidade",
+   "tem_decisao": true
+  },
+  {
+   "item_numero": "5.8.1",
+   "processo": "48412.866275/2006-97",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.8.2",
+   "processo": "48420.896226/2007-61",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.9.1",
+   "processo": "48415.846038/2017-32",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.10.1",
+   "processo": "48401.810603/2015-11",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.11.1",
+   "processo": "48059.850528/2021-16",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.12.1",
+   "processo": "27205.851353/1996-00",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  },
+  {
+   "item_numero": "5.13.1",
+   "processo": "48059.851060/2020-04",
+   "resultado": "Retirado de Pauta",
+   "tem_decisao": false
+  }
+ ]
+}

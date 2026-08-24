@@ -257,8 +257,12 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
         .join(" ") || null
     : relatorBruto;
 
-  // Decisão (texto completo)
-  const reDecisao = /Decis[aã]o:\s*([\s\S]+?)(?=\bVoto:|$)/i;
+  // Decisão (texto completo). `DELIBERAÇÃO:` é a âncora REAL das atas ANM — medido: 28 ocorrências
+  // na 82ª e 43 na 32ª, contra ZERO de `Decisão:`. Sem ela, `item.decisao` saía null em 100% dos 89
+  // itens das duas atas e o resultado era inferido do rawText INTEIRO, que carrega relatório,
+  // sustentação oral e prosa histórica do item vizinho. A janela fecha no próximo rótulo forte.
+  const reDecisao =
+    /(?:Decis[aã]o|DELIBERA[ÇC][AÃ]O)\s*:\s*([\s\S]+?)(?=\n\s*(?:VOTO[^:\n]{0,40}:|Voto:|PROCESSO\s*N|ASSUNTO\s*:|INTERESSAD[OA])|$)/i;
   const decisao = reDecisao.exec(rawText)?.[1]?.trim() ?? null;
 
   // Resultado / Voto
@@ -278,8 +282,14 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   // avaliado primeiro e o item de maioria/sobrestado virava "Aprovado" (QA jul/2026). NÃO casa
   // "Voto Vista" (rótulo de ASSUNTO, item que ESTÁ sendo decidido) — só sobrest/retirada/pedido.
   const suspenso = /retirad[oa]\s+de\s+pauta|sobrest|ped(?:iu|ido)\s+(?:de\s+)?vistas?/i.test(rawText);
+  // Voto VENCEDOR (ANM): tem precedência sobre o `Voto:` genérico e sobre o rawText, porque é o
+  // único texto que corresponde ao que o colegiado efetivamente decidiu.
+  const votoPrevalecente = pickVotoPrevalecente(rawText, decisao);
+
   if (suspenso) {
     resultado = "Retirado de Pauta";
+  } else if (votoPrevalecente) {
+    resultado = inferResultadoFromText(votoPrevalecente, unanimidade);
   } else if (votoText) {
     // Delega à fonte única (precedência: retirado → indeferido/negar provimento →
     // deferido → aprovado). Antes "aprovado" era testado ANTES de "indeferido",
@@ -354,6 +364,51 @@ function normalizeNumericAtaHierarchy(items: AtaItem[]): AtaItem[] {
   }
 
   return normalized;
+}
+
+// Bloco de voto por PAPEL. A ata ANM traz o voto do relator e, havendo dissenso, os votos dos
+// revisores (primeiro/segundo/terceiro) — e é a linha `DELIBERAÇÃO:` que diz qual PREVALECEU.
+const RE_BLOCO_VOTO_PAPEL =
+  /VOTO\s+D[OA]\s+((?:PRIMEIR|SEGUND|TERCEIR|QUART)[OA])?\s*(RELATOR[A]?|REVISOR[A]?)[^:\n]{0,80}:\s*([\s\S]+?)(?=\n?\s*VOTO\s+D[OA]\s+(?:PRIMEIR|SEGUND|TERCEIR|QUART|RELATOR|REVISOR)|DELIBERA[ÇC][ÃA]O\s*:|$)/gi;
+// "Voto do revisor aprovado por maioria" / "Voto do Terceiro Revisor … aprovado por unanimidade".
+const RE_PREVALECEU_REVISOR = /\bvoto\s+d[oa]\s+((?:primeir|segund|terceir|quart)[oa]\s+)?revisor/i;
+
+/**
+ * Texto do voto que PREVALECEU, escolhido pela linha `DELIBERAÇÃO:`.
+ *
+ * Sem isto o resultado sai do voto do RELATOR mesmo quando ele foi VENCIDO — e o desfecho inverte.
+ * Medido na 32ª REP: 4.4.1 tem "voto do revisor aprovado por maioria, com voto contrário do
+ * Diretor-Geral, relator original"; o relator votou NEGAR PROVIMENTO e o revisor, que venceu, votou
+ * DAR PROVIMENTO. Ler o relator ali grava "Indeferido" num recurso que foi PROVIDO.
+ *
+ * Devolve `null` quando o item não tem blocos de voto por papel (ARTESP/ANTT) — aí o caminho
+ * antigo segue valendo, intacto.
+ */
+export function pickVotoPrevalecente(rawText: string, deliberacao: string | null): string | null {
+  const blocos: { ordinal: string; papel: string; corpo: string }[] = [];
+  RE_BLOCO_VOTO_PAPEL.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = RE_BLOCO_VOTO_PAPEL.exec(rawText)) !== null) {
+    blocos.push({
+      ordinal: (m[1] ?? "").toLowerCase(),
+      papel: m[2].toLowerCase(),
+      corpo: m[3],
+    });
+  }
+  if (blocos.length === 0) return null;
+
+  const relator = blocos.find((b) => b.papel.startsWith("relator")) ?? blocos[0];
+  const mRev = deliberacao ? RE_PREVALECEU_REVISOR.exec(deliberacao) : null;
+  if (!mRev) return relator.corpo;
+
+  const revisores = blocos.filter((b) => b.papel.startsWith("revisor"));
+  if (revisores.length === 0) return relator.corpo;
+
+  // Ordinal explícito na deliberação ("Terceiro Revisor") manda; sem ele, o ÚLTIMO revisor é o
+  // que fechou a votação.
+  const ord = (mRev[1] ?? "").trim().toLowerCase().replace(/[oa]$/, "");
+  const alvo = ord ? revisores.find((b) => b.ordinal.startsWith(ord)) : undefined;
+  return (alvo ?? revisores[revisores.length - 1]).corpo;
 }
 
 function isNumericParentHeader(item: AtaItem): boolean {
