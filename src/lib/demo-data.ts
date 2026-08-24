@@ -5,6 +5,8 @@
  * Remova quando o Supabase estiver ativo em produção.
  */
 
+import { isSancao } from "@/lib/server/regulatory-documents";
+
 // ─── IDs fixos ─────────────────────────────────────────────────────────────
 const A_ARTESP = "demo-agency-artesp";
 const A_ANM    = "demo-agency-anm";
@@ -469,7 +471,11 @@ export const demoData = {
     const consenso = total - comLitigio;
     const taxa_consenso = total > 0 ? `${((consenso / total) * 100).toFixed(1)}%` : "0%";
 
-    const sancao = rows.filter((d) => d.microtema === "multa" || d.resultado === "Indeferido").length;
+    // Predicado da FONTE ÚNICA (etapa65) — antes era a quarta cópia literal da expressão. O
+    // divisor aqui é o pautado, e continua correto porque o corpus demo só tem Deferido/Indeferido:
+    // não há retirado nem admissibilidade, então pautado == decidido. Se alguém adicionar um item
+    // "Retirado de Pauta" ao demo, esta linha precisa do filtro de mérito como as rotas reais.
+    const sancao = rows.filter((d) => isSancao(d)).length;
     const taxa_sancao = total > 0 ? `${((sancao / total) * 100).toFixed(1)}%` : "0%";
 
     const resultadoCount = new Map<string, number>();

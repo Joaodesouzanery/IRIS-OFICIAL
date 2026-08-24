@@ -194,6 +194,22 @@ export function isDecidedOnMerits(row: DecisionStatusRow): boolean {
 }
 
 /**
+ * Item SANCIONATÓRIO — multa aplicada ou pedido indeferido.
+ *
+ * Fonte ÚNICA (etapa65). A expressão vivia copiada em 4 lugares e já tinha divergido em TRÊS
+ * semânticas: `mandatos/analytics` e `governanca-agencias` contavam dentro do filtro de mérito;
+ * o `analytics-engine` contava sobre TODAS as linhas e dividia pelos decididos — o que fazia
+ * `taxa_sancao` passar de 100% (medido: 120%, com item retirado carregando `microtema='multa'`);
+ * e `demo-data` dividia pelo pautado, semântica pré-etapa60.
+ *
+ * ⚠️ O predicado sozinho não basta: ele só faz sentido aplicado ao MESMO universo do divisor.
+ * Quem conta sanção conta sobre `isDecidedOnMerits`, nunca sobre o pautado.
+ */
+export function isSancao(row: { microtema?: string | null; resultado?: string | null }): boolean {
+  return row.microtema === "multa" || row.resultado === "Indeferido";
+}
+
+/**
  * A deliberação tem EVIDÊNCIA de votação (ao menos um voto registrado).
  *
  * Existe por causa de um defeito específico e muito caro: `!votos.some(v => v.is_divergente)` é

@@ -78,7 +78,8 @@ export async function GET(req: NextRequest) {
             votos_nominais: 0,
             votos_inferidos: 0,
             divergencias: 0,
-            pct_consenso: 0,
+            // Reunião ainda sem documento: não há base de consenso — `null`, não 0 (etapa65).
+            pct_consenso: null,
             url_fonte: r.url_fonte ?? null,
             aguardando_documentos: true,
           } as typeof computed[number] & { url_fonte: string | null; aguardando_documentos: boolean });

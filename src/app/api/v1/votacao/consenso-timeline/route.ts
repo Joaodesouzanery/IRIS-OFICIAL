@@ -69,7 +69,8 @@ export async function GET(req: NextRequest) {
       total_com_voto: m.com_voto,
       consensuais: m.com_voto - m.divergentes,
       divergentes: m.divergentes,
-      pct_consenso: m.com_voto > 0 ? Math.round(((m.com_voto - m.divergentes) / m.com_voto) * 1000) / 10 : 0,
+      // Sem base de voto o valor é `null`, não 0 (etapa65) — ver analytics-engine.
+      pct_consenso: m.com_voto > 0 ? Math.round(((m.com_voto - m.divergentes) / m.com_voto) * 1000) / 10 : null,
       // % de itens com ao menos 1 voto NOMINAL: o consenso só é confiável onde há base
       // nominal. Sem isto, "consenso 100%" sobre base quase nula parecia real (QA Etapa 19).
       cobertura_nominal: m.total > 0 ? Math.round((m.com_voto_nominal / m.total) * 1000) / 10 : 0,

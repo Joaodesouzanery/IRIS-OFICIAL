@@ -9,7 +9,7 @@ import { demoData } from "@/lib/demo-data";
 import type { MandatosAnalytics } from "@/types";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMandatosAnalytics } from "@/lib/server/analytics-engine";
-import { isFinalDecisionRecord , decisionStatus, isConsensual, isDecidedOnMerits } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord , decisionStatus, isConsensual, isDecidedOnMerits, isSancao } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
@@ -72,7 +72,7 @@ export async function GET(req: NextRequest) {
     // decididas deixa a taxa passar de 100%.
     if (isDecidedOnMerits(d as any)) {
       decidido++;
-      if (d.microtema === "multa" || d.resultado === "Indeferido") sancao++;
+      if (isSancao(d)) sancao++;
     }
 
     const r = d.resultado ?? "Sem resultado";

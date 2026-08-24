@@ -31,7 +31,7 @@ const MICROTEMAS = [
   "lavra", "pesquisa", "licenciamento", "servidao", "cfem", "disponibilidade", "recursos", "outros",
 ];
 
-type ConsensoPoint = { period: string; total_itens: number; consensuais: number; divergentes: number; pct_consenso: number; cobertura_nominal?: number };
+type ConsensoPoint = { period: string; total_itens: number; total_com_voto?: number; consensuais: number; divergentes: number; pct_consenso: number | null; cobertura_nominal?: number };
 
 export default function VotacaoPage() {
   const [agenciaId, setAgenciaId] = useState("");
@@ -72,6 +72,8 @@ export default function VotacaoPage() {
     color: TIPO_VOTO_COLORS[d.tipo_voto] ?? "#71717a",
   }));
 
+  // `null` atravessa até o gráfico de propósito: o mês sem base de voto vira LACUNA na linha, não
+  // um mergulho a 0% — que é o que fazia "ninguém votou" parecer "colegiado em conflito total".
   const timelineData = (timeline ?? []).map((p) => ({ name: p.period, "Consenso (%)": p.pct_consenso }));
 
   return (

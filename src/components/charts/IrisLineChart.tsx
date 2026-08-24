@@ -7,7 +7,12 @@ import {
 
 interface LineData {
   name: string;
-  [key: string]: string | number;
+  /**
+   * `null` é um valor LEGÍTIMO e significa "sem base para medir" (etapa65). O Recharts o desenha
+   * como LACUNA na linha, que é exatamente a leitura certa — publicar 0 no lugar faria
+   * "ninguém votou" parecer "colegiado em conflito total".
+   */
+  [key: string]: string | number | null;
 }
 
 interface IrisLineChartProps {

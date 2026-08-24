@@ -9,7 +9,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { decisionStatus, isConsensual, isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
+import { decisionStatus, isConsensual, isFinalDecisionRecord, isSancao, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -101,7 +101,7 @@ export async function GET(req: NextRequest) {
     // a taxa pode passar de 100% (item de admissibilidade com resultado positivo).
     if (decisionStatus(d as any) === "decidido") {
       if (isResultadoPositivo(d.resultado)) a.deferido += 1;
-      if (d.microtema === "multa" || d.resultado === "Indeferido") a.sancao += 1;
+      if (isSancao(d)) a.sancao += 1;
     }
     if (d.extraction_confidence != null) { a.confSum += d.extraction_confidence; a.confN += 1; }
     acc.set(d.agencia_id, a);

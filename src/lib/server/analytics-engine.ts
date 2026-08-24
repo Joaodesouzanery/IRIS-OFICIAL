@@ -6,7 +6,7 @@
  */
 
 import type { Deliberacao, VotoEmbutido } from "@/types";
-import { isFinalDecisionRecord , isConsensual, isDecidedOnMerits, decisionStatus } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord , isConsensual, isDecidedOnMerits, decisionStatus, isSancao } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isOrgaoInterno } from "@/lib/server/empresa-resolver";
 import { canonicalizeEmpresa } from "@/lib/server/name-matcher";
@@ -374,9 +374,13 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
   return [...map.entries()]
     .map(([slug, e]) => ({
       slug, ...e,
+      // `null` — e NÃO 0 — quando não há base (etapa65). Publicar 0 torna "nenhum voto lido"
+      // indistinguível de "colegiado em conflito total", invertendo o sentido do número. A decisão
+      // já existia em `governanca-agencias`; aqui ela estava faltando, e a inconsistência fazia a
+      // MESMA reunião aparecer com 0% num painel e "—" no outro.
       pct_consenso: e.itens_com_voto > 0
         ? Math.round(((e.itens_com_voto - e.divergencias) / e.itens_com_voto) * 1000) / 10
-        : 0,
+        : null,
     }))
     .sort((a, b) => (b.data_reuniao ?? "").localeCompare(a.data_reuniao ?? ""));
 }
@@ -440,7 +444,7 @@ export function computeReuniaoDetalhe(
       // Denominador do consenso: itens COM VOTO (etapa60), publicado para o leitor saber a base.
       itens_com_voto: itensComVoto,
       votos_nominais, votos_inferidos,
-      pct_consenso: itensComVoto > 0 ? Math.round(((itensComVoto - divergencias) / itensComVoto) * 1000) / 10 : 0,
+      pct_consenso: itensComVoto > 0 ? Math.round(((itensComVoto - divergencias) / itensComVoto) * 1000) / 10 : null,
     },
     itens,
     diretores: [...dirMap.values()].sort((a, b) => (b.favoravel + b.desfavoravel) - (a.favoravel + a.desfavoravel)),
@@ -473,7 +477,7 @@ export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: strin
       total_com_voto: m.com_voto,
       consensuais: m.com_voto - m.divergentes,
       divergentes: m.divergentes,
-      pct_consenso: m.com_voto > 0 ? Math.round(((m.com_voto - m.divergentes) / m.com_voto) * 1000) / 10 : 0,
+      pct_consenso: m.com_voto > 0 ? Math.round(((m.com_voto - m.divergentes) / m.com_voto) * 1000) / 10 : null,
       // % de itens com ao menos um voto nominal — o consenso só é confiável onde há base nominal.
       cobertura_nominal: m.total > 0 ? Math.round((m.com_voto_nominal / m.total) * 1000) / 10 : 0,
     }));
@@ -606,14 +610,13 @@ export function computeMandatosAnalytics(delibs: Deliberacao[], agenciaId?: stri
   const taxa_litigio = comVoto > 0 ? `${((comLitigio / comVoto) * 100).toFixed(1)}%` : "0%";
   const taxa_consenso = comVoto > 0 ? `${(((comVoto - comLitigio) / comVoto) * 100).toFixed(1)}%` : "0%";
 
-  const sancao = rows.filter((d) =>
-    d.microtema === "multa" || d.resultado === "Indeferido"
-  ).length;
-  // Espelho EXATO da rota /mandatos/analytics (etapa60): sanção sobre os DECIDIDOS. O engine
-  // servia o caminho demo/local com `total` (pautado) enquanto a rota já usava `decidido` — o
-  // mesmo painel mostrava números diferentes conforme o modo, que é o pior tipo de divergência
-  // porque some quando alguém vai conferir.
-  const decididoMandatos = rows.filter((d) => isDecidedOnMerits(d as any)).length;
+  // Espelho da rota /mandatos/analytics (etapa60): sanção sobre os DECIDIDOS. O espelho estava
+  // FEITO SÓ NO DENOMINADOR — o numerador seguia varrendo `rows` inteiro, então item retirado com
+  // `microtema='multa'` entrava em cima e saía de baixo, e a taxa passava de 100% (medido: 120%).
+  // Achado pela invariante global da etapa65, não por leitura de código.
+  const decididos = rows.filter((d) => isDecidedOnMerits(d as any));
+  const sancao = decididos.filter((d) => isSancao(d)).length;
+  const decididoMandatos = decididos.length;
   const taxa_sancao = decididoMandatos > 0 ? `${((sancao / decididoMandatos) * 100).toFixed(1)}%` : "0%";
 
   const resultadoCount = new Map<string, number>();

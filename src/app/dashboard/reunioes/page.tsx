@@ -13,12 +13,12 @@ import { CalendarDays, ChevronDown, ChevronUp, Gavel } from "lucide-react";
 type ReuniaoListItem = {
   slug: string; agencia_id: string | null; agencia_sigla: string | null;
   data_reuniao: string | null; numero_reuniao: string | null; tipo_reuniao: string | null;
-  total_itens: number; total_votos: number; divergencias: number; pct_consenso: number;
+  total_itens: number; total_votos: number; divergencias: number; pct_consenso: number | null;
 };
 
 type ReuniaoDetalhe = {
   cabecalho: { agencia_sigla: string | null; data_reuniao: string | null; numero_reuniao: string | null; tipo_reuniao: string | null };
-  resumo: { total_itens: number; deferidos: number; indeferidos: number; divergencias: number; pct_consenso: number; votos_nominais?: number; votos_inferidos?: number };
+  resumo: { total_itens: number; deferidos: number; indeferidos: number; divergencias: number; pct_consenso: number | null; itens_com_voto?: number; votos_nominais?: number; votos_inferidos?: number };
   itens: Array<{
     deliberacao_id: string; numero_deliberacao: string | null; interessado: string | null;
     microtema: string | null; resultado: string | null;
@@ -109,7 +109,10 @@ function ReuniaoCard({ r, open, onToggle }: { r: ReuniaoListItem; open: boolean;
               {r.numero_reuniao ? `${r.numero_reuniao}ª Reunião` : "Reunião"} · {formatDate(r.data_reuniao)}
             </p>
             <p className="text-xs text-text-muted">
-              {r.total_itens} itens · {r.divergencias} com divergência · {r.pct_consenso}% consenso
+              {r.total_itens} itens · {r.divergencias} com divergência ·{" "}
+              {/* Sem base de voto o consenso é `—`, e a BASE vem junto: esconder o número
+                  transformaria a correção em remoção de funcionalidade (etapa61/65). */}
+              {r.pct_consenso == null ? "— consenso (0 itens com voto)" : `${r.pct_consenso}% consenso`}
             </p>
           </div>
         </div>

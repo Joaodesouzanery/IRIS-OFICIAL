@@ -373,6 +373,51 @@ por alias/`nome_variantes` no cadastro, não por regex. Mesmo caso na 32ª, onde
 arquivos de sonda de agente (`zzz-adv-probe*.test.ts`) para dentro do commit `e6007c4`. Nenhum teste
 permanente foi perdido (verificado: 74 arquivos em `d10cb93`, 77 hoje), mas a regra fica.
 
+## Fase 4 · bloco 2 — invariantes globais (24/08/2026)
+
+`src/lib/server/__tests__/etapa65-invariantes.test.ts` roda sobre um corpus ADVERSARIAL sintético
+(item retirado carregando `microtema='multa'`, admissibilidade com resultado positivo, base vazia,
+array só de ausentes) e sobre TODAS as agregações puras do `analytics-engine`. Não descreve o valor
+certo — descreve o que é impossível. Seis invariantes: taxa em [0,100]; denominador ≥ numerador;
+retirado nunca é mérito; impedido só figura como `Ausente`; inferência por mandato não alcança quem
+não estava ativo; consenso sem base é `null`.
+
+**Achado NOVO pela invariante 1, sem ninguém procurar:** `analytics-engine.taxa_sancao` chegava a
+**120%**. O comentário dizia ser "espelho EXATO da rota /mandatos/analytics", mas o espelho fora
+feito só no DENOMINADOR — o numerador seguia varrendo `rows` inteiro, então item retirado com
+`microtema='multa'` entrava em cima e saía de baixo. **Corrigido**, e a definição de sanção virou
+fonte única (`isSancao` em `regulatory-documents.ts`), eliminando as 4 cópias com 3 semânticas.
+
+**`null` sem base, agora uniforme.** A decisão existia só em `governanca-agencias`; `pct_consenso`
+ainda saía `0` em 4 outros lugares (`consenso-timeline`, `reunioes`, e 3 agregações do engine) — a
+MESMA reunião aparecia com "0% consenso" num painel e "—" no outro. Todos passaram a `null`.
+Princípio da etapa61 mantido: **exibir com a base à vista, nunca esconder o painel** — a lista de
+reuniões mostra `— consenso (0 itens com voto)`, e na linha do tempo o mês sem base vira LACUNA no
+gráfico, não um mergulho a 0%.
+
+### Como medir a frequência de `null` (pendente do usuário — precisa de produção)
+O corte só deve ser revisto com o número na mão. Duas vias, sem credencial de produção da parte do
+código:
+- **Sem SQL:** `GET /api/v1/admin/saude-dados` devolve `deliberacoes_com_voto` /
+  `deliberacoes_sem_voto` por agência; `GET /api/v1/votacao/consenso-timeline` devolve
+  `total_com_voto` por mês. A leitura agência×período já está disponível hoje.
+- **Com SQL** (SQL Editor):
+  ```sql
+  SELECT a.sigla,
+         to_char(d.data_reuniao,'YYYY-MM') AS mes,
+         count(*)                                        AS itens,
+         count(*) FILTER (WHERE v.n > 0)                 AS com_voto,
+         round(100.0 * count(*) FILTER (WHERE v.n = 0) / nullif(count(*),0), 1) AS pct_sem_base
+  FROM deliberacoes d
+  JOIN agencias a ON a.id = d.agencia_id
+  LEFT JOIN LATERAL (SELECT count(*) AS n FROM votos WHERE deliberacao_id = d.id) v ON true
+  WHERE d.data_reuniao IS NOT NULL
+  GROUP BY 1,2 ORDER BY 1,2 DESC;
+  ```
+  Se `pct_sem_base` for maioria na maior parte das agências/meses, a decisão de publicar `null`
+  precisa vir acompanhada de um estado de UI mais explícito que `—` (ex.: faixa "sem base nominal
+  neste período"), **não** de voltar a publicar 0.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
