@@ -4,7 +4,7 @@ import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "
 import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
-import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials } from "@/lib/server/antt-manual-parser";
+import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials, setAnttCargoMandatos, type AnttCargoMandato } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 
@@ -674,8 +674,34 @@ async function refreshAnttDynamicInitials(db: any | null | undefined, agencias: 
   try {
     const lista = await getDiretoresList(db, antt.id);
     setAnttDynamicInitials(buildAnttDirectorInitials(lista));
+    setAnttCargoMandatos(await buildAnttCargoMandatos(db, antt.id));
     anttInitialsCacheAt = agora;
   } catch { /* fica no mapa curado */ }
+}
+
+/**
+ * Mandatos por CARGO (etapa55) — último recurso para resolver "Voto DG", que identifica a FUNÇÃO
+ * e não a pessoa. Aplica os mesmos filtros antirrecontaminação do roster de votos: mandato
+ * FABRICADO (`fonte_dado='automatico'`, derivado de voto) nunca vira base para atribuir mais voto,
+ * e diretor não aprovado não entra. Sem eles, um voto mal-atribuído geraria o mandato que
+ * confirmaria a própria má atribuição.
+ */
+async function buildAnttCargoMandatos(db: any, agenciaId: string): Promise<Record<string, AnttCargoMandato[]>> {
+  const { data, error } = await db
+    .from("mandatos")
+    .select("cargo, data_inicio, data_fim, fonte_dado, diretores!inner(nome, agencia_id, review_status)")
+    .eq("diretores.agencia_id", agenciaId)
+    .eq("diretores.review_status", "aprovado")
+    .neq("fonte_dado", "automatico");
+  if (error || !data) return {};
+  const mapa: Record<string, AnttCargoMandato[]> = {};
+  for (const row of data as any[]) {
+    const cargo = String(row.cargo ?? "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").trim();
+    const nome = row.diretores?.nome;
+    if (!cargo || !nome || !row.data_inicio) continue;
+    (mapa[cargo] ??= []).push({ nome, inicio: row.data_inicio, fim: row.data_fim ?? null });
+  }
+  return mapa;
 }
 
 async function getDiretoresList(db: any | null | undefined, agenciaId: string | null): Promise<DiretorVoteRecord[]> {

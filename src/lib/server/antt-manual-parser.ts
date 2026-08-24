@@ -20,15 +20,55 @@ export interface AnttManualParseResult {
   raw: Record<string, unknown>;
 }
 
+// Códigos de PESSOA: "D" + inicial do 1º nome + inicial de um sobrenome. Identificam alguém.
+// "DG" NÃO está aqui — ver ANTT_SIGLAS_CARGO logo abaixo.
 const ANTT_DIRECTOR_INITIALS: Record<string, string> = {
   DLA: "Lucas Asfor",
   DFQ: "Felipe Queiroz",
   DAA: "Alex Azevedo",
   DAB: "Alessandro Baumgartner",
   DSM: "Severino Medeiros",
-  DG: "Guilherme Sampaio",
   DGS: "Guilherme Sampaio",
 };
+
+// CARGO ≠ PESSOA (etapa55). "DG" é a sigla do cargo Diretor-Geral, não o código de uma pessoa.
+// Enquanto "DG" apontava para um nome FIXO, todo "Voto DG" era gravado no mesmo diretor para
+// sempre — inclusive depois da troca de diretoria, e inclusive quando quem assinava era o
+// Diretor-Geral SUBSTITUTO. O cargo é resolvido por evidência (texto → cargo exercido → mandato
+// vigente na data) e, sem evidência, NÃO vira voto.
+const ANTT_SIGLAS_CARGO: Record<string, string> = {
+  DG: "diretor-geral",
+  DGA: "diretor-geral-adjunto",
+};
+
+// "na condição de Diretor-Geral substituto, NOME" / "o Diretor-Geral, NOME," — o documento
+// dizendo QUEM exercia o cargo. Depende da etapa49: sem o conserto da ligadura, "substituto" vem
+// quebrado ("subs7tuto") e esta regex não casa.
+const RE_ANTT_CARGO_EXERCIDO =
+  /(?:na\s+condi[çc][ãa]o\s+de\s+|pelo\s+|o\s+)?Diretor[-\s]Geral(?:\s+(?:substitut[oa]|interin[oa]|em\s+exerc[íi]cio))?\s*,?\s+([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][A-Za-zÁ-Üá-ü]+(?:\s+(?:d[aeo]s?|[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][A-Za-zÁ-Üá-ü]+)){1,5})/;
+
+/**
+ * Mandatos por CARGO e data, injetados pelo chamador (mesmo padrão de `setAnttDynamicInitials`):
+ * `{ "diretor-geral": [{ nome, inicio, fim }] }`. Último recurso da cascata — só é consultado
+ * quando o próprio documento não diz quem exercia o cargo.
+ */
+export type AnttCargoMandato = { nome: string; inicio: string; fim: string | null };
+let CARGO_MANDATOS: Record<string, AnttCargoMandato[]> = {};
+
+export function setAnttCargoMandatos(map: Record<string, AnttCargoMandato[]>) {
+  CARGO_MANDATOS = map ?? {};
+}
+
+/** Quem exercia `cargo` em `data` (null se não houver exatamente UM mandato vigente). */
+export function resolveCargoPorMandato(cargo: string, data: string | null): string | null {
+  if (!data) return null;
+  const vigentes = (CARGO_MANDATOS[cargo] ?? []).filter(
+    (m) => m.inicio <= data && (!m.fim || m.fim >= data),
+  );
+  // Dois mandatos vigentes para o mesmo cargo na mesma data = dado ambíguo. Escolher um seria
+  // exatamente o erro que esta etapa existe para acabar.
+  return vigentes.length === 1 ? vigentes[0].nome : null;
+}
 
 // Iniciais DINÂMICAS derivadas do CADASTRO (ago/2026): na troca de diretoria, o novo
 // "Voto DXY" passa a resolver sem deploy — deriva-se "D"+iniciais (1º nome + cada sobrenome)
@@ -76,6 +116,19 @@ function anttInitials(): Record<string, string> {
   return { ...DYNAMIC_INITIALS, ...ANTT_DIRECTOR_INITIALS };
 }
 
+/**
+ * O código é um IDENTIFICADOR de voto da ANTT — de pessoa OU de cargo (etapa55).
+ * Usado só para RECONHECER o documento. A ATRIBUIÇÃO do autor é outra coisa: um código de cargo
+ * ("DG") passa pela cascata de evidência e pode terminar sem autor. Sem esta separação, tirar "DG"
+ * da tabela de pessoas faria o voto do Diretor-Geral deixar de ser reconhecido como voto — de
+ * atribuído-ao-errado ele passaria a INVISÍVEL, que é pior.
+ */
+function isAnttCodigoDeVoto(codigo: string): boolean {
+  const c = codigo.toUpperCase();
+  return Object.prototype.hasOwnProperty.call(anttInitials(), c)
+    || Object.prototype.hasOwnProperty.call(ANTT_SIGLAS_CARGO, c);
+}
+
 const ANTT_DIRECTOR_ALIASES: Array<{ canonical: string; aliases: string[] }> = [
   { canonical: "Guilherme Sampaio", aliases: ["Guilherme Sampaio", "Guilherme Theo Rodrigues da Rocha Sampaio", "Diretor-Geral Guilherme"] },
   { canonical: "Lucas Asfor", aliases: ["Lucas Asfor", "Lucas Asfor Rocha Lima"] },
@@ -97,7 +150,7 @@ const RE_ANTT_VOTO_FILENAME = /\bvoto[\s_-]+(?:vista[\s_-]+)?(D[A-Z]{1,2}|DG)[\s
 export function isAnttVotoFilename(filename: string): boolean {
   const m = RE_ANTT_VOTO_FILENAME.exec(filename);
   if (!m) return false;
-  return Object.prototype.hasOwnProperty.call(anttInitials(), m[1].toUpperCase());
+  return isAnttCodigoDeVoto(m[1]);
 }
 
 export function parseAnttManualDocument(text: string, filename: string): AnttManualParseResult {
@@ -122,7 +175,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
   const documentType = classifyAnttDocument(clean, filename);
   const meeting = extractMeeting(clean, filename, documentType);
   const date = extractAnttDate(clean, filename);
-  const directorInfo = extractDirector(clean, filename, documentType);
+  const directorInfo = extractDirector(clean, filename, documentType, date);
   const director = directorInfo.nome;
   const attendance = extractAnttAttendance(clean);
   const processes = extractAnttProcessesV2(clean);
@@ -147,6 +200,7 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
   const warnings = buildWarnings(documentType, meeting, firstProcess, director, processes, {
     votoResultado,
     directorAmbiguo: directorInfo.ambiguo,
+    cargoNaoResolvido: directorInfo.cargoNaoResolvido ?? null,
     directorSoIniciais: directorInfo.soIniciais,
     iniciaisDesconhecidas: directorInfo.iniciaisDesconhecidas ?? null,
     resultadoSoCauda: documentType === "voto_individual" && votoResultado !== null && voteConclusion.fromTail,
@@ -354,21 +408,49 @@ const NUMEROS_ANO_EXTENSO: Record<string, number> = {
 // é registrar o voto no nome errado. Por isso as INICIAIS (2-3 letras, corrompíveis e de
 // tabela fixa) são só uma DICA: quando também há um nome textual (RELATORIA/assinatura)
 // e ele DIVERGE do canônico das iniciais, retornamos ambíguo (sem voto automático).
-function extractDirector(text: string, filename: string, type: AnttManualDocumentType): { nome: string | null; ambiguo: boolean; soIniciais: boolean; iniciaisDesconhecidas?: string | null } {
+function extractDirector(
+  text: string,
+  filename: string,
+  type: AnttManualDocumentType,
+  dataReuniao: string | null = null,
+): { nome: string | null; ambiguo: boolean; soIniciais: boolean; iniciaisDesconhecidas?: string | null; cargoNaoResolvido?: string | null } {
   const signature = firstMatch(text.slice(-3000), /Documento assinado eletronicamente por\s+([^,]+),\s+Diretor/i)
-    ?? firstMatch(text.slice(-2000), /([A-ZÁÉÍÓÚÂÊÔÃÕÇ ]{8,})\s+Diretor(?:a)?\b/i);
+    // SEM a flag `i` (etapa55): com ela o macro de nome em CAIXA ALTA virava case-insensitive e
+    // casava prosa comum — "Apresentado na condição de Diretor-Geral…" saía como se fosse o nome
+    // do signatário. Mesmo defeito que o RE_VOTO_AUSENTE do nlp-extractor já documentava.
+    ?? firstMatch(text.slice(-2000), /([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ ]{8,})\s+(?:Diretor|DIRETOR)(?:a|A)?\b/);
   const signatureName = signature ? titleCase(signature) : null;
 
   if (type === "voto_individual") {
     const source = `${filename} ${text.slice(0, 1500)}`;
-    const initials = firstMatch(source, /VISTA:\s*([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /VOTO\s+VISTA\s+([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /VOTO\s+([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /RELATORIA:\s*(?:Diretoria\s+)?(?:[^\n:]+?\s+-\s*)?([A-Z]{2,3})\b/i)
-      ?? firstMatch(source, /RELATORIA:\s*([A-Z]{2,3})\b/i);
+    // Fronteira `(?![A-Za-zÀ-ÿ])` no lugar de `\b`: em JS o `\b` é ASCII, então "É" conta como
+    // fronteira e "VOTO JOSÉ FERNANDO…" era lido como iniciais "JOS". Sem a flag `i`, também: um
+    // código de diretor é MAIÚSCULO por definição, e o `i` fazia "voto por…" virar candidato.
+    const FIM_SIGLA = "(?![A-Za-zÀ-ÿ])";
+    const initials = firstMatch(source, new RegExp(`VISTA:\\s*([A-Z]{2,3})${FIM_SIGLA}`))
+      ?? firstMatch(source, new RegExp(`VOTO\\s+VISTA\\s+([A-Z]{2,3})${FIM_SIGLA}`))
+      ?? firstMatch(source, new RegExp(`VOTO\\s+([A-Z]{2,3})${FIM_SIGLA}`))
+      ?? firstMatch(source, new RegExp(`RELATORIA:\\s*(?:Diretoria\\s+)?(?:[^\\n:]+?\\s+-\\s*)?([A-Z]{2,3})${FIM_SIGLA}`))
+      ?? firstMatch(source, new RegExp(`RELATORIA:\\s*([A-Z]{2,3})${FIM_SIGLA}`));
     const relatoriaNome = firstMatch(source, /RELATORIA:\s*Diretoria\s+([^\n:]+?)(?:\s+-\s*[A-Z]{2,3}|\s+TERMO:|\s+N[ÚU]MERO:|$)/i)
       ?? firstMatch(source, /RELATORIA:\s*([^\n:]{5,90})(?:\s+TERMO:|\s+N[ÚU]MERO:|$)/i);
     const textualName = relatoriaNome ? titleCase(relatoriaNome) : signatureName;
+
+    // CARGO (etapa55): "DG" identifica a função, não a pessoa. Cascata de evidência — nome no
+    // próprio texto → cargo exercido declarado → mandato vigente na data. Esgotada a cascata, o
+    // documento vai para revisão SEM autor: atribuir o voto a um nome fixo era registrar o voto
+    // do Diretor-Geral SUBSTITUTO no titular, e o do titular novo no antigo.
+    const cargo = initials ? ANTT_SIGLAS_CARGO[initials] ?? null : null;
+    if (cargo) {
+      const exercido = RE_ANTT_CARGO_EXERCIDO.exec(text.slice(0, 4000))?.[1]?.trim() ?? null;
+      const porMandato = resolveCargoPorMandato(cargo, dataReuniao);
+      // O documento DIZENDO quem exercia o cargo é a evidência mais forte e vem primeiro: o nome
+      // "textual" genérico vem de heurística de assinatura/relatoria e é o mais frágil dos três.
+      const nome = (exercido ? titleCase(exercido) : null) ?? porMandato ?? textualName;
+      if (nome) return { nome, ambiguo: false, soIniciais: false };
+      return { nome: null, ambiguo: true, soIniciais: false, cargoNaoResolvido: cargo };
+    }
+
     const fromInitials = initials ? anttInitials()[initials] ?? null : null;
 
     if (fromInitials && textualName) {
@@ -457,7 +539,8 @@ function extractSingleProcess(text: string, filename = "", type: AnttManualDocum
       item_numero: "1",
       processo,
       interessado,
-      relator: relator && anttInitials()[relator] ? anttInitials()[relator] : null,
+      // Cargo não resolve para nome aqui: `extractDirector` é quem aplica a cascata de evidência.
+      relator: relator && !ANTT_SIGLAS_CARGO[relator.toUpperCase()] ? anttInitials()[relator] ?? null : null,
       assunto,
       decisao,
       resultado: inferResultado(`${assunto ?? ""} ${decisao ?? ""}`),
@@ -476,7 +559,7 @@ function extractSingleProcess(text: string, filename = "", type: AnttManualDocum
     item_numero: "1",
     processo,
     interessado,
-    relator: relator && anttInitials()[relator] ? anttInitials()[relator] : null,
+    relator: relator && !ANTT_SIGLAS_CARGO[relator.toUpperCase()] ? anttInitials()[relator] ?? null : null,
     assunto,
     decisao,
     resultado: inferResultado(`${assunto ?? ""} ${decisao ?? ""}`),
@@ -799,13 +882,19 @@ function buildWarnings(
   firstProcess: AtaPreviewItem,
   director: string | null,
   items: AtaPreviewItem[],
-  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean; directorSoIniciais?: boolean; iniciaisDesconhecidas?: string | null; resultadoSoCauda?: boolean },
+  extra?: { votoResultado?: string | null; directorAmbiguo?: boolean; directorSoIniciais?: boolean; iniciaisDesconhecidas?: string | null; resultadoSoCauda?: boolean; cargoNaoResolvido?: string | null },
 ) {
   const warnings: string[] = [];
   if (!meeting.numero && type !== "voto_individual") warnings.push("ANTT: número da reunião não identificado com alta confiança.");
   if (!firstProcess.processo && items.length === 0) warnings.push("ANTT: processo não identificado.");
   if (type === "voto_individual" && !director) warnings.push("ANTT: diretor autor do voto não identificado.");
-  if (type === "voto_individual" && extra?.directorAmbiguo) {
+  if (type === "voto_individual" && extra?.cargoNaoResolvido) {
+    warnings.push(
+      `ANTT: o voto identifica apenas o CARGO ("${extra.cargoNaoResolvido}"), não a pessoa, e o documento não diz quem o exercia. ` +
+      "Sem mandato vigente na data, o autor fica em aberto — atribuir manualmente. " +
+      "(Antes, todo voto do cargo era gravado num nome fixo, inclusive quando quem assinava era o substituto.)",
+    );
+  } else if (type === "voto_individual" && extra?.directorAmbiguo) {
     warnings.push("ANTT: iniciais e nome do relator DIVERGEM — autor do voto ambíguo; revisar antes de atribuir.");
   }
   if (type === "voto_individual" && extra?.directorSoIniciais) {
