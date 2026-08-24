@@ -191,7 +191,7 @@ const RE_ITEM_ROMANO = /^([IVXLC]+)\s*[-–.]\s*(?:Processo|Interessad[oa]|Assun
 // Formato numerado: "1.1.1.", "1.2.3.", "2.4.1."
 const RE_ITEM_NUMERADO = /^(\d+\.\d+(?:\.\d+)?)\s*[.)]?\s*/;
 // Processo isolado com número romano prefixo: "I- Processo: 27214-848248/2014"
-const RE_PROCESSO_LINE = /Processo(?:\s*n[ºo°]?)?\s*:?\s*([\d][\d\.\-\/]+)/i;
+const RE_PROCESSO_LINE = /Processos?(?:\s*n[ºo°]?)?\s*:?\s*([\d][\d\.\-\/]+)/i;
 // Fronteira de SEÇÃO da ata (etapa53). O item só fechava quando o PRÓXIMO item abria, então o
 // último item de cada seção absorvia a prosa de transição — medido: 12 itens nas duas atas ANM,
 // de 2 a 4 linhas cada. O pior caso não é o ruído: os cabeçalhos "N. DIRETOR NOME" são o RELATOR
@@ -307,7 +307,8 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   const assunto = cleanAtaField(reAssunto.exec(rawText)?.[1]) ?? null;
 
   // Interessado(a)
-  const reInteressado = /Interessad[oa]\(?a?\)?\s*:\s*([\s\S]+?)(?=\n\s*(?:Relat(?:or|ora)|VOTO|Decis[aã]o|Processo)\b|$)/i;
+  // Plural coberto (etapa62): "INTERESSADOS:" existe nas atas da ANM e saía NULL.
+  const reInteressado = /Interessad[oa]s?\(?a?\)?\s*:\s*([\s\S]+?)(?=\n\s*(?:Relat(?:or|ora)|VOTO|Decis[aã]o|Processos?)\b|$)/i;
   const interessado = cleanAtaField(reInteressado.exec(rawText)?.[1]) ?? null;
 
   // Relator(a) — vai até a próxima seção, sem truncar no "." de abreviações ("Dr.", "A.").

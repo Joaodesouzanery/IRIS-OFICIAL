@@ -421,6 +421,28 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         continue; // fica review_pending; a próxima rodada confirma
       }
 
+      // ETAPA63 — GATE BLOQUEANTE. Segmentação quebrada e voto que contradiz o próprio dispositivo
+      // produzem dado que PARECE bom e está errado: entram na base, alimentam métrica e ninguém
+      // desconfia. Por isso a recusa é ativa, não um aviso a mais.
+      //
+      // O `override_motivo` é parte do desenho: quem está olhando o documento sabe coisas que o
+      // parser não sabe. O que não pode é essa decisão ser INVISÍVEL — o motivo vai para o
+      // registro, junto com os códigos que foram ignorados.
+      const bloqueios = Array.isArray(rawConfirm.achados_bloqueantes) ? rawConfirm.achados_bloqueantes : [];
+      const override = typeof rawConfirm.override_motivo === "string" ? rawConfirm.override_motivo.trim() : "";
+      if (rawConfirm.bloqueado && bloqueios.length > 0 && override.length < 10) {
+        results.push({
+          filename: d.filename,
+          status: "error",
+          error: `Documento BLOQUEADO pela validação (${bloqueios.join(", ")}). `
+            + "Corrija a extração ou confirme com um motivo explícito de ao menos 10 caracteres.",
+        });
+        continue;
+      }
+      if (rawConfirm.bloqueado && override) {
+        console.warn(`[upload/confirm] override de bloqueio em ${d.filename}: ${bloqueios.join(",")} — motivo: ${override.slice(0, 300)}`);
+      }
+
       try {
         if (!agenciasSet.has(effectiveAgenciaId)) {
           results.push({ filename: d.filename, status: "error", error: "Agência não encontrada" });

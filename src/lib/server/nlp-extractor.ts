@@ -29,10 +29,14 @@ const RE_DELIBERACAO = /DELIBERA[ÇC][AÃ]O\s*N[ºo°]?\s*([\d\.]+)/gi;
 const RE_REUNIAO     = /(\d{3,4})[ªa°º]?\s*(?:Reuni[aã]o\s*)?(?:Ordin[aá]ria|Extraordin[aá]ria)/gi;
 
 // Processo: SEI, PA, Processo Adm., Proc. nº, Autos nº, Procedimento nº
-const RE_PROCESSO = /(?:SEI[!]?\s*n[ºo°]?|Processo\s*(?:SEI\s*)?n[ºo°]?|PA\s*n[ºo°]?|Proc(?:esso)?\s*(?:Adm(?:inistrativo)?\s*)?n[ºo°]?|Procedimento\s*n[ºo°]?|Autos?\s*n[ºo°]?)\s*([\d\.\/\-]+)/gi;
+// `Processos?` no PLURAL: a ANM escreve "PROCESSOS Nº: X; Y; Z" quando um item deliberado agrupa
+// vários processos — medido na 79ª ROP, item 1.3.1, com 44 números num bloco só. Sem o plural o
+// campo saía NULL, e `processo` null quebra o dedupe de item no confirm.
+const RE_PROCESSO = /(?:SEI[!]?\s*n[ºo°]?|Processos?\s*(?:SEI\s*)?n[ºo°]?|PA\s*n[ºo°]?|Proc(?:esso)?\s*(?:Adm(?:inistrativo)?\s*)?n[ºo°]?|Procedimento\s*n[ºo°]?|Autos?\s*n[ºo°]?)\s*([\d\.\/\-]+)/gi;
 
 // Interessado: 13 rótulos cobrindo terminologia de todas as agências reguladoras
-const RE_INTERESSADO = /(?:Interessad[ao][:\s]+|Requerente[:\s]+|Empresa[:\s]+|Solicitante[:\s]+|Demandante[:\s]+|Concession[aá]ri[ao][:\s]+|Permission[aá]ri[ao][:\s]+|Peticion[aá]rio[:\s]+|Proponente[:\s]+|Benefici[aá]ri[ao][:\s]+|Outorgad[ao][:\s]+|Postulante[:\s]+|Requerida[:\s]+)([^\n]{3,200})/gi;
+// `Interessados:` no plural, mesma razão.
+const RE_INTERESSADO = /(?:Interessad[ao]s?[:\s]+|Requerente[:\s]+|Empresa[:\s]+|Solicitante[:\s]+|Demandante[:\s]+|Concession[aá]ri[ao][:\s]+|Permission[aá]ri[ao][:\s]+|Peticion[aá]rio[:\s]+|Proponente[:\s]+|Benefici[aá]ri[ao][:\s]+|Outorgad[ao][:\s]+|Postulante[:\s]+|Requerida[:\s]+)([^\n]{3,200})/gi;
 
 const RE_ASSUNTO     = /Assunto[:\s]+([^\n]{3,300})/gi;
 const RE_PROCEDENCIA = /Proced[eê]ncia[:\s]+([^\n]{3,150})/gi;
@@ -308,6 +312,32 @@ export function detectDivergenciaNaoAtribuida(text: string, contraCount: number)
 // unanimidade). O item vai para revisão em vez de inventar voto. Usado no ramo default-favor.
 // (não inclui "vencid[oa]" isolado p/ evitar "prazo vencido"; só as formas ligadas a voto).
 const RE_CONTESTADO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
+
+// ─── Voto de QUALIDADE (etapa62) ──────────────────────────────────────────
+// "aprovado por maioria dos diretores presentes com cômputo do voto de qualidade proferido pelo
+// Diretor-Geral" (79ª ROP, item 1.4.1, empate desempatado pelo DG).
+//
+// Este é o ÚNICO voto que a ata declara com CERTEZA — e era o único que o sistema apagava: o item
+// casa RE_CONTESTADO ("voto de qualidade"), o pool era esvaziado inteiro e o item ia para revisão
+// com ZERO voto. Esvaziar os demais está certo (não dá para saber quem votou o quê num empate);
+// apagar justamente o voto NOMEADO é que não.
+const RE_VOTO_QUALIDADE_NOME = new RegExp(
+  `voto\\s+de\\s+qualidade[^.]{0,60}?pel[oa]\\s+(?:[Dd]iretor[a]?(?:[-\\s]Geral)?\\s+|[Pp]residente\\s+)(${NOME})`,
+  "i",
+);
+const RE_VOTO_QUALIDADE_CARGO =
+  /voto\s+de\s+qualidade[^.]{0,60}?pel[oa]\s+(Diretor[-\s]Geral|Presidente)(?![A-Za-zÀ-ÿ])/i;
+
+/** Quem proferiu o voto de qualidade (nome inline ou cargo resolvido pelo preâmbulo). */
+export function extractVotoQualidade(text: string, roleMap: Record<string, string> = {}): string | null {
+  const flat = flattenForMatch(text);
+  const inline = RE_VOTO_QUALIDADE_NOME.exec(flat)?.[1]?.replace(/\s+/g, " ").trim();
+  if (inline && isStrictPersonName(inline)) return inline;
+  const cargo = RE_VOTO_QUALIDADE_CARGO.exec(flat)?.[1];
+  if (!cargo) return null;
+  const key = normalizeRoleKey(cargo);
+  return roleMap[key] ?? (key.startsWith("diretor-geral") ? roleMap["diretor-geral"] ?? null : null);
+}
 
 // ─── Datas ─────────────────────────────────────────────────────────────────
 // Ausência: "ausente o Diretor X", "ausência do Diretor X", "X (esteve) ausente". Usa NOME (acentos OK).
@@ -828,6 +858,8 @@ export interface ExtractedFields {
   resultado: string | null;
   /** "admissibilidade" quando o dispositivo NÃO CONHECE; null = mérito (etapa54). */
   juizo: "admissibilidade" | null;
+  /** Diretor que proferiu o voto de QUALIDADE (desempate). null quando não houve (etapa62). */
+  voto_qualidade_por: string | null;
   decisoes_todas: string[];         // todos os verbos decisórios únicos normalizados
   pauta_interna: boolean;
   resumo_pleito: string | null;
@@ -1216,9 +1248,17 @@ export function extractFields(text: string): ExtractedFields {
   // resolvido: esvazia o pool para o item ir à REVISÃO em vez de gravar todos como favoráveis (que
   // seria falso). SÓ o ramo default-favor (não o de unanimidade DECLARADA, que preserva votos
   // explícitos e cujo esvaziamento seria desfeito pela inferência de mandato). QA jul/2026 (F2).
+  const voto_qualidade_por = extractVotoQualidade(text, roleMapDoc);
   if (favorPorDefault && nomes_votacao_contra.length === 0 && RE_CONTESTADO.test(text)) {
     nomes_votacao.length = 0;
     nomes_votacao_favor.length = 0;
+    // …MAS o voto de QUALIDADE sobrevive (etapa62). Ele é nomeado pela própria ata e alinhado ao
+    // resultado que prevaleceu — é o voto de que temos MAIS certeza no item inteiro. Apagá-lo
+    // junto era jogar fora a única evidência nominal de um item de empate.
+    if (voto_qualidade_por) {
+      nomes_votacao.push(voto_qualidade_por);
+      nomes_votacao_favor.push(voto_qualidade_por);
+    }
   }
 
   // Remove palavra-função ("Diretor", "Presidente"…) que vaza como nome em alguns
@@ -1241,6 +1281,7 @@ export function extractFields(text: string): ExtractedFields {
     relator,
     resultado,
     juizo,
+    voto_qualidade_por,
     decisoes_todas,
     pauta_interna,
     resumo_pleito,
@@ -1357,6 +1398,8 @@ export interface ItemVotes {
   impedido: string[];
   /** Avisos ao revisor — divergência declarada sem dissidente imputável (etapa51). */
   avisos: string[];
+  /** Diretor que proferiu o voto de qualidade neste item (etapa62). */
+  voto_qualidade_por: string | null;
 }
 
 const RE_VOTARAM_FAVOR = new RegExp(
@@ -1463,6 +1506,13 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   // Impedimento tem PRECEDÊNCIA sobre todos os baldes: quem não votou não pode figurar como
   // favorável, contrário, abstenção nem ausente. É essa remoção que impede a fabricação — o
   // diretor sai do pool inteiro e a inferência por mandato não o alcança.
+  // Voto de QUALIDADE (etapa62): quem desempata vota, e vota com o lado que prevaleceu. É o voto
+  // mais bem documentado de um item de empate — e o único que a ata NOMEIA.
+  const qualidadePor = extractVotoQualidade(text, roleMap);
+  if (qualidadePor && !favor.includes(qualidadePor) && !contra.includes(qualidadePor)) {
+    favor.push(qualidadePor);
+  }
+
   const impedido = extractImpedidos(text);
   const removeImpedido = (arr: string[]) => {
     for (const nome of impedido) {
@@ -1482,6 +1532,7 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
     ausente: semRole(ausente),
     impedido: semRole(impedido),
     avisos: aviso ? [aviso] : [],
+    voto_qualidade_por: qualidadePor,
   };
 }
 

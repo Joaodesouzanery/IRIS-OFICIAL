@@ -1,11 +1,16 @@
 import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
-import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
+import {
+  avisoUnanimidadeContestada, avisoAtaItensFaltando,
+  checarAncorasItens, checarCoerenciaUnanimidade, checarImpedidoComVoto,
+  checarAdmissibilidadeMalClassificada, checarLigaduraResidual,
+  formatarAchados, temBloqueio, type Achado,
+} from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap, extractRetirada, extractVotosEmAutos } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials, setAnttCargoMandatos, type AnttCargoMandato } from "@/lib/server/antt-manual-parser";
-import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
+import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD, probeLigatureDefects } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 
 // Avisos INFORMATIVOS (não são problema de qualidade): não devem manter o preview
@@ -228,6 +233,8 @@ export async function analyzeUploadPdf(input: {
 
   let ata_items: PreviewResult["ata_items"] | undefined;
   let ataItemStats: { itens_pre_dedup: number; duplicatas_removidas: number } | null = null;
+  // Achados da suíte de validação (etapa63). Os BLOQUEANTES recusam o confirm.
+  const achados: Achado[] = [];
   const retirada = extractRetirada(extraction.text);
   const votosEmAutos = extractVotosEmAutos(extraction.text);
   // (c) Nome com voto em autos SEM diretor cadastrado → AVISO, nunca voto. Criar o diretor a
@@ -257,6 +264,14 @@ export async function analyzeUploadPdf(input: {
     // F (ago/2026): item de ata que não parseou deixa de sumir em SILÊNCIO → aviso (revisão).
     const avisoItens = avisoAtaItensFaltando(extraction.text, rawItems.length);
     if (avisoItens) documentWarnings.push(avisoItens);
+    // C03 (etapa63): reconciliação âncora × item, contra o número PRÉ-dedup. Comparar contra o
+    // pós-dedup faria de uma dedup CORRETA um alarme permanente — e alarme que sempre dispara é
+    // alarme que ninguém lê.
+    achados.push(...checarAncorasItens({
+      ancoras: (extraction.text.match(/DELIBERA[ÇC][ÃA]O\s*:/gi) ?? []).length,
+      itens_pre_dedup: ataSplit.itens_pre_dedup,
+      duplicatas_removidas: ataSplit.duplicatas_removidas,
+    }));
     const ataMeta = extractAtaMetadata(extraction.text);
     // Cargo→nome do PREÂMBULO da ata inteira (o texto por item não tem "presidida pelo
     // Diretor-Geral, NOME") — resolve "divergência apresentada pelo Diretor-Geral" por item.
@@ -428,6 +443,26 @@ export async function analyzeUploadPdf(input: {
       fields.nomes_votacao_contra?.length ?? 0,
     );
     if (avisoContestado) documentWarnings.push(avisoContestado);
+    // Suíte da etapa63 no caminho do documento.
+    achados.push(
+      ...checarCoerenciaUnanimidade({
+        unanimidade: !!fields.unanimidade_detectada,
+        votosContra: fields.nomes_votacao_contra?.length ?? 0,
+        votosAbstencao: fields.nomes_votacao_abstencao?.length ?? 0,
+      }),
+      ...checarImpedidoComVoto({
+        impedidos: fields.nomes_votacao_impedido ?? [],
+        diretoresQueVotaram: [
+          ...(fields.nomes_votacao_favor ?? []),
+          ...(fields.nomes_votacao_contra ?? []),
+          ...(fields.nomes_votacao_abstencao ?? []),
+        ],
+      }),
+      ...checarAdmissibilidadeMalClassificada({
+        juizo: fields.juizo, resultado: fields.resultado, texto: extraction.text,
+      }),
+      ...checarLigaduraResidual(probeLigatureDefects(extraction.text).lemasQuebrados),
+    );
     if (fields.data_reuniao) {
       const dataMs = Date.parse(fields.data_reuniao);
       const max = Date.now() + 60 * 24 * 60 * 60 * 1000;
@@ -448,6 +483,11 @@ export async function analyzeUploadPdf(input: {
       for (const w of (item as { warnings?: string[] }).warnings ?? []) documentWarnings.push(w);
     }
   }
+
+  // Achados da suíte (etapa63) entram nos avisos do documento com nível e código visíveis. O
+  // formato `[BLOQUEANTE·C07_…]` é o que o revisor lê — sem o código ele não sabe o que conferir.
+  const bloqueado = temBloqueio(achados);
+  documentWarnings.push(...formatarAchados(achados));
 
   const warnings = documentWarnings;
   // C3: status ignora avisos informativos (ex.: "documento tratado como pauta/ata
@@ -507,6 +547,10 @@ export async function analyzeUploadPdf(input: {
     import_counts_as_final: regulatoryClass.import_counts_as_final,
     semantic_duplicate_key,
     warnings,
+    // Etapa63: o confirm RECUSA um documento bloqueado, salvo `override_motivo` explícito do
+    // revisor. O override é parte do desenho — quem vê o documento sabe coisas que o parser não
+    // sabe; o que não pode é essa decisão ser invisível.
+    ...(bloqueado ? { bloqueado: true, achados_bloqueantes: achados.filter((a) => a.nivel === "bloqueante").map((a) => a.codigo) } : {}),
     ...(antt.isAntt ? { documento_antt_tipo: antt.documentType, warnings } : {}),
     ...(ata_items ? { ata_items } : {}),
     extraction_raw: {

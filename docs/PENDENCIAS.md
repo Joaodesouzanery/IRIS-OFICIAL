@@ -296,6 +296,36 @@ propósito — asserir um valor contestado congelaria o erro):
 - Roster da ANTT saía vazio ("sob a presidência do Diretor-Geral, X; presentes os Diretores A, B…"
   não era reconhecido) — e **sem roster não há inferência de voto naquela agência**.
 
+## Fases 2 e 3 concluídas (24/08/2026)
+
+Migration `20260824120000_votos_proveniencia.sql` **aplicada**. O código já grava `proveniencia`,
+`motivo_nao_voto` e `voto_em_autos`; `deliberacoes.juizo` recebe o valor extraído.
+
+**Modo duplo nos denominadores.** Toda rota de métrica passou a publicar o denominador ao lado da
+taxa: `total_deliberacoes` (pautado, inalterado) + `total_decidido`, `total_admissibilidade`,
+`total_retirado`, `total_sem_resultado`, `total_com_voto`. Os números de deferimento **sobem** e os
+de consenso **caem** — nenhum dos dois é melhora ou piora de governança: é o divisor deixando de
+estar errado. Ver `docs/METODOLOGIA-METRICAS.md`.
+
+**Ainda duplicado (dívida conhecida, registrada em vez de escondida):**
+- A fórmula do Score de Governança existe em 3 cópias literais (`dashboard/governanca/page.tsx`,
+  `dashboard/analytics/institucional/page.tsx`, `lib/boletim-document.ts:calcGovScore`). Mudar a
+  semântica de consenso move as três — e o PDF do boletim.
+- A definição de "sanção" (`microtema === "multa" || resultado === "Indeferido"`) está em 4
+  arquivos, sem helper compartilhado.
+- `isFinalDecisionRecord` tem um predicado PARALELO mais frouxo em `associado-documents.ts`.
+- Seis cópias locais do conjunto `NAO_FINAL` (pauta/voto/apoio) espalhadas por rotas admin.
+
+**Write-paths fora do writer compartilhado** (fazem UPDATE/DELETE direto em `votos`, não upsert —
+por isso não passam por `votos-write.ts`): `votos/reprocessar-abstencoes`,
+`votos/recalcular-divergencia`, `deliberacoes/[id]` (PATCH que re-deriva `is_divergente`),
+`admin/deliberacoes/dedup` e `diretor-merge`. Nenhum grava voto novo; todos alteram voto existente.
+Unificá-los é o próximo passo natural do endurecimento.
+
+**Assimetria conhecida:** `deliberacoes/[id]:175` chama `isDivergentVote(tipo, resultado)` SEM o 3º
+argumento (`unanime`), enquanto `recalcular-divergencia` passa. Uma edição manual de resultado
+reintroduz divergência falsa em item indeferido-por-unanimidade até o cron rodar.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

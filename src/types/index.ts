@@ -559,6 +559,13 @@ export interface PreviewResultAta extends PreviewResult {
 }
 
 export interface PreviewResult {
+  /**
+   * Etapa63: a suíte de validação encontrou achado BLOQUEANTE. O confirm recusa o documento
+   * salvo `override_motivo` explícito — segmentação quebrada e voto que contradiz o dispositivo
+   * produzem dado que PARECE bom e está errado.
+   */
+  bloqueado?: boolean;
+  achados_bloqueantes?: string[];
   filename: string;
   source_archive?: string | null;
   status: "ok" | "low_confidence" | "error";
@@ -587,6 +594,11 @@ export interface BatchPreviewResponse {
 }
 
 export interface ConfirmDelib {
+  /** Etapa63: a validação bloqueou este documento. */
+  bloqueado?: boolean;
+  achados_bloqueantes?: string[];
+  /** Motivo EXPLÍCITO do revisor para confirmar mesmo bloqueado (mín. 10 caracteres). */
+  override_motivo?: string;
   filename: string;
   documento_id?: string | null;
   upload_job_id?: string | null;
