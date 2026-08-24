@@ -60,7 +60,11 @@ describe("inferResultado (voto_individual) — dispositivos ampliados", () => {
     ["julgo procedente o pedido de revisão tarifária.", "Deferido"],
     ["voto por negar provimento ao recurso interposto.", "Indeferido"],
     ["voto pelo indeferimento do requerimento.", "Indeferido"],
-    ["voto por não conhecer do recurso, por intempestivo.", "Indeferido"],
+    // Etapa54: não-conhecimento deixou de ser "Indeferido". É juízo de ADMISSIBILIDADE — o
+    // colegiado não julgou o pedido, julgou se podia julgá-lo. Somado ao balde negativo, a
+    // taxa de deferimento passava a medir prazo processual junto com jurisprudência. O caso
+    // continua detectado, agora por `detectJuizo` (ver etapa54-dispositivo-juizo.test.ts).
+    ["voto por não conhecer do recurso, por intempestivo.", null],
     ["julgo improcedente o pedido.", "Indeferido"],
     ["voto pela homologação do resultado do leilão.", "Ratificado"],
     ["voto pela ratificação da decisão da Superintendência.", "Ratificado"],

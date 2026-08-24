@@ -464,6 +464,11 @@ export interface PreviewResultFields {
   item_numero: string | null;
   processo: string | null;
   resultado: string | null;
+  /**
+   * Juízo do dispositivo (etapa54): "admissibilidade" quando o colegiado NÃO CONHECEU — julgou se
+   * podia julgar, não o pedido. Sai dos dois lados da taxa de deferimento. `null`/ausente = mérito.
+   */
+  juizo?: "admissibilidade" | null;
   decisoes_todas: string[];
   microtema: string;
   area_regulatoria: AreaRegulatoria | string;

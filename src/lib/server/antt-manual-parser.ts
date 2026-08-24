@@ -735,7 +735,12 @@ export function inferResultado(text: string): string | null {
     value.includes("indefer") || value.includes("indefir") ||
     /\bneg(?:o|ar(?:-se)?|ado)\s+provimento\b/.test(value) ||
     /\bnao\s+prov(?:er|ido|imento|ejo)\b|\bpelo\s+nao\s+provimento\b|\bdesprov\w*|\bimprovid\w*/.test(value) ||
-    /\bnao\s+conhecer\b|\bnao\s+conhecimento\b/.test(value) ||
+    // Etapa54: `não conhecer` SAIU daqui. Não-conhecimento é juízo de ADMISSIBILIDADE — o
+    // colegiado não julgou o pedido, julgou se podia julgá-lo. Enquanto virava "Indeferido", a
+    // taxa de deferimento media prazo processual junto com jurisprudência (só na 83ª ROP são 10
+    // itens). O caso segue detectado, agora por `detectJuizo` → `raw_extraction.juizo`.
+    // Atenção: "não conhecer E, no mérito, negar provimento" continua Indeferido, porque as
+    // formas de mérito acima casam primeiro — é o mérito que prevalece quando ele existe.
     /\brejeit\w*|\breprov\w*/.test(value) ||
     /\bnao\s+acolh\w*|\bdeix\w+\s+de\s+acolher\b/.test(value) ||
     value.includes("improcedente") || value.includes("improcedencia") ||

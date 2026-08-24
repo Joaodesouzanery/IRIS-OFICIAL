@@ -460,6 +460,10 @@ export async function analyzeUploadPdf(input: {
       item_numero: (fields as { item_numero?: string | null }).item_numero ?? null,
       processo: fields.processo,
       resultado: fields.resultado,
+      // Juízo do dispositivo (etapa54): "admissibilidade" sai dos DOIS lados da taxa de
+      // deferimento na etapa60. Vive no JSON até a coluna existir — o CHECK de `resultado`
+      // não comporta valor novo e o código tem de degradar sem a migration.
+      juizo: fields.juizo,
       decisoes_todas: fields.decisoes_todas,
       microtema,
       area_regulatoria: (fields as { area_regulatoria?: string }).area_regulatoria ?? area_regulatoria,
@@ -500,6 +504,10 @@ export async function analyzeUploadPdf(input: {
       processo: fields.processo,
       assunto: fields.assunto,
       resultado: fields.resultado,
+      // Juízo do dispositivo (etapa54): "admissibilidade" sai dos DOIS lados da taxa de
+      // deferimento na etapa60. Vive no JSON até a coluna existir — o CHECK de `resultado`
+      // não comporta valor novo e o código tem de degradar sem a migration.
+      juizo: fields.juizo,
       decisoes_todas: fields.decisoes_todas,
       microtema,
       area_regulatoria: (fields as { area_regulatoria?: string }).area_regulatoria ?? area_regulatoria,

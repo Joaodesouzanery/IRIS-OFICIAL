@@ -15,6 +15,7 @@
 import { parseDataExtensoANM } from "./ata-splitter";
 import { isRoleWordOnly, isLikelyPersonName, isStrictPersonName } from "./name-matcher";
 import { flattenForMatch } from "./pdf-extractor";
+import { detectJuizo } from "./regulatory-documents";
 
 // ─── Regex patterns ────────────────────────────────────────────────────────
 // Nome completo aceitando PREPOSIÇÕES internas (de/da/do/dos/das/e) entre tokens
@@ -45,7 +46,22 @@ const RE_PROCEDENCIA = /Proced[eê]ncia[:\s]+([^\n]{3,150})/gi;
 // `(?:DO|R)?` para casar presente/particípio/infinitivo de uma vez. O presente dos
 // verbos -IR (INDEFERE/DEFERE) precisa ser explícito — sua ausência fazia todo
 // INDEFERE-por-unanimidade cair no fallback e virar "Aprovado por Unanimidade" (bug).
-const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|RETIRAD[OA]\s*DE\s*PAUTA|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)(?![çÇ])\b/gi;
+// `NEGA*`/`IMPROVID*`/`PROVID*` entram na etapa54: sem eles, um dispositivo "NEGA-LHE provimento"
+// não casava NADA e caía no fallback de unanimidade, virando resultado POSITIVO — inversão total.
+const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|NEGAR|NEGA(?:-LHE)?|NEGOU|NEGARAM|IMPROVID[OA]S?|DESPROVID[OA]S?|PROVID[OA]S?|RETIRAD[OA]\s*DE\s*PAUTA|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)(?![çÇ])\b/gi;
+
+// Fórmula RITUAL da ARTESP — aparece em TODA deliberação, decida ela o que decidir: "Fica
+// RATIFICADA toda a instrução processual e DETERMINADA a adoção das medidas pertinentes".
+// Não é dispositivo, é fecho de estilo. Enquanto entrava no escopo de resultado, "Ratificado"
+// vencia por prioridade um "Indeferido" REAL — a deliberação que INDEFERE era gravada como
+// Ratificada. Removida SÓ do escopo de RESULTADO: `raw_text` e `fundamento_decisao` seguem íntegros.
+const RE_ARTESP_FORMULA_RITUAL =
+  /Fica[m]?\s+RATIFICAD[AO]S?\s+tod[ao]s?\s+a?\s*instru[çc][ãa]o\s+processual[\s\S]{0,160}?medidas\s+pertinentes[^.]{0,80}\.?/gi;
+
+// Direção NEGATIVA explícita. Bloqueia o fallback "unanimidade → Aprovado": um recurso ao qual o
+// colegiado NEGA provimento POR UNANIMIDADE é unânime e NEGATIVO — o fallback o tornava positivo.
+const RE_DIRECAO_NEGATIVA =
+  /\b(?:NEGA(?:-LHE|R|M|RAM|NDO)?|NEGOU|INDEFER\w*|IMPROVID[OA]S?|DESPROVID[OA]S?|N[ÃA]O\s+PROVID[OA]S?|N[ÃA]O\s+(?:SE\s+)?CONHEC\w*)\b/i;
 
 // Unanimidade — qualquer das frases comuns em deliberações brasileiras
 // Alternativas simples sem quantificadores aninhados (evita ReDoS)
@@ -601,18 +617,58 @@ function parseDataPublicacao(text: string, dataReuniao: string | null = null): s
   return null;
 }
 
+// EMENTA da deliberação ARTESP avulsa: bloco em CAIXA ALTA que abre logo abaixo do cabeçalho
+// "DELIBERAÇÃO ARTESP Nº …, DE …", começando pelo verbo decisório. É o dispositivo REAL do
+// documento — o que vem depois do "DELIBERA" é ritual.
+const RE_ARTESP_EMENTA_HEAD = /DELIBERA[ÇC][ÃA]O\s+ARTESP\s+N[ºo°]\s*[\d.]+[^\n]*\n/i;
+const RE_VERBO_EMENTA =
+  /^\s*(APROVA|INDEFERE|DEFERE|RATIFICA|RECOMENDA|DETERMINA|AUTORIZA|HOMOLOGA|REVOGA|ANULA|ARQUIVA|CONHECE|NEGA)\b/;
+
+/**
+ * Ementa da deliberação ARTESP (null quando o documento não é desse formato).
+ * A janela vai do verbo até o fim do parágrafo — o suficiente para o dispositivo e curto o
+ * bastante para não alcançar o ritual nem os "considerandos".
+ */
+export function extractEmentaArtesp(text: string): string | null {
+  // Só o CABEÇALHO do documento (primeiros 900 caracteres). Uma ATA da ARTESP CITA várias
+  // "Deliberação ARTESP nº" no corpo; sem este limite, o escopo de resultado da ata passava a ser
+  // a ementa de uma deliberação CITADA — a mesma armadilha que `isArtespDeliberacao` já evita na
+  // classificação de tipo. Medido: a 1201ª casava uma ementa de 1.100 caracteres do corpo.
+  const cabecalho = text.slice(0, 900);
+  const head = RE_ARTESP_EMENTA_HEAD.exec(cabecalho);
+  if (!head) return null;
+  const depois = text.slice(head.index + head[0].length);
+  const linhas = depois.split("\n");
+  for (let i = 0; i < Math.min(linhas.length, 12); i++) {
+    if (!RE_VERBO_EMENTA.test(linhas[i])) continue;
+    const bloco: string[] = [];
+    for (let j = i; j < linhas.length && bloco.length < 12; j++) {
+      if (j > i && linhas[j].trim() === "") break; // fim do parágrafo da ementa
+      bloco.push(linhas[j]);
+    }
+    return bloco.join("\n");
+  }
+  return null;
+}
+
 // Prioridade para resultado principal quando há múltiplos verbos decisórios
 const RESULTADO_PRIORIDADE: Record<string, number> = {
   "Aprovado com Ressalvas": 1,
   "Aprovado": 2,
   "Autorizado": 3,
   "Recomendado": 4,
-  "Ratificado": 5,
-  "Determinado": 6,
-  "Deferido": 7,
-  "Indeferido": 8,
-  "Parcialmente Deferido": 9,
-  "Retirado de Pauta": 10,
+  "Deferido": 5,
+  "Indeferido": 6,
+  "Parcialmente Deferido": 7,
+  "Retirado de Pauta": 8,
+  // Etapa54: RATIFICAR e DETERMINAR são atos ANCILARES — instruem o processo, não decidem o
+  // pleito. Estavam ACIMA de Deferido/Indeferido e por isso o ritual da ARTESP ("Fica RATIFICADA
+  // toda a instrução processual e DETERMINADA a adoção das medidas pertinentes"), presente em toda
+  // deliberação, vencia o desfecho REAL. Agora só valem quando são a única coisa que o
+  // documento decide. A remoção do ritual do escopo (RE_ARTESP_FORMULA_RITUAL) e esta ordem
+  // resolvem o mesmo problema por dois lados — corrigir só um dos dois deixaria a outra porta.
+  "Ratificado": 9,
+  "Determinado": 10,
 };
 
 function normalizeResultado(raw: string): string | null {
@@ -625,6 +681,11 @@ function normalizeResultado(raw: string): string | null {
     return "Retirado de Pauta"; // arquivamento/cancelamento = sem decisão de mérito
   }
   if (upper.includes("INDEFER")) return "Indeferido";        // INDEFERIDO/INDEFERIMENTO/INDEFERIU
+  // NEGA*/IMPROVIDO/DESPROVIDO → negativo. Vêm ANTES de "PROVID" para que "IMPROVIDO" não seja
+  // lido como provimento (o mesmo cuidado que o parser da ANTT já tomava).
+  if (upper.startsWith("NEGA") || upper.startsWith("NEGOU")) return "Indeferido";
+  if (upper.startsWith("IMPROVID") || upper.startsWith("DESPROVID")) return "Indeferido";
+  if (upper.startsWith("PROVID")) return "Deferido";
   if (upper.startsWith("ANUL") || upper.startsWith("REVOG")) return "Indeferido"; // anulação/revogação ~ indeferimento
   if (upper.includes("RESSALVAS")) return "Aprovado com Ressalvas";
   if (upper.includes("DEFER"))   return "Deferido";          // DEFERIDO/DEFERIMENTO/DEFERIU
@@ -664,6 +725,8 @@ export interface ExtractedFields {
   procedencia: string | null;       // campo "Procedência:" (departamento de origem)
   relator: string | null;
   resultado: string | null;
+  /** "admissibilidade" quando o dispositivo NÃO CONHECE; null = mérito (etapa54). */
+  juizo: "admissibilidade" | null;
   decisoes_todas: string[];         // todos os verbos decisórios únicos normalizados
   pauta_interna: boolean;
   resumo_pleito: string | null;
@@ -747,13 +810,23 @@ export function extractFields(text: string): ExtractedFields {
   // evitando que verbos incidentais da prosa ("a empresa aprova", "o relator
   // recomenda") sobreponham a decisão real (que invertia o resultado).
   const dispMatch = text.match(/(?:Em\s+face\s+do\s+exposto|Diante\s+do\s+exposto|Pelo\s+exposto|Ante\s+(?:a?o\s+)?exposto|Por\s+todo\s+o?\s*exposto|DECIDE\s+A\s+DIRETORIA|A\s+DIRETORIA(?:\s+DA\s+[\wÀ-ÿ]+)?\s+(?:DECIDE|DELIBEROU|RESOLVE)|Decide-se|RESOLVE)[\s\S]{0,800}/i);
-  const resultadoScope = dispMatch ? dispMatch[0] : text;
+  // Escopo em CASCATA (etapa54): ementa → dispositivo → documento.
+  // Na deliberação ARTESP avulsa o dispositivo REAL é a EMENTA em caixa alta do topo ("APROVA a
+  // emissão e a publicação da Portaria…"); depois do "DELIBERA" vem só o ritual. Foi por isso que
+  // ancorar em "DELIBERA nos seguintes termos" foi rejeitado — regrediria a 487 de "Aprovado"
+  // para "Ratificado". Com a ementa no topo da cascata, o desfecho vem de onde ele está escrito.
+  const ementaMatch = extractEmentaArtesp(text);
+  const escopoBruto = ementaMatch ?? (dispMatch ? dispMatch[0] : text);
+  // O ritual sai só AQUI (escopo de resultado). O texto original permanece intacto para
+  // `raw_text`/`fundamento_decisao` — remover de lá apagaria conteúdo real do documento.
+  const resultadoScope = escopoBruto.replace(RE_ARTESP_FORMULA_RITUAL, " ");
+  const temEscopoDecisorio = Boolean(ementaMatch || dispMatch);
   const resultadoRaw = allMatches(resultadoScope, RE_RESULTADO);
   const decisoesSet = new Set<string>();
   for (const r of resultadoRaw) {
     // Sem dispositivo claro, descarta conjugações MINÚSCULAS de prosa
     // ("aprova"/"recomenda"/"deferimento"); aceita CAIXA ALTA / particípio / pretérito.
-    if (!dispMatch && r === r.toLowerCase()) continue;
+    if (!temEscopoDecisorio && r === r.toLowerCase()) continue;
     const norm = normalizeResultado(r);
     if (norm) decisoesSet.add(norm);
   }
@@ -767,8 +840,16 @@ export function extractFields(text: string): ExtractedFields {
     )[0];
   }
 
-  // Fallback: "unanimidade de votos" → aprovação implícita (exceto "não/sem unanimidade" — F5)
-  if (!resultado && hasUnanimidade(text)) {
+  // Juízo do dispositivo: admissibilidade não é desfecho de mérito (etapa54).
+  const juizo = detectJuizo(resultadoScope);
+
+  // Fallback: "unanimidade de votos" → aprovação implícita (exceto "não/sem unanimidade" — F5).
+  // BLOQUEADO quando o dispositivo tem direção NEGATIVA ou é juízo de admissibilidade: um recurso
+  // ao qual se NEGA provimento POR UNANIMIDADE é unânime e negativo, e um "não conhecer por
+  // intempestividade" não aprovou coisa nenhuma. Sem resultado, o item vai para revisão — que é
+  // honesto; inventar o positivo é que não era.
+  if (!resultado && hasUnanimidade(text)
+      && !juizo && !RE_DIRECAO_NEGATIVA.test(resultadoScope)) {
     resultado = "Aprovado por Unanimidade";
     decisoes_todas.push("Aprovado por Unanimidade");
   }
@@ -1058,6 +1139,7 @@ export function extractFields(text: string): ExtractedFields {
     procedencia,
     relator,
     resultado,
+    juizo,
     decisoes_todas,
     pauta_interna,
     resumo_pleito,

@@ -207,6 +207,27 @@ export function normalize(value: string): string {
     .trim();
 }
 
+/**
+ * Ju\u00edzo do dispositivo: M\u00c9RITO (padr\u00e3o) ou ADMISSIBILIDADE (etapa54).
+ *
+ * "N\u00c3O CONHECER do recurso, por intempestividade" n\u00e3o julga o pedido \u2014 julga se ele podia sequer
+ * ser apreciado. Mape\u00e1-lo para "Indeferido", como se fazia, mistura duas coisas distintas na mesma
+ * conta: a `taxa_deferimento` passa a medir prazo processual junto com jurisprud\u00eancia. S\u00f3 na 83\u00aa
+ * ROP s\u00e3o 10 itens de n\u00e3o-conhecimento.
+ *
+ * Devolve `null` (= m\u00e9rito) sempre que houver d\u00favida, inclusive quando o MESMO dispositivo tamb\u00e9m
+ * julga o m\u00e9rito ("n\u00e3o conhecer \u2026 e, no m\u00e9rito, negar provimento"): a\u00ed existe ju\u00edzo de m\u00e9rito e
+ * ele prevalece. `CONHECER` isolado \u00e9 pr\u00e9-requisito do m\u00e9rito, nunca desfecho \u2014 n\u00e3o vira resultado.
+ */
+export function detectJuizo(text: string): "admissibilidade" | null {
+  const flat = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  if (!/\bnao\s+(?:se\s+)?conhec(?:er|e|eu|ida?|ido|imento)\b|\bnao\s+conhecimento\b/.test(flat)) {
+    return null;
+  }
+  if (/\bno\s+merito\b|\bprovimento\b|\bindefer|\bdefer/.test(flat)) return null;
+  return "admissibilidade";
+}
+
 // Só considera o CABEÇALHO (primeiros ~600 chars normalizados): uma ATA da ARTESP
 // CITA várias "Deliberação ARTESP nº" no corpo e era reclassificada como deliberação
 // (bug pego pelo corpus de certificação — ata 1201ª virou "deliberacao").
