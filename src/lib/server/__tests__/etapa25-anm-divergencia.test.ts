@@ -68,15 +68,25 @@ describe("ANM — divergência NOMEADA atribuída ao diretor certo [PR-K]", () =
 
 describe("ANM — contestado sem atribuição NÃO fabrica unanimidade [PR-K]", () => {
   it("'voto de qualidade' sem dissidente nomeado → não grava todos como favoráveis", () => {
-    // 79ª ROP item 1.4.1: empate resolvido por voto de qualidade; ninguém casa "divergência
-    // apresentada pelo X" aqui → o item deve ir para REVISÃO (favor vazio), não todos-favor.
+    // 79ª ROP item 1.4.1: empate resolvido por voto de qualidade.
+    //
+    // ATUALIZADO na etapa62. A intenção deste teste — NÃO FABRICAR UNANIMIDADE — continua valendo
+    // e continua travada: os 4 diretores do preâmbulo NÃO viram favoráveis. O que mudou é que o
+    // voto de QUALIDADE deixou de ser apagado junto. Ele é o único voto que a ata NOMEIA neste
+    // item; esvaziar o pool inteiro jogava fora a evidência mais forte que o documento oferece
+    // sobre um empate, e o item ia para revisão com ZERO voto.
     const texto =
       `${PREAMBULO_79}\n1.4. ASSUNTO: Recurso contra não aprovação do RFP. DELIBERAÇÃO: Voto do ` +
       "Relator, Diretor-Geral, aprovado por maioria dos diretores presentes com cômputo do voto de " +
       "qualidade proferido pelo Diretor-Geral.";
     const f = extractFields(texto);
-    expect(f.nomes_votacao_favor).toEqual([]);
-    expect(f.nomes_votacao).toEqual([]);
+    // SÓ quem desempatou — resolvido do cargo "Diretor-Geral" pelo preâmbulo.
+    expect(f.nomes_votacao_favor).toEqual(["Mauro Henrique Moreira Sousa"]);
+    expect(f.voto_qualidade_por).toBe("Mauro Henrique Moreira Sousa");
+    // O ponto original: os OUTROS três presentes seguem fora do pool.
+    for (const outro of ["Tasso Mendonça Júnior", "Roger Romão Cabral", "José Fernando de Mendonça Gomes Júnior"]) {
+      expect(f.nomes_votacao_favor).not.toContain(outro);
+    }
   });
 });
 

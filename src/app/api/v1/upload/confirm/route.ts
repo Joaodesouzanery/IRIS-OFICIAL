@@ -34,6 +34,9 @@ import type {
 } from "@/types";
 
 import { upsertVotosProtegido, sanitizeVotosSugeridos } from "@/lib/server/votos-write";
+import {
+  checarCoerenciaUnanimidade, checarImpedidoComVoto, checarVotoQualidadeDuplo, temBloqueio,
+} from "@/lib/server/consistency-checks";
 
 /**
  * Etapa58: o resultado do upsert de votos DEIXA de ser descartado. Uma violação de constraint
@@ -428,9 +431,38 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       // O `override_motivo` é parte do desenho: quem está olhando o documento sabe coisas que o
       // parser não sabe. O que não pode é essa decisão ser INVISÍVEL — o motivo vai para o
       // registro, junto com os códigos que foram ignorados.
-      const bloqueios = Array.isArray(rawConfirm.achados_bloqueantes) ? rawConfirm.achados_bloqueantes : [];
+      // O flag do cliente é DICA, não autoridade: um payload pode simplesmente omitir `bloqueado`.
+      // As checagens que dependem só do payload são refeitas AQUI, no servidor, sobre os campos
+      // sanitizados. Não reprocessamos o PDF (caro, e o orçamento de 120s não comporta) — mas
+      // contradição interna do próprio payload o servidor consegue ver sozinho.
+      const achadosServidor = [
+        ...checarCoerenciaUnanimidade({
+          unanimidade: Boolean(rawConfirm.extraction_raw?.unanimidade_detectada),
+          votosContra: d.nomes_votacao_contra.length,
+          votosAbstencao: (d.nomes_votacao_abstencao ?? []).length,
+        }),
+        ...checarImpedidoComVoto({
+          impedidos: d.nomes_votacao_impedido ?? [],
+          diretoresQueVotaram: [
+            ...d.nomes_votacao,
+            ...d.nomes_votacao_contra,
+            ...(d.nomes_votacao_abstencao ?? []),
+          ],
+        }),
+        ...checarVotoQualidadeDuplo({
+          votoQualidadePor: typeof rawConfirm.extraction_raw?.voto_qualidade_por === "string"
+            ? rawConfirm.extraction_raw.voto_qualidade_por : null,
+          diretoresComVoto: [...d.nomes_votacao, ...d.nomes_votacao_contra],
+        }),
+      ];
+      const bloqueiosCliente = Array.isArray(rawConfirm.achados_bloqueantes) ? rawConfirm.achados_bloqueantes : [];
+      const bloqueios = [...new Set([
+        ...bloqueiosCliente,
+        ...achadosServidor.filter((a) => a.nivel === "bloqueante").map((a) => a.codigo),
+      ])];
       const override = typeof rawConfirm.override_motivo === "string" ? rawConfirm.override_motivo.trim() : "";
-      if (rawConfirm.bloqueado && bloqueios.length > 0 && override.length < 10) {
+      const bloqueado = temBloqueio(achadosServidor) || Boolean(rawConfirm.bloqueado);
+      if (bloqueado && bloqueios.length > 0 && override.length < 10) {
         results.push({
           filename: d.filename,
           status: "error",
@@ -439,7 +471,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         });
         continue;
       }
-      if (rawConfirm.bloqueado && override) {
+      if (bloqueado && override) {
         console.warn(`[upload/confirm] override de bloqueio em ${d.filename}: ${bloqueios.join(",")} — motivo: ${override.slice(0, 300)}`);
       }
 

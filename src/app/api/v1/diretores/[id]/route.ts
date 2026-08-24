@@ -72,18 +72,32 @@ export async function GET(
     ));
   }
 
-  // Votos deste diretor com join em deliberações
-  const { data: votos } = await db
-    .from("votos")
-    .select(`
-      tipo_voto, is_divergente, is_nominal, proveniencia, motivo_nao_voto, voto_em_autos,
+  // Votos deste diretor com join em deliberações.
+  //
+  // O SELECT pede as colunas da migration 20260824120000 (proveniencia/motivo_nao_voto/
+  // voto_em_autos) e CAI PARA a versão sem elas se o PostgREST recusar. A regra do projeto é
+  // explícita: o deploy vem ANTES da migration, e o código tem de degradar. Sem este retry, a
+  // ficha de TODO diretor devolveria 500 num ambiente que ainda não aplicou o SQL — a tela mais
+  // sensível do produto quebrando por causa de uma coluna que ainda vai existir.
+  const JOIN_DELIB = `
       deliberacoes!inner(
         id, numero_deliberacao, data_reuniao, interessado,
         microtema, resultado
-      )
-    `)
+      )`;
+  const buscarVotos = (colunas: string) => db
+    .from("votos")
+    .select(`${colunas},${JOIN_DELIB}`)
     .eq("diretor_id", id)
     .order("deliberacoes(data_reuniao)", { ascending: false });
+
+  let { data: votos, error: erroVotos } = await buscarVotos(
+    "tipo_voto, is_divergente, is_nominal, proveniencia, motivo_nao_voto, voto_em_autos",
+  );
+  if (erroVotos) {
+    // PGRST204/42703 = coluna ainda não existe. Qualquer outro erro também cai aqui e degrada
+    // para o conjunto mínimo — perder a granularidade nova é melhor que perder a ficha inteira.
+    ({ data: votos } = await buscarVotos("tipo_voto, is_divergente, is_nominal"));
+  }
 
   let favoravel = 0, desfavoravel = 0, abstencao = 0, divergente = 0, votos_inferidos = 0;
   let ausente = 0, impedido = 0, base_nominal = 0, divergente_nominal = 0, votos_em_autos = 0;

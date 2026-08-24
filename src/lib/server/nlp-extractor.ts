@@ -32,7 +32,7 @@ const RE_REUNIAO     = /(\d{3,4})[ªa°º]?\s*(?:Reuni[aã]o\s*)?(?:Ordin[aá]ri
 // `Processos?` no PLURAL: a ANM escreve "PROCESSOS Nº: X; Y; Z" quando um item deliberado agrupa
 // vários processos — medido na 79ª ROP, item 1.3.1, com 44 números num bloco só. Sem o plural o
 // campo saía NULL, e `processo` null quebra o dedupe de item no confirm.
-const RE_PROCESSO = /(?:SEI[!]?\s*n[ºo°]?|Processos?\s*(?:SEI\s*)?n[ºo°]?|PA\s*n[ºo°]?|Proc(?:esso)?\s*(?:Adm(?:inistrativo)?\s*)?n[ºo°]?|Procedimento\s*n[ºo°]?|Autos?\s*n[ºo°]?)\s*([\d\.\/\-]+)/gi;
+const RE_PROCESSO = /(?:SEI[!]?\s*n[ºo°]?|Processos?\s*(?:SEI\s*)?n[ºo°]?|PA\s*n[ºo°]?|Proc(?:esso)?\s*(?:Adm(?:inistrativo)?\s*)?n[ºo°]?|Procedimento\s*n[ºo°]?|Autos?\s*n[ºo°]?)\s*:?\s*([\d\.\/\-]+)/gi;
 
 // Interessado: 13 rótulos cobrindo terminologia de todas as agências reguladoras
 // `Interessados:` no plural, mesma razão.
@@ -1252,13 +1252,14 @@ export function extractFields(text: string): ExtractedFields {
   if (favorPorDefault && nomes_votacao_contra.length === 0 && RE_CONTESTADO.test(text)) {
     nomes_votacao.length = 0;
     nomes_votacao_favor.length = 0;
-    // …MAS o voto de QUALIDADE sobrevive (etapa62). Ele é nomeado pela própria ata e alinhado ao
-    // resultado que prevaleceu — é o voto de que temos MAIS certeza no item inteiro. Apagá-lo
-    // junto era jogar fora a única evidência nominal de um item de empate.
-    if (voto_qualidade_por) {
-      nomes_votacao.push(voto_qualidade_por);
-      nomes_votacao_favor.push(voto_qualidade_por);
-    }
+  }
+  // O voto de QUALIDADE entra DEPOIS do esvaziamento e INDEPENDE dele (etapa62). Ele é nomeado
+  // pela própria ata e alinhado ao resultado que prevaleceu — é o voto de que temos MAIS certeza
+  // no item inteiro. Prendê-lo ao ramo `favorPorDefault` o perdia justamente no caso em que
+  // nenhum outro nome foi extraído, que é o item de empate típico.
+  if (voto_qualidade_por && !nomes_votacao_contra.includes(voto_qualidade_por)) {
+    if (!nomes_votacao.includes(voto_qualidade_por)) nomes_votacao.push(voto_qualidade_por);
+    if (!nomes_votacao_favor.includes(voto_qualidade_por)) nomes_votacao_favor.push(voto_qualidade_por);
   }
 
   // Remove palavra-função ("Diretor", "Presidente"…) que vaza como nome em alguns
