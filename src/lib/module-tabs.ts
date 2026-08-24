@@ -22,6 +22,9 @@ export const ANALISE_TABS: ModuleTab[] = [
   { label: "Dashboard 360°", href: "/dashboard/360" },
   { label: "Insights", href: "/dashboard/insights" },
   { label: "Governança", href: "/dashboard/governanca" },
+  // Etapa64: o painel que mostra SOBRE O QUÊ cada número é calculado. Fica ao lado de Governança
+  // de propósito — é lá que o Score é lido, e é lá que a pergunta "com que base?" aparece.
+  { label: "Saúde dos dados", href: "/dashboard/saude-dados" },
 ];
 
 export const REGULATORIO_TABS: ModuleTab[] = [

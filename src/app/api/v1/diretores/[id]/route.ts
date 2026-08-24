@@ -138,12 +138,16 @@ export async function GET(
     }
     // Voto proferido em sessão ANTERIOR não é presença nesta — sai da série temporal (etapa57).
     if (d.voto_em_autos) votos_em_autos++;
-    if (d.deliberacoes.microtema) {
+    // COERÊNCIA INTERNA (etapa61): `total` deixou de somar "Ausente", então microtema, série
+    // mensal e o divisor de divergência por tema também não podem somá-lo — senão o mesmo perfil
+    // publica dois denominadores diferentes e `pct_divergente_por_tema` fica menor que o global
+    // sem que nada explique a diferença.
+    if (!naoVotou && d.deliberacoes.microtema) {
       microtemaCount.set(d.deliberacoes.microtema, (microtemaCount.get(d.deliberacoes.microtema) ?? 0) + 1);
       if (d.is_divergente) microtemaDiv.set(d.deliberacoes.microtema, (microtemaDiv.get(d.deliberacoes.microtema) ?? 0) + 1);
     }
     const periodo = d.deliberacoes.data_reuniao?.slice(0, 7);
-    if (periodo) {
+    if (periodo && !naoVotou) {
       const m = mesMap.get(periodo) ?? { total: 0, favoravel: 0, desfavoravel: 0, divergente: 0 };
       m.total++;
       if (d.tipo_voto === "Favoravel") m.favoravel++;

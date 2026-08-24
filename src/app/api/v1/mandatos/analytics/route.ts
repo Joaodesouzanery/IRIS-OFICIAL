@@ -67,9 +67,13 @@ export async function GET(req: NextRequest) {
       comVoto++;
       if (!consensual) comLitigio++;
     }
-    // E o denominador de MÉRITO exclui retirado/sem-resultado/admissibilidade.
-    if (isDecidedOnMerits(d as any)) decidido++;
-    if (d.microtema === "multa" || d.resultado === "Indeferido") sancao++;
+    // E o denominador de MÉRITO exclui retirado/sem-resultado/admissibilidade. O NUMERADOR de
+    // sanção vive no MESMO universo: contá-lo sobre todas as linhas com o divisor só sobre as
+    // decididas deixa a taxa passar de 100%.
+    if (isDecidedOnMerits(d as any)) {
+      decidido++;
+      if (d.microtema === "multa" || d.resultado === "Indeferido") sancao++;
+    }
 
     const r = d.resultado ?? "Sem resultado";
     resultadoCount.set(r, (resultadoCount.get(r) ?? 0) + 1);

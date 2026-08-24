@@ -548,6 +548,8 @@ export interface AtaPreviewItem {
   votos_impedidos_detectados?: string[];
   /** Voto proferido em sessão ANTERIOR e só registrado aqui (etapa57). */
   votos_em_autos_detectados?: string[];
+  /** Juízo DESTE item: "admissibilidade" quando não conhecido; null = mérito (etapa54/63). */
+  juizo?: "admissibilidade" | null;
   votos_sugeridos?: VotoSugerido[];
   unanimidade_detectada?: boolean;
   needs_review?: boolean;

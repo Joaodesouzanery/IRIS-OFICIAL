@@ -64,6 +64,7 @@ const MODULE_PATHS: Record<string, string[]> = {
     "/dashboard/360",
     "/dashboard/insights",
     "/dashboard/governanca",
+    "/dashboard/saude-dados",
   ],
   "/dashboard/painel-regulatorio": [
     "/dashboard/painel-regulatorio",

@@ -16,6 +16,8 @@ import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { cn, formatNumber } from "@/lib/utils";
 import { Database, ShieldCheck, AlertTriangle, FileWarning, Scale, BookOpen } from "lucide-react";
+import { ModuleTabs } from "@/components/ui/ModuleTabs";
+import { ANALISE_TABS } from "@/lib/module-tabs";
 
 type AgenciaGov = {
   agencia_id: string | null;
@@ -60,16 +62,22 @@ function pctClass(v: number, bom: number, ruim: number) {
 }
 
 export default function SaudeDadosPage() {
-  const { data: agencias, isLoading: loadingAg } = useQuery({
+  // A rota devolve `{ por_agencia: [...] }`, NÃO um array — e `api.get` faz um cast NÃO CHECADO
+  // (`res.json() as Promise<T>`), então tipar errado aqui passa batido pelo tsc e só explode em
+  // runtime. Era `AgenciaGov[]`: o objeto (truthy) escapava do `?? []` e o primeiro `.reduce()`
+  // derrubava a página inteira. O consumidor irmão (dashboard/governanca) sempre tipou certo.
+  const { data: govResp, isLoading: loadingAg } = useQuery({
     queryKey: ["governanca-agencias-saude"],
-    queryFn: () => api.get<AgenciaGov[]>("/dashboard/governanca-agencias"),
+    queryFn: () => api.get<{ por_agencia: AgenciaGov[] }>("/dashboard/governanca-agencias"),
   });
   const { data: saude, isLoading: loadingSaude } = useQuery({
     queryKey: ["admin-saude-dados"],
     queryFn: () => api.get<SaudeDados>("/admin/saude-dados"),
   });
 
-  const linhas = agencias ?? [];
+  // Guard de FORMA, não só de null: o cast não checado significa que a única defesa real contra
+  // uma mudança de contrato é verificar o que chegou.
+  const linhas = Array.isArray(govResp?.por_agencia) ? govResp.por_agencia : [];
   const totalPautado = linhas.reduce((s, a) => s + a.total, 0);
   const totalDecidido = linhas.reduce((s, a) => s + (a.total_decidido ?? 0), 0);
   const totalAdmis = linhas.reduce((s, a) => s + (a.total_admissibilidade ?? 0), 0);
@@ -79,6 +87,7 @@ export default function SaudeDadosPage() {
 
   return (
     <div className="space-y-6">
+      <ModuleTabs tabs={ANALISE_TABS} />
       <header className="space-y-2">
         <h1 className="text-2xl font-semibold flex items-center gap-2">
           <ShieldCheck className="w-6 h-6 text-brand" />

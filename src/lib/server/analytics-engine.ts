@@ -468,9 +468,12 @@ export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: strin
     .map(([period, m]) => ({
       period,
       total_itens: m.total,
-      consensuais: m.total - m.divergentes,
+      // O acumulador `com_voto` existia e NÃO era usado: o conserto do consenso ficava
+      // inerte neste caminho, que serve o gráfico da tela de Votação em modo local/demo.
+      total_com_voto: m.com_voto,
+      consensuais: m.com_voto - m.divergentes,
       divergentes: m.divergentes,
-      pct_consenso: m.total > 0 ? Math.round(((m.total - m.divergentes) / m.total) * 1000) / 10 : 0,
+      pct_consenso: m.com_voto > 0 ? Math.round(((m.com_voto - m.divergentes) / m.com_voto) * 1000) / 10 : 0,
       // % de itens com ao menos um voto nominal — o consenso só é confiável onde há base nominal.
       cobertura_nominal: m.total > 0 ? Math.round((m.com_voto_nominal / m.total) * 1000) / 10 : 0,
     }));
@@ -677,6 +680,7 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
   if (!diretor) return null;
 
   let favoravel = 0, desfavoravel = 0, abstencao = 0, divergente = 0;
+  let ausenteDir = 0, baseNominalDir = 0, divergenteNominalDir = 0;
   const microtemaCount = new Map<string, number>();
   const historico: Array<{
     deliberacao_id: string; numero_deliberacao: string | null; data_reuniao: string | null;
@@ -688,11 +692,20 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
     const meuVoto = (d.votos ?? []).find((v) => v.diretor_id === dirId);
     if (!meuVoto) continue;
 
-    if (meuVoto.tipo_voto === "Favoravel") favoravel++;
+    // ESPELHO da rota /api/v1/diretores/[id] (etapa61). O `else` catch-all mandava "Ausente"
+    // para DESFAVORÁVEL aqui — pior ainda que o balde de abstenção da rota: o diretor impedido
+    // aparecia como tendo votado CONTRA. Não votar não é votar de um jeito.
+    const naoVotouDir = meuVoto.tipo_voto === "Ausente";
+    if (naoVotouDir) ausenteDir++;
+    else if (meuVoto.tipo_voto === "Favoravel") favoravel++;
     else if (meuVoto.tipo_voto === "Abstencao") abstencao++;
     else desfavoravel++;
     if (meuVoto.is_divergente) divergente++;
-    if (d.microtema) microtemaCount.set(d.microtema, (microtemaCount.get(d.microtema) ?? 0) + 1);
+    if (meuVoto.is_nominal && !naoVotouDir) {
+      baseNominalDir++;
+      if (meuVoto.is_divergente) divergenteNominalDir++;
+    }
+    if (!naoVotouDir && d.microtema) microtemaCount.set(d.microtema, (microtemaCount.get(d.microtema) ?? 0) + 1);
 
     historico.push({
       deliberacao_id: d.id,
@@ -711,9 +724,14 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
   const pct_favoravel = total > 0 ? (favoravel / total) * 100 : 0;
   const pct_divergente = total > 0 ? (divergente / total) * 100 : 0;
 
-  const perfil: "Consensual" | "Moderadamente divergente" | "Divergente" =
-    pct_divergente < 5 ? "Consensual"
-    : pct_divergente < 15 ? "Moderadamente divergente"
+  // ESPELHO da rota (etapa61): o perfil sai da base NOMINAL e é `null` sem ela. Voto inferido
+  // nunca diverge — rotular "Consensual" a partir dele é afirmar conduta a partir de dado que o
+  // sistema nunca leu.
+  const pct_divergente_nominal = baseNominalDir > 0 ? (divergenteNominalDir / baseNominalDir) * 100 : null;
+  const perfil: "Consensual" | "Moderadamente divergente" | "Divergente" | null =
+    pct_divergente_nominal === null ? null
+    : pct_divergente_nominal < 5 ? "Consensual"
+    : pct_divergente_nominal < 15 ? "Moderadamente divergente"
     : "Divergente";
 
   const microtema_dominante = microtemaCount.size > 0
@@ -721,11 +739,13 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
     : null;
 
   const taxa_aprovacao = total > 0 ? `${pct_favoravel.toFixed(1)}%` : "—";
-  const descricao = total > 0
-    ? (pct_divergente < 5
-        ? `Vota com a maioria em ${(100 - pct_divergente).toFixed(0)}% dos casos`
-        : `Apresentou voto divergente em ${pct_divergente.toFixed(1)}% das deliberações`)
-    : "Sem histórico de votos registrado";
+  const descricao = baseNominalDir === 0
+    ? (total > 0
+        ? `Sem voto nominal lido: ${total} voto(s) inferido(s) da decisão do colegiado, que por construção não divergem — não há base para descrever comportamento.`
+        : "Sem histórico de votos registrado")
+    : (pct_divergente_nominal! < 5
+        ? `Vota com a maioria em ${(100 - pct_divergente_nominal!).toFixed(0)}% dos ${baseNominalDir} voto(s) lidos`
+        : `Apresentou voto divergente em ${pct_divergente_nominal!.toFixed(1)}% dos ${baseNominalDir} voto(s) lidos`);
 
   return {
     id: diretor.id,
@@ -740,6 +760,16 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
       dias_restantes: null,
     },
     stats: { total_votos: total, favoravel, desfavoravel, abstencao, divergente, pct_favoravel, pct_divergente },
+    // Mesma forma que a rota publica, para as telas não precisarem saber de qual caminho vieram.
+    base: {
+      votos_proferidos: total,
+      participacoes: total + ausenteDir,
+      nao_votou: ausenteDir,
+      impedido: 0, // o modo local/demo não carrega `motivo_nao_voto`
+      votos_em_autos: 0,
+      base_nominal: baseNominalDir,
+      pct_divergente_nominal,
+    },
     por_microtema: [...microtemaCount.entries()]
       .map(([microtema, t]) => ({ microtema, total: t }))
       .sort((a, b) => b.total - a.total),

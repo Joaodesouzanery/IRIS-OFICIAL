@@ -49,26 +49,38 @@ export async function GET(req: NextRequest) {
     .select("deliberacoes!inner(agencia_id)", { count: "exact", head: true });
   if (agenciaId) votosQuery = votosQuery.eq("deliberacoes.agencia_id", agenciaId);
 
-  // Taxa de consenso: deliberações sem voto divergente / total
+  // Taxa de consenso: deliberações sem voto divergente / deliberações COM VOTO (etapa60).
   let divergQuery = db
     .from("votos")
     .select("deliberacao_id, deliberacoes!inner(agencia_id)")
     .eq("is_divergente", true);
   if (agenciaId) divergQuery = divergQuery.eq("deliberacoes.agencia_id", agenciaId);
 
+  // O DENOMINADOR do consenso: deliberações distintas com ao menos UM voto. Era `total`
+  // (todas as deliberações), então item sem voto entrava como concordância — a última rota de
+  // consenso que ainda usava o denominador antigo.
+  let comVotoQuery = db
+    .from("votos")
+    .select("deliberacao_id, deliberacoes!inner(agencia_id)");
+  if (agenciaId) comVotoQuery = comVotoQuery.eq("deliberacoes.agencia_id", agenciaId);
+
   // As 4 queries são independentes → paralelas (antes eram 4 awaits sequenciais).
-  const [{ count: diretores_ativos }, { count: total_deliberacoes }, { count: participacoes_colegiadas }, { data: divergData }] =
-    await Promise.all([diretoresQuery, deliberQuery, votosQuery, divergQuery]);
+  const [{ count: diretores_ativos }, { count: total_deliberacoes }, { count: participacoes_colegiadas }, { data: divergData }, { data: comVotoData }] =
+    await Promise.all([diretoresQuery, deliberQuery, votosQuery, divergQuery, comVotoQuery]);
   const comDivergencia = new Set((divergData ?? []).map((v: { deliberacao_id: string }) => v.deliberacao_id)).size;
+  const comVoto = new Set((comVotoData ?? []).map((v: { deliberacao_id: string }) => v.deliberacao_id)).size;
   const total = total_deliberacoes ?? 0;
+  // Base vazia devolve "—", não "100%": ausência de voto não é consenso perfeito, e era isso que
+  // o fallback antigo afirmava — do jeito mais confiante possível.
   const taxa_consenso =
-    total > 0 ? (((total - comDivergencia) / total) * 100).toFixed(1) + "%" : "100%";
+    comVoto > 0 ? (((comVoto - comDivergencia) / comVoto) * 100).toFixed(1) + "%" : "—";
 
   const result: MandatosStats = {
     diretores_ativos: diretores_ativos ?? 0,
     participacoes_colegiadas: participacoes_colegiadas ?? 0,
     taxa_consenso,
     total_deliberacoes: total,
+    total_com_voto: comVoto,
   };
 
   return NextResponse.json(result);

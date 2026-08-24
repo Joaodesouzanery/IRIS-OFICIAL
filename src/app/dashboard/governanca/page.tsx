@@ -92,7 +92,10 @@ export default function GovernancaPage() {
   // Indicadores REAIS por agência (não repete o global). Só agências com dados.
   const { data: govAgencias } = useQuery({
     queryKey: ["governanca-agencias"],
-    queryFn: () => api.get<{ por_agencia: Array<{ agencia_id: string; sigla: string; nome: string; total: number; consenso: number; cobertura_nominal: number; deferimento: number; qualidade: number; sancao: number }> }>("/dashboard/governanca-agencias"),
+    // `consenso` é `number | null` desde a etapa60 (null = sem base de voto). Como `api.get` faz
+    // cast não checado, o tipo aqui é a única declaração do contrato — mantê-lo como `number`
+    // esconderia o null do compilador.
+    queryFn: () => api.get<{ por_agencia: Array<{ agencia_id: string; sigla: string; nome: string; total: number; consenso: number | null; cobertura_nominal: number; deferimento: number; qualidade: number; sancao: number }> }>("/dashboard/governanca-agencias"),
   });
 
   // Confiabilidade do consenso: % de deliberações com voto NOMINAL (ponderado por

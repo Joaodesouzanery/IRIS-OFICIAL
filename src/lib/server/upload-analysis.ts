@@ -18,7 +18,7 @@ import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 // eternamente em "low_confidence". Casam pelos trechos LIMPos das mensagens (que
 // têm mojibake no restante). Usado para computar o status do preview.
 export const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
-import { classifyRegulatoryDocument, extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
+import { classifyRegulatoryDocument, extractAnmMeetingMetadata, detectJuizo } from "@/lib/server/regulatory-documents";
 import {
   buildVoteSuggestions,
   getActiveDiretoresForVote,
@@ -301,6 +301,11 @@ export async function analyzeUploadPdf(input: {
         votos_ausentes_detectados: itemVotes.ausente,
         votos_impedidos_detectados: itemVotes.impedido,
         votos_em_autos_detectados: extractVotosEmAutos(item.raw_text).map((v) => v.nome),
+        // JUÍZO POR ITEM (fecha a etapa54 para atas). O juízo do DOCUMENTO não serve a uma ata:
+        // um item pode ser não-conhecido e os outros julgados no mérito — gravar o valor do
+        // documento em todos seria pior que não gravar. Medido: 10 itens de admissibilidade só na
+        // 83ª ROP, e nenhum deles era distinguível antes disto.
+        juizo: detectJuizo(item.raw_text),
         // Avisos do item: os do splitter (que este map DESCARTAVA — o leitor em `documentWarnings`
         // nunca os via) mais o da etapa51, divergência declarada sem dissidente imputável.
         // Não casa INFO_WARNING_RE de propósito: é problema de QUALIDADE — há dissenso no texto e
@@ -458,13 +463,15 @@ export async function analyzeUploadPdf(input: {
         votosContra: fields.nomes_votacao_contra?.length ?? 0,
         votosAbstencao: fields.nomes_votacao_abstencao?.length ?? 0,
       })),
+      // C16 alimentado pelos VOTOS SUGERIDOS, não pelos baldes de `extractFields`: a etapa50
+      // REMOVE o impedido daqueles baldes antes de devolvê-los, então comparar contra eles nunca
+      // acharia conflito — o check existiria e jamais dispararia. O conflito que interessa é o
+      // que sobrevive até a linha de voto, depois do casamento com o cadastro.
       ...checarImpedidoComVoto({
         impedidos: fields.nomes_votacao_impedido ?? [],
-        diretoresQueVotaram: [
-          ...(fields.nomes_votacao_favor ?? []),
-          ...(fields.nomes_votacao_contra ?? []),
-          ...(fields.nomes_votacao_abstencao ?? []),
-        ],
+        diretoresQueVotaram: mainVotosSugeridos
+          .filter((v) => v.tipo_voto !== "Ausente")
+          .map((v) => v.nome),
       }),
       ...checarAdmissibilidadeMalClassificada({
         juizo: fields.juizo, resultado: fields.resultado, texto: extraction.text,

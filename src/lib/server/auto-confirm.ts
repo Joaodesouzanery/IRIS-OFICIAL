@@ -88,6 +88,15 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
     return { ok: false, reason: `warning de qualidade: ${qualityWarnings[0].slice(0, 90)}` };
   }
 
+  // Etapa63: o gate BLOQUEANTE vale também aqui — e com mais razão. O confirm manual admite
+  // `override_motivo` porque há uma pessoa olhando o documento; o auto-confirm não tem ninguém.
+  // Sem esta guarda, o caminho automático seria justamente o que contorna o bloqueio.
+  const bloqueado = (preview as { bloqueado?: boolean }).bloqueado === true;
+  const codigos = (preview as { achados_bloqueantes?: string[] }).achados_bloqueantes ?? [];
+  if (bloqueado || codigos.length > 0) {
+    return { ok: false, reason: `bloqueado pela validação (${codigos.join(", ") || "achado bloqueante"})` };
+  }
+
   if (isVotoCapturavel) {
     // Gate do voto: relator presente E casando ≥0.85 (verificado pela rota via
     // relator_match_ok) + resultado extraído + chave de dedup (processo ou data).

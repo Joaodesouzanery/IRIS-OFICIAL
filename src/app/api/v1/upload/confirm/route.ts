@@ -53,6 +53,23 @@ async function gravarVotos(db: any, rows: VotoInsertRow[], contexto: string): Pr
   return null;
 }
 
+/**
+ * Insert de deliberação que tolera a coluna `juizo` ainda não existir.
+ *
+ * A migration `20260824120000` é aplicada À MÃO e o deploy vem antes dela (regra do projeto). Um
+ * insert com coluna inexistente falha INTEIRO — perderíamos a deliberação por causa de um rótulo.
+ * Em PGRST204/42703 o campo é removido e o insert é refeito.
+ */
+async function inserirDeliberacao(db: any, payload: Record<string, unknown>) {
+  const r = await db.from("deliberacoes").insert(payload).select("id").single();
+  const code = String((r as any)?.error?.code ?? "");
+  if ((code === "PGRST204" || code === "42703") && "juizo" in payload) {
+    const { juizo: _drop, ...semJuizo } = payload;
+    return db.from("deliberacoes").insert(semJuizo).select("id").single();
+  }
+  return r;
+}
+
 const RESULTADOS_VALIDOS = new Set<string>(RESULTADOS);
 
 const MICROTEMAS_VALIDOS = new Set<string>([
@@ -200,6 +217,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     for (const raw of deliberacoes) {
       const d = sanitizeDelib(raw as ConfirmDelib);
       const rawConfirm = raw as ConfirmDelib;
+      // `juizo` do documento, como o preview o extraiu (etapa54). Chega pelo extraction_raw.
+      const fieldsJuizo = typeof rawConfirm.extraction_raw?.juizo === "string"
+        && ["merito", "admissibilidade"].includes(rawConfirm.extraction_raw.juizo as string)
+        ? (rawConfirm.extraction_raw.juizo as string) : null;
       const effectiveAgenciaId = d.agencia_id || globalAgenciaId!;
       const diretoresList = demoData.mandatos()
         .filter((m) => m.agencia_id === effectiveAgenciaId)
@@ -417,6 +438,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     for (const raw of deliberacoes) {
       const d = sanitizeDelib(raw as ConfirmDelib);
       const rawConfirm = raw as ConfirmDelib;
+      // `juizo` do documento, como o preview o extraiu (etapa54). Chega pelo extraction_raw.
+      const fieldsJuizo = typeof rawConfirm.extraction_raw?.juizo === "string"
+        && ["merito", "admissibilidade"].includes(rawConfirm.extraction_raw.juizo as string)
+        ? (rawConfirm.extraction_raw.juizo as string) : null;
       const effectiveAgenciaId = d.agencia_id || globalAgenciaId!;
 
       if (!hasBudget(deadlineAt, 6_000)) {
@@ -758,9 +783,11 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             }
             const { data: child } = itemExistente
               ? { data: { id: itemExistente.id } }
-              : await db
-              .from("deliberacoes")
-              .insert({
+              : await inserirDeliberacao(db, {
+                // `juizo` POR ITEM: numa ata, um item pode ser não-conhecido e os outros julgados
+                // no mérito. Sem esta linha a coluna criada pela migration ficava sempre NULL — e
+                // o índice parcial de admissibilidade, morto.
+                ...(item.juizo ? { juizo: item.juizo } : {}),
                 numero_deliberacao: itemNumero,
                 numero_reuniao: d.numero_reuniao,
                 reuniao_ordinaria: d.reuniao_ordinaria,
@@ -818,9 +845,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   }),
                   warnings: item.warnings ?? [],
                 }, attachment),
-              })
-              .select("id")
-              .single();
+              });
 
             const itemVotingNames = item.votos_detectados ?? [];
             if (child) {
@@ -918,9 +943,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         }
         const { data: delib, error: deliberacaoErr } = delibExistente
           ? { data: { id: delibExistente.id }, error: null }
-          : await db
-          .from("deliberacoes")
-          .insert({
+          : await inserirDeliberacao(db, {
+            // Juízo do documento (deliberação avulsa é item único, então aqui o valor do
+            // documento É o do item).
+            ...(fieldsJuizo ? { juizo: fieldsJuizo } : {}),
             numero_deliberacao: d.numero_deliberacao,
             numero_reuniao: d.numero_reuniao,
             reuniao_ordinaria: d.reuniao_ordinaria,
@@ -965,9 +991,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               // caso auditável e recuperável (materializar-faltantes acha após cadastrar mandato).
               ...(activeDiretoresList.length === 0 ? { inferencia_sem_roster: true } : {}),
             }, attachment),
-          })
-          .select("id")
-          .single();
+          });
 
         if (deliberacaoErr || !delib) {
           console.error("[upload/confirm] Erro ao inserir deliberação:", deliberacaoErr);
