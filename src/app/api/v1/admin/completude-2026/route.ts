@@ -16,10 +16,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
 
-const NAO_FINAL = new Set(["pauta", "voto_individual", "documento_apoio"]);
+const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
 const YEAR_RE = /^(20)\d{2}$/;
 
 type Delib = {

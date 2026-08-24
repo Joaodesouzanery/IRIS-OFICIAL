@@ -125,6 +125,30 @@ type FinalDecisionRow = {
   documento_antt_tipo?: unknown;
 };
 
+/**
+ * Tipos de documento que NUNCA viram decisão final (etapa65) — fonte única.
+ *
+ * Estava copiado em 14 lugares: 6 `Set` locais com 3 nomes diferentes (`NAO_FINAL`, `TIPOS_APOIO`,
+ * `tiposApoio`), 5 arrays inline e 3 strings de filtro PostgREST. Todos idênticos, e um deles
+ * divergente — ver a nota abaixo.
+ *
+ * ⚠️ EXCEÇÃO DELIBERADA, não unificar: `admin/upload/pendencias-voto` omite `voto_individual` do
+ * seu conjunto de resíduo DE PROPÓSITO, porque classifica voto individual numa categoria própria
+ * antes de consultar os sets. Unificação cega ali quebra a tela.
+ */
+export const TIPOS_NAO_FINAIS = ["pauta", "voto_individual", "documento_apoio"] as const;
+
+/** Mesma lista, pronta para `.has()`. */
+export const TIPOS_NAO_FINAIS_SET: ReadonlySet<string> = new Set<string>(TIPOS_NAO_FINAIS);
+
+/** Mesma lista no formato do filtro `not("tipo_documento","in", …)` do PostgREST. */
+export const TIPOS_NAO_FINAIS_PG = `(${TIPOS_NAO_FINAIS.join(",")})`;
+
+/** O tipo de documento é um dos que nunca viram decisão final? */
+export function isTipoNaoFinal(tipo: unknown): boolean {
+  return TIPOS_NAO_FINAIS_SET.has(String(tipo ?? ""));
+}
+
 export function isFinalDecisionRecord(row: FinalDecisionRow): boolean {
   const hasRaw = row.raw_extraction != null;
   const raw = (row.raw_extraction ?? {}) as Record<string, unknown>;
@@ -137,7 +161,7 @@ export function isFinalDecisionRecord(row: FinalDecisionRow): boolean {
       : (row.documento_subtipo ?? row.documento_antt_tipo)) ?? "",
   );
 
-  if (["pauta", "voto_individual", "documento_apoio"].includes(tipo)) return false;
+  if (TIPOS_NAO_FINAIS_SET.has(tipo)) return false;
   if (["pauta", "voto_individual", "reuniao_deliberativa_eletronica", "reuniao_diretoria_publica", "reuniao_extraordinaria"].includes(subtipo)) {
     return false;
   }

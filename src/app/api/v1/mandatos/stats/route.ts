@@ -10,6 +10,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeMandatosStats } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { TIPOS_NAO_FINAIS_PG } from "@/lib/server/regulatory-documents";
 
 
 export async function GET(req: NextRequest) {
@@ -39,7 +40,7 @@ export async function GET(req: NextRequest) {
   let deliberQuery = db
     .from("deliberacoes")
     .select("id", { count: "exact", head: true })
-    .not("tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
+    .not("tipo_documento", "in", TIPOS_NAO_FINAIS_PG)
     .or("tipo_documento.neq.ata,documento_pai_id.not.is.null");
   if (agenciaId) deliberQuery = deliberQuery.eq("agencia_id", agenciaId);
 

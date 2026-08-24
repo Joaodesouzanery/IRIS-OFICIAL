@@ -11,7 +11,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { RESULTADOS } from "@/lib/utils";
 import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
-import { isDivergentVote, type TipoVoto } from "@/lib/server/vote-inference";
+import { repartirPorDivergencia } from "@/lib/server/vote-inference";
 
 const ALLOWED_PATCH_FIELDS = new Set([
   "numero_deliberacao",
@@ -169,11 +169,20 @@ export async function PATCH(
   if ("resultado" in updates) {
     const novoResultado = (updates.resultado as string | null) ?? null;
     const { data: votos } = await db.from("votos").select("id, tipo_voto").eq("deliberacao_id", params.id);
-    const idsDiv: string[] = [];
-    const idsNaoDiv: string[] = [];
-    for (const v of (votos ?? []) as Array<{ id: string; tipo_voto: string }>) {
-      (isDivergentVote(v.tipo_voto as TipoVoto, novoResultado) ? idsDiv : idsNaoDiv).push(v.id);
-    }
+    // Etapa65 — MESMO repartidor de `votos/recalcular-divergencia`. Antes esta porta chamava
+    // `isDivergentVote(tipo, resultado)` com DOIS argumentos, omitindo `unanime`: uma edição manual
+    // de resultado reintroduzia divergência falsa em item indeferido-por-unanimidade, e ela ficava
+    // lá até o cron rodar. O mesmo recálculo dava respostas diferentes conforme a porta.
+    const { data: delibUnan } = await db
+      .from("deliberacoes")
+      .select("unanimidade_detectada:raw_extraction->>unanimidade_detectada")
+      .eq("id", params.id)
+      .maybeSingle();
+    const { idsDivergentes: idsDiv, idsNaoDivergentes: idsNaoDiv } = repartirPorDivergencia(
+      (votos ?? []) as Array<{ id: string; tipo_voto: string }>,
+      novoResultado,
+      (delibUnan as { unanimidade_detectada?: unknown } | null)?.unanimidade_detectada,
+    );
     const aplicar = async (ids: string[], valor: boolean) => {
       for (let i = 0; i < ids.length; i += 100) {
         const chunk = ids.slice(i, i + 100);

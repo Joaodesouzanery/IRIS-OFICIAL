@@ -10,6 +10,7 @@
  */
 
 import { QUALIDADE_AGENCIAS } from "@/lib/server/qualidade-regulatoria";
+import { isTipoNaoFinal, TIPOS_NAO_FINAIS_PG } from "@/lib/server/regulatory-documents";
 
 const AMOSTRA_MINIMA = 5;
 
@@ -38,7 +39,7 @@ function median(values: number[]): number {
 
 function isFinal(tipo: string | null, paiId: string | null): boolean {
   // Conta como decisão final: não-pauta/voto/apoio. Itens de ata (com pai) contam.
-  if (["pauta", "voto_individual", "documento_apoio"].includes(String(tipo ?? ""))) return false;
+  if (isTipoNaoFinal(tipo)) return false;
   if (tipo === "ata" && !paiId) return false; // ata-mãe não conta (evita dupla contagem)
   return true;
 }
@@ -83,7 +84,7 @@ export async function collectDerivedEvidence(
       .from("votos")
       .select("is_nominal, is_divergente, deliberacoes!inner(agencia_id, tipo_documento)")
       .eq("deliberacoes.agencia_id", agenciaId)
-      .not("deliberacoes.tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
+      .not("deliberacoes.tipo_documento", "in", TIPOS_NAO_FINAIS_PG)
       .limit(20000);
     const totalVotos = (votos ?? []).length;
     const nominais = (votos ?? []).filter((v: any) => v.is_nominal).length;
@@ -115,7 +116,7 @@ export async function collectDerivedEvidence(
       .from("votos")
       .select("deliberacao_id, is_divergente, deliberacoes!inner(agencia_id, tipo_documento)")
       .eq("deliberacoes.agencia_id", agenciaId)
-      .not("deliberacoes.tipo_documento", "in", "(pauta,voto_individual,documento_apoio)")
+      .not("deliberacoes.tipo_documento", "in", TIPOS_NAO_FINAIS_PG)
       .eq("is_divergente", true)
       .limit(20000);
     for (const v of divergentes ?? []) delibsComDivergencia.add((v as any).deliberacao_id);

@@ -10,10 +10,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
+import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
 
-const TIPOS_APOIO = new Set(["pauta", "voto_individual", "documento_apoio"]);
+const TIPOS_APOIO = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
 
 type DelibRow = {
   id: string;

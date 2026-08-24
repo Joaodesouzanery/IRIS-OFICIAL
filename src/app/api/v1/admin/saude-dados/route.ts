@@ -13,6 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { findDiretorDuplicatas } from "@/lib/server/diretor-duplicatas";
+import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
 
@@ -306,7 +307,7 @@ export async function GET(req: NextRequest) {
 
   // Deliberações em dobro (mesma agência+número no mesmo ano, entre finais; ou
   // mesmo processo na mesma data) — legado anterior ao dedup da importação.
-  const tiposApoio = new Set(["pauta", "voto_individual", "documento_apoio"]);
+  const tiposApoio = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
   const gruposDelib = new Map<string, number>();
   for (const d of delibs) {
     if (tiposApoio.has(d.tipo_documento ?? "")) continue;

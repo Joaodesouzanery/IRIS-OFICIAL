@@ -496,6 +496,62 @@ vira `"[object Object]"` na tela — e é nos uploads que ele é mais provável.
 call-sites de array seguem sem `listaDe`. O error boundary cobre o dano de todos; a cobertura
 seletiva foi para onde o consumidor agrega direto, que é onde errar derruba a tela.
 
+## Fase 4 · bloco 5 — dívida de duplicação e diagnóstico da ANTT (24/08/2026)
+
+Decisão: **unificar só o que JÁ divergiu; o que ainda está idêntico ganha teste de paridade**.
+Refatorar tudo custa risco sem pagar nada — mas deixar cópias sem amarra nenhuma foi exatamente como
+a "sanção" acumulou 3 semânticas sem ninguém perceber.
+
+**Unificado (já tinha divergido):**
+- `isSancao` — 4 cópias, 3 semânticas. Ver bloco 2.
+- `TIPOS_NAO_FINAIS` / `TIPOS_NAO_FINAIS_SET` / `TIPOS_NAO_FINAIS_PG` / `isTipoNaoFinal` — a lista
+  `pauta|voto_individual|documento_apoio` estava em **14 sítios**: 6 `Set` locais com 3 nomes
+  diferentes (`NAO_FINAL`, `TIPOS_APOIO`, `tiposApoio`), 5 arrays inline e 3 strings PostgREST.
+  ⚠️ **Exceção preservada e TESTADA**: `admin/upload/pendencias-voto` omite `voto_individual` do
+  `RESIDUO` **de propósito** (classifica voto individual em categoria própria antes de consultar os
+  sets). Há um teste travando a exceção, para que a próxima limpeza não a "conserte".
+- `repartirPorDivergencia` / `deriveUnanime` — `deliberacoes/[id]` (PATCH manual) chamava
+  `isDivergentVote(tipo, resultado)` com **dois** argumentos, omitindo `unanime`, enquanto
+  `votos/recalcular-divergencia` passava o terceiro. Uma edição manual de resultado reintroduzia
+  divergência FALSA num item indeferido-por-unanimidade, e ela ficava lá até o cron rodar.
+
+**Com teste de paridade (ainda idênticas):** fórmula do Score de Governança (3 cópias, duas delas
+dentro de componentes client não exportados — a comparação é do código-fonte, e é melhor que o
+comentário "não deixar divergir" que existia e não impedia nada) e `RuntimeStatus` (2 declarações).
+Mutação verificada: mudar o peso do consenso em uma das cópias deixa o teste vermelho.
+
+### Diagnóstico do voto individual da ANTT — investigar, NÃO implementar (decisão do usuário)
+A pergunta inverteu. **Não falta scraper:** o coletor já reconhece, classifica e persiste voto
+individual ponta a ponta — `classifyDocumentLink` devolve `"voto"` (antt-2026-collector.ts:836),
+`parseProcessos` guarda apenas documentos de voto por processo deliberado (:767), o persist grava
+`tipo: "voto"` (:121), o enfileiramento inclui voto (:324, :537), `monitoring-runner` o aceita
+(:275) e `votos-diretores` o lê (:44).
+
+**E não existe listagem separada a raspar:** cada reunião publica quatro atalhos para a MESMA página
+(`…/1033-reuniao-de-diretoria` + `#pauta`, `#ata`, `#voto`). O fragmento é client-side — não há URL
+nova. Um coletor dedicado não teria o que coletar.
+
+**Por que rende 0%, então** — quatro pontos, todos no caminho de DESCOBERTA:
+1. `parseAnttMeetingPage:517-521` **descarta explicitamente** todo anchor de voto de nível superior
+   ("voto costuma vir dos processos, abaixo"), e `parseProcessos:764-774` só olha dentro de blocos
+   `"Processo Deliberado:"`. Se a seção `#voto` não estiver dentro de um desses blocos, nada é
+   coletado. Pior: o último bloco do `split` engole o resto do HTML, então voto publicado depois dos
+   processos é atribuído ao **último processo**.
+2. `classifyDocumentLink:834` exige `.pdf` no href — link para visualizador SEI vira `"outro"`.
+3. `enqueuePdfBuffer` recebe como `filename` o **texto do anchor** (:329), não o arquivo real:
+   anchor sem texto vira `"Voto.pdf"`, e `isAnttVotoFilename` falha por falta de número/ano.
+4. **O que fecha a conta:** o único voto individual certificado (`antt-voto-dab-002.pdf`) tem fonte
+   `SEI/ANTT 40351373` — entrou por **upload manual**. E **não existe nenhuma fixture de HTML de
+   página de reunião** no repo: nem `parseAnttMeetingPage` nem `parseProcessos` têm um único teste.
+   `colegiado-sources.ts:145` promete `"ANTT|voto_individual": "sempre"` e diz que os votos vêm
+   "ingeridos à parte" — o único caminho verificado dessa ingestão é a mão humana.
+
+**Esforço estimado (quando for implementar):** capturar 1 HTML real de página de reunião como
+fixture (~1h) → teste de `parseAnttMeetingPage`/`parseProcessos` contra ele (~2h) → corrigir os
+pontos 1–3 medidos contra a fixture (~3h). **Não é coletor novo.** Registrar também a 4ª cópia
+divergente do reconhecimento de voto ANTT: `regulatory-documents.ts:36` usa regex mais frouxa (sem
+número/ano, sem validar iniciais contra o cadastro) que `antt-manual-parser.ts:149`.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

@@ -18,6 +18,7 @@ import {
   type QualidadeNivel,
 } from "@/lib/server/qualidade-regulatoria";
 import { levelFromSignals, emptySiteSignals, type SiteSignals } from "@/lib/server/qualidade-site-coletor";
+import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 
 // Relevância mínima (0-100) para uma notícia contar como sinal de uma dimensão.
 const RELEVANCE_MIN = 50;
@@ -86,7 +87,7 @@ export async function classifyMaturidade(
       .limit(5000);
     const delibs: DelibRow[] = delibRows ?? [];
     const finais = delibs.filter((d) => {
-      if (["pauta", "voto_individual", "documento_apoio"].includes(String(d.tipo_documento ?? ""))) return false;
+      if (isTipoNaoFinal(d.tipo_documento)) return false;
       if (d.tipo_documento === "ata" && !d.documento_pai_id) return false;
       return true;
     });

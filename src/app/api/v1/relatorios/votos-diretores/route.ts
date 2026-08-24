@@ -17,6 +17,7 @@ import { isDemoRequest } from "@/lib/server/request-guards";
 import { reportDocument, REPORT_COLORS, REPORT_VOTE_COLORS } from "@/lib/report-theme";
 import { svgDonut, svgBarsH, svgLine } from "@/lib/report-charts";
 import { buildSimpleDocxFromHtml } from "@/lib/server/docx-export";
+import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -259,7 +260,7 @@ async function blocoReal(db: any, agenciaId: string, sigla: string, mandatos: Ma
     }
   }
 
-  const NAO_FINAL = new Set(["pauta", "voto_individual", "documento_apoio"]);
+  const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
   const delib: DelibStats = { finais: 0, deferidas: 0, indeferidas: 0 };
   for (const d of (delibsRes.data ?? []) as Array<{ resultado: string | null; tipo_documento: string | null; documento_pai_id: string | null }>) {
     if (NAO_FINAL.has(String(d.tipo_documento))) continue;

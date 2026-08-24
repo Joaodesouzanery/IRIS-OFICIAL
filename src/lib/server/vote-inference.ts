@@ -1,5 +1,6 @@
 import type { TipoDocumento, VotoSugerido } from "@/types";
 import { findBestMatch } from "@/lib/server/name-matcher";
+import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 
 export type DiretorVoteRecord = {
   id: string;
@@ -44,7 +45,7 @@ export function isFinalVoteDocument(input: {
   import_counts_as_final?: boolean | null;
 }) {
   if (input.import_counts_as_final === false) return false;
-  return !["pauta", "voto_individual", "documento_apoio"].includes(String(input.tipo_documento ?? ""));
+  return !isTipoNaoFinal(input.tipo_documento);
 }
 
 /**
@@ -369,6 +370,48 @@ function isPositiveResult(resultado: string | null): boolean | null {
  *    caso NÃO-unânime: ANTT/ANM).
  *  - Sem resultado conhecido → cai no comportamento anterior (Desfavorável).
  */
+/**
+ * Deriva o flag de unanimidade EFETIVO de uma deliberação (etapa65) — fonte única.
+ *
+ * A regra existia só dentro de `votos/recalcular-divergencia`, e o PATCH manual de
+ * `deliberacoes/[id]` chamava `isDivergentVote` com DOIS argumentos, omitindo o terceiro. Resultado
+ * medido: o mesmo recálculo dava respostas diferentes conforme a porta — uma edição manual de
+ * resultado reintroduzia divergência falsa num item indeferido-por-unanimidade, e ela ficava lá até
+ * alguém rodar o cron.
+ *
+ * `unanimidade_detectada` chega como texto ("true") quando vem de `->>` do PostgREST, e como
+ * boolean quando vem do JSON — os dois são aceitos.
+ */
+export function deriveUnanime(
+  unanimidadeDetectada: unknown,
+  votos: Array<{ tipo_voto: string }>,
+): boolean {
+  const flag = unanimidadeDetectada === true || unanimidadeDetectada === "true";
+  if (!flag) return false;
+  // Dissidência GRAVADA vence a declaração de unanimidade do texto: se há voto contrário ou
+  // abstenção registrado, o item não foi unânime, o que a ata diga.
+  return !votos.some((v) => v.tipo_voto === "Desfavoravel" || v.tipo_voto === "Abstencao");
+}
+
+/**
+ * Reparte os votos de uma deliberação em (divergentes, não divergentes). Usado pelos DOIS
+ * write-paths que re-derivam `is_divergente`, para que não voltem a divergir.
+ */
+export function repartirPorDivergencia<T extends { id: string; tipo_voto: string }>(
+  votos: T[],
+  resultado: string | null,
+  unanimidadeDetectada: unknown,
+): { idsDivergentes: string[]; idsNaoDivergentes: string[] } {
+  const unanime = deriveUnanime(unanimidadeDetectada, votos);
+  const idsDivergentes: string[] = [];
+  const idsNaoDivergentes: string[] = [];
+  for (const v of votos) {
+    (isDivergentVote(v.tipo_voto as TipoVoto, resultado, unanime) ? idsDivergentes : idsNaoDivergentes)
+      .push(v.id);
+  }
+  return { idsDivergentes, idsNaoDivergentes };
+}
+
 export function isDivergentVote(tipoVoto: TipoVoto, resultado: string | null, unanime = false): boolean {
   if (unanime) return false;
   if (tipoVoto === "Ausente") return false;

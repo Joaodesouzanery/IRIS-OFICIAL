@@ -27,12 +27,13 @@ import {
   type VotoInsertRow,
 } from "@/lib/server/vote-inference";
 import { upsertVotosProtegido } from "@/lib/server/votos-write";
+import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
-const NAO_FINAL = new Set(["pauta", "voto_individual", "documento_apoio"]);
+const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
 const YEAR_RE = /^(20)\d{2}$/;
 
 function arr(value: unknown): string[] {

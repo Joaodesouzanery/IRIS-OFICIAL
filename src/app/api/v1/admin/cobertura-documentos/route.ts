@@ -12,11 +12,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
+import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
 
 // Resultados que NÃO são decisão final (não contam como deliberação consolidada).
-const NAO_FINAL = new Set(["pauta", "voto_individual", "documento_apoio"]);
+const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
 
 interface AgenciaCobertura {
   agencia_id: string | null;

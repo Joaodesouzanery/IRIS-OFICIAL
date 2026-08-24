@@ -11,7 +11,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { isDivergentVote, type TipoVoto } from "@/lib/server/vote-inference";
+import { repartirPorDivergencia } from "@/lib/server/vote-inference";
 import { parseIntParam } from "@/lib/server/http-params";
 
 export const dynamic = "force-dynamic";
@@ -55,15 +55,14 @@ export async function POST(req: NextRequest) {
     if (votos.length === 0) continue;
     if (votos.every((v) => !v.is_nominal)) deliberacoesSoInferidas++;
 
-    // Espelha a guarda do buildVotoRows: unânime (e sem dissidência gravada) → ninguém
-    // divergente. `->>` devolve texto ("true"/null).
-    const unanimidadeFlag = d.unanimidade_detectada === "true";
-    const hasDissent = votos.some((v) => v.tipo_voto === "Desfavoravel" || v.tipo_voto === "Abstencao");
-    const unanime = unanimidadeFlag && !hasDissent;
+    // Etapa65 — `deriveUnanime`/`repartirPorDivergencia` são a FONTE ÚNICA desta regra; o PATCH
+    // manual de `deliberacoes/[id]` usa o mesmo repartidor. Antes a regra vivia só aqui.
+    const { idsDivergentes } = repartirPorDivergencia(votos, d.resultado ?? null, d.unanimidade_detectada);
+    const divSet = new Set(idsDivergentes);
 
     let afetou = false;
     for (const v of votos) {
-      const novo = isDivergentVote(v.tipo_voto as TipoVoto, d.resultado ?? null, unanime);
+      const novo = divSet.has(v.id);
       if (novo !== v.is_divergente) {
         divergenciaCorrigida++;
         afetou = true;

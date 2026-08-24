@@ -34,6 +34,7 @@ import type {
 } from "@/types";
 
 import { upsertVotosProtegido, sanitizeVotosSugeridos } from "@/lib/server/votos-write";
+import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 import {
   checarCoerenciaUnanimidade, checarImpedidoComVoto, checarVotoQualidadeDuplo, temBloqueio,
 } from "@/lib/server/consistency-checks";
@@ -526,7 +527,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           && Boolean(d.resultado)
           && (Boolean(d.relator) || d.nomes_votacao.length > 0);
         if (
-          ((!d.import_counts_as_final && !isImportableAta) || ["pauta", "voto_individual", "documento_apoio"].includes(d.tipo_documento))
+          ((!d.import_counts_as_final && !isImportableAta) || isTipoNaoFinal(d.tipo_documento))
           && !isAnttVotoCapturavel
         ) {
           // QA ago/2026: ata REAL cujo splitter não achou itens NÃO pode ser arquivada em
