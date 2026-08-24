@@ -3,7 +3,7 @@ import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
 import { avisoUnanimidadeContestada, avisoAtaItensFaltando } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
-import { extractFields, calcConfidence, extractItemVotes, buildRoleMap } from "@/lib/server/nlp-extractor";
+import { extractFields, calcConfidence, extractItemVotes, buildRoleMap, extractRetirada } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials, setAnttCargoMandatos, type AnttCargoMandato } from "@/lib/server/antt-manual-parser";
 import { extractPdfText, isPdfBuffer, sha256Hex, SCANNED_CHARS_PER_PAGE_THRESHOLD } from "@/lib/server/pdf-extractor";
 import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
@@ -228,6 +228,7 @@ export async function analyzeUploadPdf(input: {
 
   let ata_items: PreviewResult["ata_items"] | undefined;
   let ataItemStats: { itens_pre_dedup: number; duplicatas_removidas: number } | null = null;
+  const retirada = extractRetirada(extraction.text);
   if (tipo_documento === "ata") {
     const ataSplit = splitAtaItemsWithStats(extraction.text);
     const rawItems = ataSplit.items;
@@ -523,6 +524,9 @@ export async function analyzeUploadPdf(input: {
       // `impedimentos` é a chave DURÁVEL do motivo: a linha do voto vira "Ausente" (o CHECK não
       // comporta valor novo), e é daqui que a etapa59 promoverá `motivo_nao_voto='impedimento'`.
       impedimentos: fields.nomes_votacao_impedido,
+      // Retirada de pauta/reunião (etapa56): QUEM retirou e COM QUE BASE. É o que separa uma
+      // retirada regimental de uma sem justificativa — e nada disso era guardado.
+      ...(retirada ? { retirada } : {}),
       // Dedup intra-ata (etapa53). `itens_pre_dedup` é o número que a reconciliação de âncoras
       // (etapa63) compara: comparar contra o pós-dedup transformaria uma dedup CORRETA em alarme
       // permanente. `duplicatas_removidas` é informativo e fica registrado, nunca silencioso.

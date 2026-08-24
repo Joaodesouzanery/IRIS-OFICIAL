@@ -1,5 +1,6 @@
 ﻿import type { AtaPreviewItem, PreviewResultFields, TipoDocumento } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
+import { RE_RETIRADA, RE_SUSPENSAO } from "@/lib/server/ata-splitter";
 
 export type AnttManualDocumentType =
   | "pauta"
@@ -634,8 +635,11 @@ function detectDirectorAliases(value: string) {
 }
 
 function isRetiradaDePauta(value: string | null) {
-  const text = normalize(value ?? "");
-  return text.includes("retir") && text.includes("pauta");
+  // Etapa56: era `includes("retir") && includes("pauta")` — SEM adjacência. Bastava a palavra
+  // "pauta" aparecer em qualquer ponto do item para uma "retirada de interferências" marcar o
+  // processo como retirado. Agora o objeto da retirada vem de lista FECHADA e colada ao verbo,
+  // e "retirado da REUNIÃO/SESSÃO" — que "de pauta" não pegava — passa a contar.
+  return RE_RETIRADA.test(value ?? "");
 }
 
 function classifyAnttMicrotema(text: string) {
@@ -807,7 +811,7 @@ export function inferResultado(text: string): string | null {
   // errado e silencioso. Mesma precedência do ata-splitter. Regex com ADJACÊNCIA ("retirad*
   // [de] pauta"): o `includes("retirad") && includes("pauta")` antigo, promovido ao topo,
   // marcaria falso Retirado quando as palavras aparecem longe uma da outra.
-  if (/\bretirad\w*\s+(?:de\s+)?pauta\b|\bsobrest\w*|\bped(?:iu|ido)\s+(?:de\s+)?vistas?\b/.test(value)) {
+  if (RE_SUSPENSAO.test(value)) {
     return "Retirado de Pauta";
   }
   // Negativos — "indefer" (indeferimento/indeferido) E "indefir" (indeferir/indefiro,

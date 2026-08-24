@@ -461,9 +461,23 @@ function normalizeNumericAtaHierarchy(items: AtaItem[]): AtaItem[] {
   return normalized;
 }
 
+// Objeto da RETIRADA — lista FECHADA (etapa56). A ANTT também escreve "retirado da REUNIÃO" e
+// "retirado da SESSÃO", que só "de pauta" não pegava; e o teste frouxo do parser ANTT
+// (`includes("retir") && includes("pauta")`, sem adjacência) marcava retirada sempre que as duas
+// palavras existissem em qualquer ponto do item — "retirada de interferências" num processo cujo
+// assunto mencionava a pauta virava processo retirado. Lista fechada + adjacência resolve os dois.
+export const RETIRADA_OBJETOS = "pauta|reuni[ãa]o|sess[ãa]o|julgamento|delibera[çc][ãa]o|ordem\\s+do\\s+dia";
+export const RE_RETIRADA = new RegExp(
+  `\\bretirad[oa]s?\\s+(?:d[aeo]\\s+)?(?:${RETIRADA_OBJETOS})\\b` +
+  `|\\bretirar\\s+(?:d[aeo]\\s+)?(?:${RETIRADA_OBJETOS})\\b`,
+  "i",
+);
 // Suspensão da deliberação (retirada/sobrestamento/pedido de vista). NÃO casa "Voto Vista", que é
 // rótulo de ASSUNTO — item que ESTÁ sendo decidido, não suspenso.
-const RE_SUSPENSAO = /retirad[oa]\s+de\s+pauta|sobrest|ped(?:iu|ido)\s+(?:de\s+)?vistas?/i;
+export const RE_SUSPENSAO = new RegExp(
+  `${RE_RETIRADA.source}|\\bsobrest\\w*|\\bped(?:iu|ido)\\s+(?:de\\s+)?vistas?`,
+  "i",
+);
 // Dispositivo CONCLUSIVO: a matéria foi decidida NESTA sessão. Usado só para tirar a precedência
 // GLOBAL do gate de suspensão (etapa53) — nunca para inferir resultado, que continua saindo do
 // voto vencedor.
@@ -527,7 +541,7 @@ function findParentKey(itemNumero: string): string | null {
 export function inferResultadoFromText(text: string, unanimidade: boolean): string | null {
   // "ped(iu|ido) (de) vista(s)" cobre singular+plural; "voto vistas" mantido no PLURAL de
   // propósito (não casar o rótulo de assunto "Voto Vista", que é item EM decisão, não suspenso).
-  if (/retirad[oa]\s+de\s+pauta|ped(?:iu|ido)\s+(?:de\s+)?vistas?|voto\s+vistas|sobrest/i.test(text)) {
+  if (RE_SUSPENSAO.test(text) || /voto\s+vistas/i.test(text)) {
     return "Retirado de Pauta";
   }
   // NEGATIVO antes do positivo. `\bindefer\w*` cobre indeferido/indeferida E as formas que o

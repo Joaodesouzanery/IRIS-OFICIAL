@@ -12,7 +12,7 @@
  * Mantém retrocompatibilidade com padrão DEFERIDO/INDEFERIDO de outras agências.
  */
 
-import { parseDataExtensoANM } from "./ata-splitter";
+import { parseDataExtensoANM, RE_RETIRADA } from "./ata-splitter";
 import { isRoleWordOnly, isLikelyPersonName, isStrictPersonName } from "./name-matcher";
 import { flattenForMatch } from "./pdf-extractor";
 import { detectJuizo } from "./regulatory-documents";
@@ -48,7 +48,7 @@ const RE_PROCEDENCIA = /Proced[eê]ncia[:\s]+([^\n]{3,150})/gi;
 // INDEFERE-por-unanimidade cair no fallback e virar "Aprovado por Unanimidade" (bug).
 // `NEGA*`/`IMPROVID*`/`PROVID*` entram na etapa54: sem eles, um dispositivo "NEGA-LHE provimento"
 // não casava NADA e caía no fallback de unanimidade, virando resultado POSITIVO — inversão total.
-const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|NEGAR|NEGA(?:-LHE)?|NEGOU|NEGARAM|IMPROVID[OA]S?|DESPROVID[OA]S?|PROVID[OA]S?|RETIRAD[OA]\s*DE\s*PAUTA|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)(?![çÇ])\b/gi;
+const RE_RESULTADO = /\b(INDEFERID[OA]|INDEFERIMENTO|INDEFERIU|INDEFERE|INDEFERIR|PARCIALMENTE\s*DEFERID[OA]|DEFERID[OA]|DEFERIMENTO|DEFERIU|DEFERE|DEFERIR|NEGAR|NEGA(?:-LHE)?|NEGOU|NEGARAM|IMPROVID[OA]S?|DESPROVID[OA]S?|PROVID[OA]S?|RETIRAD[OA]S?\s*(?:D[AEO]\s*)?(?:PAUTA|REUNI[ÃA]O|SESS[ÃA]O|JULGAMENTO|DELIBERA[ÇC][ÃA]O|ORDEM\s+DO\s+DIA)|RATIFICA(?:D[OA]|R)?|RATIFICOU|APROVA(?:D[OA]|R)?(?:\s*COM\s*RESSALVAS)?|APROVOU|RECOMENDA(?:D[OA]|R)?|RECOMENDOU|DETERMINA(?:D[OA]|R)?|DETERMINOU|AUTORIZA(?:D[OA]|R)?|AUTORIZOU|HOMOLOGA(?:D[OA]|R)?|HOMOLOGOU|ARQUIVA(?:D[OA]|R)?|ARQUIVOU|ANULA(?:D[OA]|R)?|ANULOU|REVOGA(?:D[OA]|R)?|REVOGOU|CANCELA(?:D[OA]|R)?|CANCELOU|PREJUDICA(?:D[OA]|R)?)(?![çÇ])\b/gi;
 
 // Fórmula RITUAL da ARTESP — aparece em TODA deliberação, decida ela o que decidir: "Fica
 // RATIFICADA toda a instrução processual e DETERMINADA a adoção das medidas pertinentes".
@@ -178,6 +178,31 @@ export function extractDivergentesNomeados(text: string, roleMap: Record<string,
     if (resolved && !out.includes(resolved)) out.push(resolved);
   }
   return out;
+}
+
+// AUTOR e FUNDAMENTO da retirada (etapa56). "Processo retirado de pauta pelo Diretor X, nos termos
+// do art. 55 do Regimento Interno": saber QUEM retirou e COM QUE BASE é o que separa uma retirada
+// regimental de uma retirada sem justificativa — e hoje nada disso era guardado.
+const RE_RETIRADA_AUTOR = new RegExp(
+  `(?:${RE_RETIRADA.source})[^.]{0,140}?\\bpel[oa]\\s+(?:[Dd]iretor[a]?(?:[-\\s](?:Geral|Substitut[oa]))?\\s+|[Cc]onselheir[oa]\\s+|[Rr]elator[a]?\\s+)(${NOME})`,
+  "i",
+);
+const RE_RETIRADA_FUNDAMENTO =
+  /\bart(?:igo)?\.?\s*(\d+)(?:\s*,?\s*[^.]{0,40}?)?\bd[oa]\s+Regimento\s+Interno/i;
+
+export interface RetiradaInfo {
+  autor: string | null;
+  fundamento: string | null;
+}
+
+/** Autor e fundamento da retirada de pauta/reunião (null quando não há retirada no trecho). */
+export function extractRetirada(text: string): RetiradaInfo | null {
+  const flat = flattenForMatch(text);
+  if (!RE_RETIRADA.test(flat)) return null;
+  const autorRaw = RE_RETIRADA_AUTOR.exec(flat)?.[1]?.replace(/\s+/g, " ").trim() ?? null;
+  const autor = autorRaw && isStrictPersonName(autorRaw) ? autorRaw : null;
+  const artigo = RE_RETIRADA_FUNDAMENTO.exec(flat)?.[1] ?? null;
+  return { autor, fundamento: artigo ? `art. ${artigo} do Regimento Interno` : null };
 }
 
 /**
@@ -653,6 +678,13 @@ export function extractEmentaArtesp(text: string): string | null {
 
 // Prioridade para resultado principal quando há múltiplos verbos decisórios
 const RESULTADO_PRIORIDADE: Record<string, number> = {
+  // Etapa56: RETIRADO vem PRIMEIRO. Retirada é sobre o ANDAMENTO, não sobre o mérito — se a
+  // matéria saiu de pauta/reunião, ela NÃO foi decidida, e nenhum verbo de mérito no texto muda
+  // isso. Estava por último, então o vetor real "processo retirado da reunião cujo ASSUNTO cita
+  // 'indeferiu'" era gravado como Indeferido: um processo não decidido entrava na base como
+  // decisão negativa. O `inferResultadoFromText` do ata-splitter já testava retirada primeiro —
+  // os dois motores discordavam sobre o mesmo documento.
+  "Retirado de Pauta": 0,
   "Aprovado com Ressalvas": 1,
   "Aprovado": 2,
   "Autorizado": 3,
@@ -660,7 +692,6 @@ const RESULTADO_PRIORIDADE: Record<string, number> = {
   "Deferido": 5,
   "Indeferido": 6,
   "Parcialmente Deferido": 7,
-  "Retirado de Pauta": 8,
   // Etapa54: RATIFICAR e DETERMINAR são atos ANCILARES — instruem o processo, não decidem o
   // pleito. Estavam ACIMA de Deferido/Indeferido e por isso o ritual da ARTESP ("Fica RATIFICADA
   // toda a instrução processual e DETERMINADA a adoção das medidas pertinentes"), presente em toda
