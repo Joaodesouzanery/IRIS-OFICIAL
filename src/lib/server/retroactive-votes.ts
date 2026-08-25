@@ -106,10 +106,12 @@ export interface RetroactiveVotesResult {
  */
 export async function applyRetroactiveVotes(
   db: any,
-  { candidato, diretorId, reviewedBy }: {
+  { candidato, diretorId, reviewedBy, confiancaMatch }: {
     candidato: { id: string; agencia_id: string; nome_detectado: string };
     diretorId: string;
     reviewedBy: string | null;
+    /** Etapa67 — resolução automática SEM margem: o score fica carimbado em cada voto criado. */
+    confiancaMatch?: number | null;
   },
 ): Promise<RetroactiveVotesResult> {
   const thisDir: DiretorVoteRecord = { id: diretorId, nome: candidato.nome_detectado, nome_variantes: [] };
@@ -152,6 +154,10 @@ export async function applyRetroactiveVotes(
       activeDiretoresList: [],
       inferFromMandate: false,
     });
+    // Etapa67 — carimbo de baixa certeza do auto-resolver (só quando informado).
+    if (confiancaMatch != null) {
+      for (const r of rows) r.confianca_match = Math.round(confiancaMatch * 1000) / 1000;
+    }
     allRows.push(...rows);
   }
 

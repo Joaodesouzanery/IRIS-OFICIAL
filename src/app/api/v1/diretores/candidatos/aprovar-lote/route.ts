@@ -15,6 +15,7 @@ import { isDemoRequest, requireAdmin, requireAdminOrCron, getAuthenticatedUser }
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { getActiveDiretoresForVote } from "@/lib/server/vote-inference";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -126,6 +127,8 @@ export async function POST(req: NextRequest) {
   // INEQUÍVOCO (margem ≥0.15 sobre o 2º), é variante de grafia da mesma pessoa → aprova
   // como ele (não cria ninguém). Dois diretores próximos → segue exceção humana.
   let aprovadosPorMargem = 0;
+  let resolvidosPorMandato = 0;
+  let resolvidosSemMargem = 0;
   if (incluirNovos) {
     let qFaixa = db
       .from("diretor_candidatos")
@@ -145,7 +148,9 @@ export async function POST(req: NextRequest) {
         pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "nome não passa na validação estrita (prosa) — não vira variante" });
         continue;
       }
-      const m = findBestMatchComMargem(String(candidato.nome_detectado ?? ""), await diretoresDe(candidato.agencia_id));
+      const nomeCand = String(candidato.nome_detectado ?? "");
+      const listaCompleta = await diretoresDe(candidato.agencia_id);
+      const m = findBestMatchComMargem(nomeCand, listaCompleta);
       if (m.diretorId && m.score >= 0.6 && m.margem >= 0.15) {
         try {
           const result = await aprovarCandidato(db, candidato, { reviewedBy, diretorId: m.diretorId });
@@ -155,8 +160,57 @@ export async function POST(req: NextRequest) {
           console.error("[candidatos/aprovar-lote] Falha (margem):", e);
           pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "erro ao aprovar (margem)" });
         }
+        continue;
+      }
+
+      // ═══ AUTO-RESOLVER (etapa67) — nada espera humano ═══
+      //
+      // Passo 1 · MANDATO: a maioria das colisões reais é titular × ex-titular de épocas
+      // diferentes. Filtrar pelos ativos na data da deliberação de origem desfaz a ambiguidade
+      // sem heurística nova — o roster por data já é a espinha da inferência de voto.
+      let resolvido = false;
+      const delibId = (candidato.evidence as { deliberacao_id?: string } | null)?.deliberacao_id ?? null;
+      if (delibId) {
+        const { data: delib } = await db
+          .from("deliberacoes").select("data_reuniao").eq("id", delibId).maybeSingle();
+        const dataReuniao = (delib as { data_reuniao?: string | null } | null)?.data_reuniao ?? null;
+        if (dataReuniao) {
+          const ativos = await getActiveDiretoresForVote(db, candidato.agencia_id, dataReuniao, []);
+          if (ativos.length > 0) {
+            const mF = findBestMatchComMargem(nomeCand, ativos);
+            if (mF.diretorId && mF.score >= 0.6 && mF.margem >= 0.15) {
+              try {
+                const result = await aprovarCandidato(db, candidato, { reviewedBy, diretorId: mF.diretorId });
+                aprovados.push({ id: candidato.id, nome: candidato.nome_detectado, diretor_id: result.diretorId });
+                resolvidosPorMandato++;
+                resolvido = true;
+              } catch (e) {
+                console.error("[candidatos/aprovar-lote] Falha (mandato):", e);
+              }
+            }
+          }
+        }
+      }
+      if (resolvido) continue;
+
+      // Passo 3 · FALLBACK (exceção, não fluxo — a instrumentação abaixo mede se ele é raro
+      // como a hipótese prevê): aprova o melhor score e CARIMBA `confianca_match` em cada voto
+      // retroativo criado, para auditoria posterior. Sem UI própria até o número justificar.
+      if (m.diretorId && m.score >= 0.6) {
+        try {
+          const result = await aprovarCandidato(db, candidato, {
+            reviewedBy: `${reviewedBy ?? "auto"}:sem-margem`,
+            diretorId: m.diretorId,
+            confiancaMatch: m.score,
+          });
+          aprovados.push({ id: candidato.id, nome: candidato.nome_detectado, diretor_id: result.diretorId });
+          resolvidosSemMargem++;
+        } catch (e) {
+          console.error("[candidatos/aprovar-lote] Falha (sem-margem):", e);
+          pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "erro ao aprovar (sem-margem)" });
+        }
       } else {
-        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "dois diretores com score próximo — decidir manualmente" });
+        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "score < 0.6 em qualquer conjunto — segue o fluxo de nome novo" });
       }
     }
   }
@@ -225,6 +279,12 @@ export async function POST(req: NextRequest) {
     min_confidence: minConfidence,
     analisados: (candidatos ?? []).length + candidatosNovos.length,
     aprovados: aprovados.length,
+    // Etapa67 — a MEDIÇÃO do auto-resolver fica embutida: a primeira rodada de "Rodar tudo" em
+    // produção diz se o fallback sem margem é raro (hipótese) ou frequente. Só com o número na
+    // mão ele ganharia visibilidade própria.
+    resolvidos_por_margem: aprovadosPorMargem,
+    resolvidos_por_mandato: resolvidosPorMandato,
+    resolvidos_sem_margem: resolvidosSemMargem,
     aprovados_por_margem: aprovadosPorMargem,
     pulados: pulados.length,
     aprovados_detalhe: aprovados,

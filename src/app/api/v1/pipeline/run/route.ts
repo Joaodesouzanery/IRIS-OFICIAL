@@ -184,12 +184,22 @@ async function run(req: NextRequest) {
   // 6 · Candidatos: recompute (auto-aprova ≥0.85 + mescla estritas) e aprovar-lote (0.8 + novos).
   if (hasBudget(deadlineAt, 8_000)) {
     try {
-      await call(recomputePOST, "/api/v1/admin/diretores/candidatos/recompute?dry_run=0", {});
+      const rec = await call(recomputePOST, "/api/v1/admin/diretores/candidatos/recompute?dry_run=0", {});
       const r = await call(aprovarLotePOST, "/api/v1/diretores/candidatos/aprovar-lote", {
         min_confidence: 0.8,
         incluir_novos: true,
       });
-      etapas.diretores = { aprovados: r?.aprovados ?? 0, excecoes: r?.pulados ?? 0 };
+      // Etapa67 — a MEDIÇÃO do auto-resolver: as quatro contagens sobem até o resumo do
+      // "Rodar tudo". Se `sem_margem` for raro (hipótese: mandato resolve quase tudo), o
+      // fallback fica como está; se for frequente, ganha visibilidade — com o número na mão.
+      etapas.diretores = {
+        aprovados: r?.aprovados ?? 0,
+        excecoes: r?.pulados ?? 0,
+        rejeitados_lixo: rec?.grupos_rejeitados_lixo ?? 0,
+        resolvidos_por_mandato: r?.resolvidos_por_mandato ?? 0,
+        resolvidos_por_margem: r?.resolvidos_por_margem ?? 0,
+        resolvidos_sem_margem: r?.resolvidos_sem_margem ?? 0,
+      };
     } catch {
       etapas.diretores = { erro: "candidatos falharam nesta rodada" };
     }

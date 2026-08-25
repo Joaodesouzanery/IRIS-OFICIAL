@@ -32,7 +32,6 @@ import {
   RefreshCw,
   Upload,
   Zap,
-  UserCheck,
   Users,
   X,
 } from "lucide-react";
@@ -317,39 +316,8 @@ export default function VotosDiretoresPage() {
       })),
   });
 
-  const aprovarMutation = useMutation({
-    mutationFn: (id: string) =>
-      api.post<{ votos_retroativos?: { criados: number; deliberacoes: number } | null }>(
-        `/diretores/candidatos/${id}/aprovar`, {},
-      ),
-    onSuccess: (res) => {
-      setMatchError(null);
-      const r = res.votos_retroativos;
-      setMatchFeedback(
-        r ? `Aprovado: ${r.criados} voto(s) retroativo(s) em ${r.deliberacoes} deliberação(ões).` : "Candidato aprovado.",
-      );
-      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
-      queryClient.invalidateQueries({ queryKey: ["dashboard", "diretores-overview", "votos"] });
-      queryClient.invalidateQueries({ queryKey: ["diretor-votos"] });
-    },
-    onError: (err) => {
-      setMatchFeedback(null);
-      setMatchError(err instanceof Error ? err.message : "Erro ao aprovar candidato.");
-    },
-  });
-
-  const rejeitarMutation = useMutation({
-    mutationFn: (id: string) => api.post(`/diretores/candidatos/${id}/rejeitar`, {}),
-    onSuccess: () => {
-      setMatchError(null);
-      setMatchFeedback("Candidato rejeitado.");
-      queryClient.invalidateQueries({ queryKey: ["diretores-candidatos"] });
-    },
-    onError: (err) => {
-      setMatchFeedback(null);
-      setMatchError(err instanceof Error ? err.message : "Erro ao rejeitar candidato.");
-    },
-  });
+  // Etapa67 — as mutations de aprovar/rejeitar candidato saíram junto com o card: a rota
+  // individual continua existindo, mas a decisão agora é do auto-resolver do "Rodar tudo".
 
   // "Rodar tudo": encadeia a esteira inteira num clique (o plano grátis não roda os
   // crons). Verificar novos → Processar atas/votos → Auto-confirmar (loop) → Recalcular
@@ -397,6 +365,11 @@ export default function VotosDiretoresPage() {
           : null,
         (totais.ignorados_pauta_apoio ?? 0) > 0 ? `${totais.ignorados_pauta_apoio} pauta(s)/apoio arquivado(s)` : null,
         (totais.aprovados ?? 0) > 0 ? `${totais.aprovados} diretor(es)/nome(s) resolvido(s)` : null,
+        // Etapa67 — a medição do auto-resolver, visível: mandato/margem são os caminhos bons;
+        // `sem margem` é o fallback carimbado com confianca_match (esperado: raro).
+        (totais.rejeitados_lixo ?? 0) > 0 ? `${totais.rejeitados_lixo} nome(s)-lixo drenado(s)` : null,
+        (totais.resolvidos_por_mandato ?? 0) > 0 ? `${totais.resolvidos_por_mandato} desambiguado(s) pelo mandato` : null,
+        (totais.resolvidos_sem_margem ?? 0) > 0 ? `${totais.resolvidos_sem_margem} resolvido(s) SEM margem (auditáveis por confianca_match)` : null,
         (totais.reenfileirados ?? 0) > 0 ? `${totais.reenfileirados} reclassificado(s)` : null,
         (totais.votos ?? 0) > 0 ? `${totais.votos} voto(s) recuperado(s) em deliberações antigas` : null,
       ].filter(Boolean);
@@ -629,83 +602,12 @@ export default function VotosDiretoresPage() {
         </section>
       )}
 
-      {/* ── Matches de diretor pendentes de revisão ──────────────────────── */}
-      {(candidatos ?? []).length > 0 && (
-        <section className="card space-y-3">
-          <div className="flex items-center justify-between gap-3 flex-wrap">
-            <div className="flex items-center gap-2">
-              <UserCheck className="w-4 h-4 text-brand" />
-              <p className="section-label">Matches pendentes ({(candidatos ?? []).length})</p>
-            </div>
-          </div>
-          {/* Etapa67 — o texto antigo dizia "confiança média" para cartões de 35% (piso inventado
-              sobre score ~0). Depois da drenagem, o que sobra aqui são nomes REAIS ainda ambíguos
-              entre diretores parecidos — e o "Rodar tudo" resolve a maioria pelo mandato ativo
-              na data. Este card tende a esvaziar; o que aparecer é exceção genuína. */}
-          <p className="text-xs text-text-muted">
-            Nomes reais de pessoa cujo match entre diretores parecidos ainda não foi resolvido pelo
-            automático. O &quot;Rodar tudo&quot; desambigua pelo mandato ativo na data da deliberação;
-            aprovar aqui cria os votos retroativos daquele nome.
-          </p>
-          {matchFeedback && (
-            <div className="border border-success/30 bg-success/10 rounded-card p-2.5 text-sm text-success">
-              {matchFeedback}
-            </div>
-          )}
-          {matchError && (
-            <div className="border border-error/30 bg-error/10 rounded-card p-2.5 text-sm text-error">
-              {matchError}
-            </div>
-          )}
-          <div className="space-y-2 max-h-96 overflow-y-auto">
-            {(candidatos ?? []).map((c) => {
-              const pending = (aprovarMutation.isPending && aprovarMutation.variables === c.id) ||
-                (rejeitarMutation.isPending && rejeitarMutation.variables === c.id);
-              return (
-                <div key={c.id} className="flex items-center justify-between gap-3 border border-border rounded-card p-3">
-                  <div className="min-w-0">
-                    <p className="text-sm font-medium text-text-primary truncate">
-                      {c.nome_detectado}
-                      {c.diretor?.nome ? <span className="text-text-muted font-normal"> → possível match: {c.diretor.nome}</span> : null}
-                    </p>
-                    <p className="text-xs text-text-muted mt-0.5">
-                      {c.agencia?.sigla ?? "Agência não definida"} · fonte: {c.source_type} · {Math.round(c.confidence * 100)}% de confiança
-                      {(() => {
-                        const ev = (c.evidence ?? {}) as Record<string, unknown>;
-                        const partes = [
-                          ev.numero_reuniao ? `reunião ${ev.numero_reuniao}ª` : null,
-                          ev.numero_deliberacao ? `delib. ${ev.numero_deliberacao}` : null,
-                          typeof ev.processo === "string" && ev.processo ? `proc. ${String(ev.processo).slice(0, 24)}` : null,
-                          c.created_at ? new Date(c.created_at).toLocaleDateString("pt-BR") : null,
-                        ].filter(Boolean);
-                        return partes.length ? ` · ${partes.join(" · ")}` : "";
-                      })()}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-2 shrink-0">
-                    <button
-                      onClick={() => aprovarMutation.mutate(c.id)}
-                      disabled={pending || demoEnabled || isViewer}
-                      className="btn-primary text-xs"
-                    >
-                      {pending && aprovarMutation.variables === c.id ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
-                      Aprovar
-                    </button>
-                    <button
-                      onClick={() => rejeitarMutation.mutate(c.id)}
-                      disabled={pending || demoEnabled || isViewer}
-                      className="btn-secondary text-xs text-error border-error/30 hover:bg-error/10"
-                    >
-                      <X className="w-3.5 h-3.5" />
-                      Rejeitar
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-      )}
+      {/* Etapa67 — o card "Matches Pendentes" saiu da tela (decisão do usuário: nada espera
+          humano). O "Rodar tudo" drena o lixo, resolve ambiguidade pelo MANDATO ativo na data,
+          aprova por margem, e no fallback sem margem aprova o melhor score carimbando
+          `confianca_match` no voto. A rota /diretores/candidatos segue existindo para
+          diagnóstico; as contagens (resolvidos_por_mandato / por_margem / sem_margem /
+          rejeitados_lixo) saem na resposta do aprovar-lote e do recompute. */}
 
       {/* ── Diretores possivelmente duplicados (auditoria fuzzy) ─────────── */}
       {(duplicatas?.pares ?? []).length > 0 && (

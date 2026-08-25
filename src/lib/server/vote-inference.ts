@@ -38,6 +38,13 @@ export type VotoInsertRow = {
   motivo_nao_voto?: "ausencia" | "impedimento" | "suspeicao" | "vista" | "sobrestamento" | "vacancia";
   /** Voto proferido em sessão ANTERIOR e só registrado nesta ata (etapa57). */
   voto_em_autos?: boolean;
+  /**
+   * Score do match nome→diretor quando a resolução foi AUTOMÁTICA SEM margem (etapa67 — o
+   * fallback do auto-resolver). Fica na linha para auditoria: é o que permite revisar depois
+   * exatamente os votos atribuídos com menor certeza. Coluna da migration 20260824120000;
+   * `votos-write.ts` a remove do payload enquanto o banco não a tiver.
+   */
+  confianca_match?: number;
 };
 
 export function isFinalVoteDocument(input: {

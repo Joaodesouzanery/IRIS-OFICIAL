@@ -27,6 +27,8 @@ export interface AprovarCandidatoOpts {
   dataInicio?: string | null; // ISO yyyy-mm-dd → cria mandato
   dataFim?: string | null;
   reviewedBy?: string | null;
+  /** Etapa67 — score do match quando a resolução automática foi SEM margem (vai ao voto). */
+  confiancaMatch?: number | null;
 }
 
 export interface AprovarCandidatoResult {
@@ -194,6 +196,7 @@ export async function aprovarCandidato(
       candidato: { id: candidato.id, agencia_id: candidato.agencia_id, nome_detectado: candidato.nome_detectado },
       diretorId,
       reviewedBy: opts.reviewedBy ?? null,
+      confiancaMatch: opts.confiancaMatch ?? null,
     });
   } catch (e) {
     console.error("[candidato-approval] Falha ao criar votos retroativos:", e);
