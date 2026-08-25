@@ -712,6 +712,39 @@ preâmbulo. Certificação 153 → **154**.
 
 Mutação verificada nas quatro correções.
 
+## Fase 5 · bloco 3 — o teste FIM-A-FIM (24/08/2026)
+
+`etapa66-fim-a-fim.test.ts` — o primeiro que atravessa **PDF real → `analyzeUploadPdf` →
+`buildVotoRows` → `analytics-engine`** e assere invariantes sobre o resultado final.
+
+Por que faltava, medido por varredura: `analyzeUploadPdf` aparecia em 4 arquivos de teste,
+`buildVotoRows` em 6, `analytics-engine` em 2 — e **nenhum cruzava os três**. A maior parte dos
+defeitos das últimas rodadas apareceu justamente na COMPOSIÇÃO (rota × engine, numerador ×
+denominador, extração × projeção SQL), e as invariantes da etapa65 só viam corpus SINTÉTICO.
+
+**Duas lições que o próprio teste ensinou na primeira execução:**
+
+1. **O primeiro "achado" era artefato da INVARIANTE, não do código.** Ele acusou a 81ª — "impedido
+   com voto Favoravel" — porque eu agreguei impedidos por DOCUMENTO. Medido: por ITEM o
+   impedimento é tratado certo (`Ausente`); o diretor está impedido no 2.1.1 e vota legitimamente
+   em outro item. Escopo corrigido para o item. **Mesma classe do C03** — alarme que dispara pelo
+   motivo errado treina o revisor a ignorá-lo.
+2. **O corpus REAL não substitui o sintético.** A regressão de `taxa_sancao` (numerador sobre todas
+   as linhas) **passou verde** no fim-a-fim, porque os 16 documentos não contêm o estado
+   adversarial que faz a taxa estourar — item retirado com `microtema='multa'`. A trava foi
+   reescrita para comparar o valor PUBLICADO pelo engine com um cálculo independente, e aí a
+   mutação fica vermelha. Os dois corpora ficam: **o sintético cobre estados que os documentos não
+   têm; o real cobre a composição que o sintético não vê.**
+
+Invariantes cobertas: taxa em [0,100] em 5 agregações; soma dos quatro estados = pautado por
+documento; admissibilidade sobrevive ao pipeline; impedido só `Ausente` **no mesmo item**; nenhum
+voto para quem o documento não nomeia; ninguém em CONTRA que o dispositivo declara vencedor;
+`taxa_sancao` bate com o cálculo independente; consenso sem base é `null`.
+
+⚠️ Limite declarado no cabeçalho do arquivo: o harness roda com `db: null`, então o roster é
+SINTETIZADO dos nomes que o próprio documento cita. É fiel ao que a produção faz quando não há
+mandato cadastrado, mas não substitui conferência contra o cadastro real.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
