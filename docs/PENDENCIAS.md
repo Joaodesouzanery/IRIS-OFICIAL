@@ -633,6 +633,40 @@ LEFT JOIN public.agencias a ON a.id = f.agencia_id
 GROUP BY ROLLUP (a.sigla) ORDER BY a.sigla NULLS LAST;
 ```
 
+## Fase 5 · bloco 7 — diagnóstico READ-ONLY da inversão de sinal (24/08/2026)
+
+`GET /api/v1/admin/votos/diagnostico-direcao` — **não escreve nada**, não tem `?dry_run`, não tem
+ramo de aplicação. O teste prova a propriedade: o banco falso lança em `insert`/`update`/`delete`/
+`upsert`, então uma escrita acidental quebra a suíte.
+
+**Ela não é só prudência: é a VERIFICAÇÃO de que a correção da etapa65 funciona em dado real** —
+coisa que teste de unidade não dá.
+- Listar exatamente o que o gabarito prevê (79ª e 83ª ROP da ANM) ⇒ correção provada em produção.
+- Listar **muito mais** ⇒ ela mexeu em algo não previsto, e é melhor descobrir antes de escrever.
+
+Como funciona: para cada voto `Desfavoravel`, reaplica `extractAutoresDoVotoAprovado` sobre o
+DISPOSITIVO persistido (`resumo_pleito`) usando o `roleMap` do PREÂMBULO — que vive no documento
+PAI, porque o filho de ata não persiste `raw_text` (omissão por tamanho). Cargo não resolvido não
+acusa ninguém.
+
+### ⚠️ Rodar DUAS vezes — o número envelhece
+Qualquer mudança nos caminhos que gravam `contra` muda este resultado, e a rodada seguinte
+(simetria do extrator) mexe justamente neles.
+
+| Execução | Quando | Para quê |
+|---|---|---|
+| #1 | agora, antes da simetria | verificação da correção da etapa65 em dado real |
+| #2 | depois da simetria | **base da decisão** de retroação |
+
+Registrar as duas contagens lado a lado: a diferença entre elas é o efeito da simetria sobre dado
+real, que nenhum teste de unidade mede.
+
+**Operação:** chamar a rota autenticado como admin e anotar `total_afetadas`,
+`total_votos_invertidos` e `por_agencia`. A aplicação retroativa é decisão separada, em commit
+separado — e quando acontecer, a data entra em `docs/METODOLOGIA-METRICAS.md`, porque este dado
+alimenta perfil público de diretor: sem a data, um relatório de setembro diverge de um de agosto
+sem explicação.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
