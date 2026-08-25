@@ -66,12 +66,60 @@ export default function DiretorPerfilPage() {
         </div>
       </div>
 
-      {/* KPIs */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <Kpi label="Total de votos" value={perfil.stats.total_votos} />
-        <Kpi label="Favoráveis" value={perfil.stats.favoravel} tone="success" />
-        <Kpi label="Divergentes" value={perfil.stats.divergente} tone={perfil.stats.divergente ? "warning" : "default"} />
-        <Kpi label="% Divergência" value={`${perfil.stats.pct_divergente.toFixed(1)}%`} />
+      {/* ═══ Etapa67 — as TRÊS FAMÍLIAS de métrica, cada uma com a base que a sustenta ═══
+          A tela antiga mostrava `pct_divergente` com o denominador CONTAMINADO por voto inferido
+          e descartava o bloco `base` inteiro que a API já publicava — nada rotulava nominal ×
+          inferido. O voto inferido sustenta carga e desfecho; NÃO sustenta dissenso (inferido é
+          não-divergente por construção — a taxa seria tautológica). */}
+
+      {/* Família 1 · CARGA E DESFECHO — base completa (todas as fontes), todas as agências */}
+      <div>
+        <p className="section-label mb-2">Carga e desfecho <span className="font-normal normal-case text-text-label">· base completa (nominal + inferido)</span></p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <Kpi label="Matérias relatadas" value={perfil.relatoria?.relatadas ?? 0} tone="brand" />
+          <Kpi
+            label="Deferimento das relatadas"
+            value={perfil.relatoria?.taxa_deferimento != null
+              ? `${perfil.relatoria.taxa_deferimento.toFixed(1)}%`
+              : `— · ${perfil.relatoria?.decididas ?? 0} decidida(s)`}
+          />
+          <Kpi label="Total de votos" value={perfil.stats.total_votos} />
+          <Kpi label="Favoráveis" value={perfil.stats.favoravel} tone="success" />
+        </div>
+        <p className="text-[11px] text-text-label mt-1">
+          Relatoria é dado NOMINAL em 100% dos itens — não depende da cobertura de dissenso.
+        </p>
+      </div>
+
+      {/* Família 2 · DISSENSO — só sobre a base NOMINAL, com o n sempre visível */}
+      <div>
+        <p className="section-label mb-2">Dissenso <span className="font-normal normal-case text-text-label">· somente votos lidos do documento (n = {perfil.base?.base_nominal ?? 0})</span></p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <Kpi
+            label="% Divergência (nominal)"
+            value={perfil.base?.pct_divergente_nominal != null
+              ? `${perfil.base.pct_divergente_nominal.toFixed(1)}%`
+              : `— · 0 de ${perfil.stats.total_votos} lido(s)`}
+            tone={perfil.base?.pct_divergente_nominal ? "warning" : "default"}
+          />
+          <Kpi label="Base nominal" value={perfil.base?.base_nominal ?? 0} />
+          <Kpi label="Divergentes (todas as fontes)" value={perfil.stats.divergente} tone={perfil.stats.divergente ? "warning" : "default"} />
+          <Kpi label="Votos inferidos" value={perfil.stats.votos_inferidos ?? Math.max(0, perfil.stats.total_votos - (perfil.base?.base_nominal ?? 0))} />
+        </div>
+        <p className="text-[11px] text-text-label mt-1">
+          Voto inferido por unanimidade é não-divergente por construção — só a base nominal mede dissenso.
+        </p>
+      </div>
+
+      {/* Família 3 · CONDUTA PROCESSUAL — 100% documental; pequena, e ninguém media */}
+      <div>
+        <p className="section-label mb-2">Conduta processual <span className="font-normal normal-case text-text-label">· declarada pela própria ata</span></p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <Kpi label="Impedimentos declarados" value={perfil.base?.impedido ?? 0} />
+          <Kpi label="Não votou (ausência)" value={perfil.base?.nao_votou ?? 0} />
+          <Kpi label="Votos em autos" value={perfil.base?.votos_em_autos ?? 0} />
+          <Kpi label="Participações" value={perfil.base?.participacoes ?? perfil.stats.total_votos} />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -152,7 +200,7 @@ export default function DiretorPerfilPage() {
   );
 }
 
-function Kpi({ label, value, tone = "default" }: { label: string; value: number | string; tone?: "default" | "success" | "warning" }) {
+function Kpi({ label, value, tone = "default" }: { label: string; value: number | string; tone?: "default" | "success" | "warning" | "brand" }) {
   return (
     <div className="card">
       <p className="text-xs text-text-label font-mono uppercase tracking-wider">{label}</p>
@@ -160,6 +208,7 @@ function Kpi({ label, value, tone = "default" }: { label: string; value: number 
         "text-2xl font-semibold mt-1",
         tone === "success" && "text-success",
         tone === "warning" && "text-warning",
+        tone === "brand" && "text-brand",
         tone === "default" && "text-text-primary",
       )}>{value}</p>
     </div>

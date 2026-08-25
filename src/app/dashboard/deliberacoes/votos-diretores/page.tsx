@@ -8,6 +8,7 @@ import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import { useViewer } from "@/lib/use-viewer";
+import { CAPACIDADE_POR_EIXO } from "@/lib/server/colegiado-sources";
 import type {
   Agencia,
   DeliberacoesBackfillResponse,
@@ -37,6 +38,15 @@ import {
 } from "lucide-react";
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
+
+// Etapa67 — matriz de capacidade por eixo (módulo puro, importável no client).
+const EIXO_LABEL: Record<string, string> = {
+  presenca: "Presença",
+  relatoria: "Relatoria",
+  merito: "Sentido do mérito",
+  impedimento: "Impedimento",
+  dissenso: "Dissenso nominal",
+};
 
 // O backfill roda em RODADAS: cada chamada cabe no orçamento do servidor (~90s)
 // e responde parcial=true enquanto houver fontes/reuniões por cobrir; o skip-set
@@ -979,6 +989,43 @@ export default function VotosDiretoresPage() {
           pipeline das deliberações, agora alimentado também pelos votos individuais de cada diretor.
           Clique em um diretor para ver o histórico de deliberações.
         </p>
+
+        {/* Etapa67 — matriz de capacidade POR EIXO, no lugar do aviso genérico de "base nominal".
+            Só a linha do DISSENSO é escassa; presença, relatoria e mérito são densos em todas as
+            agências. É o que explica por que o perfil de um diretor da ANTT não é "vazio". */}
+        <div className="overflow-x-auto">
+          <table className="text-[11px] text-text-muted">
+            <thead>
+              <tr className="text-left">
+                <th className="pr-3 py-1 font-medium">O que a FONTE publica</th>
+                {["ANM", "ANTT", "ARTESP"].map((sig) => (
+                  <th key={sig} className="px-2 py-1 font-medium text-center">{sig}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {(Object.entries(CAPACIDADE_POR_EIXO) as Array<[string, Record<string, string>]>).map(([eixo, porAg]) => (
+                <tr key={eixo} className="border-t border-border/40">
+                  <td className="pr-3 py-1 capitalize">{EIXO_LABEL[eixo] ?? eixo}</td>
+                  {["ANM", "ANTT", "ARTESP"].map((sig) => (
+                    <td key={sig} className="px-2 py-1 text-center">
+                      <span className={cn(
+                        "inline-block px-1.5 rounded text-[10px] font-mono uppercase",
+                        porAg[sig] === "nominal" && "bg-success/15 text-success",
+                        porAg[sig] === "parcial" && "bg-warning/15 text-warning",
+                        porAg[sig] === "nenhum" && "bg-bg-hover text-text-label",
+                      )}>{porAg[sig] ?? "?"}</span>
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="text-[10px] text-text-label mt-1">
+            &ldquo;Nenhum&rdquo; é limite da FONTE, não do sistema — o dissenso da ANTT vem dos documentos de
+            Voto, ingeridos à parte.
+          </p>
+        </div>
       </section>
     </div>
   );

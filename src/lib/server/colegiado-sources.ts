@@ -157,6 +157,35 @@ export function capacidadeNominal(
   return CAPACIDADE_NOMINAL[chave] ?? "parcial";
 }
 
+// ─── Etapa 67: capacidade por EIXO — a matriz que finalmente tem leitor ──────
+/**
+ * O booleano "publica voto nominal?" era grosseiro demais, e a matriz por (órgão, documento)
+ * acima nunca ganhou um consumidor — ficou código morto desde a etapa61. O corte certo é por
+ * EIXO DE MÉTRICA: só a linha do dissenso é escassa; presença, relatoria e mérito são densos em
+ * todas as agências. É esta tabela que a UI usa para dizer, ao lado de cada família de métrica,
+ * qual é o limite DA FONTE — em vez do aviso genérico "base nominal X%".
+ *
+ *   · `nominal` — o documento nomeia; cobertura estrutural de ~100%;
+ *   · `parcial` — nomeia só em parte dos casos (dissenso da ANM ~7%; procedência DIR-* da ARTESP);
+ *   · `nenhum`  — a fonte não publica; o eixo depende de outra via (ex.: dissenso ANTT ← voto
+ *                 individual, ingerido à parte).
+ */
+export type EixoMetrica = "presenca" | "relatoria" | "merito" | "impedimento" | "dissenso";
+
+export const CAPACIDADE_POR_EIXO: Record<EixoMetrica, Record<string, CapacidadeNominal>> = {
+  // Quem estava na sessão. ANM/ANTT: roster narrativo/lista; ARTESP: assinatura eletrônica.
+  presenca: { ANM: "nominal" as CapacidadeNominal, ANTT: "nominal" as CapacidadeNominal, ARTESP: "parcial" as CapacidadeNominal },
+  // O eixo denso que ninguém usava: ANM pelo bloco de relator, ANTT pela sigla do voto,
+  // ARTESP parcial (procedência DIR-* nomeia diretoria, não pessoa).
+  relatoria: { ANM: "nominal" as CapacidadeNominal, ANTT: "nominal" as CapacidadeNominal, ARTESP: "parcial" as CapacidadeNominal },
+  // O sentido endossado é LITERAL no dispositivo, nas três.
+  merito: { ANM: "nominal" as CapacidadeNominal, ANTT: "nominal" as CapacidadeNominal, ARTESP: "nominal" as CapacidadeNominal },
+  // Só a ANM declara impedimento na ata (medido no corpus; nas outras não foi observado).
+  impedimento: { ANM: "nominal" as CapacidadeNominal, ANTT: "nenhum" as CapacidadeNominal, ARTESP: "nenhum" as CapacidadeNominal },
+  // A linha escassa — a única. ANM ~7%; ANTT 0% na ata mas nominal no documento de voto.
+  dissenso: { ANM: "parcial" as CapacidadeNominal, ANTT: "parcial" as CapacidadeNominal, ARTESP: "nenhum" as CapacidadeNominal },
+};
+
 /** Frase pronta para a UI — o texto é parte da correção, não enfeite. */
 export function explicacaoCapacidadeNominal(
   agenciaSigla: string | null | undefined,
