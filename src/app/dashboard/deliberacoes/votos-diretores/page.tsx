@@ -914,6 +914,9 @@ export default function VotosDiretoresPage() {
               <thead>
                 <tr className="text-left text-xs text-text-muted border-b border-border">
                   <th className="py-2 pr-3 font-medium">Diretor</th>
+                  {/* Etapa67 — relatoria: nominal em 100% dos itens, o eixo que não depende do
+                      dissenso. É a coluna que preenche o perfil do diretor da ANTT/ARTESP. */}
+                  <th className="py-2 px-3 font-medium text-right" title="Matérias relatadas por este diretor — dado nominal em 100% dos itens">Relatorias</th>
                   <th className="py-2 px-3 font-medium text-right">Votos</th>
                   <th className="py-2 px-3 font-medium text-right">Favoráveis</th>
                   <th className="py-2 px-3 font-medium text-right">Desfavoráveis</th>
@@ -941,6 +944,7 @@ export default function VotosDiretoresPage() {
                           </span>
                         )}
                       </td>
+                      <td className="py-2 px-3 text-right text-brand">{formatNumber(d.relatorias ?? 0)}</td>
                       <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.total)}</td>
                       <td className="py-2 px-3 text-right text-success">{formatNumber(d.favoravel)}</td>
                       <td className="py-2 px-3 text-right text-text-secondary">{formatNumber(d.desfavoravel)}</td>
@@ -954,7 +958,7 @@ export default function VotosDiretoresPage() {
                     </tr>
                     {selectedDirector?.diretor_id === d.diretor_id ? (
                       <tr key={`${d.diretor_id}-drilldown`}>
-                        <td colSpan={7} className="pb-3 pt-1 px-0">
+                        <td colSpan={8} className="pb-3 pt-1 px-0">
                           <DrilldownPanel
                             diretor={d}
                             votos={drilldownVotos ?? []}

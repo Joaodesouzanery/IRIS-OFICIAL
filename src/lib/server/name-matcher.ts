@@ -85,7 +85,7 @@ export interface MatchResult {
 }
 
 // ─── Matching ─────────────────────────────────────────────────────────────
-const MATCH_THRESHOLD = 0.85; // equivalente ao 85 do rapidfuzz
+export const MATCH_THRESHOLD = 0.85; // equivalente ao 85 do rapidfuzz
 
 /**
  * Gera formas parciais de um nome completo (prefixo de tokens + primeiro+último +

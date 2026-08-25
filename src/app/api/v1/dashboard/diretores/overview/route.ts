@@ -6,6 +6,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { contarRelatoriasPorDiretor } from "@/lib/server/relatoria";
 import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretoresOverview } from "@/lib/server/analytics-engine";
@@ -49,7 +50,7 @@ export async function GET(req: NextRequest) {
   // inclusive com 0 voto.
   let diretoresQuery = db
     .from("diretores")
-    .select("id, nome, cargo, agencia_id, review_status")
+    .select("id, nome, nome_variantes, cargo, agencia_id, review_status")
     .limit(5000);
   if (agenciaId) diretoresQuery = diretoresQuery.eq("agencia_id", agenciaId);
 
@@ -83,7 +84,7 @@ export async function GET(req: NextRequest) {
   const mandatoConfiavel = (m: MandatoRow | undefined) =>
     Boolean(m && (m.fonte_dado === "verificado" || m.ato_nomeacao));
 
-  const aprovados = ((diretoresRes.data ?? []) as Array<{ id: string; nome: string; cargo: string | null; agencia_id: string | null; review_status: string | null }>)
+  const aprovados = ((diretoresRes.data ?? []) as Array<{ id: string; nome: string; nome_variantes?: string[] | null; cargo: string | null; agencia_id: string | null; review_status: string | null }>)
     .filter((d) => d.review_status === "aprovado");
   const rejeitadosIds = new Set(
     ((diretoresRes.data ?? []) as Array<{ id: string; review_status: string | null }>)
@@ -119,6 +120,29 @@ export async function GET(req: NextRequest) {
     if ((row as any).is_nominal) s.nominais++; else s.inferidos++;
   }
 
+  // Etapa67 — RELATORIA por diretor: o eixo nominal em 100% dos itens. Uma matéria = um relator
+  // (atribuída ao MELHOR match, nunca a todos que casam). Consulta enxuta, por agência.
+  const relatoriasPorDiretor = new Map<string, number>();
+  {
+    const agencias = [...new Set(aprovados.map((d) => d.agencia_id).filter(Boolean))] as string[];
+    for (const agId of agencias) {
+      const { data: delibsRel } = await db
+        .from("deliberacoes")
+        .select("relator")
+        .eq("agencia_id", agId)
+        .not("relator", "is", null)
+        .limit(20000);
+      const dirs = aprovados
+        .filter((d) => d.agencia_id === agId)
+        .map((d) => ({ id: d.id, nome: d.nome, nome_variantes: Array.isArray(d.nome_variantes) ? d.nome_variantes : [] }));
+      const contagem = contarRelatoriasPorDiretor(
+        ((delibsRel ?? []) as Array<{ relator: string | null }>),
+        dirs,
+      );
+      for (const [id, n] of contagem) relatoriasPorDiretor.set(id, n);
+    }
+  }
+
   const result = [...stats.entries()]
     // Só quem é diretor DE VERDADE na esteira: mandato confiável (seed/DOU) OU ≥1 voto.
     // (Mandato fabricado sozinho não basta — era o furo dos "25 diretores na ANM".)
@@ -139,6 +163,7 @@ export async function GET(req: NextRequest) {
         divergente: s.divergente,
         nominais: s.nominais,
         inferidos: s.inferidos,
+        relatorias: relatoriasPorDiretor.get(id) ?? 0,
         pct_favor: s.total > 0 ? parseFloat(((s.favoravel / s.total) * 100).toFixed(1)) : 0,
       };
     })

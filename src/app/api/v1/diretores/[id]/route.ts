@@ -5,6 +5,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { computeRelatoria } from "@/lib/server/relatoria";
 import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretorProfile } from "@/lib/server/analytics-engine";
@@ -46,13 +47,27 @@ export async function GET(
   // Busca diretor + mandatos
   const { data: diretor, error: dirErr } = await db
     .from("diretores")
-    .select("id, nome, cargo, agencia_id, agencias(sigla)")
+    .select("id, nome, nome_variantes, cargo, agencia_id, agencias(sigla)")
     .eq("id", id)
     .single();
 
   if (dirErr || !diretor) {
     return NextResponse.json({ error: "Diretor não encontrado" }, { status: 404 });
   }
+
+  // Relatoria (etapa67): deliberações FINAIS da agência com relator preenchido, atribuídas a
+  // este diretor por match ≥0.85 sobre nome+variantes. Consulta enxuta (sem raw_text).
+  const { data: delibsRelator } = await db
+    .from("deliberacoes")
+    .select("relator, resultado, juizo_raw:raw_extraction->>juizo")
+    .eq("agencia_id", diretor.agencia_id)
+    .not("relator", "is", null)
+    .limit(20000);
+  const relatoria = computeRelatoria(
+    ((delibsRelator ?? []) as unknown as Array<{ relator: string | null; resultado: string | null; juizo_raw: string | null }>),
+    { id: diretor.id, nome: diretor.nome, nome_variantes: Array.isArray((diretor as { nome_variantes?: unknown }).nome_variantes) ? (diretor as { nome_variantes: string[] }).nome_variantes : [] },
+  );
+
 
   // Mandato atual
   const { data: mandatos } = await db
@@ -221,6 +236,10 @@ export async function GET(
     // Etapa61 — a BASE fica visível ao lado de todo número de comportamento. O plano decidiu
     // EXIBIR com `n` em vez de suprimir: o corte por base mínima puniria justamente quem mais se
     // declara impedido (impedimento tira voto do denominador dele), invertendo o incentivo.
+    // Etapa67 — RELATORIA: o eixo NOMINAL em 100% dos itens, nas três agências. É o que faz o
+    // perfil nascer PREENCHIDO mesmo onde a cobertura de dissenso é 0% (ANTT/ARTESP): volume
+    // relatado, taxa de deferimento do que relatou (denominador de MÉRITO, etapa60), retiradas.
+    relatoria,
     base: {
       votos_proferidos: total,
       participacoes: total_participacoes,

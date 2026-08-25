@@ -320,6 +320,18 @@ export interface DiretorProfile {
     /** Divergência sobre a base nominal; `null` quando não há base. */
     pct_divergente_nominal: number | null;
   };
+  /**
+   * Etapa67 — RELATORIA: o eixo nominal em 100% dos itens (ANM pelo bloco de relator, ANTT pela
+   * sigla do voto, ARTESP pela procedência DIR-*). É o que preenche o perfil mesmo em agência com
+   * 0% de cobertura de dissenso. Taxa sobre as DECIDIDAS no mérito; `null` sem base.
+   */
+  relatoria?: {
+    relatadas: number;
+    decididas: number;
+    deferidas: number;
+    retiradas: number;
+    taxa_deferimento: number | null;
+  };
   id: string;
   nome: string;
   cargo: string | null;
@@ -405,6 +417,8 @@ export interface DiretorOverviewItem {
   /** Votos LIDOS do documento (nominais) vs INFERIDOS por unanimidade/mandato. */
   nominais?: number;
   inferidos?: number;
+  /** Etapa67 — matérias RELATADAS por este diretor. Nominal em 100% dos itens, nas 3 agências. */
+  relatorias?: number;
   /** Mandato representativo (ago/2026): visível e conferível na tela Diretores. */
   agencia_sigla?: string | null;
   cargo?: string | null;
