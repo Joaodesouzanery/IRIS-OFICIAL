@@ -105,9 +105,9 @@ function LoginContent() {
     <main className="flex min-h-screen items-center justify-center bg-[#0f1117] p-6 text-white">
       <div className="w-full max-w-md space-y-6 rounded-lg border border-white/10 bg-[#191b22] p-8 shadow-2xl shadow-black/30">
         <div className="space-y-2">
-          <div className="rounded-md bg-[#0a0e2a] border border-[#c2a24a]/40 px-4 py-3 flex items-center justify-center">
+          <div className="rounded-md bg-black px-3 py-2.5 flex items-center justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/newsletter-logo-wide.png" alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade" className="h-10 w-auto" />
+            <img src="/brand/logo-iris.png" alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade" className="h-12 w-auto" />
           </div>
           <h1 className="text-2xl font-semibold">Entrar no sistema</h1>
           <p className="text-sm leading-6 text-white/58">
