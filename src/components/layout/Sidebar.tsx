@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { resolveActiveHref } from "@/lib/nav-active";
 import { cn } from "@/lib/utils";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import { useViewer } from "@/lib/use-viewer";
@@ -44,6 +45,9 @@ const MODULE_PATHS: Record<string, string[]> = {
     "/dashboard",
     "/dashboard/upload",
     "/dashboard/deliberacoes",
+    // Etapa67 — `/dashboard/reunioes` era rota ÓRFÃ: aba do módulo Deliberações sem dono na
+    // sidebar, então visitar Reuniões apagava a navegação inteira.
+    "/dashboard/reunioes",
     "/dashboard/boletim",
   ],
   "/dashboard/monitoramento": [
@@ -55,12 +59,16 @@ const MODULE_PATHS: Record<string, string[]> = {
   ],
   "/dashboard/analytics/diretores": [
     "/dashboard/analytics/diretores",
+    // Etapa67 — o PERFIL do diretor (`/dashboard/diretores/[id]`) era rota órfã.
+    "/dashboard/diretores",
     "/dashboard/mandatos",
     "/dashboard/votacao",
   ],
   "/dashboard/analytics": [
     "/dashboard/analytics",
     "/dashboard/analytics/temas",
+    // Etapa67 — antes só acendia por ACIDENTE de prefixo; explícito, sobrevive à regra nova.
+    "/dashboard/analytics/institucional",
     "/dashboard/360",
     "/dashboard/insights",
     "/dashboard/governanca",
@@ -85,14 +93,14 @@ export function Sidebar() {
   // Viewer (ago/2026): esconde Configurações e o toggle DEMO — somente visualização.
   const { isViewer } = useViewer();
 
-  const isActive = (href: string) => {
-    const paths = MODULE_PATHS[href] ?? [href];
-    return paths.some((p) =>
-      p === "/dashboard"
-        ? pathname === "/dashboard"
-        : pathname === p || pathname.startsWith(p + "/")
-    );
-  };
+  // Etapa67 — MELHOR CASAMENTO VENCE (ver nav-active.ts). A regra antiga de prefixo cru fazia
+  // "Análise" e "Diretores" acenderem juntos: `/dashboard/analytics/diretores` casava os dois.
+  // Exatamente um item fica ativo, sem caso especial por rota.
+  const activeHref = resolveActiveHref(
+    pathname,
+    NAV_ITEMS.map((item) => ({ href: item.href, paths: MODULE_PATHS[item.href] ?? [item.href] })),
+  );
+  const isActive = (href: string) => href === activeHref;
 
   return (
     <aside className="flex flex-col w-60 h-screen sticky top-0 bg-bg-sidebar border-r border-border shrink-0">

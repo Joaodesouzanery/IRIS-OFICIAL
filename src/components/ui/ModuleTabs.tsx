@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { resolveActiveHref } from "@/lib/nav-active";
 
 export interface ModuleTab {
   label: string;
@@ -12,10 +13,11 @@ export interface ModuleTab {
 export function ModuleTabs({ tabs }: { tabs: ModuleTab[] }) {
   const pathname = usePathname();
 
-  const isActive = (href: string) =>
-    href === "/dashboard"
-      ? pathname === "/dashboard"
-      : pathname === href || pathname.startsWith(href + "/");
+  // Etapa67 — MELHOR CASAMENTO VENCE (ver nav-active.ts). O prefixo cru deixava a aba
+  // "Dashboard" da Qualidade Regulatória permanentemente ativa nas 8 abas do módulo, e
+  // "Deliberações" acesa junto com "Votos dos Diretores". Exatamente uma aba acende.
+  const activeHref = resolveActiveHref(pathname, tabs.map((t) => ({ href: t.href })));
+  const isActive = (href: string) => href === activeHref;
 
   return (
     <div className="flex border-b border-border -mx-1 mb-2">
