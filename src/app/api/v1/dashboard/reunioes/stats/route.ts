@@ -8,7 +8,7 @@ import { demoData } from "@/lib/demo-data";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeReunioesStats } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
-import { isDecidedOnMerits } from "@/lib/server/regulatory-documents";
+import { isDecidedOnMerits, juizoSelect } from "@/lib/server/regulatory-documents";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
@@ -26,13 +26,17 @@ export async function GET(req: NextRequest) {
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
+  // Etapa66 — projeta a COLUNA `juizo` quando ela existe (sondada uma vez por processo).
+  // O filho de ata gravava a coluna e nunca o JSON, e toda rota projetava só o JSON: a
+  // admissibilidade de item de ata era invisível — 13 de 320 itens no corpus, 100% deles.
+  const finalSelect = await juizoSelect(db);
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
 
   // Paginado (PERF-4): agregação por mês precisa ver TODAS as linhas, não parar no ~1000.
   const { rows: data, error } = await selectAllPaged(() => {
     let q = db
       .from("deliberacoes")
-      .select(`id, data_reuniao, resultado, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}`)
+      .select(`id, data_reuniao, resultado, tipo_documento, documento_pai_id, ${finalSelect}`)
       .not("data_reuniao", "is", null)
       .order("data_reuniao", { ascending: true })
       .order("id", { ascending: true }); // desempate único: data_reuniao não é única (paginação estável)

@@ -9,7 +9,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { decisionStatus, isConsensual, isFinalDecisionRecord, isSancao, FINAL_DECISION_RAW_SELECT } from "@/lib/server/regulatory-documents";
+import { decisionStatus, isConsensual, isFinalDecisionRecord, isSancao, FINAL_DECISION_RAW_SELECT, juizoSelect } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -50,11 +50,15 @@ export async function GET(req: NextRequest) {
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
+  // Etapa66 — projeta a COLUNA `juizo` quando ela existe (sondada uma vez por processo).
+  // O filho de ata gravava a coluna e nunca o JSON, e toda rota projetava só o JSON: a
+  // admissibilidade de item de ata era invisível — 13 de 320 itens no corpus, 100% deles.
+  const finalSelect = await juizoSelect(db);
 
   const [agenciasRes, delibsRes] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes")
-      .select(`agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${FINAL_DECISION_RAW_SELECT}, votos(is_divergente, is_nominal)`)
+      .select(`agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${finalSelect}, votos(is_divergente, is_nominal)`)
       .limit(40000),
   ]);
 
@@ -66,7 +70,9 @@ export async function GET(req: NextRequest) {
   };
   const acc = new Map<string, Acc>();
 
-  for (const d of (delibsRes.data ?? []) as Array<{
+  // `as unknown as` porque o sub-select agora é resolvido em runtime (`finalSelect`): o parser de
+  // tipos do supabase-js só entende string LITERAL e devolve `ParserError` para a dinâmica.
+  for (const d of (delibsRes.data ?? []) as unknown as Array<{
     agencia_id: string | null; resultado: string | null; microtema: string | null;
     extraction_confidence: number | null; tipo_documento: string | null;
     documento_pai_id: string | null;

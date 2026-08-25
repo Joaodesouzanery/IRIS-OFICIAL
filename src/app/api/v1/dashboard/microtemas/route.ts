@@ -10,7 +10,7 @@ import { computeMicrotemas } from "@/lib/server/analytics-engine";
 import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT , isDecidedOnMerits } from "@/lib/server/regulatory-documents";
+import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT , isDecidedOnMerits, juizoSelect } from "@/lib/server/regulatory-documents";
 import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { matchesYear, applyYearFilterSql } from "@/lib/server/year-filter";
 
@@ -26,6 +26,10 @@ export async function GET(req: NextRequest) {
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
+  // Etapa66 — projeta a COLUNA `juizo` quando ela existe (sondada uma vez por processo).
+  // O filho de ata gravava a coluna e nunca o JSON, e toda rota projetava só o JSON: a
+  // admissibilidade de item de ata era invisível — 13 de 320 itens no corpus, 100% deles.
+  const finalSelect = await juizoSelect(db);
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
   const year = req.nextUrl.searchParams.get("year");
 
@@ -34,7 +38,7 @@ export async function GET(req: NextRequest) {
   const { rows: data, error } = await selectAllPaged(() => {
     let query = db
       .from("deliberacoes")
-      .select(`microtema, resultado, tipo_documento, documento_pai_id, data_reuniao, data_publicacao, ${FINAL_DECISION_RAW_SELECT}`)
+      .select(`microtema, resultado, tipo_documento, documento_pai_id, data_reuniao, data_publicacao, ${finalSelect}`)
       .not("microtema", "is", null)
       .order("id", { ascending: true });
     if (agenciaId) query = query.eq("agencia_id", agenciaId);

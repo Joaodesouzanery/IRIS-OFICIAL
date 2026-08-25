@@ -113,6 +113,64 @@ export const FINAL_DECISION_RAW_SELECT =
   // com a extração marcando certo. Ler do JSON também mantém o código funcionando sem a migration.
   + "juizo_raw:raw_extraction->>juizo";
 
+/**
+ * O mesmo sub-select, MAIS a coluna `juizo` (etapa66).
+ *
+ * Por que as duas fontes: a coluna é o armazenamento AUTORITATIVO (foi ela que a migration
+ * `20260824120000` criou, e é nela que vive o índice parcial de admissibilidade), mas o filho de
+ * ata gravava só a coluna e nunca o JSON — e como toda rota projetava só o JSON, a admissibilidade
+ * de item de ata era invisível. Medido nas 16 fixtures: 13 de 320 itens, 100% deles invisíveis.
+ *
+ * ⚠️ Só use através de `selectComJuizo`. Projetar coluna inexistente não devolve `null`: o
+ * PostgREST derruba a QUERY INTEIRA, então sem o fallback um deploy antes da migration deixaria
+ * todos os dashboards em erro 500.
+ */
+export const FINAL_DECISION_SELECT_COM_JUIZO = `juizo,${FINAL_DECISION_RAW_SELECT}`;
+
+/** O erro do PostgREST/Postgres é "coluna não existe"? (`PGRST204` / `42703`) */
+function erroDeColunaAusente(error: unknown, coluna: string): boolean {
+  const err = error as { code?: unknown; message?: unknown } | null;
+  const code = String(err?.code ?? "");
+  if (code !== "PGRST204" && code !== "42703") return false;
+  const msg = String(err?.message ?? "");
+  return msg.includes(`'${coluna}'`) || msg.includes(`"${coluna}"`) || new RegExp(`\\b${coluna}\\b`).test(msg);
+}
+
+/**
+ * `true` = a coluna existe · `false` = não existe · `null` = ainda não sondado.
+ * Memoizado por processo: a resposta não muda dentro de um deploy, e a migration só ADICIONA.
+ */
+let colunaJuizoPresente: boolean | null = null;
+
+/** Reseta a sonda (uso em teste). */
+export function resetSondaJuizo() {
+  colunaJuizoPresente = null;
+}
+
+/**
+ * Devolve o sub-select a usar, sondando UMA vez se a coluna `juizo` existe.
+ *
+ * Por que sonda em vez de retry: as consultas de analytics vivem dentro de paginadores
+ * (`selectAllPaged`) e de `Promise.all`, então um wrapper de "tenta e repete" não encaixa na forma
+ * do builder. Uma consulta `select("juizo").limit(1)` por processo é barata e resolve para todas.
+ *
+ * ⚠️ Projetar coluna inexistente NÃO devolve `null` — o PostgREST derruba a query inteira. Sem
+ * isto, um deploy antes da migration deixaria todos os dashboards em 500.
+ */
+export async function juizoSelect(db: { from: (t: string) => any }): Promise<string> {
+  if (colunaJuizoPresente === null) {
+    try {
+      const { error } = await db.from("deliberacoes").select("juizo").limit(1);
+      colunaJuizoPresente = !erroDeColunaAusente(error, "juizo");
+    } catch {
+      // Falha de rede/permissão não é ausência de coluna — degrada para o caminho seguro sem
+      // memoizar, para sondar de novo na próxima requisição.
+      return FINAL_DECISION_RAW_SELECT;
+    }
+  }
+  return colunaJuizoPresente ? FINAL_DECISION_SELECT_COM_JUIZO : FINAL_DECISION_RAW_SELECT;
+}
+
 type FinalDecisionRow = {
   tipo_documento?: string | null;
   documento_pai_id?: string | null;

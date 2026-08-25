@@ -552,6 +552,87 @@ pontos 1–3 medidos contra a fixture (~3h). **Não é coletor novo.** Registrar
 divergente do reconhecimento de voto ANTT: `regulatory-documents.ts:36` usa regex mais frouxa (sem
 número/ano, sem validar iniciais contra o cadastro) que `antt-manual-parser.ts:149`.
 
+## Fase 5 · bloco 1 — o laço do `juizo`, e a CLASSE por trás dele (24/08/2026)
+
+**A terceira ocorrência do mesmo padrão**: extração certa, consumidor cego.
+
+| # | Rodada | Onde a informação morreu |
+|---|---|---|
+| 1 | Fase 1 | a coluna existia sem write-path que a preenchesse |
+| 2 | Revisão adversarial | o write-path existia, mas a projeção não trazia `juizo_raw` |
+| 3 | **esta** | a projeção traz `juizo_raw`, mas o filho de ata só escrevia a COLUNA |
+
+**A classe não é o `juizo` — é a montagem CHAVE A CHAVE.** O `raw_extraction` do filho era montado
+declarando as INCLUSÕES, então todo campo novo do item nascia invisível por omissão. Medido nas 16
+fixtures, o mecanismo já tinha **duas** vítimas:
+
+| Campo | Itens com valor | Destino real antes |
+|---|---|---|
+| `juizo` | 13 de 320 | só a COLUNA → invisível a toda rota, que projeta o JSON |
+| **`area_regulatoria`** | **320 de 320** | **nenhum** — o item calculava a sua e o insert gravava a do DOCUMENTO por cima |
+
+**Correção:** `src/lib/server/ata-item-materializacao.ts` inverte a lógica — declara as OMISSÕES,
+com motivo, e propaga o resto. Campo novo viaja por padrão. Duas categorias de omissão são
+legítimas e ficam explícitas: `coluna:` (vira coluna própria) e `tamanho:` (texto que incharia o
+JSON de toda linha — `decisao`/`raw_text` seguem fora, como a otimização `3bca9ea` decidiu).
+
+Também corrigido: `upload-analysis.ts` — o ramo da ANTT SOBRESCREVIA `ata_items` inteiro e o parser
+dedicado nunca produz `juizo`, então toda ata da ANTT perdia o campo. E a projeção passou a incluir
+a COLUNA nas 4 rotas que chamam `decisionStatus`, via `juizoSelect(db)` — sonda memoizada, porque
+projetar coluna inexistente **derruba a query inteira** (não devolve null) e o deploy antes da
+migration tem de continuar seguro.
+
+**Testes (`etapa66-materializacao-item.test.ts`), em duas camadas — a segunda sugerida pelo usuário
+e melhor que a primeira versão:**
+- **(a) completude de chaves** — compara a união das chaves que o analisador produz nos 16 PDFs com
+  o contrato; quebra quando aparece chave não declarada. **É o que fecha a classe.**
+- **(b) soma dos baldes sobre a linha SERIALIZADA** — avalia `decisionStatus` sobre a linha *como a
+  rota a vê* (só o que o sub-select projeta), não sobre o objeto rico do analisador. O defeito
+  estava na serialização, e um teste em memória passa verde com ele presente.
+
+⚠️ Uma não substitui a outra: **a soma dos baldes só protege campo com FORMA DE BALDE** — nem
+`juizo` nem `area_regulatoria` têm, e os dois escapariam dela.
+Mutação verificada: as três correções desfeitas deixam testes vermelhos, e a de completude nomeia a
+chave órfã com contagem e arquivo de exemplo.
+
+### SQL de conferência — banco × painel (colar no SQL Editor)
+`invisivel_ao_painel > 0` confirma linhas antigas com a coluna preenchida e o JSON vazio (elas
+precisam de reprocessamento; a correção é forward-only). `coluna_nao_backfillada > 0` indica que a
+migration `20260824120000` não foi aplicada ou que o insert caiu no fallback de coluna ausente.
+
+```sql
+WITH base AS (
+  SELECT d.id, d.agencia_id, d.tipo_documento, d.documento_pai_id, d.resultado,
+         d.juizo                                         AS juizo_coluna,
+         d.raw_extraction ->> 'juizo'                    AS juizo_json,
+         COALESCE(d.juizo, d.raw_extraction ->> 'juizo') AS juizo_efetivo,
+         COALESCE(d.raw_extraction ->> 'documento_subtipo',
+                  d.raw_extraction ->> 'documento_antt_tipo') AS subtipo,
+         (d.raw_extraction -> 'import_counts_as_final')  AS icf
+  FROM public.deliberacoes d
+),
+finais AS (               -- espelha isFinalDecisionRecord()
+  SELECT * FROM base
+  WHERE icf IS DISTINCT FROM 'false'::jsonb
+    AND tipo_documento NOT IN ('pauta','voto_individual','documento_apoio')
+    AND COALESCE(subtipo,'') NOT IN ('pauta','voto_individual',
+        'reuniao_deliberativa_eletronica','reuniao_diretoria_publica','reuniao_extraordinaria')
+    AND ((tipo_documento = 'ata' AND documento_pai_id IS NOT NULL AND resultado IS NOT NULL)
+         OR tipo_documento IN ('deliberacao','resolucao','portaria'))
+)
+SELECT a.sigla,
+  COUNT(*)                                                          AS pautado,
+  COUNT(*) FILTER (WHERE f.juizo_efetivo = 'admissibilidade')       AS real_admissibilidade,
+  COUNT(*) FILTER (WHERE f.juizo_json    = 'admissibilidade')       AS painel_admissibilidade,
+  COUNT(*) FILTER (WHERE f.juizo_coluna = 'admissibilidade'
+                     AND f.juizo_json IS DISTINCT FROM 'admissibilidade') AS invisivel_ao_painel,
+  COUNT(*) FILTER (WHERE f.juizo_json = 'admissibilidade'
+                     AND f.juizo_coluna IS DISTINCT FROM 'admissibilidade') AS coluna_nao_backfillada
+FROM finais f
+LEFT JOIN public.agencias a ON a.id = f.agencia_id
+GROUP BY ROLLUP (a.sigla) ORDER BY a.sigla NULLS LAST;
+```
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

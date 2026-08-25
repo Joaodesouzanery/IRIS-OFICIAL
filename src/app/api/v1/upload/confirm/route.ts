@@ -35,6 +35,7 @@ import type {
 
 import { upsertVotosProtegido, sanitizeVotosSugeridos } from "@/lib/server/votos-write";
 import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
+import { buildRawExtractionDoItem } from "@/lib/server/ata-item-materializacao";
 import {
   checarCoerenciaUnanimidade, checarImpedidoComVoto, checarVotoQualidadeDuplo, temBloqueio,
 } from "@/lib/server/consistency-checks";
@@ -802,7 +803,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 assunto: item.assunto,
                 relator: item.relator,
                 microtema: item.microtema,
-                area_regulatoria: d.area_regulatoria ?? null,
+                // Etapa66 — do ITEM primeiro. Medido: o item calcula a sua área em 320 de 320
+                // casos e este insert gravava a do DOCUMENTO por cima, descartando-a sempre.
+                area_regulatoria: item.area_regulatoria ?? d.area_regulatoria ?? null,
                 resultado: item.resultado,
                 pauta_interna: false,
                 data_reuniao: d.data_reuniao,
@@ -813,27 +816,15 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 extraction_confidence: item.processo ? 0.8 : 0.4,
                 resumo_pleito: item.decisao?.slice(0, 2000) ?? null,
                 upload_job_id: attachment.upload_job_id,
-                raw_extraction: withAttachmentRaw({
-                  documento_antt_tipo: d.documento_antt_tipo,
-                  documento_subtipo: d.documento_subtipo,
-                  import_counts_as_final: Boolean(item.resultado),
-                  item_numero: item.item_numero,
-                  // Persistir os NOMES no filho (QA L1): sem isto, aprovar um
-                  // candidato depois não backfillava (applyRetroactiveVotes lê
-                  // exatamente raw.nomes_votacao/_contra/_ausente/_abstencao).
-                  nomes_votacao: item.votos_detectados ?? [],
-                  nomes_votacao_contra: item.votos_contra_detectados ?? [],
-                  nomes_votacao_abstencao: item.votos_abstencao_detectados ?? [],
-                  nomes_votacao_ausente: item.votos_ausentes_detectados ?? [],
-                  // Persistido junto dos demais baldes pelo mesmo motivo (QA L1): sem isto, o
-                  // backfill retroativo reprocessa o item SEM o impedimento e refabrica o voto.
-                  nomes_votacao_impedido: item.votos_impedidos_detectados ?? [],
-                  impedimentos: item.votos_impedidos_detectados ?? [],
-                  // etapa57: sem persistir, o backfill retroativo reprocessa o item SEM saber que
-                  // o voto veio de sessao anterior e volta a descartar o ex-diretor.
-                  votos_em_autos: (item.votos_em_autos_detectados ?? []).map((nome) => ({ nome, sessao: null })),
-                  unanimidade_detectada: Boolean(item.unanimidade_detectada),
-                  votos_inferidos_por_mandato: shouldInferVotesFromMandate({
+                // Etapa66 — a montagem CHAVE A CHAVE virou propagação: as OMISSÕES é que são
+                // declaradas, em `ata-item-materializacao.ts`. Antes, todo campo novo do item
+                // nascia invisível por omissão; foi assim que `juizo` (13/320 itens) e
+                // `area_regulatoria` (320/320) se perderam. Campo novo agora viaja por padrão.
+                raw_extraction: withAttachmentRaw(buildRawExtractionDoItem({
+                  item: item as Parameters<typeof buildRawExtractionDoItem>[0]["item"],
+                  documentoAnttTipo: d.documento_antt_tipo,
+                  documentoSubtipo: d.documento_subtipo,
+                  votosInferidosPorMandato: shouldInferVotesFromMandate({
                     resultado: item.resultado,
                     tipo_documento: "ata",
                     import_counts_as_final: Boolean(item.resultado),
@@ -844,8 +835,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     dataReuniao: d.data_reuniao,
                     diretoresList,
                   }),
-                  warnings: item.warnings ?? [],
-                }, attachment),
+                }), attachment),
               });
 
             const itemVotingNames = item.votos_detectados ?? [];

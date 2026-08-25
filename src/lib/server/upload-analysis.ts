@@ -339,6 +339,10 @@ export async function analyzeUploadPdf(input: {
         ? item.microtema
         : classifyMicrotema([item.assunto, item.interessado, item.decisao].filter(Boolean).join(" "), agencia_sigla_detected).microtema,
       area_regulatoria: item.area_regulatoria ?? classifyAreaRegulatoria([item.assunto, item.interessado, item.decisao].filter(Boolean).join(" ")),
+      // Etapa66 — esta atribuição SOBRESCREVE `ata_items` inteiro, e o parser dedicado da ANTT
+      // nunca produz `juizo`: sem esta linha, TODA ata da ANTT perdia o juízo por item (coluna e
+      // JSON), enquanto o ramo genérico logo acima o detecta por item desde a etapa54.
+      juizo: (item as { juizo?: "admissibilidade" | null }).juizo ?? detectJuizo(item.decisao ?? ""),
     }));
     microtema = ata_items[0]?.microtema ?? microtema;
     area_regulatoria = (ata_items[0]?.area_regulatoria ?? area_regulatoria) as typeof area_regulatoria;
