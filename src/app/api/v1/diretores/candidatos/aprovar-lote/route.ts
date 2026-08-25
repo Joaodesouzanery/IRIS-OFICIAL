@@ -187,7 +187,14 @@ export async function POST(req: NextRequest) {
   for (const candidato of candidatosNovos) {
     const nome = String(candidato.nome_detectado ?? "");
     if (!isStrictPersonName(nome)) {
-      pulados.push({ id: candidato.id, nome, reason: "nome não passa na validação estrita (prosa não vira pessoa)" });
+      // Etapa67 — era o ÚNICO lugar do sistema que identificava o lixo e apenas o IGNORAVA,
+      // enquanto o ramo de cartões COM diretor_id (acima) rejeita de fato. A assimetria mantinha
+      // "Você Pode" e "Agência Utiliza As" pendentes para sempre. Rejeita, simétrico.
+      await db
+        .from("diretor_candidatos")
+        .update({ review_status: "rejeitado", reviewed_at: new Date().toISOString(), reviewed_by: "aprovar-lote:nome-invalido" })
+        .eq("id", candidato.id);
+      pulados.push({ id: candidato.id, nome, reason: "nome não passa na validação estrita — REJEITADO (prosa não vira pessoa)" });
       continue;
     }
     if (!candidato.agencia_id || !colegiadaIds.has(candidato.agencia_id)) {

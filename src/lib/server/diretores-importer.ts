@@ -100,7 +100,7 @@ export async function importDiretoresFromUrl(
         source_type: "pagina_agencia" as const,
         source_url: url,
         source_hash: crypto.createHash("sha256").update(`${sourceHash}|${nome}`).digest("hex"),
-        confidence: Math.max(0.35, Math.min(match.score || 0.5, 0.9)),
+        confidence: Math.min(match.score || 0, 0.9),
         review_status: "pendente" as const,
         evidence: {
           importador: "diretores-importer",

@@ -638,9 +638,14 @@ export default function VotosDiretoresPage() {
               <p className="section-label">Matches pendentes ({(candidatos ?? []).length})</p>
             </div>
           </div>
+          {/* Etapa67 — o texto antigo dizia "confiança média" para cartões de 35% (piso inventado
+              sobre score ~0). Depois da drenagem, o que sobra aqui são nomes REAIS ainda ambíguos
+              entre diretores parecidos — e o "Rodar tudo" resolve a maioria pelo mandato ativo
+              na data. Este card tende a esvaziar; o que aparecer é exceção genuína. */}
           <p className="text-xs text-text-muted">
-            Nomes detectados em atas/votos cujo match com um diretor ficou ambíguo (confiança média) e não geraram voto.
-            Ao aprovar, os votos faltantes são criados retroativamente para as deliberações daquele nome.
+            Nomes reais de pessoa cujo match entre diretores parecidos ainda não foi resolvido pelo
+            automático. O &quot;Rodar tudo&quot; desambigua pelo mandato ativo na data da deliberação;
+            aprovar aqui cria os votos retroativos daquele nome.
           </p>
           {matchFeedback && (
             <div className="border border-success/30 bg-success/10 rounded-card p-2.5 text-sm text-success">

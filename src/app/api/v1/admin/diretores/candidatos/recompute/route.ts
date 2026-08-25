@@ -98,6 +98,7 @@ export async function POST(req: NextRequest) {
   }
 
   let autoAprovados = 0;
+  let rejeitadosLixo = 0;
   let recomputados = 0;
   let cartoesColapsados = 0;
   let votosCriados = 0;
@@ -129,6 +130,29 @@ export async function POST(req: NextRequest) {
         const res = await aprovarCandidato(db, canonico, { diretorId: match.diretorId, reviewedBy: "recompute" });
         const votos = res.votosRetroativos as { criados?: number } | null;
         votosCriados += votos?.criados ?? 0;
+      }
+      continue;
+    }
+
+    // Etapa67 — DRENAGEM DO LIXO LEGADO. Nome que reprova em isStrictPersonName ("Agência
+    // Utiliza As", "Você Pode"…) NUNCA vira pessoa: os write-paths atuais já o barram, mas o
+    // legado anterior ao endurecimento ficava aqui para sempre — este ramo recomputava a
+    // confidence e PRESERVAVA o cartão, e cada "Rodar tudo" reafirmava o lixo em vez de
+    // drená-lo. Rejeita o grupo INTEIRO em cascata (padrão de candidatos/[id]/rejeitar).
+    if (!isStrictPersonName(canonico.nome_detectado)) {
+      rejeitadosLixo += 1;
+      if (amostra.length < 20) amostra.push({ nome: canonico.nome_detectado, agencia_id: canonico.agencia_id, score: Math.round(match.score * 100) / 100, acao: "rejeitar-lixo", cartoes: grupo.length });
+      if (!dryRun) {
+        await db
+          .from("diretor_candidatos")
+          .update({
+            review_status: "rejeitado",
+            reviewed_at: new Date().toISOString(),
+            reviewed_by: "recompute:nome-invalido",
+          })
+          .eq("agencia_id", canonico.agencia_id)
+          .eq("nome_detectado", canonico.nome_detectado)
+          .eq("review_status", "pendente");
       }
       continue;
     }
@@ -201,6 +225,7 @@ export async function POST(req: NextRequest) {
     candidatos_pendentes: (candidatos ?? []).length,
     grupos: grupos.size,
     grupos_auto_aprovados: autoAprovados,
+    grupos_rejeitados_lixo: rejeitadosLixo,
     grupos_recomputados: recomputados,
     cartoes_colapsados: cartoesColapsados,
     diretores_mesclados: diretoresMesclados,

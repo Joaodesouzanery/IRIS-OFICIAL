@@ -1150,7 +1150,9 @@ async function recordDirectorCandidates(
         source_type: evidence.source_type,
         source_url: evidence.source_url,
         source_hash: evidence.source_hash,
-        confidence: Math.max(0.35, Math.min(match.score || 0.5, 0.94)),
+        // Etapa67 — SEM piso inventado: o clamp antigo elevava score ~0 (nenhum diretor parecido)
+      // para "35% de confiança" na tela. Confiança exibida agora é o score real.
+      confidence: Math.min(match.score || 0, 0.94),
         review_status: "pendente",
         evidence: {
           filename: evidence.filename,
