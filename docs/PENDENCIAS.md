@@ -863,6 +863,27 @@ Duas decisões de desenho:
 
 Mutação verificada em três direções (série colapsada, milhar não normalizado, busca de um passo só).
 
+## Fase 5 · ANTT — como descobrir onde o funil para (25/08/2026)
+
+`GET /api/v1/admin/antt/diagnostico-coleta` — **READ-ONLY** (o teste prova: o banco falso lança em
+`insert`/`update`/`delete`/`upsert`). Responde sem SQL à pergunta que sobrou: **se o parser extrai
+os votos corretamente, por que a agência aparece com 0% nominal?**
+
+Mede o funil inteiro e diz **em qual degrau o número cai**:
+
+| Degrau | O que significa cair aqui |
+|---|---|
+| **1 · descoberta** | reuniões coletadas = 0, ou última coleta > 7 dias. **Candidato nº 1**: plano Hobby (2 crons/dia) + Etapa 21 moveu tudo para botão ⇒ ninguém dispara `POST /api/v1/antt/2026/collect` |
+| **2 · download** | reuniões coletadas mas nenhum documento de voto baixado |
+| **3 · extração** | voto baixado que não virou `voto_individual` ⇒ ver `/admin/upload/pendencias-voto` |
+| **4 · voto nominal** | extraído sem linha NOMINAL ⇒ o gate do confirm não materializa, ou o relator não casa o cadastro |
+
+Também acusa se a série **eletrônica** (RDE) está ausente: a ANTT publica nas duas, e se a listagem
+tem RDE e ela não aparece na coleta, o filtro de título está descartando.
+
+**Operação:** chamar autenticado como admin e ler `degrau_que_para` + `diagnostico`. Se for o degrau
+1, a resposta é operacional, não de código.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
