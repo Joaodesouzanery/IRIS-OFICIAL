@@ -884,6 +884,56 @@ tem RDE e ela não aparece na coleta, o filtro de título está descartando.
 **Operação:** chamar autenticado como admin e ler `degrau_que_para` + `diagnostico`. Se for o degrau
 1, a resposta é operacional, não de código.
 
+## Fase 6 — UI confiável e esteira que decide sozinha (25/08/2026)
+
+Sete commits a partir dos quatro achados de produção do usuário (com prints), na ordem que ele
+reordenou: **dano ativo antes de elegância**.
+
+**Commit 0 · Qualidade "parar de mentir"** — persistência engolida virou `persist_error` visível;
+timeout de rede deixou de virar nota 0 (`fetch_failed` ≠ `inexistente`, com
+`rebaixamentos_evitados_por_portal_inacessivel` na resposta); o texto falso "apenas evidencias
+validadas alimentam a pontuacao" saiu (nenhuma evidência alimenta pontuação — a nota vem das
+avaliações).
+
+**Navegação** — "melhor casamento vence" (`nav-active.ts`): as 5 colisões de item/aba duplo-ativo
+resolvidas; rotas órfãs adotadas (perfil do diretor → Diretores; reuniões → Deliberações).
+
+**Drenagem + auto-resolver** — o lixo legado ("Você Pode" etc.) é rejeitado em cascata pelo
+recompute; o piso inventado de 35% morreu; e a fila deixou de ser etapa: o resolver desambigua pelo
+MANDATO ativo na data → margem → fallback que aprova carimbando `confianca_match` (primeira
+escrita da coluna). **A medição está embutida**: `resolvidos_por_mandato / por_margem / sem_margem
+/ rejeitados_lixo` no resumo do "Rodar tudo" — a primeira rodada em produção diz se o fallback é
+raro como a hipótese (titular × ex-titular) prevê.
+
+**Relatoria + 3 famílias** — `deliberacoes.relator` ganhou seu primeiro consumidor de métrica
+(era denso nas 3 agências e ninguém olhava); o perfil do diretor reorganizado em Carga e
+desfecho / Dissenso (base nominal com n visível) / Conduta processual; matriz de capacidade POR
+EIXO substituiu a matriz morta e virou legenda na tela.
+
+**Qualidade plumbing** — "Coletar todas" encadeia web → derivadas → classificar (o módulo real
+estava DESLIGADO: os dois coletores bons não tinham botão nem cron); fontes genéricas viraram
+check de conectividade (⚠️ **contadores de evidência CAEM** — cortada a fabricação de ~108
+pseudo-evidências por rodada; decisão do usuário); painel "última coleta por agência"; Prêmio
+Evolução sem base histórica declara "sem base" em vez de eleger vencedora arbitrária; banner
+LGPD/LAI removido da UI (conformidade praticada, não anunciada — payload `legal` segue nos
+relatórios); acentuação corrigida nas strings visíveis.
+
+### ⚠️ Pendências registradas (não corrigidas)
+- **Logo**: aguardando o usuário salvar a arte nova em **`public/brand/logo-iris.png`** — a troca
+  na sidebar+login está desenhada (chip preto, `h-10`/`h-12`) e é um commit pequeno quando o
+  arquivo chegar. O asset atual (`newsletter-logo-wide.png`) é lettering para 140px espremido a
+  32px — NÃO mexer nele: newsletter/boletim/relatórios o usam no tamanho certo e 2 testes travam
+  o caminho.
+- **Seed antigo da Qualidade é uma mina**: `20260604123000_qualidade_regulatoria_seed_2026.sql`
+  gera níveis do modelo antigo (`'avancado'` etc.) — se REAPLICADO depois da migration IMQN
+  (`20260702120000`), falha no CHECK novo. Forward-only na prática; não reaplicar.
+- **Constante × tabela de agências**: o ranking itera `QUALIDADE_AGENCIAS` (hardcoded, 12) e não a
+  tabela `qualidade_regulatoria_agencias` — agência cadastrada só no banco nunca entra no ranking,
+  e vice-versa. Reconciliar quando o módulo ganhar agência nova.
+- **Métricas de voto de qualidade e voto vista**: exigem persistência nova (`papel` é coluna morta;
+  nenhum caminho grava `motivo_nao_voto: "vista"`). Desenho: gravar `papel`/`motivo` no confirm e
+  agregar na família Conduta processual.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

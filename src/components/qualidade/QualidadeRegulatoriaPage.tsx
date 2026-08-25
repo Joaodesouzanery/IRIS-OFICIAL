@@ -140,7 +140,7 @@ type QualityDashboard = {
 };
 
 type CollectionStatus = {
-  data: Array<{ id: string; agencia_sigla: string; criterio_id: number | null; fonte_id: string | null; status: string; data_coleta: string; warnings: string[]; compliance_status: string }>;
+  data: Array<{ id: string; agencia_sigla: string | null; criterio_id: number | null; fonte_id: string | null; status: string; data_coleta: string; warnings: string[]; compliance_status: string }>;
   metricas: { total: number; sucesso: number; falha: number; restrito: number; pendente_revisao: number };
   /** Etapa67 — `true` quando os zeros vêm de FALHA DE LEITURA do banco, não de ausência de coleta. */
   degraded?: boolean;
@@ -148,14 +148,14 @@ type CollectionStatus = {
 };
 
 const TAB_TITLES: Record<Tab, string> = {
-  dashboard: "Qualidade Regulatoria",
-  agencias: "Agencias avaliadas",
-  criterios: "Criterios e pesos",
-  diagnostico: "Diagnostico institucional",
-  evidencias: "Evidencias e revisao",
+  dashboard: "Qualidade Regulatória",
+  agencias: "Agências avaliadas",
+  criterios: "Critérios e pesos",
+  diagnostico: "Diagnóstico institucional",
+  evidencias: "Evidências e revisão",
   coletas: "Coletas seguras",
-  premio: "Premio Qualidade Regulatoria",
-  relatorios: "Relatorios",
+  premio: "Prêmio Qualidade Regulatória",
+  relatorios: "Relatórios",
 };
 
 const QUALIDADE_TABS = [
@@ -166,7 +166,7 @@ const QUALIDADE_TABS = [
   { label: "Evidencias", href: "/dashboard/qualidade-regulatoria/evidencias" },
   { label: "Coletas", href: "/dashboard/qualidade-regulatoria/coletas" },
   { label: "Premio", href: "/dashboard/qualidade-regulatoria/premio" },
-  { label: "Relatorios", href: "/dashboard/qualidade-regulatoria/relatorios" },
+  { label: "Relatórios", href: "/dashboard/qualidade-regulatoria/relatorios" },
 ];
 
 export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
@@ -218,7 +218,22 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
         if (result.next_offset === null) break;
         offset = result.next_offset;
       }
-      return { lotes, total, persistErrors };
+      // Etapa67 — LIGAR O MÓDULO REAL: os dois coletores que produzem substância (evidências
+      // DERIVADAS dos nossos dados e a auto-classificação IMQN) existiam desde o início e não
+      // tinham botão nem cron — o módulo real estava desligado, como o PENDENCIAS já admitia.
+      // "Coletar todas" agora encadeia: web → derivadas → classificar. Falha em um passo não
+      // esconde os outros.
+      let derivadas: number | null = null;
+      let classificadas: number | null = null;
+      try {
+        const d = await api.post<{ evidencias_geradas?: number }>("/qualidade-regulatoria/coletas/derivadas/run", {});
+        derivadas = d.evidencias_geradas ?? 0;
+      } catch { derivadas = null; }
+      try {
+        const c = await api.post<{ avaliacoes_preliminares?: number }>("/qualidade-regulatoria/coletas/classificar/run", {});
+        classificadas = c.avaliacoes_preliminares ?? 0;
+      } catch { classificadas = null; }
+      return { lotes, total, persistErrors, derivadas, classificadas };
     },
     onSuccess: () => {
       setCollectionOffset(0);
@@ -263,7 +278,7 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
         <div>
           <h1 className="text-xl font-semibold text-text-primary">{TAB_TITLES[tab]}</h1>
           <p className="text-sm text-text-muted mt-1 max-w-3xl">
-            Ranking institucional de agencias reguladoras federais com notas por criterio, fontes publicas, evidencias e revisao humana.
+            Ranking institucional de agências reguladoras federais com notas por critério, fontes públicas, evidências e revisão humana.
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -271,8 +286,6 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
           <span className="badge badge-gray">{data?.source === "database" ? "Supabase" : "Fallback curado"}</span>
         </div>
       </div>
-
-      <LegalNotice data={data} />
 
       {isLoading ? (
         <div className="card h-64 flex items-center justify-center text-text-muted">
@@ -359,10 +372,10 @@ function DashboardView({ data, ranking, criteria }: { data: QualityDashboard; ra
   return (
     <section className="space-y-4">
       <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-        <Metric label="Agencias" value={data.metricas.agencias} />
-        <Metric label="Criterios" value={data.metricas.criterios} />
-        <Metric label="Avaliacoes" value={data.metricas.avaliacoes} />
-        <Metric label="Evidencias" value={data.metricas.evidencias} />
+        <Metric label="Agências" value={data.metricas.agencias} />
+        <Metric label="Critérios" value={data.metricas.criterios} />
+        <Metric label="Avaliações" value={data.metricas.avaliacoes} />
+        <Metric label="Evidências" value={data.metricas.evidencias} />
         <Metric label="Score medio" value={data.metricas.score_medio} />
         <Metric label="Peso total" value={data.metricas.pesos_total.toFixed(2)} />
       </div>
@@ -487,7 +500,7 @@ function EvidenceView(props: {
 
       {props.evidenceRows.length > 0 ? (
         <div className="card space-y-3">
-          <h2 className="text-sm font-semibold text-text-primary">Revisao de evidencias ({props.selectedAgencySigla})</h2>
+          <h2 className="text-sm font-semibold text-text-primary">Revisão de evidências ({props.selectedAgencySigla})</h2>
           {/* Etapa67 — o texto anterior ("apenas evidências validadas alimentam a pontuação") era
               FALSO: a nota vem de `qualidade_regulatoria_avaliacoes`, e validar/rejeitar evidência
               não muda um ponto. Dizer o que o sistema faz, não o que gostaríamos que fizesse. */}
@@ -577,19 +590,19 @@ function ManualEvidenceForm({ agencySigla, criterionId, onAdd, isSaving }: {
     <div className="card space-y-3">
       <div className="flex items-center gap-2">
         <Plus className="w-4 h-4 text-brand" />
-        <h2 className="text-sm font-semibold text-text-primary">Adicionar evidencia manual</h2>
+        <h2 className="text-sm font-semibold text-text-primary">Adicionar evidência manual</h2>
       </div>
       <p className="text-xs text-text-muted">
-        Vinculada a {agencySigla} · criterio {criterionId}. Entra como &quot;pendente&quot; ate revisao humana.
+        Vinculada à {agencySigla} · criterio {criterionId}. Entra como &quot;pendente&quot; ate revisao humana.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <input className="input" placeholder="Titulo da evidencia" value={titulo} onChange={(e) => setTitulo(e.target.value)} />
+        <input className="input" placeholder="Título da evidência" value={titulo} onChange={(e) => setTitulo(e.target.value)} />
         <input className="input" placeholder="URL (opcional)" value={url} onChange={(e) => setUrl(e.target.value)} />
       </div>
-      <textarea className="input min-h-20" placeholder="Trecho publico / observacao (opcional)" value={trecho} onChange={(e) => setTrecho(e.target.value)} />
+      <textarea className="input min-h-20" placeholder="Trecho público / observação (opcional)" value={trecho} onChange={(e) => setTrecho(e.target.value)} />
       <button className="btn-primary w-fit" onClick={submit} disabled={isSaving || !titulo.trim()}>
         {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
-        Adicionar evidencia
+        Adicionar evidência
       </button>
     </div>
   );
@@ -601,19 +614,19 @@ function CollectionsView({ collectionStatus, runCollection, isPending, runFullCo
   isPending: boolean;
   runFullCollection: () => void;
   isRunningFull: boolean;
-  fullResult?: { lotes: number; total: number; persistErrors?: string[] };
+  fullResult?: { lotes: number; total: number; persistErrors?: string[]; derivadas?: number | null; classificadas?: number | null };
 }) {
   return (
     <section className="space-y-4">
       <div className="card flex items-center justify-between gap-4 flex-wrap">
         <div>
           <h2 className="text-sm font-semibold text-text-primary">Rodada de coleta segura</h2>
-          <p className="text-sm text-text-muted mt-1">Processa fontes em lotes, registra status e mantem revisao humana de evidencias.</p>
+          <p className="text-sm text-text-muted mt-1">Processa fontes em lotes, registra status e mantém revisão humana de evidências.</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <button className="btn-primary" onClick={runFullCollection} disabled={isRunningFull || isPending}>
             {isRunningFull ? <Loader2 className="w-4 h-4 animate-spin" /> : <Database className="w-4 h-4" />}
-            Coletar todas as agencias
+            Coletar todas as agências
           </button>
           <button className="btn-secondary" onClick={runCollection} disabled={isPending || isRunningFull}>
             {isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Database className="w-4 h-4" />}
@@ -629,7 +642,9 @@ function CollectionsView({ collectionStatus, runCollection, isPending, runFullCo
           </div>
         ) : (
           <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
-            Coleta completa: {fullResult.lotes} lote(s) processado(s) cobrindo {fullResult.total} tarefa(s). Evidências registradas como pendentes para revisão.
+            Coleta completa: {fullResult.lotes} lote(s) · {fullResult.total} tarefa(s)
+            {fullResult.derivadas != null ? ` · ${fullResult.derivadas} evidência(s) derivada(s)` : " · derivadas falharam"}
+            {fullResult.classificadas != null ? ` · ${fullResult.classificadas} avaliação(ões) IMQN` : " · classificação falhou"}.
           </div>
         )
       ) : null}
@@ -639,6 +654,10 @@ function CollectionsView({ collectionStatus, runCollection, isPending, runFullCo
           Os zeros abaixo são falha de leitura, não ausência de coleta.
         </div>
       ) : null}
+      {/* Etapa67 — "última coleta por agência": a pergunta que o log cru de 200 linhas não
+          respondia (uma rodada antiga de 120 tarefas enchia 60% da janela). Com as fontes
+          genéricas cortadas, a janela cobre várias rodadas — e quem está desatualizada aparece. */}
+      <UltimaColetaPorAgencia rows={collectionStatus?.data ?? []} />
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <Metric label="Total" value={collectionStatus?.metricas.total ?? 0} />
         <Metric label="Sucesso" value={collectionStatus?.metricas.sucesso ?? 0} />
@@ -658,7 +677,13 @@ function PrizeView({ data }: { data: QualityDashboard }) {
         <div key={item.categoria.id} className="card">
           <Gavel className="w-4 h-4 text-brand mb-3" />
           <h2 className="text-sm font-semibold text-text-primary">{item.categoria.nome}</h2>
-          <p className="text-sm text-text-secondary mt-2">{item.vencedora ? `Vencedora preliminar: ${item.vencedora}` : "Sem vencedora definida"}</p>
+          <p className="text-sm text-text-secondary mt-2">
+            {item.vencedora
+              ? `Vencedora preliminar: ${item.vencedora}`
+              : item.status === "sem_base_historica"
+                ? "Sem base histórica para comparação — a categoria abre quando houver duas medições."
+                : "Sem vencedora definida"}
+          </p>
           <p className="font-mono text-2xl text-brand mt-3">{item.score !== null ? item.score : "-"}</p>
           <p className="text-xs text-text-muted mt-2">Resultado preliminar com base nas avaliacoes institucionais do ano.</p>
         </div>
@@ -1072,21 +1097,10 @@ function RankingPanel({ ranking, compact = false }: { ranking: DashboardRanking[
   );
 }
 
-function LegalNotice({ data }: { data?: QualityDashboard }) {
-  return (
-    <div className="rounded-md border border-warning/30 bg-warning/10 p-4">
-      <div className="flex items-start gap-3">
-        <AlertTriangle className="w-5 h-5 text-warning mt-0.5" />
-        <div>
-          <p className="text-sm font-medium text-text-primary">LGPD/LAI by design</p>
-          <p className="text-sm text-text-secondary mt-1">
-            {data?.legal.disclaimer ?? "Ranking institucional baseado em fontes publicas e revisao humana, sem score individual de agentes publicos."}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
+// Etapa67 — o banner "LGPD/LAI by design" foi REMOVIDO da UI (decisão do usuário): aparecia nas
+// 8 abas como o elemento mais chamativo da página. A conformidade é praticada, não anunciada — o
+// disclaimer e as referências legais continuam no payload `legal` da API e nos relatórios
+// exportados (guardrails de sanitização seguem ativos em todos os write-paths).
 
 function List({ items, positive = false }: { items: string[]; positive?: boolean }) {
   return (
@@ -1139,8 +1153,43 @@ function ReportCard({ title, href }: { title: string; href: string }) {
     <a href={href} target="_blank" rel="noreferrer" className="card hover:border-brand/50 transition-colors">
       <Download className="w-5 h-5 text-brand mb-3" />
       <h2 className="text-sm font-semibold text-text-primary">{title}</h2>
-      <p className="text-sm text-text-muted mt-1">Inclui ranking, notas por criterio, evidencias e referencias legais.</p>
+      <p className="text-sm text-text-muted mt-1">Inclui ranking, notas por critério, evidências e referências legais.</p>
     </a>
+  );
+}
+
+function UltimaColetaPorAgencia({ rows }: { rows: Array<{ agencia_sigla: string | null; data_coleta: string; status: string }> }) {
+  const AGENCIAS_ESPERADAS = ["ANA", "ANAC", "ANCINE", "ANEEL", "ANM", "ANP", "ANS", "ANATEL", "ANTAQ", "ANTT", "ANVISA", "ANPD"];
+  const ultima = new Map<string, string>();
+  for (const r of rows) {
+    if (!r.agencia_sigla) continue; // check de conectividade de fonte genérica — não é de agência
+    const atual = ultima.get(r.agencia_sigla);
+    if (!atual || r.data_coleta > atual) ultima.set(r.agencia_sigla, r.data_coleta);
+  }
+  const fmt = (iso: string) => new Date(iso).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "2-digit" });
+  return (
+    <div className="card">
+      <p className="text-sm font-semibold text-text-primary mb-2">Última coleta por agência</p>
+      <div className="flex flex-wrap gap-1.5">
+        {AGENCIAS_ESPERADAS.map((sigla) => {
+          const quando = ultima.get(sigla);
+          return (
+            <span
+              key={sigla}
+              className={quando
+                ? "px-2 py-0.5 rounded text-[11px] bg-success/10 text-success border border-success/20"
+                : "px-2 py-0.5 rounded text-[11px] bg-bg-hover text-text-label border border-border"}
+              title={quando ? `Última coleta: ${fmt(quando)}` : "Sem coleta na janela visível"}
+            >
+              {sigla}{quando ? ` · ${fmt(quando)}` : " · sem registro"}
+            </span>
+          );
+        })}
+      </div>
+      <p className="text-[11px] text-text-label mt-2">
+        &ldquo;Sem registro&rdquo; = nenhuma coleta desta agência na janela visível do log — rodar a coleta ou investigar.
+      </p>
+    </div>
   );
 }
 

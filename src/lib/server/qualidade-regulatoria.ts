@@ -376,76 +376,76 @@ const CURATED_NOTES: Record<string, number[]> = {
 
 const AGENCY_CONTEXT: Record<string, { foco: string; maturidade: string; highlights: string[]; improvements: string[] }> = {
   ANATEL: {
-    foco: "telecomunicacoes, consultas publicas setoriais e dados abertos consolidados",
+    foco: "telecomunicações, consultas públicas setoriais e dados abertos consolidados",
     maturidade: "alta maturidade institucional",
-    highlights: ["Dados abertos estruturados", "Consultas publicas maduras", "Transparencia institucional consistente"],
-    improvements: ["Aprofundar ARR em normas de maior impacto", "Ampliar indicadores comparaveis de atendimento"],
+    highlights: ["Dados abertos estruturados", "Consultas públicas maduras", "Transparencia institucional consistente"],
+    improvements: ["Aprofundar ARR em normas de maior impacto", "Ampliar indicadores comparáveis de atendimento"],
   },
   ANVISA: {
-    foco: "vigilancia sanitaria, AIR e participacao social em temas de alto impacto",
-    maturidade: "alta maturidade regulatoria",
+    foco: "vigilância sanitária, AIR e participação social em temas de alto impacto",
+    maturidade: "alta maturidade regulatória",
     highlights: ["Uso relevante de AIR", "Participacao social consolidada", "Governanca robusta"],
-    improvements: ["Ampliar interoperabilidade de bases abertas", "Padronizar evidencias de devolutiva das consultas"],
+    improvements: ["Ampliar interoperabilidade de bases abertas", "Padronizar evidências de devolutiva das consultas"],
   },
   ANEEL: {
-    foco: "energia eletrica, audiencias publicas, AIR e portal de dados setoriais",
-    maturidade: "alta maturidade regulatoria",
-    highlights: ["Historico de AIR", "Portal de dados robusto", "Audiencias publicas com alta maturidade"],
-    improvements: ["Evidenciar melhor a revisao periodica de normas", "Ampliar metricas de atendimento ao usuario"],
+    foco: "energia elétrica, audiências públicas, AIR e portal de dados setoriais",
+    maturidade: "alta maturidade regulatória",
+    highlights: ["Historico de AIR", "Portal de dados robusto", "Audiencias públicas com alta maturidade"],
+    improvements: ["Evidenciar melhor a revisao periodica de normas", "Ampliar metricas de atendimento ao usuário"],
   },
   ANP: {
-    foco: "petroleo, gas natural, biocombustiveis e prestacao de contas setorial",
+    foco: "petróleo, gás natural, biocombustiveis e prestacao de contas setorial",
     maturidade: "maturidade intermediaria alta",
     highlights: ["Transparencia institucional consistente", "Prestacao de contas setorial visivel"],
-    improvements: ["Ampliar rastreabilidade de AIR e ARR", "Consolidar indicadores de participacao social"],
+    improvements: ["Ampliar rastreabilidade de AIR e ARR", "Consolidar indicadores de participação social"],
   },
   ANA: {
-    foco: "recursos hidricos, saneamento e participacao por comites de bacia",
+    foco: "recursos hídricos, saneamento e participacao por comites de bacia",
     maturidade: "maturidade intermediaria",
-    highlights: ["Participacao em comites de bacia", "Dados hidricos estruturados"],
-    improvements: ["Ampliar evidencias de AIR", "Melhorar comparabilidade de indicadores financeiros"],
+    highlights: ["Participacao em comites de bacia", "Dados hídricos estruturados"],
+    improvements: ["Ampliar evidências de AIR", "Melhorar comparabilidade de indicadores financeiros"],
   },
   ANS: {
-    foco: "saude suplementar, atendimento ao consumidor e consultas tecnicas",
+    foco: "saúde suplementar, atendimento ao consumidor e consultas técnicas",
     maturidade: "maturidade em desenvolvimento",
-    highlights: ["Base institucional verificavel", "Canais de atendimento relevantes para usuarios"],
-    improvements: ["Aumentar transparencia de devolutivas", "Fortalecer dados abertos e ARR"],
+    highlights: ["Base institucional verificavel", "Canais de atendimento relevantes para usuários"],
+    improvements: ["Aumentar transparência de devolutivas", "Fortalecer dados abertos e ARR"],
   },
   ANAC: {
-    foco: "aviacao civil, seguranca operacional e modernizacao regulatoria",
-    maturidade: "maturidade em consolidacao",
-    highlights: ["Modernizacao regulatoria recente", "Base normativa ampla"],
-    improvements: ["Consolidar AIR em temas estrategicos", "Ampliar datasets e indicadores publicos"],
+    foco: "aviação civil, seguranca operacional e modernizacao regulatória",
+    maturidade: "maturidade em consolidação",
+    highlights: ["Modernizacao regulatória recente", "Base normativa ampla"],
+    improvements: ["Consolidar AIR em temas estrategicos", "Ampliar datasets e indicadores públicos"],
   },
   ANTT: {
-    foco: "transportes terrestres, concessoes e fiscalizacao de infraestrutura",
+    foco: "transportes terrestres, concessoes e fiscalização de infraestrutura",
     maturidade: "maturidade em desenvolvimento",
-    highlights: ["Agenda regulatoria ligada a concessoes", "Base de controle setorial relevante"],
+    highlights: ["Agenda regulatória ligada a concessoes", "Base de controle setorial relevante"],
     improvements: ["Ampliar dados abertos", "Melhorar rastreabilidade de participacao e AIR"],
   },
   ANTAQ: {
     foco: "transportes aquaviarios, portos e navegacao interior",
     maturidade: "estrutura menor com evolucao gradual",
-    highlights: ["Base institucional verificavel", "Fontes publicas disponiveis para avaliacao"],
-    improvements: ["Ampliar evidencias de AIR e dados abertos", "Fortalecer indicadores de qualidade normativa"],
+    highlights: ["Base institucional verificavel", "Fontes públicas disponiveis para avaliação"],
+    improvements: ["Ampliar evidências de AIR e dados abertos", "Fortalecer indicadores de qualidade normativa"],
   },
   ANM: {
-    foco: "mineracao, transicao institucional pos-DNPM e fiscalizacao mineral",
+    foco: "mineração, transicao institucional pos-DNPM e fiscalização mineral",
     maturidade: "governanca em construcao",
-    highlights: ["Estrutura regulatoria recente", "Potencial de integracao de dados minerais"],
+    highlights: ["Estrutura regulatória recente", "Potencial de integracao de dados minerais"],
     improvements: ["Fortalecer governanca e sistemas de dados", "Ampliar AIR, ARR e dados abertos"],
   },
   ANCINE: {
-    foco: "audiovisual, fomento e regulacao de mercado setorial menor",
+    foco: "audiovisual, fomento e regulação de mercado setorial menor",
     maturidade: "maturidade inicial-intermediaria",
     highlights: ["Conhecimento setorial especializado", "Base normativa rastreavel"],
     improvements: ["Estruturar AIR e governanca", "Ampliar dados abertos e indicadores"],
   },
   ANPD: {
-    foco: "protecao de dados pessoais e consolidacao como agencia reguladora em 2026",
+    foco: "protecao de dados pessoais e consolidação como agência reguladora em 2026",
     maturidade: "estrutura institucional em formacao",
-    highlights: ["Potencial institucional em protecao de dados", "Agenda de construcao regulatoria em 2026"],
-    improvements: ["Consolidar estrutura de agencia", "Criar historico comparavel para edicoes futuras"],
+    highlights: ["Potencial institucional em protecao de dados", "Agenda de construcao regulatória em 2026"],
+    improvements: ["Consolidar estrutura de agência", "Criar histórico comparavel para edicoes futuras"],
   },
 };
 
@@ -596,8 +596,15 @@ export function buildPremioWinners(diagnostics: QualidadeDiagnostico[], previous
   const byPrevious = new Map((previous ?? []).map((item) => [item.agencia_sigla, item.score_geral]));
   return QUALIDADE_CATEGORIAS_PREMIO.map((category) => {
     if (category.tipo === "evolucao") {
+      // Etapa67 — SEM base histórica, NÃO há vencedor. `previous` nunca era passado (o service
+      // chama buildPremioWinners(ranking) sem o 2º argumento), toda variação dava 0 e a
+      // "vencedora do Prêmio Evolução" era a primeira do array — arbitrária. Eleger alguém sem
+      // ter medido evolução é fabricar prêmio.
+      if (byPrevious.size === 0) {
+        return { categoria: category, vencedora: null, score: null, status: "sem_base_historica" };
+      }
       const candidates = diagnostics
-        .filter((item) => item.agencia_sigla !== "ANPD" || byPrevious.has(item.agencia_sigla))
+        .filter((item) => byPrevious.has(item.agencia_sigla))
         .map((item) => {
           const old = byPrevious.get(item.agencia_sigla);
           const variation = old ? ((item.score_geral - old) / old) * 100 : 0;

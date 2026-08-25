@@ -11,7 +11,8 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 export const dynamic = "force-dynamic";
 
 type CollectionResult = {
-  agencia_sigla: string;
+  /** `null` = check de CONECTIVIDADE de fonte genérica — não é evidência de agência nenhuma. */
+  agencia_sigla: string | null;
   fonte_id: string;
   criterio_id: number | null;
   status: "sucesso" | "falha" | "restrito" | "parcial";
@@ -55,15 +56,30 @@ export async function POST(req: NextRequest) {
   });
 }
 
+/**
+ * Etapa67 — COLETA HONESTA (decisão do usuário: cortar). Só `site_agencia` tem URL específica por
+ * agência; as outras 9 fontes buscavam a MESMA homepage genérica 12 vezes e gravavam 12
+ * "evidências" idênticas atribuídas a agências diferentes — a "evidência de Fala.BR da ANEEL" era
+ * a home do Fala.BR. Isso não é coleta, é ping de homepage com rótulo de agência.
+ *
+ * Agora: fonte genérica gera UMA tarefa (check de conectividade, sem agência, sem evidência);
+ * evidência por agência só nasce de `site_agencia` (aqui) e das DERIVADAS dos nossos dados.
+ * Os contadores de evidência CAEM — esperado e confirmado; o que sobra é verdadeiro.
+ */
 function buildTasks(agencyFilter?: string) {
   const agencies = agencyFilter ? QUALIDADE_AGENCIAS.filter((item) => item.sigla === agencyFilter) : QUALIDADE_AGENCIAS;
-  return agencies.flatMap((agencia) => QUALIDADE_FONTES.map((fonte) => ({ agencia, fonte })));
+  const porAgencia = QUALIDADE_FONTES.filter((f) => f.id === "site_agencia")
+    .flatMap((fonte) => agencies.map((agencia) => ({ agencia, fonte })));
+  const genericas = QUALIDADE_FONTES.filter((f) => f.id !== "site_agencia")
+    .map((fonte) => ({ agencia: null as (typeof agencies)[number] | null, fonte }));
+  // Com filtro de agência, as genéricas não entram (não são daquela agência — não são de nenhuma).
+  return agencyFilter ? porAgencia : [...porAgencia, ...genericas];
 }
 
-async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number], fonte: (typeof QUALIDADE_FONTES)[number]): Promise<CollectionResult> {
+async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number] | null, fonte: (typeof QUALIDADE_FONTES)[number]): Promise<CollectionResult> {
   if (fonte.requer_chave && fonte.id === "portal_transparencia_federal" && !process.env.TRANSPARENCIA_API_KEY) {
     return {
-      agencia_sigla: agencia.sigla,
+      agencia_sigla: agencia?.sigla ?? null,
       fonte_id: fonte.id,
       criterio_id: fonte.criterios_relacionados[0] ?? null,
       status: "restrito",
@@ -73,7 +89,7 @@ async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number], fonte: 
     };
   }
 
-  const url = fonte.id === "site_agencia" ? agencia.site_oficial : fonte.url;
+  const url = fonte.id === "site_agencia" && agencia ? agencia.site_oficial : fonte.url;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 8000);
   try {
@@ -98,7 +114,7 @@ async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number], fonte: 
     // Relevancia semantica: % de palavras-chave do criterio presentes no conteudo.
     const confidence = scoreEvidenceRelevance(criterioId, text);
     return {
-      agencia_sigla: agencia.sigla,
+      agencia_sigla: agencia?.sigla ?? null,
       fonte_id: fonte.id,
       criterio_id: criterioId,
       status: response.ok ? "sucesso" : "parcial",
@@ -110,7 +126,7 @@ async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number], fonte: 
     };
   } catch (error) {
     return {
-      agencia_sigla: agencia.sigla,
+      agencia_sigla: agencia?.sigla ?? null,
       fonte_id: fonte.id,
       criterio_id: fonte.criterios_relacionados[0] ?? null,
       status: "falha",
@@ -160,7 +176,9 @@ async function persistResults(results: CollectionResult[]): Promise<string | nul
   // Deduplica por (agencia, criterio, url) para nao inflar evidencias repetidas.
   const seenEvidence = new Set<string>();
   const evidenceRows = results
-    .filter((item) => item.title && item.criterio_id)
+    // Etapa67 — evidência exige AGÊNCIA: check de conectividade (agencia_sigla null) fica só no
+    // log de coletas. Era aqui que nasciam 108 pseudo-evidências por rodada.
+    .filter((item) => item.agencia_sigla && item.title && item.criterio_id)
     .filter((item) => {
       const key = `${item.agencia_sigla}|${item.criterio_id}|${item.url}`;
       if (seenEvidence.has(key)) return false;
