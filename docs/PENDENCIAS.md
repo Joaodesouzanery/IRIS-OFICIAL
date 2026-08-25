@@ -778,6 +778,51 @@ mais frouxo que `isFinalDecisionRecord` (`regulatory-documents.ts`): não olha
 sem resultado. Consumidores diferentes podem contar universos diferentes. Unificar quando alguém
 mexer no módulo de associados — o registro estava prometido na Fase 4 e não foi feito.
 
+## Fase 5 · bloco 5 — ANTT: ⚠️ o diagnóstico da Fase 4 estava ERRADO (24/08/2026)
+
+A Fase 4 concluiu que os 0% de cobertura nominal da ANTT vinham do caminho de DESCOBERTA e listou
+quatro correções. **Medido contra três páginas REAIS de 2026 do portal, nenhuma das quatro
+reproduz.**
+
+| Verificação | 1036ª RD | 1037ª RD | 288ª RDE |
+|---|---|---|---|
+| anchors de voto no HTML → capturados | 5 → **5** | 6 → **6** | 3 → **3** |
+| votos com `.pdf` só no href decodificado | 0 | 0 | 0 |
+| títulos que NÃO casam `VOTO-DXX-NNN-AAAA` | 0 | 0 | 0 |
+| documentos do rodapé no último bloco | 0 | 0 | 0 |
+
+O critério de aceite era: **cada correção precisa de um assert que FALHE ANTES e passe depois**.
+Nenhuma falha antes — logo **nenhuma entrou**. Consertar o que não está quebrado só adiciona risco.
+O critério evitou quatro mudanças inúteis, e é a segunda vez nesta série que a exigência de medição
+derruba uma hipótese minha.
+
+**O que o coletor realmente produz** numa página real (1036ª): 5 votos, cada um ligado ao seu
+processo (`50500.027626/2025-67` etc.), mais **o RELATOR NOMINAL de cada item** ("DIRETOR FELIPE
+QUEIROZ", "DIRETOR ALESSANDRO BAUMGARTNER") e a decisão ("APROVADO POR UNANIMIDADE"). É exatamente
+o dado que a cobertura nominal precisa, e ele chega até o fim do parser.
+
+### Entregue: a fixture e a cobertura que faltavam
+`src/lib/server/__tests__/fixtures/antt/` (516 KB) com a 1036ª RD, a 288ª RDE e a listagem.
+`etapa66-antt-descoberta.test.ts` — 16 testes. Antes disto **nenhum arquivo chamava
+`parseAnttMeetingPage`, `parseProcessos` ou `classifyDocumentLink`**; a cobertura existente era só
+de orçamento e skip-set. Sem fixture, uma mudança de layout do portal zera a cobertura de voto em
+silêncio — a mesma classe de defeito que produziu quase tudo desta série. Seis funções privadas do
+collector foram exportadas para que o teste LOCALIZE a regressão em vez de só sinalizá-la.
+
+### ⚠️ Onde investigar de verdade (não é a descoberta)
+Se o dado chega íntegro ao fim do parser e a agência aparece com 0% nominal, o gargalo está **a
+jusante ou é operacional**. Candidatos, em ordem de probabilidade:
+1. **O coletor não está RODANDO.** O plano Hobby da Vercel permite 2 crons/dia e a Etapa 21 moveu
+   tudo para botão — `POST /api/v1/antt/2026/collect` precisa ser disparado. **Verificar primeiro**:
+   `GET /admin/completude-2026` mostra `ultima_captura` por agência.
+2. O documento é coletado mas o confirm não materializa voto nominal — o `antt-voto-dab-002.pdf` do
+   corpus prova que a EXTRAÇÃO funciona, então seria no gate de confirmação.
+3. `discoverAntt2026Meetings` filtra por `data_inicio?.startsWith("2026-")`; reunião sem data
+   parseada é descartada em silêncio.
+
+Nenhum desses é verificável sem produção. **A pergunta certa mudou de "por que o parser perde os
+votos" para "por que o coletor não roda ou o confirm não materializa".**
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

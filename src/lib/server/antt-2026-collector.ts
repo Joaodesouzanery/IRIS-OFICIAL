@@ -745,7 +745,9 @@ function assertAllowedUrl(rawUrl: string, allowedHosts: Set<string>): URL {
   return url;
 }
 
-function parseProcessos(html: string, pageUrl: string): AnttProcesso[] {
+// Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
+// em vez de só sinalizá-la — este caminho não tinha teste nenhum até agora.
+export function parseProcessos(html: string, pageUrl: string): AnttProcesso[] {
   const marker = /(?:<[^>]+>|\s)*(?:\d+\.\s*)?Processo\s+Deliberado:/i;
   const parts = html.split(marker).slice(1);
   const processos: AnttProcesso[] = [];
@@ -789,7 +791,9 @@ function parseProcessos(html: string, pageUrl: string): AnttProcesso[] {
   return processos;
 }
 
-function extractAnchors(html: string, baseUrl: string) {
+// Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
+// em vez de só sinalizá-la — este caminho não tinha teste nenhum até agora.
+export function extractAnchors(html: string, baseUrl: string) {
   const anchors: Array<{ href: string; text: string; index: number }> = [];
   const re = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
   let match: RegExpExecArray | null;
@@ -815,21 +819,27 @@ function findNextPageUrl(html: string, baseUrl: string): string | null {
   return next?.href ?? null;
 }
 
-function isTargetMeetingTitle(title: string): boolean {
+// Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
+// em vez de só sinalizá-la — este caminho não tinha teste nenhum até agora.
+export function isTargetMeetingTitle(title: string): boolean {
   const text = normalizeText(title);
   if (!text.includes("reuniao")) return false;
   if (text.includes("administrativa")) return false;
   return text.includes("reuniao de diretoria") || text.includes("reuniao deliberativa eletronica");
 }
 
-function classifyMeetingType(title: string): AnttMeetingType {
+// Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
+// em vez de só sinalizá-la — este caminho não tinha teste nenhum até agora.
+export function classifyMeetingType(title: string): AnttMeetingType {
   const text = normalizeText(title);
   if (text.includes("deliberativa eletronica")) return "eletronica";
   if (text.includes("extraordinaria")) return "extraordinaria";
   return "ordinaria";
 }
 
-function classifyDocumentLink(text: string, href: string): AnttDocumentType {
+// Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
+// em vez de só sinalizá-la — este caminho não tinha teste nenhum até agora.
+export function classifyDocumentLink(text: string, href: string): AnttDocumentType {
   const value = normalizeText(`${text} ${decodeURIComponentSafe(href)}`);
   if (!/\.pdf(?:$|[/?#])/i.test(href)) return "outro";
   if (/\bpauta\b/.test(value)) return "pauta";
@@ -839,7 +849,9 @@ function classifyDocumentLink(text: string, href: string): AnttDocumentType {
   return "outro";
 }
 
-function extractMeetingDates(text: string, tipo: AnttMeetingType) {
+// Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
+// em vez de só sinalizá-la — este caminho não tinha teste nenhum até agora.
+export function extractMeetingDates(text: string, tipo: AnttMeetingType) {
   const dates = [...text.matchAll(/\b(\d{2})\/(\d{2})\/(2026)\b/g)]
     .map((m) => toIsoDate(m[1], m[2], m[3]))
     .filter(Boolean) as string[];
