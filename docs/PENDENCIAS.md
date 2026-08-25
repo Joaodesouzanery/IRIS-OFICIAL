@@ -823,6 +823,46 @@ jusante ou é operacional**. Candidatos, em ordem de probabilidade:
 Nenhum desses é verificável sem produção. **A pergunta certa mudou de "por que o parser perde os
 votos" para "por que o coletor não roda ou o confirm não materializa".**
 
+## Fase 5 · bloco 6 — a SÉRIE entra na identidade da reunião (25/08/2026)
+
+### ⚠️ MIGRATION PENDENTE: `20260825120000_reunioes_serie.sql`
+Aplicar no SQL Editor. **Deploy antes da migration é seguro** — `ensureReuniao` sonda a coluna e a
+omite do payload enquanto ela não existir (mesma disciplina de `votos-write.ts`).
+
+**O problema, medido:** os contadores de reunião são INDEPENDENTES por série, e a chave natural não
+tinha série — `UNIQUE (agencia_id, data_reuniao, COALESCE(numero_reuniao,''))`. Prova no corpus: a
+**1.024ª Reunião de Diretoria** e a **264ª Reunião Deliberativa Eletrônica** da ANTT compartilham a
+data **2026-01-19**. Uma RD 264 e uma RDE 264 na mesma data colidiriam numa linha só.
+
+**Segundo defeito, no backfill da `20260705121000`:** o `CASE` mapeava `ELSE NULL` e
+`antt_reunioes_coletadas.tipo` tem TRÊS valores — toda RDE chegou em `reunioes` com
+`tipo_reuniao IS NULL`, e o `COALESCE` do `ON CONFLICT` preservou o NULL. Era **o único ponto do
+sistema onde a distinção RDE era descartada por código**. A migration repara.
+
+A informação sempre esteve no TÍTULO: `deriveSerie` o lê, e `reuniao_ordinaria` (VARCHAR 100) já
+guardava o título completo. Quem perdia era o enum `tipo_reuniao`, de duas cardinalidades.
+
+**Defeito que o TESTE achou antes de ir para produção:** filtrar direto por `serie` faria
+`ensureReuniao` **duplicar** toda reunião legada (`serie IS NULL`) em vez de encontrá-la. Corrigido
+com busca em DOIS PASSOS — série exata, e se não achar, a linha legada, que é então ENRIQUECIDA
+(mesmo princípio já usado para `tipo_reuniao` e `url_fonte`). O insert também passou a gravar
+`metadata.titulo`, que antes só o backfill SQL populava.
+
+### C19 · monotonicidade — e por que ela é AVISO, não bloqueante
+Dentro da mesma série, número maior não pode ter data anterior. É o terceiro sinal independente
+sobre `data_reuniao` (ao lado do C17 e do C18) e o único que enxerga o documento no CONTEXTO.
+
+Duas decisões de desenho:
+1. **O check é PURO** — quem busca as vizinhas é o confirm. Receber o `db` deixaria o check inerte
+   e silencioso no harness: foi assim que o C16 entrou incapaz de disparar.
+2. **Nível `aviso`, e isto é desvio DELIBERADO do plano.** A disciplina desta série exige provar
+   ZERO falso positivo contra dado real antes de bloquear (o C03 recusava 8 de 8 atas). Aqui é
+   impossível: as 16 fixtures são documentos ISOLADOS, sem vizinhos de série, e remarcação de
+   reunião e publicação fora de ordem são hipóteses que não consigo descartar sem produção.
+   **Vira bloqueante quando alguém rodar contra a base e mostrar o número.**
+
+Mutação verificada em três direções (série colapsada, milhar não normalizado, busca de um passo só).
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

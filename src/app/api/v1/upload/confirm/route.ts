@@ -12,7 +12,7 @@ import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName, isStrictPersonName } from "@/lib/server/name-matcher";
 import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { ensureReuniao } from "@/lib/server/reunioes";
+import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import { hasBudget } from "@/lib/server/time-budget";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
@@ -38,6 +38,7 @@ import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 import { buildRawExtractionDoItem } from "@/lib/server/ata-item-materializacao";
 import {
   checarCoerenciaUnanimidade, checarImpedidoComVoto, checarVotoQualidadeDuplo, temBloqueio,
+  checarSerieMonotonica,
 } from "@/lib/server/consistency-checks";
 
 /**
@@ -462,7 +463,37 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       // As checagens que dependem só do payload são refeitas AQUI, no servidor, sobre os campos
       // sanitizados. Não reprocessamos o PDF (caro, e o orçamento de 120s não comporta) — mas
       // contradição interna do próprio payload o servidor consegue ver sozinho.
+      // C19 (etapa66) — MONOTONICIDADE DA SÉRIE. É o único dos três sinais de data que enxerga o
+      // documento no CONTEXTO dos vizinhos, então precisa de `db` — mas o CHECK é puro: quem busca
+      // as vizinhas é este caller. Check que só existe com banco fica inerte no harness, e foi
+      // assim que o C16 entrou incapaz de disparar.
+      // ⚠️ Busca por SÉRIE, não por `tipo_reuniao`: os contadores são independentes por série.
+      const serieDoc = deriveSerie(d.reuniao_ordinaria ?? null);
+      let vizinhas: Array<{ numeroReuniao: string | null; dataReuniao: string | null }> = [];
+      if (serieDoc && d.data_reuniao && d.numero_reuniao && effectiveAgenciaId) {
+        try {
+          const { data: viz } = await db
+            .from("reunioes")
+            .select("numero_reuniao, data_reuniao")
+            .eq("agencia_id", effectiveAgenciaId)
+            .eq("serie", serieDoc)
+            .not("data_reuniao", "is", null)
+            .limit(200);
+          vizinhas = ((viz ?? []) as Array<{ numero_reuniao: string | null; data_reuniao: string | null }>)
+            .map((v) => ({ numeroReuniao: v.numero_reuniao, dataReuniao: v.data_reuniao }));
+        } catch {
+          // Tabela/coluna ainda não migrada: o check simplesmente não roda. Degradar aqui é o
+          // desenho — nunca derrubar o confirm por causa de uma checagem de contexto.
+        }
+      }
+
       const achadosServidor = [
+        ...checarSerieMonotonica({
+          numeroReuniao: d.numero_reuniao ?? null,
+          dataReuniao: d.data_reuniao ?? null,
+          serie: serieDoc,
+          vizinhas,
+        }),
         ...checarCoerenciaUnanimidade({
           unanimidade: Boolean(rawConfirm.extraction_raw?.unanimidade_detectada),
           votosContra: d.nomes_votacao_contra.length,
@@ -602,11 +633,18 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
         // Reunião materializada: garante a linha canônica e liga as deliberações
         // (degrada para null enquanto a migration não for aplicada).
+        // Etapa66 — a SÉRIE entra na identidade da reunião. `reuniao_ordinaria` guarda o TÍTULO
+        // completo ("264ª Reunião Deliberativa Eletrônica"), e é dele que a série é derivada: sem
+        // ela, a 264ª RD e a 264ª RDE da MESMA data colapsariam numa linha só — os contadores das
+        // séries são independentes (medido: a 1.024ª RD e a 264ª RDE compartilham 2026-01-19).
+        const tituloReuniao = d.reuniao_ordinaria ?? null;
         const reuniaoId = await ensureReuniao(db, {
           agenciaId: effectiveAgenciaId,
           dataReuniao: d.data_reuniao,
           numeroReuniao: d.numero_reuniao,
           tipoReuniao: d.tipo_reuniao,
+          serie: deriveSerie(tituloReuniao),
+          titulo: tituloReuniao,
           source: "upload-confirm",
         });
 

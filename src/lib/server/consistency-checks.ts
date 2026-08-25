@@ -382,6 +382,78 @@ export function checarAnoProtocoloDaAta(input: {
   }];
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+// Etapa 66 — MONOTONICIDADE DA SÉRIE
+//
+// Dentro da MESMA série, número maior não pode ter data anterior: a 83ª ROP não vem antes da 81ª.
+// É o terceiro sinal independente sobre `data_reuniao`, ao lado do C17 (ano do processo) e do C18
+// (protocolo da própria ata) — e o único que enxerga o documento no CONTEXTO dos vizinhos.
+//
+// ⚠️ Por que "série" e não `tipo_reuniao`: os contadores são INDEPENDENTES por série. Medido no
+// corpus — a 1.024ª Reunião de Diretoria e a 264ª Reunião Deliberativa Eletrônica da ANTT
+// compartilham a data 2026-01-19. Comparar sem separar a série dá alarme falso imediato, e
+// `tipo_reuniao` colapsa as duas em "Ordinaria" (enum de duas cardinalidades). Ver `deriveSerie`.
+//
+// ⚠️ NÍVEL: **aviso**, não bloqueante — e isto é desvio deliberado do plano.
+// A disciplina desta série exige provar ZERO falso positivo contra dado real ANTES de bloquear
+// (a lição do C03, que recusava 8 de 8 atas). Aqui isso é impossível: as 16 fixtures são
+// documentos ISOLADOS, sem vizinhos de série, e não tenho produção para medir. Remarcação de
+// reunião e publicação fora de ordem são hipóteses plausíveis que não consigo descartar.
+// Vira bloqueante quando alguém rodar contra a base e mostrar o número.
+// ═══════════════════════════════════════════════════════════════════════════
+
+/** Uma reunião vizinha, da MESMA agência e série. */
+export interface ReuniaoVizinha {
+  numeroReuniao: string | null;
+  dataReuniao: string | null;
+}
+
+/**
+ * C19 — a ordem dos NÚMEROS tem de concordar com a ordem das DATAS, dentro da série.
+ *
+ * Função PURA: quem busca as vizinhas é o caller (o confirm, onde há `db`). Isso é melhor que
+ * receber o `db`: um check que só roda com banco fica inerte e silencioso no harness — foi
+ * exatamente assim que o C16 entrou incapaz de disparar.
+ */
+export function checarSerieMonotonica(input: {
+  numeroReuniao: string | null | undefined;
+  dataReuniao: string | null | undefined;
+  serie: string | null | undefined;
+  vizinhas: ReuniaoVizinha[];
+}): Achado[] {
+  const ordinal = ordinalDe(input.numeroReuniao);
+  const data = input.dataReuniao ?? null;
+  if (ordinal === null || !data) return [];
+
+  const conflitos: string[] = [];
+  for (const v of input.vizinhas) {
+    const vOrd = ordinalDe(v.numeroReuniao);
+    if (vOrd === null || !v.dataReuniao || vOrd === ordinal) continue;
+    const maior = ordinal > vOrd;
+    // Número maior com data ANTERIOR (ou o inverso) quebra a monotonicidade da série.
+    if (maior ? data < v.dataReuniao : data > v.dataReuniao) {
+      conflitos.push(`${v.numeroReuniao} em ${v.dataReuniao}`);
+    }
+  }
+  if (conflitos.length === 0) return [];
+
+  return [{
+    codigo: "C19_SERIE_NAO_MONOTONICA",
+    nivel: "aviso",
+    mensagem: `Reunião ${input.numeroReuniao} datada de ${data} conflita com a ordem da série `
+      + `${input.serie ?? "(sem série)"}: ${conflitos.slice(0, 3).join("; ")}`
+      + `${conflitos.length > 3 ? ` e mais ${conflitos.length - 3}` : ""}. `
+      + "Número maior não deveria ter data anterior — conferir a data extraída antes de confirmar.",
+  }];
+}
+
+/** Número da reunião como inteiro. "1.024" e "1024" valem 1024; o resto é ignorado. */
+function ordinalDe(numero: string | null | undefined): number | null {
+  if (!numero) return null;
+  const limpo = String(numero).replace(/[.\s]/g, "");
+  return /^\d+$/.test(limpo) ? Number(limpo) : null;
+}
+
 /** Há algum achado que RECUSA o confirm? */
 export function temBloqueio(achados: Achado[]): boolean {
   return achados.some((a) => a.nivel === "bloqueante");
