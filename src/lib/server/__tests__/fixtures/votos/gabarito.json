@@ -156,7 +156,13 @@
         "Ins7tuição",
         "Polí7ca"
       ],
-      "sem_votos": true
+      "sem_votos": true,
+      "resultado_nao_pode_ser": [
+        "Aprovado",
+        "Deferido",
+        "Indeferido",
+        "Ratificado"
+      ]
     },
     {
       "file": "antt-voto-dab-002.pdf",
@@ -167,6 +173,10 @@
       "resultado": "Indeferido",
       "texto_contem": [
         "RELATORIA: Diretoria Alessandro Baumgartner"
+      ],
+      "resultado_nao_pode_ser": [
+        "Deferido",
+        "Aprovado"
       ]
     },
     {
@@ -249,7 +259,13 @@
       "agencia_sigla": "ARTESP",
       "tipo_documento": "pauta",
       "import_counts_as_final": false,
-      "sem_votos": true
+      "sem_votos": true,
+      "resultado_nao_pode_ser": [
+        "Aprovado",
+        "Deferido",
+        "Indeferido",
+        "Ratificado"
+      ]
     }
   ]
 }

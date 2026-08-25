@@ -745,6 +745,39 @@ voto para quem o documento não nomeia; ninguém em CONTRA que o dispositivo dec
 SINTETIZADO dos nomes que o próprio documento cita. É fiel ao que a produção faz quando não há
 mandato cadastrado, mas não substitui conferência contra o cadastro real.
 
+## Fase 5 · bloco 4 — terminar o que a Fase 4 deixou pela metade (24/08/2026)
+
+A auditoria da própria Fase 4 achou promessas cumpridas só em parte. Registradas aqui **com a
+correção do registro**, porque duas delas eu havia declarado fechadas sem estarem.
+
+**`listaDe` chegou onde o plano mandava.** `painel-regulatorio/*` era o **primeiro alvo nomeado**,
+tinha ZERO aplicações e agregava imediatamente (`.filter(...).reduce(...)`). Idem `analytics/temas`.
+A cobertura anterior foi por arquivo tocado, não por sítio de agregação — que era o critério
+declarado. Agora: **todo sítio que agrega imediatamente está protegido** (auditado por varredura nas
+12 telas com `.reduce`). Restam 29 call-sites `api.get<X[]>` em telas que NÃO agregam — listagens
+que só mapeiam para JSX, onde o error boundary já cobre o dano.
+
+**⚠️ Correção de registro: `agencias/[id]/importar` NÃO estava fechada.** O `PENDENCIAS` dizia "4
+divergências fechadas" mas trocou esta por `completude-2026`. Agora fechada de fato: o ramo genérico
+publica `diretores`/`lista_triplice` vazios, como o curado. Era armadilha **dormente** — o consumidor
+declara os dois campos e hoje só invalida o cache, então bastava alguém lê-los para quebrar.
+
+**`resultado_nao_pode_ser` saiu de 1 para 4 documentos**, todos ancorados em regressão documentada:
+- `artesp-delib-22` ≠ "Ratificado" (a regressão que a etapa54 corrigiu);
+- `antt-voto-dab-002` ≠ "Deferido"/"Aprovado" — a direção **saía invertida**: o extrator ancorava na
+  PRIMEIRA ocorrência de "Ante o exposto", que era a liminar do JUIZ transcrita nos fatos;
+- as duas PAUTAS ≠ qualquer decisão — pauta é agenda, e ganhar resultado significa voto FABRICADO
+  (a regressão "PAUTA antes de ATA" da etapa12).
+
+Certificação **154 → 164 expectativas**.
+
+### Dívida registrada (não corrigida, conforme prometido no plano da Fase 4)
+`isFinalDecisionDelib` (`src/lib/server/associado-documents.ts:149-160`) é um predicado PARALELO e
+mais frouxo que `isFinalDecisionRecord` (`regulatory-documents.ts`): não olha
+`tipo_documento === "voto_individual"` nem `documento_apoio`, só descarta pauta/reunião ANTT e ata
+sem resultado. Consumidores diferentes podem contar universos diferentes. Unificar quando alguém
+mexer no módulo de associados — o registro estava prometido na Fase 4 e não foi feito.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`

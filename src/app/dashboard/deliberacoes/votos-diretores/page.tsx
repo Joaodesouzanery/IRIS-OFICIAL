@@ -179,10 +179,10 @@ export default function VotosDiretoresPage() {
 
   const { data: drilldownVotos, isLoading: drilldownLoading } = useQuery({
     queryKey: ["diretor-votos", selectedDirector?.diretor_id, agenciaId],
-    queryFn: () =>
-      api.get<DiretorVotoItem[]>(
+    queryFn: async () =>
+      listaDe<DiretorVotoItem>(await api.get(
         `/dashboard/diretores/${selectedDirector!.diretor_id}/votos${agenciaId ? `?agencia_id=${agenciaId}` : ""}`
-      ),
+      )),
     enabled: !!selectedDirector,
   });
 

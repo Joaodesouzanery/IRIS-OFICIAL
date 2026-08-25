@@ -37,16 +37,16 @@ export default function AnalyticsDiretoresPage() {
 
   const { data: diretores, isLoading: loadDir } = useQuery({
     queryKey: ["dashboard", "diretores-overview", agenciaId],
-    queryFn: () => api.get<DiretorOverviewItem[]>(
+    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(
       `/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`
-    ),
+    )),
   });
 
   const { data: matrix, isLoading: loadMatrix } = useQuery({
     queryKey: ["votacao", "matrix", agenciaId],
-    queryFn: () => api.get<VotoMatrixRow[]>(
+    queryFn: async () => listaDe<VotoMatrixRow>(await api.get(
       `/votacao/matrix${agenciaId ? `?agencia_id=${agenciaId}` : ""}`
-    ),
+    )),
   });
 
   // Fetch deliberações with votos for heatmap + correlation

@@ -34,6 +34,12 @@ export async function POST(
       const ok = result.status === "ok";
       return NextResponse.json({
         modo: "importacao_generica",
+        // Etapa66 — PARIDADE DE FORMA com o ramo curado. O consumidor
+        // (`dashboard/agencias/[id]/page.tsx:90`) declara `{ diretores, lista_triplice }`, e o
+        // cast de `api.post<T>` não verifica nada: hoje ele só invalida o cache, então a
+        // divergência era armadilha DORMENTE — bastava alguém ler o campo para quebrar em runtime.
+        diretores: [] as unknown[],
+        lista_triplice: [] as unknown[],
         ...result,
         message: ok
           ? `${result.candidatos} candidato(s) de diretor enviados para revisão. Aprove em Votos dos Diretores → Matches pendentes.`

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { MicrotemaStats, Agencia } from "@/types";
 import { getMicrotemaLabel, getMicrotemaColor, CATEGORIAS_REGULATORIAS, formatNumber } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
@@ -30,12 +30,12 @@ export default function MicrotemasPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: microtemas = [] } = useQuery({
     queryKey: ["dashboard", "microtemas", agenciaId, year],
-    queryFn: () => api.get<MicrotemaStats[]>(`/dashboard/microtemas${qs}`),
+    queryFn: async () => listaDe<MicrotemaStats>(await api.get(`/dashboard/microtemas${qs}`)),
   });
 
   // Map for quick lookup

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, listaDe } from "@/lib/api";
 import type { MicrotemaStats, EmpresaStats, MandatosAnalytics, Agencia } from "@/types";
 import { IrisBarChart } from "@/components/charts/IrisBarChart";
 import { IrisPieChart } from "@/components/charts/IrisPieChart";
@@ -43,17 +43,17 @@ export default function AnalyticsTemasPage() {
 
   const { data: agencias } = useQuery({
     queryKey: ["agencias"],
-    queryFn: () => api.get<Agencia[]>("/agencias"),
+    queryFn: async () => listaDe<Agencia>(await api.get("/agencias")),
   });
 
   const { data: microtemas, isLoading: loadMicro } = useQuery({
     queryKey: ["dashboard", "microtemas", agenciaId, year],
-    queryFn: () => api.get<MicrotemaStats[]>(`/dashboard/microtemas${qstr}`),
+    queryFn: async () => listaDe<MicrotemaStats>(await api.get(`/dashboard/microtemas${qstr}`)),
   });
 
   const { data: empresas, isLoading: loadEmpresas } = useQuery({
     queryKey: ["empresas", agenciaId],
-    queryFn: () => api.get<EmpresaStats[]>(`/empresas${agenciaId ? `?agencia_id=${agenciaId}` : ""}`),
+    queryFn: async () => listaDe<EmpresaStats>(await api.get(`/empresas${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
   });
 
   const { data: analytics, isLoading: loadAnalytics } = useQuery({
