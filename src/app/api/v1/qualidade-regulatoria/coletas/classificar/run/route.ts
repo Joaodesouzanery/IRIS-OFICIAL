@@ -41,19 +41,33 @@ export async function POST(req: NextRequest) {
   // Não clobbra o que já foi revisado por humano: pula (agência|dimensão) já validado/em revisão/manual.
   const { data: existentes } = await db
     .from("qualidade_regulatoria_avaliacoes")
-    .select("agencia_sigla, criterio_id, status_revisao, fonte_avaliacao")
+    .select("agencia_sigla, criterio_id, status_revisao, fonte_avaliacao, nota")
     .eq("ano", ano);
   const protegidas = new Set(
     (existentes ?? [])
       .filter((r: any) => ["validado", "em_revisao"].includes(r.status_revisao) || r.fonte_avaliacao === "manual")
       .map((r: any) => `${r.agencia_sigla}|${r.criterio_id}`),
   );
+  // Etapa67 — nota existente por chave, para a regra "portal inacessível não rebaixa".
+  const notaExistente = new Map<string, number>(
+    (existentes ?? []).map((r: any) => [`${r.agencia_sigla}|${r.criterio_id}`, Number(r.nota ?? 0)]),
+  );
 
   let avaliacoes = 0;
   let evidencias = 0;
   let erros = 0;
+  let puladasPorFetch = 0;
   for (const p of propostas) {
     if (protegidas.has(`${p.agencia_sigla}|${p.criterio_id}`)) continue;
+    // Etapa67 — falha de REDE nunca vira dado de ranking: se o portal esteve inacessível nesta
+    // rodada e a proposta REBAIXARIA a nota existente, mantém a anterior. Subir pode (o sinal que
+    // subiu veio das notícias/deliberações, não do portal); descer sem ter conseguido OLHAR o
+    // portal seria transformar um timeout em posição de ranking.
+    const anterior = notaExistente.get(`${p.agencia_sigla}|${p.criterio_id}`);
+    if (p.site_fetch_failed && anterior !== undefined && p.nota < anterior) {
+      puladasPorFetch++;
+      continue;
+    }
 
     const { error: avError } = await db.from("qualidade_regulatoria_avaliacoes").upsert(
       {
@@ -117,6 +131,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     ano,
     avaliacoes_preliminares: avaliacoes,
+    rebaixamentos_evitados_por_portal_inacessivel: puladasPorFetch,
     evidencias_geradas: evidencias,
     protegidas: protegidas.size,
     erros,

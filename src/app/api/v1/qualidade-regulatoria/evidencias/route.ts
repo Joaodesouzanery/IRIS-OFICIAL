@@ -71,8 +71,11 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({ evidencia: data });
 }
 
-// Revisao humana: muda o status de revisao (pendente -> validado/rejeitado).
-// Apenas evidencias "validado" devem alimentar a pontuacao do premio.
+// Revisão humana: muda o status de revisão (pendente -> validado/rejeitado).
+// ⚠️ Etapa67 — a revisão afeta `evidencias_count` e a credibilidade documental; a NOTA vem de
+// `qualidade_regulatoria_avaliacoes` e NÃO é alterada aqui. O comentário anterior afirmava que
+// "apenas evidencias validadas alimentam a pontuacao" — era falso e induzia o operador a achar
+// que validar mudava o ranking.
 export async function PATCH(req: NextRequest) {
   const guard = await requireAdmin(req);
   if (guard) return guard;

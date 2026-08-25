@@ -38,15 +38,18 @@ export async function POST(req: NextRequest) {
     results.push(await collectTask(task.agencia, task.fonte));
   }
 
-  await persistResults(results).catch((error) => {
-    console.warn("[qualidade-regulatoria/coletas] Falha ao persistir resultados:", error instanceof Error ? error.message : error);
-  });
+  // Etapa67 — a falha de persistência DEIXA DE SER ENGOLIDA. Antes: catch que só logava no
+  // servidor e a resposta seguia com `partial_success: true` — a UI mostrava banner VERDE de
+  // sucesso com o banco sem receber NADA. Coleta que não persiste não é sucesso parcial: é rodada
+  // perdida, e quem opera precisa ver isso na tela.
+  const persistError = await persistResults(results);
 
   return NextResponse.json({
     processed: results.length,
     total: tasks.length,
     next_offset: offset + limit < tasks.length ? offset + limit : null,
-    partial_success: results.some((item) => item.status === "sucesso" || item.status === "parcial"),
+    partial_success: !persistError && results.some((item) => item.status === "sucesso" || item.status === "parcial"),
+    persist_error: persistError,
     results,
     legal_notice: "Coleta segura: não armazena HTML bruto e remove dados pessoais detectáveis antes de registrar evidências.",
   });
@@ -120,8 +123,18 @@ async function collectTask(agencia: (typeof QUALIDADE_AGENCIAS)[number], fonte: 
   }
 }
 
-async function persistResults(results: CollectionResult[]) {
-  const db = createSupabaseServerClient();
+/**
+ * Persiste o log de coletas + evidências. Devolve `null` em sucesso ou a MENSAGEM do erro —
+ * nunca lança e nunca engole (etapa67). Os dois inserts checam `error`: `agencia_sigla` e
+ * `fonte_id` são FKs, e um seed ausente rejeitava o lote inteiro no Postgres sem ninguém saber.
+ */
+async function persistResults(results: CollectionResult[]): Promise<string | null> {
+  let db: ReturnType<typeof createSupabaseServerClient>;
+  try {
+    db = createSupabaseServerClient();
+  } catch (error) {
+    return `Supabase indisponível: ${error instanceof Error ? error.message : String(error)}`;
+  }
   const rows = results.map((item) => ({
     agencia_sigla: item.agencia_sigla,
     criterio_id: item.criterio_id,
@@ -139,7 +152,10 @@ async function persistResults(results: CollectionResult[]) {
     warnings: item.warnings,
     compliance_status: "pendente_revisao",
   }));
-  if (rows.length) await db.from("qualidade_regulatoria_coletas").insert(rows);
+  if (rows.length) {
+    const { error } = await db.from("qualidade_regulatoria_coletas").insert(rows);
+    if (error) return `log de coletas não gravado: ${error.message}`;
+  }
 
   // Deduplica por (agencia, criterio, url) para nao inflar evidencias repetidas.
   const seenEvidence = new Set<string>();
@@ -161,5 +177,9 @@ async function persistResults(results: CollectionResult[]) {
       status_revisao: "pendente",
       compliance_flags: { auto_collected: true, reviewed: false, confidence: item.confidence ?? 0 },
     }));
-  if (evidenceRows.length) await db.from("qualidade_regulatoria_evidencias").insert(evidenceRows);
+  if (evidenceRows.length) {
+    const { error } = await db.from("qualidade_regulatoria_evidencias").insert(evidenceRows);
+    if (error) return `evidências não gravadas: ${error.message}`;
+  }
+  return null;
 }

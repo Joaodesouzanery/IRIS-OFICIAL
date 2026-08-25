@@ -25,11 +25,16 @@ export async function GET() {
         pendente_revisao: rows.filter((item) => item.compliance_status === "pendente_revisao").length,
       },
     });
-  } catch {
+  } catch (error) {
+    // Etapa67 — Supabase fora do ar DEIXOU de ser indistinguível de "nunca coletei": os zeros
+    // seguem (o consumidor não quebra), mas `degraded: true` diz que são zeros de FALHA DE
+    // LEITURA, não de ausência de coleta. A UI mostra o estado, não o vazio.
     return NextResponse.json({
       data: [],
       fontes: QUALIDADE_FONTES,
       metricas: { total: 0, sucesso: 0, falha: 0, restrito: 0, pendente_revisao: 0 },
+      degraded: true,
+      degraded_reason: error instanceof Error ? error.message : "Falha ao consultar o banco",
     });
   }
 }

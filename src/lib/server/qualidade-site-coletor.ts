@@ -100,18 +100,24 @@ async function fetchAgencyPortal(url: string): Promise<string | null> {
 /**
  * Coleta os sinais de site para as agências informadas. Só agências com portal gov.br
  * (ARTESP e afins são pulados — portal não-Plone; caem só em notícias/deliberações).
+ *
+ * ⚠️ Etapa67 — `null` ≠ sinais vazios, e a distinção é o que impede timeout de virar ranking:
+ *  · `emptySiteSignals()` = coletamos (ou pulamos por desenho) e NÃO há seção → ausência REAL;
+ *  · `null`               = tentamos buscar o portal e a REDE falhou → não sabemos nada.
+ * Antes, os dois caminhos devolviam o mesmo objeto vazio, e o classificador rebaixava a agência
+ * para `inexistente` (nota 0) com a justificativa "portal não publica" — por causa de um 403.
  */
 export async function collectSiteSignals(
   agencies: Array<{ sigla: string; site_oficial: string }>,
-): Promise<Map<string, SiteSignals>> {
-  const out = new Map<string, SiteSignals>();
+): Promise<Map<string, SiteSignals | null>> {
+  const out = new Map<string, SiteSignals | null>();
   for (const ag of agencies) {
     if (!/(^|\.)gov\.br/i.test(safeHost(ag.site_oficial))) {
       out.set(ag.sigla, emptySiteSignals());
       continue;
     }
     const html = await fetchAgencyPortal(ag.site_oficial);
-    out.set(ag.sigla, html ? extractSiteSignals(html, ag.site_oficial) : emptySiteSignals());
+    out.set(ag.sigla, html ? extractSiteSignals(html, ag.site_oficial) : null);
   }
   return out;
 }

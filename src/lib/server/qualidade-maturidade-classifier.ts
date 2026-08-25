@@ -33,6 +33,11 @@ export interface MaturidadeProposta {
   observacao: string;
   amostra_n: number;
   evidencias: Array<{ titulo: string; url: string | null; publicado_em: string | null }>;
+  /**
+   * Etapa67 — o portal da agência estava INACESSÍVEL nesta rodada. O caller usa isto para NÃO
+   * rebaixar uma avaliação existente: falha de rede nunca vira dado de ranking.
+   */
+  site_fetch_failed?: boolean;
 }
 
 export interface MaturidadeResultadoAgencia {
@@ -51,7 +56,7 @@ type DelibRow = { data_reuniao: string | null; data_publicacao: string | null; a
  */
 export async function classifyMaturidade(
   db: any,
-  { ano, siteSignals }: { ano: number; siteSignals?: Map<string, SiteSignals> },
+  { ano, siteSignals }: { ano: number; siteSignals?: Map<string, SiteSignals | null> },
 ): Promise<{ propostas: MaturidadeProposta[]; resultados: MaturidadeResultadoAgencia[] }> {
   const propostas: MaturidadeProposta[] = [];
   const resultados: MaturidadeResultadoAgencia[] = [];
@@ -94,8 +99,14 @@ export async function classifyMaturidade(
     const comArea = finais.filter((d) => d.area_regulatoria && d.area_regulatoria !== "outros").length;
     const pctArea = finais.length ? Math.round((comArea / finais.length) * 1000) / 10 : 0;
     const comDatas = finais.filter((d) => d.data_reuniao && d.data_publicacao).length;
-    // Sinais dos sites (seções do portal por dimensão). Vazio quando não coletado/ARTESP.
-    const siteSig = siteSignals?.get(ag.sigla) ?? emptySiteSignals();
+    // Sinais dos sites (seções do portal por dimensão). Etapa67 — três estados distintos:
+    // sinais reais · vazio por DESENHO (ARTESP/não coletado) · `null` = FETCH FALHOU. No terceiro,
+    // os sinais viram vazios para o cálculo, mas o flag impede que a ausência vire "portal não
+    // publica" — timeout de rede não é evidência de imaturidade.
+    const siteRaw = siteSignals?.get(ag.sigla);
+    const siteFetchFailed = siteSignals?.has(ag.sigla) === true && siteRaw === null;
+    const siteSig = siteRaw ?? emptySiteSignals();
+    if (siteFetchFailed) warnings.push("portal inacessível nesta rodada — sinais de site não avaliados");
 
     let classificadas = 0;
     for (const criterio of QUALIDADE_CRITERIOS) {
@@ -146,7 +157,9 @@ export async function classifyMaturidade(
           ? `${matches.length} item(ns) de notícia relacionados a "${criterio.nome}" (${recent.length} nos últimos ${RECENCY_MONTHS} meses).${secoesTxt}`
           : (dimSig.hasSection
             ? `Sem notícias no IRIS, mas o portal publica seção(ões) da dimensão "${criterio.nome}".`
-            : `Nenhum sinal público relacionado a "${criterio.nome}" nos dados do IRIS nem no portal.`);
+            : siteFetchFailed
+              ? `Sem notícias no IRIS; o portal estava INACESSÍVEL nesta rodada — a ausência de seção não pôde ser verificada.`
+              : `Nenhum sinal público relacionado a "${criterio.nome}" nos dados do IRIS nem no portal.`);
       }
 
       propostas.push({
@@ -157,6 +170,7 @@ export async function classifyMaturidade(
         observacao: `${NIVEL_LABEL[nivel]} — ${observacao} Classificação preliminar (auto), sujeita a revisão humana.`,
         amostra_n: amostra,
         evidencias,
+        site_fetch_failed: siteFetchFailed,
       });
       classificadas += 1;
     }

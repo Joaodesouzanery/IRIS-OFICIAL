@@ -142,6 +142,9 @@ type QualityDashboard = {
 type CollectionStatus = {
   data: Array<{ id: string; agencia_sigla: string; criterio_id: number | null; fonte_id: string | null; status: string; data_coleta: string; warnings: string[]; compliance_status: string }>;
   metricas: { total: number; sucesso: number; falha: number; restrito: number; pendente_revisao: number };
+  /** Etapa67 — `true` quando os zeros vêm de FALHA DE LEITURA do banco, não de ausência de coleta. */
+  degraded?: boolean;
+  degraded_reason?: string;
 };
 
 const TAB_TITLES: Record<Tab, string> = {
@@ -201,17 +204,21 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
       let lotes = 0;
       let total = 0;
       // Limite de seguranca para evitar loop infinito (cobre QUALIDADE_AGENCIAS x QUALIDADE_FONTES).
+      const persistErrors: string[] = [];
       for (let i = 0; i < 60; i++) {
-        const result = await api.post<{ processed: number; total: number; next_offset: number | null }>(
+        const result = await api.post<{ processed: number; total: number; next_offset: number | null; persist_error?: string | null }>(
           "/qualidade-regulatoria/coletas/run",
           { offset, limit: 24 },
         );
         lotes++;
         total = result.total;
+        // Etapa67 — falha de persistência era engolida no servidor e esta tela mostrava banner
+        // VERDE com o banco vazio. Agora o erro viaja até aqui e o banner muda de cor.
+        if (result.persist_error) persistErrors.push(result.persist_error);
         if (result.next_offset === null) break;
         offset = result.next_offset;
       }
-      return { lotes, total };
+      return { lotes, total, persistErrors };
     },
     onSuccess: () => {
       setCollectionOffset(0);
@@ -481,7 +488,10 @@ function EvidenceView(props: {
       {props.evidenceRows.length > 0 ? (
         <div className="card space-y-3">
           <h2 className="text-sm font-semibold text-text-primary">Revisao de evidencias ({props.selectedAgencySigla})</h2>
-          <p className="text-xs text-text-muted">Apenas evidencias validadas alimentam a pontuacao do premio.</p>
+          {/* Etapa67 — o texto anterior ("apenas evidências validadas alimentam a pontuação") era
+              FALSO: a nota vem de `qualidade_regulatoria_avaliacoes`, e validar/rejeitar evidência
+              não muda um ponto. Dizer o que o sistema faz, não o que gostaríamos que fizesse. */}
+          <p className="text-xs text-text-muted">Evidências documentam e contextualizam as notas; a pontuação vem das avaliações por critério (revisão humana ou auto-classificação IMQN).</p>
           <div className="space-y-2">
             {props.evidenceRows.map((row) => (
               <div key={row.id} className="flex items-start gap-3 p-3 border border-border rounded-md">
@@ -591,7 +601,7 @@ function CollectionsView({ collectionStatus, runCollection, isPending, runFullCo
   isPending: boolean;
   runFullCollection: () => void;
   isRunningFull: boolean;
-  fullResult?: { lotes: number; total: number };
+  fullResult?: { lotes: number; total: number; persistErrors?: string[] };
 }) {
   return (
     <section className="space-y-4">
@@ -612,8 +622,21 @@ function CollectionsView({ collectionStatus, runCollection, isPending, runFullCo
         </div>
       </div>
       {fullResult ? (
-        <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
-          Coleta completa: {fullResult.lotes} lote(s) processado(s) cobrindo {fullResult.total} tarefa(s). Evidencias registradas como pendentes para revisao.
+        fullResult.persistErrors?.length ? (
+          <div className="border border-danger/30 bg-danger/10 rounded-card p-3 text-sm text-danger">
+            Coleta rodou ({fullResult.lotes} lote(s)), mas a GRAVAÇÃO falhou em {fullResult.persistErrors.length} lote(s):
+            {" "}{fullResult.persistErrors[0]} — os resultados desses lotes NÃO estão no banco.
+          </div>
+        ) : (
+          <div className="border border-success/30 bg-success/10 rounded-card p-3 text-sm text-success">
+            Coleta completa: {fullResult.lotes} lote(s) processado(s) cobrindo {fullResult.total} tarefa(s). Evidências registradas como pendentes para revisão.
+          </div>
+        )
+      ) : null}
+      {collectionStatus?.degraded ? (
+        <div className="border border-warning/30 bg-warning/10 rounded-card p-3 text-sm text-text-secondary">
+          Não foi possível LER o histórico de coletas ({collectionStatus.degraded_reason ?? "banco indisponível"}).
+          Os zeros abaixo são falha de leitura, não ausência de coleta.
         </div>
       ) : null}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
