@@ -7,7 +7,12 @@
       "agencia_sigla": "ANM",
       "tipo_documento": "ata",
       "data_reuniao": "2025-07-16",
-      "ata_items_min": 1
+      "ata_items_min": 1,
+      "nomes_contra": [
+        "Tasso Mendonça Jr",
+        "Caio Mario Seabra Filho",
+        "Mauro Henrique Moreira Sousa"
+      ]
     },
     {
       "file": "anm-ata-34-rep.pdf",

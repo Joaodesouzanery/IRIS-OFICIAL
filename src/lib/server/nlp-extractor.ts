@@ -493,9 +493,34 @@ const RE_VOTO_DIRECAO = new RegExp(`\\b(${NOME})\\s*${DASHES}\\s*([Ff]avor[aá]v
 // Padrão DIRECIONAL dedicado (não entra em RE_VOTO_CONTEXTO para não perder a direção).
 // Verbos CONJUGADOS com fronteira (\b): os radicais soltos (`segui\w*`, `acompanh\w*`)
 // casavam "seguintes"/"acompanhamento" e criavam candidatos-lixo ("Ou Acesse Os").
+// Ordinal do revisor — o corpus escreve CAPITALIZADO ("acompanhou o voto do Segundo Revisor").
+const ORDINAL_REVISOR = "(?:[Pp]rimeir|[Ss]egund|[Tt]erceir|[Qq]uart)[oa]";
+/**
+ * Objeto obrigatório da ADESÃO (etapa66) — o voto de um COLEGA, nunca uma manifestação técnica.
+ *
+ * Simetria com o ramo de divergência, que já exigia `ALVO_DIVERGENCIA_COLEGIADO`. Sem isto, o lado
+ * que grava FAVORÁVEL ficava mais frouxo que o que grava CONTRÁRIO — e favorável é justamente o
+ * sinal que já vem inflado pela inferência de unanimidade.
+ *
+ * ⚠️ Medido nas 16 fixtures antes de entrar: das 150 ocorrências da PALAVRA
+ * (`acompanh|segui|aderi`), a regex casa apenas 3 (ela exige NOME adjacente), e as 3 são adesão a
+ * voto de colega — nenhum voto fabricado hoje. Mas essa proteção é ACIDENTAL, vem da adjacência do
+ * nome. Com o objeto: preserva 3/3 e bloqueia 4/4 das frases adversariais
+ * ("acompanhou a manifestação técnica", "o parecer da Procuradoria", "as conclusões da área
+ * técnica", "Superintendência … acompanhou a sessão").
+ *
+ * As formas de artigo vão da mais longa para a mais curta: `aderiu AO voto do X` precisa de "ao"
+ * como token único, senão o "a" isolado casa e o "o voto" seguinte não fecha.
+ */
+const OBJETO_ADESAO_COLEGIADO =
+  `(?:integralmente\\s+|parcialmente\\s+|na\\s+[íi]ntegra\\s+)?` +
+  `(?:(?:aos|ao|às|as|os|à|a|o)\\s+)?` +
+  `(?:voto\\s+(?:d[oa]s?\\s+)?)?(?:\\(\\s*)?(?:${ORDINAL_REVISOR}\\s+)?` +
+  `(?:[Rr]elator[a]?|[Rr]evisor[a]?|[Dd]iretor[a]?(?:[-\\s]Geral)?|[Cc]onselheir[oa])`;
+
 const RE_VOTO_CONCORDANCIA = new RegExp(
   `(?:[Dd]iretor[a]?\\s+|[Cc]onselheiro[a]?\\s+)?(${NOME})\\s+(?:` +
-    `(acompanh(?:ou|a|am|aram|ando)|segui(?:u|ram|ndo)|aderi(?:u|ram|ndo))\\b` +
+    `(acompanh(?:ou|a|am|aram|ando)|segui(?:u|ram|ndo)|aderi(?:u|ram|ndo))\\s+${OBJETO_ADESAO_COLEGIADO}` +
     // Mesma exigência de objeto do RE_VOTO_DISSIDENTE_VERBAL: este ramo grava CONTRA, e
     // "divergiu das manifestações técnicas" não é dissenso do colegiado.
     `|(divergi(?:u|ram)|discord(?:ou|a|am|aram|ando))\\s+d[oa]\\s+${ALVO_DIVERGENCIA_COLEGIADO}\\b` +
@@ -1136,6 +1161,26 @@ export function extractFields(text: string): ExtractedFields {
   const nomes_votacao_abstencao: string[] = [];
   const nomes_votacao_ausente: string[] = [];
 
+  // QA ago/2026: validação ESTRITA do nome — os regex de divergência pescavam fragmentos de
+  // prosa ("voto por", "Diretoria Colegiada da ANM pode") como "dissidente" junto dos reais.
+  // Contra grava VOTO → só entra o que tem forma de nome de pessoa (Capitalizado + partículas).
+  // Etapa65 — quem o DISPOSITIVO credita com o voto APROVADO não é dissidente: venceu. Se a ata
+  // diz as duas coisas, o dispositivo é a que decide. Sem esta trava, "divergente DO RELATOR"
+  // (padrão da ANM, e frequentemente a posição vencedora) virava voto CONTRÁRIO do vencedor.
+  const roleMapDoc = buildRoleMap(text);
+  const autoresAprovado = new Set(extractAutoresDoVotoAprovado(text, roleMapDoc));
+
+  const markContra = (rawNome: string) => {
+    const nome = rawNome.replace(/\s+/g, " ").trim();
+    if (nome.length <= 4) return;
+    if (!isStrictPersonName(nome)) return;
+    if (autoresAprovado.has(nome)) return;
+    if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
+    const idxFavor = nomes_votacao_favor.indexOf(nome);
+    if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
+    if (!nomes_votacao_contra.includes(nome)) nomes_votacao_contra.push(nome);
+  };
+
   // Detecção direcional explícita ("Nome – Favorável/Contrário/Abstenção/Ausente").
   // SEMPRE roda, inclusive sob unanimidade: uma divergência tabular sobrepõe o default.
   RE_VOTO_DIRECAO.lastIndex = 0;
@@ -1151,9 +1196,12 @@ export function extractFields(text: string): ExtractedFields {
         if (!nomes_votacao_abstencao.includes(nome)) nomes_votacao_abstencao.push(nome);
       } else if (tipo.startsWith("favor")) {
         if (!nomes_votacao_favor.includes(nome)) nomes_votacao_favor.push(nome);
-      } else if (isStrictPersonName(nome) && !nomes_votacao_contra.includes(nome)) {
-        // Contra grava VOTO → validação estrita do nome (QA ago/2026: prosa pescada como dissidente).
-        nomes_votacao_contra.push(nome);
+      } else {
+        // Contra grava VOTO → validação estrita do nome (QA ago/2026: prosa pescada como
+        // dissidente) E a trava da etapa65 (quem o dispositivo diz que venceu não é dissidente).
+        // Este ramo NÃO passava por `markContra`, então escapava da segunda — um furo dentro da
+        // própria correção. Etapa66.
+        markContra(nome);
       }
     }
   }
@@ -1170,7 +1218,11 @@ export function extractFields(text: string): ExtractedFields {
     if (/^(?:divergi|discord)/.test(verbo)) {
       // Contra grava VOTO → validação estrita (QA ago/2026).
       if (isStrictPersonName(nome) && !nomes_votacao_contra.includes(nome)) nomes_votacao_contra.push(nome);
-    } else if (!nomes_votacao_favor.includes(nome) && !nomes_votacao_contra.includes(nome)) {
+    } else if (isStrictPersonName(nome)
+               && !nomes_votacao_favor.includes(nome) && !nomes_votacao_contra.includes(nome)) {
+      // Etapa66 — favor TAMBÉM grava voto; a validação de nome deixou de ser privilégio do lado
+      // contrário. (A defesa principal é o objeto obrigatório, na própria regex: medido,
+      // `isStrictPersonName` aceita "Superintendência de Fiscalização".)
       nomes_votacao_favor.push(nome);
     }
   }
@@ -1235,26 +1287,6 @@ export function extractFields(text: string): ExtractedFields {
 
   // ─── Voto dissidente / divergente / divergente ─────────────────────────────────────────
   // Move o diretor dissidente de _favor para _contra (se estava em favor).
-  // QA ago/2026: validação ESTRITA do nome — os regex de divergência pescavam fragmentos de
-  // prosa ("voto por", "Diretoria Colegiada da ANM pode") como "dissidente" junto dos reais.
-  // Contra grava VOTO → só entra o que tem forma de nome de pessoa (Capitalizado + partículas).
-  // Etapa65 — quem o DISPOSITIVO credita com o voto APROVADO não é dissidente: venceu. Se a ata
-  // diz as duas coisas, o dispositivo é a que decide. Sem esta trava, "divergente DO RELATOR"
-  // (padrão da ANM, e frequentemente a posição vencedora) virava voto CONTRÁRIO do vencedor.
-  const roleMapDoc = buildRoleMap(text);
-  const autoresAprovado = new Set(extractAutoresDoVotoAprovado(text, roleMapDoc));
-
-  const markContra = (rawNome: string) => {
-    const nome = rawNome.replace(/\s+/g, " ").trim();
-    if (nome.length <= 4) return;
-    if (!isStrictPersonName(nome)) return;
-    if (autoresAprovado.has(nome)) return;
-    if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
-    const idxFavor = nomes_votacao_favor.indexOf(nome);
-    if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
-    if (!nomes_votacao_contra.includes(nome)) nomes_votacao_contra.push(nome);
-  };
-
   RE_VOTO_DISSIDENTE.lastIndex = 0;
   let diss: RegExpExecArray | null;
   while ((diss = RE_VOTO_DISSIDENTE.exec(text)) !== null) markContra(diss[1]);
@@ -1493,6 +1525,20 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
     const nome = raw.replace(/\s+/g, " ").trim();
     if (nome.length > 4 && !arr.includes(nome)) arr.push(nome);
   };
+  /**
+   * Favor TAMBÉM grava voto (etapa66) — `buildVotoRows` transforma esta lista em linhas
+   * `tipo_voto: "Favoravel"`. A validação de nome deixou de ser privilégio do lado contrário:
+   * `RE_VOTARAM_FAVOR` aceita 180 chars de complemento livre com flag `i` (que anula a
+   * capitalização exigida pelo macro NOME) e o destino não checava nada, enquanto o gêmeo
+   * `RE_VOTARAM_CONTRA`, com a MESMA janela, ia para `moveToContra` e era validado.
+   * ⚠️ Latente: medido, nenhuma das duas dispara nas 16 fixtures. Entra pela simetria.
+   */
+  const pushFavorValidado = (raw: string) => {
+    const nome = raw.replace(/\s+/g, " ").trim();
+    if (!isStrictPersonName(nome)) return;
+    push(favor, nome);
+  };
+
   // Etapa65 — mesma trava do documento, e AQUI ela é precisa: o texto do item traz a frase de
   // divergência e o dispositivo juntos, então "venceu" e "foi vencido" se referem ao MESMO item.
   const autoresAprovado = new Set(extractAutoresDoVotoAprovado(text, roleMap));
@@ -1515,15 +1561,17 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
     const tipo = vd[2].toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
     if (tipo.includes("ausente")) push(ausente, nome);
     else if (tipo.startsWith("absten")) push(abstencao, nome);
-    else if (tipo.startsWith("favor")) push(favor, nome);
-    else push(contra, nome);
+    else if (tipo.startsWith("favor")) pushFavorValidado(nome);
+    // Etapa66 — `push(contra, …)` cru pulava `isStrictPersonName` E `autoresAprovado`: era o
+    // único caminho de CONTRA fora do helper, e portanto o único furo na trava da etapa65.
+    else moveToContra(nome);
   }
 
   // "Votaram a favor os Diretores X, Y e Z" / "Votou contra o Diretor W"
   RE_VOTARAM_FAVOR.lastIndex = 0;
   let vf: RegExpExecArray | null;
   while ((vf = RE_VOTARAM_FAVOR.exec(text)) !== null) {
-    for (const nome of splitDirectorNames(vf[1])) push(favor, nome);
+    for (const nome of splitDirectorNames(vf[1])) pushFavorValidado(nome);
   }
   RE_VOTARAM_CONTRA.lastIndex = 0;
   let vcc: RegExpExecArray | null;
@@ -1564,7 +1612,10 @@ export function extractItemVotes(text: string, roleMap: Record<string, string> =
   RE_VOTO_ABSTENCAO.lastIndex = 0;
   let ab: RegExpExecArray | null;
   while ((ab = RE_VOTO_ABSTENCAO.exec(text)) !== null) {
-    const nome = ab[1].trim();
+    // Etapa66 — MESMA normalização do doc-level. Sem colapsar o espaço, um nome quebrado por wrap
+    // do PDF não casa o `indexOf` abaixo e NÃO é removido de favor/contra: o mesmo diretor passa a
+    // contar duas vezes, como favorável E como abstenção.
+    const nome = ab[1].replace(/\s+/g, " ").trim();
     if (nome.length <= 4) continue;
     const i = favor.indexOf(nome);
     if (i !== -1) favor.splice(i, 1);

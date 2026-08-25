@@ -667,6 +667,51 @@ separado — e quando acontecer, a data entra em `docs/METODOLOGIA-METRICAS.md`,
 alimenta perfil público de diretor: sem a data, um relatório de setembro diverge de um de agosto
 sem explicação.
 
+## Fase 5 · bloco 2 — simetria entre FAVORÁVEL e CONTRÁRIO (24/08/2026)
+
+O achado veio de fora e a **medição o dividiu em duas metades com veredictos opostos**:
+
+- **ESTRUTURA — correta, e pior que o descrito.** `RE_VOTO_CONCORDANCIA` tem os dois ramos no mesmo
+  regex e só o de divergência exigia objeto; o de adesão também não passava por
+  `isStrictPersonName`. O lado que grava FAVORÁVEL era o mais frouxo — e favorável é justamente o
+  sinal já inflado pela inferência de unanimidade.
+- **FREQUÊNCIA — não traduziu.** Nas 16 fixtures há **150 ocorrências da PALAVRA**
+  (`acompanh|segui|aderi`) e a regex casa **3**, porque exige NOME adjacente. As 3 são adesão a voto
+  de colega: **zero votos fabricados hoje.**
+
+A correção entrou porque a proteção era **acidental** (vinha da adjacência do nome, não de desenho)
+e porque custa nada — medido: **preserva 3/3 dos casos reais e bloqueia 4/4 dos adversariais**
+("acompanhou a manifestação técnica", "o parecer da Procuradoria", "as conclusões da área técnica",
+"Superintendência … acompanhou a sessão").
+
+⚠️ **`isStrictPersonName` NÃO é a defesa** — medido, ele aceita `"Superintendência de Fiscalização"`
+e `"Ante O Exposto"`. Quem segura é o objeto obrigatório; a validação de nome é complemento.
+⚠️ `aderiu **AO** voto do X` precisou de "ao" como token único na alternância de artigo, senão o
+"a" isolado casa e o "o voto" seguinte não fecha — vira falso negativo.
+
+**Os quatro furos LATENTES fechados** (medido: `RE_VOTO_DIRECAO` e `RE_VOTARAM_FAVOR` têm **0
+matches** nos 16 PDFs — são risco para formato novo, não bug vivo):
+1. `extractItemVotes` — o ramo tabular gravava `contra` sem `isStrictPersonName` **e sem
+   `autoresAprovado`**: era o único caminho de CONTRA fora do helper, e portanto **o único furo
+   dentro da correção que dá nome ao bloco 1 da Fase 4**. Passa por `moveToContra`.
+2. `extractFields` — mesmo ramo, mesma falta de `autoresAprovado`. Passa por `markContra` (o bloco
+   de declaração subiu no arquivo para isso).
+3. `RE_VOTARAM_FAVOR` — 180 chars de complemento livre com flag `i`, destino sem validação nenhuma,
+   enquanto o gêmeo `RE_VOTARAM_CONTRA`, com a MESMA janela, ia para `moveToContra` validado. Agora
+   os dois lados validam.
+4. Abstenção do item usava `.trim()` sem colapsar espaço. Reprodutor medido: com nome de espaço
+   duplo, o `indexOf` em `favor` falha e o diretor fica nos **dois** baldes, com grafias diferentes.
+   ⚠️ Lição do teste: asserir "ninguém está nas duas listas" passa VERDE com o bug, porque as
+   grafias diferem — a asserção tem de ser sobre a REMOÇÃO.
+
+**Gabarito:** a 32ª REP passou a travar `nomes_contra` — era o único VERDADEIRO positivo do
+`markContra` sem cobertura. Os três verificados no PDF: `"com voto contrário do Diretor Tasso
+Mendonça Jr."` (questão de ordem), `"…do Diretor Caio Mario Seabra Filho, relator original"` e
+`"…do Diretor-Geral, relator original da matéria"` — este último citado por CARGO, resolvido pelo
+preâmbulo. Certificação 153 → **154**.
+
+Mutação verificada nas quatro correções.
+
 ## Invariantes de operação (não quebrar)
 
 - Commits com autor `Joao Nery <214216649+Joaodesouzanery@users.noreply.github.com>`
