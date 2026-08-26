@@ -496,11 +496,27 @@ function contextAround(html: string, index: number, radius: number) {
   return cleanText(stripTags(html.slice(Math.max(0, index - radius), index + radius)));
 }
 
-function classifyLinkType(text: string, href: string): MonitoramentoTipoItem {
+/**
+ * Exportada na Fase 7 para que o teste LOCALIZE a regressao em vez de so sinaliza-la: este
+ * classificador decide, sozinho, se um documento entra ou nao na esteira de votos — e por meses
+ * ele decidiu errado para uma agencia inteira sem que nenhum teste o tocasse.
+ */
+export function classifyLinkType(text: string, href: string): MonitoramentoTipoItem {
   const value = normalizeText(`${text} ${href}`);
+  // Governanca primeiro: nomeacao/exoneracao e mandato sao atos sobre PESSOAS, nao decisoes
+  // colegiadas — alimentam Mandatos/Governanca e nunca a esteira de votos.
   if (/\b(nomea|exonera)/.test(value)) return "ato_nomeacao";
   if (/\bmandato/.test(value)) return "mandato";
-  if (/\b(diretoria|diretores?|composi)/.test(value)) return "diretoria";
+
+  // ─── Fase 7: DECISAO antes de DIRETORIA — a trava que matou a ANM ───────────
+  // O teste de `diretoria|diretores?|composi` vinha ANTES destes e vencia sempre, porque `value`
+  // inclui a URL ABSOLUTA e as quatro fontes da ANM vivem sob
+  // `/pt-br/composicao/diretoria-colegiada/...` — casando DUAS vezes (`composi` e `diretoria`)
+  // em TODO link daquelas paginas, qualquer que fosse o texto. Como `diretoria` esta fora das
+  // duas portas de enfileiramento (DECISION_TIPOS e a allowlist do auto-enqueue), toda ata da ANM
+  // parava em status 'novo' para sempre: 0 reunioes, 0 deliberacoes, 0 votos, e 326 itens
+  // "detectados" que nunca sairiam dali. O comentario abaixo ja prometia esta ordem desde sempre;
+  // era o codigo que discordava dele.
   // Decisoes tem prioridade sobre pautas: voto > ata > deliberacao > pauta.
   // Uma pauta e a agenda do que sera discutido; voto/ata sao a decisao em si.
   if (/\bvoto\b|\bvotos\b/.test(value)) return "voto";
@@ -508,6 +524,11 @@ function classifyLinkType(text: string, href: string): MonitoramentoTipoItem {
   if (value.includes("delibera")) return "deliberacao";
   if (value.includes("pauta")) return "pauta";
   if (value.includes("reuniao")) return "reuniao";
+
+  // `diretoria` e o que sobra: pagina INSTITUCIONAL do colegiado ("Composicao da Diretoria",
+  // "Quem e quem", bio de diretor). Continua fora da esteira de propósito — admiti-la ali encheria
+  // a fila de paginas que nunca foram documento de decisao.
+  if (/\b(diretoria|diretores?|composi)/.test(value)) return "diretoria";
   return "documento";
 }
 

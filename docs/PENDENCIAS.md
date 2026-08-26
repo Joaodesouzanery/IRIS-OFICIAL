@@ -884,6 +884,31 @@ tem RDE e ela não aparece na coleta, o filtro de título está descartando.
 **Operação:** chamar autenticado como admin e ler `degrau_que_para` + `diagnostico`. Se for o degrau
 1, a resposta é operacional, não de código.
 
+## Fase 7 — dívidas registradas (26/08/2026)
+
+### ⚠️ DÍVIDA DE MODELAGEM: `hash_item` embute o `tipo` (a causa, não o sintoma)
+
+`monitoramento_itens.hash_item = sha256(tipo | url | reuniao | data)` (`monitoring.ts:261`) sob
+`UNIQUE (site_id, hash_item)` (migration `005`). **A chave de deduplicação depende de um campo
+derivado por classificador.** Consequência: qualquer ajuste em `classifyLinkType` muda o hash dos
+mesmos links → o crawl insere **linhas novas** e as antigas viram órfãs imortais em `status='novo'`,
+inflando o contador de "detectados não processados" com fantasmas. Foi exatamente o que aconteceu
+com as 326 atas da ANM, e foi preciso a migration `20260826120000` para limpar.
+
+**Se `hash_item` fosse `f(site_id, url)`, reclassificar seria um `UPDATE`** — sem linhas novas, sem
+órfãos, sem migration de limpeza. Não entrou na Fase 7 porque é expand-contract sobre a chave única
+de uma tabela viva (adicionar `hash_url` → backfill → trocar a constraint → dropar a antiga), e a
+Fase 7 já mexe na classificação. **Fica registrado para a Fase 8 não repetir a Fase 7**: sem isso,
+o próximo ajuste de classificador paga o mesmo pedágio.
+
+### Migration desta fase (aplicar no SQL Editor)
+
+- **`20260826120000_anm_reclassificar_diretoria.sql`** — apaga os `monitoramento_itens` presos em
+  `status='novo' AND tipo='diretoria'` dos sites ativos, para o crawl seguinte redescobri-los já
+  como `ata`/`pauta`/`voto`. ⚠️ **Aplicar DEPOIS do deploy do código** (antes, o crawl recriaria com
+  o tipo errado — inofensivo, mas seria preciso reaplicar). Idempotente; o código funciona sem ela
+  (só continua contando os fantasmas).
+
 ## Fase 6 — UI confiável e esteira que decide sozinha (25/08/2026)
 
 Sete commits a partir dos quatro achados de produção do usuário (com prints), na ordem que ele
