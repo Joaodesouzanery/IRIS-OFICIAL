@@ -75,7 +75,6 @@
       "schedule": "0 11 * * *"
     },
     {
-      "_comentario": "Fase 7: era /api/v1/upload/auto-confirm. A esteira completa CONTÉM o auto-confirm (é o passo 1 dela), então trocar é upgrade puro — e resolve o 'sem a aba aberta' sem gastar um slot novo, que o plano Hobby não tem (só 2 crons/dia).",
       "path": "/api/v1/pipeline/run",
       "schedule": "30 12 * * *"
     }

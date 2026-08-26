@@ -884,6 +884,21 @@ tem RDE e ela não aparece na coleta, o filtro de título está descartando.
 **Operação:** chamar autenticado como admin e ler `degrau_que_para` + `diagnostico`. Se for o degrau
 1, a resposta é operacional, não de código.
 
+## ⚠️ Incidente de deploy (26/08/2026) — `vercel.json` com chave desconhecida
+
+Oito deploys seguidos falharam em 4-5s durante ~4 horas. Causa: eu adicionei `"_comentario"` dentro
+de uma entrada de `crons` para explicar a troca do cron da Fase 7. JSON não tem comentários e o
+schema do Vercel **rejeita propriedade desconhecida**.
+
+**O que torna isso perigoso:** a falha é de validação de CONFIGURAÇÃO, não de build. Ela acontece
+antes de o Next compilar, então o ritual local inteiro (`type-check`, `test`, `build`, `lint`)
+passa verde. Nada no repositório olhava para o `vercel.json`.
+
+**Conserto:** propriedade removida; a explicação da troca do cron vive no commit `ec484b7` e no
+bloco da Fase 7 acima. E o teste `etapa71-vercel-config.test.ts` passa a validar o arquivo —
+chaves de topo, `crons` com exatamente `path`+`schedule`, rota existente que exporta `GET` (o cron
+dispara GET), `schedule` de 5 campos, e `functions` apontando para arquivos reais.
+
 ## Fase 9 — o que a produção revelou (26/08/2026)
 
 Primeira fase guiada por **medição do banco de produção**, não por leitura de código. 7 commits.

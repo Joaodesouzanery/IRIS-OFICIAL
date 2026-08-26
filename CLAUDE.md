@@ -64,6 +64,13 @@ ver a skill `iris-migrations`. RLS/indexação/pooling: `.agents/skills/supabase
 - **Regra de orçamento (Fase 7):** nenhum passo pode receber uma FATIA menor que a RESERVA interna
   que ele exige — senão ele roda, gasta o round-trip de auth e devolve zero em silêncio. Foi assim
   que a coleta (fatia 8s × reserva 25s) inseriu zero itens por rodada durante semanas.
+- **`vercel.json` NÃO aceita comentário nem chave desconhecida.** JSON não tem comentários, e o
+  schema do Vercel rejeita propriedade extra — inclusive `"_comentario"`. A falha é de VALIDAÇÃO
+  DE CONFIGURAÇÃO: quebra em 4-5s, antes de qualquer build, então `npm run build` local passa
+  verde e não vê nada. Isso derrubou 8 deploys seguidos (26/08). A explicação de uma mudança vai
+  no COMMIT e em `docs/PENDENCIAS.md`, nunca no JSON. O teste `etapa71-vercel-config` valida o
+  arquivo (chaves de crons/functions, rotas que existem, schedule de 5 campos) — rode o ritual
+  antes de pushar mudanças de config.
 - Sem segredos versionados; segredos só em env do Vercel/Supabase.
 
 ## Pendências e operação
