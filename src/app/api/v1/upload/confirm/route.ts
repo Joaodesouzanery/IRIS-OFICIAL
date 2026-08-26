@@ -15,7 +15,7 @@ import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import { hasBudget } from "@/lib/server/time-budget";
-import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { COLEGIADO_SIGLAS, dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -424,6 +424,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     // banco viravam metade do tempo da rodada. Agora: Set de agências 1× + cache por agência.
     const { data: agenciasRows } = await db.from("agencias").select("id, sigla");
     const agenciasSet = new Set(((agenciasRows ?? []) as Array<{ id: string }>).map((a) => a.id));
+    // Fase 9 — a sigla, que a rota já buscava e descartava, passa a servir ao guard de data (C20).
+    const siglaPorId = new Map(((agenciasRows ?? []) as Array<{ id: string; sigla: string }>).map((a) => [a.id, a.sigla]));
     // Gate de COLEGIADA (QA ago/2026): fora de ANTT/ANM/ARTESP a esteira de votos não cria
     // candidato a diretor nem infere voto por mandato — ANS/ANA ganhavam "diretores votando"
     // por artefato (misclassificação de sigla + mandato fabricado).
@@ -488,6 +490,21 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       }
 
       const achadosServidor = [
+        // C20 (Fase 9) — CINTO. O mesmo guard já roda na análise, mas isto NÃO é redundância:
+        //  · este é o gargalo único de escrita (todos os `insert` em `deliberacoes` passam aqui),
+        //    seja pela esteira, seja pelo humano;
+        //  · as 116 linhas já em `review_pending` carregam um `preview` de deploy ANTIGO, sem o
+        //    achado — só a checagem aqui as alcança;
+        //  · a ata propaga a data do pai para cada filho, então barrar uma vez barra as N filhas.
+        ...(() => {
+          const sigla = effectiveAgenciaId ? siglaPorId.get(effectiveAgenciaId) ?? null : null;
+          const p = dataReuniaoPlausivel(sigla, d.data_reuniao ?? null);
+          return p.plausivel ? [] : [{
+            codigo: "C20_DATA_FORA_DA_EXISTENCIA_DA_AGENCIA",
+            nivel: "bloqueante" as const,
+            mensagem: `Data da reunião (${d.data_reuniao}) incompatível: ${p.motivo}.`,
+          }];
+        })(),
         ...checarSerieMonotonica({
           numeroReuniao: d.numero_reuniao ?? null,
           dataReuniao: d.data_reuniao ?? null,

@@ -360,10 +360,22 @@ export function extractAnmMeetingMetadata(text: string, filename: string) {
   // 8.000 chars e pescava datas de resoluções CITADAS no corpo (data errada → escolhe
   // a composição errada da diretoria) — por isso o extenso tem prioridade.
   const dataExtenso = parseDataExtensoANM(head);
+  // ═══ Fase 9 — o fallback SEM ÂNCORA morreu ═══════════════════════════════════
+  // O comentário acima já admitia o risco ("pescava datas de resoluções CITADAS") e o resolveu
+  // pela metade: deu prioridade ao extenso, mas manteve, como último recurso, a PRIMEIRA data em
+  // extenso de 8.000 caracteres, sem âncora nenhuma. Num ato da ANM a primeira data do texto é
+  // invariavelmente a citação legal do preâmbulo — "Lei nº 9.314, de 14 de novembro de 1996".
+  //
+  // Medido em produção: 38 deliberações da ANM com data ANTERIOR à criação da agência (2017),
+  // sendo 32 delas de 1996 numa única "reunião". Os anos batem um a um com leis citadas. E como o
+  // confirm propaga a data do documento pai para todos os filhos da ata, UM parse errado vira N
+  // linhas erradas.
+  //
+  // Fica só o ramo ANCORADO (`data:`/`realizada em`/`dia`). Sem âncora, devolve null — data
+  // ausente é recuperável por reprocesso; data errada se propaga e não avisa.
   const dataMatch = dataExtenso
     ? null
-    : /(?:data|realizada?\s+em|dia)\s*:?\s*(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head) ??
-      /(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head);
+    : /(?:data|realizada?\s+em|dia)\s*:?\s*(\d{1,2})\s+de\s+([a-zçãéêíóôõú]+)\s+de\s+(\d{4})/i.exec(head);
 
   return {
     numero_reuniao: numeroMatch?.[1] ?? null,

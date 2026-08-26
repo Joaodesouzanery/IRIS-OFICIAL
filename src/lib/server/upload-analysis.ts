@@ -20,6 +20,7 @@ import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 // têm mojibake no restante). Usado para computar o status do preview.
 export const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
 import { classifyRegulatoryDocument, extractAnmMeetingMetadata, detectJuizo } from "@/lib/server/regulatory-documents";
+import { dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
 import {
   buildVoteSuggestions,
   getActiveDiretoresForVote,
@@ -188,7 +189,11 @@ export async function analyzeUploadPdf(input: {
     const anmMeta = extractAnmMeetingMetadata(extraction.text, file.name);
     if (anmMeta.numero_reuniao && !fields.numero_reuniao) fields.numero_reuniao = anmMeta.numero_reuniao;
     if (anmMeta.tipo_reuniao && !fields.tipo_reuniao) fields.tipo_reuniao = anmMeta.tipo_reuniao;
-    if (anmMeta.data_reuniao) fields.data_reuniao = anmMeta.data_reuniao;
+    // Fase 9 — `&& !fields.data_reuniao`, igual às duas linhas acima. Sem isso, uma data que
+    // `parseDataExtenso` já havia lido COM âncora de contexto era substituída pelo parser da ANM,
+    // que até agora tinha um fallback mais fraco. As três linhas deste bloco enriquecem o que
+    // falta; nenhuma delas deveria sobrescrever o que já foi lido com mais contexto.
+    if (anmMeta.data_reuniao && !fields.data_reuniao) fields.data_reuniao = anmMeta.data_reuniao;
   }
 
   let semantic_duplicate = false;
@@ -488,6 +493,24 @@ export async function analyzeUploadPdf(input: {
       // bloqueantes — os dois pegam sozinhos o bug real (ata de 25/03/2026 lida como 02/05/2022).
       ...checarDataAnteriorAoProcesso({ dataReuniao: fields.data_reuniao, texto: extraction.text }),
       ...checarAnoProtocoloDaAta({ dataReuniao: fields.data_reuniao, protocoloSei: extraction.protocoloSei }),
+      // C20 (Fase 9) — a data cabe na EXISTÊNCIA da agência? É o terceiro sinal sobre
+      // `data_reuniao`, e o único que conhece a agência. Produção tinha 38 deliberações da ANM
+      // datadas de antes de 2017, sendo 32 de 1996 numa única "reunião": a data vinha de
+      // "Lei nº 9.314, de 14 de novembro de 1996", citada no preâmbulo.
+      //
+      // BLOQUEANTE, e não anulação do campo, por duas razões. Anular destrói a evidência de que o
+      // revisor precisa ("o parser leu 1996") — e, pior, converte "data errada" em "sem data", que
+      // `year-filter` conta em TODOS os anos: trocaria um erro contido por um espalhado. O nível
+      // bloqueante já percorre os dois gates sem código novo (auto-confirm recusa; confirm exige
+      // `override_motivo`).
+      ...(() => {
+        const p = dataReuniaoPlausivel(agencia_sigla_detected, fields.data_reuniao);
+        return p.plausivel ? [] : [{
+          codigo: "C20_DATA_FORA_DA_EXISTENCIA_DA_AGENCIA",
+          nivel: "bloqueante" as const,
+          mensagem: `Data da reunião (${fields.data_reuniao}) incompatível: ${p.motivo}.`,
+        }];
+      })(),
       // C05/C06 e C08/C09 estavam DEFINIDOS e TESTADOS mas nunca chamados — código morto com
       // teste, que é pior que código morto sem: sugere cobertura que não existe.
       // Cardinalidade também é por ITEM: numa ata os nomes são a união de todos os itens e
@@ -508,13 +531,12 @@ export async function analyzeUploadPdf(input: {
         dispositivo: fields.fundamento_decisao ?? fields.resumo_pleito,
       }),
     );
-    if (fields.data_reuniao) {
-      const dataMs = Date.parse(fields.data_reuniao);
-      const max = Date.now() + 60 * 24 * 60 * 60 * 1000;
-      if (Number.isFinite(dataMs) && (dataMs < Date.parse("2020-01-01") || dataMs > max)) {
-        documentWarnings.push(`Data da reunião implausível (${fields.data_reuniao}) — revisar (a data escolhe a composição da diretoria na inferência).`);
-      }
-    }
+    // (Fase 9 — o aviso de piso fixo 2020 que existia aqui foi SUBSTITUÍDO pelo achado C20, que
+    // conhece a agência e é bloqueante. Manter os dois seria ter dois sinais sobre a mesma coisa,
+    // um deles inerte — o padrão que este projeto já combateu em outras telas. O antigo reprovava
+    // qualquer data anterior a 2020 sem saber de que órgão era o documento, e por ser apenas
+    // `documentWarnings.push` não anulava o campo nem impedia o confirm manual: em produção ele
+    // esteve ligado o tempo todo e as 38 linhas erradas passaram assim mesmo.)
     const presentes = fields.nomes_presentes ?? [];
     if (presentes.length > 0 && (fields.nomes_votacao?.length ?? 0) > presentes.length) {
       documentWarnings.push(`Mais votantes (${fields.nomes_votacao?.length}) que presentes declarados (${presentes.length}) — revisar presença/votos.`);

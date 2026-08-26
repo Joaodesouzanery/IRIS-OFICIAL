@@ -202,3 +202,55 @@ export function explicacaoCapacidadeNominal(
       return null;
   }
 }
+
+
+// ─── Fase 9: ano de criação da agência, e o guard de data implausível ────────
+/**
+ * Ano em que cada agência colegiada foi criada. Existe porque uma deliberação datada de ANTES da
+ * agência existir é um erro de parse, não um dado — e até agora nada no projeto sabia disso.
+ *
+ * Medido em produção: 38 deliberações da ANM com data anterior a 2017 (32 delas em 1996). Os anos
+ * batem, um a um, com LEIS citadas no preâmbulo dos próprios atos — a data vinha de
+ * "Lei nº 9.314, de 14 de novembro de 1996".
+ *
+ * ⚠️ Por que um mapa NOVO, e não `QUALIDADE_AGENCIAS` (que já tem `ano_criacao`): aquela lista é
+ * de agências FEDERAIS e a ARTESP é estadual. Acrescentá-la lá a faria aparecer na tela de
+ * Qualidade com notas 35 FABRICADAS em todos os critérios — exatamente a classe de número
+ * inventado que o projeto combate. Aqui o escopo é o colegiado, e o único uso é validar data.
+ */
+export const ANO_CRIACAO_AGENCIA: Record<string, number> = {
+  ANTT: 2001,   // Lei 10.233/2001
+  ANM: 2017,    // Lei 13.575/2017 (sucedeu o DNPM)
+  ARTESP: 2002, // Lei Complementar Estadual SP 914/2002
+};
+
+/**
+ * A data da reunião é PLAUSÍVEL para esta agência?
+ *
+ * Conservador de propósito: sigla desconhecida ou data ausente NÃO reprovam. O piso é o ano de
+ * criação — nunca uma janela arbitrária —, e o teto é o futuro, porque uma reunião que ainda não
+ * aconteceu também é sinal de parse errado (data de vigência, prazo de recurso).
+ */
+export function dataReuniaoPlausivel(
+  siglaAgencia: string | null | undefined,
+  dataIso: string | null | undefined,
+  agora = new Date(),
+): { plausivel: true } | { plausivel: false; motivo: string } {
+  if (!dataIso || !siglaAgencia) return { plausivel: true };
+  const ano = Number(dataIso.slice(0, 4));
+  if (!Number.isFinite(ano)) return { plausivel: true };
+
+  const criacao = ANO_CRIACAO_AGENCIA[siglaAgencia.toUpperCase()];
+  if (criacao && ano < criacao) {
+    return {
+      plausivel: false,
+      motivo: `a ${siglaAgencia} foi criada em ${criacao}; uma reunião datada de ${ano} não existe — a data provavelmente veio de uma lei ou processo citado no texto`,
+    };
+  }
+  // Um ano à frente cobre publicação antecipada de calendário sem aceitar data de vigência futura.
+  const tetoAno = agora.getFullYear() + 1;
+  if (ano > tetoAno) {
+    return { plausivel: false, motivo: `data no futuro (${ano}) — o limite aceito é ${tetoAno}` };
+  }
+  return { plausivel: true };
+}
