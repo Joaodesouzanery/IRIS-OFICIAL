@@ -151,9 +151,37 @@ export async function processMonitoringSite(
 
       if (insertError) {
         if (insertError.code === "23505") {
+          // ═══ Fase 9 — CRAWL AUTO-REPARADOR ═══════════════════════════════════
+          // Antes, colidir o hash só bumpava `last_seen_at`: o item ficava com o conteúdo que o
+          // parser da PRIMEIRA vez produziu, para sempre. Consertar um parser não consertava nada
+          // do que já estava no banco — e foi assim que 217 de 284 links da ARTESP (76%) ficaram
+          // presos à reunião errada, sem nenhum caminho de cura.
+          //
+          // Reescrever aqui é seguro e é o certo PARA ESTA TABELA porque o hash da ARTESP é
+          // `sha256(artesp|tipo|url)` — derivado da URL, não do conteúdo. Corrigir `reuniao`/`data`
+          // NÃO muda o hash, então a linha continua sendo a mesma linha e hash e conteúdo ficam
+          // CONSISTENTES. (É o oposto do caso da ANM, em que o `tipo` entra no hash e por isso a
+          // correção exigiu uma migration de limpeza: lá um UPDATE deixaria hash e conteúdo em
+          // desacordo.)
+          //
+          // ⚠️ O que NÃO se toca: `status`, `tentativas`, `proxima_tentativa_em`, `documento_id`,
+          // `upload_job_id`. São o progresso da esteira e o livro-caixa do retry — reescrevê-los
+          // desfaria trabalho já feito e reabriria itens que já foram decididos.
+          //
+          // ⚠️ E `metadata` TAMBÉM não. A tentação é escrever `item.metadata` para atualizar o
+          // `meeting_type`, mas `item` é o item RECÉM-PARSEADO: o metadata dele não tem nada do
+          // que a linha do banco acumulou — `enqueue_motivo`, `captura_erro`, `auto_enqueue_status`.
+          // Sobrescrever apagaria justamente o motivo de arquivamento, que é o que o retry consulta
+          // e o painel de "arquivados" exibe. Um merge exigiria ler a linha antes, e são ~284
+          // colisões por crawl. Os três campos abaixo são os que carregam o erro de associação.
           await db
             .from("monitoramento_itens")
-            .update({ last_seen_at: new Date().toISOString() })
+            .update({
+              titulo: item.titulo,
+              reuniao: item.reuniao,
+              data_reuniao: item.data_reuniao,
+              last_seen_at: new Date().toISOString(),
+            })
             .eq("site_id", site.id)
             .eq("hash_item", item.hash_item);
         }

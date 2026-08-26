@@ -353,16 +353,45 @@ function classifyArtespDocLabel(label: string): MonitoramentoTipoItem | null {
  * captura os PDFs que não têm extensão .pdf.
  */
 export function parseArtespReunioes(html: string, baseUrl: string): DiscoveredMonitoringItem[] {
-  // 1) Reuniões: heading "Nª Reunião do Conselho Diretor" (posição + número), com
-  //    tipo (janela antes) e data (janela depois).
-  const HEAD_RE = /(\d{1,4})\s*[ªaº°]?\s*Reuni[ãa]o\s+do\s+Conselho\s+Diretor/gi;
+  // 1) Reuniões: heading "Nª Reunião [Ordinária|Extraordinária] do Conselho Diretor".
+  //
+  // ═══ Fase 9 — 22 de 45 cabeçalhos eram INVISÍVEIS ═══
+  // O regex exigia "Reunião" IMEDIATAMENTE seguido de "do Conselho Diretor", e o texto real das
+  // extraordinárias é `246ª Reunião Extraordinária​​&nbsp;do Conselho Diretor` — com o qualificador
+  // no meio, DOIS zero-width spaces (U+200B) e um `&nbsp;` literal. Medido na página real: 45
+  // cabeçalhos, 23 casavam. Como cada documento é associado ao cabeçalho casado mais próximo
+  // ANTES dele, os 22 perdidos faziam **217 de 284 links (76%) herdarem número e data da reunião
+  // errada** — e a ARTESP tem DUAS séries de numeração (ordinárias 1146-1209, extraordinárias
+  // 204-246), então o erro não é de um item, é de série inteira.
+  //
+  // ⚠️ A NORMALIZAÇÃO PRECISA PRESERVAR O COMPRIMENTO. O casamento é feito sobre o HTML e as
+  // âncoras são ligadas por ÍNDICE DE BYTE (`m.index <= am.index`, mais abaixo). Trocar `&nbsp;`
+  // por um espaço encurtaria a string e deslocaria TODAS as associações — em silêncio, que é o
+  // pior modo de falhar. Por isso cada substituição repõe a mesma contagem de caracteres.
+  const scan = html
+    .replace(/[\u200b\u200c\u200d\ufeff]/g, " ")          // 1 char → 1 char
+    .replace(/&nbsp;/gi, "      ")                          // 6 chars → 6 chars
+    .replace(/&#160;/gi, "      ")                          // 6 → 6
+    .replace(/&#xa0;/gi, "      ");                         // 6 → 6
+  if (scan.length !== html.length) {
+    // Nunca deve acontecer; se acontecer, é melhor perder cabeçalho do que associar errado.
+    return parseArtespReunioesSemNormalizar(html, baseUrl);
+  }
+
+  // `do Conselho Diretor` continua OBRIGATÓRIO: sem ele, as linhas de rótulo `<b>Reunião
+  // Ordinária</b>` da própria página virariam cabeçalhos sem número.
+  const HEAD_RE = /(\d{1,4})\s*[ªaº°]?\s*Reuni[ãa]o\s+(?:(Ordin|Extraordin)[áa]ria\s+)?d[oe]\s+Conselho\s+Diretor/gi;
   type Meeting = { index: number; numero: string; tipo: string | null; dataIso: string | null };
   const meetings: Meeting[] = [];
   let hm: RegExpExecArray | null;
-  while ((hm = HEAD_RE.exec(html)) !== null) {
-    const before = stripTags(html.slice(Math.max(0, hm.index - 260), hm.index));
-    const tipo = /extraordin/i.test(before) ? "Extraordinaria" : /ordin[aá]ria/i.test(before) ? "Ordinaria" : null;
-    const after = stripTags(html.slice(hm.index, hm.index + 400));
+  while ((hm = HEAD_RE.exec(scan)) !== null) {
+    // O tipo agora sai do PRÓPRIO cabeçalho quando ele o declara. A janela de 260 chars anteriores
+    // continua como último recurso — ela lia um `<p>` que podia estar centenas de bytes antes, e
+    // na página real "Extraordinária" vem DEPOIS do número, dentro do heading.
+    const doGrupo = hm[2] ? (/^extraordin/i.test(hm[2]) ? "Extraordinaria" : "Ordinaria") : null;
+    const before = stripTags(scan.slice(Math.max(0, hm.index - 260), hm.index));
+    const tipo = doGrupo ?? (/extraordin/i.test(before) ? "Extraordinaria" : /ordin[aá]ria/i.test(before) ? "Ordinaria" : null);
+    const after = stripTags(scan.slice(hm.index, hm.index + 400));
     const dm = DATE_RE.exec(after);
     meetings.push({
       index: hm.index,
@@ -377,10 +406,17 @@ export function parseArtespReunioes(html: string, baseUrl: string): DiscoveredMo
   const items: DiscoveredMonitoringItem[] = [];
   const seen = new Set<string>();
   let am: RegExpExecArray | null;
+  let descartadosSemRotulo = 0;
   while ((am = A_RE.exec(html)) !== null) {
     const label = cleanText(stripTags(am[2]));
     const tipoDoc = classifyArtespDocLabel(label);
-    if (!tipoDoc) continue;
+    if (!tipoDoc) {
+      // Fase 9 — 25 âncoras DAM da página real têm por conteúdo apenas `&nbsp;`, então o rótulo
+      // sai vazio e o item some. Sumir em silêncio é o que fazia "25 documentos invisíveis" ser
+      // uma descoberta em vez de um número na tela.
+      if (!label) descartadosSemRotulo++;
+      continue;
+    }
 
     let meeting: Meeting | null = null;
     for (const m of meetings) {
@@ -418,7 +454,19 @@ export function parseArtespReunioes(html: string, baseUrl: string): DiscoveredMo
     });
   }
 
+  if (descartadosSemRotulo > 0) {
+    console.warn(`[artesp] ${descartadosSemRotulo} âncora(s) DAM sem rótulo legível — documentos não capturados.`);
+  }
   return items;
+}
+
+/**
+ * Caminho de segurança: se a normalização mudar o comprimento (nunca deveria), casar sobre o HTML
+ * cru é pior em cobertura mas SEGURO em associação — perder um cabeçalho é melhor do que ligar
+ * cada documento à reunião errada.
+ */
+function parseArtespReunioesSemNormalizar(html: string, baseUrl: string): DiscoveredMonitoringItem[] {
+  return parseArtespReunioes(html.replace(/&nbsp;/gi, " ").replace(/[\u200b\u200c\u200d\ufeff]/g, ""), baseUrl);
 }
 
 export function parseGovBrNewsHtml(
