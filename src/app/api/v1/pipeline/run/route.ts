@@ -22,10 +22,18 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { isCronRequest, isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, msLeft, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 import { RESERVA, gateDoPasso, TETO_ENQUEUE_POR_RODADA } from "@/lib/server/esteira-reservas";
 import { requeueDocument } from "@/lib/server/upload-queue";
+import {
+  buscarRunAtiva,
+  deveAbrirDisjuntor,
+  fecharRun,
+  iniciarRun,
+  reaparRunsOrfas,
+  registrarRodada,
+} from "@/lib/server/esteira-run";
 import { GET as checkGET } from "../../monitoramento/check/route";
 import { POST as enqueuePOST } from "../../deliberacoes/enqueue-pdfs/route";
 import { POST as processPOST } from "../../upload/process/route";
@@ -49,14 +57,22 @@ const RE_VOTO_FILENAME_SQL = "voto[ _-]+(vista[ _-]+)?d[a-z]{1,2}[ _-]*[0-9]";
 
 type StepResult = Record<string, unknown>;
 
+/**
+ * GET só EXECUTA para o cron (o Vercel Cron dispara GET). Fase 7 — antes, `GET` era um alias de
+ * `POST`: qualquer prefetch do navegador, ou um admin abrindo a URL, disparava a esteira INTEIRA
+ * sem que ninguém tivesse pedido. Para todo o resto, GET é leitura do estado.
+ */
 export async function GET(req: NextRequest) {
-  return run(req);
+  if (isCronRequest(req)) return run(req, "cron");
+  return NextResponse.json({
+    aviso: "GET não executa a esteira (só o cron). Use POST para rodar, ou GET /api/v1/pipeline/status para ler o andamento.",
+  });
 }
 export async function POST(req: NextRequest) {
-  return run(req);
+  return run(req, isCronRequest(req) ? "cron" : "ui");
 }
 
-async function run(req: NextRequest) {
+async function run(req: NextRequest, origem: "ui" | "cron") {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Pipeline indisponível em modo DEMO." }, { status: 403 });
   }
@@ -96,6 +112,23 @@ async function run(req: NextRequest) {
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
+
+  // ═══ Fase 7 — EXECUÇÃO COM MEMÓRIA: retomar, travar, e o disjuntor ════════════
+  // A rota era stateless; todo o estado do "Rodar tudo" vivia no navegador. Agora cada rodada
+  // registra o avanço numa linha de execução: fechar a aba deixa de "perder tudo" (a tela reabre
+  // e retoma), duas abas não disputam as mesmas linhas, e uma execução que está falhando PARA.
+  // Se a migration ainda não foi aplicada, `run` é `null` e a esteira roda como antes.
+  const corpo = (await req.json().catch(() => ({}))) as { run_id?: string };
+  await reaparRunsOrfas(db);
+  const ativa = await buscarRunAtiva(db);
+  if (ativa && corpo.run_id && ativa.id !== corpo.run_id) {
+    // Outra execução está viva: recusar é melhor do que duas esteiras sobre as mesmas linhas.
+    return NextResponse.json(
+      { error: "Já existe uma execução da esteira em andamento.", run_id: ativa.id, rodadas: ativa.rodadas },
+      { status: 409 },
+    );
+  }
+  let execucao = ativa ?? (await iniciarRun(db, origem));
 
   // ═══ Fase 7 — A ORDEM DA RODADA MUDOU: APROVAR ANTES DE INGERIR ═══════════════
   //
@@ -328,10 +361,42 @@ async function run(req: NextRequest) {
     }
   }
 
+  // ═══ Registro da rodada + DISJUNTOR ══════════════════════════════════════════
+  // Contar erros não basta. Com a vazão do commit 7 e um cron diário, um erro sistemático (um
+  // portal que muda de layout, uma migration faltando, o Storage fora do ar) deixaria de ser uma
+  // rodada ruim e viraria centenas de documentos mal processados antes de alguém abrir a tela.
+  // Quando mais da metade dos passos falha — com amostra suficiente para não ser ruído — a
+  // execução PARA e diz por quê.
+  let abortadoPeloDisjuntor = false;
+  if (execucao) {
+    execucao = (await registrarRodada(db, execucao, etapas)) ?? execucao;
+    if (deveAbrirDisjuntor(execucao.passos_ok, execucao.passos_erro)) {
+      abortadoPeloDisjuntor = true;
+      restantes = false; // não peça outra rodada: o problema não é falta de tempo
+      await fecharRun(
+        db,
+        execucao.id,
+        "abortado",
+        `Disjuntor: ${execucao.passos_erro} de ${execucao.passos_ok + execucao.passos_erro} passos falharam ` +
+          `em ${execucao.rodadas} rodada(s). A esteira parou para não propagar um erro sistemático.`,
+      );
+    } else if (!restantes) {
+      await fecharRun(db, execucao.id, "concluido", null);
+    }
+  }
+
   return NextResponse.json({
     etapas,
     restantes, // true = re-chamar para continuar (orçamento de tempo)
     materializados_nesta_rodada: materializouAgora,
+    run_id: execucao?.id ?? null,
+    rodadas: execucao?.rodadas ?? null,
+    ...(abortadoPeloDisjuntor
+      ? {
+          abortado: true,
+          motivo_parada: `Disjuntor aberto: ${execucao!.passos_erro} de ${execucao!.passos_ok + execucao!.passos_erro} passos falharam. Verifique os logs antes de rodar de novo.`,
+        }
+      : {}),
     legal_notice:
       "Pipeline zero-toque: aprovação em camadas do que já estava em revisão (dedup em 4 barreiras; direção de voto nunca chutada; ilegível não vira métrica) → diretores → votos → coleta/extração de material novo → dedup final → métricas derivadas (empresas, qualidade, mandatos, divergência). Idempotente.",
   });

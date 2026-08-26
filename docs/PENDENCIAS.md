@@ -901,13 +901,30 @@ de uma tabela viva (adicionar `hash_url` → backfill → trocar a constraint �
 Fase 7 já mexe na classificação. **Fica registrado para a Fase 8 não repetir a Fase 7**: sem isso,
 o próximo ajuste de classificador paga o mesmo pedágio.
 
-### Migration desta fase (aplicar no SQL Editor)
+### Migrations desta fase (aplicar no SQL Editor, nesta ordem)
 
-- **`20260826120000_anm_reclassificar_diretoria.sql`** — apaga os `monitoramento_itens` presos em
-  `status='novo' AND tipo='diretoria'` dos sites ativos, para o crawl seguinte redescobri-los já
-  como `ata`/`pauta`/`voto`. ⚠️ **Aplicar DEPOIS do deploy do código** (antes, o crawl recriaria com
-  o tipo errado — inofensivo, mas seria preciso reaplicar). Idempotente; o código funciona sem ela
-  (só continua contando os fantasmas).
+1. **`20260826120000_anm_reclassificar_diretoria.sql`** — apaga os `monitoramento_itens` presos em
+   `status='novo' AND tipo='diretoria'` dos sites ativos, para o crawl seguinte redescobri-los já
+   como `ata`/`pauta`/`voto`. ⚠️ **Aplicar DEPOIS do deploy do código** (antes, o crawl recriaria
+   com o tipo errado — inofensivo, mas seria preciso reaplicar). Idempotente; o código funciona sem
+   ela (só continua contando os fantasmas).
+2. **`20260826130000_esteira_runs.sql`** — a tabela de execução da esteira (retomar, lock,
+   disjuntor). Sem ela a esteira roda exatamente como antes: executa, mas não lembra — nem o
+   painel "está rodando agora", nem o lock entre abas, nem o disjuntor funcionam. Pode ser aplicada
+   antes ou depois do deploy.
+
+### ⚠️ O que MUDA na operação depois desta fase
+
+- **O cron das 12:30 deixa de ser `upload/auto-confirm` e passa a ser `pipeline/run`** (a esteira
+  completa CONTÉM o auto-confirm — é o passo 1 dela). O plano Hobby só permite 2 crons/dia, então
+  trocar foi a forma de a esteira andar sozinha sem gastar slot novo.
+- **A ordem da rodada inverteu**: aprovar o que já está em revisão vem ANTES de coletar material
+  novo. Numa primeira rodada com fila cheia, é normal ver muita aprovação e pouca coleta.
+- **O contador de "detectados" vai CAIR de sentido, não de valor**: passa a separar
+  `total_na_esteira_votos` (trabalho de voto que falta) de `total_fora_da_esteira_votos`
+  (notícia/consulta/política, que nunca virariam voto e continuam alimentando outros módulos).
+- **Teto de 60 documentos novos por rodada.** Não é limite de capacidade: o excedente fica na fila
+  e entra na rodada seguinte.
 
 ## Fase 6 — UI confiável e esteira que decide sozinha (25/08/2026)
 

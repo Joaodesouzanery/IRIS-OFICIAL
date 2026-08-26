@@ -168,3 +168,15 @@ export async function requireAdminOrCron(req: NextRequest, label = "cron"): Prom
 export function hasCronSecret(): boolean {
   return Boolean(process.env.CRON_SECRET);
 }
+
+/**
+ * A requisição veio do CRON (Bearer = CRON_SECRET), e não de uma sessão de admin?
+ *
+ * Existe para separar "efeito colateral pedido pelo agendador" de "leitura feita por um
+ * navegador". Caso concreto (Fase 7): `GET /pipeline/run` EXECUTAVA a esteira inteira — o cron
+ * precisa disso (o Vercel Cron dispara GET), mas qualquer prefetch ou visita de um admin
+ * autenticado disparava a esteira sem que ninguém tivesse pedido.
+ */
+export function isCronRequest(req: NextRequest): boolean {
+  return evaluateCronAuth(req) === "ok";
+}

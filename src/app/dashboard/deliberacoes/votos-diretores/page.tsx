@@ -339,6 +339,23 @@ export default function VotosDiretoresPage() {
   // crons). Verificar novos → Processar atas/votos → Auto-confirmar (loop) → Recalcular
   // matches (auto-aprova + mescla duplicatas). Progresso textual na UI.
   const [rodarTudoProgresso, setRodarTudoProgresso] = useState<string | null>(null);
+  // Fase 7 — a execução vive no SERVIDOR, não nesta aba. Ao montar, a tela pergunta o que está
+  // acontecendo: se há execução em andamento (esta aba, outra aba, ou o cron), ela mostra o
+  // andamento em vez de fingir que nada acontece; e o desfecho da ÚLTIMA execução aparece mesmo
+  // que quem a disparou tenha fechado a aba — inclusive um disjuntor aberto, que ninguém pode
+  // perder de vista.
+  const [runIdAtivo, setRunIdAtivo] = useState<string | null>(null);
+  type EsteiraStatus = {
+    em_andamento: boolean;
+    run: { id: string; rodadas: number; passos_erro: number; iniciado_em: string } | null;
+    ultima: { status: string; rodadas: number; motivo_parada: string | null; concluido_em: string | null } | null;
+  };
+  const { data: esteiraStatus } = useQuery({
+    queryKey: ["pipeline-status"],
+    queryFn: () => api.get<EsteiraStatus>("/pipeline/status").catch(() => ({ em_andamento: false, run: null, ultima: null })),
+    // Enquanto algo roda, pergunte de novo; parado, não fique batendo no servidor à toa.
+    refetchInterval: (q) => ((q.state.data as EsteiraStatus | undefined)?.em_andamento ? 10_000 : false),
+  });
   // ZERO-TOQUE: a esteira INTEIRA roda server-side em /pipeline/run (coleta → reclassificação →
   // extração → aprovação em camadas com dedup em 4 barreiras → diretores → dedup final). O cliente
   // só re-chama enquanto `restantes` (orçamento de tempo do Hobby). Nada exige aprovação manual.
@@ -357,19 +374,36 @@ export default function VotosDiretoresPage() {
       // real da parada sobe junto com os números.
       let rodadasComErro = 0;
       let ultimoErro: string | null = null;
-      let desfecho: "drenou" | "erros" | "teto" = "teto";
+      let desfecho: "drenou" | "erros" | "teto" | "abortado" = "teto";
       let rodadasFeitas = 0;
+      // Fase 7 — o `run_id` amarra as rodadas a UMA execução no servidor. É ele que faz "fechar a
+      // aba" deixar de perder o acompanhamento (ao reabrir, a tela retoma este id) e que impede
+      // duas abas de rodarem a esteira sobre as mesmas linhas: a segunda recebe 409.
+      let runId: string | null = runIdAtivo;
       for (let rodada = 1; rodada <= 40; rodada++) {
         rodadasFeitas = rodada;
-        setRodarTudoProgresso(`Rodada ${rodada} · coleta → extração → aprovação → métricas…`);
+        setRodarTudoProgresso(`Rodada ${rodada} · aprovação → métricas → coleta/extração…`);
         try {
-          const res = await api.post<{ etapas: PipelineEtapas; restantes: boolean }>("/pipeline/run", {});
+          const res = await api.post<{
+            etapas: PipelineEtapas;
+            restantes: boolean;
+            run_id?: string | null;
+            abortado?: boolean;
+            motivo_parada?: string;
+          }>("/pipeline/run", runId ? { run_id: runId } : {});
           falhasSeguidas = 0;
+          runId = res.run_id ?? runId;
+          setRunIdAtivo(runId);
           ultimas = res.etapas ?? {};
           for (const etapa of Object.values(ultimas)) {
             for (const [k, v] of Object.entries(etapa)) {
               if (typeof v === "number") totais[k] = (totais[k] ?? 0) + v;
             }
+          }
+          if (res.abortado) {
+            desfecho = "abortado";
+            ultimoErro = res.motivo_parada ?? "disjuntor aberto";
+            break;
           }
           if (!res.restantes) { desfecho = "drenou"; break; }
         } catch (err) {
@@ -379,6 +413,7 @@ export default function VotosDiretoresPage() {
           if (falhasSeguidas >= 2) { desfecho = "erros"; break; } // 2 falhas seguidas: para com o progresso feito
         }
       }
+      setRunIdAtivo(null);
       return { totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas };
     },
     onSuccess: ({ totais, rodadasComErro, ultimoErro, desfecho, rodadasFeitas }) => {
@@ -401,7 +436,15 @@ export default function VotosDiretoresPage() {
         (totais.votos ?? 0) > 0 ? `${totais.votos} voto(s) recuperado(s) em deliberações antigas` : null,
       ].filter(Boolean);
       // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.
-      if (desfecho === "erros") {
+      if (desfecho === "abortado") {
+        // O disjuntor é a diferença entre uma rodada ruim e 300 documentos mal
+        // processados: ele PARA a esteira, não só registra.
+        setMatchFeedback(null);
+        setMatchError(
+          `A esteira foi ABORTADA pelo disjuntor de erros na rodada ${rodadasFeitas}. ${ultimoErro ?? ""} ` +
+            `O que já havia sido gravado está no banco: ${partes.join(" · ")}.`,
+        );
+      } else if (desfecho === "erros") {
         setMatchFeedback(null);
         setMatchError(
           `A esteira PAROU após ${rodadasComErro} rodada(s) com erro (2 seguidas) na rodada ${rodadasFeitas}. ` +
@@ -420,7 +463,7 @@ export default function VotosDiretoresPage() {
         ["dashboard"], ["votos-diretores"], ["completude-2026"], ["pendencias-voto-diagnostico"],
         ["docs-review-pending-colegiado"], ["deliberacoes"], ["diretores"], ["votacao"], ["empresas"],
         ["mandatos"], ["governanca-agencias"], ["deliberacoes-360"], ["deliberacoes-gov"],
-        ["nao-enfileirados"],
+        ["nao-enfileirados"], ["pipeline-status"],
       ]) queryClient.invalidateQueries({ queryKey: key });
     },
     onError: (err) => {
@@ -507,6 +550,26 @@ export default function VotosDiretoresPage() {
           </button>
         </div>
       </div>
+
+      {/* Fase 7 — a execução vive no SERVIDOR. Este painel é o que responde "eu fechei a aba, e
+          daí?": ao voltar, a tela lê o andamento em vez de fingir que nada aconteceu. Ele também
+          mostra a esteira rodando pelo CRON, que antes era completamente invisível. */}
+      {esteiraStatus?.em_andamento && !rodarTudoMutation.isPending && esteiraStatus.run ? (
+        <div className="border border-brand/30 bg-brand/10 rounded-card p-2.5 text-sm text-brand flex items-center gap-2">
+          <Loader2 className="w-4 h-4 animate-spin shrink-0" />
+          <span>
+            A esteira está rodando agora (rodada {esteiraStatus.run.rodadas}) — iniciada em{" "}
+            {formatDateLong(esteiraStatus.run.iniciado_em)}. Pode fechar a aba: o progresso é gravado a cada rodada.
+            {esteiraStatus.run.passos_erro > 0 && ` ⚠️ ${esteiraStatus.run.passos_erro} passo(s) falharam até aqui.`}
+          </span>
+        </div>
+      ) : null}
+      {!esteiraStatus?.em_andamento && esteiraStatus?.ultima?.status === "abortado" ? (
+        <div className="border border-error/30 bg-error/10 rounded-card p-2.5 text-sm text-error">
+          A última execução foi <span className="font-medium">abortada pelo disjuntor</span> após{" "}
+          {esteiraStatus.ultima.rodadas} rodada(s). {esteiraStatus.ultima.motivo_parada}
+        </div>
+      ) : null}
 
       {matchFeedback && (candidatos ?? []).length === 0 ? (
         <div className="border border-success/30 bg-success/10 rounded-card p-2.5 text-sm text-success">{matchFeedback}</div>
