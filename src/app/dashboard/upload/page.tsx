@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import { useDropzone } from "react-dropzone";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
@@ -871,6 +872,41 @@ export default function UploadPage() {
     queryFn: () => api.get<Agencia[]>("/agencias"),
   });
 
+  // ── Fase 7 · DEEP LINK: /dashboard/upload?doc=<id> ────────────────────
+  // O "Revisar →" da tela de Votos era um <a href="/dashboard/upload"> literal que ignorava o
+  // documento da linha: levava para a dropzone vazia, e o usuário nunca via o documento que
+  // pediu para revisar. Faltavam as DUAS pontas — o link não carregava o id, e esta tela não
+  // lia query string nenhuma (não havia `useSearchParams` em todo `src/app/dashboard/**`).
+  // O carregamento por id já existia, usado pelo reprocessamento: só não tinha porta de entrada.
+  const searchParams = useSearchParams();
+  const docParam = searchParams.get("doc");
+  const [deepLinkErro, setDeepLinkErro] = useState<string | null>(null);
+  const deepLinkCarregado = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (!docParam || deepLinkCarregado.current === docParam) return;
+    deepLinkCarregado.current = docParam;
+    let cancelado = false;
+    (async () => {
+      try {
+        const res = await api.get<DocumentoRegulatorioListResponse>(
+          `/upload/documentos?ids=${encodeURIComponent(docParam)}&limit=1`,
+        );
+        const doc = res.data?.[0];
+        if (cancelado) return;
+        if (!doc) {
+          setDeepLinkErro("Documento não encontrado — ele pode ter sido aprovado ou arquivado desde que a lista foi carregada.");
+          return;
+        }
+        setReviewItems([documentToReviewItem(doc, 0)]);
+        setStage("review");
+      } catch (err) {
+        if (!cancelado) setDeepLinkErro(err instanceof Error ? err.message : "Erro ao abrir o documento");
+      }
+    })();
+    return () => { cancelado = true; };
+  }, [docParam]);
+
   // ── Etapa 1: Dropzone → fila ─────────────────────────────────────────
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (!acceptedFiles.length) return;
@@ -1456,6 +1492,15 @@ export default function UploadPage() {
               </>
             )}
           </div>
+
+          {/* Deep link que não resolveu: o usuário clicou em "Revisar" e precisa saber POR QUE
+              caiu na fila vazia, em vez de achar que a tela está quebrada. */}
+          {deepLinkErro && (
+            <div className="flex items-start gap-3 p-4 rounded-md bg-warning/10 border border-warning/20">
+              <XCircle className="w-4 h-4 text-warning shrink-0 mt-0.5" />
+              <p className="text-sm text-warning">{deepLinkErro}</p>
+            </div>
+          )}
 
           {/* Erro de análise */}
           {analyzeError && (

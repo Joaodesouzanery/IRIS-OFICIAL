@@ -290,7 +290,10 @@ export default function VotosDiretoresPage() {
   const { data: pendentesRevisao } = useQuery({
     queryKey: ["docs-review-pending-colegiado"],
     queryFn: () =>
-      api.get<{ total: number; data: Array<{ id: string; filename: string | null; tipo_documento: string | null; agencia?: { sigla?: string } | null }> }>(
+      // Fase 7 — `signed_url` (URL assinada do PDF, 1h) SEMPRE veio nesta resposta; estava
+      // invisível só porque o tipo inline aqui não a declarava. Declarada, "abrir o PDF" vira
+      // um link direto, sem rota nova.
+      api.get<{ total: number; data: Array<{ id: string; filename: string | null; tipo_documento: string | null; signed_url?: string | null; agencia?: { sigla?: string } | null }> }>(
         "/upload/documentos?status=review_pending&limit=50",
       ).catch(() => ({ total: 0, data: [] })),
   });
@@ -643,7 +646,24 @@ export default function VotosDiretoresPage() {
               {(presosColeta?.falhas_extracao ?? []).length > 0 && (
                 <p className="text-[11px] text-text-muted">
                   {presosColeta!.falhas_extracao.length} documento(s) com falha/fila de extração —{" "}
-                  <span className="text-text-secondary">{presosColeta!.falhas_extracao.slice(0, 3).map((f) => `${f.agencia}: ${f.erro ?? f.status}`).join(" · ")}</span>
+                  {/* Fase 7 — cada falha já trazia `documento_id` na resposta e não era clicável:
+                      dava para ver QUE falhou, nunca O QUE falhou. */}
+                  {presosColeta!.falhas_extracao.slice(0, 3).map((f, i) => (
+                    <span key={f.documento_id ?? i}>
+                      {i > 0 && " · "}
+                      {f.documento_id ? (
+                        <a
+                          href={`/dashboard/upload?doc=${encodeURIComponent(f.documento_id)}`}
+                          className="text-text-secondary hover:text-brand hover:underline"
+                          title={f.filename ?? undefined}
+                        >
+                          {f.agencia}: {f.erro ?? f.status}
+                        </a>
+                      ) : (
+                        <span className="text-text-secondary">{f.agencia}: {f.erro ?? f.status}</span>
+                      )}
+                    </span>
+                  ))}
                   {presosColeta!.falhas_extracao.length > 3 ? " · …" : ""} (reprocessáveis; o &ldquo;Rodar tudo&rdquo; re-tenta os presos).
                 </p>
               )}
@@ -657,7 +677,25 @@ export default function VotosDiretoresPage() {
                     {doc.filename ?? doc.id}
                     <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
                   </span>
-                  <a href="/dashboard/upload" className="text-brand text-xs hover:underline shrink-0">Revisar →</a>
+                  <span className="flex items-center gap-3 shrink-0">
+                    {doc.signed_url && (
+                      <a
+                        href={doc.signed_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-text-muted text-xs hover:text-text-primary hover:underline"
+                        title="Abrir o PDF original numa aba nova"
+                      >
+                        PDF ↗
+                      </a>
+                    )}
+                    {/* Fase 7 — o link levava para /dashboard/upload sem NENHUM dado do item:
+                        caía na dropzone vazia e o usuário nunca via o documento que pediu para
+                        revisar. Agora leva ao documento certo, já aberto na revisão. */}
+                    <a href={`/dashboard/upload?doc=${encodeURIComponent(doc.id)}`} className="text-brand text-xs hover:underline">
+                      Revisar →
+                    </a>
+                  </span>
                 </div>
               ))}
               {(pendentesRevisao?.total ?? 0) > 10 && (
