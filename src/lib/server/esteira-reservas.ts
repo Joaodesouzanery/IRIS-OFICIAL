@@ -68,3 +68,19 @@ export const FOLGA_ORQUESTRADOR_MS = 4_000;
 export function gateDoPasso(passo: PassoEsteira): number {
   return RESERVA[passo] + FOLGA_ORQUESTRADOR_MS;
 }
+
+/**
+ * TETO de documentos novos que uma rodada pode puxar para dentro.
+ *
+ * Antes da Fase 7 este número não precisava existir: a rodada enfileirava 1 a 3 PDFs porque o
+ * orçamento a estrangulava. Com o download em paralelo o estrangulamento sumiu — e o mesmo laço
+ * poderia trazer centenas de documentos por rodada, agora também sob um cron diário, sem ninguém
+ * olhando. Um erro sistemático (classificador novo, portal que troca de layout, agência que
+ * republica o acervo) deixaria de ser uma rodada ruim e viraria centenas de documentos mal
+ * processados antes de alguém abrir a tela.
+ *
+ * O teto é de VAZÃO, não de capacidade: o que não couber continua na fila durável e entra na
+ * rodada seguinte. Ele existe para que o volume de escrita por rodada seja previsível e para que
+ * uma rodada ruim seja barata de desfazer.
+ */
+export const TETO_ENQUEUE_POR_RODADA = 60;

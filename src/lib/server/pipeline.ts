@@ -207,7 +207,11 @@ export async function processPendingDocuments(limit = 5, deadlineAt?: number): P
 
   let processed = 0;
   if (selected.length > 0) {
-    processed = await processQueue(selected, 2, deadlineAt);
+    // Fase 7 — 2 → 3. Cada job faz download do Storage (I/O), pdf-parse (CPU), às vezes OCR
+    // (rede) e escritas no banco (I/O): há espera de sobra para sobrepor. Subir MUITO não
+    // ajudaria — o pdf-parse é CPU-bound e satura cedo — e custaria memória no runtime da
+    // função. 3 é o passo conservador; o número honesto sai da medição em produção.
+    processed = await processQueue(selected, 3, deadlineAt);
   }
 
   return { processed, job_ids: selected.map((job) => job.jobId), reaped };

@@ -2,17 +2,21 @@
  * POST|GET /api/v1/pipeline/run — a esteira ZERO-TOQUE inteira, server-side, numa rota.
  *
  * "Rodar tudo" da tela chama isto em loop até `restantes:false`. Encadeia (cada passo
- * budget-aware; reusa os handlers reais via request sintético — nenhuma lógica duplicada):
- *  1. coleta leve (monitoramento/check)
- *  2. requeue dos mal classificados ("Voto DXX" preso como documento_apoio/? → re-analisa)
- *  3. enfileirar PDFs (enqueue-pdfs, loop) + processar fila (upload/process, loop)
- *  4. auto-confirm (gate conservador, loop)
- *  5. confirm-lote (política zero-toque em camadas: duplicata exata→arquiva; semântica→merge
+ * budget-aware; reusa os handlers reais via request sintético — nenhuma lógica duplicada).
+ *
+ * ORDEM (Fase 7 — DRENAR antes de INGERIR; ver o bloco comentado dentro de `run`):
+ *  1. auto-confirm (gate conservador, loop)
+ *  2. confirm-lote (política zero-toque em camadas: duplicata exata→arquiva; semântica→merge
  *     idempotente; ilegível/sem agência→arquiva; resto→confirma)
- *  6. candidatos: recompute + aprovar-lote (≥0.8 + novos <0.6 com nome estrito)
- *  7. dedup retroativo de deliberações (rede de segurança final)
- *  8. materialização final, só com a fila drenada: recuperação de ignorados + métricas
- *     derivadas (empresas/backfill, qualidade derivadas, mandatos percentual, divergência)
+ *  3. candidatos: recompute + aprovar-lote (≥0.8 + novos <0.6 com nome estrito)
+ *  4. backfill de votos em deliberações finais já gravadas
+ *  5. coleta leve (monitoramento/check)
+ *  6. requeue dos mal classificados ("Voto DXX" preso como documento_apoio/? → re-analisa)
+ *  7. enfileirar PDFs (enqueue-pdfs, loop, com teto de vazão) + processar fila (upload/process)
+ *  8. dedup retroativo de deliberações (rede de segurança final)
+ *  9. recuperação de ignorados — só quando esta rodada NÃO arquivou nada (senão é ping-pong)
+ * 10. métricas derivadas (empresas, qualidade, mandatos, divergência) — quando a rodada
+ *     materializou algo OU a fila drenou. É este passo que leva o resultado ao Observatório.
  * Admin ou cron. Idempotente: rodar 2× não cria nada novo (dedup em 4 barreiras).
  */
 
@@ -20,7 +24,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, msLeft, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
-import { RESERVA, gateDoPasso, FOLGA_ORQUESTRADOR_MS } from "@/lib/server/esteira-reservas";
+import { RESERVA, gateDoPasso, TETO_ENQUEUE_POR_RODADA } from "@/lib/server/esteira-reservas";
 import { requeueDocument } from "@/lib/server/upload-queue";
 import { GET as checkGET } from "../../monitoramento/check/route";
 import { POST as enqueuePOST } from "../../deliberacoes/enqueue-pdfs/route";
@@ -219,8 +223,19 @@ async function run(req: NextRequest) {
   // sem_pdf (a janela drena por status terminal); fila remanescente ⇒ restantes=true.
   let enfileirados = 0;
   let itensArquivados = 0;
+  let tetoAtingido = false;
   for (let i = 0; i < 10 && hasBudget(deadlineAt, gateDoPasso("enqueue")); i++) {
-    const r = await call(enqueuePOST, "/api/v1/deliberacoes/enqueue-pdfs", { limit: 10 }, RESERVA.enqueue + 3_000);
+    // Teto de VAZÃO por rodada (Fase 7). Com o download em paralelo, o orçamento deixou de ser o
+    // estrangulador — sem teto, uma rodada sob cron diário poderia puxar centenas de documentos
+    // sem ninguém olhando. O que não couber fica na fila durável e entra na rodada seguinte.
+    const saldoTeto = TETO_ENQUEUE_POR_RODADA - (enfileirados + itensArquivados);
+    if (saldoTeto <= 0) { tetoAtingido = true; restantes = true; break; }
+    const r = await call(
+      enqueuePOST,
+      "/api/v1/deliberacoes/enqueue-pdfs",
+      { limit: Math.min(20, saldoTeto) },
+      RESERVA.enqueue + 3_000,
+    );
     const q = Number(r?.queued ?? 0);
     const s = Number(r?.sem_pdf ?? 0);
     enfileirados += q;
@@ -238,7 +253,14 @@ async function run(req: NextRequest) {
     if (p >= 20) restantes = true; // lote cheio → provavelmente há mais fila
   }
   if (!hasBudget(deadlineAt, gateDoPasso("extracao"))) restantes = true;
-  etapas.extracao = { enfileirados, processados, itens_sem_pdf_arquivados: itensArquivados };
+  etapas.extracao = {
+    enfileirados,
+    processados,
+    itens_sem_pdf_arquivados: itensArquivados,
+    // Teto atingido não é falha: é a vazão desta rodada respeitando o limite. Reportar é o
+    // que impede a leitura errada de "a esteira parou de achar coisas".
+    ...(tetoAtingido ? { teto_por_rodada: TETO_ENQUEUE_POR_RODADA } : {}),
+  };
 
   // 8 · Dedup retroativo de deliberações (rede final; funde qualquer par que escapou).
   if (hasBudget(deadlineAt, gateDoPasso("dedup"))) {

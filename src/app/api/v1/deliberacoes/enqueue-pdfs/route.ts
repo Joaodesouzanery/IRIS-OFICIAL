@@ -17,6 +17,7 @@ import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { RESERVA } from "@/lib/server/esteira-reservas";
 import { resolvePdfLinksFromHtml, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
 import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
+import { mapComConcorrencia, criarReservaAdaptativa } from "@/lib/server/concorrencia";
 
 export const dynamic = "force-dynamic";
 
@@ -32,6 +33,9 @@ const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 // Antes era 10 fixo — com saldo sobrando, a rodada parava cedo à toa (QA ago/2026).
 const MAX_PER_RUN = 60;
 const MAX_TENTATIVAS = 3;
+// Downloads simultâneos. 5 é conservador de propósito: o ganho vem de usar a espera de rede,
+// não de martelar o portal da agência — que é um serviço público e pode ter rate limit.
+const CONCORRENCIA_DOWNLOAD = 5;
 const FETCH_TIMEOUT_MS = 20_000;
 
 export async function POST(req: NextRequest) {
@@ -105,32 +109,60 @@ export async function POST(req: NextRequest) {
   let restantes = 0;
   let semPdf = 0;
 
-  for (const item of candidates) {
-    if (!hasBudget(deadlineAt, RESERVA.enqueue)) {
-      restantes++;
-      continue;
-    }
+  // ═══ Fase 7 — DOWNLOAD EM PARALELO, GRAVAÇÃO EM SÉRIE ═══════════════════════
+  // Era tudo em série com reserva FIXA de 22s (o timeout de rede) contra uma fatia de 25s: só o
+  // primeiro item cabia, e a rodada enfileirava 1 a 3 PDFs. O gargalo é REDE — o processo passava
+  // a janela ociosa esperando o portal. Baixar em paralelo usa essa espera; a reserva adaptativa
+  // para de assumir o pior caso quando as respostas reais chegam em 1-3s. As ESCRITAS continuam
+  // em série logo abaixo: o ganho é de rede, e serializar o banco mantém o comportamento
+  // (contadores, status terminal, ordem dos `results`) idêntico ao que os testes já travam.
+  const adaptativa = criarReservaAdaptativa(RESERVA.enqueue);
+
+  type Colhido =
+    | { ok: true; pdfs: Array<{ url: string; buffer: Buffer }> }
+    | { ok: false; erro: unknown };
+
+  const colheita = await mapComConcorrencia(
+    candidates,
+    { concorrencia: CONCORRENCIA_DOWNLOAD, deadlineAt, reservaMs: () => adaptativa.reserva() },
+    async (item): Promise<Colhido> => {
+      const url = String(item.url_item);
+      const iniciado = Date.now();
+      try {
+        const fetched = await fetchUrl(url);
+        // Gate por CONTEÚDO: PDF direto (mesmo sem .pdf na URL — ARTESP/DAM), ou página
+        // HTML de onde extraímos os PDFs de dentro (reunião ANTT, documento Plone ANM).
+        const pdfs: Array<{ url: string; buffer: Buffer }> = [];
+        if (sniffIsPdf(fetched.contentType, fetched.buffer)) {
+          pdfs.push({ url, buffer: fetched.buffer });
+        } else if (sniffIsHtml(fetched.contentType, fetched.buffer)) {
+          const links = resolvePdfLinksFromHtml(fetched.buffer.toString("utf8"), url);
+          const maxFilhos = item.tipo === "reuniao" ? 6 : 1; // página de reunião tem N docs
+          for (const link of links) {
+            if (pdfs.length >= maxFilhos) break;
+            if (!hasBudget(deadlineAt, adaptativa.reserva())) break;
+            try {
+              const filho = await fetchUrl(link);
+              if (sniffIsPdf(filho.contentType, filho.buffer)) pdfs.push({ url: link, buffer: filho.buffer });
+            } catch { /* tenta o próximo link da página */ }
+          }
+        }
+        return { ok: true, pdfs };
+      } catch (erro) {
+        return { ok: false, erro };
+      } finally {
+        adaptativa.registrar(Date.now() - iniciado);
+      }
+    },
+  );
+  restantes += colheita.naoIniciados.length;
+
+  for (const { item, valor } of colheita.concluidos) {
     const url = String(item.url_item);
     const itemMeta = (item.metadata && typeof item.metadata === "object" ? item.metadata : {}) as Record<string, unknown>;
     try {
-      const fetched = await fetchUrl(url);
-      // Gate por CONTEÚDO: PDF direto (mesmo sem .pdf na URL — ARTESP/DAM), ou página
-      // HTML de onde extraímos os PDFs de dentro (reunião ANTT, documento Plone ANM).
-      const pdfs: Array<{ url: string; buffer: Buffer }> = [];
-      if (sniffIsPdf(fetched.contentType, fetched.buffer)) {
-        pdfs.push({ url, buffer: fetched.buffer });
-      } else if (sniffIsHtml(fetched.contentType, fetched.buffer)) {
-        const links = resolvePdfLinksFromHtml(fetched.buffer.toString("utf8"), url);
-        const maxFilhos = item.tipo === "reuniao" ? 6 : 1; // página de reunião tem N docs
-        for (const link of links) {
-          if (pdfs.length >= maxFilhos) break;
-          if (!hasBudget(deadlineAt, RESERVA.enqueue)) { restantes++; break; }
-          try {
-            const filho = await fetchUrl(link);
-            if (sniffIsPdf(filho.contentType, filho.buffer)) pdfs.push({ url: link, buffer: filho.buffer });
-          } catch { /* tenta o próximo link da página */ }
-        }
-      }
+      if (!valor.ok) throw valor.erro;
+      const pdfs = valor.pdfs;
 
       if (pdfs.length === 0) {
         // TERMINAL: nem PDF nem página com PDF de decisão → sai da janela com motivo

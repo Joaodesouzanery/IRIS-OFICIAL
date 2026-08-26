@@ -12,6 +12,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { podeVirarVoto } from "@/lib/esteira-tipos";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +22,14 @@ export async function GET(req: NextRequest) {
     // e como o cast de `api.get<T>` não verifica nada, o consumidor lia `undefined` e o painel
     // sumia em silêncio. Os ramos demo são alcançáveis em produção: `attachRuntimeHeaders` injeta
     // `x-iris-demo: 1` a partir do localStorage.
-    return NextResponse.json({ modo: "demo", total_nao_enfileirados: 0, grupos: [], falhas_extracao: [] });
+    return NextResponse.json({
+      modo: "demo",
+      total_nao_enfileirados: 0,
+      total_na_esteira_votos: 0,
+      total_fora_da_esteira_votos: 0,
+      grupos: [],
+      falhas_extracao: [],
+    });
   }
   const guard = await requireAdminOrCron(req);
   if (guard) return guard;
@@ -72,10 +80,20 @@ export async function GET(req: NextRequest) {
     atualizado_em: d.updated_at,
   }));
 
-  const totalNovo = [...grupos.values()].filter((g) => g.status === "novo").reduce((s, g) => s + g.total, 0);
+  const novos = [...grupos.values()].filter((g) => g.status === "novo");
+  const totalNovo = novos.reduce((s, g) => s + g.total, 0);
+  // Fase 7 — SEPARAR POR DESTINO (decisão do usuário). O número único misturava o que a esteira
+  // de votos vai processar com o que ela NUNCA processará: `noticia`, `politica_publica` e
+  // `consulta_publica` não são decisão colegiada, e `diretoria` é página institucional. Contá-los
+  // juntos fazia "676 detectados" parecer trabalho pendente da esteira quando ~43% nunca seria.
+  // ⚠️ Os itens NÃO são apagados: os de notícia alimentam o gerador de Documentos de Associados.
+  // O que muda é o que o número SIGNIFICA — "trabalho de voto que falta", não "descoberto bruto".
+  const naEsteira = novos.filter((g) => podeVirarVoto(g.tipo)).reduce((s, g) => s + g.total, 0);
 
   return NextResponse.json({
     total_nao_enfileirados: totalNovo,
+    total_na_esteira_votos: naEsteira,
+    total_fora_da_esteira_votos: totalNovo - naEsteira,
     grupos: [...grupos.values()].sort((a, b) => b.total - a.total),
     falhas_extracao: falhasExtracao,
   });

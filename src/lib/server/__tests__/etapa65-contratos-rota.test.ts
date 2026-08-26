@@ -78,7 +78,10 @@ const ROTAS: Array<{
   { nome: "admin/completude-2026", path: "/admin/completude-2026", handler: completude as Handler, forma: "envelope",
     chaves: ["modo", "ano", "por_agencia", "totais", "alertas"], arrays: ["por_agencia", "alertas"] },
   { nome: "admin/monitoramento/nao-enfileirados", path: "/admin/monitoramento/nao-enfileirados", handler: naoEnfileirados as Handler,
-    forma: "envelope", chaves: ["total_nao_enfileirados", "grupos", "falhas_extracao"],
+    // Fase 7: os dois totais SEPARADOS entram no contrato porque a tela passou a distinguir
+    // "trabalho de voto que falta" de "detectado que nunca virará voto". Se sumirem, a legenda
+    // volta a somar as duas coisas num número só — a mentira que a fase inteira foi corrigir.
+    forma: "envelope", chaves: ["total_nao_enfileirados", "total_na_esteira_votos", "total_fora_da_esteira_votos", "grupos", "falhas_extracao"],
     arrays: ["grupos", "falhas_extracao"] },
   { nome: "admin/upload/pendencias-voto", path: "/admin/upload/pendencias-voto", handler: pendenciasVoto as Handler,
     forma: "envelope", chaves: ["total_pendentes", "confirmaveis", "motivos", "amostras", "por_tipo"],
