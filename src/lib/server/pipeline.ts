@@ -159,7 +159,7 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt
   return started;
 }
 
-export async function processPendingDocuments(limit = 5, deadlineAt?: number): Promise<{ processed: number; job_ids: string[]; reaped: number }> {
+export async function processPendingDocuments(limit = 5, deadlineAt?: number): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number }> {
   const db = createSupabaseServerClient();
 
   // Reaper oportunista de órfãos: um job/doc preso em "processing" só é possível se o
@@ -192,6 +192,79 @@ export async function processPendingDocuments(limit = 5, deadlineAt?: number): P
     .eq("status", "processing")
     .lt("updated_at", staleCutoff);
 
+  // ═══ Fase 9 — o TERCEIRO reaper: documento preso em "queued" ════════════════
+  // O select logo abaixo lê SÓ `upload_jobs.status='pending'`, e os dois reapers acima conhecem
+  // apenas "processing". Um documento em `queued` cujo job já foi a `done`/`failed` não está em
+  // fila NENHUMA e não aparece como falha — some para sempre. Produção: 35 `voto_individual` da
+  // ANTT nesse estado, PDF baixado e nunca extraído.
+  //
+  // Dois caminhos medidos produzem isso, ambos consertados junto (upload-queue.ts): o
+  // `requeueDocument` gravava o DOCUMENTO primeiro e o JOB depois, em UPDATEs não-transacionais e
+  // sem checar o erro do segundo; e o job que nunca soube o `documento_id` fazia o `updateDocument`
+  // desistir em silêncio e ir a `done` sem tocar no documento.
+  //
+  // ⚠️ Diferente dos outros dois, este NÃO pode ser um UPDATE cego: documento `queued` com job
+  // `pending` está legitimamente na fila. Por isso lê antes, com teto — reaper não é varredura de
+  // tabela — e cede o saldo à extração, que é o trabalho de verdade.
+  // ⚠️ E NÃO seleciona `metadata`: etapa68-proveniencia proíbe (a proveniência tem de vir do
+  // UPDATE que marca "processing", sem SELECT extra na parte quente).
+  let religados = 0;
+  const { data: presosNaFila } = await db
+    .from("documentos_regulatorios")
+    .select("id, upload_job_id, file_hash, storage_path, agencia_id")
+    .eq("status", "queued")
+    .lt("updated_at", staleCutoff)
+    .limit(50);
+
+  for (const doc of (presosNaFila ?? []) as any[]) {
+    if (!hasBudget(deadlineAt, 2_000)) break;
+    const agora = new Date().toISOString();
+
+    let jobId = (doc.upload_job_id as string | null) ?? null;
+    if (!jobId) {
+      // Sem vínculo: adota o job do mesmo `file_hash` — é como o `enqueuePdfBuffer` já o encontra.
+      // ⚠️ `documentos_regulatorios.upload_job_id` é UNIQUE: adotar job de outro dono estouraria a
+      // constraint. Por isso o dono é conferido antes.
+      const { data: cand } = await db
+        .from("upload_jobs").select("id, documento_id").eq("file_hash", doc.file_hash).maybeSingle();
+      if (cand && (cand.documento_id === null || cand.documento_id === doc.id)) {
+        const { error } = await db
+          .from("documentos_regulatorios").update({ upload_job_id: cand.id, updated_at: agora }).eq("id", doc.id);
+        if (!error) jobId = cand.id as string;
+      }
+    }
+
+    if (!jobId) {
+      // Sem job e sem candidato: `failed` COM MOTIVO — o mesmo desfecho do reaper de "processing".
+      // Ficar em `queued` é o único destino proibido: é o estado invisível.
+      await db.from("documentos_regulatorios").update({
+        status: "failed",
+        error_message: "Documento na fila sem upload_job — sem via de reprocessamento; reenviar o PDF.",
+        updated_at: agora,
+      }).eq("id", doc.id);
+      continue;
+    }
+
+    const { data: job } = await db.from("upload_jobs").select("id, status").eq("id", jobId).maybeSingle();
+    if (!job) continue;
+    // Job `pending`/`processing`: está na fila (ou o reaper #1 o devolve nesta mesma passada).
+    if (job.status === "pending" || job.status === "processing") continue;
+
+    const { error: jobErr } = await db.from("upload_jobs").update({
+      status: "pending",
+      documento_id: doc.id, // ← o elo que o requeueDocument nunca gravava
+      error_message: null,
+      storage_path: doc.storage_path,
+      agencia_id: doc.agencia_id,
+      updated_at: agora,
+    }).eq("id", jobId);
+    if (jobErr) {
+      console.warn(`[pipeline] reaper queued: job ${jobId} não voltou p/ pending: ${jobErr.message}`);
+      continue;
+    }
+    religados++;
+  }
+
   const normalizedLimit = Math.min(20, Math.max(1, limit));
   const { data: jobs } = await db
     .from("upload_jobs")
@@ -214,7 +287,7 @@ export async function processPendingDocuments(limit = 5, deadlineAt?: number): P
     processed = await processQueue(selected, 3, deadlineAt);
   }
 
-  return { processed, job_ids: selected.map((job) => job.jobId), reaped };
+  return { processed, job_ids: selected.map((job) => job.jobId), reaped, religados };
 }
 
 /** Quanto do texto lido viaja junto com a deliberação, para conferência a olho. */

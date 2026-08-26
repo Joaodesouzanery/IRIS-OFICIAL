@@ -14,7 +14,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { requeueDocument } from "@/lib/server/upload-queue";
-import { hasBudget } from "@/lib/server/time-budget";
+import { hasBudget , budgetFromRequest} from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -27,7 +27,12 @@ export async function POST(req: NextRequest) {
 
   const dryRun = req.nextUrl.searchParams.get("dry_run") !== "0";
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
-  const deadlineAt = Date.now() + 50_000; // Hobby mata a função aos 60s — corta antes, o resto fica p/ a próxima chamada
+  // Fase 9 — passou a HONRAR o `budget_ms`. Fixar 50s aqui era pior do que parecer: o
+  // orquestrador chama esta rota no passo 9 passando ~8s, e ela descartava o número e acreditava
+  // ter 50 — então seu `hasBudget` respondia "sim" enquanto a função-pai já queimara 45 dos 60, e
+  // o SIGKILL caía no MEIO do laço de requeue, exatamente entre os dois UPDATEs que agora foram
+  // reordenados. Era o gerador industrial dos documentos presos em `queued`.
+  const deadlineAt = Date.now() + budgetFromRequest(req);
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();

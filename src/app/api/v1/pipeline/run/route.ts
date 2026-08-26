@@ -333,6 +333,53 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     etapas.recuperacao_ignorados = { adiado_por_arquivamento_nesta_rodada: arquivouAgora };
   }
 
+  // 9b · REPROCESSAR OS `failed` — Fase 9, passo NOVO (e de propósito NÃO é o passo 9 ampliado).
+  //
+  // Produção: 17 documentos da ANTT em `failed` com `tipo_documento` NULL — falharam antes de
+  // qualquer classificação. Nenhum passo os alcançava: o passo 6 filtra `review_pending` e o passo
+  // 9 filtra `ignored` + tipo IN (voto_individual, ata) — um `failed` de tipo nulo erra os DOIS.
+  //
+  // ⚠️ Por que passo SEPARADO: ampliar o passo 9 arrastaria `failed` para debaixo do guard
+  // anti-ping-pong (`arquivouAgora === 0`), e esse guard existe por um motivo que NÃO se aplica
+  // aqui. `ignored` é uma DECISÃO que o confirm-lote acabou de tomar; desfazê-la na mesma rodada é
+  // o moinho. `failed` não é decisão — nada na rodada o produz de propósito. Acoplá-los faria o
+  // reprocesso de `failed` ser pulado em toda rodada em que a aprovação arquivasse uma pauta.
+  if (hasBudget(deadlineAt, gateDoPasso("reprocessarFalhados"))) {
+    try {
+      const { data: falhados } = await db
+        .from("documentos_regulatorios")
+        .select("id, campos_detectados")
+        .eq("status", "failed")
+        .not("upload_job_id", "is", null)
+        .limit(20);
+      let reprocessados = 0;
+      let desistidos = 0;
+      for (const doc of ((falhados ?? []) as any[])) {
+        if (!hasBudget(deadlineAt, 2_500)) { restantes = true; break; }
+        // TETO DE TENTATIVAS: um PDF corrompido, de 0 bytes ou escaneado sem OCR falha idêntico
+        // para sempre. Sem teto, o passo queima orçamento nos mesmos 17 documentos toda rodada.
+        // O contador vive em `campos_detectados`, que o `requeueDocument` já escreve.
+        const campos = (doc.campos_detectados ?? {}) as Record<string, unknown>;
+        const ciclos = Number(campos.reprocessos_falha) || 0;
+        if (ciclos >= 3) { desistidos++; continue; }
+        try {
+          await requeueDocument(db, doc.id as string);
+          await db.from("documentos_regulatorios")
+            .update({ campos_detectados: { ...campos, reprocessos_falha: ciclos + 1 } })
+            .eq("id", doc.id);
+          reprocessados++;
+        } catch { /* o próximo documento não paga pelo erro deste */ }
+      }
+      etapas.reprocesso_falhados = {
+        reprocessados,
+        ...(desistidos > 0 ? { desistidos_apos_3_ciclos: desistidos } : {}),
+      };
+      if (reprocessados > 0) restantes = true;
+    } catch {
+      etapas.reprocesso_falhados = { erro: "reprocesso de falhados falhou nesta rodada" };
+    }
+  } else restantes = true;
+
   // 10 · MÉTRICAS DERIVADAS — Fase 7: saíram de trás do `if (!restantes)`.
   // Elas alimentam Empresas, Qualidade, Mandatos e a divergência dos votos: é este bloco que leva
   // o resultado da esteira ao Dashboard e ao Observatório da Regulação. Estar atrás de

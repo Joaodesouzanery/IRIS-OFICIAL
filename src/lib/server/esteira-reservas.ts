@@ -49,6 +49,8 @@ export const RESERVA = {
   dedup: 5_000,
   /** Cada métrica derivada (empresas, qualidade, mandatos, divergência). */
   derivada: 6_000,
+  /** Reprocesso de documentos `failed` (extração que quebrou) — Fase 9. */
+  reprocessarFalhados: 6_000,
 } as const;
 
 export type PassoEsteira = keyof typeof RESERVA;

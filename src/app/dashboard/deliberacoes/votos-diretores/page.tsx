@@ -763,7 +763,7 @@ export default function VotosDiretoresPage() {
                       )}
                     </span>
                   ))}
-                  {presosColeta!.falhas_extracao.length > 3 ? " · …" : ""} (reprocessáveis; o &ldquo;Rodar tudo&rdquo; re-tenta os presos).
+                  {presosColeta!.falhas_extracao.length > 3 ? " · …" : ""} — o &ldquo;Rodar tudo&rdquo; re-tenta os que estão presos em processamento ou com falha de extração (até 3 ciclos); os demais aguardam reenvio.
                 </p>
               )}
             </div>

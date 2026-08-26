@@ -290,6 +290,29 @@ export async function requeueDocument(db: any, documentId: string) {
   if (error || !doc) throw new Error("Documento nao encontrado");
   if (!doc.upload_job_id) throw new Error("Documento sem upload_job_id para reprocessar");
 
+  // ═══ Fase 9 — a ORDEM inverteu, e o elo passou a ser gravado ════════════════
+  // Antes: documento → `queued` PRIMEIRO, job → `pending` DEPOIS, em dois UPDATEs
+  // não-transacionais, com o erro do segundo NÃO checado. Morrer entre eles (o SIGKILL de 60s do
+  // Hobby cai exatamente aqui, porque quem chama isto é o passo 9 da esteira) deixava o documento
+  // em `queued` com o job `done` — invisível para sempre, porque a fila só lê jobs `pending`.
+  //
+  // Com o job primeiro, morrer no meio deixa um job `pending` sem o documento requeueado: estado
+  // BENIGNO, que o `processPdf` apenas reprocessa. E `documento_id` entra no patch — sem ele, um
+  // job que perdeu o vínculo entrava num laço fechado (requeue → pending → processPdf sem
+  // documento_id → `done` → doc segue `queued`), e reprocessar de novo não adiantava.
+  const { error: jobErr } = await db
+    .from("upload_jobs")
+    .update({
+      status: "pending",
+      documento_id: doc.id,
+      error_message: null,
+      agencia_id: doc.agencia_id,
+      storage_path: doc.storage_path,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", doc.upload_job_id);
+  if (jobErr) throw new Error(`Falha ao reenfileirar o job ${doc.upload_job_id}: ${jobErr.message}`);
+
   await db
     .from("documentos_regulatorios")
     .update({
@@ -306,17 +329,6 @@ export async function requeueDocument(db: any, documentId: string) {
       updated_at: new Date().toISOString(),
     })
     .eq("id", documentId);
-
-  await db
-    .from("upload_jobs")
-    .update({
-      status: "pending",
-      error_message: null,
-      agencia_id: doc.agencia_id,
-      storage_path: doc.storage_path,
-      updated_at: new Date().toISOString(),
-    })
-    .eq("id", doc.upload_job_id);
 
   return { document_id: doc.id as string, job_id: doc.upload_job_id as string };
 }

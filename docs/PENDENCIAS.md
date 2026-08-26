@@ -884,6 +884,41 @@ tem RDE e ela não aparece na coleta, o filtro de título está descartando.
 **Operação:** chamar autenticado como admin e ler `degrau_que_para` + `diagnostico`. Se for o degrau
 1, a resposta é operacional, não de código.
 
+## Fase 9 — o que a produção revelou (26/08/2026)
+
+Primeira fase guiada por **medição do banco de produção**, não por leitura de código. 7 commits.
+
+1. **ZIP na esteira.** 88% das "Deliberações" da ARTESP são `.zip`; o gate conhecia só PDF e HTML.
+   `zip-extractor.ts` existia desde julho, ligado só ao upload manual. ~2.500 deliberações
+   inacessíveis. Inclui guard de DOCX (que **é** ZIP) e fim do livelock (teto de PDFs só entre itens).
+2. **Reabrir os `sem_pdf` de 2026** (migration `20260826150000`). A regra da Fase 8 foi revista:
+   `sem_pdf` volta, mas só carimbado — e o caminho que grava `sem_pdf` limpa o carimbo, então é um
+   tiro só, nunca moinho.
+3. **WAF deixa de ser `ok`.** O portal da ARTESP responde 200 com desafio do Imperva (reproduzido:
+   6.183 bytes). Uma única âncora derrotava a heurística de headless.
+4. **ARTESP: 76% dos documentos na reunião errada.** `HEAD_RE` não casava "Reunião Extraordinária"
+   (ZWSP + `&nbsp;` no meio). Inclui **crawl auto-reparador** — e a normalização **preserva o
+   comprimento**, porque as âncoras são ligadas por índice de byte.
+5. **A data vinha da lei citada no preâmbulo.** Fallback sem âncora morto, sobrescrita
+   incondicional corrigida, e guard C20 que conhece o **ano de criação da agência**.
+6. **Rota `admin/deliberacoes/redatar`** — re-deriva as datas impossíveis. Anular seria pior:
+   `year-filter` conta deliberação sem data em TODOS os anos.
+7. **Os presos**: terceiro reaper (`queued`), `requeueDocument` atômico e com o elo,
+   `reprocess-ignorados` honrando o orçamento, passo novo para `failed` com teto, legenda honesta.
+
+Suíte 1097 → **1197**. Migration desta fase: **`20260826150000`** (aplicar DEPOIS do deploy).
+
+### ⚠️ Registrado e NÃO corrigido
+
+- **`semantic_duplicate_key` colide entre os votos da mesma reunião** (`antt|voto individual|1036`
+  para os 5 votos). Com o ZIP trazendo mais votos juntos, a dedup pode confundi-los. O dado para
+  desempatar (a sigla `DFQ-043`) já é extraído — só não entra na chave. **Próximo conserto.**
+- **32 pautas da ARTESP são DOCX** e o projeto não lê DOCX. Hoje saem com motivo honesto
+  (`formato_nao_suportado:docx`) em vez de se disfarçarem de "página sem PDF". Ingerir exigiria
+  ~40 linhas usando o `inflateRawSync` que já está no repo.
+- **O disjuntor é cego para falha de enfileiramento** (`contarPassos` só conta a chave `erro`, e
+  `etapas.extracao` não tem canal de erro).
+
 ## Fase 8 — "nada fica para trás" (26/08/2026)
 
 Origem: a pergunta "a coleta puxa tudo, sem deixar documento para trás?". A resposta era NÃO, por
