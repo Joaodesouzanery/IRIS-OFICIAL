@@ -15,7 +15,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { RESERVA } from "@/lib/server/esteira-reservas";
-import { resolvePdfLinksFromHtml, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
+import { resolvePdfLinks, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
 import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
 import { mapComConcorrencia, criarReservaAdaptativa } from "@/lib/server/concorrencia";
 
@@ -36,7 +36,15 @@ const MAX_TENTATIVAS = 3;
 // Downloads simultâneos. 5 é conservador de propósito: o ganho vem de usar a espera de rede,
 // não de martelar o portal da agência — que é um serviço público e pode ter rate limit.
 const CONCORRENCIA_DOWNLOAD = 5;
+// Quantos PDFs tirar de UMA página. Uma reunião publica pauta + ata + N votos: a maior medida no
+// corpus real é 7 (a 1036ª da ANTT). 12 espelha o teto do próprio `resolvePdfLinksFromHtml`, então
+// não há um segundo corte escondido aqui. Uma página de DOCUMENTO (Plone /view) é um documento só.
+const MAX_FILHOS_REUNIAO = 12;
+const MAX_FILHOS_DOCUMENTO = 1;
 const FETCH_TIMEOUT_MS = 20_000;
+// Saldo mínimo para gravar MAIS UM filho (upload no Storage + inserts + update). Medido com folga:
+// o custo real é de centenas de ms, mas parar cedo custa uma rodada e parar tarde custa a função.
+const RESERVA_GRAVACAO_MS = 6_000;
 
 export async function POST(req: NextRequest) {
   const guard = await requireAdminOrCron(req);
@@ -50,8 +58,18 @@ export async function POST(req: NextRequest) {
     agencia_sigla?: string;
     limit?: number;
     process?: boolean;
+    /**
+     * Fase 8 — teto de VAZÃO em PDFs. O orquestrador tem `TETO_ENQUEUE_POR_RODADA` (60), mas o
+     * que ele passava era `limit`, que conta ITENS. Enquanto um item rendia 1-6 PDFs isso
+     * funcionava por acaso; com o teto de filhos em 12, uma chamada de 20 itens poderia gravar
+     * 240 PDFs contra um teto de 60. O teto tem de ser contado na unidade que ele limita.
+     */
+    max_pdfs?: number;
   };
   const limit = Math.min(MAX_PER_RUN, Math.max(1, Number(body.limit ?? MAX_PER_RUN)));
+  const maxPdfs = Number.isFinite(Number(body.max_pdfs)) && Number(body.max_pdfs) > 0
+    ? Number(body.max_pdfs)
+    : Number.POSITIVE_INFINITY;
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const { enqueuePdfBuffer, ensurePdfStorageBucket } = await import("@/lib/server/upload-queue");
@@ -108,6 +126,9 @@ export async function POST(req: NextRequest) {
   const deadlineAt = Date.now() + budgetFromRequest(req);
   let restantes = 0;
   let semPdf = 0;
+  // Filhos que a página tinha e o teto descartou. Teto silencioso foi exatamente o que
+  // escondeu a perda de um voto por reunião — se voltar a truncar, tem de aparecer.
+  let filhosTruncados = 0;
 
   // ═══ Fase 7 — DOWNLOAD EM PARALELO, GRAVAÇÃO EM SÉRIE ═══════════════════════
   // Era tudo em série com reserva FIXA de 22s (o timeout de rede) contra uma fatia de 25s: só o
@@ -133,11 +154,21 @@ export async function POST(req: NextRequest) {
         // Gate por CONTEÚDO: PDF direto (mesmo sem .pdf na URL — ARTESP/DAM), ou página
         // HTML de onde extraímos os PDFs de dentro (reunião ANTT, documento Plone ANM).
         const pdfs: Array<{ url: string; buffer: Buffer }> = [];
+        // Quantos PDFs a PÁGINA tinha (antes de qualquer teto) — 0 quando a URL já é o PDF.
+        let pdfsNaPagina = 0;
         if (sniffIsPdf(fetched.contentType, fetched.buffer)) {
           pdfs.push({ url, buffer: fetched.buffer });
         } else if (sniffIsHtml(fetched.contentType, fetched.buffer)) {
-          const links = resolvePdfLinksFromHtml(fetched.buffer.toString("utf8"), url);
-          const maxFilhos = item.tipo === "reuniao" ? 6 : 1; // página de reunião tem N docs
+          const { links, totalEncontrado } = resolvePdfLinks(fetched.buffer.toString("utf8"), url);
+          pdfsNaPagina = totalEncontrado;
+          // Fase 8 — o teto era 6 e a 1036ª Reunião de Diretoria da ANTT tem SETE PDFs. Medido
+          // contra a fixture real: pauta, ata e CINCO votos individuais, nessa ordem no DOM. Como
+          // pauta e ata vêm primeiro, o corte caía sempre sobre a última peça da lista — e essa
+          // peça é um VOTO DE DIRETOR, o documento mais valioso da esteira. Um por reunião.
+          // 12 cobre com folga o maior caso medido (7). O resolvedor tem teto próprio (30) e
+          // devolve `totalEncontrado`, então o que for cortado pelos DOIS tetos é reportado em
+          // vez de sumir — descarte silencioso foi exatamente o que escondeu esta perda.
+          const maxFilhos = item.tipo === "reuniao" ? MAX_FILHOS_REUNIAO : MAX_FILHOS_DOCUMENTO;
           for (const link of links) {
             if (pdfs.length >= maxFilhos) break;
             if (!hasBudget(deadlineAt, adaptativa.reserva())) break;
@@ -146,6 +177,12 @@ export async function POST(req: NextRequest) {
               if (sniffIsPdf(filho.contentType, filho.buffer)) pdfs.push({ url: link, buffer: filho.buffer });
             } catch { /* tenta o próximo link da página */ }
           }
+        }
+        // O truncamento soma os DOIS tetos: o do resolvedor (MAX_LINKS) e o daqui. Medir só
+        // `links.length - pdfs.length` reportaria zero numa página de 40 documentos, porque o
+        // resolvedor já teria cortado antes de nós vermos.
+        if (pdfsNaPagina > pdfs.length && pdfs.length > 0) {
+          filhosTruncados += pdfsNaPagina - pdfs.length;
         }
         return { ok: true, pdfs };
       } catch (erro) {
@@ -157,13 +194,23 @@ export async function POST(req: NextRequest) {
   );
   restantes += colheita.naoIniciados.length;
 
+  // ═══ Fase 8 — o laço de GRAVAÇÃO passa a ter freio ═══════════════════════════
+  // A colheita respeitava o orçamento; a gravação, NENHUMA vez. Cada filho é um upload no Storage
+  // + inserts + update, em série. Com 1-6 filhos isso cabia; ao subir o teto para 12, o SIGKILL
+  // dos 60s passa a alcançar o meio do laço — e aí os PDFs já gravados FICAM enquanto o item
+  // continua "novo", que é a receita de trabalho duplicado na rodada seguinte. Além disso o teto
+  // de vazão da rodada é contado em PDFs, não em itens.
+  let pdfsGravados = 0;
   for (const { item, valor } of colheita.concluidos) {
+    if (!hasBudget(deadlineAt, RESERVA_GRAVACAO_MS)) { restantes++; continue; }
+    if (pdfsGravados >= maxPdfs) { restantes++; continue; }
     const url = String(item.url_item);
     const itemMeta = (item.metadata && typeof item.metadata === "object" ? item.metadata : {}) as Record<string, unknown>;
     try {
       if (!valor.ok) throw valor.erro;
       const pdfs = valor.pdfs;
 
+      const pdfsAntes = pdfsGravados;
       if (pdfs.length === 0) {
         // TERMINAL: nem PDF nem página com PDF de decisão → sai da janela com motivo
         // (antes ficava 'novo' para sempre bloqueando os itens atrás — head-of-line).
@@ -189,7 +236,16 @@ export async function POST(req: NextRequest) {
 
       let algumOk = false;
       let algumErro = false;
+      let filhosAdiados = 0;
       for (const pdf of pdfs) {
+        // Parar ENTRE filhos, nunca no meio de um: `enqueuePdfBuffer` é atômico por documento.
+        // O item só é marcado `importado` se nada ficou de fora — senão ele volta na próxima
+        // rodada e o `file_hash` UNIQUE evita regravar o que já entrou.
+        if (!hasBudget(deadlineAt, RESERVA_GRAVACAO_MS) || pdfsGravados >= maxPdfs) {
+          filhosAdiados = pdfs.length - (pdfsGravados - pdfsAntes);
+          restantes++;
+          break;
+        }
         const filename = deriveFilename(item.titulo as string, pdf.url);
         const enqueued = await enqueuePdfBuffer({
           db,
@@ -210,6 +266,7 @@ export async function POST(req: NextRequest) {
         ) {
           jobsToProcess.push({ jobId: enqueued.job_id, agenciaId: (item.agencia_id as string | null) ?? null });
         }
+        pdfsGravados++;
         if (enqueued.status === "error" || enqueued.status === "rejected") algumErro = true;
         else algumOk = true;
 
@@ -224,7 +281,9 @@ export async function POST(req: NextRequest) {
       }
 
       // Marca o item como importado para não reprocessar (exceto erro real em tudo).
-      if (algumOk || !algumErro) {
+      // Fase 8: com filhos adiados por orçamento/teto, o item NÃO pode ser dado por importado —
+      // senão os filhos que sobraram nunca mais seriam buscados.
+      if (filhosAdiados === 0 && (algumOk || !algumErro)) {
         await db
           .from("monitoramento_itens")
           .update({ status: "importado", last_seen_at: new Date().toISOString() })
@@ -278,6 +337,7 @@ export async function POST(req: NextRequest) {
     processed,
     enqueued_jobs: jobsToProcess.length,
     sem_pdf: semPdf,
+    ...(filhosTruncados > 0 ? { filhos_truncados: filhosTruncados } : {}),
     parcial: restantes > 0,
     restantes,
     results,
@@ -305,9 +365,34 @@ async function fetchUrl(url: string): Promise<{ buffer: Buffer; contentType: str
   }
 }
 
-function deriveFilename(titulo: string, url: string): string {
-  const fromUrl = decodeURIComponent(url.split(/[?#]/)[0].split("/").filter(Boolean).at(-1) ?? "");
-  if (fromUrl && /\.pdf$/i.test(fromUrl)) return fromUrl.slice(0, 180);
+/**
+ * Nome do arquivo a partir da URL — e por que o PENÚLTIMO segmento importa (Fase 8).
+ *
+ * As URLs de documento do Liferay da ANTT terminam em UUID:
+ *   .../documents/498202/0/Voto+DFQ+043-2026.pdf/60f8733d-104b-1549-...
+ * O último segmento não casa `/\.pdf$/`, então TODOS os documentos de uma reunião caíam no slug
+ * do título do item — que é o título da REUNIÃO, igual para todos. Medido contra as 7 URLs reais
+ * da 1.036ª: os SETE viravam `1-036-Reuniao-de-Diretoria.pdf`, um único nome.
+ *
+ * Isso não é cosmético. O resgate de votos mal classificados da esteira procura
+ * `voto[ _-]+(vista[ _-]+)?d[a-z]{1,2}[ _-]*[0-9]` NO FILENAME (pipeline/run) — com o nome da
+ * reunião no lugar de "Voto DFQ 043-2026", esse resgate nunca casava. E, na tela de revisão, sete
+ * documentos diferentes apareciam com o mesmo rótulo.
+ */
+export function deriveFilename(titulo: string, url: string): string {
+  const partes = url.split(/[?#]/)[0].split("/").filter(Boolean);
+  for (const bruto of [partes.at(-1), partes.at(-2)]) {
+    if (!bruto) continue;
+    let seg: string;
+    try {
+      seg = decodeURIComponent(bruto);
+    } catch {
+      seg = bruto; // sequência de escape inválida: usa o cru em vez de estourar
+    }
+    // `+` é espaço codificado nessas URLs; sem trocar, o nome sai "Voto+DFQ+043-2026.pdf".
+    seg = seg.replace(/\+/g, " ").trim();
+    if (seg && /\.pdf$/i.test(seg)) return seg.slice(0, 180);
+  }
   const slug = (titulo || "documento")
     .normalize("NFD")
     .replace(/[^a-zA-Z0-9]+/g, "-")

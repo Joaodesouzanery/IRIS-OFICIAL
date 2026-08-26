@@ -308,9 +308,11 @@ export default function VotosDiretoresPage() {
     queryFn: () =>
       api.get<{
         total_nao_enfileirados: number;
-        grupos: Array<{ agencia: string; tipo: string; status: string; total: number; amostra: Array<{ url: string; motivo: string | null }> }>;
+        grupos: Array<{ agencia: string; tipo: string; status: string; motivo?: string | null; total: number; amostra: Array<{ url: string; motivo: string | null }> }>;
         falhas_extracao: Array<{ documento_id: string; agencia: string; filename: string | null; status: string; erro: string | null }>;
-      }>("/admin/monitoramento/nao-enfileirados").catch(() => ({ total_nao_enfileirados: 0, grupos: [], falhas_extracao: [] })),
+        total_arquivados?: number;
+        total_arquivados_recuperaveis?: number;
+      }>("/admin/monitoramento/nao-enfileirados").catch(() => ({ total_nao_enfileirados: 0, grupos: [], falhas_extracao: [], total_arquivados: 0, total_arquivados_recuperaveis: 0 })),
   });
 
   // Diagnóstico: POR QUE os voto_individual estão parados no gate (agregado por motivo).
@@ -704,6 +706,40 @@ export default function VotosDiretoresPage() {
                       })}
                     </div>
                   </>
+                );
+              })()}
+              {/* Fase 8 — os ARQUIVADOS deixam de ser invisíveis. A rota sempre os devolveu
+                  (status `ignorado`) e a tela filtrava só `novo`: o motivo era gravado e ninguém
+                  via. Separar por MOTIVO é o que importa — `download_falhou` é falha de rede (o
+                  portal pode voltar), `sem_pdf` é decisão de conteúdo. */}
+              {(presosColeta?.total_arquivados ?? 0) > 0 && (() => {
+                const arquivados = (presosColeta?.grupos ?? []).filter((g) => g.status === "ignorado");
+                const recuperaveis = presosColeta?.total_arquivados_recuperaveis ?? 0;
+                return (
+                  <div className="pt-1.5 border-t border-border/50 space-y-1.5">
+                    <p className="text-[11px] text-text-muted">
+                      <span className="text-text-secondary font-medium">{presosColeta!.total_arquivados} arquivado(s) com motivo</span>
+                      {" — saíram da fila e "}
+                      {recuperaveis > 0
+                        ? <><span className="text-warning">{recuperaveis} por falha de download</span> (o portal pode ter voltado; serão retentados)</>
+                        : <>nenhum por falha de rede</>}
+                      {". O restante é conteúdo: a página não trazia PDF de decisão."}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {arquivados.slice(0, 8).map((g) => (
+                        <span
+                          key={`arq-${g.agencia}-${g.tipo}-${g.motivo ?? "-"}`}
+                          className={cn(
+                            "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px]",
+                            g.motivo === "download_falhou" ? "border-warning/40 text-warning" : "border-border/60 text-text-label",
+                          )}
+                          title={g.amostra.map((a) => a.url).join("\n")}
+                        >
+                          <span className="font-medium">{g.total}</span> {g.agencia} · {g.tipo} · {g.motivo ?? "sem motivo"}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 );
               })()}
               {(presosColeta?.falhas_extracao ?? []).length > 0 && (

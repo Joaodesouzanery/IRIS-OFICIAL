@@ -16,7 +16,12 @@ const PDF_HREF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 const PLONE_VIEW_RE = /^(.*?)\/view(?:$|[?#])/i;
 /** Âncoras irrelevantes (navegação/rodapé) — corta ruído sem perder decisão. */
 const SKIP_HREF_RE = /^(#|mailto:|javascript:|tel:)/i;
-const MAX_LINKS = 12;
+// Fase 8: 12 -> 30. O maior número medido no corpus real é 7 (a 1.036ª Reunião de Diretoria da
+// ANTT: pauta + ata + 5 votos). O teto antigo empatava com o teto do chamador, o que criava um
+// corte ESCONDIDO: quem lê `links.length` não distingue "a página tinha 12" de "a página tinha 40
+// e eu cortei". Com folga, o corte volta a ser exceção — e quando acontecer, `resolvePdfLinks`
+// devolve o total encontrado para que ninguém precise adivinhar.
+const MAX_LINKS = 30;
 
 export function sniffIsPdf(contentType: string | null | undefined, buffer: Buffer): boolean {
   if (contentType && contentType.toLowerCase().includes("pdf")) return true;
@@ -40,17 +45,23 @@ export function ploneDownloadUrl(url: string): string {
  * âncoras que já são PDF/download, e âncoras Plone `/view` convertidas para download.
  * Relativas são resolvidas contra `baseUrl`. Dedup preservando ordem; cap MAX_LINKS.
  */
-export function resolvePdfLinksFromHtml(html: string, baseUrl: string): string[] {
+/**
+ * Como `resolvePdfLinksFromHtml`, mas devolve também QUANTOS links de PDF a página tinha antes do
+ * teto. Sem esse número, o chamador não consegue distinguir "esta página tem 12 documentos" de
+ * "esta página tem 40 e eu descartei 28 em silêncio" — e descarte silencioso foi exatamente o que
+ * fez a esteira perder um voto de diretor por reunião.
+ */
+export function resolvePdfLinks(html: string, baseUrl: string): { links: string[]; totalEncontrado: number } {
   let root: ReturnType<typeof parse>;
   try {
     root = parse(html);
   } catch {
-    return [];
+    return { links: [], totalEncontrado: 0 };
   }
   const out: string[] = [];
   const seen = new Set<string>();
+  let totalEncontrado = 0;
   for (const a of root.querySelectorAll("a[href]")) {
-    if (out.length >= MAX_LINKS) break;
     const href = (a.getAttribute("href") ?? "").trim();
     if (!href || SKIP_HREF_RE.test(href)) continue;
     let abs: string;
@@ -62,7 +73,13 @@ export function resolvePdfLinksFromHtml(html: string, baseUrl: string): string[]
     const candidate = PDF_HREF_RE.test(abs) ? abs : PLONE_VIEW_RE.test(abs) ? ploneDownloadUrl(abs) : null;
     if (!candidate || seen.has(candidate)) continue;
     seen.add(candidate);
-    out.push(candidate);
+    totalEncontrado++;
+    if (out.length < MAX_LINKS) out.push(candidate);
   }
-  return out;
+  return { links: out, totalEncontrado };
+}
+
+/** Compatível com o contrato antigo (só os links). Preservado: há teste que trava esta forma. */
+export function resolvePdfLinksFromHtml(html: string, baseUrl: string): string[] {
+  return resolvePdfLinks(html, baseUrl).links;
 }

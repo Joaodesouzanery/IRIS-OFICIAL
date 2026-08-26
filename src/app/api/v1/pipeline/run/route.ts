@@ -266,7 +266,11 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     const r = await call(
       enqueuePOST,
       "/api/v1/deliberacoes/enqueue-pdfs",
-      { limit: Math.min(20, saldoTeto) },
+      // Fase 8 — `limit` conta ITENS, `max_pdfs` conta PDFs. O teto de vazão é de PDFs, e era
+      // verificado só ENTRE chamadas: enquanto um item rendia 1-6 PDFs isso segurava por acaso,
+      // mas com o teto de filhos em 12 uma única chamada de 20 itens poderia gravar 240 contra um
+      // teto de 60. Agora o limite viaja na unidade que ele limita.
+      { limit: Math.min(20, saldoTeto), max_pdfs: saldoTeto },
       RESERVA.enqueue + 3_000,
     );
     const q = Number(r?.queued ?? 0);

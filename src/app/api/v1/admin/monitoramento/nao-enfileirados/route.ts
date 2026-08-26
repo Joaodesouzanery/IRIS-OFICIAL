@@ -27,6 +27,8 @@ export async function GET(req: NextRequest) {
       total_nao_enfileirados: 0,
       total_na_esteira_votos: 0,
       total_fora_da_esteira_votos: 0,
+      total_arquivados: 0,
+      total_arquivados_recuperaveis: 0,
       grupos: [],
       falhas_extracao: [],
     });
@@ -54,12 +56,18 @@ export async function GET(req: NextRequest) {
   const sigla = new Map<string, string>((agenciasRes.data ?? []).map((a: any) => [a.id, a.sigla]));
   const nomeAg = (id: string | null) => (id ? sigla.get(id) ?? "?" : "?");
 
-  // Agrupa agência × tipo × status, com amostra de até 5 URLs + motivo por grupo.
-  type Grupo = { agencia: string; tipo: string; status: string; total: number; amostra: Array<{ url: string; titulo: string | null; motivo: string | null }> };
+  // Agrupa agência × tipo × status × MOTIVO, com amostra de até 5 URLs por grupo.
+  // Fase 8: o motivo entrou na CHAVE. Um item arquivado por `download_falhou` (falha transitória
+  // de rede — recuperável) e um arquivado por `sem_pdf` (a página não tinha PDF de decisão) são
+  // coisas diferentes, e somá-los num grupo só impedia justamente a pergunta que importa: quanto
+  // do que saiu da fila dá para recuperar?
+  type Grupo = { agencia: string; tipo: string; status: string; motivo: string | null; total: number; amostra: Array<{ url: string; titulo: string | null; motivo: string | null }> };
   const grupos = new Map<string, Grupo>();
   for (const it of (itensRes.data ?? []) as any[]) {
-    const key = `${nomeAg(it.agencia_id)}|${it.tipo}|${it.status}`;
-    const g = grupos.get(key) ?? { agencia: nomeAg(it.agencia_id), tipo: String(it.tipo), status: String(it.status), total: 0, amostra: [] };
+    const metaIt = (it.metadata ?? {}) as Record<string, unknown>;
+    const motivoItem = typeof metaIt.enqueue_motivo === "string" ? metaIt.enqueue_motivo : null;
+    const key = `${nomeAg(it.agencia_id)}|${it.tipo}|${it.status}|${motivoItem ?? "-"}`;
+    const g = grupos.get(key) ?? { agencia: nomeAg(it.agencia_id), tipo: String(it.tipo), status: String(it.status), motivo: motivoItem, total: 0, amostra: [] };
     g.total += 1;
     if (g.amostra.length < 5) {
       const meta = (it.metadata ?? {}) as Record<string, unknown>;
@@ -90,10 +98,23 @@ export async function GET(req: NextRequest) {
   // O que muda é o que o número SIGNIFICA — "trabalho de voto que falta", não "descoberto bruto".
   const naEsteira = novos.filter((g) => podeVirarVoto(g.tipo)).reduce((s, g) => s + g.total, 0);
 
+  // Fase 8 — os ARQUIVADOS deixam de ser invisíveis. Esta rota sempre os buscou (`ignorado` está
+  // no `.in(...)` acima) e a tela filtrava só `novo`: o motivo era gravado e ninguém via. É o
+  // mesmo padrão que a fase anterior combateu — o dado existe, a tela não conta.
+  const arquivados = [...grupos.values()].filter((g) => g.status === "ignorado");
+  const totalArquivado = arquivados.reduce((s, g) => s + g.total, 0);
+  // `download_falhou` é falha de REDE: o portal pode voltar, e o item volta a ser tentado.
+  // `sem_pdf` é decisão de CONTEÚDO: a página não tinha PDF de decisão quando foi lida.
+  const arquivadosRecuperaveis = arquivados
+    .filter((g) => g.motivo === "download_falhou")
+    .reduce((s, g) => s + g.total, 0);
+
   return NextResponse.json({
     total_nao_enfileirados: totalNovo,
     total_na_esteira_votos: naEsteira,
     total_fora_da_esteira_votos: totalNovo - naEsteira,
+    total_arquivados: totalArquivado,
+    total_arquivados_recuperaveis: arquivadosRecuperaveis,
     grupos: [...grupos.values()].sort((a, b) => b.total - a.total),
     falhas_extracao: falhasExtracao,
   });
