@@ -320,6 +320,34 @@ export function isConsensual(
   return !efetivos.some((v) => v.is_divergente);
 }
 
+/**
+ * GRANULARIDADE de cada tipo: quantos documentos DISTINTOS podem legitimamente dividir o mesmo
+ * "recipiente" (a reunião, ou o par processo+data). É isto que decide se o número da reunião pode
+ * servir de identidade.
+ *
+ * · `reuniao` — há no máximo UM por reunião (uma ata, uma pauta): o número da reunião IDENTIFICA.
+ * · `materia` — um por matéria: uma reunião tem várias deliberações, mas uma por processo.
+ * · `diretor` — um por diretor por matéria: os cinco votos da mesma reunião, sobre o mesmo
+ *   processo, na mesma data, são cinco documentos diferentes — e é o caso que quebrava.
+ *
+ * Chaves na forma NORMALIZADA (`normalize("voto_individual") === "voto individual"`).
+ */
+const GRANULARIDADE_POR_TIPO: Record<string, "reuniao" | "materia" | "diretor"> = {
+  ata: "reuniao",
+  pauta: "reuniao",
+  "voto individual": "diretor",
+};
+
+/**
+ * A chave que a dedup SEMÂNTICA usa para decidir que dois arquivos são o mesmo documento.
+ *
+ * Ela é lida em dois lugares que ESCONDEM a linha perdedora: `pipeline.ts` marca `is_duplicate` +
+ * `duplicate_documento_id` contra os `confirmed`, e `upload-analysis.ts` casa contra a própria fila
+ * (`queued`/`processing`/`review_pending`). Por isso a assimetria de custo que governa esta função:
+ * deixar de fundir duas cópias do mesmo documento gera uma linha repetida que o revisor vê e
+ * resolve; fundir dois documentos DIFERENTES apaga um voto do acervo sem deixar rastro. Na dúvida,
+ * chave mais específica — ou nenhuma.
+ */
 export function buildSemanticDuplicateKey(input: {
   agencia_sigla?: string | null;
   tipo_documento?: string | null;
@@ -331,16 +359,60 @@ export function buildSemanticDuplicateKey(input: {
 }) {
   const agency = normalize(input.agencia_sigla ?? "sem-agencia");
   const tipo = normalize(input.tipo_documento ?? "documento");
-  const numero = normalize(input.numero_deliberacao ?? input.numero_reuniao ?? "");
+  const numeroProprio = normalize(input.numero_deliberacao ?? "");
+  const numeroReuniao = normalize(input.numero_reuniao ?? "");
   const processo = normalize(input.processo ?? "");
   const data = normalize(input.data_reuniao ?? "");
+  const granularidade = GRANULARIDADE_POR_TIPO[tipo] ?? "materia";
 
-  if (agency && tipo && numero) return [agency, tipo, numero].join("|");
-  if (agency && processo && data) return [agency, tipo, processo, data].join("|");
+  // O desempatador de último recurso é o NOME DO ARQUIVO — desde a Fase 8 ele vem do segmento da
+  // URL de origem (ou do nome da entrada dentro do ZIP), e é distinto por documento:
+  // "Voto DFQ 043-2026.pdf". O `(1)` de um download repetido sai para o re-download convergir na
+  // MESMA chave, que é o que mantém a dedup funcionando para o caso legítimo.
+  //
+  // A ORDEM importa e estava invertida: os dois recortes rodavam DEPOIS do `normalize`, que já
+  // tinha trocado parênteses e ponto por espaço — `\(\d+\)(?=\.pdf$)` nunca casava em
+  // "voto dfq 043 2026 1 pdf". O corte do `(1)` era código morto, e o re-download do mesmo voto
+  // gerava chave diferente do original. Recortar no nome CRU e normalizar depois.
+  const filenameKey = normalize(
+    (input.filename ?? "")
+      .replace(/\s*\(\d+\)(?=\.[a-z0-9]{2,4}$)/i, "")
+      .replace(/\.[a-z0-9]{2,4}$/i, ""),
+  );
 
-  const filenameKey = normalize(input.filename ?? "")
-    .replace(/\s*\(\d+\)(?=\.pdf$)/, "")
-    .replace(/\.pdf$/, "");
+  // 1. Número PRÓPRIO do documento: a única identidade que não depende de recipiente.
+  if (agency && tipo && numeroProprio) return [agency, tipo, numeroProprio].join("|");
+
+  // 2. Número da reunião — identidade só para quem é único por reunião.
+  //
+  // Aqui estava o bug: a chave caía de `numero_deliberacao` para `numero_reuniao` para QUALQUER
+  // tipo, e o número da reunião é dado do RECIPIENTE, não do documento. Os cinco votos da 1.036ª
+  // recebiam a chave idêntica `antt|voto individual|1036`, e quatro deles seriam marcados como
+  // duplicata do primeiro. Estava latente porque o parser manual da ANTT emite a própria
+  // `dedupe_semantic_key` (que já carrega o diretor) e tem precedência; quem cai aqui é voto de
+  // ARTESP e de ANM — justamente as duas agências que o ZIP e o retry acabaram de destravar, e que
+  // passam a receber os votos de uma reunião JUNTOS, na mesma rodada.
+  if (agency && tipo && numeroReuniao && granularidade === "reuniao") {
+    return [agency, tipo, numeroReuniao].join("|");
+  }
+
+  // 3. Processo + data identificam a MATÉRIA: bastam para uma deliberação, não para um voto — um
+  //    por diretor sobre a mesma matéria —, que por isso leva o desempatador junto.
+  if (agency && processo && data) {
+    const partes = [agency, tipo, processo, data];
+    if (granularidade === "diretor" && filenameKey) partes.push(filenameKey);
+    return partes.join("|");
+  }
+
+  // 4. Recipiente sozinho não serve; recipiente + nome do arquivo serve.
+  if (agency && tipo && numeroReuniao && filenameKey) {
+    return [agency, tipo, numeroReuniao, filenameKey].join("|");
+  }
+
+  // 5. Sem NADA que varie por documento, a resposta certa é não ter chave. `null` desliga só a
+  //    dedup semântica — o `file_hash` continua pegando o mesmo arquivo re-baixado. Devolver
+  //    "artesp|voto individual" faria TODO voto da agência colidir com todo outro.
+  if (!filenameKey) return null;
   return [agency, tipo, filenameKey].filter(Boolean).join("|") || null;
 }
 

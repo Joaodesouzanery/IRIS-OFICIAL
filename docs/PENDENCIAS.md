@@ -925,9 +925,12 @@ Suíte 1097 → **1197**. Migration desta fase: **`20260826150000`** (aplicar DE
 
 ### ⚠️ Registrado e NÃO corrigido
 
-- **`semantic_duplicate_key` colide entre os votos da mesma reunião** (`antt|voto individual|1036`
-  para os 5 votos). Com o ZIP trazendo mais votos juntos, a dedup pode confundi-los. O dado para
-  desempatar (a sigla `DFQ-043`) já é extraído — só não entra na chave. **Próximo conserto.**
+- **A chave semântica tem DUAS implementações e só uma foi consertada.** `buildSemanticDuplicateKey`
+  (etapa71) passou a distinguir os votos da mesma reunião, mas o parser manual da ANTT emite a
+  própria `dedupe_semantic_key` (`ANTT|reuniao|processo|diretor|tipo`) e TEM PRECEDÊNCIA sobre ela
+  em `upload-analysis.ts` e no `preview`. Aquela chave não colide hoje (carrega o diretor), e
+  mexer nela criaria ponto cego contra os 437 votos já gravados — por isso ficou como está. Se um
+  dia o diretor e o processo saírem vazios no mesmo voto, ela volta a fundir documentos.
 - **32 pautas da ARTESP são DOCX** e o projeto não lê DOCX. Hoje saem com motivo honesto
   (`formato_nao_suportado:docx`) em vez de se disfarçarem de "página sem PDF". Ingerir exigiria
   ~40 linhas usando o `inflateRawSync` que já está no repo.
@@ -959,12 +962,6 @@ três caminhos — e a análise de risco (4 agentes) desenterrou um quarto, maio
 
 ### ⚠️ Riscos que ficaram registrados, não corrigidos
 
-- **`semantic_duplicate_key` colide entre os votos da MESMA reunião.** `buildSemanticDuplicateKey`
-  monta `[agencia, tipo, numero]` e, sem `numero_deliberacao`, cai para `numero_reuniao`: os 5
-  votos da 1.036ª têm a chave IDÊNTICA `antt|voto individual|1036`. Com o teto de filhos subindo,
-  mais votos da mesma reunião chegam juntos e a dedup semântica pode tratá-los como duplicata um
-  do outro. O dado para desempatar (a sigla do voto, ex.: `DFQ-043`) já é extraído — só não entra
-  na chave. **É o próximo conserto da esteira.**
 - **O disjuntor é cego para falha de enfileiramento.** `contarPassos` só conta erro quando a etapa
   tem a chave `erro`, e `etapas.extracao` é montada sem canal de erro. Um retry que falha
   sistematicamente não abre o disjuntor nem aparece.
