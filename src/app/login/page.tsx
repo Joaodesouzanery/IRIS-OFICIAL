@@ -105,10 +105,15 @@ function LoginContent() {
     <main className="flex min-h-screen items-center justify-center bg-[#0f1117] p-6 text-white">
       <div className="w-full max-w-md space-y-6 rounded-lg border border-white/10 bg-[#191b22] p-8 shadow-2xl shadow-black/30">
         <div className="space-y-2">
-          <div className="rounded-md bg-black px-3 py-2.5 flex items-center justify-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/logo-iris.png" alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade" className="h-12 w-auto" />
-          </div>
+          {/* Sem fundo, mas SEM a classe `.brand-logo`: esta tela é escura por decisão fixa
+              (bg-[#0f1117] / card #191b22) e não segue o tema. Com a troca de tinta ligada, um
+              usuário de tema claro receberia a arte escura sobre o card escuro — invisível. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/brand/logo-iris.png"
+            alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade"
+            className="block w-full max-w-[280px]"
+          />
           <h1 className="text-2xl font-semibold">Entrar no sistema</h1>
           <p className="text-sm leading-6 text-white/58">
             Acesso restrito a usuários cadastrados. Administradores gerenciam os dados; demais usuários entram em modo somente visualização.

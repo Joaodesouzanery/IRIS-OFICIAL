@@ -104,14 +104,17 @@ export function Sidebar() {
 
   return (
     <aside className="flex flex-col w-60 h-screen sticky top-0 bg-bg-sidebar border-r border-border shrink-0">
-      {/* Logo IRIS — arte neon branca transparente sobre chip PRETO (funciona em tema claro e
-          escuro). NÃO reutilizar newsletter-logo-wide aqui: aquele lettering é para 140px e
-          serrilha a 32px (o "erro de visualização" reportado em produção). */}
+      {/* Logo IRIS — SEM fundo, nos dois temas (a troca de tinta vive em `.brand-logo`, globals.css).
+          A arte é o lockup completo (marca + nome por extenso), 5,44:1 — por isso ela ocupa a
+          largura útil da sidebar em vez de uma altura fixa: a 208px úteis ela renderiza ~38px de
+          altura. NÃO reutilizar o lettering dourado da newsletter aqui: ele é desenhado para 140px. */}
       <div className="px-4 pt-4">
-        <div className="rounded-md bg-black px-2 py-2 flex items-center justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-iris.png" alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade" className="h-10 w-auto" />
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/brand/logo-iris.png"
+          alt="IRIS — Instituto de Regulação, Inovação e Sustentabilidade"
+          className="brand-logo w-full"
+        />
       </div>
 
       {/* Agency Selector */}

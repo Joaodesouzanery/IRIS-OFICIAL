@@ -94,6 +94,20 @@
     @apply section-label mt-1;
   }
 
+  /* Logo IRIS — a MESMA arte em duas tintas, sem fundo nenhum (Fase 7).
+     A arte é uma silhueta monocromática: 97% transparente, o traço é branco puro. Branco sobre
+     --bg-sidebar do tema claro (#ebebeb) dá contraste ~1,05:1 — invisível. Por isso a variante
+     de tinta escura, gerada da própria arte (mesmo recorte, mesmo tamanho: a troca é pixel-a-pixel).
+     Escopar por `.light` e não por `.dark` é o que evita o flash: o estado SEM classe (SSR, antes
+     do script do next-themes) cai em `:root`, que já é escuro — e ali a arte branca é a correta. */
+  .brand-logo {
+    @apply block w-auto;
+  }
+
+  .light .brand-logo {
+    content: url("/brand/logo-iris-escura.png");
+  }
+
   .sidebar-item {
     @apply flex items-center gap-3 px-3 py-2 rounded-md text-sm text-text-secondary
            transition-all duration-150 cursor-pointer select-none;
