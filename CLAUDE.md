@@ -55,9 +55,16 @@ ver a skill `iris-migrations`. RLS/indexação/pooling: `.agents/skills/supabase
   "Joao Nery"). Commit com e-mail gmail **bloqueia o deploy no Vercel**.
 - Rodapé: `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
 - **NUNCA** force-push em `main`. Push em `main` → **deploy automático no Vercel**.
-- `maxDuration` das funções é **120s** no Vercel; estourar = **SIGKILL incatchável** (nem success
-  nem error gravam). Rotas de crawl/coleta usam orçamento de tempo (`src/lib/server/time-budget.ts`)
-  para parar graciosamente. Sem segredos versionados; segredos só em env do Vercel/Supabase.
+- **Tempo de função — o número que vale é 60s, não 120s.** O `vercel.json` pede `maxDuration: 120`,
+  mas (a) no plano **Hobby** o SIGKILL vem aos **60s** independentemente disso (o 120 só vale no Pro)
+  e (b) **14 rotas declaram `export const maxDuration = 60` no próprio arquivo**, e o segment config
+  do Next tem precedência sobre o `vercel.json` (só `pipeline/run` declara 120). Estourar =
+  **SIGKILL incatchável** (nem success nem error gravam). Por isso `HOBBY_BUDGET_MS = 50s`
+  (`src/lib/server/time-budget.ts`) é o orçamento real de uma rodada.
+- **Regra de orçamento (Fase 7):** nenhum passo pode receber uma FATIA menor que a RESERVA interna
+  que ele exige — senão ele roda, gasta o round-trip de auth e devolve zero em silêncio. Foi assim
+  que a coleta (fatia 8s × reserva 25s) inseriu zero itens por rodada durante semanas.
+- Sem segredos versionados; segredos só em env do Vercel/Supabase.
 
 ## Pendências e operação
 Ações manuais recorrentes, datas sensíveis (ex.: mandatos interinos ANM vencem 30/11/2026) e itens

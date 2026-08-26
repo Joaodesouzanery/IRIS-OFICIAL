@@ -15,13 +15,16 @@ import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { resolvePdfLinksFromHtml, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
+import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
 
 export const dynamic = "force-dynamic";
 
 // Tipos de item que representam (ou CONTÊM) decisões. QA ago/2026: "documento" é o
 // fallback do classificador e "reuniao" é a página-mãe do coletor ANTT-2026 — ambos
 // ficavam de fora e apodreciam em status 'novo' para sempre.
-const DECISION_TIPOS = ["voto", "ata", "deliberacao", "pauta", "documento", "reuniao"] as const;
+// Fase 7: a lista saiu daqui para `@/lib/esteira-tipos` porque a TELA precisa dela — enquanto era
+// local, a UI prometia enfileirar tipos que este gate nunca aceitou.
+const DECISION_TIPOS = TIPOS_ESTEIRA_VOTOS;
 // Heurística de PRIORIZAÇÃO apenas (não é mais gate): URL com cara de PDF vai primeiro.
 const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 // Teto por chamada é a JANELA (60): o freio real é o orçamento (reserva 22s/item).

@@ -70,9 +70,14 @@ export async function GET(req: NextRequest) {
   // ANTT: discovery já filtra 2026 e pagina o portal.
   let anttSite: number[] = [];
   let anttErro: string | null = null;
+  // Fase 7 — o `truncated` era DESCARTADO aqui. Enumeração pela metade + banco pela metade dava
+  // "✓ Cobertura completa": a prova de completude afirmava exatamente o que não sabia. Agora o
+  // flag sobe até a tela, e uma enumeração parcial nunca pode ser lida como prova.
+  let anttParcial = false;
   try {
     const disc = await discoverAntt2026Meetings({ maxMeetings: 200, maxPages: 20, deadlineAt });
     anttSite = toNums(disc.meetings.map((m) => m.numero));
+    anttParcial = disc.truncated === true;
   } catch {
     anttErro = "falha ao enumerar a ANTT ao vivo";
   }
@@ -111,13 +116,17 @@ export async function GET(req: NextRequest) {
         .map((d) => d.numero_reuniao as string | null),
     );
 
-  const build = (sigla: string, site: number[], erro: string | null) => {
+  const build = (sigla: string, site: number[], erro: string | null, parcial = false) => {
     const banco = bancoNums(sigla);
     const bancoSet = new Set(banco);
     const siteSet = new Set(site);
     return {
       sigla,
       erro,
+      // `enumeracao_parcial`: a listagem do site foi cortada (paginação incompleta ou orçamento
+      // esgotado). Com ela `true`, "faltando: 0" NÃO significa cobertura completa — significa
+      // apenas que nada do PEDAÇO que conseguimos enumerar está ausente.
+      enumeracao_parcial: parcial,
       site_total: site.length,
       banco_total: banco.length,
       faltando: site.filter((n) => !bancoSet.has(n)), // no site e NÃO no banco → NÃO temos
@@ -128,7 +137,8 @@ export async function GET(req: NextRequest) {
   };
 
   const por_agencia = [
-    build("ANTT", anttSite, anttErro),
+    build("ANTT", anttSite, anttErro, anttParcial),
+    // ARTESP e ANM são páginas únicas por desenho: ou a página veio inteira, ou virou `erro`.
     build("ARTESP", artespSite, artespErro),
     build("ANM", anmSite, anmErro),
   ];
@@ -137,6 +147,11 @@ export async function GET(req: NextRequest) {
   for (const a of por_agencia) {
     if (a.erro) {
       alertas.push(`${a.sigla}: ${a.erro} — não deu para conferir agora (tente de novo).`);
+    } else if (a.enumeracao_parcial) {
+      alertas.push(
+        `${a.sigla}: a enumeração do site ficou INCOMPLETA nesta conferência (${a.site_total} reuniões lidas) — ` +
+          `este resultado não prova cobertura, só compara o pedaço que deu para ler.`,
+      );
     } else if (a.faltando.length > 0) {
       const amostra = a.faltando.slice(0, 15).join(", ");
       const resto = a.faltando.length > 15 ? "…" : "";

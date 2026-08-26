@@ -9,6 +9,7 @@ import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import { useViewer } from "@/lib/use-viewer";
 import { CAPACIDADE_POR_EIXO } from "@/lib/server/colegiado-sources";
+import { destinoForaDaEsteira, podeVirarVoto } from "@/lib/esteira-tipos";
 import type {
   Agencia,
   DeliberacoesBackfillResponse,
@@ -91,6 +92,8 @@ type CompletudeResponse = {
 type CoberturaAoVivoAgencia = {
   sigla: string;
   erro: string | null;
+  /** A listagem do site foi lida só em parte — com isto `true`, "faltando: 0" NÃO prova cobertura. */
+  enumeracao_parcial?: boolean;
   site_total: number;
   banco_total: number;
   faltando: number[];
@@ -345,7 +348,16 @@ export default function VotosDiretoresPage() {
       // run inteiro nem perde o progresso já gravado no servidor; 2 falhas seguidas
       // encerram com o que temos. Teto 40 rodadas (fila grande de backfill).
       let falhasSeguidas = 0;
+      // Fase 7 — o desfecho da esteira deixa de ser inventado pelo banner. Antes, 40 rodadas com
+      // HTTP 500 terminavam em banner VERDE de "concluída" com totais zerados: o catch por rodada
+      // engolia tudo e `onError` era inalcançável (a mutation nunca rejeitava). Agora o motivo
+      // real da parada sobe junto com os números.
+      let rodadasComErro = 0;
+      let ultimoErro: string | null = null;
+      let desfecho: "drenou" | "erros" | "teto" = "teto";
+      let rodadasFeitas = 0;
       for (let rodada = 1; rodada <= 40; rodada++) {
+        rodadasFeitas = rodada;
         setRodarTudoProgresso(`Rodada ${rodada} · coleta → extração → aprovação → métricas…`);
         try {
           const res = await api.post<{ etapas: PipelineEtapas; restantes: boolean }>("/pipeline/run", {});
@@ -356,15 +368,17 @@ export default function VotosDiretoresPage() {
               if (typeof v === "number") totais[k] = (totais[k] ?? 0) + v;
             }
           }
-          if (!res.restantes) break;
-        } catch {
+          if (!res.restantes) { desfecho = "drenou"; break; }
+        } catch (err) {
           falhasSeguidas++;
-          if (falhasSeguidas >= 2) break; // 2 timeouts seguidos: para com o progresso feito
+          rodadasComErro++;
+          ultimoErro = err instanceof Error ? err.message : "erro desconhecido na rodada";
+          if (falhasSeguidas >= 2) { desfecho = "erros"; break; } // 2 falhas seguidas: para com o progresso feito
         }
       }
-      return { totais, ultimas };
+      return { totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas };
     },
-    onSuccess: ({ totais }) => {
+    onSuccess: ({ totais, rodadasComErro, ultimoErro, desfecho, rodadasFeitas }) => {
       setMatchError(null);
       setRodarTudoProgresso(null);
       const partes = [
@@ -383,7 +397,22 @@ export default function VotosDiretoresPage() {
         (totais.reenfileirados ?? 0) > 0 ? `${totais.reenfileirados} reclassificado(s)` : null,
         (totais.votos ?? 0) > 0 ? `${totais.votos} voto(s) recuperado(s) em deliberações antigas` : null,
       ].filter(Boolean);
-      setMatchFeedback(`Esteira zero-toque concluída: ${partes.join(" · ")}.`);
+      // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.
+      if (desfecho === "erros") {
+        setMatchFeedback(null);
+        setMatchError(
+          `A esteira PAROU após ${rodadasComErro} rodada(s) com erro (2 seguidas) na rodada ${rodadasFeitas}. ` +
+            `O que já havia sido gravado está no banco: ${partes.join(" · ")}. Último erro: ${ultimoErro ?? "—"}.`,
+        );
+      } else {
+        const cabecalho = desfecho === "drenou"
+          ? "Esteira zero-toque concluída (fila drenada)"
+          : `Esteira parou no teto de ${rodadasFeitas} rodadas — ainda há fila`;
+        const ressalva = rodadasComErro > 0
+          ? ` · ⚠️ ${rodadasComErro} rodada(s) falharam pelo caminho (último erro: ${ultimoErro ?? "—"})`
+          : "";
+        setMatchFeedback(`${cabecalho}: ${partes.join(" · ")}${ressalva}.`);
+      }
       for (const key of [
         ["dashboard"], ["votos-diretores"], ["completude-2026"], ["pendencias-voto-diagnostico"],
         ["docs-review-pending-colegiado"], ["deliberacoes"], ["diretores"], ["votacao"], ["empresas"],
@@ -566,20 +595,51 @@ export default function VotosDiretoresPage() {
           )}
           {(presosColeta?.total_nao_enfileirados ?? 0) > 0 || (presosColeta?.falhas_extracao ?? []).length > 0 ? (
             <div className="rounded-card border border-border bg-surface-2/40 px-3 py-2.5 space-y-1.5">
-              {(presosColeta?.total_nao_enfileirados ?? 0) > 0 && (
-                <>
-                  <p className="text-[11px] text-text-muted">
-                    <span className="text-warning font-medium">{presosColeta!.total_nao_enfileirados} detectado(s) ainda não processado(s)</span> — o próximo &ldquo;Rodar tudo&rdquo; baixa/enfileira em rodadas (os sem PDF são arquivados com motivo):
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {(presosColeta?.grupos ?? []).filter((g) => g.status === "novo").slice(0, 8).map((g) => (
-                      <span key={`${g.agencia}-${g.tipo}`} className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-[11px] text-text-secondary" title={g.amostra.map((a) => a.url).join("\n")}>
-                        <span className="font-medium text-text-primary">{g.total}</span> {g.agencia} · {g.tipo}
-                      </span>
-                    ))}
-                  </div>
-                </>
-              )}
+              {(presosColeta?.total_nao_enfileirados ?? 0) > 0 && (() => {
+                // Fase 7 — a legenda antiga prometia que "o próximo Rodar tudo baixa/enfileira em
+                // rodadas". Era FALSO para 100% do que ela mostrava: os tipos exibidos (noticia,
+                // politica_publica, consulta_publica, diretoria) estão fora do gate de
+                // enfileiramento, então aqueles itens não sairiam de `novo` em rodada nenhuma.
+                // Agora a tela usa a MESMA lista que o servidor (@/lib/esteira-tipos) e separa o
+                // que a esteira vai processar do que ela nunca vai.
+                const novos = (presosColeta?.grupos ?? []).filter((g) => g.status === "novo");
+                const naEsteira = novos.filter((g) => podeVirarVoto(g.tipo));
+                const foraDaEsteira = novos.filter((g) => !podeVirarVoto(g.tipo));
+                const soma = (gs: typeof novos) => gs.reduce((s, g) => s + g.total, 0);
+                return (
+                  <>
+                    <p className="text-[11px] text-text-muted">
+                      <span className="text-warning font-medium">{presosColeta!.total_nao_enfileirados} detectado(s) ainda não processado(s)</span>
+                      {" — "}
+                      {soma(naEsteira) > 0
+                        ? <>{soma(naEsteira)} entra(m) na esteira de votos (o próximo &ldquo;Rodar tudo&rdquo; baixa/enfileira; os sem PDF são arquivados com motivo)</>
+                        : <>nenhum entra na esteira de votos</>}
+                      {soma(foraDaEsteira) > 0 && (
+                        <> · <span className="text-text-secondary">{soma(foraDaEsteira)} são de tipos que a esteira de votos não processa</span> — ficam em &ldquo;novo&rdquo; por desenho, alimentando outros módulos</>
+                      )}
+                      :
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {[...naEsteira, ...foraDaEsteira].slice(0, 8).map((g) => {
+                        const fora = destinoForaDaEsteira(g.tipo);
+                        return (
+                          <span
+                            key={`${g.agencia}-${g.tipo}`}
+                            className={cn(
+                              "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px]",
+                              fora ? "border-border/60 text-text-label" : "border-border text-text-secondary",
+                            )}
+                            title={[fora ?? "entra na esteira de votos", "", ...g.amostra.map((a) => a.url)].join("\n")}
+                          >
+                            <span className={cn("font-medium", fora ? "text-text-muted" : "text-text-primary")}>{g.total}</span> {g.agencia} · {g.tipo}
+                            {fora && <span className="opacity-60">·fora</span>}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </>
+                );
+              })()}
               {(presosColeta?.falhas_extracao ?? []).length > 0 && (
                 <p className="text-[11px] text-text-muted">
                   {presosColeta!.falhas_extracao.length} documento(s) com falha/fila de extração —{" "}
@@ -759,6 +819,17 @@ export default function VotosDiretoresPage() {
                   </div>
                 );
               }
+              // Fase 7 — enumeração parcial NÃO pode virar "✓ completo". Se a listagem do site foi
+              // cortada, "faltando: 0" só diz que nada do PEDAÇO lido está ausente.
+              const parciais = ags.filter((a) => a.enumeracao_parcial);
+              if (parciais.length > 0) {
+                return (
+                  <div className="rounded-md border border-warning/30 bg-warning/10 px-3 py-2 text-sm text-warning">
+                    Conferência <span className="font-medium">incompleta</span> em {parciais.map((a) => a.sigla).join(", ")} —
+                    a listagem do site foi lida só em parte, então isto NÃO prova cobertura.
+                  </div>
+                );
+              }
               if (comErro === 0) {
                 return (
                   <div className="rounded-md border border-success/30 bg-success/10 px-3 py-2 text-sm font-medium text-success">
@@ -791,6 +862,8 @@ export default function VotosDiretoresPage() {
                       <td className="py-1.5 pl-2">
                         {a.erro ? (
                           <span className="text-warning">{a.erro}</span>
+                        ) : a.enumeracao_parcial ? (
+                          <span className="text-warning">enumeração parcial — não dá para afirmar completude</span>
                         ) : a.faltando.length === 0 ? (
                           <span className="text-success">nada — completo ✓</span>
                         ) : (

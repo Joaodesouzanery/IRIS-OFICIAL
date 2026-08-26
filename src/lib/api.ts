@@ -43,6 +43,15 @@ function extractErrorMessage(body: unknown, status: number, statusText: string):
   );
 }
 
+/**
+ * Teto de espera do cliente (Fase 7). O `fetch` não tinha timeout nenhum: quando a função morre
+ * pelo SIGKILL do Hobby (60s) sem responder, a promessa ficava pendurada — a tela mostrava
+ * "Rodada N…" para sempre e o usuário lia isso como "está processando". 90s fica ACIMA do SIGKILL
+ * de propósito: a resposta legítima mais lenta é uma rodada da esteira, e cortá-la antes do
+ * servidor terminar descartaria trabalho já feito.
+ */
+const REQUEST_TIMEOUT_MS = 90_000;
+
 async function request<T>(
   path: string,
   options: RequestInit = {},
@@ -55,10 +64,23 @@ async function request<T>(
   });
   await attachRuntimeHeaders(headers);
 
-  const res = await fetch(url, {
-    ...options,
-    headers,
-  });
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      ...options,
+      headers,
+      signal: options.signal ?? controller.signal,
+    });
+  } catch (err) {
+    if (controller.signal.aborted) {
+      throw new ApiError(504, `A requisição passou de ${REQUEST_TIMEOUT_MS / 1000}s sem resposta (a função pode ter sido encerrada pelo limite de tempo).`);
+    }
+    throw err;
+  } finally {
+    clearTimeout(timer);
+  }
 
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
