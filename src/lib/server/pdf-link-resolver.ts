@@ -23,6 +23,38 @@ const SKIP_HREF_RE = /^(#|mailto:|javascript:|tel:)/i;
 // devolve o total encontrado para que ninguém precise adivinhar.
 const MAX_LINKS = 30;
 
+/**
+ * O buffer e um arquivo ZIP? (assinatura local `PK\x03\x04`)
+ *
+ * ⚠️ Isto responde TRUE para DOCX, XLSX e PPTX — todo pacote OOXML e um ZIP. Quem usa isto para
+ * decidir "extrair PDFs de dentro" TEM de testar DOCX antes, senao um .docx entra no caminho do
+ * ZIP, sai com zero entradas .pdf e e arquivado como se a pagina nao tivesse documento — que e
+ * exatamente o diagnostico errado que este modulo existe para evitar.
+ */
+export function sniffIsZip(buffer: Buffer): boolean {
+  return buffer.length >= 4 &&
+    buffer[0] === 0x50 && buffer[1] === 0x4b && buffer[2] === 0x03 && buffer[3] === 0x04;
+}
+
+/**
+ * O buffer/URL e um DOCX? Tres sinais, do mais barato ao mais confiavel.
+ *
+ * Medido na pagina de reunioes da ARTESP (26/08/2026): das 256 URLs de documento, 32 sao DOCX —
+ * todas rotuladas "Pauta". Nenhum caminho do projeto LE .docx (so gera, em docx-export.ts), entao
+ * o objetivo aqui nao e ingerir: e dar a esses 32 um motivo terminal HONESTO, em vez de deixa-los
+ * se disfarcarem de "pagina sem PDF".
+ */
+export function sniffIsDocx(contentType: string | null | undefined, url: string, buffer: Buffer): boolean {
+  if (contentType && contentType.toLowerCase().includes("wordprocessingml")) return true;
+  if (/\.docx(?:$|[?#])/i.test(url)) return true;
+  // O diretorio central de um DOCX sempre cita `word/document.xml`. Procurar no fim do arquivo
+  // (onde vive o central directory) e barato e nao depende de content-type nem de extensao — as
+  // URLs de DAM da ARTESP nao tem nenhum dos dois.
+  if (!sniffIsZip(buffer)) return false;
+  const cauda = buffer.subarray(Math.max(0, buffer.length - 4_000)).toString("latin1");
+  return cauda.includes("word/document.xml");
+}
+
 export function sniffIsPdf(contentType: string | null | undefined, buffer: Buffer): boolean {
   if (contentType && contentType.toLowerCase().includes("pdf")) return true;
   return buffer.length >= 5 && buffer.subarray(0, 5).toString("latin1") === "%PDF-";

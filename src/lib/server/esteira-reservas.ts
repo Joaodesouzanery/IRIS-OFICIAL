@@ -82,5 +82,11 @@ export function gateDoPasso(passo: PassoEsteira): number {
  * O teto é de VAZÃO, não de capacidade: o que não couber continua na fila durável e entra na
  * rodada seguinte. Ele existe para que o volume de escrita por rodada seja previsível e para que
  * uma rodada ruim seja barata de desfazer.
+ *
+ * Fase 9 — 60 → 120. Com o ZIP ligado, um único item da ARTESP pode render até 58 documentos, e um
+ * teto de 60 fazia o item mal caber: qualquer coisa já enfileirada na rodada o empurrava para
+ * fora, ele voltava, re-baixava o ZIP inteiro e adiava de novo. Não é afrouxamento — o freio real
+ * continua sendo o orçamento (cabem ~88 gravações em 50s); o teto volta a ser o que ele diz ser,
+ * um limite de segurança contra erro sistemático, em vez de o estrangulador da vazão.
  */
-export const TETO_ENQUEUE_POR_RODADA = 60;
+export const TETO_ENQUEUE_POR_RODADA = 120;

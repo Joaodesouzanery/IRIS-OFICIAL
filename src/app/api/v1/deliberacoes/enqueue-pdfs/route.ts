@@ -15,7 +15,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { RESERVA } from "@/lib/server/esteira-reservas";
-import { resolvePdfLinks, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
+import { resolvePdfLinks, sniffIsDocx, sniffIsHtml, sniffIsPdf, sniffIsZip } from "@/lib/server/pdf-link-resolver";
 import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
 import { mapComConcorrencia, criarReservaAdaptativa } from "@/lib/server/concorrencia";
 import { resilientFetch } from "@/lib/server/resilient-fetch";
@@ -43,6 +43,12 @@ const CONCORRENCIA_DOWNLOAD = 5;
 // não há um segundo corte escondido aqui. Uma página de DOCUMENTO (Plone /view) é um documento só.
 const MAX_FILHOS_REUNIAO = 12;
 const MAX_FILHOS_DOCUMENTO = 1;
+// Quantos PDFs tirar de UM arquivo ZIP. O maior medido no acervo da ARTESP tem 58 entradas; 60 da
+// folga e e redondo. NAO reusar MAX_FILHOS_DOCUMENTO: aquele numero descreve "uma pagina de
+// documento rende um documento", e continua verdadeiro.
+// ⚠️ Precisa ser MENOR que TETO_ENQUEUE_POR_RODADA, senao um ZIP grande nunca cabe numa rodada e
+// o item nunca sai de 'novo' — re-baixando e re-hasheando as mesmas entradas para sempre.
+const MAX_PDFS_POR_ZIP = 60;
 // Teto por documento. O guard do `enqueuePdfBuffer` (50 MB) só roda DEPOIS do download
 // inteiro em memória; aqui o corte acontece antes de o buffer entrar na colheita.
 const MAX_BYTES_POR_DOCUMENTO = 50 * 1024 * 1024;
@@ -192,7 +198,7 @@ export async function POST(req: NextRequest) {
   const adaptativa = criarReservaAdaptativa(RESERVA.enqueue);
 
   type Colhido =
-    | { ok: true; pdfs: Array<{ url: string; buffer: Buffer }> }
+    | { ok: true; pdfs: Array<{ url: string; buffer: Buffer; filename?: string; sourceArchive?: string }>; motivo?: string }
     | { ok: false; erro: unknown };
 
   const colheita = await mapComConcorrencia(
@@ -205,11 +211,56 @@ export async function POST(req: NextRequest) {
         const fetched = await fetchUrl(url);
         // Gate por CONTEÚDO: PDF direto (mesmo sem .pdf na URL — ARTESP/DAM), ou página
         // HTML de onde extraímos os PDFs de dentro (reunião ANTT, documento Plone ANM).
-        const pdfs: Array<{ url: string; buffer: Buffer }> = [];
+        const pdfs: Array<{ url: string; buffer: Buffer; filename?: string; sourceArchive?: string }> = [];
         // Quantos PDFs a PÁGINA tinha (antes de qualquer teto) — 0 quando a URL já é o PDF.
         let pdfsNaPagina = 0;
         if (sniffIsPdf(fetched.contentType, fetched.buffer)) {
           pdfs.push({ url, buffer: fetched.buffer });
+        } else if (sniffIsZip(fetched.buffer)) {
+          // ═══ Fase 9 — o terceiro ramo: ZIP ═══════════════════════════════════════
+          // Medido ao vivo na pagina de reunioes da ARTESP: das 256 URLs de documento, 76 sao ZIP
+          // e 88% de tudo que ela rotula "Deliberacao" e ZIP. O gate conhecia dois estados — "e
+          // PDF" ou "e HTML com links de PDF" — e o ZIP caia no vao, virando `sem_pdf` terminal:
+          // 133 deliberacoes da ARTESP arquivadas como se a pagina estivesse vazia. Amostra de 11
+          // ZIPs: 207 PDFs dentro, media 18,8. O `zip-extractor` ja existia desde julho, ligado so
+          // ao upload MANUAL — o upload comia o mesmo ZIP que a esteira jogava fora.
+          //
+          // A ordem importa: este ramo vem ANTES do HTML porque `PK\x03\x04` e exato e
+          // `sniffIsHtml` casa `<head` em qualquer lugar dos primeiros 512 bytes.
+          if (sniffIsDocx(fetched.contentType, url, fetched.buffer)) {
+            // ⚠️ DOCX E ZIP. Sem este teste, os 32 .docx da ARTESP entrariam aqui, sairiam com
+            // zero entradas .pdf e voltariam a ser arquivados como "sem PDF" — o mesmo diagnostico
+            // errado por um caminho novo. O projeto nao LE docx (so gera); o que se pode fazer de
+            // honesto e dar a eles um motivo proprio, que diz o que de fato aconteceu.
+            return { ok: true, pdfs: [], motivo: "formato_nao_suportado:docx" };
+          }
+          try {
+            const { extractPdfEntriesFromZip } = await import("@/lib/server/zip-extractor");
+            const entradas = extractPdfEntriesFromZip(fetched.buffer, {
+              // 100 e o default do extrator: ele LANCA ao exceder, e o corte tem de ser NOSSO,
+              // para ser reportado em vez de virar erro. O maior ZIP medido tem 58 entradas.
+              maxFiles: 100,
+              // Guard de MEMORIA, nao de conteudo: a colheita segura todos os buffers vivos ate a
+              // gravacao terminar, e sao ate 5 downloads simultaneos.
+              maxTotalUncompressedBytes: 60 * 1024 * 1024,
+            });
+            if (entradas.length === 0) {
+              return { ok: true, pdfs: [], motivo: "zip_sem_pdf" };
+            }
+            pdfsNaPagina = entradas.length;
+            for (const entrada of entradas.slice(0, MAX_PDFS_POR_ZIP)) {
+              // `entrada.name`, NUNCA `deriveFilename`: a URL do ZIP nao tem segmento .pdf, entao
+              // os 19 documentos receberiam o mesmo nome — o bug que a Fase 8 matou, voltando pelo
+              // ZIP. E o nome de dentro do arquivo e o bom ("DELIBERACAO ARTESP Nº 620_...pdf").
+              pdfs.push({ url, buffer: entrada.buffer, filename: entrada.name, sourceArchive: url.split("/").pop()?.slice(0, 180) });
+            }
+          } catch (erroZip) {
+            // try/catch PROPRIO: o extrator lanca em ZIP corrompido, ZIP64 e deflate64. Deixar
+            // cair no catch externo classificaria isso como falha de REDE — e a Fase 8 daria a ele
+            // 4 ciclos de retry ao longo de ~25 dias por um arquivo que nunca vai mudar.
+            const msg = erroZip instanceof Error ? erroZip.message : "ZIP ilegivel";
+            return { ok: true, pdfs: [], motivo: `zip_invalido:${msg.slice(0, 60)}` };
+          }
         } else if (sniffIsHtml(fetched.contentType, fetched.buffer)) {
           const { links, totalEncontrado } = resolvePdfLinks(fetched.buffer.toString("utf8"), url);
           pdfsNaPagina = totalEncontrado;
@@ -264,13 +315,16 @@ export async function POST(req: NextRequest) {
 
       const pdfsAntes = pdfsGravados;
       if (pdfs.length === 0) {
-        // TERMINAL: nem PDF nem página com PDF de decisão → sai da janela com motivo
-        // (antes ficava 'novo' para sempre bloqueando os itens atrás — head-of-line).
+        // TERMINAL: sai da janela com MOTIVO (antes ficava 'novo' para sempre bloqueando os itens
+        // atrás — head-of-line). Fase 9: o motivo deixa de ser sempre `sem_pdf`. Um .docx, um ZIP
+        // corrompido e uma página institucional vazia são três coisas diferentes, e somá-las num
+        // motivo só foi o que escondeu 198 documentos da ARTESP atrás de "a página não tinha PDF".
+        const motivoTerminal = valor.motivo ?? "sem_pdf";
         await db
           .from("monitoramento_itens")
           .update({
             status: "ignorado",
-            metadata: { ...itemMeta, enqueue_motivo: "sem_pdf" },
+            metadata: { ...itemMeta, enqueue_motivo: motivoTerminal },
             last_seen_at: new Date().toISOString(),
           })
           .eq("id", item.id);
@@ -281,7 +335,9 @@ export async function POST(req: NextRequest) {
           url,
           status: "sem_pdf",
           job_id: null,
-          message: "Nenhum PDF encontrado na URL/página — item arquivado com motivo.",
+          message: motivoTerminal === "sem_pdf"
+            ? "Nenhum PDF encontrado na URL/página — item arquivado com motivo."
+            : `Arquivado: ${motivoTerminal}.`,
         });
         continue;
       }
@@ -293,22 +349,33 @@ export async function POST(req: NextRequest) {
         // Parar ENTRE filhos, nunca no meio de um: `enqueuePdfBuffer` é atômico por documento.
         // O item só é marcado `importado` se nada ficou de fora — senão ele volta na próxima
         // rodada e o `file_hash` UNIQUE evita regravar o que já entrou.
-        if (!hasBudget(deadlineAt, RESERVA_GRAVACAO_MS) || pdfsGravados >= maxPdfs) {
+        //
+        // ⚠️ Fase 9 — o TETO (`maxPdfs`) saiu daqui, e ficou só na entrada do item (acima). Um ZIP
+        // da ARTESP tem até 58 entradas contra um teto de rodada de 60: cortando no meio dele, o
+        // item NUNCA completava, voltava na rodada seguinte, re-baixava o mesmo ZIP, re-hasheava
+        // as mesmas entradas (todas duplicatas) e adiava de novo — livelock, com o item preso em
+        // 'novo' para sempre. Com o corte só entre itens, o item vira atômico: ou entra inteiro,
+        // ou nem começa. A rodada pode passar do teto em no máximo MAX_PDFS_POR_ZIP - 1.
+        if (!hasBudget(deadlineAt, RESERVA_GRAVACAO_MS)) {
           filhosAdiados = pdfs.length - (pdfsGravados - pdfsAntes);
           restantes++;
           break;
         }
-        const filename = deriveFilename(item.titulo as string, pdf.url);
+        // `pdf.filename` vem das entradas do ZIP (o nome de dentro do arquivo, que é o bom);
+        // `deriveFilename` só entra para PDF direto e para filho de página HTML.
+        const filename = pdf.filename ?? deriveFilename(item.titulo as string, pdf.url);
         const enqueued = await enqueuePdfBuffer({
           db,
           filename,
           buffer: pdf.buffer,
           agenciaId: (item.agencia_id as string | null) ?? null,
+          sourceArchive: pdf.sourceArchive ?? null,
           metadata: {
             uploaded_via: "monitoramento_deliberacoes",
             monitoramento_item_id: item.id,
             source_url: pdf.url,
             item_tipo: item.tipo,
+            ...(pdf.sourceArchive ? { source_zip_entry: pdf.filename } : {}),
           },
         });
 

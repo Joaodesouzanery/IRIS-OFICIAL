@@ -125,7 +125,25 @@ describe("etapa69 · gravar mais filhos não pode matar a função", () => {
   });
 
   it("para ENTRE filhos, nunca no meio de um", () => {
-    expect(ENQUEUE).toMatch(/for \(const pdf of pdfs\) \{[\s\S]{0,400}?hasBudget\(deadlineAt, RESERVA_GRAVACAO_MS\)/);
+    // Asserção sobre a PROPRIEDADE, não sobre proximidade textual: a versão anterior exigia o
+    // `hasBudget` a menos de 400 chars do `for` e reprovou quando um comentário explicativo entrou
+    // no meio. Numa base com esta densidade de comentários, medir distância é medir prosa.
+    const laco = ENQUEUE.slice(ENQUEUE.indexOf("for (const pdf of pdfs) {"));
+    const ateAGravacao = laco.slice(0, laco.indexOf("enqueuePdfBuffer("));
+    expect(ateAGravacao, "nenhum freio de orçamento antes de gravar o filho").toMatch(
+      /hasBudget\(deadlineAt, RESERVA_GRAVACAO_MS\)/,
+    );
+  });
+
+  it("o TETO de PDFs não corta entre filhos — é o que evita o livelock do ZIP", () => {
+    // Um ZIP da ARTESP tem até 58 entradas contra um teto de rodada de 120. Cortar no meio dele
+    // faria o item nunca completar: voltaria na rodada seguinte, re-baixaria o mesmo ZIP,
+    // re-hashearia as mesmas entradas (todas duplicatas) e adiaria de novo, para sempre.
+    const laco = ENQUEUE.slice(ENQUEUE.indexOf("for (const pdf of pdfs) {"));
+    const ateAGravacao = laco.slice(0, laco.indexOf("enqueuePdfBuffer("));
+    expect(ateAGravacao, "o teto voltou a cortar no meio do item").not.toMatch(/pdfsGravados >= maxPdfs/);
+    // …mas continua valendo na ENTRADA do item.
+    expect(ENQUEUE).toMatch(/for \(const \{ item, valor \} of colheita\.concluidos\)[\s\S]{0,300}?pdfsGravados >= maxPdfs/);
   });
 
   it("item com filho adiado NÃO é marcado como importado", () => {
