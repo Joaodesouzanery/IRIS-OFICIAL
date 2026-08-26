@@ -647,6 +647,10 @@ export async function analyzeUploadPdf(input: {
       confidence,
       page_count: extraction.pageCount,
       chars_per_page: extraction.charsPerPage,
+      // Fase 7 — COMO o texto foi lido. Isto era calculado (para rebaixar a confiança e emitir
+      // warning) e descartado logo em seguida; sem ele não dá para responder "de onde veio este
+      // campo" numa auditoria, porque texto de OCR erra de um jeito diferente do texto nativo.
+      extracao_metodo: extraction.ocrApplied ? "ocr" : "pdf-parse",
       agencia_sigla_detected,
       source_archive: file.source_archive ?? null,
       documento_subtipo: regulatoryClass.documento_subtipo,

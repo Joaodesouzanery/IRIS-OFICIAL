@@ -99,13 +99,21 @@ export async function GET(
     : null) as Record<string, unknown> | null;
   const rawText = raw && typeof raw.raw_text === "string" ? (raw.raw_text as string) : null;
   if (raw) delete raw.raw_text;
+  // Fase 7 — no caminho zero-toque o `raw_text` nunca chega aqui (a esteira não duplica 50k de
+  // texto no JSONB de toda deliberação); o que chega é `texto_trecho`. Sem este fallback, o card
+  // de inspeção ficava vazio justamente nos documentos que a esteira processou sozinha — ou seja,
+  // em quase todos.
+  const trecho = rawText
+    ? rawText.slice(0, 4000)
+    : typeof raw?.texto_trecho === "string" ? (raw.texto_trecho as string) : null;
 
   const formatted = {
     ...data,
     raw_extraction: raw,
     source_url: typeof raw?.source_url === "string" ? raw.source_url : null,
+    extracao_metodo: typeof raw?.extracao_metodo === "string" ? raw.extracao_metodo : null,
     extraction_warnings: Array.isArray(raw?.warnings) ? raw!.warnings : [],
-    texto_extraido_trecho: rawText ? rawText.slice(0, 4000) : null,
+    texto_extraido_trecho: trecho,
     agencia: data.agencias ?? null,
     agencias: undefined,
     votos: (data.votos ?? []).map((v: any) => ({

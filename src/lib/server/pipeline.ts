@@ -32,11 +32,17 @@ export async function processPdf(jobId: string): Promise<void> {
     documentoId = (job.documento_id as string | null) ?? null;
     if (!job.storage_path) throw new Error("Job sem storage_path");
 
-    await updateDocument(db, documentoId, {
+    // Fase 7 — a marcação de "processing" passa a DEVOLVER a linha, para colher a URL de origem
+    // sem um round-trip novo. Ela é gravada em `metadata.source_url` pelo enfileiramento e, até
+    // agora, morria ali: a deliberação nascia sem proveniência e o card de inspeção do detalhe
+    // ficava sem "Fonte original".
+    const docRow = await updateDocument(db, documentoId, {
       status: "processing",
       error_message: null,
       updated_at: new Date().toISOString(),
-    });
+    }, true);
+    const docMeta = (docRow?.metadata ?? {}) as Record<string, unknown>;
+    const sourceUrl = typeof docMeta.source_url === "string" ? docMeta.source_url : null;
 
     const { data: fileData, error: downloadErr } = await db.storage
       .from("pdfs")
@@ -90,7 +96,7 @@ export async function processPdf(jobId: string): Promise<void> {
       page_count: analysis.page_count,
       chars_per_page: analysis.chars_per_page,
       texto_extraido: String(analysis.extraction_raw?.raw_text ?? ""),
-      campos_detectados: previewToJson(analysis),
+      campos_detectados: previewToJson(analysis, sourceUrl),
       ata_items: analysis.ata_items ?? null,
       warnings: analysis.warnings ?? [],
       error_message: null,
@@ -207,24 +213,53 @@ export async function processPendingDocuments(limit = 5, deadlineAt?: number): P
   return { processed, job_ids: selected.map((job) => job.jobId), reaped };
 }
 
-function previewToJson(analysis: Awaited<ReturnType<typeof analyzeUploadPdf>>) {
+/** Quanto do texto lido viaja junto com a deliberação, para conferência a olho. */
+const TRECHO_MAX_CHARS = 4_000;
+
+/**
+ * Fase 7 — PROVENIÊNCIA.
+ *
+ * O `raw_text` (até 50k) continua fora daqui de propósito: ele já vive inteiro na coluna
+ * `documentos_regulatorios.texto_extraido`, e duplicá-lo no JSONB inflaria a tabela de
+ * deliberações (todo consumidor downstream copia este objeto). O que entra no lugar é o mínimo
+ * que torna a decisão AUDITÁVEL sem abrir o banco:
+ *   · `source_url`    — de qual URL o PDF veio (o card "Fonte original" do detalhe estava vazio);
+ *   · `texto_trecho`  — o começo do texto realmente lido, para bater o olho contra o PDF;
+ *   · `extracao_metodo` — pdf-parse ou OCR, que era calculado e jogado fora.
+ * Os três nomes são explícitos: `texto_trecho` não se disfarça de texto completo.
+ */
+function previewToJson(
+  analysis: Awaited<ReturnType<typeof analyzeUploadPdf>>,
+  sourceUrl: string | null,
+) {
   const raw = analysis.extraction_raw ?? {};
-  const { raw_text: _rawText, ...rawWithoutText } = raw;
+  const { raw_text: rawText, ...rawWithoutText } = raw;
+  const trecho = typeof rawText === "string" ? rawText.slice(0, TRECHO_MAX_CHARS) : null;
   return {
     preview: {
       ...analysis,
-      extraction_raw: rawWithoutText,
+      extraction_raw: {
+        ...rawWithoutText,
+        ...(sourceUrl ? { source_url: sourceUrl } : {}),
+        ...(trecho ? { texto_trecho: trecho } : {}),
+      },
     },
   };
 }
 
-async function updateDocument(db: any, documentoId: string | null, patch: Record<string, unknown>) {
-  if (!documentoId) return;
-  const { error } = await db
-    .from("documentos_regulatorios")
-    .update(patch)
-    .eq("id", documentoId);
+async function updateDocument(
+  db: any,
+  documentoId: string | null,
+  patch: Record<string, unknown>,
+  devolverLinha = false,
+): Promise<Record<string, unknown> | null> {
+  if (!documentoId) return null;
+  const q = db.from("documentos_regulatorios").update(patch).eq("id", documentoId);
+  // `.select()` no UPDATE devolve a linha na MESMA ida ao banco — é assim que a proveniência
+  // sai de graça, sem um SELECT extra por PDF na parte quente da esteira.
+  const { data, error } = devolverLinha ? await q.select("metadata").maybeSingle() : await q;
   if (error) console.warn("[pipeline] Falha ao atualizar documento:", error.message);
+  return (data as Record<string, unknown> | null) ?? null;
 }
 
 export { markBatchDuplicates };

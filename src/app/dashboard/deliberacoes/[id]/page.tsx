@@ -558,6 +558,8 @@ export default function DeliberacaoDetailPage() {
       {(() => {
         const extra = deliberacao as unknown as {
           source_url?: string | null;
+          /** Fase 7: como o texto foi lido — "pdf-parse" (nativo) ou "ocr" (imagem). */
+          extracao_metodo?: string | null;
           extraction_warnings?: string[];
           texto_extraido_trecho?: string | null;
           tipo_documento?: string | null;
@@ -609,6 +611,16 @@ export default function DeliberacaoDetailPage() {
               {extra.tipo_documento && (
                 <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-secondary">
                   Tipo: <span className="font-medium text-text-primary">{extra.tipo_documento}</span>
+                </span>
+              )}
+              {extra.extracao_metodo && (
+                <span
+                  className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-secondary"
+                  title={extra.extracao_metodo === "ocr"
+                    ? "O PDF não tinha texto embutido: o conteúdo foi reconhecido a partir da imagem, e OCR erra de um jeito diferente do texto nativo."
+                    : "Texto lido direto da camada de texto do PDF."}
+                >
+                  Extração: <span className="font-medium text-text-primary">{extra.extracao_metodo === "ocr" ? "OCR (imagem)" : "texto nativo"}</span>
                 </span>
               )}
               {deliberacao.auto_classified && (
