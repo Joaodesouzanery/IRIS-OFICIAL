@@ -40,6 +40,12 @@ export interface MonitoringFetchResult {
   // o restante fica para a próxima rodada (retomada barata via dedup/skip-set).
   truncated?: boolean;
   skippedKnown?: number;
+  /**
+   * O portal respondeu 200 com uma PÁGINA DE DESAFIO (WAF) em vez do conteúdo — e nem o headless
+   * resolveu. Sem isto, "zero itens" de um bloqueio era indistinguível de "zero novidades", e a
+   * run ia para o banco como `ok`.
+   */
+  bloqueado?: boolean;
 }
 
 const DOC_LABEL_RE =
@@ -154,7 +160,12 @@ export async function fetchMonitoringSite(
     // notícia) e só adota o resultado se ele realmente trouxer itens.
     // Reserva 35s (launch do chromium + navegação 25s): sem saldo, pula — o
     // rodízio por ultimo_check garante que a fonte abre a próxima rodada.
-    if (items.length === 0 && pageCount === 1 && isDocStatic && hasBudget(deadlineAt, 35_000)) {
+    // Fase 9 — um DESAFIO de WAF força a tentativa headless mesmo fora do gate de `isDocStatic`:
+    // um Chromium de verdade costuma resolver o JS do Imperva, e é a única chance de a coleta
+    // acontecer. Sem isto, a ARTESP dependeria de `items.length === 0 && isDocStatic`, que é
+    // verdadeiro por acaso — qualquer fonte não-estática atrás de WAF ficaria de fora.
+    const pareceDesafio = pageCount === 1 && looksLikeChallenge(html);
+    if (items.length === 0 && pageCount === 1 && (isDocStatic || pareceDesafio) && hasBudget(deadlineAt, 35_000)) {
       const rendered = await tryRenderHtmlFallback(pageUrl, site.nome);
       if (rendered) {
         const headlessItems = parseFor(rendered, pageUrl);
@@ -188,6 +199,10 @@ export async function fetchMonitoringSite(
 
   const items = [...collected.values()];
   const hasAnchors = /<a\b/i.test(firstHtml);
+  // ⚠️ `hasAnchors` é o que fazia o detector de headless falhar aqui: a página do Imperva tem
+  // EXATAMENTE uma âncora, e uma única âncora derrota a heurística inteira. Por isso o bloqueio
+  // é detectado pelo conteúdo, não pela ausência de links.
+  const bloqueado = items.length === 0 && looksLikeChallenge(firstHtml);
 
   return {
     contentHash: sha256(firstHtml),
@@ -196,6 +211,7 @@ export async function fetchMonitoringSite(
       (!hasAnchors || /javascript is disabled|requires javascript|__next|webpackJsonp/i.test(firstHtml)),
     items,
     truncated,
+    ...(bloqueado ? { bloqueado: true } : {}),
   };
 }
 
@@ -281,6 +297,38 @@ export function parseMonitoringHtml(
 
 // URLs de documento da ARTESP (WebSphere Portal): o PDF é servido pelo DAM do
 // CMS-SP, sem extensão .pdf. Ex.: .../dx/api/dam/v1/collections/.../renditions/...?binary=true
+/**
+ * A resposta é uma PÁGINA DE DESAFIO (WAF), e não a página pedida? — Fase 9.
+ *
+ * ═══ Por que isto precisa existir ═══
+ * O portal da ARTESP está atrás do Imperva. Ele responde **HTTP 200** com uma página de ~6 KB que
+ * não é a listagem de reuniões — e, como qualquer 2xx é sucesso para o `resilientFetch`, o coletor
+ * seguia adiante, encontrava zero itens e a run era gravada como **`ok`**. Uma agência inteira
+ * parou de ser coletada e o painel dizia que estava tudo bem.
+ *
+ * A heurística de `needs_headless` também não pega: ela exige `!hasAnchors`, e a página do Imperva
+ * tem exatamente UMA âncora. **Uma única âncora derrota o detector inteiro.**
+ *
+ * ═══ O que é medido, não suposto ═══
+ * Capturado ao vivo em 26/08/2026 (a fixture `fixtures/artesp/imperva-desafio.html` é a resposta
+ * literal): 6.183 bytes, `<title>Pardon Our Interruption</title>`, `_Incapsula_Resource`,
+ * `robots: noindex, nofollow`, 1 âncora, zero cabeçalhos de reunião.
+ */
+export function looksLikeChallenge(html: string): boolean {
+  if (!html) return false;
+  // Marcadores de produto — os dois primeiros foram VERIFICADOS na resposta real da ARTESP.
+  if (/_Incapsula_Resource|\bIncapsula\b/i.test(html)) return true;
+  if (/Pardon Our Interruption/i.test(html)) return true;
+  if (/Request unsuccessful\.?\s*Incapsula incident ID|Attention Required!\s*\|\s*Cloudflare/i.test(html)) return true;
+  if (/\bcf-browser-verification\b|\bchallenge-platform\b/i.test(html)) return true;
+  // Genérico: corpo minúsculo, marcado como não-indexável e sem NENHUM conteúdo de listagem.
+  // Página institucional legítima não é as três coisas ao mesmo tempo.
+  const minuscula = html.length < 15_000;
+  const naoIndexavel = /noindex/i.test(html);
+  const semConteudo = !/<(?:li|article|table|h2|h3)\b/i.test(html);
+  return minuscula && naoIndexavel && semConteudo;
+}
+
 export function isArtespReunioesUrl(url: string): boolean {
   return /(^|\.)artesp\.sp\.gov\.br/i.test(url) && /reuni(?:o|õ|õe|oe)es-diretoria/i.test(url);
 }

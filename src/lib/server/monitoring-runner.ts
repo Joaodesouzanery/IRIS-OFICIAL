@@ -179,12 +179,21 @@ export async function processMonitoringSite(
       }
     }
 
-    const status = result.needsHeadless ? "needs_headless" : "ok";
+    // Fase 9 — bloqueio de WAF deixa de ser "ok". O portal da ARTESP responde HTTP 200 com uma
+    // página de desafio do Imperva (medido: 6.183 bytes, "Pardon Our Interruption"), o parser acha
+    // zero itens e a run ia para o banco como `ok` — uma agência inteira parando de ser coletada
+    // enquanto o painel dizia que estava tudo bem. `error` é reusado de propósito: o CHECK de
+    // status é fechado (novo, em_revisao, importado, ignorado / running, ok, error, needs_headless)
+    // e um valor novo exigiria migration.
+    const status = result.bloqueado ? "error" : result.needsHeadless ? "needs_headless" : "ok";
+    const erroDoBloqueio = result.bloqueado
+      ? "Portal respondeu com página de desafio (WAF) em vez do conteúdo — nem o fallback headless resolveu."
+      : null;
     const sitePatch: Record<string, unknown> = {
       ultimo_check: new Date().toISOString(),
       ultimo_hash: result.contentHash,
       ultimo_status: status,
-      ultimo_erro: null,
+      ultimo_erro: erroDoBloqueio,
     };
     // Não troca a estratégia de fontes "html-static" (ANM/ARTESP): marcá-las como
     // "needs-headless" faria a ANM (gov.br) cair no parser de NOTÍCIAS no próximo
@@ -200,6 +209,7 @@ export async function processMonitoringSite(
       await db.from("monitoramento_runs").update({
         finished_at: new Date().toISOString(),
         status,
+        ...(erroDoBloqueio ? { error_message: erroDoBloqueio } : {}),
         itens_encontrados: result.items.length,
         novos_itens: novosItens,
         documentos_enfileirados: documentosEnfileirados,
