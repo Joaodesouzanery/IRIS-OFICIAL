@@ -152,9 +152,15 @@ export async function POST(req: NextRequest) {
     // undefined: o retry simplesmente não acontece, e a esteira segue como antes.
     retentar = (elegiveis ?? []).filter((it: any) => {
       const meta = (it.metadata ?? {}) as Record<string, unknown>;
-      // Só falha de REDE volta. `sem_pdf` é decisão de CONTEÚDO: a página foi lida e não tinha
-      // documento de decisão — retentá-la é gastar a rodada relendo a mesma página institucional.
-      return meta.enqueue_motivo === "download_falhou";
+      // Falha de REDE volta sempre (o portal pode ter voltado). `sem_pdf` volta APENAS quando
+      // alguém carimbou `proxima_tentativa_em` de propósito — e o carimbo É o opt-in: o caminho
+      // que grava `sem_pdf` limpa a coluna (logo abaixo, na gravação), então item novo nunca
+      // reentra sozinho. Quem carimba é a migration da Fase 9, e só para o que foi arquivado por
+      // um gate que ainda não sabia ler ZIP.
+      //
+      // Sem essa assimetria, retentar `sem_pdf` seria um moinho: a página institucional que não
+      // tem documento nenhum seria relida a cada ciclo, consumindo o teto de vazão da rodada.
+      return meta.enqueue_motivo === "download_falhou" || meta.enqueue_motivo === "sem_pdf";
     });
   }
 
@@ -325,6 +331,11 @@ export async function POST(req: NextRequest) {
           .update({
             status: "ignorado",
             metadata: { ...itemMeta, enqueue_motivo: motivoTerminal },
+            // Limpar o carimbo é o que faz o retry de `sem_pdf` ser de UM TIRO. Um item que a
+            // migration reabriu e que voltou a não render documento sai daqui sem prazo — e sem
+            // prazo a consulta de retry não o alcança (NULL não satisfaz `<=`). Sem esta linha, o
+            // prazo vencido de ontem continuaria vencido amanhã: moinho.
+            proxima_tentativa_em: null,
             last_seen_at: new Date().toISOString(),
           })
           .eq("id", item.id);

@@ -98,13 +98,34 @@ describe("etapa69 · o retry NÃO rouba a vez do trabalho novo", () => {
   });
 });
 
-describe("etapa69 · só falha de REDE volta", () => {
-  it("`download_falhou` é elegível; `sem_pdf` não", () => {
-    // `sem_pdf` é decisão de CONTEÚDO: a página foi lida e não tinha documento de decisão.
-    // Retentá-la é gastar a rodada relendo a mesma página institucional — e, pior, ela seria
-    // RE-arquivada, voltando a consumir o teto de vazão da rodada.
+describe("etapa69 · o que volta, e sob que condição", () => {
+  it("`download_falhou` é elegível sempre — o portal pode ter voltado", () => {
     expect(ENQUEUE).toMatch(/meta\.enqueue_motivo === "download_falhou"/);
-    expect(ENQUEUE).not.toMatch(/enqueue_motivo === "sem_pdf"[\s\S]{0,60}retentar/);
+  });
+
+  it("`sem_pdf` volta APENAS carimbado — e o carimbo é o opt-in (revisto na Fase 9)", () => {
+    // A Fase 8 excluía `sem_pdf` do retry inteiro, com um argumento correto para o caso que ela
+    // conhecia: "a página foi lida e não tinha documento". A Fase 9 mediu o acervo da ARTESP e
+    // achou o contrário — 88% das "Deliberações" são ZIP, e o gate não sabia ler ZIP. Não era
+    // ausência de documento; era cegueira de formato.
+    //
+    // A regra nova é mais precisa que "sim" ou "não": `sem_pdf` é elegível, mas só quando alguém
+    // carimbou `proxima_tentativa_em` de propósito. Como o caminho que GRAVA `sem_pdf` limpa a
+    // coluna, item novo nunca reentra sozinho, e o item reaberto que continuar sem render
+    // documento sai com a coluna nula — um tiro só, nunca um moinho.
+    expect(ENQUEUE).toMatch(/meta\.enqueue_motivo === "sem_pdf"/);
+  });
+
+  it("gravar `sem_pdf` LIMPA o prazo — é isto que impede o moinho", () => {
+    // Sem esta linha, o prazo vencido de ontem continuaria vencido amanhã, e a mesma página
+    // institucional seria relida a cada rodada, consumindo o teto de vazão.
+    const trecho = ENQUEUE.slice(ENQUEUE.indexOf("const motivoTerminal"));
+    const ateOFimDoUpdate = trecho.slice(0, trecho.indexOf(".eq(\"id\", item.id)"));
+    expect(ateOFimDoUpdate).toMatch(/proxima_tentativa_em: null/);
+  });
+
+  it("a elegibilidade continua governada pela COLUNA, não pelo motivo sozinho", () => {
+    expect(ENQUEUE).toMatch(/\.lte\("proxima_tentativa_em", agora\)/);
   });
 });
 
