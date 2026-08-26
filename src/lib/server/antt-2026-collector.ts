@@ -414,6 +414,14 @@ export async function discoverAntt2026Meetings(
     }
   }
 
+  // Fase 7 — parar por TETO também é enumeração incompleta. Este É o bug real da cobertura da
+  // ANTT (o do paginador não era). `truncated` só era marcado por esgotamento de ORÇAMENTO; sair
+  // do laço com página pendente na fila (teto `maxPages`) ou com o teto de reuniões batido
+  // devolvia `truncated: false`, e a conferência de cobertura lia isso como "enumerei o portal
+  // inteiro" — era o que produzia "✓ Cobertura completa" comparando o banco contra uma fração.
+  // E não é hipotético: o portal tem 82 páginas e `maxPages` é no máximo 20 (5 na coleta leve).
+  if (listingQueue.length > 0 || meetingLinks.size >= maxMeetings) truncated = true;
+
   const meetings: AnttMeeting[] = [];
   for (const [url, listing] of meetingLinks) {
     if (skipMeetingUrls?.has(url)) {
@@ -813,10 +821,50 @@ export function extractAnchors(html: string, baseUrl: string) {
   return anchors;
 }
 
-function findNextPageUrl(html: string, baseUrl: string): string | null {
+/**
+ * Rótulo "Página N de M" do paginador do Liferay. É a única fonte no HTML que diz onde estamos e
+ * quantas páginas existem — sem ele não dá para saber qual âncora numérica é a PRÓXIMA.
+ */
+export function parseLiferayPageLabel(html: string): { atual: number; total: number } | null {
+  const m = normalizeText(stripTags(html)).match(/pagina\s+(\d{1,4})\s+de\s+(\d{1,4})/);
+  if (!m) return null;
+  const atual = Number(m[1]);
+  const total = Number(m[2]);
+  if (!Number.isFinite(atual) || !Number.isFinite(total) || total < 1) return null;
+  return { atual, total };
+}
+
+/**
+ * Fase 7 — paginação com REDUNDÂNCIA (defesa em profundidade, não conserto de bug ativo).
+ *
+ * ⚠️ Registro honesto: a Fase 7 começou com o diagnóstico de que "a ANTT nunca sai da página 1
+ * porque só reconhecemos 'próximo'/'next'". **Isso estava ERRADO** — testado contra a fixture real
+ * do portal (`listagem-reunioes.html`, 227 KB), existe sim uma âncora "Próximo" e o casamento
+ * antigo a encontra. O limite real de cobertura da ANTT não é este: são `maxPages` (≤20 contra as
+ * 82 páginas do portal), `maxMeetings` e o orçamento de tempo.
+ *
+ * O que se ganha aqui, então: o portal também expõe o paginador numérico do Liferay (âncoras cujo
+ * texto é o NÚMERO da página, com `..._cur=N` / `..._delta=20`). Reconhecê-lo é um segundo caminho
+ * para o mesmo destino — se o rótulo "Próximo" mudar de texto, for traduzido ou virar só um ícone,
+ * a descoberta continua andando em vez de parar em silêncio na página 1. Custo: ~10 linhas.
+ *
+ * A ordem importa: "próximo"/"next" primeiro (é o caminho que funciona hoje), numérico como rede.
+ */
+export function findNextPageUrl(html: string, baseUrl: string): string | null {
   const anchors = extractAnchors(html, baseUrl);
-  const next = anchors.find((a) => /^proximo$/i.test(normalizeText(a.text)) || /next/i.test(a.text));
-  return next?.href ?? null;
+
+  const explicito = anchors.find((a) => /^proximo$/i.test(normalizeText(a.text)) || /next/i.test(a.text));
+  if (explicito) return explicito.href;
+
+  const label = parseLiferayPageLabel(html);
+  if (!label) return null;
+  if (label.atual >= label.total) return null; // última página: acabou de verdade
+
+  // A âncora cujo texto é exatamente o número da próxima página. Há dois paginadores (topo e
+  // rodapé) com as mesmas âncoras — a primeira serve.
+  const alvo = String(label.atual + 1);
+  const proxima = anchors.find((a) => a.text.trim() === alvo);
+  return proxima?.href ?? null;
 }
 
 // Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
@@ -824,8 +872,17 @@ function findNextPageUrl(html: string, baseUrl: string): string | null {
 export function isTargetMeetingTitle(title: string): boolean {
   const text = normalizeText(title);
   if (!text.includes("reuniao")) return false;
+  // "Reunião de Diretoria ADMINISTRATIVA" é outro colegiado (gestão interna), não decisão
+  // regulatória. A exclusão vem antes de tudo e continua valendo.
   if (text.includes("administrativa")) return false;
-  return text.includes("reuniao de diretoria") || text.includes("reuniao deliberativa eletronica");
+  // Fase 7 — o teste era por substring CONTÍGUA ("reuniao de diretoria"), então
+  // "Reunião Extraordinária de Diretoria" era rejeitada mesmo com `classifyMeetingType` sabendo
+  // classificá-la ("extraordinaria" está lá, explicitamente). A ampliação é do tamanho exato
+  // dessa contradição: só os qualificadores que a função irmã já declara conhecer — nada mais.
+  // (Na listagem real de hoje a ANTT nomeia "NNNª Reunião de Diretoria", sem qualificador; isto
+  // é seguro contra o dia em que ela publicar uma extraordinária.)
+  if (/reuniao (?:ordinaria |extraordinaria )?de diretoria/.test(text)) return true;
+  return text.includes("reuniao deliberativa eletronica");
 }
 
 // Exportada na etapa66 para que o teste contra a fixture de HTML real LOCALIZE a regressão
