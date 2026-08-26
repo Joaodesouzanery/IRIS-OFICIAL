@@ -105,6 +105,7 @@ export async function POST(req: NextRequest) {
         | "queued"
         | "existing_pending"
         | "existing_failed"
+        | "existing_archived"
         | "existing_review"
         | "duplicate_confirmed"
         | "rejected"

@@ -10,6 +10,7 @@ export type EnqueuePdfResult = {
     | "queued"
     | "existing_pending"
     | "existing_failed"
+    | "existing_archived"
     | "existing_review"
     | "duplicate_confirmed"
     | "rejected"
@@ -320,9 +321,25 @@ export async function requeueDocument(db: any, documentId: string) {
   return { document_id: doc.id as string, job_id: doc.upload_job_id as string };
 }
 
+/**
+ * Fase 8 — `ignored` deixou de virar `existing_failed`.
+ *
+ * `existing_failed` dispara `requeueDocument`, que DESARQUIVA o documento (volta a 'queued' e
+ * apaga texto_extraido/campos_detectados). Mas `ignored` é exatamente o status que o confirm-lote
+ * grava ao arquivar pauta, documento_apoio, duplicata exata e ilegível — arquivar ali é uma
+ * DECISÃO, não uma falha. Enquanto o item ia a terminal no primeiro tropeço, isso quase nunca
+ * acontecia; com o retry, todo re-download de uma pauta já arquivada a desarquivaria, e o
+ * confirm-lote a arquivaria de novo na rodada seguinte: o ping-pong da Fase 7 voltando pela porta
+ * dos fundos, fora do guard que o vigia (esse guard vive no passo 9 da esteira; isto é o passo 7).
+ *
+ * `failed` continua sendo `existing_failed`: ali a extração QUEBROU e reprocessar é o certo.
+ * Quem quiser desarquivar um `ignored` de propósito continua tendo a rota dedicada
+ * (admin/upload/reprocess-ignorados), que roda sob o guard anti-ping-pong.
+ */
 function classifyExistingDocumentStatus(status: string | null): EnqueuePdfResult["status"] {
   if (status === "confirmed") return "duplicate_confirmed";
-  if (status === "failed" || status === "ignored") return "existing_failed";
+  if (status === "ignored") return "existing_archived";
+  if (status === "failed") return "existing_failed";
   if (status === "review_pending") return "existing_review";
   return "existing_pending";
 }

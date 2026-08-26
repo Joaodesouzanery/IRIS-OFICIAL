@@ -18,6 +18,7 @@ import { RESERVA } from "@/lib/server/esteira-reservas";
 import { resolvePdfLinks, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
 import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
 import { mapComConcorrencia, criarReservaAdaptativa } from "@/lib/server/concorrencia";
+import { resilientFetch } from "@/lib/server/resilient-fetch";
 
 export const dynamic = "force-dynamic";
 
@@ -32,7 +33,8 @@ const PDF_RE = /\.pdf(?:$|[/?#])|\/@@download\/file(?:$|[/?#])/i;
 // Teto por chamada é a JANELA (60): o freio real é o orçamento (reserva 22s/item).
 // Antes era 10 fixo — com saldo sobrando, a rodada parava cedo à toa (QA ago/2026).
 const MAX_PER_RUN = 60;
-const MAX_TENTATIVAS = 3;
+// (MAX_TENTATIVAS morreu na Fase 8: as 3 tentativas queimavam na mesma rodada, sem
+// espera nenhuma entre elas. O ciclo agora é medido em DIAS — ver MAX_CICLOS_RETRY.)
 // Downloads simultâneos. 5 é conservador de propósito: o ganho vem de usar a espera de rede,
 // não de martelar o portal da agência — que é um serviço público e pode ter rate limit.
 const CONCORRENCIA_DOWNLOAD = 5;
@@ -41,10 +43,23 @@ const CONCORRENCIA_DOWNLOAD = 5;
 // não há um segundo corte escondido aqui. Uma página de DOCUMENTO (Plone /view) é um documento só.
 const MAX_FILHOS_REUNIAO = 12;
 const MAX_FILHOS_DOCUMENTO = 1;
-const FETCH_TIMEOUT_MS = 20_000;
+// Teto por documento. O guard do `enqueuePdfBuffer` (50 MB) só roda DEPOIS do download
+// inteiro em memória; aqui o corte acontece antes de o buffer entrar na colheita.
+const MAX_BYTES_POR_DOCUMENTO = 50 * 1024 * 1024;
 // Saldo mínimo para gravar MAIS UM filho (upload no Storage + inserts + update). Medido com folga:
 // o custo real é de centenas de ms, mas parar cedo custa uma rodada e parar tarde custa a função.
 const RESERVA_GRAVACAO_MS = 6_000;
+// Vagas que o RETRY pode ocupar por chamada. Pequeno de propósito: o trabalho novo tem prioridade
+// absoluta, e o caso que este conserto atende (o portal voltou) drena em poucas rodadas.
+const COTA_RETRY_POR_CHAMADA = 5;
+// Ciclos de retry antes de desistir de vez. Com o backoff em DIAS, isto é ~2 semanas de espera —
+// tempo de sobra para um portal fora do ar voltar. Passar disso é insistir num link que mudou.
+const MAX_CICLOS_RETRY = 4;
+/** Backoff em DIAS: o cron roda 1x/dia, então qualquer coisa em horas seria o mesmo que nada. */
+function proximaTentativaEm(ciclo: number): string {
+  const dias = [1, 3, 7, 14][Math.min(ciclo, 3)];
+  return new Date(Date.now() + dias * 24 * 60 * 60 * 1000).toISOString();
+}
 
 export async function POST(req: NextRequest) {
   const guard = await requireAdminOrCron(req);
@@ -103,13 +118,50 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: `Falha ao listar itens monitorados: ${error.message}` }, { status: 500 });
   }
 
+  // ═══ Fase 8 — RETRY, numa consulta SEPARADA e com COTA PRÓPRIA ═══════════════
+  //
+  // Um item arquivado por `download_falhou` é um item que o portal não entregou naquela hora —
+  // não é um item sem valor. O re-crawl nunca o ressuscitava (na colisão de hash só se atualiza
+  // `last_seen_at`), então portal fora do ar por três tentativas = ata perdida para sempre.
+  //
+  // Por que uma consulta À PARTE, e não `.in("status", ["novo","ignorado"])`: os itens que falham
+  // são, por construção, os mais RECENTES (página publicada antes dos PDFs, PDF que deu 403), e a
+  // janela é ordenada por `data_reuniao DESC`. Misturá-los os colocaria no TOPO, ocupando as 60
+  // vagas antes dos itens realmente novos — que é exatamente o head-of-line de "208 detectados /
+  // 0 na fila" que a esteira já pagou uma vez. Com cota separada e pequena, o retry nunca rouba a
+  // vez do trabalho novo.
+  let retentar: any[] = [];
+  if (!body.agencia_sigla?.trim()) {
+    const agora = new Date().toISOString();
+    const { data: elegiveis } = await db
+      .from("monitoramento_itens")
+      .select("id, agencia_id, tipo, titulo, url_item, status, metadata, tentativas")
+      .eq("status", "ignorado")
+      .in("tipo", DECISION_TIPOS as unknown as string[])
+      .lt("tentativas", MAX_CICLOS_RETRY)
+      .lte("proxima_tentativa_em", agora)
+      .order("proxima_tentativa_em", { ascending: true })
+      .limit(COTA_RETRY_POR_CHAMADA);
+    // Sem a migration `20260826140000` a consulta falha (coluna inexistente) e `elegiveis` vem
+    // undefined: o retry simplesmente não acontece, e a esteira segue como antes.
+    retentar = (elegiveis ?? []).filter((it: any) => {
+      const meta = (it.metadata ?? {}) as Record<string, unknown>;
+      // Só falha de REDE volta. `sem_pdf` é decisão de CONTEÚDO: a página foi lida e não tinha
+      // documento de decisão — retentá-la é gastar a rodada relendo a mesma página institucional.
+      return meta.enqueue_motivo === "download_falhou";
+    });
+  }
+
   // QA ago/2026: o gate por regex de URL matava ARTESP (DAM sem .pdf) e ANM (/view) e,
   // como o rejeitado nunca mudava de status, os mesmos 60 bloqueavam a janela para
   // sempre (208 detectados / 0 na fila). Agora TODO item da janela é tentado — o
   // critério é o CONTEÚDO (sniff) — e quem não tem PDF ganha status terminal (drena).
-  const candidates = (itens ?? [])
+  const novosCandidatos = (itens ?? [])
     .sort((a, b) => Number(PDF_RE.test(String(b.url_item ?? ""))) - Number(PDF_RE.test(String(a.url_item ?? ""))))
     .slice(0, limit);
+  // Os novos SEMPRE primeiro; o retry ocupa só o que sobrar da fatia desta chamada.
+  const candidates = [...novosCandidatos, ...retentar.slice(0, Math.max(0, limit - novosCandidatos.length))];
+  const idsEmRetry = new Set(retentar.map((r: any) => String(r.id)));
 
   const results: Array<{
     monitoramento_item_id: string;
@@ -260,6 +312,9 @@ export async function POST(req: NextRequest) {
           },
         });
 
+        // `existing_archived` fica FORA daqui de propósito: o documento já foi arquivado por
+        // decisão (pauta/apoio/duplicata/ilegível) e reprocessá-lo seria desfazer a decisão —
+        // o ping-pong da Fase 7 voltando pela porta do enfileiramento.
         if (
           (enqueued.status === "queued" || enqueued.status === "existing_failed") &&
           enqueued.job_id
@@ -286,24 +341,44 @@ export async function POST(req: NextRequest) {
       if (filhosAdiados === 0 && (algumOk || !algumErro)) {
         await db
           .from("monitoramento_itens")
-          .update({ status: "importado", last_seen_at: new Date().toISOString() })
+          .update({
+            status: "importado",
+            // Fase 8: o item entrou. Zera o ciclo e apaga o prazo — se um dia ele voltar à fila
+            // por outro caminho, começa limpo em vez de herdar o histórico de um portal que caiu.
+            tentativas: 0,
+            proxima_tentativa_em: null,
+            last_seen_at: new Date().toISOString(),
+          })
           .eq("id", item.id);
       }
     } catch (err) {
-      // Erro transitório (403/timeout): registra tentativa + motivo (antes sumia — o
-      // item era retentado para sempre sem rastro). Após MAX_TENTATIVAS vira terminal.
-      const tentativas = (Number(itemMeta.tentativas) || 0) + 1;
+      // ═══ Falha de download — Fase 8: arquivar deixou de significar MORRER ═══
+      //
+      // Antes: 3 falhas → 'ignorado' para sempre, e o re-crawl nunca revisava o status. Só que as
+      // "3 tentativas" nunca foram 3 dias: enquanto o item ficava em 'novo' entre elas, a chamada
+      // seguinte do MESMO laço o re-selecionava do topo da janela — as três queimavam em segundos,
+      // dentro de uma única rodada de 50s. Um portal com um soluço de um minuto perdia a ata.
+      //
+      // Agora o item continua sendo arquivado (para sair da janela e não bloquear a fila), mas com
+      // um PRAZO: `proxima_tentativa_em` em 1, 3, 7 e 14 dias. Ele volta sozinho quando o prazo
+      // vence, pela consulta de retry — que tem cota própria e não disputa vaga com o trabalho novo.
+      // O relógio é uma COLUNA porque `last_seen_at` é bumpado pelo crawl diário e `metadata` é
+      // sobrescrito inteiro pelo auto-enfileiramento: nenhum dos dois serve de relógio.
+      const cicloAnterior = Number((item as any).tentativas) || 0;
+      const ciclo = cicloAnterior + 1;
       const msg = err instanceof Error ? err.message : "Falha ao baixar PDF";
-      const terminal = tentativas >= MAX_TENTATIVAS;
+      const desistiu = ciclo >= MAX_CICLOS_RETRY;
       await db
         .from("monitoramento_itens")
         .update({
-          ...(terminal ? { status: "ignorado" } : {}),
+          status: "ignorado",
+          tentativas: ciclo,
+          // Sem prazo = não volta mais. É a desistência explícita, depois de ~25 dias de espera.
+          proxima_tentativa_em: desistiu ? null : proximaTentativaEm(cicloAnterior),
           metadata: {
             ...itemMeta,
-            tentativas,
             captura_erro: msg.slice(0, 300),
-            ...(terminal ? { enqueue_motivo: "download_falhou" } : {}),
+            enqueue_motivo: desistiu ? "download_falhou_desistido" : "download_falhou",
           },
           last_seen_at: new Date().toISOString(),
         })
@@ -314,7 +389,9 @@ export async function POST(req: NextRequest) {
         url,
         status: "error",
         job_id: null,
-        message: `${msg}${terminal ? " (arquivado após 3 tentativas)" : ` (tentativa ${tentativas}/${MAX_TENTATIVAS})`}`,
+        message: desistiu
+          ? `${msg} (arquivado em definitivo após ${MAX_CICLOS_RETRY} ciclos de retry)`
+          : `${msg} (ciclo ${ciclo}/${MAX_CICLOS_RETRY} — volta a ser tentado depois do prazo)`,
       });
     }
   }
@@ -338,6 +415,16 @@ export async function POST(req: NextRequest) {
     enqueued_jobs: jobsToProcess.length,
     sem_pdf: semPdf,
     ...(filhosTruncados > 0 ? { filhos_truncados: filhosTruncados } : {}),
+    // Quantos desta chamada eram RETENTATIVAS (itens que o portal não entregou antes e cujo prazo
+    // venceu). Sem reportar, uma rodada que só retentou pareceria uma rodada que não achou nada.
+    ...(idsEmRetry.size > 0
+      ? {
+          retentados: candidates.filter((c) => idsEmRetry.has(String(c.id))).length,
+          retentados_com_sucesso: results.filter(
+            (r) => idsEmRetry.has(r.monitoramento_item_id) && r.status === "queued",
+          ).length,
+        }
+      : {}),
     parcial: restantes > 0,
     restantes,
     results,
@@ -346,23 +433,40 @@ export async function POST(req: NextRequest) {
   });
 }
 
+/**
+ * Fase 8 — passou a usar `resilientFetch`.
+ *
+ * Era `fetch` cru: um soluço de um segundo no portal (503, reset de conexão, 429) queimava um
+ * ciclo inteiro de retry, e o item só voltaria a ser tentado DIAS depois. O projeto já tinha a
+ * peça certa — backoff exponencial com jitter, `Retry-After` em 429, classificação
+ * rede×conteúdo — usada pelo coletor de monitoramento e ignorada exatamente aqui, onde os PDFs
+ * são baixados.
+ *
+ * Parâmetros apertados de propósito: UMA tentativa extra e timeout de 10s (pior caso ~20,4s,
+ * dentro da reserva de 22s do passo). O retry longo, em dias, é a rede de segurança — este aqui
+ * só existe para o blip que não merece esperar até amanhã. O throttle por host fica no padrão
+ * (0, salvo `COLLECTOR_HOST_THROTTLE_MS`) para não serializar os downloads concorrentes.
+ */
 async function fetchUrl(url: string): Promise<{ buffer: Buffer; contentType: string | null }> {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-  try {
-    const res = await fetch(url, {
-      signal: controller.signal,
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        Accept: "application/pdf,text/html,*/*",
-      },
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status} ao baixar PDF`);
-    return { buffer: Buffer.from(await res.arrayBuffer()), contentType: res.headers.get("content-type") };
-  } finally {
-    clearTimeout(timer);
+  const res = await resilientFetch(url, {
+    retries: 1,
+    timeoutMs: 10_000,
+    backoffMs: 400,
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      Accept: "application/pdf,text/html,*/*",
+    },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} ao baixar PDF`);
+  const buffer = Buffer.from(await res.arrayBuffer());
+  // Guard de TAMANHO antes de acumular: o teto de 50 MB do `enqueuePdfBuffer` só é checado depois
+  // que o arquivo já está inteiro em memória, e a colheita segura todos os buffers vivos até a
+  // gravação terminar. Cortar aqui evita levar a função por OOM por causa de um PDF gigante.
+  if (buffer.length > MAX_BYTES_POR_DOCUMENTO) {
+    throw new Error(`Documento acima de ${Math.round(MAX_BYTES_POR_DOCUMENTO / 1024 / 1024)} MB — não baixado`);
   }
+  return { buffer, contentType: res.headers.get("content-type") };
 }
 
 /**

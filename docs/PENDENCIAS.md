@@ -884,6 +884,44 @@ tem RDE e ela não aparece na coleta, o filtro de título está descartando.
 **Operação:** chamar autenticado como admin e ler `degrau_que_para` + `diagnostico`. Se for o degrau
 1, a resposta é operacional, não de código.
 
+## Fase 8 — "nada fica para trás" (26/08/2026)
+
+Origem: a pergunta "a coleta puxa tudo, sem deixar documento para trás?". A resposta era NÃO, por
+três caminhos — e a análise de risco (4 agentes) desenterrou um quarto, maior que os três.
+
+1. **Um VOTO perdido por reunião.** Medido: a 1.036ª RD da ANTT publica 7 PDFs (pauta, ata e 5
+   votos); `maxFilhos = 6` cortava sempre o sétimo, e como pauta e ata vêm primeiro no DOM a perda
+   caía sempre sobre um voto de diretor. Teto agora é 12.
+2. **7 documentos, 1 nome.** As URLs do Liferay terminam em UUID, então todos os documentos de uma
+   reunião caíam no slug do título — `1-036-Reuniao-de-Diretoria.pdf`, sete vezes. Isso quebrava o
+   RESGATE de votos mal classificados da esteira, que casa `voto[ _-]+d[a-z]{1,2}` no filename.
+   Agora: 7 nomes, e os 5 votos voltam a casar.
+3. **Falha de rede virava morte permanente.** E as "3 tentativas" queimavam em segundos na mesma
+   rodada. Agora o item é arquivado COM PRAZO (1, 3, 7, 14 dias) e volta sozinho.
+4. **Arquivados invisíveis.** A rota sempre os devolveu; a tela filtrava só `novo`.
+
+### Migrations desta fase (SQL Editor)
+
+- **`20260826140000_monitoramento_itens_retry.sql`** — colunas `tentativas` e
+  `proxima_tentativa_em` + índice + **backfill do passivo** (sem ele o conserto nasceria sem efeito
+  sobre os itens que já estão arquivados). Pode ser aplicada antes ou depois do deploy; sem ela o
+  retry simplesmente não acontece.
+
+### ⚠️ Riscos que ficaram registrados, não corrigidos
+
+- **`semantic_duplicate_key` colide entre os votos da MESMA reunião.** `buildSemanticDuplicateKey`
+  monta `[agencia, tipo, numero]` e, sem `numero_deliberacao`, cai para `numero_reuniao`: os 5
+  votos da 1.036ª têm a chave IDÊNTICA `antt|voto individual|1036`. Com o teto de filhos subindo,
+  mais votos da mesma reunião chegam juntos e a dedup semântica pode tratá-los como duplicata um
+  do outro. O dado para desempatar (a sigla do voto, ex.: `DFQ-043`) já é extraído — só não entra
+  na chave. **É o próximo conserto da esteira.**
+- **O disjuntor é cego para falha de enfileiramento.** `contarPassos` só conta erro quando a etapa
+  tem a chave `erro`, e `etapas.extracao` é montada sem canal de erro. Um retry que falha
+  sistematicamente não abre o disjuntor nem aparece.
+- **`.limit(60)` é aplicado pelo Postgres antes de qualquer filtro em JS.** Vale para qualquer
+  filtro de elegibilidade futuro: se não virar cláusula WHERE, os inelegíveis continuam ocupando
+  as vagas — o modo de falha documentado em "208 detectados / 0 na fila".
+
 ## Fase 7 — dívidas registradas (26/08/2026)
 
 ### ⚠️ DÍVIDA DE MODELAGEM: `hash_item` embute o `tipo` (a causa, não o sintoma)

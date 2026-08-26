@@ -202,6 +202,8 @@ export interface UploadJobResult {
     | "duplicate"
     | "existing_pending"
     | "existing_failed"
+    /** Documento já arquivado por decisão (pauta/apoio/duplicata/ilegível) — NÃO é desarquivado. */
+    | "existing_archived"
     | "existing_review"
     | "duplicate_confirmed"
     | "rejected"
