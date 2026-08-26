@@ -2,6 +2,7 @@ import { fetchMonitoringSite, tipoPrioridade } from "@/lib/server/monitoring";
 import { resilientFetch, drainFetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes } from "@/lib/server/headless";
 import { budgetRetries, hasBudget } from "@/lib/server/time-budget";
+import { RESERVA } from "@/lib/server/esteira-reservas";
 
 const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
@@ -120,7 +121,7 @@ export async function processMonitoringSite(
     );
 
     for (const item of itensOrdenados) {
-      if (!hasBudget(options.deadlineAt, 25_000)) {
+      if (!hasBudget(options.deadlineAt, RESERVA.coleta)) {
         truncatedItems = true;
         break;
       }

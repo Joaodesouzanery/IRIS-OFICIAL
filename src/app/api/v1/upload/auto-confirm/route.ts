@@ -15,6 +15,7 @@ import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { canAutoConfirm, buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
+import { RESERVA } from "@/lib/server/esteira-reservas";
 import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
@@ -76,7 +77,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
 
   const maxRodadas = loop ? 30 : 1;
   while (rodadas < maxRodadas) {
-    if (loop && !hasBudget(deadlineAt, 15_000)) { restantes = true; break; }
+    if (loop && !hasBudget(deadlineAt, RESERVA.autoConfirm)) { restantes = true; break; }
 
     let query = db
       .from("documentos_regulatorios")

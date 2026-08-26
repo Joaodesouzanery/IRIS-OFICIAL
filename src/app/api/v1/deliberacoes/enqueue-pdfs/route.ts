@@ -14,6 +14,7 @@ import { waitUntil } from "@vercel/functions";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
+import { RESERVA } from "@/lib/server/esteira-reservas";
 import { resolvePdfLinksFromHtml, sniffIsHtml, sniffIsPdf } from "@/lib/server/pdf-link-resolver";
 import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
 
@@ -105,7 +106,7 @@ export async function POST(req: NextRequest) {
   let semPdf = 0;
 
   for (const item of candidates) {
-    if (!hasBudget(deadlineAt, 22_000)) {
+    if (!hasBudget(deadlineAt, RESERVA.enqueue)) {
       restantes++;
       continue;
     }
@@ -123,7 +124,7 @@ export async function POST(req: NextRequest) {
         const maxFilhos = item.tipo === "reuniao" ? 6 : 1; // página de reunião tem N docs
         for (const link of links) {
           if (pdfs.length >= maxFilhos) break;
-          if (!hasBudget(deadlineAt, 22_000)) { restantes++; break; }
+          if (!hasBudget(deadlineAt, RESERVA.enqueue)) { restantes++; break; }
           try {
             const filho = await fetchUrl(link);
             if (sniffIsPdf(filho.contentType, filho.buffer)) pdfs.push({ url: link, buffer: filho.buffer });

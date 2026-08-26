@@ -18,6 +18,7 @@ import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { isHardFailSemSinal } from "@/lib/server/consistency-checks";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
+import { RESERVA } from "@/lib/server/esteira-reservas";
 import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
@@ -154,7 +155,7 @@ export async function POST(req: NextRequest) {
   const agora = new Date().toISOString();
 
   for (let i = 0; i < aprovaveis.length; i += 100) {
-    if (!hasBudget(deadlineAt, 15_000)) { restantes = true; break; }
+    if (!hasBudget(deadlineAt, RESERVA.confirmLote)) { restantes = true; break; }
     const sublote = aprovaveis.slice(i, i + 100);
     const deliberacoes = sublote.map((doc) => {
       const delib = buildConfirmDelibFromDoc(doc);

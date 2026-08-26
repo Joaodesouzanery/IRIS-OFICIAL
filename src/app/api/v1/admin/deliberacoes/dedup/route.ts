@@ -11,6 +11,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdmin } from "@/lib/server/request-guards";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
+import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -35,6 +36,11 @@ export async function POST(req: NextRequest) {
   }
 
   const dryRun = req.nextUrl.searchParams.get("dry_run") !== "0";
+  // Fase 7 — esta rota nao tinha orcamento NENHUM: lia ate 20.000 deliberacoes e fundia
+  // grupo a grupo ate acabar. Chamada pela pipeline no fim da rodada, era candidata a
+  // levar a FUNCAO INTEIRA no SIGKILL de 60s — matando tambem o que viesse depois dela.
+  const deadlineAt = Date.now() + budgetFromRequest(req);
+  let parcial = false;
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
@@ -69,6 +75,10 @@ export async function POST(req: NextRequest) {
   let removidasTotal = 0;
 
   for (const [chave, rows] of duplicados) {
+    // Para ENTRE grupos: a fusao de um grupo (migrar votos, repontar filhos, apagar copia)
+    // precisa terminar inteira. O que nao couber fica para a proxima rodada — a rota e
+    // idempotente e o proximo dedup reencontra o mesmo par.
+    if (!hasBudget(deadlineAt, 4_000)) { parcial = true; break; }
     const ordenadas = [...rows].sort((a, b) => a.created_at.localeCompare(b.created_at));
     const mantida = ordenadas[0];
     const copias = ordenadas.slice(1);
@@ -107,6 +117,8 @@ export async function POST(req: NextRequest) {
 
   return NextResponse.json({
     dry_run: dryRun,
+    parcial,
+    ...(parcial ? { restantes: true } : {}),
     grupos_duplicados: duplicados.length,
     deliberacoes_em_dobro: duplicados.reduce((sum, [, rows]) => sum + rows.length - 1, 0),
     removidas: dryRun ? 0 : removidasTotal,

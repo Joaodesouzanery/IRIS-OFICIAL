@@ -20,7 +20,7 @@ import { requireAdmin } from "@/lib/server/request-guards";
 import { findBestMatch, tokenSortRatio, isStrictAbbreviation, isStrictPersonName } from "@/lib/server/name-matcher";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { mergeDiretores } from "@/lib/server/diretor-merge";
-import { hasBudget, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
+import { hasBudget, HOBBY_BUDGET_MS, budgetFromRequest } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 // Passo 4 do "Rodar tudo": trabalho pesado (aprovação em cascata + votos retroativos +
@@ -106,7 +106,10 @@ export async function POST(req: NextRequest) {
 
   // Orçamento: para BETWEEN grupos, nunca no meio de uma aprovação (que é atômica por
   // grupo). O que não couber fica pendente → o próximo recompute continua (idempotente).
-  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
+  // Fase 7 — honra o `budget_ms` do orquestrador. Com HOBBY_BUDGET_MS fixo, esta sub-rota
+  // achava que tinha 50s inteiros mesmo quando a pipeline já gastara 40 — e seguia trabalhando
+  // até o SIGKILL de 60s levar a FUNÇÃO INTEIRA, sem gravar sucesso nem erro.
+  const deadlineAt = Date.now() + budgetFromRequest(req);
   let parcial = false;
 
   for (const [, grupo] of grupos) {
