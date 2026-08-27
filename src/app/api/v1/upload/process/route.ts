@@ -27,11 +27,11 @@ async function process(req: NextRequest) {
   // Orçamento (QA ago/2026): sem deadline, 20 PDFs × até 65s (pdf-parse+OCR) estourava o
   // SIGKILL de 60s do Hobby — a rota morria sem responder e a esteira "concluía" com 0.
   // budget_ms opcional (a pipeline passa fatias menores); default = orçamento Hobby.
-  const { HOBBY_BUDGET_MS } = await import("@/lib/server/time-budget");
-  const budgetParam = Number(req.nextUrl.searchParams.get("budget_ms"));
-  const budgetMs = Number.isFinite(budgetParam) && budgetParam > 0
-    ? Math.min(budgetParam, HOBBY_BUDGET_MS)
-    : HOBBY_BUDGET_MS;
+  const { budgetFromRequest } = await import("@/lib/server/time-budget");
+  // Fase 10 — era esta mesma conta, copiada palavra por palavra do `time-budget`. Duas cópias da
+  // regra de orçamento são duas chances de divergir; e a varredura que garante que NENHUMA rota do
+  // orquestrador ignore a fatia só é possível com uma fonte única.
+  const budgetMs = budgetFromRequest(req);
   // `apenas_reaper=1` roda só os três reapers de documento preso e volta. A esteira usa este modo
   // num passo BARATO e cedo na rodada: reparar custa ~2s por documento, extrair custa até 20s, e
   // enquanto os dois moraram no mesmo passo os presos herdaram o preço da extração — 62 deles

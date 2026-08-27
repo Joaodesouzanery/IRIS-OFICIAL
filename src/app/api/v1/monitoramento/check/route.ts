@@ -4,7 +4,7 @@ import { fetchMonitoringSite } from "@/lib/server/monitoring";
 import { processMonitoringSite } from "@/lib/server/monitoring-runner";
 import type { MonitoramentoCheckResponse } from "@/types";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
+import { HOBBY_BUDGET_MS, budgetFromRequest } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 
@@ -109,10 +109,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   // o progresso — os sites restantes ficam para a próxima rodada (e vão à frente pela ordem).
   // `budget_ms` opcional (capado no Hobby): a pipeline zero-toque passa uma FATIA menor
   // para a coleta não consumir o orçamento da extração (QA ago/2026).
-  const budgetParam = Number(req.nextUrl.searchParams.get("budget_ms"));
-  const budgetMs = Number.isFinite(budgetParam) && budgetParam > 0
-    ? Math.min(budgetParam, HOBBY_BUDGET_MS)
-    : HOBBY_BUDGET_MS;
+  // Fase 10 — era esta mesma conta, copiada palavra por palavra do `time-budget`. Duas cópias da
+  // regra de orçamento são duas chances de divergir; e a varredura que garante que NENHUMA rota do
+  // orquestrador ignore a fatia só é possível com uma fonte única.
+  const budgetMs = budgetFromRequest(req);
   const deadline = Date.now() + budgetMs;
   let pulados = 0;
 

@@ -263,6 +263,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         resolvidos_por_margem: r.body?.resolvidos_por_margem ?? 0,
         resolvidos_sem_margem: r.body?.resolvidos_sem_margem ?? 0,
       });
+      if (r.body?.restantes || rec.body?.restantes) restantes = true;
     } catch {
       etapas.diretores = { erro: "candidatos falharam nesta rodada" };
     }
@@ -517,6 +518,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         const n = [b.atualizados, b.alterados, b.updated, b.deliberacoes_atualizadas, b.votos_alterados]
           .find((v: unknown) => typeof v === "number");
         etapas[nome] = anotar(r, nome, { ok: true, ...(typeof n === "number" ? { atualizados: n } : {}) });
+        // As quatro derivadas passaram a honrar `budget_ms` e podem parar no meio: sem isto a
+        // rodada "concluiria" com métrica pela metade.
+        if (r.body?.restantes) restantes = true;
       } catch {
         etapas[nome] = { erro: `${nome} falhou nesta rodada` };
       }

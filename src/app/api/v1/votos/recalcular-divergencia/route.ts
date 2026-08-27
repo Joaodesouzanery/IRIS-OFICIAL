@@ -10,6 +10,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
+import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { repartirPorDivergencia } from "@/lib/server/vote-inference";
 import { parseIntParam } from "@/lib/server/http-params";
@@ -23,6 +24,15 @@ export async function POST(req: NextRequest) {
 
   const apply = req.nextUrl.searchParams.get("apply") === "1";
   const offset = parseIntParam(req.nextUrl.searchParams.get("offset"), 0, 0);
+  // Fase 10 — esta rota IGNORAVA o `budget_ms` que o orquestrador manda na URL. A esteira
+  // encadeia ~12 sub-rotas na MESMA invocação repartindo um orçamento único; quem não lê a
+  // própria fatia trabalha até acabar e a rodada estoura o relógio — foi o "passou de 90s sem
+  // resposta" que a tela mostrou. Para no saldo e DIZ que ficou parcial, para o orquestrador
+  // voltar na rodada seguinte.
+  const deadlineAt = Date.now() + budgetFromRequest(req);
+  /** Uma deliberação: ler votos + até 3 UPDATEs em lotes de 100. */
+  const RESERVA_POR_DELIBERACAO_MS = 700;
+
   const limit = parseIntParam(req.nextUrl.searchParams.get("limit"), 300, 1, 500);
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -50,7 +60,9 @@ export async function POST(req: NextRequest) {
   const idsParaDivergente: string[] = [];
   const idsParaNaoDivergente: string[] = [];
 
+  let parcial = false;
   for (const d of (delibs ?? []) as any[]) {
+    if (!hasBudget(deadlineAt, RESERVA_POR_DELIBERACAO_MS)) { parcial = true; break; }
     const votos = (d.votos ?? []) as Array<{ id: string; tipo_voto: string; is_divergente: boolean; is_nominal: boolean }>;
     if (votos.length === 0) continue;
     if (votos.every((v) => !v.is_nominal)) deliberacoesSoInferidas++;
@@ -98,6 +110,8 @@ export async function POST(req: NextRequest) {
 
   const processados = (delibs ?? []).length;
   return NextResponse.json({
+    // Parou no saldo: o orquestrador só volta na rodada seguinte se souber que sobrou.
+    ...(parcial ? { parcial: true, restantes: true } : {}),
     modo: apply ? "aplicado" : "dry-run",
     divergencia_corrigida: divergenciaCorrigida,
     deliberacoes_afetadas: deliberacoesAfetadas,

@@ -475,13 +475,19 @@ export async function POST(req: NextRequest) {
   }
 
   // Processa em background (ou aguarda quando solicitado por cron/teste).
+  //
+  // ⚠️ Fase 10 — o `waitUntil` rodava com `deadlineAt` UNDEFINED: até `MAX_PER_RUN` PDFs eram
+  // extraídos (pdf-parse é CPU síncrono, às vezes OCR) na MESMA invocação, fora de QUALQUER
+  // orçamento. O `deadlineAt` desta rota já existia e não era repassado — era o candidato
+  // mecânico mais forte para a rodada que "passou de 90s sem resposta". O background agora
+  // respeita o mesmo relógio de quem o disparou.
   let processed = 0;
   if (jobsToProcess.length > 0) {
     if (body.process) {
-      await processQueue(jobsToProcess.slice(0, MAX_PER_RUN), 2);
+      await processQueue(jobsToProcess.slice(0, MAX_PER_RUN), 2, deadlineAt);
       processed = jobsToProcess.length;
     } else {
-      waitUntil(processQueue(jobsToProcess.slice(0, MAX_PER_RUN), 2));
+      waitUntil(processQueue(jobsToProcess.slice(0, MAX_PER_RUN), 2, deadlineAt));
     }
   }
 

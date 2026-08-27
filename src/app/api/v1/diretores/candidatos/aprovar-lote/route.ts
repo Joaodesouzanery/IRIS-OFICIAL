@@ -16,6 +16,7 @@ import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import { getActiveDiretoresForVote } from "@/lib/server/vote-inference";
+import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -42,6 +43,14 @@ export async function POST(req: NextRequest) {
     ids?: string[];
   };
   const minConfidence = Math.min(0.94, Math.max(0.6, Number(body.min_confidence ?? DEFAULT_MIN_CONFIDENCE)));
+  // Fase 10 — esta rota IGNORAVA o `budget_ms` que o orquestrador manda na URL. A esteira
+  // encadeia ~12 sub-rotas na MESMA invocação repartindo um orçamento único; quem não lê a
+  // própria fatia trabalha até acabar e a rodada estoura o relógio — foi o "passou de 90s
+  // sem resposta" que a tela mostrou. Para no saldo e DIZ que ficou parcial.
+  const deadlineAt = Date.now() + budgetFromRequest(req);
+  /** Um candidato: resolução de nome + até 3 escritas. */
+  const RESERVA_POR_CANDIDATO_MS = 700;
+
   const limit = Math.min(100, Math.max(1, Number(body.limit ?? 50)));
   const incluirNovos = body.incluir_novos === true;
 
@@ -94,7 +103,9 @@ export async function POST(req: NextRequest) {
   const aprovados: Array<{ id: string; nome: string; diretor_id: string }> = [];
   const pulados: Array<{ id: string; nome: string; reason: string }> = [];
 
+  let parcial = false;
   for (const candidato of candidatos ?? []) {
+    if (!hasBudget(deadlineAt, RESERVA_POR_CANDIDATO_MS)) { parcial = true; break; }
     if (!candidato.diretor_id) {
       // QA ago/2026: candidato NOVO com confidence alta caía aqui e o aprovarCandidato criava
       // diretor SEM os gates (nome estrito, agência colegiada, ≥2 docs) — origem do lixo
@@ -142,6 +153,7 @@ export async function POST(req: NextRequest) {
     if (body.agencia_id) qFaixa = qFaixa.eq("agencia_id", body.agencia_id);
     const { data: faixa } = await qFaixa;
     for (const candidato of (faixa ?? []) as any[]) {
+      if (!hasBudget(deadlineAt, RESERVA_POR_CANDIDATO_MS)) { parcial = true; break; }
       if (!candidato.agencia_id) continue;
       // Prosa não vira variante de grafia do diretor real (QA ago/2026).
       if (!isStrictPersonName(String(candidato.nome_detectado ?? ""))) {
@@ -276,6 +288,8 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({
+    // Parou no saldo: o orquestrador só volta na rodada seguinte se souber que sobrou.
+    ...(parcial ? { parcial: true, restantes: true } : {}),
     min_confidence: minConfidence,
     analisados: (candidatos ?? []).length + candidatosNovos.length,
     aprovados: aprovados.length,
