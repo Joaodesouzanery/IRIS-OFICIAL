@@ -24,7 +24,16 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isCronRequest, isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, msLeft, HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
-import { RESERVA, gateDoPasso, TETO_ENQUEUE_POR_RODADA } from "@/lib/server/esteira-reservas";
+import {
+  RESERVA,
+  TETO_ENQUEUE_POR_RODADA,
+  ORDEM_DOS_PASSOS,
+  FOLGA_ORQUESTRADOR_MS,
+  fatiaDoPasso,
+  podeRodar,
+  planejarRodada,
+  type PassoEsteira,
+} from "@/lib/server/esteira-reservas";
 import { requeueDocument } from "@/lib/server/upload-queue";
 import {
   buscarRunAtiva,
@@ -87,18 +96,35 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   const etapas: Record<string, StepResult> = {};
   let restantes = false;
 
+  /** Saldo REAL disponível para trabalho: o round-trip de auth e o flush acontecem fora dele. */
+  const saldo = () => msLeft(deadlineAt) - FOLGA_ORQUESTRADOR_MS;
+
+  /** Passos que pediram fatia e não couberam — a rodada não terminou, só não coube tudo nela. */
+  let passosPulados = 0;
+
   // Handler sintético: chama a rota real com o MESMO Bearer (padrão auto-confirm→confirm).
   // QA ago/2026: cada sub-rota tinha orçamento PRÓPRIO de 50s — somados, estouravam o
-  // SIGKILL de 60s do Hobby. Agora toda chamada leva `budget_ms` = fatia do saldo REAL
-  // desta função (menos 4s de flush), e as sub-rotas respeitam (budgetFromRequest).
+  // SIGKILL de 60s do Hobby. Agora toda chamada leva `budget_ms` = fatia do saldo REAL.
+  //
+  // Fase 10 — a fatia deixa de ser "tudo o que sobrou". `maxSliceMs` era OPCIONAL e 7 das 11
+  // chamadas o omitiam, então os passos da cabeça recebiam o orçamento inteiro e a cauda
+  // (extração, derivadas) nunca alcançava o próprio portão: 26 rodadas, 0 PDF extraído, 0 métrica.
+  // Agora o passo se IDENTIFICA e `fatiaDoPasso` decide — limitada pelo teto dele e pelo que a
+  // cauda precisa depois.
   async function call(
     handler: (r: NextRequest) => Promise<NextResponse | Response>,
     path: string,
+    passo: PassoEsteira,
     body?: unknown,
-    maxSliceMs?: number,
   ): Promise<any> {
-    const saldo = Math.max(3_000, msLeft(deadlineAt) - 4_000);
-    const slice = Math.round(maxSliceMs !== undefined ? Math.min(saldo, maxSliceMs) : saldo);
+    const slice = Math.round(fatiaDoPasso(passo, saldo(), protecao[passo] ?? 0));
+    // Chamar com menos que a reserva é o bug da Fase 7: o passo gasta o round-trip de auth e
+    // devolve zero. E `budget_ms=0` é PIOR que não chamar — `budgetFromRequest` trata 0 como
+    // ausente e a sub-rota abre um orçamento NOVO de 50s, fora de qualquer controle.
+    if (slice < RESERVA[passo]) {
+      passosPulados++;
+      return null;
+    }
     const url = new URL(path, req.url);
     url.searchParams.set("budget_ms", String(slice));
     const synthetic = new NextRequest(url, {
@@ -130,6 +156,19 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   }
   let execucao = ativa ?? (await iniciarRun(db, origem));
 
+  // ═══ Fase 10 — PLANEJAR a rodada em vez de deixá-la ser devorada pela cabeça ══
+  // A soma das reservas dos doze passos é ~128s contra 50s de orçamento: uma rodada nunca coube
+  // inteira. O que faltava não era teto, era ESCOLHA — sem ela, quem vinha primeiro levava tudo e
+  // a cauda (extração, derivadas) nunca alcançava o próprio portão: 26 rodadas, 0 PDF extraído,
+  // 0 métrica, 62 documentos presos. O plano escolhe quem tenta esta rodada e quanto pode gastar,
+  // girando a prioridade com o número da rodada para que nenhum passo fique de fora sempre.
+  // Sem a migration de `esteira_runs`, `execucao` é null e a rodada 0 é sempre planejada — ainda
+  // correto, só sem o giro.
+  const { passos: planoDaRodada, protecao } = planejarRodada(execucao?.rodadas ?? 0, HOBBY_BUDGET_MS);
+  /** O passo está no plano E tem fatia para uma unidade de trabalho? */
+  const cabe = (passo: PassoEsteira) =>
+    planoDaRodada.has(passo) && podeRodar(passo, saldo(), protecao[passo] ?? 0);
+
   // ═══ Fase 7 — A ORDEM DA RODADA MUDOU: APROVAR ANTES DE INGERIR ═══════════════
   //
   // A soma das reservas de todos os passos é ~140s contra um orçamento REAL de 50s: uma rodada
@@ -145,19 +184,20 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // barata e a ingestão fica com o orçamento quase inteiro — auto-balanceado, sem modo explícito.
   // Todos os passos são idempotentes, então aprovar o que a rodada ANTERIOR extraiu é correto.
   //
-  // E os gates deixaram de ser literais: vêm de `gateDoPasso()`, a mesma fonte que as sub-rotas
+  // E os gates deixaram de ser literais: vêm de `podeRodar()`, que calcula portão e fatia pela
+  // MESMA função — foi a divergência entre os dois que criou as duas metades do bug.
   // usam como reserva interna. Um teste tabular falha se algum gate ficar abaixo da reserva.
 
   // 1 · Auto-confirm (gate conservador — o caminho de alta confiança primeiro).
-  if (hasBudget(deadlineAt, gateDoPasso("autoConfirm"))) {
-    const r = await call(autoConfirmPOST, "/api/v1/upload/auto-confirm", { limit: 50, loop: true });
+  if (cabe("autoConfirm")) {
+    const r = await call(autoConfirmPOST, "/api/v1/upload/auto-confirm", "autoConfirm", { limit: 50, loop: true });
     etapas.auto_confirm = { confirmados: r?.confirmados_total ?? 0, restantes: r?.restantes ?? false };
     if (r?.restantes) restantes = true;
   } else restantes = true;
 
   // 2 · Confirm-lote zero-toque (camadas + dedup auto-resolvida).
-  if (hasBudget(deadlineAt, gateDoPasso("confirmLote"))) {
-    const r = await call(confirmLotePOST, "/api/v1/upload/confirm-lote", { todos: true });
+  if (cabe("confirmLote")) {
+    const r = await call(confirmLotePOST, "/api/v1/upload/confirm-lote", "confirmLote", { todos: true });
     etapas.aprovacao = {
       materializados: r?.materializados ?? 0,
       ignorados_pauta_apoio: r?.ignorados ?? 0,
@@ -171,10 +211,10 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   } else restantes = true;
 
   // 3 · Candidatos: recompute (auto-aprova ≥0.85 + mescla estritas) e aprovar-lote (0.8 + novos).
-  if (hasBudget(deadlineAt, gateDoPasso("candidatos"))) {
+  if (cabe("candidatos")) {
     try {
-      const rec = await call(recomputePOST, "/api/v1/admin/diretores/candidatos/recompute?dry_run=0", {});
-      const r = await call(aprovarLotePOST, "/api/v1/diretores/candidatos/aprovar-lote", {
+      const rec = await call(recomputePOST, "/api/v1/admin/diretores/candidatos/recompute?dry_run=0", "candidatos", {});
+      const r = await call(aprovarLotePOST, "/api/v1/diretores/candidatos/aprovar-lote", "candidatos", {
         min_confidence: 0.8,
         incluir_novos: true,
       });
@@ -196,9 +236,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
 
   // 4 · Backfill de votos (QA ago/2026): deliberações finais já gravadas sem voto ganham
   // os votos que a evidência persistida sustenta (regras novas de inferência). Idempotente.
-  if (hasBudget(deadlineAt, gateDoPasso("backfillVotos"))) {
+  if (cabe("backfillVotos")) {
     try {
-      const r = await call(materializarPOST, "/api/v1/admin/votos/materializar-faltantes", { dry_run: false });
+      const r = await call(materializarPOST, "/api/v1/admin/votos/materializar-faltantes", "backfillVotos", { dry_run: false });
       etapas.backfill_votos = { deliberacoes: r?.materializaveis ?? 0, votos: r?.votos ?? 0 };
       if (r?.restantes) restantes = true;
     } catch {
@@ -212,9 +252,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // A fatia era de 8s contra uma reserva interna de 25s: a coleta crawleava, gastava os 8s e
   // inseria ZERO itens em TODA rodada — o pior dos três descompassos, porque parecia funcionar
   // (gravava `ultimo_check`, e a tela mostrava "última captura" recente).
-  if (hasBudget(deadlineAt, gateDoPasso("coleta"))) {
+  if (cabe("coleta")) {
     try {
-      const r = await call(checkGET, "/api/v1/monitoramento/check", undefined, RESERVA.coleta);
+      const r = await call(checkGET, "/api/v1/monitoramento/check", "coleta");
       etapas.coleta = { novos_detectados: r?.novos_detectados ?? 0 };
     } catch {
       etapas.coleta = { erro: "coleta falhou nesta rodada" };
@@ -226,7 +266,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // Fase 7: eram até 50 `requeueDocument` em SÉRIE, 3 round-trips cada, SEM nenhuma checagem de
   // saldo — quando tinha alvo, consumia a rodada inteira e todos os passos seguintes falhavam o
   // gate. Agora para graciosamente e reporta o que ficou.
-  if (hasBudget(deadlineAt, gateDoPasso("enqueue"))) {
+  if (cabe("reclassificacao")) {
     try {
       const { data: presos } = await db
         .from("documentos_regulatorios")
@@ -257,7 +297,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   let enfileirados = 0;
   let itensArquivados = 0;
   let tetoAtingido = false;
-  for (let i = 0; i < 10 && hasBudget(deadlineAt, gateDoPasso("enqueue")); i++) {
+  for (let i = 0; i < 10 && cabe("enqueue"); i++) {
     // Teto de VAZÃO por rodada (Fase 7). Com o download em paralelo, o orçamento deixou de ser o
     // estrangulador — sem teto, uma rodada sob cron diário poderia puxar centenas de documentos
     // sem ninguém olhando. O que não couber fica na fila durável e entra na rodada seguinte.
@@ -270,8 +310,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       // verificado só ENTRE chamadas: enquanto um item rendia 1-6 PDFs isso segurava por acaso,
       // mas com o teto de filhos em 12 uma única chamada de 20 itens poderia gravar 240 contra um
       // teto de 60. Agora o limite viaja na unidade que ele limita.
+      "enqueue",
       { limit: Math.min(20, saldoTeto), max_pdfs: saldoTeto },
-      RESERVA.enqueue + 3_000,
     );
     const q = Number(r?.queued ?? 0);
     const s = Number(r?.sem_pdf ?? 0);
@@ -282,14 +322,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     if (q + s === 0) { restantes = true; break; }      // só erros transitórios — próxima rodada
   }
   let processados = 0;
-  for (let i = 0; i < 10 && hasBudget(deadlineAt, gateDoPasso("extracao")); i++) {
-    const r = await call(processPOST, "/api/v1/upload/process?limit=20", {});
+  for (let i = 0; i < 10 && cabe("extracao"); i++) {
+    const r = await call(processPOST, "/api/v1/upload/process?limit=20", "extracao", {});
     const p = Number(r?.processed ?? 0);
     processados += p;
     if (p === 0) break;
     if (p >= 20) restantes = true; // lote cheio → provavelmente há mais fila
   }
-  if (!hasBudget(deadlineAt, gateDoPasso("extracao"))) restantes = true;
+  if (!cabe("extracao")) restantes = true;
   etapas.extracao = {
     enfileirados,
     processados,
@@ -300,9 +340,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   };
 
   // 8 · Dedup retroativo de deliberações (rede final; funde qualquer par que escapou).
-  if (hasBudget(deadlineAt, gateDoPasso("dedup"))) {
+  if (cabe("dedup")) {
     try {
-      const r = await call(dedupPOST, "/api/v1/admin/deliberacoes/dedup?dry_run=0", {});
+      const r = await call(dedupPOST, "/api/v1/admin/deliberacoes/dedup?dry_run=0", "dedup", {});
       etapas.dedup_final = { fundidas: r?.deliberacoes_em_dobro ?? r?.fundidas ?? 0 };
     } catch {
       etapas.dedup_final = { erro: "dedup falhou nesta rodada" };
@@ -320,9 +360,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     Number((etapas.aprovacao as Record<string, number> | undefined)?.ignorados_pauta_apoio ?? 0) +
     Number((etapas.aprovacao as Record<string, number> | undefined)?.ilegiveis_arquivados ?? 0) +
     Number((etapas.aprovacao as Record<string, number> | undefined)?.sem_agencia_arquivados ?? 0);
-  if (arquivouAgora === 0 && hasBudget(deadlineAt, gateDoPasso("derivada"))) {
+  if (arquivouAgora === 0 && cabe("recuperacao")) {
     try {
-      const r = await call(reprocessIgnoradosPOST, "/api/v1/admin/upload/reprocess-ignorados?dry_run=0", {}, 8_000);
+      const r = await call(reprocessIgnoradosPOST, "/api/v1/admin/upload/reprocess-ignorados?dry_run=0", "recuperacao", {});
       const reenfileirados = Number(r?.reenfileirados ?? r?.requeued ?? 0);
       etapas.recuperacao_ignorados = { reenfileirados };
       if (reenfileirados > 0) restantes = true;
@@ -344,7 +384,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // aqui. `ignored` é uma DECISÃO que o confirm-lote acabou de tomar; desfazê-la na mesma rodada é
   // o moinho. `failed` não é decisão — nada na rodada o produz de propósito. Acoplá-los faria o
   // reprocesso de `failed` ser pulado em toda rodada em que a aprovação arquivasse uma pauta.
-  if (hasBudget(deadlineAt, gateDoPasso("reprocessarFalhados"))) {
+  if (cabe("reprocessarFalhados")) {
     try {
       const { data: falhados } = await db
         .from("documentos_regulatorios")
@@ -400,9 +440,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       ["divergencia_votos", divergenciaPOST, "/api/v1/votos/recalcular-divergencia?apply=1", {}],
     ];
     for (const [nome, handler, path, corpo] of derivadas) {
-      if (!hasBudget(deadlineAt, gateDoPasso("derivada"))) { restantes = true; break; }
+      if (!cabe("derivada")) { restantes = true; break; }
       try {
-        const r = await call(handler, path, corpo, RESERVA.derivada + 2_000);
+        const r = await call(handler, path, "derivada", corpo);
         const n = [r?.atualizados, r?.alterados, r?.updated, r?.deliberacoes_atualizadas, r?.votos_alterados]
           .find((v: unknown) => typeof v === "number");
         etapas[nome] = { ok: true, ...(typeof n === "number" ? { atualizados: n } : {}) };
@@ -411,6 +451,12 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       }
     }
   }
+
+  // Um passo que pediu fatia e não coube não terminou — a rodada seguinte tem de retomá-lo. E o
+  // que ficou FORA do plano desta rodada é, por definição, trabalho para a próxima: sem isto a
+  // esteira "concluiria" com passos que nem foram tentados.
+  if (passosPulados > 0) restantes = true;
+  if (planoDaRodada.size < ORDEM_DOS_PASSOS.length) restantes = true;
 
   // ═══ Registro da rodada + DISJUNTOR ══════════════════════════════════════════
   // Contar erros não basta. Com a vazão do commit 7 e um cron diário, um erro sistemático (um

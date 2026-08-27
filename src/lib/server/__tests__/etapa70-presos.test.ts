@@ -110,10 +110,14 @@ describe("etapa70 · o passo novo para `failed`", () => {
     // `failed` não é.
     // Asserção sobre a CONDIÇÃO do passo, não sobre a prosa: o comentário que explica a decisão
     // cita `arquivouAgora`, e uma busca por texto no bloco casaria com a própria explicação.
-    expect(RUN).toMatch(/if \(hasBudget\(deadlineAt, gateDoPasso\("reprocessarFalhados"\)\)\) \{/);
+    // Fase 10: o portão passou de `hasBudget(deadlineAt, gateDoPasso(x))` para `cabe(x)`, que
+    // exige o passo estar no PLANO da rodada e ter fatia. A propriedade vigiada é a mesma.
+    expect(RUN).toMatch(/if \(cabe\("reprocessarFalhados"\)\) \{/);
     expect(RUN).not.toMatch(/arquivouAgora === 0 &&[\s\S]{0,200}?reprocessarFalhados/);
     // …e o guard continua existindo, para o passo 9, que é onde ele faz sentido.
-    expect(RUN).toMatch(/arquivouAgora === 0 && hasBudget\(deadlineAt, gateDoPasso\("derivada"\)\)/);
+    // O passo 9 também ganhou reserva PRÓPRIA (`recuperacao`): antes usava o gate de `derivada`,
+    // que é outro passo — um descompasso da mesma família dos que a Fase 7 matou.
+    expect(RUN).toMatch(/arquivouAgora === 0 && cabe\("recuperacao"\)/);
   });
 
   it("tem TETO de tentativas — PDF corrompido falha idêntico para sempre", () => {
@@ -124,7 +128,7 @@ describe("etapa70 · o passo novo para `failed`", () => {
   it("tem reserva própria, e o gate respeita a regra da Fase 7", () => {
     expect(RESERVA.reprocessarFalhados).toBeGreaterThan(0);
     expect(gateDoPasso("reprocessarFalhados")).toBeGreaterThanOrEqual(RESERVA.reprocessarFalhados);
-    expect(RUN).toMatch(/gateDoPasso\("reprocessarFalhados"\)/);
+    expect(RUN).toMatch(/cabe\("reprocessarFalhados"\)/);
   });
 
   it("reporta o que fez, incluindo as desistências", () => {

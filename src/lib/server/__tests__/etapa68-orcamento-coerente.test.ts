@@ -19,7 +19,15 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "fs";
 import { join } from "path";
-import { RESERVA, gateDoPasso, FOLGA_ORQUESTRADOR_MS, type PassoEsteira } from "@/lib/server/esteira-reservas";
+import {
+  RESERVA,
+  TETO_FATIA,
+  fatiaDoPasso,
+  podeRodar,
+  gateDoPasso,
+  FOLGA_ORQUESTRADOR_MS,
+  type PassoEsteira,
+} from "@/lib/server/esteira-reservas";
 import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 
 const RAIZ = join(__dirname, "../../../..");
@@ -56,8 +64,11 @@ describe("etapa68 · o gate NUNCA pode ser menor que a reserva (a classe do bug)
 });
 
 describe("etapa68 · o orquestrador não usa mais literais de tempo", () => {
-  it("os gates vêm de gateDoPasso(), a mesma fonte das sub-rotas", () => {
-    expect(PIPELINE).toContain("gateDoPasso");
+  it("os gates vêm do PLANO da rodada, a mesma fonte que calcula a fatia", () => {
+    // Antes o portão (`gateDoPasso`) e a fatia (`maxSliceMs`, opcional) eram decididos
+    // separadamente — e foi a divergência entre os dois que produziu as duas metades do bug.
+    expect(PIPELINE).toContain("podeRodar");
+    expect(PIPELINE).toContain("planejarRodada");
     expect(PIPELINE).toContain("@/lib/server/esteira-reservas");
   });
 
@@ -69,7 +80,11 @@ describe("etapa68 · o orquestrador não usa mais literais de tempo", () => {
   });
 
   it("a coleta recebe uma fatia do tamanho da reserva dela", () => {
-    expect(PIPELINE).toMatch(/monitoramento\/check",\s*undefined,\s*RESERVA\.coleta/);
+    // Fase 10 — a fatia deixou de ser passada à mão em cada sítio: o passo se identifica e
+    // `fatiaDoPasso` a calcula. Para a coleta o número é o mesmo (TETO_FATIA.coleta === a reserva),
+    // e agora ele não pode divergir do portão, porque os dois saem da mesma função.
+    expect(PIPELINE).toMatch(/monitoramento\/check",\s*"coleta"/);
+    expect(TETO_FATIA.coleta).toBe(RESERVA.coleta);
   });
 });
 
@@ -98,7 +113,7 @@ describe("etapa68 · APROVAR antes de INGERIR", () => {
 describe("etapa68 · fim do ping-pong aprovar↔desarquivar", () => {
   it("a recuperação de ignorados não roda na rodada que acabou de arquivar", () => {
     expect(PIPELINE).toMatch(/const arquivouAgora\s*=/);
-    expect(PIPELINE).toMatch(/arquivouAgora === 0 && hasBudget/);
+    expect(PIPELINE).toMatch(/arquivouAgora === 0 && cabe\("recuperacao"\)/);
   });
 
   it("quando adia, ela DIZ que adiou — não some em silêncio", () => {

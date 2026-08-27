@@ -51,6 +51,14 @@ export const RESERVA = {
   derivada: 6_000,
   /** Reprocesso de documentos `failed` (extração que quebrou) — Fase 9. */
   reprocessarFalhados: 6_000,
+  /**
+   * Requeue de UM documento mal classificado: 3 round-trips (Fase 10).
+   * Antes este passo exigia o gate de `enqueue` — 26s para um trabalho de 3s, o que o fazia ser
+   * pulado em toda rodada apertada sem que ele tivesse qualquer chance de rodar.
+   */
+  reclassificacao: 4_000,
+  /** Recuperação de ignorados: um lote. Antes usava o gate de `derivada`, que é outro passo. */
+  recuperacao: 6_000,
 } as const;
 
 export type PassoEsteira = keyof typeof RESERVA;
@@ -69,6 +77,130 @@ export const FOLGA_ORQUESTRADOR_MS = 4_000;
  */
 export function gateDoPasso(passo: PassoEsteira): number {
   return RESERVA[passo] + FOLGA_ORQUESTRADOR_MS;
+}
+
+/**
+ * TETO de fatia por passo: o MÁXIMO que um passo pode consumir numa rodada.
+ *
+ * ═══ O bug que originou este bloco (Fase 10) ═══
+ *
+ * A Fase 7 matou metade da classe: nenhum passo pode receber fatia MENOR que sua reserva. Faltava
+ * a outra metade — **nenhum passo pode receber fatia SEM TETO**. `call()` calculava
+ * `slice = msLeft − 4s` e `maxSliceMs` era OPCIONAL: 7 das 11 chamadas o omitiam, então os passos
+ * da cabeça recebiam o SALDO INTEIRO da rodada e a cauda (extração, derivadas) nunca alcançava o
+ * próprio portão. Produção mediu: **26 rodadas · 0 PDF extraído · 0 métrica**, com os 62
+ * documentos presos em `queued` intactos — porque os três reapers moram DENTRO da extração.
+ *
+ * O teto é de duas unidades de trabalho: o bastante para o passo progredir de verdade numa
+ * rodada, pouco o bastante para ele não ser o único a progredir.
+ */
+export const TETO_FATIA: Record<PassoEsteira, number> = {
+  coleta: RESERVA.coleta,               // um crawl já é a unidade inteira
+  enqueue: RESERVA.enqueue + 3_000,     // 1 download + folga de gravação
+  extracao: RESERVA.extracao + 10_000,  // cabe mais de um documento quando sobra
+  autoConfirm: RESERVA.autoConfirm * 2,
+  confirmLote: RESERVA.confirmLote * 2,
+  candidatos: RESERVA.candidatos * 2,
+  backfillVotos: RESERVA.backfillVotos * 2,
+  dedup: RESERVA.dedup * 2,
+  derivada: RESERVA.derivada + 2_000,
+  reprocessarFalhados: RESERVA.reprocessarFalhados + 2_000,
+  reclassificacao: RESERVA.reclassificacao * 2,
+  recuperacao: RESERVA.recuperacao + 2_000,
+};
+
+/**
+ * A ORDEM em que os passos disputam o orçamento da rodada — a mesma do orquestrador.
+ * Drenar antes de ingerir; a cauda por último porque é ela que consolida.
+ */
+export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
+  "autoConfirm", "confirmLote", "candidatos", "backfillVotos",
+  "coleta", "reclassificacao", "enqueue",
+  "extracao", "dedup", "recuperacao", "reprocessarFalhados", "derivada",
+] as const;
+
+/**
+ * A CAUDA: os passos pelos quais a rodada existe.
+ *
+ * `extracao` materializa documento novo (e é onde moram os três reapers que soltam os presos);
+ * `derivada` propaga o resultado para Empresas, Qualidade, Mandatos e divergência. Sem eles a
+ * rodada gasta tempo e não muda nada que alguém veja.
+ */
+export const PASSOS_CAUDA: readonly PassoEsteira[] = ["extracao", "derivada"] as const;
+
+/**
+ * PLANEJAR a rodada: quais passos ela vai TENTAR, e quanto cada um pode gastar.
+ *
+ * ═══ Por que planejar, e não só limitar ═══
+ *
+ * A soma das reservas dos doze passos é ~128s contra um orçamento de 50s. **Nenhum teto de fatia
+ * faz caber** — no máximo reduz o desperdício. E a primeira tentativa de conserto (reservar a
+ * cauda e deixar a cabeça dividir o resto) INVERTE o bug: simulando com os números reais, o
+ * `auto-confirm` toma os 24s que sobram e o `confirm-lote` — que é quem materializa — nunca roda.
+ * Trocar a inanição da cauda pela inanição da cabeça não é conserto.
+ *
+ * O que resolve é aceitar que uma rodada não faz tudo, e garantir que ninguém fique de fora
+ * SEMPRE:
+ *  · a CAUDA entra em toda rodada (é o mínimo para a rodada significar alguma coisa);
+ *  · a CABEÇA gira — o ponto de partida anda com o número da rodada, então em rodadas
+ *    consecutivas cada passo é o primeiro a escolher, e nenhum é eternamente o último.
+ *
+ * A `protecao` devolvida é o que cada passo NÃO pode tocar: a soma das reservas dos passos
+ * planejados DEPOIS dele. É isso que impede o primeiro escolhido de comer os seguintes.
+ */
+export function planejarRodada(
+  rodada: number,
+  orcamentoMs: number,
+): { passos: ReadonlySet<PassoEsteira>; protecao: Readonly<Record<string, number>> } {
+  const cabeca = ORDEM_DOS_PASSOS.filter((p) => !PASSOS_CAUDA.includes(p));
+  // Giro determinístico: rodada N começa a oferecer a partir do N-ésimo passo da cabeça.
+  const inicio = cabeca.length > 0 ? ((rodada % cabeca.length) + cabeca.length) % cabeca.length : 0;
+  const girada = [...cabeca.slice(inicio), ...cabeca.slice(0, inicio)];
+
+  // ⚠️ A cauda NÃO pode ser semeada em toda rodada. Simulado com os números reais: num orçamento
+  // de 50s a cauda custa 26s, e `coleta` (reserva de 25s) então nunca caberia — a esteira drenaria
+  // o que já tem e jamais ingeriria nada novo. Trocar a inanição da cauda pela da ingestão seria o
+  // mesmo erro de novo. Por isso o privilégio ALTERNA: em rodadas pares a cauda escolhe primeiro;
+  // em ímpares ela disputa na vez dela, e a cabeça cara (coleta, enfileiramento) alcança o próprio
+  // portão. A cauda segue rodando na maioria das rodadas, e nenhum passo fica de fora sempre.
+  const semeiaCauda = rodada % 2 === 0;
+  const ofertados: PassoEsteira[] = semeiaCauda
+    ? [...PASSOS_CAUDA, ...girada]
+    : [...girada, ...PASSOS_CAUDA];
+
+  const escolhidos = new Set<PassoEsteira>();
+  let soma = 0;
+  for (const p of ofertados) {
+    if (soma + RESERVA[p] > orcamentoMs) continue;
+    escolhidos.add(p);
+    soma += RESERVA[p];
+  }
+
+  // A proteção segue a ordem REAL de execução, não a ordem do giro.
+  const protecao: Record<string, number> = {};
+  const naOrdem = ORDEM_DOS_PASSOS.filter((p) => escolhidos.has(p));
+  for (let i = 0; i < naOrdem.length; i++) {
+    protecao[naOrdem[i]] = naOrdem.slice(i + 1).reduce((acc, p) => acc + RESERVA[p], 0);
+  }
+  return { passos: escolhidos, protecao };
+}
+
+/**
+ * A fatia que um passo recebe: limitada pelo teto dele E pelo que os passos seguintes do PLANO
+ * ainda precisam. Devolve 0 quando não sobra — e aí o passo não deve rodar (ver `podeRodar`).
+ */
+export function fatiaDoPasso(passo: PassoEsteira, saldoMs: number, protecaoMs = 0): number {
+  return Math.max(0, Math.min(TETO_FATIA[passo], saldoMs - protecaoMs));
+}
+
+/**
+ * O passo tem fatia para UMA unidade de trabalho útil?
+ *
+ * Portão e fatia saem da MESMA função — foi a divergência entre os dois cálculos que produziu as
+ * duas metades do bug (Fase 7: gate < reserva; Fase 10: fatia sem teto).
+ */
+export function podeRodar(passo: PassoEsteira, saldoMs: number, protecaoMs = 0): boolean {
+  return fatiaDoPasso(passo, saldoMs, protecaoMs) >= RESERVA[passo];
 }
 
 /**
