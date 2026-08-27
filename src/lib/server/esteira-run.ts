@@ -63,7 +63,13 @@ export function contarPassos(etapas: Record<string, Record<string, unknown>>): {
   let ok = 0;
   let erro = 0;
   for (const etapa of Object.values(etapas)) {
-    if (etapa && typeof etapa === "object" && typeof etapa.erro === "string") erro++;
+    if (!etapa || typeof etapa !== "object") { ok++; continue; }
+    // Fase 10 — passo NÃO-TENTADO não entra na conta, nem como acerto nem como falha. A rodada
+    // agora é planejada: nem todos os doze passos são oferecidos em toda rodada, e um passo que
+    // ficou de fora não diz nada sobre a saúde da esteira. Contá-lo como `ok` diluiria a taxa de
+    // erro e o disjuntor demoraria a abrir; contá-lo como erro o abriria numa esteira saudável.
+    if (typeof etapa.pulado === "string" || typeof etapa.fora_do_plano === "string") continue;
+    if (typeof etapa.erro === "string") erro++;
     else ok++;
   }
   return { ok, erro };

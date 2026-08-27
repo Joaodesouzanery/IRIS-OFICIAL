@@ -186,7 +186,7 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
   it("call() recusa fatia abaixo da reserva em vez de mandar budget_ms=0", () => {
     // `budgetFromRequest` trata 0 como ausente e a sub-rota abre um orçamento NOVO de 50s —
     // pior que não chamar.
-    expect(RUN).toMatch(/if \(slice < RESERVA\[passo\]\) \{[\s\S]{0,120}?return null;/);
+    expect(RUN).toMatch(/if \(slice < RESERVA\[passo\]\) \{[\s\S]{0,160}?pulado: true/);
     expect(RUN).toMatch(/if \(passosPulados > 0\) restantes = true;/);
   });
 

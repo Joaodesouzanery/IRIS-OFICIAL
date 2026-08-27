@@ -16,7 +16,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { requireAdmin } from "@/lib/server/request-guards";
+import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { findBestMatch, tokenSortRatio, isStrictAbbreviation, isStrictPersonName } from "@/lib/server/name-matcher";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { mergeDiretores } from "@/lib/server/diretor-merge";
@@ -48,7 +48,8 @@ function clampConfidence(score: number): number {
 }
 
 export async function POST(req: NextRequest) {
-  const guard = await requireAdmin(req);
+  // Fase 10 — passo 3 da esteira: sob o cron respondia 403 e era contado como sucesso.
+  const guard = await requireAdminOrCron(req, "admin/diretores/candidatos/recompute");
   if (guard) return guard;
   if (isDemo()) {
     return NextResponse.json({ error: "Indisponível em modo DEMO." }, { status: 403 });

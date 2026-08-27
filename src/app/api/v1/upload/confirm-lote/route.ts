@@ -14,7 +14,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
 import { isHardFailSemSinal } from "@/lib/server/consistency-checks";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
@@ -32,7 +32,10 @@ export async function POST(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Aprovação em lote indisponível em modo DEMO." }, { status: 403 });
   }
-  const guard = await requireAdmin(req);
+  // Fase 10 — era `requireAdmin`: sob o cron diário este passo respondia 403. É o ÚNICO que
+  // transforma documento em deliberação em massa, e o orquestrador nunca olhava o status HTTP,
+  // então o cron reportava sucesso todo dia sem materializar uma linha.
+  const guard = await requireAdminOrCron(req, "upload/confirm-lote");
   if (guard) return guard;
 
   const body = (await req.json().catch(() => ({}))) as { ids?: unknown; todos?: boolean; agencia_id?: string };

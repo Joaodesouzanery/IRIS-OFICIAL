@@ -9,7 +9,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { requireAdmin } from "@/lib/server/request-guards";
+import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 
@@ -29,7 +29,8 @@ type DelibRow = {
 };
 
 export async function POST(req: NextRequest) {
-  const guard = await requireAdmin(req);
+  // Fase 10 — passo 8 da esteira: sob o cron respondia 403 e era contado como sucesso.
+  const guard = await requireAdminOrCron(req, "admin/deliberacoes/dedup");
   if (guard) return guard;
   if (isDemo()) {
     return NextResponse.json({ error: "Indisponível em modo DEMO." }, { status: 403 });

@@ -102,6 +102,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   /** Passos que pediram fatia e não couberam — a rodada não terminou, só não coube tudo nela. */
   let passosPulados = 0;
 
+  /** O desfecho de uma chamada a sub-rota. `pulado` NÃO é falha: é a rodada que não coube. */
+  type Resposta = { ok: boolean; status: number; pulado: boolean; body: any };
+
+  /** Passo deixado de fora do PLANO desta rodada — entra na próxima. Também não é falha. */
+  const foraDoPlano = (nome: string): StepResult => ({
+    fora_do_plano: `«${nome}» não entrou no plano desta rodada; entra numa próxima`,
+  });
+
   // Handler sintético: chama a rota real com o MESMO Bearer (padrão auto-confirm→confirm).
   // QA ago/2026: cada sub-rota tinha orçamento PRÓPRIO de 50s — somados, estouravam o
   // SIGKILL de 60s do Hobby. Agora toda chamada leva `budget_ms` = fatia do saldo REAL.
@@ -116,14 +124,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     path: string,
     passo: PassoEsteira,
     body?: unknown,
-  ): Promise<any> {
+  ): Promise<Resposta> {
     const slice = Math.round(fatiaDoPasso(passo, saldo(), protecao[passo] ?? 0));
     // Chamar com menos que a reserva é o bug da Fase 7: o passo gasta o round-trip de auth e
     // devolve zero. E `budget_ms=0` é PIOR que não chamar — `budgetFromRequest` trata 0 como
     // ausente e a sub-rota abre um orçamento NOVO de 50s, fora de qualquer controle.
     if (slice < RESERVA[passo]) {
       passosPulados++;
-      return null;
+      return { ok: false, status: 0, pulado: true, body: null };
     }
     const url = new URL(path, req.url);
     url.searchParams.set("budget_ms", String(slice));
@@ -133,8 +141,31 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       ...(body === undefined ? {} : { body: JSON.stringify(body) }),
     });
     const res = await handler(synthetic);
-    return await res.json().catch(() => ({}));
+    const corpo = await res.json().catch(() => ({}));
+    // `res.status` NUNCA era olhado: `return await res.json()` engolia qualquer desfecho. Uma
+    // sub-rota que respondia 403 virava `{}`, o passo era contabilizado como BEM-SUCEDIDO e o
+    // disjuntor não via nada. O caso real: sob o cron diário, QUATRO passos respondiam 403 —
+    // confirm-lote, dedup, recompute e aprovar-lote usavam `requireAdmin` em vez de
+    // `requireAdminOrCron` — e o cron reportava sucesso todo dia sem materializar uma linha.
+    return { ok: res.status >= 200 && res.status < 300, status: res.status, pulado: false, body: corpo };
   }
+
+  /**
+   * Anota o desfecho de um passo. Falha de HTTP vira `erro`, que é o que o disjuntor conta.
+   *
+   * ⚠️ GUARDA DE FALSO POSITIVO: passo que não foi TENTADO — fora do plano da rodada, ou sem
+   * fatia — não é falha. Um passo que legitimamente não tinha trabalho também não é. Contá-los
+   * como erro abriria o disjuntor numa esteira saudável, que é pior do que o bug original.
+   */
+  function anotar(r: Resposta, nome: string, campos: StepResult): StepResult {
+    if (r.pulado) return { pulado: `sem fatia para «${nome}» nesta rodada` };
+    if (!r.ok) return { ...campos, erro: `${nome} respondeu HTTP ${r.status}` };
+    return campos;
+  }
+
+  /** O desfecho mais grave entre várias chamadas do MESMO passo: falha > pulado > ok. */
+  const pior = (...rs: Resposta[]): Resposta =>
+    rs.find((x) => !x.ok && !x.pulado) ?? rs.find((x) => x.pulado) ?? rs[rs.length - 1];
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
@@ -191,24 +222,27 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // 1 · Auto-confirm (gate conservador — o caminho de alta confiança primeiro).
   if (cabe("autoConfirm")) {
     const r = await call(autoConfirmPOST, "/api/v1/upload/auto-confirm", "autoConfirm", { limit: 50, loop: true });
-    etapas.auto_confirm = { confirmados: r?.confirmados_total ?? 0, restantes: r?.restantes ?? false };
-    if (r?.restantes) restantes = true;
-  } else restantes = true;
+    etapas.auto_confirm = anotar(r, "auto-confirm", {
+      confirmados: r.body?.confirmados_total ?? 0,
+      restantes: r.body?.restantes ?? false,
+    });
+    if (r.body?.restantes) restantes = true;
+  } else { etapas.auto_confirm = foraDoPlano("auto-confirm"); restantes = true; }
 
   // 2 · Confirm-lote zero-toque (camadas + dedup auto-resolvida).
   if (cabe("confirmLote")) {
     const r = await call(confirmLotePOST, "/api/v1/upload/confirm-lote", "confirmLote", { todos: true });
-    etapas.aprovacao = {
-      materializados: r?.materializados ?? 0,
-      ignorados_pauta_apoio: r?.ignorados ?? 0,
-      duplicatas_arquivadas: r?.arquivados_duplicata_exata ?? 0,
-      fundidos_semanticos: r?.fundidos_semanticos ?? 0,
-      ilegiveis_arquivados: r?.arquivados_ilegiveis ?? 0,
-      sem_agencia_arquivados: r?.arquivados_sem_agencia ?? 0,
-      erros: r?.erros ?? 0,
-    };
-    if (r?.restantes) restantes = true;
-  } else restantes = true;
+    etapas.aprovacao = anotar(r, "confirm-lote", {
+      materializados: r.body?.materializados ?? 0,
+      ignorados_pauta_apoio: r.body?.ignorados ?? 0,
+      duplicatas_arquivadas: r.body?.arquivados_duplicata_exata ?? 0,
+      fundidos_semanticos: r.body?.fundidos_semanticos ?? 0,
+      ilegiveis_arquivados: r.body?.arquivados_ilegiveis ?? 0,
+      sem_agencia_arquivados: r.body?.arquivados_sem_agencia ?? 0,
+      erros: r.body?.erros ?? 0,
+    });
+    if (r.body?.restantes) restantes = true;
+  } else { etapas.aprovacao = foraDoPlano("confirm-lote"); restantes = true; }
 
   // 3 · Candidatos: recompute (auto-aprova ≥0.85 + mescla estritas) e aprovar-lote (0.8 + novos).
   if (cabe("candidatos")) {
@@ -221,30 +255,33 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       // Etapa67 — a MEDIÇÃO do auto-resolver: as quatro contagens sobem até o resumo do
       // "Rodar tudo". Se `sem_margem` for raro (hipótese: mandato resolve quase tudo), o
       // fallback fica como está; se for frequente, ganha visibilidade — com o número na mão.
-      etapas.diretores = {
-        aprovados: r?.aprovados ?? 0,
-        excecoes: r?.pulados ?? 0,
-        rejeitados_lixo: rec?.grupos_rejeitados_lixo ?? 0,
-        resolvidos_por_mandato: r?.resolvidos_por_mandato ?? 0,
-        resolvidos_por_margem: r?.resolvidos_por_margem ?? 0,
-        resolvidos_sem_margem: r?.resolvidos_sem_margem ?? 0,
-      };
+      etapas.diretores = anotar(pior(rec, r), "candidatos", {
+        aprovados: r.body?.aprovados ?? 0,
+        excecoes: r.body?.pulados ?? 0,
+        rejeitados_lixo: rec.body?.grupos_rejeitados_lixo ?? 0,
+        resolvidos_por_mandato: r.body?.resolvidos_por_mandato ?? 0,
+        resolvidos_por_margem: r.body?.resolvidos_por_margem ?? 0,
+        resolvidos_sem_margem: r.body?.resolvidos_sem_margem ?? 0,
+      });
     } catch {
       etapas.diretores = { erro: "candidatos falharam nesta rodada" };
     }
-  } else restantes = true;
+  } else { etapas.diretores = foraDoPlano("candidatos"); restantes = true; }
 
   // 4 · Backfill de votos (QA ago/2026): deliberações finais já gravadas sem voto ganham
   // os votos que a evidência persistida sustenta (regras novas de inferência). Idempotente.
   if (cabe("backfillVotos")) {
     try {
       const r = await call(materializarPOST, "/api/v1/admin/votos/materializar-faltantes", "backfillVotos", { dry_run: false });
-      etapas.backfill_votos = { deliberacoes: r?.materializaveis ?? 0, votos: r?.votos ?? 0 };
-      if (r?.restantes) restantes = true;
+      etapas.backfill_votos = anotar(r, "backfill de votos", {
+        deliberacoes: r.body?.materializaveis ?? 0,
+        votos: r.body?.votos ?? 0,
+      });
+      if (r.body?.restantes) restantes = true;
     } catch {
       etapas.backfill_votos = { erro: "backfill falhou nesta rodada" };
     }
-  } else restantes = true;
+  } else { etapas.backfill_votos = foraDoPlano("backfill de votos"); restantes = true; }
 
   // ═══ INGESTÃO — só depois de drenar o que já estava em revisão ════════════════
 
@@ -255,11 +292,11 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   if (cabe("coleta")) {
     try {
       const r = await call(checkGET, "/api/v1/monitoramento/check", "coleta");
-      etapas.coleta = { novos_detectados: r?.novos_detectados ?? 0 };
+      etapas.coleta = anotar(r, "coleta", { novos_detectados: r.body?.novos_detectados ?? 0 });
     } catch {
       etapas.coleta = { erro: "coleta falhou nesta rodada" };
     }
-  } else restantes = true;
+  } else { etapas.coleta = foraDoPlano("coleta"); restantes = true; }
 
   // 6 · Requeue dos mal classificados: "Voto DXX NNN-2026" preso como documento_apoio/agência "?"
   // (analisado antes do classificador por filename) → volta à fila e re-analisa com o código novo.
@@ -288,7 +325,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.reclassificacao = { erro: "requeue falhou nesta rodada" };
     }
-  } else restantes = true;
+  } else { etapas.reclassificacao = foraDoPlano("reclassificação"); restantes = true; }
 
   // 7 · Enfileirar PDFs + processar a fila (loops server-side).
   // QA ago/2026: o break antigo era `candidates===0`, que também dispara quando os 208
@@ -297,6 +334,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   let enfileirados = 0;
   let itensArquivados = 0;
   let tetoAtingido = false;
+  /** Falha de HTTP na ingestão/extração: o laço para, mas o desfecho tem de sobreviver ao laço. */
+  let falhaIngestao: Resposta | null = null;
   for (let i = 0; i < 10 && cabe("enqueue"); i++) {
     // Teto de VAZÃO por rodada (Fase 7). Com o download em paralelo, o orçamento deixou de ser o
     // estrangulador — sem teto, uma rodada sob cron diário poderia puxar centenas de documentos
@@ -313,19 +352,27 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       "enqueue",
       { limit: Math.min(20, saldoTeto), max_pdfs: saldoTeto },
     );
-    const q = Number(r?.queued ?? 0);
-    const s = Number(r?.sem_pdf ?? 0);
+    if (!r.ok && !r.pulado) { falhaIngestao = r; restantes = true; break; }
+    const q = Number(r.body?.queued ?? 0);
+    const s = Number(r.body?.sem_pdf ?? 0);
     enfileirados += q;
     itensArquivados += s;
-    if (r?.parcial || Number(r?.restantes ?? 0) > 0) restantes = true;
-    if (!r || Number(r?.candidates ?? 0) === 0) break; // janela vazia de verdade (drena por status)
+    if (r.body?.parcial || Number(r.body?.restantes ?? 0) > 0) restantes = true;
+    if (!r.body || Number(r.body?.candidates ?? 0) === 0) break; // janela vazia (drena por status)
     if (q + s === 0) { restantes = true; break; }      // só erros transitórios — próxima rodada
   }
   let processados = 0;
+  let religados = 0;
+  let reapados = 0;
   for (let i = 0; i < 10 && cabe("extracao"); i++) {
     const r = await call(processPOST, "/api/v1/upload/process?limit=20", "extracao", {});
-    const p = Number(r?.processed ?? 0);
+    if (!r.ok && !r.pulado) { falhaIngestao = falhaIngestao ?? r; restantes = true; break; }
+    const p = Number(r.body?.processed ?? 0);
     processados += p;
+    // Os reapers soltam documento preso mesmo quando não há nada a extrair — a medição que o
+    // orquestrador antes JOGAVA FORA. Sem ela, "0 extraídos" e "0 presos soltos" são o mesmo texto.
+    religados += Number(r.body?.religados ?? 0);
+    reapados += Number(r.body?.reaped ?? 0);
     if (p === 0) break;
     if (p >= 20) restantes = true; // lote cheio → provavelmente há mais fila
   }
@@ -333,6 +380,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   etapas.extracao = {
     enfileirados,
     processados,
+    ...(religados > 0 ? { presos_religados: religados } : {}),
+    ...(reapados > 0 ? { jobs_orfaos_recuperados: reapados } : {}),
+    ...(falhaIngestao ? { erro: `ingestão/extração respondeu HTTP ${falhaIngestao.status}` } : {}),
     itens_sem_pdf_arquivados: itensArquivados,
     // Teto atingido não é falha: é a vazão desta rodada respeitando o limite. Reportar é o
     // que impede a leitura errada de "a esteira parou de achar coisas".
@@ -343,11 +393,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   if (cabe("dedup")) {
     try {
       const r = await call(dedupPOST, "/api/v1/admin/deliberacoes/dedup?dry_run=0", "dedup", {});
-      etapas.dedup_final = { fundidas: r?.deliberacoes_em_dobro ?? r?.fundidas ?? 0 };
+      etapas.dedup_final = anotar(r, "dedup", {
+        fundidas: r.body?.deliberacoes_em_dobro ?? r.body?.fundidas ?? 0,
+      });
     } catch {
       etapas.dedup_final = { erro: "dedup falhou nesta rodada" };
     }
-  } else restantes = true;
+  } else { etapas.dedup_final = foraDoPlano("dedup"); restantes = true; }
 
   // 9 · Recuperação de ignorados. Fase 7 — FIM DO PING-PONG.
   // Esta chamada re-enfileirava exatamente os documentos que o confirm-lote acabara de arquivar
@@ -363,8 +415,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   if (arquivouAgora === 0 && cabe("recuperacao")) {
     try {
       const r = await call(reprocessIgnoradosPOST, "/api/v1/admin/upload/reprocess-ignorados?dry_run=0", "recuperacao", {});
-      const reenfileirados = Number(r?.reenfileirados ?? r?.requeued ?? 0);
-      etapas.recuperacao_ignorados = { reenfileirados };
+      const reenfileirados = Number(r.body?.reenfileirados ?? r.body?.requeued ?? 0);
+      etapas.recuperacao_ignorados = anotar(r, "recuperação de ignorados", { reenfileirados });
       if (reenfileirados > 0) restantes = true;
     } catch {
       etapas.recuperacao_ignorados = { erro: "reprocesso falhou nesta rodada" };
@@ -418,7 +470,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.reprocesso_falhados = { erro: "reprocesso de falhados falhou nesta rodada" };
     }
-  } else restantes = true;
+  } else { etapas.reprocesso_falhados = foraDoPlano("reprocesso de falhados"); restantes = true; }
 
   // 10 · MÉTRICAS DERIVADAS — Fase 7: saíram de trás do `if (!restantes)`.
   // Elas alimentam Empresas, Qualidade, Mandatos e a divergência dos votos: é este bloco que leva
@@ -443,9 +495,10 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       if (!cabe("derivada")) { restantes = true; break; }
       try {
         const r = await call(handler, path, "derivada", corpo);
-        const n = [r?.atualizados, r?.alterados, r?.updated, r?.deliberacoes_atualizadas, r?.votos_alterados]
+        const b = r.body ?? {};
+        const n = [b.atualizados, b.alterados, b.updated, b.deliberacoes_atualizadas, b.votos_alterados]
           .find((v: unknown) => typeof v === "number");
-        etapas[nome] = { ok: true, ...(typeof n === "number" ? { atualizados: n } : {}) };
+        etapas[nome] = anotar(r, nome, { ok: true, ...(typeof n === "number" ? { atualizados: n } : {}) });
       } catch {
         etapas[nome] = { erro: `${nome} falhou nesta rodada` };
       }
