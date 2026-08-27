@@ -3,6 +3,64 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 10 (27/ago/2026) — MEDIÇÃO PENDENTE: o teto real de execução
+
+**Ação sua, 2 minutos, e destrava um número que sustenta todo o orçamento da esteira.**
+
+Logado como admin, abra no navegador, nesta ordem:
+
+```
+/api/v1/admin/diagnostico/teto-tempo?ms=55000
+/api/v1/admin/diagnostico/teto-tempo?ms=110000
+```
+
+- **JSON com `decorrido_ms` ≈ o pedido** → sobreviveu; o teto é ≥ aquilo.
+- **504 / FUNCTION_INVOCATION_TIMEOUT** → morreu; o teto está abaixo.
+
+Se `110000` devolver 200, subir `HOBBY_BUDGET_MS` de 50s para 100s
+(`src/lib/server/time-budget.ts`) e corrigir o `CLAUDE.md`. Se der 504 e `55000` passar, o
+`CLAUDE.md` estava certo e o orçamento **não sobe** — os consertos da Fase 10 valem do mesmo jeito.
+
+> ⚠️ **Por que medir em vez de inferir.** Duas "provas" circulavam e nenhuma prova: (a) "os deploys
+> passam com `maxDuration: 120`" — o Vercel aceita e **rebaixa silenciosamente** em runtime em
+> vários casos; (b) "a função chegou viva aos 90s" — isso é um PISO, não um teto. A doc dá 300s
+> para Hobby **sob Fluid compute**, que é configuração, não padrão. Vale conferir em
+> Settings → Functions se o Fluid está ligado.
+
+**Consequência aritmética já simulada:** com 50s, `coleta` (25s) e `enqueue` (22s) só cabem em
+rodadas alternadas — a esteira anda, mas ingere devagar. Com 100s cabe quase tudo em toda rodada.
+
+### Medição do bloco 1 (depois de rodar "Rodar tudo")
+
+Comparar com a linha de base de 26/08: **26 rodadas · 0 PDF extraído · 0 métrica · 62 presos**.
+
+1. Quantas rodadas até terminar.
+2. Se o banner mostra **PDFs extraídos > 0** e **presos religados > 0**.
+3. `docs/diagnostico-producao.sql`: os **62 `queued`** têm de ir a zero.
+
+Nenhum commit do bloco 1 acrescenta trabalho à fila, então o número é comparável.
+
+### O que ficou para o bloco 2 (por decisão, medir antes)
+
+- **513 itens em `em_revisao`** — estado absorvente: nada no repositório os tira de lá. A
+  reconciliação precisa gravar motivo e contar reincidência, senão troca poço estático por ciclo.
+- **51 atas da ANM em `diretoria`** e 83 em `noticia` — é a **terceira** aparição do mesmo bug.
+  Causa provável achada: `parseGovBrNewsHtml` classifica por `classifyGovBrType`, que **só sabe
+  devolver `noticia`/`politica_publica`/`consulta_publica`** — nunca `ata`, nunca `deliberacao`.
+  A Fase 7 reordenou o OUTRO classificador (`classifyLinkType`); este ficou intacto.
+  **Sem migration cega:** rodar antes o SQL abaixo e escrever o teste com as URLs reais.
+
+```sql
+SELECT tipo, status, titulo, url_item
+  FROM monitoramento_itens
+ WHERE tipo IN ('diretoria','noticia') AND status = 'novo'
+   AND agencia_id = (SELECT id FROM agencias WHERE sigla = 'ANM')
+ ORDER BY tipo, url_item;
+```
+
+- **A tela**: mostrar os contadores que `/pipeline/status` já devolve, o botão único que não
+  segura a aba, e os botões separados por etapa.
+
 ## ⚠️ Plano Vercel GRÁTIS (Hobby): crons NÃO rodam de forma autônoma
 No plano grátis a Vercel agenda no máximo ~2 crons/dia e limita funções a 60s. A Etapa 21
 ENXUGOU o `vercel.json` para **2 crons** (`noticias/cron` 11:00 e `upload/auto-confirm` 12:30)
