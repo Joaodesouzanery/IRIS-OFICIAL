@@ -40,17 +40,18 @@ describe("etapa73 · o desfecho HTTP passa a existir", () => {
   });
 
   it.each([
-    ["enqueuePOST", "enfileiramento"],
-    ["processPOST", "extração"],
-  ])("o laço de «%s» (%s) checa o desfecho antes de ler o corpo", (chamada) => {
+    ["/api/v1/deliberacoes/enqueue-pdfs", "enfileiramento"],
+    ["/api/v1/upload/process?limit=20", "extração"],
+  ])("o laço de «%s» (%s) checa o desfecho antes de ler o corpo", (rota) => {
     // Os dois laços não têm try/catch: sem isto, um 500 sairia como "0 enfileirados" ou
     // "0 processados", indistinguível de "não havia nada a fazer".
     // Amarrado a CADA laço: asserção genérica por `falhaIngestao` passava mesmo removendo o
     // check de um deles, porque o símbolo continuava aparecendo no outro.
     const codigo = RUN.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/.*$/gm, " ").replace(/\s+/g, " ");
-    // Ancorar em `call(` e não no nome solto: o nome aparece primeiro na linha de import.
-    const m = new RegExp(`await call\\( ?${chamada},`).exec(codigo);
-    expect(m, `chamada a ${chamada} não encontrada`).not.toBeNull();
+    // Ancorar no PATH e não no handler: `processPOST` serve DOIS sítios (o reaper barato e o laço
+    // de extração), e o nome solto ainda casaria antes na linha de import.
+    const m = new RegExp(`await call\\( ?[A-Za-z]+, ?"${rota.replace(/[/?=]/g, (c) => `\\${c}`)}"`).exec(codigo);
+    expect(m, `chamada a ${rota} não encontrada`).not.toBeNull();
     expect(codigo.slice(m!.index, m!.index + 320)).toMatch(/if \(!r\.ok && !r\.pulado\)/);
   });
 

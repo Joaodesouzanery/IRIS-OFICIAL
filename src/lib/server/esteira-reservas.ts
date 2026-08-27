@@ -37,6 +37,12 @@ export const RESERVA = {
   enqueue: 22_000,
   /** Processar um lote da fila de extração. */
   extracao: 20_000,
+  /**
+   * Soltar documentos presos (os três reapers), SEM extrair — Fase 10.
+   * Cabem ~3 reparos: cada um são 2-3 round-trips. Um décimo do preço da extração, que é o ponto:
+   * enquanto os dois foram o mesmo passo, os presos herdaram o preço do trabalho caro.
+   */
+  reaper: 6_000,
   /** Auto-confirm: um lote do gate conservador. */
   autoConfirm: 15_000,
   /** Confirm-lote: um sublote da política zero-toque. */
@@ -98,6 +104,7 @@ export const TETO_FATIA: Record<PassoEsteira, number> = {
   coleta: RESERVA.coleta,               // um crawl já é a unidade inteira
   enqueue: RESERVA.enqueue + 3_000,     // 1 download + folga de gravação
   extracao: RESERVA.extracao + 10_000,  // cabe mais de um documento quando sobra
+  reaper: RESERVA.reaper * 2,
   autoConfirm: RESERVA.autoConfirm * 2,
   confirmLote: RESERVA.confirmLote * 2,
   candidatos: RESERVA.candidatos * 2,
@@ -116,17 +123,19 @@ export const TETO_FATIA: Record<PassoEsteira, number> = {
 export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
   "autoConfirm", "confirmLote", "candidatos", "backfillVotos",
   "coleta", "reclassificacao", "enqueue",
-  "extracao", "dedup", "recuperacao", "reprocessarFalhados", "derivada",
+  // O reaper vem ANTES da extração de propósito: o documento que ele solta volta para a fila
+  // `pending` e ainda pode ser extraído na MESMA rodada.
+  "reaper", "extracao", "dedup", "recuperacao", "reprocessarFalhados", "derivada",
 ] as const;
 
 /**
  * A CAUDA: os passos pelos quais a rodada existe.
  *
- * `extracao` materializa documento novo (e é onde moram os três reapers que soltam os presos);
- * `derivada` propaga o resultado para Empresas, Qualidade, Mandatos e divergência. Sem eles a
- * rodada gasta tempo e não muda nada que alguém veja.
+ * `reaper` solta documento preso (custa ~2s e destrava o que já foi baixado), `extracao`
+ * materializa documento novo, `derivada` propaga o resultado para Empresas, Qualidade, Mandatos e
+ * divergência. Sem eles a rodada gasta tempo e não muda nada que alguém veja.
  */
-export const PASSOS_CAUDA: readonly PassoEsteira[] = ["extracao", "derivada"] as const;
+export const PASSOS_CAUDA: readonly PassoEsteira[] = ["reaper", "extracao", "derivada"] as const;
 
 /**
  * PLANEJAR a rodada: quais passos ela vai TENTAR, e quanto cada um pode gastar.

@@ -32,7 +32,16 @@ async function process(req: NextRequest) {
   const budgetMs = Number.isFinite(budgetParam) && budgetParam > 0
     ? Math.min(budgetParam, HOBBY_BUDGET_MS)
     : HOBBY_BUDGET_MS;
+  // `apenas_reaper=1` roda só os três reapers de documento preso e volta. A esteira usa este modo
+  // num passo BARATO e cedo na rodada: reparar custa ~2s por documento, extrair custa até 20s, e
+  // enquanto os dois moraram no mesmo passo os presos herdaram o preço da extração — 62 deles
+  // ficaram parados em `queued` por 26 rodadas.
+  const apenasReaper = req.nextUrl.searchParams.get("apenas_reaper") === "1";
   const { processPendingDocuments } = await import("@/lib/server/pipeline");
-  const result = await processPendingDocuments(Number.isFinite(limit) ? limit : 5, Date.now() + budgetMs);
+  const result = await processPendingDocuments(
+    Number.isFinite(limit) ? limit : 5,
+    Date.now() + budgetMs,
+    { apenasReaper },
+  );
   return NextResponse.json(result);
 }

@@ -155,7 +155,8 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
     ["/api/v1/admin/votos/materializar-faltantes", "backfillVotos"],
     ["/api/v1/monitoramento/check", "coleta"],
     ["/api/v1/deliberacoes/enqueue-pdfs", "enqueue"],
-    ["/api/v1/upload/process", "extracao"],
+    ["/api/v1/upload/process?apenas_reaper=1", "reaper"],
+    ["/api/v1/upload/process?limit=20", "extracao"],
     ["/api/v1/admin/deliberacoes/dedup", "dedup"],
     ["/api/v1/admin/upload/reprocess-ignorados", "recuperacao"],
   ];
@@ -163,7 +164,10 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
   it.each(ESPERADO)("«%s» é chamada como o passo «%s»", (rota, passo) => {
     // Validar só que o passo EXISTE deixaria passar trocar `dedup` por `derivada` — que é uma
     // chave legítima e a fatia errada. A rota tem de casar com o passo dela.
-    const re = new RegExp(`call\\( ?[A-Za-z]+, ?"${rota.replace(/\//g, "\\/")}[^"]*", ?"([a-zA-Z]+)"`);
+    // A query entra no casamento: `/upload/process` é chamada DUAS vezes, com passos diferentes
+    // (`?apenas_reaper=1` → reaper, `?limit=20` → extracao). Casar só até o `?` pegaria a primeira.
+    const escapada = rota.replace(/[/?=]/g, (c) => `\\${c}`);
+    const re = new RegExp(`call\\( ?[A-Za-z]+, ?"${escapada}[^"]*", ?"([a-zA-Z]+)"`);
     const m = re.exec(PLANO);
     expect(m, `chamada a ${rota} não encontrada`).not.toBeNull();
     expect(m![1]).toBe(passo);

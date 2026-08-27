@@ -159,7 +159,22 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt
   return started;
 }
 
-export async function processPendingDocuments(limit = 5, deadlineAt?: number): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number }> {
+export async function processPendingDocuments(
+  limit = 5,
+  deadlineAt?: number,
+  opcoes?: {
+    /**
+     * Rodar SÓ os três reapers e voltar (Fase 10).
+     *
+     * Soltar um documento preso custa ~2s; extrair um custa até 20s. Enquanto os dois moraram no
+     * mesmo passo, o preço da extração era o preço do reaper — e como a extração é o passo mais
+     * caro da rodada, ela ficava sem orçamento e os reapers iam junto. Produção: 62 documentos em
+     * `queued`, os MESMOS, depois de 26 rodadas. Separados, o reaper cabe num passo barato que
+     * roda cedo, e o documento que ele solta ainda pode ser extraído na MESMA rodada.
+     */
+    apenasReaper?: boolean;
+  },
+): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number }> {
   const db = createSupabaseServerClient();
 
   // Reaper oportunista de órfãos: um job/doc preso em "processing" só é possível se o
@@ -264,6 +279,10 @@ export async function processPendingDocuments(limit = 5, deadlineAt?: number): P
     }
     religados++;
   }
+
+  // Os três reapers acabaram. Quem só queria reparar para por aqui — sem tocar na fila `pending`,
+  // que é o trabalho caro.
+  if (opcoes?.apenasReaper) return { processed: 0, job_ids: [], reaped, religados };
 
   const normalizedLimit = Math.min(20, Math.max(1, limit));
   const { data: jobs } = await db

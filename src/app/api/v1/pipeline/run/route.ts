@@ -361,9 +361,27 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     if (!r.body || Number(r.body?.candidates ?? 0) === 0) break; // janela vazia (drena por status)
     if (q + s === 0) { restantes = true; break; }      // só erros transitórios — próxima rodada
   }
-  let processados = 0;
+  // 7a · SOLTAR OS PRESOS — passo NOVO e barato (Fase 10).
+  //
+  // Os três reapers sempre existiram, mas moravam dentro de `processPendingDocuments`, cujo ÚNICO
+  // chamador é a extração — o passo mais caro da rodada. Reparar custa ~2s por documento; extrair
+  // custa até 20s. Enquanto foram o mesmo passo, os presos herdaram o preço do trabalho caro, e a
+  // extração era justamente quem nunca alcançava o portão. Resultado medido em produção: 62
+  // documentos em `queued` — os MESMOS — depois de 26 rodadas, com o PDF já baixado.
+  //
+  // Vem ANTES da extração porque o documento que o reaper solta volta para `pending` e ainda pode
+  // ser extraído na MESMA rodada.
   let religados = 0;
   let reapados = 0;
+  if (cabe("reaper")) {
+    const r = await call(processPOST, "/api/v1/upload/process?apenas_reaper=1", "reaper", {});
+    religados += Number(r.body?.religados ?? 0);
+    reapados += Number(r.body?.reaped ?? 0);
+    etapas.presos = anotar(r, "reaper", { religados, jobs_orfaos_recuperados: reapados });
+    if (religados > 0) restantes = true; // o que voltou para a fila quer ser extraído
+  } else { etapas.presos = foraDoPlano("reaper"); restantes = true; }
+
+  let processados = 0;
   for (let i = 0; i < 10 && cabe("extracao"); i++) {
     const r = await call(processPOST, "/api/v1/upload/process?limit=20", "extracao", {});
     if (!r.ok && !r.pulado) { falhaIngestao = falhaIngestao ?? r; restantes = true; break; }
