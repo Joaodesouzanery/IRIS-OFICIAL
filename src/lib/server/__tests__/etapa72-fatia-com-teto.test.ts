@@ -191,7 +191,11 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
     // `budgetFromRequest` trata 0 como ausente e a sub-rota abre um orçamento NOVO de 50s —
     // pior que não chamar.
     expect(RUN).toMatch(/if \(slice < RESERVA\[passo\]\) \{[\s\S]{0,160}?pulado: true/);
-    expect(RUN).toMatch(/if \(passosPulados > 0\) restantes = true;/);
+    // Fase 11 — `passosPulados` deixou de virar `restantes` numa linha solta: ele agora ALIMENTA
+    // `deveContinuar`, junto com o trabalho relatado e os passos não-tentados. A propriedade
+    // vigiada é a mesma: passo sem fatia tem de pedir outra rodada.
+    expect(RUN).toMatch(/passosPulados,/);
+    expect(RUN).toMatch(/deveContinuar\(\{/);
   });
 
   it("o que ficou fora do plano pede outra rodada", () => {

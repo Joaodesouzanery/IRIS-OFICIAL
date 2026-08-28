@@ -37,6 +37,7 @@ import {
 import { requeueDocument } from "@/lib/server/upload-queue";
 import {
   buscarRunAtiva,
+  deveContinuar,
   deveAbrirDisjuntor,
   fecharRun,
   iniciarRun,
@@ -94,7 +95,15 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
   const auth = req.headers.get("authorization") ?? "";
   const etapas: Record<string, StepResult> = {};
+  /**
+   * TRABALHO RELATADO: algum passo disse que sobrou fila. Fase 11 — este booleano NÃO é mais o
+   * desfecho da rodada. "Não coube tudo nesta rodada" é outra coisa, e confundir os dois foi o que
+   * tornou `desfecho: "drenou"` inalcançável: com 13 passos somando ~144s de reserva contra 50s de
+   * orçamento, o plano NUNCA cabe inteiro. O desfecho agora sai de `deveContinuar`, no fim.
+   */
   let restantes = false;
+  /** Passos que nem foram OFERECIDOS nesta rodada (o giro do plano os alcança na próxima). */
+  let passosNaoTentados = 0;
 
   /** Saldo REAL disponível para trabalho: o round-trip de auth e o flush acontecem fora dele. */
   const saldo = () => msLeft(deadlineAt) - FOLGA_ORQUESTRADOR_MS;
@@ -105,10 +114,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   /** O desfecho de uma chamada a sub-rota. `pulado` NÃO é falha: é a rodada que não coube. */
   type Resposta = { ok: boolean; status: number; pulado: boolean; body: any };
 
-  /** Passo deixado de fora do PLANO desta rodada — entra na próxima. Também não é falha. */
-  const foraDoPlano = (nome: string): StepResult => ({
-    fora_do_plano: `«${nome}» não entrou no plano desta rodada; entra numa próxima`,
-  });
+  /**
+   * Passo deixado de fora do PLANO desta rodada — entra na próxima. Não é falha, e (Fase 11) não
+   * é motivo suficiente para pedir outra rodada: ele é CONTADO, e `deveContinuar` decide.
+   */
+  const foraDoPlano = (nome: string): StepResult => {
+    passosNaoTentados++;
+    return { fora_do_plano: `«${nome}» não entrou no plano desta rodada; entra numa próxima` };
+  };
 
   // Handler sintético: chama a rota real com o MESMO Bearer (padrão auto-confirm→confirm).
   // QA ago/2026: cada sub-rota tinha orçamento PRÓPRIO de 50s — somados, estouravam o
@@ -227,7 +240,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       restantes: r.body?.restantes ?? false,
     });
     if (r.body?.restantes) restantes = true;
-  } else { etapas.auto_confirm = foraDoPlano("auto-confirm"); restantes = true; }
+  } else { etapas.auto_confirm = foraDoPlano("auto-confirm"); }
 
   // 2 · Confirm-lote zero-toque (camadas + dedup auto-resolvida).
   if (cabe("confirmLote")) {
@@ -242,7 +255,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       erros: r.body?.erros ?? 0,
     });
     if (r.body?.restantes) restantes = true;
-  } else { etapas.aprovacao = foraDoPlano("confirm-lote"); restantes = true; }
+  } else { etapas.aprovacao = foraDoPlano("confirm-lote"); }
 
   // 3 · Candidatos: recompute (auto-aprova ≥0.85 + mescla estritas) e aprovar-lote (0.8 + novos).
   if (cabe("candidatos")) {
@@ -267,7 +280,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.diretores = { erro: "candidatos falharam nesta rodada" };
     }
-  } else { etapas.diretores = foraDoPlano("candidatos"); restantes = true; }
+  } else { etapas.diretores = foraDoPlano("candidatos"); }
 
   // 4 · Backfill de votos (QA ago/2026): deliberações finais já gravadas sem voto ganham
   // os votos que a evidência persistida sustenta (regras novas de inferência). Idempotente.
@@ -282,7 +295,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.backfill_votos = { erro: "backfill falhou nesta rodada" };
     }
-  } else { etapas.backfill_votos = foraDoPlano("backfill de votos"); restantes = true; }
+  } else { etapas.backfill_votos = foraDoPlano("backfill de votos"); }
 
   // ═══ INGESTÃO — só depois de drenar o que já estava em revisão ════════════════
 
@@ -297,7 +310,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.coleta = { erro: "coleta falhou nesta rodada" };
     }
-  } else { etapas.coleta = foraDoPlano("coleta"); restantes = true; }
+  } else { etapas.coleta = foraDoPlano("coleta"); }
 
   // 6 · Requeue dos mal classificados: "Voto DXX NNN-2026" preso como documento_apoio/agência "?"
   // (analisado antes do classificador por filename) → volta à fila e re-analisa com o código novo.
@@ -326,7 +339,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.reclassificacao = { erro: "requeue falhou nesta rodada" };
     }
-  } else { etapas.reclassificacao = foraDoPlano("reclassificação"); restantes = true; }
+  } else { etapas.reclassificacao = foraDoPlano("reclassificação"); }
 
   // 7 · Enfileirar PDFs + processar a fila (loops server-side).
   // QA ago/2026: o break antigo era `candidates===0`, que também dispara quando os 208
@@ -380,7 +393,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     reapados += Number(r.body?.reaped ?? 0);
     etapas.presos = anotar(r, "reaper", { religados, jobs_orfaos_recuperados: reapados });
     if (religados > 0) restantes = true; // o que voltou para a fila quer ser extraído
-  } else { etapas.presos = foraDoPlano("reaper"); restantes = true; }
+  } else { etapas.presos = foraDoPlano("reaper"); }
 
   let processados = 0;
   for (let i = 0; i < 10 && cabe("extracao"); i++) {
@@ -395,7 +408,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     if (p === 0) break;
     if (p >= 20) restantes = true; // lote cheio → provavelmente há mais fila
   }
-  if (!cabe("extracao")) restantes = true;
+  // A extração não rodar não significa que HÁ fila — significa que ela não coube ou não foi
+  // oferecida. Quem sabe a diferença é `call()` (que conta `passosPulados`) e o plano.
+  if (!planoDaRodada.has("extracao")) passosNaoTentados++;
   etapas.extracao = {
     enfileirados,
     processados,
@@ -418,7 +433,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.dedup_final = { erro: "dedup falhou nesta rodada" };
     }
-  } else { etapas.dedup_final = foraDoPlano("dedup"); restantes = true; }
+  } else { etapas.dedup_final = foraDoPlano("dedup"); }
 
   // 9 · Recuperação de ignorados. Fase 7 — FIM DO PING-PONG.
   // Esta chamada re-enfileirava exatamente os documentos que o confirm-lote acabara de arquivar
@@ -489,7 +504,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     } catch {
       etapas.reprocesso_falhados = { erro: "reprocesso de falhados falhou nesta rodada" };
     }
-  } else { etapas.reprocesso_falhados = foraDoPlano("reprocesso de falhados"); restantes = true; }
+  } else { etapas.reprocesso_falhados = foraDoPlano("reprocesso de falhados"); }
 
   // 10 · MÉTRICAS DERIVADAS — Fase 7: saíram de trás do `if (!restantes)`.
   // Elas alimentam Empresas, Qualidade, Mandatos e a divergência dos votos: é este bloco que leva
@@ -511,7 +526,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       ["divergencia_votos", divergenciaPOST, "/api/v1/votos/recalcular-divergencia?apply=1", {}],
     ];
     for (const [nome, handler, path, corpo] of derivadas) {
-      if (!cabe("derivada")) { restantes = true; break; }
+      if (!cabe("derivada")) { if (!planoDaRodada.has("derivada")) passosNaoTentados++; break; }
       try {
         const r = await call(handler, path, "derivada", corpo);
         const b = r.body ?? {};
@@ -527,11 +542,19 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     }
   }
 
-  // Um passo que pediu fatia e não coube não terminou — a rodada seguinte tem de retomá-lo. E o
-  // que ficou FORA do plano desta rodada é, por definição, trabalho para a próxima: sem isto a
-  // esteira "concluiria" com passos que nem foram tentados.
-  if (passosPulados > 0) restantes = true;
-  if (planoDaRodada.size < ORDEM_DOS_PASSOS.length) restantes = true;
+  // ═══ Fase 11 — O DESFECHO DA RODADA ═════════════════════════════════════════
+  // Aqui morava `if (planoDaRodada.size < ORDEM_DOS_PASSOS.length) restantes = true;` — uma
+  // comparação SEMPRE verdadeira (13 passos, ~144s de reserva, 50s de orçamento). Ela tornava
+  // `restantes` eternamente true: "drenou" inalcançável, run nunca fechada, e o teto de 40 rodadas
+  // do cliente virou o único desfecho possível. Com a fila VAZIA a esteira ainda queimava 40
+  // rodadas — o "por que 25 minutos para poucos documentos?".
+  const pedeOutraRodada = deveContinuar({
+    trabalhoRelatado: restantes,
+    passosPulados,
+    passosNaoTentados,
+    rodada: execucao?.rodadas ?? 0,
+  });
+  restantes = pedeOutraRodada;
 
   // ═══ Registro da rodada + DISJUNTOR ══════════════════════════════════════════
   // Contar erros não basta. Com a vazão do commit 7 e um cron diário, um erro sistemático (um

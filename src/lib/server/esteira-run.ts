@@ -17,6 +17,8 @@
  * quebrar. É o padrão de deploy-antes-da-migration do projeto.
  */
 
+import { ORDEM_DOS_PASSOS } from "@/lib/server/esteira-reservas";
+
 type Db = {
   from: (t: string) => any;
 };
@@ -56,6 +58,49 @@ export function deveAbrirDisjuntor(passosOk: number, passosErro: number): boolea
   const total = passosOk + passosErro;
   if (total < DISJUNTOR_MIN_PASSOS) return false;
   return passosErro / total > DISJUNTOR_TAXA_ERRO;
+}
+
+/**
+ * A rodada deve pedir OUTRA? — a distinção que faltava (Fase 11).
+ *
+ * ═══ O bug que originou esta função ═══
+ * A Fase 10 fez a rodada ser PLANEJADA: dos 13 passos, só cabe um subconjunto por rodada (a soma
+ * das reservas é ~144s contra um orçamento de 50s). Aí veio a linha errada:
+ *
+ *     if (planoDaRodada.size < ORDEM_DOS_PASSOS.length) restantes = true;
+ *
+ * Essa comparação é **sempre verdadeira, por aritmética**. Com ela, `restantes` nunca ficava
+ * falso: `desfecho: "drenou"` era inalcançável, a run nunca era fechada, e o teto de 40 rodadas do
+ * cliente virou o único desfecho possível. Com a fila VAZIA a esteira ainda queimava 40 rodadas —
+ * e é a resposta literal para "por que gastaria 25 minutos para pegar poucos documentos?".
+ *
+ * ═══ A regra ═══
+ * "Não coube tudo NESTA rodada" (sempre verdade) NÃO é "ainda HÁ trabalho". Só pedem outra rodada:
+ *
+ *  · `trabalhoRelatado` — algum passo disse que sobrou fila. É o sinal forte, e vence sempre.
+ *  · `passosPulados` — o passo foi planejado e não conseguiu fatia. Não é fila vazia: é orçamento
+ *    bloqueado, e na próxima rodada ele pode caber.
+ *  · `passosNaoTentados`, mas SÓ durante uma rotação. Um passo fora do plano não sabe se tem fila,
+ *    então a esteira insiste até que todos tenham tido a vez — o giro de `planejarRodada` garante
+ *    isso em `ORDEM_DOS_PASSOS.length` rodadas. Rodada ociosa é barata (cada passo custa um
+ *    SELECT), então essa verificação custa segundos.
+ *
+ * ⚠️ O limite da terceira condição é o que impede o moinho de voltar por outra porta: sem ele,
+ * "não coube tudo" pediria rodada para sempre — exatamente o bug de origem.
+ */
+export function deveContinuar(input: {
+  /** Algum passo relatou fila remanescente nesta rodada. */
+  trabalhoRelatado: boolean;
+  /** Passos que entraram no plano e não conseguiram fatia. */
+  passosPulados: number;
+  /** Passos que nem foram oferecidos nesta rodada. */
+  passosNaoTentados: number;
+  /** Número da rodada dentro desta execução (0-based). */
+  rodada: number;
+}): boolean {
+  if (input.trabalhoRelatado) return true;
+  if (input.passosPulados > 0) return true;
+  return input.passosNaoTentados > 0 && input.rodada < ORDEM_DOS_PASSOS.length;
 }
 
 /** Conta passos bem-sucedidos × falhos a partir do mapa de etapas de UMA rodada. */
