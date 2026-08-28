@@ -3,32 +3,33 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
-## 🔴 FASE 10 (27/ago/2026) — MEDIÇÃO PENDENTE: o teto real de execução
+## 🔴 FASE 10-11 (28/ago/2026) — como medir o tempo da esteira, sem rota nem página
 
-**Ação sua, 2 minutos, e destrava um número que sustenta todo o orçamento da esteira.**
+**Tudo pelo SQL Editor que você já usa.** Cole isto para ver as últimas execuções:
 
-Logado como admin, abra no navegador, nesta ordem:
-
+```sql
+SELECT status, rodadas, motivo_parada,
+       ROUND(EXTRACT(EPOCH FROM (atualizado_em - iniciado_em))::numeric, 1) AS segundos_total,
+       ROUND((EXTRACT(EPOCH FROM (atualizado_em - iniciado_em)) / NULLIF(rodadas,0))::numeric, 1)
+         AS seg_por_rodada,
+       passos_ok, passos_erro, contadores
+  FROM esteira_runs
+ ORDER BY iniciado_em DESC
+ LIMIT 5;
 ```
-/api/v1/admin/diagnostico/teto-tempo?ms=55000
-/api/v1/admin/diagnostico/teto-tempo?ms=110000
-```
 
-- **JSON com `decorrido_ms` ≈ o pedido** → sobreviveu; o teto é ≥ aquilo.
-- **504 / FUNCTION_INVOCATION_TIMEOUT** → morreu; o teto está abaixo.
+⚠️ **O que essa consulta prova e o que NÃO prova.** Se `seg_por_rodada` der ~54s, isso prova que a
+rodada COMPLETA dentro do orçamento. **Não** prova qual é o teto de execução da conta — para isso
+seria preciso uma rodada que TENTE ultrapassar.
 
-Se `110000` devolver 200, subir `HOBBY_BUDGET_MS` de 50s para 100s
-(`src/lib/server/time-budget.ts`) e corrigir o `CLAUDE.md`. Se der 504 e `55000` passar, o
-`CLAUDE.md` estava certo e o orçamento **não sobe** — os consertos da Fase 10 valem do mesmo jeito.
+⚠️ **Por que o teto de tempo não sobe além de 70s hoje.** O cliente aborta em 90s
+(`REQUEST_TIMEOUT_MS` em `src/lib/api.ts`), mas o abort **não mata a função** no Vercel: ela segue
+rodando e o laço dispara a rodada seguinte sobre a MESMA run — duas invocações concorrentes nas
+mesmas linhas. O teto seguro é ~86s (90 menos a folga). Para passar disso, subir
+`REQUEST_TIMEOUT_MS` **antes** de `HOBBY_BUDGET_MS`, nessa ordem.
 
-> ⚠️ **Por que medir em vez de inferir.** Duas "provas" circulavam e nenhuma prova: (a) "os deploys
-> passam com `maxDuration: 120`" — o Vercel aceita e **rebaixa silenciosamente** em runtime em
-> vários casos; (b) "a função chegou viva aos 90s" — isso é um PISO, não um teto. A doc dá 300s
-> para Hobby **sob Fluid compute**, que é configuração, não padrão. Vale conferir em
-> Settings → Functions se o Fluid está ligado.
-
-**Consequência aritmética já simulada:** com 50s, `coleta` (25s) e `enqueue` (22s) só cabem em
-rodadas alternadas — a esteira anda, mas ingere devagar. Com 100s cabe quase tudo em toda rodada.
+> Uma rota `/api/v1/admin/diagnostico/teto-tempo` foi criada e **removida** na Fase 11: ela só
+> gerava trabalho manual para medir o que `esteira_runs` já responde.
 
 ### Medição do bloco 1 (depois de rodar "Rodar tudo")
 
