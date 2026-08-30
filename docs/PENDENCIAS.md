@@ -3,6 +3,31 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 13 (30/ago/2026) — 2 migrations para aplicar, e o MCP que automatiza tudo
+
+**Migrations no SQL Editor (nesta ordem; idempotentes):**
+1. `20260830120000_limpeza_falsos_positivos.sql` — remove as falsas "deliberações" da ANM
+   (manuais de site) e os 4 diretores-lixo da ARTESP com seus 5 votos. O `RAISE NOTICE` mostra
+   as contagens.
+2. `20260830130000_anm_seletor_pdf.sql` — troca o seletor dos 4 sites da ANM para
+   `a:not(.state-published)`: corta as ~760 âncoras de menu do gov.br que poluíam a coleta.
+   **Depois dela, rodar a coleta/"Rodar tudo"**: a 87ª ROP (21/08/2026) e as demais atas de 2026
+   da ANM entram.
+
+**Configuração única que elimina o colar-SQL (sua pergunta "o Claude Code traz tudo?"):**
+```bash
+claude mcp add supabase-iris --scope project \
+  -e SUPABASE_ACCESS_TOKEN=<token de supabase.com/dashboard/account/tokens> \
+  -- npx -y @supabase/mcp-server-supabase@latest --read-only --project-ref=<ref do projeto IRIS>
+```
+Feito isso, `/auditoria-producao` (skill nova) roda a auditoria e entrega o relatório sozinha.
+O conector Supabase do claude.ai não serve (amarrado a outro projeto); `--read-only` é inegociável.
+
+**Fechados nesta fase:** guard C21 (manual ≠ deliberação) · `fonteNominaVotos` (fonte que não
+nomina não gera voto nominal/candidato/pessoa) · `isStrictPersonName` endurecido · "Ausência
+Justificada:" extraída (o caso Raquel/férias — divergentes da ARTESP eram legítimas) · seletor
+`:not`/`$=` no monitoramento.
+
 ## 🔴 FASE 12 (30/ago/2026) — a AUDITORIA de votos: o que rodar e o que ficou registrado
 
 **Ação sua (2 passos), e é ela que fecha a investigação dos votos desiguais:**
