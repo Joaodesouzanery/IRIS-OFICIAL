@@ -2,7 +2,11 @@ import type { ModuleTab } from "@/components/ui/ModuleTabs";
 
 export const DELIBERACOES_TABS: ModuleTab[] = [
   { label: "Dashboard", href: "/dashboard" },
-  { label: "Upload de PDFs", href: "/dashboard/upload" },
+  // Fase 12 — "Upload de PDFs" saiu do MENU a pedido do usuário; a PÁGINA /dashboard/upload
+  // continua servida. Ela é a válvula de escape da esteira: única porta para revisão humana
+  // com edição de campos, `origem: "revisao_humana"`, rejeitar/reprocessar 1-a-1 e upload
+  // manual — e o botão "Revisar →" de Votos dos Diretores aponta para ela (?doc=<id>).
+  // Remover a PÁGINA exigiria mover tudo isso antes.
   { label: "Deliberações", href: "/dashboard/deliberacoes" },
   { label: "Reuniões", href: "/dashboard/reunioes" },
   { label: "Votos dos Diretores", href: "/dashboard/deliberacoes/votos-diretores" },

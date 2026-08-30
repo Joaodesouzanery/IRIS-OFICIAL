@@ -35,7 +35,7 @@ const QUALIDADE_TABS: NavItem[] = [
 
 const DELIBERACOES_TABS: NavItem[] = [
   { href: "/dashboard" },
-  { href: "/dashboard/upload" },
+  // Fase 12: a aba Upload saiu do menu (a página continua; ver module-tabs.ts).
   { href: "/dashboard/deliberacoes" },
   { href: "/dashboard/reunioes" },
   { href: "/dashboard/deliberacoes/votos-diretores" },
@@ -119,5 +119,35 @@ describe("etapa67 · paridade — as réplicas deste teste não podem divergir d
       }
     }
     expect(src, "Sidebar deixou de usar o resolver").toContain("resolveActiveHref");
+  });
+
+  // ─── Fase 12 — a aba "Upload de PDFs" saiu do MENU; a página fica ─────────────────────────
+  it("module-tabs NÃO tem mais a aba de Upload — e /dashboard/upload não acende aba nenhuma", async () => {
+    const { readFileSync } = await import("fs");
+    const { join, dirname } = await import("path");
+    const { fileURLToPath } = await import("url");
+    const raiz = join(dirname(fileURLToPath(import.meta.url)), "../../../..");
+    const tabs = readFileSync(join(raiz, "src/lib/module-tabs.ts"), "utf-8")
+      .replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/[^\n]*/g, " ");
+    expect(tabs).not.toContain('href: "/dashboard/upload"');
+    // Nenhuma aba acesa em /dashboard/upload é o comportamento certo (não é a raiz nem tem dono).
+    expect(resolveActiveHref("/dashboard/upload", DELIBERACOES_TABS)).toBeNull();
+  });
+
+  it("a PÁGINA continua alcançável: o Sidebar mantém o path e o «Revisar» mantém o deep link", async () => {
+    // Sem o path no Sidebar, a sidebar inteira apaga ao chegar via "Revisar" (bug já vivido na
+    // etapa67); e o deep link ?doc= é o único caminho de revisão 1-a-1 que restou.
+    const { readFileSync } = await import("fs");
+    const { join, dirname } = await import("path");
+    const { fileURLToPath } = await import("url");
+    const raiz = join(dirname(fileURLToPath(import.meta.url)), "../../../..");
+    const sidebar = readFileSync(join(raiz, "src/components/layout/Sidebar.tsx"), "utf-8");
+    expect(sidebar).toContain('"/dashboard/upload"');
+    const votos = readFileSync(
+      join(raiz, "src/app/dashboard/deliberacoes/votos-diretores/page.tsx"), "utf-8");
+    // Contagem exata: são DOIS sítios ("Revisar" da fila e o das falhas de extração) —
+    // asserção de presença passava com um deles quebrado.
+    const deepLinks = votos.match(/\/dashboard\/upload\?doc=/g) ?? [];
+    expect(deepLinks.length).toBe(2);
   });
 });
