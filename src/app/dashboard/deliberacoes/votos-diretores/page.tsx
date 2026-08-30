@@ -415,6 +415,17 @@ export default function VotosDiretoresPage() {
           if (falhasSeguidas >= 2) { desfecho = "erros"; break; } // 2 falhas seguidas: para com o progresso feito
         }
       }
+      // Fase 12 — AVISAR o servidor antes de limpar o estado local. Nos desfechos em que o
+      // SERVIDOR já fechou a run ("drenou" fecha com concluído; "abortado" é o disjuntor), o
+      // encerrar é no-op idempotente. Nos outros ("teto", "erros") era exatamente o buraco: a
+      // run ficava `running` por 3min e virava "erro" fantasma — os dois banners contraditórios.
+      if (runId && (desfecho === "teto" || desfecho === "erros")) {
+        await api.post("/pipeline/run", {
+          run_id: runId,
+          encerrar: true,
+          motivo: desfecho === "teto" ? "teto de rodadas do cliente" : `parou após erros: ${ultimoErro ?? "—"}`,
+        }).catch(() => { /* o reaper de órfãs cobre se este aviso falhar */ });
+      }
       setRunIdAtivo(null);
       return { totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas };
     },
@@ -434,7 +445,10 @@ export default function VotosDiretoresPage() {
         (totais.rejeitados_lixo ?? 0) > 0 ? `${totais.rejeitados_lixo} nome(s)-lixo drenado(s)` : null,
         (totais.resolvidos_por_mandato ?? 0) > 0 ? `${totais.resolvidos_por_mandato} desambiguado(s) pelo mandato` : null,
         (totais.resolvidos_sem_margem ?? 0) > 0 ? `${totais.resolvidos_sem_margem} resolvido(s) SEM margem (auditáveis por confianca_match)` : null,
-        (totais.reenfileirados ?? 0) > 0 ? `${totais.reenfileirados} reclassificado(s)` : null,
+        // Fase 12 — dois números HONESTOS no lugar de um falso: `reenfileirados` era gravado
+        // por DOIS passos (reclassificação e desarquivamento) e o banner somava tudo.
+        (totais.reclassificados ?? 0) > 0 ? `${totais.reclassificados} reclassificado(s)` : null,
+        (totais.desarquivados ?? 0) > 0 ? `${totais.desarquivados} desarquivado(s)` : null,
         (totais.votos ?? 0) > 0 ? `${totais.votos} voto(s) recuperado(s) em deliberações antigas` : null,
       ].filter(Boolean);
       // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.

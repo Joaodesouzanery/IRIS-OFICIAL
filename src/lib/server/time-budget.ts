@@ -7,7 +7,13 @@
 // INDEPENDENTE do `maxDuration: 120` do vercel.json (o 120 vale só no Pro). 50s deixa
 // folga para o corte gracioso + flush da resposta antes do limite; o trabalho que não
 // couber fica pendente e é retomado na próxima chamada. Usar via `Date.now() + HOBBY_BUDGET_MS`.
-export const HOBBY_BUDGET_MS = 50_000;
+// Fase 12 — 50s → 70s. O teto de 60s NUNCA foi medido (as duas "provas" que circulavam não
+// provam: o Vercel aceita maxDuration acima do plano e rebaixa em runtime, e ver a função viva
+// aos 90s é piso, não teto). O limite REAL hoje é o abort de 90s do CLIENTE (api.ts), que não
+// mata a função no servidor — acima de ~86s o laço dispararia a rodada seguinte sobre a MESMA
+// run. 70s fica sob esse teto com 16s de margem. Para subir além: aumentar REQUEST_TIMEOUT_MS
+// em src/lib/api.ts ANTES, nessa ordem.
+export const HOBBY_BUDGET_MS = 70_000;
 
 export function msLeft(deadlineAt?: number): number {
   if (deadlineAt === undefined) return Number.POSITIVE_INFINITY;

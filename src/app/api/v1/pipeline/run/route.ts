@@ -188,8 +188,19 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // registra o avanço numa linha de execução: fechar a aba deixa de "perder tudo" (a tela reabre
   // e retoma), duas abas não disputam as mesmas linhas, e uma execução que está falhando PARA.
   // Se a migration ainda não foi aplicada, `run` é `null` e a esteira roda como antes.
-  const corpo = (await req.json().catch(() => ({}))) as { run_id?: string };
+  const corpo = (await req.json().catch(() => ({}))) as { run_id?: string; encerrar?: boolean; motivo?: string };
   await reaparRunsOrfas(db);
+
+  // Fase 12 — ENCERRAR explicitamente. Quando o laço do cliente parava (teto de rodadas ou 2
+  // falhas seguidas), ele só limpava o estado LOCAL: a run ficava `running` por 3 minutos até o
+  // reaper de órfãs a marcar como erro — daí os dois banners contraditórios ("rodando agora" +
+  // "parou no teto") e uma run fantasma com status errado a cada clique. Fechar uma run já
+  // fechada é no-op (o UPDATE filtra por status), então o ramo é idempotente.
+  if (corpo.encerrar && corpo.run_id) {
+    await fecharRun(db, corpo.run_id, "concluido", corpo.motivo ?? "encerrado pelo cliente");
+    return NextResponse.json({ encerrado: true, run_id: corpo.run_id });
+  }
+
   const ativa = await buscarRunAtiva(db);
   if (ativa && corpo.run_id && ativa.id !== corpo.run_id) {
     // Outra execução está viva: recusar é melhor do que duas esteiras sobre as mesmas linhas.
@@ -208,7 +219,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // girando a prioridade com o número da rodada para que nenhum passo fique de fora sempre.
   // Sem a migration de `esteira_runs`, `execucao` é null e a rodada 0 é sempre planejada — ainda
   // correto, só sem o giro.
-  const { passos: planoDaRodada, protecao } = planejarRodada(execucao?.rodadas ?? 0, HOBBY_BUDGET_MS);
+  // Fase 12 — o planejador orça a MESMA moeda que o executor gasta. Planejar contra
+  // HOBBY_BUDGET_MS quando `saldo()` nunca passa de HOBBY_BUDGET_MS − FOLGA criava passos que
+  // entravam no plano, consumiam a reserva na soma e nasciam sem fatia: 36 vagas mortas em 40
+  // rodadas (simulado com os números reais — o reaper morria em 4 das 20 rodadas dele).
+  const { passos: planoDaRodada, protecao } = planejarRodada(
+    execucao?.rodadas ?? 0,
+    HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS,
+  );
   /** O passo está no plano E tem fatia para uma unidade de trabalho? */
   const cabe = (passo: PassoEsteira) =>
     planoDaRodada.has(passo) && podeRodar(passo, saldo(), protecao[passo] ?? 0);
@@ -335,7 +353,10 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         if (!hasBudget(deadlineAt, 3_000)) { naoTentados = alvo.length - requeued; restantes = true; break; }
         try { await requeueDocument(db, d.id as string); requeued++; } catch { /* segue */ }
       }
-      etapas.reclassificacao = { reenfileirados: requeued, ...(naoTentados > 0 ? { adiados: naoTentados } : {}) };
+      // Fase 12 — chave PRÓPRIA. `reenfileirados` era gravada AQUI e no passo 9; o acumulador
+      // soma toda chave numérica homônima, então o banner mostrava "97 reclassificado(s)"
+      // somando reclassificação com desarquivamento — número falso que o usuário leu.
+      etapas.reclassificacao = { reclassificados: requeued, ...(naoTentados > 0 ? { adiados: naoTentados } : {}) };
     } catch {
       etapas.reclassificacao = { erro: "requeue falhou nesta rodada" };
     }
@@ -446,11 +467,18 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     Number((etapas.aprovacao as Record<string, number> | undefined)?.ignorados_pauta_apoio ?? 0) +
     Number((etapas.aprovacao as Record<string, number> | undefined)?.ilegiveis_arquivados ?? 0) +
     Number((etapas.aprovacao as Record<string, number> | undefined)?.sem_agencia_arquivados ?? 0);
-  if (arquivouAgora === 0 && cabe("recuperacao")) {
+  // Fase 12 — o guard significava "a aprovação NÃO arquivou nesta rodada"; com o plano da
+  // rodada ele passou a disparar também quando a aprovação NEM FOI OFERECIDA (o contador sai 0
+  // dos dois jeitos). Desarquivar rodava em 28 de 40 rodadas contra 12 do arquivador — o moinho
+  // da Fase 7 de volta por outra porta. Agora o desarquivamento só roda quando o arquivador FOI
+  // TENTADO nesta rodada e não arquivou nada.
+  const aprovacaoFoiTentada = !("fora_do_plano" in (etapas.aprovacao ?? {})) &&
+    !("pulado" in (etapas.aprovacao ?? {}));
+  if (aprovacaoFoiTentada && arquivouAgora === 0 && cabe("recuperacao")) {
     try {
       const r = await call(reprocessIgnoradosPOST, "/api/v1/admin/upload/reprocess-ignorados?dry_run=0", "recuperacao", {});
       const reenfileirados = Number(r.body?.reenfileirados ?? r.body?.requeued ?? 0);
-      etapas.recuperacao_ignorados = anotar(r, "recuperação de ignorados", { reenfileirados });
+      etapas.recuperacao_ignorados = anotar(r, "recuperação de ignorados", { desarquivados: reenfileirados });
       if (reenfileirados > 0) restantes = true;
     } catch {
       etapas.recuperacao_ignorados = { erro: "reprocesso falhou nesta rodada" };

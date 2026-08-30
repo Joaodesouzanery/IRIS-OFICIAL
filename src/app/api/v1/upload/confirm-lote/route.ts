@@ -23,7 +23,10 @@ import { POST as confirmPOST } from "../confirm/route";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
-export const maxDuration = 60;
+// Fase 12 — 60 → 120: esta rota honra `budget_ms`/HOBBY_BUDGET_MS (70s); declarar 60 aqui
+// pediria o kill da plataforma ANTES de o próprio orçamento parar o trabalho. 120 é o valor
+// que pipeline/run e o vercel.json já declaram e que os builds já provaram.
+export const maxDuration = 120;
 
 const SELECT_COLS =
   "id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, file_hash, agencia_id, ata_items, warnings, campos_detectados";

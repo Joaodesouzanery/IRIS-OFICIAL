@@ -55,12 +55,17 @@ ver a skill `iris-migrations`. RLS/indexação/pooling: `.agents/skills/supabase
   "Joao Nery"). Commit com e-mail gmail **bloqueia o deploy no Vercel**.
 - Rodapé: `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
 - **NUNCA** force-push em `main`. Push em `main` → **deploy automático no Vercel**.
-- **Tempo de função — o número que vale é 60s, não 120s.** O `vercel.json` pede `maxDuration: 120`,
-  mas (a) no plano **Hobby** o SIGKILL vem aos **60s** independentemente disso (o 120 só vale no Pro)
-  e (b) **14 rotas declaram `export const maxDuration = 60` no próprio arquivo**, e o segment config
-  do Next tem precedência sobre o `vercel.json` (só `pipeline/run` declara 120). Estourar =
-  **SIGKILL incatchável** (nem success nem error gravam). Por isso `HOBBY_BUDGET_MS = 50s`
-  (`src/lib/server/time-budget.ts`) é o orçamento real de uma rodada.
+- **Tempo de função — o teto REAL nunca foi medido; o limite operante é o CLIENTE (90s).**
+  A crença "SIGKILL aos 60s no Hobby" circulou por três fases sem medição (Fase 12): os deploys
+  passam com `maxDuration: 120` (o Vercel pode aceitar e rebaixar em runtime — build verde não
+  prova teto) e a função já foi vista viva aos 90s (piso, não teto). O que LIMITA hoje é o abort
+  de 90s do cliente (`REQUEST_TIMEOUT_MS` em `src/lib/api.ts`), que NÃO mata a função no
+  servidor: acima de ~86s o laço dispara a rodada seguinte sobre a MESMA run — duas invocações
+  concorrentes. Por isso `HOBBY_BUDGET_MS = 70s` (`src/lib/server/time-budget.ts`), sob os ~86s
+  com margem. Para subir além: aumentar `REQUEST_TIMEOUT_MS` ANTES do orçamento, nessa ordem.
+  Estourar o teto da plataforma = **SIGKILL incatchável** (nem success nem error gravam) —
+  14 rotas declaram `export const maxDuration = 60` in-file e o segment config do Next tem
+  precedência sobre o `vercel.json`; revisar esses 60 se o orçamento um dia passar deles.
 - **Regra de orçamento (Fase 7):** nenhum passo pode receber uma FATIA menor que a RESERVA interna
   que ele exige — senão ele roda, gasta o round-trip de auth e devolve zero em silêncio. Foi assim
   que a coleta (fatia 8s × reserva 25s) inseriu zero itens por rodada durante semanas.

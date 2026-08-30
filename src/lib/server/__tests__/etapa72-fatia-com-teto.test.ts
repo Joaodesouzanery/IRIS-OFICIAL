@@ -29,6 +29,7 @@ import {
   ORDEM_DOS_PASSOS,
   PASSOS_CAUDA,
   planejarRodada,
+  FOLGA_ORQUESTRADOR_MS,
   fatiaDoPasso,
   podeRodar,
   type PassoEsteira,
@@ -39,10 +40,18 @@ const RAIZ = join(__dirname, "../../../..");
 const RUN = readFileSync(join(RAIZ, "src/app/api/v1/pipeline/run/route.ts"), "utf-8");
 const PASSOS = Object.keys(RESERVA) as PassoEsteira[];
 
-/** Executa uma rodada como o orquestrador executa: em ordem, cada passo tomando sua fatia. */
+/**
+ * Executa uma rodada como o orquestrador executa: em ordem, cada passo tomando sua fatia.
+ *
+ * ⚠️ Fase 12 — a moeda é a do EXECUTOR (`orcamento − FOLGA`), não a do planejador. A primeira
+ * versão simulava com `saldo = orcamento` — a mesma moeda do plano — e por isso ficou VERDE
+ * enquanto a produção matava 36 vagas de passo em 40 rodadas: o teste tinha o mesmo off-by-4s
+ * do código que deveria vigiar.
+ */
 function simularRodada(rodada: number, orcamento: number) {
-  const { passos, protecao } = planejarRodada(rodada, orcamento);
-  let saldo = orcamento;
+  const exec = orcamento - FOLGA_ORQUESTRADOR_MS;
+  const { passos, protecao } = planejarRodada(rodada, exec);
+  let saldo = exec;
   const rodaram: PassoEsteira[] = [];
   const noPlanoMasSemSaldo: PassoEsteira[] = [];
   for (const passo of ORDEM_DOS_PASSOS) {
@@ -92,6 +101,19 @@ describe("etapa72 · o plano da rodada", () => {
         const soma = [...passos].reduce((s, p) => s + RESERVA[p], 0);
         expect(soma, `rodada ${r} @ ${orcamento}ms`).toBeLessThanOrEqual(orcamento);
       }
+    }
+  });
+
+  it("nenhum passo PLANEJADO nasce sem fatia — a moeda do plano é a do executor", () => {
+    // A asserção que teria pego o off-by-4s: um passo que entra no plano, consome a reserva na
+    // soma e não consegue fatia é a Fase 7 de volta — gasta a vaga e devolve zero.
+    const exec = HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS;
+    for (let r = 0; r < 40; r++) {
+      const { passos, protecao } = planejarRodada(r, exec);
+      const mortos = [...passos].filter(
+        (p) => fatiaDoPasso(p, exec, protecao[p] ?? 0) < RESERVA[p],
+      );
+      expect(mortos, `rodada ${r}: passo planejado sem fatia`).toEqual([]);
     }
   });
 
@@ -203,7 +225,8 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
   });
 
   it("todo passo passa pelo plano — nenhum gate solto", () => {
-    expect(RUN).toMatch(/planejarRodada\(execucao\?\.rodadas \?\? 0, HOBBY_BUDGET_MS\)/);
+    // A primeira versão PINAVA a chamada com o off-by-4s — o teste protegia o defeito.
+    expect(RUN).toMatch(/planejarRodada\(\s*execucao\?\.rodadas \?\? 0,\s*HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS,?\s*\)/);
     expect(RUN).toMatch(/planoDaRodada\.has\(passo\) && podeRodar\(passo, saldo\(\), protecao\[passo\] \?\? 0\)/);
     expect(RUN).not.toMatch(/Math\.max\(3_000, msLeft\(deadlineAt\) - 4_000\)/);
   });
