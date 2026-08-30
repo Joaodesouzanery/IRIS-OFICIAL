@@ -505,45 +505,9 @@ function sameAnttDirector(canonical: string, textualName: string): boolean {
     return textual.includes(a) || a.includes(textual);
   });
 }
-function extractAnttProcesses(text: string): AtaPreviewItem[] {
-  const normalizedBreaks = text
-    // Repara nº SEI quebrado por espaços: "50500.123456 /2026-11" → "50500.123456/2026-11".
-    .replace(/([0-9]{5})\s*\.\s*([0-9]{6})\s*\/\s*([0-9]{4})\s*-\s*([0-9]{2})/g, "$1.$2/$3-$4")
-    .replace(/\s+(?=\d+\.\d+(?:\.\d+)?\s+Processo)/g, "\n")
-    .replace(/\s+(?=Processo\s+n?[Âºo]?\s*\d{5}\.)/gi, "\n");
-  const re = /(?:(\d+\.\d+(?:\.\d+)?)\s+)?Processo\s*(?:n[Âºo]\s*)?([0-9]{5}\.[0-9]{6}\/[0-9]{4}-[0-9]{2}|[0-9][0-9.\-/]{10,})/gi;
-  const matches = [...normalizedBreaks.matchAll(re)];
-  const items: AtaPreviewItem[] = [];
-
-  for (let i = 0; i < matches.length; i++) {
-    const match = matches[i];
-    const start = match.index ?? 0;
-    const end = matches[i + 1]?.index ?? Math.min(normalizedBreaks.length, start + 3000);
-    const block = cleanText(normalizedBreaks.slice(start, end));
-    const interessado = between(block, /Interessado:\s*/i, /\s+Assunto:\s*/i);
-    const assunto = between(block, /Assunto:\s*/i, /\s+(?:\d+\.\d+|Processo\s+n?[Âºo]?|Documento assinado|Pauta da Reuni|$)/i);
-    const relator = extractRelatorForBlock(block) ?? extractNearestRelator(normalizedBreaks.slice(0, start));
-    const decisao = between(block, /Decis[aÃ£]o:\s*/i, /\s+(?:Documento assinado|Refer[eÃª]ncia:|$)/i);
-
-    if (isSeiReferenceProcess(block, interessado, assunto)) {
-      continue;
-    }
-
-    items.push({
-      item_numero: match[1] ?? String(i + 1),
-      processo: cleanText(match[2]),
-      interessado,
-      relator,
-      assunto,
-      decisao,
-      resultado: decisao ? inferResultado(`${assunto ?? ""} ${decisao}`) : null,
-      microtema: "outros",
-      area_regulatoria: classifyAreaRegulatoria(`${interessado ?? ""} ${assunto ?? ""} ${decisao ?? ""}`),
-    });
-  }
-
-  return dedupeItems(items);
-}
+// Fase 12 — `extractAnttProcesses` (v1) foi REMOVIDA: zero chamadores desde que a V2 a
+// substituiu, e uma cópia morta do extrator é a classe de dívida que já custou caro aqui
+// (duas implementações da chave semântica). O caminho vivo é extractAnttProcessesV2.
 
 function extractSingleProcess(text: string, filename = "", type: AnttManualDocumentType = "outro"): AtaPreviewItem {
   if (type === "voto_individual") {
@@ -700,7 +664,7 @@ function extractAnttProcessesV2(text: string): AtaPreviewItem[] {
     const start = match.index ?? 0;
     const end = matches[i + 1]?.index ?? Math.min(normalizedBreaks.length, start + 3000);
     const block = cleanText(normalizedBreaks.slice(start, end));
-    const interessado = between(block, /Interessado:\s*/i, /\s+Assunto:\s*/i);
+    const interessado = between(block, /Interessad[oa]s?:\s*/i, /\s+Assunto:\s*/i); // Fase 12: plural — "INTERESSADOS:" saía null (etapa62 já cobria nos outros parsers)
     const assunto = between(
       block,
       /Assunto:\s*/i,

@@ -381,6 +381,12 @@ export async function analyzeUploadPdf(input: {
     nomesContra: fields.nomes_votacao_contra,
     nomesAbstencao: fields.nomes_votacao_abstencao,
     dataReuniao: fields.data_reuniao,
+    // Fase 12 — SEM o cadastro, `hasNominalNames` degrada para `Boolean(nomes?.length)`:
+    // qualquer nome extraído (signatário de rodapé, nome que não casa) desligava a inferência
+    // E não gerava voto nominal — item unânime nascia com MENOS votos que o colegiado. E o
+    // parcial é permanente: o backfill só repara deliberação com ZERO voto. O parâmetro
+    // existia para exatamente isto (ver o docstring da função); só não era passado.
+    diretoresList,
   });
   const mainVotosSugeridos = buildVoteSuggestions({
     nomes: fields.nomes_votacao,
@@ -406,6 +412,10 @@ export async function analyzeUploadPdf(input: {
         nomesContra: item.votos_contra_detectados ?? [],
         nomesAbstencao: item.votos_abstencao_detectados ?? [],
         dataReuniao: fields.data_reuniao,
+        // Fase 12 — o sítio mais grave dos dois: para ata da ANTT, `votos_detectados` são os
+        // PRESENTES, então presentes não-vazios desligavam a inferência do item inteiro — e
+        // `votos_sugeridos` não-vazio faz o confirm pular o fallback do roster do pai.
+        diretoresList,
       });
       return {
         ...item,
