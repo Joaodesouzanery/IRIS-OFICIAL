@@ -3,6 +3,34 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 12 (30/ago/2026) — a AUDITORIA de votos: o que rodar e o que ficou registrado
+
+**Ação sua (2 passos), e é ela que fecha a investigação dos votos desiguais:**
+
+1. Cole **`docs/auditoria-votos-cobertura.sql`** no SQL Editor e me mande o JSON. Ele mede:
+   votos por diretor POR AGÊNCIA com janela de mandato e oportunidades (bloco ①), votos × roster
+   deliberação a deliberação com as 10 piores divergentes e QUEM FALTA (②/②b), interessados e
+   empresas (③), cobertura 2026 lado-banco (④), 3 amostras por agência com a URL pública do PDF
+   (⑤) e as sondas de causa (⑥).
+2. Logado, abra `/api/v1/admin/cobertura-ao-vivo` e mande junto — é o lado-FONTE da cobertura.
+
+> Contexto que a investigação já estabeleceu: 4 dos 5 nomes do print "Votos por Diretor" eram da
+> ARTESP (o widget misturava agências — corrigido: a sigla agora aparece); dois bugs reais de
+> perda silenciosa foram consertados (a inferência chamada sem o cadastro de diretores, e o
+> plural "INTERESSADOS:" na ANTT); e a desigualdade RESIDUAL dentro da ANTT tem um suspeito
+> estrutural — o voto individual dá +1 só ao relator (bloco ⑥/relatoria decide).
+
+### Adiado por decisão, aguardando os números da auditoria
+- **Backfill de voto PARCIAL**: `materializar-faltantes` só repara deliberação com ZERO voto —
+  3-de-5 fica assim para sempre. Completar o roster às cegas FABRICARIA voto; o bloco ② diz o
+  tamanho do passivo antes de decidir.
+- **Múltiplos interessados**: só o primeiro é guardado (`firstMatch` + coluna escalar em
+  `deliberacoes.interessado`). Mudança de schema; decisão de produto.
+- **Aliases ANTT hardcoded** (`antt-manual-parser.ts`): presença detectada só pelos 6 diretores
+  atuais — troca de diretoria os tornaria invisíveis. A sonda ⑥c mede se já há alguém de fora.
+- **Alegação DERRUBADA (não refazer):** `dedupeItems` da ANTT colidindo `"3.1|null"` — os
+  extratores sempre preenchem `processo`; a chave nunca tem processo nulo nesses sítios.
+
 ## 🔴 FASE 10-11 (28/ago/2026) — como medir o tempo da esteira, sem rota nem página
 
 **Tudo pelo SQL Editor que você já usa.** Cole isto para ver as últimas execuções:
