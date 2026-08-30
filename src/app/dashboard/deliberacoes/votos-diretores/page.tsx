@@ -1158,6 +1158,10 @@ export default function VotosDiretoresPage() {
                     >
                       <td className="py-2 pr-3 text-text-primary font-medium">
                         {d.diretor_nome}
+                        {/* Fase 12 — sigla junto do nome: a tabela agrega as 3 agências. */}
+                        {d.agencia_sigla && (
+                          <span className="ml-1.5 text-[10px] font-mono text-text-muted uppercase">{d.agencia_sigla}</span>
+                        )}
                         {(d.nominais ?? 0) + (d.inferidos ?? 0) > 0 && (
                           <span className="block text-[10px] font-normal text-text-muted">
                             {d.nominais ?? 0} lido{(d.nominais ?? 0) === 1 ? "" : "s"} · {d.inferidos ?? 0} inferido{(d.inferidos ?? 0) === 1 ? "" : "s"}

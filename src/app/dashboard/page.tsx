@@ -201,6 +201,15 @@ export default function DashboardPage() {
                   <div key={d.diretor_id} className="flex items-center justify-between">
                     <span className="text-xs text-text-secondary truncate max-w-[180px]">
                       {d.diretor_nome.split(" ").slice(0, 2).join(" ")}
+                      {/* Fase 12 — a SIGLA vai junto do nome. Este ranking agrega TODAS as
+                          agências colegiadas, e sem a sigla ele induzia comparação entre
+                          colegiados e janelas de mandato diferentes: o usuário leu 5 nomes
+                          (4 ARTESP + 1 ANTT) como se fossem o mesmo colegiado e abriu uma
+                          investigação de "votos desiguais na ANTT". O número estava certo;
+                          a tela é que não dizia de quem falava. */}
+                      {d.agencia_sigla && (
+                        <span className="ml-1.5 text-[10px] font-mono text-text-muted uppercase">{d.agencia_sigla}</span>
+                      )}
                     </span>
                     <span className="font-mono text-sm text-brand font-medium">
                       {formatNumber(d.total)}
@@ -371,6 +380,9 @@ export default function DashboardPage() {
                     <div className="flex-1 min-w-0">
                       <p className="text-xs font-medium text-text-primary truncate group-hover:text-brand transition-colors">
                         {d.diretor_nome.split(" ").slice(0, 2).join(" ")}
+                        {d.agencia_sigla && (
+                          <span className="ml-1.5 text-[10px] font-mono text-text-muted uppercase">{d.agencia_sigla}</span>
+                        )}
                       </p>
                       <div className="flex items-center gap-1 mt-0.5">
                         <div className="flex-1 bg-bg-hover rounded-full h-1">
