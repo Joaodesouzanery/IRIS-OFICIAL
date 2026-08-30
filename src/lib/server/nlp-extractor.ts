@@ -391,7 +391,11 @@ const RE_VOTO_AUSENTE = new RegExp(
   `|(?:[Dd]iretor[a]?\\s+)?(${NOME})\\s+(?:esteve\\s+)?[Aa]usente`,
   "g",
 );
-const RE_AUSENTE_LABEL = /Ausente[s]?:\s*([^\n.]{5,180})/gi;
+// Fase 13 — o rótulo REAL das deliberações da ARTESP ("Ausência Justificada: Raquel França
+// Carneiro - Diretora - Afastamento em Férias."): sem ele a diretora virava OMISSÃO — a mesma
+// aparência de voto perdido. Exige o rótulo com ':' — "ausência de impugnações" em prosa não
+// casa (a alternativa antiga de 'Ausência d[oa]' continua no RE_VOTO_AUSENTE).
+const RE_AUSENTE_LABEL = /(?:Ausente[s]?|Aus[êe]ncia[s]?\s+Justificada[s]?):\s*([^\n.]{5,180})/gi;
 // Abstenção narrativa: "Fulano absteve-se" / "Fulano se absteve" / "Fulano votou pela abstenção".
 // SEM flag 'i' — vide RE_VOTO_AUSENTE (o 'i' anula a exigência de Capitalização do NOME).
 const RE_VOTO_ABSTENCAO = new RegExp(
@@ -640,7 +644,9 @@ function uniquePush(list: string[], value: string | null | undefined) {
 function splitDirectorNames(value: string): string[] {
   return value
     .replace(/\b(?:Diretor(?:a)?|Diretor-Geral|Conselheiro(?:a)?|Presidente)\b/gi, "")
-    .split(/\s*(?:,|;|\se\s)\s*/i)
+    // Fase 13 — o " - " também separa ("Raquel França Carneiro - Diretora - Afastamento em
+    // Férias"). Só HÍFEN COM ESPAÇOS: nome composto real ("Sá-Carvalho") não tem espaços em volta.
+    .split(/\s*(?:,|;|\se\s)\s*|\s+[-–—]\s+/i)
     .map((name) => name.replace(/\s+/g, " ").trim())
     .filter((name) => name.split(/\s+/).length >= 2 && name.length <= 100);
 }
