@@ -554,7 +554,7 @@ function applyLinkSelector(
   const sel = selector?.trim();
   if (!sel || sel === "a[href]" || sel === "a") return anchors;
 
-  const filtered = anchors.filter((a) => matchesLinkSelector(a.attrs, sel));
+  const filtered = anchors.filter((a) => matchesLinkSelector(a, sel));
   if (filtered.length === 0 && anchors.length > 0) {
     console.warn(`[monitoring] seletor "${sel}" não casou nenhum link em ${baseUrl}; usando todos os links`);
     return anchors;
@@ -562,7 +562,39 @@ function applyLinkSelector(
   return filtered;
 }
 
-function matchesLinkSelector(attrs: string, selector: string): boolean {
+function matchesLinkSelector(anchor: { attrs: string; href: string }, selector: string): boolean {
+  const attrs = anchor.attrs;
+
+  // Fase 13 — sufixo `[attr$="valor"]` (ex.: a[href$=".pdf"]) AVALIADO PRIMEIRO e com retorno
+  // próprio. Duas armadilhas já mordidas nesta própria implementação:
+  //  · o ".pdf" entre aspas casa o matcher de CLASSE (`\.pdf` → exigiria class="pdf"), zerava a
+  //    lista e o FALLBACK devolvia TODOS os links — o seletor "funcionava" deixando tudo passar;
+  //  · `attrs` NÃO contém o href (extractAnchors o extrai à parte) — para `href$=` o valor certo
+  //    é `anchor.href`, já normalizado como URL absoluta.
+  // A ANM precisava disto para separar conteúdo (ata-87-rop.pdf, sem classe) das ~760 âncoras do
+  // MENU do gov.br — foi por `a[href]` pegar tudo que manual de sistema virou "deliberação".
+  const suffixMatch = selector.match(/\[([\w-]+)\$="([^"]+)"\]/);
+  if (suffixMatch) {
+    const [, attr, sufixo] = suffixMatch;
+    const valor = attr.toLowerCase() === "href"
+      ? anchor.href
+      : (attrs.match(new RegExp(`${attr}=["']([^"']*)["']`, "i"))?.[1] ?? "");
+    // Compara contra a URL SEM query/fragment (href real pode ter ?t=123).
+    return valor.split(/[?#]/)[0].toLowerCase().endsWith(sufixo.toLowerCase());
+  }
+
+  // Fase 13 — negação `:not(.classe)`: a assinatura da ANM é NEGATIVA (âncora de conteúdo não
+  // tem classe; TODA âncora de menu do gov.br tem class="state-published"). E `.pdf` como sufixo
+  // perderia conteúdo real: 2 das 8 atas apontam para PÁGINA (o ramo HTML→PDF do enfileiramento
+  // resolve), não para o arquivo.
+  const notMatch = selector.match(/:not\(\.([\w-]+)\)/);
+  if (notMatch) {
+    const cls = notMatch[1];
+    const classAttr = attrs.match(/class=["']([^"']*)["']/i)?.[1] ?? "";
+    if (new RegExp(`(^|\\s)${cls}(\\s|$)`).test(classAttr)) return false;
+    return true;
+  }
+
   const classMatch = selector.match(/\.([\w-]+)/);
   if (classMatch) {
     const cls = classMatch[1];
