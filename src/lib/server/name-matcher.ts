@@ -235,6 +235,11 @@ const NOT_A_NAME_WORDS = new Set([
   "item", "pauta", "ata", "materia", "matéria", "decisao", "decisão", "pelo", "pela",
   // QA ago/2026 — lixo real aprovado na ANM ("Acesso Externo Com", "Ou Acesse Os",
   // "Elaborar Relatório Bimestral De", "…Restituiu-lhe A Presidência", "…Para A Relatoria"):
+  // Fase 13 — lixo real APROVADO na ARTESP (cabeçalhos de tabela de anexo de resolução que
+  // viraram diretores com voto nominal): "Função Confiança Quantidadenível", "Uma Vez Que",
+  // "Renovação De Frota".
+  "funcao", "função", "confianca", "confiança", "nivel", "nível", "quantidade",
+  "uma", "vez", "que", "renovacao", "renovação", "frota", "cargo", "cargos", "vaga", "vagas",
   "acesso", "externo", "externa", "acesse", "nota", "tecnica", "técnica", "relatorio",
   "relatório", "bimestral", "titulares", "representantes", "sessao", "sessão", "publica",
   "pública", "avaliacao", "avaliação", "elaborar", "participar", "convidando",
@@ -266,6 +271,10 @@ export function isStrictPersonName(raw: string): boolean {
     if (NAME_PARTICLES.has(lower) || NAME_SUFFIXES.has(lower)) continue;
     // Token de conteúdo: precisa começar com maiúscula (aceita acento) e seguir minúsculas/acentos.
     if (!/^[A-ZÀ-Ý]/.test(t)) return false;
+    // Fase 13 — palavras COLADAS de tabela ("Quantidadenível", 15 chars). Nenhum sobrenome
+    // brasileiro comum passa de 14 ("Vasconcellos" = 12, "Albuquerque" = 11); nome composto
+    // real vem separado por espaço ou hífen.
+    if (lower.length > 14) return false;
     capitalized++;
   }
   return capitalized >= 2;

@@ -55,8 +55,12 @@ describe("etapa66 · adesão exige OBJETO do colegiado, como a divergência semp
   });
 
   it("o sujeito que não é pessoa não vira voto — nem com objeto certo", () => {
-    // `isStrictPersonName` sozinho NÃO barraria isto: medido, ele aceita o nome do órgão.
-    expect(isStrictPersonName("Superintendência de Fiscalização"), "pré-condição do teste").toBe(true);
+    // HISTÓRICO: quando este teste nasceu, `isStrictPersonName` ACEITAVA este órgão — a
+    // pré-condição documentava a fraqueza e provava que o guard de sujeito era necessário.
+    // A Fase 13 endureceu o strict (teto de 14 chars por token barra "Superintendência"), então
+    // a pré-condição virou o INVERSO — e o guard de sujeito continua necessário para órgãos
+    // curtos que o strict não vê ("Mesa Técnica", "Grupo Gestor").
+    expect(isStrictPersonName("Superintendência de Fiscalização"), "Fase 13: o strict agora barra").toBe(false);
     expect(extractItemVotes("Superintendência de Fiscalização acompanhou a sessão.", roleMap).favor).toEqual([]);
   });
 });

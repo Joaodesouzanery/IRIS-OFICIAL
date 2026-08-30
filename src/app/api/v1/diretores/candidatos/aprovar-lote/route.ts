@@ -14,7 +14,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin, requireAdminOrCron, getAuthenticatedUser } from "@/lib/server/request-guards";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
 import { findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
-import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { COLEGIADO_SIGLAS, fonteNominaVotos } from "@/lib/server/colegiado-sources";
 import { getActiveDiretoresForVote } from "@/lib/server/vote-inference";
 import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
 
@@ -235,6 +235,9 @@ export async function POST(req: NextRequest) {
   // (b) o mesmo nome aparecer em ≥2 DOCUMENTOS distintos — signatário/servidor citado numa
   // única ata não vira diretor (diretor de verdade reaparece a cada reunião).
   const { data: agRows } = await db.from("agencias").select("id, sigla");
+  const siglaPorId = new Map(
+    ((agRows ?? []) as Array<{ id: string; sigla: string }>).map((a) => [a.id, String(a.sigla)]),
+  );
   const colegiadaIds = new Set(
     ((agRows ?? []) as Array<{ id: string; sigla: string }>)
       .filter((a) => COLEGIADO_SIGLAS.has(String(a.sigla)))
@@ -268,6 +271,14 @@ export async function POST(req: NextRequest) {
     }
     if (!candidato.agencia_id || !colegiadaIds.has(candidato.agencia_id)) {
       pulados.push({ id: candidato.id, nome, reason: "agência fora da esteira de votos (não-colegiada) — não cria diretor" });
+      continue;
+    }
+    // Fase 13 — a fonte NOMINA? Cabeçalho de tabela da ARTESP passou por TODOS os gates deste
+    // laço (nome estrito à época, colegiada, ≥2 documentos — cabeçalho reaparece em todo anexo!)
+    // e virou diretor com voto nominal. Se a fonte nunca nomina, um nome extraído dela não é
+    // evidência de diretor: fica pendente para o humano, nunca vira pessoa automaticamente.
+    if (!fonteNominaVotos(siglaPorId.get(candidato.agencia_id) ?? null, String(candidato.source_type ?? "deliberacao"))) {
+      pulados.push({ id: candidato.id, nome, reason: "fonte não nomina votos — pessoa nova exige revisão humana" });
       continue;
     }
     if ((ocorrenciasPorNome.get(`${candidato.agencia_id}|${nome}`) ?? 1) < 2) {

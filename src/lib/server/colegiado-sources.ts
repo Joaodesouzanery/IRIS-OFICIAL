@@ -148,6 +148,26 @@ const CAPACIDADE_NOMINAL: Record<string, CapacidadeNominal> = {
   "ARTESP|deliberacao": "nenhum",
 };
 
+/**
+ * A fonte NOMINA votos? (Fase 13 — a camada que faltava.)
+ *
+ * `capacidadeNominal` sempre soube que ARTESP|deliberacao = "nenhum" ("Houve aprovação dos
+ * presentes por unanimidade de votos" — sem nomes), mas NINGUÉM consumia isso no caminho do
+ * voto. O resultado em produção: cabeçalhos de tabela ("Função Confiança Quantidadenível")
+ * extraídos como "nomes de votação", promovidos a diretores e gravados como os ÚNICOS votos
+ * nominais da agência.
+ *
+ * Fonte com capacidade "nenhum": nomes extraídos não viram voto nominal, não geram candidato de
+ * diretor e não criam pessoa nova. A inferência por presença/mandato CONTINUA — é ela que dá os
+ * votos verdadeiros. "parcial" e "sempre" seguem nominando (a ANM nomina em dissenso).
+ */
+export function fonteNominaVotos(
+  agenciaSigla: string | null | undefined,
+  tipoDocumento: string | null | undefined,
+): boolean {
+  return capacidadeNominal(agenciaSigla, tipoDocumento) !== "nenhum";
+}
+
 export function capacidadeNominal(
   agenciaSigla: string | null | undefined,
   tipoDocumento: string | null | undefined,

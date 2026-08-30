@@ -15,7 +15,7 @@ import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import { hasBudget } from "@/lib/server/time-budget";
-import { COLEGIADO_SIGLAS, dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
+import { COLEGIADO_SIGLAS, dataReuniaoPlausivel, fonteNominaVotos } from "@/lib/server/colegiado-sources";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -717,7 +717,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           }
 
           // Candidato do relator (para backfill se ainda não casar no cadastro).
-          if (colegiadaIds.has(effectiveAgenciaId)) await recordDirectorCandidates(db, [relatorNome], diretoresList, {
+          if (colegiadaIds.has(effectiveAgenciaId)
+            && fonteNominaVotos(siglaPorId.get(effectiveAgenciaId) ?? null, d.tipo_documento ?? "deliberacao")) await recordDirectorCandidates(db, [relatorNome], diretoresList, {
             agencia_id: effectiveAgenciaId, filename: d.filename, source_type: "deliberacao",
             source_url: extractSourceUrl(d.extraction_raw),
             source_hash: hashEvidence(`${d.filename}|${d.numero_deliberacao ?? ""}|${d.processo ?? ""}`),
@@ -803,7 +804,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           }
 
           const ataVotingNames = uniqueNamesFromItems(rawConfirm.ata_items);
-          if (colegiadaIds.has(effectiveAgenciaId)) await recordDirectorCandidates(db, ataVotingNames, diretoresList, {
+          // Fase 13 — fonte que não nomina (ARTESP) não gera candidato de diretor: foi por aqui
+          // que cabeçalho de tabela virou "diretor" com voto nominal.
+          if (colegiadaIds.has(effectiveAgenciaId)
+            && fonteNominaVotos(siglaPorId.get(effectiveAgenciaId) ?? null, "ata")) await recordDirectorCandidates(db, ataVotingNames, diretoresList, {
             agencia_id: effectiveAgenciaId,
             filename: d.filename,
             source_type: "ata",
@@ -1047,7 +1051,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
         const votingNames = d.nomes_votacao;
         if (votingNames.length > 0) {
-          if (colegiadaIds.has(effectiveAgenciaId)) await recordDirectorCandidates(db, votingNames, diretoresList, {
+          if (colegiadaIds.has(effectiveAgenciaId)
+            && fonteNominaVotos(siglaPorId.get(effectiveAgenciaId) ?? null, d.tipo_documento ?? "deliberacao")) await recordDirectorCandidates(db, votingNames, diretoresList, {
             agencia_id: effectiveAgenciaId,
             filename: d.filename,
             source_type: d.tipo_documento === "ata" ? "ata" : "deliberacao",

@@ -20,7 +20,7 @@ import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 // têm mojibake no restante). Usado para computar o status do preview.
 export const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
 import { classifyRegulatoryDocument, extractAnmMeetingMetadata, detectJuizo } from "@/lib/server/regulatory-documents";
-import { dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
+import { dataReuniaoPlausivel, fonteNominaVotos } from "@/lib/server/colegiado-sources";
 import {
   buildVoteSuggestions,
   getActiveDiretoresForVote,
@@ -351,6 +351,37 @@ export async function analyzeUploadPdf(input: {
     }));
     microtema = ata_items[0]?.microtema ?? microtema;
     area_regulatoria = (ata_items[0]?.area_regulatoria ?? area_regulatoria) as typeof area_regulatoria;
+  }
+
+  // ═══ Fase 13 — FONTE QUE NÃO NOMINA não produz voto nominal ═══════════════
+  // `capacidadeNominal` sempre soube que ARTESP|deliberacao/ata = "nenhum" e ninguém consumia:
+  // cabeçalho de tabela ("Função Confiança Quantidadenível") virou "nome de votação", diretor e
+  // voto nominal — os ÚNICOS nominais da ARTESP em produção eram esse lixo.
+  //
+  // ⚠️ O corte é SÓ do caminho genérico (`!antt.isAntt`): a ANTT atribui voto de ata por
+  // presença+unanimidade usando estes mesmos baldes de forma CURADA (aliases fechados) — cortá-la
+  // aqui converteria centenas de votos nominais reais em inferidos. ARTESP é o alvo; ANM é
+  // "parcial" (nomina em dissenso) e não é alcançada.
+  if (!antt.isAntt && !fonteNominaVotos(agencia_sigla_detected, tipo_documento)) {
+    const descartados = (fields.nomes_votacao?.length ?? 0)
+      + (fields.nomes_votacao_contra?.length ?? 0)
+      + (fields.nomes_votacao_abstencao?.length ?? 0);
+    if (descartados > 0) {
+      documentWarnings.push(
+        `Fonte não nomina votos (${agencia_sigla_detected ?? "agência"}/${tipo_documento}): ${descartados} nome(s) extraído(s) descartado(s) do caminho nominal — votos não são criados a partir deles; a inferência por presença/mandato continua.`,
+      );
+    }
+    fields.nomes_votacao = [];
+    fields.nomes_votacao_contra = [];
+    fields.nomes_votacao_abstencao = [];
+    if (ata_items?.length) {
+      ata_items = ata_items.map((item) => ({
+        ...item,
+        votos_detectados: [],
+        votos_contra_detectados: [],
+        votos_abstencao_detectados: [],
+      }));
+    }
   }
 
   const mandateRoster = db && agencia_id_detected
