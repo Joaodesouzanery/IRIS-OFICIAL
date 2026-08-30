@@ -4,7 +4,7 @@ import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "
 import {
   avisoUnanimidadeContestada, avisoAtaItensFaltando,
   checarAncorasItens, checarCoerenciaUnanimidade, checarImpedidoComVoto,
-  checarCardinalidadeVotos, checarInteressadoNoDispositivo, checarVotoQualidadeDuplo,
+  checarCardinalidadeVotos, checarInteressadoNoDispositivo, checarSinalDeDeliberacao, checarVotoQualidadeDuplo,
   checarAdmissibilidadeMalClassificada, checarLigaduraResidual,
   checarDataAnteriorAoProcesso, checarAnoProtocoloDaAta,
   formatarAchados, temBloqueio, type Achado,
@@ -532,6 +532,17 @@ export async function analyzeUploadPdf(input: {
         cadeiras: (fields.nomes_presentes?.length ?? 0) || null,
         decidido: Boolean(fields.resultado) && fields.resultado !== "Retirado de Pauta",
       })),
+      // C21 (Fase 13) — SINAL DE DELIBERAÇÃO: manual/página institucional classificado como
+      // "deliberacao" não pode virar decisão final. Regra do usuário: sem número, sem processo,
+      // sem relator, sem reunião e sem itens ⇒ bloqueante.
+      ...checarSinalDeDeliberacao({
+        tipoDocumento: tipo_documento,
+        numeroDeliberacao: fields.numero_deliberacao,
+        processo: fields.processo,
+        relator: fields.relator,
+        numeroReuniao: fields.numero_reuniao,
+        ataItemsCount: ata_items?.length ?? 0,
+      }),
       ...checarVotoQualidadeDuplo({
         votoQualidadePor: fields.voto_qualidade_por,
         diretoresComVoto: [...(fields.nomes_votacao_favor ?? []), ...(fields.nomes_votacao_contra ?? [])],

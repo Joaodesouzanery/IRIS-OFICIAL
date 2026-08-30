@@ -16,7 +16,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { buildConfirmDelibFromDoc } from "@/lib/server/auto-confirm";
-import { isHardFailSemSinal } from "@/lib/server/consistency-checks";
+import { isHardFailSemSinal, checarSinalDeDeliberacao } from "@/lib/server/consistency-checks";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { RESERVA } from "@/lib/server/esteira-reservas";
 import { POST as confirmPOST } from "../confirm/route";
@@ -88,6 +88,7 @@ export async function POST(req: NextRequest) {
   let arquivadosDuplicataExata = 0;
   let fundidosSemanticos = 0;
   let arquivadosIlegiveis = 0;
+  let arquivadosNaoDeliberativos = 0;
   let arquivadosSemAgencia = 0;
 
   // Perf (QA ago/2026): a checagem de duplicata exata era 1 maybeSingle POR doc — com
@@ -134,6 +135,22 @@ export async function POST(req: NextRequest) {
     if (!agenciaId) {
       await arquivar(doc, "sem_agencia");
       arquivadosSemAgencia++;
+      continue;
+    }
+
+    // Fase 13 — NÃO-DELIBERATIVO: manual/página institucional rotulado "deliberacao" (o caso
+    // real: manuais da ANM contados como decisão final). Mesmo critério do C21; arquiva com
+    // motivo próprio em vez de ficar em revisão eterna — manual não é "revisável p/ deliberação".
+    if (checarSinalDeDeliberacao({
+      tipoDocumento: doc.tipo_documento,
+      numeroDeliberacao: fields.numero_deliberacao,
+      processo: fields.processo,
+      relator: fields.relator,
+      numeroReuniao: fields.numero_reuniao,
+      ataItemsCount: Array.isArray(doc.ata_items) ? doc.ata_items.length : 0,
+    }).length > 0) {
+      await arquivar(doc, "nao_deliberativo");
+      arquivadosNaoDeliberativos++;
       continue;
     }
 
@@ -194,6 +211,7 @@ export async function POST(req: NextRequest) {
         materializados, ignorados, erros,
         arquivados_duplicata_exata: arquivadosDuplicataExata,
         arquivados_ilegiveis: arquivadosIlegiveis,
+    arquivados_nao_deliberativos: arquivadosNaoDeliberativos,
         arquivados_sem_agencia: arquivadosSemAgencia,
       }, { status: 502 });
     }
@@ -209,6 +227,7 @@ export async function POST(req: NextRequest) {
     arquivados_duplicata_exata: arquivadosDuplicataExata,
     fundidos_semanticos: fundidosSemanticos,
     arquivados_ilegiveis: arquivadosIlegiveis,
+    arquivados_nao_deliberativos: arquivadosNaoDeliberativos,
     arquivados_sem_agencia: arquivadosSemAgencia,
     restantes,
     legal_notice:

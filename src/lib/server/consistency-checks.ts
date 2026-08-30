@@ -73,6 +73,40 @@ export interface Achado {
 }
 
 /**
+ * C21 — SINAL DE DELIBERAÇÃO (Fase 13).
+ *
+ * Produção gravou manuais do site institucional da ANM como `deliberacao` e os contou como
+ * decisão final ("manual-de-sistema-dipem" com interessado "desejada para cadastrar os
+ * colaboradores."). É o falso positivo da reordenação do classifyLinkType — do lado que a
+ * certificação NÃO protege (ela valida extração, não quantos documentos entram).
+ *
+ * A regra, especificada pelo usuário: deliberação sem numero_deliberacao, sem processo, sem
+ * relator, sem numero_reuniao e sem itens de ata NÃO é deliberação. Uma decisão colegiada real
+ * sempre carrega ao menos UM desses sinais (as 46 expectativas do gabarito confirmam).
+ *
+ * Só se aplica ao rótulo "deliberacao": ata/pauta/voto_individual têm regras próprias.
+ */
+export function checarSinalDeDeliberacao(input: {
+  tipoDocumento: string | null | undefined;
+  numeroDeliberacao?: unknown;
+  processo?: unknown;
+  relator?: unknown;
+  numeroReuniao?: unknown;
+  ataItemsCount?: number;
+}): Achado[] {
+  if (input.tipoDocumento !== "deliberacao") return [];
+  const temSinal = Boolean(input.numeroDeliberacao) || Boolean(input.processo)
+    || Boolean(input.relator) || Boolean(input.numeroReuniao)
+    || (typeof input.ataItemsCount === "number" && input.ataItemsCount > 0);
+  if (temSinal) return [];
+  return [{
+    codigo: "C21_SEM_SINAL_DE_DELIBERACAO",
+    nivel: "bloqueante",
+    mensagem: "Classificado como deliberação, mas sem número, sem processo, sem relator, sem reunião e sem itens — provavelmente não é um documento de decisão (manual/página institucional).",
+  }];
+}
+
+/**
  * C03 — RECONCILIAÇÃO DE ÂNCORAS.
  *
  * ⚠️ Este check NÃO pode comparar âncoras com a contagem PÓS-dedup. A 81ª ROP tem duas ocorrências

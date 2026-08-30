@@ -270,6 +270,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       fundidos_semanticos: r.body?.fundidos_semanticos ?? 0,
       ilegiveis_arquivados: r.body?.arquivados_ilegiveis ?? 0,
       sem_agencia_arquivados: r.body?.arquivados_sem_agencia ?? 0,
+      nao_deliberativos_arquivados: r.body?.arquivados_nao_deliberativos ?? 0,
       erros: r.body?.erros ?? 0,
     });
     if (r.body?.restantes) restantes = true;
@@ -466,7 +467,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   const arquivouAgora =
     Number((etapas.aprovacao as Record<string, number> | undefined)?.ignorados_pauta_apoio ?? 0) +
     Number((etapas.aprovacao as Record<string, number> | undefined)?.ilegiveis_arquivados ?? 0) +
-    Number((etapas.aprovacao as Record<string, number> | undefined)?.sem_agencia_arquivados ?? 0);
+    Number((etapas.aprovacao as Record<string, number> | undefined)?.sem_agencia_arquivados ?? 0) +
+    Number((etapas.aprovacao as Record<string, number> | undefined)?.nao_deliberativos_arquivados ?? 0);
   // Fase 12 — o guard significava "a aprovação NÃO arquivou nesta rodada"; com o plano da
   // rodada ele passou a disparar também quando a aprovação NEM FOI OFERECIDA (o contador sai 0
   // dos dois jeitos). Desarquivar rodava em 28 de 40 rodadas contra 12 do arquivador — o moinho
