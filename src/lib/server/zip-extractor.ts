@@ -54,7 +54,7 @@ export function extractPdfEntriesFromZip(
     const extraLength = buffer.readUInt16LE(cursor + 30);
     const commentLength = buffer.readUInt16LE(cursor + 32);
     const localHeaderOffset = buffer.readUInt32LE(cursor + 42);
-    const name = buffer.toString("utf8", cursor + 46, cursor + 46 + nameLength);
+    const name = decodeZipEntryName(buffer.subarray(cursor + 46, cursor + 46 + nameLength));
 
     cursor += 46 + nameLength + extraLength + commentLength;
 
@@ -79,6 +79,31 @@ export function extractPdfEntriesFromZip(
   }
 
   return entries;
+}
+
+/**
+ * Decodifica o nome da entrada SEM produzir U+FFFD (Fase 14 — o conserto do mojibake).
+ *
+ * Antes o extractor lia tudo como UTF-8 e produção exibia "Delibera\uFFFD\uFFFDo_652" — e o
+ * U+FFFD contamina o `filename`, que alimenta a chave semântica de dedup (mesmo documento,
+ * chaves diferentes). MEDIDO nos ZIPs reais da ARTESP: os novos têm nomes UTF-8 válidos (com o
+ * bit 11 da spec); os antigos (2023) têm LATIN-1 sem flag — Ç=0xC7, Ã=0xC3, º=0xBA, exatamente
+ * os bytes que viravam \uFFFD. CP437, o default literal da spec, produziria OUTRO lixo (╟├║)
+ * para esse corpus.
+ *
+ * A regra: UTF-8 ESTRITO primeiro; falhou → Latin-1 (nunca falha, mapeia certo o corpus real).
+ * O bit 11 é deliberadamente IGNORADO: o try-estrito já aceita todo UTF-8 legítimo (com ou sem
+ * flag), e um produtor que liga o flag com bytes inválidos ganha Latin-1 em vez de \uFFFD — a
+ * mutação provou que um ramo de flag aqui não muda comportamento nenhum, só adiciona código.
+ * Retroativo é irrecuperável (o byte se perdeu no \uFFFD); re-download com isto dedupa certo.
+ */
+const UTF8_ESTRITO = new TextDecoder("utf-8", { fatal: true });
+function decodeZipEntryName(bytes: Buffer): string {
+  try {
+    return UTF8_ESTRITO.decode(bytes);
+  } catch {
+    return bytes.toString("latin1");
+  }
 }
 
 function findEndOfCentralDirectory(buffer: Buffer): number {
