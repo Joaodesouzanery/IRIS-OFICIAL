@@ -3,6 +3,37 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 15 (31/ago/2026) — os cinco consertos do QA
+
+**Sequência operacional (nesta ordem):**
+1. Aplicar no SQL Editor: `20260831120000_anm_fonte_orfa_e_51.sql` (a QUINTA fonte da ANM —
+   órfã do seed em código — ganha `a:not(.state-published)`; os 51 itens de menu viram
+   `ignorado`/`pagina_institucional`) e `20260831130000_anm_carimbo_retry.sql` (carimbo de
+   retry, espelho da 20260826150000, para `sem_pdf`/`download_falhou` da ANM 2026+sem-data).
+2. Clicar **"Rodar tudo"** até drenar — o passo novo `redatar` (dry_run=0, na esteira) fecha as
+   32×1996 e as 74 sem data pelas fontes ANCORADAS; o retry re-tenta o passivo ANM; o
+   materializar aplica a inferência por decisão nos 75.
+3. Colar `docs/qa-fase15.sql` e devolver o JSON — os 8 blocos provam (ou desmentem) cada
+   conserto, incluindo a 87ª ROP nominalmente.
+
+**O que a fase mudou no código:** `extractDataReuniaoAncorada` (nlp-extractor — SEM fallback
+"primeira data do documento"; a `redatar` dizia "só ancorado" e chamava `extractFields`, o
+mecanismo exato do 1996); janela das nulas na `redatar` (reunião vinculada →
+`monitoramento_itens.data_reuniao` → texto ancorado; irrecuperável ganha `precisa_revisao_data`
+UMA vez); passo `redatar` na esteira (reserva 6s, após dedup, FORA da cauda).
+
+**Pendências vivas que a fase NÃO fechou (decisão):**
+- **ARTESP bloqueada por WAF** — erro honesto do detector ("página de desafio... nem o fallback
+  headless"), coleta parada DE FATO desde ~07/07; os 172 de 2026 são estoque. Operacional, não
+  código: exige mudança de estratégia de acesso (a decidir).
+- **Mojibake retroativo** (251 docs com U+FFFD) — irrecuperável sem re-download; o conserto da
+  Fase 14 protege o futuro.
+- **Dívida `hash_item`** = f(tipo, contexto-900-chars) — já registrada (Fase 9); é a raiz dos
+  órfãos imortais e das duplicatas por deslocamento de contexto.
+- **`em_revisao`/`importado` com documento morto** — deliberadamente fora do carimbo (reset
+  cego ressuscitaria os manuais limpos pela 20260830120000). Se o bloco 1 do qa-fase15 provar
+  que a 87ª ROP está nessa classe, o conserto será dirigido, com evidência.
+
 ## 🔴 FASE 14 (31/ago/2026) — o QA e o acesso que faltou
 
 **O QA está pronto em `docs/qa-fase14.sql`** — cole no SQL Editor e devolva o JSON. Ele mede as
