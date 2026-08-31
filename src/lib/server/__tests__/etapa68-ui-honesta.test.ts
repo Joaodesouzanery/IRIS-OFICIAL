@@ -91,8 +91,12 @@ describe("etapa68 · o desfecho da esteira é medido, não presumido", () => {
     expect(page).toMatch(/desfecho === "erros"[\s\S]{0,320}setMatchError/);
   });
 
-  it("parar no teto de rodadas não é anunciado como 'concluída'", () => {
-    expect(page).toMatch(/teto de \$\{rodadasFeitas\} rodadas/);
+  it("parar no teto não é anunciado como 'concluída'", () => {
+    // Fase 14 — o teto passou de CONTADOR (40 rodadas) para RELÓGIO (~25min); a propriedade
+    // vigiada é a mesma: parada por teto tem mensagem própria com "ainda há fila", nunca o
+    // banner de sucesso.
+    expect(page).toMatch(/teto de tempo \(~25min, \$\{rodadasFeitas\} rodadas\)/);
+    expect(page).toMatch(/ainda há fila/);
   });
 });
 
