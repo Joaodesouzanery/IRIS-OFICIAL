@@ -3,6 +3,26 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 16 (31/ago–01/set/2026) — a esteira que termina, o poço em_revisao, votos efetivos
+
+**Sequência operacional (NESTA ordem — a Fase 15 ficou sem veredito por medir antes da esteira):**
+1. Confirmar deploy verde no Vercel.
+2. SQL Editor: aplicar `20260901120000_reconciliar_em_revisao.sql` (drena o poço: doc
+   confirmed→item importado; ignored→ignorado herdando motivo, SEM carimbo; doc apagado→novo).
+3. **"Rodar tudo" até "drenou"** — agora ele TERMINA: margem de partida (fatia nunca mais igual
+   à reserva), coleta 1×/run, "não tentado" por run, drenagem condicional, teto de extração +30s.
+4. Colar `docs/qa-fase16.sql` e devolver o JSON — vereditos das DUAS fases (1996→?, nulas→?,
+   87ª ROP, carimbo consumido, em_revisao restante × doc, votos por diretor decompostos).
+
+**Mudança de MÉTRICA datada (01/09/2026)**: "votos por diretor" = EFETIVOS
+(Favoravel+Desfavoravel); ausência/abstenção à parte; pct_favor com denominador efetivo. Os
+números da tela CAÍRAM — correção. Ver `docs/METODOLOGIA-METRICAS.md` §0 (inclui o limite da
+ARTESP: 0 nominais, diferença ali é janela de mandato, não comportamento).
+
+**Esperado nas próximas runs** (medido por simulação calibrada; o QA confirma): backlog de ~145
+drena em ~8–10 rodadas (~7–9min); run vazia termina em ~3–4 rodadas (~1–2min); desfecho volta a
+ser "drenou", não "teto de rodadas do cliente".
+
 ## 🔴 FASE 15 (31/ago/2026) — os cinco consertos do QA
 
 **Sequência operacional (nesta ordem):**
