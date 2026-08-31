@@ -132,7 +132,10 @@ export function gateDoPasso(passo: PassoEsteira): number {
 export const TETO_FATIA: Record<PassoEsteira, number> = {
   coleta: RESERVA.coleta,               // um crawl já é a unidade inteira
   enqueue: RESERVA.enqueue + 3_000,     // 1 download + folga de gravação
-  extracao: RESERVA.extracao + 10_000,  // cabe mais de um documento quando sobra
+  // Fase 16 — +10s → +30s: a run real devolvia ~29s POR RODADA sem uso (27min ÷ 40 rodadas
+  // = 40,5s/rodada num orçamento de 70s). O teto maior converte o ocioso em extração; a
+  // fatia continua auto-limitada por `saldo − proteção`, então ninguém é canibalizado.
+  extracao: RESERVA.extracao + 30_000,
   reaper: RESERVA.reaper * 2,
   autoConfirm: RESERVA.autoConfirm * 2,
   confirmLote: RESERVA.confirmLote * 2,
@@ -193,6 +196,17 @@ export const PASSOS_CAUDA: readonly PassoEsteira[] = ["reaper", "extracao", "der
 export function planejarRodada(
   rodada: number,
   orcamentoMs: number,
+  opcoes?: {
+    /**
+     * Fase 16 — DRENAGEM condicional: com fila de extração > 0 (o orquestrador mede com um
+     * count barato), `extracao` é semeada À FRENTE em toda rodada — e SÓ ela. Semear também a
+     * aprovação custaria ~50s dos 66s e a coleta (28s de custo) nunca mais caberia: inanição da
+     * ingestão, que é o erro das Fases 7/10 com outro sinal. O resto do giro fica intacto, e a
+     * salvaguarda é medida em teste: sob drenagem PERMANENTE (o caso ARTESP, 140 pendentes),
+     * coleta e enqueue seguem entrando em ≥ 1/4 das rodadas.
+     */
+    drenar?: boolean;
+  },
 ): { passos: ReadonlySet<PassoEsteira>; protecao: Readonly<Record<string, number>> } {
   const cabeca = ORDEM_DOS_PASSOS.filter((p) => !PASSOS_CAUDA.includes(p));
   // Giro determinístico: rodada N começa a oferecer a partir do N-ésimo passo da cabeça.
@@ -206,9 +220,12 @@ export function planejarRodada(
   // em ímpares ela disputa na vez dela, e a cabeça cara (coleta, enfileiramento) alcança o próprio
   // portão. A cauda segue rodando na maioria das rodadas, e nenhum passo fica de fora sempre.
   const semeiaCauda = rodada % 2 === 0;
-  const ofertados: PassoEsteira[] = semeiaCauda
+  let ofertados: PassoEsteira[] = semeiaCauda
     ? [...PASSOS_CAUDA, ...girada]
     : [...girada, ...PASSOS_CAUDA];
+  if (opcoes?.drenar) {
+    ofertados = ["extracao", ...ofertados.filter((p) => p !== "extracao")];
+  }
 
   const escolhidos = new Set<PassoEsteira>();
   let soma = 0;

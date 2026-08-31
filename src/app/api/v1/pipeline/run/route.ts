@@ -234,9 +234,22 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // HOBBY_BUDGET_MS quando `saldo()` nunca passa de HOBBY_BUDGET_MS − FOLGA criava passos que
   // entravam no plano, consumiam a reserva na soma e nasciam sem fatia: 36 vagas mortas em 40
   // rodadas (simulado com os números reais — o reaper morria em 4 das 20 rodadas dele).
+  // Fase 16 — a rodada MEDE a fila antes de planejar (1 count head:true, ~50ms contra os ~40s
+  // da rodada) e liga a DRENAGEM: com fila, a extração é semeada à frente em toda rodada. A
+  // salvaguarda contra inanição da ingestão vive no planejador (e em teste): só a extração é
+  // privilegiada; coleta/enqueue seguem no giro.
+  let filaExtracao = 0;
+  try {
+    const { count } = await db
+      .from("upload_jobs")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "pending");
+    filaExtracao = count ?? 0;
+  } catch { /* tabela indisponível: sem viés, comportamento antigo */ }
   const { passos: planoDaRodada, protecao } = planejarRodada(
     execucao?.rodadas ?? 0,
     HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS,
+    { drenar: filaExtracao > 0 },
   );
   /** O passo está no plano E tem fatia para uma unidade de trabalho? */
   const cabe = (passo: PassoEsteira) =>
@@ -660,6 +673,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     etapas,
     restantes, // true = re-chamar para continuar (orçamento de tempo)
     materializados_nesta_rodada: materializouAgora,
+    fila_extracao: filaExtracao,
     run_id: execucao?.id ?? null,
     rodadas: execucao?.rodadas ?? null,
     ...(abortadoPeloDisjuntor

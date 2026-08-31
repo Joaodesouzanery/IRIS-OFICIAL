@@ -140,7 +140,10 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt
       // 40s) — sem esta parada o lote de 20 estourava sozinho o SIGKILL de 60s do
       // Hobby. Nunca INICIA um job sem saldo; os não iniciados seguem 'pending' e a
       // próxima rodada os pega (progresso preservado, nada órfão).
-      if (deadlineAt !== undefined && !hasBudget(deadlineAt, 12_000)) {
+      // Fase 16 — 12s → 9s: com fatias de 21-30s, a reserva de partida comia ~47% da janela
+      // útil da extração. 9s ainda cobre o PDF típico; o escaneado extremo (~65s) estoura
+      // qualquer reserva realista e é o caso do reaper, não desta parada.
+      if (deadlineAt !== undefined && !hasBudget(deadlineAt, 9_000)) {
         queue.length = 0;
         break;
       }
@@ -303,7 +306,7 @@ export async function processPendingDocuments(
     // (rede) e escritas no banco (I/O): há espera de sobra para sobrepor. Subir MUITO não
     // ajudaria — o pdf-parse é CPU-bound e satura cedo — e custaria memória no runtime da
     // função. 3 é o passo conservador; o número honesto sai da medição em produção.
-    processed = await processQueue(selected, 3, deadlineAt);
+    processed = await processQueue(selected, 4, deadlineAt);
   }
 
   return { processed, job_ids: selected.map((job) => job.jobId), reaped, religados };

@@ -231,7 +231,9 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
 
   it("todo passo passa pelo plano — nenhum gate solto", () => {
     // A primeira versão PINAVA a chamada com o off-by-4s — o teste protegia o defeito.
-    expect(RUN).toMatch(/planejarRodada\(\s*execucao\?\.rodadas \?\? 0,\s*HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS,?\s*\)/);
+    // Fase 16 — a chamada ganhou o viés de drenagem; a propriedade vigiada segue a mesma:
+    // rodada real + a MOEDA do executor (HOBBY − FOLGA), nunca um literal solto.
+    expect(RUN).toMatch(/planejarRodada\(\s*execucao\?\.rodadas \?\? 0,\s*HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS,\s*\{ drenar: filaExtracao > 0 \},?\s*\)/);
     expect(RUN).toMatch(/planoDaRodada\.has\(passo\) && podeRodar\(passo, saldo\(\), protecao\[passo\] \?\? 0\)/);
     expect(RUN).not.toMatch(/Math\.max\(3_000, msLeft\(deadlineAt\) - 4_000\)/);
   });
