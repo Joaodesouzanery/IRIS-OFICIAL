@@ -29,6 +29,7 @@ import {
   TETO_ENQUEUE_POR_RODADA,
   ORDEM_DOS_PASSOS,
   FOLGA_ORQUESTRADOR_MS,
+  MARGEM_PARTIDA_MS,
   fatiaDoPasso,
   podeRodar,
   planejarRodada,
@@ -103,8 +104,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
    * orçamento, o plano NUNCA cabe inteiro. O desfecho agora sai de `deveContinuar`, no fim.
    */
   let restantes = false;
-  /** Passos que nem foram OFERECIDOS nesta rodada (o giro do plano os alcança na próxima). */
-  let passosNaoTentados = 0;
+  /**
+   * Passos TENTADOS nesta rodada (chamados de verdade — pulado não conta). Fase 16: o conjunto
+   * persiste na run via contadores `tentou_<passo>`, e é ELE que decide "não tentado" — por RUN,
+   * não por rodada. O plano só comporta 5-8 de 14 passos, então "não tentado nesta rodada" era
+   * sempre > 0 e forçava ≥14 rodadas até com a fila vazia (~3-5min para nada).
+   */
+  const tentadosNaRodada = new Set<PassoEsteira>();
 
   /** Saldo REAL disponível para trabalho: o round-trip de auth e o flush acontecem fora dele. */
   const saldo = () => msLeft(deadlineAt) - FOLGA_ORQUESTRADOR_MS;
@@ -120,7 +126,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
    * é motivo suficiente para pedir outra rodada: ele é CONTADO, e `deveContinuar` decide.
    */
   const foraDoPlano = (nome: string): StepResult => {
-    passosNaoTentados++;
+    // Fase 16 — sem contador aqui: "não tentado" agora é derivado por RUN (ORDEM − tentados na
+    // run), no fim da rodada. Contar por rodada era o que forçava ≥14 rodadas com fila vazia.
     return { fora_do_plano: `«${nome}» não entrou no plano desta rodada; entra numa próxima` };
   };
 
@@ -143,10 +150,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     // Chamar com menos que a reserva é o bug da Fase 7: o passo gasta o round-trip de auth e
     // devolve zero. E `budget_ms=0` é PIOR que não chamar — `budgetFromRequest` trata 0 como
     // ausente e a sub-rota abre um orçamento NOVO de 50s, fora de qualquer controle.
-    if (slice < RESERVA[passo]) {
+    if (slice < RESERVA[passo] + MARGEM_PARTIDA_MS) {
+      // Fase 16 — a comparação exige a MARGEM: fatia == reserva era o terceiro lado da classe
+      // (a sub-rota checa hasBudget(deadline, RESERVA) antes da 1ª unidade e falhava sempre).
       passosPulados++;
       return { ok: false, status: 0, pulado: true, body: null };
     }
+    tentadosNaRodada.add(passo);
     const url = new URL(path, req.url);
     url.searchParams.set("budget_ms", String(slice));
     const synthetic = new NextRequest(url, {
@@ -323,13 +333,20 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // A fatia era de 8s contra uma reserva interna de 25s: a coleta crawleava, gastava os 8s e
   // inseria ZERO itens em TODA rodada — o pior dos três descompassos, porque parecia funcionar
   // (gravava `ultimo_check`, e a tela mostrava "última captura" recente).
-  if (cabe("coleta")) {
+  // Fase 16 — coleta 1× por EXECUÇÃO. O check é crawl real de ~25s SEM caminho rápido: rodava
+  // 12× por run (~5min) re-crawleando as mesmas listagens sem novidade nenhuma. `tentou_coleta`
+  // acumulado nos contadores da run diz se esta execução já coletou; sem a migration de
+  // esteira_runs (execucao null) o comportamento antigo permanece.
+  const coletaJaFeitaNaRun = Number(execucao?.contadores?.["tentou_coleta"] ?? 0) > 0;
+  if (cabe("coleta") && !coletaJaFeitaNaRun) {
     try {
       const r = await call(checkGET, "/api/v1/monitoramento/check", "coleta");
       etapas.coleta = anotar(r, "coleta", { novos_detectados: r.body?.novos_detectados ?? 0 });
     } catch {
       etapas.coleta = { erro: "coleta falhou nesta rodada" };
     }
+  } else if (coletaJaFeitaNaRun) {
+    etapas.coleta = { fora_do_plano: "coleta já rodou nesta execução — 1× por run" };
   } else { etapas.coleta = foraDoPlano("coleta"); }
 
   // 6 · Requeue dos mal classificados: "Voto DXX NNN-2026" preso como documento_apoio/agência "?"
@@ -433,7 +450,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   }
   // A extração não rodar não significa que HÁ fila — significa que ela não coube ou não foi
   // oferecida. Quem sabe a diferença é `call()` (que conta `passosPulados`) e o plano.
-  if (!planoDaRodada.has("extracao")) passosNaoTentados++;
+  // Fase 16 — o auto-contador saiu: «não tentado» agora deriva de ORDEM − tentados na RUN.
   etapas.extracao = {
     enfileirados,
     processados,
@@ -576,7 +593,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       ["divergencia_votos", divergenciaPOST, "/api/v1/votos/recalcular-divergencia?apply=1", {}],
     ];
     for (const [nome, handler, path, corpo] of derivadas) {
-      if (!cabe("derivada")) { if (!planoDaRodada.has("derivada")) passosNaoTentados++; break; }
+      if (!cabe("derivada")) break;
       try {
         const r = await call(handler, path, "derivada", corpo);
         const b = r.body ?? {};
@@ -598,10 +615,19 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // `restantes` eternamente true: "drenou" inalcançável, run nunca fechada, e o teto de 40 rodadas
   // do cliente virou o único desfecho possível. Com a fila VAZIA a esteira ainda queimava 40
   // rodadas — o "por que 25 minutos para poucos documentos?".
+  // Fase 16 — o conjunto de tentados persiste na run (registrarRodada soma campos numéricos das
+  // etapas; a etapa sintética `_tentativas` vira `tentou_<passo>` nos contadores, e contarPassos
+  // a ignora para o disjuntor não ganhar amostra falsa).
+  if (tentadosNaRodada.size > 0) {
+    etapas._tentativas = Object.fromEntries([...tentadosNaRodada].map((p) => [`tentou_${p}`, 1]));
+  }
+  const passosNaoTentadosNaRun = ORDEM_DOS_PASSOS.filter(
+    (p) => !tentadosNaRodada.has(p) && (execucao?.contadores?.[`tentou_${p}`] ?? 0) === 0,
+  ).length;
   const pedeOutraRodada = deveContinuar({
     trabalhoRelatado: restantes,
     passosPulados,
-    passosNaoTentados,
+    passosNaoTentados: passosNaoTentadosNaRun,
     rodada: execucao?.rodadas ?? 0,
   });
   restantes = pedeOutraRodada;

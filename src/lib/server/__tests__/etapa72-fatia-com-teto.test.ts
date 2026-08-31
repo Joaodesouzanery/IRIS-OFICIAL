@@ -24,6 +24,7 @@ import { describe, it, expect } from "vitest";
 import { readFileSync } from "fs";
 import { join } from "path";
 import {
+  MARGEM_PARTIDA_MS,
   RESERVA,
   TETO_FATIA,
   ORDEM_DOS_PASSOS,
@@ -124,9 +125,11 @@ describe("etapa72 · o plano da rodada", () => {
 });
 
 describe("etapa72 · nenhum passo recebe fatia sem teto", () => {
-  it.each(PASSOS)("a fatia de «%s» nunca passa do teto dele", (passo) => {
+  it.each(PASSOS)("a fatia de «%s» nunca passa do teto dele (+ a margem de partida)", (passo) => {
+    // Fase 16 — o topo passou a ser TETO + MARGEM_PARTIDA: o teto segue sendo o de TRABALHO e a
+    // margem cobre a partida (auth/import), para a fatia nunca chegar IGUAL à reserva interna.
     for (const saldo of [0, 10_000, HOBBY_BUDGET_MS, 300_000, 10_000_000]) {
-      expect(fatiaDoPasso(passo, saldo)).toBeLessThanOrEqual(TETO_FATIA[passo]);
+      expect(fatiaDoPasso(passo, saldo)).toBeLessThanOrEqual(TETO_FATIA[passo] + MARGEM_PARTIDA_MS);
     }
   });
 
@@ -144,10 +147,12 @@ describe("etapa72 · nenhum passo recebe fatia sem teto", () => {
     }
   });
 
-  it("podeRodar é falso exatamente quando a fatia não paga uma unidade de trabalho", () => {
+  it("podeRodar é falso exatamente quando a fatia não paga uma unidade de trabalho + a partida", () => {
+    // Fase 16 — o piso subiu para RESERVA + MARGEM: fatia == reserva era o terceiro lado da
+    // classe (etapa93), e rodar com ela pagava o round-trip para devolver zero.
     for (const passo of PASSOS) {
       for (const saldo of [0, 5_000, 20_000, 40_000, HOBBY_BUDGET_MS, 200_000]) {
-        expect(podeRodar(passo, saldo)).toBe(fatiaDoPasso(passo, saldo) >= RESERVA[passo]);
+        expect(podeRodar(passo, saldo)).toBe(fatiaDoPasso(passo, saldo) >= RESERVA[passo] + MARGEM_PARTIDA_MS);
       }
     }
   });
@@ -212,7 +217,7 @@ describe("etapa72 · o orquestrador não pode mais omitir o teto", () => {
   it("call() recusa fatia abaixo da reserva em vez de mandar budget_ms=0", () => {
     // `budgetFromRequest` trata 0 como ausente e a sub-rota abre um orçamento NOVO de 50s —
     // pior que não chamar.
-    expect(RUN).toMatch(/if \(slice < RESERVA\[passo\]\) \{[\s\S]{0,160}?pulado: true/);
+    expect(RUN).toMatch(/if \(slice < RESERVA\[passo\] \+ MARGEM_PARTIDA_MS\) \{[\s\S]{0,320}?pulado: true/);
     // Fase 11 — `passosPulados` deixou de virar `restantes` numa linha solta: ele agora ALIMENTA
     // `deveContinuar`, junto com o trabalho relatado e os passos não-tentados. A propriedade
     // vigiada é a mesma: passo sem fatia tem de pedir outra rodada.

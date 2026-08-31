@@ -100,17 +100,14 @@ describe("etapa76 · o orquestrador não força mais restantes por aritmética",
     expect(CODIGO).toMatch(/restantes,\s*\/\/|restantes,/);
   });
 
-  it("foraDoPlano CONTA o passo não-tentado — senão a esteira declara «acabou» cedo demais", () => {
-    // Sem o contador, `passosNaoTentados` fica 0, a fase de verificação nunca acontece, e um passo
-    // com fila que ficou fora do plano é dado como inexistente.
-    expect(CODIGO).toMatch(/const foraDoPlano = \(nome: string\): StepResult => \{[\s\S]{0,160}?passosNaoTentados\+\+/);
-  });
-
-  it("a extração e as derivadas fora do plano também são contadas", () => {
-    // Os dois passos da cauda não passam por `foraDoPlano` (não têm ramo `else`): eles precisam
-    // contar por conta própria, senão saem da conta e a verificação fica cega justamente para os
-    // passos que mais importam.
-    expect(CODIGO).toMatch(/if \(!planoDaRodada\.has\("extracao"\)\) passosNaoTentados\+\+/);
-    expect(CODIGO).toMatch(/if \(!planoDaRodada\.has\("derivada"\)\) passosNaoTentados\+\+/);
+  it("«não tentado» é derivado por RUN — ORDEM menos os tentados, nunca um contador por rodada", () => {
+    // Fase 16 — o contador por rodada (foraDoPlano++ e os auto-contadores da cauda) forçava
+    // ≥14 rodadas com a fila VAZIA: o plano só comporta 5-8 de 14 passos, então "não tentado
+    // NESTA rodada" era sempre > 0. O conjunto agora acumula na run (`tentou_<passo>`), cobre a
+    // cauda de graça (call() registra todo passo chamado), e a fase de verificação acaba quando
+    // TODOS tiveram a vez — ~3-4 rodadas.
+    expect(CODIGO).toMatch(/ORDEM_DOS_PASSOS\.filter\([\s\S]{0,200}?tentou_\$\{p\}/);
+    expect(CODIGO).toMatch(/passosNaoTentados: passosNaoTentadosNaRun/);
+    expect(CODIGO).not.toMatch(/passosNaoTentados\+\+/);
   });
 });

@@ -107,7 +107,10 @@ export function deveContinuar(input: {
 export function contarPassos(etapas: Record<string, Record<string, unknown>>): { ok: number; erro: number } {
   let ok = 0;
   let erro = 0;
-  for (const etapa of Object.values(etapas)) {
+  for (const [chave, etapa] of Object.entries(etapas)) {
+    // Fase 16 — etapas sintéticas (prefixo "_", ex.: `_tentativas`, que persiste o conjunto de
+    // passos tentados na run) não são passos: contá-las como `ok` diluiria a taxa do disjuntor.
+    if (chave.startsWith("_")) continue;
     if (!etapa || typeof etapa !== "object") { ok++; continue; }
     // Fase 10 — passo NÃO-TENTADO não entra na conta, nem como acerto nem como falha. A rodada
     // agora é planejada: nem todos os doze passos são oferecidos em toda rodada, e um passo que

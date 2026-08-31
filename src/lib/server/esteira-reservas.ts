@@ -82,6 +82,29 @@ export type PassoEsteira = keyof typeof RESERVA;
 export const FOLGA_ORQUESTRADOR_MS = 4_000;
 
 /**
+ * A MARGEM DE PARTIDA — o terceiro lado da mesma classe de bug (Fase 16).
+ *
+ *   · Fase 7  — fatia MENOR que a reserva: o passo gastava o round-trip e devolvia zero;
+ *   · Fase 10 — fatia SEM TETO: a cabeça comia a rodada e a cauda nunca alcançava o portão;
+ *   · Fase 16 — fatia IGUAL à reserva: o plano enche o orçamento até a borda e `saldo − proteção`
+ *     entrega ao passo EXATAMENTE a reserva. A sub-rota checa `hasBudget(deadline, RESERVA)`
+ *     antes da primeira unidade — com milissegundos já gastos no auth/import, a checagem falha
+ *     na primeira iteração: 0 confirmados, `restantes = true`, round-trip pago à toa. Medido:
+ *     confirmLote recebia 15000 cravado na maioria das rodadas, e `restantes` nunca virava
+ *     falso — a run só parava no teto de 25min do cliente.
+ *
+ * A margem entra nos TRÊS lugares que precisam concordar: o custo de planejar um passo
+ * (soma e proteção), o piso de `podeRodar`, e o topo de `fatiaDoPasso`. O TETO_FATIA continua
+ * sendo o teto de TRABALHO — a margem é entregue por cima dele.
+ */
+export const MARGEM_PARTIDA_MS = 3_000;
+
+/** O custo REAL de um passo no plano: a reserva de trabalho + a partida (auth/import/flush). */
+function custoDoPasso(passo: PassoEsteira): number {
+  return RESERVA[passo] + MARGEM_PARTIDA_MS;
+}
+
+/**
  * Saldo que o orquestrador precisa ter para valer a pena CHAMAR o passo.
  *
  * Chamar com menos que isto não é "fazer um pouco": é gastar o round-trip e receber zero — foi
@@ -190,16 +213,19 @@ export function planejarRodada(
   const escolhidos = new Set<PassoEsteira>();
   let soma = 0;
   for (const p of ofertados) {
-    if (soma + RESERVA[p] > orcamentoMs) continue;
+    // Fase 16 — o plano soma o CUSTO (reserva + margem de partida), não a reserva nua. Somar a
+    // reserva nua era o que enchia o orçamento até a borda e entregava fatia == reserva.
+    if (soma + custoDoPasso(p) > orcamentoMs) continue;
     escolhidos.add(p);
-    soma += RESERVA[p];
+    soma += custoDoPasso(p);
   }
 
-  // A proteção segue a ordem REAL de execução, não a ordem do giro.
+  // A proteção segue a ordem REAL de execução, não a ordem do giro — e protege o CUSTO de cada
+  // passo seguinte, senão o último planejado nasceria de novo com fatia == reserva.
   const protecao: Record<string, number> = {};
   const naOrdem = ORDEM_DOS_PASSOS.filter((p) => escolhidos.has(p));
   for (let i = 0; i < naOrdem.length; i++) {
-    protecao[naOrdem[i]] = naOrdem.slice(i + 1).reduce((acc, p) => acc + RESERVA[p], 0);
+    protecao[naOrdem[i]] = naOrdem.slice(i + 1).reduce((acc, p) => acc + custoDoPasso(p), 0);
   }
   return { passos: escolhidos, protecao };
 }
@@ -209,7 +235,9 @@ export function planejarRodada(
  * ainda precisam. Devolve 0 quando não sobra — e aí o passo não deve rodar (ver `podeRodar`).
  */
 export function fatiaDoPasso(passo: PassoEsteira, saldoMs: number, protecaoMs = 0): number {
-  return Math.max(0, Math.min(TETO_FATIA[passo], saldoMs - protecaoMs));
+  // O topo é TETO (trabalho) + MARGEM (partida): o passo recebe o custo de começar POR CIMA do
+  // teto de trabalho, e a primeira checagem interna `hasBudget(deadline, RESERVA)` passa.
+  return Math.max(0, Math.min(TETO_FATIA[passo] + MARGEM_PARTIDA_MS, saldoMs - protecaoMs));
 }
 
 /**
@@ -219,7 +247,7 @@ export function fatiaDoPasso(passo: PassoEsteira, saldoMs: number, protecaoMs = 
  * duas metades do bug (Fase 7: gate < reserva; Fase 10: fatia sem teto).
  */
 export function podeRodar(passo: PassoEsteira, saldoMs: number, protecaoMs = 0): boolean {
-  return fatiaDoPasso(passo, saldoMs, protecaoMs) >= RESERVA[passo];
+  return fatiaDoPasso(passo, saldoMs, protecaoMs) >= custoDoPasso(passo);
 }
 
 /**
