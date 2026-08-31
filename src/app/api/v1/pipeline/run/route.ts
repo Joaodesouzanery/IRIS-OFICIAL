@@ -54,6 +54,7 @@ import { POST as aprovarLotePOST } from "../../diretores/candidatos/aprovar-lote
 import { POST as dedupPOST } from "../../admin/deliberacoes/dedup/route";
 import { POST as materializarPOST } from "../../admin/votos/materializar-faltantes/route";
 import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ignorados/route";
+import { POST as redatarPOST } from "../../admin/deliberacoes/redatar/route";
 import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
 import { POST as mandatosRecalcularPOST } from "../../mandatos/recalcular/route";
@@ -456,6 +457,25 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       etapas.dedup_final = { erro: "dedup falhou nesta rodada" };
     }
   } else { etapas.dedup_final = foraDoPlano("dedup"); }
+
+  // 10b · Re-derivação de datas (Fase 15) — o passivo que nenhum botão fechava: 32 deliberações
+  // da ANM em 1996 (fallback sem âncora pescou a data da lei do preâmbulo) e 74 sem data nenhuma
+  // (somem da listagem E inflam as agregações de todo ano). A rota existia desde a Fase 9 e
+  // nunca foi chamada; passivo sem dono não fecha sozinho. Idempotente: ancorado-somente, NULL
+  // só com marcador `precisa_revisao_data` — e quem foi marcado sai da janela.
+  if (cabe("redatar")) {
+    try {
+      const r = await call(redatarPOST, "/api/v1/admin/deliberacoes/redatar?dry_run=0", "redatar", {});
+      etapas.redatar = anotar(r, "re-derivação de datas", {
+        redatadas: Number(r.body?.corrigidas ?? 0) + Number(r.body?.nulas_corrigidas ?? 0),
+        datas_para_revisao:
+          Number(r.body?.sem_data_recuperavel ?? 0) + Number(r.body?.nulas_marcadas_revisao ?? 0),
+      });
+      if (r.body?.restantes) restantes = true;
+    } catch {
+      etapas.redatar = { erro: "re-derivação de datas falhou nesta rodada" };
+    }
+  } else { etapas.redatar = foraDoPlano("redatar"); }
 
   // 9 · Recuperação de ignorados. Fase 7 — FIM DO PING-PONG.
   // Esta chamada re-enfileirava exatamente os documentos que o confirm-lote acabara de arquivar

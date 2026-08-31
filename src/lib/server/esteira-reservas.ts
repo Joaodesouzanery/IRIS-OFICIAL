@@ -53,6 +53,12 @@ export const RESERVA = {
   backfillVotos: 6_000,
   /** Dedup retroativo. */
   dedup: 5_000,
+  /**
+   * Re-derivação de datas (Fase 15): a janela dos implausíveis (32×1996) e a das nulas (74).
+   * Hygiene barata — cabe ~1 linha (4s de reserva interna) + a varredura. Depois de drenado o
+   * passivo, custa duas consultas e devolve zero.
+   */
+  redatar: 6_000,
   /** Cada métrica derivada (empresas, qualidade, mandatos, divergência). */
   derivada: 6_000,
   /** Reprocesso de documentos `failed` (extração que quebrou) — Fase 9. */
@@ -110,6 +116,7 @@ export const TETO_FATIA: Record<PassoEsteira, number> = {
   candidatos: RESERVA.candidatos * 2,
   backfillVotos: RESERVA.backfillVotos * 2,
   dedup: RESERVA.dedup * 2,
+  redatar: RESERVA.redatar * 2,
   derivada: RESERVA.derivada + 2_000,
   reprocessarFalhados: RESERVA.reprocessarFalhados + 2_000,
   reclassificacao: RESERVA.reclassificacao * 2,
@@ -125,7 +132,10 @@ export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
   "coleta", "reclassificacao", "enqueue",
   // O reaper vem ANTES da extração de propósito: o documento que ele solta volta para a fila
   // `pending` e ainda pode ser extraído na MESMA rodada.
-  "reaper", "extracao", "dedup", "recuperacao", "reprocessarFalhados", "derivada",
+  // `redatar` vem depois do dedup (datas certas antes de consolidar reuniões/derivadas) e fica
+  // FORA da cauda de propósito: a cauda é o mínimo vital (32s) e um passo de hygiene não pode
+  // encarecê-la — ele gira com a cabeça, como dedup e recuperação.
+  "reaper", "extracao", "dedup", "redatar", "recuperacao", "reprocessarFalhados", "derivada",
 ] as const;
 
 /**

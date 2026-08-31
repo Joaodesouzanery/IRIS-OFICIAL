@@ -45,9 +45,14 @@ describe("etapa70 · a rota segue o contrato da casa", () => {
 });
 
 describe("etapa70 · a re-derivação usa SÓ o caminho ancorado", () => {
-  it("não há segundo chute — seria reintroduzir o bug que estamos limpando", () => {
-    expect(ROTA).toMatch(/extractAnmMeetingMetadata/);
-    expect(ROTA).toMatch(/SÓ o caminho ancorado/);
+  it("não há segundo chute — a CHAMADA é ancorada, não o comentário", () => {
+    // A versão original desta asserção casava a STRING "SÓ o caminho ancorado" — e o código
+    // chamava `extractFields`, cujo parseDataExtenso tem fallback "primeira data do documento":
+    // o mecanismo exato do 1996. Prosa não prova conduta (Fase 15).
+    const codigo = ROTA.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/.*$/gm, " ");
+    expect(codigo).toMatch(/extractAnmMeetingMetadata/);
+    expect(codigo).toMatch(/extractDataReuniaoAncorada\(texto\)/);
+    expect(codigo).not.toMatch(/extractFields\(/);
   });
 
   it("a data re-derivada passa pelo MESMO guard", () => {

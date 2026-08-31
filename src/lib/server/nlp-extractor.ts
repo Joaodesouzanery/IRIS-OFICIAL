@@ -758,19 +758,23 @@ function parseOneDateExtenso(match: RegExpExecArray): string | null {
   return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
-function parseDataExtenso(text: string): string | null {
-  // Primeiro: busca data próxima a contextos de reunião (mais confiável)
+/** SÓ o ramo ancorado do extenso: data colada a contexto de reunião. Sem fallback. */
+function parseDataExtensoAncorada(text: string): string | null {
   const RE_DATA_REUNIAO_CTX = /(?:Reuni[aã]o|realizada?\s+em|data\s+da\s+reuni[aã]o|São\s+Paulo,?)\s*[,:]?\s*(\d{1,2})\s+de\s+([a-záéíóúâêôãõçàü]+)\s+de\s+(\d{4})/gi;
   RE_DATA_REUNIAO_CTX.lastIndex = 0;
-  let m = RE_DATA_REUNIAO_CTX.exec(text);
-  if (m) {
-    const result = parseOneDateExtenso([m[0], m[1], m[2], m[3]] as unknown as RegExpExecArray);
-    if (result) return result;
-  }
+  const m = RE_DATA_REUNIAO_CTX.exec(text);
+  if (!m) return null;
+  return parseOneDateExtenso([m[0], m[1], m[2], m[3]] as unknown as RegExpExecArray);
+}
+
+function parseDataExtenso(text: string): string | null {
+  // Primeiro: busca data próxima a contextos de reunião (mais confiável)
+  const ancorada = parseDataExtensoAncorada(text);
+  if (ancorada) return ancorada;
 
   // Fallback: primeira data em extenso encontrada no documento
   RE_DATA_EXTENSO.lastIndex = 0;
-  m = RE_DATA_EXTENSO.exec(text);
+  const m = RE_DATA_EXTENSO.exec(text);
   if (!m) return null;
   return parseOneDateExtenso(m);
 }
@@ -783,19 +787,41 @@ function parseOneDateNumerica(d: string, m: string, y: string): string | null {
   return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
-function parseDataNumerica(text: string): string | null {
-  // Primeiro: data numérica próxima a contexto de reunião
+/** SÓ o ramo ancorado do numérico. Sem fallback. */
+function parseDataNumericaAncorada(text: string): string | null {
   RE_DATA_NUMERICA_CTX.lastIndex = 0;
   const ctxMatch = RE_DATA_NUMERICA_CTX.exec(text);
-  if (ctxMatch) {
-    const result = parseOneDateNumerica(ctxMatch[1], ctxMatch[2], ctxMatch[3]);
-    if (result) return result;
-  }
+  if (!ctxMatch) return null;
+  return parseOneDateNumerica(ctxMatch[1], ctxMatch[2], ctxMatch[3]);
+}
+
+function parseDataNumerica(text: string): string | null {
+  // Primeiro: data numérica próxima a contexto de reunião
+  const ancorada = parseDataNumericaAncorada(text);
+  if (ancorada) return ancorada;
   // Fallback: primeira data numérica do documento
   RE_DATA_NUMERICA.lastIndex = 0;
   const match = RE_DATA_NUMERICA.exec(text);
   if (!match) return null;
   return parseOneDateNumerica(match[1], match[2], match[3]);
+}
+
+/**
+ * Fase 15 — a data da reunião SÓ pelos caminhos ANCORADOS, para RE-derivação de passivo.
+ *
+ * A extração fresca (`extractFields`) mantém os fallbacks "primeira data do documento" de
+ * propósito: num PDF de deliberação avulsa, a primeira data costuma ser a do próprio ato.
+ * Mas re-derivar uma data que JÁ nasceu errada exige mais: foi o fallback que pescou a data da
+ * "Lei nº 9.314, de 14 de novembro de 1996" citada no preâmbulo e gravou 32 deliberações da ANM
+ * em 1996. Quem re-julga não pode usar o mesmo chute que errou — aqui, sem âncora, é null.
+ */
+export function extractDataReuniaoAncorada(text: string): string | null {
+  return (
+    parseDataCabecalho(text) ??
+    parseDataExtensoANM(text) ??
+    parseDataExtensoAncorada(text) ??
+    parseDataNumericaAncorada(text)
+  );
 }
 
 // Data de publicação no Diário Oficial (DOU/DOE), distinta da data da reunião.
