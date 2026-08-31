@@ -79,12 +79,14 @@ describe("etapa77 · o roster do SQL espelha a inferência real", () => {
 describe("etapa77 · o denominador é deliberação FINAL, como no código", () => {
   it("exclui pauta/voto_individual/documento_apoio", () => {
     const ocorrencias = SQL.match(/NOT IN \('pauta','voto_individual','documento_apoio'\)/g) ?? [];
-    expect(ocorrencias.length).toBe(5);
+    // Fase 16 — 5 → 6: o bloco 1b (ausência declarada sem linha) usa o MESMO predicado FINAL.
+    expect(ocorrencias.length).toBe(6);
   });
 
   it("ata só conta como item de ata (documento_pai_id preenchido)", () => {
     const ocorrencias = SQL.match(/tipo_documento <> 'ata' OR del\.documento_pai_id IS NOT NULL/g) ?? [];
-    expect(ocorrencias.length).toBe(5);
+    // Fase 16 — 5 → 6: o bloco 1b (ausência declarada sem linha) usa o MESMO predicado FINAL.
+    expect(ocorrencias.length).toBe(6);
   });
 });
 
@@ -103,7 +105,10 @@ describe("etapa77 · o que o usuário recebe é utilizável", () => {
   it("nenhuma coluna CONDICIONAL fora da sonda ⑦ — a query não pode quebrar sem migration", () => {
     // `votos.proveniencia` e `deliberacoes.reuniao_id` podem não existir em produção; a query
     // só pode citá-los dentro da sonda de information_schema.
-    const foraDaSonda = CODE.replace(/information_schema[\s\S]*?\) m/g, "");
+    // Fase 16 — o bloco ① decompõe por proveniência via `to_jsonb(v)->>'proveniencia'`, que RODA
+    // sem a coluna (é literal de string, não identificador). O banimento vale para o
+    // IDENTIFICADOR: strings entre aspas são apagadas antes do match.
+    const foraDaSonda = CODE.replace(/information_schema[\s\S]*?\) m/g, "").replace(/'[^']*'/g, "''");
     expect(foraDaSonda).not.toMatch(/\bproveniencia\b/);
     expect(foraDaSonda).not.toMatch(/\breuniao_id\b/);
   });

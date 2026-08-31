@@ -41,6 +41,31 @@ SELECT jsonb_pretty(jsonb_build_object(
              (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id AND NOT v.is_nominal)     AS inferidos,
              (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
                AND v.tipo_voto IN ('Ausente','Abstencao'))                                     AS ausencias_abstencoes,
+             -- Fase 16 — a decomposição que separa "votou" de "estava registrado": efetivo é
+             -- Favorável+Desfavorável; ausência/abstenção contadas à parte; recorte 2026; e a
+             -- proveniência diz DE ONDE cada número veio (legado NULL = backfill pré-20260824).
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND v.tipo_voto IN ('Favoravel','Desfavoravel'))                                AS efetivos,
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND v.tipo_voto = 'Ausente')                                                   AS ausencias,
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND v.tipo_voto = 'Abstencao')                                                 AS abstencoes,
+             (SELECT COUNT(*) FROM votos v JOIN deliberacoes dl ON dl.id = v.deliberacao_id
+               WHERE v.diretor_id = d.id AND dl.data_reuniao >= DATE '2026-01-01')            AS votos_2026,
+             (SELECT COUNT(*) FROM votos v JOIN deliberacoes dl ON dl.id = v.deliberacao_id
+               WHERE v.diretor_id = d.id AND dl.data_reuniao >= DATE '2026-01-01'
+                 AND v.tipo_voto IN ('Favoravel','Desfavoravel'))                             AS efetivos_2026,
+             -- `to_jsonb(v)->>'...'` e não a coluna: `votos.proveniencia` é condicional
+             -- (migration 20260824) e a query NÃO pode quebrar sem ela — sem a coluna, tudo cai
+             -- honestamente em prov_legado_null.
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND to_jsonb(v)->>'proveniencia' = 'nominal')                                  AS prov_nominal,
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND to_jsonb(v)->>'proveniencia' = 'inferido_unanimidade')                     AS prov_inferido_unanimidade,
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND to_jsonb(v)->>'proveniencia' = 'inferido_decisao')                         AS prov_inferido_decisao,
+             (SELECT COUNT(*) FROM votos v WHERE v.diretor_id = d.id
+               AND to_jsonb(v)->>'proveniencia' IS NULL)                                      AS prov_legado_null,
              (SELECT MIN(m.data_inicio) FROM mandatos m
                WHERE m.diretor_id = d.id AND m.fonte_dado <> 'automatico')                     AS mandato_desde,
              (SELECT MAX(COALESCE(m.data_fim, DATE '2100-01-01')) FROM mandatos m
@@ -66,6 +91,40 @@ SELECT jsonb_pretty(jsonb_build_object(
 
   -- ② VOTOS × ROSTER, deliberação a deliberação (2026): zero / parcial / completo.
   --   `parcial` é a perda que o backfill NUNCA repara (ele só toca zero-voto).
+  -- Fase 16 — o GAP do match 0.6–0.85, CONTADO: a barreira de intenção divergente usa limiar
+  -- 0.6 e a gravação da linha `Ausente` exige match ≥0.85. Um nome de "Ausência Justificada:"
+  -- que casa entre os dois NÃO vira linha e NÃO deixa rastro — omissão por desenho
+  -- (null-não-chuta), mas precisa de número para não virar lenda.
+  '1b_ausencia_declarada_sem_linha', (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.sigla), '[]'::jsonb) FROM (
+      SELECT a.sigla, COUNT(*) AS finais_com_ausencia_no_raw_sem_linha
+        FROM deliberacoes del JOIN agencias a ON a.id = del.agencia_id
+       WHERE jsonb_array_length(COALESCE(del.raw_extraction->'nomes_votacao_ausente','[]'::jsonb)) > 0
+         AND del.resultado IS NOT NULL
+         AND del.tipo_documento NOT IN ('pauta','voto_individual','documento_apoio')
+         AND (del.tipo_documento <> 'ata' OR del.documento_pai_id IS NOT NULL)
+         AND NOT EXISTS (SELECT 1 FROM votos v
+                          WHERE v.deliberacao_id = del.id AND v.tipo_voto = 'Ausente')
+       GROUP BY 1
+    ) t
+  ),
+
+  -- Fase 16 — relatoria por STRING limpa, por agência. O match fuzzy (limparRelator +
+  -- contarRelatoriasPorDiretor, melhor-match-único) mora na rota do overview; o SQL entrega a
+  -- matéria-prima agrupada para conferência humana, sem fingir que resolve homônimo.
+  '1c_relatorias_por_relator', (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.sigla, t.relatorias DESC), '[]'::jsonb) FROM (
+      SELECT a.sigla,
+             regexp_replace(TRIM(del.relator), '^(Dir[a-z]*\.?\s+|Diretor[a]?\s+)', '', 'i') AS relator_limpo,
+             COUNT(*) AS relatorias
+        FROM deliberacoes del JOIN agencias a ON a.id = del.agencia_id
+       WHERE del.relator IS NOT NULL AND TRIM(del.relator) <> ''
+       GROUP BY 1, 2
+      HAVING COUNT(*) >= 2
+       LIMIT 40
+    ) t
+  ),
+
   '2_votos_x_roster_2026', (
     SELECT COALESCE(jsonb_agg(t ORDER BY t.sigla), '[]'::jsonb) FROM (
       SELECT sigla,

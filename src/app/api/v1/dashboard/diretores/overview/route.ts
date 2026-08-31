@@ -95,11 +95,14 @@ export async function GET(req: NextRequest) {
   type Stat = {
     nome: string; cargo: string | null; agencia_id: string | null;
     total: number; favoravel: number; desfavoravel: number; divergente: number; nominais: number; inferidos: number;
+    // Fase 16 — Ausente/Abstencao contavam +1 no `total` que a tela compara. Voto EFETIVO é
+    // Favoravel+Desfavoravel; ausência é presença de registro, não voto (METODOLOGIA 01/09/2026).
+    ausentes: number; abstencoes: number;
   };
   const stats = new Map<string, Stat>();
   for (const d of aprovados) {
     if (d.agencia_id && !colegiadaIds.has(d.agencia_id)) continue; // fora da esteira de votos
-    stats.set(d.id, { nome: d.nome, cargo: d.cargo ?? null, agencia_id: d.agencia_id, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 });
+    stats.set(d.id, { nome: d.nome, cargo: d.cargo ?? null, agencia_id: d.agencia_id, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0, ausentes: 0, abstencoes: 0 });
   }
 
   for (const row of votosRes.rows) {
@@ -110,12 +113,14 @@ export async function GET(req: NextRequest) {
     if (rejeitadosIds.has(id)) continue;
     if (dir.agencia_id && !colegiadaIds.has(dir.agencia_id)) continue;
     if (!stats.has(id)) {
-      stats.set(id, { nome: dir.nome ?? "—", cargo: null, agencia_id: dir.agencia_id ?? null, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 });
+      stats.set(id, { nome: dir.nome ?? "—", cargo: null, agencia_id: dir.agencia_id ?? null, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0, ausentes: 0, abstencoes: 0 });
     }
     const s = stats.get(id)!;
     s.total++;
     if ((row as any).tipo_voto === "Favoravel") s.favoravel++;
     else if ((row as any).tipo_voto === "Desfavoravel") s.desfavoravel++;
+    else if ((row as any).tipo_voto === "Ausente") s.ausentes++;
+    else if ((row as any).tipo_voto === "Abstencao") s.abstencoes++;
     if ((row as any).is_divergente) s.divergente++;
     if ((row as any).is_nominal) s.nominais++; else s.inferidos++;
   }
@@ -158,16 +163,22 @@ export async function GET(req: NextRequest) {
         mandato_fim: m?.data_fim ?? null,
         mandato_fonte: m ? (mandatoConfiavel(m) ? "verificado" : "estimado") : null,
         total: s.total,
+        efetivos: s.favoravel + s.desfavoravel,
+        ausentes: s.ausentes,
+        abstencoes: s.abstencoes,
         favoravel: s.favoravel,
         desfavoravel: s.desfavoravel,
         divergente: s.divergente,
         nominais: s.nominais,
         inferidos: s.inferidos,
         relatorias: relatoriasPorDiretor.get(id) ?? 0,
-        pct_favor: s.total > 0 ? parseFloat(((s.favoravel / s.total) * 100).toFixed(1)) : 0,
+        // Denominador EFETIVO: ausência no denominador diluía a taxa de deferimento pessoal.
+        pct_favor: s.favoravel + s.desfavoravel > 0
+          ? parseFloat(((s.favoravel / (s.favoravel + s.desfavoravel)) * 100).toFixed(1))
+          : 0,
       };
     })
-    .sort((a, b) => b.total - a.total);
+    .sort((a, b) => b.efetivos - a.efetivos);
 
   return NextResponse.json(result);
 }

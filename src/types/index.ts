@@ -412,6 +412,11 @@ export interface DiretorOverviewItem {
   diretor_id: string;
   diretor_nome: string;
   total: number;
+  /** Fase 16 — votos EFETIVOS (Favoravel+Desfavoravel): o número que a tela compara.
+   *  `total` inclui Ausente/Abstencao e fica para histórico (METODOLOGIA 01/09/2026). */
+  efetivos?: number;
+  ausentes?: number;
+  abstencoes?: number;
   favoravel: number;
   desfavoravel: number;
   divergente: number;

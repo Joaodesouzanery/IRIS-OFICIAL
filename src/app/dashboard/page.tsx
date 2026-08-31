@@ -212,7 +212,15 @@ export default function DashboardPage() {
                       )}
                     </span>
                     <span className="font-mono text-sm text-brand font-medium">
-                      {formatNumber(d.total)}
+                      {/* Fase 16 — VOTOS EFETIVOS (Favorável+Desfavorável). Ausência contada
+                          como "voto" inflava a comparação entre diretores; a mudança de
+                          definição está datada em docs/METODOLOGIA-METRICAS.md (01/09/2026). */}
+                      {formatNumber(d.efetivos ?? d.total)}
+                      {((d.ausentes ?? 0) + (d.abstencoes ?? 0)) > 0 && (
+                        <span className="ml-1 text-[10px] text-text-muted font-normal">
+                          +{(d.ausentes ?? 0) + (d.abstencoes ?? 0)} aus/abst
+                        </span>
+                      )}
                     </span>
                   </div>
                 ))}

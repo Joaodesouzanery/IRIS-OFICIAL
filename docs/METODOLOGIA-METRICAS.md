@@ -6,6 +6,24 @@ consegue medir**.
 
 ---
 
+## 0. Votos por diretor — VOTOS EFETIVOS (vigência: 01/09/2026)
+
+**Mudança de definição, datada.** Até 31/08/2026, "votos por diretor" era `COUNT(*)` de `votos` —
+e linhas `Ausente`/`Abstencao` contavam +1. A partir de **01/09/2026**, o número principal do
+widget e do ranking é **votos efetivos = Favoravel + Desfavoravel**; ausências e abstenções
+aparecem à parte, e `pct_favor` usa o denominador efetivo. Relatórios que comparem meses
+atravessando essa data devem declarar qual definição usam — os números da tela CAÍRAM na
+virada, e isso é correção, não perda de dados (as linhas continuam no banco).
+
+**O limite que nenhuma correção resolve.** A fonte da ARTESP **nunca nomina voto** (0 nominais;
+toda linha é inferida do roster de mandato/presença). Diferença de contagem entre diretores da
+ARTESP mede **janela de mandato** — quem tomou posse antes acumula mais deliberações — e não
+comportamento de voto. Comparações de comportamento na ARTESP só fazem sentido sobre a MESMA
+janela; o instrumento para isso é o bloco ① de `docs/auditoria-votos-cobertura.sql`
+(votos/oportunidades + decomposição por proveniência).
+
+---
+
 ## 1. Os quatro estados de uma deliberação
 
 O campo `resultado` carrega, historicamente, duas coisas diferentes no mesmo lugar: o **desfecho**
