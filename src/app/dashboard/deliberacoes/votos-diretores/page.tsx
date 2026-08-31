@@ -382,8 +382,17 @@ export default function VotosDiretoresPage() {
       // aba" deixar de perder o acompanhamento (ao reabrir, a tela retoma este id) e que impede
       // duas abas de rodarem a esteira sobre as mesmas linhas: a segunda recebe 409.
       let runId: string | null = runIdAtivo;
-      for (let rodada = 1; rodada <= 40; rodada++) {
+      // Fase 14 — TRAVA DE RELÓGIO no lugar do contador (o resto da Fase 11 que nunca subiu).
+      // 40 rodadas era um número arbitrário que não sabia se o trabalho acabou: com fila grande
+      // parava cedo demais ("parou no teto — ainda há fila", a tela real de 31/08), e com fila
+      // vazia o `deveContinuar` já encerra em segundos. O laço agora corre até drenar OU até o
+      // teto de TEMPO — rede de segurança, não desfecho padrão. O teto de 300 rodadas é só o
+      // anti-laço-infinito (o relógio dispara muito antes).
+      const inicioLaco = Date.now();
+      const TETO_LACO_MS = 25 * 60_000;
+      for (let rodada = 1; rodada <= 300; rodada++) {
         rodadasFeitas = rodada;
+        if (Date.now() - inicioLaco > TETO_LACO_MS) { desfecho = "teto"; break; }
         setRodarTudoProgresso(`Rodada ${rodada} · aprovação → métricas → coleta/extração…`);
         try {
           const res = await api.post<{
@@ -469,7 +478,7 @@ export default function VotosDiretoresPage() {
       } else {
         const cabecalho = desfecho === "drenou"
           ? "Esteira zero-toque concluída (fila drenada)"
-          : `Esteira parou no teto de ${rodadasFeitas} rodadas — ainda há fila`;
+          : `Esteira parou no teto de tempo (~25min, ${rodadasFeitas} rodadas) — ainda há fila; rode de novo para continuar`;
         const ressalva = rodadasComErro > 0
           ? ` · ⚠️ ${rodadasComErro} rodada(s) falharam pelo caminho (último erro: ${ultimoErro ?? "—"})`
           : "";
