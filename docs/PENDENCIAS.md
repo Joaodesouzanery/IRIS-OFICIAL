@@ -3,6 +3,24 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 14 (31/ago/2026) — o QA e o acesso que faltou
+
+**O QA está pronto em `docs/qa-fase14.sql`** — cole no SQL Editor e devolva o JSON. Ele mede as
+7 frentes: deliberações por agência×ano (427→?), ANM (seletor aplicado? ata nova? títulos dos 51
+`diretoria`), finais sem voto diagnosticadas (inclui `inferivel_pela_decisao` — o que o próximo
+"Rodar tudo" fecha via materializar), votos órfãos, `queued`×job, mojibake e coleta por site.
+
+**Sobre o MCP (medido nesta sessão, 31/08):**
+- O conector Supabase do claude.ai aponta para o projeto de OBRAS (listei as tabelas — RDO,
+  frotas): **nunca usar para o IRIS**.
+- O `.mcp.json` do repo tem um servidor `supabase` (ref `hjevhwqntqsffqmjocra`) que exige OAuth —
+  numa **sessão interativa**, rode `/mcp` e autentique-o; confirme antes se esse ref é mesmo o
+  projeto IRIS (Dashboard → Settings → General → Reference ID).
+- Se o ref não for o IRIS (ou preferir sem OAuth): `claude mcp add supabase-iris --scope project
+  -e SUPABASE_ACCESS_TOKEN=<token> -- npx -y @supabase/mcp-server-supabase@latest --read-only
+  --project-ref=<ref do IRIS>` — e **abra uma sessão nova** (MCP adicionado não carrega na
+  sessão corrente).
+
 ## 🔴 FASE 13 (30/ago/2026) — 2 migrations para aplicar, e o MCP que automatiza tudo
 
 **Migrations no SQL Editor (nesta ordem; idempotentes):**
