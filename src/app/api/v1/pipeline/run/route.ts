@@ -444,8 +444,17 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     const r = await call(processPOST, "/api/v1/upload/process?apenas_reaper=1", "reaper", {});
     religados += Number(r.body?.religados ?? 0);
     reapados += Number(r.body?.reaped ?? 0);
-    etapas.presos = anotar(r, "reaper", { religados, jobs_orfaos_recuperados: reapados });
-    if (religados > 0) restantes = true; // o que voltou para a fila quer ser extraído
+    const reconciliadosImportado = Number(r.body?.reconciliados_importado ?? 0);
+    const reconciliadosIgnorado = Number(r.body?.reconciliados_ignorado ?? 0);
+    const reconciliadosNovo = Number(r.body?.reconciliados_novo ?? 0);
+    etapas.presos = anotar(r, "reaper", {
+      religados,
+      jobs_orfaos_recuperados: reapados,
+      reconciliados_importado: reconciliadosImportado,
+      reconciliados_ignorado: reconciliadosIgnorado,
+      reconciliados_novo: reconciliadosNovo,
+    });
+    if (religados > 0 || reconciliadosNovo > 0) restantes = true; // o que voltou para a fila quer ser extraído
   } else { etapas.presos = foraDoPlano("reaper"); }
 
   let processados = 0;

@@ -177,7 +177,7 @@ export async function processPendingDocuments(
      */
     apenasReaper?: boolean;
   },
-): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number }> {
+): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number; reconciliados_importado: number; reconciliados_ignorado: number; reconciliados_novo: number }> {
   const db = createSupabaseServerClient();
 
   // Reaper oportunista de órfãos: um job/doc preso em "processing" só é possível se o
@@ -283,9 +283,69 @@ export async function processPendingDocuments(
     religados++;
   }
 
-  // Os três reapers acabaram. Quem só queria reparar para por aqui — sem tocar na fila `pending`,
+  // ═══ Fase 16 — o QUARTO reaper: o poço `em_revisao` de monitoramento_itens ═══
+  // Nenhuma query do repo lê `em_revisao`: a fila só olha `novo`, o retry só olha `ignorado`, o
+  // confirm não toca a tabela. Todo item que o auto-enqueue marcou `em_revisao` congelava ali —
+  // com o doc já `confirmed` (funil mentindo) ou `ignored` (item morto). Produção: a pauta da
+  // 87ª ROP e 4 "Voto DFQ" da ANTT, meses parados. A reconciliação espelha o destino TERMINAL
+  // do doc no item; doc em trânsito fica para a esteira. E ela é CONTADA — o poço se formou em
+  // silêncio porque nada o expunha; o contador por rodada é o alarme de recorrência.
+  let reconciliadosImportado = 0;
+  let reconciliadosIgnorado = 0;
+  let reconciliadosNovo = 0;
+  if (hasBudget(deadlineAt, 2_000)) {
+    const { data: poco } = await db
+      .from("monitoramento_itens")
+      .select("id, documento_id")
+      .eq("status", "em_revisao")
+      .limit(50);
+    const itensPoco = (poco ?? []) as Array<{ id: string; documento_id: string | null }>;
+    if (itensPoco.length > 0) {
+      const docIds = [...new Set(itensPoco.map((i) => i.documento_id).filter(Boolean))] as string[];
+      const { data: docsPoco } = docIds.length
+        ? await db.from("documentos_regulatorios").select("id, status").in("id", docIds)
+        : { data: [] as any[] };
+      const statusDoc = new Map(((docsPoco ?? []) as any[]).map((d) => [d.id as string, d.status as string]));
+
+      const paraImportado: string[] = [];
+      const paraIgnorado: string[] = [];
+      const paraNovo: string[] = [];
+      for (const item of itensPoco) {
+        // Doc apagado (FK ON DELETE SET NULL) ou id inexistente: órfão → volta ao começo.
+        const st = item.documento_id ? statusDoc.get(item.documento_id) : undefined;
+        if (!st) paraNovo.push(item.id);
+        else if (st === "confirmed") paraImportado.push(item.id);
+        else if (st === "ignored") paraIgnorado.push(item.id);
+        // queued/review_pending/failed/processing: em trânsito — a esteira move o doc.
+      }
+      const agora = new Date().toISOString();
+      if (paraImportado.length) {
+        const { error } = await db.from("monitoramento_itens")
+          .update({ status: "importado", tentativas: 0, proxima_tentativa_em: null, last_seen_at: agora })
+          .in("id", paraImportado);
+        if (!error) reconciliadosImportado = paraImportado.length;
+      }
+      if (paraIgnorado.length) {
+        // Sem carimbo: `ignorado` com proxima_tentativa_em NULL fica FORA do retry — o doc foi
+        // arquivado por decisão, e o motivo detalhado mora no próprio doc (a migration one-shot
+        // herda `arquivado_motivo`; o reaper trata o gotejo e não paga um round-trip por item).
+        const { error } = await db.from("monitoramento_itens")
+          .update({ status: "ignorado", proxima_tentativa_em: null, last_seen_at: agora })
+          .in("id", paraIgnorado);
+        if (!error) reconciliadosIgnorado = paraIgnorado.length;
+      }
+      if (paraNovo.length) {
+        const { error } = await db.from("monitoramento_itens")
+          .update({ status: "novo", upload_job_id: null, enfileirado_em: null, last_seen_at: agora })
+          .in("id", paraNovo);
+        if (!error) reconciliadosNovo = paraNovo.length;
+      }
+    }
+  }
+
+  // Os quatro reapers acabaram. Quem só queria reparar para por aqui — sem tocar na fila `pending`,
   // que é o trabalho caro.
-  if (opcoes?.apenasReaper) return { processed: 0, job_ids: [], reaped, religados };
+  if (opcoes?.apenasReaper) return { processed: 0, job_ids: [], reaped, religados, reconciliados_importado: reconciliadosImportado, reconciliados_ignorado: reconciliadosIgnorado, reconciliados_novo: reconciliadosNovo };
 
   const normalizedLimit = Math.min(20, Math.max(1, limit));
   const { data: jobs } = await db
@@ -309,7 +369,7 @@ export async function processPendingDocuments(
     processed = await processQueue(selected, 4, deadlineAt);
   }
 
-  return { processed, job_ids: selected.map((job) => job.jobId), reaped, religados };
+  return { processed, job_ids: selected.map((job) => job.jobId), reaped, religados , reconciliados_importado: reconciliadosImportado, reconciliados_ignorado: reconciliadosIgnorado, reconciliados_novo: reconciliadosNovo };
 }
 
 /** Quanto do texto lido viaja junto com a deliberação, para conferência a olho. */

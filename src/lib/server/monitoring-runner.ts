@@ -356,17 +356,22 @@ export async function tryAutoEnqueueMonitoredDocument(
   });
 
   const ok = result.status !== "rejected" && result.status !== "error" && result.status !== "duplicate_confirmed";
+  // Fase 16 — `existing_archived` é doc JÁ arquivado por decisão: marcar `em_revisao` criava um
+  // item que nascia morto no poço (nenhuma query lê em_revisao). Nasce `ignorado`, com motivo e
+  // SEM carimbo de retry — terminal de verdade.
+  const arquivadoNaOrigem = result.status === "existing_archived";
   await db
     .from("monitoramento_itens")
     .update({
       upload_job_id: result.job_id,
       documento_id: result.document_id,
-      enfileirado_em: ok ? new Date().toISOString() : null,
-      status: ok ? "em_revisao" : "novo",
+      enfileirado_em: ok && !arquivadoNaOrigem ? new Date().toISOString() : null,
+      status: arquivadoNaOrigem ? "ignorado" : ok ? "em_revisao" : "novo",
       metadata: {
         ...item.metadata,
         auto_enqueue_status: result.status,
         auto_enqueue_message: result.message ?? null,
+        ...(arquivadoNaOrigem ? { enqueue_motivo: "documento_arquivado" } : {}),
       },
     })
     .eq("id", itemId);

@@ -88,11 +88,16 @@ describe("etapa74 · o orquestrador chama o passo, e reporta", () => {
   });
 
   it("o que foi solto vira número na etapa — não some como antes", () => {
-    expect(RUN).toMatch(/etapas\.presos = anotar\(r, "reaper", \{ religados/);
+    // Fase 16 — o passo ganhou os contadores de reconciliação (reaper #4); o pino segue o
+    // mesmo: o que o reaper solta vira número na etapa.
+    expect(RUN).toMatch(/etapas\.presos = anotar\(r, "reaper", \{[\s\S]{0,80}?religados/);
+    expect(RUN).toMatch(/reconciliados_importado/);
   });
 
   it("documento religado pede outra rodada — ele voltou para a fila para ser extraído", () => {
-    expect(RUN).toMatch(/if \(religados > 0\) restantes = true;/);
+    // Fase 16 — item reconciliado de volta a `novo` também pede outra rodada (vai re-entrar
+    // pelo enfileiramento), pela mesma razão do religado.
+    expect(RUN).toMatch(/if \(religados > 0 \|\| reconciliadosNovo > 0\) restantes = true;/);
   });
 
   it("o passo fora do plano se declara, como todos os outros", () => {
