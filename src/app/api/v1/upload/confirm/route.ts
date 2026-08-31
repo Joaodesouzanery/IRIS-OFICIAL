@@ -38,8 +38,7 @@ import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 import { buildRawExtractionDoItem } from "@/lib/server/ata-item-materializacao";
 import {
   checarCoerenciaUnanimidade, checarImpedidoComVoto, checarVotoQualidadeDuplo, temBloqueio,
-  checarSerieMonotonica,
-} from "@/lib/server/consistency-checks";
+  checarSerieMonotonica, RE_CONTESTADO } from "@/lib/server/consistency-checks";
 
 /**
  * Etapa58: o resultado do upsert de votos DEIXA de ser descartado. Uma violação de constraint
@@ -939,14 +938,22 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   // caía com 0 votos (rosterItem vazio desligava tudo). Fallback: o roster
                   // do PAI (presentes do preâmbulo / mandatos na data) — mesma evidência
                   // usada nas demais agências. Item NÃO-unânime segue sem voto (estrutural).
+                  // Fase 14 — INFERÊNCIA POR DECISÃO (escolha de produto): o token literal
+                  // "unanimidade" deixa de ser exigência; basta decisão + texto do ITEM medido
+                  // sem sinal de contestação ("por maioria"/"voto de qualidade"/"vencido" sem
+                  // nomes continua 0 voto — chute de direção, nunca). Era aqui que 85% das
+                  // finais da ANTT ficavam sem voto.
                   inferFromMandate: isAnttAtaItem
-                    ? Boolean(item.unanimidade_detectada && item.resultado
+                    ? Boolean((item.unanimidade_detectada
+                          || !RE_CONTESTADO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`))
+                        && item.resultado
                         && (rosterItem.length > 0 || activeDiretoresList.length > 0))
                     : shouldInferVotesFromMandate({
                       resultado: item.resultado,
                       tipo_documento: "ata",
                       import_counts_as_final: Boolean(item.resultado),
                       unanimidadeDetectada: item.unanimidade_detectada,
+                      sinaisContestacao: RE_CONTESTADO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`),
                       nomes: itemVotingNames,
                       nomesContra: item.votos_contra_detectados ?? [],
                       nomesAbstencao: item.votos_abstencao_detectados ?? [],

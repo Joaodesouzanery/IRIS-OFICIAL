@@ -19,6 +19,7 @@ import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { RE_CONTESTADO } from "@/lib/server/consistency-checks";
 import {
   buildVotoRows,
   getActiveDiretoresForVote,
@@ -71,7 +72,7 @@ export async function POST(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("id, agencia_id, tipo_documento, documento_pai_id, resultado, data_reuniao, raw_extraction")
+    .select("id, agencia_id, tipo_documento, documento_pai_id, resultado, data_reuniao, raw_extraction, fundamento_decisao, decisoes_todas")
     .not("resultado", "is", null)
     .order("id", { ascending: true })
     .limit(4000);
@@ -152,9 +153,19 @@ export async function POST(req: NextRequest) {
       ? presentesRoster
       : await getActiveDiretoresForVote(db, d.agencia_id, d.data_reuniao, diretoresList);
 
+    // Fase 14 — o texto persistido para medir contestação: fundamento + dispositivo + raw. É
+    // este ramo que fecha o estoque (136/160 da ANTT sem voto) SEM re-ingerir nada — inferência
+    // por decisão, com "por maioria" sem nomes continuando 0 voto.
+    const textoDecisao = [
+      (d as { fundamento_decisao?: string | null }).fundamento_decisao,
+      ...(((d as { decisoes_todas?: string[] | null }).decisoes_todas) ?? []),
+      raw.assunto as string | undefined, raw.decisao as string | undefined,
+    ].filter(Boolean).join(" ");
+    const contestado = RE_CONTESTADO.test(textoDecisao);
     const inferFromMandate = isAnttAtaItem
-      ? Boolean(unanime && d.resultado && activeDiretoresList.length > 0)
+      ? Boolean((unanime || !contestado) && d.resultado && activeDiretoresList.length > 0)
       : shouldInferVotesFromMandate({
+        sinaisContestacao: contestado,
         resultado: d.resultado,
         tipo_documento: d.tipo_documento,
         import_counts_as_final: d.tipo_documento === "ata" ? Boolean(d.resultado) : (raw.import_counts_as_final as boolean | null | undefined),

@@ -7,8 +7,7 @@ import {
   checarCardinalidadeVotos, checarInteressadoNoDispositivo, checarSinalDeDeliberacao, checarVotoQualidadeDuplo,
   checarAdmissibilidadeMalClassificada, checarLigaduraResidual,
   checarDataAnteriorAoProcesso, checarAnoProtocoloDaAta,
-  formatarAchados, temBloqueio, type Achado,
-} from "@/lib/server/consistency-checks";
+  formatarAchados, temBloqueio, type Achado, RE_CONTESTADO } from "@/lib/server/consistency-checks";
 import { classifyMicrotema, classifyPautaInterna, detectAgenciaSigla } from "@/lib/server/classifier";
 import { extractFields, calcConfidence, extractItemVotes, buildRoleMap, extractRetirada, extractVotosEmAutos } from "@/lib/server/nlp-extractor";
 import { parseAnttManualDocument, isAnttVotoFilename, setAnttDynamicInitials, buildAnttDirectorInitials, setAnttCargoMandatos, type AnttCargoMandato } from "@/lib/server/antt-manual-parser";
@@ -412,6 +411,8 @@ export async function analyzeUploadPdf(input: {
     nomesContra: fields.nomes_votacao_contra,
     nomesAbstencao: fields.nomes_votacao_abstencao,
     dataReuniao: fields.data_reuniao,
+    // Fase 14 — o sinal de contestação MEDIDO no texto habilita a inferência por decisão.
+    sinaisContestacao: RE_CONTESTADO.test(extraction.text),
     // Fase 12 — SEM o cadastro, `hasNominalNames` degrada para `Boolean(nomes?.length)`:
     // qualquer nome extraído (signatário de rodapé, nome que não casa) desligava a inferência
     // E não gerava voto nominal — item unânime nascia com MENOS votos que o colegiado. E o
@@ -443,6 +444,9 @@ export async function analyzeUploadPdf(input: {
         nomesContra: item.votos_contra_detectados ?? [],
         nomesAbstencao: item.votos_abstencao_detectados ?? [],
         dataReuniao: fields.data_reuniao,
+        // Fase 14 — por ITEM: contestação de outro item não pode bloquear este (mesma lição do
+        // C07). O texto do item é assunto+decisão.
+        sinaisContestacao: RE_CONTESTADO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`),
         // Fase 12 — o sítio mais grave dos dois: para ata da ANTT, `votos_detectados` são os
         // PRESENTES, então presentes não-vazios desligavam a inferência do item inteiro — e
         // `votos_sugeridos` não-vazio faz o confirm pular o fallback do roster do pai.

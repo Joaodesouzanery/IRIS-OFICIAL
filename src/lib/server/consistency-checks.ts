@@ -6,7 +6,7 @@
  */
 
 // Sinais fortes de voto CONTESTADO (não "divergênci" solto, que casa "sem divergência").
-const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|\bvencid[oa]s?\b|prevaleceu|maioria\s+de\s+votos/i;
+export const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|\bvencid[oa]s?\b|prevaleceu|maioria\s+de\s+votos/i;
 
 /**
  * "Unanimidade" DECLARADA + sinais de contestação SEM dissidente nomeado é contraditório: o pool

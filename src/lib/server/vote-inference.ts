@@ -83,6 +83,14 @@ export function shouldInferVotesFromMandate(input: {
   diretoresList?: DiretorVoteRecord[];
   /** @deprecated quórum por assinatura não é mais usado como gatilho de inferência. */
   signatariosCount?: number;
+  /**
+   * Fase 14 — o texto tem sinal de CONTESTAÇÃO ("por maioria", "voto de qualidade", "vencido")?
+   * `false` explícito habilita a inferência POR DECISÃO (escolha de produto do usuário: item
+   * aprovado sem token de unanimidade e sem dissidente nomeado infere Favorável para o roster,
+   * proveniência `inferido_decisao`). `undefined` = chamador não mediu → conservador, não
+   * infere pelo caminho novo. `true` = contestado sem nomes → 0 voto (chute de direção, nunca).
+   */
+  sinaisContestacao?: boolean;
 }) {
   if (!isFinalVoteDocument(input)) return false;
   if (!input.resultado || input.resultado === "Retirado de Pauta") return false;
@@ -93,7 +101,11 @@ export function shouldInferVotesFromMandate(input: {
   const hasNominalNames = input.diretoresList
     ? matchIds(input.nomes ?? [], input.diretoresList).size > 0
     : Boolean(input.nomes?.length);
-  return hasDivergence || (isUnanimous && !hasNominalNames);
+  // Fase 14 — inferência POR DECISÃO: 136 das 160 finais da ANTT (85%) estavam sem voto porque
+  // o item exigia o token literal "unanimidade". Decisão + texto MEDIDO sem contestação vale o
+  // mesmo que o token; contestação presente ou não-medida mantém o comportamento antigo.
+  const decisaoSemContestacao = input.sinaisContestacao === false;
+  return hasDivergence || ((isUnanimous || decisaoSemContestacao) && !hasNominalNames);
 }
 
 /**
