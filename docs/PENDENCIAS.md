@@ -3,6 +3,45 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 19 (06/set/2026) — o reparo que destrava voto, e a pauta que virava ata
+
+**Sequência:** deploy verde → aplicar `20260905120000_alerta_de_fonte_sem_item.sql` e
+`20260906120000_arquivar_filhos_de_pauta.sql` → **"Rodar tudo"** → colar `docs/qa-fase19.sql`.
+
+**⚠️ A LIÇÃO DA FASE (terceira repetição da mesma classe):** eu ia consertar o extrator por causa
+de `tem_decisao_no_raw: 0` em 100% dos 267 itens. Era **defeito da minha consulta**: `decisao` é
+**omissão DECLARADA** do raw do filho (`ata-item-materializacao.ts:51` — "vira a coluna
+`resumo_pleito`"), e `parece_retirado` era impossível de ser >0 por construção. Medi o splitter
+contra as 4 atas REAIS da ANM: **305 itens, `semResultado = 0`**. O extrator está bom; os 232 são
+passivo de um build anterior. **Regra nova, na skill `medir-antes-de-generalizar`: métrica
+extrema (0% ou 100%) → a PRIMEIRA hipótese é "minha consulta lê o caminho errado".**
+
+**O que a fase entregou:**
+1. Janela de reparo blindada — o requeue parou de zerar `ata_items`/`texto_extraido` de documento
+   com filho pendente (fechava sozinha a cada "Rodar tudo").
+2. **A PAUTA parou de virar ata** (defeito vivo, 35 filhos-fantasma): o reconhecimento era só
+   pelo NOME, e o nome que chega do portal é `documento-monitorado-<ts>.pdf`. Agora
+   `declaraSerPauta` (linha que COMEÇA com "pauta") — regra medida contra os cabeçalhos reais
+   depois que a primeira versão reprovou dois testes. **A certificação não pegava porque alimenta
+   o nome do NOSSO fixture**, que contém "pauta": o teste novo roda o mesmo PDF por 3 nomes.
+3. Os 35 filhos-fantasma arquivados por `import_counts_as_final: false` (a marca que TODO
+   consumidor já respeita, em vez de filtrar `PAUTA-%` em cada consulta).
+4. **`re-resultar`**: rota + passo da esteira que repara o `resultado` dos itens de ata casando
+   `item_numero` contra os `ata_items` do PAI. É o que destrava os votos —
+   `materializar-faltantes` exige `documento_pai_id && resultado`.
+5. A medição errada saiu do repo (qa-fase18 corrigido) e `qa-fase19.sql` prova o reparo.
+6. **4 skills novas**: `capacidade-sem-consumidor`, `falha-silenciosa`, `teste-nao-tautologico`,
+   `medir-antes-de-generalizar` — cada uma ancorada em incidentes nomeados deste repo.
+
+**ADIADO por decisão — os 45 votos escaneados da ANTT.** Comparação **corrigida** (a anterior
+confrontava "grátis × PRO mensal do MESMO provedor" e foi apresentada como se fosse o mercado):
+OCR **por uso, sem assinatura** — Google Document AI, AWS Textract e Azure Document Intelligence,
+os três a **US$1,50/1.000 páginas** → os 45 têm ~200 páginas ≈ **US$0,30**, dentro do free tier
+dos três. Leitura por modelo ≈ US$1 e devolve **campos** em vez de texto ruidoso (o gate de voto
+exige match de relator ≥0,85). Antes de qualquer chave: desarmar as 3 bombas — gate de 5 MB
+aplicado ANTES do split (`ocr.ts:97`), `return ocrRequest` sem `deadlineAt` (`:112`), e a reserva
+de 9s do `pipeline.ts:154` contra unidade de 40s. E rodar **3–5 primeiro**, conferir à mão.
+
 ## 🔴 FASE 18 (05/set/2026) — a coleta estrangulada e o alarme que nunca gravou
 
 **Sequência:** deploy verde → aplicar `20260905120000_alerta_de_fonte_sem_item.sql` →
