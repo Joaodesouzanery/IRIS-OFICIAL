@@ -273,7 +273,10 @@ export interface PdfExtractionResult {
 }
 
 export async function extractPdfText(
-  buffer: Buffer
+  buffer: Buffer,
+  // Fase 17 — o orçamento atravessa até o OCR. O parâmetro de `extractTextViaOcr` existia desde
+  // sempre e NENHUM chamador o passava: até 10 blocos de 40s numa função de 70s.
+  deadlineAt?: number,
 ): Promise<PdfExtractionResult> {
   if (!isPdfBuffer(buffer)) {
     throw new Error("Arquivo inválido: não é um PDF (magic bytes incorretos)");
@@ -325,7 +328,7 @@ export async function extractPdfText(
   // que temos (documento segue sinalizado como escaneado na análise, com aviso).
   let ocrApplied = false;
   if (charsPerPage < SCANNED_CHARS_PER_PAGE_THRESHOLD && isOcrConfigured()) {
-    const ocrText = await extractTextViaOcr(buffer);
+    const ocrText = await extractTextViaOcr(buffer, deadlineAt);
     if (ocrText && ocrText.length > Math.max(200, text.length * 1.5)) {
       text = repairLigatures(removeRepeatedLines(normalizeWhitespace(removeSeiHeadersFooters(fixEncoding(ocrText)))));
       charsPerPage = pageCount > 0 ? Math.floor(text.length / pageCount) : text.length;

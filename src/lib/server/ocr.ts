@@ -19,7 +19,11 @@ const OCR_ENDPOINT = "https://api.ocr.space/parse/image";
 export const MAX_OCR_BYTES = 5 * 1024 * 1024; // teto do provedor para PDF
 const OCR_TIMEOUT_MS = 40_000; // dentro do orçamento de 60s da Vercel
 const FREE_TIER_MAX_PAGES = 3; // limite de páginas por PDF no tier grátis
-const MAX_CHUNKS = 10; // teto de chamadas por documento (30 páginas OCRizadas)
+// Fase 17 — 10 → 3. Cada bloco custa até OCR_TIMEOUT_MS (~40s) e a função inteira tem 70s:
+// 10 blocos eram 400s, ou seja, SIGKILL incatchável — que não grava nem sucesso nem erro e leva
+// junto a run e os jobs concorrentes. 3 blocos (9 páginas) cabem com folga; o que não couber sai
+// com o texto que houver, e o documento segue sinalizado, que é o comportamento honesto.
+const MAX_CHUNKS = 3; // teto de chamadas por documento (9 páginas OCRizadas)
 
 export function isOcrConfigured(): boolean {
   return Boolean(process.env.OCR_SPACE_API_KEY);

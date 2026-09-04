@@ -62,7 +62,7 @@ const DEMO: CoberturaDocumentosResponse = {
   duplicatas: { exatas: 6, grupos_relacionados: 41 },
   alertas: [
     "38 itens monitorados descobertos mas NÃO enfileirados (ARTESP/ANM página 2+ provavelmente perdida).",
-    "8 documento(s) com status 'failed' (PDF escaneado/erro — sem OCR).",
+    "8 documento(s) com status 'failed' (download, PDF corrompido ou timeout — reprocessáveis).",
     "14 documento(s) em review_pending aguardando confirmação manual.",
   ],
 };
@@ -145,7 +145,7 @@ export async function GET(req: NextRequest) {
 
   const alertas: string[] = [];
   if (monitoradosNaoEnfileirados > 0) alertas.push(`${monitoradosNaoEnfileirados} item(ns) monitorado(s) descoberto(s) mas NÃO enfileirado(s) — possível página 2+ ou auto-enfileiramento falho.`);
-  if (regsFailed > 0) alertas.push(`${regsFailed} documento(s) com status 'failed' (PDF escaneado/erro — sem OCR).`);
+  if (regsFailed > 0) alertas.push(`${regsFailed} documento(s) com status 'failed' (download, PDF corrompido ou timeout — reprocessáveis).`);
   if (reviewPending > 0) alertas.push(`${reviewPending} documento(s) em review_pending aguardando confirmação manual.`);
   if (coletadosComErro > 0) alertas.push(`${coletadosComErro} documento(s) coletado(s) com erro de download (sem retry).`);
 

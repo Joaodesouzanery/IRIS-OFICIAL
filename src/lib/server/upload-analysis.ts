@@ -49,6 +49,8 @@ export async function analyzeUploadPdf(input: {
   db?: any | null;
   currentDocumentoId?: string | null;
   currentUploadJobId?: string | null;
+  /** Fase 17 — orçamento da rodada, repassado até o OCR (que podia gastar 400s sem ele). */
+  deadlineAt?: number;
 }): Promise<PreviewResult> {
   const { file, agencias, db, currentDocumentoId = null, currentUploadJobId = null } = input;
 
@@ -95,7 +97,7 @@ export async function analyzeUploadPdf(input: {
 
   let extraction: Awaited<ReturnType<typeof extractPdfText>>;
   try {
-    extraction = await extractPdfText(file.buffer);
+    extraction = await extractPdfText(file.buffer, input.deadlineAt);
   } catch {
     return {
       ...errorResult(file.name, file_hash),

@@ -117,7 +117,7 @@ const SAUDE_DADOS_DEMO: SaudeDadosResponse = {
   ],
   alertas: [
     "9 documento(s) aguardando confirmação manual em Upload → Revisão.",
-    "3 documento(s) falharam no processamento (PDF escaneado/erro — sem OCR ainda).",
+    "3 documento(s) falharam no processamento (download, PDF corrompido ou timeout — reprocessáveis).",
     "32 deliberação(ões) sem nenhum voto registrado.",
     "4 candidato(s) de diretor aguardando revisão.",
   ],
@@ -284,7 +284,7 @@ export async function GET(req: NextRequest) {
     alertas.push("Base real ligada, porém SEM deliberações coletadas ainda — rode a coleta ponta-a-ponta.");
   }
   if (reviewPending > 0) alertas.push(`${reviewPending} documento(s) aguardando confirmação manual em Upload → Revisão.`);
-  if (failed > 0) alertas.push(`${failed} documento(s) falharam no processamento (PDF escaneado/erro — sem OCR ainda).`);
+  if (failed > 0) alertas.push(`${failed} documento(s) falharam no processamento (download, PDF corrompido ou timeout — reprocessáveis).`);
   if (semVoto > 0) alertas.push(`${semVoto} deliberação(ões) sem nenhum voto registrado.`);
   if (delibsSoInferidas > 0) alertas.push(`${delibsSoInferidas} deliberação(ões) com votos 100% inferidos (sem nome no documento) — possível unanimidade legada a revisar.`);
   if (candidatosPendentes > 0) alertas.push(`${candidatosPendentes} candidato(s) de diretor aguardando revisão.`);

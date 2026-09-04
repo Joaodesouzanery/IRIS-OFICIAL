@@ -11,7 +11,7 @@ import { hasBudget } from "@/lib/server/time-budget";
 
 type QueueJob = { jobId: string; agenciaId?: string | null };
 
-export async function processPdf(jobId: string): Promise<void> {
+export async function processPdf(jobId: string, deadlineAt?: number): Promise<void> {
   const db = createSupabaseServerClient();
 
   await db
@@ -64,6 +64,9 @@ export async function processPdf(jobId: string): Promise<void> {
       db,
       currentDocumentoId: documentoId,
       currentUploadJobId: job.id,
+      // Fase 17 — o orçamento da rodada chega até o OCR. Sem ele, um PDF escaneado podia gastar
+      // 400s numa função de 70s (SIGKILL incatchável, levando a run e os jobs concorrentes).
+      deadlineAt,
     });
 
     if (analysis.status === "error") {
@@ -85,7 +88,12 @@ export async function processPdf(jobId: string): Promise<void> {
 
     await updateDocument(db, documentoId, {
       status: "review_pending",
-      agencia_id: analysis.agencia_id_detected,
+      // Fase 17 — `?? job.agencia_id`: a análise só detecta agência a partir do TEXTO, e um PDF
+      // escaneado não tem texto. Sobrescrever com `null` apagava a agência que a ESTEIRA já
+      // conhecia (o item de monitoramento sabe de que site o documento veio) e o documento era
+      // arquivado como `sem_agencia` — diagnóstico falso, que contamina a medição das outras
+      // frentes.
+      agencia_id: analysis.agencia_id_detected ?? job.agencia_id,
       agencia_sigla_detected: analysis.agencia_sigla_detected,
       tipo_documento: analysis.fields.tipo_documento,
       documento_subtipo: analysis.documento_subtipo ?? null,
@@ -149,7 +157,7 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt
       }
       const job = queue.shift()!;
       started++;
-      const p = processPdf(job.jobId)
+      const p = processPdf(job.jobId, deadlineAt)
         .catch((err) => console.error(`[queue] Job ${job.jobId} falhou:`, err))
         .then(() => {
           const idx = active.indexOf(p);
