@@ -3,6 +3,44 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 17 (04/set/2026) — a perda sem rótulo, a cobertura que mentia, e o WAF que não era
+
+**Sequência operacional (NESTA ordem):**
+1. Deploy verde no Vercel.
+2. **"Rodar tudo"** até "drenou".
+3. SQL Editor: aplicar `20260904120000_rotular_arquivados_sem_motivo.sql` (rotula os 95 e lhes
+   dá o carimbo de origem, que é o caminho de volta) e `20260904130000_anm_arquivo_das_atas.sql`
+   (o "More…" da ANM vira fonte).
+4. **"Rodar tudo"** de novo → colar `docs/qa-fase17.sql` e devolver o JSON.
+
+**⚠️ ACHADO QUE CORRIGE TRÊS FASES — "a ARTESP está bloqueada pelo WAF" era, em parte, erro
+nosso.** Medido em 04/09 contra o portal ao vivo: a listagem responde **HTTP 200 com 196 KB de
+conteúdo real** (129× "Deliberação"; o parser do projeto extrai **264 itens**, incluindo a
+**1210ª Reunião de 02/09/2026**), e mesmo assim `looksLikeChallenge()` dizia `true` — porque
+tratava `_Incapsula_Resource` (o script **sensor** do Imperva, presente em toda página do portal)
+como prova de bloqueio. A fixture antiga tinha 1,6 KB recortados à mão e não continha o sensor.
+O que a coleta prova é `items.length === 0`; a CAUSA vinha de um marcador que sempre casa.
+**De produção (IP de datacenter) o bloqueio pode ser real — o bloco ③ do QA mede.** Enquanto isso,
+a hipótese mais provável para "0 itens" passa a ser **mudança de layout**, não bloqueio.
+
+**Regressão minha, consertada na mesma fase:** o reaper #4 da Fase 16 arquivava sem
+`enqueue_motivo` — e motivo NULL + `proxima_tentativa_em` NULL põe o item fora dos **dois**
+filtros do retry. 95 itens em morte terminal, inalcançáveis por qualquer migration. E a migration
+irmã (20260901120000) lia `dr.metadata->>'arquivado_motivo'` enquanto todo mundo grava em
+`dr.campos_detectados`: o "herda o motivo" sempre foi no-op.
+
+**Decisões registradas:** OCR **não** foi ligado (os 16 PDFs oficiais têm ≥1594 chars/página
+contra limiar de 80 — 20× de folga; a chave nunca existiu) — só as bombas foram desarmadas.
+DOCX **não** entra (31 dos 32 são pauta, tipo não-final: ganho medido = zero deliberação, zero
+voto). Reorg de pastas fica para a Fase 18 (a fatia "esteira/" moveria justamente os arquivos
+consertados aqui).
+
+**Pendências vivas:** a ARTESP precisa de nova medição **de produção**; a estimativa de "~40
+linhas" para o leitor de DOCX no item da Fase 9 abaixo está **errada** (ignora três portões
+`isPdfBuffer` e o bucket restrito a `application/pdf`) — o bloqueio é de VALOR, não técnico;
+`content-type` ainda não é gravado no ramo terminal, então o total de itens parados por formato
+é desconhecido fora do DOCX.
+
 ## 🔴 FASE 16 (31/ago–01/set/2026) — a esteira que termina, o poço em_revisao, votos efetivos
 
 **Sequência operacional (NESTA ordem — a Fase 15 ficou sem veredito por medir antes da esteira):**
