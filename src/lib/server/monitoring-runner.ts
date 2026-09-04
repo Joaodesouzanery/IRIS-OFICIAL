@@ -231,6 +231,46 @@ export async function processMonitoringSite(
     }
     await db.from("monitoramento_sites").update(sitePatch).eq("id", site.id);
 
+    // ═══ Fase 17 — o ALARME DE QUEDA (o que o changedetection.io tem e nós não tínhamos) ═══
+    // Não fazemos detecção de mudança: re-parseamos a página inteira e deduplicamos por
+    // `hash_item` — mais robusto que um diff de HTML, mas cego para o caso que importa. Uma fonte
+    // que trazia 284 itens e passa a trazer 0 (WAF, layout novo, portal fora do ar) terminava a
+    // rodada em silêncio, e o banner ficava MAIS verde quanto menos a coleta enxergava.
+    // `monitoramento_runs.itens_encontrados` é o fingerprint que já existe — indexado desde a
+    // migration 005 — e nunca era comparado com a run anterior.
+    //
+    // ⚠️ Nasce COM consumidor: `monitoramento_alertas` já é exibida no Dashboard e na tela de
+    // Monitoramento, e `tipo` é VARCHAR(30) SEM CHECK (005:162) — nenhuma migration necessária.
+    // Capacidade sem consumidor já custou três vezes neste projeto.
+    try {
+      const { data: runAnterior } = await db
+        .from("monitoramento_runs")
+        .select("itens_encontrados")
+        .eq("site_id", site.id)
+        .not("finished_at", "is", null)
+        .order("finished_at", { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      const itensAnteriores = Number(runAnterior?.itens_encontrados ?? 0);
+      // Fonte que sempre trouxe pouco não vira ruído diário: só alarma quem tinha volume real.
+      const MIN_ITENS_PARA_ALARME = 5;
+      const quedaDeVolume =
+        itensAnteriores >= MIN_ITENS_PARA_ALARME && result.items.length <= itensAnteriores / 2;
+      if (quedaDeVolume) {
+        await db.from("monitoramento_alertas").insert({
+          site_id: site.id,
+          agencia_id: site.agencia_id,
+          tipo: "queda_de_volume",
+          titulo:
+            `${site.nome}: a listagem trouxe ${result.items.length} item(ns) — a coleta anterior ` +
+            `trouxe ${itensAnteriores}. Fonte pode estar bloqueada, fora do ar ou com layout novo.`,
+          url_item: site.url,
+        });
+      }
+    } catch {
+      /* degrada: alarme é diagnóstico, nunca pode derrubar a coleta */
+    }
+
     if (run) {
       const fetchStats = drainFetchStats();
       const headlessStats = drainHeadlessOutcomes();

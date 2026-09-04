@@ -15,6 +15,7 @@ import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { discoverAntt2026Meetings } from "@/lib/server/antt-2026-collector";
 import { parseArtespReunioes } from "@/lib/server/monitoring";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
+import { looksLikeChallenge } from "@/lib/server/monitoring";
 import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 import { anmNumerosDoAno } from "@/lib/server/anm-cobertura";
 
@@ -51,6 +52,21 @@ async function fetchTextSafe(url: string): Promise<string> {
   } catch {
     return "";
   }
+}
+
+/**
+ * Fase 17 — HTML de desafio (WAF) não é "página vazia".
+ *
+ * Sem isto, o portal bloqueado devolvia 200 com "Pardon Our Interruption", o parser achava zero
+ * reuniões e a conferência imprimia "✓ Cobertura completa" — o instrumento afirmando exatamente
+ * o que não sabe. O detector é o MESMO da coleta, por import.
+ */
+function erroDeBusca(html: string, nomeDaFonte: string): string | null {
+  if (!html) return `falha ao buscar a página ${nomeDaFonte}`;
+  if (looksLikeChallenge(html)) {
+    return `o portal ${nomeDaFonte} respondeu com página de desafio (WAF) — não deu para conferir`;
+  }
+  return null;
 }
 
 export async function GET(req: NextRequest) {
@@ -91,7 +107,7 @@ export async function GET(req: NextRequest) {
     (i) => !i.data_reuniao || (i.data_reuniao >= de && i.data_reuniao <= ate),
   );
   const artespSite = toNums(artespItems.map((i) => i.reuniao));
-  const artespErro = artespHtml ? null : "falha ao buscar a página ARTESP";
+  const artespErro = erroDeBusca(artespHtml, "ARTESP");
 
   // ANM: PDFs estáticos das sub-páginas — nº vem do nome ("ata_85__reuniao", "ata-32-rep") ou
   // do heading ("85ª Reunião"), e o ANO vem da DATA adjacente ao link ("31/07/2026 09h37" —
@@ -99,7 +115,9 @@ export async function GET(req: NextRequest) {
   // com reuniões de anos antigos; agora filtra pelo ano (sem data próxima → mantém).
   const anmHtmls = await Promise.all(ANM_URLS.map(fetchTextSafe));
   const anmSite = anmNumerosDoAno(anmHtmls, Number(year));
-  const anmErro = anmHtmls.some((h) => h) ? null : "falha ao buscar as páginas ANM";
+  const anmErro = anmHtmls.some((h) => h && !looksLikeChallenge(h))
+    ? null
+    : erroDeBusca(anmHtmls.find((h) => h) ?? "", "ANM");
 
   // ─── Reuniões NO BANCO (deliberações do ano) por agência ──────────────────
   const { data: agencias } = await db.from("agencias").select("id, sigla").in("sigla", ["ANTT", "ARTESP", "ANM"]);
@@ -123,9 +141,19 @@ export async function GET(req: NextRequest) {
     const banco = bancoNums(sigla);
     const bancoSet = new Set(banco);
     const siteSet = new Set(site);
+    // ═══ Fase 17 — o silêncio que virava "✓ Cobertura completa" ═══════════════
+    // `faltando` é `site.filter(...)`: com a listagem vazia ele é SEMPRE `[]`, e nenhum alerta
+    // disparava. O instrumento existe para PROVAR cobertura, e ficava mais verde quanto menos
+    // enxergava. Zero reuniões no site com deliberações no banco é falha de LEITURA, nunca prova.
+    const erroFinal =
+      erro ??
+      (site.length === 0 && banco.length > 0
+        ? `a listagem de ${sigla} não devolveu reunião nenhuma, mas o banco tem ${banco.length} — ` +
+          "conferência inválida (fonte fora do ar, bloqueada ou com layout novo)"
+        : null);
     return {
       sigla,
-      erro,
+      erro: erroFinal,
       // `enumeracao_parcial`: a listagem do site foi cortada (paginação incompleta ou orçamento
       // esgotado). Com ela `true`, "faltando: 0" NÃO significa cobertura completa — significa
       // apenas que nada do PEDAÇO que conseguimos enumerar está ausente.
@@ -154,6 +182,14 @@ export async function GET(req: NextRequest) {
       alertas.push(
         `${a.sigla}: a enumeração do site ficou INCOMPLETA nesta conferência (${a.site_total} reuniões lidas) — ` +
           `este resultado não prova cobertura, só compara o pedaço que deu para ler.`,
+      );
+    } else if (a.extra.length > 0 && a.faltando.length === 0) {
+      // Divergência ao CONTRÁRIO: o banco tem reunião que a listagem atual não mostra. Era
+      // calculado e morria no payload. Pode ser listagem que encolheu (o caso que interessa) ou
+      // numeração que migrou — nos dois casos alguém precisa olhar.
+      alertas.push(
+        `${a.sigla}: temos ${a.extra.length} reunião(ões) que a listagem do site NÃO mostra hoje ` +
+          `(nº ${a.extra.slice(0, 15).join(", ")}${a.extra.length > 15 ? "…" : ""}) — a fonte pode ter encolhido.`,
       );
     } else if (a.faltando.length > 0) {
       const amostra = a.faltando.slice(0, 15).join(", ");

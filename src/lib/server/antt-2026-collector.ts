@@ -13,7 +13,11 @@ export const ANTT_2026_SOURCE_URL = "https://portal.antt.gov.br/web/guest/reunio
 
 const ALLOWED_HOSTS = new Set(["portal.antt.gov.br", "anttlegis.antt.gov.br"]);
 const PDF_HOSTS = new Set(["portal.antt.gov.br", "anttlegis.antt.gov.br"]);
-const YEAR = 2026;
+// Fase 17 — era `const YEAR = 2026`. Em 01/01/2027 a coleta zeraria em SILÊNCIO: nenhuma
+// reunião casaria o ano e o painel diria "0 novos", indistinguível de "nada publicado". O ano
+// corrente é derivado do relógio; o nome do módulo fica como está (forward-only, e renomear
+// arquivo quebraria os testes estruturais que o leem por caminho).
+const YEAR = new Date().getFullYear();
 const MAX_HTML_BYTES = 4 * 1024 * 1024;
 const MAX_PDF_BYTES = 50 * 1024 * 1024;
 const FETCH_TIMEOUT_MS = 20_000;
