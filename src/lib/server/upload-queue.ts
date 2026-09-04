@@ -313,17 +313,40 @@ export async function requeueDocument(db: any, documentId: string) {
     .eq("id", doc.upload_job_id);
   if (jobErr) throw new Error(`Falha ao reenfileirar o job ${doc.upload_job_id}: ${jobErr.message}`);
 
+  // ═══ Fase 19 — a JANELA DE REPARO não pode fechar sozinha ═══════════════════
+  // Zerar `texto_extraido`/`ata_items` é o certo no caso geral: o documento vai ser reprocessado
+  // do zero e o resto é lixo. O que não pode é zerar enquanto alguém AINDA DEPENDE do conteúdo.
+  //
+  // O caso medido: 232 filhos de ata da ANM com `resultado` NULL (passivo de um build anterior)
+  // são reparáveis por UPDATE barato, casando `item_numero` contra os `ata_items` do PAI. Mas o
+  // passo 9 da esteira chama este requeue a cada "Rodar tudo" — então cada clique podia
+  // transformar o reparo barato em "re-baixar os PDFs e torcer para as fontes seguirem no ar".
+  //
+  // Na dúvida, PRESERVA: dado apagado não volta; dado preservado a mais custa bytes.
+  let temFilhoPendenteDeReparo = false;
+  try {
+    const { data: pendentes } = await db
+      .from("deliberacoes")
+      .select("id")
+      .eq("documento_pai_id", documentId)
+      .is("resultado", null)
+      .limit(1);
+    temFilhoPendenteDeReparo = ((pendentes ?? []) as unknown[]).length > 0;
+  } catch {
+    // Diagnóstico nunca derruba o requeue — e o lado seguro é o conservador.
+    temFilhoPendenteDeReparo = true;
+  }
+
   await db
     .from("documentos_regulatorios")
     .update({
       status: "queued",
       error_message: null,
       extraction_confidence: null,
-      texto_extraido: null,
       // Preserva o motivo da falha anterior (QA ago/2026: era apagado sem arquivo —
       // impossível diagnosticar "falha sempre" vs "nunca tentado").
       campos_detectados: doc.error_message ? { ultimo_erro: String(doc.error_message).slice(0, 300) } : {},
-      ata_items: null,
+      ...(temFilhoPendenteDeReparo ? {} : { texto_extraido: null, ata_items: null }),
       warnings: [],
       processed_at: null,
       updated_at: new Date().toISOString(),
