@@ -76,13 +76,25 @@ describe("etapa95 · reaper #4 — a reconciliação contínua, contada", () => 
     expect(quarto).toBeLessThan(retorno);
   });
 
-  it("decide pelo STATUS DO DOC, em lote — e não toca doc em trânsito", () => {
+  it("decide pelo STATUS DO DOC — e não toca doc em trânsito", () => {
     expect(CODIGO_PIPE).toMatch(/reconciliadosImportado/);
     expect(CODIGO_PIPE).toMatch(/reconciliadosIgnorado/);
     expect(CODIGO_PIPE).toMatch(/reconciliadosNovo/);
-    // Três UPDATEs em lote (.in), não um por item — reaper é barato por contrato.
-    const quarto = CODIGO_PIPE.slice(CODIGO_PIPE.indexOf('.eq("status", "em_revisao")'));
-    expect(quarto.split('.in("id",').length - 1).toBeGreaterThanOrEqual(3);
+  });
+
+  it("CONTRATO REVISADO (Fase 17): importado/novo em lote; ignorado POR ITEM, com teto", () => {
+    // A versão original exigia "três UPDATEs em lote (.in)" para garantir que o reaper fosse
+    // barato. A Fase 17 mostrou que o lote no `ignorado` custava caro de outro jeito: sem poder
+    // gravar `metadata` por item (o jsonb difere — meeting_url, prioridade, e supabase-js
+    // substitui a coluna inteira), o item saía da fila SEM motivo e ficava fora dos dois filtros
+    // do retry. O contrato agora é explícito sobre quem é lote e quem é por item — e a asserção
+    // antiga passaria verde por acidente hoje, contando `.in` de outras consultas.
+    const quarto = CODIGO_PIPE.slice(CODIGO_PIPE.indexOf('from("monitoramento_itens")'));
+    expect(quarto).toMatch(/status: "importado"[\s\S]{0,160}?\.in\("id", paraImportado\)/);
+    expect(quarto).toMatch(/status: "novo"[\s\S]{0,200}?\.in\("id", paraNovo\)/);
+    // O ignorado NÃO pode voltar a ser lote: seria perder o motivo de novo.
+    expect(quarto).not.toMatch(/\.in\("id", paraIgnorado\)/);
+    expect(quarto).toMatch(/TETO_CARIMBO_POR_RODADA/);
   });
 
   it("os DOIS retornos carregam os contadores — o poço nunca mais é invisível", () => {

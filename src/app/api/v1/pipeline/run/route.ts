@@ -447,12 +447,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     const reconciliadosImportado = Number(r.body?.reconciliados_importado ?? 0);
     const reconciliadosIgnorado = Number(r.body?.reconciliados_ignorado ?? 0);
     const reconciliadosNovo = Number(r.body?.reconciliados_novo ?? 0);
+    const reconciliadosDeVolta = Number(r.body?.reconciliados_de_volta ?? 0);
     etapas.presos = anotar(r, "reaper", {
       religados,
       jobs_orfaos_recuperados: reapados,
       reconciliados_importado: reconciliadosImportado,
       reconciliados_ignorado: reconciliadosIgnorado,
       reconciliados_novo: reconciliadosNovo,
+      reconciliados_de_volta: reconciliadosDeVolta,
     });
     if (religados > 0 || reconciliadosNovo > 0) restantes = true; // o que voltou para a fila quer ser extraído
   } else { etapas.presos = foraDoPlano("reaper"); }

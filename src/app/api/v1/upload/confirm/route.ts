@@ -591,7 +591,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             });
             continue;
           }
-          await markDocumentReviewed(db, d.documento_id, "ignored");
+          // O motivo viaja para o documento e, dali, para o item de monitoramento (reaper #4).
+          await markDocumentReviewed(db, d.documento_id, "ignored", null, "apoio_nao_final");
           results.push({
             filename: d.filename,
             status: "document_saved",
@@ -1380,14 +1381,41 @@ async function markDocumentReviewed(
   documentoId: string | null | undefined,
   status: "confirmed" | "ignored" | "review_pending",
   deliberacaoId?: string | null,
+  motivo?: string,
 ) {
   if (!documentoId) return;
+
+  // Fase 17 — o MOTIVO do arquivamento nasce AQUI. Antes esta função gravava só
+  // {status, reviewed_at, updated_at}: para a família pauta/apoio (o perfil dos 95 itens "sem
+  // motivo" da tela) o motivo fino nunca existiu em lugar nenhum, e por isso a reconciliação do
+  // funil (reaper #4) só conseguia escrever um rótulo genérico.
+  //
+  // ⚠️ A coluna é `campos_detectados`, não `metadata` — é onde confirm-lote e a migration
+  // 20260830120000 gravam `arquivado_motivo`. A migration 20260901120000 leu `metadata` e por
+  // isso o "herda o motivo" dela sempre foi no-op.
+  //
+  // O SELECT extra só acontece QUANDO há motivo (arquivamento), nunca no caminho de confirmação
+  // — o merge é obrigatório porque supabase-js substitui a coluna jsonb inteira.
+  let camposComMotivo: Record<string, unknown> | null = null;
+  if (motivo) {
+    const { data: atual } = await db
+      .from("documentos_regulatorios")
+      .select("campos_detectados")
+      .eq("id", documentoId)
+      .maybeSingle();
+    camposComMotivo = {
+      ...((atual?.campos_detectados as Record<string, unknown> | null) ?? {}),
+      arquivado_motivo: motivo,
+    };
+  }
+
   const { error } = await db
     .from("documentos_regulatorios")
     .update({
       status,
       reviewed_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
+      ...(camposComMotivo ? { campos_detectados: camposComMotivo } : {}),
     })
     .eq("id", documentoId);
   if (error) console.warn("[upload/confirm] Falha ao atualizar documento bruto:", error.message);

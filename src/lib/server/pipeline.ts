@@ -177,7 +177,7 @@ export async function processPendingDocuments(
      */
     apenasReaper?: boolean;
   },
-): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number; reconciliados_importado: number; reconciliados_ignorado: number; reconciliados_novo: number }> {
+): Promise<{ processed: number; job_ids: string[]; reaped: number; religados: number; reconciliados_importado: number; reconciliados_ignorado: number; reconciliados_novo: number; reconciliados_de_volta: number }> {
   const db = createSupabaseServerClient();
 
   // Reaper oportunista de órfãos: um job/doc preso em "processing" só é possível se o
@@ -293,29 +293,40 @@ export async function processPendingDocuments(
   let reconciliadosImportado = 0;
   let reconciliadosIgnorado = 0;
   let reconciliadosNovo = 0;
+  let reconciliadosDeVolta = 0;
+  /**
+   * Fase 17 — carimbar exige UPDATE por item (o `metadata` difere: `meeting_url`, `prioridade`),
+   * e supabase-js substitui o jsonb inteiro. O contrato "reaper é barato" continua valendo —
+   * muda a forma de honrá-lo: teto explícito + orçamento, em vez de um UPDATE cego em lote.
+   * O que não couber fica para a rodada seguinte; o poço agora É drenado.
+   */
+  const TETO_CARIMBO_POR_RODADA = 25;
   if (hasBudget(deadlineAt, 2_000)) {
     const { data: poco } = await db
       .from("monitoramento_itens")
-      .select("id, documento_id")
+      .select("id, documento_id, metadata")
       .eq("status", "em_revisao")
+      // Sem ordem, a janela de 50 podia travar sempre nos mesmos itens em trânsito
+      // (head-of-line) e nunca alcançar os que já têm destino terminal.
+      .order("first_seen_at", { ascending: true })
       .limit(50);
-    const itensPoco = (poco ?? []) as Array<{ id: string; documento_id: string | null }>;
+    const itensPoco = (poco ?? []) as Array<{ id: string; documento_id: string | null; metadata: Record<string, unknown> | null }>;
     if (itensPoco.length > 0) {
       const docIds = [...new Set(itensPoco.map((i) => i.documento_id).filter(Boolean))] as string[];
       const { data: docsPoco } = docIds.length
-        ? await db.from("documentos_regulatorios").select("id, status").in("id", docIds)
+        ? await db.from("documentos_regulatorios").select("id, status, tipo_documento, campos_detectados").in("id", docIds)
         : { data: [] as any[] };
-      const statusDoc = new Map(((docsPoco ?? []) as any[]).map((d) => [d.id as string, d.status as string]));
+      const docPorId = new Map(((docsPoco ?? []) as any[]).map((d) => [d.id as string, d]));
 
       const paraImportado: string[] = [];
-      const paraIgnorado: string[] = [];
+      const paraIgnorado: Array<{ item: (typeof itensPoco)[number]; doc: any }> = [];
       const paraNovo: string[] = [];
       for (const item of itensPoco) {
         // Doc apagado (FK ON DELETE SET NULL) ou id inexistente: órfão → volta ao começo.
-        const st = item.documento_id ? statusDoc.get(item.documento_id) : undefined;
-        if (!st) paraNovo.push(item.id);
-        else if (st === "confirmed") paraImportado.push(item.id);
-        else if (st === "ignored") paraIgnorado.push(item.id);
+        const doc = item.documento_id ? docPorId.get(item.documento_id) : undefined;
+        if (!doc) paraNovo.push(item.id);
+        else if (doc.status === "confirmed") paraImportado.push(item.id);
+        else if (doc.status === "ignored") paraIgnorado.push({ item, doc });
         // queued/review_pending/failed/processing: em trânsito — a esteira move o doc.
       }
       const agora = new Date().toISOString();
@@ -325,14 +336,31 @@ export async function processPendingDocuments(
           .in("id", paraImportado);
         if (!error) reconciliadosImportado = paraImportado.length;
       }
-      if (paraIgnorado.length) {
-        // Sem carimbo: `ignorado` com proxima_tentativa_em NULL fica FORA do retry — o doc foi
-        // arquivado por decisão, e o motivo detalhado mora no próprio doc (a migration one-shot
-        // herda `arquivado_motivo`; o reaper trata o gotejo e não paga um round-trip por item).
+      for (const { item, doc } of paraIgnorado) {
+        if (reconciliadosIgnorado >= TETO_CARIMBO_POR_RODADA) break;
+        if (!hasBudget(deadlineAt, 400)) break;
+        // O motivo vem do DOCUMENTO (`campos_detectados.arquivado_motivo`, gravado pelo confirm e
+        // pelo confirm-lote); sem ele, a CLASSE pelo tipo; nunca NULL — motivo ausente põe o item
+        // fora dos DOIS filtros do retry e nenhuma migration futura o alcança.
+        const motivoDoArquivamento = String(
+          (doc.campos_detectados as Record<string, unknown> | null)?.["arquivado_motivo"] ??
+            (["pauta", "documento_apoio", "voto_individual"].includes(String(doc.tipo_documento ?? ""))
+              ? "apoio_nao_final"
+              : "documento_arquivado"),
+        );
         const { error } = await db.from("monitoramento_itens")
-          .update({ status: "ignorado", proxima_tentativa_em: null, last_seen_at: agora })
-          .in("id", paraIgnorado);
-        if (!error) reconciliadosIgnorado = paraIgnorado.length;
+          .update({
+            status: "ignorado",
+            proxima_tentativa_em: null,
+            last_seen_at: agora,
+            metadata: {
+              ...(item.metadata ?? {}),
+              enqueue_motivo: motivoDoArquivamento,
+              enqueue_motivo_origem: "reaper4",
+            },
+          })
+          .eq("id", item.id);
+        if (!error) reconciliadosIgnorado++;
       }
       if (paraNovo.length) {
         const { error } = await db.from("monitoramento_itens")
@@ -343,9 +371,42 @@ export async function processPendingDocuments(
     }
   }
 
+  // ═══ Fase 17 — a reconciliação deixa de ser de MÃO ÚNICA ═══════════════════
+  // O passo 9 da esteira desarquiva documento (a tela mostrou "14 desarquivado(s)"), mas o item
+  // que a reconciliação automática arquivou ficava para trás. Escopo ESTREITO de propósito: só
+  // itens que carregam `enqueue_motivo_origem` — isto é, arquivados por reconciliação, seja pelo
+  // reaper ou pela migration de rotulagem. Casar o VALOR "reaper4" deixaria os 95 antigos numa
+  // classe permanentemente inferior. Varrer todo `ignorado` seria o ping-pong da Fase 7
+  // (upload-queue.ts:337-348), que custou 40 rodadas em vão.
+  if (hasBudget(deadlineAt, 1_500)) {
+    const { data: carimbados } = await db
+      .from("monitoramento_itens")
+      .select("id, documento_id")
+      .eq("status", "ignorado")
+      .not("metadata->>enqueue_motivo_origem", "is", null)
+      .not("documento_id", "is", null)
+      .limit(25);
+    const itensCarimbados = (carimbados ?? []) as Array<{ id: string; documento_id: string }>;
+    if (itensCarimbados.length > 0) {
+      const ids = [...new Set(itensCarimbados.map((i) => i.documento_id))];
+      const { data: docsVolta } = await db
+        .from("documentos_regulatorios").select("id, status").in("id", ids);
+      const confirmados = new Set(
+        ((docsVolta ?? []) as any[]).filter((d) => d.status === "confirmed").map((d) => d.id as string),
+      );
+      const deVolta = itensCarimbados.filter((i) => confirmados.has(i.documento_id)).map((i) => i.id);
+      if (deVolta.length) {
+        const { error } = await db.from("monitoramento_itens")
+          .update({ status: "importado", last_seen_at: new Date().toISOString() })
+          .in("id", deVolta);
+        if (!error) reconciliadosDeVolta = deVolta.length;
+      }
+    }
+  }
+
   // Os quatro reapers acabaram. Quem só queria reparar para por aqui — sem tocar na fila `pending`,
   // que é o trabalho caro.
-  if (opcoes?.apenasReaper) return { processed: 0, job_ids: [], reaped, religados, reconciliados_importado: reconciliadosImportado, reconciliados_ignorado: reconciliadosIgnorado, reconciliados_novo: reconciliadosNovo };
+  if (opcoes?.apenasReaper) return { processed: 0, job_ids: [], reaped, religados, reconciliados_importado: reconciliadosImportado, reconciliados_ignorado: reconciliadosIgnorado, reconciliados_novo: reconciliadosNovo, reconciliados_de_volta: reconciliadosDeVolta };
 
   const normalizedLimit = Math.min(20, Math.max(1, limit));
   const { data: jobs } = await db
@@ -369,7 +430,7 @@ export async function processPendingDocuments(
     processed = await processQueue(selected, 4, deadlineAt);
   }
 
-  return { processed, job_ids: selected.map((job) => job.jobId), reaped, religados , reconciliados_importado: reconciliadosImportado, reconciliados_ignorado: reconciliadosIgnorado, reconciliados_novo: reconciliadosNovo };
+  return { processed, job_ids: selected.map((job) => job.jobId), reaped, religados , reconciliados_importado: reconciliadosImportado, reconciliados_ignorado: reconciliadosIgnorado, reconciliados_novo: reconciliadosNovo, reconciliados_de_volta: reconciliadosDeVolta };
 }
 
 /** Quanto do texto lido viaja junto com a deliberação, para conferência a olho. */
