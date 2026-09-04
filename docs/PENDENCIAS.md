@@ -3,6 +3,53 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 18 (05/set/2026) — a coleta estrangulada e o alarme que nunca gravou
+
+**Sequência:** deploy verde → aplicar `20260905120000_alerta_de_fonte_sem_item.sql` →
+"Rodar tudo" → colar `docs/qa-fase18.sql`.
+
+**O que esta fase consertou:**
+1. **A coleta inseria UM item por rodada.** O laço cobrava `RESERVA.coleta` (25s) por item
+   DESCOBERTO — mas 25s é o custo de um DOWNLOAD. Com a fatia de 28s cabia um: é a aritmética
+   exata do `itens: 264, novos: 1` da ARTESP. As três agências estavam estranguladas no mesmo
+   ponto. Agora a descoberta paga 1s e o download continua com a reserva cara.
+2. **O alarme da Fase 17 NUNCA gravou** (regressão minha): `item_id` é `NOT NULL` e alerta de
+   FONTE não tem item — falhava com 23502 em silêncio. Migration + o erro passa a ser logado.
+   E ele era cego duas vezes: queda de 26% não disparava (limiar era metade → agora 25%) e
+   `0 → 0` nunca dispara em limiar percentual nenhum (→ sinal `fonte_muda` por 3 zeros).
+   **Comparabilidade, não completude**: compara-se runs do mesmo `trigger_type`; duas runs
+   truncadas do mesmo teto comparam normalmente.
+3. **"Deliberação final" divergia entre sítios** (3ª vez desta classe): `cobertura-documentos`
+   não checava `resultado` e contava os 267 itens de ata sem desfecho como finais. Teste
+   TRANSVERSAL agora vigia todos os sítios. Ele achou também uma divergência **minha da Fase 17**:
+   `classificarDescarte` descartava deliberação sem resultado, que o predicado canônico conta
+   como final — a conta do card não fechava.
+
+**⚠️ EFEITO COLATERAL VIGIADO:** a descoberta acelerou ~25× e o download não. Item parado em
+`novo` por semanas seria um poço novo — mesma classe do `em_revisao`, um estágio antes. O bloco ④
+do `qa-fase18.sql` mede a IDADE do item mais antigo em `novo`; se `parados_ha_30d` crescer, a
+próxima fase ataca a vazão do enqueue.
+
+**Adiado por decisão (cron fora de escopo agora):**
+- **O cron diário nunca ingeriu nada.** Verificado rodando o planejador: a rodada 0 é
+  `reaper, extracao, derivada, autoConfirm, reclassificacao` — sem coleta, sem enqueue, sem
+  confirm-lote. O cron faz UMA chamada/dia e a run anterior já morreu de órfã (3min contra 24h),
+  então é sempre rodada 0. **Quando religar o cron, isto é o primeiro item.**
+- **Coleta profunda da ANTT como passo da esteira** (hoje só por botão; o cron dela saiu em
+  `ce36c52`/10-07 e os 2 slots do Hobby estão ocupados). Os comentários que afirmavam existir o
+  cron já foram corrigidos.
+
+**A decisão do OCR: mantida, justificativa CORRIGIDA.** O gate corta em `chars_per_page < 50`
+(não 80); os 44 votos têm `chars_per_page = 0`, que é o literal de `errorResult`, não medição; os
+44 ⊆ 49. O "≥1594 chars/página" das 16 fixtures estava errado (mínimo real 1210) e — pior — a
+amostra é **estruturalmente enviesada**: foi escolhida para certificar extração, então tem camada
+de texto por construção; a população onde o OCR decide tem representação ZERO nela. **Existe
+população: 44 documentos, 100% ANTT, 100% tipo voto.** Ligar a chave não recuperaria nenhum (três
+travas: `confirm-lote` só lê `review_pending`; `reprocess-ignorados` exige tipo
+`voto_individual`/`ata`; `requeueDocument` APAGA `campos_detectados`). O bloco ① do QA mede
+KB/página e decide: **pesado sem texto = escaneado (OCR); leve sem texto = parser** (bem mais
+barato). DOCX segue fora: 32/32 são pauta, tipo não-final.
+
 ## 🔴 FASE 17 (04/set/2026) — a perda sem rótulo, a cobertura que mentia, e o WAF que não era
 
 **Sequência operacional (NESTA ordem):**
