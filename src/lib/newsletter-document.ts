@@ -61,6 +61,35 @@ const IRIS_LINKEDIN_URL = "https://www.linkedin.com/company/irisregulacao/";
 const IRIS_SITE_URL = "https://irisregulacao.org/";
 const IRIS_EVENTOS_URL = "https://irisregulacao.org/eventos/";
 
+const IRIS_EMAIL_CONTATO = "contato@irisregulacao.org";
+
+/**
+ * Fase 17 — "Siga o IRIS" e os contatos institucionais no documento de IMPRESSÃO.
+ *
+ * O bloco já existia, mas só no e-mail. Os dados são os MESMOS (IRIS_SITE_URL,
+ * IRIS_INSTAGRAM_URL, IRIS_LINKEDIN_URL) — nada inventado, nada duplicado numa quarta cópia.
+ * Estilos inline de propósito: o CSS do documento é gerado por variante e este bloco precisa
+ * sobreviver ao "Salvar como PDF" do navegador.
+ */
+function renderSigaOIrisPrint(): string {
+  return `
+    <section class="siga-iris" style="margin-top:18px;padding-top:14px;border-top:1px solid rgba(0,0,0,0.12);text-align:center;">
+      <p style="margin:0 0 6px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#B8912F;">Siga o IRIS</p>
+      <p style="margin:0;font-size:10px;letter-spacing:0.3px;">
+        <a href="${IRIS_INSTAGRAM_URL}" style="color:#0F1B2D;text-decoration:none;font-weight:600;">Instagram</a>
+        <span style="color:#9AA3B0;"> &middot; </span>
+        <a href="${IRIS_LINKEDIN_URL}" style="color:#0F1B2D;text-decoration:none;font-weight:600;">LinkedIn</a>
+      </p>
+    </section>`;
+}
+
+function renderContatosPrint(): string {
+  return `<a href="${IRIS_SITE_URL}" style="color:#B8912F;text-decoration:none;">irisregulacao.org</a>`
+    + ` &middot; <a href="${IRIS_INSTAGRAM_URL}" style="color:#B8912F;text-decoration:none;">Instagram</a>`
+    + ` &middot; <a href="${IRIS_LINKEDIN_URL}" style="color:#B8912F;text-decoration:none;">LinkedIn</a>`
+    + ` &middot; <a href="mailto:${IRIS_EMAIL_CONTATO}" style="color:#B8912F;text-decoration:none;">${IRIS_EMAIL_CONTATO}</a>`;
+}
+
 export const NEWSLETTER_TEMPLATE_VERSIONS = {
   newsletter_v1: "iris_newsletter_layout_v1",
   newsletter_v2: "iris_newsletter_layout_v2",
@@ -249,7 +278,11 @@ const IRIS_EMAIL_LIGHT: IrisEmailTheme = {
 };
 
 const SERIF_STACK = "'Playfair Display', Georgia, 'Times New Roman', serif";
-const SANS_STACK = "Arial, Helvetica, sans-serif";
+// Fase 17 — Inter entra na pilha do e-mail para alinhar com o documento de impressão.
+// ⚠️ Honestidade: Gmail/Outlook DESCARTAM <link>/<style> de HTML colado, então na maioria dos
+// clientes o que vale é o fallback (Arial). Alinhar a pilha é o máximo real; prometer paridade
+// tipográfica no e-mail seria mentira.
+const SANS_STACK = "'Inter', Arial, Helvetica, sans-serif";
 
 function truncateText(value: string, max: number): string {
   const clean = value.replace(/\s+/g, " ").trim();
@@ -271,10 +304,10 @@ function emailButton(href: string, label: string, t: IrisEmailTheme, filled = tr
 }
 
 function newsTag(item: RegulatoryNews): string {
-  return [
-    item.agencia?.sigla ?? item.agencia_sigla,
-    item.publicado_em ? formatNewsletterDate(new Date(item.publicado_em)) : null,
-  ].filter(Boolean).join(" · ");
+  // Fase 17 — era só `agencia.sigla` + `publicado_em`: notícia de VEÍCULO (que tem `fonte`, não
+  // agência) ou sem data de publicação perdia a linha INTEIRA no e-mail, enquanto o PDF sempre
+  // imprimia. A regra agora é uma só, a do documento: cai em `item.fonte` e em `first_seen_at`.
+  return formatArticleTag(item);
 }
 
 // 1ª notícia = destaque (hero): imagem grande + tag + título + botão.
@@ -290,7 +323,11 @@ function renderEmailHero(item: RegulatoryNews, input: NewsletterDocumentInput, t
           ${tag ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.8px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
           <h2 style="margin:0 0 10px;font-family:${SERIF_STACK};font-size:26px;font-weight:800;line-height:1.12;color:${t.text};">${escapeHtml(item.titulo)}</h2>
           ${body ? `<p style="margin:0 0 16px;font-family:${SANS_STACK};font-size:15px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
-          ${item.url ? emailButton(item.url, "Ler a matéria &rarr;", t) : ""}
+          ${item.url
+            ? emailButton(item.url, "Ler a matéria &rarr;", t)
+            // Sem url: o rótulo aparece como TEXTO. O PDF sempre mostra "Ler fonte oficial"
+            // (inclusive sem href); aqui a presença é a mesma, sem inventar link morto.
+            : `<p style="margin:0;font-family:${SANS_STACK};font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:${t.muted};">Fonte sem link p&uacute;blico</p>`}
         </td></tr>
       </table>
     </td></tr>`;
@@ -408,7 +445,7 @@ function buildIrisEmailNewsletterHtml(input: NewsletterDocumentInput, isV2 = fal
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="x-apple-disable-message-reformatting"/>
 <title>${escapeHtml(titulo)}</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body style="margin:0;padding:0;background:${t.outer};">
   <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${t.outer};padding:24px 0;">
@@ -516,9 +553,10 @@ function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: strin
         ${renderNewsletterSideArticle(items[2], input.baseUrl, 1, input.newsletter_textos)}
       </aside>
     </div>
+    ${renderSigaOIrisPrint()}
     <footer class="footer">
       <div><span class="footer-brand">IRIS Regula&ccedil;&atilde;o</span><span class="footer-sub">Instituto de Regula&ccedil;&atilde;o, Inova&ccedil;&atilde;o e Sustentabilidade</span></div>
-      <div class="footer-note">Documento gerado automaticamente &middot; Fontes oficiais<br>Uso interno &mdash; confidencial</div>
+      <div class="footer-note">${renderContatosPrint()}<br>Documento gerado automaticamente &middot; Fontes oficiais</div>
     </footer>
   </section>`;
 }

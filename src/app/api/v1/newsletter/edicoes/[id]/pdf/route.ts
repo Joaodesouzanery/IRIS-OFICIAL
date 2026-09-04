@@ -11,7 +11,7 @@ export async function GET(req: NextRequest, { params }: any) {
   const db = createSupabaseServerClient();
   const { data, error } = await db
     .from("regulatory_newsletter_editions")
-    .select("assunto, html")
+    .select("assunto, html, metadata")
     .eq("id", params.id)
     .single();
 
@@ -19,7 +19,11 @@ export async function GET(req: NextRequest, { params }: any) {
     return NextResponse.json({ error: "Edição não encontrada" }, { status: 404 });
   }
 
-  return new NextResponse(data.html, {
+  // Fase 17 — serve o HTML de IMPRESSÃO. Fallback para `html` nas edições salvas ANTES deste
+  // commit (elas só têm o de e-mail — é o que existe, e continuar servindo é melhor que 404).
+  const htmlDeImpressao =
+    ((data.metadata as Record<string, unknown> | null)?.html_print as string | undefined) ?? data.html;
+  return new NextResponse(htmlDeImpressao, {
     headers: {
       "Content-Type": "text/html; charset=utf-8",
       "Content-Disposition": `inline; filename="${safeFilename(data.assunto)}-pdf.html"`,

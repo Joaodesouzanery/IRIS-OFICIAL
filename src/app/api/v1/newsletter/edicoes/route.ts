@@ -77,7 +77,12 @@ export async function POST(req: NextRequest) {
   const eventos = documentoTipo === "newsletter_regulatoria" ? normalizeEventos(body.eventos) : [];
   const newsletterImagens = documentoTipo === "newsletter_regulatoria" ? normalizeNewsletterImagens(body.newsletter_imagens, orderedNoticias) : {};
 
-  const html = buildRegulatoryNewsletterHtml({
+  // Fase 17 — a edição salva guardava SÓ o HTML de e-mail (o builder tem `"email"` como default)
+  // e a rota `/pdf` devolvia exatamente esse HTML, com cabeçalho `X-IRIS-PDF-Mode: browser-print`:
+  // quem imprimia uma edição salva imprimia o e-mail. Agora as duas saídas são geradas da MESMA
+  // entrada e o `html_print` vai no metadata — sem migration, e as edições antigas continuam
+  // válidas pelo fallback da rota.
+  const entradaDoDocumento = {
     assunto,
     descricao,
     destinatarios,
@@ -91,7 +96,9 @@ export async function POST(req: NextRequest) {
     minuto_items: minutoItems,
     social_posts: socialPosts,
     eventos,
-  });
+  };
+  const html = buildRegulatoryNewsletterHtml(entradaDoDocumento);
+  const htmlPrint = buildRegulatoryNewsletterHtml(entradaDoDocumento, "print");
 
   const { data, error } = await db
     .from("regulatory_newsletter_editions")
@@ -108,6 +115,7 @@ export async function POST(req: NextRequest) {
       created_by: userResult.id,
       created_by_email: userResult.email,
       metadata: {
+        html_print: htmlPrint,
         source: "noticias",
         documento_tipo: documentoTipo,
         template_version: templateVersion,
