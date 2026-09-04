@@ -51,9 +51,14 @@ describe("etapa111 · mede exatamente o que decide a próxima fase", () => {
     expect(CODIGO).toMatch(/item_id IS NULL/);
   });
 
-  it("os 267 separam retirado de lacuna, com amostra para o usuário conferir", () => {
-    expect(CODIGO).toMatch(/parece_retirado/);
-    expect(CODIGO).toMatch(/sem_nenhum_sinal/);
+  it("REVISADO (Fase 19): mede o dispositivo na coluna CERTA, com amostra", () => {
+    // ⚠️ Este caso pinava `parece_retirado` e `sem_nenhum_sinal` — duas colunas que eram
+    // ESTRUTURALMENTE impossíveis de ser > 0. Elas liam `raw_extraction->>'decisao'` (omissão
+    // DECLARADA do raw do filho: o dispositivo vira a coluna `resumo_pleito`) e
+    // `fundamento_decisao` (só gravado no ramo demo). Davam 0 em 100% dos casos, e eu quase
+    // escrevi um conserto de extrator em cima disso. O teste vigiava a consulta errada.
+    expect(CODIGO).toMatch(/resumo_pleito/);
+    expect(CODIGO).not.toMatch(/raw_extraction->>'decisao'/);
     expect(CODIGO).toMatch(/'amostra'/);
   });
 });

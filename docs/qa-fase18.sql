@@ -61,11 +61,14 @@ SELECT jsonb_pretty(jsonb_build_object(
         SELECT COALESCE(jsonb_agg(t ORDER BY t.total DESC), '[]'::jsonb) FROM (
           SELECT COALESCE(a.sigla,'?') AS sigla, COUNT(*) AS total,
                  -- "Retirado/vista/sobrestado" é desfecho NORMAL registrado noutro campo.
-                 COUNT(*) FILTER (WHERE COALESCE(d.raw_extraction->>'decisao','') ~* 'retirad|vista|sobrestad|adiad') AS parece_retirado,
-                 COUNT(*) FILTER (WHERE COALESCE(d.raw_extraction->>'decisao','') <> '') AS tem_decisao_no_raw,
-                 COUNT(*) FILTER (WHERE COALESCE(d.fundamento_decisao,'') <> '') AS tem_fundamento,
-                 COUNT(*) FILTER (WHERE COALESCE(d.raw_extraction->>'decisao','') = ''
-                                    AND COALESCE(d.fundamento_decisao,'') = '') AS sem_nenhum_sinal
+                 -- ⚠️ CORRIGIDO na Fase 19. Este bloco lia `raw_extraction->>'decisao'` e
+                 -- `fundamento_decisao` — DOIS caminhos que, para filho de ata, nunca são
+                 -- escritos: `decisao` é omissão DECLARADA do raw (ata-item-materializacao.ts:51,
+                 -- "vira a coluna resumo_pleito") e `fundamento_decisao` só é gravado no ramo
+                 -- demo. Por isso davam 0 em 100% dos casos — e 100% é a assinatura de consulta
+                 -- errada, não de dado uniforme. O dispositivo mora em `resumo_pleito`.
+                 COUNT(*) FILTER (WHERE COALESCE(d.resumo_pleito,'') <> '') AS tem_dispositivo,
+                 COUNT(*) FILTER (WHERE COALESCE(d.resumo_pleito,'') = '') AS sem_dispositivo
             FROM deliberacoes d LEFT JOIN agencias a ON a.id = d.agencia_id
            WHERE d.tipo_documento = 'ata' AND d.documento_pai_id IS NOT NULL AND d.resultado IS NULL
            GROUP BY 1
@@ -79,8 +82,7 @@ SELECT jsonb_pretty(jsonb_build_object(
       'amostra', (
         SELECT COALESCE(jsonb_agg(jsonb_build_object(
                  'numero', d.numero_deliberacao, 'assunto', LEFT(COALESCE(d.assunto,''), 70),
-                 'decisao_no_raw', LEFT(COALESCE(d.raw_extraction->>'decisao',''), 70),
-                 'fundamento', LEFT(COALESCE(d.fundamento_decisao,''), 50))), '[]'::jsonb)
+                 'dispositivo', LEFT(COALESCE(d.resumo_pleito,''), 70))), '[]'::jsonb)
           FROM (SELECT * FROM deliberacoes
                  WHERE tipo_documento = 'ata' AND documento_pai_id IS NOT NULL AND resultado IS NULL
                  LIMIT 10) d
