@@ -38,7 +38,20 @@ export function classifyRegulatoryDocument(input: {
     subtipo = input.documento_antt_tipo ?? "voto_individual";
     countsAsFinal = false;
     warnings.push("Voto individual tratado como documento de apoio; nao entra nos dashboards como decisao final.");
-  } else if (input.documento_antt_tipo === "pauta" || normName.includes("pauta")) {
+    // Fase 19 — a pauta se declara no CABEÇALHO; o nome do arquivo mente.
+    // O reconhecimento era só por NOME (`normName`), e o nome que chega do portal é o fallback
+    // `documento-monitorado-<ts>.pdf` — o href da ANTT termina em UUID, sem extensão
+    // reconhecível. Resultado: a pauta caía no ramo seguinte, virava `ata` e materializava
+    // filhos-fantasma (35 medidos em produção, com prefixo `PAUTA-`, que era a confissão do bug).
+    // Vale para as três agências: a ARTESP tem o mesmo furo e nem passa pelo parser da ANTT.
+    //
+    // Janela de 300 chars, medida nas 16 fixtures oficiais: 2/2 pautas, 0/14 falsos positivos.
+    // Em 5000 chars seriam 8/14 falsos — as atas da ANM dizem "retirado de pauta" no corpo.
+  } else if (
+    input.documento_antt_tipo === "pauta" ||
+    normName.includes("pauta") ||
+    declaraSerPauta(text)
+  ) {
     tipo = "pauta";
     subtipo = input.documento_antt_tipo ?? "pauta";
     countsAsFinal = false;
@@ -194,6 +207,35 @@ type FinalDecisionRow = {
  * seu conjunto de resíduo DE PROPÓSITO, porque classifica voto individual numa categoria própria
  * antes de consultar os sets. Unificação cega ali quebra a tela.
  */
+/**
+ * O documento se DECLARA pauta no cabeçalho? (Fase 19)
+ *
+ * ═══ Por que existe ═══
+ * O reconhecimento de pauta era só pelo NOME do arquivo — e o nome que chega do portal da ANTT é
+ * o fallback `documento-monitorado-<ts>.pdf` (o href termina em UUID, sem extensão reconhecível).
+ * Resultado: a pauta virava `ata`, expunha itens e materializava filhos — deliberações fabricadas
+ * a partir de uma AGENDA, o que `ata-splitter.ts:22-24` proíbe. Eram 35 no banco, com prefixo
+ * `PAUTA-`, que era a confissão do bug.
+ *
+ * ═══ Por que LINHA que COMEÇA com "pauta", e não "pauta no cabeçalho" ═══
+ * Medido nos PDFs oficiais. O título da pauta é uma LINHA própria:
+ *   ANTT   → ["AGÊNCIA NACIONAL DE TRANSPORTES TERRESTRES", "PAUTA", "1.036ª REUNIÃO DE …"]
+ *   ARTESP → ["Pauta da 1201ª Reunião Ordinária do Conselho Diretor", …]
+ * A primeira tentativa ("pauta" em qualquer lugar dos 300 primeiros chars) REPROVOU em dois
+ * testes existentes — e com razão: um VOTO que diz "voto pela retirada de pauta" (etapa18) ou
+ * "o processo consta da pauta da 1.036ª Reunião" (etapa56, o falso positivo que aquela etapa
+ * existe para matar) tem "pauta" logo no começo, no meio de uma frase. Exigir INÍCIO DE LINHA
+ * separa o título do documento de uma menção no texto.
+ */
+export function declaraSerPauta(text: string): boolean {
+  const primeirasLinhas = text
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean)
+    .slice(0, 6);
+  return primeirasLinhas.some((linha) => /^pauta\b/i.test(normalize(linha)));
+}
+
 export const TIPOS_NAO_FINAIS = ["pauta", "voto_individual", "documento_apoio"] as const;
 
 /** Mesma lista, pronta para `.has()`. */

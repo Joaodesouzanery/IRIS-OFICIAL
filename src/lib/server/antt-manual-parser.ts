@@ -1,3 +1,4 @@
+import { declaraSerPauta } from "@/lib/server/regulatory-documents";
 ﻿import type { AtaPreviewItem, PreviewResultFields, TipoDocumento } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { RE_RETIRADA, RE_SUSPENSAO } from "@/lib/server/ata-splitter";
@@ -277,6 +278,19 @@ export function parseAnttManualDocument(text: string, filename: string): AnttMan
 function classifyAnttDocument(text: string, filename: string): AnttManualDocumentType {
   const value = normalize(`${filename} ${text.slice(0, 2000)}`);
   const valuePlain = plain(`${filename} ${text.slice(0, 2000)}`);
+
+  // ═══ Fase 19 — a PAUTA se declara no CABEÇALHO, e o nome do arquivo mente ═══
+  // O teste de "pauta" ficava DEPOIS dos ramos `reuniao_*`, então uma pauta cujo cabeçalho diz
+  // "PAUTA 1.036ª REUNIÃO DE DIRETORIA PÚBLICA" saía como `reuniao_diretoria_publica`. Somado a
+  // `regulatory-documents.ts:41`, que só reconhece pauta pelo NOME, o documento virava `ata` e
+  // materializava filhos — deliberações fabricadas a partir de uma AGENDA, o que
+  // `ata-splitter.ts:22-24` proíbe. E o nome que chega do portal é o fallback
+  // `documento-monitorado-<ts>.pdf` (o href da ANTT termina em UUID), que não tem "pauta".
+  //
+  // A regra (LINHA que COMEÇA com "pauta") está em `declaraSerPauta` — uma só, usada aqui e no
+  // classificador geral, que é a lição da etapa110: a mesma pergunta não pode ter duas respostas
+  // em sítios diferentes.
+  if (declaraSerPauta(text)) return "pauta";
   if (valuePlain.includes("ata da") && valuePlain.includes("reuniao")) return "ata";
   if (
     value.includes("declaracao de voto") ||
