@@ -93,7 +93,13 @@ describe("etapa68 · enumeração incompleta se declara incompleta", () => {
     // Prova de código: sair do laço com página pendente na fila é truncamento. Sem isto, a
     // conferência de cobertura lê "enumerei o portal inteiro" e pinta ✓ sobre metade dos dados.
     const fonte = readFileSync(join(fixtures, "../../../antt-2026-collector.ts"), "utf-8");
-    expect(fonte).toMatch(/if \(listingQueue\.length > 0 \|\| meetingLinks\.size >= maxMeetings\) truncated = true;/);
+    // Fase 17 — a MESMA propriedade, agora numa função pura e testável por comportamento
+    // (etapa102): o teto passou a ser consumido pelo total VISTO (novos + já conhecidos), porque
+    // o skip-set subiu para a primeira volta. Contar só os coletados faria uma enumeração
+    // truncada se declarar completa.
+    expect(fonte).toMatch(/enumeracaoFoiParcial\(\{/);
+    expect(fonte).toMatch(/filaPendente: listingQueue\.length/);
+    expect(fonte).toMatch(/pulados: skippedKnown/);
   });
 });
 

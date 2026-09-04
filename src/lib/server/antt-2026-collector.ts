@@ -378,6 +378,28 @@ export async function collectAntt2026Documents(
   return response;
 }
 
+/**
+ * A enumeração ficou PARCIAL? (Fase 17)
+ *
+ * Regra da Fase 7: parar por TETO também é enumeração incompleta — `truncated: false` com página
+ * pendente fazia a conferência de cobertura ler "enumerei o portal inteiro" comparando o banco
+ * contra uma fração.
+ *
+ * A Fase 17 acrescenta o que faltava: o teto é consumido pelo total VISTO, não pelo coletado.
+ * Depois que o skip-set passou a agir na primeira volta (senão o conhecido comia a cota e a
+ * janela nunca deslizava), contar só os novos faria uma enumeração truncada se declarar
+ * COMPLETA — exatamente a mentira que o conserto de `cobertura-ao-vivo` acabou de tirar do ar.
+ */
+export function enumeracaoFoiParcial(input: {
+  filaPendente: number;
+  coletados: number;
+  pulados: number;
+  maxMeetings: number;
+}): boolean {
+  if (input.filaPendente > 0) return true;
+  return input.coletados + input.pulados >= input.maxMeetings;
+}
+
 export async function discoverAntt2026Meetings(
   options: DiscoverOptions = {},
 ): Promise<AnttDiscoveryResult> {
@@ -391,7 +413,7 @@ export async function discoverAntt2026Meetings(
   let skippedKnown = 0;
   let meetingPagesFetched = 0;
 
-  while (listingQueue.length > 0 && visited.size < maxPages && meetingLinks.size < maxMeetings) {
+  while (listingQueue.length > 0 && visited.size < maxPages && meetingLinks.size + skippedKnown < maxMeetings) {
     if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
       truncated = true;
       break;
@@ -408,8 +430,17 @@ export async function discoverAntt2026Meetings(
       const title = cleanText(link.text);
       if (!isTargetMeetingTitle(title)) continue;
       if (!normalizeText(contextAround(html, link.index, 1200)).includes("2026")) continue;
+      // Fase 17 — pular AQUI, não no laço de baixo. O passe diário enche a cota com as reuniões
+      // que já estão no banco e devolve ZERO novas: a janela nunca desliza. O pulado continua
+      // contando para o TETO (ele foi visto), e é por isso que `enumeracaoFoiParcial` soma os
+      // dois — senão a enumeração truncada se declararia completa.
+      if (skipMeetingUrls?.has(link.href)) {
+        skippedKnown++;
+        if (meetingLinks.size + skippedKnown >= maxMeetings) break;
+        continue;
+      }
       meetingLinks.set(link.href, { title, sourceUrl: listingUrl, sourceHtml: html });
-      if (meetingLinks.size >= maxMeetings) break;
+      if (meetingLinks.size + skippedKnown >= maxMeetings) break;
     }
 
     const next = findNextPageUrl(html, listingUrl);
@@ -424,7 +455,16 @@ export async function discoverAntt2026Meetings(
   // devolvia `truncated: false`, e a conferência de cobertura lia isso como "enumerei o portal
   // inteiro" — era o que produzia "✓ Cobertura completa" comparando o banco contra uma fração.
   // E não é hipotético: o portal tem 82 páginas e `maxPages` é no máximo 20 (5 na coleta leve).
-  if (listingQueue.length > 0 || meetingLinks.size >= maxMeetings) truncated = true;
+  if (
+    enumeracaoFoiParcial({
+      filaPendente: listingQueue.length,
+      coletados: meetingLinks.size,
+      pulados: skippedKnown,
+      maxMeetings,
+    })
+  ) {
+    truncated = true;
+  }
 
   const meetings: AnttMeeting[] = [];
   for (const [url, listing] of meetingLinks) {
