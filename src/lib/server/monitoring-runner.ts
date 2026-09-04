@@ -3,6 +3,7 @@ import { resilientFetch, drainFetchStats } from "@/lib/server/resilient-fetch";
 import { drainHeadlessOutcomes } from "@/lib/server/headless";
 import { budgetRetries, hasBudget } from "@/lib/server/time-budget";
 import { RESERVA } from "@/lib/server/esteira-reservas";
+import { avaliarSinaisDeFonte, textoDoSinal } from "@/lib/server/sinais-de-fonte";
 
 /**
  * O custo de INSERIR um item descoberto: uma ida ao banco (INSERT + o UPDATE da colisão de hash).
@@ -253,44 +254,60 @@ export async function processMonitoringSite(
     }
     await db.from("monitoramento_sites").update(sitePatch).eq("id", site.id);
 
-    // ═══ Fase 17 — o ALARME DE QUEDA (o que o changedetection.io tem e nós não tínhamos) ═══
-    // Não fazemos detecção de mudança: re-parseamos a página inteira e deduplicamos por
-    // `hash_item` — mais robusto que um diff de HTML, mas cego para o caso que importa. Uma fonte
-    // que trazia 284 itens e passa a trazer 0 (WAF, layout novo, portal fora do ar) terminava a
-    // rodada em silêncio, e o banner ficava MAIS verde quanto menos a coleta enxergava.
-    // `monitoramento_runs.itens_encontrados` é o fingerprint que já existe — indexado desde a
-    // migration 005 — e nunca era comparado com a run anterior.
-    //
-    // ⚠️ Nasce COM consumidor: `monitoramento_alertas` já é exibida no Dashboard e na tela de
-    // Monitoramento, e `tipo` é VARCHAR(30) SEM CHECK (005:162) — nenhuma migration necessária.
-    // Capacidade sem consumidor já custou três vezes neste projeto.
+    // ═══ Fase 18 — o alarme que a Fase 17 escreveu e que NUNCA gravou ═══════
+    // Dois defeitos, um meu e um de calibração:
+    // (1) o insert não mandava `item_id`, que é NOT NULL (005:159) — alerta de FONTE não tem
+    //     item. Falhava com 23502 em silêncio, porque o supabase-js devolve {error} em vez de
+    //     lançar e o retorno era descartado. Migration 20260905120000 solta o NOT NULL, e o erro
+    //     passa a ser LOGADO: foi o silêncio que escondeu isso por um dia inteiro.
+    // (2) comparava só com a run IMEDIATAMENTE anterior, exigindo queda de metade. Produção
+    //     mostrou os dois cegamentos: ANM 141→104 (−26%) sem alarme, e ANTT 0→0, que nenhum
+    //     limiar percentual pega. A regra agora é pura e testável (sinais-de-fonte.ts).
     try {
-      const { data: runAnterior } = await db
+      const { data: recentes } = await db
         .from("monitoramento_runs")
-        .select("itens_encontrados")
+        .select("itens_encontrados, trigger_type, status")
         .eq("site_id", site.id)
         .not("finished_at", "is", null)
-        .order("finished_at", { ascending: false })
-        .limit(1)
-        .maybeSingle();
-      const itensAnteriores = Number(runAnterior?.itens_encontrados ?? 0);
-      // Fonte que sempre trouxe pouco não vira ruído diário: só alarma quem tinha volume real.
-      const MIN_ITENS_PARA_ALARME = 5;
-      const quedaDeVolume =
-        itensAnteriores >= MIN_ITENS_PARA_ALARME && result.items.length <= itensAnteriores / 2;
-      if (quedaDeVolume) {
-        await db.from("monitoramento_alertas").insert({
+        .order("started_at", { ascending: false })
+        .limit(5);
+      const historico = (recentes ?? []) as Array<{ itens_encontrados: number | null; trigger_type: string | null; status: string | null }>;
+      // Baseline: o MÁXIMO das 3 últimas runs `ok` — a última sozinha já estava zerada, e um
+      // baseline zerado é o que fazia a fonte morta ficar invisível.
+      const okRecentes = historico.filter((r) => r.status === "ok").slice(0, 3);
+      const baseline = okRecentes.reduce((max, r) => Math.max(max, Number(r.itens_encontrados ?? 0)), 0);
+      // Zeros consecutivos, incluindo esta run.
+      let zerosSeguidos = result.items.length === 0 ? 1 : 0;
+      if (zerosSeguidos > 0) {
+        for (const r of historico) {
+          if (Number(r.itens_encontrados ?? 0) === 0) zerosSeguidos++;
+          else break;
+        }
+      }
+      const sinal = avaliarSinaisDeFonte({
+        baseline,
+        atuais: result.items.length,
+        zerosSeguidos,
+        gatilho: triggerType,
+        gatilhoBaseline: okRecentes[0]?.trigger_type ?? triggerType,
+      });
+      if (sinal) {
+        const { error: erroAlerta } = await db.from("monitoramento_alertas").insert({
           site_id: site.id,
           agencia_id: site.agencia_id,
-          tipo: "queda_de_volume",
-          titulo:
-            `${site.nome}: a listagem trouxe ${result.items.length} item(ns) — a coleta anterior ` +
-            `trouxe ${itensAnteriores}. Fonte pode estar bloqueada, fora do ar ou com layout novo.`,
+          tipo: sinal,
+          titulo: textoDoSinal(sinal, site.nome, {
+            baseline, atuais: result.items.length, zerosSeguidos,
+          }),
           url_item: site.url,
         });
+        if (erroAlerta) {
+          console.warn(`[monitoramento] alerta "${sinal}" NÃO gravado para ${site.nome}: ${erroAlerta.message}`);
+        }
       }
-    } catch {
-      /* degrada: alarme é diagnóstico, nunca pode derrubar a coleta */
+    } catch (err) {
+      // Degrada: diagnóstico nunca derruba a coleta. Mas agora fala.
+      console.warn("[monitoramento] avaliação de sinais da fonte falhou:", err);
     }
 
     if (run) {

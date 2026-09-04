@@ -55,15 +55,18 @@ describe("etapa101 · «zero no site» nunca mais é «cobertura completa»", ()
 });
 
 describe("etapa101 · o alarme de QUEDA (o que o changedetection.io tem e nós não tínhamos)", () => {
-  it("compara com a run ANTERIOR do mesmo site — o histórico já existe", () => {
+  it("compara com o HISTÓRICO do site — não só com a run anterior (Fase 18)", () => {
+    // A Fase 18 trocou "a run imediatamente anterior" pelo MÁXIMO das 3 últimas runs `ok`: com
+    // baseline zerado (o caso da fonte já morta), nenhuma comparação acusava nada.
     expect(RUNNER).toMatch(/from\("monitoramento_runs"\)[\s\S]{0,220}?itens_encontrados/);
-    expect(RUNNER).toMatch(/quedaDeVolume|itensAnteriores/);
+    expect(RUNNER).toMatch(/avaliarSinaisDeFonte\(/);
   });
 
   it("o alarme tem CONSUMIDOR: grava em monitoramento_alertas, que o Dashboard já exibe", () => {
-    const bloco = RUNNER.slice(RUNNER.indexOf("quedaDeVolume"));
+    const bloco = RUNNER.slice(RUNNER.indexOf("avaliarSinaisDeFonte"));
     expect(bloco).toMatch(/from\("monitoramento_alertas"\)/);
-    expect(bloco).toMatch(/tipo: "queda_de_volume"/);
+    // O tipo vem do predicado (queda_de_volume ou fonte_muda), não de um literal fixo.
+    expect(bloco).toMatch(/tipo: sinal/);
   });
 
   it("só alarma queda RELEVANTE — fonte que sempre trouxe pouco não vira ruído diário", () => {
