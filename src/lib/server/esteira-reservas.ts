@@ -61,6 +61,11 @@ export const RESERVA = {
   redatar: 6_000,
   /** Cada métrica derivada (empresas, qualidade, mandatos, divergência). */
   derivada: 6_000,
+  /**
+   * Reparo de `resultado` em item de ata (Fase 19): lê o pai, casa por `item_numero`, grava.
+   * 2-3 round-trips por PAI (não por filho) — barato, e é o que destrava os votos represados.
+   */
+  reResultar: 6_000,
   /** Reprocesso de documentos `failed` (extração que quebrou) — Fase 9. */
   reprocessarFalhados: 6_000,
   /**
@@ -143,6 +148,7 @@ export const TETO_FATIA: Record<PassoEsteira, number> = {
   backfillVotos: RESERVA.backfillVotos * 2,
   dedup: RESERVA.dedup * 2,
   redatar: RESERVA.redatar * 2,
+  reResultar: RESERVA.reResultar * 2,
   derivada: RESERVA.derivada + 2_000,
   reprocessarFalhados: RESERVA.reprocessarFalhados + 2_000,
   reclassificacao: RESERVA.reclassificacao * 2,
@@ -161,7 +167,7 @@ export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
   // `redatar` vem depois do dedup (datas certas antes de consolidar reuniões/derivadas) e fica
   // FORA da cauda de propósito: a cauda é o mínimo vital (32s) e um passo de hygiene não pode
   // encarecê-la — ele gira com a cabeça, como dedup e recuperação.
-  "reaper", "extracao", "dedup", "redatar", "recuperacao", "reprocessarFalhados", "derivada",
+  "reaper", "extracao", "dedup", "redatar", "reResultar", "recuperacao", "reprocessarFalhados", "derivada",
 ] as const;
 
 /**

@@ -56,6 +56,7 @@ import { POST as dedupPOST } from "../../admin/deliberacoes/dedup/route";
 import { POST as materializarPOST } from "../../admin/votos/materializar-faltantes/route";
 import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ignorados/route";
 import { POST as redatarPOST } from "../../admin/deliberacoes/redatar/route";
+import { POST as reResultarPOST } from "../../admin/deliberacoes/re-resultar/route";
 import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
 import { POST as mandatosRecalcularPOST } from "../../mandatos/recalcular/route";
@@ -517,6 +518,24 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       etapas.redatar = { erro: "re-derivação de datas falhou nesta rodada" };
     }
   } else { etapas.redatar = foraDoPlano("redatar"); }
+
+  // 10c · Reparo de `resultado` em item de ata (Fase 19) — o passo que destrava voto represado.
+  // 232 itens medidos em produção ficaram sem `resultado` por um build anterior, e
+  // `materializar-faltantes` exige o campo para gerar linha em `votos`. Idempotente: nunca
+  // sobrescreve valor existente, e filho de PAUTA fica fora por predicado E por recusa da função.
+  if (cabe("reResultar")) {
+    try {
+      const r = await call(reResultarPOST, "/api/v1/admin/deliberacoes/re-resultar?dry_run=0", "reResultar", {});
+      etapas.re_resultar = anotar(r, "reparo de resultado", {
+        reparadas: Number(r.body?.reparadas ?? 0),
+        reparo_falhas: Number(r.body?.falhas ?? 0),
+        reparo_sem_fonte: Number(r.body?.sem_fonte ?? 0),
+      });
+      if (r.body?.restantes) restantes = true;
+    } catch {
+      etapas.re_resultar = { erro: "reparo de resultado falhou nesta rodada" };
+    }
+  } else { etapas.re_resultar = foraDoPlano("reparo de resultado"); }
 
   // 9 · Recuperação de ignorados. Fase 7 — FIM DO PING-PONG.
   // Esta chamada re-enfileirava exatamente os documentos que o confirm-lote acabara de arquivar
