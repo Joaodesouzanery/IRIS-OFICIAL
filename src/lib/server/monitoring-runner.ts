@@ -4,6 +4,12 @@ import { drainHeadlessOutcomes } from "@/lib/server/headless";
 import { budgetRetries, hasBudget } from "@/lib/server/time-budget";
 import { RESERVA } from "@/lib/server/esteira-reservas";
 
+/**
+ * O custo de INSERIR um item descoberto: uma ida ao banco (INSERT + o UPDATE da colisão de hash).
+ * Nada a ver com os 25s de `RESERVA.coleta`, que são o custo de BAIXAR o PDF.
+ */
+const RESERVA_INSERCAO_ITEM_MS = 1_000;
+
 const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
@@ -121,7 +127,17 @@ export async function processMonitoringSite(
     );
 
     for (const item of itensOrdenados) {
-      if (!hasBudget(options.deadlineAt, RESERVA.coleta)) {
+      // ═══ Fase 18 — descobrir é BARATO; baixar é que é caro ═══════════════════
+      // Este gate cobrava `RESERVA.coleta` (25s) por ITEM DESCOBERTO. Mas 25s é o custo de um
+      // DOWNLOAD DE PDF — o `tryAutoEnqueueMonitoredDocument` que roda logo abaixo —, não o de
+      // um INSERT. Com a fatia real da coleta em 28s (TETO_FATIA + MARGEM_PARTIDA), cabia UM
+      // item por rodada: é a aritmética exata do que a produção mostrou, a ARTESP com
+      // `itens: 264, novos: 1`. A fonte tinha 264 itens e a rodada inseriu um.
+      //
+      // Agora a descoberta paga o próprio preço (uma ida ao banco) e o download é gateado
+      // separadamente. Item descoberto e não baixado fica `novo` — e o passo `enqueue` da
+      // esteira o pega depois, que é exatamente para isso que ele existe.
+      if (!hasBudget(options.deadlineAt, RESERVA_INSERCAO_ITEM_MS)) {
         truncatedItems = true;
         break;
       }
@@ -190,7 +206,13 @@ export async function processMonitoringSite(
 
       if (inserted) {
         novosItens++;
-        const enqueued = await tryAutoEnqueueMonitoredDocument(db, site, item, inserted.id as string, options.deadlineAt);
+        // O DOWNLOAD continua com a reserva cara: ele é que custa 25s (fetch com timeout de 20s
+        // + gravação no Storage). Sem saldo, o item fica `novo` e o passo `enqueue` o baixa numa
+        // rodada seguinte — descoberta preservada, download adiado.
+        const podeBaixar = hasBudget(options.deadlineAt, RESERVA.coleta);
+        const enqueued = podeBaixar
+          ? await tryAutoEnqueueMonitoredDocument(db, site, item, inserted.id as string, options.deadlineAt)
+          : { enqueued: false };
         if (enqueued.enqueued) documentosEnfileirados++;
         await db.from("monitoramento_alertas").insert({
           item_id: inserted.id,
