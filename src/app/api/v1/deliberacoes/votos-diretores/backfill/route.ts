@@ -14,7 +14,7 @@ const TARGET_YEAR = 2026;
 // Descobre tudo que ja saiu em 2026, descarta acervo anterior e auto-enfileira
 // os PDFs no pipeline existente (extracao -> votos). Reusa processMonitoringSite.
 
-// Vercel Cron só emite GET (com Bearer CRON_SECRET): rede de segurança SEMANAL para
+// Vercel Cron só emite GET (com Bearer CRON_SECRET): rede de segurança que SERIA semanal — ⚠️ Fase 18: não existe cron para esta rota (os 2 slots do Hobby estão com noticias/cron e pipeline/run). Ela roda pelo botão e como passo da esteira para
 // qualquer reunião de 2026 que escape dos crons diários.
 export async function GET(req: NextRequest) {
   return POST(req);

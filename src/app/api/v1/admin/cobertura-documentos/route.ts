@@ -81,7 +81,7 @@ export async function GET(req: NextRequest) {
     db.from("monitoramento_itens").select("agencia_id, status, documento_id").limit(40000),
     db.from("documentos_coletados").select("agencia_id, tipo, status").limit(40000),
     db.from("documentos_regulatorios").select("agencia_id, status, is_duplicate").limit(40000),
-    db.from("deliberacoes").select("agencia_id, tipo_documento, documento_pai_id, numero_reuniao, data_reuniao").limit(40000),
+    db.from("deliberacoes").select("agencia_id, tipo_documento, documento_pai_id, resultado, numero_reuniao, data_reuniao").limit(40000),
   ]);
 
   const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
@@ -127,7 +127,10 @@ export async function GET(req: NextRequest) {
     const e = ag(d.agencia_id); if (!e) continue;
     // Decisão final: exclui pauta/voto_individual/documento_apoio e ata-pai (sem item).
     if (NAO_FINAL.has(String(d.tipo_documento))) continue;
-    if (d.tipo_documento === "ata" && d.documento_pai_id == null) continue;
+    // Fase 18 — faltava o `resultado`: este era o ÚNICO dos quatro sítios que contava item de
+    // ata sem desfecho como deliberação final. São 267 linhas na medição de produção (contra 209
+    // com resultado), então o painel divergia dos outros três em mais da metade dos itens de ata.
+    if (d.tipo_documento === "ata" && !(d.documento_pai_id && d.resultado)) continue;
     e.deliberacoes_finais += 1;
 
     const chaveMateria = d.numero_reuniao

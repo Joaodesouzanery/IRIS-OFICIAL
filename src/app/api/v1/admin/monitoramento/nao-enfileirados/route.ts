@@ -106,14 +106,25 @@ export async function GET(req: NextRequest) {
   // `download_falhou` é falha de REDE: o portal pode voltar, e o item volta a ser tentado.
   // `sem_pdf` é decisão de CONTEÚDO: a página não tinha PDF de decisão quando foi lida.
   const arquivadosRecuperaveis = arquivados
-    // Fase 17 — `waf_desafio` é recuperável pela mesma razão: o portal pode liberar. ⚠️ Este
-    // número SOBE no dia do deploy sem que nada novo tenha sido recuperado — é reclassificação
-    // do que já estava arquivado, não recuperação.
+    // Fase 18 — "recuperável" tinha duas leituras misturadas num número só, e por isso o painel
+    // subcontava 112 itens da ARTESP. Agora são DOIS números, porque são duas coisas:
+    //  · `volta_sozinho` — tem carimbo de prazo (download_falhou, waf_desafio): a fila de retry
+    //    o pega no vencimento, sem ninguém fazer nada;
+    //  · `reabrivel_por_migration` — motivo terminal por CONTEÚDO (sem_pdf, formato não
+    //    suportado, zip inválido): não volta sozinho por desenho (seria moinho), mas é
+    //    recuperável quando a causa cai — foi assim que os ZIPs da ARTESP voltaram na Fase 9.
     .filter((g) => g.motivo === "download_falhou" || g.motivo === "waf_desafio")
+    .reduce((s, g) => s + g.total, 0);
+  const arquivadosReabriveisPorMigration = arquivados
+    .filter((g) => {
+      const m = String(g.motivo ?? "");
+      return m === "sem_pdf" || m.startsWith("formato_nao_suportado") || m.startsWith("zip_invalido");
+    })
     .reduce((s, g) => s + g.total, 0);
 
   return NextResponse.json({
     total_nao_enfileirados: totalNovo,
+    total_arquivados_reabriveis_por_migration: arquivadosReabriveisPorMigration,
     total_na_esteira_votos: naEsteira,
     total_fora_da_esteira_votos: totalNovo - naEsteira,
     total_arquivados: totalArquivado,

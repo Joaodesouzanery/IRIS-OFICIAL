@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
       }).eq("id", run.id);
     }
 
-    // Carimba a fonte: este cron É a verificação diária completa da ANTT, mas antes só
+    // Carimba a fonte: ATENÇÃO (Fase 18): NÃO existe cron para esta rota desde 10/07/2026 (removido em ce36c52 — o plano Hobby só tem 2 slots, ambos ocupados). Hoje ela roda SÓ pelo botão da tela de documentos ANTT. Enquanto não virar passo da esteira, a verificação da ANTT depende de clique, mas antes só
     // gravava monitoramento_runs — a UI ("Última verificação") lia um ultimo_check
     // congelado do site e parecia parada.
     if (site?.id) {

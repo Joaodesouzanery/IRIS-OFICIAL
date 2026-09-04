@@ -41,7 +41,13 @@ export function classificarDescarte(row: {
     return null;
   }
   if (["deliberacao", "resolucao", "portaria"].includes(tipo)) {
-    return row.resultado ? null : "sem_resultado_extraido";
+    // ⚠️ Fase 18 — aqui eu tinha divergido do predicado canônico: descartava deliberação sem
+    // `resultado`. Mas ela É final — é o quarto estado da METODOLOGIA (`sem_resultado`), que vive
+    // DENTRO do total. Com a divergência, a conta publicada no card ("1028 linhas − descartadas =
+    // 692") não fechava, porque o total vinha do predicado e o descarte vinha daqui.
+    // O quinto estado é outra coisa: o ITEM DE ATA que tem pai e não tem resultado (acima).
+    // Vigiado pelo teste transversal da etapa110.
+    return null;
   }
   return "outro";
 }
