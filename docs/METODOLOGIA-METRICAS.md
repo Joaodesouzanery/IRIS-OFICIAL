@@ -24,6 +24,38 @@ janela; o instrumento para isso é o bloco ① de `docs/auditoria-votos-cobertur
 
 ---
 
+## 0.1 O QUINTO estado, e a conta do "Total de deliberações" (04/09/2026)
+
+**A pergunta que este bloco responde:** por que o banco tem ~1028 linhas em `deliberacoes` e o
+Dashboard mostra 692?
+
+A diferença **não é filtro de ano nem de agência** — a tela não manda nenhum dos dois. É
+inteiramente o predicado de **deliberação FINAL** (`isFinalDecisionRecord`). O card do Dashboard
+agora publica a conta inteira, e a rota devolve `total_linhas` e `descartados` por motivo:
+
+| Motivo do descarte | O que é |
+|---|---|
+| `tipo_nao_final` | `pauta`, `voto_individual`, `documento_apoio` — não são decisão |
+| `ata_envelope` | a ATA em si; quem decide são os ITENS dela (`documento_pai_id` preenchido) |
+| `sem_resultado_extraido` | **o quinto estado** — o item existe, tem pai, e nenhum resultado foi extraído |
+| `outro` | tipo fora da lista conhecida |
+
+**O quinto estado é o que faltava ser declarado.** A seção 1 abaixo lista quatro estados
+(`decidido`, `admissibilidade`, `retirado`, `sem_resultado`), mas o `sem_resultado` de lá vive
+DENTRO do total (é linha final sem desfecho). O caso descrito aqui é diferente: o item **nem
+entra** no total, porque o predicado exige `documento_pai_id && resultado`. Ele sumia em
+silêncio; agora tem nome e contagem.
+
+**Reuniões únicas** passaram a ser contadas por `agência + data + número` (a mesma chave natural
+da tabela `reunioes`), e não mais por `DISTINCT data_reuniao` global — que colapsava duas
+agências reunidas no mesmo dia em uma só, e perdia a extraordinária quando ela caía na data da
+ordinária.
+
+**"Auto-classificadas"** deixou de dizer "por IA": não há LLM na esteira de extração. O número
+mede o que foi classificado **sem revisão manual**, por regex e parsers determinísticos.
+
+---
+
 ## 1. Os quatro estados de uma deliberação
 
 O campo `resultado` carrega, historicamente, duas coisas diferentes no mesmo lugar: o **desfecho**

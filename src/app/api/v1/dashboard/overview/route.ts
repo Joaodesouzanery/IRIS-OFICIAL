@@ -11,6 +11,7 @@ import { isResultadoPositivo } from "@/lib/utils";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { isFinalDecisionRecord, FINAL_DECISION_RAW_SELECT , decisionStatus, isDecidedOnMerits, juizoSelect } from "@/lib/server/regulatory-documents";
+import { classificarDescarte, reuniaoKey } from "@/lib/server/metricas-decomposicao";
 import { selectAllPaged } from "@/lib/server/select-all-paged";
 import { matchesYear, applyYearFilterSql } from "@/lib/server/year-filter";
 
@@ -38,7 +39,7 @@ export async function GET(req: NextRequest) {
   const { rows: deliberacoes, error } = await selectAllPaged(() => {
     let q = db
       .from("deliberacoes")
-      .select(`id, resultado, microtema, data_reuniao, data_publicacao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, ${finalSelect}`);
+      .select(`id, resultado, microtema, data_reuniao, data_publicacao, extraction_confidence, auto_classified, pauta_interna, tipo_documento, documento_pai_id, agencia_id, numero_reuniao, ${finalSelect}`);
     if (agenciaId) q = q.eq("agencia_id", agenciaId);
     q = applyYearFilterSql(q, year); // recorte no SQL (perf) — matchesYear segue como cinto
     // Ordem TOTAL única (PK) → paginação por offset determinística (sem pular/duplicar
@@ -51,8 +52,21 @@ export async function GET(req: NextRequest) {
   }
 
   // `year` honrado (QA ago/2026: as abas mandavam o parâmetro e a rota ignorava).
-  const rows = deliberacoes.filter(isFinalDecisionRecord).filter((r: any) => matchesYear(r, year));
+  const doAno = deliberacoes.filter((r: any) => matchesYear(r, year));
+  const rows = doAno.filter(isFinalDecisionRecord);
   const total = rows.length;
+
+  // ═══ Fase 17 — o total passa a se EXPLICAR ═══════════════════════════════
+  // "1028 no banco, 692 na tela" não é filtro de ano nem de agência (a tela não manda nenhum dos
+  // dois): é inteiramente `isFinalDecisionRecord`. O número está certo — faltava ele dizer isso.
+  // Publicar a decomposição custa uma passada sobre linhas que já estão em memória, e transforma
+  // uma pergunta recorrente ("posso confiar?") em algo conferível na própria tela.
+  const descartados: Record<string, number> = {};
+  for (const r of doAno) {
+    if (isFinalDecisionRecord(r as any)) continue;
+    const motivo = classificarDescarte(r as any) ?? "outro";
+    descartados[motivo] = (descartados[motivo] ?? 0) + 1;
+  }
   // NUMERADOR no MESMO universo do denominador (etapa60). Contar positivos sobre TODAS as linhas
   // enquanto o divisor conta só as DECIDIDAS deixa a taxa passar de 100% quando um item de
   // admissibilidade carrega resultado positivo — assimetria que eu mesmo introduzi ao mudar só
@@ -76,7 +90,12 @@ export async function GET(req: NextRequest) {
       ? confidenceRows.reduce((sum, r) => sum + (r.extraction_confidence ?? 0), 0) / confidenceRows.length
       : 0;
 
-  const reunioesUnicas = new Set(rows.map((r) => r.data_reuniao).filter(Boolean)).size;
+  // Fase 17 — era `DISTINCT data_reuniao` GLOBAL: duas agências reunidas no mesmo dia viravam
+  // UMA reunião, e a ANTT (ordinária + extraordinária na mesma data) perdia uma. A chave é a
+  // mesma da tabela `reunioes` materializada: agência + data + número.
+  const reunioesUnicas = new Set(
+    rows.filter((r) => r.data_reuniao).map((r) => reuniaoKey(r as any)),
+  ).size;
 
   const microtemaCount = new Map<string, number>();
   for (const r of rows) {
@@ -96,6 +115,9 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({
     total_deliberacoes: total,
+    // A conta inteira, para quem quiser conferir: linhas do recorte − descartadas = total.
+    total_linhas: doAno.length,
+    descartados,
     deferidos,
     indeferidos,
     sem_resultado: semResultado,

@@ -132,10 +132,17 @@ export default function DashboardPage() {
           <HelpTooltip text="KPIs principais: total de deliberações, taxa de deferimento, reuniões únicas e % classificadas automaticamente." />
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {/* Fase 17 — o card DIZ a conta. "1028 no banco, 692 na tela" era a pergunta
+              recorrente; a diferença é só o predicado de deliberação FINAL (pauta, voto
+              individual e apoio não são decisão; ata sem item é envelope). */}
           <MetricCard
             label="Total de Deliberações"
             value={loadingOverview ? "—" : overview?.total_deliberacoes ?? 0}
-            subvalue="deliberações"
+            subvalue={
+              overview?.total_linhas
+                ? `de ${overview.total_linhas} linhas · ${overview.total_linhas - (overview.total_deliberacoes ?? 0)} não-finais`
+                : "deliberações"
+            }
             icon={FileText}
             variant="orange"
           />
@@ -152,10 +159,12 @@ export default function DashboardPage() {
             icon={Tag}
             variant="default"
           />
+          {/* Fase 17 — "por IA" saiu: não há LLM nenhum na esteira de extração. O rótulo mentia
+              sobre COMO o dado é produzido (regex + parsers determinísticos). */}
           <MetricCard
             label="Auto-Classificadas"
             value={loadingOverview ? "—" : `${overview?.auto_classified_pct ?? 0}%`}
-            subvalue="por IA"
+            subvalue="sem revisão manual"
             icon={Cpu}
             variant="default"
           />

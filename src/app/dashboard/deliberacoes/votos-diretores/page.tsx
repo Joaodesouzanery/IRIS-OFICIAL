@@ -749,6 +749,14 @@ export default function VotosDiretoresPage() {
                       {". O restante é conteúdo: a página não trazia PDF de decisão."}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
+                      {arquivados.length > 8 && (
+                        <span className="inline-flex items-center rounded-full border border-dashed px-2 py-0.5 text-[11px] text-text-muted">
+                          {/* Fase 17 — a cauda era cortada em silêncio: 371 arquivados e só 334
+                              apareciam. Um número que não diz que está incompleto é pior que
+                              nenhum número. */}
+                          +{arquivados.length - 8} grupo(s) não exibido(s)
+                        </span>
+                      )}
                       {arquivados.slice(0, 8).map((g) => (
                         <span
                           key={`arq-${g.agencia}-${g.tipo}-${g.motivo ?? "-"}`}

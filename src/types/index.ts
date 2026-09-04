@@ -241,6 +241,9 @@ export interface JobStatus {
 export interface DashboardOverview {
   /** PAUTADO — tudo que entrou em pauta. Não muda. */
   total_deliberacoes: number;
+  /** Fase 17 — a conta inteira: linhas do recorte − descartadas = total. */
+  total_linhas?: number;
+  descartados?: Record<string, number>;
   /** Etapa60 — denominador de MÉRITO da `taxa_deferimento`. */
   total_decidido?: number;
   /** NÃO CONHECIDO: fora dos dois lados da taxa. */
