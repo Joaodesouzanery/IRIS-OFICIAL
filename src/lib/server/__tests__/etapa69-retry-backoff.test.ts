@@ -119,7 +119,11 @@ describe("etapa69 · o que volta, e sob que condição", () => {
   it("gravar `sem_pdf` LIMPA o prazo — é isto que impede o moinho", () => {
     // Sem esta linha, o prazo vencido de ontem continuaria vencido amanhã, e a mesma página
     // institucional seria relida a cada rodada, consumindo o teto de vazão.
-    const trecho = ENQUEUE.slice(ENQUEUE.indexOf("const motivoTerminal"));
+    // ⚠️ A âncora é o UPDATE que grava `motivoTerminal` — NÃO o `const motivoTerminal`. A Fase 17
+    // inseriu entre os dois o ramo do WAF (que, ao contrário, grava PRAZO), e o recorte a partir
+    // da declaração passou a terminar dentro do UPDATE errado. A propriedade vigiada é a mesma:
+    // o arquivamento por CONTEÚDO limpa o prazo; o por BLOQUEIO não.
+    const trecho = ENQUEUE.slice(ENQUEUE.indexOf("enqueue_motivo: motivoTerminal"));
     const ateOFimDoUpdate = trecho.slice(0, trecho.indexOf(".eq(\"id\", item.id)"));
     expect(ateOFimDoUpdate).toMatch(/proxima_tentativa_em: null/);
   });

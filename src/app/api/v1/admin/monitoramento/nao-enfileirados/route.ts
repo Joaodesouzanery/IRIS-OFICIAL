@@ -106,7 +106,10 @@ export async function GET(req: NextRequest) {
   // `download_falhou` é falha de REDE: o portal pode voltar, e o item volta a ser tentado.
   // `sem_pdf` é decisão de CONTEÚDO: a página não tinha PDF de decisão quando foi lida.
   const arquivadosRecuperaveis = arquivados
-    .filter((g) => g.motivo === "download_falhou")
+    // Fase 17 — `waf_desafio` é recuperável pela mesma razão: o portal pode liberar. ⚠️ Este
+    // número SOBE no dia do deploy sem que nada novo tenha sido recuperado — é reclassificação
+    // do que já estava arquivado, não recuperação.
+    .filter((g) => g.motivo === "download_falhou" || g.motivo === "waf_desafio")
     .reduce((s, g) => s + g.total, 0);
 
   return NextResponse.json({

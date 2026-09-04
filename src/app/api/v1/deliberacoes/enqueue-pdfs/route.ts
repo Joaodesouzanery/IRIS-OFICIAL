@@ -19,6 +19,7 @@ import { resolvePdfLinks, sniffIsDocx, sniffIsHtml, sniffIsPdf, sniffIsZip } fro
 import { TIPOS_ESTEIRA_VOTOS } from "@/lib/esteira-tipos";
 import { mapComConcorrencia, criarReservaAdaptativa } from "@/lib/server/concorrencia";
 import { resilientFetch } from "@/lib/server/resilient-fetch";
+import { looksLikeChallenge } from "@/lib/server/monitoring";
 
 export const dynamic = "force-dynamic";
 
@@ -160,7 +161,11 @@ export async function POST(req: NextRequest) {
       //
       // Sem essa assimetria, retentar `sem_pdf` seria um moinho: a página institucional que não
       // tem documento nenhum seria relida a cada ciclo, consumindo o teto de vazão da rodada.
-      return meta.enqueue_motivo === "download_falhou" || meta.enqueue_motivo === "sem_pdf";
+      // Fase 17 — `waf_desafio` entra: o item ganhou prazo no ramo do WAF, e sem estar nesta
+      // lista o carimbo seria escrito e ninguém o leria (foi assim que 95 itens ficaram
+      // inalcançáveis na Fase 16). `waf_persistente` NÃO entra: é a desistência explícita.
+      return meta.enqueue_motivo === "download_falhou" || meta.enqueue_motivo === "sem_pdf"
+        || meta.enqueue_motivo === "waf_desafio";
     });
   }
 
@@ -268,7 +273,17 @@ export async function POST(req: NextRequest) {
             return { ok: true, pdfs: [], motivo: `zip_invalido:${msg.slice(0, 60)}` };
           }
         } else if (sniffIsHtml(fetched.contentType, fetched.buffer)) {
-          const { links, totalEncontrado } = resolvePdfLinks(fetched.buffer.toString("utf8"), url);
+          const html = fetched.buffer.toString("utf8");
+          // ═══ Fase 17 — o desafio do WAF não é "a página não tinha PDF" ═══════════
+          // A Fase 9 ensinou a COLETA a reconhecer o Imperva; o enfileiramento nunca soube. O
+          // portal responde HTTP 200 com "Pardon Our Interruption", o resolvedor acha zero links
+          // e o item era arquivado como `sem_pdf` TERMINAL (sem carimbo → o retry nunca mais o
+          // alcança). Uma janela de bloqueio queimava itens para sempre. O detector é o MESMO da
+          // coleta, por import: duas heurísticas seriam duas verdades.
+          if (looksLikeChallenge(html)) {
+            return { ok: true, pdfs: [], motivo: "waf_desafio" };
+          }
+          const { links, totalEncontrado } = resolvePdfLinks(html, url);
           pdfsNaPagina = totalEncontrado;
           // Fase 8 — o teto era 6 e a 1036ª Reunião de Diretoria da ANTT tem SETE PDFs. Medido
           // contra a fixture real: pauta, ata e CINCO votos individuais, nessa ordem no DOM. Como
@@ -326,6 +341,44 @@ export async function POST(req: NextRequest) {
         // corrompido e uma página institucional vazia são três coisas diferentes, e somá-las num
         // motivo só foi o que escondeu 198 documentos da ARTESP atrás de "a página não tinha PDF".
         const motivoTerminal = valor.motivo ?? "sem_pdf";
+
+        // Fase 17 — bloqueio NÃO é decisão de conteúdo: o item volta, com PRAZO. O teto é o
+        // mesmo que já existe (MAX_CICLOS_RETRY, ~25 dias somando 1+3+7+14), então isto não é
+        // retry perpétuo — é sangria com fim. O que muda é o rótulo: ao desistir ele diz
+        // `waf_persistente`, e não `download_falhou_desistido`, para que uma migration futura
+        // consiga selecionar exatamente os bloqueados no dia em que o portal liberar.
+        if (motivoTerminal === "waf_desafio") {
+          const cicloAnteriorWaf = Number((item as any).tentativas) || 0;
+          const cicloWaf = cicloAnteriorWaf + 1;
+          const desistiuWaf = cicloWaf >= MAX_CICLOS_RETRY;
+          await db
+            .from("monitoramento_itens")
+            .update({
+              status: "ignorado",
+              tentativas: cicloWaf,
+              proxima_tentativa_em: desistiuWaf ? null : proximaTentativaEm(cicloAnteriorWaf),
+              metadata: {
+                ...itemMeta,
+                enqueue_motivo: desistiuWaf ? "waf_persistente" : "waf_desafio",
+                captura_erro: "Portal respondeu com pagina de desafio (WAF) em vez do documento.",
+              },
+              last_seen_at: new Date().toISOString(),
+            })
+            .eq("id", item.id);
+          semPdf++;
+          results.push({
+            monitoramento_item_id: item.id as string,
+            titulo: String(item.titulo ?? url),
+            url,
+            status: "error",
+            job_id: null,
+            message: desistiuWaf
+              ? `Bloqueado pelo WAF em ${MAX_CICLOS_RETRY} ciclos — arquivado como waf_persistente.`
+              : `Bloqueado pelo WAF (ciclo ${cicloWaf}/${MAX_CICLOS_RETRY}) — volta a ser tentado depois do prazo.`,
+          });
+          continue;
+        }
+
         await db
           .from("monitoramento_itens")
           .update({
