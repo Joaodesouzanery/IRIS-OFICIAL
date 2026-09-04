@@ -56,10 +56,22 @@ describe("etapa70 · cada caminho de detecção sozinho", () => {
     `<!DOCTYPE html><html><head><title>x</title></head><body>${marcador}` +
     `<table><tr><td>conteúdo</td></tr></table><li>a</li>${"x".repeat(20_000)}</body></html>`;
 
-  it("o marcador do Imperva sozinho basta", () => {
+  it("REVISADO (Fase 17): o marcador do Imperva sozinho NÃO basta — ele é um sensor", () => {
+    // ⚠️ Este teste afirmava o contrário, e o contrário estava errado. MEDIDO em 04/09/2026
+    // contra o portal ao vivo: a listagem de reuniões da ARTESP responde 200 com 196 KB de
+    // conteúdo real (264 itens extraídos pelo nosso parser) e MESMO ASSIM carrega
+    // `<script src="/_Incapsula_Resource?…">` — o sensor do Imperva roda em toda página do
+    // portal, bloqueada ou não. Ver `etapa106`, que usa a página real como fixture.
+    // A premissa deste caso vinha da fixture antiga (1,6 KB recortados à mão), que não tinha o
+    // sensor: o falso positivo nunca teve chance de aparecer.
     const html = grandeComConteudo('<script src="/_Incapsula_Resource?SWJIYLWA=x"></script>');
     expect(html.length, "grande o bastante para a heurística genérica não pegar").toBeGreaterThan(15_000);
-    expect(looksLikeChallenge(html)).toBe(true);
+    expect(looksLikeChallenge(html)).toBe(false);
+  });
+
+  it("…mas o sensor COM corroboração (sem conteúdo de listagem) continua bastando", () => {
+    const semConteudo = `<html><head><script src="/_Incapsula_Resource?SWJIYLWA=x"></script></head><body><p>Blocked</p></body></html>`;
+    expect(looksLikeChallenge(semConteudo)).toBe(true);
   });
 
   it("o título do desafio sozinho basta", () => {

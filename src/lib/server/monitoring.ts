@@ -317,15 +317,29 @@ export function parseMonitoringHtml(
 export function looksLikeChallenge(html: string): boolean {
   if (!html) return false;
   // Marcadores de produto — os dois primeiros foram VERIFICADOS na resposta real da ARTESP.
-  if (/_Incapsula_Resource|\bIncapsula\b/i.test(html)) return true;
   if (/Pardon Our Interruption/i.test(html)) return true;
   if (/Request unsuccessful\.?\s*Incapsula incident ID|Attention Required!\s*\|\s*Cloudflare/i.test(html)) return true;
   if (/\bcf-browser-verification\b|\bchallenge-platform\b/i.test(html)) return true;
+  // ═══ Fase 17 — o marcador de SENSOR não é marcador de DESAFIO ════════════
+  // MEDIDO em 04/09/2026 contra o portal ao vivo: a listagem de reuniões da ARTESP responde 200
+  // com 196 KB de conteúdo real (129× "Deliberação", 264 itens extraídos pelo nosso parser,
+  // incluindo a 1210ª Reunião de 02/09/2026) — e mesmo assim carrega
+  //   <script src="/_Incapsula_Resource?SWJIYLWA=…">
+  // O `_Incapsula_Resource` é o script SENSOR do Imperva: roda em TODA página do portal,
+  // bloqueada ou não. Tratá-lo como prova de bloqueio dava `true` para a página inteira — e
+  // sustentou por três fases o diagnóstico "a ARTESP está bloqueada". O que a coleta prova é
+  // `items.length === 0`; a CAUSA vinha de um marcador que sempre casa.
+  // (A fixture antiga da listagem tinha 1,6 KB recortados à mão e não continha o sensor, então o
+  // falso positivo nunca apareceu em teste.)
+  //
+  // Agora o sensor só conta COM corroboração: página sem conteúdo de listagem.
+  const semConteudo = !/<(?:li|article|table|h2|h3)\b/i.test(html);
+  if (/_Incapsula_Resource|\bIncapsula\b/i.test(html) && semConteudo) return true;
+
   // Genérico: corpo minúsculo, marcado como não-indexável e sem NENHUM conteúdo de listagem.
   // Página institucional legítima não é as três coisas ao mesmo tempo.
   const minuscula = html.length < 15_000;
   const naoIndexavel = /noindex/i.test(html);
-  const semConteudo = !/<(?:li|article|table|h2|h3)\b/i.test(html);
   return minuscula && naoIndexavel && semConteudo;
 }
 
