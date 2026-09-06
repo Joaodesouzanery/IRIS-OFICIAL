@@ -29,6 +29,7 @@ import {
   type VotoInsertRow,
 } from "@/lib/server/vote-inference";
 import { upsertVotosProtegido } from "@/lib/server/votos-write";
+import { foraDaJanelaDeMandatos, type JanelaDeMandato } from "@/lib/server/janela-de-mandatos";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 
 export const dynamic = "force-dynamic";
@@ -142,10 +143,35 @@ export async function POST(req: NextRequest) {
     return n;
   }
 
+  /**
+   * As janelas de mandato conhecidas por agência (cache por agência, como o roster).
+   * Mesmos filtros de `getActiveDiretoresForVote`: mandato FABRICADO não conta como conhecimento —
+   * usar `fonte_dado='automatico'` aqui faria a janela se auto-ampliar a partir do próprio voto
+   * inferido, e a plataforma passaria a afirmar que sabia quem votava justamente onde não sabia.
+   */
+  const janelasCache = new Map<string, JanelaDeMandato[]>();
+  async function janelasDa(agenciaId: string): Promise<JanelaDeMandato[]> {
+    const emCache = janelasCache.get(agenciaId);
+    if (emCache) return emCache;
+    const { data } = await db
+      .from("mandatos")
+      .select("data_inicio, data_fim, diretores!inner(agencia_id, review_status)")
+      .eq("diretores.agencia_id", agenciaId)
+      .neq("fonte_dado", "automatico")
+      .eq("diretores.review_status", "aprovado");
+    const janelas = ((data ?? []) as Array<{ data_inicio: string | null; data_fim: string | null }>)
+      .map((m) => ({ data_inicio: m.data_inicio, data_fim: m.data_fim }));
+    janelasCache.set(agenciaId, janelas);
+    return janelas;
+  }
+
   let materializaveis = 0;
   let votosCriados = 0;
   let semEvidencia = 0;
   let rosterNaoConferivel = 0;
+  /** Fase 20 — itens ANTERIORES ao primeiro mandato conhecido. Não é falha: é falta de registro. */
+  let foraDaJanela = 0;
+  const foraDaJanelaPorAgencia: Record<string, number> = {};
   const detalheRoster: Array<{ deliberacao_id: string; motivo: string; nao_reconhecidos: string[] }> = [];
   let restantes = false;
   const detalhe: Array<{ deliberacao_id: string; votos: number; origem: string }> = [];
@@ -174,6 +200,23 @@ export async function POST(req: NextRequest) {
       : arr(raw.nomes_votacao_impedido);
     const unanime = Boolean(raw.unanimidade_detectada);
     const isAnttAtaItem = d.tipo_documento === "ata" && Boolean(raw.documento_antt_tipo);
+
+    // ═══ Fase 20 — FORA DA JANELA ≠ CADASTRO INCOMPLETO ════════════════════
+    // O mandato ANM verificado mais antigo começa em 05/12/2022 e a fonte nova da agência é o
+    // acervo ANTIGO. Sem este gate, toda deliberação de 2019 cairia em `roster_nao_conferivel` —
+    // o balde que diz "vá consertar o cadastro". Não há o que consertar: a plataforma não tem
+    // registro de quem eram os diretores. Misturar as duas coisas manda o operador procurar um
+    // defeito inexistente e faz a cobertura PARECER que piorou quando o acervo entra.
+    const motivoFora = foraDaJanelaDeMandatos({
+      dataReuniao: d.data_reuniao,
+      janelas: await janelasDa(d.agencia_id),
+    });
+    if (motivoFora) {
+      foraDaJanela++;
+      const sigla = siglaDe(d.agencia_id);
+      foraDaJanelaPorAgencia[sigla] = (foraDaJanelaPorAgencia[sigla] ?? 0) + 1;
+      continue;
+    }
 
     const diretoresList = await diretoresDa(d.agencia_id);
     if (diretoresList.length === 0) { semEvidencia++; continue; }
@@ -328,6 +371,14 @@ export async function POST(req: NextRequest) {
     // documento. Não é falha: é a recusa de gravar voto no nome errado. O detalhe diz QUEM o
     // cadastro não reconheceu, que é o que o operador precisa para consertar.
     roster_nao_conferivel: rosterNaoConferivel,
+    /**
+     * Fase 20 — itens anteriores ao primeiro mandato conhecido da agência. Contam em cobertura,
+     * microtemas e histórico; ficam FORA do denominador de votação, porque ali a resposta honesta
+     * não é "sem voto", é "fora do período em que sabemos quem votava". Separá-los de
+     * `roster_nao_conferivel` é o que permite ingerir o acervo pré-2022 sem estragar a métrica.
+     */
+    fora_da_janela_de_mandatos: foraDaJanela,
+    fora_da_janela_por_agencia: foraDaJanelaPorAgencia,
     detalhe_roster: detalheRoster,
     restantes,
     detalhe,
