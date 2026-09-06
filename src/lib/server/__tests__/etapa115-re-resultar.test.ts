@@ -99,3 +99,87 @@ describe("etapa115 · AUDITORIA da própria regra: escrita que falha NÃO é con
     expect(r).toEqual({ reparadas: 0, falhas: 2 });
   });
 });
+
+/**
+ * ═══ Fase 20 — os três degraus (o commit anterior reparava ZERO) ═══
+ *
+ * A versão da Fase 19 lia os `ata_items` ARMAZENADOS no pai. Mas esse é o mesmo array que gerou
+ * os filhos (`confirm/route.ts:870 resultado: item.resultado`), e documento `confirmed` nunca é
+ * re-splitado — logo filho NULL ⇒ array NULL ⇒ patch null ⇒ **zero reparos**, devolvendo
+ * `reparadas: 0, sem_fonte: 0`, que é o pior formato de zero porque parece saudável.
+ */
+
+import { repararItem } from "@/lib/server/re-resultar";
+
+describe("etapa120 · os três degraus, do grátis ao caro", () => {
+  const filho = (over: Record<string, unknown> = {}) => ({
+    item_numero: "1.6.1",
+    numero_deliberacao: "ATA-83-1.6.1",
+    resultado: null,
+    resumo_pleito: null,
+    ...over,
+  }) as any;
+
+  it("degrau 1 — array armazenado com resultado (o pai que por acaso foi reprocessado)", () => {
+    const r = repararItem(filho(), {
+      itensDoArray: [{ item_numero: "1.6.1", resultado: "Deferido", decisao: "Voto aprovado." }],
+      itensDoResplit: [],
+    });
+    expect(r?.degrau).toBe("array");
+    expect(r?.patch.resultado).toBe("Deferido");
+  });
+
+  it("degrau 2 — LIGADURA: o dispositivo do próprio filho, com o «ti» consertado", () => {
+    // O caso real medido na ANTT: o texto chega "Processo re%rado de pauta". `inferResultadoFromText`
+    // devolve null no texto cru e "Retirado de Pauta" depois de `repairLigatures`. Zero I/O:
+    // `resumo_pleito` já vem no SELECT do filho.
+    const r = repararItem(filho({ resumo_pleito: "Processo re%rado de pauta pelo relator." }), {
+      itensDoArray: [{ item_numero: "1.6.1", resultado: null, decisao: null }],
+      itensDoResplit: [],
+    });
+    expect(r?.degrau).toBe("ligadura");
+    expect(r?.patch.resultado).toBe("Retirado de Pauta");
+  });
+
+  it("degrau 3 — RE-SPLIT do texto do pai, quando o array está velho", () => {
+    const r = repararItem(filho(), {
+      itensDoArray: [{ item_numero: "1.6.1", resultado: null, decisao: null }],
+      itensDoResplit: [{ item_numero: "1.6.1", resultado: "Aprovado por Unanimidade", decisao: "Voto aprovado." }],
+    });
+    expect(r?.degrau).toBe("resplit");
+    expect(r?.patch.resultado).toBe("Aprovado por Unanimidade");
+  });
+
+  it("SEM CASAMENTO: o item_numero da safra velha não existe no re-split → null, e é CONTADO", () => {
+    // É o risco que sobrou: se a numeração mudou entre as safras, o reparo devolve 0 com outra
+    // cara. Distinguir "não casou" de "nada a fazer" é o que impede o zero silencioso de novo.
+    const r = repararItem(filho({ item_numero: "9.9.9", numero_deliberacao: "ATA-83-9.9.9" }), {
+      itensDoArray: [],
+      itensDoResplit: [{ item_numero: "1.6.1", resultado: "Deferido", decisao: null }],
+    });
+    expect(r).toBeNull();
+  });
+
+  it("a ordem é do BARATO ao caro: com array bom, nem olha o re-split", () => {
+    const r = repararItem(filho({ resumo_pleito: "Processo re%rado." }), {
+      itensDoArray: [{ item_numero: "1.6.1", resultado: "Deferido", decisao: null }],
+      itensDoResplit: [{ item_numero: "1.6.1", resultado: "Indeferido", decisao: null }],
+    });
+    expect(r?.degrau).toBe("array");
+  });
+
+  it("as três recusas valem em TODOS os degraus", () => {
+    const fontes = {
+      itensDoArray: [{ item_numero: "1.6.1", resultado: "Deferido", decisao: null }],
+      itensDoResplit: [{ item_numero: "1.6.1", resultado: "Deferido", decisao: null }],
+    };
+    // resultado já preenchido
+    expect(repararItem(filho({ resultado: "Indeferido" }), fontes)).toBeNull();
+    // filho de PAUTA — seria fabricar voto de agenda
+    expect(repararItem(filho({ numero_deliberacao: "PAUTA-1036-1.6.1" }), fontes)).toBeNull();
+    // dispositivo que não permite inferir nada não vira chute
+    expect(
+      repararItem(filho({ resumo_pleito: "Assunto encaminhado." }), { itensDoArray: [], itensDoResplit: [] }),
+    ).toBeNull();
+  });
+});

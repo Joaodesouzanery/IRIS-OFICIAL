@@ -14,6 +14,12 @@
  * das métricas. Reparar o campo é o que põe os votos no banco, sem código novo de inferência.
  */
 
+import { inferResultadoFromText } from "@/lib/server/ata-splitter";
+import { repairLigatures } from "@/lib/server/pdf-extractor";
+
+/** De onde veio o reparo — o contador por degrau é o que transforma a rodada em medição. */
+export type DegrauDeReparo = "array" | "ligadura" | "resplit";
+
 /** O que o filho precisa ter para ser reparável, e o que se escreve nele. */
 export interface FilhoDeAta {
   item_numero: string | null;
@@ -54,6 +60,50 @@ export function casarResultadoDoItem(filho: FilhoDeAta, itensDaAta: ItemDaAta[])
     resultado: item.resultado,
     ...(filho.resumo_pleito ? {} : { resumo_pleito: item.decisao?.slice(0, 2000) ?? null }),
   };
+}
+
+/**
+ * O reparo em TRÊS DEGRAUS, do grátis ao caro (Fase 20).
+ *
+ * ═══ Por que a versão anterior reparava ZERO ═══
+ * Ela lia só os `ata_items` ARMAZENADOS no pai. Mas esse é o mesmo array que gerou os filhos
+ * (`confirm/route.ts:870` copia `item.resultado` verbatim), e documento `confirmed` NUNCA é
+ * re-splitado — o requeue só alcança `existing_failed`/`review_pending`/`failed`. Filho NULL ⇒
+ * array NULL ⇒ patch `null`. A rota devolvia `reparadas: 0, sem_fonte: 0`: **o pior formato de
+ * zero, porque parece saudável.**
+ *
+ * ═══ Os degraus ═══
+ * 1. `array`    — grátis; cobre o pai que por acaso foi reprocessado.
+ * 2. `ligadura` — zero I/O: o dispositivo já vem no `resumo_pleito` do próprio filho. Medido nos
+ *    casos reais da ANTT: o texto chega `"Processo re%rado"` (a ligadura "ti" perdida na
+ *    extração), e `inferResultadoFromText` devolve `null` no cru e "Retirado de Pauta" depois de
+ *    `repairLigatures`. `unanimidade: false` de propósito — inferir unanimidade a partir de um
+ *    dispositivo truncado seria fabricar exatamente o voto que este projeto combate.
+ * 3. `resplit`  — o texto do PAI pelo splitter atual. Medido: 8 atas reais → 315 itens,
+ *    `semResultado = 0`, em **2,62 ms no total**. É de graça em CPU; o custo é ler uma coluna.
+ *
+ * As três recusas de `casarResultadoDoItem` valem em TODOS os degraus.
+ */
+export function repararItem(
+  filho: FilhoDeAta,
+  fontes: { itensDoArray: ItemDaAta[]; itensDoResplit: ItemDaAta[] },
+): { patch: PatchDeReparo; degrau: DegrauDeReparo } | null {
+  if (filho.resultado) return null;
+  if ((filho.numero_deliberacao ?? "").startsWith("PAUTA-")) return null;
+
+  const doArray = casarResultadoDoItem(filho, fontes.itensDoArray);
+  if (doArray) return { patch: doArray, degrau: "array" };
+
+  // Degrau 2 — o dispositivo que o filho já carrega, com a ligadura consertada.
+  if (filho.resumo_pleito) {
+    const resultado = inferResultadoFromText(repairLigatures(filho.resumo_pleito), false);
+    if (resultado) return { patch: { resultado }, degrau: "ligadura" };
+  }
+
+  const doResplit = casarResultadoDoItem(filho, fontes.itensDoResplit);
+  if (doResplit) return { patch: doResplit, degrau: "resplit" };
+
+  return null;
 }
 
 /**

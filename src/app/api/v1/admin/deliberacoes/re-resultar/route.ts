@@ -21,7 +21,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
-import { casarResultadoDoItem, contarReparos, type ItemDaAta } from "@/lib/server/re-resultar";
+import {
+  contarReparos,
+  repararItem,
+  type DegrauDeReparo,
+  type ItemDaAta,
+  type PatchDeReparo,
+} from "@/lib/server/re-resultar";
+import { splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 120;
@@ -70,31 +77,58 @@ export async function POST(req: NextRequest) {
   let falhas = 0;
   let semFonte = 0;
   let restantes = false;
-  const amostra: Array<{ id: string; numero: string | null; para: string }> = [];
+  /**
+   * Fase 20 — a rota vira a PRÓPRIA medição (não há MCP nesta sessão). O contador por degrau diz
+   * qual fonte resolveu, e `semCasamento` isola o único risco que sobrou: se o `item_numero` da
+   * safra velha não casar com o do splitter atual, o reparo volta a devolver 0 — e sem este
+   * contador voltaria com a MESMA cara saudável de antes.
+   */
+  const porDegrau: Record<DegrauDeReparo, number> = { array: 0, ligadura: 0, resplit: 0 };
+  let semCasamento = 0;
+  const amostra: Array<{ id: string; numero: string | null; para: string; degrau: DegrauDeReparo }> = [];
 
   for (const [paiId, filhosDoPai] of porPai) {
     if (!hasBudget(deadlineAt, RESERVA_POR_PAI_MS)) { restantes = true; break; }
 
     // ⚠️ O join é pelo PAI: `documentos_regulatorios.deliberacao_id` aponta para a ata-MÃE, nunca
     // para o item. Buscar pelo id do filho devolveria "não há o que reparar" em 100% dos casos.
+    //
+    // Fase 20 — `texto_extraido` entra no SELECT. A versão anterior lia SÓ `ata_items`, que é o
+    // mesmo array que gerou os filhos: filho sem resultado ⇒ array sem resultado ⇒ ZERO reparos,
+    // devolvendo `reparadas: 0, sem_fonte: 0`. A coluna do texto é o que permite re-splitar com o
+    // splitter ATUAL — e a blindagem do requeue (Fase 19) é o que garante que ela ainda existe.
     const { data: doc } = await db
       .from("documentos_regulatorios")
-      .select("id, ata_items")
+      .select("id, ata_items, texto_extraido")
       .eq("deliberacao_id", paiId)
       .maybeSingle();
-    const itens = (doc?.ata_items ?? []) as ItemDaAta[];
-    if (!Array.isArray(itens) || itens.length === 0) {
+    const itensDoArray = (Array.isArray(doc?.ata_items) ? doc?.ata_items : []) as ItemDaAta[];
+    const texto = typeof doc?.texto_extraido === "string" ? doc.texto_extraido : "";
+    if (itensDoArray.length === 0 && !texto) {
       semFonte += filhosDoPai.length;
       continue;
     }
 
-    const comPatch = filhosDoPai
-      .map((f) => ({ filho: f, patch: casarResultadoDoItem(f, itens) }))
-      .filter((x) => x.patch !== null) as Array<{ filho: any; patch: NonNullable<ReturnType<typeof casarResultadoDoItem>> }>;
+    // Re-split UMA vez por pai (2,62 ms para 8 atas — o custo é ler a coluna, não splitar), e só
+    // quando há texto. O resultado serve a todos os filhos deste pai.
+    const itensDoResplit: ItemDaAta[] = texto
+      ? (splitAtaItemsWithStats(texto).items as unknown as ItemDaAta[])
+      : [];
 
-    for (const { filho, patch } of comPatch) {
+    const comPatch: Array<{ filho: any; patch: PatchDeReparo; degrau: DegrauDeReparo }> = [];
+    for (const f of filhosDoPai) {
+      const r = repararItem(f, { itensDoArray, itensDoResplit });
+      if (!r) {
+        // Distinguir "não casou" de "nada a fazer" é o que impede o zero silencioso de voltar
+        // com outra cara: se o `item_numero` da safra velha não existe no splitter atual, é AQUI
+        // que aparece — e é o único risco que sobrou depois deste commit.
+        if (!f.resultado && !(f.numero_deliberacao ?? "").startsWith("PAUTA-")) semCasamento++;
+        continue;
+      }
+      comPatch.push({ filho: f, patch: r.patch, degrau: r.degrau });
+      porDegrau[r.degrau]++;
       if (amostra.length < 20) {
-        amostra.push({ id: filho.id, numero: filho.numero_deliberacao, para: patch.resultado });
+        amostra.push({ id: f.id, numero: f.numero_deliberacao, para: r.patch.resultado, degrau: r.degrau });
       }
     }
 
@@ -113,6 +147,11 @@ export async function POST(req: NextRequest) {
     dry_run: dryRun,
     candidatos: (filhos ?? []).length,
     reparadas,
+    reparadas_por_array: porDegrau.array,
+    reparadas_por_ligadura: porDegrau.ligadura,
+    reparadas_por_resplit: porDegrau.resplit,
+    /** Filho pendente que nenhum degrau alcançou — o veredito do risco de numeração. */
+    sem_casamento: semCasamento,
     falhas,
     sem_fonte: semFonte,
     restantes,
