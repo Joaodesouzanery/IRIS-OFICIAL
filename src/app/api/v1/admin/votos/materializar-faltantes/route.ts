@@ -18,6 +18,7 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { findBestMatch } from "@/lib/server/name-matcher";
+import { conferirRoster } from "@/lib/server/roster-conferivel";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import { RE_CONTESTADO } from "@/lib/server/consistency-checks";
 import {
@@ -113,9 +114,36 @@ export async function POST(req: NextRequest) {
     return lista;
   }
 
+  /**
+   * Quantos `diretor_candidatos` PENDENTES a agência tem — o sinal da camada 3 do guard de
+   * roster. Candidato pendente é um nome que os documentos conhecem e o cadastro não; com ele em
+   * aberto, o roster daquela agência é sabidamente incompleto, mesmo que a ata não nomeie
+   * ninguém. Cacheado por agência: são poucas, e a resposta não muda dentro da rodada.
+   */
+  const candidatosCache = new Map<string, number>();
+  async function candidatosPendentesDa(agenciaId: string | null): Promise<number> {
+    if (!agenciaId) return 0;
+    const hit = candidatosCache.get(agenciaId);
+    if (hit !== undefined) return hit;
+    const { count, error } = await db
+      .from("diretor_candidatos")
+      .select("id", { count: "exact", head: true })
+      .eq("agencia_id", agenciaId)
+      // A coluna e `review_status` (005:151), com CHECK em pendente/aprovado/rejeitado/conflito.
+      // `conflito` conta junto: cadastro em disputa tambem e cadastro nao-conferivel.
+      .in("review_status", ["pendente", "conflito"]);
+    // Sem o dado, o lado seguro é 0: bloquear tudo por causa de uma consulta que falhou seria
+    // trocar um erro por outro. O veredito `roster_nao_conferivel` continua registrando a dúvida.
+    const n = error ? 0 : (count ?? 0);
+    candidatosCache.set(agenciaId, n);
+    return n;
+  }
+
   let materializaveis = 0;
   let votosCriados = 0;
   let semEvidencia = 0;
+  let rosterNaoConferivel = 0;
+  const detalheRoster: Array<{ deliberacao_id: string; motivo: string; nao_reconhecidos: string[] }> = [];
   let restantes = false;
   const detalhe: Array<{ deliberacao_id: string; votos: number; origem: string }> = [];
 
@@ -152,6 +180,34 @@ export async function POST(req: NextRequest) {
     const activeDiretoresList = presentesRoster.length > 0
       ? presentesRoster
       : await getActiveDiretoresForVote(db, d.agencia_id, d.data_reuniao, diretoresList);
+
+    // ═══ Fase 20 — NÃO ATRIBUIR VOTO A QUEM NÃO VOTOU ══════════════════════
+    // Medido: os diretores da ANM Roger Romão Cabral e Tasso Mendonça Júnior aparecem nos
+    // documentos e NÃO têm mandato verificado. Na 79ª ROP o preâmbulo nomeia os dois, e o roster
+    // de mandato devolve Caio Mário no lugar deles. Inferir ali não é "cobertura parcial": é
+    // gravar voto no nome ERRADO — e um voto errado se propaga por todas as métricas parecendo
+    // legítimo, enquanto um voto ausente pelo menos se vê.
+    //
+    // Três camadas, porque comparar só quando a ata nomeia deixaria o mesmo erro passar em
+    // silêncio nas atas de outro formato: presença → assinatura → cadastro (candidatos pendentes,
+    // um sinal do CORPUS que funciona mesmo com a ata muda).
+    const vereditoRoster = conferirRoster({
+      roster: activeDiretoresList,
+      nomesPresentes: presentes,
+      signatarios: arr(raw.signatarios),
+      candidatosPendentes: await candidatosPendentesDa(d.agencia_id),
+    });
+    if (!vereditoRoster.confiavel) {
+      rosterNaoConferivel++;
+      if (detalheRoster.length < 20) {
+        detalheRoster.push({
+          deliberacao_id: d.id,
+          motivo: vereditoRoster.motivo,
+          nao_reconhecidos: vereditoRoster.naoReconhecidos,
+        });
+      }
+      continue;
+    }
 
     // Fase 14 — o texto persistido para medir contestação: fundamento + dispositivo + raw. É
     // este ramo que fecha o estoque (136/160 da ANTT sem voto) SEM re-ingerir nada — inferência
@@ -215,6 +271,11 @@ export async function POST(req: NextRequest) {
     materializaveis,
     votos: votosCriados,
     sem_evidencia: semEvidencia,
+    // Fase 20 — itens que NÃO viraram voto porque o roster não pôde ser conferido contra o
+    // documento. Não é falha: é a recusa de gravar voto no nome errado. O detalhe diz QUEM o
+    // cadastro não reconheceu, que é o que o operador precisa para consertar.
+    roster_nao_conferivel: rosterNaoConferivel,
+    detalhe_roster: detalheRoster,
     restantes,
     detalhe,
     ...(dryRun ? { aviso: "Simulação — repita com dry_run:false para gravar." } : {}),
