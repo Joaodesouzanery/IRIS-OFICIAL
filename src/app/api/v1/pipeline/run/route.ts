@@ -369,6 +369,11 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // saldo — quando tinha alvo, consumia a rodada inteira e todos os passos seguintes falhavam o
   // gate. Agora para graciosamente e reporta o que ficou.
   if (cabe("reclassificacao")) {
+    // Fase 20 — este passo roda INLINE, não por `call()`, e era `call()` quem registrava a
+    // tentativa. Os dois passos inline (este e `reprocessarFalhados`) ficavam eternamente
+    // "não tentados": `passosNaoTentadosNaRun` nunca chegava a zero e `deveContinuar` pedia
+    // rodada extra em TODA execução, inclusive na vazia. Era o piso de 15 rodadas.
+    tentadosNaRodada.add("reclassificacao");
     try {
       const { data: presos } = await db
         .from("documentos_regulatorios")
@@ -581,6 +586,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // o moinho. `failed` não é decisão — nada na rodada o produz de propósito. Acoplá-los faria o
   // reprocesso de `failed` ser pulado em toda rodada em que a aprovação arquivasse uma pauta.
   if (cabe("reprocessarFalhados")) {
+    tentadosNaRodada.add("reprocessarFalhados");
     try {
       const { data: falhados } = await db
         .from("documentos_regulatorios")

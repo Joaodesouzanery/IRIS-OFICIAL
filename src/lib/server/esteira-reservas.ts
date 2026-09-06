@@ -160,14 +160,18 @@ export const TETO_FATIA: Record<PassoEsteira, number> = {
  * Drenar antes de ingerir; a cauda por último porque é ela que consolida.
  */
 export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
-  "autoConfirm", "confirmLote", "candidatos", "backfillVotos",
+  // Fase 20 — `reResultar` SOBE para antes de `backfillVotos`. Ele preenche o `resultado` dos
+  // itens de ata; `backfillVotos` exige `documento_pai_id && resultado` para materializar voto.
+  // Na ordem antiga (4º × 13º) o item reparado só virava voto na rodada SEGUINTE — uma rodada
+  // inteira de latência por item, com a fila da ANM em 232 itens.
+  "autoConfirm", "confirmLote", "candidatos", "reResultar", "backfillVotos",
   "coleta", "reclassificacao", "enqueue",
   // O reaper vem ANTES da extração de propósito: o documento que ele solta volta para a fila
   // `pending` e ainda pode ser extraído na MESMA rodada.
   // `redatar` vem depois do dedup (datas certas antes de consolidar reuniões/derivadas) e fica
   // FORA da cauda de propósito: a cauda é o mínimo vital (32s) e um passo de hygiene não pode
   // encarecê-la — ele gira com a cabeça, como dedup e recuperação.
-  "reaper", "extracao", "dedup", "redatar", "reResultar", "recuperacao", "reprocessarFalhados", "derivada",
+  "reaper", "extracao", "dedup", "redatar", "recuperacao", "reprocessarFalhados", "derivada",
 ] as const;
 
 /**
@@ -178,6 +182,39 @@ export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
  * divergência. Sem eles a rodada gasta tempo e não muda nada que alguém veja.
  */
 export const PASSOS_CAUDA: readonly PassoEsteira[] = ["reaper", "extracao", "derivada"] as const;
+
+/**
+ * O ANEL do rodízio: quem ganha o SEGUNDO lugar na rodada de drenagem.
+ *
+ * ═══ Medido no planejador REAL (66s = 70s − folga), 24 rodadas, drenagem permanente ═══
+ *
+ *              antes → depois        antes → depois
+ *   confirmLote    2 → 5     coleta      2 → 5
+ *   enqueue        4 → 6     autoConfirm 4 → 4 (sem o anel ia a ZERO)
+ *   reResultar     6 → 7     backfill    6 → 5
+ *
+ * Os quatro primeiros são CAROS (18-25s): depois que a extração (23s) escolhe, os passos baratos
+ * enchem o resto e eles nunca cabem. `reResultar` e `backfillVotos` são baratos e entraram por
+ * outro motivo — sem eles no anel viravam dano colateral (6 → 3 cada), e são exatamente os dois
+ * que transformam item de ata em VOTO.
+ *
+ * ═══ Duas decisões que a MEDIÇÃO impôs, não o desenho ═══
+ *
+ * 1. **`null` é membro do anel.** Uma em cada sete rodadas não semeia segundo lugar — é o que
+ *    devolve espaço à cauda barata. Sem essa entrada, `recuperacao` ia a 0/24.
+ *
+ * 2. **O comprimento é COPRIMO de 12** (o tamanho da cabeça, que é o módulo do giro). Com anel de
+ *    3 ou 4 os dois módulos compartilham divisor: certas posições do giro caíam SEMPRE na rodada
+ *    de um privilegiado caro e nunca sobrava espaço para elas. Foi assim que o anel de 3 zerou
+ *    `autoConfirm` e o de 4 zerou `recuperacao` — aliasing, não falta de orçamento. Com 7, o par
+ *    (posição do giro × privilegiado) percorre as 84 combinações antes de repetir.
+ *
+ * ⚠️ Mudar o tamanho da cabeça (ORDEM_DOS_PASSOS menos a cauda) ou deste anel exige refazer a
+ * medição: o teste tabular da etapa119 falha se qualquer passo voltar a zerar.
+ */
+const ANEL_DE_PRIVILEGIO: readonly (PassoEsteira | null)[] = [
+  "confirmLote", "coleta", "enqueue", "autoConfirm", "reResultar", "backfillVotos", null,
+] as const;
 
 /**
  * PLANEJAR a rodada: quais passos ela vai TENTAR, e quanto cada um pode gastar.
@@ -230,7 +267,25 @@ export function planejarRodada(
     ? [...PASSOS_CAUDA, ...girada]
     : [...girada, ...PASSOS_CAUDA];
   if (opcoes?.drenar) {
-    ofertados = ["extracao", ...ofertados.filter((p) => p !== "extracao")];
+    // Fase 20 — o RODÍZIO DE PRIVILÉGIO, por cima da drenagem e não no lugar dela.
+    //
+    // Medido no planejador real (66s, 24 rodadas, drenagem permanente): `extracao` semeada entrava
+    // em 24/24, mas quem MATERIALIZA ficava de fora — `confirmLote` 2/24 e `enqueue` 4/24. Não é
+    // inanição por gate (Fase 7) nem fatia sem teto (Fase 10): a extração (23s) escolhe primeiro e
+    // os passos BARATOS enchem o resto, então os dois passos CAROS da ingestão quase nunca cabem.
+    // É a explicação mecânica de "12 PDFs extraídos · 26 materializados".
+    //
+    // Semear vários JUNTOS com a extração é o que a salvaguarda da etapa94 já proíbe: 23+18+25
+    // não deixa nada para a coleta. Por isso entra UM por rodada, em rodízio — a extração mantém
+    // o privilégio em toda rodada, e o segundo lugar circula pelo anel.
+    const n = ANEL_DE_PRIVILEGIO.length;
+    // `privilegiado` pode ser `null` — a rodada sem segundo lugar. Ele NÃO pode entrar em
+    // `ofertados`: `custoDoPasso(null)` é NaN, e `soma + NaN > orcamento` é FALSO, então todo
+    // passo seguinte "caberia" e a proteção nasceria errada. Filtrar não é higiene, é a diferença
+    // entre planejar e não planejar.
+    const privilegiado = ANEL_DE_PRIVILEGIO[((rodada % n) + n) % n];
+    const semeados: PassoEsteira[] = privilegiado ? ["extracao", privilegiado] : ["extracao"];
+    ofertados = [...semeados, ...ofertados.filter((p) => !semeados.includes(p))];
   }
 
   const escolhidos = new Set<PassoEsteira>();

@@ -85,7 +85,27 @@ export interface AnttDiscoveryResult {
 
 // Reserva por unidade de trabalho: 1 fetch ANTT no pior caso ≈ throttle 0,8s +
 // timeout 20s + persistência — abaixo disso não se inicia unidade nova.
-const ANTT_UNIT_RESERVE_MS = 25_000;
+/**
+ * Reserva para UMA unidade CARA: baixar um documento (FETCH_TIMEOUT_MS de 20s + gravação).
+ * ⚠️ Exportada porque a etapa118 compara as duas reservas — é o par que importa, não o número.
+ */
+export const ANTT_UNIT_RESERVE_MS = 25_000;
+
+/**
+ * Reserva para uma unidade BARATA: buscar uma página HTML (listagem ou reunião).
+ *
+ * ═══ Fase 20 — por que existe ═══
+ * Os quatro laços do coletor exigiam os mesmos 25s, inclusive para baixar uma listagem de 227 KB
+ * que custa 1-3s. A fatia real do passo `coleta` é 28s (TETO_FATIA.coleta + MARGEM_PARTIDA_MS), e
+ * um item da ANTT só nasce depois de DUAS unidades — a listagem E a página da reunião. Com 25s
+ * cabia UMA: a listagem consumia a fatia e o laço das reuniões quebrava na primeira iteração.
+ * Produção mediu o desfecho: `itens_encontrados: 0` com `status: ok`, rodada após rodada, na
+ * ÚNICA agência que nomina voto individual.
+ *
+ * 6s dá folga de 2× sobre o custo medido, sem ser generoso a ponto de um fetch travado comer a
+ * rodada. O download continua com os 25s — a separação é entre HTML e PDF, não um afrouxamento.
+ */
+export const ANTT_LISTAGEM_RESERVE_MS = 6_000;
 
 interface DownloadedPdf {
   buffer: Buffer;
@@ -414,7 +434,7 @@ export async function discoverAntt2026Meetings(
   let meetingPagesFetched = 0;
 
   while (listingQueue.length > 0 && visited.size < maxPages && meetingLinks.size + skippedKnown < maxMeetings) {
-    if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
+    if (!hasBudget(deadlineAt, ANTT_LISTAGEM_RESERVE_MS)) {
       truncated = true;
       break;
     }
@@ -472,7 +492,7 @@ export async function discoverAntt2026Meetings(
       skippedKnown++;
       continue;
     }
-    if (!hasBudget(deadlineAt, ANTT_UNIT_RESERVE_MS)) {
+    if (!hasBudget(deadlineAt, ANTT_LISTAGEM_RESERVE_MS)) {
       truncated = true;
       break;
     }
