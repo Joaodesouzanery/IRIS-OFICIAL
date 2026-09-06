@@ -165,10 +165,32 @@ export async function POST(req: NextRequest) {
     return janelas;
   }
 
+  /**
+   * O roster ativo, memoizado por (agência, data). `getActiveDiretoresForVote` é um round-trip com
+   * join em `mandatos`+`diretores`, e uma reunião rende DEZENAS de itens que compartilham agência
+   * e data: sem cache, a mesma consulta ia ao banco uma vez por item. Numa fatia de 50s isso é
+   * orçamento gasto para receber a resposta que já tínhamos.
+   */
+  const rosterCache = new Map<string, DiretorVoteRecord[]>();
+  async function rosterAtivoEm(
+    agenciaId: string,
+    dataReuniao: string | null,
+    fallback: DiretorVoteRecord[],
+  ): Promise<DiretorVoteRecord[]> {
+    const chave = `${agenciaId}|${dataReuniao ?? ""}`;
+    const emCache = rosterCache.get(chave);
+    if (emCache) return emCache;
+    const roster = await getActiveDiretoresForVote(db, agenciaId, dataReuniao, fallback);
+    rosterCache.set(chave, roster);
+    return roster;
+  }
+
   let materializaveis = 0;
   let votosCriados = 0;
   let semEvidencia = 0;
   let rosterNaoConferivel = 0;
+  let upsertFalhas = 0;
+  const upsertErros: string[] = [];
   /** Fase 20 — itens ANTERIORES ao primeiro mandato conhecido. Não é falha: é falta de registro. */
   let foraDaJanela = 0;
   const foraDaJanelaPorAgencia: Record<string, number> = {};
@@ -234,7 +256,7 @@ export async function POST(req: NextRequest) {
       .filter((x): x is DiretorVoteRecord => Boolean(x));
     const activeDiretoresList = presentesRoster.length > 0
       ? presentesRoster
-      : await getActiveDiretoresForVote(db, d.agencia_id, d.data_reuniao, diretoresList);
+      : await rosterAtivoEm(d.agencia_id, d.data_reuniao, diretoresList);
 
     // ═══ Fase 20 — NÃO ATRIBUIR VOTO A QUEM NÃO VOTOU ══════════════════════
     // Medido: os diretores da ANM Roger Romão Cabral e Tasso Mendonça Júnior aparecem nos
@@ -353,8 +375,16 @@ export async function POST(req: NextRequest) {
       // materializar podia REBAIXAR para inferido um voto lido do documento; e sem a sonda de
       // capacidade, gravar `proveniencia` quebraria enquanto a migration não fosse aplicada.
       const { error: upErr } = await upsertVotosProtegido(db, rows);
-      if (upErr) console.error("[materializar-faltantes] upsert falhou:", upErr.message);
-      else votosCriados += rows.length;
+      if (upErr) {
+        // `supabase-js` devolve {error} em vez de lançar. O contador já não mentia para cima —
+        // mas a falha só existia no console, invisível para quem lê a resposta da rodada. Uma
+        // escrita que falha em silêncio é indistinguível de "não havia nada a gravar".
+        upsertFalhas++;
+        if (upsertErros.length < 10) upsertErros.push(upErr.message);
+        console.error("[materializar-faltantes] upsert falhou:", upErr.message);
+      } else {
+        votosCriados += rows.length;
+      }
     } else {
       votosCriados += rows.length;
     }
@@ -377,6 +407,9 @@ export async function POST(req: NextRequest) {
      * não é "sem voto", é "fora do período em que sabemos quem votava". Separá-los de
      * `roster_nao_conferivel` é o que permite ingerir o acervo pré-2022 sem estragar a métrica.
      */
+    /** Escritas que FALHARAM. Zero aqui e `votos > 0` é a única leitura honesta de sucesso. */
+    upsert_falhas: upsertFalhas,
+    ...(upsertErros.length > 0 ? { upsert_erros: upsertErros } : {}),
     fora_da_janela_de_mandatos: foraDaJanela,
     fora_da_janela_por_agencia: foraDaJanelaPorAgencia,
     detalhe_roster: detalheRoster,

@@ -93,3 +93,44 @@ describe("etapa122 · o materializador separa os dois baldes", () => {
     expect(ROTA).toMatch(/roster_nao_conferivel: rosterNaoConferivel,/);
   });
 });
+
+/**
+ * ═══ Commit 3b (parcial) — o que dá para aplicar sem mexer em número público ═══
+ *
+ * A mudança de REGRA (ler `resumo_pleito` na inferência) fica esperando a leitura da medição do
+ * commit 3a. Estas duas não mudam número nenhum: uma economiza round-trip, a outra faz uma falha
+ * de escrita aparecer.
+ */
+describe("etapa122 · o materializador não repete consulta nem esconde falha de escrita", () => {
+  const ROTA = readFileSync(
+    join(__dirname, "../../../../src/app/api/v1/admin/votos/materializar-faltantes/route.ts"),
+    "utf-8",
+  );
+
+  it("o roster ativo é memoizado por (agência, data) — não por item", () => {
+    // Uma reunião rende dezenas de itens com a MESMA agência e data; sem cache, o join em
+    // `mandatos`+`diretores` ia ao banco uma vez por item, gastando fatia para receber a
+    // resposta que já tínhamos.
+    expect(ROTA).toMatch(/const chave = `\$\{agenciaId\}\|\$\{dataReuniao \?\? ""\}`/);
+    expect(ROTA).toMatch(/rosterCache\.set\(chave, roster\)/);
+    // E o laço não pode mais chamar a função crua, senão o cache fica decorativo.
+    const laco = ROTA.slice(ROTA.indexOf("for (const d of semVoto"));
+    expect(laco).not.toMatch(/await getActiveDiretoresForVote\(/);
+  });
+
+  it("uma escrita que falha aparece no payload, não só no console", () => {
+    // `supabase-js` devolve {error} em vez de lançar: falha só no console é indistinguível de
+    // "não havia nada a gravar" para quem lê a resposta da rodada.
+    expect(ROTA).toMatch(/upsertFalhas\+\+/);
+    expect(ROTA).toMatch(/upsert_falhas: upsertFalhas,/);
+  });
+
+  it("…e o contador de votos continua sem mentir para cima", () => {
+    // `votosCriados` só cresce no ramo SEM erro — a regra que a skill `falha-silenciosa` cobra.
+    const inicio = ROTA.indexOf("if (upErr) {");
+    const ramoDeErro = ROTA.slice(inicio, ROTA.indexOf("} else {", inicio));
+    expect(inicio).toBeGreaterThan(0);
+    expect(ramoDeErro).toMatch(/upsertFalhas\+\+/);
+    expect(ramoDeErro).not.toMatch(/votosCriados/);
+  });
+});

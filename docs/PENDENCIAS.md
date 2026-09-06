@@ -3,6 +3,66 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 20 (06/set/2026) — o reparo que REPARA, o voto no nome certo, a ANTT de volta
+
+**Sequência:** deploy verde → **"Rodar tudo"** (pelo menos 2 runs, para o rodízio girar) →
+`POST /api/v1/admin/deliberacoes/re-resultar?dry_run=0` → colar `docs/qa-fase20.sql`.
+**Nenhuma migration nova nesta fase.**
+
+**⚠️ A LIÇÃO DA FASE — o pior formato de zero.** A rota `re-resultar` que subi na Fase 19 reparava
+ZERO e devolvia `reparadas: 0, sem_fonte: 0`: *parecia saudável*. Ela lia o mesmo array `ata_items`
+que gerou os filhos (filho NULL ⇒ array NULL ⇒ patch nulo), e documento `confirmed` nunca é
+re-splitado. Um zero com contadores de erro também em zero é indistinguível de "não havia nada a
+fazer" — por isso a rota agora reporta **por degrau** (`array`/`ligadura`/`resplit`) e isola
+`sem_casamento`, que é o único risco restante.
+
+**O que a fase entregou:**
+1. **Não atribuir voto a quem não votou** (etapa117). Roger Romão Cabral e Tasso Mendonça Júnior
+   aparecem nas atas da ANM e não têm mandato verificado; na 79ª ROP o roster de mandato devolvia
+   Caio Mário no lugar deles. `conferirRoster` bloqueia a inferência em **três camadas** —
+   presença → assinatura → candidatos pendentes (sinal do CORPUS, funciona com a ata muda). O
+   resíduo irredutível fica **declarado** (`roster_nao_conferivel`), não escondido.
+2. **O reparo em três degraus** (etapa120): array armazenado → ligadura (`repairLigatures` sobre
+   `resumo_pleito`; o dispositivo real chega `"Processo re%rado"`) → re-split do texto do pai
+   (8 atas reais = 315 itens, `semResultado = 0`, em **2,62 ms**).
+3. **A ANTT voltou a coletar** (etapa118): `ANTT_UNIT_RESERVE_MS` de 25s era exigido até para
+   baixar uma **listagem HTML** de 1-3s. A fatia da coleta é 28s e um item exige DUAS unidades
+   (listagem + página da reunião): cabia UMA. Agora `ANTT_LISTAGEM_RESERVE_MS = 6s` nos laços de
+   HTML; os que baixam PDF mantêm 25s.
+4. **Rodízio de privilégio** (etapa119). Medido em 24 rodadas com o orçamento real de 66s:
+   `confirmLote` entrava em **2/24**, `enqueue` em 4/24, `coleta` em 2/24 — a extração era semeada,
+   escolhia primeiro e os passos baratos enchiam o resto. Depois: 5, 6 e 5, com a extração ainda
+   em 24/24. Duas descobertas de medição: o `null` no anel é o que impede `recuperacao` de zerar,
+   e **o comprimento do anel precisa ser coprimo de 12** (anel de 3 zerava `autoConfirm`, o de 4
+   zerava `recuperacao` — aliasing entre os dois módulos, não falta de orçamento).
+5. Os dois passos **inline** (`reclassificacao`, `reprocessarFalhados`) passaram a se registrar em
+   `tentadosNaRodada` — sem isso `deveContinuar` pedia rodada extra em TODA execução, inclusive
+   vazia. Era o piso de 15 rodadas.
+6. `reResultar` subiu para **antes** de `backfillVotos` (era 4º × 13º): o item reparado virava voto
+   só na rodada seguinte.
+7. **Fora da janela de mandatos ≠ cadastro incompleto** (etapa122). O mandato ANM verificado mais
+   antigo começa em **05/12/2022**; sem a separação, o acervo pré-2022 cairia em
+   `roster_nao_conferivel` e ingerir história PIORARIA a métrica.
+
+**⏳ AGUARDA VOCÊ — a mudança de número público (commit 3b).** Duas mudanças estão **medidas e
+desligadas**, porque as duas derrubam a contagem de votos exibida. A resposta de
+`materializar-faltantes` (dry-run) traz `delta_dispositivo`:
+- **`votos_a_menos` / `itens_que_mudariam`** — o efeito de ler `resumo_pleito` ao detectar
+  contestação. Hoje item decidido "por maioria" recebe "Favorável" fabricado para o colegiado
+  inteiro, porque o dispositivo mora numa coluna que a regra não lê. A `amostra` mostra o trecho
+  que causou cada inversão, para conferir a detecção antes de ela valer.
+- **`por_regex_divergente`** — há **duas** implementações do predicado de contestação e elas
+  divergem: só a do `nlp-extractor` reconhece `divergência` e `voto vencedor`; só a do
+  `consistency-checks` reconhece `vencido` solto. **É a do `consistency-checks` que decide se o
+  colegiado inteiro ganha voto inferido** — a mais estreita nos termos de divergência está no
+  lugar mais perigoso. `RE_CONTESTADO_AMPLO` (a união) já existe, como MEDIÇÃO.
+
+Olhe os dois números e diga se aplico. Quando aplicar, a queda entra **com data** em
+`docs/METODOLOGIA-METRICAS.md`, como foi feito com os "votos efetivos".
+
+**Segue fora de escopo por decisão sua:** o cron (a rodada 0 não coleta, não enfileira e não
+aprova — é o primeiro item quando religar) e os 45 votos escaneados da ANTT.
+
 ## 🔴 FASE 19 (06/set/2026) — o reparo que destrava voto, e a pauta que virava ata
 
 **Sequência:** deploy verde → aplicar `20260905120000_alerta_de_fonte_sem_item.sql` e
