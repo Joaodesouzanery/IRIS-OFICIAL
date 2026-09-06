@@ -20,7 +20,7 @@ import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import { conferirRoster } from "@/lib/server/roster-conferivel";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
-import { RE_CONTESTADO } from "@/lib/server/consistency-checks";
+import { RE_CONTESTADO, RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
 import {
   buildVotoRows,
   getActiveDiretoresForVote,
@@ -73,7 +73,10 @@ export async function POST(req: NextRequest) {
 
   let query = db
     .from("deliberacoes")
-    .select("id, agencia_id, tipo_documento, documento_pai_id, resultado, data_reuniao, raw_extraction, fundamento_decisao, decisoes_todas")
+    // `resumo_pleito` entra no SELECT para MEDIR (Fase 20, commit 3a) — a regra vigente ainda
+    // NÃO o lê. É onde mora o dispositivo dos itens de ata, e ler o dispositivo muda um número
+    // exibido publicamente: a medição vem antes da mudança.
+    .select("id, agencia_id, tipo_documento, documento_pai_id, resultado, data_reuniao, raw_extraction, fundamento_decisao, decisoes_todas, resumo_pleito")
     .not("resultado", "is", null)
     .order("id", { ascending: true })
     .limit(4000);
@@ -146,6 +149,15 @@ export async function POST(req: NextRequest) {
   const detalheRoster: Array<{ deliberacao_id: string; motivo: string; nao_reconhecidos: string[] }> = [];
   let restantes = false;
   const detalhe: Array<{ deliberacao_id: string; votos: number; origem: string }> = [];
+  /** Commit 3a — o delta da regra que LÊ O DISPOSITIVO, por agência. Medição, não comportamento. */
+  const deltaPorAgencia: Record<string, { itens: number; votos: number }> = {};
+  const deltaDetalhe: Array<{ deliberacao_id: string; agencia: string; resultado: string | null; trecho: string }> = [];
+  /** Commit 3a — itens que o predicado AMPLO pegaria e o vigente deixa passar, por agência. */
+  const deltaRegex: Record<string, number> = {};
+  const siglaPorId = new Map(
+    ((agRows ?? []) as Array<{ id: string; sigla: string }>).map((a) => [a.id, String(a.sigla)]),
+  );
+  const siglaDe = (id: string | null) => siglaPorId.get(String(id)) ?? "?";
 
   for (const d of semVoto as any[]) {
     if (!hasBudget(deadlineAt, 8_000)) { restantes = true; break; }
@@ -218,6 +230,40 @@ export async function POST(req: NextRequest) {
       raw.assunto as string | undefined, raw.decisao as string | undefined,
     ].filter(Boolean).join(" ");
     const contestado = RE_CONTESTADO.test(textoDecisao);
+
+    // ═══ Fase 20, commit 3a — MEDIR a regra que ainda não vale ═════════════
+    // `resumo_pleito` é onde o dispositivo do item de ata é gravado (`ata-item-materializacao.ts`
+    // grava a decisão ali, e `decisao` é omissão DECLARADA). Como `textoDecisao` não o lê, um item
+    // decidido "por maioria" hoje passa por não-contestado e recebe "Favorável" fabricado para o
+    // colegiado inteiro. Ler o dispositivo corrige isso — e DERRUBA a contagem de votos exibida.
+    //
+    // Número público não muda sem medição visível antes. Esta rodada computa as DUAS regras e
+    // reporta o delta; o comportamento continua o da regra vigente.
+    const textoComPleito = [textoDecisao, (d as { resumo_pleito?: string | null }).resumo_pleito]
+      .filter(Boolean).join(" ");
+    const contestadoComPleito = RE_CONTESTADO.test(textoComPleito);
+
+    // A SEGUNDA medição, independente da primeira: o predicado vigente aqui não reconhece
+    // "divergência" nem "voto vencedor" — o do extrator reconhece. Quem decide se o colegiado
+    // inteiro ganha voto inferido é o daqui, o mais estreito. Medido antes de trocar.
+    if (!contestado && RE_CONTESTADO_AMPLO.test(textoComPleito)) {
+      const sigla = siglaDe(d.agencia_id);
+      deltaRegex[sigla] = (deltaRegex[sigla] ?? 0) + 1;
+    }
+
+    if (contestadoComPleito !== contestado) {
+      const sigla = siglaDe(d.agencia_id);
+      deltaPorAgencia[sigla] = deltaPorAgencia[sigla] ?? { itens: 0, votos: 0 };
+      deltaPorAgencia[sigla].itens++;
+      if (deltaDetalhe.length < 20) {
+        deltaDetalhe.push({
+          deliberacao_id: d.id,
+          agencia: sigla,
+          resultado: d.resultado,
+          trecho: String((d as { resumo_pleito?: string | null }).resumo_pleito ?? "").slice(0, 200),
+        });
+      }
+    }
     const inferFromMandate = isAnttAtaItem
       ? Boolean((unanime || !contestado) && d.resultado && activeDiretoresList.length > 0)
       : shouldInferVotesFromMandate({
@@ -249,6 +295,13 @@ export async function POST(req: NextRequest) {
 
     if (rows.length === 0) { semEvidencia++; continue; }
     materializaveis++;
+    // O delta em VOTOS: quantos destes deixariam de existir sob a regra que lê o dispositivo.
+    // Só conta onde a inferência é a origem — voto NOMINAL não depende da detecção de contestação.
+    if (contestadoComPleito && !contestado && inferFromMandate) {
+      const sigla = siglaDe(d.agencia_id);
+      deltaPorAgencia[sigla] = deltaPorAgencia[sigla] ?? { itens: 0, votos: 0 };
+      deltaPorAgencia[sigla].votos += rows.length;
+    }
     if (detalhe.length < 50) {
       detalhe.push({ deliberacao_id: d.id, votos: rows.length, origem: inferFromMandate ? "inferencia" : "nominal" });
     }
@@ -278,6 +331,25 @@ export async function POST(req: NextRequest) {
     detalhe_roster: detalheRoster,
     restantes,
     detalhe,
+    /**
+     * Commit 3a — o que MUDARIA se a regra lesse `resumo_pleito`, sem que nada tenha mudado.
+     * `itens` = deliberações em que a detecção de contestação inverteria; `votos` = quantos votos
+     * inferidos deixariam de ser gravados. `trecho` mostra o dispositivo que causou a inversão,
+     * para conferir se a detecção está certa antes de a regra passar a valer.
+     */
+    delta_dispositivo: {
+      por_agencia: deltaPorAgencia,
+      itens_que_mudariam: Object.values(deltaPorAgencia).reduce((a, b) => a + b.itens, 0),
+      votos_a_menos: Object.values(deltaPorAgencia).reduce((a, b) => a + b.votos, 0),
+      amostra: deltaDetalhe,
+      /**
+       * Medição INDEPENDENTE: itens que o predicado da união (`RE_CONTESTADO_AMPLO`) marcaria
+       * como contestados e o vigente deixa passar — "divergência" e "voto vencedor" são os termos
+       * que só a outra implementação conhece. Cada um destes é um item onde o colegiado inteiro
+       * pode estar recebendo voto inferido apesar de a decisão ter sido disputada.
+       */
+      por_regex_divergente: deltaRegex,
+    },
     ...(dryRun ? { aviso: "Simulação — repita com dry_run:false para gravar." } : {}),
   });
 }

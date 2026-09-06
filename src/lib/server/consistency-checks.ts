@@ -9,6 +9,23 @@
 export const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|\bvencid[oa]s?\b|prevaleceu|maioria\s+de\s+votos/i;
 
 /**
+ * A UNIÃO das duas implementações do predicado — medida, ainda não vigente (Fase 20, commit 3a).
+ *
+ * `RE_CONTESTADO` (acima) e `RE_CONTESTADO_NLP` (`nlp-extractor.ts`) divergiam em silêncio:
+ *  · só a do extrator reconhece `divergência` e `voto vencedor`;
+ *  · só esta reconhece `vencido` solto (sem a palavra "voto" antes).
+ *
+ * A assimetria importa numa direção específica: quem decide se o colegiado INTEIRO ganha voto
+ * inferido é esta, a mais estreita nos termos de divergência. Uma ata que diz "com divergência do
+ * diretor X" passa por não-contestada e todo mundo recebe "Favorável" fabricado.
+ *
+ * Trocar o predicado muda um número público, então entra primeiro como MEDIÇÃO: a rota
+ * `materializar-faltantes` reporta quantos itens e votos mudariam. A etapa121 garante que a união
+ * cobre as duas — se qualquer uma ganhar termo novo, o teste cai.
+ */
+export const RE_CONTESTADO_AMPLO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bvencid[oa]s?\b|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
+
+/**
  * "Unanimidade" DECLARADA + sinais de contestação SEM dissidente nomeado é contraditório: o pool
  * viraria "unânime favorável" falso. Retorna o aviso (→ revisão) ou null. NÃO purga — no ramo de
  * unanimidade a inferência de mandato desfaria o esvaziamento; o aviso é o mecanismo correto.
