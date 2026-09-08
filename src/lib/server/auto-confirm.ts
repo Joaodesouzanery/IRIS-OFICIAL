@@ -18,7 +18,13 @@ export const AUTO_CONFIRM_MIN_CONFIDENCE_ATA = 0.7;
 // compensa exigindo relator casado ≥0.85 + resultado + chave de dedup + zero warnings.
 export const AUTO_CONFIRM_MIN_CONFIDENCE_VOTO = 0.7;
 export const AUTO_CONFIRM_MIN_CHARS_PER_PAGE = 50; // abaixo disso = provável escaneado
-const FINAL_TIPOS = new Set(["deliberacao", "ata", "resolucao", "portaria"]);
+/**
+ * Tipos IMPORTÁVEIS pelo auto-confirm — NÃO é o predicado "final" (`isFinalDecisionRecord`).
+ * Inclui `ata` de propósito: a ata-MÃE (envelope) é importável, e são os FILHOS dela que o
+ * predicado final julga um a um. Fase 21 — chamava-se FINAL_TIPOS e a varredura a listou como
+ * "sétima variante de final"; o nome estava errado, a regra não.
+ */
+const TIPOS_IMPORTAVEIS = new Set(["deliberacao", "ata", "resolucao", "portaria"]);
 
 type Suggestion = { diretor_id?: string | null; needs_review?: boolean } & Record<string, unknown>;
 type AtaItem = { votos_sugeridos?: Suggestion[]; resultado?: string | null } & Record<string, unknown>;
@@ -56,16 +62,18 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
 
   // Voto individual ANTT (QA D2): auto-confirmável com gate DEDICADO conservador —
   // é o que fecha o fluxo zero-toque (antes, cada "Voto DXX" exigia clique manual).
-  const isVotoCapturavel = tipo === "voto_individual";
+  // Gate de IMPORTAÇÃO do voto individual (é o tipo, e só). O gate de CAPTURA — resultado +
+  // relator casado — mora no `upload/confirm` (`isAnttVotoCapturavel`) e roda depois deste.
+  const isVotoIndividualImportavel = tipo === "voto_individual";
 
   if (doc.status && doc.status !== "review_pending") return { ok: false, reason: `status=${doc.status}` };
-  if (!FINAL_TIPOS.has(tipo) && !isVotoCapturavel) return { ok: false, reason: `tipo não-final (${tipo || "?"})` };
+  if (!TIPOS_IMPORTAVEIS.has(tipo) && !isVotoIndividualImportavel) return { ok: false, reason: `tipo não-final (${tipo || "?"})` };
   // Ata com itens (e voto individual) é importável mesmo com a flag false (o confirm
   // materializa; só o que tem resultado conta como final nas métricas).
-  if (!isImportableAta && !isVotoCapturavel && (fields.import_counts_as_final === false || preview.import_counts_as_final === false)) {
+  if (!isImportableAta && !isVotoIndividualImportavel && (fields.import_counts_as_final === false || preview.import_counts_as_final === false)) {
     return { ok: false, reason: "não conta como final" };
   }
-  const minConfidence = isVotoCapturavel
+  const minConfidence = isVotoIndividualImportavel
     ? AUTO_CONFIRM_MIN_CONFIDENCE_VOTO
     : isImportableAta ? AUTO_CONFIRM_MIN_CONFIDENCE_ATA : AUTO_CONFIRM_MIN_CONFIDENCE;
   if (Number(doc.extraction_confidence ?? 0) < minConfidence) {
@@ -97,7 +105,7 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
     return { ok: false, reason: `bloqueado pela validação (${codigos.join(", ") || "achado bloqueante"})` };
   }
 
-  if (isVotoCapturavel) {
+  if (isVotoIndividualImportavel) {
     // Gate do voto: relator presente E casando ≥0.85 (verificado pela rota via
     // relator_match_ok) + resultado extraído + chave de dedup (processo ou data).
     if (!fields.relator) return { ok: false, reason: "voto sem relator identificado" };

@@ -6,6 +6,14 @@
  */
 
 // Sinais fortes de voto CONTESTADO (não "divergênci" solto, que casa "sem divergência").
+/**
+ * O predicado do EXTRATOR (`nlp-extractor`), que decide se o pool de nomes é esvaziado e se sai o
+ * aviso "divergência sem dissidente". Movido para cá na Fase 21 para viver ao lado do outro — os
+ * dois divergiam em silêncio por morarem em arquivos diferentes (etapa124 mediu: 12 itens).
+ * Byte-idêntico ao que estava em `nlp-extractor.ts`.
+ */
+export const RE_CONTESTADO_NLP = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
+
 export const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|\bvencid[oa]s?\b|prevaleceu|maioria\s+de\s+votos/i;
 
 /**

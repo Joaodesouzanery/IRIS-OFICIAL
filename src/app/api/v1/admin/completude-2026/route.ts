@@ -12,6 +12,8 @@
  * fontes por ano quando a tabela não tem data; usa data_reuniao onde existe.
  */
 
+import { isVotoNominal } from "@/lib/server/vote-inference";
+import { selectVotosComFallback } from "@/lib/server/votos-write";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -120,7 +122,8 @@ export async function GET(req: NextRequest) {
         .limit(40000),
       db.from("monitoramento_itens").select("agencia_id, status, data_reuniao").gte("data_reuniao", de).lte("data_reuniao", ate).limit(40000),
       db.from("documentos_regulatorios").select("agencia_id, status").limit(40000),
-      db.from("votos").select("deliberacao_id, diretor_id, is_nominal").limit(80000),
+      selectVotosComFallback<Array<{ deliberacao_id: string; diretor_id: string | null; is_nominal: boolean; proveniencia?: string | null }>>(
+        (c) => db.from("votos").select(c).limit(80000), "deliberacao_id, diretor_id, is_nominal, proveniencia", "deliberacao_id, diretor_id, is_nominal"),
       db.from("diretores").select("id, agencia_id").eq("review_status", "aprovado").limit(5000),
       db.from("mandatos").select("diretor_id").limit(20000),
       db.from("diretor_candidatos").select("agencia_id").eq("review_status", "pendente").limit(5000),
@@ -243,9 +246,9 @@ export async function GET(req: NextRequest) {
     const e = ag(d.agencia_id);
     if (!e) continue;
     e.votos.total += 1;
-    if (v.is_nominal) e.votos.nominais += 1; else e.votos.inferidos += 1;
+    if (isVotoNominal(v)) e.votos.nominais += 1; else e.votos.inferidos += 1;
     delibsComVoto.add(v.deliberacao_id);
-    if (v.is_nominal) delibsComNominal.add(v.deliberacao_id);
+    if (isVotoNominal(v)) delibsComNominal.add(v.deliberacao_id);
     if (d.agencia_id && v.diretor_id) {
       const set = delibDaAgenciaComVoto.get(d.agencia_id) ?? new Set<string>();
       set.add(v.diretor_id);

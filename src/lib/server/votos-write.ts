@@ -223,3 +223,25 @@ export function sanitizeVotosSugeridos(input: unknown): VotoSugerido[] {
   }
   return out;
 }
+
+
+/**
+ * SELECT de votos com `proveniencia`, degradando para o conjunto mínimo se a coluna não existir.
+ *
+ * O padrão vem de `diretores/[id]` (PGRST204/42703 = coluna ainda não migrada). Fase 21 — cinco
+ * leitores passaram a precisar de `proveniencia` para `isVotoNominal`; sem isto, cada um daria
+ * 500 num banco sem a migration 20260824. Qualquer erro cai no mínimo: perder a granularidade
+ * nova é melhor que perder a tela.
+ */
+export async function selectVotosComFallback<T>(
+  // `unknown` de propósito: o builder do supabase tipa um SELECT com string dinâmica como
+  // `GenericStringError[]`, e um parâmetro estreito recusaria o próprio builder.
+  consulta: (colunas: string) => PromiseLike<{ data: unknown; error: unknown }>,
+  completas: string,
+  minimas: string,
+): Promise<{ data: T | null; error: unknown; degradou: boolean }> {
+  const tentativa = await consulta(completas);
+  if (!tentativa.error) return { data: (tentativa.data as T | null) ?? null, error: null, degradou: false };
+  const minima = await consulta(minimas);
+  return { data: (minima.data as T | null) ?? null, error: minima.error, degradou: true };
+}

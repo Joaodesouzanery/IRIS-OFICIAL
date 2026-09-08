@@ -8,6 +8,7 @@
  * `?apply=1` grava as mudanças; sem ele, roda em DRY-RUN (só conta o que mudaria).
  */
 
+import { isVotoNominal } from "@/lib/server/vote-inference";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
@@ -43,7 +44,7 @@ export async function POST(req: NextRequest) {
     // unanimidade_detectada: MESMO sinal que o buildVotoRows usa. Sem ele, este recálculo
     // rederivava is_divergente só de (tipo_voto, resultado) e reintroduzia a divergência
     // FALSA no INDEFERE-por-unanimidade (o desfecho do pleito não é divisão do colegiado).
-    .select("id, resultado, unanimidade_detectada:raw_extraction->>unanimidade_detectada, votos(id, tipo_voto, is_divergente, is_nominal)")
+    .select("id, resultado, unanimidade_detectada:raw_extraction->>unanimidade_detectada, votos(id, tipo_voto, is_divergente, is_nominal, proveniencia)")
     .order("created_at", { ascending: false })
     .order("id", { ascending: false }) // desempate estável p/ paginação por offset
     .range(offset, offset + limit - 1);
@@ -63,9 +64,9 @@ export async function POST(req: NextRequest) {
   let parcial = false;
   for (const d of (delibs ?? []) as any[]) {
     if (!hasBudget(deadlineAt, RESERVA_POR_DELIBERACAO_MS)) { parcial = true; break; }
-    const votos = (d.votos ?? []) as Array<{ id: string; tipo_voto: string; is_divergente: boolean; is_nominal: boolean }>;
+    const votos = (d.votos ?? []) as Array<{ id: string; tipo_voto: string; is_divergente: boolean; is_nominal: boolean; proveniencia?: string | null }>;
     if (votos.length === 0) continue;
-    if (votos.every((v) => !v.is_nominal)) deliberacoesSoInferidas++;
+    if (votos.every((v) => !isVotoNominal(v))) deliberacoesSoInferidas++;
 
     // Etapa65 — `deriveUnanime`/`repartirPorDivergencia` são a FONTE ÚNICA desta regra; o PATCH
     // manual de `deliberacoes/[id]` usa o mesmo repartidor. Antes a regra vivia só aqui.

@@ -9,6 +9,7 @@
  * deliberações no IRIS (hoje, na prática, ANTT e ANM).
  */
 
+import { isVotoNominal } from "@/lib/votos-nominal";
 import { QUALIDADE_AGENCIAS } from "@/lib/server/qualidade-regulatoria";
 import { isTipoNaoFinal, TIPOS_NAO_FINAIS_PG } from "@/lib/server/regulatory-documents";
 
@@ -87,7 +88,7 @@ export async function collectDerivedEvidence(
       .not("deliberacoes.tipo_documento", "in", TIPOS_NAO_FINAIS_PG)
       .limit(20000);
     const totalVotos = (votos ?? []).length;
-    const nominais = (votos ?? []).filter((v: any) => v.is_nominal).length;
+    const nominais = (votos ?? []).filter((v: any) => isVotoNominal(v)).length;
 
     // Notícias regulatórias da agência no ano (atividade).
     const { count: noticias } = await db

@@ -1,5 +1,6 @@
 "use client";
 
+import { isVotoNominal } from "@/lib/votos-nominal";
 import { useState } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
@@ -22,7 +23,7 @@ type ReuniaoDetalhe = {
   itens: Array<{
     deliberacao_id: string; numero_deliberacao: string | null; interessado: string | null;
     microtema: string | null; resultado: string | null;
-    votos: Array<{ diretor_id: string; diretor_nome: string | null; tipo_voto: string; is_divergente: boolean; is_nominal: boolean }>;
+    votos: Array<{ diretor_id: string; diretor_nome: string | null; tipo_voto: string; is_divergente: boolean; is_nominal: boolean; proveniencia?: string | null }>;
   }>;
   diretores: Array<{ id: string; nome: string; favoravel: number; desfavoravel: number; divergente: number; nominais?: number; inferidos?: number }>;
 };
@@ -168,16 +169,16 @@ function ReuniaoCard({ r, open, onToggle }: { r: ReuniaoListItem; open: boolean;
                         <div className="flex flex-wrap gap-1.5 mt-2">
                           {it.votos.map((v, i) => (
                             <span key={`${v.diretor_id}-${i}`}
-                              title={v.is_nominal ? undefined : "Voto inferido por mandato — não consta nominalmente no documento"}
+                              title={isVotoNominal(v) ? undefined : "Voto inferido por mandato — não consta nominalmente no documento"}
                               className={cn(
                                 "text-[10px] px-1.5 py-0.5 rounded font-mono inline-flex items-center gap-1",
                                 v.tipo_voto === "Favoravel" && "bg-emerald-500/10 text-emerald-400",
                                 v.tipo_voto === "Desfavoravel" && "bg-red-500/10 text-red-400",
                                 v.is_divergente && "bg-amber-500/10 text-amber-400",
                                 !["Favoravel", "Desfavoravel"].includes(v.tipo_voto) && "bg-zinc-500/10 text-zinc-400",
-                                !v.is_nominal && "border border-dashed border-current/40 opacity-70",
+                                !isVotoNominal(v) && "border border-dashed border-current/40 opacity-70",
                               )}>
-                              <Gavel className="w-2.5 h-2.5" /> {v.diretor_nome ?? "—"}: {v.tipo_voto}{!v.is_nominal && <span className="ml-0.5">~inf</span>}
+                              <Gavel className="w-2.5 h-2.5" /> {v.diretor_nome ?? "—"}: {v.tipo_voto}{!isVotoNominal(v) && <span className="ml-0.5">~inf</span>}
                             </span>
                           ))}
                         </div>

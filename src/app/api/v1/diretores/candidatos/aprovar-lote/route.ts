@@ -13,7 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin, requireAdminOrCron, getAuthenticatedUser } from "@/lib/server/request-guards";
 import { aprovarCandidato } from "@/lib/server/candidato-approval";
-import { findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
+import { MATCH_REVIEW_THRESHOLD, findBestMatch, findBestMatchComMargem, isStrictPersonName } from "@/lib/server/name-matcher";
 import { COLEGIADO_SIGLAS, fonteNominaVotos } from "@/lib/server/colegiado-sources";
 import { getActiveDiretoresForVote } from "@/lib/server/vote-inference";
 import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
     incluir_novos?: boolean;
     ids?: string[];
   };
-  const minConfidence = Math.min(0.94, Math.max(0.6, Number(body.min_confidence ?? DEFAULT_MIN_CONFIDENCE)));
+  const minConfidence = Math.min(0.94, Math.max(MATCH_REVIEW_THRESHOLD, Number(body.min_confidence ?? DEFAULT_MIN_CONFIDENCE)));
   // Fase 10 — esta rota IGNORAVA o `budget_ms` que o orquestrador manda na URL. A esteira
   // encadeia ~12 sub-rotas na MESMA invocação repartindo um orçamento único; quem não lê a
   // própria fatia trabalha até acabar e a rodada estoura o relógio — foi o "passou de 90s
@@ -148,7 +148,7 @@ export async function POST(req: NextRequest) {
       .from("diretor_candidatos")
       .select("*")
       .eq("review_status", "pendente")
-      .gte("confidence", 0.6)
+      .gte("confidence", MATCH_REVIEW_THRESHOLD)
       .lt("confidence", minConfidence)
       .not("diretor_id", "is", null)
       .order("confidence", { ascending: false })
@@ -166,7 +166,7 @@ export async function POST(req: NextRequest) {
       const nomeCand = String(candidato.nome_detectado ?? "");
       const listaCompleta = await diretoresDe(candidato.agencia_id);
       const m = findBestMatchComMargem(nomeCand, listaCompleta);
-      if (m.diretorId && m.score >= 0.6 && m.margem >= 0.15) {
+      if (m.diretorId && m.score >= MATCH_REVIEW_THRESHOLD && m.margem >= 0.15) {
         try {
           const result = await aprovarCandidato(db, candidato, { reviewedBy, diretorId: m.diretorId });
           aprovados.push({ id: candidato.id, nome: candidato.nome_detectado, diretor_id: result.diretorId });
@@ -193,7 +193,7 @@ export async function POST(req: NextRequest) {
           const ativos = await getActiveDiretoresForVote(db, candidato.agencia_id, dataReuniao, []);
           if (ativos.length > 0) {
             const mF = findBestMatchComMargem(nomeCand, ativos);
-            if (mF.diretorId && mF.score >= 0.6 && mF.margem >= 0.15) {
+            if (mF.diretorId && mF.score >= MATCH_REVIEW_THRESHOLD && mF.margem >= 0.15) {
               try {
                 const result = await aprovarCandidato(db, candidato, { reviewedBy, diretorId: mF.diretorId });
                 aprovados.push({ id: candidato.id, nome: candidato.nome_detectado, diretor_id: result.diretorId });
@@ -211,7 +211,7 @@ export async function POST(req: NextRequest) {
       // Passo 3 · FALLBACK (exceção, não fluxo — a instrumentação abaixo mede se ele é raro
       // como a hipótese prevê): aprova o melhor score e CARIMBA `confianca_match` em cada voto
       // retroativo criado, para auditoria posterior. Sem UI própria até o número justificar.
-      if (m.diretorId && m.score >= 0.6) {
+      if (m.diretorId && m.score >= MATCH_REVIEW_THRESHOLD) {
         try {
           const result = await aprovarCandidato(db, candidato, {
             reviewedBy: `${reviewedBy ?? "auto"}:sem-margem`,
@@ -225,7 +225,7 @@ export async function POST(req: NextRequest) {
           pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "erro ao aprovar (sem-margem)" });
         }
       } else {
-        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: "score < 0.6 em qualquer conjunto — segue o fluxo de nome novo" });
+        pulados.push({ id: candidato.id, nome: candidato.nome_detectado, reason: `score < ${MATCH_REVIEW_THRESHOLD} em qualquer conjunto — segue o fluxo de nome novo` });
       }
     }
   }
@@ -288,7 +288,7 @@ export async function POST(req: NextRequest) {
     const match = candidato.agencia_id ? findBestMatch(nome, await diretoresDe(candidato.agencia_id)) : { diretorId: null, needsReview: false };
     if (match.diretorId && match.needsReview) {
       // Faixa 0.6–0.8: provável variante de grafia de alguém já cadastrado — criar duplicaria a pessoa.
-      pulados.push({ id: candidato.id, nome, reason: "similaridade 0.6–0.8 com diretor existente (provável variante de grafia) — decidir manualmente" });
+      pulados.push({ id: candidato.id, nome, reason: `similaridade ${MATCH_REVIEW_THRESHOLD}–0.8 com diretor existente (provável variante de grafia) — decidir manualmente` });
       continue;
     }
     try {

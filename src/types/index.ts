@@ -278,6 +278,8 @@ export interface MandatosStats {
   taxa_consenso: string;
   /** PAUTADO — não muda. */
   total_deliberacoes: number;
+  /** Fase 21 — pelo predicado canônico (`isFinalDecisionRecord`), ao lado do aproximado. */
+  total_finais_estrito?: number;
   /** Etapa60: itens COM VOTO — o denominador real de `taxa_consenso`. */
   total_com_voto?: number;
 }

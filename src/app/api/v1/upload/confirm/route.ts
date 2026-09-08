@@ -4,6 +4,7 @@
  * Escritas reais exigem admin; modo DEMO permanece somente leitura.
  */
 
+import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import crypto from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
@@ -628,14 +629,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         // ("Constituição:"/"Presentes:" — quem de fato estava na reunião), casados com
         // match ≥0.85 a diretores cadastrados; mandatos são o fallback. Presente sem
         // match confiável NÃO entra (segue o contrato: sem certeza → sem voto).
-        const presentesRoster = (d.nomes_presentes ?? [])
-          .map((nome) => {
-            const match = findBestMatch(nome, diretoresList);
-            return match.diretorId && !match.needsReview
-              ? diretoresList.find((dir) => dir.id === match.diretorId) ?? null
-              : null;
-          })
-          .filter((dir): dir is DiretorVoteRecord => Boolean(dir));
+        const presentesRoster = resolverPresentesRoster(d.nomes_presentes ?? [], diretoresList);
         // Agência não-colegiada: roster SEMPRE vazio → nenhum voto inferido/fabricado.
         const activeDiretoresList = !colegiadaIds.has(effectiveAgenciaId)
           ? []
@@ -906,16 +900,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               // (todos ganham "Favorável" is_nominal=false em unanimidade);
               // divergentes/abstenções/ausentes continuam nominais com precedência.
               const isAnttAtaItem = Boolean(d.documento_antt_tipo);
-              const rosterItem = isAnttAtaItem
-                ? itemVotingNames
-                    .map((nome) => {
-                      const m = findBestMatch(nome, diretoresList);
-                      return m.diretorId && !m.needsReview
-                        ? diretoresList.find((x) => x.id === m.diretorId) ?? null
-                        : null;
-                    })
-                    .filter((x): x is DiretorVoteRecord => Boolean(x))
-                : [];
+              const rosterItem = isAnttAtaItem ? resolverPresentesRoster(itemVotingNames, diretoresList) : [];
               const votoRows = item.votos_sugeridos?.length
                 ? buildVotoRowsFromSuggestions({
                   deliberacao_id: child.id as string,

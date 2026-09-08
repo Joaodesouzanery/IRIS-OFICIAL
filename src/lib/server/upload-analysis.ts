@@ -1,3 +1,4 @@
+import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
@@ -392,17 +393,10 @@ export async function analyzeUploadPdf(input: {
   // confirm/route.ts:453-466). Para a ANM — que não tem bloco "Constituição:" e às
   // vezes não tem mandato na data — é a ÚNICA fonte de roster para os votos_sugeridos;
   // sem isto o auto-confirm de ata reprovava "ata sem nenhum voto sugerido". QA Etapa 19.
-  const presentesRoster: DiretorVoteRecord[] = [];
-  if (diretoresList.length && Array.isArray(fields.nomes_presentes) && fields.nomes_presentes.length) {
-    const vistos = new Set<string>();
-    for (const nome of fields.nomes_presentes) {
-      const m = findBestMatch(String(nome), diretoresList);
-      if (m.diretorId && !m.needsReview && !vistos.has(m.diretorId)) {
-        const dir = diretoresList.find((d) => d.id === m.diretorId);
-        if (dir) { presentesRoster.push(dir); vistos.add(dir.id); }
-      }
-    }
-  }
+  const presentesRoster: DiretorVoteRecord[] = resolverPresentesRoster(
+    Array.isArray(fields.nomes_presentes) ? fields.nomes_presentes : [],
+    diretoresList,
+  );
   const activeDiretoresList = presentesRoster.length > 0 ? presentesRoster : mandateRoster;
   const mainInferFromMandate = shouldInferVotesFromMandate({
     resultado: fields.resultado,

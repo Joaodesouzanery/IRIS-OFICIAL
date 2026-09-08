@@ -4,6 +4,7 @@
 // Compara par a par (fuzzy do name-matcher) os aprovados de cada agência.
 // Reusada pelo endpoint de auditoria, pelo alerta do saude-dados e pelo card da UI.
 
+import { MATCH_THRESHOLD } from "@/lib/server/name-matcher";
 import { findBestMatch, tokenSortRatio, deriveNomeVariantes } from "@/lib/server/name-matcher";
 
 type Db = any;
@@ -51,7 +52,7 @@ export async function findDiretorDuplicatas(db: Db, opts: { agenciaId?: string |
         const a = lista[i];
         const b = lista[j];
         const score = melhorScore(a, b);
-        if (score < 0.85) continue;
+        if (score < MATCH_THRESHOLD) continue;
         const parKey = [a.id, b.id].sort().join("|");
         if (vistos.has(parKey)) continue;
         vistos.add(parKey);

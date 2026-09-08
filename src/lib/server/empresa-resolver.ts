@@ -4,6 +4,7 @@
  * Usado na ingestão (upload/confirm) e no backfill.
  */
 
+import { MATCH_THRESHOLD, MATCH_REVIEW_THRESHOLD } from "@/lib/server/name-matcher";
 import { canonicalizeEmpresa, findBestEmpresaMatch, type EmpresaRecord } from "@/lib/server/name-matcher";
 
 export type EmpresaCache = Map<string, EmpresaRecord[]>;
@@ -68,7 +69,7 @@ export async function resolveEmpresaId(
     nome_variantes: [interessado],
     setor: options.setor ?? null,
     fonte_dado: "automatico" as const,
-    needs_review: match.score >= 0.6 && match.score < 0.85,
+    needs_review: match.score >= MATCH_REVIEW_THRESHOLD && match.score < MATCH_THRESHOLD,
   };
 
   const { data: created, error } = await db.from("empresas").insert(novo).select("id").single();

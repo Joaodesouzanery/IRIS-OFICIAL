@@ -13,6 +13,7 @@
  * Idempotente: upsert por (deliberacao_id, diretor_id); só toca deliberações com 0 votos.
  */
 
+import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -247,14 +248,7 @@ export async function POST(req: NextRequest) {
     // Roster: presentes persistidos casados ≥0.85; fallback mandatos na data (mesma
     // hierarquia do confirm). Em item ANTT, os nomes_votacao SÃO os presentes.
     const presentes = isAnttAtaItem ? nomes : arr(raw.nomes_presentes);
-    const presentesRoster = presentes
-      .map((nome) => {
-        const m = findBestMatch(nome, diretoresList);
-        return m.diretorId && !m.needsReview
-          ? diretoresList.find((x) => x.id === m.diretorId) ?? null
-          : null;
-      })
-      .filter((x): x is DiretorVoteRecord => Boolean(x));
+    const presentesRoster = resolverPresentesRoster(presentes, diretoresList);
     const activeDiretoresList = presentesRoster.length > 0
       ? presentesRoster
       : await rosterAtivoEm(d.agencia_id, d.data_reuniao, diretoresList);

@@ -9,6 +9,7 @@
  *   - Misto: ambos em um mesmo documento
  */
 
+import { isUnanimidadeNegada } from "@/lib/server/unanimidade";
 import type { TipoDocumento } from "@/types";
 
 // ─── Detecção de tipo de documento ──────────────────────────────────────
@@ -355,9 +356,7 @@ function parseAtaItem(numero: string, rawText: string): AtaItem | null {
   let resultado: string | null = null;
   // Negação-aware (F5): "não/sem unanimidade" NÃO conta — senão o item indeferido-por-maioria
   // cairia no ramo de unanimidade e viraria "Aprovado por Unanimidade".
-  const unanimidade =
-    /unanimidade/i.test(rawText) &&
-    !/\bn[aã]o\s+(?!obstante\b)(?:\S+\s+){0,3}unanimidade|\bsem\s+unanimidade/i.test(rawText);
+  const unanimidade = /unanimidade/i.test(rawText) && !isUnanimidadeNegada(rawText);
 
   // Sobrestamento/retirada/pedido de vista valem sobre o item INTEIRO e têm PRECEDÊNCIA: mesmo que
   // o "Voto:" traga uma proposta positiva ("VOTO pela aprovação…"), a deliberação NÃO se concluiu

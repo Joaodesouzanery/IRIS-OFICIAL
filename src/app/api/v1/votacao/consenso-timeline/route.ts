@@ -3,6 +3,7 @@
  * Série mensal de consenso do colegiado: % de deliberações finais sem voto divergente.
  */
 
+import { isVotoNominal } from "@/lib/votos-nominal";
 import { NextRequest, NextResponse } from "next/server";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeConsensoTimeline } from "@/lib/server/analytics-engine";
@@ -56,7 +57,7 @@ export async function GET(req: NextRequest) {
       m.com_voto++;
       if (!consensual) m.divergentes++;
     }
-    if ((d.votos ?? []).some((v: any) => v.is_nominal)) m.com_voto_nominal++;
+    if ((d.votos ?? []).some((v: any) => isVotoNominal(v))) m.com_voto_nominal++;
     byMonth.set(period, m);
   }
 

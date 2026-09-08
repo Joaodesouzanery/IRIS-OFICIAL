@@ -18,10 +18,10 @@
  * completo. Roger e Tasso são, literalmente, `diretor_candidatos` pendentes.
  */
 
-import { findBestMatch } from "@/lib/server/name-matcher";
+import { findBestMatch, MATCH_THRESHOLD } from "@/lib/server/name-matcher";
 
 /** O mesmo piso que o gate de voto usa para aceitar um nome como sendo de um diretor. */
-const CONFIANCA_MINIMA = 0.85;
+const CONFIANCA_MINIMA = MATCH_THRESHOLD;
 
 export interface DiretorDoRoster {
   id: string;

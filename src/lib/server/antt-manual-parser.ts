@@ -1,3 +1,4 @@
+import { isUnanimidadeNegada } from "@/lib/server/unanimidade";
 import { declaraSerPauta } from "@/lib/server/regulatory-documents";
 ﻿import type { AtaPreviewItem, PreviewResultFields, TipoDocumento } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
@@ -579,7 +580,12 @@ function enrichAnttItem(
   // (antes só "ata" contava → RDE perdia votos unânimes e zerava o resultado).
   const isDeliberativa = documentType === "ata" || documentType.startsWith("reuniao_");
   const retirada = isRetiradaDePauta(item.decisao);
-  const unanimidade = isDeliberativa && Boolean(item.decisao) && !retirada && /unanimidade/i.test(normalize(item.decisao ?? ""));
+  // Fase 21 — a guarda de NEGAÇÃO que este parser nunca teve: "não houve unanimidade" dava
+  // `unanimidade = true` e voto favorável para todos os presentes — o oposto do que a ata diz.
+  // O `normalize()` tira o acento; a regex compartilhada aceita `n[aã]o`.
+  const decisaoNormalizada = normalize(item.decisao ?? "");
+  const unanimidade = isDeliberativa && Boolean(item.decisao) && !retirada
+    && /unanimidade/i.test(decisaoNormalizada) && !isUnanimidadeNegada(decisaoNormalizada);
   // Presença ambígua (marcador "Ausente" sem ausentes identificados): NÃO atribui votos
   // — um ausente registrado como favorável é pior que mandar o item para revisão.
   const votos = unanimidade && !attendanceAmbiguous ? presentDirectors : [];

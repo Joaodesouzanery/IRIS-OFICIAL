@@ -5,6 +5,7 @@
  * mandato confiável ou voto real aparece; rejeitados nunca voltam pela via dos votos.
  */
 
+import { isVotoNominal } from "@/lib/server/vote-inference";
 import { NextRequest, NextResponse } from "next/server";
 import { contarRelatoriasPorDiretor } from "@/lib/server/relatoria";
 import { demoData } from "@/lib/demo-data";
@@ -58,10 +59,12 @@ export async function GET(req: NextRequest) {
   // `votos` paginado (PERF-4) p/ não subcontar em silêncio no ~1000 do PostgREST.
   const [diretoresRes, votosRes, mandatosRes] = await Promise.all([
     diretoresQuery,
+    // Fase 21 — `proveniencia` para `isVotoNominal`; se a coluna não existir, a página cai no
+    // conjunto mínimo em vez de dar 500 (o mesmo fallback dos outros leitores).
     selectAllPaged(() => {
       let q = db
         .from("votos")
-        .select("id, tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id)");
+        .select("id, tipo_voto, is_divergente, is_nominal, proveniencia, diretores!inner (id, nome, agencia_id)");
       if (agenciaId) q = q.eq("diretores.agencia_id", agenciaId);
       // Ordem total única (PK dos votos) → paginação por offset determinística.
       return q.order("id", { ascending: true });
@@ -122,7 +125,7 @@ export async function GET(req: NextRequest) {
     else if ((row as any).tipo_voto === "Ausente") s.ausentes++;
     else if ((row as any).tipo_voto === "Abstencao") s.abstencoes++;
     if ((row as any).is_divergente) s.divergente++;
-    if ((row as any).is_nominal) s.nominais++; else s.inferidos++;
+    if (isVotoNominal(row as any)) s.nominais++; else s.inferidos++;
   }
 
   // Etapa67 — RELATORIA por diretor: o eixo nominal em 100% dos itens. Uma matéria = um relator

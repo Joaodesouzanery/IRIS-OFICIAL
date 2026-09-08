@@ -86,6 +86,13 @@ export interface MatchResult {
 
 // ─── Matching ─────────────────────────────────────────────────────────────
 export const MATCH_THRESHOLD = 0.85; // equivalente ao 85 do rapidfuzz
+/**
+ * Piso da faixa de REVISÃO (0.6–0.85): casou, mas não o bastante para agir sozinho.
+ * Fase 21 — era um literal `0.6` repetido em 4 arquivos e o `0.85` em outros 5. Mudar um deles
+ * sem os outros faria `needsReview` e os buckets de saúde discordarem em silêncio. A etapa125
+ * cobra que nenhum literal volte.
+ */
+export const MATCH_REVIEW_THRESHOLD = 0.6;
 
 /**
  * Gera formas parciais de um nome completo (prefixo de tokens + primeiro+último +
@@ -150,7 +157,7 @@ export function findBestMatch(
   }
 
   // Score alto mas abaixo do limiar — precisa revisão manual
-  if (bestScore >= 0.6) {
+  if (bestScore >= MATCH_REVIEW_THRESHOLD) {
     return { diretorId: bestId, score: bestScore, needsReview: true, isNew: false };
   }
 

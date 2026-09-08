@@ -9,6 +9,9 @@
  * Somente leitura: agrega contagens via Supabase; em modo DEMO devolve um retrato fictício.
  */
 
+import { isVotoNominal } from "@/lib/server/vote-inference";
+import { selectVotosComFallback } from "@/lib/server/votos-write";
+import { MATCH_THRESHOLD, MATCH_REVIEW_THRESHOLD } from "@/lib/server/name-matcher";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -18,8 +21,8 @@ import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 export const dynamic = "force-dynamic";
 
 // Buckets de confiança alinhados ao name-matcher (>=0.85 alta, 0.6–0.85 revisão).
-const CONF_ALTA = 0.85;
-const CONF_MEDIA = 0.6;
+const CONF_ALTA = MATCH_THRESHOLD;
+const CONF_MEDIA = MATCH_REVIEW_THRESHOLD;
 
 interface AgenciaSaude {
   agencia_id: string | null;
@@ -156,7 +159,8 @@ export async function GET(req: NextRequest) {
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
     db.from("deliberacoes").select("id, agencia_id, extraction_confidence, numero_deliberacao, processo, data_reuniao, tipo_documento, interessado, empresa_id").limit(20000),
-    db.from("votos").select("deliberacao_id, is_nominal").limit(50000),
+    selectVotosComFallback<Array<{ deliberacao_id: string; is_nominal: boolean; proveniencia?: string | null }>>(
+      (c) => db.from("votos").select(c).limit(50000), "deliberacao_id, is_nominal, proveniencia", "deliberacao_id, is_nominal"),
     db.from("documentos_regulatorios").select("agencia_id, status").limit(20000),
     db.from("diretor_candidatos").select("id", { count: "exact", head: true }).eq("review_status", "pendente"),
     db.from("monitoramento_itens").select("id", { count: "exact", head: true }).eq("status", "novo"),
@@ -194,7 +198,7 @@ export async function GET(req: NextRequest) {
     interessado?: string | null;
     empresa_id?: string | null;
   }> = delibsRes.data ?? [];
-  const votos: Array<{ deliberacao_id: string; is_nominal: boolean }> = votosRes.data ?? [];
+  const votos: Array<{ deliberacao_id: string; is_nominal: boolean; proveniencia?: string | null }> = votosRes.data ?? [];
   const docs: Array<{ agencia_id: string | null; status: string }> = docsRes.data ?? [];
 
   // ── Mapas auxiliares ──────────────────────────────────────────────
@@ -216,7 +220,7 @@ export async function GET(req: NextRequest) {
   const votosPorAgencia = new Map<string | null, number>();
   for (const v of votos) {
     delibsComVoto.add(v.deliberacao_id);
-    if (v.is_nominal) { votosNominais += 1; delibsComNominal.add(v.deliberacao_id); }
+    if (isVotoNominal(v)) { votosNominais += 1; delibsComNominal.add(v.deliberacao_id); }
     const ag = delibAgencia.get(v.deliberacao_id) ?? null;
     votosPorAgencia.set(ag, (votosPorAgencia.get(ag) ?? 0) + 1);
   }

@@ -4,6 +4,7 @@
  * Segurança: id validado com allowlist de caracteres antes de qualquer query.
  */
 
+import { isVotoNominal } from "@/lib/votos-nominal";
 import { NextRequest, NextResponse } from "next/server";
 import { computeRelatoria } from "@/lib/server/relatoria";
 import { demoData } from "@/lib/demo-data";
@@ -142,11 +143,10 @@ export async function GET(
     }
     else abstencao++;
     if (d.is_divergente) divergente++;
-    if (!d.is_nominal) votos_inferidos++;
+    if (!isVotoNominal(d)) votos_inferidos++;
     // COMPORTAMENTO só se apoia em voto LIDO ou CORRIGIDO POR HUMANO. Voto inferido é, por
     // construção, não-divergente: medir divergência sobre ele é tautologia, não medida.
-    const nominalOuHumano = d.proveniencia === "nominal" || d.proveniencia === "revisao_humana"
-      || (d.proveniencia == null && d.is_nominal);
+    const nominalOuHumano = isVotoNominal(d); // a expressão que virou o helper (Fase 21)
     if (nominalOuHumano && !naoVotou) {
       base_nominal++;
       if (d.is_divergente) divergente_nominal++;

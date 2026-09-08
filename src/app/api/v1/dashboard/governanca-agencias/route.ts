@@ -6,6 +6,8 @@
  * para todas as agências (ANA/ANAC/... apareciam com o mesmo 68 sem ter dados).
  */
 
+import { isVotoNominal } from "@/lib/server/vote-inference";
+import { selectVotosComFallback } from "@/lib/server/votos-write";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
@@ -57,9 +59,13 @@ export async function GET(req: NextRequest) {
 
   const [agenciasRes, delibsRes] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
-    db.from("deliberacoes")
-      .select(`agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${finalSelect}, votos(is_divergente, is_nominal)`)
-      .limit(40000),
+    selectVotosComFallback(
+      (c) => db.from("deliberacoes")
+        .select(`agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${finalSelect}, votos(${c})`)
+        .limit(40000),
+      "is_divergente, is_nominal, proveniencia",
+      "is_divergente, is_nominal",
+    ),
   ]);
 
   const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
@@ -77,7 +83,7 @@ export async function GET(req: NextRequest) {
     extraction_confidence: number | null; tipo_documento: string | null;
     documento_pai_id: string | null;
     import_counts_as_final?: unknown; documento_subtipo?: unknown; documento_antt_tipo?: unknown;
-    votos: Array<{ is_divergente: boolean; is_nominal: boolean }>;
+    votos: Array<{ is_divergente: boolean; is_nominal: boolean; proveniencia?: string | null }>;
   }>) {
     if (!isFinalDecisionRecord(d as any) || !d.agencia_id) continue;
     const a = acc.get(d.agencia_id) ?? { total: 0, decidido: 0, admissibilidade: 0, retirado: 0, semResultado: 0, comVoto: 0, consensoOk: 0, comNominal: 0, deferido: 0, confSum: 0, confN: 0, sancao: 0 };
@@ -102,7 +108,7 @@ export async function GET(req: NextRequest) {
       a.comVoto += 1;
       if (consensual) a.consensoOk += 1;
     }
-    if ((d.votos ?? []).some((v) => v.is_nominal)) a.comNominal += 1;
+    if ((d.votos ?? []).some((v) => isVotoNominal(v))) a.comNominal += 1;
     // NUMERADOR no MESMO universo do denominador: só conta deferimento entre os DECIDIDOS, senão
     // a taxa pode passar de 100% (item de admissibilidade com resultado positivo).
     if (decisionStatus(d as any) === "decidido") {

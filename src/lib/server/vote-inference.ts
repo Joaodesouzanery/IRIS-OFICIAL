@@ -1,5 +1,5 @@
 import type { TipoDocumento, VotoSugerido } from "@/types";
-import { findBestMatch } from "@/lib/server/name-matcher";
+import { findBestMatch, MATCH_REVIEW_THRESHOLD } from "@/lib/server/name-matcher";
 import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 
 export type DiretorVoteRecord = {
@@ -21,6 +21,9 @@ export type ProvenienciaVoto =
   | "nominal"
   | "inferido_unanimidade"
   | "inferido_decisao";
+
+// Fase 21 — a regra mora em `src/lib/votos-nominal.ts` (folha, importável pela tela). Re-exportada.
+export { isVotoNominal } from "@/lib/votos-nominal";
 
 export type VotoInsertRow = {
   deliberacao_id: string;
@@ -364,7 +367,7 @@ function collectDivergentIntentIds(names: string[], diretoresList: DiretorVoteRe
   const ids = new Set<string>();
   for (const nome of names) {
     const match = findBestMatch(nome, diretoresList);
-    if (match.diretorId && match.score >= 0.6) ids.add(match.diretorId);
+    if (match.diretorId && match.score >= MATCH_REVIEW_THRESHOLD) ids.add(match.diretorId);
   }
   return ids;
 }

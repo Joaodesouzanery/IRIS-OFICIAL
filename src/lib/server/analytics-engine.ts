@@ -5,6 +5,7 @@
  * Each function returns the exact same shape as the corresponding demoData method.
  */
 
+import { isVotoNominal } from "@/lib/votos-nominal";
 import type { Deliberacao, VotoEmbutido } from "@/types";
 import { isFinalDecisionRecord , isConsensual, isDecidedOnMerits, decisionStatus, isSancao } from "@/lib/server/regulatory-documents";
 import { isResultadoPositivo } from "@/lib/utils";
@@ -191,7 +192,7 @@ export function computeDiretoresOverview(delibs: Deliberacao[], agenciaId?: stri
       if (v.tipo_voto === "Favoravel") s.favoravel++;
       else s.desfavoravel++;
       if (v.is_divergente) s.divergente++;
-      if (v.is_nominal) s.nominais++; else s.inferidos++;
+      if (isVotoNominal(v)) s.nominais++; else s.inferidos++;
     }
   }
 
@@ -362,8 +363,8 @@ export function computeReunioesList(delibs: Deliberacao[], agenciaId?: string | 
     e.total_itens++;
     const votos = d.votos ?? [];
     e.total_votos += votos.length;
-    e.votos_nominais += votos.filter((v) => v.is_nominal).length;
-    e.votos_inferidos += votos.filter((v) => !v.is_nominal).length;
+    e.votos_nominais += votos.filter((v) => isVotoNominal(v)).length;
+    e.votos_inferidos += votos.filter((v) => !isVotoNominal(v)).length;
     // Etapa60: só entra na conta de consenso o item que TEM voto — array vazio não é concordância.
     const consensual = isConsensual(votos);
     if (consensual !== null) {
@@ -409,14 +410,14 @@ export function computeReuniaoDetalhe(
       if (!consensualItem) divergencias++;
     }
     for (const v of d.votos ?? []) {
-      if (v.is_nominal) votos_nominais++; else votos_inferidos++;
+      if (isVotoNominal(v)) votos_nominais++; else votos_inferidos++;
       if (!v.diretor_id) continue;
       let e = dirMap.get(v.diretor_id);
       if (!e) { e = { id: v.diretor_id, nome: v.diretor_nome ?? v.diretor_id, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0 }; dirMap.set(v.diretor_id, e); }
       if (v.tipo_voto === "Favoravel") e.favoravel++;
       else if (v.tipo_voto === "Desfavoravel") e.desfavoravel++;
       if (v.is_divergente) e.divergente++;
-      if (v.is_nominal) e.nominais++; else e.inferidos++;
+      if (isVotoNominal(v)) e.nominais++; else e.inferidos++;
     }
     return {
       deliberacao_id: d.id,
@@ -464,7 +465,7 @@ export function computeConsensoTimeline(delibs: Deliberacao[], agenciaId?: strin
       m.com_voto++;
       if (!consensualMes) m.divergentes++;
     }
-    if ((d.votos ?? []).some((v) => v.is_nominal)) m.com_voto_nominal++;
+    if ((d.votos ?? []).some((v) => isVotoNominal(v))) m.com_voto_nominal++;
     byMonth.set(period, m);
   }
   return [...byMonth.entries()]
@@ -502,7 +503,7 @@ export function computeVotacaoFidelidade(delibs: Deliberacao[], agenciaId?: stri
       }
       const s = map.get(v.diretor_id)!;
       s.total_votos++;
-      if (v.is_nominal) s.votos_nominais++;
+      if (isVotoNominal(v)) s.votos_nominais++;
       if (v.is_divergente) s.votos_divergentes++;
     }
   }
@@ -704,7 +705,7 @@ export function computeDiretorProfile(delibs: Deliberacao[], dirId: string) {
     else if (meuVoto.tipo_voto === "Abstencao") abstencao++;
     else desfavoravel++;
     if (meuVoto.is_divergente) divergente++;
-    if (meuVoto.is_nominal && !naoVotouDir) {
+    if (isVotoNominal(meuVoto) && !naoVotouDir) {
       baseNominalDir++;
       if (meuVoto.is_divergente) divergenteNominalDir++;
     }

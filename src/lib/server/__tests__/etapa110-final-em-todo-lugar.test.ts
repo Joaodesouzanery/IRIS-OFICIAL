@@ -57,6 +57,22 @@ describe("etapa110 · a regra do item de ata é a MESMA em todos os sítios", ()
   });
 });
 
+/**
+ * Fase 21 — os sítios que passaram a chamar o CANÔNICO em vez de repetir a regra. `mandatos/stats`
+ * tinha uma aproximação SQL que conta filho de ata SEM resultado; o número estrito agora sai ao
+ * lado do aproximado (`total_finais_estrito`) até o usuário aprovar a troca do card.
+ */
+const SITIOS_QUE_CHAMAM_O_CANONICO = ["src/app/api/v1/mandatos/stats/route.ts"];
+
+describe("etapa110 · quem não repete a regra chama o canônico", () => {
+  it.each(SITIOS_QUE_CHAMAM_O_CANONICO)("%s usa isFinalDecisionRecord e publica o número estrito", (arquivo) => {
+    const fonte = ler(arquivo);
+    expect(fonte).toMatch(/isFinalDecisionRecord\(/);
+    expect(fonte).toMatch(/total_finais_estrito/);
+    expect(fonte, "a regra roda cega sem o resultado").toMatch(/\.select\([^)]*resultado/);
+  });
+});
+
 describe("etapa110 · COMPORTAMENTO: o predicado canônico e a decomposição concordam", () => {
   // Se estes dois divergirem, o Dashboard e a auditoria passam a contar coisas diferentes com o
   // mesmo nome — que é exatamente a classe de bug que este arquivo existe para matar.

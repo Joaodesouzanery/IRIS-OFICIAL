@@ -12,6 +12,7 @@
  * Mantém retrocompatibilidade com padrão DEFERIDO/INDEFERIDO de outras agências.
  */
 
+import { isUnanimidadeNegada } from "@/lib/server/unanimidade";
 import { parseDataExtensoANM, RE_RETIRADA } from "./ata-splitter";
 import { isRoleWordOnly, isLikelyPersonName, isStrictPersonName } from "./name-matcher";
 import { flattenForMatch } from "./pdf-extractor";
@@ -77,9 +78,10 @@ const RE_UNANIMIDADE = /(?:por\s+unanimidade\s+dos?\s+votos?|por\s+unanimidade\s
 // Janela curta ({0,3} palavras entre "não" e "unanimidade") p/ não capturar um "não" distante. Sem a
 // guarda, "não ... por unanimidade" disparava default-favor/inferência de aprovação (falso). F5.
 // Lookahead `(?!obstante)` exclui o concessivo "não obstante a unanimidade" (que AFIRMA a unanimidade).
-const RE_UNANIMIDADE_NEGADA = /\bn[aã]o\s+(?!obstante\b)(?:\S+\s+){0,3}unanimidade|\bsem\s+unanimidade/i;
+// Fase 21 — a negação mora em `unanimidade.ts` (módulo-folha), compartilhada com o splitter e o
+// parser da ANTT. Antes: este literal + uma cópia no splitter + NENHUMA guarda na ANTT.
 export function hasUnanimidade(text: string): boolean {
-  return RE_UNANIMIDADE.test(text) && !RE_UNANIMIDADE_NEGADA.test(text);
+  return RE_UNANIMIDADE.test(text) && !isUnanimidadeNegada(text);
 }
 
 // Voto dissidente / divergente — extrai o nome do diretor que votou contra.
@@ -352,13 +354,10 @@ export function detectDivergenciaNaoAtribuida(text: string, contraCount: number)
 // o dissidente NÃO pôde ser atribuído, é desonesto gravar todos como favoráveis (fabricaria
 // unanimidade). O item vai para revisão em vez de inventar voto. Usado no ramo default-favor.
 // (não inclui "vencid[oa]" isolado p/ evitar "prazo vencido"; só as formas ligadas a voto).
-/**
- * ⚠️ SEGUNDA implementação do predicado de contestação (a outra é `consistency-checks.ts`).
- * Exportada na Fase 20 não para ser reusada, e sim para ser CONFERIDA: a etapa121 compara as
- * duas e a união, porque elas divergiam em silêncio — esta reconhece "divergência" e "voto
- * vencedor", a outra não, e é a OUTRA que decide se o colegiado inteiro ganha voto inferido.
- */
-export const RE_CONTESTADO_NLP = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
+// Fase 21 — o predicado do extrator mora em `consistency-checks.ts`, ao lado do outro: os dois
+// divergiam em silêncio por viverem em arquivos diferentes. Re-exportado para quem já importa daqui.
+export { RE_CONTESTADO_NLP } from "@/lib/server/consistency-checks";
+import { RE_CONTESTADO_NLP } from "@/lib/server/consistency-checks";
 
 // ─── Voto de QUALIDADE (etapa62) ──────────────────────────────────────────
 // "aprovado por maioria dos diretores presentes com cômputo do voto de qualidade proferido pelo

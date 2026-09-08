@@ -9,6 +9,7 @@
  * Formatos: html (imprimir→PDF), docx (Word), csv (Excel). Admin-gated; demo ok.
  */
 
+import { isVotoNominal } from "@/lib/votos-nominal";
 import { NextRequest, NextResponse } from "next/server";
 import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretoresOverview } from "@/lib/server/analytics-engine";
@@ -238,7 +239,7 @@ async function blocoReal(db: any, agenciaId: string, sigla: string, mandatos: Ma
     const id = dir?.id; if (!id) continue;
     if (!stats.has(id)) stats.set(id, { _id: id, diretor_nome: dir?.nome ?? "—", total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0, pct_favor: 0, mandato: mandatoLabel(id) });
     const s = stats.get(id)!;
-    const r = row as { tipo_voto?: string; is_divergente?: boolean; is_nominal?: boolean; deliberacoes?: { numero_deliberacao?: string | null; data_reuniao?: string | null } };
+    const r = row as { tipo_voto?: string; is_divergente?: boolean; is_nominal?: boolean; proveniencia?: string | null; deliberacoes?: { numero_deliberacao?: string | null; data_reuniao?: string | null } };
     s.total++;
     if (r.tipo_voto === "Favoravel") s.favoravel++;
     else if (r.tipo_voto === "Desfavoravel") s.desfavoravel++;
@@ -251,7 +252,7 @@ async function blocoReal(db: any, agenciaId: string, sigla: string, mandatos: Ma
         data: r.deliberacoes?.data_reuniao ?? null,
       });
     }
-    if (r.is_nominal) s.nominais++; else s.inferidos++;
+    if (isVotoNominal(r)) s.nominais++; else s.inferidos++;
     const dt = r.deliberacoes?.data_reuniao;
     if (dt) {
       meses.set(dt.slice(0, 7), (meses.get(dt.slice(0, 7)) ?? 0) + 1);
