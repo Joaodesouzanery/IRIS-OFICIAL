@@ -47,7 +47,7 @@ const PAYLOAD_COMPLETO = {
     { nao_reconhecidos: ["Roger Romão Cabral", "Tasso Mendonça Júnior"] },
     { nao_reconhecidos: ["Roger Romão Cabral"] },
   ],
-  delta_dispositivo: { itens_que_mudariam: 5, votos_a_menos: 13, por_regex_divergente: { ANM: 2, ANTT: 1 } },
+  delta_dispositivo: { itens_que_mudariam: 5, votos_a_menos: 13, por_regex_divergente: { ANM: 2, ANTT: 1 }, por_regex_falso_positivo: { ANM: 10 } },
 };
 
 describe("etapa123 · COMPORTAMENTO: o resumo carrega tudo que o materializador mediu", () => {
@@ -56,7 +56,7 @@ describe("etapa123 · COMPORTAMENTO: o resumo carrega tudo que o materializador 
   it.each([
     ["deliberacoes", 7], ["votos", 21], ["sem_evidencia", 3],
     ["roster_nao_conferivel", 4], ["fora_da_janela", 9], ["upsert_falhas", 2],
-    ["votos_a_menos", 13], ["itens_que_mudariam", 5], ["regex_divergente", 3],
+    ["votos_a_menos", 13], ["itens_que_mudariam", 5], ["regex_divergente", 3], ["regex_falso_positivo", 10],
   ])("«%s» = %i", (chave, valor) => {
     expect(r[chave]).toBe(valor);
   });

@@ -1,0 +1,288 @@
+{
+ "_comment": "Caracterizacao MEDIDA (etapa124, Fase 21) das implementacoes duplicadas de contestacao e unanimidade sobre as 16 fixtures reais — 342 itens. `vigente`=RE_CONTESTADO, `nlp`=RE_CONTESTADO_NLP, `amplo`=RE_CONTESTADO_AMPLO (corrigido pela medicao: sem `vencido` solto). `discordam` = itens em que vigente e nlp divergem — 10 sao 'taxa vencida' (falso positivo do vigente), 2 sao 'divergencia parcial' (falso negativo). `solto_sem_frase` = itens que /unanimidade/i pega e hasUnanimidade nao; `negada` = 'nao/sem unanimidade' — ZERO no corpus, por isso a guarda da ANTT e testada com caso sintetico. Mudar um valor aqui exige justificar item a item contra o PDF, nunca aceitar em bloco.",
+ "anm-ata-32-extraordinaria.pdf": {
+  "itens": 54,
+  "contestacao": {
+   "vigente": 3,
+   "nlp": 3,
+   "amplo": 3,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 29,
+   "frase": 29,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "anm-ata-34-rep.pdf": {
+  "itens": 32,
+  "contestacao": {
+   "vigente": 1,
+   "nlp": 2,
+   "amplo": 2,
+   "discordam": 1,
+   "exemplos": [
+    "Bloqueio automático de requerimentos e decaimento de títulos minerários sobrepostos a terras indígenas e unidades de proteção integral (Pedido de vista realizad"
+   ]
+  },
+  "unanimidade": {
+   "solto": 15,
+   "frase": 15,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "anm-ata-79-rop.pdf": {
+  "itens": 62,
+  "contestacao": {
+   "vigente": 8,
+   "nlp": 2,
+   "amplo": 2,
+   "discordam": 6,
+   "exemplos": [
+    "Recurso contra Notificação Administrativa por não pagamento da Taxa Anual por Hectare Voto aprovado por unanimidade pelos diretores presentes. Recurso contra No",
+    "Recurso contra Notificação Administrativa por não pagamento da Taxa Anual por Hectare Voto aprovado por unanimidade pelos diretores presentes. Recurso contra No",
+    "Recurso contra Notificação Administrativa por não pagamento da Taxa Anual por Hectare Voto aprovado por unanimidade pelos diretores presentes. Recurso contra No"
+   ]
+  },
+  "unanimidade": {
+   "solto": 47,
+   "frase": 47,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "anm-ata-81-rop.pdf": {
+  "itens": 68,
+  "contestacao": {
+   "vigente": 3,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 3,
+   "exemplos": [
+    "Recurso contra notificação administrativa Voto aprovado por unanimidade pelos diretores presentes. Recurso contra notificação administrativa 1.3.1 PROCESSO Nº: ",
+    "Recurso contra Notificações Administrativas nº 458/2024 e 460/2024 por não pagamento da taxa Anual por Hectare Voto aprovado por unanimidade pelos diretores pre",
+    "Recurso contra Notificações Administrativas nº 458/2024 e 460/2024 por não pagamento da taxa Anual por Hectare Voto aprovado por unanimidade pelos diretores pre"
+   ]
+  },
+  "unanimidade": {
+   "solto": 68,
+   "frase": 68,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "anm-ata-82-ordinaria.pdf": {
+  "itens": 34,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 27,
+   "frase": 27,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "anm-ata-83-rop.pdf": {
+  "itens": 55,
+  "contestacao": {
+   "vigente": 4,
+   "nlp": 4,
+   "amplo": 4,
+   "discordam": 2,
+   "exemplos": [
+    "Voto Vista. Recurso Contra Decisão em Processo de Disponibilidade Voto Vista. Recurso Contra Decisão em Processo de Disponibilidade 2.7.1 PROCESSOS Nº: 48403.83",
+    "Recurso contra a Notificação Administrativa por não pagamento da Taxa Anual por Hectare Voto aprovado por unanimidade pelos diretores presentes. Recurso contra "
+   ]
+  },
+  "unanimidade": {
+   "solto": 45,
+   "frase": 45,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "antt-ata-1024.pdf": {
+  "itens": 14,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 12,
+   "frase": 12,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "antt-ata-264-rde.pdf": {
+  "itens": 6,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 4,
+   "frase": 4,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "antt-pauta-1036.pdf": {
+  "itens": 10,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 0,
+   "frase": 0,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "antt-voto-dab-002.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 0,
+   "frase": 0,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "artesp-ata-1201.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 1,
+   "frase": 1,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "artesp-delib-22.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 1,
+   "frase": 1,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "artesp-delib-23.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 1,
+   "frase": 1,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "artesp-delib-303.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 1,
+   "frase": 1,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "artesp-delib-487.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 1,
+   "frase": 1,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ },
+ "artesp-pauta-1201.pdf": {
+  "itens": 1,
+  "contestacao": {
+   "vigente": 0,
+   "nlp": 0,
+   "amplo": 0,
+   "discordam": 0,
+   "exemplos": []
+  },
+  "unanimidade": {
+   "solto": 0,
+   "frase": 0,
+   "negada": 0,
+   "solto_sem_frase": 0,
+   "exemplos_negada": []
+  }
+ }
+}

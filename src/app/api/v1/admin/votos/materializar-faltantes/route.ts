@@ -202,6 +202,7 @@ export async function POST(req: NextRequest) {
   const deltaDetalhe: Array<{ deliberacao_id: string; agencia: string; resultado: string | null; trecho: string }> = [];
   /** Commit 3a — itens que o predicado AMPLO pegaria e o vigente deixa passar, por agência. */
   const deltaRegex: Record<string, number> = {};
+  const deltaFalsoPositivo: Record<string, number> = {};
   const siglaPorId = new Map(
     ((agRows ?? []) as Array<{ id: string; sigla: string }>).map((a) => [a.id, String(a.sigla)]),
   );
@@ -311,9 +312,16 @@ export async function POST(req: NextRequest) {
     // A SEGUNDA medição, independente da primeira: o predicado vigente aqui não reconhece
     // "divergência" nem "voto vencedor" — o do extrator reconhece. Quem decide se o colegiado
     // inteiro ganha voto inferido é o daqui, o mais estreito. Medido antes de trocar.
-    if (!contestado && RE_CONTESTADO_AMPLO.test(textoComPleito)) {
+    const amplo = RE_CONTESTADO_AMPLO.test(textoComPleito);
+    if (!contestado && amplo) {
       const sigla = siglaDe(d.agencia_id);
       deltaRegex[sigla] = (deltaRegex[sigla] ?? 0) + 1;
+    }
+    // A direção que a medição do corpus revelou (etapa124): o vigente casa "taxa vencida" e
+    // SUPRIME voto de item unânime. Estes são os itens que voltariam a ter voto.
+    if (contestado && !amplo) {
+      const sigla = siglaDe(d.agencia_id);
+      deltaFalsoPositivo[sigla] = (deltaFalsoPositivo[sigla] ?? 0) + 1;
     }
 
     if (contestadoComPleito !== contestado) {
@@ -433,6 +441,8 @@ export async function POST(req: NextRequest) {
        * pode estar recebendo voto inferido apesar de a decisão ter sido disputada.
        */
       por_regex_divergente: deltaRegex,
+      /** Itens que o vigente marca como contestados e o corrigido não — voto suprimido por "taxa vencida". */
+      por_regex_falso_positivo: deltaFalsoPositivo,
     },
     ...(dryRun ? { aviso: "Simulação — repita com dry_run:false para gravar." } : {}),
   });

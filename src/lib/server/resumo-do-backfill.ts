@@ -37,6 +37,7 @@ export interface PayloadDoMaterializador {
     itens_que_mudariam?: number;
     votos_a_menos?: number;
     por_regex_divergente?: Record<string, number>;
+    por_regex_falso_positivo?: Record<string, number>;
   };
 }
 
@@ -50,7 +51,9 @@ export interface PayloadDoMaterializador {
 export function resumirBackfill(body: PayloadDoMaterializador | null | undefined): Record<string, number | string> {
   const b = body ?? {};
   const delta = b.delta_dispositivo ?? {};
-  const regexDivergente = Object.values(delta.por_regex_divergente ?? {}).reduce((a, n) => a + (n ?? 0), 0);
+  const soma = (m?: Record<string, number>) => Object.values(m ?? {}).reduce((a, n) => a + (n ?? 0), 0);
+  const regexDivergente = soma(delta.por_regex_divergente);
+  const regexFalsoPositivo = soma(delta.por_regex_falso_positivo);
   const nomes = [...new Set((b.detalhe_roster ?? []).flatMap((d) => d.nao_reconhecidos ?? []))].slice(0, 5);
 
   const resumo: Record<string, number | string> = {
@@ -64,6 +67,7 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
     votos_a_menos: delta.votos_a_menos ?? 0,
     itens_que_mudariam: delta.itens_que_mudariam ?? 0,
     regex_divergente: regexDivergente,
+    regex_falso_positivo: regexFalsoPositivo,
   };
   if (nomes.length > 0) resumo.nao_reconhecidos = nomes.join("; ");
   return resumo;

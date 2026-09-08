@@ -9,21 +9,26 @@
 export const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b|\bvencid[oa]s?\b|prevaleceu|maioria\s+de\s+votos/i;
 
 /**
- * A UNIÃO das duas implementações do predicado — medida, ainda não vigente (Fase 20, commit 3a).
+ * O predicado de contestação CORRIGIDO PELA MEDIÇÃO — ainda não vigente (Fase 21, commit 2).
  *
- * `RE_CONTESTADO` (acima) e `RE_CONTESTADO_NLP` (`nlp-extractor.ts`) divergiam em silêncio:
- *  · só a do extrator reconhece `divergência` e `voto vencedor`;
- *  · só esta reconhece `vencido` solto (sem a palavra "voto" antes).
+ * ═══ O que a medição nas 16 fixtures reais (342 itens) mostrou ═══
+ * `RE_CONTESTADO` (vigente, acima) e `RE_CONTESTADO_NLP` (`nlp-extractor.ts`) discordam em 12
+ * itens, e a divergência corta nos DOIS sentidos:
+ *  · 10 itens (79ª, 81ª, 83ª ROP da ANM): só o vigente casa — em "Taxa Anual por Hectare
+ *    **vencida** em 29/07/2022". É o `\bvencid[oa]s?\b` solto. Falso positivo: itens "aprovado por
+ *    unanimidade" que hoje ficam SEM voto inferido por causa de uma taxa vencida.
+ *  · 2 itens (34ª REP, 83ª ROP): só o do extrator casa — "com **divergência** parcial ao voto do
+ *    relator". Falso negativo: o colegiado inteiro recebe consenso fabricado.
+ * No corpus inteiro, `vencido` solto tem ZERO acertos e DEZ erros. Por isso este predicado NÃO é
+ * a união dos dois (a união herdaria os 10 falsos positivos): é o conjunto do extrator, mais
+ * "vencido" SÓ quando seguido de quem perdeu ("vencidos os Diretores", "vencido o Relator").
  *
- * A assimetria importa numa direção específica: quem decide se o colegiado INTEIRO ganha voto
- * inferido é esta, a mais estreita nos termos de divergência. Uma ata que diz "com divergência do
- * diretor X" passa por não-contestada e todo mundo recebe "Favorável" fabricado.
- *
- * Trocar o predicado muda um número público, então entra primeiro como MEDIÇÃO: a rota
- * `materializar-faltantes` reporta quantos itens e votos mudariam. A etapa121 garante que a união
- * cobre as duas — se qualquer uma ganhar termo novo, o teste cai.
+ * Trocar o predicado vigente muda o número público nas duas direções (mais voto nos 10, menos
+ * nos 2), então entra primeiro como MEDIÇÃO: `materializar-faltantes` reporta
+ * `por_regex_divergente` (o que este pegaria a mais) e `por_regex_falso_positivo` (o que o vigente
+ * suprime indevidamente). A etapa121 garante os dois sentidos com os trechos reais do corpus.
  */
-export const RE_CONTESTADO_AMPLO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bvencid[oa]s?\b|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
+export const RE_CONTESTADO_AMPLO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bvencid[oa]s?\s+(?:[oa]s?\s+)?(?:diretor|conselheir|relator)|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
 
 /**
  * "Unanimidade" DECLARADA + sinais de contestação SEM dissidente nomeado é contraditório: o pool

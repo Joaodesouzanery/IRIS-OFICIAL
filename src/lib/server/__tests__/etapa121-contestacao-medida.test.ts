@@ -27,30 +27,42 @@ const CONTESTADOS = [
   "Decidido pelo voto de qualidade do Diretor-Geral",
   "Houve divergência do Diretor Substituto quanto ao mérito",
   "Aprovado, restando vencida a proposta do relator",
+  "Aprovado, vencidos os Diretores que acompanharam o relator",
+  // Trecho REAL da 34ª REP (item 2.1.1): só o extrator via isto; o vigente fabricava consenso.
+  "ocupado pelo Diretor Guilherme Santana Lopes Gomes, com divergência parcial ao voto do relator",
   "Prevaleceu o entendimento do voto vencedor",
   "Empate na votação, resolvido na forma regimental",
 ];
 
 const NAO_CONTESTADOS = [
   "Aprovado por unanimidade dos presentes",
+  // Trecho REAL da 79ª ROP (itens 3.1.1-3.1.6), medido na etapa124: o vigente casa "vencida" aqui
+  // e suprime o voto de um item unânime. Dez ocorrências no corpus, zero acertos.
+  "lavrada em face do não pagamento da Taxa Anual por Hectare vencida em 29/07/2022, relativa ao primeiro ano de vigência. Voto aprovado por unanimidade pelos diretores presentes.",
   "Retirado de Pauta a pedido do Relator",
   "Convertido em diligência",
   "Aprovado nos termos do voto do Relator",
 ];
 
-describe("etapa121 · o predicado AMPLO cobre as DUAS implementações", () => {
+describe("etapa121 · o predicado CORRIGIDO cobre o que é contestação de verdade", () => {
   for (const texto of CONTESTADOS) {
     it(`reconhece contestação em «${texto.slice(0, 42)}…»`, () => {
       expect(RE_CONTESTADO_AMPLO.test(texto)).toBe(true);
     });
   }
 
-  it("é superconjunto de AMBAS — se qualquer uma ganhar termo novo, este teste cai", () => {
-    // Transversal de propósito: comparar par a par deixaria a próxima divergência passar.
+  it("é superconjunto do EXTRATOR — se ele ganhar termo novo, este teste cai", () => {
+    // Não é superconjunto do vigente de propósito: a medição (etapa124) provou que o `vencido`
+    // solto dele tem zero acertos e dez erros no corpus. Herdá-lo seria herdar os erros.
     for (const texto of CONTESTADOS) {
-      if (RE_CONTESTADO.test(texto)) expect(RE_CONTESTADO_AMPLO.test(texto), texto).toBe(true);
       if (RE_CONTESTADO_NLP.test(texto)) expect(RE_CONTESTADO_AMPLO.test(texto), texto).toBe(true);
     }
+  });
+
+  it("o vigente marca «taxa vencida» como contestação — o falso positivo que a medição achou", () => {
+    const taxa = NAO_CONTESTADOS[1];
+    expect(RE_CONTESTADO.test(taxa)).toBe(true);        // o defeito, caracterizado
+    expect(RE_CONTESTADO_AMPLO.test(taxa)).toBe(false); // o conserto
   });
 
   it("não alarga para o que NÃO é contestação — senão o remédio vira o próximo defeito", () => {
