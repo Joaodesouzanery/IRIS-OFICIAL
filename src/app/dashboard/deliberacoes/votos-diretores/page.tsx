@@ -438,9 +438,12 @@ export default function VotosDiretoresPage() {
       setRunIdAtivo(null);
       return { totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas };
     },
-    onSuccess: ({ totais, rodadasComErro, ultimoErro, desfecho, rodadasFeitas }) => {
+    onSuccess: ({ totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas }) => {
       setMatchError(null);
       setRodarTudoProgresso(null);
+      const naoReconhecidos = typeof ultimas.backfill_votos?.nao_reconhecidos === "string"
+        ? ultimas.backfill_votos.nao_reconhecidos
+        : "";
       const partes = [
         `${totais.processados ?? 0} PDF(s) extraído(s)`,
         `${(totais.confirmados ?? 0) + (totais.materializados ?? 0)} materializado(s)`,
@@ -458,7 +461,25 @@ export default function VotosDiretoresPage() {
         // por DOIS passos (reclassificação e desarquivamento) e o banner somava tudo.
         (totais.reclassificados ?? 0) > 0 ? `${totais.reclassificados} reclassificado(s)` : null,
         (totais.desarquivados ?? 0) > 0 ? `${totais.desarquivados} desarquivado(s)` : null,
-        (totais.votos ?? 0) > 0 ? `${totais.votos} voto(s) recuperado(s) em deliberações antigas` : null,
+        (totais.votos ?? 0) > 0
+          ? `${totais.votos} voto(s) recuperado(s) em ${totais.deliberacoes ?? 0} deliberação(ões) antiga(s)`
+          : null,
+        (totais.sem_evidencia ?? 0) > 0 ? `${totais.sem_evidencia} sem evidência de voto` : null,
+        // Fase 21 — o que o materializador RECUSOU ou não conseguiu, visível. Antes esses números
+        // eram calculados toda noite e descartados: uma run em que todas as escritas falharam
+        // mostrava o mesmo banner verde de uma run vazia.
+        (totais.roster_nao_conferivel ?? 0) > 0
+          ? `${totais.roster_nao_conferivel} item(ns) sem voto por roster não conferível` +
+            (naoReconhecidos ? ` (não reconhecidos: ${naoReconhecidos})` : "")
+          : null,
+        (totais.fora_da_janela ?? 0) > 0 ? `${totais.fora_da_janela} anterior(es) ao 1º mandato conhecido (fora do denominador)` : null,
+        (totais.upsert_falhas ?? 0) > 0 ? `⚠️ ${totais.upsert_falhas} escrita(s) de voto FALHARAM` : null,
+        // A regra do dispositivo está DESLIGADA e medida: esta é a linha que o usuário lê antes de
+        // decidir se ela passa a valer.
+        (totais.votos_a_menos ?? 0) + (totais.regex_divergente ?? 0) > 0
+          ? `⏳ regra do dispositivo (desligada): −${totais.votos_a_menos ?? 0} voto(s) em ${totais.itens_que_mudariam ?? 0} item(ns)` +
+            `; ${totais.regex_divergente ?? 0} item(ns) com divergência que o predicado atual não vê`
+          : null,
       ].filter(Boolean);
       // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.
       if (desfecho === "abortado") {

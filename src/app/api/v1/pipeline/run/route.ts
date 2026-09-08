@@ -54,6 +54,7 @@ import { POST as recomputePOST } from "../../admin/diretores/candidatos/recomput
 import { POST as aprovarLotePOST } from "../../diretores/candidatos/aprovar-lote/route";
 import { POST as dedupPOST } from "../../admin/deliberacoes/dedup/route";
 import { POST as materializarPOST } from "../../admin/votos/materializar-faltantes/route";
+import { resumirBackfill } from "@/lib/server/resumo-do-backfill";
 import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ignorados/route";
 import { POST as redatarPOST } from "../../admin/deliberacoes/redatar/route";
 import { POST as reResultarPOST } from "../../admin/deliberacoes/re-resultar/route";
@@ -331,10 +332,10 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   if (cabe("backfillVotos")) {
     try {
       const r = await call(materializarPOST, "/api/v1/admin/votos/materializar-faltantes", "backfillVotos", { dry_run: false });
-      etapas.backfill_votos = anotar(r, "backfill de votos", {
-        deliberacoes: r.body?.materializaveis ?? 0,
-        votos: r.body?.votos ?? 0,
-      });
+      // Fase 21 — TUDO que o materializador mede chega à rodada. Antes só `materializaveis` e
+      // `votos` passavam: `upsert_falhas`, `roster_nao_conferivel`, `fora_da_janela` e o delta
+      // da regra do dispositivo eram calculados toda noite e descartados aqui.
+      etapas.backfill_votos = anotar(r, "backfill de votos", resumirBackfill(r.body));
       if (r.body?.restantes) restantes = true;
     } catch {
       etapas.backfill_votos = { erro: "backfill falhou nesta rodada" };
