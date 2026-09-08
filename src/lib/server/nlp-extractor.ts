@@ -562,7 +562,15 @@ export function numeroReuniaoOrdinal(numero: string | null | undefined): number 
 const RE_TIPO_REUNIAO = /\b(Ordin[aá]ria|Extraordin[aá]ria)\b/i;
 
 // Padrão D: bloco de assinatura em Title Case — "Nome Completo\nDiretor-Presidente"
-const RE_ASSINATURA = /^([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü][a-záéíóúâêôãõçàü\s]+)\s*\n\s*(?:Diretor(?:-Presidente)?|Diretora(?:-Presidente)?|Conselheiro(?:-Presidente)?|Conselheira|Presidente)/gm;
+//
+// Fase 21 — MEDIDO: `signatarios = []` em TODAS as fixtures da ARTESP, embora o rodapé tenha
+// exatamente "André Isper Rodrigues Barnabé\nDiretor-Presidente". A versão anterior exigia
+// [a-z\s]+ depois da inicial: a segunda palavra de QUALQUER nome ("Isper", "Albert") começa em
+// maiúscula e o padrão morria ali — estava morto desde que nasceu. A hipótese "o bloco SEI é
+// removido antes" era errada: o bloco Title-Case vem ANTES do SEI. A ARTESP dependia 100% da
+// presença (camada 1 do guard de roster); com isto ela ganha a camada 2 (assinatura).
+// Palavras: inicial maiúscula + minúsculas, com conectores de/da/do/dos/das; 2 a 7 palavras.
+const RE_ASSINATURA = /^([A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+(?:[ \t]+(?:d[aeo]s?[ \t]+)?[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ][a-záéíóúâêôãõçàü]+){1,6})[ \t]*\n\s*(?:Diretor(?:-Presidente)?|Diretora(?:-Presidente)?|Conselheiro(?:-Presidente)?|Conselheira|Presidente)\b/gm;
 
 // Padrão E: bloco de assinatura ARTESP em CAIXA ALTA — "NOME COMPLETO\nDiretor-Presidente"
 // Necessário porque deliberações ARTESP usam nomes em maiúsculas no rodapé.
@@ -1155,12 +1163,16 @@ export function extractFields(text: string): ExtractedFields {
 
   const signatarios: string[] = [];
 
-  // Padrão A: title-case + newline
+  // Padrão A: title-case + newline. Fase 21 — com o padrão vivo, "Conselho Diretor\nPresidente"
+  // (a INSTITUIÇÃO, num cabeçalho) casaria como nome; o filtro institucional já existia para o
+  // rodapé inline e passa a valer aqui também.
   RE_ASSINATURA.lastIndex = 0;
   let sig: RegExpExecArray | null;
   while ((sig = RE_ASSINATURA.exec(textSemSEI)) !== null) {
-    const nome = sig[1].trim();
-    if (nome.length > 4 && !signatarios.includes(nome)) signatarios.push(nome);
+    const nome = sig[1].replace(/\s+/g, " ").trim();
+    if (nome.length <= 4 || signatarios.includes(nome)) continue;
+    if (RE_NOME_INSTITUCIONAL.test(nome) || isRoleWordOnly(nome) || !isLikelyPersonName(nome)) continue;
+    signatarios.push(nome);
   }
 
   // Padrão F: dash (ANM) — "Nome - Diretor(a)"

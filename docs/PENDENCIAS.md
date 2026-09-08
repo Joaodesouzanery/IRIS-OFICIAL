@@ -3,6 +3,64 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 21 (08/set/2026) — o número que decide chega até você; a classe que se repete; o que ninguém lia
+
+**Sequência:** deploy verde → **"Rodar tudo"** → **ler o banner** da tela de Votos (é lá que o
+delta da regra do dispositivo aparece agora) → colar `docs/qa-fase21.sql`. **Nenhuma migration.**
+
+**⚠️ A LIÇÃO DA FASE — o meu próprio commit sem consumidor.** `materializar-faltantes` calculava
+toda noite `roster_nao_conferivel`, `fora_da_janela`, `upsert_falhas` e `delta_dispositivo`, e o
+único chamador lia três chaves. Uma run em que TODAS as escritas de voto falharam mostrava o mesmo
+banner verde de uma run vazia. A etapa123 é transversal: toda chave numérica do payload precisa
+de leitor fora da rota, e toda chave do resumo precisa de leitor na tela.
+
+**O que a fase entregou:**
+1. **O banner mostra o que o materializador recusou ou não conseguiu** — roster não conferível
+   (com os nomes), anteriores ao 1º mandato conhecido, escritas que FALHARAM, e a linha da regra
+   do dispositivo (desligada) com os dois sentidos do delta.
+2. **Medição dos predicados duplicados** (etapa124, 342 itens reais, baseline congelado). Mudou o
+   diagnóstico: o predicado de contestação VIGENTE casa "Taxa Anual por Hectare **vencida**" em 10
+   itens unânimes (falso positivo: voto suprimido) e não vê "divergência parcial" em 2 (falso
+   negativo: consenso fabricado). A união que eu tinha definido na Fase 20 herdaria os 10 erros;
+   `RE_CONTESTADO_AMPLO` foi corrigido pela medição.
+3. **Uma implementação por conceito** (etapa125): unanimidade negada (a ANTT lia "não houve
+   unanimidade" como consenso — **corrigido, sem esperar aprovação**), roster de presentes (4
+   cópias → 1), limiares 0,85/0,6 (10 literais → 2 constantes), contestação co-localizada,
+   `isVotoNominal` honrando `proveniencia` em **11** leitores (a varredura dizia 6), gates de
+   importação renomeados.
+4. **ARTESP ganhou a camada 2 do guard** (etapa126): `signatarios` era `[]` em todos os
+   documentos porque o padrão Title-Case exigia minúsculas depois da inicial ("André **I**sper"
+   nunca casava) — morto desde que nasceu. A hipótese do relatório ("o bloco SEI é removido
+   antes") era falsa. E o item "ANTT 264ª RDE perde presença por ligadura" também era falso:
+   medido, devolve os 5 nomes. Registrado no teste.
+
+**⏳ AGUARDA VOCÊ:**
+- **A regra do dispositivo (commit 5).** Depois de uma "Rodar tudo", o banner mostra
+  `regra do dispositivo (desligada): −N voto(s) em M item(ns); K com divergência que o predicado
+  atual não vê; J unânime(s) que ele suprime por "taxa vencida"`. Com esses três números, diga
+  "aplica" e a regra passa a valer nos três sítios, com a mudança datada em
+  `docs/METODOLOGIA-METRICAS.md`. O `mandatos/stats` já publica `total_finais_estrito` ao lado do
+  aproximado — mesma decisão, mesmo momento.
+- **Severino Medeiros Ramos Neto (ANTT)** tem mandato `fonte_dado='automatico'` com posse
+  placeholder **01/01/2026** (`20260710120000_seed_diretor_antt_dsm.sql`). Entra no roster e
+  recebe voto inferido, mas não conta como janela conhecida. **Preciso da data real de posse
+  (DOU)** para uma migration promovê-lo a `verificado`.
+
+**O que mais está pronto e ninguém aciona (varredura da pergunta 6):**
+- `votos/reprocessar-abstencoes` — rota **sem nenhum chamador** no código (este arquivo dizia
+  "ação manual"). Vira passo da esteira ou sai: sua decisão.
+- `reprocess-ignorados` — este arquivo (linha do card "Revisão humana") dizia que havia botão;
+  **não há**: só o pipeline chama, com `dry_run=0`.
+- `qualidade-regulatoria/coletas/derivadas/cron` — rota existe, não está no `vercel.json` (limite
+  Hobby de 2 crons); roda via pipeline.
+- A lista de migrations "pendentes" abaixo (jun–ago) está provavelmente **velha**: aplicação manual
+  não registra em `schema_migrations`. O `qa-fase21.sql` ③ confere as que têm efeito verificável
+  (índices, colunas, `item_id` nulo, filhos de pauta arquivados); as de dado puro não têm prova
+  por consulta — remover da lista pelo resultado.
+
+**Fora de escopo, registrado:** unificar os três motores de `inferResultado` e as 11 cópias de
+`normalize` (fase própria, com a medição da etapa124 na mão); cron e OCR dos 45 (decisões suas).
+
 ## 🔴 FASE 20 (06/set/2026) — o reparo que REPARA, o voto no nome certo, a ANTT de volta
 
 **Sequência:** deploy verde → **"Rodar tudo"** (pelo menos 2 runs, para o rodízio girar) →
