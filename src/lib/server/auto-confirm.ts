@@ -7,6 +7,7 @@
  * permanece na fila manual. É conservador de propósito (erra para a revisão).
  */
 
+import { ataEhFonteDeDecisao } from "@/lib/server/colegiado-sources";
 import { isWarningInformativo } from "@/lib/server/upload-analysis";
 
 export const AUTO_CONFIRM_MIN_CONFIDENCE = 0.9;
@@ -37,6 +38,8 @@ export interface AutoConfirmDoc {
   chars_per_page?: number | null;
   is_duplicate?: boolean | null;
   agencia_id?: string | null;
+  /** Fase 24 — a sigla decide se a ata é fonte de decisão (ARTESP: não). */
+  agencia_sigla?: string | null;
   ata_items?: AtaItem[] | null;
   warnings?: string[] | null;
   campos_detectados?: { preview?: Record<string, any> } | null;
@@ -75,7 +78,13 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
     // splitter não achou itens não pode ser arquivada em silêncio — foi o buraco da ANM). Mas
     // "não conta como final" escondia a causa: 20 atas (18 ARTESP, 2 ANTT) giravam a cada run
     // sem ninguém saber que o defeito é o splitter ter devolvido ZERO itens. O motivo agora diz.
-    if (tipo === "ata") return { ok: false, reason: "ata sem itens parseados (splitter=0) — abrir o PDF: ata real ou capa/anexo?" };
+    if (tipo === "ata") {
+      // Fase 24 — ARTESP: a ata não é a fonte de decisão; o confirm-lote a arquiva com nome.
+      if (!ataEhFonteDeDecisao(doc.agencia_sigla ?? preview.agencia_sigla_detected ?? null)) {
+        return { ok: false, reason: "ata não é fonte de decisão nesta agência (arquivada pelo confirm-lote como ata_fonte_nao_deliberativa)" };
+      }
+      return { ok: false, reason: "ata sem itens parseados (splitter=0) — abrir o PDF: ata real ou capa/anexo?" };
+    }
     return { ok: false, reason: "não conta como final" };
   }
   const minConfidence = isVotoIndividualImportavel

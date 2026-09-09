@@ -17,7 +17,7 @@ import { requireAdminOrCron } from "@/lib/server/request-guards";
 import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import { hasBudget } from "@/lib/server/time-budget";
-import { COLEGIADO_SIGLAS, dataReuniaoPlausivel, fonteNominaVotos } from "@/lib/server/colegiado-sources";
+import { COLEGIADO_SIGLAS, dataReuniaoPlausivel, fonteNominaVotos, ataEhFonteDeDecisao } from "@/lib/server/colegiado-sources";
 import {
   buildVotoRows,
   buildVotoRowsFromSuggestions,
@@ -584,6 +584,18 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           // silêncio (era o buraco da ANM: ata é sempre counts_as_final=false, sem itens
           // caía aqui como "apoio" e sumia sem passar pelas Exceções). Fica em revisão.
           if (d.tipo_documento === "ata") {
+            // Fase 24 — na ARTESP a ata NÃO é a fonte de decisão (cada decisão é uma deliberação
+            // própria): nunca terá itens, e não deve. Arquiva com nome; ANM/ANTT seguem em revisão.
+            if (!ataEhFonteDeDecisao(siglaPorId.get(effectiveAgenciaId) ?? null)) {
+              await markDocumentReviewed(db, d.documento_id, "ignored", null, "ata_fonte_nao_deliberativa");
+              results.push({
+                filename: d.filename,
+                status: "document_saved",
+                documento_id: d.documento_id ?? null,
+                message: "Ata arquivada: nesta agencia a decisao e a DELIBERACAO, nao a ata (ata_fonte_nao_deliberativa).",
+              });
+              continue;
+            }
             await markDocumentReviewed(db, d.documento_id, "review_pending");
             results.push({
               filename: d.filename,

@@ -122,7 +122,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
 
     let query = db
       .from("documentos_regulatorios")
-      .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, file_hash, semantic_duplicate_key, agencia_id, ata_items, warnings, campos_detectados")
+      .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, file_hash, semantic_duplicate_key, agencia_id, ata_items, warnings, campos_detectados, agencias (sigla)")
       .eq("status", "review_pending")
       // Perf (QA ago/2026): inelegível crônico ganha campos_detectados.auto_skip na 1ª
       // avaliação e SAI das rodadas seguintes — antes o mesmo backlog de pauta/apoio era
@@ -142,6 +142,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     analisados += docs.length;
 
     for (const doc of docs as any[]) {
+      doc.agencia_sigla = doc.agencias?.sigla ?? null; // Fase 24 — a sigla decide se a ata é fonte de decisão
       const fields = doc?.campos_detectados?.preview?.fields ?? {};
       const tipo = String(fields.tipo_documento ?? doc.tipo_documento ?? "");
       if (tipo === "voto_individual" && fields.relator && doc.agencia_id) {

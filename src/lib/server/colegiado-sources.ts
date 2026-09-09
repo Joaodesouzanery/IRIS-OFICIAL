@@ -274,3 +274,27 @@ export function dataReuniaoPlausivel(
   }
   return { plausivel: true };
 }
+
+/**
+ * A ATA é a fonte de DECISÃO desta agência? (Fase 24) — conceito distinto de "nomina voto".
+ *
+ * Na ANM e na ANTT a ata carrega os itens decididos (`Processo:`/`Decisão:` numerados): ata sem
+ * itens é DEFEITO de extração e fica em revisão (a lição da ANM). Na ARTESP a ata do Conselho
+ * Diretor é narrativa; cada decisão sai como DELIBERAÇÃO própria, e é ela que a esteira
+ * materializa. Uma ata da ARTESP nunca terá itens — e não deve: produziria duplicatas das
+ * deliberações. Medido no qa-fase23: 18 atas reais da ARTESP presas em "Revisar" por uma regra
+ * escrita para a ANM. Elas são arquivadas com nome (`ata_fonte_nao_deliberativa`), preservando
+ * `campos_detectados` (a presença lida do preâmbulo continua disponível).
+ */
+const FONTE_DE_DECISAO: Record<string, "ata" | "deliberacao"> = {
+  ANM: "ata",
+  ANTT: "ata",
+  ARTESP: "deliberacao",
+};
+
+export function ataEhFonteDeDecisao(agenciaSigla: string | null | undefined): boolean {
+  const sigla = String(agenciaSigla ?? "").toUpperCase();
+  // Agência desconhecida: assume que a ata decide — errar para o lado da revisão, nunca do arquivo.
+  return (FONTE_DE_DECISAO[sigla] ?? "ata") === "ata";
+}
+
