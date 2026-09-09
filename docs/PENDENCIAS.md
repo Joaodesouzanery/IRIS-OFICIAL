@@ -3,6 +3,46 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 22 (08/set/2026) — a regra vale, as ausências que talvez não existam, a exceção que diz por quê
+
+**Sequência:** deploy verde → colar `docs/qa-fase22.sql` → **olhar 3-5 linhas do bloco ② contra
+os PDFs** → me dizer o que viu. **Nenhuma migration.**
+
+**O que a fase entregou:**
+1. **A regra do dispositivo VALE desde 08/09/2026** (aprovada com os números do banner: −4 votos
+   em 2 itens; 2 divergências não vistas; 0 "taxa vencida"). Três sítios; medição invertida
+   (mede a regra antiga contra a vigente); `METODOLOGIA-METRICAS.md` §0.0 datada; o card do
+   Mandatos usa o predicado canônico (`total_aproximado` fica só como referência).
+2. **Ausências da ARTESP medidas**: nas 6 fixtures reais o extrator produz ZERO ausentes — o
+   "+48 aus/abst" do André Isper vem de documentos que só existem em produção. Suspeita com
+   endereço: `upload-analysis.ts` apaga favor/contra/abstenção para fonte que não nomina voto e
+   deixa `_ausente`/`_impedido` intactos. `extractAusentesComOrigem` preserva rótulo × prosa.
+3. **O card separa impedimento de ausência** ("+N aus · +M abst · +K imp"; "48 do quê?" tem
+   resposta). Agregação pura em `diretor-overview-stat.ts`.
+4. **A exceção diz por quê**: motivo do auto-confirm por documento + agrupado por causa; os
+   "reprocessáveis" mostram "(ciclo N/3)".
+
+**⚠️ Incidente de processo, registrado:** o commit `70a20d9` subiu com UM teste vermelho porque o
+encadeamento passou o `npm run test` por um pipe — a classe que o ritual proíbe desde a Fase 14.
+Corrigido em `65a0f08`; o ritual agora captura o exit de cada passo em variável e o commit só
+roda com os quatro zerados.
+
+**⏳ AGUARDA VOCÊ — `qa-fase22.sql`:**
+- **② detalhe do André Isper**: se `presente_no_mesmo_doc = true` na maioria (presente E ausente
+  no mesmo documento), é artefato e entra o conserto (b): nome listado como presente não vira
+  ausente, salvo rótulo explícito. Se os trechos mostrarem "Ausência Justificada:" de verdade,
+  as ausências são reais e não há o que consertar.
+- Depois do conserto: rota `reparar-ausentes` (dry-run) para as linhas já gravadas, com
+  antes/depois no banner. Nunca toca `revisao_humana`.
+- **③ atas da ANM como `diretoria`**: se > 0, fase própria de reclassificação.
+- **④ motivo das exceções** no banco inteiro (a tela agrupa só os 50 carregados).
+- Severino (ANTT): segue esperando a data de posse do DOU.
+
+**Sobre "os diretores deveriam ter o mesmo número de votos?"** Não. Na ARTESP nenhum voto é
+nominal; a contagem mede **janela de mandato** (André/Diego 07/10/2024, Raquel 14/05/2025,
+Fernanda 28/08/2025) e **presença declarada** (jan-abr/2026 só André + Diego no "Constituição:").
+Quem não está no roster não recebe linha nenhuma. A ordem 515/497/470/457 é a dos mandatos.
+
 ## 🔴 FASE 21 (08/set/2026) — o número que decide chega até você; a classe que se repete; o que ninguém lia
 
 **Sequência:** deploy verde → **"Rodar tudo"** → **ler o banner** da tela de Votos (é lá que o
