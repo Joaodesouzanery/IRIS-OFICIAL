@@ -85,3 +85,18 @@ describe("canAutoConfirm — gate conservador de auto-confirmação", () => {
     expect(canAutoConfirm(docBase({}, { import_counts_as_final: false })).ok).toBe(false);
   });
 });
+
+describe("canAutoConfirm — Fase 23: a ata sem itens diz por quê", () => {
+  it("ata com splitter=0 reprova com o motivo ESPECÍFICO, não o genérico 'não conta como final'", () => {
+    const ata = docBase({ tipo_documento: "ata", ata_items: [] }, { tipo_documento: "ata", import_counts_as_final: false });
+    const v = canAutoConfirm(ata);
+    expect(v.ok).toBe(false);
+    expect(v.reason).toMatch(/ata sem itens parseados/);
+    expect(v.reason).not.toBe("não conta como final");
+  });
+  it("documento de apoio continua com o motivo genérico", () => {
+    const apoio = docBase({ tipo_documento: "deliberacao" }, { tipo_documento: "deliberacao", import_counts_as_final: false });
+    expect(canAutoConfirm(apoio).reason).toBe("não conta como final");
+  });
+});
+

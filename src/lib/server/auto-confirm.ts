@@ -71,6 +71,11 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
   // Ata com itens (e voto individual) é importável mesmo com a flag false (o confirm
   // materializa; só o que tem resultado conta como final nas métricas).
   if (!isImportableAta && !isVotoIndividualImportavel && (fields.import_counts_as_final === false || preview.import_counts_as_final === false)) {
+    // Fase 23 — a ata sem itens fica em revisão DE PROPÓSITO (confirm/route.ts: ata real cujo
+    // splitter não achou itens não pode ser arquivada em silêncio — foi o buraco da ANM). Mas
+    // "não conta como final" escondia a causa: 20 atas (18 ARTESP, 2 ANTT) giravam a cada run
+    // sem ninguém saber que o defeito é o splitter ter devolvido ZERO itens. O motivo agora diz.
+    if (tipo === "ata") return { ok: false, reason: "ata sem itens parseados (splitter=0) — abrir o PDF: ata real ou capa/anexo?" };
     return { ok: false, reason: "não conta como final" };
   }
   const minConfidence = isVotoIndividualImportavel
