@@ -9,6 +9,7 @@
  * `raw_extraction.auto_confirmado=true` (trilha de auditoria: auto vs manual).
  */
 
+import { decidirDuplicata } from "@/lib/server/duplicata-da-fila";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -73,6 +74,8 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
   let puladosTotal = 0;
   let analisados = 0;
   let confirmadosTotal = 0;
+  let duplicatasArquivadas = 0;
+  let duplicatasLiberadas = 0;
   let rodadas = 0;
   let restantes = false;
   const confirmDetalhes: unknown[] = [];
@@ -84,7 +87,7 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
 
     let query = db
       .from("documentos_regulatorios")
-      .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, agencia_id, ata_items, warnings, campos_detectados")
+      .select("id, status, tipo_documento, extraction_confidence, chars_per_page, is_duplicate, file_hash, semantic_duplicate_key, agencia_id, ata_items, warnings, campos_detectados")
       .eq("status", "review_pending")
       // Perf (QA ago/2026): inelegível crônico ganha campos_detectados.auto_skip na 1ª
       // avaliação e SAI das rodadas seguintes — antes o mesmo backlog de pauta/apoio era
@@ -112,8 +115,45 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
       }
     }
 
+    // ═══ Fase 23 — duplicata da PRÓPRIA fila tem saída ═════════════════════
+    // 36 docs presos por "possível duplicata" sem gêmeo confirmado (irmãos marcando-se
+    // mutuamente). Decisão pura em `duplicata-da-fila.ts`: arquivar (há confirmado), liberar
+    // (é o primeiro da dupla) ou esperar (o irmão confirma antes).
+    const duplicados = (docs as any[]).filter((d) => d.is_duplicate);
+    if (duplicados.length > 0) {
+      const hashes = [...new Set(duplicados.map((d) => d.file_hash).filter(Boolean))] as string[];
+      const chaves = [...new Set(duplicados.map((d) => d.semantic_duplicate_key).filter(Boolean))] as string[];
+      const [porHash, porChave, pendentes] = await Promise.all([
+        hashes.length ? db.from("documentos_regulatorios").select("id, deliberacao_id, file_hash, semantic_duplicate_key").in("file_hash", hashes).eq("status", "confirmed") : Promise.resolve({ data: [] }),
+        chaves.length ? db.from("documentos_regulatorios").select("id, deliberacao_id, file_hash, semantic_duplicate_key").in("semantic_duplicate_key", chaves).eq("status", "confirmed") : Promise.resolve({ data: [] }),
+        chaves.length ? db.from("documentos_regulatorios").select("id, semantic_duplicate_key").in("semantic_duplicate_key", chaves).in("status", ["queued", "processing", "review_pending"]) : Promise.resolve({ data: [] }),
+      ]);
+      const confirmados = [...((porHash.data ?? []) as any[]), ...((porChave.data ?? []) as any[])];
+      for (const doc of duplicados) {
+        const gemeos = confirmados.filter((g) => (doc.file_hash && g.file_hash === doc.file_hash) || (doc.semantic_duplicate_key && g.semantic_duplicate_key === doc.semantic_duplicate_key));
+        const irmaos = ((pendentes.data ?? []) as any[]).filter((p) => p.semantic_duplicate_key === doc.semantic_duplicate_key).map((p) => String(p.id));
+        const desfecho = decidirDuplicata({ doc: { id: doc.id, file_hash: doc.file_hash ?? null }, gemeosConfirmados: gemeos, irmaosPendentesIds: irmaos });
+        if (desfecho.acao === "arquivar") {
+          const { error: erroArq } = await db.from("documentos_regulatorios").update({
+            status: "ignored",
+            reviewed_at: new Date().toISOString(),
+            updated_at: new Date().toISOString(),
+            campos_detectados: { ...(doc.campos_detectados ?? {}), arquivado_motivo: desfecho.motivo },
+            duplicate_documento_id: desfecho.original_id,
+            ...(desfecho.original_deliberacao_id ? { duplicate_deliberacao_id: desfecho.original_deliberacao_id } : {}),
+          }).eq("id", doc.id);
+          if (erroArq) console.error("[auto-confirm] arquivar duplicata falhou:", erroArq.message);
+          else { duplicatasArquivadas++; doc.status = "ignored"; }
+        } else if (desfecho.acao === "liberar") {
+          doc.is_duplicate = false; // segue para o gate normal
+          duplicatasLiberadas++;
+        }
+        // "esperar": fica como está; o irmão confirma antes e este cai em "arquivar" na próxima.
+      }
+    }
+
     const elegiveis: any[] = [];
-    for (const doc of docs) {
+    for (const doc of (docs as any[]).filter((d) => d.status !== "ignored")) {
       const verdict = canAutoConfirm(doc as any);
       if (verdict.ok) elegiveis.push(doc);
       else {
@@ -175,6 +215,9 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     confirmados_total: confirmadosTotal,
     restantes, // true = parou por orçamento/rodadas; re-chamar para continuar
     pulados: puladosTotal,
+    /** Fase 23 — duplicatas da própria fila: arquivadas (havia gêmeo confirmado) e liberadas (primeiro da dupla). */
+    duplicatas_arquivadas: duplicatasArquivadas,
+    duplicatas_liberadas: duplicatasLiberadas,
     exemplos_pulados: ultimosPulados,
     confirm: confirmDetalhes.length === 1 ? confirmDetalhes[0] : confirmDetalhes,
     legal_notice: "Auto-confirmação CONSERVADORA em loop (doc final + confiança ok + votos com match ≥0.85). Ambíguos ficam na fila manual.",

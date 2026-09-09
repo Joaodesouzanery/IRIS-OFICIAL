@@ -281,6 +281,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     const r = await call(autoConfirmPOST, "/api/v1/upload/auto-confirm", "autoConfirm", { limit: 50, loop: true });
     etapas.auto_confirm = anotar(r, "auto-confirm", {
       confirmados: r.body?.confirmados_total ?? 0,
+      // Fase 23 — mesma chave do confirm-lote: o banner já soma "duplicata(s) resolvida(s)".
+      duplicatas_arquivadas: r.body?.duplicatas_arquivadas ?? 0,
+      duplicatas_liberadas: r.body?.duplicatas_liberadas ?? 0,
       restantes: r.body?.restantes ?? false,
     });
     if (r.body?.restantes) restantes = true;
