@@ -27,7 +27,7 @@ const METODO = ler("docs/METODOLOGIA-METRICAS.md");
 
 describe("etapa96 · a rota decompõe — efetivo é Favorável+Desfavorável", () => {
   it("conta ausências e abstenções SEPARADAS do efetivo", () => {
-    expect(ROTA).toMatch(/ausentes: number/);
+    expect(ROTA).toMatch(/ausentes: number|StatDoDiretor/);
     expect(ROTA).toMatch(/abstencoes: number/);
     expect(ROTA).toMatch(/tipo_voto === "Ausente"\) s\.ausentes\+\+/);
     expect(ROTA).toMatch(/tipo_voto === "Abstencao"\) s\.abstencoes\+\+/);

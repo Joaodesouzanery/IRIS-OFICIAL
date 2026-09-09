@@ -5,6 +5,7 @@
  * mandato confiável ou voto real aparece; rejeitados nunca voltam pela via dos votos.
  */
 
+import { agregarVoto, statVazio, type StatDoDiretor } from "@/lib/server/diretor-overview-stat";
 import { isVotoNominal } from "@/lib/server/vote-inference";
 import { NextRequest, NextResponse } from "next/server";
 import { contarRelatoriasPorDiretor } from "@/lib/server/relatoria";
@@ -64,7 +65,7 @@ export async function GET(req: NextRequest) {
     selectAllPaged(() => {
       let q = db
         .from("votos")
-        .select("id, tipo_voto, is_divergente, is_nominal, proveniencia, diretores!inner (id, nome, agencia_id)");
+        .select("id, tipo_voto, motivo_nao_voto, is_divergente, is_nominal, proveniencia, diretores!inner (id, nome, agencia_id)");
       if (agenciaId) q = q.eq("diretores.agencia_id", agenciaId);
       // Ordem total única (PK dos votos) → paginação por offset determinística.
       return q.order("id", { ascending: true });
@@ -95,17 +96,11 @@ export async function GET(req: NextRequest) {
       .map((d) => d.id),
   );
 
-  type Stat = {
-    nome: string; cargo: string | null; agencia_id: string | null;
-    total: number; favoravel: number; desfavoravel: number; divergente: number; nominais: number; inferidos: number;
-    // Fase 16 — Ausente/Abstencao contavam +1 no `total` que a tela compara. Voto EFETIVO é
-    // Favoravel+Desfavoravel; ausência é presença de registro, não voto (METODOLOGIA 01/09/2026).
-    ausentes: number; abstencoes: number;
-  };
+  type Stat = { nome: string; cargo: string | null; agencia_id: string | null } & StatDoDiretor;
   const stats = new Map<string, Stat>();
   for (const d of aprovados) {
     if (d.agencia_id && !colegiadaIds.has(d.agencia_id)) continue; // fora da esteira de votos
-    stats.set(d.id, { nome: d.nome, cargo: d.cargo ?? null, agencia_id: d.agencia_id, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0, ausentes: 0, abstencoes: 0 });
+    stats.set(d.id, { nome: d.nome, cargo: d.cargo ?? null, agencia_id: d.agencia_id, ...statVazio() });
   }
 
   for (const row of votosRes.rows) {
@@ -116,16 +111,11 @@ export async function GET(req: NextRequest) {
     if (rejeitadosIds.has(id)) continue;
     if (dir.agencia_id && !colegiadaIds.has(dir.agencia_id)) continue;
     if (!stats.has(id)) {
-      stats.set(id, { nome: dir.nome ?? "—", cargo: null, agencia_id: dir.agencia_id ?? null, total: 0, favoravel: 0, desfavoravel: 0, divergente: 0, nominais: 0, inferidos: 0, ausentes: 0, abstencoes: 0 });
+      stats.set(id, { nome: dir.nome ?? "—", cargo: null, agencia_id: dir.agencia_id ?? null, ...statVazio() });
     }
-    const s = stats.get(id)!;
-    s.total++;
-    if ((row as any).tipo_voto === "Favoravel") s.favoravel++;
-    else if ((row as any).tipo_voto === "Desfavoravel") s.desfavoravel++;
-    else if ((row as any).tipo_voto === "Ausente") s.ausentes++;
-    else if ((row as any).tipo_voto === "Abstencao") s.abstencoes++;
-    if ((row as any).is_divergente) s.divergente++;
-    if (isVotoNominal(row as any)) s.nominais++; else s.inferidos++;
+    // Fase 22 — a agregação é pura e testada (`diretor-overview-stat.ts`): separa impedimento
+    // de ausência física, que o card somava num único "+N aus/abst".
+    agregarVoto(stats.get(id)!, { ...(row as any), nominal: isVotoNominal(row as any) });
   }
 
   // Etapa67 — RELATORIA por diretor: o eixo nominal em 100% dos itens. Uma matéria = um relator
@@ -169,6 +159,7 @@ export async function GET(req: NextRequest) {
         efetivos: s.favoravel + s.desfavoravel,
         ausentes: s.ausentes,
         abstencoes: s.abstencoes,
+        impedidos: s.impedidos,
         favoravel: s.favoravel,
         desfavoravel: s.desfavoravel,
         divergente: s.divergente,

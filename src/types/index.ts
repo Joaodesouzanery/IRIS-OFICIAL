@@ -424,6 +424,8 @@ export interface DiretorOverviewItem {
   efetivos?: number;
   ausentes?: number;
   abstencoes?: number;
+  /** Fase 22 — `Ausente` por impedimento/suspeição: estava na sessão, não votou. */
+  impedidos?: number;
   favoravel: number;
   desfavoravel: number;
   divergente: number;

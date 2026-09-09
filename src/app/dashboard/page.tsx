@@ -225,9 +225,17 @@ export default function DashboardPage() {
                           como "voto" inflava a comparação entre diretores; a mudança de
                           definição está datada em docs/METODOLOGIA-METRICAS.md (01/09/2026). */}
                       {formatNumber(d.efetivos ?? d.total)}
-                      {((d.ausentes ?? 0) + (d.abstencoes ?? 0)) > 0 && (
-                        <span className="ml-1 text-[10px] text-text-muted font-normal">
-                          +{(d.ausentes ?? 0) + (d.abstencoes ?? 0)} aus/abst
+                      {/* Fase 22 — impedimento separado de ausência: "48 do quê?" tem resposta. */}
+                      {((d.ausentes ?? 0) + (d.abstencoes ?? 0) + (d.impedidos ?? 0)) > 0 && (
+                        <span
+                          className="ml-1 text-[10px] text-text-muted font-normal"
+                          title={`${d.ausentes ?? 0} ausência(s) · ${d.abstencoes ?? 0} abstenção(ões) · ${d.impedidos ?? 0} impedimento(s)/suspeição(ões)`}
+                        >
+                          {[
+                            (d.ausentes ?? 0) > 0 ? `+${d.ausentes} aus` : null,
+                            (d.abstencoes ?? 0) > 0 ? `+${d.abstencoes} abst` : null,
+                            (d.impedidos ?? 0) > 0 ? `+${d.impedidos} imp` : null,
+                          ].filter(Boolean).join(" · ")}
                         </span>
                       )}
                     </span>
