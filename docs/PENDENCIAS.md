@@ -3,6 +3,54 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 23 (09/set/2026) — as ausências eram reais; a represa das exceções; o quadro por agência
+
+**Sequência:** deploy verde → **"Rodar tudo" 2×** (a 2ª arquiva os irmãos das duplicatas) →
+colar `docs/qa-fase23.sql` → **decidir linha a linha o bloco ①** (as 20 atas sem itens) →
+colar `docs/qa-fase21.sql` ① para a cobertura 2026. **Nenhuma migration.**
+
+**⚠️ A LIÇÃO DA FASE — o instrumento que me enganou.** O `qa-fase22` ② mostrava, em 60 linhas, um
+`trecho` com a citação do Decreto — e a revisão externa concluiu "artefato: a regex casou o rodapé
+legal". Era o **meu SQL**: `raw_text` nulo, o COALESCE caía no `fundamento_decisao`, "ausen" não
+existia ali, `position()` dava 0 e o trecho era o início do texto. A prova real estava em
+`ausentes_extraidos = ["André Isper…", "Afastamento em Férias"]` — o rótulo "Ausência
+Justificada: Nome - Cargo - Afastamento em Férias" dividido nos " - ". **As 48 ausências são
+reais** (férias, sessões de 25 e 31/03/2026). Uma coluna que não sabe dizer "não encontrei" vira
+evidência do que não existe.
+
+**O que a fase entregou:**
+1. Rótulo de ausência só produz nomes ("Afastamento em Férias" saía como se fosse pessoa; 56
+   linhas). `qa-fase22` ② diz explicitamente quando não há ocorrência.
+2. **"Aviso" não bloqueia o auto-confirm** (aprovado): 85 deliberações da ARTESP presas por
+   `[AVISO·C06]` saem da represa e ganham voto inferido (METODOLOGIA §0.0, 09/09).
+3. **Duplicata da própria fila tem saída**: 36 docs em beco; o primeiro da dupla é liberado, o
+   outro é arquivado com link quando o primeiro confirma.
+4. Ata sem itens diz por quê (20 docs) — decisão sua no `qa-fase23.sql` ①.
+5. **Falha silenciosa medida: 187 escritas, 93 sem checagem (49,7%)** — a classe da Fase 19 NÃO
+   fechou. Baseline congelado (etapa133); o número só pode cair. Onde consertar (top):
+   `agencias/[id]/importar` (7), `pipeline.ts` (7), `candidato-approval` (6),
+   `monitoring-runner` (6), `redatar` (5), `enqueue-pdfs` (4), `diretor-merge` (4).
+6. Os 9 itens "diretoria" da ANM **não são atas** (Gerência Regional, Corregedoria…): meu
+   `ILIKE '%ata%'` casou "Assist**ência Direta**". Nada a limpar.
+
+### O quadro por agência — o que está fechado, o que é código, o que é dado SEU
+
+| Etapa | ANM | ANTT | ARTESP |
+|---|---|---|---|
+| Coleta | ✅ (F7/13/15, fonte órfã) | ✅ reserva por laço (F20) | ✅ WAF era falso positivo (F17) |
+| Classificação | ✅ `diretoria` ≠ ata (F23) | ✅ pauta ≠ ata (F19) | ✅ pauta/apoio arquivados |
+| Extração de resultado/dispositivo | ✅ splitter 0% sem resultado; reparo 3 degraus (F20) | ✅ voto nominal 100% | ✅ inferido; **nominal nunca existirá** (limite documental) |
+| Contestação / unanimidade | ✅ regra do dispositivo (F22) | ✅ "não houve unanimidade" (F21) | ✅ C06 liberado (F23) |
+| Roster / voto no nome certo | ✅ 3 camadas (F20); Roger/Tasso sem mandato → recusa | ⚠️ **Severino: posse placeholder — DADO SEU (DOU)** | ✅ presença + assinatura (F21); ausências reais (F23) |
+| Acervo antigo | ✅ fora da janela (F20) | — | — |
+| Exceções | 2 "sinais contraditórios" + 1 "sessão anterior": corretas em esperar | 2 atas sem itens → qa-fase23 ① | 18 atas sem itens → qa-fase23 ①; 36 duplicatas → drenam em 2 runs |
+| Pendente de decisão sua | — | **45 votos escaneados** (OCR grátis testado, não decidido) | — |
+| Cobertura 2026 | `qa-fase21.sql` ① (você roda) | idem | idem |
+
+**Transversal:** predicados unificados (contestação, unanimidade, roster, limiar, nominal —
+F21); `inferResultado` ainda com 3 motores (fase própria); falha silenciosa 49,7% (item 5);
+capacidade-sem-consumidor com teste transversal (etapa123); cron desligado (decisão sua).
+
 ## 🔴 FASE 22 (08/set/2026) — a regra vale, as ausências que talvez não existam, a exceção que diz por quê
 
 **Sequência:** deploy verde → colar `docs/qa-fase22.sql` → **olhar 3-5 linhas do bloco ② contra
