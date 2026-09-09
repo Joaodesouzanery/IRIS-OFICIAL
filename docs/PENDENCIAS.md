@@ -3,6 +3,34 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 24 (09/set/2026) — a trava de sentido único, a ANM presa por três atas, o número que só cai
+
+**Sequência:** **aplicar `20260909120000_reinserir_luiz_paniago_anm.sql`** → deploy verde →
+**"Rodar tudo" 2×** (a 1ª limpa carimbos e reanalisa; a 2ª confirma) → colar `docs/qa-fase24.sql`.
+
+**O que a fase entregou (ordem aprovada por você):**
+1. **Falha silenciosa no caminho de voto: 93 → 72** (38,5%). `exigirEscrita` é o helper único;
+   confirm, pipeline, candidato-approval, redatar, dedup e diretor-merge checam `{error}` e os
+   contadores só sobem quando gravou. Baseline da etapa133 rebaixado; só pode cair.
+2. **ANM destravada em código**: o aviso "Sinais contraditórios" usa o predicado corrigido (era o
+   `vencido` solto de "taxa vencida" segurando 2 atas × ~40 itens). O ritual barrou a 1ª versão:
+   "sem divergência" passou a disparar — falso positivo que já valia nos 3 sítios desde a Fase 22;
+   lookbehind de negação. **Luiz Paniago Neves**: origem da remoção validada (limpeza v2 de agosto
+   + gabarito final com a premissa "volta após Rodar tudo", que falhou porque o extrator não cria
+   cadastro por desenho) → **migration, você aplica**.
+3. **A trava vira reavaliação** (o multiplicador): carimbo `auto_skip` obsoleto é apagado (C06,
+   duplicata → o gate atual decide) ou reanalisado uma vez por motivo (`metadata.reanalises`).
+   Alcança os 68 + 31 + 20 + 3 que os consertos anteriores não alcançavam.
+4. **Ata que não é fonte de decisão** (ARTESP) é arquivada com nome `ata_fonte_nao_deliberativa`;
+   ANM/ANTT seguem em revisão. As 2 da ANTT (uma PAUTA, uma ata de 2 páginas) reanalisam.
+5. Metodologia: **ausência rotulada é nominal** (os 59 da ARTESP). `qa-fase24.sql`.
+
+**⏳ AGUARDA VOCÊ:** a migration do Luiz Paniago; o `qa-fase24.sql` (② responde "por que a ANM
+só tem 1 reunião de 2026"); Severino (posse no DOU); 45 escaneados.
+
+**Ainda aberto, medido:** falha silenciosa 72/187 fora do caminho de voto (importar agências 7,
+monitoring-runner 6, notícias/newsletter…); `inferResultado` com 3 motores.
+
 ## 🔴 FASE 23 (09/set/2026) — as ausências eram reais; a represa das exceções; o quadro por agência
 
 **Sequência:** deploy verde → **"Rodar tudo" 2×** (a 2ª arquiva os irmãos das duplicatas) →

@@ -45,6 +45,12 @@ passam e só `[BLOQUEANTE·]` e as prosas de qualidade seguram. Efeito: essas de
 confirmar e a receber **voto inferido** (o único tipo que a ARTESP produz); o número de votos da
 ARTESP **sobe** na virada. É liberação de represa, não mudança de definição.
 
+**09/09/2026 — ausência ROTULADA é nominal.** Os 59 votos `is_nominal` da ARTESP não são votos
+individuais: são as 56 linhas `Ausente`/`Impedido` lidas do rótulo "Ausência Justificada: Nome -
+Cargo - Afastamento em Férias" (é lido do documento, logo nominal) mais correções humanas. A
+fonte da ARTESP continua sem nominar voto de MÉRITO; ela nomina quem faltou. As 48 ausências de
+André Isper Rodrigues Barnabé (sessões de 25 e 31/03/2026) são reais.
+
 **O card "Total de deliberações" do módulo Mandatos** passa, na mesma data, a usar o predicado
 canônico (`isFinalDecisionRecord`) em vez de uma aproximação SQL que contava filho de ata sem
 `resultado`. O valor antigo segue na resposta como `total_aproximado`, só para referência.
