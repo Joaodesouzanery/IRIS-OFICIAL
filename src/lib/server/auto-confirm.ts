@@ -7,7 +7,7 @@
  * permanece na fila manual. É conservador de propósito (erra para a revisão).
  */
 
-import { INFO_WARNING_RE } from "@/lib/server/upload-analysis";
+import { isWarningInformativo } from "@/lib/server/upload-analysis";
 
 export const AUTO_CONFIRM_MIN_CONFIDENCE = 0.9;
 // Atas têm a confiança estruturalmente CAPADA em 0.72 na análise (import_counts_as_final=false
@@ -91,7 +91,9 @@ export function canAutoConfirm(doc: AutoConfirmDoc): { ok: boolean; reason: stri
     ...(doc.warnings ?? []),
     ...((preview.warnings as string[] | undefined) ?? []),
   ];
-  const qualityWarnings = allWarnings.filter((w) => typeof w === "string" && !INFO_WARNING_RE.test(w));
+  // Fase 23 — o NÍVEL do achado decide: `[AVISO·]`/`[INFO·]` passam; `[BLOQUEANTE·]` e prosa de
+  // qualidade seguram. Antes, todo achado era "warning de qualidade" por acidente de texto (85 docs).
+  const qualityWarnings = allWarnings.filter((w) => typeof w === "string" && !isWarningInformativo(w));
   if (qualityWarnings.length > 0) {
     return { ok: false, reason: `warning de qualidade: ${qualityWarnings[0].slice(0, 90)}` };
   }

@@ -38,6 +38,13 @@ consenso fabricado). Na virada, em produção: **−4 votos em 2 itens**, 2 iten
 que a regra antiga não via, 0 itens de "taxa vencida" (o acervo de produção não tinha o caso).
 Os números da tela caíram em 4; é correção, não perda.
 
+**09/09/2026 — o aviso deixa de bloquear o auto-confirm.** 85 deliberações da ARTESP estavam
+em "Revisar" por `[AVISO·C06_DECIDIDO_SEM_VOTO]` ("normal em órgão que não nomina voto"): o
+nível era *aviso* na origem, mas o gate re-derivava severidade por texto. Agora `[AVISO·]`/`[INFO·]`
+passam e só `[BLOQUEANTE·]` e as prosas de qualidade seguram. Efeito: essas deliberações passam a
+confirmar e a receber **voto inferido** (o único tipo que a ARTESP produz); o número de votos da
+ARTESP **sobe** na virada. É liberação de represa, não mudança de definição.
+
 **O card "Total de deliberações" do módulo Mandatos** passa, na mesma data, a usar o predicado
 canônico (`isFinalDecisionRecord`) em vez de uma aproximação SQL que contava filho de ata sem
 `resultado`. O valor antigo segue na resposta como `total_aproximado`, só para referência.

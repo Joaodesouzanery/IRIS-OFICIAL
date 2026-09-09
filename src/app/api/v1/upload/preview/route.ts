@@ -6,6 +6,7 @@
  * Inclui: SHA-256 dedup, detecção de agência, validação de payload total.
  */
 
+import { isWarningInformativo } from "@/lib/server/upload-analysis";
 import { NextRequest, NextResponse } from "next/server";
 import type { PreviewResult, BatchPreviewResponse } from "@/types";
 import { isDemo } from "@/lib/server/is-demo";
@@ -367,8 +368,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         const warnings = documentWarnings;
         // C3: avisos INFORMATIVOS (ex.: "documento tratado como pauta/ata revisável") não
         // rebaixam o status — só avisos de qualidade. (Espelha upload-analysis.ts.)
-        const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
-        const qualityWarnings = warnings.filter((w) => !INFO_WARNING_RE.test(w));
+        // Fase 23 — era uma CÓPIA inline da regex do upload-analysis (destinada a divergir).
+        const qualityWarnings = warnings.filter((w) => !isWarningInformativo(w));
         const semantic_duplicate_key = antt.raw.dedupe_semantic_key
           ? String(antt.raw.dedupe_semantic_key)
           : regulatoryClass.semantic_duplicate_key;

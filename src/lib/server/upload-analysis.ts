@@ -19,6 +19,24 @@ import { isOcrConfigured, MAX_OCR_BYTES } from "@/lib/server/ocr";
 // eternamente em "low_confidence". Casam pelos trechos LIMPos das mensagens (que
 // têm mojibake no restante). Usado para computar o status do preview.
 export const INFO_WARNING_RE = /tratad[oa]\s+como\s+(?:pauta|ata|envelope|documento)|precisa de revis|confirme\s+somente|entra.{0,5}nos\s+dashboards|votos\s+n.{0,3}o\s+s.{0,3}o\s+criados/i;
+
+/**
+ * Um warning é INFORMATIVO (não rebaixa status nem bloqueia o auto-confirm)? — UMA fonte (Fase 23).
+ *
+ * Duas formas: a prosa livre acima, e o ACHADO estruturado cujo nível `formatarAchados` grava no
+ * prefixo — `[AVISO·Cxx]` e `[INFO·Cxx]`. Só `[BLOQUEANTE·Cxx]` e as prosas de qualidade seguram.
+ *
+ * ═══ O que isto destrava (medido no qa-fase22 ④) ═══
+ * 85 deliberações da ARTESP estavam em "Revisar" por `[AVISO·C06_DECIDIDO_SEM_VOTO]`, cuja
+ * própria mensagem diz "normal em órgão que não nomina voto". O nível era `aviso` na origem
+ * (`consistency-checks.ts`), mas viajava só como texto, e `auto-confirm` re-derivava severidade
+ * por `INFO_WARNING_RE`, que não conhece o prefixo. Um aviso virava bloqueio por acidente de
+ * implementação — e havia uma CÓPIA inline desta regex no preview, que agora importa daqui.
+ */
+export const RE_PREFIXO_INFORMATIVO = /^\[(?:AVISO|INFO)·/;
+export function isWarningInformativo(w: unknown): boolean {
+  return typeof w === "string" && (RE_PREFIXO_INFORMATIVO.test(w) || INFO_WARNING_RE.test(w));
+}
 import { classifyRegulatoryDocument, extractAnmMeetingMetadata, detectJuizo } from "@/lib/server/regulatory-documents";
 import { dataReuniaoPlausivel, fonteNominaVotos } from "@/lib/server/colegiado-sources";
 import {
@@ -613,7 +631,7 @@ export async function analyzeUploadPdf(input: {
   const warnings = documentWarnings;
   // C3: status ignora avisos informativos (ex.: "documento tratado como pauta/ata
   // revisável") — só avisos de QUALIDADE rebaixam para low_confidence.
-  const qualityWarnings = warnings.filter((w) => !INFO_WARNING_RE.test(w));
+  const qualityWarnings = warnings.filter((w) => !isWarningInformativo(w));
   const semantic_duplicate_key = antt.raw.dedupe_semantic_key
     ? String(antt.raw.dedupe_semantic_key)
     : regulatoryClass.semantic_duplicate_key;
