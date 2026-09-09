@@ -39,7 +39,7 @@ import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
 import { buildRawExtractionDoItem } from "@/lib/server/ata-item-materializacao";
 import {
   checarCoerenciaUnanimidade, checarImpedidoComVoto, checarVotoQualidadeDuplo, temBloqueio,
-  checarSerieMonotonica, RE_CONTESTADO } from "@/lib/server/consistency-checks";
+  checarSerieMonotonica, RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
 
 /**
  * Etapa58: o resultado do upsert de votos DEIXA de ser descartado. Uma violação de constraint
@@ -931,7 +931,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                   // finais da ANTT ficavam sem voto.
                   inferFromMandate: isAnttAtaItem
                     ? Boolean((item.unanimidade_detectada
-                          || !RE_CONTESTADO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`))
+                          || !RE_CONTESTADO_AMPLO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`))
                         && item.resultado
                         && (rosterItem.length > 0 || activeDiretoresList.length > 0))
                     : shouldInferVotesFromMandate({
@@ -939,7 +939,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                       tipo_documento: "ata",
                       import_counts_as_final: Boolean(item.resultado),
                       unanimidadeDetectada: item.unanimidade_detectada,
-                      sinaisContestacao: RE_CONTESTADO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`),
+                      sinaisContestacao: RE_CONTESTADO_AMPLO.test(`${item.assunto ?? ""} ${item.decisao ?? ""}`),
                       nomes: itemVotingNames,
                       nomesContra: item.votos_contra_detectados ?? [],
                       nomesAbstencao: item.votos_abstencao_detectados ?? [],

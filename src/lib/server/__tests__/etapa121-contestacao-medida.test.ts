@@ -93,13 +93,22 @@ describe("etapa121 · a rota MEDE sem mudar comportamento", () => {
     "utf-8",
   ) as string;
 
-  it("a decisão de inferir continua saindo do predicado VIGENTE, não do medido", () => {
-    // `contestado` (regra vigente) é o que alimenta a inferência; `contestadoComPleito` e o
-    // AMPLO só alimentam contadores. Se um dia isto inverter sem a medição publicada, cai aqui.
-    expect(ROTA).toMatch(/const contestado = RE_CONTESTADO\.test\(textoDecisao\)/);
+  it("Fase 22 — a decisão de inferir sai do predicado CORRIGIDO sobre decisão + dispositivo", () => {
+    // Aprovado com os números do banner (−4 votos em 2 itens; 2 divergências; 0 "taxa vencida").
+    // Se alguém voltar `contestado` para `RE_CONTESTADO.test(textoDecisao)`, cai aqui.
+    expect(ROTA).toMatch(/const contestado = RE_CONTESTADO_AMPLO\.test\(textoComPleito\)/);
     expect(ROTA).toMatch(/sinaisContestacao: contestado,/);
-    expect(ROTA).not.toMatch(/sinaisContestacao: contestadoComPleito/);
-    expect(ROTA).not.toMatch(/sinaisContestacao: RE_CONTESTADO_AMPLO/);
+    expect(ROTA).not.toMatch(/const contestado = RE_CONTESTADO\.test/);
+  });
+
+  it("…e nos outros dois sítios também (upload-analysis, confirm) — a regra é uma", () => {
+    const fs = require("fs") as typeof import("fs");
+    const path = require("path") as typeof import("path");
+    for (const rel of ["src/lib/server/upload-analysis.ts", "src/app/api/v1/upload/confirm/route.ts"]) {
+      const fonte = fs.readFileSync(path.join(__dirname, "../../../..", rel), "utf-8");
+      expect(fonte, rel).toMatch(/sinaisContestacao: RE_CONTESTADO_AMPLO\.test\(/);
+      expect(fonte, rel).not.toMatch(/sinaisContestacao: RE_CONTESTADO\.test\(/);
+    }
   });
 
   it("e o delta chega ao payload — medição que ninguém lê não é medição", () => {

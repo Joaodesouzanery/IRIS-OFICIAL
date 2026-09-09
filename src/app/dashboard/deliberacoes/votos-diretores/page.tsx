@@ -476,10 +476,12 @@ export default function VotosDiretoresPage() {
         (totais.upsert_falhas ?? 0) > 0 ? `⚠️ ${totais.upsert_falhas} escrita(s) de voto FALHARAM` : null,
         // A regra do dispositivo está DESLIGADA e medida: esta é a linha que o usuário lê antes de
         // decidir se ela passa a valer.
+        // Fase 22 — a regra VALE (08/09/2026). A linha agora mede a regra ANTIGA contra a vigente:
+        // o que voltaria a ser fabricado ou suprimido se alguém revertesse.
         (totais.votos_a_menos ?? 0) + (totais.regex_divergente ?? 0) + (totais.regex_falso_positivo ?? 0) > 0
-          ? `⏳ regra do dispositivo (desligada): −${totais.votos_a_menos ?? 0} voto(s) em ${totais.itens_que_mudariam ?? 0} item(ns)` +
-            `; ${totais.regex_divergente ?? 0} item(ns) com divergência que o predicado atual não vê` +
-            `; ${totais.regex_falso_positivo ?? 0} item(ns) unânime(s) que ele suprime por "taxa vencida"`
+          ? `regra do dispositivo (vigente): ${totais.votos_a_menos ?? 0} voto(s) fabricado(s) evitado(s) em ${totais.itens_que_mudariam ?? 0} item(ns)` +
+            `; ${totais.regex_divergente ?? 0} item(ns) com divergência que a regra antiga não via` +
+            `; ${totais.regex_falso_positivo ?? 0} item(ns) unânime(s) recuperado(s) da "taxa vencida"`
           : null,
       ].filter(Boolean);
       // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.

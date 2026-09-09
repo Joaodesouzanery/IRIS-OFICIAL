@@ -24,6 +24,26 @@ janela; o instrumento para isso é o bloco ① de `docs/auditoria-votos-cobertur
 
 ---
 
+## 0.0 Contestação lê o DISPOSITIVO e reconhece divergência (vigência: 08/09/2026)
+
+**Mudança de definição, datada.** Até 07/09/2026, "esta decisão foi contestada?" — o sinal que
+decide se o colegiado inteiro recebe voto inferido — era medido por `RE_CONTESTADO` sobre
+fundamento + assunto + decisão, **sem ler `resumo_pleito`** (onde o dispositivo do item de ata
+é gravado). A partir de **08/09/2026**, vale `RE_CONTESTADO_AMPLO` sobre decisão + dispositivo.
+
+**O que a medição mostrou (etapa124, 342 itens reais):** o predicado antigo tinha erro nos dois
+sentidos — marcava "Taxa Anual por Hectare **vencida**" como contestação (10 itens unânimes
+ficavam SEM voto) e não via "com **divergência** parcial ao voto do relator" (2 itens recebiam
+consenso fabricado). Na virada, em produção: **−4 votos em 2 itens**, 2 itens com divergência
+que a regra antiga não via, 0 itens de "taxa vencida" (o acervo de produção não tinha o caso).
+Os números da tela caíram em 4; é correção, não perda.
+
+**O card "Total de deliberações" do módulo Mandatos** passa, na mesma data, a usar o predicado
+canônico (`isFinalDecisionRecord`) em vez de uma aproximação SQL que contava filho de ata sem
+`resultado`. O valor antigo segue na resposta como `total_aproximado`, só para referência.
+
+---
+
 ## 0.1 O QUINTO estado, e a conta do "Total de deliberações" (04/09/2026)
 
 **A pergunta que este bloco responde:** por que o banco tem ~1028 linhas em `deliberacoes` e o

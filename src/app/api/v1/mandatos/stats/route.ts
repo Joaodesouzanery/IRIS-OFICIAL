@@ -91,7 +91,10 @@ export async function GET(req: NextRequest) {
   ).length;
   const comDivergencia = new Set((divergData ?? []).map((v: { deliberacao_id: string }) => v.deliberacao_id)).size;
   const comVoto = new Set((comVotoData ?? []).map((v: { deliberacao_id: string }) => v.deliberacao_id)).size;
-  const total = total_deliberacoes ?? 0;
+  // Fase 22 — o card publica o número ESTRITO (predicado canônico). O aproximado
+  // (`total_deliberacoes` do count) contava filho de ata sem `resultado`; fica só como referência.
+  const total = total_finais_estrito;
+  const total_aproximado = total_deliberacoes ?? 0;
   // Base vazia devolve "—", não "100%": ausência de voto não é consenso perfeito, e era isso que
   // o fallback antigo afirmava — do jeito mais confiante possível.
   const taxa_consenso =
@@ -102,8 +105,10 @@ export async function GET(req: NextRequest) {
     participacoes_colegiadas: participacoes_colegiadas ?? 0,
     taxa_consenso,
     total_deliberacoes: total,
-    /** Fase 21 — o número pelo predicado canônico. Quando o usuário aprovar, ele substitui `total`. */
+    /** Fase 22 — igual a `total_deliberacoes` desde 08/09/2026; mantido para leitores antigos. */
     total_finais_estrito,
+    /** O count aproximado antigo (contava filho de ata sem resultado). Só referência. */
+    total_aproximado,
     total_com_voto: comVoto,
   };
 

@@ -85,7 +85,7 @@ describe("etapa87 · os chamadores computam o sinal de contestação", () => {
   it("upload-analysis mede o sinal nos DOIS sítios (documento e item)", () => {
     // Contagem exata — asserção de presença deixou uma mutação passar (um sítio sem medir).
     const ua = ler("src/lib/server/upload-analysis.ts");
-    const ocorrencias = ua.match(/sinaisContestacao: RE_CONTESTADO\.test\(/g) ?? [];
+    const ocorrencias = ua.match(/sinaisContestacao: RE_CONTESTADO(?:_AMPLO)?\.test\(/g) ?? []; // Fase 22: predicado corrigido
     expect(ocorrencias.length).toBe(2);
   });
 
@@ -105,7 +105,7 @@ describe("etapa87 · os chamadores computam o sinal de contestação", () => {
     expect(mat).toMatch(/\(unanime \|\| !contestado\) && d\.resultado/);
     expect(mat).not.toMatch(/\? Boolean\(unanime && d\.resultado/);
     const conf = ler("src/app/api/v1/upload/confirm/route.ts");
-    expect(conf).toMatch(/item\.unanimidade_detectada[\s\S]{0,120}?\|\| !RE_CONTESTADO\.test/);
+    expect(conf).toMatch(/item\.unanimidade_detectada[\s\S]{0,120}?\|\| !RE_CONTESTADO(?:_AMPLO)?\.test/);
     expect(conf).not.toMatch(/\? Boolean\(item\.unanimidade_detectada && item\.resultado/);
   });
 });

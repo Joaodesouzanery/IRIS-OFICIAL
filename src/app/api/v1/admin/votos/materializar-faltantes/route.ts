@@ -289,36 +289,32 @@ export async function POST(req: NextRequest) {
       ...(((d as { decisoes_todas?: string[] | null }).decisoes_todas) ?? []),
       raw.assunto as string | undefined, raw.decisao as string | undefined,
     ].filter(Boolean).join(" ");
-    const contestado = RE_CONTESTADO.test(textoDecisao);
-
-    // ═══ Fase 20, commit 3a — MEDIR a regra que ainda não vale ═════════════
-    // `resumo_pleito` é onde o dispositivo do item de ata é gravado (`ata-item-materializacao.ts`
-    // grava a decisão ali, e `decisao` é omissão DECLARADA). Como `textoDecisao` não o lê, um item
-    // decidido "por maioria" hoje passa por não-contestado e recebe "Favorável" fabricado para o
-    // colegiado inteiro. Ler o dispositivo corrige isso — e DERRUBA a contagem de votos exibida.
-    //
-    // Número público não muda sem medição visível antes. Esta rodada computa as DUAS regras e
-    // reporta o delta; o comportamento continua o da regra vigente.
+    // ═══ Fase 22 — a regra do dispositivo VALE (aprovada com os números do banner) ═════
+    // `textoDecisao` sozinho não lia `resumo_pleito` (onde `ata-item-materializacao` grava o
+    // dispositivo), e `RE_CONTESTADO` confundia "taxa vencida" com contestação (etapa124: 10
+    // falsos positivos) e não via "divergência" (2 falsos negativos). Agora: predicado corrigido
+    // sobre decisão + dispositivo. Na virada, medido em produção: −4 votos em 2 itens.
     const textoComPleito = [textoDecisao, (d as { resumo_pleito?: string | null }).resumo_pleito]
       .filter(Boolean).join(" ");
-    const contestadoComPleito = RE_CONTESTADO.test(textoComPleito);
+    const contestado = RE_CONTESTADO_AMPLO.test(textoComPleito);
 
-    // A SEGUNDA medição, independente da primeira: o predicado vigente aqui não reconhece
-    // "divergência" nem "voto vencedor" — o do extrator reconhece. Quem decide se o colegiado
-    // inteiro ganha voto inferido é o daqui, o mais estreito. Medido antes de trocar.
-    const amplo = RE_CONTESTADO_AMPLO.test(textoComPleito);
-    if (!contestado && amplo) {
+    // A medição INVERTE de papel: agora mede a regra ANTIGA contra a vigente — o que voltaria a
+    // ser fabricado (ou suprimido) se alguém revertesse. Mesmas chaves no payload; o banner lê.
+    const contestadoAntigo = RE_CONTESTADO.test(textoDecisao);
+    if (contestado && !contestadoAntigo) {
+      // Só a regra nova vê: "divergência", ou dispositivo que a antiga não lia.
       const sigla = siglaDe(d.agencia_id);
       deltaRegex[sigla] = (deltaRegex[sigla] ?? 0) + 1;
     }
-    // A direção que a medição do corpus revelou (etapa124): o vigente casa "taxa vencida" e
-    // SUPRIME voto de item unânime. Estes são os itens que voltariam a ter voto.
-    if (contestado && !amplo) {
+    if (contestadoAntigo && !contestado) {
+      // A antiga suprimia ("taxa vencida"): item unânime que VOLTA a ter voto.
       const sigla = siglaDe(d.agencia_id);
       deltaFalsoPositivo[sigla] = (deltaFalsoPositivo[sigla] ?? 0) + 1;
     }
+    const contestadoComPleito = contestado; // nome mantido para o bloco de detalhe abaixo
+    const contestadoRef = contestadoAntigo;
 
-    if (contestadoComPleito !== contestado) {
+    if (contestadoComPleito !== contestadoRef) {
       const sigla = siglaDe(d.agencia_id);
       deltaPorAgencia[sigla] = deltaPorAgencia[sigla] ?? { itens: 0, votos: 0 };
       deltaPorAgencia[sigla].itens++;
@@ -360,15 +356,15 @@ export async function POST(req: NextRequest) {
       unanime,
     });
 
-    if (rows.length === 0) { semEvidencia++; continue; }
-    materializaveis++;
-    // O delta em VOTOS: quantos destes deixariam de existir sob a regra que lê o dispositivo.
-    // Só conta onde a inferência é a origem — voto NOMINAL não depende da detecção de contestação.
-    if (contestadoComPleito && !contestado && inferFromMandate) {
+    // O delta em VOTOS, invertido: quantos votos a regra antiga teria fabricado neste item
+    // (o roster inteiro), onde a nova recusou inferir. Voto NOMINAL não entra — não depende disto.
+    if (contestado && !contestadoAntigo && !inferFromMandate && rows.length === 0) {
       const sigla = siglaDe(d.agencia_id);
       deltaPorAgencia[sigla] = deltaPorAgencia[sigla] ?? { itens: 0, votos: 0 };
-      deltaPorAgencia[sigla].votos += rows.length;
+      deltaPorAgencia[sigla].votos += activeDiretoresList.length;
     }
+    if (rows.length === 0) { semEvidencia++; continue; }
+    materializaveis++;
     if (detalhe.length < 50) {
       detalhe.push({ deliberacao_id: d.id, votos: rows.length, origem: inferFromMandate ? "inferencia" : "nominal" });
     }
