@@ -36,7 +36,8 @@ export const RE_CONTESTADO = /\bpor\s+maioria\b|voto\s+de\s+qualidade|\bempate\b
  * `por_regex_divergente` (o que este pegaria a mais) e `por_regex_falso_positivo` (o que o vigente
  * suprime indevidamente). A etapa121 garante os dois sentidos com os trechos reais do corpus.
  */
-export const RE_CONTESTADO_AMPLO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bvencid[oa]s?\s+(?:[oa]s?\s+)?(?:diretor|conselheir|relator)|\bprevaleceu\b|\bempate\b|diverg[êe]nci/i;
+// Fase 24 — "sem divergência" / "não houve divergência" AFIRMAM consenso: o lookbehind exclui.
+export const RE_CONTESTADO_AMPLO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\s+de\s+qualidade|voto\s+vencedor|voto\s+vencid[oa]|restando\s+vencid[oa]|\bvencid[oa]s?\s+(?:[oa]s?\s+)?(?:diretor|conselheir|relator)|\bprevaleceu\b|\bempate\b|(?<!\bsem\s)(?<!\bn[aã]o\s+h(?:á|ouve)\s)diverg[êe]nci/i;
 
 /**
  * "Unanimidade" DECLARADA + sinais de contestação SEM dissidente nomeado é contraditório: o pool
@@ -44,7 +45,9 @@ export const RE_CONTESTADO_AMPLO = /\bpor\s+maioria\b|maioria\s+de\s+votos|voto\
  * unanimidade a inferência de mandato desfaria o esvaziamento; o aviso é o mecanismo correto.
  */
 export function avisoUnanimidadeContestada(text: string, unanimidade: boolean, contraCount: number): string | null {
-  if (unanimidade && contraCount === 0 && RE_CONTESTADO.test(text)) {
+  // Fase 24 — o predicado CORRIGIDO (etapa124): o antigo casava "Taxa Anual por Hectare vencida"
+  // e segurava duas atas da ANM (~80 itens) em "Sinais contraditórios" por uma taxa vencida.
+  if (unanimidade && contraCount === 0 && RE_CONTESTADO_AMPLO.test(text)) {
     return "Sinais contraditórios: texto indica unanimidade E maioria/voto de qualidade/voto vencido sem dissidente nomeado — revisar direção antes de confirmar.";
   }
   return null;

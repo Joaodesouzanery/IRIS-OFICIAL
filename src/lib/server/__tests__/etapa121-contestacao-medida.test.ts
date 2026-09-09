@@ -36,6 +36,9 @@ const CONTESTADOS = [
 
 const NAO_CONTESTADOS = [
   "Aprovado por unanimidade dos presentes",
+  // Fase 24 — a negação afirma consenso; sem isto o predicado corrigido suprimia voto aqui.
+  "Aprovado por unanimidade, sem divergência.",
+  "Aprovado por unanimidade; não houve divergência entre os diretores.",
   // Trecho REAL da 79ª ROP (itens 3.1.1-3.1.6), medido na etapa124: o vigente casa "vencida" aqui
   // e suprime o voto de um item unânime. Dez ocorrências no corpus, zero acertos.
   "lavrada em face do não pagamento da Taxa Anual por Hectare vencida em 29/07/2022, relativa ao primeiro ano de vigência. Voto aprovado por unanimidade pelos diretores presentes.",
@@ -60,7 +63,8 @@ describe("etapa121 · o predicado CORRIGIDO cobre o que é contestação de verd
   });
 
   it("o vigente marca «taxa vencida» como contestação — o falso positivo que a medição achou", () => {
-    const taxa = NAO_CONTESTADOS[1];
+    const taxa = NAO_CONTESTADOS.find((t) => t.includes("vencida em 29/07/2022"))!;
+    expect(taxa).toBeDefined();
     expect(RE_CONTESTADO.test(taxa)).toBe(true);        // o defeito, caracterizado
     expect(RE_CONTESTADO_AMPLO.test(taxa)).toBe(false); // o conserto
   });
