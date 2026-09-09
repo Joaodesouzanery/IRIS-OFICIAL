@@ -5,6 +5,7 @@
  * Nenhuma deliberação final é criada aqui; isso só acontece em /upload/confirm.
  */
 
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { analyzeUploadPdf, markBatchDuplicates } from "@/lib/server/upload-analysis";
 import { hasBudget } from "@/lib/server/time-budget";
@@ -14,10 +15,10 @@ type QueueJob = { jobId: string; agenciaId?: string | null };
 export async function processPdf(jobId: string, deadlineAt?: number): Promise<void> {
   const db = createSupabaseServerClient();
 
-  await db
+  await exigirEscrita(db
     .from("upload_jobs")
     .update({ status: "processing", updated_at: new Date().toISOString() })
-    .eq("id", jobId);
+    .eq("id", jobId), `job ${jobId} → processing`);
 
   let documentoId: string | null = null;
 
@@ -112,22 +113,22 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
       updated_at: new Date().toISOString(),
     });
 
-    await db
+    await exigirEscrita(db
       .from("upload_jobs")
       .update({ status: "done", agencia_id: analysis.agencia_id_detected, updated_at: new Date().toISOString() })
-      .eq("id", jobId);
+      .eq("id", jobId), `job ${jobId} → done`);
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
     console.error(`[pipeline] Job ${jobId} falhou:`, message);
 
-    await db
+    await exigirEscrita(db
       .from("upload_jobs")
       .update({
         status: "failed",
         error_message: message.slice(0, 500),
         updated_at: new Date().toISOString(),
       })
-      .eq("id", jobId);
+      .eq("id", jobId), `job ${jobId} → failed`);
 
     await updateDocument(db, documentoId, {
       status: "failed",
@@ -208,7 +209,7 @@ export async function processPendingDocuments(
   // doc ficava 'processing' PARA SEMPRE — invisível e fora de qualquer fila. Vira 'failed'
   // com motivo (aparece no diagnóstico e é reprocessável); se o job correspondente ainda
   // for reprocessado, o processPdf sobrescreve o status normalmente.
-  await db
+  await exigirEscrita(db
     .from("documentos_regulatorios")
     .update({
       status: "failed",
@@ -216,7 +217,7 @@ export async function processPendingDocuments(
       updated_at: new Date().toISOString(),
     })
     .eq("status", "processing")
-    .lt("updated_at", staleCutoff);
+    .lt("updated_at", staleCutoff), "reaper: doc preso em processing → failed");
 
   // ═══ Fase 9 — o TERCEIRO reaper: documento preso em "queued" ════════════════
   // O select logo abaixo lê SÓ `upload_jobs.status='pending'`, e os dois reapers acima conhecem
@@ -263,11 +264,11 @@ export async function processPendingDocuments(
     if (!jobId) {
       // Sem job e sem candidato: `failed` COM MOTIVO — o mesmo desfecho do reaper de "processing".
       // Ficar em `queued` é o único destino proibido: é o estado invisível.
-      await db.from("documentos_regulatorios").update({
+      await exigirEscrita(db.from("documentos_regulatorios").update({
         status: "failed",
         error_message: "Documento na fila sem upload_job — sem via de reprocessamento; reenviar o PDF.",
         updated_at: agora,
-      }).eq("id", doc.id);
+      }).eq("id", doc.id), `doc ${doc.id} sem job → failed`);
       continue;
     }
 

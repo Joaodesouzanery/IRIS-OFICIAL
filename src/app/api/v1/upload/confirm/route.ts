@@ -4,6 +4,7 @@
  * Escritas reais exigem admin; modo DEMO permanece somente leitura.
  */
 
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import crypto from "crypto";
 import { NextRequest, NextResponse } from "next/server";
@@ -1203,7 +1204,7 @@ async function recordDirectorCandidates(
   for (const row of rows as any[]) {
     const existente = pendenteByNome.get(row.nome_detectado);
     if (existente) {
-      await db
+      await exigirEscrita(db
         .from("diretor_candidatos")
         .update({
           confidence: Math.max(existente.confidence, row.confidence),
@@ -1211,7 +1212,7 @@ async function recordDirectorCandidates(
           evidence: row.evidence,
           source_url: row.source_url,
         })
-        .eq("id", existente.id);
+        .eq("id", existente.id), `candidato ${existente.id} (reforço)`);
     } else {
       toInsert.push(row);
     }

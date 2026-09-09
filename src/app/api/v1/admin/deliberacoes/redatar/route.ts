@@ -20,6 +20,7 @@
  * Read-mostly e idempotente: `dry_run` (padrão) só conta. Admin.
  */
 
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -121,16 +122,15 @@ export async function POST(req: NextRequest) {
         dataReuniao: nova,
         tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
       });
-      await db.from("deliberacoes").update({
+      if (await exigirEscrita(db.from("deliberacoes").update({
         data_reuniao: nova,
         ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
-      }).eq("id", d.id);
-      corrigidas++;
+      }).eq("id", d.id), `redatar ${d.id}`)) corrigidas++;
     } else {
       // NULL nunca sozinho: sem o marcador, a linha entraria silenciosamente em TODOS os anos
       // (`year-filter` trata data ausente como "serve para qualquer filtro").
       const raw = (d.raw_extraction ?? {}) as Record<string, unknown>;
-      await db.from("deliberacoes").update({
+      await exigirEscrita(db.from("deliberacoes").update({
         data_reuniao: null,
         raw_extraction: {
           ...raw,
@@ -139,7 +139,7 @@ export async function POST(req: NextRequest) {
           data_invalidada_motivo: "anterior à criação da agência; texto não permitiu re-derivar",
           precisa_revisao_data: true,
         },
-      }).eq("id", d.id);
+      }).eq("id", d.id), "redatar: marcador de data ausente");
       semDataRecuperavel++;
     }
   }
@@ -220,21 +220,20 @@ export async function POST(req: NextRequest) {
           dataReuniao: nova,
           tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
         });
-        await db.from("deliberacoes").update({
+        if (await exigirEscrita(db.from("deliberacoes").update({
           data_reuniao: nova,
           ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
-        }).eq("id", d.id);
-        nulasCorrigidas++;
+        }).eq("id", d.id), `redatar nula ${d.id}`)) nulasCorrigidas++;
       } else {
         // Marcador UMA vez: sem ele a linha voltaria a esta janela em toda rodada da esteira.
         const raw = (d.raw_extraction ?? {}) as Record<string, unknown>;
-        await db.from("deliberacoes").update({
+        await exigirEscrita(db.from("deliberacoes").update({
           raw_extraction: {
             ...raw,
             data_ausente_motivo: "sem data na origem; nenhuma fonte ancorada permitiu derivar",
             precisa_revisao_data: true,
           },
-        }).eq("id", d.id);
+        }).eq("id", d.id), "redatar: marcador de data ausente");
         nulasMarcadas++;
       }
     }

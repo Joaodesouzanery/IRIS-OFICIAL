@@ -6,6 +6,7 @@
  * e aplica os votos retroativos das deliberações onde o nome aparece.
  */
 
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { applyRetroactiveVotes } from "@/lib/server/retroactive-votes";
 import { findBestMatch, isStrictPersonName } from "@/lib/server/name-matcher";
 
@@ -65,9 +66,9 @@ export async function aprovarCandidato(
       nome_variantes: Array.isArray(dir.nome_variantes) ? dir.nome_variantes : [],
     })));
     if (matchRejeitado.diretorId && !matchRejeitado.needsReview) {
-      await db.from("diretor_candidatos").update({
+      await exigirEscrita(db.from("diretor_candidatos").update({
         review_status: "rejeitado", reviewed_at: new Date().toISOString(), reviewed_by: opts.reviewedBy ?? null,
-      }).eq("id", candidato.id);
+      }).eq("id", candidato.id), `candidato ${candidato.id} → rejeitado (nome já rejeitado)`);
       throw new Error("Nome corresponde a diretor rejeitado — candidato descartado.");
     }
     // Tolerante a status ausente (linhas antigas sem review_status contam como aprovadas);
@@ -127,7 +128,7 @@ export async function aprovarCandidato(
       ? [...variantes, detectado].slice(0, 12)
       : variantes;
 
-    await db
+    await exigirEscrita(db
       .from("diretores")
       .update({
         needs_review: false,
@@ -140,12 +141,12 @@ export async function aprovarCandidato(
         source_confidence: candidato.confidence,
         last_verified_at: new Date().toISOString(),
       })
-      .eq("id", diretorId);
+      .eq("id", diretorId), `diretor ${diretorId} → aprovado`);
   }
 
   let mandatoId: string | null = null;
   if (opts.dataInicio) {
-    const { data: mandato } = await db
+    const { data: mandato, error: erroMandato } = await db
       .from("mandatos")
       .insert({
         diretor_id: diretorId,
@@ -162,13 +163,14 @@ export async function aprovarCandidato(
       })
       .select("id")
       .single();
+    if (erroMandato) console.error(`[escrita] mandato de ${diretorId} falhou: ${erroMandato.message}`);
     mandatoId = mandato?.id ?? null;
   }
 
   // CASCATA por nome: o mesmo nome detectado gera 1 cartão por documento (source_hash
   // por doc) — aprovar um resolve todos (os votos retroativos são por nome, idempotentes).
   // Também evita que aprovar uma duplicata "new_director" crie um segundo diretor.
-  await db
+  await exigirEscrita(db
     .from("diretor_candidatos")
     .update({
       diretor_id: diretorId,
@@ -178,8 +180,8 @@ export async function aprovarCandidato(
     })
     .eq("agencia_id", candidato.agencia_id)
     .eq("nome_detectado", candidato.nome_detectado)
-    .eq("review_status", "pendente");
-  await db
+    .eq("review_status", "pendente"), `cascata de candidatos «${candidato.nome_detectado}»`);
+  await exigirEscrita(db
     .from("diretor_candidatos")
     .update({
       diretor_id: diretorId,
@@ -187,7 +189,7 @@ export async function aprovarCandidato(
       reviewed_at: new Date().toISOString(),
       reviewed_by: opts.reviewedBy ?? null,
     })
-    .eq("id", candidato.id);
+    .eq("id", candidato.id), `candidato ${candidato.id} → aprovado`);
 
   // Votos retroativos das deliberações onde este nome aparece (idempotente).
   let votosRetroativos: Awaited<ReturnType<typeof applyRetroactiveVotes>> | null = null;
@@ -222,7 +224,7 @@ export async function aprovarCandidato(
           .sort();
         if (!datas.length && votosRetroativos?.primeira_data) datas.push(votosRetroativos.primeira_data);
         if (datas.length) {
-          const { data: mandatoAuto } = await db
+          const { data: mandatoAuto, error: erroMandatoAuto } = await db
             .from("mandatos")
             .insert({
               diretor_id: diretorId,
@@ -240,6 +242,7 @@ export async function aprovarCandidato(
             })
             .select("id")
             .single();
+          if (erroMandatoAuto) console.error(`[escrita] mandato automático de ${diretorId} falhou: ${erroMandatoAuto.message}`);
           mandatoId = mandatoAuto?.id ?? null;
         }
       }

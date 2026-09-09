@@ -60,6 +60,7 @@ function varrer(): Escrita[] {
       const varNome = stmt.match(/(?:const|let|var)\s+(\w+)\s*=/)?.[1];
       const checada =
         /\berror\b/.test(stmt) ||
+        /\bexigirEscrita\(/.test(stmt) || // Fase 24 — o helper lê {error} e loga
         (!!varNome && new RegExp(`\\b${varNome}\\??\\.error\\b`).test(depois)) ||
         (/^\s*return\b/.test(stmt) && CHECADO_PELO_CHAMADOR.has(rel)) ||
         (!atribuido && /\.then\(\s*\(\s*\{[^}]*error/.test(stmt));

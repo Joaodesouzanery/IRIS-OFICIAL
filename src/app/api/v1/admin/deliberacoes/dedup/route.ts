@@ -7,6 +7,7 @@
  * os votos (sem duplicar por diretor) e apaga as cópias. Admin explícito.
  */
 
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
@@ -107,9 +108,8 @@ export async function POST(req: NextRequest) {
           }
         }
         // Filhos de ata apontando para a cópia seguem a mantida.
-        await db.from("deliberacoes").update({ documento_pai_id: mantida.id }).eq("documento_pai_id", copia.id);
-        await db.from("deliberacoes").delete().eq("id", copia.id);
-        removidasTotal++;
+        await exigirEscrita(db.from("deliberacoes").update({ documento_pai_id: mantida.id }).eq("documento_pai_id", copia.id), `dedup: filhos de ${copia.id} → ${mantida.id}`);
+        if (await exigirEscrita(db.from("deliberacoes").delete().eq("id", copia.id), `dedup: remover cópia ${copia.id}`)) removidasTotal++;
       }
       entry.votos_migrados = votosMigrados;
     }

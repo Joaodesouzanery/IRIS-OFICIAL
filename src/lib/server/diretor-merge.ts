@@ -1,3 +1,4 @@
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 /**
  * Núcleo de MERGE de diretores duplicados (Etapa 19). Extraído de
  * /api/v1/diretores/merge para ser reusado pela auto-mesclagem do recompute.
@@ -55,8 +56,8 @@ export async function mergeDiretores(db: Db, keepId: string, mergeId: string): P
   }
 
   // 2) Mandatos e candidatos seguem o keep.
-  await db.from("mandatos").update({ diretor_id: keepId }).eq("diretor_id", mergeId);
-  await db.from("diretor_candidatos").update({ diretor_id: keepId }).eq("diretor_id", mergeId);
+  await exigirEscrita(db.from("mandatos").update({ diretor_id: keepId }).eq("diretor_id", mergeId), `merge: mandatos de ${mergeId} → ${keepId}`);
+  await exigirEscrita(db.from("diretor_candidatos").update({ diretor_id: keepId }).eq("diretor_id", mergeId), `merge: candidatos de ${mergeId} → ${keepId}`);
 
   // 3) Keep APRENDE o nome do duplicado (e variantes) — futuras citações casam 1.0.
   const variantesKeep: string[] = Array.isArray(keep.nome_variantes) ? keep.nome_variantes : [];
@@ -65,10 +66,10 @@ export async function mergeDiretores(db: Db, keepId: string, mergeId: string): P
     (n: string) => n && n !== keep.nome && !variantesKeep.includes(n),
   );
   if (novas.length > 0) {
-    await db
+    await exigirEscrita(db
       .from("diretores")
       .update({ nome_variantes: [...variantesKeep, ...novas].slice(0, 12) })
-      .eq("id", keepId);
+      .eq("id", keepId), `merge: variantes de ${keepId}`);
   }
 
   // 4) Remove o duplicado.
