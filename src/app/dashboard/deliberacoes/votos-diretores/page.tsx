@@ -454,6 +454,8 @@ export default function VotosDiretoresPage() {
           ? `${(totais.duplicatas_arquivadas ?? 0) + (totais.fundidos_semanticos ?? 0)} duplicata(s) resolvida(s)`
           : null,
         (totais.duplicatas_liberadas ?? 0) > 0 ? `${totais.duplicatas_liberadas} duplicata(s) da fila liberada(s) (primeiro da dupla)` : null,
+        (totais.auto_skip_limpos ?? 0) > 0 ? `${totais.auto_skip_limpos} carimbo(s) obsoleto(s) apagado(s) — reavaliados pelo gate atual` : null,
+        (totais.reanalisados ?? 0) > 0 ? `${totais.reanalisados} documento(s) reanalisado(s) (extração mudou)` : null,
         (totais.ignorados_pauta_apoio ?? 0) > 0 ? `${totais.ignorados_pauta_apoio} pauta(s)/apoio arquivado(s)` : null,
         (totais.aprovados ?? 0) > 0 ? `${totais.aprovados} diretor(es)/nome(s) resolvido(s)` : null,
         // Etapa67 — a medição do auto-resolver, visível: mandato/margem são os caminhos bons;

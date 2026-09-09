@@ -284,6 +284,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       // Fase 23 — mesma chave do confirm-lote: o banner já soma "duplicata(s) resolvida(s)".
       duplicatas_arquivadas: r.body?.duplicatas_arquivadas ?? 0,
       duplicatas_liberadas: r.body?.duplicatas_liberadas ?? 0,
+      auto_skip_limpos: r.body?.auto_skip_limpos ?? 0,
+      reanalisados: r.body?.reanalisados ?? 0,
       restantes: r.body?.restantes ?? false,
     });
     if (r.body?.restantes) restantes = true;

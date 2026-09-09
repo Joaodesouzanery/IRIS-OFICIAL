@@ -10,6 +10,9 @@
  */
 
 import { decidirDuplicata } from "@/lib/server/duplicata-da-fila";
+import { desfechoDoCarimbo } from "@/lib/server/auto-skip-obsoleto";
+import { exigirEscrita } from "@/lib/server/escrita-checada";
+import { requeueDocument } from "@/lib/server/upload-queue";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -75,6 +78,8 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
   let analisados = 0;
   let confirmadosTotal = 0;
   let duplicatasArquivadas = 0;
+  let autoSkipLimpos = 0;
+  let reanalisados = 0;
   let duplicatasLiberadas = 0;
   let rodadas = 0;
   let restantes = false;
@@ -84,6 +89,36 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
   const maxRodadas = loop ? 30 : 1;
   while (rodadas < maxRodadas) {
     if (loop && !hasBudget(deadlineAt, RESERVA.autoConfirm)) { restantes = true; break; }
+
+    // ═══ Fase 24 — a trava de sentido único vira reavaliação ═══════════════
+    // Documentos carimbados por motivo que já não existe: apaga o carimbo (o gate atual decide)
+    // ou reanalisa (a extração mudou), uma vez por motivo. Uma passada barata por rodada.
+    if (rodadas === 0) {
+      const { data: carimbados } = await db
+        .from("documentos_regulatorios")
+        .select("id, campos_detectados, metadata")
+        .eq("status", "review_pending")
+        .not("campos_detectados->auto_skip", "is", null)
+        .limit(200);
+      for (const doc of (carimbados ?? []) as any[]) {
+        if (!hasBudget(deadlineAt, RESERVA.autoConfirm)) break;
+        const motivo = String(doc.campos_detectados?.auto_skip ?? "");
+        const desfecho = desfechoDoCarimbo(motivo);
+        if (desfecho === "reavaliar") {
+          const { auto_skip: _fora, ...resto } = doc.campos_detectados ?? {};
+          if (await exigirEscrita(db.from("documentos_regulatorios").update({ campos_detectados: resto }).eq("id", doc.id), `limpar carimbo de ${doc.id}`)) autoSkipLimpos++;
+        } else if (desfecho === "reanalisar") {
+          const feitas: string[] = Array.isArray(doc.metadata?.reanalises) ? doc.metadata.reanalises : [];
+          if (feitas.includes(motivo)) continue; // já reanalisado por este motivo: revisão humana de verdade
+          const ok = await exigirEscrita(
+            db.from("documentos_regulatorios").update({ metadata: { ...(doc.metadata ?? {}), reanalises: [...feitas, motivo] } }).eq("id", doc.id),
+            `marcar reanálise de ${doc.id}`,
+          );
+          if (!ok) continue;
+          try { await requeueDocument(db, doc.id); reanalisados++; } catch (e) { console.error(`[auto-confirm] requeue de ${doc.id} falhou:`, e instanceof Error ? e.message : e); }
+        }
+      }
+    }
 
     let query = db
       .from("documentos_regulatorios")
@@ -218,6 +253,9 @@ async function run(req: NextRequest, body: { limit?: number; agencia_id?: string
     /** Fase 23 — duplicatas da própria fila: arquivadas (havia gêmeo confirmado) e liberadas (primeiro da dupla). */
     duplicatas_arquivadas: duplicatasArquivadas,
     duplicatas_liberadas: duplicatasLiberadas,
+    /** Fase 24 — carimbos obsoletos apagados (gate atual decide) e documentos reanalisados (extração mudou). */
+    auto_skip_limpos: autoSkipLimpos,
+    reanalisados,
     exemplos_pulados: ultimosPulados,
     confirm: confirmDetalhes.length === 1 ? confirmDetalhes[0] : confirmDetalhes,
     legal_notice: "Auto-confirmação CONSERVADORA em loop (doc final + confiança ok + votos com match ≥0.85). Ambíguos ficam na fila manual.",
