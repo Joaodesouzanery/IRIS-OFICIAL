@@ -27,10 +27,14 @@ const METODO = ler("docs/METODOLOGIA-METRICAS.md");
 
 describe("etapa96 · a rota decompõe — efetivo é Favorável+Desfavorável", () => {
   it("conta ausências e abstenções SEPARADAS do efetivo", () => {
-    expect(ROTA).toMatch(/ausentes: number|StatDoDiretor/);
-    expect(ROTA).toMatch(/abstencoes: number/);
-    expect(ROTA).toMatch(/tipo_voto === "Ausente"\) s\.ausentes\+\+/);
-    expect(ROTA).toMatch(/tipo_voto === "Abstencao"\) s\.abstencoes\+\+/);
+    // Fase 22 — a agregação saiu da rota para `diretor-overview-stat.ts` (pura, testada na
+    // etapa128). A rota a chama; o módulo é quem separa os não-votos.
+    const STAT = ler("src/lib/server/diretor-overview-stat.ts");
+    expect(ROTA).toMatch(/agregarVoto\(/);
+    expect(STAT).toMatch(/ausentes: number/);
+    expect(STAT).toMatch(/abstencoes: number/);
+    expect(STAT).toMatch(/tipo_voto === "Ausente"\)/);
+    expect(STAT).toMatch(/tipo_voto === "Abstencao"\) s\.abstencoes\+\+/);
   });
 
   it("efetivos = favoravel + desfavoravel — derivado, não um quarto contador que pode divergir", () => {
