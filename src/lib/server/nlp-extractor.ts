@@ -654,6 +654,45 @@ function uniquePush(list: string[], value: string | null | undefined) {
   }
 }
 
+/** De onde veio um nome de AUSENTE — o rótulo da ARTESP ou a prosa. */
+export interface AusenteComOrigem {
+  nome: string;
+  origem: "label" | "narrativa";
+  /** O trecho que casou, para o operador conferir contra o PDF. */
+  trecho: string;
+}
+
+/**
+ * Ausentes com ORIGEM (Fase 22). Antes, `RE_VOTO_AUSENTE` (prosa: "ausência do Diretor X",
+ * "X esteve ausente") e `RE_AUSENTE_LABEL` (o rótulo real da ARTESP: "Ausente:", "Ausência
+ * Justificada:") despejavam no MESMO balde e a origem se perdia — nada a jusante podia
+ * distinguir um rótulo explícito de uma frase solta perto de um nome. Refactor puro: a lista de
+ * nomes, na mesma ordem, é a que o bloco de consumo sempre produziu.
+ */
+export function extractAusentesComOrigem(text: string): AusenteComOrigem[] {
+  const out: AusenteComOrigem[] = [];
+  const vistos = new Set<string>();
+  RE_VOTO_AUSENTE.lastIndex = 0;
+  let aus: RegExpExecArray | null;
+  while ((aus = RE_VOTO_AUSENTE.exec(text)) !== null) {
+    const nome = (aus[1] ?? aus[2] ?? "").replace(/\s+/g, " ").trim();
+    if (nome.length > 4 && !vistos.has(nome)) {
+      vistos.add(nome);
+      out.push({ nome, origem: "narrativa", trecho: aus[0].replace(/\s+/g, " ").slice(0, 160) });
+    }
+  }
+  RE_AUSENTE_LABEL.lastIndex = 0;
+  let ausLabel: RegExpExecArray | null;
+  while ((ausLabel = RE_AUSENTE_LABEL.exec(text)) !== null) {
+    for (const nome of splitDirectorNames(ausLabel[1])) {
+      if (vistos.has(nome)) continue;
+      vistos.add(nome);
+      out.push({ nome, origem: "label", trecho: ausLabel[0].replace(/\s+/g, " ").slice(0, 160) });
+    }
+  }
+  return out;
+}
+
 function splitDirectorNames(value: string): string[] {
   return value
     .replace(/\b(?:Diretor(?:a)?|Diretor-Geral|Conselheiro(?:a)?|Presidente)\b/gi, "")
@@ -1351,27 +1390,13 @@ export function extractFields(text: string): ExtractedFields {
   // Contrário citado só pelo cargo ("voto contrário do Diretor-Geral") — etapa51.
   for (const nome of extractContrariosPorCargo(text, roleMapDoc)) markContra(nome);
 
-  RE_VOTO_AUSENTE.lastIndex = 0;
-  let aus: RegExpExecArray | null;
-  while ((aus = RE_VOTO_AUSENTE.exec(text)) !== null) {
-    const nome = (aus[1] ?? aus[2] ?? "").replace(/\s+/g, " ").trim();
-    if (nome.length > 4) {
-      if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
-      const idxFavor = nomes_votacao_favor.indexOf(nome);
-      if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
-      if (!nomes_votacao_ausente.includes(nome)) nomes_votacao_ausente.push(nome);
-    }
-  }
-
-  RE_AUSENTE_LABEL.lastIndex = 0;
-  let ausLabel: RegExpExecArray | null;
-  while ((ausLabel = RE_AUSENTE_LABEL.exec(text)) !== null) {
-    for (const nome of splitDirectorNames(ausLabel[1])) {
-      if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
-      const idxFavor = nomes_votacao_favor.indexOf(nome);
-      if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
-      if (!nomes_votacao_ausente.includes(nome)) nomes_votacao_ausente.push(nome);
-    }
+  // Fase 22 — a ORIGEM de cada ausente (rótulo × prosa) é preservada por `extractAusentesComOrigem`;
+  // aqui o consumo é o mesmo de sempre (mesma ordem: prosa primeiro, rótulo depois).
+  for (const { nome } of extractAusentesComOrigem(text)) {
+    if (!nomes_votacao.includes(nome)) nomes_votacao.push(nome);
+    const idxFavor = nomes_votacao_favor.indexOf(nome);
+    if (idxFavor !== -1) nomes_votacao_favor.splice(idxFavor, 1);
+    if (!nomes_votacao_ausente.includes(nome)) nomes_votacao_ausente.push(nome);
   }
 
   // Abstenção narrativa: "Fulano absteve-se" / "votou pela abstenção".

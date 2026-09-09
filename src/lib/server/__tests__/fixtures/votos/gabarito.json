@@ -181,6 +181,7 @@
     },
     {
       "file": "artesp-ata-1201.pdf",
+      "nomes_ausentes": [],
       "fonte": "ARTESP reunioes-diretoria (DAM), Ata da 1201ª Reunião Ordinária do Conselho Diretor",
       "agencia_sigla": "ARTESP",
       "tipo_documento": "ata",
@@ -196,6 +197,7 @@
     },
     {
       "file": "artesp-delib-22.pdf",
+      "nomes_ausentes": [],
       "fonte": "ARTESP — Deliberacao ARTESP no 22, de 13/01/2026 (1177a Reuniao Ordinaria do Conselho Diretor)",
       "agencia_sigla": "ARTESP",
       "tipo_documento": "deliberacao",
@@ -214,6 +216,7 @@
     },
     {
       "file": "artesp-delib-23.pdf",
+      "nomes_ausentes": [],
       "fonte": "ARTESP — Deliberacao ARTESP no 23, de 13/01/2026 (1177a Reuniao Ordinaria do Conselho Diretor)",
       "agencia_sigla": "ARTESP",
       "tipo_documento": "deliberacao",
@@ -229,6 +232,7 @@
     },
     {
       "file": "artesp-delib-303.pdf",
+      "nomes_ausentes": [],
       "fonte": "ARTESP — Deliberacao ARTESP no 303, de 15/04/2026 (236a Reuniao Extraordinaria do Conselho Diretor)",
       "agencia_sigla": "ARTESP",
       "tipo_documento": "deliberacao",
@@ -244,6 +248,7 @@
     },
     {
       "file": "artesp-delib-487.pdf",
+      "nomes_ausentes": [],
       "fonte": "ARTESP reunioes-diretoria (DAM), Deliberações da 1201ª Reunião (zip), Deliberação ARTESP nº 487/2026",
       "agencia_sigla": "ARTESP",
       "tipo_documento": "deliberacao",
@@ -255,6 +260,7 @@
     },
     {
       "file": "artesp-pauta-1201.pdf",
+      "nomes_ausentes": [],
       "fonte": "ARTESP reunioes-diretoria (DAM), Pauta da 1201ª Reunião Ordinária",
       "agencia_sigla": "ARTESP",
       "tipo_documento": "pauta",
