@@ -293,7 +293,10 @@ export default function VotosDiretoresPage() {
       // Fase 7 — `signed_url` (URL assinada do PDF, 1h) SEMPRE veio nesta resposta; estava
       // invisível só porque o tipo inline aqui não a declarava. Declarada, "abrir o PDF" vira
       // um link direto, sem rota nova.
-      api.get<{ total: number; data: Array<{ id: string; filename: string | null; tipo_documento: string | null; signed_url?: string | null; agencia?: { sigla?: string } | null }> }>(
+      // Fase 22 — `campos_detectados.auto_skip` é o MOTIVO que o auto-confirm gravou ao pular o
+      // documento. Sempre veio na resposta; a tela descartava, e "146 para revisar" não dizia
+      // por quê. Sem o motivo, a única resposta era revisar 1-a-1 — o oposto do zero-toque.
+      api.get<{ total: number; data: Array<{ id: string; filename: string | null; tipo_documento: string | null; signed_url?: string | null; agencia?: { sigla?: string } | null; campos_detectados?: { auto_skip?: string | null } | null }> }>(
         "/upload/documentos?status=review_pending&limit=50",
       ).catch(() => ({ total: 0, data: [] })),
   });
@@ -309,7 +312,7 @@ export default function VotosDiretoresPage() {
       api.get<{
         total_nao_enfileirados: number;
         grupos: Array<{ agencia: string; tipo: string; status: string; motivo?: string | null; total: number; amostra: Array<{ url: string; motivo: string | null }> }>;
-        falhas_extracao: Array<{ documento_id: string; agencia: string; filename: string | null; status: string; erro: string | null }>;
+        falhas_extracao: Array<{ documento_id: string; agencia: string; filename: string | null; status: string; erro: string | null; ciclos_reprocesso?: number }>;
         total_arquivados?: number;
         total_arquivados_recuperaveis?: number;
       }>("/admin/monitoramento/nao-enfileirados").catch(() => ({ total_nao_enfileirados: 0, grupos: [], falhas_extracao: [], total_arquivados: 0, total_arquivados_recuperaveis: 0 })),
@@ -811,7 +814,7 @@ export default function VotosDiretoresPage() {
                           className="text-text-secondary hover:text-brand hover:underline"
                           title={f.filename ?? undefined}
                         >
-                          {f.agencia}: {f.erro ?? f.status}
+                          {f.agencia}: {f.erro ?? f.status}{f.status === "failed" ? ` (ciclo ${f.ciclos_reprocesso ?? 0}/3)` : ""}
                         </a>
                       ) : (
                         <span className="text-text-secondary">{f.agencia}: {f.erro ?? f.status}</span>
@@ -825,11 +828,35 @@ export default function VotosDiretoresPage() {
           ) : null}
           {(pendentesRevisao?.data ?? []).length > 0 ? (
             <div className="space-y-1.5">
+              {/* Fase 22 — as CAUSAS antes dos documentos: 146 linhas viram 5-6 motivos, e cada
+                  motivo é um conserto de extração, não 146 cliques. */}
+              {(() => {
+                const porMotivo = new Map<string, number>();
+                for (const doc of pendentesRevisao?.data ?? []) {
+                  const m = doc.campos_detectados?.auto_skip?.trim() || "sem motivo gravado (ainda não passou pelo auto-confirm)";
+                  porMotivo.set(m, (porMotivo.get(m) ?? 0) + 1);
+                }
+                const causas = [...porMotivo.entries()].sort((a, b) => b[1] - a[1]);
+                return causas.length > 0 ? (
+                  <div className="flex flex-wrap gap-1.5 pb-1" data-testid="excecoes-por-motivo">
+                    {causas.map(([motivo, n]) => (
+                      <span key={motivo} className="text-[11px] px-2 py-0.5 rounded-full border border-border text-text-secondary" title={motivo}>
+                        <span className="font-medium text-text-primary">{n}</span> · {motivo.length > 70 ? `${motivo.slice(0, 70)}…` : motivo}
+                      </span>
+                    ))}
+                  </div>
+                ) : null;
+              })()}
               {(pendentesRevisao?.data ?? []).slice(0, 10).map((doc) => (
                 <div key={doc.id} className="flex items-center justify-between gap-3 text-sm border border-border rounded-card px-3 py-2">
                   <span className="truncate text-text-primary">
                     {doc.filename ?? doc.id}
                     <span className="text-text-muted"> · {doc.agencia?.sigla ?? "?"} · {doc.tipo_documento ?? "doc"}</span>
+                    {doc.campos_detectados?.auto_skip && (
+                      <span className="block text-[11px] text-amber-700 dark:text-amber-400 truncate" title={doc.campos_detectados.auto_skip}>
+                        ↳ {doc.campos_detectados.auto_skip}
+                      </span>
+                    )}
                   </span>
                   <span className="flex items-center gap-3 shrink-0">
                     {doc.signed_url && (

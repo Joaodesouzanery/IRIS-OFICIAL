@@ -47,7 +47,7 @@ export async function GET(req: NextRequest) {
       .order("last_seen_at", { ascending: false })
       .limit(4000),
     db.from("documentos_regulatorios")
-      .select("id, agencia_id, filename, status, error_message, updated_at")
+      .select("id, agencia_id, filename, status, error_message, updated_at, campos_detectados")
       .in("status", ["failed", "queued", "processing"])
       .order("updated_at", { ascending: false })
       .limit(300),
@@ -86,6 +86,9 @@ export async function GET(req: NextRequest) {
     status: d.status,
     erro: d.error_message ?? null,
     atualizado_em: d.updated_at,
+    // Fase 22 — quantos ciclos o `reprocessarFalhados` já gastou (teto 3). Sem isto o operador
+    // via "reprocessável" para sempre, sem saber se a esteira ainda ia tentar.
+    ciclos_reprocesso: Number((d.campos_detectados as Record<string, unknown> | null)?.reprocessos_falha) || 0,
   }));
 
   const novos = [...grupos.values()].filter((g) => g.status === "novo");
