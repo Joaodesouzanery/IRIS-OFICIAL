@@ -49,13 +49,22 @@ SELECT jsonb_pretty(jsonb_build_object(
                SELECT 1 FROM jsonb_array_elements_text(COALESCE(d.raw_extraction->'nomes_presentes', '[]'::jsonb)) p
                 WHERE p ILIKE '%Barnab%'
              ) AS presente_no_mesmo_doc,
-             -- 300 chars ao redor da primeira ocorrência de "ausen…" no texto persistido
-             -- (`deliberacoes.raw_text` é COLUNA — conferido na 001_initial_schema, índice trgm).
-             substring(
-               COALESCE(d.raw_text, d.fundamento_decisao, '')
-               FROM GREATEST(1, position('usen' IN lower(COALESCE(d.raw_text, d.fundamento_decisao, ''))) - 150)
-               FOR 300
-             ) AS trecho
+             -- Fase 23 — a versão anterior deste trecho ME ENGANOU: `raw_text` era nulo, o
+             -- COALESCE caía no `fundamento_decisao`, "ausen" não existia ali, position() dava 0 e
+             -- o trecho era o INÍCIO do fundamento (a citação do Decreto) — que a revisão leu
+             -- como "a regex casou o rodapé legal". Agora: se não há ocorrência, o trecho diz isso.
+             CASE
+               WHEN position('usên' IN lower(COALESCE(d.raw_text, d.fundamento_decisao, ''))) > 0
+                 OR position('usen' IN lower(COALESCE(d.raw_text, d.fundamento_decisao, ''))) > 0
+               THEN substring(
+                 COALESCE(d.raw_text, d.fundamento_decisao, '')
+                 FROM GREATEST(1, GREATEST(
+                   position('usên' IN lower(COALESCE(d.raw_text, d.fundamento_decisao, ''))),
+                   position('usen' IN lower(COALESCE(d.raw_text, d.fundamento_decisao, '')))) - 150)
+                 FOR 300)
+               ELSE '(sem "ausên/ausen" no texto persistido — raw_text ' ||
+                    CASE WHEN d.raw_text IS NULL THEN 'NULO' ELSE 'presente' END || ')'
+             END AS trecho
         FROM votos v
         JOIN diretores dir ON dir.id = v.diretor_id
         JOIN deliberacoes d ON d.id = v.deliberacao_id

@@ -699,9 +699,25 @@ function splitDirectorNames(value: string): string[] {
     // Fase 13 — o " - " também separa ("Raquel França Carneiro - Diretora - Afastamento em
     // Férias"). Só HÍFEN COM ESPAÇOS: nome composto real ("Sá-Carvalho") não tem espaços em volta.
     .split(/\s*(?:,|;|\se\s)\s*|\s+[-–—]\s+/i)
-    .map((name) => name.replace(/\s+/g, " ").trim())
-    .filter((name) => name.split(/\s+/).length >= 2 && name.length <= 100);
+    // Fase 23 — hífen COLADO ("- -Afastamento em Férias", artefato de layout do PDF) é lixo de
+    // borda, não nome composto: cai antes da validação.
+    .map((name) => name.replace(/^[\s\-–—]+|[\s\-–—]+$/g, "").replace(/\s+/g, " ").trim())
+    .filter((name) => name.split(/\s+/).length >= 2 && name.length <= 100)
+    // Fase 23 — o rótulo real da ARTESP é "Nome - Cargo - Afastamento em Férias": o filtro
+    // estrutural (≥2 palavras) deixava "Afastamento em Férias" passar como NOME de ausente.
+    // Medido no qa-fase22: 56 linhas com esse fragmento no balde. Não gerava linha de voto,
+    // mas entrava em `collectDivergentIntentIds` na faixa 0,6–0,85 e podia suprimir voto por
+    // match fuzzy, sem diagnóstico. Só o que parece pessoa segue.
+    .filter((name) => isLikelyPersonName(name) && !isRoleWordOnly(name) && !RE_NOME_INSTITUCIONAL.test(name))
+    // `isLikelyPersonName` aceita "Afastamento em Férias" (palavras capitalizadas). Duas regras
+    // que nome de pessoa nunca viola: partícula minúscula só de/da/do/dos/das; e o vocabulário
+    // do motivo da ausência (afastamento, férias, licença, viagem, recesso) não é sobrenome.
+    .filter((name) => !RE_MOTIVO_DE_AUSENCIA.test(name)
+      && name.split(/\s+/).every((w) => /^[A-ZÁÉÍÓÚÂÊÔÃÕÇÀÜ]/.test(w) || /^d[aeo]s?$/.test(w)));
 }
+
+/** Palavras que aparecem no MOTIVO do rótulo de ausência da ARTESP — nunca em nome de pessoa. */
+const RE_MOTIVO_DE_AUSENCIA = /\b(?:afastamento|f[eé]rias|licen[çc]a|viagem|recesso|justificad[oa]|m[eé]dic[oa]|miss[aã]o|compromisso)\b/i;
 
 // Corte de PROSA no fim do heading (QA ago/2026): as capturas `(.+)$`/caps engoliam a frase
 // seguinte ("…GOMES JÚNIOR restituiu-lhe a presidência…", "…NEVES para a relatoria da matéria
