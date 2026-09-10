@@ -450,9 +450,10 @@ export default function VotosDiretoresPage() {
       const partes = [
         `${totais.processados ?? 0} PDF(s) extraído(s)`,
         `${(totais.confirmados ?? 0) + (totais.materializados ?? 0)} materializado(s)`,
-        (totais.duplicatas_arquivadas ?? 0) + (totais.fundidos_semanticos ?? 0) > 0
-          ? `${(totais.duplicatas_arquivadas ?? 0) + (totais.fundidos_semanticos ?? 0)} duplicata(s) resolvida(s)`
-          : null,
+        // Fase 25 — "resolvida" é só a ARQUIVADA. `fundidos_semanticos` conta documentos que apenas
+        // SEGUIRAM para o confirm (reuso da deliberação existente); somá-los inflava o banner.
+        (totais.duplicatas_arquivadas ?? 0) > 0 ? `${totais.duplicatas_arquivadas} duplicata(s) arquivada(s)` : null,
+        (totais.fundidos_semanticos ?? 0) > 0 ? `${totais.fundidos_semanticos} duplicata(s) semântica(s) seguiram para o confirm (reuso da deliberação existente)` : null,
         (totais.duplicatas_liberadas ?? 0) > 0 ? `${totais.duplicatas_liberadas} duplicata(s) da fila liberada(s) (primeiro da dupla)` : null,
         (totais.auto_skip_limpos ?? 0) > 0 ? `${totais.auto_skip_limpos} carimbo(s) obsoleto(s) apagado(s) — reavaliados pelo gate atual` : null,
         (totais.reanalisados ?? 0) > 0 ? `${totais.reanalisados} documento(s) reanalisado(s) (extração mudou)` : null,

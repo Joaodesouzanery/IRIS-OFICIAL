@@ -47,3 +47,11 @@ describe("etapa137 · órfão só com leitura completa", () => {
     expect(fonte).toMatch(/const leituraCompleta = !delibsAllRes\.truncated && !votosTruncados/);
   });
 });
+
+describe("etapa137 · o banner não chama de «resolvida» a duplicata que só seguiu adiante", () => {
+  it("`fundidos_semanticos` não entra na soma de duplicatas; tem linha própria", () => {
+    const tela = readFileSync(join(RAIZ, "src/app/dashboard/deliberacoes/votos-diretores/page.tsx"), "utf-8");
+    expect(tela).not.toMatch(/duplicatas_arquivadas \?\? 0\) \+ \(totais\.fundidos_semanticos/);
+    expect(tela).toMatch(/seguiram para o confirm/);
+  });
+});
