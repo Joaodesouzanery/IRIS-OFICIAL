@@ -3,6 +3,46 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 25 (10/set/2026) — o instrumento que subcontava: a Completude lia 1.000 linhas
+
+**Sequência:** deploy verde → abrir Votos dos Diretores (a Completude 2026 SOBE para o real e
+"órfãos" vira 0 ou "não medido") → colar `docs/qa-fase25.sql` → **decidir o bloco ④**.
+
+**⚠️ A LIÇÃO DA FASE — "não está muito grande?" tinha a resposta invertida.** A revisão apontou
+"537 votos órfãos" e o salto de 2165 → 2619 votos na ARTESP como suspeita de duplicação. No banco,
+órfão é **impossível** (FK `ON DELETE CASCADE`) e voto repetido por par também (`UNIQUE`). O que
+havia era o instrumento: `completude-2026` (e `saude-dados`, `governanca`, o "estrito" do
+Mandatos e três leituras do overview) lia com `.limit(40000)` **sem paginar**, e o PostgREST corta
+em ~1.000. A tela via 1.000 deliberações e 1.000 votos, chamava de "órfão" o resto, e **subcontava
+todas as colunas da tabela usada como base de comparação**. O número grande não era o problema;
+o pequeno é que estava errado. `.limit(N)` grande não é paginação.
+
+**O que a fase entregou:**
+1. `lerTudo` (sobre `selectAllPaged`) em toda leitura que agrega; `votos_orfaos` só é publicado
+   com leitura completa; etapa137 transversal proíbe `.limit(N ≥ 1000)` nessas rotas — e pegou
+   três no overview que eu não tinha listado.
+2. O banner separa "duplicata arquivada" de "duplicata semântica que seguiu para o confirm" —
+   `fundidos_semanticos` inflava as "resolvidas".
+3. "Métricas por diretor · todo o histórico / 2026" com seletor; "Divergentes" com tooltip
+   (votou contra o desfecho; não é dissenso entre colegas).
+4. **O salto da ARTESP é represa liberada**: 85 (C06) + 31 (duplicatas) ≈ 116 docs → +119
+   deliberações com voto, 3,8 votos por deliberação. `qa-fase25.sql` ①② provam (duplicadas por
+   número ≈ 0; por par = 0).
+
+**⏳ AGUARDA VOCÊ — bloco ④ do `qa-fase25.sql`: a direção do voto inferido em Indeferido.**
+Caio Mário com "25 divergentes e 100% favorável" não é erro de conta: os 49 votos dele são
+inferidos como **"Favoravel" independentemente do resultado**; em Indeferido não unânime o
+sistema diz que ele "foi favorável ao pedido negado" e marca divergente. Inferir por mandato
+significa "acompanhou o colegiado" — em Indeferido isso é **Desfavorável ao pleito**. Efeito
+sistêmico: "% Favorável" tende a 100% para quem só tem voto inferido. O bloco ④ mostra, por
+agência, quantos inferidos são Favorável em Indeferido (unânime × não) e o "% Favorável" hoje ×
+se seguisse o desfecho. Com o número, você decide; se aprovar: regra nova + `recalcular-divergencia`
++ queda datada na metodologia (Fase 26). A medição no materializador (só itens novos) não foi
+feita: o SQL sobre o acervo inteiro é o instrumento.
+
+**Seguem aguardando:** Severino (posse no DOU); 45 escaneados; as 2 atas que sobraram em revisão
+(1 ANM "sessão anterior" — reanalisa sozinha com Luiz Paniago no cadastro; 1 ANTT sem itens).
+
 ## 🔴 FASE 24 (09/set/2026) — a trava de sentido único, a ANM presa por três atas, o número que só cai
 
 **Sequência:** **aplicar `20260909130000_reinserir_luiz_paniago_anm_v2.sql`** (a v1 `…120000` falhou: chamava `iris_seed_director`, função que a migration de maio cria e derruba na mesma transação — supersedida, não aplicar) → deploy verde →
