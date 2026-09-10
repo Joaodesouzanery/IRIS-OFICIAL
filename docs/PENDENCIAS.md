@@ -3,6 +3,41 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 26 (10/set/2026) — o voto inferido segue o desfecho; a ANM sai da extração presa; a fila justa; "são os corretos?"
+
+**Sequência:** deploy verde → **"Rodar tudo" 2×** → colar `docs/qa-fase26.sql` → abrir a tela e
+**conferir as "5 ao acaso"** contra os PDFs → decidir o ④ (os presos) e a fusão do `VOTO-DFQ-001`.
+
+**As suas perguntas, respondidas com o QA da Fase 25:**
+- *Não está muito grande?* 2026: ARTESP 454 deliberações em 42 reuniões (~11/sessão semanal);
+  ANTT 308 em 64; ANM 125 em 3 ROPs (~42 itens/ata). É o tamanho da fonte. Órfãos = 0; UNIQUE e
+  FK CASCADE presentes em produção.
+- *Identifica duplicatas?* Por par (deliberação, diretor) o banco proíbe. Os 19 números da ARTESP
+  "em dobro" eram atos de **anos diferentes** (a ARTESP renumera por ano; o banco guarda "344").
+  Defeito real corrigido: a análise não olhava o ano e usava `.maybeSingle()`; e "Voto Vista"
+  colapsava com "Voto" na mesma chave.
+- *Só 2026?* Não: o card diz "todo o histórico / 2026" e o SQL separa.
+- *Chega no objetivo?* O que segurava era a ANM: 3 atas nunca baixadas e 10 docs presos em
+  "processing". Causas de código consertadas: concorrência que ignorava o saldo (4 jobs com 9 s)
+  e fila global de 60 por data sem justiça por agência (ANTT + pautas da ANM na frente das atas).
+
+**O que a fase entregou (ordem aprovada):**
+1. **Voto inferido acompanha o colegiado**: Indeferido → Desfavorável; Retirado/sem resultado →
+   sem voto inferido; não-divergente por construção; histórico reescrito por
+   `recalcular-divergencia?direcao=1`. % Favorável esperado: ARTESP 73,1 · ANM 78,9 · ANTT 98,9
+   (METODOLOGIA §0.0.2).
+2. **Extração**: `jobsPermitidos` (o saldo cobre cada job em voo); job que estoura a fatia vira
+   `failed` com motivo; abandonados após 3 ciclos no banner. **Medido**: as atas da ANM levam
+   < 100 ms — não são elas; o `qa-fase26` ④ diz o que são os 10 presos.
+3. **Fila justa**: janela por agência (30), ata/deliberação/voto antes de pauta, round-robin;
+   `sem_pdf` deixa de consumir o teto de vazão.
+4. **Duplicata por ano** na análise; `VOTO-VISTA-*`.
+5. **"Conferir 5 ao acaso"**: rota + bloco na tela — o instrumento de "está correto".
+
+**⏳ AGUARDA VOCÊ:** conferir a amostra de 5 por agência contra os PDFs (é o teste que pegou os
+erros desta série); `qa-fase26` ④ (o que são os presos: OCR? grandes?); a fusão do par
+`VOTO-DFQ-001-2026` (o dedup faz, você decide); Severino (posse no DOU); 45 escaneados.
+
 ## 🔴 FASE 25 (10/set/2026) — o instrumento que subcontava: a Completude lia 1.000 linhas
 
 **Sequência:** deploy verde → abrir Votos dos Diretores (a Completude 2026 SOBE para o real e
