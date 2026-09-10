@@ -1,3 +1,4 @@
+import { anosCompativeis } from "@/lib/server/deliberacao-dedup";
 import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import type { PreviewResult } from "@/types";
 import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
@@ -218,14 +219,21 @@ export async function analyzeUploadPdf(input: {
 
   let semantic_duplicate = false;
   if (db && !is_duplicate) {
+    // Fase 26 — DUPLICATA É POR ANO. A ARTESP renumera a cada ano e o banco guarda "344" sem
+    // ano: esta checagem marcava "344/2026" como duplicata de "344/2025" (o confirm e o dedup
+    // já eram cientes do ano — só a análise não). E `.maybeSingle()` ERRA quando há duas linhas
+    // (ex.: 2025 e 2026), devolve `data: null` e a marca sumia em silêncio. Agora: candidatas por
+    // (número, agência) e o ano decide, pela MESMA regra do dedup (`anosCompativeis`).
     if (fields.numero_deliberacao && agencia_id_detected) {
-      const { data: existingDelib } = await db
+      const { data: candidatas } = await db
         .from("deliberacoes")
-        .select("id")
+        .select("id, data_reuniao")
         .eq("numero_deliberacao", fields.numero_deliberacao)
         .eq("agencia_id", agencia_id_detected)
-        .maybeSingle();
-      if (existingDelib) semantic_duplicate = true;
+        .limit(10);
+      if (((candidatas ?? []) as Array<{ data_reuniao: string | null }>).some((c) => anosCompativeis(c.data_reuniao, fields.data_reuniao ?? null))) {
+        semantic_duplicate = true;
+      }
     }
 
     if (!semantic_duplicate && fields.data_reuniao && agencia_id_detected && fields.interessado) {
@@ -235,8 +243,8 @@ export async function analyzeUploadPdf(input: {
         .eq("data_reuniao", fields.data_reuniao)
         .eq("agencia_id", agencia_id_detected)
         .eq("interessado", fields.interessado)
-        .maybeSingle();
-      if (existingByDate) semantic_duplicate = true;
+        .limit(1);
+      if ((existingByDate ?? []).length > 0) semantic_duplicate = true;
     }
 
     // Também deduplica contra a FILA: outro PDF (hash diferente) da MESMA matéria

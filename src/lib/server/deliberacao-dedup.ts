@@ -25,7 +25,7 @@ export interface DeliberacaoExistente {
 // Números de deliberação podem se repetir entre ANOS (ex.: "487" em 2025 e 2026):
 // só considera duplicata quando os anos são compatíveis (iguais, ou um dos lados
 // sem data — documento ainda não datado).
-function anosCompativeis(a: string | null | undefined, b: string | null | undefined): boolean {
+export function anosCompativeis(a: string | null | undefined, b: string | null | undefined): boolean {
   if (!a || !b) return true;
   return a.slice(0, 4) === b.slice(0, 4);
 }

@@ -362,8 +362,10 @@ function extractAnttDocumentNumber(text: string, filename: string, type: AnttMan
     // "Voto DFQ 043-2026" / "Voto DAB 030/2026" → "VOTO-DFQ-043-2026": chave
     // ESTÁVEL de dedup (o mesmo voto reprocessado 2× casa a unique parcial;
     // não colide com os "ATA-*" dos itens de ata).
-    const m = /voto\s+(?:vista\s+)?(d[a-z]{1,3}|dg)\s*n?[ºo]?\s*(\d{1,4})\s*[-/.]\s*(20\d{2})/i.exec(`${filename} ${text.slice(0, 800)}`);
-    if (m) return `VOTO-${m[1].toUpperCase()}-${m[2].padStart(3, "0")}-${m[3]}`;
+    // Fase 26 — "Voto Vista DFQ 001/2026" e "Voto DFQ 001/2026" são atos DIFERENTES; a chave
+    // engolia o "Vista" e os dois colapsavam na mesma (medido: VOTO-DFQ-001-2026 ×2 em produção).
+    const m = /voto\s+(vista\s+)?(d[a-z]{1,3}|dg)\s*n?[ºo]?\s*(\d{1,4})\s*[-/.]\s*(20\d{2})/i.exec(`${filename} ${text.slice(0, 800)}`);
+    if (m) return `VOTO-${m[1] ? "VISTA-" : ""}${m[2].toUpperCase()}-${m[3].padStart(3, "0")}-${m[4]}`;
     return null;
   }
   return null;
