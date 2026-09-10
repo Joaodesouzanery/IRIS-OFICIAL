@@ -2,7 +2,8 @@
 -- QA DA FASE 24 — a trava aberta, a ANM destravada, o número que só cai
 -- (somente LEITURA — uma instrução)
 --
--- ORDEM: aplicar `20260909120000_reinserir_luiz_paniago_anm.sql` → deploy verde → "Rodar tudo" 2×
+-- ORDEM: aplicar `20260909130000_reinserir_luiz_paniago_anm_v2.sql` (NÃO a v1 …120000, supersedida)
+--        → deploy verde → "Rodar tudo" 2×
 --        (a 1ª limpa carimbos e reanalisa; a 2ª confirma) → colar.
 --
 -- ① CARIMBOS `auto_skip` POR MOTIVO — os obsoletos (C06, duplicata, "não conta como final",

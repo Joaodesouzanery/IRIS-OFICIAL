@@ -1,3 +1,5 @@
+-- ⚠️ SUPERSEDIDA — NÃO APLICAR. Falhou em produção (42883): `iris_seed_director` não existe fora
+-- da transação de 20260517195947, que a cria e a derruba no fim. Use 20260909130000 (v2, inline).
 -- ═══════════════════════════════════════════════════════════════════════════════
 -- ANM: reinserir Luiz Paniago Neves (Fase 24 — 09/set/2026)
 --

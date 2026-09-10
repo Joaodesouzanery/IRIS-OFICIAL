@@ -5,7 +5,7 @@ Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22,
 
 ## 🔴 FASE 24 (09/set/2026) — a trava de sentido único, a ANM presa por três atas, o número que só cai
 
-**Sequência:** **aplicar `20260909120000_reinserir_luiz_paniago_anm.sql`** → deploy verde →
+**Sequência:** **aplicar `20260909130000_reinserir_luiz_paniago_anm_v2.sql`** (a v1 `…120000` falhou: chamava `iris_seed_director`, função que a migration de maio cria e derruba na mesma transação — supersedida, não aplicar) → deploy verde →
 **"Rodar tudo" 2×** (a 1ª limpa carimbos e reanalisa; a 2ª confirma) → colar `docs/qa-fase24.sql`.
 
 **O que a fase entregou (ordem aprovada por você):**
@@ -25,7 +25,7 @@ Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22,
    ANM/ANTT seguem em revisão. As 2 da ANTT (uma PAUTA, uma ata de 2 páginas) reanalisam.
 5. Metodologia: **ausência rotulada é nominal** (os 59 da ARTESP). `qa-fase24.sql`.
 
-**⏳ AGUARDA VOCÊ:** a migration do Luiz Paniago; o `qa-fase24.sql` (② responde "por que a ANM
+**⏳ AGUARDA VOCÊ:** a migration v2 do Luiz Paniago (o `qa-fase24` colado em 09/09 é o ANTES — v1 falhou, nada rodou; todos os zeros esperados); o `qa-fase24.sql` (② responde "por que a ANM
 só tem 1 reunião de 2026"); Severino (posse no DOU); 45 escaneados.
 
 **Ainda aberto, medido:** falha silenciosa 72/187 fora do caminho de voto (importar agências 7,
