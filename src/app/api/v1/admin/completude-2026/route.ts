@@ -12,6 +12,7 @@
  * fontes por ano quando a tabela não tem data; usa data_reuniao onde existe.
  */
 
+import { lerTudo } from "@/lib/server/select-all-paged";
 import { isVotoNominal } from "@/lib/server/vote-inference";
 import { selectVotosComFallback } from "@/lib/server/votos-write";
 import { NextRequest, NextResponse } from "next/server";
@@ -112,21 +113,25 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
+  let votosTruncados = false;
   const [agenciasRes, delibsAllRes, itens2026Res, docsRegRes, votosRes, diretoresRes, mandatosRes, candidatosRes] =
     await Promise.all([
       db.from("agencias").select("id, sigla, nome").eq("ativo", true),
       // Acervo de deliberações (bounded); o subconjunto 2026 é filtrado em código
       // (também serve para detectar votos órfãos contra o universo real de ids).
-      db.from("deliberacoes")
+      // Fase 25 — TUDO que agrega em JS lê a tabela inteira por `.range()`: `.limit(40000)` parava
+      // nos ~1.000 do PostgREST, e a tela chamava de "órfão" o que ficou fora da fatia.
+      lerTudo<Delib>(() => db.from("deliberacoes")
         .select("id, agencia_id, tipo_documento, documento_pai_id, numero_deliberacao, numero_reuniao, data_reuniao, resultado, interessado, empresa_id, reuniao_id")
-        .limit(40000),
-      db.from("monitoramento_itens").select("agencia_id, status, data_reuniao").gte("data_reuniao", de).lte("data_reuniao", ate).limit(40000),
-      db.from("documentos_regulatorios").select("agencia_id, status").limit(40000),
+        .order("id"), "completude/deliberacoes"),
+      lerTudo(() => db.from("monitoramento_itens").select("id, agencia_id, status, data_reuniao").gte("data_reuniao", de).lte("data_reuniao", ate).order("id"), "completude/itens"),
+      lerTudo(() => db.from("documentos_regulatorios").select("id, agencia_id, status").order("id"), "completude/docs"),
       selectVotosComFallback<Array<{ deliberacao_id: string; diretor_id: string | null; is_nominal: boolean; proveniencia?: string | null }>>(
-        (c) => db.from("votos").select(c).limit(80000), "deliberacao_id, diretor_id, is_nominal, proveniencia", "deliberacao_id, diretor_id, is_nominal"),
-      db.from("diretores").select("id, agencia_id").eq("review_status", "aprovado").limit(5000),
-      db.from("mandatos").select("diretor_id").limit(20000),
-      db.from("diretor_candidatos").select("agencia_id").eq("review_status", "pendente").limit(5000),
+        async (c) => { const r = await lerTudo(() => db.from("votos").select(`id, ${c}`).order("id"), "completude/votos"); votosTruncados = r.truncated; return r; },
+        "deliberacao_id, diretor_id, is_nominal, proveniencia", "deliberacao_id, diretor_id, is_nominal"),
+      lerTudo(() => db.from("diretores").select("id, agencia_id").eq("review_status", "aprovado").order("id"), "completude/diretores"),
+      lerTudo(() => db.from("mandatos").select("id, diretor_id").order("id"), "completude/mandatos"),
+      lerTudo(() => db.from("diretor_candidatos").select("id, agencia_id").eq("review_status", "pendente").order("id"), "completude/candidatos"),
     ]);
 
   // Só agências COLEGIADAS (esteira de votos configurada). As demais 10 foram semeadas para o
@@ -238,6 +243,10 @@ export async function GET(req: NextRequest) {
   const delibDaAgenciaComVoto = new Map<string, Set<string>>(); // agencia_id → set diretor_id
   const delibsComVoto = new Set<string>();
   const delibsComNominal = new Set<string>();
+  // Órfão só existe contra o universo INTEIRO: se qualquer das duas leituras truncou, o número
+  // seria mentira (era exatamente o 537). Com leitura completa, a FK em CASCADE torna o órfão
+  // impossível — se aparecer, é o banco sem a FK, e aí o número é a prova.
+  const leituraCompleta = !delibsAllRes.truncated && !votosTruncados;
   let votosOrfaos = 0;
   for (const v of votosRes.data ?? []) {
     if (!allDelibIds.has(v.deliberacao_id)) { votosOrfaos += 1; continue; }
@@ -288,7 +297,9 @@ export async function GET(req: NextRequest) {
     votos_total: soma((a) => a.votos.total),
     votos_nominais: soma((a) => a.votos.nominais),
     votos_inferidos: soma((a) => a.votos.inferidos),
-    votos_orfaos: votosOrfaos,
+    votos_orfaos: leituraCompleta ? votosOrfaos : null,
+    /** Fase 25 — `false` = alguma leitura bateu no teto; os totais podem subcontar e o órfão não é medido. */
+    leitura_completa: leituraCompleta,
     diretores_aprovados: soma((a) => a.diretores.aprovados),
     diretores_com_voto: soma((a) => a.diretores.com_voto),
     diretores_sem_mandato: soma((a) => a.diretores.sem_mandato),
@@ -301,7 +312,8 @@ export async function GET(req: NextRequest) {
   if (totais.diretores_sem_mandato > 0) alertas.push(`${totais.diretores_sem_mandato} diretor(es) sem mandato — inferência de voto desligada para eles.`);
   if (totais.deliberacoes_sem_empresa_id > 0) alertas.push(`${totais.deliberacoes_sem_empresa_id} deliberação(ões) com interessado mas SEM empresa_id (não entram nas visões por empresa).`);
   if (totais.deliberacoes_sem_voto > 0) alertas.push(`${totais.deliberacoes_sem_voto} deliberação(ões) final(is) sem nenhum voto.`);
-  if (votosOrfaos > 0) alertas.push(`${votosOrfaos} voto(s) órfão(s) (deliberação inexistente).`);
+  if (!leituraCompleta) alertas.push("Leitura TRUNCADA (teto de linhas): totais podem subcontar; órfãos não medidos.");
+  else if (votosOrfaos > 0) alertas.push(`${votosOrfaos} voto(s) órfão(s) (deliberação inexistente) — com FK em CASCADE isto não deveria existir; conferir a constraint em produção.`);
   for (const a of por_agencia) {
     // Link descoberto que nunca virou documento processado (status "novo" no
     // monitoramento): era o buraco invisível do "17 ANM → 0 deliberações".

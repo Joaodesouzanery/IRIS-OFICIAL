@@ -9,6 +9,7 @@
  * Somente leitura: agrega contagens via Supabase; em modo DEMO devolve um retrato fictício.
  */
 
+import { lerTudo } from "@/lib/server/select-all-paged";
 import { isVotoNominal } from "@/lib/server/vote-inference";
 import { selectVotosComFallback } from "@/lib/server/votos-write";
 import { MATCH_THRESHOLD, MATCH_REVIEW_THRESHOLD } from "@/lib/server/name-matcher";
@@ -158,15 +159,16 @@ export async function GET(req: NextRequest) {
     fontesDocsRes,
   ] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
-    db.from("deliberacoes").select("id, agencia_id, extraction_confidence, numero_deliberacao, processo, data_reuniao, tipo_documento, interessado, empresa_id").limit(20000),
+    // Fase 25 — leitura inteira por `.range()`; `.limit(20000)` parava nos ~1.000 do PostgREST.
+    lerTudo(() => db.from("deliberacoes").select("id, agencia_id, extraction_confidence, numero_deliberacao, processo, data_reuniao, tipo_documento, interessado, empresa_id").order("id"), "saude/deliberacoes"),
     selectVotosComFallback<Array<{ deliberacao_id: string; is_nominal: boolean; proveniencia?: string | null }>>(
-      (c) => db.from("votos").select(c).limit(50000), "deliberacao_id, is_nominal, proveniencia", "deliberacao_id, is_nominal"),
-    db.from("documentos_regulatorios").select("agencia_id, status").limit(20000),
+      (c) => lerTudo(() => db.from("votos").select(`id, ${c}`).order("id"), "saude/votos"), "deliberacao_id, is_nominal, proveniencia", "deliberacao_id, is_nominal"),
+    lerTudo(() => db.from("documentos_regulatorios").select("id, agencia_id, status").order("id"), "saude/docs"),
     db.from("diretor_candidatos").select("id", { count: "exact", head: true }).eq("review_status", "pendente"),
     db.from("monitoramento_itens").select("id", { count: "exact", head: true }).eq("status", "novo"),
     db.from("coleta_execucoes").select("dominio, status, started_at, itens, novos, error_message").order("started_at", { ascending: false }).limit(12),
-    db.from("diretores").select("id, agencia_id, nome").eq("review_status", "aprovado").limit(2000),
-    db.from("mandatos").select("diretor_id").limit(10000),
+    lerTudo(() => db.from("diretores").select("id, agencia_id, nome").eq("review_status", "aprovado").order("id"), "saude/diretores"),
+    lerTudo(() => db.from("mandatos").select("id, diretor_id").order("id"), "saude/mandatos"),
     // Auditoria por AMOSTRAGEM do auto-confirm: quantas deliberações entraram sozinhas
     // nos últimos 7 dias (raw_extraction.auto_confirmado=true) + amostra p/ conferência.
     db.from("deliberacoes")

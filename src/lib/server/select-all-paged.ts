@@ -32,3 +32,24 @@ export async function selectAllPaged<T = any>(
     from += pageSize;
   }
 }
+
+/**
+ * A leitura que AGREGA em JS lê a tabela INTEIRA — adaptador com a forma `{ data, error }` que as
+ * rotas já consomem, mais `truncated` (Fase 25).
+ *
+ * ═══ O instrumento que subcontava ═══
+ * `completude-2026`, `saude-dados`, `governanca-agencias` e `mandatos/stats` liam `deliberacoes`
+ * com `.limit(40000)` e `votos` com `.limit(80000)` — e o PostgREST corta em ~1.000. Com 3.859
+ * votos e mais de 1.000 deliberações, cada rota via 1.000 de cada, chamava de "órfão" todo voto
+ * cuja deliberação ficou fora da fatia (537 em produção) e SUBCONTAVA todas as colunas da tabela
+ * "Completude 2026". O número grande não era o problema; o pequeno é que estava errado.
+ * `.limit(N)` grande não é paginação: é um teto que a plataforma ignora. Aqui, é `.range()`.
+ */
+export async function lerTudo<T = any>(
+  queryFactory: () => any,
+  label: string,
+  maxRows = 100000,
+): Promise<{ data: T[]; error: unknown; truncated: boolean }> {
+  const r = await selectAllPaged<T>(queryFactory, { label, maxRows });
+  return { data: r.rows, error: r.error, truncated: r.truncated };
+}

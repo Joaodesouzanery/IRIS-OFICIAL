@@ -57,6 +57,17 @@ canônico (`isFinalDecisionRecord`) em vez de uma aproximação SQL que contava 
 
 ---
 
+## 0.0.1 A tela de Completude lia 1.000 linhas (10/09/2026)
+
+**Defeito de instrumento, datado.** Até 09/09/2026 a rota `completude-2026` (e `saude-dados`,
+`governanca-agencias` e o "estrito" do Mandatos) lia `deliberacoes` e `votos` com `.limit(40000)`
+e `.limit(80000)` **sem paginar** — e o PostgREST devolve no máximo ~1.000 linhas por chamada.
+Com 3.859 votos e mais de 1.000 deliberações, a tela via 1.000 de cada, chamava de "voto órfão"
+todo voto cuja deliberação ficou fora da fatia (537, num banco onde órfão é impossível: a FK é
+`ON DELETE CASCADE`) e **subcontava todas as colunas da tabela "Completude 2026"**. A partir de
+**10/09/2026** as leituras que agregam usam `.range()` até esgotar; os totais **sobem** para o
+valor real, e "órfãos" só é publicado quando a leitura foi completa (truncou → "não medido").
+
 ## 0.1 O QUINTO estado, e a conta do "Total de deliberações" (04/09/2026)
 
 **A pergunta que este bloco responde:** por que o banco tem ~1028 linhas em `deliberacoes` e o

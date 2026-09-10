@@ -14,7 +14,7 @@ import { isLocalMode, getSyncedDelibs } from "@/lib/server/local-data-store";
 import { computeDiretoresOverview } from "@/lib/server/analytics-engine";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
-import { selectAllPaged } from "@/lib/server/select-all-paged";
+import { selectAllPaged, lerTudo } from "@/lib/server/select-all-paged";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 
 type MandatoRow = {
@@ -50,11 +50,12 @@ export async function GET(req: NextRequest) {
 
   // Parte dos DIRETORES aprovados (não dos votos) para que TODO diretor apareça —
   // inclusive com 0 voto.
-  let diretoresQuery = db
-    .from("diretores")
-    .select("id, nome, nome_variantes, cargo, agencia_id, review_status")
-    .limit(5000);
-  if (agenciaId) diretoresQuery = diretoresQuery.eq("agencia_id", agenciaId);
+  // Fase 25 — leitura inteira por `.range()`; `.limit(5000)` parava nos ~1.000 do PostgREST.
+  const diretoresQuery = lerTudo(() => {
+    let q = db.from("diretores").select("id, nome, nome_variantes, cargo, agencia_id, review_status").order("id");
+    if (agenciaId) q = q.eq("agencia_id", agenciaId);
+    return q;
+  }, "overview/diretores");
 
   // is_nominal p/ separar voto LIDO (nominal) de INFERIDO por unanimidade/mandato.
   // `votos` paginado (PERF-4) p/ não subcontar em silêncio no ~1000 do PostgREST.
@@ -70,7 +71,7 @@ export async function GET(req: NextRequest) {
       // Ordem total única (PK dos votos) → paginação por offset determinística.
       return q.order("id", { ascending: true });
     }, { label: "dashboard/diretores/overview" }),
-    db.from("mandatos").select("diretor_id, cargo, data_inicio, data_fim, fonte_dado, ato_nomeacao").limit(20000),
+    lerTudo(() => db.from("mandatos").select("id, diretor_id, cargo, data_inicio, data_fim, fonte_dado, ato_nomeacao").order("id"), "overview/mandatos"),
   ]);
   if (diretoresRes.error || votosRes.error) {
     return NextResponse.json({ error: "Erro ao buscar overview de diretores" }, { status: 500 });
@@ -124,12 +125,13 @@ export async function GET(req: NextRequest) {
   {
     const agencias = [...new Set(aprovados.map((d) => d.agencia_id).filter(Boolean))] as string[];
     for (const agId of agencias) {
-      const { data: delibsRel } = await db
+      // Fase 25 — a relatoria também parava nos ~1.000: subcontava quem mais relata.
+      const { data: delibsRel } = await lerTudo(() => db
         .from("deliberacoes")
-        .select("relator")
+        .select("id, relator")
         .eq("agencia_id", agId)
         .not("relator", "is", null)
-        .limit(20000);
+        .order("id"), `overview/relatorias/${agId}`);
       const dirs = aprovados
         .filter((d) => d.agencia_id === agId)
         .map((d) => ({ id: d.id, nome: d.nome, nome_variantes: Array.isArray(d.nome_variantes) ? d.nome_variantes : [] }));

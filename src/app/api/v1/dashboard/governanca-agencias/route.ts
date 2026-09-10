@@ -6,6 +6,7 @@
  * para todas as agências (ANA/ANAC/... apareciam com o mesmo 68 sem ter dados).
  */
 
+import { lerTudo } from "@/lib/server/select-all-paged";
 import { isVotoNominal } from "@/lib/server/vote-inference";
 import { selectVotosComFallback } from "@/lib/server/votos-write";
 import { NextRequest, NextResponse } from "next/server";
@@ -59,10 +60,11 @@ export async function GET(req: NextRequest) {
 
   const [agenciasRes, delibsRes] = await Promise.all([
     db.from("agencias").select("id, sigla, nome").eq("ativo", true),
+    // Fase 25 — leitura inteira por `.range()`; `.limit(40000)` parava nos ~1.000 do PostgREST.
     selectVotosComFallback(
-      (c) => db.from("deliberacoes")
-        .select(`agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${finalSelect}, votos(${c})`)
-        .limit(40000),
+      (c) => lerTudo(() => db.from("deliberacoes")
+        .select(`id, agencia_id, resultado, microtema, extraction_confidence, tipo_documento, documento_pai_id, ${finalSelect}, votos(${c})`)
+        .order("id"), "governanca/deliberacoes"),
       "is_divergente, is_nominal, proveniencia",
       "is_divergente, is_nominal",
     ),

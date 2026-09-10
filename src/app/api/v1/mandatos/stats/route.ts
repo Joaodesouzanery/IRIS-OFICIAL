@@ -3,6 +3,7 @@
  * KPIs para o painel de mandatos.
  */
 
+import { lerTudo } from "@/lib/server/select-all-paged";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import { NextRequest, NextResponse } from "next/server";
 import { demoData } from "@/lib/demo-data";
@@ -48,11 +49,15 @@ export async function GET(req: NextRequest) {
   // Fase 21 — o número ESTRITO, pelo predicado canônico, ao lado do aproximado. A aproximação
   // acima conta filho de ata SEM `resultado` (o quinto estado da METODOLOGIA) e por isso diverge
   // do Dashboard. Trocar o card muda número público: primeiro os dois aparecem juntos.
-  let estritoQuery = db
-    .from("deliberacoes")
-    .select("tipo_documento, documento_pai_id, resultado, import_counts_as_final:raw_extraction->>import_counts_as_final, documento_subtipo:raw_extraction->>documento_subtipo, documento_antt_tipo:raw_extraction->>documento_antt_tipo")
-    .limit(40000);
-  if (agenciaId) estritoQuery = estritoQuery.eq("agencia_id", agenciaId);
+  // Fase 25 — leitura inteira por `.range()`: o `.limit(40000)` que eu pus na Fase 21 parava nos
+  // ~1.000 do PostgREST e o "estrito" subcontava o card que ele devia corrigir.
+  const estritoQuery = lerTudo(() => {
+    let q = db.from("deliberacoes")
+      .select("id, tipo_documento, documento_pai_id, resultado, import_counts_as_final:raw_extraction->>import_counts_as_final, documento_subtipo:raw_extraction->>documento_subtipo, documento_antt_tipo:raw_extraction->>documento_antt_tipo")
+      .order("id");
+    if (agenciaId) q = q.eq("agencia_id", agenciaId);
+    return q;
+  }, "mandatos/estrito");
 
   // Participações colegiadas = total votos
   let votosQuery = db
@@ -61,19 +66,20 @@ export async function GET(req: NextRequest) {
   if (agenciaId) votosQuery = votosQuery.eq("deliberacoes.agencia_id", agenciaId);
 
   // Taxa de consenso: deliberações sem voto divergente / deliberações COM VOTO (etapa60).
-  let divergQuery = db
-    .from("votos")
-    .select("deliberacao_id, deliberacoes!inner(agencia_id)")
-    .eq("is_divergente", true);
-  if (agenciaId) divergQuery = divergQuery.eq("deliberacoes.agencia_id", agenciaId);
+  const divergQuery = lerTudo(() => {
+    let q = db.from("votos").select("id, deliberacao_id, deliberacoes!inner(agencia_id)").eq("is_divergente", true).order("id");
+    if (agenciaId) q = q.eq("deliberacoes.agencia_id", agenciaId);
+    return q;
+  }, "mandatos/divergentes");
 
   // O DENOMINADOR do consenso: deliberações distintas com ao menos UM voto. Era `total`
   // (todas as deliberações), então item sem voto entrava como concordância — a última rota de
   // consenso que ainda usava o denominador antigo.
-  let comVotoQuery = db
-    .from("votos")
-    .select("deliberacao_id, deliberacoes!inner(agencia_id)");
-  if (agenciaId) comVotoQuery = comVotoQuery.eq("deliberacoes.agencia_id", agenciaId);
+  const comVotoQuery = lerTudo(() => {
+    let q = db.from("votos").select("id, deliberacao_id, deliberacoes!inner(agencia_id)").order("id");
+    if (agenciaId) q = q.eq("deliberacoes.agencia_id", agenciaId);
+    return q;
+  }, "mandatos/com-voto");
 
   // As 4 queries são independentes → paralelas (antes eram 4 awaits sequenciais).
   const [{ count: diretores_ativos }, { count: total_deliberacoes }, { count: participacoes_colegiadas }, { data: divergData }, { data: comVotoData }, { data: estritoData }] =
