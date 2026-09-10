@@ -115,7 +115,9 @@ describe("etapa68 · o teto de vazão por rodada", () => {
   });
 
   it("o orquestrador respeita o teto e para o laço ao atingi-lo", () => {
-    expect(pipeline).toMatch(/const saldoTeto = TETO_ENQUEUE_POR_RODADA - \(enfileirados \+ itensArquivados\)/);
+    // Fase 26 — o teto é de DOWNLOADS: arquivar `sem_pdf` é contabilidade e deixou de consumi-lo
+    // (56 arquivamentos da ANM comiam a rodada e as atas nunca chegavam). Etapa141 cobra o oposto.
+    expect(pipeline).toMatch(/const saldoTeto = TETO_ENQUEUE_POR_RODADA - enfileirados;/);
     expect(pipeline).toMatch(/if \(saldoTeto <= 0\) \{ tetoAtingido = true; restantes = true; break; \}/);
   });
 

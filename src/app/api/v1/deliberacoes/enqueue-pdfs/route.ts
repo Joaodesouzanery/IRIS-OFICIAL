@@ -9,6 +9,8 @@
  * continua sendo feita por revisão humana em /api/v1/upload/confirm.
  */
 
+import { filaJusta } from "@/lib/server/fila-justa";
+import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import { NextRequest, NextResponse } from "next/server";
 import { waitUntil } from "@vercel/functions";
 import { isDemo } from "@/lib/server/is-demo";
@@ -103,24 +105,35 @@ export async function POST(req: NextRequest) {
 
   // Busca candidatos: itens "novo" de tipo decisão. Filtramos PDFs em memória
   // porque url_item pode terminar em /@@download/file ou .pdf.
-  let query = db
-    .from("monitoramento_itens")
-    .select("id, agencia_id, tipo, titulo, url_item, status, metadata")
-    .eq("status", "novo")
-    .in("tipo", DECISION_TIPOS as unknown as string[])
-    .order("data_reuniao", { ascending: false, nullsFirst: false })
-    .limit(60);
-
+  // Fase 26 — JANELA POR AGÊNCIA (fila justa). A janela única de 60 por data desc deixava a ANM
+  // fora: os itens frescos da ANTT e as pautas da própria ANM enchiam a página antes das atas.
+  // Agora: uma janela por agência colegiada (JANELA_POR_AGENCIA cada), reordenada por prioridade
+  // de tipo (ata/deliberação/voto antes de pauta) e intercalada em round-robin (`fila-justa.ts`).
+  const JANELA_POR_AGENCIA = 30;
+  let agenciasAlvo: Array<{ id: string }> = [];
   if (body.agencia_sigla?.trim()) {
     const { data: agencia } = await db
       .from("agencias")
       .select("id")
       .eq("sigla", body.agencia_sigla.trim().toUpperCase())
       .maybeSingle();
-    if (agencia?.id) query = query.eq("agencia_id", agencia.id);
+    if (agencia?.id) agenciasAlvo = [{ id: agencia.id }];
+  } else {
+    const { data: ags } = await db.from("agencias").select("id, sigla");
+    agenciasAlvo = ((ags ?? []) as Array<{ id: string; sigla: string }>).filter((a) => COLEGIADO_SIGLAS.has(String(a.sigla)));
   }
 
-  const { data: itens, error } = await query;
+  const janelas = await Promise.all(agenciasAlvo.map((a) => db
+    .from("monitoramento_itens")
+    .select("id, agencia_id, tipo, titulo, url_item, status, metadata")
+    .eq("status", "novo")
+    .eq("agencia_id", a.id)
+    .in("tipo", DECISION_TIPOS as unknown as string[])
+    .order("data_reuniao", { ascending: false, nullsFirst: false })
+    .limit(JANELA_POR_AGENCIA)));
+  const erroJanela = janelas.find((j) => j.error)?.error;
+  const itens = filaJusta(janelas.flatMap((j) => (j.data ?? []) as any[]));
+  const error = erroJanela ?? null;
   if (error) {
     return NextResponse.json({ error: `Falha ao listar itens monitorados: ${error.message}` }, { status: 500 });
   }
@@ -173,8 +186,12 @@ export async function POST(req: NextRequest) {
   // como o rejeitado nunca mudava de status, os mesmos 60 bloqueavam a janela para
   // sempre (208 detectados / 0 na fila). Agora TODO item da janela é tentado — o
   // critério é o CONTEÚDO (sniff) — e quem não tem PDF ganha status terminal (drena).
+  // Fase 26 — a ordem da fila justa (agência × prioridade de tipo) prevalece; o "PDF primeiro"
+  // desempata só dentro dela (sort estável).
   const novosCandidatos = (itens ?? [])
-    .sort((a, b) => Number(PDF_RE.test(String(b.url_item ?? ""))) - Number(PDF_RE.test(String(a.url_item ?? ""))))
+    .map((it, i) => ({ it, i }))
+    .sort((a, b) => (Number(PDF_RE.test(String(b.it.url_item ?? ""))) - Number(PDF_RE.test(String(a.it.url_item ?? "")))) || (a.i - b.i))
+    .map((x) => x.it)
     .slice(0, limit);
   // Os novos SEMPRE primeiro; o retry ocupa só o que sobrar da fatia desta chamada.
   const candidates = [...novosCandidatos, ...retentar.slice(0, Math.max(0, limit - novosCandidatos.length))];

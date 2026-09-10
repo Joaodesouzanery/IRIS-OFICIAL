@@ -419,7 +419,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     // Teto de VAZÃO por rodada (Fase 7). Com o download em paralelo, o orçamento deixou de ser o
     // estrangulador — sem teto, uma rodada sob cron diário poderia puxar centenas de documentos
     // sem ninguém olhando. O que não couber fica na fila durável e entra na rodada seguinte.
-    const saldoTeto = TETO_ENQUEUE_POR_RODADA - (enfileirados + itensArquivados);
+    // Fase 26 — arquivar `sem_pdf` é contabilidade, não download: deixa de consumir o teto de
+    // vazão (56 arquivamentos da ANM comiam a rodada e as atas nunca chegavam).
+    const saldoTeto = TETO_ENQUEUE_POR_RODADA - enfileirados;
     if (saldoTeto <= 0) { tetoAtingido = true; restantes = true; break; }
     const r = await call(
       enqueuePOST,
