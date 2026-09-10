@@ -57,6 +57,18 @@ canônico (`isFinalDecisionRecord`) em vez de uma aproximação SQL que contava 
 
 ---
 
+## 0.0.2 O voto inferido acompanha o colegiado (vigência: 10/09/2026)
+
+**Mudança de definição, datada.** Até 09/09/2026 todo voto **inferido** por mandato era gravado
+como "Favorável", independentemente do resultado. Num item **Indeferido** o sistema afirmava que o
+diretor "foi favorável ao pedido que o colegiado negou" — e o marcava divergente. Medido em
+produção (bloco ④ do `qa-fase25.sql`): 700 votos na ARTESP, 72 na ANM, 10 na ANTT; "% Favorável"
+era 100% para todo diretor sem voto nominal. A partir de **10/09/2026**: inferir significa
+"acompanhou o colegiado" — Indeferido → Desfavorável ao pleito; Aprovado/Deferido → Favorável;
+Retirado de Pauta ou sem resultado → **nenhum voto inferido**; o inferido é não-divergente por
+construção. Votos lidos e correções humanas não mudam. Efeito esperado: % Favorável ARTESP 100 →
+73,1; ANM 100 → 78,9; ANTT 100 → 98,9. É correção de significado, não perda de dado.
+
 ## 0.0.1 A tela de Completude lia 1.000 linhas (10/09/2026)
 
 **Defeito de instrumento, datado.** Até 09/09/2026 a rota `completude-2026` (e `saude-dados`,

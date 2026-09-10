@@ -253,10 +253,17 @@ export function buildVotoRows(input: {
       ],
       input.diretoresList,
     );
-    for (const diretor of input.activeDiretoresList) {
-      if (rows.has(diretor.id)) continue;
-      if (divergentIntent.has(diretor.id)) continue;
-      rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, "Favoravel", false, resultado, unanime));
+    // Fase 26 — o inferido ACOMPANHA O COLEGIADO: o tipo segue o desfecho. Antes era sempre
+    // "Favoravel", e num item Indeferido o sistema afirmava que o diretor "foi favorável ao pedido
+    // que o colegiado negou" — e o marcava divergente. Medido em produção: 700 votos na ARTESP,
+    // 72 na ANM, 10 na ANTT; "% Favorável" era 100% para todo diretor sem voto nominal.
+    const tipoInferido = tipoVotoInferido(resultado);
+    if (tipoInferido) {
+      for (const diretor of input.activeDiretoresList) {
+        if (rows.has(diretor.id)) continue;
+        if (divergentIntent.has(diretor.id)) continue;
+        rows.set(diretor.id, rowFor(input.deliberacao_id, diretor.id, tipoInferido, false, resultado, unanime));
+      }
     }
   }
 
@@ -373,6 +380,19 @@ function collectDivergentIntentIds(names: string[], diretoresList: DiretorVoteRe
 }
 
 /** Resultado "positivo" (decisão prevaleceu), negativo (Indeferido) ou neutro/desconhecido. */
+/**
+ * O tipo do voto INFERIDO por mandato, dado o desfecho (Fase 26).
+ *  · Indeferido → "Desfavoravel" ao pleito (o colegiado negou; quem acompanhou votou contra o pedido);
+ *  · Retirado de Pauta / sem resultado → `null`: NÃO se infere voto sobre o que não foi decidido;
+ *  · qualquer outro desfecho (Aprovado, Deferido, Ratificado…) → "Favoravel".
+ * Inferir significa "acompanhou o colegiado"; por isso o inferido nunca é divergente (ver `rowFor`).
+ */
+export function tipoVotoInferido(resultado: string | null): TipoVoto | null {
+  const positive = isPositiveResult(resultado);
+  if (positive === null) return null;
+  return positive ? "Favoravel" : "Desfavoravel";
+}
+
 function isPositiveResult(resultado: string | null): boolean | null {
   if (!resultado || resultado === "Retirado de Pauta") return null;
   if (resultado === "Indeferido") return false;
@@ -457,7 +477,9 @@ function rowFor(
     deliberacao_id: deliberacaoId,
     diretor_id: diretorId,
     tipo_voto: tipoVoto,
-    is_divergente: isDivergentVote(tipoVoto, resultado, unanime),
+    // Fase 26 — voto INFERIDO acompanha o colegiado: não-divergente por construção. Só o voto
+    // LIDO pode divergir do desfecho.
+    is_divergente: isNominal ? isDivergentVote(tipoVoto, resultado, unanime) : false,
     is_nominal: isNominal,
     ...(extra?.motivo_nao_voto ? { motivo_nao_voto: extra.motivo_nao_voto } : {}),
     ...(extra?.voto_em_autos ? { voto_em_autos: true } : {}),

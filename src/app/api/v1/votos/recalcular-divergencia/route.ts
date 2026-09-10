@@ -13,7 +13,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { repartirPorDivergencia } from "@/lib/server/vote-inference";
+import { repartirPorDivergencia, tipoVotoInferido } from "@/lib/server/vote-inference";
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { parseIntParam } from "@/lib/server/http-params";
 
 export const dynamic = "force-dynamic";
@@ -24,6 +25,10 @@ export async function POST(req: NextRequest) {
   if (isDemo()) return NextResponse.json({ demo: true });
 
   const apply = req.nextUrl.searchParams.get("apply") === "1";
+  // Fase 26 — `direcao=1`: além da divergência, reescreve o TIPO das linhas INFERIDAS (nunca
+  // nominal nem revisão humana) para acompanhar o desfecho atual, e apaga as inferidas em
+  // "Retirado de Pauta"/sem resultado. Idempotente: na 2ª passada não muda nada.
+  const direcao = req.nextUrl.searchParams.get("direcao") === "1";
   const offset = parseIntParam(req.nextUrl.searchParams.get("offset"), 0, 0);
   // Fase 10 — esta rota IGNORAVA o `budget_ms` que o orquestrador manda na URL. A esteira
   // encadeia ~12 sub-rotas na MESMA invocação repartindo um orçamento único; quem não lê a
@@ -60,6 +65,11 @@ export async function POST(req: NextRequest) {
   // por voto — o duplo loop podia disparar centenas de PATCHes sequenciais e estourar o tempo.
   const idsParaDivergente: string[] = [];
   const idsParaNaoDivergente: string[] = [];
+  const idsParaFavoravel: string[] = [];
+  const idsParaDesfavoravel: string[] = [];
+  const idsParaRemover: string[] = [];
+  let direcaoCorrigida = 0;
+  let inferidosRemovidos = 0;
 
   let parcial = false;
   for (const d of (delibs ?? []) as any[]) {
@@ -68,14 +78,30 @@ export async function POST(req: NextRequest) {
     if (votos.length === 0) continue;
     if (votos.every((v) => !isVotoNominal(v))) deliberacoesSoInferidas++;
 
+    if (direcao) {
+      const alvo = tipoVotoInferido(d.resultado ?? null);
+      for (const v of votos) {
+        if (isVotoNominal(v) || v.proveniencia === "revisao_humana") continue;
+        if (v.tipo_voto === "Ausente" || v.tipo_voto === "Abstencao") continue; // não são inferência de mérito
+        if (!alvo) { inferidosRemovidos++; if (apply) idsParaRemover.push(v.id); v.tipo_voto = "__remover__"; continue; }
+        if (v.tipo_voto !== alvo) {
+          direcaoCorrigida++;
+          if (apply) (alvo === "Favoravel" ? idsParaFavoravel : idsParaDesfavoravel).push(v.id);
+          v.tipo_voto = alvo; // a divergência abaixo é calculada sobre o tipo NOVO
+        }
+      }
+    }
+    const votosVivos = votos.filter((v) => v.tipo_voto !== "__remover__");
+
     // Etapa65 — `deriveUnanime`/`repartirPorDivergencia` são a FONTE ÚNICA desta regra; o PATCH
     // manual de `deliberacoes/[id]` usa o mesmo repartidor. Antes a regra vivia só aqui.
-    const { idsDivergentes } = repartirPorDivergencia(votos, d.resultado ?? null, d.unanimidade_detectada);
+    const { idsDivergentes } = repartirPorDivergencia(votosVivos, d.resultado ?? null, d.unanimidade_detectada);
     const divSet = new Set(idsDivergentes);
 
     let afetou = false;
-    for (const v of votos) {
-      const novo = divSet.has(v.id);
+    for (const v of votosVivos) {
+      // Fase 26 — inferido nunca diverge (acompanhou o colegiado); só o lido pode divergir.
+      const novo = isVotoNominal(v) ? divSet.has(v.id) : false;
       if (novo !== v.is_divergente) {
         divergenciaCorrigida++;
         afetou = true;
@@ -93,6 +119,19 @@ export async function POST(req: NextRequest) {
         if (chunk.length) await db.from("votos").update({ is_divergente: valor }).in("id", chunk);
       }
     };
+    // A direção ANTES da divergência (a divergência já foi calculada sobre o tipo novo).
+    const aplicarTipo = async (ids: string[], tipo: string) => {
+      for (let i = 0; i < ids.length; i += 100) {
+        const chunk = ids.slice(i, i + 100);
+        if (chunk.length) await exigirEscrita(db.from("votos").update({ tipo_voto: tipo }).in("id", chunk), `direção → ${tipo}`);
+      }
+    };
+    await aplicarTipo(idsParaFavoravel, "Favoravel");
+    await aplicarTipo(idsParaDesfavoravel, "Desfavoravel");
+    for (let i = 0; i < idsParaRemover.length; i += 100) {
+      const chunk = idsParaRemover.slice(i, i + 100);
+      if (chunk.length) await exigirEscrita(db.from("votos").delete().in("id", chunk), "remover inferido sem desfecho");
+    }
     await aplicarEmLote(idsParaDivergente, true);
     await aplicarEmLote(idsParaNaoDivergente, false);
   }
@@ -115,6 +154,9 @@ export async function POST(req: NextRequest) {
     ...(parcial ? { parcial: true, restantes: true } : {}),
     modo: apply ? "aplicado" : "dry-run",
     divergencia_corrigida: divergenciaCorrigida,
+    /** Fase 26 — linhas inferidas cujo tipo passou a seguir o desfecho; e inferidas apagadas (sem desfecho). */
+    direcao_corrigida: direcaoCorrigida,
+    inferidos_removidos: inferidosRemovidos,
     deliberacoes_afetadas: deliberacoesAfetadas,
     deliberacoes_so_inferidas: deliberacoesSoInferidas,
     processados,

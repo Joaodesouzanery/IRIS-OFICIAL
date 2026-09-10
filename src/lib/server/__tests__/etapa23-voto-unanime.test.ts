@@ -29,7 +29,10 @@ describe("voto unânime — divergência só existe quando há dissidência real
     });
 
     expect(rows).toHaveLength(4);
-    expect(rows.every((r) => r.tipo_voto === "Favoravel")).toBe(true);
+    // Fase 26 — o inferido ACOMPANHA O COLEGIADO: indeferir por unanimidade é 4 votos
+    // DESFAVORÁVEIS ao pleito da concessionária. "Favoravel" aqui dizia que os 4 foram a favor
+    // do pedido que eles mesmos negaram — e fazia "% Favorável" = 100% para todo mundo.
+    expect(rows.every((r) => r.tipo_voto === "Desfavoravel")).toBe(true);
     expect(rows.every((r) => r.is_nominal === false)).toBe(true); // inferido por unanimidade
     // O CORAÇÃO do fix: aprovar um indeferimento por unanimidade NÃO é divergência.
     expect(rows.every((r) => r.is_divergente === false)).toBe(true);

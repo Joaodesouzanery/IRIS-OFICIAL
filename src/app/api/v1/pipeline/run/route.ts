@@ -645,7 +645,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       ["empresas_backfill", empresasBackfillPOST, "/api/v1/empresas/backfill", {}],
       ["qualidade_derivadas", qualidadeDerivadasPOST, "/api/v1/qualidade-regulatoria/coletas/derivadas/run", {}],
       ["mandatos_percentual", mandatosRecalcularPOST, "/api/v1/mandatos/recalcular", {}],
-      ["divergencia_votos", divergenciaPOST, "/api/v1/votos/recalcular-divergencia?apply=1", {}],
+      ["divergencia_votos", divergenciaPOST, "/api/v1/votos/recalcular-divergencia?apply=1&direcao=1", {}], // Fase 26 — inferido segue o desfecho
     ];
     for (const [nome, handler, path, corpo] of derivadas) {
       if (!cabe("derivada")) break;
