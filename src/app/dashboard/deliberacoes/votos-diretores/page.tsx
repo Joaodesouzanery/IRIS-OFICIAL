@@ -284,6 +284,14 @@ export default function VotosDiretoresPage() {
   const [matchFeedback, setMatchFeedback] = useState<string | null>(null);
   const [matchError, setMatchError] = useState<string | null>(null);
 
+  // Fase 26 — a amostra de auditoria (reproduzível por dia; "outra amostra" troca o seed).
+  const [amostraSeed, setAmostraSeed] = useState("");
+  type Amostra = { ano: string; seed: string; agencias: Array<{ sigla: string; universo: number; itens: Array<{ id: string; numero: string | null; tipo: string | null; data: string | null; relator: string | null; resultado: string | null; interessado: string | null; pdf: string | null; arquivo: string | null; votos: Array<{ diretor: string; tipo: string; origem: string }> }> }> };
+  const { data: amostra } = useQuery({
+    queryKey: ["auditoria-amostra", amostraSeed],
+    queryFn: () => api.get<Amostra>(`/admin/auditoria/amostra?n=5&ano=2026${amostraSeed ? `&seed=${amostraSeed}` : ""}`).catch(() => ({ ano: "2026", seed: "", agencias: [] } as Amostra)),
+  });
+
   const { data: completude } = useQuery({
     queryKey: ["completude-2026"],
     queryFn: () => api.get<CompletudeResponse>("/admin/completude-2026?year=2026"),
@@ -1017,6 +1025,44 @@ export default function VotosDiretoresPage() {
           )}
         </section>
       )}
+
+      {/* ── Fase 26 — "São os corretos?": 5 ao acaso por agência, contra o PDF ── */}
+      <section className="card space-y-3">
+        <div className="flex items-center justify-between gap-2 flex-wrap">
+          <div>
+            <p className="section-label">Conferir 5 ao acaso (contra o PDF)</p>
+            <p className="text-xs text-text-muted">
+              Certificação e cobertura dizem que extração e coleta funcionam; isto diz se o que está no banco bate com o original. Abra o PDF e confira relator, resultado e votos.
+            </p>
+          </div>
+          <button type="button" className="btn-secondary text-xs" onClick={() => setAmostraSeed(String(Date.now()))}>
+            Outra amostra
+          </button>
+        </div>
+        {!amostra || amostra.agencias.length === 0 ? (
+          <p className="text-xs text-text-muted">Sem deliberações finais de 2026 para amostrar (ou carregando).</p>
+        ) : (
+          <div className="grid gap-3 md:grid-cols-3">
+            {amostra.agencias.map((ag) => (
+              <div key={ag.sigla} className="space-y-1.5">
+                <p className="text-xs font-medium text-text-primary">{ag.sigla} <span className="text-text-muted font-normal">· {ag.itens.length} de {ag.universo}</span></p>
+                {ag.itens.map((it) => (
+                  <div key={it.id} className="border border-border rounded-card px-2 py-1.5 text-[11px] space-y-0.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="font-medium truncate">{it.numero ?? it.tipo} · {it.data ?? "s/ data"}</span>
+                      {it.pdf ? <a href={it.pdf} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline shrink-0">PDF ↗</a> : <span className="text-text-muted shrink-0">sem PDF</span>}
+                    </div>
+                    <div className="text-text-secondary truncate" title={it.interessado ?? undefined}>{it.resultado ?? "sem resultado"} · relator: {it.relator ?? "—"}</div>
+                    <div className="text-text-muted">
+                      {it.votos.length === 0 ? "sem voto" : it.votos.map((v) => `${v.diretor.split(" ")[0]}: ${v.tipo}${v.origem === "inferido" ? "~" : ""}`).join(" · ")}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
 
       {/* ── Cobertura AO VIVO: conferência CONTRA o site (a prova de completude) ── */}
       <section className="card space-y-3">
