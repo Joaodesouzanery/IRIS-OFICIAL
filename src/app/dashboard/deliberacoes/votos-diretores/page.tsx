@@ -132,6 +132,9 @@ export default function VotosDiretoresPage() {
   // também barra com 403; isto é só a UI honesta). Exports (GET) continuam visíveis.
   const { isViewer } = useViewer();
   const [agenciaId, setAgenciaId] = useState("");
+  // Fase 25 — o período do card "Métricas por diretor". "" = todo o histórico (era o único
+  // modo, sem rótulo, ao lado de uma Completude que é só 2026).
+  const [anoVotos, setAnoVotos] = useState("");
   const [selectedDirector, setSelectedDirector] = useState<DiretorOverviewItem | null>(null);
   const [relatorioBusy, setRelatorioBusy] = useState<"" | "html" | "docx" | "csv">("");
 
@@ -185,8 +188,14 @@ export default function VotosDiretoresPage() {
   });
 
   const { data: diretores } = useQuery({
-    queryKey: ["dashboard", "diretores-overview", "votos", agenciaId],
-    queryFn: async () => listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${agenciaId ? `?agencia_id=${agenciaId}` : ""}`)),
+    queryKey: ["dashboard", "diretores-overview", "votos", agenciaId, anoVotos],
+    queryFn: async () => {
+      const params = new URLSearchParams();
+      if (agenciaId) params.set("agencia_id", agenciaId);
+      if (anoVotos) params.set("ano", anoVotos);
+      const qs = params.toString();
+      return listaDe<DiretorOverviewItem>(await api.get(`/dashboard/diretores/overview${qs ? `?${qs}` : ""}`));
+    },
   });
 
   const { data: drilldownVotos, isLoading: drilldownLoading } = useQuery({
@@ -1199,16 +1208,24 @@ export default function VotosDiretoresPage() {
           <div className="flex items-center gap-2">
             <Users className="w-4 h-4 text-brand" />
             <div>
-              <p className="section-label">Métricas por diretor</p>
+              <p className="section-label">Métricas por diretor · {anoVotos ? anoVotos : "todo o histórico"}</p>
               <p className="text-[11px] text-text-muted">
                 <strong>lido</strong> = voto extraído do documento · <strong>inferido</strong> = por unanimidade/mandato (proxy)
               </p>
             </div>
           </div>
-          <select className="select w-44" value={agenciaId} onChange={(e) => { setAgenciaId(e.target.value); setSelectedDirector(null); }}>
-            <option value="">Todas as agências</option>
-            {colegiadoAgencias.map((a) => <option key={a.id} value={a.id}>{a.sigla}</option>)}
-          </select>
+          <div className="flex items-center gap-2">
+            {/* Fase 25 — a Completude logo acima é só 2026; este card era todo o histórico sem dizer. */}
+            <select className="select w-40" value={anoVotos} onChange={(e) => { setAnoVotos(e.target.value); setSelectedDirector(null); }} title="Período dos votos contados neste card">
+              <option value="">Todo o histórico</option>
+              <option value="2026">Só 2026</option>
+              <option value="2025">Só 2025</option>
+            </select>
+            <select className="select w-44" value={agenciaId} onChange={(e) => { setAgenciaId(e.target.value); setSelectedDirector(null); }}>
+              <option value="">Todas as agências</option>
+              {colegiadoAgencias.map((a) => <option key={a.id} value={a.id}>{a.sigla}</option>)}
+            </select>
+          </div>
         </div>
         {!diretores || diretores.length === 0 ? (
           <p className="text-sm text-text-muted">
@@ -1226,7 +1243,9 @@ export default function VotosDiretoresPage() {
                   <th className="py-2 px-3 font-medium text-right">Votos</th>
                   <th className="py-2 px-3 font-medium text-right">Favoráveis</th>
                   <th className="py-2 px-3 font-medium text-right">Desfavoráveis</th>
-                  <th className="py-2 px-3 font-medium text-right">Divergentes</th>
+                  {/* Fase 25 — "divergente" = votou contra o DESFECHO registrado; não é dissenso entre colegas.
+                      Num diretor só com voto inferido, mede indeferimentos não unânimes, não comportamento. */}
+                  <th className="py-2 px-3 font-medium text-right" title="Votou contra o desfecho registrado (Favorável em Indeferido, Desfavorável em Aprovado). Não é dissenso entre colegas; para diretor só com voto inferido, conta indeferimentos não unânimes.">Divergentes</th>
                   <th className="py-2 pl-3 font-medium text-right">% Favorável</th>
                   <th className="py-2 pl-3 font-medium w-8" />
                 </tr>

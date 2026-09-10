@@ -38,6 +38,10 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
   const agenciaId = req.nextUrl.searchParams.get("agencia_id");
+  // Fase 25 — período opcional. Sem `ano`, o card é TODO O HISTÓRICO (e a tela diz isso); com
+  // `ano`, só votos de deliberações daquele ano — o mesmo denominador da Completude.
+  const anoParam = req.nextUrl.searchParams.get("ano");
+  const ano = anoParam && /^20\d{2}$/.test(anoParam) ? anoParam : null;
 
   // Agências colegiadas (única esteira de votos configurada) — fora delas nada entra.
   const { data: agRows } = await db.from("agencias").select("id, sigla");
@@ -66,8 +70,9 @@ export async function GET(req: NextRequest) {
     selectAllPaged(() => {
       let q = db
         .from("votos")
-        .select("id, tipo_voto, motivo_nao_voto, is_divergente, is_nominal, proveniencia, diretores!inner (id, nome, agencia_id)");
+        .select(`id, tipo_voto, motivo_nao_voto, is_divergente, is_nominal, proveniencia, diretores!inner (id, nome, agencia_id)${ano ? ", deliberacoes!inner (data_reuniao)" : ""}`);
       if (agenciaId) q = q.eq("diretores.agencia_id", agenciaId);
+      if (ano) q = q.gte("deliberacoes.data_reuniao", `${ano}-01-01`).lte("deliberacoes.data_reuniao", `${ano}-12-31`);
       // Ordem total única (PK dos votos) → paginação por offset determinística.
       return q.order("id", { ascending: true });
     }, { label: "dashboard/diretores/overview" }),
@@ -126,12 +131,11 @@ export async function GET(req: NextRequest) {
     const agencias = [...new Set(aprovados.map((d) => d.agencia_id).filter(Boolean))] as string[];
     for (const agId of agencias) {
       // Fase 25 — a relatoria também parava nos ~1.000: subcontava quem mais relata.
-      const { data: delibsRel } = await lerTudo(() => db
-        .from("deliberacoes")
-        .select("id, relator")
-        .eq("agencia_id", agId)
-        .not("relator", "is", null)
-        .order("id"), `overview/relatorias/${agId}`);
+      const { data: delibsRel } = await lerTudo(() => {
+        let q = db.from("deliberacoes").select("id, relator").eq("agencia_id", agId).not("relator", "is", null);
+        if (ano) q = q.gte("data_reuniao", `${ano}-01-01`).lte("data_reuniao", `${ano}-12-31`);
+        return q.order("id");
+      }, `overview/relatorias/${agId}`);
       const dirs = aprovados
         .filter((d) => d.agencia_id === agId)
         .map((d) => ({ id: d.id, nome: d.nome, nome_variantes: Array.isArray(d.nome_variantes) ? d.nome_variantes : [] }));

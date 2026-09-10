@@ -46,7 +46,7 @@ describe("etapa128 · a agregação distingue os três não-votos", () => {
 describe("etapa128 · a rota seleciona o motivo e a tela o mostra", () => {
   it("a rota do overview pede `motivo_nao_voto` e usa a agregação pura", () => {
     const rota = ler("src/app/api/v1/dashboard/diretores/overview/route.ts");
-    expect(rota).toMatch(/\.select\("[^"]*motivo_nao_voto[^"]*"\)/);
+    expect(rota).toMatch(/\.select\([`"][^\n]*motivo_nao_voto/); // Fase 25: template literal com join opcional por ano
     expect(rota).toMatch(/agregarVoto\(/);
     expect(rota).toMatch(/impedidos: s\.impedidos,/);
   });
