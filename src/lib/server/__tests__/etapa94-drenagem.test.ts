@@ -111,7 +111,10 @@ describe("etapa94 · o orquestrador mede a fila e passa o viés", () => {
 
 describe("etapa94 · partida e concorrência do lote", () => {
   it("iniciar um job exige 9s, não 12 — e a concorrência do lote da esteira é 4", () => {
-    expect(PIPELINE).toMatch(/hasBudget\(deadlineAt, 9_000\)/);
+    // Fase 26 — a reserva virou constante (`RESERVA_POR_JOB_MS = 9_000`), e a concorrência passa
+    // a respeitar o saldo por job em voo (etapa140). O valor continua 9s.
+    expect(PIPELINE).toMatch(/export const RESERVA_POR_JOB_MS = 9_000;/);
+    expect(PIPELINE).toMatch(/hasBudget\(deadlineAt, RESERVA_POR_JOB_MS\)/);
     expect(PIPELINE).not.toMatch(/hasBudget\(deadlineAt, 12_000\)/);
     expect(PIPELINE).toMatch(/processQueue\(selected, 4, deadlineAt\)/);
   });

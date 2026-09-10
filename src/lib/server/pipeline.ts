@@ -45,6 +45,14 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
     const docMeta = (docRow?.metadata ?? {}) as Record<string, unknown>;
     const sourceUrl = typeof docMeta.source_url === "string" ? docMeta.source_url : null;
 
+    // Fase 26 — um job que estoura a fatia da função não pode ficar em "processing" até o
+    // SIGKILL (aí só o reaper de 5min o resgata, sem motivo). Se há deadline, o trabalho corre
+    // contra ele e, estourando, cai no `catch` com motivo — reprocessável, e o 3º ciclo mostra
+    // "grande/escaneado" em vez de silêncio.
+    const restanteMs = deadlineAt !== undefined ? deadlineAt - Date.now() - 1_500 : null;
+    if (restanteMs !== null && restanteMs <= 0) {
+      throw new Error("Excedeu a fatia de extração antes de baixar — reprocessável na próxima rodada.");
+    }
     const { data: fileData, error: downloadErr } = await db.storage
       .from("pdfs")
       .download(job.storage_path);
@@ -54,7 +62,8 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
     const buffer = Buffer.from(await fileData.arrayBuffer());
     const { data: agencias } = await db.from("agencias").select("id, sigla").eq("ativo", true);
 
-    const analysis = await analyzeUploadPdf({
+    const analysis = await (restanteMs === null
+      ? analyzeUploadPdf({
       file: {
         name: job.filename,
         buffer,
@@ -68,7 +77,28 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
       // Fase 17 — o orçamento da rodada chega até o OCR. Sem ele, um PDF escaneado podia gastar
       // 400s numa função de 70s (SIGKILL incatchável, levando a run e os jobs concorrentes).
       deadlineAt,
-    });
+    })
+      : Promise.race([
+          analyzeUploadPdf({
+      file: {
+        name: job.filename,
+        buffer,
+        source_archive: null,
+        size: buffer.length,
+      },
+      agencias: agencias ?? [],
+      db,
+      currentDocumentoId: documentoId,
+      currentUploadJobId: job.id,
+      // Fase 17 — o orçamento da rodada chega até o OCR. Sem ele, um PDF escaneado podia gastar
+      // 400s numa função de 70s (SIGKILL incatchável, levando a run e os jobs concorrentes).
+      deadlineAt,
+    }),
+          new Promise<never>((_, reject) => setTimeout(
+            () => reject(new Error(`Excedeu a fatia de extração (${Math.round(restanteMs / 1000)}s) — reprocessável; se repetir 3×, o PDF é grande ou escaneado: reenviar dividido.`)),
+            restanteMs,
+          )),
+        ]));
 
     if (analysis.status === "error") {
       throw new Error(analysis.error ?? "Falha ao analisar PDF");
@@ -138,13 +168,30 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
   }
 }
 
+/** Reserva de partida de UM job (o PDF típico: download + parse + gravação). */
+export const RESERVA_POR_JOB_MS = 9_000;
+
+/**
+ * Quantos jobs podem estar em voo com o saldo que resta (Fase 26).
+ *
+ * A concorrência era fixa (4) e a checagem de orçamento era por job: com 9s de saldo, QUATRO
+ * jobs começavam ao mesmo tempo, cada um "cabendo" nos mesmos 9s. O SIGKILL vinha no meio e
+ * deixava doc e job em "processing" — os "ANM: processing ×3" da tela, para sempre. A regra: o
+ * saldo tem de cobrir a reserva de CADA job em voo, não de um só.
+ */
+export function jobsPermitidos(restanteMs: number, concurrency: number, reservaMs = RESERVA_POR_JOB_MS): number {
+  if (restanteMs <= 0) return 0;
+  return Math.max(0, Math.min(concurrency, Math.floor(restanteMs / reservaMs)));
+}
+
 export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt?: number): Promise<number> {
   const queue = [...jobs];
   const active: Promise<void>[] = [];
   let started = 0;
 
   while (queue.length > 0 || active.length > 0) {
-    while (active.length < concurrency && queue.length > 0) {
+    const permitidos = deadlineAt !== undefined ? jobsPermitidos(deadlineAt - Date.now(), concurrency) : concurrency;
+    while (active.length < permitidos && queue.length > 0) {
       // Orçamento (QA ago/2026): um PDF escaneado custa até ~65s (pdf-parse 25s + OCR
       // 40s) — sem esta parada o lote de 20 estourava sozinho o SIGKILL de 60s do
       // Hobby. Nunca INICIA um job sem saldo; os não iniciados seguem 'pending' e a
@@ -152,7 +199,7 @@ export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt
       // Fase 16 — 12s → 9s: com fatias de 21-30s, a reserva de partida comia ~47% da janela
       // útil da extração. 9s ainda cobre o PDF típico; o escaneado extremo (~65s) estoura
       // qualquer reserva realista e é o caso do reaper, não desta parada.
-      if (deadlineAt !== undefined && !hasBudget(deadlineAt, 9_000)) {
+      if (deadlineAt !== undefined && !hasBudget(deadlineAt, RESERVA_POR_JOB_MS)) {
         queue.length = 0;
         break;
       }
