@@ -52,7 +52,9 @@ describe("etapa75 · toda rota do orquestrador honra a própria fatia", () => {
 
   it.each(ROTAS)("%s DIZ que parou — senão o orquestrador não volta", (arquivo) => {
     const fonte = ler(arquivo);
-    expect(fonte).toMatch(/parcial \? \{ parcial: true, restantes: true \}|parcial, restantes: true/);
+    // Fase 27 — a condição pode ter outros termos (`parcial || sobraramAlvos`), mas o desfecho
+    // é o mesmo: dizer `parcial: true, restantes: true`.
+    expect(fonte).toMatch(/parcial[^\n]*\? \{ parcial: true, restantes: true \}|parcial, restantes: true/);
   });
 
   it("TABULAR: nenhuma rota chamada pelo orquestrador ignora budget_ms", () => {
@@ -92,7 +94,9 @@ describe("etapa75 · o orquestrador retoma o que ficou pela metade", () => {
     const codigo = RUN.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/.*$/gm, " ");
     const i = codigo.indexOf('etapas[nome] = anotar(r, nome,');
     expect(i).toBeGreaterThan(-1);
-    expect(codigo.slice(i, i + 260)).toMatch(/if \(r\.body\?\.restantes\) restantes = true;/);
+    // Janela maior: o `anotar` das derivadas ganhou campos (pendentes_direcao) entre ele e o
+    // `restantes`. O que importa é que o `restantes` da derivada continue propagando.
+    expect(codigo.slice(i, i + 900)).toMatch(/if \(r\.body\?\.restantes\) restantes = true;/);
   });
 
   it("candidatos parcial pede outra rodada", () => {

@@ -44,15 +44,50 @@ export async function POST(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  const { data: delibs, error } = await db
-    .from("deliberacoes")
-    // unanimidade_detectada: MESMO sinal que o buildVotoRows usa. Sem ele, este recálculo
-    // rederivava is_divergente só de (tipo_voto, resultado) e reintroduzia a divergência
-    // FALSA no INDEFERE-por-unanimidade (o desfecho do pleito não é divisão do colegiado).
-    .select("id, resultado, unanimidade_detectada:raw_extraction->>unanimidade_detectada, votos(id, tipo_voto, is_divergente, is_nominal, proveniencia)")
-    .order("created_at", { ascending: false })
-    .order("id", { ascending: false }) // desempate estável p/ paginação por offset
-    .range(offset, offset + limit - 1);
+  const SELECT_DELIB = "id, resultado, unanimidade_detectada:raw_extraction->>unanimidade_detectada, votos(id, tipo_voto, is_divergente, is_nominal, proveniencia)";
+
+  // ═══ Fase 27 — o modo `direcao` seleciona O QUE PRECISA, não as primeiras N ═══
+  // Antes, os dois modos paginavam TODAS as deliberações por `created_at desc` + offset, e o
+  // pipeline chamava a rota UMA vez por run sem offset: toda run reprocessava as MESMAS 300.
+  // Medido: 606 votos inferidos ainda "Favoravel" em Indeferido (533 ARTESP, 63 ANM, 10 ANTT)
+  // depois de várias runs. Agora a seleção é pelo alvo: deliberação INDEFERIDA que ainda tem
+  // voto inferido favorável. O passo repete enquanto `restantes`, e `pendentes_direcao` diz
+  // quanto falta — um número que só cai.
+  let delibs: any[] | null = null;
+  let error: unknown = null;
+  let pendentesDirecao: number | null = null;
+
+  if (direcao) {
+    const { data: alvos, error: erroAlvos } = await db
+      .from("votos")
+      .select("deliberacao_id, deliberacoes!inner(resultado)")
+      .eq("is_nominal", false)
+      .eq("tipo_voto", "Favoravel")
+      .eq("deliberacoes.resultado", "Indeferido")
+      .limit(5_000);
+    error = erroAlvos;
+    const ids = [...new Set(((alvos ?? []) as Array<{ deliberacao_id: string }>).map((v) => String(v.deliberacao_id)))];
+    pendentesDirecao = ids.length;
+    if (ids.length > 0) {
+      const { data, error: erroDelibs } = await db.from("deliberacoes").select(SELECT_DELIB).in("id", ids.slice(0, limit));
+      delibs = data as any[] | null;
+      error = error ?? erroDelibs;
+    } else {
+      delibs = [];
+    }
+  } else {
+    const r = await db
+      .from("deliberacoes")
+      // unanimidade_detectada: MESMO sinal que o buildVotoRows usa. Sem ele, este recálculo
+      // rederivava is_divergente só de (tipo_voto, resultado) e reintroduzia a divergência
+      // FALSA no INDEFERE-por-unanimidade (o desfecho do pleito não é divisão do colegiado).
+      .select(SELECT_DELIB)
+      .order("created_at", { ascending: false })
+      .order("id", { ascending: false }) // desempate estável p/ paginação por offset
+      .range(offset, offset + limit - 1);
+    delibs = r.data as any[] | null;
+    error = r.error;
+  }
 
   if (error) {
     return NextResponse.json({ error: "Erro ao buscar deliberações" }, { status: 500 });
@@ -149,14 +184,18 @@ export async function POST(req: NextRequest) {
   }
 
   const processados = (delibs ?? []).length;
+  // Modo direção: ainda há alvos além do lote → a rodada seguinte continua.
+  const sobraramAlvos = direcao && pendentesDirecao !== null && pendentesDirecao > processados;
   return NextResponse.json({
     // Parou no saldo: o orquestrador só volta na rodada seguinte se souber que sobrou.
-    ...(parcial ? { parcial: true, restantes: true } : {}),
+    ...(parcial || sobraramAlvos ? { parcial: true, restantes: true } : {}),
     modo: apply ? "aplicado" : "dry-run",
     divergencia_corrigida: divergenciaCorrigida,
     /** Fase 26 — linhas inferidas cujo tipo passou a seguir o desfecho; e inferidas apagadas (sem desfecho). */
     direcao_corrigida: direcaoCorrigida,
     inferidos_removidos: inferidosRemovidos,
+    /** Fase 27 — deliberações que AINDA têm voto inferido com a direção antiga. Só pode cair. */
+    ...(pendentesDirecao !== null ? { pendentes_direcao: pendentesDirecao } : {}),
     deliberacoes_afetadas: deliberacoesAfetadas,
     deliberacoes_so_inferidas: deliberacoesSoInferidas,
     processados,

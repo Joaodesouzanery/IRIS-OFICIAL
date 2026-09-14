@@ -684,7 +684,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         const b = r.body ?? {};
         const n = [b.atualizados, b.alterados, b.updated, b.deliberacoes_atualizadas, b.votos_alterados]
           .find((v: unknown) => typeof v === "number");
-        etapas[nome] = anotar(r, nome, { ok: true, ...(typeof n === "number" ? { atualizados: n } : {}) });
+        etapas[nome] = anotar(r, nome, {
+          ok: true,
+          ...(typeof n === "number" ? { atualizados: n } : {}),
+          // Fase 27 — quantos votos inferidos ainda têm a direção antiga. Número que só cai; sem
+          // ele, "o recálculo rodou" era indistinguível de "o recálculo terminou".
+          ...(typeof b.pendentes_direcao === "number" ? { pendentes_direcao: b.pendentes_direcao } : {}),
+          ...(typeof b.direcao_corrigida === "number" && b.direcao_corrigida > 0 ? { direcao_corrigida: b.direcao_corrigida } : {}),
+        });
         // As quatro derivadas passaram a honrar `budget_ms` e podem parar no meio: sem isto a
         // rodada "concluiria" com métrica pela metade.
         if (r.body?.restantes) restantes = true;
