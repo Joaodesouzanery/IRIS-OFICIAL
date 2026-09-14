@@ -473,7 +473,8 @@ export default function VotosDiretoresPage() {
         (totais.fundidos_semanticos ?? 0) > 0 ? `${totais.fundidos_semanticos} duplicata(s) semântica(s) seguiram para o confirm (reuso da deliberação existente)` : null,
         (totais.duplicatas_liberadas ?? 0) > 0 ? `${totais.duplicatas_liberadas} duplicata(s) da fila liberada(s) (primeiro da dupla)` : null,
         // Fase 26 — abandonado após 3 ciclos deixa de ser silêncio: a lista de presos mostra "(ciclo 3/3)".
-        (totais.desistidos_apos_3_ciclos ?? 0) > 0 ? `⚠️ ${totais.desistidos_apos_3_ciclos} documento(s) abandonado(s) após 3 ciclos de reprocesso (ver presos: grande/escaneado?)` : null,
+        (totais.arquivados_parser_travou ?? 0) > 0 ? `${totais.arquivados_parser_travou} pauta(s)/apoio arquivado(s): parser travou 3×` : null,
+        (totais.reprocessos_encerrados ?? 0) > 0 ? `⚠️ ${totais.reprocessos_encerrados} documento(s) de decisão com parser travado — reenviar convertido/dividido` : null,
         (totais.auto_skip_limpos ?? 0) > 0 ? `${totais.auto_skip_limpos} carimbo(s) obsoleto(s) apagado(s) — reavaliados pelo gate atual` : null,
         (totais.reanalisados ?? 0) > 0 ? `${totais.reanalisados} documento(s) reanalisado(s) (extração mudou)` : null,
         (totais.ignorados_pauta_apoio ?? 0) > 0 ? `${totais.ignorados_pauta_apoio} pauta(s)/apoio arquivado(s)` : null,

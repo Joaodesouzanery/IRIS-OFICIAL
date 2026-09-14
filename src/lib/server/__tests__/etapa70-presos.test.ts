@@ -122,7 +122,8 @@ describe("etapa70 · o passo novo para `failed`", () => {
 
   it("tem TETO de tentativas — PDF corrompido falha idêntico para sempre", () => {
     expect(RUN).toMatch(/reprocessos_falha/);
-    expect(RUN).toMatch(/if \(ciclos >= 3\)/);
+    // Fase 27 — o teto virou desfecho por TIPO (arquivar pauta / encerrar decisão), na etapa144.
+    expect(RUN).toMatch(/desfechoDoReprocesso\(/);
   });
 
   it("tem reserva própria, e o gate respeita a regra da Fase 7", () => {
@@ -133,6 +134,7 @@ describe("etapa70 · o passo novo para `failed`", () => {
 
   it("reporta o que fez, incluindo as desistências", () => {
     expect(RUN).toMatch(/desistidos_apos_3_ciclos/);
+    expect(RUN).toMatch(/arquivados_parser_travou|reprocessos_encerrados/);
   });
 });
 

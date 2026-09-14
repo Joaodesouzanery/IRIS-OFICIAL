@@ -41,6 +41,9 @@ describe("etapa140 · o job que estoura a fatia vira `failed` com motivo, não `
   });
   it("o abandono após 3 ciclos chega ao banner", () => {
     const tela = readFileSync(join(RAIZ, "src/app/dashboard/deliberacoes/votos-diretores/page.tsx"), "utf-8");
-    expect(tela).toMatch(/totais\.desistidos_apos_3_ciclos/);
+    // Fase 27 — a linha genérica virou DUAS, por desfecho: arquivado (pauta/apoio) e encerrado
+    // (decisão, com instrução de reenvio). Ver etapa144.
+    expect(tela).toMatch(/totais\.arquivados_parser_travou/);
+    expect(tela).toMatch(/totais\.reprocessos_encerrados/);
   });
 });

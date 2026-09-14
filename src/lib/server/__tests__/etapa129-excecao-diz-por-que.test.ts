@@ -13,6 +13,7 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { CICLOS_DE_REPROCESSO } from "@/lib/server/reprocesso-desfecho";
 
 const RAIZ = join(__dirname, "../../../..");
 const ler = (p: string) => readFileSync(join(RAIZ, p), "utf-8");
@@ -50,6 +51,9 @@ describe("etapa129 · o reprocesso mostra o ciclo", () => {
     const TELA = ler("src/app/dashboard/deliberacoes/votos-diretores/page.tsx");
     const RUN = ler("src/app/api/v1/pipeline/run/route.ts");
     expect(TELA).toMatch(/ciclo \$\{f\.ciclos_reprocesso \?\? 0\}\/3/);
-    expect(RUN).toMatch(/ciclos >= 3/); // se o teto mudar lá, este teste obriga a mudar aqui
+    // Fase 27 — o teto virou a constante `CICLOS_DE_REPROCESSO` (reprocesso-desfecho.ts), e o
+    // "3" da tela continua amarrado a ela por este teste.
+    expect(CICLOS_DE_REPROCESSO).toBe(3);
+    expect(RUN).toMatch(/desfechoDoReprocesso\(\{ tipo: doc\.tipo_documento, ciclos/);
   });
 });

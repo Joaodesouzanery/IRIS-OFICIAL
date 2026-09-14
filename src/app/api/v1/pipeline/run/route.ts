@@ -1,3 +1,4 @@
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 /**
  * POST|GET /api/v1/pipeline/run — a esteira ZERO-TOQUE inteira, server-side, numa rota.
  *
@@ -20,6 +21,7 @@
  * Admin ou cron. Idempotente: rodar 2× não cria nada novo (dedup em 4 barreiras).
  */
 
+import { desfechoDoReprocesso } from "@/lib/server/reprocesso-desfecho";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isCronRequest, isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
@@ -598,31 +600,57 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     try {
       const { data: falhados } = await db
         .from("documentos_regulatorios")
-        .select("id, campos_detectados")
+        .select("id, tipo_documento, error_message, campos_detectados")
         .eq("status", "failed")
         .not("upload_job_id", "is", null)
+        .is("campos_detectados->reprocesso_encerrado", null)
         .limit(20);
       let reprocessados = 0;
       let desistidos = 0;
+      let arquivadosParser = 0;
+      let encerrados = 0;
       for (const doc of ((falhados ?? []) as any[])) {
         if (!hasBudget(deadlineAt, 2_500)) { restantes = true; break; }
         // TETO DE TENTATIVAS: um PDF corrompido, de 0 bytes ou escaneado sem OCR falha idêntico
         // para sempre. Sem teto, o passo queima orçamento nos mesmos 17 documentos toda rodada.
         // O contador vive em `campos_detectados`, que o `requeueDocument` já escreve.
+        // Fase 27 — esgotado o teto, o documento ganha DESFECHO em vez de ficar `failed` mudo:
+        // pauta/apoio arquivam (não geram voto); ata/deliberação/voto encerram com instrução.
         const campos = (doc.campos_detectados ?? {}) as Record<string, unknown>;
         const ciclos = Number(campos.reprocessos_falha) || 0;
-        if (ciclos >= 3) { desistidos++; continue; }
+        const desfecho = desfechoDoReprocesso({ tipo: doc.tipo_documento, ciclos, erro: doc.error_message });
+        if (desfecho.acao === "arquivar") {
+          desistidos++;
+          if (await exigirEscrita(db.from("documentos_regulatorios").update({
+            status: "ignored",
+            reviewed_at: new Date().toISOString(),
+            updated_at: new Date().toISOString(),
+            campos_detectados: { ...campos, arquivado_motivo: desfecho.motivo },
+          }).eq("id", doc.id), `arquivar ${doc.id} (parser travou)`)) arquivadosParser++;
+          continue;
+        }
+        if (desfecho.acao === "encerrar") {
+          desistidos++;
+          if (await exigirEscrita(db.from("documentos_regulatorios").update({
+            error_message: desfecho.motivo,
+            updated_at: new Date().toISOString(),
+            campos_detectados: { ...campos, reprocesso_encerrado: true },
+          }).eq("id", doc.id), `encerrar reprocesso de ${doc.id}`)) encerrados++;
+          continue;
+        }
         try {
           await requeueDocument(db, doc.id as string);
-          await db.from("documentos_regulatorios")
-            .update({ campos_detectados: { ...campos, reprocessos_falha: ciclos + 1 } })
-            .eq("id", doc.id);
+          await exigirEscrita(db.from("documentos_regulatorios")
+            .update({ campos_detectados: { ...campos, reprocessos_falha: desfecho.ciclo } })
+            .eq("id", doc.id), `ciclo ${desfecho.ciclo} de ${doc.id}`);
           reprocessados++;
         } catch { /* o próximo documento não paga pelo erro deste */ }
       }
       etapas.reprocesso_falhados = {
         reprocessados,
         ...(desistidos > 0 ? { desistidos_apos_3_ciclos: desistidos } : {}),
+        ...(arquivadosParser > 0 ? { arquivados_parser_travou: arquivadosParser } : {}),
+        ...(encerrados > 0 ? { reprocessos_encerrados: encerrados } : {}),
       };
       if (reprocessados > 0) restantes = true;
     } catch {

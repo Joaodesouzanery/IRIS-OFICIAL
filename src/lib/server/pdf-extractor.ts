@@ -4,7 +4,7 @@
  * Extrai e limpa texto de PDFs usando pdf-parse (sem API externa).
  */
 
-import pdfParse from "pdf-parse";
+import { parsePdfComTeto } from "@/lib/server/pdf-parse-isolado";
 import { extractTextViaOcr, isOcrConfigured } from "@/lib/server/ocr";
 
 // ─── Limpeza de encoding ──────────────────────────────────────────────────
@@ -293,16 +293,11 @@ export async function extractPdfText(
     );
   }
 
-  // Timeout de 25s — evita DoS por PDFs malformados que travam o parser
-  const data = await Promise.race([
-    pdfParse(buffer),
-    new Promise<never>((_, reject) =>
-      setTimeout(
-        () => reject(new Error("Timeout ao processar PDF (>25s). O arquivo pode estar corrompido.")),
-        PDF_PARSE_TIMEOUT_MS
-      )
-    ),
-  ]);
+  // Fase 27 — teto de 25s REAL, num worker. `pdf-parse` é SÍNCRONO: num PDF que o faz girar em
+  // CPU, o event loop trava e nenhum `setTimeout` dispara — o `Promise.race` de antes nunca
+  // cortava, e só o SIGKILL da plataforma encerrava (10 documentos presos, run derrubada com
+  // "90s sem resposta"). `worker.terminate()` mata a thread mesmo travada.
+  const data = await parsePdfComTeto(buffer, PDF_PARSE_TIMEOUT_MS);
   const pageCount = data.numpages;
 
   // Divide por página para limpeza de cabeçalhos/rodapés
