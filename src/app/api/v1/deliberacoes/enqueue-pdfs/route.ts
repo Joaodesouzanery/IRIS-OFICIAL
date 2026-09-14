@@ -10,6 +10,8 @@
  */
 
 import { filaJusta } from "@/lib/server/fila-justa";
+import { pautaForaDoAno } from "@/lib/server/pauta-fora-do-ano";
+import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import { NextRequest, NextResponse } from "next/server";
 import { waitUntil } from "@vercel/functions";
@@ -188,7 +190,26 @@ export async function POST(req: NextRequest) {
   // critério é o CONTEÚDO (sniff) — e quem não tem PDF ganha status terminal (drena).
   // Fase 26 — a ordem da fila justa (agência × prioridade de tipo) prevalece; o "PDF primeiro"
   // desempata só dentro dela (sort estável).
+  // ═══ Fase 27 — pauta de ano encerrado sai ANTES do download ═══════════════
+  // Pauta é agenda: o confirm a arquiva como apoio e nenhum voto sai dela. Medido no qa-fase26:
+  // 7 dos 10 documentos presos no parser eram pautas da ANM de 2023-2024, e cada retentativa
+  // custava a rodada inteira. Arquiva sem baixar; ata/deliberação/voto de qualquer ano entram.
+  const anoCorrente = new Date().getFullYear();
+  const foraDoAno = (itens ?? []).filter((it: any) => pautaForaDoAno(it, anoCorrente));
+  let pautasForaDoAno = 0;
+  for (const it of foraDoAno) {
+    const meta = (it.metadata ?? {}) as Record<string, unknown>;
+    if (await exigirEscrita(db.from("monitoramento_itens").update({
+      status: "ignorado",
+      proxima_tentativa_em: null,
+      metadata: { ...meta, enqueue_motivo: "pauta_fora_do_ano" },
+      last_seen_at: new Date().toISOString(),
+    }).eq("id", it.id), `arquivar pauta fora do ano ${it.id}`)) pautasForaDoAno++;
+  }
+  const idsForaDoAno = new Set(foraDoAno.map((it: any) => String(it.id)));
+
   const novosCandidatos = (itens ?? [])
+    .filter((it: any) => !idsForaDoAno.has(String(it.id)))
     .map((it, i) => ({ it, i }))
     .sort((a, b) => (Number(PDF_RE.test(String(b.it.url_item ?? ""))) - Number(PDF_RE.test(String(a.it.url_item ?? "")))) || (a.i - b.i))
     .map((x) => x.it)
@@ -568,6 +589,8 @@ export async function POST(req: NextRequest) {
     processed,
     enqueued_jobs: jobsToProcess.length,
     sem_pdf: semPdf,
+    /** Fase 27 — pautas de ano encerrado arquivadas sem download (agenda não gera voto). */
+    ...(pautasForaDoAno > 0 ? { pautas_fora_do_ano: pautasForaDoAno } : {}),
     ...(filhosTruncados > 0 ? { filhos_truncados: filhosTruncados } : {}),
     // Quantos desta chamada eram RETENTATIVAS (itens que o portal não entregou antes e cujo prazo
     // venceu). Sem reportar, uma rodada que só retentou pareceria uma rodada que não achou nada.

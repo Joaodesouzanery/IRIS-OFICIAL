@@ -475,6 +475,7 @@ export default function VotosDiretoresPage() {
         // Fase 26 — abandonado após 3 ciclos deixa de ser silêncio: a lista de presos mostra "(ciclo 3/3)".
         (totais.direcao_corrigida ?? 0) > 0 ? `${totais.direcao_corrigida} voto(s) inferido(s) corrigido(s) para seguir o desfecho` : null,
         (totais.pendentes_direcao ?? 0) > 0 ? `⏳ ${totais.pendentes_direcao} deliberação(ões) ainda com voto inferido na direção antiga — próximas rodadas continuam` : null,
+        (totais.pautas_fora_do_ano ?? 0) > 0 ? `${totais.pautas_fora_do_ano} pauta(s) de ano encerrado arquivada(s) sem baixar` : null,
         (totais.arquivados_parser_travou ?? 0) > 0 ? `${totais.arquivados_parser_travou} pauta(s)/apoio arquivado(s): parser travou 3×` : null,
         (totais.reprocessos_encerrados ?? 0) > 0 ? `⚠️ ${totais.reprocessos_encerrados} documento(s) de decisão com parser travado — reenviar convertido/dividido` : null,
         (totais.auto_skip_limpos ?? 0) > 0 ? `${totais.auto_skip_limpos} carimbo(s) obsoleto(s) apagado(s) — reavaliados pelo gate atual` : null,

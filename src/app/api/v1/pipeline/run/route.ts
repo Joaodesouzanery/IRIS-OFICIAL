@@ -414,6 +414,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // sem_pdf (a janela drena por status terminal); fila remanescente ⇒ restantes=true.
   let enfileirados = 0;
   let itensArquivados = 0;
+  let pautasForaDoAno = 0;
   let tetoAtingido = false;
   /** Falha de HTTP na ingestão/extração: o laço para, mas o desfecho tem de sobreviver ao laço. */
   let falhaIngestao: Resposta | null = null;
@@ -438,6 +439,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     if (!r.ok && !r.pulado) { falhaIngestao = r; restantes = true; break; }
     const q = Number(r.body?.queued ?? 0);
     const s = Number(r.body?.sem_pdf ?? 0);
+    pautasForaDoAno += Number(r.body?.pautas_fora_do_ano ?? 0);
     enfileirados += q;
     itensArquivados += s;
     if (r.body?.parcial || Number(r.body?.restantes ?? 0) > 0) restantes = true;
@@ -498,6 +500,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     ...(reapados > 0 ? { jobs_orfaos_recuperados: reapados } : {}),
     ...(falhaIngestao ? { erro: `ingestão/extração respondeu HTTP ${falhaIngestao.status}` } : {}),
     itens_sem_pdf_arquivados: itensArquivados,
+      ...(pautasForaDoAno > 0 ? { pautas_fora_do_ano: pautasForaDoAno } : {}),
     // Teto atingido não é falha: é a vazão desta rodada respeitando o limite. Reportar é o
     // que impede a leitura errada de "a esteira parou de achar coisas".
     ...(tetoAtingido ? { teto_por_rodada: TETO_ENQUEUE_POR_RODADA } : {}),
