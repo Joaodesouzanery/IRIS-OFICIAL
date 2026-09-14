@@ -3,6 +3,36 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 27 (13/set/2026) — o PDF que travava o parser, o recálculo que só via 300, a pauta de 2023
+
+**Sequência:** deploy verde → **"Rodar tudo" 2×** → colar `docs/qa-fase27.sql` → conferir as
+"5 ao acaso" contra os PDFs.
+
+**⚠️ A LIÇÃO DA FASE — "no ar" não é "resolvido", e o diagnóstico estava incompleto.** Os commits
+da Fase 26 subiram em 10/09 18:33 e a run é de 11/09 12:39: **estavam em produção**. Não
+resolveram porque:
+1. **O teto do parser não existia de verdade.** Os 10 presos têm `page_count: null` — nenhum
+   chegou a completar um parse. O teto de 25 s e a corrida contra a fatia são `setTimeout`, e
+   `pdf-parse` é **síncrono**: nesses PDFs o event loop trava em CPU, nenhum timer dispara e só o
+   SIGKILL encerra. Cada retentativa custava a rodada — o "90 s sem resposta". **Agora o parse
+   roda num worker e `terminate()` mata a thread travada.** E o 3º ciclo tem desfecho: pauta/apoio
+   arquivam (`parser_travou`), decisão encerra com instrução de reenvio.
+2. **O recálculo da direção reprocessava as mesmas 300.** Paginava todas as deliberações por
+   `created_at desc` + offset, e o pipeline chamava uma vez por run sem offset. Restavam 606
+   votos (533 ARTESP, 63 ANM, 10 ANTT). **Agora seleciona pelo alvo** e publica
+   `pendentes_direcao` — um número que só cai, visível no banner.
+3. **Pauta de 2023 ainda era baixada e parseada** para virar apoio: 7 dos 10 presos eram pautas
+   da ANM de 2023-2024. **Agora sai antes do download** (`pauta_fora_do_ano`). Ata, deliberação e
+   voto de qualquer ano continuam entrando — acervo não é agenda.
+
+**O que os números da Fase 26 já provaram que funcionou:** o voto inferido seguindo o desfecho
+(% Favorável deixou de ser 100% em toda agência: ARTESP 93,6 · ANM 97,4), duplicatas por
+(agência, número, ano) = 0, órfãos = 0.
+
+**⏳ AGUARDA VOCÊ:** conferir a amostra "5 ao acaso" contra os PDFs (é o instrumento de "está
+correto"); o `qa-fase27.sql` ① (o que sobrou preso) e ② (direção pendente deve zerar); Severino
+(posse no DOU); 45 escaneados.
+
 ## 🔴 FASE 26 (10/set/2026) — o voto inferido segue o desfecho; a ANM sai da extração presa; a fila justa; "são os corretos?"
 
 **Sequência:** deploy verde → **"Rodar tudo" 2×** → colar `docs/qa-fase26.sql` → abrir a tela e
