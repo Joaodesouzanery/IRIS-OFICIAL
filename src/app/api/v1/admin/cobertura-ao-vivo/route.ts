@@ -34,6 +34,19 @@ const ANM_URLS = [
   "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-da-rop",
 ];
 
+/**
+ * Fase 28 — a ANM tem SEIS fontes monitoradas e esta conferência enumera DUAS. Fica de fora, entre
+ * outras, o ARQUIVO de atas (`.../atas-da-rop/atas-reunioes-ordinarias`), que existe justamente
+ * porque "tudo que sai do topo da listagem some da coleta para sempre" (migration 20260904130000).
+ * A ANM é a única das três agências sem paginação e sem seguir arquivo: profundidade 1 por
+ * construção. Pôr o arquivo no denominador AGORA seria generalizar sobre um layout que ninguém
+ * mediu — sem fixture verbatim dessa página, se ela não tiver `<time>` todos os itens saem sem ano
+ * e, pela regra vigente, entram em TODO ano: dezenas de reuniões pré-2022 virariam "faltando em
+ * 2026", com alerta vermelho, na rota que é a prova. Trocaria subestimativa silenciosa por
+ * superestimativa barulhenta. Até lá, o silêncio vira NÚMERO: a resposta diz o que foi consultado.
+ */
+const FONTES_DA_ANM_NAO_CONSULTADAS = 4;
+
 /** Extrai os NÚMEROS de reunião distintos (1–4 dígitos) de uma lista de strings. */
 function toNums(values: Array<string | null | undefined>): number[] {
   const set = new Set<number>();
@@ -186,6 +199,13 @@ export async function GET(req: NextRequest) {
     };
   };
 
+  /** O que esta conferência de fato enumerou. Sem isto, "faltando: 0" na ANM esconde 4 fontes. */
+  const fontes_consultadas = {
+    ANTT: ["discovery de reuniões de 2026"],
+    ARTESP: [ARTESP_URL],
+    ANM: ANM_URLS,
+  };
+
   const por_agencia = [
     build("ANTT", anttSite, anttErro, anttParcial),
     // ARTESP e ANM são páginas únicas por desenho: ou a página veio inteira, ou virou `erro`.
@@ -227,5 +247,18 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  return NextResponse.json({ modo: "real", ano: Number(year), gerado_em: new Date().toISOString(), por_agencia, alertas });
+  // A ANM é o caso em que a lacuna é conhecida e grande: avisar é mais honesto que somar zero.
+  alertas.push(
+    `ANM: esta conferência enumera ${ANM_URLS.length} das ${ANM_URLS.length + FONTES_DA_ANM_NAO_CONSULTADAS} fontes monitoradas — ` +
+      "o arquivo de atas fica de fora, então \"faltando\" aqui é piso, não total.",
+  );
+
+  return NextResponse.json({
+    modo: "real",
+    ano: Number(year),
+    gerado_em: new Date().toISOString(),
+    por_agencia,
+    fontes_consultadas,
+    alertas,
+  });
 }
