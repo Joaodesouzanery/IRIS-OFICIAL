@@ -70,7 +70,7 @@ describe("etapa95 · reaper #4 — a reconciliação contínua, contada", () => 
   it("vem DEPOIS do reaper #3 e ANTES do retorno de apenasReaper — repara mesmo no modo barato", () => {
     const terceiro = CODIGO_PIPE.indexOf("religados++");
     const quarto = CODIGO_PIPE.indexOf('.eq("status", "em_revisao")');
-    const retorno = CODIGO_PIPE.indexOf("if (opcoes?.apenasReaper)");
+    const retorno = CODIGO_PIPE.indexOf("if (!plano.extrair)");
     expect(terceiro).toBeGreaterThan(-1);
     expect(quarto).toBeGreaterThan(terceiro);
     expect(quarto).toBeLessThan(retorno);
@@ -98,7 +98,10 @@ describe("etapa95 · reaper #4 — a reconciliação contínua, contada", () => 
   });
 
   it("os DOIS retornos carregam os contadores — o poço nunca mais é invisível", () => {
-    expect(PIPELINE).toMatch(/apenasReaper\) return \{ processed: 0, job_ids: \[\], reaped, religados, reconciliados_importado/);
+    // Fase 29 — o retorno antecipado passou a ser decidido pelo PLANO (`!plano.extrair`), porque
+    // faltava o modo oposto: a extração repetia os quatro reapers e pagava 33-58 round-trips da
+    // própria fatia. Os contadores que viajam são os mesmos.
+    expect(PIPELINE).toMatch(/!plano\.extrair\) return \{ processed: 0, job_ids: \[\], reaped, religados, reconciliados_importado/);
     // E o tipo declara os três — quem consome vê que o campo existe.
     expect(PIPELINE).toMatch(/reconciliados_importado: number; reconciliados_ignorado: number; reconciliados_novo: number/);
   });

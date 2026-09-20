@@ -479,12 +479,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
 
   let processados = 0;
   for (let i = 0; i < 10 && cabe("extracao"); i++) {
-    const r = await call(processPOST, "/api/v1/upload/process?limit=20", "extracao", {});
+    const r = await call(processPOST, "/api/v1/upload/process?limit=20&apenas_extracao=1", "extracao", {});
     if (!r.ok && !r.pulado) { falhaIngestao = falhaIngestao ?? r; restantes = true; break; }
     const p = Number(r.body?.processed ?? 0);
     processados += p;
-    // Os reapers soltam documento preso mesmo quando não há nada a extrair — a medição que o
-    // orquestrador antes JOGAVA FORA. Sem ela, "0 extraídos" e "0 presos soltos" são o mesmo texto.
+    // Fase 29 — estes dois agora vêm SEMPRE zero, e é de propósito: a extração pede
+    // `apenas_extracao=1` e não repara mais nada. O reparo é do passo `reaper`, que roda antes
+    // na mesma rodada. Somar aqui é inofensivo e deixa o contrato da resposta intacto.
     religados += Number(r.body?.religados ?? 0);
     reapados += Number(r.body?.reaped ?? 0);
     if (p === 0) break;

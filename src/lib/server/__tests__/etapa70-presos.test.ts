@@ -21,6 +21,7 @@ import { RESERVA, gateDoPasso } from "@/lib/server/esteira-reservas";
 
 const RAIZ = join(__dirname, "../../../..");
 const ler = (p: string) => readFileSync(join(RAIZ, p), "utf-8");
+const RELIGACAO = ler("src/lib/server/religacao-da-fila.ts");
 const PIPELINE_LIB = ler("src/lib/server/pipeline.ts");
 const QUEUE = ler("src/lib/server/upload-queue.ts");
 const RUN = ler("src/app/api/v1/pipeline/run/route.ts");
@@ -36,13 +37,19 @@ describe("etapa70 · o terceiro reaper: `queued`", () => {
   it("NÃO é UPDATE cego — doc `queued` com job `pending` é legítimo", () => {
     // Os outros dois reapers são update direto; este precisa ler antes, senão devolveria à fila
     // documentos que já estão nela.
-    expect(PIPELINE_LIB).toMatch(/if \(job\.status === "pending" \|\| job\.status === "processing"\) continue/);
+    // Fase 29 — a decisão saiu do laço para `religacao-da-fila.ts` (o laço fazia DUAS consultas
+    // por documento; com 25 presos eram ~26 round-trips por passada, duas passadas por rodada).
+    // A garantia é a mesma e agora tem teste de COMPORTAMENTO, em etapa153.
+    expect(RELIGACAO).toMatch(/if \(job\.status === "pending" \|\| job\.status === "processing"\) \{/);
   });
 
   it("tem teto e cede saldo à extração — reaper não é varredura de tabela", () => {
     const bloco = PIPELINE_LIB.slice(PIPELINE_LIB.indexOf('.eq("status", "queued")'));
     expect(bloco).toMatch(/\.limit\(50\)/);
-    expect(bloco).toMatch(/if \(!hasBudget\(deadlineAt, 2_000\)\) break/);
+    // Fase 29 — os 2.000 ms protegiam o custo de UMA iteração, não o de quem vem depois: sair do
+    // laço com 2.001 ms deixava `jobsPermitidos(2_001, 4) = 0` e a extração devolvia zero. Virou
+    // escada (`orcamento-dos-reapers.ts`), medida em etapa153.
+    expect(bloco).toMatch(/if \(!hasBudget\(deadlineAt, protecaoDepoisDe\("religacao", modo\)\)\) break/);
   });
 
   it("grava `documento_id` ao repor o job — o elo que faltava", () => {
@@ -51,7 +58,11 @@ describe("etapa70 · o terceiro reaper: `queued`", () => {
   });
 
   it("adota job por hash SÓ se estiver livre — `upload_job_id` é UNIQUE", () => {
-    expect(PIPELINE_LIB).toMatch(/cand\.documento_id === null \|\| cand\.documento_id === doc\.id/);
+    // Fase 29 — a regra mudou de casa e ganhou um caso que a versão antiga só cobria por acidente:
+    // o `.maybeSingle()` ERRAVA com dois jobs no mesmo hash e devolvia null (não adotava). Em lote
+    // isso tem de ser explícito, senão o reaper adota um arbitrário e estoura a UNIQUE.
+    expect(RELIGACAO).toMatch(/cand\.documento_id !== null && cand\.documento_id !== undefined && cand\.documento_id !== doc\.id/);
+    expect(RELIGACAO).toMatch(/if \(candidatos\.length !== 1\)/);
   });
 
   it("sem job e sem candidato vira `failed` COM MOTIVO — nunca fica em `queued`", () => {

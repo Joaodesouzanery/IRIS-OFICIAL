@@ -41,7 +41,9 @@ describe("etapa73 · o desfecho HTTP passa a existir", () => {
 
   it.each([
     ["/api/v1/deliberacoes/enqueue-pdfs", "enfileiramento"],
-    ["/api/v1/upload/process?limit=20", "extração"],
+    // Fase 29 — a extração passou a pedir `apenas_extracao=1`: sem isso ela repetia os quatro
+    // reapers e pagava 33-58 round-trips da própria fatia.
+    ["/api/v1/upload/process?limit=20&apenas_extracao=1", "extração"],
   ])("o laço de «%s» (%s) checa o desfecho antes de ler o corpo", (rota) => {
     // Os dois laços não têm try/catch: sem isto, um 500 sairia como "0 enfileirados" ou
     // "0 processados", indistinguível de "não havia nada a fazer".

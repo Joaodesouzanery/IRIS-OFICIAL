@@ -100,7 +100,11 @@ describe("etapa98 · o reaper #4 CARIMBA o que arquiva", () => {
     // UPDATE cego em lote, um teto explícito + hasBudget. O que sobrar fica para a rodada
     // seguinte, e agora o poço É drenado (antes ele era terminal).
     expect(REAPER4).toMatch(/TETO_CARIMBO_POR_RODADA/);
-    expect(REAPER4).toMatch(/hasBudget\(deadlineAt, \d+\)/);
+    // Fase 29 — o número cru virou a escada de `orcamento-dos-reapers.ts`: os 400 ms de antes
+    // eram menos que um round-trip real, e o guard deixava o laço entrar numa iteração que não
+    // tinha como terminar. O contrato "reaper é barato" é o mesmo; a reserva é que passou a ser
+    // derivada do que vem depois.
+    expect(REAPER4).toMatch(/hasBudget\(deadlineAt, protecaoDepoisDe\("carimbo", modo\)\)/);
   });
 
   it("importado e novo CONTINUAM em lote — só o ignorado precisa de merge", () => {

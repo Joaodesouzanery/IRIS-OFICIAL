@@ -29,9 +29,15 @@ const PIPELINE = ler("src/lib/server/pipeline.ts");
 const ROTA = ler("src/app/api/v1/upload/process/route.ts");
 
 describe("etapa74 · o reaper vira um passo próprio", () => {
-  it("`processPendingDocuments` sabe rodar SÓ os reapers", () => {
+  // Fase 29 — a asserção ficou MAIS FORTE, não mais frouxa. Antes existia um modo só
+  // (`apenasReaper`) e os reapers rodavam INCONDICIONALMENTE antes do early-return: a chamada de
+  // extração repetia todo o reparo e pagava 33-58 round-trips da própria fatia. Agora o modo é
+  // explícito nos dois sentidos, e o reparo está sob `plano.reparar`.
+  it("`processPendingDocuments` sabe rodar SÓ os reapers — e SÓ a extração", () => {
     expect(PIPELINE).toMatch(/apenasReaper\?: boolean/);
-    expect(PIPELINE).toMatch(/if \(opcoes\?\.apenasReaper\) return \{ processed: 0/);
+    expect(PIPELINE).toMatch(/apenasExtracao\?: boolean/);
+    expect(PIPELINE).toMatch(/if \(!plano\.extrair\) return \{ processed: 0/);
+    expect(PIPELINE).toMatch(/if \(plano\.reparar\) \{/);
   });
 
   it("o retorno antecipado vem DEPOIS dos reapers e ANTES da fila cara", () => {
@@ -39,16 +45,17 @@ describe("etapa74 · o reaper vira um passo próprio", () => {
     // `pending`, teria pago o preço que o passo existe para não pagar.
     const codigo = PIPELINE.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/.*$/gm, " ");
     const terceiroReaper = codigo.indexOf("religados++");
-    const retorno = codigo.indexOf("if (opcoes?.apenasReaper)");
+    const retorno = codigo.indexOf("if (!plano.extrair)");
     const filaCara = codigo.indexOf("const normalizedLimit");
     expect(terceiroReaper).toBeGreaterThan(-1);
     expect(retorno).toBeGreaterThan(terceiroReaper);
     expect(retorno).toBeLessThan(filaCara);
   });
 
-  it("a rota expõe o modo, sem rota nova e sem guard novo", () => {
+  it("a rota expõe os DOIS modos, sem rota nova e sem guard novo", () => {
     expect(ROTA).toMatch(/apenas_reaper"\) === "1"/);
-    expect(ROTA).toMatch(/\{ apenasReaper \}/);
+    expect(ROTA).toMatch(/apenas_extracao"\) === "1"/);
+    expect(ROTA).toMatch(/\{ apenasReaper, apenasExtracao \}/);
     // O guard continua sendo o da rota — nada de superfície nova de autorização.
     expect(ROTA).toMatch(/requireAdminOrCron/);
   });
@@ -81,7 +88,7 @@ describe("etapa74 · o orquestrador chama o passo, e reporta", () => {
   it("o passo do reaper vem antes do passo de extração NO CÓDIGO", () => {
     const codigo = RUN.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/.*$/gm, " ");
     const iReaper = codigo.indexOf('apenas_reaper=1');
-    const iExtracao = codigo.indexOf('"/api/v1/upload/process?limit=20"');
+    const iExtracao = codigo.indexOf('/api/v1/upload/process?limit=20&apenas_extracao=1');
     expect(iReaper).toBeGreaterThan(-1);
     expect(iExtracao).toBeGreaterThan(-1);
     expect(iReaper).toBeLessThan(iExtracao);

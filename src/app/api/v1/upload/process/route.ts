@@ -37,11 +37,14 @@ async function process(req: NextRequest) {
   // enquanto os dois moraram no mesmo passo os presos herdaram o preço da extração — 62 deles
   // ficaram parados em `queued` por 26 rodadas.
   const apenasReaper = req.nextUrl.searchParams.get("apenas_reaper") === "1";
+  // Fase 29 — o modo OPOSTO, que faltava. Sem ele, a chamada de extração repetia os quatro
+  // reapers (eles rodavam antes do early-return) e pagava 33-58 round-trips da própria fatia.
+  const apenasExtracao = req.nextUrl.searchParams.get("apenas_extracao") === "1";
   const { processPendingDocuments } = await import("@/lib/server/pipeline");
   const result = await processPendingDocuments(
     Number.isFinite(limit) ? limit : 5,
     Date.now() + budgetMs,
-    { apenasReaper },
+    { apenasReaper, apenasExtracao },
   );
   return NextResponse.json(result);
 }
