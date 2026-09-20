@@ -10,6 +10,9 @@ export const DELIBERACOES_TABS: ModuleTab[] = [
   { label: "Deliberações", href: "/dashboard/deliberacoes" },
   { label: "Reuniões", href: "/dashboard/reunioes" },
   { label: "Votos dos Diretores", href: "/dashboard/deliberacoes/votos-diretores" },
+  // Fase 29 — uma linha por VOTO, com o PDF ao lado. "Votos dos Diretores" mostra MÉTRICAS por
+  // diretor; esta responde "qual foi o voto de X naquela deliberação", que é outra pergunta.
+  { label: "Auditoria de votos", href: "/dashboard/deliberacoes/auditoria-votos" },
   { label: "Boletim", href: "/dashboard/boletim" },
 ];
 

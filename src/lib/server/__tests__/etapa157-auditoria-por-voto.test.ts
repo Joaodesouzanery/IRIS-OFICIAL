@@ -288,3 +288,51 @@ describe("etapa157 · a rota segue as convenções, e pagina no banco", () => {
     expect(SEM_COMENTARIO).toMatch(/colegiado_esperado: comparacao\.roster_conhecido \? comparacao\.esperado : null/);
   });
 });
+
+describe("etapa157 · a aba existe, é encontrável e não repete o 401 conhecido", () => {
+  const TELA = ler("src/app/dashboard/deliberacoes/auditoria-votos/page.tsx");
+  const TABS = ler("src/lib/module-tabs.ts");
+
+  it("a aba está no menu — senão a tela existe e ninguém a encontra", () => {
+    expect(TABS).toMatch(/href: "\/dashboard\/deliberacoes\/auditoria-votos"/);
+  });
+
+  it("⚠️ o CSV baixa por fetch AUTENTICADO + blob, nunca `window.location.href`", () => {
+    // O middleware exige header Bearer em toda rota de /api/v1: um link direto devolve
+    // "Login obrigatório" em vez do arquivo. É o defeito vivo de `deliberacoes/page.tsx`.
+    expect(TELA).toMatch(/Authorization: `Bearer \$\{token\}`/);
+    expect(TELA).not.toMatch(/window\.location\.href\s*=\s*["'`]\/api\/v1/);
+  });
+
+  it("todo filtro volta para a página 1 — senão a tela mostra vazio que é a página 7", () => {
+    expect(TELA).toMatch(/function aoFiltrar<T>\(setter: \(v: T\) => void\)/);
+    expect(TELA).toMatch(/setter\(v\); setPage\(1\);/);
+  });
+
+  it("a tela e o CSV mandam os MESMOS filtros — uma função só monta os parâmetros", () => {
+    // `deliberacoes/export` aceita 4 dos 9 filtros da tela e exporta um conjunto diferente, em
+    // silêncio. Rota irmã ou montagem duplicada produziria a mesma deriva.
+    expect(TELA).toMatch(/function parametros\(paraCsv = false\)/);
+    expect(TELA).toMatch(/parametros\(true\)/);
+  });
+
+  it("⚠️ o estado VAZIO diz por quê — tabela em branco lê como «o sistema perdeu os votos»", () => {
+    expect(TELA).toMatch(/Nenhum voto de \$\{nomeDoDiretor\}/);
+    expect(TELA).toMatch(/confira o período em Mandatos/);
+  });
+
+  it("`motivo_nao_voto` aparece na linha — o campo existia e ninguém o lia", () => {
+    expect(TELA).toMatch(/MOTIVO_LABEL/);
+    expect(TELA).toMatch(/impedimento: "impedimento"/);
+  });
+
+  it("sem roster conhecido, a coluna diz isso — nunca «completo»", () => {
+    expect(TELA).toMatch(/roster desconhecido/);
+    expect(TELA).not.toMatch(/0 de 0/);
+  });
+
+  it("o PDF abre em aba nova e com `rel` seguro; sem PDF é dito, não escondido", () => {
+    expect(TELA).toMatch(/target="_blank" rel="noopener noreferrer"/);
+    expect(TELA).toMatch(/sem PDF/);
+  });
+});
