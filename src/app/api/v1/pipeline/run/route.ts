@@ -92,13 +92,18 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Pipeline indisponível em modo DEMO." }, { status: 403 });
   }
-  const guard = await requireAdminOrCron(req, "pipeline/run");
-  if (guard) return guard;
-
   // QA ago/2026: era 100s, mas no Hobby o SIGKILL vem aos 60s (o maxDuration 120 só vale
   // no Pro) — a função morria sem responder, o loop do cliente abortava na 1ª rodada e a
   // extração NUNCA rodava ("208 detectados / 0 processados"). Orçamento honesto: 50s.
+  //
+  // ⚠️ Fase 29 — o relógio nasce ANTES do guard, de propósito. `requireAdminOrCron` faz
+  // `db.auth.getUser(token)`, um round-trip de rede: com o `deadlineAt` nascendo depois, esse
+  // tempo era pago POR CIMA do orçamento, não dentro dele. O colchão para o orquestrador inteiro
+  // é um único `FOLGA_ORQUESTRADOR_MS` de 4s.
   const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
+  const guard = await requireAdminOrCron(req, "pipeline/run");
+  if (guard) return guard;
+
   const auth = req.headers.get("authorization") ?? "";
   const etapas: Record<string, StepResult> = {};
   /**

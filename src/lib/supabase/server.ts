@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { fetchComTeto, SUPABASE_RPC_TIMEOUT_MS } from "@/lib/supabase/fetch-com-teto";
 
 /**
  * Cliente Supabase para server-side (API Routes, Server Components).
@@ -22,5 +23,11 @@ export function createSupabaseServerClient() {
       persistSession: false,
       autoRefreshToken: false,
     },
+    // ⚠️ Fase 29 — NÃO REMOVER. Este `fetch` é injetado no postgrest, no storage E no auth. Sem
+    // ele, nenhum round-trip do caminho quente tinha teto: os ~10 `auth.getUser` por rodada, os
+    // SELECT/UPDATE dos reapers e o download do PDF podiam pendurar a função indefinidamente, o
+    // cliente abortava aos 90s e disparava a rodada seguinte sobre a MESMA run. Ver
+    // `fetch-com-teto.ts` para por que 10s é piso de segurança e não orçamento.
+    global: { fetch: fetchComTeto(fetch, SUPABASE_RPC_TIMEOUT_MS) },
   });
 }

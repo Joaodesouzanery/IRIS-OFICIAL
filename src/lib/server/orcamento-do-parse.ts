@@ -33,6 +33,29 @@ export const TETO_PARSE_MS = 25_000;
 /** O que um job custa FORA do parse (download, limpeza, 3 escritas, flush). */
 export const CUSTO_FIXO_DO_JOB_MS = 6_000;
 
+/**
+ * ═══ Fase 29 — o custo fixo, decomposto ═══
+ * `CUSTO_FIXO_DO_JOB_MS` era um número só, e por isso o download não tinha teto próprio: ele era
+ * baixado FORA da corrida contra o relógio (`pipeline.ts`), e o `restanteMs` do race era medido
+ * ANTES dele. A aritmética do defeito:
+ *
+ *   t_A          : restanteMs = deadlineAt − t_A − 1.500
+ *   t_A → t_A+D  : download, SEM teto
+ *   dispara em   : deadlineAt + D − 1.500     ← a ultrapassagem É a duração do download
+ *
+ * Com D ilimitado, a ultrapassagem é ilimitada — e com 4 jobs em voo cada onda parte atrasada da
+ * anterior, então o atraso ACUMULA ao longo da fatia em vez de se cancelar. Era isso que fazia a
+ * rodada passar dos 90 s do cliente mesmo com o parser já capado.
+ *
+ * A soma continua sendo a mesma (identidade fixada em teste), então `RESERVA_POR_JOB_MS` não muda
+ * e toda a tabela da etapa140 segue válida.
+ */
+export const TETO_DOWNLOAD_MIN_MS = 4_000;
+/** Limpeza, `probeLigatureDefects`, as três escritas e o flush. */
+export const CUSTO_DE_GRAVACAO_MS = 2_000;
+/** Teto absoluto do download, quando a fatia é folgada. */
+export const TETO_DOWNLOAD_MS = 8_000;
+
 /** Piso do parse: abaixo disso o corte não mede o parser, mede a rodada. 35× o pior parse real. */
 export const PARSE_MINIMO_MS = 7_000;
 
@@ -51,4 +74,17 @@ export const RESERVA_POR_JOB_MS = CUSTO_FIXO_DO_JOB_MS + PARSE_MINIMO_MS;
 export function tetoDoParse(deadlineAt: number | undefined, agora: number = Date.now()): number {
   if (deadlineAt === undefined) return TETO_PARSE_MS;
   return Math.min(TETO_PARSE_MS, deadlineAt - agora - CUSTO_FIXO_DO_JOB_MS);
+}
+
+/**
+ * O teto deste DOWNLOAD: o menor entre o teto absoluto e o que sobra depois de reservar o parse
+ * mínimo e a gravação. No piso de admissão de um job devolve exatamente `TETO_DOWNLOAD_MIN_MS` —
+ * a mesma invariante que `tetoDoParse` tem, do outro lado da conta.
+ *
+ * Pode devolver ≤ 0: quem chama recusa o job e o devolve para `pending`, em vez de começar um
+ * download que não tem como terminar dentro da fatia.
+ */
+export function tetoDoDownload(deadlineAt: number | undefined, agora: number = Date.now()): number {
+  if (deadlineAt === undefined) return TETO_DOWNLOAD_MS;
+  return Math.min(TETO_DOWNLOAD_MS, deadlineAt - agora - PARSE_MINIMO_MS - CUSTO_DE_GRAVACAO_MS);
 }

@@ -116,7 +116,9 @@ describe("etapa94 · partida e concorrência do lote", () => {
     // (a fatia tem de cobrir a reserva interna do passo) e viviam em arquivos diferentes,
     // divergindo em silêncio — 9s de reserva para um parse de teto 25s. Agora moram juntas em
     // `orcamento-do-parse.ts`; aqui basta provar que o pipeline consome a fonte única.
-    expect(PIPELINE).toMatch(/import \{ RESERVA_POR_JOB_MS \} from "@\/lib\/server\/orcamento-do-parse";/);
+    // Fase 29 — o import ganhou irmãos (`tetoDoDownload`, `CUSTO_DE_GRAVACAO_MS`): o download
+    // passou a ter teto próprio derivado da fatia. A fonte única é a mesma.
+    expect(PIPELINE).toMatch(/import \{ RESERVA_POR_JOB_MS,[^}]*\} from "@\/lib\/server\/orcamento-do-parse";/);
     expect(PIPELINE).toMatch(/hasBudget\(deadlineAt, RESERVA_POR_JOB_MS\)/);
     expect(PIPELINE).not.toMatch(/hasBudget\(deadlineAt, 12_000\)/);
     expect(PIPELINE).toMatch(/processQueue\(selected, 4, deadlineAt\)/);

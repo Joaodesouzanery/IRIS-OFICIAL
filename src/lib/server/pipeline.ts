@@ -9,7 +9,7 @@ import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { analyzeUploadPdf, markBatchDuplicates } from "@/lib/server/upload-analysis";
 import { hasBudget } from "@/lib/server/time-budget";
-import { RESERVA_POR_JOB_MS } from "@/lib/server/orcamento-do-parse";
+import { RESERVA_POR_JOB_MS, tetoDoDownload, CUSTO_DE_GRAVACAO_MS } from "@/lib/server/orcamento-do-parse";
 import { modoDoProcessamento, type ModoDoProcessamento } from "@/lib/server/modo-do-processamento";
 import { protecaoDepoisDe } from "@/lib/server/orcamento-dos-reapers";
 import { planejarReligacao, type JobConhecido } from "@/lib/server/religacao-da-fila";
@@ -53,18 +53,46 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
     // SIGKILL (aí só o reaper de 5min o resgata, sem motivo). Se há deadline, o trabalho corre
     // contra ele e, estourando, cai no `catch` com motivo — reprocessável, e o 3º ciclo mostra
     // "grande/escaneado" em vez de silêncio.
-    const restanteMs = deadlineAt !== undefined ? deadlineAt - Date.now() - 1_500 : null;
-    if (restanteMs !== null && restanteMs <= 0) {
+    // ═══ Fase 29 — o download entra no relógio ═══════════════════════════════
+    // Ele era baixado SEM teto e FORA da corrida abaixo, e o `restanteMs` do race era medido
+    // AQUI, antes dele. O timer então disparava em `deadlineAt + D − 1.500`: a ultrapassagem do
+    // deadline era exatamente a duração do download, ilimitada, e com 4 jobs em voo o atraso
+    // ACUMULAVA por onda. Se o download travasse, nada cortava — nem o race (ainda não começou),
+    // nem o worker do parser (só cobre o parse), nem o client Supabase (agora cobre, mas com o
+    // piso de 10s, que é largo demais para caber numa fatia).
+    //
+    // O download NÃO entra no `Promise.race`: o race não cancelaria o fetch, só deixaria de
+    // esperá-lo. Ele precisa de AbortSignal, que cancela de verdade.
+    const tetoDownload = tetoDoDownload(deadlineAt);
+    if (tetoDownload <= 0) {
       throw new Error("Excedeu a fatia de extração antes de baixar — reprocessável na próxima rodada.");
     }
-    const { data: fileData, error: downloadErr } = await db.storage
-      .from("pdfs")
-      .download(job.storage_path);
-
-    if (downloadErr || !fileData) throw new Error(`Download falhou: ${downloadErr?.message ?? "sem arquivo"}`);
+    const abortarDownload = new AbortController();
+    const relogioDoDownload = setTimeout(() => abortarDownload.abort(), tetoDownload);
+    let fileData: Blob | null = null;
+    try {
+      const baixado = await db.storage.from("pdfs").download(job.storage_path, {}, { signal: abortarDownload.signal });
+      if (baixado.error || !baixado.data) throw new Error(`Download falhou: ${baixado.error?.message ?? "sem arquivo"}`);
+      fileData = baixado.data as Blob;
+    } catch (err) {
+      if (abortarDownload.signal.aborted) {
+        // Motivo PRESERVADO: o QA distingue "o download estourou" de "o parser travou" e de
+        // "a função morreu". Silêncio aqui seria o reaper marcando SIGKILL sem causa.
+        throw new Error(`Download do PDF excedeu ${Math.round(tetoDownload / 1000)}s — reprocessável na próxima rodada.`);
+      }
+      throw err;
+    } finally {
+      clearTimeout(relogioDoDownload);
+    }
 
     const buffer = Buffer.from(await fileData.arrayBuffer());
     const { data: agencias } = await db.from("agencias").select("id, sigla").eq("ativo", true);
+
+    // ⚠️ A medição do race vem AQUI, depois do download e do SELECT de agências — não antes deles.
+    // Medida antes, ela cronometrava um trecho de tempo que ainda não tinha acontecido. O literal
+    // `1_500` virou `CUSTO_DE_GRAVACAO_MS` (2.000): é o que as três escritas e o flush exigem
+    // depois que a análise termina, e agora tem nome e mora com os irmãos.
+    const restanteMs = deadlineAt !== undefined ? deadlineAt - Date.now() - CUSTO_DE_GRAVACAO_MS : null;
 
     const analysis = await (restanteMs === null
       ? analyzeUploadPdf({
