@@ -6,7 +6,13 @@
  * (KPIs gerais + comparativo entre agências + série temporal mensal), coluna de
  * MANDATO por diretor e a seção de DIVERGÊNCIAS nomeadas (deliberação · diretor).
  * Mesma agregação do dashboard; aqui só muda o empacotamento exportável.
- * Formatos: html (imprimir→PDF), docx (Word), csv (Excel). Admin-gated; demo ok.
+ * Formatos: html (imprimir→PDF), docx (Word), csv (Excel). Demo ok.
+ *
+ * ⚠️ Fase 29 — a linha dizia "Admin-gated" e ISSO NUNCA FOI VERDADE: esta rota não chama
+ * `requireAdmin`. O gate real é o do middleware, que libera GET de /api/v1/* para qualquer
+ * usuário autenticado (inclusive viewer). Corrigi a PROSA e não o gate: mudar superfície de
+ * autorização não entra de carona num commit sobre leitura truncada, e trancar a rota pode tirar
+ * do operador um relatório que ele usa hoje. Registrado em PENDENCIAS para decisão.
  */
 
 import { isVotoNominal } from "@/lib/votos-nominal";
@@ -19,6 +25,7 @@ import { reportDocument, REPORT_COLORS, REPORT_VOTE_COLORS } from "@/lib/report-
 import { svgDonut, svgBarsH, svgLine } from "@/lib/report-charts";
 import { buildSimpleDocxFromHtml } from "@/lib/server/docx-export";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
+import { lerTudo } from "@/lib/server/select-all-paged";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -36,6 +43,10 @@ type Bloco = {
   sigla: string; linhas: Linha[]; divergencias: Divergencia[];
   delib: DelibStats; meses: Map<string, number>;
   periodoMin: string | null; periodoMax: string | null;
+  /** Fase 29 — as três leituras desta agência vieram inteiras? Ver o ⚠️ em `blocoReal`. */
+  leituraCompleta: boolean;
+  /** Quantos votos entraram nesta contagem. Declarar o denominador é o que torna o número auditável. */
+  votosLidos: number;
 };
 
 function esc(s: unknown): string {
@@ -200,17 +211,25 @@ type MandatoRow = { diretor_id: string; cargo: string | null; data_inicio: strin
 
 // db: any — o client do Supabase não é tipado no projeto (mesmo padrão do upload-queue).
 async function blocoReal(db: any, agenciaId: string, sigla: string, mandatos: MandatoRow[]): Promise<Bloco> {
+  // ⚠️ Fase 29 — eram `.limit(5000)`, `.limit(20000)` e `.limit(10000)`, e `.limit(N)` grande NÃO
+  // é paginação: o PostgREST corta em ~1.000 e devolve sem aviso. Como `blocoReal` roda POR
+  // AGÊNCIA, o teto era 3.000 dos 4.009 votos — **~25% do acervo estava fora do PDF/Word/CSV que o
+  // operador usa**, e a fatia perdida cresce a cada rodada de coleta. É o mesmo defeito que
+  // `select-all-paged.ts` documenta em quatro outras rotas e que fabricou os "537 órfãos".
+  // O `.order("id")` não é higiene: `.range()` sem ordem total repete e pula linhas entre páginas.
   const [diretoresRes, votosRes, delibsRes] = await Promise.all([
-    db.from("diretores").select("id, nome").eq("agencia_id", agenciaId).eq("review_status", "aprovado").limit(5000),
-    db.from("votos")
-      .select("tipo_voto, is_divergente, is_nominal, diretores!inner (id, nome, agencia_id), deliberacoes (numero_deliberacao, data_reuniao)")
+    lerTudo(() => db.from("diretores").select("id, nome").eq("agencia_id", agenciaId).eq("review_status", "aprovado").order("id"), `relatorio/${sigla}/diretores`),
+    lerTudo(() => db.from("votos")
+      .select("tipo_voto, is_divergente, is_nominal, proveniencia, diretores!inner (id, nome, agencia_id), deliberacoes (numero_deliberacao, data_reuniao)")
       .eq("diretores.agencia_id", agenciaId)
-      .limit(20000),
-    db.from("deliberacoes")
+      .order("id"), `relatorio/${sigla}/votos`),
+    lerTudo(() => db.from("deliberacoes")
       .select("resultado, data_reuniao, tipo_documento, documento_pai_id")
       .eq("agencia_id", agenciaId)
-      .limit(10000),
+      .order("id"), `relatorio/${sigla}/delibs`),
   ]);
+  /** Alguma das três leituras truncou? O relatório TEM de dizer — número curto em silêncio é o pior. */
+  const leituraCompleta = !diretoresRes.truncated && !votosRes.truncated && !delibsRes.truncated;
 
   const mandatoPorDiretor = new Map<string, MandatoRow>();
   for (const m of mandatos) {
@@ -278,10 +297,10 @@ async function blocoReal(db: any, agenciaId: string, sigla: string, mandatos: Ma
     .map((s) => ({ ...s, pct_favor: s.total > 0 ? parseFloat(((s.favoravel / s.total) * 100).toFixed(1)) : 0 }))
     .sort((a, b) => b.total - a.total);
 
-  return { sigla, linhas, divergencias, delib, meses, periodoMin, periodoMax };
+  return { sigla, linhas, divergencias, delib, meses, periodoMin, periodoMax, leituraCompleta, votosLidos: (votosRes.data ?? []).length };
 }
 
-const BLOCO_VAZIO = { divergencias: [], delib: { finais: 0, deferidas: 0, indeferidas: 0 }, meses: new Map<string, number>(), periodoMin: null, periodoMax: null };
+const BLOCO_VAZIO = { divergencias: [], delib: { finais: 0, deferidas: 0, indeferidas: 0 }, meses: new Map<string, number>(), periodoMin: null, periodoMax: null, leituraCompleta: true, votosLidos: 0 };
 
 export async function GET(req: NextRequest) {
   const agenciaFiltro = req.nextUrl.searchParams.get("agencia_id");
@@ -306,7 +325,9 @@ export async function GET(req: NextRequest) {
     // mandatos carregados 1× (antes: a MESMA query rodava por agência).
     const [{ data: agencias }, { data: mandatosData }] = await Promise.all([
       db.from("agencias").select("id, sigla").in("sigla", COLEGIADO),
-      db.from("mandatos").select("diretor_id, cargo, data_inicio, data_fim").limit(20000),
+      // Query GLOBAL: truncada, um diretor cujo mandato caiu fora some inteiro do relatório
+      // (o filtro de `linhas` exige mandato OU votos, e os dois vinham da mesma fatia de 1.000).
+      lerTudo(() => db.from("mandatos").select("diretor_id, cargo, data_inicio, data_fim").order("id"), "relatorio/mandatos"),
     ]);
     const mandatos = (mandatosData ?? []) as MandatoRow[];
     const alvo = ((agencias ?? []) as Array<{ id: string; sigla: string }>)
@@ -349,7 +370,13 @@ export async function GET(req: NextRequest) {
     generatedAt: `Gerado em ${geradoEm} UTC${periodoLabel ? ` · ${periodoLabel}` : ""}`,
     baseUrl: req.nextUrl.origin,
     contentHtml,
-    footerHtml: `"Lidos" = votos nominais extraídos do documento · "Inferidos" = completados por unanimidade/mandato. Uma % favorável sobre base majoritariamente inferida deve ser lida com cautela. &middot; IRIS-Regulação`,
+    // Fase 29 — o rodapé passa a DECLARAR a cobertura. Sem isto, uma leitura truncada devolve um
+    // relatório curto que parece completo: exatamente o que aconteceu por meses, com ~25% dos
+    // votos fora da conta. Número sem denominador declarado não é auditável.
+    footerHtml: `"Lidos" = votos nominais extraídos do documento · "Inferidos" = completados por unanimidade/mandato. Uma % favorável sobre base majoritariamente inferida deve ser lida com cautela. &middot; ` +
+      `Cobertura: ${blocos.reduce((n, b) => n + b.votosLidos, 0)} voto(s) lido(s)` +
+      (blocos.every((b) => b.leituraCompleta) ? "" : " &middot; <strong>⚠️ LEITURA INCOMPLETA — os números abaixo subcontam</strong>") +
+      ` &middot; IRIS-Regulação`,
   });
   return new NextResponse(html, { headers: { "content-type": "text/html; charset=utf-8" } });
 }
