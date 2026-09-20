@@ -118,10 +118,16 @@ export async function analyzeUploadPdf(input: {
   let extraction: Awaited<ReturnType<typeof extractPdfText>>;
   try {
     extraction = await extractPdfText(file.buffer, input.deadlineAt);
-  } catch {
+  } catch (err) {
+    // Fase 28 — o `catch {}` sem binding APAGAVA o motivo: "Invalid XRef stream header",
+    // "Timeout ao processar PDF (>25s)" e "parser_sem_isolamento" viravam todos a mesma frase
+    // genérica, e o 3º ciclo do reprocesso decidia no escuro sobre o que fazer com o documento.
+    // O resto da cadeia já existe: pipeline.ts joga `analysis.error` num throw, que vira
+    // `error_message` do job E do documento.
+    const motivo = err instanceof Error ? err.message : String(err);
     return {
       ...errorResult(file.name, file_hash),
-      error: "Falha ao extrair texto do PDF",
+      error: `Falha ao extrair texto do PDF: ${motivo}`,
     };
   }
 

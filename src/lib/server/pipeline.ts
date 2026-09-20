@@ -9,6 +9,7 @@ import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { analyzeUploadPdf, markBatchDuplicates } from "@/lib/server/upload-analysis";
 import { hasBudget } from "@/lib/server/time-budget";
+import { RESERVA_POR_JOB_MS } from "@/lib/server/orcamento-do-parse";
 
 type QueueJob = { jobId: string; agenciaId?: string | null };
 
@@ -168,8 +169,15 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
   }
 }
 
-/** Reserva de partida de UM job (o PDF típico: download + parse + gravação). */
-export const RESERVA_POR_JOB_MS = 9_000;
+/**
+ * Reserva de partida de UM job (download + parse + gravação).
+ *
+ * Fase 28 — 9s → 13s, e a constante mudou de casa. Ela e o teto do parser são a MESMA aritmética
+ * (a fatia precisa cobrir a reserva interna que o passo exige, CLAUDE.md/Fase 7) e estavam em
+ * arquivos diferentes, divergindo em silêncio: a reserva era 9s para um parse de teto 25s. Agora
+ * vivem juntas em `orcamento-do-parse.ts`, com as duas desigualdades que as fixam.
+ */
+export { RESERVA_POR_JOB_MS };
 
 /**
  * Quantos jobs podem estar em voo com o saldo que resta (Fase 26).

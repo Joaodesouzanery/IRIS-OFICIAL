@@ -15,11 +15,16 @@ import { join } from "path";
 import { jobsPermitidos, RESERVA_POR_JOB_MS } from "@/lib/server/pipeline";
 
 describe("etapa140 · o saldo cobre CADA job em voo", () => {
+  // Fase 28 — a reserva subiu de 9s para 13s. Não é afrouxamento: 9s admitia um job para uma
+  // operação cujo teto era 25s, violando a regra de orçamento do CLAUDE.md em silêncio. Doía pouco
+  // enquanto o teto era decorativo (`pdf-parse` é síncrono e o `setTimeout` nunca disparava); com
+  // o teto REAL da Fase 28 a aritmética passou a valer. Ver `orcamento-do-parse.ts`.
   it.each([
-    [50_000, 4, 4],   // fatia cheia: os 4
-    [20_000, 4, 2],   // 20s / 9s → 2, não 4
-    [9_000, 4, 1],    // exatamente uma reserva → 1
-    [8_999, 4, 0],    // menos que uma reserva → nenhum
+    [53_000, 4, 4],   // fatia cheia da extração (50s + 3s de margem): os 4 cabem
+    [51_000, 4, 3],   // já não cabem 4 — e admitir o 4º seria admiti-lo para não terminar
+    [26_000, 4, 2],
+    [13_000, 4, 1],   // exatamente uma reserva → 1
+    [12_999, 4, 0],   // menos que uma reserva → nenhum
     [0, 4, 0],
     [-1_000, 4, 0],
     [100_000, 1, 1],  // concorrência é o teto
@@ -27,7 +32,7 @@ describe("etapa140 · o saldo cobre CADA job em voo", () => {
     expect(jobsPermitidos(restante, conc)).toBe(esperado);
   });
   it("a reserva é a mesma da parada por job (uma fonte)", () => {
-    expect(RESERVA_POR_JOB_MS).toBe(9_000);
+    expect(RESERVA_POR_JOB_MS).toBe(13_000);
   });
 });
 

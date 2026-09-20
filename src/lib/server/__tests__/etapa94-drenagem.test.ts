@@ -111,9 +111,12 @@ describe("etapa94 · o orquestrador mede a fila e passa o viés", () => {
 
 describe("etapa94 · partida e concorrência do lote", () => {
   it("iniciar um job exige 9s, não 12 — e a concorrência do lote da esteira é 4", () => {
-    // Fase 26 — a reserva virou constante (`RESERVA_POR_JOB_MS = 9_000`), e a concorrência passa
-    // a respeitar o saldo por job em voo (etapa140). O valor continua 9s.
-    expect(PIPELINE).toMatch(/export const RESERVA_POR_JOB_MS = 9_000;/);
+    // Fase 26 — a reserva virou constante e a concorrência passa
+    // Fase 28 — ela MUDOU DE CASA: reserva de partida e teto do parser são a mesma aritmética
+    // (a fatia tem de cobrir a reserva interna do passo) e viviam em arquivos diferentes,
+    // divergindo em silêncio — 9s de reserva para um parse de teto 25s. Agora moram juntas em
+    // `orcamento-do-parse.ts`; aqui basta provar que o pipeline consome a fonte única.
+    expect(PIPELINE).toMatch(/import \{ RESERVA_POR_JOB_MS \} from "@\/lib\/server\/orcamento-do-parse";/);
     expect(PIPELINE).toMatch(/hasBudget\(deadlineAt, RESERVA_POR_JOB_MS\)/);
     expect(PIPELINE).not.toMatch(/hasBudget\(deadlineAt, 12_000\)/);
     expect(PIPELINE).toMatch(/processQueue\(selected, 4, deadlineAt\)/);

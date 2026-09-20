@@ -9,7 +9,7 @@
  */
 
 import { describe, it, expect } from "vitest";
-import { readFileSync, existsSync } from "fs";
+import { readFileSync } from "fs";
 import { join } from "path";
 import { Worker } from "node:worker_threads";
 import { desfechoDoReprocesso, CICLOS_DE_REPROCESSO } from "@/lib/server/reprocesso-desfecho";
@@ -17,6 +17,9 @@ import { desfechoDoReprocesso, CICLOS_DE_REPROCESSO } from "@/lib/server/reproce
 const RAIZ = join(__dirname, "../../../..");
 
 describe("etapa144 · terminate() corta um laço de CPU; setTimeout não cortaria", () => {
+  // Este caso prova a CAPACIDADE do runtime: `terminate()` corta um laço de CPU que nenhum
+  // `setTimeout` cortaria. A partir da Fase 28 ele exercita o mesmo mecanismo de produção
+  // (`{eval:true}`), o que na Fase 27 não era verdade — produção usava `new Worker(caminho)`.
   it("um worker em `while(true)` é encerrado dentro do teto", async () => {
     const worker = new Worker("while (true) {}", { eval: true });
     const t0 = Date.now();
@@ -28,11 +31,15 @@ describe("etapa144 · terminate() corta um laço de CPU; setTimeout não cortari
     expect(Date.now() - t0).toBeLessThan(3_000);
   }, 10_000);
 
-  it("o extrator usa o parse isolado, e o worker existe", () => {
+  // Fase 28 — o `it` que verificava `existsSync` do `.cjs` FOI REMOVIDO. Ele afirmava que o worker
+  // existia NO CHECKOUT, e era exatamente isso que o tornava um falso-verde: o arquivo estava no
+  // repositório e nunca chegou à Lambda, porque o caminho era montado em runtime e o file-tracing
+  // do Vercel não rastreia string concatenada. Quem cobre o mecanismo de verdade é a etapa147, que
+  // exercita o MESMO código que produção chama, com o cwd apontado para um diretório vazio.
+  it("o extrator usa o parse isolado, com teto derivado da fatia", () => {
     const ext = readFileSync(join(RAIZ, "src/lib/server/pdf-extractor.ts"), "utf-8");
-    expect(ext).toMatch(/parsePdfComTeto\(buffer, PDF_PARSE_TIMEOUT_MS\)/);
+    expect(ext).toMatch(/parsePdfComTeto\(buffer, teto\)/);
     expect(ext).not.toMatch(/pdfParse\(buffer\)/);
-    expect(existsSync(join(RAIZ, "src/lib/server/pdf-parse-worker.cjs"))).toBe(true);
     const iso = readFileSync(join(RAIZ, "src/lib/server/pdf-parse-isolado.ts"), "utf-8");
     expect(iso).toMatch(/worker\.terminate\(\)/);
   });

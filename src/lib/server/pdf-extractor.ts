@@ -5,6 +5,7 @@
  */
 
 import { parsePdfComTeto } from "@/lib/server/pdf-parse-isolado";
+import { tetoDoParse } from "@/lib/server/orcamento-do-parse";
 import { extractTextViaOcr, isOcrConfigured } from "@/lib/server/ocr";
 
 // ─── Limpeza de encoding ──────────────────────────────────────────────────
@@ -247,7 +248,6 @@ export function isPdfBuffer(buffer: Buffer): boolean {
   );
 }
 
-const PDF_PARSE_TIMEOUT_MS = 25_000; // 25s — deixa margem para o timeout de 60s do Vercel
 const MAX_PDF_STREAMS = 500;         // PDFs legítimos raramente têm mais de 500 streams
 // Abaixo deste nº de chars/página o PDF é provavelmente escaneado (imagem sem OCR).
 export const SCANNED_CHARS_PER_PAGE_THRESHOLD = 80;
@@ -293,11 +293,19 @@ export async function extractPdfText(
     );
   }
 
-  // Fase 27 — teto de 25s REAL, num worker. `pdf-parse` é SÍNCRONO: num PDF que o faz girar em
-  // CPU, o event loop trava e nenhum `setTimeout` dispara — o `Promise.race` de antes nunca
-  // cortava, e só o SIGKILL da plataforma encerrava (10 documentos presos, run derrubada com
-  // "90s sem resposta"). `worker.terminate()` mata a thread mesmo travada.
-  const data = await parsePdfComTeto(buffer, PDF_PARSE_TIMEOUT_MS);
+  // Fase 27/28 — teto REAL, num worker. `pdf-parse` é SÍNCRONO: num PDF que o faz girar em CPU, o
+  // event loop trava e nenhum `setTimeout` dispara — o `Promise.race` de antes nunca cortava, e só
+  // o SIGKILL da plataforma encerrava (15 documentos presos, run derrubada com "90s sem resposta").
+  // `worker.terminate()` mata a thread mesmo travada.
+  //
+  // Fase 28 — o teto agora é DERIVADO da fatia: `min(25s, o que resta menos o custo fixo do job)`.
+  // Com teto fixo de 25s um parse admitido perto do fim da fatia consumia o que sobrava e a
+  // GRAVAÇÃO morria sem registrar nada — nem sucesso nem erro no banco, que é o pior desfecho.
+  const teto = tetoDoParse(deadlineAt);
+  if (teto <= 0) {
+    throw new Error("Fatia da rodada acabou antes do parse — reprocessável na próxima rodada.");
+  }
+  const data = await parsePdfComTeto(buffer, teto);
   const pageCount = data.numpages;
 
   // Divide por página para limpeza de cabeçalhos/rodapés
