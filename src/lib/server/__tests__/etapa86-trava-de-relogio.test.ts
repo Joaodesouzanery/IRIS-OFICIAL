@@ -21,11 +21,18 @@ describe("etapa86 · a trava", () => {
   it("o laço checa o RELÓGIO a cada rodada, antes de chamar o servidor", () => {
     const iFor = CODIGO.indexOf("for (let rodada = 1; rodada <= 300; rodada++)");
     expect(iFor).toBeGreaterThan(-1);
-    const corpo = CODIGO.slice(iFor, iFor + 400);
+    // Fase 29 — a janela era de 400 chars e o corpo do laço cresceu (o token da cerca é montado
+    // antes do POST). O que o caso garante é a ORDEM, não o tamanho: fixar a janela fazia o teste
+    // falhar por uma linha nova, que é ruído, não regressão.
+    const corpo = CODIGO.slice(iFor, iFor + 1_200);
     expect(corpo).toMatch(/Date\.now\(\) - inicioLaco > TETO_LACO_MS/);
     // A checagem vem ANTES do POST — estourar o tempo no meio de uma rodada é inevitável,
     // mas começar uma rodada nova já estourado seria desperdício deliberado.
-    expect(corpo.indexOf("TETO_LACO_MS")).toBeLessThan(corpo.indexOf("api.post"));
+    const iRelogio = corpo.indexOf("TETO_LACO_MS");
+    const iPost = corpo.indexOf("api.post");
+    expect(iRelogio, "checagem de relógio não encontrada").toBeGreaterThan(-1);
+    expect(iPost, "chamada ao servidor não encontrada na janela").toBeGreaterThan(-1);
+    expect(iRelogio).toBeLessThan(iPost);
   });
 
   it("o teto de tempo é ~25min e o contador antigo de 40 sumiu", () => {

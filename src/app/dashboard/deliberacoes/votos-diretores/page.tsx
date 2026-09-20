@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { api, listaDe } from "@/lib/api";
+import { api, listaDe, ApiError } from "@/lib/api";
 import { cn, formatDateLong, formatNumber } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
@@ -391,6 +391,9 @@ export default function VotosDiretoresPage() {
       // run inteiro nem perde o progresso já gravado no servidor; 2 falhas seguidas
       // encerram com o que temos. Teto 40 rodadas (fila grande de backfill).
       let falhasSeguidas = 0;
+      /** O token da cerca da run — vem da resposta e volta no corpo da chamada seguinte. */
+      let rodadasVistas: number | null = null;
+      let tentativasDeCerca = 0;
       // Fase 7 — o desfecho da esteira deixa de ser inventado pelo banner. Antes, 40 rodadas com
       // HTTP 500 terminavam em banner VERDE de "concluída" com totais zerados: o catch por rodada
       // engolia tudo e `onError` era inalcançável (a mutation nunca rejeitava). Agora o motivo
@@ -415,15 +418,24 @@ export default function VotosDiretoresPage() {
         rodadasFeitas = rodada;
         if (Date.now() - inicioLaco > TETO_LACO_MS) { desfecho = "teto"; break; }
         setRodarTudoProgresso(`Rodada ${rodada} · aprovação → métricas → coleta/extração…`);
+        const corpoDaRodada: Record<string, unknown> = {
+          ...(runId ? { run_id: runId } : {}),
+          ...(rodadasVistas !== null ? { rodadas_vistas: rodadasVistas } : {}),
+        };
         try {
           const res = await api.post<{
             etapas: PipelineEtapas;
             restantes: boolean;
             run_id?: string | null;
+            rodadas?: number | null;
             abortado?: boolean;
             motivo_parada?: string;
-          }>("/pipeline/run", runId ? { run_id: runId } : {});
+            // Fase 29 — o TOKEN da cerca: devolvê-lo é o que faz a invocação seguinte ser aceita.
+            // Sem ele, o abort do cliente re-disparava sobre a MESMA run com o mesmo `run_id`, o
+            // guard de id não via diferença e duas invocações escreviam nas mesmas linhas.
+          }>("/pipeline/run", corpoDaRodada);
           falhasSeguidas = 0;
+          rodadasVistas = typeof res.rodadas === "number" ? res.rodadas : rodadasVistas;
           runId = res.run_id ?? runId;
           setRunIdAtivo(runId);
           ultimas = res.etapas ?? {};
@@ -439,6 +451,19 @@ export default function VotosDiretoresPage() {
           }
           if (!res.restantes) { desfecho = "drenou"; break; }
         } catch (err) {
+          // Fase 29 — 409 NÃO é falha: é a cerca dizendo que outra invocação desta run ainda está
+          // em andamento (tipicamente a rodada anterior, que o abort do cliente deu por perdida e
+          // o servidor continuou executando). Contar como erro fecharia a esteira justamente
+          // quando ela está trabalhando.
+          if (err instanceof ApiError && err.status === 409) {
+            tentativasDeCerca++;
+            if (tentativasDeCerca >= 3) { desfecho = "erros"; ultimoErro = err.message; break; }
+            setRodarTudoProgresso(`Rodada ${rodada} · aguardando a rodada anterior terminar…`);
+            await new Promise((r) => setTimeout(r, 10_000));
+            rodada--; // esta rodada não aconteceu: não consome o laço
+            continue;
+          }
+          tentativasDeCerca = 0;
           falhasSeguidas++;
           rodadasComErro++;
           ultimoErro = err instanceof Error ? err.message : "erro desconhecido na rodada";

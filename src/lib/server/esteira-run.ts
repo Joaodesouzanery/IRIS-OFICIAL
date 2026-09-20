@@ -180,6 +180,30 @@ export async function iniciarRun(db: Db, origem: "ui" | "cron"): Promise<Esteira
   }
 }
 
+/**
+ * RECLAMA a rodada `token` desta execução, com compare-and-set (Fase 29).
+ *
+ * Devolve o novo valor de `rodadas` quando ganhou, e `null` quando outra invocação já consumiu
+ * esse token — aí quem chama responde 409. Ver `cerca-da-run.ts` para o porquê.
+ */
+export async function reivindicarRodada(db: Db, runId: string, token: number): Promise<number | null> {
+  try {
+    const { data, error } = await db
+      .from("esteira_runs")
+      .update({ rodadas: token + 1, atualizado_em: new Date().toISOString() })
+      .eq("id", runId)
+      .eq("status", "running")
+      .eq("rodadas", token)
+      .select("rodadas")
+      .maybeSingle();
+    if (error || !data) return null;
+    return Number((data as { rodadas: number }).rodadas);
+  } catch {
+    // Tabela ausente: degrada para "sem cerca", como o resto do arquivo.
+    return null;
+  }
+}
+
 /** Soma os contadores desta rodada aos da execução e registra o avanço. */
 export async function registrarRodada(
   db: Db,
@@ -197,7 +221,9 @@ export async function registrarRodada(
     const { data, error } = await db
       .from("esteira_runs")
       .update({
-        rodadas: (run.rodadas ?? 0) + 1,
+        // ⚠️ Fase 29 — `rodadas` NÃO é incrementado aqui. Quem incrementa é `reivindicarRodada`,
+        // que usa a coluna como token de cerca. Dois incrementos fariam o token pular de dois em
+        // dois, e a rodada legítima seguinte tomaria 409.
         contadores,
         passos_ok: (run.passos_ok ?? 0) + ok,
         passos_erro: (run.passos_erro ?? 0) + erro,

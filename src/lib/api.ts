@@ -52,6 +52,31 @@ function extractErrorMessage(body: unknown, status: number, statusText: string):
  */
 const REQUEST_TIMEOUT_MS = 90_000;
 
+/**
+ * ═══ Fase 29 — a esteira espera mais, e SÓ ela ═══
+ * Depois dos consertos de orçamento (reaper 1×/rodada, download com teto, relógio antes do auth),
+ * a rodada legítima mais longa é ~81 s: auth ≤10 s + `HOBBY_BUDGET_MS` 70 s + flush. Os 90 s
+ * anteriores ficavam a 9 s disso — margem que a primeira rodada lenta consumia, e aí o cliente
+ * abortava e disparava a rodada seguinte sobre a MESMA run.
+ *
+ * 110 s dá 29 s de folga e fica 10 s ABAIXO do `maxDuration: 120` declarado: a mensagem passa a
+ * significar "a função passou de qualquer rodada legítima", e nunca disputa com o kill da
+ * plataforma.
+ *
+ * ⚠️ Por ROTA, não global. `request()` serve o app inteiro; 110 s em tudo penduraria a tela por
+ * quase dois minutos em qualquer requisição que falhe.
+ *
+ * ⚠️ E isto só é seguro junto com a CERCA (`cerca-da-run.ts`): se mesmo assim uma rodada passar de
+ * 110 s, o cliente re-dispara e a segunda invocação recebe 409 em vez de escrever nas mesmas
+ * linhas. Separados, subir o timeout é afrouxamento sem rede.
+ */
+const TIMEOUT_ESTEIRA_MS = 110_000;
+
+/** Quanto o cliente espera nesta rota. Exportada para o teste medir, não para o app escolher. */
+export function timeoutDaRota(path: string): number {
+  return path.startsWith("/pipeline/run") ? TIMEOUT_ESTEIRA_MS : REQUEST_TIMEOUT_MS;
+}
+
 async function request<T>(
   path: string,
   options: RequestInit = {},
@@ -65,7 +90,8 @@ async function request<T>(
   await attachRuntimeHeaders(headers);
 
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const tetoMs = timeoutDaRota(path);
+  const timer = setTimeout(() => controller.abort(), tetoMs);
   let res: Response;
   try {
     res = await fetch(url, {
@@ -75,7 +101,7 @@ async function request<T>(
     });
   } catch (err) {
     if (controller.signal.aborted) {
-      throw new ApiError(504, `A requisição passou de ${REQUEST_TIMEOUT_MS / 1000}s sem resposta (a função pode ter sido encerrada pelo limite de tempo).`);
+      throw new ApiError(504, `A requisição passou de ${tetoMs / 1000}s sem resposta (a função pode ter sido encerrada pelo limite de tempo).`);
     }
     throw err;
   } finally {

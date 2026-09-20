@@ -41,6 +41,7 @@ import { requeueDocument } from "@/lib/server/upload-queue";
 import {
   buscarRunAtiva,
   deveContinuar,
+  reivindicarRodada,
   deveAbrirDisjuntor,
   fecharRun,
   iniciarRun,
@@ -64,6 +65,7 @@ import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
 import { POST as mandatosRecalcularPOST } from "../../mandatos/recalcular/route";
 import { POST as divergenciaPOST } from "../../votos/recalcular-divergencia/route";
+import { resultadoDoClaim, MOTIVO_OCUPADA } from "@/lib/server/cerca-da-run";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -208,7 +210,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // registra o avanço numa linha de execução: fechar a aba deixa de "perder tudo" (a tela reabre
   // e retoma), duas abas não disputam as mesmas linhas, e uma execução que está falhando PARA.
   // Se a migration ainda não foi aplicada, `run` é `null` e a esteira roda como antes.
-  const corpo = (await req.json().catch(() => ({}))) as { run_id?: string; encerrar?: boolean; motivo?: string };
+  const corpo = (await req.json().catch(() => ({}))) as { run_id?: string; encerrar?: boolean; motivo?: string; rodadas_vistas?: number };
   await reaparRunsOrfas(db);
 
   // Fase 12 — ENCERRAR explicitamente. Quando o laço do cliente parava (teto de rodadas ou 2
@@ -230,6 +232,30 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     );
   }
   let execucao = ativa ?? (await iniciarRun(db, origem));
+
+  // ═══ Fase 29 — UMA invocação por execução, por vez ═══════════════════════════
+  // O guard acima compara IDs, e quando o cliente aborta aos 90s ele re-dispara com o MESMO
+  // `run_id`: os ids batem, o 409 não sai, e duas invocações trabalham sobre as mesmas linhas.
+  // A cerca usa `esteira_runs.rodadas` como token (a coluna já existe — sem migration): só passa
+  // quem apresentar o token que o banco ainda não consumiu. Ver `cerca-da-run.ts`.
+  const tokenDaRodada = typeof corpo.rodadas_vistas === "number"
+    ? corpo.rodadas_vistas
+    : execucao?.rodadas ?? null;
+  let rodadaReivindicada: number | null = null;
+  if (execucao && tokenDaRodada !== null) {
+    rodadaReivindicada = await reivindicarRodada(db, execucao.id, tokenDaRodada);
+    if (
+      resultadoDoClaim({ rodadasNoBanco: execucao.rodadas ?? null, token: tokenDaRodada }) === "ocupada" ||
+      rodadaReivindicada === null
+    ) {
+      return NextResponse.json(
+        { error: MOTIVO_OCUPADA, run_id: execucao.id, rodadas: execucao.rodadas },
+        { status: 409 },
+      );
+    }
+  }
+  /** O índice desta rodada — o token que ESTA invocação possui. */
+  const rodadaAtual = tokenDaRodada ?? 0;
 
   // ═══ Fase 10 — PLANEJAR a rodada em vez de deixá-la ser devorada pela cabeça ══
   // A soma das reservas dos doze passos é ~128s contra 50s de orçamento: uma rodada nunca coube
@@ -256,7 +282,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     filaExtracao = count ?? 0;
   } catch { /* tabela indisponível: sem viés, comportamento antigo */ }
   const { passos: planoDaRodada, protecao } = planejarRodada(
-    execucao?.rodadas ?? 0,
+    rodadaAtual,
     HOBBY_BUDGET_MS - FOLGA_ORQUESTRADOR_MS,
     { drenar: filaExtracao > 0 },
   );
@@ -729,7 +755,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     trabalhoRelatado: restantes,
     passosPulados,
     passosNaoTentados: passosNaoTentadosNaRun,
-    rodada: execucao?.rodadas ?? 0,
+    rodada: rodadaAtual,
   });
   restantes = pedeOutraRodada;
 
@@ -763,7 +789,8 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     materializados_nesta_rodada: materializouAgora,
     fila_extracao: filaExtracao,
     run_id: execucao?.id ?? null,
-    rodadas: execucao?.rodadas ?? null,
+    // O token que o cliente devolve na próxima chamada. Sem ele a cerca não fecha.
+    rodadas: rodadaReivindicada ?? execucao?.rodadas ?? null,
     ...(abortadoPeloDisjuntor
       ? {
           abortado: true,
