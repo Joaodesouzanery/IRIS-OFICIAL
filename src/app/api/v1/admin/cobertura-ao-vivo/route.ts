@@ -18,6 +18,7 @@ import { resilientFetchText } from "@/lib/server/resilient-fetch";
 import { looksLikeChallenge } from "@/lib/server/monitoring";
 import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
 import { anmNumerosDoAno } from "@/lib/server/anm-cobertura";
+import { lerTudo } from "@/lib/server/select-all-paged";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -122,13 +123,24 @@ export async function GET(req: NextRequest) {
   // ─── Reuniões NO BANCO (deliberações do ano) por agência ──────────────────
   const { data: agencias } = await db.from("agencias").select("id, sigla").in("sigla", ["ANTT", "ARTESP", "ANM"]);
   const idBySigla = new Map((agencias ?? []).map((a) => [a.sigla as string, a.id as string]));
-  const { data: delibs } = await db
-    .from("deliberacoes")
-    .select("agencia_id, numero_reuniao, data_reuniao")
-    .limit(40000);
+  // Fase 28 — era `.limit(40000)` SEM `order`, e `.limit(N)` grande não é paginação: o PostgREST
+  // corta em ~1.000 e devolve sem aviso. Com ARTESP 467 + ANTT 308 + ANM 125 só em 2026, esta rota
+  // — a que o operador usa como PROVA de que nada se perdeu — calculava `banco_total`, `faltando`
+  // e `extra` sobre uma fatia arbitrária de mil linhas. O `.order("id")` não é higiene: `.range()`
+  // sem `ORDER BY` pode repetir e pular linhas entre páginas.
+  const delibsRes = await lerTudo<{ agencia_id: string; numero_reuniao: string | null; data_reuniao: string | null }>(
+    () => db.from("deliberacoes").select("agencia_id, numero_reuniao, data_reuniao").order("id"),
+    "cobertura-ao-vivo/delibs");
+  const delibs = delibsRes.data;
+  // ⚠️ `truncated` NÃO basta: no caminho de ERRO, `selectAllPaged` devolve
+  // `{ rows, error, truncated: false }` — as linhas que já tinha, marcadas como leitura completa.
+  // Olhar só `truncated` deixaria a bandeira `false` justamente quando a leitura falhou, que é o
+  // caso que ela foi criada para cobrir.
+  if (delibsRes.error) console.error("[cobertura-ao-vivo] leitura do banco falhou:", delibsRes.error);
+  const leituraDoBancoParcial = delibsRes.truncated || Boolean(delibsRes.error);
   const bancoNums = (sigla: string) =>
     toNums(
-      (delibs ?? [])
+      delibs
         .filter(
           (d) =>
             d.agencia_id === idBySigla.get(sigla) &&
@@ -158,6 +170,13 @@ export async function GET(req: NextRequest) {
       // esgotado). Com ela `true`, "faltando: 0" NÃO significa cobertura completa — significa
       // apenas que nada do PEDAÇO que conseguimos enumerar está ausente.
       enumeracao_parcial: parcial,
+      /**
+       * O gêmeo de `enumeracao_parcial`, para o lado do BANCO. A rota sempre soube dizer "não
+       * consegui ler o site inteiro" e não sabia dizer "não li o banco inteiro" — e era justamente
+       * o lado do banco que vinha truncado em silêncio. Com isto `true`, `faltando` pode acusar
+       * ausência de coisa que temos.
+       */
+      leitura_do_banco_parcial: leituraDoBancoParcial,
       site_total: site.length,
       banco_total: banco.length,
       faltando: site.filter((n) => !bancoSet.has(n)), // no site e NÃO no banco → NÃO temos
@@ -183,7 +202,14 @@ export async function GET(req: NextRequest) {
         `${a.sigla}: a enumeração do site ficou INCOMPLETA nesta conferência (${a.site_total} reuniões lidas) — ` +
           `este resultado não prova cobertura, só compara o pedaço que deu para ler.`,
       );
-    } else if (a.extra.length > 0 && a.faltando.length === 0) {
+    }
+    if (a.leitura_do_banco_parcial) {
+      alertas.push(
+        `${a.sigla}: a leitura do BANCO ficou incompleta nesta conferência — "faltam N" abaixo pode ` +
+          "acusar ausência de reunião que na verdade temos.",
+      );
+    }
+    if (!a.erro && !a.enumeracao_parcial && a.extra.length > 0) {
       // Divergência ao CONTRÁRIO: o banco tem reunião que a listagem atual não mostra. Era
       // calculado e morria no payload. Pode ser listagem que encolheu (o caso que interessa) ou
       // numeração que migrou — nos dois casos alguém precisa olhar.
@@ -191,7 +217,8 @@ export async function GET(req: NextRequest) {
         `${a.sigla}: temos ${a.extra.length} reunião(ões) que a listagem do site NÃO mostra hoje ` +
           `(nº ${a.extra.slice(0, 15).join(", ")}${a.extra.length > 15 ? "…" : ""}) — a fonte pode ter encolhido.`,
       );
-    } else if (a.faltando.length > 0) {
+    }
+    if (!a.erro && !a.enumeracao_parcial && a.faltando.length > 0) {
       const amostra = a.faltando.slice(0, 15).join(", ");
       const resto = a.faltando.length > 15 ? "…" : "";
       alertas.push(

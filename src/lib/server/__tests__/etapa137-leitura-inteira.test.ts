@@ -26,6 +26,13 @@ const ROTAS_QUE_AGREGAM = [
   "src/app/api/v1/dashboard/governanca-agencias/route.ts",
   "src/app/api/v1/mandatos/stats/route.ts",
   "src/app/api/v1/dashboard/diretores/overview/route.ts",
+  // Fase 28 — as duas que ficaram de fora na Fase 25, e eram as que mais doíam:
+  // `cobertura-ao-vivo` é a rota que o operador usa como PROVA de que nada se perdeu, e calculava
+  // `banco_total`/`faltando`/`extra` sobre uma fatia de ~1.000 linhas; `materializar-faltantes`
+  // filtrava "sem voto" DEPOIS da fatia, então materializar não liberava vaga e deliberação além
+  // da milésima NUNCA recebia voto, em run nenhuma.
+  "src/app/api/v1/admin/cobertura-ao-vivo/route.ts",
+  "src/app/api/v1/admin/votos/materializar-faltantes/route.ts",
 ];
 
 describe("etapa137 · nenhum `.limit(N ≥ 1000)` onde a rota agrega a tabela inteira", () => {
@@ -35,7 +42,9 @@ describe("etapa137 · nenhum `.limit(N ≥ 1000)` onde a rota agrega a tabela in
       .map((m) => Number(m[1].replace(/_/g, "")))
       .filter((n) => n >= 1000);
     expect(grandes, `limits ≥ 1000 sem paginação: ${grandes.join(", ")}`).toEqual([]);
-    expect(fonte).toMatch(/lerTudo\(|selectAllPaged\(/);
+    // Fase 28 — o guard aceita `lerTudo<T>(` além de `lerTudo(`: a chamada com parâmetro de tipo
+    // é a MESMA leitura paginada, e exigir o parêntese colado rejeitaria uma tipagem melhor.
+    expect(fonte).toMatch(/lerTudo\s*[<(]|selectAllPaged\s*[<(]/);
   });
 });
 

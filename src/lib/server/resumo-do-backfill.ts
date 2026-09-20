@@ -23,6 +23,11 @@ export const CHAVES_NUMERICAS_DO_MATERIALIZADOR = [
   "roster_nao_conferivel",
   "fora_da_janela_de_mandatos",
   "upsert_falhas",
+  // Fase 28 — o estoque e o alcance. Sem eles não dá para ver a fila DRENAR: `deliberacoes` e
+  // `votos` dizem o que a rodada fez, e nada dizia quanto ainda falta nem quanto ela olhou.
+  "pendentes",
+  "examinados",
+  "fora_de_escopo",
 ] as const;
 
 export interface PayloadDoMaterializador {
@@ -32,6 +37,10 @@ export interface PayloadDoMaterializador {
   roster_nao_conferivel?: number;
   fora_da_janela_de_mandatos?: number;
   upsert_falhas?: number;
+  pendentes?: number;
+  examinados?: number;
+  fora_de_escopo?: number;
+  leitura_completa?: boolean;
   detalhe_roster?: Array<{ nao_reconhecidos?: string[] }>;
   delta_dispositivo?: {
     itens_que_mudariam?: number;
@@ -63,12 +72,23 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
     roster_nao_conferivel: b.roster_nao_conferivel ?? 0,
     fora_da_janela: b.fora_da_janela_de_mandatos ?? 0,
     upsert_falhas: b.upsert_falhas ?? 0,
+    // ⚠️ `pendentes` é ESTOQUE (ver `agregar-rodadas.ts`): a tela guarda o ÚLTIMO valor, não a
+    // soma. Somá-lo por rodada produziria um número que cresce enquanto a fila encolhe.
+    examinados: b.examinados ?? 0,
     // A regra do DISPOSITIVO (desligada, medida): o número que o usuário pediu para ver antes.
     votos_a_menos: delta.votos_a_menos ?? 0,
     itens_que_mudariam: delta.itens_que_mudariam ?? 0,
     regex_divergente: regexDivergente,
     regex_falso_positivo: regexFalsoPositivo,
   };
+  // ⚠️ ESTOQUE não pode ter default 0. A tela ATRIBUI estoque (não soma), então um `pendentes: 0`
+  // vindo de rodada que falhou — ou de um passo que nem chamou o materializador — APAGARIA da tela
+  // o estoque real da rodada anterior. Só publica quem de fato mediu.
+  if (typeof b.pendentes === "number") resumo.pendentes = b.pendentes;
+  if (typeof b.fora_de_escopo === "number") resumo.fora_de_escopo = b.fora_de_escopo;
+  // Leitura truncada faz TODO número acima subcontar. String e não booleano: `registrarRodada`
+  // soma números, e um `false` viraria 0 somado — a tela nunca saberia.
+  if (b.leitura_completa === false) resumo.leitura_do_acervo = "INCOMPLETA — os números abaixo subcontam";
   if (nomes.length > 0) resumo.nao_reconhecidos = nomes.join("; ");
   return resumo;
 }

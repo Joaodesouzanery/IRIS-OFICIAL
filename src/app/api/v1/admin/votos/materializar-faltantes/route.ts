@@ -32,6 +32,8 @@ import {
 import { upsertVotosProtegido } from "@/lib/server/votos-write";
 import { foraDaJanelaDeMandatos, type JanelaDeMandato } from "@/lib/server/janela-de-mandatos";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
+import { lerTudo } from "@/lib/server/select-all-paged";
+import { janelaRotativa } from "@/lib/server/varredura-rotativa";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -41,6 +43,15 @@ export const runtime = "nodejs";
 export const maxDuration = 120;
 
 const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
+
+/**
+ * Quantos itens uma rodada examina. O passo `backfillVotos` tem 12s de fatia; a 8s por item (a
+ * reserva de antes) isso dava ~1 item por rodada, o que não fecha uma volta nunca. 60 é o tamanho
+ * que a janela rotativa cobre o estoque em poucos minutos sem que a preparação domine a fatia.
+ */
+const LOTE_POR_RODADA = 60;
+/** Reserva por item dentro do laço — o mesmo 8s que já estava lá, agora nomeado e reusado. */
+const RESERVA_POR_ITEM_MS = 8_000;
 const YEAR_RE = /^(20)\d{2}$/;
 
 function arr(value: unknown): string[] {
@@ -73,35 +84,6 @@ export async function POST(req: NextRequest) {
       .map((a) => a.id),
   );
 
-  let query = db
-    .from("deliberacoes")
-    // `resumo_pleito` entra no SELECT para MEDIR (Fase 20, commit 3a) — a regra vigente ainda
-    // NÃO o lê. É onde mora o dispositivo dos itens de ata, e ler o dispositivo muda um número
-    // exibido publicamente: a medição vem antes da mudança.
-    .select("id, agencia_id, tipo_documento, documento_pai_id, resultado, data_reuniao, raw_extraction, fundamento_decisao, decisoes_todas, resumo_pleito")
-    .not("resultado", "is", null)
-    .order("id", { ascending: true })
-    .limit(4000);
-  if (agenciaFiltro) query = query.eq("agencia_id", agenciaFiltro);
-  if (year) query = query.gte("data_reuniao", `${year}-01-01`).lte("data_reuniao", `${year}-12-31`);
-  const { data: delibs, error } = await query;
-  if (error) return NextResponse.json({ error: "Falha ao listar deliberações." }, { status: 500 });
-
-  // Finais (mesma regra da Completude: ata só conta como filho com resultado).
-  const finais = (delibs ?? []).filter((d: any) => {
-    if (NAO_FINAL.has(String(d.tipo_documento))) return false;
-    if (d.tipo_documento === "ata") return Boolean(d.documento_pai_id && d.resultado);
-    return true;
-  });
-
-  // Quais já têm voto (consulta em chunks de 200 ids).
-  const comVoto = new Set<string>();
-  for (let i = 0; i < finais.length; i += 200) {
-    const chunk = finais.slice(i, i + 200).map((d: any) => d.id);
-    const { data: v } = await db.from("votos").select("deliberacao_id").in("deliberacao_id", chunk);
-    for (const row of v ?? []) comVoto.add((row as { deliberacao_id: string }).deliberacao_id);
-  }
-  const semVoto = finais.filter((d: any) => !comVoto.has(d.id));
 
   // Cadastro de diretores por agência (cache) — nome mais longo primeiro (determinismo,
   // mesmo critério do confirm).
@@ -187,6 +169,8 @@ export async function POST(req: NextRequest) {
   }
 
   let materializaveis = 0;
+  /** Quantos itens o laço de FATO olhou — o denominador dos contadores PARCIAIS. */
+  let examinados = 0;
   let votosCriados = 0;
   let semEvidencia = 0;
   let rosterNaoConferivel = 0;
@@ -194,6 +178,13 @@ export async function POST(req: NextRequest) {
   const upsertErros: string[] = [];
   /** Fase 20 — itens ANTERIORES ao primeiro mandato conhecido. Não é falha: é falta de registro. */
   let foraDaJanela = 0;
+  /**
+   * Fase 28 — deliberação de agência NÃO-colegiada (ou sem agência). Era contada em
+   * `sem_evidencia`, e não é ausência de evidência: é fora do escopo da esteira de votos, o
+   * conceito que `COLEGIADO_SIGLAS` existe para nomear. Rotular fora-de-escopo como "sem
+   * evidência" manda o operador procurar num documento um voto que nunca deveria estar lá.
+   */
+  let foraDeEscopo = 0;
   const foraDaJanelaPorAgencia: Record<string, number> = {};
   const detalheRoster: Array<{ deliberacao_id: string; motivo: string; nao_reconhecidos: string[] }> = [];
   let restantes = false;
@@ -209,9 +200,131 @@ export async function POST(req: NextRequest) {
   );
   const siglaDe = (id: string | null) => siglaPorId.get(String(id)) ?? "?";
 
-  for (const d of semVoto as any[]) {
-    if (!hasBudget(deadlineAt, 8_000)) { restantes = true; break; }
-    if (!d.agencia_id || !colegiadaIds.has(d.agencia_id)) { semEvidencia++; continue; }
+  // ═══ Fase 28 — a leitura em DUAS FASES, e por que o `lerTudo` ingênuo seria pior ═══
+  //
+  // O defeito: `.limit(4000)` que o PostgREST corta em ~1.000, e o filtro "sem voto" aplicado
+  // DEPOIS, em JS. Materializar não liberava vaga — a linha continuava ocupando seu lugar nas
+  // 1.000. Deliberação com `id` além da milésima NUNCA era materializada, em run nenhuma.
+  //
+  // Mas trocar por `lerTudo` sobre o SELECT de antes regride PIOR que o bug: o passo `backfillVotos`
+  // tem 12s de fatia e o laço abaixo só roda com mais de 8s de saldo. O SELECT de antes traz
+  // `raw_extraction` (jsonb grande); paginar isso gasta a janela inteira ANTES do laço, e
+  // `restantes` só vira `true` DENTRO do laço — passo verde, zero trabalho, para sempre.
+  //
+  // Por isso: projeção LEVE paginada (6 colunas escalares, 2-3 páginas), e o payload pesado
+  // buscado só para o lote que a rodada vai de fato examinar.
+  const candidatos = () => {
+    let q = db
+      .from("deliberacoes")
+      .select("id, agencia_id, tipo_documento, documento_pai_id, resultado, data_reuniao")
+      .not("resultado", "is", null)
+      // `.order` não é cosmético: `selectAllPaged` pagina com `.range()`, e `.range()` sem
+      // `ORDER BY` pode repetir e pular linhas entre páginas.
+      .order("id", { ascending: true });
+    if (agenciaFiltro) q = q.eq("agencia_id", agenciaFiltro);
+    if (year) q = q.gte("data_reuniao", `${year}-01-01`).lte("data_reuniao", `${year}-12-31`);
+    return q;
+  };
+  const levesRes = await lerTudo<any>(candidatos, "materializar/candidatos");
+  if (levesRes.error) return NextResponse.json({ error: "Falha ao listar deliberações." }, { status: 500 });
+  const leves = levesRes.data;
+
+  // Finais (mesma regra da Completude: ata só conta como filho com resultado).
+  const finais = leves.filter((d: any) => {
+    if (NAO_FINAL.has(String(d.tipo_documento))) return false;
+    if (d.tipo_documento === "ata") return Boolean(d.documento_pai_id && d.resultado);
+    return true;
+  });
+
+  // Quais já têm voto. Era um laço de chunks de 200 `in()`, que cresce junto com `finais`; uma
+  // leitura paginada de UMA coluna uuid é ~4 páginas e não depende do tamanho do outro lado.
+  const votosRes = await lerTudo<{ deliberacao_id: string }>(
+    () => db.from("votos").select("deliberacao_id").order("id"), "materializar/votos-ids");
+  // ⚠️ `lerTudo` devolve `{error}` em vez de lançar, e no caminho de ERRO devolve
+  // `truncated: false` com as linhas que já tinha (`select-all-paged.ts:23`). Ignorar o erro aqui
+  // seria pior que truncar: `comVoto` sairia INCOMPLETO, deliberação que já tem voto voltaria para
+  // `pendentes` e seria re-materializada — e `leitura_completa` afirmaria que estava tudo certo.
+  if (votosRes.error) {
+    return NextResponse.json({ error: "Falha ao listar votos existentes." }, { status: 500 });
+  }
+  const comVoto = new Set<string>((votosRes.data ?? []).map((r) => r.deliberacao_id));
+  const semVotoTotal = finais.filter((d: any) => !comVoto.has(d.id));
+  const leituraCompleta = !levesRes.truncated && !votosRes.truncated;
+
+  // ═══ PARTIÇÃO antes de gastar orçamento ═══
+  // Duas categorias são PERMANENTEMENTE irresolvíveis e custam quase nada para calcular: fora de
+  // escopo (zero query) e fora da janela de mandatos (`janelasDa` é cacheado por agência, 3
+  // queries). Computá-las sobre TODOS os candidatos as transforma em ESTOQUE completo, em vez de
+  // "o que o laço alcançou nesta rodada" — que era o número que a tela vinha somando a cada
+  // rodada, recontando os mesmos itens.
+  const semVoto: any[] = [];
+  for (const d of semVotoTotal as any[]) {
+    if (!d.agencia_id || !colegiadaIds.has(d.agencia_id)) { foraDeEscopo++; continue; }
+    const motivoFora = foraDaJanelaDeMandatos({
+      dataReuniao: d.data_reuniao,
+      janelas: await janelasDa(d.agencia_id),
+    });
+    if (motivoFora) {
+      foraDaJanela++;
+      const sigla = siglaDe(d.agencia_id);
+      foraDaJanelaPorAgencia[sigla] = (foraDaJanelaPorAgencia[sigla] ?? 0) + 1;
+      continue;
+    }
+    semVoto.push(d);
+  }
+
+  // ═══ A JANELA da rodada, e o payload pesado só dela ═══
+  const janela = janelaRotativa(semVoto.length, LOTE_POR_RODADA, Math.floor(Date.now() / 60_000));
+  const loteBruto = semVoto.slice(janela.inicio, janela.fim);
+  /**
+   * ⚠️⚠️ O PIOR DEFEITO POSSÍVEL NESTE ARQUIVO, e foi assim que quase entrou.
+   *
+   * O laço decide inferir voto para o colegiado inteiro a partir de `raw_extraction`: sem nomes
+   * nominais e sem sinal de contestação, ele infere. Um documento cujo payload pesado NÃO chegou
+   * tem `raw_extraction` UNDEFINED — que o laço lê como "nada contestado, ninguém nomeado" e
+   * infere voto para todo mundo. Uma falha de LEITURA viraria voto FABRICADO, gravado no banco, e
+   * o banner diria "N voto(s) recuperado(s)".
+   *
+   * `lerTudo` devolve `{error}` em vez de lançar. Então: erro → a rodada não examina nada; e o
+   * item que o `.in()` não devolveu é DESCARTADO do lote, nunca processado com o campo vazio.
+   */
+  let lotePesadoFalhou = false;
+  let semPayload = 0;
+  let lote: any[] = [];
+  if (loteBruto.length > 0) {
+    const pesadosRes = await lerTudo<any>(
+      () => db.from("deliberacoes")
+        // `resumo_pleito` entra no SELECT para MEDIR (Fase 20, commit 3a) — a regra vigente ainda
+        // NÃO o lê. É onde mora o dispositivo dos itens de ata, e ler o dispositivo muda um número
+        // exibido publicamente: a medição vem antes da mudança.
+        .select("id, raw_extraction, fundamento_decisao, decisoes_todas, resumo_pleito")
+        .in("id", loteBruto.map((d: any) => d.id))
+        .order("id"),
+      "materializar/lote-pesado");
+    if (pesadosRes.error) {
+      lotePesadoFalhou = true;
+      console.error("[materializar-faltantes] leitura do lote pesado falhou:", pesadosRes.error);
+    } else {
+      const pesadoPorId = new Map<string, any>((pesadosRes.data ?? []).map((r: any) => [r.id, r]));
+      for (const d of loteBruto) {
+        const pesado = pesadoPorId.get(d.id);
+        if (!pesado) { semPayload++; continue; }
+        Object.assign(d, pesado);
+        lote.push(d);
+      }
+    }
+  }
+
+  // ═══ PORTÃO DE ORÇAMENTO, antes do laço ═══
+  // Hoje `restantes` só é setado DENTRO do laço: uma rodada que não coube era indistinguível de
+  // uma rodada sem trabalho, e o passo reportava sucesso vazio. É a lição da Fase 21, registrada
+  // em `resumo-do-backfill.ts`: zero com cara de saúde é o pior formato de zero.
+  const preparacaoConsumiuAFatia = loteBruto.length > 0 && !hasBudget(deadlineAt, RESERVA_POR_ITEM_MS);
+  const rodadaNaoExaminou = preparacaoConsumiuAFatia || lotePesadoFalhou;
+
+  for (const d of (rodadaNaoExaminou ? [] : lote) as any[]) {
+    if (!hasBudget(deadlineAt, RESERVA_POR_ITEM_MS)) { restantes = true; break; }
+    examinados++;
     const raw = (d.raw_extraction ?? {}) as Record<string, unknown>;
     const nomes = arr(raw.nomes_votacao);
     const nomesContra = arr(raw.nomes_votacao_contra);
@@ -225,22 +338,10 @@ export async function POST(req: NextRequest) {
     const unanime = Boolean(raw.unanimidade_detectada);
     const isAnttAtaItem = d.tipo_documento === "ata" && Boolean(raw.documento_antt_tipo);
 
-    // ═══ Fase 20 — FORA DA JANELA ≠ CADASTRO INCOMPLETO ════════════════════
-    // O mandato ANM verificado mais antigo começa em 05/12/2022 e a fonte nova da agência é o
-    // acervo ANTIGO. Sem este gate, toda deliberação de 2019 cairia em `roster_nao_conferivel` —
-    // o balde que diz "vá consertar o cadastro". Não há o que consertar: a plataforma não tem
-    // registro de quem eram os diretores. Misturar as duas coisas manda o operador procurar um
-    // defeito inexistente e faz a cobertura PARECER que piorou quando o acervo entra.
-    const motivoFora = foraDaJanelaDeMandatos({
-      dataReuniao: d.data_reuniao,
-      janelas: await janelasDa(d.agencia_id),
-    });
-    if (motivoFora) {
-      foraDaJanela++;
-      const sigla = siglaDe(d.agencia_id);
-      foraDaJanelaPorAgencia[sigla] = (foraDaJanelaPorAgencia[sigla] ?? 0) + 1;
-      continue;
-    }
+    // ⚠️ Fase 28 — a checagem de janela de mandatos e a de escopo SAÍRAM daqui para a partição,
+    // antes do laço. Não é reorganização: dentro do laço elas só contavam o que a rodada alcançava,
+    // e a tela SOMAVA esse parcial a cada rodada, recontando os mesmos itens. Na partição elas são
+    // estoque completo — um número que quer dizer alguma coisa.
 
     const diretoresList = await diretoresDa(d.agencia_id);
     if (diretoresList.length === 0) { semEvidencia++; continue; }
@@ -391,7 +492,23 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     dry_run: dryRun,
     finais_analisadas: finais.length,
-    sem_voto: semVoto.length,
+    /**
+     * Fase 28 — o ESTOQUE de deliberações finais sem voto, completo. Antes era a fatia de ~1.000
+     * linhas que o PostgREST devolvia, e materializar não liberava vaga: o que estava além da
+     * milésima nunca entrava. Agora `pendentes` é o que resta depois de tirar o que é
+     * permanentemente irresolvível, e é ele que tem de CAIR a cada rodada.
+     */
+    sem_voto: semVotoTotal.length,
+    pendentes: semVoto.length,
+    examinados,
+    /** A rodada olhou o bloco `bloco` de `blocos` — a varredura fecha uma volta em `blocos` min. */
+    janela_bloco: janela.bloco,
+    janela_blocos: janela.blocos,
+    /** Leitura truncada = os números abaixo subcontam. Nunca deixar isso implícito. */
+    leitura_completa: leituraCompleta,
+    ...(preparacaoConsumiuAFatia ? { preparacao_consumiu_a_fatia: true } : {}),
+    ...(lotePesadoFalhou ? { lote_pesado_falhou: true } : {}),
+    ...(semPayload > 0 ? { sem_payload_descartados: semPayload } : {}),
     materializaveis,
     votos: votosCriados,
     sem_evidencia: semEvidencia,
@@ -409,9 +526,20 @@ export async function POST(req: NextRequest) {
     upsert_falhas: upsertFalhas,
     ...(upsertErros.length > 0 ? { upsert_erros: upsertErros } : {}),
     fora_da_janela_de_mandatos: foraDaJanela,
+    /** Fase 28 — fora do ESCOPO da esteira (agência não-colegiada), que era contado em sem_evidencia. */
+    fora_de_escopo: foraDeEscopo,
     fora_da_janela_por_agencia: foraDaJanelaPorAgencia,
     detalhe_roster: detalheRoster,
-    restantes,
+    /**
+     * ⚠️ `restantes` NÃO pode ser `janela.blocos > 1`, por mais tentador que pareça.
+     * O estoque `pendentes` inclui itens PERMANENTEMENTE irresolvíveis (sem evidência de voto,
+     * roster não conferível). Eles nunca saem, então `blocos > 1` seria verdade para sempre e a
+     * esteira nunca pararia — a "fila que nunca esvazia" que já custou uma fase a este projeto.
+     * O sinal honesto é: o laço quebrou por orçamento, a preparação não coube, ou esta rodada
+     * GRAVOU algo (e então a próxima pode achar mais). Bloco só de irresolvíveis devolve
+     * zero e a esteira segue em frente, que é o desfecho certo.
+     */
+    restantes: restantes || rodadaNaoExaminou || (!dryRun && votosCriados > 0),
     detalhe,
     /**
      * Commit 3a — o que MUDARIA se a regra lesse `resumo_pleito`, sem que nada tenha mudado.

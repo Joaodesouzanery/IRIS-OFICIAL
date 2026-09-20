@@ -37,6 +37,7 @@ import {
   Users,
   X,
 } from "lucide-react";
+import { agregarEtapas } from "@/lib/server/agregar-rodadas";
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
 
@@ -426,11 +427,11 @@ export default function VotosDiretoresPage() {
           runId = res.run_id ?? runId;
           setRunIdAtivo(runId);
           ultimas = res.etapas ?? {};
-          for (const etapa of Object.values(ultimas)) {
-            for (const [k, v] of Object.entries(etapa)) {
-              if (typeof v === "number") totais[k] = (totais[k] ?? 0) + v;
-            }
-          }
+          // Fase 28 — somar EVENTO está certo; somar RETRATO não. `fora_da_janela`, `pendentes`
+          // e `pendentes_direcao` são recalculados do zero a cada rodada, sobre a mesma população:
+          // somá-los exibia a mesma medição N vezes ("74 sem evidência · 72 anteriores ao 1º
+          // mandato" não eram deliberações distintas). `agregarEtapas` decide por chave.
+          agregarEtapas(totais, ultimas as Record<string, Record<string, unknown>>);
           if (res.abortado) {
             desfecho = "abortado";
             ultimoErro = res.motivo_parada ?? "disjuntor aberto";
@@ -461,6 +462,11 @@ export default function VotosDiretoresPage() {
     onSuccess: ({ totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas }) => {
       setMatchError(null);
       setRodarTudoProgresso(null);
+      // ⚠️ `agregarEtapas` só agrega NÚMEROS; string tem de ser lida direto da etapa, como o
+      // `naoReconhecidos` abaixo. Escrever `totais.leitura_do_acervo` seria letra morta.
+      const leituraDoAcervo = typeof ultimas.backfill_votos?.leitura_do_acervo === "string"
+        ? (ultimas.backfill_votos.leitura_do_acervo as string)
+        : null;
       const naoReconhecidos = typeof ultimas.backfill_votos?.nao_reconhecidos === "string"
         ? ultimas.backfill_votos.nao_reconhecidos
         : "";
@@ -494,12 +500,26 @@ export default function VotosDiretoresPage() {
         (totais.votos ?? 0) > 0
           ? `${totais.votos} voto(s) recuperado(s) em ${totais.deliberacoes ?? 0} deliberação(ões) antiga(s)`
           : null,
-        (totais.sem_evidencia ?? 0) > 0 ? `${totais.sem_evidencia} sem evidência de voto` : null,
+        // Fase 28 — o número PARCIAL vem com o denominador colado. `sem_evidencia` é contado só
+        // sobre o lote que a rodada examinou; sem `examinados` ao lado ele parece uma contagem de
+        // deliberações distintas, e não é.
+        (totais.sem_evidencia ?? 0) > 0
+          ? `${totais.sem_evidencia} sem evidência de voto` +
+            ((totais.examinados ?? 0) > 0 ? ` em ${totais.examinados} item(ns) examinado(s) — ocorrências no exame, não deliberações distintas` : "")
+          : null,
+        // Fase 28 — o ESTOQUE: é este número que tem de CAIR a cada rodada. Antes a tela só dizia
+        // o que a rodada fez, e nunca quanto ainda faltava.
+        (totais.pendentes ?? 0) > 0 ? `${totais.pendentes} deliberação(ões) final(is) ainda sem voto (estoque de agora)` : null,
+        (totais.fora_de_escopo ?? 0) > 0
+          ? `${totais.fora_de_escopo} de agência não-colegiada — fora do escopo da esteira de votos, não é falta de evidência`
+          : null,
+        leituraDoAcervo ? `⚠️ leitura do acervo ${leituraDoAcervo}` : null,
         // Fase 21 — o que o materializador RECUSOU ou não conseguiu, visível. Antes esses números
         // eram calculados toda noite e descartados: uma run em que todas as escritas falharam
         // mostrava o mesmo banner verde de uma run vazia.
         (totais.roster_nao_conferivel ?? 0) > 0
           ? `${totais.roster_nao_conferivel} item(ns) sem voto por roster não conferível` +
+            ((totais.examinados ?? 0) > 0 ? ` de ${totais.examinados} examinado(s)` : "") +
             (naoReconhecidos ? ` (não reconhecidos: ${naoReconhecidos})` : "")
           : null,
         (totais.fora_da_janela ?? 0) > 0 ? `${totais.fora_da_janela} anterior(es) ao 1º mandato conhecido (fora do denominador)` : null,
