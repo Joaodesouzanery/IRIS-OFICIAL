@@ -15,6 +15,7 @@ import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { amostrar, seedDe } from "@/lib/server/amostra-auditoria";
 import { isVotoNominal } from "@/lib/votos-nominal";
+import { assinarPdfsDasDeliberacoes } from "@/lib/server/pdf-da-deliberacao";
 
 export const dynamic = "force-dynamic";
 
@@ -53,24 +54,17 @@ export async function GET(req: NextRequest) {
   if (ids.length === 0) return NextResponse.json({ ano, seed: seedTexto, agencias: [] });
 
   // O PDF de origem: o documento ligado à deliberação (ou ao PAI, para item de ata).
-  const paiOuEla = escolhidas.map((d) => String(d.documento_pai_id ?? d.id));
-  const [{ data: docs }, { data: votos }] = await Promise.all([
-    db.from("documentos_regulatorios").select("deliberacao_id, filename, storage_bucket, storage_path").in("deliberacao_id", [...new Set(paiOuEla)]),
+  // Fase 29 — a máquina virou `pdf-da-deliberacao.ts`, porque a aba de auditoria por voto precisa
+  // exatamente da mesma regra. Duas cópias do fallback `documento_pai_id` seriam duas chances de
+  // uma delas esquecê-lo e devolver 404 na maioria da ANM e da ARTESP.
+  const [pdfPorDelib, { data: votos }] = await Promise.all([
+    assinarPdfsDasDeliberacoes(db, escolhidas.map((d) => ({ id: String(d.id), documento_pai_id: d.documento_pai_id ?? null }))),
     db.from("votos").select("deliberacao_id, tipo_voto, is_nominal, proveniencia, diretores (nome)").in("deliberacao_id", ids),
   ]);
-  const docPorDelib = new Map<string, any>();
-  for (const doc of (docs ?? []) as any[]) if (!docPorDelib.has(doc.deliberacao_id)) docPorDelib.set(doc.deliberacao_id, doc);
-  const porBucket = new Map<string, string[]>();
-  for (const doc of docPorDelib.values()) if (doc.storage_path) porBucket.set(doc.storage_bucket ?? "pdfs", [...(porBucket.get(doc.storage_bucket ?? "pdfs") ?? []), doc.storage_path]);
-  const signed = new Map<string, string>();
-  for (const [bucket, paths] of porBucket) {
-    const { data: lista } = await db.storage.from(bucket).createSignedUrls(paths, 60 * 60);
-    for (const s of lista ?? []) if (s?.path && s.signedUrl) signed.set(`${bucket}|${s.path}`, s.signedUrl);
-  }
 
   const porAgencia = new Map<string, any[]>();
   for (const d of escolhidas) {
-    const doc = docPorDelib.get(String(d.documento_pai_id ?? d.id));
+    const pdf = pdfPorDelib.get(String(d.id));
     const votosDela = ((votos ?? []) as any[]).filter((v) => v.deliberacao_id === d.id).map((v) => ({
       diretor: v.diretores?.nome ?? "?", tipo: v.tipo_voto, origem: isVotoNominal(v) ? "lido" : "inferido",
     }));
@@ -82,8 +76,8 @@ export async function GET(req: NextRequest) {
       // relator, processo e interessado (METODOLOGIA §8). Documentar a lacuna sem gastar quatro
       // linhas para cobri-la seria escolher a doc honesta sobre o instrumento honesto.
       processo: d.processo ?? null,
-      pdf: doc?.storage_path ? signed.get(`${doc.storage_bucket ?? "pdfs"}|${doc.storage_path}`) ?? null : null,
-      arquivo: doc?.filename ?? null,
+      pdf: pdf?.url ?? null,
+      arquivo: pdf?.arquivo ?? null,
       votos: votosDela,
       universo: d.universo,
     };

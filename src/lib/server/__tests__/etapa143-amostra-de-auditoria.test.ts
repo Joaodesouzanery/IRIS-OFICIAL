@@ -32,7 +32,13 @@ describe("etapa143 · rota e tela", () => {
     const rota = readFileSync(join(RAIZ, "src/app/api/v1/admin/auditoria/amostra/route.ts"), "utf-8");
     expect(rota).toMatch(/isFinalDecisionRecord\(/);
     expect(rota).toMatch(/lerTudo/);
-    expect(rota).toMatch(/createSignedUrls\(/);
+    // Fase 29 — a assinatura em lote mudou de casa (`pdf-da-deliberacao.ts`), porque a aba de
+    // auditoria por voto usa a MESMA regra. O que o caso garante é o mecanismo, não o arquivo:
+    // a rota chama o helper, e o helper assina em lote com o fallback de item de ata.
+    expect(rota).toMatch(/assinarPdfsDasDeliberacoes\(/);
+    const helper = readFileSync(join(RAIZ, "src/lib/server/pdf-da-deliberacao.ts"), "utf-8");
+    expect(helper).toMatch(/createSignedUrls\(/);
+    expect(helper).toMatch(/documento_pai_id \?\? d\.id/);
     expect(rota).toMatch(/requireAdmin\(req\)/);
   });
   it("a tela tem o bloco e o botão de outra amostra", () => {
