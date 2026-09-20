@@ -193,4 +193,5 @@ deliberações duplicadas/votos órfãos · funil do scraper (descobertas → co
 o app — leve-os junto ou substitua o guard/gate de demo pela auth do projeto novo. `agencias`,
 `diretores` e `mandatos` são **raízes compartilhadas** (também servem o painel institucional); no projeto
 novo elas são a base — traga-as inteiras. O ritual de verificação (`type-check && test && build && lint`) e
-o `vote-certification.test.ts` (46 expectativas sobre PDFs reais) são o padrão-ouro; mantenha-os verdes.
+o `vote-certification.test.ts` (164 expectativas sobre 16 PDFs reais) são o padrão-ouro; mantenha-os
+verdes. ⚠️ Ele NÃO cobre `relator`, número de `processo` nem `interessado` — ver METODOLOGIA §8.

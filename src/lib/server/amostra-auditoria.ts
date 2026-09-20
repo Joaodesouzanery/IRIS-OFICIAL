@@ -1,7 +1,7 @@
 /**
  * A amostra de auditoria — "os documentos estão certos?" vira uma pergunta com resposta (Fase 26).
  *
- * Certificação (46 expectativas em PDFs reais) e cobertura ao vivo dizem que a EXTRAÇÃO e a
+ * Certificação (164 expectativas em 16 PDFs reais) e cobertura ao vivo dizem que a EXTRAÇÃO e a
  * COLETA funcionam nas fixtures e nos sites. O que nenhuma das duas diz é se a deliberação que
  * está no banco hoje bate com o PDF de onde veio. A resposta honesta é conferir ALGUMAS ao acaso
  * contra o original — foi o que pegou os erros desta série. Aqui isso vira rotina de um clique.

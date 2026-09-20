@@ -3,7 +3,94 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
-## 🔴 FASE 27 (13/set/2026) — o PDF que travava o parser, o recálculo que só via 300, a pauta de 2023
+## 🔴 FASE 28 (20/set/2026) — o worker que nunca chegou, o buraco de mil linhas, os rótulos
+
+**⚠️ ORDEM IMPOSTA: o BLOCO A é confirmado ANTES de qualquer coisa.**
+Deploy verde → **"Rodar tudo"** → conferir três pontos, nesta ordem:
+1. A run passa da rodada 10 sem "90 s sem resposta".
+2. `qa-fase28.sql` bloco ⑦: **`parser_sem_isolamento` tem de ser ZERO.** Qualquer número > 0 ali
+   significa que o worker NÃO subiu na Lambda e o teto do parser continua decorativo — nesse caso
+   nada do resto importa primeiro, e a próxima tentativa é `outputFileTracingIncludes` no
+   `next.config.mjs`.
+3. Os 15 presos mudam de estado: completam, ou passam a falhar com `Timeout ao processar PDF (>Ns)`
+   — que é o teto FUNCIONANDO.
+
+Depois: **"Rodar tudo" 2×** → colar `docs/qa-fase28.sql` → conferir as "5 ao acaso" contra os PDFs
+(agora com `processo` na linha).
+
+### A lição da fase: verde não é prova, e eu quase repeti o erro duas vezes
+
+**1. O worker da Fase 27 estava em produção; o ARQUIVO dele, não.** O caminho era montado em
+runtime (`join(process.cwd(), "src", ...)`), e para o webpack e o `@vercel/nft` isso são três
+strings, não uma dependência. Medido no build: **dos 183 `.nft.json`, nenhum citava
+`pdf-parse-worker.cjs`**, enquanto o trace da rota da esteira (895 arquivos) incluía os 11 de
+`node_modules/pdf-parse`. O `new Worker` falhava com `MODULE_NOT_FOUND` num evento assíncrono, a
+regex do catch não reconhecia, e o código caía no parse in-process — o caminho que mata a run.
+O teste que o "cobria" verificava `existsSync` **no checkout**, nunca no deploy.
+
+**2. Ao remover o fallback, removi a última aresta estática para `pdf-parse`** e o trace caiu de
+**23 rotas para ZERO**. A função subiria sem a biblioteca e todo documento falharia. Só apareceu
+porque conferi o artefato do build em vez de confiar no ritual verde. O `await import("pdf-parse")`
+em `caminhoDoPdfParse` existe só para o tracer ver, está marcado **NÃO REMOVER**, e a etapa147 o
+guarda LENDO os `.nft.json` — nenhum teste de unidade pega essa classe.
+
+**3. A revisão adversarial pegou um bug CRÍTICO que eu tinha acabado de introduzir.** `lerTudo`
+devolve `{error}` em vez de lançar, e no caminho de erro devolve `truncated: false`. Com
+`pesadosRes.error` ignorado, `raw_extraction` ficava `undefined` e o laço lê isso como "ninguém
+nomeado, nada contestado" — que é exatamente a condição de **inferir voto para o colegiado
+inteiro**. Uma falha de leitura gravaria ~300 votos fabricados e o banner diria "300 voto(s)
+recuperado(s)". Três céticos independentes confirmaram a cadeia ponta a ponta.
+
+### O buraco mais caro da plataforma, consertado
+
+`materializar-faltantes` lia as primeiras ~1.000 deliberações por `id` e aplicava o filtro "sem
+voto" **depois**, em JS. Materializar não liberava vaga, então **deliberação além da milésima nunca
+recebeu voto, em run nenhuma**. Não era número errado na tela: era voto que não existe. O bloco ①
+do QA mede exatamente o tamanho do que estava inalcançável.
+
+### Números que MUDAM na tela — declarados antes de você rodar
+
+| Número | Sinal | Por quê |
+|---|---|---|
+| `finais_analisadas`, `sem_voto` | **sobem** | o teto de 1.000 saiu |
+| votos materializados | **sobem ao longo das runs** | a consequência que importa |
+| `banco_total` / "Temos" | sobe ou fica | a cobertura ao vivo lia ~1.000 linhas |
+| `faltando` | cai ou fica | idem |
+| `extra` | **sobe** | o acervo antigo entra na conta, e deixou de morrer atrás do `faltando` |
+| "✓ Cobertura completa" | **pode virar aviso** | é o objetivo, não regressão |
+| `sem_evidencia` | **cai** | perde a parcela "agência fora de escopo", que ganhou linha própria |
+| "N anteriores ao 1º mandato" | **cai muito** | vira duas linhas; a maior parte é "sem data de reunião" |
+| "74 sem evidência", "72 fora da janela" | **param de crescer** | eram somas por rodada, não deliberações distintas |
+
+**⚠️ Não compare com os números de antes de 20/09:** retrato deixou de ser somado
+(METODOLOGIA §8.2). Os antigos eram ocorrências por rodada.
+
+### Fica para a Fase 29, com pré-requisito NOMEADO
+
+- **`cobertura-documentos`** (6 leituras truncadas): o bloco ⑧ do QA mede `monitoramento_itens`
+  primeiro. Se for grande, é `count: exact`, não `lerTudo`.
+- **Arquivo de atas da ANM no denominador de cobertura**: precisa da fixture VERBATIM de
+  `.../atas-da-rop/atas-reunioes-ordinarias`. Sem `<time>`, todos os itens sairiam sem ano e, pela
+  regra vigente, entrariam em TODO ano — dezenas de reuniões pré-2022 virariam "faltando em 2026"
+  com alerta vermelho, na rota que é a prova. Enquanto isso, a resposta publica
+  `fontes_consultadas` e avisa que enumera **2 das 6** fontes da ANM.
+- **Comparar ANM por SÉRIE (ROP × REP)**: o lado do site já distingue; falta `tipo_reuniao` no
+  banco, cuja cobertura de nulos o bloco ④ mede. Hoje as faixas não cruzam — bug latente, não ativo.
+- **`nomes_ausentes` no gabarito não é asserido pelo harness** (6 documentos). Fechar pode nascer
+  vermelho por defeito de extração; é commit de extração.
+- **Unificar o filtro "final" do materializador com `isFinalDecisionRecord`**: muda QUANTOS votos
+  existem. Commit de semântica, medido antes — nunca carona de um commit de paginação.
+- **Ler as fontes da ANM de `monitoramento_sites`** em vez de hardcodar na rota de cobertura.
+
+### Segue esperando VOCÊ
+
+- Conferir as "5 ao acaso" contra os PDFs — é o único instrumento que fecha o laço banco ↔ PDF, e
+  o único que toca `relator`, `processo` e `interessado`. **A certificação não cobre esses três**
+  (METODOLOGIA §8): o parser pode degradá-los e todo o ritual passa verde.
+- Data de posse real do Severino Medeiros Ramos Neto (DOU).
+- Decisão sobre os 45 votos escaneados da ANTT.
+
+## 🟠 FASE 27 (13/set/2026) — o PDF que travava o parser, o recálculo que só via 300, a pauta de 2023
 
 **Sequência:** deploy verde → **"Rodar tudo" 2×** → colar `docs/qa-fase27.sql` → conferir as
 "5 ao acaso" contra os PDFs.

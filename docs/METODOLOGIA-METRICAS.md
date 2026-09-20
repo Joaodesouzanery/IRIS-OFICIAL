@@ -256,3 +256,57 @@ comportamento.**
 
 Toda mudança de semântica deve começar por uma destas funções — nunca por uma cópia local. As
 duplicações que ainda existem estão registradas em [PENDENCIAS.md](./PENDENCIAS.md).
+
+---
+
+## 8. O que a CERTIFICAÇÃO cobre — e os três campos que ela não toca (20/09/2026)
+
+O harness `vote-certification.test.ts` é o padrão-ouro da extração: **164 expectativas sobre 16
+PDFs oficiais reais** (o número sai do próprio scorecard do teste, não de prosa). Ele roda o
+pipeline de verdade — `extractPdfText` → `analyzeUploadPdf`, sem banco — e compara com um gabarito
+levantado por leitura humana.
+
+O objetivo da plataforma nomeia **quatro** campos por deliberação: relator, resultado, processo e
+interessado. A certificação cobre **um**.
+
+| Campo | Coberto por | Regressão pega? |
+|---|---|---|
+| `resultado` | certificação (`resultado`, `resultado_nao_pode_ser`) | **Sim** |
+| `relator` | só `admin/auditoria/amostra` — 5 por agência, exige humano abrindo o PDF | Não |
+| `interessado` | idem | Não |
+| `processo` | idem (entrou na amostra em 20/09/2026; antes, **nada**) | Não |
+
+**A consequência, declarada:** uma mudança no parser pode degradar relator, processo e interessado
+e **todo o ritual passa verde**. As chaves do gabarito são `agencia_sigla`, `ata_items_min`,
+`data_reuniao`, `import_counts_as_final`, `itens_unanimidade_min`, `nomes_ausentes`, `nomes_contra`,
+`nomes_contra_nao_incluem`, `nomes_presentes_incluem`, `numero_deliberacao_contem`, `resultado`,
+`resultado_nao_pode_ser`, `sem_votos`, `texto_contem`, `texto_nao_contem`, `tipo_documento`,
+`unanimidade_detectada` — nenhuma delas é relator, processo ou interessado.
+
+**Achado adicional, registrado e NÃO consertado:** `nomes_ausentes` está no gabarito de 6
+documentos e o harness **nunca o asserta** (não existe ramo para ele no teste). É expectativa
+humana escrita e descartada — a skill `capacidade-sem-consumidor` aplicada ao próprio padrão-ouro.
+Fechar isso pode nascer vermelho por defeito de extração, e aí é commit de extração, não de
+documentação. Fica em [PENDENCIAS.md](./PENDENCIAS.md).
+
+### 8.1 "Fora da janela de mandatos" tem DOIS motivos, e só um fala de mandato
+
+`foraDaJanelaDeMandatos` (`src/lib/server/janela-de-mandatos.ts`) devolve
+`anterior_ao_primeiro_mandato` **ou** `sem_data_de_reuniao`. Até 20/09/2026 o materializador
+descartava o motivo e a tela rotulava os dois como "anterior ao 1º mandato conhecido" — afirmação
+praticamente impossível para o acervo corrente, porque 2026 é posterior a **todos** os primeiros
+mandatos conhecidos (ANM 05/12/2022, ANTT 23/12/2022, ARTESP 07/10/2024). O que estava ali, em boa
+parte, é deliberação cuja **data a extração não achou**: defeito de extração exibido como fato de
+mandato. Agora são duas linhas, e a de data nomeia a agência e o passo que conserta (`redatar`).
+
+### 8.2 Retrato não se soma (20/09/2026)
+
+A tela agregava as rodadas somando cegamente todo valor numérico. Isso está certo para **evento**
+(10 votos em 3 rodadas são 10 votos) e errado para **retrato** — `fora_da_janela`, `pendentes`,
+`pendentes_direcao` e afins são recalculados do zero a cada rodada, sobre a mesma população, e
+somá-los exibia a mesma medição N vezes. `src/lib/server/agregar-rodadas.ts` classifica cada chave
+em evento (soma), estoque (último valor) e parcial (soma, obrigada a vir com `examinados` ao lado).
+Chave desconhecida cai em evento — o default é o comportamento anterior.
+
+**Leitura que interessa:** números como "74 sem evidência de voto" publicados antes desta data são
+**ocorrências por rodada**, não deliberações distintas. Não compare com os de hoje.

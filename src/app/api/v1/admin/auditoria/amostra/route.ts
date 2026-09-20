@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
 
   const { data: delibs } = await lerTudo<Record<string, any>>(() => db
     .from("deliberacoes")
-    .select("id, agencia_id, numero_deliberacao, tipo_documento, documento_pai_id, resultado, relator, data_reuniao, interessado, raw_extraction")
+    .select("id, agencia_id, numero_deliberacao, tipo_documento, documento_pai_id, resultado, relator, data_reuniao, interessado, processo, raw_extraction")
     .gte("data_reuniao", `${ano}-01-01`).lte("data_reuniao", `${ano}-12-31`)
     .order("id"), "amostra/deliberacoes");
 
@@ -77,6 +77,11 @@ export async function GET(req: NextRequest) {
     const item = {
       id: d.id, numero: d.numero_deliberacao, tipo: d.tipo_documento, data: d.data_reuniao,
       relator: d.relator ?? null, resultado: d.resultado ?? null, interessado: d.interessado ?? null,
+      // Fase 28 — `processo` entra porque ele é o ÚNICO dos quatro campos do objetivo que não é
+      // coberto por instrumento nenhum: o gabarito da certificação tem ZERO expectativa sobre
+      // relator, processo e interessado (METODOLOGIA §8). Documentar a lacuna sem gastar quatro
+      // linhas para cobri-la seria escolher a doc honesta sobre o instrumento honesto.
+      processo: d.processo ?? null,
       pdf: doc?.storage_path ? signed.get(`${doc.storage_bucket ?? "pdfs"}|${doc.storage_path}`) ?? null : null,
       arquivo: doc?.filename ?? null,
       votos: votosDela,
@@ -88,6 +93,6 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({
     ano, seed: seedTexto, n,
     agencias: [...porAgencia.entries()].map(([sigla, itens]) => ({ sigla, universo: itens[0]?.universo ?? 0, itens })),
-    notice: "Amostra ao acaso, reproduzível pelo seed do dia. Confira cada linha contra o PDF: relator, resultado e votos.",
+    notice: "Amostra ao acaso, reproduzível pelo seed do dia. Confira cada linha contra o PDF: relator, processo, interessado, resultado e votos — estes quatro campos NÃO têm cobertura de teste automático.",
   });
 }

@@ -287,7 +287,7 @@ export default function VotosDiretoresPage() {
 
   // Fase 26 — a amostra de auditoria (reproduzível por dia; "outra amostra" troca o seed).
   const [amostraSeed, setAmostraSeed] = useState("");
-  type Amostra = { ano: string; seed: string; agencias: Array<{ sigla: string; universo: number; itens: Array<{ id: string; numero: string | null; tipo: string | null; data: string | null; relator: string | null; resultado: string | null; interessado: string | null; pdf: string | null; arquivo: string | null; votos: Array<{ diretor: string; tipo: string; origem: string }> }> }> };
+  type Amostra = { ano: string; seed: string; agencias: Array<{ sigla: string; universo: number; itens: Array<{ id: string; numero: string | null; tipo: string | null; data: string | null; relator: string | null; resultado: string | null; interessado: string | null; processo: string | null; pdf: string | null; arquivo: string | null; votos: Array<{ diretor: string; tipo: string; origem: string }> }> }> };
   const { data: amostra } = useQuery({
     queryKey: ["auditoria-amostra", amostraSeed],
     queryFn: () => api.get<Amostra>(`/admin/auditoria/amostra?n=5&ano=2026${amostraSeed ? `&seed=${amostraSeed}` : ""}`).catch(() => ({ ano: "2026", seed: "", agencias: [] } as Amostra)),
@@ -1090,7 +1090,7 @@ export default function VotosDiretoresPage() {
                       <span className="font-medium truncate">{it.numero ?? it.tipo} · {it.data ?? "s/ data"}</span>
                       {it.pdf ? <a href={it.pdf} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline shrink-0">PDF ↗</a> : <span className="text-text-muted shrink-0">sem PDF</span>}
                     </div>
-                    <div className="text-text-secondary truncate" title={it.interessado ?? undefined}>{it.resultado ?? "sem resultado"} · relator: {it.relator ?? "—"}</div>
+                    <div className="text-text-secondary truncate" title={it.interessado ?? undefined}>{it.resultado ?? "sem resultado"} · relator: {it.relator ?? "—"} · processo: {it.processo ?? "—"}</div>
                     <div className="text-text-muted">
                       {it.votos.length === 0 ? "sem voto" : it.votos.map((v) => `${v.diretor.split(" ")[0]}: ${v.tipo}${v.origem === "inferido" ? "~" : ""}`).join(" · ")}
                     </div>

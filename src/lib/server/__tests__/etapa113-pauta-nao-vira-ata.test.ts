@@ -12,7 +12,7 @@
  * extensão reconhecível), que não contém "pauta". Resultado: `tipo = "ata"`, itens expostos,
  * confirm materializa — com prefixo `PAUTA-`, que é a confissão do próprio bug.
  *
- * ⚠️ **Por que a certificação (46/46) não pega**: a suíte alimenta `file: { name: <nome do nosso
+ * ⚠️ **Por que a certificação (164 expectativas) não pega**: a suíte alimenta `file: { name: <nome do nosso
  * fixture> }`, e o nosso fixture se chama `antt-pauta-1036.pdf`. O teste passa por COINCIDÊNCIA
  * DE SETUP — o mesmo PDF, com o nome que a produção realmente usa, falha. É por isso que este
  * teste roda o MESMO arquivo por TRÊS nomes.

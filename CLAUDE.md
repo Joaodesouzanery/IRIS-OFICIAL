@@ -21,7 +21,7 @@ export PATH="$HOME/.nvm/versions/node/v24.17.0/bin:$PATH" \
 ```
 - `npm run type-check` = `tsc --noEmit` · `npm run test` = `vitest run` · `npm run lint` = `next lint`.
 - Testes ficam em `src/lib/server/__tests__/` (Vitest, **unit/domínio**; sem coverage tooling nem
-  testing-library). O harness `vote-certification.test.ts` (46 expectativas sobre PDFs oficiais
+  testing-library). O harness `vote-certification.test.ts` (164 expectativas sobre 16 PDFs oficiais
   reais) é o **padrão-ouro**: novas mudanças na extração devem manter esse teste verde.
 
 ## Convenções de rota de API (o que difere do genérico)

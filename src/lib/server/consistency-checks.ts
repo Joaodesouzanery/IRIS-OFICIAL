@@ -115,7 +115,7 @@ export interface Achado {
  *
  * A regra, especificada pelo usuário: deliberação sem numero_deliberacao, sem processo, sem
  * relator, sem numero_reuniao e sem itens de ata NÃO é deliberação. Uma decisão colegiada real
- * sempre carrega ao menos UM desses sinais (as 46 expectativas do gabarito confirmam).
+ * sempre carrega ao menos UM desses sinais (as 164 expectativas do gabarito confirmam).
  *
  * Só se aplica ao rótulo "deliberacao": ata/pauta/voto_individual têm regras próprias.
  */

@@ -10,7 +10,7 @@
  *    não checa — e aí "não houve unanimidade" vira voto favorável para todo mundo.
  *
  * Unificar sem medir é o erro da skill `medir-antes-de-generalizar`: cada troca de predicado
- * move itens do gabarito, e a certificação (46 expectativas) só diz "quebrou", não "quanto".
+ * move itens do gabarito, e a certificação (164 expectativas) só diz "quebrou", não "quanto".
  * Este teste diz QUANTO: roda cada implementação sobre TODOS os itens das 16 fixtures reais e
  * congela as discordâncias em `predicados-baseline.json`. Mudar um número lá exige justificar
  * item a item contra o PDF — nunca aceitar em bloco.
