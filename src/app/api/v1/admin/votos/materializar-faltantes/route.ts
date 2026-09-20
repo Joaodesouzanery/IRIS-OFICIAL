@@ -179,6 +179,17 @@ export async function POST(req: NextRequest) {
   /** Fase 20 — itens ANTERIORES ao primeiro mandato conhecido. Não é falha: é falta de registro. */
   let foraDaJanela = 0;
   /**
+   * Fase 28 — `foraDaJanelaDeMandatos` sempre devolveu DOIS motivos e esta rota descartava o
+   * motivo, incrementando um contador só. A tela então rotulava os dois como "anterior ao 1º
+   * mandato conhecido" — afirmação IMPOSSÍVEL para 2026, que é posterior a todos os primeiros
+   * mandatos (ANM 05/12/2022, ANTT 23/12/2022, ARTESP 07/10/2024). O que está ali, em boa parte,
+   * é deliberação cuja DATA a extração não achou: problema de extração exibido como fato de
+   * mandato, mandando o operador procurar num cadastro de mandatos um defeito que está no parser.
+   */
+  let foraDaJanelaAnterior = 0;
+  let foraDaJanelaSemData = 0;
+  const semDataPorAgencia: Record<string, number> = {};
+  /**
    * Fase 28 — deliberação de agência NÃO-colegiada (ou sem agência). Era contada em
    * `sem_evidencia`, e não é ausência de evidência: é fora do escopo da esteira de votos, o
    * conceito que `COLEGIADO_SIGLAS` existe para nomear. Rotular fora-de-escopo como "sem
@@ -268,6 +279,12 @@ export async function POST(req: NextRequest) {
       foraDaJanela++;
       const sigla = siglaDe(d.agencia_id);
       foraDaJanelaPorAgencia[sigla] = (foraDaJanelaPorAgencia[sigla] ?? 0) + 1;
+      if (motivoFora === "sem_data_de_reuniao") {
+        foraDaJanelaSemData++;
+        semDataPorAgencia[sigla] = (semDataPorAgencia[sigla] ?? 0) + 1;
+      } else {
+        foraDaJanelaAnterior++;
+      }
       continue;
     }
     semVoto.push(d);
@@ -525,7 +542,11 @@ export async function POST(req: NextRequest) {
     /** Escritas que FALHARAM. Zero aqui e `votos > 0` é a única leitura honesta de sucesso. */
     upsert_falhas: upsertFalhas,
     ...(upsertErros.length > 0 ? { upsert_erros: upsertErros } : {}),
+    // `fora_da_janela_de_mandatos` continua sendo a SOMA, por compatibilidade com quem já lê.
     fora_da_janela_de_mandatos: foraDaJanela,
+    fora_da_janela_anterior_ao_1o_mandato: foraDaJanelaAnterior,
+    fora_da_janela_sem_data_de_reuniao: foraDaJanelaSemData,
+    sem_data_por_agencia: semDataPorAgencia,
     /** Fase 28 — fora do ESCOPO da esteira (agência não-colegiada), que era contado em sem_evidencia. */
     fora_de_escopo: foraDeEscopo,
     fora_da_janela_por_agencia: foraDaJanelaPorAgencia,

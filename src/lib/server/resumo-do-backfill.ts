@@ -28,6 +28,9 @@ export const CHAVES_NUMERICAS_DO_MATERIALIZADOR = [
   "pendentes",
   "examinados",
   "fora_de_escopo",
+  // Fase 28 — "fora da janela" tem DOIS motivos e só um deles fala de mandato.
+  "fora_da_janela_anterior_ao_1o_mandato",
+  "fora_da_janela_sem_data_de_reuniao",
 ] as const;
 
 export interface PayloadDoMaterializador {
@@ -39,6 +42,9 @@ export interface PayloadDoMaterializador {
   upsert_falhas?: number;
   pendentes?: number;
   examinados?: number;
+  fora_da_janela_anterior_ao_1o_mandato?: number;
+  fora_da_janela_sem_data_de_reuniao?: number;
+  sem_data_por_agencia?: Record<string, number>;
   fora_de_escopo?: number;
   leitura_completa?: boolean;
   detalhe_roster?: Array<{ nao_reconhecidos?: string[] }>;
@@ -71,6 +77,8 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
     sem_evidencia: b.sem_evidencia ?? 0,
     roster_nao_conferivel: b.roster_nao_conferivel ?? 0,
     fora_da_janela: b.fora_da_janela_de_mandatos ?? 0,
+    fora_da_janela_anterior_ao_1o_mandato: b.fora_da_janela_anterior_ao_1o_mandato ?? 0,
+    fora_da_janela_sem_data_de_reuniao: b.fora_da_janela_sem_data_de_reuniao ?? 0,
     upsert_falhas: b.upsert_falhas ?? 0,
     // ⚠️ `pendentes` é ESTOQUE (ver `agregar-rodadas.ts`): a tela guarda o ÚLTIMO valor, não a
     // soma. Somá-lo por rodada produziria um número que cresce enquanto a fila encolhe.
@@ -84,6 +92,14 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
   // ⚠️ ESTOQUE não pode ter default 0. A tela ATRIBUI estoque (não soma), então um `pendentes: 0`
   // vindo de rodada que falhou — ou de um passo que nem chamou o materializador — APAGARIA da tela
   // o estoque real da rodada anterior. Só publica quem de fato mediu.
+  // A agência vai como STRING: o tipo do valor é `number | string`, e um objeto seria descartado
+  // em silêncio pelos dois consumidores — o mesmo motivo de `nao_reconhecidos` ser string.
+  const porAgencia = Object.entries(b.sem_data_por_agencia ?? {})
+    .filter(([, n]) => (n ?? 0) > 0)
+    .sort((x, y) => (y[1] ?? 0) - (x[1] ?? 0))
+    .map(([sigla, n]) => `${sigla} ${n}`)
+    .join(" · ");
+  if (porAgencia) resumo.sem_data_por_agencia = porAgencia;
   if (typeof b.pendentes === "number") resumo.pendentes = b.pendentes;
   if (typeof b.fora_de_escopo === "number") resumo.fora_de_escopo = b.fora_de_escopo;
   // Leitura truncada faz TODO número acima subcontar. String e não booleano: `registrarRodada`

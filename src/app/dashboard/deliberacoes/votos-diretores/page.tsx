@@ -467,6 +467,9 @@ export default function VotosDiretoresPage() {
       const leituraDoAcervo = typeof ultimas.backfill_votos?.leitura_do_acervo === "string"
         ? (ultimas.backfill_votos.leitura_do_acervo as string)
         : null;
+      const semDataPorAgencia = typeof ultimas.backfill_votos?.sem_data_por_agencia === "string"
+        ? (ultimas.backfill_votos.sem_data_por_agencia as string)
+        : "";
       const naoReconhecidos = typeof ultimas.backfill_votos?.nao_reconhecidos === "string"
         ? ultimas.backfill_votos.nao_reconhecidos
         : "";
@@ -522,7 +525,18 @@ export default function VotosDiretoresPage() {
             ((totais.examinados ?? 0) > 0 ? ` de ${totais.examinados} examinado(s)` : "") +
             (naoReconhecidos ? ` (não reconhecidos: ${naoReconhecidos})` : "")
           : null,
-        (totais.fora_da_janela ?? 0) > 0 ? `${totais.fora_da_janela} anterior(es) ao 1º mandato conhecido (fora do denominador)` : null,
+        // Fase 28 — a linha única virou DUAS. "Fora da janela" tem dois motivos e só um deles fala
+        // de mandato: 2026 é posterior a todos os primeiros mandatos conhecidos, então "anterior ao
+        // 1º mandato" é praticamente impossível para o acervo corrente. O que estava ali é
+        // deliberação sem data extraída — problema de EXTRAÇÃO exibido como fato de mandato.
+        (totais.fora_da_janela_anterior_ao_1o_mandato ?? 0) > 0
+          ? `${totais.fora_da_janela_anterior_ao_1o_mandato} anterior(es) ao 1º mandato conhecido (fora do denominador de votação)`
+          : null,
+        (totais.fora_da_janela_sem_data_de_reuniao ?? 0) > 0
+          ? `${totais.fora_da_janela_sem_data_de_reuniao} sem data de reunião — NÃO é fato de mandato: a extração não achou a data` +
+            (semDataPorAgencia ? ` (${semDataPorAgencia})` : "") +
+            ". O passo «redatar» é quem conserta."
+          : null,
         (totais.upsert_falhas ?? 0) > 0 ? `⚠️ ${totais.upsert_falhas} escrita(s) de voto FALHARAM` : null,
         // A regra do dispositivo está DESLIGADA e medida: esta é a linha que o usuário lê antes de
         // decidir se ela passa a valer.
