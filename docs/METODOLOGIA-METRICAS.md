@@ -310,3 +310,28 @@ Chave desconhecida cai em evento — o default é o comportamento anterior.
 
 **Leitura que interessa:** números como "74 sem evidência de voto" publicados antes desta data são
 **ocorrências por rodada**, não deliberações distintas. Não compare com os de hoje.
+
+### 8.3 A auditoria por VOTO, e o que "N de M" quer dizer (20/09/2026)
+
+A aba **Auditoria de votos** (`/dashboard/deliberacoes/auditoria-votos`) é a primeira superfície da
+plataforma cuja unidade é o VOTO, não a deliberação. Cada linha traz o PDF de origem, e é ela que
+responde "como sei que os números são confiáveis" — conferindo, não somando.
+
+**"N de M"** compara quem VOTOU naquela deliberação com quem tinha MANDATO naquela data. O roster
+usa exatamente os filtros de `getActiveDiretoresForVote` (`vote-inference.ts`), que é o motor que
+cria os votos: agência da deliberação, `fonte_dado <> 'automatico'`, `review_status = 'aprovado'`,
+bordas inclusivas, um diretor conta uma vez mesmo com dois mandatos. Usar filtros diferentes
+produziria um selo que discorda do motor.
+
+⚠️ **Sem mandato conhecido na data, a célula diz "roster desconhecido" — nunca "0 de 0, completo".**
+Reportar completude onde não se sabe nada é a mesma mentira que `janela-de-mandatos.ts` evita.
+
+**Diferença de volume entre diretores NÃO é sintoma de erro.** As causas legítimas são janela de
+mandato, ausência/impedimento (agora visível em `motivo_nao_voto`, que existia desde 24/08/2026 e
+nenhuma tela lia) e relatoria. O sintoma real é dentro da MESMA deliberação.
+
+### 8.4 O relatório de votos subcontava até 20/09/2026
+
+`relatorios/votos-diretores` lia `votos` com `.limit(20000)` **por agência**, e o PostgREST corta em
+~1.000 — teto de 3.000 dos 4.009 votos, ou seja **~25% do acervo fora do PDF/Word/CSV**. Relatórios
+gerados antes desta data subcontam; o rodapé agora declara quantos votos entraram na conta.

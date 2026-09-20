@@ -3,7 +3,108 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
-## 🔴 FASE 28 (20/set/2026) — o worker que nunca chegou, o buraco de mil linhas, os rótulos
+## 🔴 FASE 29 (20/set/2026) — a esteira que termina, e o voto auditável linha a linha
+
+**Sequência:** deploy verde → **"Rodar tudo"** → colar `docs/qa-fase29.sql` → abrir a aba
+**"Auditoria de votos"**, filtrar um diretor e conferir 3 PDFs contra o documento.
+É esse laço, e não um número, que responde "como sei que são confiáveis".
+
+### O parser não era a causa do "90s sem resposta" — e agora a causa está medida
+
+O QA da Fase 28 provou: `parser_sem_isolamento: 0`, `timeout_do_parser: 0`,
+`motivo_preservado: 0`. **Nenhum parse falhou.** O tempo sumia em três caminhos que ninguém
+cronometrava:
+
+1. **Os reapers rodavam DUAS vezes por rodada.** A esteira chama `/upload/process` no passo
+   `reaper` e de novo para extrair, e os quatro reapers rodavam INCONDICIONALMENTE antes do
+   early-return — a segunda passada saía da fatia da EXTRAÇÃO. Medido: **33 a 58 round-trips, até
+   51.000 ms de uma fatia de 53.000 ms.**
+2. **O reaper de fila era N+1 com freio nos 2 s finais.** Uma consulta por documento `queued` (com
+   os 25 da ARTESP, ~26 por passada, duas por rodada). E sair do laço com 2.001 ms deixa
+   `jobsPermitidos(2_001, 4) = 0`: a extração roda, paga o round-trip e devolve ZERO.
+3. **O download do Storage não tinha teto e ficava FORA da corrida**, com o `restanteMs` medido
+   ANTES dele — a ultrapassagem do deadline era exatamente a duração do download, acumulando por
+   onda de 4 jobs.
+
+Era um laço que se alimentava: os 25 em `queued` encareciam o reaper, e o reaper impedia a
+extração de alcançá-los. **Vazão medida: 2 jobs iniciados em 10 rodadas.**
+
+### O que mudou, e o número que cada um tem de mover
+
+| Conserto | Efeito esperado |
+|---|---|
+| Reaper 1× por rodada + religação em 2 queries | devolve 33-58 round-trips/rodada à extração |
+| Teto em todo round-trip do Supabase (10 s) | "90 s sem resposta" vira mecanicamente improvável |
+| Download com AbortSignal + corrida re-medida | ultrapassagem do deadline: ilimitada → **zero** |
+| Cerca de uma invocação por run + cliente em 110 s | fim de duas invocações sobre as mesmas linhas |
+| **Vazão** | **0,2 → 8-20 jobs por rodada** (teto do lote é 20) |
+
+⚠️ **Nenhuma constante de orçamento mudou.** `HOBBY_BUDGET_MS`, `RESERVA.*`, `TETO_FATIA.*` e
+`RESERVA_POR_JOB_MS` estão idênticos — mudou QUEM gasta a fatia, não quanto existe. Por isso
+etapa119, etapa94 e etapa140 seguiram verdes sem uma linha alterada.
+
+### A aba "Auditoria de votos" — o pedido, entregue
+
+Uma linha por VOTO: diretor · deliberação · data · resultado · tipo de voto · lido/inferido ·
+motivo de não-voto · em-autos · **"N de M"** do colegiado · PDF de origem. Filtro por diretor,
+agência, ano, tipo, origem e só-divergentes. Botão de CSV com os mesmos filtros.
+
+**A resposta a "os diretores não deveriam ter a mesma quantidade de votos?":** não, e as causas são
+legítimas — janela de mandato, ausência/impedimento, relatoria. O sintoma REAL é dentro da MESMA
+deliberação, e é o selo "N de M" que o mostra. O bloco ⑦ do QA conta quantas deliberações de 2026
+têm colegiado incompleto.
+
+⚠️ **Sem mandato cadastrado na data, a célula diz "roster desconhecido", nunca "0 de 0, completo".**
+Afirmar completude onde não se sabe nada é a mentira oposta.
+
+### E o relatório que você já usava estava subcontando
+
+`relatorios/votos-diretores` lia `votos` com `.limit(20000)` **por agência**, e o PostgREST corta em
+~1.000: o teto era 3.000 dos 4.009 votos. **~25% do acervo estava fora do PDF/Word/CSV.** Pior,
+`mandatos` era query global truncada — um diretor cujo mandato e cujos votos caíam fora sumia
+inteiro. Corrigido, e o rodapé agora DECLARA quantos votos entraram na conta.
+**Todos os totais do relatório SOBEM.**
+
+### Falso alarme encerrado
+
+Os "~300 votos fabricados" da Fase 28 **nunca existiram**. Era o cenário de falha que a revisão
+descreveu para código NÃO COMMITADO; o guard entrou no mesmo commit que introduziu a leitura.
+`git log -S 'Object.assign(d, pesadoPorId.get(d.id) ?? {})'` sobre todo o histórico devolve vazio.
+
+### Previsão minha REFUTADA pelo QA da Fase 28
+
+Eu disse que a maior parte do "fora da janela" seria `sem_data`. É o contrário: **26 anteriores ao
+1º mandato contra 18 sem data**, quase tudo na ANM (23 de 26), que tem acervo anterior a
+05/12/2022. A separação do rótulo valeu (18 estavam com o nome errado); a magnitude que previ
+estava invertida.
+
+### Fica para a Fase 30, com pré-requisito nomeado
+
+- **O materializador dizer POR QUE não gerou voto.** Você aprovou "medir primeiro": publicar
+  `sem_evidencia_por_motivo` (retirado de pauta · não-final · contestado sem nome · nome não casou
+  · sem diretores), sem mexer nos contadores. Fica porque o Bloco A precisa ser confirmado antes.
+- **`votos_a_menos` / `itens_que_mudariam` são PARCIAIS somados como EVENTO** em
+  `agregar-rodadas.ts` — os "96 votos evitados em 28 itens" estão inflados ~3,5×. E
+  `itens_que_mudariam ≡ regex_divergente + regex_falso_positivo` por construção: o banner enuncia
+  o mesmo conjunto duas vezes como dois achados.
+- **`dashboard/diretores/[id]/votos:28` usa `referencedTable`**, que o postgrest-js documenta como
+  NÃO ordenando a tabela pai: aquele drill-down devolve 50 votos arbitrários achando que são os 50
+  mais recentes. Bug vivo, commit próprio.
+- **`deliberacoes/page.tsx:252` usa `window.location.href` para `/api/v1/`** — o middleware exige
+  Bearer, então o "Exportar CSV" de Deliberações devolve erro de login hoje.
+- **`relatorios/votos-diretores` não chama `requireAdmin`** apesar de o docstring dizer isso (a
+  prosa foi corrigida; o gate não, porque mudar autorização não entra de carona).
+- **`deliberacoes/export:104` tem `.limit(5000)`** — mesma família do defeito acima.
+- **`cobertura-documentos`** (6 leituras truncadas) e o **arquivo de atas da ANM no denominador**,
+  ambos da Fase 28, seguem esperando medição.
+
+### Segue esperando VOCÊ
+
+- Conferir as "5 ao acaso" e agora também a aba nova contra os PDFs.
+- Data de posse real do Severino Medeiros Ramos Neto (DOU).
+- Decisão sobre os 45 votos escaneados da ANTT.
+
+## 🟠 FASE 28 (20/set/2026) — o worker que nunca chegou, o buraco de mil linhas, os rótulos
 
 **⚠️ ORDEM IMPOSTA: o BLOCO A é confirmado ANTES de qualquer coisa.**
 Deploy verde → **"Rodar tudo"** → conferir três pontos, nesta ordem:
