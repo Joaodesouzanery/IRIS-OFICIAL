@@ -58,10 +58,14 @@ describe("etapa80 · (b) o guard anti-ping-pong exige aprovação TENTADA", () =
 describe("etapa80 · (c) o cliente encerra a run ao parar", () => {
   it("a rota tem o ramo `encerrar`, idempotente e ANTES de iniciar run nova", () => {
     const codigo = semComentarios(RUN);
+    // ⚠️ Fase 30 — `iniciarRun(db, origem)` deixou de ser chamada da rota: ela virou dependência
+    // de `abrirOuReivindicarRodada`, que é quem abre a run agora. A PROPRIEDADE é a mesma —
+    // encerrar tem de vir ANTES de qualquer abertura, senão o clique de encerrar abriria uma run.
     const iEncerrar = codigo.indexOf("if (corpo.encerrar && corpo.run_id)");
-    const iIniciar = codigo.indexOf("iniciarRun(db, origem)");
+    const iAbrir = codigo.indexOf("await abrirOuReivindicarRodada(");
     expect(iEncerrar).toBeGreaterThan(-1);
-    expect(iEncerrar).toBeLessThan(iIniciar);
+    expect(iAbrir, "abertura da run não encontrada").toBeGreaterThan(-1);
+    expect(iEncerrar).toBeLessThan(iAbrir);
     expect(codigo).toMatch(/fecharRun\(db, corpo\.run_id, "concluido"/);
   });
 

@@ -18,6 +18,7 @@
  */
 
 import { ORDEM_DOS_PASSOS } from "@/lib/server/esteira-reservas";
+import { CHAVE_RODADAS_CONCLUIDAS } from "@/lib/server/cerca-da-run";
 
 type Db = {
   from: (t: string) => any;
@@ -186,7 +187,24 @@ export async function iniciarRun(db: Db, origem: "ui" | "cron"): Promise<Esteira
  * Devolve o novo valor de `rodadas` quando ganhou, e `null` quando outra invocação já consumiu
  * esse token — aí quem chama responde 409. Ver `cerca-da-run.ts` para o porquê.
  */
-export async function reivindicarRodada(db: Db, runId: string, token: number): Promise<number | null> {
+export type ResultadoDaReivindicacao =
+  | { tipo: "ganhou"; rodadas: number }
+  /** 0 linhas afetadas: o token não era o da vez, ou a run não está mais `running`. */
+  | { tipo: "perdeu" }
+  /** O UPDATE errou ou lançou. NÃO é concorrência — quem chama responde 503, não 409. */
+  | { tipo: "indisponivel"; detalhe: string };
+
+/**
+ * ⚠️ Fase 30 — os três desfechos, onde antes havia `null` para tudo.
+ *
+ * `if (error || !data) return null` fundia "perdi o compare-and-set" com "o Supabase recusou o
+ * UPDATE". Um erro transitório de banco era reportado ao operador como "outra invocação em
+ * andamento" — diagnóstico errado, e o cliente tratava como concorrência e esperava.
+ *
+ * ⚠️ E o degrade sem migration NÃO passa por aqui: sem a tabela, `buscarRunAtiva` e `iniciarRun`
+ * já devolveram `null` e o bloco inteiro foi pulado. Logo erro neste ponto é erro de verdade.
+ */
+export async function reivindicarRodada(db: Db, runId: string, token: number): Promise<ResultadoDaReivindicacao> {
   try {
     const { data, error } = await db
       .from("esteira_runs")
@@ -196,19 +214,37 @@ export async function reivindicarRodada(db: Db, runId: string, token: number): P
       .eq("rodadas", token)
       .select("rodadas")
       .maybeSingle();
-    if (error || !data) return null;
-    return Number((data as { rodadas: number }).rodadas);
+    if (error) return { tipo: "indisponivel", detalhe: String(error.message ?? error) };
+    if (!data) return { tipo: "perdeu" };
+    return { tipo: "ganhou", rodadas: Number((data as { rodadas: number }).rodadas) };
+  } catch (err) {
+    return { tipo: "indisponivel", detalhe: err instanceof Error ? err.message : String(err) };
+  }
+}
+
+/** Relê a linha da run por id — usado SÓ no caminho de falha, para o 409 dizer a verdade. */
+export async function relerRun(db: Db, runId: string): Promise<EsteiraRun | null> {
+  try {
+    const { data, error } = await db.from("esteira_runs").select("*").eq("id", runId).maybeSingle();
+    if (error) return null;
+    return (data as EsteiraRun | null) ?? null;
   } catch {
-    // Tabela ausente: degrada para "sem cerca", como o resto do arquivo.
     return null;
   }
 }
 
-/** Soma os contadores desta rodada aos da execução e registra o avanço. */
+/**
+ * Soma os contadores desta rodada aos da execução e registra o avanço.
+ *
+ * `rodadaConcluida` é o índice que ESTA invocação reivindicou — o valor que `reivindicarRodada`
+ * gravou em `rodadas`. É PARÂMETRO, e não `run.rodadas + 1`, porque `run` é o retrato lido ANTES
+ * do claim: derivá-lo aqui amarraria a lease a uma precondição invisível na chamada.
+ */
 export async function registrarRodada(
   db: Db,
   run: EsteiraRun,
   etapas: Record<string, Record<string, unknown>>,
+  rodadaConcluida: number,
 ): Promise<EsteiraRun | null> {
   const { ok, erro } = contarPassos(etapas);
   const contadores: Record<string, number> = { ...(run.contadores ?? {}) };
@@ -217,6 +253,12 @@ export async function registrarRodada(
       if (typeof v === "number") contadores[k] = (contadores[k] ?? 0) + v;
     }
   }
+  // ⚠️ Fase 30 — A LEASE. `rodadas` conta REIVINDICADAS (sobe no claim); esta chave conta as que
+  // de fato gravaram. `rodadas > rodadas_concluidas` é a ÚNICA coisa no sistema capaz de dizer
+  // "há uma rodada no ar" — sem ela, deixar o cliente adotar o token novo reabre o roubo um
+  // round-trip depois. Mora em `contadores` (jsonb, já escrito neste mesmo UPDATE): sem migration.
+  // Nenhuma etapa emite esta chave, então a soma acima nunca colide com ela.
+  contadores[CHAVE_RODADAS_CONCLUIDAS] = rodadaConcluida;
   try {
     const { data, error } = await db
       .from("esteira_runs")

@@ -18,7 +18,7 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "fs";
 import { join } from "path";
-import { resultadoDoClaim, MOTIVO_OCUPADA } from "@/lib/server/cerca-da-run";
+import { mensagemDoVeredito, statusDoVeredito, tokenEhDaVez, type VereditoDaCerca } from "@/lib/server/cerca-da-run";
 import { timeoutDaRota } from "@/lib/api";
 
 const RAIZ = join(__dirname, "../../../..");
@@ -26,19 +26,52 @@ const ler = (p: string) => readFileSync(join(RAIZ, p), "utf-8");
 
 describe("etapa155 · o veredito da cerca", () => {
   it.each([
-    ["token igual ao banco — é a vez desta invocação", 7, 7, "reivindicada"],
-    ["token já consumido (o caso do abort)", 8, 7, "ocupada"],
-    ["token à frente do banco — não existe", 7, 9, "ocupada"],
-    ["sem tabela de execuções: degrada, roda como antes", null, 3, "sem_lock"],
-    ["sem token: degrada", 3, null, "sem_lock"],
-  ] as Array<[string, number | null, number | null, string]>)(
+    ["token igual ao banco — é a vez desta invocação", 7, 7, true],
+    ["token já consumido (o caso do abort)", 8, 7, false],
+    ["token à frente do banco — não existe", 7, 9, false],
+    ["sem tabela de execuções: não há token da vez", null, 3, false],
+    ["sem token: não há token da vez", 3, null, false],
+  ] as Array<[string, number | null, number | null, boolean]>)(
     "%s", (_nome, rodadasNoBanco, token, esperado) => {
-      expect(resultadoDoClaim({ rodadasNoBanco, token })).toBe(esperado);
+      expect(tokenEhDaVez({ rodadasNoBanco, token })).toBe(esperado);
     },
   );
 
+  // ⚠️ Fase 30 — onde havia UM desfecho ("ocupada") há quatro, porque eles pedem ações
+  // DIFERENTES do cliente. Fundir erro de banco com concorrência fazia o operador ler
+  // "outra invocação em andamento" quando o Supabase é que tinha recusado o UPDATE.
+  it.each([
+    ["reivindicada", 200],
+    ["sem_lock", 200],
+    ["run_alheia", 409],
+    ["token_ausente", 409],
+    ["token_vencido", 409],
+    ["rodada_em_voo", 409],
+    ["run_encerrada", 409],
+    ["banco_indisponivel", 503],
+  ] as Array<[VereditoDaCerca["tipo"], number]>)("%s → HTTP %i", (tipo, esperado) => {
+    expect(statusDoVeredito({ tipo, detalhe: "x", runId: "r", rodadas: 1, token: 1 } as VereditoDaCerca)).toBe(esperado);
+  });
+
   it("o 409 diz o que aconteceu — «erro» sem causa manda o operador adivinhar", () => {
-    expect(MOTIVO_OCUPADA).toMatch(/Outra invocação desta execução/);
+    expect(mensagemDoVeredito({ tipo: "rodada_em_voo", runId: "r", rodadas: 3 })).toMatch(
+      /Outra invocação desta execução/,
+    );
+    // Cada caso tem de ter mensagem PRÓPRIA: quatro desfechos com um texto só é o mesmo que um.
+    const casos: VereditoDaCerca[] = [
+      { tipo: "run_alheia", runId: "r", rodadas: 1 },
+      { tipo: "token_ausente", runId: "r", rodadas: 1 },
+      { tipo: "token_vencido", runId: "r", rodadas: 1 },
+      { tipo: "rodada_em_voo", runId: "r", rodadas: 1 },
+      { tipo: "run_encerrada", runId: "r" },
+      { tipo: "banco_indisponivel", detalhe: "conexão recusada" },
+    ];
+    const textos = casos.map(mensagemDoVeredito);
+    expect(textos.every((t) => t.length > 0)).toBe(true);
+    expect(new Set(textos).size).toBe(casos.length);
+    expect(mensagemDoVeredito({ tipo: "banco_indisponivel", detalhe: "conexão recusada" })).toContain(
+      "conexão recusada",
+    );
   });
 });
 
@@ -60,11 +93,11 @@ describe("etapa155 · a cerca é um compare-and-set, e só ela incrementa o toke
     expect(registrar).toMatch(/NÃO é incrementado aqui/);
   });
 
-  it("a rota reivindica ANTES de trabalhar, e devolve 409 quando perde", () => {
-    expect(ROTA).toMatch(/rodadaReivindicada = await reivindicarRodada\(db, execucao\.id, tokenDaRodada\)/);
-    expect(ROTA).toMatch(/MOTIVO_OCUPADA[\s\S]{0,140}?status: 409/);
+  it("a rota reivindica ANTES de trabalhar, e devolve o status do veredito quando perde", () => {
+    expect(ROTA).toMatch(/await abrirOuReivindicarRodada\(/);
+    expect(ROTA).toMatch(/mensagemDoVeredito\(veredito\)[\s\S]{0,400}?statusDoVeredito\(veredito\)/);
     // O claim vem antes do planejamento da rodada: reivindicar depois de trabalhar não serve.
-    const iClaim = ROTA.indexOf("reivindicarRodada(db, execucao.id");
+    const iClaim = ROTA.indexOf("await abrirOuReivindicarRodada(");
     const iPlano = ROTA.indexOf("const { passos: planoDaRodada, protecao } = planejarRodada(");
     expect(iClaim).toBeGreaterThan(-1);
     expect(iPlano).toBeGreaterThan(iClaim);

@@ -42,6 +42,7 @@ import {
   buscarRunAtiva,
   deveContinuar,
   reivindicarRodada,
+  relerRun,
   deveAbrirDisjuntor,
   fecharRun,
   iniciarRun,
@@ -65,7 +66,11 @@ import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
 import { POST as mandatosRecalcularPOST } from "../../mandatos/recalcular/route";
 import { POST as divergenciaPOST } from "../../votos/recalcular-divergencia/route";
-import { resultadoDoClaim, MOTIVO_OCUPADA } from "@/lib/server/cerca-da-run";
+import {
+  abrirOuReivindicarRodada,
+  mensagemDoVeredito,
+  statusDoVeredito,
+} from "@/lib/server/cerca-da-run";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -223,37 +228,35 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     return NextResponse.json({ encerrado: true, run_id: corpo.run_id });
   }
 
-  const ativa = await buscarRunAtiva(db);
-  if (ativa && corpo.run_id && ativa.id !== corpo.run_id) {
-    // Outra execução está viva: recusar é melhor do que duas esteiras sobre as mesmas linhas.
+  // ═══ Fase 30 — A PORTA, O TOKEN E A LEASE ═══════════════════════════════════
+  // O guard de antes comparava IDs e só disparava quando o chamador MANDAVA um `run_id` diferente.
+  // Com o corpo vazio — toda aba nova, e o cron por ser GET — ele era falso, e a linha seguinte
+  // (`execucao = ativa ?? iniciarRun`) fazia a invocação ADOTAR a run alheia. Pior: sem
+  // `rodadas_vistas`, o token vinha do valor corrente do banco e VENCIA o compare-and-set.
+  // Em produção isso derrubou uma run com 32 passos ok e zero erros, a 42,8 s por rodada.
+  // A decisão inteira (porta, token, lease, erro de banco) mora em `cerca-da-run.ts`, testável.
+  const { veredito, execucao: execucaoDaCerca } = await abrirOuReivindicarRodada(
+    db,
+    { buscarRunAtiva, iniciarRun, reivindicarRodada, relerRun },
+    { origem, runId: corpo.run_id, rodadasVistas: corpo.rodadas_vistas },
+  );
+  if (veredito.tipo !== "reivindicada" && veredito.tipo !== "sem_lock") {
     return NextResponse.json(
-      { error: "Já existe uma execução da esteira em andamento.", run_id: ativa.id, rodadas: ativa.rodadas },
-      { status: 409 },
+      {
+        error: mensagemDoVeredito(veredito),
+        // O CÓDIGO é o que permite ao cliente agir diferente em cada caso, em vez de tratar todo
+        // 409 como falha genérica. Ver `cerca-do-cliente.ts`.
+        codigo: veredito.tipo,
+        ...("runId" in veredito ? { run_id: veredito.runId } : {}),
+        ...("rodadas" in veredito ? { rodadas: veredito.rodadas } : {}),
+      },
+      { status: statusDoVeredito(veredito) },
     );
   }
-  let execucao = ativa ?? (await iniciarRun(db, origem));
+  let execucao = execucaoDaCerca;
+  const rodadaReivindicada = veredito.tipo === "reivindicada" ? veredito.token + 1 : null;
+  const tokenDaRodada = veredito.tipo === "reivindicada" ? veredito.token : null;
 
-  // ═══ Fase 29 — UMA invocação por execução, por vez ═══════════════════════════
-  // O guard acima compara IDs, e quando o cliente aborta aos 90s ele re-dispara com o MESMO
-  // `run_id`: os ids batem, o 409 não sai, e duas invocações trabalham sobre as mesmas linhas.
-  // A cerca usa `esteira_runs.rodadas` como token (a coluna já existe — sem migration): só passa
-  // quem apresentar o token que o banco ainda não consumiu. Ver `cerca-da-run.ts`.
-  const tokenDaRodada = typeof corpo.rodadas_vistas === "number"
-    ? corpo.rodadas_vistas
-    : execucao?.rodadas ?? null;
-  let rodadaReivindicada: number | null = null;
-  if (execucao && tokenDaRodada !== null) {
-    rodadaReivindicada = await reivindicarRodada(db, execucao.id, tokenDaRodada);
-    if (
-      resultadoDoClaim({ rodadasNoBanco: execucao.rodadas ?? null, token: tokenDaRodada }) === "ocupada" ||
-      rodadaReivindicada === null
-    ) {
-      return NextResponse.json(
-        { error: MOTIVO_OCUPADA, run_id: execucao.id, rodadas: execucao.rodadas },
-        { status: 409 },
-      );
-    }
-  }
   /** O índice desta rodada — o token que ESTA invocação possui. */
   const rodadaAtual = tokenDaRodada ?? 0;
 
@@ -767,7 +770,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // execução PARA e diz por quê.
   let abortadoPeloDisjuntor = false;
   if (execucao) {
-    execucao = (await registrarRodada(db, execucao, etapas)) ?? execucao;
+    execucao = (await registrarRodada(db, execucao, etapas, rodadaReivindicada ?? 0)) ?? execucao;
     if (deveAbrirDisjuntor(execucao.passos_ok, execucao.passos_erro)) {
       abortadoPeloDisjuntor = true;
       restantes = false; // não peça outra rodada: o problema não é falta de tempo

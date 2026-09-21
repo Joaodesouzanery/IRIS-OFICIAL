@@ -90,22 +90,33 @@ describe("etapa68 · execução órfã não trava a esteira para sempre", () => 
     // Comparar por `indexOf` do NOME casaria com o bloco de imports (ordenado alfabeticamente),
     // não com a ordem de execução — foi assim que a primeira versão deste teste reprovou código
     // correto. O que importa são as CHAMADAS.
+    // ⚠️ Fase 30 — a busca da run ativa deixou de ser uma chamada da rota: ela virou dependência
+    // de `abrirOuReivindicarRodada`, que é a chamada a ancorar agora. A PROPRIEDADE é a mesma —
+    // a órfã tem de ser reapada antes de qualquer decisão sobre a run ativa.
     const iReaper = PIPELINE.indexOf("await reaparRunsOrfas(db)");
-    const iBusca = PIPELINE.indexOf("await buscarRunAtiva(db)");
+    const iCerca = PIPELINE.indexOf("await abrirOuReivindicarRodada(");
     expect(iReaper, "chamada do reaper não encontrada").toBeGreaterThan(-1);
-    expect(iBusca, "chamada da busca não encontrada").toBeGreaterThan(-1);
-    expect(iReaper, "reapar depois de buscar deixaria a órfã travando o lock").toBeLessThan(iBusca);
+    expect(iCerca, "chamada da cerca não encontrada").toBeGreaterThan(-1);
+    expect(iReaper, "reapar depois de decidir deixaria a órfã travando o lock").toBeLessThan(iCerca);
   });
 });
 
 describe("etapa68 · o lock impede duas esteiras sobre as mesmas linhas", () => {
+  // ⚠️ Fase 30 — este bloco GRAVAVA O BUG como requisito. A forma exigida,
+  // `ativa && corpo.run_id && ativa.id !== corpo.run_id`, só dispara quando o chamador MANDA um
+  // run_id divergente; com corpo vazio — toda aba nova, e o cron por ser GET — ela é falsa, e a
+  // linha seguinte adotava a run alheia. A PROPRIEDADE ("execução conflitante recebe 409 e não
+  // roda em paralelo") fica; a forma sai, e quem a prova por comportamento é a etapa159.
   it("execução conflitante recebe 409, não roda em paralelo", () => {
-    expect(PIPELINE).toMatch(/ativa && corpo\.run_id && ativa\.id !== corpo\.run_id/);
-    expect(PIPELINE).toMatch(/status: 409/);
+    expect(PIPELINE).toMatch(/abrirOuReivindicarRodada\(/);
+    expect(PIPELINE).toMatch(/statusDoVeredito\(veredito\)/);
+    // A forma antiga não pode voltar: ela é o buraco, não a cerca.
+    expect(PIPELINE).not.toMatch(/ativa && corpo\.run_id && ativa\.id !== corpo\.run_id/);
+    expect(PIPELINE).not.toMatch(/execucao = ativa \?\? \(await iniciarRun/);
   });
 
   it("o 409 devolve o run_id ativo — a aba pode PASSAR a acompanhar aquela execução", () => {
-    expect(PIPELINE).toMatch(/run_id: ativa\.id/);
+    expect(PIPELINE).toMatch(/run_id: veredito\.runId/);
   });
 });
 
@@ -122,7 +133,7 @@ describe("etapa68 · GET deixou de executar a esteira", () => {
 
 describe("etapa68 · o disjuntor está ligado na rodada", () => {
   it("a rodada é registrada e a taxa avaliada", () => {
-    expect(PIPELINE).toMatch(/registrarRodada\(db, execucao, etapas\)/);
+    expect(PIPELINE).toMatch(/registrarRodada\(db, execucao, etapas, rodadaReivindicada/);
     expect(PIPELINE).toMatch(/deveAbrirDisjuntor\(execucao\.passos_ok, execucao\.passos_erro\)/);
   });
 
