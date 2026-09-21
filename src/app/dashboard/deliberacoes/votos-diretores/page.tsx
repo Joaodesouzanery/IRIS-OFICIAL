@@ -38,6 +38,7 @@ import {
   X,
 } from "lucide-react";
 import { agregarEtapas } from "@/lib/server/agregar-rodadas";
+import { decidirAposCerca } from "@/lib/server/cerca-do-cliente";
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
 
@@ -393,7 +394,10 @@ export default function VotosDiretoresPage() {
       let falhasSeguidas = 0;
       /** O token da cerca da run — vem da resposta e volta no corpo da chamada seguinte. */
       let rodadasVistas: number | null = null;
-      let tentativasDeCerca = 0;
+      // Fase 30 — os dois contadores da cerca, SEPARADOS: esperar é caro em tempo e barato em
+      // requisições; adotar é o inverso. Um só faria a adoção consumir uma espera.
+      let esperasDaCerca = 0;
+      let adocoesDaCerca = 0;
       // Fase 7 — o desfecho da esteira deixa de ser inventado pelo banner. Antes, 40 rodadas com
       // HTTP 500 terminavam em banner VERDE de "concluída" com totais zerados: o catch por rodada
       // engolia tudo e `onError` era inalcançável (a mutation nunca rejeitava). Agora o motivo
@@ -405,7 +409,12 @@ export default function VotosDiretoresPage() {
       // Fase 7 — o `run_id` amarra as rodadas a UMA execução no servidor. É ele que faz "fechar a
       // aba" deixar de perder o acompanhamento (ao reabrir, a tela retoma este id) e que impede
       // duas abas de rodarem a esteira sobre as mesmas linhas: a segunda recebe 409.
-      let runId: string | null = runIdAtivo;
+      // ⚠️ Fase 30 — A METADE-CLIENTE DA PORTA. `runIdAtivo` é `useState(null)` e nunca foi
+      // semeado do `/pipeline/status`: TODA aba nova mandava corpo vazio. Com o servidor adotando
+      // por omissão (até o commit anterior), isso era roubo de run; com a porta fechada, seria
+      // 409 e o usuário sem como retomar. O status já traz `id` e `rodadas` — é só usá-los.
+      let runId: string | null = runIdAtivo ?? esteiraStatus?.run?.id ?? null;
+      if (!runIdAtivo && esteiraStatus?.run) rodadasVistas = esteiraStatus.run.rodadas;
       // Fase 14 — TRAVA DE RELÓGIO no lugar do contador (o resto da Fase 11 que nunca subiu).
       // 40 rodadas era um número arbitrário que não sabia se o trabalho acabou: com fila grande
       // parava cedo demais ("parou no teto — ainda há fila", a tela real de 31/08), e com fila
@@ -414,10 +423,12 @@ export default function VotosDiretoresPage() {
       // anti-laço-infinito (o relógio dispara muito antes).
       const inicioLaco = Date.now();
       const TETO_LACO_MS = 25 * 60_000;
-      for (let rodada = 1; rodada <= 300; rodada++) {
-        rodadasFeitas = rodada;
+      // ⚠️ Fase 30 — o `for` conta TENTATIVAS e é monotônico; `rodadasFeitas` conta rodadas que
+      // ACONTECERAM. Antes eram a mesma variável, e o `rodada--` do ramo do 409 anulava o
+      // `rodada++`: o teto de 300 deixava de ser teto, e o banner contava tentativas como rodadas.
+      for (let tentativa = 1; tentativa <= 300; tentativa++) {
         if (Date.now() - inicioLaco > TETO_LACO_MS) { desfecho = "teto"; break; }
-        setRodarTudoProgresso(`Rodada ${rodada} · aprovação → métricas → coleta/extração…`);
+        setRodarTudoProgresso(`Rodada ${rodadasFeitas + 1} · aprovação → métricas → coleta/extração…`);
         const corpoDaRodada: Record<string, unknown> = {
           ...(runId ? { run_id: runId } : {}),
           ...(rodadasVistas !== null ? { rodadas_vistas: rodadasVistas } : {}),
@@ -435,6 +446,12 @@ export default function VotosDiretoresPage() {
             // guard de id não via diferença e duas invocações escreviam nas mesmas linhas.
           }>("/pipeline/run", corpoDaRodada);
           falhasSeguidas = 0;
+          // ⚠️ Fase 30 — o crédito da cerca era VITALÍCIO: `tentativasDeCerca` só zerava num
+          // HTTP 500, então uma rodada boa não o limpava e três 409 espalhados por 20 minutos
+          // fechavam a esteira. Ele zera onde `falhasSeguidas` zera: no sucesso.
+          esperasDaCerca = 0;
+          adocoesDaCerca = 0;
+          rodadasFeitas++;
           rodadasVistas = typeof res.rodadas === "number" ? res.rodadas : rodadasVistas;
           runId = res.run_id ?? runId;
           setRunIdAtivo(runId);
@@ -456,14 +473,39 @@ export default function VotosDiretoresPage() {
           // o servidor continuou executando). Contar como erro fecharia a esteira justamente
           // quando ela está trabalhando.
           if (err instanceof ApiError && err.status === 409) {
-            tentativasDeCerca++;
-            if (tentativasDeCerca >= 3) { desfecho = "erros"; ultimoErro = err.message; break; }
-            setRodarTudoProgresso(`Rodada ${rodada} · aguardando a rodada anterior terminar…`);
-            await new Promise((r) => setTimeout(r, 10_000));
-            rodada--; // esta rodada não aconteceu: não consome o laço
-            continue;
+            // Fase 30 — cada 409 pede uma ação DIFERENTE, e o servidor agora diz qual é o caso
+            // (`codigo`). Antes o laço repetia o MESMO token, que é monotônico e por isso nunca
+            // mais bateria: o retry era estruturalmente inútil. A decisão é pura e testável.
+            const acao = decidirAposCerca({
+              status: err.status,
+              codigo: err.body.codigo,
+              runId: err.body.run_id,
+              rodadas: err.body.rodadas,
+              esperasFeitas: esperasDaCerca,
+              adocoesFeitas: adocoesDaCerca,
+            });
+            if (acao.tipo === "repetir") {
+              if (acao.adotar) {
+                adocoesDaCerca++;
+                runId = acao.adotar.runId;
+                rodadasVistas = acao.adotar.rodadasVistas;
+                setRunIdAtivo(runId);
+              } else {
+                esperasDaCerca++;
+              }
+              setRodarTudoProgresso(`Rodada ${rodadasFeitas + 1} · ${acao.motivo}…`);
+              if (acao.esperaMs > 0) await new Promise((r) => setTimeout(r, acao.esperaMs));
+              continue; // a rodada não aconteceu: `rodadasFeitas` não sobe, mas a tentativa conta
+            }
+            if (acao.tipo === "desistir") {
+              desfecho = "erros";
+              ultimoErro = `${acao.motivo} — ${err.message}`;
+              break;
+            }
+            // `falha_real`: segue para o caminho comum abaixo e conta como falha de verdade.
           }
-          tentativasDeCerca = 0;
+          esperasDaCerca = 0;
+          adocoesDaCerca = 0;
           falhasSeguidas++;
           rodadasComErro++;
           ultimoErro = err instanceof Error ? err.message : "erro desconhecido na rodada";

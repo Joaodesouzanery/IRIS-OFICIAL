@@ -154,16 +154,22 @@ describe("etapa155 · 409 não é falha — é a cerca trabalhando", () => {
     // ⚠️ Ancorar no laço DA ESTEIRA: o arquivo tem outros `catch (err)`, e pegar o primeiro
     // mediria outro bloco.
     const inicio = TELA.indexOf("const corpoDaRodada");
-    const captura = TELA.slice(inicio, inicio + 3_000);
+    const captura = TELA.slice(inicio, inicio + 4_500);
     expect(inicio, "laço da esteira não encontrado").toBeGreaterThan(-1);
     expect(captura).toMatch(/err instanceof ApiError && err\.status === 409/);
     const i409 = captura.indexOf("err.status === 409");
     const iFalhas = captura.indexOf("falhasSeguidas++");
     expect(i409).toBeLessThan(iFalhas); // o ramo do 409 sai antes de contar falha
-    expect(captura).toMatch(/rodada--;/); // a rodada que não aconteceu não consome o laço
+    // ⚠️ Fase 30 — `rodada--` MORREU. Ele anulava o `rodada++` do `for`, e o teto de 300 deixava
+    // de ser teto: uma cerca insistente podia girar para sempre. Agora o `for` conta TENTATIVAS
+    // e `rodadasFeitas` conta rodadas — a mesma propriedade, sem o laço infinito.
+    expect(captura).toMatch(/continue; \/\/ a rodada não aconteceu/);
   });
 
-  it("…mas não insiste para sempre: três 409 seguidos param com motivo", () => {
-    expect(TELA).toMatch(/tentativasDeCerca >= 3/);
+  it("…mas não insiste para sempre: as esperas se esgotam e o laço para com motivo", () => {
+    // A forma, a aritmética e os dois contadores vivem na etapa160; aqui fica só o elo: o laço
+    // delega a decisão e respeita o `desistir`.
+    expect(TELA).toMatch(/decidirAposCerca\(\{/);
+    expect(TELA).toMatch(/acao\.tipo === "desistir"/);
   });
 });

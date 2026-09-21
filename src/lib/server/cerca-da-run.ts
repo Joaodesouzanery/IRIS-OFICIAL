@@ -156,6 +156,28 @@ export async function abrirOuReivindicarRodada(
     };
   }
 
+  // ⚠️ R2.5 — A LEASE É CHECADA ANTES DO CAS, e não só relatada no corpo do 409.
+  //
+  // Descoberto ao desenhar o cliente do Commit 3: sem esta linha, o token que o 409 devolve é um
+  // convite ao roubo. Rodada 7 no ar significa `rodadas = 7` e `rodadas_concluidas = 6`; quem
+  // adotasse o 7 VENCERIA o compare-and-set (o UPDATE só compara `rodadas`) e reivindicaria a 8
+  // por cima de uma rodada em execução — exatamente o que a Fase 30 existe para impedir, só que
+  // agora com a bênção do servidor.
+  //
+  // É também o diagnóstico honesto do abort do PRÓPRIO cliente: ele volta com o token certo, a
+  // rodada anterior ainda está rodando no servidor, e antes disso ele lia "token vencido".
+  //
+  // ⚠️ Custo conhecido: uma rodada que morra sem gravar (SIGKILL, ou `registrarRodada` falhando —
+  // Commit 4) deixa a lease atrasada e trava a run em `rodada_em_voo` até o reaper de órfãs, 3
+  // min. É o lado certo do erro: afirmar "não há ninguém rodando" sem base é o que custou a run
+  // `72b4534a`.
+  if (rodadaEmVoo(execucao)) {
+    return {
+      veredito: { tipo: "rodada_em_voo", runId: String(execucao.id), rodadas: Number(execucao.rodadas ?? 0) },
+      execucao,
+    };
+  }
+
   const r = await deps.reivindicarRodada(db, String(execucao.id), token);
   if (r.tipo === "ganhou") return { veredito: { tipo: "reivindicada", token }, execucao };
   if (r.tipo === "indisponivel") {

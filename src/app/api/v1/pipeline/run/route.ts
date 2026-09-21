@@ -69,6 +69,7 @@ import { POST as divergenciaPOST } from "../../votos/recalcular-divergencia/rout
 import {
   abrirOuReivindicarRodada,
   mensagemDoVeredito,
+  rodadaEmVoo,
   statusDoVeredito,
 } from "@/lib/server/cerca-da-run";
 
@@ -221,11 +222,42 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // Fase 12 — ENCERRAR explicitamente. Quando o laço do cliente parava (teto de rodadas ou 2
   // falhas seguidas), ele só limpava o estado LOCAL: a run ficava `running` por 3 minutos até o
   // reaper de órfãs a marcar como erro — daí os dois banners contraditórios ("rodando agora" +
-  // "parou no teto") e uma run fantasma com status errado a cada clique. Fechar uma run já
-  // fechada é no-op (o UPDATE filtra por status), então o ramo é idempotente.
+  // "parou no teto") e uma run fantasma com status errado a cada clique.
+  //
+  // ⚠️ Fase 30 — este ramo PULAVA A CERCA e tinha dois furos, ambos medidos no código:
+  //
+  // 1. Não conferia se o `run_id` é a run ATIVA. Uma aba parando no teto fechava a run de OUTRA
+  //    aba; essa outra tomava 409 na rodada seguinte, e o clique seguinte abria uma run NOVA com
+  //    a antiga ainda executando — as duas invocações concorrentes que a cerca existe para
+  //    impedir, entrando pela porta dos fundos.
+  // 2. O comentário garantia que "o UPDATE filtra por status" e isso era FALSO (`fecharRun`
+  //    filtrava só por id), então um `abortado` do disjuntor virava `concluido` e o motivo real
+  //    da parada sumia da tela.
+  //
+  // TOKEN NÃO SE EXIGE AQUI, de propósito: o `encerrar` dispara exatamente quando o token do
+  // cliente está vencido (ele parou por erro ou teto). Exigi-lo o faria falhar justo quando é
+  // necessário. O dono da RUN basta.
   if (corpo.encerrar && corpo.run_id) {
-    await fecharRun(db, corpo.run_id, "concluido", corpo.motivo ?? "encerrado pelo cliente");
-    return NextResponse.json({ encerrado: true, run_id: corpo.run_id });
+    const alvo = await buscarRunAtiva(db);
+    if (!alvo || String(alvo.id) !== corpo.run_id) {
+      return NextResponse.json({
+        encerrado: false,
+        run_id: corpo.run_id,
+        motivo: "não é a execução ativa — nada a encerrar",
+      });
+    }
+    // Rodada NO AR: fechar aqui deixaria a invocação em execução escrevendo numa run `concluido`,
+    // e o reaper de órfãs cobre o caso em 3 min se ela de fato tiver morrido.
+    if (rodadaEmVoo(alvo)) {
+      return NextResponse.json({
+        encerrado: false,
+        em_voo: true,
+        run_id: corpo.run_id,
+        rodadas: Number(alvo.rodadas ?? 0),
+      });
+    }
+    const encerrado = await fecharRun(db, corpo.run_id, "concluido", corpo.motivo ?? "encerrado pelo cliente");
+    return NextResponse.json({ encerrado, run_id: corpo.run_id });
   }
 
   // ═══ Fase 30 — A PORTA, O TOKEN E A LEASE ═══════════════════════════════════

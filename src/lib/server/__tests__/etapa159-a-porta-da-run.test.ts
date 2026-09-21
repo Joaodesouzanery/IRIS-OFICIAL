@@ -48,6 +48,7 @@ function bancoFalso(linhas: Linha[]) {
   let proximoId = 1;
   const chamadas = { iniciarRun: 0, reivindicarRodada: 0, relerRun: 0 };
   let indisponivel: string | null = null;
+  let interferir: (() => void) | null = null;
 
   const deps = {
     buscarRunAtiva: async (): Promise<Linha | null> => {
@@ -63,6 +64,8 @@ function bancoFalso(linhas: Linha[]) {
     },
     reivindicarRodada: async (_db: unknown, runId: string, token: number) => {
       chamadas.reivindicarRodada++;
+      // A corrida real: outra invocação reivindica ENTRE a leitura da run e o nosso CAS.
+      if (interferir) { interferir(); interferir = null; }
       if (indisponivel) return { tipo: "indisponivel" as const, detalhe: indisponivel };
       const l = estado.get(runId);
       // O CAS, escrito como o UPDATE o escreve: id + status + rodadas.
@@ -88,6 +91,10 @@ function bancoFalso(linhas: Linha[]) {
     },
     derrubarBanco(detalhe: string | null) {
       indisponivel = detalhe;
+    },
+    /** Agenda uma interferência para acontecer DENTRO do próximo CAS. */
+    noMeioDoClaim(f: () => void) {
+      interferir = f;
     },
   };
 }
@@ -166,13 +173,48 @@ describe("etapa159 · os quatro desfechos de quem PERDE o compare-and-set", () =
     expect(b.chamadas.relerRun).toBe(1);
   });
 
-  it("⚠️ rodada NO AR → esperar. Adotar aqui seria o roubo de novo, um round-trip depois", async () => {
-    // A lease: `rodadas` (10) à frente de `rodadas_concluidas` (9) significa que alguém está
-    // trabalhando AGORA. É a única coisa no sistema capaz de dizer isso — `rodadas` sozinho não
-    // distingue "rodada no ar" de "rodada terminada".
-    const b = bancoFalso([{ id: "r1", status: "running", rodadas: 10, contadores: { [CHAVE_RODADAS_CONCLUIDAS]: 9 } }]);
+  it("⚠️ com rodada NO AR o CAS NEM É TENTADO — e o dono legítimo, que venceria, também espera", async () => {
+    // O caso que separa "lease relatada no 409" de "lease que TRANCA". Rodada 7 no ar significa
+    // rodadas = 7 e rodadas_concluidas = 6. Quem trouxer o token 7 — o dono, voltando do próprio
+    // abort de 110 s — VENCERIA o compare-and-set, porque o UPDATE só compara `rodadas`, e
+    // reivindicaria a rodada 8 por cima de uma rodada em execução. Checar a lease só depois do
+    // CAS deixaria o servidor abençoar exatamente o roubo que esta fase conserta.
+    const b = bancoFalso([{ id: "r1", status: "running", rodadas: 7, contadores: { [CHAVE_RODADAS_CONCLUIDAS]: 6 } }]);
     const v = await abrir(b, { runId: "r1", rodadasVistas: 7 });
-    expect(v.veredito).toEqual({ tipo: "rodada_em_voo", runId: "r1", rodadas: 10 });
+    expect(v.veredito).toEqual({ tipo: "rodada_em_voo", runId: "r1", rodadas: 7 });
+    expect(b.chamadas.reivindicarRodada, "tentou o CAS com uma rodada no ar — e teria ganhado").toBe(0);
+    expect(b.estado.get("r1")!.rodadas, "o token foi consumido por cima da rodada em execução").toBe(7);
+
+    // E a trava SOLTA quando a rodada grava: é lease, não cadeado.
+    b.concluirRodada("r1", 7);
+    const depois = await abrir(b, { runId: "r1", rodadasVistas: 7 });
+    expect(depois.veredito).toEqual({ tipo: "reivindicada", token: 7 });
+  });
+
+  it("⚠️ R3 — quem PERDE o CAS para um terceiro lê a lease na releitura, não «token vencido»", async () => {
+    // A corrida que a guarda pré-CAS não cobre: na leitura não havia rodada no ar, e outra
+    // invocação reivindicou no intervalo. Os dois desfechos pedem ações OPOSTAS do cliente —
+    // `token_vencido` manda repetir na hora, `rodada_em_voo` manda esperar — e chamar o segundo
+    // de primeiro é o que reabre o roubo.
+    const b = bancoFalso([{ id: "r1", status: "running", rodadas: 7, contadores: { [CHAVE_RODADAS_CONCLUIDAS]: 7 } }]);
+    b.noMeioDoClaim(() => {
+      const l = b.estado.get("r1")!;
+      l.rodadas = 8; // o terceiro reivindicou a rodada 8, e ela está NO AR (concluidas segue 7)
+    });
+    const v = await abrir(b, { runId: "r1", rodadasVistas: 7 });
+    expect(v.veredito).toEqual({ tipo: "rodada_em_voo", runId: "r1", rodadas: 8 });
+    expect(b.chamadas.relerRun, "classificou sem reler: o retrato pré-CAS não sabe da corrida").toBe(1);
+  });
+
+  it("…e a MESMA corrida, com o terceiro já tendo terminado, é `token_vencido` — repetir na hora", async () => {
+    const b = bancoFalso([{ id: "r1", status: "running", rodadas: 7, contadores: { [CHAVE_RODADAS_CONCLUIDAS]: 7 } }]);
+    b.noMeioDoClaim(() => {
+      const l = b.estado.get("r1")!;
+      l.rodadas = 8;
+      l.contadores = { ...l.contadores, [CHAVE_RODADAS_CONCLUIDAS]: 8 };
+    });
+    const v = await abrir(b, { runId: "r1", rodadasVistas: 7 });
+    expect(v.veredito).toEqual({ tipo: "token_vencido", runId: "r1", rodadas: 8 });
   });
 
   it("run já encerrada por baixo → abrir uma nova, não insistir nesta", async () => {

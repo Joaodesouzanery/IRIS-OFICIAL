@@ -19,7 +19,9 @@ const CODIGO = TELA.replace(/\{\/\*[\s\S]*?\*\/\}/g, " ").replace(/\/\*[\s\S]*?\
 
 describe("etapa86 · a trava", () => {
   it("o laço checa o RELÓGIO a cada rodada, antes de chamar o servidor", () => {
-    const iFor = CODIGO.indexOf("for (let rodada = 1; rodada <= 300; rodada++)");
+    // Fase 30 — o contador do `for` virou `tentativa`: ele conta TENTATIVAS (monotônico), e
+    // `rodadasFeitas` conta rodadas que aconteceram. A propriedade medida aqui é a mesma.
+    const iFor = CODIGO.indexOf("for (let tentativa = 1; tentativa <= 300; tentativa++)");
     expect(iFor).toBeGreaterThan(-1);
     // Fase 29 — a janela era de 400 chars e o corpo do laço cresceu (o token da cerca é montado
     // antes do POST). O que o caso garante é a ORDEM, não o tamanho: fixar a janela fazia o teste

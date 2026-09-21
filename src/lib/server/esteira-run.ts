@@ -281,15 +281,31 @@ export async function registrarRodada(
   }
 }
 
-/** Fecha a execução com um desfecho explícito. */
+/**
+ * Fecha a execução com um desfecho explícito. Devolve se ELA fechou a linha.
+ *
+ * ⚠️ Fase 30 — o `.eq("status", "running")` é novo, e o comentário da rota que dizia
+ * "fechar uma run já fechada é no-op (o UPDATE filtra por status)" era simplesmente FALSO: o
+ * filtro era só por id. Duas consequências vivas:
+ *
+ * 1. O `encerrar` do cliente, que roda nos desfechos "teto" e "erros", sobrescrevia com
+ *    `concluido` uma run que o DISJUNTOR já tinha marcado `abortado` — apagando o motivo real da
+ *    parada da tela e do histórico, que é a única coisa que explica a esteira depois do fato.
+ * 2. O reaper de órfãs podia reescrever `concluido_em` de uma run já encerrada, e é esse carimbo
+ *    que a métrica `segundos_por_rodada` divide. Foi assim que o QA da Fase 29 leu "196 s por
+ *    rodada" numa run que fez 42,8.
+ *
+ * O booleano importa: sem ele, quem chama não distingue "eu fechei" de "já estava fechada", e foi
+ * essa indistinção que deixou o `encerrar` fechar a run debaixo de outra invocação.
+ */
 export async function fecharRun(
   db: Db,
   runId: string,
   status: "concluido" | "abortado" | "erro",
   motivo: string | null,
-): Promise<void> {
+): Promise<boolean> {
   try {
-    await db
+    const { data, error } = await db
       .from("esteira_runs")
       .update({
         status,
@@ -297,8 +313,14 @@ export async function fecharRun(
         atualizado_em: new Date().toISOString(),
         concluido_em: new Date().toISOString(),
       })
-      .eq("id", runId);
+      .eq("id", runId)
+      .eq("status", "running")
+      .select("id")
+      .maybeSingle();
+    if (error) return false;
+    return Boolean(data);
   } catch {
     /* degrada: sem a tabela, não há o que fechar */
+    return false;
   }
 }

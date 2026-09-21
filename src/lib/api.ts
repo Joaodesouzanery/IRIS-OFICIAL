@@ -5,6 +5,16 @@ class ApiError extends Error {
   constructor(
     public status: number,
     message: string,
+    /**
+     * ⚠️ Fase 30 — o CORPO do erro, que já era lido e descartado.
+     *
+     * A cerca da esteira responde 409 com `{codigo, run_id, rodadas}` justamente para o cliente
+     * poder AGIR — adotar o token fresco, adotar a run, esperar, ou abrir uma nova. Guardar só
+     * `status` e `message` transformava toda essa informação em texto: o laço via "409" e só
+     * podia repetir o mesmo token, que é monotônico e por isso nunca mais bateria. O retry era
+     * estruturalmente inútil.
+     */
+    public body: Record<string, unknown> = {},
   ) {
     super(message);
     this.name = "ApiError";
@@ -110,7 +120,11 @@ async function request<T>(
 
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
-    throw new ApiError(res.status, extractErrorMessage(body, res.status, res.statusText));
+    throw new ApiError(
+      res.status,
+      extractErrorMessage(body, res.status, res.statusText),
+      body && typeof body === "object" ? (body as Record<string, unknown>) : {},
+    );
   }
 
   return res.json() as Promise<T>;
