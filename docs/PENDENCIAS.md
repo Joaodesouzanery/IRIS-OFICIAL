@@ -3,6 +3,63 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 30 — BLOCO A (21/set/2026) — a run para de ser roubada, e de estourar por dentro
+
+⛔ **PORTÃO BLOQUEANTE.** Os Commits 5-7 (Bloco B) **não começam** sem a confirmação abaixo.
+Motivo: "plano aprovado ≠ efeito real em produção" já se repetiu três vezes nesta série (a
+migration do Luiz Paniago, o worker do parser da Fase 27 — o código subiu, o arquivo não — e o
+diagnóstico incompleto da Fase 26). Os quatro commits mexem no ciclo de vida da run, e o efeito
+deles é observável em UMA execução; empilhar o Bloco B por cima tornaria impossível dizer qual
+mudança produziu qual resultado.
+
+### O que rodar
+
+**"Rodar tudo" com UMA aba só, e nenhuma outra aba do IRIS aberta.** Três perguntas:
+
+| # | pergunta | resposta que libera o Bloco B |
+|---|---|---|
+| 1 | A run terminou? | banner de conclusão, **não** "PAROU após N rodada(s) com erro" |
+| 2 | Apareceu 409? | nenhum. Se aparecer, o corpo agora diz **qual** dos casos — mande a mensagem exata, ela nomeia a causa |
+| 3 | Apareceu "passou de 110s"? | nenhum |
+
+E o bloco ① de `docs/qa-fase29.sql` repetido: `status='concluido'` na run mais recente, e
+`motivo_parada` **sem** "Outra invocação desta execução".
+
+⚠️ Se qualquer uma das três falhar, o Bloco B não começa.
+
+### O que mudou (694b4f3, 7df7d2e, aa3f455, 3d71779)
+
+1. **O cron da esteira saiu do `vercel.json`.** Ele disparava GET sem corpo, então `run_id` e
+   `rodadas_vistas` eram ambos `undefined`: adotava qualquer run da tela e vencia o claim. E uma
+   chamada por dia é sempre rodada 0, que sem drenagem não planeja `coleta`/`enqueue`/`confirmLote`
+   — ou seja, **ele nunca ingeriu nada**. Religar é uma linha.
+2. **A porta da run fechou.** `execucao = ativa ?? iniciarRun(...)` morreu. O token deixou de poder
+   ser lido do banco por quem não o traz. A **lease** (`contadores.rodadas_concluidas`, sem
+   migration) é a única coisa capaz de dizer "há rodada no ar", e ela é checada **antes** do
+   compare-and-set. Erro de banco virou **503**, não 409.
+3. **O cliente consegue voltar.** `ApiError` guarda o corpo; cada código de 409 tem ação própria;
+   as esperas viraram 20 s + 30 s + 45 s (as de 10 s somavam 30 s e desistiam com a rodada ainda no
+   ar, garantido); `runIdAtivo` nasce do `/pipeline/status`. `encerrar` confere o dono e `fecharRun`
+   filtra por `status='running'`.
+4. **Os dois passos inline param na própria fatia**, e a rodada que não grava PARA em vez de seguir
+   decidindo sobre números que não existem.
+
+### ⚠️ Mudança de número público, declarada
+
+`contadores.rodadas_concluidas` muda o que "rodada N" significa no banner: passa a ser a
+**concluída**, não a reivindicada. É a correção de um número que hoje está errado — o banner
+mostrava claims —, mas é mudança visível e fica registrada aqui.
+
+E o banner de parada ganhou um caso novo: **"o registro desta rodada não gravou no banco"**. Ele
+não existia porque a falha era engolida; se aparecer, é diagnóstico, não regressão.
+
+### O que o Bloco B tem (bloqueado)
+
+Commit 5 (`resilientFetchBuffer` — o corpo da resposta sem relógio, o único pior caso infinito — e
+os `waitUntil` sem deadline), Commit 6 (os 15 da ANM de volta à fila: semeadura, tipo real do
+documento, `motivoDaFalha` para relógio não consumir ciclo de parser), Commit 7 (a medição honesta:
+`naturezaDaChave` em `registrarRodada`, a vazão como razão, `docs/qa-fase30.sql`).
+
 ## 🔴 FASE 29 (20/set/2026) — a esteira que termina, e o voto auditável linha a linha
 
 **Sequência:** deploy verde → **"Rodar tudo"** → colar `docs/qa-fase29.sql` → abrir a aba
