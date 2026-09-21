@@ -29,6 +29,8 @@
  * um download com timeout de 20s, um lote de confirmação, uma página de listagem.
  */
 
+import { SUPABASE_RPC_TIMEOUT_MS } from "@/lib/supabase/fetch-com-teto";
+
 /** Reserva mínima para o passo fazer UMA unidade de trabalho útil. */
 export const RESERVA = {
   /** Coleta leve: baixar uma listagem e inserir os itens novos. */
@@ -317,6 +319,54 @@ export function fatiaDoPasso(passo: PassoEsteira, saldoMs: number, protecaoMs = 
   // teto de trabalho, e a primeira checagem interna `hasBudget(deadline, RESERVA)` passa.
   return Math.max(0, Math.min(TETO_FATIA[passo] + MARGEM_PARTIDA_MS, saldoMs - protecaoMs));
 }
+
+/**
+ * O PRAZO absoluto da fatia deste passo — o instante em que ele tem de parar de começar trabalho.
+ *
+ * ═══ Por que isto passou a existir (Fase 30) ═══
+ * Dois passos rodam INLINE, sem passar por `call()`: `reclassificacao` e `reprocessarFalhados`.
+ * `call()` é quem monta a fatia; sem ele, os dois guardavam contra o `deadlineAt` da RODADA. Na
+ * rodada 0 sob drenagem a fatia devida de `reclassificacao` é 11.000 ms e o guard a deixava ir até
+ * `deadlineAt − 3.000`: **5,7× a própria fatia**, comendo os 41 s que protegem reaper, extração e
+ * derivadas. Passo que não conhece a própria fatia não é passo orçado — é o primeiro a chegar.
+ *
+ * É a mesma função que `fatiaDoPasso` calcula, só que expressa como INSTANTE, porque é isso que
+ * `hasBudget(deadline, reserva)` consome. Instante e duração saírem do mesmo cálculo é o que
+ * impede a divergência que produziu as duas metades do bug das Fases 7 e 10.
+ */
+export function prazoDoPasso(passo: PassoEsteira, saldoMs: number, protecaoMs = 0): number {
+  return Date.now() + fatiaDoPasso(passo, saldoMs, protecaoMs);
+}
+
+/**
+ * Quanto um passo inline precisa ter de fatia para COMEÇAR mais um item.
+ *
+ * ⚠️ Os guards inline reservavam 3.000 ms (`reclassificacao`) e 2.500 ms (`reprocessarFalhados`)
+ * para um item que faz **cinco round-trips** ao Supabase — `requeueDocument` sozinho faz quatro,
+ * mais o UPDATE do ciclo. Cada um tem teto de `SUPABASE_RPC_TIMEOUT_MS`, então a reserva era ~16×
+ * menor que a unidade de trabalho que ela autoriza. É a classe da Fase 7 em miniatura, e foi ela
+ * que levou `reprocessarFalhados` a terminar em t≈117,5 s — acima dos 110 s do cliente.
+ *
+ * ⚠️ O número tem DOIS limites, e ele vive entre eles — a etapa161 mede os dois:
+ *
+ * **Piso (6 s).** O último item pode começar em `HOBBY_BUDGET_MS − FOLGA − RESERVA_DE_ITEM_MS` e
+ * estourar até `ROUND_TRIPS_POR_ITEM × SUPABASE_RPC_TIMEOUT_MS` (50 s). Para o fim ficar abaixo
+ * dos 110 s em que o cliente aborta, a reserva precisa passar de 6 s. Era exatamente aqui que os
+ * 2.500 ms falhavam: 70 − 2,5 + 50 = 117,5 s.
+ *
+ * **Teto (11 s).** A maior fatia que estes passos chegam a receber é `TETO_FATIA + MARGEM` = 11 s.
+ * Reserva IGUAL ou maior que a fatia é a Fase 16: o passo entra, a primeira checagem falha, ele
+ * devolve zero e o round-trip é pago à toa. Reservar o pior caso inteiro (50 s) mataria os dois
+ * passos em silêncio — trocar estouro por passo morto é a mesma família de erro, do outro lado.
+ *
+ * 8 s tem folga dos dois lados. Ele NÃO cobre um round-trip travado (10 s) — e não precisa: o que
+ * a conta tem de fechar é o fim do passo contra o abort do cliente, e ele fecha mesmo com os
+ * cinco travando.
+ */
+export const RESERVA_DE_ITEM_MS = 8_000;
+
+/** Round-trips ao Supabase que UM item de passo inline pode fazer (4 do requeue + 1 do ciclo). */
+export const ROUND_TRIPS_POR_ITEM = 5;
 
 /**
  * O passo tem fatia para UMA unidade de trabalho útil?

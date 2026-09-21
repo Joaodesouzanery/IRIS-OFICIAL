@@ -154,7 +154,9 @@ describe("etapa155 · 409 não é falha — é a cerca trabalhando", () => {
     // ⚠️ Ancorar no laço DA ESTEIRA: o arquivo tem outros `catch (err)`, e pegar o primeiro
     // mediria outro bloco.
     const inicio = TELA.indexOf("const corpoDaRodada");
-    const captura = TELA.slice(inicio, inicio + 4_500);
+    // A janela acompanha o corpo do laço, que cresceu com os quatro desfechos da cerca. O que o
+    // caso garante é a ORDEM dos ramos, não o tamanho do bloco.
+    const captura = TELA.slice(inicio, inicio + 6_500);
     expect(inicio, "laço da esteira não encontrado").toBeGreaterThan(-1);
     expect(captura).toMatch(/err instanceof ApiError && err\.status === 409/);
     const i409 = captura.indexOf("err.status === 409");

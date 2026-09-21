@@ -441,6 +441,10 @@ export default function VotosDiretoresPage() {
             rodadas?: number | null;
             abortado?: boolean;
             motivo_parada?: string;
+            // Fase 30 — a rodada trabalhou mas o registro não gravou. Sem esta chave o cliente
+            // leria `restantes: false` como "drenou" e pintaria o banner VERDE de uma execução
+            // que parou sem saber o que fez.
+            registro_da_rodada_falhou?: boolean;
             // Fase 29 — o TOKEN da cerca: devolvê-lo é o que faz a invocação seguinte ser aceita.
             // Sem ele, o abort do cliente re-disparava sobre a MESMA run com o mesmo `run_id`, o
             // guard de id não via diferença e duas invocações escreviam nas mesmas linhas.
@@ -461,6 +465,11 @@ export default function VotosDiretoresPage() {
           // somá-los exibia a mesma medição N vezes ("74 sem evidência · 72 anteriores ao 1º
           // mandato" não eram deliberações distintas). `agregarEtapas` decide por chave.
           agregarEtapas(totais, ultimas as Record<string, Record<string, unknown>>);
+          if (res.registro_da_rodada_falhou) {
+            desfecho = "erros";
+            ultimoErro = res.motivo_parada ?? "o registro da rodada não gravou";
+            break;
+          }
           if (res.abortado) {
             desfecho = "abortado";
             ultimoErro = res.motivo_parada ?? "disjuntor aberto";

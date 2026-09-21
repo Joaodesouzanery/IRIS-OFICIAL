@@ -19,6 +19,7 @@
 
 import { ORDEM_DOS_PASSOS } from "@/lib/server/esteira-reservas";
 import { CHAVE_RODADAS_CONCLUIDAS } from "@/lib/server/cerca-da-run";
+import { exigirEscritaComLinha } from "@/lib/server/escrita-checada";
 
 type Db = {
   from: (t: string) => any;
@@ -259,8 +260,12 @@ export async function registrarRodada(
   // round-trip depois. Mora em `contadores` (jsonb, já escrito neste mesmo UPDATE): sem migration.
   // Nenhuma etapa emite esta chave, então a soma acima nunca colide com ela.
   contadores[CHAVE_RODADAS_CONCLUIDAS] = rodadaConcluida;
-  try {
-    const { data, error } = await db
+  // ⚠️ Fase 30 — ESTA escrita engolia o erro num `catch` mudo, e era a única do caminho quente
+  // fora de `escrita-checada.ts`. O custo do silêncio é MEDIDO, não teórico: com `contadores`
+  // vazio, `coletaJaFeitaNaRun` fica falso e a coleta é re-oferecida (~125 s de re-crawl inútil
+  // por run), e `deveContinuar` só para na rodada 15 — +9 rodadas, ~10,5 min por execução.
+  return exigirEscritaComLinha<EsteiraRun>(
+    db
       .from("esteira_runs")
       .update({
         // ⚠️ Fase 29 — `rodadas` NÃO é incrementado aqui. Quem incrementa é `reivindicarRodada`,
@@ -273,12 +278,9 @@ export async function registrarRodada(
       })
       .eq("id", run.id)
       .select("*")
-      .single();
-    if (error) return null;
-    return data as EsteiraRun;
-  } catch {
-    return null;
-  }
+      .maybeSingle(),
+    `registrar rodada ${rodadaConcluida} da run ${run.id}`,
+  );
 }
 
 /**

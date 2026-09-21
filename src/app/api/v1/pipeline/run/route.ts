@@ -34,6 +34,8 @@ import {
   MARGEM_PARTIDA_MS,
   fatiaDoPasso,
   podeRodar,
+  prazoDoPasso,
+  RESERVA_DE_ITEM_MS,
   planejarRodada,
   type PassoEsteira,
 } from "@/lib/server/esteira-reservas";
@@ -448,6 +450,11 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     // "não tentados": `passosNaoTentadosNaRun` nunca chegava a zero e `deveContinuar` pedia
     // rodada extra em TODA execução, inclusive na vazia. Era o piso de 15 rodadas.
     tentadosNaRodada.add("reclassificacao");
+    // ⚠️ Fase 30 — A FATIA, e não o `deadlineAt` da rodada. Este passo roda INLINE, e `call()` —
+    // que é quem monta a fatia — não passa por aqui. Guardando contra a rodada, a fatia devida de
+    // 11.000 ms virava licença para ir até `deadlineAt − 3.000`: 5,7× o próprio orçamento, comendo
+    // os 41 s que protegem reaper, extração e derivadas.
+    const prazoReclassificacao = prazoDoPasso("reclassificacao", saldo(), protecao.reclassificacao ?? 0);
     try {
       const { data: presos } = await db
         .from("documentos_regulatorios")
@@ -462,7 +469,9 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       let requeued = 0;
       let naoTentados = 0;
       for (const d of alvo) {
-        if (!hasBudget(deadlineAt, 3_000)) { naoTentados = alvo.length - requeued; restantes = true; break; }
+        // A reserva é de UM item: `requeueDocument` faz quatro round-trips ao Supabase, cada um
+        // com teto de 10 s. Os 3.000 ms de antes reservavam ~13× menos do que autorizavam.
+        if (!hasBudget(prazoReclassificacao, RESERVA_DE_ITEM_MS)) { naoTentados = alvo.length - requeued; restantes = true; break; }
         try { await requeueDocument(db, d.id as string); requeued++; } catch { /* segue */ }
       }
       // Fase 12 — chave PRÓPRIA. `reenfileirados` era gravada AQUI e no passo 9; o acumulador
@@ -667,6 +676,11 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // reprocesso de `failed` ser pulado em toda rodada em que a aprovação arquivasse uma pauta.
   if (cabe("reprocessarFalhados")) {
     tentadosNaRodada.add("reprocessarFalhados");
+    // ⚠️ Fase 30 — mesma correção, e aqui ela era a mais cara: com 2.501 ms de reserva contra o
+    // `deadlineAt` da rodada, um item que faz cinco round-trips de até 10 s levava o passo a
+    // terminar em t≈117,5 s — ACIMA dos 110 s em que o cliente aborta. Abort, re-disparo, 409 da
+    // cerca, duas falhas seguidas, run parada. Era metade do "PAROU após N rodadas com erro".
+    const prazoReprocesso = prazoDoPasso("reprocessarFalhados", saldo(), protecao.reprocessarFalhados ?? 0);
     try {
       const { data: falhados } = await db
         .from("documentos_regulatorios")
@@ -680,7 +694,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       let arquivadosParser = 0;
       let encerrados = 0;
       for (const doc of ((falhados ?? []) as any[])) {
-        if (!hasBudget(deadlineAt, 2_500)) { restantes = true; break; }
+        if (!hasBudget(prazoReprocesso, RESERVA_DE_ITEM_MS)) { restantes = true; break; }
         // TETO DE TENTATIVAS: um PDF corrompido, de 0 bytes ou escaneado sem OCR falha idêntico
         // para sempre. Sem teto, o passo queima orçamento nos mesmos 17 documentos toda rodada.
         // O contador vive em `campos_detectados`, que o `requeueDocument` já escreve.
@@ -801,9 +815,31 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   // Quando mais da metade dos passos falha — com amostra suficiente para não ser ruído — a
   // execução PARA e diz por quê.
   let abortadoPeloDisjuntor = false;
+  // ⚠️ Fase 30 — a rota REAGE ao registro que não gravou, em vez de só logar.
+  //
+  // `execucao = registrarRodada(...) ?? execucao` seguia com o SNAPSHOT VELHO: o disjuntor era
+  // avaliado com números de uma rodada atrás, e uma run que não gravou nada podia ser fechada como
+  // `concluido`. E o silêncio custa medido — com `contadores` vazio, `coletaJaFeitaNaRun` fica
+  // falso (re-crawl de ~125 s por run) e `deveContinuar` só para na rodada 15 (+9 rodadas,
+  // ~10,5 min). A run que não sabe o que fez não pode pedir outra rodada.
+  let registroDaRodadaFalhou = false;
   if (execucao) {
-    execucao = (await registrarRodada(db, execucao, etapas, rodadaReivindicada ?? 0)) ?? execucao;
-    if (deveAbrirDisjuntor(execucao.passos_ok, execucao.passos_erro)) {
+    const registrada = await registrarRodada(db, execucao, etapas, rodadaReivindicada ?? 0);
+    if (!registrada) {
+      registroDaRodadaFalhou = true;
+      restantes = false;
+      await fecharRun(
+        db,
+        execucao.id,
+        "erro",
+        "A rodada terminou mas o registro no banco não gravou. A execução parou para não " +
+          "continuar decidindo sobre números que não existem.",
+      );
+    }
+    execucao = registrada ?? execucao;
+    if (registroDaRodadaFalhou) {
+      // Nada de disjuntor nem de fechar como concluído: a linha já foi fechada como erro acima.
+    } else if (deveAbrirDisjuntor(execucao.passos_ok, execucao.passos_erro)) {
       abortadoPeloDisjuntor = true;
       restantes = false; // não peça outra rodada: o problema não é falta de tempo
       await fecharRun(
@@ -826,6 +862,14 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     run_id: execucao?.id ?? null,
     // O token que o cliente devolve na próxima chamada. Sem ele a cerca não fecha.
     rodadas: rodadaReivindicada ?? execucao?.rodadas ?? null,
+    ...(registroDaRodadaFalhou
+      ? {
+          registro_da_rodada_falhou: true,
+          motivo_parada:
+            "O registro desta rodada não gravou no banco. O trabalho feito está persistido, mas a " +
+            "execução parou: continuar exigiria decidir sobre contadores que não existem.",
+        }
+      : {}),
     ...(abortadoPeloDisjuntor
       ? {
           abortado: true,

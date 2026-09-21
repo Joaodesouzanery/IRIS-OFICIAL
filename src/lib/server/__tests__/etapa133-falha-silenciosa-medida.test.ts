@@ -60,7 +60,12 @@ function varrer(): Escrita[] {
       const varNome = stmt.match(/(?:const|let|var)\s+(\w+)\s*=/)?.[1];
       const checada =
         /\berror\b/.test(stmt) ||
-        /\bexigirEscrita\(/.test(stmt) || // Fase 24 — o helper lê {error} e loga
+        // ⚠️ Fase 30 — `exigirEscritaComLinha` entra aqui porque tem o MESMO contrato: lê
+        // `{data, error}`, loga com contexto e devolve `null` quando não gravou. É a irmã para
+        // quem precisa da linha de volta (`registrarRodada` precisa, para o disjuntor). Mexer no
+        // instrumento exige justificativa própria — esta é ela, e o teste abaixo prova que o
+        // helper novo de fato checa, em vez de eu só ter alargado o regex.
+        /\bexigirEscrita(?:ComLinha)?[<(]/.test(stmt) || // Fase 24 — o helper lê {error} e loga
         (!!varNome && new RegExp(`\\b${varNome}\\??\\.error\\b`).test(depois)) ||
         (/^\s*return\b/.test(stmt) && CHECADO_PELO_CHAMADOR.has(rel)) ||
         (!atribuido && /\.then\(\s*\(\s*\{[^}]*error/.test(stmt));

@@ -106,7 +106,11 @@ describe("etapa68 · APROVAR antes de INGERIR", () => {
   it("o requeue em série ganhou checagem de saldo", () => {
     // Eram até 50 requeueDocument, 3 round-trips cada, sem NENHUM controle: quando tinha alvo,
     // consumia a rodada e todos os gates seguintes falhavam.
-    expect(PIPELINE).toMatch(/for \(const d of alvo\)[\s\S]{0,200}?hasBudget\(deadlineAt/);
+    // ⚠️ Fase 30 — o saldo medido deixou de ser o da RODADA e passou a ser o da FATIA deste passo
+    // (`prazoReclassificacao`): guardar contra `deadlineAt` dava a ele 5,7× o próprio orçamento.
+    // A propriedade ("o laço em série tem controle de saldo") é a mesma; o instrumento é melhor.
+    expect(PIPELINE).toMatch(/for \(const d of alvo\)[\s\S]{0,400}?hasBudget\(prazoReclassificacao/);
+    expect(PIPELINE).not.toMatch(/for \(const d of alvo\)[\s\S]{0,400}?hasBudget\(deadlineAt/);
   });
 });
 
