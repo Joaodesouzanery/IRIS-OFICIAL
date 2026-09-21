@@ -156,11 +156,20 @@ describe("etapa68 · a rota de status e o cron", () => {
     expect(status).toMatch(/modo: "demo", em_andamento: false, run: null, ultima: null/);
   });
 
-  it("o cron passou a chamar a esteira COMPLETA, sem gastar slot novo", () => {
+  // Fase 30 — o cron da esteira SAIU, e a inversão desta asserção é a mudança mais visível da
+  // fase. Dois motivos, nesta ordem:
+  //   1. ele dispara GET SEM CORPO, então `run_id` e `rodadas_vistas` são ambos `undefined` —
+  //      é exatamente o padrão que ADOTA a run da tela e vence o compare-and-set dela. Em
+  //      produção isso derrubou a run `72b4534a`, que tinha 32 passos ok e zero erros;
+  //   2. ele nunca ingeriu nada, e isso não é opinião: a etapa158 PROVA por comportamento que
+  //      a rodada 0 sem drenagem não contém `coleta`, `enqueue` nem `confirmLote`. Uma chamada
+  //      por dia é sempre rodada 0, porque a run anterior morre de órfã em 3 minutos.
+  // A ROTA continua existindo e continua aceitando cron autenticado: religar é uma linha.
+  it("o cron da esteira saiu — ele adotava a run da tela e nunca ingeriu nada", () => {
     const vercel = JSON.parse(ler("vercel.json")) as { crons: Array<{ path: string }> };
     const caminhos = vercel.crons.map((c) => c.path);
-    expect(caminhos).toContain("/api/v1/pipeline/run");
-    // auto-confirm é o passo 1 da esteira: manter os dois seria rodar o mesmo trabalho 2×/dia.
+    expect(caminhos).not.toContain("/api/v1/pipeline/run");
+    // auto-confirm é o passo 1 da esteira: religá-lo por fora seria rodar o mesmo trabalho 2×/dia.
     expect(caminhos).not.toContain("/api/v1/upload/auto-confirm");
     expect(caminhos.length, "o plano Hobby só permite 2 crons").toBeLessThanOrEqual(2);
   });
