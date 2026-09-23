@@ -1,0 +1,348 @@
+{
+  "_comment": [
+    "GABARITO DE VOTOS POR DIRETOR — contado À MÃO contra os PDFs oficiais (usuário, 23/set/2026).",
+    "",
+    "Arquivo SEPARADO do `gabarito.json` de propósito: `etapa152-certificacao-declarada.test.ts`",
+    "afirma `expect(total).toBe(164)` sobre aquele arquivo e policia seis prosas que citam o número.",
+    "Acrescentar chaves lá quebraria tudo isso sem necessidade.",
+    "",
+    "A DEFINIÇÃO, que decide o teste inteiro: `votos` é o número de votos EFETIVOS do diretor na",
+    "reunião — tipo_voto em {Favoravel, Desfavoravel, Abstencao}. Impedimento gera linha (Ausente +",
+    "motivo_nao_voto='impedimento') e NÃO conta. Item 'Retirado de Pauta' não gera linha nenhuma",
+    "(`tipoVotoInferido` devolve null), então não entra em `itens_decididos`.",
+    "",
+    "⚠️ MUDAR UM NÚMERO AQUI EXIGE ABRIR O PDF E JUSTIFICAR ITEM A ITEM. Nunca aceitar em bloco —",
+    "é a mesma regra dos outros dois baselines desta pasta."
+  ],
+  "anm-ata-79-rop.pdf": {
+    "agencia": "ANM",
+    "reuniao": "79ª ROP",
+    "data_reuniao": "2025-11-26",
+    "itens_decididos": 49,
+    "itens_sem_decisao": 13,
+    "nota_itens_sem_decisao": "13 'Retirado de Pauta'. O gabarito manual enumerou 3 deles (os sobrestados por pedido de vista); os outros 10 são retiradas comuns. Nenhum gera voto.",
+    "colegiado": [
+      {
+        "nome": "Mauro Henrique Moreira Sousa",
+        "variantes": [
+          "Mauro Sousa",
+          "Mauro Henrique Moreira Sousa"
+        ],
+        "votos": 49,
+        "impedido_em": []
+      },
+      {
+        "nome": "José Fernando de Mendonça Gomes Júnior",
+        "variantes": [
+          "José Fernando",
+          "José Fernando de Mendonça Gomes Júnior"
+        ],
+        "votos": 49,
+        "impedido_em": []
+      },
+      {
+        "nome": "Tasso Mendonça Júnior",
+        "variantes": [
+          "Tasso Mendonça",
+          "Tasso Mendonça Júnior"
+        ],
+        "votos": 49,
+        "impedido_em": []
+      },
+      {
+        "nome": "Roger Romão Cabral",
+        "variantes": [
+          "Roger Cabral",
+          "Roger Romão Cabral"
+        ],
+        "votos": 49,
+        "impedido_em": []
+      }
+    ],
+    "divergencias_conhecidas": [
+      {
+        "item": "1.4.1",
+        "causa": "nome_extraido_desliga_inferencia",
+        "evidencia": "resultado=Aprovado · unanime=false · nomes_extraidos=[José Fernando, Mauro]",
+        "sem_voto": [
+          "Tasso Mendonça Júnior",
+          "Roger Romão Cabral"
+        ]
+      },
+      {
+        "item": "2.2.1",
+        "causa": "nome_extraido_desliga_inferencia",
+        "evidencia": "resultado=Indeferido · unanime=false · nomes_extraidos=[José Fernando]",
+        "sem_voto": [
+          "Mauro Henrique Moreira Sousa",
+          "Tasso Mendonça Júnior",
+          "Roger Romão Cabral"
+        ]
+      }
+    ]
+  },
+  "anm-ata-81-rop.pdf": {
+    "agencia": "ANM",
+    "reuniao": "81ª ROP",
+    "data_reuniao": "2026-01-28",
+    "itens_decididos": 64,
+    "itens_sem_decisao": 4,
+    "nota_itens_sem_decisao": "4 'Retirado de Pauta'. O gabarito manual contou 66 blocos com 3.5.3 e 3.5.4 duplicados; o splitter já deduplica intra-ata e chega aos mesmos 64 decididos.",
+    "colegiado": [
+      {
+        "nome": "Mauro Henrique Moreira Sousa",
+        "variantes": [
+          "Mauro Sousa",
+          "Mauro Henrique Moreira Sousa"
+        ],
+        "votos": 64,
+        "impedido_em": []
+      },
+      {
+        "nome": "Luiz Paniago Neves",
+        "variantes": [
+          "Luiz Paniago",
+          "Luiz Paniago Neves"
+        ],
+        "votos": 64,
+        "impedido_em": []
+      },
+      {
+        "nome": "Fábio Fernando Borges",
+        "variantes": [
+          "Fábio Borges",
+          "Fábio Fernando Borges"
+        ],
+        "votos": 64,
+        "impedido_em": []
+      },
+      {
+        "nome": "José Fernando de Mendonça Gomes Júnior",
+        "variantes": [
+          "José Fernando",
+          "José Fernando de Mendonça Gomes Júnior"
+        ],
+        "votos": 63,
+        "impedido_em": [
+          "2.1.1"
+        ]
+      }
+    ],
+    "divergencias_conhecidas": [
+      {
+        "item": "2.2.1",
+        "causa": "nome_extraido_desliga_inferencia",
+        "evidencia": "resultado=Deferido · unanime=TRUE · nomes_extraidos=[José Fernando] — o caso mais claro: o item diz unanimidade e três diretores ficam sem linha",
+        "sem_voto": [
+          "Mauro Henrique Moreira Sousa",
+          "Luiz Paniago Neves",
+          "Fábio Fernando Borges"
+        ]
+      }
+    ]
+  },
+  "anm-ata-83-rop.pdf": {
+    "agencia": "ANM",
+    "reuniao": "83ª ROP",
+    "data_reuniao": "2026-03-25",
+    "itens_decididos": 49,
+    "itens_sem_decisao": 6,
+    "nota_itens_sem_decisao": "6 'Retirado de Pauta'.",
+    "colegiado": [
+      {
+        "nome": "Mauro Henrique Moreira Sousa",
+        "variantes": [
+          "Mauro Sousa",
+          "Mauro Henrique Moreira Sousa"
+        ],
+        "votos": 49,
+        "impedido_em": []
+      },
+      {
+        "nome": "Luiz Paniago Neves",
+        "variantes": [
+          "Luiz Paniago",
+          "Luiz Paniago Neves"
+        ],
+        "votos": 49,
+        "impedido_em": []
+      },
+      {
+        "nome": "Fábio Fernando Borges",
+        "variantes": [
+          "Fábio Borges",
+          "Fábio Fernando Borges"
+        ],
+        "votos": 47,
+        "impedido_em": [
+          "2.6.1",
+          "2.8.1"
+        ]
+      },
+      {
+        "nome": "José Fernando de Mendonça Gomes Júnior",
+        "variantes": [
+          "José Fernando",
+          "José Fernando de Mendonça Gomes Júnior"
+        ],
+        "votos": 44,
+        "impedido_em": [
+          "2.3.1",
+          "2.4.1",
+          "2.7.1",
+          "2.7.2",
+          "2.8.2"
+        ]
+      }
+    ],
+    "divergencias_conhecidas": [
+      {
+        "item": "2.3.1",
+        "causa": "sem_nome_e_sem_unanimidade_textual",
+        "evidencia": "resultado=Indeferido · unanime=false · nomes_extraidos=[] · José Fernando IMPEDIDO neste item",
+        "sem_voto": [
+          "Mauro Henrique Moreira Sousa",
+          "Luiz Paniago Neves",
+          "Fábio Fernando Borges"
+        ]
+      },
+      {
+        "item": "2.4.1",
+        "causa": "sem_nome_e_sem_unanimidade_textual",
+        "evidencia": "resultado=Indeferido · unanime=false · nomes_extraidos=[] · José Fernando IMPEDIDO neste item",
+        "sem_voto": [
+          "Mauro Henrique Moreira Sousa",
+          "Luiz Paniago Neves",
+          "Fábio Fernando Borges"
+        ]
+      },
+      {
+        "item": "2.7.2",
+        "causa": "sem_nome_e_sem_unanimidade_textual",
+        "evidencia": "resultado=Deferido · unanime=false · nomes_extraidos=[] · José Fernando IMPEDIDO neste item",
+        "sem_voto": [
+          "Mauro Henrique Moreira Sousa",
+          "Luiz Paniago Neves",
+          "Fábio Fernando Borges"
+        ]
+      }
+    ]
+  },
+  "antt-ata-1024.pdf": {
+    "agencia": "ANTT",
+    "reuniao": "1.024ª",
+    "data_reuniao": "2026-01-19",
+    "itens_decididos": 6,
+    "itens_sem_decisao": 1,
+    "nota_itens_sem_decisao": "1.2.5 retirado de pauta.",
+    "colegiado": [
+      {
+        "nome": "Guilherme Theo Rodrigues da Rocha Sampaio",
+        "variantes": [
+          "Guilherme Theo",
+          "Guilherme Theo Rodrigues da Rocha Sampaio"
+        ],
+        "votos": 6,
+        "impedido_em": []
+      },
+      {
+        "nome": "Felipe Fernandes Queiroz",
+        "variantes": [
+          "Felipe Queiroz",
+          "Felipe Fernandes Queiroz"
+        ],
+        "votos": 6,
+        "impedido_em": []
+      },
+      {
+        "nome": "Lucas Asfor Rocha Lima",
+        "variantes": [
+          "Lucas Asfor",
+          "Lucas Asfor Rocha Lima"
+        ],
+        "votos": 6,
+        "impedido_em": []
+      },
+      {
+        "nome": "Alex Antônio de Azevedo Cruz",
+        "variantes": [
+          "Alex Cruz",
+          "Alex Antônio de Azevedo Cruz"
+        ],
+        "votos": 6,
+        "impedido_em": []
+      },
+      {
+        "nome": "Severino Medeiros Ramos Neto",
+        "variantes": [
+          "Severino Ramos",
+          "Severino Medeiros Ramos Neto"
+        ],
+        "votos": 6,
+        "impedido_em": []
+      }
+    ],
+    "divergencias_conhecidas": []
+  },
+  "antt-ata-264-rde.pdf": {
+    "agencia": "ANTT",
+    "reuniao": "264ª RDE",
+    "data_reuniao": "2026-01-19",
+    "itens_decididos": 2,
+    "itens_sem_decisao": 1,
+    "nota_itens_sem_decisao": "1.2.1 retirado de pauta.",
+    "colegiado": [
+      {
+        "nome": "Guilherme Theo Rodrigues da Rocha Sampaio",
+        "variantes": [
+          "Guilherme Theo",
+          "Guilherme Theo Rodrigues da Rocha Sampaio"
+        ],
+        "votos": 2,
+        "impedido_em": []
+      },
+      {
+        "nome": "Felipe Fernandes Queiroz",
+        "variantes": [
+          "Felipe Queiroz",
+          "Felipe Fernandes Queiroz"
+        ],
+        "votos": 2,
+        "impedido_em": []
+      },
+      {
+        "nome": "Lucas Asfor Rocha Lima",
+        "variantes": [
+          "Lucas Asfor",
+          "Lucas Asfor Rocha Lima"
+        ],
+        "votos": 2,
+        "impedido_em": []
+      },
+      {
+        "nome": "Alex Antônio de Azevedo Cruz",
+        "variantes": [
+          "Alex Cruz",
+          "Alex Antônio de Azevedo Cruz"
+        ],
+        "votos": 2,
+        "impedido_em": []
+      },
+      {
+        "nome": "Severino Medeiros Ramos Neto",
+        "variantes": [
+          "Severino Ramos",
+          "Severino Medeiros Ramos Neto"
+        ],
+        "votos": 2,
+        "impedido_em": []
+      }
+    ],
+    "divergencias_conhecidas": []
+  },
+  "_causas_das_divergencias": {
+    "nome_extraido_desliga_inferencia": "`shouldInferVotesFromMandate` (vote-inference.ts:69) NÃO infere quando o item tem nome extraído que casa com o cadastro — a regra declarada é 'unanimidade TEXTUAL SEM nomes extraídos'. Consequência: uma ata que nomeia UM diretor deixa o RESTO do colegiado sem linha, mesmo quando o próprio item diz 'por unanimidade' (é o caso de 81ª/2.2.1).",
+    "sem_nome_e_sem_unanimidade_textual": "Item sem nome extraído E sem unanimidade textual: a inferência não liga. Mas nos três casos medidos há IMPEDIMENTO declarado de um diretor no mesmo item — e impedimento é prova de que houve sessão e de que o restante do colegiado decidiu. O item conta como decidido só por causa da linha de impedimento.",
+    "_nota": "⚠️ As duas causas moram na MESMA função, que governa TODO documento da base. Consertá-las muda número público em massa — por isso elas estão MEDIDAS e CONGELADAS aqui, não corrigidas. O teste exige que o conjunto abaixo seja EXATAMENTE este: divergência nova reprova, e divergência que sumir também reprova (é sinal de que foi consertada e o baseline ficou velho)."
+  }
+}
