@@ -355,7 +355,13 @@ export function buildVoteSuggestions(input: {
   });
 }
 
-function matchIds(names: string[], diretoresList: DiretorVoteRecord[]) {
+/**
+ * ⚠️ Exportada na Fase 31 para o DIAGNÓSTICO usar a mesma implementação.
+ * O repo já pagou duas vezes por regra duplicada que divergiu em silêncio (as duas
+ * implementações de chave semântica, e `RE_CONTESTADO`). Um instrumento que reimplementasse
+ * o casamento de nomes mediria outra coisa e diria que mediu esta.
+ */
+export function matchIds(names: string[], diretoresList: DiretorVoteRecord[]) {
   const ids = new Set<string>();
   for (const nome of names) {
     const match = findBestMatch(nome, diretoresList);
