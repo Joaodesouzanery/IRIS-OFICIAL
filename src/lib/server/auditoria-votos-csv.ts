@@ -16,7 +16,7 @@
  */
 
 export const CABECALHO_CSV = [
-  "Agencia", "NumeroDeliberacao", "DataReuniao", "Microtema", "Resultado",
+  "Agencia", "NumeroReuniao", "NumeroDeliberacao", "DataReuniao", "Microtema", "Resultado",
   "Diretor", "TipoVoto", "Origem", "Proveniencia", "Divergente",
   "MotivoNaoVoto", "VotoEmAutos", "ColegiadoEsperado", "VotosNaDeliberacao",
   "ArquivoPDF", "DeliberacaoId", "VotoId", "LinkNaPlataforma",
@@ -24,6 +24,7 @@ export const CABECALHO_CSV = [
 
 export interface LinhaDeVoto {
   agencia: string | null;
+  numero_reuniao: string | null;
   numero_deliberacao: string | null;
   data_reuniao: string | null;
   microtema: string | null;
@@ -54,6 +55,7 @@ export function celulaCsv(valor: unknown): string {
 export function linhaCsvDeVoto(linha: LinhaDeVoto, origemDaPlataforma: string): string {
   const campos = [
     linha.agencia,
+    linha.numero_reuniao,
     linha.numero_deliberacao,
     linha.data_reuniao,
     linha.microtema,

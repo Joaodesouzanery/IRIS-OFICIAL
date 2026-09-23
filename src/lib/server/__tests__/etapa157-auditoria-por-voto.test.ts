@@ -124,7 +124,7 @@ describe("etapa157 · o filtro de origem concorda com `isVotoNominal`, linha a l
 
 describe("etapa157 · o CSV não desalinha nem mente", () => {
   const base: LinhaDeVoto = {
-    agencia: "ANM", numero_deliberacao: "ROP 83 item 12", data_reuniao: "2026-03-25",
+    agencia: "ANM", numero_reuniao: "83", numero_deliberacao: "ROP 83 item 12", data_reuniao: "2026-03-25",
     microtema: "Outorga", resultado: "Deferido", diretor: "Mauro H. Sousa",
     tipo_voto: "Favoravel", origem: "lido", proveniencia: "nominal", is_divergente: false,
     motivo_nao_voto: null, voto_em_autos: null, colegiado_esperado: 5, votos_na_deliberacao: 3,

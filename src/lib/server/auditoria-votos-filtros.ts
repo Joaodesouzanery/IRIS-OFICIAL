@@ -21,11 +21,24 @@ export const LIMITE_MAXIMO = 200;
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const ANO_RE = /^20\d{2}$/;
 const DATA_RE = /^\d{4}-\d{2}-\d{2}$/;
+/**
+ * O número da reunião como o banco o guarda: `deliberacoes.numero_reuniao` é VARCHAR(20)
+ * (`002_expand_deliberacoes.sql:32`, ampliado em `20260519123000_repair_deliberacoes_columns.sql:9`).
+ * Aceita dígito, letra, ordinal (79ª), ponto e traço — o bastante para "1024", "79ª", "264".
+ * Recusa o resto para o filtro não virar entrada livre numa consulta.
+ */
+const REUNIAO_RE = /^[0-9A-Za-zºª./-]{1,20}$/;
 
 export interface FiltrosDaAuditoria {
   diretor_id: string | null;
   agencia_id: string | null;
   ano: string | null;
+  /**
+   * ⚠️ Filtra por `deliberacoes.numero_reuniao`, NÃO por `reuniao_id`. `ensureReuniao` só grava o
+   * vínculo quando a data existe (`reunioes.ts:75`), então filtrar pela FK excluiria em silêncio
+   * exatamente as deliberações sem data — que são a população que mais precisa ser auditada.
+   */
+  numero_reuniao: string | null;
   date_from: string | null;
   date_to: string | null;
   tipo_voto: TipoDeVoto | null;
@@ -61,6 +74,11 @@ export function normalizarFiltros(params: URLSearchParams): NormalizacaoDeFiltro
   // inteira por causa dele seria pior que mostrar tudo.
   const ano = anoBruto && ANO_RE.test(anoBruto) ? anoBruto : null;
 
+  const reuniaoBruta = texto("numero_reuniao");
+  if (reuniaoBruta !== null && !REUNIAO_RE.test(reuniaoBruta)) {
+    return { ok: false, erro: "numero_reuniao inválido (até 20 caracteres, sem espaços)." };
+  }
+
   const data = (k: string): string | null | undefined => {
     const v = texto(k);
     if (v === null) return null;
@@ -84,7 +102,7 @@ export function normalizarFiltros(params: URLSearchParams): NormalizacaoDeFiltro
   return {
     ok: true,
     filtros: {
-      diretor_id, agencia_id, ano, date_from, date_to,
+      diretor_id, agencia_id, ano, numero_reuniao: reuniaoBruta, date_from, date_to,
       tipo_voto: (tipoBruto as TipoDeVoto | null) ?? null,
       origem,
       divergente: params.get("divergente") === "1",

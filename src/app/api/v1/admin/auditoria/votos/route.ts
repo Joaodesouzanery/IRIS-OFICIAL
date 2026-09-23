@@ -35,6 +35,7 @@ import { assinarPdfsDasDeliberacoes } from "@/lib/server/pdf-da-deliberacao";
 import { colegiadoNaData, esperadoVsPresente, type MandatoJanela } from "@/lib/server/colegiado-na-data";
 import { normalizarFiltros, janelaDeDatas, filtroOrigemPostgrest } from "@/lib/server/auditoria-votos-filtros";
 import { montarCsv, type LinhaDeVoto } from "@/lib/server/auditoria-votos-csv";
+import { amostrarEstratificado } from "@/lib/server/amostra-estratificada";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -43,7 +44,7 @@ const SELECT_DO_VOTO = `
   id, tipo_voto, is_divergente, is_nominal, proveniencia, motivo_nao_voto, voto_em_autos,
   diretor:diretores!inner(id, nome, agencia_id),
   deliberacao:deliberacoes!inner(
-    id, numero_deliberacao, data_reuniao, resultado, microtema,
+    id, numero_deliberacao, numero_reuniao, tipo_reuniao, data_reuniao, resultado, microtema,
     tipo_documento, documento_pai_id, agencia_id, agencia:agencias(sigla))
 `;
 
@@ -68,6 +69,10 @@ export async function GET(req: NextRequest) {
     // agência". (Um voto cuja agência do diretor difere da da deliberação é erro de atribuição, e
     // o bloco de QA o procura.)
     if (f.agencia_id) q = q.eq("deliberacao.agencia_id", f.agencia_id);
+    // ⚠️ Por `numero_reuniao`, não por `reuniao_id`: o vínculo só é gravado quando há data
+    // (`reunioes.ts:75`), e filtrar pela FK esconderia as deliberações sem data — justo as que
+    // mais precisam de auditoria. Ver o comentário no contrato dos filtros.
+    if (f.numero_reuniao) q = q.eq("deliberacao.numero_reuniao", f.numero_reuniao);
     if (de) q = q.gte("deliberacao.data_reuniao", de);
     if (ate) q = q.lte("deliberacao.data_reuniao", ate);
     if (f.tipo_voto) q = q.eq("tipo_voto", f.tipo_voto);
@@ -87,7 +92,16 @@ export async function GET(req: NextRequest) {
   let total = 0;
   let truncado = false;
 
-  if (f.format === "csv") {
+  // ⚠️ A amostra estratificada precisa do UNIVERSO, não da página: escolher 5 entre os 50 da
+  // página 1 devolveria os 5 mais recentes disfarçados de amostra. Como o CSV, é disparo único.
+  const querAmostra = req.nextUrl.searchParams.get("amostra") === "1";
+  if (querAmostra) {
+    const r = await lerTudo<any>(() => comFiltros(db.from("votos").select(SELECT_DO_VOTO)), "auditoria-votos/amostra");
+    if (r.error) return NextResponse.json({ error: "Falha ao montar a amostra." }, { status: 500 });
+    brutos = r.data;
+    truncado = r.truncated || Boolean(r.error);
+    total = brutos.length;
+  } else if (f.format === "csv") {
     // Disparo único: aqui `lerTudo` é o certo — e se truncar, o AVISO vai dentro do arquivo.
     const r = await lerTudo<any>(() => comFiltros(db.from("votos").select(SELECT_DO_VOTO)), "auditoria-votos/csv");
     if (r.error) return NextResponse.json({ error: "Falha ao listar votos." }, { status: 500 });
@@ -140,7 +154,8 @@ export async function GET(req: NextRequest) {
     }])).values()],
   );
 
-  const linhas: Array<LinhaDeVoto & { pdf_url: string | null; roster_conhecido: boolean; faltando: number }> =
+  const linhas: Array<LinhaDeVoto & { pdf_url: string | null; roster_conhecido: boolean; faltando: number; tipo_reuniao: string | null;
+    tipo_documento_da_fonte: string | null }> =
     brutos.map((v) => {
       const d = v.deliberacao ?? {};
       const delibId = String(d.id ?? "");
@@ -149,6 +164,8 @@ export async function GET(req: NextRequest) {
       const pdf = pdfPorDelib.get(delibId);
       return {
         agencia: d.agencia?.sigla ?? null,
+        numero_reuniao: d.numero_reuniao ?? null,
+        tipo_reuniao: d.tipo_reuniao ?? null,
         numero_deliberacao: d.numero_deliberacao ?? null,
         data_reuniao: d.data_reuniao ?? null,
         microtema: d.microtema ?? null,
@@ -169,8 +186,41 @@ export async function GET(req: NextRequest) {
         voto_id: String(v.id),
         roster_conhecido: comparacao.roster_conhecido,
         faltando: comparacao.faltando.length,
+        // Item de ata chega com `tipo_documento: "ata"` e pai; deliberação solta e voto individual
+        // vêm com o próprio tipo. É o que separa as três fontes na amostra.
+        tipo_documento_da_fonte: (d.documento_pai_id ? "ata" : d.tipo_documento) ?? null,
       };
     });
+
+  if (querAmostra) {
+    const grupos = amostrarEstratificado(
+      linhas.map((l) => ({
+        voto_id: l.voto_id, agencia: l.agencia, origem: l.origem, resultado: l.resultado,
+        motivo_nao_voto: l.motivo_nao_voto, is_divergente: l.is_divergente,
+        // A fonte real da linha: item de ata tem pai; o resto é o próprio tipo do documento.
+        tipo_documento: l.tipo_documento_da_fonte,
+      })),
+      {
+        porAgencia: Math.max(1, Math.min(20, Number(req.nextUrl.searchParams.get("por_agencia")) || 5)),
+        // Sem seed explícito, o DIA serve de semente: a mesma amostra o dia inteiro, e um seed na
+        // URL reabre exatamente a que alguém conferiu. Mesmo contrato de `amostra-auditoria`.
+        seed: req.nextUrl.searchParams.get("seed") ?? new Date().toISOString().slice(0, 10),
+      },
+    );
+    const porId = new Map(linhas.map((l) => [l.voto_id, l]));
+    return NextResponse.json({
+      amostra: grupos.map((g) => ({
+        ...g,
+        linhas: g.linhas.map((l) => porId.get(l.voto_id)).filter(Boolean),
+      })),
+      universo_total: linhas.length,
+      truncado,
+      notice:
+        "Amostra por COTAS, não uniforme: o raro entra antes do comum. `cotas_sem_exemplar` = a " +
+        "agência não tem nenhum caso assim (é achado sobre o dado); `cotas_fora_do_tamanho` = " +
+        "tem, mas não coube no tamanho pedido. Determinística pelo seed.",
+    });
+  }
 
   if (f.format === "csv") {
     return new NextResponse(montarCsv(linhas, req.nextUrl.origin, truncado), {
