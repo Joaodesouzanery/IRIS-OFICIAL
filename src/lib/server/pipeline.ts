@@ -223,36 +223,81 @@ export function jobsPermitidos(restanteMs: number, concurrency: number, reservaM
   return Math.max(0, Math.min(concurrency, Math.floor(restanteMs / reservaMs)));
 }
 
+/** O que a fila faz nesta volta. Três estados, e um deles FALTAVA. */
+export type DecisaoDaFila = "iniciar" | "esperar" | "parar";
+
+/**
+ * ⚠️ Fase 30 — A DECISÃO DA FILA, extraída porque a versão anterior TRAVAVA A FUNÇÃO.
+ *
+ * ═══ O laço que girava para sempre ═══
+ * O laço externo era `while (queue.length > 0 || active.length > 0)`, e a ÚNICA saída para
+ * "acabou o saldo" morava DENTRO do laço interno `while (active.length < permitidos && …)`.
+ * Com `permitidos === 0` — que é o que `jobsPermitidos` devolve assim que o saldo cai abaixo de
+ * RESERVA_POR_JOB_MS (13s) — a condição `0 < 0` é falsa, o laço interno NUNCA roda, a saída fica
+ * inalcançável, e `if (active.length > 0)` também é falso: **nenhum `await` no caminho**.
+ *
+ * Resultado: um laço quente, sem I/O, que não cede o event loop. Medido: **100 milhões de voltas
+ * em 8 segundos** sem um único `setTimeout` disparar. Não é lentidão — é a função inteira parada
+ * de pé, e é a mesma família do achado da Fase 27 (event loop travado = nenhum relógio funciona,
+ * então NENHUM dos tetos desta base salva).
+ *
+ * Gatilho, que é o caso comum e não a borda: a extração começa com saldo, dois jobs entram em
+ * voo, eles terminam DEPOIS do saldo acabar, e sobra fila. `active` esvazia, `permitidos` é 0,
+ * `queue` não é 0 → gira. Como o orquestrador chama `/upload/process` por `call()` (em processo),
+ * o giro acontece DENTRO da requisição de `/api/v1/pipeline/run`: o cliente aborta aos 110s.
+ * É a explicação das 4 rodadas com "A requisição passou de 110s sem resposta".
+ *
+ * A decisão vira função PURA de propósito: o defeito existia porque a condição de saída era
+ * implícita na forma de dois laços aninhados. Explícita, ela é testável sem risco — testar o laço
+ * de verdade contra a regressão penduraria a suíte, já que um laço sem `await` também não deixa
+ * o timeout do vitest disparar.
+ */
+export function decisaoDaFila(estado: { permitidos: number; ativos: number; pendentes: number }): DecisaoDaFila {
+  // Há vaga e há trabalho: começa mais um.
+  if (estado.pendentes > 0 && estado.ativos < estado.permitidos) return "iniciar";
+  // Sem vaga, mas há gente trabalhando: esperar é legítimo — alguém vai terminar e liberar.
+  if (estado.ativos > 0) return "esperar";
+  // Nada em voo e nada pode começar. Insistir aqui é o laço quente: PARA.
+  // Os jobs não iniciados seguem `pending` e a próxima rodada os pega — nada órfão, nada perdido.
+  return "parar";
+}
+
 export async function processQueue(jobs: QueueJob[], concurrency = 2, deadlineAt?: number): Promise<number> {
   const queue = [...jobs];
   const active: Promise<void>[] = [];
   let started = 0;
 
-  while (queue.length > 0 || active.length > 0) {
+  for (;;) {
+    // Recalculado a cada volta (antes era uma vez por lote): com o relógio andando, a decisão
+    // seguinte é tomada sobre o saldo de AGORA, nunca sobre o de quando o lote começou.
     const permitidos = deadlineAt !== undefined ? jobsPermitidos(deadlineAt - Date.now(), concurrency) : concurrency;
-    while (active.length < permitidos && queue.length > 0) {
-      // Orçamento (QA ago/2026): um PDF escaneado custa até ~65s (pdf-parse 25s + OCR
-      // 40s) — sem esta parada o lote de 20 estourava sozinho o SIGKILL de 60s do
-      // Hobby. Nunca INICIA um job sem saldo; os não iniciados seguem 'pending' e a
-      // próxima rodada os pega (progresso preservado, nada órfão).
-      // Fase 16 — 12s → 9s: com fatias de 21-30s, a reserva de partida comia ~47% da janela
-      // útil da extração. 9s ainda cobre o PDF típico; o escaneado extremo (~65s) estoura
-      // qualquer reserva realista e é o caso do reaper, não desta parada.
-      if (deadlineAt !== undefined && !hasBudget(deadlineAt, RESERVA_POR_JOB_MS)) {
-        queue.length = 0;
-        break;
-      }
-      const job = queue.shift()!;
-      started++;
-      const p = processPdf(job.jobId, deadlineAt)
-        .catch((err) => console.error(`[queue] Job ${job.jobId} falhou:`, err))
-        .then(() => {
-          const idx = active.indexOf(p);
-          if (idx !== -1) active.splice(idx, 1);
-        });
-      active.push(p);
+    const decisao = decisaoDaFila({ permitidos, ativos: active.length, pendentes: queue.length });
+    if (decisao === "parar") break;
+    if (decisao === "esperar") {
+      await Promise.race(active);
+      continue;
     }
-    if (active.length > 0) await Promise.race(active);
+
+    // Orçamento (QA ago/2026): um PDF escaneado custa até ~65s (pdf-parse 25s + OCR
+    // 40s) — sem esta parada o lote de 20 estourava sozinho o SIGKILL de 60s do
+    // Hobby. Nunca INICIA um job sem saldo; os não iniciados seguem 'pending' e a
+    // próxima rodada os pega (progresso preservado, nada órfão).
+    // Fase 16 — 12s → 9s: com fatias de 21-30s, a reserva de partida comia ~47% da janela
+    // útil da extração. 9s ainda cobre o PDF típico; o escaneado extremo (~65s) estoura
+    // qualquer reserva realista e é o caso do reaper, não desta parada.
+    if (deadlineAt !== undefined && !hasBudget(deadlineAt, RESERVA_POR_JOB_MS)) {
+      queue.length = 0;
+      continue; // a volta seguinte decide: esperar quem está em voo, ou parar.
+    }
+    const job = queue.shift()!;
+    started++;
+    const p = processPdf(job.jobId, deadlineAt)
+      .catch((err) => console.error(`[queue] Job ${job.jobId} falhou:`, err))
+      .then(() => {
+        const idx = active.indexOf(p);
+        if (idx !== -1) active.splice(idx, 1);
+      });
+    active.push(p);
   }
   return started;
 }
