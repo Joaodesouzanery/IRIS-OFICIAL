@@ -3,6 +3,73 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 31 — BLOCO 1 (23/set/2026) — a certificação do voto por diretor
+
+⛔ **PORTÃO 1.** O Bloco 2 não começa sem as respostas abaixo.
+
+### O que rodar, nesta ordem
+
+**1. Conferir o gabarito na tela.** Abra **Auditoria de votos**, use o campo **Reunião** (novo) e
+confira contra a sua contagem manual:
+
+| reunião | filtro | esperado |
+|---|---|---|
+| ANM 83ª ROP · 25/03/2026 | agência ANM + reunião `83` | Mauro 49 · Luiz 49 · Fábio 47 (2 imped.) · José Fernando 44 (5 imped.) |
+| ANM 81ª ROP · 28/01/2026 | reunião `81` | Mauro/Luiz/Fábio 64 · José Fernando 63 |
+| ANM 79ª ROP · 26/11/2025 | reunião `79` | os quatro com 49 |
+| ANTT 1.024ª | reunião `1024` | 5 diretores × 6, todos Favorável inferido |
+
+**2. Clicar em "Amostra estratificada"** e ver se ela traz os cinco tipos: ausência/impedimento,
+divergência nominal, e as três fontes (ata, deliberação, voto individual).
+
+**3. Rodar a medição de base inteira** (só leitura, não grava nada):
+`GET /api/v1/admin/votos/diagnostico-inferencia?ano=2026&amostra=10`
+
+### O que essa medição responde, e por que ela existe
+
+A certificação achou **17 votos** que o gabarito prevê e o pipeline não produz, em 3 atas, todos
+por `shouldInferVotesFromMandate:111` — o `!hasNominalNames` desliga a inferência para o colegiado
+inteiro quando a ata nomeia **um** diretor, inclusive num item declarado unânime (81ª/2.2.1).
+
+Antes de mexer nessa função — que governa todo documento da base — a decisão precisa de:
+
+| # | pergunta | onde ler na resposta |
+|---|---|---|
+| 1 | **Volume** | `por_motivo.bloqueado_por_nome_de_diretor` e `votos_que_entrariam` |
+| 2 | **O nome é votante ou terceiro?** | `amostra_nome_nao_casado` — **vazia é resultado**, não falha |
+| 3 | **Concentração por agência** | `por_agencia` |
+
+⚠️ Resposta parcial que já vem do código: `hasNominalNames` só conta nome que **casa com o
+cadastro** (`matchIds`, com `!needsReview`). Advogado, interessado e signatário de rodapé não
+casam — a distinção de papel já existe por desenho, e foi para isso que a regra nasceu (os
+signatários do rodapé da ARTESP deixavam 35 finais sem voto). O que resta medir é o nome que casou
+com o diretor **errado**.
+
+### O que o Bloco 1 entregou (1427f0d, 938e969, d0b5f7c)
+
+- **A certificação** (`etapa163`): o gabarito vira teste sobre os 5 PDFs reais. As contagens de
+  item batem nas cinco atas (49, 64, 49, 6, 2) e os 7 impedimentos da 83ª saem divididos como a
+  contagem manual. A lacuna de 17 votos fica **congelada item a item**, com causa nomeada — o teste
+  reprova se ela crescer **e** se ela sumir (baseline velho mentindo de verde é pior que nenhum).
+- **O filtro por reunião** — por `numero_reuniao`, nunca por `reuniao_id`: a FK só é gravada quando
+  há data, e filtrar por ela esconderia as 18 deliberações sem data.
+- **A amostra estratificada** — por cotas, o raro antes do comum, saindo do universo e não da
+  página, declarando em dois baldes distintos o que "não existe" e o que "não coube".
+- **O diagnóstico** — dry-run por construção (não há verbo de escrita no arquivo).
+
+### ⚠️ Duas leituras erradas minhas, registradas
+
+1. Levei ao plano que o splitter produzia +10/+2/+6 itens a mais na ANM. Eram os **"Retirado de
+   Pauta"**, que a contagem manual também exclui.
+2. Quase reportei duplicação 2× na ANTT (14 itens para 6 decididos): `etapa124:47-52` **soma dois
+   parsers** nos arquivos da ANTT. 14 = 7 + 7.
+
+### O que o Bloco 2 tem (bloqueado)
+
+"Fila drenada" honesta (os quatro contadores), o banner que soma parciais, um motivo final por
+deliberação para as 45 sem voto, e as 6 leituras truncadas de `cobertura-documentos`.
+
+
 ## 🔴 FASE 30 — BLOCO A (21/set/2026) — a run para de ser roubada, e de estourar por dentro
 
 ⛔ **PORTÃO BLOQUEANTE.** Os Commits 5-7 (Bloco B) **não começam** sem a confirmação abaixo.
