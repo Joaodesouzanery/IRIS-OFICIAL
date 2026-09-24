@@ -82,28 +82,36 @@ export function extractPdfEntriesFromZip(
 }
 
 /**
- * Decodifica o nome da entrada SEM produzir U+FFFD (Fase 14 — o conserto do mojibake).
+ * Decodifica o nome da entrada escolhendo a página de código mais PLAUSÍVEL (Fase 31).
  *
- * Antes o extractor lia tudo como UTF-8 e produção exibia "Delibera\uFFFD\uFFFDo_652" — e o
- * U+FFFD contamina o `filename`, que alimenta a chave semântica de dedup (mesmo documento,
- * chaves diferentes). MEDIDO nos ZIPs reais da ARTESP: os novos têm nomes UTF-8 válidos (com o
- * bit 11 da spec); os antigos (2023) têm LATIN-1 sem flag — Ç=0xC7, Ã=0xC3, º=0xBA, exatamente
- * os bytes que viravam \uFFFD. CP437, o default literal da spec, produziria OUTRO lixo (╟├║)
- * para esse corpus.
+ * ═══ ⚠️ A história deste trecho, porque ela é a lição ═══
+ * Fase 14: o extractor lia tudo como UTF-8 e produção exibia "Delibera\uFFFD\uFFFDo_652". O
+ * conserto foi "UTF-8 ESTRITO primeiro; falhou → Latin-1", e o docblock registrou a medição:
+ * *"os antigos (2023) têm LATIN-1 sem flag — Ç=0xC7, Ã=0xC3, º=0xBA"*.
  *
- * A regra: UTF-8 ESTRITO primeiro; falhou → Latin-1 (nunca falha, mapeia certo o corpus real).
- * O bit 11 é deliberadamente IGNORADO: o try-estrito já aceita todo UTF-8 legítimo (com ou sem
- * flag), e um produtor que liga o flag com bytes inválidos ganha Latin-1 em vez de \uFFFD — a
- * mutação provou que um ramo de flag aqui não muda comportamento nenhum, só adiciona código.
- * Retroativo é irrecuperável (o byte se perdeu no \uFFFD); re-download com isto dedupa certo.
+ * **Produção refutou essa conclusão**: 623 nomes (23% do acervo, 100% ARTESP) saíram como
+ * "DELIBERAÇO ARTESP N§ 646". Se os bytes fossem 0xC7/0xC3/0xBA, o `toString("latin1")` devolveria
+ * `Ç Ã º` perfeitos e não haveria defeito. Os bytes são **CP850** (0x80=Ç, 0xC7=Ã, 0xA7=º,
+ * 0xB5=Á). A Fase 14 acertou ao descartar CP437 — que produziria `╟├║`, e ela testou — e errou ao
+ * concluir Latin-1, porque não testou a página DOS latina que os produtores brasileiros usam.
+ * Ela trocou a IDENTIDADE do mojibake (U+FFFD → `§`/`µ`/U+0080) e o monitor, que conta só U+FFFD,
+ * ficou cego.
+ *
+ * A lição não é "era CP850": é que **um palpite único calibrado num lote falha no lote seguinte**.
+ * Por isso a escolha agora é por plausibilidade entre os candidatos, com a nota medida sobre o
+ * conjunto ESPERADO num nome de documento — ver `decodificar-nome-de-arquivo.ts`.
+ *
+ * O bit 11 continua deliberadamente IGNORADO, e agora com razão mais forte: o try-estrito de UTF-8
+ * já aceita todo UTF-8 legítimo (com ou sem flag), e a flag DESLIGADA não diz qual página é — que
+ * é exatamente a pergunta que a plausibilidade responde.
+ *
+ * ⚠️ E o dano retroativo é REVERSÍVEL nesta classe, ao contrário do U+FFFD: `latin1` é identidade
+ * byte↔codepoint, então o byte original sobrevive dentro do nome corrompido.
  */
-const UTF8_ESTRITO = new TextDecoder("utf-8", { fatal: true });
+
+import { decodificarNomeDeArquivo } from "@/lib/server/decodificar-nome-de-arquivo";
 function decodeZipEntryName(bytes: Buffer): string {
-  try {
-    return UTF8_ESTRITO.decode(bytes);
-  } catch {
-    return bytes.toString("latin1");
-  }
+  return decodificarNomeDeArquivo(bytes).nome;
 }
 
 function findEndOfCentralDirectory(buffer: Buffer): number {
