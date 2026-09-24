@@ -36,6 +36,7 @@ import { colegiadoNaData, esperadoVsPresente, type MandatoJanela } from "@/lib/s
 import { normalizarFiltros, janelaDeDatas, filtroOrigemPostgrest } from "@/lib/server/auditoria-votos-filtros";
 import { montarCsv, type LinhaDeVoto } from "@/lib/server/auditoria-votos-csv";
 import { amostrarEstratificado } from "@/lib/server/amostra-estratificada";
+import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -123,6 +124,10 @@ export async function GET(req: NextRequest) {
   // com EXATAMENTE os filtros de `getActiveDiretoresForVote`. Chamar o motor por linha custaria um
   // round-trip por par (agência, data).
   const idsDeDelib = [...new Set(brutos.map((v) => String(v.deliberacao?.id)))].filter(Boolean);
+  // ⚠️ Fase 31 — este `.in()` era ÚNICO, sem lote e sem paginação, e foi ele que zerou a coluna
+  // `VotosNaDeliberacao` em 100% das 2.726 linhas do CSV exportado. A tela nunca viu o defeito
+  // porque 50 linhas dão ≤50 ids (2.057 chars de URL); o CSV lê o universo e deu 820 ids —
+  // 32.087 chars, quatro vezes o `urlLengthLimit` default do postgrest-js. Ver `ler-em-lotes.ts`.
   const [mandatosRes, votantesRes] = await Promise.all([
     lerTudo<any>(() => db
       .from("mandatos")
@@ -130,10 +135,20 @@ export async function GET(req: NextRequest) {
       .neq("fonte_dado", "automatico")
       .eq("diretores.review_status", "aprovado")
       .order("id"), "auditoria-votos/mandatos"),
-    idsDeDelib.length
-      ? db.from("votos").select("deliberacao_id, diretor_id").in("deliberacao_id", idsDeDelib)
-      : Promise.resolve({ data: [] as any[] }),
+    lerEmLotes<{ deliberacao_id: string; diretor_id: string }>(db, {
+      tabela: "votos", select: "deliberacao_id, diretor_id",
+      coluna: "deliberacao_id", valores: idsDeDelib, label: "auditoria-votos/votantes",
+    }),
   ]);
+  // ⚠️ O erro PRECISA derrubar a resposta. Antes ele era descartado e o consumidor fazia
+  // `(data ?? []).length` — falha total virava `0`, que é um número plausível e passa por dado.
+  // Mesmo raciocínio já escrito em `materializar-faltantes:300-307`.
+  if (votantesRes.error || mandatosRes.error) {
+    return NextResponse.json(
+      { error: "Falha ao ler os votantes ou os mandatos — a coluna de colegiado sairia zerada." },
+      { status: 500 },
+    );
+  }
   const mandatos: MandatoJanela[] = ((mandatosRes.data ?? []) as any[]).map((m) => ({
     diretor_id: String(m.diretor_id),
     agencia_id: String(m.diretores?.agencia_id ?? ""),

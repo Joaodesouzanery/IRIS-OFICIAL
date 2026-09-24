@@ -14,7 +14,15 @@
  * 50 deliberações distintas e na prática ~10-15, porque um colegiado tem 3-5 diretores e cada
  * deliberação rende uma linha por diretor. Assinar uma a uma seriam dezenas de round-trips por
  * clique de paginação.
+ *
+ * ⚠️ Fase 31 — A PREMISSA ACIMA ("no máximo 50 distintas") VALIA SÓ PARA A TELA, e o CSV a violou:
+ * o ramo de exportação lê o universo e mandou **595 ids, 23.312 chars de URL** — três vezes o
+ * `urlLengthLimit` default do postgrest-js (8.000). Ele passou por pouco, enquanto a consulta
+ * irmã de 820 ids (32.087 chars) voltou VAZIA e zerou uma coluna inteira do CSV. Era defeito
+ * latente esperando mais uma deliberação. A leitura agora é em lotes, com o erro checado.
  */
+
+import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 
 /** O que a deliberação precisa carregar para o PDF dela ser encontrado. */
 export interface DeliberacaoComPai {
@@ -45,10 +53,15 @@ export async function assinarPdfsDasDeliberacoes(
 
   // Item de ata aponta para o PDF do PAI. É esta linha que evita o 404 na maioria da ANM/ARTESP.
   const paiOuEla = deliberacoes.map((d) => String(d.documento_pai_id ?? d.id));
-  const { data: docs } = await db
-    .from("documentos_regulatorios")
-    .select("deliberacao_id, filename, storage_bucket, storage_path")
-    .in("deliberacao_id", [...new Set(paiOuEla)]);
+  const docsRes = await lerEmLotes<any>(db, {
+    tabela: "documentos_regulatorios",
+    select: "deliberacao_id, filename, storage_bucket, storage_path",
+    coluna: "deliberacao_id", valores: paiOuEla, label: "pdf-da-deliberacao/docs",
+  });
+  // Sem PDF a tela mostra "sem PDF", que é a verdade. Mas FALHA de leitura não é "sem PDF": ela
+  // vira `null` em todas as linhas e ninguém sabe a diferença. O erro sobe.
+  if (docsRes.error) throw new Error(`Falha ao ler os documentos das deliberações: ${String(docsRes.error)}`);
+  const docs = docsRes.data;
 
   const docPorDelib = new Map<string, any>();
   for (const doc of ((docs ?? []) as any[])) {
