@@ -194,7 +194,10 @@ describe("etapa161 · (b) a rodada que não se registra PARA, e diz por quê", (
     // parou sem saber o que fez. É o "pior formato de zero" da Fase 20, de novo.
     expect(TELA).toMatch(/if \(res\.registro_da_rodada_falhou\)/);
     const iFalhou = TELA.indexOf("if (res.registro_da_rodada_falhou)");
-    const iDrenou = TELA.indexOf('if (!res.restantes) { desfecho = "drenou"');
+    // ⚠️ Fase 31 — o bloco do "drenou" virou multilinha quando passou a levar `fila_final` junto
+    // (Tarefa 1). A PROPRIEDADE é a mesma: o ramo do registro-que-não-gravou tem de ser avaliado
+    // ANTES de `restantes` ser lido como sucesso. Ancorar na forma de UMA LINHA media a grafia.
+    const iDrenou = TELA.indexOf("if (!res.restantes)");
     expect(iFalhou).toBeGreaterThan(-1);
     expect(iFalhou, "o ramo tem de vir ANTES da leitura de `restantes`").toBeLessThan(iDrenou);
   });

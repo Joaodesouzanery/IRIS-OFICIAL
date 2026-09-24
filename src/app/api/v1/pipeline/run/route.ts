@@ -40,6 +40,7 @@ import {
   type PassoEsteira,
 } from "@/lib/server/esteira-reservas";
 import { requeueDocument } from "@/lib/server/upload-queue";
+import { medirFila, classificarFila } from "@/lib/server/estado-da-fila";
 import {
   buscarRunAtiva,
   deveContinuar,
@@ -854,11 +855,40 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     }
   }
 
+  // ═══ Tarefa 1 — "drenada" só quando os QUATRO forem zero ══════════════════
+  // O banner dizia "fila drenada" com 8 documentos em `processing`. Ele era transcrição de
+  // `deveContinuar`, que decide sobre o PLANO da rodada e nunca leu o banco. E a rota já media
+  // `upload_jobs.pending` (acima) e jogava fora: `fila_extracao` não tinha consumidor nenhum.
+  // Quatro `count exact head` (~50 ms cada) só quando a rodada vai DECLARAR fim — numa rodada
+  // que pede outra, o número não seria usado e o round-trip seria desperdício.
+  const filaFinal = restantes
+    ? null
+    : await medirFila({
+        contar: async (tabela, status) => {
+          try {
+            const { count, error } = await db.from(tabela).select("id", { count: "exact", head: true }).eq("status", status);
+            // ⚠️ `null` é FALHOU, nunca zero. `count ?? 0` aqui reabriria a falha silenciosa: a
+            // tela diria "drenada" justamente quando ninguém conseguiu ler a fila.
+            return error ? null : count ?? 0;
+          } catch { return null; }
+        },
+        maisAntigoProcessing: async (tabela) => {
+          try {
+            const { data, error } = await db.from(tabela)
+              .select("updated_at").eq("status", "processing")
+              .order("updated_at", { ascending: true }).limit(1).maybeSingle();
+            return error ? null : (data as { updated_at?: string } | null)?.updated_at ?? null;
+          } catch { return null; }
+        },
+      });
+
   return NextResponse.json({
     etapas,
     restantes, // true = re-chamar para continuar (orçamento de tempo)
     materializados_nesta_rodada: materializouAgora,
     fila_extracao: filaExtracao,
+    // O estado REAL da fila, e o que o banner precisa para não afirmar "drenada" sem base.
+    ...(filaFinal ? { fila_final: { ...filaFinal, estado: classificarFila(filaFinal) } } : {}),
     run_id: execucao?.id ?? null,
     // O token que o cliente devolve na próxima chamada. Sem ele a cerca não fecha.
     rodadas: rodadaReivindicada ?? execucao?.rodadas ?? null,

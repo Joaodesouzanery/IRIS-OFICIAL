@@ -39,6 +39,7 @@ import {
 } from "lucide-react";
 import { agregarEtapas } from "@/lib/server/agregar-rodadas";
 import { decidirAposCerca } from "@/lib/server/cerca-do-cliente";
+import { classificarFila, cabecalhoDoEstadoDaFila, type ContagensDaFila } from "@/lib/server/estado-da-fila";
 
 const COLEGIADO_SIGLAS = ["ANTT", "ANM", "ARTESP"];
 
@@ -406,6 +407,7 @@ export default function VotosDiretoresPage() {
       let ultimoErro: string | null = null;
       let desfecho: "drenou" | "erros" | "teto" | "abortado" = "teto";
       let rodadasFeitas = 0;
+      let filaFinal: ContagensDaFila | null = null;
       // Fase 7 — o `run_id` amarra as rodadas a UMA execução no servidor. É ele que faz "fechar a
       // aba" deixar de perder o acompanhamento (ao reabrir, a tela retoma este id) e que impede
       // duas abas de rodarem a esteira sobre as mesmas linhas: a segunda recebe 409.
@@ -445,6 +447,9 @@ export default function VotosDiretoresPage() {
             // leria `restantes: false` como "drenou" e pintaria o banner VERDE de uma execução
             // que parou sem saber o que fez.
             registro_da_rodada_falhou?: boolean;
+            // Tarefa 1 — o estado REAL da fila, medido no banco. Sem ele o banner só sabe o que o
+            // PLANO da rodada disse, e foi assim que ele afirmou "drenada" com 8 em processing.
+            fila_final?: (ContagensDaFila & { estado: string }) | null;
             // Fase 29 — o TOKEN da cerca: devolvê-lo é o que faz a invocação seguinte ser aceita.
             // Sem ele, o abort do cliente re-disparava sobre a MESMA run com o mesmo `run_id`, o
             // guard de id não via diferença e duas invocações escreviam nas mesmas linhas.
@@ -475,7 +480,11 @@ export default function VotosDiretoresPage() {
             ultimoErro = res.motivo_parada ?? "disjuntor aberto";
             break;
           }
-          if (!res.restantes) { desfecho = "drenou"; break; }
+          if (!res.restantes) {
+            desfecho = "drenou";
+            filaFinal = res.fila_final ?? null;
+            break;
+          }
         } catch (err) {
           // Fase 29 — 409 NÃO é falha: é a cerca dizendo que outra invocação desta run ainda está
           // em andamento (tipicamente a rodada anterior, que o abort do cliente deu por perdida e
@@ -533,9 +542,9 @@ export default function VotosDiretoresPage() {
         }).catch(() => { /* o reaper de órfãs cobre se este aviso falhar */ });
       }
       setRunIdAtivo(null);
-      return { totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas };
+      return { totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas, filaFinal };
     },
-    onSuccess: ({ totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas }) => {
+    onSuccess: ({ totais, ultimas, rodadasComErro, ultimoErro, desfecho, rodadasFeitas, filaFinal }) => {
       setMatchError(null);
       setRodarTudoProgresso(null);
       // ⚠️ `agregarEtapas` só agrega NÚMEROS; string tem de ser lida direto da etapa, como o
@@ -640,9 +649,15 @@ export default function VotosDiretoresPage() {
             `O que já havia sido gravado está no banco: ${partes.join(" · ")}. Último erro: ${ultimoErro ?? "—"}.`,
         );
       } else {
-        const cabecalho = desfecho === "drenou"
-          ? "Esteira zero-toque concluída (fila drenada)"
-          : `Esteira parou no teto de tempo (~25min, ${rodadasFeitas} rodadas) — ainda há fila; rode de novo para continuar`;
+        // ⚠️ Tarefa 1 — "drenada" deixa de ser transcrição de um booleano sobre o PLANO.
+        // O texto agora sai do estado MEDIDO da fila (os quatro contadores), e a frase original só
+        // volta quando os quatro são zero de verdade. Sem `fila_final` (servidor anterior a esta
+        // fase), o texto é o antigo — degradar para a frase honesta exigiria um dado que não veio.
+        const cabecalho = desfecho !== "drenou"
+          ? `Esteira parou no teto de tempo (~25min, ${rodadasFeitas} rodadas) — ainda há fila; rode de novo para continuar`
+          : filaFinal
+            ? cabecalhoDoEstadoDaFila(classificarFila(filaFinal), filaFinal)
+            : "Esteira zero-toque concluída (fila drenada)";
         const ressalva = rodadasComErro > 0
           ? ` · ⚠️ ${rodadasComErro} rodada(s) falharam pelo caminho (último erro: ${ultimoErro ?? "—"})`
           : "";

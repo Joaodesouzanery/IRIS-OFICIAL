@@ -13,6 +13,11 @@ import { RESERVA_POR_JOB_MS, tetoDoDownload, CUSTO_DE_GRAVACAO_MS } from "@/lib/
 import { modoDoProcessamento, type ModoDoProcessamento } from "@/lib/server/modo-do-processamento";
 import { protecaoDepoisDe } from "@/lib/server/orcamento-dos-reapers";
 import { planejarReligacao, type JobConhecido } from "@/lib/server/religacao-da-fila";
+// ⚠️ A janela do reaper mora em `estado-da-fila.ts`, e o import vai NESSA direção: aquele módulo
+// é puro e é importado pela TELA, então ele não pode importar daqui (`@/lib/supabase/server`
+// entraria no bundle do cliente). Antes era um literal `5 * 60_000` solto, e o banner que agora
+// fala em "além dos 5min do reaper" precisa da MESMA janela, não de uma cópia.
+import { REAPER_JANELA_MS } from "@/lib/server/estado-da-fila";
 
 type QueueJob = { jobId: string; agenciaId?: string | null };
 
@@ -346,7 +351,7 @@ export async function processPendingDocuments(
     // "processing" com updated_at > 5min é órfão → volta para "pending" e é reprocessado
     // aqui mesmo (o processPdf sobrescreve o doc preso). Sem isto ficavam presos p/ sempre
     // (o select abaixo só lê "pending"). Espelha o reaper de monitoramento_runs.
-    const staleCutoff = new Date(Date.now() - 5 * 60_000).toISOString();
+    const staleCutoff = new Date(Date.now() - REAPER_JANELA_MS).toISOString();
     const { data: reapedRows } = await db
       .from("upload_jobs")
       .update({ status: "pending", updated_at: new Date().toISOString() })
