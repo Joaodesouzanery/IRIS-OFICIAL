@@ -41,11 +41,41 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
   "pendentes_direcao",
 ]);
 
-/** Contados só sobre o lote que a rodada examinou — somáveis, mas nunca sem `examinados`. */
+/**
+ * Contados só sobre o lote que a rodada examinou — somáveis, mas NUNCA sem dizer que repetem.
+ *
+ * ⚠️ Fase 31 — as cinco últimas entraram porque estavam no default "evento" por OMISSÃO, e não
+ * por decisão. Elas são medidas sobre a JANELA ROTATIVA
+ * (`materializar-faltantes/route.ts:294`: `janelaRotativa(semVoto.length, LOTE, Date.now()/60_000)`),
+ * que gira com o relógio — o MESMO item é reexaminado em rodadas diferentes da mesma run, e cada
+ * reexame reincrementa. Suas irmãs do mesmo laço (`sem_evidencia`, `roster_nao_conferivel`) já
+ * estavam aqui: irmãos do mesmo laço com naturezas diferentes era incoerência gritante.
+ *
+ * ⚠️ E `examinados` é o DENOMINADOR — ele repete pelo mesmo motivo, então rotular as outras sem
+ * rotular ele seria consertar a fração pela metade.
+ */
 export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
   "sem_evidencia",
   "roster_nao_conferivel",
+  "votos_a_menos",
+  "itens_que_mudariam",
+  "regex_divergente",
+  "regex_falso_positivo",
+  "examinados",
 ]);
+
+/**
+ * Agrega UM par chave/valor sobre um acumulador, respeitando a natureza.
+ *
+ * ⚠️ Fase 31 — extraída de `agregarEtapas` para `registrarRodada` usar a MESMA regra. Ela somava
+ * cegamente no banco (`esteira-run.ts:250-256`), então existiam DUAS agregações incompatíveis do
+ * mesmo dado: a tela respeitava estoque/parcial/evento e `esteira_runs.contadores` não — e esses
+ * contadores SÃO lidos (`pipeline/run/route.ts` e `/pipeline/status`).
+ */
+export function acumularChave(acc: Record<string, number>, chave: string, valor: number): void {
+  if (naturezaDaChave(chave) === "estoque") acc[chave] = valor;
+  else acc[chave] = (acc[chave] ?? 0) + valor;
+}
 
 export function naturezaDaChave(chave: string): NaturezaDaChave {
   if (CHAVES_DE_ESTOQUE.has(chave)) return "estoque";
@@ -64,8 +94,7 @@ export function agregarEtapas(
   for (const etapa of Object.values(etapas ?? {})) {
     for (const [chave, valor] of Object.entries(etapa ?? {})) {
       if (typeof valor !== "number") continue;
-      if (naturezaDaChave(chave) === "estoque") totais[chave] = valor;
-      else totais[chave] = (totais[chave] ?? 0) + valor;
+      acumularChave(totais, chave, valor);
     }
   }
   return totais;

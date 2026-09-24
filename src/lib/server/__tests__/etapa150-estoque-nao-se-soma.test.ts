@@ -70,7 +70,33 @@ describe("etapa150 · três rodadas com o MESMO retrato dão o retrato, não o t
     const tela = readFileSync(join(RAIZ, "src/app/dashboard/deliberacoes/votos-diretores/page.tsx"), "utf-8");
     const linha = tela.slice(tela.indexOf("totais.sem_evidencia ?? 0) > 0"), tela.indexOf("totais.sem_evidencia ?? 0) > 0") + 500);
     expect(linha).toMatch(/totais\.examinados/);
-    expect(linha).toMatch(/não deliberações distintas/);
+    // ⚠️ Fase 31 — o rótulo saiu do literal e virou `ROTULO_PARCIAL`, porque agora ele é
+    // obrigatório em MAIS de uma linha (a regra do dispositivo também é parcial). Repetir a
+    // frase em cada uma deixaria as duas divergirem com o tempo — e o rótulo é a coisa que não
+    // pode divergir, já que é ele que diz ao leitor que o número repete.
+    expect(linha).toMatch(/\$\{ROTULO_PARCIAL\}/);
+    expect(tela).toMatch(/const ROTULO_PARCIAL = "ocorrências nos lotes, com repetição";/);
+  });
+
+  it("⚠️ TODA chave parcial exibida na tela carrega o rótulo — nenhuma escapa", () => {
+    // Guard contra o esquecimento clássico: acrescentar uma chave parcial nova e exibi-la crua.
+    const tela = readFileSync(join(RAIZ, "src/app/dashboard/deliberacoes/votos-diretores/page.tsx"), "utf-8");
+    for (const chave of ["sem_evidencia", "regex_divergente"]) {
+      const i = tela.indexOf(`totais.${chave} ?? 0`);
+      expect(i, `${chave} não é exibido`).toBeGreaterThan(-1);
+      expect(tela.slice(i, i + 700), `${chave} exibido sem o rótulo de repetição`)
+        .toMatch(/ROTULO_PARCIAL/);
+    }
+  });
+
+  it("⚠️ a DUPLA NARRATIVA morreu — `itens_que_mudariam` não é mais enunciado", () => {
+    // Ele é, por construção, `regex_divergente + regex_falso_positivo` (A ∪ B, mutuamente
+    // exclusivos, em materializar-faltantes:422-438). A frase dizia a mesma população duas vezes.
+    const tela = readFileSync(join(RAIZ, "src/app/dashboard/deliberacoes/votos-diretores/page.tsx"), "utf-8");
+    const i = tela.indexOf("regra do dispositivo (vigente)");
+    expect(i).toBeGreaterThan(-1);
+    expect(tela.slice(i, i + 400), "o total e a decomposição voltaram a conviver")
+      .not.toMatch(/itens_que_mudariam/);
   });
 });
 

@@ -19,6 +19,7 @@
 
 import { ORDEM_DOS_PASSOS } from "@/lib/server/esteira-reservas";
 import { CHAVE_RODADAS_CONCLUIDAS } from "@/lib/server/cerca-da-run";
+import { acumularChave } from "@/lib/server/agregar-rodadas";
 import { exigirEscritaComLinha } from "@/lib/server/escrita-checada";
 
 type Db = {
@@ -249,9 +250,14 @@ export async function registrarRodada(
 ): Promise<EsteiraRun | null> {
   const { ok, erro } = contarPassos(etapas);
   const contadores: Record<string, number> = { ...(run.contadores ?? {}) };
+  // ⚠️ Fase 31 — a soma deixou de ser CEGA. Antes este laço somava toda chave numérica, e os
+  // RETRATOS (`pendentes`, `fora_da_janela*`, `pendentes_direcao`) viravam somatórios sem sentido
+  // dentro de `esteira_runs.contadores`. Havia duas agregações incompatíveis do mesmo dado: a tela
+  // usava `agregarEtapas` (que respeita a natureza) e o banco não — e o banco É LIDO, tanto por
+  // `pipeline/run/route.ts` (o `tentou_<passo>`) quanto por `/pipeline/status`.
   for (const etapa of Object.values(etapas)) {
     for (const [k, v] of Object.entries(etapa ?? {})) {
-      if (typeof v === "number") contadores[k] = (contadores[k] ?? 0) + v;
+      if (typeof v === "number") acumularChave(contadores, k, v);
     }
   }
   // ⚠️ Fase 30 — A LEASE. `rodadas` conta REIVINDICADAS (sobe no claim); esta chave conta as que

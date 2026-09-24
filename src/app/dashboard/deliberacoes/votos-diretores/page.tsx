@@ -385,6 +385,16 @@ export default function VotosDiretoresPage() {
   // extração → aprovação em camadas com dedup em 4 barreiras → diretores → dedup final). O cliente
   // só re-chama enquanto `restantes` (orçamento de tempo do Hobby). Nada exige aprovação manual.
   type PipelineEtapas = Record<string, Record<string, number | string | boolean>>;
+  /**
+   * ⚠️ O rótulo que as chaves PARCIAIS são obrigadas a carregar.
+   *
+   * Elas são medidas sobre a janela ROTATIVA do materializador, que gira com o relógio: o mesmo
+   * item é reexaminado em rodadas diferentes da mesma run e cada reexame reincrementa. Carregar a
+   * contagem por entidade distinta entre rodadas exigiria persistir o conjunto de ids, e
+   * `contadores` é um mapa de números. Então a saída honesta é a que o usuário pediu: dizer
+   * explicitamente que o número NÃO é contagem de entidades distintas.
+   */
+  const ROTULO_PARCIAL = "ocorrências nos lotes, com repetição";
   const rodarTudoMutation = useMutation({
     mutationFn: async () => {
       const totais: Record<string, number> = {};
@@ -591,9 +601,15 @@ export default function VotosDiretoresPage() {
         // Fase 28 — o número PARCIAL vem com o denominador colado. `sem_evidencia` é contado só
         // sobre o lote que a rodada examinou; sem `examinados` ao lado ele parece uma contagem de
         // deliberações distintas, e não é.
+        // ⚠️ Fase 31 — e o denominador REPETE tanto quanto o numerador: a janela é ROTATIVA
+        // (`janelaRotativa(..., Date.now()/60_000)`), então o mesmo item é reexaminado em rodadas
+        // diferentes da MESMA run. Os dois números são ocorrências nos lotes, com repetição —
+        // dizer isso é o que o usuário pediu quando a contagem por entidade distinta não é
+        // carregável entre rodadas.
         (totais.sem_evidencia ?? 0) > 0
           ? `${totais.sem_evidencia} sem evidência de voto` +
-            ((totais.examinados ?? 0) > 0 ? ` em ${totais.examinados} item(ns) examinado(s) — ocorrências no exame, não deliberações distintas` : "")
+            ((totais.examinados ?? 0) > 0 ? ` em ${totais.examinados} item(ns) examinado(s)` : "") +
+            ` — ${ROTULO_PARCIAL}`
           : null,
         // Fase 28 — o ESTOQUE: é este número que tem de CAIR a cada rodada. Antes a tela só dizia
         // o que a rodada fez, e nunca quanto ainda faltava.
@@ -627,10 +643,20 @@ export default function VotosDiretoresPage() {
         // decidir se ela passa a valer.
         // Fase 22 — a regra VALE (08/09/2026). A linha agora mede a regra ANTIGA contra a vigente:
         // o que voltaria a ser fabricado ou suprimido se alguém revertesse.
+        // ⚠️ Fase 31 — a DUPLA NARRATIVA morreu. `itens_que_mudariam` é, POR CONSTRUÇÃO, a união
+        // dos dois subgrupos: `materializar-faltantes:422-431` conta A e B mutuamente exclusivos e
+        // `:435` conta `A ∪ B`. A frase enunciava a mesma população duas vezes — uma como total e
+        // outra decomposta —, e quem lia somava mentalmente 35 + 35.
+        //
+        // ⚠️ E o denominador estava ERRADO: `votos_a_menos` só cresce num subconjunto restrito de A
+        // (`:479`, com `!inferFromMandate && rows.length === 0` por cima), então "120 votos em 35
+        // itens" usava como base uma população maior do que a que produziu os 120. O denominador
+        // honesto é `regex_divergente`.
         (totais.votos_a_menos ?? 0) + (totais.regex_divergente ?? 0) + (totais.regex_falso_positivo ?? 0) > 0
-          ? `regra do dispositivo (vigente): ${totais.votos_a_menos ?? 0} voto(s) fabricado(s) evitado(s) em ${totais.itens_que_mudariam ?? 0} item(ns)` +
-            `; ${totais.regex_divergente ?? 0} item(ns) com divergência que a regra antiga não via` +
-            `; ${totais.regex_falso_positivo ?? 0} item(ns) unânime(s) recuperado(s) da "taxa vencida"`
+          ? `regra do dispositivo (vigente): ${totais.regex_divergente ?? 0} item(ns) com divergência que a regra antiga não via` +
+            ` (${totais.votos_a_menos ?? 0} voto(s) fabricado(s) evitado(s) neles)` +
+            `; ${totais.regex_falso_positivo ?? 0} item(ns) unânime(s) recuperado(s) da "taxa vencida"` +
+            ` — ${ROTULO_PARCIAL}`
           : null,
       ].filter(Boolean);
       // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.

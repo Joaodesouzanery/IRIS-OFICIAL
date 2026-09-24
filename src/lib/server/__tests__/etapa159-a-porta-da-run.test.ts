@@ -257,7 +257,11 @@ describe("etapa159 · a lease, isolada", () => {
     expect(registrar).toMatch(/contadores\[CHAVE_RODADAS_CONCLUIDAS\] = rodadaConcluida;/);
     // ⚠️ Ela tem de ser gravada DEPOIS da soma das etapas: uma etapa que um dia emitisse esta
     // chave somaria por cima da lease e a esteira passaria a se declarar em voo para sempre.
-    const iSoma = registrar.indexOf("contadores[k] = (contadores[k] ?? 0) + v");
+    // ⚠️ Fase 31 — a soma cega virou `acumularChave`, que respeita estoque/parcial/evento. A
+    // PROPRIEDADE aferida aqui é a mesma e continua importando: a lease tem de ser gravada DEPOIS
+    // do laço. `rodadas_concluidas` não está declarada em nenhuma das listas, então cairia no
+    // default "evento" e SOMARIA por cima da lease se alguma etapa um dia emitisse essa chave.
+    const iSoma = registrar.indexOf("acumularChave(contadores, k, v)");
     const iLease = registrar.indexOf("contadores[CHAVE_RODADAS_CONCLUIDAS] =");
     expect(iSoma).toBeGreaterThan(-1);
     expect(iLease).toBeGreaterThan(iSoma);
