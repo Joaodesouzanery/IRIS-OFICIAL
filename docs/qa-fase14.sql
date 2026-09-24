@@ -118,15 +118,42 @@ SELECT jsonb_pretty(jsonb_build_object(
     ) t
   ),
 
+  -- ⚠️ CORRIGIDO NA FASE 31 — este bloco estava CEGO por quase um mês.
+  -- Ele contava só U+FFFD, a assinatura do mojibake PRÉ-Fase-14. Mas o conserto da Fase 14
+  -- (UTF-8 estrito → fallback Latin-1) TROCOU a assinatura: os nomes de ZIP da ARTESP são CP850,
+  -- e lidos como Latin-1 produzem U+0080 (Ç), § (º) e µ (Á) — nenhum deles é U+FFFD. O monitor
+  -- marcava zero enquanto 623 nomes (23% do acervo) estavam quebrados.
+  -- Um monitor que só conhece a assinatura antiga é pior que monitor nenhum: ele afirma saúde.
   '6_mojibake', (
     SELECT jsonb_build_object(
+      -- A assinatura ANTIGA (byte perdido, irreparável sem re-download).
       'documentos_com_fffd', (SELECT COUNT(*) FROM documentos_regulatorios
                                WHERE position(chr(65533) in filename) > 0),
       'itens_monitorados_com_fffd', (SELECT COUNT(*) FROM monitoramento_itens
                                       WHERE position(chr(65533) in COALESCE(titulo,'')) > 0),
+      -- A assinatura NOVA (CP850 lido como Latin-1). O byte sobreviveu: é REPARÁVEL.
+      -- Controle C1 num nome de arquivo é impossível por acidente — é o Ç do CP850 (0x80).
+      'documentos_com_c1_cp850', (SELECT COUNT(*) FROM documentos_regulatorios
+                                   WHERE filename ~ '[\u0080-\u009f]'),
+      -- ⚠️ E o caso SEM controle nenhum: 'Ata ordinária' vira 'Ata ordin ria' porque o á (0xA0)
+      -- em Latin-1 é NBSP. Um detector que procurasse só C1 perderia este inteiro.
+      'documentos_com_nbsp_ou_simbolo', (SELECT COUNT(*) FROM documentos_regulatorios
+                                          WHERE filename ~ '[\u00a0§µ¶·¤]'),
+      'por_agencia', (
+        SELECT COALESCE(jsonb_object_agg(sigla, n), '{}'::jsonb) FROM (
+          SELECT COALESCE(a.sigla,'?') AS sigla, COUNT(*) AS n
+            FROM documentos_regulatorios dr LEFT JOIN agencias a ON a.id = dr.agencia_id
+           WHERE dr.filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]' OR position(chr(65533) in dr.filename) > 0
+           GROUP BY 1
+        ) x
+      ),
+      -- Posterior ao deploy do decoder ⇒ o caminho NOVO ainda produz, e não é resíduo.
+      'mais_recente', (SELECT MAX(created_at)::date FROM documentos_regulatorios
+                        WHERE filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]'),
       'amostra', (SELECT COALESCE(jsonb_agg(LEFT(filename, 80)), '[]'::jsonb)
                     FROM (SELECT filename FROM documentos_regulatorios
-                           WHERE position(chr(65533) in filename) > 0 LIMIT 8) s)
+                           WHERE position(chr(65533) in filename) > 0
+                              OR filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]' LIMIT 8) s)
     )
   ),
 
