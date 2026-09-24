@@ -15,6 +15,8 @@
  * A etapa123 é transversal: cada chave desta lista precisa de um leitor fora da própria rota.
  */
 
+import { frasePorMotivo } from "@/lib/server/motivo-sem-voto";
+
 /** As chaves numéricas do payload do materializador — a lista que a etapa123 cobra leitor. */
 export const CHAVES_NUMERICAS_DO_MATERIALIZADOR = [
   "materializaveis",
@@ -34,6 +36,9 @@ export const CHAVES_NUMERICAS_DO_MATERIALIZADOR = [
 ] as const;
 
 export interface PayloadDoMaterializador {
+  /** Tarefa 4 — contagem por motivo, sobre a MESMA população das "sem voto". */
+  motivos_sem_voto?: Record<string, number> | null;
+  motivos_gravados?: number | null;
   materializaveis?: number;
   votos?: number;
   sem_evidencia?: number;
@@ -106,5 +111,14 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
   // soma números, e um `false` viraria 0 somado — a tela nunca saberia.
   if (b.leitura_completa === false) resumo.leitura_do_acervo = "INCOMPLETA — os números abaixo subcontam";
   if (nomes.length > 0) resumo.nao_reconhecidos = nomes.join("; ");
+  // ⚠️ Tarefa 4 — o motivo por deliberação chega aqui como FRASE, não como objeto.
+  //
+  // `registrarRodada` e `agregarEtapas` só entendem número e string; um objeto seria descartado em
+  // silêncio pelos dois — o mesmo motivo de `nao_reconhecidos` e `sem_data_por_agencia` serem
+  // string. E é esta linha que dá CONSUMIDOR ao mapa: sem ela, o motivo seria calculado, gravado e
+  // nunca lido, que é exatamente o defeito que a tarefa conserta.
+  const frase = frasePorMotivo((b.motivos_sem_voto ?? {}) as Record<string, number>);
+  if (frase) resumo.motivos_sem_voto = frase;
+  if (typeof b.motivos_gravados === "number") resumo.motivos_gravados = b.motivos_gravados;
   return resumo;
 }

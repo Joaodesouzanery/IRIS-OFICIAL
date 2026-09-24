@@ -34,6 +34,9 @@ import { foraDaJanelaDeMandatos, type JanelaDeMandato } from "@/lib/server/janel
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { janelaRotativa } from "@/lib/server/varredura-rotativa";
+import { lerEmLotes } from "@/lib/server/ler-em-lotes";
+import { exigirEscrita } from "@/lib/server/escrita-checada";
+import { motivoSemVoto, contarPorMotivo, type MotivoSemVoto } from "@/lib/server/motivo-sem-voto";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -198,6 +201,15 @@ export async function POST(req: NextRequest) {
   let foraDeEscopo = 0;
   const foraDaJanelaPorAgencia: Record<string, number> = {};
   const detalheRoster: Array<{ deliberacao_id: string; motivo: string; nao_reconhecidos: string[] }> = [];
+  /**
+   * ⚠️ Tarefa 4 — UM motivo por `deliberacao_id`, sem cap.
+   *
+   * O cap de 20 dos outros detalhes existe para o PAYLOAD HTTP não crescer sem limite; este mapa
+   * não vai no payload cru, vira contagem por motivo e (quando não é dry-run) vira carimbo no
+   * `raw_extraction` da própria deliberação. Truncar aqui reproduziria o defeito que a tarefa
+   * conserta: um motivo que existe, é calculado, e é jogado fora.
+   */
+  const motivoPorDeliberacao = new Map<string, MotivoSemVoto>();
   let restantes = false;
   const detalhe: Array<{ deliberacao_id: string; votos: number; origem: string }> = [];
   /** Commit 3a — o delta da regra que LÊ O DISPOSITIVO, por agência. Medição, não comportamento. */
@@ -270,7 +282,11 @@ export async function POST(req: NextRequest) {
   // rodada, recontando os mesmos itens.
   const semVoto: any[] = [];
   for (const d of semVotoTotal as any[]) {
-    if (!d.agencia_id || !colegiadaIds.has(d.agencia_id)) { foraDeEscopo++; continue; }
+    if (!d.agencia_id || !colegiadaIds.has(d.agencia_id)) {
+      foraDeEscopo++;
+      motivoPorDeliberacao.set(String(d.id), "fora_de_escopo");
+      continue;
+    }
     const motivoFora = foraDaJanelaDeMandatos({
       dataReuniao: d.data_reuniao,
       janelas: await janelasDa(d.agencia_id),
@@ -282,8 +298,10 @@ export async function POST(req: NextRequest) {
       if (motivoFora === "sem_data_de_reuniao") {
         foraDaJanelaSemData++;
         semDataPorAgencia[sigla] = (semDataPorAgencia[sigla] ?? 0) + 1;
+        motivoPorDeliberacao.set(String(d.id), "sem_data");
       } else {
         foraDaJanelaAnterior++;
+        motivoPorDeliberacao.set(String(d.id), "fora_da_janela_de_mandatos");
       }
       continue;
     }
@@ -361,7 +379,11 @@ export async function POST(req: NextRequest) {
     // estoque completo — um número que quer dizer alguma coisa.
 
     const diretoresList = await diretoresDa(d.agencia_id);
-    if (diretoresList.length === 0) { semEvidencia++; continue; }
+    if (diretoresList.length === 0) {
+      semEvidencia++;
+      motivoPorDeliberacao.set(String(d.id), "roster_desconhecido");
+      continue;
+    }
 
     // Roster: presentes persistidos casados ≥0.85; fallback mandatos na data (mesma
     // hierarquia do confirm). Em item ANTT, os nomes_votacao SÃO os presentes.
@@ -389,6 +411,16 @@ export async function POST(req: NextRequest) {
     });
     if (!vereditoRoster.confiavel) {
       rosterNaoConferivel++;
+      // ⚠️ As duas causas de roster não conferível são MUITO diferentes: nome citado que o cadastro
+      // não reconhece é falha de EXTRAÇÃO (inclusive o "Diretor" genérico chegando como pessoa);
+      // sem nome citado, é o cadastro que está incompleto. Achatá-las mandaria alguém cadastrar
+      // uma pessoa que não existe.
+      motivoPorDeliberacao.set(String(d.id), motivoSemVoto({
+        resultado: d.resultado, agenciaColegiada: true, dataReuniao: d.data_reuniao,
+        motivoForaDaJanela: null, diretoresNoCadastro: diretoresList.length,
+        motivoDoRoster: vereditoRoster.motivo, naoReconhecidos: vereditoRoster.naoReconhecidos ?? [],
+        contestado: false, linhasConstruidas: 0, payloadChegou: true,
+      })!);
       if (detalheRoster.length < 20) {
         detalheRoster.push({
           deliberacao_id: d.id,
@@ -481,7 +513,16 @@ export async function POST(req: NextRequest) {
       deltaPorAgencia[sigla] = deltaPorAgencia[sigla] ?? { itens: 0, votos: 0 };
       deltaPorAgencia[sigla].votos += activeDiretoresList.length;
     }
-    if (rows.length === 0) { semEvidencia++; continue; }
+    if (rows.length === 0) {
+      semEvidencia++;
+      motivoPorDeliberacao.set(String(d.id), motivoSemVoto({
+        resultado: d.resultado, agenciaColegiada: true, dataReuniao: d.data_reuniao,
+        motivoForaDaJanela: null, diretoresNoCadastro: diretoresList.length,
+        motivoDoRoster: null, naoReconhecidos: [],
+        contestado, linhasConstruidas: 0, payloadChegou: true,
+      })!);
+      continue;
+    }
     materializaveis++;
     if (detalhe.length < 50) {
       detalhe.push({ deliberacao_id: d.id, votos: rows.length, origem: inferFromMandate ? "inferencia" : "nominal" });
@@ -506,6 +547,63 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  // ═══ Tarefa 4 — os que ficaram sem motivo, e a gravação ══════════════════
+  //
+  // ⚠️ Passada SEPARADA de propósito. A linha `if (!pesado) { semPayload++; continue; }` é pinada
+  // literalmente por `etapa149` — o teste que guarda a lição da Fase 28: não classificar o que não
+  // se leu. Acrescentar um `push` ali quebraria o teste sem ganho; o mesmo conjunto sai daqui,
+  // porque `Object.assign(d, pesado)` só popula `raw_extraction` em quem recebeu payload.
+  for (const d of loteBruto as any[]) {
+    if (!motivoPorDeliberacao.has(String(d.id)) && !d.raw_extraction) {
+      motivoPorDeliberacao.set(String(d.id), "falha_tecnica_de_leitura");
+    }
+  }
+  // Quem sobrou materializou OU ainda não foi alcançado pela janela rotativa desta rodada.
+  for (const d of semVoto as any[]) {
+    if (!motivoPorDeliberacao.has(String(d.id))) {
+      motivoPorDeliberacao.set(String(d.id), "materializavel_nao_processado");
+    }
+  }
+  const motivosPorCategoria = contarPorMotivo(motivoPorDeliberacao.values());
+
+  // ⚠️ A GRAVAÇÃO MESCLA o jsonb, e por isso precisa do valor ATUAL.
+  //
+  // `raw_extraction` carrega os baldes de nome, a unanimidade e o `item_numero` — substituí-lo por
+  // `{motivo_sem_voto}` apagaria a base do backfill retroativo. O lote da rodada já tem o payload
+  // em mão (`Object.assign` acima); os de fora dele (escopo e janela são subtraídos ANTES do lote,
+  // então nunca entram nele) exigem uma leitura própria, em lotes de 100 com erro checado.
+  let motivosGravados = 0;
+  if (!dryRun && motivoPorDeliberacao.size > 0) {
+    const jaEmMaos = new Map<string, Record<string, unknown>>();
+    for (const d of loteBruto as any[]) {
+      if (d.raw_extraction) jaEmMaos.set(String(d.id), d.raw_extraction as Record<string, unknown>);
+    }
+    const faltando = [...motivoPorDeliberacao.keys()].filter((id) => !jaEmMaos.has(id));
+    const rawRes = await lerEmLotes<any>(db, {
+      tabela: "deliberacoes", select: "id, raw_extraction",
+      coluna: "id", valores: faltando, label: "materializar/raw-para-motivo",
+    });
+    // Falha de leitura NÃO vira gravação cega: sem o valor atual, mesclar é impossível e
+    // substituir seria perda de dado. Sai sem carimbar, e o número de gravados denuncia.
+    if (!rawRes.error) {
+      for (const r of rawRes.data as any[]) jaEmMaos.set(String(r.id), (r.raw_extraction ?? {}) as Record<string, unknown>);
+    }
+    for (const [id, motivo] of motivoPorDeliberacao) {
+      // Recheck por item, como o laço principal: sem ele, uma rodada apertada gastaria a fatia
+      // carimbando motivo em vez de materializar voto — o trabalho de maior valor.
+      if (!hasBudget(deadlineAt, RESERVA_POR_ITEM_MS)) { restantes = true; break; }
+      const base = jaEmMaos.get(id);
+      if (!base) continue; // sem o jsonb atual não se grava: mesclar exige ter o que mesclar
+      const ok = await exigirEscrita(
+        db.from("deliberacoes")
+          .update({ raw_extraction: { ...base, motivo_sem_voto: motivo }, updated_at: new Date().toISOString() })
+          .eq("id", id),
+        `motivo_sem_voto de ${id}`,
+      );
+      if (ok) motivosGravados++;
+    }
+  }
+
   return NextResponse.json({
     dry_run: dryRun,
     finais_analisadas: finais.length,
@@ -517,6 +615,15 @@ export async function POST(req: NextRequest) {
      */
     sem_voto: semVotoTotal.length,
     pendentes: semVoto.length,
+    /**
+     * ⚠️ Tarefa 4 — UM motivo por deliberação, categorias mutuamente exclusivas.
+     *
+     * Antes, os sub-motivos exibidos sob as "45 sem voto" vinham de TRÊS populações diferentes,
+     * duas delas subtraídas ANTES de as 45 existirem — a tela os justapunha como se somassem.
+     * Aqui o mapa é sobre a MESMA população, e a soma fecha com `pendentes` + `fora_de_escopo`.
+     */
+    motivos_sem_voto: motivosPorCategoria,
+    motivos_gravados: motivosGravados,
     examinados,
     /** A rodada olhou o bloco `bloco` de `blocos` — a varredura fecha uma volta em `blocos` min. */
     janela_bloco: janela.bloco,

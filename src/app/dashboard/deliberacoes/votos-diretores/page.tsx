@@ -559,6 +559,11 @@ export default function VotosDiretoresPage() {
       setRodarTudoProgresso(null);
       // ⚠️ `agregarEtapas` só agrega NÚMEROS; string tem de ser lida direto da etapa, como o
       // `naoReconhecidos` abaixo. Escrever `totais.leitura_do_acervo` seria letra morta.
+      // A frase por motivo é STRING: `agregarEtapas` só soma números, então ela é lida direto da
+      // etapa, como `leitura_do_acervo` e `nao_reconhecidos`.
+      const motivosSemVoto = typeof ultimas.backfill_votos?.motivos_sem_voto === "string"
+        ? (ultimas.backfill_votos.motivos_sem_voto as string)
+        : null;
       const leituraDoAcervo = typeof ultimas.backfill_votos?.leitura_do_acervo === "string"
         ? (ultimas.backfill_votos.leitura_do_acervo as string)
         : null;
@@ -614,6 +619,12 @@ export default function VotosDiretoresPage() {
         // Fase 28 — o ESTOQUE: é este número que tem de CAIR a cada rodada. Antes a tela só dizia
         // o que a rodada fez, e nunca quanto ainda faltava.
         (totais.pendentes ?? 0) > 0 ? `${totais.pendentes} deliberação(ões) final(is) ainda sem voto (estoque de agora)` : null,
+        // ⚠️ Tarefa 4 — UM motivo por deliberação, categorias mutuamente exclusivas.
+        // Antes, os sub-motivos exibidos logo abaixo das "45 sem voto" vinham de TRÊS populações
+        // diferentes, e DUAS delas eram subtraídas ANTES de as 45 existirem (`route.ts:273` e
+        // `:289`). A tela os justapunha como se decompusessem o número — e nenhum conjunto somava
+        // 45. Esta linha é sobre a MESMA população, e é ela que dá leitor ao motivo persistido.
+        motivosSemVoto,
         (totais.fora_de_escopo ?? 0) > 0
           ? `${totais.fora_de_escopo} de agência não-colegiada — fora do escopo da esteira de votos, não é falta de evidência`
           : null,
