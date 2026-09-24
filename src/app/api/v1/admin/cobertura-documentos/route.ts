@@ -13,6 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest } from "@/lib/server/request-guards";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
+import { lerTudo } from "@/lib/server/select-all-paged";
 
 export const dynamic = "force-dynamic";
 
@@ -33,6 +34,15 @@ interface AgenciaCobertura {
 }
 
 export interface CoberturaDocumentosResponse {
+  /**
+   * Quantas linhas cada tabela rendeu, e se a leitura foi completa (Fase 31).
+   *
+   * ⚠️ `parcial` é `truncated || Boolean(error)`. Olhar só a truncagem deixaria o relatório
+   * parecer completo justamente quando a leitura falhou — `selectAllPaged` devolve
+   * `truncated: false` no caminho de erro.
+   */
+  leitura_por_tabela?: Record<string, { linhas: number; parcial: boolean; erro: string | null }>;
+  leitura_completa?: boolean;
   gerado_em: string;
   modo: "real" | "demo";
   por_agencia: AgenciaCobertura[];
@@ -75,14 +85,43 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
+  // ═══ Fase 31 — as SEIS leituras que truncavam em silêncio ═════════════════
+  //
+  // `.limit(20000)`/`.limit(40000)` NÃO é paginação: o PostgREST corta em ~1.000 e o `.limit`
+  // grande é um teto que a plataforma ignora. E nenhuma delas tinha `.order()`, sem o qual nem
+  // `.range()` dá ordem total. É o mesmo defeito que fez `Completude 2026`, `saude-dados` e
+  // `governanca-agencias` subcontarem, e que chamou de "537 órfãos" o resto da fatia.
+  //
+  // ⚠️ AS SEIS PRECISAM DAS LINHAS, não de contagem. `docs/PENDENCIAS.md:228` mandava medir
+  // `monitoramento_itens` antes de escolher entre `count: exact` e `lerTudo` — e a leitura do
+  // código responde: cada uma agrega POR AGÊNCIA × status/tipo, em JS. Um `count` total não
+  // produz esse recorte. Então é `lerTudo`, e a resposta passa a PUBLICAR quantas linhas leu de
+  // cada tabela — que é a medição que o PENDENCIAS pedia, agora contínua em vez de pontual.
   const [agenciasRes, reunioesRes, itensRes, coletadosRes, regsRes, delibsRes] = await Promise.all([
-    db.from("agencias").select("id, sigla, nome").eq("ativo", true),
-    db.from("antt_reunioes_coletadas").select("agencia_id").limit(20000),
-    db.from("monitoramento_itens").select("agencia_id, status, documento_id").limit(40000),
-    db.from("documentos_coletados").select("agencia_id, tipo, status").limit(40000),
-    db.from("documentos_regulatorios").select("agencia_id, status, is_duplicate").limit(40000),
-    db.from("deliberacoes").select("agencia_id, tipo_documento, documento_pai_id, resultado, numero_reuniao, data_reuniao").limit(40000),
+    lerTudo<any>(() => db.from("agencias").select("id, sigla, nome").eq("ativo", true).order("id"), "cobertura/agencias"),
+    lerTudo<any>(() => db.from("antt_reunioes_coletadas").select("agencia_id").order("id"), "cobertura/reunioes"),
+    lerTudo<any>(() => db.from("monitoramento_itens").select("agencia_id, status, documento_id").order("id"), "cobertura/itens"),
+    lerTudo<any>(() => db.from("documentos_coletados").select("agencia_id, tipo, status").order("id"), "cobertura/coletados"),
+    lerTudo<any>(() => db.from("documentos_regulatorios").select("agencia_id, status, is_duplicate").order("id"), "cobertura/regulatorios"),
+    lerTudo<any>(() => db.from("deliberacoes").select("agencia_id, tipo_documento, documento_pai_id, resultado, numero_reuniao, data_reuniao").order("id"), "cobertura/deliberacoes"),
   ]);
+
+  // ⚠️ A bandeira considera o ERRO, não só `truncated`: no caminho de erro `selectAllPaged`
+  // devolve `truncated: false` com as linhas que já tinha (`select-all-paged.ts:23`). Olhar só a
+  // truncagem deixaria o relatório parecer completo justamente quando a leitura falhou — é a
+  // armadilha que `cobertura-ao-vivo:148-151` já documenta.
+  const leituras = {
+    agencias: agenciasRes, reunioes: reunioesRes, itens: itensRes,
+    coletados: coletadosRes, regulatorios: regsRes, deliberacoes: delibsRes,
+  };
+  const leitura_por_tabela = Object.fromEntries(
+    Object.entries(leituras).map(([nome, r]) => [nome, {
+      linhas: r.data.length,
+      parcial: r.truncated || Boolean(r.error),
+      erro: r.error ? String((r.error as { message?: string }).message ?? r.error) : null,
+    }]),
+  );
+  const leituraParcial = Object.values(leitura_por_tabela).some((x) => x.parcial);
 
   const agencias: Array<{ id: string; sigla: string; nome: string }> = agenciasRes.data ?? [];
   const bySigla = new Map<string, AgenciaCobertura>();
@@ -151,11 +190,23 @@ export async function GET(req: NextRequest) {
   if (regsFailed > 0) alertas.push(`${regsFailed} documento(s) com status 'failed' (download, PDF corrompido ou timeout — reprocessáveis).`);
   if (reviewPending > 0) alertas.push(`${reviewPending} documento(s) em review_pending aguardando confirmação manual.`);
   if (coletadosComErro > 0) alertas.push(`${coletadosComErro} documento(s) coletado(s) com erro de download (sem retry).`);
+  // ⚠️ A ressalva vem PRIMEIRO na lista quando existe: com leitura parcial, todo número abaixo
+  // subconta, e um alerta sobre "N failed" lido sem essa ressalva manda alguém investigar um
+  // número que não é o número.
+  if (leituraParcial) {
+    const quais = Object.entries(leitura_por_tabela).filter(([, x]) => x.parcial).map(([n]) => n).join(", ");
+    alertas.unshift(`⚠️ LEITURA PARCIAL (${quais}) — todos os números abaixo SUBCONTAM. Veja \`leitura_por_tabela\`.`);
+  }
 
   const response: CoberturaDocumentosResponse = {
     gerado_em: new Date().toISOString(),
     modo: "real",
     por_agencia,
+    // Quantas linhas cada tabela rendeu, e se a leitura foi completa. É o número que decide se
+    // alguma delas um dia precisa de outro tratamento — e ele fica visível a cada chamada, em vez
+    // de depender de alguém lembrar de medir.
+    leitura_por_tabela,
+    leitura_completa: !leituraParcial,
     perdas: {
       coletados_com_erro: coletadosComErro,
       regulatorios_failed: regsFailed,
