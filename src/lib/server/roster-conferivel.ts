@@ -29,6 +29,24 @@ export interface DiretorDoRoster {
   nome_variantes?: string[];
 }
 
+/**
+ * ⚠️ O guard vale no `upload/confirm`? MEDIDO e DESLIGADO (Fase 31, Bloco 3).
+ *
+ * `conferirRoster` tinha **um único call-site em produção** — `materializar-faltantes:406`, o
+ * backfill retroativo. A porta PRINCIPAL de ingestão (`upload/confirm`) calculava o roster e gravava
+ * voto **sem conferir nada**. O guard de 3 camadas da Fase 20 protegia só metade do caminho.
+ *
+ * Ligar aqui REMOVE voto: um documento cujo preâmbulo nomeia gente que o cadastro não reconhece
+ * hoje recebe voto para o subconjunto que casou, como se fosse o colegiado inteiro; com o guard, não
+ * recebe voto nenhum e o motivo é registrado. É mais honesto — e é mudança de número público, então
+ * entra medido, com a contagem na resposta antes de valer.
+ *
+ * ⚠️ E aqui só as camadas 1 (presença) e 3 (candidatos pendentes) podem disparar: `signatarios` não
+ * existe no payload do confirm nem em `types/index.ts`, então a camada 2 é inalcançável neste
+ * caminho. Está em `docs/PENDENCIAS.md`.
+ */
+export const GUARD_DE_ROSTER_NO_CONFIRM = false;
+
 export type MotivoDoRoster =
   | "roster_confere_com_presenca"
   | "roster_confere_com_assinatura"
@@ -101,8 +119,27 @@ export function conferirRoster(input: {
     return { confiavel: false, motivo: "cadastro_incompleto", naoReconhecidos: [] };
   }
 
-  // O resíduo irredutível: sem nomes e sem candidato pendente, não há como conferir. Continua
-  // inferindo — bloquear aqui mataria a ARTESP, que por desenho nunca nomina — mas o veredito
-  // viaja para a proveniência, para quem lê a métrica saber que ninguém conferiu este roster.
+  /**
+   * O resíduo irredutível: sem nomes e sem candidato pendente, não há como conferir. Continua
+   * inferindo — bloquear aqui mataria a ARTESP, que por desenho nunca nomina.
+   *
+   * ⚠️ CORREÇÃO (Fase 31, Bloco 3) — a versão anterior deste comentário dizia que "o veredito viaja
+   * para a proveniência, para quem lê a métrica saber que ninguém conferiu este roster". **Não
+   * viaja.** Dois fatos medidos:
+   *
+   * 1. `roster_nao_conferivel` não é valor de `ProvenienciaVoto` (`vote-inference.ts:19-23`), e o
+   *    CHECK da coluna só admite `revisao_humana | nominal | inferido_unanimidade |
+   *    inferido_decisao` (`20260824120000_votos_proveniencia.sql:42-44`). Colocá-lo ali exigiria
+   *    migration.
+   * 2. O único consumidor do veredito em produção é o ramo `if (!confiavel)` de
+   *    `materializar-faltantes:412`, que persiste o motivo em `raw_extraction.motivo_sem_voto`
+   *    (Fase 31, Commit F). Este `return` é `confiavel: true` — logo **não entra naquele ramo, e o
+   *    veredito é descartado exatamente no caso sobre o qual o comentário falava**.
+   *
+   * Era uma promessa no comentário sem nada que a cumprisse: `capacidade-sem-consumidor` escrita em
+   * prosa, no arquivo que existe para dar confiança. Fica registrado em `docs/PENDENCIAS.md` que
+   * levar o veredito ao voto exige migration; enquanto não houver, ele morre aqui — e agora o
+   * comentário diz isso.
+   */
   return { confiavel: true, motivo: "roster_nao_conferivel", naoReconhecidos: [] };
 }

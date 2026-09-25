@@ -6,6 +6,7 @@
 
 import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
+import { conferirRoster, GUARD_DE_ROSTER_NO_CONFIRM } from "@/lib/server/roster-conferivel";
 import crypto from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
@@ -430,6 +431,31 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     // Gate de COLEGIADA (QA ago/2026): fora de ANTT/ANM/ARTESP a esteira de votos não cria
     // candidato a diretor nem infere voto por mandato — ANS/ANA ganhavam "diretores votando"
     // por artefato (misclassificação de sigla + mandato fabricado).
+    /**
+     * ⚠️ Fase 31, Bloco 3 — quantos documentos o guard de roster RECUSARIA neste caminho.
+     * `conferirRoster` nunca foi chamado aqui: a porta principal de ingestão gravava voto sem
+     * conferir o preâmbulo contra o roster que ia receber os votos. Medido com
+     * `GUARD_DE_ROSTER_NO_CONFIRM = false`, então nada muda ainda.
+     */
+    let rosterRecusadoPeloGuard = 0;
+    const candidatosPendentesCache = new Map<string, number>();
+    async function candidatosPendentesNoConfirm(agenciaId: string | null): Promise<number> {
+      if (!agenciaId) return 0;
+      const hit = candidatosPendentesCache.get(agenciaId);
+      if (hit !== undefined) return hit;
+      const { count, error } = await db
+        .from("diretor_candidatos")
+        .select("id", { count: "exact", head: true })
+        .eq("agencia_id", agenciaId)
+        .in("review_status", ["pendente", "conflito"]);
+      // Erro vira ZERO, e isso é o lado seguro para a camada 3: um erro não pode DECLARAR que o
+      // cadastro está incompleto. O que ele não pode é virar "está completo" — e não vira, porque
+      // zero só significa "a camada 3 não dispara", deixando as camadas 1 e 2 decidirem.
+      const n = error ? 0 : count ?? 0;
+      candidatosPendentesCache.set(agenciaId, n);
+      return n;
+    }
+
     const colegiadaIds = new Set(
       ((agenciasRows ?? []) as Array<{ id: string; sigla: string }>)
         .filter((a) => COLEGIADO_SIGLAS.has(String(a.sigla)))
@@ -644,7 +670,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         // match confiável NÃO entra (segue o contrato: sem certeza → sem voto).
         const presentesRoster = resolverPresentesRoster(d.nomes_presentes ?? [], diretoresList);
         // Agência não-colegiada: roster SEMPRE vazio → nenhum voto inferido/fabricado.
-        const activeDiretoresList = !colegiadaIds.has(effectiveAgenciaId)
+        const rosterBruto = !colegiadaIds.has(effectiveAgenciaId)
           ? []
           : presentesRoster.length > 0
             ? presentesRoster
@@ -654,6 +680,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
               d.data_reuniao,
               diretoresList,
             );
+        /**
+         * ⚠️ Fase 31, Bloco 3 — O GUARD DE ROSTER ENTRA NO CAMINHO PRIMÁRIO.
+         *
+         * `conferirRoster` tinha um único call-site em produção (`materializar-faltantes:406`), o
+         * backfill. AQUI, na porta principal, o roster era decidido e o voto gravado sem conferir
+         * nada. A camada 1 pergunta: todo nome do preâmbulo casa com quem vai receber voto? Se não,
+         * o roster é parcial e inferir sobre ele grava voto no nome errado.
+         *
+         * A MEDIÇÃO roda sempre; a RECUSA está atrás da flag, porque remover voto é mudança de
+         * número público. `signatarios` não chega neste payload, então a camada 2 é inalcançável
+         * aqui — só 1 e 3 podem disparar.
+         */
+        const vereditoRoster = conferirRoster({
+          roster: rosterBruto,
+          nomesPresentes: d.nomes_presentes ?? [],
+          candidatosPendentes: await candidatosPendentesNoConfirm(effectiveAgenciaId),
+        });
+        if (!vereditoRoster.confiavel) rosterRecusadoPeloGuard++;
+        const activeDiretoresList = GUARD_DE_ROSTER_NO_CONFIRM && !vereditoRoster.confiavel
+          ? []
+          : rosterBruto;
 
         // Reunião materializada: garante a linha canônica e liga as deliberações
         // (degrada para null enquanto a migration não for aplicada).
@@ -1126,7 +1173,15 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     const response: BatchConfirmResponse = { created, errors, results };
     return NextResponse.json(
-      { ...response, ...(cortadasPorOrcamento > 0 ? { restantes: true, cortadas_por_orcamento: cortadasPorOrcamento } : {}) },
+      {
+        ...response,
+        ...(cortadasPorOrcamento > 0 ? { restantes: true, cortadas_por_orcamento: cortadasPorOrcamento } : {}),
+        // ⚠️ MEDIDO E DESLIGADO: quantos documentos o guard recusaria se `GUARD_DE_ROSTER_NO_CONFIRM`
+        // fosse `true`. É o número que decide se ele vira `true`.
+        ...(rosterRecusadoPeloGuard > 0
+          ? { roster_recusado_pelo_guard: rosterRecusadoPeloGuard, guard_de_roster_ativo: GUARD_DE_ROSTER_NO_CONFIRM }
+          : {}),
+      },
       { status: 201 },
     );
   } catch (error) {
