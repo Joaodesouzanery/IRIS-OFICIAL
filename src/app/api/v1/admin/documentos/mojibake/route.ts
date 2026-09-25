@@ -80,6 +80,23 @@ async function medir(db: any) {
   const candidatos: Candidato[] = [];
   const bytes: Record<string, number> = {};
   let comFffd = 0;
+  /**
+   * ⚠️ DOS IRREPARÁVEIS, quais têm via de recuperação — e a resposta corrige o que esta fase
+   * afirmou antes.
+   *
+   * O commit `d9ac996` disse que os U+FFFD "só voltam do ZIP no Storage". **O ZIP nunca vai para o
+   * Storage**: `enqueuePdfBuffer` sobe apenas os PDFs extraídos, em
+   * `${agenciaId ?? "auto"}/${fileHash}.pdf` (`upload-queue.ts:192-195`). O ZIP é aberto em memória
+   * (`zip-extractor`) e descartado.
+   *
+   * A única via real é o `metadata.source_url`, que a ESTEIRA grava (`enqueue-pdfs:478`): com a URL
+   * do ZIP no portal da agência, os nomes de entrada podem ser lidos de novo. Upload MANUAL não tem
+   * URL — `source_archive` ali é só o nome do arquivo que o operador escolheu (`batch/route.ts:70`).
+   * Esses são PERDA DEFINITIVA, e o relatório tem de dizer isso em vez de prometer um reparo que não
+   * existe.
+   */
+  let fffdComSourceUrl = 0;
+  let fffdSemFonte = 0;
 
   for (const d of docsRes.data as any[]) {
     const meta = (d.metadata ?? {}) as Record<string, unknown>;
@@ -94,7 +111,11 @@ async function medir(db: any) {
       zip_entry: nomes.zip_entry ? reparoDoNome(nomes.zip_entry) : null,
     };
     // U+FFFD é a assinatura do mojibake PRÉ-Fase-14: ali o byte se perdeu e não há reparo.
-    if (Object.values(nomes).some((n) => n?.includes("�"))) comFffd++;
+    if (Object.values(nomes).some((n) => n?.includes("�"))) {
+      comFffd++;
+      if (texto(meta.source_url)) fffdComSourceUrl++;
+      else fffdSemFonte++;
+    }
     if (!reparos.filename && !reparos.source_archive && !reparos.zip_entry) continue;
 
     if (nomes.filename && reparos.filename) contarBytesAltos(nomes.filename, bytes);
@@ -115,7 +136,7 @@ async function medir(db: any) {
     });
   }
 
-  return { candidatos, bytes, comFffd, truncado: docsRes.truncated, total: docsRes.data.length };
+  return { candidatos, bytes, comFffd, fffdComSourceUrl, fffdSemFonte, truncado: docsRes.truncated, total: docsRes.data.length };
 }
 
 /**
@@ -186,6 +207,10 @@ function resumir(m: Awaited<ReturnType<typeof medir>>, chave: Awaited<ReturnType
       bytes_altos_mais_frequentes: Object.fromEntries(histograma),
       cp850_0x80_ou_0xB5: (m.bytes["0x80"] ?? 0) + (m.bytes["0xB5"] ?? 0),
       u_fffd_irreparavel: m.comFffd,
+      // ⚠️ O ZIP NÃO está no Storage (só os PDFs extraídos estão). Destes, os que têm
+      // `metadata.source_url` podem ter os nomes relidos do portal; os outros são perda definitiva.
+      u_fffd_recuperavel_por_url: m.fffdComSourceUrl,
+      u_fffd_perda_definitiva: m.fffdSemFonte,
     },
     chave_de_dedup: {
       ...chave,

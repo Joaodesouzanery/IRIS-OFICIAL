@@ -145,6 +145,48 @@ SELECT jsonb_pretty(jsonb_build_object(
     )
   ),
 
+  -- ⑦ DOCUMENTO SEM AGENCIA (Fase 31, Bloco 3)
+  --    Medido em producao: 15 documentos com nome corrompido cairam no grupo de agencia `?` — todos
+  --    com procedencia de ZIP, o mais recente de 2026-08-30. `?` e `agencia_id IS NULL`: a coluna e
+  --    nullable por desenho (`20260517173457:6`) e nenhuma migration do repo tem `DELETE FROM
+  --    agencias`, entao nao e FK orfa.
+  --
+  --    ⚠️ E DOCUMENTO SEM AGENCIA E BECO SEM SAIDA: `deliberacoes.agencia_id` e NOT NULL
+  --    (`001_initial_schema.sql:70`), entao ele nunca vira deliberacao — fica no acervo sem poder
+  --    avancar, e sem aparecer em nenhuma contagem por agencia.
+  --
+  --    Tres caminhos produzem isso (dois seguem abertos):
+  --    1. Upload manual de ZIP sem escolher agencia (o seletor nasce vazio) + PDF escaneado, em que a
+  --       analise tambem nao resolve. ABERTO.
+  --    2. A consulta de retry da esteira nao filtra agencia (`enqueue-pdfs:158-166`), e ha site
+  --       seedado com `agencia_id` NULL (`006_associados_documentos.sql:161`). ABERTO.
+  --    3. `pipeline.ts` gravava `upload_jobs.agencia_id = analysis.agencia_id_detected` SEM fallback,
+  --       apagando a agencia que o job tinha; `upload-queue.ts:143` le esse campo num reenvio.
+  --       ✅ CONSERTADO nesta fase (`?? job.agencia_id`, igual a linha do documento).
+  --
+  --    ESPERADO: `sem_agencia` nao CRESCE depois do deploy. O caminho 3 fechou; se ainda crescer, e 1
+  --    ou 2, e ai o numero aponta qual.
+  '7_documento_sem_agencia', (
+    SELECT jsonb_build_object(
+      'total', COUNT(*),
+      'de_zip', COUNT(*) FILTER (WHERE dr.source_archive IS NOT NULL OR dr.metadata ? 'source_zip_entry'),
+      'com_source_url', COUNT(*) FILTER (WHERE dr.metadata ? 'source_url'),
+      -- `storage_path` comeca com `auto/` exatamente quando a agencia era NULL na hora do upload
+      -- (`upload-queue.ts:192`: `${agenciaId ?? "auto"}/${fileHash}.pdf`). E a impressao digital do
+      -- caminho 1, e ela sobrevive mesmo que a agencia seja preenchida depois.
+      'storage_em_auto', COUNT(*) FILTER (WHERE dr.storage_path LIKE 'auto/%'),
+      'mais_recente', MAX(dr.created_at)::date,
+      'por_status', (
+        SELECT COALESCE(jsonb_object_agg(status, n), '{}'::jsonb)
+          FROM (SELECT COALESCE(status,'?') AS status, COUNT(*) AS n
+                  FROM documentos_regulatorios WHERE agencia_id IS NULL GROUP BY 1) y
+      ),
+      'amostra', (array_agg(LEFT(dr.filename, 70) ORDER BY dr.created_at DESC))[1:5]
+    )
+      FROM documentos_regulatorios dr
+     WHERE dr.agencia_id IS NULL
+  ),
+
   -- ⑥ AGENCIA DO DOCUMENTO × AGENCIA CITADA NO NOME (Fase 31, Bloco 3)
   --    Medido em producao: duas Deliberacoes da ARTESP estao arquivadas como documentos da ANTT
   --    (`"DELIBERACAO ARTESP No 593_SEI - …_SUMEF_ACT_ANTT_ARTESP"`; SEI 134.xxx e da ARTESP, e

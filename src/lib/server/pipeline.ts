@@ -188,9 +188,24 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
       updated_at: new Date().toISOString(),
     });
 
+    // ⚠️ Fase 31, Bloco 3 — `?? job.agencia_id`, igual à linha do documento acima.
+    //
+    // Sem o fallback, esta linha APAGAVA a agência que o job já tinha: `agencia_id_detected` é `null`
+    // quando a análise não resolve (PDF escaneado não tem texto), e o `update` gravava esse `null`
+    // por cima do valor que a ESTEIRA conhecia (o item de monitoramento sabe de que site o documento
+    // veio). O documento acima é salvo pelo `??` na linha 172; o JOB não era.
+    //
+    // E a perda não ficava só no job: `upload-queue.ts:143` (`agenciaId ?? existingJob.agencia_id`)
+    // lê justamente esse campo quando um documento é criado a partir de job já existente — num
+    // reenvio do mesmo PDF sem escolher agência, o documento novo nascia com `agencia_id` NULL. É um
+    // dos três caminhos que produzem os 15 documentos de agência `?` medidos em produção.
     await exigirEscrita(db
       .from("upload_jobs")
-      .update({ status: "done", agencia_id: analysis.agencia_id_detected, updated_at: new Date().toISOString() })
+      .update({
+        status: "done",
+        agencia_id: analysis.agencia_id_detected ?? job.agencia_id,
+        updated_at: new Date().toISOString(),
+      })
       .eq("id", jobId), `job ${jobId} → done`);
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
