@@ -147,7 +147,24 @@ describe("etapa172 · a gravação não destrói nem classifica no escuro", () =
   const ROTA = semComentarios(ler("src/app/api/v1/admin/votos/materializar-faltantes/route.ts"));
 
   it("⚠️⚠️ o `raw_extraction` é MESCLADO — substituí-lo apagaria os baldes de nome", () => {
-    expect(ROTA).toMatch(/raw_extraction: \{ \.\.\.base, motivo_sem_voto: motivo \}/);
+    /**
+     * ⚠️ Âncora atualizada na Fase 31, Bloco 4, e a PROPRIEDADE ficou mais forte, não mais fraca.
+     *
+     * Antes o write era `{ ...base, motivo_sem_voto: motivo }` — um laço, uma chave. Agora há DOIS
+     * diagnósticos (`motivo_sem_voto` e `roster_divergente`) cujas populações se cruzam, e eles
+     * entram num patch único: `{ ...base, ...patch }`. O que se exige aqui é a mescla com a base —
+     * o mesmo que antes — mais o fato de haver UM só write, que é a garantia nova: dois laços com
+     * um write cada mesclariam, na segunda escrita, a partir de um `raw_extraction` lido ANTES da
+     * primeira, apagando o que ela acabou de gravar.
+     */
+    expect(ROTA).toMatch(/raw_extraction: \{ \.\.\.base, \.\.\.patch \}/);
+    expect(ROTA, "voltou a substituir o jsonb em vez de mesclar")
+      .not.toMatch(/raw_extraction: \{ motivo_sem_voto/);
+    const i = ROTA.indexOf("if (!dryRun && patchPorDeliberacao.size > 0)");
+    expect(i, "o laço único de gravação do diagnóstico desapareceu").toBeGreaterThan(-1);
+    const bloco = ROTA.slice(i, i + 2000);
+    expect((bloco.match(/\.update\(\{ raw_extraction:/g) ?? []).length,
+      "há mais de um write de raw_extraction no diagnóstico — a 2ª mescla base velha").toBe(1);
   });
 
   it("⚠️ sem o jsonb atual em mãos, NÃO grava — mesclar exige ter o que mesclar", () => {
@@ -155,7 +172,10 @@ describe("etapa172 · a gravação não destrói nem classifica no escuro", () =
   });
 
   it("a escrita passa por `exigirEscrita` — o caminho quente não engole `{error}`", () => {
-    expect(ROTA).toMatch(/exigirEscrita\([\s\S]{0,200}?motivo_sem_voto de \$\{id\}/);
+    // O rótulo virou `diagnostico de ${id}` porque a escrita passou a carregar os dois
+    // diagnósticos; o que se exige é o mesmo: a gravação não sobe contador sem ter gravado.
+    expect(ROTA).toMatch(/const ok = await exigirEscrita\([\s\S]{0,400}?`diagnostico de \$\{id\}`/);
+    expect(ROTA).toMatch(/if \(ok\) \{\s*if \("motivo_sem_voto" in patch\) motivosGravados\+\+;/);
   });
 
   it("⚠️ tem recheck de orçamento por item, como o laço principal", () => {

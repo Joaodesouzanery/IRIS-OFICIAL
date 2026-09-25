@@ -239,6 +239,104 @@ SELECT jsonb_pretty(jsonb_build_object(
     'votos_na_deliberacao',
       'Exportar o CSV da aba Auditoria de votos e conferir que a coluna VARIA por linha. O bloco '
       || '② dá o número do banco para comparar.'
+  ),
+
+  -- ⑧ O DE→PARA DO ROSTER, JA CALCULADO PELA ESTEIRA (Fase 31, Bloco 4)
+  --    ⚠️ Este bloco SO LE. Quem compara nome com nome e a esteira, com `resolverPresentesRoster` —
+  --    a MESMA funcao que constroi o roster que vira voto. Um laco de comparacao em SQL exigiria
+  --    reimplementar `findBestMatch`, e isso criaria a segunda verdade que esta base ja pagou duas
+  --    vezes. A esteira grava em `raw_extraction.roster_divergente`; aqui so se agrupa por reuniao.
+  --
+  --    `recebeu_sem_estar` = tem voto gravado e NAO esta na lista de presentes da ata (o caso do
+  --    Caio Mario na 79a). `presente_sem_voto` = esta na ata e tem ZERO voto (Tasso e Roger) — a
+  --    metade invisivel, que nao aparece em metrica nenhuma porque voto ausente nao deixa rastro.
+  --
+  --    VAZIO significa uma de duas coisas, e as duas sao informacao: ou nao ha divergencia, ou a
+  --    esteira ainda nao rodou depois do deploy. Quem desempata e o campo `divergencias_gravadas`
+  --    da resposta do materializador (`/api/v1/admin/votos/materializar-faltantes`): > 0 com este
+  --    bloco vazio seria contradicao; 0 aqui e 0 la significa apenas que a esteira nao passou.
+  '8_roster_divergente', (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.itens DESC), '[]'::jsonb) FROM (
+      SELECT z.agencia, z.numero_reuniao, z.data_reuniao,
+             COUNT(DISTINCT z.id) AS itens,
+             jsonb_agg(DISTINCT z.recebeu)   FILTER (WHERE z.recebeu   IS NOT NULL) AS recebeu_sem_estar,
+             jsonb_agg(DISTINCT z.presente)  FILTER (WHERE z.presente  IS NOT NULL) AS presente_sem_voto,
+             jsonb_agg(DISTINCT z.naorecon)  FILTER (WHERE z.naorecon  IS NOT NULL) AS nome_da_ata_sem_cadastro
+        FROM (
+          SELECT COALESCE(a.sigla,'?') AS agencia, d.numero_reuniao, d.data_reuniao, d.id,
+                 r.v AS recebeu, p.v AS presente, n.v AS naorecon
+            FROM deliberacoes d
+            LEFT JOIN agencias a ON a.id = d.agencia_id
+            LEFT JOIN LATERAL jsonb_array_elements_text(
+                   d.raw_extraction->'roster_divergente'->'recebeu_sem_estar') r(v) ON TRUE
+            LEFT JOIN LATERAL jsonb_array_elements_text(
+                   d.raw_extraction->'roster_divergente'->'presente_sem_voto') p(v) ON TRUE
+            LEFT JOIN LATERAL jsonb_array_elements_text(
+                   d.raw_extraction->'roster_divergente'->'presentes_nao_reconhecidos') n(v) ON TRUE
+           WHERE d.raw_extraction ? 'roster_divergente'
+        ) z
+       GROUP BY 1, 2, 3
+    ) t
+  ),
+
+  -- ⑨ O COLEGIADO ESPERADO × QUEM VOTOU, por reuniao (Fase 31, Bloco 4)
+  --    ⚠️ Compara por ID DE DIRETOR, nao por nome — entao nao ha matcher nem segunda verdade aqui.
+  --    Os predicados espelham `getActiveDiretoresForVote` (`vote-inference.ts:127-137`), que e o
+  --    motor que cria os votos: `fonte_dado <> 'automatico'` (mandato FABRICADO a partir do proprio
+  --    voto inferido nao conta), `review_status = 'aprovado'`, e janela com bordas INCLUSIVAS.
+  --    Ha precedente com teste para esse espelhamento: `etapa77-auditoria-sql.test.ts`.
+  --
+  --    RESPONDE A PERGUNTA DA 84a: a tela mostra "2 de 4" em 29/04/2026, e os seeds do repo dao
+  --    CINCO mandatos ativos naquela data (Mauro, Caio Mario, Jose Fernando, Luiz Paniago, Fabio).
+  --    `esperado` diz quem sao os 4 de verdade, e `faltando` diz quem nao votou.
+  --
+  --    `extra` = recebeu voto SEM ter mandato ativo na data. Se vier nao-vazio, e outra classe de
+  --    defeito que ninguem mediu ainda.
+  '9_colegiado_por_reuniao', (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.data_reuniao DESC, t.agencia), '[]'::jsonb) FROM (
+      SELECT COALESCE(a.sigla,'?') AS agencia, r.numero_reuniao, r.data_reuniao,
+             (SELECT COUNT(*) FROM mandatos m JOIN diretores dir ON dir.id = m.diretor_id
+               WHERE dir.agencia_id = r.agencia_id AND dir.review_status = 'aprovado'
+                 AND m.fonte_dado <> 'automatico'
+                 AND m.data_inicio <= r.data_reuniao
+                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)) AS esperado_total,
+             (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
+                FROM mandatos m JOIN diretores dir ON dir.id = m.diretor_id
+               WHERE dir.agencia_id = r.agencia_id AND dir.review_status = 'aprovado'
+                 AND m.fonte_dado <> 'automatico'
+                 AND m.data_inicio <= r.data_reuniao
+                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)) AS esperado,
+             (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
+                FROM votos v JOIN deliberacoes d2 ON d2.id = v.deliberacao_id
+                             JOIN diretores dir ON dir.id = v.diretor_id
+               WHERE d2.agencia_id = r.agencia_id AND d2.data_reuniao = r.data_reuniao
+                 AND COALESCE(d2.numero_reuniao,'') = COALESCE(r.numero_reuniao,'')) AS com_voto,
+             -- Quem tinha mandato e NAO votou.
+             (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
+                FROM mandatos m JOIN diretores dir ON dir.id = m.diretor_id
+               WHERE dir.agencia_id = r.agencia_id AND dir.review_status = 'aprovado'
+                 AND m.fonte_dado <> 'automatico'
+                 AND m.data_inicio <= r.data_reuniao
+                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)
+                 AND NOT EXISTS (SELECT 1 FROM votos v2 JOIN deliberacoes d3 ON d3.id = v2.deliberacao_id
+                                  WHERE v2.diretor_id = dir.id AND d3.agencia_id = r.agencia_id
+                                    AND d3.data_reuniao = r.data_reuniao
+                                    AND COALESCE(d3.numero_reuniao,'') = COALESCE(r.numero_reuniao,''))) AS faltando,
+             -- Quem VOTOU sem ter mandato ativo na data.
+             (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
+                FROM votos v JOIN deliberacoes d2 ON d2.id = v.deliberacao_id
+                             JOIN diretores dir ON dir.id = v.diretor_id
+               WHERE d2.agencia_id = r.agencia_id AND d2.data_reuniao = r.data_reuniao
+                 AND COALESCE(d2.numero_reuniao,'') = COALESCE(r.numero_reuniao,'')
+                 AND NOT EXISTS (SELECT 1 FROM mandatos m2
+                                  WHERE m2.diretor_id = dir.id AND m2.fonte_dado <> 'automatico'
+                                    AND m2.data_inicio <= r.data_reuniao
+                                    AND (m2.data_fim IS NULL OR m2.data_fim >= r.data_reuniao))) AS extra
+        FROM (SELECT DISTINCT d.agencia_id, d.data_reuniao, d.numero_reuniao
+                FROM deliberacoes d JOIN votos v ON v.deliberacao_id = d.id
+               WHERE d.data_reuniao IS NOT NULL) r
+        LEFT JOIN agencias a ON a.id = r.agencia_id
+    ) t
   )
 
 )) AS qa_fase31;

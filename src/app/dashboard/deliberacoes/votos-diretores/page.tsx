@@ -564,6 +564,9 @@ export default function VotosDiretoresPage() {
       const motivosSemVoto = typeof ultimas.backfill_votos?.motivos_sem_voto === "string"
         ? (ultimas.backfill_votos.motivos_sem_voto as string)
         : null;
+      const rosterPorAgencia = typeof ultimas.backfill_votos?.roster_mudaria_por_agencia === "string"
+        ? (ultimas.backfill_votos.roster_mudaria_por_agencia as string)
+        : null;
       const leituraDoAcervo = typeof ultimas.backfill_votos?.leitura_do_acervo === "string"
         ? (ultimas.backfill_votos.leitura_do_acervo as string)
         : null;
@@ -633,6 +636,17 @@ export default function VotosDiretoresPage() {
         (totais.roster_mudaria_com_presentes_do_pai ?? 0) > 0
           ? `⚠️ ${totais.roster_mudaria_com_presentes_do_pai} item(ns) teriam OUTRO colegiado se a ` +
             `lista de presentes da ata valesse (regra DESLIGADA — mede quem receberia voto)` +
+            // ⚠️ A quebra por agência responde "é só a ANM?" — e é ela que decide a prioridade de
+            // ligar a regra. Sem isso o total não diz onde o problema mora.
+            //
+            // ⚠️ E o rótulo "última rodada" NÃO é enfeite: o total à esquerda é SOMADO entre rodadas
+            // (chave `parcial`, `agregar-rodadas.ts:66`), enquanto a quebra vem de `ultimas`, que é a
+            // ÚLTIMA rodada apenas — `agregarEtapas` descarta valor não-numérico, e esta é uma string.
+            // Sem o rótulo, "ANM 41 · ARTESP 18" se lê como decomposição do total e não é: em duas
+            // rodadas que mediram, as parcelas não fecham com a soma. Este é exatamente o defeito que
+            // a fase persegue — um número afirmando o que o dado não sustenta —, e ele quase entrou
+            // pela minha própria mão.
+            (rosterPorAgencia ? ` · por agência na última rodada: ${rosterPorAgencia}` : "") +
             ` — ${ROTULO_PARCIAL}`
           : null,
         (totais.fora_de_escopo ?? 0) > 0

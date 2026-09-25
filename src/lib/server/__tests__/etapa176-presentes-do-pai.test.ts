@@ -175,8 +175,15 @@ describe("etapa176 · ⚠️ o número tem CONSUMIDOR e carrega o rótulo", () =
      */
     expect(TELA, "a linha do banner não é mais governada pelo número")
       .toMatch(/\(totais\.roster_mudaria_com_presentes_do_pai \?\? 0\) > 0/);
-    const i = TELA.indexOf("(totais.roster_mudaria_com_presentes_do_pai ?? 0) > 0");
-    const linha = TELA.slice(i, i + 600);
+    /**
+     * ⚠️ A fatia é do CÓDIGO, sem comentários. Antes ela era do arquivo cru, e quando o Bloco 4
+     * acrescentou oito linhas de comentário dentro da expressão a janela de 600 chars passou a
+     * terminar antes do `ROTULO_PARCIAL` — vermelho legítimo, propriedade intacta. Medir o código
+     * também fecha a porta inversa: um `ROTULO_PARCIAL` mencionado só em comentário não satisfaz.
+     */
+    const TELA_CODIGO = TELA.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/[^\n]*/g, " ");
+    const i = TELA_CODIGO.indexOf("(totais.roster_mudaria_com_presentes_do_pai ?? 0) > 0");
+    const linha = TELA_CODIGO.slice(i, i + 600);
     expect(linha, "número parcial sem o rótulo de repetição").toMatch(/ROTULO_PARCIAL/);
     expect(linha, "a tela não diz que a regra está desligada").toMatch(/DESLIGADA/);
     // E o número tem de ser IMPRESSO, não só testado.

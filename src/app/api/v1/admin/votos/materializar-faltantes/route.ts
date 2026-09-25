@@ -239,6 +239,25 @@ export async function POST(req: NextRequest) {
    * mudança valer, porque ela muda QUEM votou, não um total.
    */
   let rosterMudariaComPresentesDoPai = 0;
+  /**
+   * ⚠️ N.1 — o mesmo número, QUEBRADO POR AGÊNCIA. O contador acima é um total, e a pergunta que
+   * decide a prioridade de ligar a regra é "os 59 são só ANM, ou também ANTT/ARTESP?". Um total não
+   * responde isso, e eu só percebi quando o usuário perguntou.
+   */
+  const rosterMudariaPorAgencia: Record<string, number> = {};
+  /**
+   * ⚠️ N.2 — o de→para, calculado AQUI e gravado, para o SQL só ler.
+   *
+   * O desenho anterior era o SQL listar as duas listas (roster gravado e presentes da ata) e o
+   * operador comparar na mão. O usuário apontou o melhor: comparar exige `findBestMatch`, que é
+   * TypeScript — então quem compara tem de ser a esteira, com o matcher real, e o SQL vira leitor.
+   * Assim continua havendo UMA verdade, e ninguém compara nada a olho.
+   */
+  const divergenciaPorDeliberacao = new Map<string, {
+    recebeu_sem_estar: string[];
+    presente_sem_voto: string[];
+    presentes_nao_reconhecidos: string[];
+  }>();
   let restantes = false;
   const detalhe: Array<{ deliberacao_id: string; votos: number; origem: string }> = [];
   /** Commit 3a — o delta da regra que LÊ O DISPOSITIVO, por agência. Medição, não comportamento. */
@@ -432,11 +451,32 @@ export async function POST(req: NextRequest) {
 
     // A MEDIÇÃO, que roda mesmo com a flag DESLIGADA: o roster mudaria se o pai valesse?
     if (presentesDoPai.length > 0) {
-      const idsComPai = new Set(resolverPresentesRoster(presentesDoPai, diretoresList).map((x) => x.id));
+      // ⚠️ `resolverPresentesRoster` — a MESMA função que constrói o roster que vira voto. Um laço
+      // próprio de match aqui faria o diagnóstico discordar do motor, que é o pior desfecho possível
+      // numa ferramenta feita para dar confiança (`colegiado-na-data.ts:11-19`).
+      const comPai = resolverPresentesRoster(presentesDoPai, diretoresList);
+      const idsComPai = new Set(comPai.map((x) => x.id));
       const idsHoje = new Set(activeDiretoresList.map((x) => x.id));
       const difere = idsComPai.size > 0
         && (idsComPai.size !== idsHoje.size || [...idsComPai].some((id) => !idsHoje.has(id)));
-      if (difere) rosterMudariaComPresentesDoPai++;
+      if (difere) {
+        rosterMudariaComPresentesDoPai++;
+        const sigla = siglaDe(d.agencia_id);
+        rosterMudariaPorAgencia[sigla] = (rosterMudariaPorAgencia[sigla] ?? 0) + 1;
+
+        // O de→para, nos DOIS sentidos. O segundo é o invisível: quem a ata nomeia e não tem voto
+        // não aparece em métrica nenhuma, porque voto ausente não deixa rastro.
+        const nomeDe = (id: string) => diretoresList.find((x) => x.id === id)?.nome ?? id;
+        divergenciaPorDeliberacao.set(String(d.id), {
+          recebeu_sem_estar: [...idsHoje].filter((id) => !idsComPai.has(id)).map(nomeDe),
+          presente_sem_voto: [...idsComPai].filter((id) => !idsHoje.has(id)).map(nomeDe),
+          // Nome do preâmbulo que o cadastro não reconhece — é o que o operador corrige.
+          presentes_nao_reconhecidos: presentesDoPai.filter((nome) => {
+            const m = findBestMatch(nome, diretoresList);
+            return !m.diretorId || m.needsReview;
+          }),
+        });
+      }
     }
 
     // ═══ Fase 20 — NÃO ATRIBUIR VOTO A QUEM NÃO VOTOU ══════════════════════
@@ -619,34 +659,55 @@ export async function POST(req: NextRequest) {
   // em mão (`Object.assign` acima); os de fora dele (escopo e janela são subtraídos ANTES do lote,
   // então nunca entram nele) exigem uma leitura própria, em lotes de 100 com erro checado.
   let motivosGravados = 0;
-  if (!dryRun && motivoPorDeliberacao.size > 0) {
+  let divergenciasGravadas = 0;
+  /**
+   * ⚠️ UM write por deliberação, carregando o que houver.
+   *
+   * São dois diagnósticos com populações que se cruzam: `motivo_sem_voto` é de quem NÃO recebeu voto
+   * (Commit F), e `roster_divergente` é de quem receberia OUTRO colegiado — e essa pode ter recebido
+   * voto. Escrever em dois laços faria duas escritas na MESMA linha em parte dos casos, e a segunda
+   * leria um `raw_extraction` já desatualizado pela primeira: o clássico do jsonb mesclado a partir
+   * de base velha, que apaga o que o laço anterior acabou de gravar.
+   */
+  const patchPorDeliberacao = new Map<string, Record<string, unknown>>();
+  for (const [id, motivo] of motivoPorDeliberacao) {
+    patchPorDeliberacao.set(id, { ...(patchPorDeliberacao.get(id) ?? {}), motivo_sem_voto: motivo });
+  }
+  for (const [id, div] of divergenciaPorDeliberacao) {
+    patchPorDeliberacao.set(id, { ...(patchPorDeliberacao.get(id) ?? {}), roster_divergente: div });
+  }
+
+  if (!dryRun && patchPorDeliberacao.size > 0) {
     const jaEmMaos = new Map<string, Record<string, unknown>>();
     for (const d of loteBruto as any[]) {
       if (d.raw_extraction) jaEmMaos.set(String(d.id), d.raw_extraction as Record<string, unknown>);
     }
-    const faltando = [...motivoPorDeliberacao.keys()].filter((id) => !jaEmMaos.has(id));
+    const faltando = [...patchPorDeliberacao.keys()].filter((id) => !jaEmMaos.has(id));
     const rawRes = await lerEmLotes<any>(db, {
       tabela: "deliberacoes", select: "id, raw_extraction",
-      coluna: "id", valores: faltando, label: "materializar/raw-para-motivo",
+      coluna: "id", valores: faltando, label: "materializar/raw-para-diagnostico",
     });
     // Falha de leitura NÃO vira gravação cega: sem o valor atual, mesclar é impossível e
     // substituir seria perda de dado. Sai sem carimbar, e o número de gravados denuncia.
     if (!rawRes.error) {
       for (const r of rawRes.data as any[]) jaEmMaos.set(String(r.id), (r.raw_extraction ?? {}) as Record<string, unknown>);
     }
-    for (const [id, motivo] of motivoPorDeliberacao) {
+    for (const [id, patch] of patchPorDeliberacao) {
       // Recheck por item, como o laço principal: sem ele, uma rodada apertada gastaria a fatia
-      // carimbando motivo em vez de materializar voto — o trabalho de maior valor.
+      // carimbando diagnóstico em vez de materializar voto — o trabalho de maior valor.
       if (!hasBudget(deadlineAt, RESERVA_POR_ITEM_MS)) { restantes = true; break; }
       const base = jaEmMaos.get(id);
       if (!base) continue; // sem o jsonb atual não se grava: mesclar exige ter o que mesclar
       const ok = await exigirEscrita(
         db.from("deliberacoes")
-          .update({ raw_extraction: { ...base, motivo_sem_voto: motivo }, updated_at: new Date().toISOString() })
+          .update({ raw_extraction: { ...base, ...patch }, updated_at: new Date().toISOString() })
           .eq("id", id),
-        `motivo_sem_voto de ${id}`,
+        `diagnostico de ${id}`,
       );
-      if (ok) motivosGravados++;
+      if (ok) {
+        if ("motivo_sem_voto" in patch) motivosGravados++;
+        if ("roster_divergente" in patch) divergenciasGravadas++;
+      }
     }
   }
 
@@ -692,6 +753,8 @@ export async function POST(req: NextRequest) {
      * `PRESENTES_DO_PAI_VALEM = false` nada muda; este é o número que decide se ele vira `true`.
      */
     roster_mudaria_com_presentes_do_pai: rosterMudariaComPresentesDoPai,
+    roster_mudaria_por_agencia: rosterMudariaPorAgencia,
+    divergencias_gravadas: divergenciasGravadas,
     presentes_do_pai_valem: PRESENTES_DO_PAI_VALEM,
     /**
      * Fase 20 — itens anteriores ao primeiro mandato conhecido da agência. Contam em cobertura,

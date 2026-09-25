@@ -41,6 +41,8 @@ export interface PayloadDoMaterializador {
   motivos_gravados?: number | null;
   /** Fase 31 — quantos itens teriam roster DIFERENTE se o preâmbulo do pai valesse. */
   roster_mudaria_com_presentes_do_pai?: number | null;
+  /** A mesma medida, por agência — responde "é só a ANM?". */
+  roster_mudaria_por_agencia?: Record<string, number> | null;
   materializaveis?: number;
   votos?: number;
   sem_evidencia?: number;
@@ -127,5 +129,13 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
   if (typeof b.roster_mudaria_com_presentes_do_pai === "number" && b.roster_mudaria_com_presentes_do_pai > 0) {
     resumo.roster_mudaria_com_presentes_do_pai = b.roster_mudaria_com_presentes_do_pai;
   }
+  // ⚠️ Como STRING: `agregarEtapas` e `registrarRodada` só entendem número e texto, e um objeto seria
+  // descartado em silêncio pelos dois — mesmo motivo de `nao_reconhecidos` e `motivos_sem_voto`.
+  const porAg = Object.entries(b.roster_mudaria_por_agencia ?? {})
+    .filter(([, n]) => (n ?? 0) > 0)
+    .sort((x, y) => (y[1] ?? 0) - (x[1] ?? 0))
+    .map(([sigla, n]) => `${sigla} ${n}`)
+    .join(" · ");
+  if (porAg) resumo.roster_mudaria_por_agencia = porAg;
   return resumo;
 }

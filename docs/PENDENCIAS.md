@@ -3,6 +3,50 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 31 — BLOCO 4 (25/set/2026) — as medições saem da linha de comando e vão para a tela
+
+Você disse *"não sei o que é isso e nem como fazer"* sobre as três rotas de diagnóstico que eu tinha
+escrito, e *"não é para criar novas abas"*. Então todo número novo entra por um dos **dois canais que
+você já usa**: o botão **"Rodar tudo"** (banner) e **`docs/qa-fase31.sql`** (colar no SQL Editor).
+Nenhuma rota nova para você chamar.
+
+### ⛔ PENDÊNCIA DE DADO, SUA — a data do afastamento de Caio Mário
+
+Você apontou: *"Caio Mário aparece como 'afastado' na 79ª e não consta como presente na 81ª nem na
+83ª, mas tem mandato ativo até 12/2026 no cadastro."*
+
+O cadastro só conhece **mandato**; `colegiadoNaData` e `getActiveDiretoresForVote` filtram por janela
+de mandato e nada mais. Mandato ativo ≠ presença, e hoje ele recebe voto inferido em toda reunião do
+período.
+
+**Preciso de:** a data de início do afastamento, e se há **ato publicado** (DOU/DOE) que a fixe.
+Com ela o mandato passa a refletir o fato e o **denominador "de M"** deixa de contá-lo em todas as
+reuniões do período — não só nas que a ata menciona.
+
+⚠️ Note que as duas frentes se reforçam e nenhuma depende da outra: com `PRESENTES_DO_PAI_VALEM`
+ligado, a ata resolve o caso **sem** essa data, porque ela diz quem estava. A data conserta o
+denominador; os presentes do pai consertam a atribuição.
+
+### O que "Rodar tudo" passa a responder
+
+- **`⚠️ N item(ns) teriam OUTRO colegiado …`** ganha a quebra **por agência** (`ANM 41 · ARTESP 18`).
+  Era um número só, e a pergunta *"os 59 são só ANM, ou também ANTT/ARTESP?"* muda a prioridade de
+  ligar a regra. A regra segue **DESLIGADA** (`PRESENTES_DO_PAI_VALEM = false`).
+- A esteira passa a **gravar** o de→para em `deliberacoes.raw_extraction.roster_divergente` — quem
+  recebeu voto sem estar na ata, quem estava na ata sem receber voto, e quais nomes da ata não têm
+  cadastro. Calculado com `resolverPresentesRoster`, a **mesma** função que constrói o roster que
+  vira voto: uma verdade só.
+
+### O que `docs/qa-fase31.sql` passa a responder
+
+- **Bloco ⑧** — o de→para **já calculado**, agrupado por reunião. O SQL só LÊ o `jsonb`; zero
+  comparação de nome em SQL, zero comparação sua. ⚠️ Vazio significa uma de duas coisas: não há
+  divergência, **ou** a esteira ainda não rodou depois do deploy — o campo `divergencias_gravadas`
+  no banner diz qual das duas.
+- **Bloco ⑨** — o **colegiado esperado × quem votou**, por reunião, comparado por **id de diretor**
+  (não por nome). Espelha os predicados de `getActiveDiretoresForVote`. Responde **quem são os 4 da
+  84ª ROP** e por que não são 5 — a pergunta que eu abri com dado velho do `PENDENCIAS.md:504`.
+
 ## 🔴 FASE 31 — BLOCO 3 (25/set/2026) — achados do QA de produção
 
 ### ⛔ O que só você pode rodar (eu não alcanço o banco daqui)
@@ -501,7 +545,14 @@ feita: o SQL sobre o acervo inteiro é o instrumento.
 
 ## 🔴 FASE 24 (09/set/2026) — a trava de sentido único, a ANM presa por três atas, o número que só cai
 
-**Sequência:** **aplicar `20260909130000_reinserir_luiz_paniago_anm_v2.sql`** (a v1 `…120000` falhou: chamava `iris_seed_director`, função que a migration de maio cria e derruba na mesma transação — supersedida, não aplicar) → deploy verde →
+**Sequência:** ✅ **`20260909130000_reinserir_luiz_paniago_anm_v2.sql` APLICADA** (o QA da Fase 24
+mostrou os 2 mandatos aprovados). A v1 `…120000` havia falhado: chamava `iris_seed_director`, função
+que a migration de maio cria e derruba na mesma transação — supersedida, não aplicar.
+⚠️ **Corrigido em 25/09 (Fase 31).** Esta linha ficou pedindo a migration por duas semanas depois de
+ela ter sido aplicada, e eu usei a linha velha como evidência para concluir que o 5º mandato faltante
+da 84ª ROP era o do Luiz Paniago. A conclusão partia de dado errado. **Um arquivo de pendências que
+mente sobre o que já foi feito faz o diagnóstico seguinte partir do lugar errado** — quem resolve uma
+pendência atualiza a linha, no mesmo commit. → deploy verde →
 **"Rodar tudo" 2×** (a 1ª limpa carimbos e reanalisa; a 2ª confirma) → colar `docs/qa-fase24.sql`.
 
 **O que a fase entregou (ordem aprovada por você):**
@@ -521,7 +572,7 @@ feita: o SQL sobre o acervo inteiro é o instrumento.
    ANM/ANTT seguem em revisão. As 2 da ANTT (uma PAUTA, uma ata de 2 páginas) reanalisam.
 5. Metodologia: **ausência rotulada é nominal** (os 59 da ARTESP). `qa-fase24.sql`.
 
-**⏳ AGUARDA VOCÊ:** a migration v2 do Luiz Paniago (o `qa-fase24` colado em 09/09 é o ANTES — v1 falhou, nada rodou; todos os zeros esperados); o `qa-fase24.sql` (② responde "por que a ANM
+**⏳ AGUARDA VOCÊ:** ~~a migration v2 do Luiz Paniago~~ (✅ aplicada; o `qa-fase24` colado em 09/09 era o ANTES — v1 falhou, nada rodou, e por isso todos os zeros); o `qa-fase24.sql` (② responde "por que a ANM
 só tem 1 reunião de 2026"); Severino (posse no DOU); 45 escaneados.
 
 **Ainda aberto, medido:** falha silenciosa 72/187 fora do caminho de voto (importar agências 7,
