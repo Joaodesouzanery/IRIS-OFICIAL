@@ -20,6 +20,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { lerTudo } from "@/lib/server/select-all-paged";
+import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { colegiadoNaData, type MandatoJanela } from "@/lib/server/colegiado-na-data";
 import { motivoSemInferencia, nomesQueBloqueiam, type MotivoSemInferencia } from "@/lib/server/motivo-sem-inferencia";
 import { RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
@@ -103,13 +104,16 @@ export async function GET(req: NextRequest) {
 
   // ── 3. O payload pesado, só das incompletas ──
   const ids = incompletas.map((d: any) => String(d.id));
-  const pesadosRes = ids.length
-    ? await lerTudo<any>(() => db
-        .from("deliberacoes")
-        .select("id, raw_extraction, fundamento_decisao, resumo_pleito")
-        .in("id", ids)
-        .order("id"), "diagnostico-inferencia/pesados")
-    : { data: [] as any[], error: null, truncated: false };
+  // ⚠️ `lerEmLotes`, não `.in()` cru. Esta rota nasceu nesta mesma fase (d0b5f7c) com o defeito que
+  // o Commit A (c52e52d) consertou em duas outras: `lerTudo` pagina as LINHAS, mas a URL carrega
+  // todos os ids de uma vez, e `incompletas` é do tamanho do acervo. Com ~200 ids a URL passa do
+  // teto de 8 KB do postgrest-js — foi isso que zerou `VotosNaDeliberacao` em 100% do CSV com 820
+  // ids (32 KB). Aqui o erro É checado, então a rota falharia com 500 em vez de mentir um zero;
+  // mesmo assim é a medição que o Portão pede, e ela precisa RESPONDER.
+  const pesadosRes = await lerEmLotes<any>(db, {
+    tabela: "deliberacoes", select: "id, raw_extraction, fundamento_decisao, resumo_pleito",
+    coluna: "id", valores: ids, label: "diagnostico-inferencia/pesados",
+  });
   if (pesadosRes.error) return NextResponse.json({ error: "Falha ao ler o payload." }, { status: 500 });
   const pesadoPor = new Map(((pesadosRes.data ?? []) as any[]).map((p) => [String(p.id), p]));
 

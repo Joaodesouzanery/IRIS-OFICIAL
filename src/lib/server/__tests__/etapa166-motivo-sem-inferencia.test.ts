@@ -210,9 +210,20 @@ describe("etapa166 · a rota do diagnóstico é DRY-RUN por construção", () =>
     expect(CODIGO).toMatch(/< esperado\.length/);
   });
 
-  it("toda leitura pagina com `.order` e tem o erro CHECADO", () => {
+  it("toda leitura pagina e tem o erro CHECADO", () => {
     // `lerTudo` devolve {error} em vez de lançar, e no caminho de erro `truncated` fica false.
-    expect((CODIGO.match(/lerTudo</g) ?? []).length).toBeGreaterThanOrEqual(5);
+    //
+    // ⚠️ Fase 31, Bloco 3 — a contagem passou a somar `lerEmLotes`, e isso NÃO afrouxa a guarda.
+    // O payload pesado desta rota usava `.in("id", ids)` com a lista inteira: `lerTudo` pagina as
+    // LINHAS, mas a URL carrega todos os ids de uma vez, e `incompletas` é do tamanho do acervo.
+    // Foi um `.in()` com 820 ids (32 KB contra teto de 8 KB no postgrest-js) que zerou
+    // `VotosNaDeliberacao` em 100% do CSV. `lerEmLotes` corta em lotes de 100 e PARA no primeiro
+    // lote que falha — pagina e checa erro, que são as duas propriedades que este caso afere. Ele
+    // não precisa de `.order`: o resultado é indexado por id num Map, não consumido em ordem.
+    expect(CODIGO, "voltou o .in() com a lista inteira de ids").not.toMatch(/\.in\("id", ids\)/);
+    const leiturasPaginadas =
+      (CODIGO.match(/lerTudo</g) ?? []).length + (CODIGO.match(/lerEmLotes</g) ?? []).length;
+    expect(leiturasPaginadas, "alguma leitura deixou de paginar").toBeGreaterThanOrEqual(5);
     expect(CODIGO).toMatch(/levesRes\.error/);
     expect(CODIGO).toMatch(/votosRes\.error \|\| mandatosRes\.error/);
     expect(CODIGO).toMatch(/pesadosRes\.error/);

@@ -3,6 +3,51 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 31 — BLOCO 3 (25/set/2026) — achados do QA de produção
+
+### ⛔ O que só você pode rodar (eu não alcanço o banco daqui)
+
+O conector Supabase desta máquina vê `projeton8nobra` e `construdata-platform` — **nenhum é o
+IRIS**. Toda leitura de produção depende de você.
+
+1. **Aba Auditoria de votos → ANM + reunião 79.** Ler `proveniencia`, `is_nominal` e `faltando`.
+2. **`GET /api/v1/admin/votos/roster-divergente`** (nova, só leitura) — responde *"a 79ª é a
+   única?"*, nos dois sentidos: quem recebeu voto sem estar na ata, e quem estava na ata sem
+   receber voto.
+3. **`GET /api/v1/admin/votos/diagnostico-inferencia?ano=2025&amostra=10`** — ⚠️ `ano=2025`, **não
+   2026**: a rota filtra `data_reuniao >= '${ano}-01-01'`, e a 79ª é de 2025-11-26. Os pedidos
+   anteriores com `ano=2026` excluíam exatamente o caso.
+4. **Uma ingestão nova da ARTESP depois de 2026-09-24 08:16**, e conferir se `mais_recente_cp850`
+   avança no `qa-fase31.sql`. Se não avançar, o Commit B fechou a torneira e o reparo dos 287 nomes
+   é seguro.
+
+### Dívidas registradas, NÃO consertadas nesta rodada
+
+- **`votos.fonte_presenca` existe e ninguém escreve nela.** A coluna
+  (`20260824120000_votos_proveniencia.sql:23`, CHECK em `('documento','mandato')`) diria, por voto,
+  se o roster veio do documento ou do mandato — e responderia a rota `roster-divergente` inteira com
+  um `GROUP BY`. Ela aparece **só** em `COLUNAS_VOTOS_OPCIONAIS` (`votos-write.ts:30`), a lista de
+  strip-and-retry. É `capacidade-sem-consumidor` invertida: criada, nunca preenchida.
+- **Dois `.in()` sem lote em rotas de admin**, com lista de ids sem teto:
+  `diretores/duplicatas/route.ts` e `diretores/candidatos/recompute/route.ts`. Não tocadas por
+  disciplina: mexer em rota sadia sem defeito medido é risco sem contrapartida. O helper existe
+  (`ler-em-lotes.ts`) quando houver medição.
+  *(Os de `auditoria/amostra` e `materializar-faltantes` são limitados por construção — amostra
+  estratificada e lote da rodada.)*
+- **`nomes_presentes` é cortado em 20 nomes e 100 chars na origem** (`upload/confirm:151`). Num
+  colegiado grande a lista pode chegar truncada, e aí "presente sem voto" pode ser falta de NOME, não
+  falta de voto. A rota `roster-divergente` sinaliza isso por linha
+  (`lista_possivelmente_truncada_na_origem`), mas a causa segue de pé.
+- **A certificação da 79ª é verde e não pode ver este defeito.**
+  `etapa163-votos-por-diretor-contra-o-pdf.test.ts` espera os quatro diretores certos, e passa porque
+  **declara** o roster no baseline e roda `analyzeUploadPdf` com `db: null` (`:32-33`). Ela nunca toca
+  `mandatos` nem `getActiveDiretoresForVote` — por decisão consciente e correta para o que ela mede
+  (a EXTRAÇÃO). Quem certifica o BANCO é o `qa-fase31.sql` bloco ①, e foi ele que achou a divergência.
+  Fica registrado que **nenhum teste automático cobre a ponte entre os dois**.
+- **`upload/confirm` grava voto sem passar por `conferirRoster`.** O guard de 3 camadas da Fase 20 tem
+  **um único call-site em produção** (`materializar-faltantes:406`); a porta principal de ingestão não
+  o chama. Endereçado no Commit K desta fase.
+
 ## 🔴 FASE 31 — BLOCO 1 (23/set/2026) — a certificação do voto por diretor
 
 ⛔ **PORTÃO 1.** O Bloco 2 não começa sem as respostas abaixo.
