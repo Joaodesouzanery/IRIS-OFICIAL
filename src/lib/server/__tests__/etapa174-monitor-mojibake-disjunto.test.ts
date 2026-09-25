@@ -175,8 +175,24 @@ describe("etapa174 · ⚠️ as guardas estão NO SQL — é isto que a mutaçã
       expect(sql, `${nome} sem mais_recente_cp850`).toMatch(/mais_recente_cp850/);
       expect(sql, `${nome} sem mais_recente_fffd`).toMatch(/mais_recente_fffd/);
     }
-    // O campo agregado não pode voltar: ele existia e não sabia de qual família era a data.
-    expect(QA31).not.toMatch(/MAX\(dr\.created_at\)::date AS mais_recente,/);
+    /**
+     * ⚠️ A proibição do campo AGREGADO é escopada ao bloco ③, e isso não é detalhe.
+     *
+     * A primeira versão proibia `MAX(dr.created_at)::date AS mais_recente,` no ARQUIVO INTEIRO, e
+     * reprovou corretamente quando o bloco ⑥ (agência citada no nome) nasceu com um `mais_recente`
+     * agregado — mas ali ele é LEGÍTIMO: aquele bloco tem uma única espécie de achado por grupo, e a
+     * data mais recente do par quer dizer exatamente o que diz.
+     *
+     * A propriedade que este caso afere é do bloco ③: lá convivem DUAS assinaturas (CP850 reparável
+     * e U+FFFD destrutivo), e uma data agregada sobre as duas culparia o decoder novo por resíduo
+     * antigo. Proibir o padrão no arquivo todo media a grafia, não a propriedade.
+     */
+    const i3 = QA31.indexOf("'3_mojibake'");
+    const fim3 = QA31.indexOf("-- ④", i3);
+    expect(i3, "o bloco ③ sumiu").toBeGreaterThan(-1);
+    expect(fim3, "não achei o fim do bloco ③").toBeGreaterThan(i3);
+    expect(QA31.slice(i3, fim3), "o bloco ③ voltou a ter data agregada sobre as duas assinaturas")
+      .not.toMatch(/MAX\(dr\.created_at\)::date AS mais_recente,/);
   });
 
   it("`?sem-id` e `?fk-orfa` são distinguidos — consertos diferentes", () => {

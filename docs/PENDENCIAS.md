@@ -44,9 +44,43 @@ IRIS**. Toda leitura de produção depende de você.
   `mandatos` nem `getActiveDiretoresForVote` — por decisão consciente e correta para o que ela mede
   (a EXTRAÇÃO). Quem certifica o BANCO é o `qa-fase31.sql` bloco ①, e foi ele que achou a divergência.
   Fica registrado que **nenhum teste automático cobre a ponte entre os dois**.
-- **`upload/confirm` grava voto sem passar por `conferirRoster`.** O guard de 3 camadas da Fase 20 tem
-  **um único call-site em produção** (`materializar-faltantes:406`); a porta principal de ingestão não
-  o chama. Endereçado no Commit K desta fase.
+- **`upload/confirm` grava voto sem passar por `conferirRoster`.** ✅ Endereçado (`c97b5a9`): o guard
+  entra no caminho primário, medindo, com a recusa atrás de `GUARD_DE_ROSTER_NO_CONFIRM = false`.
+- ⚠️ **A camada 2 do guard de roster é INALCANÇÁVEL no `upload/confirm`.** `signatarios` não existe no
+  payload do confirm nem em `types/index.ts` — só as camadas 1 (presença) e 3 (candidatos pendentes)
+  podem disparar ali. O `etapa177` cobra que, se `signatarios` aparecer, alguém ligue a camada 2.
+- ⚠️ **`votos.fonte_presenca` levaria o veredito do roster ao voto, mas exige migration.**
+  `roster_nao_conferivel` não é valor de `ProvenienciaVoto` e o CHECK da coluna `proveniencia` admite
+  só quatro (`20260824120000_votos_proveniencia.sql:42-44`). Enquanto não houver migration, o veredito
+  do ramo `confiavel: true` morre onde é calculado — e o comentário de `roster-conferivel.ts` agora
+  diz isso, em vez de prometer que ele "viaja para a proveniência".
+
+### ⛔ DECISÃO PENDENTE — autoria de documento decidida por MAIORIA DE MENÇÕES
+
+Duas Deliberações **da ARTESP** estão arquivadas como **ANTT**
+(`"DELIBERAÇÃO ARTESP Nº 593_SEI - …_SUMEF_ACT_ANTT_ARTESP"`).
+
+⚠️ **O mecanismo NÃO é o que a primeira análise afirmou** (registrado porque o erro é instrutivo):
+- a hipótese era `isAntt` casando `\bantt\b` em `_ACT_ANTT_` via `normalize`. **Medido: `isAntt` é
+  `false`** — o `normalize` que o parser usa é **local** (`antt-manual-parser.ts:1095`) e preserva o
+  `_`, que é `\w` e não cria fronteira `\b`. O `normalize` de `regulatory-documents.ts:505`, que
+  remove `[^a-z0-9]+`, **não é esse**.
+- `detectAgenciaSigla(filename)` devolve **ARTESP** — o nome está certo.
+
+Logo a contagem virou pelo **texto**: `detectAgenciaSigla` (`classifier.ts:218-226`) decide autoria
+por **maioria de menções**, e num documento interagências (um ACT) as menções à contraparte dominam o
+corpo. **O título é autoridade; o corpo é assunto**, e a contagem não distingue.
+
+**Por que não foi consertado:** pesar o nome/título acima do texto muda a agência de documentos em
+todo o acervo — atribuição em massa. E o custo do erro não é só o rótulo: `confirm-lote:117` propaga o
+`agencia_id` para `deliberacoes` (coluna **NOT NULL**), e a chave de dedup fica `antt|deliberacao|593`
+— se a ANTT tiver uma Deliberação 593 real, uma das duas é marcada duplicata e **escondida**.
+
+**O que decidir:** o título passa a ter peso? Ou a fonte (`job.agencia_id`, que vem do portal
+monitorado) passa a vencer a inferência em `pipeline.ts:164`? As duas são mudanças de atribuição e
+pedem o número antes. O **bloco ⑥ de `docs/qa-fase31.sql`** lista os pares suspeitos — e se declara
+**triagem, não veredito**, porque a contagem mora em TypeScript e reimplementá-la em SQL criaria a
+segunda verdade que esta base já pagou duas vezes.
 
 ## 🔴 FASE 31 — BLOCO 1 (23/set/2026) — a certificação do voto por diretor
 

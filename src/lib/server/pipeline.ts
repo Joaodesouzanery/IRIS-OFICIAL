@@ -156,11 +156,19 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
 
     await updateDocument(db, documentoId, {
       status: "review_pending",
-      // Fase 17 — `?? job.agencia_id`: a análise só detecta agência a partir do TEXTO, e um PDF
-      // escaneado não tem texto. Sobrescrever com `null` apagava a agência que a ESTEIRA já
-      // conhecia (o item de monitoramento sabe de que site o documento veio) e o documento era
-      // arquivado como `sem_agencia` — diagnóstico falso, que contamina a medição das outras
-      // frentes.
+      // Fase 17 — `?? job.agencia_id`: a análise pode não detectar agência (um PDF escaneado não tem
+      // texto). Sobrescrever com `null` apagava a agência que a ESTEIRA já conhecia (o item de
+      // monitoramento sabe de que site o documento veio) e o documento era arquivado como
+      // `sem_agencia` — diagnóstico falso, que contamina a medição das outras frentes.
+      //
+      // ⚠️ CORREÇÃO DE COMENTÁRIO (Fase 31, Bloco 3): a frase original dizia que "a análise só
+      // detecta agência a partir do TEXTO". Isso deixou de ser verdade quando o filename entrou na
+      // detecção (`upload-analysis.ts:185`, `detectAgenciaSigla(`${file.name}\n${texto}`)`). A
+      // distinção importa porque a INFERÊNCIA tem precedência sobre o valor que a FONTE já sabia, e
+      // a fonte é evidência forte: o portal da ARTESP serve documento da ARTESP. Inverter essa
+      // precedência é mudança de atribuição em massa e não entra aqui — fica registrado em
+      // `docs/PENDENCIAS.md`. O que ESTA fase consertou foi o override da ANTT, que fazia uma
+      // MENÇÃO no nome do arquivo vencer a contagem de siglas (ver `upload-analysis.ts:186`).
       agencia_id: analysis.agencia_id_detected ?? job.agencia_id,
       agencia_sigla_detected: analysis.agencia_sigla_detected,
       tipo_documento: analysis.fields.tipo_documento,

@@ -183,7 +183,37 @@ export async function analyzeUploadPdf(input: {
 
   // Filename conta na detecção de agência (uploads manuais "Voto DFQ..." não têm a sigla no texto).
   let agencia_sigla_detected = detectAgenciaSigla(`${file.name}\n${extraction.text}`, agencias.map((a) => a.sigla));
-  if (antt.isAntt) agencia_sigla_detected = "ANTT";
+  /**
+   * ⚠️ Fase 31, Bloco 3 — endurecimento: o override da ANTT não pode vencer uma contagem contrária.
+   *
+   * Antes era `if (antt.isAntt) agencia_sigla_detected = "ANTT"`, SEM condição. Sobrescrever a
+   * contagem de siglas sem olhar o que ela disse é errado em princípio: `isAntt` existe para LIGAR o
+   * parser da ANTT, não para decidir autoria.
+   *
+   * ⚠️ E ESTE NÃO É O MECANISMO DOS DOIS DOCUMENTOS DA PRODUÇÃO — eu afirmei que era, e MEDI que não.
+   * As duas Deliberações da ARTESP arquivadas como ANTT
+   * (`"DELIBERAÇÃO ARTESP Nº 593_SEI - …_SUMEF_ACT_ANTT_ARTESP"`) dão:
+   *
+   *   · `parseAnttManualDocument(…).isAntt` → **false**. A hipótese era que `normalize` apagaria o
+   *     `_` e faria `\bantt\b` casar em `_ACT_ANTT_`; o `normalize` que o parser usa é LOCAL
+   *     (`antt-manual-parser.ts:1095`) e só faz lowercase + remoção de diacrítico — o `_` fica, e
+   *     `_` é `\w`, então a fronteira `\b` não existe ali. (O `normalize` de
+   *     `regulatory-documents.ts:505` é que remove `[^a-z0-9]+`, e não é este.)
+   *   · `detectAgenciaSigla(filename)` → **"ARTESP"**, correto.
+   *
+   * Logo, para a linha ter saído ANTT, `agencia_id_detected` foi ANTT — e como o nome diz ARTESP, só
+   * o TEXTO pode ter virado a contagem. O defeito real é outro e é mais fundo: **`detectAgenciaSigla`
+   * decide autoria por MAIORIA DE MENÇÕES** (`classifier.ts:218-226`), e num documento interagências
+   * (um ACT) as menções à contraparte podem dominar o corpo. O título é autoridade; o corpo é
+   * assunto — e a contagem não distingue os dois.
+   *
+   * Consertar isso é mudança de atribuição em massa (pesar o nome acima do texto muda a agência de
+   * documentos em todo o acervo), então NÃO entra aqui. O bloco ⑥ de `docs/qa-fase31.sql` lista os
+   * pares suspeitos para conferência, e `docs/PENDENCIAS.md` registra a decisão pendente.
+   */
+  if (antt.isAntt && (!agencia_sigla_detected || agencia_sigla_detected === "ANTT")) {
+    agencia_sigla_detected = "ANTT";
+  }
   const agencia_id_detected = agencia_sigla_detected
     ? agencias.find((a) => a.sigla === agencia_sigla_detected)?.id ?? null
     : null;

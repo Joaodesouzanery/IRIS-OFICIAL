@@ -145,6 +145,45 @@ SELECT jsonb_pretty(jsonb_build_object(
     )
   ),
 
+  -- ⑥ AGENCIA DO DOCUMENTO × AGENCIA CITADA NO NOME (Fase 31, Bloco 3)
+  --    Medido em producao: duas Deliberacoes da ARTESP estao arquivadas como documentos da ANTT
+  --    (`"DELIBERACAO ARTESP No 593_SEI - …_SUMEF_ACT_ANTT_ARTESP"`; SEI 134.xxx e da ARTESP, e
+  --    SUMEF/SUCOL sao superintendencias da ANTT, citadas porque o assunto e um ACT entre as duas).
+  --
+  --    ⚠️ O MECANISMO, MEDIDO (e nao o que eu supus primeiro):
+  --    · `parseAnttManualDocument(...).isAntt` da FALSE nesses nomes. A hipotese era que o
+  --      `normalize` apagaria o `_` e faria `\bantt\b` casar em `_ACT_ANTT_`; o normalize que o
+  --      parser usa e LOCAL (`antt-manual-parser.ts:1095`) e preserva o `_`, que e `\w`.
+  --    · `detectAgenciaSigla(filename)` da ARTESP — o nome esta CERTO.
+  --    Logo a contagem virou pelo TEXTO. O defeito real: `detectAgenciaSigla` decide autoria por
+  --    MAIORIA DE MENCOES (`classifier.ts:218-226`), e num documento interagencias as mencoes a
+  --    contraparte podem dominar o corpo. O TITULO e autoridade; o CORPO e assunto.
+  --
+  --    Consertar isso e mudanca de atribuicao em massa e NAO entrou nesta fase. Este bloco MEDE.
+  --
+  --    ⚠️ ISTO E TRIAGEM, NAO VEREDITO. A contagem de siglas que decide a agencia mora em
+  --    `detectAgenciaSigla` (TypeScript); reimplementa-la aqui criaria uma segunda verdade — o mesmo
+  --    defeito que `RE_CONTESTADO` e a chave de dedup ja custaram a esta base. O SQL so LISTA o par
+  --    suspeito para conferencia humana, e vai dar falso positivo em documento que legitimamente
+  --    cita outra agencia (um ACT entre duas). Conferir pelo titulo, nao pelo numero.
+  --
+  --    ESPERADO: o par (ANTT no banco × ARTESP no nome) some para documentos NOVOS depois do deploy.
+  '6_agencia_citada_no_nome', (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.total DESC), '[]'::jsonb) FROM (
+      SELECT COALESCE(a.sigla, '?') AS agencia_no_banco,
+             outra.sigla            AS agencia_citada_no_nome,
+             COUNT(*)               AS total,
+             MAX(dr.created_at)::date AS mais_recente,
+             (array_agg(LEFT(dr.filename, 70) ORDER BY dr.created_at DESC))[1:3] AS amostra
+        FROM documentos_regulatorios dr
+        LEFT JOIN agencias a ON a.id = dr.agencia_id
+        JOIN agencias outra
+          ON outra.sigla <> COALESCE(a.sigla, '')
+         AND dr.filename ~* ('\m' || outra.sigla || '\M')
+       WHERE dr.filename IS NOT NULL
+       GROUP BY 1, 2
+    ) t
+  ),
   -- ⑤ O QUE NÃO VEM POR SQL — as três medições que são ROTA, e a razão de cada uma.
   '5_medicoes_fora_do_sql', jsonb_build_object(
     'inferencia_bloqueada_por_nome',
