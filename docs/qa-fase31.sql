@@ -70,23 +70,56 @@ SELECT jsonb_pretty(jsonb_build_object(
   --    O monitor antigo (`qa-fase14.sql` bloco 6) contava só a primeira e marcava ZERO enquanto
   --    623 nomes estavam quebrados.
   --
-  --    ESPERADO depois do reparo: `cp850_controle_c1` e `cp850_sem_controle` = 0 onde
-  --    `com_procedencia_zip` > 0. Fora do ZIP o reparo NÃO age de propósito — candidato ali é
-  --    achado novo, e o endpoint o mostra sem tocar.
-  --    ⚠️ `mais_recente` POSTERIOR ao deploy do decoder significa que o caminho novo AINDA produz —
-  --    aí não é resíduo, é fluxo vivo, e o decoder não pegou o caso.
+  --    ESPERADO depois do reparo: `reparavel` = 0 onde `com_procedencia_zip` > 0. Fora do ZIP o
+  --    reparo NAO age de proposito — candidato ali e achado novo, e o endpoint o mostra sem tocar.
+  --
+  --    ⚠️⚠️ AS TRES CLASSES SAO MUTUAMENTE EXCLUSIVAS, e isso conserta um defeito MEDIDO desta
+  --    propria consulta (Fase 31, Bloco 3). A versao anterior fazia:
+  --        cp850_controle_c1  = filename ~ '[C1]'
+  --        cp850_sem_controle = filename ~ '[NBSP§µ¶·¤]'        <- SEM `AND NOT [C1]`
+  --    Em producao os dois deram 286 e 286 nos TRES grupos, porque todo nome com C1 tambem tem `§`
+  --    ou `¡`. O comentario prometia "o caso SEM controle nenhum" e o predicado nao prometia isso:
+  --    o rotulo mentia, e o ponto cego que o contador existe para cobrir — 'Ata ordinaria' ->
+  --    'Ata ordin ria', onde o `a` vira NBSP e NAO ha C1 — ficava indistinguivel dentro dos 286.
+  --    Agora `cp850_sem_controle` e exatamente esse caso, e `reparavel + fffd_irreparavel = total`
+  --    fecha por construcao (o WHERE garante que toda linha tem ao menos uma assinatura).
+  --
+  --    ⚠️ E a DATA e por assinatura. `MAX(created_at)` sobre o grupo inteiro nao sabe QUAL familia
+  --    produziu o mais recente, entao culparia o decoder novo (CP850, consertado em 2026-09-24) por
+  --    residuo pre-Fase-14 (U+FFFD). So `mais_recente_cp850` posterior a 2026-09-24 08:16 significa
+  --    fluxo vivo; `mais_recente_fffd` recente e outro problema, de outro caminho.
+  --
+  --    ⚠️ `?sem-id` vs `?fk-orfa`: um `COALESCE(a.sigla,'?')` sozinho junta "nunca teve agencia" com
+  --    "aponta para agencia que nao existe", e o conserto de cada um e outro. Medido no repo: nenhuma
+  --    migration tem `DELETE FROM agencias`, entao `?fk-orfa` deve vir ZERO — se nao vier, e achado novo.
   '3_mojibake', (
     SELECT COALESCE(jsonb_agg(t ORDER BY t.total DESC), '[]'::jsonb) FROM (
-      SELECT COALESCE(a.sigla, '?') AS agencia,
+      SELECT CASE WHEN dr.agencia_id IS NULL THEN '?sem-id'
+                  WHEN a.id IS NULL          THEN '?fk-orfa'
+                  ELSE a.sigla END AS agencia,
              COUNT(*) AS total,
-             COUNT(*) FILTER (WHERE dr.filename ~ '[\u0080-\u009f]')        AS cp850_controle_c1,
-             -- O caso SEM controle nenhum: 'Ata ordinária' → 'Ata ordin ria' (á = 0xA0 = NBSP).
-             COUNT(*) FILTER (WHERE dr.filename ~ '[\u00a0§µ¶·¤]')          AS cp850_sem_controle,
+             -- Reparavel = a assinatura CP850 sobreviveu nos bytes. U+FFFD e destrutivo: o byte
+             -- original nao esta mais na coluna, e so volta do ZIP no Storage.
+             COUNT(*) FILTER (WHERE position(chr(65533) IN dr.filename) = 0) AS reparavel,
              COUNT(*) FILTER (WHERE position(chr(65533) IN dr.filename) > 0) AS fffd_irreparavel,
+             -- As duas parcelas de `reparavel`, agora disjuntas.
+             COUNT(*) FILTER (WHERE position(chr(65533) IN dr.filename) = 0
+                                AND dr.filename ~ '[\u0080-\u009f]')         AS cp850_controle_c1,
+             -- ⚠️ O caso SEM controle nenhum: 'Ata ordinaria' -> 'Ata ordin ria' (a = 0xA0 = NBSP).
+             COUNT(*) FILTER (WHERE position(chr(65533) IN dr.filename) = 0
+                                AND dr.filename !~ '[\u0080-\u009f]'
+                                AND dr.filename ~ '[\u00a0§µ¶·¤]')           AS cp850_sem_controle,
              COUNT(*) FILTER (WHERE dr.source_archive IS NOT NULL
                                  OR dr.metadata ? 'source_zip_entry')        AS com_procedencia_zip,
-             MAX(dr.created_at)::date AS mais_recente,
-             (array_agg(LEFT(dr.filename, 70) ORDER BY dr.created_at DESC))[1:3] AS amostra
+             MAX(dr.created_at) FILTER (WHERE position(chr(65533) IN dr.filename) = 0)::date
+                                                                             AS mais_recente_cp850,
+             MAX(dr.created_at) FILTER (WHERE position(chr(65533) IN dr.filename) > 0)::date
+                                                                             AS mais_recente_fffd,
+             -- Amostra dos REPARAVEIS: e essa lista que o operador confere antes de escrever.
+             (array_agg(LEFT(dr.filename, 70) ORDER BY dr.created_at DESC)
+                FILTER (WHERE position(chr(65533) IN dr.filename) = 0))[1:3] AS amostra_reparavel,
+             (array_agg(LEFT(dr.filename, 70) ORDER BY dr.created_at DESC)
+                FILTER (WHERE position(chr(65533) IN dr.filename) > 0))[1:3] AS amostra_irreparavel
         FROM documentos_regulatorios dr
         LEFT JOIN agencias a ON a.id = dr.agencia_id
        WHERE dr.filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]'

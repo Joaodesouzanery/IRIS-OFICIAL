@@ -126,30 +126,47 @@ SELECT jsonb_pretty(jsonb_build_object(
   -- Um monitor que só conhece a assinatura antiga é pior que monitor nenhum: ele afirma saúde.
   '6_mojibake', (
     SELECT jsonb_build_object(
-      -- A assinatura ANTIGA (byte perdido, irreparável sem re-download).
+      -- A assinatura ANTIGA (byte perdido, IRREPARAVEL a partir do nome — so do ZIP no Storage).
       'documentos_com_fffd', (SELECT COUNT(*) FROM documentos_regulatorios
                                WHERE position(chr(65533) in filename) > 0),
       'itens_monitorados_com_fffd', (SELECT COUNT(*) FROM monitoramento_itens
                                       WHERE position(chr(65533) in COALESCE(titulo,'')) > 0),
-      -- A assinatura NOVA (CP850 lido como Latin-1). O byte sobreviveu: é REPARÁVEL.
-      -- Controle C1 num nome de arquivo é impossível por acidente — é o Ç do CP850 (0x80).
+      -- A assinatura NOVA (CP850 lido como Latin-1). O byte sobreviveu: e REPARAVEL.
+      -- Controle C1 num nome de arquivo e impossivel por acidente — e o Ç do CP850 (0x80).
+      --
+      -- ⚠️⚠️ AS DUAS CLASSES CP850 SAO DISJUNTAS, e `!~ [C1]` no segundo contador nao e detalhe:
+      -- sem ele, os dois mediam o mesmo conjunto. Medido em producao (Fase 31, Bloco 3): 286 e 286,
+      -- identicos, porque todo nome com C1 tambem tem `§`/`¡`. O comentario abaixo prometia "o caso
+      -- SEM controle nenhum" e o predicado nao entregava — o ponto cego seguia cego.
+      -- E o FFFD sai das duas, senao um nome com as duas assinaturas contaria em tres lugares.
       'documentos_com_c1_cp850', (SELECT COUNT(*) FROM documentos_regulatorios
-                                   WHERE filename ~ '[\u0080-\u009f]'),
-      -- ⚠️ E o caso SEM controle nenhum: 'Ata ordinária' vira 'Ata ordin ria' porque o á (0xA0)
-      -- em Latin-1 é NBSP. Um detector que procurasse só C1 perderia este inteiro.
-      'documentos_com_nbsp_ou_simbolo', (SELECT COUNT(*) FROM documentos_regulatorios
-                                          WHERE filename ~ '[\u00a0§µ¶·¤]'),
+                                   WHERE filename ~ '[\u0080-\u009f]'
+                                     AND position(chr(65533) in filename) = 0),
+      -- ⚠️ E o caso SEM controle nenhum: 'Ata ordinaria' vira 'Ata ordin ria' porque o a (0xA0)
+      -- em Latin-1 e NBSP. Um detector que procurasse so C1 perderia este inteiro.
+      'documentos_com_nbsp_sem_c1', (SELECT COUNT(*) FROM documentos_regulatorios
+                                      WHERE filename ~ '[\u00a0§µ¶·¤]'
+                                        AND filename !~ '[\u0080-\u009f]'
+                                        AND position(chr(65533) in filename) = 0),
       'por_agencia', (
         SELECT COALESCE(jsonb_object_agg(sigla, n), '{}'::jsonb) FROM (
-          SELECT COALESCE(a.sigla,'?') AS sigla, COUNT(*) AS n
+          -- `?sem-id` (nunca teve agencia) e `?fk-orfa` (aponta para agencia inexistente) tem
+          -- consertos diferentes; um COALESCE sozinho os juntaria.
+          SELECT CASE WHEN dr.agencia_id IS NULL THEN '?sem-id'
+                      WHEN a.id IS NULL          THEN '?fk-orfa'
+                      ELSE a.sigla END AS sigla, COUNT(*) AS n
             FROM documentos_regulatorios dr LEFT JOIN agencias a ON a.id = dr.agencia_id
            WHERE dr.filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]' OR position(chr(65533) in dr.filename) > 0
            GROUP BY 1
         ) x
       ),
-      -- Posterior ao deploy do decoder ⇒ o caminho NOVO ainda produz, e não é resíduo.
-      'mais_recente', (SELECT MAX(created_at)::date FROM documentos_regulatorios
-                        WHERE filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]'),
+      -- ⚠️ UMA DATA POR ASSINATURA. Agregar as duas juntas faz o campo culpar o decoder novo por
+      -- residuo antigo: so `mais_recente_cp850` posterior ao deploy do decoder significa fluxo vivo.
+      'mais_recente_cp850', (SELECT MAX(created_at)::date FROM documentos_regulatorios
+                              WHERE filename ~ '[\u0080-\u009f\u00a0§µ¶·¤]'
+                                AND position(chr(65533) in filename) = 0),
+      'mais_recente_fffd', (SELECT MAX(created_at)::date FROM documentos_regulatorios
+                             WHERE position(chr(65533) in filename) > 0),
       'amostra', (SELECT COALESCE(jsonb_agg(LEFT(filename, 80)), '[]'::jsonb)
                     FROM (SELECT filename FROM documentos_regulatorios
                            WHERE position(chr(65533) in filename) > 0
