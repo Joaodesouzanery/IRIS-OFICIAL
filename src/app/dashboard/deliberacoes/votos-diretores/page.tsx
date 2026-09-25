@@ -625,6 +625,16 @@ export default function VotosDiretoresPage() {
         // `:289`). A tela os justapunha como se decompusessem o número — e nenhum conjunto somava
         // 45. Esta linha é sobre a MESMA população, e é ela que dá leitor ao motivo persistido.
         motivosSemVoto,
+        // ⚠️ Fase 31, Bloco 3 — MEDIDO E DESLIGADO. `nomes_presentes` do pai da ata não chega ao
+        // filho, então o roster cai no MANDATO e pode gravar voto no nome errado (a 79ª ROP da ANM:
+        // Caio Mário com 18 votos que a ata não lhe dá). Este número diz quantos itens mudariam de
+        // dono se o preâmbulo valesse — e ele aparece ANTES de a mudança valer, porque mudar QUEM
+        // votou não é mudar um total.
+        (totais.roster_mudaria_com_presentes_do_pai ?? 0) > 0
+          ? `⚠️ ${totais.roster_mudaria_com_presentes_do_pai} item(ns) teriam OUTRO colegiado se a ` +
+            `lista de presentes da ata valesse (regra DESLIGADA — mede quem receberia voto)` +
+            ` — ${ROTULO_PARCIAL}`
+          : null,
         (totais.fora_de_escopo ?? 0) > 0
           ? `${totais.fora_de_escopo} de agência não-colegiada — fora do escopo da esteira de votos, não é falta de evidência`
           : null,

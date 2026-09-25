@@ -37,6 +37,7 @@ import { janelaRotativa } from "@/lib/server/varredura-rotativa";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { motivoSemVoto, contarPorMotivo, type MotivoSemVoto } from "@/lib/server/motivo-sem-voto";
+import { PRESENTES_DO_PAI_VALEM } from "@/lib/server/ata-item-materializacao";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -158,6 +159,28 @@ export async function POST(req: NextRequest) {
    * orçamento gasto para receber a resposta que já tínhamos.
    */
   const rosterCache = new Map<string, DiretorVoteRecord[]>();
+  /**
+   * Os presentes do PREÂMBULO, que vivem no documento PAI (Fase 31, Bloco 3).
+   *
+   * ⚠️ CACHE POR PAI, e ele não é otimização: uma ata rende dezenas de filhos, e uma leitura por
+   * filho gastaria a fatia da rodada em round-trips do MESMO registro. É o precedente exato de
+   * `diagnostico-direcao:108-118`, que sobe ao pai pela mesma razão (o filho omite `raw_text`).
+   */
+  const presentesDoPaiCache = new Map<string, string[]>();
+  async function presentesDoPaiDe(d: any): Promise<string[]> {
+    const paiId = d?.documento_pai_id ? String(d.documento_pai_id) : null;
+    if (!paiId) return [];
+    const hit = presentesDoPaiCache.get(paiId);
+    if (hit !== undefined) return hit;
+    const { data, error } = await db
+      .from("deliberacoes").select("raw_extraction").eq("id", paiId).maybeSingle();
+    // Falha de leitura vira lista VAZIA, e isso é o lado seguro: sem presentes o caminho é o de
+    // hoje (roster de mandato). O que NÃO pode acontecer é um erro virar "ninguém estava lá".
+    const presentes = error ? [] : arr(((data as any)?.raw_extraction ?? {}).nomes_presentes);
+    presentesDoPaiCache.set(paiId, presentes);
+    return presentes;
+  }
+
   async function rosterAtivoEm(
     agenciaId: string,
     dataReuniao: string | null,
@@ -210,6 +233,12 @@ export async function POST(req: NextRequest) {
    * conserta: um motivo que existe, é calculado, e é jogado fora.
    */
   const motivoPorDeliberacao = new Map<string, MotivoSemVoto>();
+  /**
+   * ⚠️ A MEDIÇÃO da Tarefa desligada: em quantos itens o roster MUDARIA se o preâmbulo do pai
+   * valesse. Roda com `PRESENTES_DO_PAI_VALEM = false` — é o número que vai à tela antes de a
+   * mudança valer, porque ela muda QUEM votou, não um total.
+   */
+  let rosterMudariaComPresentesDoPai = 0;
   let restantes = false;
   const detalhe: Array<{ deliberacao_id: string; votos: number; origem: string }> = [];
   /** Commit 3a — o delta da regra que LÊ O DISPOSITIVO, por agência. Medição, não comportamento. */
@@ -387,11 +416,28 @@ export async function POST(req: NextRequest) {
 
     // Roster: presentes persistidos casados ≥0.85; fallback mandatos na data (mesma
     // hierarquia do confirm). Em item ANTT, os nomes_votacao SÃO os presentes.
-    const presentes = isAnttAtaItem ? nomes : arr(raw.nomes_presentes);
+    const presentesDoProprio = isAnttAtaItem ? nomes : arr(raw.nomes_presentes);
+    // ⚠️ Fase 31 — o filho de ata NÃO tem `nomes_presentes` (a chave é do pai, e
+    // `buildRawExtractionDoItem` não a propaga). É por isso que este caminho caía no roster de
+    // MANDATO e gravou Caio Mário na 79ª ROP. Subir ao pai custa uma leitura por ATA (cacheada).
+    const presentesDoPai = presentesDoProprio.length === 0 && !isAnttAtaItem
+      ? await presentesDoPaiDe(d)
+      : [];
+    const presentes = presentesDoProprio.length > 0
+      ? presentesDoProprio
+      : (PRESENTES_DO_PAI_VALEM ? presentesDoPai : []);
     const presentesRoster = resolverPresentesRoster(presentes, diretoresList);
-    const activeDiretoresList = presentesRoster.length > 0
-      ? presentesRoster
-      : await rosterAtivoEm(d.agencia_id, d.data_reuniao, diretoresList);
+    const rosterDeMandato = await rosterAtivoEm(d.agencia_id, d.data_reuniao, diretoresList);
+    const activeDiretoresList = presentesRoster.length > 0 ? presentesRoster : rosterDeMandato;
+
+    // A MEDIÇÃO, que roda mesmo com a flag DESLIGADA: o roster mudaria se o pai valesse?
+    if (presentesDoPai.length > 0) {
+      const idsComPai = new Set(resolverPresentesRoster(presentesDoPai, diretoresList).map((x) => x.id));
+      const idsHoje = new Set(activeDiretoresList.map((x) => x.id));
+      const difere = idsComPai.size > 0
+        && (idsComPai.size !== idsHoje.size || [...idsComPai].some((id) => !idsHoje.has(id)));
+      if (difere) rosterMudariaComPresentesDoPai++;
+    }
 
     // ═══ Fase 20 — NÃO ATRIBUIR VOTO A QUEM NÃO VOTOU ══════════════════════
     // Medido: os diretores da ANM Roger Romão Cabral e Tasso Mendonça Júnior aparecem nos
@@ -640,6 +686,13 @@ export async function POST(req: NextRequest) {
     // documento. Não é falha: é a recusa de gravar voto no nome errado. O detalhe diz QUEM o
     // cadastro não reconheceu, que é o que o operador precisa para consertar.
     roster_nao_conferivel: rosterNaoConferivel,
+    /**
+     * ⚠️ MEDIDO E DESLIGADO (Fase 31, Bloco 3). Em quantos itens desta rodada o roster mudaria se
+     * `nomes_presentes` do pai valesse — ou seja, quantos votos mudariam de DONO. Com
+     * `PRESENTES_DO_PAI_VALEM = false` nada muda; este é o número que decide se ele vira `true`.
+     */
+    roster_mudaria_com_presentes_do_pai: rosterMudariaComPresentesDoPai,
+    presentes_do_pai_valem: PRESENTES_DO_PAI_VALEM,
     /**
      * Fase 20 — itens anteriores ao primeiro mandato conhecido da agência. Contam em cobertura,
      * microtemas e histórico; ficam FORA do denominador de votação, porque ali a resposta honesta

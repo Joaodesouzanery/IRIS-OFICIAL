@@ -62,6 +62,8 @@ export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
   "regex_divergente",
   "regex_falso_positivo",
   "examinados",
+  // Fase 31, Bloco 3 — medido sobre a mesma janela rotativa, logo repete entre rodadas.
+  "roster_mudaria_com_presentes_do_pai",
 ]);
 
 /**

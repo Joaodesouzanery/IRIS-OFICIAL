@@ -84,11 +84,42 @@ export function chavesConhecidasDoItem(): Set<string> {
   return new Set([...Object.keys(OMISSOES_DECLARADAS), ...Object.keys(RENOMEACOES), "unanimidade_detectada", "warnings"]);
 }
 
+/**
+ * ⚠️ Fase 31, Bloco 3 — os PRESENTES do pai valem para o filho? MEDIDO e DESLIGADO.
+ *
+ * ═══ Por que a chave falta, e o que ela custa ═══
+ * `nomes_presentes` é chave do DOCUMENTO (o preâmbulo da ata), não do item. A propagação por padrão
+ * (seção 1) só alcança chaves do item, então o filho nasce sem ela. E é o FILHO que carrega
+ * `resultado` e recebe voto.
+ *
+ * Sem presentes, `materializar-faltantes:390` cai em `getActiveDiretoresForVote`, que escolhe quem
+ * vota pela tabela `mandatos` e **nunca consulta o preâmbulo**. Na 79ª ROP da ANM (26/11/2025) a ata
+ * nomeia Mauro + Tasso + Roger + José Fernando, e o mandato devolve Mauro + Caio Mário + José
+ * Fernando — Caio Mário recebeu 18 votos que a ata não lhe dá, e Tasso e Roger receberam zero votos
+ * que a ata lhes dá. `roster-conferivel.ts:5-12` mediu isso na Fase 20 e chamou de "voto gravado no
+ * nome errado".
+ *
+ * ⚠️ POR QUE DESLIGADO: ligar não muda um total que sobe ou desce — muda **QUEM votou**, que é
+ * atribuição nominal a agente público. Entra medido, com o número na tela antes de valer, no
+ * precedente da Fase 20. `GET /api/v1/admin/votos/roster-divergente` publica o delta sobre o acervo
+ * inteiro; o materializador publica `roster_mudaria_com_presentes_do_pai` sobre a próxima rodada.
+ *
+ * ⚠️ E LIGAR NÃO EXIGE MANDATO NOVO: `resolverPresentesRoster` casa contra a tabela `diretores`, e
+ * Tasso e Roger **estão lá**, re-aprovados por `20260821150000_anm_gabarito_final.sql` — só não têm
+ * mandato. Os quatro nomes certos entram por PRESENÇA.
+ */
+export const PRESENTES_DO_PAI_VALEM = false;
+
 export interface RawExtractionItemInput {
   item: AtaPreviewItem & Record<string, unknown>;
   /** Campos herdados do DOCUMENTO pai (não vêm do item). */
   documentoAnttTipo?: unknown;
   documentoSubtipo?: unknown;
+  /**
+   * Os presentes do PREÂMBULO, que vivem no pai. Propagados só quando
+   * `PRESENTES_DO_PAI_VALEM` — ver o docblock daquela constante.
+   */
+  nomesPresentesDoPai?: unknown;
   /** Derivado no handler (precisa de `diretoresList`, que não existe aqui). */
   votosInferidosPorMandato: boolean;
 }
@@ -130,6 +161,11 @@ export function buildRawExtractionDoItem(input: RawExtractionItemInput): Record<
   out.import_counts_as_final = Boolean(item.resultado);
   out.unanimidade_detectada = Boolean(item.unanimidade_detectada);
   out.votos_inferidos_por_mandato = input.votosInferidosPorMandato;
+  // ⚠️ DESLIGADO por padrão. Com a flag ligada, o filho passa a ter o preâmbulo do pai, e
+  // `materializar-faltantes:390` para de cair no roster de mandato.
+  if (PRESENTES_DO_PAI_VALEM && input.nomesPresentesDoPai !== undefined) {
+    out.nomes_presentes = input.nomesPresentesDoPai;
+  }
   out.warnings = item.warnings ?? [];
 
   return out;

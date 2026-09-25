@@ -39,6 +39,8 @@ export interface PayloadDoMaterializador {
   /** Tarefa 4 — contagem por motivo, sobre a MESMA população das "sem voto". */
   motivos_sem_voto?: Record<string, number> | null;
   motivos_gravados?: number | null;
+  /** Fase 31 — quantos itens teriam roster DIFERENTE se o preâmbulo do pai valesse. */
+  roster_mudaria_com_presentes_do_pai?: number | null;
   materializaveis?: number;
   votos?: number;
   sem_evidencia?: number;
@@ -120,5 +122,10 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
   const frase = frasePorMotivo((b.motivos_sem_voto ?? {}) as Record<string, number>);
   if (frase) resumo.motivos_sem_voto = frase;
   if (typeof b.motivos_gravados === "number") resumo.motivos_gravados = b.motivos_gravados;
+  // ⚠️ Só publica quando MEDIU algo. Um zero vindo de rodada que não chamou o materializador
+  // apagaria da tela a medição da rodada anterior — `pendentes` já paga esse preço logo acima.
+  if (typeof b.roster_mudaria_com_presentes_do_pai === "number" && b.roster_mudaria_com_presentes_do_pai > 0) {
+    resumo.roster_mudaria_com_presentes_do_pai = b.roster_mudaria_com_presentes_do_pai;
+  }
   return resumo;
 }
