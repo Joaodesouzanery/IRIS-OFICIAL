@@ -33,13 +33,19 @@ import { isVotoNominal } from "@/lib/votos-nominal";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { assinarPdfsDasDeliberacoes } from "@/lib/server/pdf-da-deliberacao";
 import { colegiadoNaData, esperadoVsPresente, type MandatoJanela } from "@/lib/server/colegiado-na-data";
-import { normalizarFiltros, janelaDeDatas, filtroOrigemPostgrest } from "@/lib/server/auditoria-votos-filtros";
+import { normalizarFiltros, janelaDeDatas, filtroOrigemPostgrest, cabeContraprova } from "@/lib/server/auditoria-votos-filtros";
 import { montarCsv, type LinhaDeVoto } from "@/lib/server/auditoria-votos-csv";
 import { amostrarEstratificado } from "@/lib/server/amostra-estratificada";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
+
+/**
+ * Teto da leitura que monta o histograma de anos da contraprova. O TOTAL é exato (`count`); o teto
+ * limita apenas a quebra por ano, e `anos_parciais` diz quando ela é piso.
+ */
+const TETO_DA_CONTRAPROVA = 1000;
 
 const SELECT_DO_VOTO = `
   id, tipo_voto, is_divergente, is_nominal, proveniencia, motivo_nao_voto, voto_em_autos,
@@ -64,7 +70,13 @@ export async function GET(req: NextRequest) {
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
 
-  const comFiltros = (q: any) => {
+  /**
+   * ⚠️ `comJanela` existe para a CONTRAPROVA reusar exatamente estes predicados menos o de data.
+   * Reescrever a lista num segundo lugar seria a segunda verdade em miniatura: a contraprova
+   * passaria a responder sobre um recorte diferente do que a tela mostrou, e afirmaria com
+   * confiança algo que não corresponde ao vazio que o operador está vendo.
+   */
+  const comFiltros = (q: any, comJanela = true) => {
     if (f.diretor_id) q = q.eq("diretor_id", f.diretor_id);
     // A agência é a da DELIBERAÇÃO, não a do diretor: a pergunta é "que votos aconteceram nesta
     // agência". (Um voto cuja agência do diretor difere da da deliberação é erro de atribuição, e
@@ -74,8 +86,8 @@ export async function GET(req: NextRequest) {
     // (`reunioes.ts:75`), e filtrar pela FK esconderia as deliberações sem data — justo as que
     // mais precisam de auditoria. Ver o comentário no contrato dos filtros.
     if (f.numero_reuniao) q = q.eq("deliberacao.numero_reuniao", f.numero_reuniao);
-    if (de) q = q.gte("deliberacao.data_reuniao", de);
-    if (ate) q = q.lte("deliberacao.data_reuniao", ate);
+    if (comJanela && de) q = q.gte("deliberacao.data_reuniao", de);
+    if (comJanela && ate) q = q.lte("deliberacao.data_reuniao", ate);
     if (f.tipo_voto) q = q.eq("tipo_voto", f.tipo_voto);
     if (f.divergente) q = q.eq("is_divergente", true);
     if (f.origem) q = q.or(filtroOrigemPostgrest(f.origem));
@@ -117,6 +129,53 @@ export async function GET(req: NextRequest) {
     if (error) return NextResponse.json({ error: "Falha ao listar votos." }, { status: 500 });
     brutos = (data ?? []) as any[];
     total = count ?? brutos.length;
+  }
+
+  // ═══ ⚠️ CONTRAPROVA: "zero com este recorte" não é "não existe" ═════════════
+  //
+  // Medido: com ANM + reunião 79 + ano 2026, a tela imprimia "Nenhum voto com estes filtros." e o
+  // operador leu "não existe reunião 79 da ANM". Ela existe, com 36 votos, em 2025-11-26 — e os
+  // dois predicados entram na MESMA consulta conjuntivamente, então a interseção é vazia por
+  // construção. Nada na tela nem na rota detectava que os dois filtros se cancelam.
+  //
+  // Só roda no caso ZERO e só quando há janela de datas a relaxar (`cabeContraprova`): uma consulta
+  // extra que nunca acontece no caminho normal.
+  let contraprova: {
+    votos_fora_da_janela: number;
+    anos: Array<{ ano: string; votos: number }>;
+    anos_parciais: boolean;
+    sem_data_de_reuniao: number;
+  } | null = null;
+
+  if (!querAmostra && f.format !== "csv" && total === 0 && cabeContraprova(f)) {
+    const SELECT_LEVE = "id, deliberacao:deliberacoes!inner(data_reuniao)";
+    const fora = await comFiltros(
+      db.from("votos").select(SELECT_LEVE, { count: "exact" }), false,
+    ).limit(TETO_DA_CONTRAPROVA);
+    // Falha aqui NÃO vira contraprova vazia: sem número, a tela mostra o vazio simples e não
+    // afirma nada. Uma contraprova que erra é pior que contraprova nenhuma.
+    if (!fora.error && (fora.count ?? 0) > 0) {
+      const porAno = new Map<string, number>();
+      for (const v of (fora.data ?? []) as any[]) {
+        const dt = (v as any)?.deliberacao?.data_reuniao;
+        if (dt) porAno.set(String(dt).slice(0, 4), (porAno.get(String(dt).slice(0, 4)) ?? 0) + 1);
+      }
+      // ⚠️ A contagem de "sem data de reunião" é EXATA e própria, não tirada da amostra acima: é o
+      // número mais consequente dos dois, porque essa população NUNCA aparece com ano selecionado
+      // — `gte`/`lte` descartam NULL em silêncio — e é justo a que mais precisa de auditoria
+      // (`auditoria-votos-filtros.ts`, no contrato de `numero_reuniao`).
+      const semData = await comFiltros(
+        db.from("votos").select("id", { count: "exact", head: true }), false,
+      ).is("deliberacao.data_reuniao", null);
+      contraprova = {
+        votos_fora_da_janela: fora.count ?? 0,
+        anos: [...porAno.entries()].sort((x, y) => (x[0] < y[0] ? 1 : -1)).map(([ano, votos]) => ({ ano, votos })),
+        // O histograma sai de uma leitura com TETO; o total é exato. Se o teto foi atingido, a
+        // quebra por ano é um piso e a tela tem de dizer isso em vez de somar como se fechasse.
+        anos_parciais: ((fora.data ?? []) as any[]).length >= TETO_DA_CONTRAPROVA,
+        sem_data_de_reuniao: semData.error ? 0 : semData.count ?? 0,
+      };
+    }
   }
 
   // ═══ O colegiado esperado naquela data, e quem votou ═══════════════════════
@@ -253,6 +312,9 @@ export async function GET(req: NextRequest) {
     limit: f.limit,
     pages: Math.max(1, Math.ceil(total / f.limit)),
     filtros_aplicados: f,
+    // ⚠️ `null` quando não houve o que relaxar OU quando relaxar não achou nada — e a tela
+    // distingue os dois casos do vazio simples em vez de afirmar "não existe".
+    contraprova,
     notice:
       'Uma linha por VOTO. "Inferido" = completado por unanimidade ou por mandato, não lido do ' +
       'documento. "N de M" compara quem votou com quem tinha mandato naquela data; sem mandato ' +

@@ -317,8 +317,26 @@ describe("etapa157 · a aba existe, é encontrável e não repete o 401 conhecid
   });
 
   it("⚠️ o estado VAZIO diz por quê — tabela em branco lê como «o sistema perdeu os votos»", () => {
-    expect(TELA).toMatch(/Nenhum voto de \$\{nomeDoDiretor\}/);
-    expect(TELA).toMatch(/confira o período em Mandatos/);
+    /**
+     * ⚠️ Ancoragem atualizada na Fase 31, Bloco 4, e a exigência ficou MAIOR.
+     *
+     * A versão anterior aceitava uma única hipótese — o mandato — e ela só aparecia quando havia
+     * diretor selecionado. Sem diretor, a tela caía num literal fixo ("Nenhum voto com estes
+     * filtros.") que não dizia nada: nem o total, nem o recorte, nem uma causa. Foi nesse ramo que
+     * a 79ª ROP da ANM "desapareceu" para o operador, com a aba em 2026 e a reunião em 2025.
+     *
+     * Agora o vazio exige TRÊS coisas, e nenhuma delas depende de haver diretor selecionado.
+     */
+    // 1. O total explícito. Ele não existia: a contagem só saía dentro da paginação, condicionada
+    //    a `pages > 1` — e com zero linhas `pages` é 1, então nada renderizava.
+    expect(TELA).toMatch(/0 voto\(s\)<\/span> neste recorte/);
+    // 2. O recorte aplicado, em palavras.
+    expect(TELA).toMatch(/\{recorteEmPalavras/);
+    // 3. A contraprova — "existe fora deste recorte", com o número.
+    expect(TELA).toMatch(/Existe fora deste recorte/);
+    expect(TELA).toMatch(/\{contraprova\.votos_fora_da_janela\}/);
+    // E a hipótese de mandato continua, agora como complemento e não como única resposta.
+    expect(TELA).toMatch(/pode ser o mandato: confira em Mandatos/);
   });
 
   it("`motivo_nao_voto` aparece na linha — o campo existia e ninguém o lia", () => {

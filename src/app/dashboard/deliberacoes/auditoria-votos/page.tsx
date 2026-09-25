@@ -61,7 +61,20 @@ type LinhaDeVoto = {
   roster_conhecido: boolean;
   faltando: number;
 };
-type Resposta = { linhas: LinhaDeVoto[]; total: number; page: number; limit: number; pages: number; notice?: string };
+/**
+ * ⚠️ A contraprova do vazio. Só vem quando o recorte devolveu ZERO e havia janela de datas a
+ * relaxar — ela responde "existe, mas não neste ano", que é o caso da 79ª ROP da ANM.
+ */
+type Contraprova = {
+  votos_fora_da_janela: number;
+  anos: Array<{ ano: string; votos: number }>;
+  anos_parciais: boolean;
+  sem_data_de_reuniao: number;
+};
+type Resposta = {
+  linhas: LinhaDeVoto[]; total: number; page: number; limit: number; pages: number;
+  notice?: string; contraprova?: Contraprova | null;
+};
 type GrupoDaAmostra = {
   agencia: string; linhas: LinhaDeVoto[]; universo: number;
   cotas_sem_exemplar: string[]; cotas_fora_do_tamanho: string[];
@@ -94,7 +107,19 @@ export default function AuditoriaVotosPage() {
   const { demoEnabled } = useDataSyncContext();
   const [agenciaId, setAgenciaId] = useState("");
   const [diretorId, setDiretorId] = useState("");
-  const [ano, setAno] = useState(String(new Date().getFullYear()));
+  /**
+   * ⚠️ O ano nasce VAZIO (= todos os anos), como em `deliberacoes`, `360` e `governanca`.
+   *
+   * Ele nascia em `String(new Date().getFullYear())`, e isso produziu o incidente: o operador
+   * procurou a 79ª ROP da ANM, a aba estava em 2026, a reunião é de 2025-11-26, e a tela respondeu
+   * "Nenhum voto com estes filtros." — que se lê como "não existe". Existe, com 36 votos.
+   *
+   * ⚠️ E o ano não descarta só o que é de outro ano: `gte`/`lte` sobre `data_reuniao` descartam em
+   * SILÊNCIO toda deliberação com data NULA — justo a população que o filtro por `numero_reuniao`
+   * foi escolhido para não perder (o contrato dos filtros diz isso em palavras). Um default de ano
+   * reintroduzia essa exclusão em toda visita à aba.
+   */
+  const [ano, setAno] = useState("");
   const [tipoVoto, setTipoVoto] = useState("");
   const [origem, setOrigem] = useState("");
   const [soDivergentes, setSoDivergentes] = useState(false);
@@ -200,6 +225,23 @@ export default function AuditoriaVotosPage() {
 
   const linhas = data?.linhas ?? [];
   const nomeDoDiretor = (diretores ?? []).find((d) => d.id === diretorId)?.nome ?? "";
+  const contraprova = data?.contraprova ?? null;
+  /**
+   * ⚠️ O recorte aplicado, em palavras. A tela não o mostrava em lugar nenhum, e o total só
+   * aparecia dentro da paginação — que é condicionada a `pages > 1`. Com zero linhas, `pages` é 1,
+   * o bloco não renderiza, e o operador não via nem "0 voto(s)" nem qual filtro estava valendo.
+   * Um vazio sem recorte declarado é o formato em que "não existe" e "não neste corte" se
+   * confundem, e foi nele que a 79ª ROP sumiu.
+   */
+  const recorteEmPalavras = [
+    agenciaId ? ((agencias ?? []).find((a) => a.id === agenciaId)?.sigla ?? "agência") : null,
+    numeroReuniao.trim() ? `reunião ${numeroReuniao.trim()}` : null,
+    ano || "todos os anos",
+    nomeDoDiretor || null,
+    tipoVoto || null,
+    origem === "lido" ? "só lido" : origem === "inferido" ? "só inferido" : null,
+    soDivergentes ? "só divergentes" : null,
+  ].filter(Boolean).join(" · ");
 
   return (
     <div className="space-y-4">
@@ -367,10 +409,48 @@ export default function AuditoriaVotosPage() {
               ) : linhas.length === 0 ? (
                 /* ⚠️ Tabela em branco numa ferramenta de auditoria lê como "o sistema perdeu os
                    votos" — que é exatamente o medo do operador. O vazio diz POR QUÊ. */
-                <tr><td colSpan={COLSPAN} className="px-4 py-12 text-center text-text-muted text-sm">
-                  {nomeDoDiretor
-                    ? `Nenhum voto de ${nomeDoDiretor}${ano ? ` em ${ano}` : ""} com estes filtros. Isso pode ser o mandato: confira o período em Mandatos.`
-                    : "Nenhum voto com estes filtros."}
+                <tr><td colSpan={COLSPAN} className="px-4 py-10 text-sm">
+                  <div className="mx-auto max-w-2xl space-y-3 text-center">
+                    <p className="text-text-secondary">
+                      <span className="font-medium text-text-primary">0 voto(s)</span> neste recorte
+                      {recorteEmPalavras ? <span className="font-mono text-xs"> · {recorteEmPalavras}</span> : null}
+                    </p>
+                    {/* ⚠️ A CONTRAPROVA vem primeiro: ela é a única que transforma "não existe" em
+                        "não neste corte", e é o caso que o operador viveu com a 79ª ROP. */}
+                    {contraprova ? (
+                      <div className="rounded-card border border-warning/30 bg-warning/10 px-4 py-3 space-y-1 text-left">
+                        <p className="text-text-primary">
+                          ⚠️ Existe fora deste recorte:{" "}
+                          <span className="font-medium">{contraprova.votos_fora_da_janela} voto(s)</span>{" "}
+                          com os mesmos filtros e <span className="font-medium">sem o filtro de ano</span>.
+                        </p>
+                        {contraprova.anos.length > 0 ? (
+                          <p className="text-xs text-text-secondary">
+                            Onde estão: {contraprova.anos.map((a) => `${a.ano} (${a.votos})`).join(" · ")}
+                            {/* O total é exato; a quebra por ano sai de leitura com teto. Dizer
+                                "piso" é a diferença entre informar e afirmar o que não se mediu. */}
+                            {contraprova.anos_parciais ? " — piso: a quebra por ano sai de uma leitura com teto" : ""}
+                          </p>
+                        ) : null}
+                        {contraprova.sem_data_de_reuniao > 0 ? (
+                          <p className="text-xs text-text-secondary">
+                            ⚠️ E {contraprova.sem_data_de_reuniao} voto(s) são de deliberação{" "}
+                            <span className="font-medium">sem data de reunião</span> — esses não aparecem
+                            com nenhum ano selecionado, em ano nenhum.
+                          </p>
+                        ) : null}
+                        <button type="button" className="btn-secondary text-xs mt-1"
+                                onClick={() => aoFiltrar(setAno)("")}>
+                          Ver todos os anos
+                        </button>
+                      </div>
+                    ) : null}
+                    {nomeDoDiretor ? (
+                      <p className="text-text-muted text-xs">
+                        Se {nomeDoDiretor} não tem voto no período, pode ser o mandato: confira em Mandatos.
+                      </p>
+                    ) : null}
+                  </div>
                 </td></tr>
               ) : (
                 linhas.map((l) => (

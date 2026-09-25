@@ -113,6 +113,22 @@ export function normalizarFiltros(params: URLSearchParams): NormalizacaoDeFiltro
   };
 }
 
+/**
+ * ⚠️ A contraprova só faz sentido quando há JANELA DE DATAS para relaxar.
+ *
+ * Zero linhas com janela de datas não significa "não existe" — e a tela deixava concluir que
+ * significava. O caso medido: ANM + reunião 79, com o ano em 2026. A 79ª ROP é de 2025-11-26, os
+ * dois predicados entram na MESMA consulta conjuntivamente (`numero_reuniao = '79' AND data_reuniao
+ * >= '2026-01-01'`), a interseção é vazia, e a tela imprimia "Nenhum voto com estes filtros." O
+ * operador leu "não existe reunião 79" — e ela existe, com 36 votos gravados.
+ *
+ * Sem janela não há nada a relaxar: ali o vazio já é honesto, e gastar uma consulta seria ruído.
+ */
+export function cabeContraprova(f: FiltrosDaAuditoria): boolean {
+  const { de, ate } = janelaDeDatas(f);
+  return Boolean(de || ate);
+}
+
 /** A janela de datas efetiva: `ano` é açúcar para o par `date_from`/`date_to`. */
 export function janelaDeDatas(f: FiltrosDaAuditoria): { de: string | null; ate: string | null } {
   if (f.date_from || f.date_to) return { de: f.date_from, ate: f.date_to };
