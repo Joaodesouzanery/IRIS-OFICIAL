@@ -71,11 +71,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "URL inválida ou endereço interno não permitido" }, { status: 400 });
   }
 
+  /**
+   * ⚠️ FONTE DE DOCUMENTO REGULATÓRIO SEM AGÊNCIA NASCE INATIVA — e o motivo é medido.
+   *
+   * A tela oferece "Agência opcional" e esta rota aceitava `null`, criando a fonte **ativa**. Cada
+   * item descoberto por ela nasce sem agência, e o documento gerado herda o nulo — que é BECO SEM
+   * SAÍDA: `deliberacoes.agencia_id` é NOT NULL, então ele nunca vira deliberação. Fica no acervo
+   * sem poder avançar e sem constar em contagem por agência nenhuma. São os 19 medidos em produção.
+   *
+   * ⚠️ Não RECUSO o cadastro: para fonte `institucional` (notícias, diretoria) a agência nula é
+   * legítima e há sítios seedados assim. O que muda é que fonte de DOCUMENTO REGULATÓRIO sem agência
+   * não começa a produzir sozinha — ela é criada e fica esperando alguém dizer de quem é. Recusar
+   * quebraria cadastro que hoje funciona; criar ativa é o que produziu o beco.
+   */
+  const nasceInativa = tipo_fonte === "documentos_regulatorios" && !agencia_id;
+
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
   const { data, error } = await db
     .from("monitoramento_sites")
-    .insert({ nome, url, agencia_id, seletor_links, estrategia, tipo_fonte, auto_enfileirar_pdf })
+    .insert({ nome, url, agencia_id, seletor_links, estrategia, tipo_fonte, auto_enfileirar_pdf,
+              ...(nasceInativa ? { ativo: false } : {}) })
     .select("*, agencia:agencias(sigla, nome)")
     .single();
 
@@ -83,5 +99,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Erro ao criar site monitorado" }, { status: 500 });
   }
 
-  return NextResponse.json(data, { status: 201 });
+  return NextResponse.json(
+    {
+      ...(data as Record<string, unknown>),
+      // Sem dizer isto, o operador cadastra e fica esperando itens que nunca vêm — e o silêncio
+      // parece defeito da coleta.
+      ...(nasceInativa
+        ? {
+            aviso:
+              "Fonte de documentos criada INATIVA porque não tem agência: documento sem agência " +
+              "nunca vira deliberação. Informe a agência e ative para começar a coletar.",
+          }
+        : {}),
+    },
+    { status: 201 },
+  );
 }

@@ -117,6 +117,29 @@ Completude agora declara, na própria linha. O eixo insidioso: uma deliberação
 `resultado IS NULL` conta nas 40 e é **invisível ao backfill**, que a corta por SQL — o painel acusa
 o que o backfill jamais tentará resolver.
 
+### ⚠️ MIGRATION A APLICAR: `20260925120000_reparar_documentos_sem_agencia.sql`
+
+Repara os **19 documentos sem agência** pela PROCEDÊNCIA, em dois saltos exatos:
+`metadata->>'monitoramento_item_id'` → `monitoramento_itens.site_id` → `monitoramento_sites.agencia_id`.
+Nada de adivinhar pelo nome do arquivo (que é justamente o que estava corrompido nesta fase) nem de
+casar sigla no texto. Idempotente; reaplicar não toca nada.
+
+Ela imprime `RAISE NOTICE` com o antes, o depois, e **o motivo de quem sobrar** — duas causas, dois
+consertos: sem `monitoramento_item_id` (upload manual, só você sabe a agência) ou sítio também sem
+agência (defeito de cadastro de fonte).
+
+⚠️ **Por que isso importava:** `deliberacoes.agencia_id` é NOT NULL, então documento sem agência
+**nunca vira deliberação**. Ficava no acervo sem poder avançar e sem constar em contagem por agência
+nenhuma. Os 19 estão todos `ignored` — arquivados, fora de fila, e não voltavam sozinhos.
+
+⚠️ **E a medição inverteu meu diagnóstico:** eu apontei o upload manual de ZIP como "o caminho mais
+curto". `storage_em_auto: 1` contra `com_source_url: 18` diz que **18 dos 19 vieram da esteira**.
+
+**Sua decisão, que eu não tomei:** a migration **não desativa** fonte existente sem agência — isso é
+decisão de produto. O rodapé dela tem a consulta que lista quais estão ativas assim. O código novo já
+cria fonte de documento sem agência **INATIVA** (com aviso na resposta), mas as que já existem
+continuam como estão.
+
 ### O que `docs/qa-fase31.sql` passa a responder
 
 - **Bloco ⑧** — o de→para **já calculado**, agrupado por reunião. O SQL só LÊ o `jsonb`; zero

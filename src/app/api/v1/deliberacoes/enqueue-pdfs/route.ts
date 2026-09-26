@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
 
   const janelas = await Promise.all(agenciasAlvo.map((a) => db
     .from("monitoramento_itens")
-    .select("id, agencia_id, tipo, titulo, url_item, status, metadata")
+    .select("id, agencia_id, site_id, tipo, titulo, url_item, status, metadata")
     .eq("status", "novo")
     .eq("agencia_id", a.id)
     .in("tipo", DECISION_TIPOS as unknown as string[])
@@ -139,6 +139,50 @@ export async function POST(req: NextRequest) {
   if (error) {
     return NextResponse.json({ error: `Falha ao listar itens monitorados: ${error.message}` }, { status: 500 });
   }
+
+  /**
+   * ⚠️⚠️ A AGÊNCIA DO ITEM, COM FALLBACK NO SÍTIO — e é este o buraco dos 19 sem agência.
+   *
+   * ═══ A medição INVERTEU a ordem de causas que eu tinha escrito ═══
+   * No commit `f9c1026` eu apontei o upload manual de ZIP sem escolher agência como "o caminho mais
+   * curto". A produção respondeu: dos 19 documentos sem agência, `storage_em_auto` é **1** e
+   * `com_source_url` é **18**. Ou seja **18 dos 19 vieram da ESTEIRA**, não do upload manual — e os
+   * nomes dizem SEI `134.xxx`, que é da ARTESP.
+   *
+   * ═══ O mecanismo ═══
+   * `enqueuePdfBuffer` recebia `item.agencia_id` cru. `monitoramento_itens.agencia_id` é nullable
+   * (`ON DELETE SET NULL`), e há sítio seedado com agência NULA. Item sem agência → documento sem
+   * agência.
+   *
+   * ⚠️ E documento sem agência é BECO SEM SAÍDA: `deliberacoes.agencia_id` é NOT NULL
+   * (`001_initial_schema.sql`), então ele nunca vira deliberação — fica no acervo sem poder avançar
+   * e sem aparecer em contagem por agência nenhuma.
+   *
+   * ═══ Por que o SÍTIO é o fallback certo, e não um palpite ═══
+   * `monitoramento_itens.site_id` é **NOT NULL** (migration 005), e o sítio é literalmente de onde o
+   * documento veio. Não há inferência de conteúdo aqui: é a procedência, que o próprio modelo já
+   * registra. Se o SÍTIO também não tiver agência, o fallback devolve `null` e o item é CONTADO —
+   * porque aí o defeito é de cadastro de fonte, e ele tem de ficar visível em vez de virar um
+   * documento inerte no acervo.
+   */
+  const agenciaDoSiteCache = new Map<string, string | null>();
+  async function agenciaDoItem(item: { agencia_id?: unknown; site_id?: unknown }): Promise<string | null> {
+    const daPropria = typeof item.agencia_id === "string" && item.agencia_id ? item.agencia_id : null;
+    if (daPropria) return daPropria;
+    const siteId = typeof item.site_id === "string" && item.site_id ? item.site_id : null;
+    if (!siteId) return null;
+    const cacheado = agenciaDoSiteCache.get(siteId);
+    if (cacheado !== undefined) return cacheado;
+    const { data, error } = await db
+      .from("monitoramento_sites").select("agencia_id").eq("id", siteId).maybeSingle();
+    // Falha de leitura NÃO inventa agência: devolve null e o contador denuncia.
+    const resolvida = error ? null : ((data as { agencia_id?: string | null } | null)?.agencia_id ?? null);
+    agenciaDoSiteCache.set(siteId, resolvida);
+    return resolvida;
+  }
+  /** Quantos itens precisaram do fallback, e quantos seguiram sem agência mesmo assim. */
+  let agenciaHerdadaDoSite = 0;
+  let semAgenciaNemNoSite = 0;
 
   // ═══ Fase 8 — RETRY, numa consulta SEPARADA e com COTA PRÓPRIA ═══════════════
   //
@@ -157,7 +201,7 @@ export async function POST(req: NextRequest) {
     const agora = new Date().toISOString();
     const { data: elegiveis } = await db
       .from("monitoramento_itens")
-      .select("id, agencia_id, tipo, titulo, url_item, status, metadata, tentativas")
+      .select("id, agencia_id, site_id, tipo, titulo, url_item, status, metadata, tentativas")
       .eq("status", "ignorado")
       .in("tipo", DECISION_TIPOS as unknown as string[])
       .lt("tentativas", MAX_CICLOS_RETRY)
@@ -466,11 +510,19 @@ export async function POST(req: NextRequest) {
         // `pdf.filename` vem das entradas do ZIP (o nome de dentro do arquivo, que é o bom);
         // `deriveFilename` só entra para PDF direto e para filho de página HTML.
         const filename = pdf.filename ?? deriveFilename(item.titulo as string, pdf.url);
+        // ⚠️ A agência vem do item OU do sítio de onde ele veio — ver `agenciaDoItem`. Era aqui
+        // que `item.agencia_id` cru produzia documento sem agência, e documento sem agência nunca
+        // vira deliberação (`deliberacoes.agencia_id` é NOT NULL): beco sem saída.
+        const agenciaResolvida = await agenciaDoItem(item as { agencia_id?: unknown; site_id?: unknown });
+        if (!item.agencia_id) {
+          if (agenciaResolvida) agenciaHerdadaDoSite++;
+          else semAgenciaNemNoSite++;
+        }
         const enqueued = await enqueuePdfBuffer({
           db,
           filename,
           buffer: pdf.buffer,
-          agenciaId: (item.agencia_id as string | null) ?? null,
+          agenciaId: agenciaResolvida,
           sourceArchive: pdf.sourceArchive ?? null,
           metadata: {
             uploaded_via: "monitoramento_deliberacoes",
@@ -488,7 +540,7 @@ export async function POST(req: NextRequest) {
           (enqueued.status === "queued" || enqueued.status === "existing_failed") &&
           enqueued.job_id
         ) {
-          jobsToProcess.push({ jobId: enqueued.job_id, agenciaId: (item.agencia_id as string | null) ?? null });
+          jobsToProcess.push({ jobId: enqueued.job_id, agenciaId: agenciaResolvida });
         }
         pdfsGravados++;
         if (enqueued.status === "error" || enqueued.status === "rejected") algumErro = true;
@@ -592,6 +644,16 @@ export async function POST(req: NextRequest) {
     /** Fase 27 — pautas de ano encerrado arquivadas sem download (agenda não gera voto). */
     ...(pautasForaDoAno > 0 ? { pautas_fora_do_ano: pautasForaDoAno } : {}),
     ...(filhosTruncados > 0 ? { filhos_truncados: filhosTruncados } : {}),
+    /**
+     * Fase 31 — os dois contadores do buraco dos 19 sem agência.
+     *
+     * `agencia_herdada_do_site` é conserto acontecendo: item sem agência que ganhou a do sítio.
+     * `sem_agencia_nem_no_site` é o que SOBRA — e sobrar aqui é defeito de CADASTRO DE FONTE, não
+     * de extração. Ele tem de aparecer como número: silenciá-lo é como o documento ficou inerte no
+     * acervo por semanas, sem poder virar deliberação e sem constar em contagem por agência nenhuma.
+     */
+    ...(agenciaHerdadaDoSite > 0 ? { agencia_herdada_do_site: agenciaHerdadaDoSite } : {}),
+    ...(semAgenciaNemNoSite > 0 ? { sem_agencia_nem_no_site: semAgenciaNemNoSite } : {}),
     // Quantos desta chamada eram RETENTATIVAS (itens que o portal não entregou antes e cujo prazo
     // venceu). Sem reportar, uma rodada que só retentou pareceria uma rodada que não achou nada.
     ...(idsEmRetry.size > 0
