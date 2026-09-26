@@ -32,7 +32,15 @@ const ANOS = Array.from({ length: 6 }, (_, i) => new Date().getFullYear() - i);
 
 export default function ReunioesPage() {
   const [agenciaId, setAgenciaId] = useState("");
-  const [year, setYear] = useState(String(new Date().getFullYear()));
+  /**
+   * ⚠️ O ano nasce VAZIO (= todos os anos). Esta é A TELA que o usuário abriu procurando a 79ª ROP
+   * da ANM — "são 5 páginas e não tem 79" —, e ela não tinha como mostrar a 79ª: o ano nascia em
+   * 2026, a reunião é de 2025-11-26, e o seletor **não oferecia** "Todos os anos". Não havia saída
+   * pela interface: nenhuma combinação de cliques trazia a reunião à tela.
+   *
+   * As telas irmãs (`deliberacoes`, `360`, `governanca`) já nasciam em "todos os anos".
+   */
+  const [year, setYear] = useState("");
   const [openSlug, setOpenSlug] = useState<string | null>(null);
 
   const { data: agencias } = useQuery({
@@ -48,6 +56,12 @@ export default function ReunioesPage() {
     queryKey: ["reunioes", agenciaId, year],
     queryFn: () => api.get<ReuniaoListItem[]>(`/reunioes?${qs.toString()}`),
   });
+
+  /** O recorte aplicado, em palavras — a tela não o mostrava, e o ano estava sempre valendo. */
+  const recorte = [
+    agenciaId ? ((agencias ?? []).find((a) => a.id === agenciaId)?.sigla ?? "agência") : "todas as agências",
+    year || "todos os anos",
+  ].join(" · ");
 
   return (
     <div className="space-y-6 animate-fade-in">
@@ -66,6 +80,10 @@ export default function ReunioesPage() {
             {(agencias ?? []).map((a) => <option key={a.id} value={a.id}>{a.sigla}</option>)}
           </select>
           <select className="select w-28" value={year} onChange={(e) => setYear(e.target.value)}>
+            {/* ⚠️ A opção que NÃO EXISTIA. Sem ela o filtro de ano não tinha saída: quem procurasse
+                uma reunião de outro ano tinha de adivinhar o ano certo ou concluir que ela não
+                existe — e foi a segunda conclusão que o operador tirou. */}
+            <option value="">Todos os anos</option>
             {ANOS.map((a) => <option key={a} value={String(a)}>{a}</option>)}
           </select>
         </div>
@@ -74,7 +92,18 @@ export default function ReunioesPage() {
       {isLoading ? (
         <p className="text-sm text-text-muted">Carregando reuniões...</p>
       ) : (reunioes ?? []).length === 0 ? (
-        <p className="text-sm text-text-muted">Nenhuma reunião encontrada no período.</p>
+        /* ⚠️ O vazio diz o RECORTE. "Nenhuma reunião encontrada no período" não dizia qual período,
+           e com o ano pré-selecionado o operador não sabia que havia um período aplicado. */
+        <div className="space-y-2">
+          <p className="text-sm text-text-muted">
+            Nenhuma reunião em <span className="font-mono text-xs">{recorte}</span>.
+          </p>
+          {year ? (
+            <button type="button" className="btn-secondary text-xs" onClick={() => setYear("")}>
+              Ver todos os anos
+            </button>
+          ) : null}
+        </div>
       ) : (
         <div className="space-y-2">
           {(reunioes ?? []).map((r) => (
