@@ -19,7 +19,26 @@ O cadastro só conhece **mandato**; `colegiadoNaData` e `getActiveDiretoresForVo
 de mandato e nada mais. Mandato ativo ≠ presença, e hoje ele recebe voto inferido em toda reunião do
 período.
 
-**Preciso de:** a data de início do afastamento, e se há **ato publicado** (DOU/DOE) que a fixe.
+⚠️ **E antes disso, uma correção da premissa — o repositório não sustenta o "afastado".**
+
+Fui escrever o detector de marcador de afastamento e conferi a fonte primeiro. O que existe:
+
+- o preâmbulo **REAL** da 79ª ROP (travado em teste desde a Fase 7) **não contém a palavra
+  "afastad"**, e **não nomeia Caio Mário**. A ausência dele ali é por **OMISSÃO**;
+- a única menção a ele no código é da **83ª**, e é como **relator anterior**: *"por se tratar de
+  matéria anteriormente relatada pelo Diretor Caio Mário…, NÃO HAVIA IMPEDIMENTO"*. Há guard
+  explícito para não ler isso como impedimento;
+- **zero** fixtures do repo têm a palavra num rótulo de ausência.
+
+Então **não escrevi o detector**, e não deixei constante desligada esperando: escrever regex sem
+amostra real é o erro que produziu a CP850 (a Fase 14 acertou ao descartar CP437 porque testou, e
+errou ao concluir Latin-1 porque não testou). Em vez disso, os **blocos ⑩ e ⑪** do `qa-fase31.sql`
+buscam a frase no `raw_text` e devolvem o trecho — com ela, a regex nasce de amostra.
+
+⚠️ **E se o bloco ⑪ vier sem "afastad"**, a resposta para a 79ª já está pronta e é outra: a ausência
+é por omissão, e quem a conserta é ligar `PRESENTES_DO_PAI_VALEM` (bloco ⑧), não um detector.
+
+**Ainda preciso de:** a data de início do afastamento, e se há **ato publicado** (DOU/DOE) que a fixe.
 Com ela o mandato passa a refletir o fato e o **denominador "de M"** deixa de contá-lo em todas as
 reuniões do período — não só nas que a ata menciona.
 

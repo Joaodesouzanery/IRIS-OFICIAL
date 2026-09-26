@@ -338,5 +338,69 @@ SELECT jsonb_pretty(jsonb_build_object(
         LEFT JOIN agencias a ON a.id = r.agencia_id
     ) t
   )
+,
+
+  -- ⑩ A FRASE REAL DO AFASTAMENTO — antes de eu escrever regex nenhuma (Fase 31, Bloco 4)
+  --
+  --    ⚠️ ESTE BLOCO EXISTE PORQUE EU NAO TENHO A FRASE, e escrever detector sem amostra e
+  --    exatamente o erro que produziu a CP850: a Fase 14 ACERTOU ao descartar CP437 (testou) e
+  --    ERROU ao concluir Latin-1 (nao testou). Nao vou repetir com "afastado".
+  --
+  --    O que o REPO diz hoje, medido:
+  --      · o preambulo REAL da 79a ROP (fixture `PREAMBULO_79`, etapa24) NAO contem "afastad" —
+  --        Caio Mario simplesmente NAO E NOMEADO ali. A ausencia dele e por OMISSAO;
+  --      · a unica mencao a ele no codigo e da 83a, e e como RELATOR ANTERIOR: "por se tratar de
+  --        materia anteriormente relatada pelo Diretor Caio Mario..., NAO HAVIA IMPEDIMENTO". Ha
+  --        guard explicito (`RE_IMPEDIMENTO_NEGADO`) para nao ler isso como impedimento;
+  --      · ZERO fixtures do repo contem a palavra num rotulo de ausencia.
+  --
+  --    Logo a hipotese "a ata diz que ele esta afastado" NAO esta sustentada pelo que eu alcanco.
+  --    Este bloco busca no `raw_text` (que tem indice trigram, entao o ILIKE e barato) e devolve o
+  --    TRECHO. Com a frase na mao, a regex nasce de amostra real.
+  --
+  --    ⚠️ E o detector NAO foi escrito: nao ha constante desligada esperando, porque nao ha o que
+  --    ligar. Escrever agora seria adivinhar a forma e chamar de "medido e desligado".
+  '10_frase_do_afastamento', (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.data_reuniao DESC NULLS LAST), '[]'::jsonb) FROM (
+      SELECT COALESCE(a.sigla,'?') AS agencia, d.numero_reuniao, d.data_reuniao,
+             d.tipo_documento,
+             -- O trecho em volta da PRIMEIRA ocorrencia: 120 caracteres antes e 200 depois.
+             -- E o bastante para ver o rotulo, o nome e o motivo, que e o que a regex precisa.
+             substring(d.raw_text
+                       FROM greatest(1, position('afastad' IN lower(d.raw_text)) - 120)
+                       FOR 320) AS trecho,
+             -- Quantas vezes aparece: 1 e provavelmente prosa solta; varias sugere rotulo estruturado.
+             (length(lower(d.raw_text)) - length(replace(lower(d.raw_text), 'afastad', ''))) / 7
+               AS ocorrencias
+        FROM deliberacoes d
+        LEFT JOIN agencias a ON a.id = d.agencia_id
+       WHERE d.raw_text IS NOT NULL
+         AND d.raw_text ILIKE '%afastad%'
+         -- "Afastamento em Ferias" dentro do rotulo da ARTESP ja e tratado (Fase 13/23): ele e
+         -- MOTIVO de ausencia rotulada, nao a classe nova. Sai, para o bloco mostrar o que e novo.
+         AND d.raw_text NOT ILIKE '%Afastamento em F%rias%'
+       LIMIT 40
+    ) t
+  ),
+
+  -- ⑪ E A 79a ESPECIFICAMENTE: o preambulo dela, cru (Fase 31, Bloco 4)
+  --    ⚠️ Responde a pergunta que o fixture do repo nao responde. Se vier vazio ou sem "afastad",
+  --    a ausencia de Caio Mario na 79a e por OMISSAO — e o conserto dela e o `PRESENTES_DO_PAI_VALEM`
+  --    (bloco ⑧), nao um detector de afastamento.
+  '11_preambulo_da_79', (
+    SELECT COALESCE(jsonb_agg(t), '[]'::jsonb) FROM (
+      SELECT COALESCE(a.sigla,'?') AS agencia, d.numero_reuniao, d.data_reuniao, d.tipo_documento,
+             left(d.raw_text, 1200) AS primeiros_1200_caracteres,
+             d.raw_text ILIKE '%afastad%' AS menciona_afastado,
+             d.raw_text ILIKE '%Caio M%' AS menciona_caio_mario
+        FROM deliberacoes d
+        LEFT JOIN agencias a ON a.id = d.agencia_id
+       WHERE COALESCE(a.sigla,'') = 'ANM'
+         AND d.raw_text IS NOT NULL
+         AND (d.numero_reuniao IN ('79','79ª') OR d.data_reuniao = DATE '2025-11-26')
+         AND d.documento_pai_id IS NULL   -- o PAI da ata carrega o preambulo; os filhos, nao
+       LIMIT 5
+    ) t
+  )
 
 )) AS qa_fase31;
