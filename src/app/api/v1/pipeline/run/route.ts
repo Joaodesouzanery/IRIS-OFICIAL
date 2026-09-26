@@ -64,6 +64,7 @@ import { POST as materializarPOST } from "../../admin/votos/materializar-faltant
 import { resumirBackfill } from "@/lib/server/resumo-do-backfill";
 import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ignorados/route";
 import { POST as redatarPOST } from "../../admin/deliberacoes/redatar/route";
+import { POST as mojibakePOST } from "../../admin/documentos/mojibake/route";
 import { POST as reResultarPOST } from "../../admin/deliberacoes/re-resultar/route";
 import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
@@ -78,6 +79,14 @@ import {
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
+/**
+ * A SOBRA MÍNIMA para o reparo de nomes valer o round-trip. Abaixo disto ele não roda — é a lição
+ * da Fase 7 na forma dela: fatia menor que a reserva interna gasta o auth e devolve zero.
+ */
+const SOBRA_MINIMA_REPARAR_NOMES_MS = 9_000;
+/** Teto do carona: mesmo com sobra grande, ele não come a rodada inteira. */
+const TETO_REPARAR_NOMES_MS = 16_000;
+
 export const maxDuration = 120;
 
 const RE_VOTO_FILENAME_SQL = "voto[ _-]+(vista[ _-]+)?d[a-z]{1,2}[ _-]*[0-9]";
@@ -191,6 +200,55 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     // disjuntor não via nada. O caso real: sob o cron diário, QUATRO passos respondiam 403 —
     // confirm-lote, dedup, recompute e aprovar-lote usavam `requireAdmin` em vez de
     // `requireAdminOrCron` — e o cron reportava sucesso todo dia sem materializar uma linha.
+    return { ok: res.status >= 200 && res.status < 300, status: res.status, pulado: false, body: corpo };
+  }
+
+  /**
+   * ⚠️ Chamar com a SOBRA da rodada — deliberadamente FORA do plano de passos.
+   *
+   * ═══ Por que não é um passo (e a medição que decidiu) ═══
+   * O reparo de nomes ia entrar como 13º passo de cabeça. Medido em `planejarRodada` com 24 rodadas
+   * e orçamento de 66s: **`reResultar` cai de 7/24 para 4/24** — e isso acontece mesmo com a
+   * reserva em 500ms, ou seja, NÃO é o custo, é o módulo do giro (a cabeça é o módulo, e ela iria
+   * de 12 para 13). Testei quatro posições × três reservas: nas doze, `reResultar` fica em 4-5.
+   *
+   * Depois testei cinco variantes do anel de privilégio. Toda variante que devolve `reResultar` a
+   * ≥6 derruba `confirmLote` (5→3) e `enqueue` (6→4). O orçamento está saturado — ~128s de reservas
+   * contra 66s —, então um 13º passo de cabeça significa necessariamente tirar de alguém, e não há
+   * anel que redistribua sem vítima.
+   *
+   * Pagar materialização de VOTO (`reResultar` preenche o `resultado` que vira voto) com hygiene de
+   * nome de arquivo é um mau negócio, e o `etapa119` existe para impedir exatamente esse trade.
+   *
+   * ═══ O que sobra, e por que é honesto ═══
+   * O reparo não é trabalho RECORRENTE: é a drenagem de um passivo de 287 linhas que se extingue.
+   * Então ele não pede um lugar permanente no rodízio — ele roda com o que sobrou DEPOIS de todos
+   * os passos planejados, e só quando a sobra cobre a reserva com margem. Numa rodada apertada
+   * simplesmente não roda, e `restantes` o traz de volta.
+   *
+   * ⚠️ E ele NÃO é `PassoEsteira` de propósito: o `etapa72` cobra que toda entrada em `RESERVA`
+   * tenha lugar em `ORDEM_DOS_PASSOS` ("nenhum passo órfão"), e essa invariante é boa. Uma reserva
+   * sem plano seria um passo que ninguém agenda.
+   */
+  async function chamarComSobra(
+    handler: (r: NextRequest) => Promise<NextResponse | Response>,
+    path: string,
+    sliceMs: number,
+    body?: unknown,
+  ): Promise<Resposta> {
+    const url = new URL(path, req.url);
+    // `budget_ms=0` é PIOR que não chamar: `budgetFromRequest` trata 0 como ausente e a sub-rota
+    // abre um orçamento NOVO, fora de qualquer controle. O gate do chamador garante > 0.
+    url.searchParams.set("budget_ms", String(Math.round(sliceMs)));
+    const synthetic = new NextRequest(url, {
+      method: body === undefined ? "GET" : "POST",
+      headers: { "content-type": "application/json", authorization: auth },
+      ...(body === undefined ? {} : { body: JSON.stringify(body) }),
+    });
+    const res = await handler(synthetic);
+    const corpo = await res.json().catch(() => ({}));
+    // Mesmo contrato de `call`: status HTTP é OLHADO. Foi ignorá-lo que fez quatro passos
+    // responderem 403 sob o cron e a run reportar sucesso sem materializar uma linha.
     return { ok: res.status >= 200 && res.status < 300, status: res.status, pulado: false, body: corpo };
   }
 
@@ -783,6 +841,46 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       } catch {
         etapas[nome] = { erro: `${nome} falhou nesta rodada` };
       }
+    }
+  }
+
+  // 10e · REPARO DE NOMES (Fase 31, Bloco 4) — o carona da SOBRA, não um passo do plano.
+  //
+  // 287 nomes de arquivo estão gravados como "DELIBERAÇO ARTESP N§ 646" (CP850 lida como Latin-1).
+  // A rota que os repara existe desde o Commit C e **nunca foi chamada** — o usuário disse "não sei
+  // o que é isso e nem como fazer", e um reparo que só existe atrás de um `curl` é capacidade sem
+  // consumidor. Agora o "Rodar tudo" drena.
+  //
+  // ⚠️ NÃO é passo de cabeça, e o motivo está medido em `chamarComSobra`: um 13º passo custaria
+  // `reResultar` (7/24 → 4/24) e não há anel que evite. Aqui ele usa o que sobrou, então não tira
+  // de ninguém: se não sobrar, não roda.
+  //
+  // Idempotente por construção: `reparoDoNome` devolve `null` quando a plausibilidade não sobe
+  // ESTRITAMENTE, então nome já reparado não volta ao lote. A 2ª rodada sobre acervo drenado
+  // devolve zero — e esse é o teste de aceite.
+  const sobraParaNomes = saldo();
+  if (sobraParaNomes >= SOBRA_MINIMA_REPARAR_NOMES_MS) {
+    try {
+      const r = await chamarComSobra(
+        mojibakePOST,
+        "/api/v1/admin/documentos/mojibake?dry_run=0",
+        // O teto é para o reparo não comer a sobra inteira num acervo grande; a rota ainda faz
+        // recheck por documento e devolve `restantes`.
+        Math.min(sobraParaNomes, TETO_REPARAR_NOMES_MS),
+        {},
+      );
+      const ap = (r.body?.aplicado ?? {}) as Record<string, unknown>;
+      const esc = (r.body?.escopo ?? {}) as Record<string, unknown>;
+      etapas.reparar_nomes = anotar(r, "reparo de nomes", {
+        nomes_reparados: Number(ap.documentos ?? 0),
+        jobs_reparados: Number(ap.jobs ?? 0),
+        // O denominador: quantos candidatos de ZIP existem. Sem ele, "0 reparados" é ambíguo entre
+        // "drenou" e "não achou nada por defeito" — o pior formato de zero, que a Fase 20 nomeou.
+        nomes_candidatos: Number(esc.no_escopo_zip ?? 0),
+      });
+      if (r.body?.restantes) restantes = true;
+    } catch {
+      etapas.reparar_nomes = { erro: "reparo de nomes falhou nesta rodada" };
     }
   }
 

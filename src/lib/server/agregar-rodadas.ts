@@ -39,6 +39,13 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
   "sem_voto",
   "finais_analisadas",
   "pendentes_direcao",
+  /**
+   * Fase 31, Bloco 4 — o PASSIVO de nomes com mojibake reparável. `medir()` varre o acervo inteiro
+   * a cada rodada e recalcula do zero, então é retrato, não contagem do que a rodada fez. Somá-lo
+   * daria "287 · 247 · 207 …" = 741 candidatos num acervo que tem 287 — e o número cai a cada
+   * rodada, que é exatamente o sinal de que o reparo está funcionando.
+   */
+  "nomes_candidatos",
 ]);
 
 /**

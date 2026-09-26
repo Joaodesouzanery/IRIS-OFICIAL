@@ -21,6 +21,10 @@ vi.mock("@/lib/server/is-demo", () => ({ isDemo: () => false }));
 vi.mock("@/lib/server/request-guards", () => ({
   isDemoRequest: () => false,
   requireAdmin: async () => null,
+  // ⚠️ Fase 31, Bloco 4 — o POST passou a ser chamado pela ESTEIRA, que pode rodar sob o Bearer do
+  // cron. `requireAdmin` ali daria 403, e o Commit da Fase 10 mediu o custo disso: quatro passos
+  // respondiam 403 sob o cron e a run reportava SUCESSO sem materializar uma linha.
+  requireAdminOrCron: async () => null,
 }));
 
 declare global { var __mojiDb: unknown }

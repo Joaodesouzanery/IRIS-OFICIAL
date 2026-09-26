@@ -18,20 +18,54 @@
  * ═══ Dois verbos, dois contratos ═══
  * `GET`  — mede. Não existe caminho de escrita nele.
  * `POST` — repara, e **só com `?dry_run=0`**; o default é medir, como em `redatar/route.ts:54`.
+ *
+ * ═══ Fase 31, Bloco 4 — o POST é PASSO DA ESTEIRA ═══
+ * O usuário disse *"não sei o que é isso e nem como fazer"* sobre chamar rota. Um reparo que só
+ * existe atrás de um `curl` é `capacidade-sem-consumidor`: correto, medido, e inalcançável para
+ * quem precisa dele. Então o "Rodar tudo" passa a drenar os 287 nomes, no molde do `redatar`.
+ *
+ * Três consequências de desenho, e nenhuma é opcional:
+ *
+ * 1. **Honra `budget_ms`.** A Fase 10 mediu cinco rotas que ignoravam a fatia e por isso a run
+ *    estourava o teto do cliente. Uma rota que entra na esteira SEM ler o orçamento é a sexta.
+ * 2. **Lote por rodada + `restantes`.** Cada documento custa dois round-trips (o documento e o
+ *    job), então os 287 seriam ~570 idas ao banco numa fatia de 8s. O lote é o que faz o passo
+ *    caber; `restantes: true` é o que faz a esteira voltar até drenar.
+ * 3. **Idempotente por construção.** `reparoDoNome` devolve `null` quando a plausibilidade não
+ *    sobe ESTRITAMENTE, então nome já reparado não entra no lote de novo — a 2ª rodada sobre um
+ *    acervo drenado devolve zero, e é esse o teste de aceite.
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdmin, requireAdminOrCron } from "@/lib/server/request-guards";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { reparoDoNome, notaDePlausibilidade } from "@/lib/server/decodificar-nome-de-arquivo";
 import { buildSemanticDuplicateKey } from "@/lib/server/regulatory-documents";
+import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 export const maxDuration = 120;
+
+/**
+ * Quantos documentos o passo repara POR RODADA.
+ *
+ * ⚠️ O número sai do custo medido, não de gosto: cada documento custa DOIS round-trips (a linha em
+ * `documentos_regulatorios` e a de `upload_jobs`), e a reserva do passo é 8s. Com 40 documentos são
+ * ~80 idas ao banco — cabe, e sobra margem para a varredura. Sem o lote, os 287 candidatos seriam
+ * ~570 round-trips numa fatia de 8s: o passo estouraria a fatia, e estourar a fatia de um passo na
+ * esteira significa comer a dos seguintes.
+ *
+ * `restantes: true` é o que faz a esteira voltar. O drenar leva ~8 rodadas, e depois o passo custa
+ * a varredura e devolve zero — como o `redatar`.
+ */
+const LOTE_POR_RODADA = 40;
+
+/** Reserva por documento: os dois round-trips (documento + job) mais folga de gravação. */
+const RESERVA_POR_DOCUMENTO_MS = 400;
 
 interface Candidato {
   id: string;
@@ -253,11 +287,14 @@ export async function POST(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json({ error: "Escrita bloqueada em demo." }, { status: 403 });
   }
-  const guard = await requireAdmin(req);
+  // `requireAdminOrCron` porque a esteira chama este POST como passo — e o "Rodar tudo" pode
+  // rodar sob sessão de admin OU sob o Bearer do cron.
+  const guard = await requireAdminOrCron(req);
   if (guard) return guard;
 
   // Default é MEDIR. Só `dry_run=0` escreve — mesmo contrato de `redatar/route.ts:54`.
   const dryRun = req.nextUrl.searchParams.get("dry_run") !== "0";
+  const deadlineAt = Date.now() + budgetFromRequest(req);
   const amostraN = Math.max(1, Math.min(50, Number(req.nextUrl.searchParams.get("amostra")) || 10));
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
@@ -277,9 +314,19 @@ export async function POST(req: NextRequest) {
 
   let reparados = 0;
   let jobsReparados = 0;
+  let restantes = false;
   const falhas: string[] = [];
+  /**
+   * ⚠️ O lote sai do ESCOPO, não do total. `noEscopo` já é o filtro de procedência de ZIP; cortar
+   * antes dele faria o passo "drenar" enquanto sobrasse candidato fora do escopo — que nunca é
+   * tocado — e `restantes` ficaria eternamente true, com a esteira voltando para não fazer nada.
+   */
+  const lote = noEscopo.slice(0, LOTE_POR_RODADA);
+  if (noEscopo.length > lote.length) restantes = true;
   if (!dryRun) {
-    for (const c of noEscopo) {
+    for (const c of lote) {
+      // Reserva por documento: os dois round-trips (documento + job) mais folga de gravação.
+      if (!hasBudget(deadlineAt, RESERVA_POR_DOCUMENTO_MS)) { restantes = true; break; }
       const patch: Record<string, unknown> = {};
       if (c.filename_reparado) patch.filename = c.filename_reparado;
       if (c.source_archive_reparado) patch.source_archive = c.source_archive_reparado;
@@ -304,7 +351,10 @@ export async function POST(req: NextRequest) {
       else falhas.push(c.id);
     }
     // `upload_jobs.filename` carrega o mesmo nome e é o que a tela de Upload mostra.
-    for (const c of noEscopo) {
+    for (const c of lote) {
+      // O 2º laço também recheca: sem isto o passo respeitaria o orçamento na 1ª metade e o
+      // estouraria na 2ª — e estourar a fatia na esteira significa comer a dos passos seguintes.
+      if (!hasBudget(deadlineAt, RESERVA_POR_DOCUMENTO_MS)) { restantes = true; break; }
       if (!c.filename || !c.filename_reparado) continue;
       const ok = await exigirEscrita(
         db.from("upload_jobs").update({ filename: c.filename_reparado, updated_at: new Date().toISOString() })
@@ -318,8 +368,15 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     modo: dryRun ? "dry_run" : "aplicado",
     ...resumir(m, chave, amostraN),
-    escopo: { no_escopo_zip: noEscopo.length, fora_do_escopo_nao_tocado: m.candidatos.length - noEscopo.length },
+    escopo: {
+      no_escopo_zip: noEscopo.length,
+      fora_do_escopo_nao_tocado: m.candidatos.length - noEscopo.length,
+      lote_desta_rodada: lote.length,
+      lote_maximo: LOTE_POR_RODADA,
+    },
     aplicado: dryRun ? null : { documentos: reparados, jobs: jobsReparados, falhas: falhas.slice(0, 20) },
+    /** A esteira lê isto para voltar na rodada seguinte até drenar (contrato de `redatar`). */
+    restantes,
     notice: dryRun
       ? "DRY-RUN: nada foi gravado. Para aplicar, repita com ?dry_run=0."
       : "Nomes reparados. `semantic_duplicate_key` NÃO foi recomputada — veja `chave_de_dedup`.",

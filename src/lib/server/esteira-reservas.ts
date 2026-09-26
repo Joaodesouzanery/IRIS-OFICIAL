@@ -173,6 +173,14 @@ export const ORDEM_DOS_PASSOS: readonly PassoEsteira[] = [
   // `redatar` vem depois do dedup (datas certas antes de consolidar reuniões/derivadas) e fica
   // FORA da cauda de propósito: a cauda é o mínimo vital (32s) e um passo de hygiene não pode
   // encarecê-la — ele gira com a cabeça, como dedup e recuperação.
+  //
+  // ⚠️ O REPARO DE NOMES (Fase 31) NÃO ESTÁ AQUI, e a ausência é medida — não esquecimento.
+  // Ele ia entrar ao lado do `redatar`. Com a cabeça em 13 (era 12), `reResultar` cai de 7/24 para
+  // 4/24 — e cai igual com a reserva em 500ms, logo a causa é o MÓDULO DO GIRO, não o custo. Quatro
+  // posições × três reservas: nas doze, 4-5. Cinco variantes do anel: toda que devolve `reResultar`
+  // a ≥6 derruba `confirmLote` (5→3) e `enqueue` (6→4), porque o orçamento está saturado (~128s de
+  // reservas contra 66s). Não há redistribuição sem vítima, e a vítima seria quem materializa VOTO.
+  // Então ele roda com a SOBRA da rodada, fora do plano — ver `chamarComSobra` em `pipeline/run`.
   "reaper", "extracao", "dedup", "redatar", "recuperacao", "reprocessarFalhados", "derivada",
 ] as const;
 

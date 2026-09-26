@@ -652,6 +652,22 @@ export default function VotosDiretoresPage() {
         (totais.fora_de_escopo ?? 0) > 0
           ? `${totais.fora_de_escopo} de agência não-colegiada — fora do escopo da esteira de votos, não é falta de evidência`
           : null,
+        /**
+         * Fase 31, Bloco 4 — o reparo dos nomes com mojibake, drenando.
+         *
+         * ⚠️ As duas naturezas são DIFERENTES e a linha diz as duas: `nomes_reparados` é EVENTO
+         * (soma o que as rodadas fizeram) e `nomes_candidatos` é ESTOQUE (retrato do passivo, o
+         * ÚLTIMO valor visto). Somar o estoque daria "287 · 247 · 207…" num acervo de 287.
+         *
+         * ⚠️ E o "restam" é o sinal de aceite: ele tem de CAIR entre cliques e chegar a zero. Se
+         * `reparados > 0` e `restam` não cai, o reparo está gravando e voltando a achar o mesmo —
+         * o que significaria que `reparoDoNome` não é idempotente, e aí a linha denuncia.
+         */
+        (totais.nomes_reparados ?? 0) > 0 || (totais.nomes_candidatos ?? 0) > 0
+          ? `${totais.nomes_reparados ?? 0} nome(s) de arquivo reparados` +
+            ((totais.jobs_reparados ?? 0) > 0 ? ` (+${totais.jobs_reparados} na fila de upload)` : "") +
+            ` — restam ${totais.nomes_candidatos ?? 0} candidato(s) de ZIP no acervo`
+          : null,
         leituraDoAcervo ? `⚠️ leitura do acervo ${leituraDoAcervo}` : null,
         // Fase 21 — o que o materializador RECUSOU ou não conseguiu, visível. Antes esses números
         // eram calculados toda noite e descartados: uma run em que todas as escritas falharam

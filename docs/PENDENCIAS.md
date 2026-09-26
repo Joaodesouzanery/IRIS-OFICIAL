@@ -37,6 +37,34 @@ denominador; os presentes do pai consertam a atribuição.
   cadastro. Calculado com `resolverPresentesRoster`, a **mesma** função que constrói o roster que
   vira voto: uma verdade só.
 
+### O reparo dos 287 nomes entra no "Rodar tudo"
+
+A rota que repara os nomes com mojibake (`DELIBERAÇO ARTESP N§ 646`) existia desde o Commit C e
+**nunca foi chamada**. Agora o botão drena: ~40 documentos por rodada, e o banner mostra
+`N nome(s) de arquivo reparados — restam M candidato(s) de ZIP no acervo`.
+
+**Aceite:** clique duas vezes. Na 1ª, `reparados > 0` e `restam` cai; quando `restam` chegar a 0, a
+linha para de aparecer. Se `reparados > 0` e `restam` **não** cair, o reparo não é idempotente —
+avise, porque isso significa gravar o mesmo nome eternamente.
+
+⚠️ **E ele NÃO é passo do plano da esteira — isto é medição, não preferência.** Eu implementei como
+passo (era o desenho aprovado) e o `etapa119` reprovou: `reResultar`, que preenche o `resultado` que
+vira voto, caía de 7/24 para 4/24 rodadas. Fui medir:
+
+- com a reserva em 500ms ele cai **igual** → a causa é o **módulo do giro** (a cabeça iria de 12 para
+  13), não o custo;
+- quatro posições × três reservas: nas doze, `reResultar` fica em 4-5;
+- cinco variantes do anel de privilégio: toda variante que devolve `reResultar` a ≥6 derruba
+  `confirmLote` (5→3) e `enqueue` (6→4).
+
+O orçamento está saturado (~128s de reservas contra 66s), então um 13º passo tira de alguém
+necessariamente. Pagar materialização de voto com hygiene de nome é mau negócio. Ele roda com a
+**sobra** da rodada, depois de todos os passos planejados — se não sobrar, não roda.
+
+⚠️ **Os 251 nomes com U+FFFD seguem irreparáveis a partir do nome** (o byte se perdeu). Desses, 18
+têm `metadata.source_url` e poderiam voltar relendo o ZIP no portal da agência; o resto é perda
+definitiva. Não está feito, e não entra por engano no reparo: `reparoDoNome` devolve `null` para eles.
+
 ### O que `docs/qa-fase31.sql` passa a responder
 
 - **Bloco ⑧** — o de→para **já calculado**, agrupado por reunião. O SQL só LÊ o `jsonb`; zero
