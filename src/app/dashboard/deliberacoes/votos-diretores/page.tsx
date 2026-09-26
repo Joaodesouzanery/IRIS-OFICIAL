@@ -81,14 +81,29 @@ type CompletudeAgencia = {
   documentos_2026: { detectados: number };
   deliberacoes: { finais: number; sem_voto: number };
   votos: { total: number; nominais: number; inferidos: number };
-  diretores: { aprovados: number; com_voto: number; candidatos_pendentes: number };
-  ultima_captura?: { documento_em: string | null; deliberacao_em: string | null };
+  diretores: { aprovados: number; com_voto: number; candidatos_pendentes: number; candidatos_em_conflito?: number };
+  ultima_captura?: {
+    reuniao_mais_recente_no_monitoramento: string | null;
+    reuniao_mais_recente_com_deliberacao: string | null;
+    /** ⚠️ ESTE é captura de verdade (`last_seen_at`); os dois acima são data de REUNIÃO. */
+    capturado_em: string | null;
+  };
 };
 
 type CompletudeResponse = {
   ano: number;
   por_agencia: CompletudeAgencia[];
-  totais: { documentos_2026_detectados: number; deliberacoes_finais: number; votos_total: number };
+  totais: {
+    documentos_2026_detectados: number; deliberacoes_finais: number; votos_total: number;
+    /**
+     * ⚠️ Opcionais porque a rota pode estar num deploy anterior — e o `??` no consumo é o default
+     * HONESTO aqui: campo ausente = não medido, então não há aviso a dar. Diferente de `?? 0` sobre
+     * um número que a rota mediu e devolveu, que é o engolidor que esta fase persegue.
+     */
+    deliberacoes_sem_data_de_reuniao?: number;
+    leituras_com_erro?: string[];
+    leituras_truncadas?: string[];
+  };
   alertas: string[];
 };
 
@@ -1177,6 +1192,42 @@ export default function VotosDiretoresPage() {
               {completude.totais.documentos_2026_detectados} docs · {completude.totais.deliberacoes_finais} deliberações · {completude.totais.votos_total} votos
             </p>
           </div>
+          {/**
+            * ⚠️ O RECORTE, na própria linha — e é ele que explica o «40 ≠ 45».
+            *
+            * "40 deliberações finais sem nenhum voto" (aqui) e "45 ainda sem voto" (banner da
+            * esteira) parecem a mesma frase e são populações diferentes por TRÊS eixos: o ano (aqui
+            * só um; a esteira, todos), o `resultado` (aqui exigido só de `ata`; a esteira, de todos
+            * os tipos) e `agencias.ativo` (aqui filtra; a esteira, não). Quem lê os dois sem saber
+            * disso conclui que um está errado. Nenhum está.
+            */}
+          <p className="text-xs text-text-muted">
+            Recorte: <span className="font-mono">{completude.ano}</span> · só agências colegiadas
+            ativas · `resultado` exigido apenas de <span className="font-mono">ata</span>.
+            {(completude.totais.deliberacoes_sem_data_de_reuniao ?? 0) > 0 ? (
+              <>
+                {" "}⚠️ <span className="text-warning">
+                  {completude.totais.deliberacoes_sem_data_de_reuniao} deliberação(ões) sem data de
+                  reunião ficam FORA deste painel
+                </span> (e os votos delas também).
+              </>
+            ) : null}
+            {" "}O banner da esteira usa outro recorte — os números divergem sem que nenhum esteja errado.
+          </p>
+          {/* ⚠️ O que INVALIDA a tabela vem ANTES dela, não no pé: um aviso embaixo se lê depois de
+              já ter acreditado nos números. Mesmo motivo do `unshift` na rota. */}
+          {(completude.totais.leituras_com_erro ?? []).length > 0 ? (
+            <div className="rounded-card border border-error/30 bg-error/10 px-3 py-2 text-xs text-text-primary">
+              ⚠️ {completude.totais.leituras_com_erro!.length} leitura(s) FALHARAM
+              ({completude.totais.leituras_com_erro!.join(", ")}) — os números abaixo estão
+              incompletos. Leitura que falha vira lista vazia, e lista vazia vira zero.
+            </div>
+          ) : (completude.totais.leituras_truncadas ?? []).length > 0 ? (
+            <div className="rounded-card border border-warning/30 bg-warning/10 px-3 py-2 text-xs text-text-primary">
+              ⚠️ {completude.totais.leituras_truncadas!.length} leitura(s) truncada(s)
+              ({completude.totais.leituras_truncadas!.join(", ")}) — os totais podem subcontar.
+            </div>
+          ) : null}
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -1187,16 +1238,36 @@ export default function VotosDiretoresPage() {
                   <th className="py-1 px-2 font-medium text-right">Deliberações</th>
                   <th className="py-1 px-2 font-medium text-right">Votos (nom/inf)</th>
                   <th className="py-1 px-2 font-medium text-right">Diretores c/ voto</th>
-                  <th className="py-1 px-2 font-medium text-right">Última captura</th>
-                  <th className="py-1 pl-2 font-medium text-right">Pendentes</th>
+                  {/* ⚠️ Os dois rótulos que MENTIAM.
+                      "Última captura" mostrava `MAX(data_reuniao)` — foi daí que eu disse "ANM 32
+                      dias sem captura", que estava errado. Agora a coluna se chama pelo que mede, e
+                      a captura de verdade (`last_seen_at`) vai no title.
+                      "Pendentes" era candidato a DIRETOR, na mesma linha de números de documento:
+                      grandezas diferentes com o mesmo rótulo. */}
+                  <th className="py-1 px-2 font-medium text-right" title="MAX(data_reuniao): a reunião mais recente que temos, NÃO quando a coleta rodou.">
+                    Reunião + recente
+                  </th>
+                  <th className="py-1 pl-2 font-medium text-right" title="Candidatos a DIRETOR aguardando aprovação (pendente ou em conflito) — não é documento.">
+                    Cand. diretor
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {completude.por_agencia.map((a) => {
                   // Staleness: fonte com docs mas parada há >7 dias (mesmo sintoma da
                   // ANTT-notícias no defeso) fica visível de imediato.
-                  const ultima = a.ultima_captura?.documento_em ?? a.ultima_captura?.deliberacao_em ?? null;
-                  const diasParada = ultima ? Math.floor((Date.now() - new Date(ultima).getTime()) / 86_400_000) : null;
+                  /**
+                   * ⚠️ O staleness passa a sair da CAPTURA (`capturado_em` = `last_seen_at`), com
+                   * fallback para a data de reunião quando a coluna não vem. Antes usava só
+                   * `MAX(data_reuniao)`, e por isso "parada há N dias" nunca mediu o que dizia:
+                   * uma PAUTA com data futura rejuvenescia o indicador sem nada ter sido processado.
+                   */
+                  const reuniaoRecente = a.ultima_captura?.reuniao_mais_recente_no_monitoramento
+                    ?? a.ultima_captura?.reuniao_mais_recente_com_deliberacao ?? null;
+                  const capturado = a.ultima_captura?.capturado_em ?? null;
+                  const baseStaleness = capturado ?? reuniaoRecente;
+                  const diasParada = baseStaleness
+                    ? Math.floor((Date.now() - new Date(baseStaleness).getTime()) / 86_400_000) : null;
                   const parada = a.documentos_2026.detectados > 0 && diasParada != null && diasParada > 7;
                   return (
                   <tr key={a.sigla} className="border-b border-border/50">
@@ -1209,13 +1280,24 @@ export default function VotosDiretoresPage() {
                     </td>
                     <td className="py-1.5 px-2 text-right">{a.votos.nominais}/{a.votos.inferidos}</td>
                     <td className="py-1.5 px-2 text-right">{a.diretores.com_voto}/{a.diretores.aprovados}</td>
-                    <td className={cn("py-1.5 px-2 text-right", parada ? "text-warning" : "text-text-muted")}>
-                      {ultima ? `${ultima.slice(8, 10)}/${ultima.slice(5, 7)}` : "—"}
-                      {parada ? ` (${diasParada}d)` : ""}
+                    <td className={cn("py-1.5 px-2 text-right", parada ? "text-warning" : "text-text-muted")}
+                        title={capturado
+                          ? `Coletado por último em ${capturado.slice(0, 10)}${parada ? ` — ${diasParada} dia(s)` : ""}`
+                          : "Sem `last_seen_at` nesta agência: o (Nd) sai da data de REUNIÃO, que é um piso"}>
+                      {reuniaoRecente ? `${reuniaoRecente.slice(8, 10)}/${reuniaoRecente.slice(5, 7)}` : "—"}
+                      {parada ? ` (${diasParada}d${capturado ? "" : "*"})` : ""}
                     </td>
                     <td className="py-1.5 pl-2 text-right">
                       {a.diretores.candidatos_pendentes > 0
-                        ? <span className="text-warning">{a.diretores.candidatos_pendentes}</span>
+                        ? (
+                          <span className="text-warning"
+                                title={(a.diretores.candidatos_em_conflito ?? 0) > 0
+                                  ? `${a.diretores.candidatos_em_conflito} em CONFLITO — cadastro em disputa também bloqueia voto`
+                                  : "Aguardando aprovação"}>
+                            {a.diretores.candidatos_pendentes}
+                            {(a.diretores.candidatos_em_conflito ?? 0) > 0 ? `⚠` : ""}
+                          </span>
+                        )
                         : <span className="text-success">0</span>}
                     </td>
                   </tr>

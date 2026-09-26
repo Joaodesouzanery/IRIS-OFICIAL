@@ -53,7 +53,22 @@ describe("etapa137 · órfão só com leitura completa", () => {
     const fonte = ler("src/app/api/v1/admin/completude-2026/route.ts");
     expect(fonte).toMatch(/votos_orfaos: leituraCompleta \? votosOrfaos : null/);
     expect(fonte).toMatch(/leitura_completa: leituraCompleta/);
-    expect(fonte).toMatch(/const leituraCompleta = !delibsAllRes\.truncated && !votosTruncados/);
+    /**
+     * ⚠️ Âncora atualizada na Fase 31, Bloco 4, e a exigência ficou ESTRITAMENTE maior.
+     *
+     * Era `!delibsAllRes.truncated && !votosTruncados`: duas leituras, e só truncagem. Mas
+     * `selectAllPaged` devolve `truncated: false` no caminho de ERRO — então falha total produzia
+     * `leitura_completa: true`, o painel afirmando que viu tudo justamente quando não viu nada.
+     * Agora a checagem cobre as OITO leituras e considera `error` junto com `truncated`.
+     */
+    expect(fonte).toMatch(/const leituraCompleta = leiturasComErro\.length === 0 && leiturasTruncadas\.length === 0/);
+    expect(fonte).toMatch(/const leiturasComErro = LEITURAS\.filter\(\(\[, r\]\) => Boolean\(r\.error\)\)/);
+    // As oito leituras da rota estão na lista — uma de fora volta a ser um zero que ninguém explica.
+    const lista = fonte.slice(fonte.indexOf("const LEITURAS:"), fonte.indexOf("const leiturasComErro"));
+    for (const nome of ["agencias", "deliberacoes", "monitoramento_itens", "documentos_regulatorios",
+                        "votos", "diretores", "mandatos", "diretor_candidatos"]) {
+      expect(lista, `a leitura «${nome}» saiu da conferência de completude`).toContain(`"${nome}"`);
+    }
   });
 });
 

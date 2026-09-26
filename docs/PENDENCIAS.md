@@ -65,6 +65,39 @@ necessariamente. Pagar materialização de voto com hygiene de nome é mau negó
 têm `metadata.source_url` e poderiam voltar relendo o ZIP no portal da agência; o resto é perda
 definitiva. Não está feito, e não entra por engano no reparo: `reparoDoNome` devolve `null` para eles.
 
+### "Completude 2026 — tem tudo o necessário?" — **não**, e os motivos são estruturais
+
+Você perguntou direto. Seis defeitos, todos de instrumento e todos consertados:
+
+1. **`leitura_completa` dizia "completa" sobre leitura que FALHOU.** `selectAllPaged` devolve
+   `truncated: false` no caminho de erro, e a checagem só olhava truncagem — de DUAS leituras, não
+   das oito. Cinco leituras nunca tinham `.error` olhado, e `?? []` não testa falha: testa
+   `undefined`. Falha virava lista vazia, e lista vazia virava zero — **inclusive "Pendentes: 0" em
+   verde**. Agora as oito entram, erro conta junto, e a resposta diz QUAIS falharam.
+2. **O recorte por agência era um sumidouro mudo.** `if (!e) continue;` engolia três populações
+   (sem agência, agência inativa, sigla não-colegiada) sem contador e sem alerta — e o cabeçalho é
+   a soma das linhas, então o que não tem agência não existia em total nenhum. Agora conta, separando
+   "sem agência" (lacuna de dado) de "fora do recorte" (decisão da tela).
+3. **Deliberação sem `data_reuniao` sumia do painel inteiro**, e os votos dela também. É a mesma
+   população que o banner chama de "fora da janela, sem data de reunião". Agora tem número na tela.
+4. **"Pendentes: 0" era candidato a DIRETOR**, na mesma linha de números de documento — grandezas
+   diferentes com o mesmo rótulo. E contava só `pendente`, enquanto o materializador bloqueia voto
+   com `pendente` **ou** `conflito`: cadastro em disputa, impedindo voto agora, aparecia como `0`
+   verde. A coluna virou **"Cand. diretor"** e conta os dois, com o conflito marcado.
+5. ⚠️ **"Última captura" era `MAX(data_reuniao)` — e eu errei lendo isso.** Eu lhe disse "ANM 32 dias
+   sem captura"; aquilo significava "a reunião mais recente que temos é de 24/08". A coluna virou
+   **"Reunião + recente"**, e `last_seen_at` (que existia e ninguém lia) passa a alimentar o "(Nd)".
+   Quando o "(Nd)" sai da data de reunião em vez da captura, vem marcado com `*`.
+6. **O aviso que INVALIDA os números entrava no fim da lista**, depois deles. Agora vai ao topo
+   (`unshift`) e a tela mostra uma faixa ACIMA da tabela.
+
+⚠️ **E o "40 ≠ 45"**: "40 deliberações finais sem voto" (Completude) e "45 ainda sem voto" (banner)
+são populações diferentes por três eixos — ano, de quais tipos se exige `resultado`, e
+`agencias.ativo`. **Nenhum dos dois está errado**; o defeito era nenhum declarar o seu recorte. A
+Completude agora declara, na própria linha. O eixo insidioso: uma deliberação de 2026 com
+`resultado IS NULL` conta nas 40 e é **invisível ao backfill**, que a corta por SQL — o painel acusa
+o que o backfill jamais tentará resolver.
+
 ### O que `docs/qa-fase31.sql` passa a responder
 
 - **Bloco ⑧** — o de→para **já calculado**, agrupado por reunião. O SQL só LÊ o `jsonb`; zero

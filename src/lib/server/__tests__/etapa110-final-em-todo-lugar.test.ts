@@ -58,6 +58,58 @@ describe("etapa110 · a regra do item de ata é a MESMA em todos os sítios", ()
 });
 
 /**
+ * ⚠️ Fase 31, Bloco 4 — O EIXO QUE ESTE TESTE NÃO COBRIA, e é ele que produz o «40 ≠ 45».
+ *
+ * As duas expectativas acima exigem que a regra da ATA coincida nos quatro sítios. Elas passam
+ * verde — e passam EXATAMENTE SOBRE a divergência que confunde o operador:
+ *
+ *   "40 deliberações finais sem nenhum voto"  (Completude 2026)
+ *   "45 ainda sem voto"                        (banner do materializador)
+ *
+ * Parecem a mesma frase. São populações diferentes, por três eixos:
+ *
+ *   eixo         | Completude          | materializador
+ *   ano          | só o ano do param   | TODOS (a esteira chama sem `year`)
+ *   `resultado`  | exigido só de `ata` | exigido de TODOS os tipos, no SQL
+ *   `ativo`      | filtra agência      | não filtra
+ *
+ * ⚠️ O eixo do meio é o insidioso: uma deliberação de 2026 do tipo `deliberacao` com
+ * `resultado IS NULL` CONTA nas 40 e é INVISÍVEL ao backfill — o `.not("resultado","is",null)` a
+ * corta. São deliberações que o painel acusa e que o backfill JAMAIS tentará resolver.
+ *
+ * Não é defeito de nenhum dos dois: são recortes legítimos e diferentes. O defeito era **nenhum dos
+ * dois declarar o seu**, e um teste verde por cima disso. Este bloco cobra a declaração.
+ */
+describe("etapa110 · ⚠️ os dois recortes DIVERGEM de propósito — e cada um diz o seu", () => {
+  it("o materializador exige `resultado` de TODOS os tipos, no SQL", () => {
+    const fonte = ler("src/app/api/v1/admin/votos/materializar-faltantes/route.ts");
+    // É este filtro que torna a deliberação sem `resultado` invisível ao backfill.
+    expect(fonte).toMatch(/\.not\("resultado", "is", null\)/);
+  });
+
+  it("a Completude exige `resultado` SÓ de `ata` — e é por isso que ela conta mais", () => {
+    const fonte = ler("src/app/api/v1/admin/completude-2026/route.ts");
+    expect(fonte).toMatch(/if \(d\.tipo_documento === "ata"\) return Boolean\(d\.documento_pai_id && d\.resultado\);\s*return true;/);
+  });
+
+  it("⚠️ a Completude DECLARA o recorte na resposta — sem isso os dois números se leem como erro", () => {
+    const fonte = ler("src/app/api/v1/admin/completude-2026/route.ts");
+    expect(fonte).toMatch(/recorte: \{/);
+    expect(fonte).toMatch(/por_que_difere_do_backfill:/);
+    expect(fonte).toMatch(/resultado_exigido_de:/);
+  });
+
+  it("e a TELA mostra o recorte junto da tabela, não escondido no JSON", () => {
+    const tela = ler("src/app/dashboard/deliberacoes/votos-diretores/page.tsx");
+    // ⚠️ Ancorado no ELEMENTO: `/Recorte:/` solto sobrevive a renomear para `_Recorte:`, porque
+    // casa como substring. Nona vez nesta fase.
+    expect(tela).toMatch(/>\s*Recorte: <span className="font-mono">\{completude\.ano\}<\/span>/);
+    expect(tela).toMatch(/exigido apenas de/);
+    expect(tela).toMatch(/os números divergem sem que nenhum esteja errado/);
+  });
+});
+
+/**
  * Fase 21 — os sítios que passaram a chamar o CANÔNICO em vez de repetir a regra. `mandatos/stats`
  * tinha uma aproximação SQL que conta filho de ata SEM resultado; o número estrito agora sai ao
  * lado do aproximado (`total_finais_estrito`) até o usuário aprovar a troca do card.
