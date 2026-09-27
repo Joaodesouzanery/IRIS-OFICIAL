@@ -6,12 +6,26 @@
  * + perdas: coletados com erro, regulatórios failed, review_pending parado, itens
  *   descobertos mas não enfileirados, coletados isolados (sem virar deliberação).
  *
- * Read-only. Protegido pelo middleware (admin em todo GET /api/v1/*); em DEMO devolve retrato fictício.
+ * ⚠️ Read-only e **admin-gated de verdade** (Fase 32). A linha aqui dizia "Protegido pelo middleware
+ * (admin em todo GET /api/v1/*)" — afirmação FALSA desde ago/2026, quando o middleware passou a
+ * liberar GET para qualquer sessão válida (papel viewer). A prosa descrevia um mundo que tinha
+ * deixado de existir.
+ *
+ * Das 15 rotas GET sob `/api/v1/admin/`, esta era a ÚNICA sem `requireAdmin`. Uma exceção entre 14
+ * irmãs guardadas é descuido, não desenho — e o que ela devolve é diagnóstico de esteira (fila
+ * parada, perdas do scraper, documentos travados), que serve a quem OPERA, não a quem consulta.
+ * Por isso aqui o conserto foi o GATE, e não o texto.
+ *
+ * ⚠️ Isto NÃO contradiz a decisão "viewer vê tudo": aquela decisão é sobre o ACERVO (deliberações,
+ * votos, diretores), que segue aberto. `/admin/*` é instrumento de operação, e é o recorte que o
+ * teste de superfície declarada (`etapa187`) fixa como admin.
+ *
+ * Em DEMO devolve retrato fictício.
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest } from "@/lib/server/request-guards";
+import { isDemoRequest, requireAdmin } from "@/lib/server/request-guards";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 import { lerTudo } from "@/lib/server/select-all-paged";
 
@@ -81,6 +95,11 @@ export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
     return NextResponse.json(DEMO);
   }
+
+  // O guard vem ANTES do client de servidor — padrão do projeto: não instanciar service role
+  // para uma requisição que vai ser recusada.
+  const guard = await requireAdmin(req);
+  if (guard) return guard;
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();

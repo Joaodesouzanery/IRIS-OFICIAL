@@ -8,11 +8,18 @@
  * Mesma agregação do dashboard; aqui só muda o empacotamento exportável.
  * Formatos: html (imprimir→PDF), docx (Word), csv (Excel). Demo ok.
  *
- * ⚠️ Fase 29 — a linha dizia "Admin-gated" e ISSO NUNCA FOI VERDADE: esta rota não chama
- * `requireAdmin`. O gate real é o do middleware, que libera GET de /api/v1/* para qualquer
- * usuário autenticado (inclusive viewer). Corrigi a PROSA e não o gate: mudar superfície de
- * autorização não entra de carona num commit sobre leitura truncada, e trancar a rota pode tirar
- * do operador um relatório que ele usa hoje. Registrado em PENDENCIAS para decisão.
+ * ⚠️ AUTORIZAÇÃO: legível por QUALQUER usuário autenticado, inclusive viewer — e isso é DECISÃO,
+ * não descuido. Esta rota não chama `requireAdmin`; o gate é o do middleware, que libera GET de
+ * /api/v1/* para toda sessão válida.
+ *
+ * Histórico, porque a diferença importa: até a Fase 29 a linha aqui dizia "Admin-gated", e isso
+ * NUNCA foi verdade — a prosa afirmava um portão inexistente. A Fase 29 corrigiu o texto e deixou
+ * a decisão em aberto. Na Fase 32 o usuário decidiu: **quem ele cria no Supabase vê tudo**, porque
+ * o acervo é de atos públicos de agentes públicos e o acesso é concedido a dedo, no painel.
+ *
+ * Então a leitura ampla aqui é escolha registrada. O que a trava é o teste de SUPERFÍCIE DECLARADA
+ * (`etapa187`): esta rota está listada como `viewer`, e rota nova que não esteja na lista reprova.
+ * A superfície pode ser ampla; o que ela não pode é crescer sem ninguém ver.
  */
 
 import { isVotoNominal } from "@/lib/votos-nominal";

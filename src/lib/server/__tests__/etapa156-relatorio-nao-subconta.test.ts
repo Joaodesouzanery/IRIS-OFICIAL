@@ -79,15 +79,38 @@ describe("etapa156 · o relatório DECLARA o que cobriu", () => {
   });
 });
 
-describe("etapa156 · a prosa para de afirmar um gate que não existe", () => {
-  it("o docstring não diz mais «Admin-gated»", () => {
-    // A rota NÃO chama `requireAdmin` — o gate real é o do middleware, que libera GET para
-    // qualquer autenticado. Corrigir a prosa é honesto; trancar a rota dentro de um commit sobre
-    // leitura truncada seria mudar superfície de autorização de carona.
-    // O docstring não pode AFIRMAR o gate. Citá-lo para explicar que era falso, pode — e é o que
-    // o comentário novo faz.
+describe("etapa156 · a leitura ampla aqui é DECISÃO registrada, não descuido", () => {
+  /**
+   * ⚠️ Fase 32 — este bloco mudou de significado, e a mudança é o ponto.
+   *
+   * Até aqui ele apenas exigia que o docstring parasse de AFIRMAR um gate inexistente ("Admin-gated",
+   * que nunca foi verdade). Isso consertava a prosa e deixava a autorização em aberto — o teste
+   * acabava **congelando a ausência do gate** sem que ninguém tivesse decidido nada.
+   *
+   * Agora há decisão: o usuário determinou que quem ele cria no Supabase lê o acervo inteiro, porque
+   * são atos públicos de agentes públicos e o acesso é concedido a dedo, no painel. Então a leitura
+   * ampla aqui é escolha — e o que a sustenta não é este teste, é a SUPERFÍCIE DECLARADA do
+   * `etapa187`: a rota está listada como `viewer`, e rota que mude de lado sem a lista mudar junto
+   * reprova.
+   */
+  it("o docstring não AFIRMA um gate que não existe", () => {
     expect(ROTA).not.toMatch(/csv \(Excel\)\. Admin-gated/);
-    expect(ROTA).toMatch(/ISSO NUNCA FOI VERDADE/);
     expect(SEM_COMENTARIO).not.toMatch(/requireAdmin/);
+  });
+
+  it("⚠️ e declara que a leitura por viewer é decisão, dizendo o porquê", () => {
+    // Prosa que só diz "não tem gate" convida o próximo a "consertar". Prosa que diz "não tem gate
+    // PORQUE foi decidido, e o teste X segura" faz a pessoa procurar a decisão antes de mexer.
+    expect(ROTA).toMatch(/AUTORIZAÇÃO/);
+    expect(ROTA).toMatch(/DECISÃO/);
+    expect(ROTA).toMatch(/etapa187/);
+  });
+
+  it("⚠️ e a rota está DE FATO na lista declarada do etapa187 — a promessa é conferida", () => {
+    // Sem isto, o docstring poderia apontar para um teste que não a cobre.
+    const SUPERFICIE = readFileSync(
+      join(__dirname, "etapa187-superficie-de-autorizacao.test.ts"), "utf-8",
+    );
+    expect(SUPERFICIE).toContain('"/api/v1/relatorios/votos-diretores",');
   });
 });

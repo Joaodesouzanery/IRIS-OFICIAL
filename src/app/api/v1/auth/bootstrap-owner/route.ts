@@ -6,6 +6,25 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
+  /**
+   * ⚠️ O try/catch existe porque `getAuthenticatedUser` → `createSupabaseServerClient()` **lança**
+   * quando falta `SUPABASE_SERVICE_ROLE_KEY`. Sem ele, a rota devolvia 500 cru, e o usuário via
+   * "falha ao entrar" sem nenhuma pista de que o problema era variável de ambiente ausente.
+   * `requireAdmin` já faz exatamente isto (`request-guards.ts`); aqui faltava.
+   */
+  try {
+    return await bootstrapOwner(req);
+  } catch (error) {
+    const detalhe = error instanceof Error ? error.message : "erro desconhecido";
+    console.error("[auth] bootstrap-owner falhou:", detalhe);
+    return NextResponse.json(
+      { error: `Ambiente incompleto no servidor (${detalhe}). Confira /api/v1/system/status.` },
+      { status: 503 },
+    );
+  }
+}
+
+async function bootstrapOwner(req: NextRequest) {
   const userResult = await getAuthenticatedUser(req);
   if (userResult instanceof NextResponse) return userResult;
 

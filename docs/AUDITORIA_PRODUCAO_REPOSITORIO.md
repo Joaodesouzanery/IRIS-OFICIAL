@@ -1,3 +1,29 @@
+> # ⛔ DOCUMENTO HISTÓRICO — NÃO DESCREVE O SISTEMA ATUAL
+>
+> **Escrito em 17/05/2026. Marcado como histórico em 27/09/2026 (Fase 32).**
+>
+> Este arquivo retrata o repositório **antes de a autenticação existir**, e cinco dos seus achados
+> já não valem. Ele estava sendo lido como diagnóstico do presente — e é a explicação mais provável
+> para a impressão de que "a autenticação foi desligada".
+>
+> ## O que MUDOU desde então (verificado na auditoria de 27/09/2026)
+>
+> | achado de mai/2026 | estado hoje |
+> |---|---|
+> | *"Não há camada de autenticação/autorização protegendo rotas de escrita"* | ❌ **FALSO.** Auditadas as **66** rotas de escrita: todas alcançam um guard (`requireAdmin` / `requireAdminOrCron` / `requireCron`). As 8 sem guard no corpo delegam para quem tem. |
+> | *"Produção está em modo demo, sem Supabase"* | ❌ Produção roda em modo real com Supabase. |
+> | *"Policies RLS abertas com `USING (true)` sem `TO service_role`"* | 🟡 **Corrigido no repositório** (`20260716120000`, `20260718120000`, `20260724120000`). ⚠️ Migrations aqui são aplicadas **à mão** — a conferência com a chave anon está no plano da Fase 32. |
+> | *"Ainda não há suíte automatizada de testes"* | ❌ **FALSO.** 223 arquivos de teste, ~2.733 expectativas. |
+> | Rotas citadas como "expostas" (`agencias`, `upload/confirm`, `monitoramento/sites`, `antt/2026/collect`) | ❌ Todas com guard hoje. |
+>
+> **Para o estado atual, leia `docs/PENDENCIAS.md`** — que já registrava, desde ago/2026:
+> *"Confirmado: auth ATIVA e endurecida (nada removido)"*.
+>
+> Não apago este arquivo: o registro do que o projeto era tem valor. O que ele não pode é ser lido
+> como o que o projeto é.
+
+---
+
 # Auditoria de Producao - IRIS
 
 ## Resumo executivo

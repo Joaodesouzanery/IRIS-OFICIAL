@@ -3,10 +3,22 @@ import { User } from "@supabase/supabase-js";
 import { hasConfiguredAdminEmail, isConfiguredAdminEmail, isValidEmailFormat } from "@/lib/server/admin-emails";
 import { adminUsersCount, timingSafeEqualStr } from "@/lib/server/request-guards";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { setupOwnerAberto } from "@/lib/server/setup-aberto";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
+  /**
+   * ⚠️ FECHADA POR PADRÃO (Fase 32) — e o 404 vem ANTES de ler o corpo, de propósito.
+   *
+   * 404 e não 403: um 403 confirmaria que a rota existe e que o segredo é o que falta, que é
+   * justamente a informação que interessa a quem está tentando. E responder antes de processar o
+   * corpo não gasta trabalho com requisição que não vai a lugar nenhum.
+   */
+  if (!setupOwnerAberto()) {
+    return NextResponse.json({ error: "Não encontrado." }, { status: 404 });
+  }
+
   let body: { email?: string; password?: string; setup_token?: string };
 
   try {

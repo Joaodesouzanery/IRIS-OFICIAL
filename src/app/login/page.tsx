@@ -1,7 +1,6 @@
 "use client";
 
 import { Suspense, useCallback, useEffect, useState } from "react";
-import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Database, Loader2, Mail } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
@@ -26,26 +25,66 @@ function LoginContent() {
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(initialReasonMessage(reason));
-  const [accessDenied, setAccessDenied] = useState(reason === "forbidden");
+  // ⚠️ Era `accessDenied`, e significava "não é admin" — o que NÃO é motivo para barrar.
+  // Agora significa o que o nome diz: a sessão não vale.
+  const [sessaoInvalida, setSessaoInvalida] = useState(false);
 
-  const bootstrapOwner = useCallback(
+  /**
+   * ⚠️ Fase 32 — ESTA FUNÇÃO ERA O BUG, e ele trancava exatamente quem o produto diz aceitar.
+   *
+   * A versão anterior fazia POST em `/api/v1/auth/bootstrap-owner` e **só redirecionava se ele
+   * respondesse ok**. Mas o bootstrap devolve **403** para todo e-mail fora de
+   * `IRIS_OWNER_EMAIL`/`ADMIN_EMAILS` — por desenho, é o gate que impede auto-promoção a owner.
+   *
+   * Resultado: o VIEWER autenticava com sucesso (o cookie era gravado, o middleware já o aceitava,
+   * o `/auth/me` já lhe dava `role: "viewer"`), via *"Este e-mail não é o administrador global
+   * autorizado"* e ficava com um único botão: "Usar outro e-mail". Não havia caminho para o
+   * dashboard. O usuário criado no painel do Supabase simplesmente não entrava.
+   *
+   * É regressão do commit `9a25a0f` ("feat(auth): usuario VIEWER"): ele mexeu em 8 arquivos —
+   * middleware, /auth/me, use-viewer, Sidebar, AuthControls — e aqui mudou **só o texto do
+   * parágrafo**. A prosa prometeu o viewer; o portão não foi tocado.
+   *
+   * Agora quem decide é `/auth/me`, que é a rota que EXISTE para responder "quem é você":
+   *   1. sessão válida? (se não, é aí que se nega — e só aí)
+   *   2. `can_bootstrap_owner` (não há admin nenhum ainda)? então tenta promover — BEST-EFFORT
+   *   3. entra, seja admin ou viewer
+   *
+   * ⚠️ O passo 2 não pode mais bloquear nada. Ele serve ao primeiro login do owner e a mais nada.
+   */
+  const entrar = useCallback(
     async (token: string) => {
-      const res = await fetch("/api/v1/auth/bootstrap-owner", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const auth = { Authorization: `Bearer ${token}` };
 
-      if (res.ok) {
-        router.replace(next);
+      const me = await fetch("/api/v1/auth/me", { headers: auth }).catch(() => null);
+      if (!me || !me.ok) {
+        /**
+         * ⚠️ 401 e 5xx pedem AÇÕES DIFERENTES, e tratá-los igual foi parte do que confundiu aqui.
+         *   · 401 → a sessão não vale: sair e entrar de novo resolve;
+         *   · 5xx → o servidor está mal configurado: entrar de novo NÃO resolve, e mandar o
+         *     usuário tentar de novo é fazê-lo repetir uma ação que não pode dar certo.
+         * Só o primeiro caso invalida a sessão na tela.
+         */
+        const payload = (await me?.json().catch(() => null)) as { error?: string } | null;
+        const problemaDeServidor = !me || me.status >= 500;
+        setMessage(
+          problemaDeServidor
+            ? payload?.error ?? "O servidor não respondeu. Se persistir, confira /api/v1/system/status."
+            : payload?.error ?? "Sua sessão não é mais válida. Entre novamente.",
+        );
+        setSessaoInvalida(!problemaDeServidor);
         return;
       }
 
-      const payload = (await res.json().catch(() => null)) as { error?: string } | null;
-      const text = payload?.error ?? "Este e-mail não tem permissão administrativa.";
-      setMessage(text);
-      setAccessDenied(res.status === 403);
+      const perfil = (await me.json().catch(() => null)) as { can_bootstrap_owner?: boolean } | null;
+
+      // Primeiro login do owner: promove. Falhar aqui é esperado para quem não está na allowlist,
+      // e por isso o resultado é IGNORADO — o `catch` vazio é a correção, não um engolidor.
+      if (perfil?.can_bootstrap_owner) {
+        await fetch("/api/v1/auth/bootstrap-owner", { method: "POST", headers: auth }).catch(() => null);
+      }
+
+      router.replace(next);
     },
     [next, router],
   );
@@ -56,23 +95,23 @@ function LoginContent() {
     supabase.auth.getSession().then(async ({ data }) => {
       const session = data.session;
       setUserEmail(session?.user.email ?? null);
-      if (session?.access_token && !accessDenied) await bootstrapOwner(session.access_token);
+      if (session?.access_token && !sessaoInvalida) await entrar(session.access_token);
     });
     const { data: listener } = supabase.auth.onAuthStateChange(async (_event, session) => {
       setUserEmail(session?.user.email ?? null);
       if (session?.access_token) {
-        setAccessDenied(false);
-        await bootstrapOwner(session.access_token);
+        setSessaoInvalida(false);
+        await entrar(session.access_token);
       }
     });
     return () => listener.subscription.unsubscribe();
-  }, [accessDenied, bootstrapOwner]);
+  }, [sessaoInvalida, entrar]);
 
   async function signIn() {
     if (!email.trim() || !password) return;
     setBusy(true);
     setMessage(null);
-    setAccessDenied(false);
+    setSessaoInvalida(false);
     try {
       const supabase = createSupabaseBrowserClient();
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -80,7 +119,7 @@ function LoginContent() {
         password,
       });
       if (error) throw error;
-      if (data.session?.access_token) await bootstrapOwner(data.session.access_token);
+      if (data.session?.access_token) await entrar(data.session.access_token);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Falha ao entrar.");
     } finally {
@@ -92,7 +131,7 @@ function LoginContent() {
     const supabase = createSupabaseBrowserClient();
     await supabase.auth.signOut();
     setUserEmail(null);
-    setAccessDenied(false);
+    setSessaoInvalida(false);
     setPassword("");
     setMessage("Sessão encerrada. Informe o e-mail global para entrar.");
   }
@@ -116,7 +155,7 @@ function LoginContent() {
           />
           <h1 className="text-2xl font-semibold">Entrar no sistema</h1>
           <p className="text-sm leading-6 text-white/58">
-            Acesso restrito a usuários cadastrados. Administradores gerenciam os dados; demais usuários entram em modo somente visualização.
+            Acesso restrito a usuários cadastrados. Administradores gerenciam os dados; os demais entram em modo somente visualização.
           </p>
         </div>
 
@@ -125,7 +164,7 @@ function LoginContent() {
             <div className="rounded-md border border-white/10 bg-white/[0.04] p-3 text-sm text-white/72">
               Sessão ativa como <span className="font-medium text-white">{userEmail}</span>.
             </div>
-            {accessDenied ? (
+            {sessaoInvalida ? (
               <button className="btn-secondary w-full justify-center" onClick={signOut}>
                 Usar outro e-mail
               </button>
@@ -165,9 +204,6 @@ function LoginContent() {
               {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <ArrowRight className="h-4 w-4" />}
               Entrar
             </button>
-            <Link href="/setup-owner" className="block text-center text-xs font-medium uppercase tracking-[0.18em] text-white/38 hover:text-brand">
-              cadastrar e-mail global
-            </Link>
           </div>
         )}
 
@@ -194,7 +230,16 @@ function LoginShell({ message }: { message: string }) {
 }
 
 function initialReasonMessage(reason: string | null): string | null {
-  if (reason === "forbidden") return "Este e-mail não é o administrador global autorizado.";
-  if (reason === "config") return "Ambiente Supabase incompleto. Verifique as variáveis de produção.";
+  /**
+   * ⚠️ O ramo `forbidden` foi REMOVIDO porque era código morto que mentia.
+   *
+   * O middleware deixou de emitir `reason=forbidden` quando o papel VIEWER nasceu (ago/2026) —
+   * lá sobrou só um comentário histórico. Mas a mensagem continuou aqui, então qualquer um que
+   * chegasse com `?reason=forbidden` na URL lia "Este e-mail não é o administrador global
+   * autorizado" — a mesma frase do bug que acabou de ser consertado, agora sem nenhuma causa real.
+   */
+  if (reason === "config") {
+    return "Ambiente incompleto: faltam variáveis do Supabase em produção. Confira /api/v1/system/status.";
+  }
   return null;
 }
