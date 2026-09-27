@@ -29,7 +29,7 @@ export function LpFooter() {
               className="h-10 w-auto"
             />
             <p className="mt-5 text-sm leading-relaxed" style={{ color: "var(--lp-muted)" }}>
-              Instituto de Regulação, Inovação e Sustentabilidade — entidade privada sem fins
+              Instituto de Regulação, Inovação e Sustentabilidade, entidade privada sem fins
               lucrativos dedicada ao estudo e ao aprimoramento da regulação no Brasil.
             </p>
           </div>
@@ -67,7 +67,7 @@ export function LpFooter() {
           className="mt-14 flex flex-col gap-3 pt-8 text-xs sm:flex-row sm:items-center sm:justify-between"
           style={{ borderTop: "1px solid var(--lp-line)", color: "var(--lp-muted)" }}
         >
-          <p>© {ano} IRIS — Instituto de Regulação, Inovação e Sustentabilidade</p>
+          <p>© {ano} IRIS · Instituto de Regulação, Inovação e Sustentabilidade</p>
           <div className="flex flex-wrap items-center gap-5">
             <a
               href={CANAIS.site}

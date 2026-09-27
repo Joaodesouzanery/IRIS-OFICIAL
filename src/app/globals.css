@@ -362,3 +362,186 @@
   .lp-hero-img { animation: none; opacity: 0; transform: none; }
   .lp-hero-img:first-of-type { opacity: 1; }
 }
+
+/* ── O CABEÇALHO: faixa própria, para o contraste não depender da imagem da Hero ───────────────
+   ⚠️ A causa do "menu escuro" foi MEDIDA e não era contraste fraco: os links usavam
+   `text-white/72`, e a escala de opacidade do Tailwind 3 anda de 5 em 5 — `72` não está nela, e
+   valor arbitrário exige colchetes. Conferido no CSS CONSTRUÍDO: `text-white\/45`, `\/50`, `\/55` e
+   `\/60` existem no bundle; `\/72` não existe. A classe não gerava regra, e o link herdava a cor de
+   texto do `body` do app, que é escura.
+   ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.lp-header-faixa {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 148px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(10, 14, 42, 0.82) 0%, rgba(10, 14, 42, 0.45) 55%, transparent 100%);
+}
+
+.lp-nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 150ms ease;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.lp-nav-link:hover { color: #fff; }
+/* Sublinhado dourado no foco de teclado — o `outline` genérico da `.lp` continua valendo. */
+.lp-nav-link:focus-visible { color: #fff; border-bottom-color: var(--lp-gold); }
+
+/* ── A ESTEIRA DAS 12 AGÊNCIAS — marquee em CSS puro ──────────────────────────────────────────
+   ⚠️ Sem JavaScript por decisão travada em teste (`etapa188`): nenhum componente da landing pode
+   ser `use client`, e nenhuma biblioteca de carrossel pode ser instalada. A trilha é DUPLICADA no
+   componente e o laço desloca -50%, então a emenda cai exatamente onde a segunda cópia começa.
+
+   `mask-image` esfuma as duas pontas: sem isso as logos aparecem e desaparecem cortadas na borda.
+   ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.lp-esteira {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.lp-esteira-trilha {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 3.5rem;
+  padding-right: 3.5rem;
+  animation: lpEsteira 46s linear infinite;
+  will-change: transform;
+}
+
+/* Pausa no hover E no foco. O foco importa tanto quanto o hover: quem chega por Tab precisa que a
+   logo pare de fugir para poder ativá-la. `:focus-within` no contêiner alcança o link de dentro. */
+.lp-esteira:hover .lp-esteira-trilha,
+.lp-esteira:focus-within .lp-esteira-trilha { animation-play-state: paused; }
+
+.lp-esteira-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  opacity: 0.82;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.lp-esteira-link:hover { opacity: 1; transform: translateY(-2px); }
+.lp-esteira-link:focus-visible { opacity: 1; }
+
+/**
+ * ⚠️ A EXCEÇÃO MEDIDA. A ANATEL dá 1,19:1 sobre o papel — invisível. A pílula navy devolve os
+ * 14,1:1 que ela tem sobre fundo escuro. É um desvio do "sem fundo" que o usuário pediu, aplicado a
+ * UMA logo e só porque a medição mostra que sem ele a marca desaparece. A lista vem do
+ * `public/agencias/CONTRASTE.json`, nunca escrita à mão.
+ */
+.lp-esteira-link--pilula {
+  background: var(--lp-navy);
+  border-radius: 9999px;
+  padding: 0 1.1rem;
+}
+
+.lp-esteira-monograma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  min-width: 3.25rem;
+  padding: 0 0.75rem;
+  border: 1px solid var(--lp-line);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  /* Fundo da esteira é claro: o dourado claro do tema escuro sumiria aqui. */
+  background: var(--lp-navy);
+  border-color: transparent;
+  color: var(--lp-gold);
+}
+
+@keyframes lpEsteira {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ⚠️ `prefers-reduced-motion` CONGELA e devolve o controle: a esteira para e o contêiner passa a
+   rolar por gesto/teclado, com `scroll-snap` para a logo não ficar meio cortada. Desacelerar não
+   serve — movimento horizontal contínuo é o gatilho que essa preferência existe para evitar.
+   Este bloco vem DEPOIS do da Hero de propósito: o teste da Hero fatia o CSS a partir do PRIMEIRO
+   `@media (prefers-reduced-motion)`, e entrar antes dele faria aquele teste medir o bloco errado. */
+@media (prefers-reduced-motion: reduce) {
+  .lp-esteira { overflow-x: auto; scroll-snap-type: x proximity; }
+  .lp-esteira-trilha { animation: none; }
+  .lp-esteira-link { scroll-snap-align: center; }
+  .lp-esteira-link:hover { transform: none; }
+}
+
+/* ── A TRILHA DO RADAR — sequência, não grade ──────────────────────────────────────────────────
+   ⚠️ O filete vertical liga um marcador ao seguinte, e é ele que faz o layout DIZER a sequência.
+   Na grade 2×2 anterior, a etapa 03 parecia irmã da 01 em vez de consequência dela. Numerar sem
+   mostrar a dependência é decoração fingindo de informação.
+   ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.lp-trilha { display: flex; flex-direction: column; gap: 0; max-width: 46rem; }
+
+.lp-trilha-item {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  padding-bottom: 2.25rem;
+}
+.lp-trilha-item:last-child { padding-bottom: 0; }
+
+/* O filete: nasce embaixo do marcador e morre no próximo. O último não tem, senão aponta para o nada. */
+.lp-trilha-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 1.1rem;
+  top: 2.5rem;
+  bottom: 0.35rem;
+  width: 1px;
+  background: linear-gradient(180deg, var(--lp-line), rgba(194, 162, 74, 0.06));
+}
+
+.lp-trilha-marcador {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--lp-line);
+  border-radius: 9999px;
+  background: var(--lp-navy);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--lp-gold);
+}
+
+.lp-trilha-corpo { padding-top: 0.3rem; }
+
+/* ── OS BENEFÍCIOS: filete dourado curto no topo, sem caixa ────────────────────────────────────
+   Sem card de propósito: seis caixas numa grade de três colunas pesam a página, e o que separa os
+   itens aqui é o filete, que é o mesmo vocabulário do `.lp-eyebrow` e do `.lp-card`.
+   ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.lp-beneficio { position: relative; padding-top: 1rem; }
+.lp-beneficio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 1px;
+  background: var(--lp-gold);
+}
+
+.lp-bolinha {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  margin-top: 0.55rem;
+  border-radius: 9999px;
+  background: var(--lp-gold);
+}

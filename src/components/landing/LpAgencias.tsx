@@ -1,101 +1,132 @@
 import Image from "next/image";
-import { existsSync } from "fs";
+import { existsSync, readFileSync } from "fs";
 import { join } from "path";
 import { AGENCIAS_FEDERAIS, SIGLAS_COM_ESTEIRA_DE_VOTOS } from "@/lib/agencias-federais";
 
 /**
- * As 12 agências federais — cada logo linka para o site oficial.
+ * As 12 agências federais numa ESTEIRA de uma linha — só a logo, clicável, sem card.
  *
- * ⚠️ O fallback CONFERE O DISCO, não confia numa lista. `existsSync` roda no servidor, em tempo de
- * render: se a logo de uma agência não estiver em `public/agencias/`, aquele card cai num monograma
- * com a sigla — desenhado, não quebrado. Isso importa porque as logos foram baixadas do WordPress e
- * uma delas falhou na primeira tentativa: `<img>` apontando para arquivo ausente vira ícone
- * quebrado, e ícone quebrado numa página institucional é pior que não ter logo nenhuma.
+ * ⚠️⚠️ O FUNDO: eu afirmei NAVY "por medição", e RENDERIZAR desmentiu. Duas vezes seguidas.
  *
- * ⚠️ Fundo CLARO de propósito: as logos das agências têm fundos variados (algumas com branco
- * chapado, outras transparentes). Sobre navy, as de fundo branco viravam retângulos brancos. Card
- * claro é o tratamento que funciona para todas sem editar arquivo nenhum.
+ * Eu escrevi que o contraste sobre navy ficava "entre 3,9:1 e 9,1:1" e sobre o papel "entre 1,4:1 e
+ * 3,4:1". Ao olhar a página renderizada, seis logos quase sumiam no navy. Fui medir de verdade, pela
+ * luminância mediana dos pixels opacos de cada PNG (`public/agencias/CONTRASTE.json`, gerado do
+ * próprio arquivo):
+ *
+ *   · sobre NAVY  → **6 de 12** abaixo de 3:1 (ANA, ANEEL, ANM, ANP, ANPD, ANTAQ). A ANPD dá 1,11:1.
+ *   · sobre PAPEL → **1 de 12** (ANATEL, 1,19:1).
+ *
+ * E não existe fundo que sirva para as doze: varri do preto ao branco e o melhor neutro possível
+ * (#a8a8a8) ainda deixa 6 abaixo de 3:1. Logo a escolha não é "qual fundo é bonito", é "qual fundo
+ * erra menos" — papel, com UMA exceção.
+ *
+ * ⚠️ A EXCEÇÃO, com motivo: a ANATEL ganha uma pílula navy atrás da logo, porque sem ela a marca é
+ * invisível. Isso desvia do "sem fundo" que o usuário pediu, e o desvio é declarado em vez de
+ * silencioso. A lista sai do CONTRASTE.json, não de um nome escrito à mão: trocar um PNG e esquecer
+ * de regenerar é pego pelo `etapa194`.
+ *
+ * ⚠️ MARQUEE EM CSS PURO. O projeto não tem framer-motion nem biblioteca de carrossel, e o
+ * `etapa188` proíbe instalar uma. A rolagem é um `@keyframes` com `translateX`, e a trilha é
+ * DUPLICADA para o laço não ter costura visível.
+ *
+ * ⚠️ A cópia duplicada leva `aria-hidden` e `tabIndex={-1}`: sem isso, o Tab percorreria 24 links
+ * para 12 agências e o leitor de tela anunciaria cada nome duas vezes. Duplicar é truque visual, e
+ * truque visual não pode virar conteúdo.
+ *
+ * ⚠️ E o fallback CONFERE O DISCO (`existsSync`), em tempo de render: logo ausente cai num monograma
+ * desenhado em vez de virar ícone quebrado. As logos vieram do WordPress e uma delas falhou no
+ * primeiro download — ícone quebrado numa página institucional é pior que não ter logo.
+ *
+ * ⚠️ O selo "voto a voto" SAIU da esteira (o pedido é logo sozinha), mas a honestidade não saiu: as
+ * três agências com esteira de votos são NOMEADAS na legenda e no Radar. Doze logos em fila sem
+ * ressalva sugerem cobertura uniforme, e a cobertura de voto individual é de três.
  */
 function temLogo(sigla: string): boolean {
   return existsSync(join(process.cwd(), "public", "agencias", `${sigla.toLowerCase()}.png`));
 }
 
+/** O limite da WCAG para elemento gráfico não-textual. Abaixo disto a marca deixa de ser legível. */
+const CONTRASTE_MINIMO = 3.0;
+
+/**
+ * As logos que somem no fundo claro, LIDAS DA MEDIÇÃO. Hoje é só a ANATEL.
+ * ⚠️ Deriva do arquivo, nunca de uma lista escrita à mão: PNG trocado sem regenerar a medição vira
+ * uma logo invisível que ninguém nota, e foi assim que o navy passou.
+ */
+type Contraste = { logos: Record<string, { contraste_no_papel: number }>; _limite_wcag: number };
+const contraste: Contraste = JSON.parse(
+  readFileSync(join(process.cwd(), "public", "agencias", "CONTRASTE.json"), "utf-8"),
+);
+function somNoClaro(sigla: string): boolean {
+  const c = contraste.logos[sigla.toUpperCase()]?.contraste_no_papel;
+  return typeof c === "number" && c < CONTRASTE_MINIMO;
+}
+
+function Logo({ sigla, nome, setor }: { sigla: string; nome: string; setor: string }) {
+  return temLogo(sigla) ? (
+    <Image
+      src={`/agencias/${sigla.toLowerCase()}.png`}
+      alt={`Logo da ${sigla}`}
+      width={200}
+      height={64}
+      /* ⚠️ `max-w-[150px]`: os PNGs do WordPress têm muito respiro interno, e numa caixa menor a
+         marca aparecia com ~25px. Medido olhando a página renderizada, não lendo o código. */
+      className="max-h-14 w-auto max-w-[140px] object-contain"
+      title={`${nome}, ${setor}`}
+    />
+  ) : (
+    <span className="lp-esteira-monograma" aria-hidden>{sigla.slice(0, 4)}</span>
+  );
+}
+
+/** Uma passada da trilha. `espelho` marca a cópia que existe só para o laço não ter costura. */
+function Trilha({ espelho = false }: { espelho?: boolean }) {
+  return (
+    <ul className="lp-esteira-trilha" {...(espelho ? { "aria-hidden": true } : {})}>
+      {AGENCIAS_FEDERAIS.map((a) => (
+        <li key={`${espelho ? "m-" : ""}${a.sigla}`}>
+          <a
+            href={a.site_oficial}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={somNoClaro(a.sigla) ? "lp-esteira-link lp-esteira-link--pilula" : "lp-esteira-link"}
+            {...(espelho ? { tabIndex: -1 } : { "aria-label": `${a.nome_completo}, abrir o site oficial` })}
+          >
+            <Logo sigla={a.sigla} nome={a.nome_completo} setor={a.setor_regulado} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function LpAgencias() {
-  const comVoto = new Set<string>(SIGLAS_COM_ESTEIRA_DE_VOTOS);
+  const comVoto = [...SIGLAS_COM_ESTEIRA_DE_VOTOS].join(", ");
 
   return (
-    <section id="agencias" className="py-20 sm:py-24" style={{ background: "var(--lp-paper)" }}>
+    <section id="agencias" className="py-16 sm:py-20" style={{ background: "var(--lp-paper)" }}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <p className="lp-eyebrow" style={{ color: "#8a6d1f" }}>
-          Agências acompanhadas
-        </p>
+        <p className="lp-eyebrow" style={{ color: "#8a6d1f" }}>Agências acompanhadas</p>
         <h2 className="lp-h2 mt-5 max-w-2xl" style={{ color: "var(--lp-ink)" }}>
           As 12 agências reguladoras federais
         </h2>
         <p className="lp-lead mt-4 max-w-2xl" style={{ color: "var(--lp-muted-ink)" }}>
-          Clique para ir ao site oficial de cada uma.
+          Clique na logo para ir ao site oficial.
         </p>
+      </div>
 
-        <ul className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {AGENCIAS_FEDERAIS.map((a) => (
-            <li key={a.sigla}>
-              <a
-                href={a.site_oficial}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex h-full flex-col items-center gap-3 rounded-lg border bg-white p-5 text-center transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
-                style={{ borderColor: "rgba(28,28,33,0.10)" }}
-                title={`${a.nome_completo} — ${a.setor_regulado}`}
-              >
-                <span className="flex h-20 w-full items-center justify-center">
-                  {temLogo(a.sigla) ? (
-                    <Image
-                      src={`/agencias/${a.sigla.toLowerCase()}.png`}
-                      alt={`Logo da ${a.sigla}`}
-                      width={200}
-                      height={80}
-                      /* ⚠️ `h-20` + `max-w-[170px]`: os PNGs vêm do WordPress com bastante respiro interno, então
-                         uma caixa de 56px deixava a marca visível em ~25px — as logos ficavam perdidas no card.
-                         Medido olhando a página renderizada, não lendo o código. */
-                      className="max-h-20 w-auto max-w-[170px] object-contain opacity-85 transition-opacity duration-200 group-hover:opacity-100"
-                    />
-                  ) : (
-                    /* Monograma: some quando o arquivo chegar, sem tocar em código. */
-                    <span
-                      className="flex h-16 w-16 items-center justify-center rounded-full text-sm font-semibold tracking-wide"
-                      style={{ background: "#0a0e2a", color: "var(--lp-gold)" }}
-                      aria-hidden
-                    >
-                      {a.sigla.slice(0, 4)}
-                    </span>
-                  )}
-                </span>
-                <span className="text-sm font-semibold" style={{ color: "var(--lp-ink)" }}>
-                  {a.sigla}
-                </span>
-                <span className="text-xs leading-snug" style={{ color: "var(--lp-muted-ink)" }}>
-                  {a.setor_regulado}
-                </span>
-                {comVoto.has(a.sigla) && (
-                  /* ⚠️ O selo existe para a página NÃO deixar entender que as 12 têm voto individual.
-                     Sem ele, doze logos lado a lado sob o texto do Radar sugerem cobertura uniforme —
-                     e a esteira de votos cobre três. */
-                  <span
-                    className="mt-1 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide"
-                    style={{ background: "rgba(194,162,74,0.16)", color: "#8a6d1f" }}
-                  >
-                    voto a voto
-                  </span>
-                )}
-              </a>
-            </li>
-          ))}
-        </ul>
+      {/* A esteira sangra até as bordas de propósito: é o que faz a fila parecer contínua. */}
+      <div className="lp-esteira mt-10">
+        <Trilha />
+        <Trilha espelho />
+      </div>
 
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="mt-8 text-xs leading-relaxed" style={{ color: "var(--lp-muted-ink)" }}>
-          <strong>Voto a voto</strong> indica as agências cuja esteira de votos está em operação, com
-          o voto de cada diretor extraído e auditável contra o documento oficial. Nas demais, o IRIS
-          faz acompanhamento regulatório e avaliação de qualidade normativa.
+          A esteira de votos, que extrai o voto de cada diretor e o deixa auditável contra o documento
+          oficial, está em operação em{" "}
+          <strong style={{ color: "var(--lp-ink)" }}>{comVoto}</strong>. Nas demais, o IRIS faz
+          acompanhamento regulatório e avaliação de qualidade normativa.
         </p>
       </div>
     </section>

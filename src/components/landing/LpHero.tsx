@@ -74,7 +74,7 @@ export function LpHero() {
           <span style={{ color: "var(--lp-gold)" }}>acompanhada de perto</span> e medida com método.
         </h1>
         <p className="lp-lead mt-6 max-w-2xl" style={{ color: "var(--lp-muted)" }}>
-          Estudamos, analisamos e aprimoramos a regulação no Brasil — com transparência, participação
+          Estudamos, analisamos e aprimoramos a regulação no Brasil, com transparência, participação
           social e evidência técnica. Acompanhamos as 12 agências reguladoras federais e levamos
           cada decisão colegiada até o voto de cada diretor.
         </p>

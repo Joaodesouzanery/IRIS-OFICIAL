@@ -101,32 +101,97 @@ export const ETAPAS_DO_RADAR: readonly EtapaDoRadar[] = [
     numero: "01",
     titulo: "Monitora as fontes oficiais",
     texto:
-      "Acompanha os portais das agências e detecta pauta, ata, voto e deliberação novos assim que " +
-      "são publicados — sem depender de alguém lembrar de olhar.",
+      "O Radar acompanha os portais das agências todos os dias e detecta pauta, ata, voto e " +
+      "deliberação novos assim que são publicados. Nada depende de alguém lembrar de olhar, e nada " +
+      "depende de a agência avisar.",
   },
   {
     numero: "02",
     titulo: "Extrai o conteúdo dos PDFs",
     texto:
-      "Lê os documentos oficiais e estrutura o que está neles: número, processo, interessado, " +
-      "microtema e resultado. O que a leitura não sustenta fica marcado para revisão humana, não " +
-      "é preenchido por suposição.",
+      "Cada documento oficial é lido e estruturado: número, processo, interessado, relator, " +
+      "microtema e resultado. O que a leitura não sustenta fica marcado para revisão humana em vez " +
+      "de ser preenchido por suposição, porque um campo inventado é pior que um campo vazio.",
   },
   {
     numero: "03",
     titulo: "Materializa o voto de cada diretor",
     texto:
-      "Transforma a decisão colegiada em voto individual, auditável um a um contra o PDF de origem. " +
-      "Hoje com cobertura de esteira de votos na ANTT, na ANM e na ARTESP — as demais agências " +
-      "entram no acompanhamento regulatório e na avaliação de qualidade.",
+      "A decisão colegiada é transformada em voto individual, e cada voto aponta para o trecho do " +
+      "PDF que o originou. Hoje a esteira de votos cobre a ANTT, a ANM e a ARTESP. Nas outras nove " +
+      "agências federais o Radar faz acompanhamento regulatório e avaliação de qualidade, e a " +
+      "página diz isso em vez de deixar subentendido.",
   },
   {
     numero: "04",
     titulo: "Avalia a qualidade regulatória",
     texto:
-      "Aplica a matriz IMQN — seis critérios, de Análise de Impacto Regulatório a participação " +
-      "social — sobre as 12 agências federais, com a evidência de cada nota registrada.",
+      "A matriz IMQN aplica seis critérios, de Análise de Impacto Regulatório a participação " +
+      "social, sobre as 12 agências federais. Cada nota guarda a evidência que a sustenta, de modo " +
+      "que a avaliação pode ser contestada item por item.",
   },
+] as const;
+
+/**
+ * ⚠️ O QUE O LEITOR GANHA — a parte que faltava, e ela é diferente das etapas.
+ *
+ * As quatro etapas dizem o que o sistema FAZ. Nenhuma respondia "e daí?", que é a única pergunta que
+ * um associado faz na primeira visita. Cada item aqui nomeia uma consequência concreta, e nenhum
+ * promete o que a plataforma não entrega.
+ */
+export interface BeneficioDoRadar { titulo: string; texto: string }
+
+export const BENEFICIOS_DO_RADAR: readonly BeneficioDoRadar[] = [
+  {
+    titulo: "Saber antes, não depois",
+    texto:
+      "A decisão aparece no painel no mesmo dia da publicação oficial, com o documento anexado. " +
+      "O prazo para reagir começa a contar quando a decisão sai, não quando alguém a descobre.",
+  },
+  {
+    titulo: "O voto com nome e sobrenome",
+    texto:
+      "Quem votou o quê, em qual processo, em que reunião. É o que permite entender a posição de " +
+      "cada diretor ao longo do mandato em vez de ler apenas o resultado do colegiado.",
+  },
+  {
+    titulo: "Evidência a um clique",
+    texto:
+      "Todo número da plataforma tem o PDF de origem do lado. Um dado que não pode ser conferido " +
+      "contra o documento oficial não serve para sustentar tese, parecer nem decisão de investimento.",
+  },
+  {
+    titulo: "Histórico que responde perguntas",
+    texto:
+      "A base acumula os documentos ano a ano, então dá para perguntar como um tema foi tratado ao " +
+      "longo do tempo, quanto tempo um processo levou e com que frequência uma tese foi acolhida.",
+  },
+  {
+    titulo: "Qualidade normativa medida",
+    texto:
+      "A matriz IMQN dá uma leitura comparável entre as 12 agências, com a evidência de cada nota " +
+      "registrada. Serve para mostrar onde o ambiente regulatório é previsível e onde não é.",
+  },
+  {
+    titulo: "Lacuna declarada é lacuna visível",
+    texto:
+      "Quando a leitura de um documento falha, a plataforma registra o motivo em vez de omitir a " +
+      "linha. Você vê o que está coberto e o que não está, e essa é a diferença entre um painel e " +
+      "uma vitrine.",
+  },
+] as const;
+
+/**
+ * Como o Radar trata o que não consegue ler. É a seção que um comprador técnico procura primeiro, e
+ * é também um compromisso: se ela mudar, o comportamento do sistema mudou.
+ */
+export const METODO_DO_RADAR: readonly string[] = [
+  "A fonte é sempre o documento oficial publicado pela agência. O Radar não reescreve, não resume " +
+    "por aproximação e não completa campo que o documento não tem.",
+  "Voto individual só é registrado quando o documento o sustenta. Em decisão unânime, o voto é " +
+    "inferido do colegiado presente e fica marcado como inferido, nunca como leitura direta.",
+  "Divergência entre o que a plataforma calculou e o que o documento diz é publicada como número, " +
+    "não escondida. É por isso que os painéis mostram o que falta cobrir.",
 ] as const;
 
 /** Canais institucionais — os mesmos já usados pela newsletter, para não haver duas verdades. */

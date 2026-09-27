@@ -129,15 +129,34 @@ describe("etapa188 · ⚠️ a página não promete cobertura que a esteira não
   });
 
   it("só as agências com esteira ganham o selo «voto a voto»", () => {
+    /**
+     * ⚠️ Fase 33 — o SELO saiu, a honestidade não. O usuário pediu a esteira com "somente a logo e
+     * clicável, sem fundo", e um selo pendurado em cada logo não cabe nisso. A propriedade que
+     * importa nunca foi o selo: é a página NOMEAR as três agências com esteira de votos e dizer o
+     * que as outras nove recebem. Doze logos em fila sem ressalva sugerem cobertura uniforme.
+     *
+     * A expectativa antiga travava a FORMA (um `Set`, um `&&`, a string "voto a voto") e por isso
+     * caiu junto com o redesenho, embora a garantia continue de pé. Nona vez nesta série.
+     */
     const AG = semComentarios(ler("src/components/landing/LpAgencias.tsx"));
-    expect(AG).toMatch(/const comVoto = new Set<string>\(SIGLAS_COM_ESTEIRA_DE_VOTOS\);/);
-    expect(AG).toMatch(/comVoto\.has\(a\.sigla\) &&/);
-    expect(ler("src/components/landing/LpAgencias.tsx")).toMatch(/voto a voto/);
+    // A legenda deriva das siglas declaradas, e não repete uma lista escrita à mão.
+    expect(AG).toMatch(/const comVoto = \[\.\.\.SIGLAS_COM_ESTEIRA_DE_VOTOS\]\.join\(", "\);/);
+    expect(AG).toMatch(/\{comVoto\}/);
+    expect(AG, "a página deixou de dizer o que as nove restantes recebem")
+      .toMatch(/acompanhamento regulatório e avaliação de qualidade/);
   });
 
   it("⚠️ e a legenda EXPLICA o selo — selo sem legenda é jargão", () => {
     const AG = ler("src/components/landing/LpAgencias.tsx");
-    expect(AG).toMatch(/Nas demais, o IRIS\s*\n?\s*faz acompanhamento regulatório/);
+    /**
+     * ⚠️ O regex antigo exigia a quebra de linha EXATA entre "IRIS" e "faz" — o Prettier reformatando
+     * o parágrafo quebraria o teste sem ninguém ter mexido no texto. Agora a asserção é sobre o
+     * conteúdo: a frase existe e nomeia as duas frentes, com o espaçamento livre.
+     */
+    const semQuebras = AG.replace(/\s+/g, " ");
+    expect(semQuebras).toMatch(/Nas demais, o IRIS faz acompanhamento regulatório e avaliação de qualidade/);
+    expect(semQuebras, "a legenda deixou de explicar o que é a esteira de votos")
+      .toMatch(/extrai o voto de cada diretor e o deixa auditável contra o documento oficial/);
   });
 
   it("⚠️ a etapa 03 do Radar NOMEIA as três agências, em vez de deixar subentendido", () => {
@@ -294,7 +313,11 @@ describe("etapa188 · as logos e o fallback", () => {
     // e ícone quebrado numa página institucional é pior que não ter logo.
     const AG = semComentarios(ler("src/components/landing/LpAgencias.tsx"));
     expect(AG).toMatch(/existsSync\(join\(process\.cwd\(\), "public", "agencias"/);
-    expect(AG).toMatch(/temLogo\(a\.sigla\) \?/);
+    // ⚠️ O ternário mudou de lugar (virou o componente `Logo`), mas os DOIS ramos continuam: logo em
+    // disco vira `<Image>`, logo ausente vira monograma desenhado. Ícone quebrado numa página
+    // institucional é pior que não ter logo, e foi por isso que o fallback nasceu.
+    expect(AG).toMatch(/return temLogo\(sigla\) \? \(/);
+    expect(AG).toMatch(/lp-esteira-monograma/);
   });
 
   it("cada logo linka para o site oficial da agência, com rel de segurança", () => {

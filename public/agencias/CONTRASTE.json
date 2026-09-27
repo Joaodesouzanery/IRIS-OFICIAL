@@ -1,0 +1,59 @@
+{
+  "_leia_me": "Contraste da TINTA de cada logo (luminancia mediana dos pixels opacos, WCAG relativa) contra os dois fundos da landing. Gerado por medicao dos proprios PNGs, nao estimado. Se um PNG for trocado, REGENERE este arquivo: a esteira decide o tratamento de cada logo a partir daqui.",
+  "_medido_em": "2026-09-27",
+  "_fundos": {
+    "papel": "#f4f1ea",
+    "navy": "#0a0e2a"
+  },
+  "_limite_wcag": 3.0,
+  "logos": {
+    "ANA": {
+      "contraste_no_papel": 8.72,
+      "contraste_no_navy": 1.93
+    },
+    "ANAC": {
+      "contraste_no_papel": 3.81,
+      "contraste_no_navy": 4.4
+    },
+    "ANATEL": {
+      "contraste_no_papel": 1.19,
+      "contraste_no_navy": 14.14
+    },
+    "ANCINE": {
+      "contraste_no_papel": 4.12,
+      "contraste_no_navy": 4.07
+    },
+    "ANEEL": {
+      "contraste_no_papel": 8.19,
+      "contraste_no_navy": 2.05
+    },
+    "ANM": {
+      "contraste_no_papel": 7.89,
+      "contraste_no_navy": 2.13
+    },
+    "ANP": {
+      "contraste_no_papel": 7.11,
+      "contraste_no_navy": 2.36
+    },
+    "ANPD": {
+      "contraste_no_papel": 18.62,
+      "contraste_no_navy": 1.11
+    },
+    "ANS": {
+      "contraste_no_papel": 4.76,
+      "contraste_no_navy": 3.52
+    },
+    "ANTAQ": {
+      "contraste_no_papel": 9.31,
+      "contraste_no_navy": 1.8
+    },
+    "ANTT": {
+      "contraste_no_papel": 4.69,
+      "contraste_no_navy": 3.58
+    },
+    "ANVISA": {
+      "contraste_no_papel": 4.85,
+      "contraste_no_navy": 3.46
+    }
+  }
+}
