@@ -4,6 +4,25 @@ import { NextRequest, NextResponse } from "next/server";
 const WRITE_METHODS = new Set(["POST", "PATCH", "PUT", "DELETE"]);
 const PUBLIC_APP_PREFIXES = ["/login", "/setup-owner", "/auth/callback", "/_next", "/favicon", "/robots.txt", "/sitemap.xml"];
 
+/**
+ * Caminhos públicos por IGUALDADE EXATA — Fase 32 (landing page).
+ *
+ * ⚠️ `/` NÃO pode entrar em `PUBLIC_APP_PREFIXES`, e a razão é o próprio helper: ele testa
+ * `pathname === prefix || pathname.startsWith(`${prefix}/`)`. Com `prefix = "/"`, o segundo ramo
+ * vira `startsWith("//")`, que hoje não casa com nada — mas é uma armadilha esperando alguém
+ * normalizar o helper e abrir o app inteiro de uma vez. Um conjunto de igualdade exata não tem
+ * como se generalizar por acidente.
+ *
+ * `/dashboard` continua fora daqui e continua exigindo sessão — é o que o `etapa188` cobra.
+ *
+ * ⚠️ `/opengraph-image` está aqui porque o `matcher` do middleware é `/((?!.*\..*).*)`: ele ignora
+ * caminhos COM ponto (por isso `/brand/logo.png` passa direto), e a imagem gerada pelo `next/og`
+ * não tem extensão no caminho — o Next a serve em `/opengraph-image?<hash>`. Sem esta entrada, o
+ * middleware devolvia **307 para /login**, e WhatsApp, LinkedIn e Twitter, que buscam a imagem sem
+ * sessão, não mostrariam prévia nenhuma. Descoberto servindo o build e medindo, não por leitura.
+ */
+const PUBLIC_APP_EXACT = new Set(["/", "/opengraph-image"]);
+
 // Comparação de tempo constante para o Bearer de cron. Edge-safe (sem node:crypto):
 // só o tamanho vaza (aceitável), o conteúdo é comparado sem short-circuit.
 function timingSafeEqual(a: string, b: string): boolean {
@@ -129,6 +148,7 @@ async function requireAuthenticatedApp(req: NextRequest) {
 }
 
 function isPublicAppPath(pathname: string): boolean {
+  if (PUBLIC_APP_EXACT.has(pathname)) return true;
   return PUBLIC_APP_PREFIXES.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
 }
 

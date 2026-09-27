@@ -238,3 +238,127 @@
     outline: none !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LANDING PAGE PÚBLICA — Fase 32
+   ═══════════════════════════════════════════════════════════════════════════
+   ⚠️ A marca da LP é a INSTITUCIONAL (navy + dourado), não a do app (laranja).
+   A LP é a cara do Instituto; o laranja é a cor do produto. A transição acontece no login.
+   Os valores são os mesmos de `src/lib/report-theme.ts`, que já vestia os relatórios em PDF —
+   então o site, o deck institucional e o relatório passam a falar a mesma língua.
+
+   ⚠️ E os tokens ficam escopados em `.lp`, NÃO em `:root`: o app tem tema claro/escuro por
+   `next-themes`, e a LP tem identidade fixa (como a tela de login, que também não segue o tema).
+   Sem o escopo, alternar o tema no dashboard mudaria a cor da landing.
+   ═══════════════════════════════════════════════════════════════════════════ */
+@layer components {
+  .lp {
+    --lp-navy: #0a0e2a;
+    --lp-navy-2: #0f1435;
+    --lp-navy-3: #161c46;
+    --lp-gold: #c2a24a;
+    --lp-gold-hi: #d8bc6a;
+    --lp-ink: #1c1c21;
+    --lp-paper: #f4f1ea;
+    --lp-paper-2: #ffffff;
+    --lp-line: rgba(194, 162, 74, 0.22);
+    --lp-muted: rgba(255, 255, 255, 0.62);
+    --lp-muted-ink: #5a5a63;
+    color-scheme: dark;
+  }
+
+  /* O "— EYEBROW" do PDF institucional: filete dourado curto + rótulo em versalete espaçado. */
+  .lp-eyebrow {
+    @apply inline-flex items-center gap-3 text-[11px] font-medium uppercase;
+    letter-spacing: 0.22em;
+    color: var(--lp-gold);
+  }
+  .lp-eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--lp-gold);
+    flex: none;
+  }
+
+  .lp-h1 {
+    @apply font-semibold leading-[1.05];
+    font-size: clamp(2.1rem, 5.2vw, 4rem);
+    letter-spacing: -0.03em;
+  }
+  .lp-h2 {
+    @apply font-semibold leading-[1.12];
+    font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+    letter-spacing: -0.02em;
+  }
+  .lp-lead {
+    font-size: clamp(1rem, 1.35vw, 1.15rem);
+    line-height: 1.7;
+  }
+
+  /* Cartão com filete dourado no topo — o mesmo padrão das páginas 3 e 4 do deck. */
+  .lp-card {
+    @apply relative rounded-lg p-6;
+    background: var(--lp-navy-2);
+    border: 1px solid var(--lp-line);
+  }
+  .lp-card::before {
+    content: "";
+    @apply absolute left-0 right-0 top-0 h-px;
+    background: linear-gradient(90deg, var(--lp-gold), transparent 72%);
+  }
+
+  .lp-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-medium transition-colors duration-150;
+  }
+  .lp-btn-gold {
+    @apply lp-btn;
+    background: var(--lp-gold);
+    color: var(--lp-navy);
+  }
+  .lp-btn-gold:hover { background: var(--lp-gold-hi); }
+  .lp-btn-ghost {
+    @apply lp-btn;
+    border: 1px solid var(--lp-line);
+    color: #fff;
+  }
+  .lp-btn-ghost:hover { border-color: var(--lp-gold); color: var(--lp-gold); }
+
+  /* Foco visível — a LP é pública e navegada por teclado tanto quanto por mouse. */
+  .lp a:focus-visible,
+  .lp button:focus-visible {
+    outline: 2px solid var(--lp-gold);
+    outline-offset: 3px;
+  }
+}
+
+/* ── O CROSSFADE DA HERO — CSS puro, sem uma linha de JavaScript ─────────────
+   ⚠️ O projeto não tem framer-motion nem biblioteca de carrossel, e não vale instalar uma para
+   trocar imagem de fundo. Doze imagens empilhadas, cada uma com o MESMO keyframe e um
+   `animation-delay` NEGATIVO escalonado — o delay negativo faz cada uma já nascer na sua fase, em
+   vez de todas esperarem a primeira volta.
+
+   Ciclo de 60s / 12 imagens = 5s por imagem, com ~0,9s de dissolve.
+   ─────────────────────────────────────────────────────────────────────────── */
+@keyframes lpHeroFade {
+  0%    { opacity: 0; transform: scale(1.06); }
+  1.5%  { opacity: 1; }
+  7%    { opacity: 1; }
+  8.5%  { opacity: 0; }
+  100%  { opacity: 0; transform: scale(1.12); }
+}
+
+.lp-hero-img {
+  @apply absolute inset-0 h-full w-full object-cover;
+  opacity: 0;
+  animation: lpHeroFade 60s linear infinite;
+  will-change: opacity, transform;
+}
+
+/* ⚠️ `prefers-reduced-motion` CONGELA na primeira imagem em vez de só desacelerar.
+   Movimento de fundo em tela cheia é exatamente o gatilho que essa preferência existe para
+   evitar; um crossfade "mais lento" continua sendo movimento. */
+@media (prefers-reduced-motion: reduce) {
+  .lp-hero-img { animation: none; opacity: 0; transform: none; }
+  .lp-hero-img:first-of-type { opacity: 1; }
+}

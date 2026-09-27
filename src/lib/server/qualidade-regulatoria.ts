@@ -1,3 +1,4 @@
+import { AGENCIAS_FEDERAIS } from "@/lib/agencias-federais";
 // Níveis da Matriz de Maturidade da Qualidade Normativa (IMQN), do menos ao mais
 // maduro. Valores IMQN 0 / 0.35 / 0.7 / 1 → nota 0 / 35 / 70 / 100 (ver LEVEL_TO_NOTA).
 export type QualidadeNivel = "inexistente" | "inicial" | "gerenciado" | "melhoria_continua";
@@ -175,20 +176,14 @@ export const QUALIDADE_GUARDRAILS = [
   "Usar linguagem de risco institucional, sem acusações ou juízo reputacional individual.",
 ];
 
-export const QUALIDADE_AGENCIAS: QualidadeAgencia[] = [
-  ["ANA", "Agência Nacional de Águas e Saneamento Básico", "Recursos hídricos e saneamento", 2000, "Lei 9.984/2000", "https://www.gov.br/ana"],
-  ["ANAC", "Agência Nacional de Aviação Civil", "Aviação civil", 2005, "Lei 11.182/2005", "https://www.gov.br/anac"],
-  ["ANCINE", "Agência Nacional do Cinema", "Setor cinematográfico e audiovisual", 2001, "MP 2.228-1/2001", "https://www.ancine.gov.br"],
-  ["ANEEL", "Agência Nacional de Energia Elétrica", "Energia elétrica", 1996, "Lei 9.427/1996", "https://www.gov.br/aneel"],
-  ["ANM", "Agência Nacional de Mineração", "Mineração", 2017, "Lei 13.575/2017", "https://www.gov.br/anm"],
-  ["ANP", "Agência Nacional do Petróleo, Gás Natural e Biocombustíveis", "Petróleo, gás natural e biocombustíveis", 1997, "Lei 9.478/1997", "https://www.gov.br/anp"],
-  ["ANS", "Agência Nacional de Saúde Suplementar", "Planos e seguros de saúde", 2000, "Lei 9.961/2000", "https://www.gov.br/ans"],
-  ["ANATEL", "Agência Nacional de Telecomunicações", "Telecomunicações", 1997, "Lei 9.472/1997", "https://www.gov.br/anatel"],
-  ["ANTAQ", "Agência Nacional de Transportes Aquaviários", "Transportes aquaviários e portos", 2001, "Lei 10.233/2001", "https://www.gov.br/antaq"],
-  ["ANTT", "Agência Nacional de Transportes Terrestres", "Transportes terrestres", 2001, "Lei 10.233/2001", "https://www.gov.br/antt"],
-  ["ANVISA", "Agência Nacional de Vigilância Sanitária", "Vigilância sanitária", 1999, "Lei 9.782/1999", "https://www.gov.br/anvisa"],
-  ["ANPD", "Agência Nacional de Proteção de Dados", "Proteção de dados pessoais", 2026, "Lei 15.352/2026", "https://www.gov.br/anpd"],
-].map(([sigla, nome_completo, setor_regulado, ano_criacao, lei_criacao, site_oficial]) => {
+/**
+ * ⚠️ A lista das 12 MUDOU DE CASA na Fase 32: ela agora vive em `src/lib/agencias-federais.ts`,
+ * sem dependência de servidor, para a landing page pública poder usá-la sem arrastar código de
+ * `lib/server/` para o bundle. Aqui ficou só o que é de QUALIDADE: os portais derivados.
+ * Move, não copia — duas listas das mesmas 12 divergiriam no primeiro dia.
+ */
+export const QUALIDADE_AGENCIAS: QualidadeAgencia[] = AGENCIAS_FEDERAIS.map(
+  ({ sigla, nome_completo, setor_regulado, ano_criacao, lei_criacao, site_oficial }) => {
   const base = String(site_oficial);
   const lower = String(sigla).toLowerCase();
   return {
@@ -205,7 +200,8 @@ export const QUALIDADE_AGENCIAS: QualidadeAgencia[] = [
     email_contato: null,
     ativo: true,
   };
-});
+  },
+);
 
 // As 6 dimensões da Matriz de Avaliação da Maturidade da Qualidade Normativa (IMQN),
 // programa INFRA Competitividade. Pesos (soma 1,0): AIR 0.25, Participação Social 0.15,

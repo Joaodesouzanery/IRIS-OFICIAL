@@ -29,7 +29,11 @@ interface NavItem {
 
 // Observatório em 1º (ago/2026): é a porta de entrada da plataforma — landing pós-login.
 const NAV_ITEMS: NavItem[] = [
-  { label: "Observatório da Regulação",  href: "/dashboard/painel-regulatorio", icon: TrendingUp },
+  // ⚠️ Fase 32 — o rótulo virou "Radar Regulatório", que é o nome público usado na landing. A ROTA
+  // continua `/dashboard/painel-regulatorio` de propósito: trocá-la quebraria link salvo, favorito
+  // e qualquer URL já compartilhada, em troca de cosmética. Um nome só para o usuário; o caminho
+  // interno pode carregar a história.
+  { label: "Radar Regulatório",          href: "/dashboard/painel-regulatorio", icon: TrendingUp },
   { label: "Deliberações", href: "/dashboard/deliberacoes", icon: FileText },
   { label: "Notícias", href: "/dashboard/noticias", icon: Newspaper },
   { label: "Monitoramento", href: "/dashboard/monitoramento", icon: Radar },

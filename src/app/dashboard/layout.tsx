@@ -2,6 +2,18 @@ import { Sidebar } from "@/components/layout/Sidebar";
 import { Topbar } from "@/components/layout/Topbar";
 import { DemoBanner } from "@/components/DemoBanner";
 import { DataSyncProvider } from "@/components/DataSyncProvider";
+import type { Metadata } from "next";
+
+/**
+ * ⚠️ O `noindex` mora AQUI, e não na raiz — Fase 32.
+ *
+ * Ele estava no layout raiz e era herdado por tudo. A partir daqui é plataforma autenticada: não há
+ * o que indexar, e o middleware já redireciona quem não tem sessão. A landing pública em `/` fica
+ * livre para ser encontrada.
+ */
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function DashboardLayout({
   children,
