@@ -1,7 +1,79 @@
 # PENDÊNCIAS E OPERAÇÃO — IRIS-Regulação
 
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
-Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
+Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 33, 27/set/2026).
+
+## 🔴 FASE 33 (27/set/2026) — os cinco itens do QA, e três diagnósticos meus que a medição desfez
+
+### ⛔ O QUE SÓ VOCÊ PODE FAZER
+
+**1. A verificação de segurança da Fase 32 CONTINUA PENDENTE e segue sendo a mais urgente.** Os dois
+`curl` com a chave anon, logo abaixo neste arquivo. Nada nesta fase a substitui.
+
+**2. Rodar "Rodar tudo" e olhar TRÊS números novos**, que são medições com a escrita desligada:
+
+| Número | Onde | O que significa |
+|---|---|---|
+| `divergentes_medidas` + `divergentes_por_agencia` | banner do `redatar` | quantas deliberações da **ANM e da ARTESP** têm data que o próprio documento desmente. `divergentes_regra_ligada: false` = ninguém foi corrigido ainda. |
+| `agencia_divergente` | `campos_detectados` dos documentos novos | quantos documentos têm a procedência discordando da detecção por texto (o caso dos 5 da ARTESP gravados como ANTT). |
+| `divergencias_gravadas` + `gravacao_do_diagnostico` | banner do backfill | o bloco ⑧ do QA sai do vazio. `0/312 · 312 já iguais` = convergido; `0/312` sozinho = quebrado. |
+
+**3. Colar `docs/qa-fase31.sql` de novo.** O bloco ⑨ mudou: agora classifica cada linha em
+`reuniao` / `voto_individual` / `documento_avulso` e só calcula `faltando` para reunião.
+
+**4. Duas decisões de DADO que só você responde, e os números dependem delas:**
+
+- ⚠️ **`Alessandro Baumgartner` é diretor da ANTT no período de mar–abr/2026?** Ele é o votante único
+  mais frequente nas nove reuniões e não está entre os cinco do gabarito. Que ele existe em
+  `diretores` o dado prova (a linha do voto tem `diretor_id`). Se for diretor, o "colegiado esperado:
+  5" está errado e é 6. Se não for, é relator de área e não deveria receber voto de diretor.
+- ⚠️ **Num ACT entre ANTT e ARTESP publicado no portal da ANTT, quem é a agência do documento:** a
+  EMISSORA (ARTESP, que o título diz) ou a PUBLICADORA (ANTT, de cujo sítio o documento veio)? É essa
+  pergunta que mantém `PROCEDENCIA_VENCE_A_DETECCAO = false`. As duas respostas são defensáveis, e
+  ligar por minha conta reatribuiria documentos em massa a partir de uma premissa que você não
+  escolheu.
+
+**5. As fotos dos eventos precisam voltar como ARQUIVOS.** Você mandou as páginas do deck como
+imagens na conversa, e o contexto foi compactado: eu não tenho mais acesso a elas para recortar.
+Solte os `.jpg` em `public/eventos/` com o nome do slug (ver o `LEIA-ME.md` de lá) e eles aparecem
+sem tocar em código, porque o componente confere o disco a cada render.
+
+**6. As datas do DOU que você foi buscar:** posse do Severino Medeiros, afastamento do Caio Mário, e
+os mandatos do Roger Cabral e do Tasso Mendonça. ⚠️ Os dois últimos são o que faz a **79ª da ANM**
+fechar: eles estão em `diretores` e não têm mandato, e é por isso que ela mostra 2 votantes e não 4.
+
+### 🔒 TRÊS MUDANÇAS MEDIDAS E DESLIGADAS, esperando você
+
+| Constante | Arquivo | O que ligar muda |
+|---|---|---|
+| `REDATAR_DATA_DIVERGENTE` | `admin/deliberacoes/redatar/route.ts` | passa a CORRIGIR a data das deliberações cujo documento a desmente. Muda o roster de voto de cada linha afetada. |
+| `PROCEDENCIA_VENCE_A_DETECCAO` | `lib/server/pipeline.ts` | a agência passa a vir da procedência, não da contagem de menções no texto. Reatribuição em massa. |
+| `PRESENTES_DO_PAI_VALEM` | `lib/server/ata-item-materializacao.ts` | (da Fase 31, segue desligada) o preâmbulo do pai passa a valer como roster do item. |
+
+### ⚠️ LACUNA CONHECIDA, declarada e travada por teste
+
+**A re-derivação ancorada de data NÃO funciona para a ANTT.** Medido contra os PDFs reais:
+`antt-ata-264-rde.pdf` devolve `2025-10-08` contra `2026-01-19` certo, e os outros três devolvem
+`null`. A causa é que a data da ANTT sai do `antt-manual-parser` (`extractMeeting` na ata, data de
+ASSINATURA no voto individual), que não está na cascata ancorada.
+
+Por isso `AGENCIAS_COM_ANCORA_CERTIFICADA = {ANM, ARTESP}` no `redatar`, e o `etapa193` **exige** que
+a ANTT continue divergindo. Quem puser ANTT nesse conjunto sem antes ensinar a re-derivação a
+consultar o parser da ANTT reprova antes de chegar em produção — e faz bem, porque a alternativa é
+reescrever data certa por errada, em massa, com número verde.
+
+### 📌 Três diagnósticos meus que a medição desfez nesta fase
+
+1. **"As nove reuniões da ANTT são documentos de voto individual contados como reunião."** Refutado
+   pela sua consulta: são reuniões de verdade. O defeito era a esteira perder `documento_antt_tipo`,
+   e o relator virar o único votante.
+2. **"Há dois defeitos vivos no parser de data (âncora que mente, variante da 80ª)."** Refutado
+   contra os PDFs reais: o parser acerta as cinco datas. E a "variante da 80ª" eu medi contra um
+   preâmbulo digitado à mão — **a 80ª não está no corpus**.
+3. **"As logos contrastam melhor sobre navy."** Refutado ao renderizar e medir: no navy somem 6 de
+   12; no papel, 1.
+
+---
 
 ## 🔴 FASE 32 (27/set/2026) — a landing pública, e a auth que nunca esteve desligada
 
