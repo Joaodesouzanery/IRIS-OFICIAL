@@ -178,11 +178,33 @@ describe("etapa172 · a gravação não destrói nem classifica no escuro", () =
     expect(ROTA).toMatch(/if \(ok\) \{\s*if \("motivo_sem_voto" in patch\) motivosGravados\+\+;/);
   });
 
-  it("⚠️ tem recheck de orçamento por item, como o laço principal", () => {
-    // Sem ele, uma rodada apertada gastaria a fatia carimbando motivo em vez de materializar voto.
+  it("⚠️ tem recheck de orçamento, e com a reserva da ESCRITA — não a do processamento", () => {
+    /**
+     * ⚠️ CORREÇÃO DE UM TESTE MEU (Fase 33). Esta expectativa exigia a presença LITERAL de
+     * `hasBudget(deadlineAt, RESERVA_POR_ITEM_MS)`, e com isso congelou o defeito: 8s é o custo de
+     * PROCESSAR um item (ler PDF, casar nomes), não de um `UPDATE` de uma linha (~200ms). Com a
+     * fatia de 9 a 15s do passo, exigir 8s de folga para gravar fazia a gravação escrever zero por
+     * construção quando o laço principal tinha consumido a fatia. Medido: 7 linhas carimbadas de
+     * centenas, e `roster_divergente` em nenhuma — com este teste VERDE o tempo todo.
+     *
+     * Sétima vez nesta série que eu escrevi uma expectativa sobre TEXTO em vez de sobre a
+     * PROPRIEDADE. A propriedade é: existe recheck, e a reserva da escrita é estritamente menor que
+     * a do processamento. O número em si é decisão de projeto; a relação entre os dois é o invariante.
+     */
     const bloco = ROTA.slice(ROTA.indexOf("let motivosGravados"), ROTA.indexOf("return NextResponse.json({", ROTA.indexOf("let motivosGravados")));
-    expect(bloco).toMatch(/hasBudget\(deadlineAt, RESERVA_POR_ITEM_MS\)/);
+    expect(bloco).toMatch(/hasBudget\(deadlineAt, RESERVA_POR_ESCRITA_MS\)/);
     expect(bloco).toMatch(/restantes = true; break;/);
+    // E o laço da gravação NÃO pode voltar a usar a reserva do processamento.
+    expect(bloco, "a gravação voltou a exigir a reserva de 8s do processamento")
+      .not.toMatch(/hasBudget\(deadlineAt, RESERVA_POR_ITEM_MS\)/);
+
+    const num = (fonte: string, nome: string) => {
+      const m = fonte.match(new RegExp(`const ${nome} ?(?:: ?number)? = ([0-9_]+);`));
+      expect(m, `constante ${nome} não encontrada`).toBeTruthy();
+      return Number(m![1].replace(/_/g, ""));
+    };
+    const FILA = ler("src/lib/server/fila-de-diagnostico.ts");
+    expect(num(FILA, "RESERVA_POR_ESCRITA_MS")).toBeLessThan(num(ROTA, "RESERVA_POR_ITEM_MS"));
   });
 
   it("⚠️ a linha que o `etapa149` pina NÃO foi tocada — a passada do payload é separada", () => {

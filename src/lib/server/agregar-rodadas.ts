@@ -46,6 +46,13 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
    * rodada, que é exatamente o sinal de que o reparo está funcionando.
    */
   "nomes_candidatos",
+  /**
+   * Fase 33 — a FILA de diagnóstico é recalculada inteira a cada rodada (todo o estoque de motivos
+   * mais as divergências da janela), então é retrato. Somá-la diria "candidatos: 1.400" num estoque
+   * de 300, e ela é justamente o DENOMINADOR de `motivos_gravados` — um denominador inflado inverte
+   * a leitura da fração.
+   */
+  "diagnosticos_candidatos",
 ]);
 
 /**
@@ -71,6 +78,12 @@ export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
   "examinados",
   // Fase 31, Bloco 3 — medido sobre a mesma janela rotativa, logo repete entre rodadas.
   "roster_mudaria_com_presentes_do_pai",
+  /**
+   * Fase 33 — contado sobre a FATIA da fila que a rodada alcançou, e a frente da fila é estável
+   * entre rodadas (prioridade fixa), então o mesmo id é redispensado toda vez. Soma, mas só ao lado
+   * de `diagnosticos_candidatos`.
+   */
+  "diagnosticos_ja_iguais",
 ]);
 
 /**

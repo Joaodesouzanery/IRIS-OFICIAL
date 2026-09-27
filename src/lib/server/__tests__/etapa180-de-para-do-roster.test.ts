@@ -169,12 +169,35 @@ describe("etapa180 · ⚠️ UM write por deliberação — a mescla não pode p
     expect(MAT).toMatch(/if \(!rawRes\.error\) \{/);
   });
 
-  it("e a escrita passa por `exigirEscrita`, com recheck de orçamento por item", () => {
-    const i = MAT.indexOf("for (const [id, patch] of patchPorDeliberacao)");
-    const bloco = MAT.slice(i, i + 700);
-    expect(bloco).toMatch(/if \(!hasBudget\(deadlineAt, RESERVA_POR_ITEM_MS\)\) \{ restantes = true; break; \}/);
+  it("e a escrita passa por `exigirEscrita`, com recheck da reserva de ESCRITA", () => {
+    /**
+     * ⚠️ CORREÇÃO DE UM TESTE MEU (Fase 33). Este `expect` exigia a linha literal
+     * `if (!hasBudget(deadlineAt, RESERVA_POR_ITEM_MS)) { restantes = true; break; }` — isto é,
+     * canonizava como virtude exatamente a linha que impedia a gravação de acontecer. Ver o docblock
+     * de `etapa172` para a medição.
+     */
+    const i = MAT.indexOf("for (const [id, patch] of filaDaRodada)");
+    expect(i, "o laço de gravação deixou de iterar a fila priorizada").toBeGreaterThan(-1);
+    const bloco = MAT.slice(i, i + 900);
+    expect(bloco).toMatch(/if \(!hasBudget\(deadlineAt, RESERVA_POR_ESCRITA_MS\)\) \{ restantes = true; break; \}/);
     expect(bloco).toMatch(/const ok = await exigirEscrita\(/);
     expect(bloco).toMatch(/if \("roster_divergente" in patch\) divergenciasGravadas\+\+;/);
+  });
+
+  it("⚠️ a rota DELEGA a fila priorizada, o corte pelo orçamento e o skip", () => {
+    /**
+     * A propriedade — *"com orçamento para N escritas e uma divergência entre 300 postergáveis, a
+     * divergência é escrita"* — é MEDIDA em `etapa191`, contra o módulo. Aqui só se exige que a rota
+     * não tenha uma segunda implementação da mesma decisão: duas implementações divergentes do mesmo
+     * conceito já custaram três fases a este projeto.
+     */
+    expect(MAT).toMatch(/from "@\/lib\/server\/fila-de-diagnostico"/);
+    expect(MAT).toMatch(/const plano = planejarGravacaoDeDiagnostico\(\s*\[\.\.\.patchPorDeliberacao\.entries\(\)\], msLeft\(deadlineAt\),\s*\);/);
+    expect(MAT).toMatch(/if \(plano\.restantes\) restantes = true;/);
+    expect(MAT).toMatch(/if \(patchJaAplicado\(base, patch\)\) \{\s*diagnosticosJaIguais\+\+;/);
+    // ⚠️ E a rota NÃO pode reimplementar a ordenação por conta própria.
+    expect(MAT, "a rota voltou a ordenar a fila localmente")
+      .not.toMatch(/\.sort\(\(a, b\) => prioridade\(/);
   });
 
   it("⚠️ e isto grava DIAGNÓSTICO, não voto: a regra segue DESLIGADA", () => {

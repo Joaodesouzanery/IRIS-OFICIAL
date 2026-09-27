@@ -39,6 +39,18 @@ export interface PayloadDoMaterializador {
   /** Tarefa 4 — contagem por motivo, sobre a MESMA população das "sem voto". */
   motivos_sem_voto?: Record<string, number> | null;
   motivos_gravados?: number | null;
+  /**
+   * ⚠️ Fase 33 — o que EU prometi e nunca entreguei.
+   *
+   * `divergencias_gravadas` era publicado pela rota e não tinha UM leitor: nem aqui, nem na tela.
+   * E dois documentos meus (`docs/qa-fase31.sql` e `docs/PENDENCIAS.md`) afirmavam que ele aparecia
+   * no banner. Sem consumidor, o bloco ⑧ do QA podia sair vazio por rodadas sem que nada na tela
+   * mudasse — que foi exatamente o que aconteceu.
+   */
+  divergencias_gravadas?: number | null;
+  /** O denominador da gravação: a fila inteira, e o quanto dela o skip dispensou por já estar igual. */
+  diagnosticos_candidatos?: number | null;
+  diagnosticos_ja_iguais?: number | null;
   /** Fase 31 — quantos itens teriam roster DIFERENTE se o preâmbulo do pai valesse. */
   roster_mudaria_com_presentes_do_pai?: number | null;
   /** A mesma medida, por agência — responde "é só a ANM?". */
@@ -123,7 +135,38 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
   // nunca lido, que é exatamente o defeito que a tarefa conserta.
   const frase = frasePorMotivo((b.motivos_sem_voto ?? {}) as Record<string, number>);
   if (frase) resumo.motivos_sem_voto = frase;
+  /**
+   * ⚠️ O NÚMERO segue número, e a FRAÇÃO vai numa chave própria. Motivo medido ao escrever isto:
+   * `agregarEtapas` e `registrarRodada` só entendem número e texto, e **descartam texto na soma**
+   * (é por isso que `motivos_sem_voto` e `roster_mudaria_por_agencia` são strings de propósito).
+   * Transformar `motivos_gravados` em `"7/312"` tiraria ele dos TOTAIS da run — a soma entre rodadas
+   * desapareceria em silêncio. Então o contador continua somável e o denominador viaja ao lado.
+   */
   if (typeof b.motivos_gravados === "number") resumo.motivos_gravados = b.motivos_gravados;
+  /**
+   * ⚠️ A FRAÇÃO, que é o que faltava para o zero ser legível. `motivos_gravados: 0` não distingue
+   * "convergido, nada a fazer" de "a gravação não alcançou a fila" — e era exatamente essa
+   * ambiguidade que deixava o bloco ⑧ do QA vazio sem alarme nenhum. `0/312 · 312 já iguais` é o
+   * primeiro; `0/312` sozinho é o segundo.
+   */
+  if (typeof b.diagnosticos_candidatos === "number" && b.diagnosticos_candidatos > 0) {
+    const iguais = typeof b.diagnosticos_ja_iguais === "number" ? b.diagnosticos_ja_iguais : 0;
+    resumo.gravacao_do_diagnostico =
+      `${b.motivos_gravados ?? 0}/${b.diagnosticos_candidatos}${iguais > 0 ? ` · ${iguais} já iguais` : ""}`;
+  }
+  /**
+   * ⚠️ E o desempatador que eu PROMETI e não entreguei: `divergencias_gravadas` era publicado pela
+   * rota e não tinha um leitor — nem aqui, nem na tela — enquanto `docs/qa-fase31.sql` e
+   * `docs/PENDENCIAS.md` afirmavam que ele aparecia no banner.
+   *
+   * Publica MESMO EM ZERO quando houve divergência medida: um zero aqui, ao lado de um
+   * `roster_mudaria_com_presentes_do_pai` positivo, é o sinal de que a gravação não chegou à frente
+   * da fila. Número, para somar entre rodadas; a fração fica em `gravacao_do_diagnostico`.
+   */
+  if (typeof b.divergencias_gravadas === "number"
+    && ((b.roster_mudaria_com_presentes_do_pai ?? 0) > 0 || b.divergencias_gravadas > 0)) {
+    resumo.divergencias_gravadas = b.divergencias_gravadas;
+  }
   // ⚠️ Só publica quando MEDIU algo. Um zero vindo de rodada que não chamou o materializador
   // apagaria da tela a medição da rodada anterior — `pendentes` já paga esse preço logo acima.
   if (typeof b.roster_mudaria_com_presentes_do_pai === "number" && b.roster_mudaria_com_presentes_do_pai > 0) {

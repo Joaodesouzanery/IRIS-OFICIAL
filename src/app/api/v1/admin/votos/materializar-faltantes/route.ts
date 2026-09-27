@@ -17,7 +17,10 @@ import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
-import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
+import { hasBudget, budgetFromRequest, msLeft } from "@/lib/server/time-budget";
+import {
+  RESERVA_POR_ESCRITA_MS, planejarGravacaoDeDiagnostico, patchJaAplicado,
+} from "@/lib/server/fila-de-diagnostico";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import { conferirRoster } from "@/lib/server/roster-conferivel";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
@@ -56,6 +59,12 @@ const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
 const LOTE_POR_RODADA = 60;
 /** Reserva por item dentro do laço — o mesmo 8s que já estava lá, agora nomeado e reusado. */
 const RESERVA_POR_ITEM_MS = 8_000;
+/**
+ * ⚠️ Fase 33 — a reserva de escrita, a fila priorizada e o skip moram em
+ * `@/lib/server/fila-de-diagnostico`, com a medição do defeito no docblock de lá. A decisão saiu
+ * daqui porque dentro da rota ela só se afirmaria por regex sobre o fonte — e foram expectativas
+ * desse tipo (`etapa172`, `etapa180`) que congelaram o defeito por uma fase inteira.
+ */
 const YEAR_RE = /^(20)\d{2}$/;
 
 function arr(value: unknown): string[] {
@@ -677,27 +686,61 @@ export async function POST(req: NextRequest) {
     patchPorDeliberacao.set(id, { ...(patchPorDeliberacao.get(id) ?? {}), roster_divergente: div });
   }
 
+  let diagnosticosJaIguais = 0;
   if (!dryRun && patchPorDeliberacao.size > 0) {
+    /**
+     * ⚠️ FILA PRIORIZADA — a INANIÇÃO POR PREFIXO, que é o defeito medido.
+     *
+     * A ordem de inserção do `Map` é a ordem em que os motivos são descobertos, e ela põe na frente
+     * exatamente a população que menos importa: `fora_de_escopo`, `sem_data` e
+     * `fora_da_janela_de_mandatos` são atribuídos ANTES do lote da rodada (centenas de linhas), e
+     * `materializavel_nao_processado` é atribuído ao final sobre todo o resto do estoque. As
+     * divergências de roster, que SÓ a esteira sabe calcular, ficavam no fim da fila — e a fila
+     * nunca chegava ao fim. Não é gravação quebrada: é gravação que começa pelo lado errado.
+     */
+    /**
+     * ⚠️ E a LEITURA passa a caber no orçamento também. `lerEmLotes` buscava o `raw_extraction` de
+     * TODA a população candidata, em lotes de 100, para em seguida escrever meia dúzia — o round
+     * trip mais caro da rodada gasto em linhas que a gravação jamais alcançaria. Agora só se lê
+     * quem cabe escrever, e a conta é explícita.
+     */
+    const plano = planejarGravacaoDeDiagnostico(
+      [...patchPorDeliberacao.entries()], msLeft(deadlineAt),
+    );
+    const filaDaRodada = plano.daRodada;
+    if (plano.restantes) restantes = true;
+
     const jaEmMaos = new Map<string, Record<string, unknown>>();
     for (const d of loteBruto as any[]) {
       if (d.raw_extraction) jaEmMaos.set(String(d.id), d.raw_extraction as Record<string, unknown>);
     }
-    const faltando = [...patchPorDeliberacao.keys()].filter((id) => !jaEmMaos.has(id));
-    const rawRes = await lerEmLotes<any>(db, {
-      tabela: "deliberacoes", select: "id, raw_extraction",
-      coluna: "id", valores: faltando, label: "materializar/raw-para-diagnostico",
-    });
+    const faltando = filaDaRodada.map(([id]) => id).filter((id) => !jaEmMaos.has(id));
+    const rawRes = faltando.length > 0
+      ? await lerEmLotes<any>(db, {
+        tabela: "deliberacoes", select: "id, raw_extraction",
+        coluna: "id", valores: faltando, label: "materializar/raw-para-diagnostico",
+      })
+      : { data: [] as any[], error: null };
     // Falha de leitura NÃO vira gravação cega: sem o valor atual, mesclar é impossível e
     // substituir seria perda de dado. Sai sem carimbar, e o número de gravados denuncia.
     if (!rawRes.error) {
       for (const r of rawRes.data as any[]) jaEmMaos.set(String(r.id), (r.raw_extraction ?? {}) as Record<string, unknown>);
     }
-    for (const [id, patch] of patchPorDeliberacao) {
-      // Recheck por item, como o laço principal: sem ele, uma rodada apertada gastaria a fatia
-      // carimbando diagnóstico em vez de materializar voto — o trabalho de maior valor.
-      if (!hasBudget(deadlineAt, RESERVA_POR_ITEM_MS)) { restantes = true; break; }
+    for (const [id, patch] of filaDaRodada) {
+      // Recheck por item, agora com a reserva da ESCRITA e não a do processamento.
+      if (!hasBudget(deadlineAt, RESERVA_POR_ESCRITA_MS)) { restantes = true; break; }
       const base = jaEmMaos.get(id);
       if (!base) continue; // sem o jsonb atual não se grava: mesclar exige ter o que mesclar
+      /**
+       * ⚠️ Skip do que JÁ ESTÁ IGUAL. Sem ele, cada rodada reescrevia os mesmos bytes nas mesmas
+       * linhas: o `UPDATE` custa o mesmo, e o progresso é zero. Com a fila priorizada isso seria
+       * pior, porque a frente da fila é estável entre rodadas — as divergências seriam reescritas
+       * para sempre e os motivos calculados nunca chegariam a ser gravados.
+       */
+      if (patchJaAplicado(base, patch)) {
+        diagnosticosJaIguais++;
+        continue;
+      }
       const ok = await exigirEscrita(
         db.from("deliberacoes")
           .update({ raw_extraction: { ...base, ...patch }, updated_at: new Date().toISOString() })
@@ -731,6 +774,15 @@ export async function POST(req: NextRequest) {
      */
     motivos_sem_voto: motivosPorCategoria,
     motivos_gravados: motivosGravados,
+    /**
+     * ⚠️ O DENOMINADOR da gravação de diagnóstico. `motivos_gravados` sozinho não distingue
+     * "gravou tudo" de "gravou o que caber na fatia", e era essa ambiguidade que deixava o bloco ⑧
+     * do QA sair vazio sem ninguém notar. `diagnosticos_candidatos` é a fila inteira;
+     * `diagnosticos_ja_iguais` é o que o skip dispensou por já estar no banco com o mesmo valor —
+     * numa esteira que já convergiu, é ESSE número que fica grande, não o de gravados.
+     */
+    diagnosticos_candidatos: patchPorDeliberacao.size,
+    diagnosticos_ja_iguais: diagnosticosJaIguais,
     examinados,
     /** A rodada olhou o bloco `bloco` de `blocos` — a varredura fecha uma volta em `blocos` min. */
     janela_bloco: janela.bloco,
