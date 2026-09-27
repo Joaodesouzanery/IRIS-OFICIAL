@@ -3,6 +3,78 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Etapa 22, 22/jul/2026).
 
+## 🔴 FASE 32 (27/set/2026) — a landing pública, e a auth que nunca esteve desligada
+
+### ⛔ O QUE SÓ VOCÊ PODE FAZER — e o primeiro item é o mais urgente
+
+**1. A verificação de 30 segundos (segurança).** Com a chave **anon** (a pública), contra o seu
+projeto Supabase:
+
+```bash
+curl -s "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/votos?select=id&limit=1" \
+  -H "apikey: $ANON" -H "Authorization: Bearer $ANON"
+curl -s "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/associados?select=id&limit=1" \
+  -H "apikey: $ANON" -H "Authorization: Bearer $ANON"
+```
+
+Os dois têm de devolver `[]`. Se devolverem linhas, é **incidente**: as policies antigas eram
+`USING(true)` **sem `TO service_role`**, o que vale para todas as roles. Aplique
+`20260718120000_auditoria4_rls_reassert_all.sql` e `20260724120000_harden_security_definer_views.sql`
+(idempotentes) e rode de novo. A chave anon é pública por design — está no bundle do navegador.
+
+**2. Ligue `Leaked Password Protection`** no painel do Supabase (ação de painel, não de código).
+
+**3. Confirme que o signup público está DESLIGADO** no Supabase. O middleware depende disso: ele
+libera GET para qualquer sessão válida, e quem cria usuário é você.
+
+**4. Teste o login com um usuário comum** (não-admin). Antes desta fase ele **não entrava**.
+
+**5. Mande as fotos dos eventos** → `public/eventos/`. O nome do arquivo é o slug do título; veja
+`public/eventos/LEIA-ME.md`. Não precisa mexer em código.
+
+### ⚠️ A auth NÃO estava desligada — e o bug era outro
+
+Auditoria completa: nenhuma rota de escrita sem guard (66 conferidas), service role não vaza, demo
+não contorna auth, nenhuma policy de RLS para `anon`, nenhum commit que remova auth.
+
+**O que estava quebrado:** o **viewer não passava do login**. O único caminho da tela para o
+dashboard era um POST bem-sucedido em `/api/v1/auth/bootstrap-owner`, que responde 403 para todo
+e-mail fora da allowlist — por desenho. Regressão do commit `9a25a0f`, que criou o papel viewer e
+no `login/page.tsx` **mudou só o texto do parágrafo**. Agora quem decide é `/auth/me`.
+
+⚠️ **`docs/AUDITORIA_PRODUCAO_REPOSITORIO.md` foi marcado como HISTÓRICO.** Ele é de 17/05/2026,
+anterior à auth, e afirma que ela não existe — é a explicação mais provável para a impressão de que
+tinha sido desligada.
+
+### O que ficou travado por teste (SEC-15, deferido duas vezes)
+
+`etapa187`: **superfície declarada**. As 44 rotas GET legíveis por viewer estão listadas; rota nova
+fora da lista reprova. Sua decisão ("quem eu crio vê tudo") virou registro, não acidente. Mais:
+varredura de escrita com 3 exceções justificadas e conferidas, unitários que **negam**, e os
+primeiros testes do `middleware.ts` — que tinha **zero**.
+
+### Mudanças de segurança
+
+- **`/setup-owner` nasce FECHADA**: 404 sem `IRIS_SETUP_ENABLED=1`. Era rota pública com gate de um
+  segredo só, **sem rate-limit**, e o caminho de reuso **reseta a senha do owner**.
+- **`admin/cobertura-documentos` ganhou `requireAdmin`** — era a única das 15 sob `/api/v1/admin/`
+  sem guard, com comentário afirmando que estava protegida.
+
+### A landing pública, em `/`
+
+Navy + dourado (a identidade do deck, não o laranja do app). Hero com 12 fotos setoriais em
+crossfade **CSS puro**, as 12 logos linkando para os sites oficiais, Radar Regulatório, os 9 eixos,
+Quem somos, os eventos lidos **ao vivo** do seu calendário, e botões de Instagram e LinkedIn.
+
+⚠️ **Sem feed do Instagram, por segurança**: a CSP tem `script-src 'self'`, que bloqueia todo widget
+de terceiro. Embutir exigiria afrouxar a CSP do **dashboard autenticado** para ganhar três fotos numa
+página pública.
+
+⚠️ **O rótulo "Observatório da Regulação" virou "Radar Regulatório"**; a rota
+`/dashboard/painel-regulatorio` **não mudou** (link salvo não pode quebrar).
+
+**Sem migration nesta fase.**
+
 ## 🔴 FASE 31 — BLOCO 4 (25/set/2026) — as medições saem da linha de comando e vão para a tela
 
 Você disse *"não sei o que é isso e nem como fazer"* sobre as três rotas de diagnóstico que eu tinha
