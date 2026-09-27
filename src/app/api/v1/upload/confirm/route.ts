@@ -161,8 +161,37 @@ function sanitizeDelib(d: ConfirmDelib): ConfirmDelib {
       d.extraction_confidence <= 1
         ? d.extraction_confidence
         : 0,
-    documento_antt_tipo: d.documento_antt_tipo ?? null,
-    documento_subtipo: d.documento_subtipo ?? null,
+    /**
+     * ⚠️ O FURO QUE CUSTOU O COLEGIADO DA ANTT — e por que a normalização é o lugar do conserto.
+     *
+     * Medido em produção nas nove reuniões de mar–abr/2026 (271, 272, 273, 274, 276, 99, 1.028,
+     * 1.029, 1.030): cada item da ata tinha UM voto, nominal, e era o do RELATOR. Os outros quatro
+     * diretores não existiam. A cadeia:
+     *
+     *  1. `analyzeUploadPdf` devolve `documento_antt_tipo` e `documento_subtipo` como IRMÃOS de
+     *     `fields`, não dentro dele (`upload-analysis.ts`, o `...(antt.isAntt ? {...} : {})` do
+     *     return de sucesso). `previewToJson` faz `...analysis`, então eles ficam no topo do preview.
+     *  2. `buildConfirmDelibFromDoc` (a esteira) espalha SÓ `preview.fields` e depois copia à mão
+     *     `ata_items`, `import_counts_as_final`, `extraction_raw`, `tipo_documento`… e esqueceu
+     *     esses dois. O upload MANUAL os manda (`dashboard/upload/page.tsx:1320`), a esteira não.
+     *  3. Sem o campo, `isAnttAtaItem` era `false`, então o item ia com `nomes: itemVotingNames` em
+     *     vez de `[]` — e numa ata da ANTT esse array é o relator, não a lista de votantes.
+     *  4. `buildVotoRows` casava UM nome ⇒ 1 voto `is_nominal=true`; e `hasNominalNames === true`
+     *     faz `shouldInferVotesFromMandate` devolver `false`. O colegiado nunca entrava.
+     *
+     * ⚠️ E foi invisível porque `internalAnttDocumentPrefix` TINHA o fallback para o `extraction_raw`:
+     * a chave saía perfeita (`ATA-271-1.4.4`) e nada parecia errado. Um conceito com dois leitores,
+     * um completo e outro não — e o corpus certificado entrou por upload manual, isto é, pelo
+     * caminho que funciona. Caminho certificado ≠ caminho de produção, a mesma lição da Fase 28.
+     *
+     * O fallback fica AQUI, na normalização, porque `d` sanitizado é o que todos os leitores usam
+     * a partir daqui. Um helper chamado em três lugares seria três chances de esquecer o quarto.
+     */
+    documento_antt_tipo: d.documento_antt_tipo
+      ?? (d.extraction_raw?.documento_antt_tipo as ConfirmDelib["documento_antt_tipo"] | undefined)
+      ?? null,
+    documento_subtipo: d.documento_subtipo
+      ?? (typeof d.extraction_raw?.documento_subtipo === "string" ? d.extraction_raw.documento_subtipo : null),
     import_counts_as_final: d.import_counts_as_final === false ? false : true,
     semantic_duplicate_key: d.semantic_duplicate_key ?? null,
     warnings: Array.isArray(d.warnings) ? d.warnings.map(String).slice(0, 20) : [],
@@ -1308,8 +1337,13 @@ function uniqueNamesFromItems(items: Array<{ votos_detectados?: string[] }> | un
   return [...new Set((items ?? []).flatMap((item) => item.votos_detectados ?? []))];
 }
 
+/**
+ * ⚠️ UMA fonte. Este leitor tinha o fallback para `extraction_raw` e o gate de voto (`isAnttAtaItem`)
+ * não tinha — foi essa assimetria que perdeu quatro votos de cinco em toda ata da ANTT vinda da
+ * esteira. O fallback subiu para `sanitizeDelib`, e os dois call sites recebem `d` já sanitizado.
+ */
 function internalAnttDocumentPrefix(d: ConfirmDelib) {
-  const anttType = d.documento_antt_tipo ?? d.extraction_raw?.documento_antt_tipo;
+  const anttType = d.documento_antt_tipo;
   return anttType === "ata" ? "ATA" : anttType ? "PAUTA" : "ATA";
 }
 

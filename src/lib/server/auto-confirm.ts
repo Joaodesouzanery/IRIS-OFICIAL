@@ -165,6 +165,32 @@ export function buildConfirmDelibFromDoc(doc: AutoConfirmDoc): Record<string, un
     ata_items: doc.ata_items ?? preview.ata_items ?? undefined,
     extraction_confidence: doc.extraction_confidence ?? preview.confidence ?? null,
     import_counts_as_final: fields.import_counts_as_final ?? preview.import_counts_as_final ?? true,
+    /**
+     * ⚠️ OS DOIS CAMPOS QUE ESTA FUNÇÃO PERDIA, e o que isso custou.
+     *
+     * `analyzeUploadPdf` devolve `documento_antt_tipo` e `documento_subtipo` como IRMÃOS de `fields`
+     * (o `...(antt.isAntt ? {...} : {})` do return), e `previewToJson` faz `...analysis`, então eles
+     * ficam no TOPO do preview. O `...fields` acima não os alcança, e a lista explícita que vem
+     * depois cobre `ata_items` e `import_counts_as_final` — mas esquecia esses dois.
+     *
+     * Consequência medida em nove reuniões da ANTT (mar–abr/2026): sem `documento_antt_tipo`, o
+     * confirm não reconhecia o item como ata da ANTT, lia o RELATOR como votante nominal, e o voto
+     * nominal bloqueava a inferência do colegiado. Cada item ficava com 1 voto de 5. O upload manual
+     * manda os dois campos (`dashboard/upload/page.tsx:1320`), então o corpus certificado passava —
+     * o caminho certificado e o caminho de produção eram código diferente.
+     *
+     * `?? preview.extraction_raw?.…` porque eles TAMBÉM viajam lá dentro; é de onde o
+     * `internalAnttDocumentPrefix` os lia, e é por isso que a chave `ATA-271-1.4.4` saía correta
+     * enquanto os votos se perdiam.
+     */
+    documento_antt_tipo: fields.documento_antt_tipo
+      ?? preview.documento_antt_tipo
+      ?? preview.extraction_raw?.documento_antt_tipo
+      ?? null,
+    documento_subtipo: fields.documento_subtipo
+      ?? preview.documento_subtipo
+      ?? preview.extraction_raw?.documento_subtipo
+      ?? null,
     extraction_raw: preview.extraction_raw ?? null,
   };
 }
