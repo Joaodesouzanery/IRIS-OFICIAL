@@ -29,6 +29,9 @@ import { dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
 import { extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import { extractDataReuniaoAncorada } from "@/lib/server/nlp-extractor";
 import { ensureReuniao } from "@/lib/server/reunioes";
+import { lerTudo } from "@/lib/server/select-all-paged";
+import { lerEmLotes } from "@/lib/server/ler-em-lotes";
+import { janelaRotativa } from "@/lib/server/varredura-rotativa";
 
 export const dynamic = "force-dynamic";
 // Fase 12 — 60 → 120: esta rota honra `budget_ms`/HOBBY_BUDGET_MS (70s); declarar 60 aqui
@@ -39,6 +42,65 @@ export const maxDuration = 120;
 /** Saldo para tratar UMA deliberação (buscar texto, reparsear, gravar, reconciliar a reunião). */
 const RESERVA_POR_LINHA_MS = 4_000;
 
+/**
+ * ⚠️ MEDIDO E DESLIGADO (Fase 33) — a data PLAUSÍVEL que discorda do documento.
+ *
+ * ═══ O que a produção mostrou, e o que a MEDIÇÃO desfez ═══
+ * O QA da Fase 31 achou datas erradas no banco: a 81ª ROP da ANM (real 28/01/2026) gravada como
+ * 2025-03-26, a 83ª (real 25/03/2026) como 2022-05-02, e a 1177ª da ARTESP como 2025-01-13 quando
+ * os PDFs dizem 13/01/2026.
+ *
+ * ⚠️ Eu ia consertar o extrator, e escrevi que havia DOIS defeitos vivos nele: uma "âncora que
+ * mente" (`realizada em` casando a data de outra reunião citada no corpo) e uma variante de
+ * preâmbulo da 80ª que a regex da ANM não aceitaria. **Rodei o código de hoje contra os PDFs REAIS
+ * do corpus e as duas afirmações caíram:**
+ *   · 79ª → 2025-11-26 · 81ª → 2026-01-28 · 82ª → 2026-02-23 · 83ª → 2026-03-25 · ARTESP 22 →
+ *     2026-01-13. Todas certas, e todas pelo caminho ANCORADO.
+ *   · A "variante da 80ª" eu medi contra um preâmbulo que digitei à mão. **A 80ª não está no
+ *     corpus** (`anm-ata-80-rop.pdf` não existe), então a afirmação não tinha base nenhuma.
+ *
+ * Logo as datas erradas são PASSIVO puro: linhas ingeridas antes do `dddf693` (24/08). E reingerir
+ * não cura, porque `enrichDeliberacaoExistente` só preenche data NULA.
+ *
+ * ═══ Por que uma janela NOVA, e não `dataReuniaoPlausivel` ═══
+ * A Janela A só pega data IMPOSSÍVEL — anterior ao ano de criação da agência. Para a ANM, qualquer
+ * ano entre 2017 e 2027 passa, então `2022-05-02` e `2025-03-26` são invisíveis para ela. O detector
+ * certo não é "é impossível?", é **"o documento concorda?"**: re-derivar pelo caminho ancorado e
+ * comparar com o que está gravado. Se discordam, o gravado está errado — e a re-derivação já existe
+ * nesta rota, é a mesma da Janela A.
+ *
+ * ⚠️ DESLIGADA porque trocar `data_reuniao` em massa muda o roster de voto de cada linha afetada
+ * (`getActiveDiretoresForVote` seleciona por data), e o usuário exigiu ver a medição antes: a
+ * primeira rodada publica quantas divergem, por agência, com amostra de `de → para`.
+ */
+const REDATAR_DATA_DIVERGENTE = false;
+
+/** Quantas linhas plausíveis a janela rotativa examina por rodada. */
+const LOTE_DIVERGENTE = 120;
+
+/**
+ * ⚠️⚠️ AS AGÊNCIAS CUJA RE-DERIVAÇÃO ANCORADA ESTÁ CERTIFICADA — e este recorte NASCEU de um quase
+ * acidente meu, pego pela medição antes de a regra ser ligada.
+ *
+ * O `etapa193` roda a MESMA re-derivação desta rota contra os PDFs reais do corpus e compara com o
+ * gabarito. ANM e ARTESP: acertam todas. **A ANTT não:**
+ *   · `antt-ata-264-rde.pdf` → o ancorado devolve `2025-10-08`; a data certa é `2026-01-19`;
+ *   · `antt-ata-1024.pdf`, `antt-pauta-1036.pdf`, `antt-voto-dab-002.pdf` → devolvem `null`.
+ *
+ * A causa é conhecida: a data da ANTT sai do `antt-manual-parser` (`extractMeeting` para ata, e a
+ * data de ASSINATURA do fecho para o voto individual), que não está na cascata ancorada.
+ *
+ * ⚠️ Sem este recorte, ligar `REDATAR_DATA_DIVERGENTE` reescreveria a data CERTA da 264ª pela ERRADA,
+ * em massa, e mudaria o roster de voto de cada linha da ANTT. A janela mediria "divergência" e o
+ * divergente seria o MEU parser, não o banco. É o modo de falha mais caro possível numa rota de
+ * reparo: consertar para o lado errado com número verde.
+ *
+ * Para incluir a ANTT: a re-derivação precisa consultar o parser dela, e o `etapa193` tem de passar
+ * com a ANTT dentro deste conjunto. Enquanto não passar, a ANTT fica fora — e a exclusão é publicada
+ * em `divergente_fora_de_escopo`, não silenciosa.
+ */
+const AGENCIAS_COM_ANCORA_CERTIFICADA = new Set(["ANM", "ARTESP"]);
+
 export async function POST(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
     // Etapa65 — o ramo demo carrega TODAS as chaves do real; consumidor que lê `undefined` some.
@@ -46,6 +108,14 @@ export async function POST(req: NextRequest) {
       modo: "demo", dry_run: true, candidatas: 0, corrigidas: 0,
       sem_data_recuperavel: 0, reunioes_orfas_removidas: 0, restantes: false, amostra: [],
       nulas_candidatas: 0, nulas_corrigidas: 0, nulas_marcadas_revisao: 0,
+      // Etapa65 continua valendo: chave nova no real tem de existir no demo, senão o consumidor
+      // que a lê recebe `undefined` e a tela mostra buraco em vez de zero.
+      divergentes_medidas: 0, divergentes_corrigidas: 0, divergentes_por_agencia: {},
+      divergentes_regra_ligada: REDATAR_DATA_DIVERGENTE, divergente_examinadas: 0,
+      divergente_bloco: 0, divergente_blocos: 0, divergente_leitura_completa: true,
+      divergente_fora_de_escopo: 0,
+      divergente_agencias_no_escopo: [...AGENCIAS_COM_ANCORA_CERTIFICADA],
+      amostra_divergente: [],
     });
   }
   const guard = await requireAdminOrCron(req, "redatar");
@@ -243,6 +313,109 @@ export async function POST(req: NextRequest) {
   // e são o que faz a tela de Reuniões listar "reunião da ANM em 1996". É tabela de rollup
   // derivada, não dado primário — aqui o DELETE é o certo, e só depois de as deliberações terem
   // sido religadas (acima) para nenhuma ficar apontando para o que vai sumir.
+  // ═══ Fase 33 — a TERCEIRA janela: data PLAUSÍVEL que o DOCUMENTO desmente ═════
+  //
+  // ⚠️ MEDIDA e, por ora, DESLIGADA — ver o docblock de `REDATAR_DATA_DIVERGENTE`. A Janela A só vê
+  // data impossível (anterior à criação da agência); a 81ª da ANM gravada como 2025-03-26 e a 83ª
+  // como 2022-05-02 passam por ela sem tocar em nada. O detector certo é "o documento concorda?".
+  let divergentesMedidas = 0;
+  let divergentesCorrigidas = 0;
+  const divergentesPorAgencia: Record<string, number> = {};
+  const amostraDivergente: Array<{ id: string; agencia: string | null; de: string; para: string }> = [];
+  let divergenteExaminadas = 0;
+  let divergenteForaDeEscopo = 0;
+  let divergenteBloco = 0;
+  let divergenteBlocos = 0;
+  let divergenteLeituraCompleta = true;
+  if (hasBudget(deadlineAt, RESERVA_POR_LINHA_MS * 2)) {
+    /**
+     * ⚠️ `lerTudo`, não `.limit(N)`. A Janela A pode usar `.limit(500)` porque ordena por
+     * `data_reuniao` ASC e data impossível é sempre a MENOR — as candidatas caem nas primeiras
+     * linhas por construção. Aqui o universo é toda deliberação COM data, e `.limit()` do PostgREST
+     * não pagina: seria a mesma subcontagem que a Fase 25 mediu em cinco telas.
+     */
+    const universo = await lerTudo<any>(
+      () => db.from("deliberacoes")
+        .select("id, agencia_id, numero_reuniao, tipo_reuniao, data_reuniao")
+        .not("data_reuniao", "is", null)
+        .order("id", { ascending: true }),
+      "redatar/janela-divergente",
+    );
+    divergenteLeituraCompleta = !universo.error && !universo.truncated;
+    // Fora as que a Janela A já trata — ali a decisão é outra (impossível ⇒ corrige ou anula).
+    const jaTratadas = new Set(candidatas.map((d: any) => String(d.id)));
+    const plausiveis = ((universo.data ?? []) as any[]).filter((d) => !jaTratadas.has(String(d.id)));
+
+    // Janela rotativa: a rodada examina um bloco, e `blocos` diz em quantos minutos fecha a volta.
+    const janela = janelaRotativa(plausiveis.length, LOTE_DIVERGENTE, Math.floor(Date.now() / 60_000));
+    divergenteBloco = janela.bloco;
+    divergenteBlocos = janela.blocos;
+    const lote = plausiveis.slice(janela.inicio, janela.fim);
+
+    /**
+     * ⚠️ O texto vem em LOTES, não uma consulta por linha. Um `maybeSingle` por deliberação é o N+1
+     * que a Fase 29 mediu como causa do "90s sem resposta" — 33 a 58 round-trips comendo a fatia.
+     */
+    const textos = new Map<string, { texto: string; filename: string }>();
+    if (lote.length > 0) {
+      const r = await lerEmLotes<any>(db, {
+        tabela: "documentos_regulatorios",
+        select: "deliberacao_id, texto_extraido, filename",
+        coluna: "deliberacao_id",
+        valores: lote.map((d) => String(d.id)),
+        label: "redatar/textos-da-janela-divergente",
+      });
+      if (r.error) divergenteLeituraCompleta = false;
+      for (const row of (r.data ?? []) as any[]) {
+        if (!row.deliberacao_id) continue;
+        textos.set(String(row.deliberacao_id), {
+          texto: String(row.texto_extraido ?? ""), filename: String(row.filename ?? ""),
+        });
+      }
+    }
+
+    for (const d of lote) {
+      if (!hasBudget(deadlineAt, RESERVA_POR_LINHA_MS)) { restantes = true; break; }
+      const siglaDaLinha = d.agencia_id ? siglaPorId.get(d.agencia_id) ?? null : null;
+      // ⚠️ Fora do recorte certificado a rota NÃO opina — ver `AGENCIAS_COM_ANCORA_CERTIFICADA`.
+      if (!siglaDaLinha || !AGENCIAS_COM_ANCORA_CERTIFICADA.has(siglaDaLinha.toUpperCase())) {
+        divergenteForaDeEscopo++;
+        continue;
+      }
+      divergenteExaminadas++;
+      const fonte = textos.get(String(d.id));
+      if (!fonte?.texto) continue; // sem texto não há o que comparar — e não se inventa divergência
+      const sigla = siglaDaLinha;
+      const anm = extractAnmMeetingMetadata(fonte.texto, fonte.filename);
+      const rederivada = anm.data_reuniao ?? extractDataReuniaoAncorada(fonte.texto) ?? null;
+      // Sem âncora não há veredito. E a re-derivada passa pelo MESMO guard da Janela A.
+      if (!rederivada || !dataReuniaoPlausivel(sigla, rederivada).plausivel) continue;
+      if (rederivada === String(d.data_reuniao)) continue;
+
+      divergentesMedidas++;
+      divergentesPorAgencia[sigla ?? "?"] = (divergentesPorAgencia[sigla ?? "?"] ?? 0) + 1;
+      if (amostraDivergente.length < 20) {
+        amostraDivergente.push({
+          id: String(d.id), agencia: sigla, de: String(d.data_reuniao), para: rederivada,
+        });
+      }
+
+      // ⚠️ O PORTÃO. Enquanto a constante for `false`, isto MEDE e não escreve — trocar a data muda
+      // o roster de voto da linha, e o usuário vê o número antes.
+      if (!REDATAR_DATA_DIVERGENTE || dryRun) continue;
+      const reuniaoId = await ensureReuniao(db, {
+        agenciaId: (d.agencia_id as string | null) ?? "",
+        numeroReuniao: (d.numero_reuniao as string | null) ?? null,
+        dataReuniao: rederivada,
+        tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+      });
+      if (await exigirEscrita(db.from("deliberacoes").update({
+        data_reuniao: rederivada,
+        ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
+      }).eq("id", d.id), `redatar divergente ${d.id}`)) divergentesCorrigidas++;
+    }
+  }
+
   let reunioesOrfas = 0;
   if (!dryRun && hasBudget(deadlineAt, 3_000)) {
     const { data: rs } = await db.from("reunioes").select("id, agencia_id, data_reuniao").limit(2000);
@@ -270,6 +443,25 @@ export async function POST(req: NextRequest) {
     nulas_candidatas: nulasCandidatas,
     nulas_corrigidas: nulasCorrigidas,
     nulas_marcadas_revisao: nulasMarcadas,
+    /**
+     * ⚠️ A Janela C — MEDIDA, e escrevendo nada enquanto `REDATAR_DATA_DIVERGENTE` for `false`.
+     * `divergentes_regra_ligada` viaja junto para o número não depender de o leitor saber o valor da
+     * constante: `divergentes_medidas: 44` com `regra_ligada: false` é medição, não conserto.
+     */
+    divergentes_medidas: divergentesMedidas,
+    divergentes_corrigidas: divergentesCorrigidas,
+    divergentes_por_agencia: divergentesPorAgencia,
+    divergentes_regra_ligada: REDATAR_DATA_DIVERGENTE,
+    divergente_examinadas: divergenteExaminadas,
+    // ⚠️ Quantas a rodada PULOU porque a âncora da agência não está certificada (hoje, a ANTT).
+    // Publicado para a exclusão ser um número na tela, e não uma omissão no código.
+    divergente_fora_de_escopo: divergenteForaDeEscopo,
+    divergente_agencias_no_escopo: [...AGENCIAS_COM_ANCORA_CERTIFICADA],
+    divergente_bloco: divergenteBloco,
+    divergente_blocos: divergenteBlocos,
+    // Leitura truncada = os números acima SUBCONTAM. Nunca deixar isso implícito.
+    divergente_leitura_completa: divergenteLeituraCompleta,
+    amostra_divergente: amostraDivergente,
     restantes,
     amostra,
     notice:
