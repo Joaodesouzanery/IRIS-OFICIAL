@@ -27,6 +27,7 @@
  */
 
 import { describe, it, expect } from "vitest";
+import { resolverAgenciaDoDocumento } from "../pipeline";
 import { readFileSync } from "fs";
 import { join } from "path";
 
@@ -39,19 +40,34 @@ const MOJIBAKE = semComentarios(ler("src/app/api/v1/admin/documentos/mojibake/ro
 const QA31 = ler("docs/qa-fase31.sql");
 
 describe("etapa179 · ⚠️ o pipeline para de apagar a agência do job", () => {
-  it("o update do job tem o fallback, igual ao do documento", () => {
-    expect(PIPE).toMatch(/agencia_id: analysis\.agencia_id_detected \?\? job\.agencia_id,\s*\n\s*updated_at/);
+  /**
+   * ⚠️ CORREÇÃO DE TRÊS EXPECTATIVAS MINHAS (Fase 33). Elas exigiam a presença LITERAL de
+   * `agencia_id: analysis.agencia_id_detected ?? job.agencia_id` em cada uma das duas escritas, e
+   * contavam as ocorrências esperando exatamente 2. Isso travava a FORMA em vez da propriedade:
+   * qualquer mudança na precedência — inclusive uma que preserve a propriedade — reprovava, e uma
+   * terceira escrita com regra própria passaria contanto que as duas primeiras ficassem intactas.
+   *
+   * A decisão virou UMA função (`resolverAgenciaDoDocumento`), então a divergência entre os dois
+   * lugares é impossível por construção, e as propriedades passam a ser exercidas.
+   */
+  it("a agência do job NUNCA é apagada quando a análise não detecta nenhuma", () => {
+    expect(resolverAgenciaDoDocumento({ detectadaNoTexto: null, daProcedencia: "anm" })).toBe("anm");
+    expect(resolverAgenciaDoDocumento({ detectadaNoTexto: undefined, daProcedencia: "anm" })).toBe("anm");
   });
 
-  it("⚠️ o update SEM fallback não pode voltar", () => {
-    expect(PIPE, "voltou o update que apaga a agência do job")
-      .not.toMatch(/status: "done", agencia_id: analysis\.agencia_id_detected,/);
+  it("e a detecção vale quando o job não sabe — o inverso também não pode perder dado", () => {
+    expect(resolverAgenciaDoDocumento({ detectadaNoTexto: "antt", daProcedencia: null })).toBe("antt");
   });
 
-  it("as DUAS linhas usam o mesmo fallback — a assimetria era o defeito", () => {
-    // A do documento sempre teve; a do job não. Uma só das duas protegida é o que produziu o NULL.
-    const comFallback = (PIPE.match(/analysis\.agencia_id_detected \?\? job\.agencia_id/g) ?? []).length;
-    expect(comFallback, "as duas linhas deveriam ter o fallback").toBe(2);
+  it("⚠️ só devolve null quando NENHUMA das duas evidências existe", () => {
+    expect(resolverAgenciaDoDocumento({ detectadaNoTexto: null, daProcedencia: null })).toBeNull();
+  });
+
+  it("as DUAS escritas chamam a MESMA função — a assimetria era o defeito", () => {
+    const chamadas = (PIPE.match(/resolverAgenciaDoDocumento\(\{/g) ?? []).length;
+    expect(chamadas, "as duas escritas deveriam usar a função única").toBe(2);
+    expect(PIPE, "voltou uma precedência escrita à mão em vez da função única")
+      .not.toMatch(/agencia_id: analysis\.agencia_id_detected \?\? job\.agencia_id/);
   });
 
   it("e `upload-queue` continua lendo o campo do job — é por isso que apagá-lo propagava", () => {

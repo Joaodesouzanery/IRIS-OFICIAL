@@ -281,6 +281,43 @@ describe("etapa180 · o bloco ⑨ espelha os predicados do motor de voto", () =>
     expect(B9).toMatch(/FROM deliberacoes d JOIN votos v ON v\.deliberacao_id = d\.id/);
     expect(B9).toMatch(/WHERE d\.data_reuniao IS NOT NULL/);
   });
+
+  it("⚠️ mas o universo CLASSIFICA — esta expectativa existia congelando a falta disso", () => {
+    /**
+     * ⚠️ CORREÇÃO DE UM TESTE MEU (Fase 33). A expectativa acima trava o universo e nada mais, e por
+     * isso ela legitimava o falso positivo: sem filtro nenhum de tipo, QUALQUER linha com voto e data
+     * virava "uma reunião" — documento sem `numero_reuniao` e documento de VOTO INDIVIDUAL da ANTT
+     * inclusive, e o segundo tem 1 voto POR DESENHO. O bloco reportava "1 de 5, faltando 4" sobre
+     * coisas que não são reunião.
+     *
+     * ⚠️ E a classificação lê o JSONB porque o filtro que o projeto usa em três lugares —
+     * `tipo_documento NOT IN ('pauta','voto_individual',…)` — NÃO FILTRA NADA: nenhum caminho de
+     * produção escreve `deliberacoes.tipo_documento = 'voto_individual'`.
+     */
+    expect(B9).toMatch(/WHEN d\.numero_reuniao IS NULL THEN 'documento_avulso'/);
+    expect(B9).toMatch(/bool_and\(COALESCE\(d\.raw_extraction->>'documento_subtipo',/);
+    expect(B9).toMatch(/= 'voto_individual'\) THEN 'voto_individual'/);
+    expect(B9).toMatch(/ELSE 'reuniao'/);
+    expect(B9).toMatch(/GROUP BY d\.agencia_id, d\.data_reuniao, d\.numero_reuniao/);
+  });
+
+  it("⚠️ e `faltando`/`esperado` são NULOS fora de `classe = 'reuniao'`", () => {
+    // A conta "N de 5" não quer dizer nada num documento avulso, e era publicada como se quisesse.
+    const guardas = (B9.match(/CASE WHEN r\.classe <> 'reuniao' THEN NULL ELSE/g) ?? []).length;
+    expect(guardas, "esperado_total, esperado e faltando precisam dos três guardas").toBe(3);
+    expect(B9).toMatch(/r\.classe,/);
+  });
+
+  it("⚠️ e o bloco NÃO atribui a isto as nove reuniões da ANTT — a hipótese foi refutada", () => {
+    /**
+     * Foi a minha hipótese, e a consulta do usuário a desfez: as nove (271, 272, 273, 274, 276, 99,
+     * 1.028, 1.029, 1.030) são `classe = 'reuniao'`, com ata materializada e filhos com `resultado`.
+     * O defeito estava no código e está consertado (`etapa192`). Se o comentário do SQL passar a
+     * dizer que o bloco ⑨ explica as nove, esta expectativa cai.
+     */
+    expect(B9).toMatch(/REFUTOU/);
+    expect(B9).toMatch(/falso positivo DIFERENTE/);
+  });
 });
 
 describe("etapa180 · ⚠️ o arquivo de pendências para de mentir sobre o que já foi feito", () => {

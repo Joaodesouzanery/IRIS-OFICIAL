@@ -22,6 +22,7 @@
  */
 
 import { describe, it, expect } from "vitest";
+import { resolverAgenciaDoDocumento } from "../pipeline";
 import { readFileSync } from "fs";
 import { join } from "path";
 
@@ -54,7 +55,13 @@ describe("etapa105 · o orçamento chega até o OCR", () => {
 
 describe("etapa105 · a agência que a esteira já conhecia não é apagada", () => {
   it("o update mantém a agência do JOB quando a análise não detecta nenhuma", () => {
-    expect(PIPELINE).toMatch(/agencia_id: analysis\.agencia_id_detected \?\? [A-Za-z.?]*agencia_id/);
+    /**
+     * ⚠️ Era um `toMatch` sobre a linha literal. A propriedade — "PDF escaneado não perde a agência
+     * que a esteira já sabia" — não depende da forma da expressão, e a decisão virou uma função só
+     * (Fase 33). Aqui ela é EXERCIDA com o caso do escaneado: a análise não detecta nada.
+     */
+    expect(resolverAgenciaDoDocumento({ detectadaNoTexto: null, daProcedencia: "anm" })).toBe("anm");
+    expect(PIPELINE).toMatch(/agencia_id: resolverAgenciaDoDocumento\(\{/);
   });
 });
 

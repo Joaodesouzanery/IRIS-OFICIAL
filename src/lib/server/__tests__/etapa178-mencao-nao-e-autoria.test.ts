@@ -31,6 +31,9 @@
  */
 
 import { describe, it, expect } from "vitest";
+import {
+  PROCEDENCIA_VENCE_A_DETECCAO, resolverAgenciaDoDocumento, agenciaDivergente,
+} from "../pipeline";
 import { readFileSync } from "fs";
 import { join } from "path";
 import { parseAnttManualDocument, isAnttVotoFilename } from "@/lib/server/antt-manual-parser";
@@ -139,12 +142,25 @@ describe("etapa178 · ⚠️ o comentário do pipeline dizia algo que deixou de 
       .not.toMatch(/a análise só detecta agência a partir do TEXTO/);
   });
 
-  it("e a precedência inferência-sobre-fonte fica REGISTRADA, não silenciosa", () => {
-    const i = PIPE.indexOf("agencia_id: analysis.agencia_id_detected ?? job.agencia_id");
-    expect(i).toBeGreaterThan(-1);
-    const antes = PIPE.slice(Math.max(0, i - 1400), i);
-    expect(antes).toMatch(/precedência/);
-    expect(antes).toMatch(/PENDENCIAS\.md/);
+  it("⚠️ a precedência inferência-sobre-fonte é uma CONSTANTE, e está desligada", () => {
+    /**
+     * Era um `indexOf` na linha literal mais um `toMatch(/precedência/)` no comentário acima. Isso
+     * exigia que a decisão fosse um comentário; agora ela é código: `PROCEDENCIA_VENCE_A_DETECCAO`,
+     * exportada, e as duas escritas passam pela mesma função. A propriedade é o VALOR, não a prosa.
+     *
+     * ⚠️ E ela está `false` porque quem é a autoridade não está decidido: num ACT entre ANTT e
+     * ARTESP publicado no portal da ANTT, a procedência responde "publicadora" e o título responde
+     * "emissora". Ligar isto reatribuiria documentos em massa a partir de uma premissa não escolhida.
+     */
+    expect(PROCEDENCIA_VENCE_A_DETECCAO).toBe(false);
+    // Com ela desligada, a detecção vence quando as duas existem — o comportamento de hoje.
+    expect(resolverAgenciaDoDocumento({ detectadaNoTexto: "antt", daProcedencia: "artesp" })).toBe("antt");
+    // ⚠️ Mas a divergência deixa de ser silenciosa: é gravada para o SQL poder contar o passivo.
+    expect(agenciaDivergente({ detectadaNoTexto: "antt", daProcedencia: "artesp" })).toBe(true);
+    expect(agenciaDivergente({ detectadaNoTexto: "antt", daProcedencia: "antt" })).toBe(false);
+    expect(agenciaDivergente({ detectadaNoTexto: "antt", daProcedencia: null })).toBe(false);
+    expect(PIPE).toMatch(/agencia_divergente: \{/);
+    expect(PIPE).toMatch(/vencedora: PROCEDENCIA_VENCE_A_DETECCAO \? "procedencia" : "deteccao"/);
   });
 });
 

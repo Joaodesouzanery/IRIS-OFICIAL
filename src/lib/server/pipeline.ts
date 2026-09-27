@@ -169,7 +169,9 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
       // precedência é mudança de atribuição em massa e não entra aqui — fica registrado em
       // `docs/PENDENCIAS.md`. O que ESTA fase consertou foi o override da ANTT, que fazia uma
       // MENÇÃO no nome do arquivo vencer a contagem de siglas (ver `upload-analysis.ts:186`).
-      agencia_id: analysis.agencia_id_detected ?? job.agencia_id,
+      agencia_id: resolverAgenciaDoDocumento({
+        detectadaNoTexto: analysis.agencia_id_detected, daProcedencia: job.agencia_id,
+      }),
       agencia_sigla_detected: analysis.agencia_sigla_detected,
       tipo_documento: analysis.fields.tipo_documento,
       documento_subtipo: analysis.documento_subtipo ?? null,
@@ -180,7 +182,27 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
       page_count: analysis.page_count,
       chars_per_page: analysis.chars_per_page,
       texto_extraido: String(analysis.extraction_raw?.raw_text ?? ""),
-      campos_detectados: previewToJson(analysis, sourceUrl),
+      campos_detectados: {
+        ...previewToJson(analysis, sourceUrl),
+        /**
+         * ⚠️ A divergência entre o que a FONTE sabia e o que o TEXTO inferiu. Gravada sempre que as
+         * duas existem e discordam, com a mudança desligada — é o que permite contar o passivo por
+         * par de siglas em SQL, sem reatribuir nada. `vencedora` registra qual delas prevaleceu de
+         * fato, para o número não depender de o leitor saber o valor da constante.
+         */
+        ...(agenciaDivergente({
+          detectadaNoTexto: analysis.agencia_id_detected, daProcedencia: job.agencia_id,
+        })
+          ? {
+            agencia_divergente: {
+              detectada_no_texto: analysis.agencia_id_detected,
+              sigla_detectada: analysis.agencia_sigla_detected ?? null,
+              da_procedencia: job.agencia_id,
+              vencedora: PROCEDENCIA_VENCE_A_DETECCAO ? "procedencia" : "deteccao",
+            },
+          }
+          : {}),
+      },
       ata_items: analysis.ata_items ?? null,
       warnings: analysis.warnings ?? [],
       error_message: null,
@@ -203,7 +225,11 @@ export async function processPdf(jobId: string, deadlineAt?: number): Promise<vo
       .from("upload_jobs")
       .update({
         status: "done",
-        agencia_id: analysis.agencia_id_detected ?? job.agencia_id,
+        // ⚠️ A MESMA função da linha do documento — não uma cópia da mesma regra. Duas precedências
+        // divergentes para o mesmo campo foi o defeito que a `etapa179` consertou.
+        agencia_id: resolverAgenciaDoDocumento({
+          detectadaNoTexto: analysis.agencia_id_detected, daProcedencia: job.agencia_id,
+        }),
         updated_at: new Date().toISOString(),
       })
       .eq("id", jobId), `job ${jobId} → done`);
@@ -642,6 +668,63 @@ export async function processPendingDocuments(
 }
 
 /** Quanto do texto lido viaja junto com a deliberação, para conferência a olho. */
+/**
+ * ⚠️ MEDIDO E DESLIGADO (Fase 33) — a PROCEDÊNCIA vence a DETECÇÃO?
+ *
+ * Hoje `agencia_id: analysis.agencia_id_detected ?? job.agencia_id` dá precedência à inferência
+ * sobre o valor que a FONTE já sabia. E a fonte é evidência forte: `monitoramento_itens.site_id` é
+ * NOT NULL e o sítio é literalmente de onde o documento veio.
+ *
+ * Medido em produção: cinco Deliberações da ARTESP estão arquivadas como documentos da ANTT
+ * (`"DELIBERACAO ARTESP No 593_SEI - …_SUMEF_ACT_ANTT_ARTESP"`). O mecanismo NÃO é o que eu supus
+ * primeiro: `detectAgenciaSigla(filename)` devolve ARTESP — o nome está certo. A atribuição virou
+ * pelo TEXTO, porque a decisão é por MAIORIA DE MENÇÕES (`classifier.ts:218-226`), e num documento
+ * interagências as menções à contraparte dominam o corpo.
+ *
+ * ⚠️ E NÃO LIGO ISTO POR CONTA PRÓPRIA, por uma razão que não é cautela vazia: **quem é a autoridade
+ * não está decidido.** Um ACT entre ANTT e ARTESP publicado no portal da ANTT tem a ARTESP como
+ * emissora e a ANTT como publicadora. Provenance-do-sítio responde "publicadora"; o título responde
+ * "emissora". As duas respostas são defensáveis, e escolher por mim reatribuiria documentos em massa
+ * a partir de uma premissa que o usuário não escolheu.
+ *
+ * Então a divergência passa a ser GRAVADA (`campos_detectados.agencia_divergente`) com a mudança
+ * desligada. O usuário vê o número e o par de siglas antes de qualquer reatribuição.
+ */
+export const PROCEDENCIA_VENCE_A_DETECCAO = false;
+
+/**
+ * A agência do documento, das DUAS evidências que existem. UMA implementação, usada pelas duas
+ * escritas (a linha do documento e a do job).
+ *
+ * ⚠️ Ela existe porque o mesmo campo já foi gravado com regras DIFERENTES nos dois lugares: a
+ * `etapa179` consertou um caso em que o fallback existia na linha do documento e não na do job, e o
+ * `update` do job apagava com `null` a agência que a esteira conhecia. Duas cópias da mesma decisão
+ * divergem — é o defeito que este projeto já pagou várias vezes, e três testes o vigiavam por TEXTO,
+ * exigindo a linha literal em cada lugar. Com uma função, a divergência fica impossível por
+ * construção e a propriedade passa a ser medida em vez de casada por regex.
+ *
+ * ⚠️ NUNCA devolve `null` quando uma das duas evidências existe: era esse o modo de falha.
+ */
+export function resolverAgenciaDoDocumento(input: {
+  detectadaNoTexto: string | null | undefined;
+  daProcedencia: string | null | undefined;
+}): string | null {
+  const detectada = input.detectadaNoTexto ?? null;
+  const procedencia = input.daProcedencia ?? null;
+  return PROCEDENCIA_VENCE_A_DETECCAO
+    ? (procedencia ?? detectada)
+    : (detectada ?? procedencia);
+}
+
+/** As duas evidências existem e DISCORDAM? É o passivo que o bloco de QA conta. */
+export function agenciaDivergente(input: {
+  detectadaNoTexto: string | null | undefined;
+  daProcedencia: string | null | undefined;
+}): boolean {
+  return Boolean(input.detectadaNoTexto && input.daProcedencia
+    && input.detectadaNoTexto !== input.daProcedencia);
+}
+
 const TRECHO_MAX_CHARS = 4_000;
 
 /**

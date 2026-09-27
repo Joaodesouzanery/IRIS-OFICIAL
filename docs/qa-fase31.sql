@@ -293,25 +293,32 @@ SELECT jsonb_pretty(jsonb_build_object(
   --    `extra` = recebeu voto SEM ter mandato ativo na data. Se vier nao-vazio, e outra classe de
   --    defeito que ninguem mediu ainda.
   '9_colegiado_por_reuniao', (
-    SELECT COALESCE(jsonb_agg(t ORDER BY t.data_reuniao DESC, t.agencia), '[]'::jsonb) FROM (
+    SELECT COALESCE(jsonb_agg(t ORDER BY t.classe, t.data_reuniao DESC, t.agencia), '[]'::jsonb) FROM (
       SELECT COALESCE(a.sigla,'?') AS agencia, r.numero_reuniao, r.data_reuniao,
+             -- ⚠️ `reuniao` | `voto_individual` | `documento_avulso`. So a primeira tem colegiado
+             --    esperado: nas outras duas a conta "N de 5" nao quer dizer nada, e dizia.
+             r.classe,
+             CASE WHEN r.classe <> 'reuniao' THEN NULL ELSE
              (SELECT COUNT(*) FROM mandatos m JOIN diretores dir ON dir.id = m.diretor_id
                WHERE dir.agencia_id = r.agencia_id AND dir.review_status = 'aprovado'
                  AND m.fonte_dado <> 'automatico'
                  AND m.data_inicio <= r.data_reuniao
-                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)) AS esperado_total,
+                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)) END AS esperado_total,
+             CASE WHEN r.classe <> 'reuniao' THEN NULL ELSE
              (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
                 FROM mandatos m JOIN diretores dir ON dir.id = m.diretor_id
                WHERE dir.agencia_id = r.agencia_id AND dir.review_status = 'aprovado'
                  AND m.fonte_dado <> 'automatico'
                  AND m.data_inicio <= r.data_reuniao
-                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)) AS esperado,
+                 AND (m.data_fim IS NULL OR m.data_fim >= r.data_reuniao)) END AS esperado,
              (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
                 FROM votos v JOIN deliberacoes d2 ON d2.id = v.deliberacao_id
                              JOIN diretores dir ON dir.id = v.diretor_id
                WHERE d2.agencia_id = r.agencia_id AND d2.data_reuniao = r.data_reuniao
                  AND COALESCE(d2.numero_reuniao,'') = COALESCE(r.numero_reuniao,'')) AS com_voto,
-             -- Quem tinha mandato e NAO votou.
+             -- Quem tinha mandato e NAO votou. ⚠️ NULO fora de `classe = 'reuniao'`: era daqui que
+             -- saiam os "faltando: 4" de documento avulso e de voto individual.
+             CASE WHEN r.classe <> 'reuniao' THEN NULL ELSE
              (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
                 FROM mandatos m JOIN diretores dir ON dir.id = m.diretor_id
                WHERE dir.agencia_id = r.agencia_id AND dir.review_status = 'aprovado'
@@ -321,7 +328,7 @@ SELECT jsonb_pretty(jsonb_build_object(
                  AND NOT EXISTS (SELECT 1 FROM votos v2 JOIN deliberacoes d3 ON d3.id = v2.deliberacao_id
                                   WHERE v2.diretor_id = dir.id AND d3.agencia_id = r.agencia_id
                                     AND d3.data_reuniao = r.data_reuniao
-                                    AND COALESCE(d3.numero_reuniao,'') = COALESCE(r.numero_reuniao,''))) AS faltando,
+                                    AND COALESCE(d3.numero_reuniao,'') = COALESCE(r.numero_reuniao,''))) END AS faltando,
              -- Quem VOTOU sem ter mandato ativo na data.
              (SELECT array_agg(DISTINCT dir.nome ORDER BY dir.nome)
                 FROM votos v JOIN deliberacoes d2 ON d2.id = v.deliberacao_id
@@ -332,9 +339,36 @@ SELECT jsonb_pretty(jsonb_build_object(
                                   WHERE m2.diretor_id = dir.id AND m2.fonte_dado <> 'automatico'
                                     AND m2.data_inicio <= r.data_reuniao
                                     AND (m2.data_fim IS NULL OR m2.data_fim >= r.data_reuniao))) AS extra
-        FROM (SELECT DISTINCT d.agencia_id, d.data_reuniao, d.numero_reuniao
+        -- ⚠️ O UNIVERSO CLASSIFICA, e nao chama tudo de "reuniao" (Fase 33, item 4 do usuario).
+        --
+        --    Antes era `SELECT DISTINCT (agencia_id, data_reuniao, numero_reuniao)` sem filtro
+        --    algum de tipo, e com isso QUALQUER linha com voto e data virava "uma reuniao":
+        --      · documento SEM `numero_reuniao` virava uma reuniao propria, com 4 `faltando`;
+        --      · o documento de VOTO INDIVIDUAL da ANTT tambem, e ele tem 1 voto POR DESENHO (e o
+        --        voto do relator; o colegiado vem da ATA).
+        --
+        --    ⚠️ E o filtro que o projeto usa em tres lugares para isso NAO FILTRA NADA:
+        --    `tipo_documento NOT IN ('pauta','voto_individual',…)`. Conferido no fonte: nenhum
+        --    caminho de producao escreve `deliberacoes.tipo_documento = 'voto_individual'` — o
+        --    rotulo vive no jsonb (`raw_extraction.documento_subtipo` / `documento_antt_tipo`). Por
+        --    isso a classificacao aqui le o JSONB, que e a unica fonte que existe.
+        --
+        --    ⚠️ E ISTO NAO EXPLICA AS NOVE REUNIOES DA ANTT com "1 de 5" (271, 272, 273, 274, 276,
+        --    99, 1.028, 1.029, 1.030). Foi a minha hipotese, e a consulta do usuario a REFUTOU: elas
+        --    sao `classe = 'reuniao'`, com ata materializada e filhos com `resultado`. O defeito era
+        --    outro e esta consertado no codigo (a esteira perdia `documento_antt_tipo`, e o RELATOR
+        --    virava o unico votante). Este bloco conserta um falso positivo DIFERENTE.
+        FROM (SELECT d.agencia_id, d.data_reuniao, d.numero_reuniao,
+                     CASE
+                       WHEN d.numero_reuniao IS NULL THEN 'documento_avulso'
+                       WHEN bool_and(COALESCE(d.raw_extraction->>'documento_subtipo',
+                                              d.raw_extraction->>'documento_antt_tipo')
+                                     = 'voto_individual') THEN 'voto_individual'
+                       ELSE 'reuniao'
+                     END AS classe
                 FROM deliberacoes d JOIN votos v ON v.deliberacao_id = d.id
-               WHERE d.data_reuniao IS NOT NULL) r
+               WHERE d.data_reuniao IS NOT NULL
+               GROUP BY d.agencia_id, d.data_reuniao, d.numero_reuniao) r
         LEFT JOIN agencias a ON a.id = r.agencia_id
     ) t
   )
