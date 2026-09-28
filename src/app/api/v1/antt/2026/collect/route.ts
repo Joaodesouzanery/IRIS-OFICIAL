@@ -19,6 +19,19 @@ const MAX_PAGES_RE = /^\d{1,2}$/;
 const MAX_MEETINGS_RE = /^\d{1,3}$/;
 
 export async function GET(req: NextRequest) {
+  /**
+   * ⚠️ MESMA razão do POST, 15 linhas abaixo, e o conserto tinha ido só para lá: este GET dispara
+   * `discoverAntt2026Meetings`, que é scraping headless de até 3 páginas / 80 reuniões, com
+   * `max_pages` e `max_meetings` vindos do CLIENTE. Sem guard é DoS de compute — a mesma frase que o
+   * POST já carrega desde que o `?dry_run=1` foi fechado.
+   *
+   * ⚠️ E ele passou despercebido porque a `etapa187` media `temGuard` no ARQUIVO inteiro: o guard do
+   * POST fazia o GET contar como guardado. A varredura por handler (Bloco A.5) é o que impede a
+   * próxima ocorrência.
+   */
+  const guard = await requireAdminOrCron(req);
+  if (guard) return guard;
+
   const searchParams = req.nextUrl.searchParams;
   const maxPages = parseBoundedInt(searchParams.get("max_pages"), MAX_PAGES_RE, 3, 1, 3);
   const maxMeetings = parseBoundedInt(searchParams.get("max_meetings"), MAX_MEETINGS_RE, 60, 1, 80);

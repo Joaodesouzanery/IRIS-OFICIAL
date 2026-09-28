@@ -36,9 +36,82 @@ const semComentarios = (s: string) =>
 const METODOS_DE_ESCRITA = ["POST", "PUT", "PATCH", "DELETE"] as const;
 const GUARDS = /(requireAdminOrCron|requireAdmin|requireCron)\s*\(/;
 
-interface Rota { rota: string; caminho: string; metodos: Set<string>; temGuard: boolean }
+interface Rota {
+  rota: string;
+  caminho: string;
+  metodos: Set<string>;
+  /** Guard POR HANDLER — direto ou por delegação a quem tem. */
+  guardDe: (metodo: string) => boolean;
+}
 
-/** Varre `src/app/api` e devolve toda `route.ts` com seus métodos e se o arquivo tem guard. */
+/**
+ * ⚠️ POR HANDLER, não por arquivo — e este foi o furo que deixou a Fase 35 achar um GET aberto.
+ *
+ * A versão anterior media a presença de guard no arquivo INTEIRO. Num `route.ts` com `GET` + `POST`
+ * onde só o POST guardava, o GET contava como guardado. Foram **25 arquivos** nessa condição, e um
+ * deles era `antt/2026/collect`, cujo GET dispara scraping headless de até 80 reuniões com
+ * parâmetros do cliente — exatamente o "DoS de compute anônimo" que o POST do mesmo arquivo diz ter
+ * fechado. A promessa deste teste ("a superfície não pode crescer sem ninguém ver") não valia para
+ * nenhum GET que compartilhasse arquivo com um handler guardado.
+ */
+/**
+ * ⚠️ POR HANDLER, não por arquivo — e este foi o furo que deixou a Fase 35 achar um GET aberto.
+ *
+ * A versão anterior media a presença de guard no arquivo INTEIRO. Num `route.ts` com `GET` + `POST`
+ * onde só o POST guardava, o GET contava como guardado. Eram **25 arquivos** nessa condição, e um
+ * deles era `antt/2026/collect`, cujo GET dispara scraping headless de até 80 reuniões com
+ * parâmetros do cliente — exatamente o "DoS de compute anônimo" que o POST do mesmo arquivo diz ter
+ * fechado. A promessa deste teste ("a superfície não pode crescer sem ninguém ver") não valia para
+ * nenhum GET que compartilhasse arquivo com um handler guardado.
+ *
+ * ═══ Por que ALCANÇABILIDADE e não "tem guard no corpo" ═══
+ * Oito handlers DELEGAM em vez de guardar: `PUT → PATCH`, `POST → GET`, `GET → run(req)`. Exigir o
+ * guard no corpo reprovaria os oito; uma lista de "delegações confiáveis" escrita à mão diria
+ * "confie". Isto faz o meio: monta o corpo de cada função do arquivo, marca quem chama guard, e
+ * PROPAGA por ponto fixo por quem chama quem. Assim a cadeia de dois saltos de `noticias/coletar`
+ * (`POST → collectSafely → collect`, com o guard só no último) resolve, e a afirmação segue sendo
+ * conferida no código em vez de declarada.
+ *
+ * ⚠️ E a regex de declaração EXIGE a seta nas funções de `const`. Sem isso, `const body = (await
+ * req.json())` de `upload/auto-confirm` era lido como declaração de função e cortava a fatia do POST
+ * no meio — o `return run(req, body)` caía na fatia de "body" e o POST aparecia como desguardado.
+ */
+const DECLARACAO_DE_FUNCAO =
+  /(?:function\s+(\w+)\s*\(|const\s+(\w+)\s*=\s*(?:async\s*)?(?:\([^)]*\)|\w+)\s*=>)/g;
+const DELEGACAO = /(?:return|await|=)\s+(\w+)\s*\(/g;
+
+/** Nomes de funções do arquivo que ALCANÇAM um guard — direto ou por delegação, a qualquer profundidade. */
+function funcoesQueAlcancamGuard(fonte: string): Set<string> {
+  const marcas = [...fonte.matchAll(DECLARACAO_DE_FUNCAO)].map((m) => ({
+    nome: m[1] ?? m[2],
+    inicio: m.index ?? 0,
+  }));
+  const corpos = new Map<string, string>();
+  marcas.forEach((m, i) => {
+    const fim = i + 1 < marcas.length ? marcas[i + 1].inicio : fonte.length;
+    corpos.set(m.nome, fonte.slice(m.inicio, fim));
+  });
+
+  const alcanca = new Set<string>();
+  for (const [nome, corpo] of corpos) if (GUARDS.test(corpo)) alcanca.add(nome);
+
+  // Ponto fixo. Só liga `false → true`, então termina mesmo com recursão mútua.
+  let mudou = true;
+  while (mudou) {
+    mudou = false;
+    for (const [nome, corpo] of corpos) {
+      if (alcanca.has(nome)) continue;
+      const chamados = [...corpo.matchAll(DELEGACAO)].map((m) => m[1]);
+      if (chamados.some((c) => c !== nome && alcanca.has(c))) {
+        alcanca.add(nome);
+        mudou = true;
+      }
+    }
+  }
+  return alcanca;
+}
+
+/** Varre `src/app/api` e devolve toda `route.ts` com seus métodos e o guard de CADA handler. */
 function varrerRotas(): Rota[] {
   const achadas: Rota[] = [];
   const andar = (dir: string) => {
@@ -47,13 +120,16 @@ function varrerRotas(): Rota[] {
       if (statSync(join(RAIZ, rel)).isDirectory()) { andar(rel); continue; }
       if (nome !== "route.ts") continue;
       const fonte = semComentarios(ler(rel));
+      // Os métodos vêm dos EXPORTS — uma função interna chamada `GET` não é rota.
+      const metodos = new Set(
+        [...fonte.matchAll(/export async function (GET|POST|PUT|PATCH|DELETE)\b/g)].map((m) => m[1]),
+      );
+      const alcanca = funcoesQueAlcancamGuard(fonte);
       achadas.push({
         rota: "/" + rel.slice("src/app/".length, -"/route.ts".length),
         caminho: rel,
-        metodos: new Set(
-          [...fonte.matchAll(/export async function (GET|POST|PUT|PATCH|DELETE)/g)].map((m) => m[1]),
-        ),
-        temGuard: GUARDS.test(fonte),
+        metodos,
+        guardDe: (metodo: string) => alcanca.has(metodo),
       });
     }
   };
@@ -131,6 +207,29 @@ const GET_LEGIVEL_POR_VIEWER: string[] = [
   "/api/v1/votacao/distribution",
   "/api/v1/votacao/fidelidade",
   "/api/v1/votacao/matrix",
+  /**
+   * ⚠️ AS 16 QUE A VARREDURA POR HANDLER REVELOU (Fase 35). Elas sempre foram legíveis por
+   * qualquer sessão — o que faltava era estarem DECLARADAS: o `temGuard` por arquivo as escondia,
+   * porque cada uma divide `route.ts` com um POST/PATCH guardado. Conferi que os três `schedule`
+   * só LEEM (nenhum insert/update/upsert/delete no corpo do GET), senão viewer-legível estaria
+   * errado para elas.
+   */
+  "/api/v1/agencias",
+  "/api/v1/agencias/[id]",
+  "/api/v1/agencias/[id]/diretores",
+  "/api/v1/agencias/[id]/lista-triplice",
+  "/api/v1/associados",
+  "/api/v1/associados/documentos",
+  "/api/v1/associados/documentos/schedule",
+  "/api/v1/boletim/schedule",
+  "/api/v1/deliberacoes",
+  "/api/v1/deliberacoes/[id]",
+  "/api/v1/empresas/associados",
+  "/api/v1/fontes",
+  "/api/v1/monitoramento/sites",
+  "/api/v1/noticias/newsletter/schedule",
+  "/api/v1/qualidade-regulatoria/avaliacoes",
+  "/api/v1/qualidade-regulatoria/evidencias",
   "/api/v1/votacao/sectors",];
 
 describe("etapa187 · ⚠️ toda rota de ESCRITA alcança um guard", () => {
@@ -143,7 +242,10 @@ describe("etapa187 · ⚠️ toda rota de ESCRITA alcança um guard", () => {
   });
 
   it("⚠️ nenhuma rota de escrita sem guard fora da lista justificada", () => {
-    const semGuard = comEscrita.filter((r) => !r.temGuard).map((r) => r.rota).sort();
+    const semGuard = comEscrita
+      .filter((r) => METODOS_DE_ESCRITA.some((m) => r.metodos.has(m) && !r.guardDe(m)))
+      .map((r) => r.rota)
+      .sort();
     const justificadas = Object.keys(ESCRITA_SEM_GUARD_JUSTIFICADA).sort();
     expect(semGuard, "rota de ESCRITA sem guard e sem justificativa — adicione o guard, não a exceção")
       .toEqual(justificadas);
@@ -169,7 +271,7 @@ describe("etapa187 · ⚠️ a superfície de LEITURA é declarada, e não pode 
   const comGet = ROTAS.filter((r) => r.metodos.has("GET"));
 
   it("toda rota GET está classificada — nova rota fora da lista reprova", () => {
-    const viewerReal = comGet.filter((r) => !r.temGuard).map((r) => r.rota).sort();
+    const viewerReal = comGet.filter((r) => !r.guardDe("GET")).map((r) => r.rota).sort();
     const declarado = [...GET_LEGIVEL_POR_VIEWER].sort();
     expect(
       viewerReal,
@@ -185,7 +287,7 @@ describe("etapa187 · ⚠️ a superfície de LEITURA é declarada, e não pode 
      * desde ago/2026, quando o middleware passou a liberar GET para qualquer sessão.
      */
     const adminSemGuard = ROTAS
-      .filter((r) => r.rota.startsWith("/api/v1/admin/") && !r.temGuard)
+      .filter((r) => r.rota.startsWith("/api/v1/admin/") && [...r.metodos].some((m) => !r.guardDe(m)))
       .map((r) => r.rota);
     expect(adminSemGuard, "rota sob /api/v1/admin/ sem guard").toEqual([]);
   });
