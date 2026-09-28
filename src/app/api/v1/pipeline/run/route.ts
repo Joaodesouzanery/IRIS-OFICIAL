@@ -929,12 +929,27 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       );
       const porAgencia = (r.body?.colegiado_por_reuniao ?? {}) as Record<string, Record<string, number>>;
       let completas = 0; let total = 0; let defeitoNosso = 0; let cadastroPendente = 0;
+      let completasEstrito = 0; let itens = 0; let paresEsperados = 0; let paresRespondidos = 0;
+      let diretoresParciais = 0;
       for (const v of Object.values(porAgencia)) {
         completas += Number(v.completas ?? 0);
         total += Number(v.total ?? 0);
         defeitoNosso += Number(v.defeito_nosso ?? 0);
         cadastroPendente += Number(v.cadastro_pendente ?? 0);
+        completasEstrito += Number(v.completas_estrito ?? 0);
+        itens += Number(v.itens ?? 0);
+        paresEsperados += Number(v.pares_esperados ?? 0);
+        paresRespondidos += Number(v.pares_respondidos ?? 0);
+        diretoresParciais += Number(v.diretores_parciais ?? 0);
       }
+      /**
+       * ⚠️ A COBERTURA é recalculada aqui a partir dos dois totais, NÃO é a média dos percentuais por
+       * agência. Média de percentuais com denominadores diferentes é o erro clássico: a ANM tem 3
+       * reuniões e a ANTT 34, e a média simples daria a elas o mesmo peso.
+       */
+      const coberturaPct = paresEsperados > 0
+        ? Math.round((paresRespondidos / paresEsperados) * 100)
+        : 0;
       const buracos = (r.body?.buracos_de_numeracao ?? []) as Array<Record<string, unknown[]>>;
       const somar = (campo: string) => buracos.reduce((t, b) => t + ((b[campo] ?? []).length), 0);
       etapas.placar = anotar(r, "placar", {
@@ -942,6 +957,23 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         // "o denominador caiu". É a mesma lição do `gravacao_do_diagnostico`.
         reunioes_completas: completas,
         reunioes_no_ano: total,
+        /**
+         * ⚠️ A RÉGUA ESTRITA, ao lado da antiga e não no lugar dela.
+         *
+         * `reunioes_completas` segue significando o TETO (≥1 voto por diretor na reunião), porque foi
+         * com esse significado que o histórico de `esteira_runs.contadores` foi gravado — redefinir um
+         * número já publicado tornaria as runs anteriores incomparáveis em silêncio, e isso é
+         * exatamente o tipo de mudança que este projeto exige ver antes de aceitar.
+         *
+         * O número que deve GUIAR o trabalho é `cobertura_pct`: pares (deliberação × diretor
+         * esperado) com voto ou motivo. A distância entre os dois é o que o teto escondia.
+         */
+        reunioes_completas_estrito: completasEstrito,
+        itens_no_ano: itens,
+        pares_esperados: paresEsperados,
+        pares_respondidos: paresRespondidos,
+        cobertura_pct: coberturaPct,
+        diretores_com_voto_parcial: diretoresParciais,
         reunioes_com_voto_faltando: defeitoNosso,
         reunioes_esperando_cadastro: cadastroPendente,
         numeros_ausentes: somar("ausentes"),

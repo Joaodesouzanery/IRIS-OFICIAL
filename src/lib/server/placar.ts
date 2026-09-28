@@ -57,13 +57,39 @@ export function classificarReuniao(i: ClassificacaoInput): ClasseDaReuniao {
   return "completa";
 }
 
+/** Uma deliberação final da reunião, com quem RESPONDEU nela. */
+export interface ItemDaReuniao {
+  id: string;
+  /**
+   * Ids de diretor com LINHA em `votos` para este item.
+   *
+   * ⚠️ "Respondido" e não "votou": a linha de `votos` carrega `tipo_voto` (inclusive `Ausente`) e
+   * `motivo_nao_voto`. Ausência JUSTIFICADA é resposta — o que falta é o caso em que não há linha
+   * nenhuma, e aí a esteira não produziu nem o voto nem o motivo.
+   */
+  respondido_por: string[];
+}
+
 export interface ReuniaoParaPlacar {
   agencia: string;
   serie: string | null;
   numero_reuniao: string | null;
   data_reuniao: string;
-  /** Ids de diretor que têm voto em alguma deliberação desta reunião. */
+  /** Ids de diretor que têm voto em alguma deliberação desta reunião. É o numerador do TETO. */
   votantes: string[];
+  /**
+   * As deliberações finais da reunião. ⚠️ OBRIGATÓRIO de propósito: uma reunião medida sem os itens
+   * daria `0 de 0 pares = 100%`, que é o pior desfecho possível — cobertura perfeita por ausência de
+   * dado. Quem não tem os itens não pode ser medido na régua estrita.
+   */
+  itens: ItemDaReuniao[];
+}
+
+/** Cobertura de um diretor esperado dentro de UMA reunião. */
+export interface CoberturaDoDiretor {
+  diretor_id: string;
+  respondidos: number;
+  de: number;
 }
 
 export interface ReuniaoMedida extends ReuniaoParaPlacar {
@@ -73,7 +99,27 @@ export interface ReuniaoMedida extends ReuniaoParaPlacar {
   faltando: string[];
   extra: string[];
   roster_conhecido: boolean;
+  /**
+   * ⚠️ A classe do TETO (régua antiga): «completa» quando cada diretor esperado tem ao menos UM voto
+   * na reunião. Mantida com o nome antigo porque o histórico de `esteira_runs.contadores` foi gravado
+   * com ela, e trocar o significado de um número publicado tornaria as runs anteriores incomparáveis.
+   */
   classe: ClasseDaReuniao;
+  /** Quantas deliberações finais a reunião tem. */
+  itens_total: number;
+  /** Pares (deliberação × diretor esperado) que DEVERIAM ter linha em `votos`. */
+  pares_esperados: number;
+  /** Pares que de fato têm. */
+  pares_respondidos: number;
+  /** Por diretor esperado, em quantos itens ele respondeu. */
+  cobertura: CoberturaDoDiretor[];
+  /**
+   * Diretores esperados que responderam em ALGUNS itens, não em todos. ⚠️ São exatamente os que a
+   * régua do teto não vê: o José Fernando tem 1 voto em 2026 e a 84ª da ANM o contava como votante.
+   */
+  parciais: CoberturaDoDiretor[];
+  /** A classe pela régua ESTRITA: exige resposta em TODOS os itens. */
+  classe_estrita: ClasseDaReuniao;
 }
 
 /**
@@ -94,6 +140,35 @@ export function medirReuniao(
   const noRoster = new Set(roster);
   // ⚠️ `extra` só faz sentido quando o roster é conhecido: sem roster, TODO votante seria "extra".
   const extra = cmp.roster_conhecido ? r.votantes.filter((id) => !noRoster.has(id)) : [];
+  /**
+   * ⚠️ A RÉGUA ESTRITA, e por que a do teto não bastava.
+   *
+   * O teto declara a reunião completa quando cada diretor esperado tem ao menos UM voto nela. O QA de
+   * produção mostrou o furo: o José Fernando tem **1 voto em todo 2026** e a 84ª da ANM (39 itens) o
+   * contava como votante — bastava faltarem outros dois nomes para ela virar "quase completa". O Fábio
+   * tem 106 votos. A régua não distinguia os dois.
+   *
+   * A régua estrita conta PARES (deliberação × diretor esperado): cada item tem de ter voto ou motivo
+   * de cada diretor com mandato na data. É a pergunta original do usuário — quantas vezes o diretor X
+   * votou, e em quais deliberações.
+   */
+  const cobertura: CoberturaDoDiretor[] = roster.map((diretorId) => ({
+    diretor_id: diretorId,
+    respondidos: r.itens.filter((it) => it.respondido_por.includes(diretorId)).length,
+    de: r.itens.length,
+  }));
+  const paresEsperados = roster.length * r.itens.length;
+  const paresRespondidos = cobertura.reduce((soma, c) => soma + c.respondidos, 0);
+  const parciais = cobertura.filter((c) => c.respondidos > 0 && c.respondidos < c.de);
+  /**
+   * ⚠️ Quem não respondeu NADA continua em `faltando` (o teto já o via). Quem respondeu em PARTE
+   * entra aqui — e a régua estrita trata os dois como defeito nosso, porque em ambos os casos a
+   * esteira deixou de produzir linha que a fonte sustenta.
+   */
+  const faltandoEstrito = cmp.roster_conhecido
+    ? [...cmp.faltando, ...parciais.map((c) => c.diretor_id)]
+    : [];
+
   return {
     ...r,
     ordinal: ordinalDeTextoDeReuniao(r.numero_reuniao),
@@ -103,6 +178,16 @@ export function medirReuniao(
     extra,
     roster_conhecido: cmp.roster_conhecido,
     classe: classificarReuniao({ faltando: cmp.faltando, extra, roster_conhecido: cmp.roster_conhecido }),
+    itens_total: r.itens.length,
+    pares_esperados: paresEsperados,
+    pares_respondidos: paresRespondidos,
+    cobertura,
+    parciais,
+    classe_estrita: classificarReuniao({
+      faltando: faltandoEstrito,
+      extra,
+      roster_conhecido: cmp.roster_conhecido,
+    }),
   };
 }
 
@@ -214,21 +299,60 @@ export function buracosDaSerie(
 
 export interface ResumoDoPlacar {
   total: number;
+  /** ⚠️ TETO: reuniões em que cada diretor esperado tem ≥1 voto. Nome antigo, semântica antiga. */
   completas: number;
   defeito_nosso: number;
   cadastro_pendente: number;
   roster_desconhecido: number;
+  /** Reuniões completas pela régua ESTRITA: cada item com voto ou motivo de cada diretor esperado. */
+  completas_estrito: number;
+  /** Deliberações finais somadas — o denominador de verdade do trabalho. */
+  itens: number;
+  /** Pares (deliberação × diretor esperado). */
+  pares_esperados: number;
+  pares_respondidos: number;
+  /**
+   * `pares_respondidos / pares_esperados`, em pontos percentuais inteiros. É a COBERTURA, e a
+   * diferença dela para `completas/total` é o tamanho do que o teto escondia.
+   */
+  cobertura_pct: number;
+  /** Diretores que responderam em PARTE dos itens — invisíveis na régua do teto. */
+  diretores_parciais: number;
 }
 
-/** O resumo por agência. `completas / total` é o número que toda fase tem de mover. */
+/**
+ * O resumo por agência.
+ *
+ * ⚠️ DOIS números de propósito, e nenhum substitui o outro. `completas/total` é o teto e fica com o
+ * nome antigo porque o histórico de `esteira_runs.contadores` foi gravado com ele — redefinir um
+ * número já publicado tornaria as runs anteriores incomparáveis em silêncio. `cobertura_pct` é a
+ * medida honesta, e a distância entre os dois é justamente o que o usuário pediu para ver.
+ */
 export function resumirPorAgencia(medidas: ReuniaoMedida[]): Record<string, ResumoDoPlacar> {
   const out: Record<string, ResumoDoPlacar> = {};
   for (const m of medidas) {
     const r = out[m.agencia] ?? (out[m.agencia] = {
       total: 0, completas: 0, defeito_nosso: 0, cadastro_pendente: 0, roster_desconhecido: 0,
+      completas_estrito: 0, itens: 0, pares_esperados: 0, pares_respondidos: 0,
+      cobertura_pct: 0, diretores_parciais: 0,
     });
     r.total++;
     r[m.classe === "completa" ? "completas" : m.classe]++;
+    if (m.classe_estrita === "completa") r.completas_estrito++;
+    r.itens += m.itens_total;
+    r.pares_esperados += m.pares_esperados;
+    r.pares_respondidos += m.pares_respondidos;
+    r.diretores_parciais += m.parciais.length;
+  }
+  /**
+   * ⚠️ Denominador zero devolve 0, NÃO 100. "Nenhum par esperado" significa que não se sabe o
+   * colegiado ou não há item — e declarar cobertura perfeita por ausência de dado é a mentira que
+   * este projeto persegue desde a Fase 17 ("cobertura dizia completa com site=0").
+   */
+  for (const r of Object.values(out)) {
+    r.cobertura_pct = r.pares_esperados > 0
+      ? Math.round((r.pares_respondidos / r.pares_esperados) * 100)
+      : 0;
   }
   return out;
 }

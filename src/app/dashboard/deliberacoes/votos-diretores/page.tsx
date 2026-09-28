@@ -707,15 +707,40 @@ export default function VotosDiretoresPage() {
          * diretor esperado tem PELO MENOS UM voto na reunião. Um diretor que votou uma vez numa
          * reunião de 39 itens conta como presente. A régua por deliberação é o Bloco C.
          */
+        /**
+         * ⚠️ A COBERTURA vem primeiro, e o teto vem ao lado com o nome de teto.
+         *
+         * A régua antiga ("cada diretor esperado tem ≥1 voto na reunião") é um TETO, e o usuário
+         * apontou o furo: o José Fernando tem 1 voto em todo 2026 e a 84ª da ANM o contava como
+         * votante. O número que guia o trabalho é `pares_respondidos / pares_esperados` — cada
+         * deliberação final com voto ou motivo de cada diretor com mandato na data.
+         *
+         * Os dois convivem porque `reunioes_completas` foi gravado com a semântica antiga em
+         * `esteira_runs.contadores`: trocar o significado apagaria a comparabilidade do histórico.
+         */
+        (totais.pares_esperados ?? 0) > 0
+          ? `cobertura de voto: ${totais.cobertura_pct ?? 0}% — ${totais.pares_respondidos ?? 0} de ` +
+            `${totais.pares_esperados} pares (deliberação × diretor esperado) com voto ou motivo` +
+            ((totais.itens_no_ano ?? 0) > 0 ? `, em ${totais.itens_no_ano} deliberação(ões) do ano` : "")
+          : null,
         (totais.reunioes_no_ano ?? 0) > 0
-          ? `placar: ${totais.reunioes_completas ?? 0} de ${totais.reunioes_no_ano} reuniões do ano com colegiado completo` +
+          ? `reuniões do ano: ${totais.reunioes_completas_estrito ?? 0} de ${totais.reunioes_no_ano} com voto em TODOS os itens` +
+            ` (pelo teto de ≥1 voto por diretor seriam ${totais.reunioes_completas ?? 0})` +
             ((totais.reunioes_com_voto_faltando ?? 0) > 0
               ? ` — ${totais.reunioes_com_voto_faltando} com voto faltando (trabalho nosso)`
               : "") +
             ((totais.reunioes_esperando_cadastro ?? 0) > 0
               ? ` · ${totais.reunioes_esperando_cadastro} esperando cadastro de mandato`
-              : "") +
-            " [teto: conta ≥1 voto por diretor]"
+              : "")
+          : null,
+        /**
+         * ⚠️ O caso que a régua do teto NÃO VÊ, e que é onde mora o trabalho: diretor com voto em
+         * parte dos itens. Sem esta linha, "84% completas" e "um diretor votou uma vez em 39 itens"
+         * conviveriam na mesma tela sem se contradizer visivelmente.
+         */
+        (totais.diretores_com_voto_parcial ?? 0) > 0
+          ? `⚠️ ${totais.diretores_com_voto_parcial} caso(s) de diretor com voto em PARTE dos itens de uma reunião` +
+            " — invisível na régua por reunião; a aba de reuniões nomeia quem e em quantos itens"
           : null,
         (totais.placar_leitura_incompleta ?? 0) > 0
           ? "⚠️ o placar leu o acervo de forma INCOMPLETA — os números dele subcontam"

@@ -38,7 +38,16 @@ const MANDATOS_ANTT: MandatoJanela[] = [
 ];
 
 const reuniao = (o: Partial<ReuniaoParaPlacar> & { data_reuniao: string; votantes: string[] }): ReuniaoParaPlacar => ({
-  agencia: "ANTT", serie: "eletronica", numero_reuniao: null, ...o,
+  agencia: "ANTT", serie: "eletronica", numero_reuniao: null,
+  /**
+   * ⚠️ Fase 35 — UM item por padrão, respondido por todos os `votantes`.
+   *
+   * Com um item só, a régua do TETO (≥1 voto na reunião) e a ESTRITA (voto em todos os itens)
+   * coincidem por construção — então toda expectativa escrita antes desta fase continua medindo
+   * exatamente o que media. Quem quer exercer a diferença entre as duas passa `itens` explicitamente.
+   */
+  itens: [{ id: "item-1", respondido_por: o.votantes }],
+  ...o,
 });
 
 describe("etapa196 · ⚠️ a classe separa o que é DEFEITO MEU do que é falta de DOU", () => {
@@ -203,7 +212,17 @@ describe("etapa196 · o resumo por agência: o número que toda fase tem de move
       medirReuniao(reuniao({ numero_reuniao: "269", data_reuniao: "2026-02-23", votantes: ["alessandro", "alex", "felipe", "guilherme", "lucas"] }), "antt", mandatos),
     ];
     const r = resumirPorAgencia(medidas).ANTT;
-    expect(r).toEqual({ total: 3, completas: 1, defeito_nosso: 1, cadastro_pendente: 1, roster_desconhecido: 0 });
+    /**
+     * ⚠️ Fase 35 — deixou de congelar o objeto INTEIRO e passou a medir as classes.
+     *
+     * O `toEqual` de objeto inteiro reprovava a cada campo novo no resumo, e o nome da expectativa
+     * promete outra coisa: "soma as classes e o total fecha". Congelar a FORMA fazia dela um
+     * obstáculo à régua estrita em vez de uma prova sobre a classificação.
+     */
+    expect({
+      total: r.total, completas: r.completas, defeito_nosso: r.defeito_nosso,
+      cadastro_pendente: r.cadastro_pendente, roster_desconhecido: r.roster_desconhecido,
+    }).toEqual({ total: 3, completas: 1, defeito_nosso: 1, cadastro_pendente: 1, roster_desconhecido: 0 });
     // ⚠️ A soma das classes é o total: nenhuma reunião pode cair em duas nem em nenhuma.
     expect(r.completas + r.defeito_nosso + r.cadastro_pendente + r.roster_desconhecido).toBe(r.total);
   });

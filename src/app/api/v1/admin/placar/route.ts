@@ -179,12 +179,20 @@ export async function GET(req: NextRequest) {
     finaisNoAno++;
 
     const chave = `${d.agencia_id}|${d.data_reuniao}|${d.numero_reuniao}`;
-    const atual = porReuniao.get(chave) ?? {
+    const atual: ReuniaoParaPlacar & { agencia_id: string } = porReuniao.get(chave) ?? {
       agencia: sigla, agencia_id: d.agencia_id, serie,
-      numero_reuniao: d.numero_reuniao, data_reuniao: d.data_reuniao, votantes: [] as string[],
+      numero_reuniao: d.numero_reuniao, data_reuniao: d.data_reuniao,
+      votantes: [] as string[], itens: [],
     };
     const vs = votantesPorDelib.get(d.id);
     if (vs) for (const id of vs) if (!atual.votantes.includes(id)) atual.votantes.push(id);
+    /**
+     * ⚠️ UMA ENTRADA POR DELIBERAÇÃO, e é isso que a régua estrita consome. `votantes` (acima) é a
+     * UNIÃO — o numerador do teto, que não distingue quem votou em 1 de 39 itens de quem votou nos
+     * 39. Os dois convivem de propósito: o teto mantém o histórico comparável, os itens dão a
+     * cobertura de verdade.
+     */
+    atual.itens.push({ id: String(d.id), respondido_por: vs ? [...vs] : [] });
     porReuniao.set(chave, atual);
   }
 
@@ -201,20 +209,54 @@ export async function GET(req: NextRequest) {
     for (const d of (dirs ?? []) as Array<{ id: string; nome: string }>) nomePorDiretor.set(d.id, d.nome);
   }
   const nomeDe = (id: string) => nomePorDiretor.get(id) ?? id;
+  /**
+   * ⚠️ O FILTRO É PELA RÉGUA ESTRITA. Pelo teto, uma reunião em que um diretor votou em 1 de 39
+   * itens é "completa" e sairia desta lista — foi exatamente o caso do José Fernando na 84ª da ANM.
+   * A lista de trabalho tem de mostrar o que falta trabalhar.
+   */
   const incompletas = medidas
-    .filter((m) => m.classe !== "completa")
+    .filter((m) => m.classe_estrita !== "completa")
     .sort((a, b) => b.data_reuniao.localeCompare(a.data_reuniao))
     .slice(0, 80)
     .map((m) => ({
       agencia: m.agencia, serie: m.serie, numero_reuniao: m.numero_reuniao,
-      data_reuniao: m.data_reuniao, classe: m.classe,
+      data_reuniao: m.data_reuniao, classe: m.classe, classe_estrita: m.classe_estrita,
       esperado: m.esperado, com_voto: m.com_voto,
+      itens: m.itens_total,
+      pares_esperados: m.pares_esperados, pares_respondidos: m.pares_respondidos,
       faltando: m.faltando.map(nomeDe), extra: m.extra.map(nomeDe),
+      /**
+       * A frase que o usuário pediu: "José Fernando sem voto em 38 de 39 itens da 84ª". Sem isto a
+       * lista diz apenas "faltam nomes", e não distingue quem faltou em tudo de quem faltou em quase
+       * tudo — que é a diferença entre um diretor ausente e um diretor que a esteira perdeu.
+       */
+      sem_voto_por_diretor: m.cobertura
+        .filter((c) => c.respondidos < c.de)
+        .sort((a, b) => a.respondidos - b.respondidos)
+        .map((c) => ({ diretor: nomeDe(c.diretor_id), sem_voto_em: c.de - c.respondidos, de: c.de })),
     }));
 
   for (const [sigla, r] of Object.entries(resumo)) {
     if (r.defeito_nosso > 0) alertas.push(`${sigla}: ${r.defeito_nosso} reunião(ões) com voto FALTANDO — é defeito nosso.`);
     if (r.cadastro_pendente > 0) alertas.push(`${sigla}: ${r.cadastro_pendente} reunião(ões) com voto de quem não tem mandato declarado — depende do DOU.`);
+    /**
+     * ⚠️ A DISTÂNCIA entre as duas réguas, dita em voz alta. Sem este alerta, quem lê
+     * `completas/total` acha que está em 84% quando a cobertura por item é outra — e o número maior é
+     * justamente o que não deve guiar o trabalho.
+     */
+    if (r.completas > r.completas_estrito) {
+      alertas.push(
+        `${sigla}: ${r.completas} reunião(ões) parecem completas pelo TETO (≥1 voto por diretor), mas só ` +
+          `${r.completas_estrito} têm voto ou motivo em TODOS os itens. Cobertura real: ${r.cobertura_pct}% ` +
+          `(${r.pares_respondidos} de ${r.pares_esperados} pares deliberação×diretor).`,
+      );
+    }
+    if (r.diretores_parciais > 0) {
+      alertas.push(
+        `${sigla}: ${r.diretores_parciais} caso(s) de diretor com voto em PARTE dos itens da reunião — ` +
+          "invisível na régua do teto, e é onde mora o trabalho que falta.",
+      );
+    }
   }
   for (const b of buracos) {
     if (b.fora_do_ano.length > 0) {
