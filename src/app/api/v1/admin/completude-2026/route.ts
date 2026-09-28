@@ -53,12 +53,19 @@ function isFinalDelib(d: Delib): boolean {
   return true;
 }
 
-/** Extrai o inteiro inicial de "08", "160", "15-A" → 8, 160, 15. null se não numérico. */
+/**
+ * O inteiro inicial de "08", "160", "15-A" → 8, 160, 15. `null` se não numérico.
+ *
+ * ⚠️ E de "1.028" → **1028**, não 1. O `^(\d+)` anterior parava no ponto; a alternativa com
+ * separador de milhar vem primeiro, senão ela nunca é tentada. Aqui o campo é `numero_deliberacao`,
+ * onde o milhar é raro — mas "1.028 vira 1" é errado em qualquer contexto, e era a terceira cópia
+ * do mesmo defeito.
+ */
 function numeroInteiro(numero: string | null): number | null {
   if (!numero) return null;
-  const m = numero.trim().match(/^(\d+)/);
+  const m = numero.trim().match(/^(\d{1,3}(?:\.\d{3})+|\d+)/);
   if (!m) return null;
-  const n = Number.parseInt(m[1], 10);
+  const n = Number.parseInt(m[1].replace(/\./g, ""), 10);
   return Number.isFinite(n) && n > 0 ? n : null;
 }
 

@@ -65,6 +65,7 @@ import { resumirBackfill } from "@/lib/server/resumo-do-backfill";
 import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ignorados/route";
 import { POST as redatarPOST } from "../../admin/deliberacoes/redatar/route";
 import { POST as mojibakePOST } from "../../admin/documentos/mojibake/route";
+import { GET as placarGET } from "../../admin/placar/route";
 import { POST as reResultarPOST } from "../../admin/deliberacoes/re-resultar/route";
 import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
@@ -86,6 +87,16 @@ export const runtime = "nodejs";
 const SOBRA_MINIMA_REPARAR_NOMES_MS = 9_000;
 /** Teto do carona: mesmo com sobra grande, ele não come a rodada inteira. */
 const TETO_REPARAR_NOMES_MS = 16_000;
+/**
+ * ⚠️ O PLACAR entra pela SOBRA, e não como passo, pelo motivo já medido em `chamarComSobra`: o
+ * orçamento está saturado (~128s de reservas contra 66s), e um passo novo de cabeça custaria
+ * `reResultar` — pagar medição com materialização de voto é o trade que o `etapa119` proíbe.
+ *
+ * Ele é LEITURA pura de três tabelas paginadas, então precisa de sobra maior que o reparo de nomes.
+ * Numa rodada apertada simplesmente não roda, e o número anterior continua na tela.
+ */
+const SOBRA_MINIMA_PLACAR_MS = 12_000;
+const TETO_PLACAR_MS = 20_000;
 
 export const maxDuration = 120;
 
@@ -881,6 +892,48 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
       if (r.body?.restantes) restantes = true;
     } catch {
       etapas.reparar_nomes = { erro: "reparo de nomes falhou nesta rodada" };
+    }
+  }
+
+  // ═══ Fase 34 — O PLACAR, na sobra que restar ════════════════════════════════
+  //
+  // É o denominador comum que faltava: quantas reuniões do ano têm colegiado completo, e quantos
+  // buracos a numeração tem. Ele não conserta nada — mede. E é por isso que vem por último e sem
+  // fatia própria: numa rodada em que a esteira tem trabalho, materializar voto vale mais que
+  // medir. Quando a fila está drenada (que é justamente o estado das últimas rodadas), sobra.
+  const sobraParaPlacar = saldo();
+  if (sobraParaPlacar >= SOBRA_MINIMA_PLACAR_MS) {
+    try {
+      const r = await chamarComSobra(
+        placarGET,
+        "/api/v1/admin/placar",
+        Math.min(sobraParaPlacar, TETO_PLACAR_MS),
+      );
+      const porAgencia = (r.body?.colegiado_por_reuniao ?? {}) as Record<string, Record<string, number>>;
+      let completas = 0; let total = 0; let defeitoNosso = 0; let cadastroPendente = 0;
+      for (const v of Object.values(porAgencia)) {
+        completas += Number(v.completas ?? 0);
+        total += Number(v.total ?? 0);
+        defeitoNosso += Number(v.defeito_nosso ?? 0);
+        cadastroPendente += Number(v.cadastro_pendente ?? 0);
+      }
+      const buracos = (r.body?.buracos_de_numeracao ?? []) as Array<Record<string, unknown[]>>;
+      const somar = (campo: string) => buracos.reduce((t, b) => t + ((b[campo] ?? []).length), 0);
+      etapas.placar = anotar(r, "placar", {
+        // ⚠️ Os dois viajam juntos SEMPRE: `reunioes_completas` sozinho é ambíguo entre "subiu" e
+        // "o denominador caiu". É a mesma lição do `gravacao_do_diagnostico`.
+        reunioes_completas: completas,
+        reunioes_no_ano: total,
+        reunioes_com_voto_faltando: defeitoNosso,
+        reunioes_esperando_cadastro: cadastroPendente,
+        numeros_ausentes: somar("ausentes"),
+        numeros_com_data_fora_do_ano: somar("fora_do_ano"),
+        numeros_duplicados: somar("duplicados"),
+        // Leitura incompleta = todos os de cima SUBCONTAM. Nunca deixar isso implícito.
+        ...(r.body?.leitura_completa === false ? { placar_leitura_incompleta: 1 } : {}),
+      });
+    } catch {
+      etapas.placar = { erro: "placar falhou nesta rodada" };
     }
   }
 

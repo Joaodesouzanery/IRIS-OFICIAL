@@ -45,7 +45,26 @@ export function deriveSerie(titulo: string | null | undefined): SerieReuniao | n
  * monotonicidade é um assunto da entidade "reunião", e o campo armazenado convive em dois formatos
  * ("1.024" e "1024") — normalizar na GRAVAÇÃO quebraria o dedup por `.eq()`.
  */
-export { numeroReuniaoOrdinal } from "@/lib/server/nlp-extractor";
+import { numeroReuniaoOrdinal } from "@/lib/server/nlp-extractor";
+export { numeroReuniaoOrdinal };
+
+
+/**
+ * O ordinal da reunião a partir de QUALQUER texto: `"1.036ª REUNIÃO DE DIRETORIA"`, `"85ª"`,
+ * `"1028"`, `"1.028"`. Devolve `null` quando não há número.
+ *
+ * ⚠️ EXISTE PORQUE TRÊS LUGARES REIMPLEMENTARAM ISTO ERRADO, e o erro é sempre o mesmo: uma regex
+ * `/(\d{1,4})/` para no PONTO, então `"1.028"` vira **1**. Medido: em `cobertura-ao-vivo` isso fazia
+ * a 1.028ª, a 1.029ª e a 1.030ª colapsarem no número 1 — três reuniões viravam uma, dos DOIS lados
+ * da comparação, e o "faltando: 0" da ANTT casava por coincidência.
+ *
+ * A alternativa COM separador de milhar vem PRIMEIRO, pelo mesmo motivo que em `RE_NUMERO_REUNIAO`:
+ * na ordem inversa, `\d{1,4}` casa o `1` de `1.028` e a de milhar nunca é tentada.
+ */
+export function ordinalDeTextoDeReuniao(valor: string | null | undefined): number | null {
+  const m = String(valor ?? "").match(/\d{1,3}(?:\.\d{3})+|\d{1,4}/);
+  return m ? numeroReuniaoOrdinal(m[0]) : null;
+}
 
 export interface EnsureReuniaoInput {
   agenciaId: string;

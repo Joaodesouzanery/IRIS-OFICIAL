@@ -53,6 +53,22 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
    * a leitura da fração.
    */
   "diagnosticos_candidatos",
+  /**
+   * ⚠️ Fase 34 — O PLACAR é retrato por definição: cada rodada o recalcula inteiro sobre o acervo.
+   *
+   * Somá-lo seria pior que em qualquer outra chave, e de um jeito que inverte a leitura: o alvo de
+   * `reunioes_com_voto_faltando` é ZERO, então, somado, ele CRESCE enquanto o defeito existe e
+   * continua crescendo depois — e `reunioes_completas` somado passaria o total. Um placar que sobe
+   * quando melhora e sobe quando piora não mede nada.
+   */
+  "reunioes_completas",
+  "reunioes_no_ano",
+  "reunioes_com_voto_faltando",
+  "reunioes_esperando_cadastro",
+  "numeros_ausentes",
+  "numeros_com_data_fora_do_ano",
+  "numeros_duplicados",
+  "placar_leitura_incompleta",
 ]);
 
 /**

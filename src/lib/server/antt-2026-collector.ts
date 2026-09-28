@@ -1000,8 +1000,18 @@ function extractTitle(text: string): string | null {
   return match ? cleanText(match[1]) : null;
 }
 
+/**
+ * O número da reunião como ele aparece no título, PRESERVANDO o formato ("1.036", "288").
+ *
+ * ⚠️ A regex era `/(\d{1,4})/`, que para no ponto: o título real do portal é
+ * `"1.036ª REUNIÃO DE DIRETORIA"` e o número saía **"1"**. Daí para baixo tudo herdava o 1 — o
+ * `storagePath`, a chave da reunião e a comparação de cobertura.
+ *
+ * ⚠️ E a alternativa COM separador vem PRIMEIRO: na ordem inversa, `\d{1,4}` casa o `1` de `1.036`
+ * e a de milhar nunca é tentada. Mesma lição de `RE_NUMERO_REUNIAO` em `nlp-extractor.ts`.
+ */
 function extractMeetingNumber(title: string) {
-  return firstMatch(title, /(\d{1,4})/) ?? title;
+  return firstMatch(title, /(\d{1,3}(?:\.\d{3})+|\d{1,4})/) ?? title;
 }
 
 function buildStoragePath(agenciaId: string, meeting: AnttMeeting, doc: AnttDocumentLink, hash: string) {

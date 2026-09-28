@@ -10,6 +10,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { ordinalDeTextoDeReuniao } from "@/lib/server/reunioes";
 import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { discoverAntt2026Meetings } from "@/lib/server/antt-2026-collector";
@@ -47,15 +48,22 @@ const ANM_URLS = [
  */
 const FONTES_DA_ANM_NAO_CONSULTADAS = 4;
 
-/** Extrai os NÚMEROS de reunião distintos (1–4 dígitos) de uma lista de strings. */
+/**
+ * Os NÚMEROS de reunião distintos de uma lista de strings.
+ *
+ * ⚠️ A regex própria daqui era `/(\d{1,4})/`, que PARA NO PONTO: `"1.028"` virava **1**. Como
+ * `toNums` é aplicada dos DOIS lados — ao que o site publica e ao que o banco tem — a 1.028ª, a
+ * 1.029ª e a 1.030ª colapsavam no número 1, três reuniões viravam uma, e o `faltando: 0` da ANTT
+ * casava por coincidência. Esta rota é a que o operador usa como PROVA de que nada se perdeu.
+ *
+ * Agora usa `ordinalDeTextoDeReuniao`, a fonte única — o projeto já tinha o parser certo
+ * (`numeroReuniaoOrdinal`) e três lugares o reimplementaram errado.
+ */
 function toNums(values: Array<string | null | undefined>): number[] {
   const set = new Set<number>();
   for (const v of values) {
-    const m = String(v ?? "").match(/(\d{1,4})/);
-    if (m) {
-      const n = Number.parseInt(m[1], 10);
-      if (n > 0 && n < 10000) set.add(n);
-    }
+    const n = ordinalDeTextoDeReuniao(v);
+    if (n !== null && n > 0 && n < 10000) set.add(n);
   }
   return [...set].sort((a, b) => a - b);
 }
