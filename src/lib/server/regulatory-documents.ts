@@ -184,6 +184,23 @@ export async function juizoSelect(db: { from: (t: string) => any }): Promise<str
   return colunaJuizoPresente ? FINAL_DECISION_SELECT_COM_JUIZO : FINAL_DECISION_RAW_SELECT;
 }
 
+/**
+ * Subtipos que NUNCA contêm decisão — derrubam mãe e filho.
+ * `pauta`: o item é agenda, ninguém decidiu ainda. `voto_individual`: é o voto de UM diretor.
+ */
+const SUBTIPOS_SEM_DECISAO: ReadonlySet<string> = new Set(["pauta", "voto_individual"]);
+
+/**
+ * Subtipos que descrevem a SESSÃO (o continente). A mãe é envelope e não conta; o item dela, com
+ * `resultado`, é decisão. São os três que a ANTT usa para Reunião Deliberativa Eletrônica, Reunião
+ * de Diretoria e Reunião Extraordinária.
+ */
+const SUBTIPOS_DE_SESSAO: ReadonlySet<string> = new Set([
+  "reuniao_deliberativa_eletronica",
+  "reuniao_diretoria_publica",
+  "reuniao_extraordinaria",
+]);
+
 type FinalDecisionRow = {
   tipo_documento?: string | null;
   documento_pai_id?: string | null;
@@ -262,10 +279,26 @@ export function isFinalDecisionRecord(row: FinalDecisionRow): boolean {
   );
 
   if (TIPOS_NAO_FINAIS_SET.has(tipo)) return false;
-  if (["pauta", "voto_individual", "reuniao_deliberativa_eletronica", "reuniao_diretoria_publica", "reuniao_extraordinaria"].includes(subtipo)) {
-    return false;
-  }
+  /**
+   * ⚠️ DOIS conjuntos, e tratá-los como um só apagava decisão real (Fase 34).
+   *
+   * `pauta` e `voto_individual` são documentos que NÃO contêm decisão: o filho de pauta é fantasma
+   * (35 medidos e arquivados em produção, lição da `etapa113`) e o voto individual tem 1 voto por
+   * desenho. Eles derrubam a linha inteira, mãe e filho.
+   *
+   * Já `reuniao_*` descreve o CONTINENTE — a sessão. A mãe é envelope e não é decisão; o ITEM dela,
+   * com `documento_pai_id` e `resultado`, é decisão de verdade. Derrubar o item pelo subtipo do pai
+   * tirava do denominador deliberações cujos votos continuavam gravados: métrica e tabela `votos`
+   * passavam a discordar.
+   *
+   * ⚠️ Isso só passou a morder quando o `a4cd15f` (Fase 33) fez `documento_antt_tipo` voltar a
+   * viajar na esteira. Antes o filho nascia sem subtipo e escapava por acidente.
+   */
+  if (SUBTIPOS_SEM_DECISAO.has(subtipo)) return false;
   if (tipo === "ata") {
+    // A mãe da SESSÃO cai aqui pelo `documento_pai_id` nulo — o subtipo não precisa derrubá-la de
+    // novo, e derrubar levava o filho junto. `SUBTIPOS_DE_SESSAO` existe para nomear esse conjunto
+    // e para o teste poder cobrá-lo; o predicado que separa mãe de filho é a paternidade.
     return Boolean(row.documento_pai_id && row.resultado);
   }
   return ["deliberacao", "resolucao", "portaria"].includes(tipo);

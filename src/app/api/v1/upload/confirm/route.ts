@@ -1343,8 +1343,23 @@ function uniqueNamesFromItems(items: Array<{ votos_detectados?: string[] }> | un
  * esteira. O fallback subiu para `sanitizeDelib`, e os dois call sites recebem `d` já sanitizado.
  */
 function internalAnttDocumentPrefix(d: ConfirmDelib) {
+  /**
+   * ⚠️ `PAUTA` só para quem é PAUTA (Fase 34). A forma anterior — `=== "ata" ? "ATA" : anttType ?
+   * "PAUTA" : "ATA"` — chamava de pauta tudo o que não fosse exatamente `"ata"`, e isso inclui os
+   * três tipos de SESSÃO (`reuniao_deliberativa_eletronica`, `reuniao_diretoria_publica`,
+   * `reuniao_extraordinaria`), que o próprio classificador mapeia para `tipo = "ata"`
+   * (`regulatory-documents.ts:59-64`). Contradição interna: ata para o classificador, pauta para o
+   * número.
+   *
+   * O custo era real e está medido no banco: a 1.028ª tem filhos `PAUTA-1.028-*` COM voto e COM
+   * resultado, enquanto a `ATA-1.028` existe sem filho nenhum. E `re-resultar` exclui `PAUTA-%` por
+   * predicado, então nem o reparo alcançava essas decisões.
+   *
+   * ⚠️ O meu `a4cd15f` piorou isso sem querer: ao restaurar `documento_antt_tipo` na esteira, toda
+   * RDE nova passaria a nascer com prefixo `PAUTA-`. Antes nascia `ATA-` porque o campo era nulo.
+   */
   const anttType = d.documento_antt_tipo;
-  return anttType === "ata" ? "ATA" : anttType ? "PAUTA" : "ATA";
+  return anttType === "pauta" ? "PAUTA" : "ATA";
 }
 
 async function parseConfirmRequest(req: NextRequest): Promise<ParsedConfirmBody> {
