@@ -3,6 +3,75 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 33, 27/set/2026).
 
+## 🔴 FASE 34 (27/set/2026) — o PLACAR, e uma regressão minha desfeita
+
+### ⛔ MIGRATION A APLICAR (SQL Editor, idempotente)
+
+**`supabase/migrations/20260927120000_reinserir_jose_fernando_anm.sql`** — restaura o José Fernando
+de Mendonça Gomes Júnior na ANM.
+
+⚠️ **Isto não é dado novo.** A `20260517195947:323` já o declarava com mandato `verificado` de
+2025-09-01 a 2028-12-04; a `20260821150000` o apagou sob a nota escrita *"volta limpo após «Rodar
+tudo» 2×"*, e essa premissa é falsa — o extrator se recusa, por desenho, a criar diretor a partir de
+voto. O Luiz Paniago ganhou a migration de reinserção dele em setembro; o José Fernando não.
+
+Depois de aplicar: **"Rodar tudo"** e conferir o placar. A ANM deve sair de `defeito_nosso` nas
+reuniões 84, 85 e 86, onde hoje o Caio Mário recebe o voto no lugar dele.
+
+### 📊 O PLACAR — o número que toda fase daqui para frente tem de mover
+
+`GET /api/v1/admin/placar` (e o resumo sai no banner do "Rodar tudo", pela sobra da rodada).
+
+| Número | O que significa |
+|---|---|
+| `reunioes_completas / reunioes_no_ano` | o placar. **Os dois viajam juntos sempre**: o primeiro sozinho é ambíguo entre "subiu" e "o denominador caiu". |
+| `reunioes_com_voto_faltando` | falta voto de quem tinha mandato. **É defeito nosso.** |
+| `reunioes_esperando_cadastro` | alguém votou sem mandato declarado. **Depende do DOU.** |
+| `numeros_ausentes` | número que o banco não tem em data nenhuma. É coleta faltando. |
+| `numeros_com_data_fora_do_ano` | ⚠️ a reunião **está** no banco, com data errada. Recoletar não resolve; o passo «redatar» é quem conserta. |
+| `numeros_duplicados` | o mesmo número em duas datas. **Infla o denominador.** |
+
+**Ponto de partida medido no QA de 27/09:** ARTESP 50/51 · ANTT 14/34 · ANM 0/3.
+
+### ⛔ O QUE SÓ VOCÊ PODE FAZER
+
+**1. A verificação de segurança, sem terminal.** Cole no SQL Editor — ela **vira o papel `anon`** e
+tenta ler de verdade, que é o equivalente exato dos dois `curl`. Nada é escrito:
+
+```sql
+BEGIN;
+SET LOCAL ROLE anon;
+SELECT 'votos'      AS tabela, count(*) AS linhas_que_o_publico_le FROM public.votos
+UNION ALL
+SELECT 'associados' AS tabela, count(*)                            FROM public.associados;
+ROLLBACK;
+```
+
+As duas linhas têm de dar **0**, ou a consulta tem de **falhar por permissão** (os dois são bons).
+Qualquer número maior que zero significa que a chave pública lê a tabela, e aí as migrations
+`20260718120000` e `20260724120000` não foram aplicadas.
+
+⚠️ Eu **não consigo** rodar isso: o conector Supabase que tenho aqui enxerga só `projeton8nobra` e
+`construdata-platform`. O IRIS não está entre eles.
+
+**2. As datas do DOU**, que são o que trava 9 reuniões da ANTT e a 79ª da ANM:
+- **posse do Severino Medeiros** — hoje o mandato dele é `fonte_dado='automatico'` com data
+  **placeholder** `2026-01-01`, e todo predicado de colegiado exclui `automatico`. É por isso que ele
+  aparece como `extra` (votou sem mandato) em todas as reuniões até 18/02/2026.
+- **mandatos do Roger Cabral e do Tasso Mendonça** — estão em `diretores` e sem mandato nenhum.
+- **afastamento do Caio Mário**.
+
+### ✅ Duas perguntas suas, respondidas com evidência
+
+- **Alessandro Baumgartner é diretor da ANTT?** É, e o repositório já dizia: `20260517195947:316` lhe
+  dá mandato `verificado` aberto desde **23/02/2026** (Portaria DG nº 35, de 20/02/2026). O corte que
+  aparece no `esperado` sai dessa linha. **O cadastro problemático é o do Severino, não o dele.**
+- **ACT entre ANTT e ARTESP: emissora ou publicadora?** **A emissora.** O voto pertence a um diretor,
+  e o diretor pertence a uma agência: a Deliberação ARTESP nº 593 foi votada pelo Conselho Diretor da
+  ARTESP. Os 5 documentos são **ARTESP**.
+
+---
+
 ## 🔴 FASE 33 (27/set/2026) — os cinco itens do QA, e três diagnósticos meus que a medição desfez
 
 ### ⛔ O QUE SÓ VOCÊ PODE FAZER

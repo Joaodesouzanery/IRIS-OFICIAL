@@ -148,7 +148,20 @@ const CURATED_IMPORTS: Record<string, CuratedAgenciaImport> = {
         fonte_url: "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/caio-mario-trivellato-seabra-filho",
       },
       {
-        nome: "José Fernando Gomes Júnior",
+        /**
+         * ⚠️ NOME COMPLETO, e a forma abreviada NÃO pode voltar aqui.
+         *
+         * Esta lista é uma SEGUNDA declaração do roster, em TypeScript, e o botão "Importar Dados"
+         * a escreve por cima do cadastro (`agencias/[id]/importar/route.ts` faz
+         * `update({ nome: diretor.nome })` quando `findBestMatch` casa). A forma abreviada casava
+         * 1.00 com o registro completo — então um clique desfazia a migration `20260710120000` e
+         * derrubava o match das atas de 1.00 para 0.68, que é abaixo do limiar de 0.85.
+         *
+         * Medido com o `name-matcher` do projeto, contra os nomes que as atas da ANM usam:
+         *   cadastro COMPLETO → "…de Mendonça Gomes Júnior" 1.000 · "…Gomes Jr" 0.8947
+         *   cadastro ABREVIADO → 0.684 · 0.676  (os dois viram `needsReview` e não geram voto)
+         */
+        nome: "José Fernando de Mendonça Gomes Júnior",
         cargo: "Diretor",
         situacao: "titular",
         data_posse: "2025-09-01",
