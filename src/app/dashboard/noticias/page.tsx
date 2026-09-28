@@ -232,6 +232,11 @@ export default function NoticiasPage() {
   const [minutoSelectedIds, setMinutoSelectedIds] = useState<string[]>([]);
   const [selectedNewsCache, setSelectedNewsCache] = useState<Record<string, RegulatoryNews>>({});
   const [newsletterArticleTexts, setNewsletterArticleTexts] = useState<Record<string, string>>({});
+  /**
+   * Título editado por edição — mesmo molde do texto: mapa `{id: titulo}`, vale para ESTA edição e
+   * não toca a notícia original (que segue sendo a chave de busca, dedupe e auditoria).
+   */
+  const [newsletterArticleTitles, setNewsletterArticleTitles] = useState<Record<string, string>>({});
   // Override de imagem por notícia no PDF (impressão): null = SEM imagem; string = URL trocada.
   const [newsletterImagens, setNewsletterImagens] = useState<Record<string, string | null>>({});
   const [imagemBusy, setImagemBusy] = useState<string | null>(null);
@@ -428,6 +433,7 @@ export default function NoticiasPage() {
       documento_tipo: documentConfig.documentoTipo,
       template_variant: documentConfig.templateVariant,
       newsletter_textos: newsletterTextOverrides,
+      newsletter_titulos: newsletterTitleOverrides,
       minuto_textos: splitMinutoTextos(minutoTextos),
       minuto_items: documentConfig.documentoTipo === "minuto_regulacao" ? minutoItems : [],
       social_posts: documentConfig.documentoTipo === "newsletter_regulatoria" ? socialPosts : [],
@@ -495,6 +501,17 @@ export default function NoticiasPage() {
       return acc;
     }, {});
   }, [documentConfig.documentoTipo, newsletterArticleTexts, newsletterSelected]);
+  const newsletterTitleOverrides = useMemo(() => {
+    if (documentConfig.documentoTipo !== "newsletter_regulatoria") return {};
+    return newsletterSelected.reduce<Record<string, string>>((acc, item) => {
+      const value = newsletterArticleTitles[item.id]?.trim();
+      // ⚠️ Só o que MUDOU viaja. Mandar o título original de volta faria toda notícia parecer editada
+      // no `metadata` da edição, e aí ninguém distingue depois o que foi decisão editorial.
+      if (!value || value === item.titulo) return acc;
+      acc[item.id] = value.slice(0, NEWSLETTER_TITULO_LIMITE);
+      return acc;
+    }, {});
+  }, [documentConfig.documentoTipo, newsletterArticleTitles, newsletterSelected]);
   const documentInput = useMemo(() => ({
     assunto: documentConfig.assunto,
     descricao: documentConfig.descricao,
@@ -502,6 +519,7 @@ export default function NoticiasPage() {
     temas: splitList(documentConfig.temas),
     noticias: selected,
     newsletter_textos: newsletterTextOverrides,
+    newsletter_titulos: newsletterTitleOverrides,
     baseUrl,
     documento_tipo: documentConfig.documentoTipo,
     template_version: templateVersionFor(documentConfig.documentoTipo, documentConfig.templateVariant),
@@ -616,6 +634,24 @@ export default function NoticiasPage() {
 
   function updateNewsletterArticleText(id: string, value: string, limit: number) {
     setNewsletterArticleTexts((prev) => ({ ...prev, [id]: value.slice(0, limit) }));
+    setSavedEditionId(null);
+  }
+
+  /** Teto de 300, o mesmo da rota — divergir daqui só produziria um corte surpresa ao salvar. */
+  const NEWSLETTER_TITULO_LIMITE = 300;
+
+  function updateNewsletterArticleTitle(id: string, value: string) {
+    setNewsletterArticleTitles((prev) => ({ ...prev, [id]: value.slice(0, NEWSLETTER_TITULO_LIMITE) }));
+    setSavedEditionId(null);
+  }
+
+  function resetNewsletterArticleTitle(id: string) {
+    setNewsletterArticleTitles((prev) => {
+      if (!(id in prev)) return prev;
+      const next = { ...prev };
+      delete next[id];
+      return next;
+    });
     setSavedEditionId(null);
   }
 
@@ -1384,6 +1420,26 @@ export default function NoticiasPage() {
                             >
                               Restaurar
                             </button>
+                          </div>
+                          {/* Título desta notícia NESTA edição. A notícia original não é alterada. */}
+                          <div className="flex items-center gap-1.5">
+                            <input
+                              className="input text-xs font-semibold"
+                              value={newsletterArticleTitles[item.id] ?? item.titulo}
+                              maxLength={NEWSLETTER_TITULO_LIMITE}
+                              placeholder="Título da notícia nesta edição"
+                              onChange={(event) => updateNewsletterArticleTitle(item.id, event.target.value)}
+                            />
+                            {item.id in newsletterArticleTitles ? (
+                              <button
+                                type="button"
+                                className="btn-secondary px-2 py-1 text-[10px] whitespace-nowrap"
+                                onClick={() => resetNewsletterArticleTitle(item.id)}
+                                title="Voltar ao título original da notícia"
+                              >
+                                Título original
+                              </button>
+                            ) : null}
                           </div>
                           <textarea
                             className="input min-h-28 text-xs leading-relaxed"

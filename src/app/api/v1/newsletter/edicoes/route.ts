@@ -73,6 +73,7 @@ export async function POST(req: NextRequest) {
     .filter((item: RegulatoryNews | undefined): item is RegulatoryNews => Boolean(item)));
   const minutoItems = normalizeMinutoItems(body.minuto_items, orderedNoticias);
   const newsletterTextos = normalizeNewsletterArticleTexts(body.newsletter_textos, orderedNoticias);
+  const newsletterTitulos = normalizeNewsletterArticleTitles(body.newsletter_titulos, orderedNoticias);
   const socialPosts = documentoTipo === "newsletter_regulatoria" ? normalizeSocialPosts(body.social_posts) : [];
   const eventos = documentoTipo === "newsletter_regulatoria" ? normalizeEventos(body.eventos) : [];
   const newsletterImagens = documentoTipo === "newsletter_regulatoria" ? normalizeNewsletterImagens(body.newsletter_imagens, orderedNoticias) : {};
@@ -89,6 +90,19 @@ export async function POST(req: NextRequest) {
     temas,
     noticias: orderedNoticias,
     newsletter_textos: newsletterTextos,
+    newsletter_titulos: newsletterTitulos,
+    /**
+     * ⚠️ DEFEITO PRÉ-EXISTENTE, consertado aqui porque é a MESMA linha.
+     *
+     * `newsletterImagens` era normalizado e gravado no `metadata`, mas NÃO entrava nesta entrada — e é
+     * ela que alimenta os dois builders. Resultado: o usuário trocava a imagem, salvava, e o
+     * `html_print` guardado saía com a ORIGINAL. O preview mostrava a nova (o cliente monta a entrada
+     * dele com as imagens), então o defeito só aparecia na exportação.
+     *
+     * A `etapa103` não pegou porque ela verifica que o builder é chamado com `"print"` — não COM QUE
+     * ENTRADA. Se eu repetisse o esquecimento com o título, a edição salva exportaria o título velho.
+     */
+    newsletter_imagens: newsletterImagens,
     baseUrl: req.nextUrl.origin,
     documento_tipo: documentoTipo,
     template_version: templateVersion,
@@ -128,6 +142,7 @@ export async function POST(req: NextRequest) {
           ? chunkIds(documentNewsIds, 3)
           : documentNewsIds.map((id: string) => [id]),
         newsletter_textos: newsletterTextos,
+        newsletter_titulos: newsletterTitulos,
         minuto_textos: minutoTextos,
         minuto_items: minutoItems,
         social_posts: socialPosts,
@@ -177,6 +192,29 @@ function normalizeNewsletterArticleTexts(value: unknown, selectedNews: Regulator
         ? NEWSLETTER_ARTICLE_TEXT_LIMITS.side_1
         : NEWSLETTER_ARTICLE_TEXT_LIMITS.side_2);
     if (text) result[id] = text;
+  });
+  return result;
+}
+
+/**
+ * Título editado por edição — clone de `normalizeNewsletterArticleTexts`, e as duas regras dele são as
+ * que importam: só ids SELECIONADOS entram (o mapa vem do cliente), e o limite é por posição.
+ *
+ * ⚠️ Sem migration, de propósito: não existe coluna de título editado em `regulatory_news` — e nem de
+ * texto editado. O que o usuário já edita hoje viaja no corpo do "Salvar edição" e fica espelhado no
+ * `metadata`. Seguir o mesmo molde mantém a notícia ORIGINAL intacta, que é o que preserva busca,
+ * dedupe e auditoria pela chave de sempre.
+ */
+function normalizeNewsletterArticleTitles(value: unknown, selectedNews: RegulatoryNews[]) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  const raw = value as Record<string, unknown>;
+  const allowedIds = selectedNews.map((item) => item.id).filter(Boolean);
+  const result: Record<string, string> = {};
+  allowedIds.forEach((id) => {
+    // 300 é o mesmo teto dos títulos de minuto; título de manchete não passa disso, e um valor
+    // gigante vindo do cliente estouraria o layout de coluna fixa da impressão.
+    const titulo = normalizeOptionalString(raw[id], 300);
+    if (titulo) result[id] = titulo;
   });
   return result;
 }

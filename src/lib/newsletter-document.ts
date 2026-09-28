@@ -39,6 +39,16 @@ export interface NewsletterDocumentInput {
   temas?: string[];
   noticias: RegulatoryNews[];
   newsletter_textos?: Record<string, string>;
+  /**
+   * Título editado POR EDIÇÃO — mesmo molde dos textos: mapa `{id_da_noticia: titulo}`.
+   *
+   * ⚠️ Não existe coluna de título editado em `regulatory_news`, e nem de texto editado: o que o
+   * usuário já edita hoje viaja no corpo do "Salvar edição" e fica espelhado no `metadata` da
+   * edição. Seguir o molde é o que mantém a notícia ORIGINAL intacta — ela continua sendo a
+   * chave de busca, de dedupe e de auditoria. Editar o título para a newsletter não pode mudar
+   * a chave pela qual a notícia é encontrada.
+   */
+  newsletter_titulos?: Record<string, string>;
   generatedAt?: Date;
   baseUrl?: string;
   documento_tipo?: NewsletterDocumentType;
@@ -321,7 +331,7 @@ function renderEmailHero(item: RegulatoryNews, input: NewsletterDocumentInput, t
         ${img ? `<tr><td style="padding:0;"><img src="${escapeHtml(img)}" alt="" width="544" style="display:block;width:100%;max-width:544px;height:auto;border-radius:12px 12px 0 0;"/></td></tr>` : ""}
         <tr><td style="padding:22px;">
           ${tag ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.8px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
-          <h2 style="margin:0 0 10px;font-family:${SERIF_STACK};font-size:26px;font-weight:800;line-height:1.12;color:${t.text};">${escapeHtml(item.titulo)}</h2>
+          <h2 style="margin:0 0 10px;font-family:${SERIF_STACK};font-size:26px;font-weight:800;line-height:1.12;color:${t.text};">${escapeHtml(newsletterTituloOverride(item, input.newsletter_titulos) ?? item.titulo)}</h2>
           ${body ? `<p style="margin:0 0 16px;font-family:${SANS_STACK};font-size:15px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
           ${item.url
             ? emailButton(item.url, "Ler a matéria &rarr;", t)
@@ -345,7 +355,7 @@ function renderEmailNewsRow(item: RegulatoryNews, input: NewsletterDocumentInput
   const spacer = img ? `<td width="14" style="font-size:0;line-height:0;">&nbsp;</td>` : "";
   const textCell = `<td style="padding:0;vertical-align:top;">
           ${tag ? `<p style="margin:0 0 5px;font-family:${SANS_STACK};font-size:9px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
-          <h3 style="margin:0 0 6px;font-family:${SERIF_STACK};font-size:17px;font-weight:800;line-height:1.18;color:${t.text};">${escapeHtml(item.titulo)}</h3>
+          <h3 style="margin:0 0 6px;font-family:${SERIF_STACK};font-size:17px;font-weight:800;line-height:1.18;color:${t.text};">${escapeHtml(newsletterTituloOverride(item, input.newsletter_titulos) ?? item.titulo)}</h3>
           ${body ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:13px;line-height:1.5;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
           ${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" style="font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:${t.gold};text-decoration:none;">Ler a matéria &rarr;</a>` : ""}
         </td>`;
@@ -547,10 +557,10 @@ function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: strin
       <span class="hero-logo-frame"><img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/></span>
     </section>
     <div class="body">
-      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl, input.newsletter_textos)}</article>
+      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl, input.newsletter_textos, input.newsletter_titulos)}</article>
       <aside class="col-side">
-        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0, input.newsletter_textos)}
-        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1, input.newsletter_textos)}
+        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0, input.newsletter_textos, input.newsletter_titulos)}
+        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1, input.newsletter_textos, input.newsletter_titulos)}
       </aside>
     </div>
     ${renderSigaOIrisPrint()}
@@ -650,8 +660,15 @@ function renderMinutoHeader(date: string) {
   </header>`;
 }
 
-function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?: string, articleTexts?: Record<string, string>) {
-  const title = item?.titulo ?? "Selecione a noticia principal para montar a edicao";
+function renderNewsletterMainArticle(
+  item: RegulatoryNews | undefined,
+  baseUrl?: string,
+  articleTexts?: Record<string, string>,
+  articleTitles?: Record<string, string>,
+) {
+  const title = newsletterTituloOverride(item, articleTitles)
+    ?? item?.titulo
+    ?? "Selecione a noticia principal para montar a edicao";
   // Capamos a geração do texto principal para caber na coluna de altura fixa sem estourar
   // (o que antes provocava corte/desbotamento). Os valores são folgados para encostar no
   // rodapé sem ultrapassar; a guarda de fim de frase garante término em frase completa.
@@ -671,9 +688,15 @@ function renderNewsletterMainArticle(item: RegulatoryNews | undefined, baseUrl?:
   `;
 }
 
-function renderNewsletterSideArticle(item: RegulatoryNews | undefined, baseUrl?: string, index = 0, articleTexts?: Record<string, string>) {
+function renderNewsletterSideArticle(
+  item: RegulatoryNews | undefined,
+  baseUrl?: string,
+  index = 0,
+  articleTexts?: Record<string, string>,
+  articleTitles?: Record<string, string>,
+) {
   if (!item) return "";
-  const title = item?.titulo ?? "Selecione uma noticia secundaria";
+  const title = newsletterTituloOverride(item, articleTitles) ?? item?.titulo ?? "Selecione uma noticia secundaria";
   const slot: NewsletterArticleSlot = index >= 1 ? "side_2" : "side_1";
   const excerptLimit = NEWSLETTER_ARTICLE_TEXT_LIMITS[slot];
   const body = newsletterArticleBody(item, {
@@ -1144,6 +1167,21 @@ function newsletterMetadataTextCandidates(metadata: Record<string, unknown> | nu
     .filter((value): value is string => typeof value === "string")
     .map(cleanNewsletterSourceText)
     .filter((value) => value.length >= 80);
+}
+
+/**
+ * O título editado desta edição, ou `null` para o chamador cair no original.
+ *
+ * ⚠️ `null` e não string vazia: os quatro pontos de leitura fazem `?? item.titulo`, e uma string
+ * vazia passaria pelo `??` e apagaria o título na saída.
+ */
+function newsletterTituloOverride(
+  item: RegulatoryNews | undefined,
+  articleTitles: Record<string, string> | undefined,
+): string | null {
+  if (!item?.id || !articleTitles) return null;
+  const valor = articleTitles[item.id];
+  return typeof valor === "string" && valor.trim().length > 0 ? valor.trim() : null;
 }
 
 function newsletterArticleOverride(item: RegulatoryNews | undefined, articleTexts: Record<string, string> | undefined, maxLength: number) {
