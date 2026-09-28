@@ -4,12 +4,23 @@ import { QUEM_SOMOS } from "@/lib/landing-content";
 /**
  * Quem somos — texto sobre um mosaico de imagens em dissolve.
  *
- * ⚠️ As imagens de fundo REUSAM as fotos setoriais da Hero. Enquanto as fotos dos eventos não
- * chegam, esta é a opção honesta: imagem real do universo regulado, em vez de placeholder cinza
- * fingindo que há foto. Quando as fotos dos eventos chegarem em `public/eventos/`, a troca é
- * mudar esta lista — o componente não muda.
+ * ⚠️ AS FOTOS DOS EVENTOS CHEGARAM (Fase 35). O texto anterior deste bloco dizia: "enquanto as fotos
+ * dos eventos não chegam, esta é a opção honesta… quando chegarem, a troca é mudar esta lista — o
+ * componente não muda". Foi exatamente isso: o componente é o mesmo, só a lista mudou.
+ *
+ * ⚠️ E QUATRO, não nove. O mosaico tem quatro colunas e o scrim cobre 86–93% — acrescentar fotos aqui
+ * não mostraria mais nada e custaria download. As nove vivem no `LpEventos`, onde cada uma aparece do
+ * tamanho que merece, com o nome do evento ao lado.
+ *
+ * A escolha das quatro é por CONTRASTE de composição (plateia, painel, palco, bastidor), não por
+ * importância do evento — a seção é sobre quem somos, e o fundo é textura.
  */
-const FUNDO = ["antaq", "aneel", "antt", "anm"] as const;
+const FUNDO = [
+  "1-forum-brasil-de-regulacao",
+  "seminario-iris-do-setor-metroferroviario",
+  "1-forum-iris-de-negocios-em-energia-e-mineracao",
+  "novo-marco-legal-do-setor-portuario",
+] as const;
 
 export function LpQuemSomos() {
   return (
@@ -20,9 +31,9 @@ export function LpQuemSomos() {
     >
       <div className="absolute inset-0" aria-hidden>
         <div className="grid h-full grid-cols-2 lg:grid-cols-4">
-          {FUNDO.map((sigla) => (
-            <div key={sigla} className="relative h-full">
-              <Image src={`/hero/${sigla}.jpg`} alt="" fill sizes="25vw" className="object-cover" />
+          {FUNDO.map((foto) => (
+            <div key={foto} className="relative h-full">
+              <Image src={`/eventos/${foto}.jpg`} alt="" fill sizes="25vw" className="object-cover" />
             </div>
           ))}
         </div>

@@ -237,6 +237,58 @@ export const EVENTOS_REALIZADOS: readonly EventoRealizado[] = [
   { titulo: "Painel IRIS PL 733/25", data: "2025-10-08", foto: "painel-iris-pl-733-25.jpg" },
 ] as const;
 
+export interface ProdutoDoIris {
+  titulo: string;
+  chamada: string;
+  descricao: string;
+  /** O que o produto entrega, item a item. Sai do deck, não de suposição. */
+  itens: readonly string[];
+  /** Foto em `public/eventos/` que ilustra o produto — nenhuma foto nova foi inventada. */
+  foto: string;
+  exclusivoParaAssociados: boolean;
+}
+
+/**
+ * OS PRODUTOS — e a lista tem DOIS, não cinco.
+ *
+ * ⚠️ Na Fase 33 eu prometi cinco (Painéis Temáticos, Missão Internacional, Pós em ESG e PPPs,
+ * Plataforma IRIS, Monitoramento das 12). Só recebi as páginas 12 a 22 do deck, e três deles NÃO
+ * estão nelas. Publicar os cinco seria inventar descrição de produto que a instituição vende — e uma
+ * landing que descreve errado o que o cliente compra é pior que uma landing curta.
+ *
+ * Os três que faltam entram quando as páginas correspondentes chegarem. Até lá a seção não finge.
+ */
+export const PRODUTOS: readonly ProdutoDoIris[] = [
+  {
+    titulo: "Acesso aos Painéis Temáticos",
+    chamada: "O acervo regulatório organizado por tema, pronto para consulta",
+    descricao:
+      "Os painéis reúnem o que as agências decidiram, por tema e por período, na forma em que a decisão "
+      + "foi publicada. É o mesmo acervo que alimenta o Radar Regulatório, aberto para consulta direta.",
+    itens: [
+      "Consulta por tema, agência e período",
+      "Decisões com a fonte oficial ao lado",
+      "Séries históricas para acompanhar tendência",
+    ],
+    foto: "transformacao-digital.jpg",
+    exclusivoParaAssociados: true,
+  },
+  {
+    titulo: "Organização de Missão Internacional",
+    chamada: "Missão ABCN + IRIS à China — 4 cidades, ~4.000 km, 08 a 19 de junho",
+    descricao:
+      "Agenda técnica montada com as instituições visitadas, do primeiro contato ao relatório de "
+      + "volta. A missão à China percorreu quatro cidades e cerca de 4.000 km em doze dias.",
+    itens: [
+      "VALE, FiberHome, ITMC e Star Energy",
+      "Embaixada do Brasil na China",
+      "O maior projeto BESS do mundo",
+    ],
+    foto: "summit-future-minerals.jpg",
+    exclusivoParaAssociados: true,
+  },
+] as const;
+
 /** Canais institucionais — os mesmos já usados pela newsletter, para não haver duas verdades. */
 export const CANAIS = {
   instagram: "https://www.instagram.com/iris.regulacao/",

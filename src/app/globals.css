@@ -297,6 +297,23 @@
   }
 
   /* Cartão com filete dourado no topo — o mesmo padrão das páginas 3 e 4 do deck. */
+  /* Cartão de PRODUTO: papel, filete dourado e sombra baixa. Sem hover-lift — a seção é de leitura,
+     não de navegação, e o cartão não é clicável. */
+  .lp-produto {
+    background: var(--lp-paper-2);
+    border: 1px solid rgba(28, 28, 33, 0.08);
+    box-shadow: 0 1px 2px rgba(28, 28, 33, 0.04), 0 8px 24px rgba(28, 28, 33, 0.05);
+  }
+
+  /* Selo "exclusivo para associados" — o que o deck traz. Sem preço, por decisão do usuário. */
+  .lp-selo {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase;
+    letter-spacing: 0.12em;
+    color: #8a6d1f;
+    background: rgba(194, 162, 74, 0.14);
+    border: 1px solid rgba(194, 162, 74, 0.34);
+  }
+
   .lp-card {
     @apply relative rounded-lg p-6;
     background: var(--lp-navy-2);

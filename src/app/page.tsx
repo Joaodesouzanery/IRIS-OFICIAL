@@ -4,6 +4,7 @@ import { LpHero } from "@/components/landing/LpHero";
 import { LpAgencias } from "@/components/landing/LpAgencias";
 import { LpRadar } from "@/components/landing/LpRadar";
 import { LpOQueFazemos } from "@/components/landing/LpOQueFazemos";
+import { LpProdutos } from "@/components/landing/LpProdutos";
 import { LpQuemSomos } from "@/components/landing/LpQuemSomos";
 import { LpEventos } from "@/components/landing/LpEventos";
 import { LpFooter } from "@/components/landing/LpFooter";
@@ -45,6 +46,8 @@ export default function LandingPage() {
         <LpAgencias />
         <LpRadar />
         <LpOQueFazemos />
+        {/* Produtos vem DEPOIS do que fazemos: primeiro o que é, depois o que se compra. */}
+        <LpProdutos />
         <LpQuemSomos />
         <LpEventos />
       </main>

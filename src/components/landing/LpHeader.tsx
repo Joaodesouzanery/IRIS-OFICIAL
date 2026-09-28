@@ -25,6 +25,9 @@ import { ArrowRight } from "lucide-react";
 const SECOES = [
   { href: "#radar", label: "Radar Regulatório" },
   { href: "#o-que-fazemos", label: "O que fazemos" },
+  // Na MESMA ordem em que as seções aparecem na página — um menu que discorda da ordem do scroll
+  // faz o leitor achar que clicou errado.
+  { href: "#produtos", label: "Produtos" },
   { href: "#quem-somos", label: "Quem somos" },
   { href: "#eventos", label: "Eventos" },
 ] as const;
