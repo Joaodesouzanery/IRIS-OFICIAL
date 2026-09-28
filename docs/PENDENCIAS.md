@@ -1,7 +1,78 @@
 # PENDÊNCIAS E OPERAÇÃO — IRIS-Regulação
 
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
-Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 33, 27/set/2026).
+Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 35, 28/set/2026).
+
+## 🔴 FASE 35 (28/set/2026) — a autenticação, a régua errada, e um bypass que eu ia introduzir
+
+### ⛔ DUAS MIGRATIONS A APLICAR (SQL Editor, idempotentes, forward-only)
+
+**1. `supabase/migrations/20260928120000_reunioes_serie_rederivar.sql`** — re-deriva `reunioes.serie`
+no passivo que o mojibake gravou como `"ordinaria"`.
+
+⚠️ **Sem ela, a detecção de buracos de numeração fica CALADA.** `buracosDaSerie` agrupa por
+`(agência, série)` e só confia na faixa se `max - min <= 400` (`SALTO_MAXIMO_DA_SERIE`). Com a RDE
+gravada como `ordinaria`, a série eletrônica (270..295) e a de Diretoria (1.027..1.038) caem no MESMO
+balde: o salto passa de 700 e nada é reportado. O placar disse `numeros_ausentes: 3` enquanto o usuário
+contou ~12 à mão (1027, 1033, 1037 nas públicas; 270, 275, 284, 285, 288, 290, 292, 293, 294 nas
+eletrônicas). O commit `f8c9a6f` consertou o parser, mas só para escritas NOVAS — o backfill de
+`20260825120000` rodou `WHERE serie IS NULL`, e estas linhas tinham `'ordinaria'`, escrito errado.
+
+**Aceite:** o `maior - menor` de CADA série da ANTT tem de caber em 400. A conferência está no rodapé
+do arquivo, com a consulta das linhas que a guarda de colisão pulou (são duplicatas e pedem decisão).
+
+**2. `supabase/migrations/20260928130000_mandatos_dou_fase35.sql`** — as datas do DOU que o usuário
+levantou, e o afastamento do Caio Mário.
+
+| quem | de → até | por que importa |
+|---|---|---|
+| ANTT · Severino Medeiros | 2025-11-19 → 2026-02-18 | |
+| ANTT · Alessandro Baumgartner | 2026-02-23 → **2026-08-21** | estava com `data_fim` NULA — é isso que acusava a 295ª |
+| ANTT · **Marcelo Cardoso Fonseca** | 2026-08-24 → 2027-02-20 | **não existia no cadastro** (Portaria DG 190/2026) |
+| ANM · Roger Cabral e Tasso Mendonça | 2022-05-24 → 2025-12-04 | |
+| ANM · Caio Mário | `situacao='afastado'`, `afastado_desde=2025-09-17`, **mandato INTACTO** | |
+
+⚠️ **A data do afastamento do Caio Mário é INFERÊNCIA** e está marcada como tal no `metadata`
+(`afastado_desde_e_inferencia: true`, com a evidência escrita: a pauta da 34ª REP o trata como "Diretor
+afastado"). Se o ato aparecer, é uma linha de UPDATE — e a marca sai com ele.
+
+### 📋 RODAR O QA: `docs/qa-fase35.sql`
+
+Somente leitura, uma instrução. Ele responde o que a Fase 34 deixou aberto — e conserta **dois defeitos
+do SQL anterior que o usuário pegou lendo o resultado**: o universo saía de `JOIN votos` (reunião sem
+voto desaparecia — foi por isso que a 1.029 "sumiu") e o filtro era uma whitelist `tipo_documento='ata'`
+(que apagou a **ARTESP inteira**, porque ela publica deliberação individual sem pai). ⚠️ **Não dá para
+derivar "ARTESP 35 de 43" do bloco ① antigo** — aquele número não existe.
+
+### ⏳ O QUE FICA PARA A FASE SEGUINTE, com o motivo
+
+- **A ESCRITA de "completar colegiado parcial"**. O materializador só visita deliberação com ZERO voto;
+  com 3 de 5 ela é pulada para sempre — é por isso que o José Fernando tem **1 voto em todo 2026**
+  depois de voltar ao cadastro. O PLANO e as três recusas estão medidos e publicados
+  (`completar_parcial` na rota do placar, com `escrita_existe: false`); a escrita precisa do payload
+  PESADO de uma população que o laço atual não lê, com orçamento próprio. **Aguarda o aval do usuário
+  sobre o número.**
+- **As datas 282 e 286 da ANTT.** A Janela C não as alcança (a re-derivação erra na ANTT). A fonte é
+  `antt_reunioes_coletadas.data_inicio`, mas ela tem de ser **validada contra as duas atas
+  certificadas (ambas 19/01/2026) antes de aplicar** — e essa validação precisa de dado de produção.
+  Se não bater, não aplico.
+- **1.035 e 289 da ANTT** já têm linha em 2026: o que existe é **linha sobrando** com data antiga, mesmo
+  padrão da 1177ª da ARTESP (23 de 24 certas). É dedupe, não re-derivação de data.
+- **A 1.029 da ANTT** não apareceu entre as oito que fecharam. O bloco ④ do `qa-fase35.sql` diz se ela
+  existe com zero voto.
+- **De qual agência eram os 51 votos apagados** pelo reparo de artefato (bloco ⑤, com a coluna
+  `refeitas` — é ela que distingue "o reparo funcionou" de "removi voto que nada refez").
+- **Os três produtos da LP** (Pós em ESG e PPPs, Plataforma IRIS, Monitoramento das 12) entram quando as
+  páginas do deck que os descrevem chegarem. Recebi só 12 a 22.
+- **Rate limiting** (SEC-10) e **CSP por nonce** seguem deferidos — ver a nota de segurança mais abaixo,
+  cuja prosa foi corrigida nesta fase.
+
+### 🔑 COMANDO NOVO: `?alvo=` no `redatar`
+
+`POST /api/v1/admin/deliberacoes/redatar?alvo=81,82,83` examina os números pedidos PRIMEIRO, em vez de
+esperar a janela rotativa de 120 linhas sorteá-los entre milhares (medido: `tentou_redatar: 4` em 18
+rodadas). ⚠️ Ele escolhe a **ordem**, nunca o critério — âncora plausível, recorte certificado e texto
+presente seguem valendo. Aceita "1.035" e "1035".
 
 ## 🔴 FASE 34 (27/set/2026) — o PLACAR, e uma regressão minha desfeita
 
@@ -1655,7 +1726,16 @@ qualidade — já não vaza a anônimo pelo middleware), SEC-13 (`applyRetroacti
 atuais já chegam validados), SEC-15 (teste/CI de guards), guard in-handler nas rotas de download (hoje
 confiam no middleware), validar `agencia_id` como UUID no `upload/confirm`, e trocar `error.message` cru
 por msg genérica + log server nas rotas `qualidade-regulatoria/*` e `noticias/*`. Cookies de sessão
-não-HttpOnly (inerente ao `@supabase/ssr`): aceito; mitigação é a CSP + rigor anti-XSS.
+não-HttpOnly (inerente ao `@supabase/ssr`, que escreve via `document.cookie`): **o risco é aceito, mas a
+mitigação declarada NÃO se sustenta** — ⚠️ corrigido na Fase 35. O texto antigo dizia "mitigação é a CSP",
+e a CSP tem `'unsafe-inline' 'unsafe-eval'` em `script-src` (`next.config.mjs`), que é exatamente o que
+faz uma CSP **não** mitigar XSS: um XSS refletido lê `document.cookie` e leva a sessão. As duas decisões
+são defensáveis em separado e se anulam juntas. O que de fato protege hoje é o rigor anti-XSS (React
+escapando por padrão, nenhum `dangerouslySetInnerHTML` com entrada não validada) — e a saída registrada
+é a CSP por nonce. Prometer proteção que não existe é pior que registrar o risco, porque desliga a
+vigilância sobre ele. Secundário, e gratuito de fechar: `connect-src https://*.supabase.co` aceita
+QUALQUER projeto Supabase — sob XSS, exfiltração para o projeto do atacante é permitida; fixar o host do
+projeto custa uma linha.
 - **`npm audit` residual** (não-bloqueante): `postcss` aninhado no `next` (build-time) → resolver num bump
   de patch do `next` 15.x; `vitest`/`vite` (crítica/alta) são **dev-only** (não vão ao runtime Vercel) →
   `npm audit fix --force` sobe `vitest` p/ 4.x (semver-major, revisar testes) — fazer em janela dedicada.
