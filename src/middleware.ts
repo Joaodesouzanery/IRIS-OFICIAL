@@ -23,6 +23,39 @@ const PUBLIC_APP_PREFIXES = ["/login", "/setup-owner", "/auth/callback", "/_next
  */
 const PUBLIC_APP_EXACT = new Set(["/", "/opengraph-image"]);
 
+/**
+ * ⚠️ AS ROTAS DE EXPORTAÇÃO QUE O NAVEGADOR ABRE — lista FECHADA, e o motivo de ela existir.
+ *
+ * `handleApiRequest` exige header `Authorization: Bearer` em todo GET de API. Mas navegação do
+ * navegador — clique em `<a href>`, `window.location.href`, "Salvar link como" — **nunca manda
+ * header**: manda cookie. Resultado medido: TODO download por link devolvia
+ * `{"error":"Login obrigatório para consultar dados reais"}` na cara de quem estava logado.
+ *
+ * São OITO pontos de uso, não um. Quatro deles são os botões HTML/PDF/Word/DOCX da edição salva na
+ * tela de Notícias; os outros são o export de Deliberações, o documento de associado e os dois
+ * relatórios de Qualidade (que dividem um caminho, com `?format=csv`).
+ * `docs/PENDENCIAS.md:670` registrava só o primeiro.
+ *
+ * ⚠️ POR QUE LISTA FECHADA, e não cookie para todo GET. Aceitar cookie torna o GET acionável por
+ * navegação vinda de outro site. Para leitura isso é inócuo — MENOS quando um GET tem efeito:
+ * o GET de `antt/2026/collect` fazia scraping headless de até 80 reuniões sem guard nenhum (fechado
+ * no commit anterior). Uma lista fechada é o que impede que o próximo GET com efeito herde esta
+ * permissão por acidente. Conferi as sete rotas: todas só declaram GET e nenhuma tem
+ * insert/update/upsert/delete.
+ *
+ * Rota nova de exportação que queira cookie precisa ENTRAR aqui explicitamente.
+ */
+const EXPORTACAO_POR_NAVEGACAO: ReadonlyArray<RegExp> = [
+  /^\/api\/v1\/newsletter\/edicoes\/[^/]+\/(?:html|pdf|word|docx)$/,
+  /^\/api\/v1\/deliberacoes\/export$/,
+  /^\/api\/v1\/associados\/documentos\/[^/]+\/html$/,
+  /^\/api\/v1\/qualidade-regulatoria\/relatorios\/ranking$/,
+];
+
+function ehExportacaoPorNavegacao(pathname: string): boolean {
+  return EXPORTACAO_POR_NAVEGACAO.some((padrao) => padrao.test(pathname));
+}
+
 // Comparação de tempo constante para o Bearer de cron. Edge-safe (sem node:crypto):
 // só o tamanho vaza (aceitável), o conteúdo é comparado sem short-circuit.
 function timingSafeEqual(a: string, b: string): boolean {
@@ -94,6 +127,8 @@ async function handleApiRequest(req: NextRequest) {
   if (cronSecret && token && timingSafeEqual(token, cronSecret)) return NextResponse.next();
 
   if (!token) {
+    // Sem header: só as rotas de exportação podem se autenticar pelo COOKIE da sessão.
+    if (ehExportacaoPorNavegacao(pathname)) return autenticarPorCookie(req, supabaseUrl, anonKey);
     return NextResponse.json({ error: "Login obrigatório para consultar dados reais" }, { status: 401 });
   }
 
@@ -107,6 +142,41 @@ async function handleApiRequest(req: NextRequest) {
   // guards das rotas (requireAdmin → 403 para viewer). Pré-requisito operacional:
   // signup público DESLIGADO no Supabase (só o admin cria usuários) — docs/PENDENCIAS.md.
   return NextResponse.next();
+}
+
+/**
+ * Valida a sessão pelo COOKIE para uma rota de exportação, e devolve a resposta com os cookies
+ * eventualmente RENOVADOS por `getUser()` — é o mesmo padrão de `requireAuthenticatedApp`, e é por
+ * isso que `response` é reatribuído dentro do `setAll`.
+ *
+ * ⚠️ Devolve JSON 401 e não redireciona para `/login`. Quem chega aqui sem sessão é navegação
+ * anônima a um endpoint de API; mandar para o login faria o `?next=` apontar para um caminho de API,
+ * e o destino depois do login seria um download em vez de uma tela. O caso que este código existe
+ * para resolver é o do usuário JÁ logado, cujo clique não carregava header.
+ */
+async function autenticarPorCookie(req: NextRequest, supabaseUrl: string, anonKey: string) {
+  let response = NextResponse.next({ request: { headers: req.headers } });
+  const supabase = createServerClient(supabaseUrl, anonKey, {
+    cookies: {
+      getAll() {
+        return req.cookies.getAll();
+      },
+      setAll(cookiesToSet: Array<{ name: string; value: string; options?: CookieOptions }>) {
+        cookiesToSet.forEach(({ name, value }) => req.cookies.set(name, value));
+        response = NextResponse.next({ request: { headers: req.headers } });
+        cookiesToSet.forEach(({ name, value, options }) => {
+          response.cookies.set(name, value, options);
+        });
+      },
+    },
+  });
+
+  const { data, error } = await supabase.auth.getUser();
+  const user = data.user;
+  if (error || !user?.id || !user.email) {
+    return NextResponse.json({ error: "Login obrigatório para exportar" }, { status: 401 });
+  }
+  return response;
 }
 
 async function requireAuthenticatedApp(req: NextRequest) {
