@@ -143,7 +143,13 @@ describe("etapa207 · ⚠️ o FIM da série: diferença de conjuntos, sem infer
 });
 
 describe("etapa207 · a migration re-deriva o passivo, e não repete erros conhecidos", () => {
-  const MIG = semComentariosSql(ler("supabase/migrations/20260928120000_reunioes_serie_rederivar.sql"));
+  /**
+   * ⚠️ APONTA PARA A v2. A v1 (`20260928120000`) FALHOU no SQL Editor com
+   * `relation "_iris_serie_evidencia" does not exist` e está marcada como NÃO RODAR — manter as
+   * expectativas sobre ela seria guardar a qualidade de um arquivo que ninguém deve executar.
+   * A `etapa213` cobre o par v1/v2 e a remoção da dependência entre instruções.
+   */
+  const MIG = semComentariosSql(ler("supabase/migrations/20260928140000_reunioes_serie_rederivar_v2.sql"));
 
   it("o ALVO é quem tem 'ordinaria' e cuja evidência discorda — não mexe em outra série", () => {
     expect(MIG).toMatch(/e\.serie_atual = 'ordinaria'/);
@@ -192,8 +198,9 @@ describe("etapa207 · a migration re-deriva o passivo, e não repete erros conhe
   });
 
   it("e traz CONFERÊNCIA com critério de aceite ligado ao teto do código", () => {
-    const CRU = ler("supabase/migrations/20260928120000_reunioes_serie_rederivar.sql");
-    expect(CRU).toMatch(/CONFERENCIA/);
+    const CRU = ler("supabase/migrations/20260928140000_reunioes_serie_rederivar_v2.sql");
+    // A v1 escrevia sem acento, a v2 com — a propriedade é existir o bloco, não a grafia.
+    expect(CRU).toMatch(/CONFER[EÊ]NCIA/);
     expect(CRU, "o aceite tem de citar o teto que causa o silêncio").toMatch(/SALTO_MAXIMO_DA_SERIE/);
     expect(CRU, "as linhas puladas pela guarda precisam de consulta própria").toMatch(/series_na_mesma_chave/);
   });

@@ -93,6 +93,22 @@ type NewsCollectRequest = {
 
 const NEWSLETTER_CONFIG_KEY = "iris_newsletter_document_config";
 const NEWS_VIEW_MODE_KEY = "iris_news_view_mode";
+/**
+ * Teto do título editado da newsletter — o mesmo da rota (`normalizeNewsletterArticleTitles`);
+ * divergir daqui só produziria um corte surpresa ao salvar.
+ *
+ * ⚠️ NO ESCOPO DO MÓDULO, e isto é o conserto de um defeito que quebrou a tela em produção.
+ *
+ * Eu havia declarado esta constante DENTRO do componente, ~130 linhas abaixo do `useMemo` que a usa.
+ * `const` não é içado: o callback do `useMemo` executa DURANTE o render, antes de a linha da
+ * declaração rodar, e o React derrubava a tela inteira com
+ * `Cannot access 'tF' before initialization` (`tF` é o nome minificado). Uma constante literal não
+ * tem por que morar no corpo do componente — aqui ela existe antes de qualquer render.
+ *
+ * ⚠️ E nenhum teste meu pegou: `tsc` aceita TDZ (é erro de execução, não de tipo), e as expectativas
+ * que escrevi para esta tela varrem o TEXTO do arquivo. Ver `etapa213`.
+ */
+const NEWSLETTER_TITULO_LIMITE = 300;
 const EXPANDED_NEWS_AGENCIES = ["ANA", "ANAC", "ANATEL", "ANCINE", "ANEEL", "ANP", "ANPD", "ANS", "ANTAQ", "ANVISA"] as const;
 
 const DEFAULT_NEWSLETTER_CONFIG: NewsletterDocumentConfig = {
@@ -636,9 +652,6 @@ export default function NoticiasPage() {
     setNewsletterArticleTexts((prev) => ({ ...prev, [id]: value.slice(0, limit) }));
     setSavedEditionId(null);
   }
-
-  /** Teto de 300, o mesmo da rota — divergir daqui só produziria um corte surpresa ao salvar. */
-  const NEWSLETTER_TITULO_LIMITE = 300;
 
   function updateNewsletterArticleTitle(id: string, value: string) {
     setNewsletterArticleTitles((prev) => ({ ...prev, [id]: value.slice(0, NEWSLETTER_TITULO_LIMITE) }));

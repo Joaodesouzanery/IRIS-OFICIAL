@@ -1,4 +1,24 @@
 -- ═══════════════════════════════════════════════════════════════════════════════════════════════
+-- ⛔ NÃO RODAR. SUBSTITUÍDA POR `20260928140000_reunioes_serie_rederivar_v2.sql`.
+--
+-- Esta versão FALHA no SQL Editor do Supabase:
+--     ERROR: 42P01: relation "_iris_serie_evidencia" does not exist
+--
+-- Ela monta uma TEMP TABLE numa instrução e a consome nas seguintes. ⚠️ E eu NÃO sei dizer por que
+-- falhou: a `20260821130000_limpeza_residual_anm` usa a MESMA forma (`CREATE TEMP TABLE … ON COMMIT
+-- DROP` dentro de `BEGIN/COMMIT`, consumida por instruções seguintes) e foi aplicada com sucesso —
+-- então a explicação fácil ("o editor não mantém a sessão entre instruções") é refutada pelo próprio
+-- repositório. Sem um Postgres aqui para reproduzir, escrever uma causa seria palpite com cara de
+-- diagnóstico.
+--
+-- A v2 não aposta em causa nenhuma: ela REMOVE A DEPENDÊNCIA — cada instrução carrega sua própria
+-- evidência num CTE, e não depende de nada que outra tenha deixado para trás.
+--
+-- ⚠️ ESTA v1 NÃO APLICOU NADA: o erro ocorreu antes de qualquer `UPDATE`, dentro de `BEGIN/COMMIT`.
+-- O arquivo fica no repositório porque migration é forward-only — mas não rode.
+-- ═══════════════════════════════════════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════════════════════════════════════
 -- Fase 35 · Bloco D — RE-DERIVAR `reunioes.serie` no passivo que o mojibake gravou como "ordinaria"
 --
 -- ⚠️ O DEFEITO, e por que o conserto anterior nao o alcancou
