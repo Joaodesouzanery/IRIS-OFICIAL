@@ -47,6 +47,21 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
    */
   "nomes_candidatos",
   /**
+   * Fase 35 — quantos votos-artefato a regra ALCANÇARIA agora. É retrato: a rodada varre a
+   * população inteira e recalcula. Somá-lo diria "51 · 44 · 38 …" num acervo que tem 38 — e o número
+   * CAI conforme o reparo funciona, então somar inverteria a leitura do progresso. Já
+   * `artefatos_apagados` é EVENTO (o que a rodada de fato apagou) e soma normalmente.
+   */
+  "artefatos_candidatos",
+  /**
+   * Fase 35 — POSIÇÃO da janela rotativa do `redatar`, não contagem. `divergente_bloco` é "em que
+   * bloco a volta está" e `divergente_blocos` é "quantos blocos tem a volta". Somá-los produziria
+   * "bloco 47 de 300" numa volta de 25 blocos: um número sem significado e com cara de informação,
+   * que é o pior tipo de número numa tela de operação.
+   */
+  "divergente_bloco",
+  "divergente_blocos",
+  /**
    * Fase 33 — a FILA de diagnóstico é recalculada inteira a cada rodada (todo o estoque de motivos
    * mais as divergências da janela), então é retrato. Somá-la diria "candidatos: 1.400" num estoque
    * de 300, e ela é justamente o DENOMINADOR de `motivos_gravados` — um denominador inflado inverte
@@ -100,6 +115,13 @@ export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
    * de `diagnosticos_candidatos`.
    */
   "diagnosticos_ja_iguais",
+  /**
+   * Fase 35 — a Janela C do `redatar` examina 120 linhas por chamada, escolhidas por janela
+   * ROTATIVA sobre toda deliberação com data. Numa run longa a volta pode repassar pelo mesmo bloco,
+   * então o mesmo id é remedido. Soma, mas com o rótulo de parcial — e sempre acompanhada de
+   * `divergente_bloco`/`divergente_blocos`, que dizem quanto da volta já foi.
+   */
+  "divergentes_medidas",
 ]);
 
 /**

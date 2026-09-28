@@ -672,10 +672,28 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
   if (cabe("redatar")) {
     try {
       const r = await call(redatarPOST, "/api/v1/admin/deliberacoes/redatar?dry_run=0", "redatar", {});
+      /**
+       * ⚠️ Fase 35 — a JANELA C não tinha leitor em camada nenhuma.
+       *
+       * `redatar` publica `divergentes_medidas` (quantas datas divergem da re-derivada) e
+       * `divergentes_corrigidas` (quantas foram REESCRITAS). A segunda é a escrita destrutiva que o
+       * usuário autorizou atrás do gabarito da Fase 34 — e ela era calculada, gravada no corpo da
+       * resposta, e descartada aqui. Quatro chaves eram lidas; essas duas, não.
+       *
+       * E `divergente_bloco`/`divergente_blocos` são a JANELA ROTATIVA: a rota examina 120 linhas por
+       * chamada sobre toda deliberação com data, e o passo é sorteado poucas vezes por run. Sem
+       * publicar em que ponto da volta ela está, a correção parece "pronta" quando na verdade mal
+       * começou — foi assim que eu afirmei, no commit 924e523, que dez reuniões voltariam para 2026
+       * quando só parte delas tinha sido examinada.
+       */
       etapas.redatar = anotar(r, "re-derivação de datas", {
         redatadas: Number(r.body?.corrigidas ?? 0) + Number(r.body?.nulas_corrigidas ?? 0),
         datas_para_revisao:
           Number(r.body?.sem_data_recuperavel ?? 0) + Number(r.body?.nulas_marcadas_revisao ?? 0),
+        divergentes_medidas: Number(r.body?.divergentes_medidas ?? 0),
+        divergentes_corrigidas: Number(r.body?.divergentes_corrigidas ?? 0),
+        divergente_bloco: Number(r.body?.divergente_bloco ?? 0),
+        divergente_blocos: Number(r.body?.divergente_blocos ?? 0),
       });
       if (r.body?.restantes) restantes = true;
     } catch {

@@ -33,9 +33,28 @@ export const CHAVES_NUMERICAS_DO_MATERIALIZADOR = [
   // Fase 28 — "fora da janela" tem DOIS motivos e só um deles fala de mandato.
   "fora_da_janela_anterior_ao_1o_mandato",
   "fora_da_janela_sem_data_de_reuniao",
+  /**
+   * ⚠️ Fase 35 — O REPARO DE VOTO ARTEFATO, que a Fase 34 publicou e ESTA FUNÇÃO descartava.
+   *
+   * `materializar-faltantes` emitia `artefatos_apagados`/`artefatos_candidatos`, mas `resumirBackfill`
+   * monta um objeto explícito, chave por chave: o que não está aqui não chega a `etapas`, e portanto
+   * nem a `contadores` nem à tela. Foi o defeito que o docblock deste arquivo existe para impedir —
+   * "toda chave NUMÉRICA que o materializador publica tem de chegar à rodada por AQUI" — cometido
+   * no commit seguinte ao que escreveu a frase.
+   *
+   * O custo foi concreto: o reparo apagou 51 votos em produção e o banner não tinha como dizer isso.
+   * Os quatro números que o usuário viu (`votos`, `deliberacoes`, `pendentes`, `sem_data`) contavam a
+   * história do reparo sem nomeá-lo.
+   */
+  "artefatos_apagados",
+  "artefatos_candidatos",
 ] as const;
 
 export interface PayloadDoMaterializador {
+  /** Fase 35 — votos removidos por serem artefato de fonte que não nomina (EVENTO: soma por rodada). */
+  artefatos_apagados?: number | null;
+  /** Fase 35 — quantos a regra ALCANÇARIA agora (ESTOQUE: retrato, recalculado a cada rodada). */
+  artefatos_candidatos?: number | null;
   /** Tarefa 4 — contagem por motivo, sobre a MESMA população das "sem voto". */
   motivos_sem_voto?: Record<string, number> | null;
   motivos_gravados?: number | null;
@@ -101,6 +120,8 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
     fora_da_janela_anterior_ao_1o_mandato: b.fora_da_janela_anterior_ao_1o_mandato ?? 0,
     fora_da_janela_sem_data_de_reuniao: b.fora_da_janela_sem_data_de_reuniao ?? 0,
     upsert_falhas: b.upsert_falhas ?? 0,
+    artefatos_apagados: b.artefatos_apagados ?? 0,
+    artefatos_candidatos: b.artefatos_candidatos ?? 0,
     // ⚠️ `pendentes` é ESTOQUE (ver `agregar-rodadas.ts`): a tela guarda o ÚLTIMO valor, não a
     // soma. Somá-lo por rodada produziria um número que cresce enquanto a fila encolhe.
     examinados: b.examinados ?? 0,

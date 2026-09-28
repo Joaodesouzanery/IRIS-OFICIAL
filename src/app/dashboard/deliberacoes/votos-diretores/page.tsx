@@ -591,6 +591,15 @@ export default function VotosDiretoresPage() {
       const naoReconhecidos = typeof ultimas.backfill_votos?.nao_reconhecidos === "string"
         ? ultimas.backfill_votos.nao_reconhecidos
         : "";
+      /**
+       * ⚠️ Vem de `ultimas`, como as outras STRINGS — `agregarEtapas` descarta valor não-numérico em
+       * silêncio, então uma fração como "7/312" nunca chegaria a `totais`. É a fração que torna o
+       * zero legível: `motivos_gravados: 0` não distingue "não havia o que gravar" de "a fila inteira
+       * ficou sem orçamento".
+       */
+      const gravacaoDoDiagnostico = typeof ultimas.backfill_votos?.gravacao_do_diagnostico === "string"
+        ? (ultimas.backfill_votos.gravacao_do_diagnostico as string)
+        : null;
       const partes = [
         `${totais.processados ?? 0} PDF(s) extraído(s)`,
         `${(totais.confirmados ?? 0) + (totais.materializados ?? 0)} materializado(s)`,
@@ -683,6 +692,43 @@ export default function VotosDiretoresPage() {
             ((totais.jobs_reparados ?? 0) > 0 ? ` (+${totais.jobs_reparados} na fila de upload)` : "") +
             ` — restam ${totais.nomes_candidatos ?? 0} candidato(s) de ZIP no acervo`
           : null,
+        /**
+         * ⚠️ O PLACAR, e a lição de que ele estava aqui faltando.
+         *
+         * A rota `/admin/placar` roda desde a Fase 34 — `esteira_runs.contadores` prova (`placar_rodou:
+         * true` nas três runs medidas). As chaves chegavam a `totais`. O que faltava era ESTA LINHA, e
+         * sem ela o instrumento construído para responder "como sei que estamos quase acabando?" era
+         * invisível. Quarta ocorrência de capacidade-sem-consumidor (Fases 21, 33 e duas aqui).
+         *
+         * ⚠️ `reunioes_completas` NUNCA aparece sozinho. Sem o denominador, "67" é um número sem
+         * escala — e a fração é a única forma de ver progresso entre runs.
+         *
+         * ⚠️ E ele é rotulado como TETO, porque é o que ele é: "completa" aqui significa que cada
+         * diretor esperado tem PELO MENOS UM voto na reunião. Um diretor que votou uma vez numa
+         * reunião de 39 itens conta como presente. A régua por deliberação é o Bloco C.
+         */
+        (totais.reunioes_no_ano ?? 0) > 0
+          ? `placar: ${totais.reunioes_completas ?? 0} de ${totais.reunioes_no_ano} reuniões do ano com colegiado completo` +
+            ((totais.reunioes_com_voto_faltando ?? 0) > 0
+              ? ` — ${totais.reunioes_com_voto_faltando} com voto faltando (trabalho nosso)`
+              : "") +
+            ((totais.reunioes_esperando_cadastro ?? 0) > 0
+              ? ` · ${totais.reunioes_esperando_cadastro} esperando cadastro de mandato`
+              : "") +
+            " [teto: conta ≥1 voto por diretor]"
+          : null,
+        (totais.placar_leitura_incompleta ?? 0) > 0
+          ? "⚠️ o placar leu o acervo de forma INCOMPLETA — os números dele subcontam"
+          : null,
+        // Buracos de numeração. ⚠️ Enquanto a série eletrônica da ANTT estiver gravada como
+        // "ordinaria" no passivo, as duas séries caem no mesmo balde e o salto 270→1038 passa do
+        // teto de 400 — a detecção se CALA e este número sai pequeno demais. É o Bloco D.
+        (totais.numeros_ausentes ?? 0) > 0 ||
+        (totais.numeros_duplicados ?? 0) > 0 ||
+        (totais.numeros_com_data_fora_do_ano ?? 0) > 0
+          ? `numeração: ${totais.numeros_ausentes ?? 0} ausente(s), ${totais.numeros_duplicados ?? 0} duplicado(s), ` +
+            `${totais.numeros_com_data_fora_do_ano ?? 0} com data fora do ano`
+          : null,
         leituraDoAcervo ? `⚠️ leitura do acervo ${leituraDoAcervo}` : null,
         // Fase 21 — o que o materializador RECUSOU ou não conseguiu, visível. Antes esses números
         // eram calculados toda noite e descartados: uma run em que todas as escritas falharam
@@ -704,6 +750,44 @@ export default function VotosDiretoresPage() {
             (semDataPorAgencia ? ` (${semDataPorAgencia})` : "") +
             ". O passo «redatar» é quem conserta."
           : null,
+        /**
+         * ⚠️ A JANELA C do `redatar` — medida, corrigida, e em que ponto da VOLTA ela está.
+         *
+         * Nada disso tinha leitor. `divergentes_corrigidas` é a escrita destrutiva ligada atrás do
+         * gabarito da Fase 34: ela REESCREVE a data de uma deliberação, o que muda o roster de voto
+         * da linha. Uma escrita dessas sem número na tela é exatamente o que o projeto não aceita.
+         *
+         * E o par bloco/blocos é o que impede a leitura errada que eu mesmo fiz: a janela examina 120
+         * linhas por chamada sobre TODA deliberação com data, e o passo é sorteado poucas vezes por
+         * run. Sem ver "bloco 4 de 25", parece pronto quando mal começou.
+         */
+        (totais.divergentes_medidas ?? 0) > 0 || (totais.divergentes_corrigidas ?? 0) > 0
+          ? `datas divergentes: ${totais.divergentes_medidas ?? 0} medida(s), ${totais.divergentes_corrigidas ?? 0} corrigida(s)` +
+            ((totais.divergente_blocos ?? 0) > 0
+              ? ` (janela rotativa no bloco ${totais.divergente_bloco ?? 0} de ${totais.divergente_blocos} — a volta ainda não fechou)`
+              : "")
+          : null,
+        (totais.redatadas ?? 0) > 0 || (totais.datas_para_revisao ?? 0) > 0
+          ? `${totais.redatadas ?? 0} data(s) re-derivadas` +
+            ((totais.datas_para_revisao ?? 0) > 0
+              ? ` · ⚠️ ${totais.datas_para_revisao} marcada(s) para revisão (a data foi ANULADA por não ser re-derivável)`
+              : "")
+          : null,
+        /**
+         * ⚠️ O REPARO DE VOTO ARTEFATO, que apagou 51 votos em produção sem que o banner dissesse.
+         *
+         * Ele remove o voto ÚNICO e nominal de deliberação cuja fonte não nomina ninguém
+         * (`CAPACIDADE_NOMINAL = "nenhum"`), devolve a deliberação ao estoque, e o materializador a
+         * refaz com o colegiado inteiro na MESMA rodada. É por isso que `pendentes` SOBE quando o
+         * reparo age — 45 → 68 foi o reparo funcionando, não regressão. Sem esta linha, os quatro
+         * números do banner contavam a história do reparo sem nomeá-lo.
+         *
+         * `candidatos` é retrato (estoque) e tem de CAIR entre runs; `apagados` é o que a rodada fez.
+         */
+        (totais.artefatos_apagados ?? 0) > 0 || (totais.artefatos_candidatos ?? 0) > 0
+          ? `${totais.artefatos_apagados ?? 0} voto(s)-artefato removidos (fonte que não nomina)` +
+            ` — restam ${totais.artefatos_candidatos ?? 0} candidato(s); cada um devolve a deliberação ao estoque`
+          : null,
         (totais.upsert_falhas ?? 0) > 0 ? `⚠️ ${totais.upsert_falhas} escrita(s) de voto FALHARAM` : null,
         // A regra do dispositivo está DESLIGADA e medida: esta é a linha que o usuário lê antes de
         // decidir se ela passa a valer.
@@ -723,6 +807,44 @@ export default function VotosDiretoresPage() {
             ` (${totais.votos_a_menos ?? 0} voto(s) fabricado(s) evitado(s) neles)` +
             `; ${totais.regex_falso_positivo ?? 0} item(ns) unânime(s) recuperado(s) da "taxa vencida"` +
             ` — ${ROTULO_PARCIAL}`
+          : null,
+        /**
+         * ⚠️ AS QUE FALTAVAM (Fase 35, Bloco B.4). O teste novo varre as chaves que CHEGAM a `totais`
+         * e exige leitor para cada uma; estas quinze não tinham. Não são enfeite: `reparo_falhas` e
+         * os `arquivados` dizem que a esteira DESCARTOU coisa, e descarte sem número é o formato de
+         * zero que este projeto passou fases inteiras aprendendo a não aceitar.
+         */
+        (totais.ilegiveis_arquivados ?? 0) +
+          (totais.sem_agencia_arquivados ?? 0) +
+          (totais.nao_deliberativos_arquivados ?? 0) >
+        0
+          ? `arquivados na triagem: ${totais.ilegiveis_arquivados ?? 0} ilegível(is), ` +
+            `${totais.sem_agencia_arquivados ?? 0} sem agência, ` +
+            `${totais.nao_deliberativos_arquivados ?? 0} não-deliberativo(s)`
+          : null,
+        (totais.jobs_orfaos_recuperados ?? 0) +
+          (totais.reconciliados_novo ?? 0) +
+          (totais.reconciliados_de_volta ?? 0) +
+          (totais.reconciliados_importado ?? 0) +
+          (totais.reconciliados_ignorado ?? 0) >
+        0
+          ? `reaper: ${totais.jobs_orfaos_recuperados ?? 0} job(s) órfão(s) recuperado(s)` +
+            ` · reconciliação em_revisao — ${totais.reconciliados_novo ?? 0} de volta à fila, ` +
+            `${totais.reconciliados_de_volta ?? 0} restaurado(s), ` +
+            `${totais.reconciliados_importado ?? 0} importado(s), ` +
+            `${totais.reconciliados_ignorado ?? 0} ignorado(s)`
+          : null,
+        (totais.reparo_falhas ?? 0) > 0 || (totais.reparo_sem_fonte ?? 0) > 0
+          ? `⚠️ reparo de resultado: ${totais.reparo_falhas ?? 0} falha(s) de escrita` +
+            ` · ${totais.reparo_sem_fonte ?? 0} sem fonte para decidir`
+          : null,
+        (totais.motivos_gravados ?? 0) > 0 || gravacaoDoDiagnostico
+          ? `diagnóstico gravado em ${gravacaoDoDiagnostico ?? String(totais.motivos_gravados ?? 0)} deliberação(ões)` +
+            " — é o motivo que explica cada «sem voto»"
+          : null,
+        (totais.divergencias_gravadas ?? 0) > 0
+          ? `${totais.divergencias_gravadas} divergência(s) de roster gravadas (a lista de presentes do pai ` +
+            "discorda do mandato — registrado, não aplicado)"
           : null,
       ].filter(Boolean);
       // O desfecho é o que o servidor de fato produziu, não o fato de a mutation ter retornado.
