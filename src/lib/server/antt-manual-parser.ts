@@ -325,32 +325,32 @@ function extractMeeting(text: string, filename: string, type: AnttManualDocument
     let label = "Reuniao ANTT";
     let tipo_reuniao: string | null = "Ordinaria";
     if (normalizedMeeting.kind === "rde") {
-      label = numero ? `${numero}Âª Reuniao Deliberativa Eletronica` : "Reuniao Deliberativa Eletronica";
+      label = numero ? `${numero}\u00aa Reuniao Deliberativa Eletronica` : "Reuniao Deliberativa Eletronica";
     } else if (normalizedMeeting.kind === "extraordinaria") {
-      label = numero ? `${numero}Âª Reuniao Extraordinaria de Diretoria` : "Reuniao Extraordinaria de Diretoria";
+      label = numero ? `${numero}\u00aa Reuniao Extraordinaria de Diretoria` : "Reuniao Extraordinaria de Diretoria";
       tipo_reuniao = "Extraordinaria";
     } else if (normalizedMeeting.kind === "publica") {
-      label = numero ? `${numero}Âª Reuniao de Diretoria Publica` : "Reuniao de Diretoria Publica";
+      label = numero ? `${numero}\u00aa Reuniao de Diretoria Publica` : "Reuniao de Diretoria Publica";
     }
     return { numero, titulo: formatMeetingTitle(normalizedMeeting.kind, numero, label), tipo_reuniao };
   }
-  const rde = firstMatch(source, /(\d{1,3})\s*(?:Âª|a)?\s*(?:RDE|REUNI[AÃƒ]O\s+DELIBERATIVA\s+ELETR[OÃ”]NICA)/i);
-  const publica = firstMatch(source, /(\d{1,4}(?:\.\d{3})?)\s*(?:Âª|a)?\s*REUNI[AÃƒ]O\s+DE\s+DIRETORIA\s+P[UÃš]BLICA/i);
-  const extraordinaria = firstMatch(source, /(\d{1,3})\s*(?:Âª|a)?\s*REUNI[AÃƒ]O\s+EXTRAORDIN[AÃ]RIA\s+DE\s+DIRETORIA/i);
-  const ataDiretoria = firstMatch(source, /REUNI[AÃƒ]O\s+DE\s+DIRETORIA\s+N[ÂºO_ ]+(\d{1,4})/i);
-  const ataRde = firstMatch(source, /REUNI[AÃƒ]O\s+DELIBERATIVA\s+ELETRONICA\s+N[ÂºO_ ]+(\d{1,4})/i);
+  const rde = firstMatch(source, /(\d{1,3})\s*(?:\u00aa|a)?\s*(?:RDE|REUNI[A\u00c3]O\s+DELIBERATIVA\s+ELETR[O\u00d4]NICA)/i);
+  const publica = firstMatch(source, /(\d{1,4}(?:\.\d{3})?)\s*(?:\u00aa|a)?\s*REUNI[A\u00c3]O\s+DE\s+DIRETORIA\s+P[U\u00da]BLICA/i);
+  const extraordinaria = firstMatch(source, /(\d{1,3})\s*(?:\u00aa|a)?\s*REUNI[A\u00c3]O\s+EXTRAORDIN[A\u00c1]RIA\s+DE\s+DIRETORIA/i);
+  const ataDiretoria = firstMatch(source, /REUNI[A\u00c3]O\s+DE\s+DIRETORIA\s+N[\u00baO_ ]+(\d{1,4})/i);
+  const ataRde = firstMatch(source, /REUNI[A\u00c3]O\s+DELIBERATIVA\s+ELETRONICA\s+N[\u00baO_ ]+(\d{1,4})/i);
   const numero = rde ?? publica ?? extraordinaria ?? ataDiretoria ?? ataRde ?? null;
 
   let label = "Reuniao ANTT";
   let tipo_reuniao: string | null = "Ordinaria";
   if (type === "reuniao_deliberativa_eletronica" || rde || ataRde) {
-    label = numero ? `${numero}Âª Reuniao Deliberativa Eletronica` : "Reuniao Deliberativa Eletronica";
+    label = numero ? `${numero}\u00aa Reuniao Deliberativa Eletronica` : "Reuniao Deliberativa Eletronica";
     tipo_reuniao = "Ordinaria";
   } else if (type === "reuniao_extraordinaria" || extraordinaria) {
-    label = numero ? `${numero}Âª Reuniao Extraordinaria de Diretoria` : "Reuniao Extraordinaria de Diretoria";
+    label = numero ? `${numero}\u00aa Reuniao Extraordinaria de Diretoria` : "Reuniao Extraordinaria de Diretoria";
     tipo_reuniao = "Extraordinaria";
   } else if (type === "reuniao_diretoria_publica" || publica || ataDiretoria) {
-    label = numero ? `${numero}Âª Reuniao de Diretoria Publica` : "Reuniao de Diretoria Publica";
+    label = numero ? `${numero}\u00aa Reuniao de Diretoria Publica` : "Reuniao de Diretoria Publica";
     tipo_reuniao = "Ordinaria";
   }
 
@@ -726,12 +726,12 @@ function isSeiReferenceProcess(block: string, interessado: string | null, assunt
 }
 
 function extractRelatorForBlock(block: string) {
-  const sectionRelator = firstMatch(block, /DIRETOR(?:-GERAL)?:\s*([A-ZÃÃ‰ÃÃ“ÃšÃ‚ÃŠÃ”ÃƒÃ•Ã‡ ]{3,80})/i);
+  const sectionRelator = firstMatch(block, /DIRETOR(?:-GERAL)?:\s*([A-Z\u00c0-\u00dc ]{3,80})/i);
   return sectionRelator ? titleCase(sectionRelator) : null;
 }
 
 function extractNearestRelator(prefix: string) {
-  const matches = [...prefix.slice(-1800).matchAll(/DIRETOR(?:-GERAL)?:\s*([A-ZÃÃ‰ÃÃ“ÃšÃ‚ÃŠÃ”ÃƒÃ•Ã‡ ]{3,80})/gi)];
+  const matches = [...prefix.slice(-1800).matchAll(/DIRETOR(?:-GERAL)?:\s*([A-Z\u00c0-\u00dc ]{3,80})/gi)];
   const last = matches.at(-1)?.[1];
   return last ? titleCase(last) : null;
 }
@@ -960,10 +960,32 @@ function formatMeetingNumber(value: string | null) {
   return /^\d{1,4}\.\d{3}$/.test(cleaned) ? cleaned : cleaned.replace(/\.$/, "");
 }
 
+/**
+ * O TÍTULO da reunião, que é o que `deriveSerie` lê para gravar `reunioes.serie`.
+ *
+ * ⚠️ ESTE BLOCO TINHA MOJIBAKE DUPLO-CODIFICADO **NO CÓDIGO-FONTE** — confirmado por hexdump:
+ * `c3 83 c2 a3` onde deveria haver `c3 a3` (`ã`), `c3 83 c2 b4` no lugar de `ô`, e `c3 82 c2 aa`
+ * no lugar de `ª`. O arquivo misturava os dois: a linha 1091, logo abaixo, tinha `Reunião` correto.
+ *
+ * ⚠️ E O CUSTO NÃO ERA COSMÉTICO. `deriveSerie` normaliza com NFD e remove as combinantes, mas o
+ * `´` de `EletrÃ´nica` é U+00B4, que é ESPAÇADOR, não combinante: ele sobrevive. O resultado vira
+ * `eletra´nica`, o `includes("eletronic")` falha, e a função cai no `return "ordinaria"` final.
+ * Mesma coisa para `ExtraordinÃ¡ria` → `extraordina¡ria`, que não casa `extraordinar`.
+ *
+ * Ou seja: **toda RDE e toda Extraordinária da ANTT eram gravadas com `serie = 'ordinaria'`**. Com
+ * a série errada, a chave natural de `reunioes` volta a colidir na prática, `checarSerieMonotonica`
+ * compara a 271ª com a 1.028ª como se fossem a mesma sequência, e o placar não consegue agrupar por
+ * série — que é justamente o eixo em que a numeração faz sentido.
+ *
+ * Detalhe que agravava: `extractMeeting` grava `tipo_reuniao = 'Extraordinaria'` CORRETAMENTE nas
+ * linhas 331 e 351. Então a linha ficava com `tipo_reuniao='Extraordinaria'` e `serie='ordinaria'`,
+ * uma contradição interna — e o degrau (c) do backfill de `20260825120000`, que derivaria a série a
+ * partir de `tipo_reuniao`, nunca dispara porque ele só roda `WHERE serie IS NULL`.
+ */
 function formatMeetingTitle(kind: "rde" | "publica" | "extraordinaria" | null, numero: string | null, fallback: string) {
-  if (kind === "rde") return numero ? `${numero}Âª ReuniÃ£o Deliberativa EletrÃ´nica` : "ReuniÃ£o Deliberativa EletrÃ´nica";
-  if (kind === "publica") return numero ? `${numero}Âª ReuniÃ£o de Diretoria PÃºblica` : "ReuniÃ£o de Diretoria PÃºblica";
-  if (kind === "extraordinaria") return numero ? `${numero}Âª ReuniÃ£o ExtraordinÃ¡ria de Diretoria` : "ReuniÃ£o ExtraordinÃ¡ria de Diretoria";
+  if (kind === "rde") return numero ? `${numero}\u00aa Reuni\u00e3o Deliberativa Eletr\u00f4nica` : "Reuni\u00e3o Deliberativa Eletr\u00f4nica";
+  if (kind === "publica") return numero ? `${numero}\u00aa Reuni\u00e3o de Diretoria P\u00fablica` : "Reuni\u00e3o de Diretoria P\u00fablica";
+  if (kind === "extraordinaria") return numero ? `${numero}\u00aa Reuni\u00e3o Extraordin\u00e1ria de Diretoria` : "Reuni\u00e3o Extraordin\u00e1ria de Diretoria";
   return fallback;
 }
 
