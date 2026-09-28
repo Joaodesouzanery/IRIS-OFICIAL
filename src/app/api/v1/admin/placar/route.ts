@@ -38,8 +38,8 @@ import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import {
-  buracosDaSerie, medirReuniao, resumirPorAgencia,
-  type EntradaDeNumeracao, type ReuniaoParaPlacar,
+  buracosDaSerie, faltandoContraListagem, medirReuniao, resumirPorAgencia,
+  type EntradaDeNumeracao, type ItemDaListagem, type ReuniaoParaPlacar,
 } from "@/lib/server/placar";
 import type { MandatoJanela } from "@/lib/server/colegiado-na-data";
 
@@ -198,6 +198,59 @@ export async function GET(req: NextRequest) {
 
   const buracos = buracosDaSerie(entradas, de, ate);
 
+  /**
+   * ⚠️ O QUE FALTA DEPOIS DO ÚLTIMO NÚMERO — invisível para `buracosDaSerie` por construção.
+   *
+   * Aquela função infere ausência ENTRE o menor e o maior do acervo, então uma reunião nova que
+   * ninguém coletou não aparece como buraco: aparece como se não existisse. Contra a LISTAGEM da
+   * fonte não há inferência, é diferença de conjuntos — e ela alcança o fim da série.
+   *
+   * Hoje só a ANTT tem a listagem no banco (`antt_reunioes_coletadas`, com `numero` e `tipo`, que são
+   * as três séries). Para ANM e ARTESP o campo sai vazio e o alerta diz isso, em vez de o silêncio
+   * passar por "nada falta".
+   */
+  let contraListagem: ReturnType<typeof faltandoContraListagem> = [];
+  if (hasBudget(deadlineAt, RESERVA_DE_FECHO_MS)) {
+    const listagemRes = await lerTudo<any>(
+      () => db.from("antt_reunioes_coletadas").select("agencia_id, numero, tipo").order("id"),
+      "placar/listagem-antt");
+    if (parcial(listagemRes)) {
+      alertas.push("⚠️ leitura de `antt_reunioes_coletadas` incompleta — o que falta no FIM da série pode subcontar.");
+    }
+    const listagem: ItemDaListagem[] = [];
+    for (const l of (listagemRes.data ?? []) as any[]) {
+      if (!l.agencia_id || !idsColegiados.has(l.agencia_id)) continue;
+      listagem.push({
+        agencia: siglaPorId.get(l.agencia_id) ?? "?",
+        serie: (l.tipo as string | null) ?? null,
+        numero_reuniao: (l.numero as string | null) ?? null,
+      });
+    }
+    contraListagem = faltandoContraListagem(entradas, listagem);
+    for (const f of contraListagem) {
+      if (f.ausentes.length > 0) {
+        alertas.push(
+          `${f.agencia}/${f.serie ?? "?"}: a listagem da fonte tem ${f.ausentes.length} reunião(ões) que o ` +
+            `acervo NÃO tem (${f.ausentes.slice(0, 12).join(", ")}${f.ausentes.length > 12 ? "…" : ""}). ` +
+            `Último no acervo: ${f.ultimo_no_acervo ?? "nenhum"}; na listagem: ${f.ultimo_na_listagem ?? "nenhum"}.`,
+        );
+      }
+      /**
+       * ⚠️ Série que a listagem tem e o acervo não tem NENHUM número é quase sempre casamento de
+       * SÉRIE, não coleta faltando: é o passivo do mojibake que gravou toda RDE como "ordinaria".
+       * Dizer "faltam 26 reuniões" nesse caso seria mandar recoletar o que já está no banco.
+       */
+      if (f.ultimo_no_acervo === null && f.ausentes.length > 0) {
+        alertas.push(
+          `${f.agencia}/${f.serie ?? "?"}: o acervo não tem NENHUM número desta série. Antes de tratar como ` +
+            "coleta faltando, confira `reunioes.serie` — o passivo do mojibake gravou RDE como «ordinaria».",
+        );
+      }
+    }
+  } else {
+    alertas.push("⚠️ sem orçamento para conferir contra a listagem da fonte — o fim da série não foi medido nesta rodada.");
+  }
+
   // ─── (b) O colegiado por reunião ──────────────────────────────────────────
   const medidas = [...porReuniao.values()].map((r) => medirReuniao(r, r.agencia_id, mandatos));
   const resumo = resumirPorAgencia(medidas);
@@ -272,6 +325,7 @@ export async function GET(req: NextRequest) {
     year,
     gerado_em: new Date().toISOString(),
     buracos_de_numeracao: buracos,
+    faltando_contra_listagem: contraListagem,
     colegiado_por_reuniao: resumo,
     reunioes_incompletas: incompletas,
     /**

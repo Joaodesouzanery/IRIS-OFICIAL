@@ -952,6 +952,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         : 0;
       const buracos = (r.body?.buracos_de_numeracao ?? []) as Array<Record<string, unknown[]>>;
       const somar = (campo: string) => buracos.reduce((t, b) => t + ((b[campo] ?? []).length), 0);
+      /**
+       * ⚠️ O que falta DEPOIS do último número, que `buracosDaSerie` não vê por construção. Vem da
+       * diferença contra a listagem da fonte, então não depende do teto de salto — e é a única das
+       * duas medições que alcança o fim da série (o caso da 87ª ROP da ANM).
+       */
+      const contraListagem = (r.body?.faltando_contra_listagem ?? []) as Array<{ ausentes?: unknown[] }>;
+      const faltandoNaListagem = contraListagem.reduce((t, f) => t + ((f.ausentes ?? []).length), 0);
       etapas.placar = anotar(r, "placar", {
         // ⚠️ Os dois viajam juntos SEMPRE: `reunioes_completas` sozinho é ambíguo entre "subiu" e
         // "o denominador caiu". É a mesma lição do `gravacao_do_diagnostico`.
@@ -974,6 +981,7 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         pares_respondidos: paresRespondidos,
         cobertura_pct: coberturaPct,
         diretores_com_voto_parcial: diretoresParciais,
+        faltando_contra_a_listagem: faltandoNaListagem,
         reunioes_com_voto_faltando: defeitoNosso,
         reunioes_esperando_cadastro: cadastroPendente,
         numeros_ausentes: somar("ausentes"),

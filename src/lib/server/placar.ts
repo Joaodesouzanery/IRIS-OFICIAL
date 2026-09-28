@@ -297,6 +297,89 @@ export function buracosDaSerie(
   return saida;
 }
 
+/** Uma reunião como a LISTAGEM da fonte a publica — a referência externa. */
+export interface ItemDaListagem {
+  agencia: string;
+  serie: string | null;
+  numero_reuniao: string | null;
+}
+
+export interface FaltandoContraListagem {
+  agencia: string;
+  serie: string | null;
+  /** Números que a listagem tem e o acervo não — INCLUSIVE depois do nosso último. */
+  ausentes: number[];
+  ultimo_no_acervo: number | null;
+  ultimo_na_listagem: number | null;
+}
+
+/**
+ * O que a FONTE lista e o acervo não tem.
+ *
+ * ═══ Por que isto existe ao lado de `buracosDaSerie` ═══
+ * `buracosDaSerie` infere ausência de uma FAIXA: enumera o que falta entre o menor e o maior número
+ * que o acervo tem. Isso tem dois limites estruturais, e o usuário apontou o segundo:
+ *
+ *  1. precisa do teto `SALTO_MAXIMO_DA_SERIE`, porque um número lido errado inventaria centenas de
+ *     "ausentes" — então a medição se cala justamente quando os dados estão sujos;
+ *  2. **o que falta DEPOIS do último número é invisível por construção.** A série termina no `max` do
+ *     acervo, então uma reunião nova que ninguém coletou não aparece como buraco: aparece como se não
+ *     existisse. A 87ª ROP da ANM é esse caso.
+ *
+ * Contra uma LISTAGEM não há inferência nenhuma: é diferença de conjuntos. Não precisa de teto de
+ * salto, e alcança o fim da série. É a medição mais forte das duas — e só é possível onde existe a
+ * listagem da fonte no banco (hoje, `antt_reunioes_coletadas` para a ANTT).
+ */
+export function faltandoContraListagem(
+  acervo: EntradaDeNumeracao[],
+  listagem: ItemDaListagem[],
+): FaltandoContraListagem[] {
+  const chave = (agencia: string, serie: string | null) => `${agencia}\u0000${serie ?? ""}`;
+
+  const noAcervo = new Map<string, Set<number>>();
+  for (const e of acervo) {
+    const n = ordinalDeTextoDeReuniao(e.numero_reuniao);
+    if (n === null) continue;
+    const k = chave(e.agencia, e.serie);
+    const s = noAcervo.get(k) ?? new Set<number>();
+    s.add(n);
+    noAcervo.set(k, s);
+  }
+
+  const naListagem = new Map<string, Set<number>>();
+  for (const i of listagem) {
+    const n = ordinalDeTextoDeReuniao(i.numero_reuniao);
+    if (n === null) continue;
+    const k = chave(i.agencia, i.serie);
+    const s = naListagem.get(k) ?? new Set<number>();
+    s.add(n);
+    naListagem.set(k, s);
+  }
+
+  const saida: FaltandoContraListagem[] = [];
+  for (const [k, listados] of naListagem) {
+    const [agencia, serieCrua] = k.split("\u0000");
+    /**
+     * ⚠️ A comparação é dentro da MESMA série. Se a listagem diz `eletronica` e o acervo gravou
+     * `ordinaria` (o passivo do mojibake), os conjuntos não se encontram e TODA a série apareceria
+     * como ausente — um falso positivo enorme. Por isso a migration que re-deriva `reunioes.serie`
+     * vem ANTES desta medição valer, e é por isso que o resultado publica os dois "últimos": quando o
+     * `ultimo_no_acervo` vem nulo numa série que a listagem tem, o que falta é o CASAMENTO de série,
+     * não a coleta.
+     */
+    const temos = noAcervo.get(k) ?? new Set<number>();
+    const ausentes = [...listados].filter((n) => !temos.has(n)).sort((a, b) => a - b);
+    saida.push({
+      agencia,
+      serie: serieCrua === "" ? null : serieCrua,
+      ausentes,
+      ultimo_no_acervo: temos.size > 0 ? Math.max(...temos) : null,
+      ultimo_na_listagem: listados.size > 0 ? Math.max(...listados) : null,
+    });
+  }
+  return saida.sort((a, b) => a.agencia.localeCompare(b.agencia) || String(a.serie).localeCompare(String(b.serie)));
+}
+
 export interface ResumoDoPlacar {
   total: number;
   /** ⚠️ TETO: reuniões em que cada diretor esperado tem ≥1 voto. Nome antigo, semântica antiga. */

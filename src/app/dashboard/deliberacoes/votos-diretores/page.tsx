@@ -748,6 +748,18 @@ export default function VotosDiretoresPage() {
         // Buracos de numeração. ⚠️ Enquanto a série eletrônica da ANTT estiver gravada como
         // "ordinaria" no passivo, as duas séries caem no mesmo balde e o salto 270→1038 passa do
         // teto de 400 — a detecção se CALA e este número sai pequeno demais. É o Bloco D.
+        /**
+         * ⚠️ A medição FORTE da coleta, e ela responde ao que o `numeros_ausentes` não alcança.
+         *
+         * `numeros_ausentes` infere buraco ENTRE o menor e o maior número do acervo, com teto de salto
+         * de 400 — então se cala quando a série está suja e não vê nada DEPOIS do último número. Esta
+         * linha é diferença de conjuntos contra a listagem da fonte: sem inferência, sem teto, e
+         * alcança o fim da série. Hoje só a ANTT tem a listagem no banco.
+         */
+        (totais.faltando_contra_a_listagem ?? 0) > 0
+          ? `⚠️ ${totais.faltando_contra_a_listagem} reunião(ões) que a LISTAGEM da fonte tem e o acervo não` +
+            " — é coleta faltando, não data errada (ver os alertas do placar para a lista)"
+          : null,
         (totais.numeros_ausentes ?? 0) > 0 ||
         (totais.numeros_duplicados ?? 0) > 0 ||
         (totais.numeros_com_data_fora_do_ano ?? 0) > 0
