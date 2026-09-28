@@ -28,7 +28,7 @@ import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
 import { extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import { extractDataReuniaoAncorada } from "@/lib/server/nlp-extractor";
-import { ensureReuniao } from "@/lib/server/reunioes";
+import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { janelaRotativa } from "@/lib/server/varredura-rotativa";
@@ -69,11 +69,22 @@ const RESERVA_POR_LINHA_MS = 4_000;
  * comparar com o que está gravado. Se discordam, o gravado está errado — e a re-derivação já existe
  * nesta rota, é a mesma da Janela A.
  *
- * ⚠️ DESLIGADA porque trocar `data_reuniao` em massa muda o roster de voto de cada linha afetada
- * (`getActiveDiretoresForVote` seleciona por data), e o usuário exigiu ver a medição antes: a
- * primeira rodada publica quantas divergem, por agência, com amostra de `de → para`.
+ * ═══ ⚠️ LIGADA na Fase 34, e o PORTÃO que a liberou ═══
+ * Ela nasceu desligada porque trocar `data_reuniao` em massa muda o roster de voto de cada linha
+ * afetada (`getActiveDiretoresForVote` seleciona por data). O portão era: **a re-derivação ancorada
+ * tem de reproduzir o gabarito das 16 certificadas**, e é isso que o `etapa193` afirma, rodando a
+ * MESMA função desta rota contra os PDFs reais. Ele está verde para ANM e ARTESP.
+ *
+ * ⚠️ E a ANTT continua FORA, agora com o preço medido: quatro reuniões (RDE 282, 286, 289 e RD
+ * 1.035) ficam com a data errada porque `extractAnttDate` tem dois degraus **sem âncora nenhuma** —
+ * a primeira data dd/mm/aaaa dos 2.500 primeiros caracteres —, que é o mecanismo exato que esta
+ * rota existe para proibir. Entrar na ANTT exige tirar esses degraus antes, e o `etapa193` reprova
+ * quem puser ANTT no recorte sem isso.
+ *
+ * O que ligar muda, medido nas dez reuniões que sumiram de 2026: a ARTESP recupera a 1177ª e a
+ * 1186ª, e a ANM recupera as 80ª a 83ª — dobrando o denominador de 2026 dela.
  */
-const REDATAR_DATA_DIVERGENTE = false;
+const REDATAR_DATA_DIVERGENTE = true;
 
 /** Quantas linhas plausíveis a janela rotativa examina por rodada. */
 const LOTE_DIVERGENTE = 120;
@@ -133,7 +144,7 @@ export async function POST(req: NextRequest) {
   // A janela é pequena por construção — data implausível é exceção, não regra.
   const { data: linhas, error } = await db
     .from("deliberacoes")
-    .select("id, agencia_id, numero_reuniao, tipo_reuniao, data_reuniao, raw_extraction")
+    .select("id, agencia_id, numero_reuniao, reuniao_ordinaria, tipo_reuniao, data_reuniao, raw_extraction")
     .not("data_reuniao", "is", null)
     .order("data_reuniao", { ascending: true })
     .limit(500);
@@ -191,6 +202,12 @@ export async function POST(req: NextRequest) {
         numeroReuniao: (d.numero_reuniao as string | null) ?? null,
         dataReuniao: nova,
         tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+        // ⚠️ TÍTULO e SÉRIE. Sem eles, `ensureReuniao` cai no ramo sem filtro de série, e com o
+        // índice único `COALESCE(serie,'')` isso pode religar a deliberação à linha da série ERRADA
+        // (a 271ª RDE e a 1.028ª de Diretoria convivem na mesma data) ou criar uma linha com
+        // `serie NULL`. Corrigir a data e errar a reunião seria trocar um defeito por outro.
+        titulo: (d.reuniao_ordinaria as string | null) ?? null,
+        serie: deriveSerie((d.reuniao_ordinaria as string | null) ?? null),
       });
       if (await exigirEscrita(db.from("deliberacoes").update({
         data_reuniao: nova,
@@ -228,7 +245,7 @@ export async function POST(req: NextRequest) {
   {
     const { data: nulasRaw } = await db
       .from("deliberacoes")
-      .select("id, agencia_id, numero_reuniao, tipo_reuniao, reuniao_id, raw_extraction")
+      .select("id, agencia_id, numero_reuniao, reuniao_ordinaria, tipo_reuniao, reuniao_id, raw_extraction")
       .is("data_reuniao", null)
       .limit(300);
     const nulas = ((nulasRaw ?? []) as any[]).filter(
@@ -289,6 +306,8 @@ export async function POST(req: NextRequest) {
           numeroReuniao: (d.numero_reuniao as string | null) ?? null,
           dataReuniao: nova,
           tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+          titulo: (d.reuniao_ordinaria as string | null) ?? null,
+          serie: deriveSerie((d.reuniao_ordinaria as string | null) ?? null),
         });
         if (await exigirEscrita(db.from("deliberacoes").update({
           data_reuniao: nova,
@@ -336,7 +355,7 @@ export async function POST(req: NextRequest) {
      */
     const universo = await lerTudo<any>(
       () => db.from("deliberacoes")
-        .select("id, agencia_id, numero_reuniao, tipo_reuniao, data_reuniao")
+        .select("id, agencia_id, numero_reuniao, reuniao_ordinaria, tipo_reuniao, data_reuniao")
         .not("data_reuniao", "is", null)
         .order("id", { ascending: true }),
       "redatar/janela-divergente",
@@ -408,6 +427,12 @@ export async function POST(req: NextRequest) {
         numeroReuniao: (d.numero_reuniao as string | null) ?? null,
         dataReuniao: rederivada,
         tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+        // ⚠️ TÍTULO e SÉRIE. Sem eles, `ensureReuniao` cai no ramo sem filtro de série, e com o
+        // índice único `COALESCE(serie,'')` isso pode religar a deliberação à linha da série ERRADA
+        // (a 271ª RDE e a 1.028ª de Diretoria convivem na mesma data) ou criar uma linha com
+        // `serie NULL`. Corrigir a data e errar a reunião seria trocar um defeito por outro.
+        titulo: (d.reuniao_ordinaria as string | null) ?? null,
+        serie: deriveSerie((d.reuniao_ordinaria as string | null) ?? null),
       });
       if (await exigirEscrita(db.from("deliberacoes").update({
         data_reuniao: rederivada,

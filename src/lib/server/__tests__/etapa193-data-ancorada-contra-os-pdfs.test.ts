@@ -160,8 +160,18 @@ describe("etapa193 · ⚠️ o caminho ancorado acerta os PDFs reais — as duas
 describe("etapa193 · a JANELA C do redatar: seleciona por DISCORDÂNCIA, não por impossibilidade", () => {
   const R = semComentarios(ler("src/app/api/v1/admin/deliberacoes/redatar/route.ts"));
 
-  it("⚠️ a regra está DESLIGADA, e o número diz isso junto", () => {
-    expect(R).toMatch(/const REDATAR_DATA_DIVERGENTE = false;/);
+  it("⚠️ a regra está LIGADA — e só podia ligar com ESTE arquivo verde", () => {
+    /**
+     * ⚠️ Fase 34: a constante virou `true`. O portão que a liberou é o PRIMEIRO describe deste
+     * arquivo: a re-derivação ancorada reproduz o gabarito das certificadas de ANM e ARTESP. Se
+     * aquele teste cair, este também deixa de fazer sentido — e é essa a ligação que importa,
+     * porque uma rota que reescreve `data_reuniao` em massa muda o roster de voto de cada linha.
+     *
+     * Trocar o valor de volta para `false` é decisão legítima (medir de novo) e NÃO reprova aqui —
+     * o que reprova é a chave publicada deixar de dizer a verdade sobre o estado.
+     */
+    expect(R).toMatch(/const REDATAR_DATA_DIVERGENTE = (?:true|false);/);
+    expect(R).toMatch(/const REDATAR_DATA_DIVERGENTE = true;/);
     /**
      * Sem esta chave, `divergentes_medidas: 44` seria lido como "44 consertadas".
      *
@@ -211,6 +221,25 @@ describe("etapa193 · a JANELA C do redatar: seleciona por DISCORDÂNCIA, não p
     expect(R).toMatch(/janelaRotativa\(plausiveis\.length, LOTE_DIVERGENTE, Math\.floor\(Date\.now\(\) \/ 60_000\)\)/);
     expect(R).toMatch(/divergente_bloco: divergenteBloco/);
     expect(R).toMatch(/divergente_blocos: divergenteBlocos/);
+  });
+
+  it("⚠️ e os três `ensureReuniao` passam TÍTULO e SÉRIE", () => {
+    /**
+     * ⚠️ Achado da Fase 34, e ele morderia calado: os três call sites não passavam nem título nem
+     * série. Sem série, `ensureReuniao` cai no ramo sem filtro, e com o índice único
+     * `COALESCE(serie,'')` isso pode religar a deliberação à linha da série ERRADA — a 271ª RDE e a
+     * 1.028ª de Diretoria convivem na mesma data — ou criar uma linha com `serie NULL`.
+     *
+     * Corrigir a data e errar a reunião seria trocar um defeito por outro, e ligar a Janela C sem
+     * isto faria a troca em massa.
+     */
+    const chamadas = (R.match(/ensureReuniao\(db, \{/g) ?? []).length;
+    expect(chamadas).toBe(3);
+    expect((R.match(/serie: deriveSerie\(\(d\.reuniao_ordinaria as string \| null\) \?\? null\)/g) ?? []).length)
+      .toBe(3);
+    expect((R.match(/titulo: \(d\.reuniao_ordinaria as string \| null\) \?\? null/g) ?? []).length).toBe(3);
+    // E o campo tem de ser LIDO do banco nas três janelas, senão viaja `undefined`.
+    expect((R.match(/numero_reuniao, reuniao_ordinaria, tipo_reuniao/g) ?? []).length).toBe(3);
   });
 
   it("não reprocessa o que a Janela A já trata — as duas decisões são diferentes", () => {
