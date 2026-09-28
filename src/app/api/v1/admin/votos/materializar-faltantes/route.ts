@@ -23,7 +23,10 @@ import {
 } from "@/lib/server/fila-de-diagnostico";
 import { findBestMatch } from "@/lib/server/name-matcher";
 import { conferirRoster } from "@/lib/server/roster-conferivel";
-import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { COLEGIADO_SIGLAS, fonteNominaVotos } from "@/lib/server/colegiado-sources";
+import {
+  votoNominalImpossivel, rastroDoApagamento, type RastroDeVotoApagado,
+} from "@/lib/server/voto-artefato";
 import { RE_CONTESTADO, RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
 import {
   buildVotoRows,
@@ -59,6 +62,30 @@ const NAO_FINAL = TIPOS_NAO_FINAIS_SET; // fonte única (etapa65)
 const LOTE_POR_RODADA = 60;
 /** Reserva por item dentro do laço — o mesmo 8s que já estava lá, agora nomeado e reusado. */
 const RESERVA_POR_ITEM_MS = 8_000;
+
+/**
+ * ⚠️ O REPARO DESTRUTIVO, e o portão dele (Fase 34, Bloco 3).
+ *
+ * Nove reuniões da ANTT (RDE 271, 272, 273, 274, 276; Extraordinária 99; RD 1.028, 1.029, 1.030)
+ * têm, em cada item, UM voto — o do relator, gravado como `is_nominal`. É impossível pela própria
+ * declaração do projeto: `CAPACIDADE_NOMINAL['ANTT|ata'] = 'nenhum'`. O voto não é leitura, é
+ * ARTEFATO do defeito que o `a4cd15f` consertou.
+ *
+ * Este passo APAGA esse voto, o que devolve a deliberação a "sem voto" e faz o próprio
+ * materializador refazê-la com o colegiado inferido, na MESMA rodada.
+ *
+ * ⚠️ E ele apaga COM RASTRO: cada linha removida vai para `votos_retroativos_audit.detalhe` com
+ * `{deliberacao_id, diretor_id, is_nominal, motivo}`. O usuário exigiu poder explicar, depois, por
+ * que um relatório antigo e um novo divergem — e a tabela de auditoria é agregada por lote, então o
+ * rastro por linha só cabe no jsonb. Sem migration, para o deploy continuar seguro.
+ *
+ * ⚠️ O predicado é ESTREITO: exige UM voto e que ele seja nominal (ver `voto-artefato.ts`). Com dois
+ * ou mais, o padrão deixa de ser "o relator virou o colegiado" e pode ser outra coisa — e apagar
+ * voto por hipótese larga é o modo de falha mais caro que existe aqui.
+ */
+const REPARAR_VOTO_ARTEFATO = true;
+/** Saldo para apagar um artefato e deixar o laço principal refazê-lo. */
+const RESERVA_POR_ARTEFATO_MS = 600;
 /**
  * ⚠️ Fase 33 — a reserva de escrita, a fila priorizada e o skip moram em
  * `@/lib/server/fila-de-diagnostico`, com a medição do defeito no docblock de lá. A decisão saiu
@@ -328,8 +355,97 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Falha ao listar votos existentes." }, { status: 500 });
   }
   const comVoto = new Set<string>((votosRes.data ?? []).map((r) => r.deliberacao_id));
-  const semVotoTotal = finais.filter((d: any) => !comVoto.has(d.id));
   const leituraCompleta = !levesRes.truncated && !votosRes.truncated;
+
+  // ═══ Fase 34 — APAGA o voto que a FONTE não podia ter produzido ═════════════
+  //
+  // ⚠️ Isto roda ANTES de `semVotoTotal` de propósito: a deliberação liberada entra na população da
+  // MESMA rodada e é refeita com o colegiado inferido, sem esperar a próxima. Refazer é o passo que
+  // já existe; o que faltava era liberar.
+  let artefatosApagados = 0;
+  let artefatosCandidatos = 0;
+  const amostraArtefato: RastroDeVotoApagado[] = [];
+  /** O rastro COMPLETO, que vai para a auditoria antes de qualquer apagamento. */
+  const rastroCompleto: RastroDeVotoApagado[] = [];
+  const liberadas = new Set<string>();
+  {
+    // Só as deliberações de agência cuja ATA não nomina — é a população inteira do defeito, e ela é
+    // pequena por construção (a ARTESP e a ANTT; a ANM nomina parcialmente e fica de fora).
+    const candidatasArtefato = (finais as any[]).filter((d) =>
+      comVoto.has(d.id) && d.tipo_documento === "ata" && d.documento_pai_id
+      && !fonteNominaVotos(siglaDe(d.agencia_id), "ata"));
+
+    if (candidatasArtefato.length > 0 && hasBudget(deadlineAt, RESERVA_POR_ARTEFATO_MS * 4)) {
+      // Os votos DESSAS linhas, em lotes — não uma consulta por deliberação (o N+1 da Fase 29).
+      const votosDelas = await lerEmLotes<{ deliberacao_id: string; diretor_id: string; is_nominal: boolean }>(
+        db, {
+          tabela: "votos", select: "deliberacao_id, diretor_id, is_nominal",
+          coluna: "deliberacao_id", valores: candidatasArtefato.map((d) => String(d.id)),
+          label: "materializar/votos-para-artefato",
+        });
+      if (!votosDelas.error) {
+        const porDelib = new Map<string, Array<{ diretor_id: string; is_nominal: boolean }>>();
+        for (const v of votosDelas.data ?? []) {
+          const lista = porDelib.get(v.deliberacao_id) ?? [];
+          lista.push({ diretor_id: v.diretor_id, is_nominal: Boolean(v.is_nominal) });
+          porDelib.set(v.deliberacao_id, lista);
+        }
+        // Primeiro IDENTIFICA todos, sem apagar nada.
+        const paraApagar: Array<{ id: string; votos: Array<{ diretor_id: string; is_nominal: boolean }> }> = [];
+        for (const d of candidatasArtefato) {
+          const votos = porDelib.get(String(d.id)) ?? [];
+          const sigla = siglaDe(d.agencia_id);
+          if (!votoNominalImpossivel({
+            sigla, tipo_documento: d.tipo_documento, tem_pai: Boolean(d.documento_pai_id), votos,
+          })) continue;
+          artefatosCandidatos++;
+          rastroCompleto.push(...rastroDoApagamento(String(d.id), votos, sigla));
+          paraApagar.push({ id: String(d.id), votos });
+        }
+        amostraArtefato.push(...rastroCompleto.slice(0, 20));
+
+        /**
+         * ⚠️ O RASTRO VEM ANTES DO APAGAMENTO, e a ordem é a regra, não estilo.
+         *
+         * O usuário exigiu: *"não apague os votos antigos sem rastro"*. Aqui não há transação — se
+         * eu apagasse primeiro e a auditoria falhasse depois, o voto teria sumido sem registro, que
+         * é exatamente o que ele proibiu. Gravando antes, a falha da auditoria ABORTA o apagamento
+         * e nada se perde. O custo é uma linha de auditoria a mais se o apagamento não completar,
+         * e isso é assimetricamente melhor.
+         */
+        const podeApagar = REPARAR_VOTO_ARTEFATO && !dryRun && paraApagar.length > 0
+          && await exigirEscrita(
+            db.from("votos_retroativos_audit").insert({
+              nome_detectado: "(reparo de voto nominal impossivel — fonte que nao nomina)",
+              deliberacoes_afetadas: paraApagar.length,
+              votos_criados: 0,
+              votos_ignorados_fora_mandato: 0,
+              detalhe: {
+                tipo: "voto_artefato_removido",
+                motivo: "CAPACIDADE_NOMINAL da fonte e 'nenhum'; voto nominal nao pode vir dela",
+                votos_a_remover: rastroCompleto.length,
+                linhas: rastroCompleto,
+              },
+            }),
+            "rastro do apagamento de voto artefato");
+
+        if (podeApagar) {
+          for (const alvo of paraApagar) {
+            if (!hasBudget(deadlineAt, RESERVA_POR_ARTEFATO_MS)) { restantes = true; break; }
+            const ok = await exigirEscrita(
+              db.from("votos").delete().eq("deliberacao_id", alvo.id), `artefato de ${alvo.id}`);
+            if (ok) {
+              artefatosApagados += alvo.votos.length;
+              comVoto.delete(alvo.id);
+              liberadas.add(alvo.id);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  const semVotoTotal = finais.filter((d: any) => !comVoto.has(d.id));
 
   // ═══ PARTIÇÃO antes de gastar orçamento ═══
   // Duas categorias são PERMANENTEMENTE irresolvíveis e custam quase nada para calcular: fora de
@@ -428,7 +544,22 @@ export async function POST(req: NextRequest) {
       ? arr(raw.impedimentos)
       : arr(raw.nomes_votacao_impedido);
     const unanime = Boolean(raw.unanimidade_detectada);
-    const isAnttAtaItem = d.tipo_documento === "ata" && Boolean(raw.documento_antt_tipo);
+    /**
+     * ⚠️ O gate passa a sair da CAPACIDADE da fonte, não da presença de `documento_antt_tipo`.
+     *
+     * O campo era a prova de "isto é ata da ANTT" — e ele é exatamente o que a esteira perdia
+     * (`a4cd15f`). No PASSIVO ele está nulo, então o gate antigo dava `false` justamente nas linhas
+     * que precisam de reparo, e o relator voltaria a ser lido como votante nominal. Reparo que
+     * refaz o defeito não é reparo.
+     *
+     * `CAPACIDADE_NOMINAL['ANTT|ata'] = 'nenhum'` é uma afirmação sobre a FONTE, não sobre o que a
+     * esteira gravou: se o instrumento não nomina, o item tem de ir com `nomes: []` e receber o
+     * colegiado inferido — hoje, e para qualquer linha antiga.
+     */
+    const siglaDaDelib = siglaDe(d.agencia_id);
+    const fonteNaoNomina = !fonteNominaVotos(siglaDaDelib, "ata");
+    const isAnttAtaItem = d.tipo_documento === "ata"
+      && (Boolean(raw.documento_antt_tipo) || (fonteNaoNomina && Boolean(d.documento_pai_id)));
 
     // ⚠️ Fase 28 — a checagem de janela de mandatos e a de escopo SAÍRAM daqui para a partição,
     // antes do laço. Não é reorganização: dentro do laço elas só contavam o que a rodada alcançava,
@@ -781,6 +912,15 @@ export async function POST(req: NextRequest) {
      * `diagnosticos_ja_iguais` é o que o skip dispensou por já estar no banco com o mesmo valor —
      * numa esteira que já convergiu, é ESSE número que fica grande, não o de gravados.
      */
+    /**
+     * ⚠️ Fase 34 — o reparo do voto ARTEFATO. `regra_ligada` viaja junto para o número não depender
+     * de o leitor saber o valor da constante: `artefatos_candidatos: 44` com `regra_ligada: false`
+     * é medição, não conserto.
+     */
+    artefatos_candidatos: artefatosCandidatos,
+    artefatos_apagados: artefatosApagados,
+    artefato_regra_ligada: REPARAR_VOTO_ARTEFATO,
+    artefato_amostra: amostraArtefato.slice(0, 10),
     diagnosticos_candidatos: patchPorDeliberacao.size,
     diagnosticos_ja_iguais: diagnosticosJaIguais,
     examinados,
