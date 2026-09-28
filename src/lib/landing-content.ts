@@ -194,6 +194,49 @@ export const METODO_DO_RADAR: readonly string[] = [
     "não escondida. É por isso que os painéis mostram o que falta cobrir.",
 ] as const;
 
+/**
+ * OS EVENTOS JÁ REALIZADOS — curados do deck institucional que o usuário enviou.
+ *
+ * ⚠️ POR QUE CURADO E NÃO DO CALENDÁRIO: `fetchIrisEventos` lê o JSON-LD de
+ * irisregulacao.org/eventos/ e **filtra os FUTUROS**. Os realizados não vêm de lá, e as fotos não
+ * existem no site (medido: "Nenhuma galeria de fotos dos eventos está presente"). A única fonte das
+ * fotos é o deck, e é por isso que esta lista existe em vez de sair de uma busca.
+ *
+ * ⚠️ E O DECK E O CALENDÁRIO DISCORDAM EM QUATRO. Registro aqui, em vez de escolher em silêncio:
+ *   · Summit Future Minerals ....... deck 26/02/26 · calendário 28/02/2026   (DATA)
+ *   · Simpósio IRIS FreeFlow ....... calendário: "Seminário Iris Free Flow"  (NOME)
+ *   · Lançamento Law Infra ......... calendário: "Energia e Judiciário (LAWINFRA)"  (NOME)
+ *   · 1º Fórum IRIS de Negócios ..... calendário: "1º Fórum Brasil-China de Energia e Mineração"
+ * Vale o DECK, porque foi o material que o usuário mandou como sendo "as informações de cada
+ * evento". A divergência fica escrita para ele decidir se quer o nome do calendário.
+ *
+ * ⚠️ E DUAS PÁGINAS DO DECK NÃO ENTRARAM: "Acesso aos Painéis Temáticos" e "Organização de Missão
+ * Internacional" são PRODUTO (eyebrow "PRODUTOS EXCLUSIVOS", texto de oferta, selo de desconto para
+ * associados), não evento realizado. Pô-las aqui faria a seção de eventos vender serviço.
+ *
+ * A foto de cada um está em `public/eventos/<slug>.jpg`, recortada da página do deck, e o
+ * componente confere o DISCO antes de usar.
+ */
+export interface EventoRealizado {
+  titulo: string;
+  /** ISO, como o deck declara em "Painel realizado dia DD/MM/AA". */
+  data: string;
+  /** Nome do arquivo em `public/eventos/`. */
+  foto: string;
+}
+
+export const EVENTOS_REALIZADOS: readonly EventoRealizado[] = [
+  { titulo: "1º Fórum IRIS de Negócios em Energia e Mineração", data: "2026-09-10", foto: "1-forum-iris-de-negocios-em-energia-e-mineracao.jpg" },
+  { titulo: "Seminário IRIS do Setor Metroferroviário", data: "2026-08-06", foto: "seminario-iris-do-setor-metroferroviario.jpg" },
+  { titulo: "Lançamento Law Infra", data: "2026-06-08", foto: "lancamento-law-infra.jpg" },
+  { titulo: "Simpósio IRIS FreeFlow", data: "2026-03-26", foto: "simposio-iris-freeflow.jpg" },
+  { titulo: "1º Fórum Brasil de Regulação", data: "2026-03-05", foto: "1-forum-brasil-de-regulacao.jpg" },
+  { titulo: "Summit Future Minerals", data: "2026-02-26", foto: "summit-future-minerals.jpg" },
+  { titulo: "Transformação Digital", data: "2025-11-07", foto: "transformacao-digital.jpg" },
+  { titulo: "Novo Marco Legal do Setor Portuário", data: "2025-10-08", foto: "novo-marco-legal-do-setor-portuario.jpg" },
+  { titulo: "Painel IRIS PL 733/25", data: "2025-10-08", foto: "painel-iris-pl-733-25.jpg" },
+] as const;
+
 /** Canais institucionais — os mesmos já usados pela newsletter, para não haver duas verdades. */
 export const CANAIS = {
   instagram: "https://www.instagram.com/iris.regulacao/",

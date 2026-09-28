@@ -545,3 +545,18 @@
   border-radius: 9999px;
   background: var(--lp-gold);
 }
+
+/* ── O CARD DE EVENTO REALIZADO ────────────────────────────────────────────────────────────────
+   Sem hover que levanta: são nove cards numa grade, e o movimento de todos ao passar o mouse
+   pesa a página. O que muda no hover é só a foto, sutilmente.
+   ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.lp-evento {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(28, 28, 33, 0.1);
+  background: #fff;
+}
+.lp-evento img { transition: transform 300ms ease; }
+.lp-evento:hover img { transform: scale(1.03); }

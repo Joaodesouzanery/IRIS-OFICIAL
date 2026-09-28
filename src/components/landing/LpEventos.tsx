@@ -4,7 +4,7 @@ import { join } from "path";
 import { CalendarDays, ArrowUpRight } from "lucide-react";
 import { unstable_cache } from "next/cache";
 import { fetchIrisEventos, type IrisEvento } from "@/lib/server/iris-eventos";
-import { CANAIS } from "@/lib/landing-content";
+import { CANAIS, EVENTOS_REALIZADOS } from "@/lib/landing-content";
 
 /**
  * Eventos — lidos AO VIVO do calendário do próprio IRIS.
@@ -63,14 +63,71 @@ export async function LpEventos() {
 
   return (
     <section id="eventos" className="py-20 sm:py-24" style={{ background: "var(--lp-paper)" }}>
+      {/* ── O QUE JÁ ACONTECEU, com foto ─────────────────────────────────────────────────────
+          ⚠️ Vem ANTES da agenda a pedido do usuário, e a ordem faz sentido: prova social é o que
+          um visitante novo procura primeiro. A agenda responde "posso ir?"; esta seção responde
+          "vale a pena?".                                                                      */}
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <p className="lp-eyebrow" style={{ color: "#8a6d1f" }}>
+          Eventos realizados
+        </p>
+        <h2 className="lp-h2 mt-5 max-w-2xl" style={{ color: "var(--lp-ink)" }}>
+          {EVENTOS_REALIZADOS.length} painéis, fóruns e seminários já realizados
+        </h2>
+        <p className="lp-lead mt-4 max-w-2xl" style={{ color: "var(--lp-muted-ink)" }}>
+          Encontros que reuniram reguladores, setor produtivo e academia em torno dos temas que
+          movem a regulação brasileira.
+        </p>
+
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {EVENTOS_REALIZADOS.map((e) => {
+            // ⚠️ Confere o DISCO, como as logos das agências: foto ausente cai num bloco desenhado
+            // em vez de virar ícone quebrado. Numa página institucional isso é pior que não ter foto.
+            const temFoto = existsSync(join(process.cwd(), "public", "eventos", e.foto));
+            return (
+              <li key={e.foto} className="lp-evento">
+                <span className="relative block aspect-[16/9] overflow-hidden rounded-t-lg"
+                  style={{ background: "var(--lp-navy)" }}>
+                  {temFoto ? (
+                    <Image
+                      src={`/eventos/${e.foto}`}
+                      alt=""
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <span className="absolute inset-0 flex items-center justify-center" aria-hidden>
+                      <span className="font-mono text-xs uppercase tracking-[0.3em]"
+                        style={{ color: "var(--lp-gold)" }}>IRIS</span>
+                    </span>
+                  )}
+                </span>
+                <span className="block px-5 pb-5 pt-4">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.16em]"
+                    style={{ color: "#8a6d1f" }}>
+                    {dataLonga(e.data)}
+                  </span>
+                  <span className="mt-2 block text-base font-semibold leading-snug"
+                    style={{ color: "var(--lp-ink)" }}>
+                    {e.titulo}
+                  </span>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/* ── E DEPOIS a agenda dos próximos, do calendário ao vivo ──────────────────────────── */}
+      <div className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="lp-eyebrow" style={{ color: "#8a6d1f" }}>
-              Agenda
+              Próximos
             </p>
             <h2 className="lp-h2 mt-5 max-w-2xl" style={{ color: "var(--lp-ink)" }}>
-              Painéis, fóruns e seminários
+              Agenda
             </h2>
           </div>
           <a
