@@ -85,8 +85,19 @@ export async function requireAdmin(req: NextRequest): Promise<NextResponse | nul
       .eq("active", true)
       .maybeSingle();
 
+    /**
+     * ⚠️ ERRO DE BANCO é 503, não 403 (Fase 35). Antes o erro era só logado e a execução caía no
+     * `!admin` logo abaixo — devolvendo **403 "sem permissão"** a um admin legítimo que não está na
+     * allowlist de env nem tem `app_metadata`. O 403 faz a pessoa acreditar que PERDEU o acesso, e
+     * manda procurar o problema no lugar errado. Continua FAIL-CLOSED (ninguém entra), mas dizendo a
+     * verdade: não sabemos, tente de novo.
+     */
     if (error) {
       console.warn("[auth] Falha ao consultar admin_users:", error.message);
+      return NextResponse.json(
+        { error: "Não foi possível verificar sua permissão agora. Tente novamente em instantes." },
+        { status: 503 },
+      );
     }
 
     if (!admin || !["owner", "admin"].includes(String(admin.role))) {
@@ -95,8 +106,13 @@ export async function requireAdmin(req: NextRequest): Promise<NextResponse | nul
 
     return null;
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Falha de autenticação";
-    return NextResponse.json({ error: message }, { status: 500 });
+    /**
+     * ⚠️ A mensagem CRUA ia para o cliente, e ela nomeia variáveis de ambiente do deploy:
+     * `createSupabaseServerClient()` lança com "NEXT_PUBLIC_SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY
+     * são obrigatórios...". Detalhe fica no log do servidor; ao cliente vai o genérico.
+     */
+    console.error("[auth] Falha inesperada no guard de admin:", error);
+    return NextResponse.json({ error: "Falha de autenticação" }, { status: 500 });
   }
 }
 
