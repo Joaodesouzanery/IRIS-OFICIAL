@@ -1,9 +1,10 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Database, Loader2, Mail } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { origemDoNavegador, sanitizeNext } from "@/lib/next-seguro";
 
 const HAS_SUPABASE = Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
@@ -18,7 +19,14 @@ export default function LoginPage() {
 function LoginContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const next = searchParams.get("next") ?? "/dashboard/painel-regulatorio";
+  /**
+   * ⚠️ SANEADO na origem, não em cada uso. `next` vai para dois lugares (o `router.replace` do
+   * efeito e o do botão), e validar em cada um deles seria a assimetria que sempre volta — basta
+   * alguém acrescentar um terceiro. Validando aqui, os usos herdam um valor que já é relativo e
+   * da própria origem. Ver `src/lib/next-seguro.ts`.
+   */
+  const nextCru = searchParams.get("next");
+  const next = useMemo(() => sanitizeNext(nextCru, origemDoNavegador()), [nextCru]);
   const reason = searchParams.get("reason");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

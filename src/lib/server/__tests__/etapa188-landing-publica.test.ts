@@ -14,6 +14,7 @@
  */
 
 import { describe, it, expect } from "vitest";
+import { DESTINO_PADRAO } from "../../next-seguro";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { AGENCIAS_FEDERAIS, SIGLAS_COM_ESTEIRA_DE_VOTOS } from "@/lib/agencias-federais";
@@ -338,7 +339,17 @@ describe("etapa188 · o rótulo virou Radar, e a rota não", () => {
   it("⚠️ e a ROTA continua `/dashboard/painel-regulatorio` — link salvo não pode quebrar", () => {
     expect(existsSync(join(RAIZ, "src/app/dashboard/painel-regulatorio/page.tsx"))).toBe(true);
     expect(ler("src/components/layout/Sidebar.tsx")).toMatch(/href: "\/dashboard\/painel-regulatorio"/);
-    // O login e o callback ainda mandam para lá depois de autenticar.
-    expect(ler("src/app/login/page.tsx")).toMatch(/\/dashboard\/painel-regulatorio/);
+    /**
+     * ⚠️ ATUALIZADO na Fase 35. A expectativa casava o literal dentro de `login/page.tsx`, e o
+     * destino saiu de lá: agora é `DESTINO_PADRAO` em `src/lib/next-seguro.ts`, compartilhado com o
+     * `/auth/callback` porque os dois passaram a sanear o `?next=` (o filtro por prefixo aceitava
+     * `/\evil.com` e redirecionava para fora).
+     *
+     * A troca é para MAIS forte, não menos: fixa o VALOR do destino em vez do texto de um arquivo, e
+     * passa a cobrir o callback — que o comentário antigo já prometia e ninguém conferia.
+     */
+    expect(DESTINO_PADRAO).toBe("/dashboard/painel-regulatorio");
+    expect(ler("src/app/login/page.tsx")).toMatch(/sanitizeNext\(/);
+    expect(ler("src/app/auth/callback/route.ts")).toMatch(/sanitizeNext\(/);
   });
 });

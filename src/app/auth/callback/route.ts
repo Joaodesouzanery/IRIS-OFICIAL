@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { sanitizeNext } from "@/lib/next-seguro";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
@@ -17,7 +18,13 @@ type CookieWriteOptions = {
 export async function GET(request: Request) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get("code");
-  const next = requestUrl.searchParams.get("next") ?? "/dashboard/painel-regulatorio";
+  /**
+   * ⚠️ Rota PÚBLICA e server-side, no fluxo de magic link e de recuperação de senha. Sem sanear,
+   * `?next=https://evil.com` redirecionava para fora: `new URL(next, base)` só usa a base quando
+   * `next` é relativo. Ver `src/lib/next-seguro.ts` — a validação é por origem resolvida, porque
+   * filtro por prefixo aceita `/\\evil.com` e `/<tab>/evil.com` (medido).
+   */
+  const destino = sanitizeNext(requestUrl.searchParams.get("next"), requestUrl.origin);
 
   if (code) {
     const cookieStore = await cookies();
@@ -41,5 +48,5 @@ export async function GET(request: Request) {
     await supabase.auth.exchangeCodeForSession(code);
   }
 
-  return NextResponse.redirect(new URL(next, requestUrl.origin));
+  return NextResponse.redirect(new URL(destino, requestUrl.origin));
 }
