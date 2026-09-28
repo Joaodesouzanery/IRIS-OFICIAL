@@ -452,7 +452,13 @@ describe("etapa187 · ⚠️ o viewer CONSEGUE entrar — a regressão que trava
 
   it("negar passou a significar SESSÃO INVÁLIDA, e 5xx não pede para tentar de novo", () => {
     expect(LOGIN).toMatch(/const problemaDeServidor = !me \|\| me\.status >= 500;/);
-    expect(LOGIN).toMatch(/setSessaoInvalida\(!problemaDeServidor\)/);
+    /**
+     * ⚠️ INDIFERENTE AO NOME DO ESCRITOR (Fase 35). A expectativa exigia `setSessaoInvalida(...)`
+     * literal, e o conserto do laço infinito passou as escritas por `marcarSessaoInvalida` (que
+     * mantém o `ref` em sincronia). A propriedade é o ARGUMENTO — a flag vem da negação do problema
+     * de servidor, para 5xx não pedir login de novo —, não o nome de quem a escreve.
+     */
+    expect(LOGIN).toMatch(/(?:set|marcar)SessaoInvalida\(!problemaDeServidor\)/);
   });
 
   it("⚠️ o link público para /setup-owner saiu do login", () => {

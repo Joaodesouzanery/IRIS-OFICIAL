@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useMemo, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Database, Loader2, Mail } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
@@ -36,6 +36,31 @@ function LoginContent() {
   // ⚠️ Era `accessDenied`, e significava "não é admin" — o que NÃO é motivo para barrar.
   // Agora significa o que o nome diz: a sessão não vale.
   const [sessaoInvalida, setSessaoInvalida] = useState(false);
+  /**
+   * ⚠️ ESPELHO EM `ref`, e ele é o conserto de um LAÇO INFINITO (Fase 35).
+   *
+   * O efeito abaixo tinha `sessaoInvalida` nas dependências, e o ramo do listener não tinha a guarda
+   * que o ramo irmão tinha. Confirmei a peça que fechava o ciclo no `@supabase/auth-js` instalado
+   * (`GoTrueClient.js`, `onAuthStateChange` → `_emitInitialSession(id)`): **cada subscribe novo
+   * reemite `INITIAL_SESSION`** com a sessão do cookie. Com cookie presente e token recusado pelo
+   * servidor (expirado sem renovação, refresh rotacionado, JWT de outro projeto):
+   *
+   *   INITIAL_SESSION → zera a flag → `entrar()` → 401 → liga a flag → o efeito RE-EXECUTA →
+   *   re-subscribe → novo INITIAL_SESSION → … para sempre
+   *
+   * Uma chamada a `/api/v1/auth/me` por volta, e cada uma faz `getUser(token)` no servidor: um
+   * round-trip ao Supabase por iteração, numa rota sem rate limit. Auto-DoS, e na tela a impressão
+   * é de travamento.
+   *
+   * Lido por `ref`, o valor não entra nas dependências e o efeito assina UMA vez. O `ref` e o estado
+   * andam juntos porque toda escrita passa por `marcarSessaoInvalida` — é isso que impede a
+   * dessincronia que um `ref` solto convidaria.
+   */
+  const sessaoInvalidaRef = useRef(false);
+  const marcarSessaoInvalida = useCallback((valor: boolean) => {
+    sessaoInvalidaRef.current = valor;
+    setSessaoInvalida(valor);
+  }, []);
 
   /**
    * ⚠️ Fase 32 — ESTA FUNÇÃO ERA O BUG, e ele trancava exatamente quem o produto diz aceitar.
@@ -80,7 +105,7 @@ function LoginContent() {
             ? payload?.error ?? "O servidor não respondeu. Se persistir, confira /api/v1/system/status."
             : payload?.error ?? "Sua sessão não é mais válida. Entre novamente.",
         );
-        setSessaoInvalida(!problemaDeServidor);
+        marcarSessaoInvalida(!problemaDeServidor);
         return;
       }
 
@@ -94,32 +119,38 @@ function LoginContent() {
 
       router.replace(next);
     },
-    [next, router],
+    // `marcarSessaoInvalida` é estável (`useCallback` com deps vazias), então `entrar` também é —
+    // e é essa estabilidade que faz o efeito abaixo assinar uma vez só.
+    [next, router, marcarSessaoInvalida],
   );
 
   useEffect(() => {
     if (!HAS_SUPABASE) return;
     const supabase = createSupabaseBrowserClient();
-    supabase.auth.getSession().then(async ({ data }) => {
-      const session = data.session;
-      setUserEmail(session?.user.email ?? null);
-      if (session?.access_token && !sessaoInvalida) await entrar(session.access_token);
-    });
+    /**
+     * ⚠️ UMA assinatura, e SEM o `getSession()` que existia aqui.
+     *
+     * O `getSession()` era redundante: `onAuthStateChange` já reemite `INITIAL_SESSION` com a sessão
+     * do cookie para cada subscriber novo. Os dois juntos chamavam `entrar()` EM PARALELO em toda
+     * visita — dois `GET /auth/me`, dois `router.replace`, e no primeiro login do owner dois POST
+     * concorrentes em `bootstrap-owner`, cuja corrida no `upsertAdminUser` (SELECT-depois-INSERT)
+     * falha em silêncio porque o resultado é ignorado por desenho.
+     */
     const { data: listener } = supabase.auth.onAuthStateChange(async (_event, session) => {
       setUserEmail(session?.user.email ?? null);
-      if (session?.access_token) {
-        setSessaoInvalida(false);
-        await entrar(session.access_token);
-      }
+      if (!session?.access_token) return;
+      // A guarda que faltava neste ramo. Sem ela, a flag era zerada e o 401 se repetia sem fim.
+      if (sessaoInvalidaRef.current) return;
+      await entrar(session.access_token);
     });
     return () => listener.subscription.unsubscribe();
-  }, [sessaoInvalida, entrar]);
+  }, [entrar]);
 
   async function signIn() {
     if (!email.trim() || !password) return;
     setBusy(true);
     setMessage(null);
-    setSessaoInvalida(false);
+    marcarSessaoInvalida(false);
     try {
       const supabase = createSupabaseBrowserClient();
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -127,7 +158,20 @@ function LoginContent() {
         password,
       });
       if (error) throw error;
-      if (data.session?.access_token) await entrar(data.session.access_token);
+      /**
+       * ⚠️ O `else` FALTAVA, e a falha era silenciosa: quando o Supabase autentica mas não devolve
+       * sessão (e-mail não confirmado, MFA pendente, identidade a vincular), `busy` voltava a
+       * `false`, nenhuma mensagem aparecia, e o formulário ficava parado. Clicar em "Entrar" e não
+       * acontecer nada é outro dos sintomas de "a autenticação está estranha".
+       */
+      if (data.session?.access_token) {
+        await entrar(data.session.access_token);
+      } else {
+        setMessage(
+          "Credenciais aceitas, mas a sessão não foi criada. Se o e-mail ainda não foi confirmado, " +
+            "confirme-o e tente novamente.",
+        );
+      }
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Falha ao entrar.");
     } finally {
@@ -139,7 +183,7 @@ function LoginContent() {
     const supabase = createSupabaseBrowserClient();
     await supabase.auth.signOut();
     setUserEmail(null);
-    setSessaoInvalida(false);
+    marcarSessaoInvalida(false);
     setPassword("");
     setMessage("Sessão encerrada. Informe o e-mail global para entrar.");
   }
