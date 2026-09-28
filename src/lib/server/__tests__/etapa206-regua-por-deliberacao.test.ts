@@ -254,3 +254,79 @@ describe("etapa206 · a rota e a tela usam a régua nova", () => {
     expect(TELA).toMatch(/totais\.diretores_com_voto_parcial/);
   });
 });
+
+describe("etapa206 · ⚠️ o SQL de QA repete o predicado do CÓDIGO, e não os dois defeitos do anterior", () => {
+  /**
+   * ⚠️ SEM COMENTÁRIOS, e foi a TERCEIRA vez nesta fase que eu tropecei nisto. As expectativas
+   * negativas achavam `JOIN public.votos` e `raw_extracted` dentro do cabeçalho que EXPLICA por que
+   * eles não podem aparecer. Um scanner que lê comentário mede a prosa, não o programa — e em SQL o
+   * comentário vai de `--` até o fim da linha.
+   */
+  const semComentariosSql = (t: string) => t.replace(/--[^\n]*/g, " ");
+  const SQL = semComentariosSql(ler("docs/qa-fase35.sql"));
+  const FONTE_PREDICADO = ler("src/lib/server/regulatory-documents.ts");
+
+  it("não volta à WHITELIST que apagou a ARTESP inteira", () => {
+    /**
+     * O SQL da Fase 34 filtrava `tipo_documento = 'ata' AND documento_pai_id IS NOT NULL`. A ARTESP
+     * publica deliberação individual — cada linha é sua própria mãe —, então o filtro removeu a
+     * agência toda, e o bloco somou 37 reuniões enquanto o placar somava 80. O predicado real é
+     * BLACKLIST e aceita `deliberacao` sem pai.
+     */
+    expect(SQL, "o ramo do `deliberacao` desapareceu — a ARTESP sai do QA outra vez").toMatch(
+      /tipo_documento IN \('deliberacao','resolucao','portaria'\)/,
+    );
+    expect(SQL, "o ramo da ata precisa ser uma ALTERNATIVA, não o filtro único").toMatch(/\bOR\b/);
+  });
+
+  it("⚠️ a blacklist do SQL é a MESMA do código — derivada, não transcrita de memória", () => {
+    // `TIPOS_NAO_FINAIS` é exportado; os subtipos vivem numa const de módulo, lida da fonte.
+    const tipos = [...FONTE_PREDICADO.matchAll(/TIPOS_NAO_FINAIS = \[([^\]]*)\]/g)][0]?.[1] ?? "";
+    const doCodigo = [...tipos.matchAll(/"([a-z_]+)"/g)].map((m) => m[1]);
+    expect(doCodigo.length, "não consegui ler TIPOS_NAO_FINAIS do código").toBeGreaterThanOrEqual(3);
+    for (const t of doCodigo) {
+      expect(SQL, `o tipo não-final «${t}» não está no SQL — o QA passaria a contá-lo como decisão`)
+        .toContain(`'${t}'`);
+    }
+    const subtipos = [...FONTE_PREDICADO.matchAll(/SUBTIPOS_SEM_DECISAO[^=]*= new Set\(\[([^\]]*)\]/g)][0]?.[1] ?? "";
+    const subDoCodigo = [...subtipos.matchAll(/"([a-z_]+)"/g)].map((m) => m[1]);
+    expect(subDoCodigo.length, "não consegui ler SUBTIPOS_SEM_DECISAO do código").toBeGreaterThanOrEqual(2);
+    for (const t of subDoCodigo) {
+      expect(SQL, `o subtipo sem decisão «${t}» não está no SQL`).toContain(`'${t}'`);
+    }
+  });
+
+  it("o universo NÃO sai de `JOIN votos` — foi por isso que a 1.029 sumiu do QA anterior", () => {
+    expect(SQL, "voltou o JOIN que apaga reunião sem voto nenhum").not.toMatch(
+      /JOIN\s+public\.votos/i,
+    );
+    // A presença do voto é testada por EXISTS, que preserva a linha no denominador.
+    expect(SQL).toMatch(/EXISTS \(SELECT 1 FROM public\.votos/);
+  });
+
+  it("usa `raw_extraction` (viva) e não `raw_extracted` (legado da 001)", () => {
+    expect(SQL).toMatch(/raw_extraction/);
+    expect(SQL, "`raw_extracted` é legado e ninguém escreve nela").not.toMatch(/raw_extracted/);
+  });
+
+  it("a agência do mandato vem por JOIN em diretores — `mandatos` não tem `agencia_id`", () => {
+    const i = SQL.indexOf("mand AS (");
+    const bloco = SQL.slice(i, SQL.indexOf("),", i));
+    expect(bloco).toMatch(/JOIN public\.diretores d ON d\.id = m\.diretor_id/);
+    expect(bloco, "o filtro do motor de voto tem de estar aqui, senão o QA discorda do motor")
+      .toMatch(/fonte_dado <> 'automatico'/);
+    expect(bloco).toMatch(/review_status = 'aprovado'/);
+  });
+
+  it("e as três agências colegiadas entram — inclusive a ARTESP", () => {
+    expect(SQL).toMatch(/sigla IN \('ANTT','ANM','ARTESP'\)/);
+  });
+
+  it("⚠️ tem bloco para as DUAS perguntas que eu não podia responder sem medir", () => {
+    expect(SQL, "a 1.029 precisa de bloco próprio: existe com zero voto?").toMatch(/4_a_1029_da_antt/);
+    expect(SQL, "de qual agência eram os 51 votos apagados").toMatch(/5_agencia_dos_apagados/);
+    // E o bloco dos apagados pergunta se as deliberações foram REFEITAS — é isso que distingue
+    // "reparo funcionou" de "removi voto que nada refez".
+    expect(SQL).toMatch(/'refeitas'/);
+  });
+});
