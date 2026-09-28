@@ -103,7 +103,9 @@ export async function GET(req: NextRequest) {
       () => db.from("mandatos")
         // Os MESMOS filtros do motor de voto (`getActiveDiretoresForVote`): mandato fabricado a
         // partir do próprio voto não pode ampliar o roster, e diretor rejeitado não entra.
-        .select("diretor_id, data_inicio, data_fim, diretores!inner(id, agencia_id, review_status)")
+        // ⚠️ `situacao` e `metadata` JÁ EXISTEM — o afastamento vive em `metadata->>'afastado_desde'`
+        // justamente para este select não depender de migration (ver `vote-inference.ts`).
+        .select("diretor_id, data_inicio, data_fim, diretores!inner(id, agencia_id, review_status, situacao, metadata)")
         .neq("fonte_dado", "automatico")
         .eq("diretores.review_status", "aprovado")
         .order("id"),
@@ -125,6 +127,14 @@ export async function GET(req: NextRequest) {
     mandatos.push({
       diretor_id: dir.id, agencia_id: dir.agencia_id,
       data_inicio: m.data_inicio ?? null, data_fim: m.data_fim ?? null,
+      /**
+       * ⚠️ A janela de AFASTAMENTO propagada, e ela é o que impede o placar de discordar do motor de
+       * voto. Sem isto, `colegiadoNaData` contaria um diretor afastado como esperado enquanto
+       * `getActiveDiretoresForVote` não criaria voto para ele — e a reunião apareceria eternamente
+       * incompleta por um motivo que não é defeito nosso nem cadastro pendente.
+       */
+      afastado_desde: (dir.metadata?.afastado_desde as string | null) ?? null,
+      afastado_ate: (dir.metadata?.afastado_ate as string | null) ?? null,
     });
   }
 

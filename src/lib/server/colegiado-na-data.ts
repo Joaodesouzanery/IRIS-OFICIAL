@@ -28,6 +28,30 @@ export interface MandatoJanela {
   agencia_id: string;
   data_inicio: string | null;
   data_fim: string | null;
+  /**
+   * ⚠️ AFASTAMENTO — e ele NÃO é fim de mandato (Fase 35).
+   *
+   * O QA mostrou o Caio Mário (ANM) faltando nas 84ª, 85ª e 86ª, e a pauta da 34ª REP já o chama de
+   * "Diretor afastado". Marcar `diretores.situacao = 'afastado'` era INERTE: nem este módulo nem
+   * `getActiveDiretoresForVote` leem `situacao`, então ele continuava no colegiado esperado, continuava
+   * em `faltando`, e as três reuniões da ANM não podiam fechar POR DEFINIÇÃO — o placar ficaria em 0/3
+   * para sempre, com um ruído que nenhum trabalho de esteira resolveria.
+   *
+   * E fechar o mandato dele na data do afastamento seria gravar coisa FALSA: afastamento é suspensão
+   * do exercício, o mandato continua. Por isso a janela é separada — o mandato segue vigente, e o
+   * colegiado ESPERADO A VOTAR exclui quem estava afastado naquele dia.
+   */
+  afastado_desde?: string | null;
+  /** Nulo com `afastado_desde` preenchido = afastamento ainda em curso. */
+  afastado_ate?: string | null;
+}
+
+/** Estava afastado NA DATA? Bordas inclusivas, como a janela de mandato. */
+export function afastadoNaData(m: MandatoJanela, data: string): boolean {
+  if (!m.afastado_desde) return false;
+  if (m.afastado_desde > data) return false;
+  if (m.afastado_ate && m.afastado_ate < data) return false;
+  return true;
 }
 
 export interface ComparacaoDoColegiado {
@@ -52,6 +76,8 @@ export function colegiadoNaData(
     if (!m.data_inicio || m.data_inicio > data) continue;
     // `data_fim` nulo = mandato EM CURSO. Tratá-lo como encerrado zeraria todo colegiado atual.
     if (m.data_fim && m.data_fim < data) continue;
+    // ⚠️ Afastado na data não é esperado a votar — e não deixou de ter mandato. Ver `MandatoJanela`.
+    if (afastadoNaData(m, data)) continue;
     ids.add(m.diretor_id);
   }
   return [...ids];

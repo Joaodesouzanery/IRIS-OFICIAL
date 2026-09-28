@@ -1,6 +1,7 @@
 import type { TipoDocumento, VotoSugerido } from "@/types";
 import { findBestMatch, MATCH_REVIEW_THRESHOLD } from "@/lib/server/name-matcher";
 import { isTipoNaoFinal } from "@/lib/server/regulatory-documents";
+import { afastadoNaData } from "@/lib/server/colegiado-na-data";
 
 export type DiretorVoteRecord = {
   id: string;
@@ -126,7 +127,20 @@ export async function getActiveDiretoresForVote(
 
   const { data, error } = await db
     .from("mandatos")
-    .select("diretor_id, data_inicio, data_fim, diretores!inner(id, nome, nome_variantes, agencia_id, review_status)")
+    /**
+     * ⚠️ `situacao` e `metadata` são colunas que JÁ EXISTEM (`001` + ALTERs antigos) — de propósito.
+     *
+     * A regra do projeto é "deploy antes da migration é seguro", e aqui ela é crítica: se este
+     * `select` pedisse uma coluna ainda não criada, o PostgREST erraria, a função cairia no
+     * `if (error) return []` logo abaixo e o motor de voto pararia de produzir voto para TODAS as
+     * agências. Por isso a data do afastamento vive em `metadata->>'afastado_desde'` em vez de numa
+     * coluna nova: sem a migration os campos vêm nulos, ninguém é excluído, e o comportamento é o de
+     * hoje.
+     */
+    .select(
+      "diretor_id, data_inicio, data_fim, " +
+      "diretores!inner(id, nome, nome_variantes, agencia_id, review_status, situacao, metadata)",
+    )
     .eq("diretores.agencia_id", agenciaId)
     // Antirrecontaminação (ago/2026): mandato FABRICADO ('automatico', derivado de voto/1ª
     // aparição) nunca vira base para inferir MAIS voto — só mandato verificado/manual conta.
@@ -138,17 +152,51 @@ export async function getActiveDiretoresForVote(
 
   if (error || !data?.length) return [];
 
+  return rosterDasLinhas(data as any[], dataReuniao);
+}
+
+/**
+ * As linhas de `mandatos!inner(diretores)` viram o roster da data — parte PURA, exportada para poder
+ * ser exercida.
+ *
+ * ⚠️ Ela existe porque uma mutação sobreviveu: eu havia testado o afastamento no motor apenas
+ * conferindo que a chamada `afastadoNaData(` aparecia no arquivo, e prefixar a condição com `false &&`
+ * passava. Expectativa que procura texto canoniza a linha; só chamar a função prova o comportamento.
+ */
+export function rosterDasLinhas(linhas: any[], dataReuniao: string): DiretorVoteRecord[] {
   const unique = new Map<string, DiretorVoteRecord>();
-  for (const row of data as any[]) {
-    const diretor = row.diretores;
+  for (const row of linhas ?? []) {
+    const diretor = row?.diretores;
     if (!diretor?.id) continue;
+    /**
+     * ⚠️ AFASTAMENTO, com a MESMA regra de `colegiadoNaData` — as duas têm de concordar, senão o
+     * placar mede um colegiado e o motor cria voto para outro. É a razão declarada no docblock de
+     * `colegiado-na-data.ts`: "usar um conjunto diferente produziria um selo que discorda do motor".
+     *
+     * Afastamento é suspensão do exercício, não fim de mandato: o mandato continua no banco, e é o
+     * colegiado ESPERADO A VOTAR que o exclui naquela janela.
+     */
+    if (
+      afastadoNaData(
+        {
+          diretor_id: diretor.id,
+          agencia_id: String(diretor.agencia_id ?? ""),
+          data_inicio: null,
+          data_fim: null,
+          afastado_desde: (diretor.metadata?.afastado_desde as string | null) ?? null,
+          afastado_ate: (diretor.metadata?.afastado_ate as string | null) ?? null,
+        },
+        dataReuniao,
+      )
+    ) {
+      continue;
+    }
     unique.set(diretor.id, {
       id: diretor.id,
       nome: diretor.nome,
       nome_variantes: Array.isArray(diretor.nome_variantes) ? diretor.nome_variantes : [],
     });
   }
-
   return [...unique.values()];
 }
 
