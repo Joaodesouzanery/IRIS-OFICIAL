@@ -7,8 +7,16 @@ Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 35, 
 
 ### ⛔ DUAS MIGRATIONS A APLICAR (SQL Editor, idempotentes, forward-only)
 
-**1. `supabase/migrations/20260928120000_reunioes_serie_rederivar.sql`** — re-deriva `reunioes.serie`
-no passivo que o mojibake gravou como `"ordinaria"`.
+**1. `supabase/migrations/20260928140000_reunioes_serie_rederivar_v2.sql`** — re-deriva
+`reunioes.serie` no passivo que o mojibake gravou como `"ordinaria"`.
+
+⛔ **NÃO rode a `20260928120000` (v1)** — ela falha com `relation "_iris_serie_evidencia" does not
+exist` e está marcada no próprio arquivo. ⚠️ A causa **não foi determinada**: a
+`20260821130000_limpeza_residual_anm` usa a mesma forma e foi aplicada com sucesso, então a explicação
+fácil ("o editor não mantém a sessão entre instruções") é refutada pelo próprio repositório. A v2 não
+aposta em causa — **remove a dependência**, com a evidência num CTE dentro de cada `UPDATE`. A v1 não
+aplicou nada (o erro ocorreu antes de qualquer `UPDATE`, dentro de `BEGIN/COMMIT`), e a v2 é
+idempotente de qualquer forma.
 
 ⚠️ **Sem ela, a detecção de buracos de numeração fica CALADA.** `buracosDaSerie` agrupa por
 `(agência, série)` e só confia na faixa se `max - min <= 400` (`SALTO_MAXIMO_DA_SERIE`). Com a RDE
