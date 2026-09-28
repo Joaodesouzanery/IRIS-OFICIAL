@@ -37,11 +37,15 @@ import { lerTudo } from "@/lib/server/select-all-paged";
 import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
 import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
+import { RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
 import {
   buracosDaSerie, faltandoContraListagem, medirReuniao, resumirPorAgencia,
   type EntradaDeNumeracao, type ItemDaListagem, type ReuniaoParaPlacar,
 } from "@/lib/server/placar";
-import type { MandatoJanela } from "@/lib/server/colegiado-na-data";
+import {
+  planejarCompletar, paresPorAgencia, type DeliberacaoParcial,
+} from "@/lib/server/completar-colegiado";
+import { colegiadoNaData, type MandatoJanela } from "@/lib/server/colegiado-na-data";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -94,11 +98,22 @@ export async function GET(req: NextRequest) {
   const [delibsRes, votosRes, mandatosRes] = await Promise.all([
     lerTudo<any>(
       () => db.from("deliberacoes")
-        .select("id, agencia_id, numero_reuniao, data_reuniao, tipo_documento, documento_pai_id, resultado, reuniao_id, raw_extraction")
+        // ⚠️ `fundamento_decisao`, `decisoes_todas` e `resumo_pleito` entram porque a RECUSA por
+        // contestação usa a MESMA regex do materializador sobre o MESMO texto. Ler um campo
+        // diferente produziria um segundo veredito sobre o mesmo conceito — e a Fase 21 mediu o
+        // preço disso ("uma fonte por conceito").
+        .select("id, agencia_id, numero_reuniao, data_reuniao, tipo_documento, documento_pai_id, " +
+                "resultado, reuniao_id, raw_extraction, fundamento_decisao, decisoes_todas, resumo_pleito")
         .order("id"),
       "placar/deliberacoes"),
-    lerTudo<{ deliberacao_id: string; diretor_id: string }>(
-      () => db.from("votos").select("deliberacao_id, diretor_id").order("id"), "placar/votos"),
+    /**
+     * ⚠️ `is_nominal` entra na MESMA consulta (custo zero) porque ele decide uma RECUSA: fonte que
+     * não nomina ninguém com voto nominal presente é o VOTO ARTEFATO da Fase 34, e completar em
+     * volta dele multiplicaria o artefato por cinco em vez de apagá-lo.
+     */
+    lerTudo<{ deliberacao_id: string; diretor_id: string; is_nominal: boolean | null }>(
+      () => db.from("votos").select("deliberacao_id, diretor_id, is_nominal").order("id"),
+      "placar/votos"),
     lerTudo<any>(
       () => db.from("mandatos")
         // Os MESMOS filtros do motor de voto (`getActiveDiretoresForVote`): mandato fabricado a
@@ -139,11 +154,13 @@ export async function GET(req: NextRequest) {
   }
 
   const votantesPorDelib = new Map<string, Set<string>>();
+  const temNominalPorDelib = new Set<string>();
   for (const v of votosRes.data ?? []) {
     if (!v.deliberacao_id || !v.diretor_id) continue;
     const s = votantesPorDelib.get(v.deliberacao_id) ?? new Set<string>();
     s.add(v.diretor_id);
     votantesPorDelib.set(v.deliberacao_id, s);
+    if (v.is_nominal === true) temNominalPorDelib.add(v.deliberacao_id);
   }
 
   // ─── (a) A numeração, por (agência, série) ────────────────────────────────
@@ -265,6 +282,74 @@ export async function GET(req: NextRequest) {
   const medidas = [...porReuniao.values()].map((r) => medirReuniao(r, r.agencia_id, mandatos));
   const resumo = resumirPorAgencia(medidas);
 
+  /**
+   * ═══ COMPLETAR COLEGIADO PARCIAL — a MEDIÇÃO, e a escrita NÃO existe ═══
+   *
+   * O materializador só visita deliberação com ZERO voto; uma com 3 de 5 é pulada para sempre. É por
+   * isso que o José Fernando tem 1 voto em todo 2026 depois da migration que o restaurou. Aqui sai o
+   * número do que SERIA criado — e, mais importante, o que é RECUSADO e por quê
+   * (`src/lib/server/completar-colegiado.ts`).
+   *
+   * ⚠️ NÃO HÁ ESCRITA NESTE CAMINHO, e isso é deliberado: afirmar que alguém votou é a escrita mais
+   * cara desta esteira (a Fase 28 pegou um erro de leitura que produzia voto FABRICADO para o
+   * colegiado inteiro). O número vai à tela primeiro, com as recusas ao lado, e a escrita entra na
+   * fase seguinte com o aval do usuário sobre este número. Um passo de escrita que ainda não foi
+   * medido é exatamente o que este projeto aprendeu a não aceitar.
+   *
+   * Custo: ZERO consulta nova — tudo isto já foi lido para o placar.
+   */
+  const paraCompletar: DeliberacaoParcial[] = [];
+  const siglaPorDelib = new Map<string, string>();
+  for (const d of (delibsRes.data ?? []) as any[]) {
+    if (!d.agencia_id || !idsColegiados.has(d.agencia_id)) continue;
+    if (!d.data_reuniao || d.data_reuniao < de || d.data_reuniao > ate) continue;
+    if (!isFinalDecisionRecord(d)) continue;
+    const responderam = votantesPorDelib.get(d.id);
+    // Sem NENHUM voto é trabalho do materializador, que já a visita. O caso novo é o PARCIAL.
+    if (!responderam || responderam.size === 0) continue;
+    const raw = (d.raw_extraction ?? {}) as Record<string, unknown>;
+    const sigla = siglaPorId.get(d.agencia_id) ?? "?";
+    siglaPorDelib.set(String(d.id), sigla);
+    paraCompletar.push({
+      id: String(d.id),
+      sigla,
+      tipo_documento: (d.tipo_documento as string | null) ?? null,
+      resultado: (d.resultado as string | null) ?? null,
+      /**
+       * ⚠️ A MESMA regex e o MESMO texto do materializador — `RE_CONTESTADO_AMPLO` sobre decisão +
+       * dispositivo (`fundamento_decisao`, `decisoes_todas`, `raw.assunto`, `raw.decisao`,
+       * `resumo_pleito`). Eu ia ler uma flag `raw_extraction->>'sinais_contestacao'`, e conferi: ela
+       * NÃO é gravada — o materializador re-deriva do texto. A flag daria `false` sempre, a recusa
+       * por contestação nunca dispararia, e o número publicado seria maior do que o real. Um
+       * diagnóstico otimista sobre uma escrita que afirma voto é o pior tipo de erro aqui.
+       */
+      contestado: RE_CONTESTADO_AMPLO.test(
+        [
+          (d as { fundamento_decisao?: string | null }).fundamento_decisao,
+          ...(((d as { decisoes_todas?: string[] | null }).decisoes_todas) ?? []),
+          raw.assunto as string | undefined,
+          raw.decisao as string | undefined,
+          (d as { resumo_pleito?: string | null }).resumo_pleito,
+        ].filter(Boolean).join(" "),
+      ),
+      roster: colegiadoNaData(mandatos, d.agencia_id, d.data_reuniao),
+      jaResponderam: [...responderam],
+      temVotoNominal: temNominalPorDelib.has(String(d.id)),
+    });
+  }
+  const plano = planejarCompletar(paraCompletar);
+  const completavelPorAgencia = paresPorAgencia(plano, (id) => siglaPorDelib.get(id) ?? "?");
+  if (plano.pares.length > 0) {
+    alertas.push(
+      `${plano.pares.length} par(es) (deliberação × diretor) poderiam receber voto inferido — ` +
+        `${Object.entries(completavelPorAgencia).map(([k, v]) => `${k} ${v}`).join(" · ")}. ` +
+        "A ESCRITA NÃO EXISTE ainda: este número existe para você decidir antes.",
+    );
+  }
+  for (const [motivo, n] of Object.entries(plano.porMotivo)) {
+    alertas.push(`${n} deliberação(ões) RECUSADAS para completar, motivo «${motivo}».`);
+  }
+
   // As incompletas, nomeadas — um placar que só dá o número não diz o que fazer em seguida.
   const nomePorDiretor = new Map<string, string>();
   if (hasBudget(deadlineAt, RESERVA_DE_FECHO_MS)) {
@@ -338,6 +423,12 @@ export async function GET(req: NextRequest) {
     faltando_contra_listagem: contraListagem,
     colegiado_por_reuniao: resumo,
     reunioes_incompletas: incompletas,
+    completar_parcial: {
+      pares: plano.pares.length,
+      por_agencia: completavelPorAgencia,
+      recusas_por_motivo: plano.porMotivo,
+      escrita_existe: false,
+    },
     /**
      * ⚠️ (c) ainda NÃO está aqui, e o campo existe zerado de propósito: consumidor que lê
      * `undefined` some da tela, e um placar com um pilar invisível diz que ele não existe. A

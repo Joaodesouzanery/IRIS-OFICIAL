@@ -989,6 +989,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         cobertura_pct: coberturaPct,
         diretores_com_voto_parcial: diretoresParciais,
         faltando_contra_a_listagem: faltandoNaListagem,
+        /**
+         * ⚠️ O que SERIA criado se "completar colegiado parcial" existisse — e ela NÃO existe. O
+         * materializador só visita deliberação com ZERO voto, então quem tem 3 de 5 é pulado para
+         * sempre (é por isso que o José Fernando tem 1 voto em 2026 depois de voltar ao cadastro).
+         * O número vem primeiro; a escrita entra com o aval sobre ele.
+         */
+        completaveis_parciais: Number((r.body?.completar_parcial as { pares?: number } | undefined)?.pares ?? 0),
         reunioes_com_voto_faltando: defeitoNosso,
         reunioes_esperando_cadastro: cadastroPendente,
         numeros_ausentes: somar("ausentes"),

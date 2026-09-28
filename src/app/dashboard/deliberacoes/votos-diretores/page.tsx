@@ -738,6 +738,19 @@ export default function VotosDiretoresPage() {
          * parte dos itens. Sem esta linha, "84% completas" e "um diretor votou uma vez em 39 itens"
          * conviveriam na mesma tela sem se contradizer visivelmente.
          */
+        /**
+         * ⚠️ MEDIDO E SEM ESCRITA. `completaveis_parciais` é quantos pares (deliberação × diretor)
+         * receberiam voto inferido se o passo existisse — e ele NÃO existe. A frase diz isso, porque um
+         * número na tela sem dizer que nada foi feito se lê como trabalho realizado.
+         *
+         * A escrita entra com o seu aval sobre este número: afirmar que alguém votou é a escrita mais
+         * cara desta esteira, e a Fase 28 pegou um erro de leitura que produzia voto FABRICADO para o
+         * colegiado inteiro.
+         */
+        (totais.completaveis_parciais ?? 0) > 0
+          ? `${totais.completaveis_parciais} par(es) (deliberação × diretor) poderiam receber voto inferido` +
+            " — a ESCRITA NÃO EXISTE ainda; os alertas do placar trazem a quebra por agência e as recusas"
+          : null,
         (totais.diretores_com_voto_parcial ?? 0) > 0
           ? `⚠️ ${totais.diretores_com_voto_parcial} caso(s) de diretor com voto em PARTE dos itens de uma reunião` +
             " — invisível na régua por reunião; a aba de reuniões nomeia quem e em quantos itens"
