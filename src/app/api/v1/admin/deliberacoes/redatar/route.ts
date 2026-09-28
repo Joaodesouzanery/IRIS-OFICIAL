@@ -32,6 +32,7 @@ import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { janelaRotativa } from "@/lib/server/varredura-rotativa";
+import { lerAlvos, loteComAlvo } from "@/lib/server/alvo-de-redatar";
 
 export const dynamic = "force-dynamic";
 // Fase 12 — 60 → 120: esta rota honra `budget_ms`/HOBBY_BUDGET_MS (70s); declarar 60 aqui
@@ -124,7 +125,8 @@ export async function POST(req: NextRequest) {
       divergentes_medidas: 0, divergentes_corrigidas: 0, divergentes_por_agencia: {},
       divergentes_regra_ligada: REDATAR_DATA_DIVERGENTE, divergente_examinadas: 0,
       divergente_bloco: 0, divergente_blocos: 0, divergente_leitura_completa: true,
-      divergente_fora_de_escopo: 0,
+      divergente_fora_de_escopo: 0, divergente_sem_texto: 0,
+      divergente_alvo_pedido: 0, divergente_alvo_encontrado: 0,
       divergente_agencias_no_escopo: [...AGENCIAS_COM_ANCORA_CERTIFICADA],
       amostra_divergente: [],
     });
@@ -343,6 +345,18 @@ export async function POST(req: NextRequest) {
   const amostraDivergente: Array<{ id: string; agencia: string | null; de: string; para: string }> = [];
   let divergenteExaminadas = 0;
   let divergenteForaDeEscopo = 0;
+  /**
+   * ⚠️ O PULO SILENCIOSO, que agora tem número.
+   *
+   * `if (!fonte?.texto) continue` é correto — sem texto não se INVENTA divergência —, mas ele
+   * era invisível, e a diferença que ele esconde muda o conserto: se a linha não tem texto
+   * extraído, mais rodadas de esteira NUNCA resolvem, e o que falta é re-extração. Foi por não
+   * ter este número que eu não pude descartar «ata sem texto» como causa das datas da ANM.
+   */
+  let divergenteSemTexto = 0;
+  /** Quantos números o `?alvo=` pediu, e quantas linhas casaram — zero e zero é o modo normal. */
+  let divergenteAlvoPedido = 0;
+  let divergenteAlvoEncontrado = 0;
   let divergenteBloco = 0;
   let divergenteBlocos = 0;
   let divergenteLeituraCompleta = true;
@@ -365,11 +379,41 @@ export async function POST(req: NextRequest) {
     const jaTratadas = new Set(candidatas.map((d: any) => String(d.id)));
     const plausiveis = ((universo.data ?? []) as any[]).filter((d) => !jaTratadas.has(String(d.id)));
 
+    /**
+     * ⚠️ MODO COM ALVO (`?alvo=81,82,83`), e por que ele era necessário.
+     *
+     * A janela rotativa examina `LOTE_DIVERGENTE` (120) linhas por chamada, sobre TODA deliberação com
+     * data — milhares. E o passo `redatar` é sorteado poucas vezes por run: no QA de produção,
+     * `tentou_redatar: 4` em 18 rodadas, ou seja ~480 linhas de milhares. A correção FUNCIONA e é
+     * lenta, e eu li a lentidão como "pronto": o commit `924e523` afirmou que dez reuniões voltariam
+     * para 2026 quando só parte delas tinha sido examinada. Três da ANM (81ª, 82ª, 83ª) seguem
+     * erradas, e a 80ª já estava certa — o usuário conferiu uma por uma.
+     *
+     * Com alvo, "dez reuniões voltam para 2026" passa a ser verificável numa rodada, em vez de uma
+     * promessa estatística. É o mesmo desenho que o recálculo de direção ganhou na Fase 27.
+     *
+     * ⚠️ O alvo NÃO afrouxa nenhum critério: a linha alvejada passa pelas MESMAS checagens (âncora
+     * plausível, recorte certificado, texto presente). Ele só escolhe QUEM é examinado primeiro.
+     */
+    /**
+     * ⚠️ MODO COM ALVO (`?alvo=81,82,83`) — ver `src/lib/server/alvo-de-redatar.ts` para o porquê.
+     * Em resumo: a janela rotativa examina 120 de milhares e o passo é sorteado poucas vezes por run
+     * (medido: 4 em 18 rodadas), então "dez reuniões voltam para 2026" era promessa estatística. O
+     * alvo escolhe a ORDEM, nunca o critério.
+     */
+    const alvos = lerAlvos(req.nextUrl.searchParams.get("alvo"));
+
     // Janela rotativa: a rodada examina um bloco, e `blocos` diz em quantos minutos fecha a volta.
     const janela = janelaRotativa(plausiveis.length, LOTE_DIVERGENTE, Math.floor(Date.now() / 60_000));
     divergenteBloco = janela.bloco;
     divergenteBlocos = janela.blocos;
-    const lote = plausiveis.slice(janela.inicio, janela.fim);
+    const escolhido = loteComAlvo(
+      plausiveis, alvos, janela, LOTE_DIVERGENTE,
+      (d: any) => d.numero_reuniao, (d: any) => d.id,
+    );
+    const lote = escolhido.lote;
+    divergenteAlvoPedido = alvos.size;
+    divergenteAlvoEncontrado = escolhido.encontrados;
 
     /**
      * ⚠️ O texto vem em LOTES, não uma consulta por linha. Um `maybeSingle` por deliberação é o N+1
@@ -403,7 +447,7 @@ export async function POST(req: NextRequest) {
       }
       divergenteExaminadas++;
       const fonte = textos.get(String(d.id));
-      if (!fonte?.texto) continue; // sem texto não há o que comparar — e não se inventa divergência
+      if (!fonte?.texto) { divergenteSemTexto++; continue; } // sem texto não se INVENTA divergência
       const sigla = siglaDaLinha;
       const anm = extractAnmMeetingMetadata(fonte.texto, fonte.filename);
       const rederivada = anm.data_reuniao ?? extractDataReuniaoAncorada(fonte.texto) ?? null;
@@ -481,6 +525,9 @@ export async function POST(req: NextRequest) {
     // ⚠️ Quantas a rodada PULOU porque a âncora da agência não está certificada (hoje, a ANTT).
     // Publicado para a exclusão ser um número na tela, e não uma omissão no código.
     divergente_fora_de_escopo: divergenteForaDeEscopo,
+    divergente_sem_texto: divergenteSemTexto,
+    divergente_alvo_pedido: divergenteAlvoPedido,
+    divergente_alvo_encontrado: divergenteAlvoEncontrado,
     divergente_agencias_no_escopo: [...AGENCIAS_COM_ANCORA_CERTIFICADA],
     divergente_bloco: divergenteBloco,
     divergente_blocos: divergenteBlocos,

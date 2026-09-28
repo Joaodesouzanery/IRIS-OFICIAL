@@ -694,6 +694,13 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
         divergentes_corrigidas: Number(r.body?.divergentes_corrigidas ?? 0),
         divergente_bloco: Number(r.body?.divergente_bloco ?? 0),
         divergente_blocos: Number(r.body?.divergente_blocos ?? 0),
+        /**
+         * ⚠️ O pulo SILENCIOSO, agora contado. Sem texto extraído não há divergência a medir — e a
+         * distinção muda o conserto: se a linha não tem texto, mais rodadas de esteira nunca a
+         * resolvem, e o que falta é RE-EXTRAÇÃO. Foi por não ter este número que eu não pude
+         * descartar "ata sem texto" como causa das datas erradas da ANM.
+         */
+        divergente_sem_texto: Number(r.body?.divergente_sem_texto ?? 0),
       });
       if (r.body?.restantes) restantes = true;
     } catch {

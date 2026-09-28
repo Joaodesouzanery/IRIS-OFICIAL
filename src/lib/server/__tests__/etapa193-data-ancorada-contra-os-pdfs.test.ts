@@ -192,8 +192,17 @@ describe("etapa193 · a JANELA C do redatar: seleciona por DISCORDÂNCIA, não p
     expect(R).toMatch(/if \(rederivada === String\(d\.data_reuniao\)\) continue;/);
     // ⚠️ Sem âncora não há veredito: data ausente nunca vira "divergente".
     expect(R).toMatch(/if \(!rederivada \|\| !dataReuniaoPlausivel\(sigla, rederivada\)\.plausivel\) continue;/);
-    // E sem texto também não: não se inventa divergência a partir de ausência de evidência.
-    expect(R).toMatch(/if \(!fonte\?\.texto\) continue;/);
+    /**
+     * E sem texto também não: não se inventa divergência a partir de ausência de evidência.
+     *
+     * ⚠️ ATUALIZADO na Fase 35. A expectativa exigia a linha LITERAL `if (!fonte?.texto) continue;`, e
+     * o Bloco E acrescentou um contador dentro do ramo (`divergenteSemTexto++`) — o pulo era correto e
+     * INVISÍVEL, e a diferença importa: linha sem texto extraído nunca é resolvida por mais rodadas de
+     * esteira, o conserto é re-extração. A propriedade é o PULO; onde ele estiver contado, melhor.
+     */
+    expect(R).toMatch(/if \(!fonte\?\.texto\)[^\n]*continue;/);
+    expect(R, "o pulo voltou a ser silencioso — e aí «não voltou» e «não pode voltar» se confundem")
+      .toMatch(/divergenteSemTexto\+\+/);
   });
 
   it("⚠️ o universo usa `lerTudo` — `.limit(N)` do PostgREST NÃO pagina", () => {

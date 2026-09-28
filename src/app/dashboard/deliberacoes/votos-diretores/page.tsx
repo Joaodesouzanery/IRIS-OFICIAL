@@ -804,6 +804,16 @@ export default function VotosDiretoresPage() {
               ? ` (janela rotativa no bloco ${totais.divergente_bloco ?? 0} de ${totais.divergente_blocos} — a volta ainda não fechou)`
               : "")
           : null,
+        /**
+         * ⚠️ DIAGNÓSTICO OPOSTO, e é por isso que ele precisa de linha própria. Uma linha sem texto
+         * extraído nunca será resolvida por mais rodadas de esteira: o conserto é re-extrair o PDF.
+         * Enquanto este número era invisível, "a data não voltou" e "a data não pode voltar" pareciam
+         * o mesmo problema.
+         */
+        (totais.divergente_sem_texto ?? 0) > 0
+          ? `⚠️ ${totais.divergente_sem_texto} linha(s) sem texto extraído na janela de datas` +
+            " — para essas, mais rodadas não resolvem: falta RE-EXTRAIR o PDF"
+          : null,
         (totais.redatadas ?? 0) > 0 || (totais.datas_para_revisao ?? 0) > 0
           ? `${totais.redatadas ?? 0} data(s) re-derivadas` +
             ((totais.datas_para_revisao ?? 0) > 0
