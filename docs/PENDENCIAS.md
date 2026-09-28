@@ -33,6 +33,20 @@ reuniões 84, 85 e 86, onde hoje o Caio Mário recebe o voto no lugar dele.
 
 **Ponto de partida medido no QA de 27/09:** ARTESP 50/51 · ANTT 14/34 · ANM 0/3.
 
+### 🔓 O QUE FOI LIGADO NESTA FASE (as duas escritas destrutivas que você autorizou)
+
+| Constante | Estado | O que passou a acontecer |
+|---|---|---|
+| `REDATAR_DATA_DIVERGENTE` | **LIGADA** | corrige a data de ANM e ARTESP quando o documento desmente a gravada. Devolve a 1177ª e a 1186ª da ARTESP e as 80ª–83ª da ANM a 2026. ⚠️ Portão: o `etapa193` roda a MESMA re-derivação contra os PDFs reais e tem de continuar verde. |
+| `REPARAR_VOTO_ARTEFATO` | **LIGADA** | apaga o voto único e nominal de item de ata cuja fonte não nomina (ANTT e ARTESP), e o materializador o refaz com o colegiado inferido na mesma rodada. ⚠️ O rastro por linha é gravado **antes** do apagamento; se a auditoria falhar, nada é apagado. |
+| `PROCEDENCIA_VENCE_A_DETECCAO` | segue desligada | espera a sua decisão sobre emissora × publicadora, que você já respondeu (emissora) mas ainda não foi aplicada em massa. |
+| `PRESENTES_DO_PAI_VALEM` | segue desligada | da Fase 31. |
+
+⚠️ **A ANTT continua fora da correção de data, e agora o preço está medido: quatro reuniões** (RDE
+282 gravada em 2016-06-08, 286 em 2022-11-03, 289 em 2024-04-29 e RD 1.035 em 2023-12-21). O motivo
+está travado por teste: `extractAnttDate` tem dois degraus **sem âncora nenhuma**, que é o mecanismo
+que o `redatar` existe para proibir. Entrar na ANTT exige tirar esses degraus antes.
+
 ### ⛔ O QUE SÓ VOCÊ PODE FAZER
 
 **1. A verificação de segurança, sem terminal.** Cole no SQL Editor — ela **vira o papel `anon`** e
