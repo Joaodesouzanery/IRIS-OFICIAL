@@ -87,7 +87,16 @@ export default function GovernancaPage() {
     queryKey: ["deliberacoes-gov", agenciaId],
     queryFn: () => api.get<DeliberacaoPaginada>(`/deliberacoes?limit=100${agenciaId ? `&agencia_id=${agenciaId}` : ""}`),
   });
-  const deliberacoes: Deliberacao[] = deliberacoesPag?.data ?? [];
+  /**
+   * ⚠️ `useMemo` e não uma expressão solta: `?? []` cria um ARRAY NOVO a cada render, e os memos
+   * abaixo dependem dele — então todos recalculavam sempre, e a lista de dependências deles era
+   * decorativa. Com a referência estável, a dependência volta a significar alguma coisa.
+   *
+   * (Fechado na Fase 35 para a regra `react-hooks/exhaustive-deps` poder virar ERRO: ela avisou por
+   * escrito sobre uma dependência faltando que quebrou a edição de título da newsletter, e o aviso
+   * passou despercebido porque `next lint` sai com 0 em warning.)
+   */
+  const deliberacoes: Deliberacao[] = useMemo(() => deliberacoesPag?.data ?? [], [deliberacoesPag]);
 
   // Indicadores REAIS por agência (não repete o global). Só agências com dados.
   const { data: govAgencias } = useQuery({

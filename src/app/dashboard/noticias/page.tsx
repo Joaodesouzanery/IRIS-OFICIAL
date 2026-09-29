@@ -544,7 +544,19 @@ export default function NoticiasPage() {
     social_posts: socialPosts,
     eventos: eventosData?.eventos ?? [],
     newsletter_imagens: newsletterImagens,
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, selected, socialPosts, eventosData, newsletterImagens]);
+  /**
+   * ⚠️ `newsletterTitleOverrides` FALTAVA AQUI, e era esse o defeito: o usuário editava o título,
+   * o estado mudava, o memo do mapa recalculava — e `documentInput` NÃO, porque a dependência não
+   * estava na lista. A pré-visualização e o PDF ficavam com o valor da primeira renderização (o
+   * mapa vazio), e editar o título não mudava nada na tela.
+   *
+   * ⚠️ O `next lint` DISSE isto, com todas as letras — «React Hook useMemo has a missing
+   * dependency: 'newsletterTitleOverrides'» — e eu não li, porque é *warning* e o ritual olha o
+   * código de saída, que era 0. A regra `react-hooks/exhaustive-deps` passou a `error` por causa
+   * disto (ver `eslint.config` e a `etapa214`): dependência faltando num memo que alimenta o que a
+   * tela mostra não é estilo, é resultado errado.
+   */
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, newsletterTitleOverrides, selected, socialPosts, eventosData, newsletterImagens]);
   // Preview + "Copiar HTML do e-mail" = e-mail (table-based, p/ colar no cliente). "Copiar doc."
   // + "Imprimir PDF" = canvas (PDF bonito). O Minuto ignora a variante (é o mesmo teleprompter).
   const html = useMemo(() => buildRegulatoryNewsletterHtml(documentInput, "email"), [documentInput]);
