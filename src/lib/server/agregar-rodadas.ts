@@ -62,6 +62,26 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
   "divergente_bloco",
   "divergente_blocos",
   /**
+   * ⚠️ TODAS AS MEDIDAS DO PLACAR SÃO RETRATO, e eu esqueci as oito novas.
+   *
+   * A rota `/admin/placar` recalcula do ACERVO INTEIRO a cada chamada — ela não conta o que a rodada
+   * fez, ela fotografa o estado. As chaves da Fase 34 (`reunioes_completas`, `reunioes_no_ano`…) já
+   * estavam aqui; as que a Fase 35 acrescentou não, e o efeito foi medido: três rodadas com o MESMO
+   * retrato davam `cobertura_pct: 240`, `reunioes_completas_estrito: 120` (de 80 reuniões) e
+   * `pares_esperados: 18000`. O banner exibiria "cobertura de voto: 240%".
+   *
+   * ⚠️ Um percentual somado é o caso mais claro de por que a natureza importa: ele não tem nem
+   * significado aritmético — somar 80% com 80% não dá 160% de coisa nenhuma.
+   */
+  "reunioes_completas_estrito",
+  "itens_no_ano",
+  "pares_esperados",
+  "pares_respondidos",
+  "cobertura_pct",
+  "diretores_com_voto_parcial",
+  "faltando_contra_a_listagem",
+  "completaveis_parciais",
+  /**
    * Fase 33 — a FILA de diagnóstico é recalculada inteira a cada rodada (todo o estoque de motivos
    * mais as divergências da janela), então é retrato. Somá-la diria "candidatos: 1.400" num estoque
    * de 300, e ela é justamente o DENOMINADOR de `motivos_gravados` — um denominador inflado inverte
@@ -122,6 +142,12 @@ export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
    * `divergente_bloco`/`divergente_blocos`, que dizem quanto da volta já foi.
    */
   "divergentes_medidas",
+  /**
+   * Fase 35 — contado no MESMO laço de 120 linhas da janela rotativa que `divergentes_medidas`, e
+   * portanto com a mesma repetição entre rodadas. Deixá-lo como evento enquanto o irmão é parcial
+   * faria os dois números da mesma linha de banner crescerem em ritmos diferentes.
+   */
+  "divergente_sem_texto",
 ]);
 
 /**

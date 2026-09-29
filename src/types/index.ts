@@ -77,7 +77,13 @@ export interface Diretor {
   agencia_id: string | null;
   cargo: string | null;
   ativo?: boolean;
-  situacao?: "titular" | "substituto" | "interino" | "inativo" | "designado";
+  /**
+   * ⚠️ 'afastado' entrou na Fase 35 junto com a CHECK do banco. Afastamento é suspensão do
+   * EXERCÍCIO, não fim de mandato — a JANELA vive em `metadata.afastado_desde`, e é ela que o
+   * motor de voto lê; este campo é o que a TELA mostra. Deixá-lo fora do tipo faria a coluna
+   * dizer a verdade e a interface renderizar um valor que ela não sabe nomear.
+   */
+  situacao?: "titular" | "substituto" | "interino" | "inativo" | "designado" | "afastado";
   data_posse?: string | null;
   data_fim_mandato?: string | null;
   data_saida?: string | null;

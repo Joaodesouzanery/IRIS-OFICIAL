@@ -69,7 +69,11 @@ WITH titulo_da_delib AS (
     JOIN public.deliberacoes d
       ON d.agencia_id = r.agencia_id
      AND d.data_reuniao = r.data_reuniao
-     AND COALESCE(d.numero_reuniao, '') = COALESCE(r.numero_reuniao, '')
+     -- ⚠️ SÓ OS DÍGITOS nos dois lados: `numero_reuniao` convive como '1.024' e '1024' no banco
+     -- (é texto, e em larguras diferentes nas duas tabelas). Comparar cru faria esta segunda via
+     -- de título NÃO casar, e o backfill devolveria zero em SILÊNCIO — o pior formato de zero.
+     AND regexp_replace(COALESCE(d.numero_reuniao, ''), '\D', '', 'g')
+       = regexp_replace(COALESCE(r.numero_reuniao, ''), '\D', '', 'g')
    WHERE d.reuniao_ordinaria IS NOT NULL
    GROUP BY r.id
 ),
@@ -122,7 +126,11 @@ WITH titulo_da_delib AS (
     JOIN public.deliberacoes d
       ON d.agencia_id = r.agencia_id
      AND d.data_reuniao = r.data_reuniao
-     AND COALESCE(d.numero_reuniao, '') = COALESCE(r.numero_reuniao, '')
+     -- ⚠️ SÓ OS DÍGITOS nos dois lados: `numero_reuniao` convive como '1.024' e '1024' no banco
+     -- (é texto, e em larguras diferentes nas duas tabelas). Comparar cru faria esta segunda via
+     -- de título NÃO casar, e o backfill devolveria zero em SILÊNCIO — o pior formato de zero.
+     AND regexp_replace(COALESCE(d.numero_reuniao, ''), '\D', '', 'g')
+       = regexp_replace(COALESCE(r.numero_reuniao, ''), '\D', '', 'g')
    WHERE d.reuniao_ordinaria IS NOT NULL
    GROUP BY r.id
 ),

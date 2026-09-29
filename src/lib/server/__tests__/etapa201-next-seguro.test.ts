@@ -179,3 +179,82 @@ describe("etapa201 · os dois pontos de uso passaram a validar", () => {
       .toBeGreaterThanOrEqual(1);
   });
 });
+
+describe("etapa201 · ⚠️ O SEGUNDO BYPASS: a origem da ENTRADA não diz nada sobre a SAÍDA", () => {
+  /**
+   * A auditoria adversarial da Fase 35 achou o que eu tinha deixado passar, e ele é do mesmo tipo do
+   * primeiro — só que do outro lado da função.
+   *
+   * `?next=https://iris.app//evil.com` tem a NOSSA origem: o host é `iris.app`, a comparação de origem
+   * PASSA. Mas o `pathname` é `//evil.com`, e era isso que a função devolvia. O consumidor então faz
+   * `router.replace("//evil.com")` — e `//host` é PROTOCOLO-RELATIVO. Medido, antes do conserto:
+   *
+   *   "https://iris.app//evil.com"     ->  devolvia "//evil.com"    ->  https://evil.com
+   *   "https://iris.app//evil.com/x"   ->  devolvia "//evil.com/x"  ->  https://evil.com
+   *
+   * ⚠️ A LIÇÃO, e é ela que fecha a classe: validar a ENTRADA deixa passar tudo que a própria
+   * transformação for capaz de PRODUZIR. Só validar a SAÍDA — resolver o que se devolve e conferir a
+   * origem outra vez — permite afirmar algo sobre ela. Eu havia escrito, no primeiro conserto, que
+   * "a origem é invariante"; era verdade sobre o que entrava, não sobre o que saía.
+   */
+  const HOSTIL = "evil.com";
+  const PREFIXOS = [
+    "", "/", "//", "///", "/\\", "\\/", "\\\\", "/\t/", "/\n/", "/\r/", "/%2f/", "/%5c/",
+    "https://iris.app/", "https://iris.app//", "https://iris.app/\\", "https://iris.app///",
+    "https://iris.app/..//", "/..//", "/./", "//\t", "/ /", "https:/", "https:\\\\",
+    "//user@", "https://iris.app//user@", "/ /",
+  ];
+
+  it("⚠️ NENHUM payload escapa da origem — nem depois de passar pela função", () => {
+    const escapes: string[] = [];
+    for (const prefixo of PREFIXOS) {
+      for (const alvo of [HOSTIL, `${HOSTIL}/x?a=1`, `${HOSTIL}#f`]) {
+        const next = prefixo + alvo;
+        const devolvido = sanitizeNext(next, ORIGEM);
+        let origemFinal = "(inválida)";
+        try {
+          origemFinal = new URL(devolvido, ORIGEM).origin;
+        } catch {
+          /* uma saída que nem resolve já é um defeito — cai na comparação abaixo */
+        }
+        if (origemFinal !== ORIGEM) {
+          escapes.push(`${JSON.stringify(next)} -> ${JSON.stringify(devolvido)} -> ${origemFinal}`);
+        }
+      }
+    }
+    expect(escapes, "o valor DEVOLVIDO resolve fora da origem — é redirect aberto").toEqual([]);
+  });
+
+  it("os dois payloads exatos que a auditoria achou não saem mais da origem", () => {
+    /**
+     * ⚠️ CORREÇÃO DE UMA EXPECTATIVA MINHA. Eu esperava o DESTINO PADRÃO, e a função devolve
+     * `/evil.com` — as barras iniciais colapsadas. Conferi: isso é seguro e a expectativa é que
+     * estava errada. `/evil.com` é uma rota INEXISTENTE no nosso próprio domínio (404 nosso), não um
+     * salto para o site do atacante; `//evil.com` é que era protocolo-relativo.
+     *
+     * E a propriedade que importa é essa — ficar NA ORIGEM —, não um valor específico. Fixar o valor
+     * transformaria uma decisão de UX (404 nosso × voltar ao painel) em requisito de segurança, e as
+     * duas coisas mudam por motivos diferentes.
+     */
+    for (const payload of ["https://iris.app//evil.com", "https://iris.app//evil.com/x"]) {
+      const devolvido = sanitizeNext(payload, ORIGEM);
+      expect(devolvido, "nunca protocolo-relativo").not.toMatch(/^\/\//);
+      expect(new URL(devolvido, ORIGEM).origin, `${payload} escapou`).toBe(ORIGEM);
+    }
+  });
+
+  it("e os caminhos legítimos continuam intactos — o conserto não pode custar o produto", () => {
+    expect(sanitizeNext("/dashboard/x", ORIGEM)).toBe("/dashboard/x");
+    expect(sanitizeNext("/dashboard/x?a=1#b", ORIGEM)).toBe("/dashboard/x?a=1#b");
+    expect(sanitizeNext("https://iris.app/dashboard/x?q=1", ORIGEM)).toBe("/dashboard/x?q=1");
+    expect(sanitizeNext("/", ORIGEM)).toBe("/");
+    expect(sanitizeNext("/dashboard/agencias?sigla=ANTT", ORIGEM)).toBe("/dashboard/agencias?sigla=ANTT");
+  });
+
+  it("⚠️ a função RE-VALIDA o que devolve — é a propriedade, não o formato", () => {
+    const FONTE = semComentarios(ler("src/lib/next-seguro.ts"));
+    expect(FONTE, "sem re-validar a saída, a próxima transformação reabre a porta")
+      .toMatch(/conferido\.origin !== base\.origin/);
+    expect(FONTE, "e as barras iniciais precisam ser colapsadas antes").toMatch(/replace\(\/\^\[\/\\\\\]\+\/, "\/"\)/);
+  });
+});

@@ -62,9 +62,38 @@ export function sanitizeNext(
 
   if (alvo.origin !== base.origin) return padrao;
 
-  const caminho = `${alvo.pathname}${alvo.search}${alvo.hash}`;
-  // `pathname` de URL http(s) sempre começa com "/"; a checagem é cinto e suspensório.
-  return caminho.startsWith("/") ? caminho : padrao;
+  /**
+   * ⚠️ CHECAR A ORIGEM DA ENTRADA NÃO BASTA — e esta foi a segunda vez que eu errei aqui.
+   *
+   * `?next=https://iris.app//evil.com` tem a NOSSA origem (o host é `iris.app`), então passa na
+   * comparação acima. Mas o `pathname` dele é `//evil.com`, e era isso que esta função devolvia. O
+   * consumidor então faz `router.replace("//evil.com")` / `new URL("//evil.com", origin)` — e `//host`
+   * é PROTOCOLO-RELATIVO: resolve para `https://evil.com`. Medido:
+   *
+   *   next                              devolvia      consumidor resolvia para
+   *   "https://iris.app//evil.com"      "//evil.com"  https://evil.com    <== bypass
+   *   "https://iris.app//evil.com/x"    "//evil.com/x" https://evil.com   <== bypass
+   *
+   * Duas defesas, e a segunda é a que fecha a CLASSE:
+   *
+   *  (1) colapsar as barras iniciais — um caminho interno nunca precisa de duas;
+   *  (2) RE-VALIDAR O QUE SE DEVOLVE, resolvendo o resultado contra a base outra vez. Validar só a
+   *      entrada deixa passar tudo que a própria transformação for capaz de produzir; validar a saída
+   *      é a única forma de afirmar algo sobre ela. Se eu tivesse feito isto na primeira vez, o
+   *      `//evil.com` teria morrido sem eu precisar imaginá-lo.
+   */
+  const caminho = `${alvo.pathname}${alvo.search}${alvo.hash}`.replace(/^[/\\]+/, "/");
+  if (!caminho.startsWith("/")) return padrao;
+
+  let conferido: URL;
+  try {
+    conferido = new URL(caminho, base);
+  } catch {
+    return padrao;
+  }
+  if (conferido.origin !== base.origin) return padrao;
+
+  return caminho;
 }
 
 /**

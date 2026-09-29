@@ -176,7 +176,38 @@ async function autenticarPorCookie(req: NextRequest, supabaseUrl: string, anonKe
   if (error || !user?.id || !user.email) {
     return NextResponse.json({ error: "Login obrigatório para exportar" }, { status: 401 });
   }
-  return response;
+
+  /**
+   * ⚠️ E AQUI ESTAVA O BURACO: liberar no middleware NÃO BASTA, e o conserto era inerte justamente
+   * nas quatro rotas que motivaram tudo.
+   *
+   * Os quatro downloads da Newsletter (`edicoes/[id]/{html,pdf,word,docx}`) têm `requireAdmin` DENTRO
+   * do handler, e ele lê exclusivamente o header `Authorization`. Então o middleware deixava passar e
+   * a ROTA devolvia 401 — o usuário continuava vendo o mesmo erro, agora por uma camada abaixo.
+   * (As outras três da lista não têm guard in-handler, e para elas o conserto anterior já bastava.)
+   *
+   * A sessão já foi VALIDADA acima com `getUser()`. O que falta é entregá-la na forma que o handler
+   * sabe ler: o `access_token` da própria sessão, como Bearer, na requisição encaminhada.
+   *
+   * ⚠️ TRÊS limites, porque injetar credencial em requisição é coisa séria:
+   *   · só acontece dentro de `autenticarPorCookie`, que só é chamado para caminho da lista FECHADA;
+   *   · só acontece quando NÃO havia Bearer (é o ramo `if (!token)` que chega até aqui), então nunca
+   *     substitui credencial que o cliente mandou;
+   *   · o guard da rota CONTINUA rodando. Isto não pula a autorização — dá a ela o que ler. Um viewer
+   *     segue levando 403 do `requireAdmin`, que é a política que já existia.
+   */
+  const { data: sessao } = await supabase.auth.getSession();
+  const accessToken = sessao.session?.access_token;
+  if (!accessToken) {
+    // Cookie válido para `getUser` mas sem token utilizável: o handler não teria o que ler.
+    return NextResponse.json({ error: "Sessão sem token para exportar" }, { status: 401 });
+  }
+  const cabecalhos = new Headers(req.headers);
+  cabecalhos.set("authorization", `Bearer ${accessToken}`);
+  const comBearer = NextResponse.next({ request: { headers: cabecalhos } });
+  // Preserva os cookies que `getUser()` possa ter renovado no `setAll` acima.
+  for (const cookie of response.cookies.getAll()) comBearer.cookies.set(cookie);
+  return comBearer;
 }
 
 async function requireAuthenticatedApp(req: NextRequest) {

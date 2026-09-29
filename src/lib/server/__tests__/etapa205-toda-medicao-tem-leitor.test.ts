@@ -22,6 +22,7 @@
 
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "fs";
+import { agregarEtapas, naturezaDaChave } from "@/lib/server/agregar-rodadas";
 import { join } from "path";
 
 const RAIZ = join(__dirname, "../../../..");
@@ -181,5 +182,67 @@ describe("etapa205 · as linhas novas dizem o que o número significa", () => {
     expect(i).toBeGreaterThan(-1);
     const linha = TELA.slice(Math.max(0, i - 300), i + 700);
     expect(linha).toMatch(/divergente_blocos/);
+  });
+});
+
+describe("etapa205 · ⚠️ toda medida do PLACAR é RETRATO — nenhuma pode ser somada", () => {
+  /**
+   * A auditoria adversarial da Fase 35 achou o que eu tinha deixado passar: acrescentei oito chaves ao
+   * passo `placar` e declarei a natureza de nenhuma. Medido, com três rodadas do MESMO retrato:
+   *
+   *   cobertura_pct               240      (é um PERCENTUAL somado)
+   *   reunioes_completas_estrito  120      (de 80 reuniões no ano)
+   *   pares_esperados          18 000
+   *
+   * ⚠️ A `etapa205` acima cobra LEITOR para cada chave, e todas tinham. Ter leitor e estar certa são
+   * coisas diferentes — o número chegava à tela, e chegava errado. Este bloco cobra a outra metade.
+   *
+   * A regra é derivada da NATUREZA da rota: `/admin/placar` recalcula do acervo inteiro a cada
+   * chamada; ela não conta o que a rodada fez, ela fotografa o estado. Logo TODA chave numérica que
+   * ela publica é estoque, sem exceção — e é por isso que dá para cobrar isso automaticamente em vez
+   * de manter mais uma lista à mão.
+   */
+  const chavesDoPassoPlacar = (): string[] => {
+    const i = RUN.indexOf('etapas.placar = anotar(');
+    expect(i, "o passo do placar desapareceu do orquestrador").toBeGreaterThan(-1);
+    const corpo = corpoDoObjeto(RUN, i);
+    return [...corpo.matchAll(/(?:^|[,{]\s*)([a-z_][a-z0-9_]*)\s*:/g)].map((m) => m[1]);
+  };
+
+  it("a extração acha as chaves do passo (não pode passar por vazio)", () => {
+    expect(chavesDoPassoPlacar().length, "a extração do passo quebrou").toBeGreaterThanOrEqual(8);
+  });
+
+  it("⚠️ CADA uma delas é `estoque` — somar retrato dá número impossível na tela", () => {
+    const naoEstoque = chavesDoPassoPlacar()
+      .filter((c) => naturezaDaChave(c) !== "estoque")
+      .sort();
+    expect(
+      naoEstoque,
+      "o passo `placar` fotografa o acervo inteiro a cada rodada. Chave dele que não seja `estoque` é " +
+        "SOMADA entre rodadas e vira número impossível (cobertura de 240%, 120 de 80 reuniões). " +
+        "Acrescente em CHAVES_DE_ESTOQUE.",
+    ).toEqual([]);
+  });
+
+  it("⚠️ e o efeito é medido, não deduzido: três retratos iguais dão o retrato", () => {
+    const totais: Record<string, number> = {};
+    const retrato = {
+      reunioes_no_ano: 80, reunioes_completas: 67, reunioes_completas_estrito: 40,
+      itens_no_ano: 1200, pares_esperados: 6000, pares_respondidos: 4800, cobertura_pct: 80,
+      diretores_com_voto_parcial: 12, faltando_contra_a_listagem: 5, completaveis_parciais: 9,
+    };
+    for (let i = 0; i < 3; i += 1) agregarEtapas(totais, { placar: { ...retrato } });
+    for (const [chave, valor] of Object.entries(retrato)) {
+      expect(totais[chave], `«${chave}» foi somada entre rodadas`).toBe(valor);
+    }
+    // E o caso que mais denuncia: percentual somado não tem nem significado aritmético.
+    expect(totais.cobertura_pct, "80% + 80% + 80% não é 240% de coisa nenhuma").toBe(80);
+  });
+
+  it("`divergente_sem_texto` acompanha o irmão do MESMO laço", () => {
+    // Os dois são contados sobre a janela rotativa de 120 linhas, e aparecem na mesma região do
+    // banner: naturezas diferentes fariam os dois crescerem em ritmos diferentes.
+    expect(naturezaDaChave("divergente_sem_texto")).toBe(naturezaDaChave("divergentes_medidas"));
   });
 });

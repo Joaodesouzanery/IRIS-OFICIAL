@@ -17,7 +17,7 @@ type DiretorForm = {
   id?: string;
   nome: string;
   cargo: string;
-  situacao: "titular" | "substituto" | "interino" | "inativo" | "designado";
+  situacao: "titular" | "substituto" | "interino" | "inativo" | "designado" | "afastado";
   data_posse: string;
   data_fim_mandato: string;
   ato_nomeacao: string;
@@ -305,7 +305,13 @@ export default function AgenciaDetalhePage() {
 
 function DiretorRow({ diretor, onEdit, onDelete, disabled }: { diretor: Diretor; onEdit: (form: DiretorForm) => void; onDelete: (id: string) => void; disabled: boolean }) {
   const mandato = calcularMandato(diretor.data_posse, diretor.data_fim_mandato);
-  const badge = mandato.status === "vencido" ? "bg-error/10 text-error" : mandato.status === "vencendo_em_breve" ? "bg-warning/10 text-warning" : diretor.situacao === "interino" ? "bg-warning/10 text-warning" : "badge-green";
+  // ⚠️ `afastado` antes do verde: sem isto, um diretor afastado aparecia com selo VERDE, como se
+  // estivesse em exercício — a tela contradiria o colegiado que o placar mede.
+  const badge = mandato.status === "vencido" ? "bg-error/10 text-error"
+    : diretor.situacao === "afastado" ? "bg-warning/10 text-warning"
+    : mandato.status === "vencendo_em_breve" ? "bg-warning/10 text-warning"
+    : diretor.situacao === "interino" ? "bg-warning/10 text-warning"
+    : "badge-green";
   return (
     <tr className="border-t border-border">
       <Td>{diretor.nome}</Td>
@@ -370,7 +376,7 @@ function DiretorModal({ form, setForm, onClose, onSave, pending }: { form: Diret
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <Input label="Nome completo" value={form.nome} onChange={(v) => update("nome", v)} />
         <Input label="Cargo" value={form.cargo} onChange={(v) => update("cargo", v)} />
-        <Select label="Situação" value={form.situacao} onChange={(v) => update("situacao", v as DiretorForm["situacao"])} options={["titular", "substituto", "interino", "inativo", "designado"]} />
+        <Select label="Situação" value={form.situacao} onChange={(v) => update("situacao", v as DiretorForm["situacao"])} options={["titular", "substituto", "interino", "inativo", "designado", "afastado"]} />
         <Select label="Fonte do dado" value={form.fonte_dado} onChange={(v) => update("fonte_dado", v as DiretorForm["fonte_dado"])} options={["manual", "verificado", "automatico"]} />
         <Input label="Data de posse" type="date" value={form.data_posse} onChange={(v) => update("data_posse", v)} />
         <Input label="Fim do mandato" type="date" value={form.data_fim_mandato} onChange={(v) => update("data_fim_mandato", v)} />

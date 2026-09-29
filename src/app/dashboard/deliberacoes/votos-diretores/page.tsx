@@ -771,7 +771,11 @@ export default function VotosDiretoresPage() {
          */
         (totais.faltando_contra_a_listagem ?? 0) > 0
           ? `⚠️ ${totais.faltando_contra_a_listagem} reunião(ões) que a LISTAGEM da fonte tem e o acervo não` +
-            " — é coleta faltando, não data errada (ver os alertas do placar para a lista)"
+            // ⚠️ NÃO afirma a causa. Quando a série do acervo não casa a da listagem (o passivo do
+            // mojibake), a série INTEIRA aparece como ausente e "coleta faltando" mandaria recoletar o
+            // que já está no banco. O alerta do placar distingue os dois casos pelo `ultimo_no_acervo`;
+            // a linha aponta para ele em vez de decidir por conta própria.
+            " — pode ser coleta faltando OU série que não casou; os alertas do placar separam os dois"
           : null,
         (totais.numeros_ausentes ?? 0) > 0 ||
         (totais.numeros_duplicados ?? 0) > 0 ||

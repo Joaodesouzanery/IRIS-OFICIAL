@@ -32,7 +32,13 @@ WITH ag AS (SELECT id, sigla FROM public.agencias WHERE sigla IN ('ANTT','ANM','
 -- Sem estes dois (fonte_dado <> 'automatico' E review_status = 'aprovado') o placar discorda do motor,
 -- que e o pior desfecho possivel numa ferramenta feita para dar confianca.
 mand AS (
-  SELECT m.diretor_id, d.agencia_id, d.nome, m.data_inicio, m.data_fim
+  SELECT m.diretor_id, d.agencia_id, d.nome, m.data_inicio, m.data_fim,
+         -- ⚠️ A JANELA DE AFASTAMENTO, que a Fase 35 introduziu. Sem ela este QA contaria o Caio Mario
+         -- no colegiado esperado DEPOIS de a migration marca-lo como afastado -- e o usuario concluiria
+         -- que o conserto falhou, quando o errado seria a medicao. O codigo ja exclui: ver
+         -- `afastadoNaData` em src/lib/server/colegiado-na-data.ts, usado pelo motor de voto E pelo placar.
+         NULLIF(d.metadata ->> 'afastado_desde', '')::date AS afastado_desde,
+         NULLIF(d.metadata ->> 'afastado_ate',   '')::date AS afastado_ate
     FROM public.mandatos m
     JOIN public.diretores d ON d.id = m.diretor_id
    WHERE m.fonte_dado <> 'automatico' AND d.review_status = 'aprovado'
@@ -79,6 +85,13 @@ pares AS (
       ON m.agencia_id = f.agencia_id
      AND m.data_inicio <= f.data_reuniao
      AND (m.data_fim IS NULL OR m.data_fim >= f.data_reuniao)
+     -- Afastado na data NAO e esperado a votar (e nao deixou de ter mandato). Bordas inclusivas,
+     -- como a janela de mandato.
+     AND NOT (
+       m.afastado_desde IS NOT NULL
+       AND m.afastado_desde <= f.data_reuniao
+       AND (m.afastado_ate IS NULL OR m.afastado_ate >= f.data_reuniao)
+     )
 ),
 
 -- Cobertura por (reuniao, diretor): em quantos itens ele respondeu, de quantos.
@@ -104,16 +117,25 @@ SELECT jsonb_pretty(jsonb_build_object(
                                    THEN ROUND(100.0 * pares_resp / pares_esp) ELSE 0 END,
              'reunioes_teto', teto, 'reunioes_estrito', estrito))
       FROM (
-        SELECT sigla,
-               COUNT(DISTINCT (numero_reuniao, data_reuniao))               AS reunioes,
-               SUM(itens) / NULLIF(COUNT(DISTINCT diretor_id),0)            AS itens,
-               SUM(itens)                                                   AS pares_esp,
-               SUM(respondidos)                                             AS pares_resp,
-               COUNT(DISTINCT (numero_reuniao, data_reuniao)) FILTER (WHERE respondidos > 0)
-                 - COUNT(DISTINCT (numero_reuniao, data_reuniao)) FILTER (WHERE respondidos = 0) AS teto,
-               COUNT(DISTINCT (numero_reuniao, data_reuniao))
-                 - COUNT(DISTINCT (numero_reuniao, data_reuniao)) FILTER (WHERE respondidos < itens) AS estrito
-          FROM cob GROUP BY sigla) t),
+        SELECT c.sigla,
+               COUNT(DISTINCT (c.numero_reuniao, c.data_reuniao))            AS reunioes,
+               -- ⚠️ ITENS vem das DELIBERACOES, nao de uma divisao. A versao anterior fazia
+               -- `SUM(itens) / COUNT(DISTINCT diretor_id)`: divisao INTEIRA (trunca) por um
+               -- denominador da AGENCIA inteira, quando o colegiado muda de reuniao para reuniao --
+               -- e o numero CAIA justamente quando a Fase 35 cadastrasse o Marcelo (mais um diretor
+               -- no denominador). Aqui e contagem direta.
+               (SELECT COUNT(*) FROM finais_2026 f2 WHERE f2.sigla = c.sigla) AS itens,
+               SUM(c.itens)                                                  AS pares_esp,
+               SUM(c.respondidos)                                            AS pares_resp,
+               -- ⚠️ TETO = reunioes em que NINGUEM ficou com zero. A versao anterior subtraia
+               -- "reunioes com algum respondidos=0" de "reunioes com algum respondidos>0", e uma
+               -- reuniao MISTA entra nas duas: a conta nao tinha significado e podia dar NEGATIVO.
+               COUNT(DISTINCT (c.numero_reuniao, c.data_reuniao))
+                 - COUNT(DISTINCT (c.numero_reuniao, c.data_reuniao)) FILTER (WHERE c.respondidos = 0) AS teto,
+               -- ESTRITO = reunioes em que ninguem ficou abaixo do total de itens.
+               COUNT(DISTINCT (c.numero_reuniao, c.data_reuniao))
+                 - COUNT(DISTINCT (c.numero_reuniao, c.data_reuniao)) FILTER (WHERE c.respondidos < c.itens) AS estrito
+          FROM cob c GROUP BY c.sigla) t),
 
   -- ② OS DIRETORES COM VOTO EM PARTE DOS ITENS — o caso que o teto NAO VE.
   --    E a frase que o usuario pediu: "Jose Fernando sem voto em 38 de 39 itens da 84a".
