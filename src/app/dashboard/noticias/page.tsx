@@ -4,7 +4,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { cn, formatDateLong } from "@/lib/utils";
-import { classificarFonte, erroCurto, type HealthSource } from "@/lib/news-health";
+import { classificarFonte, erroCurto, quietudeConferida, type HealthSource } from "@/lib/news-health";
+import {
+  RASCUNHO_KEY,
+  lerRascunho,
+  montarRascunho,
+  temAlgoParaGuardar,
+  type NoticiaNoRascunho,
+} from "@/lib/noticias-rascunho";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import {
   NEWSLETTER_ARTICLE_TEXT_LIMITS,
@@ -273,6 +280,18 @@ export default function NoticiasPage() {
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
   const [pageView, setPageView] = useState<"feed" | "documento">("feed");
   const lastMinutoSelectionKey = useRef("");
+  /**
+   * ⚠️ O PORTÃO do rascunho, e ele é `useState` e não `useRef` de propósito.
+   *
+   * O efeito que GRAVA roda também na montagem. Com um `ref` marcado dentro do efeito que restaura,
+   * ele já estaria `true` na primeira passada — mas o `setState` da restauração ainda não teria sido
+   * aplicado, então o efeito de gravação leria o estado VAZIO e **apagaria o rascunho que acabou de
+   * ler**. Como estado, ele entra no mesmo commit dos valores restaurados: quando vira `true`, o
+   * estado já é o restaurado.
+   */
+  const [rascunhoPronto, setRascunhoPronto] = useState(false);
+  /** Quando o rascunho foi salvo, para a tela poder DIZER que restaurou em vez de fingir. */
+  const [rascunhoRestaurado, setRascunhoRestaurado] = useState<string | null>(null);
 
   const params = new URLSearchParams();
   if (agencia) params.set("agencia", agencia);
@@ -397,6 +416,10 @@ export default function NoticiasPage() {
       erro: src.filter((s) => classificarFonte(s) === "erro").sort(sortDias),
       // Coletor responde mas não acha artigos (0 links) — listagem provável mudou/indisponível.
       semItens: src.filter((s) => classificarFonte(s) === "sem_itens").sort(sortDias),
+      // A FONTE publicou e nós não temos — o atraso é nosso, não dela.
+      atrasada: src.filter((s) => classificarFonte(s) === "atrasada").sort(sortDias),
+      // Nada ingerido, mas o coletor ACHOU links — não é "nunca coletou".
+      naoGravou: src.filter((s) => classificarFonte(s) === "nao_gravou").sort(sortDias),
       // Fonte genuinamente quieta (listagem OK, só sem publicação nova) — recesso/defeso.
       quieta: src.filter((s) => classificarFonte(s) === "quieta").sort(sortDias),
       // Configurada mas sem NENHUMA notícia ingerida — pode nunca ter coletado.
@@ -600,6 +623,80 @@ export default function NoticiasPage() {
     }
   }, []);
 
+  /**
+   * RESTAURA o rascunho — e é este efeito que faz sair da tela deixar de perder a seleção.
+   *
+   * ⚠️ Ele vem ANTES do efeito do minuto de propósito. Aquele efeito reescreve `minutoTextos`
+   * sempre que a seleção do minuto "muda", e a montagem conta como mudança: sem carimbar
+   * `lastMinutoSelectionKey` com a seleção restaurada, o texto que a pessoa editou seria
+   * imediatamente substituído pelo rascunho gerado. Efeitos rodam na ordem em que são declarados,
+   * então o carimbo já está lá quando o do minuto olha.
+   */
+  useEffect(() => {
+    let cru: string | null = null;
+    try {
+      cru = localStorage.getItem(RASCUNHO_KEY);
+    } catch {
+      // Aba anônima / storage bloqueado: sem rascunho, e sem derrubar a tela.
+      cru = null;
+    }
+    const rascunho = lerRascunho(cru, new Date());
+    if (rascunho) {
+      setNewsletterSelectedIds(rascunho.newsletterSelectedIds);
+      setMinutoSelectedIds(rascunho.minutoSelectedIds);
+      // O cache VIVO tem precedência: se a consulta já trouxe a notícia, ela é mais fresca.
+      setSelectedNewsCache((anterior) => ({
+        ...(rascunho.cache as Record<string, RegulatoryNews>),
+        ...anterior,
+      }));
+      setNewsletterArticleTexts(rascunho.newsletterArticleTexts);
+      setNewsletterArticleTitles(rascunho.newsletterArticleTitles);
+      setNewsletterImagens(rascunho.newsletterImagens);
+      setSocialPosts(rascunho.socialPosts as SocialPostInput[]);
+      if (rascunho.minutoTextos) {
+        lastMinutoSelectionKey.current = rascunho.minutoSelectedIds.join("|");
+        setMinutoTextos(rascunho.minutoTextos);
+      }
+      setRascunhoRestaurado(rascunho.salvo_em);
+    }
+    setRascunhoPronto(true);
+  }, []);
+
+  /** GRAVA o rascunho a cada mudança. Nada aqui pode derrubar a tela — nem a cota estourando. */
+  useEffect(() => {
+    if (!rascunhoPronto) return;
+    const estado = {
+      newsletterSelectedIds,
+      minutoSelectedIds,
+      cache: selectedNewsCache as Record<string, NoticiaNoRascunho>,
+      newsletterArticleTexts,
+      newsletterArticleTitles,
+      newsletterImagens,
+      minutoTextos,
+      socialPosts: socialPosts as unknown[],
+    };
+    try {
+      if (!temAlgoParaGuardar(estado)) {
+        // Desmarcou tudo: o rascunho deixa de existir, em vez de ressuscitar na próxima visita.
+        localStorage.removeItem(RASCUNHO_KEY);
+        return;
+      }
+      localStorage.setItem(RASCUNHO_KEY, JSON.stringify(montarRascunho(estado, new Date())));
+    } catch {
+      // Cota estourada ou storage recusado: o rascunho se perde, a tela continua.
+    }
+  }, [
+    rascunhoPronto,
+    newsletterSelectedIds,
+    minutoSelectedIds,
+    selectedNewsCache,
+    newsletterArticleTexts,
+    newsletterArticleTitles,
+    newsletterImagens,
+    minutoTextos,
+    socialPosts,
+  ]);
+
   useEffect(() => {
     if (documentConfig.documentoTipo !== "minuto_regulacao") return;
     const key = minutoSelectedIds.join("|");
@@ -608,6 +705,27 @@ export default function NoticiasPage() {
     setMinutoTextos(minutoSelected.length > 0 ? minutoDraft : "");
     setSavedEditionId(null);
   }, [documentConfig.documentoTipo, minutoDraft, minutoSelected.length, minutoSelectedIds]);
+
+  /**
+   * Descarta o rascunho e zera a montagem. O aviso só existe porque a restauração é silenciosa
+   * demais sem ele: a pessoa abriria a tela com uma seleção que não lembra ter feito, e sem saída.
+   */
+  function descartarRascunho() {
+    try {
+      localStorage.removeItem(RASCUNHO_KEY);
+    } catch {
+      // Storage recusado: o rascunho já não estava lá para ser apagado.
+    }
+    setRascunhoRestaurado(null);
+    setNewsletterSelectedIds([]);
+    setMinutoSelectedIds([]);
+    setNewsletterArticleTexts({});
+    setNewsletterArticleTitles({});
+    setNewsletterImagens({});
+    setSocialPosts([]);
+    setMinutoTextos("");
+    lastMinutoSelectionKey.current = "";
+  }
 
   function toggleSelected(item: RegulatoryNews, target: NewsletterDocumentType) {
     setSelectedNewsCache((previous) => ({ ...previous, [item.id]: item }));
@@ -900,16 +1018,36 @@ export default function NoticiasPage() {
           provavelmente mudou ou está indisponível (defeso eleitoral). Rodar &ldquo;Coletar&rdquo; tenta as seções alternativas.
         </div>
       )}
+      {fontesSaude.atrasada.length > 0 && (
+        <div className="border border-warning/30 bg-warning/10 rounded-card px-3 py-2 text-xs text-warning">
+          <strong>A fonte publicou e nós não temos</strong> (o atraso é nosso):{" "}
+          {fontesSaude.atrasada
+            .map((s) => `${s.agencia_sigla} (nossa mais nova: ${(s.latest_publicado_em ?? "-").slice(0, 10)}; na fonte: ${(s.latest_official_publicado_em ?? "-").slice(0, 10)})`)
+            .join(" · ")} — rode &ldquo;Coletar Notícias&rdquo;. Persistindo, a seção mudou de lugar.
+        </div>
+      )}
+      {fontesSaude.naoGravou.length > 0 && (
+        <div className="border border-warning/30 bg-warning/10 rounded-card px-3 py-2 text-xs text-warning">
+          <strong>O coletor acha e não grava</strong>:{" "}
+          {fontesSaude.naoGravou.map((s) => `${s.agencia_sigla} (${s.latest_links_found} links achados, 0 no acervo)`).join(" · ")}
+          {" "}— não é falta de coleta: a listagem responde. O corte está entre achar o link e salvar o detalhe
+          (orçamento de tempo ou falha no parse do detalhe).
+        </div>
+      )}
       {fontesSaude.quieta.length > 0 && (
         <div className="border border-warning/20 bg-warning/5 rounded-card px-3 py-2 text-xs text-muted-foreground">
-          Sem publicação nova (coletor OK):{" "}
+          Sem publicação nova:{" "}
           {fontesSaude.quieta.map((s) => `${s.agencia_sigla} (${s.dias_sem_publicar}d)`).join(" · ")} — provável
-          recesso/defeso eleitoral; a fonte simplesmente não publicou.
+          recesso/defeso eleitoral.{" "}
+          {fontesSaude.quieta.every((s) => quietudeConferida(s))
+            ? "Conferido contra a fonte: ela também não mostra nada mais novo."
+            : "⚠️ Não conferido contra a fonte — só sabemos que NÓS não temos nada novo."}
         </div>
       )}
       {fontesSaude.nunca.length > 0 && (
         <div className="border border-warning/20 bg-warning/5 rounded-card px-3 py-2 text-xs text-muted-foreground">
-          Fonte configurada sem nenhuma notícia: {fontesSaude.nunca.map((s) => s.agencia_sigla).join(" · ")} — rode
+          Fonte configurada sem nenhuma notícia e sem link achado:{" "}
+          {fontesSaude.nunca.map((s) => s.agencia_sigla).join(" · ")} — rode
           &ldquo;Coletar Notícias&rdquo;; se persistir, a listagem precisa de ajuste.
         </div>
       )}
@@ -967,6 +1105,19 @@ export default function NoticiasPage() {
           </button>
         ))}
       </div>
+
+      {rascunhoRestaurado ? (
+        <div className="border border-brand/30 bg-brand/5 rounded-card px-3 py-2 text-xs text-text-secondary flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span>
+            Rascunho restaurado (salvo em{" "}
+            {new Date(rascunhoRestaurado).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" })}):
+            a seleção e os textos editados voltaram como estavam.
+          </span>
+          <button type="button" className="underline hover:text-text-primary" onClick={descartarRascunho}>
+            Começar do zero
+          </button>
+        </div>
+      ) : null}
 
       {demoEnabled ? (
         <div className="border border-error/30 bg-error/10 rounded-card p-3 text-sm text-error">

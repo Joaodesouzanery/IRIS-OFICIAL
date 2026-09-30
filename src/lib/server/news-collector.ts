@@ -259,6 +259,49 @@ export function artespCcmFallback(source: NewsSourceConfig): NewsSourceConfig | 
   }
 }
 
+/**
+ * O slug é de uma SEÇÃO de notícias (uma listagem), não de um artigo?
+ *
+ * ═══ Por que isto vira um predicado só ═══
+ * A distinção estava espalhada em duas checagens dentro de `isNewsDetailUrl` — uma lista de três
+ * nomes e um `/defeso-eleitoral$/` — e a seção da ANS (`periodo-eleitoral`) não casava com nenhuma
+ * das duas. O preço foi medido em 30/09/2026: a ANS aparecia "89 dias sem publicar" tendo publicado
+ * em **28/09**. A seção entrava como se fosse artigo e, sendo ANCESTRAL das 30 notícias reais, o
+ * `pruneNewsLinks` descartava as 30 como "sub-recursos" dela — sobrava **1 link**, e `1 !== 0`
+ * bastava para o painel dizer "coletor OK, a fonte não publicou".
+ *
+ * ⚠️ A enumeração é FECHADA de propósito. Um predicado largo (qualquer slug que comece com
+ * "noticias") descartaria artigo legítimo, e artigo descartado é notícia perdida em silêncio — o
+ * lado caro do erro. O que não estiver aqui é pego pela contagem de descendentes no
+ * `pruneNewsLinks`, que não depende de conhecer o nome da seção.
+ */
+export function pareceSecaoDeNoticias(slug: string): boolean {
+  const limpo = normalizeText(slug).replace(/^\/+|\/+$/g, "");
+  if (!limpo) return false;
+  return RE_SECAO_DE_NOTICIAS.test(limpo);
+}
+
+const RE_SECAO_DE_NOTICIAS = new RegExp(
+  [
+    // Nomes de listagem: `noticias`, `noticias-1`, `ultimas-noticias`, `noticias-anteriores`,
+    // `noticias-e-eventos`, `noticias-comunicados`.
+    /^(?:ultimas-noticias|noticias-anteriores|noticias-e-eventos|noticias-comunicados|noticias(?:-\d+)?)$/.source,
+    // Seções do blackout eleitoral, em qualquer das formas vistas ao vivo:
+    // `defeso-eleitoral`, `periodo-eleitoral`, `noticias-defeso-eleitoral`,
+    // `noticias-periodo-eleitoral-2026`, `2026-defeso-eleitoral`.
+    /(?:^|-)(?:defeso|periodo)-eleitoral(?:-\d{4})?$/.source,
+  ].join("|"),
+);
+
+/**
+ * Abaixo disto a colheita é POBRE e vale procurar melhor (outra irmã, ou uma sub-seção).
+ *
+ * ⚠️ Não é um alvo de cobertura: é o ponto em que "achei algo" deixa de ser evidência de que achei
+ * a listagem certa. Uma listagem de notícias de agência traz 20-30 itens por página; 1 ou 7 é
+ * sintoma, não resultado. Medido em 30/09/2026: ANS devolvia 1, ANA devolvia 7.
+ */
+const PISO_DE_LISTAGEM = 10;
+
 // Sentinela: a listagem RESPONDEU mas não expôs nenhum link de artigo (blackout eleitoral
 // / login-wall / seção movida) — é "vazio", não uma exceção de rede. Distinguido no catch.
 const EMPTY_LISTING_MSG = "Nenhum link de noticia valido encontrado na fonte oficial";
@@ -279,13 +322,16 @@ async function collectNewsSource(
     let effectiveSource = source;
     let links: NewsLink[] = [];
     let primaryError: unknown = null;
+    // Sub-seções anotadas ao longo das listagens visitadas — a via de descoberta que não depende
+    // de adivinhar o nome da pasta nova. Ver `recolherSecoes`.
+    const secoesVistas: string[] = [];
     try {
-      links = await fetchSourceLinks(source, discoveryLimit);
+      links = await fetchSourceLinks(source, discoveryLimit, secoesVistas);
       // O gov.br às vezes serve uma página DEGRADADA (HTTP 200 mas "magra", 0 links)
       // ao IP de datacenter (soft rate-limit) — re-tenta uma vez após pausa.
       if (links.length === 0 && source.strategy === "govbr") {
         await new Promise((resolve) => setTimeout(resolve, 1500));
-        links = await fetchSourceLinks(source, discoveryLimit);
+        links = await fetchSourceLinks(source, discoveryLimit, secoesVistas);
       }
     } catch (err) {
       primaryError = err;
@@ -296,12 +342,23 @@ async function collectNewsSource(
     const ccm = artespCcmFallback(source);
     if (ccm) variants.push(ccm);
     if (links.length === 0) {
-      // FALLBACK: a listagem configurada falhou/zerou (caso ANTT: restrita no defeso).
+      /**
+       * FALLBACK: a listagem configurada falhou/zerou (caso ANTT: restrita no defeso).
+       *
+       * ⚠️ Aqui havia a mesma forma de erro que a Fase 7 pagou no orçamento: **qualquer coisa
+       * maior que zero vencia**. `if (variantLinks.length > 0) break` parava na primeira irmã que
+       * devolvesse ALGO — e para a ANS a primeira irmã devolvia exatamente **1 link** (a
+       * sub-listagem), então a irmã seguinte, que tinha as 30 notícias, nunca era tentada.
+       * Agora a melhor colheita vence, e a saída antecipada exige o PISO.
+       */
+      let melhor: { src: NewsSourceConfig; links: NewsLink[] } | null = null;
       for (const variant of variants) {
         if (!hasBudget(deep?.deadlineAt, 15_000)) break;
-        const variantLinks = await fetchSourceLinks(variant, discoveryLimit).catch(() => [] as NewsLink[]);
-        if (variantLinks.length > 0) { effectiveSource = variant; links = variantLinks; break; }
+        const variantLinks = await fetchSourceLinks(variant, discoveryLimit, secoesVistas).catch(() => [] as NewsLink[]);
+        if (!melhor || variantLinks.length > melhor.links.length) melhor = { src: variant, links: variantLinks };
+        if (variantLinks.length >= PISO_DE_LISTAGEM) break;
       }
+      if (melhor && melhor.links.length > 0) { effectiveSource = melhor.src; links = melhor.links; }
     } else if (hasBudget(deep?.deadlineAt, 25_000)) {
       // ADITIVO: a principal funciona, mas a irmã DEFESO pode ter notícias exclusivas
       // (caso ANEEL). Sondagem BARATA (1-2 páginas, limite pequeno) — a completa só no
@@ -310,6 +367,23 @@ async function collectNewsSource(
       if (defeso) {
         const defesoLinks = await fetchSourceLinks(defeso, Math.min(discoveryLimit, 24)).catch(() => [] as NewsLink[]);
         if (defesoLinks.length > 0) extraGroups.push({ src: defeso, links: defesoLinks });
+      }
+    }
+    /**
+     * DESCOBERTA DE SEÇÃO — o último recurso antes de declarar a fonte vazia.
+     *
+     * Só entra quando a colheita veio POBRE (abaixo do piso), porque cada seção sondada custa
+     * fetches sob o estrangulamento de 900 ms por host. Para a ANA é o que separa "7 links que
+     * param em julho" de "30 matérias, a mais nova de hoje".
+     */
+    if (links.length < PISO_DE_LISTAGEM && secoesVistas.length > 0) {
+      const jaTentadas = new Set([source.url, effectiveSource.url, ...variants.map((v) => v.url)]);
+      for (const secaoUrl of secoesVistas.filter((u) => !jaTentadas.has(u)).slice(0, 2)) {
+        if (!hasBudget(deep?.deadlineAt, 15_000)) break;
+        const secao: NewsSourceConfig = { ...effectiveSource, url: secaoUrl };
+        const secaoLinks = await fetchSourceLinks(secao, discoveryLimit).catch(() => [] as NewsLink[]);
+        if (secaoLinks.length > links.length) { effectiveSource = secao; links = secaoLinks; }
+        if (links.length >= PISO_DE_LISTAGEM) break;
       }
     }
     if (links.length === 0) {
@@ -641,10 +715,49 @@ export async function backfillNewsSource(source: NewsSourceConfig, opts: Backfil
   };
 }
 
-async function fetchSourceLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
+/**
+ * Recolhe, das âncoras de uma listagem, os links que são SUB-SEÇÕES dela.
+ *
+ * ═══ Por que isto existe ═══
+ * No blackout eleitoral de 2026 as agências não pararam de publicar: mudaram as matérias de pasta,
+ * cada uma com um nome próprio, e trancaram a pasta canônica atrás de login. `siblingListingVariants`
+ * tenta os nomes JÁ VISTOS ao vivo — e por isso a ANA ficou de fora: a pasta dela é
+ * `noticias-periodo-eleitoral-2026`, com o ANO no nome. Medido em 30/09/2026: a listagem que o
+ * coletor usava (o pai) parava em 03/07; a pasta certa tinha 30 matérias, a mais nova **daquele
+ * mesmo dia**.
+ *
+ * ⚠️ Adivinhar o nome não escala — o ano muda, o sufixo muda. O que ESCALA é ler o nome na própria
+ * página: a pasta nova está linkada na listagem que responde. Aqui ela é apenas ANOTADA; quem
+ * decide sondá-la é `collectNewsSource`, e só quando a colheita vem pobre.
+ */
+function recolherSecoes(
+  anchors: Array<{ href: string }>,
+  source: NewsSourceConfig,
+  destino: string[],
+) {
+  let base: URL;
+  try { base = new URL(source.url); } catch { return; }
+  const caminhoBase = stripTrailingSlash(base.pathname);
+  for (const anchor of anchors) {
+    let u: URL;
+    try { u = new URL(anchor.href, source.url); } catch { continue; }
+    if (u.host !== base.host) continue;
+    const caminho = stripTrailingSlash(u.pathname);
+    // Só sub-seção da listagem atual: irmã de nível acima é assunto de `siblingListingVariants`.
+    if (caminho === caminhoBase || !caminho.startsWith(`${caminhoBase}/`)) continue;
+    if (!pareceSecaoDeNoticias(caminho.split("/").filter(Boolean).at(-1) ?? "")) continue;
+    const limpa = new URL(u.toString());
+    limpa.hash = "";
+    limpa.search = "";
+    const valor = limpa.toString();
+    if (!destino.includes(valor)) destino.push(valor);
+  }
+}
+
+async function fetchSourceLinks(source: NewsSourceConfig, limit: number, secoesVistas?: string[]): Promise<NewsLink[]> {
   if (source.strategy === "govbr") {
     const [htmlLinks, apiLinks] = await Promise.allSettled([
-      fetchHtmlSourceLinks(source, limit),
+      fetchHtmlSourceLinks(source, limit, secoesVistas),
       fetchGovbrApiLinks(source, limit),
     ]);
     // Mantém links suficientes para o offset caminhar pelas páginas seguintes
@@ -655,10 +768,10 @@ async function fetchSourceLinks(source: NewsSourceConfig, limit: number): Promis
     ]))).slice(0, Math.max(limit * 2, NEWS_LISTING_MAX_PAGES * 30));
   }
 
-  return fetchHtmlSourceLinks(source, limit);
+  return fetchHtmlSourceLinks(source, limit, secoesVistas);
 }
 
-async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number): Promise<NewsLink[]> {
+async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number, secoesVistas?: string[]): Promise<NewsLink[]> {
   const listingPages = await fetchListingPages(source, limit);
   const seen = new Set<string>();
   const links: NewsLink[] = [];
@@ -669,6 +782,7 @@ async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number): Pr
     const anchors = source.strategy === "artesp"
       ? extractArtespNewsAnchors(page.html, page.url)
       : filterAnchorsBySelector(extractAnchors(page.html, page.url), source.linkSelector, page.url);
+    if (secoesVistas) recolherSecoes(anchors, source, secoesVistas);
     if (pushAnchorsAsLinks(anchors, source, seen, links, limit)) return sortNewsLinksByDate(pruneNewsLinks(links));
   }
 
@@ -789,7 +903,7 @@ function isAssetLikeSlug(slug: string): boolean {
 
 // Remove ruído de links de notícia: (1) slugs de asset/mídia; (2) sub-recursos
 // aninhados sob outro artigo (Plone serve imagens/sub-páginas em <artigo>/<algo>).
-function pruneNewsLinks(links: NewsLink[]): NewsLink[] {
+export function pruneNewsLinks(links: NewsLink[]): NewsLink[] {
   const pathOf = (u: string) => {
     try { return new URL(u).pathname.replace(/\/+$/, ""); } catch { return u; }
   };
@@ -798,12 +912,39 @@ function pruneNewsLinks(links: NewsLink[]): NewsLink[] {
     return seg ? !isAssetLikeSlug(seg) : true;
   });
   const paths = noAssets.map((l) => pathOf(l.url));
+  const ultimo = (caminho: string) => caminho.split("/").filter(Boolean).at(-1) ?? "";
+  const descendentesDe = paths.map((p) =>
+    paths.filter((outro) => outro.length > p.length && outro.startsWith(`${p}/`)).length);
+  /**
+   * ⚠️ Quem tem MUITOS descendentes entre os candidatos é uma LISTAGEM, não um artigo.
+   *
+   * A regra original — "descarte quem for descendente estrito de outro candidato" — existe para
+   * jogar fora o sub-recurso de um artigo (`/noticia/x/anexo`). Ela pressupõe que o ancestral é o
+   * artigo. Quando o ancestral é uma SEÇÃO, a pressuposição se inverte e a regra descarta
+   * exatamente as notícias: foi o que aconteceu com a ANS, onde 30 artigos morreram para que
+   * sobrasse a sub-listagem que os continha.
+   *
+   * O nome da seção é reconhecido por `pareceSecaoDeNoticias`, que é uma lista fechada; esta
+   * contagem é a rede que NÃO depende de conhecer o nome — um artigo não tem 3 sub-recursos
+   * listados na mesma página, uma seção tem dezenas.
+   */
+  const ehListagem = (i: number) =>
+    descendentesDe[i] >= DESCENDENTES_QUE_DENUNCIAM_LISTAGEM || pareceSecaoDeNoticias(ultimo(paths[i]));
   return noAssets.filter((_, i) => {
     const p = paths[i];
-    // descarta se for descendente estrito de outro candidato (sub-recurso do artigo)
-    return !paths.some((other, j) => j !== i && other.length < p.length && p.startsWith(`${other}/`));
+    if (ehListagem(i)) return false;
+    // descarta se for descendente estrito de outro ARTIGO (sub-recurso do artigo)
+    return !paths.some((other, j) =>
+      j !== i && other.length < p.length && p.startsWith(`${other}/`) && !ehListagem(j));
   });
 }
+
+/**
+ * Quantos descendentes bastam para denunciar uma listagem. Um artigo pode plausivelmente ter três
+ * sub-recursos listados na mesma página (anexo, galeria, versão em Libras) — por isso o limiar é 4,
+ * e não 2 ou 3. Medido: a sub-listagem da ANS tinha 30.
+ */
+const DESCENDENTES_QUE_DENUNCIAM_LISTAGEM = 4;
 
 // Converte âncoras extraídas em NewsLinks válidos (filtros de detalhe/título/dedup).
 // Retorna true se atingiu o teto de links (sinal para encerrar cedo).
@@ -1197,11 +1338,10 @@ function isNewsDetailUrl(source: NewsSourceConfig, url: URL) {
   // pushAnchorsAsLinks — já barram os links que não são artigo. QA Etapa 20.)
   const lastSegment = decodeURIComponent(path.split("/").filter(Boolean).at(-1) ?? "");
   if (!lastSegment || /^\d+$/.test(lastSegment)) return false;
-  if (["noticias", "ultimas-noticias", "noticias-anteriores"].includes(normalizeText(lastSegment))) return false;
-  // Listagem/landing de "defeso eleitoral" não é artigo — vinha capturada como item sem
-  // resumo e com data FUTURA do calendário eleitoral (ex.: "2026 - Defeso Eleitoral"). Cobre
-  // tanto `noticias-defeso-eleitoral` quanto slugs `<ano>-defeso-eleitoral`. QA jul/2026.
-  if (/defeso-eleitoral$/.test(normalizeText(lastSegment))) return false;
+  // Listagem não é artigo. Uma SEÇÃO capturada como artigo custa duas vezes: entra no acervo
+  // como item sem resumo e com data do calendário eleitoral, E — sendo ancestral das notícias
+  // reais — faz o `pruneNewsLinks` descartar todas elas. Ver `pareceSecaoDeNoticias`.
+  if (pareceSecaoDeNoticias(lastSegment)) return false;
   if (lastSegment.includes(".")) return false;
   if (source.strategy === "artesp" && /^z[0-9a-z_]+$/i.test(lastSegment)) return false;
 

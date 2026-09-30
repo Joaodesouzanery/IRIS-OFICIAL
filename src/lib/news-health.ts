@@ -43,27 +43,63 @@ export type HealthSource = {
   // de run e sem metadata). Distinguir "0 comprovado" de "desconhecido" é o que evita chamar
   // uma fonte quieta de "coletor quebrado" sem evidência.
   latest_links_found?: number | null;
+  /**
+   * A fonte oficial mostra algo MAIS NOVO do que a notícia mais nova que temos?
+   *
+   * ⚠️ Já era calculado em `/noticias/health` e não era lido por ninguém — quinta vez de
+   * "capacidade sem consumidor" no projeto. É o único campo que separa "a fonte não publicou"
+   * (afirmação sobre a AGÊNCIA) de "nós não temos" (afirmação sobre NÓS), e é o que faltava
+   * para o aviso não mentir.
+   */
+  is_stale?: boolean;
+  latest_official_publicado_em?: string | null;
+  /** A mais nova que NÓS temos — exibida ao lado da da fonte, para o atraso ser verificável. */
+  latest_publicado_em?: string | null;
 };
 
-export type FonteEstado = "erro" | "sem_itens" | "quieta" | "nunca" | "ok";
+export type FonteEstado = "erro" | "sem_itens" | "atrasada" | "nao_gravou" | "quieta" | "nunca" | "ok";
 
 /**
- * Estado HONESTO de uma fonte — separa problema técnico de fonte quieta:
- * - "erro":     coletor falhou (erro técnico recente) → NÃO é "sem notícia".
+ * Estado HONESTO de uma fonte:
+ * - "erro":      coletor falhou (erro técnico recente) → NÃO é "sem notícia".
  * - "sem_itens": coletor respondeu mas achou 0 links COMPROVADOS (listagem movida/indisponível).
- * - "quieta":   listagem OK (ou desconhecida) e sem publicação nova há >7d (recesso/defeso).
- * - "nunca":    configurada e sem NENHUMA notícia ingerida (pode nunca ter coletado).
- * - "ok":       saudável (não entra em aviso).
- * Conservador: só acusa "sem_itens" com 0 links COMPROVADO; sem evidência de links, assume quieta.
+ * - "atrasada":  a FONTE publicou algo mais novo do que o que temos → o atraso é NOSSO.
+ * - "nao_gravou": nada ingerido, mas o coletor ACHOU links → não é "nunca coletou".
+ * - "quieta":    sem publicação nova há >7d e nenhuma evidência de que a fonte publicou.
+ * - "nunca":     configurada, sem nenhuma notícia e sem link achado (pode nunca ter rodado).
+ * - "ok":        saudável (não entra em aviso).
+ *
+ * ⚠️ O DEFEITO QUE ISTO CONSERTA (medido em 30/09/2026). O único teste era
+ * `latest_links_found === 0`, e com qualquer número diferente de zero a saída era "quieta" — cujo
+ * texto AFIRMA "a fonte simplesmente não publicou". A ANS aparecia com "89 dias" tendo publicado
+ * em **28/09**: o coletor achava **1** link (a sub-listagem, ver `pareceSecaoDeNoticias`) e
+ * `1 !== 0` bastava. A ANA, **7** links de julho, com matéria nova **do mesmo dia**.
+ *
+ * É a forma de erro da Fase 17 com o sinal trocado: lá um marcador que SEMPRE casa provava
+ * "bloqueado"; aqui um número que quase nunca é zero prova "a fonte está quieta". Um número só
+ * vira afirmação sobre a AGÊNCIA quando é comparado com a agência — é o que `is_stale` faz.
  */
 export function classificarFonte(s: HealthSource): FonteEstado {
   if (s.active_error) return "erro";
-  if (s.total === 0) return "nunca";
+  if (s.total === 0) return (s.latest_links_found ?? 0) > 0 ? "nao_gravou" : "nunca";
   const dias = s.dias_sem_publicar;
   if (typeof dias === "number" && dias > 7) {
+    // Ordem: o que a FONTE mostra vence o que nós contamos.
+    if (s.is_stale) return "atrasada";
     return s.latest_links_found === 0 ? "sem_itens" : "quieta";
   }
   return "ok";
+}
+
+/**
+ * A quietude foi CONFERIDA contra a fonte, ou é só ausência de notícia nossa?
+ *
+ * Sem `latest_official_publicado_em` não há comparação nenhuma, e o aviso não pode afirmar nada
+ * sobre a agência — só que nós não temos nada novo. Com ele, "quieta" passa a significar que a
+ * própria fonte não mostra nada mais recente.
+ */
+export function quietudeConferida(s: HealthSource): boolean {
+  return Boolean(s.latest_official_publicado_em);
 }
 
 export function erroCurto(msg: string | null | undefined): string {
