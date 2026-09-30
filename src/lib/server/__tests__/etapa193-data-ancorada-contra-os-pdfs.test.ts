@@ -244,9 +244,32 @@ describe("etapa193 · a JANELA C do redatar: seleciona por DISCORDÂNCIA, não p
      */
     const chamadas = (R.match(/ensureReuniao\(db, \{/g) ?? []).length;
     expect(chamadas).toBe(3);
-    expect((R.match(/serie: deriveSerie\(\(d\.reuniao_ordinaria as string \| null\) \?\? null\)/g) ?? []).length)
-      .toBe(3);
-    expect((R.match(/titulo: \(d\.reuniao_ordinaria as string \| null\) \?\? null/g) ?? []).length).toBe(3);
+    /**
+     * ⚠️ ATUALIZADO na Fase 36 — mede a PROPRIEDADE, não a forma da derivação.
+     *
+     * A expectativa exigia o literal `serie: deriveSerie((d.reuniao_ordinaria …))` três vezes. A
+     * Fase 36 trocou a derivação por `serieDaReuniao`, que acrescenta duas camadas (tipo e faixa)
+     * porque `deriveSerie` sozinho devolve `null` fora da ANTT: `reuniao_ordinaria` guarda só os
+     * DÍGITOS lá, e a reunião nascia sem série.
+     *
+     * O que importa continua igual, e é isto: os TRÊS `ensureReuniao` passam `serie` e `titulo`. Sem
+     * eles a chamada cai no ramo sem filtro e, com o índice único `COALESCE(serie,'')`, religa a
+     * deliberação à linha da série ERRADA.
+     */
+    // Cada chamada, uma a uma: contar ocorrências no arquivo inteiro não diz que elas estão DENTRO
+    // do `ensureReuniao` — `serieDaReuniao` também recebe `titulo`, e a contagem global daria 6.
+    let cursor = 0;
+    for (let i = 0; i < 3; i += 1) {
+      const inicio = R.indexOf("ensureReuniao(db, {", cursor);
+      expect(inicio, `a ${i + 1}ª chamada de ensureReuniao sumiu`).toBeGreaterThan(-1);
+      const fim = R.indexOf("});", inicio);
+      const bloco = R.slice(inicio, fim);
+      expect(bloco, `a ${i + 1}ª chamada não passa série`).toMatch(/serie: serieDaReuniao\(\{/);
+      expect(bloco, `a ${i + 1}ª chamada não passa título`).toMatch(/titulo: \(d\.reuniao_ordinaria/);
+      cursor = fim;
+    }
+    expect(R, "voltou o `deriveSerie` sozinho: fora da ANTT a série vira null outra vez")
+      .not.toMatch(/serie: deriveSerie\(/);
     // E o campo tem de ser LIDO do banco nas três janelas, senão viaja `undefined`.
     expect((R.match(/numero_reuniao, reuniao_ordinaria, tipo_reuniao/g) ?? []).length).toBe(3);
   });

@@ -15,7 +15,7 @@ import { isAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { findBestMatch, normalizeName, isStrictPersonName } from "@/lib/server/name-matcher";
 import { resolveEmpresaId, type EmpresaCache } from "@/lib/server/empresa-resolver";
 import { requireAdminOrCron } from "@/lib/server/request-guards";
-import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
+import { ensureReuniao, serieDaReuniao } from "@/lib/server/reunioes";
 import { enrichDeliberacaoExistente, findDeliberacaoExistente } from "@/lib/server/deliberacao-dedup";
 import { hasBudget } from "@/lib/server/time-budget";
 import { COLEGIADO_SIGLAS, dataReuniaoPlausivel, fonteNominaVotos, ataEhFonteDeDecisao } from "@/lib/server/colegiado-sources";
@@ -526,7 +526,20 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       // as vizinhas é este caller. Check que só existe com banco fica inerte no harness, e foi
       // assim que o C16 entrou incapaz de disparar.
       // ⚠️ Busca por SÉRIE, não por `tipo_reuniao`: os contadores são independentes por série.
-      const serieDoc = deriveSerie(d.reuniao_ordinaria ?? null);
+      /**
+       * ⚠️ A MESMA derivação do `ensureReuniao` logo abaixo — uma fonte por conceito.
+       *
+       * Aqui usava `deriveSerie` sozinho, que fora da ANTT devolve `null` (o título é só o número):
+       * a checagem ficava inerte para ARTESP e ANM, e pior, a série usada para BUSCAR as vizinhas
+       * divergia da série usada para GRAVAR a reunião. Com as duas iguais, a ARTESP e a ANM passam a
+       * ser conferidas também — o check é AVISO, nunca bloqueia o confirm.
+       */
+      const serieDoc = serieDaReuniao({
+        sigla: effectiveAgenciaId ? siglaPorId.get(effectiveAgenciaId) ?? null : null,
+        titulo: d.reuniao_ordinaria ?? null,
+        tipoReuniao: d.tipo_reuniao,
+        numeroReuniao: d.numero_reuniao,
+      }).serie;
       let vizinhas: Array<{ numeroReuniao: string | null; dataReuniao: string | null }> = [];
       if (serieDoc && d.data_reuniao && d.numero_reuniao && effectiveAgenciaId) {
         try {
@@ -743,7 +756,18 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           dataReuniao: d.data_reuniao,
           numeroReuniao: d.numero_reuniao,
           tipoReuniao: d.tipo_reuniao,
-          serie: deriveSerie(tituloReuniao),
+          /**
+           * ⚠️ `serieDaReuniao` e não `deriveSerie` sozinho: o título só é completo na ANTT. Na ARTESP
+           * e na ANM, `reuniao_ordinaria` guarda só os DÍGITOS (`RE_REUNIAO` devolve o grupo 1), então
+           * `deriveSerie("1178")` é `null` — e toda reunião nova dessas duas agências nascia SEM série.
+           * Com séries misturadas no mesmo balde, a detecção de buracos do placar se cala.
+           */
+          serie: serieDaReuniao({
+            sigla: siglaPorId.get(effectiveAgenciaId) ?? null,
+            titulo: tituloReuniao,
+            tipoReuniao: d.tipo_reuniao,
+            numeroReuniao: d.numero_reuniao,
+          }).serie,
           titulo: tituloReuniao,
           source: "upload-confirm",
         });

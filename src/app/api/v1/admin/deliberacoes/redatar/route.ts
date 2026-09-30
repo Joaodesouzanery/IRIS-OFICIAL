@@ -28,7 +28,7 @@ import { hasBudget, budgetFromRequest } from "@/lib/server/time-budget";
 import { dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
 import { extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import { extractDataReuniaoAncorada } from "@/lib/server/nlp-extractor";
-import { ensureReuniao, deriveSerie } from "@/lib/server/reunioes";
+import { ensureReuniao, serieDaReuniao } from "@/lib/server/reunioes";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { janelaRotativa } from "@/lib/server/varredura-rotativa";
@@ -209,7 +209,15 @@ export async function POST(req: NextRequest) {
         // (a 271ª RDE e a 1.028ª de Diretoria convivem na mesma data) ou criar uma linha com
         // `serie NULL`. Corrigir a data e errar a reunião seria trocar um defeito por outro.
         titulo: (d.reuniao_ordinaria as string | null) ?? null,
-        serie: deriveSerie((d.reuniao_ordinaria as string | null) ?? null),
+        // ⚠️ Mesma razão do confirm: fora da ANTT o título é só o número, e `deriveSerie` daria null —
+        // corrigir a data com a série divergente religa a reunião à linha errada (o índice único
+        // inclui `COALESCE(serie,'')`) ou cria duplicata.
+        serie: serieDaReuniao({
+          sigla: d.agencia_id ? siglaPorId.get(d.agencia_id) ?? null : null,
+          titulo: (d.reuniao_ordinaria as string | null) ?? null,
+          tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+          numeroReuniao: (d.numero_reuniao as string | null) ?? null,
+        }).serie,
       });
       if (await exigirEscrita(db.from("deliberacoes").update({
         data_reuniao: nova,
@@ -309,7 +317,15 @@ export async function POST(req: NextRequest) {
           dataReuniao: nova,
           tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
           titulo: (d.reuniao_ordinaria as string | null) ?? null,
-          serie: deriveSerie((d.reuniao_ordinaria as string | null) ?? null),
+          // ⚠️ Mesma razão do confirm: fora da ANTT o título é só o número, e `deriveSerie` daria null —
+        // corrigir a data com a série divergente religa a reunião à linha errada (o índice único
+        // inclui `COALESCE(serie,'')`) ou cria duplicata.
+        serie: serieDaReuniao({
+          sigla: d.agencia_id ? siglaPorId.get(d.agencia_id) ?? null : null,
+          titulo: (d.reuniao_ordinaria as string | null) ?? null,
+          tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+          numeroReuniao: (d.numero_reuniao as string | null) ?? null,
+        }).serie,
         });
         if (await exigirEscrita(db.from("deliberacoes").update({
           data_reuniao: nova,
@@ -476,7 +492,15 @@ export async function POST(req: NextRequest) {
         // (a 271ª RDE e a 1.028ª de Diretoria convivem na mesma data) ou criar uma linha com
         // `serie NULL`. Corrigir a data e errar a reunião seria trocar um defeito por outro.
         titulo: (d.reuniao_ordinaria as string | null) ?? null,
-        serie: deriveSerie((d.reuniao_ordinaria as string | null) ?? null),
+        // ⚠️ Mesma razão do confirm: fora da ANTT o título é só o número, e `deriveSerie` daria null —
+        // corrigir a data com a série divergente religa a reunião à linha errada (o índice único
+        // inclui `COALESCE(serie,'')`) ou cria duplicata.
+        serie: serieDaReuniao({
+          sigla: d.agencia_id ? siglaPorId.get(d.agencia_id) ?? null : null,
+          titulo: (d.reuniao_ordinaria as string | null) ?? null,
+          tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+          numeroReuniao: (d.numero_reuniao as string | null) ?? null,
+        }).serie,
       });
       if (await exigirEscrita(db.from("deliberacoes").update({
         data_reuniao: rederivada,

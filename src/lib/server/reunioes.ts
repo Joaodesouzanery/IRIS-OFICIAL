@@ -40,6 +40,67 @@ export function deriveSerie(titulo: string | null | undefined): SerieReuniao | n
   return "ordinaria";
 }
 
+/** De onde a série saiu — a faixa é o último recurso, e ela precisa se declarar. */
+export type OrigemDaSerie = "titulo" | "tipo_reuniao" | "faixa";
+
+export interface SerieDerivada {
+  serie: SerieReuniao | null;
+  origem: OrigemDaSerie | null;
+}
+
+/**
+ * A série da reunião, com PRECEDÊNCIA declarada — título, depois tipo, e faixa só como reserva.
+ *
+ * ═══ Por que `deriveSerie` sozinho não basta ═══
+ * `deriveSerie` lê o TÍTULO. Mas `reuniao_ordinaria` só carrega título completo na ANTT (o parser
+ * dela sobrescreve o campo); na ARTESP e na ANM ele vem de
+ * `firstMatch(text, RE_REUNIAO)`, que devolve o **grupo 1 = só os dígitos** — a palavra
+ * "Ordinária/Extraordinária" está no match e é DESCARTADA. Logo `deriveSerie("1178")` é `null`, e é
+ * isso que o confirm e o redatar vinham gravando: **toda reunião nova de ARTESP e ANM nasce sem
+ * série**, e a detecção de buracos do placar se cala quando as séries se misturam no mesmo balde.
+ *
+ * ═══ A precedência, e por que nesta ordem ═══
+ *  1. **título** — é o que a fonte escreveu; não se infere o que está dito.
+ *  2. **`tipo_reuniao`** — na ANM vem de `extractAnmMeetingMetadata`, que casa `\brop\b` e a palavra
+ *     por extenso: é leitura do documento, não palpite.
+ *  3. **faixa numérica** — ÚLTIMO recurso, e só onde as faixas não se cruzam.
+ *
+ * ⚠️ A ANTT NUNCA usa faixa. Três motivos medidos: a série **Administrativa ocupa 193–199,
+ * intercalada** com as de 2026; número lido errado cai abaixo de 200 ("1.024" já virou "024", e o
+ * coletor gravou "1" para "1.036ª" até o commit `ec6970c`); e `tipo_reuniao` colapsa RD e RDE em
+ * "Ordinaria", então também não serve. Sem título, a ANTT devolve `null` — e `null` é a resposta
+ * honesta: presumir juntaria séries distintas na mesma chave, que é o defeito que esta função existe
+ * para desfazer.
+ *
+ * ⚠️ E na ARTESP a FAIXA VENCE o `tipo_reuniao`. O tipo dela é a primeira palavra
+ * "Ordinária/Extraordinária" que aparece no texto, e ele erra: a própria ARTESP retificou a 1177ª
+ * ("onde se lê Extraordinária, leia-se Ordinária"). As duas séries dela não se cruzam entre 246 e
+ * 1146, então a faixa é mais confiável que o rótulo.
+ */
+export function serieDaReuniao(input: {
+  sigla: string | null | undefined;
+  titulo: string | null | undefined;
+  tipoReuniao?: string | null;
+  numeroReuniao?: string | null;
+}): SerieDerivada {
+  const peloTitulo = deriveSerie(input.titulo);
+  if (peloTitulo) return { serie: peloTitulo, origem: "titulo" };
+
+  const sigla = String(input.sigla ?? "").trim().toUpperCase();
+  if (sigla === "ANTT") return { serie: null, origem: null };
+
+  const ordinal = numeroReuniaoOrdinal(String(input.numeroReuniao ?? ""));
+  if (sigla === "ARTESP" && ordinal !== null && ordinal > 0) {
+    return { serie: ordinal >= 1000 ? "ordinaria" : "extraordinaria", origem: "faixa" };
+  }
+
+  const tipo = String(input.tipoReuniao ?? "").trim().toLowerCase();
+  if (tipo.startsWith("extraordin")) return { serie: "extraordinaria", origem: "tipo_reuniao" };
+  if (tipo.startsWith("ordin")) return { serie: "ordinaria", origem: "tipo_reuniao" };
+
+  return { serie: null, origem: null };
+}
+
 /**
  * Número da reunião como INTEIRO, para comparação ordinal. Reexportado aqui porque a
  * monotonicidade é um assunto da entidade "reunião", e o campo armazenado convive em dois formatos
