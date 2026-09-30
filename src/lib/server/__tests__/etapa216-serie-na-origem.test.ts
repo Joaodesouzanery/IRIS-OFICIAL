@@ -128,9 +128,29 @@ describe("etapa216 · e a origem do defeito ficou fechada: os quatro pontos usam
     expect(REDATAR).not.toMatch(/deriveSerie\(/);
   });
 
-  it("os três `ensureReuniao` do redatar e o do confirm usam `serieDaReuniao`", () => {
-    expect((REDATAR.match(/serieDaReuniao\(\{/g) ?? []).length).toBe(3);
-    expect((CONFIRM.match(/serieDaReuniao\(\{/g) ?? []).length).toBe(2);
+  it("⚠️ TODO `ensureReuniao` passa por `serieDaReuniao` — a contagem exata era frágil", () => {
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, B.3): as expectativas eram `toBe(3)` e `toBe(2)`. A Janela D (a data da
+     * ANTT pela listagem) acrescentou um QUARTO `ensureReuniao` — que usa `serieDaReuniao`, ou seja
+     * exatamente o que se quer — e a contagem exata reprovou.
+     *
+     * Contar é frágil nos dois sentidos: um ponto novo e correto reprova, e trocar UM dos existentes
+     * por outra derivação passaria contanto que alguém acrescentasse outro. A propriedade é
+     * "nenhum `ensureReuniao` grava série por outro caminho", e é ela que se mede: um `serieDaReuniao`
+     * por `ensureReuniao`, nos dois arquivos.
+     */
+    const pares = (texto: string) => ({
+      ensure: (texto.match(/ensureReuniao\(/g) ?? []).length,
+      serie: (texto.match(/serieDaReuniao\(\{/g) ?? []).length,
+    });
+    const r = pares(REDATAR);
+    expect(r.ensure, "o redatar perdeu os `ensureReuniao`").toBeGreaterThanOrEqual(3);
+    expect(r.serie, "há `ensureReuniao` no redatar sem `serieDaReuniao` ao lado").toBe(r.ensure);
+    const c = pares(CONFIRM);
+    expect(c.ensure).toBeGreaterThanOrEqual(1);
+    // ⚠️ No confirm há um `serieDaReuniao` EXTRA, o da monotonicidade (`serieDoc`) — ele não
+    // acompanha um `ensureReuniao`, e o teste seguinte é quem o guarda.
+    expect(c.serie).toBe(c.ensure + 1);
   });
 
   it("⚠️ a checagem de monotonicidade usa a MESMA derivação da gravação", () => {

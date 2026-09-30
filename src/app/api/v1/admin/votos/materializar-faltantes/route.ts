@@ -41,6 +41,13 @@ import {
   apenasQuemFalta,
   paresAutorizadosPeloDocumento,
 } from "@/lib/server/completar-colegiado";
+import {
+  REVOTO_LIGADO,
+  decidirRevoto,
+  rastroDoRevoto,
+  type RastroDeRevoto,
+  type VotoParaRevoto,
+} from "@/lib/server/revoto";
 import { foraDaJanelaDeMandatos, type JanelaDeMandato } from "@/lib/server/janela-de-mandatos";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 import { lerTudo } from "@/lib/server/select-all-paged";
@@ -112,6 +119,7 @@ export async function POST(req: NextRequest) {
 
   const body = (await req.json().catch(() => ({}))) as {
     dry_run?: unknown; agencia_id?: unknown; year?: unknown; completar_parcial?: unknown;
+    revoto?: unknown;
   };
   const dryRun = body.dry_run !== false; // default true — aplicar exige dry_run:false explícito
   /**
@@ -126,6 +134,17 @@ export async function POST(req: NextRequest) {
    * TROCA a população e pula o reparo, em vez de somar trabalho.
    */
   const completarParcial = body.completar_parcial === true;
+  /**
+   * MODO EXCLUSIVO — REVOTO (Fase 36, B.4).
+   *
+   * Refaz o voto de quem tem voto de diretor FORA do roster da data. É estoque por construção: o
+   * sinal é derivado do próprio dado, não um marcador que uma rodada tenha carimbado — e por isso
+   * alcança as ~200 linhas propagadas em fases anteriores, que marcador nenhum carimbou.
+   *
+   * ⚠️ Exclusivo pelo mesmo motivo do `completar_parcial`: como adendo, ele rodaria junto com a
+   * população de zero-voto e o reparo de artefato, e `restantes` nunca drenaria.
+   */
+  const modoRevoto = body.revoto === true;
   const agenciaFiltro = typeof body.agencia_id === "string" && body.agencia_id ? body.agencia_id : null;
   const year = typeof body.year === "string" && YEAR_RE.test(body.year) ? body.year : null;
 
@@ -303,6 +322,19 @@ export async function POST(req: NextRequest) {
    * carimbo que nunca existiu, consumindo a reserva de 400 ms por escrita da fila de diagnóstico.
    */
   const carimboASair = new Set<string>();
+  // ═══ B.4 — os números do REVOTO (medição, com a escrita desligada) ═══
+  let revotoApagariam = 0;
+  let revotoApagados = 0;
+  let revotoRosterSuspeito = 0;
+  let revotoFaltando = 0;
+  const revotoRecusas: Record<string, number> = {};
+  const revotoPorAgencia: Record<string, number> = {};
+  const revotoRastro: RastroDeRevoto[] = [];
+  const revotoDetalhe: Array<{
+    deliberacao_id: string; agencia: string; data_reuniao: string | null;
+    apagar: string[]; roster_suspeito: string[]; faltando: string[];
+  }> = [];
+
   // ═══ Bloco A — os números do modo parcial (medição, com a escrita desligada) ═══
   let parcialPlanejados = 0;
   let parcialBarrados = 0;
@@ -424,10 +456,23 @@ export async function POST(req: NextRequest) {
 
   // Quais já têm voto. Era um laço de chunks de 200 `in()`, que cresce junto com `finais`; uma
   // leitura paginada de UMA coluna uuid é ~4 páginas e não depende do tamanho do outro lado.
-  const votosRes = await lerTudo<{ deliberacao_id: string; diretor_id: string | null }>(
-    // `diretor_id` custa ZERO (mesma página) e é o que o modo parcial precisa: sem ele não há como
-    // saber QUEM falta, e completar sem saber quem falta reescreveria quem já respondeu.
-    () => db.from("votos").select("deliberacao_id, diretor_id").order("id"), "materializar/votos-ids");
+  const votosRes = await lerTudo<{
+    deliberacao_id: string; diretor_id: string | null;
+    is_nominal: boolean | null; proveniencia: string | null;
+    tipo_voto: string | null; motivo_nao_voto: string | null;
+  }>(
+    /**
+     * Todas as colunas custam ZERO a mais (mesma página) e cada uma decide algo:
+     *  · `diretor_id` — sem ele não há como saber QUEM falta, e completar sem saber quem falta
+     *    reescreveria quem já respondeu (o `defaultToNull` do upsert);
+     *  · `proveniencia` + `is_nominal` — `isVotoNominal` é a fonte única; ler `is_nominal` cru faria
+     *    um voto `revisao_humana` ser tratado como inferido e APAGADO pelo revoto;
+     *  · `tipo_voto` + `motivo_nao_voto` — vão para o rastro, senão a ausência removida perde a causa.
+     */
+    () => db.from("votos")
+      .select("deliberacao_id, diretor_id, is_nominal, proveniencia, tipo_voto, motivo_nao_voto")
+      .order("id"),
+    "materializar/votos-ids");
   // ⚠️ `lerTudo` devolve `{error}` em vez de lançar, e no caminho de ERRO devolve
   // `truncated: false` com as linhas que já tinha (`select-all-paged.ts:23`). Ignorar o erro aqui
   // seria pior que truncar: `comVoto` sairia INCOMPLETO, deliberação que já tem voto voltaria para
@@ -437,11 +482,19 @@ export async function POST(req: NextRequest) {
   }
   const comVoto = new Set<string>((votosRes.data ?? []).map((r) => r.deliberacao_id));
   const votantesPorDelib = new Map<string, Set<string>>();
+  /** As LINHAS por deliberação — o revoto decide sobre a linha, não sobre o id. */
+  const linhasPorDelib = new Map<string, VotoParaRevoto[]>();
   for (const v of votosRes.data ?? []) {
     if (!v.deliberacao_id || !v.diretor_id) continue;
     const atual = votantesPorDelib.get(v.deliberacao_id) ?? new Set<string>();
     atual.add(v.diretor_id);
     votantesPorDelib.set(v.deliberacao_id, atual);
+    const linhas = linhasPorDelib.get(v.deliberacao_id) ?? [];
+    linhas.push({
+      diretor_id: v.diretor_id, is_nominal: v.is_nominal, proveniencia: v.proveniencia,
+      tipo_voto: v.tipo_voto, motivo_nao_voto: v.motivo_nao_voto,
+    });
+    linhasPorDelib.set(v.deliberacao_id, linhas);
   }
   const leituraCompleta = !levesRes.truncated && !votosRes.truncated;
 
@@ -460,7 +513,7 @@ export async function POST(req: NextRequest) {
   // `restantes` ficar eternamente `true`). Além disso, a recusa (a) de `planejarCompletar` existe
   // justamente para mandar essas linhas para cá — fazer os dois na mesma rodada embaralharia o
   // número de quem apagou com o de quem completou.
-  if (!completarParcial) {
+  if (!completarParcial && !modoRevoto) {
     // Só as deliberações de agência cuja ATA não nomina — é a população inteira do defeito, e ela é
     // pequena por construção (a ARTESP e a ANTT; a ANM nomina parcialmente e fica de fora).
     const candidatasArtefato = (finais as any[]).filter((d) =>
@@ -545,7 +598,11 @@ export async function POST(req: NextRequest) {
    * data): ele só pode INCLUIR demais, nunca de menos, e quem decide é o portão por item mais
    * abaixo. Um pré-filtro apertado aqui esconderia deliberação parcial sem ninguém medir.
    */
-  const semVotoTotal = completarParcial
+  const semVotoTotal = modoRevoto
+    // ⚠️ Toda deliberação COM voto. Quem decide é `decidirRevoto`, item a item, e ele precisa do
+    // roster da data — que só o laço tem. Um pré-filtro aqui esconderia caso sem ninguém medir.
+    ? (finais as any[]).filter((d: any) => (votantesPorDelib.get(String(d.id))?.size ?? 0) > 0)
+    : completarParcial
     ? await (async () => {
       const out: any[] = [];
       for (const d of finais as any[]) {
@@ -730,6 +787,89 @@ export async function POST(req: NextRequest) {
           }),
         });
       }
+    }
+
+    /**
+     * ═══ B.4 — O REVOTO, e ele sai daqui antes de qualquer outra decisão ═══
+     *
+     * ⚠️ O roster é o de MANDATO, não o de presentes. A pergunta do revoto é "esta pessoa PODIA votar
+     * nesta data?", e isso é mandato; presença responde outra pergunta (quem estava na sala).
+     *
+     * ⚠️ E ele usa `rosterDeMandato` mesmo quando `presentesRoster` existe, porque um voto de quem não
+     * tinha mandato é errado independentemente de o preâmbulo citá-lo — se o preâmbulo cita, é o
+     * MANDATO que está errado, e é isso que `roster_suspeito` reporta.
+     */
+    if (modoRevoto) {
+      const linhas = linhasPorDelib.get(String(d.id)) ?? [];
+      const decisao = decidirRevoto({
+        roster: rosterDeMandato.map((x) => x.id),
+        votos: linhas,
+      });
+      const sigla = siglaDe(d.agencia_id);
+      if (decisao.recusa) {
+        revotoRecusas[decisao.recusa] = (revotoRecusas[decisao.recusa] ?? 0) + 1;
+        continue;
+      }
+      revotoApagariam += decisao.apagar.length;
+      revotoRosterSuspeito += decisao.roster_suspeito.length;
+      revotoFaltando += decisao.faltando.length;
+      if (decisao.apagar.length > 0) {
+        revotoPorAgencia[sigla] = (revotoPorAgencia[sigla] ?? 0) + decisao.apagar.length;
+      }
+      const nomeDe = (id: string) => diretoresList.find((x) => x.id === id)?.nome ?? id;
+      if (revotoDetalhe.length < 30) {
+        revotoDetalhe.push({
+          deliberacao_id: String(d.id), agencia: sigla,
+          data_reuniao: (d.data_reuniao as string | null) ?? null,
+          apagar: decisao.apagar.map(nomeDe),
+          roster_suspeito: decisao.roster_suspeito.map(nomeDe),
+          faltando: decisao.faltando.map(nomeDe),
+        });
+      }
+      /** O rastro é montado SEMPRE — inclusive em simulação, porque é o que o usuário confere antes. */
+      revotoRastro.push(...rastroDoRevoto({
+        deliberacaoId: String(d.id),
+        votos: linhas,
+        apagar: decisao.apagar,
+        dataDaDeliberacao: (d.data_reuniao as string | null) ?? null,
+        agora: new Date().toISOString(),
+      }));
+
+      /**
+       * ⚠️ A ORDEM DA ESCRITA: a auditoria PRIMEIRO, o apagamento depois. Se a auditoria falhar, nada
+       * é apagado — o inverso deixaria voto removido sem rastro, que é exatamente o que o usuário
+       * proibiu ("não apague os votos antigos sem rastro").
+       */
+      if (!REVOTO_LIGADO || dryRun || decisao.apagar.length === 0) continue;
+      const rastroDesta = rastroDoRevoto({
+        deliberacaoId: String(d.id), votos: linhas, apagar: decisao.apagar,
+        dataDaDeliberacao: (d.data_reuniao as string | null) ?? null,
+        agora: new Date().toISOString(),
+      });
+      const auditado = await exigirEscrita(
+        db.from("votos_retroativos_audit").insert({
+          nome_detectado: "(revoto — data da reuniao corrigida)",
+          deliberacoes_afetadas: 1,
+          votos_criados: 0,
+          votos_ignorados_fora_mandato: 0,
+          detalhe: {
+            tipo: "revoto_por_data_corrigida",
+            motivo: "voto inferido de quem nao esta no roster da data da deliberacao",
+            votos_a_remover: rastroDesta.length,
+            linhas: rastroDesta,
+          },
+        }),
+        `auditoria do revoto de ${d.id}`,
+      );
+      if (!auditado) continue;
+      for (const diretorId of decisao.apagar) {
+        const ok = await exigirEscrita(
+          db.from("votos").delete().eq("deliberacao_id", d.id).eq("diretor_id", diretorId),
+          `revoto: voto inferido de ${diretorId} em ${d.id}`,
+        );
+        if (ok) revotoApagados++;
+      }
+      continue;
     }
 
     // ═══ Fase 20 — NÃO ATRIBUIR VOTO A QUEM NÃO VOTOU ══════════════════════
@@ -976,7 +1116,7 @@ export async function POST(req: NextRequest) {
   // literalmente por `etapa149` — o teste que guarda a lição da Fase 28: não classificar o que não
   // se leu. Acrescentar um `push` ali quebraria o teste sem ganho; o mesmo conjunto sai daqui,
   // porque `Object.assign(d, pesado)` só popula `raw_extraction` em quem recebeu payload.
-  for (const d of (completarParcial ? [] : loteBruto) as any[]) {
+  for (const d of (completarParcial || modoRevoto ? [] : loteBruto) as any[]) {
     if (!motivoPorDeliberacao.has(String(d.id)) && !d.raw_extraction) {
       motivoPorDeliberacao.set(String(d.id), "falha_tecnica_de_leitura");
     }
@@ -988,7 +1128,7 @@ export async function POST(req: NextRequest) {
    * linhas; sem esta guarda, a deliberação recebia voto e, três linhas depois, o carimbo de "sem
    * voto ainda não processado" — na mesma rodada.
    */
-  for (const d of (completarParcial ? [] : semVoto) as any[]) {
+  for (const d of (completarParcial || modoRevoto ? [] : semVoto) as any[]) {
     /**
      * ⚠️ E NÃO carimba nada no modo parcial. `motivo_sem_voto` é uma afirmação sobre deliberação
      * SEM voto; a população do modo parcial TEM voto, e escrever "materializável não processado"
@@ -1049,7 +1189,7 @@ export async function POST(req: NextRequest) {
    * deliberação SEM voto. Aplicada à população parcial, ela sobrescreveria o motivo verdadeiro de
    * linhas que estão em outra fila. O modo parcial escreve VOTO ou nada.
    */
-  if (!dryRun && !completarParcial && patchPorDeliberacao.size > 0) {
+  if (!dryRun && !completarParcial && !modoRevoto && patchPorDeliberacao.size > 0) {
     /**
      * ⚠️ FILA PRIORIZADA — a INANIÇÃO POR PREFIXO, que é o defeito medido.
      *
@@ -1198,6 +1338,33 @@ export async function POST(req: NextRequest) {
      * é número (foi assim que a quebra por agência do placar se perdeu), então o objeto fica ao lado
      * para o consumo direto e a string é o que sobrevive à agregação da esteira.
      */
+    /**
+     * ═══ B.4 — O REVOTO, medido e desligado ═══
+     *
+     * `revoto_apagariam` é o estoque de votos inferidos de quem não está no roster da data;
+     * `revoto_apagados` é o que ESTA rodada removeu. Os dois juntos porque "apagados: 0" com
+     * "apagariam: 137" é simulação, e "0 e 0" é trabalho concluído.
+     *
+     * ⚠️ `revoto_roster_suspeito` é o número que INVERTE a leitura: voto NOMINAL de quem não está no
+     * roster não é voto errado, é notícia de que o MANDATO está errado. Ele nunca é apagado.
+     *
+     * ⚠️ `revoto_faltando` é a entrada do Bloco A: quando sobra um nominal, a deliberação continua em
+     * `comVoto` e o materializador NUNCA a revisita — quem a completa é `completar_parcial`.
+     */
+    revoto_modo: modoRevoto,
+    revoto_ligado: REVOTO_LIGADO,
+    revoto_apagariam: revotoApagariam,
+    revoto_apagados: revotoApagados,
+    revoto_roster_suspeito: revotoRosterSuspeito,
+    revoto_faltando: revotoFaltando,
+    revoto_recusas_por_motivo: revotoRecusas,
+    revoto_por_agencia: revotoPorAgencia,
+    revoto_por_agencia_txt: Object.entries(revotoPorAgencia)
+      .map(([sigla, n]) => `${sigla} ${n}`).join(" · ") || "nenhum",
+    revoto_detalhe: revotoDetalhe,
+    /** O rastro COMPLETO da simulação — é o que se confere antes de ligar. */
+    revoto_rastro: revotoRastro.slice(0, 200),
+    revoto_rastro_total: revotoRastro.length,
     completar_parcial_modo: completarParcial,
     completar_parcial_ligado: COMPLETAR_PARCIAL,
     parcial_pares_autorizados: parcialPlanejados,

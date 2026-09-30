@@ -138,30 +138,52 @@ describe("etapa216 · ⚠️ FILTRO 2: o portão é o preâmbulo, não o mandato
 });
 
 describe("etapa216 · o modo é EXCLUSIVO, e o motivo é de orçamento", () => {
+  /**
+   * ⚠️ CORREÇÃO, na MESMA fase, do que eu acabei de escrever. Estas expectativas travavam a FORMA:
+   * `const semVotoTotal = completarParcial`, `if (!completarParcial) {` e
+   * `(completarParcial ? [] : semVoto)`. O modo REVOTO (B.4) entrou como um segundo modo exclusivo e
+   * mudou os três — mudanças que PRESERVAM a propriedade — e as expectativas reprovaram.
+   *
+   * É o mesmo erro que eu corrigi em três testes antigos nesta fase, cometido de novo na mesma
+   * sessão. A propriedade é: o modo TROCA a população, e nem o reparo de artefato nem o diagnóstico
+   * rodam nele.
+   */
   it("troca a população em vez de somar trabalho", () => {
-    expect(MAT).toMatch(/const semVotoTotal = completarParcial/);
     expect(MAT).toMatch(/const completarParcial = body\.completar_parcial === true/);
+    // A população é escolhida por modo, e `completarParcial` é um dos ramos.
+    const i = MAT.indexOf("const semVotoTotal =");
+    expect(i, "a escolha da população desapareceu").toBeGreaterThan(-1);
+    expect(MAT.slice(i, i + 200)).toMatch(/completarParcial/);
   });
 
   it("⚠️ e o reparo de artefato NÃO roda — era ele que faria `restantes` ficar eterno", () => {
-    expect(MAT).toMatch(/if \(!completarParcial\) \{[\s\S]{0,400}artefato/i);
+    const i = MAT.indexOf("artefatosApagados = 0");
+    expect(i).toBeGreaterThan(-1);
+    // A guarda do bloco do artefato menciona o modo parcial, qualquer que seja a forma dela.
+    const guarda = MAT.slice(i, MAT.indexOf("{", MAT.indexOf("if (", i)) + 1);
+    expect(guarda, "o reparo de artefato passou a rodar no modo parcial").toMatch(/!completarParcial/);
   });
 
   it("⚠️ nem o DIAGNÓSTICO é gravado: `motivo_sem_voto` é afirmação sobre quem NÃO tem voto", () => {
-    expect(MAT).toMatch(/if \(!dryRun && !completarParcial && patchPorDeliberacao\.size > 0\)/);
-    expect(MAT).toMatch(/for \(const d of \(completarParcial \? \[\] : semVoto\) as any\[\]\)/);
-    expect(MAT).toMatch(/for \(const d of \(completarParcial \? \[\] : loteBruto\) as any\[\]\)/);
+    const iGrava = MAT.indexOf("patchPorDeliberacao.size > 0");
+    expect(iGrava, "a gravação do diagnóstico desapareceu").toBeGreaterThan(-1);
+    expect(MAT.slice(Math.max(0, iGrava - 120), iGrava)).toMatch(/!completarParcial/);
+    // E os dois laços de carimbo ficam vazios no modo parcial.
+    for (const fonte of ["semVoto", "loteBruto"]) {
+      const re = new RegExp(`for \\(const d of \\([^)]*completarParcial[^)]*\\? \\[\\] : ${fonte}\\)`);
+      expect(MAT, `o laço de carimbo sobre ${fonte} deixou de ser neutralizado no modo parcial`).toMatch(re);
+    }
   });
 
   it("a população parcial exige voto E menos votantes que o cadastro", () => {
-    const i = MAT.indexOf("const semVotoTotal = completarParcial");
-    const bloco = MAT.slice(i, i + 900);
+    const i = MAT.indexOf("const semVotoTotal =");
+    const bloco = MAT.slice(i, i + 1_400);
     expect(bloco).toMatch(/if \(!votantes \|\| votantes\.size === 0\) continue;/);
     expect(bloco).toMatch(/if \(cadastro\.length === 0 \|\| votantes\.size >= cadastro\.length\) continue;/);
   });
 
   it("e `votantesPorDelib` existe porque sem `diretor_id` não há como saber QUEM falta", () => {
-    expect(MAT).toMatch(/db\.from\("votos"\)\.select\("deliberacao_id, diretor_id"\)/);
+    expect(MAT).toMatch(/db\.from\("votos"\)\s*\.select\("deliberacao_id, diretor_id/);
   });
 });
 

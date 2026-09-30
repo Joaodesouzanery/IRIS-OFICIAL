@@ -29,6 +29,13 @@ import { dataReuniaoPlausivel } from "@/lib/server/colegiado-sources";
 import { extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import { extractDataReuniaoAncorada } from "@/lib/server/nlp-extractor";
 import { ensureReuniao, serieDaReuniao } from "@/lib/server/reunioes";
+import { GABARITO_POR_ARQUIVO } from "@/lib/server/gabarito";
+import {
+  dataDaListagem,
+  portaoDaListagemAntt,
+  type ReuniaoDaListagem,
+  type VereditoDoPortao,
+} from "@/lib/server/antt-data-da-listagem";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { janelaRotativa } from "@/lib/server/varredura-rotativa";
@@ -377,7 +384,11 @@ export async function POST(req: NextRequest) {
    * ⚠️ Vive no escopo da função, e não dentro da Janela C, porque a reconciliação roda DEPOIS do laço
    * — em lote, para não pagar um round-trip por mãe (o N+1 que a Fase 29 mediu como causa do "90s").
    */
-  const maesParaReconciliar: Array<{ id: string; data: string; reuniaoId: string | null; sigla: string }> = [];
+  const maesParaReconciliar: Array<{
+    id: string; data: string; reuniaoId: string | null; sigla: string;
+    /** QUEM validou a data desta mãe. A ANTT só entra por `listagem_antt`, e só se o portão passar. */
+    validadaPor: "documento" | "listagem_antt";
+  }> = [];
   /** B.1 — a reconciliação mãe → filhos, que é independente de a mãe receber escrita. */
   let maesValidadas = 0;
   let filhosDesalinhados = 0;
@@ -521,6 +532,7 @@ export async function POST(req: NextRequest) {
           data: String(d.data_reuniao),
           reuniaoId: (d.reuniao_id as string | null) ?? null,
           sigla,
+          validadaPor: "documento",
         });
         continue;
       }
@@ -564,6 +576,107 @@ export async function POST(req: NextRequest) {
   }
 
   /**
+   * ═══ B.3 — JANELA D: a data da ANTT pela LISTAGEM, atrás de um portão ═══
+   *
+   * A ANTT está fora de `AGENCIAS_COM_ANCORA_CERTIFICADA`: o preâmbulo dela não foi conferido contra
+   * os PDFs, então a Janela C não opina. Mas a ANTT tem o que as outras não têm — a listagem do
+   * próprio site, em `antt_reunioes_coletadas`, com `numero` e `data_inicio`.
+   *
+   * ⚠️ O PORTÃO não é opcional. Trocar uma data que eu não sei se está certa por outra que eu também
+   * não sei não é conserto. O gabarito tem DUAS atas da ANTT conferidas à mão, a 1.024ª e a 264ª RDE,
+   * ambas de 2026-01-19: se a listagem reproduz as duas, ela é testemunha; se não reproduz, o erro
+   * está nela e aplicá-la espalharia o defeito por centenas de linhas. **Reprovado, não aplico e
+   * declaro** — é o que o usuário pediu.
+   *
+   * ⚠️ E o veredito sai publicado COM o número de atas conferidas: "aprovado" sobre duas atas não
+   * pode ser lido como "a listagem está certa".
+   */
+  let anttPortao: VereditoDoPortao | null = null;
+  let anttDivergentes = 0;
+  let anttCorrigidas = 0;
+  const anttAmostra: Array<{ id: string; numero: string | null; de: string | null; para: string }> = [];
+  if (hasBudget(deadlineAt, 5_000)) {
+    const listagemRes = await lerTudo<ReuniaoDaListagem>(
+      () => db.from("antt_reunioes_coletadas").select("numero, tipo, data_inicio").order("id"),
+      "redatar/antt-listagem");
+    // Leitura truncada = o portão veria uma listagem PARCIAL e poderia aprovar por acidente
+    // (a ata conferida pode estar justamente no pedaço que faltou).
+    if (listagemRes.error || listagemRes.truncated) {
+      divergenteLeituraCompleta = false;
+      anttPortao = { aprovado: false, conferidas: 0, batem: 0, divergem: [], motivo: "listagem_vazia" };
+    } else {
+      const listagem = listagemRes.data ?? [];
+      const atasAntt = Object.values(GABARITO_POR_ARQUIVO)
+        .filter((a) => String(a.agencia).trim().toUpperCase() === "ANTT")
+        .map((a) => ({ reuniao: a.reuniao, data_reuniao: a.data_reuniao }));
+      anttPortao = portaoDaListagemAntt(listagem, atasAntt);
+
+      if (anttPortao.aprovado) {
+        const anttId = [...siglaPorId.entries()].find(([, sig]) => sig?.toUpperCase() === "ANTT")?.[0] ?? null;
+        if (anttId) {
+          const delibsAntt = await lerTudo<any>(
+            () => db.from("deliberacoes")
+              .select("id, numero_reuniao, data_reuniao, tipo_reuniao, reuniao_ordinaria, reuniao_id, documento_pai_id")
+              .eq("agencia_id", anttId).order("id"),
+            "redatar/antt-deliberacoes");
+          if (delibsAntt.error || delibsAntt.truncated) divergenteLeituraCompleta = false;
+          for (const d of (delibsAntt.data ?? []) as any[]) {
+            if (!hasBudget(deadlineAt, RESERVA_POR_LINHA_MS)) { restantes = true; break; }
+            // ⚠️ Só MÃE/avulso. O filho segue a mãe pela reconciliação (B.1) — corrigi-lo aqui pela
+            // listagem faria duas fontes escreverem a mesma linha, e a Fase 21 mediu o preço disso.
+            if (d.documento_pai_id) continue;
+            const daListagem = dataDaListagem(listagem, (d.numero_reuniao as string | null) ?? null);
+            if (!daListagem) continue;
+            if (daListagem === String(d.data_reuniao ?? "")) {
+              // Já está certa: a mãe fica VALIDADA pela listagem e seus filhos podem ser alinhados.
+              maesParaReconciliar.push({
+                id: String(d.id), data: daListagem,
+                reuniaoId: (d.reuniao_id as string | null) ?? null,
+                sigla: "ANTT", validadaPor: "listagem_antt",
+              });
+              continue;
+            }
+            anttDivergentes++;
+            if (anttAmostra.length < 20) {
+              anttAmostra.push({
+                id: String(d.id), numero: (d.numero_reuniao as string | null) ?? null,
+                de: (d.data_reuniao as string | null) ?? null, para: daListagem,
+              });
+            }
+            if (dryRun) continue;
+            const reuniaoId = await ensureReuniao(db, {
+              agenciaId: anttId,
+              numeroReuniao: (d.numero_reuniao as string | null) ?? null,
+              dataReuniao: daListagem,
+              tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+              titulo: (d.reuniao_ordinaria as string | null) ?? null,
+              // ⚠️ Na ANTT a série vem do TÍTULO ou de nada — NUNCA da faixa numérica: a série
+              // Administrativa ocupa 193-199 intercalada em 2026, e número lido errado também cai
+              // abaixo de 200. `serieDaReuniao` já garante isso; aqui é só não contorná-lo.
+              serie: serieDaReuniao({
+                sigla: "ANTT",
+                titulo: (d.reuniao_ordinaria as string | null) ?? null,
+                tipoReuniao: (d.tipo_reuniao as string | null) ?? null,
+                numeroReuniao: (d.numero_reuniao as string | null) ?? null,
+              }).serie,
+            });
+            if (await exigirEscrita(db.from("deliberacoes").update({
+              data_reuniao: daListagem,
+              ...(reuniaoId ? { reuniao_id: reuniaoId } : {}),
+            }).eq("id", d.id), `redatar ANTT pela listagem ${d.id}`)) {
+              anttCorrigidas++;
+              maesParaReconciliar.push({
+                id: String(d.id), data: daListagem, reuniaoId: reuniaoId ?? null,
+                sigla: "ANTT", validadaPor: "listagem_antt",
+              });
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**
    * ═══ B.1 — A RECONCILIAÇÃO, em lote e independente de escrita ═══
    *
    * ⚠️ ANTT fica FORA até o portão B.3. A âncora da ANTT não está certificada
@@ -572,7 +685,13 @@ export async function POST(req: NextRequest) {
    * espalharia o erro para os filhos em vez de consertá-lo.
    */
   if (maesParaReconciliar.length > 0 && hasBudget(deadlineAt, 4_000)) {
-    const maes = maesParaReconciliar.filter((m) => m.sigla.toUpperCase() !== "ANTT");
+    /**
+     * ⚠️ ANTT só entra quando quem validou a data dela foi a LISTAGEM, e a listagem só vale se o
+     * portão B.3 passou. Antes a regra era a sigla; expressa assim ela diz o que realmente importa —
+     * propagar de mãe NÃO validada espalharia o erro para os filhos em vez de consertá-lo.
+     */
+    const maes = maesParaReconciliar.filter(
+      (m) => m.sigla.toUpperCase() !== "ANTT" || m.validadaPor === "listagem_antt");
     const porId = new Map(maes.map((m) => [m.id, m]));
     if (maes.length > 0) {
       const r = await lerEmLotes<any>(db, {
@@ -697,6 +816,16 @@ export async function POST(req: NextRequest) {
      * escreveu — os dois juntos porque "0 alinhados" com "27 desalinhados" é simulação, e "0 e 0" é
      * trabalho concluído.
      */
+    /**
+     * ═══ B.3 — o portão da ANTT, e ele viaja INTEIRO ═══
+     * `antt_portao.conferidas` é o que impede "aprovado" de ser lido como "a listagem está certa":
+     * ele aprovou sobre DUAS atas. `antt_divergentes` é o estoque; `antt_corrigidas` o que esta
+     * rodada escreveu.
+     */
+    antt_portao: anttPortao,
+    antt_divergentes: anttDivergentes,
+    antt_corrigidas: anttCorrigidas,
+    antt_amostra: anttAmostra,
     maes_validadas: maesValidadas,
     filhos_desalinhados: filhosDesalinhados,
     filhos_alinhados: filhosAlinhados,

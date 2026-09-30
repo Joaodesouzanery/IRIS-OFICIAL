@@ -76,7 +76,15 @@ describe("etapa219 · B.1 — a reconciliação sai da MÃE VALIDADA", () => {
   });
 
   it("⚠️ a ANTT fica FORA até o portão B.3 — a âncora dela não é certificada", () => {
-    expect(R).toMatch(/maesParaReconciliar\.filter\(\(m\) => m\.sigla\.toUpperCase\(\) !== "ANTT"\)/);
+    /**
+     * ⚠️ ATUALIZADO na mesma fase (B.3): a regra era a SIGLA, e agora é QUEM VALIDOU a data. A
+     * distinção importa — com o portão da listagem aprovado, a mãe da ANTT passa a ser validada e os
+     * filhos dela PRECISAM ser alinhados; a sigla sozinha os deixaria desalinhados para sempre. O que
+     * não pode é propagar de mãe NÃO validada, e é isso que a expectativa mede.
+     */
+    expect(R).toMatch(/m\.sigla\.toUpperCase\(\) !== "ANTT" \|\| m\.validadaPor === "listagem_antt"/);
+    // E a Janela C, que não certifica a ANTT, só produz mães validadas pelo DOCUMENTO.
+    expect(R).toMatch(/validadaPor: "documento",/);
   });
 
   it("alinha por data OU por reuniao_id — religar só a data deixaria o rollup errado", () => {
