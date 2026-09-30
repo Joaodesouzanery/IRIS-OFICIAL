@@ -189,7 +189,21 @@ describe("etapa193 · a JANELA C do redatar: seleciona por DISCORDÂNCIA, não p
 
   it("o veredito é a COMPARAÇÃO com a re-derivação ancorada, não `dataReuniaoPlausivel`", () => {
     expect(R).toMatch(/const rederivada = anm\.data_reuniao \?\? extractDataReuniaoAncorada\(fonte\.texto\) \?\? null;/);
-    expect(R).toMatch(/if \(rederivada === String\(d\.data_reuniao\)\) continue;/);
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, B.1): a âncora era a linha literal
+     * `if (rederivada === String(d.data_reuniao)) continue;`. Esse ramo ganhou corpo — é onde a MÃE
+     * VALIDADA é registrada para a reconciliação com os filhos — e o texto mudou sem que a
+     * propriedade mudasse. A propriedade é: data igual à re-derivada NÃO conta como divergência.
+     */
+    expect(R).toMatch(/if \(rederivada === String\(d\.data_reuniao\)\) \{/);
+    const iIgual = R.indexOf("if (rederivada === String(d.data_reuniao)) {");
+    // O RAMO, e só ele: até o `continue;` que o fecha. Uma fatia de tamanho fixo invadiria o código
+    // seguinte e a expectativa mediria outra coisa — foi o que aconteceu na primeira escrita disto.
+    const fim = R.indexOf("continue;", iIgual);
+    const ramo = R.slice(iIgual, fim + "continue;".length);
+    expect(ramo, "o ramo da data igual deixou de sair do laço").toMatch(/continue;/);
+    expect(ramo, "o ramo da data IGUAL passou a contar divergência")
+      .not.toMatch(/divergentesMedidas\+\+/);
     // ⚠️ Sem âncora não há veredito: data ausente nunca vira "divergente".
     expect(R).toMatch(/if \(!rederivada \|\| !dataReuniaoPlausivel\(sigla, rederivada\)\.plausivel\) continue;/);
     /**

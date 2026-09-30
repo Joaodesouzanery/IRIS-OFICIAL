@@ -369,6 +369,20 @@ export async function POST(req: NextRequest) {
    * extraído, mais rodadas de esteira NUNCA resolvem, e o que falta é re-extração. Foi por não
    * ter este número que eu não pude descartar «ata sem texto» como causa das datas da ANM.
    */
+  /** ⚠️ B.2 — filhos de ata excluídos da janela: eles NÃO têm texto próprio, por construção. */
+  let divergenteFilhosFora = 0;
+  /**
+   * B.1 — as mães cuja data o PRÓPRIO documento confirma: as únicas de quem se propaga.
+   *
+   * ⚠️ Vive no escopo da função, e não dentro da Janela C, porque a reconciliação roda DEPOIS do laço
+   * — em lote, para não pagar um round-trip por mãe (o N+1 que a Fase 29 mediu como causa do "90s").
+   */
+  const maesParaReconciliar: Array<{ id: string; data: string; reuniaoId: string | null; sigla: string }> = [];
+  /** B.1 — a reconciliação mãe → filhos, que é independente de a mãe receber escrita. */
+  let maesValidadas = 0;
+  let filhosDesalinhados = 0;
+  let filhosAlinhados = 0;
+  const amostraFilhos: Array<{ pai: string; filho: string; de: string | null; para: string | null; reuniao_mudou: boolean }> = [];
   let divergenteSemTexto = 0;
   /** Quantos números o `?alvo=` pediu, e quantas linhas casaram — zero e zero é o modo normal. */
   let divergenteAlvoPedido = 0;
@@ -385,7 +399,7 @@ export async function POST(req: NextRequest) {
      */
     const universo = await lerTudo<any>(
       () => db.from("deliberacoes")
-        .select("id, agencia_id, numero_reuniao, reuniao_ordinaria, tipo_reuniao, data_reuniao")
+        .select("id, agencia_id, numero_reuniao, reuniao_ordinaria, tipo_reuniao, data_reuniao, reuniao_id, documento_pai_id")
         .not("data_reuniao", "is", null)
         .order("id", { ascending: true }),
       "redatar/janela-divergente",
@@ -393,7 +407,24 @@ export async function POST(req: NextRequest) {
     divergenteLeituraCompleta = !universo.error && !universo.truncated;
     // Fora as que a Janela A já trata — ali a decisão é outra (impossível ⇒ corrige ou anula).
     const jaTratadas = new Set(candidatas.map((d: any) => String(d.id)));
-    const plausiveis = ((universo.data ?? []) as any[]).filter((d) => !jaTratadas.has(String(d.id)));
+    const semAsTratadas = ((universo.data ?? []) as any[]).filter((d) => !jaTratadas.has(String(d.id)));
+    /**
+     * ═══ B.2 — ⚠️ FILHO DE ATA NÃO PODE SER CORRIGIDO AQUI, E ISSO É ESTRUTURAL ═══
+     *
+     * Um ITEM de ata não tem `documentos_regulatorios` próprio: a linha é por PDF (`UNIQUE(file_hash)`)
+     * e o único escritor de `deliberacao_id` é `markDocumentReviewed`, que no ramo de ata recebe
+     * `ataPai.id`. Esta janela busca o texto POR `deliberacao_id` — então todo filho cai em
+     * `divergenteSemTexto`, sempre, por construção.
+     *
+     * O custo era real: o lote tem 120 linhas por chamada e o passo é sorteado ~4 vezes em 18
+     * rodadas. Enchê-lo de filhos que serão pulados gasta a janela inteira em linhas que nunca podem
+     * mudar. A "1 corrigida" da 80ª era a MÃE.
+     *
+     * ⚠️ E o cabeçalho da minha `etapa208` leu isto AO CONTRÁRIO. Os filhos se alinham por
+     * RECONCILIAÇÃO com a mãe (B.1, logo abaixo), não por re-derivação própria.
+     */
+    const plausiveis = semAsTratadas.filter((d) => !d.documento_pai_id);
+    divergenteFilhosFora = semAsTratadas.length - plausiveis.length;
 
     /**
      * ⚠️ MODO COM ALVO (`?alvo=81,82,83`), e por que ele era necessário.
@@ -469,7 +500,30 @@ export async function POST(req: NextRequest) {
       const rederivada = anm.data_reuniao ?? extractDataReuniaoAncorada(fonte.texto) ?? null;
       // Sem âncora não há veredito. E a re-derivada passa pelo MESMO guard da Janela A.
       if (!rederivada || !dataReuniaoPlausivel(sigla, rederivada).plausivel) continue;
-      if (rederivada === String(d.data_reuniao)) continue;
+      if (rederivada === String(d.data_reuniao)) {
+        /**
+         * ═══ B.1 — A MÃE VALIDADA ═══
+         *
+         * Chegar aqui significa que o DOCUMENTO ancora exatamente a data que a mãe já tem: ela não
+         * precisa de conserto, e é justamente por isso que ela é a referência boa. Era a 80ª da ANM
+         * — certa desde sempre, com 28 linhas em 2024-06-25 e os 27 filhos desalinhados.
+         *
+         * ⚠️ E é por isto que a propagação é RECONCILIAÇÃO e não evento de escrita. O desenho inicial
+         * disparava "após escrita de data da mãe"; a 80ª NUNCA recebe escrita (a re-derivação vê igual
+         * e segue), então os 27 filhos ficariam desalinhados para sempre.
+         *
+         * A data de um item de ata não é uma inferência: ela É a data da ata. Alinhar é restaurar um
+         * invariante estrutural, não opinar sobre o documento.
+         */
+        maesValidadas++;
+        maesParaReconciliar.push({
+          id: String(d.id),
+          data: String(d.data_reuniao),
+          reuniaoId: (d.reuniao_id as string | null) ?? null,
+          sigla,
+        });
+        continue;
+      }
 
       divergentesMedidas++;
       divergentesPorAgencia[sigla ?? "?"] = (divergentesPorAgencia[sigla ?? "?"] ?? 0) + 1;
@@ -509,21 +563,118 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  /**
+   * ═══ B.1 — A RECONCILIAÇÃO, em lote e independente de escrita ═══
+   *
+   * ⚠️ ANTT fica FORA até o portão B.3. A âncora da ANTT não está certificada
+   * (`AGENCIAS_COM_ANCORA_CERTIFICADA` já a exclui da Janela C), e a data dela vem de
+   * `antt_reunioes_coletadas` — propagar de uma mãe cuja própria data ainda não foi validada
+   * espalharia o erro para os filhos em vez de consertá-lo.
+   */
+  if (maesParaReconciliar.length > 0 && hasBudget(deadlineAt, 4_000)) {
+    const maes = maesParaReconciliar.filter((m) => m.sigla.toUpperCase() !== "ANTT");
+    const porId = new Map(maes.map((m) => [m.id, m]));
+    if (maes.length > 0) {
+      const r = await lerEmLotes<any>(db, {
+        tabela: "deliberacoes",
+        select: "id, documento_pai_id, data_reuniao, reuniao_id",
+        coluna: "documento_pai_id",
+        valores: maes.map((m) => m.id),
+        label: "redatar/filhos-para-reconciliar",
+      });
+      // Leitura incompleta não vira escrita cega: sem saber quais filhos existem, alinhar parte
+      // deles deixaria a ata metade num ano e metade noutro — pior que o desalinho inteiro.
+      if (r.error) divergenteLeituraCompleta = false;
+      else {
+        for (const filho of (r.data ?? []) as any[]) {
+          if (!hasBudget(deadlineAt, 1_500)) { restantes = true; break; }
+          const mae = porId.get(String(filho.documento_pai_id));
+          if (!mae) continue;
+          const dataDifere = String(filho.data_reuniao ?? "") !== mae.data;
+          const reuniaoDifere = mae.reuniaoId !== null
+            && String(filho.reuniao_id ?? "") !== String(mae.reuniaoId);
+          if (!dataDifere && !reuniaoDifere) continue;
+          filhosDesalinhados++;
+          if (amostraFilhos.length < 20) {
+            amostraFilhos.push({
+              pai: mae.id, filho: String(filho.id),
+              de: (filho.data_reuniao as string | null) ?? null, para: mae.data,
+              reuniao_mudou: reuniaoDifere,
+            });
+          }
+          if (dryRun) continue;
+          const ok = await exigirEscrita(db.from("deliberacoes").update({
+            ...(dataDifere ? { data_reuniao: mae.data } : {}),
+            ...(reuniaoDifere ? { reuniao_id: mae.reuniaoId } : {}),
+          }).eq("id", filho.id), `reconciliar filho ${filho.id} com a mãe ${mae.id}`);
+          if (ok) filhosAlinhados++;
+        }
+      }
+    }
+  }
+
+  /**
+   * ═══ B.5 — A REUNIÃO ÓRFÃ: contar e LISTAR antes de apagar ═══
+   *
+   * ⚠️ Três defeitos estavam aqui, e o pior era o silêncio.
+   *
+   *  1. **Apagava sem dry-run e sem rastro.** `dryRun` só impedia a entrada no bloco, então em modo
+   *     de simulação o número era ZERO — quem quisesse conferir antes não tinha o que conferir. Agora
+   *     a lista sai nos dois modos e o apagamento é o passo final.
+   *  2. **`.limit(2000)` não pagina.** O PostgREST corta em ~1000 e devolve isso em silêncio: era a
+   *     subcontagem que a Fase 24b mediu em cinco telas.
+   *  3. **N+1 de contagem.** Uma consulta `count` por reunião candidata. As deliberações que apontam
+   *     para cada reunião saem de UMA leitura paginada.
+   *
+   * O critério segue sendo data IMPOSSÍVEL para a agência — a órfã "plausível" de 2024-06-25 não é
+   * alcançada aqui de propósito: apagá-la exigiria afirmar que a data está errada, e é o Bloco B que
+   * decide isso pelo documento.
+   */
   let reunioesOrfas = 0;
-  if (!dryRun && hasBudget(deadlineAt, 3_000)) {
-    const { data: rs } = await db.from("reunioes").select("id, agencia_id, data_reuniao").limit(2000);
-    const alvo = ((rs ?? []) as any[]).filter((r) => {
+  let orfasCandidatas = 0;
+  const orfasListadas: Array<{ id: string; agencia: string | null; data_reuniao: string; deliberacoes: number }> = [];
+  if (hasBudget(deadlineAt, 3_000)) {
+    const rs = await lerTudo<any>(
+      () => db.from("reunioes").select("id, agencia_id, data_reuniao").order("id"),
+      "redatar/reunioes-orfas");
+    if (rs.error || rs.truncated) divergenteLeituraCompleta = false;
+    const impossiveis = ((rs.data ?? []) as any[]).filter((r) => {
       const sigla = r.agencia_id ? siglaPorId.get(r.agencia_id) ?? null : null;
       return r.data_reuniao && !dataReuniaoPlausivel(sigla, r.data_reuniao).plausivel;
     });
-    for (const r of alvo) {
-      const { count } = await db
-        .from("deliberacoes")
-        .select("id", { count: "exact", head: true })
-        .eq("reuniao_id", r.id);
-      if ((count ?? 0) > 0) continue; // ainda tem filho: não é órfã, não se apaga
-      await db.from("reunioes").delete().eq("id", r.id);
-      reunioesOrfas++;
+    if (impossiveis.length > 0) {
+      const vinculos = await lerTudo<{ reuniao_id: string | null }>(
+        () => db.from("deliberacoes").select("reuniao_id").not("reuniao_id", "is", null).order("id"),
+        "redatar/vinculos-de-reuniao");
+      // Sem a lista COMPLETA de vínculos, "zero filhos" não é verificável — e apagar reunião que
+      // ainda tem filho deixaria a deliberação apontando para o nada.
+      if (vinculos.error || vinculos.truncated) {
+        divergenteLeituraCompleta = false;
+      } else {
+        const filhosPorReuniao = new Map<string, number>();
+        for (const v of vinculos.data ?? []) {
+          if (!v.reuniao_id) continue;
+          filhosPorReuniao.set(String(v.reuniao_id), (filhosPorReuniao.get(String(v.reuniao_id)) ?? 0) + 1);
+        }
+        for (const r of impossiveis) {
+          const filhos = filhosPorReuniao.get(String(r.id)) ?? 0;
+          if (filhos > 0) continue; // ainda tem filho: não é órfã, não se apaga
+          orfasCandidatas++;
+          if (orfasListadas.length < 50) {
+            orfasListadas.push({
+              id: String(r.id),
+              agencia: r.agencia_id ? siglaPorId.get(r.agencia_id) ?? null : null,
+              data_reuniao: String(r.data_reuniao),
+              deliberacoes: filhos,
+            });
+          }
+          if (dryRun) continue;
+          if (await exigirEscrita(
+            db.from("reunioes").delete().eq("id", r.id),
+            `reunião órfã ${r.id} (${r.data_reuniao}, 0 deliberações)`,
+          )) reunioesOrfas++;
+        }
+      }
     }
   }
 
@@ -532,7 +683,31 @@ export async function POST(req: NextRequest) {
     candidatas: candidatas.length,
     corrigidas,
     sem_data_recuperavel: semDataRecuperavel,
+    /**
+     * ⚠️ B.5 — os TRÊS números da órfã, e eles viajam juntos. `removidas: 0` sozinho não distingue
+     * "não havia órfã" de "não apagou porque era simulação" nem de "a leitura veio truncada".
+     */
     reunioes_orfas_removidas: reunioesOrfas,
+    reunioes_orfas_candidatas: orfasCandidatas,
+    reunioes_orfas_listadas: orfasListadas,
+    /**
+     * ═══ B.1 — a reconciliação mãe → filhos ═══
+     * `maes_validadas` são as mães cuja data o PRÓPRIO documento confirma (é delas, e só delas, que
+     * se propaga). `filhos_desalinhados` é o estoque medido; `filhos_alinhados` o que esta rodada
+     * escreveu — os dois juntos porque "0 alinhados" com "27 desalinhados" é simulação, e "0 e 0" é
+     * trabalho concluído.
+     */
+    maes_validadas: maesValidadas,
+    filhos_desalinhados: filhosDesalinhados,
+    filhos_alinhados: filhosAlinhados,
+    amostra_filhos: amostraFilhos,
+    /**
+     * ⚠️ B.2 — quantos filhos de ata a Janela C EXCLUIU do universo. Eles não têm
+     * `documentos_regulatorios` próprio (a linha é por PDF, e o `deliberacao_id` dela aponta para a
+     * MÃE), então cairiam em `divergente_sem_texto` sempre, gastando a janela de 120 linhas em
+     * candidatos que nunca podem mudar. Quem os alinha é a reconciliação acima.
+     */
+    divergente_filhos_fora: divergenteFilhosFora,
     nulas_candidatas: nulasCandidatas,
     nulas_corrigidas: nulasCorrigidas,
     nulas_marcadas_revisao: nulasMarcadas,

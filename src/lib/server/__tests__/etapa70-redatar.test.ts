@@ -91,14 +91,42 @@ describe("etapa70 · o DELETE é só nas reuniões órfãs", () => {
   it("confere que não há filho antes de apagar", () => {
     // Apagar uma reunião que ainda tem deliberação apontando para ela deixaria FK órfã — e o
     // dado primário é a deliberação, não o rollup.
-    expect(ROTA).toMatch(/count \?\? 0\) > 0\) continue/);
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, B.5): a âncora era `count ?? 0) > 0) continue` — uma consulta `count` por
+     * reunião candidata, ou seja o N+1 que a Fase 29 mediu. A contagem passou a sair de UMA leitura
+     * paginada de vínculos, então o texto mudou; a propriedade — reunião com qualquer deliberação
+     * NUNCA é apagada — é a que se mede.
+     */
+    expect(ROTA).toMatch(/const filhos = filhosPorReuniao\.get\(String\(r\.id\)\) \?\? 0;/);
+    expect(ROTA).toMatch(/if \(filhos > 0\) continue;/);
+    const iFilhos = ROTA.indexOf("if (filhos > 0) continue;");
+    const iDelete = ROTA.indexOf('from("reunioes").delete()');
+    expect(iFilhos, "a checagem de filho passou a vir DEPOIS do delete").toBeLessThan(iDelete);
+    // E sem a lista COMPLETA de vínculos "zero filhos" não é verificável — então não se apaga.
+    expect(ROTA).toMatch(/if \(vinculos\.error \|\| vinculos\.truncated\)/);
   });
 
   it("roda DEPOIS de religar as deliberações", () => {
     expect(ROTA.indexOf("ensureReuniao(db")).toBeLessThan(ROTA.indexOf('from("reunioes").select'));
   });
 
-  it("não apaga em dry_run", () => {
-    expect(ROTA).toMatch(/if \(!dryRun && hasBudget\(deadlineAt, 3_000\)\)/);
+  it("não apaga em dry_run — e AGORA a simulação lista o que apagaria", () => {
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, B.5): a âncora era `if (!dryRun && hasBudget(...))`, que impedia o bloco
+     * INTEIRO de rodar em simulação — então `reunioes_orfas_removidas: 0` era o único número
+     * disponível, e quem quisesse conferir antes de apagar não tinha o que conferir. O usuário pediu
+     * "contar e listar antes de apagar". Agora o bloco MEDE nos dois modos e o `dryRun` guarda
+     * apenas o delete.
+     */
+    const iDelete = ROTA.indexOf('from("reunioes").delete()');
+    expect(iDelete).toBeGreaterThan(-1);
+    const antes = ROTA.slice(Math.max(0, iDelete - 300), iDelete);
+    expect(antes, "o delete da órfã deixou de ser guardado pelo dry_run").toMatch(/if \(dryRun\) continue;/);
+    // E a candidata é contada e listada ANTES do portão do dry-run.
+    const iCandidata = ROTA.indexOf("orfasCandidatas++");
+    expect(iCandidata).toBeGreaterThan(-1);
+    expect(iCandidata).toBeLessThan(iDelete);
+    expect(ROTA).toMatch(/reunioes_orfas_candidatas: orfasCandidatas/);
+    expect(ROTA).toMatch(/reunioes_orfas_listadas: orfasListadas/);
   });
 });
