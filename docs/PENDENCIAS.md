@@ -1,7 +1,64 @@
 # PENDÊNCIAS E OPERAÇÃO — IRIS-Regulação
 
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
-Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 35, 28/set/2026).
+Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 36, 30/set/2026).
+
+## 🔴 FASE 36 (30/set/2026) — o que ESPERA VOCÊ
+
+### ⛔ 1 MIGRATION AINDA NÃO APLICADA
+
+**`supabase/migrations/20260928130000_mandatos_dou_fase35.sql`** — datas do DOU + a extensão do
+CHECK de `diretores_situacao_check` para aceitar `'afastado'` + Roger/Tasso (INSERT se não existir).
+
+⚠️ **O arquivo MUDOU depois da última vez que você o viu**: faltava o passo 0 (a extensão do CHECK),
+e sem ele a migration **abortaria inteira** ao tentar gravar `situacao = 'afastado'`. Puxe antes de
+aplicar (`git pull`).
+
+### 📋 DOIS SQL DE QA PARA COLAR NO SQL EDITOR (somente leitura)
+
+| arquivo | o que ele responde |
+|---|---|
+| `docs/qa-fase35.sql` | a régua por deliberação e as três perguntas que a Fase 34 deixou abertas |
+| `docs/qa-fase36.sql` | as 202 datas, os filhos desalinhados, o revoto, o parcial, a certificação, a série, a órfã **e a ANAC** |
+
+⚠️ **O bloco ⑧b do `qa-fase36.sql` é o mais importante para o coletor de notícias.** Se ele vier
+VAZIO, a migration `20260720120000_news_runs_status_empty.sql` provavelmente não foi aplicada: o
+insert em lote violava o CHECK e falhava INTEIRO, com o erro só no console. Sem histórico de runs,
+`latest_links_found` é sempre NULL — e `NULL !== 0` faz **toda** fonte parada cair em "quieta".
+Isso explicaria a tela inteira de uma vez.
+
+### ⏸️ TRÊS ESCRITAS MEDIDAS E DESLIGADAS, esperando o seu aval
+
+Nenhuma delas escreve nada hoje. Cada uma tem um `dry_run` que você pode rodar para ver o número.
+
+| constante | arquivo | o que ela faria | como ver o número |
+|---|---|---|---|
+| `COMPLETAR_PARCIAL` | `src/lib/server/completar-colegiado.ts` | criar voto inferido para quem falta numa deliberação com colegiado PARCIAL | `POST /api/v1/admin/votos/materializar-faltantes` com `{"completar_parcial": true, "dry_run": true}` |
+| `REVOTO_LIGADO` | `src/lib/server/revoto.ts` | apagar (com rastro) voto INFERIDO de quem não estava no roster da data | `POST /api/v1/admin/votos/materializar-faltantes` com `{"revoto": true, "dry_run": true}` |
+| `REDATAR_DATA_DIVERGENTE` | `src/app/api/v1/admin/deliberacoes/redatar/route.ts` | trocar a `data_reuniao` quando o documento ancora outra data | `POST /api/v1/admin/deliberacoes/redatar` (dry-run é o padrão) |
+
+⚠️ **A ordem importa, e o motivo é concreto:** ligar o `REVOTO` antes de as datas estarem certas
+apagaria voto pelo roster da data ERRADA. A sequência é: datas (redatar) → revoto → completar parcial.
+
+### ▶️ UMA ROTA NOVA PARA RODAR UMA VEZ (ARTESP)
+
+`POST /api/v1/admin/votos/ausencias-artesp` com `{"dry_run": true}` — lista as ausências que o texto
+da ata DIZ e o banco não tem (Raquel na 1198ª, André na 1191ª/1194ª), **com o trecho que casou**,
+para você conferir contra o PDF. Depois, `{"dry_run": false}` aplica. Ela nunca apaga e nunca
+sobrescreve voto nominal.
+
+### ❓ O QUE EU NÃO CONSEGUI RESPONDER SEM O BANCO
+
+**A ANAC.** A listagem dela responde HTTP 200, tem **71 links válidos** e a notícia mais nova é de
+**hoje** (medido ao vivo em 30/09). Se o acervo tem zero, o corte está entre ACHAR o link e SALVAR o
+detalhe, e as duas causas plausíveis são (a) o orçamento de tempo com o estrangulamento de 900 ms por
+host e (b) a janela de 2.000 linhas do `/noticias/health`. O bloco ⑧ do `qa-fase36.sql` separa as
+duas: se `total > 0` ali, o defeito é do `/health`, não da coleta.
+
+⚠️ **E duas das quatro agências do aviso estavam CERTAS**: ANCINE (18/09) e ANPD (22/09) realmente
+não publicaram — os 12d e 8d do aviso batem com a medição. O aviso errado era sobre **ANS** (publicou
+em 28/09) e **ANA** (publicou em 30/09, o próprio dia).
+
 
 ## 🔴 FASE 35 (28/set/2026) — a autenticação, a régua errada, e um bypass que eu ia introduzir
 
