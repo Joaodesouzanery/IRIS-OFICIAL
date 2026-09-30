@@ -346,6 +346,21 @@ export function buildVotoRowsFromSuggestions(input: {
     // qualidade que existe — uma pessoa leu o documento. Era gravado como "inferido", indistinguível
     // de um chute do algoritmo, e o trabalho do revisor desaparecia na primeira métrica.
     const humano = voto.origem === "revisao_humana";
+    /**
+     * ⚠️ UMA FONTE POR CONCEITO — Bloco D (Fase 36).
+     *
+     * `buildVotoRows` grava `motivo_nao_voto: "ausencia"` para o ausente e `"impedimento"` para o
+     * impedido; ESTE caminho gravava `Ausente` **sem motivo nenhum**, e tinha a informação em mãos
+     * (`origem` já distingue os dois). O resultado eram ausências indistinguíveis de impedimento no
+     * banco, dependendo de qual dos dois construtores gravou a linha — é o defeito que a Fase 21
+     * catalogou como "duas implementações do mesmo conceito, divergentes".
+     *
+     * `revisao_humana` com `Ausente` recebe `"ausencia"`: é a leitura genérica de uma linha
+     * `Ausente`, e `impedimento` é a afirmação específica que não se faz sem evidência.
+     */
+    const motivoNaoVoto = voto.tipo_voto === "Ausente"
+      ? (voto.origem === "impedido" ? "impedimento" as const : "ausencia" as const)
+      : undefined;
     rows.set(voto.diretor_id, rowFor(
       input.deliberacao_id,
       voto.diretor_id,
@@ -354,6 +369,7 @@ export function buildVotoRowsFromSuggestions(input: {
       resultado,
       unanime,
       humano ? "revisao_humana" : undefined,
+      motivoNaoVoto ? { motivo_nao_voto: motivoNaoVoto } : undefined,
     ));
   }
   return [...rows.values()];

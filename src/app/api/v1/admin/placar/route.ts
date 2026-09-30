@@ -46,6 +46,8 @@ import {
   planejarCompletar, paresPorAgencia, type DeliberacaoParcial,
 } from "@/lib/server/completar-colegiado";
 import { colegiadoNaData, type MandatoJanela } from "@/lib/server/colegiado-na-data";
+import { certificarContraGabarito, type ReuniaoNoBanco } from "@/lib/server/certificacao-gabarito";
+import { GABARITO_POR_ARQUIVO, numeroDaReuniao } from "@/lib/server/gabarito";
 import { ehVotoDeDirecao, isVotoNominal } from "@/lib/votos-nominal";
 
 export const dynamic = "force-dynamic";
@@ -384,6 +386,59 @@ export async function GET(req: NextRequest) {
     for (const d of (dirs ?? []) as Array<{ id: string; nome: string }>) nomePorDiretor.set(d.id, d.nome);
   }
   const nomeDe = (id: string) => nomePorDiretor.get(id) ?? id;
+
+  /**
+   * ═══ B.0 → (c) A CERTIFICAÇÃO NO BANCO, que era zero fixo com `pendente: true` ═══
+   *
+   * A subtração banco × gabarito, para as cinco atas conferidas à mão contra os PDFs oficiais. É a
+   * VERIFICAÇÃO depois de aplicar — nunca o portão. (O portão do revoto é a SIMULAÇÃO do roster na
+   * data certa, em memória: o banco de uma reunião com data errada não pode bater com o gabarito
+   * ANTES do revoto, e exigir que batesse seria um portão circular.)
+   *
+   * ⚠️ O casamento é por (agência, NÚMERO), nunca por data: a data é exatamente o que o Bloco B está
+   * consertando, e casar por ela faria o gabarito deixar de reconhecer as reuniões cuja data está
+   * errada — as que mais precisam ser conferidas.
+   *
+   * ⚠️ E quando mais de uma série casa o mesmo número (ANM tem ROP e REP), as linhas são SOMADAS e a
+   * divergência aparece como `itens_a_mais`, com um alerta dizendo que o casamento foi ambíguo. Somar
+   * e denunciar é honesto; escolher uma das duas em silêncio seria adivinhar.
+   */
+  const noBanco: Record<string, ReuniaoNoBanco | undefined> = {};
+  const ambiguidades: string[] = [];
+  for (const [arquivo, ata] of Object.entries(GABARITO_POR_ARQUIVO)) {
+    const numeroAlvo = numeroDaReuniao(ata.reuniao);
+    const siglaAlvo = String(ata.agencia).trim().toUpperCase();
+    const linhas = (delibsRes.data ?? []).filter((d: any) => {
+      if (!d.agencia_id) return false;
+      if ((siglaPorId.get(d.agencia_id) ?? "").toUpperCase() !== siglaAlvo) return false;
+      return numeroDaReuniao(d.numero_reuniao) === numeroAlvo;
+    });
+    if (linhas.length === 0) { noBanco[arquivo] = undefined; continue; }
+    const datas = new Set(linhas.map((d: any) => String(d.data_reuniao ?? "").slice(0, 10)).filter(Boolean));
+    if (datas.size > 1) {
+      ambiguidades.push(`${siglaAlvo} ${ata.reuniao}: ${datas.size} datas distintas no banco para o mesmo número (${[...datas].sort().join(", ")}) — as linhas foram somadas`);
+    }
+    const porDiretor = new Map<string, number>();
+    for (const d of linhas) {
+      for (const dirId of votantesPorDelib.get(String(d.id)) ?? []) {
+        porDiretor.set(dirId, (porDiretor.get(dirId) ?? 0) + 1);
+      }
+    }
+    noBanco[arquivo] = {
+      itens: linhas.length,
+      votosPorDiretor: [...porDiretor.entries()].map(([id, votos]) => ({ nome: nomeDe(id), votos })),
+    };
+  }
+  const certificacao = certificarContraGabarito(GABARITO_POR_ARQUIVO, noBanco);
+  for (const a of ambiguidades) alertas.push(`⚠️ certificação ambígua — ${a}.`);
+  if (certificacao.divergem.length > 0) {
+    alertas.push(
+      `Certificação contra o gabarito: ${certificacao.batem} de ${certificacao.conferidas} atas batem. ` +
+        `${certificacao.divergem.length} divergência(s) — a primeira: ${certificacao.divergem[0].tipo} em ` +
+        `${certificacao.divergem[0].ata}${certificacao.divergem[0].diretor ? ` (${certificacao.divergem[0].diretor})` : ""}, ` +
+        `esperado ${certificacao.divergem[0].esperado}, encontrado ${certificacao.divergem[0].encontrado}.`,
+    );
+  }
   /**
    * ⚠️ O FILTRO É PELA RÉGUA ESTRITA. Pelo teto, uma reunião em que um diretor votou em 1 de 39
    * itens é "completa" e sairia desta lista — foi exatamente o caso do José Fernando na 84ª da ANM.
@@ -457,11 +512,18 @@ export async function GET(req: NextRequest) {
       escrita_existe: false,
     },
     /**
-     * ⚠️ (c) ainda NÃO está aqui, e o campo existe zerado de propósito: consumidor que lê
-     * `undefined` some da tela, e um placar com um pilar invisível diz que ele não existe. A
-     * subtração banco × gabarito entra na sequência desta fase.
+     * (c) AGORA MEDIDO. Era `{0, 0, [], pendente: true}` — um pilar declarado e invisível.
+     * `conferidas` são as atas do gabarito; `batem` as que fecham item a item e voto a voto.
      */
-    certificacao_no_banco: { conferidas: 0, batem: 0, divergem: [], pendente: true },
+    certificacao_no_banco: {
+      conferidas: certificacao.conferidas,
+      batem: certificacao.batem,
+      divergem: certificacao.divergem,
+      /** As atas que o gabarito cobre, nomeadas — para ninguém ler `conferidas: 5` como "tudo". */
+      atas: Object.values(GABARITO_POR_ARQUIVO).map((a) => `${a.agencia} ${a.reuniao}`),
+      casamento: "por (agência, número) — NUNCA por data, que é o que o Bloco B está consertando",
+      ambiguidades,
+    },
     finais_no_ano: finaisNoAno,
     leitura_completa: leituraCompleta && !serieParcial,
     alertas,

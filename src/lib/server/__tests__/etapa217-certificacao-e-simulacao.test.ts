@@ -26,7 +26,8 @@ import {
 
 const RAIZ = join(__dirname, "../../../..");
 const BASELINE = JSON.parse(
-  readFileSync(join(RAIZ, "src/lib/server/__tests__/fixtures/votos/votos-por-diretor-baseline.json"), "utf-8"),
+  // ⚠️ Mudou de casa na Fase 36 (Bloco F): o placar precisa do gabarito, e rota não lê fixture.
+  readFileSync(join(RAIZ, "src/lib/server/gabarito/votos-por-diretor-baseline.json"), "utf-8"),
 ) as Record<string, AtaDoGabarito | unknown>;
 
 /** Só as atas — o arquivo tem chaves de prosa (`_comment`, `_causas_das_divergencias`). */

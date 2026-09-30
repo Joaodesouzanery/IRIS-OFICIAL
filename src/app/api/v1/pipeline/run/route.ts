@@ -996,6 +996,34 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
          * O número vem primeiro; a escrita entra com o aval sobre ele.
          */
         completaveis_parciais: Number((r.body?.completar_parcial as { pares?: number } | undefined)?.pares ?? 0),
+        /**
+         * ═══ Bloco F — A QUEBRA POR AGÊNCIA, e por que ela vira TRÊS NÚMEROS ═══
+         *
+         * ⚠️ Nem objeto nem string sobrevivem aqui. `agregarEtapas` faz
+         * `if (typeof valor !== "number") continue` — descarta EM SILÊNCIO tudo que não é número.
+         * Foi assim que a quebra por agência do placar se perdeu antes, e é por isso que mandá-la
+         * "como string" não resolveria: a string é descartada exatamente como o objeto.
+         *
+         * A forma que atravessa a agregação é uma chave NUMÉRICA por agência. São três siglas
+         * colegiadas, enumeráveis, e cada uma entra em `CHAVES_DE_ESTOQUE` — um percentual somado
+         * entre rodadas não tem nem significado aritmético (foi o `cobertura_pct: 240`).
+         */
+        ...Object.fromEntries(
+          Object.entries(porAgencia).flatMap(([sigla, v]) => {
+            const chave = sigla.trim().toLowerCase();
+            const esperados = Number(v.pares_esperados ?? 0);
+            if (esperados <= 0) return [];
+            return [[`cobertura_pct_${chave}`, Number(v.cobertura_pct ?? 0)]];
+          }),
+        ),
+        /**
+         * (c) A CERTIFICAÇÃO contra o gabarito manual — era zero fixo com `pendente: true`.
+         * ⚠️ `conferidas` viaja SEMPRE ao lado de `batem`: "5 batem" sem o denominador não distingue
+         * "5 de 5" de "5 de 40", e o gabarito cobre cinco atas, não o acervo.
+         */
+        certificacao_atas_conferidas: Number((r.body?.certificacao_no_banco as { conferidas?: number } | undefined)?.conferidas ?? 0),
+        certificacao_atas_batem: Number((r.body?.certificacao_no_banco as { batem?: number } | undefined)?.batem ?? 0),
+        certificacao_divergencias: ((r.body?.certificacao_no_banco as { divergem?: unknown[] } | undefined)?.divergem ?? []).length,
         reunioes_com_voto_faltando: defeitoNosso,
         reunioes_esperando_cadastro: cadastroPendente,
         numeros_ausentes: somar("ausentes"),

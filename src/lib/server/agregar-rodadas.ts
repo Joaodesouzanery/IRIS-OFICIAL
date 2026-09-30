@@ -82,6 +82,27 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
   "faltando_contra_a_listagem",
   "completaveis_parciais",
   /**
+   * ⚠️ Fase 36 (Bloco F) — a quebra por agência da cobertura, UMA CHAVE POR SIGLA.
+   *
+   * Ela existe nesta forma porque `agregarEtapas` descarta em silêncio tudo que não é número: objeto
+   * e string se perdem igual, e foi assim que a quebra por agência desapareceu antes. As siglas
+   * colegiadas são três e enumeráveis (`COLEGIADO_SIGLAS`), então as chaves também são.
+   *
+   * São RETRATO pelo mesmo motivo de `cobertura_pct`: somar percentual entre rodadas não significa
+   * nada (80% + 80% não dá 160% de coisa alguma) — foi o `cobertura_pct: 240` da Fase 35b.
+   */
+  "cobertura_pct_anm",
+  "cobertura_pct_antt",
+  "cobertura_pct_artesp",
+  /**
+   * ⚠️ Fase 36 (B.0) — a certificação contra o gabarito é RETRATO: o placar recalcula as cinco atas
+   * a cada chamada. Somada, ela diria "15 atas conferidas" em três rodadas de um gabarito de 5 — e
+   * `batem` passaria `conferidas`, o que é aritmeticamente impossível e leria como sucesso.
+   */
+  "certificacao_atas_conferidas",
+  "certificacao_atas_batem",
+  "certificacao_divergencias",
+  /**
    * Fase 33 — a FILA de diagnóstico é recalculada inteira a cada rodada (todo o estoque de motivos
    * mais as divergências da janela), então é retrato. Somá-la diria "candidatos: 1.400" num estoque
    * de 300, e ela é justamente o DENOMINADOR de `motivos_gravados` — um denominador inflado inverte

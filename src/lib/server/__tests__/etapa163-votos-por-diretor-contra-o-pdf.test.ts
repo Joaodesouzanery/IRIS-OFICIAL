@@ -47,8 +47,15 @@ import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import { RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
 
 const FIXTURES = join(dirname(fileURLToPath(import.meta.url)), "fixtures/votos");
-const BASELINE = JSON.parse(readFileSync(join(FIXTURES, "votos-por-diretor-baseline.json"), "utf-8")) as
-  Record<string, GabaritoDaAta | string[]>;
+/**
+ * ⚠️ O gabarito MUDOU DE CASA (Fase 36, Bloco F): saiu de `__tests__/fixtures/votos/` para
+ * `src/lib/server/gabarito/`, porque o placar passou a publicar a subtração banco × gabarito e uma
+ * ROTA não lê fixture de teste. É UM arquivo só de propósito — duas cópias criariam duas verdades
+ * sobre a mesma ata.
+ */
+const BASELINE = JSON.parse(
+  readFileSync(join(dirname(fileURLToPath(import.meta.url)), "../gabarito/votos-por-diretor-baseline.json"), "utf-8"),
+) as Record<string, GabaritoDaAta | string[]>;
 
 type DiretorEsperado = { nome: string; variantes: string[]; votos: number; impedido_em: string[] };
 /** Uma lacuna MEDIDA entre o gabarito e o que o pipeline produz hoje, congelada item a item. */
@@ -255,7 +262,7 @@ describe("etapa163 · ⚠️ a LACUNA congelada — nem cresce nem some em silê
     expect(
       observado.slice().sort(),
       `\n${gab.agencia} ${gab.reuniao}: a lacuna medida divergiu da declarada em ` +
-      `fixtures/votos/votos-por-diretor-baseline.json\n`,
+      `src/lib/server/gabarito/votos-por-diretor-baseline.json\n`,
     ).toEqual(declarado.slice().sort());
   }, 120_000);
 

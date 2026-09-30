@@ -726,6 +726,38 @@ export default function VotosDiretoresPage() {
             `${totais.pares_esperados} pares (deliberação × diretor esperado) com voto ou motivo` +
             ((totais.itens_no_ano ?? 0) > 0 ? `, em ${totais.itens_no_ano} deliberação(ões) do ano` : "")
           : null,
+        /**
+         * ⚠️ A QUEBRA POR AGÊNCIA, na manchete — o pedido 6 do usuário.
+         *
+         * Um número único esconde que as três agências estão em estados muito diferentes (medido em
+         * 30/09: ANM 44%, ANTT 80%, ARTESP 94%). Sem a quebra, "83%" sugere um problema uniforme, e o
+         * trabalho que falta está concentrado numa agência só.
+         *
+         * ⚠️ Vem de TRÊS chaves numéricas, uma por sigla, e não de um objeto: `agregarEtapas` descarta
+         * em silêncio tudo que não é número, então objeto e string se perdem igual no caminho até aqui.
+         */
+        (() => {
+          const porSigla = (["ANM", "ANTT", "ARTESP"] as const)
+            .map((sigla) => ({ sigla, pct: totais[`cobertura_pct_${sigla.toLowerCase()}`] }))
+            .filter((x) => typeof x.pct === "number");
+          if (porSigla.length === 0) return null;
+          return `cobertura por agência: ${porSigla.map((x) => `${x.sigla} ${x.pct}%`).join(" · ")}`;
+        })(),
+        /**
+         * ⚠️ A CERTIFICAÇÃO, e ela vem com o denominador e com o escopo.
+         *
+         * "5 atas batem" sem dizer de quantas, e sem dizer que o gabarito cobre CINCO atas e não o
+         * acervo, se lê como "o acervo está certificado". O gabarito é manual: conferido contra os
+         * PDFs oficiais da 79ª/81ª/83ª da ANM e da 1.024ª/264ª da ANTT.
+         */
+        (totais.certificacao_atas_conferidas ?? 0) > 0
+          ? `certificação contra o gabarito manual: ${totais.certificacao_atas_batem ?? 0} de ` +
+            `${totais.certificacao_atas_conferidas} atas batem item a item e voto a voto` +
+            ((totais.certificacao_divergencias ?? 0) > 0
+              ? ` — ${totais.certificacao_divergencias} divergência(s); os alertas do placar dizem quais`
+              : "") +
+            " (o gabarito cobre 5 atas, não o acervo)"
+          : null,
         (totais.reunioes_no_ano ?? 0) > 0
           ? `reuniões do ano: ${totais.reunioes_completas_estrito ?? 0} de ${totais.reunioes_no_ano} com voto em TODOS os itens` +
             ` (pelo teto de ≥1 voto por diretor seriam ${totais.reunioes_completas ?? 0})` +
