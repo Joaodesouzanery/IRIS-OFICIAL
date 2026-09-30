@@ -147,23 +147,40 @@ export async function POST(req: NextRequest) {
    * aberto, o roster daquela agência é sabidamente incompleto, mesmo que a ata não nomeie
    * ninguém. Cacheado por agência: são poucas, e a resposta não muda dentro da rodada.
    */
-  const candidatosCache = new Map<string, number>();
-  async function candidatosPendentesDa(agenciaId: string | null): Promise<number> {
-    if (!agenciaId) return 0;
+  /**
+   * ⚠️ Passou a guardar os NOMES, não só a contagem (Fase 36).
+   *
+   * O número sozinho diz "o cadastro da ANM está incompleto" e não diz O QUE resolver. E esta é a
+   * camada 3 do guard: UM candidato pendente faz `conferirRoster` recusar TODO item mudo da agência
+   * — o que, num revoto, viraria perda líquida de voto (a deliberação perde os inferidos e o
+   * materializador se recusa a reconstruir). Quem lê o banner precisa dos nomes para aprovar ou
+   * rejeitar, senão o portão nunca abre.
+   *
+   * O custo é o mesmo: são poucas linhas por agência, e a consulta já existia.
+   */
+  const candidatosCache = new Map<string, string[]>();
+  async function candidatosPendentesNomesDa(agenciaId: string | null): Promise<string[]> {
+    if (!agenciaId) return [];
     const hit = candidatosCache.get(agenciaId);
     if (hit !== undefined) return hit;
-    const { count, error } = await db
+    const { data, error } = await db
       .from("diretor_candidatos")
-      .select("id", { count: "exact", head: true })
+      .select("nome_detectado")
       .eq("agencia_id", agenciaId)
       // A coluna e `review_status` (005:151), com CHECK em pendente/aprovado/rejeitado/conflito.
       // `conflito` conta junto: cadastro em disputa tambem e cadastro nao-conferivel.
-      .in("review_status", ["pendente", "conflito"]);
-    // Sem o dado, o lado seguro é 0: bloquear tudo por causa de uma consulta que falhou seria
-    // trocar um erro por outro. O veredito `roster_nao_conferivel` continua registrando a dúvida.
-    const n = error ? 0 : (count ?? 0);
-    candidatosCache.set(agenciaId, n);
-    return n;
+      .in("review_status", ["pendente", "conflito"])
+      .limit(50);
+    // Sem o dado, o lado seguro é lista vazia: bloquear tudo por causa de uma consulta que falhou
+    // seria trocar um erro por outro. O veredito `roster_nao_conferivel` continua registrando a dúvida.
+    const nomes = error
+      ? []
+      : [...new Set((data ?? []).map((r: { nome_detectado?: string }) => String(r.nome_detectado ?? "").trim()).filter(Boolean))];
+    candidatosCache.set(agenciaId, nomes);
+    return nomes;
+  }
+  async function candidatosPendentesDa(agenciaId: string | null): Promise<number> {
+    return (await candidatosPendentesNomesDa(agenciaId)).length;
   }
 
   /**
@@ -236,6 +253,42 @@ export async function POST(req: NextRequest) {
   let votosCriados = 0;
   let semEvidencia = 0;
   let rosterNaoConferivel = 0;
+  /**
+   * ⚠️ O PORTÃO DA FASE 36, e o motivo de ele existir.
+   *
+   * `rosterNaoConferivel` junta quatro causas muito diferentes num número só, e uma delas —
+   * `cadastro_incompleto` (camada 3 de `conferirRoster`) — é a que pode transformar um revoto em
+   * PERDA DE VOTO: basta UM `diretor_candidatos` pendente da agência para todo item MUDO dela ser
+   * recusado. Se o revoto apagar os inferidos da data errada e o materializador se recusar a
+   * reconstruir, o saldo é negativo.
+   *
+   * Por isso a quebra sai por MOTIVO e por AGÊNCIA, com os nomes a resolver: sem isso, "está
+   * bloqueado" é uma afirmação sem ação possível.
+   */
+  /**
+   * ⚠️ AS QUE GANHARAM VOTO NESTA RODADA — e este conjunto conserta um defeito que eu quase
+   * "consertei" com um no-op.
+   *
+   * `semVoto` é calculado ANTES do laço, e a deliberação que acabou de receber voto CONTINUA nele.
+   * O laço final carimbava `materializavel_nao_processado` em todo `semVoto` sem motivo — ou seja,
+   * o carimbo de "sem voto" era escrito na MESMA rodada em que o voto nasceu. Depois o item
+   * alternava entre a causa real e o efêmero a cada rodada, e ninguém conseguia ler o motivo.
+   *
+   * Só o conjunto não basta: o patch de limpeza tem de ser aplicado DEPOIS de `patchPorDeliberacao`
+   * ser montado a partir de `motivoPorDeliberacao`, senão o efêmero o sobrescreve.
+   */
+  const votadasNestaRodada = new Set<string>();
+  /**
+   * ⚠️ Subconjunto do acima: as que votaram E TINHAM carimbo. Só elas recebem o patch de limpeza.
+   *
+   * `patchJaAplicado` compara por JSON canônico, e `undefined` (nunca carimbada) não é igual a
+   * `null` — sem esta separação, TODA deliberação votada geraria uma escrita para apagar um
+   * carimbo que nunca existiu, consumindo a reserva de 400 ms por escrita da fila de diagnóstico.
+   */
+  const carimboASair = new Set<string>();
+  const rosterPorMotivo: Record<string, number> = {};
+  const bloqueadosPorCadastroPorAgencia: Record<string, number> = {};
+  const candidatosPendentesPorAgencia: Record<string, string[]> = {};
   let upsertFalhas = 0;
   const upsertErros: string[] = [];
   /** Fase 20 — itens ANTERIORES ao primeiro mandato conhecido. Não é falha: é falta de registro. */
@@ -637,6 +690,14 @@ export async function POST(req: NextRequest) {
     });
     if (!vereditoRoster.confiavel) {
       rosterNaoConferivel++;
+      rosterPorMotivo[vereditoRoster.motivo] = (rosterPorMotivo[vereditoRoster.motivo] ?? 0) + 1;
+      if (vereditoRoster.motivo === "cadastro_incompleto") {
+        const sigla = siglaDe(d.agencia_id);
+        bloqueadosPorCadastroPorAgencia[sigla] = (bloqueadosPorCadastroPorAgencia[sigla] ?? 0) + 1;
+        if (!candidatosPendentesPorAgencia[sigla]) {
+          candidatosPendentesPorAgencia[sigla] = await candidatosPendentesNomesDa(d.agencia_id);
+        }
+      }
       // ⚠️ As duas causas de roster não conferível são MUITO diferentes: nome citado que o cadastro
       // não reconhece é falha de EXTRAÇÃO (inclusive o "Diretor" genérico chegando como pessoa);
       // sem nome citado, é o cadastro que está incompleto. Achatá-las mandaria alguém cadastrar
@@ -767,6 +828,11 @@ export async function POST(req: NextRequest) {
         console.error("[materializar-faltantes] upsert falhou:", upErr.message);
       } else {
         votosCriados += rows.length;
+        votadasNestaRodada.add(String(d.id));
+        // O `raw_extraction` já está em `d` (o `Object.assign(d, pesado)` do lote).
+        if (typeof (d.raw_extraction as Record<string, unknown> | null)?.motivo_sem_voto === "string") {
+          carimboASair.add(String(d.id));
+        }
       }
     } else {
       votosCriados += rows.length;
@@ -784,8 +850,15 @@ export async function POST(req: NextRequest) {
       motivoPorDeliberacao.set(String(d.id), "falha_tecnica_de_leitura");
     }
   }
-  // Quem sobrou materializou OU ainda não foi alcançado pela janela rotativa desta rodada.
+  /**
+   * Quem sobrou ainda não foi alcançado pela janela rotativa desta rodada.
+   *
+   * ⚠️ PULA quem VOTOU nesta rodada. `semVoto` foi calculado antes do laço e ainda contém essas
+   * linhas; sem esta guarda, a deliberação recebia voto e, três linhas depois, o carimbo de "sem
+   * voto ainda não processado" — na mesma rodada.
+   */
   for (const d of semVoto as any[]) {
+    if (votadasNestaRodada.has(String(d.id))) continue;
     if (!motivoPorDeliberacao.has(String(d.id))) {
       motivoPorDeliberacao.set(String(d.id), "materializavel_nao_processado");
     }
@@ -815,6 +888,21 @@ export async function POST(req: NextRequest) {
   }
   for (const [id, div] of divergenciaPorDeliberacao) {
     patchPorDeliberacao.set(id, { ...(patchPorDeliberacao.get(id) ?? {}), roster_divergente: div });
+  }
+  /**
+   * ⚠️ O CARIMBO VELHO SAI — e tem de ser AQUI, depois do laço acima.
+   *
+   * Quando a deliberação recebe voto, o `motivo_sem_voto` gravado numa rodada anterior fica no
+   * `raw_extraction` para sempre: o item aparece votado E com um motivo de por que não votou. Como
+   * `patchPorDeliberacao` é montado a partir de `motivoPorDeliberacao`, limpar antes seria
+   * sobrescrito pelo próprio motivo efêmero — foi assim que o meu primeiro conserto virou no-op.
+   *
+   * `null` e não remoção: a gravação MESCLA o jsonb (`{...raw, ...patch}`), então `undefined`
+   * sumiria do patch e não apagaria nada. `patchJaAplicado` compara por JSON canônico, então a
+   * linha que já está limpa não é reescrita.
+   */
+  for (const id of carimboASair) {
+    patchPorDeliberacao.set(id, { ...(patchPorDeliberacao.get(id) ?? {}), motivo_sem_voto: null });
   }
 
   let diagnosticosJaIguais = 0;
@@ -939,6 +1027,16 @@ export async function POST(req: NextRequest) {
     // documento. Não é falha: é a recusa de gravar voto no nome errado. O detalhe diz QUEM o
     // cadastro não reconheceu, que é o que o operador precisa para consertar.
     roster_nao_conferivel: rosterNaoConferivel,
+    /**
+     * ⚠️ A quebra do `roster_nao_conferivel`. `cadastro_incompleto` é o único dos quatro motivos que
+     * se resolve com uma AÇÃO do operador (aprovar ou rejeitar o candidato), e é o que bloqueia o
+     * revoto — por isso ele sai separado, por agência, com os nomes.
+     */
+    roster_por_motivo: rosterPorMotivo,
+    bloqueados_por_cadastro_incompleto: Object.values(bloqueadosPorCadastroPorAgencia)
+      .reduce((a, b) => a + b, 0),
+    bloqueados_por_cadastro_por_agencia: bloqueadosPorCadastroPorAgencia,
+    candidatos_pendentes_por_agencia: candidatosPendentesPorAgencia,
     /**
      * ⚠️ MEDIDO E DESLIGADO (Fase 31, Bloco 3). Em quantos itens desta rodada o roster mudaria se
      * `nomes_presentes` do pai valesse — ou seja, quantos votos mudariam de DONO. Com

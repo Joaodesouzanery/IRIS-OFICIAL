@@ -597,6 +597,9 @@ export default function VotosDiretoresPage() {
        * zero legível: `motivos_gravados: 0` não distingue "não havia o que gravar" de "a fila inteira
        * ficou sem orçamento".
        */
+      const bloqueioPorCadastro = typeof ultimas.backfill_votos?.bloqueio_por_cadastro === "string"
+        ? (ultimas.backfill_votos.bloqueio_por_cadastro as string)
+        : "";
       const gravacaoDoDiagnostico = typeof ultimas.backfill_votos?.gravacao_do_diagnostico === "string"
         ? (ultimas.backfill_votos.gravacao_do_diagnostico as string)
         : null;
@@ -787,6 +790,21 @@ export default function VotosDiretoresPage() {
         // Fase 21 — o que o materializador RECUSOU ou não conseguiu, visível. Antes esses números
         // eram calculados toda noite e descartados: uma run em que todas as escritas falharam
         // mostrava o mesmo banner verde de uma run vazia.
+        /**
+         * ⚠️ O PORTÃO DO REVOTO, e ele precisa de linha própria porque pede AÇÃO sua.
+         *
+         * `cadastro_incompleto` é a camada 3 de `conferirRoster`: basta UM `diretor_candidatos`
+         * pendente para todo item MUDO da agência ser recusado. Num revoto isso é perda líquida — a
+         * deliberação perde os votos inferidos da data errada e o materializador se recusa a
+         * reconstruir. Enquanto este número não for zero na agência alvo, o revoto não liga.
+         *
+         * Por isso a linha traz os NOMES: "a ANM está bloqueada" sem dizer por quem não gera ação.
+         */
+        (totais.bloqueados_por_cadastro_incompleto ?? 0) > 0
+          ? `⚠️ ${totais.bloqueados_por_cadastro_incompleto} item(ns) recusados por CADASTRO INCOMPLETO` +
+            (bloqueioPorCadastro ? ` — ${bloqueioPorCadastro}` : "") +
+            ". Aprovar ou rejeitar esses candidatos é o que destrava a reconstrução de voto."
+          : null,
         (totais.roster_nao_conferivel ?? 0) > 0
           ? `${totais.roster_nao_conferivel} item(ns) sem voto por roster não conferível` +
             ((totais.examinados ?? 0) > 0 ? ` de ${totais.examinados} examinado(s)` : "") +

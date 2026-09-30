@@ -48,11 +48,22 @@ export const CHAVES_NUMERICAS_DO_MATERIALIZADOR = [
    */
   "artefatos_apagados",
   "artefatos_candidatos",
+  /**
+   * ⚠️ Fase 36 — O PORTÃO. `cadastro_incompleto` é a camada 3 de `conferirRoster`: UM candidato
+   * pendente faz a agência inteira ser recusada nos itens mudos. Sem este número na tela, ligar o
+   * revoto seria apagar voto e descobrir depois que o materializador não pode reconstruir.
+   */
+  "bloqueados_por_cadastro_incompleto",
 ] as const;
 
 export interface PayloadDoMaterializador {
   /** Fase 35 — votos removidos por serem artefato de fonte que não nomina (EVENTO: soma por rodada). */
   artefatos_apagados?: number | null;
+  /** Fase 36 — itens recusados por `cadastro_incompleto` (candidato pendente na agência). */
+  bloqueados_por_cadastro_incompleto?: number | null;
+  /** Quebra por agência do acima, e os nomes a resolver. */
+  bloqueados_por_cadastro_por_agencia?: Record<string, number> | null;
+  candidatos_pendentes_por_agencia?: Record<string, string[]> | null;
   /** Fase 35 — quantos a regra ALCANÇARIA agora (ESTOQUE: retrato, recalculado a cada rodada). */
   artefatos_candidatos?: number | null;
   /** Tarefa 4 — contagem por motivo, sobre a MESMA população das "sem voto". */
@@ -121,6 +132,7 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
     fora_da_janela_sem_data_de_reuniao: b.fora_da_janela_sem_data_de_reuniao ?? 0,
     upsert_falhas: b.upsert_falhas ?? 0,
     artefatos_apagados: b.artefatos_apagados ?? 0,
+    bloqueados_por_cadastro_incompleto: b.bloqueados_por_cadastro_incompleto ?? 0,
     artefatos_candidatos: b.artefatos_candidatos ?? 0,
     // ⚠️ `pendentes` é ESTOQUE (ver `agregar-rodadas.ts`): a tela guarda o ÚLTIMO valor, não a
     // soma. Somá-lo por rodada produziria um número que cresce enquanto a fila encolhe.
@@ -142,6 +154,20 @@ export function resumirBackfill(body: PayloadDoMaterializador | null | undefined
     .map(([sigla, n]) => `${sigla} ${n}`)
     .join(" · ");
   if (porAgencia) resumo.sem_data_por_agencia = porAgencia;
+  /**
+   * ⚠️ STRING, como `sem_data_por_agencia` — `agregarEtapas` descarta valor não-numérico em
+   * silêncio, então um objeto nunca chegaria a `totais`. E ela traz os NOMES: "a ANM está bloqueada"
+   * sem dizer por quem é uma frase que não gera ação.
+   */
+  const bloqueio = Object.entries(b.bloqueados_por_cadastro_por_agencia ?? {})
+    .filter(([, n]) => (n ?? 0) > 0)
+    .sort((x, y) => (y[1] ?? 0) - (x[1] ?? 0))
+    .map(([sigla, n]) => {
+      const nomes = (b.candidatos_pendentes_por_agencia ?? {})[sigla] ?? [];
+      return `${sigla} ${n}${nomes.length > 0 ? ` (resolver: ${nomes.slice(0, 4).join(", ")}${nomes.length > 4 ? "…" : ""})` : ""}`;
+    })
+    .join(" · ");
+  if (bloqueio) resumo.bloqueio_por_cadastro = bloqueio;
   if (typeof b.pendentes === "number") resumo.pendentes = b.pendentes;
   if (typeof b.fora_de_escopo === "number") resumo.fora_de_escopo = b.fora_de_escopo;
   // Leitura truncada faz TODO número acima subcontar. String e não booleano: `registrarRodada`

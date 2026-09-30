@@ -122,6 +122,12 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
 export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
   "sem_evidencia",
   "roster_nao_conferivel",
+  /**
+   * Fase 36 — contado no MESMO laço e sobre a MESMA janela rotativa de `roster_nao_conferivel`, do
+   * qual é uma parcela. Natureza diferente do irmão faria os dois crescerem em ritmos distintos na
+   * mesma linha do banner.
+   */
+  "bloqueados_por_cadastro_incompleto",
   "votos_a_menos",
   "itens_que_mudariam",
   "regex_divergente",
