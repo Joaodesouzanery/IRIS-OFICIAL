@@ -46,6 +46,7 @@ import {
   planejarCompletar, paresPorAgencia, type DeliberacaoParcial,
 } from "@/lib/server/completar-colegiado";
 import { colegiadoNaData, type MandatoJanela } from "@/lib/server/colegiado-na-data";
+import { ehVotoDeDirecao, isVotoNominal } from "@/lib/votos-nominal";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -111,8 +112,16 @@ export async function GET(req: NextRequest) {
      * não nomina ninguém com voto nominal presente é o VOTO ARTEFATO da Fase 34, e completar em
      * volta dele multiplicaria o artefato por cinco em vez de apagá-lo.
      */
-    lerTudo<{ deliberacao_id: string; diretor_id: string; is_nominal: boolean | null }>(
-      () => db.from("votos").select("deliberacao_id, diretor_id, is_nominal").order("id"),
+    lerTudo<{ deliberacao_id: string; diretor_id: string; is_nominal: boolean | null; proveniencia: string | null; tipo_voto: string | null }>(
+      /**
+       * ⚠️ `tipo_voto` e `proveniencia` entram no select, e custam ZERO (mesma página):
+       *  · `proveniencia` porque `isVotoNominal` é a ÚNICA fonte da verdade sobre nominalidade — um
+       *    voto `revisao_humana` com `is_nominal=false` era lido aqui como inferido;
+       *  · `tipo_voto` porque `Ausente`/`Impedido` nominais não são artefato (a fonte diz quem
+       *    faltou sem dizer quem votou como), e bloquear por causa deles deixava a deliberação
+       *    parcial para sempre.
+       */
+      () => db.from("votos").select("deliberacao_id, diretor_id, is_nominal, proveniencia, tipo_voto").order("id"),
       "placar/votos"),
     lerTudo<any>(
       () => db.from("mandatos")
@@ -155,12 +164,16 @@ export async function GET(req: NextRequest) {
 
   const votantesPorDelib = new Map<string, Set<string>>();
   const temNominalPorDelib = new Set<string>();
+  const temNominalDeDirecaoPorDelib = new Set<string>();
   for (const v of votosRes.data ?? []) {
     if (!v.deliberacao_id || !v.diretor_id) continue;
     const s = votantesPorDelib.get(v.deliberacao_id) ?? new Set<string>();
     s.add(v.diretor_id);
     votantesPorDelib.set(v.deliberacao_id, s);
-    if (v.is_nominal === true) temNominalPorDelib.add(v.deliberacao_id);
+    if (isVotoNominal(v)) {
+      temNominalPorDelib.add(v.deliberacao_id);
+      if (ehVotoDeDirecao(v.tipo_voto)) temNominalDeDirecaoPorDelib.add(v.deliberacao_id);
+    }
   }
 
   // ─── (a) A numeração, por (agência, série) ────────────────────────────────
@@ -334,16 +347,30 @@ export async function GET(req: NextRequest) {
       ),
       roster: colegiadoNaData(mandatos, d.agencia_id, d.data_reuniao),
       jaResponderam: [...responderam],
-      temVotoNominal: temNominalPorDelib.has(String(d.id)),
+      temVotoNominalDeDirecao: temNominalDeDirecaoPorDelib.has(String(d.id)),
+      temPai: Boolean(d.documento_pai_id),
     });
   }
   const plano = planejarCompletar(paraCompletar);
   const completavelPorAgencia = paresPorAgencia(plano, (id) => siglaPorDelib.get(id) ?? "?");
   if (plano.pares.length > 0) {
+    /**
+     * ⚠️ ESTE NÚMERO É TETO, e dizer isso é parte do número.
+     *
+     * Aqui o roster sai de `colegiadoNaData` — MANDATO. O motor que escreveria usa os PRESENTES do
+     * documento (`resolverPresentesRoster`) e ainda passa por `conferirRoster`; o portão por item
+     * exige que o preâmbulo nomeie a pessoa. Logo o motor planeja MENOS, nunca mais.
+     *
+     * O número do motor sai de `POST /api/v1/admin/votos/materializar-faltantes` com
+     * `{ completar_parcial: true, dry_run: true }`. Publicar só este, sem o rótulo, seria prometer
+     * uma cobertura que a escrita não entrega.
+     */
     alertas.push(
       `${plano.pares.length} par(es) (deliberação × diretor) poderiam receber voto inferido — ` +
         `${Object.entries(completavelPorAgencia).map(([k, v]) => `${k} ${v}`).join(" · ")}. ` +
-        "A ESCRITA NÃO EXISTE ainda: este número existe para você decidir antes.",
+        "⚠️ É TETO (roster de MANDATO): o motor usa os PRESENTES do documento e planeja menos — " +
+        "o número dele sai em materializar-faltantes com completar_parcial+dry_run. " +
+        "A ESCRITA está DESLIGADA: este número existe para você decidir antes.",
     );
   }
   for (const [motivo, n] of Object.entries(plano.porMotivo)) {

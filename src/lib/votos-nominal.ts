@@ -15,3 +15,16 @@ export function isVotoNominal(v: { is_nominal?: boolean | null; proveniencia?: s
   if (v.proveniencia == null) return Boolean(v.is_nominal);
   return false;
 }
+
+/**
+ * O voto é uma MANIFESTAÇÃO (Favorável / Desfavorável / Abstenção), ou o registro de que a pessoa
+ * NÃO votou (`Ausente`, que é também como o impedimento é gravado, com `motivo_nao_voto`)?
+ *
+ * ⚠️ Vive aqui, ao lado de `isVotoNominal`, porque é a mesma pergunta: como se LÊ uma linha de
+ * `votos`. E porque a distinção decide uma recusa: `Ausente` nominal numa fonte que não nomina
+ * votantes é leitura legítima (a ata diz quem faltou sem dizer quem votou como) e NÃO é o voto
+ * artefato — tratá-lo como artefato deixava a deliberação parcial para sempre.
+ */
+export function ehVotoDeDirecao(tipoVoto: string | null | undefined): boolean {
+  return Boolean(tipoVoto) && tipoVoto !== "Ausente";
+}

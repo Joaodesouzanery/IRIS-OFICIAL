@@ -54,11 +54,24 @@ describe("etapa180 · a esteira compara com o matcher REAL, não com um laço pr
   });
 
   it("⚠️ e o motor de voto continua usando a MESMA função — se divergirem, o diagnóstico mente", () => {
-    // Duas chamadas: a do roster que vira voto, e a da medição. Se alguém trocar uma das duas por
-    // um laço próprio, esta contagem cai e o teste reprova.
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, Bloco A): a expectativa era `toBe(2)`. O portão do colegiado parcial
+     * acrescentou um TERCEIRO uso — da mesma função, que é justamente o que se quer — e a contagem
+     * exata reprovou. Contar é frágil nos dois sentidos: um 4º uso legítimo reprova, e trocar UM
+     * dos dois por um laço próprio manteria a contagem se outro fosse acrescentado.
+     *
+     * Agora cada DECISÃO que vira roster é nomeada. É o que importa: são três lugares onde nome de
+     * pessoa se transforma em id, e os três têm de passar pela mesma função, senão o diagnóstico
+     * discorda do motor.
+     */
+    expect(MAT, "o roster que vira voto deixou de usar a função única")
+      .toMatch(/const presentesRoster = resolverPresentesRoster\(presentes, diretoresList\)/);
+    expect(MAT, "a medição do de→para deixou de usar a função única")
+      .toMatch(/const comPai = resolverPresentesRoster\(presentesDoPai, diretoresList\)/);
+    expect(MAT, "o portão do colegiado parcial deixou de usar a função única")
+      .toMatch(/resolverPresentesRoster\(nomesParaPortao, diretoresList\)/);
     const usos = (MAT.match(/resolverPresentesRoster\(/g) ?? []).length;
-    expect(usos, "o materializador deixou de usar a função única de match de presentes").toBe(2);
-    expect(MAT).toMatch(/const presentesRoster = resolverPresentesRoster\(presentes, diretoresList\)/);
+    expect(usos, "algum lugar passou a casar nome com laço próprio").toBeGreaterThanOrEqual(3);
   });
 
   it("os nomes do preâmbulo sem cadastro saem de `findBestMatch`, com `needsReview` respeitado", () => {
@@ -157,7 +170,14 @@ describe("etapa180 · ⚠️ UM write por deliberação — a mescla não pode p
      * presença passam, e em toda deliberação que cai nas duas populações a segunda escrita mescla
      * sobre um `raw_extraction` lido ANTES da primeira — apagando o que ela acabou de gravar.
      */
-    const i = MAT.indexOf("if (!dryRun && patchPorDeliberacao.size > 0)");
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, Bloco A): a âncora era a linha LITERAL
+     * `if (!dryRun && patchPorDeliberacao.size > 0)`. O modo parcial acrescentou `&& !completarParcial`
+     * — uma mudança que PRESERVA a propriedade — e a expectativa reprovou por causa do texto. Travar
+     * a forma em vez da propriedade é o erro que este projeto já catalogou em `etapa179`. A âncora
+     * passa a ser o predicado do laço, que é o que identifica o caminho.
+     */
+    const i = MAT.indexOf("patchPorDeliberacao.size > 0");
     expect(i).toBeGreaterThan(-1);
     const bloco = MAT.slice(i, i + 2000);
     expect((bloco.match(/\.update\(\{ raw_extraction:/g) ?? []).length).toBe(1);

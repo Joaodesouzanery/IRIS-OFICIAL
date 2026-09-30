@@ -128,10 +128,17 @@ describe("etapa200 · o rastro, que é a condição do usuário", () => {
 
 describe("etapa200 · os dois bloqueios que impediam o reparo", () => {
   it("⚠️ o passo roda ANTES de `semVotoTotal` — a liberada é refeita na MESMA rodada", () => {
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, Bloco A): a âncora era `const semVotoTotal = finais.filter`. O modo
+     * parcial TROCA a população (`completarParcial ? … : finais.filter(…)`), então o texto mudou
+     * sem que a propriedade — o reparo vem ANTES do cálculo da população — mudasse.
+     */
     const iPasso = MAT.indexOf("const candidatasArtefato");
-    const iPop = MAT.indexOf("const semVotoTotal = finais.filter");
+    const iPop = MAT.indexOf("const semVotoTotal =");
     expect(iPasso).toBeGreaterThan(-1);
     expect(iPop).toBeGreaterThan(iPasso);
+    // E o `finais.filter` continua sendo a população do modo normal.
+    expect(MAT).toMatch(/: finais\.filter\(\(d: any\) => !comVoto\.has\(d\.id\)\)/);
     // E ela sai de `comVoto`, que é o conjunto do qual `semVotoTotal` é derivado.
     expect(MAT).toMatch(/comVoto\.delete\(alvo\.id\);/);
   });

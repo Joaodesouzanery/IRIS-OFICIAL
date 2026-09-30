@@ -160,7 +160,14 @@ describe("etapa172 · a gravação não destrói nem classifica no escuro", () =
     expect(ROTA).toMatch(/raw_extraction: \{ \.\.\.base, \.\.\.patch \}/);
     expect(ROTA, "voltou a substituir o jsonb em vez de mesclar")
       .not.toMatch(/raw_extraction: \{ motivo_sem_voto/);
-    const i = ROTA.indexOf("if (!dryRun && patchPorDeliberacao.size > 0)");
+    /**
+     * ⚠️ CORREÇÃO (Fase 36, Bloco A): a âncora era a linha LITERAL
+     * `if (!dryRun && patchPorDeliberacao.size > 0)`. O modo parcial acrescentou `&& !completarParcial`
+     * — uma mudança que PRESERVA a propriedade — e a expectativa reprovou por causa do texto. Travar
+     * a forma em vez da propriedade é o erro que este projeto já catalogou em `etapa179`. A âncora
+     * passa a ser o predicado do laço, que é o que identifica o caminho.
+     */
+    const i = ROTA.indexOf("patchPorDeliberacao.size > 0");
     expect(i, "o laço único de gravação do diagnóstico desapareceu").toBeGreaterThan(-1);
     const bloco = ROTA.slice(i, i + 2000);
     expect((bloco.match(/\.update\(\{ raw_extraction:/g) ?? []).length,

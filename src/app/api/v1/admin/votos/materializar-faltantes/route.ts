@@ -36,6 +36,11 @@ import {
   type VotoInsertRow,
 } from "@/lib/server/vote-inference";
 import { upsertVotosProtegido } from "@/lib/server/votos-write";
+import {
+  COMPLETAR_PARCIAL,
+  apenasQuemFalta,
+  paresAutorizadosPeloDocumento,
+} from "@/lib/server/completar-colegiado";
 import { foraDaJanelaDeMandatos, type JanelaDeMandato } from "@/lib/server/janela-de-mandatos";
 import { TIPOS_NAO_FINAIS_SET } from "@/lib/server/regulatory-documents";
 import { lerTudo } from "@/lib/server/select-all-paged";
@@ -106,9 +111,21 @@ export async function POST(req: NextRequest) {
   if (guard) return guard;
 
   const body = (await req.json().catch(() => ({}))) as {
-    dry_run?: unknown; agencia_id?: unknown; year?: unknown;
+    dry_run?: unknown; agencia_id?: unknown; year?: unknown; completar_parcial?: unknown;
   };
   const dryRun = body.dry_run !== false; // default true — aplicar exige dry_run:false explícito
+  /**
+   * MODO EXCLUSIVO — completar colegiado PARCIAL (Fase 36, Bloco A).
+   *
+   * A população normal é `semVotoTotal` (ZERO voto). Uma deliberação com 3 de 5 vive em `comVoto` e
+   * é pulada PARA SEMPRE: é a maior parte da distância até 100%.
+   *
+   * ⚠️ É EXCLUSIVO de propósito. Ligar "completar parcial" como um adendo faria a rodada rodar
+   * também a população de zero-voto, o reparo de artefato e o diagnóstico — 12-20 s — e
+   * `restantes` voltaria `true` em toda rodada, de modo que a run nunca drenaria. Aqui o modo
+   * TROCA a população e pula o reparo, em vez de somar trabalho.
+   */
+  const completarParcial = body.completar_parcial === true;
   const agenciaFiltro = typeof body.agencia_id === "string" && body.agencia_id ? body.agencia_id : null;
   const year = typeof body.year === "string" && YEAR_RE.test(body.year) ? body.year : null;
 
@@ -286,6 +303,15 @@ export async function POST(req: NextRequest) {
    * carimbo que nunca existiu, consumindo a reserva de 400 ms por escrita da fila de diagnóstico.
    */
   const carimboASair = new Set<string>();
+  // ═══ Bloco A — os números do modo parcial (medição, com a escrita desligada) ═══
+  let parcialPlanejados = 0;
+  let parcialBarrados = 0;
+  const parcialPorAgencia: Record<string, number> = {};
+  const parcialBarradosPorMotivo: Record<string, number> = {};
+  const parcialDetalhe: Array<{
+    deliberacao_id: string; agencia: string;
+    autorizados: string[]; barrados: string[]; presentes_no_documento: number;
+  }> = [];
   const rosterPorMotivo: Record<string, number> = {};
   const bloqueadosPorCadastroPorAgencia: Record<string, number> = {};
   const candidatosPendentesPorAgencia: Record<string, string[]> = {};
@@ -398,8 +424,10 @@ export async function POST(req: NextRequest) {
 
   // Quais já têm voto. Era um laço de chunks de 200 `in()`, que cresce junto com `finais`; uma
   // leitura paginada de UMA coluna uuid é ~4 páginas e não depende do tamanho do outro lado.
-  const votosRes = await lerTudo<{ deliberacao_id: string }>(
-    () => db.from("votos").select("deliberacao_id").order("id"), "materializar/votos-ids");
+  const votosRes = await lerTudo<{ deliberacao_id: string; diretor_id: string | null }>(
+    // `diretor_id` custa ZERO (mesma página) e é o que o modo parcial precisa: sem ele não há como
+    // saber QUEM falta, e completar sem saber quem falta reescreveria quem já respondeu.
+    () => db.from("votos").select("deliberacao_id, diretor_id").order("id"), "materializar/votos-ids");
   // ⚠️ `lerTudo` devolve `{error}` em vez de lançar, e no caminho de ERRO devolve
   // `truncated: false` com as linhas que já tinha (`select-all-paged.ts:23`). Ignorar o erro aqui
   // seria pior que truncar: `comVoto` sairia INCOMPLETO, deliberação que já tem voto voltaria para
@@ -408,6 +436,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Falha ao listar votos existentes." }, { status: 500 });
   }
   const comVoto = new Set<string>((votosRes.data ?? []).map((r) => r.deliberacao_id));
+  const votantesPorDelib = new Map<string, Set<string>>();
+  for (const v of votosRes.data ?? []) {
+    if (!v.deliberacao_id || !v.diretor_id) continue;
+    const atual = votantesPorDelib.get(v.deliberacao_id) ?? new Set<string>();
+    atual.add(v.diretor_id);
+    votantesPorDelib.set(v.deliberacao_id, atual);
+  }
   const leituraCompleta = !levesRes.truncated && !votosRes.truncated;
 
   // ═══ Fase 34 — APAGA o voto que a FONTE não podia ter produzido ═════════════
@@ -421,7 +456,11 @@ export async function POST(req: NextRequest) {
   /** O rastro COMPLETO, que vai para a auditoria antes de qualquer apagamento. */
   const rastroCompleto: RastroDeVotoApagado[] = [];
   const liberadas = new Set<string>();
-  {
+  // ⚠️ O reparo de artefato NÃO roda no modo parcial: ele é o que torna o modo caro (e o que faria
+  // `restantes` ficar eternamente `true`). Além disso, a recusa (a) de `planejarCompletar` existe
+  // justamente para mandar essas linhas para cá — fazer os dois na mesma rodada embaralharia o
+  // número de quem apagou com o de quem completou.
+  if (!completarParcial) {
     // Só as deliberações de agência cuja ATA não nomina — é a população inteira do defeito, e ela é
     // pequena por construção (a ARTESP e a ANTT; a ANM nomina parcialmente e fica de fora).
     const candidatasArtefato = (finais as any[]).filter((d) =>
@@ -498,7 +537,28 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  const semVotoTotal = finais.filter((d: any) => !comVoto.has(d.id));
+  /**
+   * A POPULAÇÃO. No modo normal, quem tem ZERO voto. No modo parcial, quem tem ALGUM voto e menos
+   * votantes do que o cadastro da agência tem diretores.
+   *
+   * ⚠️ O pré-filtro é um TETO grosseiro de propósito (nº de diretores no cadastro, não o roster da
+   * data): ele só pode INCLUIR demais, nunca de menos, e quem decide é o portão por item mais
+   * abaixo. Um pré-filtro apertado aqui esconderia deliberação parcial sem ninguém medir.
+   */
+  const semVotoTotal = completarParcial
+    ? await (async () => {
+      const out: any[] = [];
+      for (const d of finais as any[]) {
+        const votantes = votantesPorDelib.get(String(d.id));
+        if (!votantes || votantes.size === 0) continue;
+        if (!d.agencia_id) continue;
+        const cadastro = await diretoresDa(d.agencia_id);
+        if (cadastro.length === 0 || votantes.size >= cadastro.length) continue;
+        out.push(d);
+      }
+      return out;
+    })()
+    : finais.filter((d: any) => !comVoto.has(d.id));
 
   // ═══ PARTIÇÃO antes de gastar orçamento ═══
   // Duas categorias são PERMANENTEMENTE irresolvíveis e custam quase nada para calcular: fora de
@@ -793,12 +853,83 @@ export async function POST(req: NextRequest) {
       unanime,
     });
 
+    /**
+     * ═══ Bloco A — OS DOIS FILTROS DA ESCRITA PARCIAL ═════════════════════════
+     *
+     * `buildVotoRows` devolve linha para o roster INTEIRO. Num item parcial isso inclui quem já
+     * respondeu, e reenviar quem já respondeu não é inofensivo: o upsert do `postgrest` usa a UNIÃO
+     * das colunas do lote com `defaultToNull`, então uma coluna ausente em qualquer linha do lote
+     * vira **NULL na linha existente** — o `motivo_nao_voto` de um `Ausente` lido do documento
+     * viraria ausência sem motivo. Daí `apenasQuemFalta`.
+     *
+     * E o segundo filtro é o PORTÃO: só recebe voto quem o DOCUMENTO nomeia como presente. O
+     * gabarito certificado não serve de portão aqui (ele cobre 79ª/81ª/83ª e 1.024ª/264ª, e os
+     * primeiros alvos são a 84ª e a 86ª — um portão que consulta gabarito vazio é portão aberto).
+     */
+    let rowsParaEscrever = rows;
+    if (completarParcial) {
+      const jaResponderam = votantesPorDelib.get(String(d.id)) ?? new Set<string>();
+      const faltando = apenasQuemFalta(rows, jaResponderam).map((r) => r.diretor_id);
+      // ⚠️ Os presentes do PORTÃO valem mesmo com `PRESENTES_DO_PAI_VALEM = false`: aquela flag
+      // decide quem compõe o ROSTER; aqui a pergunta é se o documento nomeia a pessoa, e o
+      // preâmbulo do pai é evidência válida para isso.
+      const nomesParaPortao = presentesDoProprio.length > 0 ? presentesDoProprio : presentesDoPai;
+      const presentesNoDocumento = resolverPresentesRoster(nomesParaPortao, diretoresList).map((x) => x.id);
+      const portao = paresAutorizadosPeloDocumento({ faltando, presentesNoDocumento });
+      const sigla = siglaDe(d.agencia_id);
+      if (portao.autorizados.length > 0) {
+        parcialPlanejados += portao.autorizados.length;
+        parcialPorAgencia[sigla] = (parcialPorAgencia[sigla] ?? 0) + portao.autorizados.length;
+      }
+      if (portao.barrados.length > 0) {
+        parcialBarrados += portao.barrados.length;
+        const chave = presentesNoDocumento.length === 0 ? "sem_presentes_no_documento" : "presente_nao_nomeado";
+        parcialBarradosPorMotivo[chave] = (parcialBarradosPorMotivo[chave] ?? 0) + portao.barrados.length;
+      }
+      if (parcialDetalhe.length < 30 && (portao.autorizados.length > 0 || portao.barrados.length > 0)) {
+        const nomeDe = (id: string) => diretoresList.find((x) => x.id === id)?.nome ?? id;
+        parcialDetalhe.push({
+          deliberacao_id: String(d.id),
+          agencia: sigla,
+          autorizados: portao.autorizados.map(nomeDe),
+          barrados: portao.barrados.map(nomeDe),
+          presentes_no_documento: presentesNoDocumento.length,
+        });
+      }
+      const autorizados = new Set(portao.autorizados);
+      rowsParaEscrever = rows.filter((r) => autorizados.has(r.diretor_id));
+      // ⚠️ A CONSTANTE. Enquanto ela for `false`, esta rodada é medição e mais nada — e é isso que
+      // o usuário pediu: "a medição tem de bater com o gabarito antes de eu ligar".
+      if (!COMPLETAR_PARCIAL) rowsParaEscrever = [];
+    }
+
     // O delta em VOTOS, invertido: quantos votos a regra antiga teria fabricado neste item
     // (o roster inteiro), onde a nova recusou inferir. Voto NOMINAL não entra — não depende disto.
     if (contestado && !contestadoAntigo && !inferFromMandate && rows.length === 0) {
       const sigla = siglaDe(d.agencia_id);
       deltaPorAgencia[sigla] = deltaPorAgencia[sigla] ?? { itens: 0, votos: 0 };
       deltaPorAgencia[sigla].votos += activeDiretoresList.length;
+    }
+    if (completarParcial) {
+      // No modo parcial a rodada TERMINA aqui quando não há nada autorizado: o "sem evidência" e o
+      // carimbo de motivo pertencem à população de zero-voto, e misturá-los apagaria o motivo real
+      // de uma deliberação que só está parcial.
+      if (rowsParaEscrever.length === 0) continue;
+      materializaveis++;
+      if (!dryRun) {
+        const { error: upErr } = await upsertVotosProtegido(db, rowsParaEscrever);
+        if (upErr) {
+          upsertFalhas++;
+          if (upsertErros.length < 10) upsertErros.push(upErr.message);
+          console.error("[materializar-faltantes/parcial] upsert falhou:", upErr.message);
+        } else {
+          votosCriados += rowsParaEscrever.length;
+          votadasNestaRodada.add(String(d.id));
+        }
+      } else {
+        votosCriados += rowsParaEscrever.length;
+      }
+      continue;
     }
     if (rows.length === 0) {
       semEvidencia++;
@@ -845,7 +976,7 @@ export async function POST(req: NextRequest) {
   // literalmente por `etapa149` — o teste que guarda a lição da Fase 28: não classificar o que não
   // se leu. Acrescentar um `push` ali quebraria o teste sem ganho; o mesmo conjunto sai daqui,
   // porque `Object.assign(d, pesado)` só popula `raw_extraction` em quem recebeu payload.
-  for (const d of loteBruto as any[]) {
+  for (const d of (completarParcial ? [] : loteBruto) as any[]) {
     if (!motivoPorDeliberacao.has(String(d.id)) && !d.raw_extraction) {
       motivoPorDeliberacao.set(String(d.id), "falha_tecnica_de_leitura");
     }
@@ -857,7 +988,13 @@ export async function POST(req: NextRequest) {
    * linhas; sem esta guarda, a deliberação recebia voto e, três linhas depois, o carimbo de "sem
    * voto ainda não processado" — na mesma rodada.
    */
-  for (const d of semVoto as any[]) {
+  for (const d of (completarParcial ? [] : semVoto) as any[]) {
+    /**
+     * ⚠️ E NÃO carimba nada no modo parcial. `motivo_sem_voto` é uma afirmação sobre deliberação
+     * SEM voto; a população do modo parcial TEM voto, e escrever "materializável não processado"
+     * nelas sobrescreveria o motivo verdadeiro de quem está em outra fila — o mesmo defeito de
+     * oscilação que a Fase 36 consertou no Bloco C, reintroduzido por uma população diferente.
+     */
     if (votadasNestaRodada.has(String(d.id))) continue;
     if (!motivoPorDeliberacao.has(String(d.id))) {
       motivoPorDeliberacao.set(String(d.id), "materializavel_nao_processado");
@@ -906,7 +1043,13 @@ export async function POST(req: NextRequest) {
   }
 
   let diagnosticosJaIguais = 0;
-  if (!dryRun && patchPorDeliberacao.size > 0) {
+  /**
+   * ⚠️ E o DIAGNÓSTICO não é gravado no modo parcial. Os `continue` do laço (roster desconhecido,
+   * roster não conferível, sem evidência) carimbam `motivo_sem_voto` — uma afirmação sobre
+   * deliberação SEM voto. Aplicada à população parcial, ela sobrescreveria o motivo verdadeiro de
+   * linhas que estão em outra fila. O modo parcial escreve VOTO ou nada.
+   */
+  if (!dryRun && !completarParcial && patchPorDeliberacao.size > 0) {
     /**
      * ⚠️ FILA PRIORIZADA — a INANIÇÃO POR PREFIXO, que é o defeito medido.
      *
@@ -1044,6 +1187,26 @@ export async function POST(req: NextRequest) {
      */
     roster_mudaria_com_presentes_do_pai: rosterMudariaComPresentesDoPai,
     roster_mudaria_por_agencia: rosterMudariaPorAgencia,
+    /**
+     * ═══ Bloco A (Fase 36) — COMPLETAR COLEGIADO PARCIAL, medido e desligado ═══
+     *
+     * `completar_parcial_ligado` é a constante, e ela sai na resposta de propósito: um número de
+     * "pares planejados" sem dizer se a escrita está ligada é exatamente o tipo de número que se
+     * lê como "já aconteceu".
+     *
+     * ⚠️ A quebra por agência viaja como STRING. `agregarEtapas` descarta silenciosamente o que não
+     * é número (foi assim que a quebra por agência do placar se perdeu), então o objeto fica ao lado
+     * para o consumo direto e a string é o que sobrevive à agregação da esteira.
+     */
+    completar_parcial_modo: completarParcial,
+    completar_parcial_ligado: COMPLETAR_PARCIAL,
+    parcial_pares_autorizados: parcialPlanejados,
+    parcial_pares_barrados: parcialBarrados,
+    parcial_barrados_por_motivo: parcialBarradosPorMotivo,
+    parcial_por_agencia: parcialPorAgencia,
+    parcial_por_agencia_txt: Object.entries(parcialPorAgencia)
+      .map(([sigla, n]) => `${sigla} ${n}`).join(" · ") || "nenhum",
+    parcial_detalhe: parcialDetalhe,
     divergencias_gravadas: divergenciasGravadas,
     presentes_do_pai_valem: PRESENTES_DO_PAI_VALEM,
     /**

@@ -26,7 +26,7 @@ import {
 const base = (o: Partial<DeliberacaoParcial>): DeliberacaoParcial => ({
   id: "d1", sigla: "ANM", tipo_documento: "ata", resultado: "Deferido",
   contestado: false, roster: ["mauro", "fabio", "jose", "luiz", "caio"],
-  jaResponderam: ["mauro", "fabio", "luiz"], temVotoNominal: false, ...o,
+  jaResponderam: ["mauro", "fabio", "luiz"], temVotoNominalDeDirecao: false, temPai: true, ...o,
 });
 
 describe("etapa210 · o plano: quem falta, e só quem falta", () => {
@@ -70,15 +70,50 @@ describe("etapa210 · ⚠️ AS RECUSAS — cada uma tem um caso real por trás"
      * existir, multiplicando o artefato em vez de apagá-lo.
      */
     const p = planejarCompletar([
-      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominal: true }),
+      // ⚠️ UM voto e item de ata: é exatamente o que `votoNominalImpossivel` alcança.
+      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominalDeDirecao: true, jaResponderam: ["mauro"] }),
     ]);
     expect(p.pares, "completar aqui multiplicaria o artefato por cinco").toEqual([]);
     expect(p.recusas[0].motivo).toBe("voto_artefato_pendente");
   });
 
+  it("⚠️ CORREÇÃO DESTA ETAPA: nominal que o reparo NÃO alcança recebe motivo PRÓPRIO", () => {
+    /**
+     * A recusa original era mais LARGA que o reparo que ela invocava: bastava "tem nominal", mas
+     * `votoNominalImpossivel` exige item de ata **com exatamente um voto**. Com três votos, o reparo
+     * nunca visita a linha — e o rótulo `voto_artefato_pendente` prometia um conserto que não vinha.
+     * Fica parada para sempre, com o número escondido debaixo do motivo errado.
+     */
+    const p = planejarCompletar([
+      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominalDeDirecao: true, jaResponderam: ["mauro", "fabio", "luiz"] }),
+    ]);
+    expect(p.pares).toEqual([]);
+    expect(p.recusas[0].motivo).toBe("nominal_inconsistente");
+  });
+
+  it("e sem PAI também não é artefato — o reparo só alcança item de ata", () => {
+    const p = planejarCompletar([
+      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominalDeDirecao: true, jaResponderam: ["mauro"], temPai: false }),
+    ]);
+    expect(p.recusas[0].motivo).toBe("nominal_inconsistente");
+  });
+
+  it("⚠️ e `Ausente` NOMINAL não bloqueia nada — era o falso positivo da ARTESP", () => {
+    /**
+     * Uma ata da ARTESP diz quem faltou sem dizer quem votou como: `Ausente` nominal é leitura
+     * legítima, não artefato. Recusar por causa dele deixaria a deliberação parcial para sempre.
+     * É por isso que o campo pergunta por voto de DIREÇÃO, e não por "tem nominal".
+     */
+    const p = planejarCompletar([
+      base({ sigla: "ARTESP", tipo_documento: "ata", temVotoNominalDeDirecao: false, jaResponderam: ["mauro"] }),
+    ]);
+    expect(p.pares.map((x) => x.diretor_id).sort()).toEqual(["caio", "fabio", "jose", "luiz"]);
+    expect(p.recusas).toEqual([]);
+  });
+
   it("e a MESMA fonte, sem voto nominal, é completável — a recusa é pelo artefato, não pela agência", () => {
     const p = planejarCompletar([
-      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominal: false }),
+      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominalDeDirecao: false }),
     ]);
     expect(p.pares.length).toBe(2);
     expect(p.recusas).toEqual([]);
@@ -104,7 +139,7 @@ describe("etapa210 · ⚠️ AS RECUSAS — cada uma tem um caso real por trás"
      * de apenas não agir.
      */
     const p = planejarCompletar([
-      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominal: true, contestado: true }),
+      base({ sigla: "ANTT", tipo_documento: "ata", temVotoNominalDeDirecao: true, jaResponderam: ["mauro"], contestado: true }),
     ]);
     expect(p.recusas[0].motivo).toBe("voto_artefato_pendente");
   });
@@ -124,10 +159,12 @@ describe("etapa210 · ⚠️ AS RECUSAS — cada uma tem um caso real por trás"
       base({ id: "a", contestado: true }),
       base({ id: "b", contestado: true }),
       base({ id: "c", resultado: null }),
-      base({ id: "d", sigla: "ANTT", temVotoNominal: true }),
+      // "d" tem UM voto: é artefato de verdade. "f" tem três: o reparo não a alcança.
+      base({ id: "d", sigla: "ANTT", temVotoNominalDeDirecao: true, jaResponderam: ["mauro"] }),
+      base({ id: "f", sigla: "ANTT", temVotoNominalDeDirecao: true }),
       base({ id: "e" }),
     ]);
-    expect(p.porMotivo).toEqual({ contestado: 2, sem_resultado: 1, voto_artefato_pendente: 1 });
+    expect(p.porMotivo).toEqual({ contestado: 2, sem_resultado: 1, voto_artefato_pendente: 1, nominal_inconsistente: 1 });
     expect(Object.values(p.porMotivo).reduce((x, y) => x + y, 0)).toBe(p.recusas.length);
     expect(p.pares.length, "só a última era completável").toBe(2);
   });

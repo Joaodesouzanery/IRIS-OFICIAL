@@ -35,6 +35,18 @@
 
 import { capacidadeNominal } from "@/lib/server/colegiado-sources";
 
+/**
+ * A ESCRITA, desligada.
+ *
+ * ⚠️ Mora AQUI, e não na rota, por uma razão mecânica: `export const` com nome não reservado em um
+ * `route.ts` do App Router **quebra o `next build`** — e o `tsc --noEmit` passa, então só o build
+ * pega. Placar e materializador já importam este módulo.
+ *
+ * Ligar isto afirma que cinco pessoas votaram a partir de um documento que nomeia zero. É a escrita
+ * mais cara da esteira, e ela só liga depois de o número medido bater com o que o usuário conferir.
+ */
+export const COMPLETAR_PARCIAL = false;
+
 export type MotivoDeRecusa =
   /** Fonte não nomina ninguém e já existe voto nominal: é artefato, pertence ao reparo. */
   | "voto_artefato_pendente"
@@ -43,7 +55,13 @@ export type MotivoDeRecusa =
   /** Sem desfecho não há o que inferir. */
   | "sem_resultado"
   /** Ninguém com mandato na data: nada a completar (e nada a afirmar). */
-  | "sem_roster";
+  | "sem_roster"
+  /**
+   * Voto nominal de DIREÇÃO numa fonte que não nomina, e que o reparo de artefato NÃO alcança
+   * (ele exige item de ata com exatamente um voto). Ninguém vai consertar sozinho: precisa de olho
+   * humano. Antes isto era achatado em `voto_artefato_pendente`, prometendo um reparo que não viria.
+   */
+  | "nominal_inconsistente";
 
 export interface DeliberacaoParcial {
   id: string;
@@ -56,8 +74,16 @@ export interface DeliberacaoParcial {
   roster: string[];
   /** Ids que JÁ têm linha em `votos` nesta deliberação. */
   jaResponderam: string[];
-  /** Algum dos votos existentes é nominal? */
-  temVotoNominal: boolean;
+  /**
+   * Algum voto existente é nominal e de DIREÇÃO (favorável/contrário/…)?
+   *
+   * ⚠️ A distinção não é cosmética. `Ausente` e `Impedido` nominais são leitura legítima de uma ata
+   * da ARTESP (a fonte diz quem faltou sem dizer quem votou como) e NÃO são artefato: recusar por
+   * causa deles deixaria a deliberação parcial para sempre. Era o defeito da recusa (a).
+   */
+  temVotoNominalDeDirecao: boolean;
+  /** É item de ata (tem documento pai)? O reparo de artefato só alcança quem tem pai. */
+  temPai: boolean;
 }
 
 export interface ParPlanejado {
@@ -105,8 +131,14 @@ export function planejarCompletar(itens: DeliberacaoParcial[]): PlanoDeCompletar
      * nomina ninguém e ainda assim há voto nominal, o voto existente é artefato — e completar em
      * volta dele criaria quatro votos irmãos de um voto que não devia existir.
      */
-    if (capacidadeNominal(d.sigla, d.tipo_documento) === "nenhum" && d.temVotoNominal) {
-      recusar(d.id, "voto_artefato_pendente");
+    if (capacidadeNominal(d.sigla, d.tipo_documento) === "nenhum" && d.temVotoNominalDeDirecao) {
+      /**
+       * ⚠️ A recusa tem de casar com o que o reparo REALMENTE alcança. `votoNominalImpossivel`
+       * (`voto-artefato.ts`) exige item de ata **com exatamente um voto**; esta recusa exigia só
+       * "tem nominal", e era mais larga que o reparo que ela invocava. O que caísse na diferença
+       * ficava parado esperando um passo que nunca ia visitá-lo.
+       */
+      recusar(d.id, d.temPai && d.jaResponderam.length === 1 ? "voto_artefato_pendente" : "nominal_inconsistente");
       continue;
     }
     if (d.contestado) {
@@ -134,4 +166,51 @@ export function paresPorAgencia(
     out[sigla] = (out[sigla] ?? 0) + 1;
   }
   return out;
+}
+
+/**
+ * SÓ quem falta. É o filtro mais importante da escrita, e o motivo é do `postgrest`.
+ *
+ * ⚠️ O upsert usa a UNIÃO das colunas do lote com `defaultToNull`: uma coluna ausente em qualquer
+ * linha do lote vira **NULL na linha existente**. Reenviar quem já respondeu portanto não é
+ * inofensivo — apaga `motivo_nao_voto` de um `Ausente` lido do documento e o transforma em ausência
+ * sem motivo. Este filtro é a diferença entre completar e DANIFICAR.
+ */
+export function apenasQuemFalta<T extends { diretor_id: string }>(
+  linhas: readonly T[],
+  jaResponderam: Iterable<string>,
+): T[] {
+  const responderam = new Set(jaResponderam);
+  return linhas.filter((l) => !responderam.has(l.diretor_id));
+}
+
+/**
+ * O PORTÃO POR ITEM: só recebe voto quem o DOCUMENTO nomeia como presente.
+ *
+ * ═══ Por que não é o gabarito ═══
+ * O gabarito certificado cobre 79ª/81ª/83ª e 1.024ª/264ª. Os primeiros alvos desta escrita são a
+ * **84ª e a 86ª** (José Fernando com 1 voto em 56 itens, Luiz com 1 em 37) — que gabarito nenhum
+ * confere. Um portão que consulta um gabarito vazio é um portão aberto.
+ *
+ * ═══ Por que os presentes ═══
+ * A Fase 20 mediu o preço de inferir pelo MANDATO: na 79ª ROP o preâmbulo nomeia Roger e Tasso, e o
+ * roster de mandato devolve Caio Mário no lugar deles — voto gravado no nome ERRADO, que se propaga
+ * por todas as métricas parecendo legítimo. O preâmbulo é a única evidência POR ITEM de quem estava
+ * na sala, e é ela que autoriza.
+ *
+ * ⚠️ Documento sem preâmbulo casado barra TODOS: é o lado seguro. Voto ausente se vê; voto errado
+ * não.
+ */
+export function paresAutorizadosPeloDocumento(input: {
+  faltando: readonly string[];
+  presentesNoDocumento: readonly string[];
+}): { autorizados: string[]; barrados: string[] } {
+  if (input.presentesNoDocumento.length === 0) {
+    return { autorizados: [], barrados: [...input.faltando] };
+  }
+  const presentes = new Set(input.presentesNoDocumento);
+  return {
+    autorizados: input.faltando.filter((id) => presentes.has(id)),
+    barrados: input.faltando.filter((id) => !presentes.has(id)),
+  };
 }
