@@ -146,3 +146,58 @@ describe("etapa216 · e a origem do defeito ficou fechada: os quatro pontos usam
     expect(deriveSerie("1178")).toBeNull();
   });
 });
+
+describe("etapa216 · a migration do passivo: preenche, e NUNCA apaga", () => {
+  const MIG_CRU = ler("supabase/migrations/20260930120000_reunioes_serie_passivo.sql");
+  const MIG = MIG_CRU.replace(/--[^\n]*/g, " ");
+
+  it("⚠️ não apaga nem funde reunião — colisão vira LISTA, não DELETE", () => {
+    /**
+     * `deliberacoes.reuniao_id` aponta para estas linhas. Fundir é decisão do usuário: apagar aqui
+     * seria escolher por ele, em silêncio, dentro de uma migration que ele cola no editor.
+     */
+    expect(MIG, "a migration passou a apagar reunião").not.toMatch(/DELETE\s+FROM/i);
+    expect(MIG, "nem a religar reuniao_id por conta própria").not.toMatch(/UPDATE\s+public\.deliberacoes/i);
+  });
+
+  it("os três UPDATEs só tocam `serie IS NULL` — idempotência por construção", () => {
+    const updates = (MIG.match(/UPDATE public\.reunioes r/g) ?? []).length;
+    expect(updates).toBe(3);
+    expect((MIG.match(/WHERE r\.serie IS NULL/g) ?? []).length).toBe(3);
+  });
+
+  it("⚠️ cada um tem guarda de DESTINO OCUPADO — senão o índice único aborta a migration", () => {
+    const guardas = (MIG.match(/COALESCE\(irma\.serie, ''\) = e\.alvo/g) ?? []).length;
+    expect(guardas, "sem a guarda, uma duplicata antiga derruba tudo com 23505").toBe(3);
+  });
+
+  it("⚠️ a ANTT fica FORA da faixa e do tipo — só título decide lá", () => {
+    // Os três UPDATEs, um a um: contar no arquivo inteiro não diz QUAL bloco tem qual filtro.
+    const blocos = MIG.split("WITH evidencia AS (").slice(1);
+    expect(blocos.length, "a migration deixou de ter três blocos de evidência").toBe(3);
+    const [porTitulo, porFaixa, porTipo] = blocos;
+    expect(porTitulo, "o título vale para todas — é o que a fonte escreveu").not.toMatch(/a\.sigla/);
+    expect(porFaixa, "a faixa passou a valer fora da ARTESP").toMatch(/a\.sigla = 'ARTESP'/);
+    expect(porTipo, "a ANTT passou a ser resolvida por tipo_reuniao").toMatch(/a\.sigla <> 'ANTT'/);
+  });
+
+  it("⚠️ a série vinda da FAIXA é marcada como inferida", () => {
+    // Inferência sem marca vira fato: quem ler a tabela depois não distingue o que a fonte disse do
+    // que nós deduzimos.
+    expect(MIG).toMatch(/'serie_inferida_por', 'faixa'/);
+  });
+
+  it("é transacional, recarrega o schema e não cria função nem temp table", () => {
+    expect(MIG).toMatch(/^BEGIN;$/m);
+    expect(MIG).toMatch(/^COMMIT;$/m);
+    expect(MIG).toMatch(/NOTIFY pgrst, 'reload schema'/);
+    expect(MIG, "a lição do iris_seed_director").not.toMatch(/CREATE (OR REPLACE )?FUNCTION/i);
+    expect(MIG, "a lição da v1 da Fase 35").not.toMatch(/CREATE\s+(?:TEMP|TEMPORARY)\s+TABLE/i);
+  });
+
+  it("e a CONFERÊNCIA cobra o aceite ligado ao teto do código", () => {
+    expect(MIG_CRU).toMatch(/SALTO_MAXIMO_DA_SERIE/);
+    expect(MIG_CRU, "as colisões precisam de consulta própria").toMatch(/HAVING COUNT\(\*\) > 1/);
+    expect(MIG_CRU, "e o que ficou sem série tem de ser contado").toMatch(/sem_serie/);
+  });
+});
