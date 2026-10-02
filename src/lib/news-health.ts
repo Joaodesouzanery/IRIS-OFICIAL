@@ -55,9 +55,18 @@ export type HealthSource = {
   latest_official_publicado_em?: string | null;
   /** A mais nova que NÓS temos — exibida ao lado da da fonte, para o atraso ser verificável. */
   latest_publicado_em?: string | null;
+  /**
+   * A fonte respondeu com uma página de VERIFICAÇÃO ANTI-ROBÔ (CAPTCHA/WAF) — ver
+   * `looksLikeChallenge`. Verificado ao vivo contra a ANAC (01/10/2026): HTTP 200, sem título,
+   * cookies de WAF, corpo de CAPTCHA de imagem. Dois sinais porque sobrevivem a lacunas diferentes:
+   * `latest_blocked_at` persiste além da rotação de runs; `blocked_now` cobre a corrida entre a
+   * rodada mais recente e a escrita do metadata.
+   */
+  latest_blocked_at?: string | null;
+  blocked_now?: boolean;
 };
 
-export type FonteEstado = "erro" | "sem_itens" | "atrasada" | "nao_gravou" | "quieta" | "nunca" | "ok";
+export type FonteEstado = "bloqueada" | "erro" | "sem_itens" | "atrasada" | "nao_gravou" | "quieta" | "nunca" | "ok";
 
 /**
  * Estado HONESTO de uma fonte:
@@ -80,6 +89,14 @@ export type FonteEstado = "erro" | "sem_itens" | "atrasada" | "nao_gravou" | "qu
  * vira afirmação sobre a AGÊNCIA quando é comparado com a agência — é o que `is_stale` faz.
  */
 export function classificarFonte(s: HealthSource): FonteEstado {
+  /**
+   * ⚠️ "bloqueada" é checada ANTES de "erro" e de "nunca". É a mais específica e a mais
+   * ACIONÁVEL das classificações: diferente de "erro" (que soa como "nosso parser quebrou") e
+   * diferente de "nunca" (que manda "rode Coletar Notícias" — reprocessar não resolve um CAPTCHA).
+   * Vale tanto para o run mais recente (`blocked_now`) quanto para o metadata persistido
+   * (`latest_blocked_at`), porque o metadata sobrevive a mais rodadas que a janela de runs.
+   */
+  if (s.blocked_now || s.latest_blocked_at) return "bloqueada";
   if (s.active_error) return "erro";
   if (s.total === 0) return (s.latest_links_found ?? 0) > 0 ? "nao_gravou" : "nunca";
   const dias = s.dias_sem_publicar;
@@ -104,5 +121,5 @@ export function quietudeConferida(s: HealthSource): boolean {
 
 export function erroCurto(msg: string | null | undefined): string {
   if (!msg) return "erro";
-  return msg.replace(/^\[transitorio\]\s*/i, "").slice(0, 60);
+  return msg.replace(/^\[transitorio\]\s*/i, "").replace(/^\[bloqueado_antirobo\]\s*/i, "").slice(0, 60);
 }

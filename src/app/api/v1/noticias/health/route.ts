@@ -66,28 +66,66 @@ export async function GET(req: NextRequest) {
     });
   }
 
-  const [{ data, error }, { data: runs }] = await Promise.all([
-    db
-      .from("regulatory_news")
-      .select("agencia_sigla, titulo, url, publicado_em, last_seen_at")
-      .in("agencia_sigla", siglas)
-      .order("publicado_em", { ascending: false, nullsFirst: false })
-      .order("last_seen_at", { ascending: false })
-      // 2000 (não 500): com ~13 agências, 500 podia empurrar as linhas de uma fonte antiga p/
-      // fora do topo global → total=0 → falso "nunca coletada". 2000 cobre folgado e é bounded.
-      .limit(2000),
-    db
-      .from("regulatory_news_collection_runs")
-      .select("site_id, trigger_type, batch_offset, links_detectados, itens_processados, itens_pendentes, imagens_encontradas, imagens_ausentes, imagens_com_falha, status, error_message, created_at")
-      .order("created_at", { ascending: false })
-      .limit(100),
+  /**
+   * ⚠️ PER AGÊNCIA, e não mais um `.limit(2000)` GLOBAL — é a mesma forma de erro que a Fase 24b já
+   * pagou cinco vezes ("`.limit(N)` grande não pagina; o PostgREST corta e devolve isso em silêncio").
+   *
+   * Aqui o defeito era mais sutil: o `.limit(2000)` ordenava por `publicado_em DESC` em TODAS as
+   * agências juntas. Uma fonte quieta (poucas notícias, publicação antiga) tem suas linhas empurradas
+   * para fora do topo-2000 GLOBAL por agências mais ativas — e `total = 0` virava "nunca coletada",
+   * mandando "rode Coletar Notícias" para uma fonte que na verdade TEM histórico.
+   *
+   * ⚠️ MEDIDO (30/09/2026): a ANAC tinha listagem OK, 71 links válidos e notícia do PRÓPRIO DIA —
+   * e a tela dizia "Fonte configurada sem nenhuma notícia". Esta era a segunda causa plausível que eu
+   * não pude confirmar sem o banco (a primeira, o orçamento de tempo na coleta, segue valendo
+   * paralelamente); este conserto elimina a causa que DEPENDE do `/health`, de qualquer forma.
+   *
+   * `{ count: "exact" }` no select devolve a contagem TOTAL da agência (sem o `.limit` cortá-la) ao
+   * lado das linhas — uma chamada por agência, todas em paralelo, não serializadas.
+   */
+  const [porAgencia, runsPorSite] = await Promise.all([
+    Promise.all(siglas.map(async (sigla) => {
+      const { data: rows, count, error } = await db
+        .from("regulatory_news")
+        .select("agencia_sigla, titulo, url, publicado_em, last_seen_at", { count: "exact" })
+        .eq("agencia_sigla", sigla)
+        .order("publicado_em", { ascending: false, nullsFirst: false })
+        .order("last_seen_at", { ascending: false })
+        // 100 por agência cobre folgado o que a tela usa (último item + notícias dos últimos 7
+        // dias) — nenhuma destas fontes publica mais que isso numa semana.
+        .limit(100);
+      return { sigla, rows: rows ?? [], total: count ?? 0, error };
+    })),
+    /**
+     * ⚠️ MESMA FORMA DE ERRO, segunda ocorrência no MESMO arquivo: `.limit(100)` aqui também era
+     * GLOBAL — os runs mais recentes de QUALQUER site, não de cada um. Com ~13 agências rodando em
+     * rotação, 100 runs se esgotam rápido entre OUTRAS agências, e o último run de uma fonte quieta
+     * saía da janela: `latestRun` virava `null` (ou um run antigo) mesmo que ela tivesse rodado hoje
+     * — e é exatamente o `latestRun` que alimenta `latest_links_found`/`active_error`/`blocked_now`.
+     * Por site, com um teto pequeno por site (20 cobre folgado o que a tela usa: o mais recente, o
+     * último sucesso, o último erro).
+     */
+    Promise.all(sources.map(async (source) => {
+      const { data } = await db
+        .from("regulatory_news_collection_runs")
+        .select("site_id, trigger_type, batch_offset, links_detectados, itens_processados, itens_pendentes, imagens_encontradas, imagens_ausentes, imagens_com_falha, status, error_message, created_at")
+        .eq("site_id", source.site_id)
+        .order("created_at", { ascending: false })
+        .limit(20);
+      return data ?? [];
+    })),
   ]);
+  const runs = runsPorSite.flat();
 
-  if (error) return NextResponse.json({ error: "Erro ao verificar saude das noticias" }, { status: 500 });
+  const erroDeAlgumaAgencia = porAgencia.find((p) => p.error)?.error;
+  if (erroDeAlgumaAgencia) return NextResponse.json({ error: "Erro ao verificar saude das noticias" }, { status: 500 });
+  const indicePorAgencia = new Map(porAgencia.map((p) => [p.sigla, p]));
 
   const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
   const healthSources = sources.map((source) => {
-    const rows = (data ?? []).filter((item) => item.agencia_sigla === source.agencia_sigla);
+    const entrada = indicePorAgencia.get(source.agencia_sigla);
+    const rows = entrada?.rows ?? [];
+    const total = entrada?.total ?? 0;
     const latestBySeen = rows
       .map((item) => item.last_seen_at)
       .filter(Boolean)
@@ -137,7 +175,7 @@ export async function GET(req: NextRequest) {
       : null;
     return {
       ...source,
-      total: rows.length,
+      total,
       dias_sem_publicar: diasSemPublicar,
       last_seen_at: latestBySeen,
       latest_last_seen_at: latestBySeen,
@@ -156,6 +194,16 @@ export async function GET(req: NextRequest) {
       // rodou VAZIO, última tentativa (qualquer), e nº de links do último run. links_found é
       // null quando DESCONHECIDO (sem run/metadata) — o banner só acusa "0 links" se comprovado.
       latest_empty_at: readString(source.metadata, "news_last_empty_at"),
+      /**
+       * ⚠️ O site devolveu uma página de VERIFICAÇÃO ANTI-ROBÔ (CAPTCHA/WAF) em vez do conteúdo real
+       * — ver `looksLikeChallenge`/`BLOQUEIO_ANTIRROBO_MSG`. É uma TERCEIRA causa de zero, distinta
+       * de "sem link válido" e de "a fonte não publicou": aqui a fonte TEM conteúdo, só não foi
+       * servido a nós. Dois sinais, porque cada um sobrevive a uma lacuna diferente do outro:
+       * `metadata` sobrevive à rotação de runs (`.limit(100)`); o run mais recente pega o caso em que
+       * esta rodada bloqueou mas a metadata ainda não foi persistida (corrida entre leitura e escrita).
+       */
+      latest_blocked_at: readString(source.metadata, "news_last_blocked_at"),
+      blocked_now: /^\[bloqueado_antirobo\]/i.test(latestRun?.error_message ?? ""),
       latest_collection_at: readString(source.metadata, "news_last_collection_at"),
       latest_links_found: typeof latestRun?.links_detectados === "number"
         ? latestRun.links_detectados

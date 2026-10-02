@@ -49,6 +49,13 @@ export interface NewsletterDocumentInput {
    * a chave pela qual a notícia é encontrada.
    */
   newsletter_titulos?: Record<string, string>;
+  /**
+   * Título JUSTIFICADO nesta edição — mesmo molde do título editado: mapa `{id_da_noticia: true}`.
+   * `true` aplica `text-align: justify` ao bloco de título; ausente ou `false` mantém o alinhamento
+   * padrão (à esquerda). É independente de `newsletter_titulos`: dá para justificar o título
+   * ORIGINAL sem precisar reescrevê-lo, e vice-versa.
+   */
+  newsletter_titulos_justificados?: Record<string, boolean>;
   generatedAt?: Date;
   baseUrl?: string;
   documento_tipo?: NewsletterDocumentType;
@@ -331,7 +338,7 @@ function renderEmailHero(item: RegulatoryNews, input: NewsletterDocumentInput, t
         ${img ? `<tr><td style="padding:0;"><img src="${escapeHtml(img)}" alt="" width="544" style="display:block;width:100%;max-width:544px;height:auto;border-radius:12px 12px 0 0;"/></td></tr>` : ""}
         <tr><td style="padding:22px;">
           ${tag ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1.8px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
-          <h2 style="margin:0 0 10px;font-family:${SERIF_STACK};font-size:26px;font-weight:800;line-height:1.12;color:${t.text};">${escapeHtml(newsletterTituloOverride(item, input.newsletter_titulos) ?? item.titulo)}</h2>
+          <h2 style="margin:0 0 10px;font-family:${SERIF_STACK};font-size:26px;font-weight:800;line-height:1.12;color:${t.text};${tituloJustificadoAttr(item, input.newsletter_titulos_justificados)}">${escapeHtml(newsletterTituloOverride(item, input.newsletter_titulos) ?? item.titulo)}</h2>
           ${body ? `<p style="margin:0 0 16px;font-family:${SANS_STACK};font-size:15px;line-height:1.55;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
           ${item.url
             ? emailButton(item.url, "Ler a matéria &rarr;", t)
@@ -355,7 +362,7 @@ function renderEmailNewsRow(item: RegulatoryNews, input: NewsletterDocumentInput
   const spacer = img ? `<td width="14" style="font-size:0;line-height:0;">&nbsp;</td>` : "";
   const textCell = `<td style="padding:0;vertical-align:top;">
           ${tag ? `<p style="margin:0 0 5px;font-family:${SANS_STACK};font-size:9px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase;color:${t.gold};">${escapeHtml(tag)}</p>` : ""}
-          <h3 style="margin:0 0 6px;font-family:${SERIF_STACK};font-size:17px;font-weight:800;line-height:1.18;color:${t.text};">${escapeHtml(newsletterTituloOverride(item, input.newsletter_titulos) ?? item.titulo)}</h3>
+          <h3 style="margin:0 0 6px;font-family:${SERIF_STACK};font-size:17px;font-weight:800;line-height:1.18;color:${t.text};${tituloJustificadoAttr(item, input.newsletter_titulos_justificados)}">${escapeHtml(newsletterTituloOverride(item, input.newsletter_titulos) ?? item.titulo)}</h3>
           ${body ? `<p style="margin:0 0 8px;font-family:${SANS_STACK};font-size:13px;line-height:1.5;color:${t.muted};">${escapeHtml(body)}</p>` : ""}
           ${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" style="font-family:${SANS_STACK};font-size:10px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:${t.gold};text-decoration:none;">Ler a matéria &rarr;</a>` : ""}
         </td>`;
@@ -557,10 +564,10 @@ function renderNewsletterPage(items: RegulatoryNews[], date: string, logo: strin
       <span class="hero-logo-frame"><img src="${escapeHtml(logo)}" alt="IRIS" class="hero-logo"/></span>
     </section>
     <div class="body">
-      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl, input.newsletter_textos, input.newsletter_titulos)}</article>
+      <article class="col-main">${renderNewsletterMainArticle(items[0], input.baseUrl, input.newsletter_textos, input.newsletter_titulos, input.newsletter_titulos_justificados)}</article>
       <aside class="col-side">
-        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0, input.newsletter_textos, input.newsletter_titulos)}
-        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1, input.newsletter_textos, input.newsletter_titulos)}
+        ${renderNewsletterSideArticle(items[1], input.baseUrl, 0, input.newsletter_textos, input.newsletter_titulos, input.newsletter_titulos_justificados)}
+        ${renderNewsletterSideArticle(items[2], input.baseUrl, 1, input.newsletter_textos, input.newsletter_titulos, input.newsletter_titulos_justificados)}
       </aside>
     </div>
     ${renderSigaOIrisPrint()}
@@ -665,6 +672,7 @@ function renderNewsletterMainArticle(
   baseUrl?: string,
   articleTexts?: Record<string, string>,
   articleTitles?: Record<string, string>,
+  articleTitlesJustify?: Record<string, boolean>,
 ) {
   const title = newsletterTituloOverride(item, articleTitles)
     ?? item?.titulo
@@ -680,7 +688,7 @@ function renderNewsletterMainArticle(
   return `
     <div>
       <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
-      <h2 class="main-title">${escapeHtml(title)}</h2>
+      <h2 class="main-title" style="${tituloJustificadoAttr(item, articleTitlesJustify)}">${escapeHtml(title)}</h2>
     </div>
     ${item?.imagem_url ? `<div class="main-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
     <div class="main-body">${renderParagraphs(body, item?.imagem_url ? 7 : 9, item?.imagem_url ? 320 : 350)}</div>
@@ -694,6 +702,7 @@ function renderNewsletterSideArticle(
   index = 0,
   articleTexts?: Record<string, string>,
   articleTitles?: Record<string, string>,
+  articleTitlesJustify?: Record<string, boolean>,
 ) {
   if (!item) return "";
   const title = newsletterTituloOverride(item, articleTitles) ?? item?.titulo ?? "Selecione uma noticia secundaria";
@@ -706,7 +715,7 @@ function renderNewsletterSideArticle(
   return `<div class="side-art ${item.imagem_url ? "" : "no-image"}">
     ${item.imagem_url ? `<div class="side-img">${renderArticleImage(item, baseUrl, title)}</div>` : ""}
     <span class="art-tag">${escapeHtml(formatArticleTag(item))}</span>
-    <h3 class="side-title">${escapeHtml(title)}</h3>
+    <h3 class="side-title" style="${tituloJustificadoAttr(item, articleTitlesJustify)}">${escapeHtml(title)}</h3>
     <div class="side-excerpt">${renderParagraphs(body, item.imagem_url ? 5 : 6, item.imagem_url ? 240 : 280)}</div>
     ${item?.url ? `<a href="${escapeHtml(item.url)}" class="side-link">Fonte oficial &#8599;</a>` : `<a class="side-link">Fonte oficial &#8599;</a>`}
   </div>`;
@@ -1182,6 +1191,22 @@ function newsletterTituloOverride(
   if (!item?.id || !articleTitles) return null;
   const valor = articleTitles[item.id];
   return typeof valor === "string" && valor.trim().length > 0 ? valor.trim() : null;
+}
+
+/**
+ * O título desta notícia foi marcado para JUSTIFICAR nesta edição?
+ *
+ * ⚠️ Devolve o atributo CSS pronto (`" text-align: justify;"` ou `""`), e não um booleano, porque os
+ * quatro pontos de render (v1 e-mail principal/secundário, v2 principal/lateral) só precisam
+ * CONCATENAR — nenhum precisa decidir de novo o que o `true`/`false` significa. Uma função, uma
+ * decisão; os quatro pontos deixam de poder divergir sobre o que "justificado" quer dizer.
+ */
+function tituloJustificadoAttr(
+  item: RegulatoryNews | undefined,
+  titulosJustificados: Record<string, boolean> | undefined,
+): string {
+  if (!item?.id || !titulosJustificados?.[item.id]) return "";
+  return " text-align: justify;";
 }
 
 function newsletterArticleOverride(item: RegulatoryNews | undefined, articleTexts: Record<string, string> | undefined, maxLength: number) {

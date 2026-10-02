@@ -174,6 +174,12 @@ async function collect(req: NextRequest) {
     // que é o que o health usa para separar "fonte quieta" de "coletor não traz nada". QA jul/2026.
     const { hadItems, allEmpty, status, linksFound } = scoreSourceReports(reports);
     const error = reports.find((report) => report.status === "error")?.error ?? null;
+    /**
+     * ⚠️ CAPTCHA/WAF é "empty" (não dispara o alarme vermelho de `status:'error'`), então
+     * `ultimo_erro` — que só é escrito para `status==='error'` — nunca carregaria este sinal. Vai
+     * para o `metadata`, no mesmo molde de `news_last_empty_at`, e é o que o `/health` lê.
+     */
+    const blocked = reports.some((report) => report.blocked === true);
     return db
       .from("monitoramento_sites")
       .update({
@@ -197,6 +203,7 @@ async function collect(req: NextRequest) {
           // parte para o health não confundir com sucesso. Com links=0 → listagem provável quebrada.
           news_last_empty_at: allEmpty ? new Date().toISOString() : currentMetadata.news_last_empty_at,
           news_last_links_found: linksFound,
+          news_last_blocked_at: blocked ? new Date().toISOString() : currentMetadata.news_last_blocked_at,
           news_last_fresh_collection_at: freshReport ? new Date().toISOString() : currentMetadata.news_last_fresh_collection_at,
           news_last_collection_mode: automatic
             ? backlogReport ? "combined" : "fresh"
@@ -643,9 +650,16 @@ async function recordCollectionRuns(
     imagens_ausentes: report.images_absent ?? 0,
     imagens_com_falha: report.images_failed ?? 0,
     status: report.status,
-    // Prefixa erros transitórios (rate-limit/render) para o health route não pintar
-    // a fonte de vermelho quando ela já tem notícias recentes (será re-tentada).
-    error_message: report.error ? (report.transient ? `[transitorio] ${report.error}` : report.error) : null,
+    /**
+     * ⚠️ `[bloqueado_antirobo]` tem PRECEDÊNCIA sobre `[transitorio]` — são prefixos mutuamente
+     * exclusivos no mesmo ponto de decisão, e o motivo é o diagnóstico que cada um autoriza: o
+     * genérico diz "será re-tentado"; este diz "a fonte exige verificação humana (CAPTCHA/WAF) — a
+     * fonte TEM conteúdo, só não foi servido a nós". Perder essa distinção aqui faria o `/health`
+     * (que lê este texto) voltar a confundir os dois.
+     */
+    error_message: report.error
+      ? (report.blocked ? `[bloqueado_antirobo] ${report.error}` : report.transient ? `[transitorio] ${report.error}` : report.error)
+      : null,
     ...tele,
   }));
   const { error } = await db.from("regulatory_news_collection_runs").insert(rows);

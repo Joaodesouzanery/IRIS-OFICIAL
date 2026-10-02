@@ -320,6 +320,16 @@ export function looksLikeChallenge(html: string): boolean {
   if (/Pardon Our Interruption/i.test(html)) return true;
   if (/Request unsuccessful\.?\s*Incapsula incident ID|Attention Required!\s*\|\s*Cloudflare/i.test(html)) return true;
   if (/\bcf-browser-verification\b|\bchallenge-platform\b/i.test(html)) return true;
+  /**
+   * F5 BIG-IP ASM — VERIFICADO ao vivo contra a ANAC (01/10/2026): HTTP 200, 43-44 KB, SEM título,
+   * cookies `TS...=` (nome de cookie do produto), e o CORPO é um CAPTCHA de imagem de verdade —
+   * "What code is in the image?", botão `id="jar"`, campo `id="ans"`, e o rodapé
+   * "Your support ID is: <número>". Não é um sensor que roda em toda página (o caso Incapsula da
+   * Fase 17): aqui o conteúdo REAL foi substituído pelo desafio — a mesma URL, pedida de novo
+   * segundos depois, devolveu o MESMO desafio. "Your support ID is:" é o marcador terminal do
+   * produto: não aparece em página de conteúdo nenhuma, só na página de bloqueio.
+   */
+  if (/Your support ID is:/i.test(html)) return true;
   // ═══ Fase 17 — o marcador de SENSOR não é marcador de DESAFIO ════════════
   // MEDIDO em 04/09/2026 contra o portal ao vivo: a listagem de reuniões da ARTESP responde 200
   // com 196 KB de conteúdo real (129× "Deliberação", 264 itens extraídos pelo nosso parser,

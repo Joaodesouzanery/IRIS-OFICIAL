@@ -54,6 +54,8 @@ export interface RascunhoDeNoticias {
   cache: Record<string, NoticiaNoRascunho>;
   newsletterArticleTexts: Record<string, string>;
   newsletterArticleTitles: Record<string, string>;
+  /** Títulos marcados para JUSTIFICAR nesta edição — só entradas `true` viajam. */
+  newsletterArticleTitleJustify: Record<string, boolean>;
   newsletterImagens: Record<string, string | null>;
   minutoTextos: string;
   socialPosts: unknown[];
@@ -65,6 +67,7 @@ export interface EstadoDaTela {
   cache: Record<string, NoticiaNoRascunho>;
   newsletterArticleTexts: Record<string, string>;
   newsletterArticleTitles: Record<string, string>;
+  newsletterArticleTitleJustify: Record<string, boolean>;
   newsletterImagens: Record<string, string | null>;
   minutoTextos: string;
   socialPosts: unknown[];
@@ -112,6 +115,7 @@ export function montarRascunho(estado: EstadoDaTela, agora: Date): RascunhoDeNot
     cache,
     newsletterArticleTexts: sob(estado.newsletterArticleTexts),
     newsletterArticleTitles: sob(estado.newsletterArticleTitles),
+    newsletterArticleTitleJustify: sob(estado.newsletterArticleTitleJustify),
     newsletterImagens: sob(estado.newsletterImagens),
     minutoTextos: estado.minutoTextos,
     socialPosts: estado.socialPosts,
@@ -156,6 +160,11 @@ export function lerRascunho(cru: string | null | undefined, agora: Date): Rascun
     cache: mapa<NoticiaNoRascunho>(r.cache),
     newsletterArticleTexts: mapa<string>(r.newsletterArticleTexts),
     newsletterArticleTitles: mapa<string>(r.newsletterArticleTitles),
+    // ⚠️ Filtrado a `=== true` — a produção (`montarRascunho`/`toggleNewsletterArticleTitleJustify`)
+    // só grava `true`; um `false` sobrevivente de um formato antigo não deve voltar como "justificado".
+    newsletterArticleTitleJustify: Object.fromEntries(
+      Object.entries(mapa<unknown>(r.newsletterArticleTitleJustify)).filter(([, v]) => v === true),
+    ) as Record<string, boolean>,
     newsletterImagens: mapa<string | null>(r.newsletterImagens),
     minutoTextos: typeof r.minutoTextos === "string" ? r.minutoTextos : "",
     socialPosts: Array.isArray(r.socialPosts) ? r.socialPosts : [],

@@ -260,6 +260,12 @@ export default function NoticiasPage() {
    * não toca a notícia original (que segue sendo a chave de busca, dedupe e auditoria).
    */
   const [newsletterArticleTitles, setNewsletterArticleTitles] = useState<Record<string, string>>({});
+  /**
+   * JUSTIFICAR o bloco de título desta notícia nesta edição — independente do texto do título
+   * (dá para justificar o título ORIGINAL sem reescrevê-lo). Mesmo molde: mapa `{id: true}`, só
+   * entradas `true` viajam (ver `newsletterTitleJustifyOverrides`).
+   */
+  const [newsletterArticleTitleJustify, setNewsletterArticleTitleJustify] = useState<Record<string, boolean>>({});
   // Override de imagem por notícia no PDF (impressão): null = SEM imagem; string = URL trocada.
   const [newsletterImagens, setNewsletterImagens] = useState<Record<string, string | null>>({});
   const [imagemBusy, setImagemBusy] = useState<string | null>(null);
@@ -412,6 +418,9 @@ export default function NoticiasPage() {
     const src = healthData?.sources ?? [];
     const sortDias = (a: HealthSource, b: HealthSource) => (b.dias_sem_publicar ?? 0) - (a.dias_sem_publicar ?? 0);
     return {
+      // ⚠️ O site exige verificação anti-robô (CAPTCHA/WAF) — a fonte TEM conteúdo, só não foi
+      // servido a nós. Checado ANTES de tudo: nem "erro técnico" nem "rode Coletar" descrevem isto.
+      bloqueada: src.filter((s) => classificarFonte(s) === "bloqueada").sort(sortDias),
       // Coletor FALHANDO (erro técnico recente) — NÃO é "sem notícia".
       erro: src.filter((s) => classificarFonte(s) === "erro").sort(sortDias),
       // Coletor responde mas não acha artigos (0 links) — listagem provável mudou/indisponível.
@@ -551,6 +560,17 @@ export default function NoticiasPage() {
       return acc;
     }, {});
   }, [documentConfig.documentoTipo, newsletterArticleTitles, newsletterSelected]);
+  /**
+   * Mesmo molde de `newsletterTitleOverrides`, para a MARCAÇÃO de justificar — só quem está
+   * selecionado NESTA edição e marcado como `true` viaja; desmarcar remove, não manda `false`.
+   */
+  const newsletterTitleJustifyOverrides = useMemo(() => {
+    if (documentConfig.documentoTipo !== "newsletter_regulatoria") return {};
+    return newsletterSelected.reduce<Record<string, boolean>>((acc, item) => {
+      if (newsletterArticleTitleJustify[item.id]) acc[item.id] = true;
+      return acc;
+    }, {});
+  }, [documentConfig.documentoTipo, newsletterArticleTitleJustify, newsletterSelected]);
   const documentInput = useMemo(() => ({
     assunto: documentConfig.assunto,
     descricao: documentConfig.descricao,
@@ -559,6 +579,7 @@ export default function NoticiasPage() {
     noticias: selected,
     newsletter_textos: newsletterTextOverrides,
     newsletter_titulos: newsletterTitleOverrides,
+    newsletter_titulos_justificados: newsletterTitleJustifyOverrides,
     baseUrl,
     documento_tipo: documentConfig.documentoTipo,
     template_version: templateVersionFor(documentConfig.documentoTipo, documentConfig.templateVariant),
@@ -579,7 +600,7 @@ export default function NoticiasPage() {
    * disto (ver `eslint.config` e a `etapa214`): dependência faltando num memo que alimenta o que a
    * tela mostra não é estilo, é resultado errado.
    */
-  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, newsletterTitleOverrides, selected, socialPosts, eventosData, newsletterImagens]);
+  }), [baseUrl, documentConfig.assunto, documentConfig.descricao, documentConfig.destinatarios, documentConfig.documentoTipo, documentConfig.templateVariant, documentConfig.temas, minutoItems, minutoTextos, newsletterTextOverrides, newsletterTitleOverrides, newsletterTitleJustifyOverrides, selected, socialPosts, eventosData, newsletterImagens]);
   // Preview + "Copiar HTML do e-mail" = e-mail (table-based, p/ colar no cliente). "Copiar doc."
   // + "Imprimir PDF" = canvas (PDF bonito). O Minuto ignora a variante (é o mesmo teleprompter).
   const html = useMemo(() => buildRegulatoryNewsletterHtml(documentInput, "email"), [documentInput]);
@@ -651,6 +672,7 @@ export default function NoticiasPage() {
       }));
       setNewsletterArticleTexts(rascunho.newsletterArticleTexts);
       setNewsletterArticleTitles(rascunho.newsletterArticleTitles);
+      setNewsletterArticleTitleJustify(rascunho.newsletterArticleTitleJustify);
       setNewsletterImagens(rascunho.newsletterImagens);
       setSocialPosts(rascunho.socialPosts as SocialPostInput[]);
       if (rascunho.minutoTextos) {
@@ -671,6 +693,7 @@ export default function NoticiasPage() {
       cache: selectedNewsCache as Record<string, NoticiaNoRascunho>,
       newsletterArticleTexts,
       newsletterArticleTitles,
+      newsletterArticleTitleJustify,
       newsletterImagens,
       minutoTextos,
       socialPosts: socialPosts as unknown[],
@@ -692,6 +715,7 @@ export default function NoticiasPage() {
     selectedNewsCache,
     newsletterArticleTexts,
     newsletterArticleTitles,
+    newsletterArticleTitleJustify,
     newsletterImagens,
     minutoTextos,
     socialPosts,
@@ -793,6 +817,16 @@ export default function NoticiasPage() {
       if (!(id in prev)) return prev;
       const next = { ...prev };
       delete next[id];
+      return next;
+    });
+    setSavedEditionId(null);
+  }
+
+  function toggleNewsletterArticleTitleJustify(id: string) {
+    setNewsletterArticleTitleJustify((prev) => {
+      const next = { ...prev };
+      if (next[id]) delete next[id];
+      else next[id] = true;
       return next;
     });
     setSavedEditionId(null);
@@ -1004,6 +1038,14 @@ export default function NoticiasPage() {
       </div>
       {imagensFeedback && (
         <p className={cn("text-xs", reprocessarImagensMutation.isError ? "text-error" : "text-success")}>{imagensFeedback}</p>
+      )}
+      {fontesSaude.bloqueada.length > 0 && (
+        <div className="border border-error/30 bg-error/10 rounded-card px-3 py-2 text-xs text-error">
+          <strong>O site exige verificação humana (CAPTCHA)</strong> — a fonte TEM conteúdo, só não foi
+          servido a nós nesta tentativa:{" "}
+          {fontesSaude.bloqueada.map((s) => s.agencia_sigla).join(" · ")} — não é falha do coletor nem
+          silêncio da fonte; tente novamente mais tarde.
+        </div>
       )}
       {fontesSaude.erro.length > 0 && (
         <div className="border border-error/30 bg-error/10 rounded-card px-3 py-2 text-xs text-error">
@@ -1616,6 +1658,22 @@ export default function NoticiasPage() {
                                 Título original
                               </button>
                             ) : null}
+                            {/* Alinhamento do BLOCO de título (texto justificado) — independente de ter
+                                sido editado ou não. Vale para o e-mail e o PDF/impressão. */}
+                            <button
+                              type="button"
+                              className={cn(
+                                "px-2 py-1 text-[10px] whitespace-nowrap rounded-md border transition-colors",
+                                newsletterArticleTitleJustify[item.id]
+                                  ? "border-brand bg-brand/10 text-brand font-semibold"
+                                  : "btn-secondary",
+                              )}
+                              aria-pressed={Boolean(newsletterArticleTitleJustify[item.id])}
+                              onClick={() => toggleNewsletterArticleTitleJustify(item.id)}
+                              title="Justificar o título (alinhar os dois lados) no e-mail e no PDF"
+                            >
+                              Justificar
+                            </button>
                           </div>
                           <textarea
                             className="input min-h-28 text-xs leading-relaxed"

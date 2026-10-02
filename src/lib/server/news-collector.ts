@@ -5,6 +5,7 @@ import { hasBudget } from "@/lib/server/time-budget";
 import { isPublicUrl } from "@/lib/server/url-guard";
 import { tryRenderHtmlFallback } from "@/lib/server/headless";
 import { parseHtml, metaContent, jsonLdBlocks, safeQuery, safeQueryAll, firstAttrValue } from "@/lib/server/html-dom";
+import { looksLikeChallenge } from "@/lib/server/monitoring";
 
 export type RegulatoryNewsStatus = "novo" | "selecionado" | "ignorado" | "arquivado";
 
@@ -92,6 +93,14 @@ export interface NewsSourceCollectReport {
   /** Listagem efetivamente usada quando a configurada falhou/zerou e uma IRMÃ
    *  (ex.: noticias-defeso-eleitoral) respondeu. Sinal de que a seção mudou. */
   effective_url?: string;
+  /**
+   * ⚠️ A listagem respondeu HTTP 200 com uma página de VERIFICAÇÃO ANTI-ROBÔ (CAPTCHA/WAF), não com
+   * o conteúdo real — ver `looksLikeChallenge`. Verificado ao vivo contra a ANAC (01/10/2026): o
+   * site exige resolver um CAPTCHA de imagem antes de mostrar a listagem. Isto NÃO é "a fonte não
+   * publicou" nem "o coletor não traz nada" (as duas leituras que o painel já tinha) — é uma TERCEIRA
+   * causa, e sem este campo ela cairia no mesmo "sem link válido" genérico das outras duas.
+   */
+  blocked?: boolean;
 }
 
 // Uma falha é "transitória" quando é de rede/limite/instabilidade (não um problema
@@ -302,6 +311,14 @@ const RE_SECAO_DE_NOTICIAS = new RegExp(
  */
 const PISO_DE_LISTAGEM = 10;
 
+/**
+ * A listagem respondeu com uma página de VERIFICAÇÃO ANTI-ROBÔ — não é "zero link encontrado", é
+ * "o conteúdo real nunca chegou a ser servido". Distinta de `EMPTY_LISTING_MSG` porque o diagnóstico
+ * é outro: repetir a coleta não ajuda sozinho (medido: a MESMA URL, pedida de novo segundos depois,
+ * devolveu o MESMO desafio) — é uma barreira do site, não do nosso parser.
+ */
+const BLOQUEIO_ANTIRROBO_MSG = "Pagina de verificacao anti-robo (CAPTCHA/WAF) — a listagem real nao foi servida";
+
 // Sentinela: a listagem RESPONDEU mas não expôs nenhum link de artigo (blackout eleitoral
 // / login-wall / seção movida) — é "vazio", não uma exceção de rede. Distinguido no catch.
 const EMPTY_LISTING_MSG = "Nenhum link de noticia valido encontrado na fonte oficial";
@@ -325,13 +342,21 @@ async function collectNewsSource(
     // Sub-seções anotadas ao longo das listagens visitadas — a via de descoberta que não depende
     // de adivinhar o nome da pasta nova. Ver `recolherSecoes`.
     const secoesVistas: string[] = [];
+    /** URLs de listagem que devolveram um CAPTCHA/WAF em vez do conteúdo real. Ver `BLOQUEIO_ANTIRROBO_MSG`. */
+    const bloqueios: string[] = [];
     try {
-      links = await fetchSourceLinks(source, discoveryLimit, secoesVistas);
-      // O gov.br às vezes serve uma página DEGRADADA (HTTP 200 mas "magra", 0 links)
-      // ao IP de datacenter (soft rate-limit) — re-tenta uma vez após pausa.
-      if (links.length === 0 && source.strategy === "govbr") {
+      links = await fetchSourceLinks(source, discoveryLimit, secoesVistas, bloqueios);
+      /**
+       * O gov.br às vezes serve uma página DEGRADADA (HTTP 200 mas "magra", 0 links) ao IP de
+       * datacenter (soft rate-limit) — re-tenta uma vez após pausa.
+       *
+       * ⚠️ MAS NÃO quando já foi identificado como CAPTCHA/WAF: medido que a MESMA URL, pedida de
+       * novo segundos depois, devolveu o MESMO desafio — repetir aqui só gastaria mais um fetch sob
+       * o estrangulamento de 900ms/host sem chance real de resultado diferente.
+       */
+      if (links.length === 0 && source.strategy === "govbr" && bloqueios.length === 0) {
         await new Promise((resolve) => setTimeout(resolve, 1500));
-        links = await fetchSourceLinks(source, discoveryLimit, secoesVistas);
+        links = await fetchSourceLinks(source, discoveryLimit, secoesVistas, bloqueios);
       }
     } catch (err) {
       primaryError = err;
@@ -354,7 +379,7 @@ async function collectNewsSource(
       let melhor: { src: NewsSourceConfig; links: NewsLink[] } | null = null;
       for (const variant of variants) {
         if (!hasBudget(deep?.deadlineAt, 15_000)) break;
-        const variantLinks = await fetchSourceLinks(variant, discoveryLimit, secoesVistas).catch(() => [] as NewsLink[]);
+        const variantLinks = await fetchSourceLinks(variant, discoveryLimit, secoesVistas, bloqueios).catch(() => [] as NewsLink[]);
         if (!melhor || variantLinks.length > melhor.links.length) melhor = { src: variant, links: variantLinks };
         if (variantLinks.length >= PISO_DE_LISTAGEM) break;
       }
@@ -365,7 +390,7 @@ async function collectNewsSource(
       // fallback. Tolera 404 em silêncio — a irmã pode não existir.
       const defeso = variants.find((v) => v.url.includes("noticias-defeso-eleitoral"));
       if (defeso) {
-        const defesoLinks = await fetchSourceLinks(defeso, Math.min(discoveryLimit, 24)).catch(() => [] as NewsLink[]);
+        const defesoLinks = await fetchSourceLinks(defeso, Math.min(discoveryLimit, 24), undefined, bloqueios).catch(() => [] as NewsLink[]);
         if (defesoLinks.length > 0) extraGroups.push({ src: defeso, links: defesoLinks });
       }
     }
@@ -381,12 +406,19 @@ async function collectNewsSource(
       for (const secaoUrl of secoesVistas.filter((u) => !jaTentadas.has(u)).slice(0, 2)) {
         if (!hasBudget(deep?.deadlineAt, 15_000)) break;
         const secao: NewsSourceConfig = { ...effectiveSource, url: secaoUrl };
-        const secaoLinks = await fetchSourceLinks(secao, discoveryLimit).catch(() => [] as NewsLink[]);
+        const secaoLinks = await fetchSourceLinks(secao, discoveryLimit, undefined, bloqueios).catch(() => [] as NewsLink[]);
         if (secaoLinks.length > links.length) { effectiveSource = secao; links = secaoLinks; }
         if (links.length >= PISO_DE_LISTAGEM) break;
       }
     }
     if (links.length === 0) {
+      /**
+       * ⚠️ A causa do zero tem PRIORIDADE declarada. Um CAPTCHA/WAF explica o zero melhor que
+       * qualquer outra coisa (inclusive que um `primaryError` de rede, que pode ser só um sintoma
+       * da MESMA causa) — e é a única das três com diagnóstico ACIONÁVEL (não adianta re-tentar
+       * sozinho; precisa de intervenção humana ou de outra rota de acesso).
+       */
+      if (bloqueios.length > 0) throw new Error(BLOQUEIO_ANTIRROBO_MSG);
       if (primaryError) throw primaryError;
       throw new Error(EMPTY_LISTING_MSG);
     }
@@ -474,6 +506,7 @@ async function collectNewsSource(
     // "empty" transitório, NÃO falha (não dispara "algumas fontes falharam"). A staleness
     // ("sem notícia nova há Nd") já sinaliza isso honestamente. Só exceção real = "error".
     const emptyListing = error instanceof Error && error.message === EMPTY_LISTING_MSG;
+    const blocked = error instanceof Error && error.message === BLOQUEIO_ANTIRROBO_MSG;
     return {
       items: [],
       report: {
@@ -482,7 +515,10 @@ async function collectNewsSource(
         fonte: source.fonte,
         tier: source.tier ?? "core",
         source_url: source.url,
-        status: emptyListing ? "empty" : "error",
+        // ⚠️ "empty", não "error": bloqueado é uma barreira do SITE, não uma falha do nosso
+        // parser, e não deve disparar "algumas fontes falharam" — o campo `blocked` abaixo é quem
+        // carrega o diagnóstico honesto para quem lê o relatório.
+        status: emptyListing || blocked ? "empty" : "error",
         links_found: 0,
         items_collected: 0,
         items_processed: 0,
@@ -496,7 +532,10 @@ async function collectNewsSource(
         latest_title: null,
         detail_errors: [],
         error: error instanceof Error ? error.message : "Falha desconhecida",
-        transient: emptyListing || isTransientCollectionError(error, source),
+        // Bloqueado também é transitório: a barreira pode não estar lá na próxima tentativa
+        // (WAF reavalia reputação de IP, produção pode ter IP diferente deste ambiente).
+        transient: emptyListing || blocked || isTransientCollectionError(error, source),
+        ...(blocked ? { blocked: true } : {}),
       },
     };
   }
@@ -754,10 +793,10 @@ function recolherSecoes(
   }
 }
 
-async function fetchSourceLinks(source: NewsSourceConfig, limit: number, secoesVistas?: string[]): Promise<NewsLink[]> {
+async function fetchSourceLinks(source: NewsSourceConfig, limit: number, secoesVistas?: string[], bloqueios?: string[]): Promise<NewsLink[]> {
   if (source.strategy === "govbr") {
     const [htmlLinks, apiLinks] = await Promise.allSettled([
-      fetchHtmlSourceLinks(source, limit, secoesVistas),
+      fetchHtmlSourceLinks(source, limit, secoesVistas, bloqueios),
       fetchGovbrApiLinks(source, limit),
     ]);
     // Mantém links suficientes para o offset caminhar pelas páginas seguintes
@@ -768,11 +807,11 @@ async function fetchSourceLinks(source: NewsSourceConfig, limit: number, secoesV
     ]))).slice(0, Math.max(limit * 2, NEWS_LISTING_MAX_PAGES * 30));
   }
 
-  return fetchHtmlSourceLinks(source, limit, secoesVistas);
+  return fetchHtmlSourceLinks(source, limit, secoesVistas, bloqueios);
 }
 
-async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number, secoesVistas?: string[]): Promise<NewsLink[]> {
-  const listingPages = await fetchListingPages(source, limit);
+async function fetchHtmlSourceLinks(source: NewsSourceConfig, limit: number, secoesVistas?: string[], bloqueios?: string[]): Promise<NewsLink[]> {
+  const listingPages = await fetchListingPages(source, limit, bloqueios);
   const seen = new Set<string>();
   const links: NewsLink[] = [];
 
@@ -992,8 +1031,20 @@ function buildGovbrSearchApiUrl(sourceUrl: string, limit: number) {
   }
 }
 
-async function fetchListingPages(source: NewsSourceConfig, limit: number) {
+async function fetchListingPages(source: NewsSourceConfig, limit: number, bloqueios?: string[]) {
   const firstHtml = await fetchHtml(source.url);
+  /**
+   * ⚠️ O CHECK fica AQUI, e não dentro de `fetchHtml`, de propósito: `fetchHtml` também busca
+   * página de DETALHE (`fetchNewsDetail`), que já tolera qualquer falha com um `catch { return
+   * null; }` e cai para o item de listagem — não precisa de um terceiro tipo de erro. A listagem é
+   * o ponto crítico: é ela que, bloqueada, zera `links_found` e produz "fonte sem nenhuma notícia".
+   */
+  if (bloqueios && looksLikeChallenge(firstHtml)) {
+    bloqueios.push(source.url);
+    // Sem conteúdo real nesta página, não há paginação Plone para descobrir — e as páginas 2..N
+    // seriam o MESMO desafio (medido: a mesma URL, pedida de novo, devolveu o mesmo CAPTCHA).
+    return [{ url: source.url, html: firstHtml }];
+  }
   const sourceUrl = new URL(source.url);
   const sourcePath = stripTrailingSlash(sourceUrl.pathname);
   const pageUrls = new Set<string>([source.url]);

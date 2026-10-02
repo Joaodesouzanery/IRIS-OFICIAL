@@ -945,6 +945,8 @@ export interface RegulatoryNewsSourceReport {
   error?: string;
   /** Falha transitória (rate-limit/render); não pinta a fonte de vermelho se há dados recentes. */
   transient?: boolean;
+  /** A listagem devolveu um CAPTCHA/WAF em vez do conteúdo real — ver `looksLikeChallenge`. */
+  blocked?: boolean;
 }
 
 export interface RegulatoryNewsletterSchedule {

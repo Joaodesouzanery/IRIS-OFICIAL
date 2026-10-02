@@ -48,6 +48,7 @@ function estado(over: Partial<Parameters<typeof montarRascunho>[0]> = {}) {
     cache: {} as Record<string, object>,
     newsletterArticleTexts: {} as Record<string, string>,
     newsletterArticleTitles: {} as Record<string, string>,
+    newsletterArticleTitleJustify: {} as Record<string, boolean>,
     newsletterImagens: {} as Record<string, string | null>,
     minutoTextos: "",
     socialPosts: [] as unknown[],
