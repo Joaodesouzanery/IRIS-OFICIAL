@@ -1,7 +1,38 @@
 # PENDÊNCIAS E OPERAÇÃO — IRIS-Regulação
 
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
-Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 36, 30/set/2026).
+Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 37, 04/out/2026).
+
+## 🔴 FASE 37 (04/out/2026) — Qualidade × IMQN rev2022, e medir sem curl
+
+### ⛔ 1 MIGRATION NOVA
+
+**`supabase/migrations/20261004120000_qualidade_imqn_rev2022.sql`** — a matriz IMQN rev2022 em
+tabela (6 dimensões, 10 critérios, 73 condições) + a tabela de avaliação POR CONDIÇÃO, que é o que
+alimenta a "nota comprovada". Sem ela o código funciona: a nota comprovada fica 0 e a tela diz
+"avaliação por condição ainda não habilitada".
+
+⚠️ **REVISAR ANTES (você é o portão do dado):**
+1. **Base legal** — todas as 6 dimensões estão marcadas "a conferir". A da **Participação Social
+   foi ALTERADA**: o texto herdado citava "Lei 13.848/2019, arts. 19 a 25"; a consulta pública está
+   no art. 9º e a audiência no art. 10 — ficou "arts. 9º a 11". O artigo da **ARR** (Decreto
+   10.411/2020, art. 12) é herdado e não foi conferido. Ao conferir, marque
+   `base_legal_conferida = true` na tabela: reaplicar a migration não sobrescreve o que estiver
+   conferido.
+2. **Verificabilidade** — cada condição foi classificada pelo IRIS como "pública" (um documento
+   publicado comprova) ou "interna" (só dado do órgão). É PROPOSTA. Resultado: fontes públicas
+   provam no máximo **61,61 de 100**; Capacitação (AIR e ARR) é 100% interna.
+
+### 🧪 MEDIR SEM CURL — tela Votos dos Diretores › "Escritas medidas e desligadas"
+- **Completar colegiado parcial** e **Revoto**: só medem (as constantes seguem desligadas).
+- **Ausências da ARTESP**: medir → conferir os trechos contra o PDF → "Aplicar".
+
+### ⚠️ JÁ LIGADO EM PRODUÇÃO (desde a Fase 36, pelo "Rodar tudo")
+B.1 (itens de ata seguem a data da mãe validada), B.3 (ANTT pela listagem, SÓ se a listagem
+reproduzir as atas 1.024ª e 264ª) e B.5 (órfãs de data impossível). O banner agora mostra os três.
+**Data corrigida não refaz o voto** enquanto o revoto estiver desligado — a cobertura pode cair
+antes de subir.
+
 
 ## 🔴 FASE 36 (30/set/2026) — o que ESPERA VOCÊ
 
