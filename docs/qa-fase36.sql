@@ -197,8 +197,8 @@ SELECT jsonb_pretty(jsonb_build_object(
     SELECT COALESCE(jsonb_agg(to_jsonb(t) ORDER BY t.sigla, t.serie), '[]'::jsonb)
       FROM (SELECT a.sigla, COALESCE(r.serie,'(nula)') AS serie, COUNT(*) AS linhas,
                    COUNT(*) FILTER (WHERE r.metadata->>'serie_inferida_por' = 'faixa') AS inferida_por_faixa,
-                   MIN(r.criado_em)::date AS mais_antiga,
-                   MAX(r.criado_em)::date AS mais_recente
+                   MIN(r.created_at)::date AS mais_antiga,
+                   MAX(r.created_at)::date AS mais_recente
               FROM public.reunioes r JOIN ag a ON a.id = r.agencia_id
              GROUP BY a.sigla, COALESCE(r.serie,'(nula)')) t),
 
