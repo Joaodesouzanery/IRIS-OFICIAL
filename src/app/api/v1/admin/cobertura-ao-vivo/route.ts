@@ -18,8 +18,12 @@ import { parseArtespReunioes } from "@/lib/server/monitoring";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
 import { looksLikeChallenge } from "@/lib/server/monitoring";
 import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
-import { anmNumerosDoAno } from "@/lib/server/anm-cobertura";
 import { lerTudo } from "@/lib/server/select-all-paged";
+import {
+  gravarReferencia, referenciaDaAnm, referenciaDaAntt, referenciaDaArtesp,
+  type LinhaDeReferencia, type PaginaDaAnm, type ResultadoDaGravacao, type TentativaDeFonte,
+} from "@/lib/server/referencia-site";
+import { pertencaAoAno } from "@/lib/server/livro-razao";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -30,23 +34,33 @@ export const maxDuration = 120;
 
 const YEAR_RE = /^(20)\d{2}$/;
 const ARTESP_URL = "https://www.artesp.sp.gov.br/artesp/transparencia/reunioes-diretoria";
-const ANM_URLS = [
-  "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/atas-da-rop",
-  "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-da-rop",
-];
-
+const ANM_BASE = "https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada";
 /**
- * Fase 28 — a ANM tem SEIS fontes monitoradas e esta conferência enumera DUAS. Fica de fora, entre
- * outras, o ARQUIVO de atas (`.../atas-da-rop/atas-reunioes-ordinarias`), que existe justamente
- * porque "tudo que sai do topo da listagem some da coleta para sempre" (migration 20260904130000).
- * A ANM é a única das três agências sem paginação e sem seguir arquivo: profundidade 1 por
- * construção. Pôr o arquivo no denominador AGORA seria generalizar sobre um layout que ninguém
- * mediu — sem fixture verbatim dessa página, se ela não tiver `<time>` todos os itens saem sem ano
- * e, pela regra vigente, entram em TODO ano: dezenas de reuniões pré-2022 virariam "faltando em
- * 2026", com alerta vermelho, na rota que é a prova. Trocaria subestimativa silenciosa por
- * superestimativa barulhenta. Até lá, o silêncio vira NÚMERO: a resposta diz o que foi consultado.
+ * ═══ Fase 38 — as fontes da ANM, MEDIDAS ao vivo em 04/10 ═══
+ * Das seis fontes monitoradas, três têm reuniões e três não acrescentam nada:
+ *   · `atas-da-rop`  — atas recentes da ROP **e da REP** (REP 31–34, ROP 85–88);
+ *   · `pautas-da-rop` — pautas recentes das duas séries (é por ela que se sabe da reunião cuja ata
+ *     ainda não saiu);
+ *   · `atas-da-rop/atas-reunioes-ordinarias` — o ARQUIVO, ROP 59–88. É o que sai do topo da
+ *     listagem e sumia da conferência para sempre;
+ *   · a raiz `reunioes-da-diretoria-colegiada` não lista reunião nenhuma, e `/atas` e `/pautas`
+ *     repetem as páginas da ROP.
+ *
+ * ⚠️ A Fase 28 recusou o arquivo porque, sem ano confiável, ele poria dezenas de reuniões antigas
+ * em 2026. O motivo se confirmou pior do que se pensava: o ano da página é o da PUBLICAÇÃO (a 79ª ROP,
+ * de 26/11/2025, aparece com 2026). A saída não é o ano da página — é a ÂNCORA da série
+ * (`pertencaAoAno`): a numeração é monotônica e a 81ª ROP é a primeira de 2026.
  */
-const FONTES_DA_ANM_NAO_CONSULTADAS = 4;
+const ANM_PAGINAS: Array<Omit<PaginaDaAnm, "html">> = [
+  { url: `${ANM_BASE}/atas-da-rop`, documento: "ata" },
+  { url: `${ANM_BASE}/pautas-da-rop`, documento: "pauta" },
+  { url: `${ANM_BASE}/atas-da-rop/atas-reunioes-ordinarias`, documento: "ata", serie_padrao: "ordinaria" },
+];
+const ANM_URLS = ANM_PAGINAS.map((p) => p.url);
+
+/** As três fontes da ANM que, medidas, não listam reunião nova (raiz, `/atas`, `/pautas`). */
+const FONTES_DA_ANM_NAO_CONSULTADAS = 3;
+const ANTT_FONTE = "discovery: www.gov.br/antt — reuniões de 2026";
 
 /**
  * Os NÚMEROS de reunião distintos de uma lista de strings.
@@ -93,7 +107,7 @@ function erroDeBusca(html: string, nomeDaFonte: string): string | null {
 
 export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
-    return NextResponse.json({ modo: "demo", ano: 2026, por_agencia: [], alertas: [] });
+    return NextResponse.json({ modo: "demo", ano: 2026, por_agencia: [], referencia_gravada: {}, alertas: [] });
   }
   const guard = await requireAdminOrCron(req);
   if (guard) return guard;
@@ -115,9 +129,11 @@ export async function GET(req: NextRequest) {
   // "✓ Cobertura completa": a prova de completude afirmava exatamente o que não sabia. Agora o
   // flag sobe até a tela, e uma enumeração parcial nunca pode ser lida como prova.
   let anttParcial = false;
+  let anttLinhas: LinhaDeReferencia[] = [];
   try {
     const disc = await discoverAntt2026Meetings({ maxMeetings: 200, maxPages: 20, deadlineAt });
     anttSite = toNums(disc.meetings.map((m) => m.numero));
+    anttLinhas = referenciaDaAntt(disc.meetings, ANTT_FONTE);
     anttParcial = disc.truncated === true;
   } catch {
     anttErro = "falha ao enumerar a ANTT ao vivo";
@@ -125,18 +141,22 @@ export async function GET(req: NextRequest) {
 
   // ARTESP: página única; filtra 2026 quando há data.
   const artespHtml = await fetchTextSafe(ARTESP_URL);
-  const artespItems = parseArtespReunioes(artespHtml, ARTESP_URL).filter(
+  const artespTodos = parseArtespReunioes(artespHtml, ARTESP_URL);
+  const artespItems = artespTodos.filter(
     (i) => !i.data_reuniao || (i.data_reuniao >= de && i.data_reuniao <= ate),
   );
   const artespSite = toNums(artespItems.map((i) => i.reuniao));
   const artespErro = erroDeBusca(artespHtml, "ARTESP");
 
-  // ANM: PDFs estáticos das sub-páginas — nº vem do nome ("ata_85__reuniao", "ata-32-rep") ou
-  // do heading ("85ª Reunião"), e o ANO vem da DATA adjacente ao link ("31/07/2026 09h37" —
-  // verificado ao vivo). QA ago/2026: antes o parse global sem contexto inflava faltando/extra
-  // com reuniões de anos antigos; agora filtra pelo ano (sem data próxima → mantém).
+  // ANM: as três páginas que listam reunião. O ano NÃO vem da página (é o da publicação) — vem da
+  // âncora da série; a série vem do item ("Reunião Extraordinária") ou da página (o arquivo é ROP).
   const anmHtmls = await Promise.all(ANM_URLS.map(fetchTextSafe));
-  const anmSite = anmNumerosDoAno(anmHtmls, Number(year));
+  const anmLinhas = referenciaDaAnm(ANM_PAGINAS.map((p, i) => ({ ...p, html: anmHtmls[i] })));
+  const anmSite = toNums(
+    anmLinhas
+      .filter((l) => pertencaAoAno(l, Number(year)) !== "nao")
+      .map((l) => String(l.numero)),
+  );
   const anmErro = anmHtmls.some((h) => h && !looksLikeChallenge(h))
     ? null
     : erroDeBusca(anmHtmls.find((h) => h) ?? "", "ANM");
@@ -255,11 +275,41 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  // A ANM é o caso em que a lacuna é conhecida e grande: avisar é mais honesto que somar zero.
   alertas.push(
-    `ANM: esta conferência enumera ${ANM_URLS.length} das ${ANM_URLS.length + FONTES_DA_ANM_NAO_CONSULTADAS} fontes monitoradas — ` +
-      "o arquivo de atas fica de fora, então \"faltando\" aqui é piso, não total.",
+    `ANM: esta conferência enumera ${ANM_URLS.length} fontes (atas e pautas da ROP/REP e o arquivo de atas); as ` +
+      `outras ${FONTES_DA_ANM_NAO_CONSULTADAS} monitoradas foram medidas e não listam reunião nova. O ano vem da ` +
+      "âncora da série, não da página (que mostra o ano de PUBLICAÇÃO). ⚠️ Com o arquivo e a REP no denominador, " +
+      "o \"faltando\" da ANM pode CRESCER antes de cair — é o denominador ficando honesto, não regressão.",
   );
+
+  /**
+   * ═══ Fase 38 — a referência GRAVADA (portão 1 do livro-razão) ═══
+   * Cada fonte é gravada só quando a leitura dela foi boa; vazia ou bloqueada registra a tentativa e
+   * o erro, e a referência anterior continua valendo com a data dela. Falha de gravação não derruba
+   * a conferência: vira um campo da resposta, nomeado.
+   */
+  const referencia_gravada: Record<string, ResultadoDaGravacao> = {};
+  const gravar = async (sigla: string, linhas: LinhaDeReferencia[], tentativas: TentativaDeFonte[]) => {
+    const agenciaId = idBySigla.get(sigla);
+    if (!agenciaId) { referencia_gravada[sigla] = { gravada: false, motivo: "agência não cadastrada" }; return; }
+    referencia_gravada[sigla] = await gravarReferencia(db, { agenciaId, linhas, tentativas });
+  };
+  await gravar("ANTT", anttLinhas, [
+    { fonte: ANTT_FONTE, erro: anttErro, parcial: anttParcial, itens: anttLinhas.length },
+  ]);
+  const artespLinhas = artespErro ? [] : referenciaDaArtesp(artespTodos, ARTESP_URL);
+  await gravar("ARTESP", artespLinhas, [
+    { fonte: ARTESP_URL, erro: artespErro, parcial: false, itens: artespLinhas.length },
+  ]);
+  await gravar("ANM", anmLinhas, ANM_PAGINAS.map((p, i) => ({
+    fonte: p.url,
+    erro: erroDeBusca(anmHtmls[i], `ANM (${p.url.split("/").pop()})`),
+    parcial: false,
+    itens: anmLinhas.filter((l) => l.fonte === p.url).length,
+  })));
+  for (const [sigla, r] of Object.entries(referencia_gravada)) {
+    if (!r.gravada) alertas.push(`${sigla}: a referência do livro-razão NÃO foi gravada — ${r.motivo}.`);
+  }
 
   return NextResponse.json({
     modo: "real",
@@ -267,6 +317,7 @@ export async function GET(req: NextRequest) {
     gerado_em: new Date().toISOString(),
     por_agencia,
     fontes_consultadas,
+    referencia_gravada,
     alertas,
   });
 }

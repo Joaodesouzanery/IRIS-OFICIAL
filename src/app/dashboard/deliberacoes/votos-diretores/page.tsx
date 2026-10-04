@@ -8,6 +8,7 @@ import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
 import { EscritasMedidasPanel } from "@/components/dashboard/EscritasMedidasPanel";
+import { LivroRazaoPanel } from "@/components/dashboard/LivroRazaoPanel";
 import { useViewer } from "@/lib/use-viewer";
 import { CAPACIDADE_POR_EIXO } from "@/lib/server/colegiado-sources";
 import { destinoForaDaEsteira, podeVirarVoto } from "@/lib/esteira-tipos";
@@ -1622,6 +1623,7 @@ export default function VotosDiretoresPage() {
       </section>
 
       {/* ── As escritas da Fase 36 que nasceram MEDIDAS: o número, sem curl ── */}
+      <LivroRazaoPanel demoEnabled={demoEnabled} />
       <EscritasMedidasPanel demoEnabled={demoEnabled} />
 
       {/* ── Cobertura AO VIVO: conferência CONTRA o site (a prova de completude) ── */}

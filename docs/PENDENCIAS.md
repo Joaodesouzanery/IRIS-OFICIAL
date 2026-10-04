@@ -3,6 +3,34 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 37, 04/out/2026).
 
+## 🔴 FASE 38 (04/out/2026) — Convergência: o livro-razão e o critério de "pronto"
+
+**O que entrou (portão 1 + livro mínimo):** a conferência ao vivo agora GRAVA a referência do site
+(`reunioes_referencia` + `referencia_fontes`), e o placar monta o **livro-razão 2026**: uma linha por
+reunião, seis portões (listada · data · itens · campos · colegiado · votos), aba na tela de votos
+("Livro-razão 2026 — quando está pronto"). Critério de fim: **≥95% prontas E nenhuma aberta por
+trabalho nosso** — o que sobra tem bloqueio externo nomeado (site fora do ar, PDF sem texto, só a
+pauta publicada, mandato sem DOU).
+
+- [ ] **Aplicar `supabase/migrations/20261004130000_reunioes_referencia.sql`** (SQL Editor). Sem ela a
+      conferência ao vivo segue funcionando e diz "referência não gravada"; o livro mostra o portão 1
+      vermelho "referência indisponível" em todas as reuniões (nunca "0 de 0").
+- [ ] Depois de aplicar: **Conferir ao vivo** (grava a referência) → **Abrir o livro-razão**.
+- ⚠️ **O denominador da ANM CRESCE:** a conferência passou a ler o arquivo de atas (ROP 59–88) e a
+      separar ROP de REP. O ano vem da ÂNCORA da série (81ª ROP = 1ª de 2026; 34ª REP é 2025), não da
+      página — o ano que o portal mostra é o da PUBLICAÇÃO (medido: a 79ª, de 26/11/2025, aparece
+      com 2026). O "faltando" da ANM pode subir antes de cair: é o denominador ficando honesto.
+- ⚠️ **35ª REP:** quando aparecer, entra como "ano incerto" até alguém pôr a data dela em
+      `ANCORAS_DE_ANO` (`src/lib/server/livro-razao.ts`).
+- Referência fica **desatualizada após 7 dias** sem enumeração boa; vazia/WAF nunca sobrescreve.
+- Portão 3 conta pela FONTE: processos da reunião (ANTT), deliberações listadas (ARTESP), âncoras
+      `DELIBERAÇÃO:/Decisão:/Item retirado` no texto da ata (ANM) — nunca pelo splitter.
+- **Meta de parada da fase:** ANM < 80% ou gabarito < 4/5 ao fim da fase ⇒ reavaliar a estratégia.
+
+**Ainda nesta fase (dependem dos SQLs A e B que estão com você):** ANTT data×cadastro (SQL A) →
+ANM mandatos (SQL B) → data das mães 81ª/82ª → itens da 79ª (o portão 3 agora mostra a conta) →
+revoto atrás da simulação → completar parcial (ANM + ANTT Severino 1.024ª/264ª).
+
 ## 🔴 FASE 37 (04/out/2026) — Qualidade × IMQN rev2022, e medir sem curl
 
 ### ⛔ 1 MIGRATION NOVA

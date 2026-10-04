@@ -35,7 +35,14 @@ import { isDemo } from "@/lib/server/is-demo";
 import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import { budgetFromRequest, hasBudget } from "@/lib/server/time-budget";
-import { COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { CAPACIDADE_POR_EIXO, COLEGIADO_SIGLAS } from "@/lib/server/colegiado-sources";
+import { lerEmLotes } from "@/lib/server/ler-em-lotes";
+import { contarAncorasDeDispositivo } from "@/lib/server/consistency-checks";
+import { ordinalDeTextoDeReuniao } from "@/lib/server/reunioes";
+import {
+  META_PRONTAS_PCT, PORTOES, estadoDaReferencia, montarLivroRazao,
+  type EstadoDaReferencia, type ReuniaoDeReferencia, type ReuniaoDoAcervo,
+} from "@/lib/server/livro-razao";
 import { isFinalDecisionRecord } from "@/lib/server/regulatory-documents";
 import { RE_CONTESTADO_AMPLO } from "@/lib/server/consistency-checks";
 import {
@@ -64,6 +71,7 @@ const vazio = {
   colegiado_por_reuniao: {} as Record<string, unknown>,
   reunioes_incompletas: [] as unknown[],
   certificacao_no_banco: { conferidas: 0, batem: 0, divergem: [] as unknown[] },
+  livro_razao: { meta_pct: 95, portoes: [] as string[], por_agencia: {} as Record<string, unknown>, abertas: [] as unknown[] },
   leitura_completa: true,
   alertas: [] as string[],
 };
@@ -106,7 +114,9 @@ export async function GET(req: NextRequest) {
         // diferente produziria um segundo veredito sobre o mesmo conceito — e a Fase 21 mediu o
         // preço disso ("uma fonte por conceito").
         .select("id, agencia_id, numero_reuniao, data_reuniao, tipo_documento, documento_pai_id, " +
-                "resultado, reuniao_id, raw_extraction, fundamento_decisao, decisoes_todas, resumo_pleito")
+                "resultado, reuniao_id, raw_extraction, fundamento_decisao, decisoes_todas, resumo_pleito, " +
+                // Portão 4 do livro-razão — custo zero, mesma página.
+                "processo, interessado, relator")
         .order("id"),
       "placar/deliberacoes"),
     /**
@@ -440,6 +450,126 @@ export async function GET(req: NextRequest) {
     );
   }
   /**
+   * ═══ Fase 38 — O LIVRO-RAZÃO: uma linha por reunião do ano, seis portões, critério de fim ═══
+   *
+   * O denominador é a REFERÊNCIA do site (gravada pela conferência ao vivo), não o banco. Os
+   * portões 5 e 6 usam `medirReuniao` — a mesma régua das incompletas acima.
+   *
+   * ⚠️ O banco entra agrupado por (agência, série, número) em TODOS os anos: a 81ª ROP gravada em
+   * 2025 tem de aparecer no livro de 2026 como "data errada", não sumir dele como "não coletada".
+   */
+  const livroBanco = new Map<string, ReuniaoDoAcervo>();
+  const grupoDaDelib = new Map<string, string>();
+  for (const d of (delibsRes.data ?? []) as any[]) {
+    if (!d.agencia_id || !idsColegiados.has(d.agencia_id) || !d.data_reuniao || !d.numero_reuniao) continue;
+    if (!isFinalDecisionRecord(d)) continue;
+    const numero = ordinalDeTextoDeReuniao(d.numero_reuniao);
+    if (numero === null || numero <= 0) continue;
+    const serie = seriePorChave.get(`${d.agencia_id}|${d.data_reuniao}|${d.numero_reuniao}`) ?? null;
+    const k = `${d.agencia_id}|${serie ?? ""}|${numero}`;
+    const g: ReuniaoDoAcervo = livroBanco.get(k) ?? {
+      agencia: siglaPorId.get(d.agencia_id) ?? "?", agencia_id: d.agencia_id, serie, numero,
+      datas: [], itens: [], ancoras_da_ata: null, ata_sem_texto: false,
+    };
+    const data = String(d.data_reuniao).slice(0, 10);
+    if (!g.datas.includes(data)) g.datas.push(data);
+    g.itens.push({
+      id: String(d.id),
+      resultado: d.resultado ?? null, processo: d.processo ?? null,
+      interessado: d.interessado ?? null, relator: d.relator ?? null,
+      respondido_por: [...(votantesPorDelib.get(String(d.id)) ?? [])],
+    });
+    livroBanco.set(k, g);
+    if (d.documento_pai_id) grupoDaDelib.set(String(d.documento_pai_id), k);
+  }
+
+  // A referência gravada. Tabela ausente ou leitura falha = referência INDISPONÍVEL, nomeada.
+  const livroReferencia: ReuniaoDeReferencia[] = [];
+  const livroEstado: Record<string, EstadoDaReferencia> = {};
+  const siglasDoLivro = [...idsColegiados].map((id) => siglaPorId.get(id) ?? "?").sort();
+  const [refRes, fontesRes] = await Promise.all([
+    lerTudo<any>(
+      () => db.from("reunioes_referencia")
+        .select("agencia_id, serie, numero, data_reuniao, itens_na_fonte, decisao_publicada")
+        .order("id"),
+      "placar/livro-referencia"),
+    lerTudo<any>(
+      () => db.from("referencia_fontes").select("fonte, agencia_id, ultima_boa_em, ultima_tentativa_em, ultimo_erro").order("fonte"),
+      "placar/livro-fontes"),
+  ]);
+  if (refRes.error || fontesRes.error) {
+    const motivo = "a referência não pôde ser lida — aplique a migration 20261004130000 e rode a conferência ao vivo";
+    for (const sigla of siglasDoLivro) livroEstado[sigla] = { disponivel: false, ultima_boa_em: null, desatualizada: true, motivo };
+  } else {
+    for (const r of (refRes.data ?? []) as any[]) {
+      const sigla = siglaPorId.get(r.agencia_id);
+      if (!sigla || !idsColegiados.has(r.agencia_id)) continue;
+      livroReferencia.push({
+        agencia: sigla, serie: r.serie || null, numero: Number(r.numero),
+        data_reuniao: r.data_reuniao ?? null, itens_na_fonte: r.itens_na_fonte ?? null,
+        decisao_publicada: r.decisao_publicada ?? null,
+      });
+    }
+    const agora = new Date();
+    for (const id of idsColegiados) {
+      const sigla = siglaPorId.get(id) ?? "?";
+      livroEstado[sigla] = estadoDaReferencia(((fontesRes.data ?? []) as any[]).filter((f) => f.agencia_id === id), agora);
+    }
+  }
+
+  // Portão 3 pela FONTE: âncoras de dispositivo no texto da ata, só onde a listagem não deu a conta
+  // (ANM). Contar pelos itens do próprio splitter seria comparar o splitter com ele mesmo.
+  const semContaNaListagem = new Set(
+    livroReferencia.filter((r) => r.itens_na_fonte === null).map((r) => `${r.agencia}|${r.numero}`),
+  );
+  const maesParaContar = [...grupoDaDelib.entries()]
+    .filter(([, k]) => {
+      const g = livroBanco.get(k);
+      return g && g.datas.some((d) => d.startsWith(year)) && semContaNaListagem.has(`${g.agencia}|${g.numero}`);
+    })
+    .map(([maeId]) => maeId);
+  if (maesParaContar.length > 0 && hasBudget(deadlineAt, RESERVA_DE_FECHO_MS)) {
+    const textos = await lerEmLotes<{ deliberacao_id: string; texto_extraido: string | null }>(db, {
+      tabela: "documentos_regulatorios", select: "deliberacao_id, texto_extraido",
+      coluna: "deliberacao_id", valores: maesParaContar, label: "placar/livro-ancoras",
+    });
+    if (textos.error) alertas.push("⚠️ livro-razão: o texto das atas não pôde ser lido — o portão 3 da ANM fica sem medida.");
+    for (const t of textos.data) {
+      const g = livroBanco.get(grupoDaDelib.get(String(t.deliberacao_id)) ?? "");
+      if (!g) continue;
+      const texto = String(t.texto_extraido ?? "");
+      if (texto.trim().length < 200) { g.ata_sem_texto = true; continue; }
+      g.ancoras_da_ata = Math.max(g.ancoras_da_ata ?? 0, contarAncorasDeDispositivo(texto));
+    }
+  }
+
+  const livro = montarLivroRazao({
+    referencia: livroReferencia,
+    banco: [...livroBanco.values()],
+    estadoDaReferencia: livroEstado,
+    agencias: siglasDoLivro,
+    ctx: {
+      ano: Number(year),
+      mandatos,
+      exigeRelator: Object.fromEntries(
+        Object.entries(CAPACIDADE_POR_EIXO.relatoria).map(([sigla, cap]) => [sigla, String(cap) === "nominal"]),
+      ),
+      nomeDe,
+    },
+  });
+  for (const [sigla, r] of Object.entries(livro.por_agencia)) {
+    if (!r.referencia.disponivel) {
+      alertas.push(`Livro-razão ${sigla}: referência do site INDISPONÍVEL (${r.referencia.motivo}) — sem denominador, nenhuma reunião conta como pronta.`);
+      continue;
+    }
+    alertas.push(
+      `Livro-razão ${sigla}: ${r.prontas} de ${r.total} reuniões prontas (${r.pct}%; meta ${META_PRONTAS_PCT}%) — ` +
+        `${r.trabalho_nosso} com trabalho nosso, ${r.bloqueio_externo} com bloqueio externo nomeado` +
+        `${r.referencia.desatualizada ? `. ⚠️ referência DESATUALIZADA: ${r.referencia.motivo}` : ""}.`,
+    );
+  }
+
+  /**
    * ⚠️ O FILTRO É PELA RÉGUA ESTRITA. Pelo teto, uma reunião em que um diretor votou em 1 de 39
    * itens é "completa" e sairia desta lista — foi exatamente o caso do José Fernando na 84ª da ANM.
    * A lista de trabalho tem de mostrar o que falta trabalhar.
@@ -523,6 +653,17 @@ export async function GET(req: NextRequest) {
       atas: Object.values(GABARITO_POR_ARQUIVO).map((a) => `${a.agencia} ${a.reuniao}`),
       casamento: "por (agência, número) — NUNCA por data, que é o que o Bloco B está consertando",
       ambiguidades,
+    },
+    /**
+     * O LIVRO-RAZÃO: o critério de "pronto". `abertas` traz cada reunião não pronta com o primeiro
+     * portão aberto e o motivo — a lista de trabalho, na ordem em que ele se faz.
+     */
+    livro_razao: {
+      meta_pct: META_PRONTAS_PCT,
+      portoes: PORTOES,
+      por_agencia: livro.por_agencia,
+      abertas: livro.linhas.filter((l) => !l.pronta).slice(0, 300),
+      abertas_total: livro.linhas.filter((l) => !l.pronta).length,
     },
     finais_no_ano: finaisNoAno,
     leitura_completa: leituraCompleta && !serieParcial,

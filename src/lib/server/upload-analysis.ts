@@ -5,7 +5,7 @@ import { classifyAreaRegulatoria } from "@/lib/server/area-regulatoria";
 import { detectDocumentType, extractAtaMetadata, splitAtaItemsWithStats } from "@/lib/server/ata-splitter";
 import {
   avisoUnanimidadeContestada, avisoAtaItensFaltando,
-  checarAncorasItens, checarCoerenciaUnanimidade, checarImpedidoComVoto,
+  checarAncorasItens, contarAncorasDeDispositivo, checarCoerenciaUnanimidade, checarImpedidoComVoto,
   checarCardinalidadeVotos, checarInteressadoNoDispositivo, checarSinalDeDeliberacao, checarVotoQualidadeDuplo,
   checarAdmissibilidadeMalClassificada, checarLigaduraResidual,
   checarDataAnteriorAoProcesso, checarAnoProtocoloDaAta,
@@ -339,11 +339,7 @@ export async function analyzeUploadPdf(input: {
     // pós-dedup faria de uma dedup CORRETA um alarme permanente — e alarme que sempre dispara é
     // alarme que ninguém lê.
     achados.push(...checarAncorasItens({
-      // MEDIDO nas 8 atas do corpus: a âncora de dispositivo tem TRÊS formas. `DELIBERAÇÃO:` é a
-      // da ANM, `Decisão:` é a da ANTT (que não usa a primeira em nenhuma das duas atas), e o item
-      // RETIRADO de pauta não tem linha de dispositivo nenhuma — mas é um item legítimo. Contar só
-      // a primeira dava "itens excedem âncoras" em 8 de 8 atas.
-      ancoras: (extraction.text.match(/DELIBERA[ÇC][ÃA]O\s*:|Decis[ãa]o\s*:|[Ii]tem retirado de pauta/g) ?? []).length,
+      ancoras: contarAncorasDeDispositivo(extraction.text),
       itens_pre_dedup: ataSplit.itens_pre_dedup,
       duplicatas_removidas: ataSplit.duplicatas_removidas,
     }));

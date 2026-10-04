@@ -140,6 +140,21 @@ export function checarSinalDeDeliberacao(input: {
 }
 
 /**
+ * Âncoras de DISPOSITIVO no texto de uma ata — a contagem de itens pela FONTE, não pelo splitter.
+ *
+ * MEDIDO nas 8 atas do corpus: a âncora tem TRÊS formas. `DELIBERAÇÃO:` é a da ANM, `Decisão:` é a
+ * da ANTT (que não usa a primeira em nenhuma das duas atas), e o item RETIRADO de pauta não tem
+ * linha de dispositivo nenhuma — mas é um item legítimo. Contar só a primeira dava "itens excedem
+ * âncoras" em 8 de 8 atas.
+ *
+ * ⚠️ UMA função para os dois leitores (a análise do upload e o portão 3 do livro-razão): duas
+ * regexes para o mesmo conceito divergiriam na primeira correção.
+ */
+export function contarAncorasDeDispositivo(texto: string | null | undefined): number {
+  return (String(texto ?? "").match(/DELIBERA[ÇC][ÃA]O\s*:|Decis[ãa]o\s*:|[Ii]tem retirado de pauta/g) ?? []).length;
+}
+
+/**
  * C03 — RECONCILIAÇÃO DE ÂNCORAS.
  *
  * ⚠️ Este check NÃO pode comparar âncoras com a contagem PÓS-dedup. A 81ª ROP tem duas ocorrências
