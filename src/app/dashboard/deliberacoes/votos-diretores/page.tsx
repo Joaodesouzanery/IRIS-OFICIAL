@@ -7,6 +7,7 @@ import { cn, formatDateLong, formatNumber } from "@/lib/utils";
 import { ModuleTabs } from "@/components/ui/ModuleTabs";
 import { DELIBERACOES_TABS } from "@/lib/module-tabs";
 import { useDataSyncContext } from "@/components/DataSyncProvider";
+import { EscritasMedidasPanel } from "@/components/dashboard/EscritasMedidasPanel";
 import { useViewer } from "@/lib/use-viewer";
 import { CAPACIDADE_POR_EIXO } from "@/lib/server/colegiado-sources";
 import { destinoForaDaEsteira, podeVirarVoto } from "@/lib/esteira-tipos";
@@ -881,6 +882,38 @@ export default function VotosDiretoresPage() {
           ? `⚠️ ${totais.divergente_sem_texto} linha(s) sem texto extraído na janela de datas` +
             " — para essas, mais rodadas não resolvem: falta RE-EXTRAIR o PDF"
           : null,
+        /**
+         * ⚠️ Fase 37 — o BLOCO B que já ESCREVE (o "Rodar tudo" chama o redatar com dry_run=0).
+         * Filhos de ata seguem a data da mãe validada; a ANTT só é corrigida pela listagem se o
+         * PORTÃO (as duas atas certificadas) passar; e reunião órfã de data impossível sai, contada.
+         * ⚠️ Corrigir a data NÃO refaz o voto — o revoto está desligado. Por isso esta linha é
+         * "datas", não "cobertura": a porcentagem pode CAIR antes de subir.
+         */
+        (totais.filhos_alinhados ?? 0) > 0 || (totais.filhos_desalinhados ?? 0) > 0
+          ? `itens de ata alinhados à data da mãe: ${totais.filhos_alinhados ?? 0} nesta run` +
+            ` (${totais.filhos_desalinhados ?? 0} desalinhado(s) medido(s) sob ${totais.maes_validadas ?? 0} mãe(s)` +
+            " cuja data o próprio documento confirma)" +
+            " — o voto deles só é refeito quando o revoto for ligado"
+          : null,
+        /**
+         * B.2 — quantos itens de ata a Janela C deixou de fora POR CONSTRUÇÃO (não têm documento
+         * próprio). Sem esta linha, "a data deles não foi corrigida" pareceria falha da janela.
+         */
+        (totais.divergente_filhos_fora ?? 0) > 0
+          ? `${totais.divergente_filhos_fora} item(ns) de ata fora da re-derivação por texto — eles não têm PDF próprio` +
+            " e seguem a data da mãe (linha acima)"
+          : null,
+        (totais.antt_portao_conferidas ?? 0) > 0
+          ? (totais.antt_portao_aprovado ?? 0) > 0
+            ? `ANTT: a listagem do site reproduz as ${totais.antt_portao_conferidas} atas certificadas — ` +
+              `${totais.antt_divergentes ?? 0} data(s) divergente(s), ${totais.antt_corrigidas ?? 0} corrigida(s)`
+            : `⚠️ ANTT: a listagem do site NÃO reproduz as ${totais.antt_portao_conferidas} atas certificadas — ` +
+              "nenhuma data da ANTT é corrigida por ela (o portão recusou)"
+          : null,
+        (totais.reunioes_orfas_candidatas ?? 0) > 0 || (totais.reunioes_orfas_removidas ?? 0) > 0
+          ? `reuniões órfãs (data impossível, zero deliberação): ${totais.reunioes_orfas_candidatas ?? 0} encontrada(s), ` +
+            `${totais.reunioes_orfas_removidas ?? 0} removida(s) com rastro`
+          : null,
         (totais.redatadas ?? 0) > 0 || (totais.datas_para_revisao ?? 0) > 0
           ? `${totais.redatadas ?? 0} data(s) re-derivadas` +
             ((totais.datas_para_revisao ?? 0) > 0
@@ -1587,6 +1620,9 @@ export default function VotosDiretoresPage() {
           </div>
         )}
       </section>
+
+      {/* ── As escritas da Fase 36 que nasceram MEDIDAS: o número, sem curl ── */}
+      <EscritasMedidasPanel demoEnabled={demoEnabled} />
 
       {/* ── Cobertura AO VIVO: conferência CONTRA o site (a prova de completude) ── */}
       <section className="card space-y-3">

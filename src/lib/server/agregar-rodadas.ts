@@ -99,6 +99,16 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
    * a cada chamada. Somada, ela diria "15 atas conferidas" em três rodadas de um gabarito de 5 — e
    * `batem` passaria `conferidas`, o que é aritmeticamente impossível e leria como sucesso.
    */
+  /**
+   * ⚠️ Fase 37 — do passo `redatar`, os que são RETRATO do estoque (a rota relê o universo inteiro a
+   * cada chamada): somar três rodadas diria "180 divergentes da ANTT" num estoque de 60, e o portão
+   * "aprovado" somado viraria 3.
+   */
+  "divergente_filhos_fora",
+  "antt_portao_aprovado",
+  "antt_portao_conferidas",
+  "antt_divergentes",
+  "reunioes_orfas_candidatas",
   "certificacao_atas_conferidas",
   "certificacao_atas_batem",
   "certificacao_divergencias",
@@ -141,6 +151,12 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
  * rotular ele seria consertar a fração pela metade.
  */
 export const CHAVES_PARCIAIS: ReadonlySet<string> = new Set([
+  /**
+   * ⚠️ Fase 37 — B.1 mede as mães VALIDADAS do lote rotativo de 120 da Janela C: a mesma mãe pode
+   * voltar numa volta seguinte. Soma, com rótulo de parcial — como `divergentes_medidas`.
+   */
+  "maes_validadas",
+  "filhos_desalinhados",
   "sem_evidencia",
   "roster_nao_conferivel",
   /**

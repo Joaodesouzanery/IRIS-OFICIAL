@@ -61,13 +61,20 @@ export async function POST(req: NextRequest) {
   if (guard) return guard;
 
   const body = (await req.json().catch(() => ({}))) as {
-    dry_run?: unknown; sigla?: unknown; ano?: unknown; limite?: unknown;
+    dry_run?: unknown; sigla?: unknown; ano?: unknown; limite?: unknown; offset?: unknown;
   };
   const dryRun = body.dry_run !== false;
   const sigla = typeof body.sigla === "string" && /^[A-Z]{2,10}$/.test(body.sigla) ? body.sigla : "ARTESP";
   const ano = typeof body.ano === "string" && /^\d{4}$/.test(body.ano) ? body.ano : null;
   const limiteBruto = Number(body.limite);
   const limite = Number.isFinite(limiteBruto) && limiteBruto > 0 ? Math.min(LOTE, Math.floor(limiteBruto)) : LOTE;
+  /**
+   * ⚠️ Sem `offset`, toda chamada examinava as MESMAS primeiras 120 candidatas — e `restantes`
+   * dizia "há mais" sem haver como chegar nelas. Aplicar em lote reaplicava as mesmas 120 (inócuo,
+   * é idempotente) e as demais nunca eram alcançadas.
+   */
+  const offsetBruto = Number(body.offset);
+  const offset = Number.isFinite(offsetBruto) && offsetBruto > 0 ? Math.floor(offsetBruto) : 0;
 
   const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
@@ -118,7 +125,7 @@ export async function POST(req: NextRequest) {
     });
   }
 
-  const lote = candidatas.slice(0, limite);
+  const lote = candidatas.slice(offset, offset + limite);
   const textos = new Map<string, string>();
   if (lote.length > 0) {
     const r = await lerEmLotes<any>(db, {
@@ -258,7 +265,11 @@ export async function POST(req: NextRequest) {
     nao_reconhecidos: [...naoReconhecidos.entries()]
       .sort((a, b) => b[1] - a[1]).slice(0, 30).map(([nome, n]) => ({ nome, vezes: n })),
     detalhe,
-    restantes: candidatas.length > examinadas,
+    offset,
+    // O próximo `offset` é o fim do que esta chamada EXAMINOU — se o orçamento cortou antes do fim
+    // do lote, a continuação começa no primeiro não examinado, e nada é pulado.
+    proximo_offset: offset + examinadas,
+    restantes: candidatas.length > offset + examinadas,
     ...(dryRun ? { aviso: "Simulação — confira os trechos contra o PDF e repita com dry_run:false." } : {}),
   });
 }

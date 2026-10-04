@@ -119,7 +119,7 @@ export async function POST(req: NextRequest) {
 
   const body = (await req.json().catch(() => ({}))) as {
     dry_run?: unknown; agencia_id?: unknown; year?: unknown; completar_parcial?: unknown;
-    revoto?: unknown;
+    revoto?: unknown; bloco?: unknown;
   };
   const dryRun = body.dry_run !== false; // default true — aplicar exige dry_run:false explícito
   /**
@@ -145,6 +145,17 @@ export async function POST(req: NextRequest) {
    * população de zero-voto e o reparo de artefato, e `restantes` nunca drenaria.
    */
   const modoRevoto = body.revoto === true;
+  /**
+   * BLOCO EXPLÍCITO da janela rotativa — só nos modos de MEDIÇÃO exclusivos.
+   *
+   * ⚠️ A janela é escolhida pelo MINUTO do relógio. Para a esteira isso é o que garante a volta
+   * completa ao longo das rodadas; para quem quer MEDIR o estoque inteiro é uma armadilha: duas
+   * chamadas no mesmo minuto medem o MESMO bloco, e somá-las conta em dobro. Com `bloco`, a tela
+   * varre 0..N-1 e cada pedaço é medido uma vez só.
+   */
+  const blocoPedido = (completarParcial || modoRevoto) && Number.isInteger(body.bloco) && Number(body.bloco) >= 0
+    ? Number(body.bloco)
+    : null;
   const agenciaFiltro = typeof body.agencia_id === "string" && body.agencia_id ? body.agencia_id : null;
   const year = typeof body.year === "string" && YEAR_RE.test(body.year) ? body.year : null;
 
@@ -652,7 +663,7 @@ export async function POST(req: NextRequest) {
   }
 
   // ═══ A JANELA da rodada, e o payload pesado só dela ═══
-  const janela = janelaRotativa(semVoto.length, LOTE_POR_RODADA, Math.floor(Date.now() / 60_000));
+  const janela = janelaRotativa(semVoto.length, LOTE_POR_RODADA, blocoPedido ?? Math.floor(Date.now() / 60_000));
   const loteBruto = semVoto.slice(janela.inicio, janela.fim);
   /**
    * ⚠️⚠️ O PIOR DEFEITO POSSÍVEL NESTE ARQUIVO, e foi assim que quase entrou.

@@ -701,6 +701,26 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
          * descartar "ata sem texto" como causa das datas erradas da ANM.
          */
         divergente_sem_texto: Number(r.body?.divergente_sem_texto ?? 0),
+        /**
+         * ⚠️ Fase 37 — os números do BLOCO B que JÁ ESCREVEM em produção (esta chamada vai com
+         * `dry_run=0`) e não tinham leitor: a quinta vez de capacidade sem consumidor.
+         *  · B.1 — filhos de ata alinhados à mãe validada (data e reunião);
+         *  · B.2 — filhos excluídos da Janela C (não têm texto próprio, por construção);
+         *  · B.3 — o PORTÃO da listagem da ANTT: aprovado (1) ou não (0), e sobre quantas atas;
+         *  · B.5 — reuniões órfãs com data impossível: candidatas e removidas.
+         * O objeto `antt_portao` não atravessa `agregarEtapas` (descarta não-número) — por isso ele
+         * vira dois NÚMEROS aqui.
+         */
+        maes_validadas: Number(r.body?.maes_validadas ?? 0),
+        filhos_desalinhados: Number(r.body?.filhos_desalinhados ?? 0),
+        filhos_alinhados: Number(r.body?.filhos_alinhados ?? 0),
+        divergente_filhos_fora: Number(r.body?.divergente_filhos_fora ?? 0),
+        antt_portao_aprovado: (r.body?.antt_portao as { aprovado?: boolean } | null | undefined)?.aprovado ? 1 : 0,
+        antt_portao_conferidas: Number((r.body?.antt_portao as { conferidas?: number } | null | undefined)?.conferidas ?? 0),
+        antt_divergentes: Number(r.body?.antt_divergentes ?? 0),
+        antt_corrigidas: Number(r.body?.antt_corrigidas ?? 0),
+        reunioes_orfas_candidatas: Number(r.body?.reunioes_orfas_candidatas ?? 0),
+        reunioes_orfas_removidas: Number(r.body?.reunioes_orfas_removidas ?? 0),
       });
       if (r.body?.restantes) restantes = true;
     } catch {
