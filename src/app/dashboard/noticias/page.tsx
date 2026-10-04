@@ -5,6 +5,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { cn, formatDateLong } from "@/lib/utils";
 import { classificarFonte, erroCurto, quietudeConferida, type HealthSource } from "@/lib/news-health";
+import { moverNaOrdem } from "@/lib/newsletter-ordem";
 import {
   RASCUNHO_KEY,
   lerRascunho,
@@ -822,6 +823,19 @@ export default function NoticiasPage() {
     setSavedEditionId(null);
   }
 
+  /**
+   * Sobe (-1) ou desce (+1) a notícia na ordem da Newsletter — e com isso a POSIÇÃO no layout
+   * (principal/lateral, e a página). Ver `moverNaOrdem`: salta ids cuja notícia não está visível.
+   */
+  function moverNoticiaNewsletter(id: string, delta: -1 | 1) {
+    const visiveis = new Set(newsletterSelected.map((item) => item.id));
+    setNewsletterSelectedIds((prev) => {
+      const next = moverNaOrdem(prev, id, delta, (x) => visiveis.has(x));
+      return next === prev ? prev : [...next];
+    });
+    setSavedEditionId(null);
+  }
+
   function toggleNewsletterArticleTitleJustify(id: string) {
     setNewsletterArticleTitleJustify((prev) => {
       const next = { ...prev };
@@ -1631,13 +1645,37 @@ export default function NoticiasPage() {
                                 {item.agencia_sigla ?? item.fonte} · {item.titulo}
                               </p>
                             </div>
-                            <button
-                              type="button"
-                              className="btn-secondary px-2 py-1 text-[10px]"
-                              onClick={() => resetNewsletterArticleText(item.id)}
-                            >
-                              Restaurar
-                            </button>
+                            <div className="flex items-center gap-1 shrink-0">
+                              {/* ORDEM = POSIÇÃO no layout (principal/lateral e página). Texto, título,
+                                  imagem e "Justificar" são por notícia e viajam com ela. */}
+                              <button
+                                type="button"
+                                className="btn-secondary px-2 py-1 text-[10px]"
+                                disabled={index === 0}
+                                aria-label={`Subir ${item.titulo}`}
+                                title="Subir uma posição"
+                                onClick={() => moverNoticiaNewsletter(item.id, -1)}
+                              >
+                                ↑
+                              </button>
+                              <button
+                                type="button"
+                                className="btn-secondary px-2 py-1 text-[10px]"
+                                disabled={index === newsletterSelected.length - 1}
+                                aria-label={`Descer ${item.titulo}`}
+                                title="Descer uma posição"
+                                onClick={() => moverNoticiaNewsletter(item.id, 1)}
+                              >
+                                ↓
+                              </button>
+                              <button
+                                type="button"
+                                className="btn-secondary px-2 py-1 text-[10px]"
+                                onClick={() => resetNewsletterArticleText(item.id)}
+                              >
+                                Restaurar
+                              </button>
+                            </div>
                           </div>
                           {/* Título desta notícia NESTA edição. A notícia original não é alterada. */}
                           <div className="flex items-center gap-1.5">
@@ -1683,7 +1721,11 @@ export default function NoticiasPage() {
                           />
                           <div className="flex items-center justify-between text-[10px] text-text-muted">
                             <span>Limite da pagina: {limit} caracteres</span>
-                            <span className={cn(remaining < 80 && "text-warning")}>{remaining} restantes</span>
+                            <span className={cn(remaining < 80 && "text-warning")}>
+                              {remaining >= 0
+                                ? `${remaining} restantes`
+                                : `${-remaining} acima do espaço desta posição — será cortado no documento (mover de volta restaura)`}
+                            </span>
                           </div>
                           {/* Imagem desta notícia no PDF (impressão): original / sem imagem / trocar */}
                           <div className="flex items-center gap-1.5 flex-wrap text-[10px]">
