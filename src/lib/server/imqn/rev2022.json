@@ -1,0 +1,767 @@
+{
+  "versao": "rev2022",
+  "titulo": "Matriz de Avaliação da Maturidade da Qualidade Normativa (IMQN)",
+  "fonte": "Programa INFRA Competitividade — docs/metodologia/Matriz Qualidade Normativa_rev2022.xlsx",
+  "valores_nivel": {
+    "melhoria_continua": 1.0,
+    "gerenciado": 0.7,
+    "inicial": 0.35,
+    "inexistente": 0.0
+  },
+  "classificacao_verificabilidade": "IRIS, 2026-10-04 — proposta para revisão do usuário: 'publica' = comprovável por documento/dado que o órgão publica; 'interna' = só com dado interno.",
+  "dimensoes": [
+    {
+      "id": 1,
+      "codigo": "AIR",
+      "nome": "Análise de Impacto Regulatório (AIR)",
+      "peso": 25.0,
+      "base_legal": "Decreto 10.411/2020; Lei 13.874/2019, art. 5º; Lei 13.848/2019, art. 6º",
+      "base_legal_conferida": false,
+      "criterios": [
+        {
+          "codigo": "AIR_CAP",
+          "nome": "Capacitação",
+          "peso_na_dimensao": 0.3,
+          "coluna_planilha": "C",
+          "verificabilidade": "interna",
+          "resumo_niveis": {
+            "melhoria_continua": "Plano de capacitação em AIR estabelecido e em prática",
+            "gerenciado": "Servidores capacitados em nível introdutório, intermediário e avançado",
+            "inicial": "Pequena quantidade de servidores com capacitação introdutória",
+            "inexistente": "Não há servidores capacitados em AIR no órgão"
+          },
+          "condicoes": [
+            {
+              "id": "AIR_CAP.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I - Capacitações em AIR não estão institucionalizadas;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II - de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 30 de junho de2020;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.INI.III",
+              "nivel": "inicial",
+              "ordem": "III",
+              "texto": "III – de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida.",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Capacitações em AIR estão institucionalizadas, sem um plano formalizado;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 2020;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.GER.III",
+              "nivel": "gerenciado",
+              "ordem": "III",
+              "texto": "III – de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.GER.IV",
+              "nivel": "gerenciado",
+              "ordem": "IV",
+              "texto": "IV – de 25% da 49% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em técnicas de AIR;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "AIR_CAP.MC.III",
+              "nivel": "melhoria_continua",
+              "ordem": "III",
+              "texto": "III – no mínimo 50% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+              "verificabilidade": "interna",
+              "motivo": "percentual e nível de capacitação dos servidores é dado de gestão de pessoas, não publicado"
+            }
+          ]
+        },
+        {
+          "codigo": "AIR_MET",
+          "nome": "Metodologia",
+          "peso_na_dimensao": 0.35,
+          "coluna_planilha": "D",
+          "verificabilidade": "publica",
+          "resumo_niveis": {
+            "melhoria_continua": "Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade das AIRs",
+            "gerenciado": "Há manual instituindo a aplicabilidade institucional da AIR.",
+            "inicial": "AIR institucionalizada conforme Decreto 10.411/2020",
+            "inexistente": "Não há metodologia de AIR estabelecida"
+          },
+          "condicoes": [
+            {
+              "id": "AIR_MET.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I - houve a publicação de normativo interno dispondo sobre a aplicação da AIR na instituição, conforme Decreto nº 10.411, de 2020.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_MET.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Existência de manual ou ato normativo interno instituindo a aplicabilidade institucional da AIR;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_MET.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – Existência de manual ou ato normativo dispondo sobre a participação social posterior relativa à AIR.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_MET.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade da AIR;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_MET.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Metodologia contempla participação social prévia e posterior à elaboração da AIR, conforme complexidade do ato.",
+              "verificabilidade": "publica"
+            }
+          ]
+        },
+        {
+          "codigo": "AIR_PROC",
+          "nome": "Processo",
+          "peso_na_dimensao": 0.35,
+          "coluna_planilha": "E",
+          "verificabilidade": "parcial",
+          "resumo_niveis": {
+            "melhoria_continua": "AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior",
+            "gerenciado": "AIR é realizada sistematicamente, com participação social posterior",
+            "inicial": "AIR é sempre realizada e a dispensa justificada",
+            "inexistente": "AIR realizada eventualmente"
+          },
+          "condicoes": [
+            {
+              "id": "AIR_PROC.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I – AIR é sempre realizada e a dispensa justificada, conforme critérios objetivos estabelecidos, conforme Decreto nº 10.411, de 2020;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_PROC.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II – Todas as AIRs são publicadas e acessíveis ao público na internet;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_PROC.INI.III",
+              "nivel": "inicial",
+              "ordem": "III",
+              "texto": "III – Participação Social é realizada, conforme Decreto nº 10.411, de 2020.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_PROC.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Todas as AIRs são sempre realizadas conforme manual ou ato normativo interno e publicadas e acessíveis ao público na internet;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_PROC.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – O processo de elaboração de AIR está mapeado na instituição;",
+              "verificabilidade": "interna",
+              "motivo": "mapeamento do processo de elaboração de AIR é documento interno"
+            },
+            {
+              "id": "AIR_PROC.GER.III",
+              "nivel": "gerenciado",
+              "ordem": "III",
+              "texto": "III – As AIRs são objeto de participação social posterior, conforme decisão técnica.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AIR_PROC.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Há processo contínuo de avaliação e melhoria do processo de elaboração de AIR;",
+              "verificabilidade": "interna",
+              "motivo": "avaliação e melhoria contínua do processo é atividade interna"
+            },
+            {
+              "id": "AIR_PROC.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Existência de instrumento de avaliação de qualidade das AIRs realizadas;",
+              "verificabilidade": "interna",
+              "motivo": "instrumento de avaliação de qualidade das AIRs não é publicado de forma padronizada"
+            },
+            {
+              "id": "AIR_PROC.MC.III",
+              "nivel": "melhoria_continua",
+              "ordem": "III",
+              "texto": "III – As AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior.",
+              "verificabilidade": "publica"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "codigo": "PS",
+      "nome": "Participação Social",
+      "peso": 15.0,
+      "base_legal": "Lei 13.848/2019, arts. 9º a 11; Lei 13.874/2019; Decreto 10.411/2020",
+      "base_legal_conferida": false,
+      "nota_base_legal": "ALTERADO em relação ao texto herdado do módulo ('Lei 13.848/2019, arts. 19 a 25'): a consulta pública está no art. 9º e a audiência pública no art. 10 da Lei 13.848/2019. Conferir antes de publicar.",
+      "criterios": [
+        {
+          "codigo": "PS",
+          "nome": "Participação Social",
+          "peso_na_dimensao": 1.0,
+          "coluna_planilha": "F",
+          "verificabilidade": "parcial",
+          "resumo_niveis": {
+            "melhoria_continua": "Boas práticas consolidadas no órgão de modo que a efetividade do evento de Participação Social é mensurada.",
+            "gerenciado": "A instituição possui manual de procedimentos e divulga de forma adequada as informações",
+            "inicial": "A instituição atende ao disposto na legislação",
+            "inexistente": "A instituição não atende ao disposto na legislação"
+          },
+          "condicoes": [
+            {
+              "id": "PS.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I - existe dispositivo interno orientando a participação social conforme disposto na legislação específica vigente, tais como as Leis nº 13.848, de 25 de junho de 2019 e nº 13.874, de 20 de setembro de 2019 e o Decreto nº 10.411, de 2020.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PS.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Existência de manual ou ato normativo interno instituindo metodologia e procedimento de participação social;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PS.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – Os relatórios da Ouvidoria e os relatórios do portal consumidor.gov são utilizados para subsidiar as decisões regulatórias;",
+              "verificabilidade": "interna",
+              "motivo": "o USO de relatórios de ouvidoria/consumidor.gov para decidir não aparece em documento público"
+            },
+            {
+              "id": "PS.GER.III",
+              "nivel": "gerenciado",
+              "ordem": "III",
+              "texto": "III – Todas as informações relativas aos processos em andamento são divulgadas no portal do órgão e/ou plataforma Participa Mais Brasil;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PS.GER.IV",
+              "nivel": "gerenciado",
+              "ordem": "IV",
+              "texto": "IV – A efetividade do evento de participação social é avaliada de forma intuitiva.",
+              "verificabilidade": "interna",
+              "motivo": "avaliação 'intuitiva' da efetividade é, por definição, não documentada"
+            },
+            {
+              "id": "PS.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – A instituição realiza eventos de participação social para a construção do conhecimento sobre dada matéria e para o desenvolvimento de propostas;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PS.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Relatórios da Ouvidoria, relatórios do portal consumidor.gov, pesquisas de satisfação e dados de atendimento são utilizados para subsidiar as decisões regulatórias;",
+              "verificabilidade": "interna",
+              "motivo": "o USO de relatórios de ouvidoria/consumidor.gov para decidir não aparece em documento público"
+            },
+            {
+              "id": "PS.MC.III",
+              "nivel": "melhoria_continua",
+              "ordem": "III",
+              "texto": "III – Todos os instrumentos, processos e relatórios contendo as contribuições analisadas são divulgados no portal do órgão e/ou plataforma Participa Mais Brasil;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PS.MC.IV",
+              "nivel": "melhoria_continua",
+              "ordem": "IV",
+              "texto": "IV – A efetividade do evento de participação social é mensurada, conforme metodologia instituída.",
+              "verificabilidade": "interna",
+              "motivo": "mensuração da efetividade da participação social é interna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "codigo": "ESTOQUE",
+      "nome": "Gestão de Estoque Regulatório",
+      "peso": 20.0,
+      "base_legal": "Decreto 10.139/2019, art. 19; Lei 13.874/2019",
+      "base_legal_conferida": false,
+      "criterios": [
+        {
+          "codigo": "ESTOQUE",
+          "nome": "Gestão de Estoque Regulatório",
+          "peso_na_dimensao": 1.0,
+          "coluna_planilha": "G",
+          "verificabilidade": "parcial",
+          "resumo_niveis": {
+            "melhoria_continua": "Processos de gestão de estoque integrados ao planejamento normativo e aos processos de transparência",
+            "gerenciado": "Análise qualitativa dos atos normativos publicados pelo órgão",
+            "inicial": "Levantamento quantitativo dos atos normativos publicados pelo órgão",
+            "inexistente": "Não há levantamento de atos normativos publicados pelo órgão"
+          },
+          "condicoes": [
+            {
+              "id": "ESTOQUE.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I – Normas publicadas e disponíveis de maneira sistematizada para consulta pública na internet;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II – Foi realizado levantamento quantitativo de todas as normas do órgão.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Normas publicadas e disponíveis de maneira sistematizada para consulta pública no portal gov.br;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – Foi realizado levantamento quantitativo de todas as normas do órgão, bem como análise qualitativa, indexação e classificação por tema;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.GER.III",
+              "nivel": "gerenciado",
+              "ordem": "III",
+              "texto": "III – Para toda a nova norma de alto impacto/alta complexidade foi estimado o fardo regulatório; e",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.GER.IV",
+              "nivel": "gerenciado",
+              "ordem": "IV",
+              "texto": "IV – Existe manutenção da consolidação normativa, conforme art. 19 do Decreto nº 10.139, de 28 de novembro de 2019.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – As alterações do estoque regulatório da instituição são priorizadas por meio de uma agenda regulatória;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ESTOQUE.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Todas as novas normas passam pela análise de consolidação e compatibilização de normas vigentes.",
+              "verificabilidade": "interna",
+              "motivo": "a análise de consolidação/compatibilização de CADA nova norma é etapa interna do processo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "codigo": "AGENDA",
+      "nome": "Agenda Regulatória",
+      "peso": 15.0,
+      "base_legal": "Lei 13.848/2019, art. 21",
+      "base_legal_conferida": false,
+      "criterios": [
+        {
+          "codigo": "AGENDA",
+          "nome": "Agenda Regulatória",
+          "peso_na_dimensao": 1.0,
+          "coluna_planilha": "H",
+          "verificabilidade": "parcial",
+          "resumo_niveis": {
+            "melhoria_continua": "Processos da Agenda Regulatória integrados ao planejamento e à gestão do órgão",
+            "gerenciado": "Elaboração, atualização e acompanhamento da Agenda Regulatória institucionalizados",
+            "inicial": "Existe Agenda Regulatória no órgão",
+            "inexistente": "Não há agenda regulatória"
+          },
+          "condicoes": [
+            {
+              "id": "AGENDA.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I – Os temas da agenda regulatória são elencados e priorizados pelos gestores da agência;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II – É avaliada a aderência da proposta de Agenda às políticas públicas.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, porém não respondida e divulgada;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – O Ministério Setorial é oficiado, por meio do Ministro e da Secretaria Finalística, quando da abertura do processo de participação social. O Ministério deve oficiar as agências reguladoras vinculadas, visando a integração das agendas;",
+              "verificabilidade": "interna",
+              "motivo": "ofício ao Ministério setorial é correspondência interna"
+            },
+            {
+              "id": "AGENDA.GER.III",
+              "nivel": "gerenciado",
+              "ordem": "III",
+              "texto": "III – Cumprimento de 50% a 79% da Agenda Regulatória;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.GER.IV",
+              "nivel": "gerenciado",
+              "ordem": "IV",
+              "texto": "IV – A execução da Agenda Regulatória é periodicamente monitorada.",
+              "verificabilidade": "interna",
+              "motivo": "monitoramento SEM divulgação (a divulgação é a condição do nível acima)"
+            },
+            {
+              "id": "AGENDA.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, respondida e divulgada;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Os projetos da Agenda Regulatória estão aderentes ao planejamento estratégico vigente e estão correlacionados ao Plano de Gestão Anual;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.MC.III",
+              "nivel": "melhoria_continua",
+              "ordem": "III",
+              "texto": "III - Cumprimento de, no mínimo, 80% da Agenda Regulatória;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "AGENDA.MC.IV",
+              "nivel": "melhoria_continua",
+              "ordem": "IV",
+              "texto": "IV – A execução da Agenda Regulatória é periodicamente monitorada e divulgada.",
+              "verificabilidade": "publica"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "codigo": "PROCESSO",
+      "nome": "Gestão do Processo Normativo",
+      "peso": 10.0,
+      "base_legal": "Lei 13.848/2019; Decreto 10.411/2020",
+      "base_legal_conferida": false,
+      "criterios": [
+        {
+          "codigo": "PROCESSO",
+          "nome": "Gestão do Processo Normativo",
+          "peso_na_dimensao": 1.0,
+          "coluna_planilha": "I",
+          "verificabilidade": "parcial",
+          "resumo_niveis": {
+            "melhoria_continua": "Indicadores de processo normativo monitorados, e resultados utilizados para a melhoria contínua do processo, integrando o processo normativo à gestão estratégica da instituição",
+            "gerenciado": "As intervenções de participação social estão claramente inseridas no processo",
+            "inicial": "Há documento que institucionaliza o processo normativo",
+            "inexistente": "Não é padronizado"
+          },
+          "condicoes": [
+            {
+              "id": "PROCESSO.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I – O fluxo do processo normativo é formalizado de forma bem definida e clara;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PROCESSO.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II – As instâncias de aprovação estabelecidas são claras e formalizadas.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PROCESSO.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I - as intervenções de participação social estão claramente inseridas no processo.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "PROCESSO.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Indicadores de processo normativo estabelecidos e monitorados;",
+              "verificabilidade": "interna",
+              "motivo": "indicadores do processo normativo são de gestão interna"
+            },
+            {
+              "id": "PROCESSO.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Há processo contínuo de avaliação e melhoria do processo normativo, utilizando o resultado dos indicadores.",
+              "verificabilidade": "interna",
+              "motivo": "melhoria contínua com base em indicadores é atividade interna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "codigo": "ARR",
+      "nome": "Análise de Resultado Regulatório (ARR)",
+      "peso": 15.0,
+      "base_legal": "Decreto 10.411/2020, art. 12",
+      "base_legal_conferida": false,
+      "nota_base_legal": "Artigo herdado do módulo; conferir o dispositivo exato do Decreto 10.411/2020 que trata da ARR.",
+      "criterios": [
+        {
+          "codigo": "ARR_CAP",
+          "nome": "Capacitação",
+          "peso_na_dimensao": 0.3,
+          "coluna_planilha": "J",
+          "verificabilidade": "interna",
+          "resumo_niveis": {
+            "melhoria_continua": "Plano de capacitação em ARR estabelecido e em prática, com 75% dos servidores capacitados",
+            "gerenciado": "50% dos servidores capacitados",
+            "inicial": "25% dos servidores capacitados",
+            "inexistente": "Não há servidores capacitados em ARR no órgão"
+          },
+          "condicoes": [
+            {
+              "id": "ARR_CAP.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I – Capacitações não estão institucionalizadas;",
+              "verificabilidade": "interna",
+              "motivo": "percentual de servidores capacitados em ARR é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "ARR_CAP.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II – de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+              "verificabilidade": "interna",
+              "motivo": "percentual de servidores capacitados em ARR é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "ARR_CAP.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Capacitações institucionalizadas, sem um plano formalizado;",
+              "verificabilidade": "interna",
+              "motivo": "percentual de servidores capacitados em ARR é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "ARR_CAP.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em ARR;",
+              "verificabilidade": "interna",
+              "motivo": "percentual de servidores capacitados em ARR é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "ARR_CAP.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em ARR;",
+              "verificabilidade": "interna",
+              "motivo": "percentual de servidores capacitados em ARR é dado de gestão de pessoas, não publicado"
+            },
+            {
+              "id": "ARR_CAP.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – No mínimo, 75% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+              "verificabilidade": "interna",
+              "motivo": "percentual de servidores capacitados em ARR é dado de gestão de pessoas, não publicado"
+            }
+          ]
+        },
+        {
+          "codigo": "ARR_MET",
+          "nome": "Metodologia",
+          "peso_na_dimensao": 0.35,
+          "coluna_planilha": "K",
+          "verificabilidade": "publica",
+          "resumo_niveis": {
+            "melhoria_continua": "Agenda de ARR construída com participação social e integrada com a Agenda Regulatória",
+            "gerenciado": "ARR institucionalizada no órgão",
+            "inicial": "Agenda de ARR é publicada",
+            "inexistente": "Não há metodologia de ARR estabelecida"
+          },
+          "condicoes": [
+            {
+              "id": "ARR_MET.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I - existe Agenda de ARR, conforme determinado no Decreto nº 10.411, de 2020.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_MET.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – Existência de manual ou ato normativo instituindo a aplicabilidade de ARR no órgão;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_MET.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – Metodologia de elaboração da Agenda de ARR contempla participação social.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_MET.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Metodologia de elaboração de ARR contempla a participação social, conforme complexidade do ato;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_MET.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – Existência de Agenda de ARR integrada com a Agenda Regulatória.",
+              "verificabilidade": "publica"
+            }
+          ]
+        },
+        {
+          "codigo": "ARR_PROC",
+          "nome": "Processo",
+          "peso_na_dimensao": 0.35,
+          "coluna_planilha": "L",
+          "verificabilidade": "parcial",
+          "resumo_niveis": {
+            "melhoria_continua": "A execução da Agenda de ARR é monitorada e há processo contínuo de avaliação e melhoria do processo de elaboração de ARR",
+            "gerenciado": "ARRs de alto impacto/alta complexidade foram submetidas a participação social.",
+            "inicial": "ARRs são publicadas e acessíveis ao público",
+            "inexistente": "ARR é realizada esporadicamente"
+          },
+          "condicoes": [
+            {
+              "id": "ARR_PROC.INI.I",
+              "nivel": "inicial",
+              "ordem": "I",
+              "texto": "I – Todas as ARRs são publicadas e acessíveis ao público na internet;",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_PROC.INI.II",
+              "nivel": "inicial",
+              "ordem": "II",
+              "texto": "II – A agenda de ARR está publicada no site do órgão.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_PROC.GER.I",
+              "nivel": "gerenciado",
+              "ordem": "I",
+              "texto": "I – ARR é realizada conforme manual ou ato normativo;",
+              "verificabilidade": "interna",
+              "motivo": "a conformidade da ARR ao manual não é verificável só pelo documento publicado"
+            },
+            {
+              "id": "ARR_PROC.GER.II",
+              "nivel": "gerenciado",
+              "ordem": "II",
+              "texto": "II – ARRs de alto impacto/alta complexidade foram submetidas à participação social.",
+              "verificabilidade": "publica"
+            },
+            {
+              "id": "ARR_PROC.MC.I",
+              "nivel": "melhoria_continua",
+              "ordem": "I",
+              "texto": "I – Há processo contínuo de avaliação e melhoria do processo de elaboração de ARR;",
+              "verificabilidade": "interna",
+              "motivo": "avaliação e melhoria contínua do processo de ARR é atividade interna"
+            },
+            {
+              "id": "ARR_PROC.MC.II",
+              "nivel": "melhoria_continua",
+              "ordem": "II",
+              "texto": "II – A execução da Agenda de ARR é periodicamente monitorada e divulgada.",
+              "verificabilidade": "publica"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -51,10 +51,32 @@ export interface QualidadeCriterio {
   subcriterios?: string[];
 }
 
+/**
+ * DE ONDE veio a nota — e só duas origens são MEDIDAS.
+ *
+ * ⚠️ Fase 37 (ponto 6 do usuário: "confirme que CURATED_NOTES não aparece como nota medida"). Não
+ * aparecia como tal no rótulo, mas aparecia no NÚMERO: o caminho do banco preenchia dimensão sem
+ * avaliação com a nota curada, e o `score_geral` gravado pelo seed curado de 2026 (escala antiga de
+ * 10 critérios, que a migration IMQN nunca apagou) era PREFERIDO ao calculado. Agora a origem viaja
+ * com a nota, e ranking e prêmio só enxergam `auto` e `manual`.
+ */
+export type OrigemNota =
+  /** Auto-classificação do IRIS (preliminar, sujeita a revisão). */
+  | "auto"
+  /** Avaliação registrada/validada por pessoa. */
+  | "manual"
+  /** Referência curada (CURATED_NOTES / seed de 2026). NÃO é medida. */
+  | "curada"
+  /** Dimensão sem nenhuma avaliação. */
+  | "ausente";
+
+export const ORIGENS_MEDIDAS: ReadonlySet<OrigemNota> = new Set(["auto", "manual"]);
+
 export interface QualidadeNota {
   agencia_sigla: string;
   criterio_id: number;
   nota: number;
+  origem_nota: OrigemNota;
   nivel: QualidadeNivel;
   observacao: string;
   evidencias: string[];
@@ -352,9 +374,12 @@ export const QUALIDADE_CATEGORIAS_PREMIO: QualidadeCategoriaPremio[] = [
   { id: "evolucao", nome: "Prêmio Evolução Regulatória", descricao: "Maior evolução percentual frente à edição anterior.", criterios_avaliados: QUALIDADE_CRITERIOS.map((item) => item.id), tipo: "evolucao" },
 ];
 
-// Fallback preliminar (demo/offline) — 6 dimensões IMQN por agência, na ordem
+// REFERÊNCIA CURADA (demo/offline) — 6 dimensões IMQN por agência, na ordem
 // [AIR, Participação Social, Estoque Regulatório, Agenda Regulatória, Processo Normativo, ARR].
-// Notas ancoradas nos níveis (0/35/70/100). Substituídas pela auto-classificação + curadoria.
+// ⚠️ NÃO é medição: sai com `origem_nota: "curada"`, fica fora do ranking e do prêmio, e a tela a
+// rotula como referência. (O comentário antigo dizia "ancoradas nos níveis 0/35/70/100" e havia 85
+// na tabela — 85 é válido só no modelo DISTRIBUÍDO da planilha: metade Melhoria Contínua, metade
+// Gerenciado. O comentário estava errado, não o número.)
 const CURATED_NOTES: Record<string, number[]> = {
   ANATEL: [100, 85, 85, 85, 70, 70],
   ANVISA: [85, 85, 70, 70, 70, 70],
@@ -470,6 +495,7 @@ export function buildInitialDiagnostics(year = new Date().getFullYear()): Qualid
         data_avaliacao: `${year}-06-01`,
         fonte_avaliacao: "base_curada_2026",
         status_revisao: "preliminar" as const,
+        origem_nota: "curada" as const,
       };
     });
     return {
@@ -505,10 +531,23 @@ export function buildInitialEvidences(year = new Date().getFullYear()): Qualidad
   }));
 }
 
+/** O diagnóstico só tem nota MEDIDA quando TODAS as dimensões são `auto` ou `manual`. */
+export function diagnosticoMedido(diag: QualidadeDiagnostico): boolean {
+  return diag.notas.length > 0 && diag.notas.every((n) => ORIGENS_MEDIDAS.has(n.origem_nota));
+}
+
+/**
+ * Posição de ranking SÓ para quem tem todas as dimensões medidas. Quem tem nota curada ou dimensão
+ * ausente fica com `posicao_ranking: null`, depois dos ranqueados — ainda aparece na tela, mas não
+ * recebe uma posição que nenhuma medição sustenta.
+ */
 export function rankDiagnostics(diagnostics: QualidadeDiagnostico[]) {
-  return [...diagnostics]
-    .sort((a, b) => b.score_geral - a.score_geral)
-    .map((item, index) => ({ ...item, posicao_ranking: index + 1 }));
+  const medidos = diagnostics.filter(diagnosticoMedido).sort((a, b) => b.score_geral - a.score_geral);
+  const fora = diagnostics.filter((d) => !diagnosticoMedido(d)).sort((a, b) => a.agencia_sigla.localeCompare(b.agencia_sigla));
+  return [
+    ...medidos.map((item, index) => ({ ...item, posicao_ranking: index + 1 })),
+    ...fora.map((item) => ({ ...item, posicao_ranking: null })),
+  ];
 }
 
 export function calculateWeightedScore(notes: Array<{ criterio_id: number; nota: number }>) {
@@ -588,18 +627,65 @@ export function detectComplianceFlags(value: string | null | undefined) {
   };
 }
 
-export function buildPremioWinners(diagnostics: QualidadeDiagnostico[], previous?: QualidadeDiagnostico[]) {
+/**
+ * Fração mínima dos critérios de uma categoria que precisa ter evidência VALIDADA para a agência
+ * concorrer (ponto 4 do usuário). 1 = TODOS: um prêmio é afirmação pública, e um critério sem
+ * evidência validada é um pedaço do prêmio sem lastro. É uma constante só, se a decisão mudar.
+ */
+export const COBERTURA_MINIMA_PREMIO = 1;
+
+/** Cobertura de evidência validada de UMA agência numa categoria (0..1). */
+export function coberturaDaCategoria(criterios: number[], validados: ReadonlySet<number> | undefined): number {
+  if (criterios.length === 0) return 0;
+  return criterios.filter((id) => validados?.has(id)).length / criterios.length;
+}
+
+export type StatusPremio = "preliminar" | "sem_base_historica" | "cobertura_insuficiente";
+
+export function buildPremioWinners(
+  diagnostics: QualidadeDiagnostico[],
+  previous?: QualidadeDiagnostico[],
+  /** sigla → ids de critério (dimensão) com evidência VALIDADA. Ausente = ninguém tem. */
+  coberturaValidada?: ReadonlyMap<string, ReadonlySet<number>>,
+) {
   const byPrevious = new Map((previous ?? []).map((item) => [item.agencia_sigla, item.score_geral]));
+  /**
+   * ⚠️ Os dois portões, antes de qualquer ordenação: nota MEDIDA (nunca curada/ausente) e cobertura
+   * de evidência validada ≥ mínimo. Sem candidata, NÃO há vencedora — e o status diz por quê, com a
+   * melhor cobertura observada, para "ninguém venceu" não parecer defeito.
+   */
+  const elegivel = (diag: QualidadeDiagnostico, criterios: number[]) =>
+    diagnosticoMedido(diag) && coberturaDaCategoria(criterios, coberturaValidada?.get(diag.agencia_sigla)) >= COBERTURA_MINIMA_PREMIO;
+  const melhorCobertura = (criterios: number[]) => diagnostics.reduce(
+    (m, d) => Math.max(m, diagnosticoMedido(d) ? coberturaDaCategoria(criterios, coberturaValidada?.get(d.agencia_sigla)) : 0), 0);
   return QUALIDADE_CATEGORIAS_PREMIO.map((category) => {
+    const criterios = category.criterios_avaliados;
+    const elegiveis = diagnostics.filter((d) => elegivel(d, criterios));
+    if (elegiveis.length === 0 && category.tipo !== "evolucao") {
+      return {
+        categoria: category, vencedora: null, score: null,
+        status: "cobertura_insuficiente" as StatusPremio,
+        cobertura_minima: COBERTURA_MINIMA_PREMIO,
+        melhor_cobertura: Number(melhorCobertura(criterios).toFixed(2)),
+      };
+    }
     if (category.tipo === "evolucao") {
       // Etapa67 — SEM base histórica, NÃO há vencedor. `previous` nunca era passado (o service
       // chama buildPremioWinners(ranking) sem o 2º argumento), toda variação dava 0 e a
       // "vencedora do Prêmio Evolução" era a primeira do array — arbitrária. Eleger alguém sem
       // ter medido evolução é fabricar prêmio.
       if (byPrevious.size === 0) {
-        return { categoria: category, vencedora: null, score: null, status: "sem_base_historica" };
+        return { categoria: category, vencedora: null, score: null, status: "sem_base_historica" as StatusPremio };
       }
-      const candidates = diagnostics
+      if (elegiveis.length === 0) {
+        return {
+          categoria: category, vencedora: null, score: null,
+          status: "cobertura_insuficiente" as StatusPremio,
+          cobertura_minima: COBERTURA_MINIMA_PREMIO,
+          melhor_cobertura: Number(melhorCobertura(criterios).toFixed(2)),
+        };
+      }
+      const candidates = elegiveis
         .filter((item) => byPrevious.has(item.agencia_sigla))
         .map((item) => {
           const old = byPrevious.get(item.agencia_sigla);
@@ -607,14 +693,14 @@ export function buildPremioWinners(diagnostics: QualidadeDiagnostico[], previous
           return { ...item, category_score: Number(variation.toFixed(1)) };
         })
         .sort((a, b) => b.category_score - a.category_score);
-      return { categoria: category, vencedora: candidates[0]?.agencia_sigla ?? null, score: candidates[0]?.category_score ?? null, status: "preliminar" };
+      return { categoria: category, vencedora: candidates[0]?.agencia_sigla ?? null, score: candidates[0]?.category_score ?? null, status: "preliminar" as StatusPremio };
     }
 
-    const ranking = diagnostics.map((diag) => {
+    const ranking = elegiveis.map((diag) => {
       const notes = diag.notas.filter((note) => category.criterios_avaliados.includes(note.criterio_id));
       return { ...diag, category_score: notes.length ? Number((notes.reduce((sum, note) => sum + note.nota, 0) / notes.length).toFixed(1)) : diag.score_geral };
     }).sort((a, b) => b.category_score - a.category_score);
-    return { categoria: category, vencedora: ranking[0]?.agencia_sigla ?? null, score: ranking[0]?.category_score ?? null, status: "preliminar" };
+    return { categoria: category, vencedora: ranking[0]?.agencia_sigla ?? null, score: ranking[0]?.category_score ?? null, status: "preliminar" as StatusPremio };
   });
 }
 

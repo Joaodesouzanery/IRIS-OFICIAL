@@ -32,6 +32,29 @@ type DashboardNote = {
   observacao: string;
   status_revisao: string;
   evidencias: string[];
+  /** auto | manual = medida; curada | ausente = NÃO medida (fora do ranking e do prêmio). */
+  origem_nota?: string;
+};
+
+type ImqnNotaComprovada = {
+  comprovada: number;
+  maxima_verificavel_publica: number;
+  maxima_teorica: number;
+  cobertura_verificavel_pct: number;
+  cobertura_comprovada_pct: number;
+};
+
+type ImqnBloco = {
+  versao: string;
+  fonte: string;
+  maxima_verificavel_publica: number;
+  criterios: Array<{
+    dimensao_id: number; dimensao: string; codigo: string; nome: string; peso_na_dimensao: number;
+    peso_dimensao: number; verificabilidade: string; base_legal: string; base_legal_conferida: boolean;
+    nota_base_legal: string | null; condicoes: number; condicoes_publicas: number;
+  }>;
+  por_agencia: Record<string, ImqnNotaComprovada>;
+  avaliacao_por_condicao_disponivel: boolean;
 };
 
 type DashboardRanking = {
@@ -117,7 +140,16 @@ type QualityDashboard = {
   criterios: DashboardCriterion[];
   fontes: Array<{ id: string; nome: string; url: string; criterios_relacionados: number[]; formato?: string | null; atualizacao?: string | null }>;
   categorias: Array<{ id: string; nome: string; descricao: string; criterios_avaliados: number[]; tipo: string }>;
-  premio: Array<{ categoria: { id: string; nome: string }; vencedora: string | null; score: number | null; status: string }>;
+  premio: Array<{
+    categoria: { id: string; nome: string };
+    vencedora: string | null;
+    score: number | null;
+    status: string;
+    cobertura_minima?: number;
+    melhor_cobertura?: number;
+  }>;
+  imqn?: ImqnBloco;
+  cobertura_validada?: Record<string, number[]>;
   evidencias_resumo: DashboardEvidence[];
   legal: { guardrails: string[]; references: Array<{ label: string; url: string }>; disclaimer: string };
   programa?: {
@@ -283,7 +315,9 @@ export function QualidadeRegulatoriaPage({ tab }: { tab: Tab }) {
         </div>
         <div className="flex items-center gap-2">
           <span className="badge badge-gray">Ano-base {data?.ano ?? currentYear}</span>
-          <span className="badge badge-gray">{data?.source === "database" ? "Supabase" : "Fallback curado"}</span>
+          <span className="badge badge-gray">
+            {data?.source === "database" ? "Supabase" : "Referência curada — NÃO medida, fora do ranking"}
+          </span>
         </div>
       </div>
 
@@ -379,6 +413,7 @@ function DashboardView({ data, ranking, criteria }: { data: QualityDashboard; ra
         <Metric label="Score medio" value={data.metricas.score_medio} />
         <Metric label="Peso total" value={data.metricas.pesos_total.toFixed(2)} />
       </div>
+      {data.imqn ? <ImqnComprovadaPanel imqn={data.imqn} /> : null}
       <div className="grid grid-cols-1 xl:grid-cols-[0.9fr_1.1fr] gap-4">
         <RankingPanel ranking={ranking} />
         <MatrixPanel ranking={ranking} criteria={criteria} />
@@ -682,10 +717,14 @@ function PrizeView({ data }: { data: QualityDashboard }) {
               ? `Vencedora preliminar: ${item.vencedora}`
               : item.status === "sem_base_historica"
                 ? "Sem base histórica para comparação — a categoria abre quando houver duas medições."
-                : "Sem vencedora definida"}
+                : item.status === "cobertura_insuficiente"
+                  ? `Sem vencedora: nenhuma agência tem evidência VALIDADA em ${Math.round((item.cobertura_minima ?? 1) * 100)}% dos critérios da categoria (melhor cobertura: ${Math.round((item.melhor_cobertura ?? 0) * 100)}%).`
+                  : "Sem vencedora definida"}
           </p>
           <p className="font-mono text-2xl text-brand mt-3">{item.score !== null ? item.score : "-"}</p>
-          <p className="text-xs text-text-muted mt-2">Resultado preliminar com base nas avaliacoes institucionais do ano.</p>
+          <p className="text-xs text-text-muted mt-2">
+            Só concorre agência com nota MEDIDA (nunca curada) e evidência validada nos critérios da categoria.
+          </p>
         </div>
       ))}
     </section>
@@ -1000,7 +1039,9 @@ function AgencySummary({ agency, profile }: { agency?: DashboardRanking; profile
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div className="card md:col-span-1">
-        <p className="text-xs text-text-muted">#{agency.posicao_ranking} no ranking</p>
+        <p className="text-xs text-text-muted">
+          {agency.posicao_ranking ? `#${agency.posicao_ranking} no ranking` : "Fora do ranking — sem medição completa"}
+        </p>
         <h2 className="text-xl font-semibold text-text-primary mt-1">{agency.agencia_sigla}</h2>
         <p className="font-mono text-3xl text-brand mt-3">{agency.score_geral.toFixed(1)}</p>
         <p className="text-xs text-text-muted mt-2">{profile?.nome_completo}</p>
@@ -1074,6 +1115,92 @@ function Filters(props: {
   );
 }
 
+/**
+ * NOTA COMPROVADA × MÁXIMA POSSÍVEL (IMQN rev2022).
+ *
+ * ⚠️ Três números, e nenhum substitui o outro: a máxima teórica (100), o que fontes PÚBLICAS
+ * conseguem provar no máximo (≈62 — capacitação e parte dos processos só se comprovam com dado
+ * interno), e o que está de fato comprovado com evidência validada. A estimativa automática do
+ * ranking ao lado NÃO é comprovação.
+ */
+function ImqnComprovadaPanel({ imqn }: { imqn: ImqnBloco }) {
+  const linhas = Object.entries(imqn.por_agencia).sort((a, b) => b[1].comprovada - a[1].comprovada);
+  const rotulo: Record<string, string> = { publica: "Pública", parcial: "Parcial", interna: "Interna" };
+  return (
+    <div className="card space-y-4">
+      <div className="flex items-start justify-between gap-3 flex-wrap">
+        <div>
+          <h2 className="text-sm font-semibold text-text-primary">Nota comprovada × máxima possível — IMQN {imqn.versao}</h2>
+          <p className="text-xs text-text-muted mt-1 max-w-3xl">
+            Comprovada = só condições com evidência validada. Fontes públicas conseguem provar no máximo{" "}
+            <strong>{imqn.maxima_verificavel_publica.toFixed(1)}</strong> de 100 — o restante depende de dado interno do órgão.
+          </p>
+        </div>
+        {!imqn.avaliacao_por_condicao_disponivel ? (
+          <span className="badge badge-gray">Avaliação por condição ainda não habilitada (migration pendente)</span>
+        ) : null}
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs">
+          <thead>
+            <tr className="text-left text-text-muted">
+              <th className="py-1 pr-3">Agência</th>
+              <th className="py-1 pr-3 text-right">Comprovada</th>
+              <th className="py-1 pr-3 text-right">Máx. verificável (pública)</th>
+              <th className="py-1 pr-3 text-right">Máx. teórica</th>
+              <th className="py-1 text-right">Cobertura comprovada</th>
+            </tr>
+          </thead>
+          <tbody>
+            {linhas.map(([sigla, n]) => (
+              <tr key={sigla} className="border-t border-border">
+                <td className="py-1 pr-3 font-semibold text-text-primary">{sigla}</td>
+                <td className="py-1 pr-3 text-right font-mono text-brand">{n.comprovada.toFixed(1)}</td>
+                <td className="py-1 pr-3 text-right font-mono">{n.maxima_verificavel_publica.toFixed(1)}</td>
+                <td className="py-1 pr-3 text-right font-mono">{n.maxima_teorica}</td>
+                <td className="py-1 text-right font-mono">{n.cobertura_comprovada_pct.toFixed(1)}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs">
+          <thead>
+            <tr className="text-left text-text-muted">
+              <th className="py-1 pr-3">Critério</th>
+              <th className="py-1 pr-3 text-right">Peso</th>
+              <th className="py-1 pr-3">Verificabilidade</th>
+              <th className="py-1">Base legal</th>
+            </tr>
+          </thead>
+          <tbody>
+            {imqn.criterios.map((c) => (
+              <tr key={c.codigo} className="border-t border-border align-top">
+                <td className="py-1 pr-3 text-text-primary">
+                  {c.dimensao}{c.nome !== c.dimensao ? ` · ${c.nome}` : ""}
+                </td>
+                <td className="py-1 pr-3 text-right font-mono">
+                  {(c.peso_dimensao * c.peso_na_dimensao).toFixed(2)}
+                </td>
+                <td className="py-1 pr-3">
+                  {rotulo[c.verificabilidade] ?? c.verificabilidade}
+                  <span className="text-text-muted"> ({c.condicoes_publicas}/{c.condicoes} condições públicas)</span>
+                </td>
+                <td className="py-1 text-text-secondary">
+                  {c.base_legal}
+                  {!c.base_legal_conferida ? <span className="text-warning"> · a conferir</span> : null}
+                  {c.nota_base_legal ? <span className="block text-warning">{c.nota_base_legal}</span> : null}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function RankingPanel({ ranking, compact = false }: { ranking: DashboardRanking[]; compact?: boolean }) {
   return (
     <div className="card">
@@ -1084,7 +1211,9 @@ function RankingPanel({ ranking, compact = false }: { ranking: DashboardRanking[
       <div className="space-y-2">
         {ranking.slice(0, compact ? 12 : 8).map((item) => (
           <div key={item.agencia_sigla} className="grid grid-cols-[36px_80px_1fr_64px] gap-3 items-center">
-            <span className="text-xs font-mono text-text-muted">{item.posicao_ranking}</span>
+            <span className="text-xs font-mono text-text-muted" title={item.posicao_ranking ? undefined : "Fora do ranking: nota curada ou dimensão sem avaliação"}>
+              {item.posicao_ranking ?? "—"}
+            </span>
             <span className="text-sm font-semibold text-text-primary">{item.agencia_sigla}</span>
             <div className="h-2 rounded-full bg-bg-hover overflow-hidden">
               <div className={cn("h-full", item.status_revisao === "validado" ? "bg-success" : "bg-brand")} style={{ width: `${Math.min(100, item.score_geral)}%` }} />

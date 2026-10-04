@@ -1,0 +1,266 @@
+{
+  "_fonte": "docs/metodologia/Matriz Qualidade Normativa_rev2022.xlsx — extraído com openpyxl em 2026-10-04 (abas MATRIZ, INDICADOR, AIR, PS, Estoque, Agenda, Processo, ARR). Textos com espaços normalizados; nada reescrito.",
+  "valores_nivel": {
+    "melhoria_continua": 1.0,
+    "gerenciado": 0.7,
+    "inicial": 0.35,
+    "inexistente": 0.0
+  },
+  "pesos_dimensao": {
+    "AIR": 25.0,
+    "Participação Social": 15.0,
+    "Gestão de Estoque Regulatório": 20.0,
+    "Agenda Regulatória": 15.0,
+    "Gestão do Processo Normativo": 10.0,
+    "ARR": 15.0
+  },
+  "pesos_subcriterio": {
+    "AIR": [
+      0.3,
+      0.35,
+      0.35
+    ],
+    "ARR": [
+      0.3,
+      0.35,
+      0.35
+    ]
+  },
+  "colunas_criterios": [
+    "Capacitação",
+    "Metodologia",
+    "Processo",
+    "Participação Social",
+    "Gestão de Estoque Regulatório",
+    "Agenda Regulatória",
+    "Gestão do Processo Normativo",
+    "Capacitação",
+    "Metodologia",
+    "Processo"
+  ],
+  "formulas": {
+    "18": "=(M4*C3*C5+M6*C3*C7+M8*C3*C9+M10*C3*C11)+(D3*M4*D5+M6*D7*D3+M8*D3*D9+M10*D3*D11)+(E3*M4*E5+E3*M6*E7+E3*M8*E9+E3*M10*E11)",
+    "19": "=M4*F5+M6*F7+M8*F9+M10*F11",
+    "20": "=M4*G5+M6*G7+M8*G9+M10*G11",
+    "21": "=M4*H5+M6*H7+M8*H9+M10*H11",
+    "22": "=M4*I5+M6*I7+M8*I9+M10*I11",
+    "23": "=(J3*M4*J5+J3*M6*J7+J3*M8*J9+J3*M10*J11)+(K3*M4*K5+K3*M6*K7+K3*M8*K9+K3*M10*K11)+(L3*M4*L5+L3*M6*L7+L3*M8*L9+L3*M10*L11)"
+  },
+  "resumo_niveis": {
+    "C:Capacitação": {
+      "melhoria_continua": "Plano de capacitação em AIR estabelecido e em prática",
+      "gerenciado": "Servidores capacitados em nível introdutório, intermediário e avançado",
+      "inicial": "Pequena quantidade de servidores com capacitação introdutória",
+      "inexistente": "Não há servidores capacitados em AIR no órgão"
+    },
+    "D:Metodologia": {
+      "melhoria_continua": "Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade das AIRs",
+      "gerenciado": "Há manual instituindo a aplicabilidade institucional da AIR.",
+      "inicial": "AIR institucionalizada conforme Decreto 10.411/2020",
+      "inexistente": "Não há metodologia de AIR estabelecida"
+    },
+    "E:Processo": {
+      "melhoria_continua": "AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior",
+      "gerenciado": "AIR é realizada sistematicamente, com participação social posterior",
+      "inicial": "AIR é sempre realizada e a dispensa justificada",
+      "inexistente": "AIR realizada eventualmente"
+    },
+    "F:Participação Social": {
+      "melhoria_continua": "Boas práticas consolidadas no órgão de modo que a efetividade do evento de Participação Social é mensurada.",
+      "gerenciado": "A instituição possui manual de procedimentos e divulga de forma adequada as informações",
+      "inicial": "A instituição atende ao disposto na legislação",
+      "inexistente": "A instituição não atende ao disposto na legislação"
+    },
+    "G:Gestão de Estoque Regulatório": {
+      "melhoria_continua": "Processos de gestão de estoque integrados ao planejamento normativo e aos processos de transparência",
+      "gerenciado": "Análise qualitativa dos atos normativos publicados pelo órgão",
+      "inicial": "Levantamento quantitativo dos atos normativos publicados pelo órgão",
+      "inexistente": "Não há levantamento de atos normativos publicados pelo órgão"
+    },
+    "H:Agenda Regulatória": {
+      "melhoria_continua": "Processos da Agenda Regulatória integrados ao planejamento e à gestão do órgão",
+      "gerenciado": "Elaboração, atualização e acompanhamento da Agenda Regulatória institucionalizados",
+      "inicial": "Existe Agenda Regulatória no órgão",
+      "inexistente": "Não há agenda regulatória"
+    },
+    "I:Gestão do Processo Normativo": {
+      "melhoria_continua": "Indicadores de processo normativo monitorados, e resultados utilizados para a melhoria contínua do processo, integrando o processo normativo à gestão estratégica da instituição",
+      "gerenciado": "As intervenções de participação social estão claramente inseridas no processo",
+      "inicial": "Há documento que institucionaliza o processo normativo",
+      "inexistente": "Não é padronizado"
+    },
+    "J:Capacitação": {
+      "melhoria_continua": "Plano de capacitação em ARR estabelecido e em prática, com 75% dos servidores capacitados",
+      "gerenciado": "50% dos servidores capacitados",
+      "inicial": "25% dos servidores capacitados",
+      "inexistente": "Não há servidores capacitados em ARR no órgão"
+    },
+    "K:Metodologia": {
+      "melhoria_continua": "Agenda de ARR construída com participação social e integrada com a Agenda Regulatória",
+      "gerenciado": "ARR institucionalizada no órgão",
+      "inicial": "Agenda de ARR é publicada",
+      "inexistente": "Não há metodologia de ARR estabelecida"
+    },
+    "L:Processo": {
+      "melhoria_continua": "A execução da Agenda de ARR é monitorada e há processo contínuo de avaliação e melhoria do processo de elaboração de ARR",
+      "gerenciado": "ARRs de alto impacto/alta complexidade foram submetidas a participação social.",
+      "inicial": "ARRs são publicadas e acessíveis ao público",
+      "inexistente": "ARR é realizada esporadicamente"
+    }
+  },
+  "condicoes": {
+    "AIR_CAP": {
+      "melhoria_continua": [
+        "I – Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em técnicas de AIR;",
+        "II – no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+        "III – no mínimo 50% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos)."
+      ],
+      "gerenciado": [
+        "I – Capacitações em AIR estão institucionalizadas, sem um plano formalizado;",
+        "II – no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 2020;",
+        "III – de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+        "IV – de 25% da 49% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos)."
+      ],
+      "inicial": [
+        "I - Capacitações em AIR não estão institucionalizadas;",
+        "II - de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 30 de junho de2020;",
+        "III – de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida."
+      ]
+    },
+    "AIR_MET": {
+      "melhoria_continua": [
+        "I – Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade da AIR;",
+        "II – Metodologia contempla participação social prévia e posterior à elaboração da AIR, conforme complexidade do ato."
+      ],
+      "gerenciado": [
+        "I – Existência de manual ou ato normativo interno instituindo a aplicabilidade institucional da AIR;",
+        "II – Existência de manual ou ato normativo dispondo sobre a participação social posterior relativa à AIR."
+      ],
+      "inicial": [
+        "I - houve a publicação de normativo interno dispondo sobre a aplicação da AIR na instituição, conforme Decreto nº 10.411, de 2020."
+      ]
+    },
+    "AIR_PROC": {
+      "melhoria_continua": [
+        "I – Há processo contínuo de avaliação e melhoria do processo de elaboração de AIR;",
+        "II – Existência de instrumento de avaliação de qualidade das AIRs realizadas;",
+        "III – As AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior."
+      ],
+      "gerenciado": [
+        "I – Todas as AIRs são sempre realizadas conforme manual ou ato normativo interno e publicadas e acessíveis ao público na internet;",
+        "II – O processo de elaboração de AIR está mapeado na instituição;",
+        "III – As AIRs são objeto de participação social posterior, conforme decisão técnica."
+      ],
+      "inicial": [
+        "I – AIR é sempre realizada e a dispensa justificada, conforme critérios objetivos estabelecidos, conforme Decreto nº 10.411, de 2020;",
+        "II – Todas as AIRs são publicadas e acessíveis ao público na internet;",
+        "III – Participação Social é realizada, conforme Decreto nº 10.411, de 2020."
+      ]
+    },
+    "PS": {
+      "melhoria_continua": [
+        "I – A instituição realiza eventos de participação social para a construção do conhecimento sobre dada matéria e para o desenvolvimento de propostas;",
+        "II – Relatórios da Ouvidoria, relatórios do portal consumidor.gov, pesquisas de satisfação e dados de atendimento são utilizados para subsidiar as decisões regulatórias;",
+        "III – Todos os instrumentos, processos e relatórios contendo as contribuições analisadas são divulgados no portal do órgão e/ou plataforma Participa Mais Brasil;",
+        "IV – A efetividade do evento de participação social é mensurada, conforme metodologia instituída."
+      ],
+      "gerenciado": [
+        "I – Existência de manual ou ato normativo interno instituindo metodologia e procedimento de participação social;",
+        "II – Os relatórios da Ouvidoria e os relatórios do portal consumidor.gov são utilizados para subsidiar as decisões regulatórias;",
+        "III – Todas as informações relativas aos processos em andamento são divulgadas no portal do órgão e/ou plataforma Participa Mais Brasil;",
+        "IV – A efetividade do evento de participação social é avaliada de forma intuitiva."
+      ],
+      "inicial": [
+        "I - existe dispositivo interno orientando a participação social conforme disposto na legislação específica vigente, tais como as Leis nº 13.848, de 25 de junho de 2019 e nº 13.874, de 20 de setembro de 2019 e o Decreto nº 10.411, de 2020."
+      ]
+    },
+    "ESTOQUE": {
+      "melhoria_continua": [
+        "I – As alterações do estoque regulatório da instituição são priorizadas por meio de uma agenda regulatória;",
+        "II – Todas as novas normas passam pela análise de consolidação e compatibilização de normas vigentes."
+      ],
+      "gerenciado": [
+        "I – Normas publicadas e disponíveis de maneira sistematizada para consulta pública no portal gov.br;",
+        "II – Foi realizado levantamento quantitativo de todas as normas do órgão, bem como análise qualitativa, indexação e classificação por tema;",
+        "III – Para toda a nova norma de alto impacto/alta complexidade foi estimado o fardo regulatório; e",
+        "IV – Existe manutenção da consolidação normativa, conforme art. 19 do Decreto nº 10.139, de 28 de novembro de 2019."
+      ],
+      "inicial": [
+        "I – Normas publicadas e disponíveis de maneira sistematizada para consulta pública na internet;",
+        "II – Foi realizado levantamento quantitativo de todas as normas do órgão."
+      ]
+    },
+    "AGENDA": {
+      "melhoria_continua": [
+        "I – A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, respondida e divulgada;",
+        "II – Os projetos da Agenda Regulatória estão aderentes ao planejamento estratégico vigente e estão correlacionados ao Plano de Gestão Anual;",
+        "III - Cumprimento de, no mínimo, 80% da Agenda Regulatória;",
+        "IV – A execução da Agenda Regulatória é periodicamente monitorada e divulgada."
+      ],
+      "gerenciado": [
+        "I – A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, porém não respondida e divulgada;",
+        "II – O Ministério Setorial é oficiado, por meio do Ministro e da Secretaria Finalística, quando da abertura do processo de participação social. O Ministério deve oficiar as agências reguladoras vinculadas, visando a integração das agendas;",
+        "III – Cumprimento de 50% a 79% da Agenda Regulatória;",
+        "IV – A execução da Agenda Regulatória é periodicamente monitorada."
+      ],
+      "inicial": [
+        "I – Os temas da agenda regulatória são elencados e priorizados pelos gestores da agência;",
+        "II – É avaliada a aderência da proposta de Agenda às políticas públicas."
+      ]
+    },
+    "PROCESSO": {
+      "melhoria_continua": [
+        "I – Indicadores de processo normativo estabelecidos e monitorados;",
+        "II – Há processo contínuo de avaliação e melhoria do processo normativo, utilizando o resultado dos indicadores."
+      ],
+      "gerenciado": [
+        "I - as intervenções de participação social estão claramente inseridas no processo."
+      ],
+      "inicial": [
+        "I – O fluxo do processo normativo é formalizado de forma bem definida e clara;",
+        "II – As instâncias de aprovação estabelecidas são claras e formalizadas."
+      ]
+    },
+    "ARR_CAP": {
+      "melhoria_continua": [
+        "I – Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em ARR;",
+        "II – No mínimo, 75% dos servidores envolvidos em elaboração de regulação capacitados em ARR."
+      ],
+      "gerenciado": [
+        "I – Capacitações institucionalizadas, sem um plano formalizado;",
+        "II – de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em ARR;"
+      ],
+      "inicial": [
+        "I – Capacitações não estão institucionalizadas;",
+        "II – de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em ARR."
+      ]
+    },
+    "ARR_MET": {
+      "melhoria_continua": [
+        "I – Metodologia de elaboração de ARR contempla a participação social, conforme complexidade do ato;",
+        "II – Existência de Agenda de ARR integrada com a Agenda Regulatória."
+      ],
+      "gerenciado": [
+        "I – Existência de manual ou ato normativo instituindo a aplicabilidade de ARR no órgão;",
+        "II – Metodologia de elaboração da Agenda de ARR contempla participação social."
+      ],
+      "inicial": [
+        "I - existe Agenda de ARR, conforme determinado no Decreto nº 10.411, de 2020."
+      ]
+    },
+    "ARR_PROC": {
+      "melhoria_continua": [
+        "I – Há processo contínuo de avaliação e melhoria do processo de elaboração de ARR;",
+        "II – A execução da Agenda de ARR é periodicamente monitorada e divulgada."
+      ],
+      "gerenciado": [
+        "I – ARR é realizada conforme manual ou ato normativo;",
+        "II – ARRs de alto impacto/alta complexidade foram submetidas à participação social."
+      ],
+      "inicial": [
+        "I – Todas as ARRs são publicadas e acessíveis ao público na internet;",
+        "II – A agenda de ARR está publicada no site do órgão."
+      ]
+    }
+  }
+}

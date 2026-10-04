@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { loadQualidadeDashboardData } from "@/lib/server/qualidade-regulatoria-service";
+import { diagnosticoMedido } from "@/lib/server/qualidade-regulatoria";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +14,10 @@ export async function GET(req: NextRequest) {
       "posicao",
       "agencia",
       "score_geral",
+      // ⚠️ "nao" = a linha usa referência curada ou tem dimensão sem avaliação: fora do ranking.
+      "nota_medida",
+      "imqn_comprovada",
+      "imqn_maxima_verificavel_publica",
       "status_revisao",
       ...dashboard.criterios.map((criterio) => `criterio_${criterio.id}_${slug(criterio.nome)}`),
       "destaques",
@@ -24,6 +29,9 @@ export async function GET(req: NextRequest) {
         item.posicao_ranking ?? "",
         item.agencia_sigla,
         item.score_geral,
+        diagnosticoMedido(item) ? "sim" : "nao",
+        dashboard.imqn.por_agencia[item.agencia_sigla]?.comprovada ?? "",
+        dashboard.imqn.por_agencia[item.agencia_sigla]?.maxima_verificavel_publica ?? "",
         item.status_revisao,
         ...dashboard.criterios.map((criterio) => item.notas.find((note) => note.criterio_id === criterio.id)?.nota ?? ""),
         item.destaques_positivos.join("; "),

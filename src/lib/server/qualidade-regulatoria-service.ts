@@ -19,7 +19,10 @@ import {
   type QualidadeNivel,
   type QualidadeNota,
   type QualidadeStatusRevisao,
+  type OrigemNota,
 } from "@/lib/server/qualidade-regulatoria";
+import { IMQN_REV2022, notaComprovadaEMaxima, type NotaComprovada } from "@/lib/server/imqn";
+import { lerTudo } from "@/lib/server/select-all-paged";
 
 type AvaliacaoRow = {
   id: string;
@@ -91,6 +94,26 @@ export type QualidadeDashboardData = {
     pesos_total: number;
   };
   source: "database" | "fallback_code";
+  /**
+   * IMQN rev2022 — a matriz versionada e, por agência, NOTA COMPROVADA × MÁXIMA POSSÍVEL.
+   * `comprovada` só conta condições com evidência VALIDADA; `maxima_verificavel_publica` é o teto
+   * que fontes públicas conseguem provar (≈62 de 100 na rev2022).
+   */
+  imqn: {
+    versao: string;
+    fonte: string;
+    maxima_verificavel_publica: number;
+    criterios: Array<{
+      dimensao_id: number; dimensao: string; codigo: string; nome: string; peso_na_dimensao: number;
+      peso_dimensao: number; verificabilidade: string; base_legal: string; base_legal_conferida: boolean;
+      nota_base_legal: string | null; condicoes: number; condicoes_publicas: number;
+    }>;
+    por_agencia: Record<string, NotaComprovada>;
+    /** false = a tabela de avaliação por condição ainda não existe (migration não aplicada). */
+    avaliacao_por_condicao_disponivel: boolean;
+  };
+  /** Cobertura de evidência validada por agência (dimensões com ≥1 evidência validada). */
+  cobertura_validada: Record<string, number[]>;
 };
 
 export async function loadQualidadeDashboardData(year: number): Promise<QualidadeDashboardData> {
@@ -110,7 +133,10 @@ export async function loadQualidadeDashboardData(year: number): Promise<Qualidad
       db.from("qualidade_regulatoria_premio_categorias").select("*").eq("ativo", true).order("id"),
     ]);
 
-    if (avaliacoesResult.error || !avaliacoesResult.data?.length) return fallback;
+    const extras = await carregarComprovacao(db, year);
+    if (avaliacoesResult.error || !avaliacoesResult.data?.length) {
+      return buildDataset(year, fallbackDiagnostics, fallbackEvidence, "fallback_code", undefined, undefined, undefined, undefined, extras);
+    }
 
     const agencias = agenciasResult.error || !agenciasResult.data?.length ? QUALIDADE_AGENCIAS : agenciasResult.data as typeof QUALIDADE_AGENCIAS;
     // Usa os critérios do DB quando existem, mas mescla a descrição dos NÍVEIS e os
@@ -132,10 +158,67 @@ export async function loadQualidadeDashboardData(year: number): Promise<Qualidad
       fallbackDiagnostics,
     );
 
-    return buildDataset(year, diagnostics, evidencias, "database", agencias, criterios, fontes, categorias);
+    return buildDataset(year, diagnostics, evidencias, "database", agencias, criterios, fontes, categorias, extras);
   } catch {
     return fallback;
   }
+}
+
+type Comprovacao = {
+  coberturaValidada: Map<string, Set<number>>;
+  condicoesComprovadas: Map<string, Set<string>>;
+  avaliacaoPorCondicaoDisponivel: boolean;
+};
+
+/**
+ * O que está COMPROVADO: evidência validada por (agência, dimensão) e condição IMQN atendida com
+ * evidência validada.
+ *
+ * ⚠️ `lerTudo`, não o `.limit(500)` da lista de evidências da tela: a cobertura é o PORTÃO do prêmio,
+ * e um corte silencioso do PostgREST faria agência com evidência validada parecer descoberta.
+ *
+ * ⚠️ Degrada sem a migration rev2022: tabela ausente → nenhuma condição comprovada (nota comprovada
+ * 0), e o flag diz que a avaliação por condição ainda não existe — em vez de afirmar "0 comprovado".
+ */
+async function carregarComprovacao(db: ReturnType<typeof createSupabaseServerClient>, year: number): Promise<Comprovacao> {
+  const coberturaValidada = new Map<string, Set<number>>();
+  const condicoesComprovadas = new Map<string, Set<string>>();
+  let avaliacaoPorCondicaoDisponivel = false;
+  try {
+    const ev = await lerTudo<{ agencia_sigla: string; criterio_id: number | null }>(
+      () => db.from("qualidade_regulatoria_evidencias").select("agencia_sigla, criterio_id")
+        .eq("status_revisao", "validado").order("id"),
+      "qualidade/evidencias-validadas");
+    for (const r of ev.data ?? []) {
+      if (!r.agencia_sigla || r.criterio_id == null) continue;
+      const set = coberturaValidada.get(r.agencia_sigla) ?? new Set<number>();
+      set.add(Number(r.criterio_id));
+      coberturaValidada.set(r.agencia_sigla, set);
+    }
+  } catch { /* sem cobertura: ninguém concorre ao prêmio — o lado seguro */ }
+  try {
+    const cond = await lerTudo<{ agencia_sigla: string; condicao_id: string; dimensao?: unknown }>(
+      () => db.from("qualidade_imqn_condicoes_avaliadas").select("agencia_sigla, condicao_id")
+        .eq("ano", year).eq("versao", IMQN_REV2022.versao).eq("atendida", true)
+        .eq("status_revisao", "validado").not("evidencia_url", "is", null).order("id"),
+      "qualidade/condicoes-comprovadas");
+    if (!cond.error) {
+      avaliacaoPorCondicaoDisponivel = true;
+      for (const r of cond.data ?? []) {
+        const set = condicoesComprovadas.get(r.agencia_sigla) ?? new Set<string>();
+        set.add(r.condicao_id);
+        condicoesComprovadas.set(r.agencia_sigla, set);
+      }
+    }
+  } catch { /* tabela ausente: avaliação por condição indisponível */ }
+  return { coberturaValidada, condicoesComprovadas, avaliacaoPorCondicaoDisponivel };
+}
+
+/** A origem de uma linha do banco, pelo `fonte_avaliacao` que a gravou. */
+function origemDaLinha(fonte: string | null): OrigemNota {
+  if (fonte === "iris_auto_classificacao") return "auto";
+  if (!fonte || fonte === "base_curada_2026" || fonte.startsWith("fallback")) return "curada";
+  return "manual";
 }
 
 function buildDiagnosticsFromRows(
@@ -157,16 +240,22 @@ function buildDiagnosticsFromRows(
       const row = rowsByCriterion.get(criterion.id);
       const fallbackNote = fallbackDiag?.notas.find((note) => note.criterio_id === criterion.id);
       const evidenceRows = evidenceByAgencyCriterion.get(`${agencia.sigla}:${criterion.id}`) ?? [];
-      if (!row) return fallbackNote ?? {
+      /**
+       * ⚠️ Dimensão SEM avaliação é AUSENTE — não recebe a nota curada. Antes ela era preenchida com
+       * `CURATED_NOTES`, dentro de um conjunto rotulado `source: "database"`: a referência curada
+       * entrava no ranking misturada com a medição, sem nada que a distinguisse.
+       */
+      if (!row) return {
         agencia_sigla: agencia.sigla,
         criterio_id: criterion.id,
         nota: 0,
-        nivel: "inicial",
-        observacao: "Criterio sem avaliacao registrada.",
+        nivel: "inexistente",
+        observacao: "Dimensão sem avaliação registrada — fora do ranking até ser avaliada.",
         evidencias: [],
         data_avaliacao: `${year}-06-01`,
-        fonte_avaliacao: "fallback_incompleto",
+        fonte_avaliacao: "sem_avaliacao",
         status_revisao: "preliminar",
+        origem_nota: "ausente",
       };
       return {
         agencia_sigla: row.agencia_sigla,
@@ -176,8 +265,9 @@ function buildDiagnosticsFromRows(
         observacao: row.observacao ?? fallbackNote?.observacao ?? "Avaliacao institucional registrada no modulo Qualidade Regulatoria.",
         evidencias: evidenceRows.map((evidence) => evidence.url).filter(Boolean),
         data_avaliacao: String(row.updated_at ?? new Date().toISOString()).slice(0, 10),
-        fonte_avaliacao: row.fonte_avaliacao ?? "base_curada_2026",
+        fonte_avaliacao: row.fonte_avaliacao ?? "sem_fonte",
         status_revisao: row.status_revisao,
+        origem_nota: origemDaLinha(row.fonte_avaliacao),
       };
     });
     const diagnostic = diagnosticByAgency.get(agencia.sigla);
@@ -186,7 +276,13 @@ function buildDiagnosticsFromRows(
     return {
       agencia_sigla: agencia.sigla,
       notas: notes,
-      score_geral: diagnostic ? Number(Number(diagnostic.score_geral).toFixed(1)) : calculateWeightedScore(notes),
+      /**
+       * ⚠️ SEMPRE calculado das notas. O `score_geral` gravado em `qualidade_regulatoria_diagnosticos`
+       * veio do SEED CURADO de 2026 (na escala antiga de 10 critérios) — a migration IMQN apagou as
+       * avaliações e NÃO apagou os diagnósticos, e nenhum código escreve nessa tabela. Ele era
+       * preferido ao cálculo: o ranking exibia a ordem CURADA com as notas MEDIDAS ao lado.
+       */
+      score_geral: calculateWeightedScore(notes),
       posicao_ranking: diagnostic?.posicao_ranking ?? null,
       destaques_positivos: diagnostic?.destaques_positivos?.length ? diagnostic.destaques_positivos : fallbackDiag?.destaques_positivos ?? [],
       areas_melhoria: diagnostic?.areas_melhoria?.length ? diagnostic.areas_melhoria : fallbackDiag?.areas_melhoria ?? [],
@@ -207,8 +303,15 @@ function buildDataset(
   criteria = QUALIDADE_CRITERIOS,
   sources = QUALIDADE_FONTES,
   categories = QUALIDADE_CATEGORIAS_PREMIO,
+  extras: Comprovacao = { coberturaValidada: new Map(), condicoesComprovadas: new Map(), avaliacaoPorCondicaoDisponivel: false },
 ): QualidadeDashboardData {
   const ranking = rankDiagnostics(diagnostics);
+  const imqnPorAgencia: Record<string, NotaComprovada> = {};
+  for (const agency of agencies) {
+    imqnPorAgencia[agency.sigla] = notaComprovadaEMaxima(
+      IMQN_REV2022, extras.condicoesComprovadas.get(agency.sigla) ?? new Set());
+  }
+  const maximaPublica = notaComprovadaEMaxima(IMQN_REV2022, new Set()).maxima_verificavel_publica;
   const enrichedAgencies = agencies.map((agency) => {
     const diagnostic = ranking.find((item) => item.agencia_sigla === agency.sigla);
     return {
@@ -248,7 +351,8 @@ function buildDataset(
     criterios: enrichedCriteria,
     fontes: sources,
     categorias: categories,
-    premio: buildPremioWinners(ranking),
+    // ⚠️ O prêmio recebe a cobertura VALIDADA: sem ela (ou com nota curada) não há vencedora.
+    premio: buildPremioWinners(ranking, undefined, extras.coberturaValidada),
     evidencias_resumo: evidences.slice(0, 240),
     matriz: ranking.map((diag) => ({
       agencia_sigla: diag.agencia_sigla,
@@ -276,6 +380,29 @@ function buildDataset(
       pesos_total: Number(criteria.reduce((sum, item) => sum + Number(item.peso), 0).toFixed(2)),
     },
     source,
+    imqn: {
+      versao: IMQN_REV2022.versao,
+      fonte: IMQN_REV2022.fonte,
+      maxima_verificavel_publica: maximaPublica,
+      criterios: IMQN_REV2022.dimensoes.flatMap((d) => d.criterios.map((c) => ({
+        dimensao_id: d.id,
+        dimensao: d.nome,
+        codigo: c.codigo,
+        nome: c.nome,
+        peso_na_dimensao: c.peso_na_dimensao,
+        peso_dimensao: d.peso,
+        verificabilidade: c.verificabilidade,
+        base_legal: d.base_legal,
+        base_legal_conferida: d.base_legal_conferida,
+        nota_base_legal: d.nota_base_legal ?? null,
+        condicoes: c.condicoes.length,
+        condicoes_publicas: c.condicoes.filter((x) => x.verificabilidade === "publica").length,
+      }))),
+      por_agencia: imqnPorAgencia,
+      avaliacao_por_condicao_disponivel: extras.avaliacaoPorCondicaoDisponivel,
+    },
+    cobertura_validada: Object.fromEntries(
+      [...extras.coberturaValidada.entries()].map(([sigla, set]) => [sigla, [...set].sort((a, b) => a - b)])),
   };
 }
 
