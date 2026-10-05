@@ -167,8 +167,10 @@ export async function GET(req: NextRequest) {
     db.from("diretor_candidatos").select("id", { count: "exact", head: true }).eq("review_status", "pendente"),
     db.from("monitoramento_itens").select("id", { count: "exact", head: true }).eq("status", "novo"),
     db.from("coleta_execucoes").select("dominio, status, started_at, itens, novos, error_message").order("started_at", { ascending: false }).limit(12),
-    lerTudo(() => db.from("diretores").select("id, agencia_id, nome").eq("review_status", "aprovado").order("id"), "saude/diretores"),
-    lerTudo(() => db.from("mandatos").select("id, diretor_id").order("id"), "saude/mandatos"),
+    lerTudo(() => db.from("diretores").select("id, agencia_id, nome, situacao").eq("review_status", "aprovado").order("id"), "saude/diretores"),
+    // Fase 39 — sem `automatico`: o motor de voto o ignora, então contá-lo aqui calava o aviso
+    // justamente para quem a inferência não alcança (o mesmo filtro de getActiveDiretoresForVote).
+    lerTudo(() => db.from("mandatos").select("id, diretor_id").neq("fonte_dado", "automatico").order("id"), "saude/mandatos"),
     // Auditoria por AMOSTRAGEM do auto-confirm: quantas deliberações entraram sozinhas
     // nos últimos 7 dias (raw_extraction.auto_confirmado=true) + amostra p/ conferência.
     db.from("deliberacoes")
@@ -274,9 +276,11 @@ export async function GET(req: NextRequest) {
   // ── Diretores SEM mandato (bloqueia a inferência de voto por mandato) ─────
   // getActiveDiretoresForVote retorna [] quando não há mandato na data → docs de
   // unanimidade sem nomes explícitos geram 0 voto. Aqui o gap fica visível.
-  const diretoresAprovados: Array<{ id: string; agencia_id: string | null; nome: string }> = diretoresRes.data ?? [];
+  const diretoresAprovados: Array<{ id: string; agencia_id: string | null; nome: string; situacao?: string | null }> = diretoresRes.data ?? [];
   const diretoresComMandato = new Set((mandatosRes.data ?? []).map((m: { diretor_id: string }) => m.diretor_id));
-  const semMandato = diretoresAprovados.filter((d) => !diretoresComMandato.has(d.id));
+  // Ex-diretor marcado `inativo` sem data conhecida não é lacuna a preencher (Fase 39: decisão do
+  // usuário para Amaral Filho e Rafael Vitale — inativos, sem mandato inventado).
+  const semMandato = diretoresAprovados.filter((d) => !diretoresComMandato.has(d.id) && d.situacao !== "inativo");
   const siglaPorAgencia = new Map(agencias.map((a) => [a.id, a.sigla]));
   const diretoresSemMandato = semMandato.map((d) => ({
     diretor_id: d.id,

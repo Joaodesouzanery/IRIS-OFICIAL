@@ -3,6 +3,37 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 37, 04/out/2026).
 
+## 🔴 FASE 39 (05/out/2026) — datas, depois votos (o cadastro está FECHADO)
+
+O SQL B confirmou os mandatos (ANM e ANTT batem com o DOU) e o SQL A provou que os 81 votos "fora do
+roster" da ANTT eram DATA (282, 286, 1.035, 289) + 53 votos individuais datados pelo corpo do texto.
+
+**Ordem em produção (cada passo só depois do anterior):**
+- [ ] **Aplicar `supabase/migrations/20261005120000_cadastro_fase39.sql`** — remove os mandatos
+      `automatico` de Alex e Guilherme (com rastro em `diretores.metadata`), Marcelo → designado,
+      Amaral Filho e Rafael Vitale → inativos (sem mandato inventado). Conferência no fim do arquivo.
+- [ ] **Rodar Tudo** — agora grava a referência do site sozinho (1× por run, na sobra, antes do
+      placar). O banner mostra "referência do site: N de 3 em dia" e o livro-razão por agência.
+- [ ] **Datas a corrigir → Medir** nas três janelas; conferir a amostra do de/para; **Aplicar**:
+      · *Reuniões pela listagem* (ANTT/ARTESP) — portão: a listagem reproduz as datas conferidas
+        (`gabarito/datas-conferidas.json`: ANTT 1.024ª/264ª; ARTESP 1177ª/236ª/1201ª) e a data fica
+        entre as vizinhas da série;
+      · *Atas da ANM pelo preâmbulo* — portão: reproduz 79ª/81ª/82ª/83ª (e 32ª/34ª REP);
+      · *Votos individuais da ANTT* — fecho/assinatura SEI; só se o signatário tinha mandato na data.
+- [ ] **Revoto → Simular**: só aplicar se as atas da ANM reproduzem o gabarito E a data gravada já
+      é a certa (o botão só aparece assim). Revoto só na ANM; ANTT só completar (Severino).
+- [ ] Rodar `docs/qa-fase39.sql` e mandar o resultado. Esperado: bloco ① sem as 4 reuniões, ③ sem
+      números com duas datas, ④ mães = certificadas.
+- ⚠️ O que mudou de comportamento: `extractAnttDate` (voto individual) sem âncora devolve **nulo**
+      — não mais a "primeira data do texto". Upload novo assim cai em revisão de data, nunca em 2001.
+- ⚠️ A certificação do placar passou a contar só registro final e voto efetivo (a régua do
+      gabarito). Parte das 26 divergências do QA de 04/10 era do instrumento — o número vai mudar.
+- ⚠️ ARTESP no gabarito de VOTOS: a data da 1177ª está provada (Deliberações 22 e 23, 13/01/2026),
+      mas a contagem de votos exige a reunião inteira. Para entrar: quantas deliberações a 1177ª tem
+      no site e o PDF da Deliberação 03. (O site da ARTESP bloqueia o ambiente local com o Imperva.)
+- José Fernando: mandato 01/09/2025 × DOU 29/08/2025 — não afeta 2026, fica como nota.
+- **Meta de parada:** ANM ≥ 80% no livro e gabarito ≥ 4/5 — senão reavaliar a estratégia.
+
 ## 🔴 FASE 38 (04/out/2026) — Convergência: o livro-razão e o critério de "pronto"
 
 **O que entrou (portão 1 + livro mínimo):** a conferência ao vivo agora GRAVA a referência do site

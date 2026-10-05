@@ -161,8 +161,9 @@ export async function GET(req: NextRequest) {
       selectVotosComFallback<Array<{ deliberacao_id: string; diretor_id: string | null; is_nominal: boolean; proveniencia?: string | null }>>(
         async (c) => { const r = await lerTudo(() => db.from("votos").select(`id, ${c}`).order("id"), "completude/votos"); votosTruncados = r.truncated; return r; },
         "deliberacao_id, diretor_id, is_nominal, proveniencia", "deliberacao_id, diretor_id, is_nominal"),
-      lerTudo(() => db.from("diretores").select("id, agencia_id").eq("review_status", "aprovado").order("id"), "completude/diretores"),
-      lerTudo(() => db.from("mandatos").select("id, diretor_id").order("id"), "completude/mandatos"),
+      lerTudo(() => db.from("diretores").select("id, agencia_id, situacao").eq("review_status", "aprovado").order("id"), "completude/diretores"),
+      // Fase 39 — sem `automatico`, o mesmo filtro do motor de voto (contá-lo calava o aviso).
+      lerTudo(() => db.from("mandatos").select("id, diretor_id").neq("fonte_dado", "automatico").order("id"), "completude/mandatos"),
       /**
        * ⚠️ `pendente` OU `conflito` — porque é isso que BLOQUEIA voto.
        *
@@ -407,11 +408,11 @@ export async function GET(req: NextRequest) {
 
   // Diretores: aprovados, com ≥1 voto, sem mandato.
   const comMandato = new Set((mandatosRes.data ?? []).map((m: { diretor_id: string }) => m.diretor_id));
-  for (const d of (diretoresRes.data ?? []) as Array<{ id: string; agencia_id: string | null }>) {
+  for (const d of (diretoresRes.data ?? []) as Array<{ id: string; agencia_id: string | null; situacao?: string | null }>) {
     const e = ag(d.agencia_id);
     if (!e) { contarDescarte(d.agencia_id, "diretores"); continue; }
     e.diretores.aprovados += 1;
-    if (!comMandato.has(d.id)) e.diretores.sem_mandato += 1;
+    if (!comMandato.has(d.id) && d.situacao !== "inativo") e.diretores.sem_mandato += 1;
     if (d.agencia_id && delibDaAgenciaComVoto.get(d.agencia_id)?.has(d.id)) e.diretores.com_voto += 1;
   }
   for (const c of candidatosRes.data ?? []) {
