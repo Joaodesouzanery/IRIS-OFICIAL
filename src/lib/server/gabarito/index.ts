@@ -17,6 +17,7 @@
  */
 
 import baseline from "./votos-por-diretor-baseline.json";
+import datasConferidas from "./datas-conferidas.json";
 import type { AtaDoGabarito } from "@/lib/server/certificacao-gabarito";
 
 /** As chaves de prosa do arquivo (`_comment`, `_causas_das_divergencias`) não são atas. */
@@ -59,3 +60,21 @@ export function numeroDaReuniao(valor: string | null | undefined): number | null
   const n = Number(m[1]);
   return Number.isFinite(n) && n > 0 ? n : null;
 }
+
+
+export interface DataConferida {
+  agencia: string;
+  reuniao: string;
+  serie: string | null;
+  data_reuniao: string;
+  /** Os PDFs do harness de certificação que provam a data. */
+  fontes: string[];
+}
+
+/**
+ * Fase 39 — as DATAS de reunião conferidas contra os PDFs do harness (os 164). São o portão das
+ * correções de data, e são mais que as 5 atas do gabarito de votos: a data de uma reunião se prova
+ * com UMA deliberação dela, a contagem de votos exige a reunião inteira. É por isso que a ARTESP
+ * entra aqui (1177ª, 236ª, 1201ª) e ainda não no gabarito de votos.
+ */
+export const DATAS_CONFERIDAS: DataConferida[] = (datasConferidas as { datas: DataConferida[] }).datas;

@@ -1,0 +1,16 @@
+{
+  "_comment": "Fase 39 — datas de REUNIÃO conferidas contra os PDFs oficiais do harness de certificação (src/lib/server/__tests__/fixtures/votos/gabarito.json, os 164). São o PORTÃO das correções de data: uma fonte (listagem do site, preâmbulo) só corrige uma agência se reproduzir TODAS as datas dela aqui. Só ata e deliberação entram — pauta não prova a data da reunião. A etapa233 reprova se uma data daqui divergir do harness.",
+  "datas": [
+    { "agencia": "ANM", "reuniao": "32ª REP", "serie": "extraordinaria", "data_reuniao": "2025-07-16", "fontes": ["anm-ata-32-extraordinaria.pdf"] },
+    { "agencia": "ANM", "reuniao": "34ª REP", "serie": "extraordinaria", "data_reuniao": "2025-11-19", "fontes": ["anm-ata-34-rep.pdf"] },
+    { "agencia": "ANM", "reuniao": "79ª ROP", "serie": "ordinaria", "data_reuniao": "2025-11-26", "fontes": ["anm-ata-79-rop.pdf"] },
+    { "agencia": "ANM", "reuniao": "81ª ROP", "serie": "ordinaria", "data_reuniao": "2026-01-28", "fontes": ["anm-ata-81-rop.pdf"] },
+    { "agencia": "ANM", "reuniao": "82ª ROP", "serie": "ordinaria", "data_reuniao": "2026-02-23", "fontes": ["anm-ata-82-ordinaria.pdf"] },
+    { "agencia": "ANM", "reuniao": "83ª ROP", "serie": "ordinaria", "data_reuniao": "2026-03-25", "fontes": ["anm-ata-83-rop.pdf"] },
+    { "agencia": "ANTT", "reuniao": "1.024ª", "serie": "ordinaria", "data_reuniao": "2026-01-19", "fontes": ["antt-ata-1024.pdf"] },
+    { "agencia": "ANTT", "reuniao": "264ª RDE", "serie": "eletronica", "data_reuniao": "2026-01-19", "fontes": ["antt-ata-264-rde.pdf"] },
+    { "agencia": "ARTESP", "reuniao": "1177ª", "serie": "ordinaria", "data_reuniao": "2026-01-13", "fontes": ["artesp-delib-22.pdf", "artesp-delib-23.pdf"] },
+    { "agencia": "ARTESP", "reuniao": "236ª", "serie": "extraordinaria", "data_reuniao": "2026-04-15", "fontes": ["artesp-delib-303.pdf"] },
+    { "agencia": "ARTESP", "reuniao": "1201ª", "serie": "ordinaria", "data_reuniao": "2026-07-01", "fontes": ["artesp-ata-1201.pdf", "artesp-delib-487.pdf"] }
+  ]
+}

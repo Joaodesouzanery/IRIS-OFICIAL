@@ -22,7 +22,7 @@ import { lerEmLotes } from "@/lib/server/ler-em-lotes";
 import { exigirEscrita } from "@/lib/server/escrita-checada";
 import { ensureReuniao, serieDaReuniao, type SerieReuniao } from "@/lib/server/reunioes";
 import { numeroDaListagem } from "@/lib/server/antt-data-da-listagem";
-import { GABARITO_POR_ARQUIVO } from "@/lib/server/gabarito";
+import { DATAS_CONFERIDAS } from "@/lib/server/gabarito";
 import { carregarMandatosJanela } from "@/lib/server/mandatos-janela";
 import { extractAnmMeetingMetadata } from "@/lib/server/regulatory-documents";
 import { extractDataReuniaoAncorada } from "@/lib/server/nlp-extractor";
@@ -97,8 +97,9 @@ export async function POST(req: NextRequest) {
     data_reuniao: d.data_reuniao ? String(d.data_reuniao).slice(0, 10) : null,
     documento_pai_id: (d.documento_pai_id as string | null) ?? null,
   }));
-  const atasDoGabarito = Object.values(GABARITO_POR_ARQUIVO)
-    .map((a) => ({ agencia: a.agencia, reuniao: a.reuniao, data_reuniao: a.data_reuniao }));
+  // O portão: as datas conferidas contra os PDFs do harness (11 reuniões, as três agências).
+  const atasDoGabarito = DATAS_CONFERIDAS
+    .map((a) => ({ agencia: a.agencia, reuniao: a.reuniao, data_reuniao: a.data_reuniao, serie: a.serie }));
 
   // ─── O plano da janela ────────────────────────────────────────────────────
   let plano: PlanoDeDatas;

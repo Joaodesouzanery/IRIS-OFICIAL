@@ -205,7 +205,7 @@ export function planejarVotosAntt(entrada: {
  */
 export function planejarAtasAnm(entrada: {
   maes: ReadonlyArray<DelibParaData & { dataDoTexto: string | null }>;
-  atasDoGabarito: ReadonlyArray<{ agencia: string; reuniao: string; data_reuniao: string }>;
+  atasDoGabarito: ReadonlyArray<{ agencia: string; reuniao: string; data_reuniao: string; serie?: string | null }>;
 }): PlanoDeDatas {
   const atas = entrada.atasDoGabarito.filter((a) => String(a.agencia).trim().toUpperCase() === "ANM");
   const divergem: VereditoDoPortao["divergem"] = [];
@@ -213,7 +213,9 @@ export function planejarAtasAnm(entrada: {
   let conferidas = 0;
   for (const ata of atas) {
     const n = ordinalDeTextoDeReuniao(ata.reuniao);
-    const mae = entrada.maes.find((m) => m.agencia === "ANM" && ordinalDeTextoDeReuniao(m.numero_reuniao) === n && m.dataDoTexto);
+    const serieDaAta = (ata as { serie?: string | null }).serie ?? null;
+    const mae = entrada.maes.find((m) => m.agencia === "ANM" && ordinalDeTextoDeReuniao(m.numero_reuniao) === n
+      && seriesCasam(m.serie, serieDaAta) && m.dataDoTexto);
     if (!mae) continue;
     conferidas++;
     if (mae.dataDoTexto === ata.data_reuniao) batem++;
