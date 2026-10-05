@@ -16,7 +16,7 @@
 import { resolverPresentesRoster } from "@/lib/server/presentes-roster";
 import { NextRequest, NextResponse } from "next/server";
 import { isDemo } from "@/lib/server/is-demo";
-import { isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
+import { isCronRequest, isDemoRequest, requireAdminOrCron } from "@/lib/server/request-guards";
 import { hasBudget, budgetFromRequest, msLeft } from "@/lib/server/time-budget";
 import {
   RESERVA_POR_ESCRITA_MS, planejarGravacaoDeDiagnostico, patchJaAplicado,
@@ -119,7 +119,7 @@ export async function POST(req: NextRequest) {
 
   const body = (await req.json().catch(() => ({}))) as {
     dry_run?: unknown; agencia_id?: unknown; year?: unknown; completar_parcial?: unknown;
-    revoto?: unknown; bloco?: unknown;
+    revoto?: unknown; bloco?: unknown; aplicar?: unknown;
   };
   const dryRun = body.dry_run !== false; // default true — aplicar exige dry_run:false explícito
   /**
@@ -157,6 +157,27 @@ export async function POST(req: NextRequest) {
     ? Number(body.bloco)
     : null;
   const agenciaFiltro = typeof body.agencia_id === "string" && body.agencia_id ? body.agencia_id : null;
+  /**
+   * ═══ Fase 39 — APLICAR PELO PAINEL (decisão do usuário: Medir → Aplicar) ═══
+   *
+   * As constantes `REVOTO_LIGADO`/`COMPLETAR_PARCIAL` seguem `false`: a esteira (cron/Rodar Tudo)
+   * continua sem escrever. O que muda é que o usuário, depois de ver a SIMULAÇÃO contra o gabarito
+   * reproduzir, pode aplicar pelo painel — e só nestas condições, todas juntas:
+   *   · `aplicar: true` e `dry_run: false` explícitos;
+   *   · sessão de admin (nunca o Bearer do cron — a esteira não liga isto sozinha);
+   *   · UMA agência (`agencia_id`): "revoto só na ANM" é a ordem do plano, e um clique não pode
+   *     alcançar uma agência cuja simulação ninguém viu.
+   */
+  const aplicarPeloPainel = body.aplicar === true && !dryRun && !isCronRequest(req)
+    && Boolean(agenciaFiltro) && (completarParcial || modoRevoto);
+  if (body.aplicar === true && !aplicarPeloPainel) {
+    return NextResponse.json(
+      { error: "aplicar exige dry_run:false, sessão de admin, um agencia_id e o modo revoto ou completar_parcial" },
+      { status: 400 },
+    );
+  }
+  const escreveRevoto = REVOTO_LIGADO || aplicarPeloPainel;
+  const escreveParcial = COMPLETAR_PARCIAL || aplicarPeloPainel;
   const year = typeof body.year === "string" && YEAR_RE.test(body.year) ? body.year : null;
 
   const deadlineAt = Date.now() + Math.min(budgetFromRequest(req), 50_000);
@@ -851,7 +872,7 @@ export async function POST(req: NextRequest) {
        * é apagado — o inverso deixaria voto removido sem rastro, que é exatamente o que o usuário
        * proibiu ("não apague os votos antigos sem rastro").
        */
-      if (!REVOTO_LIGADO || dryRun || decisao.apagar.length === 0) continue;
+      if (!escreveRevoto || dryRun || decisao.apagar.length === 0) continue;
       const rastroDesta = rastroDoRevoto({
         deliberacaoId: String(d.id), votos: linhas, apagar: decisao.apagar,
         dataDaDeliberacao: (d.data_reuniao as string | null) ?? null,
@@ -1051,7 +1072,7 @@ export async function POST(req: NextRequest) {
       rowsParaEscrever = rows.filter((r) => autorizados.has(r.diretor_id));
       // ⚠️ A CONSTANTE. Enquanto ela for `false`, esta rodada é medição e mais nada — e é isso que
       // o usuário pediu: "a medição tem de bater com o gabarito antes de eu ligar".
-      if (!COMPLETAR_PARCIAL) rowsParaEscrever = [];
+      if (!escreveParcial) rowsParaEscrever = [];
     }
 
     // O delta em VOTOS, invertido: quantos votos a regra antiga teria fabricado neste item
@@ -1364,6 +1385,8 @@ export async function POST(req: NextRequest) {
      */
     revoto_modo: modoRevoto,
     revoto_ligado: REVOTO_LIGADO,
+    /** Esta chamada escreveu porque o usuário aplicou pelo painel (as constantes seguem `false`). */
+    aplicado_pelo_painel: aplicarPeloPainel,
     revoto_apagariam: revotoApagariam,
     revoto_apagados: revotoApagados,
     revoto_roster_suspeito: revotoRosterSuspeito,

@@ -212,10 +212,12 @@ describe("etapa221 · o modo no materializador: exclusivo, auditado antes de apa
     expect(MAT).toMatch(/db\.from\("votos"\)\.delete\(\)\.eq\("deliberacao_id", d\.id\)\.eq\("diretor_id", diretorId\)/);
   });
 
-  it("a constante e o dry_run guardam a escrita, e o rastro é montado de todo jeito", () => {
-    expect(MAT).toMatch(/if \(!REVOTO_LIGADO \|\| dryRun \|\| decisao\.apagar\.length === 0\) continue;/);
+  it("a autorização e o dry_run guardam a escrita, e o rastro é montado de todo jeito", () => {
+    // Fase 39 — autorização = constante (false) OU o Aplicar do painel (admin, uma agência).
+    expect(MAT).toMatch(/if \(!escreveRevoto \|\| dryRun \|\| decisao\.apagar\.length === 0\) continue;/);
+    expect(MAT).toMatch(/const escreveRevoto = REVOTO_LIGADO \|\| aplicarPeloPainel;/);
     const iRastro = MAT.indexOf("revotoRastro.push(...rastroDoRevoto({");
-    const iPortao = MAT.indexOf("if (!REVOTO_LIGADO || dryRun || decisao.apagar.length === 0) continue;");
+    const iPortao = MAT.indexOf("if (!escreveRevoto || dryRun || decisao.apagar.length === 0) continue;");
     expect(iRastro, "o rastro passou a ser montado só quando escreve — e é ele que se confere antes")
       .toBeLessThan(iPortao);
   });

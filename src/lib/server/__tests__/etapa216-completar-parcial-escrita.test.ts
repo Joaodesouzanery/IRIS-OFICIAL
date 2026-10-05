@@ -45,8 +45,18 @@ describe("etapa216 · ⚠️ a escrita nasce DESLIGADA", () => {
       .not.toMatch(/export const COMPLETAR_PARCIAL/);
   });
 
-  it("e com ela desligada o lote a escrever é ESVAZIADO, não apenas 'não gravado'", () => {
-    expect(MAT).toMatch(/if \(!COMPLETAR_PARCIAL\) rowsParaEscrever = \[\];/);
+  it("e sem escrita autorizada o lote a escrever é ESVAZIADO, não apenas 'não gravado'", () => {
+    // Fase 39 — a autorização é a constante OU o Aplicar do painel (a constante segue false).
+    expect(MAT).toMatch(/if \(!escreveParcial\) rowsParaEscrever = \[\];/);
+    expect(MAT).toMatch(/const escreveParcial = COMPLETAR_PARCIAL \|\| aplicarPeloPainel;/);
+  });
+
+  it("⚠️ Fase 39 — o Aplicar do painel exige TUDO junto: aplicar, dry_run:false, admin (nunca cron) e UMA agência", () => {
+    expect(MAT).toMatch(
+      /const aplicarPeloPainel = body\.aplicar === true && !dryRun && !isCronRequest\(req\)\s*&& Boolean\(agenciaFiltro\) && \(completarParcial \|\| modoRevoto\);/,
+    );
+    // Pedido de aplicar que não cumpre as condições é RECUSADO (400), não rebaixado a medição em silêncio.
+    expect(MAT).toMatch(/if \(body\.aplicar === true && !aplicarPeloPainel\) \{[\s\S]{0,250}status: 400/);
   });
 
   it("a resposta declara o estado da constante ao lado do número", () => {
