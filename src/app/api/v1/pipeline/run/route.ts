@@ -66,6 +66,7 @@ import { POST as reprocessIgnoradosPOST } from "../../admin/upload/reprocess-ign
 import { POST as redatarPOST } from "../../admin/deliberacoes/redatar/route";
 import { POST as mojibakePOST } from "../../admin/documentos/mojibake/route";
 import { GET as placarGET } from "../../admin/placar/route";
+import { GET as coberturaAoVivoGET } from "../../admin/cobertura-ao-vivo/route";
 import { POST as reResultarPOST } from "../../admin/deliberacoes/re-resultar/route";
 import { POST as empresasBackfillPOST } from "../../empresas/backfill/route";
 import { POST as qualidadeDerivadasPOST } from "../../qualidade-regulatoria/coletas/derivadas/run/route";
@@ -97,6 +98,16 @@ const TETO_REPARAR_NOMES_MS = 16_000;
  */
 const SOBRA_MINIMA_PLACAR_MS = 12_000;
 const TETO_PLACAR_MS = 20_000;
+/**
+ * Fase 39 — a REFERÊNCIA do site (portão 1 do livro-razão) entra na esteira como o placar: na SOBRA,
+ * fora do plano de passos (o orçamento de cabeça está saturado — medido na Fase 20, um 13º passo
+ * tira de alguém). A mínima cobre ARTESP + ANM (4 páginas em paralelo, ~10s) e a gravação; a ANTT
+ * usa o que sobrar e, se ficar parcial, a tentativa seguinte pula o que já foi gravado.
+ */
+const SOBRA_MINIMA_REFERENCIA_MS = 25_000;
+const TETO_REFERENCIA_MS = 45_000;
+/** Tentativas por execução até as três agências ficarem em dia. */
+const MAX_TENTATIVAS_REFERENCIA = 3;
 
 export const maxDuration = 120;
 
@@ -940,6 +951,40 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
     }
   }
 
+  // ═══ Fase 39 — A REFERÊNCIA DO SITE, 1× por execução, ANTES do placar ═════════
+  //
+  // O livro-razão mede contra o que o SITE publica. Sem esta conferência a referência só atualizava
+  // quando alguém clicava "Conferir ao vivo" — e o livro mostrava 77 reuniões com o portão 1 aberto
+  // (a decisão do usuário foi rodá-la no Rodar Tudo). Vem ANTES do placar para ele já ler a
+  // referência nova. "1× por run" = até as três agências ficarem em dia, no máximo 3 tentativas.
+  const referenciaEmDiaNaRun = Number(execucao?.contadores?.["referencia_conferida"] ?? 0) > 0;
+  const tentativasDeReferencia = Number(execucao?.contadores?.["referencia_tentativas"] ?? 0);
+  const sobraParaReferencia = saldo();
+  if (referenciaEmDiaNaRun) {
+    etapas.referencia = { fora_do_plano: "referência do site já conferida nesta execução — 1× por run" };
+  } else if (tentativasDeReferencia >= MAX_TENTATIVAS_REFERENCIA) {
+    etapas.referencia = { fora_do_plano: `referência: ${MAX_TENTATIVAS_REFERENCIA} tentativas nesta execução — a próxima run tenta de novo` };
+  } else if (sobraParaReferencia >= SOBRA_MINIMA_REFERENCIA_MS) {
+    try {
+      const r = await chamarComSobra(
+        coberturaAoVivoGET,
+        `/api/v1/admin/cobertura-ao-vivo?year=${new Date().getFullYear()}`,
+        Math.min(sobraParaReferencia, TETO_REFERENCIA_MS),
+      );
+      const emDia = Array.isArray(r.body?.referencia_em_dia) ? (r.body.referencia_em_dia as string[]) : [];
+      etapas.referencia = anotar(r, "referencia", {
+        referencia_tentativas: 1,
+        referencia_agencias_em_dia: emDia.length,
+        // Só conta como "conferida" quando as TRÊS ficaram em dia; parcial tenta de novo.
+        referencia_conferida: emDia.length >= 3 ? 1 : 0,
+      });
+    } catch {
+      etapas.referencia = { erro: "conferência da referência falhou nesta rodada" };
+    }
+  } else {
+    etapas.referencia = { fora_do_plano: "sem sobra para conferir a referência do site nesta rodada" };
+  }
+
   // ═══ Fase 34 — O PLACAR, na sobra que restar ════════════════════════════════
   //
   // É o denominador comum que faltava: quantas reuniões do ano têm colegiado completo, e quantos
@@ -1041,6 +1086,23 @@ async function run(req: NextRequest, origem: "ui" | "cron") {
          * ⚠️ `conferidas` viaja SEMPRE ao lado de `batem`: "5 batem" sem o denominador não distingue
          * "5 de 5" de "5 de 40", e o gabarito cobre cinco atas, não o acervo.
          */
+        /**
+         * Fase 39 — O LIVRO-RAZÃO por agência, uma chave NUMÉRICA por sigla (objeto morre em
+         * `agregarEtapas`). Retrato: o placar o recalcula inteiro a cada chamada.
+         */
+        ...Object.fromEntries(
+          Object.entries(((r.body?.livro_razao as { por_agencia?: Record<string, Record<string, unknown>> } | undefined)?.por_agencia) ?? {})
+            .flatMap(([sigla, v]) => {
+              const k = sigla.trim().toLowerCase();
+              const ref = (v.referencia ?? {}) as { disponivel?: boolean };
+              return [
+                [`livro_prontas_${k}`, Number(v.prontas ?? 0)],
+                [`livro_total_${k}`, Number(v.total ?? 0)],
+                [`livro_trabalho_nosso_${k}`, Number(v.trabalho_nosso ?? 0)],
+                [`livro_referencia_ok_${k}`, ref.disponivel ? 1 : 0],
+              ];
+            }),
+        ),
         certificacao_atas_conferidas: Number((r.body?.certificacao_no_banco as { conferidas?: number } | undefined)?.conferidas ?? 0),
         certificacao_atas_batem: Number((r.body?.certificacao_no_banco as { batem?: number } | undefined)?.batem ?? 0),
         certificacao_divergencias: ((r.body?.certificacao_no_banco as { divergem?: unknown[] } | undefined)?.divergem ?? []).length,

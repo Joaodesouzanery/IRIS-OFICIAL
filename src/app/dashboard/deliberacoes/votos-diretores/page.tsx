@@ -746,6 +746,31 @@ export default function VotosDiretoresPage() {
           return `cobertura por agência: ${porSigla.map((x) => `${x.sigla} ${x.pct}%`).join(" · ")}`;
         })(),
         /**
+         * Fase 39 — O LIVRO-RAZÃO na manchete: reuniões PRONTAS (os seis portões verdes) contra o
+         * denominador do site, por agência. Sem referência, diz "referência pendente" — nunca "0 de N".
+         */
+        (() => {
+          const porSigla = (["ANM", "ANTT", "ARTESP"] as const)
+            .map((sigla) => {
+              const k = sigla.toLowerCase();
+              return {
+                sigla,
+                prontas: totais[`livro_prontas_${k}`], total: totais[`livro_total_${k}`],
+                nosso: totais[`livro_trabalho_nosso_${k}`], refOk: totais[`livro_referencia_ok_${k}`],
+              };
+            })
+            .filter((x) => typeof x.total === "number");
+          if (porSigla.length === 0) return null;
+          return "livro-razão (reuniões prontas, meta 95%): " + porSigla.map((x) =>
+            x.refOk === 1
+              ? `${x.sigla} ${x.prontas ?? 0} de ${x.total}${(x.nosso ?? 0) > 0 ? ` (${x.nosso} com trabalho nosso)` : ""}`
+              : `${x.sigla} referência pendente`).join(" · ");
+        })(),
+        typeof totais.referencia_tentativas === "number" && totais.referencia_tentativas > 0
+          ? `referência do site: ${totais.referencia_agencias_em_dia ?? 0} de 3 agências em dia` +
+            (totais.referencia_conferida ? "" : ` (${totais.referencia_tentativas} tentativa(s) nesta execução; a ANTT pode precisar de mais de uma)`)
+          : null,
+        /**
          * ⚠️ A CERTIFICAÇÃO, e ela vem com o denominador e com o escopo.
          *
          * "5 atas batem" sem dizer de quantas, e sem dizer que o gabarito cobre CINCO atas e não o

@@ -17,7 +17,7 @@ import { discoverAntt2026Meetings } from "@/lib/server/antt-2026-collector";
 import { parseArtespReunioes } from "@/lib/server/monitoring";
 import { resilientFetchText } from "@/lib/server/resilient-fetch";
 import { looksLikeChallenge } from "@/lib/server/monitoring";
-import { HOBBY_BUDGET_MS } from "@/lib/server/time-budget";
+import { budgetFromRequest, msLeft } from "@/lib/server/time-budget";
 import { lerTudo } from "@/lib/server/select-all-paged";
 import {
   gravarReferencia, referenciaDaAnm, referenciaDaAntt, referenciaDaArtesp,
@@ -82,9 +82,16 @@ function toNums(values: Array<string | null | undefined>): number[] {
   return [...set].sort((a, b) => a - b);
 }
 
-async function fetchTextSafe(url: string): Promise<string> {
+/** Teto de uma página. ⚠️ Nunca maior que o saldo: a conferência roda dentro da fatia da esteira. */
+const TETO_DE_PAGINA_MS = 20_000;
+/** O que fica guardado depois das páginas — a gravação e a leitura do banco ainda precisam rodar. */
+const RESERVA_DE_FECHO_MS = 6_000;
+/** Reunião da ANTT com decisão publicada há mais disto não muda: a página não precisa ser re-buscada. */
+const ANTT_ESTAVEL_DIAS = 45;
+
+async function fetchTextSafe(url: string, timeoutMs = TETO_DE_PAGINA_MS): Promise<string> {
   try {
-    return await resilientFetchText(url, { timeoutMs: 20_000, retries: 1 });
+    return await resilientFetchText(url, { timeoutMs: Math.max(1_000, Math.min(TETO_DE_PAGINA_MS, timeoutMs)), retries: timeoutMs >= 15_000 ? 1 : 0 });
   } catch {
     return "";
   }
@@ -107,7 +114,7 @@ function erroDeBusca(html: string, nomeDaFonte: string): string | null {
 
 export async function GET(req: NextRequest) {
   if (isDemo() || isDemoRequest(req)) {
-    return NextResponse.json({ modo: "demo", ano: 2026, por_agencia: [], referencia_gravada: {}, alertas: [] });
+    return NextResponse.json({ modo: "demo", ano: 2026, por_agencia: [], referencia_gravada: {}, referencia_em_dia: [], alertas: [] });
   }
   const guard = await requireAdminOrCron(req);
   if (guard) return guard;
@@ -116,31 +123,26 @@ export async function GET(req: NextRequest) {
   const year = yearParam && YEAR_RE.test(yearParam) ? yearParam : "2026";
   const de = `${year}-01-01`;
   const ate = `${year}-12-31`;
-  const deadlineAt = Date.now() + HOBBY_BUDGET_MS;
+  // Fase 39 — honra `budget_ms`: desde que virou passo do Rodar Tudo, roda dentro da FATIA da rodada.
+  const deadlineAt = Date.now() + budgetFromRequest(req);
+  const saldoParaPaginas = () => Math.max(0, msLeft(deadlineAt) - RESERVA_DE_FECHO_MS);
 
   const { createSupabaseServerClient } = await import("@/lib/supabase/server");
   const db = createSupabaseServerClient();
+  const { data: agencias } = await db.from("agencias").select("id, sigla").in("sigla", ["ANTT", "ARTESP", "ANM"]);
+  const idBySigla = new Map((agencias ?? []).map((a) => [a.sigla as string, a.id as string]));
 
-  // ─── Reuniões DO SITE (ao vivo) ───────────────────────────────────────────
-  // ANTT: discovery já filtra 2026 e pagina o portal.
-  let anttSite: number[] = [];
-  let anttErro: string | null = null;
-  // Fase 7 — o `truncated` era DESCARTADO aqui. Enumeração pela metade + banco pela metade dava
-  // "✓ Cobertura completa": a prova de completude afirmava exatamente o que não sabia. Agora o
-  // flag sobe até a tela, e uma enumeração parcial nunca pode ser lida como prova.
-  let anttParcial = false;
-  let anttLinhas: LinhaDeReferencia[] = [];
-  try {
-    const disc = await discoverAntt2026Meetings({ maxMeetings: 200, maxPages: 20, deadlineAt });
-    anttSite = toNums(disc.meetings.map((m) => m.numero));
-    anttLinhas = referenciaDaAntt(disc.meetings, ANTT_FONTE);
-    anttParcial = disc.truncated === true;
-  } catch {
-    anttErro = "falha ao enumerar a ANTT ao vivo";
-  }
+  // ─── ARTESP e ANM PRIMEIRO, em paralelo: são 4 páginas fixas e baratas ──────
+  // ⚠️ A ordem é parte do conserto: a discovery da ANTT come o orçamento que encontrar (pagina o
+  // portal e abre cada reunião). Rodando por último, ela é a única que pode sair parcial — e parcial
+  // grava as linhas que viu sem carimbar a referência como atualizada.
+  const tetoPaginas = Math.min(TETO_DE_PAGINA_MS, saldoParaPaginas());
+  const [artespHtml, ...anmHtmls] = await Promise.all([
+    fetchTextSafe(ARTESP_URL, tetoPaginas),
+    ...ANM_URLS.map((u) => fetchTextSafe(u, tetoPaginas)),
+  ]);
 
   // ARTESP: página única; filtra 2026 quando há data.
-  const artespHtml = await fetchTextSafe(ARTESP_URL);
   const artespTodos = parseArtespReunioes(artespHtml, ARTESP_URL);
   const artespItems = artespTodos.filter(
     (i) => !i.data_reuniao || (i.data_reuniao >= de && i.data_reuniao <= ate),
@@ -150,7 +152,6 @@ export async function GET(req: NextRequest) {
 
   // ANM: as três páginas que listam reunião. O ano NÃO vem da página (é o da publicação) — vem da
   // âncora da série; a série vem do item ("Reunião Extraordinária") ou da página (o arquivo é ROP).
-  const anmHtmls = await Promise.all(ANM_URLS.map(fetchTextSafe));
   const anmLinhas = referenciaDaAnm(ANM_PAGINAS.map((p, i) => ({ ...p, html: anmHtmls[i] })));
   const anmSite = toNums(
     anmLinhas
@@ -161,9 +162,47 @@ export async function GET(req: NextRequest) {
     ? null
     : erroDeBusca(anmHtmls.find((h) => h) ?? "", "ANM");
 
+  // ─── ANTT por ÚLTIMO, com o que sobrou ─────────────────────────────────────
+  // Fase 7 — o `truncated` era DESCARTADO aqui. Enumeração pela metade + banco pela metade dava
+  // "✓ Cobertura completa": a prova de completude afirmava exatamente o que não sabia. Agora o
+  // flag sobe até a tela, e uma enumeração parcial nunca pode ser lida como prova.
+  let anttSite: number[] = [];
+  let anttErro: string | null = null;
+  let anttParcial = false;
+  let anttLinhas: LinhaDeReferencia[] = [];
+  let anttPuladas = 0;
+  try {
+    /**
+     * ⚠️ Fase 39 — PULAR o que a referência já sabe e não muda mais: reunião com decisão publicada há
+     * mais de 45 dias. A referência é CUMULATIVA, então pular não a apaga — e sem isto a discovery
+     * (até 200 páginas de reunião, com throttle) nunca termina numa fatia da esteira, e a ANTT ficaria
+     * para sempre "parcial", sem carimbo de referência boa. As puladas CONTAM como vistas, tanto para
+     * o `truncated` da discovery quanto para o `site` desta conferência.
+     */
+    const corte = new Date(Date.now() - ANTT_ESTAVEL_DIAS * 86_400_000).toISOString().slice(0, 10);
+    const conhecidas = new Map<string, number>();
+    const anttId = idBySigla.get("ANTT");
+    if (anttId) {
+      const { data: refs } = await db.from("reunioes_referencia")
+        .select("numero, url, data_reuniao, decisao_publicada")
+        .eq("agencia_id", anttId).eq("decisao_publicada", true).lt("data_reuniao", corte);
+      for (const r of (refs ?? []) as Array<{ numero: number; url: string | null; data_reuniao: string | null }>) {
+        if (r.url && r.data_reuniao?.startsWith(`${year}-`)) conhecidas.set(r.url, Number(r.numero));
+      }
+    }
+    const disc = await discoverAntt2026Meetings({
+      maxMeetings: 200, maxPages: 20, deadlineAt: deadlineAt - RESERVA_DE_FECHO_MS,
+      skipMeetingUrls: new Set(conhecidas.keys()),
+    });
+    anttPuladas = disc.skippedKnown ?? 0;
+    anttSite = toNums([...disc.meetings.map((m) => m.numero), ...[...conhecidas.values()].map(String)]);
+    anttLinhas = referenciaDaAntt(disc.meetings, ANTT_FONTE);
+    anttParcial = disc.truncated === true;
+  } catch {
+    anttErro = "falha ao enumerar a ANTT ao vivo";
+  }
+
   // ─── Reuniões NO BANCO (deliberações do ano) por agência ──────────────────
-  const { data: agencias } = await db.from("agencias").select("id, sigla").in("sigla", ["ANTT", "ARTESP", "ANM"]);
-  const idBySigla = new Map((agencias ?? []).map((a) => [a.sigla as string, a.id as string]));
   // Fase 28 — era `.limit(40000)` SEM `order`, e `.limit(N)` grande não é paginação: o PostgREST
   // corta em ~1.000 e devolve sem aviso. Com ARTESP 467 + ANTT 308 + ANM 125 só em 2026, esta rota
   // — a que o operador usa como PROVA de que nada se perdeu — calculava `banco_total`, `faltando`
@@ -295,7 +334,8 @@ export async function GET(req: NextRequest) {
     referencia_gravada[sigla] = await gravarReferencia(db, { agenciaId, linhas, tentativas });
   };
   await gravar("ANTT", anttLinhas, [
-    { fonte: ANTT_FONTE, erro: anttErro, parcial: anttParcial, itens: anttLinhas.length },
+    // As puladas contam como enumeradas: estão na referência, com decisão publicada, há > 45 dias.
+    { fonte: ANTT_FONTE, erro: anttErro, parcial: anttParcial, itens: anttLinhas.length + anttPuladas },
   ]);
   const artespLinhas = artespErro ? [] : referenciaDaArtesp(artespTodos, ARTESP_URL);
   await gravar("ARTESP", artespLinhas, [
@@ -318,6 +358,10 @@ export async function GET(req: NextRequest) {
     por_agencia,
     fontes_consultadas,
     referencia_gravada,
+    /** Agências cuja referência ficou EM DIA nesta conferência (todas as fontes boas e completas). */
+    referencia_em_dia: Object.entries(referencia_gravada)
+      .filter(([, r]) => r.gravada && r.fontes > 0 && r.fontes_boas === r.fontes)
+      .map(([sigla]) => sigla),
     alertas,
   });
 }

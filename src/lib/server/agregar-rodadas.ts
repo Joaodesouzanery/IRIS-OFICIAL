@@ -95,6 +95,16 @@ export const CHAVES_DE_ESTOQUE: ReadonlySet<string> = new Set([
   "cobertura_pct_antt",
   "cobertura_pct_artesp",
   /**
+   * Fase 39 — o LIVRO-RAZÃO por agência e a referência do site: retratos. O placar recalcula o livro
+   * inteiro a cada chamada, e `referencia_agencias_em_dia` é o estado da última conferência — somar
+   * três tentativas diria "9 agências em dia" num universo de 3.
+   */
+  "livro_prontas_anm", "livro_prontas_antt", "livro_prontas_artesp",
+  "livro_total_anm", "livro_total_antt", "livro_total_artesp",
+  "livro_trabalho_nosso_anm", "livro_trabalho_nosso_antt", "livro_trabalho_nosso_artesp",
+  "livro_referencia_ok_anm", "livro_referencia_ok_antt", "livro_referencia_ok_artesp",
+  "referencia_agencias_em_dia",
+  /**
    * ⚠️ Fase 36 (B.0) — a certificação contra o gabarito é RETRATO: o placar recalcula as cinco atas
    * a cada chamada. Somada, ela diria "15 atas conferidas" em três rodadas de um gabarito de 5 — e
    * `batem` passaria `conferidas`, o que é aritmeticamente impossível e leria como sucesso.

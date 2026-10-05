@@ -142,7 +142,8 @@ export interface TentativaDeFonte {
 }
 
 export type ResultadoDaGravacao =
-  | { gravada: true; linhas: number; fontes_boas: number }
+  /** `fontes` = quantas foram tentadas; a referência da agência está em dia quando `fontes_boas === fontes`. */
+  | { gravada: true; linhas: number; fontes_boas: number; fontes: number }
   | { gravada: false; motivo: string };
 
 /**
@@ -214,7 +215,7 @@ export async function gravarReferencia(
       const { error } = await db.from("referencia_fontes").upsert(linha, { onConflict: "fonte" });
       if (error) return { gravada: false, motivo: motivoDoErro(error) };
     }
-    return { gravada: true, linhas: novas.length, fontes_boas: fontesBoas };
+    return { gravada: true, linhas: novas.length, fontes_boas: fontesBoas, fontes: entrada.tentativas.length };
   } catch (e) {
     return { gravada: false, motivo: motivoDoErro(e) };
   }
