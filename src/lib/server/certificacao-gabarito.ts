@@ -88,6 +88,41 @@ export function itensEsperadosDe(ata: AtaDoGabarito): number {
 }
 
 /**
+ * Voto EFETIVO: o diretor se manifestou. `Ausente` (que é também como o impedimento é gravado) NÃO
+ * conta — é a aritmética do gabarito (`votos = itens_decididos − impedido_em`), a mesma da etapa163.
+ */
+export const TIPOS_DE_VOTO_EFETIVO: ReadonlySet<string> = new Set(["Favoravel", "Desfavoravel", "Abstencao"]);
+
+/**
+ * O lado BANCO da certificação, com a MESMA régua do gabarito (Fase 39).
+ *
+ * ⚠️ A versão anterior, inline no placar, contava TODA linha de `votos` (Ausente e impedido
+ * inclusos) e TODA deliberação com o número (a mãe-envelope e a pauta inclusas). O José Fernando,
+ * impedido em 5 itens da 83ª, aparecia com 49 contra 44 esperados — divergência do INSTRUMENTO,
+ * lida como defeito da esteira. Aqui: só registro FINAL vira item, só voto efetivo vira voto.
+ */
+export function reuniaoNoBancoParaCertificar(
+  linhas: Array<{ id: string; final: boolean }>,
+  votosPorDelib: Map<string, Array<{ diretor_id: string; tipo_voto: string | null }>>,
+  nomeDe: (diretorId: string) => string,
+): ReuniaoNoBanco {
+  const finais = linhas.filter((l) => l.final);
+  const porDiretor = new Map<string, number>();
+  for (const l of finais) {
+    const contados = new Set<string>();
+    for (const v of votosPorDelib.get(l.id) ?? []) {
+      if (!v.tipo_voto || !TIPOS_DE_VOTO_EFETIVO.has(v.tipo_voto) || contados.has(v.diretor_id)) continue;
+      contados.add(v.diretor_id);
+      porDiretor.set(v.diretor_id, (porDiretor.get(v.diretor_id) ?? 0) + 1);
+    }
+  }
+  return {
+    itens: finais.length,
+    votosPorDiretor: [...porDiretor.entries()].map(([id, votos]) => ({ nome: nomeDe(id), votos })),
+  };
+}
+
+/**
  * BANCO × GABARITO. É a verificação DEPOIS de aplicar, nunca o portão.
  *
  * ⚠️ Uma ata sem correspondência no banco (`undefined`) NÃO é "bate": ela é `conferidas` com

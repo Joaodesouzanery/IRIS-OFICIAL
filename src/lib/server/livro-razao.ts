@@ -153,6 +153,12 @@ export interface ReuniaoDoAcervo {
 
 export interface EstadoDaReferencia {
   disponivel: boolean;
+  /**
+   * Nenhuma tentativa de enumerar foi feita (ou a tabela não pôde ser lida). ⚠️ É a diferença entre
+   * trabalho NOSSO (rodar a conferência, aplicar a migration) e bloqueio EXTERNO (o site falhou).
+   * Sem ela, "ninguém clicou" virava bloqueio aceito e a reunião escapava da meta (Fase 39).
+   */
+  nunca_tentada?: boolean;
   ultima_boa_em: string | null;
   desatualizada: boolean;
   motivo: string | null;
@@ -236,9 +242,12 @@ export function avaliarReuniao(
   const out: VereditoDoPortao[] = [];
 
   // ── 1. listada ──
-  if (!referencia.disponivel) {
+  if (!referencia.disponivel && referencia.nunca_tentada) {
+    // Ninguém tentou ainda: é trabalho NOSSO (rodar a conferência), nunca bloqueio aceito.
+    out.push(vermelho("listada", `referência pendente — ${referencia.motivo ?? "a conferência ao vivo ainda não rodou"}`, "nosso"));
+  } else if (!referencia.disponivel) {
     // ⚠️ Fonte cega é VERMELHO com motivo, nunca "0 reuniões": uma listagem vazia por WAF tornaria
-    // a conferência mais verde quanto menos enxergasse (Fase 17).
+    // a conferência mais verde quanto menos enxergasse (Fase 17). Externo só DEPOIS de tentar.
     out.push(vermelho("listada", `referência do site indisponível — ${referencia.motivo ?? "nenhuma enumeração boa gravada"}`, "externo"));
   } else if (ref && !banco) {
     out.push(ref.decisao_publicada === false
@@ -367,7 +376,8 @@ export function montarLivroRazao(entrada: {
 }): { linhas: LinhaDoLivro[]; por_agencia: Record<string, ResumoDoLivro> } {
   const { ctx } = entrada;
   const indisponivel: EstadoDaReferencia = {
-    disponivel: false, ultima_boa_em: null, desatualizada: true, motivo: "nenhuma enumeração boa gravada",
+    disponivel: false, nunca_tentada: true, ultima_boa_em: null, desatualizada: true,
+    motivo: "a conferência ao vivo ainda não rodou",
   };
 
   const bancoPorNumero = new Map<string, ReuniaoDoAcervo[]>();
@@ -411,9 +421,34 @@ export function montarLivroRazao(entrada: {
 
   // (b) O que o banco tem no ano e a referência não mostra. ⚠️ Entra no denominador: deixá-lo de
   // fora faria uma listagem que encolheu parecer cobertura completa.
+  //
+  // ⚠️ E entra também a reunião com TODAS as linhas fora do ano quando o NÚMERO diz que ela é do ano
+  // (Fase 39): a 81ª ROP gravada em 2025, a 1186ª da ARTESP em 2025-12-19, a 289 RDE em 2024. Pelo
+  // filtro de data elas sumiam do livro — exatamente as que mais precisam aparecer, como "data
+  // errada". O número decide por duas vias: a âncora da série (ANM) ou a FAIXA da série no ano
+  // (vizinhos com data no ano). Limite declarado: a primeira e a última da série no ano não têm
+  // vizinho dos dois lados — essas só aparecem pela referência do site.
+  const anoTxt = String(ctx.ano);
+  const temDataNoAno = (b: ReuniaoDoAcervo) => b.datas.some((d) => d.startsWith(anoTxt));
+  const faixas = new Map<string, { min: number; max: number }>();
+  for (const b of entrada.banco) {
+    if (!temDataNoAno(b) || b.serie === null) continue;
+    const k = `${b.agencia}|${b.serie}`;
+    const f = faixas.get(k);
+    faixas.set(k, f ? { min: Math.min(f.min, b.numero), max: Math.max(f.max, b.numero) } : { min: b.numero, max: b.numero });
+  }
+  const numeroEhDoAno = (b: ReuniaoDoAcervo): boolean => {
+    if (b.serie && pertencaAoAno({ agencia: b.agencia, serie: b.serie as SerieReuniao, numero: b.numero, data_reuniao: null }, ctx.ano) === "sim") {
+      return true;
+    }
+    const cobrem = [...faixas.entries()].filter(([k, f]) =>
+      k.startsWith(`${b.agencia}|`) && (b.serie === null || k === `${b.agencia}|${b.serie}`) && b.numero >= f.min && b.numero <= f.max);
+    // Série nula só casa quando UMA série da agência cobre o número — senão seria adivinhar.
+    return cobrem.length === 1;
+  };
   for (const b of entrada.banco) {
     if (usados.has(b)) continue;
-    if (!b.datas.some((d) => d.startsWith(String(ctx.ano)))) continue;
+    if (!temDataNoAno(b) && !numeroEhDoAno(b)) continue;
     const irmaos = entrada.banco.filter((x) => !usados.has(x) && x.agencia === b.agencia && x.numero === b.numero && seriesCasam(x.serie, b.serie));
     for (const x of irmaos) usados.add(x);
     fechar(b.agencia, b.serie, b.numero, "sim", null, juntarBanco(irmaos));
@@ -456,8 +491,15 @@ export function estadoDaReferencia(
 ): EstadoDaReferencia {
   const boas = fontes.map((f) => f.ultima_boa_em).filter((d): d is string => Boolean(d)).sort();
   if (boas.length === 0) {
+    const tentou = fontes.some((f) => f.ultima_tentativa_em);
+    if (!tentou) {
+      return {
+        disponivel: false, nunca_tentada: true, ultima_boa_em: null, desatualizada: true,
+        motivo: "a conferência ao vivo ainda não rodou",
+      };
+    }
     const erro = fontes.map((f) => f.ultimo_erro).find(Boolean) ?? null;
-    return { disponivel: false, ultima_boa_em: null, desatualizada: true, motivo: erro ?? "nenhuma enumeração boa gravada" };
+    return { disponivel: false, nunca_tentada: false, ultima_boa_em: null, desatualizada: true, motivo: erro ?? "nenhuma enumeração boa gravada" };
   }
   // A referência vale pela fonte MAIS ANTIGA: uma fonte boa hoje não atualiza a outra, parada há um mês.
   const maisAntiga = boas[0];

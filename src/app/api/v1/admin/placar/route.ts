@@ -53,7 +53,9 @@ import {
   planejarCompletar, paresPorAgencia, type DeliberacaoParcial,
 } from "@/lib/server/completar-colegiado";
 import { colegiadoNaData, type MandatoJanela } from "@/lib/server/colegiado-na-data";
-import { certificarContraGabarito, type ReuniaoNoBanco } from "@/lib/server/certificacao-gabarito";
+import {
+  certificarContraGabarito, reuniaoNoBancoParaCertificar, type ReuniaoNoBanco,
+} from "@/lib/server/certificacao-gabarito";
 import { GABARITO_POR_ARQUIVO, numeroDaReuniao } from "@/lib/server/gabarito";
 import { ehVotoDeDirecao, isVotoNominal } from "@/lib/votos-nominal";
 
@@ -175,6 +177,8 @@ export async function GET(req: NextRequest) {
   }
 
   const votantesPorDelib = new Map<string, Set<string>>();
+  /** As linhas com o TIPO — a certificação conta só voto efetivo (Ausente/impedido não é voto). */
+  const votosDetalhadosPorDelib = new Map<string, Array<{ diretor_id: string; tipo_voto: string | null }>>();
   const temNominalPorDelib = new Set<string>();
   const temNominalDeDirecaoPorDelib = new Set<string>();
   for (const v of votosRes.data ?? []) {
@@ -182,6 +186,9 @@ export async function GET(req: NextRequest) {
     const s = votantesPorDelib.get(v.deliberacao_id) ?? new Set<string>();
     s.add(v.diretor_id);
     votantesPorDelib.set(v.deliberacao_id, s);
+    const det = votosDetalhadosPorDelib.get(v.deliberacao_id) ?? [];
+    det.push({ diretor_id: v.diretor_id, tipo_voto: v.tipo_voto ?? null });
+    votosDetalhadosPorDelib.set(v.deliberacao_id, det);
     if (isVotoNominal(v)) {
       temNominalPorDelib.add(v.deliberacao_id);
       if (ehVotoDeDirecao(v.tipo_voto)) temNominalDeDirecaoPorDelib.add(v.deliberacao_id);
@@ -428,16 +435,12 @@ export async function GET(req: NextRequest) {
     if (datas.size > 1) {
       ambiguidades.push(`${siglaAlvo} ${ata.reuniao}: ${datas.size} datas distintas no banco para o mesmo número (${[...datas].sort().join(", ")}) — as linhas foram somadas`);
     }
-    const porDiretor = new Map<string, number>();
-    for (const d of linhas) {
-      for (const dirId of votantesPorDelib.get(String(d.id)) ?? []) {
-        porDiretor.set(dirId, (porDiretor.get(dirId) ?? 0) + 1);
-      }
-    }
-    noBanco[arquivo] = {
-      itens: linhas.length,
-      votosPorDiretor: [...porDiretor.entries()].map(([id, votos]) => ({ nome: nomeDe(id), votos })),
-    };
+    // Fase 39 — a régua do GABARITO: só registro final é item, só voto efetivo é voto.
+    noBanco[arquivo] = reuniaoNoBancoParaCertificar(
+      linhas.map((d: any) => ({ id: String(d.id), final: isFinalDecisionRecord(d) })),
+      votosDetalhadosPorDelib,
+      nomeDe,
+    );
   }
   const certificacao = certificarContraGabarito(GABARITO_POR_ARQUIVO, noBanco);
   for (const a of ambiguidades) alertas.push(`⚠️ certificação ambígua — ${a}.`);
@@ -499,7 +502,8 @@ export async function GET(req: NextRequest) {
   ]);
   if (refRes.error || fontesRes.error) {
     const motivo = "a referência não pôde ser lida — aplique a migration 20261004130000 e rode a conferência ao vivo";
-    for (const sigla of siglasDoLivro) livroEstado[sigla] = { disponivel: false, ultima_boa_em: null, desatualizada: true, motivo };
+    // Tabela ausente/ilegível é trabalho NOSSO (aplicar a migration), nunca bloqueio externo.
+    for (const sigla of siglasDoLivro) livroEstado[sigla] = { disponivel: false, nunca_tentada: true, ultima_boa_em: null, desatualizada: true, motivo };
   } else {
     for (const r of (refRes.data ?? []) as any[]) {
       const sigla = siglaPorId.get(r.agencia_id);
@@ -559,7 +563,9 @@ export async function GET(req: NextRequest) {
   });
   for (const [sigla, r] of Object.entries(livro.por_agencia)) {
     if (!r.referencia.disponivel) {
-      alertas.push(`Livro-razão ${sigla}: referência do site INDISPONÍVEL (${r.referencia.motivo}) — sem denominador, nenhuma reunião conta como pronta.`);
+      alertas.push(r.referencia.nunca_tentada
+        ? `Livro-razão ${sigla}: referência PENDENTE (${r.referencia.motivo}) — rode o Rodar Tudo ou "Conferir ao vivo"; até lá nenhuma reunião conta como pronta.`
+        : `Livro-razão ${sigla}: referência do site INDISPONÍVEL (${r.referencia.motivo}) — sem denominador, nenhuma reunião conta como pronta.`);
       continue;
     }
     alertas.push(
@@ -621,6 +627,13 @@ export async function GET(req: NextRequest) {
   for (const b of buracos) {
     if (b.fora_do_ano.length > 0) {
       alertas.push(`${b.agencia}/${b.serie ?? "?"}: ${b.fora_do_ano.length} reunião(ões) EXISTEM com data fora de ${year} — o passo «redatar» é quem conserta, não a coleta.`);
+    }
+    if (b.irmaos_fora_do_ano.length > 0) {
+      alertas.push(
+        `${b.agencia}/${b.serie ?? "?"}: ${b.irmaos_fora_do_ano.length} reunião(ões) de ${year} têm linhas IRMÃS com data de ` +
+          `outro ano (${b.irmaos_fora_do_ano.slice(0, 8).map((o) => `${o.ordinal}: ${o.datas.join("/")}`).join("; ")}) — ` +
+          "é data errada no avulso, não reunião duplicada.",
+      );
     }
     if (b.duplicados.length > 0) {
       alertas.push(`${b.agencia}/${b.serie ?? "?"}: ${b.duplicados.length} número(s) repetido(s) em datas diferentes — o denominador de ${year} está inflado.`);

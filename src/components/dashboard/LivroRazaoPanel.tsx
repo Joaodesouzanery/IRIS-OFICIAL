@@ -36,7 +36,7 @@ type Resumo = {
   abertas_por_portao: Record<Portao, number>;
   bloqueio_externo: number;
   trabalho_nosso: number;
-  referencia: { disponivel: boolean; ultima_boa_em: string | null; desatualizada: boolean; motivo: string | null };
+  referencia: { disponivel: boolean; nunca_tentada?: boolean; ultima_boa_em: string | null; desatualizada: boolean; motivo: string | null };
   pronto: boolean;
 };
 
@@ -115,7 +115,7 @@ export function LivroRazaoPanel({ demoEnabled }: { demoEnabled: boolean }) {
                 <p className="flex items-center justify-between gap-2">
                   <span className="font-semibold text-text-primary">{sigla}</span>
                   <span className={r.pronto ? "text-success font-semibold" : "text-text-muted"}>
-                    {r.pronto ? "PRONTO" : r.referencia.disponivel ? `${r.pct}%` : "sem referência"}
+                    {r.pronto ? "PRONTO" : r.referencia.disponivel ? `${r.pct}%` : r.referencia.nunca_tentada ? "referência pendente" : "sem referência"}
                   </span>
                 </p>
                 {r.referencia.disponivel ? (
@@ -140,7 +140,14 @@ export function LivroRazaoPanel({ demoEnabled }: { demoEnabled: boolean }) {
                     </p>
                   </>
                 ) : (
-                  <p className="text-error">Referência do site indisponível: {r.referencia.motivo}</p>
+                  r.referencia.nunca_tentada ? (
+                    <p className="text-warning">
+                      Referência pendente: {r.referencia.motivo}. Rode o Rodar Tudo (ou &ldquo;Conferir ao vivo&rdquo;) — até
+                      lá nenhuma reunião conta como pronta. {r.total} reunião(ões) no banco esperando o denominador.
+                    </p>
+                  ) : (
+                    <p className="text-error">Referência do site indisponível: {r.referencia.motivo}</p>
+                  )
                 )}
               </div>
             ))}

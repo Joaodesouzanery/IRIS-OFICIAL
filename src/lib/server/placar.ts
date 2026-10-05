@@ -207,6 +207,13 @@ export interface BuracosDaSerie {
   fora_do_ano: OcorrenciaDeNumero[];
   /** O MESMO número em datas diferentes. Ou a reunião está duplicada, ou o número foi lido errado. */
   duplicados: OcorrenciaDeNumero[];
+  /**
+   * Números que TÊM linha no ano e TAMBÉM linha com data de outro ano (Fase 39). ⚠️ Eram invisíveis:
+   * `fora_do_ano` só vê número sem nenhuma linha no ano, e `duplicados` só conta datas dentro dele.
+   * A 289 e a 1.035 da ANTT têm linhas de 2026 e irmãs em 2024/2023 com voto — e sumiam dos dois.
+   * `datas` traz TODAS as datas do número, para o operador ver a de 2026 ao lado da errada.
+   */
+  irmaos_fora_do_ano: OcorrenciaDeNumero[];
 }
 
 export interface EntradaDeNumeracao {
@@ -291,7 +298,14 @@ export function buracosDaSerie(
     }
     duplicados.sort((a, b) => a.ordinal - b.ordinal);
 
-    saida.push({ agencia, serie, min, max, ausentes, fora_do_ano: foraDoAno, duplicados });
+    const irmaosForaDoAno: OcorrenciaDeNumero[] = [];
+    for (const n of dentroDoAno) {
+      const datas = [...(datasPorOrdinal.get(n) ?? [])].sort();
+      if (datas.some((d) => d < deAno || d > ateAno)) irmaosForaDoAno.push({ ordinal: n, datas });
+    }
+    irmaosForaDoAno.sort((a, b) => a.ordinal - b.ordinal);
+
+    saida.push({ agencia, serie, min, max, ausentes, fora_do_ano: foraDoAno, duplicados, irmaos_fora_do_ano: irmaosForaDoAno });
   }
   saida.sort((a, b) => a.agencia.localeCompare(b.agencia) || String(a.serie).localeCompare(String(b.serie)));
   return saida;
