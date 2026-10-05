@@ -371,24 +371,63 @@ function extractAnttDocumentNumber(text: string, filename: string, type: AnttMan
   return null;
 }
 
+/**
+ * A data de um VOTO INDIVIDUAL da ANTT — só por ÂNCORA, nunca pela primeira data do texto (Fase 39).
+ *
+ * ═══ O defeito medido ═══
+ * O SQL A da Fase 38 achou 53 votos individuais com data entre 2001 e 2025 — inclusive o Severino
+ * "votando" em 05/09/2025, antes da posse (19/11/2025). Eles não tinham o fecho reconhecido e caíam
+ * na varredura genérica dos primeiros 2.500 caracteres, que pega a primeira data que aparecer: a Lei
+ * 10.233 "de 5 de junho de 2001" (a que criou a ANTT) virava 2001-06-05; a data de protocolo do
+ * processo virava a do voto.
+ *
+ * ═══ As âncoras, em ordem ═══
+ *  1. `fecho`              — "Brasília, 09 de março de 2026." na cauda: a data que o diretor escreveu.
+ *  2. `assinatura_diretor` — "Documento assinado eletronicamente por NOME, Diretor…, em dd/mm/aaaa",
+ *                            a ÚLTIMA ocorrência no texto inteiro (o rodapé do SEI pode vir depois de
+ *                            anexos, fora dos 2.500 caracteres finais).
+ *  3. `assinatura`         — o mesmo bloco SEI de qualquer signatário, última ocorrência.
+ * Sem nenhuma: `null`. ⚠️ Data nula vira "precisa revisão"; data inventada vira voto no ano errado,
+ * com o diretor fora do mandato — e é isso que o portão 5 do livro-razão acusava como cadastro.
+ */
+const RE_ASSINATURA_SEI =
+  /assinado eletronicamente por\s+([^,]{3,120}?),\s*([^,]{0,60}?),\s*em\s*(\d{1,2})\/(\d{1,2})\/(20\d{2})/gi;
+
+export interface DataDoVoto {
+  data: string | null;
+  /** Nome de quem assinou (o diretor, quando a âncora é dele) — para conferir o mandato na data. */
+  signatario: string | null;
+  ancora: "fecho" | "assinatura_diretor" | "assinatura" | null;
+}
+
+export function dataDoVotoAntt(text: string): DataDoVoto {
+  const assinaturas = [...String(text ?? "").matchAll(RE_ASSINATURA_SEI)].map((m) => ({
+    nome: m[1].replace(/\s+/g, " ").trim(),
+    cargo: m[2].replace(/\s+/g, " ").trim(),
+    data: iso(m[3], m[4], m[5]),
+  }));
+  const doDiretor = [...assinaturas].reverse().find((a) => /^diretor/i.test(a.cargo)) ?? null;
+
+  const cauda = String(text ?? "").slice(-2500);
+  const fecho = /Bras[ií]lia,?\s*(\d{1,2})\s+de\s+([A-Za-zÀ-ÿ]+)\s+de\s+(20\d{2})/i.exec(cauda);
+  if (fecho) {
+    const mes = monthNumber(plain(fecho[2]));
+    if (mes) return { data: iso(fecho[1], mes, fecho[3]), signatario: doDiretor?.nome ?? null, ancora: "fecho" };
+  }
+  if (doDiretor) return { data: doDiretor.data, signatario: doDiretor.nome, ancora: "assinatura_diretor" };
+  const ultima = assinaturas[assinaturas.length - 1];
+  if (ultima) return { data: ultima.data, signatario: ultima.nome, ancora: "assinatura" };
+  return { data: null, signatario: null, ancora: null };
+}
+
 // Aceita qualquer ano 20xx (antes hardcodava 2026 → documentos de outros anos ficavam
 // sem data e a extenso "dois mil e vinte e seis" era o único caso coberto).
 function extractAnttDate(text: string, filename: string, type?: AnttManualDocumentType) {
-  // VOTO INDIVIDUAL: a data do voto é a do FECHO assinado pelo diretor ("Brasília, 09 de março de
-  // 2026." / "Documento assinado eletronicamente por X, Diretor, em 09/03/2026"), que fica no FIM
-  // da peça. O cabeçalho de um voto é relatório e está cheio de datas do PROCESSO — a varredura
-  // dos primeiros 2.500 caracteres pescava a primeira delas. Medido no Voto DAB 002/2026: saía
-  // 05/11/2025 (data em que a empresa protocolou o pedido) em vez de 09/03/2026.
-  if (type === "voto_individual") {
-    const cauda = text.slice(-2500);
-    const fecho = /Bras[ií]lia,?\s*(\d{1,2})\s+de\s+([A-Za-zÀ-ÿ]+)\s+de\s+(20\d{2})/i.exec(cauda);
-    if (fecho) {
-      const mes = monthNumber(plain(fecho[2]));
-      if (mes) return iso(fecho[1], mes, fecho[3]);
-    }
-    const assinatura = /assinado eletronicamente por[^,]{0,80},\s*Diretor[^,]{0,40},\s*em\s*(\d{1,2})\/(\d{1,2})\/(20\d{2})/i.exec(cauda);
-    if (assinatura) return iso(assinatura[1], assinatura[2], assinatura[3]);
-  }
+  // VOTO INDIVIDUAL: a data do voto é a do FECHO assinado pelo diretor. O cabeçalho de um voto é
+  // relatório e está cheio de datas do PROCESSO — medido no Voto DAB 002/2026: a varredura saía
+  // 05/11/2025 (protocolo do pedido) em vez de 09/03/2026.
+  // ⚠️ Fase 39: SEM âncora, devolve null — não cai mais na varredura genérica abaixo.
+  if (type === "voto_individual") return dataDoVotoAntt(text).data;
 
   const source = `${filename} ${text.slice(0, 2500)}`;
   const sourcePlain = plain(source);
