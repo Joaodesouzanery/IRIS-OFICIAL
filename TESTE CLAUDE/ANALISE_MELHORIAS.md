@@ -23,7 +23,7 @@ O próprio repo já define o critério (`docs/PENDENCIAS.md`, Fase 38): livro-ra
 
 ## 2. Estamos indo pelo caminho certo?
 A direção (coleta → extração → voto por diretor) está certa. A execução está dispersa. Sugestão: **um funil único com 4 números por agência** — listadas → baixadas → com texto → votos nominais/inferidos — e só trabalhar no degrau mais baixo. Hoje o degrau mais baixo é **obter os documentos** (ANM atas 81–84/89; ARTESP inteira), não refinar parser.
-Outro ponto: boa parte do "voto de cada diretor" é **inferida de unanimidade** (ANM 70%+, ANTT ~62%). Isso responde "quantas vezes o diretor X acompanhou" mas **não** prova divergência. Para ver o diretor X votando contra, só os casos de maioria/vista, que são poucos (ANTT: 1 maioria, 13 vistas) — o dado é pobre em divergência por natureza.
+Outro ponto: boa parte do "voto de cada diretor" é **inferida de unanimidade** (ANM 65%, ANTT 62%). Isso responde "quantas vezes o diretor X acompanhou" mas **não** prova divergência. Para ver o diretor X votando contra, só os casos de maioria/vista, que são poucos (ANTT: 1 maioria, 13 vistas) — o dado é pobre em divergência por natureza.
 
 ## 3. Como confiar nas ~1.000 deliberações da plataforma?
 Não deu para auditar a produção: o Supabase conectado aqui só lista os projetos "TE AMAR", "NERY AGRO" e "CIRCLE NEW" — nenhum é o do IRIS, e não consultei nenhum no chute. Recomendações:
