@@ -22,6 +22,7 @@ def parse(tag, r, txt):
     t = limpa(txt); pres, aus, achou = presentes(t)
     meta = {'reuniao': tag, 'numero': r['numero'], 'data': r['data'][6:] + '-' + r['data'][3:5] + '-' + r['data'][:2], 'tipo': 'Extraordinária' if r['numero'] < 1000 else 'Ordinária', 'presentes': pres, 'ausentes': aus, 'constituicao_lida': achou}
     blocos = [m for m in re.finditer(r'(?<!\d)(\d{1,3})\.\s+Delibera[çc][ãa]o ARTESP n[ºo]\s*(\d+)\.?', t) if re.match(r'[\s.]*(?:\(Cancelad[oa]\)[\s.]*)?Processo\s+SEI', t[m.end():m.end() + 60], re.I)]
+    unid = [(mm.start(), re.sub(r'\s+', ' ', mm[1]).strip()) for mm in re.finditer(r'((?:Superintend[êe]ncia|Ger[êe]ncia|Diretoria|Assessoria|Ouvidoria|Corregedoria|Procuradoria)[^.]{0,90}?(?:-|–)\s*[A-Z]{3,8}|Gabinete da Presid[êe]ncia)\.\s+(?=\d{1,3}\.\s+Delibera)', t)]
     D, V = [], []
     bl, notas = {}, {}
     reg = t.find('PARA REGISTRO'); reg = reg if reg >= 0 else len(t) + 1
@@ -32,6 +33,8 @@ def parse(tag, r, txt):
         if k_ not in bl or len(b) > len(bl[k_][1]): bl[k_] = (m, b)
     for m, b in sorted(bl.values(), key=lambda x: x[0].start()):
         proc = re.search(r'Processo SEI! n[ºo]\s*([\d./-]+)', b); inte = re.search(r'Interessad[oa]s?:\s*(.+?)\s*Assunto:', b); ass = re.search(r'Assunto:\s*(.+?)(?:\s*Visto, relatado|\s*A mat[ée]ria foi|$)', b)
+        unidade = ([u for pos_, u in unid if pos_ < m.start()] or [''])[-1]
+        dm = re.search(r'DELIBERA\s+nos\s+seguintes\s+termos:\s*(.{20,600})', b); dispositivo = re.split(r'PUBLIQUE-SE', re.sub(r'\s+', ' ', dm[1]))[0][:500] if dm else ''
         bn = norm(b); canc = bool(re.match(r'[\s.]*\(Cancelad[oa]\)', b, re.I))
         if canc: res = 'CANCELADA (não votada)'
         elif 'foi retirada de pauta' in bn or 'retirada de pauta' in bn: res = 'RETIRADO DE PAUTA'
@@ -42,7 +45,7 @@ def parse(tag, r, txt):
         mr = re.search(r'Diretoria\s+DIR-(\w\w)', b) if res == 'RETIRADO DE PAUTA' else None
         if mr: retirou = SIGLA.get(mr[1])
         d = {'reuniao': tag, 'data': meta['data'], 'deliberacao': int(m[2]), 'item': int(m[1]), 'processo': proc[1] if proc else '', 'interessado': (inte[1] if inte else '')[:200],
-             'assunto': (ass[1] if ass else '')[:300], 'resultado': res, 'retirada_por': retirou or '', 'registro': notas.get(m[2], '')}
+             'assunto': (ass[1] if ass else '')[:300], 'resultado': res, 'retirada_por': retirou or '', 'registro': notas.get(m[2], ''), 'unidade': unidade, 'dispositivo': dispositivo}
         D.append(d)
         if canc: continue
         for p in aus: V.append({'reuniao': tag, 'data': meta['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': 'AUSENTE (justificada)', 'proveniencia': 'nominal'})

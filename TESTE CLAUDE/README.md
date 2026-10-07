@@ -13,3 +13,5 @@ Coleta independente de votos 2026 (ANM, ANTT, ARTESP). Entregáveis: `votos_2026
 `scripts/artesp_fetch.cjs` → `artesp_inventario.py`; `anm_parse.py` lê `texto/*.txt` (atas via subpágina `atas-reunioes-ordinarias`).
 
 Reprodução: `./rodar_tudo.sh`. Conferência manual: `AMOSTRA.md`. Resultado e lacunas: `ANALISE_MELHORIAS.md`.
+
+Temas: `scripts/taxonomia.py`, `scripts/temas.py`, `temas_ia/` (revisão por IA validada), `AMOSTRA_TEMAS.md`. Pendências da fonte: aba "Pendências da fonte".

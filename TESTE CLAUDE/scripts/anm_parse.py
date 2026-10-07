@@ -72,13 +72,24 @@ def parse(path):
         dtx = re.sub(r'\s+', ' ', deli[1]).strip() if deli else ''
         dn = norm(dtx)
         r2 = re.search(r'voto do (?:relator|revisor)[^,]*,\s*(?:Diretor(?:a)?(?:-Geral)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]*?)(?:,|\s+aprov)', dtx, re.I)
-        if re.search(r'sobrest|pedido de vista', dn): res = 'SOBRESTADO (vista)'
+        bn = norm(bloco[:2600]); retirou = None; tipo_item = 'Deliberação'; processos_item = re.findall(r'\d{5}\.\d{3}\.?\d*/\d{4}-?\d*', bloco.split('INTERESSAD')[0])
+        m_ret = re.search(r'item retirado de pauta pel[oa]\s+(relator|revisor)', bn)
+        m_prop = re.search(r'diretor(?: substituto)? ([a-z ]+?) propos a retirada do item de pauta', bn)
+        if re.search(r'aprovada a ata', bn[:500]) and not deli: res, tipo_item = 'ATA APROVADA', 'Aprovação de ata'
+        elif not deli and m_ret: res, tipo_item, retirou = 'RETIRADO DE PAUTA', 'Retirada de pauta', m_ret[1]
+        elif not deli and m_prop: res, tipo_item, retirou = 'RETIRADO DE PAUTA (diligência)', 'Retirada de pauta', 'proposta:' + m_prop[1]
+        elif re.search(r'sobrest|pedido de vista', dn): res = 'SOBRESTADO (vista)'
         elif not deli: res = 'SEM DELIBERACAO NO TEXTO'
         elif 'unanimidade' in dn: res = 'APROVADO POR UNANIMIDADE'
         elif 'maioria' in dn: res = 'APROVADO POR MAIORIA'
         elif re.search(r'retirad|baixad|adiad', dn): res = 'RETIRADO/ADIADO'
         else: res = 'OUTRO'
-        ass = re.search(r'ASSUNTO:\s*(.+?)\n\s*\n', t[max(0, ini-600):ini], re.S)
+        num_item = re.search(r'(\d+\.\d+)\.\d+\s*$', t[max(0, ini - 14):ini])
+        grp = [g for g in re.finditer(r'(\d+\.\d+)\.?\s*ASSUNTO:\s*(.+?)(?=\n\s*\d+\.\d+\.\d+\s+PROCESSOS?\b)', t[:ini + 30], re.S)]
+        if num_item: grp = [g for g in grp if g[1] == num_item[1]]
+        ass = type('G', (), {'__getitem__': lambda self, k, g=grp[-1]: g[2]})() if grp and (num_item or ini - grp[-1].end() < 2500) else None
+        mvt = re.search(r'VOTO[^:\n]{0,40}:\s*(.{40,700}?)(?:\n\s*(?:DELIBERA|INTERESSAD|SUSTENTA)|\Z)', bloco, re.S)
+        voto_resumo = re.sub(r'\s+', ' ', mvt[1]).strip()[:500] if mvt else ''
         mr = re.search(r'Voto do Relator,\s*(?:Diretor(?:a)?(?:-Geral)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]+?)(?:,|\s+aprovad)', dtx)
         if mr and resolve(mr[1], pres + [x for x in [rel] if x]): rel = resolve(mr[1], pres + [rel] if rel else pres)
         elif mr: rel = mr[1].strip()
@@ -99,14 +110,28 @@ def parse(path):
         else:
             mv = re.search(r'(?:Revisor|revisor),\s*(?:Diretor(?:a)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]+?)(?:,|\s+aprovad|\.)', dtx)
             if mv: rev = resolve(mv[1], pres)
+        if tipo_item == 'Deliberação' and res.startswith('SOBRESTADO'): tipo_item = 'Vista'
         out.append({'revisor': rev, 'reuniao': tag, 'data': meta['data'], 'processo': m[1], 'relator': rel,
                     'interessado': re.sub(r'\s+', ' ', inter[1]).strip() if inter else '',
-                    'assunto': re.sub(r'\s+', ' ', ass[1]).strip()[:200] if ass else '',
-                    'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(re.search(r'impedid', dn))})
+                    'assunto': re.sub(r'\s+', ' ', ass[1]).strip()[:300] if ass else '', 'voto_resumo': voto_resumo,
+                    'tipo_item': tipo_item, 'retirada_por': retirou or '', 'processos_do_item': processos_item[:30], 'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(re.search(r'impedid', dn))})
     votos = []
     for d in out:
-        if d['resultado'].startswith('SEM DELIB'): continue  # ex.: aprovacao da ata anterior: nao e votacao
         pr = [p for p in pres]
+        if d['tipo_item'] == 'Aprovação de ata':
+            for p in pr: votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': 'ACOMPANHOU', 'proveniencia': 'inferido', 'tipo_item': d['tipo_item']})
+            continue
+        if d['tipo_item'] == 'Retirada de pauta':
+            rp = d['retirada_por']
+            for p in pr:
+                if rp == 'relator' and p == d['relator']: v, prov = 'RETIROU DE PAUTA', 'nominal'
+                elif rp.startswith('proposta:'):
+                    quem = resolve(rp.split(':', 1)[1].title(), pr)
+                    v, prov = ('RETIROU DE PAUTA', 'nominal') if p == quem else ('ACOMPANHOU', 'nominal')
+                else: v, prov = 'SEM VOTO (retirado de pauta)', 'n/a'
+                votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
+            continue
+        if d['resultado'].startswith('SEM DELIB'): continue
         citados = {}
         for p in pr:
             ult = norm(p).split()
@@ -120,7 +145,7 @@ def parse(path):
             elif d['resultado'] == 'APROVADO POR UNANIMIDADE' and not d['tem_impedimento']: v, prov = 'ACOMPANHOU', 'inferido'
             elif d['resultado'] == 'SOBRESTADO (vista)': v, prov = 'REVISAR', 'REVISAR'
             else: v, prov = 'REVISAR', 'REVISAR'
-            votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': v, 'proveniencia': prov})
+            votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
     return meta, out, votos
 
 if __name__ == '__main__':

@@ -1,0 +1,324 @@
+{
+ "resultados": [
+  {
+   "hash": "7a3e351350334e00",
+   "modal": "Mineração",
+   "tema": "CFEM (compensação financeira)",
+   "subtema": "Cobrança / notificação de débito",
+   "confianca": 0.85,
+   "motivo": "Recurso contra NFLD de CFEM negado"
+  },
+  {
+   "hash": "fc6fa5532eb6dd45",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Termo aditivo / modificativo",
+   "confianca": 0.95,
+   "motivo": "4º termo aditivo a concessão rodoviária"
+  },
+  {
+   "hash": "a2d2b1a9480947de",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Processo sancionador / comissão processante",
+   "confianca": 0.7,
+   "motivo": "Referenda suspensão de penalidades a empresas de transporte"
+  },
+  {
+   "hash": "ffe1f74696f01e46",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.6,
+   "motivo": "Reconsideração de cautelar a instituição de pagamento de pedágio"
+  },
+  {
+   "hash": "5121c65e10b5a271",
+   "modal": "Cargas e logística",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.8,
+   "motivo": "Embargos de declaração da Abiove"
+  },
+  {
+   "hash": "ba594d4cf0ccde53",
+   "modal": "Cargas e logística",
+   "tema": "Outorgas, autorizações e habilitações",
+   "subtema": "Habilitação / revogação (IPEF, FVPO, RNTRC)",
+   "confianca": 0.8,
+   "motivo": "Credenciamento para prova de TAC"
+  },
+  {
+   "hash": "6d26ee6f4856b3e5",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Obras e investimentos",
+   "subtema": "Conservação / OAE / projeto executivo",
+   "confianca": 0.8,
+   "motivo": "Recuperação de sinistro em rodovia concedida"
+  },
+  {
+   "hash": "54bbe955adc1ceaa",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Regulação e normas",
+   "subtema": "Resolução / súmula / ato normativo",
+   "confianca": 0.85,
+   "motivo": "Instrução Normativa de gestão de crises rodoviárias"
+  },
+  {
+   "hash": "321612f4384f9fd9",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Termo aditivo / modificativo",
+   "confianca": 0.95,
+   "motivo": "5º termo aditivo a concessão rodoviária"
+  },
+  {
+   "hash": "b4ace25b66f15eb8",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.7,
+   "motivo": "Relatório anual de atividades da agência"
+  },
+  {
+   "hash": "587d4a1b2d586b82",
+   "modal": "Metroferroviário (trens e metrô)",
+   "tema": "Contratos de concessão",
+   "subtema": "Contrato de concessão (geral)",
+   "confianca": 0.9,
+   "motivo": "Termo de entrega de infraestrutura de concessão ferroviária"
+  },
+  {
+   "hash": "578260b68b5523c3",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.9,
+   "motivo": "Portaria de comissão interna de bonificação"
+  },
+  {
+   "hash": "906b69eabd2d6f21",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Contratos de concessão",
+   "subtema": "Contrato de concessão (geral)",
+   "confianca": 0.65,
+   "motivo": "Termo de compromisso sobre contratos de transporte coletivo metropolitano"
+  },
+  {
+   "hash": "8ebc1669e33c4e94",
+   "modal": "Metroferroviário (trens e metrô)",
+   "tema": "Contratos de concessão",
+   "subtema": "Anuência prévia (crédito, debêntures, controle)",
+   "confianca": 0.85,
+   "motivo": "Nega anuência a subcontratação de operador"
+  },
+  {
+   "hash": "87b0dc60b6207049",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.95,
+   "motivo": "Portaria de adicional de periculosidade"
+  },
+  {
+   "hash": "9e954ff628856c2e",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.7,
+   "motivo": "Portaria sobre agentes públicos da agência"
+  },
+  {
+   "hash": "771a6d35ef6398dc",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Contratação interna / licitação da agência",
+   "confianca": 0.75,
+   "motivo": "Convênio acadêmico da agência com a USP"
+  },
+  {
+   "hash": "549261daec1bd1e0",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por atraso em projetos executivos"
+  },
+  {
+   "hash": "2015e262757cf9d2",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por não recuperar revestimento vegetal"
+  },
+  {
+   "hash": "4a486bcfd32e1443",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por não executar poda de gramados"
+  },
+  {
+   "hash": "241d2c2079e7927a",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por atraso em projeto funcional"
+  },
+  {
+   "hash": "e0858aa8684ac690",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.85,
+   "motivo": "Infração contratual de concessionária rodoviária"
+  },
+  {
+   "hash": "a4174bb9ecb5ff47",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por descumprir cronogramas de projeto"
+  },
+  {
+   "hash": "99e8d35992a879a3",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Termo aditivo / modificativo",
+   "confianca": 0.95,
+   "motivo": "Termo aditivo e modificativo de contrato rodoviário"
+  },
+  {
+   "hash": "3c3dd57578be13fa",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por atraso em projetos executivos"
+  },
+  {
+   "hash": "b66db8d894b18404",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.9,
+   "motivo": "Infração por não apresentar projeto funcional"
+  },
+  {
+   "hash": "29bd40104b5c1439",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.95,
+   "motivo": "Portaria de substituição eventual de cargo"
+  },
+  {
+   "hash": "485953129c3ee9e8",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Equilíbrio econômico-financeiro",
+   "subtema": "Reequilíbrio / pleitos",
+   "confianca": 0.6,
+   "motivo": "Impactos econômico-financeiros de resolução em concessão rodoviária"
+  },
+  {
+   "hash": "76a3d6b0c8ae4d12",
+   "modal": "Metroferroviário (trens e metrô)",
+   "tema": "Contratos de concessão",
+   "subtema": "Contrato de concessão (geral)",
+   "confianca": 0.6,
+   "motivo": "Mudança de identidade visual de concessionária metroviária"
+  },
+  {
+   "hash": "f522cc28f884048e",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Desempenho e qualidade",
+   "subtema": "Indicadores (IQD, CSP, ICPCR)",
+   "confianca": 0.9,
+   "motivo": "Índice IQD para tarifa de concessionária"
+  },
+  {
+   "hash": "4a3da4e27f5cbac0",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.9,
+   "motivo": "Homologação de concurso público"
+  },
+  {
+   "hash": "49e038a40f5055f0",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.95,
+   "motivo": "Portaria de admissão de concursados"
+  },
+  {
+   "hash": "873bcdac69147580",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Contratação interna / licitação da agência",
+   "confianca": 0.9,
+   "motivo": "Aditivo de contrato de seguro de vida da agência"
+  },
+  {
+   "hash": "51f98fe1e45f9c37",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Equilíbrio econômico-financeiro",
+   "subtema": "Reequilíbrio / pleitos",
+   "confianca": 0.9,
+   "motivo": "Indefere pleito de reequilíbrio por Covid"
+  },
+  {
+   "hash": "233c2ffbbf5d6b74",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Desempenho e qualidade",
+   "subtema": "Indicadores (IQD, CSP, ICPCR)",
+   "confianca": 0.6,
+   "motivo": "Saldo tarifário por IQD, sem texto"
+  },
+  {
+   "hash": "d6276052d6345b00",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Auto de infração / multa",
+   "confianca": 0.85,
+   "motivo": "Recurso de auto de infração de empresa de ônibus negado"
+  },
+  {
+   "hash": "51080b49b61f35d4",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Auto de infração / multa",
+   "confianca": 0.85,
+   "motivo": "Recurso de auto de infração de empresa de ônibus negado"
+  },
+  {
+   "hash": "889003cd59b17d9d",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Auto de infração / multa",
+   "confianca": 0.85,
+   "motivo": "Recurso de auto de infração de empresa de ônibus negado"
+  },
+  {
+   "hash": "24b5988f9d550687",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Contratação interna / licitação da agência",
+   "confianca": 0.85,
+   "motivo": "Aditivo de contrato de consultoria da agência"
+  },
+  {
+   "hash": "f60c6960fdf4b373",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Contrato de concessão (geral)",
+   "confianca": 0.8,
+   "motivo": "Adequação de cronograma físico-financeiro de concessão"
+  }
+ ]
+}

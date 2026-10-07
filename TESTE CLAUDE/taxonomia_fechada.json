@@ -1,0 +1,103 @@
+{
+ "modais": [
+  "Aeroportuário",
+  "Cargas e logística",
+  "Ferrovias",
+  "Governança regulatória e normas",
+  "Hidroviário e aquaviário",
+  "Institucional e administrativo",
+  "Metroferroviário (trens e metrô)",
+  "Mineração",
+  "Outros / não identificado",
+  "Rodovias (concessões e pedágio)",
+  "Transporte rodoviário de passageiros"
+ ],
+ "temas": {
+  "CFEM (compensação financeira)": [
+   "Cobrança / notificação de débito",
+   "Parcelamento / outros"
+  ],
+  "Pesquisa mineral": [
+   "Alvará de pesquisa (nulidade / TAH)",
+   "Relatório final de pesquisa",
+   "Autorização / requerimento de pesquisa"
+  ],
+  "Lavra": [
+   "Concessão / requerimento de lavra",
+   "Caducidade / suspensão de lavra"
+  ],
+  "Licenciamento e registro de licença": [
+   "Registro de licença / guia de utilização"
+  ],
+  "Servidão e áreas": [
+   "Servidão minerária",
+   "Disponibilidade de área"
+  ],
+  "Barragens e segurança": [
+   "Autos de infração (barragens)"
+  ],
+  "Fiscalização, infrações e sanções": [
+   "Multa / auto de infração",
+   "Auto de infração / multa",
+   "Processo sancionador / comissão processante"
+  ],
+  "Título e cadastro minerário": [
+   "Baixa / transcrição de título"
+  ],
+  "Tarifa e pedágio": [
+   "Reajuste anual",
+   "Revisão ordinária / extraordinária",
+   "Publicação / atualização de tarifas"
+  ],
+  "Equilíbrio econômico-financeiro": [
+   "Reequilíbrio / pleitos"
+  ],
+  "Desempenho e qualidade": [
+   "Indicadores (IQD, CSP, ICPCR)",
+   "Desconto por atraso / inexecução"
+  ],
+  "Contratos de concessão": [
+   "Termo aditivo / modificativo",
+   "Anuência prévia (crédito, debêntures, controle)",
+   "Conta outorga / vinculada",
+   "Prorrogação / extinção / caducidade",
+   "Contrato de concessão (geral)"
+  ],
+  "Obras e investimentos": [
+   "Conservação / OAE / projeto executivo",
+   "Declaração técnica REIDI"
+  ],
+  "Licitações e leilões": [
+   "Edital / processo competitivo / leilão"
+  ],
+  "Outorgas, autorizações e habilitações": [
+   "Autorização / outorga ferroviária",
+   "Linhas e seções de passageiros",
+   "Habilitação / revogação (IPEF, FVPO, RNTRC)"
+  ],
+  "Recursos administrativos": [
+   "Recurso / reconsideração / embargos"
+  ],
+  "Regulação e normas": [
+   "Audiência / consulta pública",
+   "Resolução / súmula / ato normativo",
+   "Sandbox regulatório"
+  ],
+  "Gestão institucional e administrativa": [
+   "Contratação interna / licitação da agência",
+   "Pessoal, estrutura e orçamento"
+  ],
+  "Usuários e atendimento": [
+   "Ressarcimento / gratuidade / atendimento"
+  ],
+  "Segurança e meio ambiente": [
+   "Segurança viária / incêndios / ambiental"
+  ],
+  "Aprovação de ata": [
+   "Ata da reunião anterior"
+  ],
+  "Outros": [
+   "Não classificado"
+  ]
+ }
+}

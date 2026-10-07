@@ -1,0 +1,260 @@
+{
+ "resultados": [
+  {
+   "hash": "cf3dc7a4966be419",
+   "modal": "Mineração",
+   "tema": "Pesquisa mineral",
+   "subtema": "Alvará de pesquisa (nulidade / TAH)",
+   "confianca": 0.8,
+   "motivo": "Recurso contra notificação por não pagamento da TAH do alvará."
+  },
+  {
+   "hash": "ba89d2ba50cb4628",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.7,
+   "motivo": "Recurso contra arquivamento de processo minerário, retirado de pauta."
+  },
+  {
+   "hash": "5daf5b6d02956f51",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.7,
+   "motivo": "Recurso contra arquivamento de processo minerário, retirado de pauta."
+  },
+  {
+   "hash": "a255989c83ebc2cd",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.7,
+   "motivo": "Recurso contra arquivamento de processo minerário, retirado de pauta."
+  },
+  {
+   "hash": "8d83be2eeb14721b",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.7,
+   "motivo": "Recurso contra arquivamento de processo minerário."
+  },
+  {
+   "hash": "e3b27b73629a41f2",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.7,
+   "motivo": "Recurso contra arquivamento de processo minerário."
+  },
+  {
+   "hash": "6fe14353e0c7ebc6",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.8,
+   "motivo": "Embargos de declaração contra decisão da Diretoria Colegiada."
+  },
+  {
+   "hash": "050db99c80d3dd23",
+   "modal": "Mineração",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.8,
+   "motivo": "Pedido de reconsideração contra decisão da Diretoria Colegiada."
+  },
+  {
+   "hash": "f40129330724b296",
+   "modal": "Ferrovias",
+   "tema": "Licitações e leilões",
+   "subtema": "Edital / processo competitivo / leilão",
+   "confianca": 0.8,
+   "motivo": "Atualização de edital, contrato e estudos da Ferrogrão para o TCU."
+  },
+  {
+   "hash": "9b868c39aa420c73",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Outorgas, autorizações e habilitações",
+   "subtema": "Linhas e seções de passageiros",
+   "confianca": 0.6,
+   "motivo": "Suspensão sub judice de cassação de autorizações de transporte de passageiros."
+  },
+  {
+   "hash": "8f8440954c1657f5",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Equilíbrio econômico-financeiro",
+   "subtema": "Reequilíbrio / pleitos",
+   "confianca": 0.9,
+   "motivo": "Reequilíbrio parcial de concessão rodoviária por custos de insumos."
+  },
+  {
+   "hash": "db002d6353f49c6d",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Recursos administrativos",
+   "subtema": "Recurso / reconsideração / embargos",
+   "confianca": 0.85,
+   "motivo": "Recurso contra decisões de Termos de Autorização de passageiros."
+  },
+  {
+   "hash": "ac5679a5e527da4a",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Outorgas, autorizações e habilitações",
+   "subtema": "Linhas e seções de passageiros",
+   "confianca": 0.85,
+   "motivo": "Revogação de autorização de linha por decisão judicial."
+  },
+  {
+   "hash": "51aa51d98511e328",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Outros",
+   "subtema": "Não classificado",
+   "confianca": 0.5,
+   "motivo": "Plano anual de fiscalização econômico-financeira, sem subtema adequado."
+  },
+  {
+   "hash": "5cdf1b9a612e94d5",
+   "modal": "Cargas e logística",
+   "tema": "Regulação e normas",
+   "subtema": "Resolução / súmula / ato normativo",
+   "confianca": 0.85,
+   "motivo": "Referendo de resoluções sobre Medida Provisória no transporte de cargas."
+  },
+  {
+   "hash": "85e0bf31b12e3639",
+   "modal": "Institucional e administrativo",
+   "tema": "Gestão institucional e administrativa",
+   "subtema": "Pessoal, estrutura e orçamento",
+   "confianca": 0.9,
+   "motivo": "Portaria de designação de substituto de superintendência."
+  },
+  {
+   "hash": "49d8930e1468fca7",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Equilíbrio econômico-financeiro",
+   "subtema": "Reequilíbrio / pleitos",
+   "confianca": 0.8,
+   "motivo": "Impacto do free flow sobre linhas metropolitanas de ônibus."
+  },
+  {
+   "hash": "b30a16d88706d373",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Equilíbrio econômico-financeiro",
+   "subtema": "Reequilíbrio / pleitos",
+   "confianca": 0.85,
+   "motivo": "Impacto do free flow sobre linha metropolitana de ônibus."
+  },
+  {
+   "hash": "ecc50055340b46e9",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Equilíbrio econômico-financeiro",
+   "subtema": "Reequilíbrio / pleitos",
+   "confianca": 0.8,
+   "motivo": "Impacto do free flow sobre linhas metropolitanas de ônibus."
+  },
+  {
+   "hash": "2eb26c860f4d4e7c",
+   "modal": "Governança regulatória e normas",
+   "tema": "Regulação e normas",
+   "subtema": "Audiência / consulta pública",
+   "confianca": 0.9,
+   "motivo": "Consulta pública da Agenda Regulatória 2026."
+  },
+  {
+   "hash": "7dc22d59fbfb3ea0",
+   "modal": "Governança regulatória e normas",
+   "tema": "Regulação e normas",
+   "subtema": "Resolução / súmula / ato normativo",
+   "confianca": 0.7,
+   "motivo": "Portaria normativa sobre auditoria e fiscalização da agência."
+  },
+  {
+   "hash": "a9ab668a6ce5e309",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Obras e investimentos",
+   "subtema": "Conservação / OAE / projeto executivo",
+   "confianca": 0.75,
+   "motivo": "Inclusão de item de obra no cronograma de concessão rodoviária."
+  },
+  {
+   "hash": "079e7e10ab6bf8a9",
+   "modal": "Governança regulatória e normas",
+   "tema": "Regulação e normas",
+   "subtema": "Resolução / súmula / ato normativo",
+   "confianca": 0.8,
+   "motivo": "Portaria que aprova a Agenda Regulatória 2026."
+  },
+  {
+   "hash": "6440d743fd7b8822",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Fiscalização, infrações e sanções",
+   "subtema": "Multa / auto de infração",
+   "confianca": 0.8,
+   "motivo": "Infração por não conclusão de obra, conforme texto."
+  },
+  {
+   "hash": "9df29e187fb322f2",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Contrato de concessão (geral)",
+   "confianca": 0.5,
+   "motivo": "Ciência de requisitos técnicos de anexo contratual."
+  },
+  {
+   "hash": "1e20d6e4bdab0c82",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Regulação e normas",
+   "subtema": "Audiência / consulta pública",
+   "confianca": 0.8,
+   "motivo": "Consulta pública sobre modelo BIM de projetos rodoviários."
+  },
+  {
+   "hash": "8ebe16550f1e632a",
+   "modal": "Hidroviário e aquaviário",
+   "tema": "Contratos de concessão",
+   "subtema": "Conta outorga / vinculada",
+   "confianca": 0.8,
+   "motivo": "Contrato de conta vinculada da concessão de travessias."
+  },
+  {
+   "hash": "d445943a8f09b59d",
+   "modal": "Transporte rodoviário de passageiros",
+   "tema": "Contratos de concessão",
+   "subtema": "Conta outorga / vinculada",
+   "confianca": 0.5,
+   "motivo": "Conta de arrecadação da bilhetagem de transporte coletivo."
+  },
+  {
+   "hash": "9f531f574f821d48",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Segurança e meio ambiente",
+   "subtema": "Segurança viária / incêndios / ambiental",
+   "confianca": 0.55,
+   "motivo": "Ocupações irregulares e reassentamento em rodovia."
+  },
+  {
+   "hash": "6863a22cda5b407a",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Anuência prévia (crédito, debêntures, controle)",
+   "confianca": 0.6,
+   "motivo": "Anuência prévia de concessionária rodoviária, sem texto."
+  },
+  {
+   "hash": "df49126e5190ab95",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Desempenho e qualidade",
+   "subtema": "Indicadores (IQD, CSP, ICPCR)",
+   "confianca": 0.8,
+   "motivo": "Apuração do IQD e tarifa de concessão rodoviária."
+  },
+  {
+   "hash": "e1f1dfb39d705f18",
+   "modal": "Rodovias (concessões e pedágio)",
+   "tema": "Contratos de concessão",
+   "subtema": "Termo aditivo / modificativo",
+   "confianca": 0.8,
+   "motivo": "Alteração de cláusula de anexo do contrato de concessão."
+  }
+ ]
+}

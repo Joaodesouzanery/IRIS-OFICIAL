@@ -35,3 +35,10 @@ Proveniência: **nominal** (a ata cita o diretor: relator, vista, ausência, ret
 - **OCR** só quando preciso (RapidOCR resolveu a ROP87 e as Deliberações 539/540).
 - **Portar os 3 parsers para o IRIS (TS)** usando esta planilha como gabarito cruzado no harness `vote-certification`.
 - **Painel de cobertura** (listadas → baixadas → com texto → votos) por agência, com motivo explícito em vez de "0".
+
+## Atualização 07/10/2026 (parte 2)
+**1. Unanimidade = um voto por diretor.** Sim, e agora está **verificado**: a aba *Qualidade* confirma que cada deliberação não cancelada tem 1 linha de voto por diretor presente/ausente (ANM 380/380, ANTT 305/305, ARTESP 704/704) e as abas *Matriz ANM/ANTT/ARTESP* mostram 1 linha por deliberação e 1 coluna por diretor (`*` = voto inferido da unanimidade).
+**2. Itens "sem votação" da ANM — capturados.** Os 31 eram: 8 aprovações da ata anterior (agora `Aprovação de ata`, 1 voto por presente, inferido) e 23 retiradas de pauta (22 "retirado pelo relator/revisor" + 1 retirada em diligência proposta pelo Dir. José Fernando e acolhida pelos demais, ROP86). Coluna *Tipo de item* em todas as abas.
+**3. Pendências da fonte.** Nova aba **Pendências da fonte** (gerada a cada rodada, com histórico em `pendencias_historico.json`): 21 itens hoje (ANM ROP89 aguardando ata e 3 ROPs futuras do calendário; ANTT 299ª/300ª/301ª/1042ª aguardando ata, 270ª lacuna antiga, 2 futuras; ARTESP 243ª publicada errada, 6 números sem registro, 2 números corrigidos, 1 título com typo). Quando a fonte publicar, rode `./rodar_tudo.sh` e o item passa a RESOLVIDA.
+**4. Temas e microtemas.** Taxonomia em 3 níveis (**Modal → Tema → Subtema**) + `Microtema (IRIS)` e `Área (IRIS)` lidos do `classifier.ts`/`area-regulatoria.ts` do repo. Abas **Temas** e **Diretor × tema**. Validação em `AMOSTRA_TEMAS.md` (amostra nova: modal 94%, tema 94%).
+- *Hidrovias*: 3 deliberações, todas da concessão **Acquavias SP (travessias)** na ARTESP; **nenhuma na ANM nem na ANTT** em 2026. *Aeroportos*: 14 na ARTESP (SUHAP = Superintendência **Hidroviária e Aeroportuária**).

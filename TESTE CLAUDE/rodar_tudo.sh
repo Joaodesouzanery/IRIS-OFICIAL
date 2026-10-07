@@ -19,4 +19,8 @@ for f in fonte/artesp/*/ata.pdf; do t=$(basename "$(dirname "$f")"); pdftotext -
 python3 -I scripts/artesp_parse.py artesp_inventario.json texto_artesp artesp.json
 python3 -I scripts/artesp_conciliar.py artesp.json fonte/artesp artesp_conciliacao.json
 python3 -I scripts/artesp_ajustes.py artesp.json artesp_conciliacao.json texto_artesp_ocr artesp_final.json
-python3 -I scripts/build_xlsx.py
+# Temas: regras (taxonomia do repo) + revisão por IA só nos itens de baixa confiança
+python3 -I scripts/temas.py            # grava temas.json e temas_revisao_pendente.json (itens que ainda precisam de IA)
+# Se temas_revisao_pendente.json não estiver vazio: classificar esses itens (subagentes Claude, taxonomia_fechada.json),
+# salvar em temas_ia/resultado_N.json e rodar:  python3 -I scripts/temas.py --importar-ia temas_ia && python3 -I scripts/temas.py
+python3 -I scripts/build_xlsx.py       # também atualiza a aba 'Pendências da fonte' e pendencias_historico.json
