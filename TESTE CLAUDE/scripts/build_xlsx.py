@@ -48,27 +48,40 @@ sheet('Reuniões', ['Agência', 'Reunião', 'Data', 'Tipo', 'Presentes', 'Ausent
 # Cobertura
 a26 = [c for c in inv if c['data'].endswith('2026')]; tp = collections.Counter(c['tipo'] for c in a26)
 sem_ata = [r['reuniao'] for r in antt['reunioes'] if r['obs']]
+ana = sum(1 for d in D if d['agencia'] == 'ANM' and d['resultado'].startswith('SEM DELIB'))
+FUT = {'RDE302': '13/10/2026', 'ROD1043': '08/10/2026', 'RDE301': '05/10/2026'}
+AGU = ['ROD1042', 'RDE300', 'RDE299']
 cob = [
- ['ANM', 'Calendário oficial de ROPs 2026 (PDF da ANM)', 12, 'Fonte independente do denominador'],
- ['ANM', 'ROPs que já deveriam ter ocorrido até 06/10/2026 (28/1,23/2,25/3,29/4,27/5,24/6*,29/7,19/8,30/9)', 9, '*a ROP86 foi em 30/06; 81ª a 84ª e 89ª inferidas pela numeração'],
- ['ANM', 'ROPs com ata publicada na listagem do site (85ª a 88ª)', 4, 'Listagem tem só 8 atas: ROP 85-88 e REP 31-34; REP31-34 são de 2024/2025'],
- ['ANM', 'ROPs de 2026 SEM ata no site', 5, '81ª, 82ª, 83ª, 84ª (jan-abr) e 89ª (30/09); URLs adivinhadas devolvem 404. Lacuna real ou publicação pendente — confirmar com a ANM'],
- ['ANM', 'Deliberações lidas nas atas disponíveis', sum(1 for d in D if d['agencia'] == 'ANM'), '1 ata (ROP87) era PDF-imagem e foi lida por OCR (sem acento)'],
- ['ANTT', 'Reuniões listadas em 2026 (todas)', len(a26), f'Tipos: {dict(tp)}'],
- ['ANTT', 'Reuniões deliberativas (Ordinárias+Extraordinárias+Eletrônicas)', len(antt['reunioes']), 'Administrativas (37) não deliberam processos e foram excluídas'],
- ['ANTT', 'Sequências sem buraco', 'sim', 'Ordinárias 1024-1043, Extra 99-102, Eletrônicas 263-302: todos os números presentes'],
- ['ANTT', 'Reuniões COM ata em texto', len(antt['reunioes']) - len(sem_ata), ''],
- ['ANTT', 'Reuniões SEM ata no site', len(sem_ata), ', '.join(sem_ata)],
+ ['ANM', 'Calendário oficial de ROPs 2026 (PDF da ANM)', 12, 'Denominador independente'],
+ ['ANM', 'ROPs que já deveriam ter ocorrido até 07/10/2026 (28/1,23/2,25/3,29/4,27/5,30/6*,29/7,19/8,30/9)', 9, '*a ROP86 foi em 30/06 (calendário previa 24/06); 81ª a 89ª pela numeração'],
+ ['ANM', 'ROPs com ata publicada e lida (81ª a 88ª)', 8, 'Fonte: subpágina atas-da-rop/atas-reunioes-ordinarias (59ª a 88ª sem buraco). A página atas-da-rop mostra só as 8 mais recentes'],
+ ['ANM', 'ROP sem ata ainda', 1, '89ª (30/09): só a PAUTA está publicada; ata aguardando publicação (as anteriores saíram ~3 a 4 semanas depois)'],
+ ['ANM', 'Reuniões extraordinárias (REP) em 2026', 0, 'A última, 34ª, é de 19/11/2025'],
+ ['ANM', 'Deliberações lidas (ROP 81–88)', sum(1 for d in D if d['agencia'] == 'ANM'), f'{ana} itens sem "DELIBERAÇÃO:" no texto (em geral aprovação da ata anterior, sem voto). ROP87 lida por OCR'],
+ ['ANTT', 'Reuniões listadas em 2026 (todas, listagem paginada até 2025)', len(a26), f'Tipos: {dict(tp)}'],
+ ['ANTT', 'Reuniões administrativas (37)', 37, 'Só têm PAUTA publicada (sem ata, sem voto): fora do escopo'],
+ ['ANTT', 'Reuniões deliberativas (Ord.+Extra+Eletrônicas)', len(antt['reunioes']), 'Sequências sem buraco: Ord. 1024-1043, Extra 99-102, Eletr. 263-302'],
+ ['ANTT', 'Futuras (só pauta, ainda não ocorreram)', len(FUT), ', '.join(f'{k} ({v})' for k, v in FUT.items())],
+ ['ANTT', 'Realizadas', len(antt['reunioes']) - len(FUT), ''],
+ ['ANTT', 'Realizadas COM ata lida', len(antt['reunioes']) - len(sem_ata), ''],
+ ['ANTT', 'Realizadas, ata em publicação (set/2026)', len(AGU), ', '.join(AGU) + ' — votos individuais já publicados; ata ainda não'],
+ ['ANTT', 'Realizada SEM ata (lacuna antiga)', 1, 'RDE270 (02/03/2026): há 4 PDFs de voto, nenhuma ata — perguntar à ANTT'],
  ['ANTT', 'Deliberações lidas nas atas', sum(1 for d in D if d['agencia'] == 'ANTT'), 'Confere com as 304 ocorrências de "Decisão:" no texto'],
- ['ARTESP', 'Reuniões / deliberações', 'NÃO COLETADO', 'Site protegido pelo Imperva/Incapsula: o servidor devolve página de desafio (1,2 KB) mesmo por navegador headless'],
+ ['ARTESP', 'Reuniões listadas em 2026 (página carregada com navegador comum)', len(json.load(open('artesp_inventario.json'))) and sum(1 for r in json.load(open('artesp_inventario.json')) if r['data'].endswith('2026')), 'Ordinárias 1177ª-1214ª (38, sem buraco; 1177ª = 13/01/2026) + série 230-247 (18, sem buraco); todas com Pauta, Ata e Deliberações'],
+ ['ARTESP', 'PDFs baixados / votos extraídos', 0, 'PDFs em admin.cms.sp.gov.br (AWS WAF): o proxy do ambiente nega *.token.awswaf.com, o desafio não termina. Liberar admin.cms.sp.gov.br e *.token.awswaf.com'],
 ]
 sheet('Cobertura', ['Agência', 'Medida', 'Valor', 'Nota'], cob, {'Medida': 80, 'Nota': 100})
 sheet('Pendências', ['Item', 'Detalhe'], [
  ['Proveniência', 'inferido = ata diz "por unanimidade": todos os presentes acompanharam o relator (não há voto individual escrito). nominal = o texto cita o diretor (relator, vista, ausente).'],
  ['REVISAR', 'Maioria, vista pendente ou texto ambíguo: o voto de cada diretor não está nominado na ata; exige leitura do voto individual/vídeo.'],
- ['ANM', 'Faltam atas 81-84 e 89 (ver Cobertura). Sem elas, as métricas por diretor da ANM cobrem só mai-ago/2026.'],
- ['ANTT', 'Atas ausentes listadas em Cobertura. 99 PDFs de voto eram imagem; OCR em andamento e não usado na extração (a ata já traz o resultado).'],
- ['ARTESP', 'Precisa de download manual dos PDFs ou liberação do Imperva.'],
+ ['ANM', 'Ata da 89ª ROP (30/09) ainda não publicada. Métricas da ANM cobrem ROP 81–88 (jan–ago/2026).'],
+ ['ANTT', 'RDE270 sem ata; 299/300/1042 aguardando ata; 3 reuniões futuras. 99 PDFs de voto são imagem e não foram lidos (a ata já traz o resultado).'],
+ ['ARTESP', 'Inventário feito; PDFs dependem de liberar admin.cms.sp.gov.br e *.token.awswaf.com no proxy do ambiente.'],
  ['Qualidade', 'Parser não validado contra gabarito manual; amostrar 10 deliberações por agência antes de confiar nos números.'],
 ], {'Detalhe': 140})
+art = [r for r in json.load(open('artesp_inventario.json')) if r['data'].endswith('2026')]
+lab = lambda r, k: 'sim' if any(d['rotulo'].lower().startswith(k) for d in r['docs']) else 'NÃO'
+sheet('ARTESP inventário', ['Série', 'Nº', 'Data', 'Tipo', 'Pauta', 'Ata', 'Deliberações', 'Status'],
+      [['Ordinárias (1177+)' if r['numero'] > 1000 else 'Série 230+', r['numero'], r['data'][6:] + '-' + r['data'][3:5] + '-' + r['data'][:2], r['tipo'], lab(r, 'pauta'), lab(r, 'ata'), lab(r, 'delib'), 'listada; PDF não baixado (rede)'] for r in sorted(art, key=lambda r: (r['numero'] > 1000, r['numero']))],
+      {'Série': 20, 'Status': 36})
 wb.save('votos_2026.xlsx'); print('ok', len(V), 'votos', len(D), 'deliberacoes')

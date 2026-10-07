@@ -118,7 +118,7 @@ if __name__ == '__main__':
     for m in R['reunioes']:
         for n in m['presentes']:
             if re.search(r'[À-ú]', n): canon[norm(n)] = n
-    fix = lambda n: canon.get(norm(n), n) if n else n
+    fix = lambda n: (lambda n: canon.get(norm(n), n))(re.sub(r'^Substitut[oa]\s+', '', n)) if n else n
     for m in R['reunioes']: m['presentes'] = [fix(n) for n in m['presentes']]
     for x in R['deliberacoes']: x['relator'] = fix(x['relator'])
     for x in R['votos']: x['diretor'] = fix(x['diretor'])
