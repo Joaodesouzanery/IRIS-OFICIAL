@@ -1,0 +1,4510 @@
+{
+ "pdfs_deliberacao": 708,
+ "numeros_zip": 665,
+ "so_no_zip": [
+  303,
+  480,
+  539,
+  540
+ ],
+ "so_na_ata": [
+  1,
+  115,
+  134,
+  150,
+  152,
+  157,
+  160,
+  164,
+  165,
+  172,
+  173,
+  174,
+  175,
+  176,
+  177,
+  178,
+  179,
+  180,
+  181,
+  182,
+  183,
+  184,
+  185,
+  186,
+  187,
+  188,
+  189,
+  190,
+  191,
+  192,
+  193,
+  194,
+  195,
+  204,
+  210,
+  226,
+  251,
+  257,
+  274,
+  275,
+  278,
+  332,
+  333,
+  334,
+  335,
+  336,
+  337,
+  338,
+  339,
+  340,
+  341,
+  342,
+  364,
+  376,
+  380,
+  391,
+  399,
+  421,
+  422,
+  425,
+  439,
+  498,
+  505,
+  509,
+  510,
+  534,
+  554,
+  592,
+  601,
+  611,
+  612,
+  643,
+  658,
+  667,
+  675,
+  676,
+  680,
+  729
+ ],
+ "numero_diverge_por_processo": [
+  {
+   "zip_numero": 28,
+   "processo": "134.00031360/2024-78",
+   "ata_numero": [
+    127,
+    145,
+    195,
+    231,
+    232,
+    389,
+    683
+   ],
+   "reuniao_zip": "ORD1177"
+  },
+  {
+   "zip_numero": 28,
+   "processo": "134.00031360/2024-78",
+   "ata_numero": [
+    127,
+    145,
+    195,
+    231,
+    232,
+    389,
+    683
+   ],
+   "reuniao_zip": "ORD1177"
+  },
+  {
+   "zip_numero": 81,
+   "processo": "134.00030141/2025-52.",
+   "ata_numero": [
+    749
+   ],
+   "reuniao_zip": "ORD1180"
+  },
+  {
+   "zip_numero": 127,
+   "processo": "134.00031360/2024-78.",
+   "ata_numero": [
+    28
+   ],
+   "reuniao_zip": "ORD1182"
+  },
+  {
+   "zip_numero": 145,
+   "processo": "134.00031360/2024-78.",
+   "ata_numero": [
+    28
+   ],
+   "reuniao_zip": "ORD1183"
+  },
+  {
+   "zip_numero": 231,
+   "processo": "134.00031360/2024-78.",
+   "ata_numero": [
+    28
+   ],
+   "reuniao_zip": "ORD1187"
+  },
+  {
+   "zip_numero": 303,
+   "processo": "134.00034035/2025-48",
+   "ata_numero": [
+    282
+   ],
+   "reuniao_zip": "ORD1190"
+  },
+  {
+   "zip_numero": 303,
+   "processo": "134.00034035/2025-48",
+   "ata_numero": [
+    282
+   ],
+   "reuniao_zip": "S230_236"
+  },
+  {
+   "zip_numero": 389,
+   "processo": "134.00031360/2024-78.",
+   "ata_numero": [
+    28
+   ],
+   "reuniao_zip": "ORD1196"
+  },
+  {
+   "zip_numero": 683,
+   "processo": "134.00031360/2024-78.",
+   "ata_numero": [
+    28
+   ],
+   "reuniao_zip": "ORD1212"
+  },
+  {
+   "zip_numero": 2,
+   "processo": "134.00019283/2025-69.",
+   "ata_numero": [
+    1
+   ],
+   "reuniao_zip": "S230_230"
+  }
+ ],
+ "buracos_nos_dois": [
+  12,
+  76,
+  77,
+  80,
+  102,
+  103
+ ],
+ "docs": [
+  {
+   "reuniao": "ORD1177",
+   "numero": 3,
+   "processo": "134.00041974/2025-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 4,
+   "processo": "134.00048923/2025-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 5,
+   "processo": "134.00047966/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 6,
+   "processo": "134.00035448/2024-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 7,
+   "processo": "134.00000821/2026-22.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 8,
+   "processo": "134.00021845/2023-72.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 9,
+   "processo": "134.00028310/2025-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 10,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 11,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 13,
+   "processo": "386.00013091/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 14,
+   "processo": "134.00007894/2023-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 15,
+   "processo": "134.00023965/2023-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 16,
+   "processo": "134.00024608/2023-63.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 17,
+   "processo": "134.00024606/2023-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 18,
+   "processo": "134.00023966/2023-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 19,
+   "processo": "134.00024602/2023-96.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 20,
+   "processo": "134.00023959/2023-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 21,
+   "processo": "134.00024610/2023-32.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 22,
+   "processo": "134.00024612/2023-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 23,
+   "processo": "134.00043086/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 24,
+   "processo": "134.00000443/2026-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 25,
+   "processo": "134.00004147/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 26,
+   "processo": "134.00049037/2025-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 27,
+   "processo": "134.00006784/2025-85",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 27,
+   "processo": "134.00006784/2025-85",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 28,
+   "processo": "134.00031360/2024-78",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 28,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 29,
+   "processo": "021.00000786/2025-29",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 29,
+   "processo": "021.00000786/2025-29.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 3,
+   "processo": "134.00041974/2025-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 4,
+   "processo": "134.00048923/2025-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 5,
+   "processo": "134.00047966/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 6,
+   "processo": "134.00035448/2024-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 7,
+   "processo": "134.00000821/2026-22.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 8,
+   "processo": "134.00021845/2023-72.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 9,
+   "processo": "134.00028310/2025-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 10,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 11,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 13,
+   "processo": "386.00013091/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 14,
+   "processo": "134.00007894/2023-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 15,
+   "processo": "134.00023965/2023-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 16,
+   "processo": "134.00024608/2023-63.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 17,
+   "processo": "134.00024606/2023-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 18,
+   "processo": "134.00023966/2023-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 19,
+   "processo": "134.00024602/2023-96.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 20,
+   "processo": "134.00023959/2023-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 21,
+   "processo": "134.00024610/2023-32.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 22,
+   "processo": "134.00024612/2023-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 23,
+   "processo": "134.00043086/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 24,
+   "processo": "134.00000443/2026-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 25,
+   "processo": "134.00004147/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 26,
+   "processo": "134.00049037/2025-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 27,
+   "processo": "134.00006784/2025-85",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 27,
+   "processo": "134.00006784/2025-85",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 28,
+   "processo": "134.00031360/2024-78",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 28,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 29,
+   "processo": "021.00000786/2025-29",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "ORD1177",
+   "numero": 29,
+   "processo": "021.00000786/2025-29.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 30,
+   "processo": "134.00000465/2026-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 31,
+   "processo": "134.00003067/2023-30.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 32,
+   "processo": "134.00013689/2025-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 33,
+   "processo": "134.00024613/2023-76.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 34,
+   "processo": "134.00000992/2024-90.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 35,
+   "processo": "134.00026761/2023-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 36,
+   "processo": "134.00001005/2024-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 37,
+   "processo": "134.00026365/2023-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 38,
+   "processo": "134.00001010/2024-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 39,
+   "processo": "134.00026364/2023-53.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 40,
+   "processo": "134.00001014/2024-65.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 41,
+   "processo": "134.00026363/2023-17.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 42,
+   "processo": "134.00030232/2024-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 43,
+   "processo": "134.00001028/2024-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 44,
+   "processo": "134.00001031/2024-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 45,
+   "processo": "134.00001036/2024-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 46,
+   "processo": "134.00001063/2024-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 47,
+   "processo": "134.00001064/2024-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 48,
+   "processo": "134.00001067/2024-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 49,
+   "processo": "134.00001068/2024-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 50,
+   "processo": "134.00001070/2024-08.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 51,
+   "processo": "134.00001073/2024-33.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 52,
+   "processo": "134.00001074/2024-88.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 53,
+   "processo": "134.00001086/2024-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 54,
+   "processo": "134.00001092/2024-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 55,
+   "processo": "134.00001094/2024-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 56,
+   "processo": "",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 57,
+   "processo": "134.00001100/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 58,
+   "processo": "134.00001101/2024-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 59,
+   "processo": "134.00026004/2023-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 60,
+   "processo": "134.00025533/2023-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 61,
+   "processo": "134.00006678/2024-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 62,
+   "processo": "134.00025803/2024-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 63,
+   "processo": "134.00040422/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 64,
+   "processo": "021.00002047/2025-71.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1178",
+   "numero": 65,
+   "processo": "001.00001762/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 67,
+   "processo": "134.00040577/2025-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 68,
+   "processo": "134.00040589/2025-84.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 69,
+   "processo": "134.00040592/2025-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 70,
+   "processo": "134.00040590/2025-17.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 71,
+   "processo": "134.00025267/2023-43.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 72,
+   "processo": "134.00005070/2023-98.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 73,
+   "processo": "134.00003905/2023-75.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 74,
+   "processo": "134.00002142/2026-98.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 75,
+   "processo": "134.00020086/2025-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1179",
+   "numero": 78,
+   "processo": "134.00009975/2023-37.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 79,
+   "processo": "134.00028711/2023-82.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 81,
+   "processo": "134.00030141/2025-52.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 82,
+   "processo": "134.00032091/2025-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 83,
+   "processo": "134.00046073/2025-43.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 84,
+   "processo": "134.00016085/2025-43.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 85,
+   "processo": "134.00006623/2025-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 86,
+   "processo": "134.00032787/2025-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 87,
+   "processo": "134.00015545/2024-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 88,
+   "processo": "134.00032880/2024-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 89,
+   "processo": "134.00015539/2024-88.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 90,
+   "processo": "021.00002290/2025-90.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 91,
+   "processo": "134.00038167/2025-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1180",
+   "numero": 92,
+   "processo": "134.00044725/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 100,
+   "processo": "134.00030506/2025-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 101,
+   "processo": "134.00031738/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 104,
+   "processo": "134.00002810/2026-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 105,
+   "processo": "134.00003553/2026-09.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 106,
+   "processo": "134.00015548/2024-79.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 107,
+   "processo": "134.00000788/2026-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 108,
+   "processo": "134.00015202/2025-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 93,
+   "processo": "134.00023503/2025-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 94,
+   "processo": "134.00004033/2023-62.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 95,
+   "processo": "381.00000995/2024-39.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 96,
+   "processo": "134.00000443/2026-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 97,
+   "processo": "134.00035824/2025-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 98,
+   "processo": "134.00039361/2025-41.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1181",
+   "numero": 99,
+   "processo": "134.00043086/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 109,
+   "processo": "134.00006264/2026-53.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 110,
+   "processo": "134.00001774/2026-34.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 111,
+   "processo": "134.00023501/2025-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 112,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 113,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 114,
+   "processo": "134.00022288/2024-98.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 116,
+   "processo": "021.00000861/2025-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 117,
+   "processo": "134.00023983/2024-77.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 118,
+   "processo": "134.00004483/2026-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 119,
+   "processo": "134.00017957/2023-29.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 120,
+   "processo": "134.00015535/2024-08.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 121,
+   "processo": "134.00048561/2025-95.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 122,
+   "processo": "134.00048718/2025-82.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 123,
+   "processo": "134.00046656/2025-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 124,
+   "processo": "134.00045570/2025-24.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 125,
+   "processo": "134.00048305/2025-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 126,
+   "processo": "134.00006585/2026-58.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 127,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 128,
+   "processo": "134.00006784/2025-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1182",
+   "numero": 129,
+   "processo": "134.00010325/2025-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 131,
+   "processo": "134.00000024/2023-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 132,
+   "processo": "134.00010325/2025-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 133,
+   "processo": "134.00021643/2023-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 135,
+   "processo": "134.00030364/2025-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 136,
+   "processo": "134.00008305/2026-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 137,
+   "processo": "134.00008307/2026-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 138,
+   "processo": "134.00012066/2023-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 139,
+   "processo": "134.00015550/2024-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 140,
+   "processo": "021.00002138/2025-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 141,
+   "processo": "134.00008166/2026-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 142,
+   "processo": "134.00008365/2026-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 143,
+   "processo": "134.00016318/2025-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 144,
+   "processo": "134.00006784/2025-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1183",
+   "numero": 145,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1184",
+   "numero": 146,
+   "processo": "134.00005006/2026-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1184",
+   "numero": 147,
+   "processo": "134.00044695/2025-37.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1184",
+   "numero": 148,
+   "processo": "134.00000399/2026-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1184",
+   "numero": 149,
+   "processo": "134.00004204/2026-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1184",
+   "numero": 151,
+   "processo": "134.00014529/2024-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1184",
+   "numero": 153,
+   "processo": "134.00007481/2026-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 16,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 155,
+   "processo": "134.00007419/2026-79.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 156,
+   "processo": "134.00009370/2026-99.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 158,
+   "processo": "134.00015112/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 159,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 161,
+   "processo": "134.00024011/2025-81.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 162,
+   "processo": "134.00024014/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 163,
+   "processo": "134.00024012/2025-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 166,
+   "processo": "134.00040585/2025-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 167,
+   "processo": "134.00004595/2026-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 168,
+   "processo": "381.00002869/2025-08.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 169,
+   "processo": "134.00013840/2024-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 170,
+   "processo": "134.00029680/2023-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1185",
+   "numero": 171,
+   "processo": "134.00003313/2026-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1186",
+   "numero": 196,
+   "processo": "134.00023446/2024-27.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1186",
+   "numero": 197,
+   "processo": "021.00001713/2025-54.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1186",
+   "numero": 199,
+   "processo": "134.00008307/2026-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1186",
+   "numero": 200,
+   "processo": "134.00040655/2025-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1186",
+   "numero": 201,
+   "processo": "134.00028542/2025-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1186",
+   "numero": 198,
+   "processo": "134.00008305/2026-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 202,
+   "processo": "134.00040578/2025-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 203,
+   "processo": "134.00027421/2025-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 205,
+   "processo": "134.00009500/2026-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 206,
+   "processo": "134.00000006/2026-63.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 207,
+   "processo": "134.00029235/2025-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 208,
+   "processo": "381.00003669/2025-64.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 209,
+   "processo": "134.00016099/2024-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 211,
+   "processo": "134.00020671/2023-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 212,
+   "processo": "134.00020696/2023-24.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 213,
+   "processo": "134.00020786/2023-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 214,
+   "processo": "134.00019927/2023-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 215,
+   "processo": "134.00010810/2023-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 216,
+   "processo": "134.00021020/2023-58.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 217,
+   "processo": "134.00034759/2024-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 218,
+   "processo": "134.00024449/2024-88.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 219,
+   "processo": "134.00007719/2023-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 220,
+   "processo": "134.00008756/2023-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 221,
+   "processo": "134.00019811/2023-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 222,
+   "processo": "134.00044120/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 223,
+   "processo": "134.00005851/2024-63.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 224,
+   "processo": "134.00018083/2023-27.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 225,
+   "processo": "134.00026250/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 227,
+   "processo": "134.00035022/2024-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 228,
+   "processo": "021.00000397/2025-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 229,
+   "processo": "134.00048222/2025-17.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 230,
+   "processo": "134.00000749/2026-33.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 231,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 232,
+   "processo": "134.00006784/2025-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1187",
+   "numero": 233,
+   "processo": "134.00013569/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 234,
+   "processo": "134.00031713/2025-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 235,
+   "processo": "134.00014124/2026-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 236,
+   "processo": "134.00009117/2023-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 237,
+   "processo": "134.00019660/2023-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 238,
+   "processo": "134.00019899/2023-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 239,
+   "processo": "134.00027134/2023-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 240,
+   "processo": "134.00020759/2023-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 241,
+   "processo": "134.00025887/2023-82.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 242,
+   "processo": "134.00025799/2023-81.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 243,
+   "processo": "134.00020477/2023-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 244,
+   "processo": "134.00035318/2024-26.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 245,
+   "processo": "134.00003193/2023-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 246,
+   "processo": "134.00008010/2023-27.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 247,
+   "processo": "134.00016020/2023-36.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 248,
+   "processo": "134.00001217/2024-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 249,
+   "processo": "134.00026625/2023-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 250,
+   "processo": "134.00011105/2026-71.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 252,
+   "processo": "134.00015551/2024-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 253,
+   "processo": "134.00015558/2024-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 254,
+   "processo": "134.00015543/2024-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 255,
+   "processo": "134.00013877/2026-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1188",
+   "numero": 256,
+   "processo": "134.00012603/2026-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 258,
+   "processo": "134.00015553/2024-81.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 259,
+   "processo": "134.00015549/2024-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 260,
+   "processo": "134.00020996/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 261,
+   "processo": "134.00034768/2024-00.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 262,
+   "processo": "134.00019920/2023-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 263,
+   "processo": "134.00000776/2023-63.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 264,
+   "processo": "134.00008954/2023-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 265,
+   "processo": "134.00019789/2023-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 266,
+   "processo": "134.00019925/2023-68.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 267,
+   "processo": "134.00019808/2023-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 268,
+   "processo": "134.00019654/2023-41",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 269,
+   "processo": "134.00021003/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 270,
+   "processo": "134.00019788/2023-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 271,
+   "processo": "134.00019645/2023-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 272,
+   "processo": "134.00007095/2023-26.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 273,
+   "processo": "134.00035316/2024-37.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 276,
+   "processo": "134.00004004/2023-09.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 277,
+   "processo": "134.00005768/2024-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 279,
+   "processo": "134.00017768/2023-56.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 280,
+   "processo": "134.00012597/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1189",
+   "numero": 281,
+   "processo": "134.00015534/2024-55.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 286,
+   "processo": "134.00004161/2024-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 287,
+   "processo": "381.00005379/2025-55.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 288,
+   "processo": "134.00002967/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 289,
+   "processo": "134.00014958/2023-11",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 290,
+   "processo": "134.00007336/2025-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 291,
+   "processo": "021.00002197/2023-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 292,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 293,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 294,
+   "processo": "134.00024034/2025-95.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 295,
+   "processo": "134.00004737/2025-05.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 296,
+   "processo": "134.00008753/2023-05.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 297,
+   "processo": "134.00004551/2023-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 298,
+   "processo": "134.00004037/2023-41.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 299,
+   "processo": "134.00004405/2023-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 300,
+   "processo": "134.00004304/2023-80.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 301,
+   "processo": "134.00006128/2026-63",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 302,
+   "processo": "134.00005740/2026-19",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1190",
+   "numero": 303,
+   "processo": "134.00034035/2025-48",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 304,
+   "processo": "134.00000339/2023-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 305,
+   "processo": "134.00034208/2024-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 306,
+   "processo": "134.00016498/2026-17.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 307,
+   "processo": "134.00020706/2023-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 308,
+   "processo": "134.00020691/2023-00.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 309,
+   "processo": "134.00020883/2023-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 310,
+   "processo": "134.00009651/2023-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 311,
+   "processo": "134.00021019/2023-23.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 312,
+   "processo": "134.00005957/2025-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 313,
+   "processo": "134.00008758/2023-20.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 314,
+   "processo": "134.00011336/2023-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 315,
+   "processo": "134.00024208/2023-58.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 316,
+   "processo": "134.00001175/2024-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 317,
+   "processo": "134.00005468/2025-96.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 318,
+   "processo": "134.00011050/2026-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 319,
+   "processo": "134.00023171/2025-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 320,
+   "processo": "134.00033352/2025-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 321,
+   "processo": "134.00040582/2025-62.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 322,
+   "processo": "134.00023958/2025-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 323,
+   "processo": "134.00010325/2025-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1191",
+   "numero": 324,
+   "processo": "134.00040655/2025-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1192",
+   "numero": 325,
+   "processo": "134.00016974/2026-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1192",
+   "numero": 326,
+   "processo": "134.00030775/2024-24.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1192",
+   "numero": 327,
+   "processo": "134.00026402/2024-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1192",
+   "numero": 328,
+   "processo": "134.00033352/2025-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 366,
+   "processo": "134.00003561/2023-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 343,
+   "processo": "134.00022403/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 344,
+   "processo": "134.00038819/2025-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 345,
+   "processo": "134.00042705/2025-08.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 346,
+   "processo": "134.00046572/2025-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 347,
+   "processo": "134.00026690/2023-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 348,
+   "processo": "134.00026702/2023-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 349,
+   "processo": "134.00012153/2026-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 350,
+   "processo": "134.00044088/2025-77.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 351,
+   "processo": "134.00026675/2023-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 352,
+   "processo": "134.00026693/2023-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 353,
+   "processo": "134.00026479/2023-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 354,
+   "processo": "134.00027357/2023-79.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 355,
+   "processo": "134.00021008/2023-43.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 356,
+   "processo": "134.00027121/2023-32.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 357,
+   "processo": "134.00000064/2024-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 358,
+   "processo": "134.00005057/2024-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 359,
+   "processo": "134.00020332/2023-44.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 360,
+   "processo": "134.00009573/2024-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 361,
+   "processo": "134.00010136/2023-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 362,
+   "processo": "134.00010574/2024-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 363,
+   "processo": "134.00016412/2024-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1194",
+   "numero": 365,
+   "processo": "134.00000373/2025-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 381,
+   "processo": "025.00005553/2026-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 368,
+   "processo": "021.00000314/2026-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 369,
+   "processo": "134.00032268/2024-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 370,
+   "processo": "134.00004344/2026-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 371,
+   "processo": "381.00005380/2025-80.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 372,
+   "processo": "134.00015294/2023-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 373,
+   "processo": "134.00016216/2026-73.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 374,
+   "processo": "134.00016857/2026-28.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 375,
+   "processo": "134.00017159/2026-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 377,
+   "processo": "134.00045430/2025-56.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 378,
+   "processo": "134.00021588/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1195",
+   "numero": 379,
+   "processo": "134.00027352/2025-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 382,
+   "processo": "134.00009500/2026-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 383,
+   "processo": "134.00013569/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 384,
+   "processo": "134.00019258/2026-66.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 385,
+   "processo": "380.00003041/2026-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 386,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 387,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 388,
+   "processo": "021.00001674/2023-23.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 389,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1196",
+   "numero": 390,
+   "processo": "134.00006784/2025-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 392,
+   "processo": "134.00022835/2026-05.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 393,
+   "processo": "134.00022212/2025-43.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 394,
+   "processo": "134.00038001/2024-41.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 395,
+   "processo": "134.00029235/2025-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 396,
+   "processo": "134.00001714/2025-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 397,
+   "processo": "134.00020254/2026-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 398,
+   "processo": "134.00022850/2024-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 400,
+   "processo": "021.00000860/2025-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 401,
+   "processo": "134.00011939/2026-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 402,
+   "processo": "134.00013977/2026-73.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 403,
+   "processo": "134.00031644/2025-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 404,
+   "processo": "021.00002461/2023-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1197",
+   "numero": 405,
+   "processo": "134.00024864/2026-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 406,
+   "processo": "021.00000436/2025-62.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 407,
+   "processo": "134.00017814/2026-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 408,
+   "processo": "134.00026582/2023-98.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 409,
+   "processo": "134.00000873/2026-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 410,
+   "processo": "134.00036990/2025-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 411,
+   "processo": "134.00021183/2025-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 412,
+   "processo": "134.00013834/2025-81.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 413,
+   "processo": "134.00022300/2026-26.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 414,
+   "processo": "134.00022301/2026-71.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 415,
+   "processo": "134.00026767/2023-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1198",
+   "numero": 416,
+   "processo": "134.00014834/2025-06.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 417,
+   "processo": "134.00041499/2025-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 418,
+   "processo": "134.00005188/2024-05.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 419,
+   "processo": "134.00017535/2023-53.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 420,
+   "processo": "134.00006755/2026-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 423,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 424,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1199",
+   "numero": 426,
+   "processo": "134.00022795/2026-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 427,
+   "processo": "134.00000363/2023-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 428,
+   "processo": "381.00002853/2025-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 429,
+   "processo": "134.00012138/2025-57.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 430,
+   "processo": "134.00025403/2023-03.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 431,
+   "processo": "134.00004138/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 432,
+   "processo": "134.00019656/2026-82.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 433,
+   "processo": "134.00001710/2026-33.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 434,
+   "processo": "134.00046077/2025-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 435,
+   "processo": "134.00048190/2025-41.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 436,
+   "processo": "134.00001660/2026-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 437,
+   "processo": "134.00021154/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 438,
+   "processo": "134.00001847/2026-98.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 440,
+   "processo": "134.00024068/2025-80.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 441,
+   "processo": "134.00024027/2025-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 442,
+   "processo": "134.00024273/2025-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 443,
+   "processo": "134.00024342/2025-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 444,
+   "processo": "134.00024311/2025-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 445,
+   "processo": "134.00024025/2025-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 446,
+   "processo": "134.00024265/2025-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 447,
+   "processo": "134.00024277/2025-23.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 448,
+   "processo": "134.00024457/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 449,
+   "processo": "134.00024001/2025-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 450,
+   "processo": "134.00024087/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 451,
+   "processo": "134.00024032/2025-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 452,
+   "processo": "134.00024054/2025-66.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 453,
+   "processo": "134.00024072/2025-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 454,
+   "processo": "134.00024308/2025-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 455,
+   "processo": "134.00024020/2025-71.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 456,
+   "processo": "134.00018065/2025-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 457,
+   "processo": "134.00024061/2025-68.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 458,
+   "processo": "134.00024030/2025-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 459,
+   "processo": "134.00024275/2025-34.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 460,
+   "processo": "134.00006851/2026-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 461,
+   "processo": "021.00002197/2023-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 462,
+   "processo": "134.00022308/2026-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 463,
+   "processo": "134.00024291/2026-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 464,
+   "processo": "134.00024279/2026-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 465,
+   "processo": "134.00024287/2026-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 466,
+   "processo": "134.00024288/2026-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 467,
+   "processo": "134.00028210/2026-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 468,
+   "processo": "021.00001048/2023-37.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 469,
+   "processo": "021.00000150/2023-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 470,
+   "processo": "021.00001047/2023-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 471,
+   "processo": "021.00000152/2023-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 472,
+   "processo": "021.00001084/2023-09.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 473,
+   "processo": "021.00001094/2023-36.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 474,
+   "processo": "021.00001056/2023-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 475,
+   "processo": "021.00001053/2023-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1200",
+   "numero": 476,
+   "processo": "134.00036051/2025-75.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1201",
+   "numero": 487,
+   "processo": "134.00006585/2026-58.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1201",
+   "numero": 488,
+   "processo": "134.00028589/2026-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1201",
+   "numero": 484,
+   "processo": "134.00036991/2025-64.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1201",
+   "numero": 485,
+   "processo": "134.00015972/2026-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1201",
+   "numero": 486,
+   "processo": "134.00021637/2026-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 499,
+   "processo": "134.00021183/2025-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 489,
+   "processo": "134.00021737/2026-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 490,
+   "processo": "134.00029957/2026-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 491,
+   "processo": "134.00024552/2023-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 492,
+   "processo": "134.00011427/2023-77.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 493,
+   "processo": "134.00002256/2026-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 494,
+   "processo": "134.00010812/2026-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 495,
+   "processo": "134.00007792/2023-87.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 496,
+   "processo": "134.00003879/2023-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1202",
+   "numero": 497,
+   "processo": "134.00028038/2024-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 500,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 501,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 502,
+   "processo": "134.00042814/2025-17.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 503,
+   "processo": "134.00026399/2025-54.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 504,
+   "processo": "134.00014835/2024-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 506,
+   "processo": "134.00022850/2024-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 507,
+   "processo": "134.00011326/2026-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 508,
+   "processo": "134.00020086/2025-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 511,
+   "processo": "134.00035017/2025-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 512,
+   "processo": "134.00023997/2026-52.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1203",
+   "numero": 513,
+   "processo": "134.00032536/2026-71",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 533,
+   "processo": "134.00024291/2026-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 535,
+   "processo": "380.00003041/2026-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 536,
+   "processo": "021.00002047/2025-71.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 521,
+   "processo": "134.00024268/2025-32.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 522,
+   "processo": "134.00024270/2025-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 523,
+   "processo": "134.00024262/2025-65.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 524,
+   "processo": "134.00024065/2025-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 525,
+   "processo": "134.00024064/2025-00.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 526,
+   "processo": "134.00024003/2025-34.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 527,
+   "processo": "134.00024387/2025-95.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 528,
+   "processo": "134.00024067/2025-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 529,
+   "processo": "134.00024031/2025-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 530,
+   "processo": "134.00024052/2025-77.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 531,
+   "processo": "134.00024263/2025-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1204",
+   "numero": 532,
+   "processo": "134.00003124/2023-81.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 555,
+   "processo": "134.00016666/2026-66.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 542,
+   "processo": "134.00040500/2025-80.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 543,
+   "processo": "134.00029291/2026-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 544,
+   "processo": "381.00002867/2025-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 545,
+   "processo": "134.00036990/2025-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 546,
+   "processo": "134.00027194/2026-77.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 547,
+   "processo": "134.00000340/2023-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 548,
+   "processo": "134.00026736/2026-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 549,
+   "processo": "134.00045135/2025-08.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 550,
+   "processo": "134.00035160/2024-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 551,
+   "processo": "134.00032662/2026-25.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 552,
+   "processo": "134.00022665/2026-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1205",
+   "numero": 553,
+   "processo": "134.00028347/2025-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 562,
+   "processo": "134.00020432/2024-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 563,
+   "processo": "134.00035839/2026-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 564,
+   "processo": "134.00031713/2025-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 565,
+   "processo": "134.00008470/2023-55.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 566,
+   "processo": "134.00024287/2026-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 567,
+   "processo": "134.00021021/2023-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 568,
+   "processo": "134.00027368/2023-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 569,
+   "processo": "134.00021024/2023-36.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 570,
+   "processo": "134.00020664/2023-29.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 571,
+   "processo": "134.00008225/2023-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 572,
+   "processo": "134.00006408/2023-29.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 573,
+   "processo": "134.00004546/2025-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 574,
+   "processo": "134.00002120/2024-66.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 575,
+   "processo": "134.00008220/2023-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 576,
+   "processo": "134.00008224/2023-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 577,
+   "processo": "134.00004538/2023-27.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 578,
+   "processo": "134.00020260/2023-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 579,
+   "processo": "134.00027838/2023-84.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 580,
+   "processo": "134.00004077/2025-54.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 581,
+   "processo": "134.00026868/2023-73.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 582,
+   "processo": "134.00026646/2023-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 583,
+   "processo": "134.00003240/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 584,
+   "processo": "134.00028982/2023-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 585,
+   "processo": "134.00035976/2024-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 586,
+   "processo": "134.00003405/2024-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 587,
+   "processo": "134.00022030/2026-53.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 588,
+   "processo": "134.00001200/2024-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 589,
+   "processo": "134.00000971/2024-74.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 590,
+   "processo": "134.00003959/2023-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 591,
+   "processo": "134.00004382/2023-84.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1206",
+   "numero": 593,
+   "processo": "134.00006135/2025-84.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 594,
+   "processo": "134.00024838/2026-75.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 595,
+   "processo": "134.00022437/2026-81.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 596,
+   "processo": "134.00039784/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 597,
+   "processo": "134.00009907/2023-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 598,
+   "processo": "134.00026572/2024-33.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 599,
+   "processo": "134.00004920/2023-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 600,
+   "processo": "134.00008219/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 602,
+   "processo": "134.00015532/2026-28.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 603,
+   "processo": "134.00024688/2025-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 604,
+   "processo": "134.00022610/2024-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 605,
+   "processo": "134.00022627/2024-36.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 606,
+   "processo": "134.00022630/2024-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 607,
+   "processo": "134.00022613/2024-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 608,
+   "processo": "134.00022617/2024-09.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 609,
+   "processo": "134.00022634/2024-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 610,
+   "processo": "134.00022622/2024-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1207",
+   "numero": 613,
+   "processo": "134.00002719/2026-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 621,
+   "processo": "134.00030620/2026-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 622,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 623,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 624,
+   "processo": "134.00030901/2023-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 625,
+   "processo": "021.00000592/2026-12.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 626,
+   "processo": "134.00029394/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 627,
+   "processo": "134.00009584/2026-65.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 615,
+   "processo": "134.00000344/2023-52.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 616,
+   "processo": "134.00024290/2023-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 617,
+   "processo": "134.00018565/2025-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 618,
+   "processo": "134.00039784/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 619,
+   "processo": "134.00013266/2026-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1208",
+   "numero": 620,
+   "processo": "134.00035977/2026-24.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 645,
+   "processo": "134.00030672/2026-26.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 628,
+   "processo": "134.00000873/2026-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 629,
+   "processo": "134.00000740/2023-80.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 630,
+   "processo": "134.00031651/2026-28.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 631,
+   "processo": "134.00010299/2023-44.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 632,
+   "processo": "134.00010296/2023-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 633,
+   "processo": "134.00032334/2024-67.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 634,
+   "processo": "134.00038830/2026-96.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 635,
+   "processo": "134.00020272/2023-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 636,
+   "processo": "134.00026607/2023-53.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 637,
+   "processo": "134.00026861/2023-51.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 638,
+   "processo": "134.00026619/2023-88.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 639,
+   "processo": "134.00026862/2023-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 640,
+   "processo": "134.00027681/2023-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 641,
+   "processo": "134.00026580/2023-07.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 642,
+   "processo": "134.00026596/2024-92.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1209",
+   "numero": 644,
+   "processo": "134.00023249/2024-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 663,
+   "processo": "134.00020434/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 664,
+   "processo": "134.00031254/2026-56.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 665,
+   "processo": "134.00038475/2026-55.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 666,
+   "processo": "134.00035839/2026-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 646,
+   "processo": "134.00039370/2026-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 647,
+   "processo": "134.00036665/2026-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 648,
+   "processo": "134.00037428/2026-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 649,
+   "processo": "134.00036293/2026-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 650,
+   "processo": "134.00032602/2025-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 651,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 652,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 653,
+   "processo": "134.00025374/2024-52.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 654,
+   "processo": "134.00024536/2024-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 655,
+   "processo": "134.00001032/2025-28.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 656,
+   "processo": "134.00021221/2024-36.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 657,
+   "processo": "134.00003116/2023-34.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 659,
+   "processo": "134.00030231/2026-24.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 660,
+   "processo": "134.00024626/2026-98.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 661,
+   "processo": "134.00011195/2025-19.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1210",
+   "numero": 662,
+   "processo": "134.00015602/2026-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1211",
+   "numero": 669,
+   "processo": "134.00010842/2024-94.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1211",
+   "numero": 670,
+   "processo": "134.00003140/2023-73.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1211",
+   "numero": 671,
+   "processo": "134.00015112/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1211",
+   "numero": 672,
+   "processo": "134.00036990/2026-09",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1211",
+   "numero": 668,
+   "processo": "134.00007791/2023-32.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 684,
+   "processo": "134.00006784/2025-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 673,
+   "processo": "134.00031806/2025-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 674,
+   "processo": "134.00035839/2026-45.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 677,
+   "processo": "021.00000485/2025-03.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 678,
+   "processo": "134.00020809/2025-53.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 679,
+   "processo": "134.00023673/2026-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 681,
+   "processo": "134.00026402/2024-59.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 682,
+   "processo": "134.00034970/2026-95.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1212",
+   "numero": 683,
+   "processo": "134.00031360/2024-78.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 703,
+   "processo": "134.00024309/2025-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 704,
+   "processo": "134.00011468/2024-44.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 705,
+   "processo": "134.00024261/2025-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 706,
+   "processo": "134.00022977/2024-01.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 707,
+   "processo": "134.00022997/2024-73.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 708,
+   "processo": "134.00022999/2024-62.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 709,
+   "processo": "134.00025728/2024-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 710,
+   "processo": "134.00003924/2026-44.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 711,
+   "processo": "134.00008646/2025-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 712,
+   "processo": "134.00008655/2025-21.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 713,
+   "processo": "134.00008656/2025-76.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 714,
+   "processo": "134.00033589/2025-28.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 715,
+   "processo": "134.00033587/2025-39.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 716,
+   "processo": "134.00038015/2024-65.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 717,
+   "processo": "134.00003688/2026-66.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 718,
+   "processo": "134.00015693/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 719,
+   "processo": "134.00015694/2026-66.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 720,
+   "processo": "134.00016393/2026-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 721,
+   "processo": "134.00004231/2026-79.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 722,
+   "processo": "134.00006784/2025-85.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 686,
+   "processo": "134.00010612/2026-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 687,
+   "processo": "134.00040945/2025-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 688,
+   "processo": "134.00002728/2023-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 689,
+   "processo": "134.00002267/2026-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 690,
+   "processo": "134.00041687/2025-39.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 691,
+   "processo": "134.00042785/2025-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 692,
+   "processo": "134.00021680/2023-39.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 693,
+   "processo": "134.00037061/2025-28.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 694,
+   "processo": "134.00043829/2026-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 695,
+   "processo": "134.00024636/2025-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 696,
+   "processo": "134.00004512/2025-41",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 696,
+   "processo": "134.00004512/2025-41",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 697,
+   "processo": "134.00004522/2025-86",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 698,
+   "processo": "134.00020238/2026-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 699,
+   "processo": "134.00020214/2026-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 700,
+   "processo": "134.00014821/2024-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 701,
+   "processo": "134.00019905/2023-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1213",
+   "numero": 702,
+   "processo": "134.00032691/2025-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 723,
+   "processo": "134.00022413/2023-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 724,
+   "processo": "134.00010347/2026-47.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 725,
+   "processo": "134.00001633/2023-79.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 726,
+   "processo": "134.00022423/2023-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 727,
+   "processo": "134.00011326/2026-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 728,
+   "processo": "134.00043889/2026-04.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 730,
+   "processo": "134.00000889/2023-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 731,
+   "processo": "134.00000964/2023-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 732,
+   "processo": "134.00005766/2023-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 733,
+   "processo": "134.00024079/2025-60.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 734,
+   "processo": "134.00021650/2023-22.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 735,
+   "processo": "134.00024103/2025-61.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 736,
+   "processo": "134.00020204/2026-43.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 737,
+   "processo": "134.00022672/2024-91.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 738,
+   "processo": "134.00045768/2026-99.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 739,
+   "processo": "134.00030672/2026-26.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 740,
+   "processo": "134.00002262/2026-95.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 741,
+   "processo": "134.00002255/2026-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 742,
+   "processo": "134.00007737/2026-30.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 743,
+   "processo": "134.00007716/2026-14.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 744,
+   "processo": "134.00007748/2026-10.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 745,
+   "processo": "021.00003325/2023-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 746,
+   "processo": "021.00002666/2023-02.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 747,
+   "processo": "134.00035859/2026-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 748,
+   "processo": "134.00032536/2026-71.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "ORD1214",
+   "numero": 749,
+   "processo": "134.00030141/2025-52.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_230",
+   "numero": 2,
+   "processo": "134.00022071/2023-05.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_230",
+   "numero": 2,
+   "processo": "134.00019283/2025-69.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_231",
+   "numero": 66,
+   "processo": "134.00026869/2025-80.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_232",
+   "numero": 130,
+   "processo": "134.00003540/2023-89.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_233",
+   "numero": 154,
+   "processo": "134.00003000/2026-48.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_234",
+   "numero": 196,
+   "processo": "134.00023446/2024-27.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_234",
+   "numero": 197,
+   "processo": "021.00001713/2025-54.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_234",
+   "numero": 199,
+   "processo": "134.00008307/2026-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_234",
+   "numero": 200,
+   "processo": "134.00040655/2025-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_234",
+   "numero": 201,
+   "processo": "134.00028542/2025-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_234",
+   "numero": 198,
+   "processo": "134.00008305/2026-46.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_235",
+   "numero": 285,
+   "processo": "134.00012109/2026-76.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_235",
+   "numero": 282,
+   "processo": "134.00012106/2026-32.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_235",
+   "numero": 283,
+   "processo": "134.00012123/2026-70.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_235",
+   "numero": 284,
+   "processo": "134.00012138/2026-38.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_236",
+   "numero": 303,
+   "processo": "134.00034035/2025-48",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_237",
+   "numero": 329,
+   "processo": "134.00016814/2026-42.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_237",
+   "numero": 330,
+   "processo": "134.00027294/2024-31.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_237",
+   "numero": 331,
+   "processo": "134.00000055/2024-34.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_238",
+   "numero": 367,
+   "processo": "134.00000373/2025-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_238",
+   "numero": 367,
+   "processo": "134.00000373/2025-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_239",
+   "numero": 477,
+   "processo": "134.00028216/2026-16.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_239",
+   "numero": 478,
+   "processo": "134.00018941/2026-86.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_239",
+   "numero": 479,
+   "processo": "134.00023439/2026-97.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_239",
+   "numero": 480,
+   "processo": "134.00028210/2026-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_240",
+   "numero": 481,
+   "processo": "134.00024281/2026-72",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_240",
+   "numero": 482,
+   "processo": "134.00022665/2026-51",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_240",
+   "numero": 483,
+   "processo": "134.00028210/2026-49.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 520,
+   "processo": "134.00021938/2026-40.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 514,
+   "processo": "134.00032917/2026-50.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 515,
+   "processo": "134.00031149/2025-36.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 516,
+   "processo": "134.00030863/2025-15.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 517,
+   "processo": "381.00001120/2025-35.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 518,
+   "processo": "021.00000956/2026-56.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_241",
+   "numero": 519,
+   "processo": "134.00035017/2025-83.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_242",
+   "numero": 537,
+   "processo": "134.00027134/2026-54.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_242",
+   "numero": 538,
+   "processo": "134.00033167/2026-33.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_243",
+   "numero": 540,
+   "processo": "",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "S230_243",
+   "numero": 539,
+   "processo": "",
+   "unanimidade": false
+  },
+  {
+   "reuniao": "S230_244",
+   "numero": 541,
+   "processo": "134.00035188/2026-93.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_245",
+   "numero": 557,
+   "processo": "134.00021467/2026-70.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_245",
+   "numero": 558,
+   "processo": "134.00043834/2025-13.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_245",
+   "numero": 559,
+   "processo": "134.00034936/2026-11.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_245",
+   "numero": 560,
+   "processo": "134.00034180/2026-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_245",
+   "numero": 561,
+   "processo": "134.00032446/2024-18.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_245",
+   "numero": 556,
+   "processo": "134.00017505/2025-17.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_246",
+   "numero": 614,
+   "processo": "134.00000042/2023-84.",
+   "unanimidade": true
+  },
+  {
+   "reuniao": "S230_247",
+   "numero": 685,
+   "processo": "134.00032270/2026-66.",
+   "unanimidade": true
+  }
+ ],
+ "docs_so_no_zip": [
+  {
+   "reuniao": "ORD1190",
+   "numero": 303,
+   "processo": "134.00034035/2025-48",
+   "unanimidade": true,
+   "ata_com_o_processo": [
+    [
+     "S230_236",
+     282
+    ]
+   ]
+  },
+  {
+   "reuniao": "S230_236",
+   "numero": 303,
+   "processo": "134.00034035/2025-48",
+   "unanimidade": true,
+   "ata_com_o_processo": [
+    [
+     "S230_236",
+     282
+    ]
+   ]
+  },
+  {
+   "reuniao": "S230_239",
+   "numero": 480,
+   "processo": "134.00028210/2026-49.",
+   "unanimidade": true,
+   "ata_com_o_processo": [
+    [
+     "S230_239",
+     479
+    ],
+    [
+     "S230_240",
+     483
+    ],
+    [
+     "ORD1200",
+     467
+    ]
+   ]
+  },
+  {
+   "reuniao": "S230_243",
+   "numero": 539,
+   "processo": "",
+   "unanimidade": false,
+   "ata_com_o_processo": []
+  },
+  {
+   "reuniao": "S230_243",
+   "numero": 540,
+   "processo": "",
+   "unanimidade": false,
+   "ata_com_o_processo": []
+  }
+ ]
+}

@@ -106,7 +106,7 @@
     "sha256": "199ed3d7dc50a488ace234ba143a81b4521a065f9b51db128f589cb76f0867ec",
     "pdf": true,
     "texto": "texto_antt/ROD1042__voto_Voto_DG_47-2026.pdf.txt",
-    "chars": 15394
+    "chars": 3
    },
    {
     "tipo": "voto",
@@ -117,7 +117,7 @@
     "sha256": "12df3e89dce52a7a7a6fd72987257019f76d2feff6443d0990c90c8f5775ccb3",
     "pdf": true,
     "texto": "texto_antt/ROD1042__voto_Voto_DFQ_65-2026.pdf.txt",
-    "chars": 8857
+    "chars": 2
    },
    {
     "tipo": "voto",
@@ -128,7 +128,7 @@
     "sha256": "04946d7ef2b89b58524c266b7d76ebb2a31a033636d357e250f43a7c97618933",
     "pdf": true,
     "texto": "texto_antt/ROD1042__voto_Voto_DLA_66-2026.pdf.txt",
-    "chars": 8036
+    "chars": 2
    }
   ],
   "erro": null
@@ -235,7 +235,7 @@
     "sha256": "c208596cbc7e13e253aeb16303a2a857dfe3705c85bdb9076dc0c64d586e722c",
     "pdf": true,
     "texto": "texto_antt/RDE299__voto_Voto_DFQ_64-2026.pdf.txt",
-    "chars": 14560
+    "chars": 3
    }
   ],
   "erro": null
@@ -284,7 +284,7 @@
     "sha256": "728bf6f6f4a925804157b1a22f2773dafde1fdc4b20b612714b100ceeb1a4e9e",
     "pdf": true,
     "texto": "texto_antt/RDE298__voto_Voto_DG_39-2026.pdf.txt",
-    "chars": 7914
+    "chars": 2
    }
   ],
   "erro": null
@@ -333,7 +333,7 @@
     "sha256": "3ec26378da738e89e080e64f4dfbcd5eb6b2403f54ac40f9be6be0417b5cb612",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_DG_40-2026.pdf.txt",
-    "chars": 10299
+    "chars": 2
    },
    {
     "tipo": "voto",
@@ -344,7 +344,7 @@
     "sha256": "ae5308d30574f69e203623adc2a51a08fde7efa380f3e2bfdf607368b35de20d",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_DG_45-2026.pdf.txt",
-    "chars": 11649
+    "chars": 2
    },
    {
     "tipo": "voto",
@@ -355,7 +355,7 @@
     "sha256": "2dde258b906bbdff7c429ad343125bce633486ad5782f374e960e7fc7e2f9475",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_DAB_27-2026.pdf.txt",
-    "chars": 31514
+    "chars": 9
    },
    {
     "tipo": "voto",
@@ -366,7 +366,7 @@
     "sha256": "2c068ab0c4494259c9c23c1bc9212df6aafe77dbf95b623a304649e00a84093b",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_Vista_DG_003-2026.pdf.txt",
-    "chars": 14301
+    "chars": 3
    },
    {
     "tipo": "voto",
@@ -377,7 +377,7 @@
     "sha256": "2d97698d0c9e7e21cf4c293fba403d89e98559083329ed2bd460bcaf0f61d2a6",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_DLA_64-2026.pdf.txt",
-    "chars": 12370
+    "chars": 2
    },
    {
     "tipo": "voto",
@@ -388,7 +388,7 @@
     "sha256": "2e9a62b9d7dcb2f6579e425abcec4eab727ad2b50ba0dbe2a72a3ab666a9477f",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_DLA_63-2026.pdf.txt",
-    "chars": 14935
+    "chars": 3
    },
    {
     "tipo": "voto",
@@ -399,7 +399,7 @@
     "sha256": "3b20296a3d14e965d8585f4a402e99ff61d99a14a216c489142065fa6f9171a7",
     "pdf": true,
     "texto": "texto_antt/ROD1041__voto_Voto_DAA_48-2026.pdf.txt",
-    "chars": 33799
+    "chars": 5
    },
    {
     "tipo": "voto",

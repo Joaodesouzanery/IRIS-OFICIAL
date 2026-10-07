@@ -3,7 +3,10 @@
 Uso: python3 -I antt_parse.py manifesto_antt.json saida.json"""
 import re, sys, json, unicodedata
 def norm(s): return ''.join(c for c in unicodedata.normalize('NFD', s.lower()) if unicodedata.category(c) != 'Mn')
-def limpa(t): return re.sub(r'\n\s*Ata da Reuni.*?pg\.\s*\d+\s*\n', '\n', t)
+def limpa(t):
+    t = t.replace('\u200b', '').replace('\u200c', '')
+    t = re.sub(r'D\s?ecis[ãa]o:', 'Decisão:', t)
+    return re.sub(r'\n\s*Ata da Reuni.*?pg\.\s*\d+\s*\n', '\n', t)
 NOME = r'([A-ZÁÉÍÓÚÂÊÃÕÇ][\wÀ-ú]+(?:\s+(?:d[aeo]s?\s+)?[A-ZÁÉÍÓÚÂÊÃÕÇ][\wÀ-ú]+){1,5})'
 def _nomes(seg):
     seg = re.sub(r'\s+', ' ', seg); out = []
@@ -49,8 +52,9 @@ def parse(r, ata):
         g = lambda k: (lambda x: re.sub(r'\s+', ' ', x[1]).strip() if x else '')(re.search(k + r'\s*:\s*(.+?)(?=\n\s*(?:Interessad|A\s?ssunto|Decis)|\Z)', b, re.S))
         dec = g('Decis[ãa]o'); dn = norm(dec)
         voto = re.search(r'Voto\s+([A-Z]+)\s*-\s*(\d+/\d{4})', dec)
-        if re.search(r'pedido de vista|pediu vista', dn): res = 'SOBRESTADO (vista)'
-        elif re.search(r're\s?rad', dn): res = 'RETIRADO DE PAUTA'
+        if re.search(r'vista coletiva', dn): res = 'SOBRESTADO (vista coletiva)'
+        elif re.search(r'pedido de vista|pediu vista', dn): res = 'SOBRESTADO (vista)'
+        elif re.search(r're\s?(?:ti)?\s?rad', dn): res = 'RETIRADO DE PAUTA'
         elif 'unanimidade' in dn: res = 'APROVADO POR UNANIMIDADE'
         elif 'maioria' in dn: res = 'APROVADO POR MAIORIA'
         elif not dec: res = 'SEM DECISAO NO TEXTO'
@@ -63,9 +67,11 @@ def parse(r, ata):
         for p in pres + [a for a in aus if a not in pres]:
             if p in aus and p not in pres or p in ausentes_item: v, pv = 'AUSENTE', 'nominal'
             elif res == 'RETIRADO DE PAUTA': v, pv = 'SEM VOTO (retirado de pauta)', 'nominal' if p == rel else 'n/a'
+            elif res == 'SOBRESTADO (vista coletiva)' and p != rel: v, pv = 'VISTA COLETIVA (concedida)', 'nominal'
             elif p in vista: v, pv = 'PEDIU VISTA', 'nominal'
             elif p == rel: v, pv = 'RELATOR (voto proferido)', 'nominal'
             elif res == 'APROVADO POR UNANIMIDADE': v, pv = 'ACOMPANHOU', 'inferido'
+            elif res == 'SOBRESTADO (vista)': v, pv = 'SEM VOTO AINDA (vista pendente)', 'inferido'
             else: v, pv = 'REVISAR', 'REVISAR'
             V.append({'reuniao': r['tag'], 'data': d['data'], 'processo': m[2], 'diretor': p, 'voto': v, 'proveniencia': pv})
     return {'reuniao': r['tag'], 'titulo': r['titulo'], 'tipo': r['tipo'], 'data': d['data'] if D else None, 'presentes': pres, 'ausentes': aus}, D, V

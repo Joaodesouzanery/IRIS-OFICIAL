@@ -55,7 +55,7 @@ def parse(path):
     # divide por itens: cada "PROCESSO Nº"
     itens = list(re.finditer(r'(?:^|\n)\s*(\d+(?:\.\d+)*)\.?\s*(?:ASSUNTO:.*?\n\s*)*?(?:\d+(?:\.\d+)+\s+)?PROCESSO N[ºO°]:\s*([\d./-]+)', t))
     heads = [(m.start(), m[0]) for m in re.finditer(r'\n\s*\d+\.\s+DIRETOR(?:-GERAL| SUBSTITUTO)?\s*([A-ZÁÉÍÓÚÇÂÊÃÕ ]*)\n', t)]
-    procs = list(re.finditer(r'PROCESSO N[ºO°]:\s*([\d./-]+)', t))
+    procs = list(re.finditer(r'PROCESSOS?\s+N[ºO°o0]?\s*:\s*([\d][\d./-]*)', t))
     out = []
     for i, m in enumerate(procs):
         ini = m.start(); fim = procs[i+1].start() if i+1 < len(procs) else len(t)
@@ -82,6 +82,18 @@ def parse(path):
         mr = re.search(r'Voto do Relator,\s*(?:Diretor(?:a)?(?:-Geral)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]+?)(?:,|\s+aprovad)', dtx)
         if mr and resolve(mr[1], pres + [x for x in [rel] if x]): rel = resolve(mr[1], pres + [rel] if rel else pres)
         elif mr: rel = mr[1].strip()
+        if re.search(r'Voto do Relator,\s*Diretor-Geral', dtx, re.I): rel = dg
+        def quem(sx):
+            r_ = [x for x in pres if norm(x).split()[-1] in norm(sx).split()]
+            if re.search(r'diretor-?\s?geral', sx, re.I) and dg and dg not in r_: r_.append(dg)
+            return r_
+        dissid, favor, vista_por = [], [], []
+        mdv = re.search(r'diverg[eê]nc\w+(.{0,90})', dtx, re.I)
+        if mdv: dissid = quem(mdv[1])
+        mvi = re.search(r'pedido de vistas?[^.]{0,40}?\s+pel[oa]\s+(.{0,70})', dtx, re.I)
+        if mvi: vista_por = quem(re.split(r'[.,]|,? sendo', mvi[1])[0])
+        mfa = re.search(r'^(.*?)(?:,\s*a delibera[çc][ãa]o foi sobrestada|a delibera[çc][ãa]o foi sobrestada)', dtx, re.I)
+        if mfa and re.search(r'favor[aá]vel|acompanhar|acompanhou', mfa[1], re.I): favor = [x for x in quem(mfa[1]) if x not in vista_por]
         rev = None
         if re.search(r'diverg[eê]ncia[^.]*Revisor,\s*Diretor-Geral', dtx, re.I) or re.search(r'Voto do revisor,\s*Diretor-Geral', dtx, re.I): rev = dg
         else:
@@ -90,9 +102,10 @@ def parse(path):
         out.append({'revisor': rev, 'reuniao': tag, 'data': meta['data'], 'processo': m[1], 'relator': rel,
                     'interessado': re.sub(r'\s+', ' ', inter[1]).strip() if inter else '',
                     'assunto': re.sub(r'\s+', ' ', ass[1]).strip()[:200] if ass else '',
-                    'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(re.search(r'impedid', dn))})
+                    'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(re.search(r'impedid', dn))})
     votos = []
     for d in out:
+        if d['resultado'].startswith('SEM DELIB'): continue  # ex.: aprovacao da ata anterior: nao e votacao
         pr = [p for p in pres]
         citados = {}
         for p in pr:
@@ -100,7 +113,10 @@ def parse(path):
             if re.search(r'\b' + re.escape(ult[-1]) + r'\b', norm(d['deliberacao_texto'])) : citados[p] = True
         for p in pr:
             if p == d['relator']: v, prov = 'RELATOR (voto proferido)', 'nominal'
-            elif d.get('revisor') == p and d['resultado'] == 'APROVADO POR MAIORIA' and 'diverg' in norm(d['deliberacao_texto']): v, prov = 'DIVERGIU (revisor)', 'nominal'
+            elif p in d.get('dissidentes', []): v, prov = 'DIVERGIU', 'nominal'
+            elif p in d.get('vista_por', []): v, prov = 'PEDIU VISTA', 'nominal'
+            elif p in d.get('favoraveis', []): v, prov = 'ACOMPANHOU (votou a favor antes da vista)', 'nominal'
+            elif d['resultado'] == 'APROVADO POR MAIORIA' and len(d.get('dissidentes', [])) == 1 and d['relator'] in pr: v, prov = 'ACOMPANHOU (por exclusão: um só divergente nomeado)', 'inferido'
             elif d['resultado'] == 'APROVADO POR UNANIMIDADE' and not d['tem_impedimento']: v, prov = 'ACOMPANHOU', 'inferido'
             elif d['resultado'] == 'SOBRESTADO (vista)': v, prov = 'REVISAR', 'REVISAR'
             else: v, prov = 'REVISAR', 'REVISAR'
