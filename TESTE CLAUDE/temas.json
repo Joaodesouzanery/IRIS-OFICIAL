@@ -1,5 +1,5 @@
 {
- "ANM|ROP81|48051.011270/2025-33|": {
+ "ANM|ROP81|48051.011270/2025-33|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -12,7 +12,7 @@
   "hash": "d6b9e6841f0ca32b",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP81|48054.930061/2020-56|": {
+ "ANM|ROP81|48054.930061/2020-56|2.3.9": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -30,7 +30,7 @@
   "hash": "85b284ce31f43610",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.930959/2014-79|": {
+ "ANM|ROP81|48403.930959/2014-79|2.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -48,7 +48,7 @@
   "hash": "47bbffff5c57ca42",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48405.950016/2016-12|": {
+ "ANM|ROP81|48405.950016/2016-12|2.3.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -66,7 +66,7 @@
   "hash": "ccf86e40dc422584",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48402.922842/2009-64|": {
+ "ANM|ROP81|48402.922842/2009-64|2.3.6": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -84,7 +84,7 @@
   "hash": "7e7e920468bdf9c5",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48405.950330/2016-97|": {
+ "ANM|ROP81|48405.950330/2016-97|2.3.8": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -102,7 +102,7 @@
   "hash": "cb9f71a6e7d735e4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48402.920929/2014-64|": {
+ "ANM|ROP81|48402.920929/2014-64|3.5.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -120,7 +120,7 @@
   "hash": "176c265bb28ca5e4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48402.920930/2014-99|": {
+ "ANM|ROP81|48402.920930/2014-99|3.5.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -138,7 +138,7 @@
   "hash": "176c265bb28ca5e4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48406.962730/2013-92|": {
+ "ANM|ROP81|48406.962730/2013-92|3.6.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -156,7 +156,7 @@
   "hash": "ccee2dade03206c3",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|27203.835793/1993-89|": {
+ "ANM|ROP81|27203.835793/1993-89|1.1.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -175,7 +175,7 @@
   "hash": "de75cadad0d7921b",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP81|48403.832396/2007-25|": {
+ "ANM|ROP81|48403.832396/2007-25|1.1.2": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -194,7 +194,7 @@
   "hash": "ec812c8980a22746",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP81|27203.833738/2004-68|": {
+ "ANM|ROP81|27203.833738/2004-68|1.1.3": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -213,7 +213,7 @@
   "hash": "db0a00ea500b2c1e",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP81|48403.830075/2006-13|": {
+ "ANM|ROP81|48403.830075/2006-13|1.1.4": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -233,7 +233,7 @@
   "hash": "d8ccfdfd89739480",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP81|48406.860616/2013-29|": {
+ "ANM|ROP81|48406.860616/2013-29|1.2.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -254,7 +254,7 @@
   "motivo_ia": "Pedido de reconsideração contra decisão da Diretoria Colegiada da ANM; matéria de fundo não identificável.",
   "concorda_regra": false
  },
- "ANM|ROP81|48077.903019/2020-02|": {
+ "ANM|ROP81|48077.903019/2020-02|1.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -276,7 +276,7 @@
   "motivo_ia": "Recurso contra notificação por não pagamento da TAH do alvará.",
   "concorda_regra": false
  },
- "ANM|ROP81|48069.926506/2021-15|": {
+ "ANM|ROP81|48069.926506/2021-15|1.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -296,7 +296,7 @@
   "hash": "1d1392ada1365dd1",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48412.867327/2013-71|": {
+ "ANM|ROP81|48412.867327/2013-71|1.5.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -315,7 +315,7 @@
   "hash": "09a16828edde4286",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48059.950226/2022-28|": {
+ "ANM|ROP81|48059.950226/2022-28|1.6.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -336,7 +336,7 @@
   "hash": "b5ddcfba0878884e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48062.970747/2021-61|": {
+ "ANM|ROP81|48062.970747/2021-61|1.6.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -357,7 +357,7 @@
   "hash": "87bb46530fbfd29c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48062.970748/2021-14|": {
+ "ANM|ROP81|48062.970748/2021-14|1.6.3": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -378,7 +378,7 @@
   "hash": "87bb46530fbfd29c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48062.970749/2021-51|": {
+ "ANM|ROP81|48062.970749/2021-51|1.6.4": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -399,7 +399,7 @@
   "hash": "87bb46530fbfd29c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48065.900085/2022-13|": {
+ "ANM|ROP81|48065.900085/2022-13|1.6.5": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -420,7 +420,7 @@
   "hash": "aa0cba54e70369c8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48065.900476/2021-57|": {
+ "ANM|ROP81|48065.900476/2021-57|1.6.6": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -441,7 +441,7 @@
   "hash": "c6a8651661bad8ba",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48070.948216/2021-93|": {
+ "ANM|ROP81|48070.948216/2021-93|1.6.7": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -462,7 +462,7 @@
   "hash": "7ae5bc16ac714479",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48071.946143/2020-12|": {
+ "ANM|ROP81|48071.946143/2020-12|1.6.8": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -483,7 +483,7 @@
   "hash": "9bad71d13b6d925e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48411.915273/2008-19|": {
+ "ANM|ROP81|48411.915273/2008-19|1.7.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -502,7 +502,7 @@
   "hash": "5f5db2727e57726d",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48411.915938/2012-62|": {
+ "ANM|ROP81|48411.915938/2012-62|1.7.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -521,7 +521,7 @@
   "hash": "c35d1aa42a61fc85",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|27213.826299/1997-38|": {
+ "ANM|ROP81|27213.826299/1997-38|2.2.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -539,7 +539,7 @@
   "hash": "426fa5d4be2aa408",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.932158/2009-81|": {
+ "ANM|ROP81|48403.932158/2009-81|2.3.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -557,7 +557,7 @@
   "hash": "e601e01bd8cc0c36",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48407.974118/2010-18|": {
+ "ANM|ROP81|48407.974118/2010-18|2.3.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -575,7 +575,7 @@
   "hash": "8bd8dee10389458a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48411.915561/2006-01|": {
+ "ANM|ROP81|48411.915561/2006-01|2.3.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -594,7 +594,7 @@
   "hash": "70afaa368367fb2b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48411.915255/2008-29|": {
+ "ANM|ROP81|48411.915255/2008-29|2.3.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -612,7 +612,7 @@
   "hash": "1d5fbcb277de847c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.935581/2014-08|": {
+ "ANM|ROP81|48403.935581/2014-08|2.3.7": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -630,7 +630,7 @@
   "hash": "d9616f2a7875cb25",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.832052/2012-83|": {
+ "ANM|ROP81|48403.832052/2012-83|2.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -650,7 +650,7 @@
   "hash": "434c8b64627fbc27",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.832492/2016-64|": {
+ "ANM|ROP81|48403.832492/2016-64|2.4.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -670,7 +670,7 @@
   "hash": "7da7d1eed60008ae",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48069.826202/2019-34|": {
+ "ANM|ROP81|48069.826202/2019-34|2.4.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -690,7 +690,7 @@
   "hash": "7addc781f8a4ad94",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.930116/2017-15|": {
+ "ANM|ROP81|48403.930116/2017-15|2.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -708,7 +708,7 @@
   "hash": "d29287572e1747c9",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.930141/2017-07|": {
+ "ANM|ROP81|48403.930141/2017-07|2.5.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -726,7 +726,7 @@
   "hash": "0d9b7a0d414d3a2e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48407.870298/2007-56|": {
+ "ANM|ROP81|48407.870298/2007-56|2.6.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -745,7 +745,7 @@
   "hash": "2f79531bdabb7995",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48407.871544/2015-05|": {
+ "ANM|ROP81|48407.871544/2015-05|2.6.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -764,7 +764,7 @@
   "hash": "2f79531bdabb7995",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48407.871843/2018-84|": {
+ "ANM|ROP81|48407.871843/2018-84|2.7.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -785,7 +785,7 @@
   "hash": "b39c8f01f8c15b6a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48054.831630/2024-13|": {
+ "ANM|ROP81|48054.831630/2024-13|2.8.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -804,7 +804,7 @@
   "hash": "853019422f00f329",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48402.820105/2009-28|": {
+ "ANM|ROP81|48402.820105/2009-28|2.9.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -823,7 +823,7 @@
   "hash": "7771a5e13bd3e926",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48415.846147/2018-31|": {
+ "ANM|ROP81|48415.846147/2018-31|2.10.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -844,7 +844,7 @@
   "hash": "089b6ef373c46691",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|27206.864157/1995-04|": {
+ "ANM|ROP81|27206.864157/1995-04|3.1.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -862,7 +862,7 @@
   "hash": "9f6ee3ae73c9e721",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|27206.864159/1995-95|": {
+ "ANM|ROP81|27206.864159/1995-95|3.1.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -880,7 +880,7 @@
   "hash": "9f6ee3ae73c9e721",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.831258/2010-24|": {
+ "ANM|ROP81|48403.831258/2010-24|3.1.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -898,7 +898,7 @@
   "hash": "f914e21b43bb7fec",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48054.930852/2024-18|": {
+ "ANM|ROP81|48054.930852/2024-18|3.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -919,7 +919,7 @@
   "hash": "83163e066977f9ad",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48054.930854/2024-07|": {
+ "ANM|ROP81|48054.930854/2024-07|3.2.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -940,7 +940,7 @@
   "hash": "46d82f13f1c3e253",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48062.871557/2020-81|": {
+ "ANM|ROP81|48062.871557/2020-81|3.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -960,7 +960,7 @@
   "hash": "3012039cee013f4f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966347/2022-82|": {
+ "ANM|ROP81|48068.966347/2022-82|3.4.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -981,7 +981,7 @@
   "hash": "1b2b635ea44fb954",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966933/2023-16|": {
+ "ANM|ROP81|48068.966933/2023-16|3.4.2": {
   "modal": "Mineração",
   "tema": "Barragens e segurança",
   "subtema": "Autos de infração (barragens)",
@@ -1000,7 +1000,7 @@
   "hash": "59f456c8e9914a84",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48074.978054/2022-69|": {
+ "ANM|ROP81|48074.978054/2022-69|3.4.3": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1021,7 +1021,7 @@
   "hash": "a5bc4f8a1e9e8d51",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.932629/2009-51|": {
+ "ANM|ROP81|48403.932629/2009-51|3.5.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1040,7 +1040,7 @@
   "hash": "df5539828cdedf9e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.935224/2011-03|": {
+ "ANM|ROP81|48403.935224/2011-03|3.5.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1058,7 +1058,7 @@
   "hash": "98899751cc936db4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48407.870235/2019-33|": {
+ "ANM|ROP81|48407.870235/2019-33|3.7.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -1079,7 +1079,7 @@
   "hash": "fcb288c2f6660ed6",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48411.915270/2008-77|": {
+ "ANM|ROP81|48411.915270/2008-77|3.8.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1098,7 +1098,7 @@
   "hash": "aa5c5ab82524c3d0",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48412.866651/2013-72|": {
+ "ANM|ROP81|48412.866651/2013-72|3.9.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -1117,7 +1117,7 @@
   "hash": "3f64696f02a9659b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48413.826188/2008-59|": {
+ "ANM|ROP81|48413.826188/2008-59|3.10.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -1136,7 +1136,7 @@
   "hash": "4f53edc3e419942e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.830930/2017-31|": {
+ "ANM|ROP81|48403.830930/2017-31|4.1.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -1157,7 +1157,7 @@
   "hash": "f57f2e59178afd80",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48074.978006/2021-90|": {
+ "ANM|ROP81|48074.978006/2021-90|4.2.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1178,7 +1178,7 @@
   "hash": "11929d818c50de02",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966726/2021-91|": {
+ "ANM|ROP81|48068.966726/2021-91|4.2.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1199,7 +1199,7 @@
   "hash": "e93dfa91c64e8458",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966727/2021-36|": {
+ "ANM|ROP81|48068.966727/2021-36|4.2.3": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1220,7 +1220,7 @@
   "hash": "027e6d8877c75ea5",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966728/2021-81|": {
+ "ANM|ROP81|48068.966728/2021-81|4.2.4": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1241,7 +1241,7 @@
   "hash": "39bd9f3746f03674",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966730/2021-50|": {
+ "ANM|ROP81|48068.966730/2021-50|4.2.5": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1262,7 +1262,7 @@
   "hash": "8c68fccb1c39e773",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966778/2021-68|": {
+ "ANM|ROP81|48068.966778/2021-68|4.2.6": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1283,7 +1283,7 @@
   "hash": "d59cc474c0cb5775",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966803/2023-75|": {
+ "ANM|ROP81|48068.966803/2023-75|4.2.7": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1304,7 +1304,7 @@
   "hash": "cc5e9ee7404bb052",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48068.966922/2023-28|": {
+ "ANM|ROP81|48068.966922/2023-28|4.2.8": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -1325,7 +1325,7 @@
   "hash": "e23dcf8632691df9",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP81|48403.830583/2009-36|": {
+ "ANM|ROP81|48403.830583/2009-36|4.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -1344,7 +1344,7 @@
   "hash": "6b893bf4c2e9be74",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48051.000833/2026-49|": {
+ "ANM|ROP82|48051.000833/2026-49|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -1357,7 +1357,7 @@
   "hash": "5a9ba990bd884179",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP82|48403.831223/2005-28|": {
+ "ANM|ROP82|48403.831223/2005-28|1.1.3": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -1376,7 +1376,7 @@
   "hash": "2b0312274a3f8511",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48420.896920/2006-05|": {
+ "ANM|ROP82|48420.896920/2006-05|1.2.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -1395,7 +1395,7 @@
   "hash": "7ef65fc90ed51b90",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48405.950788/2017-27|": {
+ "ANM|ROP82|48405.950788/2017-27|3.5.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1414,7 +1414,7 @@
   "hash": "0b15f92f8d027303",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48405.950567/2016-78|": {
+ "ANM|ROP82|48405.950567/2016-78|4.1.6": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1432,7 +1432,7 @@
   "hash": "95ba87b19c0fb94b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48051.005899/2024-63|": {
+ "ANM|ROP82|48051.005899/2024-63|2.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -1451,7 +1451,7 @@
   "hash": "3f6f4235a32d940e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|27203.831877/1999-39|": {
+ "ANM|ROP82|27203.831877/1999-39|1.1.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -1470,7 +1470,7 @@
   "hash": "e9c347f023a94fb0",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48403.831095/2006-01|": {
+ "ANM|ROP82|48403.831095/2006-01|1.1.2": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -1489,7 +1489,7 @@
   "hash": "386d2d2e65b92798",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48407.873238/2007-95|": {
+ "ANM|ROP82|48407.873238/2007-95|1.1.4": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -1508,7 +1508,7 @@
   "hash": "69ecc0a3b0e02864",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48412.867129/2011-46|": {
+ "ANM|ROP82|48412.867129/2011-46|1.3.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -1527,7 +1527,7 @@
   "hash": "67b9e07964380691",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48400.100524/2001-11|": {
+ "ANM|ROP82|48400.100524/2001-11|1.4.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -1548,7 +1548,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário, item retirado de pauta.",
   "concorda_regra": true
  },
- "ANM|ROP82|27212.001971/1951-15|": {
+ "ANM|ROP82|27212.001971/1951-15|1.4.2": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -1569,7 +1569,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário, retirado de pauta.",
   "concorda_regra": true
  },
- "ANM|ROP82|27212.001972/1951-51|": {
+ "ANM|ROP82|27212.001972/1951-51|1.4.3": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -1590,7 +1590,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário, item retirado de pauta.",
   "concorda_regra": true
  },
- "ANM|ROP82|27212.001973/1951-04|": {
+ "ANM|ROP82|27212.001973/1951-04|1.4.4": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -1611,7 +1611,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário, retirado de pauta.",
   "concorda_regra": true
  },
- "ANM|ROP82|27212.001974/1951-41|": {
+ "ANM|ROP82|27212.001974/1951-41|1.4.5": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -1632,7 +1632,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário, item retirado de pauta.",
   "concorda_regra": true
  },
- "ANM|ROP82|27212.001975/1951-95|": {
+ "ANM|ROP82|27212.001975/1951-95|1.4.6": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -1654,7 +1654,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário, retirado de pauta.",
   "concorda_regra": true
  },
- "ANM|ROP82|48403.933537/2015-36|": {
+ "ANM|ROP82|48403.933537/2015-36|1.5.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1672,7 +1672,7 @@
   "hash": "da7fdd0cf640f4e2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48403.933560/2015-21|": {
+ "ANM|ROP82|48403.933560/2015-21|1.5.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1690,7 +1690,7 @@
   "hash": "4bc91f4e94511c42",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48403.933562/2015-10|": {
+ "ANM|ROP82|48403.933562/2015-10|1.5.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1708,7 +1708,7 @@
   "hash": "f5344a64acca0c0c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48054.930707/2019-61|": {
+ "ANM|ROP82|48054.930707/2019-61|2.2.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1727,7 +1727,7 @@
   "hash": "1fda124d6a384be2",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP82|48066.815567/2021-88|": {
+ "ANM|ROP82|48066.815567/2021-88|2.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -1745,7 +1745,7 @@
   "hash": "cde5e534271cb73a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|27220.896443/2000-61|": {
+ "ANM|ROP82|27220.896443/2000-61|2.3.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -1763,7 +1763,7 @@
   "hash": "7f31dc8f795d6688",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48413.826207/2013-12|": {
+ "ANM|ROP82|48413.826207/2013-12|2.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -1781,7 +1781,7 @@
   "hash": "8cdb78a8acd86211",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48425.944086/2018-57|": {
+ "ANM|ROP82|48425.944086/2018-57|2.5.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1800,7 +1800,7 @@
   "hash": "9b915277c4a6badd",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48054.930736/2022-29|": {
+ "ANM|ROP82|48054.930736/2022-29|3.1.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -1820,7 +1820,7 @@
   "hash": "850ce7f26bce5cbb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48054.930737/2022-73|": {
+ "ANM|ROP82|48054.930737/2022-73|3.1.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -1840,7 +1840,7 @@
   "hash": "850ce7f26bce5cbb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48071.846149/2022-44|": {
+ "ANM|ROP82|48071.846149/2022-44|3.2.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -1859,7 +1859,7 @@
   "hash": "1c132afbc57bb091",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48403.833257/2015-29|": {
+ "ANM|ROP82|48403.833257/2015-29|3.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -1878,7 +1878,7 @@
   "hash": "82af93e6b77816eb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48404.840313/2014-91|": {
+ "ANM|ROP82|48404.840313/2014-91|3.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -1899,7 +1899,7 @@
   "hash": "3751ec71933bf02f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48421.803475/2013-59|": {
+ "ANM|ROP82|48421.803475/2013-59|3.6.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -1918,7 +1918,7 @@
   "hash": "03f7aba543a7dc9b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48420.996533/2009-11|": {
+ "ANM|ROP82|48420.996533/2009-11|4.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1936,7 +1936,7 @@
   "hash": "6985915bf2fae287",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48418.978134/2013-95|": {
+ "ANM|ROP82|48418.978134/2013-95|4.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1954,7 +1954,7 @@
   "hash": "4236b09275c73d97",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48414.948634/2010-90|": {
+ "ANM|ROP82|48414.948634/2010-90|4.1.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1972,7 +1972,7 @@
   "hash": "06b8ec79fdc6f329",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48403.932488/2009-76|": {
+ "ANM|ROP82|48403.932488/2009-76|4.1.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -1990,7 +1990,7 @@
   "hash": "4793ebc52df569e4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP82|48403.934779/2011-13|": {
+ "ANM|ROP82|48403.934779/2011-13|4.1.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -2008,7 +2008,7 @@
   "hash": "4793ebc52df569e4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48051.002035/2026-51|": {
+ "ANM|ROP83|48051.002035/2026-51|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -2021,7 +2021,7 @@
   "hash": "a1261065804156f1",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP83|27201.811033/1970-18|": {
+ "ANM|ROP83|27201.811033/1970-18|1.5.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Acordos e cooperação",
@@ -2039,7 +2039,7 @@
   "hash": "e25fb5acf2b1929e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48400.100524/2001-11|": {
+ "ANM|ROP83|48400.100524/2001-11|1.6.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -2060,7 +2060,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário com sustentação oral.",
   "concorda_regra": true
  },
- "ANM|ROP83|27212.001971/1951-15|": {
+ "ANM|ROP83|27212.001971/1951-15|1.6.2": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -2081,7 +2081,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP83|27212.001972/1951-51|": {
+ "ANM|ROP83|27212.001972/1951-51|1.6.3": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -2102,7 +2102,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário com sustentação oral.",
   "concorda_regra": true
  },
- "ANM|ROP83|27212.001973/1951-04|": {
+ "ANM|ROP83|27212.001973/1951-04|1.6.4": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -2123,7 +2123,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP83|27212.001974/1951-41|": {
+ "ANM|ROP83|27212.001974/1951-41|1.6.5": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -2144,7 +2144,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário com sustentação oral.",
   "concorda_regra": true
  },
- "ANM|ROP83|27212.001975/1951-95|": {
+ "ANM|ROP83|27212.001975/1951-95|1.6.6": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -2163,7 +2163,7 @@
   "hash": "a91982ba45882b19",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP83|48401.810495/2014-03|": {
+ "ANM|ROP83|48401.810495/2014-03|3.8.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -2184,7 +2184,7 @@
   "hash": "1221c9b18e48a338",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48051.002022/2026-82|": {
+ "ANM|ROP83|48051.002022/2026-82|2.1.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -2202,7 +2202,7 @@
   "hash": "576759e202090b97",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48051.002656/2025-54|": {
+ "ANM|ROP83|48051.002656/2025-54|2.2.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -2222,7 +2222,7 @@
   "hash": "37b9ee75d2b89334",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48051.004648/2023-81|": {
+ "ANM|ROP83|48051.004648/2023-81|3.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -2240,7 +2240,7 @@
   "hash": "8c64b32dcd9791a4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48062.972163/2021-21|": {
+ "ANM|ROP83|48062.972163/2021-21|1.1.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -2261,7 +2261,7 @@
   "hash": "2ba80edbfbf2bbca",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48063.980061/2022-50|": {
+ "ANM|ROP83|48063.980061/2022-50|1.1.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -2282,7 +2282,7 @@
   "hash": "ef4521ce6c55b60e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48053.920847/2021-56|": {
+ "ANM|ROP83|48053.920847/2021-56|1.1.3": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -2303,7 +2303,7 @@
   "hash": "b41c9a9ac36be657",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48053.920859/2021-81|": {
+ "ANM|ROP83|48053.920859/2021-81|1.1.4": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -2324,7 +2324,7 @@
   "hash": "e73ccdf0ab2c959a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48410.800115/2007-86|": {
+ "ANM|ROP83|48410.800115/2007-86|1.2.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -2344,7 +2344,7 @@
   "hash": "142bf9157adca543",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48420.997318/2008-48|": {
+ "ANM|ROP83|48420.997318/2008-48|1.3.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -2363,7 +2363,7 @@
   "hash": "e24e00051605fe45",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.930028/2017-13|": {
+ "ANM|ROP83|48403.930028/2017-13|1.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -2382,7 +2382,7 @@
   "hash": "da00430ce136d39f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48054.934594/2022-79|": {
+ "ANM|ROP83|48054.934594/2022-79|1.4.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -2401,7 +2401,7 @@
   "hash": "da00430ce136d39f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48405.851331/2013-15|": {
+ "ANM|ROP83|48405.851331/2013-15|1.7.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -2422,7 +2422,7 @@
   "hash": "e71fe2767e68bc0c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.831349/2015-74|": {
+ "ANM|ROP83|48403.831349/2015-74|2.3.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2440,7 +2440,7 @@
   "hash": "b408b5fc631f6212",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.830597/2011-74|": {
+ "ANM|ROP83|48403.830597/2011-74|2.4.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2458,7 +2458,7 @@
   "hash": "1497d97d877c6c4b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.830512/2018-24|": {
+ "ANM|ROP83|48403.830512/2018-24|2.5.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -2476,7 +2476,7 @@
   "hash": "c39bac50ab4c5496",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48412.866510/2015-11|": {
+ "ANM|ROP83|48412.866510/2015-11|2.6.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -2496,7 +2496,7 @@
   "hash": "29cf927e3be52f3f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.832699/2005-86|": {
+ "ANM|ROP83|48403.832699/2005-86|2.7.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -2514,7 +2514,7 @@
   "hash": "f1c647c076bb36e1",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.832959/2005-13|": {
+ "ANM|ROP83|48403.832959/2005-13|2.7.2": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -2532,7 +2532,7 @@
   "hash": "f8978474e660d858",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.932145/2008-21|": {
+ "ANM|ROP83|48403.932145/2008-21|2.8.1": {
   "modal": "Mineração",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -2552,7 +2552,7 @@
   "motivo_ia": "Apenas interessado ANM, sem assunto nem texto.",
   "concorda_regra": true
  },
- "ANM|ROP83|48402.921239/2013-41|": {
+ "ANM|ROP83|48402.921239/2013-41|2.8.2": {
   "modal": "Mineração",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -2572,7 +2572,7 @@
   "motivo_ia": "Classificação por assunto, interessado e unidade.",
   "concorda_regra": true
  },
- "ANM|ROP83|48405.850231/2017-97|": {
+ "ANM|ROP83|48405.850231/2017-97|2.9.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -2592,7 +2592,7 @@
   "hash": "1d42f5a1fe1ea531",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48401.810203/2016-96|": {
+ "ANM|ROP83|48401.810203/2016-96|3.2.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2611,7 +2611,7 @@
   "hash": "3ac639ef30074a78",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48401.810204/2016-31|": {
+ "ANM|ROP83|48401.810204/2016-31|3.2.2": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2630,7 +2630,7 @@
   "hash": "3ac639ef30074a78",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48401.810817/2017-59|": {
+ "ANM|ROP83|48401.810817/2017-59|3.2.3": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2649,7 +2649,7 @@
   "hash": "1aa237b22e301d34",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48401.811699/2015-34|": {
+ "ANM|ROP83|48401.811699/2015-34|3.2.4": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2668,7 +2668,7 @@
   "hash": "b1bea9062fc60f2a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.831033/2016-63|": {
+ "ANM|ROP83|48403.831033/2016-63|3.2.5": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2686,7 +2686,7 @@
   "hash": "4adc9ed5bee26975",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.832499/2014-14|": {
+ "ANM|ROP83|48403.832499/2014-14|3.2.6": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2705,7 +2705,7 @@
   "hash": "08e891f4e4373923",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.832658/2016-42|": {
+ "ANM|ROP83|48403.832658/2016-42|3.2.7": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2724,7 +2724,7 @@
   "hash": "8bff47a7f4f3b86c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.832825/2016-55|": {
+ "ANM|ROP83|48403.832825/2016-55|3.2.8": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2743,7 +2743,7 @@
   "hash": "3111a70ebd32cce8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48405.850252/2017-11|": {
+ "ANM|ROP83|48405.850252/2017-11|3.2.9": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2762,7 +2762,7 @@
   "hash": "5f62b151df2f308c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48405.850872/2018-22|": {
+ "ANM|ROP83|48405.850872/2018-22|3.2.10": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2781,7 +2781,7 @@
   "hash": "f4d97649c3d50248",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|27201.810863/2002-58|": {
+ "ANM|ROP83|27201.810863/2002-58|3.3.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2799,7 +2799,7 @@
   "hash": "e2188e72fc07b683",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|27203.831524/2003-76|": {
+ "ANM|ROP83|27203.831524/2003-76|3.3.2": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2817,7 +2817,7 @@
   "hash": "503d81346d714bbe",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48062.973873/2022-59|": {
+ "ANM|ROP83|48062.973873/2022-59|3.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -2837,7 +2837,7 @@
   "hash": "b2237a9b77139092",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48402.820683/2018-55|": {
+ "ANM|ROP83|48402.820683/2018-55|3.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -2858,7 +2858,7 @@
   "hash": "5fa5afecb651321c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48071.846131/2019-47|": {
+ "ANM|ROP83|48071.846131/2019-47|3.6.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -2876,7 +2876,7 @@
   "hash": "65eab147da35ca32",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48401.810440/2012-23|": {
+ "ANM|ROP83|48401.810440/2012-23|3.7.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2894,7 +2894,7 @@
   "hash": "f08ffd98852e9c41",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48401.810630/2016-74|": {
+ "ANM|ROP83|48401.810630/2016-74|3.9.1": {
   "modal": "Mineração",
   "tema": "Título e cadastro minerário",
   "subtema": "Baixa / transcrição de título",
@@ -2913,7 +2913,7 @@
   "hash": "61bd253ba2940fa6",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.830099/2015-55|": {
+ "ANM|ROP83|48403.830099/2015-55|3.9.2": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -2931,7 +2931,7 @@
   "hash": "9620031b59939bcb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.830117/2008-70|": {
+ "ANM|ROP83|48403.830117/2008-70|3.10.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Caducidade / suspensão de lavra",
@@ -2949,7 +2949,7 @@
   "hash": "dca2620902d38ed7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48406.860612/2007-01|": {
+ "ANM|ROP83|48406.860612/2007-01|3.11.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -2968,7 +2968,7 @@
   "hash": "8c03214ee751d71f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48407.870327/2007-80|": {
+ "ANM|ROP83|48407.870327/2007-80|3.12.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -2987,7 +2987,7 @@
   "hash": "b8ee886af470b417",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48420.996439/2012-73|": {
+ "ANM|ROP83|48420.996439/2012-73|3.13.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3005,7 +3005,7 @@
   "hash": "ada79a9fb5c14492",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.831937/2007-06|": {
+ "ANM|ROP83|48403.831937/2007-06|4.1.1": {
   "modal": "Mineração",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Pessoal, estrutura e orçamento",
@@ -3023,7 +3023,7 @@
   "hash": "4897696d523697dd",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|27209.890404/1993-28|": {
+ "ANM|ROP83|27209.890404/1993-28|4.2.1": {
   "modal": "Mineração",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Pessoal, estrutura e orçamento",
@@ -3041,7 +3041,7 @@
   "hash": "57af0134ced4923e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48407.870316/2007-08|": {
+ "ANM|ROP83|48407.870316/2007-08|4.3.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -3059,7 +3059,7 @@
   "hash": "c6065603bebb60f7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP83|48403.831966/2010-65|": {
+ "ANM|ROP83|48403.831966/2010-65|4.3.2": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -3077,7 +3077,7 @@
   "hash": "e22f02ce5e414cb3",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48051.003447/2026-17|": {
+ "ANM|ROP84|48051.003447/2026-17|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -3090,7 +3090,7 @@
   "hash": "66125636f5acb84a",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP84|48403.930921/2011-60|": {
+ "ANM|ROP84|48403.930921/2011-60|2.5.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3109,7 +3109,7 @@
   "hash": "0861fbca04ac6ea3",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48405.950614/2018-45|": {
+ "ANM|ROP84|48405.950614/2018-45|2.5.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3128,7 +3128,7 @@
   "hash": "f34820221bb84e05",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48403.932.527/2009|": {
+ "ANM|ROP84|48403.932.527/2009|3.12.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3149,7 +3149,7 @@
   "motivo_ia": "Embargos de declaração contra decisão da Diretoria Colegiada.",
   "concorda_regra": true
  },
- "ANM|ROP84|48420.996866/2010-75|": {
+ "ANM|ROP84|48420.996866/2010-75|3.1.7": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3168,7 +3168,7 @@
   "hash": "e9b62e7f510ae82c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48418.978088/2016-77|": {
+ "ANM|ROP84|48418.978088/2016-77|3.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3187,7 +3187,7 @@
   "hash": "dd04f1317fdf5b8e",
   "tipo_item": "Vista"
  },
- "ANM|ROP84|48418.978090/2016-46|": {
+ "ANM|ROP84|48418.978090/2016-46|3.1.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3207,7 +3207,7 @@
   "hash": "dd04f1317fdf5b8e",
   "tipo_item": "Vista"
  },
- "ANM|ROP84|48051.002046/2026-31|": {
+ "ANM|ROP84|48051.002046/2026-31|1.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -3226,7 +3226,7 @@
   "hash": "0778e78802bdfa9f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48423.868314/2016-33|": {
+ "ANM|ROP84|48423.868314/2016-33|1.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -3245,7 +3245,7 @@
   "hash": "a9c05ce0adca904a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48400.100524/2001-11|": {
+ "ANM|ROP84|48400.100524/2001-11|1.3.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3266,7 +3266,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP84|27212.001971/1951-15|": {
+ "ANM|ROP84|27212.001971/1951-15|1.3.2": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3287,7 +3287,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP84|27212.001972/1951-51|": {
+ "ANM|ROP84|27212.001972/1951-51|1.3.3": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3308,7 +3308,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP84|27212.001973/1951-04|": {
+ "ANM|ROP84|27212.001973/1951-04|1.3.4": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3329,7 +3329,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP84|27212.001974/1951-41|": {
+ "ANM|ROP84|27212.001974/1951-41|1.3.5": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3350,7 +3350,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP84|27212.001975/1951-95|": {
+ "ANM|ROP84|27212.001975/1951-95|1.3.6": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -3371,7 +3371,7 @@
   "motivo_ia": "Recurso contra arquivamento de processo minerário.",
   "concorda_regra": true
  },
- "ANM|ROP84|48054.933305/2021-33|": {
+ "ANM|ROP84|48054.933305/2021-33|1.4.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -3392,7 +3392,7 @@
   "hash": "7fb509c272fd1056",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48054.933878/2020-86|": {
+ "ANM|ROP84|48054.933878/2020-86|1.4.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -3413,7 +3413,7 @@
   "hash": "0dcf980ff758d7d1",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48061.960454/2022-67|": {
+ "ANM|ROP84|48061.960454/2022-67|1.4.3": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -3434,7 +3434,7 @@
   "hash": "20f461b6a393eb97",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48407.870289/2019-07|": {
+ "ANM|ROP84|48407.870289/2019-07|1.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -3455,7 +3455,7 @@
   "hash": "01c9b383bfe75685",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48407.870290/2019-23|": {
+ "ANM|ROP84|48407.870290/2019-23|1.5.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -3476,7 +3476,7 @@
   "hash": "01c9b383bfe75685",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48407.870291/2019-78|": {
+ "ANM|ROP84|48407.870291/2019-78|1.5.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -3497,7 +3497,7 @@
   "hash": "01c9b383bfe75685",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48416.858092/2005-87|": {
+ "ANM|ROP84|48416.858092/2005-87|1.6.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -3516,7 +3516,7 @@
   "hash": "e87cabde4335d40f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48409.890335/2012-90|": {
+ "ANM|ROP84|48409.890335/2012-90|1.7.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3535,7 +3535,7 @@
   "hash": "e8fd258240eb2066",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48409.890682/2011-31|": {
+ "ANM|ROP84|48409.890682/2011-31|1.7.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3554,7 +3554,7 @@
   "hash": "d3266f0010877b75",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48411.815118/2015-14|": {
+ "ANM|ROP84|48411.815118/2015-14|1.7.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3573,7 +3573,7 @@
   "hash": "d292bb16f065262e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48406.860768/2010-89|": {
+ "ANM|ROP84|48406.860768/2010-89|1.8.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Caducidade / suspensão de lavra",
@@ -3592,7 +3592,7 @@
   "hash": "9de61a7d5a68f320",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48052.810406/2019-32|": {
+ "ANM|ROP84|48052.810406/2019-32|1.9.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -3611,7 +3611,7 @@
   "hash": "28e7819e63378f7a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48054.930707/2019-61|": {
+ "ANM|ROP84|48054.930707/2019-61|2.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3630,7 +3630,7 @@
   "hash": "138f03d9d053252e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48402.922857/2009-29|": {
+ "ANM|ROP84|48402.922857/2009-29|2.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3649,7 +3649,7 @@
   "hash": "0bd11eb6f202fc33",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48406.861167/2016-89|": {
+ "ANM|ROP84|48406.861167/2016-89|2.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -3669,7 +3669,7 @@
   "hash": "aebfef939e68fb8e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48406.861600/2008-76|": {
+ "ANM|ROP84|48406.861600/2008-76|2.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3687,7 +3687,7 @@
   "hash": "1599ce2777d3828c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48403.834865/2010-46|": {
+ "ANM|ROP84|48403.834865/2010-46|2.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3705,7 +3705,7 @@
   "hash": "0ff35f0d94569f87",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48401.910255/2018-23|": {
+ "ANM|ROP84|48401.910255/2018-23|2.5.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3724,7 +3724,7 @@
   "hash": "7e55d37afdafdedb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48402.922874/2009-60|": {
+ "ANM|ROP84|48402.922874/2009-60|3.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3743,7 +3743,7 @@
   "hash": "1e958bc475171c97",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48411.916735/2010-21|": {
+ "ANM|ROP84|48411.916735/2010-21|3.1.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3762,7 +3762,7 @@
   "hash": "986343be8e864429",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48411.916745/2010-67|": {
+ "ANM|ROP84|48411.916745/2010-67|3.1.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3781,7 +3781,7 @@
   "hash": "986343be8e864429",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48420.997033/2013-74|": {
+ "ANM|ROP84|48420.997033/2013-74|3.1.6": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3800,7 +3800,7 @@
   "hash": "d540ab1b9b8fd82c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48418.978156/2013-55|": {
+ "ANM|ROP84|48418.978156/2013-55|3.1.8": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3819,7 +3819,7 @@
   "hash": "3ed517df62790b9c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48413.926261/2013-59|": {
+ "ANM|ROP84|48413.926261/2013-59|3.1.9": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -3838,7 +3838,7 @@
   "hash": "e36b3ea812c6bbc7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48405.850552/2005-58|": {
+ "ANM|ROP84|48405.850552/2005-58|3.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -3859,7 +3859,7 @@
   "hash": "83be08a13f5b54b7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48412.867140/2017-00|": {
+ "ANM|ROP84|48412.867140/2017-00|3.2.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -3880,7 +3880,7 @@
   "hash": "227e3ae0effa93d9",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48411.815169/2007-36|": {
+ "ANM|ROP84|48411.815169/2007-36|3.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3899,7 +3899,7 @@
   "hash": "9240055229b22a1b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48411.815563/2011-51|": {
+ "ANM|ROP84|48411.815563/2011-51|3.3.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -3918,7 +3918,7 @@
   "hash": "128ea77022f8c5e4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48415.846347/2010-36|": {
+ "ANM|ROP84|48415.846347/2010-36|3.4.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -3937,7 +3937,7 @@
   "hash": "303d7b5f8894ed49",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48054.931581/2025-91|": {
+ "ANM|ROP84|48054.931581/2025-91|3.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -3957,7 +3957,7 @@
   "hash": "02ff288cb9b3e911",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48413.826020/2019-04|": {
+ "ANM|ROP84|48413.826020/2019-04|3.6.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -3976,7 +3976,7 @@
   "hash": "2a3e63391654b159",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48052.810498/2020-94|": {
+ "ANM|ROP84|48052.810498/2020-94|3.6.2": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -3995,7 +3995,7 @@
   "hash": "390a3090f2f25b62",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48422.806099/2016-97|": {
+ "ANM|ROP84|48422.806099/2016-97|3.6.3": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -4013,7 +4013,7 @@
   "hash": "d83fd64cee92deae",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48412.866115/2009-91|": {
+ "ANM|ROP84|48412.866115/2009-91|3.7.1": {
   "modal": "Mineração",
   "tema": "Título e cadastro minerário",
   "subtema": "Baixa / transcrição de título",
@@ -4032,7 +4032,7 @@
   "hash": "5106743f5a166d03",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48052.810015/2020-51|": {
+ "ANM|ROP84|48052.810015/2020-51|3.8.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -4051,7 +4051,7 @@
   "hash": "48e9230027091d27",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48054.830947/2024-24|": {
+ "ANM|ROP84|48054.830947/2024-24|3.9.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -4069,7 +4069,7 @@
   "hash": "fc933ba9c32c1c12",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|27203.831709/1999-43|": {
+ "ANM|ROP84|27203.831709/1999-43|3.10.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -4087,7 +4087,7 @@
   "hash": "246403468e3ca9f2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48413.826256/2018-51|": {
+ "ANM|ROP84|48413.826256/2018-51|3.11.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -4106,7 +4106,7 @@
   "hash": "d5bc41d212d38776",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48054.930255/2020-51|": {
+ "ANM|ROP84|48054.930255/2020-51|4.1.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -4125,7 +4125,7 @@
   "hash": "fef40eb4098739ef",
   "tipo_item": "Vista"
  },
- "ANM|ROP84|48406.860483/2017-14|": {
+ "ANM|ROP84|48406.860483/2017-14|4.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -4146,7 +4146,7 @@
   "hash": "b1fff5c42a0f5542",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48403.831918/2016-62|": {
+ "ANM|ROP84|48403.831918/2016-62|4.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -4164,7 +4164,7 @@
   "hash": "87bdde41945e955e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48402.920134/2012-91|": {
+ "ANM|ROP84|48402.920134/2012-91|4.4.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4183,7 +4183,7 @@
   "hash": "31ccfe572f357537",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48413.826379/2017-10|": {
+ "ANM|ROP84|48413.826379/2017-10|4.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -4201,7 +4201,7 @@
   "hash": "32f0e4070f72e1ab",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP84|48052.810779/2020-47|": {
+ "ANM|ROP84|48052.810779/2020-47|4.6.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -4222,7 +4222,7 @@
   "hash": "f393420d8ff53d9c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48051.004881/2026-14|": {
+ "ANM|ROP85|48051.004881/2026-14|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -4235,7 +4235,7 @@
   "hash": "680acbfd96b4ea9d",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP85|48402.920737/2013-77|": {
+ "ANM|ROP85|48402.920737/2013-77|2.5.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4253,7 +4253,7 @@
   "hash": "de563ef9cb00614c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48403.930925/2011-48|": {
+ "ANM|ROP85|48403.930925/2011-48|2.5.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4271,7 +4271,7 @@
   "hash": "c67e5f69050827a7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48403.934797/2011-10|": {
+ "ANM|ROP85|48403.934797/2011-10|2.5.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4289,7 +4289,7 @@
   "hash": "8fa0242cba8c8e40",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48403.934258/2011-72|": {
+ "ANM|ROP85|48403.934258/2011-72|2.5.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4307,7 +4307,7 @@
   "hash": "06651c600dcf8ac7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48423.968443/2013-88|": {
+ "ANM|ROP85|48423.968443/2013-88|3.1.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4326,7 +4326,7 @@
   "hash": "a1cb80595cc41b1b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48403.932031/2008-97|": {
+ "ANM|ROP85|48403.932031/2008-97|3.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4345,7 +4345,7 @@
   "hash": "9842595c7618e348",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48403.932035/2008-69|": {
+ "ANM|ROP85|48403.932035/2008-69|3.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4364,7 +4364,7 @@
   "hash": "9842595c7618e348",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48406.963012/2008-76|": {
+ "ANM|ROP85|48406.963012/2008-76|4.1.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4382,7 +4382,7 @@
   "hash": "32be472637dced8c",
   "tipo_item": "Vista"
  },
- "ANM|ROP85|48416.958097/2011-57|": {
+ "ANM|ROP85|48416.958097/2011-57|4.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4401,7 +4401,7 @@
   "hash": "2246370b6c3255e1",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48051.011306/2025-89|": {
+ "ANM|ROP85|48051.011306/2025-89|1.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -4420,7 +4420,7 @@
   "hash": "0778e78802bdfa9f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48054.000268/2025-17|": {
+ "ANM|ROP85|48054.000268/2025-17|1.2.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -4438,7 +4438,7 @@
   "hash": "b9789235fd98d0fa",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48418.978088/2016-77|": {
+ "ANM|ROP85|48418.978088/2016-77|1.3.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4456,7 +4456,7 @@
   "hash": "d605dc02cdd3b07a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48054.930255/2020-51|": {
+ "ANM|ROP85|48054.930255/2020-51|1.4.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -4474,7 +4474,7 @@
   "hash": "afd464655c625446",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|27202.820791/1987-57|": {
+ "ANM|ROP85|27202.820791/1987-57|1.5.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -4493,7 +4493,7 @@
   "hash": "b1fe0102702abdad",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|27209.890107/1993-82|": {
+ "ANM|ROP85|27209.890107/1993-82|1.6.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -4514,7 +4514,7 @@
   "hash": "235d5700b4b6501c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|27203.802386/1974-22|": {
+ "ANM|ROP85|27203.802386/1974-22|2.1.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -4533,7 +4533,7 @@
   "hash": "05d83ad960c6765c",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48405.851074/2012-22|": {
+ "ANM|ROP85|48405.851074/2012-22|2.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -4554,7 +4554,7 @@
   "hash": "2e4484e0a6509ccf",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48054.933490/2022-47|": {
+ "ANM|ROP85|48054.933490/2022-47|2.3.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -4573,7 +4573,7 @@
   "hash": "8b90c8607b00c8f0",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP85|27211.811794/1970-42|": {
+ "ANM|ROP85|27211.811794/1970-42|2.4.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -4594,7 +4594,7 @@
   "hash": "38297b0cd56e31d4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48405.950360/2015-12|": {
+ "ANM|ROP85|48405.950360/2015-12|3.1.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4613,7 +4613,7 @@
   "hash": "72ff89db04145eeb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48423.968374/2010-60|": {
+ "ANM|ROP85|48423.968374/2010-60|3.1.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4632,7 +4632,7 @@
   "hash": "9f8471c9d0409429",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48054.830752/2024-84|": {
+ "ANM|ROP85|48054.830752/2024-84|3.2.1": {
   "modal": "Mineração",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -4652,7 +4652,7 @@
   "motivo_ia": "Apenas o interessado (cooperativa de mineração), sem assunto.",
   "concorda_regra": true
  },
- "ANM|ROP85|48054.832830/2023-02|": {
+ "ANM|ROP85|48054.832830/2023-02|3.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -4673,7 +4673,7 @@
   "hash": "bd61373c1069f7d2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48064.890049/2021-63|": {
+ "ANM|ROP85|48064.890049/2021-63|3.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -4692,7 +4692,7 @@
   "hash": "51294819765cde88",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48078.806068/2020-80|": {
+ "ANM|ROP85|48078.806068/2020-80|3.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -4713,7 +4713,7 @@
   "hash": "db062a748dc0c697",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48412.866510/2015-11|": {
+ "ANM|ROP85|48412.866510/2015-11|3.5.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -4734,7 +4734,7 @@
   "hash": "362848a65faba893",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48403.930554/2011-98|": {
+ "ANM|ROP85|48403.930554/2011-98|4.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4753,7 +4753,7 @@
   "hash": "bc854f81f4b577b8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48402.921305/2013-83|": {
+ "ANM|ROP85|48402.921305/2013-83|4.1.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4772,7 +4772,7 @@
   "hash": "6f33504756093cf2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP85|48412.866969/2010-19|": {
+ "ANM|ROP85|48412.866969/2010-19|4.2.1": {
   "modal": "Mineração",
   "tema": "Título e cadastro minerário",
   "subtema": "Baixa / transcrição de título",
@@ -4793,7 +4793,7 @@
   "hash": "825ef3b04f9b3a16",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48051.006103/2026-51|": {
+ "ANM|ROP86|48051.006103/2026-51|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -4806,7 +4806,7 @@
   "hash": "b9965c7b1f58e2e1",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP86|48405.950771/2017-70|": {
+ "ANM|ROP86|48405.950771/2017-70|2.2.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4825,7 +4825,7 @@
   "hash": "ea014be29693e19a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48420.996954/2012-39|": {
+ "ANM|ROP86|48420.996954/2012-39|2.2.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4845,7 +4845,7 @@
   "hash": "ea014be29693e19a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48407.971134/2006-64|": {
+ "ANM|ROP86|48407.971134/2006-64|2.2.17": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4864,7 +4864,7 @@
   "hash": "7b8b8452321d982b",
   "tipo_item": "Vista"
  },
- "ANM|ROP86|48405.950017/2016-59|": {
+ "ANM|ROP86|48405.950017/2016-59|2.2.12": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4884,7 +4884,7 @@
   "hash": "20f65904eb0915b3",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48403.930530/2016-43|": {
+ "ANM|ROP86|48403.930530/2016-43|3.3.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -4905,7 +4905,7 @@
   "motivo_ia": "Pedido de reconsideração contra decisão da Diretoria Colegiada.",
   "concorda_regra": true
  },
- "ANM|ROP86|48423.968168/2014-83|": {
+ "ANM|ROP86|48423.968168/2014-83|4.2.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4923,7 +4923,7 @@
   "hash": "de1aa99c0d7f8412",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48405.950640/2013-69|": {
+ "ANM|ROP86|48405.950640/2013-69|4.2.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -4941,7 +4941,7 @@
   "hash": "a01bfa3fb7c4b050",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48051.004825/2026-71|": {
+ "ANM|ROP86|48051.004825/2026-71|3.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -4962,7 +4962,7 @@
   "hash": "056e089dd98e6afc",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP86|48051.003453/2026-66|": {
+ "ANM|ROP86|48051.003453/2026-66|3.2.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -4983,7 +4983,7 @@
   "hash": "b08bdeb7a755852f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48051.001474/2025-66|": {
+ "ANM|ROP86|48051.001474/2025-66|4.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -5002,7 +5002,7 @@
   "hash": "e92f2cd14af2e08e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48406.963012/2008-76|": {
+ "ANM|ROP86|48406.963012/2008-76|1.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5020,7 +5020,7 @@
   "hash": "051e1da8fdda7410",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|27209.890579/1987-97|": {
+ "ANM|ROP86|27209.890579/1987-97|1.2.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -5038,7 +5038,7 @@
   "hash": "155f8ac575e59e98",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48403.832739/2016-42|": {
+ "ANM|ROP86|48403.832739/2016-42|1.3.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -5056,7 +5056,7 @@
   "hash": "103747c5a70dbd15",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP86|48062.870382/2023-38|": {
+ "ANM|ROP86|48062.870382/2023-38|1.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -5077,7 +5077,7 @@
   "hash": "42cae11098549253",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48068.866047/2020-32|": {
+ "ANM|ROP86|48068.866047/2020-32|1.4.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -5098,7 +5098,7 @@
   "hash": "e5bdd3733cbe4cd6",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48405.850863/2014-16|": {
+ "ANM|ROP86|48405.850863/2014-16|1.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -5117,7 +5117,7 @@
   "hash": "5cb110610f731930",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48409.890037/2006-51|": {
+ "ANM|ROP86|48409.890037/2006-51|1.5.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -5136,7 +5136,7 @@
   "hash": "914677aad5e9b583",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48063.980058/2022-36|": {
+ "ANM|ROP86|48063.980058/2022-36|1.6.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -5157,7 +5157,7 @@
   "hash": "4e008fe1f9e4f2aa",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48063.980059/2022-36|": {
+ "ANM|ROP86|48063.980059/2022-36|1.6.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -5178,7 +5178,7 @@
   "hash": "4e008fe1f9e4f2aa",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|27220.896259/2004-44|": {
+ "ANM|ROP86|27220.896259/2004-44|2.1.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -5196,7 +5196,7 @@
   "hash": "9d75c25be484187a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48401.911074/2010-67|": {
+ "ANM|ROP86|48401.911074/2010-67|2.2.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5216,7 +5216,7 @@
   "hash": "36048f3be136ca46",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48402.921066/2010-19|": {
+ "ANM|ROP86|48402.921066/2010-19|2.2.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5235,7 +5235,7 @@
   "hash": "f12bf37ac1458f38",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48403.930586/2012-74|": {
+ "ANM|ROP86|48403.930586/2012-74|2.2.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5254,7 +5254,7 @@
   "hash": "de229245396b9b20",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48403.930964/2014-81|": {
+ "ANM|ROP86|48403.930964/2014-81|2.2.6": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5273,7 +5273,7 @@
   "hash": "bdc02e0f531643ae",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48418.978157/2013-08|": {
+ "ANM|ROP86|48418.978157/2013-08|2.2.7": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5292,7 +5292,7 @@
   "hash": "3c0ac8aceed29179",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48419.986012/2019-58|": {
+ "ANM|ROP86|48419.986012/2019-58|2.2.8": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5311,7 +5311,7 @@
   "hash": "fe0fa747500d931e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48407.973425/2018-21|": {
+ "ANM|ROP86|48407.973425/2018-21|2.2.9": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5330,7 +5330,7 @@
   "hash": "694bae7ce1ede986",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48407.973426/2018-75|": {
+ "ANM|ROP86|48407.973426/2018-75|2.2.10": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5349,7 +5349,7 @@
   "hash": "694bae7ce1ede986",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48403.932329/2009-88|": {
+ "ANM|ROP86|48403.932329/2009-88|2.2.11": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5368,7 +5368,7 @@
   "hash": "edd2d0c97f966d67",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48407.972610/2013-93|": {
+ "ANM|ROP86|48407.972610/2013-93|2.2.13": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5388,7 +5388,7 @@
   "hash": "ef411de2baa6b795",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48402.921127/2013-91|": {
+ "ANM|ROP86|48402.921127/2013-91|2.2.14": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5407,7 +5407,7 @@
   "hash": "fbdf6b8e1b3694a8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48403.932332/2009-95|": {
+ "ANM|ROP86|48403.932332/2009-95|2.2.15": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5426,7 +5426,7 @@
   "hash": "1ced18d0d10d047f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48402.921449/2009-50|": {
+ "ANM|ROP86|48402.921449/2009-50|2.2.16": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5445,7 +5445,7 @@
   "hash": "67e88e0c20398bca",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48411.915260/2008-31|": {
+ "ANM|ROP86|48411.915260/2008-31|2.2.18": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5464,7 +5464,7 @@
   "hash": "2ac10dcac36234f3",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|48413.826379/2017-10|": {
+ "ANM|ROP86|48413.826379/2017-10|4.3.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -5485,7 +5485,7 @@
   "motivo_ia": "Embargos de declaração contra voto da ANM.",
   "concorda_regra": true
  },
- "ANM|ROP86|48068.966917/2021-53|": {
+ "ANM|ROP86|48068.966917/2021-53|4.4.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -5506,7 +5506,7 @@
   "hash": "82bb0bb33a238caf",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP86|27203.832874/2004-31|": {
+ "ANM|ROP86|27203.832874/2004-31|4.5.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -5525,7 +5525,7 @@
   "hash": "05f4f17ce969c5dc",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48051.007495/2026-76|": {
+ "ANM|ROP87|48051.007495/2026-76|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -5538,7 +5538,7 @@
   "hash": "c84bbe653cfc2524",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP87|48405.950484/2011-09|": {
+ "ANM|ROP87|48405.950484/2011-09|3.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5556,7 +5556,7 @@
   "hash": "12fedd76ec23f286",
   "tipo_item": "Vista"
  },
- "ANM|ROP87|48402.921289/2010-86|": {
+ "ANM|ROP87|48402.921289/2010-86|4.1.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -5577,7 +5577,7 @@
   "motivo_ia": "Recurso negado em cobrança de débito de CFEM.",
   "concorda_regra": false
  },
- "ANM|ROP87|48402.920796/2009-69|": {
+ "ANM|ROP87|48402.920796/2009-69|4.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5598,7 +5598,7 @@
   "motivo_ia": "Recurso contra NFLD de CFEM negado",
   "concorda_regra": true
  },
- "ANM|ROP87|27203.805074/1968-22|": {
+ "ANM|ROP87|27203.805074/1968-22|4.3.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Caducidade / suspensão de lavra",
@@ -5616,7 +5616,7 @@
   "hash": "d6850da192bb466d",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48051.009418/2025-70|": {
+ "ANM|ROP87|48051.009418/2025-70|1.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -5634,7 +5634,7 @@
   "hash": "7cd84e9441e01147",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48068.000017/2022-22|": {
+ "ANM|ROP87|48068.000017/2022-22|2.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -5654,7 +5654,7 @@
   "hash": "2148433549b1dfac",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48403.931566/2014-82|": {
+ "ANM|ROP87|48403.931566/2014-82|1.2.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5672,7 +5672,7 @@
   "hash": "94bc760fa430d3b9",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48059.850511/2022-40|": {
+ "ANM|ROP87|48059.850511/2022-40|1.3.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -5690,7 +5690,7 @@
   "hash": "a0b416571a91b416",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP87|48061.861176/2023-47|": {
+ "ANM|ROP87|48061.861176/2023-47|1.4.1": {
   "modal": "Mineração",
   "tema": "Recursos administrativos",
   "subtema": "Recurso / reconsideração / embargos",
@@ -5709,7 +5709,7 @@
   "hash": "c1ae5d9a538fc484",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48069.826204/2019-23|": {
+ "ANM|ROP87|48069.826204/2019-23|1.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -5729,7 +5729,7 @@
   "hash": "be6fd95ae7bcd72b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48069.826221/2019-61|": {
+ "ANM|ROP87|48069.826221/2019-61|1.5.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -5749,7 +5749,7 @@
   "hash": "be6fd95ae7bcd72b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48069.826189/2019-13|": {
+ "ANM|ROP87|48069.826189/2019-13|1.5.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -5769,7 +5769,7 @@
   "hash": "be6fd95ae7bcd72b",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48062.870888/2020-02|": {
+ "ANM|ROP87|48062.870888/2020-02|1.5.4": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -5789,7 +5789,7 @@
   "hash": "3f4963ed2daa139a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48412.867001/2016-97|": {
+ "ANM|ROP87|48412.867001/2016-97|1.5.5": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -5809,7 +5809,7 @@
   "hash": "b05afe41aab868c4",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48407.870251/2012-50|": {
+ "ANM|ROP87|48407.870251/2012-50|1.5.6": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -5829,7 +5829,7 @@
   "hash": "27e0a67dc4b88675",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48419.886073/2016-73|": {
+ "ANM|ROP87|48419.886073/2016-73|2.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -5847,7 +5847,7 @@
   "hash": "99ee41f487468652",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48420.896109/2013-45|": {
+ "ANM|ROP87|48420.896109/2013-45|2.3.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -5868,7 +5868,7 @@
   "hash": "809a026ee17f46a8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48403.933707/2010-78|": {
+ "ANM|ROP87|48403.933707/2010-78|2.4.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5888,7 +5888,7 @@
   "hash": "54312ff7bfe6525f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48406.960646/2016-87|": {
+ "ANM|ROP87|48406.960646/2016-87|2.4.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5907,7 +5907,7 @@
   "hash": "8276d094369489b2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48401.910278/2017-57|": {
+ "ANM|ROP87|48401.910278/2017-57|2.4.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5926,7 +5926,7 @@
   "hash": "c1a73909efcb72af",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48413.926932/2009-03|": {
+ "ANM|ROP87|48413.926932/2009-03|2.4.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5945,7 +5945,7 @@
   "hash": "2fac2d3dfd114d01",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48416.958202/2013-10|": {
+ "ANM|ROP87|48416.958202/2013-10|2.4.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5964,7 +5964,7 @@
   "hash": "5e91ceba5ab2006d",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48416.958122/2012-83|": {
+ "ANM|ROP87|48416.958122/2012-83|2.4.6": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -5984,7 +5984,7 @@
   "hash": "3f45d0bae254e8ac",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48416.958110/2017-63|": {
+ "ANM|ROP87|48416.958110/2017-63|2.4.7": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6003,7 +6003,7 @@
   "hash": "e1ac6dcafd8abbfd",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48404.940157/2016-29|": {
+ "ANM|ROP87|48404.940157/2016-29|2.4.8": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6022,7 +6022,7 @@
   "hash": "974ab8fa1abdeb0a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48054.931976/2023-21|": {
+ "ANM|ROP87|48054.931976/2023-21|3.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -6040,7 +6040,7 @@
   "hash": "0b23372a0b56cd0d",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48411.815173/2009-66|": {
+ "ANM|ROP87|48411.815173/2009-66|3.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6058,7 +6058,7 @@
   "hash": "caf4f36d13e73630",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48077.803142/2020-16|": {
+ "ANM|ROP87|48077.803142/2020-16|3.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -6077,7 +6077,7 @@
   "hash": "264a91c7e7030f4d",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48074.978047/2022-67|": {
+ "ANM|ROP87|48074.978047/2022-67|3.5.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -6098,7 +6098,7 @@
   "hash": "8d2b48a07c2d0103",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48074.978045/2022-78|": {
+ "ANM|ROP87|48074.978045/2022-78|3.5.2": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -6119,7 +6119,7 @@
   "hash": "548d66048b21739f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48068.966906/2023-35|": {
+ "ANM|ROP87|48068.966906/2023-35|3.5.3": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -6138,7 +6138,7 @@
   "hash": "be2f6807665e86bf",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48059.950794/2021-48|": {
+ "ANM|ROP87|48059.950794/2021-48|3.5.4": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -6159,7 +6159,7 @@
   "hash": "74ec8d3bbf348dd8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48059.950234/2021-93|": {
+ "ANM|ROP87|48059.950234/2021-93|3.5.5": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -6180,7 +6180,7 @@
   "hash": "9a8fcde6f6fff59f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|27203.833678/2004-83|": {
+ "ANM|ROP87|27203.833678/2004-83|4.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -6198,7 +6198,7 @@
   "hash": "db0c1e87cbed8e2f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|48054.832330/2021-09|": {
+ "ANM|ROP87|48054.832330/2021-09|4.4.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -6218,7 +6218,7 @@
   "hash": "a3cd480f14d9db43",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP87|27209.890304/1993-00|": {
+ "ANM|ROP87|27209.890304/1993-00|4.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6236,7 +6236,7 @@
   "hash": "a9be0a2225d754c7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48051.008620/2026-65|": {
+ "ANM|ROP88|48051.008620/2026-65|#1": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -6249,7 +6249,7 @@
   "hash": "f8c3e03309682f7a",
   "tipo_item": "Aprovação de ata"
  },
- "ANM|ROP88|27203.832227/2004-29|": {
+ "ANM|ROP88|27203.832227/2004-29|2.7.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -6268,7 +6268,7 @@
   "hash": "9e7c6837dfbc9fe2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48409.990244/2016-87|": {
+ "ANM|ROP88|48409.990244/2016-87|2.1.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6286,7 +6286,7 @@
   "hash": "966d4e1212cef6cb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48061.860677/2019-20|": {
+ "ANM|ROP88|48061.860677/2019-20|3.6.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -6304,7 +6304,7 @@
   "hash": "ae82d5a5f2a1b5ed",
   "tipo_item": "Vista"
  },
- "ANM|ROP88|48403.933843/2015-72|": {
+ "ANM|ROP88|48403.933843/2015-72|4.2.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6322,7 +6322,7 @@
   "hash": "ad64104d2d7cde11",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48051.004825/2026-71|": {
+ "ANM|ROP88|48051.004825/2026-71|3.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -6341,7 +6341,7 @@
   "hash": "d2a468d15ce3739e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48051.010782/2025-82|": {
+ "ANM|ROP88|48051.010782/2025-82|4.1.1": {
   "modal": "Mineração",
   "tema": "Regulação e normas",
   "subtema": "Resolução / súmula / ato normativo",
@@ -6360,7 +6360,7 @@
   "hash": "013674aa9c201c71",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48054.934072/2021-96|": {
+ "ANM|ROP88|48054.934072/2021-96|1.1.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -6379,7 +6379,7 @@
   "hash": "eb8ba5a77d825a90",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.833906/2012-49|": {
+ "ANM|ROP88|48403.833906/2012-49|1.2.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -6400,7 +6400,7 @@
   "hash": "b40144a91ee3bc0f",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48420.896047/2015-33|": {
+ "ANM|ROP88|48420.896047/2015-33|1.2.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -6421,7 +6421,7 @@
   "hash": "258ad3f8b2dcd5cd",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48420.896048/2015-88|": {
+ "ANM|ROP88|48420.896048/2015-88|1.2.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Autorização / requerimento de pesquisa",
@@ -6442,7 +6442,7 @@
   "hash": "258ad3f8b2dcd5cd",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48407.870107/2016-47|": {
+ "ANM|ROP88|48407.870107/2016-47|1.3.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6461,7 +6461,7 @@
   "hash": "7a86a6870337bc37",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48407.870429/2010-09|": {
+ "ANM|ROP88|48407.870429/2010-09|1.3.2": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6480,7 +6480,7 @@
   "hash": "43466acdcb16ee53",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48407.873871/2011-60|": {
+ "ANM|ROP88|48407.873871/2011-60|1.3.3": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6499,7 +6499,7 @@
   "hash": "43466acdcb16ee53",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48409.890029/2009-58|": {
+ "ANM|ROP88|48409.890029/2009-58|1.3.4": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6518,7 +6518,7 @@
   "hash": "ce049a4337fe18c8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48409.890362/2009-67|": {
+ "ANM|ROP88|48409.890362/2009-67|1.3.5": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Relatório final de pesquisa",
@@ -6537,7 +6537,7 @@
   "hash": "bbe70a2457f511ac",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48062.870570/2021-02|": {
+ "ANM|ROP88|48062.870570/2021-02|1.4.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -6556,7 +6556,7 @@
   "hash": "f2a6569c10230ff2",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48059.850511/2022-40|": {
+ "ANM|ROP88|48059.850511/2022-40|1.4.2": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -6575,7 +6575,7 @@
   "hash": "eb118e5567011dd1",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP88|48407.872011/2017-02|": {
+ "ANM|ROP88|48407.872011/2017-02|1.5.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -6594,7 +6594,7 @@
   "hash": "233b9000ef682d28",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48411.916401/2011-39|": {
+ "ANM|ROP88|48411.916401/2011-39|1.6.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6612,7 +6612,7 @@
   "hash": "d13b74e573271763",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48411.916402/2011-83|": {
+ "ANM|ROP88|48411.916402/2011-83|1.6.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6630,7 +6630,7 @@
   "hash": "d13b74e573271763",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48411.916403/2011-28|": {
+ "ANM|ROP88|48411.916403/2011-28|1.6.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6648,7 +6648,7 @@
   "hash": "d13b74e573271763",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48411.916404/2011-72|": {
+ "ANM|ROP88|48411.916404/2011-72|1.6.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6666,7 +6666,7 @@
   "hash": "d13b74e573271763",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48411.916742/2010-23|": {
+ "ANM|ROP88|48411.916742/2010-23|1.6.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6684,7 +6684,7 @@
   "hash": "d13b74e573271763",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48405.950484/2011-09|": {
+ "ANM|ROP88|48405.950484/2011-09|1.7.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6703,7 +6703,7 @@
   "hash": "d4574ebb474785b2",
   "tipo_item": "Retirada de pauta"
  },
- "ANM|ROP88|48403.931155/2014-97|": {
+ "ANM|ROP88|48403.931155/2014-97|2.1.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6721,7 +6721,7 @@
   "hash": "4bd70090c4bc6115",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.931154/2014-42|": {
+ "ANM|ROP88|48403.931154/2014-42|2.1.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6739,7 +6739,7 @@
   "hash": "4bd70090c4bc6115",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48402.921285/2014-21|": {
+ "ANM|ROP88|48402.921285/2014-21|2.1.4": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6757,7 +6757,7 @@
   "hash": "ae0697ca3f4bbc06",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48402.921136/2009-03|": {
+ "ANM|ROP88|48402.921136/2009-03|2.1.5": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6775,7 +6775,7 @@
   "hash": "ae0697ca3f4bbc06",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48402.921044/2014-82|": {
+ "ANM|ROP88|48402.921044/2014-82|2.1.6": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6793,7 +6793,7 @@
   "hash": "ae0697ca3f4bbc06",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48076.996164/2019-97|": {
+ "ANM|ROP88|48076.996164/2019-97|2.1.7": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6811,7 +6811,7 @@
   "hash": "ae0697ca3f4bbc06",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48053.920223/2020-58|": {
+ "ANM|ROP88|48053.920223/2020-58|2.1.8": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6829,7 +6829,7 @@
   "hash": "ae0697ca3f4bbc06",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48053.920222/2020-11|": {
+ "ANM|ROP88|48053.920222/2020-11|2.1.9": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6847,7 +6847,7 @@
   "hash": "ae0697ca3f4bbc06",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48412.966519/2013-60|": {
+ "ANM|ROP88|48412.966519/2013-60|2.1.10": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6865,7 +6865,7 @@
   "hash": "8e7a19e1a4e7c674",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48410.900968/2009-84|": {
+ "ANM|ROP88|48410.900968/2009-84|2.1.11": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6884,7 +6884,7 @@
   "hash": "f1317b26f611584e",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.934571/2011-02|": {
+ "ANM|ROP88|48403.934571/2011-02|2.1.12": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6902,7 +6902,7 @@
   "hash": "d455936bddd97dd7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.934566/2011-91|": {
+ "ANM|ROP88|48403.934566/2011-91|2.1.13": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6920,7 +6920,7 @@
   "hash": "b39e0b1f0538a7f8",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.932032/2008-31|": {
+ "ANM|ROP88|48403.932032/2008-31|2.1.14": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6938,7 +6938,7 @@
   "hash": "6f9af6d5f5a46ca7",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48054.931103/2025-81|": {
+ "ANM|ROP88|48054.931103/2025-81|2.1.15": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6956,7 +6956,7 @@
   "hash": "6b4d138d71be3144",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48054.931102/2025-36|": {
+ "ANM|ROP88|48054.931102/2025-36|2.1.16": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6974,7 +6974,7 @@
   "hash": "8dd6497e0ed6d344",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48402.921449/2009-50|": {
+ "ANM|ROP88|48402.921449/2009-50|2.2.1": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -6992,7 +6992,7 @@
   "hash": "30bf31b7fbb33d22",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48411.815707/2008-73|": {
+ "ANM|ROP88|48411.815707/2008-73|2.3.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -7010,7 +7010,7 @@
   "hash": "fe09c118a3605e25",
   "tipo_item": "Vista"
  },
- "ANM|ROP88|48061.860714/2020-33|": {
+ "ANM|ROP88|48061.860714/2020-33|2.4.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -7028,7 +7028,7 @@
   "hash": "e2a039e0e8abfcc0",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.832492/2016-64|": {
+ "ANM|ROP88|48403.832492/2016-64|2.5.1": {
   "modal": "Mineração",
   "tema": "Pesquisa mineral",
   "subtema": "Alvará de pesquisa (nulidade / TAH)",
@@ -7048,7 +7048,7 @@
   "hash": "5db0cd6458f74ba5",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48401.810828/2008-48|": {
+ "ANM|ROP88|48401.810828/2008-48|2.6.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Caducidade / suspensão de lavra",
@@ -7066,7 +7066,7 @@
   "hash": "d11895cd3d3f3f10",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48413.826519/2010-75|": {
+ "ANM|ROP88|48413.826519/2010-75|3.2.1": {
   "modal": "Mineração",
   "tema": "Servidão e áreas",
   "subtema": "Disponibilidade de área",
@@ -7084,7 +7084,7 @@
   "hash": "ed26d72982b4afd6",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48422.806091/2010-35|": {
+ "ANM|ROP88|48422.806091/2010-35|3.3.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Concessão / requerimento de lavra",
@@ -7103,7 +7103,7 @@
   "hash": "b1f929070de89d60",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48074.978046/2022-12|": {
+ "ANM|ROP88|48074.978046/2022-12|3.4.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Multa / auto de infração",
@@ -7124,7 +7124,7 @@
   "hash": "929328291448b9fb",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48406.861372/2015-63|": {
+ "ANM|ROP88|48406.861372/2015-63|3.5.1": {
   "modal": "Mineração",
   "tema": "Licenciamento e registro de licença",
   "subtema": "Registro de licença / guia de utilização",
@@ -7142,7 +7142,7 @@
   "hash": "d68d48f542f46b69",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48402.920511/2012-95|": {
+ "ANM|ROP88|48402.920511/2012-95|4.2.2": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -7160,7 +7160,7 @@
   "hash": "5c5e77e8c9d7ef3a",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48081.944044/2021-50|": {
+ "ANM|ROP88|48081.944044/2021-50|4.2.3": {
   "modal": "Mineração",
   "tema": "CFEM (compensação financeira)",
   "subtema": "Cobrança / notificação de débito",
@@ -7178,7 +7178,7 @@
   "hash": "a100730022b47665",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48054.930324/2021-16|": {
+ "ANM|ROP88|48054.930324/2021-16|4.3.1": {
   "modal": "Mineração",
   "tema": "Fiscalização, infrações e sanções",
   "subtema": "Auto de infração / multa",
@@ -7199,7 +7199,7 @@
   "hash": "3fbce82f5c8a5165",
   "tipo_item": "Deliberação"
  },
- "ANM|ROP88|48403.832615/2009-38|": {
+ "ANM|ROP88|48403.832615/2009-38|4.4.1": {
   "modal": "Mineração",
   "tema": "Lavra",
   "subtema": "Caducidade / suspensão de lavra",

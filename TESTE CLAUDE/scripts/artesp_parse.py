@@ -17,7 +17,8 @@ def presentes(t):
     seg = m[1] if m else ''
     k = re.search(r'Aus[êe]ncias?\s+Justificadas?:?', seg)
     pre, aus = (seg[:k.start()], seg[k.end():]) if k else (seg, '')
-    return [DIRS[x] for x in DIRS if x in norm(pre)], [DIRS[x] for x in DIRS if x in norm(aus)], bool(m)
+    ausentes = [DIRS[x] for x in DIRS if x in norm(aus)]
+    return [DIRS[x] for x in DIRS if x in norm(pre) and DIRS[x] not in ausentes], ausentes, bool(m)   # ausência declarada prevalece sobre a lista da Constituição (ORD1206)
 def parse(tag, r, txt):
     t = limpa(txt); pres, aus, achou = presentes(t)
     meta = {'reuniao': tag, 'numero': r['numero'], 'data': r['data'][6:] + '-' + r['data'][3:5] + '-' + r['data'][:2], 'tipo': 'Extraordinária' if r['numero'] < 1000 else 'Ordinária', 'presentes': pres, 'ausentes': aus, 'constituicao_lida': achou}

@@ -16,15 +16,21 @@ def _nomes(seg):
         m = re.match(NOME, pc)
         if m and not re.search(r'Procurador|Ouvidor|Secretar|Sistema|Sendo|Ag[eê]ncia', pc[:40]): out.append(m[1].strip())
     return out
+# --- presença por conjunto FECHADO de diretores (ANTT 2026): robusta a variações de redação do cabeçalho
+TOKENS = [('guilherme', 'sampaio'), ('felipe', 'queiroz'), ('lucas', 'asfor'), ('alex', 'azevedo'), ('alessandro', 'baumgartner'), ('marcelo', 'fonseca'), ('severino', 'severino')]
+ORDEM = ['Guilherme Theo Rodrigues da Rocha Sampaio', 'Felipe Fernandes Queiroz', 'Lucas Asfor da Rocha Lima', 'Alex Antônio de Azevedo Cruz', 'Alessandro Baumgartner', 'Marcelo Cardoso Fonseca', 'Severino Medeiros Ramos Neto']
+def _quem(trecho):
+    t = norm(trecho); return [ORDEM[i] for i, (_, sob) in enumerate(TOKENS) if re.search(r'\b' + sob + r'\b', t)]
 def roster(t):
-    head = re.split(r'\n\s*1\.\s+MAT[ÉE]RIAS', t, maxsplit=1)[0][:3000]
-    head = re.sub(r'\s+', ' ', head)
-    k = re.search(r'(?:Tendo a )?aus[êe]ncia', head); pre = head[:k.start()] if k else head
-    st = re.search(r'sob a presid[êe]ncia d[oa]|par\s?(?:ti)?\s?cipa[çc][ãa]o d[oa]', pre) or re.search(r'(?:Reuni[ãa]o|Ag[eê]ncia)[^.]{0,120}?(?=Diretor)', pre)
-    pres = _nomes(re.split(r'Procurador|Ouvidor|Chefe|chefe|Secretári', pre[st.end():])[0]) if st else []
-    pres = [x for x in pres if len(x.split()) >= 2]
-    aus = _nomes(re.sub(r'^.*?aus[êe]ncia d[oa]s?\s*', '', head[k.start():], flags=re.S).split(', por estar')[0]) if k else []
-    return list(dict.fromkeys(pres)), list(dict.fromkeys(aus))
+    head = re.sub(r'\s+', ' ', re.split(r'\n\s*1\.\s+MAT[ÉE]RIAS', t, maxsplit=1)[0][:3500])
+    k = re.search(r'aus[êe]ncia', head)
+    pre_txt = head[:k.start()] if k else head; aus_txt = head[k.start():] if k else ''
+    pre_txt = re.split(r'Procurador|Ouvidor|Chefe|chefe da', pre_txt)[0]
+    pres = _quem(pre_txt); aus = _quem(aus_txt)      # quem aparece nos dois trechos = presente com ausência parcial (ex.: ROD1035)
+    rel = [x for h in re.findall(r'\n\s*\d+\.\d+\s+DIRETOR(?:-GERAL| SUBSTITUTO)?:\s*([^\n]+)', t) for x in _quem(h)]
+    for x in rel:
+        if x not in pres and x not in aus: pres.append(x)     # relatoria na própria reunião = participação
+    return [x for x in ORDEM if x in pres], [x for x in ORDEM if x in aus and x not in pres]
 CANON = {'queiroz': 'Felipe Fernandes Queiroz', 'asfor': 'Lucas Asfor da Rocha Lima', 'azevedo': 'Alex Antônio de Azevedo Cruz', 'alex': 'Alex Antônio de Azevedo Cruz',
          'sampaio': 'Guilherme Theo Rodrigues da Rocha Sampaio', 'guilherme': 'Guilherme Theo Rodrigues da Rocha Sampaio', 'fonseca': 'Marcelo Cardoso Fonseca',
          'baumgartner': 'Alessandro Baumgartner', 'severino': 'Severino Medeiros Ramos Neto', 'ramos': 'Severino Medeiros Ramos Neto'}
@@ -65,7 +71,8 @@ def parse(r, ata):
              'assunto': g('A\\s?ssunto')[:250], 'resultado': res, 'voto_doc': f'{voto[1]} {voto[2]}' if voto else '', 'decisao_texto': dec[:700]}
         D.append(d)
         for p in pres + [a for a in aus if a not in pres]:
-            if p in aus and p not in pres or p in ausentes_item: v, pv = 'AUSENTE', 'nominal'
+            if p == rel and p in aus and p not in pres and res != 'RETIRADO DE PAUTA': v, pv = 'RELATOR (voto escrito; ausência declarada na ata)', 'nominal'
+            elif p in aus and p not in pres or p in ausentes_item: v, pv = 'AUSENTE', 'nominal'
             elif res == 'RETIRADO DE PAUTA': v, pv = 'SEM VOTO (retirado de pauta)', 'nominal' if p == rel else 'n/a'
             elif res == 'SOBRESTADO (vista coletiva)' and p != rel: v, pv = 'VISTA COLETIVA (concedida)', 'nominal'
             elif p in vista: v, pv = 'PEDIU VISTA', 'nominal'

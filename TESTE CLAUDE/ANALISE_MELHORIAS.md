@@ -42,3 +42,11 @@ Proveniência: **nominal** (a ata cita o diretor: relator, vista, ausência, ret
 **3. Pendências da fonte.** Nova aba **Pendências da fonte** (gerada a cada rodada, com histórico em `pendencias_historico.json`): 21 itens hoje (ANM ROP89 aguardando ata e 3 ROPs futuras do calendário; ANTT 299ª/300ª/301ª/1042ª aguardando ata, 270ª lacuna antiga, 2 futuras; ARTESP 243ª publicada errada, 6 números sem registro, 2 números corrigidos, 1 título com typo). Quando a fonte publicar, rode `./rodar_tudo.sh` e o item passa a RESOLVIDA.
 **4. Temas e microtemas.** Taxonomia em 3 níveis (**Modal → Tema → Subtema**) + `Microtema (IRIS)` e `Área (IRIS)` lidos do `classifier.ts`/`area-regulatoria.ts` do repo. Abas **Temas** e **Diretor × tema**. Validação em `AMOSTRA_TEMAS.md` (amostra nova: modal 94%, tema 94%).
 - *Hidrovias*: 3 deliberações, todas da concessão **Acquavias SP (travessias)** na ARTESP; **nenhuma na ANM nem na ANTT** em 2026. *Aeroportos*: 14 na ARTESP (SUHAP = Superintendência **Hidroviária e Aeroportuária**).
+
+## Fase 5 — presença da ANTT, checagens independentes e planilha em 9 abas
+
+- **Erro corrigido (ANTT):** o parser perdia o 1º diretor após "dos Diretores" em 8 atas. Presença agora = cabeçalho ∪ relatorias, com ausência declarada prevalecendo. Votos ANTT: 1.484 → 1.529 (total 5.853: ANM 1.508, ANTT 1.529, ARTESP 2.816).
+- **Checagem de presença não tautológica** (assinaturas/relatorias × presentes): ANTT 57/57, ANM 8/8, ARTESP 54/54.
+- **Duplicidades removidas:** ANM 12 linhas, ARTESP 32.
+- **Planilha reorganizada em 9 abas:** LEIA-ME, Painel, Votos, Deliberações, Matriz de votos, Diretores, Controle, Reuniões, Apoio (versão anterior de 16 abas mantida em `votos_2026_16abas_anterior.xlsx`).
+- **Não feito (aba Controle):** B impedimento/"não votaria" (ANM), C ciclo da vista, D relatores ex-diretores (ANM, 11 itens), E proponente ARTESP (62 recuperáveis), H auditoria humana de 60 deliberações por agência. G (voto individual em unanimidade) é limite da fonte.

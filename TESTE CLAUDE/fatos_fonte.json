@@ -1,1 +1,14 @@
-{"anm_pautas": ["89"], "comentario": "Fatos verificados ao vivo em 07/10/2026 e nao deriváveis do texto das atas: pauta da 89a ROP publicada em https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-da-rop/pauta-da-89a-rop-1.pdf"}
+{
+ "anm_pautas": [
+  "89"
+ ],
+ "comentario": "Fatos verificados ao vivo em 07/10/2026 e nao deriváveis do texto das atas: pauta da 89a ROP publicada em https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-da-rop/pauta-da-89a-rop-1.pdf",
+ "artesp_procedencia": {
+  "medido_em": "2026-10-07",
+  "pdfs_de_deliberacao": 709,
+  "superintendencia": 638,
+  "diretoria_dir_rc": 24,
+  "presidencia": 38,
+  "sem_campo": 9
+ }
+}

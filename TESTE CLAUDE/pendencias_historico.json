@@ -2,106 +2,111 @@
  "ANM|ROP89|Realizada, ata aguardando publicação": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANM|ROP90|Futura (calendário oficial)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANM|ROP91|Futura (calendário oficial)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANM|ROP92|Futura (calendário oficial)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANTT|RDE302|Futura (só pauta)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANTT|ROD1043|Futura (só pauta)": {
   "primeira_vez": "2026-10-07",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-08",
   "ultima_vez": "2026-10-07"
  },
  "ANTT|RDE301|Realizada, ata aguardando publicação": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANTT|ROD1042|Realizada, ata aguardando publicação": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANTT|RDE300|Realizada, ata aguardando publicação": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANTT|RDE299|Realizada, ata aguardando publicação": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ANTT|RDE270|Lacuna antiga (>30 dias sem ata)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|S230_243|Ata publicada na reunião errada": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|Deliberação nº 12|Número sem registro em nenhuma fonte": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|Deliberação nº 76|Número sem registro em nenhuma fonte": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|Deliberação nº 77|Número sem registro em nenhuma fonte": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|Deliberação nº 80|Número sem registro em nenhuma fonte": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|Deliberação nº 102|Número sem registro em nenhuma fonte": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|Deliberação nº 103|Número sem registro em nenhuma fonte": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|S230_236 Del. 303|Erro de numeração na fonte (corrigido pelo PDF)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|S230_239 Del. 480|Erro de numeração na fonte (corrigido pelo PDF)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
  },
  "ARTESP|ORD1187|Erro de digitação no título da ata (sem efeito)": {
   "primeira_vez": "2026-10-07",
   "resolvida_em": null,
-  "ultima_vez": "2026-10-07"
+  "ultima_vez": "2026-10-08"
+ },
+ "ANTT|ROD1043|Realizada, ata aguardando publicação": {
+  "primeira_vez": "2026-10-08",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-08"
  }
 }

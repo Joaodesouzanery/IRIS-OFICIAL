@@ -85,6 +85,7 @@ def parse(path):
         elif re.search(r'retirad|baixad|adiad', dn): res = 'RETIRADO/ADIADO'
         else: res = 'OUTRO'
         num_item = re.search(r'(\d+\.\d+)\.\d+\s*$', t[max(0, ini - 14):ini])
+        m_item = re.search(r'(\d+(?:\.\d+)+)\.?\s*$', t[max(0, ini - 16):ini]); item_n = m_item[1] if m_item else f'#{i + 1}'
         grp = [g for g in re.finditer(r'(\d+\.\d+)\.?\s*ASSUNTO:\s*(.+?)(?=\n\s*\d+\.\d+\.\d+\s+PROCESSOS?\b)', t[:ini + 30], re.S)]
         if num_item: grp = [g for g in grp if g[1] == num_item[1]]
         ass = type('G', (), {'__getitem__': lambda self, k, g=grp[-1]: g[2]})() if grp and (num_item or ini - grp[-1].end() < 2500) else None
@@ -111,15 +112,21 @@ def parse(path):
             mv = re.search(r'(?:Revisor|revisor),\s*(?:Diretor(?:a)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]+?)(?:,|\s+aprovad|\.)', dtx)
             if mv: rev = resolve(mv[1], pres)
         if tipo_item == 'Deliberação' and res.startswith('SOBRESTADO'): tipo_item = 'Vista'
-        out.append({'revisor': rev, 'reuniao': tag, 'data': meta['data'], 'processo': m[1], 'relator': rel,
+        out.append({'deliberacao': item_n, 'revisor': rev, 'reuniao': tag, 'data': meta['data'], 'processo': m[1], 'relator': rel,
                     'interessado': re.sub(r'\s+', ' ', inter[1]).strip() if inter else '',
                     'assunto': re.sub(r'\s+', ' ', ass[1]).strip()[:300] if ass else '', 'voto_resumo': voto_resumo,
                     'tipo_item': tipo_item, 'retirada_por': retirou or '', 'processos_do_item': processos_item[:30], 'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(re.search(r'impedid', dn))})
+    vistos, unico, dups = set(), [], 0
+    for d in out:
+        k = (d['deliberacao'], d['processo'])
+        if k in vistos and not d['deliberacao'].startswith('#'): dups += 1 if d['resultado'] != 'ATA APROVADA' and not d['resultado'].startswith(('RETIRADO', 'SEM')) else 0; continue   # item impresso duas vezes na própria ata (ex.: ROP81 3.5.3)
+        vistos.add(k); unico.append(d)
+    out = unico; meta['itens_duplicados_na_ata'] = dups
     votos = []
     for d in out:
         pr = [p for p in pres]
         if d['tipo_item'] == 'Aprovação de ata':
-            for p in pr: votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': 'ACOMPANHOU', 'proveniencia': 'inferido', 'tipo_item': d['tipo_item']})
+            for p in pr: votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': 'ACOMPANHOU', 'proveniencia': 'inferido', 'tipo_item': d['tipo_item']})
             continue
         if d['tipo_item'] == 'Retirada de pauta':
             rp = d['retirada_por']
@@ -129,7 +136,7 @@ def parse(path):
                     quem = resolve(rp.split(':', 1)[1].title(), pr)
                     v, prov = ('RETIROU DE PAUTA', 'nominal') if p == quem else ('ACOMPANHOU', 'nominal')
                 else: v, prov = 'SEM VOTO (retirado de pauta)', 'n/a'
-                votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
+                votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
             continue
         if d['resultado'].startswith('SEM DELIB'): continue
         citados = {}
@@ -145,7 +152,7 @@ def parse(path):
             elif d['resultado'] == 'APROVADO POR UNANIMIDADE' and not d['tem_impedimento']: v, prov = 'ACOMPANHOU', 'inferido'
             elif d['resultado'] == 'SOBRESTADO (vista)': v, prov = 'REVISAR', 'REVISAR'
             else: v, prov = 'REVISAR', 'REVISAR'
-            votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
+            votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
     return meta, out, votos
 
 if __name__ == '__main__':
