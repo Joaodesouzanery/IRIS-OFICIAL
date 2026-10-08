@@ -63,9 +63,13 @@ def dmy(d): return f'{d[8:]}/{d[5:7]}/{d[:4]}'
 
 # ---------------------------------------------------------------- parsing do texto da decisao
 ROM = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii', 'xiii', 'xiv', 'xv', 'xvi', 'xvii', 'xviii', 'xix', 'xx']
-MARK = re.compile(r'\((' + '|'.join(ROM) + r')\)')
+MARK = re.compile(r'(?:\(|(?<![\w(“"]))(' + '|'.join(ROM + ['iiii']) + r')\)')   # '(ii)' ou, digitado sem abre-parenteses, 'ii)' (RPO10-4)      # 'iiii' = erro de digitacao da fonte (RPO14-4) para o 4o marcador
+def rv(m_): return ROM.index(m_) if m_ in ROM else (3 if m_ == 'iiii' else -1)
+OBJ_PEDIDO = re.compile(r'(?:com vistas a|visando|a fim de|com o objetivo de)\s*:\s*$')
+NAO_MARCA = re.compile(r'(?:\b(?:item|itens|inciso|incisos|alinea|alineas|subitem|art|artigo|artigos|do|dos|no|nos|na|nas|ao|aos|de|com|e|ou)\s*)$')
 def marcadores(p):
-    """posicoes dos marcadores (i),(ii).. de nivel 1 (precedidos de ':' '-' ';' ',' ' e ' ou inicio)"""
+    """posicoes dos marcadores (i),(ii).. de nivel 1 (precedidos de ':' '-' ';' ',' ' e ' ou inicio; ou, sem separador, o marcador que CONTINUA a sequencia
+    ja aberta: '... ate 31 de marco de 2026 (iii) reconhecer' - RPO7-7). Marcadores dentro de aspas ficam de fora."""
     res = []
     dentro = []; ab = None
     for i_, ch in enumerate(p):
@@ -76,10 +80,23 @@ def marcadores(p):
         if any(a_ < m.start() < b_ for a_, b_ in dentro): continue
         ant = p[max(0, m.start() - 6):m.start()]
         if re.search(r'(?:^|[:\-;,–.]|\be|\bou)\s*$', ant): res.append((m.start(), m.end(), m[1]))
+        elif res and rv(m[1]) == rv(res[-1][2]) + 1 and re.search(r'[\w\)]\s+$', ant) and not NAO_MARCA.search(norm(p[max(0, m.start() - 14):m.start()])): res.append((m.start(), m.end(), m[1]))
+    if res and OBJ_PEDIDO.search(p[:res[0][0]]) and not re.match(r'\s*[a-zà-ú]+(?:ar|er|ir|or)\b', p[res[0][1]:]): return []      # '(i)..(ii)' enumeram o OBJETO (substantivos) do pedido ('indeferir os Pedidos ... com vistas a: (i) suspensão ...'), nao sao partes da decisao (RPO10-3); se comecam por verbo ('a fim de: (i) determinar ...') sao partes
     return res
 def paragrafos(t): return [p.strip() for p in re.split(r'\n+|\s{3,}', t.replace('\xa0', ' ').replace('​', '')) if p.strip()]
-SENT = re.compile(r'(?<=[a-zA-Z0-9\)”"º»])\.\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕ])')
-def eh_decisao(p): return bool(re.match(r'(?:A )?Diretoria\b', p))
+_SENT = re.compile(r'(?<=[a-zA-Z0-9\)”"º»])\.\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕ])')
+ABREV = re.compile(r'(?:^|[\s(])(?:Sr|Sra|Srs|Sras|Dr|Dra|Drs|Dras|Prof|Profa|Exmo|Exma|Ilmo|Ilma|Eng|Av|Cia|Ltda|S\.A|Min|Gen|Cel|Cap|Ten|Maj)$')
+class _Sent:
+    """divisor de sentencas: como _SENT, mas NAO corta depois de abreviacao de tratamento ('Sr. Fabio' - RPC7-16)"""
+    @staticmethod
+    def split(p):
+        pcs = _SENT.split(p); out = []
+        for x in pcs:
+            if out and ABREV.search(out[-1]): out[-1] += '. ' + x
+            else: out.append(x)
+        return out
+SENT = _Sent()
+def eh_decisao(p): return bool(re.match(r'(?:(?:Por fim|Ainda|Também)[,\s]+)*(?:[Aa] )?Diretoria\b', p))     # aceita 'Por fim, a Diretoria, por unanimidade, decidiu ...' (RPO13-4)
 def modo_de(s):
     n = norm(s); a, b = n.find('por unanimidade'), n.find('por maioria')
     if a < 0 and b < 0: return None
@@ -115,12 +132,33 @@ def tira_modo(txt):
         k = re.search(r'(?:^|,\s*)(?=[a-zà-ú]{4,}(?:ar|er|ir|or)\b)', rest)
         if k: rest = rest[k.end():]
     return rest
+def junta_continuacao(sents):
+    """Uma parte da decisao pode ter ponto final interno ('... CTG. O referido desconto ... (vii) ...' - RPO18-6): as frases seguintes que nao comecam
+    com 'A Diretoria' seriam descartadas e as partes (vii).. se perderiam. Se, em ate 6 frases nao-decisorias, uma traz o marcador que CONTINUA
+    a sequencia da decisao anterior, tudo ate ela e' reincorporado a decisao."""
+    out, i = [], 0
+    while i < len(sents):
+        s = sents[i]; out.append(s); i += 1
+        if not eh_decisao(s): continue
+        while True:
+            ms = marcadores(out[-1])
+            if not ms: break
+            prox = rv(ms[-1][2]) + 1
+            hit = None
+            for j in range(i, min(len(sents), i + 6)):
+                if eh_decisao(sents[j]): break
+                mj = marcadores(sents[j])
+                if mj and rv(mj[0][2]) == prox: hit = j; break
+            if hit is None: break
+            out[-1] = out[-1] + ' ' + ' '.join(sents[i:hit + 1]); i = hit + 1
+    return out
 def analisa(texto, relator, resultado_col):
     """-> (partes, ctx): partes = ações da decisão ('A Diretoria ... decidiu: (i)...') com modo/vencidos; ctx = eventos narrativos
     (pedido de vista, impedimento, ausência, não participação, destaque, posições nominais 'votou no sentido de')"""
     partes = []
-    ctx = {'vista': [], 'coletiva': False, 'destaque': [], 'impedidos': [], 'ausentes': {}, 'nao_part': [], 'camps': [], 'retirada': False, 'ressalva': []}
+    ctx = {'vista': [], 'coletiva': False, 'destaque': [], 'impedidos': [], 'ausentes': {}, 'nao_part': [], 'camps': [], 'retirada': False, 'ressalva': [], 'subs': [], 'div_extra': []}
     sents = [s for p in paragrafos(texto) for s in SENT.split(p)]
+    sents = junta_continuacao(sents)
     for s in sents:
         n = norm(s)
         if eh_decisao(s):
@@ -163,6 +201,13 @@ def analisa(texto, relator, resultado_col):
             for x in ns: ctx['ausentes'][x] = tipo or ctx['ausentes'].get(x, '')
         ns, m = antes(r'nao participou|nao participaram')
         if m: ctx['nao_part'].extend([x for x in ns if x not in ctx['nao_part']])
+        m = re.search(r'votos? subsistentes?', n)
+        if m and not re.search(r'insubsist', n):       # 'tendo em vista que o Diretor X e a Diretora Y proferiram votos subsistentes' / 'A Diretora Z proferiu voto subsistente'
+            it_ = n.find('tendo em vista que'); seg_ = s[it_:m.start()] if 0 <= it_ < m.start() else s[:m.start()]
+            ctx['subs'].extend([x for x in nomes(seg_) if x not in ctx['subs']])
+        m = re.search(r'apresent\w+ (?:voto )?diverg\w+', n)
+        if m and re.search(r'rest(?:ou|aram) vencid', n):   # divergencia vencida que NAO esta' na frase de decisao (RPO7-7: plano de intervencao administrativa)
+            ctx['div_extra'].extend([(x, s[:300]) for x in nomes(s[:m.start()])[-1:] if x not in [y for y, _ in ctx['div_extra']]])
         if re.search(r'fundamentacao diversa', n):
             m = re.search(r'fundamentacao diversa|apresentou|apresentaram', n); ctx['ressalva'].extend([x for x in nomes(s[:m.start()]) if x not in ctx['ressalva']])
         m = re.search(r'\bvotou\b|\bvotaram\b|proferiu (?:seu )?voto|manteve (?:o )?seu voto|registrou a altera|apresentou (?:seu )?voto|apresentaram votos|apresentou diverg|ratificou seu voto', n)
@@ -174,11 +219,11 @@ def analisa(texto, relator, resultado_col):
                 if iac >= 0 and iac < m.start(): fol = [x for x in nomes(s[iac:m.start()]) if x != lead[0]]
                 elif iac >= 0: fol = [x for x in nomes(s[iac:iac + 200]) if x != lead[0]]
                 else: fol = lead[1:] if re.search(r'votaram|apresentaram', n[m.start():m.end() + 12]) else []
-                ctx['camps'].append({'lider': lead[0], 'seguidores': fol, 'txt': s[:240]})
+                ctx['camps'].append({'lider': lead[0], 'seguidores': fol, 'txt': s[:240], 'full': s})
         if re.match(r'(?:o )?processo (?:acima )?foi retirado|decididas as preliminares', n) and 'retirad' in n: ctx['retirada'] = True
     # rotulos das partes: o marcador do texto quando e' sequencia consecutiva a partir de (i); senao, ordem de aparicao
     ms_ = [x['marca'] for x in partes]
-    seq_ok = bool(ms_) and all(ms_) and ms_[0] == 'i' and all(ROM.index(m_) == k for k, m_ in enumerate(ms_))
+    seq_ok = bool(ms_) and all(ms_) and ms_[0] == 'i' and all(rv(m_) == k for k, m_ in enumerate(ms_))
     for k, x in enumerate(partes):
         x['parte'] = x['marca'].upper() if (seq_ok and x['marca']) else ROM[k].upper()
         if x['marca'] and x['marca'].upper() != x['parte']: x['nota'] = f"marcador do texto: ({x['marca']})"
@@ -196,7 +241,7 @@ VERBOS = [(r'conhecer', 'CONHECIDO'), (r'reconhecer', 'RECONHECIDO'), (r'(?:nega
           (r'instaurar', 'PROCEDIMENTO INSTAURADO'), (r'revogar', 'REVOGADO'), (r'estabelecer', 'ESTABELECIDO'), (r'arquivar', 'ARQUIVADO'), (r'aplicar', 'APLICADO'),
           (r'manter', 'MANTIDO'), (r'reformar', 'REFORMADO'), (r'suspender', 'SUSPENSO'), (r'cancelar', 'CANCELADO'), (r'rejeitar', 'REJEITADO'), (r'acolher', 'ACOLHIDO'),
           (r'revisar', 'REVISADO'), (r'publicar', 'PUBLICAÇÃO DETERMINADA'), (r'registrar', 'REGISTRADO'), (r'tornar sem efeito', 'TORNADO SEM EFEITO'), (r'delegar', 'DELEGADO'),
-          (r'conceder', 'CONCEDIDO'), (r'alterar', 'ALTERADO'), (r'atualizar', 'ATUALIZADO'), (r'excluir', 'EXCLUÍDO'), (r'incluir', 'INCLUÍDO'), (r'cientificar|dar ci[eê]ncia', 'CIENTIFICADO'),
+          (r'conceder', 'CONCEDIDO'), (r'condicionar', 'CONDICIONADO'), (r'alterar', 'ALTERADO'), (r'atualizar', 'ATUALIZADO'), (r'excluir', 'EXCLUÍDO'), (r'incluir', 'INCLUÍDO'), (r'cientificar|dar ci[eê]ncia', 'CIENTIFICADO'),
           (r'julgar', 'JULGADO'), (r'converter', 'CONVERTIDO'), (r'solicitar|requisitar', 'SOLICITADO'), (r'submeter', 'SUBMETIDO'), (r'designar', 'DESIGNADO'), (r'retificar', 'RETIFICADO'),
           (r'anular', 'ANULADO'), (r'fixar', 'FIXADO'), (r'definir', 'DEFINIDO'), (r'indicar', 'INDICADO'), (r'adotar', 'ADOTADO'), (r'restituir|devolver', 'RESTITUÍDO'), (r'substituir', 'SUBSTITUÍDO'),
           (r'sobrestar', 'SOBRESTADO'), (r'dispensar', 'DISPENSADO'), (r'liberar', 'LIBERADO'), (r'instituir', 'INSTITUÍDO'), (r'reduzir', 'REDUZIDO'), (r'transferir', 'TRANSFERIDO'),
@@ -225,6 +270,11 @@ def rotulos(acao, pref=''):
                 seg = n[m.end():m.end() + 60]
                 lab = 'CONSULTA PÚBLICA INSTAURADA' if 'consulta publica' in seg else ('AUDIÊNCIA PÚBLICA INSTAURADA' if 'audiencia publica' in seg else ('TOMADA DE SUBSÍDIOS INSTAURADA' if 'subsidio' in seg else ('PROCESSO ADMINISTRATIVO INSTAURADO' if 'processo' in seg else 'PROCEDIMENTO INSTAURADO')))
             ach.append((m.start(), lab)); break
+    mm = re.search(r'\bno merito,?\s+(?:negar|nao dar|dar|conceder)(?:-lhes?)?\b', n)      # 'para, no merito, negar-lhe provimento' vem DEPOIS de um 'para expurgar ...' do pedido (CONN corta ali): so' o desfecho do merito e' recuperado (RPO13-21)
+    if mm and mm.start() > lim:
+        tail = n[mm.start():mm.start() + 80]
+        if re.search(r'(?:negar|nao dar)(?:-lhes?)? (?:o )?provimento', tail): ach.append((mm.start(), 'PROVIMENTO NEGADO'))
+        elif re.search(r'(?:dar|conceder)(?:-lhes?)? (?:parcial )?provimento', tail): ach.append((mm.start(), 'PROVIMENTO PARCIAL' if 'parcial' in tail else 'PROVIMENTO'))
     nc = [p for p, l in ach if l == 'CONHECIDO']
     for m in re.finditer(r'\bnao conhecer\b', n[:lim]): ach.append((m.start(), 'NÃO CONHECIDO'))
     if re.search(r'\bnao conhecer\b', n[:lim]):
@@ -248,19 +298,35 @@ def rotulos(acao, pref=''):
 
 # ---------------------------------------------------------------- votos por parte
 def curto(n): return n.split()[0] + ' ' + n.split()[-1] if n else ''
+def modo_unico(partes): return partes[0]['modo'] if partes and len({p_['modo'] for p_ in partes}) == 1 else None
+def aus_lbl(d, c, venc=False):
+    """rotulo de AUSENTE; o ausente que consignou voto antecipado (art. 50, par.3 da NO-1) tem a nota do voto (RPE4-2 Willamy)"""
+    x = c['ausentes'][d]      # '', 'acompanhou o relator', 'acompanhou a divergência' ou 'voto consignado' (art. 50, §3º da NO-1: voto consignado por escrito antes da ausência)
+    if venc: x = (x + '; ' if x else '') + 'vencido'
+    return 'AUSENTE (não participou da votação' + (f'; {x}' if x else '') + ')'
+def seguiu_relator(d, c):
+    """d consta como seguidor ('acompanhado pelo Diretor d') da posicao do relator?"""
+    return any(k['lider'] == c['relator'] and d in k['seguidores'] for k in c['camps'])
 def voto_parte(d, pt, c):
-    """-> (rotulo, proveniencia) do diretor d na parte pt (deliberacao decidida)"""
+    """-> (rotulo, proveniencia) do diretor d na parte pt (deliberacao decidida).
+    Tres situacoes distintas de 'vencido': (a) DIVERGIU (vencido) = divergiu do relator e perdeu; (b) DIVERGIU (divergência vencedora) = divergiu e ganhou;
+    (c) ACOMPANHOU (voto vencido) = ficou com o relator e perdeu junto com ele (so' o prefixo DIVERGIU indica divergencia de fato)."""
     if d in c['impedidos']: return 'IMPEDIDO (declarou suspeição/impedimento)', 'nominal'
     if d in c['nao_part']: return 'NÃO PARTICIPOU (voto subsistente de ex-diretor; art. 54 NO-1)', 'nominal'
-    if d in c['ausentes']:
-        x = c['ausentes'][d]
-        if d in pt['vencidos']: x = (x + '; ' if x else '') + 'vencido'
-        return 'AUSENTE (não participou da votação' + (f'; {x}' if x else '') + ')', 'nominal'
-    rel = c['relator']
-    if d == rel: return ('RELATOR (voto vencido)' if d in pt['vencidos'] else 'RELATOR (voto proferido)'), 'nominal'
-    if d in pt['vencidos']: return 'DIVERGIU', 'nominal'
-    if d == pt.get('lider') and pt.get('lider_tipo') in ('div', 'vista') and (pt['lider_tipo'] == 'div' or rel in pt['vencidos']) and pt['modo'] == 'maioria': return 'DIVERGIU', 'nominal'
-    if d == pt.get('lider') and pt.get('lider_tipo') in ('vista', 'div') and pt['modo'] in ('unanimidade', 'maioria'): return 'ACOMPANHOU', 'nominal'   # autor do voto-vista/divergência que prevaleceu sem relator vencido: citado nominalmente
+    if d in c['ausentes']: return aus_lbl(d, c, d in pt['vencidos']), 'nominal'
+    rel = c['relator']; lid = pt.get('lider'); lt = pt.get('lider_tipo')
+    vista_condutora = bool(lid) and lt == 'vista' and lid != rel and rel not in pt['vencidos'] and pt['modo'] in ('unanimidade', 'maioria')
+    if d == rel:
+        if d in pt['vencidos']: return 'RELATOR (voto vencido)', 'nominal'
+        if vista_condutora: return f'RELATOR (voto proferido; a decisão seguiu o voto-vista de {curto(lid)})', 'nominal'
+        return 'RELATOR (voto proferido)', 'nominal'
+    if d in pt['vencidos']:
+        if rel in pt['vencidos'] and d != lid:
+            return 'ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido)', ('nominal' if seguiu_relator(d, c) else 'inferido')
+        return 'DIVERGIU (voto vencido)', 'nominal'
+    if d == lid and lt in ('div', 'vista') and (lt == 'div' or rel in pt['vencidos']) and pt['modo'] == 'maioria': return 'DIVERGIU (divergência vencedora)', 'nominal'
+    if d == lid and lt in ('vista', 'div') and pt['modo'] in ('unanimidade', 'maioria'):      # autor do voto-vista/divergência que prevaleceu sem relator vencido: citado nominalmente
+        return ('ACOMPANHOU (autor do voto-vista condutor da decisão)' if lt == 'vista' else 'ACOMPANHOU (autor da divergência acolhida)'), 'nominal'
     if pt['modo'] == 'unanimidade': return 'ACOMPANHOU', 'inferido'
     if pt['modo'] == 'maioria':
         if pt['vencidos']: return 'ACOMPANHOU (por exclusão)', 'inferido'
@@ -272,18 +338,20 @@ def resume(lbls, provs, partes_nomes):
     det = ' | '.join(f'{pn}: {l}' for pn, l in zip(partes_nomes, lbls)) if len(lbls) > 1 else f'única: {lbls[0]}'
     if len(set(lbls)) == 1:
         l = lbls[0]
-        if len(lbls) > 1 and l.startswith('ACOMPANHOU'): l = 'ACOMPANHOU todas as partes'
+        if len(lbls) > 1 and l.startswith('ACOMPANHOU') and not re.search(r'voto vencido|autor d', l): l = 'ACOMPANHOU todas as partes'
         return l, ('nominal' if all(p == 'nominal' for p in provs) else ('REVISAR' if 'REVISAR' in provs else 'inferido')), det
     div = [pn for pn, l in zip(partes_nomes, lbls) if l.startswith('DIVERGIU')]
     ven = [pn for pn, l in zip(partes_nomes, lbls) if 'voto vencido' in l]
     base = next((l for l in lbls if l.startswith('RELATOR') or l.startswith('REDATOR')), None)
     if div: v = f'DIVERGIU na parte {romanos(div)}' if len(div) == 1 else f'DIVERGIU nas partes {romanos(div)}'
-    elif ven: v = f'{base.split(" (")[0]} (voto vencido na parte {romanos(ven)})'
+    elif ven and base: v = f'{base.split(" (")[0]} (voto vencido na parte {romanos(ven)})'
+    elif ven: v = f'ACOMPANHOU (voto vencido na parte {romanos(ven)}; acompanhou o relator)'
     elif base: v = base
     else:
         outros = [l for l in lbls if not l.startswith('ACOMPANHOU')]
-        v = outros[0] if outros else 'ACOMPANHOU todas as partes'
-    prov = 'REVISAR' if 'REVISAR' in provs else ('nominal' if (div or ven or (base and base == v)) else 'inferido')
+        autor = next((l for l in lbls if l.startswith('ACOMPANHOU (autor')), None)
+        v = outros[0] if outros else (autor or 'ACOMPANHOU todas as partes')
+    prov = 'REVISAR' if 'REVISAR' in provs else ('nominal' if (div or ven or (base and base == v) or (v.startswith('ACOMPANHOU (autor'))) else 'inferido')
     return v, prov, det
 
 INT_PAT = re.compile(r'(?:interpost[oa]s?|protocolad[oa]s?|apresentad[oa]s?|formulad[oa]s?|requerid[oa]s?|solicitad[oa]s?|impetrad[oa]s?) (?:pela|pelo|pelas|pelos|por|em nome d[ao]s?|em nome de)\s+(.+?)(?:,? em face|,? contra| com vistas|,? em oposi|,? para |,? referente|,? relativ|,? visando|,? que |,? a fim| junto|, |\. |$)', re.I)
@@ -297,6 +365,8 @@ def unidade(assunto, dec):
     m = UNI_PAT.search(assunto) or UNI_PAT.search(dec); return m[1] if m else ''
 
 # ---------------------------------------------------------------- montagem
+# Divergencias de vista que o texto nao rotula com 'diverg...' mas que, lidas contra o relator, divergem do resultado (auditoria independente, 08/10/2026)
+VISTA_DIV_MANUAL = {('RPO15-4', FERNANDO): 'voto-vista propõe encerrar a 3ª fase da CP 45/2019 E instaurar a 4ª fase; o relator votou só por encerrar a CP'}
 R, D, V = [], [], []
 por_reuniao = collections.OrderedDict()
 for r in rows:
@@ -304,7 +374,7 @@ for r in rows:
 def chave(ide): m = re.match(r'(\d+)/2026 - (\w+)', ide); return (m[2], int(m[1]))
 reuniao_data = {i: v[0]['DatReuniao'] for i, v in por_reuniao.items()}
 pauta_so = [i for i, v in por_reuniao.items() if all(not x['DscResultadoJulgamento'] for x in v)]   # pauta publicada, sem resultado de ata
-extras_log, revisar_log, sem_vista_log, rel_dif, xref_log, trunc_log, lider_venc_log = [], [], [], [], [], [], []
+extras_log, revisar_log, sem_vista_log, rel_dif, xref_log, trunc_log, lider_venc_log, venc_aug_log, vista_sem_pedinte_log, prelim_log, div_extra_log, subs_log = [], [], [], [], [], [], [], [], [], [], [], []
 PRE = {}      # (ide, NumOrdem) -> (partes, ctx)  [pre-passagem: permite referenciar decisoes de circuitos anteriores]
 for r_ in rows:
     PRE[(r_['IdeReuniao'], r_['NumOrdem'])] = analisa(r_['TxtDecisaoJulgamento'], nome_col(r_['NomDiretorRelator']), r_['DscResultadoJulgamento'])
@@ -345,16 +415,22 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
         relator = nome_col(it['NomDiretorRelator'])
         procs = [nup(x) for x in re.split(r'\s*-\s*', it['NumProcesso'].strip()) if x.strip()] or ['']
         partes, c = PRE[(ide, n_item)]; partes, c = completa_xref(it, partes, c); c['relator'] = relator
+        for p_ in partes:      # quem 'acompanhou' o relator numa parte em que o relator restou vencido tambem perdeu (RPC5-6 parte II: Gentil, acompanhado por Sandoval)
+            if p_['modo'] == 'maioria' and relator in p_['vencidos']:
+                for k in c['camps']:
+                    for sg in (k['seguidores'] if k['lider'] == relator else []):
+                        if sg not in p_['vencidos'] and sg not in c['impedidos'] and sg not in c['ausentes']:
+                            p_['vencidos'].append(sg); p_['nota'] = '; '.join(x_ for x_ in (p_.get('nota'), f'{curto(sg)} também vencido: consta como seguidor do voto do relator vencido') if x_); venc_aug_log.append((f'{tag}-{n_item}', sg))
         lider_venc_log.extend([did_ for did_ in [f'{tag}-{n_item}'] if any(p_.get('lider') and p_['lider'] in p_['vencidos'] for p_ in partes)])
         did = f'{tag}-{n_item}'
         txt_dump.append(f'### {did} | processo {"; ".join(procs)} | relator {relator} | resultado(ata): {col}\n{dec}\n')
         # ---- tipo do item e votos
         obs = []
         extras = []
-        for x in [relator] + [v for p_ in partes for v in p_['vencidos']] + [p_['lider'] for p_ in partes if p_['lider']] + c['vista'] + c['impedidos'] + list(c['ausentes']) + [k['lider'] for k in c['camps']] + [s for k in c['camps'] for s in k['seguidores']]:
+        for x in [relator] + [v for p_ in partes for v in p_['vencidos']] + [p_['lider'] for p_ in partes if p_['lider']] + c['vista'] + c['impedidos'] + list(c['ausentes']) + c['subs'] + [k['lider'] for k in c['camps']] + [s for k in c['camps'] for s in k['seguidores']]:
             if x and x not in ros and x not in extras: extras.append(x)
         # ex-diretor so conta se for papel substantivo (relator, vencido, lider, vista); seguidores/camps de ex-diretor so em vista/nao-deliberado
-        votantes = ros + [x for x in extras if x == relator or any(x in p_['vencidos'] or x == p_['lider'] for p_ in partes) or x in c['vista'] or x in c['impedidos'] or x in c['ausentes'] or (col in ('Não Deliberado', 'Pedido de Vista') and any(x == k['lider'] or x in k['seguidores'] for k in c['camps']))]
+        votantes = ros + [x for x in extras if x == relator or any(x in p_['vencidos'] or x == p_['lider'] for p_ in partes) or x in c['vista'] or x in c['impedidos'] or x in c['ausentes'] or x in c['subs'] or (col in ('Não Deliberado', 'Pedido de Vista') and any(x == k['lider'] or x in k['seguidores'] for k in c['camps']))]
         for x in votantes:
             if x not in ros: extras_log.append((did, x))
         L = {}      # diretor -> (voto, prov, por_parte)
@@ -364,30 +440,54 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
             obs.append('texto da decisão TRUNCADO na fonte (limite de 4.000 caracteres do campo): impedimentos/ausências/vistas ao final podem faltar'); trunc_log.append(did)
         if col in ('Retirado da Pauta', 'Pedido de Vista + Retirado de Pauta') or (not partes and c['retirada']):
             tipo_item = 'Retirada de pauta'; resultado = 'RETIRADO DE PAUTA' + (' (após pedido de vista)' if 'Vista' in col else '') + (' (na fase de debate dos Diretores)' if 'debate' in norm(dec) else '')
-            for d in votantes: L[d] = ('SEM VOTO (retirado de pauta)', 'nominal', 'única: retirado de pauta')
+            if 'Vista' in col and not c['vista']: vista_sem_pedinte_log.append(did)
+            pre_ = [p_ for p_ in partes if p_['modo'] in ('maioria', 'unanimidade') and c['retirada']]
+            if pre_:      # decisao PRELIMINAR tomada antes da retirada (RPO5-8: voto do ex-relator declarado insubsistente, por maioria; o processo foi retirado em seguida)
+                pp = pre_[0]; prelim_log.append(did)
+                lb_ = ' + '.join(rotulos(pp['acao'], pp.get('pref', '')))
+                if 'INSUBSISTENTE' in lb_: lb_ = f'VOTO DE {curto(relator).upper()} DECLARADO INSUBSISTENTE'      # (o rotulo 'MODIFICADO' vinha de 'modificar significativamente' na justificativa)
+                resultado = f'DECISÃO PRELIMINAR: {lb_} ({pp["modo"]}' + (f'; vencido(s): {", ".join(pp["vencidos"])}' if pp['vencidos'] else '') + (f'; divergência parcial: {", ".join(curto(k["lider"]) for k in c["camps"] if k["lider"] != relator)}' if any(k['lider'] != relator for k in c['camps']) else '') + ') → ' + resultado
+                obs.append('decisão preliminar tomada antes da retirada de pauta: o processo NÃO foi decidido no mérito; não é mera retirada')
+                for d in votantes:
+                    if d in c['impedidos']: L[d] = ('IMPEDIDO (declarou suspeição/impedimento)', 'nominal', 'preliminar: impedido'); continue
+                    if d in c['ausentes']: L[d] = (aus_lbl(d, c), 'nominal', 'preliminar: ausente'); continue
+                    if d == relator: L[d] = (f'RELATOR (voto anterior declarado INSUBSISTENTE por esta decisão)' if 'INSUBSISTENTE' in lb_ else 'RELATOR (voto proferido; processo retirado de pauta)', 'nominal', f'preliminar: {lb_}'); continue
+                    k_ = next((k for k in c['camps'] if k['lider'] == d), None)
+                    if k_ or d in pp['vencidos']:
+                        parc = bool(k_) and bool(re.search(r'apenas|somente|especificamente|parcial', norm(k_['full'])))
+                        L[d] = ('DIVERGIU (' + ('divergência parcial na decisão preliminar' if parc else 'voto vencido na decisão preliminar') + ')', 'nominal', 'preliminar: ' + (k_['txt'][:200] if k_ else 'vencido')); continue
+                    L[d] = (('ACOMPANHOU (decisão preliminar por maioria; por exclusão)' if pp['modo'] == 'maioria' else 'ACOMPANHOU (decisão preliminar)'), 'inferido', 'preliminar: ' + pp['modo'])
+            else:
+                for d in votantes: L[d] = ('SEM VOTO (retirado de pauta)', 'nominal', 'única: retirado de pauta')
         elif col == 'Destacado no Circuito Deliberativo':
             tipo_item = 'Retirada de pauta'; q = ', '.join(c['destaque'] or ['?'])
             resultado = f'DESTACADO DO CIRCUITO DELIBERATIVO a pedido de {q} (vai à pauta da próxima RPO; sem deliberação no circuito)'
             for d in votantes: L[d] = ('SEM VOTO (retirado de pauta)', 'nominal', f'única: destacado do circuito por {q}')
             if not c['destaque']: revisar_log.append((did, 'destaque sem solicitante identificado'))
         elif col == 'Pedido de Vista':
-            tipo_item = 'Vista'; pedinte = c['vista']
+            tipo_item = 'Vista'; pedinte = c['vista']; tag_item = did
             resultado = 'PEDIDO DE VISTA' + (' COLETIVA' if c['coletiva'] else '') + f' ({", ".join(pedinte) if pedinte else "pedinte não identificado"})'
             if not pedinte: revisar_log.append((did, 'vista sem pedinte identificado')); sem_vista_log.append(did)
-            votou_antes = {}
+            votou_antes = {}; div_antes = {}
             for k in c['camps']:
                 votou_antes[k['lider']] = 'lider'
+                if k['lider'] != relator and (re.search(r'diverg', norm(k['full'])) or (tag_item, k['lider']) in VISTA_DIV_MANUAL):
+                    div_antes[k['lider']] = (bool(re.search(r'especificamente|apenas|somente|quanto (?:a|ao)\b|no que se refere|no sentido de acompanhar a recomenda', norm(k['full']))), k['txt'])
                 for s in k['seguidores']: votou_antes.setdefault(s, 'seg')
             for d in votantes:
                 if d in c['impedidos']: L[d] = ('IMPEDIDO (declarou suspeição/impedimento)', 'nominal', 'única: impedido'); continue
-                if d in c['ausentes']: L[d] = ('AUSENTE (não participou da votação)', 'nominal', 'única: ausente'); continue
+                if d in c['ausentes']: L[d] = (aus_lbl(d, c), 'nominal', 'única: ausente' + (f' ({c["ausentes"][d]})' if c['ausentes'][d] else '')); continue
                 if d in pedinte: L[d] = ('PEDIU VISTA' + (' (vista coletiva)' if c['coletiva'] else ''), 'nominal', 'única: pediu vista'); continue
                 if d == relator: L[d] = (('RELATOR (voto proferido; vista concedida)', 'nominal', 'única: relator votou; vista concedida') if d in votou_antes else ('RELATOR (vista concedida; sem voto proferido na ata)', 'nominal', 'única: relator; vista concedida')); continue
+                if d in div_antes:      # divergiu do relator antes da vista (RPO18-4, RPO14-7, RPO15-4, RPO16-16, RPO16-17): nao e' um 'votou' igual ao de quem acompanhou
+                    parc, tx_ = div_antes[d]; L[d] = ('DIVERGIU (antes da vista' + ('; divergência parcial' if parc else '') + ')', 'nominal', 'única: divergiu do relator antes da vista — ' + VISTA_DIV_MANUAL.get((tag_item, d), tx_[:170])); continue
                 if d in votou_antes: L[d] = ('VOTOU (antes da vista)', 'nominal', 'única: votou antes da vista'); continue
                 if c['coletiva']: L[d] = ('VISTA COLETIVA (aderiu ao pedido de vista)', 'nominal', 'única: vista coletiva'); continue
                 L[d] = ('SEM VOTO AINDA (vista pendente)', 'inferido', 'única: aguardando o voto-vista')
         elif col == 'Pedido de Vista + Prorrogação':
-            tipo_item = 'Vista'; pt = partes[0] if partes else {'modo': 'sem registro', 'vencidos': [], 'lider': None, 'lider_tipo': None, 'acao': dec, 'parte': 'única'}
+            tipo_item = 'Vista'
+            if not c['vista']: vista_sem_pedinte_log.append(did)
+            pt = partes[0] if partes else {'modo': 'sem registro', 'vencidos': [], 'lider': None, 'lider_tipo': None, 'acao': dec, 'parte': 'única'}
             m_pz = re.search(r'prazo adicional de (\d+)', pt['acao']); m_ate = re.search(r'at[ée] a Reuni[ãa]o P[úu]blica do dia (\d+ de \w+ de \d{4})', pt['acao'])
             resultado = 'PRORROGAÇÃO DO PRAZO DE VISTA — ' + (f'PRAZO ADICIONAL DE {m_pz[1]} DIAS CONCEDIDO PARA O VOTO-VISTA' if m_pz else (f'PRAZO DE VISTA PRORROGADO (processo retorna até a RPO de {m_ate[1]})' if m_ate else 'PRAZO DE VISTA PRORROGADO')) + f' ({pt["modo"]}' + (f'; vencido(s): {", ".join(pt["vencidos"])}' if pt['vencidos'] else '') + ')'
             for d in votantes:
@@ -426,13 +526,23 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
             for d in votantes:
                 lbs, pvs = zip(*[voto_parte(d, p_, c) for p_ in partes])
                 v, pv, det = resume(list(lbs), list(pvs), pns)
+                dx_ = dict(c['div_extra'])
+                if d in dx_ and v.startswith('ACOMPANHOU'):      # divergencia vencida fora das partes listadas (RPO7-7 Sandoval: plano de intervencao administrativa)
+                    v, pv = 'DIVERGIU (voto divergente vencido em ponto específico, fora das partes listadas)', 'nominal'; det += ' | ponto específico: ' + dx_[d][:200]; div_extra_log.append(did)
+                if d not in ros and d in c['subs'] and v.startswith('ACOMPANHOU'):      # ex-diretor cujo voto subsistente a ata cita sem ser relator/vencido (RPO1-6, RPO10-2, RPO17-16)
+                    v, pv = 'VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1)', 'nominal'; det = 'única: ' + v + ('' if modo_unico(partes) is None else f' [decisão por {modo_unico(partes)}]'); subs_log.append((did, d))
                 L[d] = (v, pv, det)
         for d, (v, pv, det) in L.items():
             if v.startswith('AUSENTE') and d in ros: aus_item[d] += 1
         # ---- registros
         for d in votantes:
             v, pv, det = L[d]
-            ex = ' [ex-diretor; voto proferido em reunião anterior e subsistente]' if d not in ros else ''
+            ex = ''
+            if d not in ros:      # o sufixo 'voto subsistente' so' vale onde o TEXTO o diz (nomeia o diretor na oracao de voto subsistente); nao em RPO5-8/RPO7-8 (insubsistencia) nem onde so' a coluna cita o relator
+                nd_ = norm(dec)
+                if d in c['subs'] or (d == relator and re.search(r'(?<!in)subsistent', nd_) and not re.search(r'insubsist', nd_)): ex = ' [ex-diretor; voto proferido em reunião anterior e subsistente]'
+                elif re.search(r'insubsist', nd_): ex = ' [ex-diretor; o texto trata da INSUBSISTÊNCIA de voto(s) anterior(es); não há voto subsistente]'
+                else: ex = ' [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]'
             if d in c['ressalva']: ex += ' [ressalva: apresentou fundamentação diversa do relator, sem divergir do resultado]'
             if c.get('xref'): ex += f' [{c["xref"]}]'
             xr = [p_.get('xref') for p_ in partes if p_.get('xref')]
@@ -444,7 +554,7 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
         # relator citado no texto x coluna
         m_rel = re.search(r'acompanhando o voto d[oa] Diretor[a]?-Relator[a]?,\s*([^,]+),', dec)
         if m_rel and nomes(m_rel[1]) and nomes(m_rel[1])[0] != relator: rel_dif.append((did, relator, m_rel[1]))
-        pr_list = partes if tipo_item in ('Deliberação',) and col not in ('Não Deliberado',) else []
+        pr_list = partes if (tipo_item in ('Deliberação',) and col not in ('Não Deliberado',)) or did in prelim_log else []
         if tipo_item == 'Vista' and col == 'Pedido de Vista + Prorrogação': pr_list = partes
         D.append({'reuniao': tag, 'data': data, 'processo': procs[0], 'deliberacao': did, 'item_n': n_item, 'relator': relator, 'interessado': interessado(it['TxtAssunto'], dec),
                   'assunto': plano(it['TxtAssunto']), 'resultado': resultado, 'voto_doc': '', 'decisao_texto': dec_par, 'tipo_item': tipo_item, 'secao': plano(it['NomClassificacaoAssunto']),
@@ -504,16 +614,37 @@ qa('(c) Itens por data: CSV × API datastore do mesmo portal (contador independe
 bad, ancoras = [], 0
 for d_ in D:
     if d_['tipo_item'] == 'Retirada de pauta' or d_['situacao_ata'] == 'Não Deliberado' or (d_['tipo_item'] == 'Vista' and not d_['partes']): continue
-    sents = [x for p_ in paragrafos(d_['decisao_texto']) for x in SENT.split(p_) if eh_decisao(x)]
+    sents = [x for x in junta_continuacao([x for p_ in paragrafos(d_['decisao_texto']) for x in SENT.split(p_)]) if eh_decisao(x)]
     esp = sum(max(1, len(marcadores(x))) for x in sents)
     ancoras += 1
     if len(d_['partes']) != max(1, esp): bad.append((d_['deliberacao'], len(d_['partes']), esp))
+# contagem INDEPENDENTE de partes: marcadores romanos DISTINTOS de nivel 1 no texto bruto dos paragrafos "A Diretoria ..." (nao usa marcadores() nem
+# junta_continuacao()/SENT): varre toda ocorrencia '(i)'/'ii)' fora de aspas, exclui referencias ('item i', 'inciso (ii)') e sub-itens '(ii.a)', e corta a
+# narrativa pos-decisao ('Houve sustentacao', 'O Diretor ... votou', 'Em relacao a este ponto').
+ROMSET = sorted(ROM + ['iiii'], key=len, reverse=True)
+MARC_IND = re.compile(r'(?:\(|(?<![\w(]))(' + '|'.join(ROMSET) + r')\)')
+CORTE_IND = re.compile(r'\.\s+(?:Houve |O Diretor|A Diretora|Os Diretores|As Diretoras|Em rela[çc][ãa]o a este|Para este ponto|Ainda, a parte)')
+def romanos_distintos(d_):
+    tot = 0
+    for p_ in d_['decisao_texto'].split('\n'):
+        if not eh_decisao(p_.strip()): continue
+        t = CORTE_IND.split(re.sub(r'“[^”]*$', ' ', re.sub(r'“[^”]*”', ' ', p_)))[0]
+        mi_ = MARC_IND.search(t)
+        if mi_ and re.search(r'(?:com vistas a|visando|a fim de|com o objetivo de)\s*:\s*\(?$', t[max(0, mi_.start() - 40):mi_.start()]) and not re.match(r'[a-zà-ú]+(?:ar|er|ir|or)\b', t[mi_.end():].lstrip().lower()): tot += 1; continue      # enumeracao de substantivos (objeto do pedido) = 1 parte
+        tot += len({m[1] for m in MARC_IND.finditer(t) if not re.search(r'\b(?:item|itens|inciso|incisos|al[ií]nea|subitem|art|artigo)s?\.?\s*$', t[max(0, m.start() - 14):m.start()].lower())})
+    return tot
+bad2 = []
+for d_ in D:
+    if d_['tipo_item'] == 'Retirada de pauta' or d_['situacao_ata'] == 'Não Deliberado' or (d_['tipo_item'] == 'Vista' and not d_['partes']): continue
+    k_ = romanos_distintos(d_)
+    if k_ > len(d_['partes']) and k_ >= 2: bad2.append((d_['deliberacao'], len(d_['partes']), k_))
+qa('(c2) INDEPENDENTE: itens decididos em que o nº de marcadores romanos distintos "(i)..(xx)" do texto bruto excede o nº de partes emitidas (partes perdidas)', 0, len(bad2), not bad2, f'itens com marcadores a mais que partes: {bad2[:12]}')
 qa('(c) Itens decididos: nº de partes emitidas × âncoras do texto (marcadores (i),(ii).. ou sentenças "A Diretoria ... decidiu")', ancoras, ancoras - len(bad), not bad, f'divergentes: {bad[:8]}')
-def txt_dec(d_): return ' '.join(x for p_ in paragrafos(d_['decisao_texto']) for x in SENT.split(p_) if eh_decisao(x))
-it_maioria_txt = {d_['deliberacao'] for d_ in D if 'por maioria' in norm(txt_dec(d_)) and d_['tipo_item'] != 'Retirada de pauta'}
+def txt_dec(d_): return ' '.join(x for x in junta_continuacao([x for p_ in paragrafos(d_['decisao_texto']) for x in SENT.split(p_)]) if eh_decisao(x))
+it_maioria_txt = {d_['deliberacao'] for d_ in D if 'por maioria' in norm(txt_dec(d_)) and (d_['tipo_item'] != 'Retirada de pauta' or d_['partes'])}
 it_maioria_p = {d_['deliberacao'] for d_ in D if any(p_['modo'] == 'maioria' for p_ in d_['partes'])}
 qa('(c) Itens com "por maioria" nas sentenças de decisão × itens com alguma parte modo=maioria', len(it_maioria_txt), len(it_maioria_txt & it_maioria_p), it_maioria_txt == it_maioria_p, f'só no texto: {sorted(it_maioria_txt - it_maioria_p)[:6]}; só nas partes: {sorted(it_maioria_p - it_maioria_txt)[:6]}')
-it_unan_txt = {d_['deliberacao'] for d_ in D if 'por unanimidade' in norm(txt_dec(d_)) and d_['tipo_item'] != 'Retirada de pauta'}
+it_unan_txt = {d_['deliberacao'] for d_ in D if 'por unanimidade' in norm(txt_dec(d_)) and (d_['tipo_item'] != 'Retirada de pauta' or d_['partes'])}
 it_unan_p = {d_['deliberacao'] for d_ in D if any(p_['modo'] == 'unanimidade' for p_ in d_['partes'])}
 qa('(c) Itens com "por unanimidade" nas sentenças de decisão × itens com alguma parte modo=unanimidade', len(it_unan_txt), len(it_unan_txt & it_unan_p), it_unan_txt == it_unan_p, f'só no texto: {sorted(it_unan_txt - it_unan_p)[:6]}; só nas partes: {sorted(it_unan_p - it_unan_txt)[:6]}')
 it_venc_txt = {d_['deliberacao'] for d_ in D if re.search(r'\bvencid', norm(txt_dec(d_)))}
@@ -559,6 +690,19 @@ n_vista_ok = sum(1 for d_ in D if d_['tipo_item'] == 'Vista' and d_['situacao_at
 n_vista = sum(1 for d_ in D if d_['situacao_ata'] == 'Pedido de Vista')
 qa('(f) Textos de decisão truncados na fonte (limite de 4.000 caracteres)', 0, len(trunc_log), not trunc_log, f'{trunc_log}: início da decisão (modo, vencidos, relator) preservado; narrativa final pode faltar')
 qa('(f) Itens "Pedido de Vista": pedinte nominal identificado no texto', n_vista, n_vista_ok, n_vista == n_vista_ok, f'sem pedinte: {sem_vista_log}')
+n_vc = sum(1 for d_ in D if d_['situacao_ata'].startswith('Pedido de Vista +'))
+qa('(f) Itens "Pedido de Vista + Retirado de Pauta/Prorrogação": pedinte nominal identificado no texto (sem pedinte → pendências)', n_vc, n_vc - len(set(vista_sem_pedinte_log)), not vista_sem_pedinte_log, f'{len(set(vista_sem_pedinte_log))} itens sem pedinte no texto: {sorted(set(vista_sem_pedinte_log))}')
+_vot_it = collections.defaultdict(set)
+for v_ in V: _vot_it[v_['deliberacao']].add(v_['diretor'])
+sub_sem = []
+for d_ in D:
+    for m_ in re.finditer(r'proferi\w+ votos? subsistentes?', norm(d_['decisao_texto'])):
+        ini_ = norm(d_['decisao_texto']).rfind('. ', 0, m_.start()) + 1
+        for x_ in nomes(d_['decisao_texto'][ini_:m_.start()]):
+            if x_ not in _vot_it[d_['deliberacao']]: sub_sem.append((d_['deliberacao'], curto(x_)))
+qa('(e) Todo diretor citado em "proferiu(ram) voto(s) subsistente(s)" (inclusive ex-diretor não relator) tem linha de voto no item', 0, len(set(sub_sem)), not sub_sem, f'sem linha: {sorted(set(sub_sem))[:8]}')
+ex_suf = [(v_['deliberacao'], curto(v_['diretor'])) for v_ in V if 'voto proferido em reunião anterior e subsistente' in v_['voto_por_parte'] and not re.search(r'(?<!in)subsistent', norm(next(d_ for d_ in D if d_['deliberacao'] == v_['deliberacao'])['decisao_texto']))]
+qa('(e) Sufixo "[ex-diretor; voto proferido… subsistente]" só em linha cujo texto da decisão diz "subsistente"', 0, len(ex_suf), not ex_suf, f'{ex_suf[:6]}')
 tot = len(V); nom = sum(1 for v in V if v['proveniencia'] == 'nominal'); inf = sum(1 for v in V if v['proveniencia'] == 'inferido'); rev = sum(1 for v in V if v['proveniencia'] == 'REVISAR')
 COB.append([AG, 'Reuniões 2026 com ata lida (texto de decisão)', len(realizadas), ', '.join(tag_de(i) for i in sorted(realizadas, key=lambda i: (reuniao_data[i], i)))])
 COB.append([AG, 'Itens (deliberações) lidos', len(D), '; '.join(f'{k}: {n}' for k, n in collections.Counter(d_['tipo_item'] for d_ in D).most_common())])
@@ -587,6 +731,15 @@ for did, motivos in rev_por_item.items():
 for did in trunc_log:
     PEN.append([AG, did, next(d_['data'] for d_ in D if d_['deliberacao'] == did), 'texto truncado na fonte', 'texto da decisão cortado em 4.000 caracteres no dataset de dados abertos (relator, modo e vencidos aparecem no início e foram lidos)',
                 'o campo TxtDecisaoJulgamento do CSV tem limite de 4.000 caracteres; impedimentos, ausências e vistas no fim do texto podem não constar', 'Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)', URL_WWW2])
+data_de = {d_['deliberacao']: d_['data'] for d_ in D}
+for did in sorted(set(vista_sem_pedinte_log), key=lambda x: (data_de[x], x)):
+    PEN.append([AG, did, data_de[did], 'pedido de vista sem pedinte identificado', 'coluna de resultado do dataset = "Pedido de Vista + Retirado de Pauta/Prorrogação", mas o texto da decisão não nomeia quem pediu vista',
+                'o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o "Pedido de Vista" puro', 'Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista', URL_WWW2])
+for did in trunc_log:
+    if did in rev_por_item: continue
+    n_inf = sum(1 for v_ in V if v_['deliberacao'] == did and v_['proveniencia'] == 'inferido')
+    PEN.append([AG, did, data_de[did], 'texto truncado: votos inferidos sem sinal de risco', f'{n_inf} linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR',
+                'a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha', 'Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)', URL_WWW2])
 PEN.append([AG, 'Colegiado 2026 (composição por reunião)', '2026-08-18', 'inferido', 'Sandoval (DG), Agnes, Gentil, Willamy e Fernando até a RPO de 11/08; Ludimila Lima no lugar de Fernando Mosna a partir do CDPO de 18/08',
             'a fonte coletada não traz lista de presentes; a troca foi inferida pelas atuações nominais em texto (1ª atuação de Ludimila 18/08; última de Fernando 11/08) e pelo art. 54 da NO-1 ("voto subsistente")', 'Conferir a portaria de posse/vacância e as listas de presentes das atas', 'https://www.gov.br/aneel/pt-br/composicao/diretoria'])
 NF += [[AG, 'Atas em PDF (presença/ausência da reunião inteira, ordem da apuração nominal, sustentações)', f'{len(realizadas)} reuniões', 'PARCIAL (bloqueado pela fonte)', MOT, 'Obter as atas em outro IP/navegador e reprocessar'],

@@ -123,7 +123,7 @@ ev_e = collections.Counter(v['proveniencia'] for v in ae['votos'])
 lin('ANEEL', 'Votos: nominal + inferido + REVISAR = total', len(ae['votos']), sum(ev_e.values()), nota=str(dict(ev_e)))
 _dv = [q for q in ae['qualidade'] if q[4] == 'DIVERGE']
 _tx = ' '.join(str(p_) for p_ in ae['pendencias'])
-lin('ANEEL', 'Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (data da RPO17, buraco na RPO12, textos truncados)', 0, sum(1 for q in _dv if not any(k in _tx for k in ('divergência de data', 'buraco', 'truncad'))), nota=f'{len(_dv)} DIVERGE de fonte, todas em pendencias/Faltam na fonte')
+lin('ANEEL', 'Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (data da RPO17, buraco na RPO12, textos truncados, vistas sem pedinte)', 0, sum(1 for q in _dv if not any(k in _tx for k in ('divergência de data', 'buraco', 'truncad', 'sem pedinte'))), nota=f'{len(_dv)} DIVERGE de fonte, todas em pendencias/Faltam na fonte')
 che = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANEEL'}
 pe = [str(p_[1]).split(' — ')[0].strip() for p_ in ae['pendencias']]
 lin('ANEEL', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pe), sum(1 for x in pe if any(x == c or c.startswith(x) or x in c for c in che)))

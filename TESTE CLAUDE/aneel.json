@@ -3291,7 +3291,7 @@
     },
     {
      "parte": "IV",
-     "acao": "oficiar o Ministério de Minas e Energia – MME para que avalie a conveniência e a oportunidade de realização de leilões regionalizados, com critérios de alocação locacional da potência contratada, conforme pleiteado no Ofício nº 1/2026/GSMROGER, do Presidente da Comissão de Serviços de Infraestrutura do Senado Federal, Senador Marcos Rogério, subscrito pelos Senadores Alan Rick, Márcio Bittar, Lucas Barreto, Randolfe Rodrigues, Confúcio Moura, Jaime Bagattoli, Chico Rodrigues, Dr",
+     "acao": "oficiar o Ministério de Minas e Energia – MME para que avalie a conveniência e a oportunidade de realização de leilões regionalizados, com critérios de alocação locacional da potência contratada, conforme pleiteado no Ofício nº 1/2026/GSMROGER, do Presidente da Comissão de Serviços de Infraestrutura do Senado Federal, Senador Marcos Rogério, subscrito pelos Senadores Alan Rick, Márcio Bittar, Lucas Barreto, Randolfe Rodrigues, Confúcio Moura, Jaime Bagattoli, Chico Rodrigues, Dr. Hiran e Mecias de Jesus.",
      "modo": "unanimidade",
      "vencidos": []
     }
@@ -3333,7 +3333,7 @@
     },
     {
      "parte": "III",
-     "acao": "oficiar o Ministério de Minas e Energia – MME para que avalie a conveniência e a oportunidade de realização de leilões regionalizados, com critérios de alocação locacional da potência contratada, conforme pleiteado no Ofício nº 1/2026/GSMROGER, do Presidente da Comissão de Serviços de Infraestrutura do Senado Federal, Senador Marcos Rogério, subscrito pelos Senadores Alan Rick, Márcio Bittar, Lucas Barreto, Randolfe Rodrigues, Confúcio Moura, Jaime Bagattoli, Chico Rodrigues, Dr",
+     "acao": "oficiar o Ministério de Minas e Energia – MME para que avalie a conveniência e a oportunidade de realização de leilões regionalizados, com critérios de alocação locacional da potência contratada, conforme pleiteado no Ofício nº 1/2026/GSMROGER, do Presidente da Comissão de Serviços de Infraestrutura do Senado Federal, Senador Marcos Rogério, subscrito pelos Senadores Alan Rick, Márcio Bittar, Lucas Barreto, Randolfe Rodrigues, Confúcio Moura, Jaime Bagattoli, Chico Rodrigues, Dr. Hiran e Mecias de Jesus.",
      "modo": "unanimidade",
      "vencidos": []
     }
@@ -6533,19 +6533,26 @@
    "relator": "Daniel Cardoso Danna",
    "interessado": "",
    "assunto": "Resultado da Consulta Pública nº 39/2023, instituída com vistas a colher subsídios e informações adicionais para o aprimoramento da regulação para o armazenamento de energia elétrica.",
-   "resultado": "RETIRADO DE PAUTA (após pedido de vista) (na fase de debate dos Diretores)",
+   "resultado": "DECISÃO PRELIMINAR: VOTO DE DANIEL DANNA DECLARADO INSUBSISTENTE (maioria; divergência parcial: Sandoval Neto) → RETIRADO DE PAUTA (após pedido de vista) (na fase de debate dos Diretores)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por maioria, decidiu, ouvida a Procuradoria, declarar a insubsistência do voto proferido pelo então Diretor-Relator da matéria, Daniel Cardoso Danna, na 29ª Reunião Pública Ordinária de 2025, realizada em 12 de agosto de 2025, em razão da superveniente publicação da Lei nº 15.269/2025, que caracteriza fato novo relevante e capaz de, por si só, modificar significativamente o contexto decisório, nos termos do art. 55 da Norma de Organização nº 1 (Resolução Normativa nº 1.133/2025).\nPara este ponto, o Diretor-Geral, Sandoval de Araújo Feitosa Neto, votou no sentido de tornar insubsistente apenas o item do voto do então Diretor-Relator relacionado à Outorga, por estar diretamente impactado pela Lei nº 15.269/2025. Para os demais itens, votou pela subsistência do voto do então Diretor-Relator.\nDecididas as preliminares, o processo foi retirado de pauta na fase de debates dos Diretores.\nHouve sustentação oral por parte do Sr. Rafael F. D'Avila, representante da Costa Verde Energia Renovável, e do Sr. Marcello Cabral, representante da Associação Brasileira de Energia Eólica – ABEEólica.",
    "tipo_item": "Retirada de pauta",
    "secao": "Regulação",
    "unidade": "",
-   "partes": [],
+   "partes": [
+    {
+     "parte": "única",
+     "acao": "ouvida a Procuradoria, declarar a insubsistência do voto proferido pelo então Diretor-Relator da matéria, Daniel Cardoso Danna, na 29ª Reunião Pública Ordinária de 2025, realizada em 12 de agosto de 2025, em razão da superveniente publicação da Lei nº 15.269/2025, que caracteriza fato novo relevante e capaz de, por si só, modificar significativamente o contexto decisório, nos termos do art. 55 da Norma de Organização nº 1 (Resolução Normativa nº 1.133/2025).",
+     "modo": "maioria",
+     "vencidos": []
+    }
+   ],
    "ato": "nº 0",
    "situacao_ata": "Pedido de Vista + Retirado de Pauta",
    "processos_do_item": [
     "48500.004885/2020-63"
    ],
-   "obs": ""
+   "obs": "decisão preliminar tomada antes da retirada de pauta: o processo NÃO foi decidido no mérito; não é mera retirada"
   },
   {
    "reuniao": "RPO5",
@@ -9481,7 +9488,7 @@
    "relator": "Agnes Maria de Aragão da Costa",
    "interessado": "",
    "assunto": "Termo de Intimação nº 49/2024, lavrado pela Superintendência de Fiscalização Técnica dos Serviços de Energia Elétrica – SFT, que trata do Relatório de Falhas e Transgressões à legislação e ao Contrato de Concessão da Enel Distribuição São Paulo – Enel SP (Eletropaulo Metropolitana Eletricidade de São Paulo S.A.).",
-   "resultado": "I) REJEITADO (unanimidade) | II) RECONHECIDO (unanimidade) | III) DETERMINAÇÃO (unanimidade) | IV) DETERMINAÇÃO (unanimidade) | V) DETERMINAÇÃO (unanimidade)",
+   "resultado": "I) REJEITADO (unanimidade) | II) RECONHECIDO (unanimidade) | III) RECONHECIDO (unanimidade) | IV) DETERMINAÇÃO (unanimidade) | V) DETERMINAÇÃO (unanimidade) | VI) DETERMINAÇÃO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, acompanhando o voto-vista do Diretor Gentil Nogueira de Sá Júnior, decidiu: (i) rejeitar os argumentos apresentados na Carta Enel SP 274-2024-RB, protocolada no dia 5 de novembro de 2024, em face do Termo de Intimação nº 49/2024-SFT- (ii) reconhecer o prazo de acompanhamento e avaliação do Plano de Recuperação no âmbito do Termo de Intimação nº 49/2024, até 31 de março de 2026 (iii) reconhecer que não houve a regularização estrutural e definitiva das falhas e transgressões apontadas no RFT anexo ao Termo de Intimação nº 49/2024-SFT- (iv) determinar a instauração de procedimento administrativo tendente à caducidade, com a consequente conversão deste processo fiscalizatório em processo de caducidade- (v) determinar que a Enel Distribuição São Paulo – Enel SP seja intimada para, querendo, apresentar defesa escrita no prazo de 30 (trinta) dias, quanto à possibilidade de a ANEEL recomendar a aplicação de penalidade de caducidade do Contrato de Concessão nº 162/98-ANEEL ao Ministério de Minas e Energia – MME, em razão dos descumprimentos contratuais, legais e normativos indicados na fundamentação do voto-vista e tipificados, como segue: (v.a) Cláusula Segunda do Contrato de Concessão nº 162/2008-ANEEL- (v.b) art. 6º, §1º c/c art. 31, incisos I e IV da Lei 8.987/1995- (v.c) art. 38, §1º, incisos I, II e VI da Lei 8.987/1995- e (v.d) art. 20, incisos I, II e VI, “a” da Resolução Normativa nº 846/2019- (vi) determinar que seja trasladada cópia desta decisão para o processo de nº 48500.010908/2025-83, com o objetivo de formalizar a suspensão da análise da renovação do Contrato de Concessão nº 162/98-ANEEL, conforme disciplinado no art. 2º, § 9º, do Decreto nº 12.068/2024.\nO Diretor-Geral, Sandoval de Araújo Feitosa Neto, apresentou voto divergente, o qual restou vencido, especificamente no que se refere a determinação para que as unidades organizacionais Superintendência de Fiscalização Econômica, Financeira e de Mercado – SFF, pela Superintendência de Fiscalização Técnica dos Serviços de Energia Elétrica – SFT, Superintendência de Concessão de Serviços de Transmissão e Distribuição de Energia Elétrica – STD, Superintendência de Gestão Tarifária e Regulação Econômica – STR, Superintendência de Mediação Administrativa e das Relações de Consumo – SMA, Secretaria de Leilões – SEL, Procuradoria Federal junto à ANEEL – PF/ANEEL e Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE, sob coordenação desta, elaborem e apresentem, no prazo de 60 dias, plano de intervenção administrativa, que possa ser aplicado na área de concessão da Enel Distribuição São Paulo – Enel SP, bem como em outros possíveis caso que sobrevierem.\nHouve sustentação oral por parte do Sr. Marçal Justen Filho, representante da Enel Distribuição São Paulo – Enel SP, e da Procuradora Geral do Município de São Paulo, Luciana Sant'Ana Nardi.",
    "tipo_item": "Deliberação",
@@ -9496,30 +9503,33 @@
     },
     {
      "parte": "II",
-     "acao": "reconhecer o prazo de acompanhamento e avaliação do Plano de Recuperação no âmbito do Termo de Intimação nº 49/2024, até 31 de março de 2026 (iii) reconhecer que não houve a regularização estrutural e definitiva das falhas e transgressões apontadas no RFT anexo ao Termo de Intimação nº 49/2024-SFT",
+     "acao": "reconhecer o prazo de acompanhamento e avaliação do Plano de Recuperação no âmbito do Termo de Intimação nº 49/2024, até 31 de março de 2026",
      "modo": "unanimidade",
      "vencidos": []
     },
     {
      "parte": "III",
-     "acao": "determinar a instauração de procedimento administrativo tendente à caducidade, com a consequente conversão deste processo fiscalizatório em processo de caducidade",
+     "acao": "reconhecer que não houve a regularização estrutural e definitiva das falhas e transgressões apontadas no RFT anexo ao Termo de Intimação nº 49/2024-SFT",
      "modo": "unanimidade",
-     "vencidos": [],
-     "nota": "marcador do texto: (iv)"
+     "vencidos": []
     },
     {
      "parte": "IV",
-     "acao": "determinar que a Enel Distribuição São Paulo – Enel SP seja intimada para, querendo, apresentar defesa escrita no prazo de 30 (trinta) dias, quanto à possibilidade de a ANEEL recomendar a aplicação de penalidade de caducidade do Contrato de Concessão nº 162/98-ANEEL ao Ministério de Minas e Energia – MME, em razão dos descumprimentos contratuais, legais e normativos indicados na fundamentação do voto-vista e tipificados, como segue: (v.a) Cláusula Segunda do Contrato de Concessão nº 162/2008-ANEEL- (v.b) art. 6º, §1º c/c art. 31, incisos I e IV da Lei 8.987/1995- (v.c) art. 38, §1º, incisos I, II e VI da Lei 8.987/1995- e (v.d) art. 20, incisos I, II e VI, “a” da Resolução Normativa nº 846/2019",
+     "acao": "determinar a instauração de procedimento administrativo tendente à caducidade, com a consequente conversão deste processo fiscalizatório em processo de caducidade",
      "modo": "unanimidade",
-     "vencidos": [],
-     "nota": "marcador do texto: (v)"
+     "vencidos": []
     },
     {
      "parte": "V",
+     "acao": "determinar que a Enel Distribuição São Paulo – Enel SP seja intimada para, querendo, apresentar defesa escrita no prazo de 30 (trinta) dias, quanto à possibilidade de a ANEEL recomendar a aplicação de penalidade de caducidade do Contrato de Concessão nº 162/98-ANEEL ao Ministério de Minas e Energia – MME, em razão dos descumprimentos contratuais, legais e normativos indicados na fundamentação do voto-vista e tipificados, como segue: (v.a) Cláusula Segunda do Contrato de Concessão nº 162/2008-ANEEL- (v.b) art. 6º, §1º c/c art. 31, incisos I e IV da Lei 8.987/1995- (v.c) art. 38, §1º, incisos I, II e VI da Lei 8.987/1995- e (v.d) art. 20, incisos I, II e VI, “a” da Resolução Normativa nº 846/2019",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "VI",
      "acao": "determinar que seja trasladada cópia desta decisão para o processo de nº 48500.010908/2025-83, com o objetivo de formalizar a suspensão da análise da renovação do Contrato de Concessão nº 162/98-ANEEL, conforme disciplinado no art. 2º, § 9º, do Decreto nº 12.068/2024.",
      "modo": "unanimidade",
-     "vencidos": [],
-     "nota": "marcador do texto: (vi)"
+     "vencidos": []
     }
    ],
    "ato": "Despacho nº 1214",
@@ -10522,7 +10532,7 @@
    "relator": "Gentil Nogueira de Sá Júnior",
    "interessado": "Companhia Paulista de Força e Luz – CPFL Paulista",
    "assunto": "Requerimento Administrativo protocolado pela Companhia Paulista de Força e Luz – CPFL Paulista, com vistas ao afastamento da cobrança da Parcela de Ineficiência por Ultrapassagem – PIU e do Adicional de Encargos de Uso do Sistema de Transmissão – ADCEUST, apurados pelo Operador Nacional do Sistema Elétrico – ONS, em decorrência da ultrapassagem do Montante de Uso do Sistema de Transmissão – MUST no ponto de conexão Barra Bonita, ocorrida em 4 de março de 2025.",
-   "resultado": "I) DEFERIDO + DETERMINAÇÃO (unanimidade) | II) INDEFERIDO (maioria; vencido(s): Gentil Nogueira de Sá Júnior)",
+   "resultado": "I) DEFERIDO + DETERMINAÇÃO (unanimidade) | II) INDEFERIDO (maioria; vencido(s): Gentil Nogueira de Sá Júnior, Sandoval de Araújo Feitosa Neto)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu deferir o pedido da Companhia Paulista de Força e Luz – CPFL Paulista, no sentido de isentar a aplicação da Parcela de Ineficiência por Ultrapassagem – PIU, decorrente da ultrapassagem do Montante de Uso do Sistema de Transmissão – MUST verificada em 4 de março de 2025 no ponto de conexão Barra Bonita – 138 kV, bem como determinar a restituição, devidamente atualizada pelo Índice de Atualização da Transmissão – IAT, de eventuais valores já pagos a esse título.\nA Diretoria, por maioria, acompanhando o voto divergente do Diretor Willamy Moreira Frota, e vencido o Diretor-Relator, Gentil Nogueira de Sá Júnior, decidiu, ainda, indeferir o pedido de isenção da aplicação do Adicional de Encargos de Uso do Sistema de Transmissão – ADCEUST, decorrente da mesma ocorrência.\nPara este ponto, o Diretor-Relator, Gentil Nogueira de Sá Júnior, acompanhado pelo Diretor-Geral, Sandoval de Araújo Feitosa Neto, votou no sentido de deferir o pedido da CPFL Paulista, com vistas a determinar que a Superintendência de Gestão Tarifária e Regulação Econômica – STR, no próximo processo tarifário da CPFL Paulista, considere o Adicional de Encargos de Uso do Sistema de Transmissão – ADCEUST relacionado ao ponto de conexão Barra Bonita – 138 kV, decorrente da transferência de cargas ocasionada pela ocorrência de 4 de março de 2025 nas Linhas de Transmissão 138 kV Barra Bonita/Bariri C1 e C2, garantindo a neutralidade na Parcela A.",
    "tipo_item": "Deliberação",
@@ -10540,8 +10550,10 @@
      "acao": "indeferir o pedido de isenção da aplicação do Adicional de Encargos de Uso do Sistema de Transmissão – ADCEUST, decorrente da mesma ocorrência.",
      "modo": "maioria",
      "vencidos": [
-      "Gentil Nogueira de Sá Júnior"
-     ]
+      "Gentil Nogueira de Sá Júnior",
+      "Sandoval de Araújo Feitosa Neto"
+     ],
+     "nota": "Sandoval Neto também vencido: consta como seguidor do voto do relator vencido"
     }
    ],
    "ato": "Despacho nº 1312",
@@ -13354,7 +13366,7 @@
    "relator": "Gentil Nogueira de Sá Júnior",
    "interessado": "Álvaro dos Santos Machado",
    "assunto": "Recurso Administrativo interposto por Álvaro dos Santos Machado contra o Despacho nº 2.096/2025, emitido pela Superintendência de Mediação Administrativa e das Relações de Consumo – SMA, que decidiu extinguir e arquivar o Processo Administrativo, sem julgamento do mérito, diante da existência de decisão judicial transitada em julgado.",
-   "resultado": "CONHECIDO (unanimidade)",
+   "resultado": "CONHECIDO + PROVIMENTO NEGADO + MANTIDO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pelo Sr. Álvaro dos Santos Machado e, no mérito, negar provimento no sentido de manter o Despacho nº 2.096/2025 em sua integralidade.",
    "tipo_item": "Deliberação",
@@ -13363,7 +13375,7 @@
    "partes": [
     {
      "parte": "única",
-     "acao": "conhecer do Recurso Administrativo interposto pelo Sr",
+     "acao": "conhecer do Recurso Administrativo interposto pelo Sr. Álvaro dos Santos Machado e, no mérito, negar provimento no sentido de manter o Despacho nº 2.096/2025 em sua integralidade.",
      "modo": "unanimidade",
      "vencidos": []
     }
@@ -14078,7 +14090,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Fábio Félix Fernandes",
    "assunto": "Pedido de Medida Cautelar protocolado por Fábio Félix Fernandes, com vistas a determinar que a SPE Nova Era Teresina Transmissora S.A. se abstenha de iniciar qualquer intervenção física, supressão vegetal ou obra civil na propriedade do Requerente fora da faixa estrita aprovada na Resolução Autorizativa nº 15.834/2025, que declarou de utilidade pública a área de terra necessária à passagem da Linha de Transmissão Quixadá – Crateús, localizada no estado do Ceará.",
-   "resultado": "CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) ENCAMINHADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer e, no mérito, negar provimento ao Pedido de Medida Cautelar apresentado pelo Sr. Fábio Felix Fernandes- e (ii) encaminhar os autos para a Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE, para a devida instrução.",
    "tipo_item": "Deliberação",
@@ -14086,8 +14098,14 @@
    "unidade": "SCE",
    "partes": [
     {
-     "parte": "única",
-     "acao": "conhecer e, no mérito, negar provimento ao Pedido de Medida Cautelar apresentado pelo Sr",
+     "parte": "I",
+     "acao": "conhecer e, no mérito, negar provimento ao Pedido de Medida Cautelar apresentado pelo Sr. Fábio Felix Fernandes",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "II",
+     "acao": "encaminhar os autos para a Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE, para a devida instrução.",
      "modo": "unanimidade",
      "vencidos": []
     }
@@ -14251,7 +14269,7 @@
    "relator": "Agnes Maria de Aragão da Costa",
    "interessado": "Scala Data Centers S.A",
    "assunto": "Pedidos de Medida Cautelar protocolados pela Scala Data Centers S.A. com vistas à suspensão da aplicabilidade do art. 4º da Resolução Normativa nº 1.122/2025 para as unidades consumidoras Scala Data Center Campus Jundiaí e Scala Al City – Eldorado do Sul/RS, assegurando a preservação dos horizontes técnicos dos respectivos pareceres de acesso até a análise de mérito dos requerimentos.",
-   "resultado": "I) INDEFERIDO (unanimidade) | II) INDEFERIDO (unanimidade)",
+   "resultado": "INDEFERIDO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu indeferir os Pedidos de Medida Cautelar protocolados pela Scala Data Centers S.A., com vistas a: (i) suspensão da aplicabilidade do art. 4º da Resolução Normativa ANEEL nº 1.122, de 20 de maio de 2025, para as unidades consumidoras Scala Data Center Campus Jundiaí e Scala Al City – Eldorado do Sul/RS- e (ii) preservação dos horizontes técnicos dos respectivos pareceres de acesso até a análise de mérito dos requerimentos.\nA Diretora-Relatora, Agnes Maria de Aragão da Costa, disponibilizou seu voto no endereço eletrônico da Agência, nos termos do art. 42 da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025), o qual foi lido pelo Diretor Fernando Luiz Mosna Ferreira da Silva.\nHouve sustentação oral por parte da Sra. Ana Carolina Calil, representante da Scala Data Centers S.A. A manifestação foi realizada por vídeo, nos termos do art. 45, § 4º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).",
    "tipo_item": "Deliberação",
@@ -14259,14 +14277,8 @@
    "unidade": "",
    "partes": [
     {
-     "parte": "I",
-     "acao": "suspensão da aplicabilidade do art. 4º da Resolução Normativa ANEEL nº 1.122, de 20 de maio de 2025, para as unidades consumidoras Scala Data Center Campus Jundiaí e Scala Al City – Eldorado do Sul/RS",
-     "modo": "unanimidade",
-     "vencidos": []
-    },
-    {
-     "parte": "II",
-     "acao": "preservação dos horizontes técnicos dos respectivos pareceres de acesso até a análise de mérito dos requerimentos.",
+     "parte": "única",
+     "acao": "indeferir os Pedidos de Medida Cautelar protocolados pela Scala Data Centers S.A., com vistas a: (i) suspensão da aplicabilidade do art. 4º da Resolução Normativa ANEEL nº 1.122, de 20 de maio de 2025, para as unidades consumidoras Scala Data Center Campus Jundiaí e Scala Al City – Eldorado do Sul/RS- e (ii) preservação dos horizontes técnicos dos respectivos pareceres de acesso até a análise de mérito dos requerimentos.",
      "modo": "unanimidade",
      "vencidos": []
     }
@@ -14288,7 +14300,7 @@
    "relator": "Agnes Maria de Aragão da Costa",
    "interessado": "",
    "assunto": "Resultado da Consulta Pública nº 47/2025, instituída com vistas a colher subsídios e informações adicionais para a definição do critério de rateio dos recursos arrecadados na Conta de Desenvolvimento Energético – CDE de que tratam o § 8º e o § 9º do art. 4º da Lei nº 15.235/2025, relativos à repactuação de parcelas vincendas devidas a título de Uso de Bem Público – UBP.",
-   "resultado": "I) OFICIADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | II) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | III) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa)",
+   "resultado": "I) OFICIADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | II) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | III) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | IV) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | V) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | VI) FORMALIZADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | VII) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | VIII) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | IX) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa) | X) APROVADO (maioria; vencido(s): Agnes Maria de Aragão da Costa)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por maioria, acompanhando o voto-vista do Diretor Gentil Nogueira de Sá Júnior e vencida a Diretora-Relatora, Agnes Maria de Aragão da Costa, decidiu aprovar a emissão de Despacho, com as seguintes diretrizes a serem observadas no rateio dos eventuais recursos a serem arrecadados na repactuação de Uso do Bem Público – UBP, de que tratam o § 8º e o § 9º do art. 4º da Lei nº 15.235/2025: (i) a Câmara de Comercialização de Energia Elétrica – CCEE deverá oficiar a ANEEL quanto aos recursos depositados na Conta de Desenvolvimento Energético – CDE relativos à repactuação das parcelas vincendas devidas a título de UBP, de que trata o art. 4º da Lei nº 15.235/2025- ii) a partir dos valores de que trata o item “i” será homologado o Efeito Tarifário Limite Equilibrado Preliminar – ETLEP para as distribuidoras das áreas da SUDAM e da SUDENE, considerando a alocação de recursos de UBP que geram tal resultado- (iii) o ETLEP será o menor efeito tarifário médio decorrente da alocação dos recursos de UBP disponíveis e será calculado com base nos resultados já homologados dos processos tarifários de 2025 da Companhia de Eletricidade do Amapá – CEA, Energisa Acre – Distribuidora de Energia S.A. – EAC e Energisa Rondônia – Distribuidora de Energia S.A. – ERO, e dos resultados homologados ou projetados para 2026 das demais distribuidoras das áreas da SUDAM e da SUDENE (excluídos os efeitos dos recursos de UBP e reconhecimento/reversão de diferimentos tarifários), nas Tarifas de Aplicação do subgrupo B1 residencial, vigentes antes dos referidos processos tarifários, e os dados do Mercado do Ambiente de Contratação Regulado – ACR ponderados conforme o nível de tensão, com peso 1 para a Baixa Tensão, 0,8 para a Média Tensão e 0,5 para a Alta Tensão dos municípios pertencentes à área da SUDAM e da SUDENE- (iv) A partir do valor de que trata o item “i” será homologado, após instrução da Superintendência de Gestão Tarifária e Regulação Econômica – STR, o ETLEP e os valores de UBP a serem preliminarmente transferidos em parcelas mensais às distribuidoras das áreas da SUDAM e da SUDENE que já passaram por processo tarifário, considerando a alocação de recursos de UBP que geram tal resultado. Poderá a STR fazer instrução adicional do ETLEP a partir da realização dos processos tarifários e dos valores de UBP a serem preliminarmente transferidos em parcelas mensais às distribuidoras- (v) o ETLEP homologado será utilizado em cada processo tarifário ainda não homologado em 2026 para dimensionar os recursos de UBP a serem considerados como componente financeiro, observando a mesma métrica do item “iii”, mas substituindo os dados de Mercado ACR e o efeito tarifário projetado do correspondente processo pelo realizado. O repasse preliminar para tais distribuidoras será homologado em conjunto com o processo tarifário- (vi) para os processos tarifários deliberados antes da homologação dos recursos do ETLEP, as distribuidoras poderão antecipar a reversão dos recursos de UBP em benefício da modicidade tarifária, devendo formalizar o valor na fase de instrução de seu processo tarifário- (vii) As parcelas de que trata o item “iv” deverão ser calculadas a partir do mês de competência da efetiva homologação do processo tarifário com os efeitos da UBP, até a competência de janeiro de 2027- (viii) para as distribuidoras que anteciparem a consideração de UBP em seus processos tarifários, a primeira parcela a ser repassada deverá contemplar as competências acumuladas entre o mês de homologação do processo tarifário e o mês da homologação das parcelas- (ix) para as distribuidoras que tiveram seus processos tarifários homologados sem a antecipação de recursos de UBP, serão processadas novas tarifas no momento da deliberação dos Recursos Administrativos contra os atos que homologaram os processos tarifários, que terão vigência após o efetivo recebimento da primeira parcela pelas distribuidoras- (x) para as distribuidoras cuja área de concessão é parcialmente formad",
    "tipo_item": "Deliberação",
@@ -14297,7 +14309,7 @@
    "partes": [
     {
      "parte": "I",
-     "acao": "a Câmara de Comercialização de Energia Elétrica – CCEE deverá oficiar a ANEEL quanto aos recursos depositados na Conta de Desenvolvimento Energético – CDE relativos à repactuação das parcelas vincendas devidas a título de UBP, de que trata o art. 4º da Lei nº 15.235/2025- ii) a partir dos valores de que trata o item “i” será homologado o Efeito Tarifário Limite Equilibrado Preliminar – ETLEP para as distribuidoras das áreas da SUDAM e da SUDENE, considerando a alocação de recursos de UBP que geram tal resultado",
+     "acao": "a Câmara de Comercialização de Energia Elétrica – CCEE deverá oficiar a ANEEL quanto aos recursos depositados na Conta de Desenvolvimento Energético – CDE relativos à repactuação das parcelas vincendas devidas a título de UBP, de que trata o art. 4º da Lei nº 15.235/2025",
      "modo": "maioria",
      "vencidos": [
       "Agnes Maria de Aragão da Costa"
@@ -14305,21 +14317,75 @@
     },
     {
      "parte": "II",
+     "acao": "a partir dos valores de que trata o item “i” será homologado o Efeito Tarifário Limite Equilibrado Preliminar – ETLEP para as distribuidoras das áreas da SUDAM e da SUDENE, considerando a alocação de recursos de UBP que geram tal resultado",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
+    },
+    {
+     "parte": "III",
      "acao": "o ETLEP será o menor efeito tarifário médio decorrente da alocação dos recursos de UBP disponíveis e será calculado com base nos resultados já homologados dos processos tarifários de 2025 da Companhia de Eletricidade do Amapá – CEA, Energisa Acre – Distribuidora de Energia S.A. – EAC e Energisa Rondônia – Distribuidora de Energia S.A. – ERO, e dos resultados homologados ou projetados para 2026 das demais distribuidoras das áreas da SUDAM e da SUDENE (excluídos os efeitos dos recursos de UBP e reconhecimento/reversão de diferimentos tarifários), nas Tarifas de Aplicação do subgrupo B1 residencial, vigentes antes dos referidos processos tarifários, e os dados do Mercado do Ambiente de Contratação Regulado – ACR ponderados conforme o nível de tensão, com peso 1 para a Baixa Tensão, 0,8 para a Média Tensão e 0,5 para a Alta Tensão dos municípios pertencentes à área da SUDAM e da SUDENE",
      "modo": "maioria",
      "vencidos": [
       "Agnes Maria de Aragão da Costa"
-     ],
-     "nota": "marcador do texto: (iii)"
+     ]
     },
     {
-     "parte": "III",
-     "acao": "A partir do valor de que trata o item “i” será homologado, após instrução da Superintendência de Gestão Tarifária e Regulação Econômica – STR, o ETLEP e os valores de UBP a serem preliminarmente transferidos em parcelas mensais às distribuidoras das áreas da SUDAM e da SUDENE que já passaram por processo tarifário, considerando a alocação de recursos de UBP que geram tal resultado",
+     "parte": "IV",
+     "acao": "A partir do valor de que trata o item “i” será homologado, após instrução da Superintendência de Gestão Tarifária e Regulação Econômica – STR, o ETLEP e os valores de UBP a serem preliminarmente transferidos em parcelas mensais às distribuidoras das áreas da SUDAM e da SUDENE que já passaram por processo tarifário, considerando a alocação de recursos de UBP que geram tal resultado Poderá a STR fazer instrução adicional do ETLEP a partir da realização dos processos tarifários e dos valores de UBP a serem preliminarmente transferidos em parcelas mensais às distribuidoras",
      "modo": "maioria",
      "vencidos": [
       "Agnes Maria de Aragão da Costa"
-     ],
-     "nota": "marcador do texto: (iv)"
+     ]
+    },
+    {
+     "parte": "V",
+     "acao": "o ETLEP homologado será utilizado em cada processo tarifário ainda não homologado em 2026 para dimensionar os recursos de UBP a serem considerados como componente financeiro, observando a mesma métrica do item “iii”, mas substituindo os dados de Mercado ACR e o efeito tarifário projetado do correspondente processo pelo realizado O repasse preliminar para tais distribuidoras será homologado em conjunto com o processo tarifário",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
+    },
+    {
+     "parte": "VI",
+     "acao": "para os processos tarifários deliberados antes da homologação dos recursos do ETLEP, as distribuidoras poderão antecipar a reversão dos recursos de UBP em benefício da modicidade tarifária, devendo formalizar o valor na fase de instrução de seu processo tarifário",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
+    },
+    {
+     "parte": "VII",
+     "acao": "As parcelas de que trata o item “iv” deverão ser calculadas a partir do mês de competência da efetiva homologação do processo tarifário com os efeitos da UBP, até a competência de janeiro de 2027",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
+    },
+    {
+     "parte": "VIII",
+     "acao": "para as distribuidoras que anteciparem a consideração de UBP em seus processos tarifários, a primeira parcela a ser repassada deverá contemplar as competências acumuladas entre o mês de homologação do processo tarifário e o mês da homologação das parcelas",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
+    },
+    {
+     "parte": "IX",
+     "acao": "para as distribuidoras que tiveram seus processos tarifários homologados sem a antecipação de recursos de UBP, serão processadas novas tarifas no momento da deliberação dos Recursos Administrativos contra os atos que homologaram os processos tarifários, que terão vigência após o efetivo recebimento da primeira parcela pelas distribuidoras",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
+    },
+    {
+     "parte": "X",
+     "acao": "para as distribuidoras cuja área de concessão é parcialmente formad",
+     "modo": "maioria",
+     "vencidos": [
+      "Agnes Maria de Aragão da Costa"
+     ]
     }
    ],
    "ato": "Despacho nº 1832",
@@ -14458,7 +14524,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Associação Brasileira dos Comercializadores de Energia – Abraceel",
    "assunto": "Pedido de Medida Cautelar protocolado pela Associação Brasileira dos Comercializadores de Energia – Abraceel com vistas a suspender os efeitos decorrentes da inclusão da Usina Hidrelétrica – UHE Foz do Prata na modelagem do deck do Programa Mensal de Operação Energética – PMO de maio de 2026, com a sua consequente retirada, até que haja a devida homologação pelo Comitê de Monitoramento do Setor Elétrico – CMSE.",
-   "resultado": "CONHECIDO (unanimidade)",
+   "resultado": "CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu conhecer do Pedido de Medida Cautelar protocolado pela Associação Brasileira dos Comercializadores de Energia – Abraceel com vistas a suspender os efeitos decorrentes da inclusão da Usina Hidrelétrica – UHE Foz do Prata na modelagem do deck do Programa Mensal de Operação Energética – PMO de maio de 2026, com a sua consequente retirada, até que haja a devida homologação pelo Comitê de Monitoramento do Setor Elétrico – CMSE, para, no mérito, negar-lhe provimento.\nO Diretor Fernando Luiz Mosna Ferreira da Silva estava ausente no momento da deliberação deste processo, tendo consignado seu voto no sentido de acompanhar o voto do Diretor-Relator, nos termos do art. 50, § 3º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nO processo acima foi destacado do bloco da pauta em decorrência da admissão de sustentação oral, nos termos do art. 45, § 3º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nHouve sustentação oral por parte do Sr. Urias Martiniano Garcia Neto, representante da Associação Brasileira dos Comercializadores de Energia – Abraceel.",
    "tipo_item": "Deliberação",
@@ -16328,7 +16394,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "empresas Forte Canto de Baixo Geradora Eólica S.A",
    "assunto": "Pedido de Medida Cautelar protocolado pelas empresas Forte Canto de Baixo Geradora Eólica S.A., Ventos de Santo Antônio Geradora Eólica S.A. e Ventos do Canto de Baixo Geradora Eólica S.A. com vistas à suspensão do Efeito Financeiro da Geração Realocada para o Ambiente de Contratação Regulada – ACR até a regulamentação da matéria.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) DETERMINAÇÃO (unanimidade) | III) SUSPENSO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO (unanimidade) | II) DETERMINAÇÃO (unanimidade) | III) SUSPENSO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar, protocolado pelas empresas Forte Canto de Baixo Geradora Eólica S.A., Ventos de Santo Antônio Geradora Eólica S.A. e Ventos do Canto de Baixo Geradora Eólica S.A., com vistas à suspensão do Efeito Financeiro da Geração Realocada para o Ambiente de Contratação Regulada – ACR, referente às Centrais Geradoras Eólicas União dos Ventos 12, União dos Ventos 13 e União dos Ventos 14, para, no mérito, dar-lhe provimento- (ii) determinar à Superintendência de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica – SGM a revisão das Regras de Comercialização considerando-se o disposto no voto do Diretor-Relator- e (iii) suspender, a partir da publicação desta decisão, o Efeito Financeiro da Geração Realocada para o ACR de centrais geradoras eólicas e fotovoltaicas até a revisão das regras de comercialização pela SGM de que trata o item ii.\nHouve sustentação oral por parte do Sr. Urias Martiniano Garcia Neto, representante da Forte Canto de Baixo Geradora Eolica S.A.",
    "tipo_item": "Deliberação",
@@ -16673,7 +16739,7 @@
    "relator": "Agnes Maria de Aragão da Costa",
    "interessado": "ISA Energia Brasil S.A",
    "assunto": "Pedido de Reconsideração interposto pela ISA Energia Brasil S.A. contra a Resolução Autorizativa nº 16.605/2026, que autorizou a Recorrente a implantar os Reforços de Grande e Pequeno Porte em instalações de transmissão de energia elétrica sob sua responsabilidade, estabeleceu os valores das parcelas de Receita Anual Permitida – RAP e o cronograma para a entrada em operação comercial das instalações de transmissão de energia elétrica referentes ao Contrato de Concessão nº 59/2001- e Requerimento Administrativo interposto pela ISA Energia Brasil S.A. referente à Resolução Autorizativa nº 16.605/2026, com vistas à alteração na alíquota do Imposto sobre Produtos Industrializados – IPI e do adicional de Periculosidade.",
-   "resultado": "I) CONHECIDO + PROVIMENTO (unanimidade) | II) CONHECIDO (unanimidade) | III) ALTERADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO (unanimidade) | II) CONHECIDO + PROVIMENTO (unanimidade) | III) ALTERADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Reconsideração interposto pela Isa Energia Brasil S.A. contra a Resolução Autorizativa nº 16.605/2026, para, no mérito, dar-lhe provimento nos termos da Nota Técnica nº 595/2026-SCE/ANEEL- (ii) conhecer do Requerimento Administrativo com vistas à inclusão do adicional de periculosidade e das alíquotas de IPI no cálculo das parcelas de Receita Anual Permitida – RAP, para, no mérito, dar-lhe provimento- e (iii) alterar os Anexos I e II da referida Resolução Autorizativa na forma da minuta anexa ao voto da Diretora-Relatora.",
    "tipo_item": "Deliberação",
@@ -19139,7 +19205,7 @@
    "relator": "Agnes Maria de Aragão da Costa",
    "interessado": "CCEE- (viii) considere como a referência temporal a ser verificada",
    "assunto": "Procedimentos referentes à autoprodução de energia elétrica, inclusive por equiparação, referentes às alterações na Lei nº 9.074/1995 estabelecidas pela Lei nº 15.269/2025.",
-   "resultado": "I) ESTABELECIDO (unanimidade) | II) ESTABELECIDO (unanimidade) | III) ESTABELECIDO (maioria; vencido(s): Agnes Maria de Aragão da Costa, Gentil Nogueira de Sá Júnior)",
+   "resultado": "I) ESTABELECIDO (unanimidade) | II) ESTABELECIDO (unanimidade) | III) ESTABELECIDO (maioria; vencido(s): Agnes Maria de Aragão da Costa, Gentil Nogueira de Sá Júnior) | IV) ESTABELECIDO (unanimidade) | V) ESTABELECIDO (unanimidade) | VI) ESTABELECIDO (unanimidade) | VII) ESTABELECIDO (unanimidade) | VIII) ESTABELECIDO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu estabelecer que a Câmara de Comercialização de Energia – CCEE, ao aplicar os dispositivos relacionados ao art. 16-B da Lei nº 9.074/1995: (i) observe os entendimentos conceituais evidenciados neste processo, ajustando seus procedimentos de modo a permitir a aplicação imediata dos dispositivos legais- (ii) a partir de 25 de novembro de 2025, cadastre para fins de autoprodução, tanto estrito sendo quanto equiparada, apenas ativos de geração de energia elétrica outorgados, observando o disposto no item iii.\nA Diretoria, por maioria, acompanhando a divergência inaugurada pelo Diretor Willamy Moreira Frota e vencidos a Diretora-Relatora, Agnes Maria de Aragão da Costa, e o Diretor Gentil Nogueira de Sá Júnior, decidiu estabelecer que a CCEE: (iii) considere um período máximo de três anos, a partir da publicação da Lei nº 15.269/2025, para manter ativa as modelagens de autoprodutor lastreadas em usinas sem outorga concretizadas antes da publicação dessa Lei.\nEm relação a este ponto, a Diretora-Relatora, Agnes Maria de Aragão da Costa, e o Diretor Gentil Nogueira de Sá Júnior votaram no sentido de estabelecer que a CCEE: (iii) considere um período máximo de transição equivalente ao que for maior entre: (iii.a) três anos ou (iii.b) o período remanescente, considerado o prazo total de trinta e cinco anos, descontado o período decorrido entre a data de entrada em operação da usina e 24 de novembro de 2025, sendo o período de transição contado a partir da data de publicação da Lei nº 15.269/2025, para manter ativa modelagem como autoprodutor lastreada em usina sem outorga com pedido de validação, nos termos dos Procedimentos de Comercialização- (iii.c) encaminhado, caso necessário, à distribuidora até 24 de novembro de 2025- e (iii.d) que venha a ser aprovado pela CCEE nos termos desta decisão.\nPor fim, a Diretoria, por unanimidade, decidiu estabelecer que a CCEE: (iv) observe, para fins de equiparação a autoprodutor de consumidor que possua demanda contratada agregada igual ou superior a 30.000 kW (trinta mil quilowatts), que todas as unidades de consumo agregadas tenham demanda individual igual ou superior a 3.000 kW (três mil quilowatts)- (v) solicite dos consumidores que foram efetivamente equiparados a autoprodutores em data anterior à publicação da Lei nº 15.269/2025, sob a égide da Lei nº 11.488/2007, caso necessário, a regularizar sua situação com vistas ao atendimento dos critérios estabelecidos nos §§ 5º e 6º do art. 16-B da Lei nº 9.074/1995- (vi) avalie, no caso concreto, as qualificações de Grupo Econômico, Controladores Diretos, Controladores Indiretos e Coligados, nos termos da Resolução Normativa nº 948/2021, e da Lei nº 6.404/1976, observando as diretrizes estabelecidas na Nota Técnica Conjunta nº 7/2026-SGM-SCE-SFF/ANEEL, de 29 de maio de 2026, que subsidia este despacho- (vii) identifique, no caso concreto, os agentes que emitiram ações sem direito a voto com direitos econômicos superiores aos conferidos pelas ações com direito a voto, bem como realize a aferição da participação mínima de 30% no capital social, de acordo com a Nota Técnica Conjunta nº 7/2026-SGM-SCE-SFF/ANEEL, de 29 de maio de 2026, que subsidia este despacho, podendo-se utilizar a listagem exemplificativa dos documentos e informações apresentada a seguir: (vii.a) Estatuto Social da companhia atualizado- (vii.b) Composição acionária registrada no livro de registro de ações nominativas ou relatório de quadros societários- (vii.c) Acordos de Acionistas- (vii.d) Atas de Assembleias de Acionistas que deliberaram sobre a criação ou emissão de classes especiais de ações- (vii.e) Documentos registrados ou arquivados em órgãos oficiais- (vii.f) Comunicados públicos da empresa- (vii.g) Demonstrações Financeiras- (vii.h) Declarações formais da própria empresa, solicitadas pela CCEE- (viii) considere como a referência temporal a ser verificada, transcorridos sessenta dias da data de publicação da Lei nº 15.269/202",
    "tipo_item": "Deliberação",
@@ -19166,6 +19232,36 @@
       "Agnes Maria de Aragão da Costa",
       "Gentil Nogueira de Sá Júnior"
      ]
+    },
+    {
+     "parte": "IV",
+     "acao": "observe, para fins de equiparação a autoprodutor de consumidor que possua demanda contratada agregada igual ou superior a 30.000 kW (trinta mil quilowatts), que todas as unidades de consumo agregadas tenham demanda individual igual ou superior a 3.000 kW (três mil quilowatts)",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "V",
+     "acao": "solicite dos consumidores que foram efetivamente equiparados a autoprodutores em data anterior à publicação da Lei nº 15.269/2025, sob a égide da Lei nº 11.488/2007, caso necessário, a regularizar sua situação com vistas ao atendimento dos critérios estabelecidos nos §§ 5º e 6º do art. 16-B da Lei nº 9.074/1995",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "VI",
+     "acao": "avalie, no caso concreto, as qualificações de Grupo Econômico, Controladores Diretos, Controladores Indiretos e Coligados, nos termos da Resolução Normativa nº 948/2021, e da Lei nº 6.404/1976, observando as diretrizes estabelecidas na Nota Técnica Conjunta nº 7/2026-SGM-SCE-SFF/ANEEL, de 29 de maio de 2026, que subsidia este despacho",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "VII",
+     "acao": "identifique, no caso concreto, os agentes que emitiram ações sem direito a voto com direitos econômicos superiores aos conferidos pelas ações com direito a voto, bem como realize a aferição da participação mínima de 30% no capital social, de acordo com a Nota Técnica Conjunta nº 7/2026-SGM-SCE-SFF/ANEEL, de 29 de maio de 2026, que subsidia este despacho, podendo-se utilizar a listagem exemplificativa dos documentos e informações apresentada a seguir: (vii.a) Estatuto Social da companhia atualizado- (vii.b) Composição acionária registrada no livro de registro de ações nominativas ou relatório de quadros societários- (vii.c) Acordos de Acionistas- (vii.d) Atas de Assembleias de Acionistas que deliberaram sobre a criação ou emissão de classes especiais de ações- (vii.e) Documentos registrados ou arquivados em órgãos oficiais- (vii.f) Comunicados públicos da empresa- (vii.g) Demonstrações Financeiras- (vii.h) Declarações formais da própria empresa, solicitadas pela CCEE",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "VIII",
+     "acao": "considere como a referência temporal a ser verificada, transcorridos sessenta dias da data de publicação da Lei nº 15.269/202",
+     "modo": "unanimidade",
+     "vencidos": []
     }
    ],
    "ato": "Despacho nº 2414",
@@ -19386,7 +19482,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Confederação Nacional das Cooperativas de Infraestrutura – Infracoop",
    "assunto": "Pedido de Medida Cautelar protocolado pela Confederação Nacional das Cooperativas de Infraestrutura – Infracoop com vistas a que seja caracterizada como involuntária quaisquer exposições das Permissionárias de Serviço Público de Distribuição de Energia Elétrica representadas referentes aos Contratos de Compra e Venda de Energia Elétrica – CCVEEs no Mercado de Curto Prazo – MCP, para fins de constituição de créditos da Conta de Compensação de Variação de Valores de Itens da Parcela A – CVA do próximo evento tarifário e afastamento de eventuais penalidades das Requerentes.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) FLEXIBILIZADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) FLEXIBILIZADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar protocolado pela Confederação Nacional das Cooperativas de Infraestrutura – Infracoop com vistas a caracterizar como involuntária qualquer exposição ao Mecanismo de Curto Prazo – MCP que possam vir a experimentar as permissionárias ora representadas, nos termos da regulação vigente, eximindo-as de quaisquer penalidades e sanções, assim como para que possam constituir créditos de Conta de Compensação de Variação de Valores de Itens da Parcela A – CVA para o próximo evento tarifário, para, no mérito, negar-lhe provimento- e (ii) flexibilizar os prazos de processamento para a realização de um certame por permissionária até o final do mês de agosto de 2026, de que se trata o item 28 do Submódulo 11.1 dos Procedimentos de Regulação Tarifária – PRORET e da Resolução Normativa nº 1.009/2022 (mínimo de 7 dias entre a publicação do edital e a realização do certame) para fins de realização desse procedimento simplificado.\nO Diretor-Geral, Sandoval de Araújo Feitosa Neto, estava ausente no momento da deliberação deste processo, tendo a reunião sido presidida pelo Diretor Gentil Nogueira de Sá Júnior.\nApesar de ausente, o Diretor-Geral, Sandoval de Araújo Feitosa Neto, consignou seu voto no sentido de acompanhar o voto do Diretor-Relator, nos termos do art. 50, § 4º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nO processo acima foi destacado do bloco da pauta em decorrência da admissão de sustentação oral, nos termos do art. 45, § 3º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nHouve sustentação oral por parte do Sr. Wanderson Silva de Menezes, representante da Confederação Nacional das Cooperativas de Infraestrutura – Infracoop.",
    "tipo_item": "Deliberação",
@@ -19712,7 +19808,7 @@
    "relator": "Agnes Maria de Aragão da Costa",
    "interessado": "Companhia Energética do Rio Grande do Norte – Cosern",
    "assunto": "Recurso Administrativo interposto pela Companhia Energética do Rio Grande do Norte – Cosern contra o Despacho nº 3.801/2024, emitido pela Superintendência de Regulação dos Serviços de Transmissão e Distribuição de Energia Elétrica – STD, que indeferiu o pleito interposto pela Recorrente de reconhecimento dos eventos ocorridos na linha de 69 kV, interligando as Subestações de Macau e Guamaré, como caso fortuito externo, com a consequente exclusão dos impactos nos indicadores de continuidade- e de autorização para expurgar os efeitos das referidas ocorrências da apuração dos indicadores e das compensações aos clientes atendidos nessa linha.",
-   "resultado": "CONHECIDO (unanimidade)",
+   "resultado": "CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pela Companhia Energética do Rio Grande do Norte – Cosern contra o Despacho nº 3.801/2024, emitido pela Superintendência de Regulação dos Serviços de Transmissão e Distribuição de Energia Elétrica – STD, que indeferiu o pleito interposto pela Recorrente de reconhecimento dos eventos ocorridos na linha de 69 kV, interligando as Subestações de Macau e Guamaré, como caso fortuito externo, com a consequente exclusão dos impactos nos indicadores de continuidade- e de autorização para expurgar os efeitos das referidas ocorrências da apuração dos indicadores e das compensações aos clientes atendidos nessa linha, para, no mérito, negar-lhe provimento.\nA Diretora-Relatora, Agnes Maria de Aragão da Costa, disponibilizou seu voto no endereço eletrônico da Agência, nos termos do art. 42 da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).",
    "tipo_item": "Deliberação",
@@ -20022,7 +20118,7 @@
    "relator": "Gentil Nogueira de Sá Júnior",
    "interessado": "Neoenergia Guanabara Transmissão de Energia S.A",
    "assunto": "Pedido de Medida Cautelar protocolado pela Neoenergia Guanabara Transmissão de Energia S.A. com vistas a suspender as deduções por Pendência Impeditiva de Terceiros – PIT aplicadas pelo Operador Nacional do Sistema Elétrico – ONS referentes aos Termos de Liberação de Receita – TLRs nº 99 a 111 e nº 121, todos de 2026, até a análise de mérito do requerimento de revisão dos TLRs.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) ENCAMINHADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) ENCAMINHADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar formulado pela Neoenergia Guanabara Transmissão de Energia S.A., com vistas à suspensão da aplicação e dos efeitos financeiros decorrentes dos Termos de Liberação de Receita – TLR nº 099 a 111/2026 e nº 121/2026, emitidos pelo Operador Nacional do Sistema Elétrico – ONS e, no mérito, negar-lhe provimento- (ii) encaminhar o processo para a Superintendência de Regulação dos Serviços de Transmissão e Distribuição de Energia Elétrica – STD, para que proceda à análise de mérito do requerimento.",
    "tipo_item": "Deliberação",
@@ -20970,7 +21066,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "",
    "assunto": "Análise dos contratos firmados entre comercializadoras e distribuidoras de pequeno porte.",
-   "resultado": "I) APROVADO (unanimidade) | II) DETERMINAÇÃO (unanimidade) | III) DETERMINAÇÃO (unanimidade) | IV) APROVADO + VALORADO (unanimidade)",
+   "resultado": "I) APROVADO (unanimidade) | II) DETERMINAÇÃO (unanimidade) | III) ESTABELECIDO (unanimidade) | IV) DETERMINAÇÃO (unanimidade) | V) APROVADO + VALORADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) aprovar a resolução dos 19 Contratos Bilaterais Regulados celebrados entre os 17 agentes de distribuição de energia elétrica e a Electra Comercializadora de Energia Ltda., nos termos do voto do Diretor-Relator- (ii) determinar que as distribuidoras de pequeno porte e permissionárias com contratos celebrados com a Electra Comercializadora de Energia Ltda. apurem e informem à ANEEL, no prazo máximo de 30 (trinta) dias, contados da formalização da resolução contratual, os valores devidos a título de penalidades contratuais e de eventuais perdas e danos decorrente dos Contratos Bilaterais Regulados, acompanhados das respectivas memórias de cálculo, para fins de validação pela Agência- (iiii) estabelecer que os valores das penalidades contratuais e eventuais perdas e danos devidos pela Electra Comercializadora de Energia Ltda. deverão ser habilitados, quando cabível, no processo de recuperação judicial da empresa, observando-se o regime jurídico concursal previsto na Lei nº 11.101/2005, bem como as determinações do juízo competente, ficando sua satisfação sujeita aos termos e condições estabelecidos no âmbito da respectiva recuperação judicial- (iv) determinar que a consideração tarifária dos valores referidos no item anterior ocorra exclusivamente à medida de sua efetiva recuperação, hipótese em que a Superintendência de Gestão Tarifária e Regulação Econômica – STR deverá promover a reversão dos valores em favor da modicidade tarifária- e (v) aprovar o tratamento regulatório excepcional, a ser aplicado nos processos tarifários das permissionárias e concessionárias de distribuição com mercado anual inferior a 700 GWh, para fins de adequar a cobertura tarifária desconsiderando os valores de tais contratos bilaterais de energia, valorando-se o montante correspondente ao déficit de energia necessário ao atendimento a seu mercado, conforme pleito da distribuidora no âmbito do processo tarifário limitado ao Valor Anual de Referência – VR, definido no Despacho nº 3.176/2024.\nHouve apresentação técnica por parte do servidor Lucas Morais Nascimento, da Superintendência de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica – SGM.",
    "tipo_item": "Deliberação",
@@ -20985,23 +21081,28 @@
     },
     {
      "parte": "II",
-     "acao": "determinar que as distribuidoras de pequeno porte e permissionárias com contratos celebrados com a Electra Comercializadora de Energia Ltda. apurem e informem à ANEEL, no prazo máximo de 30 (trinta) dias, contados da formalização da resolução contratual, os valores devidos a título de penalidades contratuais e de eventuais perdas e danos decorrente dos Contratos Bilaterais Regulados, acompanhados das respectivas memórias de cálculo, para fins de validação pela Agência- (iiii) estabelecer que os valores das penalidades contratuais e eventuais perdas e danos devidos pela Electra Comercializadora de Energia Ltda. deverão ser habilitados, quando cabível, no processo de recuperação judicial da empresa, observando-se o regime jurídico concursal previsto na Lei nº 11.101/2005, bem como as determinações do juízo competente, ficando sua satisfação sujeita aos termos e condições estabelecidos no âmbito da respectiva recuperação judicial",
+     "acao": "determinar que as distribuidoras de pequeno porte e permissionárias com contratos celebrados com a Electra Comercializadora de Energia Ltda. apurem e informem à ANEEL, no prazo máximo de 30 (trinta) dias, contados da formalização da resolução contratual, os valores devidos a título de penalidades contratuais e de eventuais perdas e danos decorrente dos Contratos Bilaterais Regulados, acompanhados das respectivas memórias de cálculo, para fins de validação pela Agência",
      "modo": "unanimidade",
      "vencidos": []
     },
     {
      "parte": "III",
-     "acao": "determinar que a consideração tarifária dos valores referidos no item anterior ocorra exclusivamente à medida de sua efetiva recuperação, hipótese em que a Superintendência de Gestão Tarifária e Regulação Econômica – STR deverá promover a reversão dos valores em favor da modicidade tarifária",
+     "acao": "estabelecer que os valores das penalidades contratuais e eventuais perdas e danos devidos pela Electra Comercializadora de Energia Ltda. deverão ser habilitados, quando cabível, no processo de recuperação judicial da empresa, observando-se o regime jurídico concursal previsto na Lei nº 11.101/2005, bem como as determinações do juízo competente, ficando sua satisfação sujeita aos termos e condições estabelecidos no âmbito da respectiva recuperação judicial",
      "modo": "unanimidade",
      "vencidos": [],
-     "nota": "marcador do texto: (iv)"
+     "nota": "marcador do texto: (iiii)"
     },
     {
      "parte": "IV",
+     "acao": "determinar que a consideração tarifária dos valores referidos no item anterior ocorra exclusivamente à medida de sua efetiva recuperação, hipótese em que a Superintendência de Gestão Tarifária e Regulação Econômica – STR deverá promover a reversão dos valores em favor da modicidade tarifária",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "V",
      "acao": "aprovar o tratamento regulatório excepcional, a ser aplicado nos processos tarifários das permissionárias e concessionárias de distribuição com mercado anual inferior a 700 GWh, para fins de adequar a cobertura tarifária desconsiderando os valores de tais contratos bilaterais de energia, valorando-se o montante correspondente ao déficit de energia necessário ao atendimento a seu mercado, conforme pleito da distribuidora no âmbito do processo tarifário limitado ao Valor Anual de Referência – VR, definido no Despacho nº 3.176/2024.",
      "modo": "unanimidade",
-     "vencidos": [],
-     "nota": "marcador do texto: (v)"
+     "vencidos": []
     }
    ],
    "ato": "Despacho nº 2556",
@@ -21569,7 +21670,7 @@
    "relator": "Gentil Nogueira de Sá Júnior",
    "interessado": "EDP São Paulo Distribuição de Energia S.A",
    "assunto": "Pedido de Medida Cautelar protocolado pela EDP São Paulo Distribuição de Energia S.A. com vistas a suspender as cobranças de Adicional de Encargos de Uso do Sistema de Transmissão – ADCEUST e da Parcela de Ineficiência por Ultrapassagem – PIU, emitidas pelo Operador Nacional do Sistema Elétrico – ONS, decorrentes de ultrapassagens do Montante de Uso do Sistema de Transmissão – MUST pela Requerente verificadas nos meses de janeiro, fevereiro e março de 2026, bem como dos meses vincendos de abril a dezembro de 2026 impactados pelas restrições na contratação de MUST, até a análise de mérito do requerimento.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) ENCAMINHADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) ENCAMINHADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar formulado pela EDP São Paulo Distribuição de Energia S.A. com vistas a suspender as cobranças de Adicional de Encargos de Uso do Sistema de Transmissão – ADCEUST e da Parcela de Ineficiência por Ultrapassagem – PIU, emitidas pelo Operador Nacional do Sistema Elétrico – ONS, decorrentes de ultrapassagens do Montante de Uso do Sistema de Transmissão – MUST no ano de 2026 e, no mérito, negar-lhe provimento- e (ii) encaminhar o processo para a Superintendência de Regulação dos Serviços de Transmissão e Distribuição de Energia Elétrica – STD, para que proceda à análise de mérito do requerimento.",
    "tipo_item": "Deliberação",
@@ -22202,7 +22303,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "empresas Interligação Elétrica do Madeira S.A",
    "assunto": "Pedidos de Medida Cautelar protocolados pelas empresas Interligação Elétrica do Madeira S.A. – IE Madeira, Interligação Elétrica Garanhuns S.A. – IE Garanhuns, Tropicália Transmissora de Energia S.A. e Transmissora Aliança de Energia S.A. – Taesa, com vistas à manutenção da cobertura tarifária integral da Receita Anual Permitida – RAP das Recorrentes, referente ao ciclo tarifário 2026-2027, mediante abstenção, pela ANEEL, de descontos, glosas ou exclusões até o julgamento definitivo do mérito dos Pedidos de Reconsideração, bem como à inclusão, pelo Operador Nacional do Sistema Elétrico – ONS, do crédito das Recorrentes nas ações judiciais em andamento, por meio de emendas às iniciais.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) CONHECIDO (unanimidade) | III) CONHECIDO (unanimidade) | IV) CONHECIDO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) CONHECIDO (unanimidade) | III) CONHECIDO (unanimidade) | IV) CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar protocolado pela Interligação Elétrica do Madeira S.A. – IE Madeira, com vistas a determinar que a ANEEL se abstenha de efetuar qualquer desconto glosa ou exclusão na Receita Anual Permitida – RAP de usinas da Recorrente para o ciclo tarifário 2026-2027, mantendo a cobertura tarifária integral até o julgamento definitivo de mérito, para, no mérito, negar-lhe provimento- (ii) conhecer dos Pedidos de Medida Cautelar protocolados pela Interligação Elétrica Garanhuns S.A. – IE Garanhuns com vistas a: (ii.a) determinar que a ANEEL se abstenha de efetuar qualquer desconto glosa ou exclusão na RAP para o ciclo tarifário 2026-2027, mantendo a cobertura tarifária integral até o julgamento definitivo de mérito- e (ii.b) determinar que o Operador Nacional do Sistema Elétrico – ONS seja compelido a incluir o crédito da Recorrente, por meio de emenda à inicial, nas ações judiciais referentes às UFVs Altitude 1 e Altitude 11 a 15, para, no mérito, negar-lhes provimento- (iii) conhecer dos Pedidos de Medida Cautelar protocolados pela Tropicália Transmissora de Energia S.A com vistas a: (iii.a) determinar que a ANEEL se abstenha de efetuar qualquer desconto glosa ou exclusão na RAP para o ciclo tarifário 2026-2027, mantendo a cobertura tarifária integral até o julgamento definitivo de mérito- e (iii.b) determinar que o ONS inclua na RAP da Recorrente, Ciclo 2026-2027, os créditos advindos das ações judiciais referentes às Usinas Fotovoltaicas – UFVs Autora 54 a 63, para, no mérito, negar-lhes provimento- e (iv) conhecer do Pedido de Medida Cautelar protocolado pela Transmissora Aliança de Energia S.A. com vistas a para determinar ao ONS que promova imediatamente a inclusão dos créditos da Recorrente, mediante emenda às petições iniciais das ações judiciais já ajuizadas em face dos Usuários inadimplentes Aurora (CUSTs nº 45/2022 a nº 51/2022 e nº 53/2022) e Delio Bernardino (CUSTs nº 255/2021 e nº 256/2021), para, no mérito, negar-lhes provimento.\nHouve sustentação oral, conjuntamente para os itens 10 e 11, por parte da Sra. Ana Beatriz Dias Sousa, representante da Interligação Elétrica do Madeira S.A. – IE Madeira, Interligação Elétrica Garanhuns S.A. – IE Garanhuns, Tropicália Transmissora de Energia S.A. e Transmissora Aliança de Energia S.A. – Taesa. A manifestação foi realizada por vídeo, nos termos do art. 45, § 4º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nO processo será incluído na pauta da reunião pública ordinária subsequente para ratificação de decisão, tendo em vista o recebimento de solicitação de sustentação oral, nos termos do § 10 do art. 63 da Norma de Organização ANEEL nº 1.",
    "tipo_item": "Deliberação",
@@ -22250,7 +22351,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Interligação Elétrica do Madeira S.A",
    "assunto": "Pedido de Medida Cautelar protocolado pela Interligação Elétrica do Madeira S.A. – IE Madeira com vistas a determinar que o Operador Nacional do Sistema Elétrico – ONS inclua no cálculo da Receita Anual Permitida – RAP da Recorrente, Ciclo 2026-2027, os créditos advindos das ações judiciais referentes às Usinas Fotovoltaicas – UFVs Altitude 2 a 6, Altitude 8 a 13 e Altitude 15 a 19.",
-   "resultado": "CONHECIDO (unanimidade)",
+   "resultado": "CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu conhecer do Pedido de Medida Cautelar protocolado pela Interligação Elétrica do Madeira S.A. – IE Madeira com vistas a determinar que o Operador Nacional do Sistema Elétrico – ONS inclua no cálculo da Receita Anual Permitida – RAP da Recorrente, Ciclo 2026-2027, os créditos advindos das ações judiciais referentes às Usinas Fotovoltaicas – UFVs Altitude 2 a 6, Altitude 8 a 13 e Altitude 15 a 19, para, no mérito, negar-lhe provimento.\nHouve sustentação oral, conjuntamente para os itens 10 e 11, por parte da Sra. Ana Beatriz Dias Sousa, representante da Interligação Elétrica do Madeira S.A. – IE Madeira. A manifestação foi realizada por vídeo, nos termos do art. 45, § 4º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nO processo será incluído na pauta da reunião pública ordinária subsequente para ratificação de decisão, tendo em vista o recebimento de solicitação de sustentação oral, nos termos do § 10 do art. 63 da Norma de Organização ANEEL nº 1.",
    "tipo_item": "Deliberação",
@@ -22280,7 +22381,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Centrais Elétricas da Paraíba – Epasa",
    "assunto": "Pedido de Medida Cautelar protocolado pelas Centrais Elétricas da Paraíba – Epasa com vistas à antecipação do término de vigência da outorga de autorização para implantação e exploração das Usinas Termoelétricas – UTE Termonordeste e UTE Termoparaíba, para fins de suspensão do pagamento dos encargos rescisórios referentes ao Contrato de Uso do Sistema de Transmissão – CUST nº 34/2010 até a análise de mérito do requerimento.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) ENCAMINHADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) ENCAMINHADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar protocolado pelas Centrais Elétricas da Paraíba – Epasa com vistas à antecipação do término de vigência da outorga de autorização para implantação e exploração das Usinas Termoelétricas – UTE Termonordeste e UTE Termoparaíba, para fins de suspensão do pagamento dos encargos rescisórios referentes ao Contrato de Uso do Sistema de Transmissão – CUST nº 034/2010 até a análise de mérito do requerimento, para, no mérito, negar-lhe provimento- e (ii) encaminhar o processo à Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE para a análise de mérito da matéria.",
    "tipo_item": "Deliberação",
@@ -22795,7 +22896,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "empresas Interligação Elétrica do Madeira S.A",
    "assunto": "Ratificação da decisão proferida no 12º Circuito Deliberativo Público Ordinário de 2026, referente aos Pedidos de Medida Cautelar protocolados pelas empresas Interligação Elétrica do Madeira S.A. – IE Madeira, Interligação Elétrica Garanhuns S.A. – IE Garanhuns, Tropicália Transmissora de Energia S.A. e Transmissora Aliança de Energia S.A. – Taesa, com vistas à manutenção da cobertura tarifária integral da Receita Anual Permitida – RAP das Recorrentes, referente ao ciclo tarifário 2026-2027, mediante abstenção, pela ANEEL, de descontos, glosas ou exclusões até o julgamento definitivo do mérito dos Pedidos de Reconsideração, bem como à inclusão, pelo Operador Nacional do Sistema Elétrico – ONS, do crédito das Recorrentes nas ações judiciais em andamento, por meio de emendas às iniciais.",
-   "resultado": "RATIFICADO → I) CONHECIDO (unanimidade) | II) CONHECIDO (unanimidade) | III) CONHECIDO (unanimidade) | IV) CONHECIDO (unanimidade)",
+   "resultado": "RATIFICADO → I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) CONHECIDO (unanimidade) | III) CONHECIDO (unanimidade) | IV) CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu ratificar a decisão proferida no 12º Circuito Deliberativo Público Ordinário de 2026 (item 10), realizado em 21 de julho de 2026, no sentindo de: (i) conhecer do Pedido de Medida Cautelar protocolado pela Interligação Elétrica do Madeira S.A. – IE Madeira, com vistas a determinar que a ANEEL se abstenha de efetuar qualquer desconto glosa ou exclusão na Receita Anual Permitida – RAP de usinas da Recorrente para o ciclo tarifário 2026-2027, mantendo a cobertura tarifária integral até o julgamento definitivo de mérito, para, no mérito, negar-lhe provimento- (ii) conhecer dos Pedidos de Medida Cautelar protocolados pela Interligação Elétrica Garanhuns S.A. – IE Garanhuns com vistas a: (ii.a) determinar que a ANEEL se abstenha de efetuar qualquer desconto glosa ou exclusão na RAP para o ciclo tarifário 2026-2027, mantendo a cobertura tarifária integral até o julgamento definitivo de mérito- e (ii.b) determinar que o Operador Nacional do Sistema Elétrico – ONS seja compelido a incluir o crédito da Recorrente, por meio de emenda à inicial, nas ações judiciais referentes às UFVs Altitude 1 e Altitude 11 a 15, para, no mérito, negar-lhes provimento- (iii) conhecer dos Pedidos de Medida Cautelar protocolados pela Tropicália Transmissora de Energia S.A com vistas a: (iii.a) determinar que a ANEEL se abstenha de efetuar qualquer desconto glosa ou exclusão na RAP para o ciclo tarifário 2026-2027, mantendo a cobertura tarifária integral até o julgamento definitivo de mérito- e (iii.b) determinar que o ONS inclua na RAP da Recorrente, Ciclo 2026-2027, os créditos advindos das ações judiciais referentes às Usinas Fotovoltaicas – UFVs Aurora 54 a 63, para, no mérito, negar-lhes provimento- e (iv) conhecer do Pedido de Medida Cautelar protocolado pela Transmissora Aliança de Energia S.A. com vistas a para determinar ao ONS que promova imediatamente a inclusão dos créditos da Recorrente, mediante emenda às petições iniciais das ações judiciais já ajuizadas em face dos Usuários inadimplentes Aurora (CUSTs nº 45/2022 a nº 51/2022 e nº 53/2022) e Delio Bernardino (CUSTs nº 255/2021 e nº 256/2021), para, no mérito, negar-lhes provimento.\nO processo acima foi destacado do bloco da pauta em decorrência da admissão de sustentação oral, nos termos do art. 45, § 3º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nHouve sustentação oral, conjuntamente para os itens 42 e 43, por parte da Sra. Ana Beatriz Dias Sousa, representante das empresas Interligação Elétrica do Madeira S.A. – IE Madeira, Interligação Elétrica Garanhuns S.A. – IE Garanhuns, Tropicália Transmissora de Energia S.A. e Transmissora Aliança de Energia S.A. – Taesa.",
    "tipo_item": "Deliberação",
@@ -22843,7 +22944,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Interligação Elétrica do Madeira S.A",
    "assunto": "Ratificação da decisão proferida no 12º Circuito Deliberativo Público Ordinário de 2026, referente ao Pedido de Medida Cautelar protocolado pela Interligação Elétrica do Madeira S.A. – IE Madeira com vistas a determinar que o Operador Nacional do Sistema Elétrico – ONS inclua no cálculo da Receita Anual Permitida – RAP da Recorrente, Ciclo 2026-2027, os créditos advindos das ações judiciais referentes às Usinas Fotovoltaicas – UFVs Altitude 2 a 6, Altitude 8 a 13 e Altitude 15 a 19.",
-   "resultado": "RATIFICADO + CONHECIDO (unanimidade)",
+   "resultado": "RATIFICADO + CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu ratificar a decisão proferida no 12º Circuito Deliberativo Público Ordinário de 2026 (item 11), realizado em 21 de julho de 2026, no sentindo de conhecer do Pedido de Medida Cautelar protocolado pela Interligação Elétrica do Madeira S.A. – IE Madeira com vistas a determinar que o Operador Nacional do Sistema Elétrico – ONS inclua no cálculo da Receita Anual Permitida – RAP da Recorrente, Ciclo 2026-2027, os créditos advindos das ações judiciais referentes às Usinas Fotovoltaicas – UFVs Altitude 2 a 6, Altitude 8 a 13 e Altitude 15 a 19, para, no mérito, negar-lhe provimento.\nO processo acima foi destacado do bloco da pauta em decorrência da admissão de sustentação oral, nos termos do art. 45, § 3º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nHouve sustentação oral, conjuntamente para os itens 42 e 43, por parte da Sra. Ana Beatriz Dias Sousa, representante das empresas Interligação Elétrica do Madeira S.A. – IE Madeira, Interligação Elétrica Garanhuns S.A. – IE Garanhuns, Tropicália Transmissora de Energia S.A. e Transmissora Aliança de Energia S.A. – Taesa.",
    "tipo_item": "Deliberação",
@@ -24292,7 +24393,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Duo Comercializadora de Energia Elétrica Ltda",
    "assunto": "Pedido de Reconsideração interposto pela Duo Comercializadora de Energia Elétrica Ltda. contra o Despacho nº 947/2026, que manteve o Termo de Intimação nº 38/2025, lavrado pela Superintendência de Fiscalização Econômica, Financeira e de Mercado – SFF, de modo a revogar a outorga da Recorrente.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) DETERMINAÇÃO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO (unanimidade) | II) DETERMINAÇÃO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Reconsideração interposto pela Duo Comercializadora de Energia Elétrica Ltda. contra o Despacho nº 947/2026, que manteve o Termo de Intimação nº 38/2025, lavrado pela Superintendência de Fiscalização Econômica, Financeira e de Mercado – SFF, de modo a revogar a outorga da Recorrente, para, no mérito, dar-lhe provimento- e (ii) determinar que a SFF, no âmbito dos processos de fiscalização e monitoramento, verifique eventuais necessidades de instauração de processo administrativo punitivo.",
    "tipo_item": "Deliberação",
@@ -27226,7 +27327,7 @@
    "relator": "Gentil Nogueira de Sá Júnior",
    "interessado": "Cooperativa de Geração de Energia e Desenvolvimento – Coprel",
    "assunto": "Pedidos de Medidas Cautelares protocolados pela Cooperativa de Geração de Energia e Desenvolvimento – Coprel com vistas a impedir a produção de efeitos definitivos das decisões contidas no Despacho nº 2.130/2026, emitido pela Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE e pela Superintendência de Fiscalização Técnica dos Serviços de Energia Elétrica – SFT, e no Despacho nº 2.131/2026, emitido pela SCE, até a análise dos Recursos Administrativos interpostos pela Requerente, referentes a excludente de responsabilidade e alteração de cronograma de implantação da Pequena Central Hidrelétrica – PCH Santo Antônio do Jacuí.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) ENCAMINHADO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) ENCAMINHADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer dos Pedidos de Medida Cautelar formulados pela Cooperativa de Geração de Energia e Desenvolvimento – Coprel, com vistas à suspensão dos efeitos dos Despachos nº 2.130/2026 e nº 2.131/2026 e, no mérito, negar-lhes provimento- e (ii) encaminhar os processos para a Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE e para a Superintendência de Fiscalização Técnica dos Serviços de Energia Elétrica – SFT, para que procedam à análise de mérito dos requerimentos.\nA Diretora Ludimila Lima da Silva declarou seu impedimento em deliberar neste processo, nos termos do art. 7º, inciso II, da Norma de Organização nº 1 (Resolução Normativa nº 1.133/2025).",
    "tipo_item": "Deliberação",
@@ -28387,7 +28488,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Deputada Federal Delegada Adriana Accorsi",
    "assunto": "Requerimento Administrativo protocolado pela Deputada Federal Delegada Adriana Accorsi com vistas à suspensão imediata da obra e à reavaliação da Resolução Autorizativa nº 11.627/2022, que declarou de utilidade pública, para fins de instituição de servidão administrativa, em favor da Equatorial Goiás Distribuidora de Energia S.A., as áreas de terra necessárias à passagem da Linha de Distribuição Anhanguera – Riviera, localizada nos municípios de Aparecida de Goiânia e Goiânia, estado de Goiás.",
-   "resultado": "CONHECIDO (unanimidade)",
+   "resultado": "CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu conhecer do Requerimento Administrativo protocolado pela Deputada Federal Delegada Adriana Accorsi com vistas à suspensão imediata da obra e à reavaliação da Resolução Autorizativa nº 11.627/2022, que declarou de utilidade pública, para fins de instituição de servidão administrativa, em favor da Equatorial Goiás Distribuidora de Energia S.A., as áreas de terra necessárias à passagem da Linha de Distribuição Anhanguera – Riviera, localizada nos municípios de Aparecida de Goiânia e Goiânia, estado de Goiás, para, no mérito, negar-lhe provimento.",
    "tipo_item": "Deliberação",
@@ -29787,7 +29888,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "Powertech Engenharia Serviços e Locações de Geradores de Energia",
    "assunto": "Requerimentos Administrativos protocolados pela Powertech Engenharia Serviços e Locações de Geradores de Energia, Máquinas e Equipamentos S.A., pela Aggreko Energia Locação de Geradores Ltda. e pela Oliveira Energia S.A. com vistas ao reconhecimento de custos extraordinários referentes a ações de contingências para atendimento energético durante o período dos efeitos do El Niño no ano de 2026 no estado do Amazonas.",
-   "resultado": "I) CONHECIDO + PROVIMENTO PARCIAL (unanimidade) | II) APROVADO (unanimidade) | III) DETERMINAÇÃO (unanimidade) | IV) CONDICIONAR A LIBERAÇÃO DOS RECURSOS À COMPROVAÇÃO… (unanimidade) | V) ESTABELECIDO (unanimidade) | VI) DETERMINAÇÃO (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO PARCIAL (unanimidade) | II) APROVADO (unanimidade) | III) DETERMINAÇÃO (unanimidade) | IV) CONDICIONADO (unanimidade) | V) ESTABELECIDO (unanimidade) | VI) DETERMINAÇÃO (unanimidade) | VII) ESTABELECIDO (unanimidade) | VIII) DETERMINAÇÃO (unanimidade) | IX) DETERMINAÇÃO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer e, no mérito, dar parcial provimento ao Requerimento Administrativo apresentado pela Powertech Engenharia Serviços e Locações de Geradores de Energia, Máquinas e Equipamentos S.A., pela Aggreko Energia Locação de Geradores Ltda. e pela Oliveira Energia S.A. com vistas ao reconhecimento de custos extraordinários referentes a ações de contingência para atendimento energético durante o período dos efeitos do El Niño no ano de 2026 no estado do Amazonas- (ii) aprovar, em caráter excepcional, a antecipação do reembolso dos custos de aquisição de combustível destinados à constituição de estoques estratégicos para enfrentamento da estiagem de 2026, observados os volumes estabelecidos para cada agente e localidade conforme a fundamentação do voto do Diretor-Relator- (iii) determinar que a Câmara de Comercialização de Energia Elétrica – CCEE efetue a antecipação financeira dos recursos até 21 de setembro de 2026, observados os limites de volume de combustível aprovados, correspondentes a 36.431.302 (trinta e seis milhões, quatrocentos e trinta e um mil, trezentos e dois) litros para a Aggreko Energia Locação de Geradores Ltda., 4.240.000 (quatro milhões, duzentos e quarenta mil) litros para a Powertech Engenharia, Serviços e Locações de Geradores de Energia, Máquinas e Equipamentos S.A., e 1.687.000 (um milhão, seiscentos e oitenta e sete mil) litros para a Oliveira Energia Geração e Serviços Ltda.- (iv) condicionar a liberação dos recursos à comprovação da aquisição dos volumes aprovados, mediante apresentação das respectivas notas fiscais emitidas pelo(s) fornecedor(es) de combustível, as quais deverão ser encaminhadas à CCEE até 18 de setembro de 2026- (v) estabelecer que o montante a ser antecipado fique limitado ao menor valor entre: (v.a) o valor comprovado por meio das notas fiscais apresentadas pelo Produtor Independente de Energia – PIE- e (v.b) o valor apurado pela CCEE com base nas parcelas vigentes que compõem o custo do combustível, observados os volumes de combustível indicados na nota fiscal e os montantes máximos admitidos para contingência- (vi) determinar que os PIEs efetuem a restituição integral dos valores antecipados à Conta de Consumo de Combustíveis – CCC em cinco parcelas mensais e iguais, atualizadas pelo IPCA, mediante compensação nos reembolsos ordinários do Custo Total de Geração – CTG. O referido desconto deverá ocorrer, preferencialmente, no reembolso preliminar solicitado pela distribuidora referente ao faturamento do PIE a partir da competência de setembro, paga em outubro de 2026. As parcelas a serem descontadas deverão ser atualizadas monetariamente pelo IPCA do mês anterior- (vii) estabelecer que eventual saldo remanescente não absorvido pelos reembolsos preliminares seja compensado nos reembolsos ordinários subsequentes, até a integral restituição dos valores antecipados à CCC- (viii) determinar que o PIE mantenha o faturamento regular de sua receita de venda de energia, inclusive da parcela referente ao combustível efetivamente consumido, em conformidade com as disposições contratuais e com a regulamentação aplicável- e (ix) determinar que a Superintendência de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica – SGM apresente, em até 180 dias, proposta de revisão da Resolução Normativa nº 1.016/2022, considerando: (ix.a) os valores regulatórios de consumo específico atualmente considerados pela ANEEL- e (ix.b) entre as alternativas regulatórias, a instalação de fluxômetros- (ix.c) na entrada dos tanques de armazenamento de combustível- e (ix.d) na entrada de combustível de cada unidade geradora, com vistas ao adequado acompanhamento, fiscalização e controle dos custos de combustíveis líquidos para as centrais geradoras termelétricas de fontes derivadas de petróleo, que atendem às localidades do sistema isolado.",
    "tipo_item": "Deliberação",
@@ -29826,7 +29927,25 @@
     },
     {
      "parte": "VI",
-     "acao": "determinar que os PIEs efetuem a restituição integral dos valores antecipados à Conta de Consumo de Combustíveis – CCC em cinco parcelas mensais e iguais, atualizadas pelo IPCA, mediante compensação nos reembolsos ordinários do Custo Total de Geração – CTG",
+     "acao": "determinar que os PIEs efetuem a restituição integral dos valores antecipados à Conta de Consumo de Combustíveis – CCC em cinco parcelas mensais e iguais, atualizadas pelo IPCA, mediante compensação nos reembolsos ordinários do Custo Total de Geração – CTG O referido desconto deverá ocorrer, preferencialmente, no reembolso preliminar solicitado pela distribuidora referente ao faturamento do PIE a partir da competência de setembro, paga em outubro de 2026 As parcelas a serem descontadas deverão ser atualizadas monetariamente pelo IPCA do mês anterior",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "VII",
+     "acao": "estabelecer que eventual saldo remanescente não absorvido pelos reembolsos preliminares seja compensado nos reembolsos ordinários subsequentes, até a integral restituição dos valores antecipados à CCC",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "VIII",
+     "acao": "determinar que o PIE mantenha o faturamento regular de sua receita de venda de energia, inclusive da parcela referente ao combustível efetivamente consumido, em conformidade com as disposições contratuais e com a regulamentação aplicável",
+     "modo": "unanimidade",
+     "vencidos": []
+    },
+    {
+     "parte": "IX",
+     "acao": "determinar que a Superintendência de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica – SGM apresente, em até 180 dias, proposta de revisão da Resolução Normativa nº 1.016/2022, considerando: (ix.a) os valores regulatórios de consumo específico atualmente considerados pela ANEEL- e (ix.b) entre as alternativas regulatórias, a instalação de fluxômetros- (ix.c) na entrada dos tanques de armazenamento de combustível- e (ix.d) na entrada de combustível de cada unidade geradora, com vistas ao adequado acompanhamento, fiscalização e controle dos custos de combustíveis líquidos para as centrais geradoras termelétricas de fontes derivadas de petróleo, que atendem às localidades do sistema isolado.",
      "modo": "unanimidade",
      "vencidos": []
     }
@@ -31561,7 +31680,7 @@
    "relator": "Willamy Moreira Frota",
    "interessado": "empresas Salgueiro I Energias Renováveis S.A",
    "assunto": "Recurso Administrativo, com Pedido de Medida Cautelar, interposto pelas empresas Salgueiro I Energias Renováveis S.A., Salgueiro II Energias Renováveis S.A. e Salgueiro III Energias Renováveis S.A. contra o Despacho nº 92/2026, emitido pela Superintendência de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica – SGM, que negou provimento à solicitação das Recorrentes de reforma de decisão do Operador Nacional do Sistema Elétrico – ONS que reclassificou a planta fotovoltaica de Salgueiro da modalidade de operação Tipo III para Tipo II-C.",
-   "resultado": "I) CONHECIDO (unanimidade) | II) PERDA DE OBJETO DECLARADA (unanimidade)",
+   "resultado": "I) CONHECIDO + PROVIMENTO NEGADO (unanimidade) | II) PERDA DE OBJETO DECLARADA (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu: (i) conhecer do Recurso Administrativo interposto pelas empresas Salgueiro I Energias Renováveis S.A., Salgueiro II Energias Renováveis S.A. e Salgueiro III Energias Renováveis S.A., com vistas à reforma de decisão do Operador Nacional do Sistema Elétrico – ONS que reclassificou a planta fotovoltaica de Salgueiro da modalidade de operação Tipo III para Tipo II-C e, no mérito, negar-lhe provimento, mantendo integralmente o Despacho nº 92/2026, emitido pela Superintendência de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica – SGM- e (ii) declarar a perda de objeto do Pedido de Medida Cautelar protocolado pelas empresas Salgueiro I Energias Renováveis S.A., Salgueiro II Energias Renováveis S.A. e Salgueiro III Energias Renováveis S.A.\nO processo acima foi destacado do bloco da pauta em decorrência da admissão de sustentação oral, nos termos do art. 45, § 3º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).\nHouve sustentação oral por parte da Sra. Ana Carolina Delamare, representante da Salgueiro I Energias Renováveis S.A.",
    "tipo_item": "Deliberação",
@@ -33353,7 +33472,7 @@
    "relator": "Ludimila Lima da Silva",
    "interessado": "Transnorte Energia S.A",
    "assunto": "Requerimento Administrativo protocolado pela Transnorte Energia S.A. – TNE com vistas à revisão da Receita Anual Permitida – RAP do Contrato de Concessão nº 3/2012-ANEEL em decorrência da alteração das alíquotas do ICMS nos estados do Amazonas e de Roraima.",
-   "resultado": "CONHECIDO (unanimidade)",
+   "resultado": "CONHECIDO + PROVIMENTO NEGADO (unanimidade)",
    "voto_doc": "",
    "decisao_texto": "A Diretoria, por unanimidade, decidiu conhecer do requerimento administrativo protocolado pela Transnorte Energia S.A. – TNE, com vistas à revisão da Receita Anual Permitida – RAP do Contrato de Concessão nº 3/2012-ANEEL, em decorrência da alteração das alíquotas do ICMS nos estados do Amazonas e de Roraima e, no mérito, negar-lhe provimento.",
    "tipo_item": "Deliberação",
@@ -34098,9 +34217,9 @@
    "processo": "48500.000100/2024-15",
    "deliberacao": "RPO1-6",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO1",
@@ -34111,6 +34230,16 @@
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
    "voto_por_parte": "única: RELATOR (voto proferido) [ex-diretor; voto proferido em reunião anterior e subsistente]"
+  },
+  {
+   "reuniao": "RPO1",
+   "data": "2026-01-20",
+   "processo": "48500.000100/2024-15",
+   "deliberacao": "RPO1-6",
+   "diretor": "Ludimila Lima da Silva",
+   "voto": "VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "única: VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1) [decisão por maioria] [ex-diretor; voto proferido em reunião anterior e subsistente]"
   },
   {
    "reuniao": "RPO1",
@@ -35548,9 +35677,9 @@
    "processo": "48500.000314/2023-01",
    "deliberacao": "RPO2-4",
    "diretor": "Willamy Moreira Frota",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO2",
@@ -35710,7 +35839,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "DIVERGIU na parte I",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: ACOMPANHOU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: ACOMPANHOU"
   },
   {
    "reuniao": "RPO2",
@@ -35828,9 +35957,9 @@
    "processo": "48500.001526/2023-05",
    "deliberacao": "RPO2-9",
    "diretor": "Ludimila Lima da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: DIVERGIU (divergência vencedora) [ex-diretor; voto proferido em reunião anterior e subsistente]"
   },
   {
    "reuniao": "RPO2",
@@ -36858,9 +36987,9 @@
    "processo": "48500.005864/2021-46",
    "deliberacao": "RPC1-2",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC1",
@@ -38138,9 +38267,9 @@
    "processo": "48500.002085/2019-74",
    "deliberacao": "RPO3-6",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU | IV: DIVERGIU | V: DIVERGIU | VI: DIVERGIU | VII: DIVERGIU | VIII: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido) | IV: DIVERGIU (voto vencido) | V: DIVERGIU (voto vencido) | VI: DIVERGIU (voto vencido) | VII: DIVERGIU (voto vencido) | VIII: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO3",
@@ -38888,9 +39017,9 @@
    "processo": "48500.000055/2013-38",
    "deliberacao": "RPO3-21",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU | IV: DIVERGIU | V: DIVERGIU | VI: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido) | IV: DIVERGIU (voto vencido) | V: DIVERGIU (voto vencido) | VI: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO3",
@@ -39640,7 +39769,7 @@
    "diretor": "Sandoval de Araújo Feitosa Neto",
    "voto": "DIVERGIU na parte II",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: DIVERGIU | III: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: DIVERGIU (voto vencido) | III: ACOMPANHOU"
   },
   {
    "reuniao": "RPO4",
@@ -39768,9 +39897,9 @@
    "processo": "48500.003331/2024-72",
    "deliberacao": "RPO4-9",
    "diretor": "Willamy Moreira Frota",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO4",
@@ -39808,9 +39937,9 @@
    "processo": "48500.000869/2024-25",
    "deliberacao": "RPO4-10",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO4",
@@ -39858,9 +39987,9 @@
    "processo": "48500.025814/2025-17",
    "deliberacao": "RPO4-11",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO4",
@@ -41490,7 +41619,7 @@
    "diretor": "Daniel Cardoso Danna",
    "voto": "RELATOR (prazo de vista prorrogado)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPC2",
@@ -41788,9 +41917,9 @@
    "processo": "48500.035017/2025-30",
    "deliberacao": "RPC2-6",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC2",
@@ -42318,9 +42447,9 @@
    "processo": "48500.028569/2025-91",
    "deliberacao": "RPO5-4",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido) | II: ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido)"
   },
   {
    "reuniao": "RPO5",
@@ -42328,9 +42457,9 @@
    "processo": "48500.028569/2025-91",
    "deliberacao": "RPO5-4",
    "diretor": "Willamy Moreira Frota",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (divergência vencedora) | II: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO5",
@@ -42488,9 +42617,9 @@
    "processo": "48500.039056/2025-14",
    "deliberacao": "RPO5-7",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO5",
@@ -42498,9 +42627,9 @@
    "processo": "48500.004885/2020-63",
    "deliberacao": "RPO5-8",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "SEM VOTO (retirado de pauta)",
+   "voto": "DIVERGIU (divergência parcial na decisão preliminar)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta"
+   "voto_por_parte": "preliminar: Para este ponto, o Diretor-Geral, Sandoval de Araújo Feitosa Neto, votou no sentido de tornar insubsistente apenas o item do voto do então Diretor-Relator relacionado à Outorga, por estar diretamente "
   },
   {
    "reuniao": "RPO5",
@@ -42508,9 +42637,9 @@
    "processo": "48500.004885/2020-63",
    "deliberacao": "RPO5-8",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta"
+   "voto": "ACOMPANHOU (decisão preliminar por maioria; por exclusão)",
+   "proveniencia": "inferido",
+   "voto_por_parte": "preliminar: maioria"
   },
   {
    "reuniao": "RPO5",
@@ -42518,9 +42647,9 @@
    "processo": "48500.004885/2020-63",
    "deliberacao": "RPO5-8",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta"
+   "voto": "ACOMPANHOU (decisão preliminar por maioria; por exclusão)",
+   "proveniencia": "inferido",
+   "voto_por_parte": "preliminar: maioria"
   },
   {
    "reuniao": "RPO5",
@@ -42528,9 +42657,9 @@
    "processo": "48500.004885/2020-63",
    "deliberacao": "RPO5-8",
    "diretor": "Willamy Moreira Frota",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta"
+   "voto": "ACOMPANHOU (decisão preliminar por maioria; por exclusão)",
+   "proveniencia": "inferido",
+   "voto_por_parte": "preliminar: maioria"
   },
   {
    "reuniao": "RPO5",
@@ -42538,9 +42667,9 @@
    "processo": "48500.004885/2020-63",
    "deliberacao": "RPO5-8",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta"
+   "voto": "ACOMPANHOU (decisão preliminar por maioria; por exclusão)",
+   "proveniencia": "inferido",
+   "voto_por_parte": "preliminar: maioria"
   },
   {
    "reuniao": "RPO5",
@@ -42548,9 +42677,9 @@
    "processo": "48500.004885/2020-63",
    "deliberacao": "RPO5-8",
    "diretor": "Daniel Cardoso Danna",
-   "voto": "SEM VOTO (retirado de pauta)",
+   "voto": "RELATOR (voto anterior declarado INSUBSISTENTE por esta decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "preliminar: VOTO DE DANIEL DANNA DECLARADO INSUBSISTENTE [ex-diretor; o texto trata da INSUBSISTÊNCIA de voto(s) anterior(es); não há voto subsistente]"
   },
   {
    "reuniao": "RPO5",
@@ -43410,7 +43539,7 @@
    "diretor": "Ludimila Lima da Silva",
    "voto": "RELATOR (prazo de vista prorrogado)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPO5",
@@ -43558,9 +43687,9 @@
    "processo": "48500.035017/2025-30",
    "deliberacao": "RPO5-28",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU [vencidos herdados da decisão ratificada (RPC2 item 6)]"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) [vencidos herdados da decisão ratificada (RPC2 item 6)]"
   },
   {
    "reuniao": "RPC3",
@@ -44788,9 +44917,9 @@
    "processo": "48500.010865/2025-36",
    "deliberacao": "RPO6-4",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (divergência vencedora) | II: DIVERGIU (divergência vencedora) | III: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO6",
@@ -45228,9 +45357,9 @@
    "processo": "48500.003028/2023-99",
    "deliberacao": "RPO6-13",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO6",
@@ -47020,7 +47149,7 @@
    "diretor": "Daniel Cardoso Danna",
    "voto": "RELATOR (prazo de vista prorrogado)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPO7",
@@ -47328,9 +47457,9 @@
    "processo": "48500.003331/2024-72",
    "deliberacao": "RPO7-7",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "ACOMPANHOU todas as partes",
-   "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
+   "voto": "DIVERGIU (voto divergente vencido em ponto específico, fora das partes listadas)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | ponto específico: O Diretor-Geral, Sandoval de Araújo Feitosa Neto, apresentou voto divergente, o qual restou vencido, especificamente no que se refere a determinação para que as unidades organizacionais Superintendênc"
   },
   {
    "reuniao": "RPO7",
@@ -47338,9 +47467,9 @@
    "processo": "48500.003331/2024-72",
    "deliberacao": "RPO7-7",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | II: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | III: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | IV: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | V: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | VI: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)"
   },
   {
    "reuniao": "RPO7",
@@ -47348,9 +47477,9 @@
    "processo": "48500.003331/2024-72",
    "deliberacao": "RPO7-7",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU (autor do voto-vista condutor da decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU (autor do voto-vista condutor da decisão) | II: ACOMPANHOU (autor do voto-vista condutor da decisão) | III: ACOMPANHOU (autor do voto-vista condutor da decisão) | IV: ACOMPANHOU (autor do voto-vista condutor da decisão) | V: ACOMPANHOU (autor do voto-vista condutor da decisão) | VI: ACOMPANHOU (autor do voto-vista condutor da decisão)"
   },
   {
    "reuniao": "RPO7",
@@ -47360,7 +47489,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
   },
   {
    "reuniao": "RPO7",
@@ -47370,7 +47499,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
   },
   {
    "reuniao": "RPO7",
@@ -47430,7 +47559,7 @@
    "diretor": "Daniel Cardoso Danna",
    "voto": "RELATOR (vista concedida; sem voto proferido na ata)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: relator; vista concedida [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: relator; vista concedida [ex-diretor; o texto trata da INSUBSISTÊNCIA de voto(s) anterior(es); não há voto subsistente]"
   },
   {
    "reuniao": "RPO7",
@@ -47438,9 +47567,9 @@
    "processo": "48500.005054/2019-75",
    "deliberacao": "RPO7-9",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO7",
@@ -47598,9 +47727,9 @@
    "processo": "48500.003997/2025-10",
    "deliberacao": "RPO7-12",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido) | VI: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | II: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | III: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | IV: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | V: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | VI: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)"
   },
   {
    "reuniao": "RPO7",
@@ -47608,9 +47737,9 @@
    "processo": "48500.003997/2025-10",
    "deliberacao": "RPO7-12",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU (autor do voto-vista condutor da decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU (autor do voto-vista condutor da decisão) | II: ACOMPANHOU (autor do voto-vista condutor da decisão) | III: ACOMPANHOU (autor do voto-vista condutor da decisão) | IV: ACOMPANHOU (autor do voto-vista condutor da decisão) | V: ACOMPANHOU (autor do voto-vista condutor da decisão) | VI: ACOMPANHOU (autor do voto-vista condutor da decisão)"
   },
   {
    "reuniao": "RPO7",
@@ -48888,9 +49017,9 @@
    "processo": "48500.021941/2025-39",
    "deliberacao": "RPC5-6",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "ACOMPANHOU todas as partes",
-   "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU (por exclusão)"
+   "voto": "ACOMPANHOU (voto vencido na parte II; acompanhou o relator)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido)"
   },
   {
    "reuniao": "RPC5",
@@ -48920,7 +49049,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "DIVERGIU na parte II",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: DIVERGIU"
+   "voto_por_parte": "I: ACOMPANHOU | II: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPC5",
@@ -49198,9 +49327,9 @@
    "processo": "48500.007625/2026-35",
    "deliberacao": "RPC5-12",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC5",
@@ -49958,9 +50087,9 @@
    "processo": "48500.028437/2025-60",
    "deliberacao": "RPO8-7",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU | IV: DIVERGIU | V: DIVERGIU | VI: DIVERGIU | VII: DIVERGIU | VIII: DIVERGIU | IX: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (divergência vencedora) | II: DIVERGIU (divergência vencedora) | III: DIVERGIU (divergência vencedora) | IV: DIVERGIU (divergência vencedora) | V: DIVERGIU (divergência vencedora) | VI: DIVERGIU (divergência vencedora) | VII: DIVERGIU (divergência vencedora) | VIII: DIVERGIU (divergência vencedora) | IX: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO8",
@@ -50638,9 +50767,9 @@
    "processo": "48500.003107/2024-81",
    "deliberacao": "RPO8-21",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO8",
@@ -50658,9 +50787,9 @@
    "processo": "48500.003107/2024-81",
    "deliberacao": "RPO8-21",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO8",
@@ -51338,9 +51467,9 @@
    "processo": "48500.005717/2025-08",
    "deliberacao": "RPO8-35",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO8",
@@ -51358,9 +51487,9 @@
    "processo": "48500.005717/2025-08",
    "deliberacao": "RPO8-35",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO8",
@@ -52700,7 +52829,7 @@
    "diretor": "Agnes Maria de Aragão da Costa",
    "voto": "DIVERGIU na parte III",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: DIVERGIU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO9",
@@ -54288,9 +54417,9 @@
    "processo": "48500.006408/2026-28",
    "deliberacao": "RPC7-16",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "ACOMPANHOU",
+   "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "única: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
   },
   {
    "reuniao": "RPC7",
@@ -54298,9 +54427,9 @@
    "processo": "48500.006408/2026-28",
    "deliberacao": "RPC7-16",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "ACOMPANHOU",
+   "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "única: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
   },
   {
    "reuniao": "RPC7",
@@ -54308,9 +54437,9 @@
    "processo": "48500.006408/2026-28",
    "deliberacao": "RPC7-16",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU",
+   "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "única: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
   },
   {
    "reuniao": "RPC7",
@@ -54320,7 +54449,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido)"
   },
   {
    "reuniao": "RPC7",
@@ -54328,9 +54457,9 @@
    "processo": "48500.006408/2026-28",
    "deliberacao": "RPC7-16",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "ACOMPANHOU",
+   "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "única: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
   },
   {
    "reuniao": "RPC7",
@@ -54595,12 +54724,22 @@
   {
    "reuniao": "RPO10",
    "data": "2026-05-19",
+   "processo": "48500.005360/2023-98",
+   "deliberacao": "RPO10-2",
+   "diretor": "Daniel Cardoso Danna",
+   "voto": "VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "única: VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1) [decisão por unanimidade] [ex-diretor; voto proferido em reunião anterior e subsistente]"
+  },
+  {
+   "reuniao": "RPO10",
+   "data": "2026-05-19",
    "processo": "48500.010462/2026-78",
    "deliberacao": "RPO10-3",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
+   "voto_por_parte": "única: ACOMPANHOU"
   },
   {
    "reuniao": "RPO10",
@@ -54610,7 +54749,7 @@
    "diretor": "Agnes Maria de Aragão da Costa",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido)"
+   "voto_por_parte": "única: RELATOR (voto proferido)"
   },
   {
    "reuniao": "RPO10",
@@ -54618,9 +54757,9 @@
    "processo": "48500.010462/2026-78",
    "deliberacao": "RPO10-3",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
+   "voto_por_parte": "única: ACOMPANHOU"
   },
   {
    "reuniao": "RPO10",
@@ -54628,9 +54767,9 @@
    "processo": "48500.010462/2026-78",
    "deliberacao": "RPO10-3",
    "diretor": "Willamy Moreira Frota",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
+   "voto_por_parte": "única: ACOMPANHOU"
   },
   {
    "reuniao": "RPO10",
@@ -54638,9 +54777,9 @@
    "processo": "48500.010462/2026-78",
    "deliberacao": "RPO10-3",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
+   "voto_por_parte": "única: ACOMPANHOU"
   },
   {
    "reuniao": "RPO10",
@@ -54650,7 +54789,7 @@
    "diretor": "Sandoval de Araújo Feitosa Neto",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU (por exclusão) | II: ACOMPANHOU (por exclusão) | III: ACOMPANHOU (por exclusão)"
+   "voto_por_parte": "I: ACOMPANHOU (por exclusão) | II: ACOMPANHOU (por exclusão) | III: ACOMPANHOU (por exclusão) | IV: ACOMPANHOU (por exclusão) | V: ACOMPANHOU (por exclusão) | VI: ACOMPANHOU (por exclusão) | VII: ACOMPANHOU (por exclusão) | VIII: ACOMPANHOU (por exclusão) | IX: ACOMPANHOU (por exclusão) | X: ACOMPANHOU (por exclusão)"
   },
   {
    "reuniao": "RPO10",
@@ -54660,7 +54799,7 @@
    "diretor": "Agnes Maria de Aragão da Costa",
    "voto": "RELATOR (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto vencido) | II: RELATOR (voto vencido) | III: RELATOR (voto vencido)"
+   "voto_por_parte": "I: RELATOR (voto vencido) | II: RELATOR (voto vencido) | III: RELATOR (voto vencido) | IV: RELATOR (voto vencido) | V: RELATOR (voto vencido) | VI: RELATOR (voto vencido) | VII: RELATOR (voto vencido) | VIII: RELATOR (voto vencido) | IX: RELATOR (voto vencido) | X: RELATOR (voto vencido)"
   },
   {
    "reuniao": "RPO10",
@@ -54668,9 +54807,9 @@
    "processo": "48500.037166/2025-33",
    "deliberacao": "RPO10-4",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (divergência vencedora) | II: DIVERGIU (divergência vencedora) | III: DIVERGIU (divergência vencedora) | IV: DIVERGIU (divergência vencedora) | V: DIVERGIU (divergência vencedora) | VI: DIVERGIU (divergência vencedora) | VII: DIVERGIU (divergência vencedora) | VIII: DIVERGIU (divergência vencedora) | IX: DIVERGIU (divergência vencedora) | X: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO10",
@@ -54680,7 +54819,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU (por exclusão) | II: ACOMPANHOU (por exclusão) | III: ACOMPANHOU (por exclusão)"
+   "voto_por_parte": "I: ACOMPANHOU (por exclusão) | II: ACOMPANHOU (por exclusão) | III: ACOMPANHOU (por exclusão) | IV: ACOMPANHOU (por exclusão) | V: ACOMPANHOU (por exclusão) | VI: ACOMPANHOU (por exclusão) | VII: ACOMPANHOU (por exclusão) | VIII: ACOMPANHOU (por exclusão) | IX: ACOMPANHOU (por exclusão) | X: ACOMPANHOU (por exclusão)"
   },
   {
    "reuniao": "RPO10",
@@ -54690,7 +54829,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU (por exclusão) | II: ACOMPANHOU (por exclusão) | III: ACOMPANHOU (por exclusão)"
+   "voto_por_parte": "I: ACOMPANHOU (por exclusão) | II: ACOMPANHOU (por exclusão) | III: ACOMPANHOU (por exclusão) | IV: ACOMPANHOU (por exclusão) | V: ACOMPANHOU (por exclusão) | VI: ACOMPANHOU (por exclusão) | VII: ACOMPANHOU (por exclusão) | VIII: ACOMPANHOU (por exclusão) | IX: ACOMPANHOU (por exclusão) | X: ACOMPANHOU (por exclusão)"
   },
   {
    "reuniao": "RPO10",
@@ -56648,9 +56787,9 @@
    "processo": "48500.002887/2024-41",
    "deliberacao": "RPC8-9",
    "diretor": "Sandoval de Araújo Feitosa Neto",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC8",
@@ -56658,9 +56797,9 @@
    "processo": "48500.002887/2024-41",
    "deliberacao": "RPC8-9",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | II: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)"
   },
   {
    "reuniao": "RPC8",
@@ -56668,9 +56807,9 @@
    "processo": "48500.002887/2024-41",
    "deliberacao": "RPC8-9",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU (autor do voto-vista condutor da decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU (autor do voto-vista condutor da decisão) | II: ACOMPANHOU (autor do voto-vista condutor da decisão)"
   },
   {
    "reuniao": "RPC8",
@@ -56678,9 +56817,9 @@
    "processo": "48500.002887/2024-41",
    "deliberacao": "RPC8-9",
    "diretor": "Willamy Moreira Frota",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC8",
@@ -57990,7 +58129,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "DIVERGIU nas partes II, IV, V e VI",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: DIVERGIU | III: ACOMPANHOU | IV: DIVERGIU | V: DIVERGIU | VI: DIVERGIU | VII: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: DIVERGIU (voto vencido) | III: ACOMPANHOU | IV: DIVERGIU (voto vencido) | V: DIVERGIU (voto vencido) | VI: DIVERGIU (voto vencido) | VII: ACOMPANHOU"
   },
   {
    "reuniao": "RPO11",
@@ -58000,7 +58139,7 @@
    "diretor": "Daniel Cardoso Danna",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido) | VI: RELATOR (voto proferido) | VII: RELATOR (voto proferido) [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido) | VI: RELATOR (voto proferido) | VII: RELATOR (voto proferido) [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPO11",
@@ -58268,9 +58407,9 @@
    "processo": "48500.013368/2026-71",
    "deliberacao": "RPO11-17",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO11",
@@ -58728,9 +58867,9 @@
    "processo": "48500.006193/2025-64",
    "deliberacao": "RPC9-3",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC9",
@@ -60788,9 +60927,9 @@
    "processo": "48500.000375/2019-83",
    "deliberacao": "RPE4-2",
    "diretor": "Willamy Moreira Frota",
-   "voto": "AUSENTE (não participou da votação)",
+   "voto": "AUSENTE (não participou da votação; acompanhou o relator)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: ausente"
+   "voto_por_parte": "única: ausente (acompanhou o relator)"
   },
   {
    "reuniao": "RPE4",
@@ -61660,7 +61799,7 @@
    "diretor": "Sandoval de Araújo Feitosa Neto",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU (por exclusão)"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU (por exclusão) | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU"
   },
   {
    "reuniao": "RPO13",
@@ -61670,7 +61809,7 @@
    "diretor": "Agnes Maria de Aragão da Costa",
    "voto": "RELATOR (voto vencido na parte III)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto vencido)"
+   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto vencido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido) | VI: RELATOR (voto proferido) | VII: RELATOR (voto proferido) | VIII: RELATOR (voto proferido)"
   },
   {
    "reuniao": "RPO13",
@@ -61678,9 +61817,9 @@
    "processo": "48500.022233/2025-15",
    "deliberacao": "RPO13-4",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU na parte III",
+   "voto": "ACOMPANHOU (voto vencido na parte III; acompanhou o relator)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: DIVERGIU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido) | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU"
   },
   {
    "reuniao": "RPO13",
@@ -61690,7 +61829,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "DIVERGIU na parte III",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: DIVERGIU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: DIVERGIU (divergência vencedora) | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU"
   },
   {
    "reuniao": "RPO13",
@@ -61700,7 +61839,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU (por exclusão)"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU (por exclusão) | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU"
   },
   {
    "reuniao": "RPO13",
@@ -61718,9 +61857,9 @@
    "processo": "48500.008476/2022-06",
    "deliberacao": "RPO13-5",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO13",
@@ -61728,9 +61867,9 @@
    "processo": "48500.008476/2022-06",
    "deliberacao": "RPO13-5",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (voto proferido; a decisão seguiu o voto-vista de Willamy Frota)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: RELATOR (voto proferido)"
+   "voto_por_parte": "única: RELATOR (voto proferido; a decisão seguiu o voto-vista de Willamy Frota)"
   },
   {
    "reuniao": "RPO13",
@@ -61738,9 +61877,9 @@
    "processo": "48500.008476/2022-06",
    "deliberacao": "RPO13-5",
    "diretor": "Willamy Moreira Frota",
-   "voto": "ACOMPANHOU",
+   "voto": "ACOMPANHOU (autor do voto-vista condutor da decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: ACOMPANHOU"
+   "voto_por_parte": "única: ACOMPANHOU (autor do voto-vista condutor da decisão)"
   },
   {
    "reuniao": "RPO13",
@@ -62148,9 +62287,9 @@
    "processo": "48500.007732/2007-09",
    "deliberacao": "RPO13-13",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (divergência vencedora) | II: DIVERGIU (divergência vencedora) | III: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPO13",
@@ -62218,9 +62357,9 @@
    "processo": "48100.003409/1995-75",
    "deliberacao": "RPO13-15",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO13",
@@ -63578,9 +63717,9 @@
    "processo": "48500.005928/2008-31",
    "deliberacao": "RPC11-6",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU (autor do voto-vista condutor da decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU (autor do voto-vista condutor da decisão) | II: ACOMPANHOU (autor do voto-vista condutor da decisão) | III: ACOMPANHOU (autor do voto-vista condutor da decisão) | IV: ACOMPANHOU (autor do voto-vista condutor da decisão) | V: ACOMPANHOU (autor do voto-vista condutor da decisão)"
   },
   {
    "reuniao": "RPC11",
@@ -63588,9 +63727,9 @@
    "processo": "48500.005928/2008-31",
    "deliberacao": "RPC11-6",
    "diretor": "Willamy Moreira Frota",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | II: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | III: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | IV: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | V: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)"
   },
   {
    "reuniao": "RPC11",
@@ -63598,9 +63737,9 @@
    "processo": "48500.005928/2008-31",
    "deliberacao": "RPC11-6",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU | IV: DIVERGIU | V: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido) | IV: DIVERGIU (voto vencido) | V: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC11",
@@ -64460,7 +64599,7 @@
    "diretor": "Sandoval de Araújo Feitosa Neto",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
   },
   {
    "reuniao": "RPO14",
@@ -64470,7 +64609,7 @@
    "diretor": "Agnes Maria de Aragão da Costa",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
   },
   {
    "reuniao": "RPO14",
@@ -64480,7 +64619,7 @@
    "diretor": "Gentil Nogueira de Sá Júnior",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
   },
   {
    "reuniao": "RPO14",
@@ -64490,7 +64629,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido)"
   },
   {
    "reuniao": "RPO14",
@@ -64500,7 +64639,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU"
   },
   {
    "reuniao": "RPO14",
@@ -64638,9 +64777,9 @@
    "processo": "48500.000001/1997-09",
    "deliberacao": "RPO14-7",
    "diretor": "Willamy Moreira Frota",
-   "voto": "VOTOU (antes da vista)",
+   "voto": "DIVERGIU (antes da vista; divergência parcial)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: votou antes da vista"
+   "voto_por_parte": "única: divergiu do relator antes da vista — O Diretor Willamy Moreira Frota apresentou divergência, no sentido de acompanhar a recomendação da área técnica quanto à fixação do prazo de prorrogação em 5 (cinco) anos"
   },
   {
    "reuniao": "RPO14",
@@ -66898,9 +67037,9 @@
    "processo": "48500.000375/2019-83",
    "deliberacao": "RPO15-4",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "VOTOU (antes da vista)",
+   "voto": "DIVERGIU (antes da vista)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: votou antes da vista"
+   "voto_por_parte": "única: divergiu do relator antes da vista — voto-vista propõe encerrar a 3ª fase da CP 45/2019 E instaurar a 4ª fase; o relator votou só por encerrar a CP"
   },
   {
    "reuniao": "RPO15",
@@ -67078,9 +67217,9 @@
    "processo": "48500.001094/2026-77",
    "deliberacao": "RPO15-8",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO15",
@@ -69268,9 +69407,9 @@
    "processo": "48500.000500/2025-01",
    "deliberacao": "RPC13-9",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC13",
@@ -69288,9 +69427,9 @@
    "processo": "48500.000500/2025-01",
    "deliberacao": "RPC13-9",
    "diretor": "Willamy Moreira Frota",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC13",
@@ -70638,9 +70777,9 @@
    "processo": "48500.037603/2025-19",
    "deliberacao": "RPO16-7",
    "diretor": "Willamy Moreira Frota",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO16",
@@ -70648,9 +70787,9 @@
    "processo": "48500.037603/2025-19",
    "deliberacao": "RPO16-7",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: DIVERGIU | II: DIVERGIU | III: DIVERGIU"
+   "voto_por_parte": "I: DIVERGIU (voto vencido) | II: DIVERGIU (voto vencido) | III: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPO16",
@@ -70678,9 +70817,9 @@
    "processo": "48500.000001/1997-09",
    "deliberacao": "RPO16-8",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "ACOMPANHOU todas as partes",
+   "voto": "ACOMPANHOU (autor do voto-vista condutor da decisão)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU (autor do voto-vista condutor da decisão) | II: ACOMPANHOU (autor do voto-vista condutor da decisão) | III: ACOMPANHOU (autor do voto-vista condutor da decisão)"
   },
   {
    "reuniao": "RPO16",
@@ -70698,9 +70837,9 @@
    "processo": "48500.000001/1997-09",
    "deliberacao": "RPO16-8",
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | II: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior) | III: RELATOR (voto proferido; a decisão seguiu o voto-vista de Gentil Júnior)"
   },
   {
    "reuniao": "RPO16",
@@ -71068,9 +71207,9 @@
    "processo": "48500.018815/2025-05",
    "deliberacao": "RPO16-16",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "VOTOU (antes da vista)",
+   "voto": "DIVERGIU (antes da vista)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: votou antes da vista"
+   "voto_por_parte": "única: divergiu do relator antes da vista — A Diretora Agnes Maria de Aragão da Costa apresentou voto divergente no sentido de conhecer e, no mérito, negar provimento ao Recurso Administrativo contra o Despacho nº "
   },
   {
    "reuniao": "RPO16",
@@ -71118,9 +71257,9 @@
    "processo": "48500.018805/2025-61",
    "deliberacao": "RPO16-17",
    "diretor": "Agnes Maria de Aragão da Costa",
-   "voto": "VOTOU (antes da vista)",
+   "voto": "DIVERGIU (antes da vista)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: votou antes da vista"
+   "voto_por_parte": "única: divergiu do relator antes da vista — A Diretora Agnes Maria de Aragão da Costa apresentou voto divergente no sentido de conhecer, e, no mérito, negar provimento, contra o Despacho nº 1.545/2025, emitido pela"
   },
   {
    "reuniao": "RPO16",
@@ -74128,9 +74267,9 @@
    "processo": "48500.019383/2026-22",
    "deliberacao": "RPC14-19",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (voto vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (voto vencido)"
   },
   {
    "reuniao": "RPC14",
@@ -75461,6 +75600,16 @@
    "voto": "NÃO PARTICIPOU (voto subsistente de ex-diretor; art. 54 NO-1)",
    "proveniencia": "nominal",
    "voto_por_parte": "I: NÃO PARTICIPOU (voto subsistente de ex-diretor; art. 54 NO-1) | II: NÃO PARTICIPOU (voto subsistente de ex-diretor; art. 54 NO-1)"
+  },
+  {
+   "reuniao": "RPO17",
+   "data": "2026-08-24",
+   "processo": "48500.016875/2026-66",
+   "deliberacao": "RPO17-16",
+   "diretor": "Fernando Luiz Mosna Ferreira da Silva",
+   "voto": "VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "única: VOTOU (voto subsistente proferido em reunião anterior; art. 54 NO-1) [decisão por unanimidade] [ex-diretor; voto proferido em reunião anterior e subsistente]"
   },
   {
    "reuniao": "RPO17",
@@ -76838,9 +76987,9 @@
    "processo": "48500.022630/2026-78",
    "deliberacao": "RPC15-15",
    "diretor": "Gentil Nogueira de Sá Júnior",
-   "voto": "DIVERGIU",
+   "voto": "ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: ACOMPANHOU (voto vencido: acompanhou o relator, que restou vencido)"
   },
   {
    "reuniao": "RPC15",
@@ -76858,9 +77007,9 @@
    "processo": "48500.022630/2026-78",
    "deliberacao": "RPC15-15",
    "diretor": "Ludimila Lima da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPC15",
@@ -76908,9 +77057,9 @@
    "processo": "48500.023878/2026-56",
    "deliberacao": "RPC15-16",
    "diretor": "Ludimila Lima da Silva",
-   "voto": "DIVERGIU",
+   "voto": "DIVERGIU (divergência vencedora)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: DIVERGIU"
+   "voto_por_parte": "única: DIVERGIU (divergência vencedora)"
   },
   {
    "reuniao": "RPC15",
@@ -77658,9 +77807,9 @@
    "processo": "48500.000503/2024-56",
    "deliberacao": "RPO18-4",
    "diretor": "Ludimila Lima da Silva",
-   "voto": "VOTOU (antes da vista)",
+   "voto": "DIVERGIU (antes da vista; divergência parcial)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: votou antes da vista"
+   "voto_por_parte": "única: divergiu do relator antes da vista — A Diretora Ludimila Lima da Silva apresentou divergência especificamente quanto à vedação da utilização pela distribuidora da marca e logotipo que reproduza, total ou par"
   },
   {
    "reuniao": "RPO18",
@@ -77720,7 +77869,7 @@
    "diretor": "Sandoval de Araújo Feitosa Neto",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU | IX: ACOMPANHOU"
   },
   {
    "reuniao": "RPO18",
@@ -77730,7 +77879,7 @@
    "diretor": "Agnes Maria de Aragão da Costa",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU | IX: ACOMPANHOU"
   },
   {
    "reuniao": "RPO18",
@@ -77740,7 +77889,7 @@
    "diretor": "Gentil Nogueira de Sá Júnior",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU | IX: ACOMPANHOU"
   },
   {
    "reuniao": "RPO18",
@@ -77750,7 +77899,7 @@
    "diretor": "Willamy Moreira Frota",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido) | VI: RELATOR (voto proferido)"
+   "voto_por_parte": "I: RELATOR (voto proferido) | II: RELATOR (voto proferido) | III: RELATOR (voto proferido) | IV: RELATOR (voto proferido) | V: RELATOR (voto proferido) | VI: RELATOR (voto proferido) | VII: RELATOR (voto proferido) | VIII: RELATOR (voto proferido) | IX: RELATOR (voto proferido)"
   },
   {
    "reuniao": "RPO18",
@@ -77760,7 +77909,7 @@
    "diretor": "Ludimila Lima da Silva",
    "voto": "ACOMPANHOU todas as partes",
    "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU"
+   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU | V: ACOMPANHOU | VI: ACOMPANHOU | VII: ACOMPANHOU | VIII: ACOMPANHOU | IX: ACOMPANHOU"
   },
   {
    "reuniao": "RPO18",
@@ -81570,7 +81719,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "RELATOR (prazo de vista prorrogado)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPO19",
@@ -81730,7 +81879,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: retirado de pauta [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: retirado de pauta [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPC17",
@@ -81990,7 +82139,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: destacado do circuito por Sandoval de Araújo Feitosa Neto [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: destacado do circuito por Sandoval de Araújo Feitosa Neto [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   },
   {
    "reuniao": "RPC17",
@@ -84000,7 +84149,7 @@
    "diretor": "Fernando Luiz Mosna Ferreira da Silva",
    "voto": "RELATOR (prazo de vista prorrogado)",
    "proveniencia": "nominal",
-   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; voto proferido em reunião anterior e subsistente]"
+   "voto_por_parte": "única: relator do processo; prazo de vista prorrogado [ex-diretor; consta como relator na coluna da ata; o texto da decisão não registra voto subsistente]"
   }
  ],
  "qualidade": [
@@ -84078,6 +84227,14 @@
   ],
   [
    "ANEEL",
+   "(c2) INDEPENDENTE: itens decididos em que o nº de marcadores romanos distintos \"(i)..(xx)\" do texto bruto excede o nº de partes emitidas (partes perdidas)",
+   0,
+   0,
+   "OK",
+   "itens com marcadores a mais que partes: []"
+  ],
+  [
+   "ANEEL",
    "(c) Itens decididos: nº de partes emitidas × âncoras do texto (marcadores (i),(ii).. ou sentenças \"A Diretoria ... decidiu\")",
    865,
    865,
@@ -84087,8 +84244,8 @@
   [
    "ANEEL",
    "(c) Itens com \"por maioria\" nas sentenças de decisão × itens com alguma parte modo=maioria",
-   41,
-   41,
+   42,
+   42,
    "OK",
    "só no texto: []; só nas partes: []"
   ],
@@ -84187,6 +84344,30 @@
    42,
    "OK",
    "sem pedinte: []"
+  ],
+  [
+   "ANEEL",
+   "(f) Itens \"Pedido de Vista + Retirado de Pauta/Prorrogação\": pedinte nominal identificado no texto (sem pedinte → pendências)",
+   20,
+   0,
+   "DIVERGE",
+   "20 itens sem pedinte no texto: ['RPC17-1', 'RPC17-46', 'RPC4-25', 'RPC5-20', 'RPC7-19', 'RPC8-24', 'RPO1-7', 'RPO14-28', 'RPO14-29', 'RPO19-25', 'RPO19-26', 'RPO4-1', 'RPO4-4', 'RPO4-43', 'RPO4-9', 'RPO5-13', 'RPO5-25', 'RPO5-8', 'RPO6-1', 'RPO7-1']"
+  ],
+  [
+   "ANEEL",
+   "(e) Todo diretor citado em \"proferiu(ram) voto(s) subsistente(s)\" (inclusive ex-diretor não relator) tem linha de voto no item",
+   0,
+   0,
+   "OK",
+   "sem linha: []"
+  ],
+  [
+   "ANEEL",
+   "(e) Sufixo \"[ex-diretor; voto proferido… subsistente]\" só em linha cujo texto da decisão diz \"subsistente\"",
+   0,
+   0,
+   "OK",
+   "[]"
   ]
  ],
  "cobertura": [
@@ -84223,20 +84404,20 @@
   [
    "ANEEL",
    "Linhas de voto (1 por diretor por item)",
-   5020,
-   "nominal 1586 (31.6%); inferido 3422 (68.2%); REVISAR 12 (0.2%)"
+   5023,
+   "nominal 1587 (31.6%); inferido 3424 (68.2%); REVISAR 12 (0.2%)"
   ],
   [
    "ANEEL",
    "Itens com decisão composta (≥2 partes)",
    307,
-   "partes emitidas: 1496; itens com parte por maioria: 41"
+   "partes emitidas: 1514; itens com parte por maioria: 42"
   ],
   [
    "ANEEL",
    "Ex-diretores com voto subsistente (linhas extras)",
-   15,
-   "{'Daniel Cardoso Danna': 5, 'Ludimila Lima da Silva': 3, 'Fernando Luiz Mosna Ferreira da Silva': 5, 'Ricardo Lavorato Tili': 2}"
+   18,
+   "{'Ricardo Lavorato Tili': 2, 'Ludimila Lima da Silva': 4, 'Fernando Luiz Mosna Ferreira da Silva': 6, 'Daniel Cardoso Danna': 6}"
   ],
   [
    "ANEEL",
@@ -84838,6 +85019,276 @@
   ],
   [
    "ANEEL",
+   "RPO1-7",
+   "2026-01-20",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO4-1",
+   "2026-02-24",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO4-4",
+   "2026-02-24",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO4-43",
+   "2026-02-24",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO4-9",
+   "2026-02-24",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO5-13",
+   "2026-03-10",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO5-25",
+   "2026-03-10",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO5-8",
+   "2026-03-10",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO6-1",
+   "2026-03-24",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC4-25",
+   "2026-03-31",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO7-1",
+   "2026-04-07",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC5-20",
+   "2026-04-14",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC7-19",
+   "2026-05-12",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC8-24",
+   "2026-05-26",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO14-28",
+   "2026-07-14",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO14-29",
+   "2026-07-14",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO19-25",
+   "2026-09-22",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO19-26",
+   "2026-09-22",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC17-1",
+   "2026-09-29",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC17-46",
+   "2026-09-29",
+   "pedido de vista sem pedinte identificado",
+   "coluna de resultado do dataset = \"Pedido de Vista + Retirado de Pauta/Prorrogação\", mas o texto da decisão não nomeia quem pediu vista",
+   "o texto da ata no dataset de dados abertos omite o pedinte; sem linha PEDIU VISTA para nenhum diretor (os demais ficam como estão) — o QA só afirma 42/42 para o \"Pedido de Vista\" puro",
+   "Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria) quem pediu vista",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO3-8",
+   "2026-02-10",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "4 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO7-13",
+   "2026-04-07",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "3 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO10-4",
+   "2026-05-19",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "3 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO11-11",
+   "2026-06-02",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "4 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO13-4",
+   "2026-06-30",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "2 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPC11-6",
+   "2026-07-07",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "2 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
+   "RPO16-2",
+   "2026-08-11",
+   "texto truncado: votos inferidos sem sinal de risco",
+   "4 linha(s) de voto INFERIDA(s) (ACOMPANHOU) neste item e nenhuma marcada REVISAR",
+   "a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha",
+   "Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)",
+   "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425"
+  ],
+  [
+   "ANEEL",
    "Colegiado 2026 (composição por reunião)",
    "2026-08-18",
    "inferido",
@@ -84859,7 +85310,7 @@
   [
    "ANEEL",
    "Votos dos demais diretores (extrato nominal)",
-   "3422 de 5020 linhas (68.2%) seguem INFERIDAS",
+   "3424 de 5023 linhas (68.2%) seguem INFERIDAS",
    "PARCIAL (limite da fonte)",
    "a ata registra só relator, vencidos, impedidos, ausentes e vistas; \"ACOMPANHOU\" = unanimidade ou exclusão dos vencidos nomeados",
    "Pedir o extrato nominal de votação à Secretaria-Geral/SGE (reuniaodir@aneel.gov.br)"
