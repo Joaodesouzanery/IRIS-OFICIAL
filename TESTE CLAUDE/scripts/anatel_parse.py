@@ -489,7 +489,7 @@ for tag in sorted(ATAS, key=lambda k: int(re.sub(r'\D', '', k))):
                 if nm: vistores += [n for n in nm if n not in vistores]
             elif re.search(r'antecipou seu voto|registrou voto|acompanhando integralmente|acompanhou a proposta|acompanhou integralmente', sn) and not re.search(r'materia aprovada', sn):
                 nm = nomes_todos(s.split('acompanh')[0].split('antecipou')[0].split('registrou')[0])
-                if nm and nm[0] not in antes: antes.append(nm[0])
+                antes += [n_ for n_ in nm if n_ not in antes]
             m_ap = re.match(r'^Apresentad[oa] pel[oa] (.*?)(?:, em sede de vista|, Relator|, Relatora|, a An|, o Voto)', s)
             if m_ap:
                 nm = nomes_todos(m_ap[1])
@@ -528,7 +528,7 @@ for tag in sorted(ATAS, key=lambda k: int(re.sub(r'\D', '', k))):
                 if n in roster and n not in vistores: ex[n] = ('VOTOU (antes da vista)', 'nominal')
             for n, vista_ in apresentou:
                 if n in roster and n not in vistores: ex[n] = ('VOTOU (antes da vista)', 'nominal')
-            if relator_v in roster and relator_v not in vistores: ex[relator_v] = ('RELATOR (voto proferido; vista concedida)', 'nominal') if it['secao'] == 'relatoria' else ex.get(relator_v, ('SEM VOTO AINDA (vista pendente)', 'nominal'))
+            if relator_v in roster and relator_v not in vistores: ex[relator_v] = ('RELATOR (voto proferido; vista concedida)', 'nominal')   # relator em sede de vista: a Análise já fora apresentada (mesma convenção dos itens de relatoria)
             partes = []; resultado = 'VISTA: ' + corta(res, 400)
         elif tipo == 'Vista':   # prorrogacao do prazo de vista
             for n in roster: ex[n] = ('ACOMPANHOU', 'inferido')
