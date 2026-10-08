@@ -299,3 +299,14 @@ SETOR['ANATEL'] = {'modal': 'Telecomunicações', 'temas': [
     ('Numeração e infraestrutura', 'Numeração / interconexão / compartilhamento', [r'numeracao', r'interconexao', r'compartilhamento', r'infraestrutura', r'homologacao'], 5),
     ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio'], 4),
 ]}
+
+SETOR['ANEEL'] = {'modal': 'Energia elétrica', 'temas': [
+    ('Fiscalização e sanções', 'Auto de infração / multa / penalidade', [r'auto de infracao', r'multa', r'penalidade', r'sancao', r'infracao', r'fiscaliza'], 7),
+    ('Tarifas e reajustes', 'Reajuste / revisão tarifária e bandeiras', [r'reajuste tarifario', r'revisao tarifaria', r'tarifa', r'bandeira', r'\btusd?\b', r'receita anual'], 7),
+    ('Geração e outorgas', 'Usinas, outorga e leilões', [r'usina', r'outorga', r'geracao', r'central geradora', r'leilao', r'eolic', r'fotovoltaic', r'hidreletric', r'autorizacao'], 6),
+    ('Transmissão e distribuição', 'Concessões, contratos e expansão da rede', [r'transmissao', r'distribuicao', r'distribuidora', r'concessao', r'contrato de concessao', r'subestacao', r'linha de transmissao', r'rede basica'], 6),
+    ('Regulação e normas', 'Resolução normativa / consulta pública', [r'resolucao normativa', r'consulta publica', r'audiencia publica', r'regulamento', r'norma', r'agenda regulatoria', r'procedimento'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'pedido de reexame', r'embargos'], 6),
+    ('Qualidade e consumidor', 'Qualidade do serviço e direitos do consumidor', [r'qualidade', r'consumidor', r'dec\b', r'fec\b', r'compensacao'], 5),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio'], 4),
+]}

@@ -112,6 +112,21 @@ lin('ANATEL', 'Verificações da aba qualidade do parser sem DIVERGE', 0, sum(1 
 cha = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANATEL'}
 pa = [str(p_[1]).split(' — ')[0].strip() for p_ in at['pendencias']]
 lin('ANATEL', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pa), sum(1 for x in pa if any(x == c or c.startswith(x) or x in c for c in cha)))
+# ---------------- ANEEL
+ae = json.load(open('aneel.json'))
+pres_ae = {r['reuniao']: set(r['presentes']) | set(r.get('ausentes', [])) for r in ae['reunioes']}
+nve = collections.defaultdict(set)
+for v in ae['votos']: nve[(v['reuniao'], v['processo'], v['deliberacao'])].add(v['diretor'])
+lin('ANEEL', 'Itens com ao menos 1 voto registrado', len(ae['deliberacoes']), sum(1 for d in ae['deliberacoes'] if nve[(d['reuniao'], d['processo'], d['deliberacao'])]))
+lin('ANEEL', 'Votos duplicados (item, diretor)', 0, len(ae['votos']) - len({(v['reuniao'], v['processo'], v['deliberacao'], v['diretor']) for v in ae['votos']}))
+ev_e = collections.Counter(v['proveniencia'] for v in ae['votos'])
+lin('ANEEL', 'Votos: nominal + inferido + REVISAR = total', len(ae['votos']), sum(ev_e.values()), nota=str(dict(ev_e)))
+_dv = [q for q in ae['qualidade'] if q[4] == 'DIVERGE']
+_tx = ' '.join(str(p_) for p_ in ae['pendencias'])
+lin('ANEEL', 'Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (data da RPO17, buraco na RPO12, textos truncados)', 0, sum(1 for q in _dv if not any(k in _tx for k in ('divergência de data', 'buraco', 'truncad'))), nota=f'{len(_dv)} DIVERGE de fonte, todas em pendencias/Faltam na fonte')
+che = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANEEL'}
+pe = [str(p_[1]).split(' — ')[0].strip() for p_ in ae['pendencias']]
+lin('ANEEL', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pe), sum(1 for x in pe if any(x == c or c.startswith(x) or x in c for c in che)))
 vts = [r for r in wb['Votos'].iter_rows(min_row=2, values_only=True)]
 cx = collections.Counter(r[0] for r in vts)
 lin('ANVISA', 'Votos no JSON final × linhas na aba Votos', len(fin['votos']), cx['ANVISA'])
@@ -119,6 +134,7 @@ lin('ANPD', 'Votos no JSON × linhas na aba Votos', len(b['votos']), cx['ANPD'])
 lin('ANP', 'Votos no JSON × linhas na aba Votos', len(anp['votos']), cx['ANP'])
 lin('ANTAQ', 'Votos no JSON × linhas na aba Votos', len(aq['votos']), cx['ANTAQ'])
 lin('ANATEL', 'Votos no JSON × linhas na aba Votos (inclui ex-conselheiro fora dos totais)', len(at['votos']), cx['ANATEL'])
+lin('ANEEL', 'Votos no JSON × linhas na aba Votos (inclui ex-diretores fora dos totais)', len(ae['votos']), cx['ANEEL'])
 # ---------------- regra: tudo que falta (esperado − coletado) está na aba 'Faltam na fonte', com URL
 fx = [r for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True)]
 chaves = collections.defaultdict(set)

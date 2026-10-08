@@ -45,13 +45,13 @@ for d in D:
     if pr_ and pr_.get('diretor'): d['relator'] = pr_['diretor'] + ' (proponente: ' + pr_['procedencia'][:40] + ')'
 
 # ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
-EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json'), ('ANATEL', 'anatel.json')) if os.path.exists(f)}
+EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json'), ('ANATEL', 'anatel.json'), ('ANEEL', 'aneel.json')) if os.path.exists(f)}
 for sg, x in EXTRAS.items():
     for r in x['reunioes']: R.append(dict(r, agencia=sg, ausentes=r.get('ausentes', [])))
     for d in x['deliberacoes']: D.append(dict(d, agencia=sg, texto=d.get('decisao_texto', ''), item=d['processo']))
     _pres = {r['reuniao']: set(r.get('presentes', [])) | set(r.get('ausentes', [])) for r in x['reunioes']}
     for v in x['votos']:
-        if sg == 'ANATEL' and v['diretor'] not in _pres.get(v['reuniao'], {v['diretor']}): VX.append(dict(v, agencia=sg, fora_total=True))   # ex-conselheiro (relator/votante de reunião anterior): na aba Votos, fora dos totais
+        if sg in ('ANATEL', 'ANEEL') and v['diretor'] not in _pres.get(v['reuniao'], {v['diretor']}): VX.append(dict(v, agencia=sg, fora_total=True))   # ex-conselheiro (relator/votante de reunião anterior): na aba Votos, fora dos totais
         else: V.append(dict(v, agencia=sg))
 AGS = ['ANM', 'ANTT', 'ARTESP'] + list(EXTRAS)
 
@@ -110,7 +110,10 @@ def sheet(nome, cab, linhas, larg=None):
 def kind(v):
     t = v['voto']
     if t.startswith('RELATOR') or t.startswith('RETIROU') or t.startswith('PROPONENTE'): return 'como relator/proponente'
-    if t == 'ACOMPANHOU': return 'acompanhou'
+    if t.startswith('ACOMPANHOU'): return 'acompanhou'
+    if t.startswith('VOTOU'): return 'votou (antes da vista)'
+    if t.startswith('NÃO PARTICIPOU'): return 'sem voto (não votou)'
+    if t.startswith('SEM VOTO REGISTRADO'): return 'a revisar'
     if t.startswith('DIVERGIU'): return 'divergiu'
     if t == 'PEDIU VISTA': return 'pediu vista'
     if t.startswith('AUSENTE'): return 'ausente'
@@ -119,7 +122,7 @@ def kind(v):
     if t.startswith('SEM VOTO'): return 'sem voto (retirado de pauta)'
     if t.startswith('VISTA COLETIVA'): return 'pediu vista'
     return 'a revisar'
-cols = ['como relator/proponente', 'acompanhou', 'divergiu', 'pediu vista', 'ausente', 'sem voto (retirado de pauta)', 'a revisar', 'aprovou a ata anterior']
+cols = ['como relator/proponente', 'acompanhou', 'divergiu', 'pediu vista', 'ausente', 'sem voto (retirado de pauta)', 'votou (antes da vista)', 'a revisar', 'aprovou a ata anterior']
 cnt = collections.defaultdict(collections.Counter)
 for v in V:
     c = cnt[(v['agencia'], v['diretor'])]; c['registros'] += 1; c['aprovou a ata anterior' if v['tipo_item'] == 'Aprovação de ata' else kind(v)] += 1; c['nominal'] += v['proveniencia'] == 'nominal'; c['inferido'] += v['proveniencia'] == 'inferido'
@@ -239,7 +242,7 @@ vidx = collections.defaultdict(dict)
 for v in V: vidx[(v['agencia'], v['reuniao'], v['processo'], v.get('deliberacao'))][v['diretor']] = v
 def cod(v):
     t = v['voto']; b = ('RELATOR' if t.startswith(('RELATOR', 'PROPONENTE')) else 'RETIROU' if t.startswith('RETIROU') else 'ACOMPANHOU' if t.startswith('ACOMPANHOU') else 'DIVERGIU' if t.startswith('DIVERGIU')
-                        else 'VISTA' if 'VISTA' in t and not t.startswith('SEM') else 'AUSENTE' if t.startswith('AUSENTE') else 'sem voto' if t.startswith('SEM VOTO') else 'IMPEDIDO' if t.startswith('IMPEDIDO') else 'REVISAR')
+                        else 'VISTA' if 'VISTA' in t and not t.startswith('SEM') else 'AUSENTE' if t.startswith('AUSENTE') else 'VOTOU' if t.startswith('VOTOU') else 'N/PARTIC' if t.startswith('NÃO PARTICIPOU') else 'REVISAR' if t.startswith('SEM VOTO REGISTRADO') else 'sem voto' if t.startswith('SEM VOTO') else 'IMPEDIDO' if t.startswith('IMPEDIDO') else 'REVISAR')
     return b + ('*' if v['proveniencia'] == 'inferido' else '')
 for ag in AGS:
     cabs = ordem[ag]; linhas = []
@@ -386,7 +389,7 @@ def sheetf(nome, cab, linhas, larg=None, cor='base', filtro=True):
 def papel(v):
     if v.get('fora_total'): return 'Relator (voto em reunião anterior)'
     if v['tipo_item'] == 'Aprovação de ata': return 'Aprovou a ata anterior'
-    return {'como relator/proponente': 'Relator/proponente', 'acompanhou': 'Votante (acompanhou)', 'divergiu': 'Votante (divergiu)', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)'}[kind(v)]
+    return {'como relator/proponente': 'Relator/proponente', 'acompanhou': 'Votante (acompanhou)', 'divergiu': 'Votante (divergiu)', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)', 'votou (antes da vista)': 'Votou (antes da vista)'}[kind(v)]
 EVID = {'nominal': 'Individual (citada na ata)', 'inferido': 'Inferida (unanimidade/sem divergência)', 'n/a': 'Não se aplica', 'REVISAR': 'A revisar'}
 mes_ = lambda d: (d or '')[:7]
 # ---- Votos
@@ -414,7 +417,7 @@ ws.cell(row=len(linhas) + 3, column=1, value='Legenda: * = voto inferido da unan
 dl = collections.defaultdict(collections.Counter)
 for v in V:
     d = get_res(v); k = (v['agencia'], v['diretor'], mes_(v['data']), tm(d, 'modal') or '—', tm(d, 'tema') or '—', tm(d, 'subtema') or '—', tm(d, 'microtema_iris') or '—', tm(d, 'area_iris') or '—'); c = dl[k]; c['Registros'] += 1
-    c['Aprovou a ata anterior' if v['tipo_item'] == 'Aprovação de ata' else {'como relator/proponente': 'Como relator/proponente', 'acompanhou': 'Acompanhou', 'divergiu': 'Divergiu', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)'}[kind(v)]] += 1
+    c['Aprovou a ata anterior' if v['tipo_item'] == 'Aprovação de ata' else {'como relator/proponente': 'Como relator/proponente', 'acompanhou': 'Acompanhou', 'divergiu': 'Divergiu', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)', 'votou (antes da vista)': 'Votou (antes da vista)'}[kind(v)]] += 1
     c['Votos individuais (citados)'] += v['proveniencia'] == 'nominal'; c['Votos inferidos'] += v['proveniencia'] == 'inferido'
 colsDir = ['Registros', 'Como relator/proponente', 'Acompanhou', 'Divergiu', 'Pediu vista', 'Ausente', 'Sem voto (retirada)', 'Sem voto (não votou)', 'Impedido', 'A revisar', 'Aprovou a ata anterior', 'Votos individuais (citados)', 'Votos inferidos']
 sheetf('Diretores', ['Agência', 'Diretor', 'Mês', 'Modal', 'Tema', 'Subtema', 'Microtema (IRIS)', 'Área (IRIS)'] + colsDir, [list(k) + [c[x] for x in colsDir] for k, c in sorted(dl.items())], {'Diretor': 38, 'Modal': 32, 'Tema': 34, 'Subtema': 34, 'Microtema (IRIS)': 30, 'Área (IRIS)': 24}, cor='dir')
@@ -458,6 +461,7 @@ URL_FONTE = {
  'ANPD': 'https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuito-deliberativo',
  'ANP': 'https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026',
  'ANTAQ': 'https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes',
+ 'ANEEL': 'https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/reunioes-publicas',
  'ANATEL': 'https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&id_orgao_publicacao=0&id_unidade_responsavel=110000842&id_serie=8'}
 def _tipo_pend(sit):
     t = sit.lower()

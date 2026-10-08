@@ -35,11 +35,17 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANATEL | Votos: nominal + inferido + REVISAR = total | 2922 | 2922 | OK | {'inferido': 961, 'nominal': 1961} |
 | ANATEL | Verificações da aba qualidade do parser sem DIVERGE | 0 | 0 | OK |  |
 | ANATEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 22 | 22 | OK |  |
+| ANEEL | Itens com ao menos 1 voto registrado | 1001 | 1001 | OK |  |
+| ANEEL | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
+| ANEEL | Votos: nominal + inferido + REVISAR = total | 5020 | 5020 | OK | {'inferido': 3422, 'nominal': 1586, 'REVISAR': 12} |
+| ANEEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (data da RPO17, buraco na RPO12, textos truncados) | 0 | 0 | OK | 3 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
+| ANEEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 60 | 60 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
 | ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
 | ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
 | ANTAQ | Votos no JSON × linhas na aba Votos | 3413 | 3413 | OK |  |
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui ex-conselheiro fora dos totais) | 2922 | 2922 | OK |  |
+| ANEEL | Votos no JSON × linhas na aba Votos (inclui ex-diretores fora dos totais) | 5020 | 5020 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 358 | 358 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 443 | 443 | OK | sem URL: [] |

@@ -335,7 +335,7 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
     ros = roster(data)
     itens = sorted(por_reuniao[ide], key=lambda x: int(x['NumOrdem'] or 0))
     if ide in pauta_so:
-        R.append({'reuniao': tag, 'titulo': f'{num}ª {ORD[kind]} da Diretoria da ANEEL ({dmy(data)}) - pauta publicada; ata/resultados ainda não publicados', 'tipo': TIPO[kind], 'data': data,
+        R.append({'reuniao': tag, 'titulo': f'{num}{"º" if kind == "RPC" else "ª"} {ORD[kind]} da Diretoria da ANEEL ({dmy(data)}) - pauta publicada; ata/resultados ainda não publicados', 'tipo': TIPO[kind], 'data': data,
                   'presentes': [], 'ausentes': [], 'obs': f'Realizada em {dmy(data)}; a fonte tem só a pauta ({len(itens)} itens) e nenhum resultado: fora de deliberacoes/votos até a ata sair.'})
         continue
     txt_dump = []
@@ -454,7 +454,7 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
                   'processos_do_item': procs, 'obs': '; '.join(obs)})
     open(f'texto_aneel/{tag}.txt', 'w', encoding='utf8').write(f'# {tag} - {dmy(data)} - {ide}\n# Fonte: Dados Abertos ANEEL (pautas-atas-reunioes-publicas-diretoria.csv); ata prévia, sujeita a ajustes até a assinatura\n\n' + '\n'.join(txt_dump))
     aus_txt = '; '.join(f'{curto(d)} ({n} itens)' for d, n in aus_item.items())
-    R.append({'reuniao': tag, 'titulo': f'{num}ª {ORD[kind]} da Diretoria da ANEEL ({dmy(data)})', 'tipo': TIPO[kind], 'data': data, 'presentes': ros, 'ausentes': [],
+    R.append({'reuniao': tag, 'titulo': f'{num}{"º" if kind == "RPC" else "ª"} {ORD[kind]} da Diretoria da ANEEL ({dmy(data)})', 'tipo': TIPO[kind], 'data': data, 'presentes': ros, 'ausentes': [],
               'obs': 'Colegiado inferido (presença nominal da reunião não consta da fonte coletada; ata em PDF bloqueada); ' + (f'ausência registrada só por item: {aus_txt}; ' if aus_txt else 'sem ausência registrada em item; ') + 'ata prévia, sujeita a ajustes até a assinatura.'})
 
 # ---------------------------------------------------------------- QA

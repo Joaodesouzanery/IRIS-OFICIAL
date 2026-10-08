@@ -39,6 +39,9 @@ python3 -I scripts/antaq_baixar.py antaq_inventario.json manifesto_antaq.json fo
 python3 -I scripts/antaq_parse.py manifesto_antaq.json antaq.json
 # ANATEL (SEI Publicações via Chromium; pipeline completo em scripts/anatel_rodar.sh)
 bash scripts/anatel_rodar.sh
+# ANEEL (Dados Abertos CKAN + calendário gov.br; atas em PDF bloqueadas pelo Cloudflare)
+python3 -I scripts/aneel_baixar.py
+python3 -I scripts/aneel_parse.py manifesto_aneel.json aneel.json
 # Temas: regras (taxonomia do repo) + revisão por IA só nos itens de baixa confiança
 python3 -I scripts/temas.py            # grava temas.json e temas_revisao_pendente.json (itens que ainda precisam de IA)
 # Se temas_revisao_pendente.json não estiver vazio: classificar esses itens (subagentes Claude, taxonomia_fechada.json),
