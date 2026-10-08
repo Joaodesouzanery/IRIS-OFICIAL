@@ -89,6 +89,21 @@ for tag, i in atas.items():
     for a in i['arquivos']:
         f = f'{dest}/sophia/pdf/{a["codigo"]}.pdf'; ok = os.path.exists(f) and os.path.getsize(f) > 1000 and open(f, 'rb').read(4) == b'%PDF'
         man[f'sophia:{tag}:{a["codigo"]}'] = {'fonte': 'sophia', 'reuniao': tag, 'titulo': a['titulo'], 'url': i['url'], 'download': f'https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo={a["codigo"]}&tipoMidia=0', 'arquivo': f if ok else None, 'sha256': sha(f) if ok else None, 'ok': bool(ok)}
+# pautas (denominador independente: todo processo pautado deve aparecer na ata como acordao, retirada ou vista)
+p_pa = f'{dest}/sophia/busca_pautas.html'
+if sophia('Pauta de Reunião', p_pa):
+    decl_p, it_p = parse_sophia(p_pa); pautas = {}
+    for i in it_p.values():
+        m = re.match(r'Pauta de Reuni[ãa]o (Ordin[áa]ria|Extraordin[áa]ria) da Diretoria (\d+)/2026$', i['titulo'])
+        if m: pautas[('ROD' if m[1].startswith('Ordin') else 'RED') + m[2]] = i
+    inv['sophia']['pautas'] = dict(sorted(pautas.items())); inv['sophia']['pautas_contador_declarado'] = int(decl_p)
+    cods_p = [str(a['codigo']) for i in pautas.values() for a in i['arquivos']]
+    if sophia('Pauta de Reunião', p_pa, cods_p):
+        for tag, i in pautas.items():
+            for a in i['arquivos']:
+                f = f'{dest}/sophia/pdf/{a["codigo"]}.pdf'; ok = os.path.exists(f) and os.path.getsize(f) > 1000 and open(f, 'rb').read(4) == b'%PDF'
+                man[f'sophia_pauta:{tag}:{a["codigo"]}'] = {'fonte': 'sophia', 'reuniao': tag, 'titulo': a['titulo'], 'url': i['url'], 'download': f'https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo={a["codigo"]}&tipoMidia=0', 'arquivo': f if ok else None, 'sha256': sha(f) if ok else None, 'ok': bool(ok)}
+else: print('AVISO: busca de pautas no Sophia falhou')
 p_ac = f'{dest}/sophia/busca_acordaos.html'
 if os.path.exists(p_ac) and os.path.getsize(p_ac) > 1000000: pass
 elif not sophia('Acórdão', p_ac): print('AVISO: busca de acordaos no Sophia falhou')

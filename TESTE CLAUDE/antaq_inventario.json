@@ -9,7 +9,7 @@
   "atas_pautas": {
    "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes/",
    "arquivo": "fonte/antaq/govbr/atas_pautas.html",
-   "bytes": 178663
+   "bytes": 178657
   },
   "virtuais": {
    "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/resultado-das-reunioes-virtuais-da-diretoria-1/",
@@ -19,7 +19,7 @@
   "api_volto": {
    "atas-e-pautas-das-reunioes": {
     "url": "https://www.gov.br/++api++/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes?b_start=0&b_size=3000",
-    "http": "000",
+    "http": "503",
     "items_total": null
    },
    "resultado-das-reunioes-virtuais-da-diretoria-1": {
@@ -402,6 +402,275 @@
    "Pauta de Reunião Ordinária da Diretoria 614/2026",
    "Portaria DG 576/2026"
   ],
+  "pautas": {
+   "ROD602": {
+    "id": 41108,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 602/2026",
+    "assinatura": "14/01/2026",
+    "publicacao": "14/01/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 51728,
+      "titulo": "Pauta de Reunião de Diretoria ROD 602"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41108"
+   },
+   "ROD603": {
+    "id": 41214,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 603/2026",
+    "assinatura": "02/02/2026",
+    "publicacao": "02/02/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 51860,
+      "titulo": "Pauta de Reunião de Diretoria ROD 603"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41214"
+   },
+   "ROD604": {
+    "id": 41333,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 604/2026",
+    "assinatura": "18/02/2026",
+    "publicacao": "18/02/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52009,
+      "titulo": "Pauta de Reunião de Diretoria ROD 604"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41333"
+   },
+   "ROD605": {
+    "id": 41433,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 605/2026",
+    "assinatura": "09/03/2026",
+    "publicacao": "09/03/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52113,
+      "titulo": "Pauta de Reunião de Diretoria ROD 605"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41433"
+   },
+   "ROD606": {
+    "id": 41461,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 606/2026",
+    "assinatura": "18/03/2026",
+    "publicacao": "18/03/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52318,
+      "titulo": "Pauta de Reunião de Diretoria ROD 606"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41461"
+   },
+   "ROD607": {
+    "id": 41615,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 607/2026",
+    "assinatura": "06/04/2026",
+    "publicacao": "06/04/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52327,
+      "titulo": "Pauta de Reunião de Diretoria ROD 607"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41615"
+   },
+   "ROD608": {
+    "id": 41705,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 608/2026",
+    "assinatura": "22/04/2026",
+    "publicacao": "22/04/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52414,
+      "titulo": "Pauta de Reunião de Diretoria ROD 608"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41705"
+   },
+   "ROD609": {
+    "id": 41796,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 609/2026",
+    "assinatura": "11/05/2026",
+    "publicacao": "11/05/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52614,
+      "titulo": "Pauta de Reunião de Diretoria ROD 609"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41796"
+   },
+   "ROD610": {
+    "id": 41896,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 610/2026",
+    "assinatura": "20/05/2026",
+    "publicacao": "20/05/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52613,
+      "titulo": "Pauta de Reunião de Diretoria ROD 610"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41896"
+   },
+   "ROD611": {
+    "id": 42012,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 611/2026",
+    "assinatura": "08/06/2026",
+    "publicacao": "08/06/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52752,
+      "titulo": "Pauta de Reunião de Diretoria ROD 611"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42012"
+   },
+   "ROD612": {
+    "id": 42052,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 612/2026",
+    "assinatura": "17/06/2026",
+    "publicacao": "17/06/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53017,
+      "titulo": "Pauta de Reunião de Diretoria ROD 612"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42052"
+   },
+   "ROD613": {
+    "id": 42228,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 613/2026",
+    "assinatura": "01/07/2026",
+    "publicacao": "01/07/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53018,
+      "titulo": "Pauta de Reunião de Diretoria ROD 613"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42228"
+   },
+   "ROD614": {
+    "id": 42313,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 614/2026",
+    "assinatura": "20/07/2026",
+    "publicacao": "20/07/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53177,
+      "titulo": "Pauta de Reunião de Diretoria ROD 614"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42313"
+   },
+   "ROD615": {
+    "id": 42460,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 615/2026",
+    "assinatura": "29/07/2026",
+    "publicacao": "29/07/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53292,
+      "titulo": "Pauta de Reunião de Diretoria ROD 615"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42460"
+   },
+   "ROD616": {
+    "id": 42514,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 616/2026",
+    "assinatura": "10/08/2026",
+    "publicacao": "10/08/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53347,
+      "titulo": "Pauta de Reunião de Diretoria ROD 616"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42514"
+   },
+   "ROD617": {
+    "id": 42646,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 617/2026",
+    "assinatura": "19/08/2026",
+    "publicacao": "19/08/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53501,
+      "titulo": "Pauta de Reunião de Diretoria ROD 617"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42646"
+   },
+   "ROD618": {
+    "id": 42680,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 618/2026",
+    "assinatura": "02/09/2026",
+    "publicacao": "02/09/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53636,
+      "titulo": "Pauta de Reunião de Diretoria ROD 618"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42680"
+   },
+   "ROD619": {
+    "id": 42843,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 619/2026",
+    "assinatura": "21/09/2026",
+    "publicacao": "21/09/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53770,
+      "titulo": "Pauta da ROD 619"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42843"
+   },
+   "ROD620": {
+    "id": 42861,
+    "titulo": "Pauta de Reunião Ordinária da Diretoria 620/2026",
+    "assinatura": "30/09/2026",
+    "publicacao": "30/09/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53874,
+      "titulo": "Pauta da ROD 620"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42861"
+   }
+  },
+  "pautas_contador_declarado": 37,
   "acordaos": {
    "1": {
     "id": 41151,

@@ -451,6 +451,196 @@
   "sha256": "33c64e0ebfd865d511b06ac7ce2e1c64c70e92ea7027f3c0f438ff1ed643a253",
   "ok": true
  },
+ "sophia_pauta:ROD620:53874": {
+  "fonte": "sophia",
+  "reuniao": "ROD620",
+  "titulo": "Pauta da ROD 620",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42861",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53874&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53874.pdf",
+  "sha256": "fd94a19500d5632cf92ce6e2efb58f776808e9099b3d5c7309f615e24f0f4590",
+  "ok": true
+ },
+ "sophia_pauta:ROD619:53770": {
+  "fonte": "sophia",
+  "reuniao": "ROD619",
+  "titulo": "Pauta da ROD 619",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42843",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53770&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53770.pdf",
+  "sha256": "fb1f4cee0878eb93d50d3a6609add9335273274bce30dd7688c49cbe16db3aa2",
+  "ok": true
+ },
+ "sophia_pauta:ROD618:53636": {
+  "fonte": "sophia",
+  "reuniao": "ROD618",
+  "titulo": "Pauta de Reunião de Diretoria ROD 618",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42680",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53636&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53636.pdf",
+  "sha256": "b36b4a591699e6639b3717744e08adefa7890b4a539c3d2c83b9fe7e234baf40",
+  "ok": true
+ },
+ "sophia_pauta:ROD617:53501": {
+  "fonte": "sophia",
+  "reuniao": "ROD617",
+  "titulo": "Pauta de Reunião de Diretoria ROD 617",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42646",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53501&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53501.pdf",
+  "sha256": "2ad0415025efebdea108e349110c19e134f9142fe34ca23d1ba4a3f132a429ff",
+  "ok": true
+ },
+ "sophia_pauta:ROD616:53347": {
+  "fonte": "sophia",
+  "reuniao": "ROD616",
+  "titulo": "Pauta de Reunião de Diretoria ROD 616",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42514",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53347&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53347.pdf",
+  "sha256": "d9654d519f39d9b87f74f90f7fdb5ac48e0ddb6dcb054f845f9d82ead44d501a",
+  "ok": true
+ },
+ "sophia_pauta:ROD615:53292": {
+  "fonte": "sophia",
+  "reuniao": "ROD615",
+  "titulo": "Pauta de Reunião de Diretoria ROD 615",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42460",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53292&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53292.pdf",
+  "sha256": "2a730be974e8e10ba4d965f874b6d8215a4fc3a92094e34e6dc90ead3e3ddd34",
+  "ok": true
+ },
+ "sophia_pauta:ROD614:53177": {
+  "fonte": "sophia",
+  "reuniao": "ROD614",
+  "titulo": "Pauta de Reunião de Diretoria ROD 614",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42313",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53177&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53177.pdf",
+  "sha256": "49c9368424424b92c7cc0a545c719e7bb72eef2ad4b3fd5f87d1fd5d7e70e652",
+  "ok": true
+ },
+ "sophia_pauta:ROD613:53018": {
+  "fonte": "sophia",
+  "reuniao": "ROD613",
+  "titulo": "Pauta de Reunião de Diretoria ROD 613",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42228",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53018&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53018.pdf",
+  "sha256": "0a0164f83522a649829c1a797b8eabbca823e89a9f772df1c3001e31cdcd4c3b",
+  "ok": true
+ },
+ "sophia_pauta:ROD612:53017": {
+  "fonte": "sophia",
+  "reuniao": "ROD612",
+  "titulo": "Pauta de Reunião de Diretoria ROD 612",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42052",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53017&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53017.pdf",
+  "sha256": "882d35ffb272621fd6d794630e58abb18e3fedb790b3f0004e51262d57c19072",
+  "ok": true
+ },
+ "sophia_pauta:ROD611:52752": {
+  "fonte": "sophia",
+  "reuniao": "ROD611",
+  "titulo": "Pauta de Reunião de Diretoria ROD 611",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42012",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52752&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52752.pdf",
+  "sha256": "842a8e69a203de5234e1aa18890c4474d7a9465b9d383214109b9cbf62b9908c",
+  "ok": true
+ },
+ "sophia_pauta:ROD610:52613": {
+  "fonte": "sophia",
+  "reuniao": "ROD610",
+  "titulo": "Pauta de Reunião de Diretoria ROD 610",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41896",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52613&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52613.pdf",
+  "sha256": "66cc5202b361b9de83db80fc62b7303a36f1d943cda94876026f772839cf5dd1",
+  "ok": true
+ },
+ "sophia_pauta:ROD609:52614": {
+  "fonte": "sophia",
+  "reuniao": "ROD609",
+  "titulo": "Pauta de Reunião de Diretoria ROD 609",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41796",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52614&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52614.pdf",
+  "sha256": "a5570dd6b463400f14ac15df73b95c25fe2a50b289b1646576891efbfa9fcad5",
+  "ok": true
+ },
+ "sophia_pauta:ROD608:52414": {
+  "fonte": "sophia",
+  "reuniao": "ROD608",
+  "titulo": "Pauta de Reunião de Diretoria ROD 608",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41705",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52414&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52414.pdf",
+  "sha256": "8e704e352b3e7be80de21705128b89b104a80894049ab453dd10605658709cd1",
+  "ok": true
+ },
+ "sophia_pauta:ROD607:52327": {
+  "fonte": "sophia",
+  "reuniao": "ROD607",
+  "titulo": "Pauta de Reunião de Diretoria ROD 607",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41615",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52327&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52327.pdf",
+  "sha256": "ed0301e18179e94058b0d655f7ea2eda9d60856128edd238d077c033d1bec982",
+  "ok": true
+ },
+ "sophia_pauta:ROD606:52318": {
+  "fonte": "sophia",
+  "reuniao": "ROD606",
+  "titulo": "Pauta de Reunião de Diretoria ROD 606",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41461",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52318&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52318.pdf",
+  "sha256": "401428b458549efcd1909ad692d26afeb053b721fbf28e491807593251a8b670",
+  "ok": true
+ },
+ "sophia_pauta:ROD605:52113": {
+  "fonte": "sophia",
+  "reuniao": "ROD605",
+  "titulo": "Pauta de Reunião de Diretoria ROD 605",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41433",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52113&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52113.pdf",
+  "sha256": "9101c4614dbcb2661dfb05333a63022bf7d6faf58c14a6e3b4d3db531b8e38d9",
+  "ok": true
+ },
+ "sophia_pauta:ROD604:52009": {
+  "fonte": "sophia",
+  "reuniao": "ROD604",
+  "titulo": "Pauta de Reunião de Diretoria ROD 604",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41333",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52009&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52009.pdf",
+  "sha256": "290cf089aaca1c03f81b48f4fdecff655bdfd9aa20f66214fd2b272b5ee8e866",
+  "ok": true
+ },
+ "sophia_pauta:ROD603:51860": {
+  "fonte": "sophia",
+  "reuniao": "ROD603",
+  "titulo": "Pauta de Reunião de Diretoria ROD 603",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41214",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51860&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51860.pdf",
+  "sha256": "291ed68a48ce80720fec746a8163000cc539f779429318f08d5bf9022ab5d9c4",
+  "ok": true
+ },
+ "sophia_pauta:ROD602:51728": {
+  "fonte": "sophia",
+  "reuniao": "ROD602",
+  "titulo": "Pauta de Reunião de Diretoria ROD 602",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41108",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51728&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51728.pdf",
+  "sha256": "95447cde68272a921afe7dd4cbf66ec047d9c3d3be1eb77fda03ce04d59c6a28",
+  "ok": true
+ },
  "govbr:virtuais.html": {
   "fonte": "gov.br",
   "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/resultado-das-reunioes-virtuais-da-diretoria-1/",
