@@ -1,0 +1,437 @@
+{
+ "sondas": {
+  "govbr_reuniao_deliberativa": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa",
+   "http": "200",
+   "bytes": 208774,
+   "sha256": "3250a8c04dc1686c2d811d9201f61a6c784a21543c9f32815942e9c0649b4d5a",
+   "nota": "pagina-mae (links para calendario/pautas/atas; a pagina diz que Pautas e Atas sao iframes do www2)",
+   "arquivo": "fonte/ana/web/govbr_reuniao_deliberativa.html"
+  },
+  "govbr_calendario": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/calendario-das-reunioes-deliberativas",
+   "http": "200",
+   "bytes": 205157,
+   "sha256": "194f382817ad00327bb688ee6e948ed96b0c0e6ec797ac3c4bec1fcd2034bb6d",
+   "nota": "calendario oficial 2026 (denominador independente)",
+   "arquivo": "fonte/ana/web/govbr_calendario.html"
+  },
+  "govbr_atas": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/atas-das-reunioes-deliberativas",
+   "http": "200",
+   "bytes": 203553,
+   "sha256": "91c476104d4de39a8d1be125e024149889fcdb0c3602680356fbe135b0cd01b6",
+   "nota": "embute iframe www2/resolucoes/atasreuniao.asp",
+   "arquivo": "fonte/ana/web/govbr_atas.html"
+  },
+  "govbr_pautas": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/pautas-das-reunioes-deliberativas",
+   "http": "200",
+   "bytes": 209292,
+   "sha256": "13e8e169b4e6fb611b6669a00864045be986f1bdd3a09f1985cce3c07d61e18e",
+   "nota": "embute iframe www2/resolucoes/atosconvocatorios.asp",
+   "arquivo": "fonte/ana/web/govbr_pautas.html"
+  },
+  "govbr_circuitos": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/circuitos-deliberativos",
+   "http": "200",
+   "bytes": 201071,
+   "sha256": "09f387039521787a95923be9fc815e51956798f6af809453725a67eabfefff02",
+   "nota": "colecao de circuitos deliberativos",
+   "arquivo": "fonte/ana/web/govbr_circuitos.html"
+  },
+  "govbr_circuitos_atas": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/circuitos-deliberativos/atas-dos-circuitos-deliberativos",
+   "http": "200",
+   "bytes": 190888,
+   "sha256": "5036f3375353923a26064334aa264f9b1e4eed9bf66581db01b1a36ecf88bc5c",
+   "nota": "atas dos circuitos (colecao)",
+   "arquivo": "fonte/ana/web/govbr_circuitos_atas.html"
+  },
+  "govbr_diretoria": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/diretoria-colegiada",
+   "http": "200",
+   "bytes": 202954,
+   "sha256": "f19f96c7ab8b20e644122c823d8f927facd20777b823999545037b570df26408",
+   "nota": "composicao e mandatos",
+   "arquivo": "fonte/ana/web/govbr_diretoria.html"
+  },
+  "govbr_quem_e_quem": {
+   "url": "https://www.gov.br/ana/pt-br/composicao/diretoria-colegiada/quem-e-quem",
+   "http": "200",
+   "bytes": 203768,
+   "sha256": "bc70e71d766f9cf23ad132113ae87f3c9fb32fd6304efa6e874ff2a190160b46",
+   "nota": "quem e quem (interinos)",
+   "arquivo": "fonte/ana/web/govbr_quem_e_quem.html"
+  },
+  "govbr_administrativas": {
+   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reunioes-administrativas-da-diretoria-colegiada",
+   "http": "200",
+   "bytes": 203391,
+   "sha256": "f64e1d819ab3a1dc195f499253a76f30eb38c2f6d26430a852183cf5948f2ddf",
+   "nota": "reunioes ADMINISTRATIVAS (fora do escopo: sem votos de relator em materia regulatoria; so contagem)",
+   "arquivo": "fonte/ana/web/govbr_administrativas.html"
+  },
+  "www2_atas_deliberativas": {
+   "url": "https://www.ana.gov.br/www2/resolucoes/atasreuniao.asp",
+   "http": "200",
+   "bytes": 201355,
+   "sha256": "cb8e5a4533b900c2dc524f28d97b7b62182cd2b6500649bda2a34c045d225ffa",
+   "nota": "LISTAGEM de atas deliberativas (iframe, HTML estatico por ano)",
+   "arquivo": "fonte/ana/web/www2_atas_deliberativas.html"
+  },
+  "www2_pautas_deliberativas": {
+   "url": "https://www.ana.gov.br/www2/resolucoes/atosconvocatorios.asp",
+   "http": "200",
+   "bytes": 204476,
+   "sha256": "ac9cdda275142779ae3f7ec27eda63e6620bd9fda05d332997803c87084ccc8c",
+   "nota": "LISTAGEM de pautas deliberativas (iframe)",
+   "arquivo": "fonte/ana/web/www2_pautas_deliberativas.html"
+  },
+  "www2_atas_administrativas": {
+   "url": "https://www.ana.gov.br/www2/resolucoes/atasreuniao.asp?tiporeuniao=Administrativa",
+   "http": "200",
+   "bytes": 61060,
+   "sha256": "d96c4c9ba4d426bf2ffb21e8248aa2e28739b989ffad9c92f5b028359c9aa282",
+   "nota": "atas administrativas (fora do escopo)",
+   "arquivo": "fonte/ana/web/www2_atas_administrativas.html"
+  },
+  "www2_pautas_administrativas": {
+   "url": "https://www.ana.gov.br/www2/resolucoes/atosconvocatorios.asp?tiporeuniao=Administrativa",
+   "http": "200",
+   "bytes": 60955,
+   "sha256": "cab6640dd6fef0f8a19e9b30da4a7fc522c74ec59512b64a6a5a2d3854da0da8",
+   "nota": "pautas administrativas (fora do escopo)",
+   "arquivo": "fonte/ana/web/www2_pautas_administrativas.html"
+  },
+  "arquivos_ana_pdf": {
+   "url": "https://arquivos.ana.gov.br/atas/2026/ata-958-ordin-delib.pdf",
+   "http": "000",
+   "erro": "curl: (56) CONNECT tunnel failed, response 403",
+   "nota": "host que serve TODOS os PDFs (atas, pautas, votos). Aqui: CONNECT recusado (403) pelo proxy de saida do ambiente; via http nao resolve DNS; Chromium igual (ERR_TUNNEL_CONNECTION_FAILED). Nao contornado."
+  }
+ },
+ "gerado_em": "2026-10-08",
+ "listagens": {
+  "anos_atas_deliberativas": [
+   "2000",
+   "2001",
+   "2002",
+   "2003",
+   "2004",
+   "2005",
+   "2006",
+   "2007",
+   "2008",
+   "2009",
+   "2010",
+   "2011",
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025",
+   "2026",
+   "2027"
+  ],
+  "anos_pautas_deliberativas": [
+   "1899",
+   "2001",
+   "2002",
+   "2003",
+   "2004",
+   "2005",
+   "2006",
+   "2007",
+   "2008",
+   "2009",
+   "2010",
+   "2011",
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025",
+   "2026"
+  ],
+  "links_atas_total": 969,
+  "links_pautas_total": 976,
+  "atas_2026_bloco": 10,
+  "atas_2027_bloco_erro": 1,
+  "pautas_2026_bloco": 12,
+  "administrativas_2026": {
+   "atas": 33,
+   "pautas": 26
+  },
+  "observacao_paginacao": "listagem = 1 pagina HTML com TODOS os anos (blocos Assunto_AAAA colapsados); sem paginacao; o contador oficial nao existe, entao o denominador e (a) calendario e (b) numeracao"
+ },
+ "calendario_2026": [
+  "2026-02-02",
+  "2026-03-03",
+  "2026-03-17",
+  "2026-03-31",
+  "2026-04-28",
+  "2026-05-12",
+  "2026-06-09",
+  "2026-06-25",
+  "2026-07-28",
+  "2026-08-11",
+  "2026-08-25",
+  "2026-09-15",
+  "2026-09-29",
+  "2026-10-13",
+  "2026-10-27",
+  "2026-11-10",
+  "2026-11-24",
+  "2026-12-08",
+  "2026-12-15"
+ ],
+ "reunioes_2026": [
+  {
+   "numero": 949,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-02-02",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 949ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-949-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-949-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-02-02",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 949ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato949-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato949-ordin-delib.pdf"
+   },
+   "data": "2026-02-02"
+  },
+  {
+   "numero": 950,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-03-03",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 950ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-950-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-950-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-03-03",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 950ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato950-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato950-ordin-delib.pdf"
+   },
+   "data": "2026-03-03"
+  },
+  {
+   "numero": 951,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-03-17",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 951ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-951-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-951-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-03-17",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 951ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato951-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato951-ordin-delib.pdf"
+   },
+   "data": "2026-03-17"
+  },
+  {
+   "numero": 952,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-03-31",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 952ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-952-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-952-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-03-31",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 952ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato952-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato952-ordin-delib.pdf"
+   },
+   "data": "2026-03-31"
+  },
+  {
+   "numero": 953,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-04-28",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 953ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-953-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-953-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-04-28",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 953ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato953-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato953-ordin-delib.pdf"
+   },
+   "data": "2026-04-28"
+  },
+  {
+   "numero": 954,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-06-09",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 954ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-954-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-954-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-06-09",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 954ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato954-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato954-ordin-delib.pdf"
+   },
+   "data": "2026-06-09"
+  },
+  {
+   "numero": 955,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-06-25",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 955ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-955-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-955-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-06-25",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 955ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato955-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato955-ordin-delib.pdf"
+   },
+   "data": "2026-06-25"
+  },
+  {
+   "numero": 956,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-07-28",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 956ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-956-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-956-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-07-28",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 956ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato956-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato956-ordin-delib.pdf"
+   },
+   "data": "2026-07-28"
+  },
+  {
+   "numero": 957,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-08-11",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 957ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-957-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-957-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-08-11",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 957ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato957-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato957-ordin-delib.pdf"
+   },
+   "data": "2026-08-11"
+  },
+  {
+   "numero": 958,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2026-08-25",
+    "ano_do_bloco": "2026",
+    "rotulo": "Ata da 958ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2026/ata-958-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2026/ata-958-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-08-25",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 958ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato958-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato958-ordin-delib.pdf"
+   },
+   "data": "2026-08-25"
+  },
+  {
+   "numero": 959,
+   "tipo": "Ordinária",
+   "ata": {
+    "data_listada": "2027-09-15",
+    "ano_do_bloco": "2027",
+    "rotulo": "Ata da 959ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atas/2027/ata-959-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atas/2027/ata-959-ordin-delib.pdf"
+   },
+   "pauta": {
+    "data_listada": "2026-09-15",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 959ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato959-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato959-ordin-delib.pdf"
+   },
+   "data": "2026-09-15",
+   "divergencia_data": "pauta 2026-09-15 x ata 2027-09-15 (bloco 2027): erro de digitacao da fonte; vale a pauta"
+  },
+  {
+   "numero": 960,
+   "tipo": "Ordinária",
+   "pauta": {
+    "data_listada": "2026-09-29",
+    "ano_do_bloco": "2026",
+    "rotulo": "Pauta da 960ª Reunião Deliberativa Ordinária",
+    "arquivo_fonte": "/atos/2026/ato960-ordin-delib.pdf",
+    "url_pdf": "https://arquivos.ana.gov.br/atos/2026/ato960-ordin-delib.pdf"
+   },
+   "data": "2026-09-29"
+  }
+ ],
+ "circuitos_deliberativos": {
+  "ata_colecao": true,
+  "colecao_home": true
+ },
+ "colegiado_texto": "Atualmente os integrantes são: Ana Carolina Argolo Nascimento de Castro , diretora nomeada em 13 de abril de 2022. Fim do mandato: 5 de julho de 2026; Larissa Oliveira Rêgo, diretora nomeada em 28 de agosto de 2025. Fim do mandato: 16 de julho de 2029; Cristiane Collet Battiston , diretora nomeada em 28 de agosto de 2025. Fim do mandato: 15 de janeiro de 2030; e Leonardo Góes Silva , diretor nomeado em 28 de agosto de 2025. Fim do mandato: 15 de janeiro de 2029. --> Composição Diretoria Colegiada Unidade de Suporte",
+ "quem_e_quem_texto": "Diretoria Colegiada Diretora-Interina Ana Paula Fioreze DIRETORA INTERINA Telefone(s) : (61) 93300-8835 E-mail : ana.fioreze@ana.gov.br Ver Agenda (e-Agendas) Agenda Anterior Larissa Oliveira Rêgo DIRETORA Telefone(s) : (61) 93300-8838 E-mail : diretoralarissa@ana.gov.br Ver Agenda (e-Agendas) Cristiane Collet Battiston DIRETORA Telefone(s) : (61) 92005-3556 E-mail : agendacb@ana.gov.br Ver Agenda (e-Agendas) Leonardo Góes Silva DIRETOR(A)-PRESIDENTE INTERINO(A) Telefone(s) : (61) 93300-8833 E-mail : leonardo.goes@ana.gov.br Ver Agenda (e-Agendas) Compar"
+}

@@ -23,11 +23,22 @@ def estrato(x):
     return 'ata_acordao'
 PESO = {'ata_acordao': 9, 'vista': 5, 'retirada': 3, 'prorrog_dilig': 3, 'ata_aprov': 2, 'ac_sem_ata': 3, 'circ_unanime': 8, 'circ_dissenso': 4, 'circ_ausente': 2, 'ata_dissenso': 1}
 SEMENTE = int(sys.argv[5]) if len(sys.argv) > 5 else 2026
-random.seed(SEMENTE); grupos = collections.defaultdict(list)
-for x in D: grupos[estrato(x)].append(x)
-amostra = []
-for k, n in PESO.items():
-    L = sorted(grupos[k], key=lambda x: (x['reuniao'], x['item_n'], x['deliberacao'])); random.shuffle(L); amostra += [(k, x) for x in L[:n]]
+EXCLUIR = [int(x) for x in sys.argv[6].split(',')] if len(sys.argv) > 6 and sys.argv[6] else []   # sementes de amostras ANTERIORES: itens delas ficam fora ("itens novos")
+def sorteia(sem, excl=frozenset()):
+    random.seed(sem); grupos = collections.defaultdict(list)
+    for x in D: grupos[estrato(x)].append(x)
+    am = []
+    for k, n in PESO.items():
+        L = sorted(grupos[k], key=lambda x: (x['reuniao'], x['item_n'], x['deliberacao'])); random.shuffle(L); am += [(k, x) for x in [y for y in L if (y['reuniao'], y['deliberacao']) not in excl][:n]]
+    return am
+_ex = set()
+for sem_ in EXCLUIR: _ex |= {(x['reuniao'], x['deliberacao']) for _, x in sorteia(sem_)}
+amostra = sorteia(SEMENTE, _ex)
+if len(amostra) < N:   # estratos pequenos esgotados pelas amostras anteriores: completa com itens de ata_acordao/circ_unanime ainda nao sorteados (mesma semente)
+    random.seed(SEMENTE + 1); usados = {(x['reuniao'], x['deliberacao']) for _, x in amostra} | _ex
+    for est_ in ('ata_acordao', 'circ_unanime', 'ata_acordao', 'circ_unanime'):
+        L = sorted([y for y in D if estrato(y) == est_ and (y['reuniao'], y['deliberacao']) not in usados], key=lambda x: (x['reuniao'], x['item_n'], x['deliberacao'])); random.shuffle(L)
+        if L and len(amostra) < N: amostra.append((est_, L[0])); usados.add((L[0]['reuniao'], L[0]['deliberacao']))
 amostra = amostra[:N]
 def trecho_ata(x):
     m = [v for v in man.values() if v['serie'] == '229' and f'RCD {re.sub(chr(92)+"D","",x["reuniao"])} ' in v['resumo']]

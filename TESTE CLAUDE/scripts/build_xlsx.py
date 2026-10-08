@@ -448,7 +448,7 @@ pr_ = fatos.get('artesp_procedencia', {})
 NF.append(['ARTESP', 'E. Relator não publicado (parcial)', f"Procedência dos {pr_.get('pdfs_de_deliberacao', 0)} PDFs: superintendência {pr_.get('superintendencia', 0)}; diretor (DIR-RC) {pr_.get('diretoria_dir_rc', 0)}; Presidência {pr_.get('presidencia', 0)}", 'FEITO para os que a fonte informa / LIMITE DA FONTE no resto', 'A ARTESP não diz quem relatou na maioria das deliberações; as de procedência diretor/Presidência entram como PROPONENTE nominal (' + str(sum(1 for v in V if v['agencia'] == 'ARTESP' and v['voto'].startswith('PROPONENTE'))) + ' votos)', 'Resto em Faltam na fonte'])
 for ag in AGS:
     vs = [v for v in V if v['agencia'] == ag]; n_inf = sum(1 for v in vs if v['proveniencia'] == 'inferido')
-    NF.append([ag, 'G. Voto individual inferido da unanimidade', f'{n_inf} de {len(vs)} linhas ({n_inf * 100 // len(vs)}%)', 'LIMITE ESTRUTURAL', 'Em unanimidade a ata não traz o voto de cada diretor; só vídeos das sessões trazem', 'Não perseguido; usar a coluna Evidência para separar individual de inferida'])
+    NF.append([ag, 'G. Voto individual inferido da unanimidade', f'{n_inf} de {len(vs)} linhas ({n_inf * 100 // max(1, len(vs))}%)', 'LIMITE ESTRUTURAL', 'Em unanimidade a ata não traz o voto de cada diretor; só vídeos das sessões trazem', 'Não perseguido; usar a coluna Evidência para separar individual de inferida'])
 for sg, x in EXTRAS.items(): NF += x['nao_feito']
 for ag in AGS: NF.append([ag, 'H. Auditoria humana de 60 deliberações (resultado e presença)', 'não feita', 'NÃO FEITO', 'Só há amostras de tema (AMOSTRA_TEMAS.md) e conferência automática', 'Sortear e conferir 60 itens'])
 

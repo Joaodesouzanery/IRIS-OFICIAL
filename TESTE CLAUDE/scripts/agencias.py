@@ -18,6 +18,8 @@ AGENCIAS = [
  {'sg': 'ANEEL', 'json': 'aneel.json', 'desc': 'texto de decisão das reuniões públicas (Dados Abertos)', 'ex_fora_total': True,
   'diverge_ok': ('divergência de data', 'buraco', 'truncad', 'sem pedinte'),
   'url': 'https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/reunioes-publicas'},
+ {'sg': 'ANA', 'json': 'ana.json', 'desc': 'atas da Diretoria Colegiada (PDFs em arquivos.ana.gov.br)', 'ex_fora_total': False, 'diverge_ok': ('NÃO baixado', 'bloqueado pela fonte'),
+  'url': 'https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/diretoria-colegiada/reunioes-deliberativas'},
 ]
 # Novas (ANS, ANA, ...) entram aqui quando o json existir; arquivo ausente = agência ignorada (degrada sem quebrar)
 def ativas(): return [a for a in AGENCIAS if os.path.exists(a['json'])]

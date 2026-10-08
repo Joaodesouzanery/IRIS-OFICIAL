@@ -310,3 +310,14 @@ SETOR['ANEEL'] = {'modal': 'Energia elétrica', 'temas': [
     ('Qualidade e consumidor', 'Qualidade do serviço e direitos do consumidor', [r'qualidade', r'consumidor', r'dec\b', r'fec\b', r'compensacao'], 5),
     ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio'], 4),
 ]}
+
+SETOR['ANA'] = {'modal': 'Recursos hídricos e saneamento', 'temas': [
+    ('Outorgas e autorizações', 'Outorga / reserva de disponibilidade hídrica', [r'outorga', r'reserva de disponibilidade', r'direito de uso', r'dominio da uniao', r'captacao'], 8),
+    ('Saneamento básico', 'Normas de referência e regulação do saneamento', [r'saneamento', r'norma de referencia', r'abastecimento de agua', r'esgot', r'residuos solidos', r'drenagem'], 8),
+    ('Fiscalização e sanções', 'Auto de infração / multa', [r'auto de infracao', r'multa', r'infracao', r'penalidade', r'fiscaliza'], 7),
+    ('Segurança de barragens', 'Barragens e reservatórios', [r'barragem', r'reservatorio', r'seguranca de barragens', r'operacao de reservatorio', r'sala de situacao'], 7),
+    ('Regulação e normas', 'Resolução / consulta pública / agenda regulatória', [r'resolucao', r'consulta publica', r'audiencia publica', r'agenda regulatoria', r'norma', r'regulamento'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos'], 6),
+    ('Cobrança e arrecadação', 'Cobrança pelo uso de recursos hídricos', [r'cobranca', r'arrecadacao', r'tarifa', r'prestacao de contas'], 6),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'acordo de cooperacao'], 4),
+]}

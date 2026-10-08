@@ -1,14 +1,162 @@
 {
  "metodo": "Amostra estratificada com semente fixa (scripts/anatel_auditoria.py: acórdãos de ata, vistas, retiradas, prorrogações/diligências, aprovações de ata, acórdãos sem ata, circuitos unânimes/dissenso/ausência). Para cada item o autor leu o texto-fonte (ata, acórdão ou ata de circuito) e conferiu campo a campo. Vereditos humanos.",
  "amostras": {
-  "A1": {"semente": 2026, "n": 40, "descricao": "amostra 1, 1ª leitura (antes das correções)",
-         "campos": {"data": [40, 40], "processo": [40, 40], "deliberacao (nº do acórdão/item)": [40, 40], "relator": [39, 40], "tipo_item": [40, 40], "interessado": [40, 40], "resultado/ação": [36, 40], "modo e vencidos (partes)": [40, 40], "voto por conselheiro (linhas)": [40, 40], "proveniencia (nominal/inferido)": [40, 40]},
-         "erros": ["#10 RCD951 V8: rótulo 'Relatora:' (feminino) não reconhecido -> relator em branco e resultado poluído", "#11 RCD956 V12: linha '012) processo - tema' vazou para o resultado", "#34 CD75 e #39 CD184: resultado de circuito sem 'Decisão' mostrava só o nº do voto / considerandos do relator", "ausência de substituto mostrava motivo genérico em vez do texto da ata (férias/missão)"],
-         "nota": "erros corrigidos no parser e itens relidos"},
-  "A2": {"semente": 99, "n": 40, "descricao": "amostra 2, independente, depois das correções",
-         "campos": {"data": [40, 40], "processo": [40, 40], "deliberacao (nº do acórdão/item)": [40, 40], "relator": [40, 40], "tipo_item": [40, 40], "interessado": [40, 40], "resultado/ação": [40, 40], "modo e vencidos (partes)": [40, 40], "voto por conselheiro (linhas)": [40, 40], "proveniencia (nominal/inferido)": [39, 40]},
-         "erros": ["#1 RCD950 R46 Acórdão 45: 'O Conselheiro Alexandre Reis Siqueira Freire acompanhou a proposta do Relator incluindo o Voto nº…' estava como ACOMPANHOU inferido; corrigido para nominal"],
-         "nota": "o único erro foi corrigido e o item relido (nominal)"}
+  "A1": {
+   "semente": 2026,
+   "n": 40,
+   "descricao": "amostra 1, 1ª leitura (antes das correções)",
+   "campos": {
+    "data": [
+     40,
+     40
+    ],
+    "processo": [
+     40,
+     40
+    ],
+    "deliberacao (nº do acórdão/item)": [
+     40,
+     40
+    ],
+    "relator": [
+     39,
+     40
+    ],
+    "tipo_item": [
+     40,
+     40
+    ],
+    "interessado": [
+     40,
+     40
+    ],
+    "resultado/ação": [
+     36,
+     40
+    ],
+    "modo e vencidos (partes)": [
+     40,
+     40
+    ],
+    "voto por conselheiro (linhas)": [
+     40,
+     40
+    ],
+    "proveniencia (nominal/inferido)": [
+     40,
+     40
+    ]
+   },
+   "erros": [
+    "#10 RCD951 V8: rótulo 'Relatora:' (feminino) não reconhecido -> relator em branco e resultado poluído",
+    "#11 RCD956 V12: linha '012) processo - tema' vazou para o resultado",
+    "#34 CD75 e #39 CD184: resultado de circuito sem 'Decisão' mostrava só o nº do voto / considerandos do relator",
+    "ausência de substituto mostrava motivo genérico em vez do texto da ata (férias/missão)"
+   ],
+   "nota": "erros corrigidos no parser e itens relidos"
+  },
+  "A2": {
+   "semente": 99,
+   "n": 40,
+   "descricao": "amostra 2, independente, depois das correções",
+   "campos": {
+    "data": [
+     40,
+     40
+    ],
+    "processo": [
+     40,
+     40
+    ],
+    "deliberacao (nº do acórdão/item)": [
+     40,
+     40
+    ],
+    "relator": [
+     40,
+     40
+    ],
+    "tipo_item": [
+     40,
+     40
+    ],
+    "interessado": [
+     40,
+     40
+    ],
+    "resultado/ação": [
+     40,
+     40
+    ],
+    "modo e vencidos (partes)": [
+     40,
+     40
+    ],
+    "voto por conselheiro (linhas)": [
+     40,
+     40
+    ],
+    "proveniencia (nominal/inferido)": [
+     39,
+     40
+    ]
+   },
+   "erros": [
+    "#1 RCD950 R46 Acórdão 45: 'O Conselheiro Alexandre Reis Siqueira Freire acompanhou a proposta do Relator incluindo o Voto nº…' estava como ACOMPANHOU inferido; corrigido para nominal"
+   ],
+   "nota": "o único erro foi corrigido e o item relido (nominal)"
+  },
+  "A3": {
+   "semente": 777,
+   "n": 40,
+   "descricao": "amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos",
+   "campos": {
+    "data": [
+     40,
+     40
+    ],
+    "processo": [
+     40,
+     40
+    ],
+    "deliberacao (nº do acórdão/item)": [
+     40,
+     40
+    ],
+    "relator": [
+     40,
+     40
+    ],
+    "tipo_item": [
+     40,
+     40
+    ],
+    "interessado": [
+     40,
+     40
+    ],
+    "resultado/ação": [
+     40,
+     40
+    ],
+    "modo e vencidos (partes)": [
+     40,
+     40
+    ],
+    "voto por conselheiro (linhas)": [
+     40,
+     40
+    ],
+    "proveniencia (nominal/inferido)": [
+     39,
+     40
+    ]
+   },
+   "erros": [
+    "#19 RCD956 Item V5 (conversão em diligência 'nos termos do Voto nº 19/2026/AF'): Alexandre, autor do voto, estava ACOMPANHOU inferido; corrigido para nominal (autor da proposta citada na ata) — mesmo erro em 9 outras linhas de itens sem acórdão (V1 RCD950; V1-V4,V7,V8 RCD953; V5,V26 RCD956)"
+   ],
+   "nota": "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  }
  },
- "resumo": "1ª leitura: 10 campos × 40 itens, menor taxa 90% (resultado/ação), relator 97,5%; após correções, 2ª amostra independente: 99,75% (399/400), menor campo 97,5% (proveniência)."
+ "resumo": "1ª leitura: 10 campos × 40 itens, menor taxa 90% (resultado/ação), relator 97,5%; após correções, 2ª amostra independente: 99,75% (399/400), menor campo 97,5% (proveniência). Rodada 3 (itens novos, semente 777): 399/400 campos (99,75%), menor campo 97,5% (proveniência), erro corrigido e item relido."
 }

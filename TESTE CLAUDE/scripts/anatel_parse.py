@@ -114,7 +114,7 @@ def tokens_alineas(s):
     for m in re.finditer(r'[“"]([a-z](?:\.\d+)*)[”"](\s+a\s+[“"]([a-z](?:\.\d+)*)[”"])?', s):
         res.append((m[1], m[3]))
     return res
-MODO_VENC = 'maioria (inferida: a fonte registra vencido nominal, mas não usa "por maioria")'
+MODO_VENC = 'não unânime (a fonte registra vencido nominal, mas não usa "por maioria"; modo NÃO declarado)'
 MODO = re.compile(r'por unanimidade(?: dos votantes)?|por maioria(?: de (\w+) votos)?', re.I)
 RE_ITENS = re.compile(r'\b(?:it(?:em|ens)|pontos?|subit(?:em|ens)|incisos?)\s+((?:[\d]+(?:\.[\dIVXa-z]+)*)(?:\s*(?:,|e|a)\s*(?:[\d]+(?:\.[\dIVXa-z]+)*))*)', re.I)
 def rotulo_tokens(toks):
@@ -214,6 +214,7 @@ def analisa_dispositivo(disp, relator, participantes):
         partes.append({'parte': 'demais alíneas (' + ', '.join(k for k in restantes if '.' not in k) + ')', 'acao': corta(' '.join(f'{k}) {alin[k]}' for k in restantes), 700), 'modo': 'sem registro', 'vencidos': [], 'acompanharam': [], 'maioria_n': None})
     return partes, alin
 
+INICIAIS = {'AF': 'Alexandre Reis Siqueira Freire', 'EH': 'Edson Victor Eugênio de Holanda', 'OP': 'Octavio Penna Pieranti', 'PR': 'Carlos Manuel Baigorri', 'NP': 'Nilo Pasquali', 'VA': 'Vicente Bandeira de Aquino Neto', 'CL': 'Cristiana Camarate Silveira Martins Leão Quinalia', 'SR': 'Suzana Silva Rodrigues'}
 MESES_N = {k: v for k, v in MES.items()}
 ACS = {}   # numero -> dict (primeiro) ; ACS_ALL lista
 ACS_ALL = []
@@ -409,7 +410,11 @@ R = []; D = []; V = []
 def add_reuniao(tag, titulo, tipo, data, presentes, ausentes, obs=''):
     R.append({'reuniao': tag, 'titulo': titulo, 'tipo': tipo, 'data': data, 'presentes': presentes, 'ausentes': ausentes, 'obs': obs})
 def partes_out(ps):
-    return [{'parte': p['parte'], 'acao': p['acao'], 'modo': p['modo'], 'vencidos': p['vencidos']} for p in ps]
+    return [dict({'parte': p['parte'], 'acao': p['acao'], 'modo': p['modo'], 'vencidos': p['vencidos']}, **({'sem_voto': p['sem_voto']} if p.get('sem_voto') else {})) for p in ps]
+SV_MANDATO = 'SEM VOTO (não pôde se manifestar — término do mandato do ex-Conselheiro; parte decidida por unanimidade dos votantes)'
+PROC_RELATOR = 'RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)'
+SV_PARTE = 'SEM VOTO (não pôde se manifestar — término do mandato)'
+ACOMP_PARCIAL = 'ACOMPANHOU (parcialmente: acompanhou a proposta do Relator, propôs alterações e ficou vencido quanto a elas)'
 def voto_por_parte_txt(rows):
     return '; '.join(f'{p}: {v}' for p, v in rows)
 
@@ -422,19 +427,25 @@ def emite_votos(reuniao, data, processo, delib, roster, relator, partes, base_pr
             vv, pv = extra[dir_]; linhas.append({'reuniao': reuniao, 'data': data, 'processo': processo, 'deliberacao': delib, 'diretor': dir_, 'voto': vv, 'proveniencia': pv, 'voto_por_parte': ''}); continue
         pr = []
         for p in partes:
-            if dir_ in p['vencidos']: pr.append((p['parte'], 'DIVERGIU', 'nominal'))
+            if dir_ in p.get('sem_voto', []): pr.append((p['parte'], SV_PARTE, 'nominal'))   # "nao pode se manifestar" (fim de mandato): sem voto NESTA parte
+            elif dir_ in p['vencidos']: pr.append((p['parte'], 'DIVERGIU', 'nominal'))
             elif dir_ == relator: pr.append((p['parte'], 'RELATOR (voto proferido)', 'nominal'))
+            elif dir_ in p.get('parcial', []): pr.append((p['parte'], ACOMP_PARCIAL, 'nominal'))
             elif dir_ in p.get('acompanharam', []): pr.append((p['parte'], 'ACOMPANHOU', 'nominal'))
             else:
                 if p['modo'] == 'sem registro': pr.append((p['parte'], 'ACOMPANHOU', 'REVISAR'))
                 else: pr.append((p['parte'], 'ACOMPANHOU', 'inferido'))
-        if any(x[1] == 'DIVERGIU' for x in pr): vv, pv = 'DIVERGIU', 'nominal'
+        vot = [x for x in pr if not x[1].startswith('SEM VOTO')]   # partes em que o conselheiro efetivamente votou
+        if not vot: vv, pv = SV_MANDATO, 'nominal'
+        elif any(x[1] == 'DIVERGIU' for x in vot): vv, pv = 'DIVERGIU', 'nominal'
         elif dir_ == relator: vv, pv = 'RELATOR (voto proferido)', 'nominal'
-        elif all(x[2] == 'nominal' for x in pr): vv, pv = 'ACOMPANHOU', 'nominal'
-        elif any(x[2] == 'REVISAR' for x in pr): vv, pv = 'ACOMPANHOU', 'REVISAR'
+        elif any(x[1] == ACOMP_PARCIAL for x in vot): vv, pv = ACOMP_PARCIAL, 'nominal'
+        elif any(x[2] == 'REVISAR' for x in vot): vv, pv = 'ACOMPANHOU', 'REVISAR'
+        elif any(x[2] == 'nominal' for x in vot): vv, pv = 'ACOMPANHOU', 'nominal'   # nominal em >=1 parte (citado em "Acompanharam"); as demais partes seguem a unanimidade declarada (ver voto_por_parte)
         else: vv, pv = 'ACOMPANHOU', 'inferido'
         vpp = ''
-        if len(pr) > 1: vpp = voto_por_parte_txt([(a, b) for a, b, _ in pr])
+        if len(pr) > 1 or len(vot) < len(pr):
+            vpp = voto_por_parte_txt([(a, b + (' [inferido da unanimidade declarada]' if c == 'inferido' else '')) for a, b, c in pr])
         linhas.append({'reuniao': reuniao, 'data': data, 'processo': processo, 'deliberacao': delib, 'diretor': dir_, 'voto': vv, 'proveniencia': pv, 'voto_por_parte': vpp})
     return linhas
 
@@ -482,7 +493,7 @@ for tag in sorted(ATAS, key=lambda k: int(re.sub(r'\D', '', k))):
         vot = {n: ('ACOMPANHOU', 'inferido') for n in pres}
         D.append({'reuniao': tag, 'data': at['data'], 'processo': proc, 'deliberacao': f'Aprovação da ata da {num - 1}ª reunião ({tag})', 'item_n': '0', 'relator': '', 'interessado': 'Conselho Diretor da ANATEL',
                   'assunto': f'Aprovação da ata da {num - 1}ª Reunião do Conselho Diretor', 'resultado': 'Ata ' + resa[1], 'voto_doc': '', 'decisao_texto': corta(resa[0], 400), 'tipo_item': 'Aprovação de ata',
-                  'secao': 'Abertura', 'unidade': 'Secretaria do Conselho Diretor - SCD', 'partes': [{'parte': 'ata', 'acao': 'aprovar a ata da reunião anterior', 'modo': 'unanimidade' if 'sem restri' in resa[1] else 'sem registro', 'vencidos': []}], 'origem': at['url']})
+                  'secao': 'Abertura', 'unidade': 'Secretaria do Conselho Diretor - SCD', 'partes': [{'parte': 'ata', 'acao': 'aprovar a ata da reunião anterior ("' + resa[0].rstrip('.') + '"; a fonte não registra "por unanimidade" nem votação nominal)', 'modo': 'sem registro', 'vencidos': []}], 'origem': at['url']})
         for n in pres:
             V.append({'reuniao': tag, 'data': at['data'], 'processo': proc, 'deliberacao': D[-1]['deliberacao'], 'diretor': n, 'voto': 'ACOMPANHOU', 'proveniencia': 'inferido', 'voto_por_parte': ''})
         for n in aus:
@@ -555,6 +566,8 @@ for tag in sorted(ATAS, key=lambda k: int(re.sub(r'\D', '', k))):
             if not ac and relator_v in roster: ex[relator_v] = ('ACOMPANHOU', 'inferido')
             resultado = corta(res, 400)
         else:
+            if not ac and (prorrog or dilig) and relator_v in roster:   # prorrogacao de prazo / conversao em diligencia = ato PROCEDURAL do relator, nao voto de merito
+                ex[relator_v] = (PROC_RELATOR, 'nominal')
             if vistor_cab and not ac and 'prorroga' in rs and 'relatoria' in rs: pass
             # proponente em sede de vista (relator formal ausente/ex-conselheiro): quem 'Trazido por' nao e relator
             pass
@@ -565,7 +578,11 @@ for tag in sorted(ATAS, key=lambda k: int(re.sub(r'\D', '', k))):
         if tipo == 'Deliberação':
             for n in [x for x, _ in apresentou] + antes:   # apresentou voto-vista / 'acompanhou a proposta... incluindo o Voto' na ata: posicao registrada nominalmente
                 for l in linhas:
-                    if l['diretor'] == n and l['voto'] == 'ACOMPANHOU' and l['proveniencia'] == 'inferido': l['proveniencia'] = 'nominal'
+                    if l['diretor'] == n and l['voto'] == 'ACOMPANHOU' and l['proveniencia'] == 'inferido': l['proveniencia'] = 'nominal'; l['voto_por_parte'] = l['voto_por_parte'].replace(' [inferido da unanimidade declarada]', ' [nominal: posição registrada na ata do item]')
+        if tipo == 'Deliberação' and not ac:   # item sem acordao decidido 'nos termos do Voto/Analise nº N/AAAA/XX': XX (iniciais) e autor nominal da proposta -> posicao do autor e nominal, nao inferida
+            for sig_ in dict.fromkeys(re.findall(r'(?:Voto|Análise) nº ?\d+/\d{4}/([A-Z]{2})\b', res)):
+                for l in linhas:
+                    if l['diretor'] == INICIAIS.get(sig_) and l['voto'] == 'ACOMPANHOU' and l['proveniencia'] == 'inferido': l['proveniencia'] = 'nominal'
         # quem esta presente mas fora do rol de votantes (acordao): sem voto
         if ac:
             for n in pres:
@@ -863,7 +880,9 @@ nf = [[AG, 'Voto individual dos conselheiros nas REUNIÕES', f'{n_inf} de {len(V
       [AG, 'Acórdãos 82 e 173', '2 números', 'BLOQUEADO PELA FONTE', 'Ausentes da série Acórdão do SEI', 'Ver pendências'],
       [AG, 'Atas das reuniões 957, Extraordinária 32 e 958', '3 reuniões', 'LIMITE DA FONTE', 'Ata sai 1–2 meses depois', 'Reexecutar o pipeline'],
       [AG, 'Texto integral do dispositivo por item', 'decisao_texto limitado a 1500 caracteres', 'LIMITE DO MODELO', 'Dispositivos longos truncados', 'Ler o acórdão (url_acordao)'],
-      [AG, 'Sustentações orais, comunicações e registros extrapauta das atas', f'{sum(len(a["extra"]) for a in ATAS.values())} registros extrapauta', 'FORA DO ESCOPO', 'Não são deliberação', '']]
+      [AG, 'Sustentações orais, comunicações e registros extrapauta das atas', f'{sum(len(a["extra"]) for a in ATAS.values())} registros extrapauta', 'FORA DO ESCOPO', 'Não são deliberação', ''],
+      [AG, 'Fase 10 – 4 achados da auditoria (Ac.43/131, Ac.194, CD215, atas/prorrogações)', 'FECHADOS e medidos (08/10/2026): Ac.43/131 Vicente sem voto nas partes "unanimidade dos votantes" (voto_por_parte); Ac.194 Alexandre e Carlos ACOMPANHOU nominal; CD215 Carlos ACOMPANHOU (parcialmente) em vez de DIVERGIU; 7 atas com modo "sem registro" (a ata só diz "aprovada sem restrições"); 47 relatores em prorrogação/diligência com rótulo procedural (antes "RELATOR (voto proferido)")', 'FEITO (medido)', 'Varredura independente (scripts/anatel_varredura.py, não importa o parser) sobre os 584 itens contra texto_anatel: contra o JSON anterior apontava 2+7+47+1 diferenças nesses 4 achados; contra o JSON novo restam 16 diferenças, todas examinadas: 0 erro de voto (2 "acompanha parcialmente + vencido neste ponto" = DIVERGIU parcial coerente, 1 CD215 tratado, 1 acórdão que lista Nilo como participante mas a ata do circuito 55 o dá ausente (conflito da fonte; vale a ata), 1 vista já concluída, 9 relatores ex-conselheiros em diligência, 1 relator inválido na ata CD144, 1 relator citado na mesma frase do vencido CD65). Reauditoria humana de 40 itens novos (semente 777): 399/400 campos', 'Rodar scripts/anatel_varredura.py a cada rodada'],
+      [AG, 'Limites que permanecem em votos', 'a) 163 de 164 circuitos sem acórdão têm modo "unanimidade/maioria" derivado dos votos nominais da própria ata (Resumo dos Votos), não de frase "por unanimidade"; b) conversão em diligência de item em sede de vista: relator ex-conselheiro sem linha; c) CD215: Carlos "acompanha parcialmente" – o rótulo ACOMPANHOU (parcialmente) é leitura do texto, a fonte não diz "por maioria" nem o placar', 'LIMITE DA FONTE', 'A fonte não registra o placar nem o modo nesses casos; nada foi inventado (modo de CD215 = "não unânime ... NÃO declarado")', 'Extrato nominal à SCD']]
 DIRET = [n for n, _, _ in ROST]
 json.dump({'reunioes': R, 'deliberacoes': D, 'votos': V, 'qualidade': Q, 'cobertura': cob, 'pendencias': PEND, 'nao_feito': nf, 'diretores': DIRET, 'colegiado': 'Conselho Diretor', 'meses_nota': ''},
           open(out, 'w'), ensure_ascii=False, indent=1)

@@ -60,16 +60,44 @@
    "votos": "38/40 resolvidos (95%) + 2 REVISAR; 0 erros",
    "erros": "RPO13-4: 'SANÇÃO/APLICAÇÃO' espúrio ('ao aplicar os dispositivos') e redundante; RPO4-9: prorrogação de vista por maioria mostrava '60 dias' (voto vencido) em vez de 'até a RPO de 24/03/2026'",
    "correcao": "'aplicar' ignorado após 'ao/para'; prazo da prorrogação lido só da sentença de decisão; prefixo só quando acrescenta rótulo -- os 2 itens foram reconferidos depois da correção"
+  },
+  {
+   "semente": 777,
+   "momento": "rodada 6 (reauditoria humana-like, 60 itens NOVOS, estratificada; leitura do texto antes do JSON; sorteio excluiu as sementes 2026/7/99/2027/31415/31416)",
+   "n": 60,
+   "relator": "60/60 (100%)",
+   "resultado": "leitura de rótulos sem defeito visível; não pontuada",
+   "partes": "100% (contagem de marcadores conferida item a item)",
+   "vencidos": "100% (RPC8-9, RPC5-6, RPO8-35, RPO4-11, RPC15-16, RPO11-17, RPO11-11, RPO13-13, RPO8-7)",
+   "votos": "57/60 itens (95%) ANTES das correções: 3 itens com linha errada (4 linhas)",
+   "erros": "RPO10-2: Agnes 'ACOMPANHOU (inferido)' embora o texto diga que ela proferiu voto subsistente (art. 54); RPO9-4: Gentil (voto-vista) e Agnes (seguidora) como 'VOTOU (antes da vista)' embora o voto-vista negue a fixação de prazo que o relator Willamy mantém; RPC1-7: Gentil (voto-vista, 3 EUSTs) como 'VOTOU (antes da vista)' embora o relator Agnes fixe fator de 57,9% (e em RPC8-9 Agnes adota o voto-vista)",
+   "correcao": "subsistente também para diretor do colegiado atual (não só ex-diretor); divergência antes da vista por regra de voto-vista autoral em campo separado do relator (substitui a exceção manual); seguidores do autor herdam o rótulo. Caveat: 3 dos 9 itens de vista já tinham sido vistos na varredura independente (não cego); os demais 51 foram lidos antes de ver o JSON"
+  },
+  {
+   "semente": 778,
+   "momento": "rodada 7 (pós-correções; 60 itens NOVOS, excluídas todas as anteriores inclusive 777)",
+   "n": 60,
+   "relator": "60/60 (100%)",
+   "resultado": "59/60: RPO4-32 parte III com rótulo de fallback truncado ('NÃO APLICAR A PENALIDADE DE RESOLUÇÃO DO…'); demais sem defeito visível na leitura",
+   "partes": "100%",
+   "vencidos": "n/a (os estratos com maioria foram esgotados pelas exclusões; 11 itens em 777 = 100%)",
+   "votos": "60/60 itens (100%), 0 linhas erradas (cerca de 300 linhas)",
+   "erros": "nenhum erro de voto; 1 rótulo de resultado truncado (RPO4-32 III)",
+   "correcao": "nenhuma necessária nos votos; rótulo de resultado fica como achado aberto"
   }
  ],
  "final": {
-  "amostra_final": "semente 31415, 40 itens",
+  "amostra_final": "semente 778, 60 itens novos pós-correções (rodada 777 como rodada de achados)",
   "relator": 1.0,
-  "resultado": 0.95,
+  "resultado": 0.983,
   "partes": 1.0,
   "vencidos": 1.0,
-  "votos_resolvidos": 0.95,
+  "votos_resolvidos": 1.0,
   "votos_errados": 0,
-  "observacao": "taxas acima são as da leitura ANTES da última correção (sem viés de ajuste); depois dela os 2 erros de resultado foram corrigidos e reconferidos. Todos os campos >= 95%. 5 rodadas x 40 = 200 itens lidos (~20% dos 1001)."
+  "observacao": "Rodada 777 (antes das correções): votos 95% (57/60 itens); após as 3 correções, rodada 778 em itens novos: votos 100% (60/60). 'resultado' = 59/60, leitura menos rigorosa que a dos votos. Soma das duas rodadas: 120 itens, 3 itens com voto errado antes da correção. Acumulado com as 5 rodadas anteriores: 320 itens lidos (~32% dos 1001); a varredura 100% (scripts/aneel_varredura2.py) cobre os 1001."
+ },
+ "varredura": {
+  "script": "scripts/aneel_varredura2.py (independente do parser) + scripts/aneel_varredura.py",
+  "resultado": "ver relatório da fase 10b: diferenças brutas, falsos positivos e erros reais por categoria"
  }
 }

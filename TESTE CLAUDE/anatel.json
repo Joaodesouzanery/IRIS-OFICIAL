@@ -3836,8 +3836,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -5931,7 +5931,7 @@
    "relator": "Vicente Bandeira de Aquino Neto",
    "interessado": "CLARO S.A.",
    "assunto": "Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 131/2023/CODI/SCO, de 31 de maio de 2023, que aplicou sanção por descumprimento de dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.",
-   "resultado": "a) conhecer e do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, unicamente para: | b) conhecer da petição extemporânea SEI nº 14108682, protocolizada em 30 de julho de 2025, para, no mérito, indeferi-la; | c) efetuar, de ofício, os seguintes ajustes: | d) como resultado das medidas descritas nas alíneas \"a\" e \"c\", rever a decisão consubstanciada no Despacho Decisório nº 11/2020/CODI/SCO (SEI nº 5164735), de 17 de setembro de 2020, a fim de retificar a… | e) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, nos termos descritos no Voto nº 6/2025/OP (SE… | f) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, c… [alíneas a, b e c.2–c.5: unanimidade ; alíneas c.1 e d: maioria (vencido(s): Edson Victor Eugênio de Holanda, Carlos Manuel Baigorri) ; demais alíneas (e, f): unanimidade]",
+   "resultado": "a) conhecer e do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, unicamente para: | b) conhecer da petição extemporânea SEI nº 14108682, protocolizada em 30 de julho de 2025, para, no mérito, indeferi-la; | c) efetuar, de ofício, os seguintes ajustes: | d) como resultado das medidas descritas nas alíneas \"a\" e \"c\", rever a decisão consubstanciada no Despacho Decisório nº 11/2020/CODI/SCO (SEI nº 5164735), de 17 de setembro de 2020, a fim de retificar a… | e) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, nos termos descritos no Voto nº 6/2025/OP (SE… | f) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, c… [alíneas a, b e c.2–c.5: unanimidade ; alíneas c.1 e d: maioria (vencido(s): Edson Victor Eugênio de Holanda, Carlos Manuel Baigorri) ; demais alíneas (e, f): unanimidade dos votantes]",
    "voto_doc": "Voto nº 6/2025/OP (SEI nº 14733733) | https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=16499385&id_orgao_publicacao=0",
    "decisao_texto": "Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel: a) conhecer e do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, unicamente para: a.1) rever a classificação da infração ao art. 62 do RGC, de procedimental para pontual, em relação a 2 (dois) usuários do Serviço Móvel Pessoal - SMP, sendo uma irregularidade identificada em Pernambuco e outra no Estado do Rio de Janeiro; a.2) descaracterizar a infração ao art. 68, inciso I, do RGC, em relação ao atendimento de usuários do SMP, no call center da Prestadora, mantendo-a para o atendimento presencial, tal como levado a efeito pela Área Técnica; e, a.3) ponderar as multas calculadas para o art. 68, inciso II, tanto no âmbito do SMP como do Serviço Telefônico Fico Comutado - STFC, em 50% (cinquenta por cento); b) conhecer da petição extemporânea SEI nº 14108682, protocolizada em 30 de julho de 2025, para, no mérito, indeferi-la; c) efetuar, de ofício, os seguintes ajustes: c.1) desaglutinar os descumprimentos ao caput e parágrafo único do art. 64, por serem condutas independentes entre si, e: c.1.1) em relação à infração ao art. 64, caput c/c art. 3º, inciso XX, do RGC: c.1.1.1) considerar a infração para o SMP pontual, afetando a 34 (trinta e quatro) usuários no Estado de Sergipe; e, c.1.1.2) manter a infração como grave, no entanto, com fundamento apenas no inciso I do § 3º do art. 9º do Regulamento de Aplicação de Sanções Administrativas - RASA; e, c.1.2) em…",
    "tipo_item": "Deliberação",
@@ -5956,8 +5956,11 @@
     {
      "parte": "demais alíneas (e, f)",
      "acao": "e) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, nos termos descritos no Voto nº 6/2025/OP (SEI nº 14733733), tendo como base o valor de R$ 8.671.320,49 (oito milhões, seiscentos e setenta e um mil, trezentos e vinte reais e quarenta e nove centavos), com as correções monetárias e dedução, nos termos do RASA, a ser implementado nos termos expostos no item 4.73 do referido voto; e, f) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, comuni…",
-     "modo": "unanimidade",
-     "vencidos": []
+     "modo": "unanimidade dos votantes",
+     "vencidos": [],
+     "sem_voto": [
+      "Vicente Bandeira de Aquino Neto"
+     ]
     }
    ],
    "tipo_materia": "Recurso Administrativo",
@@ -6088,8 +6091,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -7029,8 +7032,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -7978,8 +7981,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -8792,7 +8795,7 @@
    "relator": "Vicente Bandeira de Aquino Neto",
    "interessado": "V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A.",
    "assunto": "Recurso interposto contra a decisão consubstanciada no Despacho Decisório nº 13/2024/SUE, de 23 de dezembro de 2024, que aprovou o Manual de Acompanhamento e Fiscalização de Compromissos assumidos no âmbito do Termo de Autocomposição para Adaptação dos Contratos de Concessão do STFC para o Regime de Autorização.",
-   "resultado": "a) conhecer do Recurso Administrativo interposto por V.TAL REDE NEUTRA DE TELECOMUNICAÇÕES S.A. para, no mérito, dar-lhe provimento parcial, no sentido de: | b) conhecer da petição extemporânea de SEI nº 13160926, protocolizada pela V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A., para, no mérito, indeferir os pedidos nela formulados; | c) conhecer da petição extemporânea de SEI nº 13664415, protocolizada pela V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A., para, no mérito, deferir parcialmente os pedidos nela constantes, exclusivamente… | d) de ofício: | e) aprovar o Processo Operacional Simplificado - POS da V.TAL, nos termos da minuta de SEI nº 13924766, retirando a expressão \"ressalvadas as situações em que se trate de infraestruturas inexistentes, c… | f) atribuir acesso restrito à Análise nº 102/2025/VA (SEI nº 14304245), ao Recurso Administrativo (SEI nº 13130611) e seus anexos, às petições extemporâneas (SEI nº 13160926 e nº 13664415) e seus anexos… | g) desmembrar do presente processo o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers, de modo que o Conselho Diretor tenha a possibilidade de, desde já, ultimar… | h) determinar que o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers não seja alvo de atuação das partes neste momento, mas apenas após ser avaliado em processo… | i) determinar que a Superintendência Executiva - SUE instaure processo apartado especificamente para tratar do tema relativo ao alcance do uso de recursos de terceiros para abranger data centers, notifi… | j) ao receber o novo processo apartado para deliberação, a Secretaria do Conselho Diretor - SCD deverá encaminhá-lo diretamente ao Gabinete do Conselheiro Edson Victor Eugênio de Holanda, para prossegui… [alíneas a–f: unanimidade ; alíneas g–j: unanimidade]",
+   "resultado": "a) conhecer do Recurso Administrativo interposto por V.TAL REDE NEUTRA DE TELECOMUNICAÇÕES S.A. para, no mérito, dar-lhe provimento parcial, no sentido de: | b) conhecer da petição extemporânea de SEI nº 13160926, protocolizada pela V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A., para, no mérito, indeferir os pedidos nela formulados; | c) conhecer da petição extemporânea de SEI nº 13664415, protocolizada pela V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A., para, no mérito, deferir parcialmente os pedidos nela constantes, exclusivamente… | d) de ofício: | e) aprovar o Processo Operacional Simplificado - POS da V.TAL, nos termos da minuta de SEI nº 13924766, retirando a expressão \"ressalvadas as situações em que se trate de infraestruturas inexistentes, c… | f) atribuir acesso restrito à Análise nº 102/2025/VA (SEI nº 14304245), ao Recurso Administrativo (SEI nº 13130611) e seus anexos, às petições extemporâneas (SEI nº 13160926 e nº 13664415) e seus anexos… | g) desmembrar do presente processo o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers, de modo que o Conselho Diretor tenha a possibilidade de, desde já, ultimar… | h) determinar que o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers não seja alvo de atuação das partes neste momento, mas apenas após ser avaliado em processo… | i) determinar que a Superintendência Executiva - SUE instaure processo apartado especificamente para tratar do tema relativo ao alcance do uso de recursos de terceiros para abranger data centers, notifi… | j) ao receber o novo processo apartado para deliberação, a Secretaria do Conselho Diretor - SCD deverá encaminhá-lo diretamente ao Gabinete do Conselheiro Edson Victor Eugênio de Holanda, para prossegui… [alíneas a–f: unanimidade ; alíneas g–j: unanimidade dos votantes]",
    "voto_doc": "Análise nº 102/2025/VA (SEI nº 14304245) | (documento não listado em Publicações Eletrônicas)",
    "decisao_texto": "Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel: a) conhecer do Recurso Administrativo interposto por V.TAL REDE NEUTRA DE TELECOMUNICAÇÕES S.A. para, no mérito, dar-lhe provimento parcial, no sentido de: a.1) alterar a nomenclatura do \"Manual de Acompanhamento e Fiscalização - MAF de Compromissos assumidos no Termo de Autocomposição para Adaptação dos Contratos de Concessão do STFC para o Regime de Autorização\", para \"Processo Operacional Simplificado - POS de Acompanhamento dos Compromissos Assumidos no Termo de Autocomposição para Adaptação dos Contratos de Concessão do STFC para o Regime de Autorização\"; a.2) excluir os itens 29 e 57 do MAF (SEI nº 13075208); a.3) retirar do inciso III do item 96 do MAF (SEI nº 13075208) a exigência de haver efetivo atendimento a um Ponto de Troca de Tráfego - PTT, seja público ou privado; a.4) alterar o inciso III do item 12 do MAF (SEI nº 13075208) para esclarecer que a Prestadora deve manter à disposição da Anatel documentos que estejam disponíveis ou que sejam passíveis de obtenção por meio de consulta aos aplicativos, facilidades, sistemas, ferramentas e recursos tecnológicos da Prestadora ou por ela utilizados; a.5) alterar os incisos II dos itens 56 e 75 do MAF (SEI nº 13075208) para possibilitar a compensação de eventuais prejuízos decorrentes de atos de terceiro, casos de vandalismo, furto e corte de equipamentos e fibras ópticas, desde que devidamente comprovados por Boletim d…",
    "tipo_item": "Deliberação",
@@ -8808,8 +8811,11 @@
     {
      "parte": "alíneas g–j",
      "acao": "g) desmembrar do presente processo o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers, de modo que o Conselho Diretor tenha a possibilidade de, desde já, ultimar a decisão quanto à aprovação do MAF; h) determinar que o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers não seja alvo de atuação das partes neste momento, mas apenas após ser avaliado em processo apartado; i) determinar que a Superintendência Executiva - SUE instaure processo apartado especificamente para tratar do tema relativo ao alcance do uso de recursos de terceiros para abranger data centers, notifique nele o Ministério das Comunicações (União…",
-     "modo": "unanimidade",
-     "vencidos": []
+     "modo": "unanimidade dos votantes",
+     "vencidos": [],
+     "sem_voto": [
+      "Vicente Bandeira de Aquino Neto"
+     ]
     }
    ],
    "tipo_materia": "Recurso Administrativo",
@@ -8835,8 +8841,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -9665,8 +9671,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -10964,8 +10970,8 @@
    "partes": [
     {
      "parte": "ata",
-     "acao": "aprovar a ata da reunião anterior",
-     "modo": "unanimidade",
+     "acao": "aprovar a ata da reunião anterior (\"Em discussão e votação, a Ata foi aprovada sem restrições\"; a fonte não registra \"por unanimidade\" nem votação nominal)",
+     "modo": "sem registro",
      "vencidos": []
     }
    ],
@@ -18383,7 +18389,7 @@
    "relator": "Octavio Penna Pieranti",
    "interessado": "AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES - ANATEL",
    "assunto": "Proposta de novo Regimento Interno da Anatel (RIA), objeto do item 26 da Agenda Regulatória para o Biênio 2025-2026.",
-   "resultado": "nos termos da Análise nº 43/2026/OP (SEI nº 15633200), integrante deste acórdão, aprovar a proposta de Regimento Interno da Anatel constante do anexo SEI nº 15831828. [decisão: maioria (vencido(s): Carlos Manuel Baigorri, Edson Victor Eugênio de Holanda)]",
+   "resultado": "nos termos da Análise nº 43/2026/OP (SEI nº 15633200), integrante deste acórdão, aprovar a proposta de Regimento Interno da Anatel constante do anexo SEI nº 15831828. [decisão: não unânime (a fonte registra vencido nominal, mas não usa \"por maioria\"; modo NÃO declarado) (vencido(s): Edson Victor Eugênio de Holanda)]",
    "voto_doc": "Análise nº 43/2026/OP (SEI nº 15633200) | https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=17483617&id_orgao_publicacao=0",
    "decisao_texto": "Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, nos termos da Análise nº 43/2026/OP (SEI nº 15633200), integrante deste acórdão, aprovar a proposta de Regimento Interno da Anatel constante do anexo SEI nº 15831828. O Conselheiro Alexandre Reis Siqueira Freire e o Conselheiro Substituto Nilo Pasquali acompanharam a proposta do Relator, respectivamente, por meio dos Votos em Circuito Deliberativo nº 194/2026/AF (SEI nº 16189246) e nº 128/2026/NP (SEI nº 16189284). O Presidente Carlos Manuel Baigorri, por meio do Voto nº 98/2026/PR (SEI nº 16189593), acompanhou a proposta do Relator e propôs alterações, tendo votado vencido em relação a essas alterações propostas. O Conselheiro Edson Victor Eugênio de Holanda votou vencido, nos termos do Voto nº 14/2026/EH (SEI nº 16212918) e do Voto em Circuito Deliberativo nº 225/2026/EH (SEI nº 16218957). Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.",
    "tipo_item": "Deliberação",
@@ -18393,9 +18399,8 @@
     {
      "parte": "decisão",
      "acao": "nos termos da Análise nº 43/2026/OP (SEI nº 15633200), integrante deste acórdão, aprovar a proposta de Regimento Interno da Anatel constante do anexo SEI nº 15831828.",
-     "modo": "maioria",
+     "modo": "não unânime (a fonte registra vencido nominal, mas não usa \"por maioria\"; modo NÃO declarado)",
      "vencidos": [
-      "Carlos Manuel Baigorri",
       "Edson Victor Eugênio de Holanda"
      ]
     }
@@ -19879,7 +19884,7 @@
    "processo": "53500.056639/2023-70",
    "deliberacao": "Item R14 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -19929,7 +19934,7 @@
    "processo": "53500.061122/2021-31",
    "deliberacao": "Item R15 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -19979,7 +19984,7 @@
    "processo": "53500.027376/2020-49",
    "deliberacao": "Item R16 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -20029,7 +20034,7 @@
    "processo": "53500.000501/2025-88",
    "deliberacao": "Item R17 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -20079,7 +20084,7 @@
    "processo": "53500.013038/2025-34",
    "deliberacao": "Item R18 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -20129,7 +20134,7 @@
    "processo": "53500.111043/2023-40",
    "deliberacao": "Item R19 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -20179,7 +20184,7 @@
    "processo": "53500.077713/2024-72",
    "deliberacao": "Item R20 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -20229,7 +20234,7 @@
    "processo": "53500.012864/2025-66",
    "deliberacao": "Item R21 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -21789,7 +21794,7 @@
    "processo": "53500.001826/2019-30",
    "deliberacao": "Item R52 (RCD950)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -21839,7 +21844,7 @@
    "processo": "53500.016992/2018-50",
    "deliberacao": "Item R53 (RCD950)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -21889,7 +21894,7 @@
    "processo": "53500.003894/2023-10",
    "deliberacao": "Item R54 (RCD950)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -21939,7 +21944,7 @@
    "processo": "53500.045752/2017-81",
    "deliberacao": "Item R55 (RCD950)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -22980,7 +22985,7 @@
    "deliberacao": "Item V1 (RCD950)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -23071,7 +23076,7 @@
    "diretor": "Carlos Manuel Baigorri",
    "voto": "DIVERGIU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU; alíneas c.1 e d: DIVERGIU; demais alíneas (e, f): ACOMPANHOU"
+   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU [inferido da unanimidade declarada]; alíneas c.1 e d: DIVERGIU; demais alíneas (e, f): ACOMPANHOU [inferido da unanimidade declarada]"
   },
   {
    "reuniao": "RCD950",
@@ -23081,7 +23086,7 @@
    "diretor": "Vicente Bandeira de Aquino Neto",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a, b e c.2–c.5: RELATOR (voto proferido); alíneas c.1 e d: RELATOR (voto proferido); demais alíneas (e, f): RELATOR (voto proferido)"
+   "voto_por_parte": "alíneas a, b e c.2–c.5: RELATOR (voto proferido); alíneas c.1 e d: RELATOR (voto proferido); demais alíneas (e, f): SEM VOTO (não pôde se manifestar — término do mandato)"
   },
   {
    "reuniao": "RCD950",
@@ -23091,7 +23096,7 @@
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU; alíneas c.1 e d: ACOMPANHOU; demais alíneas (e, f): ACOMPANHOU"
+   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU [nominal: posição registrada na ata do item]; alíneas c.1 e d: ACOMPANHOU [nominal: posição registrada na ata do item]; demais alíneas (e, f): ACOMPANHOU [nominal: posição registrada na ata do item]"
   },
   {
    "reuniao": "RCD950",
@@ -23101,7 +23106,7 @@
    "diretor": "Edson Victor Eugênio de Holanda",
    "voto": "DIVERGIU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU; alíneas c.1 e d: DIVERGIU; demais alíneas (e, f): ACOMPANHOU"
+   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU [inferido da unanimidade declarada]; alíneas c.1 e d: DIVERGIU; demais alíneas (e, f): ACOMPANHOU [inferido da unanimidade declarada]"
   },
   {
    "reuniao": "RCD950",
@@ -23111,7 +23116,7 @@
    "diretor": "Octavio Penna Pieranti",
    "voto": "ACOMPANHOU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU; alíneas c.1 e d: ACOMPANHOU; demais alíneas (e, f): ACOMPANHOU"
+   "voto_por_parte": "alíneas a, b e c.2–c.5: ACOMPANHOU [nominal: posição registrada na ata do item]; alíneas c.1 e d: ACOMPANHOU [nominal: posição registrada na ata do item]; demais alíneas (e, f): ACOMPANHOU [nominal: posição registrada na ata do item]"
   },
   {
    "reuniao": "RCD950",
@@ -23489,7 +23494,7 @@
    "processo": "53500.055641/2020-89",
    "deliberacao": "Item R2 (RCD951)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -23539,7 +23544,7 @@
    "processo": "53500.012178/2019-47",
    "deliberacao": "Item R3 (RCD951)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -25759,7 +25764,7 @@
    "processo": "53500.005086/2018-20",
    "deliberacao": "Item R12 (RCD952)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -26629,7 +26634,7 @@
    "processo": "53500.013672/2019-29",
    "deliberacao": "Item R29 (RCD952)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -26679,7 +26684,7 @@
    "processo": "53500.071713/2021-16",
    "deliberacao": "Item R30 (RCD952)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -26729,7 +26734,7 @@
    "processo": "53500.089101/2025-11",
    "deliberacao": "Item R31 (RCD952)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -27009,7 +27014,7 @@
    "processo": "53500.014686/2018-89",
    "deliberacao": "Item R2 (RCD953)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -27129,7 +27134,7 @@
    "processo": "53500.008958/2025-31",
    "deliberacao": "Item R4 (RCD953)",
    "diretor": "Octavio Penna Pieranti",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -27219,7 +27224,7 @@
    "processo": "53500.206834/2015-47",
    "deliberacao": "Item R6 (RCD953)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -27369,7 +27374,7 @@
    "processo": "53500.324872/2022-18",
    "deliberacao": "Item R9 (RCD953)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -27689,7 +27694,7 @@
    "processo": "53500.206843/2015-38",
    "deliberacao": "Item R15 (RCD953)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -27989,7 +27994,7 @@
    "processo": "53500.206685/2015-16",
    "deliberacao": "Item R21 (RCD953)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -28010,7 +28015,7 @@
    "deliberacao": "Item V1 (RCD953)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -28060,7 +28065,7 @@
    "deliberacao": "Item V2 (RCD953)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -28079,7 +28084,7 @@
    "processo": "53500.063992/2017-68",
    "deliberacao": "Item V2 (RCD953)",
    "diretor": "Octavio Penna Pieranti",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -28110,7 +28115,7 @@
    "deliberacao": "Item V3 (RCD953)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -28160,7 +28165,7 @@
    "deliberacao": "Item V4 (RCD953)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -28320,7 +28325,7 @@
    "deliberacao": "Item V7 (RCD953)",
    "diretor": "Edson Victor Eugênio de Holanda",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -28370,7 +28375,7 @@
    "deliberacao": "Item V8 (RCD953)",
    "diretor": "Edson Victor Eugênio de Holanda",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -28401,7 +28406,7 @@
    "diretor": "Carlos Manuel Baigorri",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "alíneas a–f: ACOMPANHOU; alíneas g–j: ACOMPANHOU"
+   "voto_por_parte": "alíneas a–f: ACOMPANHOU [inferido da unanimidade declarada]; alíneas g–j: ACOMPANHOU [inferido da unanimidade declarada]"
   },
   {
    "reuniao": "RCD953",
@@ -28411,7 +28416,7 @@
    "diretor": "Vicente Bandeira de Aquino Neto",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a–f: RELATOR (voto proferido); alíneas g–j: RELATOR (voto proferido)"
+   "voto_por_parte": "alíneas a–f: RELATOR (voto proferido); alíneas g–j: SEM VOTO (não pôde se manifestar — término do mandato)"
   },
   {
    "reuniao": "RCD953",
@@ -28421,7 +28426,7 @@
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "alíneas a–f: ACOMPANHOU; alíneas g–j: ACOMPANHOU"
+   "voto_por_parte": "alíneas a–f: ACOMPANHOU [inferido da unanimidade declarada]; alíneas g–j: ACOMPANHOU [inferido da unanimidade declarada]"
   },
   {
    "reuniao": "RCD953",
@@ -28431,7 +28436,7 @@
    "diretor": "Edson Victor Eugênio de Holanda",
    "voto": "ACOMPANHOU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alíneas a–f: ACOMPANHOU; alíneas g–j: ACOMPANHOU"
+   "voto_por_parte": "alíneas a–f: ACOMPANHOU [nominal: posição registrada na ata do item]; alíneas g–j: ACOMPANHOU [nominal: posição registrada na ata do item]"
   },
   {
    "reuniao": "RCD953",
@@ -28441,7 +28446,7 @@
    "diretor": "Octavio Penna Pieranti",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
-   "voto_por_parte": "alíneas a–f: ACOMPANHOU; alíneas g–j: ACOMPANHOU"
+   "voto_por_parte": "alíneas a–f: ACOMPANHOU [inferido da unanimidade declarada]; alíneas g–j: ACOMPANHOU [inferido da unanimidade declarada]"
   },
   {
    "reuniao": "RCD953",
@@ -30169,7 +30174,7 @@
    "processo": "53500.012864/2025-66",
    "deliberacao": "Item R1 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30219,7 +30224,7 @@
    "processo": "53500.013038/2025-34",
    "deliberacao": "Item R2 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30269,7 +30274,7 @@
    "processo": "53500.111043/2023-40",
    "deliberacao": "Item R3 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30319,7 +30324,7 @@
    "processo": "53500.341348/2022-01",
    "deliberacao": "Item R4 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30369,7 +30374,7 @@
    "processo": "53500.053021/2018-91",
    "deliberacao": "Item R5 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30419,7 +30424,7 @@
    "processo": "53500.077713/2024-72",
    "deliberacao": "Item R6 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30469,7 +30474,7 @@
    "processo": "53500.000501/2025-88",
    "deliberacao": "Item R7 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30569,7 +30574,7 @@
    "processo": "53500.027376/2020-49",
    "deliberacao": "Item R9 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30619,7 +30624,7 @@
    "processo": "53524.000486/2021-76",
    "deliberacao": "Item R10 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30669,7 +30674,7 @@
    "processo": "53524.000423/2021-10",
    "deliberacao": "Item R11 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30719,7 +30724,7 @@
    "processo": "53500.056639/2023-70",
    "deliberacao": "Item R12 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -30819,7 +30824,7 @@
    "processo": "53500.103469/2025-91",
    "deliberacao": "Item R14 (RCD955)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -31079,7 +31084,7 @@
    "processo": "53500.016992/2018-50",
    "deliberacao": "Item R19 (RCD955)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -31129,7 +31134,7 @@
    "processo": "53500.045752/2017-81",
    "deliberacao": "Item R20 (RCD955)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -31629,7 +31634,7 @@
    "processo": "53500.003209/2025-17",
    "deliberacao": "Item R30 (RCD955)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -31679,7 +31684,7 @@
    "processo": "53500.003894/2023-10",
    "deliberacao": "Item R31 (RCD955)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -31729,7 +31734,7 @@
    "processo": "53500.005821/2025-24",
    "deliberacao": "Item R32 (RCD955)",
    "diretor": "Edson Victor Eugênio de Holanda",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -32349,7 +32354,7 @@
    "processo": "53500.007686/2026-32",
    "deliberacao": "Item R44 (RCD955)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -32399,7 +32404,7 @@
    "processo": "53500.003693/2026-65",
    "deliberacao": "Item R45 (RCD955)",
    "diretor": "Nilo Pasquali",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -33069,7 +33074,7 @@
    "processo": "53500.009146/2025-11",
    "deliberacao": "Item R11 (RCD956)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -33119,7 +33124,7 @@
    "processo": "53500.012178/2019-47",
    "deliberacao": "Item R12 (RCD956)",
    "diretor": "Alexandre Reis Siqueira Freire",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -33439,7 +33444,7 @@
    "processo": "53500.045652/2025-65",
    "deliberacao": "Item R18 (RCD956)",
    "diretor": "Octavio Penna Pieranti",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "RELATOR (pediu a prorrogação/diligência — ato procedural, sem voto de mérito)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -34120,7 +34125,7 @@
    "deliberacao": "Item V4 (RCD956)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -34170,7 +34175,7 @@
    "deliberacao": "Item V5 (RCD956)",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -35160,8 +35165,8 @@
    "deliberacao": "Acórdão 194/2026",
    "diretor": "Carlos Manuel Baigorri",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "voto_por_parte": "alínea a: ACOMPANHOU; alínea b: ACOMPANHOU"
+   "proveniencia": "nominal",
+   "voto_por_parte": "alínea a: ACOMPANHOU [inferido da unanimidade declarada]; alínea b: ACOMPANHOU"
   },
   {
    "reuniao": "RCD956",
@@ -35170,8 +35175,8 @@
    "deliberacao": "Acórdão 194/2026",
    "diretor": "Alexandre Reis Siqueira Freire",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "voto_por_parte": "alínea a: ACOMPANHOU; alínea b: ACOMPANHOU"
+   "proveniencia": "nominal",
+   "voto_por_parte": "alínea a: ACOMPANHOU [inferido da unanimidade declarada]; alínea b: ACOMPANHOU"
   },
   {
    "reuniao": "RCD956",
@@ -35181,7 +35186,7 @@
    "diretor": "Edson Victor Eugênio de Holanda",
    "voto": "DIVERGIU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alínea a: ACOMPANHOU; alínea b: DIVERGIU"
+   "voto_por_parte": "alínea a: ACOMPANHOU [inferido da unanimidade declarada]; alínea b: DIVERGIU"
   },
   {
    "reuniao": "RCD956",
@@ -35191,7 +35196,7 @@
    "diretor": "Octavio Penna Pieranti",
    "voto": "DIVERGIU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alínea a: ACOMPANHOU; alínea b: DIVERGIU"
+   "voto_por_parte": "alínea a: ACOMPANHOU [inferido da unanimidade declarada]; alínea b: DIVERGIU"
   },
   {
    "reuniao": "RCD956",
@@ -35240,7 +35245,7 @@
    "deliberacao": "Item V26 (RCD956)",
    "diretor": "Edson Victor Eugênio de Holanda",
    "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "proveniencia": "nominal",
    "voto_por_parte": ""
   },
   {
@@ -39561,7 +39566,7 @@
    "diretor": "Octavio Penna Pieranti",
    "voto": "DIVERGIU",
    "proveniencia": "nominal",
-   "voto_por_parte": "alínea a: DIVERGIU; alínea b: ACOMPANHOU; ponto excepcionado da unanimidade: DIVERGIU"
+   "voto_por_parte": "alínea a: DIVERGIU; alínea b: ACOMPANHOU [inferido da unanimidade declarada]; ponto excepcionado da unanimidade: DIVERGIU"
   },
   {
    "reuniao": "CD66",
@@ -46919,7 +46924,7 @@
    "processo": "53500.008958/2025-31",
    "deliberacao": "Acórdão 236/2026",
    "diretor": "Carlos Manuel Baigorri",
-   "voto": "DIVERGIU",
+   "voto": "ACOMPANHOU (parcialmente: acompanhou a proposta do Relator, propôs alterações e ficou vencido quanto a elas)",
    "proveniencia": "nominal",
    "voto_por_parte": ""
   },
@@ -48843,7 +48848,7 @@
    2922,
    2922,
    "OK",
-   "nominal 1961 (67.1%), inferido 961 (32.9%), REVISAR 0"
+   "nominal 1973 (67.5%), inferido 949 (32.5%), REVISAR 0"
   ],
   [
    "ANATEL",
@@ -49004,6 +49009,86 @@
    39,
    "OK",
    "o único erro foi corrigido e o item relido (nominal)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"data\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"processo\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"deliberacao (nº do acórdão/item)\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"relator\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"tipo_item\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"interessado\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"resultado/ação\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"modo e vencidos (partes)\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"voto por conselheiro (linhas)\": itens corretos × auditados",
+   40,
+   40,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
+  ],
+  [
+   "ANATEL",
+   "(AUDITORIA A3: amostra 3, itens NOVOS (semente 777; exclui os itens das sementes 2026 e 99), depois das correções dos 4 achados abertos) campo \"proveniencia (nominal/inferido)\": itens corretos × auditados",
+   40,
+   39,
+   "OK",
+   "leitura campo a campo contra o texto-fonte; o único erro foi corrigido no parser e o item relido (nominal). Incluiu os casos tratados nesta rodada: Ac.43 (voto_por_parte de Vicente), Ac.194 (nominal), CD215 (parcial), ata aprovada (modo 'sem registro') e prorrogações (relator procedural)"
   ]
  ],
  "cobertura": [
@@ -49041,7 +49126,7 @@
    "ANATEL",
    "Votos emitidos",
    2922,
-   "nominal 1961 (67.1%) / inferido 961 (32.9%) / REVISAR 0"
+   "nominal 1973 (67.5%) / inferido 949 (32.5%) / REVISAR 0"
   ],
   [
    "ANATEL",
@@ -49288,7 +49373,7 @@
   [
    "ANATEL",
    "Voto individual dos conselheiros nas REUNIÕES",
-   "961 de 2922 linhas (32.9%) seguem INFERIDAS",
+   "949 de 2922 linhas (32.5%) seguem INFERIDAS",
    "PARCIAL (bloqueado pela fonte)",
    "Nas reuniões a ata/acórdão registra só o resultado (\"por unanimidade\"/\"por maioria\" + vencidos nominais); o voto individual (Voto em Circuito/Voto nº do conselheiro) fica no processo SEI com captcha",
    "Pedir extrato nominal à SCD"
@@ -49296,7 +49381,7 @@
   [
    "ANATEL",
    "ACOMPANHOU (inferido)",
-   "961 linhas",
+   "949 linhas",
    "LIMITE DO MODELO",
    "\"por unanimidade\" não é voto nominal do conselheiro; nos 241 circuitos o voto é nominal na própria ata",
    "Extrato nominal de votação"
@@ -49335,11 +49420,19 @@
   ],
   [
    "ANATEL",
-   "Auditoria independente (45 itens): 4 achados abertos",
-   "Ac.43/Ac.131: Vicente (ex-conselheiro) consta como RELATOR nas partes decididas por \"unanimidade dos votantes\"; Ac.194: 2 votos nominais marcados inferido; CD215: \"acompanha parcialmente\" lido como DIVERGIU/maioria; prorrogação de prazo/ata com modo inferido",
-   "PARCIAL",
-   "Impacto: 2 acórdãos, 2 linhas de proveniência, 1 circuito e itens procedimentais (7 atas + prorrogações); voto errado só em CD215 (a conferir)",
-   "Corrigir no parser em rodada futura; conferir CD215 no SEI"
+   "Fase 10 – 4 achados da auditoria (Ac.43/131, Ac.194, CD215, atas/prorrogações)",
+   "FECHADOS e medidos (08/10/2026): Ac.43/131 Vicente sem voto nas partes \"unanimidade dos votantes\" (voto_por_parte); Ac.194 Alexandre e Carlos ACOMPANHOU nominal; CD215 Carlos ACOMPANHOU (parcialmente) em vez de DIVERGIU; 7 atas com modo \"sem registro\" (a ata só diz \"aprovada sem restrições\"); 47 relatores em prorrogação/diligência com rótulo procedural (antes \"RELATOR (voto proferido)\")",
+   "FEITO (medido)",
+   "Varredura independente (scripts/anatel_varredura.py, não importa o parser) sobre os 584 itens contra texto_anatel: contra o JSON anterior apontava 2+7+47+1 diferenças nesses 4 achados; contra o JSON novo restam 16 diferenças, todas examinadas: 0 erro de voto (2 \"acompanha parcialmente + vencido neste ponto\" = DIVERGIU parcial coerente, 1 CD215 tratado, 1 acórdão que lista Nilo como participante mas a ata do circuito 55 o dá ausente (conflito da fonte; vale a ata), 1 vista já concluída, 9 relatores ex-conselheiros em diligência, 1 relator inválido na ata CD144, 1 relator citado na mesma frase do vencido CD65). Reauditoria humana de 40 itens novos (semente 777): 399/400 campos",
+   "Rodar scripts/anatel_varredura.py a cada rodada"
+  ],
+  [
+   "ANATEL",
+   "Limites que permanecem em votos",
+   "a) 163 de 164 circuitos sem acórdão têm modo \"unanimidade/maioria\" derivado dos votos nominais da própria ata (Resumo dos Votos), não de frase \"por unanimidade\"; b) conversão em diligência de item em sede de vista: relator ex-conselheiro sem linha; c) CD215: Carlos \"acompanha parcialmente\" – o rótulo ACOMPANHOU (parcialmente) é leitura do texto, a fonte não diz \"por maioria\" nem o placar",
+   "LIMITE DA FONTE",
+   "A fonte não registra o placar nem o modo nesses casos; nada foi inventado (modo de CD215 = \"não unânime ... NÃO declarado\")",
+   "Extrato nominal à SCD"
   ]
  ],
  "diretores": [
