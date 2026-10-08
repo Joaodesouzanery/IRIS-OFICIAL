@@ -155,7 +155,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pela Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -177,7 +179,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Relator, Diretor-Geral, aprovado por maioria pela Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -199,7 +203,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -221,7 +227,9 @@
    "vista_por": [],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor Tasso Mendonça Jr. O Diretor Caio Mário Trivellato Seabra Filho, relator original para a matéria, e o Diretor Roger Romão Cabral consignaram que aderiram ao voto vista apresentado pelo Diretor-Geral na presente sessão.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -243,7 +251,9 @@
    "vista_por": [],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor Tasso Mendonça Jr.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -265,7 +275,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -287,7 +299,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -310,7 +324,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do revisor aprovado por maioria pelos diretores presentes, com voto contrário do Diretor Caio Mario Seabra Filho, relator original da matéria.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -332,7 +348,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.2",
@@ -354,7 +372,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.3",
@@ -376,7 +396,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.4",
@@ -398,7 +420,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.5",
@@ -420,7 +444,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.6",
@@ -442,7 +468,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.7",
@@ -464,7 +492,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.8",
@@ -486,7 +516,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.9",
@@ -508,7 +540,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.10",
@@ -530,7 +564,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.11",
@@ -552,7 +588,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -576,7 +614,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.2",
@@ -600,7 +640,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -622,7 +664,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.2",
@@ -644,7 +688,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -666,7 +712,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator aprovado por unanimidade pelos diretores presentes, sendo acompanhado pelo Diretor Revisor.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -690,7 +738,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.2",
@@ -714,7 +764,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.3",
@@ -738,7 +790,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral. 4.1.4.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.4",
@@ -762,7 +816,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.5",
@@ -786,7 +842,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.6",
@@ -810,7 +868,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.7",
@@ -834,7 +894,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.8",
@@ -858,7 +920,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.9",
@@ -882,7 +946,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.10",
@@ -906,7 +972,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.11",
@@ -930,7 +998,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -952,7 +1022,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -974,7 +1046,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Terceiro Revisor, Diretor Caio Mário Trivellato Seabra Filho, aprovado por unanimidade pelos diretores presentes, que, por sua vez, acompanhou o voto do Relator, Diretor Guilherme Santana Lopes Gomes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.4.1",
@@ -996,7 +1070,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do revisor aprovado por maioria pelos diretores presentes, com voto contrário do Diretor-Geral, relator original da matéria.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.5.1",
@@ -1018,7 +1094,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.1.1",
@@ -1040,7 +1118,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.1.2",
@@ -1062,7 +1142,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.2.1",
@@ -1084,7 +1166,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.3.1",
@@ -1106,7 +1190,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.4.1",
@@ -1128,7 +1214,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.4.2",
@@ -1150,7 +1238,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.5.1",
@@ -1172,7 +1262,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.5.2",
@@ -1194,7 +1286,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.5.3",
@@ -1216,7 +1310,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.6.1",
@@ -1238,7 +1334,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.7.1",
@@ -1260,7 +1358,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.8.1",
@@ -1282,7 +1382,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.8.2",
@@ -1304,7 +1406,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.9.1",
@@ -1326,7 +1430,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.10.1",
@@ -1348,7 +1454,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#53",
@@ -1370,7 +1478,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.12.1",
@@ -1392,7 +1502,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "5.13.1",
@@ -1414,7 +1526,9 @@
    "vista_por": [],
    "resultado": "SEM DELIBERACAO NO TEXTO",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -1436,7 +1550,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -1458,7 +1574,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -1480,7 +1598,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -1502,7 +1622,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Fica referendado o ato do Diretor-Geral por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -1524,7 +1646,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.2",
@@ -1546,7 +1670,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.3",
@@ -1568,7 +1694,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.4",
@@ -1590,7 +1718,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.5",
@@ -1612,7 +1742,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.6",
@@ -1634,7 +1766,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.7",
@@ -1656,7 +1790,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.8",
@@ -1678,7 +1814,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -1700,7 +1838,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes, com o adendo acerca da necessária remessa do processo à unidade regional da ANM para análise do pedido de averbação da cessão, bem como do requerimento de prorrogação de lavra, que foi tempestivo.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -1722,7 +1862,9 @@
    "vista_por": [],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada em razão do pedido de vistas ao processo peloDiretor Tasso Mendonça Jr. 3.5. ASSUNTO: Revisão de prazo para Guia de Utilização.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -1744,7 +1886,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -1766,7 +1910,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.7.1",
@@ -1793,7 +1939,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após voto favorável do Diretor Roger Romão Cabral, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor José Fernando de Mendonça Gomes Júnior.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -1815,7 +1963,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -1841,7 +1991,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após voto favorável do Diretor Roger Romão Cabral, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -1863,7 +2015,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -1885,7 +2039,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Após voto favorável do Diretor Roger Romão Cabral, o voto do relator foi aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.1",
@@ -1907,7 +2063,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.1",
@@ -1929,7 +2087,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.2",
@@ -1951,7 +2111,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.3",
@@ -1973,7 +2135,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.5.4",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.4",
@@ -1995,7 +2159,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.5",
@@ -2017,7 +2183,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.6",
@@ -2039,7 +2207,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.7",
@@ -2061,7 +2231,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos Diretores presentes, com a retificação do voto feita pelo Diretor José Fernando de Mendonça Gomes Júnior e acatada pela Diretoria Colegiada, de que o recurso não deve ser conhecido em razão de sua intempestividade.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.6.1",
@@ -2083,7 +2255,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.7.2",
@@ -2105,7 +2279,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.8. ASSUNTO: Recurso contra nulidade de alvará de pesquisa.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.8.1",
@@ -2127,7 +2303,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes, com a retificação do voto feita pelo Diretor José Fernando de Mendonça Gomes Júnior e acatada pela Diretoria Colegiada, para que o processo seja encaminhado à Superintendência de Outorga de Títulos Minerários (SOT), a fim de que seja praticado o ato de Declaração de Nulidade do Alvará de Pesquisa.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.1",
@@ -2149,7 +2327,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.2",
@@ -2171,7 +2351,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.3",
@@ -2193,7 +2375,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.4",
@@ -2215,7 +2399,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.5",
@@ -2237,7 +2423,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.6",
@@ -2259,7 +2447,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.7",
@@ -2281,7 +2471,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -2303,7 +2495,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -2325,7 +2519,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes, com a retificação do voto feita pelo Diretor-Geral e acolhida pela Diretoria Colegiada de que, em razão da intempestividade, o recurso deve ser não conhecido, sem adentrar no mérito.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.2",
@@ -2347,7 +2543,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes, com a retificação do voto feita pelo Diretor-Geral e acolhida pela Diretoria Colegiada de que, em razão da intempestividade, o recurso deve ser não conhecido, sem adentrar no mérito.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -2369,7 +2567,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.2",
@@ -2391,7 +2591,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -2415,7 +2617,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do relator aprovado por maioria dos diretores, com divergência apresentada pelo Diretor-Geral em relação ao não conhecimento dos recursos interpostos pelos municípios que apresentaram documentação complementar após vencido o prazo de 02/10/2025.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.1",
@@ -2437,7 +2641,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Decisão referendada por unanimidade dos diretores presentes, com a observação do Diretor-Geral para que a nomenclatura do Decreto-Lei seja ajustada, de modo que conste apenas como Decreto no voto.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.7.1",
@@ -2459,7 +2665,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.8. ASSUNTO: Pedido de reconsideração (revisão) de prazo e pedido de prorrogação para a Guia de Utilização.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.8.1",
@@ -2481,7 +2689,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -2503,7 +2713,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.9",
@@ -2525,7 +2737,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -2547,7 +2761,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -2569,7 +2785,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.6",
@@ -2591,7 +2809,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.8",
@@ -2613,7 +2833,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.3",
@@ -2635,7 +2857,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.4",
@@ -2657,7 +2881,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.1",
@@ -2679,7 +2905,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -2701,7 +2929,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.2",
@@ -2723,7 +2953,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.3",
@@ -2745,7 +2977,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.4",
@@ -2767,7 +3001,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -2789,7 +3025,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -2811,7 +3049,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -2833,7 +3073,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -2855,7 +3097,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.1",
@@ -2877,7 +3121,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.2",
@@ -2899,7 +3145,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.3",
@@ -2921,7 +3169,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.4",
@@ -2943,7 +3193,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.5",
@@ -2965,7 +3217,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.6",
@@ -2987,7 +3241,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.7",
@@ -3009,7 +3265,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.8",
@@ -3031,7 +3289,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.1",
@@ -3053,7 +3313,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.2",
@@ -3075,7 +3337,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -3097,7 +3361,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Primeiro Revisor, Diretor-Geral, aprovado por unanimidade dos membros da Diretoria Colegiada. 2.3. ASSUNTO: Recurso contra cobrança de CFEM.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.2",
@@ -3119,7 +3385,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.3",
@@ -3141,7 +3409,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.4",
@@ -3163,7 +3433,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.5",
@@ -3185,7 +3457,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.7",
@@ -3207,7 +3481,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.1",
@@ -3229,7 +3505,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.2",
@@ -3251,7 +3529,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.3",
@@ -3273,7 +3553,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.1",
@@ -3295,7 +3577,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.2",
@@ -3317,7 +3601,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.6.1",
@@ -3339,7 +3625,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.6.2",
@@ -3361,7 +3649,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.7.1",
@@ -3383,7 +3673,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.8.1",
@@ -3405,7 +3697,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.9.1",
@@ -3427,7 +3721,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.10.1",
@@ -3449,7 +3745,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -3471,7 +3769,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.2",
@@ -3493,7 +3793,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.3",
@@ -3515,7 +3817,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -3537,7 +3841,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.2",
@@ -3559,7 +3865,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -3581,7 +3889,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -3603,7 +3913,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.2",
@@ -3625,7 +3937,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.3",
@@ -3647,7 +3961,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -3669,7 +3985,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.2",
@@ -3691,7 +4009,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.7.1",
@@ -3713,7 +4033,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.8.1",
@@ -3735,7 +4057,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.9. ASSUNTO: Pedido de reconsideração intempestivo contra o Voto CS/ANM nº 534, de 15 de maio de 2025, que negou provimento ao recurso contra indeferimento de requerimento de mudança de regime de Autorização de pesquisa para o regime de Licenciamento.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.9.1",
@@ -3757,7 +4081,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.10.1",
@@ -3779,7 +4105,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -3801,7 +4129,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -3823,7 +4153,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.2",
@@ -3845,7 +4177,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.3",
@@ -3867,7 +4201,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.4",
@@ -3889,7 +4225,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 4.2.5",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.5",
@@ -3911,7 +4249,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.6",
@@ -3933,7 +4273,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.7",
@@ -3955,7 +4297,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.8",
@@ -3977,7 +4321,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -3999,7 +4345,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Encerradas as manifestações, o Diretor-Geral agradeceu a presença de todos e encerrou a 81ª Reunião Ordinária Pública da Diretoria Colegiada da ANM. Eu, Caio Vasconcelos de Azevedo, Secretário-Geral, lavrei a presente ata, que, após aprovada, será assinada pelos Diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -4021,7 +4369,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.3",
@@ -4043,7 +4393,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -4065,7 +4417,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -4087,7 +4441,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.6",
@@ -4109,7 +4465,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -4131,7 +4489,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Findadas as tratativas relacionadas ao item de matéria regulatória, o Diretor-Geral retomou a ordem de publicação da pauta e passou a presidência da sessão ao Diretor José Fernando de Mendonça Gomes Júnior para condução dos trabalhos referentes a essa etapa, que, ato contínuo, devolveu-lhe a palavra para iniciar os processos de sua relatoria:",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -4153,7 +4513,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.2",
@@ -4175,7 +4537,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.4",
@@ -4197,7 +4561,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -4219,7 +4585,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -4241,7 +4609,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.2",
@@ -4263,7 +4633,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.3",
@@ -4285,7 +4657,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.4",
@@ -4307,7 +4681,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.5",
@@ -4329,7 +4705,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.6",
@@ -4351,7 +4729,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -4373,7 +4753,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.2",
@@ -4395,7 +4777,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.3",
@@ -4417,7 +4801,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -4451,7 +4837,11 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Em razão da alteração na composição da Diretoria, o Diretor José Fernando de Mendonça Gomes Júnior não votaria."
   },
   {
    "deliberacao": "2.3.1",
@@ -4473,7 +4863,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Caio Mário Trivellato Seabra Filho, aprovado por unanimidade pelos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Em razão da alteração na composição da Diretoria, o Diretor José Fernando de Mendonça Gomes Júnior não votaria."
   },
   {
    "deliberacao": "2.3.2",
@@ -4495,7 +4889,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Caio Mário Trivellato Seabra Filho, aprovado por unanimidade pelos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.1",
@@ -4517,7 +4913,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.1",
@@ -4539,7 +4937,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -4561,7 +4961,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.2",
@@ -4583,7 +4985,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -4605,7 +5009,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -4627,7 +5033,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. O Diretor-Geral adotou a posição de que não caberia o envio dos autos ao Ministério de Minas e Energia em razão de impossibilidade legal. Os demais diretores acompanharam o voto do Relator na íntegra.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -4649,7 +5057,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.1",
@@ -4671,7 +5081,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -4693,7 +5105,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.2",
@@ -4715,7 +5129,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.3",
@@ -4737,7 +5153,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.4",
@@ -4759,7 +5177,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.5",
@@ -4781,7 +5201,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -4803,7 +5225,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -4825,7 +5249,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.1",
@@ -4847,7 +5273,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.2",
@@ -4869,7 +5297,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.3",
@@ -4891,7 +5321,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.4",
@@ -4913,7 +5345,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.5",
@@ -4935,7 +5369,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.6",
@@ -4957,7 +5393,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.8.1",
@@ -4979,7 +5417,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -5001,7 +5441,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto referendado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -5023,7 +5465,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -5045,7 +5489,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -5067,7 +5513,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.2",
@@ -5089,7 +5537,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.3",
@@ -5111,7 +5561,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.1.4",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.4",
@@ -5133,7 +5585,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -5155,7 +5609,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -5177,7 +5633,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -5199,7 +5657,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.2",
@@ -5221,7 +5681,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.1",
@@ -5251,7 +5713,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -5273,7 +5737,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Revisor, Diretor-Geral, aprovado por maioria dos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, tendo em vista manifestação anterior do seu gabinete sobre a matéria."
   },
   {
    "deliberacao": "2.4.1",
@@ -5295,7 +5763,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Relator, Diretor-Geral, aprovado por maioria dos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, em razão de manifestação anterior do seu gabinete sobre a matéria."
   },
   {
    "deliberacao": "2.5.1",
@@ -5318,7 +5790,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Caio Mário Trivellato Seabra Filho, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.6.1",
@@ -5340,7 +5814,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Roger Romão Cabral, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Fábio Fernando Borges"
+   ],
+   "texto_impedimento": " Antes de passar à deliberação, o Secretário-Geral registrou que, por se tratar de matéria cujo relator original foi o Diretor Roger Romão Cabral, o Diretor Substituto Fábio Borges encontrava-se impedido de votar."
   },
   {
    "deliberacao": "2.7.1",
@@ -5363,7 +5841,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Relator, Diretor-Geral, aprovado por maioria dos membros da Diretoria Colegiada, com determinação de retorno dos autos à SOT.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, em razão de manifestação anterior do seu gabinete sobre a matéria."
   },
   {
    "deliberacao": "2.7.2",
@@ -5385,7 +5867,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Revisor, Diretor Substituto Luiz Paniago Neves, aprovado por maioria dos membros da Diretoria Colegiada, com determinação de retorno dos autos à SOT.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, em razão de manifestação anterior do seu gabinete sobre a matéria."
   },
   {
    "deliberacao": "2.8.1",
@@ -5407,7 +5893,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Roger Romão Cabral, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Fábio Fernando Borges"
+   ],
+   "texto_impedimento": " Antes de passar à deliberação, o Secretário-Geral registrou que o voto do relator original foi proferido pelo Diretor Roger Romão Cabral, motivo pelo qual o Diretor Substituto Fábio Borges encontrava-se impedido de votar."
   },
   {
    "deliberacao": "2.8.2",
@@ -5429,7 +5919,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Guilherme Santana Lopes Gomes, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, em razão de manifestação anterior do seu gabinete sobre a matéria, podendo os demais Diretores se manifestar regularmente."
   },
   {
    "deliberacao": "2.9.1",
@@ -5451,7 +5945,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -5473,7 +5969,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.2",
@@ -5495,7 +5993,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.3",
@@ -5517,7 +6017,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.4",
@@ -5539,7 +6041,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.5",
@@ -5561,7 +6065,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.6",
@@ -5583,7 +6089,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.2.7",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.7",
@@ -5605,7 +6113,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.8",
@@ -5627,7 +6137,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.9",
@@ -5649,7 +6161,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.10",
@@ -5671,7 +6185,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -5693,7 +6209,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.2",
@@ -5715,7 +6233,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -5737,7 +6257,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -5759,7 +6281,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.1",
@@ -5781,7 +6305,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.7.1",
@@ -5803,7 +6329,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.9.1",
@@ -5825,7 +6353,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.9.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.9.2",
@@ -5847,7 +6377,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.10.1",
@@ -5869,7 +6401,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.11.1",
@@ -5891,7 +6425,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.12.1",
@@ -5913,7 +6449,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.13.1",
@@ -5935,7 +6473,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -5957,7 +6497,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -5979,7 +6521,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -6001,7 +6545,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.2",
@@ -6023,7 +6569,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -6045,7 +6593,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.2",
@@ -6067,7 +6617,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.3",
@@ -6090,7 +6642,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.12.1",
@@ -6143,7 +6697,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto aprovado por maioria dos membros da Diretoria Colegiada, com divergência registrada pelo Diretor-Geral quanto ao alcance da base de cálculo relativo ao período de 2009 a 2011.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.7",
@@ -6165,7 +6721,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.2",
@@ -6192,7 +6750,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após voto favorável do Diretor Substituto Luiz Paniago Neves e do Diretor José Fernando de Mendonça Gomes Júnior, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.3",
@@ -6219,7 +6779,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após voto favorável do Diretor Substituto Luiz Paniago Neves e do Diretor José Fernando de Mendonça Gomes Júnior, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -6241,7 +6803,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -6263,7 +6827,12 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Luiz Paniago Neves",
+    "Fábio Fernando Borges"
+   ],
+   "texto_impedimento": " 35 do Regimento Interno, os Diretores Fábio Borges e Luiz Paniago Neves encontravam-se impedidos de votar, restando apenas a manifestação do Diretor José Fernando de Mendonça Gomes Júnior para a conclusão do julgamento."
   },
   {
    "deliberacao": "1.3.1",
@@ -6285,7 +6854,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.2",
@@ -6307,7 +6878,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.3",
@@ -6329,7 +6902,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.4",
@@ -6351,7 +6926,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.5",
@@ -6373,7 +6950,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.6",
@@ -6395,7 +6974,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -6417,7 +6998,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.2",
@@ -6439,7 +7022,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.3",
@@ -6461,7 +7046,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -6483,7 +7070,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.2",
@@ -6505,7 +7094,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.3",
@@ -6527,7 +7118,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.1",
@@ -6549,7 +7142,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.1",
@@ -6571,7 +7166,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.2",
@@ -6593,7 +7190,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.3",
@@ -6615,7 +7214,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.8.1",
@@ -6637,7 +7238,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.9.1",
@@ -6659,7 +7262,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -6693,7 +7298,12 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Carlos Cordeiro Ribeiro, aprovado por unanimidade pelos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Fábio Fernando Borges",
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que, em razão da atual composição dos gabinetes, os Diretores José Fernando de Mendonça Gomes Júnior e Fábio Borges encontravam-se impedidos de votar, restando apenas a manifestação do Diretor-Geral, Mauro Henrique Moreira Sousa, tendo em vista a apresentação de voto vista pelo Diretor Substituto Luiz Paniago Neves."
   },
   {
    "deliberacao": "2.1.2",
@@ -6715,7 +7325,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Guilherme Santana Lopes Gomes, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Antes de passar à deliberação, o Secretário-Geral registrou que o relator da matéria foi o Diretor Guilherme Santana Lopes Gomes, motivo pelo qual o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, podendo os demais Diretores se manifestar regularmente."
   },
   {
    "deliberacao": "2.2.1",
@@ -6737,7 +7351,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor-Geral, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, podendo os demais Diretores se manifestar regularmente."
   },
   {
    "deliberacao": "2.3.1",
@@ -6759,7 +7377,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Revisor, Diretor Substituto Luiz Paniago Neves, aprovado por maioria dos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, podendo os demais Diretores se manifestar regularmente."
   },
   {
    "deliberacao": "2.4.1",
@@ -6781,7 +7403,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Guilherme Santana Lopes Gomes, aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Antes de passar à deliberação, o Secretário-Geral registrou que o relator da matéria foi o Diretor Guilherme Santana Lopes Gomes, motivo pelo qual o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, podendo os demais Diretores se manifestar regularmente."
   },
   {
    "deliberacao": "2.5.1",
@@ -6803,7 +7429,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -6825,7 +7453,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.4",
@@ -6847,7 +7477,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.5",
@@ -6869,7 +7501,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.6",
@@ -6891,7 +7525,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.8",
@@ -6913,7 +7549,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.9",
@@ -6935,7 +7573,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -6957,7 +7597,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.2",
@@ -6979,7 +7621,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -7001,7 +7645,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.2",
@@ -7023,7 +7669,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -7045,7 +7693,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -7067,7 +7717,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.6. ASSUNTO: Recurso contra indeferimento do requerimento de Registro de Licença.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.1",
@@ -7089,7 +7741,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.2",
@@ -7111,7 +7765,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.3",
@@ -7133,7 +7789,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.7.1",
@@ -7155,7 +7813,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.8.1",
@@ -7177,7 +7837,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.9.1",
@@ -7213,7 +7875,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.10.1",
@@ -7235,7 +7899,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.11.1",
@@ -7257,7 +7923,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -7284,7 +7952,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após voto favorável do Diretor Substituto Fábio Fernando Borges e do Diretor Substituto Luiz Paniago Neves, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -7306,7 +7976,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -7329,7 +8001,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.4.1",
@@ -7352,7 +8026,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.5.1",
@@ -7374,7 +8050,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.6.1",
@@ -7396,7 +8074,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -7418,7 +8098,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.4",
@@ -7440,7 +8122,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.1",
@@ -7462,7 +8146,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.2",
@@ -7484,7 +8170,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.3",
@@ -7506,7 +8194,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.5",
@@ -7528,7 +8218,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -7550,7 +8242,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.1.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.2",
@@ -7572,7 +8266,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.3",
@@ -7599,7 +8295,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após o Diretor Substituto Fábio Fernando Borges e o Diretor Substituto Luiz Paniago Neves votarem por acompanhar o relator, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.2",
@@ -7621,7 +8319,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -7643,7 +8343,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -7665,7 +8367,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -7688,7 +8392,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do Relator, Diretor Substituto Fábio Fernando Borges, aprovado por unanimidade pelos diretores presentes, sendo acompanhado pelo Revisor, Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -7712,7 +8418,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Relator, Diretor José Fernando de Mendonça Gomes Júnior, aprovado por maioria dos membros da Diretoria Colegiada, com divergência apresentada pelo Revisor, Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -7736,7 +8444,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Relator, Diretor Guilherme Santana Lopes Gomes, aprovado por maioria dos membros da Diretoria Colegiada, com divergência apresentada pelo Revisor, Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Após as considerações, o Secretário-Geral esclareceu que, em razão de o Diretor Guilherme Santana Lopes Gomes já haver se manifestado anteriormente nos autos, o Diretor José Fernando de Mendonça Gomes Júnior encontrava-se impedido de votar, tendo em vista a sucessão do respectivo gabinete."
   },
   {
    "deliberacao": "1.6.1",
@@ -7758,7 +8470,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -7780,7 +8494,12 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do Relator, Diretor Roger Romão Cabral, aprovado por maioria dos membros da Diretoria Colegiada.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Fábio Fernando Borges",
+    "José Fernando de Mendonça Gomes Júnior"
+   ],
+   "texto_impedimento": " Esclareceu, por fim, que os Diretores Fábio Borges e José Fernando de Mendonça Gomes Júnior não votariam na matéria, remanescendo apenas a possibilidade de alteração de voto pelo Diretor-Geral Mauro Sousa, caso entendesse pertinente."
   },
   {
    "deliberacao": "2.2.1",
@@ -7802,7 +8521,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -7824,7 +8545,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.1",
@@ -7846,7 +8569,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.3",
@@ -7868,7 +8593,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.4",
@@ -7890,7 +8617,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -7919,7 +8648,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -7941,7 +8672,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -7963,7 +8696,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -7985,7 +8720,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.2",
@@ -8007,7 +8744,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -8030,7 +8769,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.4",
@@ -8052,7 +8793,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -8074,7 +8817,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -8096,7 +8841,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.4",
@@ -8118,7 +8865,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.5",
@@ -8140,7 +8889,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.17",
@@ -8167,7 +8918,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após o Diretor Substituto Luiz Paniago Neves e o Diretor José Fernando de Mendonça Gomes Júnior votarem por acompanhar o relator, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.12",
@@ -8189,7 +8942,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -8245,7 +9000,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Após o Diretor José Fernando de Mendonça Gomes Júnior e o Diretor Substituto Fábio Fernando Borges votarem por acompanhar o relator, a deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -8269,7 +9026,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.2",
@@ -8291,7 +9050,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -8314,7 +9075,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -8336,7 +9099,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -8358,7 +9123,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -8380,7 +9147,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do revisor, Diretor-Geral, aprovado por maioria dos diretores presentes com cômputo do voto de qualidade proferido pelo Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -8402,7 +9171,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do relator, Diretor Tasso Mendonça Júnior, aprovado por unanimidade pelos diretores presentes, sendo acompanhado pelo revisor, Diretor-Geral.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Fábio Fernando Borges"
+   ],
+   "texto_impedimento": " Esclareceu, ainda, que o Diretor Substituto Fábio Fernando Borges encontrava-se impedido de votar, restando apenas a manifestação do Diretor-Geral."
   },
   {
    "deliberacao": "1.3.1",
@@ -8424,7 +9197,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA (diligência)",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -8446,7 +9221,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.2",
@@ -8468,7 +9245,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -8490,7 +9269,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.2",
@@ -8512,7 +9293,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.6. ASSUNTO: Recurso contra multa aplicada. Não pagamento de Taxa Anual por Hectare.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.1",
@@ -8534,7 +9317,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.2",
@@ -8556,7 +9341,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -8578,7 +9365,11 @@
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
    "deliberacao_texto": "Voto do revisor, Diretor Fábio Fernando Borges, aprovado por maioria dos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": true,
+   "impedidos": [
+    "Luiz Paniago Neves"
+   ],
+   "texto_impedimento": " Antes da deliberação do item, o Secretário-Geral esclareceu que o Diretor Roger Romão Cabral era o relator original da matéria, apresentada na 74ª Reunião Ordinária Pública, e que apenas o Diretor Substituto Luiz Paniago Neves encontrava-se impedido de votar, podendo os demais diretores se manifestar regularmente."
   },
   {
    "deliberacao": "2.2.1",
@@ -8600,7 +9391,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.2",
@@ -8622,7 +9415,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.3",
@@ -8644,7 +9439,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.6",
@@ -8666,7 +9463,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.7",
@@ -8688,7 +9487,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.8",
@@ -8710,7 +9511,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.9",
@@ -8732,7 +9535,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.10",
@@ -8754,7 +9559,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.11",
@@ -8776,7 +9583,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.13",
@@ -8798,7 +9607,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.14",
@@ -8820,7 +9631,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.15",
@@ -8842,7 +9655,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.16",
@@ -8864,7 +9679,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.18",
@@ -8886,7 +9703,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -8908,7 +9727,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.4.1",
@@ -8931,7 +9752,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.5.1",
@@ -8953,7 +9776,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -8975,7 +9800,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -8999,7 +9826,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberacao foi sobrestada em razao do pedido de vistas ao processo pelo Diretor- Geral. Findadas as deliberacoes das matérias pautadas pelo Diretor Luiz Paniago Neves, o Diretor-Geral passou a palavra ao Diretor José Fernando de Mendonca Gomes Junior para a relatoria das matérias por ele pautadas, também com pedido de sustentacao oral: 4. DIRETOR JOSE FERNANDO DE MENDONCA GOMES JUNIOR 4.l. ASSUNTO: Recurso contra Notificacao Fiscal de Lancamento de Débito para Pagamento - CFEM. 4.1.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -9021,7 +9850,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 4.1.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.2",
@@ -9043,7 +9874,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 4.3. ASSUNTO: Recurso contra negativa da suspensao dos trabalhos de lavra. 4.3.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -9065,7 +9898,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes, ficando consignado que a Diretoria Colegiada deferiu o pedido de suspensao dos trabalhos de lavra, cabendo a Gerencia Regional da ANM no Estado de Minas Gerais apenas a analise e definicao do respectivo prazo de suspensao. Findadas as tratativas relacionadas aos itens de pauta com pedido de sustentacao oral, o Diretor-Geral deu inicio a analise das materias regulatorias, passando a presidencia da sessao ao Diretor José Fernando de Ata 87a Reuniao Ordinaria Publica da DIRC (20523026) SEI 48051.008620/2026-65 /pg.3 [pg 3]",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -9087,7 +9922,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Findadas as deliberacoes da materia regulatoria pautada pelo Diretor-Geral, o diretor José Fernando de Mendonca Gomes Junior restituiu-lhe a presidencia da sessao. De pronto, o Diretor-Geral passou a palavra ao Diretor Fabio Fernando Borges para a relatoria da matéria regulatoria por ele pautada: 2. DIRETOR FABIO FERNANDO BORGES 2.1. ASSUNTO: Regulacao. Alteracao da Resolucao ANM n° 208/2025. 2.1.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -9109,7 +9946,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes, com a sugestao do Diretor- Geral de encaminhamento da Resolucao ao Tribunal de Contas da Uniao (TCU). Apos a apresentacao do voto, o Diretor-Geral parabenizou o relator, a equipe técnica e as unidades Ata 87a Reuniao Ordinaria Publica da DIRC (20523026) SEl 48051.008620/2026-65 /pg. 4 [pg 4]",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -9160,7 +9999,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto do relator, Diretor Luiz Paniago Neves, aprovado por unanimidade pelos diretores presentes. 1.3. ASSUNTO: Ampliacao da quantidade autorizada por guia de utilizacao. 1.3.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -9182,7 +10023,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -9204,7 +10047,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5. ASSUNTO: Pedido de Reconsideracao contra a declaracao de nulidade ex officio do alvara de pesquisa por nao pagamento da TAH. 1.5.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -9226,7 +10071,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.2",
@@ -9248,7 +10095,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5.3",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.3",
@@ -9270,7 +10119,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5.4",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.4",
@@ -9292,7 +10143,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5.5",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.5",
@@ -9315,7 +10168,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.5.6",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.6",
@@ -9337,7 +10192,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Findadas as deliberacoes das matérias pautadas pelo Diretor-Geral, o diretor José Fernando de Mendonca Gomes Junior restituiu-lhe a presidencia da sessao. De pronto, o Diretor-Geral passou a palavra ao Diretor Substituto Fabio Fernando Borges para a relatoria das matérias por ele pautadas: 2. DIRETOR FABIO FERNANDO BORGES 2.2. ASSUNTO: Recurso contra ato que negou a aprovacao do relatorio final de pesquisa. 2.2.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -9359,7 +10216,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Ata 87a Reuniao Ordinaria Publica da DIRC (20523026) SEl 48051.008620/2026-65/ pg.8 [pg 8]",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -9381,7 +10240,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4. ASSUNTO: Recurso contra cobranga da Compensacao Financeira pela Exploracao de Recursos Minerais - CFEM. 2.4.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.1",
@@ -9403,7 +10264,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.2",
@@ -9425,7 +10288,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4.3",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.3",
@@ -9447,7 +10312,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4.4",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.4",
@@ -9469,7 +10336,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4.5",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.5",
@@ -9491,7 +10360,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4.6",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.6",
@@ -9513,7 +10384,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.4.7",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.7",
@@ -9535,7 +10408,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Ata 87a Reuniao Ordinaria Publica da DIRC (20523026) SEl 48051.008620/2026-65 / pg. 10 [pg 10]",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.8",
@@ -9557,7 +10432,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Findadas as deliberacoes das materias pautadas pelo Diretor Fabio Fernando Borges, o Diretor-Geral passou a palavra ao Diretor Luiz Paniago Neves, para a relatoria das materias por ele pautadas: 3. DIRETOR LUIZ PANIAGO NEVES 3.2. ASSUNTO: Recurso contra a notificacao administrativa n° 456/2024 (TAH). 3.2.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -9579,7 +10456,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.3. ASSUNTO: Recurso contra a decisao em segunda instancia contra indeferimento de Relatorio Final de Pesquisa. 3.3.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -9601,7 +10480,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Ata 87a Reuniao Ordinaria Publica da DIRC (20523026) SEI 48051.008620/2026-65 /pg. 11 [pg 11]",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -9623,7 +10504,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.5. ASSUNTO: Recurso contra imposicao de multa. 3.5.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -9645,7 +10528,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.5.2",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.2",
@@ -9667,7 +10552,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.5.3",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.3",
@@ -9689,7 +10576,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.5.4",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.4",
@@ -9711,7 +10600,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 3.5.5",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.5",
@@ -9733,7 +10624,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Findadas as deliberacoes das materias pautadas pelo Diretor Fabio Fernando Borges, o Diretor-Geral passou a palavra ao Diretor José Fernando de Mendonca Gomes Junior, para a relatoria das materias por ele pautadas: 4. DIRETOR JOSE FERNANDO DE MENDONCA GOMES JUNIOR 4.2. ASSUNTO: Nulidade de voto referente a negativa de recurso contra retificacao de area. 4.2.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -9755,7 +10648,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 4.4. ASSUNTO: Recurso hierarquico contra indeferimento do requerimento de pesquisa por interferéncia total. 4.4.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.4.1",
@@ -9777,7 +10672,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 4.5. ASSUNTO: Recurso contra negativa de aprovacao de relatorio de pesquisa. 4.5.1",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.5.1",
@@ -9799,7 +10696,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Encerradas as manifestacoes, o Diretor-Geral agradeceu a presenca de todos e encerrou a 87a Reuniao Ordinaria Publica da Diretoria Colegiada da ANM. Eu, Caio Vasconcelos de Azevedo, Secretario-Geral, lavrei a presente ata, que, apos aprovada, sera assinada pelos Diretores presentes. Ata 87a Reuniao Ordinaria Publica da DIRC (20523026) SEI 48051.008620/2026-65 /pg. 14 [pg 14]",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "#1",
@@ -9821,7 +10720,9 @@
    "vista_por": [],
    "resultado": "ATA APROVADA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.7.1",
@@ -9843,7 +10744,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.1",
@@ -9865,7 +10768,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.6.1",
@@ -9889,7 +10794,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor José Fernando de Mendonça Gomes Júnior.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.1",
@@ -9912,7 +10819,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. Findadas as tratativas relacionadas aos itens de pauta com pedido de sustentação oral, o Diretor-Geral deu início à análise das matérias regulatórias, passando a palavra ao Diretor Luiz Paniago Neves para a relatoria da matéria regulatória por ele pautada:",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.1.1",
@@ -9934,7 +10843,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.1.1",
@@ -9956,7 +10867,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.1.1",
@@ -10007,7 +10920,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.1",
@@ -10029,7 +10944,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.2",
@@ -10051,7 +10968,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.2.3",
@@ -10073,7 +10992,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.1",
@@ -10095,7 +11016,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.2",
@@ -10117,7 +11040,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.3",
@@ -10139,7 +11064,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.4",
@@ -10161,7 +11088,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.3.5",
@@ -10183,7 +11112,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.1",
@@ -10205,7 +11136,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.4.2",
@@ -10227,7 +11160,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.5.1",
@@ -10249,7 +11184,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.1",
@@ -10271,7 +11208,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.2",
@@ -10293,7 +11232,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.3",
@@ -10315,7 +11256,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.4",
@@ -10337,7 +11280,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.6.5",
@@ -10359,7 +11304,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 1.7. ASSUNTO: Voto vista. Recurso contra cobrança de CFEM.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "1.7.1",
@@ -10381,7 +11328,9 @@
    "vista_por": [],
    "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.2",
@@ -10403,7 +11352,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.3",
@@ -10425,7 +11376,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.4",
@@ -10447,7 +11400,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.5",
@@ -10469,7 +11424,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.6",
@@ -10491,7 +11448,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.7",
@@ -10513,7 +11472,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.8",
@@ -10535,7 +11496,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.9",
@@ -10557,7 +11520,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.10",
@@ -10579,7 +11544,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.11",
@@ -10601,7 +11568,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.12",
@@ -10623,7 +11592,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.13",
@@ -10645,7 +11616,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.14",
@@ -10667,7 +11640,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.15",
@@ -10689,7 +11664,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.1.16",
@@ -10711,7 +11688,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes. 2.2. ASSUNTO: Pedido de reconsideração contra decisão da Diretoria Colegiada que manteve Débito para Pagamento - CFEM.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.2.1",
@@ -10733,7 +11712,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.3.1",
@@ -10757,7 +11738,9 @@
    ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação foi sobrestada em razão do pedido de vistas ao processo pelo Diretor- Geral, sendo consignado que os demais diretores irão aguardar o retorno da vista para manifestarem seu voto.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.4.1",
@@ -10779,7 +11762,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.5.1",
@@ -10801,7 +11786,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "2.6.1",
@@ -10823,7 +11810,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.2.1",
@@ -10845,7 +11834,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.3.1",
@@ -10867,7 +11858,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.4.1",
@@ -10889,7 +11882,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "3.5.1",
@@ -10911,7 +11906,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.2",
@@ -10933,7 +11930,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.2.3",
@@ -10955,7 +11954,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.3.1",
@@ -10977,7 +11978,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   },
   {
    "deliberacao": "4.4.1",
@@ -10999,7 +12002,9 @@
    "vista_por": [],
    "resultado": "APROVADO POR UNANIMIDADE",
    "deliberacao_texto": "Voto aprovado por unanimidade pelos diretores presentes.",
-   "tem_impedimento": false
+   "tem_impedimento": false,
+   "impedidos": [],
+   "texto_impedimento": ""
   }
  ],
  "votos": [
@@ -18660,8 +19665,8 @@
    "processo": "48066.815567/2021-88",
    "deliberacao": "2.3.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -20092,9 +21097,10 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "REVISOR (voto divergente do relator original; venceu)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20102,9 +21108,10 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "ACOMPANHOU o revisor (Diretor-Geral)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20112,9 +21119,10 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o revisor (Diretor-Geral)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20122,8 +21130,8 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -20134,7 +21142,8 @@
    "diretor": "Mauro Henrique Moreira Sousa",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20142,9 +21151,10 @@
    "processo": "48403.830597/2011-74",
    "deliberacao": "2.4.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20152,9 +21162,10 @@
    "processo": "48403.830597/2011-74",
    "deliberacao": "2.4.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20162,8 +21173,8 @@
    "processo": "48403.830597/2011-74",
    "deliberacao": "2.4.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -20243,8 +21254,8 @@
    "processo": "48412.866510/2015-11",
    "deliberacao": "2.6.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -20276,7 +21287,8 @@
    "diretor": "Mauro Henrique Moreira Sousa",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20284,9 +21296,10 @@
    "processo": "48403.832699/2005-86",
    "deliberacao": "2.7.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator, com ajuste (retorno à SOT)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20294,9 +21307,10 @@
    "processo": "48403.832699/2005-86",
    "deliberacao": "2.7.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator, com ajuste",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20304,27 +21318,7 @@
    "processo": "48403.832699/2005-86",
    "deliberacao": "2.7.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
-  },
-  {
-   "reuniao": "ROP83",
-   "data": "2026-03-25",
-   "processo": "48403.832959/2005-13",
-   "deliberacao": "2.7.2",
-   "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
-  },
-  {
-   "reuniao": "ROP83",
-   "data": "2026-03-25",
-   "processo": "48403.832959/2005-13",
-   "deliberacao": "2.7.2",
-   "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -20333,10 +21327,33 @@
    "data": "2026-03-25",
    "processo": "48403.832959/2005-13",
    "deliberacao": "2.7.2",
-   "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "REVISAR (divergiu do relator original; a ata não diz se acompanhou o voto do revisor)",
    "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
+  },
+  {
+   "reuniao": "ROP83",
+   "data": "2026-03-25",
+   "processo": "48403.832959/2005-13",
+   "deliberacao": "2.7.2",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "REVISOR (voto proferido; venceu)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
+  },
+  {
+   "reuniao": "ROP83",
+   "data": "2026-03-25",
+   "processo": "48403.832959/2005-13",
+   "deliberacao": "2.7.2",
+   "diretor": "Fábio Fernando Borges",
+   "voto": "ACOMPANHOU o revisor",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP83",
@@ -20344,8 +21361,8 @@
    "processo": "48403.832959/2005-13",
    "deliberacao": "2.7.2",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -20374,8 +21391,8 @@
    "processo": "48403.932145/2008-21",
    "deliberacao": "2.8.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -20435,8 +21452,8 @@
    "processo": "48402.921239/2013-41",
    "deliberacao": "2.8.2",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -21866,8 +22883,8 @@
    "processo": "48423.868314/2016-33",
    "deliberacao": "1.2.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -21876,8 +22893,8 @@
    "processo": "48423.868314/2016-33",
    "deliberacao": "1.2.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -22636,8 +23653,8 @@
    "processo": "48054.930707/2019-61",
    "deliberacao": "2.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -22646,8 +23663,8 @@
    "processo": "48054.930707/2019-61",
    "deliberacao": "2.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -22697,8 +23714,8 @@
    "processo": "48402.922857/2009-29",
    "deliberacao": "2.1.2",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -22748,27 +23765,7 @@
    "processo": "48406.861167/2016-89",
    "deliberacao": "2.2.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "tipo_item": "Deliberação"
-  },
-  {
-   "reuniao": "ROP84",
-   "data": "2026-04-29",
-   "processo": "48406.861600/2008-76",
-   "deliberacao": "2.3.1",
-   "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
-  },
-  {
-   "reuniao": "ROP84",
-   "data": "2026-04-29",
-   "processo": "48406.861600/2008-76",
-   "deliberacao": "2.3.1",
-   "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -22777,10 +23774,33 @@
    "data": "2026-04-29",
    "processo": "48406.861600/2008-76",
    "deliberacao": "2.3.1",
-   "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "REVISAR (a ata não narra o voto do Diretor-Geral)",
    "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
+  },
+  {
+   "reuniao": "ROP84",
+   "data": "2026-04-29",
+   "processo": "48406.861600/2008-76",
+   "deliberacao": "2.3.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "REVISOR (voto proferido; venceu)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
+  },
+  {
+   "reuniao": "ROP84",
+   "data": "2026-04-29",
+   "processo": "48406.861600/2008-76",
+   "deliberacao": "2.3.1",
+   "diretor": "Fábio Fernando Borges",
+   "voto": "REVISAR (a ata não narra o voto do Diretor Substituto Fábio)",
+   "proveniencia": "REVISAR",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP84",
@@ -22788,8 +23808,8 @@
    "processo": "48406.861600/2008-76",
    "deliberacao": "2.3.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -22828,8 +23848,8 @@
    "processo": "48403.834865/2010-46",
    "deliberacao": "2.4.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -24519,8 +25539,8 @@
    "processo": "27202.820791/1987-57",
    "deliberacao": "1.5.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -24580,9 +25600,10 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator (pediu vista, acompanhou e manteve o voto)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP85",
@@ -24590,9 +25611,10 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP85",
@@ -24600,8 +25622,8 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -24610,8 +25632,8 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -25591,9 +26613,10 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "REVISOR (voto divergente; venceu com voto de qualidade)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP86",
@@ -25601,9 +26624,10 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o revisor (alterou o voto antecipado)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP86",
@@ -25611,9 +26635,10 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator (manteve o voto antecipado; vencido)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP86",
@@ -25621,9 +26646,10 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "RELATOR (voto vencido)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP86",
@@ -25641,8 +26667,8 @@
    "processo": "27209.890579/1987-97",
    "deliberacao": "1.2.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
+   "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
   {
@@ -25951,9 +26977,10 @@
    "processo": "27220.896259/2004-44",
    "deliberacao": "2.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
+   "voto": "REVISAR (a ata não narra o voto do Diretor-Geral)",
    "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP86",
@@ -25961,7 +26988,18 @@
    "processo": "27220.896259/2004-44",
    "deliberacao": "2.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "REVISOR (voto proferido; venceu)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
+  },
+  {
+   "reuniao": "ROP86",
+   "data": "2026-06-30",
+   "processo": "27220.896259/2004-44",
+   "deliberacao": "2.1.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "IMPEDIDO (ata: impedido de votar / não votaria)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -25970,20 +27008,11 @@
    "data": "2026-06-30",
    "processo": "27220.896259/2004-44",
    "deliberacao": "2.1.1",
-   "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
-  },
-  {
-   "reuniao": "ROP86",
-   "data": "2026-06-30",
-   "processo": "27220.896259/2004-44",
-   "deliberacao": "2.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
+   "voto": "REVISAR (a ata não narra o voto do Diretor José Fernando)",
    "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "ROP86",

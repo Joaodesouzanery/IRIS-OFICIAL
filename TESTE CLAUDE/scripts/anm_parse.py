@@ -44,6 +44,8 @@ def resolve(nome, pres):
         if toks and all(x in norm(p) for x in toks[:2]): return p
     return None
 
+NARR = json.load(open('anm_narrativas.json')) if os.path.exists('anm_narrativas.json') else {}
+
 def parse(path):
     raw = open(path, encoding='utf8').read()
     # remove rodapes de pagina para nao quebrar frases
@@ -112,10 +114,17 @@ def parse(path):
             mv = re.search(r'(?:Revisor|revisor),\s*(?:Diretor(?:a)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]+?)(?:,|\s+aprovad|\.)', dtx)
             if mv: rev = resolve(mv[1], pres)
         if tipo_item == 'Deliberação' and res.startswith('SOBRESTADO'): tipo_item = 'Vista'
+        # impedimentos / "não votaria": lidos do bloco inteiro do item (a frase vem antes de DELIBERAÇÃO)
+        bflat = re.sub(r'\s+', ' ', re.sub(r'\n\s*Ata \d+[ªa].*?pg\. \d+\s*', ' ', bloco)); imped = []
+        for mi in re.finditer(r'(?:encontrava-se|encontravam-se|estava|estavam|ficou|ficaram)\s+impedid[oa]s?|n[ãa]o votari(?:a|am)\b', bflat, re.I):
+            pre = bflat[max(0, mi.start() - 230):mi.start()]
+            cl = re.split(r',|\bque\b|pelo qual|motivo pelo|em raz[ãa]o d[eao]\b', pre)[-1]
+            for x in quem(cl):
+                if x not in imped: imped.append(x)
         out.append({'deliberacao': item_n, 'revisor': rev, 'reuniao': tag, 'data': meta['data'], 'processo': m[1], 'relator': rel,
                     'interessado': re.sub(r'\s+', ' ', inter[1]).strip() if inter else '',
                     'assunto': re.sub(r'\s+', ' ', ass[1]).strip()[:300] if ass else '', 'voto_resumo': voto_resumo,
-                    'tipo_item': tipo_item, 'retirada_por': retirou or '', 'processos_do_item': processos_item[:30], 'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(re.search(r'impedid', dn))})
+                    'tipo_item': tipo_item, 'retirada_por': retirou or '', 'processos_do_item': processos_item[:30], 'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(imped), 'impedidos': imped, 'texto_impedimento': ('; '.join(re.findall(r'[^.]*(?:impedid|n[ãa]o votari)[^.]*\.', bflat))[:400] if imped else '')})
     vistos, unico, dups = set(), [], 0
     for d in out:
         k = (d['deliberacao'], d['processo'])
@@ -143,13 +152,19 @@ def parse(path):
         for p in pr:
             ult = norm(p).split()
             if re.search(r'\b' + re.escape(ult[-1]) + r'\b', norm(d['deliberacao_texto'])) : citados[p] = True
+        ativos = [x for x in pr if x not in d.get('impedidos', [])]
+        narr = NARR.get(f"{d['reuniao']}|{d['deliberacao']}", {})
         for p in pr:
-            if p == d['relator']: v, prov = 'RELATOR (voto proferido)', 'nominal'
+            nv_ = next((v_ for k_, v_ in narr.items() if not k_.startswith('_') and norm(k_) in norm(p)), None)
+            if nv_ and p not in d.get('impedidos', []):
+                votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': nv_[0], 'proveniencia': nv_[1], 'tipo_item': d['tipo_item'], 'fonte_voto': 'narrativa do Secretário-Geral na ata'}); continue
+            if p in d.get('impedidos', []) and p != d['relator']: v, prov = 'IMPEDIDO (ata: impedido de votar / não votaria)', 'nominal'
+            elif p == d['relator']: v, prov = 'RELATOR (voto proferido)', 'nominal'
             elif p in d.get('dissidentes', []): v, prov = 'DIVERGIU', 'nominal'
             elif p in d.get('vista_por', []): v, prov = 'PEDIU VISTA', 'nominal'
             elif p in d.get('favoraveis', []): v, prov = 'ACOMPANHOU (votou a favor antes da vista)', 'nominal'
-            elif d['resultado'] == 'APROVADO POR MAIORIA' and len(d.get('dissidentes', [])) == 1 and len(pr) >= 3: v, prov = 'ACOMPANHOU (por exclusão: um só divergente nomeado)', 'inferido'
-            elif d['resultado'] == 'APROVADO POR UNANIMIDADE' and not d['tem_impedimento']: v, prov = 'ACOMPANHOU', 'inferido'
+            elif d['resultado'] == 'APROVADO POR MAIORIA' and len(d.get('dissidentes', [])) == 1 and len(ativos) >= 3: v, prov = 'ACOMPANHOU (por exclusão: um só divergente nomeado)', 'inferido'
+            elif d['resultado'] == 'APROVADO POR UNANIMIDADE': v, prov = 'ACOMPANHOU', 'inferido'
             elif d['resultado'] == 'SOBRESTADO (vista)': v, prov = 'SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)', 'inferido'
             else: v, prov = 'REVISAR (maioria sem divergentes nomeados na ata)', 'REVISAR'
             votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
