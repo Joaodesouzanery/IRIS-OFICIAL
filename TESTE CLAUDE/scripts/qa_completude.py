@@ -81,6 +81,21 @@ lin('ANP', 'Votos duplicados (item, diretor)', 0, len(anp['votos']) - len({(v['r
 pend_anp = [p_[1] for p_ in anp['pendencias']]
 chv = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANP'}
 lin('ANP', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pend_anp), sum(1 for x in pend_anp if any(x == c or c.startswith(x) or x in c for c in chv)))
+# ---------------- ANTAQ
+aq = json.load(open('antaq.json'))
+pres_aq = {r['reuniao']: set(r['presentes']) | set(r.get('ausentes', [])) for r in aq['reunioes']}
+nvq = collections.defaultdict(set)
+for v in aq['votos']: nvq[(v['reuniao'], v['processo'], v['deliberacao'])].add(v['diretor'])
+ok_q = sum(1 for d in aq['deliberacoes'] if nvq[(d['reuniao'], d['processo'], d['deliberacao'])] == pres_aq.get(d['reuniao'], set()))
+dif_q = [d for d in aq['deliberacoes'] if nvq[(d['reuniao'], d['processo'], d['deliberacao'])] != pres_aq.get(d['reuniao'], set())]
+lin('ANTAQ', 'Itens com ao menos 1 voto registrado', len(aq['deliberacoes']), sum(1 for d in aq['deliberacoes'] if nvq[(d['reuniao'], d['processo'], d['deliberacao'])]), nota=f'{len(dif_q)} itens têm conjunto de votantes diferente dos presentes da reunião (item decidido com subconjunto de diretores, ou diretor com Declaração de Voto no SEI que a ata não lista como presente, ROD605); conferidos na auditoria')
+lin('ANTAQ', 'Votos duplicados (item, diretor)', 0, len(aq['votos']) - len({(v['reuniao'], v['processo'], v['deliberacao'], v['diretor']) for v in aq['votos']}))
+ev_q = collections.Counter(v['proveniencia'] for v in aq['votos'])
+lin('ANTAQ', 'Votos: nominal + inferido + REVISAR = total', len(aq['votos']), sum(ev_q.values()), nota=str(dict(ev_q)))
+lin('ANTAQ', 'Verificações da aba qualidade do parser sem DIVERGE', 0, sum(1 for q in aq['qualidade'] if q[4] == 'DIVERGE'), nota=f"{sum(1 for q in aq['qualidade'] if q[4] == 'EXCEÇÃO')} exceções explicadas, todas em Faltam na fonte quando for documento")
+chq = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANTAQ'}
+pq = [str(p_[1]).split(' — ')[0].strip() for p_ in aq['pendencias']]
+lin('ANTAQ', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pq), sum(1 for x in pq if any(x == c or c.startswith(x) or x in c for c in chq)))
 # ---------------- planilha
 import openpyxl
 wb = openpyxl.load_workbook('votos_2026.xlsx', read_only=True)
@@ -89,6 +104,7 @@ cx = collections.Counter(r[0] for r in vts)
 lin('ANVISA', 'Votos no JSON final × linhas na aba Votos', len(fin['votos']), cx['ANVISA'])
 lin('ANPD', 'Votos no JSON × linhas na aba Votos', len(b['votos']), cx['ANPD'])
 lin('ANP', 'Votos no JSON × linhas na aba Votos', len(anp['votos']), cx['ANP'])
+lin('ANTAQ', 'Votos no JSON × linhas na aba Votos', len(aq['votos']), cx['ANTAQ'])
 # ---------------- regra: tudo que falta (esperado − coletado) está na aba 'Faltam na fonte', com URL
 fx = [r for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True)]
 chaves = collections.defaultdict(set)

@@ -33,9 +33,15 @@ Gerado por `scripts/qa_completude.py --online`. Esperado = denominador independe
 | ANP | 5 votos (1 por diretor) em cada item | 139 | 139 | OK |  |
 | ANP | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANP | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 13 | 13 | OK |  |
+| ANTAQ | Itens com ao menos 1 voto registrado | 682 | 682 | OK | 14 itens têm conjunto de votantes diferente dos presentes da reunião (item decidido com subconjunto de diretores, ou diretor com Declaração de Voto no SEI que a ata não lista como presente, ROD605); conferidos na auditoria |
+| ANTAQ | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
+| ANTAQ | Votos: nominal + inferido + REVISAR = total | 3402 | 3402 | OK | {'nominal': 1447, 'inferido': 1955} |
+| ANTAQ | Verificações da aba qualidade do parser sem DIVERGE | 0 | 0 | OK | 8 exceções explicadas, todas em Faltam na fonte quando for documento |
+| ANTAQ | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 56 | 56 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
 | ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
 | ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
+| ANTAQ | Votos no JSON × linhas na aba Votos | 3402 | 3402 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 218 | 218 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 279 | 279 | OK | sem URL: [] |

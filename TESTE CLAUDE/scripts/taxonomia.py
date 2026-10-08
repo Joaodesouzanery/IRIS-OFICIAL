@@ -274,6 +274,11 @@ SETOR['ANP'] = {'modal': 'Petróleo, gás e biocombustíveis', 'temas': [
     ('Gestão institucional e administrativa', 'Estrutura, pessoal e orçamento', [r'sessao administrativa', r'orcamento', r'estrutura', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'acordo'], 4),
 ]}
 SETOR['ANTAQ'] = {'modal': 'Portos, hidrovias e navegação', 'temas': [
+    ('Denúncias e medidas cautelares', 'Sobre-estadia / cobranças indevidas (usuários)', [r'sobre-?estadia', r'cobranca', r'armazenagem', r'denuncia', r'medida cautelar', r'cautelar', r'cobranca abusiva'], 8),
+    ('Controle societário e anuências', 'Transferência de controle / anuência prévia', [r'transferencia (indireta )?(de|do) controle', r'controle societario', r'anuencia previa', r'aprovacao previa', r'ato de concentracao'], 8),
+    ('Fiscalização e sanções', 'Termo de ajustamento de conduta (TAC) e cumprimento de determinações', [r'termo de compromisso de ajustamento', r'termo de ajustamento', r'\btac\b', r'cumprimento (do|da|das|dos)', r'determinacoes impostas', r'acao fiscalizadora', r'monitoramento'], 8),
+    ('Autorizações e outorgas', 'Registro de instalação de apoio / empresas', [r'registro de instalacao', r'instalacao de apoio', r'apoio ao transporte aquaviario', r'requerimento (formulado|apresentado)', r'habilitacao'], 7),
+    ('Regulação e normas', 'Análise de impacto regulatório / alteração de resolução', [r'impacto regulatorio', r'carga administrativa', r'alteracao da resolucao', r'resolucao antaq'], 8),
     ('Regulação e normas', 'Norma / resolução / audiência pública', [r'resolucao normativa', r'norma', r'audiencia publica', r'consulta publica', r'regulamento', r'agenda regulatoria', r'\bair\b'], 6),
     ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos', r'pedido de revisao'], 5),
     ('Fiscalização e sanções', 'Auto de infração / multa / sanção', [r'auto de infracao', r'multa', r'infracao', r'sancionador', r'penalidade', r'processo administrativo sancionador'], 6),
