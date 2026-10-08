@@ -38585,7 +38585,7 @@
   "hash": "0f4d87e630d90b91",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD26|CD 26/2026|CD 26/2026": {
+ "ANVISA|CD26|25351.830025/2024-67|CD 26/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -38602,7 +38602,7 @@
   "hash": "ac94d714aeb03267",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD27|CD 27/2026|CD 27/2026": {
+ "ANVISA|CD27|25351.943016/2019-78|CD 27/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -39330,7 +39330,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -39414,7 +39414,7 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
+  "microtema_iris": "pessoal",
   "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
@@ -39483,8 +39483,8 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -39835,7 +39835,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -39968,7 +39968,7 @@
   "hash": "ec301db524eacc8c",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD163|CD 163/2026|CD 163/2026": {
+ "ANVISA|CD163|25351.907041/2026-17|CD 163/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Pessoal e missões",
   "subtema": "Afastamento do país / capacitação",
@@ -40062,7 +40062,7 @@
   "subtema": "Excepcionalidade / esgotamento de estoque",
   "tipo_ato": "Outros",
   "microtema_iris": "outros",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -40131,8 +40131,8 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -40196,7 +40196,7 @@
   "hash": "132e4f46b8789a7d",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD194|CD 194/2026|CD 194/2026": {
+ "ANVISA|CD194|25351.907041/2026-17|CD 194/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Pessoal e missões",
   "subtema": "Afastamento do país / capacitação",
@@ -40563,7 +40563,7 @@
   "hash": "293230931c071c14",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD220|CD 220/2026|CD 220/2026": {
+ "ANVISA|CD220|25351.914719/2023-75|CD 220/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -41195,7 +41195,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -41228,7 +41228,7 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
+  "microtema_iris": "obras",
   "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
@@ -41457,7 +41457,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -41526,7 +41526,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "pessoal",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -41650,7 +41650,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -41862,7 +41862,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -42017,8 +42017,8 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -42939,8 +42939,8 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -44420,8 +44420,8 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -44491,7 +44491,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -45103,7 +45103,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -45685,7 +45685,7 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
+  "microtema_iris": "obras",
   "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
@@ -45944,7 +45944,7 @@
   "hash": "c5e5149273ad7eee",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD696|CD 696/2026|CD 696/2026": {
+ "ANVISA|CD696|25351.937723/2023-10|CD 696/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -46446,7 +46446,7 @@
   "hash": "0d981d811a32a139",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD751|CD 751/2026|CD 751/2026": {
+ "ANVISA|CD751|25351.929466/2020-91|CD 751/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -46742,7 +46742,7 @@
   "hash": "5be2966ed3d1aa63",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD768|CD 768/2026|CD 768/2026": {
+ "ANVISA|CD768|25351.905082/2024-15|CD 768/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -46782,7 +46782,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -46811,7 +46811,7 @@
   "hash": "ad417d7002f5a1d2",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD772|CD 772/2026|CD 772/2026": {
+ "ANVISA|CD772|25351.919471/2026-81|CD 772/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -46868,7 +46868,7 @@
   "subtema": "Excepcionalidade / esgotamento de estoque",
   "tipo_ato": "Autorização / outorga / habilitação",
   "microtema_iris": "outros",
-  "area_iris": "cargas_logistica",
+  "area_iris": "rodoviario_passageiros",
   "confianca": 0.67,
   "conf_tema": 0.67,
   "conf_modal": 1.0,
@@ -47371,7 +47371,7 @@
   "tema": "Recursos administrativos",
   "subtema": "Recurso (geral)",
   "tipo_ato": "Recurso / reconsideração",
-  "microtema_iris": "recursos",
+  "microtema_iris": "multa",
   "area_iris": "rodoviario_passageiros",
   "confianca": 0.33,
   "conf_tema": 0.33,
@@ -47651,8 +47651,8 @@
   "tema": "Autorizações excepcionais",
   "subtema": "Importação em caráter excepcional",
   "tipo_ato": "Autorização / outorga / habilitação",
-  "microtema_iris": "outros",
-  "area_iris": "cargas_logistica",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
   "confianca": 0.89,
   "conf_tema": 0.89,
   "conf_modal": 1.0,
@@ -47883,7 +47883,7 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
+  "microtema_iris": "obras",
   "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
@@ -48171,7 +48171,7 @@
   "hash": "0a1ceaac5696ffe8",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD856|CD 856/2026|CD 856/2026": {
+ "ANVISA|CD856|25991.014023/78|CD 856/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Recursos administrativos",
   "subtema": "Recurso (geral)",
@@ -48477,7 +48477,7 @@
   "hash": "08ac97620143a1f4",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD882|CD 882/2026|CD 882/2026": {
+ "ANVISA|CD882|25741.707645/2014-24|CD 882/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Efeito suspensivo",
   "subtema": "Pedido de revisão",
@@ -48494,15 +48494,15 @@
   "hash": "83bd5891553aad3a",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD883|CD 883/2026|CD 883/2026": {
+ "ANVISA|CD883|25752.081283/2005-23|CD 883/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Recursos administrativos",
   "subtema": "Prorrogação de prazo / revisão de ato",
   "tipo_ato": "Reajuste / revisão / reequilíbrio",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.93,
-  "conf_tema": 0.93,
+  "microtema_iris": "multa",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.58,
+  "conf_tema": 0.58,
   "conf_modal": 1.0,
   "termos": [
    "revisao de ato",
@@ -48510,7 +48510,7 @@
   ],
   "fonte": "regra",
   "hash": "81634cf91401d02a",
-  "tipo_item": "Retirada de pauta"
+  "tipo_item": "Deliberação"
  },
  "ANVISA|CD884|25351.927592/2026-05|CD 884/2026": {
   "modal": "Saúde e vigilância sanitária",
@@ -48942,7 +48942,7 @@
   "tema": "Fiscalização sanitária",
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
-  "microtema_iris": "fiscalizacao",
+  "microtema_iris": "obras",
   "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
@@ -48978,7 +48978,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "area_iris": "rodoviario_passageiros",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -49098,7 +49098,7 @@
   "subtema": "Cronograma de inspeção",
   "tipo_ato": "Outros",
   "microtema_iris": "fiscalizacao",
-  "area_iris": "administrativo",
+  "area_iris": "cargas_logistica",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -49364,7 +49364,7 @@
   "hash": "e11e7ee2f5a1684a",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD939|CD 939/2026|CD 939/2026": {
+ "ANVISA|CD939|25351.934544/2025-84|CD 939/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Efeito suspensivo",
   "subtema": "Julgamento de efeito suspensivo",
@@ -50467,7 +50467,7 @@
   "hash": "3e67111250ab1015",
   "tipo_item": "Deliberação"
  },
- "ANVISA|CD1011|CD 1011/2026|CD 1011/2026": {
+ "ANVISA|CD1011|25351.932972/2026-53|CD 1011/2026": {
   "modal": "Saúde e vigilância sanitária",
   "tema": "Governança e gestão",
   "subtema": "Acordos, memorandos e apoio institucional",
@@ -50541,7 +50541,7 @@
   "subtema": "Importação em caráter excepcional",
   "tipo_ato": "Autorização / outorga / habilitação",
   "microtema_iris": "outros",
-  "area_iris": "cargas_logistica",
+  "area_iris": "governanca_regulatoria",
   "confianca": 0.47,
   "conf_tema": 0.47,
   "conf_modal": 1.0,

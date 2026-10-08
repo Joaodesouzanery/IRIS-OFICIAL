@@ -28,36 +28,42 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
     ref = re.search(r'(ROP|REP)\s*(\d+)/(\d{4}),?\s*item\s*([\d.]+)', assunto_cd); tipo = re.sub(r',?\s*(ROP|REP).*$', '', assunto_cd).strip()
     rel_m = re.search(r'(?:Diretor(?:a)? )?Relator(?:a)?:\s*(.*?)\s*(?:Recorrente|Processos?:|Ementa|Interessad|CNPJ|Assunto|Posição)', t)
     rel = quem(rel_m[1]) if rel_m else []
-    proc = re.findall(r'Processos?:\s*([\d.]{10,}/\d{4}-\d{2})', t); recte = (re.search(r'Recorrente:\s*(.*?)\s*CNPJ', t) or [None, ''])[1]
+    tn = t.replace('–', '-')
+    proc = re.findall(r'(?<!\d)(\d{5}\.\d{6}/\d{4}-\d{2}|\d{5}\.\d{6}/\d{2}-\d{2}|\d{5}\.\d{6}/\d{2,4})(?!\d)', (re.search(r'Processos?(?: SEI| alvos? de revis[ãa]o)?\s*:(.*?)(?:Expediente|Ementa|Recorrente|[ÁA]rea:|Posi[çc][ãa]o|INFORMA)', tn) or [None, ''])[1]) or re.findall(r'Processo n[ºo]\s*(\d{5}\.\d{6}/\d{4}-\d{2})', tn)[:1]
+    proc = list(dict.fromkeys(proc)); recte = (re.search(r'Recorrente:\s*(.*?)\s*CNPJ', t) or [None, ''])[1]
     ementa = (re.search(r'Ementa:\s*(.*?)\s*(?:Posi[çc][ãa]o|Diretoria:|[ÁA]rea:|INFORMA)', t) or [None, ''])[1]
     area = (re.search(r'[ÁA]rea:\s*(\S+)', t) or [None, ''])[1]
     votos = {}
-    L = unicodedata.normalize('NFKC', raw).replace('\u200b', '').split('\n'); k0 = next((i for i, x in enumerate(L) if 'INFORMAÇÕES DA VOTAÇÃO' in x), None)
-    if k0 is not None:
-        linhas = []
-        for x in L[k0 + 1:]:
-            sx = x.strip()
-            if re.match(r'(?:- ?A Diretoria|Documento assinado|- Retirado|O Diretor|A Diretoria|Registre-se|Circuito Deliberativo n|- Item|Item )', sx): break
-            if not sx or re.match(r'Extrato de Delibera', sx) or re.match(r'DIRETOR\s+VOTO', sx): continue
-            linhas.append(sx)
-        rows = []
-        for sx in linhas:
-            if re.match(r'(?:LEANDRO|DANIELA|DANIEL|THIAGO|MARCELO|R[ÔO]MISON)\b', sx): rows.append(sx)
-            elif rows: rows[-1] += ' ' + sx
+    rawn = unicodedata.normalize('NFKC', raw).replace('\u200b', '')
+    k0 = rawn.find('INFORMAÇÕES DA VOTAÇÃO'); tpost = ''
+    if k0 >= 0:
+        resto = rawn[k0 + 22:]
+        resto = re.sub(r'Extrato de Delibera[çc][ãa]o da Dicol\s+\d+\s+SEI\s+[\d./-]+\s*/\s*pg\.\s*\d+', ' ', resto)
+        mcut = re.search(r'-\s*A Diretoria Colegiada|-\s*Retirado de pauta|Documento assinado|\bO Diretor\b|\bA Diretoria\b|Registre-se|Circuito Deliberativo n', resto)
+        tab = resto[:mcut.start()] if mcut else resto; tpost = re.sub(r'\s+', ' ', resto[mcut.start():]) if mcut else ''
+        tab = re.sub(r'\bDIRETOR\s+VOTO\b', ' ', tab)
+        FIRST = {'LEANDRO': 'Leandro Pinheiro Safatle', 'DANIEL': 'Daniel Meirelles Fernandes Pereira', 'DANIELA': 'Daniela Marreco Cerqueira', 'THIAGO': 'Thiago Lopes Cardoso Campos', 'MARCELO': 'Marcelo Mario Matos Moreira', 'RÔMISON': 'Rômison Rodrigues Mota', 'ROMISON': 'Rômison Rodrigues Mota'}
         NT = {'LEANDRO', 'PINHEIRO', 'SAFATLE', 'DANIEL', 'MEIRELLES', 'FERNANDES', 'PEREIRA', 'DANIELA', 'MARRECO', 'CERQUEIRA', 'THIAGO', 'LOPES', 'CARDOSO', 'CAMPOS', 'MARCELO', 'MARIO', 'MÁRIO', 'MATOS', 'MATOIS', 'MOREIRA', 'RÔMISON', 'ROMISON', 'RODRIGUES', 'MOTA'}
-        for r_ in rows:
-            nome = next((n for n, p_ in ROST if re.match(p_.split(r'\s+')[0], r_)), None)
-            first = r_.split()[0]; nome = next((n for n, _ in ROST if first == n.split()[0].upper() or (first in ('RÔMISON', 'ROMISON') and n.startswith('Rômison'))), None)
-            if not nome: continue
-            val = ' '.join(w for w in r_.split() if w not in NT).strip()
-            votos[nome] = (val or '-').upper().replace('NAO', 'NÃO')
+        tok = tab.split(); i = 0
+        while i < len(tok):
+            if tok[i] in FIRST and i + 1 < len(tok) and tok[i + 1] in NT:
+                nome = FIRST[tok[i]]; j = i + 1
+                while j < len(tok) and tok[j] in NT: j += 1
+                val = tok[j].rstrip('*').upper().replace('NAO', 'NÃO') if j < len(tok) else '-'
+                votos[nome] = val; i = j + 1
+            else: i += 1
     if not votos: sem_tabela.append(m['arquivo']); 
-    decis = ' '.join(re.findall(r'(?:- A Diretoria Colegiada.*?(?:Anvisa(?: \(SEI \d+\))?\.|\.$)|- Retirado de pauta\.?|- Item.*?\.)', t))[:1500]
-    if not decis:
-        md = re.search(r'(- ?A Diretoria Colegiada.*?)(?:Documento assinado|$)', t); decis = md[1][:1500] if md else ''
-    unan = 'unanimidade' in decis; maior = 'maioria' in decis
-    acao = (re.search(r'(?:por unanimidade|por maioria)[^A-ZÇÃÕ]{0,80}?([A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', decis) or [None, ''])[1]
-    if 'Retirado de pauta' in decis and 'A Diretoria Colegiada decidiu' not in decis: res_, tipo_item = 'RETIRADO DE PAUTA', 'Retirada de pauta'
+    base_dec = tpost if tpost else re.sub(r'\s+', ' ', t)
+    base_dec = re.split(r'Documento assinado', base_dec)[0]
+    ult = [mm.start() for mm in re.finditer(r'-?\s*A Diretoria Colegiada decidiu', base_dec)]
+    if ult: decis = base_dec[ult[-1]:][:1500].strip()
+    else:
+        mr = re.search(r'-\s*Retirado de pauta[^.]*\.?', base_dec); decis = mr[0] if mr else ''
+        if not decis:
+            md = re.search(r'(- ?A Diretoria Colegiada.*)', base_dec); decis = md[1][:1500] if md else ''
+    unan = 'unanimidade' in decis[:80]; maior = 'maioria' in decis[:80]
+    acao = (re.search(r'(?:por unanimidade|por maioria)[^A-ZÇÃÕ]{0,120}?([A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', decis) or [None, ''])[1]
+    if re.search(r'Retirado de pauta', decis) and 'A Diretoria Colegiada decidiu' not in decis: res_, tipo_item = 'RETIRADO DE PAUTA', 'Retirada de pauta'
     elif not decis: res_, tipo_item = 'SEM DECISÃO NO EXTRATO (revisar)', 'Deliberação'
     else: res_, tipo_item = f"{acao or 'DECIDIU'} — {'POR UNANIMIDADE' if unan else 'POR MAIORIA' if maior else 'SEM MODO'}", 'Deliberação'
     if tipo.lower().startswith('ata da') and tipo_item == 'Deliberação': tipo_item = 'Aprovação de ata'
