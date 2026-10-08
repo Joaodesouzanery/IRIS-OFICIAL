@@ -7,7 +7,7 @@ O que e coletado (e o que NAO abre):
     a contagem e conferida por uma 2a fonte independente (API datastore_search do mesmo CKAN, por data de reuniao).
   - gov.br/aneel: reunioes-publicas, pautas-e-atas, calendario (tabela oficial da Portaria 7.014/2025), distribuicao-de-processos, informativo.
   - www2.aneel.gov.br (listagem noticias_area idAreaNoticia=425, ata_diretoria/ata.cfm, cedoc) e reuniaodiretoria.aneel.gov.br: tentados via Chromium
-    (aneel_fetch.cjs, UMA sessao, com espera do desafio JS); o resultado de cada tentativa fica em aneel_inventario.json['tentativas_chromium'].
+    (aneel_chromium.cjs, UMA sessao, com espera do desafio JS); o resultado de cada tentativa fica em aneel_inventario.json['tentativas_chromium'].
     Se a fonte bloqueia (Cloudflare 'Sorry, you have been blocked' / reset de conexao), vira pendencia 'bloqueado pela fonte' (nao se resolve captcha)."""
 import os, sys, re, json, csv, hashlib, subprocess, datetime, html, time, urllib.parse
 HOJE = datetime.date.today().isoformat()
@@ -86,8 +86,8 @@ ALVOS = ['https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoti
          'https://biblioteca.aneel.gov.br/acervo/detalhe/257019',
          'https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0']
 tent = []
-for modo, cmd, env in (('headless', ['node', 'scripts/aneel_fetch.cjs', f'{D}/chromium_headless'] + ALVOS, {}),
-                       ('headed(xvfb)', ['xvfb-run', '-a', 'node', 'scripts/aneel_fetch.cjs', f'{D}/chromium_headed'] + ALVOS, {'ANEEL_HEADED': '1'})):
+for modo, cmd, env in (('headless', ['node', 'scripts/aneel_chromium.cjs', f'{D}/chromium_headless'] + ALVOS, {}),
+                       ('headed(xvfb)', ['xvfb-run', '-a', 'node', 'scripts/aneel_chromium.cjs', f'{D}/chromium_headed'] + ALVOS, {'ANEEL_HEADED': '1'})):
     try:
         subprocess.run(cmd, capture_output=True, timeout=900, env={**os.environ, **env})
         lg = json.load(open(f"{D}/chromium_{'headless' if modo == 'headless' else 'headed'}/_log.json"))
