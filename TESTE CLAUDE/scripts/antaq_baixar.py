@@ -117,5 +117,9 @@ if os.path.exists(p_ac):
 vh = open(f'{dest}/govbr/virtuais.html', encoding='utf8').read()
 inv['virtuais'] = [{'titulo': html.unescape(t).strip()} for t in re.findall(r'<a class="toggle[^"]*" href="[^"]*">([^<]*)</a>', vh)]
 man['govbr:virtuais.html'] = {'fonte': 'gov.br', 'url': inv['govbr']['virtuais']['url'], 'arquivo': inv['govbr']['virtuais']['arquivo'], 'sha256': sha(inv['govbr']['virtuais']['arquivo']), 'ok': True}
+# ---- 4. SEI publico (lista de documentos de votacao + declaracoes de voto abertas); falha aqui NAO invalida o resto
+try:
+    subprocess.run([NODE, os.path.join(os.path.dirname(CJS), 'antaq_sei.cjs'), f'{dest}/govbr/virtuais.html', 'antaq_sei.json', f'{dest}/sei'], timeout=3600)
+except Exception as e: print('AVISO: SEI falhou', e)
 json.dump(inv, open(inv_out, 'w'), indent=1, ensure_ascii=False); json.dump(man, open(man_out, 'w'), indent=1, ensure_ascii=False)
 print('atas Sophia', len(atas), 'arquivos ok', sum(v['ok'] for v in man.values()), '/', len(man), '| acordaos Sophia', len(inv['sophia'].get('acordaos', {})), '| virtuais', len(inv['virtuais']))

@@ -230,6 +230,13 @@ def parse_virtuais():
                         mr2 = re.search(r'Resultado\s*:\s*(\S.*)$', l)
                         if mr2: cur['resultado'] = mr2[1]
             i += 1
+        # link do SEI (processo de votacao) de cada item: o href que aparece entre o inicio do item e o inicio do proximo
+        hs_ = seg.replace('&amp;', '&')
+        ini_ = [(m_.start(), m_[2]) for m_ in re.finditer(r'(\d+)\.\s*(?:</?[^>]+>|\s|&nbsp;)*(' + PROC + ')', hs_)]
+        for j_, (pos_, pr_) in enumerate(ini_):
+            fim_ = ini_[j_ + 1][0] if j_ + 1 < len(ini_) else len(hs_)
+            lk_ = re.findall(r'href="(https://sei\.antaq\.gov\.br/sei/modulos/pesquisa/md_pesq_processo_exibir\.php[^"]+)"', hs_[pos_:fim_])
+            if pr_ in itens and lk_ and not itens[pr_].get('sei_url'): itens[pr_]['sei_url'] = lk_[0]
         n_res = sum(1 for l in L if re.match(r'^Resultado\s*:?', l))
         res['ROD' + mm[1]] = {'periodo_ini': per, 'itens': itens, 'n_resultado_linhas': n_res, 'n_itens': len(itens)}
     return res
@@ -396,6 +403,41 @@ for tag in TAGS:
                 add_d(d, [(n, 'ACOMPANHOU', 'inferido') for n in pres] + [(n, 'AUSENTE', 'nominal') for n in aus])
         if re.search(r'homologou', tx) and not m: D.append({'_erro': f'homologação não parseada em {tag}', 'reuniao': tag})
 D = [d for d in D if '_erro' not in d]
+# ---------------------------------------------------------------- SEI: declaracoes de voto (HTML publico) -> votos NOMINAIS dos demais diretores
+INI = {'FD': 'Frederico Carvalho Dias', 'AV': 'Alber Furtado de Vasconcelos Neto', 'CF': 'Caio César Farias Leôncio', 'LF': 'Wilson Pereira de Lima Filho', 'CCS': 'Cristina Castro Lucas de Souza', 'FT': 'Flávia Morais Takafashi'}
+sei = json.load(open('antaq_sei.json')) if os.path.exists('antaq_sei.json') else {}
+def sei_texto(path):
+    b = open(path, 'rb').read().decode('iso-8859-1')
+    return html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', re.sub(r'<script.*?</script>|<style.*?</style>', '', b, flags=re.S)))).strip()
+decls = []
+for u, pg in sei.items():
+    tg_ = 'ROD' + re.match(r'(\d+)', pg['reuniao'])[1]
+    for ab in pg.get('abertos', []):
+        if not ab.get('arquivo') or not os.path.exists(ab['arquivo']): continue
+        t_ = sei_texto(ab['arquivo'])
+        proc_ = (re.search(r'Processo\s*:\s*(' + PROC + ')', t_) or [None, ''])[1]
+        aut_ = (quem((re.search(r'assinado eletronicamente por (.*?) ,', t_) or [None, ''])[1]) or [None])[0]
+        corpo_ = (re.search(r'Contextualiza[çc][ãa]o\s*:(.*?)Documento assinado', t_) or [None, ''])[1]
+        n_ = norm(corpo_)
+        cl_ = 'ACOMPANHOU' if re.search(r'\bacompanho\b', n_) and not re.search(r'\bdiverg|\bdiscordo|nao acompanho', n_) else ('DIVERGIU' if re.search(r'\bdivirjo|\bdiscordo|nao acompanho|voto divergente', n_) else 'OUTRO')
+        decls.append({'tag': tg_, 'proc': proc_, 'autor': aut_, 'cl': cl_, 'num': ab['num'], 'tipo': ab['tipo'], 'url': u})
+url2item = {}
+for t_, v_ in virt.items():
+    for p_, it_ in v_['itens'].items():
+        if it_.get('sei_url') and it_['sei_url'] not in url2item: url2item[it_['sei_url']] = (t_, p_)
+vot_idx = collections.defaultdict(list)
+for v_ in V: vot_idx[(v_['reuniao'], v_['processo'], v_['diretor'])].append(v_)
+sei_casadas = sei_conf = sei_conf_ok = 0; sei_div = []; sei_sem_item = []
+for dc in decls:
+    if not dc['tipo'].startswith('Declaração de Voto'): continue
+    tg_i, pr_i = url2item.get(dc['url'], (dc['tag'], dc['proc']))
+    rows_ = [v_ for v_ in vot_idx.get((tg_i, pr_i, dc['autor']), []) if v_['deliberacao'].startswith('Acórdão')]
+    if not rows_: sei_sem_item.append((tg_i, pr_i, dc['autor'].split()[0], dc['num'])); continue
+    sei_casadas += 1
+    for v_ in rows_:
+        if dc['cl'] == 'ACOMPANHOU' and v_['voto'] == 'ACOMPANHOU':
+            v_['proveniencia'] = 'nominal'; v_['doc_sei'] = f'SEI nº {dc["num"]} ({dc["tipo"]})'; sei_conf_ok += 1
+        else: sei_div.append((tg_i, pr_i, dc['autor'].split()[0], dc['cl'], v_['voto'], dc['num']))
 # ---------------------------------------------------------------- narrativas de vista (PROSSEGUIMENTOS/REABERTURAS) -> vencidos por acordao (fonte interna independente do item 7)
 narr = {}
 for tag in TAGS:
@@ -432,6 +474,13 @@ for t in ('ROD610', 'ROD615'):
         g = {b['num'] for b in blocos(atas[t]['govbr'], t, 'govbr')}; s = {b['num'] for b in blocos(atas[t]['ext'], t, 'ext')}
         decl = re.search(r'Ac[óo]rd[ãa]os? de n[ºo]s?\s*([\d\s,a e]+),? a seguir', plano(atas[t]['govbr']))
         chk(f'(a) {t}: acórdãos da ata no gov.br (PDF) × ata Externa no Sophia', len(g), len(g & s), f'gov.br {sorted(g)[:2]}..{sorted(g)[-1:]}; só no gov.br {sorted(g - s)}; só no Sophia(ext) {sorted(s - g)}', ok=('OK' if g == s else ('EXCEÇÃO' if g <= s or s <= g else 'DIVERGE')))
+# gov.br x Sophia: mesmos campos por acordao (processo, relator, presentes 7.1, vencidos) nas duas publicacoes da mesma ata
+for t in ('ROD610', 'ROD615'):
+    if 'govbr' in atas.get(t, {}):
+        g = {c['num']: c for c in (campos(b) for b in blocos(atas[t]['govbr'], t, 'govbr'))}; s_ = {c['num']: c for c in (campos(b) for b in blocos(atas[t]['ext'], t, 'ext'))}
+        comuns = sorted(set(g) & set(s_))
+        difs = [n for n in comuns if (g[n]['processo'], g[n]['relator'], [x for x, _ in g[n]['q'].get('presentes', [])], g[n]['q'].get('vencidos', []), g[n]['interessado']) != (s_[n]['processo'], s_[n]['relator'], [x for x, _ in s_[n]['q'].get('presentes', [])], s_[n]['q'].get('vencidos', []), s_[n]['interessado'])]
+        chk(f'(a) {t}: processo/relator/interessado/presentes/vencidos por acórdão no PDF do gov.br × PDF do Sophia', len(comuns), len(comuns) - len(difs), f'divergentes: {difs[:6]}')
 # (b) numeracao
 def expande(txt):
     n = set()
@@ -596,22 +645,65 @@ n_nom = sum(1 for v in V if v['proveniencia'] == 'nominal'); n_inf = sum(1 for v
 chk('Votos por proveniência: nominal + inferido + REVISAR = total', len(V), n_nom + n_inf + n_rev, f'nominal {n_nom} ({100 * n_nom / len(V):.1f}%), inferido {n_inf} ({100 * n_inf / len(V):.1f}%), REVISAR {n_rev}')
 for v in V:
     if v['proveniencia'] == 'REVISAR': pend.append([AG, f'{v["reuniao"]} {v["deliberacao"]} {v["diretor"]}', v['data'], 'Voto a REVISAR', v['voto'], 'Relator fora do quórum 7.1 sem "votou antes"', 'Ler o acórdão', URL_ATAS])
-# --- pendencia estrutural: SEI
-sei = {}
-if os.path.exists('antaq_sei.json'): sei = json.load(open('antaq_sei.json'))
-pend.append([AG, 'Votos dos demais diretores no SEI', None, 'Não coletável por esta via', 'SEI público (md_pesq_processo_exibir) abre no Chromium sem captcha e lista "Relatório Item N" / "Voto Item N" (voto do RELATOR, 1 PDF por item) das reuniões virtuais; não há documento de voto dos demais diretores nem de resultado nominal',
-             'Posicionamento dos demais diretores = "Resultado" agregado; a ata registra só divergência/vista/impedimento (item 7). Votos dos demais diretores no SEI (bloqueado pela fonte): não publicados em documento próprio' + (f'; {sei.get("resumo","")}' if sei else ''), 'Pedir à Secretaria-Geral/DRCP (cgd@antaq.gov.br) o extrato nominal de votação das reuniões', URL_VIRT])
+# --- SEI (fonte INDEPENDENTE das atas): lista de documentos de voto por processo de votacao das reunioes virtuais
+URL_SEI_EX = 'https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/resultado-das-reunioes-virtuais-da-diretoria-1/'
+if sei:
+    por_reun = collections.defaultdict(lambda: {'paginas': 0, 'abre': 0, 'restrito': 0, 'docs': 0, 'declarado': 0, 'abertos': 0})
+    for u_, pg in sei.items():
+        r_ = por_reun[pg['reuniao'][:4]]; r_['paginas'] += 1; r_['docs'] += len(pg['docs']); r_['declarado'] += pg.get('declarado', 0); r_['abertos'] += len(pg.get('abertos', []))
+        r_['abre' if pg['links_abrem'] else 'restrito'] += 1
+    links_virt = {t: len({it['sei_url'] for it in v['itens'].values() if it.get('sei_url')}) for t, v in virt.items()}
+    ok_pag = [t for t in links_virt if links_virt[t] and por_reun['%dª' % int(t[3:])]['paginas'] == links_virt[t]]
+    chk('(SEI) Páginas SEI percorridas × links "Resultado" distintos na página oficial das reuniões virtuais (por reunião)', sum(1 for t in links_virt if links_virt[t]), len(ok_pag), 'paginas por reunião ' + str({t: (links_virt[t], por_reun['%dª' % int(t[3:])]['paginas']) for t in sorted(links_virt) if links_virt[t]}))
+    if all('declarado' in pg for pg in sei.values()):
+        chk('(SEI) Documentos lidos na tabela × "Lista de Protocolos (N registros)" declarado pela própria página SEI', sum(pg['declarado'] for pg in sei.values()), sum(len(pg['docs']) for pg in sei.values()), 'contador independente impresso pela página SEI')
+    # lista de iniciais x votos ACOMPANHOU da ata (todas as paginas, abertas ou restritas)
+    vot_ac = collections.defaultdict(dict)
+    for v_ in V: vot_ac[(v_['reuniao'], v_['processo'], v_['deliberacao'])][v_['diretor']] = v_['voto']
+    cmp_ = collections.Counter(); exc_ = []
+    for t, vv in virt.items():
+        for p_, it in vv['itens'].items():
+            pg = sei.get(it.get('sei_url') or '')
+            if not pg or links_virt.get(t, 0) < 5: continue
+            dirs_ = {INI[re.sub(r'.*-', '', r_[2] if len(r_) > 2 else '')] for r_ in pg['docs'] if len(r_) > 2 and r_[2].startswith('Declaração de Voto') and re.sub(r'.*-', '', r_[2]) in INI}
+            for dl_, vs_ in [(k[2], x) for k, x in vot_ac.items() if k[0] == t and k[1] == p_ and k[2].startswith('Acórdão')]:
+                ac_ = {n for n, x in vs_.items() if x == 'ACOMPANHOU'}; vt_ = {n for n, x in vs_.items() if x.startswith(('ACOMPANHOU', 'DIVERGIU', 'REVISOR', 'REDATOR'))}
+                cmp_['acórdãos comparados'] += 1
+                if dirs_ == ac_: cmp_['igual'] += 1
+                elif dirs_ <= vt_: cmp_['subconjunto (declarante divergente/revisor)'] += 1
+                else: cmp_['diverge'] += 1; exc_.append((t, p_, sorted(n.split()[0] for n in dirs_ - vt_)))
+    chk('(SEI×ata) Diretores com documento "Declaração de Voto-<iniciais>" no SEI × diretores ACOMPANHOU na ata (acórdãos das reuniões virtuais 602-610)', cmp_['acórdãos comparados'], cmp_['igual'] + cmp_['subconjunto (declarante divergente/revisor)'],
+        f'{dict(cmp_)}; declarante no SEI fora dos votantes da ata: {exc_}', ok=('OK' if not exc_ else 'EXCEÇÃO'))
+    for t_, p_, qm_ in exc_:
+        pend.append([AG, f'{t_} processo {p_}', meta_r[t_]['ini'], 'SEI lista Declaração de Voto de diretor que a ata não registra como votante', f'diretor(es) {qm_} com "Declaração de Voto" no SEI', 'Provável voto antecipado (vista anterior) não citado no quórum do acórdão (data da declaração anterior à reunião)', 'Conferir a Declaração no SEI (restrita)', URL_VIRT])
+    n_dc = sum(1 for dc in decls if dc['tipo'].startswith('Declaração de Voto'))
+    chk('(SEI×ata) Declarações de voto ABERTAS (HTML público, lidas) casadas com um item da ata (reunião+processo+diretor)', n_dc, sei_casadas, f'sem item: {sei_sem_item[:5]}', ok=('OK' if n_dc == sei_casadas else 'EXCEÇÃO'))
+    chk('(SEI×ata) Declarações lidas cujo texto ("Acompanho o Voto ...") concorda com o voto ACOMPANHOU da ata', sei_casadas, sei_conf_ok, f'conflitos ata × SEI: {sei_div}', ok=('OK' if not sei_div else 'EXCEÇÃO'))
+    for tg_, pr_, au_, cl_, vo_, nu_ in sei_div:
+        pend.append([AG, f'{tg_} processo {pr_} — {au_}', meta_r[tg_]['ini'], 'CONFLITO ata × SEI no voto', f'SEI nº {nu_}: declaração do diretor diz "{cl_}" (acompanha o relator); ata (7.2) registra: {vo_}', 'Pode ser voto vencido apenas em parte do dispositivo (ata) ou declaração anterior a voto complementar do relator', 'Ler a declaração no SEI e o acórdão; voto mantido como registrado na ata (nominal)', URL_VIRT])
+    ab_tot = sum(1 for pg in sei.values() for _ in pg.get('abertos', []))
+    for rt in sorted(por_reun):
+        r_ = por_reun[rt]; tg = 'ROD' + rt[:3]
+        if r_['restrito'] or tg in ('ROD612', 'ROD613', 'ROD615', 'ROD617', 'ROD618'):
+            pend.append([AG, f'{tg} votos nominais dos demais diretores no SEI', meta_r.get(tg, {}).get('ini'), 'Parcialmente bloqueado pela fonte' if r_['abre'] else 'Sem declarações de voto públicas',
+                         f'{r_["paginas"]} página(s) SEI de votação, {r_["docs"]} documentos listados; {r_["abre"]} página(s) com documentos abertos ({r_["abertos"]} declarações/votos lidos) e {r_["restrito"]} com documentos restritos (lista visível, conteúdo não abre)' if tg in ('ROD602', 'ROD604', 'ROD606', 'ROD608', 'ROD610') else
+                         f'1 processo SEI por reunião (relatórios e votos dos RELATORES; sem "Declaração de Voto" dos demais diretores)',
+                         'votos dos demais diretores no SEI (bloqueado pela fonte): documentos restritos às partes; o acesso público do SEI só abre parte dos documentos (sem captcha)', 'Pedir à Secretaria-Geral/DRCP (cgd@antaq.gov.br) o extrato nominal de votação', URL_VIRT])
+pend.append([AG, 'Votos dos demais diretores no SEI (telepresenciais ROD603/605/607/611/614/616)', None, 'Não publicado', 'Reuniões telepresenciais não têm página de "Resultado" nem processo SEI público', 'votos dos demais diretores no SEI (bloqueado pela fonte): só a ata registra relator/vencido/impedido/ausente', 'Extrato nominal de votação junto à Secretaria-Geral', URL_ATAS])
 
 # ---------------------------------------------------------------- cobertura, nao_feito, saida
-cob = [[AG, 'Atas de Reunião Ordinária 2026 lidas (Externa + Interna)', len(TAGS), f'{", ".join(TAGS)}'],
-       [AG, 'Acórdãos transcritos nas atas', tot_ac, f'1..{hi}; buracos: {buracos}; Sophia tem {len(acs)} registros Acórdão N/2026'],
+n_sei_pag = len(sei); n_sei_abre = sum(1 for pg in sei.values() if pg['links_abrem']); n_sei_docs = sum(len(pg['docs']) for pg in sei.values())
+n_sei_up = sum(1 for v in V if v.get('doc_sei'))
+cob = [[AG, 'Atas de Reunião Ordinária 2026 lidas (Externa + Interna)', len(TAGS), f'{", ".join(TAGS)}; Sophia: 26 registros no filtro "Ata de Reunião / 2026" (=16 atas 2026 + 2 de dez/2025 rotuladas /2026 + 8 outros atos), todos carregados'],
+       [AG, 'Acórdãos transcritos nas atas', tot_ac, f'1..{hi}; buracos: {buracos} (a própria ata pula esses números e o Sophia também não os tem); Sophia tem {len(acs)} registros Acórdão N/2026 (562..587 = ROD619/620 sem ata)'],
        [AG, 'Itens: acórdãos / retiradas de pauta / vistas / homologações de ata', f'{sum(1 for d in D if d["tipo_item"]=="Deliberação")} / {sum(1 for d in D if d["tipo_item"]=="Retirada de pauta")} / {sum(1 for d in D if d["tipo_item"]=="Vista")} / {sum(1 for d in D if d["tipo_item"]=="Aprovação de ata")}', 'Prosseguimentos de votação já constam como acórdão; comunicações e sustentações orais não são itens de votação'],
-       [AG, 'Calendário 2026 (ROD 602..625)', 24, f'{dict(cnt)}'],
+       [AG, 'Calendário 2026 (ROD 602..625)', 24, f'{dict(cnt)}; 609 cancelada; 619 e 620 realizadas sem ata ainda; 621..625 futuras'],
        [AG, 'Reuniões extraordinárias (RED) 2026', 0, 'nenhuma localizada (ver pendências)'],
-       [AG, 'Fonte oficial: contador Volto (items_total)', 'indisponível', 'API ++api++ do gov.br responde 404/503 para a pasta (site Plone clássico); contadores usados: Sophia (26 atas; 579 acórdãos), página de resultados virtuais, calendário semestral'],
-       [AG, 'Pautas do Sophia lidas', len(pauta), f'processos pautados: {sum(len(p) for p in pauta.values())}']]
-nf = [[AG, 'Votos dos demais diretores (SEI)', '1 linha por diretor, mas só relator/vencido/impedido/ausente/vista são NOMINAIS', 'NÃO FEITO (bloqueado pela fonte)', 'SEI público expõe só relatório+voto do relator; ata registra divergências no item 7', 'Pedir extrato nominal à Secretaria-Geral'],
-      [AG, 'ACOMPANHOU (inferido)', f'{n_inf} linhas inferidas ({100 * n_inf / len(V):.1f}%)', 'LIMITE DO MODELO', 'Ausência de divergência no item 7 do acórdão ≠ voto nominal do diretor', 'Extrato nominal de votação'],
+       [AG, 'Contador oficial da pasta gov.br (API Volto items_total)', 'indisponível', 'API ++api++ do gov.br responde 404/503 (site Plone clássico); contadores usados no lugar: Sophia (26 atas; 579 acórdãos), página de resultados virtuais (415 processos / 10 reuniões), calendário semestral (24 ROD), lista "Lista de Protocolos (N registros)" do SEI'],
+       [AG, 'Pautas do Sophia lidas', len(pauta), f'processos pautados: {sum(len(p) for p in pauta.values())}'],
+       [AG, 'SEI público (pesquisa processual, Chromium, sem captcha)', f'{n_sei_pag} páginas / {n_sei_docs} documentos', f'{n_sei_abre} páginas com documentos abertos; {sum(len(pg.get("abertos", [])) for pg in sei.values())} declarações/votos HTML lidos; {n_sei_up} votos promovidos de inferido para nominal pela Declaração de Voto do próprio diretor']]
+nf = [[AG, 'Votos dos demais diretores (SEI)', f'{n_inf} de {len(V)} linhas ({100 * n_inf / len(V):.1f}%) seguem INFERIDAS', 'PARCIAL (bloqueado pela fonte)', 'SEI abre só parte dos documentos (declarações de ROD602-610 em processos não restritos); reuniões telepresenciais e ROD612-618 não têm "Declaração de Voto" pública', 'Pedir extrato nominal de votação à Secretaria-Geral/DRCP (cgd@antaq.gov.br)'],
+      [AG, 'ACOMPANHOU (inferido)', f'{n_inf} linhas inferidas', 'LIMITE DO MODELO', 'Ausência de divergência no item 7 do acórdão ≠ voto nominal do diretor', 'Extrato nominal de votação'],
       [AG, 'Texto integral do dispositivo por item', 'decisao_texto limitado a 1500 caracteres', 'LIMITE DO MODELO', 'Dispositivos longos truncados', 'Ler o PDF da ata'],
       [AG, 'Acórdãos sigilosos/ausentes das atas', f'{len(buracos)} números sem bloco', 'NÃO FEITO' if buracos else 'SEM CASOS', 'Não transcritos nas atas', 'Ver pendências'],
       [AG, 'Sustentações orais, comunicações e informes', 'fora do modelo de votos', 'FORA DO ESCOPO', 'Não são deliberação', '']]
