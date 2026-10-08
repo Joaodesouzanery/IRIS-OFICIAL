@@ -25,17 +25,17 @@ const BASE = 'https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.
     const [serie, rotulo] = s.split(':'); let r = null;
     for (let t = 0; t < 5 && !r; t++) {
       try {
-        await p.goto(BASE + '&rdo_data_publicacao=I', { waitUntil: 'networkidle', timeout: 90000 });
-        await p.selectOption('#selSerie', serie); await p.selectOption('#selUnidadeResponsavel', '');
-        await p.check('#optPeriodoExplicito'); await p.fill('#txtDataInicio', ini); await p.fill('#txtDataFim', fim);
-        await Promise.all([p.waitForNavigation({ waitUntil: 'networkidle', timeout: 90000 }), p.evaluate(() => { document.getElementById('frmPublicacaoPesquisa').submit(); })]);
+        await p.goto(BASE + '&rdo_data_publicacao=I', { waitUntil: 'domcontentloaded', timeout: 90000 });
+        await p.selectOption('#selSerie', serie, { timeout: 15000 });
+        await p.evaluate(([a, z]) => { document.getElementById('optPeriodoExplicito').checked = true; tratarPeriodo(); document.getElementById('txtDataInicio').value = a; document.getElementById('txtDataFim').value = z; }, [ini, fim]);
+        await Promise.all([p.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 90000 }), p.evaluate(() => { document.getElementById('frmPublicacaoPesquisa').submit(); })]);
         r = { rotulo: rotulo || serie, declarado: null, linhas: [], paginas: 0 };
         for (let pg = 0; pg < 200; pg++) {
           const e = await extrai(); r.paginas++; r.linhas.push(...e.linhas);
           const m = e.decl.match(/Exibindo\s+(\d+)\s*-\s*(\d+)\s+de\s+(\d+)/); if (m) r.declarado = +m[3];
           fs.writeFileSync(out.replace(/\.json$/, '') + `_s${serie}_p${pg}.html`, await p.content());
           if (!m || +m[2] >= +m[3]) break;
-          await Promise.all([p.waitForNavigation({ waitUntil: 'networkidle', timeout: 90000 }), p.evaluate((n) => navegar(String(n)), +m[2])]);
+          await Promise.all([p.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 90000 }), p.evaluate((n) => navegar(String(n)), +m[2])]);
         }
         if (!r.declarado && !r.linhas.length) { const tx = await p.evaluate(() => document.body.innerText); r.declarado = /Nenhum resultado/i.test(tx) ? 0 : null; }
       } catch (e) { console.log('retry', serie, String(e).slice(0, 100)); r = null; await p.waitForTimeout(3000); }

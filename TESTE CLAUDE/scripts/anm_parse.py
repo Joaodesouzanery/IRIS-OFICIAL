@@ -98,7 +98,7 @@ def parse(path):
         elif mr: rel = mr[1].strip()
         if re.search(r'Voto do Relator,\s*Diretor-Geral', dtx, re.I): rel = dg
         def quem(sx):
-            r_ = [x for x in pres if norm(x).split()[-1] in norm(sx).split()]
+            r_ = [x for x in pres if norm(x).split()[-1] in re.findall(r'\w+', norm(sx))]
             if re.search(r'diretor-?\s?geral', sx, re.I) and dg and dg not in r_: r_.append(dg)
             return r_
         dissid, favor, vista_por = [], [], []
@@ -114,17 +114,37 @@ def parse(path):
             mv = re.search(r'(?:Revisor|revisor),\s*(?:Diretor(?:a)?(?: Substitut[oa])?)\s*([A-Za-zÀ-ú ]+?)(?:,|\s+aprovad|\.)', dtx)
             if mv: rev = resolve(mv[1], pres)
         if tipo_item == 'Deliberação' and res.startswith('SOBRESTADO'): tipo_item = 'Vista'
+        def _lab(rot):
+            ml = re.search(r'VOTO D[OA] ' + rot + r'\s*\(([^)]{3,80})\)', bloco, re.I)
+            if not ml: return None
+            nm = re.sub(r'^(?:Diretor(?:a)?(?:-Geral)?(?: Substitut[oa])?)\s*', '', ml[1].strip()).strip(' ,.')
+            if re.search(r'diretor-?\s?geral', ml[1], re.I): return dg
+            return (resolve(nm.title(), pres) or nm) if nm else None
+        _lr, _lv = _lab('RELATOR'), _lab('REVISOR')
+        if _lr: rel = _lr
+        if _lv: rev = _lv
         # impedimentos / "não votaria": lidos do bloco inteiro do item (a frase vem antes de DELIBERAÇÃO)
-        bflat = re.sub(r'\s+', ' ', re.sub(r'\n\s*Ata \d+[ªa].*?pg\. \d+\s*', ' ', bloco)); imped = []
-        for mi in re.finditer(r'(?:encontrava-se|encontravam-se|estava|estavam|ficou|ficaram)\s+impedid[oa]s?|n[ãa]o votari(?:a|am)\b', bflat, re.I):
+        _ant = out[-1] if out else None
+        _tail = ''
+        if i > 0:
+            _pb = t[procs[i-1].start():ini]; _dl = re.search(r'DELIBERA[ÇC][ÃA]O:\s*(.+?)(?:\n\s*\n|\Z)', _pb, re.S)
+            _tail = _pb[_dl.end():] if _dl else ''
+            _mp = re.search(r'Antes d[ao]s? delibera[çc][ãa]o do item\s+\d+(?:\.\d+)+', _pb)
+            if _mp and not _dl: _tail = _pb[_mp.start():]
+        _corpo = bloco.split('DELIBERAÇÃO:')[0] if 'DELIBERAÇÃO:' in bloco else bloco
+        _mx = re.search(r'Antes d[ao]s? delibera[çc][ãa]o do item\s+\d+(?:\.\d+)+', _corpo)
+        if _mx: _corpo = _corpo[:_mx.start()]   # a frase seguinte é do PRÓXIMO item (ex.: ROP82 2.3.1)
+        bflat = re.sub(r'\s+', ' ', re.sub(r'\n\s*Ata \d+[ªa].*?pg\. \d+\s*', ' ', _tail + ' ' + _corpo)); imped = []
+        for mi in re.finditer(r'(?:encontrava-se|encontravam-se|estava|estavam|ficou|ficaram)\s+impedid[oa]s?|n[ãa]o votari(?:a|am)\b|n[ãa]o participaria da vota[çc][ãa]o', bflat, re.I):
             pre = bflat[max(0, mi.start() - 230):mi.start()]
             cl = re.split(r',|\bque\b|pelo qual|motivo pelo|em raz[ãa]o d[eao]\b', pre)[-1]
-            for x in quem(cl):
+            nomes_ = quem(cl) or quem(pre[-150:])
+            for x in nomes_:
                 if x not in imped: imped.append(x)
         out.append({'deliberacao': item_n, 'revisor': rev, 'reuniao': tag, 'data': meta['data'], 'processo': m[1], 'relator': rel,
                     'interessado': re.sub(r'\s+', ' ', inter[1]).strip() if inter else '',
                     'assunto': re.sub(r'\s+', ' ', ass[1]).strip()[:300] if ass else '', 'voto_resumo': voto_resumo,
-                    'tipo_item': tipo_item, 'retirada_por': retirou or '', 'processos_do_item': processos_item[:30], 'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(imped), 'impedidos': imped, 'texto_impedimento': ('; '.join(re.findall(r'[^.]*(?:impedid|n[ãa]o votari)[^.]*\.', bflat))[:400] if imped else '')})
+                    'tipo_item': tipo_item, 'retirada_por': retirou or '', 'processos_do_item': processos_item[:30], 'dissidentes': dissid, 'favoraveis': favor, 'vista_por': vista_por, 'resultado': res, 'deliberacao_texto': dtx[:600], 'tem_impedimento': bool(imped), 'impedidos': imped, 'texto_impedimento': ('; '.join(re.findall(r'[^.]*(?:impedid|n[ãa]o votari|n[ãa]o participaria)[^.]*\.', bflat))[:400] if imped else '')})
     vistos, unico, dups = set(), [], 0
     for d in out:
         k = (d['deliberacao'], d['processo'])
@@ -160,6 +180,7 @@ def parse(path):
                 votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': nv_[0], 'proveniencia': nv_[1], 'tipo_item': d['tipo_item'], 'fonte_voto': 'narrativa do Secretário-Geral na ata'}); continue
             if p in d.get('impedidos', []) and p != d['relator']: v, prov = 'IMPEDIDO (ata: impedido de votar / não votaria)', 'nominal'
             elif p == d['relator']: v, prov = 'RELATOR (voto proferido)', 'nominal'
+            elif d.get('revisor') and p == d['revisor'] and d['revisor'] != d['relator'] and d['resultado'] in ('APROVADO POR UNANIMIDADE', 'APROVADO POR MAIORIA'): v, prov = 'REVISOR (voto proferido; ata cita o revisor)', 'nominal'
             elif p in d.get('dissidentes', []): v, prov = 'DIVERGIU', 'nominal'
             elif p in d.get('vista_por', []): v, prov = 'PEDIU VISTA', 'nominal'
             elif p in d.get('favoraveis', []): v, prov = 'ACOMPANHOU (votou a favor antes da vista)', 'nominal'
