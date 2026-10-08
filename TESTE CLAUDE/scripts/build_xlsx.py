@@ -45,7 +45,7 @@ for d in D:
     if pr_ and pr_.get('diretor'): d['relator'] = pr_['diretor'] + ' (proponente: ' + pr_['procedencia'][:40] + ')'
 
 # ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
-EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json')) if os.path.exists(f)}
+EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json')) if os.path.exists(f)}
 for sg, x in EXTRAS.items():
     for r in x['reunioes']: R.append(dict(r, agencia=sg, ausentes=r.get('ausentes', [])))
     for d in x['deliberacoes']: D.append(dict(d, agencia=sg, texto=d.get('decisao_texto', ''), item=d['processo']))
@@ -99,7 +99,7 @@ wb = Workbook(); wb.remove(wb.active)
 def sheet(nome, cab, linhas, larg=None):
     ws = wb.create_sheet(nome); ws.append(cab)
     for c in ws[1]: c.font = Font(bold=True, color='FFFFFF'); c.fill = PatternFill('solid', fgColor='1F3A5F'); c.alignment = Alignment(wrap_text=True, vertical='top')
-    for l in linhas: ws.append(l)
+    for l in linhas: ws.append([('; '.join(map(str, c)) if isinstance(c, (list, tuple)) else c) for c in l])
     for i, c in enumerate(cab, 1): ws.column_dimensions[get_column_letter(i)].width = (larg or {}).get(c, 16)
     ws.freeze_panes = 'A2'; ws.auto_filter.ref = ws.dimensions; return ws
 
@@ -375,7 +375,7 @@ COR = {'leia': '2E7D32', 'base': '1F3A5F', 'dir': '6A1B9A', 'ctrl': 'E65100', 'a
 def sheetf(nome, cab, linhas, larg=None, cor='base', filtro=True):
     ws = wbf.create_sheet(nome); ws.append(cab)
     for c in ws[1]: c.font = Font(bold=True, color='FFFFFF'); c.fill = PatternFill('solid', fgColor=COR[cor]); c.alignment = Alignment(wrap_text=True, vertical='top')
-    for l in linhas: ws.append(l)
+    for l in linhas: ws.append([('; '.join(map(str, c)) if isinstance(c, (list, tuple)) else c) for c in l])
     for k, c in enumerate(cab, 1): ws.column_dimensions[get_column_letter(k)].width = (larg or {}).get(c, 16)
     ws.freeze_panes = 'A2'
     if filtro: ws.auto_filter.ref = ws.dimensions

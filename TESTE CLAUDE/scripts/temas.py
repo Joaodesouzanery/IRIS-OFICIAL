@@ -5,7 +5,7 @@ Uso: python3 -I scripts/temas.py            -> temas.json, temas_revisao_pendent
 import json, sys, os, collections, hashlib
 sys.path.insert(0, os.path.dirname(__file__)); import taxonomia as T
 anm, antt, art = (json.load(open(f)) for f in ('anm.json', 'antt.json', 'artesp_final.json')); rde = json.load(open('antt_rde270.json'))
-EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json')) if os.path.exists(f)}
+EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json')) if os.path.exists(f)}
 LIMIAR = 0.45
 
 def itens():

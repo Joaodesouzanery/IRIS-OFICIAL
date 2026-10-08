@@ -31,6 +31,9 @@ python3 -I scripts/anvisa_parse.py manifesto_anvisa.json anvisa.json
 python3 -I scripts/anvisa_cd_baixar.py anvisa_cd_inventario.json manifesto_anvisa_cd.json fonte/anvisa_cd
 python3 -I scripts/anvisa_cd_parse.py manifesto_anvisa_cd.json anvisa_cd.json
 python3 -I scripts/anvisa_unir.py anvisa.json anvisa_cd.json anvisa_final.json   # item de ROP decidido por CD usa a tabela nominal do extrato
+# ANP (atas PDF da Diretoria Colegiada)
+python3 -I scripts/anp_baixar.py anp_inventario.json manifesto_anp.json fonte/anp texto_anp
+python3 -I scripts/anp_parse.py manifesto_anp.json anp.json
 # Temas: regras (taxonomia do repo) + revisão por IA só nos itens de baixa confiança
 python3 -I scripts/temas.py            # grava temas.json e temas_revisao_pendente.json (itens que ainda precisam de IA)
 # Se temas_revisao_pendente.json não estiver vazio: classificar esses itens (subagentes Claude, taxonomia_fechada.json),

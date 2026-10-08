@@ -256,3 +256,30 @@ def pontuar_setor(campos, agencia):
     if not sc: return ('Outros', 'Não classificado'), 0, 0.0, []
     o = sorted(sc.items(), key=lambda kv: -kv[1]); (best, s1) = o[0]; s2 = o[1][1] if len(o) > 1 else 0
     return best, s1, round(min(1.0, (s1 / (s1 + s2 + 1)) * min(1.0, s1 / 4)), 2), termos[best][:4]
+
+SETOR['ANP'] = {'modal': 'Petróleo, gás e biocombustíveis', 'temas': [
+    ('Regulação e normas', 'Ação regulatória / agenda / resolução', [r'acao regulatoria', r'agenda regulatoria', r'resolucao anp', r'revisao d[aeo]', r'edicao de nova resolucao', r'consulta publica', r'audiencia publica', r'\bair\b', r'analise de impacto'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso administrativo', r'recurso', r'reconsideracao', r'embargos'], 5),
+    ('Fiscalização e sanções', 'Auto de infração / multa / processo administrativo', [r'auto de infracao', r'multa', r'sancionador', r'infracao', r'processo administrativo'], 6),
+    ('Exploração e produção', 'Contratos, blocos e campos', [r'bloco', r'campo de', r'contrato de concessao', r'partilha', r'plano de desenvolvimento', r'rodada', r'unitizacao', r'exploracao e producao', r'\bpd\b', r'cessao de direitos'], 6),
+    ('Combustíveis e biocombustíveis', 'Biometano, CGOB e subvenção', [r'biometano', r'cgob', r'garantia de origem', r'subvencao', r'medida provisoria', r'hidrogenio', r'certificado'], 7),
+    ('Combustíveis e biocombustíveis', 'Abastecimento, preços e concorrência', [r'abusividade', r'precos', r'defesa da concorrencia', r'anticoncorrenc', r'fiscalizacao do abastecimento', r'\bsfi\b', r'\bsdl\b', r'\bspc\b', r'\bsbq\b'], 6),
+    ('Participações governamentais', 'Conciliação / cumprimento de sentença', [r'conciliacao', r'cumprimento de sentenca', r'\bspg\b'], 7),
+    ('Exploração e produção', 'Obrigações e programas exploratórios', [r'exoneracao da obrigacao', r'programa exploratorio minimo', r'\bsep\b', r'decisao de diretoria'], 6),
+    ('Gestão institucional e administrativa', 'Governança e delegações', [r'delegacoes de competencia', r'governanca', r'\bsge\b'], 6),
+    ('Combustíveis e biocombustíveis', 'Autorização, qualidade e mercado', [r'combustive', r'biocombustive', r'etanol', r'biodiesel', r'distribuidor', r'revendedor', r'gasolina', r'diesel', r'glp', r'cbio', r'renovabio', r'qualidade'], 5),
+    ('Gás natural', 'Transporte, tarifas e infraestrutura', [r'gas natural', r'gasoduto', r'transporte de gas', r'tarifa', r'terminal de gnl', r'\bgnl\b', r'armazenagem'], 6),
+    ('Abastecimento e logística', 'Infraestrutura e autorizações de instalações', [r'armazenamento', r'refin', r'dutovia', r'terminal', r'autorizacao de operacao', r'servicos de armazenagem'], 5),
+    ('Participações governamentais', 'Royalties / participação especial', [r'royalt', r'participacao especial', r'participacoes governamentais', r'pagamento'], 6),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal e orçamento', [r'sessao administrativa', r'orcamento', r'estrutura', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'acordo'], 4),
+]}
+SETOR['ANTAQ'] = {'modal': 'Portos, hidrovias e navegação', 'temas': [
+    ('Regulação e normas', 'Norma / resolução / audiência pública', [r'resolucao normativa', r'norma', r'audiencia publica', r'consulta publica', r'regulamento', r'agenda regulatoria', r'\bair\b'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos', r'pedido de revisao'], 5),
+    ('Fiscalização e sanções', 'Auto de infração / multa / sanção', [r'auto de infracao', r'multa', r'infracao', r'sancionador', r'penalidade', r'processo administrativo sancionador'], 6),
+    ('Autorizações e outorgas', 'Autorização de instalação portuária e empresas', [r'autorizacao', r'terminal de uso privado', r'\btup\b', r'estacao de transbordo', r'\betc\b', r'instalacao portuaria', r'empresa brasileira de navegacao', r'\bebn\b', r'outorga', r'afretamento'], 6),
+    ('Concessões e arrendamentos portuários', 'Contratos, reequilíbrio e licitação', [r'arrendamento', r'concessao', r'contrato de arrendamento', r'leilao', r'reequilibrio', r'termo aditivo', r'licitacao', r'porto organizado', r'autoridade portuaria'], 6),
+    ('Tarifas e preços', 'Tarifa portuária e fretes', [r'tarifa', r'preco', r'taxa', r'frete'], 5),
+    ('Navegação e hidrovias', 'Navegação interior, cabotagem e longo curso', [r'navegacao', r'cabotagem', r'hidrovia', r'longo curso', r'balsa', r'travessia', r'embarcacao'], 5),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'deliberacao do diretor-geral', r'ad referendum', r'acordo de cooperacao', r'plano de gestao'], 4),
+]}

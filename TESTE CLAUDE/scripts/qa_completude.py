@@ -65,6 +65,22 @@ com_ata = [r['reuniao'] for r in b['reunioes'] if r['reuniao'] not in sem_ata]
 lin('ANPD', '4 votos (1 por membro do Conselho Diretor) em cada circuito com ata', len(com_ata), sum(1 for k in com_ata if nvb[k] == 4))
 lin('ANPD', 'Presença: assinante da ata é diretor do colegiado', len(com_ata) - 2, sum(1 for q in b['qualidade'] if 'assinada' in q[1] for _ in range(q[3])) - 2 if False else (len(com_ata) - 2), ok=True, nota='conferido no parser (27/27)')
 lin('ANPD', 'Circuitos com "não acompanha o relator" > 0 ou levados à reunião', 0, sum(1 for d in b['deliberacoes'] if 'DIVERGÊNCIA' in d['resultado'] or 'LEVADO' in d['resultado']))
+import openpyxl
+wb = openpyxl.load_workbook('votos_2026.xlsx', read_only=True)
+# ---------------- ANP
+anp = json.load(open('anp.json')); manp = json.load(open('manifesto_anp.json')); ianp = json.load(open('anp_inventario.json'))
+if ONLINE:
+    h = curl('https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026').decode('utf8', 'ignore')
+    vivo = sorted(set(re.findall(r'arquivos-rd-2026/(ata[a-z0-9-]*)\.pdf', h)))
+    lin('ANP', 'atas linkadas na página oficial (ao vivo) × atas lidas', len(vivo), len(anp['reunioes']), nota=', '.join(vivo[:3]) + '...')
+atas_ok = [m for m in (manp.values() if isinstance(manp, dict) else manp) if (m.get('tipo') == 'ata' or 'ata' in str(m.get('arquivo', m.get('url', ''))).split('/')[-1]) and m.get('ok')]
+lin('ANP', 'atas baixadas válidas × reuniões lidas', len(atas_ok), len(anp['reunioes']))
+nvp = collections.Counter((v['reuniao'], v['processo'], v['deliberacao']) for v in anp['votos'])
+lin('ANP', '5 votos (1 por diretor) em cada item', len(anp['deliberacoes']), sum(1 for d in anp['deliberacoes'] if nvp[(d['reuniao'], d['processo'], d['deliberacao'])] == 5))
+lin('ANP', 'Votos duplicados (item, diretor)', 0, len(anp['votos']) - len({(v['reuniao'], v['processo'], v['deliberacao'], v['diretor']) for v in anp['votos']}))
+pend_anp = [p_[1] for p_ in anp['pendencias']]
+chv = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANP'}
+lin('ANP', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pend_anp), sum(1 for x in pend_anp if any(x == c or c.startswith(x) or x in c for c in chv)))
 # ---------------- planilha
 import openpyxl
 wb = openpyxl.load_workbook('votos_2026.xlsx', read_only=True)
@@ -72,6 +88,7 @@ vts = [r for r in wb['Votos'].iter_rows(min_row=2, values_only=True)]
 cx = collections.Counter(r[0] for r in vts)
 lin('ANVISA', 'Votos no JSON final × linhas na aba Votos', len(fin['votos']), cx['ANVISA'])
 lin('ANPD', 'Votos no JSON × linhas na aba Votos', len(b['votos']), cx['ANPD'])
+lin('ANP', 'Votos no JSON × linhas na aba Votos', len(anp['votos']), cx['ANP'])
 # ---------------- regra: tudo que falta (esperado − coletado) está na aba 'Faltam na fonte', com URL
 fx = [r for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True)]
 chaves = collections.defaultdict(set)

@@ -28,8 +28,14 @@ Gerado por `scripts/qa_completude.py --online`. Esperado = denominador independe
 | ANPD | 4 votos (1 por membro do Conselho Diretor) em cada circuito com ata | 27 | 27 | OK |  |
 | ANPD | Presença: assinante da ata é diretor do colegiado | 25 | 25 | OK | conferido no parser (27/27) |
 | ANPD | Circuitos com "não acompanha o relator" > 0 ou levados à reunião | 0 | 0 | OK |  |
+| ANP | atas linkadas na página oficial (ao vivo) × atas lidas | 13 | 13 | OK | ata-1175, ata-1176, ata-1177... |
+| ANP | atas baixadas válidas × reuniões lidas | 13 | 13 | OK |  |
+| ANP | 5 votos (1 por diretor) em cada item | 139 | 139 | OK |  |
+| ANP | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
+| ANP | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 13 | 13 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
 | ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
+| ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 197 | 197 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 218 | 218 | OK | sem URL: [] |

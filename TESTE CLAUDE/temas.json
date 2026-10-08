@@ -50834,5 +50834,2501 @@
   "fonte": "regra",
   "hash": "9c3906e71a124be9",
   "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.205862/2023-70|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "agenda regulatoria",
+   "resolucao anp",
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "0f868707aa6007b7",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.214900/2020-32|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "1ea379f864ec5f79",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.222308/2024-38|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "edicao de nova resolucao"
+  ],
+  "fonte": "regra",
+  "hash": "94a135c5c93ec8f0",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1175|48610.202800/2023-14|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "315a6fde6674739a",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1175|48610.207037/2025-71|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso administrativo",
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "e4785d68348b447b",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.237695/2023-26|REG-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "multa",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.68,
+  "conf_tema": 0.68,
+  "conf_modal": 1.0,
+  "termos": [
+   "combustive",
+   "distribuidor",
+   "renovabio"
+  ],
+  "fonte": "regra",
+  "hash": "2b08792208f51195",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1175|48610.230428/2023-28|REG-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso",
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "f22804d2bd649b0b",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.228628/2025-82|REG-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "partilha"
+  ],
+  "fonte": "regra",
+  "hash": "c2f5b2472e650210",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.222343/2021-12|REG-9": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "6d3e68c30553d40e",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.220367/2024-71|REG-10": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "08b4c3930a5fc0d2",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.231443/2024-74|REG-11": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "25d9d851882938f5",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.211560/2025-01|REG-12": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "8b418d2f88ab733f",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.007176/2015-25|REG-13": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "b85e0724132e8e1c",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.007006/2015-41|REG-14": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "46b92fcd29288c5d",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.007007/2015-95|REG-15": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "dbf397acda82970c",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.007009/2015-84|REG-16": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "eda7e46f335891c3",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.007010/2015-17|REG-17": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "348be1686cbc05b3",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.221764/2025-41|REG-18": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "9f808bd2969dcfeb",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.234253/2025-90|REG-19": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Abastecimento, preços e concorrência",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\bsdl\\b",
+   "\\bsbq\\b"
+  ],
+  "fonte": "regra",
+  "hash": "0d49cf6f561cf919",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1175|48610.233355/2025-98|ADM-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "administrativo",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "48eebc4093af3952",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1176|48610.229680/2024-75|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Abastecimento, preços e concorrência",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\bsdl\\b"
+  ],
+  "fonte": "regra",
+  "hash": "88738e88e9d2e8a3",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1176|48600.200999/2022-76|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.75,
+  "conf_tema": 0.75,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "agenda regulatoria",
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "a991ef6406731540",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1176|48610.222308/2024-38|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.96,
+  "conf_tema": 0.96,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "edicao de nova resolucao",
+   "\\bair\\b",
+   "analise de impacto"
+  ],
+  "fonte": "regra",
+  "hash": "6004eb9c23665294",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1176|48610.225834/2024-50|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "1fd3d7fc7d4831a2",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1176|48610.212387/2025-50|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "7c0aa6d60d4dc288",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1176|48610.200327/2025-94|REG-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "546c5dedfa404f0b",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1176|48610.221181/2024-30|REG-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "3bc3069162152855",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1176|48610.212964/2024-22|REG-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "2a414e5217855805",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1176|48610.233355/2025-98|ADM-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "administrativo",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "48eebc4093af3952",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1177|48610.209490/2025-12|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "0fc8e245f8a9964a",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.209490/2025-12|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "0ab09b2f2d865799",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.203907/2026-14|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "e520d8a366947c09",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.209490/2025-12|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gás natural",
+  "subtema": "Transporte, tarifas e infraestrutura",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "tarifa",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "gas natural",
+   "tarifa"
+  ],
+  "fonte": "regra",
+  "hash": "80777167aeb05073",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.003909/2018-03|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Termo aditivo",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "ae869d76745d4acd",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.219647/2020-11|REG-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Termo aditivo",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "b2cab191819b6517",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.224677/2024-65|REG-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "5bda2d568db29a39",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.009515/2013-46|REG-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "contrato",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "e7e4c3ecdbbf868f",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.216473/2024-51|REG-9": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "4510508b9dc7daa4",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.213379/2025-21|REG-10": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "ambiental",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "biometano"
+  ],
+  "fonte": "regra",
+  "hash": "a7e310b4cc61bfa0",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1177|48610.229121/2024-65|REG-11": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "ambiental",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "biometano",
+   "cgob",
+   "garantia de origem",
+   "certificado"
+  ],
+  "fonte": "regra",
+  "hash": "4cecd73c2fd1351a",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1178|48610.202800/2023-14|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "315a6fde6674739a",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1178|48600.200999/2022-76|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "agenda regulatoria",
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "a991ef6406731540",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1178|48600.203559/2025-13|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Abastecimento, preços e concorrência",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "outros",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\bsbq\\b"
+  ],
+  "fonte": "regra",
+  "hash": "71a863431ee52864",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1178|48610.222242/2024-86|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Obrigações e programas exploratórios",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "administrativo",
+  "confianca": 0.69,
+  "conf_tema": 0.69,
+  "conf_modal": 1.0,
+  "termos": [
+   "programa exploratorio minimo",
+   "\\bsep\\b",
+   "decisao de diretoria"
+  ],
+  "fonte": "regra",
+  "hash": "72da06415af8ac02",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1178|48610.238965/2023-16|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gás natural",
+  "subtema": "Transporte, tarifas e infraestrutura",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "administrativo",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "gasoduto",
+   "tarifa"
+  ],
+  "fonte": "regra",
+  "hash": "513d7623fb9671e3",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1178|48610.004214/2017-50|RES-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Participações governamentais",
+  "subtema": "Conciliação / cumprimento de sentença",
+  "tipo_ato": "Outros",
+  "microtema_iris": "usuario",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "conciliacao",
+   "cumprimento de sentenca",
+   "\\bspg\\b"
+  ],
+  "fonte": "regra",
+  "hash": "ec9b76e3a302531d",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1178|48610.218153/2025-16|RES-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Participações governamentais",
+  "subtema": "Royalties / participação especial",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "royalt"
+  ],
+  "fonte": "regra",
+  "hash": "ad7854e93ccd8316",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1178|48610.204293/2026-98|RES-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco"
+  ],
+  "fonte": "regra",
+  "hash": "8442f64847447942",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.206039/2026-24|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "medida provisoria"
+  ],
+  "fonte": "regra",
+  "hash": "aa1c670124f46685",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.224247/2025-24|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "f1f8dbea23cbb15c",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1179|48610.210070/2025-89|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "4202637eff4a6062",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.012899/2017-16|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Participações governamentais",
+  "subtema": "Royalties / participação especial",
+  "tipo_ato": "Outros",
+  "microtema_iris": "cfem",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "royalt"
+  ],
+  "fonte": "regra",
+  "hash": "1315f3f3030c2b7d",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1179|48610.224697/2024-36|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "2bca2fd95807a308",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.222871/2019-49|REG-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "de3f00e5e931799c",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.224039/2021-00|REG-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "ee9aa057fe8c6f36",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.204321/2021-62|REG-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "9e4e6b76ebec7139",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.228628/2025-82|REG-9": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "3db4ca2531b5394b",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.237695/2023-26|REG-10": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "multa",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.68,
+  "conf_tema": 0.68,
+  "conf_modal": 1.0,
+  "termos": [
+   "combustive",
+   "distribuidor",
+   "renovabio"
+  ],
+  "fonte": "regra",
+  "hash": "2b08792208f51195",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.212964/2024-22|REG-11": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "2a414e5217855805",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.217081/2025-90|REG-12": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.91,
+  "conf_tema": 0.91,
+  "conf_modal": 1.0,
+  "termos": [
+   "cbio",
+   "renovabio"
+  ],
+  "fonte": "regra",
+  "hash": "ae14cbe3264dad70",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.206024/2026-66|REG-13": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "rodovia",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "subvencao"
+  ],
+  "fonte": "regra",
+  "hash": "fc2c81fd9a5be2d6",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.206024/2026-66|REG-14": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "audiencia publica",
+   "\\bair\\b"
+  ],
+  "fonte": "regra",
+  "hash": "7f7ef196ddd42b33",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.233355/2025-98|ADM-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "administrativo",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "48eebc4093af3952",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.233355/2025-98|ADM-1R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "contrato",
+  "area_iris": "administrativo",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "48eebc4093af3952",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1179|48610.206039/2026-24|REG-1R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "medida provisoria"
+  ],
+  "fonte": "regra",
+  "hash": "aa1c670124f46685",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.224247/2025-24|REG-2R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "f1f8dbea23cbb15c",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1179|48610.210070/2025-89|REG-3R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "4202637eff4a6062",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.012899/2017-16|REG-4R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Participações governamentais",
+  "subtema": "Royalties / participação especial",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "outros",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "royalt",
+   "participacoes governamentais"
+  ],
+  "fonte": "regra",
+  "hash": "1315f3f3030c2b7d",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.224697/2024-36|REG-5R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "2bca2fd95807a308",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.222871/2019-49|REG-6R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "de3f00e5e931799c",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.224039/2021-00|REG-7R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "ee9aa057fe8c6f36",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1179|48610.204321/2021-62|REG-8R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "9e4e6b76ebec7139",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.237695/2023-26|REG-10R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.68,
+  "conf_tema": 0.68,
+  "conf_modal": 1.0,
+  "termos": [
+   "combustive",
+   "distribuidor",
+   "renovabio"
+  ],
+  "fonte": "regra",
+  "hash": "2b08792208f51195",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1179|48610.212964/2024-22|REG-11R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "2a414e5217855805",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1179|48610.217081/2025-90|REG-12R": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.91,
+  "conf_tema": 0.91,
+  "conf_modal": 1.0,
+  "termos": [
+   "cbio",
+   "renovabio"
+  ],
+  "fonte": "regra",
+  "hash": "ae14cbe3264dad70",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1180|48610.202800/2023-14|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "resolucao anp",
+   "analise de impacto"
+  ],
+  "fonte": "regra",
+  "hash": "315a6fde6674739a",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1180|48610.210070/2025-89|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]",
+   "analise de impacto"
+  ],
+  "fonte": "regra",
+  "hash": "67da3fc08781f1dc",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1180|48610.224697/2024-36|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "2bca2fd95807a308",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1180|48610.222871/2019-49|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "administrativo",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "contrato de concessao",
+   "rodada"
+  ],
+  "fonte": "regra",
+  "hash": "de3f00e5e931799c",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1180|48610.217081/2025-90|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.91,
+  "conf_tema": 0.91,
+  "conf_modal": 1.0,
+  "termos": [
+   "cbio",
+   "renovabio"
+  ],
+  "fonte": "regra",
+  "hash": "ae14cbe3264dad70",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.233355/2025-98|ADM-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "pessoal",
+  "area_iris": "administrativo",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "48eebc4093af3952",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.210018/2025-22|REG-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "agenda regulatoria"
+  ],
+  "fonte": "regra",
+  "hash": "6447e6371184ee5a",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.239304/2023-16|REG-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco"
+  ],
+  "fonte": "regra",
+  "hash": "000f2f597d2bc093",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.004647/2016-24|REG-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "86c50224c489ff50",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1181|48610.239366/2023-10|REG-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "adimplencia",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "ccc547beac48be28",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.218931/2025-77|REG-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Abastecimento, preços e concorrência",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\bsbq\\b"
+  ],
+  "fonte": "regra",
+  "hash": "d0098992cb7257a9",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.205473/2026-97|REG-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "biometano",
+   "cgob",
+   "garantia de origem",
+   "certificado"
+  ],
+  "fonte": "regra",
+  "hash": "827a47f210038114",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.205463/2026-51|REG-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "biometano",
+   "cgob",
+   "garantia de origem",
+   "certificado"
+  ],
+  "fonte": "regra",
+  "hash": "81355d00af1de47a",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.217612/2022-00|REG-9": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Obrigações e programas exploratórios",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "decisao de diretoria"
+  ],
+  "fonte": "regra",
+  "hash": "0df317899b1b7f27",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.002918/2018-79|REG-10": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "partilha"
+  ],
+  "fonte": "regra",
+  "hash": "481e9bedb04f9d8e",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.002384/2018-81|REG-11": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "partilha"
+  ],
+  "fonte": "regra",
+  "hash": "890c3938104ace07",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.206024/2026-66|REG-12": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Abastecimento, preços e concorrência",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "precos",
+   "defesa da concorrencia"
+  ],
+  "fonte": "regra",
+  "hash": "67f3d53225a584d1",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.206024/2026-66|REG-13": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.93,
+  "conf_tema": 0.93,
+  "conf_modal": 1.0,
+  "termos": [
+   "subvencao",
+   "medida provisoria"
+  ],
+  "fonte": "regra",
+  "hash": "0021678f45495417",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.207020/2026-03|RES-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco",
+   "partilha"
+  ],
+  "fonte": "regra",
+  "hash": "a776c64c019ba867",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1181|48610.004214/2017-50|RES-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Participações governamentais",
+  "subtema": "Conciliação / cumprimento de sentença",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.93,
+  "conf_tema": 0.93,
+  "conf_modal": 1.0,
+  "termos": [
+   "conciliacao",
+   "cumprimento de sentenca"
+  ],
+  "fonte": "regra",
+  "hash": "ec9b76e3a302531d",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1181|48600.200321/2022-93|RES-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal e orçamento",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "acordo"
+  ],
+  "fonte": "regra",
+  "hash": "8f960f6ac7c870b7",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1182|48610.214137/2025-54|REG-PUB-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.84,
+  "conf_tema": 0.84,
+  "conf_modal": 1.0,
+  "termos": [
+   "acao regulatoria",
+   "agenda regulatoria",
+   "resolucao anp",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "1854be997bf78b3d",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1182|48610.224247/2025-24|REG-PUB-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "f1f8dbea23cbb15c",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1182|48610.214127/2024-38|REG-PUB-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.69,
+  "conf_tema": 0.69,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria",
+   "resolucao anp",
+   "audiencia publica",
+   "analise de impacto"
+  ],
+  "fonte": "regra",
+  "hash": "62f65d3baf9ac426",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1182|48610.210024/2025-80|REG-PUB-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria",
+   "analise de impacto"
+  ],
+  "fonte": "regra",
+  "hash": "a309ee643f58c359",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1182|48610.227599/2025-31|REG-PUB-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco"
+  ],
+  "fonte": "regra",
+  "hash": "b3d5af0068ce0022",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1182|48610.226503/2023-56|REG-PUB-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "contrato",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "a19987b9e614cc2f",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1182|48610.224039/2021-00|REG-PUB-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "ee9aa057fe8c6f36",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1182|48610.004214/2017-50|REG-RSV-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Participações governamentais",
+  "subtema": "Conciliação / cumprimento de sentença",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.93,
+  "conf_tema": 0.93,
+  "conf_modal": 1.0,
+  "termos": [
+   "conciliacao",
+   "cumprimento de sentenca"
+  ],
+  "fonte": "regra",
+  "hash": "ec9b76e3a302531d",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1182|48600.200321/2022-93|REG-RSV-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal e orçamento",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "acordo"
+  ],
+  "fonte": "regra",
+  "hash": "8f960f6ac7c870b7",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1183|48600.200321/2022-93|REG-RSV-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal e orçamento",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "acordo"
+  ],
+  "fonte": "regra",
+  "hash": "8f960f6ac7c870b7",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.224247/2025-24|REG-PUB-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "revisao d[aeo]",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "f1f8dbea23cbb15c",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1183|48610.204824/2026-42|REG-PUB-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.48,
+  "conf_tema": 0.48,
+  "conf_modal": 1.0,
+  "termos": [
+   "consulta publica",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "70cb860ee3d45943",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1183|48610.209490/2025-12|REG-PUB-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "tarifa",
+  "area_iris": "ferrovia",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "consulta publica"
+  ],
+  "fonte": "regra",
+  "hash": "38d74f55ab8019f8",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.205480/2019-60|REG-PUB-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "partilha"
+  ],
+  "fonte": "regra",
+  "hash": "31692f6d3130caeb",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.235006/2025-19|REG-PUB-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Obrigações e programas exploratórios",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "exoneracao da obrigacao",
+   "programa exploratorio minimo",
+   "\\bsep\\b"
+  ],
+  "fonte": "regra",
+  "hash": "eeea66ea60156d4d",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.224039/2021-00|REG-PUB-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "adimplencia",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "ee9aa057fe8c6f36",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.218737/2023-20|REG-PUB-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "a71468daccbba4fa",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.219295/2022-58|REG-PUB-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "administrativo",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "hidrogenio"
+  ],
+  "fonte": "regra",
+  "hash": "651a614400c13bf6",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1183|48610.004647/2016-24|REG-PUB-9": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "b2c2486a80523ecc",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1183|48610.212286/2026-60|REG-PUB-10": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "572dccb9325ce548",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1183|48610.228585/2024-54|REG-PUB-11": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.62,
+  "conf_tema": 0.62,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso administrativo",
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "fcadf28bb97f75ba",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1183|48610.223934/2025-22|REG-PUB-12": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso administrativo",
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "d4e192c61da38dd8",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1183|48610.206039/2026-24|REG-PUB-13": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "seguranca",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "medida provisoria"
+  ],
+  "fonte": "regra",
+  "hash": "aa1c670124f46685",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1184|48610.205127/2025-28|REG-PUB-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Outros",
+  "microtema_iris": "seguranca",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.78,
+  "conf_tema": 0.78,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria",
+   "resolucao anp",
+   "revisao d[aeo]"
+  ],
+  "fonte": "regra",
+  "hash": "dbd0b391d9d13068",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1184|48610.224247/2025-24|REG-PUB-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria",
+   "revisao d[aeo]",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "f1f8dbea23cbb15c",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1184|48610.210040/2025-72|REG-PUB-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "consulta publica",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "b2e90b08fd4ebf00",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RD1184|48610.209955/2026-16|REG-PUB-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp"
+  ],
+  "fonte": "regra",
+  "hash": "ddb01ba7edfb413a",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1184|48610.004647/2016-24|REG-PUB-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "adimplencia",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de"
+  ],
+  "fonte": "regra",
+  "hash": "b2c2486a80523ecc",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1184|48610.223934/2025-22|REG-PUB-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso administrativo",
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "d4e192c61da38dd8",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1184|48610.206039/2026-24|REG-PUB-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "consulta publica",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "5a4404d45762bccb",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1184|48610.206039/2026-24|REG-PUB-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Abastecimento, preços e concorrência",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "outros",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "abusividade",
+   "precos",
+   "\\bsfi\\b"
+  ],
+  "fonte": "regra",
+  "hash": "bcb495b440a7044b",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.205614/2022-48|REG-PUB-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.48,
+  "conf_tema": 0.48,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria",
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "db3aa8e59ee5c2e0",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.209908/2026-72|REG-PUB-2": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "11c16ad5265b515f",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1185|48610.209226/2025-89|REG-PUB-3": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "partilha",
+   "plano de desenvolvimento",
+   "\\bpd\\b"
+  ],
+  "fonte": "regra",
+  "hash": "70b3c125d5f8c798",
+  "tipo_item": "Vista"
+ },
+ "ANP|RD1185|48610.003339/2015-09|REG-PUB-4": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "adimplencia",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "campo de",
+   "contrato de concessao"
+  ],
+  "fonte": "regra",
+  "hash": "37572ce732f67250",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.213912/2026-35|REG-PUB-5": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gás natural",
+  "subtema": "Transporte, tarifas e infraestrutura",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.72,
+  "conf_tema": 0.72,
+  "conf_modal": 1.0,
+  "termos": [
+   "gas natural",
+   "gasoduto",
+   "transporte de gas"
+  ],
+  "fonte": "regra",
+  "hash": "37156e62b766b00d",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.205890/2026-30|REG-PUB-6": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Biometano, CGOB e subvenção",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "biometano",
+   "cgob",
+   "garantia de origem",
+   "certificado"
+  ],
+  "fonte": "regra",
+  "hash": "2b3c995008793470",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.217748/2025-54|REG-PUB-7": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gás natural",
+  "subtema": "Transporte, tarifas e infraestrutura",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "gasoduto",
+   "\\bgnl\\b"
+  ],
+  "fonte": "regra",
+  "hash": "b65b035e9fe318ba",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.229021/2025-10|REG-PUB-8": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.48,
+  "conf_tema": 0.48,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso administrativo",
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "14bf3814bde651e9",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.204498/2026-73|REG-RSV-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Exploração e produção",
+  "subtema": "Contratos, blocos e campos",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "bloco"
+  ],
+  "fonte": "regra",
+  "hash": "d7aafd7ba435c0d2",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RD1185|48610.215296/2026-57|ADM-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Governança e delegações",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "delegacoes de competencia"
+  ],
+  "fonte": "regra",
+  "hash": "5604b802885b9293",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANP|RDE69|48610.206024/2026-66|REG-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Regulação e normas",
+  "subtema": "Ação regulatória / agenda / resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao anp",
+   "consulta publica",
+   "\\bair\\b",
+   "analise de impacto"
+  ],
+  "fonte": "regra",
+  "hash": "2a14db628afb4cfd",
+  "tipo_item": "Deliberação"
+ },
+ "ANP|RDE70|48610.206039/2026-24|REG-PUB-1": {
+  "modal": "Petróleo, gás e biocombustíveis",
+  "tema": "Combustíveis e biocombustíveis",
+  "subtema": "Autorização, qualidade e mercado",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.74,
+  "conf_tema": 0.74,
+  "conf_modal": 1.0,
+  "termos": [
+   "combustive",
+   "distribuidor",
+   "revendedor",
+   "glp"
+  ],
+  "fonte": "regra",
+  "hash": "310390dc983b0b36",
+  "tipo_item": "Deliberação"
  }
 }
