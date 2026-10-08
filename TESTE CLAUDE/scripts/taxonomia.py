@@ -321,3 +321,14 @@ SETOR['ANA'] = {'modal': 'Recursos hídricos e saneamento', 'temas': [
     ('Cobrança e arrecadação', 'Cobrança pelo uso de recursos hídricos', [r'cobranca', r'arrecadacao', r'tarifa', r'prestacao de contas'], 6),
     ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'acordo de cooperacao'], 4),
 ]}
+
+SETOR['ANS'] = {'modal': 'Saúde suplementar', 'temas': [
+    ('Rol e cobertura assistencial', 'Rol de procedimentos e eventos em saúde', [r'\brol\b', r'procedimento', r'cobertura', r'incorporacao', r'tecnologia em saude', r'medicamento'], 8),
+    ('Reajustes e preços', 'Reajuste de planos / precificação', [r'reajuste', r'mensalidade', r'faixa etaria', r'precificacao', r'sinistralidade'], 7),
+    ('Regime e solvência das operadoras', 'Direção fiscal, liquidação e capital', [r'direcao fiscal', r'liquidacao', r'solvencia', r'regime especial', r'margem de solvencia', r'capital', r'portabilidade de carencia'], 7),
+    ('Fiscalização e sanções', 'Processo sancionador / multa', [r'multa', r'sancionador', r'infracao', r'penalidade', r'representacao', r'auto de infracao'], 7),
+    ('Regulação e normas', 'Resolução normativa / consulta pública', [r'resolucao normativa', r'consulta publica', r'audiencia publica', r'agenda regulatoria', r'norma', r'regulamento'], 6),
+    ('Registro e autorização de operadoras', 'Registro de produto e operadora', [r'registro de operadora', r'registro de produto', r'autorizacao de funcionamento', r'transferencia de carteira', r'alienacao'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos'], 6),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'ata ', r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'informe'], 4),
+]}

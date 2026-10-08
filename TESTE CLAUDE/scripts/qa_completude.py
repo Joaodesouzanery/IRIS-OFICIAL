@@ -106,7 +106,8 @@ GEN = {a['sg']: (a, json.load(open(a['json']))) for a in AG.ativas() if a['sg'] 
 for sg, (a_, js) in GEN.items():
     nv_ = collections.defaultdict(set)
     for v in js['votos']: nv_[(v['reuniao'], v['processo'], v['deliberacao'])].add(v['diretor'])
-    lin(sg, 'Itens com ao menos 1 voto registrado', len(js['deliberacoes']), sum(1 for d in js['deliberacoes'] if nv_[(d['reuniao'], d['processo'], d['deliberacao'])]))
+    _sv = lambda d: str(d.get('resultado') or '').startswith(('RESULTADO NÃO PUBLICADO', 'REUNIÃO AINDA NÃO', 'Informe', 'Retirada')) or d.get('tipo_item') in ('Informe', 'Retirada de pauta') and not nv_[(d['reuniao'], d['processo'], d['deliberacao'])]   # sem resultado publicado = pendência da fonte (aba Faltam na fonte), não voto perdido
+    lin(sg, 'Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte)', sum(1 for d in js['deliberacoes'] if not _sv(d)), sum(1 for d in js['deliberacoes'] if not _sv(d) and nv_[(d['reuniao'], d['processo'], d['deliberacao'])]), nota=f"{sum(1 for d in js['deliberacoes'] if _sv(d))} itens sem resultado publicado/informe")
     lin(sg, 'Votos duplicados (item, diretor)', 0, len(js['votos']) - len({(v['reuniao'], v['processo'], v['deliberacao'], v['diretor']) for v in js['votos']}))
     ev_ = collections.Counter(v['proveniencia'] for v in js['votos'])
     lin(sg, 'Votos: nominal + inferido + REVISAR = total', len(js['votos']), sum(ev_.values()), nota=str(dict(ev_)))

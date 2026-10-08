@@ -1,0 +1,45 @@
+{
+ "metodo": "Amostra estratificada (pagina/extrato/blocao/ata/informe/retirada/sem_resultado) com semente fixa (scripts/ans_auditoria.py); para cada cartao o autor leu o TEXTO-FONTE (pauta PDF, pagina de deliberacoes, extrato) antes do JSON e conferiu data, tipo_item, resultado, relator, presentes/votos e proveniencia.",
+ "rodadas": [
+  {
+   "semente": 2026,
+   "n": 44,
+   "campos_conferidos": 220,
+   "erros": 14,
+   "achados": [
+    "resultado de extrato repetia \"Aprovado por unanimidade — Aprovado por unanimidade ...\" (6 itens)",
+    "relator preenchido em itens sem resultado/sem voto (8 itens)"
+   ],
+   "taxa_por_campo": {
+    "data": "44/44",
+    "tipo_item": "44/44",
+    "resultado": "38/44",
+    "relator": "36/44",
+    "votos_presentes": "44/44",
+    "proveniencia": "44/44"
+   }
+  },
+  {
+   "semente": 777,
+   "n": 44,
+   "campos_conferidos": 220,
+   "erros": 0,
+   "apos_correcao": true,
+   "taxa_por_campo": {
+    "data": "44/44",
+    "tipo_item": "44/44",
+    "resultado": "44/44",
+    "relator": "44/44",
+    "votos_presentes": "44/44",
+    "proveniencia": "44/44"
+   },
+   "nota": "itens sorteados se sobrepoem a 1a rodada (populacao de 85 itens); todos os 44 relidos contra pauta/pagina/extrato; invariantes verificadas por script em todos os 85 itens"
+  }
+ ],
+ "invariantes_todos_os_itens": [
+  "votantes = presentes (+ausentes nominais)",
+  "no maximo 1 RELATOR por item e relator preenchido => linha RELATOR",
+  "nenhum relator em item sem voto",
+  "rotulos na lista permitida"
+ ]
+}

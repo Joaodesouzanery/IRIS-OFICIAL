@@ -93250,5 +93250,1417 @@
   "fonte": "regra",
   "hash": "1f74a1e79e249375",
   "tipo_item": "Vista"
+ },
+ "ANS|DICOL633|ATA DICOL633-i1|Item 1: APROVAÇÃO das minutas das atas da 1ª Reunião Extraordinária de Diretoria Colegiada, de 26/01/2026; da 632ª Reunião Ordinária de Diretoria Colegiada, de 30/01/2026; e da 2ª Reunião Extraordinária de Di": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "300ff085465afb8f",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL633|33910.049000/2025-61|Item 2: APROVAÇÃO da proposta de atualização das Regiões de Saúde utilizadas na regulamentação da saúde suplementar. Processo nº 33910.049000/2025-61.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "6287b138331ae03e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.059754/2025-29|Item 3: APROVAÇÃO das propostas normativas que alteram a Resolução Normativa nº 565/2022 e a Instrução Normativa - IN/ANS nº 30/2022. Processo nº 33910.059754/2025-29.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "0770736316d1904f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.029011/2025-24|Item 4: APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANT": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "9687d343415a5a53",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.029234/2025-91|Item 5: APROVAÇÃO proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE-ES, sem registro na ANS. Processo nº 339": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "5056aa364c6f406c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.036648/2023-13|Item 6: APROVAÇÃO da declaração de cumprimento do TCAC 004/2024, celebrado entre a ANS e a operadora CLÍNICA SÃO GABRIEL S/S LTDA. Processo nº 33910.036648/2023-13.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "8c72a769a78b1d02",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|BLOCAO-DICOL633|Blocão (COREC/SECEX): 209 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "f9f25b8288fd180a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|ATA DICOL635-i1|Item 1: APROVAÇÃO das minutas das atas da 5ª Reunião Extraordinária de Diretoria Colegiada, de 06/03/2025, e da 634ª Reunião Ordinária de Diretoria Colegiada, de 13/03/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "81ada5e2c9046786",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL635|33910.009994/2023-11|Item 2: INFORME sobre o Edital Complementar do Projeto Cuidado Integral à Gestante e ao Neonato – Parto Adequado. Processo nº 33910.009994/2023-11.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "c02210b2e009300e",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL635|33910.017005/2022-81|Item 3: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARANÁ - TJ/PR, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.017": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "7d4ececf7dcdc1ec",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.010071/2026-54|Item 4: APROVAÇÃO da proposta de convocação de Audiência Pública sobre o tema Aprimoramento da supervisão regulatória sobre a governança corporativa no Sistema Unimed. Processo nº 33910.010071/2026-54.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "audiencia publica"
+  ],
+  "fonte": "regra",
+  "hash": "15a6831fa9292db5",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.006470/2024-59|Item 5: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao",
+   "tecnologia em saude"
+  ],
+  "fonte": "regra",
+  "hash": "1447abab62e352ce",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.000998/2026-86|Item 6: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF. Aprovação da proposta de R": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.56,
+  "conf_tema": 0.56,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "3371d41b87a4ba96",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.008417/2026-54|Item 7: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.008417/2026-54.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "cd713b999f7e4c8d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.048937/2025-19|Item 8: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 175. Apr": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.51,
+  "conf_tema": 0.51,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "fe975435f65e9fc9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|BLOCAO-DICOL635|Blocão (COREC/SECEX): 212 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "b2f10c4423d89d16",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|ATA DICOL636-i1|Item 1: APROVAÇÃO da minuta da ata da 635ª Reunião Ordinária de Diretoria Colegiada, de 06/04/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "f0ccd9a112370a1d",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL636|33910.000998/2026-86|Item extrapauta (só no extrato): Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 190.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "66d4b1ef54a102ff",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|BLOCAO-DICOL636|Blocão (COREC/SECEX): 219 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "96358326c625f8c8",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|ATA DICOL637-i1|Item 1: APROVAÇÃO das minutas das atas da 6ª Reunião Extraordinária de Diretoria Colegiada, de 17/04/2026, e da 636ª Reunião Ordinária de Diretoria Colegiada, de 24/04/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "265b08d511eec7cf",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL637|33910.014193/2025-39|Item 2: INFORME sobre o 3º Edital do Projeto Cuidado Integral à Saúde – Desenvolvimento e Implementação do Modelo de Atenção Coordenado em Rede (MACOR). Processo nº 33910.014193/2025-39.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "07db128f67f6d10d",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL637|DICOL637-ITEM3|Item 3: APRECIAÇÃO do Relatório Conclusivo nº 2/2026/COINQ/SECEX/PRESI da ex- operadora ASSOCIAÇÃO AUXILIADORA DAS CLASSES LABORIOSAS. Processo nº 33910.016100/2024- 20.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "372786e1c56d1728",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.023676/2023-62|Item 4: APRECIAÇÃO do Relatório Conclusivo nº 3/2026/COINQ/SECEX/PRESI da ex- operadora ASSOCIAÇÃO DE SAÚDE DOS POLICIAIS E BOMBEIROS MILITARES DO ESPÍRITO SANTO - ASPBMES. Processo nº 33910.023676/2023-62.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "5b11abd086d722ef",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.011437/2026-11|Item 5: APROVAÇÃO da proposta de interrupção temporária do processamento do Mapeamento do Risco Assistencial em razão de sua reestruturação metodológica. Processo nº 33910.011437/2026-11.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "seguranca",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "c0c0be5a75033815",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33902.461712/2016-62|Item 6: APROVAÇÃO da Análise de Resultado Regulatório – ARR referente à Resolução Normativa - RN nº 438/2018 e da autorização para realização de Audiência Pública. Processo nº 33902.461712/2016-62.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "audiencia publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "08e7ecf2e4decb6a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.040748/2023-36|Item 7: APROVAÇÃO da proposta de Resolução Administrativa que disciplina a Tomada de Contas Especial - atendimento à Auditoria Interna da ANS. Processo nº 33910.040748/2023-36.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "596889dc500df77e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.048330/2025-39|Item 8: APROVAÇÃO da proposta de Resolução Regimental que altera a RR nº 21/2022 e seus anexos, em consonância com o Decreto nº 12.934/2026. Processo nº 33910.048330/2025-39.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "8760d449c7c64797",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.035871/2023-35|Item 9: APROVAÇÃO da proposta de declaração de cumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 1/2024 pela empresa PRESERVE SAÚDE ASSISTÊNCIA MÉDICA LTDA, registro ANS sob o nº 42.295-9. Pr": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "f51239bbd6aa26bc",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.029234/2025-91|Item 10: APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta -TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE- ES, sem registro na ANS, inscrita no ": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "d5b0cc5402501b10",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.029011/2025-24|Item 11: APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta (TCAC) entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANT": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "3d36067ed1fdf1d6",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.030610/2025-91|Item 12: DELIBERAÇÃO sobre o recurso administrativo interposto por EDWARDS LIFESCIENCES COMÉRCIO DE PRODUTOS MÉDICO-CIRÚRGICOS LTDA quanto à não incorporação ao Rol de Procedimentos e Eventos em Saúde - UAT nº": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "3d3fdec5fa8b3484",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.000122/2026-30|Item 13: DELIBERAÇÃO sobre tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde –": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao",
+   "tecnologia em saude"
+  ],
+  "fonte": "regra",
+  "hash": "435cd2dc14e25a68",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.003276/2026-83|Item 14: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 193. Pro": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "31f515a72f002850",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.000171/2025-91|Item 15: APROVAÇÃO da prorrogação do prazo da Consulta Pública nº 170, que trata da proposta de nova RN sobre Contratualização entre operadoras de planos privados de assistência à saúde e prestadores de serviç": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "consulta publica"
+  ],
+  "fonte": "regra",
+  "hash": "11cc1163d03def61",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|BLOCAO-DICOL637|Blocão (COREC/SECEX): 204 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "7b15cc66fc33fecd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|ATA DICOL638-i1|Item 1: APROVAÇÃO da minuta da ata da 7ª Reunião Extraordinária de Diretoria Colegiada, de 08/05/2026, e da minuta da ata da 637ª Reunião Ordinária de Diretoria Colegiada, de 15/05/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "43ae694b56c051db",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL638|33910.060457/2025-26|Item 2: INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao terceiro ciclo avaliativo da RN nº 623/2024. Processo nº 33910.060457/2025-26.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "2ac6d9283dc59016",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL638|33910.015974/2026-21|Item 3: APRECIAÇÃO da proposta de Resolução Normativa que altera a RN nº 585/2023 e da proposta de Instrução Normativa que altera a IN/ANS nº 28/2022. Sistema de Alteração de Produtos no Registro de Planos de": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "de0ebd23a7dec90a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.003953/2021-59|Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARÁ - TJ/PA, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.00395": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "af6124d723cdd9b1",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.012596/2026-24|Item 5: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública. Apreciação da Nota Técnica de Recomendação Preliminar – NTRF referente à UAT nº 20": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "def56ec58367b93f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.048937/2025-19|Item 6: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 171. Pro": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "eee7997d63979262",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.008417/2026-54|Item 7: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs nº 183 e ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "dbf97978f73d9158",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.000122/2026-30|Item 8: DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.96,
+  "conf_tema": 0.96,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "66e9dd688b3b6765",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|BLOCAO-DICOL638|Blocão (COREC/SECEX): 179 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "182cb492ae1411a1",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|BLOCAO-DICOL638-RETIRADO|Blocão: 1 processo(s) retirado(s) de pauta (não identificado(s) na fonte)": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "078d454b81f483af",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL640|ATA DICOL640-i1|Item 1: APROVAÇÃO da minuta da ata da 639ª Reunião Ordinária de Diretoria Colegiada, de 26/06/206.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "3680d45980da3486",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL640|33910.030581/2020-52|Item 2: APROVAÇÃO de relatório técnico que trata da definição dos seis trimestres que compõem o período para o cálculo do Fator Individual de PEONA SUS e do Fator Teto de PEONA SUS. Processo nº 33910.030581/2": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "ata "
+  ],
+  "fonte": "regra",
+  "hash": "498ee05c233bc2bb",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.015974/2026-21|Item 3: APROVAÇÃO da proposta de alterações normativas – RN nº 585, de 2023 e IN/ANS nº 28, de 2022. Sistema de Alteração de Produtos no Registro de Planos de Saúde - RPS/ANS. Processo nº 33910.015974/2026-21": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "1114e37124d1c094",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.027921/2025-72|Item 4: APROVAÇÃO da Agenda Regulatória da ANS 2026-2028. Processo nº 33910.027921/2025-72.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria"
+  ],
+  "fonte": "regra",
+  "hash": "54d048aac835c89e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|DICOL640-ITEM5|Item 5: INFORME sobre prevenção para as consequências sanitárias decorrentes do Fenômeno El Niño – 2026.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "ce424cd9c64f92ef",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL640|33910.018676/2026-93|Item 6: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.018676/2026-93.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "dc1bf57ed606be12",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.000122/2026-30|Item 7: DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.96,
+  "conf_tema": 0.96,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "66e9dd688b3b6765",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.012010/2026-21|Item 8: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs 187, 188 ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "b534ff14f8172f85",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.017052/2026-59|Item 9: INFORME sobre o início das tratativas para a celebração de Acordo de Cooperação Técnica com a UNIMED DO BRASIL – CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS MÉDICAS. Processo nº 33910.017052/2026-59.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao",
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "2e64a9bcbea6142a",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL640|BLOCAO-DICOL640|Blocão (COREC/SECEX): 306 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "0786f9e95c7513dd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL641|ATA DICOL641-i1|Item 1: APROVAÇÃO da minuta da ata da 640ª Reunião Ordinária de Diretoria Colegiada, de 17/07/206.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "4cece966eeaba9b2",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL641|33910.024041/2026-25|Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "73f10c76d9b7a788",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL641|33910.011904/2026-02|Item 3: REFERENDO da decisão do Diretor-Presidente que (i) prorroga o Chamamento Público pelo período de quinze dias, com a redução do número de questionamentos obrigatórios, sobre os cartões de desconto, car": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "4cd3b910d08ca963",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL641|33910.021273/2026-21|Item 4: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.021273/2026-21.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "123ecca826dd74fa",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL641|BLOCAO-DICOL641|Blocão (COREC/SECEX): 167 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "6e6372d39ed91f8c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL642|ATA DICOL642-i1|Item 1: APROVAÇÃO da minuta da ata da 641ª Reunião Ordinária de Diretoria Colegiada, de 07/08/2026, e da minuta da ata da 9ª Reunião Extraordinária de Diretoria Colegiada, de 21/08/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "5e2d7dce295ac78e",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL642|33910.022773/2026-81|Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "4a3354abc31a3654",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL642|33910.036962/2023-98|Item 3: APROVAÇÃO da proposta de declaração de descumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 002/2024 celebrado entre a ANS e a ORAL GAM ASSISTENCIA ODONTOLÓGICA LTDA. Processo nº 3391": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "982fc8034b40eea1",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL642|33902.119363/2017-60|Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO DO SUL, no âmbito do Programa Parceiros da Cidadania. Processo nº 33902.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "f9709bc1958089bd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL642|33910.013588/2022-71|Item 5: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO TOCANTINS – TJ/TO, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "40a3ad27bde144c3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL642|33910.024041/2026-25|Item 6: APROVAÇÃO da proposta de alteração dos Anexos I e I-d da Resolução Regimental - RR nº 21, de 26 de janeiro de 2022, no âmbito da Diretoria de Desenvolvimento Setorial. Processo nº 33910.024041/2026-25": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "ec7995deeae7644e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL642|33910.060457/2025-26|Item 7: INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao ciclo avaliativo da RN nº 623/2024 correspondente aos meses de abril a junho de 2026. Processo nº 33910.0604": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "d0aa197c0fb91db2",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL642|BLOCAO-DICOL642|Blocão (COREC/SECEX): 240 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "a88439137be8b2c1",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL643|33910.024041/2026-25|Item 1: Referendo da decisão do Diretor-Presidente que suspendeu a eficácia da Resolução Regimental ANS nº 38, de 27 de agosto de 2026 até 15 de setembro de 2026, de forma retroativa a 28 de agosto de 2026. P": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "bd2a10b2172677b3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL643|ATA DICOL643-i2|Item 2: APROVAÇÃO da minuta da ata da 642ª Reunião Ordinária de Diretoria Colegiada, de 26/08/206 e da minuta da ata da 10ª Reunião Extraordinária de Diretoria Colegiada, de 03/09/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "2823cf022a10d915",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL643|DICOL643-ITEM3|Item 3: INFORME sobre a conclusão do mandato da Diretora Eliane Medeiros à frente da Diretoria de Fiscalização.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "24ca2f9063d04459",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL643|33910.000122/2026-30|Item 4: DELIBERAÇÃO sobre a proposta tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao",
+   "tecnologia em saude"
+  ],
+  "fonte": "regra",
+  "hash": "26b1b7f81f2eff95",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL643|33902.002784/2015-91|Item 5: APROVAÇÃO da Proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o Tribunal de Justiça do Estado de São Paulo - TJ/SP. Processo: 33902.002784/2015-91.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "f468a192f7ba7c6a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL643|33902.047499/2017-61|Item 6: APROVAÇÃO da Proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o Ministério Público do Estado do Ceará – MP/CE. Processo: 33902.047499/2017-61.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "fe65332e90c78236",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL643|BLOCAO-DICOL643|Blocão (COREC/SECEX): 81 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "9199cdc6dd567a44",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL644|ATA DICOL644-i1|Item 1: APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "ace3ac72d2a482c5",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL644|33910.009781/2026-31|Item 2: APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistênc": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "7b510a0a66346e0e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL644|33910.018676/2026-93|Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.51,
+  "conf_tema": 0.51,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "e6cc6f0ca0e5723f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL644|33910.026708/2026-24|Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "0f885e406e170c6e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL644|BLOCAO-DICOL644|Blocão (COREC/SECEX): 322 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "05fbde3d371d906b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE01|33910.048937/2025-19|Item 1: Deliberação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à Unidade de Análise Técnica – UAT nº 176. Aprovaçã": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "seguranca",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "audiencia publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "c75207f601420c3a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE02|33910.000998/2026-86|Item 1: DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Nota Técnica de Recomendação Preliminar – NTRP referente às UATs nº 186, 189 e 190. Abertura de Consulta Pública e Au": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "08af1b7a50b98a8e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE02|33910.041022/2025-82|Item 2: DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 172. Aprovação da proposta ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.56,
+  "conf_tema": 0.56,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "d4e6fdf1a53d8ade",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE02|33910.048937/2025-19|Item 3: DELIBERAÇÃO da proposta de suspensão do prazo para conclusão da análise referente à UAT nº 171. Inclisirana para o tratamento da hipercolesterolemia primária ou dislipidemia mista em pacientes com doe": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "7129120ef1357957",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE12|33910.021273/2026-21|Item 2: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 199. Aprovação da prop": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "audiencia publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "84cf253cd5c38f80",
+  "tipo_item": "Deliberação"
  }
 }

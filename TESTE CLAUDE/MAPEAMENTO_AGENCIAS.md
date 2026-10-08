@@ -1,4 +1,16 @@
-# Mapeamento das agências reguladoras federais (somente pesquisa, nada implementado)
+# Mapeamento das agências reguladoras federais
+
+> **Status real em 08/10/2026 (substitui as hipóteses da pesquisa inicial abaixo, que seguem como histórico):**
+> | Agência | Estado | Votos | Limite |
+> |---|---|---|---|
+> | ANM, ANTT, ARTESP | feito | 1.527 / 1.529 / 2.816 | ANTT 99 PDFs de voto em imagem; ANM 5 REVISAR |
+> | ANPD, ANVISA, ANP, ANTAQ | feito, QA + auditoria | 110 / 5.795 / 695 / 3.413 | unanimidade = voto inferido |
+> | ANATEL | feito, varredura 100% + auditoria | 2.922 (67,5% nominal) | 9 relatores ex-conselheiros sem linha; CD215 sem placar |
+> | ANEEL | feito, varredura 100% + auditoria | 5.023 (31,6% nominal) | atas PDF bloqueadas (Cloudflare): presença inferida; 20 vistas sem pedinte |
+> | ANS | **parcial**: 85 itens, 195 votos (189 inferidos) | só pautas, páginas de deliberações e extratos abertos | pasta de atas "Conteúdo Restrito"; `componentes-portal.ans.gov.br` e `www.ans.gov.br` fora do egress; 12 reuniões sem documento |
+> | ANA | **bloqueada pelo ambiente**: 12 reuniões inventariadas, 0 votos | — | PDFs em `arquivos.ana.gov.br` recusado pelo egress |
+> | ANCINE, ANAC | não iniciadas | — | ANAC por último (captcha) |
+
 
 Pesquisa de 08/10/2026 com WebSearch/WebFetch/curl pelo proxy com allowlist. **Verificado** = abri a página ou o PDF; **não verificado** = não consegui abrir (bloqueio, timeout ou captcha) e a informação vem de busca. Hoje o IRIS só coleta **notícias** destas agências; nenhuma tem ata, voto ou pauta coletados (ver `MONITORAMENTO.md`).
 

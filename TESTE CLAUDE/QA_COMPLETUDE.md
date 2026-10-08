@@ -30,21 +30,26 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANTAQ | Votos: nominal + inferido + REVISAR = total | 3413 | 3413 | OK | {'nominal': 1458, 'inferido': 1955} |
 | ANTAQ | Verificações da aba qualidade do parser sem DIVERGE | 0 | 0 | OK | 8 exceções explicadas, todas em Faltam na fonte quando for documento |
 | ANTAQ | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 56 | 56 | OK |  |
-| ANATEL | Itens com ao menos 1 voto registrado | 584 | 584 | OK |  |
+| ANATEL | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 584 | 584 | OK | 0 itens sem resultado publicado/informe |
 | ANATEL | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANATEL | Votos: nominal + inferido + REVISAR = total | 2922 | 2922 | OK | {'inferido': 949, 'nominal': 1973} |
 | ANATEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANATEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 22 | 22 | OK |  |
-| ANEEL | Itens com ao menos 1 voto registrado | 1001 | 1001 | OK |  |
+| ANEEL | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 1001 | 1001 | OK | 0 itens sem resultado publicado/informe |
 | ANEEL | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANEEL | Votos: nominal + inferido + REVISAR = total | 5023 | 5023 | OK | {'inferido': 3423, 'nominal': 1588, 'REVISAR': 12} |
 | ANEEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (divergência de data, buraco, truncad, sem pedinte) | 0 | 0 | OK | 4 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANEEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 87 | 87 | OK |  |
-| ANA | Itens com ao menos 1 voto registrado | 0 | 0 | OK |  |
+| ANA | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 0 | 0 | OK | 0 itens sem resultado publicado/informe |
 | ANA | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANA | Votos: nominal + inferido + REVISAR = total | 0 | 0 | OK | {} |
 | ANA | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (NÃO baixado, bloqueado pela fonte) | 0 | 0 | OK | 1 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 29 | 29 | OK |  |
+| ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 39 | 39 | OK | 46 itens sem resultado publicado/informe |
+| ANS | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
+| ANS | Votos: nominal + inferido + REVISAR = total | 195 | 195 | OK | {'inferido': 189, 'REVISAR': 5, 'nominal': 1} |
+| ANS | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, fora da allowlist, sem documento) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
+| ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 23 | 23 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
 | ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
 | ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
@@ -52,6 +57,7 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 2922 | 2922 | OK |  |
 | ANEEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 5023 | 5023 | OK |  |
 | ANA | Votos no JSON × linhas na aba Votos | 0 | 0 | OK |  |
+| ANS | Votos no JSON × linhas na aba Votos | 195 | 195 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 499 | 499 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 522 | 522 | OK | sem URL: [] |

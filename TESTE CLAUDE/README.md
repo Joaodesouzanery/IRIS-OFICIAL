@@ -14,7 +14,7 @@ Artifact publicado a partir de `votos_2026_artifact.html` (gitignored). Document
 | ANPD, ANVISA, ANP, ANTAQ | feito + QA + auditoria | ANVISA inclui Circuitos Deliberativos |
 | ANATEL, ANEEL | feito + varredura 100% + auditoria | ANEEL: atas em PDF bloqueadas (Cloudflare) → presença inferida, ~68% dos votos inferidos |
 | ANA | inventário e pendências; **0 votos** | PDFs em `arquivos.ana.gov.br`, recusado pelo egress do ambiente (liberar o host e rodar `scripts/ana_rodar.sh`) |
-| ANS | ver `MAPEAMENTO_AGENCIAS.md` | |
+| ANS | **parcial**: 85 itens/195 votos (inferidos) | atas oficiais restritas; hosts `www.ans.gov.br`/`componentes-portal.ans.gov.br` fora do egress |
 | ANCINE, ANAC | não iniciadas | ANAC por último (captcha) |
 
 ## Como funciona
