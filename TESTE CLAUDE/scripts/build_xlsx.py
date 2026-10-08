@@ -35,7 +35,7 @@ for d in art['deliberacoes']: D.append(dict(d, agencia='ARTESP', relator='Consel
 for v in art['votos']: V.append(dict(v, agencia='ARTESP'))
 
 # ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
-EXTRAS = {sg: json.load(open(sg.lower() + '.json')) for sg in ('ANPD', 'ANVISA') if os.path.exists(sg.lower() + '.json')}
+EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json')) if os.path.exists(f)}
 for sg, x in EXTRAS.items():
     for r in x['reunioes']: R.append(dict(r, agencia=sg, ausentes=r.get('ausentes', [])))
     for d in x['deliberacoes']: D.append(dict(d, agencia=sg, texto=d.get('decisao_texto', ''), item=d['processo']))
@@ -138,7 +138,8 @@ for ag in AGS:
     pres = collections.defaultdict(set)
     for r in R:
         if r['agencia'] == ag: pres[r['reuniao']] = set(r.get('presentes', [])) | set(r.get('ausentes', []))
-    fora = sum(1 for v in vs if v['reuniao'] in pres and pres[v['reuniao']] and v['diretor'] not in pres[v['reuniao']] and not v['voto'].startswith('RELATOR'))
+    ext_ = {(d['agencia'], d['reuniao'], d['processo'], d.get('deliberacao')) for d in D if str(d.get('voto_fonte', '')).startswith('extrato')}
+    fora = sum(1 for v in vs if (ag, v['reuniao'], v['processo'], v.get('deliberacao')) not in ext_ and v['reuniao'] in pres and pres[v['reuniao']] and v['diretor'] not in pres[v['reuniao']] and not v['voto'].startswith('RELATOR'))
     chk(ag, 'Votos de diretor que não está na presença/ausência da reunião (exceto relator)', 0, fora, 'relator de vista pode ser diretor de reunião anterior (ANM)')
 for sg, x in EXTRAS.items(): Q.extend(x['qualidade'])
 sheet('Qualidade', ['Agência', 'Checagem', 'Esperado', 'Observado', 'Status', 'Nota'], Q, {'Checagem': 70, 'Nota': 80})
@@ -220,6 +221,7 @@ for d in D:
     r = rmap.get((d['agencia'], d['reuniao']))
     n_esp = len(set(r.get('presentes', [])) | set(r.get('ausentes', []))) if r else 0
     n_obs = len(vidx.get((d['agencia'], d['reuniao'], d['processo'], d.get('deliberacao')), {}))
+    if str(d.get('voto_fonte', '')).startswith('extrato'): continue   # votantes vêm da tabela nominal do extrato do CD (podem diferir dos presentes da ROP)
     if n_esp != n_obs: falhas.append((d['agencia'], d['reuniao'], d['processo'], n_esp, n_obs))
 for ag in AGS:
     tot_d = sum(1 for d in D if d['agencia'] == ag and d['tipo_item'] not in ('Cancelada', 'Só voto do relator (sem ata)'))

@@ -27,9 +27,14 @@ python3 -I scripts/anpd_parse.py manifesto_anpd.json anpd.json
 python3 -I scripts/anvisa_baixar.py anvisa_inventario.json manifesto_anvisa.json fonte/anvisa
 for f in fonte/anvisa/*_ata.pdf; do pdftotext -layout "$f" "texto_anvisa/$(basename "$f" .pdf).txt"; done
 python3 -I scripts/anvisa_parse.py manifesto_anvisa.json anvisa.json
+# ANVISA Circuitos Deliberativos: extratos com tabela NOMINAL de votos (API Volto devolve os 940 de uma vez; a listagem do site pagina de 25 em 25)
+python3 -I scripts/anvisa_cd_baixar.py anvisa_cd_inventario.json manifesto_anvisa_cd.json fonte/anvisa_cd
+python3 -I scripts/anvisa_cd_parse.py manifesto_anvisa_cd.json anvisa_cd.json
+python3 -I scripts/anvisa_unir.py anvisa.json anvisa_cd.json anvisa_final.json   # item de ROP decidido por CD usa a tabela nominal do extrato
 # Temas: regras (taxonomia do repo) + revisão por IA só nos itens de baixa confiança
 python3 -I scripts/temas.py            # grava temas.json e temas_revisao_pendente.json (itens que ainda precisam de IA)
 # Se temas_revisao_pendente.json não estiver vazio: classificar esses itens (subagentes Claude, taxonomia_fechada.json),
 # salvar em temas_ia/resultado_N.json e rodar:  python3 -I scripts/temas.py --importar-ia temas_ia && python3 -I scripts/temas.py
 python3 -I scripts/build_xlsx.py       # também atualiza a aba 'Pendências da fonte' e pendencias_historico.json
 python3 -I scripts/build_html.py       # dashboard votos_2026.html (+_artifact); falha se o HTML divergir do xlsx
+python3 -I scripts/qa_completude.py --online   # QA de completude (ANPD, ANVISA): sai com erro se algo divergir sem pendência explicada

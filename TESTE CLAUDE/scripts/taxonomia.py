@@ -204,6 +204,17 @@ def tipo_ato(campos):
 # regra: (tema, subtema, [regex sobre assunto+unidade normalizados], peso). 'unidade' = "secao|grupo" (ANVISA) ou natureza (ANPD).
 SETOR = {
     'ANVISA': {'modal': 'Saúde e vigilância sanitária', 'temas': [
+        ('Pessoal e missões', 'Afastamento do país / capacitação', [r'afastamento do pais', r'capacitacao'], 8),
+        ('Pessoal e missões', 'Cargo em comissão / promoção / cessão', [r'cargo em comissao', r'cargos? comissionad', r'promocao de servidores', r'cessao de servidor', r'exoneracao', r'nomeacao'], 8),
+        ('Autorizações excepcionais', 'Importação em caráter excepcional', [r'importacao em carater excepcional', r'importacao excepcional'], 8),
+        ('Autorizações excepcionais', 'Excepcionalidade / esgotamento de estoque', [r'solicitacao de excepcionalidade', r'esgotamento de estoque', r'excepcionalidade'], 8),
+        ('Fiscalização sanitária', 'Cronograma de inspeção', [r'cronograma de inspecao'], 8),
+        ('Acesso à informação (LAI)', 'Recurso LAI (2ª instância)', [r'recurso lai', r'acesso a informacao', r'fala\.?br'], 8),
+        ('Governança e gestão', 'Planejamento estratégico e gestão', [r'planejamento estrategico', r'plano estrategico', r'relatorio de gestao', r'calendario das reunioes', r'data da reuniao', r'alteracao de portaria'], 8),
+        ('Autorizações excepcionais', 'Termo de guarda / exportação excepcional', [r'termo de guarda', r'autorizacao de exportacao', r'liberacao termo'], 8),
+        ('Recursos administrativos', 'Prorrogação de prazo / revisão de ato', [r'prorrogacao de prazo', r'revisao de ato', r'retorno de vista'], 7),
+        ('Governança e gestão', 'Aprovação de ata', [r'^ata da'], 8),
+        ('Governança e gestão', 'Acordos, memorandos e apoio institucional', [r'memorando de entendimento', r'apoio institucional', r'acordo de cooperacao', r'plano anual', r'paint', r'plano diretor', r'planos? de gerenciamento', r'regimento interno', r'projeto de lei', r'decreto legislativo'], 7),
         ('Regulação e normas', 'Abertura de processo regulatório / agenda', [r'abertura de processo administrativo de regulacao', r'agenda regulatoria'], 4),
         ('Regulação e normas', 'Resolução (RDC) / instrução normativa', [r'resolucao da diretoria colegiada', r'\brdc\b', r'instrucao normativa', r'\bin n'], 3),
         ('Regulação e normas', 'Consulta pública / audiência', [r'consulta publica', r'audiencia publica'], 4),

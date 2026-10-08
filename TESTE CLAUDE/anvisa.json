@@ -215,6 +215,7 @@
     "25351.944676/2025-14"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -236,6 +237,7 @@
     "25351.938999/2025-79"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -257,6 +259,7 @@
     "25351.938658/2025-01"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -278,6 +281,7 @@
     "25351.938057/2025-91"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -299,6 +303,7 @@
     "25351.912833/2022-80"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -320,6 +325,7 @@
     "25351.914415/2025-70"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -341,6 +347,7 @@
     "25351.910027/2021-96"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -362,6 +369,9 @@
     "25741.707645/2014-24"
    ],
    "sigilo": false,
+   "cds_citados": [
+    33
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -383,6 +393,7 @@
     "25351.681883/2019-12"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -404,6 +415,9 @@
     "25351.290740/2019-97"
    ],
    "sigilo": false,
+   "cds_citados": [
+    34
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -425,6 +439,9 @@
     "25351.065036/2025-46"
    ],
    "sigilo": false,
+   "cds_citados": [
+    35
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -446,6 +463,9 @@
     "25351.651816/2023-41"
    ],
    "sigilo": false,
+   "cds_citados": [
+    36
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -467,6 +487,7 @@
     "25351.093922/2022-17"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -488,6 +509,9 @@
     "25351.026672/2025-52"
    ],
    "sigilo": false,
+   "cds_citados": [
+    38
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -509,6 +533,9 @@
     "25741.952171/2020-25"
    ],
    "sigilo": false,
+   "cds_citados": [
+    39
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -530,6 +557,9 @@
     "25351.007586/2025-41"
    ],
    "sigilo": false,
+   "cds_citados": [
+    40
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -551,6 +581,9 @@
     "25351.103355/2025-67"
    ],
    "sigilo": false,
+   "cds_citados": [
+    41
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -572,6 +605,9 @@
     "25351.619372/2019-73"
    ],
    "sigilo": false,
+   "cds_citados": [
+    42
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -593,6 +629,9 @@
     "25351.503632/2013-47"
    ],
    "sigilo": false,
+   "cds_citados": [
+    43
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -614,6 +653,7 @@
     "25351.044657/2022-43"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -635,6 +675,7 @@
     "25743.636742/2013-24"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -656,6 +697,9 @@
     "25351.325222/2005-04"
    ],
    "sigilo": false,
+   "cds_citados": [
+    44
+   ],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -677,6 +721,7 @@
     "25351.324474/2022-17"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTPS"
   },
@@ -698,6 +743,7 @@
     "25351.207166/2019-14"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTPS"
   },
@@ -719,6 +765,7 @@
     "25351.509493/2020-41"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTPS"
   },
@@ -740,6 +787,7 @@
     "25351.351761/2022-91"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGBIO"
   },
@@ -761,6 +809,7 @@
     "25351.109991/2021-79"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -782,6 +831,9 @@
     "25351.802816/2024-05"
    ],
    "sigilo": false,
+   "cds_citados": [
+    48
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -803,6 +855,9 @@
     "25351.938160/2023-79"
    ],
    "sigilo": false,
+   "cds_citados": [
+    49
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -824,6 +879,9 @@
     "25743.827001/2024-17"
    ],
    "sigilo": false,
+   "cds_citados": [
+    50
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -845,6 +903,7 @@
     "25351.516193/2022-81"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -866,6 +925,9 @@
     "25351.342223/2018-20"
    ],
    "sigilo": false,
+   "cds_citados": [
+    51
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -887,6 +949,9 @@
     "25761.300407/2017-85"
    ],
    "sigilo": false,
+   "cds_citados": [
+    52
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -908,6 +973,9 @@
     "25759.942929/2023-71"
    ],
    "sigilo": false,
+   "cds_citados": [
+    53
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -929,6 +997,9 @@
     "25752.559298/2017-44"
    ],
    "sigilo": false,
+   "cds_citados": [
+    54
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -950,6 +1021,9 @@
     "25765.576158/2019-53"
    ],
    "sigilo": false,
+   "cds_citados": [
+    55
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -971,6 +1045,9 @@
     "25741.619441/2019-55"
    ],
    "sigilo": false,
+   "cds_citados": [
+    56
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -992,6 +1069,7 @@
     "25757.127356/2018-13"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1013,6 +1091,7 @@
     "25761.648514/2019-88"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1034,6 +1113,7 @@
     "25748.173615/2017-16"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1055,6 +1135,7 @@
     "25755.353357/2020-48"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1076,6 +1157,7 @@
     "25069.196906/2019-75"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -1097,6 +1179,7 @@
     "25351.942715/2025-49"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1118,6 +1201,9 @@
     "25351.949455/2025-32"
    ],
    "sigilo": false,
+   "cds_citados": [
+    61
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1139,6 +1225,9 @@
     "25351.947749/2025-20"
    ],
    "sigilo": false,
+   "cds_citados": [
+    62
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1160,6 +1249,7 @@
     "25351.827230/2024-45"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1181,6 +1271,7 @@
     "25351.917220/2025-81"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGALI"
   },
@@ -1202,6 +1293,7 @@
     "25351.943830/2025-31"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1223,6 +1315,7 @@
     "25351.905856/2025-81"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1244,6 +1337,9 @@
     "25351.904874/2025-45"
    ],
    "sigilo": false,
+   "cds_citados": [
+    66
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1265,6 +1361,7 @@
     "25351.944676/2025-14"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1286,6 +1383,7 @@
     "25351.938999/2025-79"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1307,6 +1405,7 @@
     "25351.938658/2025-01"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1328,6 +1427,7 @@
     "25351.938057/2025-91"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1349,6 +1449,7 @@
     "25351.942496/2025-06"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1370,6 +1471,7 @@
     "25351.908708/2025-18"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1391,6 +1493,7 @@
     "25351.910027/2021-96"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1412,6 +1515,7 @@
     "25351.946224/2025-77"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -1433,6 +1537,9 @@
     "25351.035669/2025-20"
    ],
    "sigilo": false,
+   "cds_citados": [
+    105
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1454,6 +1561,9 @@
     "25351.064011/2025-25"
    ],
    "sigilo": false,
+   "cds_citados": [
+    106
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1475,6 +1585,7 @@
     "25351.031354/2025-11"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1496,6 +1607,9 @@
     "25351.100353/2025-16"
    ],
    "sigilo": false,
+   "cds_citados": [
+    107
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1517,6 +1631,9 @@
     "25351.448543/2024-31"
    ],
    "sigilo": true,
+   "cds_citados": [
+    108
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1538,6 +1655,9 @@
     "25351.588252/2022-12"
    ],
    "sigilo": false,
+   "cds_citados": [
+    109
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1559,6 +1679,9 @@
     "25351.375751/2024-11"
    ],
    "sigilo": true,
+   "cds_citados": [
+    125
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1580,6 +1703,9 @@
     "25351.134530/2024-87"
    ],
    "sigilo": false,
+   "cds_citados": [
+    110
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1601,6 +1727,7 @@
     "25351.681883/2019-12"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1622,6 +1749,7 @@
     "25743.909978/2022-90"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPES"
   },
@@ -1643,6 +1771,7 @@
     "25351.044657/2022-43"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1664,6 +1793,7 @@
     "25743.636742/2013-24"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1685,6 +1815,7 @@
     "25351.418461/2022-08"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -1706,6 +1837,9 @@
     "25351.330317/2022-32"
    ],
    "sigilo": false,
+   "cds_citados": [
+    114
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1727,6 +1861,9 @@
     "25351.657057/2022-40"
    ],
    "sigilo": false,
+   "cds_citados": [
+    115
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -1748,6 +1885,7 @@
     "25351.516193/2022-81"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -1769,6 +1907,9 @@
     "25000.009811/99-65"
    ],
    "sigilo": false,
+   "cds_citados": [
+    116
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -1790,6 +1931,9 @@
     "25351.492417/2022-51"
    ],
    "sigilo": true,
+   "cds_citados": [
+    117
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -1811,6 +1955,9 @@
     "25351.701063/2023-22"
    ],
    "sigilo": false,
+   "cds_citados": [
+    118
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1832,6 +1979,7 @@
     "25761.648514/2019-88"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1853,6 +2001,7 @@
     "25755.353357/2020-48"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1874,6 +2023,9 @@
     "25351.233619/2024-25"
    ],
    "sigilo": false,
+   "cds_citados": [
+    121
+   ],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -1895,6 +2047,7 @@
     "25351.170313/2023-70"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -1916,6 +2069,7 @@
     "25069.196906/2019-75"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -1937,6 +2091,7 @@
     "25351.235511/2025-58"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1958,6 +2113,9 @@
     "25351.178392/2025-29"
    ],
    "sigilo": false,
+   "cds_citados": [
+    122
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1979,6 +2137,9 @@
     "25351.207485/2025-78"
    ],
    "sigilo": false,
+   "cds_citados": [
+    123
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -2000,6 +2161,9 @@
     "25351.072551/2021-59"
    ],
    "sigilo": false,
+   "cds_citados": [
+    124
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -2021,6 +2185,7 @@
     "25351.934696/2023-15"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2042,6 +2207,7 @@
     "25351.905510/2025-82"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2063,6 +2229,7 @@
     "25351.933940/2021-61"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2084,6 +2251,7 @@
     "25351.817407/2024-03"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2105,6 +2273,7 @@
     "25351.063024/2017-15"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2126,6 +2295,7 @@
     "25743.909978/2022-90"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPES"
   },
@@ -2147,6 +2317,9 @@
     "25351.047533/2013-42"
    ],
    "sigilo": false,
+   "cds_citados": [
+    169
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -2168,6 +2341,9 @@
     "25351.088424/2020-91"
    ],
    "sigilo": false,
+   "cds_citados": [
+    170
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2189,6 +2365,7 @@
     "25351.613687/2021-21"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2210,6 +2387,9 @@
     "25351.351761/2022-91"
    ],
    "sigilo": false,
+   "cds_citados": [
+    171
+   ],
    "secao": "3",
    "unidade": "GGBIO"
   },
@@ -2231,6 +2411,9 @@
     "25351.598206/2018-45"
    ],
    "sigilo": false,
+   "cds_citados": [
+    172
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2252,6 +2435,9 @@
     "25351.171665/2018-85"
    ],
    "sigilo": false,
+   "cds_citados": [
+    173
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2273,6 +2459,9 @@
     "25351.105760/2020-13"
    ],
    "sigilo": false,
+   "cds_citados": [
+    174
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -2294,6 +2483,9 @@
     "25351.367957/2018-11"
    ],
    "sigilo": false,
+   "cds_citados": [
+    175
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2315,6 +2507,9 @@
     "25351.303952/2024-17"
    ],
    "sigilo": false,
+   "cds_citados": [
+    176
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2336,6 +2531,9 @@
     "25351.088421/2025-61"
    ],
    "sigilo": false,
+   "cds_citados": [
+    177
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2357,6 +2555,9 @@
     "25351.636745/2020-12"
    ],
    "sigilo": false,
+   "cds_citados": [
+    178
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2378,6 +2579,9 @@
     "25759.076985/2016-67"
    ],
    "sigilo": false,
+   "cds_citados": [
+    179
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -2399,6 +2603,9 @@
     "25351.600304/2022-36"
    ],
    "sigilo": false,
+   "cds_citados": [
+    180
+   ],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -2420,6 +2627,9 @@
     "25351.915754/2025-73"
    ],
    "sigilo": false,
+   "cds_citados": [
+    181
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -2441,6 +2651,9 @@
     "25351.934544/2025-84"
    ],
    "sigilo": false,
+   "cds_citados": [
+    182
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -2462,6 +2675,7 @@
     "25351.942563/2025-84"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "5",
    "unidade": "GGTAB"
   },
@@ -2483,6 +2697,7 @@
     "25351.942503/2025-61"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "5",
    "unidade": "GGTAB"
   },
@@ -2504,6 +2719,7 @@
     "25351.110606/2017-43"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2525,6 +2741,7 @@
     "25351.947659/2025-39"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2546,6 +2763,7 @@
     "25351.945391/2025-09"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2567,6 +2785,7 @@
     "25351.804251/2024-92"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2588,6 +2807,7 @@
     "25351.553215/2009-66"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2609,6 +2829,7 @@
     "25351.929655/2023-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2630,6 +2851,7 @@
     "25351.933104/2021-86"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2651,6 +2873,7 @@
     "25351.914925/2021-13"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2672,6 +2895,7 @@
     "25351.935513/2025-41"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2693,6 +2917,7 @@
     "25351.943582/2018-07"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -2714,6 +2939,7 @@
     "25000.004661/97-03"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -2735,6 +2961,9 @@
     "25351.137407/2017-15"
    ],
    "sigilo": false,
+   "cds_citados": [
+    231
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2756,6 +2985,9 @@
     "25767.071685/2017-12"
    ],
    "sigilo": false,
+   "cds_citados": [
+    232
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -2777,6 +3009,7 @@
     "25351.810703/2023-94"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -2798,6 +3031,7 @@
     "25004.360048/2009-45"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -2819,6 +3053,7 @@
     "25069.648382/2017-"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -2840,6 +3075,7 @@
     "25351.055615/2013-67"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTPS"
   },
@@ -2861,6 +3097,7 @@
     "25351.922124/2023-93"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -2882,6 +3119,7 @@
     "25351.925166/2022-03"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -2903,6 +3141,7 @@
     "25351.925119/2022-51"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -2924,6 +3163,7 @@
     "25351.925165/2022-51"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -2945,6 +3185,7 @@
     "25351.925201/2022-86"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -2966,6 +3207,9 @@
     "25351.334965/2021-87"
    ],
    "sigilo": false,
+   "cds_citados": [
+    234
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2987,6 +3231,9 @@
     "25351.568171/2023-87"
    ],
    "sigilo": false,
+   "cds_citados": [
+    235
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -3008,6 +3255,7 @@
     "25351.922123/2023-49"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3029,6 +3277,7 @@
     "25351.432813/2021-49"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3050,6 +3299,9 @@
     "25351.877373/2021-55"
    ],
    "sigilo": true,
+   "cds_citados": [
+    237
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3071,6 +3323,9 @@
     "25351.115178/2024-81"
    ],
    "sigilo": false,
+   "cds_citados": [
+    238
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3092,6 +3347,9 @@
     "25351.083875/2025-46"
    ],
    "sigilo": false,
+   "cds_citados": [
+    239
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3113,6 +3371,9 @@
     "25351.480353/2015-58"
    ],
    "sigilo": true,
+   "cds_citados": [
+    240
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3134,6 +3395,9 @@
     "25750.740820/2020-38"
    ],
    "sigilo": false,
+   "cds_citados": [
+    241
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -3155,6 +3419,9 @@
     "25351.282247/2024-61"
    ],
    "sigilo": false,
+   "cds_citados": [
+    242
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3176,6 +3443,9 @@
     "25752.133809/2016-27"
    ],
    "sigilo": false,
+   "cds_citados": [
+    243
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3197,6 +3467,9 @@
     "25351.702367/2021-45"
    ],
    "sigilo": false,
+   "cds_citados": [
+    244
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3218,6 +3491,7 @@
     "25351.034973/2021-26"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -3239,6 +3513,9 @@
     "25351.149659/2019-22"
    ],
    "sigilo": false,
+   "cds_citados": [
+    245
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -3260,6 +3537,9 @@
     "25748.189274/2018-63"
    ],
    "sigilo": false,
+   "cds_citados": [
+    246
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -3281,6 +3561,9 @@
     "25351.445243/2024-08"
    ],
    "sigilo": false,
+   "cds_citados": [
+    247
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3302,6 +3585,7 @@
     "25351.031372/2025-95"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3323,6 +3607,9 @@
     "25351.002768/2024-44"
    ],
    "sigilo": false,
+   "cds_citados": [
+    248
+   ],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -3344,6 +3631,7 @@
     "25351.403469/2024-23"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -3365,6 +3653,9 @@
     "25351.149452/2023-34"
    ],
    "sigilo": false,
+   "cds_citados": [
+    249
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -3386,6 +3677,9 @@
     "25351.920190/2025-91"
    ],
    "sigilo": false,
+   "cds_citados": [
+    250
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3407,6 +3701,7 @@
     "25351.908611/2025-13"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3428,6 +3723,7 @@
     "25351.938516/2025-36"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3449,6 +3745,9 @@
     "25351.933472/2025-58"
    ],
    "sigilo": true,
+   "cds_citados": [
+    253
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3470,6 +3769,7 @@
     "25351.950284/2025-94"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3491,6 +3791,7 @@
     "25351.949455/2025-32"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3512,6 +3813,9 @@
     "25351.929719/2025-31"
    ],
    "sigilo": false,
+   "cds_citados": [
+    256
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3533,6 +3837,7 @@
     "25351.903985/2026-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3554,6 +3859,7 @@
     "25351.940823/2025-87"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "7",
    "unidade": "GGFIS"
   },
@@ -3575,6 +3881,7 @@
     "25351.907256/2019-17"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3596,6 +3903,7 @@
     "25351.947659/2025-39"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3617,6 +3925,7 @@
     "25351.945391/2025-09"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3638,6 +3947,7 @@
     "25351.553215/2009-66"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3659,6 +3969,7 @@
     "25351.901595/2017-10"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3680,6 +3991,7 @@
     "25351.907583/2026-90"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3701,6 +4013,7 @@
     "25351.822962/2024-49"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3722,6 +4035,7 @@
     "25351907936/2026-51"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3743,6 +4057,7 @@
     "25351.935513/2025-41"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3764,6 +4079,7 @@
     "25351.943582/2018-07"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3785,6 +4101,7 @@
     "25351.946936/2025-96"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -3806,6 +4123,7 @@
     "25000.004661/97-03"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -3827,6 +4145,9 @@
     "25351.505545/2020-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    292
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -3848,6 +4169,7 @@
     "25351.810703/2023-94"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -3869,6 +4191,7 @@
     "25004.360048/2009-45"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -3890,6 +4213,7 @@
     "25069.648382/2017-"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -3911,6 +4235,7 @@
     "25351.055615/2013-67"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTPS"
   },
@@ -3932,6 +4257,7 @@
     "25351.925166/2022-03"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3953,6 +4279,7 @@
     "25351.925119/2022-51"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3974,6 +4301,7 @@
     "25351.925165/2022-51"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3995,6 +4323,7 @@
     "25351.925201/2022-86"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -4016,6 +4345,9 @@
     "25351.124472/2016-46"
    ],
    "sigilo": true,
+   "cds_citados": [
+    293
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4037,6 +4369,7 @@
     "25351.034863/2021-64"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4058,6 +4391,9 @@
     "25752.279473/2019-84"
    ],
    "sigilo": false,
+   "cds_citados": [
+    294
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4079,6 +4415,7 @@
     "25752.567962/2012-02"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4100,6 +4437,9 @@
     "25351.091017/2020-61"
    ],
    "sigilo": false,
+   "cds_citados": [
+    296
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4121,6 +4461,9 @@
     "25351.470242/2017-64"
    ],
    "sigilo": true,
+   "cds_citados": [
+    297
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4142,6 +4485,9 @@
     "25351.848461/2021-40"
    ],
    "sigilo": false,
+   "cds_citados": [
+    298
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4163,6 +4509,9 @@
     "25743.792223/2018-63"
    ],
    "sigilo": false,
+   "cds_citados": [
+    299
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4184,6 +4533,9 @@
     "25741.812785/2018-51"
    ],
    "sigilo": false,
+   "cds_citados": [
+    300
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4205,6 +4557,7 @@
     "25351.360132/2024-14"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4226,6 +4579,7 @@
     "25351.171561/2024-19"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4247,6 +4601,9 @@
     "25351.192189/2023-01"
    ],
    "sigilo": false,
+   "cds_citados": [
+    301
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4268,6 +4625,7 @@
     "25351.111831/2013-27"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -4289,6 +4647,7 @@
     "25351.403469/2024-23"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -4310,6 +4669,7 @@
     "25351.950284/2025-94"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4331,6 +4691,9 @@
     "25351.925350/2025-98"
    ],
    "sigilo": false,
+   "cds_citados": [
+    302
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4352,6 +4715,9 @@
     "25351.948595/2025-93"
    ],
    "sigilo": false,
+   "cds_citados": [
+    303
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4373,6 +4739,7 @@
     "25351.207485/2025-78"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4394,6 +4761,7 @@
     "25351.903985/2026-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4415,6 +4783,7 @@
     "25351.900083/2025-46"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -4436,6 +4805,7 @@
     "25351.948613/2025-37"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -4457,6 +4827,7 @@
     "25351.943544/2025-75"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -4478,6 +4849,7 @@
     "25351.009486/2022-14"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -4499,6 +4871,7 @@
     "25004.360197/2008-90"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -4520,6 +4893,9 @@
     "25752.054071/2016-65"
    ],
    "sigilo": false,
+   "cds_citados": [
+    349
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4541,6 +4917,9 @@
     "25351.015740/2025-58"
    ],
    "sigilo": false,
+   "cds_citados": [
+    350
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4562,6 +4941,7 @@
     "25351.382766/2020-02"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4583,6 +4963,9 @@
     "25748.116020/2017-03"
    ],
    "sigilo": false,
+   "cds_citados": [
+    351
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4604,6 +4987,7 @@
     "25069.532298/2019-77"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -4625,6 +5009,9 @@
     "25351.238908/2021-78"
    ],
    "sigilo": false,
+   "cds_citados": [
+    352
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4646,6 +5033,9 @@
     "25351.165666/2020-13"
    ],
    "sigilo": false,
+   "cds_citados": [
+    353
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4667,6 +5057,7 @@
     "25351.418461/2022-08"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -4688,6 +5079,7 @@
     "25351.109991/2021-79"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -4709,6 +5101,9 @@
     "25351.060283/2020-41"
    ],
    "sigilo": true,
+   "cds_citados": [
+    354
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4730,6 +5125,9 @@
     "25351.788437/2021-44"
    ],
    "sigilo": false,
+   "cds_citados": [
+    355
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4751,6 +5149,7 @@
     "25069.115521/2020-59"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4772,6 +5171,9 @@
     "25351.253183/2019-23"
    ],
    "sigilo": false,
+   "cds_citados": [
+    356
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4793,6 +5195,9 @@
     "25351.175737/2025-92"
    ],
    "sigilo": false,
+   "cds_citados": [
+    357
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -4814,6 +5219,9 @@
     "25767.070731/2019-08"
    ],
    "sigilo": false,
+   "cds_citados": [
+    358
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4835,6 +5243,9 @@
     "25750.298982/2020-60"
    ],
    "sigilo": false,
+   "cds_citados": [
+    359
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4856,6 +5267,7 @@
     "25351.933472/2025-58"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4877,6 +5289,9 @@
     "25351.920618/2025-03"
    ],
    "sigilo": false,
+   "cds_citados": [
+    360
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4898,6 +5313,9 @@
     "25351.905497/2026-42"
    ],
    "sigilo": false,
+   "cds_citados": [
+    361
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4919,6 +5337,9 @@
     "25351.904007/2026-91"
    ],
    "sigilo": false,
+   "cds_citados": [
+    362
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4940,6 +5361,7 @@
     "25351.910111/2025-33"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4961,6 +5383,9 @@
     "25351.942523/2025-32"
    ],
    "sigilo": false,
+   "cds_citados": [
+    363
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4982,6 +5407,9 @@
     "25351.908040/2026-90"
    ],
    "sigilo": true,
+   "cds_citados": [
+    364
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5003,6 +5431,9 @@
     "25351.907794/2026-22"
    ],
    "sigilo": false,
+   "cds_citados": [
+    365
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5024,6 +5455,7 @@
     "25351.944723/2025-20"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5045,6 +5477,7 @@
     "25351.910342/2022-02"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "5",
    "unidade": "GGFIS"
   },
@@ -5066,6 +5499,7 @@
     "25351.912958/2026-33"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5087,6 +5521,7 @@
     "25351.928808/2021-37"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5108,6 +5543,7 @@
     "25351.940843/2025-58"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5129,6 +5565,7 @@
     "25351.911129/2026-33"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5150,6 +5587,7 @@
     "25351.918546/2025-26"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5171,6 +5609,7 @@
     "25351.819090/2024-31"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5192,6 +5631,7 @@
     "25351.911351/2026-36"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5213,6 +5653,7 @@
     "25351.941488/2025-34"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5234,6 +5675,9 @@
     "25351.957998/2020-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    425
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5255,6 +5699,9 @@
     "25351.424452/2024-18"
    ],
    "sigilo": false,
+   "cds_citados": [
+    426
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5276,6 +5723,9 @@
     "25351.424457/2024-32"
    ],
    "sigilo": false,
+   "cds_citados": [
+    427
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5297,6 +5747,7 @@
     "25351.480353/2015-58"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5318,6 +5769,9 @@
     "25351.174383/2020-54"
    ],
    "sigilo": false,
+   "cds_citados": [
+    429
+   ],
    "secao": "3",
    "unidade": "GGTOX"
   },
@@ -5339,6 +5793,7 @@
     "25351.805591/2024-31"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -5360,6 +5815,7 @@
     "25351.171561/2024-19"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5381,6 +5837,9 @@
     "25351.378629/2017-42"
    ],
    "sigilo": false,
+   "cds_citados": [
+    430
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5402,6 +5861,9 @@
     "25351.924064/2021-81"
    ],
    "sigilo": false,
+   "cds_citados": [
+    431
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5423,6 +5885,9 @@
     "25351.415849/2024-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    432
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5444,6 +5909,9 @@
     "25351.415853/2024-79"
    ],
    "sigilo": false,
+   "cds_citados": [
+    433
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5465,6 +5933,9 @@
     "25351.415851/2024-80"
    ],
    "sigilo": false,
+   "cds_citados": [
+    434
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5486,6 +5957,9 @@
     "25351.415848/2024-66"
    ],
    "sigilo": false,
+   "cds_citados": [
+    435
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5507,6 +5981,7 @@
     "25351.933472/2025-58"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5528,6 +6003,9 @@
     "25351.908327/2026-10"
    ],
    "sigilo": false,
+   "cds_citados": [
+    437
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5549,6 +6027,9 @@
     "25351.940455/2025-77"
    ],
    "sigilo": false,
+   "cds_citados": [
+    438
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5570,6 +6051,7 @@
     "25351.909338/2026-17"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5591,6 +6073,9 @@
     "25351.910111/2025-33"
    ],
    "sigilo": false,
+   "cds_citados": [
+    439
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5612,6 +6097,7 @@
     "25351.178392/2025-29"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5633,6 +6119,7 @@
     "25351.907824/2025-10"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5654,6 +6141,7 @@
     "25351.948594/2025-49"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5675,6 +6163,7 @@
     "25351.935160/2025-89"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5696,6 +6185,7 @@
     "25351.902322/2022-50"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5717,6 +6207,7 @@
     "25351.548852/2009-10"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5738,6 +6229,7 @@
     "25351.905510/2025-82"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -5759,6 +6251,7 @@
     "25000.004661/97-03"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -5780,6 +6273,7 @@
     "25351.055615/2013-67"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTPS"
   },
@@ -5801,6 +6295,7 @@
     "25351.925166/2022-03"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -5822,6 +6317,7 @@
     "25351.925119/2022-51"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -5843,6 +6339,7 @@
     "25351.925165/2022-51"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -5864,6 +6361,7 @@
     "25351.925201/2022-86"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -5885,6 +6383,9 @@
     "25351.630934/2019-30"
    ],
    "sigilo": true,
+   "cds_citados": [
+    457
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5906,6 +6407,9 @@
     "25351.900318/2021-76"
    ],
    "sigilo": false,
+   "cds_citados": [
+    458
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5927,6 +6431,7 @@
     "25351.451313/2024-59"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5948,6 +6453,7 @@
     "25351.039776/2025-27"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -5969,6 +6475,9 @@
     "25351.218427/2019-21"
    ],
    "sigilo": false,
+   "cds_citados": [
+    459
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5990,6 +6499,9 @@
     "25351.621149/2019-96"
    ],
    "sigilo": false,
+   "cds_citados": [
+    460
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6011,6 +6523,7 @@
     "25351.848461/2021-40"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6032,6 +6545,9 @@
     "25752.232325/2017-55"
    ],
    "sigilo": false,
+   "cds_citados": [
+    461
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6053,6 +6569,7 @@
     "25741.812785/2018-51"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6074,6 +6591,7 @@
     "25351.192189/2023-01"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6095,6 +6613,7 @@
     "25351.403469/2024-23"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -6116,6 +6635,7 @@
     "25351.940166/2025-78"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6137,6 +6657,9 @@
     "25351.912540/2026-26"
    ],
    "sigilo": true,
+   "cds_citados": [
+    462
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6158,6 +6681,9 @@
     "25351.932836/2025-82"
    ],
    "sigilo": true,
+   "cds_citados": [
+    463
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6179,6 +6705,9 @@
     "25351.948595/2025-93"
    ],
    "sigilo": false,
+   "cds_citados": [
+    464
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6200,6 +6729,7 @@
     "25351.940166/2025-78"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6221,6 +6751,7 @@
     "25351.933421/2022-83"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6242,6 +6773,7 @@
     "25351.921428/2020-91"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6263,6 +6795,7 @@
     "25351.900871/2026-13"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6284,6 +6817,7 @@
     "25351.938053/2025-11"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6305,6 +6839,7 @@
     "25351.903405/2026-90"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6326,6 +6861,7 @@
     "25351.806836/2024-47"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6347,6 +6883,7 @@
     "25351.918751/2022-49"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6368,6 +6905,7 @@
     "25351.451313/2024-59"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6389,6 +6927,7 @@
     "25757.225325/2017-24"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6410,6 +6949,7 @@
     "25759.844572/2016-13"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6431,6 +6971,7 @@
     "25351.039776/2025-27"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -6452,6 +6993,9 @@
     "25351.602089/2021-27"
    ],
    "sigilo": false,
+   "cds_citados": [
+    508
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6473,6 +7017,7 @@
     "25351.034863/2021-64"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6494,6 +7039,9 @@
     "25351.034898/2021-01"
    ],
    "sigilo": true,
+   "cds_citados": [
+    510
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6515,6 +7063,9 @@
     "25351.217973/2019-45"
    ],
    "sigilo": false,
+   "cds_citados": [
+    511
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6536,6 +7087,7 @@
     "25351.034973/2021-26"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6557,6 +7109,7 @@
     "25351.046625/2025-25"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -6578,6 +7131,9 @@
     "25351.543442/2019-13"
    ],
    "sigilo": false,
+   "cds_citados": [
+    512
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6599,6 +7155,9 @@
     "25351.671994/2017-41"
    ],
    "sigilo": true,
+   "cds_citados": [
+    513
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6620,6 +7179,9 @@
     "25759.900718/2016-00"
    ],
    "sigilo": false,
+   "cds_citados": [
+    514
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6641,6 +7203,9 @@
     "25764.710091/2018-11"
    ],
    "sigilo": false,
+   "cds_citados": [
+    515
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6662,6 +7227,7 @@
     "25759.193930/2017-61"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6683,6 +7249,9 @@
     "25351.911284/2026-50"
    ],
    "sigilo": false,
+   "cds_citados": [
+    516
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6704,6 +7273,9 @@
     "25351.906240/2026-16"
    ],
    "sigilo": false,
+   "cds_citados": [
+    517
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6725,6 +7297,7 @@
     "25351.931738/2025-28"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6746,6 +7319,9 @@
     "25351.934085/2025-39"
    ],
    "sigilo": false,
+   "cds_citados": [
+    518
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6767,6 +7343,9 @@
     "25351.941147/2025-69"
    ],
    "sigilo": false,
+   "cds_citados": [
+    519
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6788,6 +7367,7 @@
     "25351.908040/2026-90"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6809,6 +7389,7 @@
     "25351.907794/2026-22"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6830,6 +7411,7 @@
     "25351.933421/2022-83"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6851,6 +7433,7 @@
     "25351.948953/2025-68"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6872,6 +7455,7 @@
     "25351.911009/2026-36"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6893,6 +7477,7 @@
     "25351.908199/2026-12"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6914,6 +7499,7 @@
     "25351.823918/2024-56"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -6935,6 +7521,7 @@
     "25351.451313/2024-59"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6956,6 +7543,7 @@
     "25757.225325/2017-24"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6977,6 +7565,7 @@
     "25759.844572/2016-13"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6998,6 +7587,7 @@
     "25351.039776/2025-27"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -7019,6 +7609,9 @@
     "25351.671617/2017-10"
    ],
    "sigilo": true,
+   "cds_citados": [
+    554
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7040,6 +7633,7 @@
     "25351.788437/2021-44"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7061,6 +7655,9 @@
     "25351.050197/2019-97"
    ],
    "sigilo": false,
+   "cds_citados": [
+    556
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7082,6 +7679,9 @@
     "25351.998325/2020-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    557
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7103,6 +7703,7 @@
     "25351.253183/2019-23"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7124,6 +7725,7 @@
     "25351.192189/2023-01"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7145,6 +7747,9 @@
     "25759.234285/2020-09"
    ],
    "sigilo": false,
+   "cds_citados": [
+    560
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -7166,6 +7771,9 @@
     "25759.751962/2018-26"
    ],
    "sigilo": false,
+   "cds_citados": [
+    561
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -7187,6 +7795,9 @@
     "25765.568139/2019-53"
    ],
    "sigilo": false,
+   "cds_citados": [
+    562
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -7208,6 +7819,9 @@
     "25351.903765/2023-49"
    ],
    "sigilo": true,
+   "cds_citados": [
+    563
+   ],
    "secao": "3",
    "unidade": "GGPES"
   },
@@ -7229,6 +7843,9 @@
     "25351.940657/2023-57"
    ],
    "sigilo": false,
+   "cds_citados": [
+    564
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7250,6 +7867,9 @@
     "25351.912861/2026-21"
    ],
    "sigilo": false,
+   "cds_citados": [
+    565
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7271,6 +7891,7 @@
     "25351.906135/2026-79"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7292,6 +7913,9 @@
     "25351.904605/2026-60"
    ],
    "sigilo": false,
+   "cds_citados": [
+    566
+   ],
    "secao": "4",
    "unidade": "GGMED"
   },
@@ -7313,6 +7937,7 @@
     "25351.801122/2024-42"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGALI"
   },
@@ -7334,6 +7959,9 @@
     "25351.903608/2026-86"
    ],
    "sigilo": false,
+   "cds_citados": [
+    568
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7355,6 +7983,7 @@
     "25351.903985/2026-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7376,6 +8005,9 @@
     "25351.935965/2025-22"
    ],
    "sigilo": false,
+   "cds_citados": [
+    569
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7397,6 +8029,9 @@
     "25351.944275/2025-64"
    ],
    "sigilo": false,
+   "cds_citados": [
+    570
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7418,6 +8053,7 @@
     "25351.911765/2026-65"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7439,6 +8075,7 @@
     "25351.907794/2026-22"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7460,6 +8097,7 @@
     "25351.946224/2025-77"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7481,6 +8119,7 @@
     "25351.909215/2020-91"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7502,6 +8141,7 @@
     "25351.812831/2024-53"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7523,6 +8163,7 @@
     "25351.906893/2024-25"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7544,6 +8185,7 @@
     "25351.905510/2025-82"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7565,6 +8207,7 @@
     "25351.916948/2023-24"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7586,6 +8229,7 @@
     "25351.948952/2025-13"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7607,6 +8251,7 @@
     "25351.930463/2025-13"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7628,6 +8273,7 @@
     "25351.804251/2024-92"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7649,6 +8295,7 @@
     "25351.917665/2026-42"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7670,6 +8317,7 @@
     "25351.551855/2011-31"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7691,6 +8339,7 @@
     "25351.923117/2019-22"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -7712,6 +8361,9 @@
     "25351.421492/2024-08"
    ],
    "sigilo": false,
+   "cds_citados": [
+    640
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7733,6 +8385,9 @@
     "25351.657412/2021-08"
    ],
    "sigilo": false,
+   "cds_citados": [
+    641
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7754,6 +8409,9 @@
     "25351.196631/2018-01"
    ],
    "sigilo": false,
+   "cds_citados": [
+    642
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7775,6 +8433,9 @@
     "25351.115568/2020-27"
    ],
    "sigilo": true,
+   "cds_citados": [
+    643
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7796,6 +8457,9 @@
     "25351.158455/2025-21"
    ],
    "sigilo": false,
+   "cds_citados": [
+    644
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7817,6 +8481,7 @@
     "25351.031354/2025-11"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7838,6 +8503,7 @@
     "25351.031372/2025-95"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7859,6 +8525,7 @@
     "25351.063024/2017-15"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7880,6 +8547,9 @@
     "25351.058161/2025-08"
    ],
    "sigilo": false,
+   "cds_citados": [
+    646
+   ],
    "secao": "3",
    "unidade": "GGCOS"
   },
@@ -7901,6 +8571,9 @@
     "25351.801246/2024-28"
    ],
    "sigilo": false,
+   "cds_citados": [
+    647
+   ],
    "secao": "3",
    "unidade": "GGPES"
   },
@@ -7922,6 +8595,9 @@
     "25351.719685/2018-40"
    ],
    "sigilo": true,
+   "cds_citados": [
+    648
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7943,6 +8619,9 @@
     "25351.097603/2020-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    649
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7964,6 +8643,9 @@
     "25351.273399/2023-91"
    ],
    "sigilo": false,
+   "cds_citados": [
+    650
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7985,6 +8667,9 @@
     "25748.405541/2017-63"
    ],
    "sigilo": false,
+   "cds_citados": [
+    651
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -8006,6 +8691,9 @@
     "25759.746989/2019-88"
    ],
    "sigilo": false,
+   "cds_citados": [
+    652
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -8027,6 +8715,9 @@
     "25351.330484/2024-45"
    ],
    "sigilo": false,
+   "cds_citados": [
+    654
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -8048,6 +8739,9 @@
     "25351.331292/2024-56"
    ],
    "sigilo": false,
+   "cds_citados": [
+    655
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -8069,6 +8763,9 @@
     "25351.331293/2024-09"
    ],
    "sigilo": false,
+   "cds_citados": [
+    656
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -8090,6 +8787,9 @@
     "25351.330432/2024-79"
    ],
    "sigilo": false,
+   "cds_citados": [
+    657
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -8111,6 +8811,9 @@
     "25351.330603/2024-60"
    ],
    "sigilo": false,
+   "cds_citados": [
+    658
+   ],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -8132,6 +8835,9 @@
     "25752.692627/2018-49"
    ],
    "sigilo": false,
+   "cds_citados": [
+    659
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -8153,6 +8859,9 @@
     "25752.328984/2016-12"
    ],
    "sigilo": false,
+   "cds_citados": [
+    660
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -8174,6 +8883,9 @@
     "25752.487117/2017-71"
    ],
    "sigilo": false,
+   "cds_citados": [
+    661
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -8195,6 +8907,9 @@
     "25351.582348/2022-77"
    ],
    "sigilo": false,
+   "cds_citados": [
+    662
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -8216,6 +8931,7 @@
     "25351.792548/2023-17"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGALI"
   },
@@ -8237,6 +8953,9 @@
     "25351.156649/2023-20"
    ],
    "sigilo": false,
+   "cds_citados": [
+    663
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -8258,6 +8977,9 @@
     "25351.909457/2025-99"
    ],
    "sigilo": false,
+   "cds_citados": [
+    664
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -8279,6 +9001,9 @@
     "25351.950475/2025-56"
    ],
    "sigilo": false,
+   "cds_citados": [
+    665
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8300,6 +9025,9 @@
     "25351.929721/2025-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    666
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8321,6 +9049,9 @@
     "25351.901965/2026-18"
    ],
    "sigilo": false,
+   "cds_citados": [
+    667
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8342,6 +9073,7 @@
     "25351.906135/2026-79"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8363,6 +9095,7 @@
     "25351.912861/2026-21"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGMED"
   },
@@ -8384,6 +9117,9 @@
     "25351.808224/2024-99"
    ],
    "sigilo": true,
+   "cds_citados": [
+    668
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8405,6 +9141,9 @@
     "25351.914285/2026-56"
    ],
    "sigilo": true,
+   "cds_citados": [
+    669
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8426,6 +9165,9 @@
     "25351.910611/2026-56"
    ],
    "sigilo": false,
+   "cds_citados": [
+    670
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8447,6 +9189,9 @@
     "25351.929920/2025-19"
    ],
    "sigilo": false,
+   "cds_citados": [
+    671
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8468,6 +9213,9 @@
     "25351.947061/2025-40"
    ],
    "sigilo": false,
+   "cds_citados": [
+    672
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8489,6 +9237,9 @@
     "25351.914646/2026-64"
    ],
    "sigilo": true,
+   "cds_citados": [
+    673
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8510,6 +9261,9 @@
     "25351.949679/2025-44"
    ],
    "sigilo": false,
+   "cds_citados": [
+    674
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8531,6 +9285,9 @@
     "25351.948698/2025-53"
    ],
    "sigilo": false,
+   "cds_citados": [
+    675
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8552,6 +9309,9 @@
     "25351.911497/2026-81"
    ],
    "sigilo": false,
+   "cds_citados": [
+    676
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8573,6 +9333,7 @@
     "25351.903985/2026-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8594,6 +9355,7 @@
     "25351.912858/2026-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8615,6 +9377,7 @@
     "25351.950284/2025-94"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8636,6 +9399,9 @@
     "25351.943694/2025-89"
    ],
    "sigilo": true,
+   "cds_citados": [
+    677
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8657,6 +9423,9 @@
     "25351.905497/2026-42"
    ],
    "sigilo": false,
+   "cds_citados": [
+    678
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8678,6 +9447,7 @@
     "25351.907794/2026-22"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -8699,6 +9469,9 @@
     "25752.081283/2005-23"
    ],
    "sigilo": false,
+   "cds_citados": [
+    680
+   ],
    "secao": "5",
    "unidade": "GGPAF"
   },
@@ -8720,6 +9493,7 @@
     "25351.903985/2026-15"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "5",
    "unidade": "GGFIS"
   },
@@ -8741,6 +9515,7 @@
     "25351.900083/2025-46"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -8762,6 +9537,7 @@
     "25351.951728/2025-17"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -8783,6 +9559,7 @@
     "25351.901365/2026-41"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -8804,6 +9581,7 @@
     "25351.909334/2026-39"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "2",
    "unidade": ""
   },
@@ -8825,6 +9603,9 @@
     "25351.024973/2025-41"
    ],
    "sigilo": false,
+   "cds_citados": [
+    722
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8846,6 +9627,9 @@
     "25351.279938/2019-10"
    ],
    "sigilo": false,
+   "cds_citados": [
+    723
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8867,6 +9651,9 @@
     "25351.370898/2024-15"
    ],
    "sigilo": false,
+   "cds_citados": [
+    724
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8888,6 +9675,9 @@
     "25351.494176/2019-80"
    ],
    "sigilo": false,
+   "cds_citados": [
+    725
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8909,6 +9699,9 @@
     "25755.559787/2020-71"
    ],
    "sigilo": false,
+   "cds_citados": [
+    726
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8930,6 +9723,9 @@
     "25351.565433/2020-17"
    ],
    "sigilo": false,
+   "cds_citados": [
+    727
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8951,6 +9747,9 @@
     "25351.298465/2017-91"
    ],
    "sigilo": false,
+   "cds_citados": [
+    728
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -8972,6 +9771,7 @@
     "25351.395053/2024-24"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -8993,6 +9793,9 @@
     "25351.276238/2020-15"
    ],
    "sigilo": false,
+   "cds_citados": [
+    729
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -9014,6 +9817,9 @@
     "25351.158758/2017-38"
    ],
    "sigilo": false,
+   "cds_citados": [
+    730
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -9035,6 +9841,9 @@
     "25351.654913/2018-29"
    ],
    "sigilo": true,
+   "cds_citados": [
+    731
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -9056,6 +9865,7 @@
     "25351.424402/2021-80"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -9077,6 +9887,7 @@
     "25351.424360/2021-87"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -9098,6 +9909,7 @@
     "25351.432822/2021-30"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -9119,6 +9931,9 @@
     "25757.127459/2018-75"
    ],
    "sigilo": false,
+   "cds_citados": [
+    734
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -9140,6 +9955,9 @@
     "25351.415031/2021-45"
    ],
    "sigilo": false,
+   "cds_citados": [
+    735
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -9161,6 +9979,7 @@
     "25351.046625/2025-25"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "3",
    "unidade": "GGMED"
   },
@@ -9182,6 +10001,9 @@
     "25351.518583/2020-23"
    ],
    "sigilo": false,
+   "cds_citados": [
+    736
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -9203,6 +10025,9 @@
     "25752.297089/2018-82"
    ],
    "sigilo": false,
+   "cds_citados": [
+    737
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -9224,6 +10049,9 @@
     "25752.330738/2018-64"
    ],
    "sigilo": false,
+   "cds_citados": [
+    738
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -9245,6 +10073,9 @@
     "25351.929458/2022-15"
    ],
    "sigilo": true,
+   "cds_citados": [
+    739
+   ],
    "secao": "3",
    "unidade": "GGPES"
   },
@@ -9266,6 +10097,7 @@
     "25351.912861/2026-21"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9287,6 +10119,9 @@
     "25351.910596/2026-46"
    ],
    "sigilo": false,
+   "cds_citados": [
+    740
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9308,6 +10143,9 @@
     "25351.940800/2025-72"
    ],
    "sigilo": false,
+   "cds_citados": [
+    741
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9329,6 +10167,9 @@
     "25351.901969/2026-98"
    ],
    "sigilo": false,
+   "cds_citados": [
+    742
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9350,6 +10191,9 @@
     "25351.920595/2026-18"
    ],
    "sigilo": false,
+   "cds_citados": [
+    743
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9371,6 +10215,9 @@
     "25351.904614/2023-16"
    ],
    "sigilo": false,
+   "cds_citados": [
+    744
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9392,6 +10239,9 @@
     "25351.920594/2026-65"
    ],
    "sigilo": false,
+   "cds_citados": [
+    745
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9413,6 +10263,7 @@
     "25351.910611/2026-56"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9434,6 +10285,7 @@
     "25351.912858/2026-15"
    ],
    "sigilo": false,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9455,6 +10307,7 @@
     "25351.950284/2025-94"
    ],
    "sigilo": true,
+   "cds_citados": [],
    "secao": "4",
    "unidade": "GGFIS"
   }
@@ -29187,14 +30040,6 @@
   ]
  ],
  "nao_feito": [
-  [
-   "ANVISA",
-   "Circuitos Deliberativos (CD) citados nas atas",
-   "extratos/votos dos CDs ficam em páginas separadas",
-   "NÃO FEITO",
-   "A ata cita o CD e o voto escrito; o voto individual do CD não foi lido",
-   "Coletar extratos dos circuitos"
-  ],
   [
    "ANVISA",
    "Votos escritos (PDF por ROP)",

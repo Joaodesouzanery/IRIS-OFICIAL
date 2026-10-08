@@ -93,12 +93,13 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
         for b in bul:
             if re.match(r'^-\s*ROP\s*\d+', b): atual = atual.replace(b, ' ')
         imp = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]', atual)))
+        cds_cit = sorted({int(x.replace('.', '')) for x in re.findall(r'Circuito Deliberativo\s+n[ºo]?\s*([\d.]+)/2026', atual)})
         ausv = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?esteve ausente d[ae] vota[çc][ãa]o', atual)))
         proferiu = quem(' '.join(re.findall(r'(?:O|A) Diretor[a]?[^.]{0,50}?proferiu o Voto', atual)))
         if re.search(r'Item renumerado de [\d.]+ para [\d.]+', btxt): Qd.setdefault(tag + '_renumerados', []).append(item); continue
         if item.startswith('1.'): Qd.setdefault(tag + '_informes', []).append(item); continue
         deli = item; pr = procs[0] if procs else f'{tag}-{item}'
-        d = {'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'item_n': item, 'relator': rel[0] if rel else None, 'interessado': recte or area, 'assunto': (ass or ('Recurso administrativo — ' + recte if recte else ''))[:600], 'resultado': res_, 'voto_doc': (re.search(r'Voto n[ºo]\s*([\d/A-Za-z.]+)', decis) or [None, ''])[1], 'decisao_texto': (decis or (vis[-1] if vis else ''))[:1500], 'tipo_item': tipo, 'area': area, 'processos_do_item': procs, 'sigilo': item in sig_hdr, 'secao': item.split('.')[0], 'unidade': grp_at.get(i, '')}
+        d = {'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'item_n': item, 'relator': rel[0] if rel else None, 'interessado': recte or area, 'assunto': (ass or ('Recurso administrativo — ' + recte if recte else ''))[:600], 'resultado': res_, 'voto_doc': (re.search(r'Voto n[ºo]\s*([\d/A-Za-z.]+)', decis) or [None, ''])[1], 'decisao_texto': (decis or (vis[-1] if vis else ''))[:1500], 'tipo_item': tipo, 'area': area, 'processos_do_item': procs, 'sigilo': item in sig_hdr, 'cds_citados': cds_cit, 'secao': item.split('.')[0], 'unidade': grp_at.get(i, '')}
         D.append(d)
         for n in [x for x in pres]:
             base = {'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'diretor': n}
@@ -168,8 +169,7 @@ cob = [['ANVISA', 'Reuniões 2026 com ata lida', len(R), f'ROP {sorted(int(t[3:]
        ['ANVISA', 'Reuniões realizadas (pauta ou votos) sem ata', sum(1 for p in pend if p[3].startswith('Realizada')), ', '.join(p[1] for p in pend if p[3].startswith('Realizada'))],
        ['ANVISA', 'Itens de informe (seção I, sem votação)', sum(len(v) for k, v in Qd.items() if k.endswith('_informes')), 'ficam fora: não são deliberação'],
        ['ANVISA', 'Itens renumerados (duplicata de outro item)', sum(len(v) for k, v in Qd.items() if k.endswith('_renumerados')), 'ficam fora: contados no número novo']]
-nf = [['ANVISA', 'Circuitos Deliberativos (CD) citados nas atas', 'extratos/votos dos CDs ficam em páginas separadas', 'NÃO FEITO', 'A ata cita o CD e o voto escrito; o voto individual do CD não foi lido', 'Coletar extratos dos circuitos'],
-      ['ANVISA', 'Votos escritos (PDF por ROP)', f'{len(inv["votos_pastas"])} pastas de votos não lidas', 'NÃO FEITO', 'Só a ata foi lida; os votos escritos detalham divergências', 'Ler os PDFs de voto das ROP com maioria'],
+nf = [['ANVISA', 'Votos escritos (PDF por ROP)', f'{len(inv["votos_pastas"])} pastas de votos não lidas', 'NÃO FEITO', 'Só a ata foi lida; os votos escritos detalham divergências', 'Ler os PDFs de voto das ROP com maioria'],
       ['ANVISA', 'Votos já proferidos em itens com vista', f'{sum(1 for v in V if v["voto"].startswith("SEM VOTO AINDA"))} linhas "sem voto ainda"', 'NÃO FEITO', 'A ata cita os votos já dados antes da vista ("dos votos da Diretora X, do Diretor Y"); hoje todos os não-relator ficam "sem voto ainda"', 'Registrar esses votos como nominais'],
       ['ANVISA', 'Decisões compostas (I/II/III)', f'{sum(1 for d in D if "decisão composta" in d["resultado"])} itens', 'LIMITE DO MODELO', 'O resultado guarda a 1ª ação; as demais estão no texto da decisão', 'Listar todas as ações'],
       ['ANVISA', 'Itens com maioria sem vencido identificável', f'{sum(1 for v in V if v["proveniencia"] == "REVISAR")} linhas REVISAR', 'NÃO FEITO' if any(v['proveniencia'] == 'REVISAR' for v in V) else 'SEM CASOS', 'Ata diz "por maioria" sem nomear', 'Ler o voto escrito']]

@@ -77,7 +77,7 @@ Q.append(['ANPD', 'Votos por circuito = 4 diretores (1 por membro do colegiado)'
 Q[-1][4] = 'OK' if Q[-1][2] == Q[-1][3] else 'DIVERGE'
 cob = [['ANPD', 'Circuitos deliberativos 2026 na página oficial', len(cds), 'cd-01 a cd-%02d, sem buraco' % max(nums)],
        ['ANPD', 'Circuitos com ata lida', len(cds) - len(pend), f'{sum(1 for a in assin.values() if a["ocr"])} por OCR (cd-02, cd-04)'],
-       ['ANPD', 'Reuniões deliberativas marcadas em 2026', 9, 'todas canceladas por "ausência de processos" (página de avisos); a deliberação ocorre por circuito']]
+       ['ANPD', 'Reuniões deliberativas marcadas em 2026 (página oficial de avisos, modificada em 11/09/2026)', 9, 'todas 9 constam como "Reunião cancelada em função de ausência de processos" (23/01 a 18/09); a deliberação ocorre só por circuito. Conferido na página em 08/10/2026; reuniões após 18/09 não constam da página']]
 nf = [['ANPD', 'Voto individual em divergência', f'{sum(1 for v in V if v["proveniencia"] == "REVISAR")} linhas REVISAR', 'NÃO FEITO' if any(v['proveniencia'] == 'REVISAR' for v in V) else 'SEM CASOS', 'Quem não acompanhou o relator só consta no PDF de votos', 'Ler o PDF de votos nos circuitos com "não acompanha" > 0']]
 json.dump({'reunioes': R, 'deliberacoes': D, 'votos': V, 'qualidade': Q, 'cobertura': cob, 'pendencias': pend, 'nao_feito': nf, 'diretores': [n for n, _ in ROST], 'colegiado': 'Conselho Diretor', 'meses_nota': ''}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(len(R), 'circuitos', len(D), 'delib', len(V), 'votos'); [print(q) for q in Q]
