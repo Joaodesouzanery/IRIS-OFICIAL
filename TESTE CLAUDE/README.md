@@ -1,17 +1,35 @@
-# TESTE CLAUDE
-Coleta independente de votos 2026 (ANM, ANTT, ARTESP). Entregáveis: `votos_2026.xlsx` e `ANALISE_MELHORIAS.md`.
+# TESTE CLAUDE — votos de diretores de agências reguladoras, 2026
 
-## Status (06/10/2026)
-- **ANM**: ROP 81–88 lidas (87 por OCR). Ata da 89ª ainda não publicada.
-- **ANTT**: 64 reuniões deliberativas de 2026 baixadas (406 documentos, hashes em `manifesto_antt.json`).
-- **ARTESP**: 56 de 56 atas lidas; conciliadas com 708 PDFs de Deliberação (erros da fonte registrados). Rede liberada para `admin.cms.sp.gov.br` e `*.token.awswaf.com`.
-- Rede: os três hosts agora respondem HTTP 200 (o bloqueio do proxy anterior acabou).
+Coleta **independente** (não usa o pipeline do IRIS) dos votos individuais dos diretores em 2026, com proveniência por voto
+(`nominal` = a fonte nomeia · `inferido` = "por unanimidade" vira 1 voto ACOMPANHOU por presente · `REVISAR` = indeterminado, com motivo).
 
-## Reproduzir
-`python3 -I scripts/antt_inventario.py antt_inventario.json` → `antt_baixar.py` → `pdftotext` → `antt_parse.py` / `anm_parse.py` → `build_xlsx.py`.
-`fonte/` e `texto_antt/` não são versionados (122 MB); os hashes estão no manifesto.
-`scripts/artesp_fetch.cjs` → `artesp_inventario.py`; `anm_parse.py` lê `texto/*.txt` (atas via subpágina `atas-reunioes-ordinarias`).
+**Entregáveis:** `votos_2026.xlsx` (10 abas), `votos_2026.html` (dashboard offline idêntico à planilha; paridade checada no build),
+Artifact publicado a partir de `votos_2026_artifact.html` (gitignored). Documentos: `ANALISE_MELHORIAS.md` (fases e decisões),
+`MAPEAMENTO_AGENCIAS.md` (status por agência), `QA_COMPLETUDE.md` (reconciliação), `MONITORAMENTO.md` (desenho, não implantado).
 
-Reprodução: `./rodar_tudo.sh`. Conferência manual: `AMOSTRA.md`. Resultado e lacunas: `ANALISE_MELHORIAS.md`.
+## Agências (status em 08/10/2026)
+| Agência | Estado | Observação |
+|---|---|---|
+| ANM, ANTT, ARTESP | feito | atas em PDF; ANTT: 99 PDFs de voto em imagem não lidos; ANM: 5 linhas REVISAR |
+| ANPD, ANVISA, ANP, ANTAQ | feito + QA + auditoria | ANVISA inclui Circuitos Deliberativos |
+| ANATEL, ANEEL | feito + varredura 100% + auditoria | ANEEL: atas em PDF bloqueadas (Cloudflare) → presença inferida, ~68% dos votos inferidos |
+| ANA | inventário e pendências; **0 votos** | PDFs em `arquivos.ana.gov.br`, recusado pelo egress do ambiente (liberar o host e rodar `scripts/ana_rodar.sh`) |
+| ANS | ver `MAPEAMENTO_AGENCIAS.md` | |
+| ANCINE, ANAC | não iniciadas | ANAC por último (captcha) |
 
-Temas: `scripts/taxonomia.py`, `scripts/temas.py`, `temas_ia/` (revisão por IA validada), `AMOSTRA_TEMAS.md`. Pendências da fonte: aba "Pendências da fonte".
+## Como funciona
+- `scripts/agencias.py` é o **registro único** das agências com pipeline próprio (arquivo JSON, URL da fonte, regra de ex-membros fora dos totais).
+  Agência nova = uma linha lá + `SETOR[...]` em `scripts/taxonomia.py` + `scripts/<sg>_rodar.sh` chamado em `rodar_tudo.sh`. Arquivo JSON ausente = agência ignorada.
+- Cada agência tem `scripts/<sg>_baixar/parse/auditoria`, `<sg>.json` (reunioes, deliberacoes, votos, qualidade, cobertura, pendencias, nao_feito, diretores, colegiado), `manifesto_<sg>.json` (sha256) e `<sg>_inventario.json`.
+- `scripts/build_xlsx.py` consolida tudo; `scripts/temas.py` classifica modal/tema/subtema; `scripts/build_html.py` gera o dashboard e falha se divergir do xlsx;
+  `scripts/qa_completude.py [--online]` reconcilia listagem oficial × manifesto × JSON × planilha (sai com erro se algo divergir sem pendência explicada).
+
+## Reproduzir / atualizar (incremental)
+`./rodar_tudo.sh` (cada agência baixa só o que falta; a fonte publica → o voto entra). Chromium/Playwright em `/opt/node-tools` para ANTAQ, ANATEL, ARTESP, ANEEL.
+`fonte/` e `texto_*/` não são versionados em parte (peso); os hashes estão nos manifestos.
+
+## Abas da planilha
+LEIA-ME · Painel · Votos · Deliberações · Matriz de votos · Diretores · **Faltam na fonte** (todo documento/dado que a fonte não publicou ou bloqueou, com URL e votos afetados) · Controle (cobertura, qualidade, FEITO/PARCIAL/LIMITE) · Reuniões · Apoio.
+
+## Limites conhecidos
+Voto individual em decisões unânimes é **inferido** (só vídeo mostraria cada voto; fora de escopo); votos escritos em PDF imagem (ANTT) não lidos; presença da ANEEL inferida; ANA sem PDFs no ambiente. Tudo isso aparece na aba Controle e em `nao_feito` de cada JSON.
