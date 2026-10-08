@@ -76,7 +76,7 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
                 vencidos = quem(vv[1]) if vv else []
                 if vv and re.search(r'Relator(?:a)?(?! à época)', vv[1]): vencidos = list(dict.fromkeys(vencidos + rel))
                 vexterno = bool(vv) and not vencidos
-            runs = [x for x in re.findall(r'([A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A |OS |AS )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', resto) if x.split()[0] not in ('DIRE', 'ANVISA', 'DIRETOR', 'PRESIDENTE', 'DIRETORA', 'SEI')]
+            runs = [x for x in re.findall(r'((?:N[ÃA]O )?[A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A |OS |AS )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', resto) if x.split()[0] not in ('DIRE', 'ANVISA', 'DIRETOR', 'PRESIDENTE', 'DIRETORA', 'SEI')]
             acao = runs[0] if runs else ''
             res_ = f"{acao or 'DECIDIU'} — {'POR UNANIMIDADE' if modo == 'unanimidade' else 'POR MAIORIA' if modo == 'maioria' else (modo or 'SEM MODO NA ATA')}".strip()
             if re.search(r'\bII\)', decis): res_ += ' [decisão composta: ver texto]'

@@ -28,7 +28,7 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
     ref = re.search(r'(ROP|REP)\s*(\d+)/(\d{4}),?\s*item\s*([\d.]+)', assunto_cd); tipo = re.sub(r',?\s*(ROP|REP).*$', '', assunto_cd).strip()
     rel_m = re.search(r'(?:Diretor(?:a)? )?Relator(?:a)?:\s*(.*?)\s*(?:Recorrente|Processos?:|Ementa|Interessad|CNPJ|Assunto|Posição)', t)
     rel = quem(rel_m[1]) if rel_m else []
-    tn = t.replace('–', '-')
+    tn = re.sub(r'(\d{4})-\s+(\d{2})\b', r'\1-\2', t.replace('–', '-'))
     proc = re.findall(r'(?<!\d)(\d{5}\.\d{6}/\d{4}-\d{2}|\d{5}\.\d{6}/\d{2}-\d{2}|\d{5}\.\d{6}/\d{2,4})(?!\d)', (re.search(r'Processos?(?: SEI| alvos? de revis[ãa]o)?\s*:(.*?)(?:Expediente|Ementa|Recorrente|[ÁA]rea:|Posi[çc][ãa]o|INFORMA)', tn) or [None, ''])[1]) or re.findall(r'Processo n[ºo]\s*(\d{5}\.\d{6}/\d{4}-\d{2})', tn)[:1]
     proc = list(dict.fromkeys(proc)); recte = (re.search(r'Recorrente:\s*(.*?)\s*CNPJ', t) or [None, ''])[1]
     ementa = (re.search(r'Ementa:\s*(.*?)\s*(?:Posi[çc][ãa]o|Diretoria:|[ÁA]rea:|INFORMA)', t) or [None, ''])[1]
@@ -62,7 +62,7 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
         if not decis:
             md = re.search(r'(- ?A Diretoria Colegiada.*)', base_dec); decis = md[1][:1500] if md else ''
     unan = 'unanimidade' in decis[:80]; maior = 'maioria' in decis[:80]
-    acao = (re.search(r'(?:por unanimidade|por maioria)[^A-ZÇÃÕ]{0,120}?([A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', decis) or [None, ''])[1]
+    acao = (re.search(r'(?:por unanimidade|por maioria)[^A-ZÇÃÕ]{0,120}?((?:N[ÃA]O )?[A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', decis) or [None, ''])[1]
     if re.search(r'Retirado de pauta', decis) and 'A Diretoria Colegiada decidiu' not in decis: res_, tipo_item = 'RETIRADO DE PAUTA', 'Retirada de pauta'
     elif not decis: res_, tipo_item = 'SEM DECISÃO NO EXTRATO (revisar)', 'Deliberação'
     else: res_, tipo_item = f"{acao or 'DECIDIU'} — {'POR UNANIMIDADE' if unan else 'POR MAIORIA' if maior else 'SEM MODO'}", 'Deliberação'
