@@ -1,0 +1,461 @@
+{
+ "govbr:AtaRED31.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaRED31.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaRED31.pdf",
+  "sha256": "e745c95cb31e910f8ff18f635758ce209ad6525a6bfed838c1554590c329891f",
+  "ok": true
+ },
+ "govbr:AtaRED32.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaRED32.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaRED32.pdf",
+  "sha256": "7af981b3db78d8f76501f17b76e946cd5a115177c03ad91e6a22aea00696eac0",
+  "ok": true
+ },
+ "govbr:AtaRED33.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaRED33.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaRED33.pdf",
+  "sha256": "1ce4cc8be0803e74f153859a35f1c91710a6aeb178075e76e7fcfff48bc31cfc",
+  "ok": true
+ },
+ "govbr:AtaROD595.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaROD595.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaROD595.pdf",
+  "sha256": "4c3799aea800e621e79b3b91125d5f433bf4cca81a4ef7308a2f5f11dcd765ca",
+  "ok": true
+ },
+ "govbr:AtaROD597.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaROD597.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaROD597.pdf",
+  "sha256": "e48f90daebd59fd52390921aa17650cbf0762889420611bd047989e020cc3f3f",
+  "ok": true
+ },
+ "govbr:AtaROD599.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaROD599.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaROD599.pdf",
+  "sha256": "649d6693aef88f662374f64e44e4fa11bcf6f4d4337515e91554170c2da66817",
+  "ok": true
+ },
+ "govbr:AtaROD610.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaROD610.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaROD610.pdf",
+  "sha256": "6e08f47802a47d7861597d0ecf106cad70ab236d738c7f6b0878bdb12e8e7cb5",
+  "ok": true
+ },
+ "govbr:AtaROD615.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaROD615.pdf",
+  "arquivo": "fonte/antaq/govbr/AtaROD615.pdf",
+  "sha256": "8d36bc5a513638a17fe626e77063ef3335603a8da21af9d99cc0ae32d422c35e",
+  "ok": true
+ },
+ "govbr:Calendrio12026vs2.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/Calendrio12026vs2.pdf",
+  "arquivo": "fonte/antaq/govbr/Calendrio12026vs2.pdf",
+  "sha256": "637d6c7fae59bf606898526c081432289fb5721369a4f9a997ca754b3f6c82b1",
+  "ok": true
+ },
+ "govbr:Calendrio2semestre2026.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/Calendrio2semestre2026.pdf",
+  "arquivo": "fonte/antaq/govbr/Calendrio2semestre2026.pdf",
+  "sha256": "00469471204279d0d93eebaed99fdb1d23474608301f0483345d653a30e742d1",
+  "ok": true
+ },
+ "govbr:PautaROD596.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/PautaROD596.pdf",
+  "arquivo": "fonte/antaq/govbr/PautaROD596.pdf",
+  "sha256": "2234a32285ffe973ca0a50c20daaf2e5434d0c06f0b9e57c09b807fc9a268dc4",
+  "ok": true
+ },
+ "govbr:PautaROD597.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/PautaROD597.pdf",
+  "arquivo": "fonte/antaq/govbr/PautaROD597.pdf",
+  "sha256": "150d03a15d30e5640cd7ec729ba674f4694d6b66ff5f371ffb05d1fc63859a55",
+  "ok": true
+ },
+ "govbr:PautaROD601.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/PautaROD601.pdf",
+  "arquivo": "fonte/antaq/govbr/PautaROD601.pdf",
+  "sha256": "625ca1f83fcd3b04fc85e38d64167219da4f7343fd037083b23f5cb59187c6d9",
+  "ok": true
+ },
+ "govbr:PautaROD602.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/PautaROD602.pdf",
+  "arquivo": "fonte/antaq/govbr/PautaROD602.pdf",
+  "sha256": "b6b573a1d20fcca5651eee213c1157ab7b466ed404685da9dd9c2efb74b1ca32",
+  "ok": true
+ },
+ "govbr:PautaROD608.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/PautaROD608.pdf",
+  "arquivo": "fonte/antaq/govbr/PautaROD608.pdf",
+  "sha256": "a7f1ee0cca343fd43d00d13b83ddee2e47fea3566ac3aaa2dea256da79900eaf",
+  "ok": true
+ },
+ "govbr:Pautade33RED.pdf": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/Pautade33RED.pdf",
+  "arquivo": "fonte/antaq/govbr/Pautade33RED.pdf",
+  "sha256": "d84da1be71a323cda9738deb46766ba6d104e677696578dbb041cbc2737e2f6e",
+  "ok": true
+ },
+ "sophia:ROD616:53762": {
+  "fonte": "sophia",
+  "reuniao": "ROD616",
+  "titulo": "Ata de Reunião de Diretoria 616 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42846",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53762&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53762.pdf",
+  "sha256": "e6d092701b3ae704160bd3f67d581fa5ff4d074784ffa39c53d7c7c5d43f44b9",
+  "ok": true
+ },
+ "sophia:ROD616:53763": {
+  "fonte": "sophia",
+  "reuniao": "ROD616",
+  "titulo": "Ata de Reunião de Diretoria 616 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42846",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53763&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53763.pdf",
+  "sha256": "bf810493be21a7389263d60575dabdbee8e6d9fd83129dca6ce0bddf11575775",
+  "ok": true
+ },
+ "sophia:ROD617:53760": {
+  "fonte": "sophia",
+  "reuniao": "ROD617",
+  "titulo": "Ata de Reunião de Diretoria 617 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42845",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53760&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53760.pdf",
+  "sha256": "e0fe941ae44da005034fd111ea2dce5eba7729f03a74af33b5462dbf811bd9b8",
+  "ok": true
+ },
+ "sophia:ROD617:53761": {
+  "fonte": "sophia",
+  "reuniao": "ROD617",
+  "titulo": "Ata de Reunião de Diretoria 617 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42845",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53761&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53761.pdf",
+  "sha256": "cfd61d83dfadf8b167137ed93e86f1bb678ef6377f4597597280b9d3ec14b811",
+  "ok": true
+ },
+ "sophia:ROD618:53759": {
+  "fonte": "sophia",
+  "reuniao": "ROD618",
+  "titulo": "Ata de Reunião de Diretoria 618 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42844",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53759&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53759.pdf",
+  "sha256": "2c0d6e94a131484bb6a123b354944fa2cac19b61755f2624154d852417749fb0",
+  "ok": true
+ },
+ "sophia:ROD614:53318": {
+  "fonte": "sophia",
+  "reuniao": "ROD614",
+  "titulo": "Ata de Reunião de Diretoria 614 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42486",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53318&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53318.pdf",
+  "sha256": "ebd5d12e220a43f290a0469519a9607c88b109bec24615447a5a24d32a9b4261",
+  "ok": true
+ },
+ "sophia:ROD614:53319": {
+  "fonte": "sophia",
+  "reuniao": "ROD614",
+  "titulo": "Ata de Reunião de Diretoria 614 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42486",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53319&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53319.pdf",
+  "sha256": "6cbf86f92c7966973f9a469fccee68453381fe7cb0fda92c6b45acd7c47a9321",
+  "ok": true
+ },
+ "sophia:ROD615:53320": {
+  "fonte": "sophia",
+  "reuniao": "ROD615",
+  "titulo": "Ata de Reunião de Diretoria 615 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42487",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53320&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53320.pdf",
+  "sha256": "fac39289c8e0bfb583518c18708e6a8c3ec1b9752e95a7e6de365cf9b82f7ce9",
+  "ok": true
+ },
+ "sophia:ROD611:53163": {
+  "fonte": "sophia",
+  "reuniao": "ROD611",
+  "titulo": "Ata de Reunião de Diretoria 611 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42347",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53163&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53163.pdf",
+  "sha256": "b4aa26fc39c1890390da7266073ada70c8bab085e5bc22290754f2f085e1223b",
+  "ok": true
+ },
+ "sophia:ROD611:53164": {
+  "fonte": "sophia",
+  "reuniao": "ROD611",
+  "titulo": "Ata de Reunião de Diretoria 611 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42347",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53164&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53164.pdf",
+  "sha256": "7675d3e9c5ff08b0fa1ed233cf8e1acc3ae29599ef92a3c5322df2d9f2db88ad",
+  "ok": true
+ },
+ "sophia:ROD612:53165": {
+  "fonte": "sophia",
+  "reuniao": "ROD612",
+  "titulo": "Ata de Reunião de Diretoria 612 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42348",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53165&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53165.pdf",
+  "sha256": "96939b2f1af5979e72dad9d3dd0fb150952d6c611ff27be536bd6c04a6365422",
+  "ok": true
+ },
+ "sophia:ROD612:53166": {
+  "fonte": "sophia",
+  "reuniao": "ROD612",
+  "titulo": "Ata de Reunião de Diretoria 612 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42348",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53166&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53166.pdf",
+  "sha256": "3c5b80246c0e998531e1074c1a2ae8b32d29b5398cac22a39615be21e0095369",
+  "ok": true
+ },
+ "sophia:ROD613:53167": {
+  "fonte": "sophia",
+  "reuniao": "ROD613",
+  "titulo": "Ata de Reunião de Diretoria 613 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42349",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53167&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53167.pdf",
+  "sha256": "14268363c84fa1f54fcf67058fcb4a83a55689f9af731c4d5826a7ab41b435a6",
+  "ok": true
+ },
+ "sophia:ROD613:53168": {
+  "fonte": "sophia",
+  "reuniao": "ROD613",
+  "titulo": "Ata de Reunião de Diretoria 613 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42349",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=53168&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/53168.pdf",
+  "sha256": "bdff5526060415cd24353a2b2ba59bebd8479d92d27d20b907004739b4bff276",
+  "ok": true
+ },
+ "sophia:ROD607:52631": {
+  "fonte": "sophia",
+  "reuniao": "ROD607",
+  "titulo": "Ata de Reunião de Diretoria 607 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41912",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52631&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52631.pdf",
+  "sha256": "eae13660da5aa3ac45b4f6a786b9cc920fa2374c71b5f511ce5a9984088acb50",
+  "ok": true
+ },
+ "sophia:ROD607:52632": {
+  "fonte": "sophia",
+  "reuniao": "ROD607",
+  "titulo": "Ata de Reunião de Diretoria 607 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41912",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52632&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52632.pdf",
+  "sha256": "df351b0daad73973e31e8f387455fe141e78127136d8e7493af49b9015425c0d",
+  "ok": true
+ },
+ "sophia:ROD608:52629": {
+  "fonte": "sophia",
+  "reuniao": "ROD608",
+  "titulo": "Ata de Reunião de Diretoria 608 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41911",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52629&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52629.pdf",
+  "sha256": "1ccbeb81d23811aaad748ac8fb41cd225cdb94f094799cc39c3152b766e50a71",
+  "ok": true
+ },
+ "sophia:ROD608:52630": {
+  "fonte": "sophia",
+  "reuniao": "ROD608",
+  "titulo": "Ata de Reunião de Diretoria 608 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41911",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52630&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52630.pdf",
+  "sha256": "b5d04e73e563bd5c8e104e2e8c64eb752bae92b3e8f788e92e4c9eab93e9ad3c",
+  "ok": true
+ },
+ "sophia:ROD610:52633": {
+  "fonte": "sophia",
+  "reuniao": "ROD610",
+  "titulo": "Ata de Reunião de Diretoria 610 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41913",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52633&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52633.pdf",
+  "sha256": "dba011ac2c42f69d418a171c72d456b50f2cfbe515e2e466886d0ced10e170d1",
+  "ok": true
+ },
+ "sophia:ROD610:52634": {
+  "fonte": "sophia",
+  "reuniao": "ROD610",
+  "titulo": "Ata de Reunião de Diretoria 610 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41913",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52634&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52634.pdf",
+  "sha256": "d3caf5ac63b2b1a02718081a4f381dc8f7866258eb1dc7a9710ffe72ad96d9fb",
+  "ok": true
+ },
+ "sophia:ROD605:52321": {
+  "fonte": "sophia",
+  "reuniao": "ROD605",
+  "titulo": "Ata de Reunião de Diretoria 605 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41618",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52321&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52321.pdf",
+  "sha256": "9ed516b4c0d2da2f5249f877bfbaf05349842c47ca7bd8d2224b98486143e8ae",
+  "ok": true
+ },
+ "sophia:ROD605:52322": {
+  "fonte": "sophia",
+  "reuniao": "ROD605",
+  "titulo": "Ata de Reunião de Diretoria 605 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41618",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52322&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52322.pdf",
+  "sha256": "8b40a0008155ae6cf691388223e4a7203935dbbcabb37a6218a8855fb426b203",
+  "ok": true
+ },
+ "sophia:ROD606:52323": {
+  "fonte": "sophia",
+  "reuniao": "ROD606",
+  "titulo": "Ata de Reunião de Diretoria 606 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41619",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52323&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52323.pdf",
+  "sha256": "6fd1869fa66bee932d64ed72fe024f1a9a72bc85605c35286c84f55bdcb1545b",
+  "ok": true
+ },
+ "sophia:ROD606:52324": {
+  "fonte": "sophia",
+  "reuniao": "ROD606",
+  "titulo": "Ata de Reunião de Diretoria 606 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41619",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52324&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52324.pdf",
+  "sha256": "e97b6da68c97ca7b977a24fc24c5fc943d6aa8a1f932cd88b52045b217692274",
+  "ok": true
+ },
+ "sophia:ROD603:52087": {
+  "fonte": "sophia",
+  "reuniao": "ROD603",
+  "titulo": "Ata de Reunião de Diretoria 603 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41409",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52087&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52087.pdf",
+  "sha256": "5d1399dfeb84ebf9ac27b01dae24ae50aac5ba622c63cdd9e242aac110350ba2",
+  "ok": true
+ },
+ "sophia:ROD603:52088": {
+  "fonte": "sophia",
+  "reuniao": "ROD603",
+  "titulo": "Ata de Reunião de Diretoria 603 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41409",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52088&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52088.pdf",
+  "sha256": "83e6dd8bbeb1a533bc5826238c365255f237d27001b4e057fad0e849ed1d95ea",
+  "ok": true
+ },
+ "sophia:ROD604:52089": {
+  "fonte": "sophia",
+  "reuniao": "ROD604",
+  "titulo": "Ata de Reunião de Diretoria 604 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41410",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52089&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52089.pdf",
+  "sha256": "d438cf83a775bdc07f2637f7e422b825c980dec7133eb3f5f36d1872818fc045",
+  "ok": true
+ },
+ "sophia:ROD604:52090": {
+  "fonte": "sophia",
+  "reuniao": "ROD604",
+  "titulo": "Ata de Reunião de Diretoria 604 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41410",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=52090&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/52090.pdf",
+  "sha256": "6ff2ebac4e0f386a8eb6e84f06ad938df98980b9fd2d426864f7cb2f3cce372d",
+  "ok": true
+ },
+ "sophia:ROD602:51858": {
+  "fonte": "sophia",
+  "reuniao": "ROD602",
+  "titulo": "Ata de Reunião de Diretoria 602 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41217",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51858&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51858.pdf",
+  "sha256": "575a31ab030d5133fba5acc760d6b5ffffdd6168da0ddb3280779a019b095521",
+  "ok": true
+ },
+ "sophia:ROD602:51859": {
+  "fonte": "sophia",
+  "reuniao": "ROD602",
+  "titulo": "Ata de Reunião de Diretoria 602 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41217",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51859&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51859.pdf",
+  "sha256": "51c2271656d2befd0e2390b2ef0c6f7a058476fe5a479ebd3d5de19cfaa1fdba",
+  "ok": true
+ },
+ "sophia:ROD600:51684": {
+  "fonte": "sophia",
+  "reuniao": "ROD600",
+  "titulo": "Ata de Reunião de Diretoria 600 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41066",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51684&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51684.pdf",
+  "sha256": "5ad176c5808dfb2f8420375f8507044461bd4d71e14885c9c5be89216d20edf6",
+  "ok": true
+ },
+ "sophia:ROD600:51685": {
+  "fonte": "sophia",
+  "reuniao": "ROD600",
+  "titulo": "Ata de Reunião de Diretoria 600 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41066",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51685&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51685.pdf",
+  "sha256": "79970d7bfae77c5ad257186fa16fcca05145988619f98a0e560f6c52afeac80a",
+  "ok": true
+ },
+ "sophia:ROD601:51686": {
+  "fonte": "sophia",
+  "reuniao": "ROD601",
+  "titulo": "Ata de Reunião de Diretoria 601 - Externa",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41067",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51686&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51686.pdf",
+  "sha256": "966d171cff4b4a0cf37fc7538fa2a6538a6a6282cdc726807f40a0347fcb7929",
+  "ok": true
+ },
+ "sophia:ROD601:51687": {
+  "fonte": "sophia",
+  "reuniao": "ROD601",
+  "titulo": "Ata de Reunião de Diretoria 601 - Interna",
+  "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41067",
+  "download": "https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=51687&tipoMidia=0",
+  "arquivo": "fonte/antaq/sophia/pdf/51687.pdf",
+  "sha256": "33c64e0ebfd865d511b06ac7ce2e1c64c70e92ea7027f3c0f438ff1ed643a253",
+  "ok": true
+ },
+ "govbr:virtuais.html": {
+  "fonte": "gov.br",
+  "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/resultado-das-reunioes-virtuais-da-diretoria-1/",
+  "arquivo": "fonte/antaq/govbr/virtuais.html",
+  "sha256": "e0b6a502a4f6a9ffa85a2dbf2baaf3869985ad965d5e77c272f5e498a6c0bd95",
+  "ok": true
+ }
+}

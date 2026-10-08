@@ -27,8 +27,12 @@ const fs = require('fs');
       const f = `${dest}/${cod}.pdf`;
       if (fs.existsSync(f) && fs.statSync(f).size > 1000) continue;
       for (let t = 0; t < 5; t++) {
-        try { const r = await c.request.get(`https://sophia.antaq.gov.br/Terminal/Busca/Download?codigoArquivo=${cod}&tipoMidia=0`, { timeout: 90000 }); const buf = await r.body();
-          if (r.status() === 200 && buf.slice(0, 4).toString() === '%PDF') { fs.writeFileSync(f, buf); break; } else console.log('falha', cod, r.status(), t); } catch (e) { console.log('erro', cod, String(e).slice(0, 80)); }
+        try {
+          // fetch DENTRO da pagina (mesmo cookie/fingerprint do Chromium); context.request toma 403 do Cloudflare
+          const o = await p.evaluate(async (cod) => { const r = await fetch(`/Terminal/Busca/Download?codigoArquivo=${cod}&tipoMidia=0`, { credentials: 'include' }); const u = new Uint8Array(await r.arrayBuffer()); let s = ''; for (let i = 0; i < u.length; i += 8192) s += String.fromCharCode.apply(null, u.subarray(i, i + 8192)); return { st: r.status, b: btoa(s) }; }, cod);
+          const buf = Buffer.from(o.b, 'base64');
+          if (o.st === 200 && buf.slice(0, 4).toString() === '%PDF') { fs.writeFileSync(f, buf); break; } else console.log('falha', cod, o.st, t);
+        } catch (e) { console.log('erro', cod, String(e).slice(0, 80)); }
         await p.waitForTimeout(2000 * (t + 1));
       }
     }

@@ -1,0 +1,7594 @@
+{
+ "gerado_em": "2026-10-08",
+ "govbr": {
+  "raiz": {
+   "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/",
+   "arquivo": "fonte/antaq/govbr/raiz.html",
+   "bytes": 171249
+  },
+  "atas_pautas": {
+   "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes/",
+   "arquivo": "fonte/antaq/govbr/atas_pautas.html",
+   "bytes": 178663
+  },
+  "virtuais": {
+   "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/resultado-das-reunioes-virtuais-da-diretoria-1/",
+   "arquivo": "fonte/antaq/govbr/virtuais.html",
+   "bytes": 3016952
+  },
+  "api_volto": {
+   "atas-e-pautas-das-reunioes": {
+    "url": "https://www.gov.br/++api++/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes?b_start=0&b_size=3000",
+    "http": "000",
+    "items_total": null
+   },
+   "resultado-das-reunioes-virtuais-da-diretoria-1": {
+    "url": "https://www.gov.br/++api++/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/resultado-das-reunioes-virtuais-da-diretoria-1?b_start=0&b_size=3000",
+    "http": "404",
+    "items_total": null
+   },
+   "(pasta)": {
+    "url": "https://www.gov.br/++api++/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/?b_start=0&b_size=3000",
+    "http": "404",
+    "items_total": null
+   }
+  },
+  "links_pagina_atas": [
+   "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/AtaRED33.pdf",
+   "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/Calendrio12026vs2.pdf",
+   "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/Calendrio2semestre2026.pdf",
+   "https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/Pautade33RED.pdf"
+  ],
+  "links_sophia_pagina": [
+   {
+    "texto": "620ª Reunião Ordinária da Diretoria Colegiada da ANTAQ",
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42861?guid=1790788908022&returnUrl=%2fTerminal%2fresultado%2flistarlegislacao%3fguid%3d1790788908022%26quantidadePaginas%3d1%26codigoRegistro%3d42861%2342861&i=1"
+   },
+   {
+    "texto": "618ª Reunião Ordinária da Diretoria Colegiada da ANTAQ",
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42844?guid=1790172916917&returnUrl=%2fTerminal%2fresultado%2flistarlegislacao%3fguid%3d1790172916917%26quantidadePaginas%3d1%26codigoRegistro%3d42844%2342844&i=1"
+   }
+  ],
+  "sonda_arquivos": {
+   "testados": 98,
+   "existem": [
+    "AtaRED31.pdf",
+    "AtaRED32.pdf",
+    "AtaRED33.pdf",
+    "AtaROD595.pdf",
+    "AtaROD597.pdf",
+    "AtaROD599.pdf",
+    "AtaROD610.pdf",
+    "AtaROD615.pdf",
+    "Calendrio12026vs2.pdf",
+    "Calendrio2semestre2026.pdf",
+    "PautaROD596.pdf",
+    "PautaROD597.pdf",
+    "PautaROD601.pdf",
+    "PautaROD602.pdf",
+    "PautaROD608.pdf",
+    "Pautade33RED.pdf"
+   ]
+  }
+ },
+ "sophia": {
+  "atas": {
+   "ROD600": {
+    "id": 41066,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 600/2026",
+    "assinatura": "13/01/2026",
+    "publicacao": "14/01/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 51684,
+      "titulo": "Ata de Reunião de Diretoria 600 - Externa"
+     },
+     {
+      "codigo": 51685,
+      "titulo": "Ata de Reunião de Diretoria 600 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41066"
+   },
+   "ROD601": {
+    "id": 41067,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 601/2026",
+    "assinatura": "13/01/2026",
+    "publicacao": "14/01/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 51686,
+      "titulo": "Ata de Reunião de Diretoria 601 - Externa"
+     },
+     {
+      "codigo": 51687,
+      "titulo": "Ata de Reunião de Diretoria 601 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41067"
+   },
+   "ROD602": {
+    "id": 41217,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 602/2026",
+    "assinatura": "03/02/2026",
+    "publicacao": "05/02/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 51858,
+      "titulo": "Ata de Reunião de Diretoria 602 - Externa"
+     },
+     {
+      "codigo": 51859,
+      "titulo": "Ata de Reunião de Diretoria 602 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41217"
+   },
+   "ROD603": {
+    "id": 41409,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 603/2026",
+    "assinatura": "10/03/2026",
+    "publicacao": "11/03/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52087,
+      "titulo": "Ata de Reunião de Diretoria 603 - Externa"
+     },
+     {
+      "codigo": 52088,
+      "titulo": "Ata de Reunião de Diretoria 603 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41409"
+   },
+   "ROD604": {
+    "id": 41410,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 604/2026",
+    "assinatura": "10/03/2026",
+    "publicacao": "11/03/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52089,
+      "titulo": "Ata de Reunião de Diretoria 604 - Externa"
+     },
+     {
+      "codigo": 52090,
+      "titulo": "Ata de Reunião de Diretoria 604 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41410"
+   },
+   "ROD605": {
+    "id": 41618,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 605/2026",
+    "assinatura": "08/04/2026",
+    "publicacao": "09/04/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52321,
+      "titulo": "Ata de Reunião de Diretoria 605 - Externa"
+     },
+     {
+      "codigo": 52322,
+      "titulo": "Ata de Reunião de Diretoria 605 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41618"
+   },
+   "ROD606": {
+    "id": 41619,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 606/2026",
+    "assinatura": "08/04/2026",
+    "publicacao": "09/04/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52323,
+      "titulo": "Ata de Reunião de Diretoria 606 - Externa"
+     },
+     {
+      "codigo": 52324,
+      "titulo": "Ata de Reunião de Diretoria 606 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41619"
+   },
+   "ROD607": {
+    "id": 41912,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 607/2026",
+    "assinatura": "08/06/2026",
+    "publicacao": "10/06/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52631,
+      "titulo": "Ata de Reunião de Diretoria 607 - Externa"
+     },
+     {
+      "codigo": 52632,
+      "titulo": "Ata de Reunião de Diretoria 607 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41912"
+   },
+   "ROD608": {
+    "id": 41911,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 608/2026",
+    "assinatura": "08/06/2026",
+    "publicacao": "10/06/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52629,
+      "titulo": "Ata de Reunião de Diretoria 608 - Externa"
+     },
+     {
+      "codigo": 52630,
+      "titulo": "Ata de Reunião de Diretoria 608 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41911"
+   },
+   "ROD610": {
+    "id": 41913,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 610/2026",
+    "assinatura": "08/06/2026",
+    "publicacao": "10/06/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 52633,
+      "titulo": "Ata de Reunião de Diretoria 610 - Externa"
+     },
+     {
+      "codigo": 52634,
+      "titulo": "Ata de Reunião de Diretoria 610 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41913"
+   },
+   "ROD611": {
+    "id": 42347,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 611/2026",
+    "assinatura": "21/07/2026",
+    "publicacao": "22/07/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53163,
+      "titulo": "Ata de Reunião de Diretoria 611 - Externa"
+     },
+     {
+      "codigo": 53164,
+      "titulo": "Ata de Reunião de Diretoria 611 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42347"
+   },
+   "ROD612": {
+    "id": 42348,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 612/2026",
+    "assinatura": "21/07/2026",
+    "publicacao": "22/07/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53165,
+      "titulo": "Ata de Reunião de Diretoria 612 - Externa"
+     },
+     {
+      "codigo": 53166,
+      "titulo": "Ata de Reunião de Diretoria 612 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42348"
+   },
+   "ROD613": {
+    "id": 42349,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 613/2026",
+    "assinatura": "21/07/2026",
+    "publicacao": "22/07/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53167,
+      "titulo": "Ata de Reunião de Diretoria 613 - Externa"
+     },
+     {
+      "codigo": 53168,
+      "titulo": "Ata de Reunião de Diretoria 613 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42349"
+   },
+   "ROD614": {
+    "id": 42486,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 614/2026",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53318,
+      "titulo": "Ata de Reunião de Diretoria 614 - Interna"
+     },
+     {
+      "codigo": 53319,
+      "titulo": "Ata de Reunião de Diretoria 614 - Externa"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42486"
+   },
+   "ROD615": {
+    "id": 42487,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 615/2026",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53320,
+      "titulo": "Ata de Reunião de Diretoria 615 - Externa"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42487"
+   },
+   "ROD616": {
+    "id": 42846,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 616/2026",
+    "assinatura": "21/09/2026",
+    "publicacao": "22/09/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53762,
+      "titulo": "Ata de Reunião de Diretoria 616 - Externa"
+     },
+     {
+      "codigo": 53763,
+      "titulo": "Ata de Reunião de Diretoria 616 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42846"
+   },
+   "ROD617": {
+    "id": 42845,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 617/2026",
+    "assinatura": "21/09/2026",
+    "publicacao": "22/09/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53760,
+      "titulo": "Ata de Reunião de Diretoria 617 - Externa"
+     },
+     {
+      "codigo": 53761,
+      "titulo": "Ata de Reunião de Diretoria 617 - Interna"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42845"
+   },
+   "ROD618": {
+    "id": 42844,
+    "titulo": "Ata de Reunião Ordinária da Diretoria 618/2026",
+    "assinatura": "21/09/2026",
+    "publicacao": "22/09/2026",
+    "processo": null,
+    "arquivos": [
+     {
+      "codigo": 53759,
+      "titulo": "Ata de Reunião de Diretoria 618 - Externa"
+     }
+    ],
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42844"
+   }
+  },
+  "atas_contador_declarado": 26,
+  "atas_registros_carregados": 26,
+  "atas_outros_registros": [
+   "Acórdão 426/2026",
+   "Deliberação DG 48/2026",
+   "Deliberação PAS 3 - GRERE/2026",
+   "Deliberação PAS 35 - GREBL/2026",
+   "Deliberação PAS 35 - GREBL/2026",
+   "Ementa de Acórdão 426/2026",
+   "Pauta de Reunião Ordinária da Diretoria 614/2026",
+   "Portaria DG 576/2026"
+  ],
+  "acordaos": {
+   "1": {
+    "id": 41151,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41151",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51774,
+      "titulo": "Acórdão 1"
+     }
+    ]
+   },
+   "2": {
+    "id": 41116,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41116",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51740,
+      "titulo": "Acórdão 2"
+     }
+    ]
+   },
+   "3": {
+    "id": 41143,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41143",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51767,
+      "titulo": "Acórdão 3"
+     }
+    ]
+   },
+   "4": {
+    "id": 41120,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41120",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51744,
+      "titulo": "Acórdão 4"
+     }
+    ]
+   },
+   "5": {
+    "id": 41136,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41136",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51760,
+      "titulo": "Acórdão 5"
+     }
+    ]
+   },
+   "6": {
+    "id": 41115,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41115",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51739,
+      "titulo": "Acórdão 6"
+     }
+    ]
+   },
+   "7": {
+    "id": 41155,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41155",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51781,
+      "titulo": "Acórdão 7"
+     }
+    ]
+   },
+   "8": {
+    "id": 41149,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41149",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51772,
+      "titulo": "Acórdão 8"
+     }
+    ]
+   },
+   "9": {
+    "id": 41158,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41158",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51786,
+      "titulo": "Acórdão 9"
+     }
+    ]
+   },
+   "10": {
+    "id": 41128,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41128",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51752,
+      "titulo": "Acórdão 10"
+     }
+    ]
+   },
+   "11": {
+    "id": 41118,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41118",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51742,
+      "titulo": "Acórdão 11"
+     }
+    ]
+   },
+   "12": {
+    "id": 41132,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41132",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51756,
+      "titulo": "Acórdão 12"
+     }
+    ]
+   },
+   "13": {
+    "id": 41124,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41124",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51748,
+      "titulo": "Acórdão 13"
+     }
+    ]
+   },
+   "14": {
+    "id": 41133,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41133",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51757,
+      "titulo": "Acórdão 14"
+     }
+    ]
+   },
+   "15": {
+    "id": 41152,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41152",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51775,
+      "titulo": "Acórdão 15"
+     }
+    ]
+   },
+   "16": {
+    "id": 41156,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41156",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51782,
+      "titulo": "Acórdão 16"
+     }
+    ]
+   },
+   "17": {
+    "id": 41125,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41125",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51749,
+      "titulo": "Acórdão 17"
+     }
+    ]
+   },
+   "18": {
+    "id": 41114,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41114",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51738,
+      "titulo": "Acórdão 18"
+     }
+    ]
+   },
+   "19": {
+    "id": 41131,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41131",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51755,
+      "titulo": "Acórdão 19"
+     }
+    ]
+   },
+   "20": {
+    "id": 41139,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41139",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51763,
+      "titulo": "Acórdão 20"
+     }
+    ]
+   },
+   "21": {
+    "id": 41159,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41159",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51792,
+      "titulo": "Acórdão 21"
+     }
+    ]
+   },
+   "22": {
+    "id": 41113,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41113",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51737,
+      "titulo": "Acórdão 22"
+     }
+    ]
+   },
+   "23": {
+    "id": 41130,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41130",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51754,
+      "titulo": "Acórdão 23"
+     }
+    ]
+   },
+   "24": {
+    "id": 41117,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41117",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51741,
+      "titulo": "Acórdão 24"
+     }
+    ]
+   },
+   "25": {
+    "id": 41127,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41127",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51751,
+      "titulo": "Acórdão 25"
+     }
+    ]
+   },
+   "26": {
+    "id": 41142,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41142",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51766,
+      "titulo": "Acórdão 26"
+     }
+    ]
+   },
+   "27": {
+    "id": 41148,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41148",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51777,
+      "titulo": "Acórdão 27"
+     }
+    ]
+   },
+   "28": {
+    "id": 41146,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41146",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51770,
+      "titulo": "Acórdão 28"
+     }
+    ]
+   },
+   "29": {
+    "id": 41129,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41129",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51753,
+      "titulo": "Acórdão 29"
+     }
+    ]
+   },
+   "30": {
+    "id": 41141,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41141",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51765,
+      "titulo": "Acórdão 30"
+     }
+    ]
+   },
+   "31": {
+    "id": 41135,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41135",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51759,
+      "titulo": "Acórdão 31"
+     }
+    ]
+   },
+   "32": {
+    "id": 41112,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41112",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51736,
+      "titulo": "Acórdão 32"
+     }
+    ]
+   },
+   "33": {
+    "id": 41109,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41109",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51733,
+      "titulo": "Acórdão 33"
+     }
+    ]
+   },
+   "34": {
+    "id": 41123,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41123",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51747,
+      "titulo": "Acórdão 34"
+     }
+    ]
+   },
+   "35": {
+    "id": 41134,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41134",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51758,
+      "titulo": "Acórdão 35"
+     }
+    ]
+   },
+   "36": {
+    "id": 41153,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41153",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51776,
+      "titulo": "Acórdão 36"
+     }
+    ]
+   },
+   "37": {
+    "id": 41138,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41138",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51762,
+      "titulo": "Acórdão 37"
+     }
+    ]
+   },
+   "38": {
+    "id": 41119,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41119",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51743,
+      "titulo": "Acórdão 38"
+     }
+    ]
+   },
+   "39": {
+    "id": 41145,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41145",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51769,
+      "titulo": "Acórdão 39"
+     }
+    ]
+   },
+   "40": {
+    "id": 41111,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41111",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51735,
+      "titulo": "Acórdão 40"
+     }
+    ]
+   },
+   "41": {
+    "id": 41147,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41147",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51771,
+      "titulo": "Acórdão 41"
+     }
+    ]
+   },
+   "42": {
+    "id": 41126,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41126",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51750,
+      "titulo": "Acórdão 42"
+     }
+    ]
+   },
+   "43": {
+    "id": 41150,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41150",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51773,
+      "titulo": "Acórdão 43"
+     }
+    ]
+   },
+   "44": {
+    "id": 41140,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41140",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51764,
+      "titulo": "Acórdão 44"
+     }
+    ]
+   },
+   "46": {
+    "id": 41110,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41110",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51734,
+      "titulo": "Acórdão 46"
+     }
+    ]
+   },
+   "47": {
+    "id": 41137,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41137",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51761,
+      "titulo": "Acórdão 47"
+     }
+    ]
+   },
+   "48": {
+    "id": 41157,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41157",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51784,
+      "titulo": "Acórdão 48"
+     }
+    ]
+   },
+   "49": {
+    "id": 41154,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41154",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51780,
+      "titulo": "Acórdão 49"
+     }
+    ]
+   },
+   "50": {
+    "id": 41144,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41144",
+    "assinatura": "28/01/2026",
+    "publicacao": "29/01/2026",
+    "arquivos": [
+     {
+      "codigo": 51768,
+      "titulo": "Acórdão 50"
+     }
+    ]
+   },
+   "51": {
+    "id": 41241,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41241",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51907,
+      "titulo": "Acórdão 51"
+     }
+    ]
+   },
+   "52": {
+    "id": 41242,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41242",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51908,
+      "titulo": "Acórdão 52"
+     }
+    ]
+   },
+   "53": {
+    "id": 41243,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41243",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51909,
+      "titulo": "Acórdão 53"
+     }
+    ]
+   },
+   "54": {
+    "id": 41244,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41244",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51910,
+      "titulo": "Acórdão 54"
+     }
+    ]
+   },
+   "55": {
+    "id": 41245,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41245",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51911,
+      "titulo": "Acórdão 55"
+     }
+    ]
+   },
+   "56": {
+    "id": 41246,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41246",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51912,
+      "titulo": "Acórdão 56"
+     }
+    ]
+   },
+   "57": {
+    "id": 41247,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41247",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51914,
+      "titulo": "Acórdão 57"
+     }
+    ]
+   },
+   "58": {
+    "id": 41248,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41248",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51915,
+      "titulo": "Acórdão 58"
+     }
+    ]
+   },
+   "59": {
+    "id": 41249,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41249",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51916,
+      "titulo": "Acórdão 59"
+     }
+    ]
+   },
+   "60": {
+    "id": 41250,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41250",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51918,
+      "titulo": "Acórdão 60"
+     }
+    ]
+   },
+   "61": {
+    "id": 41251,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41251",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51919,
+      "titulo": "Acórdão 61"
+     }
+    ]
+   },
+   "62": {
+    "id": 41252,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41252",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51920,
+      "titulo": "Acórdão 62"
+     }
+    ]
+   },
+   "63": {
+    "id": 41268,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41268",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51936,
+      "titulo": "Acórdão 63"
+     }
+    ]
+   },
+   "64": {
+    "id": 41271,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41271",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51939,
+      "titulo": "Acórdão 64"
+     }
+    ]
+   },
+   "65": {
+    "id": 41260,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41260",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51928,
+      "titulo": "Acórdão 65"
+     }
+    ]
+   },
+   "66": {
+    "id": 41270,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41270",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51938,
+      "titulo": "Acórdão 66"
+     }
+    ]
+   },
+   "67": {
+    "id": 41263,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41263",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51931,
+      "titulo": "Acórdão 67"
+     }
+    ]
+   },
+   "68": {
+    "id": 41264,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41264",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51932,
+      "titulo": "Acórdão 68"
+     }
+    ]
+   },
+   "69": {
+    "id": 41255,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41255",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51923,
+      "titulo": "Acórdão 69"
+     }
+    ]
+   },
+   "70": {
+    "id": 41269,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41269",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51937,
+      "titulo": "Acórdão 70"
+     }
+    ]
+   },
+   "71": {
+    "id": 41257,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41257",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51925,
+      "titulo": "Acórdão 71"
+     }
+    ]
+   },
+   "72": {
+    "id": 41266,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41266",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51934,
+      "titulo": "Acórdão 72"
+     }
+    ]
+   },
+   "73": {
+    "id": 41273,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41273",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51941,
+      "titulo": "Acórdão 73"
+     }
+    ]
+   },
+   "74": {
+    "id": 41258,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41258",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51926,
+      "titulo": "Acórdão 74"
+     }
+    ]
+   },
+   "75": {
+    "id": 41229,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41229",
+    "assinatura": "10/02/2026",
+    "publicacao": "11/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51885,
+      "titulo": "Acórdão 75"
+     }
+    ]
+   },
+   "76": {
+    "id": 41227,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41227",
+    "assinatura": "10/02/2026",
+    "publicacao": "11/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51883,
+      "titulo": "Acórdão 76"
+     }
+    ]
+   },
+   "77": {
+    "id": 41226,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41226",
+    "assinatura": "10/02/2026",
+    "publicacao": "11/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51882,
+      "titulo": "Acórdão 77"
+     }
+    ]
+   },
+   "78": {
+    "id": 41228,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41228",
+    "assinatura": "10/02/2026",
+    "publicacao": "11/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51884,
+      "titulo": "Acórdão 78"
+     }
+    ]
+   },
+   "79": {
+    "id": 41272,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41272",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51940,
+      "titulo": "Acórdão 79"
+     }
+    ]
+   },
+   "80": {
+    "id": 41259,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41259",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51927,
+      "titulo": "Acórdão 80"
+     }
+    ]
+   },
+   "81": {
+    "id": 41254,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41254",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51922,
+      "titulo": "Acórdão 81"
+     }
+    ]
+   },
+   "82": {
+    "id": 41261,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41261",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51929,
+      "titulo": "Acórdão 82"
+     }
+    ]
+   },
+   "83": {
+    "id": 41262,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41262",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51930,
+      "titulo": "Acórdão 83"
+     }
+    ]
+   },
+   "84": {
+    "id": 41265,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41265",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51933,
+      "titulo": "Acórdão 84"
+     }
+    ]
+   },
+   "85": {
+    "id": 41253,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41253",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51921,
+      "titulo": "Acórdão 85"
+     }
+    ]
+   },
+   "86": {
+    "id": 41256,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41256",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51924,
+      "titulo": "Acórdão 86"
+     }
+    ]
+   },
+   "87": {
+    "id": 41267,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41267",
+    "assinatura": "11/02/2026",
+    "publicacao": "13/02/2026",
+    "arquivos": [
+     {
+      "codigo": 51935,
+      "titulo": "Acórdão 87"
+     }
+    ]
+   },
+   "88": {
+    "id": 41353,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41353",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52029,
+      "titulo": "Acórdão 88"
+     }
+    ]
+   },
+   "89": {
+    "id": 41346,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41346",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52022,
+      "titulo": "Acórdão 89"
+     }
+    ]
+   },
+   "90": {
+    "id": 41366,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41366",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52043,
+      "titulo": "Acórdão 90"
+     }
+    ]
+   },
+   "91": {
+    "id": 41358,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41358",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52034,
+      "titulo": "Acórdão 91"
+     }
+    ]
+   },
+   "92": {
+    "id": 41359,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41359",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52035,
+      "titulo": "Acórdão 92"
+     }
+    ]
+   },
+   "93": {
+    "id": 41355,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41355",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52031,
+      "titulo": "Acórdão 93"
+     }
+    ]
+   },
+   "94": {
+    "id": 41348,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41348",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52024,
+      "titulo": "Acórdão 94"
+     }
+    ]
+   },
+   "95": {
+    "id": 41369,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41369",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52046,
+      "titulo": "Acórdão 95"
+     }
+    ]
+   },
+   "96": {
+    "id": 41344,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41344",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52020,
+      "titulo": "Acórdão 96"
+     }
+    ]
+   },
+   "97": {
+    "id": 41347,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41347",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52023,
+      "titulo": "Acórdão 97"
+     }
+    ]
+   },
+   "98": {
+    "id": 41360,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41360",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52036,
+      "titulo": "Acórdão 98"
+     }
+    ]
+   },
+   "99": {
+    "id": 41367,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41367",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52044,
+      "titulo": "Acórdão 99"
+     }
+    ]
+   },
+   "100": {
+    "id": 41342,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41342",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52018,
+      "titulo": "Acórdão 100"
+     }
+    ]
+   },
+   "101": {
+    "id": 41351,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41351",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52027,
+      "titulo": "Acórdão 101"
+     }
+    ]
+   },
+   "102": {
+    "id": 41349,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41349",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52025,
+      "titulo": "Acórdão 102"
+     }
+    ]
+   },
+   "103": {
+    "id": 41370,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41370",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52047,
+      "titulo": "Acórdão 103"
+     }
+    ]
+   },
+   "104": {
+    "id": 41365,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41365",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52042,
+      "titulo": "Acórdão 104"
+     }
+    ]
+   },
+   "105": {
+    "id": 41356,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41356",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52032,
+      "titulo": "Acórdão 105"
+     }
+    ]
+   },
+   "106": {
+    "id": 41364,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41364",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52040,
+      "titulo": "Acórdão 106"
+     }
+    ]
+   },
+   "107": {
+    "id": 41371,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41371",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52048,
+      "titulo": "Acórdão 107"
+     }
+    ]
+   },
+   "108": {
+    "id": 41362,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41362",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52038,
+      "titulo": "Acórdão 108"
+     }
+    ]
+   },
+   "109": {
+    "id": 41350,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41350",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52026,
+      "titulo": "Acórdão 109"
+     }
+    ]
+   },
+   "110": {
+    "id": 41354,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41354",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52030,
+      "titulo": "Acórdão 110"
+     }
+    ]
+   },
+   "111": {
+    "id": 41357,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41357",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52033,
+      "titulo": "Acórdão 111"
+     }
+    ]
+   },
+   "112": {
+    "id": 41352,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41352",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52028,
+      "titulo": "Acórdão 112"
+     }
+    ]
+   },
+   "113": {
+    "id": 41368,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41368",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52045,
+      "titulo": "Acórdão 113"
+     }
+    ]
+   },
+   "114": {
+    "id": 41361,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41361",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52037,
+      "titulo": "Acórdão 114"
+     }
+    ]
+   },
+   "115": {
+    "id": 41343,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41343",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52019,
+      "titulo": "Acórdão 115"
+     }
+    ]
+   },
+   "116": {
+    "id": 41363,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41363",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52039,
+      "titulo": "Acórdão 116"
+     }
+    ]
+   },
+   "117": {
+    "id": 41345,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41345",
+    "assinatura": "05/03/2026",
+    "publicacao": "06/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52021,
+      "titulo": "Acórdão 117"
+     }
+    ]
+   },
+   "118": {
+    "id": 41431,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41431",
+    "assinatura": "16/03/2026",
+    "publicacao": "17/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52111,
+      "titulo": "Acórdão 118"
+     }
+    ]
+   },
+   "119": {
+    "id": 41432,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41432",
+    "assinatura": "16/03/2026",
+    "publicacao": "17/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52112,
+      "titulo": "Acórdão 119"
+     }
+    ]
+   },
+   "120": {
+    "id": 41451,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41451",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52132,
+      "titulo": "Acórdão 120"
+     }
+    ]
+   },
+   "121": {
+    "id": 41445,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41445",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52126,
+      "titulo": "Acórdão 121"
+     }
+    ]
+   },
+   "122": {
+    "id": 41458,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41458",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52139,
+      "titulo": "Acórdão 122"
+     }
+    ]
+   },
+   "123": {
+    "id": 41437,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41437",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52118,
+      "titulo": "Acórdão 123"
+     }
+    ]
+   },
+   "124": {
+    "id": 41443,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41443",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52124,
+      "titulo": "Acórdão 124"
+     }
+    ]
+   },
+   "125": {
+    "id": 41448,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41448",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52129,
+      "titulo": "Acórdão 125"
+     }
+    ]
+   },
+   "126": {
+    "id": 41459,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41459",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52140,
+      "titulo": "Acórdão 126"
+     }
+    ]
+   },
+   "127": {
+    "id": 41441,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41441",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52122,
+      "titulo": "Acórdão 127"
+     }
+    ]
+   },
+   "128": {
+    "id": 41453,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41453",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52134,
+      "titulo": "Acórdão 128"
+     }
+    ]
+   },
+   "129": {
+    "id": 41449,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41449",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52130,
+      "titulo": "Acórdão 129"
+     }
+    ]
+   },
+   "131": {
+    "id": 41457,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41457",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52138,
+      "titulo": "Acórdão 131"
+     }
+    ]
+   },
+   "132": {
+    "id": 41446,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41446",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52127,
+      "titulo": "Acórdão 132"
+     }
+    ]
+   },
+   "133": {
+    "id": 41438,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41438",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52119,
+      "titulo": "Acórdão 133"
+     }
+    ]
+   },
+   "134": {
+    "id": 41452,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41452",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52133,
+      "titulo": "Acórdão 134"
+     }
+    ]
+   },
+   "135": {
+    "id": 41455,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41455",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52136,
+      "titulo": "Acórdão 135"
+     }
+    ]
+   },
+   "136": {
+    "id": 41450,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41450",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52131,
+      "titulo": "Acórdão 136"
+     }
+    ]
+   },
+   "137": {
+    "id": 41460,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41460",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52141,
+      "titulo": "Acórdão 137"
+     },
+     {
+      "codigo": 52313,
+      "titulo": "Relátorio Técnico 5"
+     }
+    ]
+   },
+   "138": {
+    "id": 41447,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41447",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52128,
+      "titulo": "Acórdão 138"
+     }
+    ]
+   },
+   "139": {
+    "id": 41444,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41444",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52125,
+      "titulo": "Acórdão 139"
+     }
+    ]
+   },
+   "140": {
+    "id": 41435,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41435",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52116,
+      "titulo": "Acórdão 140"
+     }
+    ]
+   },
+   "141": {
+    "id": 41439,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41439",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52120,
+      "titulo": "Acórdão 141"
+     }
+    ]
+   },
+   "142": {
+    "id": 41434,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41434",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52115,
+      "titulo": "Acórdão 142"
+     }
+    ]
+   },
+   "143": {
+    "id": 41442,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41442",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52123,
+      "titulo": "Acórdão 143"
+     }
+    ]
+   },
+   "144": {
+    "id": 41440,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41440",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52121,
+      "titulo": "Acórdão 144"
+     }
+    ]
+   },
+   "145": {
+    "id": 41454,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41454",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52135,
+      "titulo": "Acórdão 145"
+     }
+    ]
+   },
+   "146": {
+    "id": 41436,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41436",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52117,
+      "titulo": "Acórdão 146"
+     }
+    ]
+   },
+   "147": {
+    "id": 41456,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41456",
+    "assinatura": "18/03/2026",
+    "publicacao": "19/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52137,
+      "titulo": "Acórdão 147"
+     }
+    ]
+   },
+   "148": {
+    "id": 41594,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41594",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52275,
+      "titulo": "Acórdão 148"
+     }
+    ]
+   },
+   "149": {
+    "id": 41597,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41597",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52278,
+      "titulo": "Acórdão 149"
+     }
+    ]
+   },
+   "150": {
+    "id": 41564,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41564",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52222,
+      "titulo": "Acórdão 150"
+     }
+    ]
+   },
+   "151": {
+    "id": 41596,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41596",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52277,
+      "titulo": "Acórdão 151"
+     }
+    ]
+   },
+   "152": {
+    "id": 41593,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41593",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52274,
+      "titulo": "Acórdão 152"
+     }
+    ]
+   },
+   "153": {
+    "id": 41588,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41588",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52269,
+      "titulo": "Acórdão 153"
+     }
+    ]
+   },
+   "154": {
+    "id": 41591,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41591",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52272,
+      "titulo": "Acórdão 154"
+     }
+    ]
+   },
+   "155": {
+    "id": 41587,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41587",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52268,
+      "titulo": "Acórdão 155"
+     }
+    ]
+   },
+   "156": {
+    "id": 41514,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41514",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52210,
+      "titulo": "Acórdão 156"
+     }
+    ]
+   },
+   "157": {
+    "id": 41600,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41600",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52281,
+      "titulo": "Acórdão 157"
+     }
+    ]
+   },
+   "158": {
+    "id": 41598,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41598",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52279,
+      "titulo": "Acórdão 158"
+     }
+    ]
+   },
+   "159": {
+    "id": 41604,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41604",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52285,
+      "titulo": "Acórdão 159"
+     }
+    ]
+   },
+   "160": {
+    "id": 41578,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41578",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52247,
+      "titulo": "Acórdão 160"
+     }
+    ]
+   },
+   "161": {
+    "id": 41586,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41586",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52267,
+      "titulo": "Acórdão 161"
+     }
+    ]
+   },
+   "162": {
+    "id": 41516,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41516",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52211,
+      "titulo": "Acórdão 162"
+     }
+    ]
+   },
+   "163": {
+    "id": 41569,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41569",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52230,
+      "titulo": "Acórdão 163"
+     }
+    ]
+   },
+   "164": {
+    "id": 41563,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41563",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52219,
+      "titulo": "Acórdão 164"
+     }
+    ]
+   },
+   "165": {
+    "id": 41601,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41601",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52282,
+      "titulo": "Acórdão 165"
+     }
+    ]
+   },
+   "166": {
+    "id": 41572,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41572",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52235,
+      "titulo": "Acórdão 166"
+     }
+    ]
+   },
+   "167": {
+    "id": 41605,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41605",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52286,
+      "titulo": "Acórdão 167"
+     }
+    ]
+   },
+   "168": {
+    "id": 41570,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41570",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52232,
+      "titulo": "Acórdão 168"
+     }
+    ]
+   },
+   "169": {
+    "id": 41575,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41575",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52240,
+      "titulo": "Acórdão 169"
+     }
+    ]
+   },
+   "170": {
+    "id": 41599,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41599",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52280,
+      "titulo": "Acórdão 170"
+     }
+    ]
+   },
+   "171": {
+    "id": 41595,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41595",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52276,
+      "titulo": "Acórdão 171"
+     }
+    ]
+   },
+   "172": {
+    "id": 41585,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41585",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52266,
+      "titulo": "Acórdão 172"
+     }
+    ]
+   },
+   "173": {
+    "id": 41602,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41602",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52283,
+      "titulo": "Acórdão 173"
+     }
+    ]
+   },
+   "174": {
+    "id": 41573,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41573",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52236,
+      "titulo": "Acórdão 174"
+     }
+    ]
+   },
+   "175": {
+    "id": 41606,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41606",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52287,
+      "titulo": "Acórdão 175"
+     }
+    ]
+   },
+   "176": {
+    "id": 41574,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41574",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52239,
+      "titulo": "Acórdão 176"
+     }
+    ]
+   },
+   "177": {
+    "id": 41576,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41576",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52243,
+      "titulo": "Acórdão 177"
+     }
+    ]
+   },
+   "178": {
+    "id": 41582,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41582",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52258,
+      "titulo": "Acórdão 178"
+     }
+    ]
+   },
+   "179": {
+    "id": 41584,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41584",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52264,
+      "titulo": "Acórdão 179"
+     }
+    ]
+   },
+   "180": {
+    "id": 41590,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41590",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52271,
+      "titulo": "Acórdão 180"
+     }
+    ]
+   },
+   "181": {
+    "id": 41583,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41583",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52261,
+      "titulo": "Acórdão 181"
+     }
+    ]
+   },
+   "182": {
+    "id": 41589,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41589",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52270,
+      "titulo": "Acórdão 182"
+     }
+    ]
+   },
+   "183": {
+    "id": 41571,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41571",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52233,
+      "titulo": "Acórdão 183"
+     }
+    ]
+   },
+   "184": {
+    "id": 41603,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41603",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52284,
+      "titulo": "Acórdão 184"
+     }
+    ]
+   },
+   "185": {
+    "id": 41568,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41568",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52229,
+      "titulo": "Acórdão 185"
+     }
+    ]
+   },
+   "186": {
+    "id": 41581,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41581",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52256,
+      "titulo": "Acórdão 186"
+     }
+    ]
+   },
+   "187": {
+    "id": 41565,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41565",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52224,
+      "titulo": "Acórdão 187"
+     }
+    ]
+   },
+   "188": {
+    "id": 41592,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41592",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52273,
+      "titulo": "Acórdão 188"
+     }
+    ]
+   },
+   "189": {
+    "id": 41580,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41580",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52254,
+      "titulo": "Acórdão 189"
+     }
+    ]
+   },
+   "190": {
+    "id": 41579,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41579",
+    "assinatura": "30/03/2026",
+    "publicacao": "31/03/2026",
+    "arquivos": [
+     {
+      "codigo": 52249,
+      "titulo": "Acórdão 190"
+     }
+    ]
+   },
+   "191": {
+    "id": 41689,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41689",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52398,
+      "titulo": "Acórdão 191"
+     }
+    ]
+   },
+   "192": {
+    "id": 41656,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41656",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52363,
+      "titulo": "Acórdão 192"
+     }
+    ]
+   },
+   "193": {
+    "id": 41670,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41670",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52379,
+      "titulo": "Acórdão 193"
+     }
+    ]
+   },
+   "194": {
+    "id": 41657,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41657",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52364,
+      "titulo": "Acórdão 194"
+     },
+     {
+      "codigo": 52374,
+      "titulo": "Relatório Técnico 5"
+     },
+     {
+      "codigo": 52375,
+      "titulo": "Relatório Técnico 9"
+     }
+    ]
+   },
+   "196": {
+    "id": 41692,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41692",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52401,
+      "titulo": "Acórdão 196"
+     }
+    ]
+   },
+   "197": {
+    "id": 41697,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41697",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52406,
+      "titulo": "Acórdão 197"
+     }
+    ]
+   },
+   "198": {
+    "id": 41675,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41675",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52384,
+      "titulo": "Acórdão 198"
+     }
+    ]
+   },
+   "200": {
+    "id": 41646,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41646",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52353,
+      "titulo": "Acórdão 200"
+     }
+    ]
+   },
+   "201": {
+    "id": 41681,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41681",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52390,
+      "titulo": "Acórdão 201"
+     }
+    ]
+   },
+   "202": {
+    "id": 41672,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41672",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52381,
+      "titulo": "Acórdão 202"
+     }
+    ]
+   },
+   "203": {
+    "id": 41653,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41653",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52360,
+      "titulo": "Acórdão 203"
+     }
+    ]
+   },
+   "204": {
+    "id": 41645,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41645",
+    "assinatura": "14/02/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52351,
+      "titulo": "Acórdão 204"
+     }
+    ]
+   },
+   "205": {
+    "id": 41668,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41668",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52377,
+      "titulo": "Acórdão 205"
+     }
+    ]
+   },
+   "206": {
+    "id": 41695,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41695",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52404,
+      "titulo": "Acórdão 206"
+     }
+    ]
+   },
+   "207": {
+    "id": 41660,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41660",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52367,
+      "titulo": "Acórdão 207"
+     }
+    ]
+   },
+   "208": {
+    "id": 41690,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41690",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52399,
+      "titulo": "Acórdão 208"
+     }
+    ]
+   },
+   "209": {
+    "id": 41649,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41649",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52356,
+      "titulo": "Acórdão 209"
+     }
+    ]
+   },
+   "210": {
+    "id": 41694,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41694",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52403,
+      "titulo": "Acórdão 210"
+     }
+    ]
+   },
+   "211": {
+    "id": 41651,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41651",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52358,
+      "titulo": "Acórdão 211"
+     }
+    ]
+   },
+   "212": {
+    "id": 41643,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41643",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52350,
+      "titulo": "Acórdão 212"
+     }
+    ]
+   },
+   "213": {
+    "id": 41661,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41661",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52368,
+      "titulo": "Acórdão 213"
+     }
+    ]
+   },
+   "214": {
+    "id": 41673,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41673",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52382,
+      "titulo": "Acórdão 214"
+     }
+    ]
+   },
+   "215": {
+    "id": 41658,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41658",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52365,
+      "titulo": "Acórdão 215"
+     }
+    ]
+   },
+   "216": {
+    "id": 41688,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41688",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52397,
+      "titulo": "Acórdão 216"
+     }
+    ]
+   },
+   "217": {
+    "id": 41676,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41676",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52385,
+      "titulo": "Acórdão 217"
+     }
+    ]
+   },
+   "218": {
+    "id": 41654,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41654",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52361,
+      "titulo": "Acórdão 218"
+     }
+    ]
+   },
+   "219": {
+    "id": 41683,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41683",
+    "assinatura": "14/04/2026",
+    "publicacao": "16/04/2026",
+    "arquivos": [
+     {
+      "codigo": 52392,
+      "titulo": "Acórdão 219"
+     }
+    ]
+   },
+   "220": {
+    "id": 41751,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41751",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52460,
+      "titulo": "Acórdão 220"
+     }
+    ]
+   },
+   "221": {
+    "id": 41628,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41628",
+    "assinatura": "30/04/2026",
+    "publicacao": "04/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52335,
+      "titulo": "Acórdão"
+     }
+    ]
+   },
+   "222": {
+    "id": 41758,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41758",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52467,
+      "titulo": "Acórdão 222"
+     }
+    ]
+   },
+   "223": {
+    "id": 41746,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41746",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52455,
+      "titulo": "Acórdão 223"
+     }
+    ]
+   },
+   "224": {
+    "id": 41744,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41744",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52453,
+      "titulo": "Acórdão 224"
+     }
+    ]
+   },
+   "225": {
+    "id": 41778,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41778",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52487,
+      "titulo": "Acórdão 225"
+     }
+    ]
+   },
+   "226": {
+    "id": 41773,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41773",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52482,
+      "titulo": "Acórdão 226"
+     }
+    ]
+   },
+   "227": {
+    "id": 41760,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41760",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52469,
+      "titulo": "Acórdão 227"
+     }
+    ]
+   },
+   "228": {
+    "id": 41764,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41764",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52473,
+      "titulo": "Acórdão 228"
+     }
+    ]
+   },
+   "229": {
+    "id": 41738,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41738",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52447,
+      "titulo": "Acórdão 229"
+     }
+    ]
+   },
+   "230": {
+    "id": 41736,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41736",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52445,
+      "titulo": "Acórdão 230"
+     }
+    ]
+   },
+   "231": {
+    "id": 41761,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41761",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52470,
+      "titulo": "Acórdão 231"
+     }
+    ]
+   },
+   "232": {
+    "id": 41780,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41780",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52489,
+      "titulo": "Acórdão 232"
+     }
+    ]
+   },
+   "233": {
+    "id": 41767,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41767",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52476,
+      "titulo": "Acórdão 233"
+     }
+    ]
+   },
+   "234": {
+    "id": 41756,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41756",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52465,
+      "titulo": "Acórdão 234"
+     }
+    ]
+   },
+   "235": {
+    "id": 41630,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41630",
+    "assinatura": "30/04/2026",
+    "publicacao": "04/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52499,
+      "titulo": "Acórdão 235"
+     }
+    ]
+   },
+   "236": {
+    "id": 41747,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41747",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52456,
+      "titulo": "Acórdão 236"
+     }
+    ]
+   },
+   "237": {
+    "id": 41772,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41772",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52481,
+      "titulo": "Acórdão 237"
+     }
+    ]
+   },
+   "238": {
+    "id": 41739,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41739",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52448,
+      "titulo": "Acórdão 238"
+     }
+    ]
+   },
+   "239": {
+    "id": 41781,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41781",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52490,
+      "titulo": "Acórdão 239"
+     }
+    ]
+   },
+   "240": {
+    "id": 41762,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41762",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52471,
+      "titulo": "Acórdão 240"
+     }
+    ]
+   },
+   "241": {
+    "id": 41779,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41779",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52488,
+      "titulo": "Acórdão 241"
+     }
+    ]
+   },
+   "242": {
+    "id": 41752,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41752",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52461,
+      "titulo": "Acórdão 242"
+     }
+    ]
+   },
+   "243": {
+    "id": 41768,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41768",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52477,
+      "titulo": "Acórdão 243"
+     }
+    ]
+   },
+   "244": {
+    "id": 41763,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41763",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52472,
+      "titulo": "Acórdão 244"
+     }
+    ]
+   },
+   "245": {
+    "id": 41740,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41740",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52449,
+      "titulo": "Acórdão 245"
+     }
+    ]
+   },
+   "246": {
+    "id": 41750,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41750",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52459,
+      "titulo": "Acórdão 246"
+     }
+    ]
+   },
+   "247": {
+    "id": 41769,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41769",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52478,
+      "titulo": "Acórdão 247"
+     }
+    ]
+   },
+   "248": {
+    "id": 41774,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41774",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52483,
+      "titulo": "Acórdão 248"
+     }
+    ]
+   },
+   "249": {
+    "id": 41782,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41782",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52491,
+      "titulo": "Acórdão 249"
+     }
+    ]
+   },
+   "250": {
+    "id": 41757,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41757",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52466,
+      "titulo": "Acórdão 250"
+     }
+    ]
+   },
+   "251": {
+    "id": 41753,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41753",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52462,
+      "titulo": "Acórdão 251"
+     }
+    ]
+   },
+   "252": {
+    "id": 41741,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41741",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52450,
+      "titulo": "Acórdão 252"
+     }
+    ]
+   },
+   "253": {
+    "id": 41759,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41759",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52468,
+      "titulo": "Acórdão 253"
+     }
+    ]
+   },
+   "254": {
+    "id": 41745,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41745",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52454,
+      "titulo": "Acórdão 254"
+     }
+    ]
+   },
+   "255": {
+    "id": 41775,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41775",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52484,
+      "titulo": "Acórdão 255"
+     }
+    ]
+   },
+   "256": {
+    "id": 41794,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41794",
+    "assinatura": "08/05/2026",
+    "publicacao": "11/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52504,
+      "titulo": "Acórdão 256"
+     }
+    ]
+   },
+   "257": {
+    "id": 41735,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41735",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52444,
+      "titulo": "Acórdão 257"
+     }
+    ]
+   },
+   "258": {
+    "id": 41737,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41737",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52446,
+      "titulo": "Acórdão 258"
+     }
+    ]
+   },
+   "259": {
+    "id": 41748,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41748",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52457,
+      "titulo": "Acórdão 259"
+     }
+    ]
+   },
+   "260": {
+    "id": 41765,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41765",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52474,
+      "titulo": "Acórdão 260"
+     }
+    ]
+   },
+   "261": {
+    "id": 41749,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41749",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52458,
+      "titulo": "Acórdão 261"
+     }
+    ]
+   },
+   "262": {
+    "id": 41776,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41776",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52485,
+      "titulo": "Acórdão 262"
+     }
+    ]
+   },
+   "263": {
+    "id": 41754,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41754",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52463,
+      "titulo": "Acórdão 263"
+     }
+    ]
+   },
+   "264": {
+    "id": 41770,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41770",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52479,
+      "titulo": "Acórdão 264"
+     }
+    ]
+   },
+   "265": {
+    "id": 41742,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41742",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52451,
+      "titulo": "Acórdão 265"
+     }
+    ]
+   },
+   "266": {
+    "id": 41777,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41777",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52486,
+      "titulo": "Acórdão 266"
+     }
+    ]
+   },
+   "267": {
+    "id": 41755,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41755",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52464,
+      "titulo": "Acórdão 267"
+     }
+    ]
+   },
+   "268": {
+    "id": 41793,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41793",
+    "assinatura": "08/05/2026",
+    "publicacao": "11/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52503,
+      "titulo": "Acórdão 268"
+     }
+    ]
+   },
+   "269": {
+    "id": 41766,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41766",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52475,
+      "titulo": "Acórdão 269"
+     }
+    ]
+   },
+   "270": {
+    "id": 41783,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41783",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52492,
+      "titulo": "Acórdão 270"
+     }
+    ]
+   },
+   "271": {
+    "id": 41771,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41771",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52480,
+      "titulo": "Acórdão 271"
+     }
+    ]
+   },
+   "272": {
+    "id": 41743,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41743",
+    "assinatura": "06/05/2026",
+    "publicacao": "08/05/2026",
+    "arquivos": [
+     {
+      "codigo": 52452,
+      "titulo": "Acórdão 272"
+     }
+    ]
+   },
+   "273": {
+    "id": 41947,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41947",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52668,
+      "titulo": "Acórdão 273"
+     }
+    ]
+   },
+   "274": {
+    "id": 41920,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41920",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52641,
+      "titulo": "Acórdão 274"
+     }
+    ]
+   },
+   "275": {
+    "id": 41926,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41926",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52647,
+      "titulo": "Acórdão 275"
+     }
+    ]
+   },
+   "276": {
+    "id": 41951,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41951",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52672,
+      "titulo": "Acórdão 276"
+     }
+    ]
+   },
+   "277": {
+    "id": 41928,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41928",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52649,
+      "titulo": "Acórdão 277"
+     }
+    ]
+   },
+   "278": {
+    "id": 41931,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41931",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52652,
+      "titulo": "Acórdão 278"
+     }
+    ]
+   },
+   "279": {
+    "id": 41917,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41917",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52638,
+      "titulo": "Acórdão 279"
+     }
+    ]
+   },
+   "280": {
+    "id": 41923,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41923",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52644,
+      "titulo": "Acórdão 280"
+     }
+    ]
+   },
+   "281": {
+    "id": 41927,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41927",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52648,
+      "titulo": "Acórdão 281"
+     }
+    ]
+   },
+   "282": {
+    "id": 41949,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41949",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52670,
+      "titulo": "Acórdão 282"
+     }
+    ]
+   },
+   "283": {
+    "id": 41929,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41929",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52650,
+      "titulo": "Acórdão 283"
+     }
+    ]
+   },
+   "284": {
+    "id": 41942,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41942",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52663,
+      "titulo": "Acórdão 284"
+     }
+    ]
+   },
+   "285": {
+    "id": 41939,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41939",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52660,
+      "titulo": "Acórdão 285"
+     }
+    ]
+   },
+   "286": {
+    "id": 41936,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41936",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52657,
+      "titulo": "Acórdão 286"
+     }
+    ]
+   },
+   "287": {
+    "id": 41921,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41921",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52642,
+      "titulo": "Acórdão 287"
+     }
+    ]
+   },
+   "288": {
+    "id": 41945,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41945",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52666,
+      "titulo": "Acórdão 288"
+     }
+    ]
+   },
+   "289": {
+    "id": 41934,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41934",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52655,
+      "titulo": "Acórdão 289"
+     }
+    ]
+   },
+   "290": {
+    "id": 41948,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41948",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52669,
+      "titulo": "Acórdão 290"
+     }
+    ]
+   },
+   "291": {
+    "id": 41916,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41916",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52637,
+      "titulo": "Acórdão 291"
+     }
+    ]
+   },
+   "292": {
+    "id": 41943,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41943",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52664,
+      "titulo": "Acórdão 292"
+     }
+    ]
+   },
+   "293": {
+    "id": 41932,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41932",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52653,
+      "titulo": "Acórdão 293"
+     }
+    ]
+   },
+   "294": {
+    "id": 41950,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41950",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52671,
+      "titulo": "Acórdão 294"
+     }
+    ]
+   },
+   "295": {
+    "id": 41940,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41940",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52661,
+      "titulo": "Acórdão 295"
+     }
+    ]
+   },
+   "296": {
+    "id": 41919,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41919",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52640,
+      "titulo": "Acórdão 296"
+     }
+    ]
+   },
+   "297": {
+    "id": 41924,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41924",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52645,
+      "titulo": "Acórdão 297"
+     }
+    ]
+   },
+   "298": {
+    "id": 41935,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41935",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52656,
+      "titulo": "Acórdão 298"
+     }
+    ]
+   },
+   "299": {
+    "id": 41918,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41918",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52639,
+      "titulo": "Acórdão 299"
+     }
+    ]
+   },
+   "300": {
+    "id": 41952,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41952",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52673,
+      "titulo": "Acórdão 300"
+     }
+    ]
+   },
+   "301": {
+    "id": 41941,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41941",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52662,
+      "titulo": "Acórdão 301"
+     }
+    ]
+   },
+   "302": {
+    "id": 41937,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41937",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52658,
+      "titulo": "Acórdão 302"
+     }
+    ]
+   },
+   "303": {
+    "id": 41925,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41925",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52646,
+      "titulo": "Acórdão 303"
+     }
+    ]
+   },
+   "304": {
+    "id": 41953,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41953",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52674,
+      "titulo": "Acórdão 304"
+     }
+    ]
+   },
+   "305": {
+    "id": 41922,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41922",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52643,
+      "titulo": "Acórdão 305"
+     }
+    ]
+   },
+   "306": {
+    "id": 41897,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41897",
+    "assinatura": "01/06/2026",
+    "publicacao": "03/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52615,
+      "titulo": "Acórdão 306"
+     }
+    ]
+   },
+   "308": {
+    "id": 41898,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41898",
+    "assinatura": "01/06/2026",
+    "publicacao": "03/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52616,
+      "titulo": "Acórdão 308"
+     }
+    ]
+   },
+   "309": {
+    "id": 41900,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41900",
+    "assinatura": "01/06/2026",
+    "publicacao": "03/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52618,
+      "titulo": "Acórdão 309"
+     }
+    ]
+   },
+   "310": {
+    "id": 41903,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41903",
+    "assinatura": "01/06/2026",
+    "publicacao": "03/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52621,
+      "titulo": "Acórdão 310"
+     }
+    ]
+   },
+   "311": {
+    "id": 41944,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41944",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52665,
+      "titulo": "Acórdão 311"
+     }
+    ]
+   },
+   "312": {
+    "id": 41930,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41930",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52651,
+      "titulo": "Acórdão 312"
+     }
+    ]
+   },
+   "313": {
+    "id": 41938,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41938",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52659,
+      "titulo": "Acórdão 313"
+     }
+    ]
+   },
+   "314": {
+    "id": 41933,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41933",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52654,
+      "titulo": "Acórdão 314"
+     }
+    ]
+   },
+   "315": {
+    "id": 41946,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/41946",
+    "assinatura": "03/06/2026",
+    "publicacao": "09/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52667,
+      "titulo": "Acórdão 315"
+     }
+    ]
+   },
+   "316": {
+    "id": 42022,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42022",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52773,
+      "titulo": "Acórdão 316"
+     }
+    ]
+   },
+   "317": {
+    "id": 42038,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42038",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52789,
+      "titulo": "Acórdão 317"
+     }
+    ]
+   },
+   "318": {
+    "id": 42034,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42034",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52785,
+      "titulo": "Acórdão 318"
+     }
+    ]
+   },
+   "319": {
+    "id": 42017,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42017",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52768,
+      "titulo": "Acórdão 319"
+     }
+    ]
+   },
+   "320": {
+    "id": 42028,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42028",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52779,
+      "titulo": "Acórdão 320"
+     }
+    ]
+   },
+   "321": {
+    "id": 42024,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42024",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52775,
+      "titulo": "Acórdão 321"
+     }
+    ]
+   },
+   "322": {
+    "id": 42035,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42035",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52786,
+      "titulo": "Acórdão 322"
+     }
+    ]
+   },
+   "323": {
+    "id": 42029,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42029",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52780,
+      "titulo": "Acórdão 323"
+     }
+    ]
+   },
+   "324": {
+    "id": 42047,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42047",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52798,
+      "titulo": "Acórdão 324"
+     }
+    ]
+   },
+   "325": {
+    "id": 42031,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42031",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52782,
+      "titulo": "Acórdão 325"
+     }
+    ]
+   },
+   "326": {
+    "id": 42039,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42039",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52790,
+      "titulo": "Acórdão 326"
+     }
+    ]
+   },
+   "327": {
+    "id": 42016,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42016",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52767,
+      "titulo": "Acórdão 327"
+     }
+    ]
+   },
+   "328": {
+    "id": 42040,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42040",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52791,
+      "titulo": "Acórdão 328"
+     }
+    ]
+   },
+   "329": {
+    "id": 42036,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42036",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52787,
+      "titulo": "Acórdão 329"
+     }
+    ]
+   },
+   "330": {
+    "id": 42023,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42023",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52774,
+      "titulo": "Acórdão 330"
+     }
+    ]
+   },
+   "331": {
+    "id": 42030,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42030",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52781,
+      "titulo": "Acórdão 331"
+     }
+    ]
+   },
+   "332": {
+    "id": 42048,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42048",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52799,
+      "titulo": "Acórdão 332"
+     }
+    ]
+   },
+   "333": {
+    "id": 42020,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42020",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52771,
+      "titulo": "Acórdão 333"
+     }
+    ]
+   },
+   "334": {
+    "id": 42041,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42041",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52792,
+      "titulo": "Acórdão 334"
+     }
+    ]
+   },
+   "335": {
+    "id": 42018,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42018",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52769,
+      "titulo": "Acórdão 335"
+     }
+    ]
+   },
+   "336": {
+    "id": 42044,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42044",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52795,
+      "titulo": "Acórdão 336"
+     }
+    ]
+   },
+   "337": {
+    "id": 42027,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42027",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52778,
+      "titulo": "Acórdão 337"
+     }
+    ]
+   },
+   "338": {
+    "id": 42019,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42019",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52770,
+      "titulo": "Acórdão 338"
+     }
+    ]
+   },
+   "339": {
+    "id": 42026,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42026",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52777,
+      "titulo": "Acórdão 339"
+     }
+    ]
+   },
+   "340": {
+    "id": 42014,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42014",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52765,
+      "titulo": "Acórdão 340"
+     }
+    ]
+   },
+   "341": {
+    "id": 42042,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42042",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52793,
+      "titulo": "Acórdão 341"
+     }
+    ]
+   },
+   "342": {
+    "id": 42025,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42025",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52776,
+      "titulo": "Acórdão 342"
+     }
+    ]
+   },
+   "343": {
+    "id": 42021,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42021",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52887,
+      "titulo": "Acórdão 343-2026 suspenso por dec judicial"
+     }
+    ]
+   },
+   "344": {
+    "id": 42015,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42015",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52766,
+      "titulo": "Acórdão 344"
+     }
+    ]
+   },
+   "345": {
+    "id": 42043,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42043",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52794,
+      "titulo": "Acórdão 345"
+     }
+    ]
+   },
+   "346": {
+    "id": 42046,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42046",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52797,
+      "titulo": "Acórdão 346"
+     }
+    ]
+   },
+   "347": {
+    "id": 42037,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42037",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52788,
+      "titulo": "Acórdão 347"
+     }
+    ]
+   },
+   "348": {
+    "id": 42032,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42032",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52783,
+      "titulo": "Acórdão 348"
+     }
+    ]
+   },
+   "349": {
+    "id": 42033,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42033",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52784,
+      "titulo": "Acórdão 349"
+     }
+    ]
+   },
+   "350": {
+    "id": 42045,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42045",
+    "assinatura": "17/06/2026",
+    "publicacao": "18/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52796,
+      "titulo": "Acórdão 350"
+     }
+    ]
+   },
+   "351": {
+    "id": 42075,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42075",
+    "assinatura": "19/06/2026",
+    "publicacao": "23/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52828,
+      "titulo": "Acórdão 351"
+     }
+    ]
+   },
+   "352": {
+    "id": 42106,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42106",
+    "assinatura": "24/06/2026",
+    "publicacao": "26/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52864,
+      "titulo": "Acórdão 352"
+     }
+    ]
+   },
+   "353": {
+    "id": 42107,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42107",
+    "assinatura": "24/06/2026",
+    "publicacao": "26/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52865,
+      "titulo": "Acórdão 353"
+     }
+    ]
+   },
+   "354": {
+    "id": 42105,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42105",
+    "assinatura": "25/06/2026",
+    "publicacao": "26/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52863,
+      "titulo": "Acórdão 354"
+     }
+    ]
+   },
+   "355": {
+    "id": 42108,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42108",
+    "assinatura": "25/06/2026",
+    "publicacao": "26/06/2026",
+    "arquivos": [
+     {
+      "codigo": 52866,
+      "titulo": "Acórdão 355"
+     }
+    ]
+   },
+   "356": {
+    "id": 42173,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42173",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52941,
+      "titulo": "Acórdão 356"
+     }
+    ]
+   },
+   "357": {
+    "id": 42172,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42172",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52940,
+      "titulo": "Acórdão 357"
+     }
+    ]
+   },
+   "358": {
+    "id": 42171,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42171",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52939,
+      "titulo": "Acórdão 358"
+     }
+    ]
+   },
+   "359": {
+    "id": 42170,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42170",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52938,
+      "titulo": "Acórdão 359"
+     }
+    ]
+   },
+   "360": {
+    "id": 42141,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42141",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52907,
+      "titulo": "Acórdão 360"
+     }
+    ]
+   },
+   "361": {
+    "id": 42169,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42169",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52937,
+      "titulo": "Acórdão 361"
+     }
+    ]
+   },
+   "362": {
+    "id": 42168,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42168",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52936,
+      "titulo": "Acórdão 362"
+     }
+    ]
+   },
+   "363": {
+    "id": 42167,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42167",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52935,
+      "titulo": "Acórdão 363"
+     }
+    ]
+   },
+   "364": {
+    "id": 42166,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42166",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52934,
+      "titulo": "Acórdão 364"
+     }
+    ]
+   },
+   "365": {
+    "id": 42165,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42165",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52933,
+      "titulo": "Acórdão 365"
+     }
+    ]
+   },
+   "366": {
+    "id": 42164,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42164",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52931,
+      "titulo": "Acórdão 366"
+     }
+    ]
+   },
+   "367": {
+    "id": 42163,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42163",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52930,
+      "titulo": "Acórdão 367"
+     }
+    ]
+   },
+   "368": {
+    "id": 42162,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42162",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52929,
+      "titulo": "Acórdão 368"
+     }
+    ]
+   },
+   "369": {
+    "id": 42161,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42161",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52928,
+      "titulo": "Acórdão 369"
+     }
+    ]
+   },
+   "370": {
+    "id": 42160,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42160",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52927,
+      "titulo": "Acórdão 370"
+     }
+    ]
+   },
+   "371": {
+    "id": 42159,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42159",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52926,
+      "titulo": "Acórdão 371"
+     }
+    ]
+   },
+   "372": {
+    "id": 42158,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42158",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52925,
+      "titulo": "Acórdão 372"
+     }
+    ]
+   },
+   "373": {
+    "id": 42157,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42157",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52924,
+      "titulo": "Acórdão 373"
+     }
+    ]
+   },
+   "374": {
+    "id": 42156,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42156",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52923,
+      "titulo": "Acórdão 374"
+     }
+    ]
+   },
+   "375": {
+    "id": 42155,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42155",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52922,
+      "titulo": "Acórdão 375"
+     }
+    ]
+   },
+   "376": {
+    "id": 42154,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42154",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52921,
+      "titulo": "Acórdão 376"
+     }
+    ]
+   },
+   "377": {
+    "id": 42153,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42153",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52920,
+      "titulo": "Acórdão 377"
+     }
+    ]
+   },
+   "378": {
+    "id": 42152,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42152",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52919,
+      "titulo": "Acórdão 378"
+     }
+    ]
+   },
+   "379": {
+    "id": 42151,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42151",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52918,
+      "titulo": "Acórdão 379"
+     }
+    ]
+   },
+   "380": {
+    "id": 42150,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42150",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52917,
+      "titulo": "Acórdão 380"
+     }
+    ]
+   },
+   "381": {
+    "id": 42149,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42149",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52916,
+      "titulo": "Acórdão 381"
+     }
+    ]
+   },
+   "382": {
+    "id": 42148,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42148",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52915,
+      "titulo": "Acórdão 382"
+     }
+    ]
+   },
+   "383": {
+    "id": 42147,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42147",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52913,
+      "titulo": "Acórdão 383"
+     }
+    ]
+   },
+   "384": {
+    "id": 42146,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42146",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52912,
+      "titulo": "Acórdão 384"
+     }
+    ]
+   },
+   "385": {
+    "id": 42145,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42145",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52911,
+      "titulo": "Acórdão 385"
+     }
+    ]
+   },
+   "386": {
+    "id": 42144,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42144",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52910,
+      "titulo": "Acórdão 386"
+     }
+    ]
+   },
+   "387": {
+    "id": 42143,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42143",
+    "assinatura": "30/06/2026",
+    "publicacao": "01/07/2026",
+    "arquivos": [
+     {
+      "codigo": 52909,
+      "titulo": "Acórdão 387"
+     }
+    ]
+   },
+   "388": {
+    "id": 42272,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42272",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53078,
+      "titulo": "Acórdão 388"
+     }
+    ]
+   },
+   "389": {
+    "id": 42270,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42270",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53070,
+      "titulo": "Acórdão 389"
+     }
+    ]
+   },
+   "390": {
+    "id": 42267,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42267",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53065,
+      "titulo": "Acórdão 390"
+     }
+    ]
+   },
+   "391": {
+    "id": 42264,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42264",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53061,
+      "titulo": "Acórdão 391"
+     }
+    ]
+   },
+   "392": {
+    "id": 42285,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42285",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53093,
+      "titulo": "Acórdão 392"
+     }
+    ]
+   },
+   "393": {
+    "id": 42286,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42286",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53094,
+      "titulo": "Acórdão 393"
+     }
+    ]
+   },
+   "394": {
+    "id": 42268,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42268",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53067,
+      "titulo": "Acórdão 394"
+     }
+    ]
+   },
+   "395": {
+    "id": 42283,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42283",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53091,
+      "titulo": "Acórdão 395"
+     }
+    ]
+   },
+   "396": {
+    "id": 42278,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42278",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53086,
+      "titulo": "Acórdão 396"
+     }
+    ]
+   },
+   "397": {
+    "id": 42277,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42277",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53085,
+      "titulo": "Acórdão 397"
+     }
+    ]
+   },
+   "398": {
+    "id": 42275,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42275",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53083,
+      "titulo": "Acórdão 398"
+     }
+    ]
+   },
+   "399": {
+    "id": 42274,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42274",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53082,
+      "titulo": "Acórdão 399"
+     }
+    ]
+   },
+   "400": {
+    "id": 42273,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42273",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53081,
+      "titulo": "Acórdão 400"
+     }
+    ]
+   },
+   "401": {
+    "id": 42265,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42265",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53062,
+      "titulo": "Acórdão 401"
+     }
+    ]
+   },
+   "402": {
+    "id": 42279,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42279",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53087,
+      "titulo": "Acórdão 402"
+     }
+    ]
+   },
+   "403": {
+    "id": 42284,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42284",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53092,
+      "titulo": "Acórdão 403"
+     }
+    ]
+   },
+   "404": {
+    "id": 42266,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42266",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53064,
+      "titulo": "Acórdão 404"
+     }
+    ]
+   },
+   "405": {
+    "id": 42281,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42281",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53089,
+      "titulo": "Acórdão 405"
+     }
+    ]
+   },
+   "406": {
+    "id": 42287,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42287",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53095,
+      "titulo": "Acórdão 406"
+     }
+    ]
+   },
+   "407": {
+    "id": 42276,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42276",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53084,
+      "titulo": "Acórdão 407"
+     }
+    ]
+   },
+   "408": {
+    "id": 42280,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42280",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53088,
+      "titulo": "Acórdão 408"
+     }
+    ]
+   },
+   "409": {
+    "id": 42271,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42271",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53075,
+      "titulo": "Acórdão 409"
+     }
+    ]
+   },
+   "410": {
+    "id": 42269,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42269",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53068,
+      "titulo": "Acórdão 410"
+     }
+    ]
+   },
+   "411": {
+    "id": 42282,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42282",
+    "assinatura": "14/07/2026",
+    "publicacao": "16/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53090,
+      "titulo": "Acórdão 411"
+     }
+    ]
+   },
+   "412": {
+    "id": 42378,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42378",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53198,
+      "titulo": "Acórdão 412"
+     }
+    ]
+   },
+   "413": {
+    "id": 42382,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42382",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53202,
+      "titulo": "Acórdão 413"
+     }
+    ]
+   },
+   "414": {
+    "id": 42398,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42398",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53218,
+      "titulo": "Acórdão 414"
+     }
+    ]
+   },
+   "415": {
+    "id": 42386,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42386",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53206,
+      "titulo": "Acórdão 415"
+     }
+    ]
+   },
+   "416": {
+    "id": 42390,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42390",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53210,
+      "titulo": "Acórdão 416"
+     }
+    ]
+   },
+   "417": {
+    "id": 42399,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42399",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53219,
+      "titulo": "Acórdão 417"
+     }
+    ]
+   },
+   "418": {
+    "id": 42397,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42397",
+    "assinatura": "29/07/2026",
+    "publicacao": "23/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53217,
+      "titulo": "Acórdão 418"
+     }
+    ]
+   },
+   "419": {
+    "id": 42400,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42400",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53220,
+      "titulo": "Acórdão 419"
+     }
+    ]
+   },
+   "420": {
+    "id": 42383,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42383",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53203,
+      "titulo": "Acórdão 420"
+     }
+    ]
+   },
+   "421": {
+    "id": 42379,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42379",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53199,
+      "titulo": "Acórdão 421"
+     }
+    ]
+   },
+   "422": {
+    "id": 42391,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42391",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53211,
+      "titulo": "Acórdão 422"
+     }
+    ]
+   },
+   "423": {
+    "id": 42387,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42387",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53207,
+      "titulo": "Acórdão 423"
+     }
+    ]
+   },
+   "424": {
+    "id": 42380,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42380",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53200,
+      "titulo": "Acórdão 424"
+     }
+    ]
+   },
+   "425": {
+    "id": 42393,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42393",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53213,
+      "titulo": "Acórdão 425"
+     }
+    ]
+   },
+   "426": {
+    "id": 42384,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42384",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53204,
+      "titulo": "Acórdão 426"
+     }
+    ]
+   },
+   "427": {
+    "id": 42385,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42385",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53205,
+      "titulo": "Acórdão 427"
+     }
+    ]
+   },
+   "428": {
+    "id": 42401,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42401",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53221,
+      "titulo": "Acórdão 428"
+     }
+    ]
+   },
+   "429": {
+    "id": 42388,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42388",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53208,
+      "titulo": "Acórdão 429"
+     }
+    ]
+   },
+   "430": {
+    "id": 42381,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42381",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53201,
+      "titulo": "Acórdão 430"
+     }
+    ]
+   },
+   "431": {
+    "id": 42395,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42395",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53215,
+      "titulo": "Acórdão 431"
+     }
+    ]
+   },
+   "432": {
+    "id": 42396,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42396",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53216,
+      "titulo": "Acórdão 432"
+     }
+    ]
+   },
+   "433": {
+    "id": 42394,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42394",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53214,
+      "titulo": "Acórdão 433"
+     }
+    ]
+   },
+   "434": {
+    "id": 42392,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42392",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53212,
+      "titulo": "Acórdão 434"
+     }
+    ]
+   },
+   "435": {
+    "id": 42365,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42365",
+    "assinatura": "24/07/2026",
+    "publicacao": "27/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53185,
+      "titulo": "Acórdão 435"
+     }
+    ]
+   },
+   "436": {
+    "id": 42364,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42364",
+    "assinatura": "24/07/2026",
+    "publicacao": "27/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53184,
+      "titulo": "Acórdão 436"
+     }
+    ]
+   },
+   "437": {
+    "id": 42366,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42366",
+    "assinatura": "24/07/2026",
+    "publicacao": "27/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53186,
+      "titulo": "Acórdão 437"
+     }
+    ]
+   },
+   "438": {
+    "id": 42389,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42389",
+    "assinatura": "29/07/2026",
+    "publicacao": "30/07/2026",
+    "arquivos": [
+     {
+      "codigo": 53209,
+      "titulo": "Acórdão 438"
+     }
+    ]
+   },
+   "440": {
+    "id": 42500,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42500",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53333,
+      "titulo": "Acórdão 440"
+     }
+    ]
+   },
+   "441": {
+    "id": 42480,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42480",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53312,
+      "titulo": "Acórdão 441"
+     }
+    ]
+   },
+   "442": {
+    "id": 42498,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42498",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53331,
+      "titulo": "Acórdão 442"
+     }
+    ]
+   },
+   "443": {
+    "id": 42505,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42505",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53338,
+      "titulo": "Acórdão 443"
+     }
+    ]
+   },
+   "444": {
+    "id": 42510,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42510",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53343,
+      "titulo": "Acórdão 444"
+     }
+    ]
+   },
+   "445": {
+    "id": 42492,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42492",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53325,
+      "titulo": "Acórdão 445"
+     }
+    ]
+   },
+   "446": {
+    "id": 42485,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42485",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53317,
+      "titulo": "Acórdão 446"
+     }
+    ]
+   },
+   "447": {
+    "id": 42506,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42506",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53339,
+      "titulo": "Acórdão 447"
+     }
+    ]
+   },
+   "448": {
+    "id": 42478,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42478",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53310,
+      "titulo": "Acórdão 448"
+     }
+    ]
+   },
+   "449": {
+    "id": 42490,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42490",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53323,
+      "titulo": "Acórdão 449"
+     }
+    ]
+   },
+   "450": {
+    "id": 42502,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42502",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53335,
+      "titulo": "Acórdão 450"
+     }
+    ]
+   },
+   "451": {
+    "id": 42491,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42491",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53324,
+      "titulo": "Acórdão 451"
+     }
+    ]
+   },
+   "452": {
+    "id": 42484,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42484",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53316,
+      "titulo": "Acórdão 452"
+     }
+    ]
+   },
+   "453": {
+    "id": 42497,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42497",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53330,
+      "titulo": "Acórdão 453"
+     }
+    ]
+   },
+   "454": {
+    "id": 42494,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42494",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53327,
+      "titulo": "Acórdão 454"
+     }
+    ]
+   },
+   "455": {
+    "id": 42508,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42508",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53341,
+      "titulo": "Acórdão 455"
+     }
+    ]
+   },
+   "456": {
+    "id": 42479,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42479",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53311,
+      "titulo": "Acórdão 456"
+     }
+    ]
+   },
+   "457": {
+    "id": 42481,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42481",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53313,
+      "titulo": "Acórdão 457"
+     }
+    ]
+   },
+   "458": {
+    "id": 42465,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42465",
+    "assinatura": "10/08/2026",
+    "publicacao": "11/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53297,
+      "titulo": "Acórdão 458"
+     }
+    ]
+   },
+   "459": {
+    "id": 42488,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42488",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53321,
+      "titulo": "Acórdão 459"
+     }
+    ]
+   },
+   "460": {
+    "id": 42489,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42489",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53754,
+      "titulo": "Acordao 460"
+     }
+    ]
+   },
+   "461": {
+    "id": 42511,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42511",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53344,
+      "titulo": "Acórdão 461"
+     }
+    ]
+   },
+   "462": {
+    "id": 42483,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42483",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53315,
+      "titulo": "Acórdão 462"
+     }
+    ]
+   },
+   "463": {
+    "id": 42496,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42496",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53329,
+      "titulo": "Acórdão 463"
+     }
+    ]
+   },
+   "464": {
+    "id": 42503,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42503",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53336,
+      "titulo": "Acórdão 464"
+     }
+    ]
+   },
+   "465": {
+    "id": 42504,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42504",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53337,
+      "titulo": "Acórdão 465"
+     }
+    ]
+   },
+   "466": {
+    "id": 42493,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42493",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53326,
+      "titulo": "Acórdão 466"
+     }
+    ]
+   },
+   "467": {
+    "id": 42513,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42513",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53346,
+      "titulo": "Acórdão 467"
+     }
+    ]
+   },
+   "468": {
+    "id": 42499,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42499",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53332,
+      "titulo": "Acórdão 468"
+     }
+    ]
+   },
+   "469": {
+    "id": 42495,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42495",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53328,
+      "titulo": "Acórdão 469"
+     }
+    ]
+   },
+   "470": {
+    "id": 42512,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42512",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53345,
+      "titulo": "Acórdão 470"
+     }
+    ]
+   },
+   "471": {
+    "id": 42501,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42501",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53334,
+      "titulo": "Acórdão 471"
+     }
+    ]
+   },
+   "473": {
+    "id": 42507,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42507",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53340,
+      "titulo": "Acórdão 473"
+     }
+    ]
+   },
+   "474": {
+    "id": 42509,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42509",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53342,
+      "titulo": "Acórdão 474"
+     }
+    ]
+   },
+   "475": {
+    "id": 42482,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42482",
+    "assinatura": "12/08/2026",
+    "publicacao": "13/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53314,
+      "titulo": "Acórdão 475"
+     }
+    ]
+   },
+   "476": {
+    "id": 42524,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42524",
+    "assinatura": "13/08/2026",
+    "publicacao": "14/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53357,
+      "titulo": "Acórdão 476"
+     }
+    ]
+   },
+   "477": {
+    "id": 42594,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42594",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53439,
+      "titulo": "Acórdão 477"
+     }
+    ]
+   },
+   "478": {
+    "id": 42590,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42590",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53435,
+      "titulo": "Acórdão 478"
+     }
+    ]
+   },
+   "479": {
+    "id": 42593,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42593",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53438,
+      "titulo": "Acórdão 479"
+     }
+    ]
+   },
+   "480": {
+    "id": 42574,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42574",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53419,
+      "titulo": "Acórdão 480"
+     }
+    ]
+   },
+   "481": {
+    "id": 42589,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42589",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53434,
+      "titulo": "Acórdão 481"
+     }
+    ]
+   },
+   "482": {
+    "id": 42576,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42576",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53421,
+      "titulo": "Acórdão 482"
+     }
+    ]
+   },
+   "483": {
+    "id": 42581,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42581",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53426,
+      "titulo": "Acórdão 483"
+     }
+    ]
+   },
+   "484": {
+    "id": 42591,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42591",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53436,
+      "titulo": "Acórdão 484"
+     }
+    ]
+   },
+   "485": {
+    "id": 42523,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42523",
+    "assinatura": "13/08/2026",
+    "publicacao": "14/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53356,
+      "titulo": "Acórdão 485"
+     }
+    ]
+   },
+   "486": {
+    "id": 42588,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42588",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53433,
+      "titulo": "Acórdão 486"
+     }
+    ]
+   },
+   "487": {
+    "id": 42584,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42584",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53429,
+      "titulo": "Acórdão 487"
+     },
+     {
+      "codigo": 53497,
+      "titulo": "Manual de Procedimentos para Circularização e Bloqueio"
+     }
+    ]
+   },
+   "488": {
+    "id": 42577,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42577",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53422,
+      "titulo": "Acórdão 488"
+     }
+    ]
+   },
+   "490": {
+    "id": 42583,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42583",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53428,
+      "titulo": "Acórdão 490"
+     }
+    ]
+   },
+   "491": {
+    "id": 42587,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42587",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53432,
+      "titulo": "Acórdão 491"
+     }
+    ]
+   },
+   "492": {
+    "id": 42595,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42595",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53440,
+      "titulo": "Acórdão 492"
+     }
+    ]
+   },
+   "493": {
+    "id": 42578,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42578",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53423,
+      "titulo": "Acórdão 493"
+     }
+    ]
+   },
+   "494": {
+    "id": 42592,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42592",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53437,
+      "titulo": "Acórdão 494"
+     }
+    ]
+   },
+   "495": {
+    "id": 42579,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42579",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53424,
+      "titulo": "Acórdão 495"
+     }
+    ]
+   },
+   "496": {
+    "id": 42575,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42575",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53420,
+      "titulo": "Acórdão 496"
+     }
+    ]
+   },
+   "497": {
+    "id": 42585,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42585",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53430,
+      "titulo": "Acórdão 497"
+     }
+    ]
+   },
+   "498": {
+    "id": 42582,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42582",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53427,
+      "titulo": "Acórdão 498"
+     }
+    ]
+   },
+   "499": {
+    "id": 42586,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42586",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53431,
+      "titulo": "Acórdão 499"
+     }
+    ]
+   },
+   "500": {
+    "id": 42551,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42551",
+    "assinatura": "17/08/2026",
+    "publicacao": "18/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53561,
+      "titulo": "Acordao 500"
+     }
+    ]
+   },
+   "501": {
+    "id": 42553,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42553",
+    "assinatura": "17/08/2026",
+    "publicacao": "18/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53397,
+      "titulo": "Acórdão 501"
+     }
+    ]
+   },
+   "502": {
+    "id": 42580,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42580",
+    "assinatura": "17/08/2026",
+    "publicacao": "19/08/2026",
+    "arquivos": [
+     {
+      "codigo": 53425,
+      "titulo": "Acórdão 502"
+     }
+    ]
+   },
+   "503": {
+    "id": 42689,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42689",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53544,
+      "titulo": "Acórdão 503"
+     }
+    ]
+   },
+   "504": {
+    "id": 42668,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42668",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53523,
+      "titulo": "Acórdão 504"
+     }
+    ]
+   },
+   "505": {
+    "id": 42673,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42673",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53528,
+      "titulo": "Acórdão 505"
+     }
+    ]
+   },
+   "506": {
+    "id": 42672,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42672",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53527,
+      "titulo": "Acórdão 506"
+     }
+    ]
+   },
+   "507": {
+    "id": 42687,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42687",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53542,
+      "titulo": "Acórdão 507"
+     }
+    ]
+   },
+   "508": {
+    "id": 42667,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42667",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53522,
+      "titulo": "Acórdão 508"
+     }
+    ]
+   },
+   "509": {
+    "id": 42670,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42670",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53525,
+      "titulo": "Acórdão 509"
+     }
+    ]
+   },
+   "510": {
+    "id": 42678,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42678",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53533,
+      "titulo": "Acórdão 510"
+     }
+    ]
+   },
+   "511": {
+    "id": 42679,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42679",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53534,
+      "titulo": "Acórdão 511"
+     }
+    ]
+   },
+   "512": {
+    "id": 42665,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42665",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53520,
+      "titulo": "Acórdão 512"
+     }
+    ]
+   },
+   "513": {
+    "id": 42688,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42688",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53543,
+      "titulo": "Acórdão 513"
+     }
+    ]
+   },
+   "514": {
+    "id": 42686,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42686",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53541,
+      "titulo": "Acórdão 514"
+     }
+    ]
+   },
+   "515": {
+    "id": 42675,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42675",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53530,
+      "titulo": "Acórdão 515"
+     }
+    ]
+   },
+   "516": {
+    "id": 42664,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42664",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53519,
+      "titulo": "Acórdão 516"
+     }
+    ]
+   },
+   "517": {
+    "id": 42662,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42662",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53517,
+      "titulo": "Acórdão 517"
+     }
+    ]
+   },
+   "518": {
+    "id": 42663,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42663",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53518,
+      "titulo": "Acórdão 518"
+     }
+    ]
+   },
+   "519": {
+    "id": 42676,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42676",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53531,
+      "titulo": "Acórdão 519"
+     }
+    ]
+   },
+   "520": {
+    "id": 42666,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42666",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53521,
+      "titulo": "Acórdão 520"
+     }
+    ]
+   },
+   "521": {
+    "id": 42685,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42685",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53540,
+      "titulo": "Acórdão 521"
+     }
+    ]
+   },
+   "522": {
+    "id": 42683,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42683",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53538,
+      "titulo": "Acórdão 522"
+     }
+    ]
+   },
+   "523": {
+    "id": 42674,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42674",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53529,
+      "titulo": "Acórdão 523"
+     }
+    ]
+   },
+   "524": {
+    "id": 42661,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42661",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53516,
+      "titulo": "Acórdão 524"
+     }
+    ]
+   },
+   "525": {
+    "id": 42690,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42690",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53545,
+      "titulo": "Acórdão 525"
+     }
+    ]
+   },
+   "526": {
+    "id": 42677,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42677",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53532,
+      "titulo": "Acórdão 526"
+     }
+    ]
+   },
+   "527": {
+    "id": 42681,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42681",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53536,
+      "titulo": "Acórdão 527"
+     }
+    ]
+   },
+   "528": {
+    "id": 42684,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42684",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53539,
+      "titulo": "Acórdão 528"
+     }
+    ]
+   },
+   "529": {
+    "id": 42660,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42660",
+    "assinatura": "31/08/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53515,
+      "titulo": "Acórdão 529"
+     }
+    ]
+   },
+   "530": {
+    "id": 42682,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42682",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53537,
+      "titulo": "Acórdão 530"
+     }
+    ]
+   },
+   "531": {
+    "id": 42669,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42669",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53524,
+      "titulo": "Acórdão 531"
+     }
+    ]
+   },
+   "532": {
+    "id": 42671,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42671",
+    "assinatura": "01/09/2026",
+    "publicacao": "02/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53526,
+      "titulo": "Acórdão 532"
+     }
+    ]
+   },
+   "533": {
+    "id": 42799,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42799",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53707,
+      "titulo": "Acórdão 533"
+     }
+    ]
+   },
+   "534": {
+    "id": 42801,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42801",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53709,
+      "titulo": "Acórdão 534"
+     }
+    ]
+   },
+   "535": {
+    "id": 42785,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42785",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53693,
+      "titulo": "Acórdão 535"
+     }
+    ]
+   },
+   "536": {
+    "id": 42780,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42780",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53688,
+      "titulo": "Acórdão 536"
+     }
+    ]
+   },
+   "537": {
+    "id": 42804,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42804",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53714,
+      "titulo": "Acórdão 537"
+     }
+    ]
+   },
+   "538": {
+    "id": 42798,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42798",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53706,
+      "titulo": "Acórdão 538"
+     }
+    ]
+   },
+   "539": {
+    "id": 42794,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42794",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53702,
+      "titulo": "Acórdão 539"
+     }
+    ]
+   },
+   "540": {
+    "id": 42788,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42788",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53696,
+      "titulo": "Acórdão 540"
+     }
+    ]
+   },
+   "541": {
+    "id": 42807,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42807",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53717,
+      "titulo": "Acórdão 541"
+     }
+    ]
+   },
+   "542": {
+    "id": 42783,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42783",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53691,
+      "titulo": "Acórdão 542"
+     }
+    ]
+   },
+   "543": {
+    "id": 42806,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42806",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53716,
+      "titulo": "Acórdão 543"
+     }
+    ]
+   },
+   "544": {
+    "id": 42802,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42802",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53712,
+      "titulo": "Acórdão 544"
+     }
+    ]
+   },
+   "545": {
+    "id": 42796,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42796",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53704,
+      "titulo": "Acórdão 545"
+     }
+    ]
+   },
+   "546": {
+    "id": 42808,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42808",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53718,
+      "titulo": "Acórdão 546"
+     }
+    ]
+   },
+   "547": {
+    "id": 42784,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42784",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53692,
+      "titulo": "Acórdão 547"
+     }
+    ]
+   },
+   "548": {
+    "id": 42789,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42789",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53697,
+      "titulo": "Acórdão 548"
+     }
+    ]
+   },
+   "549": {
+    "id": 42787,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42787",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53695,
+      "titulo": "Acórdão 549"
+     }
+    ]
+   },
+   "550": {
+    "id": 42792,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42792",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53700,
+      "titulo": "Acórdão 550"
+     }
+    ]
+   },
+   "551": {
+    "id": 42781,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42781",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53689,
+      "titulo": "Acórdão 551"
+     }
+    ]
+   },
+   "552": {
+    "id": 42791,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42791",
+    "assinatura": "14/09/2026",
+    "publicacao": "09/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53699,
+      "titulo": "Acórdão 552"
+     }
+    ]
+   },
+   "553": {
+    "id": 42800,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42800",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53708,
+      "titulo": "Acórdão 553"
+     }
+    ]
+   },
+   "554": {
+    "id": 42797,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42797",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53705,
+      "titulo": "Acórdão 554"
+     }
+    ]
+   },
+   "555": {
+    "id": 42805,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42805",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53715,
+      "titulo": "Acórdão 555"
+     }
+    ]
+   },
+   "556": {
+    "id": 42786,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42786",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53694,
+      "titulo": "Acórdão 556"
+     }
+    ]
+   },
+   "557": {
+    "id": 42790,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42790",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53698,
+      "titulo": "Acórdão 557"
+     }
+    ]
+   },
+   "558": {
+    "id": 42803,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42803",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53713,
+      "titulo": "Acórdão 558"
+     }
+    ]
+   },
+   "559": {
+    "id": 42782,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42782",
+    "assinatura": "15/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53690,
+      "titulo": "Acórdão 559"
+     }
+    ]
+   },
+   "560": {
+    "id": 42793,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42793",
+    "assinatura": "15/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53701,
+      "titulo": "Acórdão 560"
+     }
+    ]
+   },
+   "561": {
+    "id": 42795,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42795",
+    "assinatura": "14/09/2026",
+    "publicacao": "16/09/2026",
+    "arquivos": [
+     {
+      "codigo": 53703,
+      "titulo": "Acórdão 561"
+     }
+    ]
+   },
+   "562": {
+    "id": 42878,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42878",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53802,
+      "titulo": "Acórdão 562"
+     }
+    ]
+   },
+   "563": {
+    "id": 42875,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42875",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53799,
+      "titulo": "Acórdão 563"
+     }
+    ]
+   },
+   "564": {
+    "id": 42881,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42881",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53806,
+      "titulo": "Acórdão 564"
+     }
+    ]
+   },
+   "565": {
+    "id": 42880,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42880",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53805,
+      "titulo": "Acórdão 565"
+     }
+    ]
+   },
+   "566": {
+    "id": 42872,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42872",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53794,
+      "titulo": "Acórdão 566"
+     }
+    ]
+   },
+   "567": {
+    "id": 42886,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42886",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53811,
+      "titulo": "Acórdão 567"
+     }
+    ]
+   },
+   "568": {
+    "id": 42870,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42870",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53792,
+      "titulo": "Acórdão 568"
+     }
+    ]
+   },
+   "569": {
+    "id": 42866,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42866",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53788,
+      "titulo": "Acórdão 569"
+     }
+    ]
+   },
+   "570": {
+    "id": 42882,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42882",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53807,
+      "titulo": "Acórdão 570"
+     }
+    ]
+   },
+   "571": {
+    "id": 42876,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42876",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53800,
+      "titulo": "Acórdão 571"
+     }
+    ]
+   },
+   "572": {
+    "id": 42874,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42874",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53798,
+      "titulo": "Acórdão 572"
+     }
+    ]
+   },
+   "573": {
+    "id": 42887,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42887",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53812,
+      "titulo": "Acórdão 573"
+     }
+    ]
+   },
+   "574": {
+    "id": 42879,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42879",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53803,
+      "titulo": "Acórdão 574"
+     }
+    ]
+   },
+   "575": {
+    "id": 42869,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42869",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53791,
+      "titulo": "Acórdão 575"
+     }
+    ]
+   },
+   "576": {
+    "id": 42884,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42884",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53809,
+      "titulo": "Acórdão 576"
+     }
+    ]
+   },
+   "577": {
+    "id": 42888,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42888",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53813,
+      "titulo": "Acórdão 577"
+     }
+    ]
+   },
+   "578": {
+    "id": 42864,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42864",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53786,
+      "titulo": "Acórdão 578"
+     }
+    ]
+   },
+   "579": {
+    "id": 42871,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42871",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53793,
+      "titulo": "Acórdão 579"
+     }
+    ]
+   },
+   "580": {
+    "id": 42867,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42867",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53789,
+      "titulo": "Acórdão 580"
+     }
+    ]
+   },
+   "581": {
+    "id": 42877,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42877",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53801,
+      "titulo": "Acórdão 581"
+     }
+    ]
+   },
+   "582": {
+    "id": 42883,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42883",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53808,
+      "titulo": "Acórdão 582"
+     }
+    ]
+   },
+   "583": {
+    "id": 42885,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42885",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53810,
+      "titulo": "Acórdão 583"
+     }
+    ]
+   },
+   "584": {
+    "id": 42873,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42873",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53795,
+      "titulo": "Acórdão 584"
+     }
+    ]
+   },
+   "585": {
+    "id": 42868,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42868",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53790,
+      "titulo": "Acórdão 585"
+     }
+    ]
+   },
+   "586": {
+    "id": 42865,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42865",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53787,
+      "titulo": "Acórdão 586"
+     }
+    ]
+   },
+   "587": {
+    "id": 42863,
+    "url": "https://sophia.antaq.gov.br/Terminal/acervo/detalhe/42863",
+    "assinatura": "29/09/2026",
+    "publicacao": "01/10/2026",
+    "arquivos": [
+     {
+      "codigo": 53785,
+      "titulo": "Acórdão 587"
+     }
+    ]
+   }
+  },
+  "acordaos_contador_declarado_1a_pagina": 236
+ },
+ "virtuais": [
+  {
+   "titulo": "618ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "617ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "615ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "613ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "612ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "610ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "608ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "606ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "604ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "602ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "601ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "599ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "597ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "595ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "593ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "590ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "589ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "587ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "585ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "583ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "581ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "580ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "577ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "575ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "573ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "571ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "569ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "567ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "565ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "563ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "561ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "559ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "556ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "553ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "552ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "550ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "548ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "546ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "544ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "542ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "540ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "538ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "536ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "535ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "533ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "531ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "529ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "527ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "525ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "523ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "521ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "519ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "517ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "515ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "512ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "509ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "507ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "505ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "503ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "501ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "499ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "497ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "495ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "493ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "491ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "489ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "488ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "486ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "484ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "482ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "480ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "478ª Reunião Ordinária Virtual"
+  },
+  {
+   "titulo": "476ª Reunião Ordinária Virtual"
+  }
+ ]
+}
