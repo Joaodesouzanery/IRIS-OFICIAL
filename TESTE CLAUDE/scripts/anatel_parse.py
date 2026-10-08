@@ -85,6 +85,7 @@ ALIN = re.compile(r'^([a-z](?:\.\d+)*)\)\s+(.*)$')
 def nomes_vencidos(s):
     """conselheiros VENCIDOS numa frase: nomes depois de 'vencido(s)' (ate 'nos termos'/'propondo'/'em relacao') ou, se nao houver, o nome mais proximo antes."""
     sn = norm(s); res = []
+    if parciais(s): return []
     for m in re.finditer(r'vencid[oa]s?', sn):
         if re.match(r'vencid[oa]s? (?:ao|no|em|de|e)\b', sn[m.start():m.start() + 14]) and not re.search(r'votou|votaram|votado|tendo', sn[max(0, m.start() - 30):m.start()]): continue
         after = s[m.end():m.end() + 420]
@@ -98,12 +99,22 @@ def nomes_vencidos(s):
     for n in res:
         if n not in o: o.append(n)
     return o
+def nao_pode_manifestar(s):
+    """conselheiros que 'nao puderam se manifestar' (ex.: termino de mandato) -> sem voto na parte decidida 'por unanimidade dos votantes'"""
+    m = re.search(r'(?:considerando que|nessa parte,?)\s*(.*?)n[ãa]o p[ôo]de se manifestar', s, re.I)
+    return nomes_todos(m[1]) if m else []
+def parciais(s):
+    """'acompanhou a proposta do Relator e propos alteracoes, tendo votado vencido em relacao a essas alteracoes' -> acompanhou PARCIALMENTE (nao divergiu do Relator)"""
+    m = re.search(r'acompanh\w+ a proposta do relator e prop\w+ altera\w+', norm(s))
+    if not m or 'vencid' not in norm(s)[m.end():]: return []
+    return nomes_todos(s.split('acompanh')[0].split(' por meio ')[0] if re.match(r'^(O|A) (Presidente|Conselheir)', s) else s[:m.start()])
 def tokens_alineas(s):
     """['a','b','c.2'..] citadas entre aspas; marca intervalos '"x" a "y"'"""
     res = [];
     for m in re.finditer(r'[“"]([a-z](?:\.\d+)*)[”"](\s+a\s+[“"]([a-z](?:\.\d+)*)[”"])?', s):
         res.append((m[1], m[3]))
     return res
+MODO_VENC = 'maioria (inferida: a fonte registra vencido nominal, mas não usa "por maioria")'
 MODO = re.compile(r'por unanimidade(?: dos votantes)?|por maioria(?: de (\w+) votos)?', re.I)
 RE_ITENS = re.compile(r'\b(?:it(?:em|ens)|pontos?|subit(?:em|ens)|incisos?)\s+((?:[\d]+(?:\.[\dIVXa-z]+)*)(?:\s*(?:,|e|a)\s*(?:[\d]+(?:\.[\dIVXa-z]+)*))*)', re.I)
 def rotulo_tokens(toks):
@@ -146,14 +157,21 @@ def analisa_dispositivo(disp, relator, participantes):
                     mi = RE_ITENS.search(antes)
                     if mi: itens = plano(mi[0])
                 exc = re.search(r'com exceção|exceto|salvo', s[mm.end():], re.I)
-                e = {'toks': toks, 'itens': itens, 'modo': 'unanimidade' if 'unanim' in mm[0].lower() else 'maioria', 'n': mm[1], 'venc': [], 'venc_exc': [], 'acomp': [], 'texto': s, 'exc': (s[mm.end() + exc.start():] if exc else None), 'antes': antes}
+                e = {'toks': toks, 'itens': itens, 'modo': ('unanimidade dos votantes' if 'votantes' in mm[0].lower() else 'unanimidade') if 'unanim' in mm[0].lower() else 'maioria', 'n': mm[1], 'venc': [], 'venc_exc': [], 'acomp': [], 'sem_voto': [], 'parcial': [], 'texto': s, 'exc': (s[mm.end() + exc.start():] if exc else None), 'antes': antes}
                 ent.append(e); last = e
                 resto = s[mm.end():]
+                e['sem_voto'].extend(n for n in nao_pode_manifestar(s) if n not in e['sem_voto'])
                 if re.search(r'vencid', norm(resto)):
                     nm = nomes_vencidos(s)
                     (e['venc_exc'] if e['exc'] else e['venc']).extend(n for n in nm if n not in (e['venc_exc'] if e['exc'] else e['venc']))
                 continue
             if last is None: continue
+            nsv = nao_pode_manifestar(s)
+            if nsv:
+                last['sem_voto'].extend(n for n in nsv if n not in last['sem_voto']); continue
+            pc = parciais(s)
+            if pc:
+                last['parcial'].extend(n for n in pc if n not in last['parcial']); continue
             if re.search(r'vencid', sn) and nomes_vencidos(s):
                 alvo = last['venc_exc'] if last['exc'] is not None else last['venc']
                 alvo.extend(n for n in nomes_vencidos(s) if n not in alvo)
@@ -168,7 +186,7 @@ def analisa_dispositivo(disp, relator, participantes):
     tem_escopo = [e for e in ent if e['ids'] or e['itens']]
     partes = []
     def mk(rot, ac, e, extra_venc=None):
-        return {'parte': rot, 'acao': corta(ac, 700), 'modo': e['modo'], 'vencidos': list(extra_venc if extra_venc is not None else e['venc']), 'acompanharam': list(e['acomp']), 'maioria_n': e['n']}
+        return {'parte': rot, 'acao': corta(ac, 700), 'modo': e['modo'], 'vencidos': list(extra_venc if extra_venc is not None else e['venc']), 'acompanharam': list(e['acomp']), 'parcial': list(e['parcial']), 'sem_voto': list(e['sem_voto']), 'maioria_n': e['n']}
     for e in ent:
         if e['ids']:
             ac = ' '.join(f'{k}) {alin[k]}' for k in e['ids'] if k in e['ids'])[:1400]
@@ -186,11 +204,12 @@ def analisa_dispositivo(disp, relator, participantes):
         if e['exc'] is not None and e['venc_exc']:
             partes.append({'parte': 'ponto excepcionado da unanimidade', 'acao': corta(e['exc'], 500), 'modo': 'maioria', 'vencidos': list(e['venc_exc']), 'acompanharam': [], 'maioria_n': None})
     if not ent:
-        venc = []
+        venc = []; parc = []
         for p in paras:
             for s in sentencas(p):
                 if re.search(r'vencid', norm(s)) and nomes_vencidos(s): venc += [n for n in nomes_vencidos(s) if n not in venc]
-        partes.append({'parte': 'decisão', 'acao': corta(intro + (' ' + ' '.join(f'{k}) {v}' for k, v in alin.items()) if alin else ''), 700), 'modo': 'maioria' if venc else 'sem registro', 'vencidos': venc, 'acompanharam': [], 'maioria_n': None})
+                parc += [n for n in parciais(s) if n not in parc]
+        partes.append({'parte': 'decisão', 'acao': corta(intro + (' ' + ' '.join(f'{k}) {v}' for k, v in alin.items()) if alin else ''), 700), 'modo': MODO_VENC if venc else 'sem registro', 'vencidos': venc, 'acompanharam': [], 'parcial': parc, 'sem_voto': [], 'maioria_n': None})
     elif restantes and tem_escopo:
         partes.append({'parte': 'demais alíneas (' + ', '.join(k for k in restantes if '.' not in k) + ')', 'acao': corta(' '.join(f'{k}) {alin[k]}' for k in restantes), 700), 'modo': 'sem registro', 'vencidos': [], 'acompanharam': [], 'maioria_n': None})
     return partes, alin
